@@ -8,6 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
+role: Developer
 ---
 
 # Components and Services Java API Quick Start (SOAP) {#components-and-services-java-apiquick-start-soap}

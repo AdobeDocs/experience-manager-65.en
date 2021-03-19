@@ -9,6 +9,8 @@ content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 
+feature: "Panoramic Images,Asset Management"
+role: "Business Practitioner, Administrator"
 ---
 
 # Panoramic images{#panoramic-images}

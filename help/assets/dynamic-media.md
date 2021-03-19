@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
+role: "Business Practitioner, Administrator"
 ---
 
 # Working with Dynamic Media {#working-with-dynamic-media}

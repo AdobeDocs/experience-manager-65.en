@@ -9,6 +9,7 @@ topic-tags: develop
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Using SOM expressions in adaptive forms{#using-som-expressions-in-adaptive-forms}

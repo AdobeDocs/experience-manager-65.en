@@ -7,6 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
+feature: Dynamic Media Classic
+role: "Business Practitioner, Administrator"
 ---
 
 # Adding Dynamic Media Classic Features to your Page {#adding-scene-features-to-your-page}

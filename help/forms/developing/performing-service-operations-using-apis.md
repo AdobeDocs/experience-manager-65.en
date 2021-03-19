@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
+role: Developer
 ---
 
 # Performing Service Operations Using APIs {#performing-service-operations-using-apis} 

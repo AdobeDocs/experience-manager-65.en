@@ -10,6 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 
+feature: Mobile Forms
 ---
 
 # Designing accessible HTML5 forms {#designing-accessible-html-forms}

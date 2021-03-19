@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 
+feature: Interactive Communication
 ---
 
 # Tutorial: Create document fragments{#tutorial-create-document-fragments}

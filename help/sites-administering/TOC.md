@@ -6,6 +6,8 @@ audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
 user-guide-description: Learn about administering AEM.
+feature: Administering
+role: Administrator
 ---
 
 # AEM 6.5 Administering User Guide {#administering}

@@ -8,6 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
+feature: Forms Portal
 ---
 
 # Custom storage for drafts and submissions component {#custom-storage-for-drafts-and-submissions-component}

@@ -9,6 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
+feature: Viewers
+role: "Business Practitioner, Administrator"
 ---
 
 # Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}

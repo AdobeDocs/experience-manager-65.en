@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
+role: "Business Practitioner, Administrator"
 ---
 
 # HTTP/2 Delivery of Content {#http-delivery-of-content}

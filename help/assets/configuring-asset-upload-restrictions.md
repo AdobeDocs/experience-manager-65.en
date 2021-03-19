@@ -2,6 +2,7 @@
 title: Configure asset upload restrictions
 description: Restrict the type of assets (files) that users can upload 
 contentOwner: AG
+role: "Developer, Administrator, Architect"
 ---
 
 # Configure asset upload restrictions {#configuring-asset-upload-restrictions}

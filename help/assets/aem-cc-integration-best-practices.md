@@ -2,6 +2,7 @@
 title: Integration with Adobe Creative Cloud best practices
 description: Best practices to integrate [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] to streamline asset transfer workflows and achieve high content velocity.
 contentOwner: AG
+role: "Business Practitioner, Administrator"
 ---
 
 # [!DNL Adobe Experience Manager] and [!DNL Creative Cloud] integration best practices {#aem-and-creative-cloud-integration-best-practices}

@@ -1,6 +1,7 @@
 ---
 title: Use Layout mode to resize components for adaptive forms
 description: Define the position of components using the responsive grid available in Layout mode 
+feature: Adaptive Forms
 ---
 
 # Use Layout mode to resize components {#use-layout-mode-to-resize-components}

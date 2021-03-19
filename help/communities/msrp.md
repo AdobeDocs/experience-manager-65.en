@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
+role: Administrator
 ---
 
 # MSRP - MongoDB Storage Resource Provider {#msrp-mongodb-storage-resource-provider}

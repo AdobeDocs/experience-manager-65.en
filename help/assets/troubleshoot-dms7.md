@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 
+role: "Business Practitioner, Administrator"
 ---
 
 # Troubleshooting Dynamic Media - Scene7 mode{#troubleshooting-dynamic-media-scene-mode}

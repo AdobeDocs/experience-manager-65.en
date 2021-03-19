@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 
+role: Administrator
 ---
 
 # Reports Console {#reports-console}

@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 
+feature: Upgrading
 ---
 
 # Upgrade Steps for Application Server Installations{#upgrade-steps-for-application-server-installations}

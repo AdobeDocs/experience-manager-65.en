@@ -9,6 +9,8 @@ content-type: reference
 discoiquuid: 5d5eebe4-46c9-4028-9354-c5f27944fcdc
 docset: aem65
 
+feature: Asset Management
+role: "Business Practitioner, Administrator"
 ---
 
 # Installing feature pack 18912 for bulk asset migration{#installing-feature-pack-for-bulk-asset-migration}

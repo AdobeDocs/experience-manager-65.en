@@ -11,6 +11,7 @@ topic-tags: deploying
 discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 
+feature: Configuring
 ---
 
 # RDBMS Support in AEM 6.4{#rdbms-support-in-aem}

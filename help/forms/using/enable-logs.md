@@ -11,6 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 
+feature: Mobile Forms
 ---
 
 # Enable logging for HTML5 forms{#enable-logging-for-html-forms}

@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 
+role: "Business Practitioner, Administrator"
 ---
 
 # Profiles for processing metadata, images, and videos{#profiles-for-processing-metadata-images-and-videos}

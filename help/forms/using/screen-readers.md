@@ -8,6 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
+feature: Mobile Forms
 ---
 
 # Screen readers for HTML5 forms {#screen-readers-for-html-forms}

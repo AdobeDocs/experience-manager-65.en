@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
+role: Developer
 ---
 
 # Converting PDF to Postscript and Image Files {#converting-pdf-to-postscript-andimage-files} 

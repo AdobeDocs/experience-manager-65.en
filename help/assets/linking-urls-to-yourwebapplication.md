@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
+role: "Business Practitioner, Administrator"
 ---
 
 # Linking URLs to your web application {#linking-urls-to-your-web-application}

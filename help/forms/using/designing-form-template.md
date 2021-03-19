@@ -10,6 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 
+feature: Mobile Forms
 ---
 
 # Designing form templates for HTML5 forms{#designing-form-templates-for-html-forms}

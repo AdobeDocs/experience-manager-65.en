@@ -7,6 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
+feature: Asset Management
+role: "Business Practitioner, Administrator"
 ---
 
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}

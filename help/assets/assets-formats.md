@@ -2,6 +2,7 @@
 title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Assets] and [!DNL Dynamic Media] and the features supported for each format.
 contentOwner: AG
+role: "Business Practitioner, Administrator"
 ---
 
 # Formats supported in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}

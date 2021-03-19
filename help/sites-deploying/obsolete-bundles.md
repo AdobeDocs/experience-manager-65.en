@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
+feature: Upgrading
 ---
 
 # List of Obsolete Bundles Uninstalled After the Upgrade{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}

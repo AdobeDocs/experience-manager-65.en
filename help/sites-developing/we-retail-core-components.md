@@ -1,7 +1,7 @@
 ---
 title: Trying out Core Components in We.Retail
 seo-title: Trying out Core Components in We.Retail
-description: null
+description: Trying out Core Components in We.Retail
 seo-description: null
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User

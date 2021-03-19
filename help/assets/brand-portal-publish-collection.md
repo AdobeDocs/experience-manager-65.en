@@ -11,6 +11,8 @@ content-type: reference
 discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 
+feature: Brand Portal
+role: Business Practitioner
 ---
 
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}

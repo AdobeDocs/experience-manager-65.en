@@ -10,6 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
+feature: Language Copy
 ---
 
 # Language Copy Wizard{#language-copy-wizard}

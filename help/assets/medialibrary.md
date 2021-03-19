@@ -2,6 +2,7 @@
 title: Compare [!DNL Assets] and Media Library offerings
 description: Compare [!DNL Experience Manager Assets] and Media Library features and know the differences.
 contentOwner: AG
+role: "Architect, Leader"
 ---
 
 # [!DNL Experience Manager Assets] versus [!DNL Experience Manager] Media Library {#aem-assets-vs-aem-medialibrary}

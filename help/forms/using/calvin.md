@@ -10,6 +10,7 @@ topic-tags: adaptive_forms, develop
 discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Automate testing of adaptive forms{#automate-testing-of-adaptive-forms}

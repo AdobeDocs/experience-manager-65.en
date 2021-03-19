@@ -8,6 +8,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
+feature: Interactive Images
+role: "Business Practitioner, Administrator"
 ---
 
 # Interactive images{#interactive-images}

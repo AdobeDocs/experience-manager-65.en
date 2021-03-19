@@ -9,6 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Create Correspondence{#create-correspondence}

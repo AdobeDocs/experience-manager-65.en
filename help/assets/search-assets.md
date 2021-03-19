@@ -3,6 +3,8 @@ title: Search digital assets and images in [!DNL Adobe Experience Manager]
 description: Learn how to find the required assets in [!DNL Adobe Experience Manager] by using Filters panel, and how to use the assets that show up in search.
 contentOwner: AG
 mini-toc-levels: 1
+feature: "Search, Metadata"
+role: Business Practitioner
 ---
 
 # Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}

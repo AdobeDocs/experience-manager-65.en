@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 
+feature: Interactive Communication
 ---
 
 # Texts in Interactive Communications{#texts-in-interactive-communications}

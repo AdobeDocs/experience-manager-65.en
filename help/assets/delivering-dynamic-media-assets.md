@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 
+role: "Business Practitioner, Administrator"
 ---
 
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}

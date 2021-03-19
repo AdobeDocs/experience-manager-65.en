@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: f9ff2cc5-3f0a-4b2f-a206-2fe0985646ea
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Placeholder text in AEM Forms {#placeholder-text-in-aem-forms}

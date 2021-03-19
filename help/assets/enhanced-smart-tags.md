@@ -2,6 +2,8 @@
 title: Enhanced Smart Tags
 description: Enhanced Smart Tags
 contentOwner: AG
+feature: "Smart Tags, Search"
+role: Business Practitioner
 ---
 
 # Understand, apply, and curate Smart Tags {#enhanced-smart-tags}

@@ -11,6 +11,7 @@ topic-tags: designer
 discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 
+feature: Designer
 ---
 
 # Using Scribble Signature in HTML5 forms{#using-scribble-signature-in-html-forms}

@@ -1,7 +1,7 @@
 ---
 title: Trying out Content Fragments in We.Retail
 seo-title: Trying out Content Fragments in We.Retail
-description: null
+description: Trying out Content Fragments in We.Retail
 seo-description: null
 uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User

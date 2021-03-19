@@ -5,6 +5,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+role: "Business Practitioner, Administrator"
 ---
 
 # Invalidating the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets}

@@ -2,6 +2,7 @@
 title: Private folders to share assets
 description: Learn how to create a private folder in the [!DNL Adobe Experience Manager Assets] and share it with other users and the assign various privileges to them.
 contentOwner: AG
+role: Business Practitioner
 ---
 
 # Private folder in [!DNL Adobe Experience Manager Assets] {#private-folder}

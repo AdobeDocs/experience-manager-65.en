@@ -6,6 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+role: "Business Practitioner, Administrator"
 ---
 
 # Configuring selective publishing at the folder level in Dynamic Media {#selective-publish-configure-folder}

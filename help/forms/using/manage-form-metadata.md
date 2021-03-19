@@ -10,6 +10,7 @@ topic-tags: forms-manager
 discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 
+role: Administrator
 ---
 
 # Manage form metadata{#manage-form-metadata}

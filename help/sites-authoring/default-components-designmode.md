@@ -1,7 +1,7 @@
 ---
 title: Configuring Components in Design Mode
 seo-title: Configuring Components in Design Mode
-description: null
+description: Configuring Components in Design Mode
 seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert

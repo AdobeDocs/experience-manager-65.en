@@ -1,6 +1,7 @@
 ---
 title: Creating an Invite External Users Handler
 description: Creating an Invite External Users Handler
+role: Developer
 ---
 
 # Creating an Invite External Users Handler {#create-invite-external-users-handler} 

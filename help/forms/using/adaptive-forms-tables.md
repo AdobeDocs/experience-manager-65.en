@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Tables in adaptive forms{#tables-in-adaptive-forms}

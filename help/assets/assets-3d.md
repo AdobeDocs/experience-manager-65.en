@@ -7,6 +7,8 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
+feature: "3D Assets,Asset Management"
+role: "Business Practitioner, Administrator"
 ---
 
 # Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}

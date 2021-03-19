@@ -2,6 +2,7 @@
 title: Use Page Tracker and embed code in web pages
 description: Lear how to include Page Tracker and embed JavaScript codes in your website code to enable Adobe Analytics to capture usage data around assets.
 contentOwner: AG
+role: "Architect, Administrator"
 ---
 
 # Use page tracker and embed code in web pages {#using-page-tracker-and-embed-code-in-web-pages}

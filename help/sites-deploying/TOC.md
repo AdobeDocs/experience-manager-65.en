@@ -6,6 +6,8 @@ audience: end-user
 user-guide-title: AEM 6.5 Deploying Guide
 breadcrumb-title: Deploying Guide
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
+feature: Deploying
+role: Architect
 ---
 
 # AEM 6.5 Deploying User Guide {#deploying}

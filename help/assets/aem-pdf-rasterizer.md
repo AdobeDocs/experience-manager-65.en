@@ -2,6 +2,7 @@
 title: Use PDF rasterizer to generate renditions
 description: Generate high-quality thumbnails and renditions using the Adobe PDF Rasterizer library.
 contentOwner: AG
+role: "Developer, Administrator"
 ---
 
 # Use PDF Rasterizer {#using-pdf-rasterizer}

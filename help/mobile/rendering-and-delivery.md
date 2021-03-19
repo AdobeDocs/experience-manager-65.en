@@ -1,7 +1,7 @@
 ---
 title: Rendering and Delivery
 seo-title: Rendering and Delivery
-description: null
+description: Rendering and Delivery
 seo-description: null
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
