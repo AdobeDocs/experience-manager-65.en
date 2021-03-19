@@ -63,6 +63,10 @@ You can specify that the child pages of the selected page are also selected. In 
 
 You can also [manually create translation projects](#creating-a-translation-project-using-the-projects-console).
 
+>[!NOTE]
+>
+>To create a project, your account must be a member of the `project-administrators` group.
+
 **Initial Translations and Updating Translations**
 
 The References panel indicates whether the you are updating existing language copies or creating the first version of the language copies. When a language copy exists for the selected page, the Update Language Copies tab appears to provide access to project-related commands.
@@ -412,6 +416,10 @@ Populate your language copy so that it contains content from the master language
 ## Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 
 You can manually create a translation project if you prefer to use the Projects console.
+
+>[!NOTE]
+>
+>To create a project, your account must be a member of the `project-administrators` group.
 
 When you manually create a translation project, you must provide values for the following translation-related properties in addition to the [basic properties](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 

@@ -1,8 +1,7 @@
 ---
 title: Configuring the Submit action
 seo-title: Configuring the Submit action
-description: AEM Forms allows you to configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
-seo-description: AEM Forms allows you to configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
+description: Forms allows you to configure a submit action to define how an adaptive form is processed after submission. You can use built-in submit actions or write your own from scratch.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -16,7 +15,7 @@ feature: Adaptive Forms
 
 ## Introduction to submit actions {#introduction-to-submit-actions}
 
-A submit action is triggered when a user clicks the Submit button on an adaptive form. You can configure the submit action on adaptive form. Adaptive forms provide a few out of the box submit actions. You can copy and extend the default submit actions to create you own submit action. However, based on your requirements, you can write and register your own submit action to process data in the submitted form. The submit action can use [synchronous or asynchronous submission](../../forms/using/asynchronous-submissions-adaptive-forms.md).
+A submit action is triggered when a user clicks the Submit button on an adaptive form. You can configure the submit action on adaptive form. Adaptive forms provide a few out of the box submit actions. You can copy and extend the default submit actions to create your own submit action. However, based on your requirements, you can write and register your own submit action to process data in the submitted form. The submit action can use [synchronous or asynchronous submission](../../forms/using/asynchronous-submissions-adaptive-forms.md).
 
 You can configure a submit action in the **Submission** section of the Adaptive Form Container properties, in the sidebar.
 
@@ -32,7 +31,7 @@ The default submit actions available with adaptive forms are:
 * Invoke a Forms Workflow
 * Submit using Form Data Model
 * Forms Portal Submit Action
-* Invoke an AEM Workflow
+* Invoke a AEM Workflow
 
 >[!NOTE]
 >
@@ -47,7 +46,7 @@ The default submit actions available with adaptive forms are:
 >
 >If you [prefill](../../forms/using/prepopulate-adaptive-form-fields.md) a form template, form data model, or schema based adaptive form with XML or JSON data complaint to a schema (XML schema, JSON schema, form template, or form data model) that is data does not contain &lt;afData&gt;, &lt;afBoundData&gt;, and &lt;/afUnboundData&gt; tags, then the data of unbounded fields (Unbounded fields are adaptive form fields without [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) property) of the adaptive form is lost.
 
-You can write a custom submit action for adaptive forms to fulfil your use case. For more information, see [Writing custom Submit action for adaptive forms](../../forms/using/custom-submit-action-form.md).
+You can write a custom submit action for adaptive forms to fulfill your use case. For more information, see [Writing custom Submit action for adaptive forms](../../forms/using/custom-submit-action-form.md).
 
 ## Submit to REST endpoint {#submit-to-rest-endpoint}
 
@@ -55,9 +54,9 @@ The **Submit to REST endpoint** submit option passes the data filled in the form
 
 `{fieldName}={request parameter name}`
 
-As shown in the image below, `param1` and `param2` are passed as parameters with values copied from the **textbox** and **numericbox** fields for the next action.
+As shown in the image below, `param1` and `param2` are passed as parameters with values copied from the **textbox** and **numeric box** fields for the next action.
 
-You can also **Enable POST request** and provide a URL to post the request. To submit data to the AEM server hosting the form, use a relative path corresponding to the root path of the AEM server. For example, /content/forms/af/SampleForm.html. To submit data to any other server, use absolute path.
+You can also **Enable POST request** and provide a URL to post the request. To submit data to the Experience Manager server hosting the form, use a relative path corresponding to the root path of the Experience Manager server. For example, /content/forms/af/SampleForm.html. To submit data to any other server, use absolute path.
 
 ![Configuring Rest Endpoint Submit Action](assets/action-config.png)
 
@@ -81,7 +80,7 @@ In the example above, user entered information in `textbox` is captured using pa
 
 `String data=request.getParameter("param1");`
 
-Similarly, paramenters that you use for posting XML data and attachments are `dataXml` and `attachments`.
+Similarly, parameters that you use for posting XML data and attachments are `dataXml` and `attachments`.
 
 For example, you use these two parameters in your script to parse data to a rest end point. You use the following syntax to store and parse the data:
 
@@ -106,11 +105,11 @@ The **Send PDF via Email** submit action sends an email with a PDF containing fo
 >
 >This submit action is available for XFA-based adaptive forms and XSD-based adaption forms that have the Document of Record template.
 
-## Invoke a forms workflow {#invoke-a-forms-workflow}
+## Invoke a Forms Workflow {#invoke-a-forms-workflow}
 
-The **Submit to Forms workflow** submit option sends a data xml and file attachments (if any) to an existing Adobe LiveCycle or AEM Forms on JEE process.
+The **Submit to Forms Workflow** submit option sends a data xml and file attachments (if any) to an existing Adobe LiveCycle or AEM Forms on JEE process.
 
-For information about how to configure the Submit to forms workflow submit action, see [Submitting and processing your form data using forms workflows](../../forms/using/submit-form-data-livecycle-process.md).
+For information about how to configure the Submit to Forms Workflow submit action, see [Submitting and processing your form data using forms workflows](../../forms/using/submit-form-data-livecycle-process.md).
 
 ## Submit using Form Data Model {#submit-using-form-data-model}
 
@@ -122,7 +121,7 @@ For information about form data model, see [AEM Forms Data Integration](../../fo
 
 ## Forms Portal Submit Action {#forms-portal-submit-action}
 
-The **Forms Portal Submit Action** option makes form data available through an AEM Forms portal.
+The **Forms Portal Submit Action** option makes form data available through an AEM Forms Portal.
 
 For more information about the Forms Portal and submit action, see [Drafts and submissions component](../../forms/using/draft-submission-component.md).
 
@@ -130,17 +129,17 @@ For more information about the Forms Portal and submit action, see [Drafts and s
 
 The **Invoke an AEM Workflow** submit action associates an adaptive form with an AEM Workflow. When a form is submitted, the associated workflow starts automatically on the processing node. Moreover, it places data file, attachments, and document of Record, if applicable, at the payload location of the workflow.
 
-Before using the **Invoke an AEM Workflow** submit action, [configure the AEM DS settings](../../forms/using/configuring-the-processing-server-url-.md). For information about creating an AEM Workflow, see [Form-centric workflows on OSGi](../../forms/using/aem-forms-workflow.md).
+Before using the **Invoke an AEM Workflow** submit action, [configure the Experience Manager DS settings](../../forms/using/configuring-the-processing-server-url-.md). For information about creating an AEM Workflow, see [Form-centric workflows on OSGi](../../forms/using/aem-forms-workflow.md).
 
 ## Server-Side Revalidation in Adaptive Form {#server-side-revalidation-in-adaptive-form}
 
-Typically, in any online data capture system, developers place someJavaScript validations on client side to enforce a few business rules. But in modern browsers, end users have way to bypass those validations and manually do submissions using various techniques, Such as Web Browser DevTools Console. Such techniques are also valida for adaptive forms. A forms developer can create various validation logics, but technically, end users can bypass those validation logics and submit invalid data to the server. Invalid data would break the business rules that a forms author has enforced.
+Typically, in any online data capture system, developers place someJavaScript validations on client side to enforce a few business rules. But in modern browsers, end users have way to bypass those validations and manually do submissions using various techniques, Such as Web Browser DevTools Console. Such techniques are also valid a for adaptive forms. A forms developer can create various validation logics, but technically, end users can bypass those validation logics and submit invalid data to the server. Invalid data would break the business rules that a forms author has enforced.
 
 The server-side revalidation feature provides the ability to also run the validations that an adaptive forms author has provided while designing an adaptive form on the server. It prevents any possible compromise of data submissions and business rules violations represented in terms of form validations.
 
 ### What to validate on Server? {#what-to-validate-on-server-br}
 
-All out of the box (OOTB) field validations of an adaptive form thate are rerun at the server are:
+All out of the box (OOTB) field validations of an adaptive form that are rerun at the server are:
 
 * Required
 * Validation Picture Clause
@@ -154,20 +153,24 @@ Use the **Revalidate on server** under Adaptive Form Container in the sidebar to
 
 Enabling Server-Side Validation
 
-If end-user bypass those validations and submit the forms, the server again performs the validation. If the validation fails at server end, then the submit transaction is stopped. The end user is presented with the orignal form again. The captured data and submitted data are presented to the user as an error.
+If end-user bypass those validations and submit the forms, the server again performs the validation. If the validation fails at server end, then the submit transaction is stopped. The end user is presented with the original form again. The captured data and submitted data are presented to the user as an error.
+
+>[!NOTE]
+>
+> Server-side validation validates the form model. It is recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
 
 ### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
 
-At times, in case of **complex validation rules**, the exact validation script reside in custom functions and author calls these custom functions from field validation expression. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **Basic** tab of Adaptive Form Container properties as shown below.
+At times, if there are complex validation rules, the exact validation script reside in custom functions and author calls these custom functions from field validation expression. To make this custom function library known and available while performing server-side validations, the form author can configure the name of AEM client library under the **Basic** tab of Adaptive Form Container properties as shown below.
 
 ![Supporting Custom functions in Validation Expressions](assets/clientlib-cat.png)
 
 Supporting Custom functions in Validation Expressions
 
-Author can configure customJavaScript library per adaptive form. In the library, only keep the reusable functions, which has dependency on jquery and underscore.js third-party libraries.
+Author can configure customJavaScript library per adaptive form. In the library, only keep the reusable functions, which have dependency on jquery and underscore.js third-party libraries.
 
 ## Error handling on submit action {#error-handling-on-submit-action}
 
-As a part of AEM security and hardening guidelines, configure custom error pages such as 404.jsp and 500.jsp. These handlers are called, when on submitting a form 404 or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node.
+As a part of Experience Manager security and hardening guidelines, configure custom error pages such as 404.jsp and 500.jsp. These handlers are called, when on submitting a form 404 or 500 errors appear. The handlers are also called when these error codes are triggered on the Publish node.
 
 For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md).

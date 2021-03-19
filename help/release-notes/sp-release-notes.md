@@ -1,375 +1,239 @@
 ---
-title: [!DNL Adobe Experience Manager] 6.5 Service Pack Release Notes
-description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 Service Pack 7
+title: [!DNL Experience Manager] 6.5 service pack release notes
+description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 service pack 8
 docset: aem65
 mini-toc-levels: 1
 ---
 
-# [!DNL Adobe Experience Manager] 6.5 Service Pack Release Notes {#aem-service-pack-release-notes}
+# [!DNL Adobe Experience Manager] 6.5 service pack release notes {#aem-service-pack-release-notes}
 
 ## Release information {#release-information}
 
 | Products | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Version  | 6.5.7.0                      |
+| Version  | 6.5.8.0                      |
 | Type     | Service Pack Release         |
-| Date     | November 26, 2020                |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.7.zip) |
+| Date     | March 11, 2021                |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.8.zip) |
+
+<!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
+
+## What is included in [!DNL Adobe Experience Manager] 6.5.8.0 {#what-s-included-in-aem}
+
+[!DNL Adobe Experience Manager] 6.5.8.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
+
+The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.8.0 are:
+
+<!-- TBD:
+* Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
+
+* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency.
 
-<!-- TBD: Update the SD link when SP7 is available. -->
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] [displays a warning](/help/assets/use-assets-across-connected-assets-instances.md#asset-usage-references). You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages.
 
-## What's included in [!DNL Adobe Experience Manager] 6.5.7.0 {#what-s-included-in-aem}
+* Sorting the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date,] and [!UICONTROL Last rollout date] properties.
 
-[!DNL Adobe Experience Manager] 6.5.7.0 is an important update that includes new features, key customer requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
+* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.6. <!-- TBD: Mention the version -->
 
-The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.7.0 includes:
+For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
 
-* Performing the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance.
+The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0 release.
 
-* Users can sort digital assets in Card and Column views.
+### [!DNL Sites] {#sites-6580}
 
-* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, and enabling users to use similar assistive technology (AT). See [[!DNL Assets] enhancements](#assets-6570) and [[!DNL Dynamic Media] enhancements](#dynamic-media-6570).
+* When a page is moved to blueprint, the destination of links is not updated (NPR-35724).
+* Tizen based player fails to authenticate on certain browsers. The issue occurs with browsers that do not support the samesite=none attribute (NPR-35589).
+* An unlocked responsive container does not display allowed components (NPR-35565).
+* When you create a live copy of a newly added page, the language master creates two copies for each domain (NPR-35545).
+* Deadlock in the SCR Component Registry when many threads are blocked due to `org.apache.felix.scr.impl.ComponentRegistry` timer. As a result, [!DNL Experience Manager] stops responding for an indefinite time (GRANITE-33125,FELIX-6252).
+* When you search a specific asset in the side rail, the result contains some not-searched assets (NPR-35524).
+* When you enable SSL for an Experience Manager instance, the context path is removed (NPR-35477).
+* When you create a list, add some text as the first element, add a table as the second element, and add a list inside the table, the parent list distorts (NPR-35465).
+* When you use different plugins on consecutive list items, an extra <br> tag is added to the list items (NPR-35464).
+* When a list is placed between two paragraphs, you cannot add a table to the list (NPR-35356).
+* When you start an AEM instance upgrade from AEM 6.3 to AEM 6.5, the upgrade instance takes longer to start (NPR-35323).
+* When you replicate an AEM asset that includes a bracket (). in the name, the replication fails (GRANITE-27004, NPR-35315).
+* When you add headings to a Rich Text Editor, the paragraph button is disabled (NPR-35256).
+* When you add an item to an existing list, it deletes the succeeding collapsible or toggle list (NPR-35206).
+* When the Rollout page option is selected, a dialog box with all the available live copies appears, and automatic rollout takes place. The live copies of pages are rolled out to all geographies without user action (NPR-35138).
+* When you use the include children option, the Manage Publication option does not list all pages. Only 22 pages are listed (NPR-35086). 
+* When a policy is edited, the text component does not retain the policy changes (NPR-35070).
+* When indenting some items in a numbered list, all items keep the same number although numbering should start from 1 for items with the same indentation (CQ-4313011).
+* When minification is enabled, you are not able to edit any page or component. The issues started after installing AEM 6.5 Service Pack 7 (CQ-4311133).
+* Omni search and asset filters return irrelevant or no results (CQ-4312322, NPR-35793).
+* When multiple pages simultaneously access a client library, the HTML library manager fails to load the client library. It leads to the incorrect rendering of pages (NPR-35538).
+* The context path gets removed automatically when you set up an SSL in [!DNL Experience Manager] (NPR-35294).
+* Package manager does not logout users after clicking the Logout option (NPR-35160).
 
-* [Form data model HTTP client configuration](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration) to optimize performance.
+### [!DNL Assets] {#assets-6580}
 
-* [Availability of Reset Option for each component](../../help/forms/using/resize-using-layout-mode.md#resize-components) in the Layout mode
+[!DNL Adobe Experience Manager] 6.5.8.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
 
-* [!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
+* Upon restoring a previous version of an asset, the event DamEvent.Type RESTORED is not triggered in the OSGi console (NPR-35789).
+* `IndexWriter.merge` causes `OutOfMemoryError` error as smart tagging functionality creates large `/oak:index/lucene` and `/oak:index/ntBaseLucene` indexes (NPR-35651).
+* An error message is displayed when trying to save an [!UICONTROL Asset Contribution] type folder with multibyte characters in the name (NPR-35605).
+* When cascading metadata subtype fields are used, an incorrect 'Please fill out this field' error occurs (NPR-35643).
+* When an existing asset is dragged on the [!DNL Assets] user interface and a new version is created, the changes in the metadata are not persistent (NPR-34940).
+* When creating rules in metadata schema editor for a cascading menu, the [!UICONTROL Dependant On] option repeats the same name (NPR-35596).
+* Similarity search does not work after editing [!UICONTROL Assets Admin Search Rail] (NPR-35588).
+* From within a folder, if you open asset search in the left rail by clicking [!UICONTROL Filter], the filter in [!UICONTROL Status] > [!UICONTROL Checkout] > [!UICONTROL Checked out] does not work (NPR-35530).
+* If you attempt to delete all Smart Tags of an asset and save the changes, the tags are not removed. However, the user interface indicates that the changes are saved (NPR-35519).
+* Users are not able to rearrange or sort assets in list view in an orderable folder (NPR-35516).
+* If you edit the default metadata schema, the tags field in asset's [!UICONTROL Properties] page changes into a text field. The change allows unaware users to add on-demand tags and the tags are stored as a string in the repository (NPR-35478).
+* When downloading an asset, if you provide a name that does not have a valid email address, the download option is unavailable. However, if another option in the download dialog is selected, the button is enabled, but an email is not sent (NPR-35365).
+* Users are unable to check-in assets after editing those in [!DNL Adobe InDesign] and receive error about lack of permissions (NPR-35341).
+* Handlebars JavaScript library is upgraded to v4.7.6 (NPR-35333).
+* Metadata editor interface stops working as expected when you start from bulk metadata edit and de-select items until a single item remains selected (NPR-35144).
+* Global navigation does not open the correct console when clicked from within `assets.html` page (CQ-4312311).
+* [!DNL Assets] does not display RGB rendition for an asset that has RGB rendition (CQ-4310190).
+* The [!UICONTROL Relate] option in menu is not displayed properly in the [!UICONTROL Properties] page (CQ-4310188).
+* If filetype filter for documents is used to search assets and create a Smart Collection, the filter is not applied when the collection is accessed. Instead, all types of assets are displayed in the search (NPR-35759).
+* You cannot drag and add assets in a Lightbox from the [!DNL Assets] user interface (NPR-35901).
+* When a new version of an existing asset is created after resolving the naming conflict, the metadata of original asset is overwritten (CQ-4313594).
+* When you filter asset search using a search filter or predicate, open an asset to view or edit it, and go back to the search results page, the filter does not work. All the searched assets are listed unfiltered (NPR-35913).
 
-  * Validating the field values on the server when you submit an adaptive form.
+#### [!DNL Dynamic Media] {#dynamic-media-6580}
 
-  * Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+* The URL option for RESS image preset is enabled on the asset details page. Now, both URL and RESS options are available on the asset details page when RESS image preset is selected in the dynamic renditions section. (CQ-4311241)
+* Interactive media component - interactive video does not work if the user has [!DNL Experience Manager] with selective publish configuration (CQ-4311054).
+* If you move assets across folders, the synchronization between [!DNL Experience Manager] and [!DNL Dynamic Media–Scene7] via API is very slow (CQ-4310001).
+* When using Omnisearch, the size of the logs increases significantly (CQ-4309153).
+* When selective sync is enabled and an asset is copied (not moved) into a sync folder, it does not sync as expected (CQ-4307122).
+* For uploaded assets that get auto-published to DM, the status does not display Published on AEM. Also, the Dynamic Media Publish status column does not show the correct published status (CQ-4306415).
+* If an asset is published on [!DNL Experience Manager] and is set to publish to [!DNL Dynamic Media] on activation, the `scene7FileStatus` metadata value does not update as expected (CQ-4308269).
+* When editing the video profile, [!DNL Experience Manager] does not display the height and bitrate values set for the video preset. The fields appear blank (CQ-4311828).
 
-* Support for Microsoft SQL Server 2019 in [!DNL Experience Manager Forms].
+### [!DNL Commerce] {#commerce-6580}
 
-* The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
+* Unable to create a custom tag for all products in Commerce (CQ-4310682).
 
-For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.7.0, see [What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 7](new-features-latest-service-pack.md).
+* Product asset reference update causes replication threads to be in the wait state until the ProductAssetListener thread completes its commits to the JCR (NPR-35269).
 
-The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0 release.
+### Platform {#platform-6580}
 
-### [!DNL Sites] {#sites-6570}
+* When you use a Coral Tab View component with no tabs and then trigger a Foundation validator, the following error occurs (NPR-35636):
 
-* When you open the [!UICONTROL Timewrap] option for a page, keep the Timeline side rail option open, and navigate to [!UICONTROL Sites] console, the `Failed to Load` error occurs (NPR-34951).
+  ```TXT
+   Uncaught TypeError: Cannot set property 'invalid' of undefined
+    at enable (foundation.js:10703)
+    at foundation.js:10710
+  ```
 
-* The [!UICONTROL Timewrap] option does not display images for the selected date and time range (NPR-34951).
+* SCD forward replication fails for Delete events for nodes that include a comma in the name (NPR-35191).
 
-* When a filter calls `getHeader()` from a page containing a Content Fragment, the `java.lang.AbstractMethodError` error occurs (NPR-34942).
+* After you upgrade to AEM 6.5.7, the builds start failing. The reason is, an old version or no jackson-core is embedded in the uber-jar (GRANITE-33006).
 
-* When the path of a page contains multiple content substrings, previews fail to render, and the version compare function also fails (NPR-34740).
+### User Interface {#ui-6580}
 
-* When you set a numeric value for the `String` type label property of a component, you can delete the component and undo the delete operation. However, after undoing the delete, the label property changes from `String` to `Long` (NPR-34739).
+* When you switch from Card view to List view for documents in a folder in the Assets console, sorting does not work appropriately (NPR-35842).
 
-* The following exception occurs on adding an Experience Fragment based on a template with a locked layout to a page (NPR-34632):
+* When you hyperlink text in a text component, the search feature does not display appropriate results (NPR-35849).
 
-   ```TXT
-   org.apache.sling.api.SlingException: Cannot get DefaultSlingScript: org.apache.sling.api.SlingException: Cannot get DefaultSlingScript: org.mozilla.javascript.EcmaError: TypeError: Cannot call method "getChildren" of null
-   ```
+* When a value is not provided to a hidden field that is marked required, it blocks you from saving a component (NPR-35219).
 
-* When you move a folder, it results in traversal issues and the following error occurs (NPR-34554):
+### Integrations {#integrations-6580}
 
-   ```TXT
-   org.apache.sling.api.SlingException: Cannot get DefaultSlingScript. org.apache.jackrabbit.oak.query.RuntimeNodeTraversalException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped
-   ```
+* When you use different values for IMS Tenant ID and Target Client code, [!DNL Experience Manager] fails to integrate with [!DNL Adobe Target] (NPR-35342).
 
-* When new assets are created, published, and moved to a new location, the `Request to complete move operation` workflow gets created and results in an Aborted state. Uploading a new asset and executing a `move` operation results in creating the `Request to complete move operation` workflow in pending state (NPR-34543).
+### Translation projects {#translation-6580}
 
-* When you export an Experience Fragment from [!DNL Experience Manager] 6.5.2 environment to [!DNL Target] Standard, the API call fails because the workspace property is not available for [!DNL Target] Standard (NPR-34557).
+* Issues when exporting or importing a translation job in [!DNL Experience Manager] (NPR-35259).
 
-* Users cannot publish pages through the [!UICONTROL manage publication] option because the [!UICONTROL Publish] option disappears (NPR-34542).
+### Campaign {#campaign-6580}
 
-* When you add some styles to the text, a `<div>` tag is added to the text, and the style cannot be applied to the text anymore (NPR-34531).
+* When you create a campaign page using an out-of-the-box template in Touch UI and open the Email tab on the page properties dialog, the personalization variable for the subject and body fields remains disabled (CQ-4312388).
 
-* When you select an item in a pop-up menu and update the required files, it does not allow saving dialog values as the other menu has an empty required field (NPR-34529).
+### [!DNL Communities] {#communities-6580}
 
-* When you create a page from a custom template and move it within the blueprint hierarchy, components deleted earlier from the page starts showing up on the page within the live copy hierarchy (NPR-34527).
+* On adding a page structure to a community group, the [!UICONTROL Group] title in the breadcrumb is changed to the title of the first [!UICONTROL Page] (NPR-35803).
+* Unlike moderators, a standard community member is not able to access and edit any draft post (NPR-35339).
+* Broken access control and denial of service with DSRPReindexServlet which brings the communities site down until the indexing is complete (NPR-35591).
+* Removing [!UICONTROL All Users] from the [!UICONTROL Administrators] field does not actually remove them from the back-end (NPR-35592, NPR-35611).
+* The [!UICONTROL Compose Message] component does not return any result when the entered text is a partial-match (NPR-35666).
 
-* Once an article style is applied to a content, it cannot be removed (NPR-34486).
+### [!DNL Brand Portal] {#brandportal-6580}
 
-* All live copies and copies of an Experience Fragment point to the same [!DNL Adobe Target] offer ID (NPR-34469).
+* Adding a member to an [!UICONTROL Asset Contribution] type folder shows [!UICONTROL Add User or Group] caption in the user interface, although only Brand Portal active users are supported and not groups (NPR-35332).
 
-* Bulleted list items are displayed in addition to the numbered list (NPR-34455).
-
-* The compare to source option fails to show the difference between the source page and the edited version of a page (NPR-34285).
-
-* When you delete a page, the versioning details are not configurable (NPR-34159).
-
-* When a user selects the [!UICONTROL Open Selection] dialog option, the keyboard focus moves to the hidden control present on the page (CQ-4307779, CQ-4293601).
-
-* When you move a published folder on the Author, the folder paths are not updated accordingly on the Publish instance (CQ-4305144).
-
-* When a user select the `Enter` key on the [!UICONTROL Select All] option, the keyboard focus does not move to the [!UICONTROL Create Control] option (CQ-4293599).
-
-* When you select the `Esc` key, the focus is not restored to the parent control (CQ-4293593, CQ-4293590).
-
-* Improved WCAG compliance for [!DNL Sites] UI and Core components (CQ-4293448).
-
-* [!UICONTROL Zoom] and [!UICONTROL Scale] functions are disabled for the [!DNL Sites Editor] page (CQ-4282353).
-
-* After you use the Rotate Right option, the screen reader stops narrating the current rotation or flip state (CQ-4282128).
-
-* Done and Cancel Configure dialog buttons have more than one tab-stops (CQ-4274601).
-
-* Moving of pages with a similar name on the same level is not allowed (NPR-35041).
-
-* After selecting the Clear (x) option, the keyboard focus does not move to the [!UICONTROL Filter] field (CQ-4293581).
-
-* When you upgrade to [!DNL Experience Manager] 6.5.6.0, behavior of the inherited paragraph system changes and it does not work properly (NPR-35117).
-
-* Keyboard users are not able to shift the tab focus in an appropriate order after selecting the [!UICONTROL Action] section on an [!DNL AEM Sites] page (CQ-4307786).
-
-* After selecting an option in the link target menu list of the RTE toolbar when editing a content fragment, the content fragment author dialog starts to flicker (CQ-4305532).
-
-* Keyboard users are not able to select the options in the [!UICONTROL Add Component] drop-down list using the Down arrow key (CQ-4295097).
-
-* The tab focus does not shift in an appropriate order when selecting a date from the Calendar menu in the [!UICONTROL Assets] tab of a [!DNL Sites] page (CQ-4293600).
-
-* The tab focus does not shift to the next or previous options for keyboard users after deleting the Link or Text options available when editing a Sites page (CQ-4293597).
-
-* Keyboard users are not able to shift tab focus back to More options in the [!UICONTROL Actions] section after viewing the available options and pressing the `Esc` key (CQ-4293592).
-
-* When you activate the [!UICONTROL Rotate] option for an image in the [!UICONTROL Edit] mode, the tab focus, instead of remaining on Rotate, shifts to the [!UICONTROL Redo] option for the keyboard users (CQ-4293587).
-
-* In the [!UICONTROL Open Selection] dialog available on the [!UICONTROL Link and Actions] tab, the tab focus shifts to hidden elements in the page after the [!UICONTROL Cancel] option (CQ-4293579).
-
-* When keyboard users edit an image, navigate to the [!UICONTROL Finish] option, and press the Enter key, the screen readers do not announce the completion (CQ-4282351).
-
-* The Move up and Move down options available on the [!UICONTROL Link and Actions] dialog are not available to the screen reader and keyboard users (CQ-4281120).
-
-* Keyboard users are not able to restore the tab focus after navigating to the Close (X) option on the [!UICONTROL Properties] page (CQ-4293581, NPR-34653).
-
-### [!DNL Assets] {#assets-6570}
-
-[!DNL Adobe Experience Manager] 6.5.7.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
-
-* The following enhancements are done for accessibility in [!DNL Experience Manager Assets] in this release. For more information, see [accessibility features in [!DNL Assets]](/help/assets/accessibility.md).
-
-  * When navigating timeline using a keyboard, the `Esc` key can collapse the [!UICONTROL Show All] option without losing the focus (CQ-4293598).
-  * When navigating using keyboard tab key, after removing the last tag from the added tags, the tag field retains the focus (NPR-35109).
-  * [!DNL Experience Manager] components now contain appropriate information for name, role, and value to be used by screen readers (NPR-34255).
-  * After you delete the Type/Size combo box, Link combo box, Language combo box, or Text edit box, the keyboard focus returns to the next or the previous user interface elements or to a more relevant user interface element (CQ-4293585).
-  * When hovering pointer over options, tips such as Select and Download appear. Users who use a screen magnifier may not see the file thumbnails because of these tips. Now, it is possible to preserve the focus, after removing the option using `Escape` key. (CQ-4293554).
-  * Upon selecting a grid cell from the grid present in the page, the focus shifts to the action bar that appears on the screen (CQ-4282127).
-  * Visual users can differentiate between normal text and a link, as visual clues (underline and chevron icon) are displayed for links to all solutions in [!DNL Experience Manager] home page (CQ-4282072).
-
-* The following user experience enhancement is done in [!DNL Assets]:
-
-  * Enable sorting of assets in card view and column view (NPR-35097).
-
-* After the upgrade to 6.5, if a JSON file is generated using the Assets HTTP API, there are issues with the encoding used in the file (NPR-35129).
-
-* Users of a group that is not provided the permission to create Collections (Create Collection option is unavailable) are still able to create collections by directly accessing the URL `https://[aem_server]:[port]/mnt/overlay/dam/gui/content/collections/createcollectionwizard.html/content/dam/collections?contentPath=/content/dam/collections` (NPR-35115).
-
-* When sorted by name, the searched assets are sorted in case-sensitive manner. This creates two separate sorted lists based on casing that appearing in ordered manner in the search results (NPR-35068).
-
-* When a Content Fragment is opened in the editor, warning messages (`Invalid value specified for a metadata property`) are logged in the error logs (NPR-35012).
-
-* Users without administrator privilege can edit expired assets using [Experience Manager] desktop app. (NPR-34993).
-
-* When the same Asset is dragged on the Assets user interface and a new version is created, the changes in the metadata are not persistent (NPR-34940).
-
-* When editing Collections, a user can delete the title of the Collection and successfully save the changes (NPR-34889).
-
-* When uploading a duplicate image, a delete option is presented. Selecting delete lets the images upload. DAM Update Asset workflow is also triggered (NPR-34744).
-
-* When using [!DNL Adobe Asset Link] with [!DNL Adobe InDesign], the search results do not contain folders and collections but only contain assets (NPR-34699, CQ-4303666).
-
-* Hovering pointer on card view, makes the screen scroll as a result of (automatic) focus on the quick actions available in the card (NPR-34514).
-
-* When editing the properties of multiple assets in bulk, selecting the [!UICONTROL Save] option closes the bulk editor view and redirects to the main [!DNL Assets] page. This behavior is same as the behavior of [!UICONTROL Save & Close] option and is not expected (NPR-34546).
-
-* The smart collection does not present the correct user interface setting after saving. The query is saved properly but the interface always displays the last added Option predicate (NPR-34539).
-
-* When adding assets to [!DNL Experience Manager], the metadata without a namespace does not get imported (NPR-34530).
-
-* When dragging an asset on a folder to move it, the user interface also displays the option to [!UICONTROL Drop in Lightbox] and [!UICONTROL Drop in Collection]. Even if the move operation is canceled, the user interface continues to display the latter two options (NPR-34526).
-
-* The symbol `%>` is displayed on the collections page (NPR-34499).
-
-* In column view, [!DNL Assets] displays duplicate folder and asset names when scrolling upward and downward before all assets get displayed (NPR-34464).
-
-* If you create a private folder immediately after creating a public folder, then the public folder uses the private folder settings (NPR-34415).
-
-* In the card view, the cards are not listed in alphabetical order and cards cannot be sorted alphabetically (NPR-34234).
-
-* When reopening cascading rules, the choices are not maintained on the user interface (CQ-4301452).
-
-#### [!DNL Dynamic Media] {#dynamic-media-6570}
-
-* The following enhancements are done for accessibility in [!DNL Dynamic Media] (CQ-4290306). For details, see [accessibility features in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
-
-  * Screen readers (JAWS, Narrator) narrate the name, role, and state for the menu items in the Embed size menu option (CQ-4290927).
-  * Users can navigate the Email link dialog using the `Tab` key (CQ-4290926).
-  * The workflow to create video encoding profiles is more user-friendly given the screen reader enhancement (CQ-4290623, CQ-4290622).
-  * When navigating using `Tab` key, the focus moves to the appropriate user interface elements in the workflow to create an interactive video (CQ-4290621, CQ-4290620, CQ-4290619).
-  * The Publish page, Edit Asset page, Edit Smart Crops page, and Image Set Editor page are improved to comply with web standards. Assistive technology (AT) users can now navigate these pages easily and take actions such as cropping images (CQ-4290617, CQ-4290616, CQ-4290613, CQ-4290612, CQ-4290610, CQ-4290614).
-  * Viewers are improved to let users navigate using a keyboard (CQ-4290615).
-  * The keyboard and screen reader users can use the crop functionality (CQ-4290609).
-  * The keyboard users can better manage the hotspots (CQ-4290604, CQ-4290603).
-
-* Remote Imagesets are not editable in [!DNL Experience Manager] if the company name and folder name are the same (NPR-31340).
-
-* The z-index order is incorrect when you try to preview the output after adding a hotspot to a [!DNL Dynamic Media] image or after editing a [!DNL Dynamic Media] video or an [!DNL Experience Fragment] with an image (CQ-4307267).
-
-* [!DNL Dynamic Media] sync fails when mixed media sets are reprocessed (CQ-4307184).
-
-* If an asset is moved to a folder on which auto-synchronization to [!DNL Dynamic Media] is configured, the asset does not synchronize (CQ-4307122).
-
-* [!DNL Dynamic Media] video is not playing on iOS devices with the native HTML5 video controls (CQ-4306977, CQ-4306727).
-
-* Cannot download images on which SmartCrop is applied (CQ-4304558).
-
-* Cannot selectively publish folders to Dynamic Media (CQ-4304526).
-
-* Unpublishing a video file from [!DNL Experience Manager] do not unpublish the Adaptive Video Set from a configured Scene7 deployment (CQ-4304405).
-
-* Adding a panoramic image asset in a panoramic media component and refreshing the page results in `Uncaught ReferenceError: $ is not defined` error (CQ-4302810).
-
-* In the [!UICONTROL Viewer Presets Editor], when editing [!UICONTROL PanoramicImage/PanoramicImage_VR] preset, in the `PanoramicView` component, the `PANORAMICVIEW_AUTOROTATE` modifier label is not available (CQ-4302443).
-
-* Video captions are not displayed if the video is not the first in a MixedMediaSet (CQ-4298161).
-
-* HTML5 eCatalog Viewer on iPhones mobile devices cannot turn the pages or flip the pages (CQ-4296611).
-
-* When scrolling swatches on a mobile device, the swatches scroll to the right and out of the visible area for a few seconds before scrolling back into view (CQ-4296439).
-
-* When a Viewer Preset Master Record is created, the CSS and artwork do not get published and only the viewer preset gets published (CQ-4262205).
-
-* When attempting to link an Experience Fragment for a given hotspot in the [!UICONTROL Interactive Video/Images] component, it does not show the selected Experience Fragment path. Instead, it returns an empty value from the path field (NPR-35146, CQ-4298136).
-
-* Cannot preview an Experience Fragment in IVV Editor (CQ-4308560).
-
-* When adding a hotspot to an image and selecting an Experience Fragment, it is not possible to select the subfolders and the variants of the Experience Fragment (CQ-4307455).
-
-* The non-image assets do not show as published after uploading (CQ-4306415).
-
-#### [!DNL Experience Manager] 3D assets {#three-d-assets-6570}
-
-* `DAM CQ MIME Type` service applies incorrect MIME types to 3D assets leading to incorrect rendering (NPR-34731).
-
-### [!DNL Commerce] {#commerce-6570}
-
-* The Commerce product collection user interface does not list more than 15 products within a collection (NPR-34502).
-
-### Platform {#platform-6570}
-
-* An HTTP session over HTTPS is not invalidated (NPR-35083).
-* A `NullPointerException` is returned when starting daily or weekly maintenance tasks from user interface (NPR-34953).
-* The W3C validator reports warnings for compliant client library JavaScript files (NPR-34898).
-* The `AudienceOmniSearchHandler` function uses a deprecated index (NPR-34870).
-* Signing out from Experience Manager does not clear the cookies (NPR-34743).
-* The `findByTitle` function of the `TagManager` API does not work if the tag name contains a special character (NPR-34357).
-* The process to import user sync package fails (NPR-34399).
-* Added support for `ariaLabel` and `ariaLabelledby` properties to the `Coral.Masonry` component (GRANITE-29962).
-* Dispatcher cache is not refreshed for pages with content fragments after installing the latest core component packages (CQ-4306788).
-* Localized tag names with quotation marks (`"`) are not displayed properly on the user interface (CQ-4305439).
-
-### User Interface {#ui-6570}
-
-* The [!UICONTROL Link to] field in component properties displays autocomplete suggestions that do not match the specified string (NPR-34865).
-
-* AEM displays the following error message when you schedule a daily maintenance window distributed between 2 days (NPR-35280):
-
-   ```TXT
-   ERROR The start time must precede (be less than) the end time
-   ```
-
-### Integrations {#integrations-6570}
-
-* Editing an existing [!DNL Adobe Launch] configuration fails (NPR-35045).
-* Cannot export [!DNL Experience Fragments] to [!DNL Adobe Target] if using IMS configuration and [!DNL Adobe Target Standard] environment (NPR-34555).
-* The [!UICONTROL Create] option appears on the [!UICONTROL Audiences] page on navigating from a folder to the [!UICONTROL Audiences] page (NPR-35151).
-
-### Sling {#sling-6570}
-
-* The default login health check validates the credentials of a user that does not exist (NPR-34686).
-
-### Translation Projects {#translation-6570}
-
-* On canceling a translation project in [!DNL Experience Manager], the request to cancel it is not sent to the translation provider (NPR-34433).
-
-### [!DNL Communities] {#communities-6570}
-
-* All the instances of inequitable terminology in the product are replaced with accepted equivalents (NPR-34311).
-* [!DNL Google+] is removed from the list of social sharing options (NPR-33877).
-
-### [!DNL Brand Portal] {#brandportal-6570}
-
-* The user interface does not respond on selecting the assets in the [!UICONTROL List View] (NPR-34728).
-
-### [!DNL Forms] {#forms-6570}
+### [!DNL Forms] {#forms-6580}
 
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
->[!NOTE]
->
->[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install AEM Forms add-on](#install-aem-forms-add-on-package) and [Install AEM Forms on JEE](#install-aem-forms-jee-installer).
-
 **Adaptive Forms**
 
-* Unable to edit an adaptive form using Classic UI after applying [!DNL Experience Manager] Service Pack 6 (NPR-35126).
+* When you insert a table with a repeatable row to a repeatable panel that has multiple instances in an adaptive form, the table always gets added to the first instance of the panel (NPR-35635).
 
-* When you convert a PDF to an adaptive form, you cannot set a value for a nested panel using a form data model on the tabbed layout. In addition, there are issues when setting a value for Radio Button Groups dynamically with a static array using the code editor (NPR-35062).
-
-* When you enter Japanese characters in a text field component in an adaptive form, you can specify more characters than the maximum limit of 35 characters (NPR-35039).
-
-* The adaptive form displays unwanted parameters, such as `owner` and `status`, on the **[!UICONTROL Thank you]** page displayed after submitting the form (NPR-34989).
-
-* The [!UICONTROL File Selection] dialog for the [!UICONTROL Attachment] component displays the unsupported file types as well for selection resulting in error during adaptive form submission (NPR-34970).
-
-* When you insert an adaptive form in an [!DNL Experience Manager Sites] page that includes text before the form, the cursor focus directly moves to the form instead of the text before the form (NPR-34947).
-
-* [!UICONTROL Preview with Data] option to prefill an adaptive form using an [!DNL Experience Manager] 6.2 data XML file does not work appropriately (NPR-35087).
-
-* When you update the data dictionary for an adaptive form, the form does not get translated as the adaptive form returns cached values (NPR-34845).
-
-* Fragments take longer time to load in an adaptive form because of cache invalidation (NPR-34567).
-
-* Tab navigation does not work appropriately for screen readers in an adaptive form (NPR-34544).
-
-**Correspondence Management**
-
-* Unable to save values for XML tags with numeric data, which includes float type, as a draft (NPR-35050).
-
-* When you migrate the assets from ES3, the assets include two non-editable default conditions (NPR-34972).
-
-* When you edit a data dictionary in a letter, the [!UICONTROL Lent Content] section displays spinning rectangles instead of useful information (NPR-34853).
+* When the tab focus reaches the CAPTCHA component again after successfully verifying it once in an adaptive form, [!DNL Experience Manager Forms] displays the `Provide Captcha phrase to proceed` error message (NPR-35539).
 
 **Interactive Communication**
 
-* The rollout configuration name for Interactive Communication, available after installing the [!DNL Forms] add-on package, duplicates the standard rollout configuration name (NPR-34976).
+* When you submit a translated form, the submission messages display in English and do not translate to the appropriate language (NPR-35808).
+
+* When you include a hide condition in the attached XDP or document fragments, the Interactive Communication fails to load (NPR-35745).
+
+**Correspondence Management**
+
+* When you are editing a letter, the modules with conditions take a longer time to load (NPR-35325).
+
+* When you select an asset from the left navigation pane that is not included in a letter and then select the next asset, the blue highlight is not removed from the previously selected asset (NPR-35851).
+
+* When you edit text fields in a letter, [!DNL Experience Manager Forms] displays the `Text Edit Failed` error message (CQ-4313770).
+
+**Workflow**
+
+* When you try to open an adaptive form on an [!DNL Experience Manager Forms] mobile application for iOS, the application stops to respond (CQ-4314825).
+
+* The [!UICONTROL To-do] tab in the HTML workspace displays HTML characters (NPR-35298).
+
+**XMLFM**
+
+* When you generate an XML document using the Output Service, the `OutputServiceException` error occurs for some of the XML files (CQ-4311341, CQ-4313893).
+  
+* When you apply superscript property to the first character of the bullet, the bullet size gets smaller (CQ-4306476).
+
+* The PDF forms generated using the Output Service do not include borders (CQ-4312564).
+
+**Designer**
+
+* When you open an XDP file in [!DNL Experience Manager Forms] Designer, a designer.log file gets generated in the same folder as the XDP file (CQ-4309427, CQ-4310865).
+
+**HTML5 Forms**
+
+* When you select a checkbox in an adaptive form in [!DNL Safari] web browser for [!DNL iOS 14.1 or 14.2], additional fields do not display (NPR-35652).
+
+**Forms Management**
+
+* No confirmation message to indicate the successful bulk upload of XDP files to CRX repository (NPR-35546).
 
 **Document Security**
 
-* When you save a new document security policy, Experience Manager Forms displays the `Relative validity period is required` error message (NPR-34679).
-
-* Document Security is not able to protect PDF 2.0 document (CQ-4305851).
+* Multiple issues reported for the [!UICONTROL Edit Policy] option on AdminUI (NPR-35747).
 
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
-## Install 6.5.7.0 {#install}
+## Install 6.5.8.0 {#install}
 
 **Setup requirements and more information**
 
-* AEM 6.5.7.0 requires AEM 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* Experience Manager 6.5.8.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* On a deployment with MongoDB and multiple instances, install AEM 6.5.7.0 on one of the Author instances using the Package Manager.
+* On a deployment with MongoDB and multiple instances, install Experience Manager 6.5.8.0 on one of the Author instances using the Package Manager.
 
 >[!NOTE]
 >
->Adobe does not recommend removing or uninstalling the [!DNL Adobe Experience Manager] 6.5.7.0 package.
+>Adobe does not recommend removing or uninstalling the [!DNL Adobe Experience Manager] 6.5.8.0 package.
 
-### Install the Service Pack {#install-service-pack}
+### Install the service pack {#install-service-pack}
 
-Perform the following steps to install the Service Pack on an existing Adobe Experience Manager 6.5 instance:
+To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, follow these steps:
 
 1. Restart the instance before installation if the instance is in update mode (and this is the case when the instance was updated from an earlier version). Adobe also recommends a restart if the current uptime for an instance is high.
 
-1. Before installing, take a snapshot or a fresh backup of your [Experience Manager] instance.
+1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.7.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.8.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -383,19 +247,19 @@ Perform the following steps to install the Service Pack on an existing Adobe Exp
 
 **Automatic installation**
 
-There are two ways to automatically install Adobe Experience Manager 6.5.7.0 on a working instance:
+There are two ways to automatically install Adobe Experience Manager 6.5.8.0 on a working instance:
 
 A. Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
 
-B. Use the [HTTP API from Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html). Use `cmd=install&recursive=true` so that the nested packages are installed.
+B. Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
 >[!NOTE]
 >
->Adobe Experience Manager 6.5.7.0 does not support Bootstrap installation.
+>Adobe Experience Manager 6.5.8.0 does not support Bootstrap installation.
 
 **Validate installation**
 
-1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.7.0)` under [!UICONTROL Installed Products].
+1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.8.0)` under [!UICONTROL Installed Products].
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
@@ -407,11 +271,7 @@ To know the platforms certified to work with this release, see the [technical re
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
-
->[!NOTE]
->
->Skip if you are not using AEM Forms. Fixes in Adobe Experience Manager Forms are delivered through a separate add-on package.
+>Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
 1. Ensure that you have installed the Adobe Experience Manager Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
@@ -419,7 +279,7 @@ To know the platforms certified to work with this release, see the [technical re
 
 >[!NOTE]
 >
->AEM 6.5.7.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.7.0, install the latest version of the package post installation of Forms Add-On Package.
+>AEM 6.5.8.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.8.0, install the latest version of the package post installation of Forms Add-On Package.
 
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
@@ -429,9 +289,13 @@ To know the platforms certified to work with this release, see the [technical re
 
 For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
+>[!NOTE]
+>
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.7.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.7/).
+The UberJar for Experience Manager 6.5.8.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.8/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -439,7 +303,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.7</version>
+     <version>6.5.8</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -456,34 +320,12 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the AEM and Target integration updated in AEM 6.5 to support the Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting AEM pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective AEM cloud services. |
-| Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for AEM 6.5. | N/A |
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the Experience Manager and Adobe Target integration updated in Experience Manager 6.5 to support the Adobe Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting Experience Manager pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective Experience Manager cloud services. |
+| Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues}
 
-* Ignore the following errors in the `error.log` file during the installation of Experience Manager 6.5.7.0:
-
-   ```TXT
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)[com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy] :  Cannot register component (org.osgi.service.component.ComponentException: The component name 'com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy' has already been registered by Bundle 331 (com.day.cq.dam.cq-dam-core) as Component of Class com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy)
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)[com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy(1314)] : Could not load implementation object class com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy (java.lang.ClassNotFoundException: com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy not found by com.day.cq.dam.cq-dam-core [331])
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)[com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy(1316)] : Could not load implementation object class com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy (java.lang.ClassNotFoundException: com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy not found by com.day.cq.dam.cq-dam-core [331])
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)[com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy(1315)] : Could not load implementation object class com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy (java.lang.ClassNotFoundException: com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy not found by com.day.cq.dam.cq-dam-core [331])
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)BundleComponentActivator : Unexpected failure enabling component holder com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy (java.lang.IllegalStateException: Could not load implementation object class com.day.cq.dam.core.impl.collection.CollectionCreationListenerDummy)
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)BundleComponentActivator : Unexpected failure enabling component holder com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy (java.lang.IllegalStateException: Could not load implementation object class com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy)
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)[com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy] :  Cannot register component (org.osgi.service.component.ComponentException: The component name 'com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy' has already been registered by Bundle 331 (com.day.cq.dam.cq-dam-core) as Component of Class com.day.cq.dam.core.impl.team.MediaPortaltRoleProviderDummy)
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)[com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy] :  Cannot register component (org.osgi.service.component.ComponentException: The component name 'com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy' has already been registered by Bundle 331 (com.day.cq.dam.cq-dam-core) as Component of Class com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy)
-
-   com.day.cq.dam.cq-dam-core bundle com.day.cq.dam.cq-dam-core:5.12.276 (331)BundleComponentActivator : Unexpected failure enabling component holder com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy (java.lang.IllegalStateException: Could not load implementation object class com.day.cq.dam.core.impl.team.MediaPortalShareHandlerDummy)
-   ```
-
-* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.7.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. Restart the instance to resolve the issue.
+* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.8.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. Restart the instance to resolve the issue.
 
 * If you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
@@ -497,8 +339,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * If [!UICONTROL Connected assets configuration] wizard returns a 404 error message after installation, manually reinstall the `cq-remotedam-client-ui-content` and `cq-remotedam-client-ui-components` packages using the Package Manager.
 
-* The following errors and warning messages may display during installation of AEM 6.5.x.x:
-  * “When the Target integration is configured in AEM using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
+* The following errors and warning messages may display during installation of Experience Manager 6.5.x.x:
+  * “When the Adobe Target integration is configured in Experience Manager using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
   * `com.adobe.granite.maintenance.impl.TaskScheduler`: No maintenance windows found at granite/operations/maintenance.
   * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used. CQ-4274424
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
@@ -506,22 +348,22 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-The following text documents list the OSGi bundles and Content Packages included in AEM 6.5.7.0:
+The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.8.0:
 
-* [List of OSGi bundles included in AEM 6.5.7.0](assets/6570_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.8.0](assets/6580_bundles.txt)
 
-* [List of Content Packages included in AEM 6.5.7.0](assets/6570_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.8.0](assets/6580_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* See [how to contact customer support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* See [how to contact Adobe Customer Care](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 6.5 release notes](/help/release-notes/release-notes.md)
 >* [[!DNL Experience Manager] product page](https://www.adobe.com/marketing/experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
->* Subscribe to [Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)
+>* [Subscribe to Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)

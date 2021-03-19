@@ -90,7 +90,7 @@ The following actions in [!DNL Assets] work with the listed keyboard shortcuts. 
 | Asset or folder is selected|`e`|Edit the selected asset.|
 | Asset or folder is selected|`m`|Move the selected asset.|
 | Asset or folder is selected|`Ctrl + c`|Copy the selected asset.|
-| Asset or folder is selected|`Esc`|Deselect the selection.|
+| Asset or folder is selected|`Esc`|Cancel the selection.|
 | Dialog box opens and is in the focus|`Esc`|Close dialog box.|
 | Inside a folder in DAM|`Ctrl + v`|Paste the copied asset.|
 | [!DNL Assets] Console|`Ctrl + A`|Select all assets.|

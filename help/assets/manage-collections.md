@@ -88,7 +88,7 @@ To create a smart collection, follow the steps:
 
    >[!NOTE]
    >
-   >If you select **[!UICONTROL Public]**, the smart collection becomes available to everyone with the owner role after you create it. If you deselect the **[!UICONTROL Public]** option, the DAM user group is no longer associated with the smart collection.
+   >If you select **[!UICONTROL Public]**, the smart collection becomes available to everyone with the owner role after you create it. If you cancel the **[!UICONTROL Public]** option, the DAM user group is no longer associated with the smart collection.
 
 1. Click **[!UICONTROL Save]** to create the smart collection, and then close the message box to complete the process.
 
@@ -146,11 +146,11 @@ You can edit the metadata of multiple collections simultaneously. This functiona
 1. In the Collections console, select two or more collections.
 1. From the toolbar, click **[!UICONTROL Properties]**.
 1. In the **[!UICONTROL Collection Metadata]** page, edit the metadata under the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs, as necessary.
-1. To view the metadata properties for a specific collection, deselect the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
+1. To view the metadata properties for a specific collection, cancel the selection of the remaining collections in the collections list. The metadata editor fields are populated with the metadata for the particular collection.
 
    >[!NOTE]
    >
-   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by deselecting them. The collections list has all the collections selected by default. [!DNL Experience Manager] does not update the metadata of the collections that you remove.
+   >* In the [!UICONTROL Properties] page, you can remove collections from the list of collections by canceling the selection. The collections list has all the collections selected by default. [!DNL Experience Manager] does not update the metadata of the collections that you remove.
    >* At the top of the list, select the check box near **[!UICONTROL Title]** to toggle between selecting the collections and clearing the list.
 
 1. Click **[!UICONTROL Save & Close]** from the toolbar, and then close the confirmation dialog.

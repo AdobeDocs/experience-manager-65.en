@@ -108,7 +108,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
     * In the **[!UICONTROL Timeout]** field, enter the external process timeout (seconds).
     * In the **[!UICONTROL Period]** field, enter a polling interval (seconds) to test for the completion of the external process. 
     * In the **[!UICONTROL Batch field]**, enter the maximum number of assets (50-1000) to process in a Dynamic Media server batch processing upload job.
-    * Select **[!UICONTROL Advance on timeout]** if you want to advance when the timeout is reached. Deselect if you want to proceed to the inbox when the timeout is reached. 
+    * Select **[!UICONTROL Advance on timeout]** if you want to advance when the timeout is reached. Cancel selection if you want to proceed to the inbox when the timeout is reached. 
 
     ![Properties dialog box](/help/assets/assets-dm/reprocess-assets3.png)
 

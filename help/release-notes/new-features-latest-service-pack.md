@@ -1,59 +1,59 @@
 ---
-title: What's new in Adobe Experience Manager 6.5 Service Pack 7
-description: What's new in Adobe Experience Manager 6.5 Service Pack 7
+title: What is new in [!DNL Experience Manager] 6.5 Service Pack 8
+description: What's new in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
 ---
 
-# What's new in Adobe Experience Manager 6.5 Service Pack 7 {#aem-whats-new-service-pack}
+# What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
-[!DNL Adobe Experience Manager] 6.5 service packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
+[!DNL Adobe Experience Manager] 6.5 Service Packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
 
-This article highlights the features included in the latest 6.5 Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key AEM releases since the last service pack](#key-releases-since-last-sp) release.
+This article highlights the features included in the latest Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key releases since the last Service Pack](#key-releases-since-last-sp) release.
 
-## Adobe [!DNL Experience Manager Sites] {#aem-sites}
+## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Availability of page moves and MSM rollouts as asynchronous operations {#page-moves-msm-asynchronous}
+### Sort the Live Copy pages available for rollout {#sort-livecopy-pages}
 
-You can now perform the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance. You can schedule the operations for immediate or later execution. The status of associated jobs and process steps is displayed in a console, which is helpful for monitoring large-scale MSM rollouts.
+You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570).
+* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency.
 
-* Users can sort digital assets in Card and Column views.
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] add-on packages are made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-### Performance improvements {#performance-improvements-forms}
+### Show or hide CAPTCHA component in an adaptive form based on rules {#show-hide-captcha}
 
-[!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
+You can now validate CAPTCHA either on adaptive form submission or on user action. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an adaptive form based on rules.
 
-* Validating the field values on the server when you submit an adaptive form.
+### Add custom CAPTCHA services {#add-custom-captcha-services}
 
-* Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+[!DNL Experience Manager Forms] provides out of the box support to use Google reCAPTCHA (A separate license of Google reCAPTCHA APIs is required) as a CAPTCHA validation service. You can also use a custom CAPTCHA service to validate CAPTCHAs.
 
-### Form data model HTTP client configuration to optimize performance {#fdm-http-client-config}
+### Other enhancements {#other-enhancements-forms-6580}
 
-[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
+* Improved accessibility of the [!DNL Experience Manager Forms] Date Picker component.
 
-### Availability of Reset Option for each component in the Layout mode {#reset-option-layout-mode}
+* Added support to generate an Interactive Communication in PCL format using the PrintChannel API.
 
-You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
-
-### Support for Microsoft SQL Server 2019
-
-[!DNL Experience Manager Forms] now supports Microsoft SQL Server 2019.
+* When performing a PDFG conversion, you can now enable or disable the [!DNL Experience Manager Forms] registry changes for custom bookmark generation.
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Availability of page moves and MSM rollouts as asynchronous operations (6.5.7.0) {#page-moves-msm-asynchronous}
+
+You can now perform the page moves and MSM rollouts as asynchronous operations to reduce their impact on runtime performance. You can schedule the operations for immediate or later execution. The status of associated jobs and process steps is displayed in a console, which is helpful for monitoring large-scale MSM rollouts.
 
 #### Availability of Page Move operation in asynchronous mode (6.5.6.0) {#page-move-asynchronous}
 
@@ -102,6 +102,10 @@ You can now select styles within the component dialog using the enhanced Style S
 * Improved handling of incomplete or invalid URLs. Such URLs can slow the Template Editor.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
+
+* Users can sort digital assets in Card and Column views (6.5.7.0).
 
 #### Accessibility enhancements (6.5.6.0) {#accessibility-assets-6560}
 
@@ -213,6 +217,22 @@ Smart imaging uses each user's unique viewing characteristics to automatically s
 Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Performance improvements (6.5.7.0) {#performance-improvements-forms}
+
+[!DNL Experience Manager] 6.5 Service Pack 7 Forms improves the performance for:
+
+* Validating the field values on the server when you submit an adaptive form.
+
+* Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+
+#### Form data model HTTP client configuration to optimize performance (6.5.7.0) {#fdm-http-client-config}
+
+[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
+
+#### Availability of Reset Option for each component in the Layout mode (6.5.7.0) {#reset-option-layout-mode}
+
+You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
 
 #### Prefill an adaptive form at the client (6.5.6.0) {#prefill-merge-data-at-client}
 
@@ -330,19 +350,18 @@ You have the option of specifying a start date and time and an end date and time
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
-## Key releases since Adobe Experience Manager 6.5 SP6 {#key-releases-since-last-sp}
+<!-- TBD: Check if the wider team released anything in FY21.
+-->
 
-Between September 03, 2020 and November 26, 2020, Adobe released the following, in addition to the service packs and cumulative fix packs:
+## Key releases since [!DNL Adobe Experience Manager] 6.5 SP7 {#key-releases-since-last-sp}
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2020.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-9-0.html?lang=en#release-notes) and [2020.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-2020-10-0.html?lang=en#release-notes).
+Between November 26, 2020 and February 25, 2021, Adobe released the following, in addition to the Service Packs and Cumulative Fix Packs:
 
-* [[!DNL Experience Manager] desktop app 2.0 (2.0.3.2)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html), [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html), and [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
 
-* [WKND Reference Site - 0.0.6](https://github.com/adobe/aem-guides-wknd/releases/tag/aem-guides-wknd-0.0.6)
+* [[!DNL Experience Manager] desktop app 2.1 (2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
 * [Experience Manager Screens: Feature Pack 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
-
-* [Adobe Asset Link v2.2](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)
 
 >[!MORELIKETHIS]
 >
