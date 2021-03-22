@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 
+role: Administrator
 ---
 
 # Badges Console {#badges-console}

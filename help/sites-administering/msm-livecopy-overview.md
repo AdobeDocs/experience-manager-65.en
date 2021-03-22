@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
+feature: Multi Site Manager
 ---
 
 # Live Copy Overview Console{#live-copy-overview-console}

@@ -10,6 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Manage agent signature images{#manage-agent-signature-images}

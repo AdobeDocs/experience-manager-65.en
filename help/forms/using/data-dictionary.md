@@ -9,6 +9,7 @@ topic-tags: correspondence-management
 discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Data Dictionary{#data-dictionary}

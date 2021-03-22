@@ -10,6 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Add custom action/button in Create Correspondence UI {#add-custom-action-button-in-create-correspondence-ui}

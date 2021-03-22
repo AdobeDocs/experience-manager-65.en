@@ -8,6 +8,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
+feature: Video Profiles
+role: Business Practitioner, Administrator
 ---
 
 # Video profiles {#video-profiles}

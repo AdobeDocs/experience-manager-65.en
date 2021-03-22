@@ -10,6 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Using CAPTCHA in adaptive forms{#using-captcha-in-adaptive-forms}

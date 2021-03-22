@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
+feature: Language Copy
 ---
 
 # Connecting to Microsoft Translator{#connecting-to-microsoft-translator}

@@ -12,6 +12,7 @@ discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 
+role: Administrator
 ---
 
 # Communities Scoring and Badges {#communities-scoring-and-badges}

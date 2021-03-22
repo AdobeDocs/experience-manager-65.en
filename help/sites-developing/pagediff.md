@@ -1,7 +1,7 @@
 ---
 title: Developing and Page Diff
 seo-title: Developing and Page Diff
-description: null
+description: Developing and Page Diff
 seo-description: null
 uuid: 06f27bc2-f42a-4176-ab94-255e721c6933
 contentOwner: User

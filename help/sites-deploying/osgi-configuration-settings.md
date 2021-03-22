@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 
+feature: Configuring
 ---
 
 # OSGi Configuration Settings{#osgi-configuration-settings}

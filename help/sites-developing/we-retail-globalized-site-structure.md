@@ -1,7 +1,7 @@
 ---
 title: Trying out the Globalized Site Structure in We.Retail
 seo-title: Trying out the Globalized Site Structure in We.Retail
-description: null
+description: Trying out the Globalized Site Structure in We.Retail
 seo-description: null
 uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User

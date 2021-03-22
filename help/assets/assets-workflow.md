@@ -2,6 +2,8 @@
 title: Process assets using workflows
 description: Asset processing to convert formats, create renditions, manage assets, validate assets, and run workflows.
 contentOwner: AG
+feature: Workflow, Renditions
+role: Business Practitioner, Administrator
 ---
 
 # Process digital assets {#process-assets}

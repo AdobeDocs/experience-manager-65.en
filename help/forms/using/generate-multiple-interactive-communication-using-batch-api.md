@@ -5,6 +5,7 @@ contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
+feature: Interactive Communication
 ---
 
 # Generate multiple interactive communications using Batch API {#use-batch-api-to-generate-multiple-ic}

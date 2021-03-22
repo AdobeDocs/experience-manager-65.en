@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 
+role: Administrator
 ---
 
 # Supported Platforms for AEM Forms on JEE{#supported-platforms-for-aem-forms-on-jee}

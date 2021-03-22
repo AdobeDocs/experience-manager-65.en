@@ -10,6 +10,7 @@ topic-tags: forms-manager
 discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 
+role: Administrator
 ---
 
 # Searching for forms and assets{#searching-for-forms-and-assets}

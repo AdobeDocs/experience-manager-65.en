@@ -1,6 +1,7 @@
 ---
 title: Creating and Synchronizing Live Copies
 description: Learn how to create and synchronize Live Copies.
+feature: Multi Site Manager
 ---
 
 # Creating and Synchronizing Live Copies{#creating-and-synchronizing-live-copies}

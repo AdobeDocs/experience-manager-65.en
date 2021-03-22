@@ -2,6 +2,7 @@
 title: Best practices to monitor [!DNL Assets] deployment
 description: Best practices to monitor the environment and performance of your [!DNL Adobe Experience Manager] deployment after it is deployed.
 contentOwner: AG
+role: Administrator, Architect
 ---
 
 # Best practices to monitor [!DNL Adobe Experience Manager Assets] deployment {#assets-monitoring-best-practices}

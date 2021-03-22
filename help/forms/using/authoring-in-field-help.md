@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Authoring in-context help for form fields{#authoring-in-context-help-for-form-fields}

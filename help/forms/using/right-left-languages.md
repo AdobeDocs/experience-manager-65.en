@@ -8,6 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
+feature: Mobile Forms
 ---
 
 # Right-to-left languages in HTML5 forms {#right-to-left-languages-in-html-forms}

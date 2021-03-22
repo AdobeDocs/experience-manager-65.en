@@ -3,6 +3,7 @@ title: Manage digital assets collections
 description: Learn tasks to manage Collections of assets, such as create, view, delete, edit, and download collections.
 contentOwner: AG
 mini-toc-levels: 1
+role: Business Practitioner
 ---
 
 # Manage collections {#managing-collections}

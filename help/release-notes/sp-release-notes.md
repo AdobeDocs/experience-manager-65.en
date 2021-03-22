@@ -161,6 +161,56 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 >
 >[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
+**Adaptive Forms**
+
+* When you insert a table with a repeatable row to a repeatable panel that has multiple instances in an adaptive form, the table always gets added to the first instance of the panel (NPR-35635).
+
+* When the tab focus reaches the CAPTCHA component again after successfully verifying it once in an adaptive form, [!DNL Experience Manager Forms] displays the `Provide Captcha phrase to proceed` error message (NPR-35539).
+
+**Interactive Communication**
+
+* When you submit a translated form, the submission messages display in English and do not translate to the appropriate language (NPR-35808).
+
+* When you include a hide condition in the attached XDP or document fragments, the Interactive Communication fails to load (NPR-35745).
+
+**Correspondence Management**
+
+* When you are editing a letter, the modules with conditions take a longer time to load (NPR-35325).
+
+* When you select an asset from the left navigation pane that is not included in a letter and then select the next asset, the blue highlight is not removed from the previously selected asset (NPR-35851).
+
+* When you edit text fields in a letter, [!DNL Experience Manager Forms] displays the `Text Edit Failed` error message (CQ-4313770).
+
+**Workflow**
+
+* When you try to open an adaptive form on an [!DNL Experience Manager Forms] mobile application for iOS, the application stops to respond (CQ-4314825).
+
+* The [!UICONTROL To-do] tab in the HTML workspace displays HTML characters (NPR-35298).
+
+**XMLFM**
+
+* When you generate an XML document using the Output Service, the `OutputServiceException` error occurs for some of the XML files (CQ-4311341, CQ-4313893).
+  
+* When you apply superscript property to the first character of the bullet, the bullet size gets smaller (CQ-4306476).
+
+* The PDF forms generated using the Output Service do not include borders (CQ-4312564).
+
+**Designer**
+
+* When you open an XDP file in [!DNL Experience Manager Forms] Designer, a designer.log file gets generated in the same folder as the XDP file (CQ-4309427, CQ-4310865).
+
+**HTML5 Forms**
+
+* When you select a checkbox in an adaptive form in [!DNL Safari] web browser for [!DNL iOS 14.1 or 14.2], additional fields do not display (NPR-35652).
+
+**Forms Management**
+
+* No confirmation message to indicate the successful bulk upload of XDP files to CRX repository (NPR-35546).
+
+**Document Security**
+
+* Multiple issues reported for the [!UICONTROL Edit Policy] option on AdminUI (NPR-35747).
+
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Install 6.5.8.0 {#install}
@@ -217,6 +267,32 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
+### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+1. Ensure that you have installed the Adobe Experience Manager Service Pack.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+
+>[!NOTE]
+>
+>AEM 6.5.8.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.8.0, install the latest version of the package post installation of Forms Add-On Package.
+
+### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+
+>[!NOTE]
+>
+>Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+
+For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+
+>[!NOTE]
+>
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+
 ### UberJar {#uber-jar}
 
 The UberJar for Experience Manager 6.5.8.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.8/).
@@ -266,9 +342,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * The following errors and warning messages may display during installation of Experience Manager 6.5.x.x:
   * “When the Adobe Target integration is configured in Experience Manager using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
   * `com.adobe.granite.maintenance.impl.TaskScheduler`: No maintenance windows found at granite/operations/maintenance.
-  * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used. CQ-4274424
+  * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used (CQ-4274424).
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
+  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 

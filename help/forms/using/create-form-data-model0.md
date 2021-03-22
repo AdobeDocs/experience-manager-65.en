@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 
+feature: Interactive Communication
 ---
 
 # Tutorial: Create form data model{#tutorial-create-form-data-model}

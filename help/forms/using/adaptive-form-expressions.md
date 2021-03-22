@@ -9,6 +9,7 @@ topic-tags: develop
 discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Adaptive Form Expressions{#adaptive-form-expressions}

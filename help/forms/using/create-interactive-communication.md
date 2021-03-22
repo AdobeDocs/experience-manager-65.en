@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 
+feature: Interactive Communication
 ---
 
 # Create an Interactive Communication{#create-an-interactive-communication}

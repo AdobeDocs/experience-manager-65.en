@@ -10,6 +10,7 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
+feature: Commerce Integration Framework
 ---
 
 # SAP Commerce Cloud{#sap-commerce-cloud}

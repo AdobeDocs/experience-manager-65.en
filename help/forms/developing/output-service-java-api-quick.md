@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
+role: Developer
 ---
 
 # Output Service Java API Quick Start (SOAP) {#output-service-java-api-quick-start-soap}

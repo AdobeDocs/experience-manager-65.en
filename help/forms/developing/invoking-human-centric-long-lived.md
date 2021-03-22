@@ -9,6 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
+role: Developer
 ---
 
 # Invoking Human-Centric Long-Lived Processes {#invoking-human-centric-long-lived-processes}

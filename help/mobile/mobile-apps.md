@@ -1,7 +1,7 @@
 ---
 title: Mobile-Apps
 seo-title: Mobile-Apps
-description: null
+description: "Mobile-Apps"
 seo-description: null
 uuid: 4a91241e-8c78-42fe-a5d3-732a6c34cbfd
 contentOwner: msm-service

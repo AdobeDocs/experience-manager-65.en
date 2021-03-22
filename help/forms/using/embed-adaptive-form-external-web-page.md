@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Embed adaptive form in external web page{#embed-adaptive-form-in-external-web-page}

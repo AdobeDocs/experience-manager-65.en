@@ -11,6 +11,7 @@ topic-tags: configuring
 discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 
+feature: Configuring
 ---
 
 # Replication{#replication}

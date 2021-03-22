@@ -10,6 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Layout Design{#layout-design}

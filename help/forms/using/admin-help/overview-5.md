@@ -11,6 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 
+feature: PDF Generator
 ---
 
 # Introduction to working with PDF Generator {#introduction-to-working-with-pdf-generator}

@@ -2,6 +2,7 @@
 title: Share assets using a link
 description: Share assets, folders, and collections as a URL.
 contentOwner: AG
+role: Business Practitioner
 ---
 
 # Share asset via a link {#asset-link-sharing}

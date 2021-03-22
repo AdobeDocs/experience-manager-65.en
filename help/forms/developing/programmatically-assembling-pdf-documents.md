@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
+role: Developer
 ---
 
 # Programmatically Assembling PDF Documents {#programmatically-assembling-pdf-documents} 

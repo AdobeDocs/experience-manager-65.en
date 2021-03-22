@@ -2,6 +2,7 @@
 title: AEM Fluid Experiences Feature List
 description: Fluid Experiences Feature List
 index: n
+feature: Authoring
 ---
 
 # AEM Fluid Experiences Feature List{#aem-fluid-experiences-feature-list}

@@ -10,6 +10,7 @@ topic-tags: Configuration
 discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 
+role: Administrator
 ---
 
 # Performance tuning of AEM Forms server{#performance-tuning-of-aem-forms-server}

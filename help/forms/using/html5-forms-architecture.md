@@ -11,6 +11,7 @@ topic-tags: hTML5_forms
 discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 
+feature: Mobile Forms
 ---
 
 # Architecture of HTML5 forms{#architecture-of-html-forms}

@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
 
+feature: Interactive Communication
 ---
 
 # Print channel and web channel{#print-channel-and-web-channel}

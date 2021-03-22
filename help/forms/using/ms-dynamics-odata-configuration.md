@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 
+feature: Form Data Model
 ---
 
 # Microsoft Dynamics OData configuration{#microsoft-dynamics-odata-configuration}

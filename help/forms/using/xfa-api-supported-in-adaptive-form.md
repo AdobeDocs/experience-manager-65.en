@@ -9,6 +9,7 @@ topic-tags: develop
 discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # XFA support in XDP-based adaptive forms{#xfa-support-in-xdp-based-adaptive-forms}

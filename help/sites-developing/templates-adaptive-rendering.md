@@ -1,7 +1,7 @@
 ---
 title: Adaptive Template Rendering
 seo-title: Adaptive Template Rendering
-description: null
+description: Adaptive Template Rendering
 seo-description: null
 uuid: 97226ae1-e42a-40ae-a5e0-886cd77559d8
 contentOwner: User

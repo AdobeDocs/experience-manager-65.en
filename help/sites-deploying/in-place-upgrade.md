@@ -11,6 +11,7 @@ topic-tags: upgrading
 discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 
+feature: Upgrading
 ---
 
 # Performing an In-Place Upgrade{#performing-an-in-place-upgrade}

@@ -10,6 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
+feature: Configuring
 ---
 
 # Oak Queries and Indexing{#oak-queries-and-indexing}

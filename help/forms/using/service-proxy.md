@@ -10,6 +10,7 @@ topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 
+feature: Mobile Forms
 ---
 
 # HTML5 forms service proxy{#html-forms-service-proxy}

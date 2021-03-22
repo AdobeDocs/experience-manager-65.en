@@ -2,6 +2,8 @@
 title: Manage metadata of your digital assets in [!DNL Adobe Experience Manager].
 description: Learn about the types of metadata an how [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] makes it possible to automatically organize and process assets based on their metadata.
 contentOwner: AG
+feature: Tagging, Metadata
+role: Architect, Leader
 ---
 
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}

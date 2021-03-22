@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 232a0ec1-8dfc-41ec-84cc-69f9db494ea0
 docset: aem65
 
+role: Administrator
 ---
 
 # Configure Messaging {#configure-messaging}

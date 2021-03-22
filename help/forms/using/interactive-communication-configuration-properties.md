@@ -11,6 +11,7 @@ topic-tags: interactive-communications
 discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 
+feature: Interactive Communication
 ---
 
 # Interactive Communications configuration properties{#interactive-communications-configuration-properties}

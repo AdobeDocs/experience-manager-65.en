@@ -10,6 +10,7 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
+feature: Upgrading
 ---
 
 # Assessing the Upgrade Complexity with the Pattern Detector

@@ -1,7 +1,7 @@
 ---
 title: Adding Adobe Analytics Tracking to Components
 seo-title: Adding Adobe Analytics Tracking to Components
-description: null
+description: Adding Adobe Analytics Tracking to Components
 seo-description: null
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User

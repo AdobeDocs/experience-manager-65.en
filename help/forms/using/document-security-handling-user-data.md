@@ -6,6 +6,7 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
+role: Administrator
 ---
 
 # Document Security | Handling user data {#document-security-handling-user-data}

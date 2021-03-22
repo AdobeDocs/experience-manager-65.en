@@ -9,6 +9,7 @@ topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Styling constructs for adaptive forms{#styling-constructs-for-adaptive-forms}

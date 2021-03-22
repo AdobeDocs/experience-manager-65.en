@@ -10,6 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 
+feature: Correspondence Management
 ---
 
 # Customize create correspondence UI{#customize-create-correspondence-ui}

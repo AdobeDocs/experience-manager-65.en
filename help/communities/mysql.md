@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
+role: Administrator
 ---
 
 # MySQL Configuration for Enablement Features {#mysql-configuration-for-enablement-features}

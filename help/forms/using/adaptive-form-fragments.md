@@ -9,6 +9,7 @@ topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 
+feature: Adaptive Forms
 ---
 
 # Adaptive form fragments{#adaptive-form-fragments}

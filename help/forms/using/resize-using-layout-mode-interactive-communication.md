@@ -1,6 +1,7 @@
 ---
 title: Use Layout mode to resize components for Interactive Communication
 description: Define the position of components using the responsive grid available in Layout mode 
+feature: Interactive Communication
 ---
 
 # Use Layout mode to resize components {#use-layout-mode-to-resize-components}

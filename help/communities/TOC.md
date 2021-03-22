@@ -5,6 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.5 Communities User Guide
 breadcrumb-title: Communities Guide
 user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
+feature-set: Experience Manager
+feature: Communities
+role: Business Practitioner
 ---
 
 # Adobe Experience Manager 6.5 Communities Guide {#communities}

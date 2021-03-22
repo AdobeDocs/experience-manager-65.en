@@ -10,6 +10,7 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
+role: Developer
 ---
 
 # Assembling Non-Interactive PDF Documents {#assembling-non-interactive-pdf-documents}

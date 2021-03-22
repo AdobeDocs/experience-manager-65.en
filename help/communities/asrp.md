@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 
+role: Administrator
 ---
 
 # ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
