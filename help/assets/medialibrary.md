@@ -1,5 +1,5 @@
 ---
-title: Media Library offering for digital asset management.
+title: Use Media Library for basic digital asset management
 description: [!DNL Experience Manager Assets] and Media Library for asset management.
 contentOwner: AG
 role: Architect, Leader
@@ -43,7 +43,6 @@ Media Library broadly covers the following use cases:
 * Digital screen experiences created using [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] HTTP REST APIs for headless operations.
 
-
 <!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
 * Basic metadata properties
@@ -58,7 +57,7 @@ Media Library broadly covers the following use cases:
 * Comments and annotation
 -->
 
-You can accomplish the following specific tasks using Media Library:
+To use the Media Library functionality, you can use the default [!DNL Experience Manager] user interface. Media Library is part of the [!DNL Experience Manager Sites] installation and no separate interface or add-on is required. Using the existing interface, Media Library users are entitles to accomplish the following tasks:
 
 * Create folders to organize assets.
 * Upload assets.
