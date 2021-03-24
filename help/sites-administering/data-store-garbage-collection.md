@@ -147,7 +147,7 @@ To run garbage collection:
 
 >[!NOTE]
 >
->The data store garbage colleciton task will only start if you have configured an external file data store. If an external file data store has not been configured, the task will return the message `Cannot perform operation: no service of type BlobGCMBean found` after invoking. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
+>The data store garbage collection task will only start if you have configured an external file data store. If an external file data store has not been configured, the task will return the message `Cannot perform operation: no service of type BlobGCMBean found` after invoking. See [Configuring node stores and data stores in AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) for information on how to set up a file data store.
 
 ## Automating Data Store Garbage Collection {#automating-data-store-garbage-collection}
 
@@ -165,7 +165,7 @@ If you don't wish to run data store garbage collection with the Weekly Maintenan
 >
 >In the following example `curl` commands various parameters might need to be configured for your instance; for example, the hostname ( `localhost`), port ( `4502`), admin password ( `xyz`) and various parameters for the actual data store garbage collection.
 
-Here is an example curl command to invoke data store garbage colleciton via the command line:
+Here is an example curl command to invoke data store garbage collection via the command line:
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean

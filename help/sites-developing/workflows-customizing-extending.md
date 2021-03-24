@@ -1027,7 +1027,7 @@ The `_cq_dialog/.content.xml` sample used in this example:
 >
 >Classic UI model editor dialogs will still work with the standard, touch-enabled UI editor.
 >
->Though AEM has a [dialog conversion](/help/sites-developing/dialog-conversion.md) tool if you want to upgrade your classic UI step dialogs to standard UI dialogs. After conversion there are still some manual improvements that could be done to the dialog for certain cases.
+>Though AEM has [modernization tools](/help/sites-developing/modernization-tools.md) if you want to upgrade your classic UI step dialogs to standard UI dialogs. After conversion there are still some manual improvements that could be done to the dialog for certain cases.
 >
 >* In cases where an upgraded dialog is empty you can look at dialogs in `/libs` that have similar functionality as examples of how to provide a solution. For example:
 >
