@@ -520,7 +520,7 @@ Adobe recommends using the following "tuned" job parameters for PDF, PostScriptÂ
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-<!-- To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support). -->
+To update any of these parameters, follow the steps in [Enabling MIME type-based Assets/Dynamic Media Classic upload job parameter support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
 
 #### Updating the Granite transient workflow queue {#updating-the-granite-transient-workflow-queue}
 
