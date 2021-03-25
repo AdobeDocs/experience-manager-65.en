@@ -187,7 +187,7 @@ The Image Server screen establishes default settings for delivering images. See 
 
 To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, tap **[!UICONTROL Setup > Application Setup > General Settings]**.
 
-**Servers - **On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by Adobe Customer Care.
+**[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by Adobe Customer Care.
 
 **[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder than the original or assets with a different filename extension from the original (such as JPG, TIF, or PNG).
 
@@ -248,7 +248,7 @@ You can define which asset types are processed by Dynamic Media and customize ad
 
 See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
-**To edit MIME types for supported formats**
+**To edit MIME types for supported formats:**
 
 1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools > General > CRXDE Lite]**.
 1. In the left rail, navigate to the following:
@@ -275,7 +275,7 @@ See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
 You can add custom MIME types for unsupported formats in Experience Manager Assets. Ensure that any new node you add in CRXDE Lite is not deleted by Experience Manager by moving the MIME type before `image_`. Also, be sure that its enabled value is set to **[!UICONTROL false]**.
 
-**To add MIME types for unsupported formats**
+**To add MIME types for unsupported formats:**
 
 1. From Experience Manager, tap **[!UICONTROL Tools > Operations > Web Console]**.
 
@@ -341,7 +341,7 @@ As an alternative, you can use **[!UICONTROL View Code]** with no form fields av
 
 Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention often uses one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
 
-**To configure default naming**
+**To configure default naming:**
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
@@ -375,7 +375,7 @@ You can create, edit, and manage your batch set presets. There are two forms of 
 
 You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
 
-**To create a Batch Set Preset**
+**To create a Batch Set Preset:**
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
@@ -431,7 +431,7 @@ Grouping for the shared asset name part of the spin set is added to the **Match*
 
 When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **Batch Set Presets** in the **Upload Job Options** dialog box.
 
-**To create a Batch Set Preset for the auto-generation of a 2D Spin Set**
+**To create a Batch Set Preset for the auto-generation of a 2D Spin Set:**
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
@@ -526,7 +526,7 @@ Adobe recommends using the following "tuned" job parameters for PDF, PostScript�
 
 The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image ingestion and processing.
 
-**To update the Granite transient workflow queue**
+**To update the Granite transient workflow queue:**
 
 1. Navigate to [https://&lt;server&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search for **Queue: Granite Transient Workflow Queue**.
 
@@ -550,7 +550,7 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
-**To update the Granite workflow queue**
+**To update the Granite workflow queue:**
 
 1. Navigate to `https://<server>/system/console/configMgr` and search for **Queue: Granite Workflow Queue**.
 
@@ -570,7 +570,7 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
 The Scene7 Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
 
-**To update the Dynamic Media Classic upload connection**
+**To update the Dynamic Media Classic upload connection:**
 
 1. Navigate to `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. In the **[!UICONTROL Number of connections]** field and/or the **[!UICONTROL Active job timeout]** field, change the number as desired.
@@ -663,7 +663,7 @@ If you use Dynamic Media for imaging, or video, or both, you can use the default
   </tr>
   <tr>
    <td>*</td>
-   <td>Wildcard character<br /> </td>
+   <td>Wildcard character</td>
   </tr>
   <tr>
    <td>+</td>
@@ -683,4 +683,3 @@ If you use Dynamic Media for imaging, or video, or both, you can use the default
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
    If you only wanted to replicate the original, then you would enter `+original`.
-
