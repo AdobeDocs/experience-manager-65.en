@@ -113,7 +113,7 @@ role: Developer
         + [SPA Model Routing](spa-routing.md)
         + [SPA and Adobe Experience Platform Launch Integration](spa-launch.md)
         + [SPA and Server-Side Rendering](spa-ssr.md)
-        + [The RemotePage Component](spa-rempte-page.md)
+        + [The RemotePage Component](spa-remote-page.md)
         + [Editing an External SPA within AEM](spa-edit-external.md)
         + [Composite Components in SPAs](spa-composite-component.md)
         + [SPA Reference Materials](spa-reference-materials.md)
