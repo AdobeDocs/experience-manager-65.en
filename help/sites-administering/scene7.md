@@ -338,7 +338,7 @@ To configure Experience Manager to be able to publish assets to Dynamic Media Cl
 
 Enable the Adobe CQ Dynamic Media Classic Dam Listener, which is disabled by default.
 
-To enable it:
+To enable the Adobe CQ Dynamic Media Classic Dam Listener:
 
 1. Tap the [!UICONTROL Tools] icon, then navigate to **[!UICONTROL Operations > Web Console]**. The Web console opens.
 1. Navigate to **[!UICONTROL Adobe CQ Dynamic Media Classic Dam Listener]** and select the **[!UICONTROL Enabled]** check box.
@@ -511,7 +511,7 @@ To configure the default configuration:
 
 You can configure the folder that assets are uploaded to in Dynamic Media Classic when the asset is not in the CQ target folder. See Publishing assets from outside the CQ target folder.
 
-To configure the ad hoc folder:
+To configure the Ad-hoc folder:
 
 1. Tap the Experience Manager icon and navigate to **[!UICONTROL Deployment > Cloud Services]**, tap **[!UICONTROL Dynamic Media Classic]**, and select your configuration in Dynamic Media Classic.
 1. To open the configuration, tap **[!UICONTROL Edit]**.
@@ -593,8 +593,8 @@ If you are having trouble integrating Experience Manager with Dynamic Media Clas
 * Ensure that you have configured the Cloud Services configuration to Enable Automatic Uploading and that you have updated and saved the DAM Asset workflow to include Dynamic Media Classic uploading.
 * When uploading an image into a subfolder of the Dynamic Media Classic target folder, ensure you do one of the following:
 
-    * Make sure that the names of all assets regardless of location are unique. Otherwise the asset in the main target folder is deleted and only the asset in the subfolder remains.
-    * Change how Dynamic Media Classic overwrites assets in the Setup area of the Dynamic Media Classic account. Do not set Dynamic Media Classic to overwrite assets regardless of location if you use assets with the same name in subfolders.
+  * Make sure that the names of all assets regardless of location are unique. Otherwise the asset in the main target folder is deleted and only the asset in the subfolder remains.
+  * Change how Dynamic Media Classic overwrites assets in the Setup area of the Dynamic Media Classic account. Do not set Dynamic Media Classic to overwrite assets regardless of location if you use assets with the same name in subfolders.
 
 **If your deleted assets or folders are not synchronized between Dynamic Media Classic and Experience Manager:**
 
