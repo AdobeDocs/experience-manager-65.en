@@ -4,7 +4,7 @@ description: The RemotePage Component is a custom page component for editing rem
 ---
 # The RemotePage Component {#remote-page-component}
 
-When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, it is often clear that you need to be able to view and edit the SPA within AEM. The RemotePage Component is a custom page component just for this purpose.
+When deciding what level of integration you would like to have between your external SPA and AEM, it is often clear that you need to be able to view and edit the SPA within AEM. The RemotePage Component is a custom page component just for this purpose.
 
 ## Overview {#overview}
 
@@ -14,7 +14,7 @@ The RemotePage component fetches all the necessary assets from the application's
 * The Virtual Frontend Components allows to mark sections as editable in AEM SPA Editor.
 * Together, a SPA hosted on a different domain can be made editable in AEM.
 
-See the article [Editing an External SPA within AEM](editing-external-spa.md) for more details on editable, external SPAs in AEM.
+See the article [Editing an External SPA within AEM](spa-edit-external.md) for more details on editable, external SPAs in AEM.
 
 ## Requirements {#requirements}
 

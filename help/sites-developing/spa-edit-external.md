@@ -4,7 +4,7 @@ description: This document describes the recommended steps to upload a standalon
 ---
 # Editing an External SPA within AEM {#editing-external-spa-within-aem}
 
-When deciding [what level of integration](/help/implementing/developing/headful-headless.md) you would like to have between your external SPA and AEM, you often need to be able to edit as well as view the SPA within AEM.
+When deciding what level of integration you would like to have between your external SPA and AEM, you often need to be able to edit as well as view the SPA within AEM.
 
 ## Overview {#overview}
 
@@ -26,7 +26,7 @@ First you need to upload the external SPA to your AEM project.
 
 1. Replace `src` in the `/ui.frontend` project folder with your React application's `src` folder.
 1. Include any additional dependencies in the app's `package.json` in the `/ui.frontend/package.json` file.
-   * Ensure the SPA SDK dependencies are of [recommended versions.](/help/implementing/developing/hybrid/getting-started-react.md#dependencies)
+   * Ensure the SPA SDK dependencies are of [recommended versions.](spa-getting-started-react.md#dependencies)
 1. Include any customizations in the `/public` folder.
 1. Include any inline scripts or styles added in the `/public/index.html` file.
 
@@ -54,7 +54,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 ### ModelManager Initialization {#model-manager-initialization}
 
-Before the app renders, the [`ModelManager`](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager) needs to be initialized to handle the creation of the AEM `ModelStore`.
+Before the app renders, the [`ModelManager`](spa-blueprint.md#pagemodelmanager) needs to be initialized to handle the creation of the AEM `ModelStore`.
 
 This needs to be done within the `src/index.js` file of your application or wherever the root of the application is rendered.
 
@@ -70,7 +70,7 @@ In this example, the `ModelManager` is initialized and an empty `ModelStore` is 
 
 * `path` - On initialization, the model at the defined path is fetched and stored in the `ModelStore`. This can be used to fetch the `rootModel` at initialization if needed.
 * `modelClient` - Allows providing a custom client responsible for fetching the model.
-* `model` - A `model` object passed as a parameter typically populated when [using SSR.](/help/implementing/developing/hybrid/ssr.md)
+* `model` - A `model` object passed as a parameter typically populated when [using SSR.](spa-ssr.md)
 
 ### AEM Authorable Leaf Components {#authorable-leaf-components}
 
@@ -281,7 +281,7 @@ For example, assume we have a SPA in which the application is rendered inside a 
 
 ### Editing a React SPA with Routing {#editing-react-spa-with-routing}
 
-If the external React SPA application has multiple pages, [it can use routing to determine the page/component to render.](/help/implementing/developing/hybrid/routing.md) The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
+If the external React SPA application has multiple pages, [it can use routing to determine the page/component to render.](spa-routing.md) The basic use case is to match the currently active URL against the path provided for a route. To enable editing on such routing enabled applications, the path to be matched against needs to be transformed to accommodate AEM-specific info.
 
 In the following example we have a simple React application with two pages. The page to be rendered is determined by matching the path provided to the router against the active URL. For example, if we are on `mydomain.com/test`, `TestPage` will be rendered.
 
@@ -291,7 +291,7 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
 1. Identify the level which would act as the root on AEM.
 
-   * For our sample, we are considering wknd-spa-react/us/en as the root of the SPA. This means that everything prior to that path is AEM only pages/content.
+   * For our sample, we consider `wknd-spa-react/us/en` as the root of the SPA. This means that everything prior to that path is AEM only pages/content.
 
 1. Create a new page at the required level.
 
@@ -319,11 +319,10 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
 The following reference material may be helpful to understand SPAs in the context of AEM.
 
-* [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md)
 * [The AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [The WKND SPA project](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)
-* [Getting Started with SPAs in AEM Using React](/help/implementing/developing/hybrid/getting-started-react.md)
-* [SPA Reference Materials (API references)](/help/implementing/developing/hybrid/reference-materials.md)
-* [SPA Blueprint and PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
-* [SPA Model Routing](/help/implementing/developing/hybrid/routing.md)
-* [SPA and Server-Side Rendering](/help/implementing/developing/hybrid/ssr.md)
+* [Getting Started with SPAs in AEM Using React](spa-getting-started-react.md)
+* [SPA Reference Materials (API references)](spa-reference-materials.md)
+* [SPA Blueprint and PageModelManager](spa-blueprint.md#pagemodelmanager)
+* [SPA Model Routing](spa-routing.md)
+* [SPA and Server-Side Rendering](spa-ssr.md)

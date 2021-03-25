@@ -20,8 +20,8 @@ This article will use the typical card component as its example use case. Cards 
 The following models for supporting the composite component use cases require the following prerequisites.
 
 * Your AEM development instance is running locally on port 4502 with a sample project.
-* You have a working external React app [enabled for editing in AEM.](editing-external-spa.md)
-* The React app is loaded in the AEM editor [using the RemotePage component.](remote-page.md)
+* You have a working external React app [enabled for editing in AEM.](spa-edit-external.md)
+* The React app is loaded in the AEM editor [using the RemotePage component.](spa-remote-page.md)
 
 ## Adding Composite Components to a SPA {#adding-composite-components}
 
@@ -150,7 +150,7 @@ You can then add it to your SPA and retrieve its content.
     itemPath='root/responsivegrid' />
    ```
 
-1. Add the created `wknd-spa/components/imagecard` component to the allowed components for the container component [in the page template.](/help/sites-cloud/authoring/features/templates.md)
+1. Add the created `wknd-spa/components/imagecard` component to the allowed components for the container component [in the page template.](/help/sites-authoring/templates.md)
 
 Now the `imagecard` component can be directly added to the container in the AEM editor.
 
