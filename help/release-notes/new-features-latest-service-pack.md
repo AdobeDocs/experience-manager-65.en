@@ -226,6 +226,10 @@ Smart crop for video–an optional feature available in Video Profiles– is a t
 
 * Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
 
+#### Support for Microsoft SQL Server 2016 Always On availability groups for High Availability (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] now supports [!DNL Microsoft] SQL Server 2016 Always On availability groups for High Availability for OSGi deployments.
+
 #### Form data model HTTP client configuration to optimize performance (6.5.7.0) {#fdm-http-client-config}
 
 [!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
