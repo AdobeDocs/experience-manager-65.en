@@ -64,7 +64,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Workflow Models {#workflow-models}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -113,7 +113,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Workflow Instances {#workflow-instances}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -139,7 +139,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Workflow Launchers {#workflow-launchers}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -170,7 +170,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Workflow Scripts {#workflow-scripts}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -205,7 +205,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### ContextHub Configurations {#contexthub-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -236,7 +236,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Classic Cloud Services Designs {#classic-cloud-services-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -275,7 +275,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Classic Dashboards Designs {#classic-dashboards-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -314,7 +314,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Classic Reports Designs {#classic-reports-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -353,7 +353,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Default Designs {#default-designs}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -392,7 +392,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Adobe DTM JavaScript Endpoint {#adobe-dtm-javascript-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -415,7 +415,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Adobe DTM Web-Hook Endpoint {#adobe-dtm-web-hook-endpoint}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -438,7 +438,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Inbox Tasks {#inbox-tasks}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -465,7 +465,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Multi-site Manager Blueprint Configurations {#multi-site-manager-blueprint-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong><em></em>Previous location</strong></td>
@@ -492,7 +492,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### AEM Projects Dashboard Gadget Configurations {#aem-projects-dashboard-gadget-configurations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -522,7 +522,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Replication Notification E-mail Template {#replication-notification-e-mail-template}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -555,7 +555,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Tags {#tags}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -589,7 +589,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Translation Cloud Services {#translation-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -634,7 +634,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Translation Languages {#translation-languages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -665,7 +665,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Translation Rules {#translation-rules}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -696,7 +696,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Translation Widget Client Library {#translation-widget-client-library}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -741,9 +741,11 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 | **Restructuring guidance** |No action required. |
 | **Notes** |The Tree Activation Web Console is now available via **Tools > Deployment > Replication > Activate Tree**. |
 
+{style="table-layout:auto"}
+
 ### Vendor Translation Connector Cloud Services {#vendor-translation-connector-cloud-services}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -790,7 +792,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Workflow Notification Email Templates {#workflow-notification-email-templates}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
@@ -822,7 +824,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
 
 ### Workflow Packages {#workflow-packages}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Previous location</strong></td>
