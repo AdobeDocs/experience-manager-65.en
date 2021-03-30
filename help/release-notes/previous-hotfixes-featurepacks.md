@@ -30,6 +30,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for [!DNL Microsoft SQL Server] 2019 in [!DNL Experience Manager Forms].
 
+* Support for [!DNL Microsoft] SQL Server 2016 Always On availability groups for High Availability for OSGi deployments.
+
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.7.0, see [What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 7](new-features-latest-service-pack.md).
