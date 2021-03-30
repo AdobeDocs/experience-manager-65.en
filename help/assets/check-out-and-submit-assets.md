@@ -1,5 +1,5 @@
 ---
-title: Check in and check out assets for editing
+title: Check in and Check out files in [!DNL Assets]
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
 role: Business Practitioner
@@ -16,8 +16,7 @@ This feature helps prevent other users from overriding the changes made by an au
 ## Check out assets {#checking-out-assets}
 
 1. From the [!DNL Assets] user interface, select the asset you want to check out. You can also select multiple assets to check out.
-1. From the toolbar, click **[!UICONTROL Checkout]**.
-    The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**.
+1. From the toolbar, click **[!UICONTROL Checkout]**. The **[!UICONTROL Checkout]** option toggles to **[!UICONTROL Checkin]**.
     To verify whether other users can edit the asset you checked out, log in as a different user. A lock symbol displays on the thumbnail of the asset that you checked out.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
@@ -26,7 +25,7 @@ This feature helps prevent other users from overriding the changes made by an au
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 
-   You can click **[!UICONTROL View Properties]** to edit the metadata for the locked asset.
+   To edit the metadata for the locked asset, click **[!UICONTROL View Properties]**.
 
 1. Click **[!UICONTROL Edit]** to open the asset in edit mode.
 
@@ -57,5 +56,5 @@ Administrators can check in assets that are checked out by other users.
 
 >[!MORELIKETHIS]
 >
->* [Understand check in and check out in Experience Manager desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
->* [Video tutorial to understand check in and check out in Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
+>* [Understand check in and check out in [!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Video tutorial to understand check in and check out in [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)
