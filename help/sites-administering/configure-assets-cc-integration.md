@@ -18,7 +18,7 @@ The workflow to set up this integration is:
 
 At the backend, the AEM server authenticates your profile with the gateway and then synchronizes the data between Assets and Experience Cloud.
 
->[!CAUTION]
+>[!NOTE]
 >
 >This feature is deprecated in AEM Assets. Find replacements in [AEM and Creative Cloud Integration best practices](/help/assets/aem-cc-integration-best-practices.md). If you have any queries, [contact Adobe Customer Care](https://www.adobe.com/account/sign-in.supportportal.html).
 
@@ -109,7 +109,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 ## Add users to Experience Cloud {#add-users-to-experience-cloud}
 
 1. Log in to Experience Cloud using administrator credentials.
-1. From the rails, go to **[!UICONTROL Administration]** and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
+1. From the rails, go to **[!UICONTROL Administration]** and then click **[!UICONTROL Launch Enterprise Dashboard]**.
 1. From the rail, click **[!UICONTROL Users]** to open the **[!UICONTROL User Management]** page.
 1. From the toolbar, click **Add** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Add one or more users that you want to provide the ability to share assets with Creative Cloud.
