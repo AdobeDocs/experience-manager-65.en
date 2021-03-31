@@ -3,6 +3,7 @@ title: Download assets
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
 role: Business Practitioner
+feature: Asset Management,Asset Distribution
 ---
 
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}

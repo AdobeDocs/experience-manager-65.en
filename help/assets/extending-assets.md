@@ -3,6 +3,7 @@ title: Customize and extend [!DNL Assets]
 description: Learn ways by which you can customize and extend Asset Share and Asset Editor, which presents users with a specifically tailored interface and set of functionality.
 contentOwner: AG
 role: Developer
+feature: Developer Tools
 ---
 
 # Customize and extend [!DNL Assets] {#customizing-and-extending-assets}

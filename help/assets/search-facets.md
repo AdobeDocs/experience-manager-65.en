@@ -3,6 +3,7 @@ title: Search facets to filter search results
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Administrator, Developer
+feature: Search
 ---
 
 # Search facets {#search-facets}

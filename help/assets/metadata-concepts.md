@@ -3,6 +3,7 @@ title: Understand metadata concepts
 description: Learn about the need of and types of metadata that allows for easier categorization and organization of assets.
 contentOwner: AG
 role: Business Practitioner, Administrator
+feature: Metadata
 ---
 
 # Understand metadata concepts {#why-we-need-metadata}

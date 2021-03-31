@@ -3,6 +3,7 @@ title: Manage video assets
 description: Upload, preview, annotate, and publish video assets in [!DNL Adobe Experience Manager].
 contentOwner: AG
 role: Business Practitioner
+feature: Asset Management
 ---
 
 # Manage video assets {#manage-video-assets}
