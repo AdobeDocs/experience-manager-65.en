@@ -3,6 +3,7 @@ title: Integrate [!DNL Assets] with activity stream
 description: Describes the recording capabilities of [!DNL Experience Manager] and how to configure it to record specific events.
 contentOwner: AG
 role: Developer
+feature: Asset Management
 ---
 
 # Integrate [!DNL Assets] with activity stream {#integrating-assets-with-activity-stream}

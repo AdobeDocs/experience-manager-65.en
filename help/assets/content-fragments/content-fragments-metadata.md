@@ -11,6 +11,8 @@ content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
 
+feature: Content Fragments
+role: "Business Practitioner, Administrator"
 ---
 
 # Metadata - Fragment Properties{#metadata-fragment-properties}

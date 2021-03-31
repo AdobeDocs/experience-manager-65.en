@@ -11,6 +11,8 @@ content-type: reference
 discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 
+feature: Content Fragments
+role: "Business Practitioner, Administrator"
 ---
 
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}

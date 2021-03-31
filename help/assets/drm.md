@@ -3,6 +3,7 @@ title: Digital Rights Management of assets
 description: Learn how to manage asset expiration states and information for licensed assets in [!DNL Experience Manager].
 contentOwner: AG
 role: Business Practitioner, Administrator
+feature: "DRM,Asset Management"
 ---
 
 # Digital Rights Management for assets {#digital-rights-management-in-assets}

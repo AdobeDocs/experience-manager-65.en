@@ -3,6 +3,7 @@ title: Related assets
 description: Learn how to relate digital assets that share some common attributes. Also create source-derived relationships between digital assets.
 contentOwner: AG
 role: Business Practitioner
+feature: "Collaboration,Asset Management"
 ---
 
 # Related assets {#related-assets}

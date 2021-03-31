@@ -3,6 +3,7 @@ title: Enable Asset Insights through DTM
 description: Learn how to use Adobe Dynamic Tag Management (DTM) to enable Asset Insights.
 contentOwner: AG
 role: Business Practitioner, Administrator
+feature: "Asset Insights,Asset Reports"
 ---
 
 # Enable Asset Insights through DTM {#enable-asset-insights-through-dtm}

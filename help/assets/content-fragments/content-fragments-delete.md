@@ -11,6 +11,8 @@ content-type: reference
 discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
 docset: aem65
 
+feature: Content Fragments
+role: "Business Practitioner, Administrator"
 ---
 
 # Content Fragments - Delete Considerations{#content-fragments-delete-considerations}

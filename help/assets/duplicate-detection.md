@@ -3,6 +3,7 @@ title: Enable detection of duplicate assets
 description: Learn how to enable the detection of duplicate assets in Experience Manager.
 contentOwner: AG
 role: Business Practitioner, Administrator
+feature: "Asset Management,Asset Reports"
 ---
 
 # Enable detection of duplicate assets {#enable-detection-of-duplicate-assets}

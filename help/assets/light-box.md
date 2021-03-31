@@ -3,6 +3,7 @@ title: Lightbox as your personal image gallery
 description: Learn about Lightbox as your personal image gallery in Adobe Experience Manager Assets].
 contentOwner: AG
 role: Business Practitioner, Administrator
+feature: "Developer Tools,Renditions"
 ---
 
 # Lightbox {#lightbox}
