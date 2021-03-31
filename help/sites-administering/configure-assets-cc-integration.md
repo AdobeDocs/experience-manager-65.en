@@ -18,7 +18,7 @@ The workflow to set up this integration is:
 
 At the backend, the AEM server authenticates your profile with the gateway and then synchronizes the data between Assets and Experience Cloud.
 
->[!CAUTION]
+>[!NOTE]
 >
 >This feature is deprecated in AEM Assets. Find replacements in [AEM and Creative Cloud Integration best practices](/help/assets/aem-cc-integration-best-practices.md). If you have any queries, [contact Adobe Customer Care](https://www.adobe.com/account/sign-in.supportportal.html).
 
@@ -69,7 +69,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the new configuration and click **[!UICONTROL Create]**.
 
-   ![Name a new configuration to integrate AEM Assets and CC](assets/chlimage_1-51.png)
+   ![Name a new configuration to integrate AEM Assets and CC](assets/aem-ec-integration-config1.png)
 
 1. In the **[!UICONTROL Tenant URL]** field, specify the URL for AEM Assets. In the past, if the URL was defined as `https://<tenant_id>.marketing.adobe.com`, change it to `https://<tenant_id>.experiencecloud.adobe.com`.
 
@@ -88,8 +88,6 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 ## Enable synchronization {#enable-synchronization}
 
 1. Display the public key using one of the following methods mentioned in the last step of the procedure [add a new configuration to Experience Cloud](#add-a-new-configuration). Click **[!UICONTROL Display Public Key]**.
-
-   ![chlimage_1-52](assets/chlimage_1-52.png)
 
 1. Copy the public key and paste it into the **[!UICONTROL Public Key]** field of configuration interface of the application you created in [create an application](#create-an-application).
 
@@ -111,7 +109,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 ## Add users to Experience Cloud {#add-users-to-experience-cloud}
 
 1. Log in to Experience Cloud using administrator credentials.
-1. From the rails, go to **[!UICONTROL Administration]** and then click/tap **[!UICONTROL Launch Enterprise Dashboard]**.
+1. From the rails, go to **[!UICONTROL Administration]** and then click **[!UICONTROL Launch Enterprise Dashboard]**.
 1. From the rail, click **[!UICONTROL Users]** to open the **[!UICONTROL User Management]** page.
 1. From the toolbar, click **Add** ![aem_assets_add_icon](assets/aem_assets_add_icon.png).
 1. Add one or more users that you want to provide the ability to share assets with Creative Cloud.
