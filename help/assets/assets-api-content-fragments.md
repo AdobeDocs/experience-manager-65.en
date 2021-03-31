@@ -12,7 +12,7 @@ discoiquuid: 03502b41-b448-47ab-9729-e0a66a3389fa
 docset: aem65
 
 feature: Content Fragments
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Content Fragments Support in AEM Assets HTTP API{#content-fragments-support-in-aem-assets-http-api}

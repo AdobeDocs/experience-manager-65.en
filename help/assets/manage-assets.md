@@ -4,7 +4,7 @@ description: Learn the asset management tasks like upload, download, edit, searc
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: "Asset Management,Search"
+feature: Asset Management,Search
 ---
 
 # Manage your digital assets {#manage-digital-assets}

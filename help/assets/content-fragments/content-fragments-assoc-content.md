@@ -12,7 +12,7 @@ discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 
 feature: Content Fragments
-role: "Business Practitioner, Administrator"
+role: Business Practitioner, Administrator
 ---
 
 # Associated Content{#associated-content}

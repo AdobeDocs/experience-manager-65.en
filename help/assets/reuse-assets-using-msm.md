@@ -4,7 +4,7 @@ description: Use assets across multiple pages/folders that are derived from and 
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner, Administrator, Architect
-feature: "Asset Management,Multi Site Manager"
+feature: Asset Management,Multi Site Manager
 ---
 
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}

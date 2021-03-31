@@ -4,7 +4,7 @@ description: Learn tasks to manage Collections of assets, such as create, view, 
 contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
-feature: "Collections,Asset Management"
+feature: Collections,Asset Management
 ---
 
 # Manage collections {#managing-collections}

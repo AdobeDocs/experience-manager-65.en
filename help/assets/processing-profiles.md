@@ -10,7 +10,7 @@ discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 
 role: Business Practitioner, Administrator
-feature: "Workflow,Asset Management,Renditions"
+feature: Workflow,Asset Management,Renditions
 ---
 
 # Profiles for processing metadata, images, and videos{#profiles-for-processing-metadata-images-and-videos}

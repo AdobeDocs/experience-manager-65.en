@@ -3,7 +3,7 @@ title: Best practices to process the supported file formats
 description: Best practices to process the various supported file types using [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Administrator
-feature: "Asset Management,Developer Tools"
+feature: Asset Management,Developer Tools
 ---
 
 # Assets file format best practices {#assets-file-format-best-practices}
