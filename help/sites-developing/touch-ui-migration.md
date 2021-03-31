@@ -113,7 +113,7 @@ Dialogs are a major factor when migrating your components:
 
 * [Developing AEM Components](/help/sites-developing/developing-components.md) (with the touch-enabled UI)
 * [Migrating from a Classic Component](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) - to help you convert the dialogs of your classic UI components to touch UI
+* [AEM Modernization Tools](/help/sites-developing/modernization-tools.md) - to help you convert the dialogs of your classic UI components to touch UI
 
     * There is a compatibility layer in touch UI to open a classic UI dialog within a "Touch UI wrapper", but this has limited functionality and is not recommended for the long-term.
 

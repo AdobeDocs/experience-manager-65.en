@@ -424,7 +424,7 @@ Dialog definitions are specific to the UI:
 >[!NOTE]
 >
 >* For compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.
->* The [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) is also provided to help you extend/convert components that only have dialogs defined for the classic UI.
+>* The [AEM Modernization Tools](/help/sites-developing/modernization-tools.md) are also provided to help you extend/convert components that only have dialogs defined for the classic UI.
 >
 
 * Touch-Enabled UI
