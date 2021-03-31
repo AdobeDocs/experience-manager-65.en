@@ -10,6 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 
+feature: Content Fragments
+role: Business Practitioner, Administrator
 ---
 
 # Content Fragment Models{#content-fragment-models}

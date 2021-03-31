@@ -3,6 +3,7 @@ title: Extend search functionality.
 description: Extend the search capabilities of [!DNL Adobe Experience Manager Assets] beyond the defaults.
 contentOwner: AG
 role: Developer
+feature: Search
 ---
 
 # Extend assets search {#extending-assets-search}

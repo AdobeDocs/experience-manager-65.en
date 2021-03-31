@@ -3,6 +3,7 @@ title: [!DNL Assets] sizing guide
 description: Best practices to determine efficient metrics to estimate the infrastructure and resources required to deploy [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Administrator
+feature: Asset Management
 ---
 
 # [!DNL Assets] sizing guide {#assets-sizing-guide}

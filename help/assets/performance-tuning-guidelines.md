@@ -4,6 +4,7 @@ description: Suggestions and guidance about [!DNL Experience Manager] configurat
 contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Administrator
+feature: Asset Management
 ---
 
 <!-- TBD: Get reviewed by engineering. -->
