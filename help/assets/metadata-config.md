@@ -3,6 +3,7 @@ title: Configuration and administration of metadata functionality.
 description: Configuration and administration of [!DNL Experience Manager Assets] functionality related to metadata addition and management.
 contentOwner: AG
 role: Business Practitioner, Administrator
+feature: Metadata
 ---
 
 # Configuration and administration of metadata functionality in [!DNL Assets] {#config-metadata}

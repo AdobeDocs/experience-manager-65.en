@@ -5,6 +5,7 @@ contentOwner: Rick Brough
 docset: aem65
 
 feature: 3D Assets
+role: Business Practitioner
 ---
 
 # Previewing 3D assets in AEM{#previewing-3d-assets-aem}

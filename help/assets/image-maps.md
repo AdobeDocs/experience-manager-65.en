@@ -3,6 +3,7 @@ title: Add image maps with hyperlinks
 description: Learn how to add image map with hyperlinks to an image.
 contentOwner: AG
 role: Business Practitioner, Administrator
+feature: Asset Management
 ---
 
 # Add image maps {#adding-image-maps}
