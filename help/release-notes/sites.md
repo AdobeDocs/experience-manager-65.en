@@ -1,8 +1,8 @@
 ---
 title: AEM Sites Release Notes
 description: Release notes specific to Adobe Experience Manager 6.5 Sites.
+exl-id: 0bd0933c-f14d-4be2-9ad0-3f8207d7fa5d
 ---
-
 # AEM Sites Release Notes {#aem-sites-release-notes}
 
 See the following for AEM Sites 6.5 enhancements in detail:

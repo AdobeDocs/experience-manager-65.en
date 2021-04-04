@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
+exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 ---
-
 # Creating and configuring groups{#creating-and-configuring-groups}
 
 Creating groups of users lets you assign roles to the group instead of to individual users.
@@ -148,4 +148,3 @@ A dynamic group contains only users. It cannot contain other groups. However, a 
 1. In administration console, click Settings &gt; User Management &gt; Users And Groups.
 1. In the Find list, select Groups, and then click Find.
 1. Select the check box for the group to delete, click Delete, and then click OK.
-

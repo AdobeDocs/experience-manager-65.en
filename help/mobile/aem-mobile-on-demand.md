@@ -8,8 +8,8 @@ contentOwner: JYOTIKA SYAL
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
+exl-id: a2134afd-4c0e-4a93-ac58-013b98fd9a09
 ---
-
 # AEM Mobile On-Demand {#aem-mobile-on-demand}
 
 >[!NOTE]
@@ -46,4 +46,3 @@ To learn about the roles and responsibilities of an Administrator and an Author,
 
 * [Authoring AEM Content for AEM Mobile On-Demand Services App](/help/mobile/mobile-apps-ondemand.md)
 * [Administering Content to Use AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
-

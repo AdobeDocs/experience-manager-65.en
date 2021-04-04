@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
+exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
 ---
-
 # JCR Integration{#jcr-integration}
 
 ## Prefer the Sling Resource API to JCR API {#prefer-the-sling-resource-api-to-jcr-api}

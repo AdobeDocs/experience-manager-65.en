@@ -9,8 +9,8 @@ discoiquuid: ecddb22e-c148-441f-9088-2e5b35c7021b
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 343e2e0b-d5ef-4f01-b3d6-45f90e2430fd
 ---
-
 # Tutorial: Testing your adaptive form {#tutorial-testing-your-adaptive-form}
 
  ![](do-not-localize/10-test-your-adaptive-form.png)

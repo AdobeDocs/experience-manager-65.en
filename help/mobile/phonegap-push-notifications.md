@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
+exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 ---
-
 # Push Notifications{#push-notifications}
 
 >[!NOTE]
@@ -377,4 +377,3 @@ Once the **Push Notifications** tile displays in your dashboard, use the create 
 ### The Next Steps {#the-next-steps}
 
 Once you understand the details on push notifications for your app, see [AEM Mobile Content Personalization](/help/mobile/phonegap-aem-mobile-content-personalization.md).
-

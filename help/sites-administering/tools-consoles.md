@@ -10,9 +10,8 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
-
+exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 ---
-
 # Tools Consoles{#tools-consoles}
 
 The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. There are currently two flavors of the **Tools** console dependent on the UI you are using:
@@ -461,4 +460,3 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
  </tbody>
 </table>
-

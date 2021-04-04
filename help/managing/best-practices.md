@@ -10,9 +10,8 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
-
+exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 ---
-
 # Managing Projects - Best Practices Checklist{#managing-projects-best-practices-checklist}
 
 Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding to ensure you are aware of the issues and (related) decisions that you need to make (both before and while implementing your project).
@@ -629,4 +628,3 @@ For best practices on deploying, administering, developing, or authoring, see th
 * Related Documentation
 
     * Adobe Experience Cloud - [Planning for the Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
-

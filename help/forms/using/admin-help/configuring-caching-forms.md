@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
+exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 ---
-
 # Configuring caching for Forms{#configuring-caching-for-forms}
 
 The Forms service takes form designs that were created in Designer and renders them in various formats.

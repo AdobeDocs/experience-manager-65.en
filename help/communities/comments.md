@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
-
+exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
 ---
-
 # Using Comments {#using-comments}
 
 ## Introduction {#introduction}

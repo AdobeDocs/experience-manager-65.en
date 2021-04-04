@@ -2,8 +2,8 @@
 title: Use Layout mode to resize components for adaptive forms
 description: Define the position of components using the responsive grid available in Layout mode 
 feature: Adaptive Forms
+exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
 ---
-
 # Use Layout mode to resize components {#use-layout-mode-to-resize-components}
 
 The adaptive form authoring interface enables you to resize components using the Layout mode. Drag-and-drop blue dots within columns to define the start and end points to position components. The blue dots display after tapping the component within the responsive grid. The responsive grid consists of 12 equal columns. The white and blue color shading in alternate columns differentiates one column from the other.
@@ -116,4 +116,3 @@ Perform the following steps to disable the Layout mode:
 
 1. Tap the **[!UICONTROL Layout Settings]** tab and select **[!UICONTROL Disable Layout Mode]**. 
 1. Tap ![Save changes](assets/save_icon.png) to save the template properties.
-

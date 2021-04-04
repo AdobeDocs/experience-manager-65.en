@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
+exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
 ---
-
 # Applying Workflows to Pages{#applying-workflows-to-pages}
 
 When you apply the workflow, you specify the following information:
@@ -52,4 +52,3 @@ The **Status** column in the **Websites** console indicates whether a workflow h
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
 1. Click **Start Workflow** to start a new workflow instance with the properties you configured and the current page as the payload. Now the workflow is running.
-

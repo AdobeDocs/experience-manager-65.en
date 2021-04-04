@@ -11,8 +11,8 @@ discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 
 role: Administrator
+exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 ---
-
 # Searching for forms and assets{#searching-for-forms-and-assets}
 
 You can search for your forms or form assets, using a text string or text string along with wildcards. You can also narrow your search using the criteria available in various categories in the Search panel.

@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
-
+exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 ---
-
 # Page Authoring with Content Fragments{#page-authoring-with-content-fragments}
 
 Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
@@ -211,4 +210,3 @@ Fragments need to be published so they can used used on your published web pages
 
 * A fragment can be published after [creating the fragment in the Assets console](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
 * If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
-

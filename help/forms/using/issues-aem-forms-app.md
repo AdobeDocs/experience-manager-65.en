@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
+exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 ---
-
 # Troubleshoot AEM Forms app {#troubleshoot-aem-forms-app}
 
 This article describes the error messages that might be displayed while building AEM Forms app and the steps to resolve them.
@@ -99,4 +99,3 @@ For example, the Android Studio console recommends downgrading the Gradle versio
 Select **Build** &gt; **Build APK** again to resolve the error and generate the .apk file.
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)
-

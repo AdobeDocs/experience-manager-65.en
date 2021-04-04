@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
-
+exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
 ---
-
 # Writing custom Submit action for adaptive forms{#writing-custom-submit-action-for-adaptive-forms}
 
 Adaptive forms require submit actions to process user-specified data. A Submit action determines the task performed on the data that you submit using an adaptive form. Adobe Experience Manager (AEM) includes [OOTB Submit actions](../../forms/using/configuring-submit-actions.md) that demonstrate custom tasks you can perform using the user-submitted data. For example, you can perform tasks, such as sending email or storing the data.
@@ -188,4 +187,3 @@ Perform the following steps to create a custom Submit action that saves the data
    ```
 
    Select the action in the adaptive form. The action sends an email and stores the data.
-

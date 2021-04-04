@@ -11,8 +11,8 @@ docset: aem65
 
 feature: Mix Media Sets,Asset Management
 role: Business Practitioner, Administrator
+exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 ---
-
 # Mixed Media Sets{#mixed-media-sets}
 
 Mixed Media Sets let you provide a mix of images, Image Sets, Spin Sets, and videos in one presentation.
@@ -170,4 +170,3 @@ See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) for deta
 >[!NOTE]
 >
 >If the mixed media set does not fully end up in the delivery service the first time you publish it, you may need to publish the mixed media set a second time.
-

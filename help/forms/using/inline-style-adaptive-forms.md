@@ -10,8 +10,8 @@ discoiquuid: 21dec713-c76d-408b-baea-fc585377b429
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 ---
-
 # Inline styling of adaptive form components {#inline-styling-of-adaptive-form-components}
 
 You can define the overall appearance and style of an adaptive form by specifying styles using [theme editor](../../forms/using/themes.md). Also, you can apply inline CSS styles to individual adaptive form components and preview the changes on the fly. Inline styles override styling provided in the theme.
@@ -101,4 +101,3 @@ Following the steps above, you can select and style other components, such as pa
 >[!NOTE]
 >
 >Styling properties vary based on the component you select.
-

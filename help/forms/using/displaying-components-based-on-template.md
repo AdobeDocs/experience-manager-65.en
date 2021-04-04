@@ -10,9 +10,8 @@ topic-tags: customization
 content-type: reference
 discoiquuid: f658da57-0134-4458-9ef9-a99787b66742
 docset: aem65
-
+exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
 ---
-
 # Displaying components based on the template used{#displaying-components-based-on-the-template-used}
 
 When a form author creates an adaptive form using a [template](../../forms/using/template-editor.md), the form author can see and use specific components based on template policy. You can specify a template content policy that lets you choose a group of components that the form author sees at the time of form authoring.
@@ -56,4 +55,3 @@ Perform the following steps to show the components in the sidebar based on the c
    ![Updated template content policy](assets/updated-policy.png)
 
    When you author a form you create using the template, you can see the added components in sidebar.
-

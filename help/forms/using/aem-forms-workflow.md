@@ -8,9 +8,8 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-
+exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 ---
-
 # Forms-centric workflow on OSGi{#forms-centric-workflow-on-osgi}
 
  ![](do-not-localize/header.png)

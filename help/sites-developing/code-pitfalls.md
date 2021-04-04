@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
+exl-id: c448c5d5-def8-4c1a-8db4-41eb49d0cd20
 ---
-
 # Code pitfalls{#code-pitfalls}
 
 ## Avoid Sling Bindings in Java code {#avoid-sling-bindings-in-java-code}

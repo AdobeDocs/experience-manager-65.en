@@ -10,8 +10,8 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 
 feature: Correspondence Management
+exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 ---
-
 # Create Correspondence{#create-correspondence}
 
 ## Create correspondence in the Create Correspondence user interface {#create-correspondence-in-the-create-correspondence-user-interface}
@@ -353,4 +353,3 @@ To change the preview mode of the letter, complete the following steps:
 1. Go to `https://[system]:'port'/system/console/configMgr` and, if necessary, log in as Admin.
 1. Go to **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** and select **HTML Rendition** (Default) or **PDF Rendition**.
 1. Click **[!UICONTROL Save]**.
-

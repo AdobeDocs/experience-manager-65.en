@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
+exl-id: 606e84f2-6728-47a9-a439-dbe2e55100ad
 ---
-
 # Configure User Management for an SSL-enabled LDAP server {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 For synchronization to work properly over LDAPS, the LDAP certificates that the certificate authority (CA) issued must be present in the application server’s Java runtime environment (JRE). Import the certificate into the application server’s JRE cacerts file, which is usually in the *[JAVA_HOME]*/jre/lib/security/cacerts directory.
@@ -28,4 +28,3 @@ For synchronization to work properly over LDAPS, the LDAP certificates that the 
 >[!NOTE]
 >
 >If you experience any problems using SSL, use an LDAP browser to check whether it can access the LDAP system when using SSL. If the LDAP browser cannot get access, your certificate or application server is not configured properly. If the LDAP browser works correctly and you are still experiencing problems, User Management is not configured properly.
-

@@ -10,8 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Administrator
+exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
 ---
-
 # In-Context Moderation {#in-context-moderation}
 
 For AEM Communities, moderation may be performed by administrators and trusted community members directly on the published page where the community content was posted.
@@ -162,4 +162,3 @@ Notice:
 * Rebekah can not access the moderation console.
 
 ![community-forum-author](assets/community-forum-author.png)
-

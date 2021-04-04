@@ -10,8 +10,8 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 feature: Language Copy
+exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
 ---
-
 # Preparing Content for Translation{#preparing-content-for-translation}
 
 Multilingual web sites generally provide some amount of content in multiple languages. The site is authored in one language and then translated into other languages. Generally, multilingual sites consists of branches of pages, where each branch contains the pages of the site in a different language.
@@ -85,4 +85,3 @@ The following procedure uses the touch-optimized UI to open the References panel
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
 1. In the references panel, click or tap **Language Copies**. The Language Copies panel shows the language copies of the web site.
-

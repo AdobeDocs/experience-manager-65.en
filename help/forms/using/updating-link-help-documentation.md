@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
+exl-id: ca637bea-05c1-4920-9283-e782f07607de
 ---
-
 # Updating the link to the documentation {#updating-the-link-to-the-documentation}
 
 You can access the default help content for AEM Forms workspace by selecting **Help &gt; Workspace Help**. It points to the online documentation on Adobe's website. However, you can update it to point to any other URL.

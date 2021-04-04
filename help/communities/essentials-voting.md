@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
+exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
 ---
-
 # Voting Essentials {#voting-essentials}
 
 The voting component, a [tally](tally.md) subclass, is a useful tool that allows members to rate a particular piece of content by simply selecting up or down arrows to indicate their opinion.
@@ -75,4 +75,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - mapping deprecated utility methods to current SRP utility methods.
-

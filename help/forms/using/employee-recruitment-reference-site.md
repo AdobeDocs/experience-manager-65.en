@@ -7,8 +7,8 @@ uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
+exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
 ---
-
 # Employee recruitment reference site walkthrough {#employee-recruitment-reference-site-walkthrough}
 
 ## Overview {#overview}
@@ -237,4 +237,3 @@ Sarah types in her name to sign the joining letter
 ![sarahrosejoininglettersign2](assets/sarahrosejoininglettersign2.png)
 
 Sarah clicks Click To Sign to complete signing the joining letter
-

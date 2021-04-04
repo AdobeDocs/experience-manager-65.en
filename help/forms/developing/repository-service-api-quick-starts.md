@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
+exl-id: 703b6798-d40f-4769-96fc-e440090ca983
 ---
-
 # Repository Service API Quick Starts {#repository-service-api-quick-starts} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -1209,4 +1209,3 @@ The following Java code example deletes Loan.xdp from `Applications/FormsApplica
  
  
 ```
-

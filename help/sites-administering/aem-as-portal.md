@@ -10,9 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
-
+exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 ---
-
 # AEM Portals and Portlets{#aem-portals-and-portlets}
 
 This document describes the following:
@@ -807,4 +806,3 @@ To access the page you added to the portlet:
 
 1. In the portlet's personalization menu, configure the portlet as you configured it in the portal.
 1. Open the configuration (The portlet displays the publish start URL configured in the portlet’s configuration) and make edits as necessary, then save them.
-

@@ -11,8 +11,8 @@ docset: aem65
 
 feature: Asset Management
 role: Business Practitioner, Administrator
+exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
 ---
-
 # Previewing assets using the software interface {#previewing-assets}
 
 You can use Preview to see how a digital asset that you have uploaded looks when it is viewed by a customer in their own web browser. The default embedded, cross-device viewer that is assigned to the asset is used for the Preview.

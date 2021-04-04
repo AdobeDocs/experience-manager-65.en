@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
-
+exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 ---
-
 # Basic Handling{#basic-handling}
 
 >[!NOTE]
@@ -582,4 +581,3 @@ These options accessible via the chevron next to the **Comment** field.
 This will open a panel similar to [search](/help/sites-authoring/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
 
 ![bh-29](assets/bh-29.png)
-

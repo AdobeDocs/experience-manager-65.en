@@ -10,8 +10,8 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
+exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 ---
-
 # Identity Management{#identity-management}
 
 Individual visitors to your website can only be identified when you provide the ability for them to log in. There are various reasons why you may want to provide a login capability:
@@ -234,4 +234,3 @@ This component allows the user to input a detailed name.
 This component allows the user to input their gender.
 
 ![dc_profiles_gender](assets/dc_profiles_gender.png)
-

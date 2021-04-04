@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
+exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
 ---
-
 # Obtaining Page Information in JSON Format{#obtaining-page-information-in-json-format}
 
 To obtain the page information, send a request to the PageInfo servlet to obtain the page metadata in JSON format.
@@ -607,4 +607,3 @@ The PageUrlInfoProvider service returns the following data for the `/content/we-
     "publishURL": "http://localhost:4503/content/we-retail/us/en"
 }
 ```
-

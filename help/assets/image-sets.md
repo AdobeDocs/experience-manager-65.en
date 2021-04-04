@@ -11,8 +11,8 @@ docset: aem65
 
 feature: Image Sets,Asset Management
 role: Business Practitioner, Administrator
+exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 ---
-
 # Image Sets {#image-sets}
 
 Image Sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image Sets let you present alternative views of an item and the viewer offers zooming tools for examining images closely.

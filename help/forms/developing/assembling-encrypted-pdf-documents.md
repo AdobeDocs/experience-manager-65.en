@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
+exl-id: 2caaca74-640a-4257-a81b-3e8b295cd182
 ---
-
 # Assembling Encrypted PDF Documents {#assembling-encrypted-pdf-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

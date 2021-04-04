@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
-
+exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
 ---
-
 # New render and submit service{#new-render-and-submit-service}
 
 ## Introduction {#introduction}
@@ -157,4 +156,4 @@ Yes, since the previous render and submit services associated with the default a
 If you had modified the existing Render or Submit PDF Form services or created custom services (say custom1), and now want to use the same functionality for HTML rendition. You need to replicate the new render or submit service (as say custom2) and apply similar customizations to those. Now, modify the action profile for your XDP to start using custom2 services, instead of the custom1 for render or submit.
 
 What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?
-What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?  
+What needs to be done by the process designer to enable the form to be rendered in HTML on a device, and in PDF on a desktop?

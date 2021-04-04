@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
-
+exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 ---
-
 # Watched folder in AEM Forms{#watched-folder-in-aem-forms}
 
 An administrator can configure a network folder, known as a Watched Folder, so that when a user places a file (such as a PDF file) in the Watched Folder a pre-configured workflow, service, or script operation is started to process the added file. After the service performs the specified operation, it saves the result file in a specified output folder. For more information about workflow, service, and script, see [Various methods for processing files](#variousmethodsforprocessingfiles).
@@ -678,4 +677,3 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
     * outputFilePattern (String): Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
    Apart from the mandatory properties mentioned above, Watched Folders also support a few optional properties. For complete list and description of optional properties, see [Watched Folder properties](#watchedfolderproperties).
-

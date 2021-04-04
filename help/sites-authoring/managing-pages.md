@@ -1,8 +1,8 @@
 ---
 title: Creating and Organizing Pages
 description: How to create and manage pages with AEM
+exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 ---
-
 # Creating and Organizing Pages {#creating-and-organizing-pages}
 
 This section describes how to create and manage pages with Adobe Experience Manager (AEM) so that you can then [create content](/help/sites-authoring/editing-content.md) on those pages.

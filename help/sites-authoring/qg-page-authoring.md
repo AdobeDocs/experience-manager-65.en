@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
-
+exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 ---
-
 # Quick Guide to Authoring Pages{#quick-guide-to-authoring-pages}
 
 These procedures are intended as a quick guide (high-level) to the key actions of authoring page content in AEM.

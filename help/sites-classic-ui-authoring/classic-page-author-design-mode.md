@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
-
+exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 ---
-
 # Configuring Components in Design Mode{#configuring-components-in-design-mode}
 
 When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick.

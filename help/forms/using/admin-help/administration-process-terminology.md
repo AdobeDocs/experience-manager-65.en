@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f9b40e1f-956d-498b-92e4-4fe21e23fc4a
+exl-id: 8944cbae-865d-4b1c-b3bf-00c3a247d776
 ---
-
 # About administration and process terminology {#about-administration-and-process-terminology}
 
 To administer forms workflow effectively, you should understand the following terms and the hierarchy of the elements:

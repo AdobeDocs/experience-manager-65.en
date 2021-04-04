@@ -10,8 +10,8 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
 ---
-
 # Associating submission reviewers with a form {#associating-submission-reviewers-with-a-form}
 
 When you create a form, you can specify users who review the submissions of the form via forms portal and provide feedback. Your organization can collect feedback and rework on the submitted forms.
@@ -72,4 +72,3 @@ To associate user groups with an adaptive form:
 >Replicate users and forms to ensure availability of the users and forms in the remote implementation of AEM Forms.
 >
 >Ensure that all users are replicated as reviewing members of the user groups in the remote implementation.
-

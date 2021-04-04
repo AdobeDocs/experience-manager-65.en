@@ -10,9 +10,8 @@ topic-tags: components
 content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
-
+exl-id: f43e9491-aa8f-40af-9800-123695142559
 ---
-
 # Developing Forms (Classic UI){#developing-forms-classic-ui}
 
 The basic structure of a form is:

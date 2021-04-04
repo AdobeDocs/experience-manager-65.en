@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
+exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
 ---
-
 # Configuring for AEM Apps{#configuring-for-aem-apps}
 
 Adobe Experience Manager Apps provides the ability to update the content of your application over the air (OTA). The updated content is stored on the publish instance. To allow the App on your device to connect to the publish instance and check for updates the publish instance needs to be configured to allow an empty referrer header.

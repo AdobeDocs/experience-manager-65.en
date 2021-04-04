@@ -9,9 +9,8 @@ topic-tags: document_services, publish
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
-
+exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 ---
-
 # Manage Forms applications and tasks in AEM Inbox{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 One of the many ways to launch or trigger a Forms-centric workflow is through applications in AEM Inbox. You need to create a workflow application to make a Forms workflow available as application in Inbox. For more information about workflow application and other ways to launch Forms workflows, see [Launch a Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow.md#launch).

@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
+exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
 ---
-
 # Task Manager Service Java API Quick Start (SOAP) {#task-manager-service-java-api-quickstart-soap}
 
 The following Quick Starts are available for the Task Manager service.
@@ -862,4 +862,3 @@ The following Java code example retrieves all tasks that are based on a process 
      }
  
 ```
-

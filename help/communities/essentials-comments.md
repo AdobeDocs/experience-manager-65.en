@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
+exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 ---
-
 # Comments Essentials {#comments-essentials}
 
 This page provides the essentials of working with the comment system (comments component) and options for managing the user generated content (UGC) produced when members post comments or replies.
@@ -94,4 +94,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods.
-

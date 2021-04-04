@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
+exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
 ---
-
 # Backup and Restore{#backup-and-restore}
 
 There are two ways to back up and restore repository content in AEM:
@@ -259,4 +259,3 @@ When you back up nodes using either the Package Manager or the Content Zipper, C
 When backing up, AEM loses the following information:
 
 * The version history.
-

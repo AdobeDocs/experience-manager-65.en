@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
+exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
 ---
-
 # Calendar Essentials {#calendar-essentials}
 
 This page provides essential information on working with the calendar feature.
@@ -73,4 +73,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines
 * [SocialUtils Refactoring](socialutils.md) - mapping deprecated utility methods to current SRP utility methods
-

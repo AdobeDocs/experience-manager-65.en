@@ -10,9 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
-
+exl-id: d6243dff-a067-455c-a326-5f451f225efd
 ---
-
 # AEM Communities Overview {#aem-communities-overview}
 
 Adobe Experience Manager (AEM) Communities provides the ability to quickly create an on-premise community site that has improved performance, improved site management, and encourages the conversion of site visitors to valuable community members.
@@ -247,4 +246,3 @@ The AEM Demo Machine requires a valid AEM license.
 * Visit [Administering Communities Sites](administer-landing.md) to learn about creating a community site, adding community groups, configuring community site templates, moderating community content, managing members, tagging, notifications, scoring, and badges.
 * Visit [Developing Communities](communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
 * Visit [Authoring Communities Components](author-communities.md) to learn how to author with and configure Communities components.
-

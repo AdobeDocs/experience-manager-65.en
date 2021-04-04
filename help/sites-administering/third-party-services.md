@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
+exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
 ---
-
 # Integrating with Third-Party Services{#integrating-with-third-party-services}
 
 With AEM, you can integrate with the following non-Adobe products out of the box:

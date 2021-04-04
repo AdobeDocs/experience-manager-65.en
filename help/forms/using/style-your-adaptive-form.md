@@ -8,8 +8,8 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
+exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 ---
-
 # Style your adaptive form {#do-not-publish-style-your-adaptive-form}
 
 Learn to create a custom theme, style individual components, and use web fonts in a theme 
@@ -450,4 +450,3 @@ You can use various fonts to design an adaptive form. All the devices that the a
 1. Configure your theme to use the [!DNL Adobe Fonts] configuration. On the author instance, open **[!UICONTROL Global Theme]** in the theme editor. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
 
    The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
-

@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
-
+exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 ---
-
 # Activity Trends {#activity-trends}
 
 ## Introduction {#introduction}
@@ -121,4 +120,3 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 **Trending Content** config: Type = Content, Activity type = Posts
 
 ![components](assets/activity-list-components.png)
-

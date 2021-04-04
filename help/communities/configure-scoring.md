@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
-
+exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
 ---
-
 # Scoring and Badges Essentials {#scoring-and-badges-essentials}
 
 The AEM Communities scoring and badges feature provides the ability to identify and reward community members.
@@ -274,4 +273,3 @@ To display a sorted list of members based on points:
 
 * [Leaderboard function](/help/communities/functions.md#leaderboard-function) for inclusion in a community site or group template.
 * [Leaderboard component](/help/communities/enabling-leaderboard.md), the featured component of the Leaderboard function, for page authoring.
-

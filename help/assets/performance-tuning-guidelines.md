@@ -5,8 +5,8 @@ contentOwner: AG
 mini-toc-levels: 1
 role: Architect, Administrator
 feature: Asset Management
+exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 ---
-
 <!-- TBD: Get reviewed by engineering. -->
 
 # [!DNL Adobe Experience Manager Assets] performance tuning guide {#assets-performance-tuning-guide}

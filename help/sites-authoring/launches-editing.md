@@ -11,9 +11,8 @@ topic-tags: site-features
 discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-
+exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 ---
-
 # Editing Launches{#editing-launches}
 
 ## Editing Launch Pages {#editing-launch-pages}

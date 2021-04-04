@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
+exl-id: 8049d797-e758-44c2-a89b-51d2b2fca8dc
 ---
-
 # OSGi Events for Communities Components  {#osgi-events-for-communities-components}
 
 ## Overview {#overview}
@@ -330,4 +330,3 @@ public class CommentDeleteEventActivityFilter implements ActivityStreamProviderE
 
 }
 ```
-

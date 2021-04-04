@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
+exl-id: 2e02db9f-294d-4d4a-92da-3ab1d38416ab
 ---
-
 # Create the Components  {#create-the-components}
 
 The example of extending components uses the comment system, which is actually composed of two components
@@ -202,4 +202,3 @@ One way to do so is:
   * Set `Start Path` to `/apps/custom`
   * Uncheck **[!UICONTROL Only Modified]**
   * Select **[!UICONTROL Activate]** button
-

@@ -4,8 +4,8 @@ description: Share assets, folders, and collections as a URL.
 contentOwner: AG
 role: Business Practitioner
 feature: Link Sharing,Asset Management
+exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 ---
-
 # Share asset via a link {#asset-link-sharing}
 
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].

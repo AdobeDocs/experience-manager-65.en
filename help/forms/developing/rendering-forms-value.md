@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
+exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 ---
-
 # Rendering Forms By Value {#rendering-forms-by-value} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

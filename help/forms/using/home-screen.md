@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: ba79479b-4159-4a39-95eb-2285e7ece9d4
 docset: aem65
-
+exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
 ---
-
 # Home screen{#home-screen}
 
 When you log in to the AEM Forms app, you are redirected to the Home screen.

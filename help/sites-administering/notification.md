@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
+exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 ---
-
 # Configuring Email Notification{#configuring-email-notification}
 
 AEM sends email notifications to users who:
@@ -305,4 +305,3 @@ When Collections in AEM Assets are shared or unshared, users can receive email n
 1. Configure the email service, as described above in [Configuring the Mail Service](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. Log into AEM as an administrator. Click **Tools** &gt;  **Operations** &gt;  **Web Console** to open Web Console Configuration.
 1. Edit **Day CQ DAM Resource Collection Servlet**. Select **send email**. Click **Save**.
-

@@ -4,8 +4,8 @@ description: Learn how to automate workflows to translate assets, including bina
 contentOwner: AG
 feature: Asset Management
 role: Administrator
+exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 ---
-
 # Multilingual assets {#multilingual-assets}
 
 [!DNL Adobe Experience Manager Assets] lets you automate translation workflows on assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.

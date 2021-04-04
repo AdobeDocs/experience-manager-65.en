@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
+exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
 ---
-
 # Managing certificate revocationlists{#managing-certificate-revocationlists}
 
 Using Trust Store Management, you can import, edit, and delete certificate revocation lists (CRLs). Base64 and DER-encoded certificate revocation lists are supported.
@@ -32,4 +32,3 @@ Using Trust Store Management, you can import, edit, and delete certificate revoc
 
 1. In administration console, click Settings &gt;Trust Store Management &gt; Certificate Revocation Lists.
 1. Select the check boxes for the CRLs to delete, click Delete, and then click OK.
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
+exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 ---
-
 # Troubleshooting Integration Issues{#troubleshooting-integration-issues}
 
 ## General Troubleshooting Tips {#general-troubleshooting-tips}
@@ -262,4 +262,3 @@ Response for N=4, CLIENT-dayintegrationintern
     ]
 }
 ```
-

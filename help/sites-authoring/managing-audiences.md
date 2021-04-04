@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
-
+exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 ---
-
 # Managing Audiences{#managing-audiences}
 
 The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context:

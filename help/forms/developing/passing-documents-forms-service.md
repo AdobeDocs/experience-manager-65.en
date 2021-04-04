@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
+exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 ---
-
 # Passing Documents to the Forms Service {#passing-documents-to-the-formsservice} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

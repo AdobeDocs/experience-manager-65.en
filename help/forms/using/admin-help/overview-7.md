@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
+exl-id: 169f3d94-ac00-41c7-853e-ecf0dbee559f
 ---
-
 # Basics of configuring forms {#basics-of-configuring-forms}
 
 The Forms service enables you to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors develop a single form design that the Forms service renders in various formats:

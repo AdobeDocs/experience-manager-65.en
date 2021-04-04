@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
+exl-id: 0f8e1e46-4fc5-43f6-abb1-19a3f20e1f1d
 ---
-
 # Configuring Acrobat Reader DC extensions for data capture {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
 If users of your AEM forms installation use the data capture functionality of Content Services (Deprecated), it is recommended that you create a role with read-only access for these users.
@@ -33,4 +33,3 @@ Data capture requires that you assign a user role to access the SampleReaderExte
 1. On the Role Users/Groups tab, click Find Users/Groups.
 1. On the Find Users and Groups screen, click Find, select the users who require the data capture user role, then click OK.
 1. On the Edit Role screen, click Save.
-

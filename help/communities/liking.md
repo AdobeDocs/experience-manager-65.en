@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
+exl-id: 226fa91c-4a12-4586-b694-1a52fa2ba358
 ---
-
 # Using Liking {#using-liking}
 
 The `Liking` component is a useful tool that allows users to express an opinion about a particular piece of content, such as an comment within a forum. With the `Liking` component, members select the heart icon to indicate a positive opinion.

@@ -4,8 +4,8 @@ description: [!DNL Experience Manager Assets] and Media Library for asset manage
 contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
+exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 ---
-
 <!--
 
 Define Media Lib

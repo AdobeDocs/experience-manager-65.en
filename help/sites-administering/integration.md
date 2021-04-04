@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b5ff918d-08ab-4307-a807-693468fc083b
+exl-id: ee5e8ebb-773f-4aa6-9c3e-2cc3bf4a3bbd
 ---
-
 # Solutions Integration{#solutions-integration}
 
 * [Integrating with the Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)
@@ -29,4 +29,3 @@ The following information is available about integrating AEM with other Adobe or
 >* 3.x is configured with [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x is configured with [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-

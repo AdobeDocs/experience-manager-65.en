@@ -9,8 +9,8 @@ discoiquuid: 225f2bc1-6842-4c79-a66d-8024a29325c0
 docset: aem65
 
 role: Administrator
+exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 ---
-
 # Install and configure Interactive Communications{#install-and-configure-interactive-communications}
 
 ## Introduction {#introduction}
@@ -182,4 +182,3 @@ You have configured an environment to use interactive communication and correspo
 * [Create an interactive communication](../../forms/using/create-interactive-communication.md)
 
 * [Create a correspondence management letter](../../forms/using/create-letter.md)
-

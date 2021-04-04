@@ -4,8 +4,8 @@ description: Extend the search capabilities of [!DNL Adobe Experience Manager As
 contentOwner: AG
 role: Developer
 feature: Search
+exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 ---
-
 # Extend assets search {#extending-assets-search}
 
 You can extend [!DNL Adobe Experience Manager Assets] search capabilities. Out of the box, [!DNL Experience Manager Assets] searches for assets by strings.

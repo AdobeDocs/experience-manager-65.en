@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
+exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
 ---
-
 # Using Sling Adapters{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) offers an [Adapter pattern](https://sling.apache.org/site/adapters.html) to conveniently translate objects that implement the [Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interface. This interface provides a generic [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) method that will translate the object to the class type being passed as the argument.

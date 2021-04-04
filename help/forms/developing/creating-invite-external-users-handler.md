@@ -2,8 +2,8 @@
 title: Creating an Invite External Users Handler
 description: Creating an Invite External Users Handler
 role: Developer
+exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 ---
-
 # Creating an Invite External Users Handler {#create-invite-external-users-handler} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

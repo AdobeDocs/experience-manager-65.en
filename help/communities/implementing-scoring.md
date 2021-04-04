@@ -13,8 +13,8 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 
 role: Administrator
+exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 ---
-
 # Communities Scoring and Badges {#communities-scoring-and-badges}
 
 ## Overview {#overview}

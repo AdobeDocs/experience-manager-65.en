@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
+exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 ---
-
 # Branding Customization {#branding-customization}
 
 You can customize the application icon, application name, launch images, and login page to provide a distinct organization-specific appearance to AEM Forms app. For example, you can change the images to use logos from your organization. The AEM Forms app supports the following customizations:

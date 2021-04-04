@@ -5,8 +5,8 @@ contentOwner: AG
 mini-toc-levels: 1
 role: Business Practitioner
 feature: Asset Management,Search
+exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 ---
-
 # Manage your digital assets {#manage-digital-assets}
 
 In [!DNL Adobe Experience Manager Assets] you can do more than just store and govern your assets. [!DNL Experience Manager] offers enterprise-grade asset management capabilities. You can edit and share assets, run advanced searches, create multiple renditions of dozens of supported file formats, manage versions and digital rights, automate processing of assets, manage and govern metadata, collaborate using annotations, and much more.

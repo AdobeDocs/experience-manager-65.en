@@ -3,8 +3,8 @@ title: What is new in [!DNL Experience Manager] 6.5 Service Pack 8
 description: What's new in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
+exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 ---
-
 # What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)

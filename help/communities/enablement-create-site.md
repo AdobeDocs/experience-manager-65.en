@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b9333558-6af9-46b2-9f03-3722645c69a6
 docset: aem65
-
+exl-id: 812bbf7b-c49f-4c34-a47d-636b0468e0ba
 ---
-
 # Author a New Community Site for Enablement {#author-a-new-community-site-for-enablement}
 
 ## Create Community Site {#create-community-site}
@@ -362,4 +361,3 @@ Use the Position Icon to move the Catalog function to the second position, after
 Select **Save** in the upper right corner to save the changes to the community site.
 
 Then re-**Publish** the site.
-

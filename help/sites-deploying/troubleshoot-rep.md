@@ -12,8 +12,8 @@ discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
 docset: aem65
 
 feature: Configuring
+exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
 ---
-
 # Troubleshooting Replication{#troubleshooting-replication}
 
 This page provides information on how to troubleshoot replication issues.
@@ -108,4 +108,3 @@ In some cases the replication queue is blocked when trying to replicate namespac
 1. Enter the name of the user.
 1. Select `jcr:namespaceManagement` from the privileges list.
 1. Click OK.
-

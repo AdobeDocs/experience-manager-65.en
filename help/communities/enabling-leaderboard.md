@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
-
+exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
 ---
-
 # Leaderboard Feature {#leaderboard-feature}
 
 ## Introduction {#introduction}

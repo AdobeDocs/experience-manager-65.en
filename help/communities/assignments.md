@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 2de88b55-dda9-4ccf-ad4d-dd67943ef610
 docset: aem65
-
+exl-id: 1ff13c43-ce34-4fd5-a26b-5c6559436813
 ---
-
 # Assignments Feature {#assignments-feature}
 
 The Enablement Assignments and [Enablement Catalog](/help/communities/catalog.md) components found in the Communities group in the components browser are components of an [enablement community](/help/communities/overview.md#enablement-community).

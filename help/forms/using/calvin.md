@@ -11,8 +11,8 @@ discoiquuid: 1cb54c8a-9322-4b5a-b5a7-0eef342cee54
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 59d6b23a-5917-4ea3-a924-0e76d8d6ff2b
 ---
-
 # Automate testing of adaptive forms{#automate-testing-of-adaptive-forms}
 
 ## Overview {#overview}
@@ -334,4 +334,3 @@ The steps for testing your AEM adaptive forms are similar to steps for testing y
   </tr>
  </tbody>
 </table>
-

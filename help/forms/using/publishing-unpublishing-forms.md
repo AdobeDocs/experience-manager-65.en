@@ -10,9 +10,8 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
-
+exl-id: f26c4268-7885-4e61-a258-219d98288548
 ---
-
 # Publishing and unpublishing forms and documents{#publishing-and-unpublishing-forms-and-documents}
 
 AEM Forms let you create, publish, and unpublish forms easily. For more information about AEM Forms, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).

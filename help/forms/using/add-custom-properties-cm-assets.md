@@ -11,8 +11,8 @@ discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 
 feature: Correspondence Management
+exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
 ---
-
 # Add custom properties to Correspondence Management assets{#add-custom-properties-to-correspondence-management-assets}
 
 ## Overview {#overview}

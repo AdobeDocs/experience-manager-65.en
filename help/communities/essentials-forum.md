@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
+exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
 ---
-
 # Forum Essentials {#forum-essentials}
 
 This page provides the essential information for working with the forum feature.
@@ -75,4 +75,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods.
-

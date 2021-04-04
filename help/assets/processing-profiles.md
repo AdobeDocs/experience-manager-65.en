@@ -11,8 +11,8 @@ docset: aem65
 
 role: Business Practitioner, Administrator
 feature: Workflow,Asset Management,Renditions
+exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 ---
-
 # Profiles for processing metadata, images, and videos{#profiles-for-processing-metadata-images-and-videos}
 
 A profile is a recipe for what options to apply to assets that get uploaded to a folder. For example, you can specify what metadata profile and video encoding profile to apply to video assets that you upload. Or, what imaging profile to apply to image assets to have them properly cropped.

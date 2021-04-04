@@ -10,9 +10,8 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
-
+exl-id: 9672f7a4-82b7-4175-874d-181846115442
 ---
-
 # Glossary{#glossary}
 
 This glossary lists (alpabetically) details of all Deliverable documents from the [Project Checklist](/help/managing/best-practices-checklist.md).
@@ -1412,4 +1411,3 @@ Workflows allow you to automate AEM activities. The Workflows Concept outlines:
 
 * the processes that will need automation
 * the services and roles in AEM that will be affected
-

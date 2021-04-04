@@ -11,8 +11,8 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 
 feature: Interactive Communication
+exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
 ---
-
 # Using charts in Interactive Communications{#using-charts-in-interactive-communications}
 
 A chart or a graph is a visual representation of data. It condenses large amounts of information into easy-to-understand visual format, enabling the recipients of the Interactive Communication to better visualize, interpret, and analyze complex data.
@@ -312,4 +312,3 @@ To accomplish this, specify the following properties:
 * Select the **Show legends** checkbox to display the colour codes for the bank names.
 
 ![Quadrant charts](assets/charts_quadrant_example_new.png)
-

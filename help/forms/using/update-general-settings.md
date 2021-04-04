@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
-
+exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
 ---
-
 # Updating general settings{#updating-general-settings}
 
 General settings of the AEM Forms app let you specify settings such as fetching attachments, offline mode, landing screen, default category, and autsave frequency.

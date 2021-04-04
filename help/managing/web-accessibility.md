@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager (AEM) and the Web Accessibility Guidelines
 description: An Introduction to Adobe Experience Manager (AEM) and the Web Accessibility Guidelines
+exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 ---
-
 # AEM and the Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
 
 There are many social, economical, and legal motivations for ensuring that web content is designed to be as accessible as possible to the target audience, regardless of any disability or limitations they may have. Web accessibility with Adobe Experience Manager (AEM) is therefore an increasingly important aspect of good web design.
@@ -54,4 +54,3 @@ Using Adobe Experience Manager, content authors and/or website owners can create
 ## Accessibility at Adobe {#accessibility-at-adobe}
 
 For additional information, please visit the [Adobe Accessibility Resource Center](https://www.adobe.com/accessibility/).
- 

@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: fb2b7ff6-6b29-425b-a86e-d1f80faab9e0
 docset: aem65
-
+exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
 ---
-
 # Logging in to AEM Forms app{#logging-in-to-aem-forms-app}
 
 When you start your AEM Forms app, you first need to provide your login credentials and a AEM Forms server URL.

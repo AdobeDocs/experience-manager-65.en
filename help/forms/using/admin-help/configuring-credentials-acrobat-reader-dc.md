@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
+exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 ---
-
 # Configuring credentials for use with Acrobat Reader DC extensions{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
 To apply usage rights to PDF documents, configure AEM forms with a valid credential for Acrobat Reader DC extensions. A credential may have been configured during the installation of AEM forms. If you did not configure your Acrobat Reader DC extensions credential while running Configuration Manager or if you need to import a new or replacement credential, you can do so using the Trust Store Management pages.
@@ -55,4 +55,3 @@ The Trust Store may contain more than one Acrobat Reader DC extensions credentia
 1. In administration console, click Settings &gt; Trust Store Management &gt; Local Credentials.
 1. Make note of the existing credential’s alias and then select it and click Delete.
 1. Import the new credential using the exact same alias name.
-

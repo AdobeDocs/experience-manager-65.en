@@ -10,9 +10,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
-
+exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 ---
-
 # Customizing and Extending Content Fragments{#customizing-and-extending-content-fragments}
 
 A content fragment extends a standard asset; see:

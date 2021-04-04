@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
+exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 ---
-
 # Designs and the Designer{#designs-and-the-designer}
 
 >[!CAUTION]
@@ -60,4 +60,3 @@ The preceding example offers severals benefits:
 * Re-design of the website can be simply done by pointing the design path to a different node at the root of the site from `design/v1` to `design/v2.`
 
 * `/etc/designs` and `/content` are the only external URLs that the browser sees protecting you of an external user getting curious about what is under your `/apps` tree. The above URL benefits also aid your System Administrator to setup better security because you are limiting the exposure of the assets to a few distinct locations.
-

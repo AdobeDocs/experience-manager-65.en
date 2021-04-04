@@ -10,8 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
+exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
 ---
-
 # Liking Essentials {#liking-essentials}
 
 The liking component, a [tally](tally.md) subclass, is a useful tool that allows members to express a positive opinion about a particular piece of content by simply selecting the heart icon.
@@ -76,4 +76,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - mapping deprecated utility methods to current SRP utility methods.
-

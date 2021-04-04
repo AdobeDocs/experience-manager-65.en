@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
+exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 ---
-
 # Communities Components Basics {#communities-components-basics}
 
 ## Overview {#overview}
@@ -84,4 +84,3 @@ For developer information:
 
 * [AEM Tagging Framework](../../help/sites-developing/framework.md)
 * [Tagging Essentials](tag.md)
-

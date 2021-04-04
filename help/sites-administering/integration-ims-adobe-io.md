@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
-
+exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
 ---
-
 # Integration with Adobe Target using Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
 The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.

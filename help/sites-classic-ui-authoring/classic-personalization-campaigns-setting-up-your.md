@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
-
+exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
 ---
-
 # Setting up your campaign{#setting-up-your-campaign}
 
 Setting up a new campaign includes the following (generic) steps:

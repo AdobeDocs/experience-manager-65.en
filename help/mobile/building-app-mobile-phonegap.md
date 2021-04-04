@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
+exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 ---
-
 # Building Mobile Applications{#building-mobile-applications}
 
 >[!NOTE]

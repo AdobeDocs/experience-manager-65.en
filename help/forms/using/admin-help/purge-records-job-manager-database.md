@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
+exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 ---
-
 # Purge records from the Job Manager database {#purge-records-from-the-job-manager-database}
 
 Process data that is generated when a long-lived process is invoked can become too large, resulting in lower AEM forms performance and the use of unnecessary disk space. It is good practice to purge process data when records are no longer necessary.
@@ -61,4 +61,3 @@ Information about any currently scheduled purges is displayed in the Job Purge S
    >If you specify a start date and time that is in the past, AEM forms calculates the logical next start date based on the date you specified. For example, if you schedule the job purges to occur weekly beginning April 7, and it is now April 9, the first purge occurs April 14.
 
 1. Click Start Scheduler. Any previously scheduled scheduler settings are replaced with the new settings.
-

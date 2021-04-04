@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 6bac681e-59e1-4786-9c50-6679c936cfd1
 docset: aem65
-
+exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 ---
-
 # Assignments Essentials {#assignments-essentials}
 
 Read on to know about the essential information for working with the assignments feature of [enablement community](/help/communities/overview.md#enablement-community) sites.
@@ -89,4 +88,3 @@ A community site structure that includes the [Assignments function](/help/commun
 * [Reporting API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/dv/api/package-summary.html)
 
 * [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/reporting/analytics/api/package-summary.html)
-

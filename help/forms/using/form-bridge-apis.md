@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
+exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
 ---
-
 # Form Bridge APIs for HTML5 forms {#form-bridge-apis-for-html-forms}
 
 You can use the Form Bridge APIs to open a communication channel between an XFA-based HTML5 forms and your applications. The Form Bridge APIs provides a **connect** API to create the connection.

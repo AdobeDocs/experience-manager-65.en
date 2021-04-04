@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
+exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
 ---
-
 # Working with Workflows{#working-with-workflows}
 
 AEM Workflows allows you to automate a series of steps that are performed on (one or more) pages and/or assets.
@@ -30,4 +30,3 @@ The following pages cover:
 
 * [Applying Workflows to Pages](/help/sites-authoring/workflows-applying.md)
 * [Participating in Workflows](/help/sites-authoring/workflows-participating.md)
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
+exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 ---
-
 # Creative Project and PIM Integration{#creative-project-and-pim-integration}
 
 If you are a marketer or creative professional, you can use Creative Project tools in Adobe Experience Manager (AEM) to manage eCommerce-related product photography and associated creative processes within your organization.
@@ -420,4 +420,3 @@ You can customize the Project Photo Shoot workflows based on requirements. This 
 >[!NOTE]
 >
 >When you start a server, the Project task list servlet caches the mappings between task types and URLs defined under `/libs/cq/core/content/projects/tasktypes`. You can then perform the usual overlay and add custom task types by placing them under `/apps/cq/core/content/projects/tasktypes`.
-

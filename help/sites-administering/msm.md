@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
+exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
 ---
-
 # Reusing Content: Multi Site Manager and Live Copy{#reusing-content-multi-site-manager-and-live-copy}
 
 Multi Site Manager (MSM) enables you to use the same site content in multiple locations. MSM uses its Live Copy functionality to achieve this:

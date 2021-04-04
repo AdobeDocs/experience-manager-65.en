@@ -8,8 +8,8 @@ content-type: reference
 docset: aem65
 
 role: Business Practitioner, Administrator
+exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
 ---
-
 # About moving from Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7 {#about-migrating}
 
 Dynamic Media&ndash;Hybrid is an older version of Dynamic Media integration with Adobe Experience Manager. The Hybrid version was first introduced in AEM (Adobe Experience Manager) 6.1. While Adobe continues to support Hybrid mode, it is not the preferred mode (Dynamic Media&ndash;Scene7 is the preferred mode). It also does not support new features such as Smart Crop and panoramic images. Whereas Dynamic Media&ndash;Scene7 does.

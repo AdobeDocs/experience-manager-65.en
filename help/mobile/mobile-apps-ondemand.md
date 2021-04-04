@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
+exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
 ---
-
 # Mobile On-Demand{#mobile-on-demand}
 
 >[!NOTE]
@@ -56,4 +56,3 @@ To understand more on the other two roles and responsibilities for creating an A
 
 * [Developing AEM Content for AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administering Content to Use AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
-

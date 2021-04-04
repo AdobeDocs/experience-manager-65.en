@@ -1,8 +1,8 @@
 ---
 title: Touch UI Feature Status
 description: Release notes specific to [!DNL Adobe Experience Manager] Touch-Enabled UI.
+exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 ---
-
 # Touch UI Feature Status {#touch-ui-feature-status}
 
 AEM 6.4 onwards [Classic UI is deprecated](../release-notes/deprecated-removed-features.md). Adobe will not make further enhancements to the Classic UI and users are encouraged to leverage the powerful new features available in the touch-enabled UI.

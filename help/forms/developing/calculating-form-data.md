@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
+exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 ---
-
 # Calculating Form Data {#calculating-form-data} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

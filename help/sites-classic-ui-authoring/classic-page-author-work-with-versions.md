@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
-
+exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 ---
-
 # Working with Page Versions{#working-with-page-versions}
 
 Versioning creates a "snapshot" of a page at a specific point in time. With versioning, you can perform the following actions:

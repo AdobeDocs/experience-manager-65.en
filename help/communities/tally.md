@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
+exl-id: 0b508df9-1a24-4728-a254-f913eeb9b391
 ---
-
 # Tally Essentials {#tally-essentials}
 
 Tally is an abstract class providing a standard method of collecting feedback from members on how they value specific products and services. Anonymous feedback is not supported. The site visitor must register and sign in to participate and sign in to change their feedback. The requirement to sign in facilitates moderation and enhances the value of the feedback by preventing multiple posts.
@@ -54,4 +54,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods.
-

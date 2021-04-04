@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
+exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
 ---
-
 # Troubleshooting Oak Indexes{#troubleshooting-oak-indexes}
 
 ## Slow Re-indexing  {#slow-re-indexing}

@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
+exl-id: ee0708b0-b630-4a2b-84b6-3c0b92dd7777
 ---
-
 # Displaying the user avatar {#displaying-the-user-avatar}
 
 Avatar of the logged-in user is displayed in the upper-right corner of AEM Forms workspace. Also, the avatars of direct reports in the organizational hierarchy are displayed in the Manager View. You can configure AEM Forms workspace to pick the user images from your database, say LDAP server.

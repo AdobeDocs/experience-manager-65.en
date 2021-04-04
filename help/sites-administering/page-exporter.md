@@ -1,8 +1,8 @@
 ---
 title: The Page Exporter
 description: Learn how to use the AEM Page Exporter.
+exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 ---
-
 # The Page Exporter{#the-page-exporter}
 
 AEM allows you to export a page as a complete web page including images, `.js` and `.css` files.

@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
-
+exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 ---
-
 # Analyzing Page Performance{#analyzing-page-performance}
 
 Open the [Content Insight](/help/sites-authoring/content-insights.md) page to analyze the performance of the page that you are authoring. Configure the reporting period to focus your analysis.
@@ -105,4 +104,3 @@ Use the following procedure to create a task for an SEO recommendation.
    **Note:** The task that is created also includes the path to the page to which the SEO recommendation applies.
 
 1. Click or tap Done to close the Task Created message.
-

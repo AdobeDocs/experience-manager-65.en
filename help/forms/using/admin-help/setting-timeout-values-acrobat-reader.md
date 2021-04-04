@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
+exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
 ---
-
 # Setting timeout values for use with Acrobat Reader DC extensions  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
 When working on many PDF files in Acrobat Reader DC extensions, ensure that the following time-out values are set appropriately to prevent jobs from timing out and failing:

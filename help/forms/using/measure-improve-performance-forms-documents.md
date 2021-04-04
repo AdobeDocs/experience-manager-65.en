@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
-
+exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 ---
-
 # Measure and improve effectiveness and conversion of forms{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## The challenge {#the-challenge-br}
@@ -154,4 +153,3 @@ Some recommendations on designing forms and running A/B tests are as follows:
 * Construct a hypothesis and identify success metrics before running the A/B test.
 * Do minimal variations (ideally one at a time) in your alternate experience to know what impacted the conversion rate.
 * Test frequently to eliminate inefficiencies.
-

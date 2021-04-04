@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
-
+exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 ---
-
 # Variables in AEM Forms workflows{#variables-in-aem-forms-workflows}
 
 A variable in a workflow model is a way to store a value based on its data type. You can then use the name of the variable in any workflow step to retrieve the value stored in the variable. You can also use variable names to define expressions for taking routing decisions.

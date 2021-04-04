@@ -12,8 +12,8 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 
 feature: Upgrading
+exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 ---
-
 # Pre-Upgrade Maintenance Tasks{#pre-upgrade-maintenance-tasks}
 
 Before beginning your upgrade, it is important to follow these maintenance tasks to ensure that the system is ready and can be rolled back should issues occur:

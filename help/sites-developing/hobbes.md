@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
-
+exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 ---
-
 # Testing Your UI{#testing-your-ui}
 
 >[!NOTE]

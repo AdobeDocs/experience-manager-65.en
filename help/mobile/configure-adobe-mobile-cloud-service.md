@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
+exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
 ---
-
 # Configure your Adobe Mobile Services Cloud Service {#configure-your-adobe-mobile-services-cloud-service}
 
 >[!NOTE]
@@ -72,4 +72,3 @@ In order to take advantage of Adobe Mobile Services Analytics you need to config
    >Once you set up your cloud configuration, you can view the **Analyze Metrics** Tile in your app dashboard.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
-

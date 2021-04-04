@@ -10,8 +10,8 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 
 feature: Interactive Communication
+exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 ---
-
 # Create an Interactive Communication{#create-an-interactive-communication}
 
 ## Overview {#overview}
@@ -604,4 +604,3 @@ The web channel authoring interface facilitates grouping the components in a pan
    The grouped components display as child elements of the Panel in the content tree.
 
    ![content_tree_grouping](assets/content_tree_grouping.png)
-

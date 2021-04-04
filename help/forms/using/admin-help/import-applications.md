@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
+exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 ---
-
 # Import and manage applications{#import-and-manage-applications}
 
 In AEM forms, an *application* is a container for storing assets that are required for implementing a AEM forms solution. Examples of assets are form designs, form fragments, images, processes, DDX files, form Guides, HTML pages, and SWF files. During the development phase of a project, Workbench users can deploy applications directly from the Applications view in Workbench. Once deployed, these applications appear in administration console, on the Applications tab on the Application Management page.
@@ -108,4 +108,3 @@ Scripted deployment eliminates the need to manually reconfigure settings in the 
 1. Review the ReadMe.txt file for more detailed instructions.
 1. Manually modify the scriptedDeploy.bat and sample-files/sample.xml files as described in the readme.txt file.
 1. Run the scriptedDeploy.bat file. This action deploys the AEM forms archive file with the override settings.
-

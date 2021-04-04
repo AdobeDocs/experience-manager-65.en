@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
+exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 ---
-
 # Managing local credentials {#managing-local-credentials}
 
 Local credentials are private key credentials hosted in Trust Store Management. A *local credential* identifies where a user’s DES credential is stored. Using Trust Store Management, you can import and manage your local credentials by using, for example, existing PFX files so that you can import, edit, and delete local credentials.
@@ -65,4 +65,3 @@ After a credential is imported, you can edit its alias name and trust store type
 1. In administration console, click Settings &gt;Trust Store Management &gt; Local Credentials.
 1. Select the check boxes for the credentials to delete.
 1. Click Delete and then click OK.
-

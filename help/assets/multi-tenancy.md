@@ -4,8 +4,8 @@ description: Learn how the multi-tenancy feature lets you segregate content in t
 contentOwner: AG
 role: Architect, Administrator, Leader
 feature: Collections
+exl-id: f95560c9-f1b9-4e86-94a7-70347d268d8f
 ---
-
 # Multi-tenancy for Collections, snippets, and snippet templates {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
 The multi-tenancy feature lets you segregate content in CRX based on the organization prefix and organization ID to safeguard the content from unauthorized access by users of other organizations.

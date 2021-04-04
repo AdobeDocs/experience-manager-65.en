@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
+exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
 ---
-
 # Customizing the Adobe Analytics Framework{#customizing-the-adobe-analytics-framework}
 
 The Adobe Analytics framework determines the information that is tracked with Adobe Analytics. To customize the default framework, you use javascript to add custom tracking, integrate Adobe Analytics plugins, and change general settings within the framework used for tracking.

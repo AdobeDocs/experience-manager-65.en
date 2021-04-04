@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
+exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 ---
-
 # Creating and Organizing Pages{#creating-and-organizing-pages}
 
 This section describes how to create and manage pages with Adobe Experience Manager (AEM) so that you can then [create content](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) on those pages.
@@ -334,4 +334,3 @@ You can [lock/unlock a page](/help/sites-classic-ui-authoring/classic-page-autho
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
 1. Select **Create** to create the folder.
-

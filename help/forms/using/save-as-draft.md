@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
+exl-id: b4a23b2e-ab18-402c-8dfa-2533ee692912
 ---
-
 # Saving a task or form as a draft {#saving-a-task-or-form-as-a-draft}
 
 The save as draft option saves a snapshot of a task or form along with the data filled in the associated form. You can also create a draft from a template. The drafts are saved in the mobile device, and synced with Adobe Experience Manager Forms server for a later retrieval.

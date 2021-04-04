@@ -10,8 +10,8 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 feature: Configuring
+exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 ---
-
 # Basic Configuration Concepts{#basic-configuration-concepts}
 
 Adobe Experience Manager (AEM) is installed with default settings for all parameters which allows it to run "out of the box." However, you can configure AEM for your own specific requirements.
@@ -308,4 +308,3 @@ Page impressions are displayed in the **Impressions** column of the classic UI s
 >[!CAUTION]
 >
 >The configuration of Adobe Page Impressions Tracker on the author environment will allow anonymous requests to the tracking service.
-

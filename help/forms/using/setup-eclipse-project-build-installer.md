@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
+exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 ---
-
 # Build the AEM Forms Android app {#build-the-aem-forms-android-app}
 
 Perform the following steps in the recommended sequence to build the Android app for AEM Forms.

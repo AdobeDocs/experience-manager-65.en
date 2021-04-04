@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
+exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 ---
-
 # Enabling CRXDE Lite in AEM{#enabling-crxde-lite-in-aem}
 
 In order to ensure that AEM installations are as secure as possible, the security checklist recommends [disabling WebDAV](/help/sites-administering/security-checklist.md#disable-webdav) in production environments.
@@ -55,4 +55,3 @@ For more information on AEM 6 security features, see the following pages:
 
 * [The AEM Security Checklist](/help/sites-administering/security-checklist.md)
 * [Running AEM in Production Ready Mode](/help/sites-administering/production-ready.md)
-

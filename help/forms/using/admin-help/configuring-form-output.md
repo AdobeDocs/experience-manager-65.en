@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
+exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 ---
-
 # Configuring form output{#configuring-form-output}
 
 ## Specify the type of HTML output returned to the web browser {#specify-the-type-of-html-output-returned-to-the-web-browser}
@@ -49,4 +49,3 @@ Perform the following steps to enable the feature:
    >[!NOTE]
    >
    >*To disable the feature, you can remove the JavaScript variable or set its value to 0.*
-

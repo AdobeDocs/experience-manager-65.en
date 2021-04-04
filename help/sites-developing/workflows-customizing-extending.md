@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
+exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 ---
-
 # Extending Workflow Functionality{#extending-workflow-functionality}
 
 This topic describes how to develop custom step components for your workflows, then how to interact programmatically with workflows.

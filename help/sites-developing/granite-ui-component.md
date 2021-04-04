@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
+exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 ---
-
 # Creating a New Granite UI Field Component{#creating-a-new-granite-ui-field-component}
 
 Granite UI provides a range of components designed to be used in forms; these are called *fields* in the Granite UI vocabulary. The standard Granite form components are available under:
@@ -101,4 +101,3 @@ To add specific client-side behavior to your component:
    >[!NOTE]
    >
    >At the moment, the Granite UI does not provide any out-of-the-box listeners or hooks that you can use directly to add JS behavior. So, to add additional JS behavior to your component, you have to implement a JS hook to a custom class that you then assign to your component during the markup generation.
-

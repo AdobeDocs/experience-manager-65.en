@@ -10,9 +10,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
-
+exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 ---
-
 # Customizing the Consoles {#customizing-the-consoles}
 
 >[!CAUTION]

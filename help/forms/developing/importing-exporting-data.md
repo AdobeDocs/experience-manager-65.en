@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
+exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 ---
-
 # Importing and Exporting Data {#importing-and-exporting-data} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

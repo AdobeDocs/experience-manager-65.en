@@ -11,8 +11,8 @@ discoiquuid: d8c1c507-a6c4-44f5-be01-ee902bc28410
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
 ---
-
 # Creating and managing reviews for assets in forms{#creating-and-managing-reviews-for-assets-in-forms}
 
 ## Review {#review}
@@ -107,4 +107,3 @@ This section describes, what happens on Review end / modification:
     1. **Reviewers**: For each reviewer, the incomplete task related to the review is terminated. The task no longer appears as 'Pending' in the reviewer's Notifications section.
     1. **Initiator**: The task assigned to the Review initiator is marked complete. The task is removed from the Notification section of the review initiator.
     1. **All**: The review appears in the Previous Reviews section. No further comments can be added.
-

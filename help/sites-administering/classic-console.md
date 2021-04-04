@@ -10,9 +10,8 @@ topic-tags: content
 content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
-
+exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 ---
-
 # Classic UI Tagging Console{#classic-ui-tagging-console}
 
 This section is for the Classic UI Tagging Console.

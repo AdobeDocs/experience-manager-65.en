@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
+exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 ---
-
 # Fine-tuning Health Monitor performance{#fine-tuning-health-monitor-performance}
 
 Collecting the system statistics that populate Health Monitor has some impact on the performance of your AEM forms environment. This impact can be controlled by setting the Java options listed below in your application server.
@@ -86,4 +86,3 @@ Collecting the system statistics that populate Health Monitor has some impact on
 1. Under Additional Properties, click Java Virtual Machine.
 1. In the Generic JVM arguments box, type the arguments you require.
 1. Click OK or Apply, and then click Save directly to the master configuration.
-

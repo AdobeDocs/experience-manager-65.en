@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
-
+exl-id: edaf12be-473f-4175-b4e0-549b41159a55
 ---
-
 # Barcoded Forms Service{#barcoded-forms-service}
 
 ## Overview {#overview}
@@ -300,4 +299,3 @@ function saveW3CDocument(inputDoc, filePath) {
    os.close();
 }
 ```
-
