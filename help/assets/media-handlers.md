@@ -40,6 +40,8 @@ The following media handlers are available within [!DNL Assets] and handle the m
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback in case no other handler was found to extract data from an asset |
 
+{style="table-layout:auto"}
+
 All the handlers perform the following tasks:
 
 * extracting all available metadata from the asset.

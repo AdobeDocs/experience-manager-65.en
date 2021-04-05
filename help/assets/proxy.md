@@ -11,7 +11,7 @@ role: Administrator, Architect
 
 A proxy is a specific (and sometimes separate) Experience Manager instance that uses proxy workers as processors responsible for handling a job and creating a result. A proxy worker can be used for a wide variety of tasks. In the case of an [!DNL Assets] proxy this can be used for loading assets for rendering within Assets. For example, the [IDS proxy worker](indesign.md) uses an [!DNL Adobe InDesign] Server to process files for use in Assets.
 
-When the proxy is a separate [!DNL Experience Manager] instance this helps reduce the load on the Experience Manager authoring instance(s). By default, [!DNL Assets] executes the asset processing tasks in the same JVM (externalized via Proxy) to reduce the load on the Experience Manager authoring instance.
+When the proxy is a separate [!DNL Experience Manager] instance this helps reduce the load on the [!DNL Experience Manager] authoring instance(s). By default, [!DNL Assets] executes the asset processing tasks in the same JVM (externalized via Proxy) to reduce the load on the [!DNL Experience Manager] authoring instance.
 
 ## Proxy (HTTP Access) {#proxy-http-access}
 
@@ -97,7 +97,7 @@ The following is an example of API usage:
  proxyJobService.removeJob(jobId);
 ```
 
-### Cloud Service Configurations {#cloud-service-configurations}
+### Cloud Service configurations {#cloud-service-configurations}
 
 >[!NOTE]
 >
