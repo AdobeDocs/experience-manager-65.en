@@ -11,8 +11,8 @@ discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
 ---
-
 # Grant rule editor access to select user groups{#grant-rule-editor-access-to-select-user-groups}
 
 ## Overview {#overview}
@@ -54,4 +54,3 @@ AEM Forms allows you to limit rule editor access to users based on their role or
    Components toolbar as visible to a user without rule editor access
 
    For instructions on adding users to groups, see [User Administration and Security](/help/sites-administering/security.md).
-

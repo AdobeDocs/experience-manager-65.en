@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
 docset: aem65
-
+exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 ---
-
 # Technical Requirements{#technical-requirements}
 
 Adobe supports Adobe Experience Manager (AEM) on the platforms as detailed in the following information in this document.

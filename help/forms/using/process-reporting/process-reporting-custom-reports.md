@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
-
+exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
 ---
-
 # Custom Reports in Process Reporting{#custom-reports-in-process-reporting}
 
 You can use REST interface of QueryBuilder or create an OSGi service using QueryBuilder API to create a custom report.

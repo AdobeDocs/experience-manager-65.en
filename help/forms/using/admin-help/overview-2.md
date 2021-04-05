@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
+exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
 ---
-
 # Basics of managing certificates and credentials {#basics-of-managing-certificates-and-credentials}
 
 A *credential* contains your private key information needed for signing or identifying documents. A *certificate* is public key information that you configure for trust. AEM forms uses certificates and credentials for several purposes:
@@ -47,4 +47,3 @@ If you suspect that your key is lost or has been compromised, take the following
 1. Inform the certifying authority, so that they add the compromised key on the certificate revocation list to revoke the key.
 1. Obtain a new key and its certificates from the certifying authority.
 1. Sign the documents that were signed using the compromised key again using the new key.
-

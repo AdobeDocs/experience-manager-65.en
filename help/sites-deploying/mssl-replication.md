@@ -10,8 +10,8 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
+exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 ---
-
 # Replicating Using Mutual SSL{#replicating-using-mutual-ssl}
 
 Configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
@@ -288,4 +288,3 @@ After you configure the replication agent, test the connection to determine whet
 29.08.2014 14:02:46 - Replication (TEST) of /content successful.
 Replication test succeeded
 ```
-

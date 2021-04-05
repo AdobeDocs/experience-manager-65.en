@@ -10,8 +10,8 @@ topic-tags: components
 content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
+exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 ---
-
 # AEM Components - The Basics{#aem-components-the-basics}
 
 When you start to develop new components you need to understand the basics of their structure and configuration.

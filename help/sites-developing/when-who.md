@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 6148f8e6-ab62-4eb8-8a2d-c431b8318000
+exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
 ---
-
 # Testing - when and with whom?{#testing-when-and-with-whom}
 
 Various roles can be involved in testing and at various stages of project development.
@@ -44,4 +44,3 @@ Various roles can be involved in testing and at various stages of project develo
   </tr>
  </tbody>
 </table>
-

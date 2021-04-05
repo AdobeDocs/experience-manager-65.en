@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
-
+exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 ---
-
 # Authoring{#authoring}
 
 ## Concept of Authoring (and Publishing) {#concept-of-authoring-and-publishing}

@@ -4,8 +4,8 @@ description: Upload, preview, annotate, and publish video assets in [!DNL Adobe 
 contentOwner: AG
 role: Business Practitioner
 feature: Asset Management
+exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 ---
-
 # Manage video assets {#manage-video-assets}
 
 Video format is a critical part of digital assets of an organization. [!DNL Adobe Experience Manager] offers mature offerings and features to manage the entire lifecycle of your video assets after their creation.

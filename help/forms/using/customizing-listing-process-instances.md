@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
+exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
 ---
-
 # Customizing the listing of process instances {#customizing-the-listing-of-process-instances}
 
 The process instance list is displayed in the Tracking tab of AEM Forms workspace.

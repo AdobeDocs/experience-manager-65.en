@@ -10,9 +10,8 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
-
+exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
 ---
-
 # The Bulk Editor{#the-bulk-editor}
 
 The Bulk Editor allows for very efficient editing when the visual page context is not needed as it lets you:

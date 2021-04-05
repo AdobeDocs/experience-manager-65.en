@@ -5,8 +5,8 @@ contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
 role: Business Practitioner
+exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 ---
-
 # Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 [!DNL Adobe Experience Manager Assets] provides robust asset discovery methods that help you achieve higher content velocity. Your teams can reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.

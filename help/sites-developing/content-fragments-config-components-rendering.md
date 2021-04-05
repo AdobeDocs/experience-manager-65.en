@@ -9,9 +9,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
-
+exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 ---
-
 # Content Fragments Configuring Components for Rendering{#content-fragments-configuring-components-for-rendering}
 
 There are several [advanced services](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) related to the rendering of content fragments. To use these services, the resource types of such components must make themselves known to the content fragments framework.
@@ -142,4 +141,3 @@ dam.cfm.component.fileReferenceProp="fragmentPath"
 dam.cfm.component.elementsProp="elementName"
 dam.cfm.component.variationProp="variationName"
 ```
-

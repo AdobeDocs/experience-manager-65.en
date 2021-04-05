@@ -4,8 +4,8 @@ description: Describes how to bring assets into [!DNL Adobe Experience Manager],
 contentOwner: AG
 role: Architect, Administrator
 feature: Migration,Renditions,Asset Management
+exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 ---
-
 # How to migrate assets in bulk {#assets-migration-guide}
 
 When migrating assets into [!DNL Adobe Experience Manager], there are several steps to consider. Extracting assets and metadata out of their current home is outside the scope of this document as it varies widely between implementations, but this document describes how to bring these assets into [!DNL Experience Manager], apply their metadata, generate renditions, and activate them to publish instances.

@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: a6ff50df-273d-48f7-b0c6-0e69e900b97f
 docset: aem65
-
+exl-id: 66dfac36-5b7e-40be-9921-efa9f2a9521c
 ---
-
 # How Process Reporting Works{#how-process-reporting-works}
 
 Process Reporting is the reporting module of the AEM Forms on JEE.

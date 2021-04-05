@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
+exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
 ---
-
 # Converting files using PDF Generator{#converting-files-using-pdf-generator}
 
 You can use the PDF Generator web pages to convert files.
@@ -128,4 +128,3 @@ PDF Generator supports reducing the size of PDF files.
     * To use an existing settings file, select Upload Settings File and click Browse to go to the file location.
 
 1. Click Create.
-

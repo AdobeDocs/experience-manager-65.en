@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
+exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
 ---
-
 # Trying out Core Components in We.Retail{#trying-out-core-components-in-we-retail}
 
 The core components are modern, flexible components featuring easy extensibility and allowing for simple integration into your projects. The core components have been built around several major design principles such as HTL, usability out-of-the-box, configurability, versioning, and extensibility. We.Retail has been built on core components.

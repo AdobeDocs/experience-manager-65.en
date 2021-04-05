@@ -10,8 +10,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
+exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 ---
-
 # Extending the Multi Site Manager{#extending-the-multi-site-manager}
 
 This page helps you extend the functionalities of the Multi Site Manager:

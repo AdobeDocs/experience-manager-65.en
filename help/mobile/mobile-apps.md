@@ -8,8 +8,8 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: eda55579-4140-477b-b4d0-a87d14ec3237
+exl-id: 0a98881d-08f3-47e7-bae1-5500d1fe6514
 ---
-
 # Mobile-Apps{#mobile-apps}
 
 >[!NOTE]

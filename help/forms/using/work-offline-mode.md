@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
+exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 ---
-
 # Working in the offline mode {#working-in-the-offline-mode}
 
 The offline mode of the AEM Forms app lets you work seamlessly even if the app goes offline. You can open, update, and submit a form without requiring any network connectivity.

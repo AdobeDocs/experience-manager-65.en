@@ -8,8 +8,8 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
+exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
 ---
-
 # PhoneGap{#phonegap}
 
 >[!NOTE]
@@ -44,4 +44,3 @@ To learn about the roles and responsibilities of an Administrator and Developer,
 
 * [Authoring for Adobe PhoneGap Enterprise with AEM](/help/mobile/phonegap.md)
 * [Administering Content for Adobe PhoneGap Enterprise with AEM](/help/mobile/administer-phonegap.md)
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
+exl-id: e17ff611-122a-4d17-97af-071d0234dd16
 ---
-
 # Trying out Experience Fragments in We.Retail{#trying-out-experience-fragments-in-we-retail}
 
 Trying out Experience Fragments in We.Retail
@@ -43,4 +43,3 @@ You can use your [Experience Fragments](/help/sites-authoring/experience-fragmen
 For more details see:
 
 * [Experience Fragments](/help/sites-authoring/experience-fragments.md)
-

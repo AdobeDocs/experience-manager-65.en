@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
+exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
 ---
-
 # File Library Essentials {#file-library-essentials}
 
 This page provides the essential information for working with the file library feature.
@@ -75,4 +75,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - mapping deprecated utility methods to current SRP utility methods.
-

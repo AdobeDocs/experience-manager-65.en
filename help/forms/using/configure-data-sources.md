@@ -10,8 +10,8 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 
 feature: Form Data Model
+exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 ---
-
 # Configure data sources{#configure-data-sources}
 
  ![](do-not-localize/data-integeration.png)

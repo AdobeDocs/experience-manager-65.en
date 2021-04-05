@@ -11,8 +11,8 @@ discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 
 feature: Correspondence Management
+exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
 ---
-
 # Remote functions in Expression Builder{#remote-functions-in-expression-builder}
 
 Using the Expression Builder, you can create expressions or conditions that perform computations on data values provided by the Data Dictionary or by end users. Correspondence Management uses the result of the expression evaluation to select assets such as text, images, lists, and conditions and insert them in the correspondence as required.

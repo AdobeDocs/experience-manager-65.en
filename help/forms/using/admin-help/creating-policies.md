@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
+exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 ---
-
 # Creating and managing policies {#creating-and-managing-policies}
 
 A *policy* defines a set of confidentiality settings and users who can access a document to which the policy is applied. A *policy set* is used to group a set of policies that have a common business purpose. These policy sets are then made available to a subset of users in the system. For details about policies, see [Policies and policy-protected documents](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
@@ -400,4 +400,3 @@ You can sort the policy list by column heading to find policies more easily. A t
 1. Select a policy set and then click the Policies tab.
 1. Click the appropriate column heading.
 1. To change the sort order, click the column again.
-

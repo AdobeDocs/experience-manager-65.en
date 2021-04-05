@@ -10,8 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
+exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 ---
-
 # Editing Launches{#editing-launches}
 
 ## Editing Launch Pages {#editing-launch-pages}
@@ -60,4 +60,3 @@ When you are editing a launch of a page, information about the launch appears at
 * The status of the **Production Ready** flag (orange=not set; green=set).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
-

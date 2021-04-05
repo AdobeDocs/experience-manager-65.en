@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
+exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 ---
-
 # Backup and recovery strategy for AEM forms{#backup-and-recovery-strategy-for-aem-forms}
 
 If your AEM forms implementation stores additional custom data in a different database, you are responsible for implementing a strategy to back up this data and ensuring that it remains in sync with the AEM forms data. Also, the application must be designed so that it is robust enough to handle a scenario where the additional databases get out of sync. It is highly recommended that any database operation that is performed is done in the context of a transaction to help maintain a consistent state.

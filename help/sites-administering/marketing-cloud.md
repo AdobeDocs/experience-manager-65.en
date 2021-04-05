@@ -5,8 +5,8 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
 ---
-
 # Integrating with the Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
 
 The [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html), includes powerful web analytics and website optimization products that deliver actionable, real-time data and insights to drive successful online initiatives. It offers an integrated and open platform for online business optimization. The Cloud consists of integrated applications to collect and unleash the power of customer insight to optimize customer acquisition, conversion and retention efforts as well as the creation and distribution of content.
@@ -102,4 +102,3 @@ Learn about AEM and Livefyre:
 * [Getting Started with Livefyre](https://answers.livefyre.com/developers/getting-started)
 
 * [Livefyre and AEM](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
-

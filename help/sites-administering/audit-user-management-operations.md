@@ -10,9 +10,8 @@ topic-tags: Security
 content-type: reference
 discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
-
+exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 ---
-
 # How to Audit User Management Operations in AEM{#how-to-audit-user-management-operations-in-aem}
 
 ## Introduction {#introduction}
@@ -85,4 +84,3 @@ For example:
 ```
 10.05.2019 18:01:09.123 INFO [0:0:0:0:0:0:0:1 [1557491469096] POST /libs/cq/security/authorizables/POST HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction User 'test' was created
 ```
-

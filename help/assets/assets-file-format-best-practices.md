@@ -4,8 +4,8 @@ description: Best practices to process the various supported file types using [!
 contentOwner: AG
 role: Administrator
 feature: Asset Management,Developer Tools
+exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
 ---
-
 # Assets file format best practices {#assets-file-format-best-practices}
 
 [!DNL Adobe Experience Manager Assets] supports many proprietary and third-party file format libraries to cater to diverse file support requirements of users. The supported Adobe libraries include, [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer, and [!DNL Adobe InDesign Server]. In addition, [!DNL Experience Manager Assets] supports third-party libraries, including [!DNL ImageMagick], [!DNL TwelveMonkeys], and so on.

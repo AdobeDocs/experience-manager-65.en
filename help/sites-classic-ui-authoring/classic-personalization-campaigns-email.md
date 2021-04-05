@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
-
+exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 ---
-
 # E-mail Marketing{#e-mail-marketing}
 
 >[!NOTE]

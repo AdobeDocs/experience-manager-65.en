@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
+exl-id: 98c96349-f253-475f-b646-352269814a38
 ---
-
 # Strategy for backup and restore in a clustered environment {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
@@ -183,4 +183,3 @@ The publisher node does not have any primary-secondary relationship in a cluster
 1. Shutdown the cluster.
 1. Restore the Publish node using [Restoring the Backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup).
 1. Start the primary node followed by the secondary node of the author cluster.
-

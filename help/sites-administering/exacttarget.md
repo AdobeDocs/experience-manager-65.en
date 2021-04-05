@@ -10,8 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5b2f624d-e5b8-4484-a773-7784ebce58bd
 docset: aem65
+exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
 ---
-
 # Integrating with ExactTarget{#integrating-with-exacttarget}
 
 Integrating AEM with Exact Target lets you manage and send email created in AEM via Exact Target. It also allows you to use the lead management features of Exact Target via AEM forms on AEM pages.

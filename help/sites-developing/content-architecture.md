@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
+exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
 ---
-
 # Content Architecture{#content-architecture}
 
 ## Follow David's Model {#follow-david-s-model}
@@ -60,4 +60,3 @@ Adhering to naming conventions will add consistency to your code base, lowering 
 
     * All lower case
     * Word separation using hyphens
-

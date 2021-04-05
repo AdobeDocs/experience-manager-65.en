@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc0e8183-5d50-4fc0-997a-5f3168ba0d70
+exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
 ---
-
 # DB2 database: Running a process weekly{#db-database-running-a-process-weekly}
 
 If your AEM forms DB2 database begins to run slowly, running the following process on a weekly basis can improve its performance:

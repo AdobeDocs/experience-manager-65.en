@@ -10,8 +10,8 @@ discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
 ---
-
 # Using SOM expressions in adaptive forms{#using-som-expressions-in-adaptive-forms}
 
 Adaptive forms are modeled as AEM Page which is represented as JCR content structure in AEM repository. The key element of the content structure is guideContainer node. Below guideContainer, there is rootPanel which may contain nested panel and fields.
@@ -42,4 +42,4 @@ Within panels, you can access the feature from the panel toolbar. The feature fa
 
 Extracting SOM Expressions using panel toolbar
 
-Some APIs listed in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) use the SOM expression of an element. For example, to bring focus to a particular field in an adaptive form, pass the corresponding SOM expression to the `getFocus`API in `guideBridge`.  
+Some APIs listed in [GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html) use the SOM expression of an element. For example, to bring focus to a particular field in an adaptive form, pass the corresponding SOM expression to the `getFocus`API in `guideBridge`.

@@ -10,8 +10,8 @@ discoiquuid: a8aa77fe-5880-4c4e-9e1b-3c5a8772c29d
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
 ---
-
 # Separator component in adaptive forms{#separator-component-in-adaptive-forms}
 
 You can use the separator component to visually segregate panels of a form. You can define the overall appearance and style of a separator component by specifying the following properties of separator component:
@@ -34,4 +34,3 @@ To specify properties of a separator component:
 1. Click **Add Item** to specify another property and its value.
 1. Click **Preview** to preview the changes in the form.
 1. Click **OK** to confirm the changes or **Cancel** to exit the dialog without any changes.
-

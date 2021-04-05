@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
+exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 ---
-
 # Global document storage directory{#global-document-storage-directory}
 
 The *global document storage (GDS)* directory is a directory used to store long-lived files that are used within a process. These files include PDFs, policies, and form templates. Long-lived files are a critical part of the overall state of many AEM forms deployments. If some or all long-lived documents are lost or corrupted, the forms server may become unstable. Input documents for asynchronous job invocations are also stored in the GDS directory and must be available to process requests. It is important that you consider the reliability of the file system that hosts the GDS directory. User a redundant array of independent disks (RAID) or other technology as appropriate for your quality and level of service needs.
@@ -99,4 +99,3 @@ Modules and AEM forms archive files are packaged in JAR files. Because they are 
 >[!NOTE]
 >
 >Before you deploy the service containers, ensure that you created and configured the GDS directory. (See [Configuring the GDS directory](global-document-storage-directory.md#configuring-the-gds-directory))
-

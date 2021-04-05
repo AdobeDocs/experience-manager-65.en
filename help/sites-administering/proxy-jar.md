@@ -10,8 +10,8 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
+exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 ---
-
 # Proxy Server Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
 The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server keeps track of all the client-server interactions and outputs a log of the entire TCP communication. This allows you to monitor exactly what is going on, without having to access the main server.

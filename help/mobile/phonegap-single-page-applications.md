@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: a5b5e40e-2457-45fe-9632-baf5008fe8bf
+exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
 ---
-
 # Single Page Applications{#single-page-applications}
 
 >[!NOTE]

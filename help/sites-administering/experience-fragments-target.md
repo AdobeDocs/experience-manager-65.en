@@ -10,8 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
+exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 ---
-
 # Exporting Experience Fragments to Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]

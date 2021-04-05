@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
-
+exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 ---
-
 # Using Client-Side Libraries{#using-client-side-libraries}
 
 Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. Organizing and optimizing the serving of this code can be a complicated issue.

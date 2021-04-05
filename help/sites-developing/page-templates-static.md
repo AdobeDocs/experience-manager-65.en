@@ -10,9 +10,8 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
 docset: aem65
-
+exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
 ---
-
 # Page Templates - Static{#page-templates-static}
 
 A Template is used to create a Page and defines which components can be used within the selected scope. A template is a hierarchy of nodes that has the same structure as the page to be created, but without any actual content.

@@ -10,8 +10,8 @@ topic-tags: content
 content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
+exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 ---
-
 # How to Work With Packages{#how-to-work-with-packages}
 
 Packages enable the importing and exporting of repository content. For example, you can use packages to install new functionality, transfer content between instances, and back up repository content.
@@ -675,4 +675,3 @@ For more information, have a look at the [Software Distribution documentation](h
 >[!CAUTION]
 >
 >AEM package manager is not usable with Software Distribution for the moment, you download your packages to your local disk.
-

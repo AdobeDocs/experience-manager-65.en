@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
+exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 ---
-
 # View system information {#view-system-information}
 
 The System tab displays resource monitoring charts and information about the server that is running AEM forms. To access this information, in administration console, click Health Monitor in the upper-right corner of the page. If you are running AEM forms in a clustered environment, the information displayed is for the node selected from the Server list.

@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 role: Developer
+exl-id: 34069505-a6cf-4540-932b-604f81823178
 ---
-
 # Signature Service Java API Quick Start (SOAP) {#signature-service-java-api-quickstart-soap}
 
 Java API Quick Start(SOAP) is available for the Signature service:
@@ -1332,4 +1332,3 @@ The following Java code example removes a digital signature from a signature fie
  
  
 ```
-

@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
+exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 ---
-
 # Configuring watched folder endpoints {#configuring-watched-folder-endpoints}
 
 An administrator can configure a network folder, known as a *watched folder*, so that when a user places a file (such as a PDF file) in the watched folder, a configured service operation is invoked and manipulates the file. After the service performs the specified operation, it saves the modified file in a specified output folder.
@@ -428,4 +428,3 @@ For all services, you should adjust the batch size and repeat interval of the wa
 
     * One of the threads successfully finds the file and invokes the target service with the file. 
     * The second thread sees the file but fails when it tries to find out if the file is valid (read or write file), which causes false failures that indicate that the file cannot be processed because it is read-only. This happens only with a low repeat interval and a high batch size.
-

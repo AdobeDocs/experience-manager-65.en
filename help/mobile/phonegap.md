@@ -8,8 +8,8 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
+exl-id: 930a6950-150a-4670-ab48-250b655132fb
 ---
-
 # PhoneGap{#phonegap}
 
 >[!NOTE]
@@ -46,4 +46,3 @@ To learn about the roles and responsibilities of an Adminstrator and Developer, 
 
 * [Developing for Adobe PhoneGap Enterprise with AEM](/help/mobile/developing-in-phonegap.md)
 * [Administering Content for Adobe PhoneGap Enterprise with AEM](/help/mobile/administer-phonegap.md)
-

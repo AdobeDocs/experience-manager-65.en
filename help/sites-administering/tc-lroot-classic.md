@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
+exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
 ---
-
 # Creating a Language Root Using the Classic UI{#creating-a-language-root-using-the-classic-ui}
 
 The following procedure uses the classic UI to create a language root of a site. For more information, see [Creating a Language Root](/help/sites-administering/tc-prep.md#creating-a-language-root).
@@ -54,4 +54,3 @@ The following procedure uses the classic UI to create a language root of a site.
 
 1. Click OK to close the dialog.
 1. In the next dialog, click Yes to confirm the copy.
-

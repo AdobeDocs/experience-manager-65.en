@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 14de0652-717d-4c84-b7b4-b7b78f325baa
+exl-id: 734ed463-2441-49fc-bacb-deb40851af42
 ---
-
 # Set up the System information service {#set-up-the-system-information-service}
 
 The system information service provides REST APIs to retrieve information. To use the system information service, enable the REST endpoint from administration console. Perform the following steps to enable the REST endpoint:
@@ -20,4 +20,3 @@ The system information service provides REST APIs to retrieve information. To us
 1. On the Service Management page, click the **SystemInfo** service.
 1. In the list on the Endpoints tab, select REST, and click **Add**.
 1. On the Add REST Endpoint screen, click **Add**.
-

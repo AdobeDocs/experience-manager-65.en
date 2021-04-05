@@ -6,8 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 role: Business Practitioner, Administrator
+exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 ---
-
 # Invalidating the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
 
 Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast delivery to your customers. However, when you make updates to those assets, you want those changes to take effect immediately on your website. Purging or invalidating the CDN cache lets you quickly update assets that are delivered by Dynamic Media. Instead of waiting for the cache to expire using a TTL (Time To Live) value (default is ten hours), you can send a request from within Dynamic Media to have the cache expire within minutes.

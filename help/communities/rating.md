@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
+exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
 ---
-
 # Using Ratings {#using-ratings}
 
 The `Rating` component is used standalone or in conjunction with other Communities features. This component allows signed-in community members to express their opinions by rating content.

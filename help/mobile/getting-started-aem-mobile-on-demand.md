@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
+exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
 ---
-
 # AEM Mobile On-Demand{#aem-mobile-on-demand}
 
 >[!NOTE]
@@ -102,4 +102,3 @@ To get started with an Author's roles and responsibilities, See [Authoring AEM C
 >[!NOTE]
 >
 >An AEM Author is also responsible for setting up entitlement, creating cards and layouts, and sending push notifications. Also, for more information on methods for authoring content; managing articles and collections; creating banners, cards, and layouts in AEM Mobile, see [AEM Mobile On-Demand Portal](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
-

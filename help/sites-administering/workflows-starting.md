@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
+exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 ---
-
 # Starting Workflows{#starting-workflows}
 
 When administering workflows you can start them using a variety of methods:

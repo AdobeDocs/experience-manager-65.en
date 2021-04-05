@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 7cd7921e-6438-450a-a676-9da3c4a5ced3
+exl-id: 88356736-47c5-4878-a083-fdb526299d1e
 ---
-
 # Catalog Feature {#catalog-feature}
 
 The [`Enablement Assignments`](assignments.md) and `Enablement Catalog` components found in the Communities group in the components browser are components of an [enablement community](overview.md#enablement-community).

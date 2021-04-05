@@ -7,9 +7,8 @@ uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
-
+exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
 ---
-
 # We.Gov and We.Finance reference site walkthrough {#we-gov-reference-site-walkthrough}
 
 ## Pre-requisites {#pre-requisites}
@@ -516,4 +515,3 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. Wait for the page to load, and view the Analytics report data.
 
    ![Analytics Report Data](/help/forms/using/assets/analytics_report_data_updated.jpg)
-

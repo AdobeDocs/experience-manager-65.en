@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
-
+exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 ---
-
 # Your Inbox{#your-inbox}
 
 You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.

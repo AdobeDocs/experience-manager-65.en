@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
-
+exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 ---
-
 # Author a New Community Site{#author-a-new-community-site}
 
 ## Create a Community Site {#create-a-community-site}

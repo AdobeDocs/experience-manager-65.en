@@ -10,8 +10,8 @@ discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
 ---
-
 # Create an adaptive form using a set of adaptive forms{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
 ## Overview {#overview}
@@ -144,4 +144,3 @@ Perform the following steps to add an adaptive form as a child form using asset 
 
 1. Drag-drop the adaptive form you want to add as a child form. 
    [ ![Drag-drop the adaptive form in your site](assets/drag-drop.png)](assets/drag-drop-1.png)The adaptive form you drop is added as a child form.
-

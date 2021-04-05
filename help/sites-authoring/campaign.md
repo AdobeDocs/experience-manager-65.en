@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
+exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 ---
-
 # Working with Adobe Campaign Classic and Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 You can create email content in AEM and process it in Adobe Campaign emails. To do that, you must:

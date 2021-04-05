@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
+exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 ---
-
 # AEM Development - Guidelines and Best Practices{#aem-development-guidelines-and-best-practices}
 
 ## Guidelines for Using Templates and Components {#guidelines-for-using-templates-and-components}

@@ -4,8 +4,8 @@ description: Enhanced Smart Tags
 contentOwner: AG
 feature: Smart Tags, Search
 role: Business Practitioner
+exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 ---
-
 # Understand, apply, and curate Smart Tags {#enhanced-smart-tags}
 
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for digital assets of a particular class. Tagging assets with taxonomy-controlled vocabulary ensures that assets are easily identified and retrieved.

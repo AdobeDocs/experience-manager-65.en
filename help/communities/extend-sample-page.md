@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a5040371-3bc2-43bc-a103-7175c4c6252d
 docset: aem65
-
+exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
 ---
-
 # Add Comment to Sample Page  {#add-comment-to-sample-page}
 
 Now that the components for the custom comment system are in place in the application directory (/apps), it is possible to use the extended component. The instance of the comment system in a website to be affected must set its resourceType to be the custom comment system and include all necessary client libraries.

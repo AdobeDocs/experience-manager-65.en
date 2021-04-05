@@ -10,8 +10,8 @@ discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
 ---
-
 # Authoring in-context help for form fields{#authoring-in-context-help-for-form-fields}
 
 ## Introduction {#introduction}
@@ -64,4 +64,3 @@ In addition to the in-context help for form fields, you can specify help at a pa
 Adding help for panel displays a **?** icon next to the panel description. Clicking the icon displays the content added in the Help Content section of the panel edit dialog.
 
 ![Example of in-context help at form panel level](assets/photoshop-1.png)
-

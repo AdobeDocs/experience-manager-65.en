@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
+exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 ---
-
 # Developing the Bulk Editor{#developing-the-bulk-editor}
 
 This section describes how to develop the bulk editor tool and how to extend the Product List component, which is based on the bulk editor.

@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
-
+exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 ---
-
 # Adding Scene7 Features to your Page{#adding-scene-features-to-your-page}
 
 [Adobe Scene7](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.

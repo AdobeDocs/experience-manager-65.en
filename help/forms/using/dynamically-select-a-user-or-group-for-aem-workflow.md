@@ -7,8 +7,8 @@ uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
+exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
 ---
-
 # Dynamically select a user or group for AEM Forms-centric workflow steps {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Learn how to select a user or group for an AEM Forms workflow at the runtime. 
@@ -345,4 +345,3 @@ public class DummyRecipientChoser implements RecipientInfoSpecifier {
 
 }
 ```
-

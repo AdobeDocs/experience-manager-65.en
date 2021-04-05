@@ -10,9 +10,8 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
-
+exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 ---
-
 # Developing SPAs for AEM{#developing-spas-for-aem}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.

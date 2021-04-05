@@ -13,8 +13,8 @@ docset: aem65
 
 feature: Content Fragments
 role: Business Practitioner, Administrator
+exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
 ---
-
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
 [Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios.
@@ -372,4 +372,3 @@ When editing a variation you have access to the action for synchronizing the cur
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 1. Select **Synchronize**, the variation will updated and shown.
-

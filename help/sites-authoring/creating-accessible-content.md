@@ -1,8 +1,8 @@
 ---
 title: Creating Accessible Content for Adobe Experience Manager (WCAG 2.1 Conformance)
 description: Use AEM to help make web content accessible to, and usable by, persons with disabilities
+exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 ---
-
 # Creating Accessible Content (WCAG 2.1 Conformance) {#creating-accessible-content-wcag-conformance}
 
 The [Web Content Accessibility Guidelines (WCAG) 2.1](https://www.w3.org/TR/WCAG/), drawn up by [a working group of the World Wide Wec Consortium](https://www.w3.org/Consortium/activities#Accessibility_Guidelines_Working_Group), consist of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.

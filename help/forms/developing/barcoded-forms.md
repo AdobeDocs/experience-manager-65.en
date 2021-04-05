@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
+exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 ---
-
 # Working with barcoded forms {#working-with-barcoded-forms} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

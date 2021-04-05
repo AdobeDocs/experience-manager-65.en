@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
+exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 ---
-
 # Opting Into Adobe Analytics and Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM has an opt-in procedure to help you integrate with Adobe Analytics and Adobe Target. This is available out-of-the-box, as a pre-loaded task assigned to the administrator user group.
@@ -205,4 +205,3 @@ Which parameters you send depends on the following:
 
   curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
-

@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 feature: Upgrading
+exl-id: d555422e-dc97-4d45-9525-4299d22315e2
 ---
-
 # Forms Repository Restructuring in AEM 6.5{#forms-repository-restructuring-in-aem}
 
 As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Forms Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
@@ -123,4 +123,3 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 | **New location(s)** | `/libs/fd/fp` |
 | **Restructuring guidance** |Any references to the /etc templates should eventually be updated to point to their `/libs` counterparts. |
 | **Notes** |N/A |
-

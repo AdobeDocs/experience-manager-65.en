@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
-
+exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 ---
-
 # Adobe Campaign Components{#adobe-campaign-components}
 
 When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms. Both are described in this document.
@@ -495,4 +494,3 @@ In addition to [settings common to most Adobe Campaign components](#settings-com
 The following example shows a Text Field (Campaign) component being displayed.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
-

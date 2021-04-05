@@ -8,8 +8,8 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 role: Business Practitioner, Administrator
+exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 ---
-
 # Working with Selectors {#working-with-selectors}
 
 When working with an Interactive Image, Interactive Video, or Carousel Banner, you select assets and you select sites and products for hotspots and image maps to link to. When working with Image Sets, Spin Sets, and Multimedia Sets, you also select assets with the Asset Selector.
@@ -110,4 +110,3 @@ See also [Asset Picker](search-assets.md#assetpicker) for more information.
 1. Tap the check mark to select the asset. The asset is displayed.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-

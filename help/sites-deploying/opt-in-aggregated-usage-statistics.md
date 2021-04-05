@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
-
+exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
 ---
-
 # Opting Into Aggregated Usage Statistics Collection{#opting-into-aggregated-usage-statistics-collection}
 
 ## Introduction {#introduction}
@@ -71,4 +70,3 @@ You can opt-in (or opt-out) by using the Web Console as follows:
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 
 1. Click **Save**.
-

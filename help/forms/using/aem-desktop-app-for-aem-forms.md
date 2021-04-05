@@ -9,8 +9,8 @@ topic-tags: manage
 discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Administrator
+exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
 ---
-
 # AEM desktop app for AEM Forms {#aem-desktop-app-for-aem-forms}
 
 AEM desktop app lets you map the Adobe Experience Manager (AEM) Assets repository and AEM Forms binary files to a network directory on your system. You can view the synced assets and binary files in a file explorer and use various apps to edit the files as desired. Apart from viewing the files, you can also create, upload, and delete the binary files. You can also open, edit, and save files directly from software. For example, you can directly open and edit an XDP file from Designer. The changes that you make to the assets locally are reflected in AEM Assets repository and AEM Forms UI.
@@ -37,4 +37,3 @@ AEM desktop App uses WebDAV protocol on Microsoft Windows and SMB1 on Mac OS X t
 1. Open the app and connect to AEM Forms server.
 
    On successful connection, the app populates the `content/dam` and `content/dam/formsanddocuments` folders. Along with moving files from above folders to local folders and vice versa, you can use the app to move content between auto-populated folders.
-

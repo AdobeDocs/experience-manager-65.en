@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
+exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 ---
-
 # Sites Repository Restructuring in AEM 6.5 {#sites-repository-restructuring-in-aem}
 
 As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Sites Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
@@ -483,4 +483,3 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
  </tbody>
 </table>
-

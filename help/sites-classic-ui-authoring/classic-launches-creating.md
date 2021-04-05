@@ -10,8 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
+exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
 ---
-
 # Creating Launches{#creating-launches}
 
 Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page:
@@ -52,4 +52,3 @@ You can also delete a launch.
    >[!CAUTION]
    >
    >When deleting nested launches you should delete lower levels first.
-

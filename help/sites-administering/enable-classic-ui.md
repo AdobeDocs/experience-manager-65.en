@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
+exl-id: e25f0b7f-5f12-4363-b302-e51c81035c7d
 ---
-
 # Enabling Access to Classic UI{#enabling-access-to-classic-ui}
 
 With touch-enabled functionality reaching parity with and and in fact exceeding that of the classic UI in many areas of AEM, access to the classic interface through the touch-enabled interface is now disabled by default. The following pages explain how to re-enable this access if necessary.
@@ -21,4 +21,3 @@ With touch-enabled functionality reaching parity with and and in fact exceeding 
 >[!NOTE]
 >
 >For details on the status of feature parity with the classic UI, see the [Touch UI Feature Parity](/help/release-notes/touch-ui-features-status.md) document.
-

@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
-
+exl-id: d080932f-d5fb-482d-9329-62da5df10362
 ---
-
 # Integrating AEM forms workspace with Microsoft Office SharePoint Server{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **- Requirements** 
@@ -68,4 +67,3 @@ After you complete the above steps, your SharePoint site looks similar to the fo
 ![AEM Forms Workspace integrated with Microsoft Office SharePoint Server](assets/aem-forms-workspace.jpg)
 
 Figure 2 - AEM Forms Workspace integrated with Microsoft Office SharePoint Server
-

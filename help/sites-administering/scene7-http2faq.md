@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 ---
-
 # HTTP2 Delivery of Content FAQ{#http-delivery-of-content-faq}
 
 Adobe is excited to announce the availability of HTTP/2 delivery of content. When using HTTP/2 you will notice an overall performance increase.

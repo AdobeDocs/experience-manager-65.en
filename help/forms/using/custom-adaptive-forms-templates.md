@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: affba49e-9712-4d29-858b-2f8ec4f2b1f1
 docset: aem65
-
+exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
 ---
-
 # Creating a custom adaptive form template{#creating-a-custom-adaptive-form-template}
 
 >[!NOTE]
@@ -149,4 +148,3 @@ The `head.jsp` file of the `enrollmentpage` component for the new template inclu
 >[!NOTE]
 >
 >Theme refers to a client library that is included in the page component used to render an adaptive form. The client library mainly governs the appearance of an adaptive form.
-

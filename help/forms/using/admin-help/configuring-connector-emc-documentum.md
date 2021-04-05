@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
+exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 ---
-
 # Configuring Connector for EMC Documentum {#configuring-connector-for-emc-documentum}
 
 Connector for EMC Documentum enables communication between AEM forms and EMC Documentum. For additional background information, see "Connectors for ECM" in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
@@ -110,4 +110,3 @@ Some manual steps are required to ensure that the Request for Sharing of Task Qu
 1. In the Variables view, open the properties of the "theForm" variable and change the URI to match the path where you placed the QueueSharing.swf file in step 5.
 1. Save the process.
 1. Migrate the process to the production environment according to your organization's policy.
-

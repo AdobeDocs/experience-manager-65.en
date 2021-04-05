@@ -4,8 +4,8 @@ description: Learn how to create references to digital assets from within [!DNL 
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Management
+exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 ---
-
 # Manage compound and multi-page assets {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] can identify if an uploaded file contains references to assets that already exist in the repository. This feature is available for supported file formats only. If the uploaded asset contains any references to [!DNL Experience Manager] assets, a bidirectional link is created between the uploaded and referenced assets.

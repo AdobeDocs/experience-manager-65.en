@@ -10,9 +10,8 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 82b8a5f4-583b-47ba-9579-b47364b56aa2
 docset: aem65
-
+exl-id: ee5df2c8-ab31-4be9-8ede-3c96f26fc626
 ---
-
 # Compiling your Test Plan{#compiling-your-test-plan}
 
 The individual test cases will then be amalgamated into your Test Plan, which will also define:
@@ -42,4 +41,3 @@ For reporting purposes you will want to provide an overview of the testing resul
 * Percentage of tests already covered.
 * Percentage success / failure.
 * Specific figures related to the priority tests.
-

@@ -10,8 +10,8 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 
 feature: Interactive Communication
+exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
 ---
-
 # Texts in Interactive Communications{#texts-in-interactive-communications}
 
 ## Overview {#overview}
@@ -271,4 +271,3 @@ The Find and Replace feature allows you to search for (and replace) any string o
    You can also tap Replace all to replace all the matches in a one go.
 
    Find & Replace also includes a powerful regular expression search. To use regex in your search, select **[!UICONTROL Reg ex]** and then tap **[!UICONTROL Find]** or **[!UICONTROL Replace]**.
-

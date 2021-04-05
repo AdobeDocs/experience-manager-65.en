@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
+exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 ---
-
 # Configure the LDAP bind password{#configure-the-ldap-bind-password}
 
 To avoid security risks, the bind password field in the exported configuration file (config.xml) is not configured. Before you import the configuration file into another system, ensure that you configure this password. This password overrides an existing password that is stored in the database. A null password does not override an existing non-null password value.
@@ -49,4 +49,3 @@ To avoid security risks, the bind password field in the exported configuration f
 
 1. To import the updated file, in User Management, click Configuration &gt; Import And Export Configuration Files.
 1. Click Browse to find the file, click Import, and then click OK.
-

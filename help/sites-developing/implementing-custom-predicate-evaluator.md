@@ -10,9 +10,8 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
-
+exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
 ---
-
 # Implementing a Custom Predicate Evaluator for the Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 This section describes how to extend the [Query Builder](/help/sites-developing/querybuilder-api.md) by implementing a custom predicate evaluator.

@@ -8,9 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
-
+exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 ---
-
 # Forms-centric workflow on OSGi - Step Reference{#forms-centric-workflow-on-osgi-step-reference}
 
 ## Forms Workflow Steps {#forms-workflow-steps}

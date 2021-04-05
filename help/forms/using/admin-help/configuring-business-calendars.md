@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
+exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
 ---
-
 # Configuring Business Calendars {#configuring-business-calendars}
 
 *Business calendars* define business and non-business days (for example, statutory holidays, weekends, and company shutdown days) for your organization. When using business calendars, AEM forms skips non-business days when performing certain date calculations. In Workbench, you can specify whether to use business calendars for user-associated events such as task reminders, deadlines, and escalations or for actions not associated with users, such as Timer Events and the Wait Service.
@@ -142,4 +142,3 @@ You can remove any business calendars that your organization no longer requires.
 1. In administration console, click Services &gt; Forms workflow &gt; Business Calendars.
 1. Select the calendar.
 1. Click Delete.
-

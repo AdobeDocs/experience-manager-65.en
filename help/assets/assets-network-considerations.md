@@ -4,8 +4,8 @@ description: Discusses network considerations when designing an [!DNL Adobe Expe
 contentOwner: AG
 role: Architect, Administrator
 feature: Developer Tools
+exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 ---
-
 # [!DNL Assets] network considerations {#assets-network-considerations}
 
 Understanding your network is as important as understanding [!DNL Adobe Experience Manager Assets]. The network can affect upload, download, and user experiences. Diagramming your network topology helps identify choke points and sub-optimized areas in the network that you must fix to improve network performance and user experience.

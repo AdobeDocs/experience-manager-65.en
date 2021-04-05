@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
+exl-id: 1a4e8f20-0644-4c96-9f52-f7a59521eac9
 ---
-
 # Starting and stopping WebSphere Application Server {#starting-and-stopping-websphere-application-server}
 
 Several procedures require you to stop or start the instance of WebSphere where you want to deploy AEM forms products. If you are unsure whether the application server has started, you can first view the status of WebSphere Application Server.
@@ -38,4 +38,3 @@ Several procedures require you to stop or start the instance of WebSphere where 
 
     * (Windows) `stopServer.bat`*server_name*
     * (Linux, UNIX) ./ `stopServer.sh`*server_name*
-

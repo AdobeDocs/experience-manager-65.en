@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
-
+exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 ---
-
 # Configuring your account environment{#configuring-your-account-environment}
 
 AEM provides you with the capability to configure your account and certain aspects of the author environment.

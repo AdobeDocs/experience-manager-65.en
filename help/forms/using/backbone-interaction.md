@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
-
+exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
 ---
-
 # Backbone interaction{#backbone-interaction}
 
 Backbone is a library that helps in creating and following MVC architecture in web applications. The basic idea of Backbone is to organize your interface into logical views, backed by models, each of which can be updated independently when the model changes, without having to redraw the page. For more information about Backbone, see [https://backbonejs.org](https://backbonejs.org/).

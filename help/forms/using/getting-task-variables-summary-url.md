@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
+exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 ---
-
 # Getting Task Variables in Summary URL {#getting-task-variables-in-summary-url}
 
 The summary page displays task-related information. This article describes how you can reuse task-related information in the summary page.

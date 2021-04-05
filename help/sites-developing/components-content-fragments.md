@@ -11,9 +11,8 @@ content-type: reference
 discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
-
+exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 ---
-
 # Components for Content Fragments{#components-for-content-fragments}
 
 ## Components for Fragment Authoring {#components-for-fragment-authoring}

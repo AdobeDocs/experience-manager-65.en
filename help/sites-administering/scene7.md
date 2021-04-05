@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
 ---
-
 # Integrating with Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}
 
 Adobe Dynamic Media Classic is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
@@ -609,4 +609,3 @@ If you are having trouble integrating Experience Manager with Dynamic Media Clas
 >Importing assets from an existing Dynamic Media Classic company account can take a long time to show in Experience Manager. Ensure that you designate a folder in Dynamic Media Classic that does not have too many assets. For example, the root folder often has too many assets.
 >
 >If you would like to test drive the integration, have the root folder point to a subfolder only, instead of the entire company.
-

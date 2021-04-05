@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
+exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 ---
-
 # Monitoring AEM forms deployments {#monitoring-aem-forms-deployments}
 
 You can monitor AEM forms deployments from both a system level and an internal level. You can use specialist management tools such as HP OpenView, IBM Tivoli, and CA UniCenter and a third-party JMX monitor called *JConsole* to specifically monitor Java activity. Implementation of a monitoring strategy improves availability, reliability, and performance of your AEM forms deployments.
@@ -148,4 +148,3 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
    ```
 
 1. Restart WebSphere.
-

@@ -4,8 +4,8 @@ description: Learn how the XMP writeback feature propagates the metadata changes
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Metadata
+exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 ---
-
 # XMP writeback to renditions {#xmp-writeback-to-renditions}
 
 This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. When you change the metadata for an asset from within Assets or while uploading the asset, the changes are initially stored in the metadata node in the asset hierarchy. 

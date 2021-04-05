@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
+exl-id: a2bc9a50-6455-4703-8829-964fab313e96
 ---
-
 # Getting Started with AEM Mobile{#getting-started-with-aem-mobile}
 
 >[!NOTE]

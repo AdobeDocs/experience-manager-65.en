@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
-
+exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 ---
-
 # Managing Activities{#managing-activities}
 
 The Activities console enables you to create, organize, and manage the marketing [activities](/help/sites-authoring/personalization.md#activities) of your brands:
@@ -228,4 +227,3 @@ To avoid synchonization problems, always use unique names for activities. If an 
 >If you use the same name in the same campaign type, you will overwrite the existing campaign.
 >
 >If while synchronizing, you encounter the error "Request Failed. `thirdPartyId` already exists," change the name of the campaign and synchronize again.
-

@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 feature: Language Copy
+exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 ---
-
 # Language Copy Wizard{#language-copy-wizard}
 
 The Language Copy wizard is a guided experience for creating and instrumenting multilingual content structure. It is now much simpler and quicker to create a language copy.
@@ -54,4 +54,3 @@ To access this wizard:
 1. The **Create** button ends the wizard.
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)
-

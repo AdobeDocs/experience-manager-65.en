@@ -11,8 +11,8 @@ discoiquuid: a81cdd53-f0fb-4ac5-b2ec-c19aeee7186e
 docset: aem65
 
 feature: Correspondence Management
+exl-id: f044ed75-bb72-4be1-aef6-2fb3b2a2697b
 ---
-
 # Manage agent signature images{#manage-agent-signature-images}
 
 ## Overview {#overview}
@@ -85,4 +85,3 @@ You can also override the default custom function to define your own logic for f
 1. When the letter is rendered, you can see you signature in the letter preview in the image field according to the layout.
 
    ![Agent signature image in the letter](assets/letterwithsignature.png)
-

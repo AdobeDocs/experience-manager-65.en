@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
+exl-id: 01a4faf0-ec6e-475b-9909-c35298e2fcaf
 ---
-
 # Delete a domain {#delete-a-domain}
 
 Use the Domain Management page to mark an existing domain as obsolete.
@@ -19,4 +19,3 @@ If you create a domain with the same name as a deleted domain, the deleted domai
 
 1. In administration console, click **[!UICONTROL Settings > User Management > Domain Management]**.
 1. Select the check box for the domain to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
+exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 ---
-
 # Configuring Undo for Page Editing{#configuring-undo-for-page-editing}
 
 The [OSGi service](/help/sites-deploying/configuring-osgi.md)  **Day CQ WCM Undo Configuration** ( `com.day.cq.wcm.undo.UndoConfigService`) exposes several properties that control the behavior of the undo and redo commands for editing pages.
@@ -142,4 +142,3 @@ The following lists the properties as displayed in the Web console, followed by 
 
     * **Default**: The property is populated with several component operations.
     * **Type**: `String[]`
-

@@ -12,8 +12,8 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 
 role: Administrator
+exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 ---
-
 # Installing and configuring Designer{#installing-and-configuring-designer}
 
 ## Pre-requisites {#pre-requisites}

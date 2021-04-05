@@ -11,8 +11,8 @@ discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 
 feature: Form Data Model
+exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
 ---
-
 # [!DNL AEM Forms] Data Integration {#aem-forms-data-integration}
 
  ![](do-not-localize/data-integeration.png)
@@ -53,4 +53,3 @@ Review the following to get started, understand, and implement data integration.
 * [Create form data model](../../forms/using/create-form-data-models.md)
 * [Work with form data model](../../forms/using/work-with-form-data-model.md)
 * [Use form data model](../../forms/using/using-form-data-model.md)
-

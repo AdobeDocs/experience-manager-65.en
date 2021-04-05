@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
+exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
 ---
-
 # Reviews Essentials {#reviews-essentials}
 
 This feature consists of two components that work together: reviews and review summary.
@@ -87,4 +87,3 @@ See:
 * [SRP and UGC Essentials](srp-and-ugc.md) - SRP utility methods and examples.
 * [Accessing UGC with SRP](accessing-ugc-with-srp.md) - Coding guidelines.
 * [SocialUtils Refactoring](socialutils.md) - Mapping deprecated utility methods to current SRP utility methods.
-

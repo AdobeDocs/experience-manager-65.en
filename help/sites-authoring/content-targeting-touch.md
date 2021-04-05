@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
-
+exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 ---
-
 # Authoring Targeted Content Using Targeting Mode{#authoring-targeted-content-using-targeting-mode}
 
 Author targeted content using Targeting mode of AEM. Targeting mode and the Target component provide tools for creating content for experiences:

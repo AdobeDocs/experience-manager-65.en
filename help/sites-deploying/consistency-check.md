@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configuring
+exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
 ---
-
 # Consistency and Traversal Checks{#consistency-and-traversal-checks}
 
 When upgrading there can be problems due to workspace inconsistencies. You can either run a test upgrade to see if this will be an issue, or run the consistency checks as preventive action.
@@ -36,4 +36,3 @@ On a default installation, it is found here:  **[|Show Me|](http://localhost:450
 In the **Operations** section of the page you will find two methods: **`traversalCheck`** and **`consistencyCheck`**. To execute a check, click on the operation and enter the desired parameters.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
-

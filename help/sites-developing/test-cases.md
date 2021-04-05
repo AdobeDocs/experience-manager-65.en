@@ -10,9 +10,8 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
-
+exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 ---
-
 # Defining your Test Cases{#defining-your-test-cases}
 
 Your test cases should be based upon the:

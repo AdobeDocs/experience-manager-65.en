@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
-
+exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 ---
-
 # Adding attachments{#adding-attachments}
 
 ## Adding attachments in forms synced with AEM Forms Workflow server (AEM Forms on JEE) {#adding-annotations}

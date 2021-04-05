@@ -11,9 +11,8 @@ content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
-
+exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 ---
-
 # Developing AEM Components{#developing-aem-components}
 
 AEM components are used to hold, format, and render the content made available on your webpages.

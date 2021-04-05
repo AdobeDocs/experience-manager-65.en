@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
+exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 ---
-
 # Application Create and Configuration Actions{#application-create-and-configuration-actions}
 
 >[!NOTE]

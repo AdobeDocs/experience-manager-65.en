@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
+exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 ---
-
 # Software Architecture{#software-architecture}
 
 ## Design for upgrades {#design-for-upgrades}

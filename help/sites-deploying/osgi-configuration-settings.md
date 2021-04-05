@@ -12,8 +12,8 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 
 feature: Configuring
+exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 ---
-
 # OSGi Configuration Settings{#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of AEM. It is used to control the composite bundles of AEM and their configuration.

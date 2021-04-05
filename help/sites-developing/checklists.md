@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
+exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 ---
-
 # Checklists{#checklists}
 
 The following checklist highlights some of the main issues - please read the other sections related to Testing for full details.

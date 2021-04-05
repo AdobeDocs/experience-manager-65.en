@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
+exl-id: c6f216d4-781c-4356-b9f0-3324903a28e7
 ---
-
 # AEM Forms Workspace Architecture {#aem-forms-workspace-architecture}
 
 AEM Forms workspace is a web application hosted on CRX™. When workspace is opened in a browser, a CRX resource is accessed, and the application is rendered as HTML page in the browser.

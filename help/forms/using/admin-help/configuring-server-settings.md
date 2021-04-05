@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
+exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 ---
-
 # Configuring Server Settings {#configuring-server-settings}
 
 The Server Settings page provides access to various settings for forms workflow:
@@ -282,4 +282,3 @@ On the BAM Configuration Settings page, you set the connections to the server th
 1. In the Server Port box, type the port number used by the forms server.
 1. In the User Name and Password boxes, type the appropriate user ID and password to access the BAM Server. The default user name is CognosNowAdmin and the default password is manager.
 1. Click Save.
-

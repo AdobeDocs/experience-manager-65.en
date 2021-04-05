@@ -1,8 +1,8 @@
 ---
 title: The Link Checker
 description: The Link Checker helps validate both internal and external links and allows link rewriting.
+exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 ---
-
 # The Link Checker {#the-link-checker}
 
 Content authors should not have to concern themselves with validating every link that they include in their content pages.

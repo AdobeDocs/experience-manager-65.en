@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
-
+exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 ---
-
 # Deploying Communities {#deploying-communities}
 
 ## Prerequisites {#prerequisites}
@@ -402,4 +401,3 @@ If using a Dispatcher, see:
 * Visit [Developing Communities](/help/communities/communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
 
 * Visit [Authoring Communities Components](/help/communities/author-communities.md) to learn how to author with and configure Communities components.
-

@@ -10,8 +10,8 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
+exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
 ---
-
 # Repository Restructuring in AEM 6.5{#repository-restructuring-in-aem}
 
 ## Introduction {#introduction}

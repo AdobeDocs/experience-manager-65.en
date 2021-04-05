@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Administrator
+exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
 ---
-
 # Configuring Email {#configuring-email}
 
 AEM Communities uses email for:
@@ -216,4 +216,3 @@ Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 The red triangles indicate the modified properties. Be sure to save the changes:
 
 * Select **[!UICONTROL Save All]**.
-

@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: deae8ecb-a2ee-4442-97ca-98bfd1b85738
 docset: aem65
-
+exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 ---
-
 # Custom Standalone Install{#custom-standalone-install}
 
 This section describes the options available when installing a standalone AEM instance. You can also read [Storage Elements](/help/sites-deploying/storage-elements-in-aem-6.md) for more information on choosing the backend storage type after freshly installing AEM 6.

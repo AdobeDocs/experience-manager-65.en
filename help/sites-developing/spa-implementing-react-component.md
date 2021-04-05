@@ -10,9 +10,8 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
-
+exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 ---
-
 # Implementing a React Component for SPA{#implementing-a-react-component-for-spa}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.

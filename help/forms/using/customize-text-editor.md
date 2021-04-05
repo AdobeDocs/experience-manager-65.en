@@ -11,8 +11,8 @@ discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 
 feature: Correspondence Management
+exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
 ---
-
 # Customize text editor{#customize-text-editor}
 
 ## Overview {#overview}
@@ -189,4 +189,3 @@ For example, the Sazanami Mincho Medium font added in the [Customize fonts by ed
 >[!NOTE]
 >
 >To see text in Japanese, you first need to enter the text with Japanese characters. The application of a custom Japanese font only formats the text in a certain way. Application of a custom Japanese font does not change English or other characters to Japanese characters.
-

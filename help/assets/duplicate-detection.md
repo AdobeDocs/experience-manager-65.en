@@ -4,8 +4,8 @@ description: Learn how to enable the detection of duplicate assets in Experience
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Management,Asset Reports
+exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
 ---
-
 # Enable detection of duplicate assets {#enable-detection-of-duplicate-assets}
 
 If you attempt to upload an asset that exists in [!DNL Adobe Experience Manager Assets], the duplicate detection feature identifies it as duplicate. Duplicate detection is disabled by default. To enable the feature, do the following steps:

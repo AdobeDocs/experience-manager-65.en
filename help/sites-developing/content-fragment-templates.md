@@ -10,9 +10,8 @@ topic-tags: platform
 content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
-
+exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
 ---
-
 # Content Fragment Templates{#content-fragment-templates}
 
 >[!CAUTION]

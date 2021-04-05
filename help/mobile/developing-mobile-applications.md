@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
+exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
 ---
-
 # Developing Mobile Applications in AEM {#developing-mobile-applications-in-aem}
 
 >[!NOTE]

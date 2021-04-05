@@ -4,8 +4,8 @@ description: Use assets available on a remote [!DNL Adobe Experience Manager Ass
 contentOwner: AG
 role: Business Practitioner, Administrator, Leader
 feature: Connected Assets,User and Groups
+exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 ---
-
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work in tandem. Another reason can be acquisitions leading to heterogenous infrastructure that the parent company wants to use together.

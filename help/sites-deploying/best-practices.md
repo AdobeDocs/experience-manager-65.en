@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
+exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 ---
-
 # Deploying Best Practices{#deploying-best-practices}
 
 Deploying best practices describe how to deploy or maintain AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
@@ -108,4 +108,3 @@ Best practices around performance are listed here:
   </tr>
  </tbody>
 </table>
-

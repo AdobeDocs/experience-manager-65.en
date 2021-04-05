@@ -9,8 +9,8 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 feature: Commerce Integration Framework
+exl-id: c86f96fc-0b4d-40d4-8d1d-6e143e765455
 ---
-
 # eCommerce Overview{#ecommerce-overview}
 
 AEM generic eCommerce is available as part of a standard installation and provides you with the full functionality of the eCommerce framework.
@@ -38,4 +38,3 @@ For AEM and Magento, please see [AEM and Magento integration](https://www.adobe.
 >For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/sites-administering/ecommerce.md).
 >
 >For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
-

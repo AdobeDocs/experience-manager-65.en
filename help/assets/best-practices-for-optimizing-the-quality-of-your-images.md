@@ -9,8 +9,8 @@ content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
 role: Business Practitioner, Administrator
+exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 ---
-
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}
 
 Optimizing image quality can be a time consuming process as many factors contribute to rendering acceptable results. The outcome is partly subjective because individuals perceive image quality differently. Structured experimentation is key.
@@ -122,4 +122,3 @@ As you experiment, you may also find the following general suggestions helpful t
 * Try out and test different parameters in real time, directly on a URL.
 * As a best practice, remember that you can group Dynamic Media Image Serving commands into an image preset. An image preset is basically URL command macros with custom preset names such as `$thumb_low$` and `&product_high$`. The custom preset name in a URL path makes a call to these presets. Such functionality helps you manage commands and quality settings for different usage patterns of images on your website and shortens the overall length of URLs.
 * AEM also provides more advanced ways to tune image quality, such as applying sharpening images on ingestion. For advanced use cases where this may be an option to further tune and optimize rendering results, [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) can help you with customized insight and best practices.
-

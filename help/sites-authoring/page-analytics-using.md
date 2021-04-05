@@ -11,9 +11,8 @@ topic-tags: site-features
 discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
-
+exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 ---
-
 # Seeing Page Analytics Data{#seeing-page-analytics-data}
 
 Use page analytics data to gauge the effectiveness of the page content.

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
+exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
 ---
-
 # Authoring a Page for Mobile Devices{#authoring-a-page-for-mobile-devices}
 
 When authoring a mobile page, the page is displayed in a way that emulates the mobile device. When authoring the page, you can switch between several emulators to see what the end-user sees when accessing the page.
@@ -39,4 +39,3 @@ The page looks similar to the following:
 >[!NOTE]
 >
 >The emulators are disabled when a page on the author instance is requested from a mobile device.
-

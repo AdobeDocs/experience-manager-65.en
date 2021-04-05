@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
+exl-id: a9879445-d626-4279-8a95-a9009294b483
 ---
-
 # Saving an HTML5 form as a draft {#saving-an-html-form-as-a-draft}
 
 You can save an HTML5 form as a draft and resume filling the form at a later stage. Forms Portal allows any user to save and restore an HTML5 form. To enable the Save as Draft functionality, add the following configurations to the profile node:

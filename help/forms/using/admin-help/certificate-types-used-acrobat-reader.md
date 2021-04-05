@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
+exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
 ---
-
 # Certificate types used by Acrobat Reader DC extensions {#certificate-types-used-by-acrobat-reader-dc-extensions}
 
 The Certificate Viewer provides the following information about the certificate:
@@ -219,4 +219,3 @@ The permitted Acrobat Reader DC extensions usage rights consist of one or more s
 >[!NOTE]
 >
 >Acrobat Reader DC extensions usage rights can be licensed from Adobe only in certain combinations that work together. It is not possible to license these capabilities independently. For information about the available combinations of usage rights, contact an AEM forms account representative.
-
