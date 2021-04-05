@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
+exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 ---
-
 # Configure SAML service provider settings{#configure-saml-service-provider-settings}
 
 Security Assertion Markup Language (SAML) is one of the options that you can select when configuring authorization for an enterprise or hybrid domain. SAML is primarily used to support SSO across multiple domains. When SAML is configured as your authentication provider, users log in and authenticate to AEM forms via a specified third-party identity provider (IDP).
@@ -56,4 +56,3 @@ For an explanation of SAML, see [Security Assertion Markup Language (SAML) V2.0 
     `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Click Save.
-

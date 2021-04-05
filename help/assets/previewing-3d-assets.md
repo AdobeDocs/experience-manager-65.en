@@ -6,8 +6,8 @@ docset: aem65
 
 feature: 3D Assets
 role: Business Practitioner
+exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 ---
-
 # Previewing 3D assets in AEM{#previewing-3d-assets-aem}
 
 Adobe Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process.

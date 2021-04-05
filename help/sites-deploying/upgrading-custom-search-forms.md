@@ -10,8 +10,8 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
+exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 ---
-
 # Upgrading Custom Search Forms{#upgrading-custom-search-forms}
 
 In AEM 6.2, the location where Customized Search Forms are stored in the repository has changed. Upon upgrading, they are moved from their location in 6.1 at:

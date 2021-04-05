@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
-
+exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 ---
-
 # First Steps for Authors{#first-steps-for-authors}
 
 This section gives you an overview of the main tasks that you will be using when [starting to author content](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) with Adobe Experience Manager (AEM).

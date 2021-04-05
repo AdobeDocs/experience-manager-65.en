@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
+exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
 ---
-
 # Creating Flash Builder applications that perform SSO authentication using HTTP tokens {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

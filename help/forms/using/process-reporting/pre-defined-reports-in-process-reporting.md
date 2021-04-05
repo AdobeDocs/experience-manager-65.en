@@ -9,9 +9,8 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d93375e-ec37-4445-96ea-d315676787b4
 docset: aem65
-
+exl-id: 34e55676-6332-4616-aecc-bcc8cc1e8a29
 ---
-
 # Pre-defined reports in Process Reporting {#pre-defined-reports-in-process-reporting}
 
 ## Pre-defined Reports in Process Reporting {#pre-defined-reports-in-process-reporting-1}

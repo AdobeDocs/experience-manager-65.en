@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 feature: Correspondence Management
+exl-id: f7f5eb0d-a283-45ea-84d3-d6375d2bb95b
 ---
-
 # Configuring a Correspondence Management solution {#configuring-a-correspondence-management-solution}
 
 ## Defining author instance URL for VersionRestoreManagerImpl {#defining-author-instance-url-for-versionrestoremanagerimpl}

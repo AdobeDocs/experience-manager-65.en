@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
-
+exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
 ---
-
 # Authoring Nested Groups{#authoring-nested-groups}
 
 ## Creating Groups on Author {#creating-groups-on-author}
@@ -161,4 +160,3 @@ It is possible to experience the different groups when signed in, for example wi
   * Can not see restricted (secret) groups.
 
 Access the Communities [Members and Groups consoles](/help/communities/members.md) on author to add other users to various member groups that correspond to the community groups.
-

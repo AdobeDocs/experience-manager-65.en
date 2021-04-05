@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
+exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
 ---
-
 # Tracking processes {#tracking-processes}
 
 On the Tracking page, you can search for active or completed processes that you started or participated in and view the process details. The process details show the tasks, assignments, and forms that were part of the process. You can also start new processes using form data from a process that you previously initiated.

@@ -7,8 +7,8 @@ uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
+exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 ---
-
 # Adding and configuring users {#adding-and-configuring-users}
 
 User and group information is maintained in a third-party storage system, such as an LDAP directory. User Management does not write to the third-party storage system. Instead, User Management synchronizes the user and group information with its own database

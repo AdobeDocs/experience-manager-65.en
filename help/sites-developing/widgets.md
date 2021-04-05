@@ -10,9 +10,8 @@ topic-tags: components
 content-type: reference
 discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
-
+exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 ---
-
 # Using and Extending Widgets (Classic UI){#using-and-extending-widgets-classic-ui}
 
 >[!NOTE]

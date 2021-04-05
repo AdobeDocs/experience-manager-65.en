@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
+exl-id: a6e59334-09e2-4bb8-b445-1868035da556
 ---
-
 # Mobile with Content Sync{#mobile-with-content-sync}
 
 >[!NOTE]
@@ -381,4 +381,3 @@ To learn about the roles and responsibilities of an Administrator and an Author,
 
 * [Authoring AEM Content for AEM Mobile On-Demand Services](/help/mobile/mobile-apps-ondemand.md)
 * [Administering Content to Use AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
-

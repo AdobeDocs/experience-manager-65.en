@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
+exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 ---
-
 # Customizing Pages shown by the Error Handler{#customizing-pages-shown-by-the-error-handler}
 
 AEM comes with a standard error handler for handling HTTP errors; for example, by showing:
@@ -90,4 +90,3 @@ To handle 500 errors, the file name of the error handler script must be the same
 >For a custom error-handler, responses with code 500 are needed - so the [CQ WCM Debug Filter needs to be disabled](/help/sites-deploying/osgi-configuration-settings.md). This ensures that the response code 500 is returned, which in turn triggers the correct Sling error-handler.
 >
 >On a publish instance, CQ WCM Debug Filter is *always* disabled (even if configured as enabled).
-

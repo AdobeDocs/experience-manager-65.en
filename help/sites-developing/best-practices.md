@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
+exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 ---
-
 # Best Practices{#best-practices}
 
 ## Best Practices for Developers - Getting Started {#best-practices-for-developers-getting-started}
@@ -97,4 +97,3 @@ HTML Template Language (HTL) is a new HTML templating system, introduced with AE
 >
 >Following multi-part tutorial might be of interest for the best practice to setup a new AEM project, detailing the Core Components, Editable Templates, Client Libraries and component development:
 >[Getting Started with AEM Sites - WKND Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
-

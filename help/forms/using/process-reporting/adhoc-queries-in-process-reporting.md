@@ -9,9 +9,8 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
-
+exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 ---
-
 # Ad-hoc Queries in Process Reporting{#ad-hoc-queries-in-process-reporting}
 
 ## Ad-hoc queries in Process Reporting {#ad-hoc-queries-in-process-reporting-1}

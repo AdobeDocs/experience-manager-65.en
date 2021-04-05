@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
+exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 ---
-
 # Extracting Strings for Translating{#extracting-strings-for-translating}
 
 Use xgettext-maven-plugin to extract strings from your source code that need translating. The Maven plugin extracts strings to an XLIFF file that you send for translating. Strings are extracted from the following locations:
@@ -136,4 +136,3 @@ mvn xgettext:extract
 * `potentials.xliff`: "potential" candidates that are not extracted, but might be human readable strings that need translation (can be ignored, still produces a huge amount of false positives)
 * `strings.xliff`: flattened xliff file, to be imported into ALF
 * `backrefs.txt`: allows for quick lookup of source code locations for a given string
-

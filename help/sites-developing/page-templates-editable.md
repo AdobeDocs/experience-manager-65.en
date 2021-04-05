@@ -10,9 +10,8 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
-
+exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 ---
-
 # Page Templates - Editable {#page-templates-editable}
 
 Editable templates have been introduced to:

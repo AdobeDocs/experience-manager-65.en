@@ -4,8 +4,8 @@ description: Create, read, update, delete, manage digital assets using HTTP API 
 contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 ---
-
 # [!DNL Assets] HTTP API {#assets-http-api}
 
 ## Overview {#overview}

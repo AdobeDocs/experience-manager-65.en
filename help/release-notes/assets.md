@@ -1,8 +1,8 @@
 ---
 title: Release Notes of [!DNL Adobe Experience Manager Assets] 6.5.
 description: The new capabilities and enhancements to [!DNL Adobe Experience Manager] 6.5 [!DNL Assets].
+exl-id: 6d9c9f09-ea42-43fb-98f7-12ce82d308bf
 ---
-
 # [!DNL Adobe Experience Manager Assets] release notes {#aem-assets-release-notes}
 
 Here are the key features and highlights of the [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] release.

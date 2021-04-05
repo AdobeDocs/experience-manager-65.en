@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
+exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
 ---
-
 # Adaptive Template Rendering{#adaptive-template-rendering}
 
 The adaptive template rendering provides a way to manage a page with variations. Originally useful to deliver various HTML output for mobile devices (e.g. feature phone vs. smart phone), this feature is useful when experiences have to be delivered to various devices that need different markup or HTML output.
@@ -75,4 +75,3 @@ In our example, when editing a page based on the **Experience Page** template, a
 The page can also be called directly using this selector.
 
 ![chlimage_1-161](assets/chlimage_1-161.png)
-

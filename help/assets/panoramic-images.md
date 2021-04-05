@@ -11,8 +11,8 @@ docset: aem65
 
 feature: Panoramic Images,Asset Management
 role: Business Practitioner, Administrator
+exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 ---
-
 # Panoramic images{#panoramic-images}
 
 This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.

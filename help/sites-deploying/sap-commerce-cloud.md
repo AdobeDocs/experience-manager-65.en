@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 feature: Commerce Integration Framework
+exl-id: 4ad00127-0850-4bc0-b747-f94a93df82c1
 ---
-
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
@@ -238,4 +238,3 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 1. You can now use the product cockpit to view the imported catalogs and products:
 
    [http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)
-

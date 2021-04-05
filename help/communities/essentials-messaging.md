@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
-
+exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 ---
-
 # Messaging Essentials {#messaging-essentials}
 
 This page documents the details of working with using the Messaging component to include a messaging feature on a website.
@@ -231,4 +230,3 @@ public class MessagingEventHandler implements EventHandler {
     }
 }
 ```
-

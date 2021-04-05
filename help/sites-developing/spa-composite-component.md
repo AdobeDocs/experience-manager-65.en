@@ -1,8 +1,8 @@
 ---
 title: Composite Components in SPAs
 description: Learn how to create your own composite components, components made up of other components, that work with the AEM Single-Page Application (SPA) Editor.
+exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 ---
-
 # Composite Components in SPAs {#composite-components-in-spas}
 
 Composite components leverage the modular nature of AEM components by combining multiple base components into a single component. A common composite component use case is the card component, made of a combination of the image and text components.

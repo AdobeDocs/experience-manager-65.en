@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
-
+exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 ---
-
 # Changing the locale of AEM Forms workspace user interface{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 AEM Forms workspace provides out of the box support for English, French, German, and Japanese languages. It also provides capability to localize AEM Forms workspace user interface to any other language.

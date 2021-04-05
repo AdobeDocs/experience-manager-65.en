@@ -10,8 +10,8 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Administrator
+exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
 ---
-
 # Communities Sites {#communities-sites}
 
 This section is for those who administer AEM Communities and assumes familiarity with AEM Communities features.

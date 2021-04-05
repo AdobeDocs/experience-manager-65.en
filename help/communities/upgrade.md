@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
-
+exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
 ---
-
 # Upgrading to AEM 6.5 Communities {#upgrading-to-aem-communities}
 
 Depending on each site's topology and features, the following actions may be necessary when upgrading to AEM Communities 6.5 or installing the latest feature pack.

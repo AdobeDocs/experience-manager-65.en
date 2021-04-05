@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
+exl-id: fbe1487e-c830-4be8-9841-6022e6a98ae7
 ---
-
 # Overview of configuring SSL {#overview-of-configuring-ssl}
 
 You can create Secure Sockets Layer (SSL) credentials and configure SSL on the application server to enhance the security of communication with your application server.

@@ -7,9 +7,8 @@ uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
-
+exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 ---
-
 # Set up and configure We.Gov and We.Finance reference site {#set-up-and-configure-we-gov-reference-site}
 
 ## Demo package details {#demo-package-details}

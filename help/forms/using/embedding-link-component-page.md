@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
-
+exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
 ---
-
 # Embedding link component in a page{#embedding-link-component-in-a-page}
 
 ## Prerequisites {#prerequisites}

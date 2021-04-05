@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
+exl-id: e252b0e5-a2f8-468e-ac8c-951a5b0f2e32
 ---
-
 # Search Feature {#search-feature}
 
 The search feature works with various other features, such as forums, to provide the ability to search for content.

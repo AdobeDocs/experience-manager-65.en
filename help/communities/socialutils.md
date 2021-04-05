@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
+exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 ---
-
 # SocialUtils Refactoring {#socialutils-refactoring}
 
 ## SocialUtils Package Deprecated {#socialutils-package-deprecated}
@@ -82,4 +82,3 @@ The following tables list the methods to use in place of `SocialUtils` methods.
 | TranslationManager getTranslationManager() |
 | TranslationSaveQueue getTranslationSaveQueue() |
 | boolean mayAccessUGC(ResourceResolver resolver) |
-

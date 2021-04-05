@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 9f1beb89-8eb1-4e37-a5e8-19752b21374a
 docset: aem65
-
+exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 ---
-
 # Introduction to publishing forms on a portal{#introduction-to-publishing-forms-on-a-portal}
 
 ## AEM Forms portal components overview {#aem-forms-portal-components-overview}
@@ -83,4 +82,3 @@ Forms portal enables you to list forms from the forms repository onto your porta
 * [Sample for integrating drafts & submissions component with database](integrate-draft-submission-database.md)
 * [Customizing templates for forms portal components](../../forms/using/customizing-templates-forms-portal-components.md)
 * [Introduction to publishing forms on a portal](../../forms/using/introduction-publishing-forms.md)
-

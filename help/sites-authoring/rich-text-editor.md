@@ -8,9 +8,8 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
-
+exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 ---
-
 # Using the Rich Text Editor to Author Content {#use-rich-text-editor-to-author-content}
 
 The Rich Text Editor (RTE) is a basic building block for inserting textual content into AEM. It forms the basis of various components, including:

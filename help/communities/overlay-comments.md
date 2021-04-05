@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
-
+exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
 ---
-
 # Overlay communities components {#overlay-communities-components}
 
 The intention of [overlaying](/help/communities/client-customize.md#overlays) a default component is to alter the appearance or behavior of a component globally, for all relative references to the component. It relies on the nature of sling to resolve to the /apps folder before searching in the /libs folder. Thus the path to the component is identical to the path to the default component, except it is in the /apps folder and not the /libs folder.

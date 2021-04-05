@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
-
+exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 ---
-
 # Using an adaptive form in HTML Workspace{#using-an-adaptive-form-in-html-workspace}
 
 AEM Forms on JEE provides the capability of using an adaptive form in HTML Workspace.
@@ -82,4 +81,3 @@ HTML Workspace provides some adaptive form-specific controls in addition to cont
    >
    >
    >For details around creating a process, see [Creating and managing processes](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html).
-

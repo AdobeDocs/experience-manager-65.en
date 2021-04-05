@@ -11,8 +11,8 @@ docset: aem65
 
 feature: Asset Management
 role: Business Practitioner, Administrator
+exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
 ---
-
 # Installing feature pack 18912 for bulk asset migration{#installing-feature-pack-for-bulk-asset-migration}
 
 The installation of feature pack 18912 is *optional*.

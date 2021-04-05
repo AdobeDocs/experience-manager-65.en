@@ -12,8 +12,8 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 
 feature: Mobile Forms
+exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
 ---
-
 # Feature differentiation between HTML5 forms and PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
 The following table specifies the feature support provided for HTML5 forms and PDF forms:

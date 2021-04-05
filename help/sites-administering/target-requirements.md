@@ -10,8 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
+exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
 ---
-
 # Prerequisites for Integrating with Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
 As part of the [integration of AEM and Adobe Target](/help/sites-administering/target.md), you need to register with Adobe Target, configure the replication agent, and secure activity settings on the publish node.
@@ -75,4 +75,3 @@ To configure the AEM externalizer:
 1. Find **Day CQ Link Externalizer** and enter the domain for the author node.
 
    ![chlimage_1-120](assets/aem-externalizer-01.png)
-

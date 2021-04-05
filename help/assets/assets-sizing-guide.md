@@ -4,8 +4,8 @@ description: Best practices to determine efficient metrics to estimate the infra
 contentOwner: AG
 role: Architect, Administrator
 feature: Asset Management
+exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 ---
-
 # [!DNL Assets] sizing guide {#assets-sizing-guide}
 
 When sizing the environment for an [!DNL Adobe Experience Manager Assets] implementation, it is important to ensure that there are sufficient resources available in terms of disk, CPU, memory, IO, and network throughput. Sizing many of these resources requires an understanding of how many assets are being loaded into the system. If a better metric is not available, you can divide the size of the existing library by the age of the library to find the rate at which assets are created.

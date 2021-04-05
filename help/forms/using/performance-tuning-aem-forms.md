@@ -11,8 +11,8 @@ discoiquuid: 38c0ec46-5686-4656-bfb4-7125ec194673
 docset: aem65
 
 role: Administrator
+exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 ---
-
 # Performance tuning of AEM Forms server{#performance-tuning-of-aem-forms-server}
 
 This article discusses strategies and best practices you can implement to reduce bottlenecks and optimize the performance of your AEM Forms deployment.
@@ -170,4 +170,3 @@ To improve the performance, you can direct the antivirus software to exclude the
 >
 >* If the AEM Forms server performs slow even after excluding the suggested directories, then exclude the Java executable file (java.exe) also.
 >
-

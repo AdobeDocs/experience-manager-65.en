@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: c5ce62ad-ce9f-4681-bf85-78f7e72e1506
+exl-id: ea97ac1f-84d1-4707-892d-b2249ee1cab5
 ---
-
 # Sling Cheatsheet{#sling-cheatsheet}
 
 ![Understanding Apache Sling script resolution.](assets/sling-cheatsheet-01.png)  

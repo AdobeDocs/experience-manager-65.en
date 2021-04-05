@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
-
+exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 ---
-
 # Components Console{#components-console}
 
 The Components console allows you to browse through all components defined for your instance and view key information for each component.
@@ -71,4 +70,3 @@ To view details about a specific component tap/click on the required resource. T
   If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.
 
   ![chlimage_1-171](assets/chlimage_1-171.png)
-

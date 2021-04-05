@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
+exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 ---
-
 # Troubleshooting {#troubleshooting}
 
 This section contains common concerns and known issues.

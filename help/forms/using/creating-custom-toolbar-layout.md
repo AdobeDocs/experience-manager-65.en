@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
-
+exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
 ---
-
 # Creating custom toolbar layout{#creating-custom-toolbar-layout}
 
 ## Toolbar layouts {#layout}
@@ -231,4 +230,3 @@ Demo custom toolbar layout
 ![Desktop view of the custom layout toolbar](assets/toolbar_1.png)
 
 Desktop view of the custom layout toolbar
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
+exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 ---
-
 # Trying out the Globalized Site Structure in We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
 We.Retail has been built with a globalized site structure offering a language masters that can be live-copied to country-specific web sites. Everything is set up out-of-the-box to allow you to experiment with this structure and the built-in translation capabilities.

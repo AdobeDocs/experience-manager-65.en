@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
+exl-id: e4f54a39-2bb6-44a2-9e24-6b2e998a64b5
 ---
-
 # Developing with SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]

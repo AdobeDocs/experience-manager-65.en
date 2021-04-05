@@ -3,8 +3,8 @@ title: AEM 6.5 User Guide Hub
 seo-title: AEM 6.5 User Guide Hub
 description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
 seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
+exl-id: 51788662-6214-408e-98d9-692950c366be
 ---
-
 # AEM 6.5 User Guide Hub {#aem-64-user-guide}
 
 ## Introduction {#introduction}

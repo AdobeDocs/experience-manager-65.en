@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
+exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
 ---
-
 # View statistics related to Work Manager {#view-statistics-related-to-work-manager}
 
 The Work Manager tab displays statistics that relate to Work Manager items. These work items are in different states depending on where they are in their process. (See [Status (for Default, Workflow, or Events categories only)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) You can filter the information to view only a subset of the items by using the various options that are available (for example, Status or Category). You can sort resulting work or job items (in ascending or descending order) by clicking one of the column headers. Also, you can manage the work items by using the operation tools that are displayed above the work items list.

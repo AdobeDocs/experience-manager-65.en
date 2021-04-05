@@ -11,8 +11,8 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 
 feature: Correspondence Management
+exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
 ---
-
 # Customize create correspondence UI{#customize-create-correspondence-ui}
 
 ## Overview {#overview}
@@ -180,4 +180,3 @@ Clear the browser cache and then open the Create Correspondence UI instance in y
 ![Create correspondence user interface with custom logo](assets/0_1_introscreenshot-1.png)
 
 The custom icon in the Create Correspondence UI
-

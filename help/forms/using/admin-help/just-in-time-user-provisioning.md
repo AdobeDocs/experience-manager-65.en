@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
+exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
 ---
-
 # Just-in-time user provisioning {#just-in-time-user-provisioning}
 
 AEM forms supports just-in-time provisioning of users that don’t yet exist in User Management. With just-in-time provisioning, users are automatically added to User Management after their credentials are successfully authenticated. In addition, relevant roles and groups are assigned dynamically to the new user.
@@ -105,4 +105,3 @@ Assume that a user is trying to log in to AEM forms and an authentication provid
 >[!NOTE]
 >
 >The just-in-time provisioning feature ships with a default implementation of `IdentityCreator` that you can use to dynamically create users. Users are created with the information associated with the directories in the domain.
-

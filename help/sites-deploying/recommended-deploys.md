@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
-
+exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
 ---
-
 # Recommended Deployments{#recommended-deployments}
 
 >[!NOTE]
@@ -215,4 +214,3 @@ Below are a set of decisional matrices that can assist you in choosing the best 
 >In case you wish to run both author and publish on MongoDB, two separate licenses need to be purchased.
 >
 >For more information, see the [MongoDB for Adobe Experience Manager page](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
-

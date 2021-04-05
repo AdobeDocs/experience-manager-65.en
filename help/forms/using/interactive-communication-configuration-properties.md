@@ -12,8 +12,8 @@ discoiquuid: acb61d37-cd22-422e-bbf3-a2979b13ad41
 docset: aem65
 
 feature: Interactive Communication
+exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 ---
-
 # Interactive Communications configuration properties{#interactive-communications-configuration-properties}
 
 Interactive Communications includes properties that are configured automatically after installing the [AEM Forms add-on](../../forms/using/installing-configuring-aem-forms-osgi.md) package. Interactive Communication authors can edit these default configuration properties using the **Adobe Experience Manager Web Console Configuration** page.
@@ -138,4 +138,3 @@ Tap **Adaptive Form and Interactive Communication Web Channel Theme Configuratio
   </tr> 
  </tbody> 
 </table>
-

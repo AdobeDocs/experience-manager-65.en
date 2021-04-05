@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
+exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 ---
-
 # Endpoint Registry Java API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
 Java API Quick Start(SOAP) is available for the Endpoint Registry.
@@ -1109,4 +1109,3 @@ The following Java code retrieves information about a Watched Folder endpoint. I
  }
  
 ```
-

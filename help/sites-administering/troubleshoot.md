@@ -10,8 +10,8 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
+exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 ---
-
 # Troubleshooting AEM {#troubleshooting-aem}
 
 The following section covers some issues that you may encounter when using AEM, together with suggestions on how to troubleshoot them.
@@ -120,4 +120,3 @@ The status of the OSGi bundles can also give an early indication of possible iss
     * whether any of the bundles have missing dependencies. Such details can be seen by clicking on the individual bundle Name, which is a link (the following example does not have any issues):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
-

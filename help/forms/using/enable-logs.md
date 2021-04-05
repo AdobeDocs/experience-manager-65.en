@@ -12,8 +12,8 @@ discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
 
 feature: Mobile Forms
+exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 ---
-
 # Enable logging for HTML5 forms{#enable-logging-for-html-forms}
 
 You can configure the logger utility to start creating logs for HTML5 forms. The logger utility has various levels, you can set a level as per your requirements. HTML5 forms has server and client components. You can configure logs for both the components.

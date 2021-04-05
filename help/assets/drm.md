@@ -4,8 +4,8 @@ description: Learn how to manage asset expiration states and information for lic
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: DRM,Asset Management
+exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 ---
-
 # Digital Rights Management for assets {#digital-rights-management-in-assets}
 
 Digital assets are often associated with a license that specifies the terms and duration of use. Because [!DNL Adobe Experience Manager Assets] is fully integrated with the [!DNL Experience Manager] platform, you can efficiently manage asset expiration information and asset states. You can also associate licensing information with assets.

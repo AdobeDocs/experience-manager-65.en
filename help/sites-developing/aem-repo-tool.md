@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 7de7b2f9-770e-4af3-8a31-c7b4de64fd43
+exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
 ---
-
 # AEM Repo Tool{#aem-repo-tool}
 
 The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the [Jackrabbit FileVault tool](/help/sites-developing/ht-vlttool.md), but is faster, has minimal dependencies, and is a simple bash script.
@@ -39,4 +39,3 @@ You can find the code of this page on GitHub
 
 * [Open tools project on GitHub](https://github.com/Adobe-Marketing-Cloud/tools)
 * Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/tools/archive/master.zip)
-

@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
-
+exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 ---
-
 # Client Context{#client-context}
 
 >[!NOTE]
@@ -279,4 +278,3 @@ Use the data from the session store that you created using the JSONP store compo
 1. Drag the Script component to the same AND container, and open its edit dialog. Add the following script and then click OK:
 
    `3 < new Date().getMonth() < 12`
-

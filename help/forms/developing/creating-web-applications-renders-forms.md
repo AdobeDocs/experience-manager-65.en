@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
+exl-id: 85e00003-8c8b-463a-b728-66af174be295
 ---
-
 # Creating Web Applications that Renders Forms {#creating-web-applications-thatrenders-forms} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -392,4 +392,3 @@ After you deploy the web application, you can test it by using a web browser. As
 * http://localhost:8080/FragmentsWebApplication/index.html
 
   Select a radio button and click the Submit button. A Form that is based on fragments will appear in the web browser. If problems occur, see the J2EE application server’s log file.
-

@@ -12,8 +12,8 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 
 feature: Configuring
+exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 ---
-
 # Monitoring and Maintaining Your AEM instance{#monitoring-and-maintaining-your-aem-instance}
 
 After your AEM instances have been deployed certain tasks will be needed to monitor and maintain their operation, performance and integrity.

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
+exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 ---
-
 # Using Hide Conditions{#using-hide-conditions}
 
 Hide conditions can be used to determine if a component resource is rendered or not. An example of this would be when an template author configures the Core Component [list component](https://helpx.adobe.com/experience-manager/core-components/using/list.html) in the [template editor](/help/sites-authoring/templates.md) and decides to disable the options to build the list based on child pages. Disabling this option in the design dialog sets a property so that when the list component is rendered, the hide condition is evaluated and the option to show child pages is not displayed.
@@ -77,4 +77,3 @@ If a template author chooses to disable the child pages option, a design propert
 1. The option **Child pages** is no longer rendered for the page author when using the list component.
 
    ![chlimage_1-221](assets/chlimage_1-221.png)
-

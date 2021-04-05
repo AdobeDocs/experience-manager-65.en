@@ -12,8 +12,8 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 
 feature: Document Security
+exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 ---
-
 # About document security {#about-document-security}
 
 Document security ensures that only authorized users can use your documents. Using document security, you can safely distribute any information that you have saved in a supported format. Supported file formats include:

@@ -10,8 +10,8 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 ---
-
 # Adaptive form fragments{#adaptive-form-fragments}
 
 While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created.

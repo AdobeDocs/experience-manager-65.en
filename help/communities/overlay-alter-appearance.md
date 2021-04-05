@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
-
+exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
 ---
-
 # Alter the Appearance {#alter-the-appearance}
 
 ## Modify the Script {#modify-the-script}
@@ -71,4 +70,3 @@ If you login to the publish instance as an administrator, e.g., https://localhos
 If you logout and re-login as `aaron.mcdonald@mailinator.com/password` and refresh the page, you will observe that the posted comment no longer displays with an avatar, instead a simple 'xxx' is displayed.
 
 ![create-template-component](assets/create-template-component.png)
-

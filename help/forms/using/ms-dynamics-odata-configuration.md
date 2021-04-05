@@ -10,8 +10,8 @@ discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 
 feature: Form Data Model
+exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
 ---
-
 # Microsoft Dynamics OData configuration{#microsoft-dynamics-odata-configuration}
 
  ![data-integeration](assets/data-integeration.png)

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
+exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 ---
-
 # Initial Sandbox Content {#initial-sandbox-content}
 
 In this section, you create the following pages which all use the [page template](initial-app.md#createthepagetemplate):

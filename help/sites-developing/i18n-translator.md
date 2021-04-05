@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
+exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 ---
-
 # Using Translator to Manage Dictionaries{#using-translator-to-manage-dictionaries}
 
 AEM provides a console for managing the various translations of texts used in component UI. This console is available at
@@ -381,4 +381,3 @@ Similarly, testing of dictionary strings should be performed as part of your nor
 >[!NOTE]
 >
 >When using Dispatcher, you need to [invalidate cached pages](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) to include new dicationary strings in rendered component strings.
-

@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
+exl-id: 05f8b430-141e-4921-98b1-a0d8f636e478
 ---
-
 # Overview of Health Monitor {#overview-of-health-monitor}
 
 Health Monitor provides critical information about the AEM forms system, such as server information, memory usage, and processor usage. Also available are Work Manager statistics, such as the number of work items or jobs in the queue and their statuses. You can perform the following tasks using Health Monitor:
@@ -31,4 +31,3 @@ The Health Monitor web page is populated with statistics gathered through a Gemf
 **Access Health Monitor**
 
 1. In administration console, click Health Monitor in the upper-right corner of the page.
-

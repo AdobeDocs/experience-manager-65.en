@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
+exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 ---
-
 # Setting up a PDFG Network Printer (Windows only) {#setting-up-a-pdfg-network-printer-windows-only}
 
 PDFG Network Printer allows users to generate a PDF document from any application that supports printing. After a user installs the PDFG Network Printer, a new printer named *PDF generator* appears in the Printers section of the Windows Control Panel. If a printer with the same name already exists, the user is prompted to provide another name.
@@ -64,4 +64,3 @@ Users who have either the PDFG Administrator or PDFG User role can install a PDF
    ***note**: If the user’ password changes, then users will need to reinstall the PDFG Network Printer on their computers. You cannot update the password from administration console.*
 
 1. Click OK.
-

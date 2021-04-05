@@ -9,9 +9,8 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
-
+exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 ---
-
 # Introduction to Process Reporting{#introduction-to-process-reporting}
 
  ![process-reporting](assets/process-reporting.png)

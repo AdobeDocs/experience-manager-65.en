@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
+exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 ---
-
 # Administering Workflow Instances{#administering-workflow-instances}
 
 The workflow console provides several tools for administering workflow instances to ensure that they are executing as expected.
@@ -156,4 +156,3 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 | Property Name (Web Console) |OSGi Property Name |
 |---|---|
 | Max Inbox Query Size |granite.workflow.inboxQuerySize |
-

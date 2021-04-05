@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
-
+exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 ---
-
 # Working with the Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
 In AEM, the Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.

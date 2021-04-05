@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
+exl-id: 1f5a2cf3-ef6b-45b4-8fa8-b300e492fee1
 ---
-
 # Validating DDX Documents {#validating-ddx-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

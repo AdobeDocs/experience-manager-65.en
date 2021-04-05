@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 role: Developer
+exl-id: 108eb249-879b-4e4f-b431-8118b8656e62
 ---
-
 # Programmatically managing the Preferences Nodes {#programmatically-managing-the-preferencesnodes} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

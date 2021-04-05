@@ -2,8 +2,8 @@
 title: Configure Rich Text Editor to create accessible webpages and sites.
 description: Configure Rich Text Editor to create accessible webpages and sites.
 contentOwner: AG
+exl-id: d2451710-5abf-4816-8052-57d8f04a228e
 ---
-
 # Configure RTE to create accessible webpages and sites {#configure-rte-for-accessibility}
 
 Adobe Experience Manager supports man standard accessibility features in accordance with various accessibility standards. In addition, developers can customize or extend to provide features that help create accessible content using Experience Manager components that use the Rich Text Editor (RTE).

@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
+exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 ---
-
 # Configuring Connector for Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
 
 Connector for Microsoft SharePoint enables communication between AEM forms and Microsoft SharePoint. For additional background information, see "Connectors for ECM" in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
@@ -40,4 +40,3 @@ The Microsoft SharePoint configuration service `(MSSharePointConfigService)` let
     * Password For The Above User
 
 1. Click Save.
-

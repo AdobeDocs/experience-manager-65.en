@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
+exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 ---
-
 # Enabling single sign-on in AEM forms{#enabling-single-sign-on-in-aem-forms}
 
 AEM forms provides two ways to enable single sign-on (SSO) - HTTP headers and SPNEGO.
@@ -162,4 +162,3 @@ If the server is accessed by using the computer name, such as https://lcserver:8
    `lcserver.um.lc.com` - Configures Firefox to allow SPNEGO for your specific server only. Do not start this value with a dot (".").
 
 1. Test the configuration by accessing the application. The welcome page for the target application should appear.
-

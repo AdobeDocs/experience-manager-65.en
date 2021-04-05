@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
+exl-id: 809af2c0-6f5c-4dd4-af48-dbf476c9ea45
 ---
-
 # Configure advanced system attributes {#configure-advanced-system-attributes}
 
 Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file. (See [Importing and exporting the configuration file](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)

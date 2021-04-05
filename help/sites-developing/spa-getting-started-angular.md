@@ -9,9 +9,8 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
-
+exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 ---
-
 # Getting Started with SPAs in AEM - Angular{#getting-started-with-spas-in-aem-angular}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.

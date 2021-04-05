@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 612b45de-4505-4fc8-9f11-ae5a0952ed65
 docset: aem65
-
+exl-id: 1a638a65-085f-4a47-9f48-c8190234dfad
 ---
-
 # eCommerce{#ecommerce}
 
 The integration framework includes an integration layer with an API. This allows you to:

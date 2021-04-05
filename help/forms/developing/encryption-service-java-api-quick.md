@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
+exl-id: e8b2aa43-ac27-410d-a809-56bfd1c2fcb1
 ---
-
 # Encryption Service Java API Quick Start (SOAP) {#encryption-service-java-api-quickstart-soap}
 
 [Quick Start (SOAP mode): Encrypting a PDF document using the Java API](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
@@ -674,4 +674,3 @@ The following Java code example determines the type of encryption that is protec
  
  
 ```
-

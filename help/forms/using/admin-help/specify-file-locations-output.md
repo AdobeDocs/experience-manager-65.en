@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
+exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 ---
-
 # Specify file locations for Output {#specify-file-locations-for-output}
 
 You can specify the locations where Output looks for certain types of files that it requires.
@@ -42,4 +42,3 @@ The default value is `com/adobe/formServer/PA/pa_output.xci`.
 >[!NOTE]
 >
 >If you are using a temp cleaning utility, be aware that while deleting these directories does not affect functionality, it can significantly impact performance for a short time, until the new cache is created. To avoid this issue, do not delete these directories while clearing the AEM forms temp directory.
-

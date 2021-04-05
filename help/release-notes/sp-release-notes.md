@@ -3,8 +3,8 @@ title: [!DNL Experience Manager] 6.5 service pack release notes
 description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 service pack 8
 docset: aem65
 mini-toc-levels: 1
+exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 ---
-
 # [!DNL Adobe Experience Manager] 6.5 service pack release notes {#aem-service-pack-release-notes}
 
 ## Release information {#release-information}

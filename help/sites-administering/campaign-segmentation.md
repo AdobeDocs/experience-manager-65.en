@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
-
+exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 ---
-
 # Configuring Segmentation {#configuring-segmentation}
 
 >[!NOTE]

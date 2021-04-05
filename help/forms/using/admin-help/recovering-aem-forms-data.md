@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
+exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 ---
-
 # Recovering the AEM forms data {#recovering-the-aem-forms-data}
 
 This section describes the steps required to recover the AEM forms data. Also see [Special considerations for backup and recovery](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
@@ -127,4 +127,3 @@ To change the GDS location in a clustered environment, shut down the entire clus
 >[!NOTE]
 >
 >If you cannot ensure starting one node completely before starting other nodes, you must run the LCSetGDS script on every node in the cluster before you start the cluster.
-

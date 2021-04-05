@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
+exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 ---
-
 # Annotations when Editing a Page{#annotations-when-editing-a-page}
 
 Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content (as opposed, for example, to layout) allow you to add an annotation.
@@ -117,4 +117,3 @@ The Annotate mode allows you to create, edit, move or delete annotations on your
 Annotations do not appear in Edit mode, but the badge at the top right of the toolbar shows how many annotations exist for the current page. The badge replaces the default Annotations icon, but still functions as a quick link that toggles to/from the Annotate mode:
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
-

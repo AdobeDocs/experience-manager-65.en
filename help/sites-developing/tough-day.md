@@ -10,9 +10,8 @@ topic-tags: testing
 content-type: reference
 discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
 docset: aem65
-
+exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 ---
-
 # Tough Day{#tough-day}
 
 ## What is Tough Day 2 {#what-is-tough-day}

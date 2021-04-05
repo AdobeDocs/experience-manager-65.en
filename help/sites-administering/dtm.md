@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
+exl-id: 1e0821f5-627f-4262-ba76-62303890e112
 ---
-
 # Integrating with Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
 Integrate [Adobe Dynamic Tag Management](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) with AEM so that you can use your Dynamic Tag Management web properties to track AEM sites. Dynamic Tag Management enables marketers to manage tags for collecting data, and distribute data across digital marketing systems. For example, use Dynamic Tag Management to collect usage data for your AEM website and distribute the data for analysis in Adobe Analytics or Adobe Target.
@@ -263,4 +263,3 @@ Use the following procedure to override the inherited configuration association 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 
 1. Remove or select a different Dynamic Tag Management configuration, and then click OK.
-

@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
+exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 ---
-
 # Dynamic Media repository restructuring in AEM 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
 As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the Dynamic Media Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
@@ -164,4 +164,3 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
  </tbody>
 </table>
-

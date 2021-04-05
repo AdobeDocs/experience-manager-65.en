@@ -4,8 +4,8 @@ description: Learn how to create an adaptive form using [!DNL Experience Manager
 feature: Adaptive Forms
 role: Business Practitioner, Developers
 level: Beginner
+exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 ---
-
 # Creating an adaptive form {#creating-an-adaptive-form}
 
 ## <strong>Create an adaptive form</strong> {#strong-create-an-adaptive-form-strong}

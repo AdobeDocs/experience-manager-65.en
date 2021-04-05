@@ -8,8 +8,8 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: Business Practitioner, Administrator
+exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 ---
-
 # Video {#video}
 
 Assets provides for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Dynamic Media Classic and access Dynamic Media Classic videos directly from Assets for page authoring.
@@ -183,4 +183,3 @@ The **[!UICONTROL Foundation Video]** component must know about what video profi
 1. The video profiles must be activated.
 1. Configure the design of the **[!UICONTROL oundation Video]** component on your page.
 1. Activate the design after you are done with your design changes.
-

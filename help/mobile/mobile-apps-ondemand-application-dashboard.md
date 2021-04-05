@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
+exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
 ---
-
 # AEM Mobile Application Dashboard {#aem-mobile-application-dashboard}
 
 >[!NOTE]
@@ -140,4 +140,3 @@ To learn about the roles and responsibilities of an Administrator and Developer,
 
 * [Developing AEM Content for AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administering Content to Use AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
-

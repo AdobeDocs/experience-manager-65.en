@@ -10,8 +10,8 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 feature: Tagging
+exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
 ---
-
 # Tagging{#tagging}
 
 Tagging allows content to be categorized and organized. Tags can be classified by a namespace and a taxonomy.

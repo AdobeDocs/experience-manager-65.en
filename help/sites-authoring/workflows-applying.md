@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
-
+exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 ---
-
 # Applying Workflows to Pages{#applying-workflows-to-pages}
 
 When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.

@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
+exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
 ---
-
 # Minification of the JavaScript files {#minification-of-the-javascript-files}
 
 Minification removes from the source code the redundant characters, such as white space, new line, and comments. This improves the performance by reducing the size of the code. While minification does not impact the functionality, it reduces the readability of the code.

@@ -11,8 +11,8 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 
 feature: Interactive Communication
+exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 ---
-
 # Introduction to Interactive Communication authoring UI{#introduction-to-interactive-communication-authoring-ui}
 
 The user interface for authoring [Interactive Communication](/help/forms/using/interactive-communications-overview.md) is intuitive and provides the following for authoring print and web channel of the Interactive Communication:
@@ -144,4 +144,3 @@ The Page toolbar on the top provides options that let you preview the Interactiv
     * Target: Lets you enable or disable custom components, or out-of-the-box components that are not listed in the Sidebar.
 
 * Preview: Lets you preview how the Interactive Communication looks when you publish it.
-

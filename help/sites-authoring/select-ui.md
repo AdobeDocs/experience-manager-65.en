@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: e418d330-f234-411d-8cad-3fd9906dcbee
 docset: aem65
-
+exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 ---
-
 # Selecting your UI{#selecting-your-ui}
 
 Although the touch-enabled UI is now the standard UI and feature parity has been nearly reached with the administration and editing of sites, there may be times when the user wishes to switch to the [classic UI](/help/sites-classic-ui-authoring/classicui.md). There are several options for doing this.

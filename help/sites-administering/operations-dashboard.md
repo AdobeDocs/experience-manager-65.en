@@ -10,8 +10,8 @@ topic-tags: operations
 content-type: reference
 discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
+exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 ---
-
 # Operations Dashboard {#operations-dashboard}
 
 ## Introduction {#introduction}
@@ -902,4 +902,3 @@ You can also download a `JSON` file summarizing the dashboard information by cli
   </tr>
  </tbody>
 </table>
-

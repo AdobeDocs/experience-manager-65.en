@@ -10,9 +10,8 @@ topic-tags: operations
 content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
-
+exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 ---
-
 # Working with Logs{#working-with-logs}
 
 This section includes detailed information on logs available to help you troubleshoot.

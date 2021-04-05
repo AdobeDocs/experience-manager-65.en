@@ -10,8 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
 docset: aem65
+exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
 ---
-
 # Integrating with Silverpop Engage{#integrating-with-silverpop-engage}
 
 >[!NOTE]
@@ -109,4 +109,3 @@ To configure the API end points:
 1. Click **Save All**. AEM is now ready to connect to Silverpop over secured end points.
 
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
-

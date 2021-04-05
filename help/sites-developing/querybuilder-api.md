@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
+exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
 ---
-
 # Query Builder API{#query-builder-api}
 
 The functionality of the [Asset Share Query Builder](/help/assets/assets-finder-editor.md) is exposed through a Java API and a REST API. This section describes these APIs.
@@ -570,4 +570,3 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 | [com.day.cq.search.eval](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) |Predicate Evaluators |
 | [com.day.cq.search.facets.extractors](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) |Facet Extractors (for evaluators) |
 | [com.day.cq.search.writer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) |JSON Result Hit Writer for Querybuilder servlet (/bin/querybuilder.json) |
-

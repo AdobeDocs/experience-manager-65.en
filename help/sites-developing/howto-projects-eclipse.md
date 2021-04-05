@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
+exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 ---
-
 # How to Develop AEM Projects Using Eclipse{#how-to-develop-aem-projects-using-eclipse}
 
 This guide describes how to use Eclipse for developing AEM based projects.
@@ -128,4 +128,3 @@ For that to work:
    >[!NOTE]
    >
    >If you include `/libs/foundation/global.jsp` or other JSPs in `/libs`, you will need to copy that to your project so Eclipse can resolve the inclusion. At the same time, you need to make sure that it is not bundled into your content package by Maven. How to achieve this is described in [How to Build AEM Projects using Apache Maven](/help/sites-developing/ht-projects-maven.md).
-

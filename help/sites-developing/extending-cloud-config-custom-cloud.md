@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
+exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 ---
-
 # Creating a Custom Cloud Service{#creating-a-custom-cloud-service}
 
 The default set of Cloud Services can be extended with custom Cloud Service types. This allows you to inject custom markup into the page in a structured fashion. This will be primarily of use for 3rd party analytics providers, for example Google Analytics, Chartbeat, etc. Cloud Services are inherited from parent pages to child pages with the ability to break the inheritance at any level.
@@ -209,4 +209,3 @@ The default set of Cloud Services can be extended with custom Cloud Service type
 1. Enter a **Account ID**, for example `AA-11111111-1`. Click **OK**.
 1. Navigate to a page and add the newly created configuration in the page properties, under the **Cloud Services** tab.
 1. The page will have the custom markup added to it.
-

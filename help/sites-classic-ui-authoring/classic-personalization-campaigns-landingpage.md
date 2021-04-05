@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
-
+exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 ---
-
 # Landing Pages{#landing-pages}
 
 The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page. The functionality is useful to create marketing landing pages that are only active for a limited time and need to be created quickly.

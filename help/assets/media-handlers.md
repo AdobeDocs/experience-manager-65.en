@@ -4,8 +4,8 @@ description: Learn about the media handlers and how to use workflows to perform 
 contentOwner: AG
 role: Business Practitioner
 feature: Workflow,Renditions
+exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 ---
-
 # Process assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] comes with a set of default workflows and media handlers to process assets. A workflow defines the tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.

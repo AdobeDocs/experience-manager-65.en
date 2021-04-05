@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
+exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 ---
-
 # Working with Credentials {#working-with-credentials} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

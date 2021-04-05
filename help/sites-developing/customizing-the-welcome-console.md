@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
+exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 ---
-
 # Customizing the Welcome Console (Classic UI){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
@@ -203,4 +203,3 @@ The [link selection mechanism](#link-selection-mechanism) can be used to add you
 Add your custom item to the list by adding the `cq:Console` mixin to your widget or resource. This is done by defining the property:
 
 * `jcr:mixinTypes` with the value: `cq:Console`
-

@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
+exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
 ---
-
 # Encryption Support for Configuration Properties{#encryption-support-for-configuration-properties}
 
 ## Overview {#overview}

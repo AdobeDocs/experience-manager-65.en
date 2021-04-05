@@ -10,8 +10,8 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
 ---
-
 # Adding information from user data to form submission metadata{#adding-information-from-user-data-to-form-submission-metadata}
 
 You can use values entered in an element of your form to compute metadata fields of a draft or a form submission. Metadata lets you filter content based on user data. For example, a user enters John Doe in the name field of your form. You can use this information to compute metadata that can categorize this submission under the initials JD.
@@ -62,4 +62,3 @@ You select adaptive form container, and in the form properties you add a metadat
 >[!NOTE]
 >
 >The above example is for learning purpose only. Ensure that you look for metadata in the correct location as configured in your AEM Forms implementation.
-

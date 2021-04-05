@@ -1,8 +1,8 @@
 ---
 title: A Quick Guide to WCAG 2.1
 description: A Quick Guide to WCAG 2.1
+exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 ---
-
 # A Quick Guide to WCAG 2.1{#quick-guide-to-wcag}
 
 Adobe Experience Manager (AEM) has been developed to maximize compliance with the Web Content Accessibility Guidelines.

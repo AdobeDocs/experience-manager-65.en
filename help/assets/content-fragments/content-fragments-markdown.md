@@ -13,8 +13,8 @@ docset: aem65
 
 feature: Content Fragments
 role: Business Practitioner, Administrator
+exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
 ---
-
 # Markdown{#markdown}
 
 When you are [authoring](content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
@@ -212,4 +212,3 @@ Backslash escapes are available for the following characters:
 &nbsp;&nbsp;&nbsp;&nbsp;` - minus sign (hyphen)`
 
 &nbsp;&nbsp;&nbsp;&nbsp;` . dot`
-

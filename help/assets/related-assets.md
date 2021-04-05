@@ -4,8 +4,8 @@ description: Learn how to relate digital assets that share some common attribute
 contentOwner: AG
 role: Business Practitioner
 feature: Collaboration,Asset Management
+exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
 ---
-
 # Related assets {#related-assets}
 
 [!DNL Adobe Experience Manager Assets] lets you manually relate assets based on the needs of your organization using the related assets feature. For example, you can relate a license file with an asset or an image/video on a similar topic. You can relate assets that share certain common attributes. You can also use the feature to create source/derived relationships between assets. For example, if you have a PDF file that is generated from an INDD file, you can relate the PDF file to its source INDD file.

@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
+exl-id: 736926af-ae41-4da3-b181-444de72407bd
 ---
-
 # Creating and managing policy sets {#creating-and-managing-policy-sets}
 
 Policy sets are used to group policies that have a common business purpose. Policy sets can be made available to a subset of users in the system.
@@ -108,4 +108,3 @@ When you delete a policy set, policies that were part of the set cannot be appli
 1. Click Policies and click the Policy Sets tab.
 1. Select the check box for the policy set to delete.
 1. Click Delete and then click OK.
-

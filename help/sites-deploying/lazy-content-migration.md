@@ -12,8 +12,8 @@ discoiquuid: d72b8844-d782-4b5b-8999-338217dbefb9
 docset: aem65
 
 feature: Upgrading
+exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
 ---
-
 # Lazy Content Migration {#lazy-content-migration}
 
 For the sake of backwards compatibility, content and configuration in **/etc** and **/content** starting with AEM 6.3 will not be touched or transformed immediately with the upgrade. This is done in order to ensure that dependencies of customer applications on those structures stay intact. The functionality relating to these content structures is still the same even though the content in an out of the box AEM 6.5 would be hosted in another place.

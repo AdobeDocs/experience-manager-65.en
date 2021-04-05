@@ -12,8 +12,8 @@ discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 
 feature: Configuring
+exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
 ---
-
 # Version Purging{#version-purging}
 
 In a standard installation AEM creates a new version of a page or node when you activate a page after updating the content.

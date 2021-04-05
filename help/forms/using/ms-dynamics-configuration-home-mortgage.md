@@ -7,8 +7,8 @@ uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
+exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
 ---
-
 # Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Learn how to leverage the Microsoft® Dynamics 365 services through adaptive forms for the home mortgage workflow of the We.Finance Reference site
@@ -67,4 +67,3 @@ Before you begin to set up and configure Dynamics 365, ensure that you have:
        `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
     1. Import the package to your Microsoft® Dynamics instance. In your Microsoft® Dynamics instance, go to **Sales** &gt; **Contacts** and then tap **Import Data**.
-

@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
+exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 ---
-
 # Adding domains {#adding-domains}
 
 ## Add an enterprise domain {#add-an-enterprise-domain}
@@ -80,4 +80,3 @@ When using MySQL as your AEM forms database, the following limitations apply:
     * Find the domain name that contains extended or multi-byte characters and set its status to OBSOLETE.
 
 1. Import the updated configuration file, as described in [Importing and exporting the configuration file](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).
-

@@ -12,8 +12,8 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 
 feature: Image Presets
 role: Business Practitioner, Administrator
+exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 ---
-
 # Managing Dynamic Media image presets{#managing-image-presets}
 
 Image Presets enable AEM Assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically. Each Image Preset represents a predefined collection of sizing and formatting commands for displaying images. When you create an Image Preset, you choose a size for image delivery. You also choose formatting commands so that the appearance of the image is optimized when the image is delivered for viewing.
@@ -512,4 +512,3 @@ If you are running Dynamic Media - Hybrid mode, you must manually publish image 
 1. In AEM, tap or click the AEM logo to access the global navigation console.
 1. Tap the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets > Image Presets.]**
 1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.
-

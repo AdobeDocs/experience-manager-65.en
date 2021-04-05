@@ -11,8 +11,8 @@ docset: aem65
 
 feature: Interactive Videos
 role: Business Practitioner, Administrator
+exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 ---
-
 # Interactive Videos{#interactive-videos}
 
 You can easily create interactive videos&ndash;also know as shoppable videos&ndash;that drive conversion directly from the video. Customer engagement with the video takes place in a panel alongside the video player where related service, information, or product thumbnails are scrolled into view based on what is featured in the video. Customers can tap the thumbnail and be linked directly to the service, or add the item to a shopping cart for immediate purchase, or be linked to a web page for more information.

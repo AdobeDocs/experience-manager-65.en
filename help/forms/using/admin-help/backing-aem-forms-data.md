@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
+exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 ---
-
 # Backing up the AEM forms data {#backing-up-the-aem-forms-data}
 
 This section describes the steps that are required to complete a hot, or online, backup of the AEM forms database, the GDS, and Content Storage Root directories.
@@ -159,4 +159,3 @@ You can use the command line interface to take AEM forms out of safe backup mode
    >If you enabled document storage in database, the snapshot backup mode and rolling backup modes are not applicable.
 
    For more information about the command line interface to the backup mode, see the readme file in the BackupRestoreCommandline directory.
-

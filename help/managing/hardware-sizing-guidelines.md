@@ -10,9 +10,8 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
 docset: aem65
-
+exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 ---
-
 # Hardware Sizing Guidelines{#hardware-sizing-guidelines}
 
 These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project. Sizing estimates depend on the architecture of the project, the complexity of the solution, expected traffic and the project requirements. This guide helps you to determine the hardware needs for a specific solution, or to find an upper and lower estimate for the hardware requirements.
@@ -324,4 +323,3 @@ See
 
 * [Community Content Storage](/help/communities/working-with-srp.md)
 * [Recommended Topologies for Communities](/help/communities/topologies.md)
-

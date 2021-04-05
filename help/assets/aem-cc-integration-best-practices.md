@@ -4,8 +4,8 @@ description: Best practices to integrate [!DNL Adobe Experience Manager] with [!
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Collaboration,Adobe Asset Link,Experience Manager Desktop App
+exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 ---
-
 # [!DNL Adobe Experience Manager] and [!DNL Creative Cloud] integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
 [!DNL Adobe Experience Manager Assets] is a digital asset management (DAM) solution that can integrate with [!DNL Adobe Creative Cloud] to help DAM users work together with creative teams, streamlining collaboration in the content creation process.

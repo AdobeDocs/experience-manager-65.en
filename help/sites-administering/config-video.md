@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
+exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
 ---
-
 # Configure the Video component {#configure-the-video-component}
 
 The [Video component](/help/sites-authoring/default-components-foundation.md#video) lets you place a predefined, out-of-the-box (OOTB) video asset on your page.

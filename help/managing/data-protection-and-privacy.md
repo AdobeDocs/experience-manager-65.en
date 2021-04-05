@@ -10,8 +10,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
+exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 ---
-
 # Adobe Experience Manager Readiness for Data Protection and Data Privacy Regulations {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]

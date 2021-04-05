@@ -8,9 +8,8 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
-
+exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 ---
-
 # New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 ## Transaction Reports {#transaction-reports}

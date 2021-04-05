@@ -6,8 +6,8 @@ seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
+exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 ---
-
 # Handling GDPR Requests for the AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
@@ -131,4 +131,3 @@ curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':ope
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
 ```
-

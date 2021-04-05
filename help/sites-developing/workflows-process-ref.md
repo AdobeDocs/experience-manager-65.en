@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
+exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 ---
-
 # Workflow Process Reference{#workflow-process-reference}
 
 AEM provides several process steps that can be used for creating workflow models. Custom process steps can also be added for tasks not covered by the built-in steps (see [Creating Workflow Models](/help/sites-developing/workflows-models.md)).
@@ -253,4 +253,3 @@ Creates a new version of the workflow payload (AEM page or DAM asset).
 * **Payload**: A JCR path or UUID that refers to a page or DAM asset
 * **Arguments**: None
 * **Timeout**: Respected
-

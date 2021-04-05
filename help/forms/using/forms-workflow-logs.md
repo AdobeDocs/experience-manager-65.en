@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
-
+exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 ---
-
 # Logging in AEM Forms workflows{#logging-in-aem-forms-workflows}
 
 Forms workflow steps provide detailed logs to debug workflow-related issues conveniently. Enable debug logging for AEM Forms workflows to view the logs.
@@ -89,4 +88,3 @@ Perform the following steps to enable debug logging for AEM Forms workflows:
 
     * com.adobe.fd.workflow
     * com.adobe.fd.workspace
-

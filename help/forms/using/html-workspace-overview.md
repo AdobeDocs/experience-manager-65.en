@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
-
+exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 ---
-
 # Working with AEM Forms workspace{#working-with-aem-forms-workspace}
 
 ## Introduction {#introduction}

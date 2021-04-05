@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
+exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
 ---
-
 # Community Components Guide  {#community-components-guide}
 
 The Community Components guide is an interactive development tool for the [social component framework (SCF)](scf.md). It provides a list of available AEM Communities components or the more complex features built of multiple components.

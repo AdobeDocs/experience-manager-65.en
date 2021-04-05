@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
+exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
 ---
-
 # Displaying information in the Task Summary pane {#displaying-information-in-the-task-summary-pane}
 
 When you open a task in AEM Forms workspace, a Task Summary pane can display a summary of the task. This additional and relevant information for a task adds more value for the end-user of AEM Forms workspace.

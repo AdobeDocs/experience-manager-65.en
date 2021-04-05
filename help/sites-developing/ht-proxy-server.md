@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
+exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 ---
-
 # How to use the Proxy Server Tool{#how-to-use-the-proxy-server-tool}
 
 The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server keeps track of all the client-server interactions and outputs a log of the entire TCP communication. This allows you to monitor exactly what is going on, without having to access the main server.
@@ -226,4 +226,3 @@ If you experience hanging requests from time to time:
 * Start the proxy.
 * Wait or write the access log into a file with each entry having a timestamp.
 * When the request start hanging you can see how many connections were open and which request is causing trouble.
-

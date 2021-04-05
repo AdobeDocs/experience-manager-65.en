@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
+exl-id: facbeab2-de95-4778-894c-faa771d3391e
 ---
-
 # Managing HSM credentials {#managing-hsm-credentials}
 
 From the Trust Store Management page, you can manage Hardware Security Module (HSM) credentials. An HSM is a third-party PKCS#11 device that you can use to securely generate and store private keys. The HSM physically protects the access to and use of the private keys.
@@ -99,4 +99,3 @@ This mechanism does not support online creation of HSM profiles or status checks
 
 * Create a AEM forms client credential by passing it the Signer’s Certificate. Follow the steps in [Configuring HSM support for AEM forms ES using Sun JDK on Windows 64-bit platform](https://kb2.adobe.com/cps/808/cpsid_80835.html). The web service location is passed in as a Credential property. Offline HSM profiles create using either certificate der or certificate SHA-1 hex is also supported. However, if you have upgraded to AEM forms from an earlier version of AEM forms, make client changes because the credential carried certificate and web service information.
 * Web Service location is specified in the administration console for the Signature service. (See [Signature service settings](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings).) Here, the client only carried the alias of the HSM profile in the trust store. You can use this option seamlessly without any client changes, even if you have upgraded to AEM forms from an earlier version of AEM forms. This option does not support HSM profiles using certificate SHA-1.
-

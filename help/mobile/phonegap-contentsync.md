@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
 docset: aem65
-
+exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
 ---
-
 # Mobile with Content Sync{#mobile-with-content-sync}
 
 >[!NOTE]
@@ -390,4 +389,3 @@ To learn about the roles and responsibilities of an Administrator and Developer,
 
 * [Authoring for Adobe PhoneGap Enterprise with AEM](/help/mobile/phonegap.md)
 * [Administering Content for Adobe PhoneGap Enterprise with AEM](/help/mobile/administer-phonegap.md)
-
