@@ -2,8 +2,8 @@
 title: [!DNL Adobe Experience Manager] 6.5 previous Service Pack release notes
 description: Release notes for [!DNL Adobe Experience Manager] 6.5 Service Packs.
 contentOwner: AK
+exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
 ---
-
 # Hotfixes and Feature Packs included in the previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
 ## [!DNL Adobe Experience Manager] 6.5.7.0 {#experience-manager-6570}

@@ -10,9 +10,8 @@ topic-tags: projects
 content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
-
+exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 ---
-
 # Projects{#projects}
 
 Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
+exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
 ---
-
 # Editor Limitations{#editor-limitations}
 
 The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers. This page summarizes these limitations and provides solutions or work-arounds where possible.
@@ -77,4 +77,3 @@ body:before, body:after{
     display: table;
 }
 ```
-

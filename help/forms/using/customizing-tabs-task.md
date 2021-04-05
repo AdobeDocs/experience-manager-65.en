@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ac0a281f-f589-4a70-9bc7-1a23e054b02f
+exl-id: 8412cfec-bcab-40b7-9e5b-fcc211d43c0b
 ---
-
 # Customizing tabs for a task {#customizing-tabs-for-a-task}
 
 You can customize tab names for the `Start Process` component in the `Start Process` Uber view and the `Task Details` component in the `ToDo` Uber view.

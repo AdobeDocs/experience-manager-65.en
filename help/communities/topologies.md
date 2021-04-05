@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
+exl-id: b6658330-d862-44e3-aac0-824fb91cd087
 ---
-
 # Recommended Topologies for Communities {#recommended-topologies-for-communities}
 
 As of AEM Communities 6.1, a unique approach has been adopted for handling user generated content (UGC) submitted by site visitors (members) from the publish environment.

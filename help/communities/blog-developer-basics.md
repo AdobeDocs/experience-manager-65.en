@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
-
+exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 ---
-
 # Blog Essentials {#blog-essentials}
 
 As of AEM 6.1 Communities, a blog is a community activity. Blog articles are now posted from the publish environment, where previously, blog articles could only be created in the author environment and published.
@@ -117,4 +116,3 @@ As of AEM 6.2, the modifications previously required to be made manually are inc
 Rich media is embeded in a blog article by selecting the `Embed Media from External Sites` icon :
 
 ![media](assets/media-icon.png)
-

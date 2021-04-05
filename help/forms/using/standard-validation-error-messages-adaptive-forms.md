@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
+exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
 ---
-
 # Standard validation error messages for adaptive forms {#standard-validation-error-messages}
 
 Adaptive forms validate the inputs that you provide in fields based on a pre-set validation criteria. The validation criteria refers to the acceptable input values for fields in an adaptive form. You can set the validation criteria based on the data source that you use with the adaptive form. For example, if you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file.

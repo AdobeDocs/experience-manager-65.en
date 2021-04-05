@@ -11,8 +11,8 @@ discoiquuid: 0d3bb98e-7139-4d8e-b110-6ebd11debda1
 docset: aem65
 
 feature: Correspondence Management
+exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
 ---
-
 # Integrating Create Correspondence UI with your custom portal{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## Overview {#overview}

@@ -4,8 +4,8 @@ description: Learn about Lightbox as your personal image gallery in Adobe Experi
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Developer Tools,Renditions
+exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
 ---
-
 # Lightbox {#lightbox}
 
 Lightbox is a special type of collection that provides easy access to assets. You can quickly access Lightbox to add or delete assets. It serves as your personal image gallery.

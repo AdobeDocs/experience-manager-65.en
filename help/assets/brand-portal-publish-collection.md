@@ -13,8 +13,8 @@ docset: aem65
 
 feature: Brand Portal
 role: Business Practitioner
+exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
 ---
-
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
 As an Adobe Experience Manager (AEM) Assets administrator, you can publish collections to the AEM Assets Brand Portal instance for your organization. However, you must first integrate AEM Assets with Brand Portal. For details, see [Configure AEM Assets with Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
@@ -53,4 +53,3 @@ You can unpublish collections that you publish from AEM Assets to Brand Portal. 
 1. From the toolbar, click **Remove from Brand Portal** icon.
 1. In the dialog, click **Unpublish**.
 1. Close the confirmation message. The collection is removed from the Brand Portal interface.
-

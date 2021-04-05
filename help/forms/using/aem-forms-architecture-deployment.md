@@ -10,8 +10,8 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Administrator
+exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 ---
-
 # Architecture and deployment topologies for AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Architecture {#architecture}
@@ -139,4 +139,3 @@ AEM Forms customers planning to use only document services capability can have a
 Although AEM Forms allows you to set up and run all the functionalities from a single server, you should do capacity planning, load balancing, and set up dedicated servers for specific capabilities in a production environment. For example, for an environment using the PDF Generator service to convert thousands of pages a day and multiple adaptive forms to capture data, set up separate AEM Forms servers for the PDF Generator service and adaptive forms capabilities. It helps provide optimum performance and scale the servers independent of each other.
 
 ![offline-api-based-processing](assets/offline-api-based-processing.png)
-

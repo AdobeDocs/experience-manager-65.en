@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
+exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 ---
-
 # Configuring directories {#configuring-directories}
 
 For each enterprise domain you configure, specify the directories that the authentication provider queries for user information. You can configure multiple directories for a domain.
@@ -325,4 +325,3 @@ After configuring the directory settings and creating the LDAP VLV entries for u
         config
     1 matches
    ```
-

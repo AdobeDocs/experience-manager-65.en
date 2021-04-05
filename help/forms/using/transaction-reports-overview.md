@@ -8,9 +8,8 @@ topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
 docset: aem65
-
+exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 ---
-
 # Transaction Reports Overview{#transaction-reports-overview}
 
 ## Introduction {#introduction}
@@ -58,4 +57,3 @@ The transaction count is reverse replicated from publish instances to author or 
 * [Viewing and Understanding a Transaction Reports](../../forms/using/viewing-and-understanding-transaction-reports.md)
 * [Transaction Reports Billable APIs](../../forms/using/transaction-reports-billable-apis.md)
 * [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
-

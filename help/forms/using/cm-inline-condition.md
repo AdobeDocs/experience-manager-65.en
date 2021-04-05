@@ -11,8 +11,8 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 
 feature: Correspondence Management
+exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
 ---
-
 # Inline condition and repeat in Interactive Communications and letters{#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
 ## Inline conditions {#inline-conditions}

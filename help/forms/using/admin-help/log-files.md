@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
+exl-id: 23a65be4-3277-4c73-9189-a9b4d7be73cd
 ---
-
 # Log files {#log-files}
 
 Events such as run-time or startup errors are recorded to the application server log files. If you have any problems deploying to the application server, you can use the log files to help you find the problem. You can open the log files using any text editor.
@@ -32,4 +32,3 @@ Events such as run-time or startup errors are recorded to the application server
 * SystemErr.log
 * SystemOut.log
 * StartServer.log
-

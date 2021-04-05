@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
+exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
 ---
-
 # Importing and exporting the configuration file {#importing-and-exporting-the-configuration-file}
 
 Use the Manual Configuration page to download a copy of the configuration settings in XML format. The settings in this file control all server preferences. You can then edit the file and upload it back to the server. You can also use the file to configure another AEM forms product instance.
@@ -30,4 +30,3 @@ To avoid security risks, the bind password value for the directory server is not
 
 1. In Administration Console, click Settings &gt; User Management &gt; Configuration &gt; Import And Export Configuration Files.
 1. Click Browse to find the configuration file, click Import, and then click OK.
-

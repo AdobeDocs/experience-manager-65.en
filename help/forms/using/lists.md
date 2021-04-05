@@ -10,8 +10,8 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 
 feature: Correspondence Management
+exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 ---
-
 # Document Fragments{#document-fragments}
 
 ## Document Fragments {#document-fragments-1}
@@ -549,4 +549,3 @@ To quickly create a document fragment with properties and content similar to an 
 1. Tap Paste. The Paste dialog appears. If you are copying and pasting the document fragments at the same place, the system automatically assigns names and a titles to the new copies of letters, but you can edit the titles and names of the letters.
 1. If required, edit the Title and Name with which you want to save the copy of the document fragment.
 1. Tap Paste. The copy of the document fragment is created.
-

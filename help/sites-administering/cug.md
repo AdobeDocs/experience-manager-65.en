@@ -10,8 +10,8 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
+exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 ---
-
 # Creating a Closed User Group{#creating-a-closed-user-group}
 
 Closed User Groups (CUGs) are used to limit access to specific pages that reside within a published internet site. Such pages require the assigned members to login and provide security credentials.
@@ -137,4 +137,3 @@ Configure [session management in the dispatcher.any file](https://helpx.adobe.co
    ```
 
 1. Set [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) to `0`.
-

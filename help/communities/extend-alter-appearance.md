@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: e0da09b3-725d-4ed1-9273-2532132f6918
 docset: aem65
-
+exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
 ---
-
 # Alter the Appearance (HBS) {#alter-the-appearance-hbs}
 
 Now that the components for the custom comment system in the application directory (/apps) are in place, with a resourceSuperType referencing the default comment system and the custom Model/View registered, it is possible to modify the implementation.

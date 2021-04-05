@@ -10,8 +10,8 @@ discoiquuid: 0ffbb4d3-9371-4705-8496-f98e22d9c4a6
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: be1a774f-5681-443f-b195-28e89a020547
 ---
-
 # Configuring redirect page{#configuring-redirect-page}
 
 Form authors can configure a page for each form, to which the form users are redirected after submitting a form.
@@ -36,4 +36,3 @@ Form authors can use the following parameters that are passed to the Thank you p
 * **Submit to Forms workflow**: Output parameters returned from forms workflow are passed.  
 
 * **Submit to REST endpoint**: Parameters added for in-field to parameter mapping are passed. `status` and `owner` parameters are not passed in this submit action. For more information, see [Configuring the Submit to REST endpoint submit action](../../forms/using/configuring-submit-actions.md).
-

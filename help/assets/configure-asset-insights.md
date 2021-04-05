@@ -4,8 +4,8 @@ description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Administrator
 feature: Asset Insights,Asset Reports
+exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
 ---
-
 # Configure Asset Insights {#configure-asset-insights}
 
 [!DNL Adobe Experience Manager Assets] fetches usage data around digital assets used by third-party websites from [!DNL Adobe Analytics]. To enable Asset Insights to retrieve this data and generate insights, first configure the feature to integrate with Adobe Analytics.

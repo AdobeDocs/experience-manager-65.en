@@ -4,8 +4,8 @@ description: Learn how to add image map with hyperlinks to an image.
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Management
+exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
 ---
-
 # Add image maps {#adding-image-maps}
 
 Image Maps let you add one or more hyperlinked areas that function like other hyperlinks.

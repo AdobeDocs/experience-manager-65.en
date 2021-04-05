@@ -9,8 +9,8 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Administrator
+exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 ---
-
 # Hardening Your AEM Forms on JEE Environment {#hardening-your-aem-forms-on-jee-environment}
 
 Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.

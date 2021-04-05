@@ -4,8 +4,8 @@ description: Learn how to create translation projects in [!DNL Adobe Experience 
 contentOwner: AG
 role: Architect, Administrator
 feature: Translation
+exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 ---
-
 # Create translation projects {#creating-translation-projects}
 
 To create a language copy, trigger one of the following language copy workflows available under the References rail in the [!DNL Experience Manager] user interface.

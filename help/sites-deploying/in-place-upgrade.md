@@ -12,8 +12,8 @@ discoiquuid: fcb17227-ff1f-4b47-ae94-6b7f60923876
 docset: aem65
 
 feature: Upgrading
+exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 ---
-
 # Performing an In-Place Upgrade{#performing-an-in-place-upgrade}
 
 >[!NOTE]

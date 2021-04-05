@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
+exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 ---
-
 # Working with the Author Environment{#working-with-the-author-environment}
 
 >[!NOTE]
@@ -49,4 +49,3 @@ Two graphical user interfaces are provided to achieve this, these are accessible
     * Tablet devices (or desktop less than 1024 pixels wide):
 
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
-

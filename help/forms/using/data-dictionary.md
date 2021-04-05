@@ -10,8 +10,8 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 
 feature: Correspondence Management
+exl-id: aaed75e6-8849-46a8-b986-896ad729adda
 ---
-
 # Data Dictionary{#data-dictionary}
 
 ## Introduction {#introduction}
@@ -652,4 +652,3 @@ The Token.xsd associated to this sample would be:
 | TokenText |empty(null) |
 | TokenHeading |TokenText/TextHeading |
 | TokenBody |TokenText/TextBody |
-

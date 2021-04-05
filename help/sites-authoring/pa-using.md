@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
+exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 ---
-
 # Seeing Page Analytics Data{#seeing-page-analytics-data}
 
 Use page analytics data to gauge the effectiveness of the page content.
@@ -152,4 +152,3 @@ The **Activity Map Settings** dialog provides a range of options on three tabs:
     * Display Top (Gainers or Losers
     * Exclude bottom %
     * Auto Update (data and period)
-

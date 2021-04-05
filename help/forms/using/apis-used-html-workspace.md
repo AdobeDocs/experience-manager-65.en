@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
+exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 ---
-
 # APIs used in AEM Forms workspace {#apis-used-in-aem-forms-workspace}
 
 The following APIs are used in AEM Forms workspace.

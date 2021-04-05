@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
+exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
 ---
-
 # Programmatically Assembling PDF Documents {#programmatically-assembling-pdf-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

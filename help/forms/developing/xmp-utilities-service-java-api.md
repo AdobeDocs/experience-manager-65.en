@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
+exl-id: 699a7309-a976-480e-886f-2e466a477348
 ---
-
 # XMP Utilities Service Java API Quick Start (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
 The following Quick Starts are available for the XMP Utilities service.
@@ -238,4 +238,3 @@ The following code example imports XMP metadata and saves the new PDF file to di
      }
  }
 ```
-

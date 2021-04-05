@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
+exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 ---
-
 # Add Adobe Analytics to your Mobile Application{#add-adobe-analytics-to-your-mobile-application}
 
 >[!NOTE]
@@ -118,4 +118,3 @@ By instrumenting your source code with these method calls you are able to collec
 | API Endpoint |The base URL of the Adobe Mobile Services HTTP APIs |https://api.omniture.com |
 | Config Endpoint |The URL used to retrieve the ADB Mobile Config for the given report suite id |/ams/1.0/app/config/ |
 | Mobile Service Apps |Get a list of apps within the users company |/ams/1.0/apps |
-

@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
-
+exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 ---
-
 # Teasers and Strategies{#teasers-and-strategies}
 
 Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.

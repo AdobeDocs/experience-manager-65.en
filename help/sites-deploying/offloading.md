@@ -10,8 +10,8 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
+exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 ---
-
 # Offloading Jobs{#offloading-jobs}
 
 ## Introduction {#introduction}

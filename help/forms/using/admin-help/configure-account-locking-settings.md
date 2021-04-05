@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
+exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
 ---
-
 # Configure account-locking settings {#configure-account-locking-settings}
 
 When you add a domain, specify whether to enable account locking. When the Enable Account Locking option is selected, user accounts are locked after a specified number of consecutive authentication failures. After a specified length of time, the user can attempt to authenticate again. This feature prevents users from trying various credential combinations to access the system.
@@ -21,4 +21,3 @@ Use settings on the Domain Management page to specify the maximum number of auth
 1. In the Maximum Consecutive Authentication Failures box, enter the number of consecutive times a user can unsuccessfully attempt to log in before their account is locked. The default value is 20.
 1. In the Unlock The Account After (Minutes) box, enter the number of minutes that the user account is locked. After the specified number of minutes, the user can attempt to log in again. The default value is 30.
 1. Click **[!UICONTROL Save]**.
-

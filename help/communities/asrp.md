@@ -12,8 +12,8 @@ discoiquuid: 3e81b519-57ca-4ee1-94bd-7adac4605407
 docset: aem65
 
 role: Administrator
+exl-id: 6430ed96-5d96-41b6-866f-90b34ff84f7a
 ---
-
 # ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 
 ## About ASRP {#about-asrp}
@@ -143,4 +143,3 @@ In JCR, if [/conf/global/settings/communities](https://localhost:4502/crx/de/ind
 
 * Does not contain an [srpc](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp) node, it means that the storage provider is JSRP.
 * If the srpc node exists and contains [defaultconfiguration](https://localhost:4502/crx/de/index.jsp#/conf/global/settings/communities/srp/defaultconfiguration) node, the defaultconfiguration's properties define ASRP to be the default provider.
-

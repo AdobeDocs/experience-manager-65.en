@@ -6,8 +6,8 @@ seo-description: Learn how to use shared queues for Forms-centric workflows on A
 topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
+exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
 ---
-
 # Share and request access to Inbox items of a user {#share-and-request-access}
 
 A queue is a list of items in AEM Inbox of a user. These can be items assigned to a user or items shared to the group a user is a member of. You can access your Inbox to view and take action on the Inbox item. For example, share an item with another user.

@@ -9,8 +9,8 @@ docset: aem65
 
 feature: Viewers
 role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
+exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 ---
-
 # Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## What is Dynamic Media Viewers integration with Adobe Analytics and Experience Platform Launch? {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}

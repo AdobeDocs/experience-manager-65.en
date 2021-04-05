@@ -10,8 +10,8 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
+exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 ---
-
 # Reporting {#reporting}
 
 To help you monitor and analyze the state of your instance, AEM provides a selection of default reports, which can be configured for your individual requirements:

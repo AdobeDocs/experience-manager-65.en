@@ -10,8 +10,8 @@ discoiquuid: f9ff2cc5-3f0a-4b2f-a206-2fe0985646ea
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 6b6e27b5-8b4e-489c-9e72-4d256692c1ca
 ---
-
 # Placeholder text in AEM Forms {#placeholder-text-in-aem-forms}
 
 The placeholder text represents a word or short phrase. It is intended to aid the user with data entry when the control has no value. A placeholder text could be a sample value or a brief description of the expected format. The placeholder text is shown before the user enters a value, it is removed when the user enters or selects a value.
@@ -35,4 +35,3 @@ Placeholder texts are not supported for the native HTML5 date widget. To specify
 >[!NOTE]
 >
 >Placeholder text is not supported on Microsoft Internet Explorer 9.
-

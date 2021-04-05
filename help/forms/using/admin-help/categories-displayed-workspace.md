@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
+exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 ---
-
 # Managing the categories displayed in Workspace {#managing-the-categories-displayed-in-workspace}
 
 In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. You can set up the categories in administration console, or process designers can set them up in Workbench. When process designers creates processes, they assign them to categories.
@@ -46,4 +46,3 @@ You can remove only the categories that are not in use.
 
 1. In administration console, click Services &gt; Applications and Services &gt; Category Management.
 1. On the Category Management page, select the check box for the category to remove and click Remove. The category is no longer displayed.
-

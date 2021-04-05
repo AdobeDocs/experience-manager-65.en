@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8714b456-527a-457b-82c4-21bd445dfd9c
 docset: aem65
-
+exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
 ---
-
 # Activity Stream Essentials {#activity-stream-essentials}
 
 The activities of a signed in community member, such as posting to a forum or blog, is collected into a stream which may be filtered and displayed in various ways through configuration of the activity streams component.

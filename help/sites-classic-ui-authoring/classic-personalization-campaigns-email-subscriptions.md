@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
+exl-id: add05d22-3a11-49e9-a554-2315962552d5
 ---
-
 # Managing Subscriptions{#managing-subscriptions}
 
 >[!NOTE]
@@ -112,4 +112,3 @@ To configure an auto-responder email for a subscriber:
    >To make the sign-up form subscription function correctly, [encryption keys from author need to be exported and imported on the publish instance](#exporting-keys-from-author-and-importing-on-publish).
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
-

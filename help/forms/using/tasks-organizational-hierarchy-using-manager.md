@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
-
+exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
 ---
-
 # Managing tasks in an organizational hierarchy using Manager View{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 In AEM Forms workspace, managers can now access the tasks assigned to anyone in their hierarchy—direct or indirect reports—and perform various actions on them. The tasks are available in the To-do tab in the AEM Forms workspace. The actions supported on the tasks of direct reports are:

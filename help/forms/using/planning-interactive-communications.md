@@ -8,8 +8,8 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
+exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 ---
-
 # Tutorial: Plan the Interactive Communication {#tutorial-plan-the-interactive-communication}
 
 Plan the anatomy for your Interactive Communication
@@ -152,4 +152,3 @@ The following table illustrates the data source for each field in the anatomy of
   </tr>
  </tbody>
 </table>
-

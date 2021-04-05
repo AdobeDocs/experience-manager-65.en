@@ -11,8 +11,8 @@ discoiquuid: 9b06c394-8e26-429c-b78f-22afa271aeb3
 docset: aem65
 
 feature: Correspondence Management
+exl-id: 91ee4422-99c1-4907-a507-5968c6984f28
 ---
-
 # Post processing of letters and interactive communications{#post-processing-of-letters-and-interactive-communications}
 
 ## Post Processing {#post-processing}

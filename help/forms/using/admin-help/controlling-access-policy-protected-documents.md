@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
+exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
 ---
-
 # Controlling access to policy-protected documents {#controlling-access-to-policy-protected-documents}
 
 You can control the way in which recipients use your policy-protected documents no matter how widely you distribute them.

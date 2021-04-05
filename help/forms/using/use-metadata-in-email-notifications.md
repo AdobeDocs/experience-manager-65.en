@@ -7,9 +7,8 @@ uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
-
+exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
 ---
-
 # Use metadata in an email notification {#use-metadata-in-an-email-notification}
 
 You can use the Assign Task step to create and assign tasks to a user or group. When a task is assigned to a user or group, an email notification is sent to the defined user or to each member of the defined group. A typical [email notification](../../forms/using/use-custom-email-template-assign-task-step.md) contains link of the assigned task and information related to the task.
@@ -246,4 +245,4 @@ To create an OSGi bundle with Java interface, add [AEM Forms Client SDK](https:/
 
 1. Upload the bundle to an AEM Forms server. You can use AEM Package Manager to import the bundle to AEM Forms server.
 
-After the bundle is imported, you can select the metadata in the Assign Task step and use it an email template. 
+After the bundle is imported, you can select the metadata in the Assign Task step and use it an email template.

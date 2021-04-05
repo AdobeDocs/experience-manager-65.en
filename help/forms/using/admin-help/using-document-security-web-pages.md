@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
+exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 ---
-
 # Using the document security webpages {#using-the-document-security-webpages}
 
 Users and administrators use the document security web pages to create and manage policies, manage policy-protected documents, and monitor events that are associated with policy-protected documents. Administrators also use the web pages to create policy sets and designate policy set coordinators, configure document security default settings, manage invited user registration and accounts, and monitor and manage server, policy, user, and document-related events.
@@ -100,4 +100,3 @@ Log out when you finish using the web pages so that you can safely use your web 
 
 1. In the upper-right corner of the page, click Logout.
 1. If a message appears on the Logout page, close your browser window to completely log out. Otherwise, you can proceed to use the browser for other purposes.
-

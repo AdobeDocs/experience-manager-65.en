@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a3cbffb7-c1d1-47c2-bcfd-70f1e2d81ac9
+exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 ---
-
 # Preventing CSRF attacks {#preventing-csrf-attacks}
 
 ## How CSRF attacks work {#how-csrf-attacks-work}
@@ -75,4 +75,3 @@ When you run Configuration Manager, the default host and IP address or the forms
    If the Allowed Referer List is empty, the CSRF feature stops working and the system becomes insecure.
 
 1. After changing the Allowed Referer list, restart the AEM forms server.
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
+exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 ---
-
 # Customizing Views of Page Properties{#customizing-views-of-page-properties}
 
 Every page has a set of [properties](/help/sites-authoring/editing-page-properties.md) that can be viewed and edited by users; some are required when creating the page (create view), others can be viewed and edited (edit view) at a later stage. These page properties are defined and made available by the dialog ( `cq:dialog`) of the appropriate page component.

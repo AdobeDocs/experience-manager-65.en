@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
+exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
 ---
-
 # Create a Sample Page {#create-a-sample-page}
 
 As of AEM 6.1 Communities, the easiest way to create a sample page is to create a simple community site, consisting simply of a Page function.

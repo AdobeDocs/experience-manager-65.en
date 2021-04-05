@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
+exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 ---
-
 # Integrating with BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
 
 Create a BrightEdge cloud configuration so that AEM can connect using the credentials of your BrightEdge account. You can create multiple configurations if you use multiple accounts.
@@ -65,4 +65,3 @@ Activate a BrightEdge configuration to replicate it on the publish instance and 
 1. In the list of configurations that appear, ensure that your BrightEdge configuration is selected and then click Publish.
 
    ![chlimage_1-8](assets/chlimage_1-8a.png)
-

@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
-
+exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 ---
-
 # Experience the Published Site {#experience-the-published-site}
 
 ## Browse to New Site on Publish {#browse-to-new-site-on-publish}
@@ -225,4 +224,3 @@ Once signed in, the first page presented is their `Profile` page, which they can
 If the member forgets their login id, it is possible to recover is using their email address.
 
 ![forgotusername](assets/forgotusername.png)
-

@@ -9,8 +9,8 @@ content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 feature: Viewers
 role: Business Practitioner, Administrator
+exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
 ---
-
 # Embedding the Dynamic Media Video, Image viewer, or Dimensional viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
 Use the **[!UICONTROL Embed Code]** feature when you want to play the video or view an asset embedded on a web page. You copy the embed code to the clipboard so you can paste it in your web pages. Editing of the code is not permitted in the **[!UICONTROL Embed Code]** dialog box.

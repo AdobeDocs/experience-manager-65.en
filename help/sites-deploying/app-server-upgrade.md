@@ -12,8 +12,8 @@ discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
 
 feature: Upgrading
+exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 ---
-
 # Upgrade Steps for Application Server Installations{#upgrade-steps-for-application-server-installations}
 
 This section describes the procedure that needs to be followed in order to update AEM for Application Server installations.

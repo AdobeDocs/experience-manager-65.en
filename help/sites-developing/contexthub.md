@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
+exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
 ---
-
 # ContextHub{#contexthub}
 
 ContextHub is a framework for storing, manipulating, and presenting context data. The client-side Javascript API enables you to access the data for personalizing content.

@@ -4,8 +4,8 @@ description: Learn how to use XML schema as form model in an adaptive form. You 
 feature: Adaptive Forms
 role: Business Practitioner, Developers
 level: Beginner, Imtermediate
+exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 ---
-
 # Creating adaptive forms using XML Schema {#creating-adaptive-forms-using-xml-schema}
 
 ## Prerequisites {#prerequisites}

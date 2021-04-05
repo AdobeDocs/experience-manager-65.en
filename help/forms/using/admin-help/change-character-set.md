@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 811b31f8-5465-4fb2-b1f9-513936041771
+exl-id: 9ff75d98-54ad-425d-912f-d5a7501bf564
 ---
-
 # Change the character set {#change-the-character-set}
 
 You can specify the character set used to encode the output stream.
@@ -23,4 +23,3 @@ You can specify the character set used to encode the output stream.
    The character set must be a valid canonical name. The default value is ISO-8859-1.
 
 1. Click **[!UICONTROL Save]**.
-

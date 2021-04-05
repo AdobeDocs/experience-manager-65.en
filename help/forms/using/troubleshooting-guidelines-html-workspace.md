@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
+exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 ---
-
 # Troubleshooting guidelines for AEM Forms workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 This article discusses how to debug AEM Forms workspace by enabling logging and by using debugger in a browser. It also explains some common issues that you can encounter when using AEM Forms workspace and their workarounds.

@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
+exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 ---
-
 # Configuring email endpoints {#configuring-email-endpoints}
 
 Email endpoints enable users to invoke a service by sending one or more documents (as email attachments) to a specified email account. The email inbox acts as a collecting point for the attachments. The service monitors the inbox and processes the attachments. The results of the conversion are forwarded to the user defined in the endpoint.
@@ -265,4 +265,3 @@ For forms workflow to receive and handle incoming email messages from users, you
 1. In the mailFrom list, select Variable and type `%SENDER%` in the adjacent box. This maps the sender address to the Complete Task process data.
 1. In the results box, type `results`. This causes the Complete Task or Start Process to return a result string.
 1. Click Add.
-

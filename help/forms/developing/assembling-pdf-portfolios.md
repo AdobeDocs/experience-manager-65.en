@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 role: Developer
+exl-id: d2bd7c3e-4f75-4234-a7aa-ee8524430493
 ---
-
 # Assembling PDF Portfolios {#assembling-pdf-portfolios} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

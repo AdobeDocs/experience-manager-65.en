@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/programmatically_disassembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 role: Developer
+exl-id: de2f90ad-5dea-40a0-8c6d-d6b08228310d
 ---
-
 # Disassemble a PDF document using the web service API {#disassemble-a-pdf-document-usingthe-web-service-api} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

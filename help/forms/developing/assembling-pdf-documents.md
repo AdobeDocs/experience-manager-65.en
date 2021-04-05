@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3dd2b0d3-6023-490a-9b17-e29cc21c1b9d
 role: Developer
+exl-id: 991f5a4e-4752-4c0d-9926-de7e4855ecd1
 ---
-
 # Assembling PDF Documents {#assembling-pdf-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -26,4 +26,3 @@ Starting with LiveCycle ES 8.0 and later, support for PDF packages is available 
 >[!NOTE]
 >
 >For more information about the Assembler service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
-

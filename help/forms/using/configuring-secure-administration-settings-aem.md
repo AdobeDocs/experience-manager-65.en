@@ -9,8 +9,8 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Administrator
+exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 ---
-
 # Configuring Secure Administration Settings for AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
@@ -123,4 +123,3 @@ End users can authenticate to AEM Forms through Workbench, AEM Forms web applica
 1. In administration console, navigate to the Import And Export Configuration Files page. 
 1. Enter the path to the modified config.xml file or click Browse to navigate to it. 
 1. Click **Import** to upload the modified config.xml file and then click **OK**.
-

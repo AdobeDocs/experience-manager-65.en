@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
+exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 ---
-
 # Working with stalled operations and branches {#working-with-stalled-operations-and-branches}
 
 The Stalled Operations page and the Stalled Branches page show the processes that have stalled. A process can stall when an error occurs during or after the execution of an operation or because of a deliberate stall operation in the process:

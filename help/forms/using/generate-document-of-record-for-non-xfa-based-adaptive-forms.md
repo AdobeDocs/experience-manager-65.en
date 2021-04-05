@@ -11,8 +11,8 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
-
 # Generate Document of Record for adaptive forms{#generate-document-of-record-for-adaptive-forms}
 
 ## Overview {#overview}
@@ -377,4 +377,3 @@ Keep in mind the following considerations and limitations when working on docume
 * Document fragments in an adaptive form do not appear in the document of record. However, adaptive form fragments are supported.
 * Content binding in document of record generated for XML Schema based adaptive form is not supported.
 * Localized version of document of record is created on demand for a locale when the user requests the rendering of the document of record. Localization of document of record occurs along with localization of adaptive form. For more information on localization of document of record and adaptive forms see [Using AEM translation workflow to localize adaptive forms and document of record](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
-

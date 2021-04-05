@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
+exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 ---
-
 # Configure service settings {#configure-service-settings}
 
 You can use the Service Management page to configure settings for each of the services that are part of AEM forms. The available settings vary depending on the service being configured.
@@ -865,4 +865,3 @@ Each service can take advantage of the pooling capabilities to handle incoming i
    **New Instance for Each Request:** A new service instance is created for each invocation received.
 
 1. Click Save.
-

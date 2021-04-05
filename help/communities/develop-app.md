@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
+exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 ---
-
 # Develop Sandbox Application  {#develop-sandbox-application}
 
 In this section, now that the template has been setup in the [initial application](initial-app.md) section, and the initial pages established in the [initial content](initial-content.md) section, the application can be developed using foundation scripts including the ability to enable authoring with Communities components. At the end of this section, the website will be functional.

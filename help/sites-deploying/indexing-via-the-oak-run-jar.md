@@ -8,8 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
+exl-id: dcec8c1b-13cc-486c-b1a4-62e6eb3184ad
 ---
-
 # Indexing via the Oak-run Jar {#indexing-via-the-oak-run-jar}
 
 Oak-run supports all indexing use cases on the command line without having to operate from the JMX level. Advantages of the oak-run approach are:
@@ -174,4 +174,3 @@ If the time or performance impact of re-indexing using non `oak-run.jar` methods
 If the time or performance impact of re-indexing using non `oak-run.jar` methods is too high, the following `oak-run.jar` based approach can be used to import and re-index Lucene Index definitions in MongoMK based AEM installations.
 
 ![11](assets/11.png)
-

@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
+exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 ---
-
 # Adding, enabling, modifying, or removing endpoints {#adding-enabling-modifying-or-removing-endpoints}
 
 ## Add an endpoint to a service {#add-an-endpoint-to-a-service}
@@ -67,4 +67,3 @@ You can also do this task from the Service Management page by selecting a servic
 
 1. In administration console, click Services &gt; Applications and Services &gt; Endpoint Management.
 1. On the Endpoint Management page, select the check box for the endpoint to remove and click Remove. The endpoint is no longer displayed.
-

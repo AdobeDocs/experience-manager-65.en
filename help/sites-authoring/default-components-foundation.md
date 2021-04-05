@@ -12,9 +12,8 @@ discoiquuid: ea2a523e-8d26-4be4-822f-35f153e40308
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
-
+exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 ---
-
 # Foundation Components {#foundation-components}
 
 >[!CAUTION]
@@ -1571,4 +1570,3 @@ The standard text field can be configured to your required size and with with yo
 This allows you to create a Submit button for use in a workflow.
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
-

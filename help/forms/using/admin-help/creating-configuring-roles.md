@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
+exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 ---
-
 # Creating and configuring roles{#creating-and-configuring-roles}
 
 Using the User Management web pages, you can associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
@@ -353,4 +353,3 @@ Use the Role Management page to remove users and groups from a particular role. 
 1. In the list of roles, click the name of the role to update and then click the Role Users tab. A list of users and groups associated with the role are displayed.
 1. Select the check boxes for the users and groups to remove from the role and click Unassign.
 1. Click Save and then click OK.
-

@@ -13,8 +13,8 @@ docset: aem65
 
 feature: Brand Portal
 role: Business Practitioner
+exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 ---
-
 # Publish folders to Brand Portal{#publish-folders-to-brand-portal}
 
 As an Adobe Experience Manager (AEM) Assets administrator, you can publish assets and folders to the AEM Assets Brand Portal instance (or schedule the publish workflow to a later date/time) for your organization. However, you must first integrate AEM Assets with Brand Portal. For details, see [Configure AEM Assets with Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
@@ -96,4 +96,3 @@ You have the option to unpublish folders from Brand Portal quickly or schedule i
 >[!NOTE]
 >
 >The procedure to publish/unpublish an asset to/from Brand Portal is similar to the corresponsing procedure for a folder.
-

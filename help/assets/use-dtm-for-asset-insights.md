@@ -4,8 +4,8 @@ description: Learn how to use Adobe Dynamic Tag Management (DTM) to enable Asset
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Insights,Asset Reports
+exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 ---
-
 # Enable Asset Insights through DTM {#enable-asset-insights-through-dtm}
 
 Adobe Dynamic Tag Management is a tool that activates your digital marketing tools. It is provided for free to Adobe Analytics customers. You can either customize your tracking code to enable third-party CMS solutions to use Asset Insights or you can use DTM to insert Asset Insights tags. Insights are only supported and provided for images.

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
+exl-id: 4ca76b50-d56d-4f4d-be92-bf8929c5d754
 ---
-
 # Catalog Essentials {#catalog-essentials}
 
 This page provides the essential information for working with the catalog feature of enablement community sites.
@@ -112,4 +112,3 @@ The pre-filter [TagIDs](../../help/sites-developing/framework.md#tagid) must exa
 * [Reporting API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/api/package-summary.html)
 
 * [Reporting Analytics API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/enablement/client/reporting/analytics/api/package-summary.html)
-

@@ -4,8 +4,8 @@ description: Configure [!DNL Adobe Experience Manager] to allow users in [!DNL E
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Collaboration
+exl-id: 130cec6d-1cdd-4304-94bb-65e6bb573e55
 ---
-
 # [!DNL Adobe Experience Manager] to [!DNL Adobe Creative Cloud] folder sharing {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]

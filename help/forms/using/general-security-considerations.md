@@ -11,8 +11,8 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 
 role: Administrator
+exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 ---
-
 # General Security Considerations for AEM Forms on JEE{#general-security-considerations-for-aem-forms-on-jee}
 
 This article provides introductory information that helps you prepare for hardening your AEM Forms environment. It includes prerequisite information about AEM Forms on JEE, operating system, application server, and database security. Review this information before you continue to lock down your environment.

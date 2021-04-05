@@ -10,9 +10,8 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 7c8f2cec-870b-41a8-8d98-70e29b495587
 docset: aem65
-
+exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
 ---
-
 # SEO and URL Management Best Practices{#seo-and-url-management-best-practices}
 
 Search Engine Optimization (SEO) has become a key concern for many marketers. As a result, SEO concerns need to be addressed on many AEM projects.
@@ -402,4 +401,3 @@ For more information, please see the following additional resources:
 * [https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/](https://www.internetmarketingninjas.com/blog/search-engine-optimization/301-redirects/)
 * [https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/dispatcher/redirectTester)
 * [https://adobe-consulting-services.github.io/](https://adobe-consulting-services.github.io/)
-

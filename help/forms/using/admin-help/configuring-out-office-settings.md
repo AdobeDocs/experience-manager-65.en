@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
+exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 ---
-
 # Configuring Out of Office Settings {#configuring-out-of-office-settings}
 
 The Out of Office feature enables users or administrators to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms. While a user is set to Out of Office, their tasks are assigned to one or more designated users. Users can change their Out of Office settings in Workspace or administrators can change the settings on a user’s behalf in forms workflow.
@@ -64,4 +64,3 @@ While a user is out of the office, you can assign one or more users to perform a
 
     1. If there are any processes that should not be sent to the default user, click Add An Exception, then select the process and select another user from the list. You can also select Do Not Assign to have the task remain assigned to the user who is out of the office.
     1. Click Save.
-

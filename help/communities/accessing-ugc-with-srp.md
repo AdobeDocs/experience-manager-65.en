@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
-
+exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
 ---
-
 # Accessing UGC with SRP {#accessing-ugc-with-srp}
 
 ## About SRP {#about-srp}
@@ -73,4 +72,3 @@ For more information, see [Search Essentials](/help/communities/search-implement
 * [SRP and UGC Essentials](/help/communities/srp-and-ugc.md) - SRP utility methods and examples
 * [Search Essentials](/help/communities/search-implementation.md) - essential information for searching UGC
 * [SocialUtils Refactoring](/help/communities/socialutils.md) - mapping deprecated utility methods to current SRP utility methods
-

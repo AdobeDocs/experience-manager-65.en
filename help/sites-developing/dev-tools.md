@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
+exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
 ---
-
 # Development Tools{#development-tools}
 
 To develop your JCR, Apache Sling or AEM applications, the following tool sets are available:
@@ -55,4 +55,3 @@ Tools that facilitate creation of new projects:
 >
 >Following tutorial might be of interest for starting a new AEM project:
 >[Getting Started with AEM Sites Part 1 - Project Setup](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
-

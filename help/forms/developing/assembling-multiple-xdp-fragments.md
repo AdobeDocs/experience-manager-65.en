@@ -13,8 +13,8 @@ discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 
 role: Developer
+exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
 ---
-
 # Assembling Multiple XDP Fragments{#assembling-multiple-xdp-fragments}
 
 You can assemble multiple XDP fragments into a single XDP document. For example, consider XDP fragments where each XDP file contains one or more subforms used to create a health form. The following illustration shows the outline view (represents the tuc018_template_flowed.xdp file used in the *Assembling multiple XDP fragments* quick start):

@@ -12,8 +12,8 @@ discoiquuid: ecd7f538-9c24-48e7-8450-596851e99cff
 docset: aem65
 
 feature: Designer
+exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 ---
-
 # Using Scribble Signature in HTML5 forms{#using-scribble-signature-in-html-forms}
 
 HTML5 forms are increasingly being used on touch devices, and one common requirement is to support signatures. Scribing (Writing with a stylus or finger) is becoming an accepted way of signing forms on mobile devices. HTML5 forms and Forms Designer now enable the option of having a scribble signature field on the form. When the form is rendered in the browser, one can sign on these fields using a stylus, mouse, or touch.

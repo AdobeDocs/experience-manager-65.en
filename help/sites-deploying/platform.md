@@ -10,8 +10,8 @@ topic-tags: platform
 content-type: reference
 discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
+exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 ---
-
 # Introduction to the AEM Platform{#introduction-to-the-aem-platform}
 
 The AEM platform in AEM 6 is based on Apache Jackrabbit Oak.
@@ -130,4 +130,3 @@ For more information regarding the AEM platform, also check the articles below:
 * [Oak Queries and Indexing](/help/sites-deploying/queries-and-indexing.md)
 * [Storage Elements in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM with MongoDB](/help/sites-deploying/aem-with-mongodb.md)
-

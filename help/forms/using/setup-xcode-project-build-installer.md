@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
-
+exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
 ---
-
 # Set up the Xcode project and build the iOS app{#set-up-the-xcode-project-and-build-the-ios-app}
 
 AEM Forms provides the complete source code of the AEM Forms app. The source contains all components to build custom AEM Forms app. The source code archive, `adobe-lc-mobileworkspace-src-<version>.zip` is a part of the `adobe-aemfd-forms-app-src-pkg-<version>.zip` package on Software Distribution.

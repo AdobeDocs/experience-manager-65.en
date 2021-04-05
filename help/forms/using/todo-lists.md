@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
-
+exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
 ---
-
 # Working with To-do lists{#working-with-to-do-lists}
 
 When you view your To-do lists, you may see tasks from a business process that are assigned to you, or to any groups that you belong to, or are the shared tasks of other users. You can open, work on, and complete the tasks as required, such as approving or rejecting a request or adding more information. After you complete a task, it is sent to the next person in the business process,

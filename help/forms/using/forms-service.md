@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
+exl-id: bd1216e4-2248-484b-a3c1-c209da4ff94f
 ---
-
 # Forms Service {#forms-service}
 
 ## Overview {#overview}
@@ -51,4 +51,3 @@ The following are the advantages of using fragments:
 * **Content reuse**: You can reuse content in multiple form designs. To quickly reuse parts of the same content in multiple forms, create a fragment. Copying or re-creating the content takes a longer time. Using fragments also ensures that the frequently used parts of a form design have consistent content and appearance in all the referencing forms.
 * **Global updates**: You can make global changes to multiple forms only once in a file. You can change the content, script objects, data bindings, layout, or styles in a fragment. All XDP forms that reference the fragment reflect the changes.
 * **Shared form creation**: You can share the creation of forms among several resources. Form developers with expertise in scripting or other advanced features of AEM Forms Designer can develop and share fragments that use scripting and dynamic properties. Form designers can use the fragments to design forms. In addition, they can use the fragments to ensure that all parts of a form have a consistent appearance and functionality across multiple forms.
-

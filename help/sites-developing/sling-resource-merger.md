@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
+exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
 ---
-
 # Using the Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Purpose {#purpose}
@@ -263,4 +263,3 @@ Some examples are covered:
 * Override:
 
     * [Configuring your Page Properties](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
-

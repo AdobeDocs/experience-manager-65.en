@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
+exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 ---
-
 # Editing Page Properties{#editing-page-properties}
 
 You can define the required properties for a page. These can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
@@ -187,4 +187,3 @@ Page Properties define the various properties of the page, such as titles, when 
    This opens a dialog with multiple tabs.
 
 1. Make the changes you require, then click **OK** to save.
-

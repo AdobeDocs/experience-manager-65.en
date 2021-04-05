@@ -13,8 +13,8 @@ docset: aem65
 targetaudience: target-audience upgrader
 
 feature: Upgrading
+exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
 ---
-
 # Upgrade Procedure {#upgrade-procedure}
 
 >[!NOTE]
@@ -195,4 +195,3 @@ The assumed topology for this section consists of two TarMK publish instances, f
 1. Perform [post-upgrade checks](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 
 ![final](assets/final.jpg)
-

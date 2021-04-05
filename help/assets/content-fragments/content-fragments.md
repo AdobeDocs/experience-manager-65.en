@@ -13,8 +13,8 @@ docset: aem65
 
 feature: Content Fragments
 role: Business Practitioner, Administrator
+exl-id: b204df18-2aef-4905-82f8-c777928ba828
 ---
-
 # Working with Content Fragments{#working-with-content-fragments}
 
 Adobe Experience Manager (AEM) Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-authoring/content-fragments.md). They allow you to prepare content ready for use in multiple locations/over multiple channels.

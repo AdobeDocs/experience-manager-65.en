@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
+exl-id: 0e92d1ad-12bd-4bfd-81cc-9be8e376c5ca
 ---
-
 # Invoking AEM Forms using APIs {#invoking-aem-forms-using-apis} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -26,4 +26,3 @@ Services require a service container to run, similar to how Enterprise JavaBeans
 >[!NOTE]
 >
 >Programming with AEM forms does not include information on how to invoke AEM Forms using Watched Folders or e-mail.
-

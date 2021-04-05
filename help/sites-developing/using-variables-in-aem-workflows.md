@@ -9,9 +9,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: bbb9936e-ecd2-44b3-b4ae-dd62a3160641
 docset: aem65
-
+exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 ---
-
 # Variables in AEM workflows{#variables-in-aem-workflows}
 
 A variable in a workflow model is a way to store a value based on its data type. You can then use the name of the variable in any workflow step to retrieve the value stored in the variable. You can also use variable names to define expressions for taking routing decisions.
@@ -253,4 +252,3 @@ Execute the following steps to delete a variable:
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
 1. Tap the Delete icon next to the variable name that you want to delete.
 1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to confirm and delete the variable.
-

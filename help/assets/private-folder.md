@@ -4,8 +4,8 @@ description: Learn how to create a private folder in the [!DNL Adobe Experience 
 contentOwner: AG
 role: Business Practitioner
 feature: Collaboration
+exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 ---
-
 # Private folder in [!DNL Adobe Experience Manager Assets] {#private-folder}
 
 You can create a private folder in the [!DNL Adobe Experience Manager Assets] user interface that is available exclusively to you. You can share this private folder to other users and assign various privileges to them. Based on the privilege level you assign, users can perform various tasks on the folder, for example view assets within the folder or edit the assets.

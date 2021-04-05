@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
+exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
 ---
-
 # Set up the Android studio project and build the Android app {#set-up-the-android-studio-project-and-build-the-android-app}
 
 This article is for building the AEM Forms App 6.3.1.1 and later versions. For building an app from source code of source code of the AEM Forms App 6.3, see [Set up the Eclipse project and build the Android™ app](/help/forms/using/setup-eclipse-project-build-installer.md). 

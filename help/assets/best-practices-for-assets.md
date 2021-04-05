@@ -4,8 +4,8 @@ description: Enhances system stability and performance under load by identifying
 contentOwner: AG
 feature: Asset Management
 role: Architect, Administrator
+exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
 ---
-
 # Best Practices for [!DNL Assets] {#best-practices-for-assets}
 
 [!DNL Adobe Experience Manager Assets] is a crucial part of delivering high-quality digital marketing experiences that contribute to the achievement of business goals through increasing your content velocity. If you work with a large number of assets within [!DNL Experience Manager Assets] or regularly/periodically upload numerous assets, including videos and Dynamic Media, optimizing your digital asset management experience is critical for system efficiency.

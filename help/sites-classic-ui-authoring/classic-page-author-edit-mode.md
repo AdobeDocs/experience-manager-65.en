@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
-
+exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 ---
-
 # Components for Page Authoring{#components-for-page-authoring}
 
 The following components are intended for use when authoring content for a standard web page. They form a subset of the components available out-of-the-box for a standard installation of AEM.

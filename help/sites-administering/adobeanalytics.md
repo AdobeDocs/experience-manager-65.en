@@ -10,9 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
-
+exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 ---
-
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 
 Integrating Adobe Analytics and AEM allows you to track your web page activity:
@@ -58,4 +57,3 @@ See:
 >* **Apache HTTP Components Proxy Configuration** to configure the 4.x API;
 >  for example, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-

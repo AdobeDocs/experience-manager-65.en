@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
+exl-id: ed494922-3e15-4778-84c1-35c8846ce980
 ---
-
 # Initial Setup for Enablement  {#initial-setup-for-enablement}
 
 ## Start Author and Publish Instances {#start-author-and-publish-instances}
@@ -210,4 +210,3 @@ Scroll down to `Add User to Groups`:
 * Select **[!UICONTROL Save]**
 
 ![admin-role](assets/admin-role.png)
-

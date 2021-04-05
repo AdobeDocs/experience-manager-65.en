@@ -7,8 +7,8 @@ page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
+exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 ---
-
 # Tutorial: Apply rules to adaptive form fields {#tutorial-apply-rules-to-adaptive-form-fields}
 
  ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
@@ -145,4 +145,3 @@ The following procedure shows how to create a rule to displays an error message 
 1. Preview the adaptive form. Enter an incorrect Customer ID. An error message appears.
 
    ![display-validation-error](assets/display-validation-error.gif)
-

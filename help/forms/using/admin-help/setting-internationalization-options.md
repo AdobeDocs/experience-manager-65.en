@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
+exl-id: 6cf82c2b-29f0-49d5-a138-99d7801d5a28
 ---
-
 # Setting internationalization options{#setting-internationalization-options}
 
 ## Specify the locale used to render forms {#specify-the-locale-used-to-render-forms}
@@ -28,4 +28,3 @@ You can specify the locale used when rendering a PDF form. The fields on a PDF f
    For HTML transformations, AEM forms supports character encoding values defined by the `java.nio.charset` package. If sFormPreference is PDFForm, only specific character sets are supported. The character set must be a valid canonical name. The default value is ISO-8859-1.
 
 1. Click Save.
-

@@ -3,8 +3,8 @@ title: AEM Fluid Experiences Feature List
 description: Fluid Experiences Feature List
 index: n
 feature: Authoring
+exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 ---
-
 # AEM Fluid Experiences Feature List{#aem-fluid-experiences-feature-list}
 
 Adobe Experience Manager Fluid Experiences draws from the powerful feature sets of AEM Sites, AEM Dynamic Media, and AEM Assets to provide a robust solution for headless content delivery.

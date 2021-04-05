@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
+exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 ---
-
 # Preparing AEM Forms for Backup {#preparing-aem-forms-for-backup} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -262,4 +262,3 @@ Leave backup mode by using the Backup and Restore Service API (web service):
 1. Retrieve information about the backup mode session on the server
 
    Retrieve the backup mode identifier after the operation to verify that it was successful. The information that you can retrieve after you leave backup mode may be useful for integrating with your backup procedures.
-

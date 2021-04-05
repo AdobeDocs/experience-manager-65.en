@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
+exl-id: be076477-2681-4570-953d-6c44d3c30843
 ---
-
 # Configuring security settings{#configuring-security-settings}
 
 You can limit access to PDF documents by setting passwords and by restricting certain features, such as printing and editing. When a PDF document has restricted features, tools and menu items that are related to those features are dimmed. You can also use other methods to create secure documents, such as encrypting or certifying a document. A security setting contains the password and specific options to use for certain PDF conversions.
@@ -116,4 +116,3 @@ You can delete a security setting if it is no longer required. However, preconfi
 1. In administration console, click **[!UICONTROL Services > PDF Generator > Security Settings]**.
 1. Select the check box beside the setting to delete. You can select multiple settings.
 1. Click **[!UICONTROL Delete]** and on the **[!UICONTROL Delete Confirmation]** page, click **[!UICONTROL Delete]** again.
-

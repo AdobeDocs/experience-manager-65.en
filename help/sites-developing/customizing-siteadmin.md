@@ -10,9 +10,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
-
+exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 ---
-
 # Customizing the Websites Console (Classic UI){#customizing-the-websites-console-classic-ui}
 
 ## Adding a Custom Column to the Websites (siteadmin) Console {#adding-a-custom-column-to-the-websites-siteadmin-console}

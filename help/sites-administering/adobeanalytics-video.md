@@ -10,9 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
-
+exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 ---
-
 # Configuring Video Tracking for Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 There are several methods available for tracking video events, 2 of which are legacy options for older versions of Adobe Analytics. These legacy option are: Legacy Milestones and Legacy Seconds.

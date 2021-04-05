@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
+exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 ---
-
 # Dynamic Model to Component Mapping for SPAs{#dynamic-model-to-component-mapping-for-spas}
 
 This document describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
@@ -50,4 +50,3 @@ Each component is extended with the capabilities of the [ `ModelProvider`](/help
 1. Pieces of the model are finally propagated to each individual child component.
 
 ![app_model_initialization](assets/app_model_initialization.png)
-

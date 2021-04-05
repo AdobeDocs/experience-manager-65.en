@@ -10,8 +10,8 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 
 feature: Adaptive Forms
+exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 ---
-
 # Creating accessible adaptive forms{#creating-accessible-adaptive-forms}
 
 ## Introduction {#introduction}

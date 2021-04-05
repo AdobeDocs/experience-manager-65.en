@@ -10,8 +10,8 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 feature: Language Copy
+exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 ---
-
 # Managing Translation Projects{#managing-translation-projects}
 
 After preparing content for translation, you need to complete the language structure by creating missing language copies, and create translation projects.
@@ -449,4 +449,3 @@ You can import translated content into AEM, for example when your translation pr
 1. From the drop-down menu of the Translation Job tile, click or tap Import.
 1. Use the web browser's dialog box to select the file to import.
 1. On the Import dialog box, click or tap Close.
-

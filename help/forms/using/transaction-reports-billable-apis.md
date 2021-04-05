@@ -8,9 +8,8 @@ topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
-
+exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
 ---
-
 # Transaction Reports Billable APIs{#transaction-reports-billable-apis}
 
 AEM Forms provides several APIs to submit forms, process documents, and render documents. Some APIs are accounted as transactions and others are free to use. This document provides a list of all the APIs that are accounted as transactions in a transaction report. Here are a few common scenarios where a billable API is used:
@@ -478,4 +477,3 @@ Actions like submitting a PDF Form, using Agent UI to preview an interactive com
 * [Transaction Reports Overview](../../forms/using/transaction-reports-overview.md)
 * [Viewing and Understanding a Transaction Reports](../../forms/using/viewing-and-understanding-transaction-reports.md)
 * [Record a transaction for custom implementations](/help/forms/using/record-transaction-custom-implementation.md)
-

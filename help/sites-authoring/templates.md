@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
-
+exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 ---
-
 # Creating Page Templates{#creating-page-templates}
 
 When creating a page you must select a template, which will be used as the basis for creating the new page. The template defines the structure of the resultant page, any initial content, and the components that can be used.

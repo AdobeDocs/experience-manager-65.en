@@ -8,9 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
-
+exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 ---
-
 # Integrating third-party applications in AEM Forms workspace{#integrating-third-party-applications-in-aem-forms-workspace}
 
 AEM Forms workspace supports the management of task assignment and completion activities for forms and documents. These forms and documents can be XDP Forms, Flex® forms, or Guides (deprecated) that have been rendered in XDP, PDF, HTML, or Flex formats.

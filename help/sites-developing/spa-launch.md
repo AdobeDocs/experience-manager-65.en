@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: spa
 discoiquuid: 6c320633-ce0b-4eb1-bb54-05e1a514d139
 docset: aem65
-
+exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
 ---
-
 # SPA and Adobe Experience Platform Launch Integration{#spa-and-adobe-experience-platform-launch-integration}
 
 Adobe Experience Platform Launch is the recommended way to implement Analytics, Target, and Audience Manager within Single Page Applications (SPAs).

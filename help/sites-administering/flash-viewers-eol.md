@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
+exl-id: bb87898d-252e-4907-af03-11021d0d57fe
 ---
-
 # Flash Viewers End-of-Life Notice{#flash-viewers-end-of-life-notice}
 
 *Effective January 31, 2017, Adobe Dynamic Media Classic (formerly Scene7) officially ended support for the Flash viewer platform.*

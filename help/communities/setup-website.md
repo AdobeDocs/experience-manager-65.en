@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
+exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
 ---
-
 # Setup Website Structure {#setup-website-structure}
 
 To setup your website, the instructions below describe the folders to create in the following locations:

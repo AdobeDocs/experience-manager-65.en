@@ -4,8 +4,8 @@ description: Learn how to use the Watermarking feature to add a digital watermar
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Management
+exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 ---
-
 # Watermark your digital assets {#watermarking}
 
 [!DNL Adobe Experience Manager Assets] allows you to add a digital watermark to assets that helps users verify the authenticity and copyright ownership of the assets. [!DNL Experience Manager Assets] supports text to be used as a watermark on PNG and JPEG files.

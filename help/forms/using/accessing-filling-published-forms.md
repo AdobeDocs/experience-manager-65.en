@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
-
+exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 ---
-
 # Accessing and filling published forms{#accessing-and-filling-published-forms}
 
 In a forms-centric portal deployment setup, forms development and portal development are two distinct activities. While form designers design and store forms in a repository, Web Developers create a web application to that list forms and handle submissions. Forms are then copied over to the web tier as there is no communication between the forms repository and the web application.

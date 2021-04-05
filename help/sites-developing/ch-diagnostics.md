@@ -7,8 +7,8 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
 ---
-
 # ContextHub Diagnostics {#contexthub-diagnostics}
 
 ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework. To open the page, go to the `contexthub.diagnostics.html` page of your AEM author instance, for example:

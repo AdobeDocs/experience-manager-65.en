@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
+exl-id: fdc91054-3f7e-4cbf-bdfa-7d7a621747f1
 ---
-
 # Create targeted experiences in AEM Forms {#create-targeted-experiences-in-aem-forms}
 
 ## Integrate Adobe Target with AEM Forms {#integrate-adobe-target-with-aem-forms}

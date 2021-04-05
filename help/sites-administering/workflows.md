@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
+exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 ---
-
 # Administering Workflows{#administering-workflows}
 
 Workflows enable you to automate Adobe Experience Manager (AEM) activities. Workflows:
@@ -105,4 +105,3 @@ Depending on the current status, you can perform actions on running workflow ins
 
 * **Resume**: Restarts a suspended workflow at the same point of execution where it was suspended, using the same configuration.
 * **Terminate**: Ends the workflow execution and changes the state to **ABORTED**. An aborted workflow instance cannot be restarted.
-

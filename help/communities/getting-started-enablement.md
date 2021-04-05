@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
+exl-id: 03fe29ae-2806-4906-b248-7db29ab12069
 ---
-
 # Getting Started with AEM Communities for Enablement {#getting-started-with-aem-communities-for-enablement}
 
 AEM Communities helps brands create consistent experiences across digital and in-person channels by facilitating enablement across employees and customers with a catalog of enablement resources, assigned content, and dynamic recommendations—all delivered within a social community to foster engagement.
@@ -30,4 +30,3 @@ For a tutorial on quickly setting up an [engagement community](overview.md#engag
 * [Create and Assign a Resource](resource.md)
 
 * [Experience the Published Site](enablement-published-site.md)
-

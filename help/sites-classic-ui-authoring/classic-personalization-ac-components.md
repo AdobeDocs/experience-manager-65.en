@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
-
+exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 ---
-
 # Adobe Campaign Components{#adobe-campaign-components}
 
 When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms. Both are described in this document.

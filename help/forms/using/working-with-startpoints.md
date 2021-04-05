@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
-
+exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
 ---
-
 # Working with Startpoints{#working-with-startpoints}
 
 A startpoint invokes a process created in Workbench. It is associated with a form which invokes the process when the form is submitted.

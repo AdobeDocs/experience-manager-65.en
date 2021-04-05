@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
-
+exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
 ---
-
 # Creating and Managing Offers{#creating-and-managing-offers}
 
 Use the Offers console to create offers that you can [use in activity experiences](/help/sites-authoring/content-targeting-touch.md). Creating offers in the Offers console saves time when several experiences require the same offer:

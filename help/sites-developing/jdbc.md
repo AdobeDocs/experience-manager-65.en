@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
+exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 ---
-
 # Connecting to SQL Databases{#connecting-to-sql-databases}
 
 Access an external SQL database to so that your CQ applications can interact with the data:
@@ -169,4 +169,3 @@ The following example JSP code obtains an instance of the hsqldbds data source, 
 >[!NOTE]
 >
 >To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
-

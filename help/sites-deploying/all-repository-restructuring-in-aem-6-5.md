@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
+exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 ---
-
 # Common Repository Restructuring in AEM 6.5 {#common-repository-restructuring-in-aem}
 
 As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes potentially impacting all solutions. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
@@ -849,4 +849,3 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
   </tr>
  </tbody>
 </table>
-

@@ -12,8 +12,8 @@ discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
 
 role: Administrator
+exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 ---
-
 # Compatibility Package{#compatibility-package}
 
 ## Overview {#overview}
@@ -71,4 +71,3 @@ By installing the Compatibility package, you can make the following assets and t
     * /libs/fd/af/components/page/survey
     * /libs/fd/af/components/page/tabbedenrollment
     * /libs/fd/afaddon/components/page/advancedenrollment
-

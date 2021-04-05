@@ -9,8 +9,8 @@ content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 feature: Asset Management
 role: Business Practitioner, Administrator
+exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 ---
-
 # Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
 
 Use the Responsive code feature when you want to share the code for responsive serving with your web developer. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.

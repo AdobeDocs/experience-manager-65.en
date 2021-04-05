@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
+exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
 ---
-
 # Using Reviews and Reviews Summary (Display) {#using-reviews-and-reviews-summary-display}
 
 The `Reviews` component is a composite of [Comments](comments.md) and [Rating](rating.md) components ready for use.

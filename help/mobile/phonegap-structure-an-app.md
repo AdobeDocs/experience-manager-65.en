@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
+exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 ---
-
 # Structure an App{#structure-an-app}
 
 >[!NOTE]

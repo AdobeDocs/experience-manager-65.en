@@ -10,9 +10,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
-
+exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 ---
-
 # Experience Fragments{#experience-fragments}
 
 ## The Basics {#the-basics}

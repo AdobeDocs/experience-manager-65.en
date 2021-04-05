@@ -10,8 +10,8 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 
 role: Administrator
+exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 ---
-
 # Install and configure data capture capabilities{#install-and-configure-data-capture-capabilities}
 
 ## Introduction {#introduction}
@@ -234,4 +234,3 @@ You have configured an environment to use AEM Forms data capture capabilities. N
 * [Create your first adaptive form](/help/forms/using/create-your-first-adaptive-form.md)
 * [Create your first PDF form](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introduction to HTML5 Forms](/help/forms/using/introduction.md)
-

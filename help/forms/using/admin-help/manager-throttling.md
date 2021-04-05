@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
+exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 ---
-
 # Work Manager and throttling{#work-manager-and-throttling}
 
 AEM forms (and earlier versions) used JMS queues to execute operations asynchronously. In AEM forms, JMS queues have been replaced by Work Manager. This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
@@ -99,4 +99,3 @@ You can configure throttling for Work Manager, so that work items are scheduled 
 1. Under Additional Properties, click Java Virtual Machine.
 1. In the Generic JVM arguments box, type the arguments you require.
 1. Click OK or Apply, and then click Save directly to the master configuration.
-
