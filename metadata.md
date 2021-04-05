@@ -1,8 +1,9 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager
+version: 6.5
 type: Documentation
 index: y
 ---

@@ -1,12 +1,12 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
-feature-set: Experience Manager Assets
+feature-set: Experience Manager Assets, Experience Manager, Experience Manager Sites
 ---
 
 # Assets Guide {#assets}

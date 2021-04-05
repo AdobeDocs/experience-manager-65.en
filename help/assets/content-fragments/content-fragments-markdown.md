@@ -11,6 +11,8 @@ content-type: reference
 discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
 
+feature: Content Fragments
+role: Business Practitioner, Administrator
 ---
 
 # Markdown{#markdown}

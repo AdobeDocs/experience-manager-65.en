@@ -3,6 +3,7 @@ title: Best practices to translate assets
 description: Best practices for efficient management of assets to synchronize various translated versions and to streamline translation workflows.
 contentOwner: AG
 role: Administrator
+feature: Asset Management
 ---
 
 # Best practices to translate assets {#best-practices-for-translating-assets-efficiently}
