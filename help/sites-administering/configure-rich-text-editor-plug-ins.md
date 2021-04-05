@@ -66,13 +66,13 @@ When using the replace functionality, the replace string to be replaced should b
 
 The find and replace dialog becomes transparent when find is clicked and becomes opaque when replace is clicked. This allows the author to review the text that the author will replace. If users click replace all, the dialog closes and displays the number of replacements made.
 
-## Configure the paste modes {#pastemodes}
+## Configure the paste modes {#paste-modes}
 
 When using RTE, authors can paste content in one of the following three modes:
 
 * **Browser mode**: Paste text using the browser's default paste implementation. It is not a recommended method as it may introduce unwanted markup.
 
-* **Plain text mode**: Paste the clipboard content as plain text. It strips all elements of style and formatting from the copied content before inserting in AEM component.
+* **Plain text mode**: Paste the clipboard content as plain text. It strips all elements of style and formatting from the copied content before inserting in [!DNL Experience Manager] component.
 
 * **MS Word mode**: Paste the text, including tables, with formatting when copying from MS Word. Copying and pasting text from another source such as a web page or MS Excel is not supported and retain only partial formatting.
 
@@ -117,7 +117,7 @@ The paste-as-Microsoft-Word (`paste-wordhtml`) mode can be further configured so
 
 For example, if only bold formats and lists should be allowed when pasting in AEM, you can filter out the other formats. This is called configurable paste filtering, which can be done for both:
 
-* [Text](#pastemodes)
+* [Text](#paste-modes)
 * [Links](#linkstyles)
 
 For links, you can also define the protocols that are automatically accepted.
