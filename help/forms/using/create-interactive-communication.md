@@ -467,7 +467,7 @@ Execute the following steps to add the Web channel for an existing Interactive C
 
    Similarly, you can tap the **Web** checkbox on the **Channels** tab to delete the Web channel from the Interactive Communication.
 
-## Add Button component to the web channel {#add-button-component-to-the-web-channel}
+## Add Button component to the Web channel {#add-button-component-to-the-web-channel}
 
 You can add button as a component to the web channel of the Interactive Communication. Define rules using the [rule editor](../../forms/using/rule-editor.md) to be able to navigate to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL on the tap of the button.
 
@@ -604,3 +604,24 @@ The web channel authoring interface facilitates grouping the components in a pan
    The grouped components display as child elements of the Panel in the content tree.
 
    ![content_tree_grouping](assets/content_tree_grouping.png)
+
+## Output format for Print channel {#output-format-print-channel}
+
+Use PrintChannel API to define output format for the Print channel of an Interactive Communication. If you do not define an output format, AEM Forms generates the output in PDF format.
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
+
+To generate the output in any other format, specify the  output format type. Refer to [PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html) for the list of supported output format types.
+
+For example, you can use the following sample to define PCL as output format for an Interactive Communication:
+
+```javascript
+//options for rendering print channel of a multi-channel document
+PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
+renderOptions.setRenderFormat(PrintConfig.HP_PCL_5e);
+PrintDocument printDocument = printChannel.render(renderOptions);
+```
