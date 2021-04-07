@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: Business Practitioner, Administrator
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
+feature: Publishing
 ---
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 

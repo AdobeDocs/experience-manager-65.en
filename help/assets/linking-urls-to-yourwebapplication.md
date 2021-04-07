@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 role: Business Practitioner, Administrator
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
+feature: Configuration
 ---
 # Linking URLs to your web application {#linking-urls-to-your-web-application}
 
