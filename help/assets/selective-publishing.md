@@ -8,6 +8,7 @@ content-type: reference
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
+feature: Publishing
 ---
 # Configuring selective publishing at the folder level in Dynamic Media {#selective-publish-configure-folder}
 
