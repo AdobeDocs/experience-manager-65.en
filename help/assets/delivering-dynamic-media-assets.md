@@ -11,7 +11,7 @@ docset: aem65
 
 role: Business Practitioner, Administrator
 exl-id: 274af114-845a-46bd-b091-802cf589687a
-feature: "Asset Management,Renditions"
+feature: Asset Management,Renditions
 ---
 # Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
 

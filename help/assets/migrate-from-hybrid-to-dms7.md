@@ -9,7 +9,7 @@ docset: aem65
 
 role: Business Practitioner, Administrator
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
-feature: "Scene7 mode,Hybrid mode"
+feature: Scene7 mode,Hybrid mode
 ---
 # About moving from Dynamic Media&ndash;Hybrid to Dynamic Media&ndash;Scene7 {#about-migrating}
 

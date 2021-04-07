@@ -12,7 +12,7 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config
 
 role: Business Practitioner, Administrator
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
-feature: "Configuration,Hybrid mode"
+feature: Configuration,Hybrid mode
 ---
 # Configuring Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}
 
