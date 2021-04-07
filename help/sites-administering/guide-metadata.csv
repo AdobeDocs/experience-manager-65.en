@@ -1,141 +1,141 @@
-"filename","title","description","feature","topic","role","level"
-"./metadata.md","","","","","",""
-"./help/sites-administering/TOC.md","","","Administering","","Administrator",""
-"help/sites-administering/home.md","AEM 6.5 Administering User Guide","AEM administering","","","",""
-"help/sites-administering/msm-and-translation.md","Website Administration","Learn how to manage multilingual websites in AEM.","","","",""
-"help/sites-administering/asynchronous-jobs.md","Asynchronous Jobs","Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks.","","","",""
-"help/sites-administering/msm.md","""Reusing Content: Multi Site Manager and Live Copy""","Learn about reusing content with Live Copies and the Multi Site Manager.","","","",""
-"help/sites-administering/msm-livecopy-overview.md","Live Copy Overview Console","Learn about the basics of the Live Copy Overview Console.","Multi Site Manager","","",""
-"help/sites-administering/msm-sync.md","Configuring Live Copy Synchronization","Learn about configuring Live Copy Synchronization.","Multi Site Manager","","",""
-"help/sites-administering/msm-livecopy.md","Creating and Synchronizing Live Copies","Learn how to create and synchronize Live Copies.","Multi Site Manager","","",""
-"help/sites-administering/msm-rollout-conflicts.md","MSM Rollout Conflicts","Learn how to deal with Multi Site Manager rollout conflicts.","Multi Site Manager","","",""
-"help/sites-administering/msm-best-practices.md","MSM Best Practices","Find best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.","Multi Site Manager","","",""
-"help/sites-administering/translation.md","Translating Content for Multilingual Sites","Learn how to translate content for multilingual sites.","Language Copy","","",""
-"help/sites-administering/tc-manage.md","Managing Translation Projects","Learn how to manage translation projects in AEM.","Language Copy","","",""
-"help/sites-administering/tc-rules.md","Identifying Content to Translate","Learn how to identify content that needs translating.","Language Copy","","",""
-"help/sites-administering/tc-prep.md","Preparing Content for Translation","Learn how to prepare content for translation.","Language Copy","","",""
-"help/sites-administering/tc-lroot-classic.md","Creating a Language Root Using the Classic UI","Learn how to create a language root using the Classic UI.","Language Copy","","",""
-"help/sites-administering/tc-msconf.md","Connecting to Microsoft Translator","Learn how to connect AEM to Microsoft Translator.","Language Copy","","",""
-"help/sites-administering/tc-tic.md","Configuring the Translation Integration Framework","Learn how to configure the Translation Integration Framework.","Language Copy","","",""
-"help/sites-administering/tc-wizard.md","Language Copy Wizard","Learn about using the Language Copy Wizard in AEM.","Language Copy","","",""
-"help/sites-administering/tc-enhancements.md","Translation Enhancements","Translation enhancements in AEM.","Language Copy","","",""
-"help/sites-administering/tc-bp.md","Translation Best Practices","Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.","Language Copy","","",""
-"help/sites-administering/configurations.md","Configurations and the Configuration Browser","Understand AEM configurations and how they manage workspace settings in AEM.","","","",""
-"help/sites-administering/aem-faqs.md","AEM FAQs","Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.","","","",""
-"help/sites-administering/dashboards.md","Dashboards","Learn how to create, configure and develop new AEM dashboards.","","","",""
-"help/sites-administering/operations-dashboard.md","Operations Dashboard","Learn how to use the Operations Dashboard."Operations"","","",""
-"help/sites-administering/backup-and-restore.md","Backup and Restore","Learn how to backup and restore your AEM content.","","","",""
-"help/sites-administering/data-store-garbage-collection.md","Data Store Garbage Collection","Learn how to configure Data Store Garbage Collection to free up disk space.","","","",""
-"help/sites-administering/jmx-console.md","Monitoring Server Resources Using the JMX Console","Learn how to monitor server resources using the JMX console.","","","",""
-"help/sites-administering/troubleshooting.md","Working with Logs","Learn how to troubleshoot AEM by working with logs.","","","",""
-"help/sites-administering/operations-audit-log.md","Audit Log Maintenance in AEM 6","Lear about Audit Log Maintenance in AEM."Operations"","","",""
-"help/sites-administering/rich-text-editor.md","Configure the Rich Text Editor to author content in Adobe Experience Manager.","Learn to configure the Adobe Experience Manager Rich Text Editor to author content in Adobe Experience Manager.","","","",""
-"help/sites-administering/rte-accessible-content.md","Configure Rich Text Editor to create accessible webpages and sites.","Configure Rich Text Editor to create accessible webpages and sites.","","","",""
-"help/sites-administering/config-undo.md","Configuring Undo for Page Editing","Learn how to configure Undo support for page editing in AEM.","","","",""
-"help/sites-administering/configure-rich-text-editor-plug-ins.md","Configure the Rich Text Editor plug-ins","Learn to configure the Adobe Experience Manager Rich Text Editor plug-ins to enable individual functionalities.","","","",""
-"help/sites-administering/config-video.md","Configure the Video component","Learn how to configure the Video Component.","","","",""
-"help/sites-administering/bulk-editor.md","The Bulk Editor","Learn how to use the Bulk Editor.","","","",""
-"help/sites-administering/notification.md","Configuring Email Notification","Learn how to configure Email Notification in AEM.","","","",""
-"help/sites-administering/external-link-checker.md","The Link Checker","The Link Checker helps validate both internal and external links and allows link rewriting.","","","",""
-"help/sites-administering/troubleshoot.md","Troubleshooting AEM","Learn about troubleshooting issues with AEM.","","","",""
-"help/sites-administering/workflows-managing.md","Managing Access to Workflows","Learn how to manage access to Workflows.","","","",""
-"help/sites-administering/workflows-starting.md","Starting Workflows","Learn how to start Workflows in AEM.","","","",""
-"help/sites-administering/workflows.md","Administering Workflows","Learn how to administer workflows in AEM.","","","",""
-"help/sites-administering/workflows-administering.md","Administering Workflow Instances","Lear how to administer Workflow Instances.","","","",""
-"help/sites-administering/curl.md","Using cURL with AEM","Learn how to use cURL with AEM.","","","",""
-"help/sites-administering/proxy-jar.md","Proxy Server Tool (proxy.jar)","Learn about the Proxy Server Tool in AEM.","","","",""
-"help/sites-administering/config-apps.md","Configuring for AEM Apps","Learn how to configure AEM Apps.","","","",""
-"help/sites-administering/search-forms.md","Configuring Search Forms","Learn how to configure Search Forms.","","","",""
-"help/sites-administering/tools-consoles.md","Tools Consoles","Learn about the different tools consoles throughout AEM.","","","",""
-"help/sites-administering/reporting.md","Reporting","Learn how to work with Reporting in AEM.","","","",""
-"help/sites-administering/configuring-responsive-layout.md","Configuring Layout Container and Layout Mode","Learn how to configure Layout Container and Layout Mode.","","","",""
-"help/sites-administering/enable-classic-ui-editor.md","Editor","Learn how to switch back to the Classic UI Editor.","","","",""
-"help/sites-administering/enable-classic-ui.md","Enabling Access to Classic UI","Lear how to enable access to Classic UI.","","","",""
-"help/sites-administering/enable-classic-ui-admin.md","Admin Consoles","Lear how to use the Admin Consoles available in AEM.","","","",""
-"help/sites-administering/security.md","User Administration and Security","Learn about User Administration and Security in AEM."Security"","","",""
-"help/sites-administering/user-group-ac-admin.md","User, Group and Access Rights Administration","Learn about user, group and access rights administration in AEM."Security"","","",""
-"help/sites-administering/security-checklist.md","Security Checklist","Learn about the various security considerations when configuring and deploying AEM."Security"","","",""
-"help/sites-administering/owasp-top10.md","OWASP Top 10","Learn how AEM deals with the top 10 OWASP security risks.","","","",""
-"help/sites-administering/production-ready.md","Running AEM in Production Ready Mode","Learn how to run AEM in Production Ready Mode.","","","",""
-"help/sites-administering/identity-management.md","Identity Management","Learn about identity management in AEM.","","","",""
-"help/sites-administering/ims-config-and-admin-console.md","Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services","Learn how to use the [!DNL Admin Console] in AEM."Security"","","",""
-"help/sites-administering/cug.md","Creating a Closed User Group","Learn how to create a Closed User Group.","","","",""
-"help/sites-administering/mitigating-serialization-issues.md","Mitigating serialization issues in AEM","Learn how to mitigate serialization issues in AEM.","","","",""
-"help/sites-administering/sync.md","User Synchronization","Learn about user synchronization in AEM."Security"","","",""
-"help/sites-administering/encapsulated-token.md","Encapsulated Token Support","Learn about the Encapsulated Token support in AEM.","","","",""
-"help/sites-administering/audit-user-management-operations.md","How to Audit User Management Operations in AEM","Learn how to audit User Management Operations in AEM."Operations""Operations"","",""
-"help/sites-administering/ssl-by-default.md","SSL By Default","Learn how to use SSL by Default in AEM.","","","",""
-"help/sites-administering/saml-2-0-authenticationhandler.md","SAML 2.0 Authentication Handler","Learn about the SAML 2.0 Authentication Handler in AEM.","","","",""
-"help/sites-administering/closed-user-groups.md","Closed User Groups in AEM","Learn about Closed User Groups in AEM."Security"","","",""
-"help/sites-administering/granite-user-group-admin.md","Granite Operations - User and Group Administration","Learn about Granite user and group administration."Security"","","",""
-"help/sites-administering/enabling-crxde-lite.md","Enabling CRXDE Lite in AEM","Learn how to enable CRXDE Lite in AEM.","","","",""
-"help/sites-administering/ldap-config.md","Configuring LDAP with AEM 6","Learn how to configure LDAP with AEM.","","","",""
-"help/sites-administering/security-configure-admin-password.md","Configure the Admin Password on Installation","Learn how to change the Admin Password on AEM Installation.","","","",""
-"help/sites-administering/security-service-users.md","Service Users in AEM","Learn about Service Users in AEM."Security"","","",""
-"help/sites-administering/encryption-support-for-configuration-properties.md","Encryption Support for Configuration Properties","Encryption Support for Configuration Properties","","","",""
-"help/sites-administering/handling-gdpr-requests-for-aem-platform.md","Handling GDPR Requests for the AEM Foundation","Handling GDPR Requests for the AEM Foundation","","","",""
-"help/sites-administering/touch-ui-principal-view.md","Principal View for Permissions Management","Learn about the new Touch UI interface that facilitates permissions management.","","","",""
-"help/sites-administering/content-disposition-filter.md","Content Disposition Filter","Learn how to use the Content Disposition Filter to prevent XSS attacks.","","","",""
-"./help/sites-administering/cug-mapping.md","Custom User Group Mapping in AEM 6.5","Lear how Custom User Group Mapping works in AEM."Security"","","",""
-"help/sites-administering/same-site-cookie-support.md","Same Site Cookie Support for AEM 6.5","Same Site Cookie Support for AEM 6.5","","","",""
-"help/sites-administering/personalization.md","Personalization","Learn about personalization in AEM.","","","",""
-"help/sites-administering/client-context.md","Client Context","Learn how to use the Client Context in AEM.","","","",""
-"help/sites-administering/campaigns.md","Campaigns","Learn the basics of using AEM Campaigns.","","","",""
-"help/sites-administering/segmentation.md","Configuring Segmentation with ContextHub","Learn how to configure segmentation with Context Hub.","","","",""
-"help/sites-administering/campaign-segmentation.md","Configuring Segmentation","Learn how to configure segmentation for AEM Campaign.","","","",""
-"help/sites-administering/extending-the-design-importer-for-landingpages.md","Extending and Configuring the Design Importer for Landing Pages","Learn how to configure the Design Importer for landing pages.","","","",""
-"help/sites-administering/integrating-landing-pages-with-adobe-analytics.md","Integrating Landing Pages with Adobe Analytics","Learn how to integrate landing pages with Adobe Analytics.","","","",""
-"help/sites-administering/ecommerce.md","eCommerce","AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.","","","",""
-"help/sites-administering/concepts.md","Concepts","General Concepts of eCommerce with AEM.","","","",""
-"help/sites-administering/generic.md","Administering generic eCommerce","The AEM generic solution provides methods of managing the commerce information held within the repository.","","","",""
-"help/sites-administering/sap-commerce-cloud.md","SAP Commerce Cloud","Learn how to use AEM with SAP Commerce Cloud.","","","",""
-"help/sites-administering/third-party-services.md","Integrating with Third-Party Services","Learn how to integrate AEM with third party services.","","","",""
-"help/sites-administering/salesforce.md","Integrating with Salesforce","Learn about integrating AEM with Salesforce.","","","",""
-"help/sites-administering/target.md","Integrating with Adobe Target","Learn about integrating AEM with Adobe Target.","","","",""
-"help/sites-administering/adobeanalytics.md","Integrating with Adobe Analytics","Learn how to integrate AEM with Adobe Analytics.","","","",""
-"help/sites-administering/adobeanalytics-connect.md","Connecting to Adobe Analytics and Creating Frameworks","Learn about connecting AEM to SiteCatalyst and creating frameworks.","","","",""
-"help/sites-administering/adobeanalytics-link.md","Configuring Link Tracking for Adobe Analytics","Learn about configuring link tracking for SiteCatalyst.","","","",""
-"help/sites-administering/adobeanalytics-mapping.md","Mapping Component Data with Adobe Analytics Properties","Learn how to map component data with SiteCatalyst properties.","","","",""
-"help/sites-administering/adobeanalytics-video.md","Configuring Video Tracking for Adobe Analytics","Learn about configuring video tracking for SiteCatalyst.","","","",""
-"help/sites-administering/scene7-http2faq.md","HTTP2 Delivery of Content FAQ","Learn about HTTP2 content delivery.","","","",""
-"help/sites-administering/troubleshooting-campaignintegration.md","Troubleshooting your Adobe Campaign Integration","Learn how to troubleshoot issues with the Adobe Campaign Integration.","","","",""
-"help/sites-administering/sharepoint-connector-licenses.md","SharePoint Connector Licenses, Copyright Notices, and Disclaimers","Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.","","","",""
-"help/sites-administering/sharepoint-connector.md","SharePoint Connector"," Day JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.","","","",""
-"help/sites-administering/dhtml-viewer-endoflifefaqs.md","DHTML Viewer End-of-Life","Effective January 31, 2014, the DHTML viewer platform is officially end-of-life.","","","",""
-"help/sites-administering/campaignonpremise.md","Integrating with Adobe Campaign Classic","Learn how to integrate AEM with Adobe Campaign Classic","","","",""
-"help/sites-administering/related-community-articles.md","Related Community Articles","Find a list of community generated articles about Marketing Cloud integrations with AEM.","","","",""
-"help/sites-administering/campaignstandard.md","Integrating with Adobe Campaign Standard","Integrating with Adobe Campaign Standard.","","","",""
-"help/sites-administering/flash-viewers-eol.md","Flash Viewers End-of-Life Notice","Effective January 31, 2017, Adobe Dynamic Media Claasic officially ended support for the Flash viewer platform.","","","",""
-"help/sites-administering/product-feed.md","Product Feed","Learn about the AEM Product Feed.","","","",""
-"help/sites-administering/dtm.md","Integrating with Adobe Dynamic Tag Management","Learn about integration with Adobe Dynamic Tag Management.","","","",""
-"help/sites-administering/opt-in.md","Opting Into Adobe Analytics and Adobe Target","Learn how to opt into Adobe Analytics and Adobe Target.","","","",""
-"help/sites-administering/aem-as-portal.md","AEM Portals and Portlets","Learn about Portals and Portles in AEM.","","","",""
-"help/sites-administering/scene7.md","Integrating with Dynamic Media Classic","Learn how to integrate Adobe Experience Manager with Dynamic Media Classic.","","","",""
-"help/sites-administering/aem-livefyre-recipes.md","AEM Livefyre Recipes","Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.","","","",""
-"help/sites-administering/troubleshooting-integration-issues.md","Troubleshooting Integration Issues","Learn how to troubleshoot integration issues.","","","",""
-"help/sites-administering/brightedge.md","Integrating with BrightEdge Content Optimizer","Learn about integrating AEM with BrightEdge Content Optimizer.","","","",""
-"help/sites-administering/catalog-producer.md","Catalog Producer","Catalog Producer","","","",""
-"help/sites-administering/configure-assets-cc-integration.md","Configure AEM Assets integration with Experience Cloud","Learn how to configure AEM Assets integration with Experience Cloud.","Asset Management","","Business Practitioner, Architect, Administrator",""
-"help/sites-administering/silverpop.md","Integrating with Silverpop Engage","Learn how to integrate AEM with Silverpop Engage","","","",""
-"help/sites-administering/campaign.md","Integrating with Adobe Campaign","Learn how to integrate AEM with Adobe Campaign.","","","",""
-"help/sites-administering/exacttarget.md","Integrating with ExactTarget","Learn how to integrate AEM with ExactTarget.","","","",""
-"help/sites-administering/external-providers.md","Analytics with External Providers","Learn about Analytics with External Providers.","","","",""
-"help/sites-administering/marketing-cloud.md","Integrating with the Adobe Marketing Cloud","Learn how to integrate Adobe Experience Manager with Adobe Marketing Cloud.","","","",""
-"help/sites-administering/target-configuring.md","Manually Configuring the Integration with Adobe Target","Learn how to manually configure the integration with Adobe Target.","","","",""
-"help/sites-administering/target-requirements.md","Prerequisites for Integrating with Adobe Target","Find out about the prerequisites for integrating with Adobe Target.","","","",""
-"help/sites-administering/integration-ims-adobe-io.md","Integration with Adobe Target using Adobe I/O","Learn about integrating AEM with Adobe Target using Adobe I/O","","","",""
-"help/sites-administering/adobeanalytics-classifications.md","Adobe Classifications","Learn about Adobe Classifications.","","","",""
-"help/sites-administering/search-and-promote.md","Integrating with Adobe Search&Promote","Learn how to integrate with Adobe Search&Promote.","","","",""
-"help/sites-administering/integration.md","Solutions Integration","Learn more about Solutions Integration in AEM.","","","",""
-"help/sites-administering/experience-fragments-target.md","Exporting Experience Fragments to Adobe Target","Exporting Experience Fragments to Adobe Target","","","",""
-"help/sites-administering/best-practices-for-email-templates.md","Best Practices for Email Templates","Find best practices on creating email templates in AEM.","","","",""
-"help/sites-administering/livefyre.md","Integrating with Livefyre","Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.","","","",""
-"help/sites-administering/administer-best-practices.md","Best Practices","Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.","","","",""
-"help/sites-administering/gdpr-compliance-sites.md","AEM Sites - GDPR Readiness","Learn about the details of GDPR Readiness for AEM Sites.","","","",""
-"help/sites-administering/gdpr-compliance-commerce.md","AEM Commerce - GDPR Readiness","""AEM Commerce - GDPR Readiness""","","","",""
-"help/sites-administering/package-manager.md","How to Work With Packages","Learn the basics of working with packages in AEM.","","","",""
-"help/sites-administering/tags.md","Administering Tags","Learn how to administer Tags in AEM.","","","",""
-"help/sites-administering/page-exporter.md","The Page Exporter","Learn how to use the AEM Page Exporter.","","","",""
-"help/sites-administering/classic-console.md","Classic UI Tagging Console","Learn about the Classic UI Tagging Console.","","","",""
-"help/sites-administering/content-management-screens.md","Content Management for Screens","Learn about the basics of Content Management for Screens.","","","",""
-"help/sites-administering/webdav-access.md","WebDAV Access","Learn about WebDAV access in AEM.","","","",""
+filename,title,description,feature,topic,role,level
+./metadata.md,,,,,,
+./help/sites-administering/TOC.md,,,Administering,,Administrator,
+help/sites-administering/home.md,AEM 6.5 Administering User Guide,AEM administering,,,,
+help/sites-administering/msm-and-translation.md,Website Administration,Learn how to manage multilingual websites in AEM.,,,,
+help/sites-administering/asynchronous-jobs.md,Asynchronous Jobs,Adobe Experience Manager optimizes performance by asynchronously completing some resource-intensive tasks.,,,,
+help/sites-administering/msm.md,"""Reusing Content: Multi Site Manager and Live Copy""",Learn about reusing content with Live Copies and the Multi Site Manager.,,,,
+help/sites-administering/msm-livecopy-overview.md,Live Copy Overview Console,Learn about the basics of the Live Copy Overview Console.,Multi Site Manager,,,
+help/sites-administering/msm-sync.md,Configuring Live Copy Synchronization,Learn about configuring Live Copy Synchronization.,Multi Site Manager,,,
+help/sites-administering/msm-livecopy.md,Creating and Synchronizing Live Copies,Learn how to create and synchronize Live Copies.,Multi Site Manager,,,
+help/sites-administering/msm-rollout-conflicts.md,MSM Rollout Conflicts,Learn how to deal with Multi Site Manager rollout conflicts.,Multi Site Manager,,,
+help/sites-administering/msm-best-practices.md,MSM Best Practices,Find best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.,Multi Site Manager,,,
+help/sites-administering/translation.md,Translating Content for Multilingual Sites,Learn how to translate content for multilingual sites.,Language Copy,,,
+help/sites-administering/tc-manage.md,Managing Translation Projects,Learn how to manage translation projects in AEM.,Language Copy,,,
+help/sites-administering/tc-rules.md,Identifying Content to Translate,Learn how to identify content that needs translating.,Language Copy,,,
+help/sites-administering/tc-prep.md,Preparing Content for Translation,Learn how to prepare content for translation.,Language Copy,,,
+help/sites-administering/tc-lroot-classic.md,Creating a Language Root Using the Classic UI,Learn how to create a language root using the Classic UI.,Language Copy,,,
+help/sites-administering/tc-msconf.md,Connecting to Microsoft Translator,Learn how to connect AEM to Microsoft Translator.,Language Copy,,,
+help/sites-administering/tc-tic.md,Configuring the Translation Integration Framework,Learn how to configure the Translation Integration Framework.,Language Copy,,,
+help/sites-administering/tc-wizard.md,Language Copy Wizard,Learn about using the Language Copy Wizard in AEM.,Language Copy,,,
+help/sites-administering/tc-enhancements.md,Translation Enhancements,Translation enhancements in AEM.,Language Copy,,,
+help/sites-administering/tc-bp.md,Translation Best Practices,Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.,Language Copy,,,
+help/sites-administering/configurations.md,Configurations and the Configuration Browser,Understand AEM configurations and how they manage workspace settings in AEM.,,,,
+help/sites-administering/aem-faqs.md,AEM FAQs,"Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.",,,,
+help/sites-administering/dashboards.md,Dashboards,"Learn how to create, configure and develop new AEM dashboards.",,,,
+help/sites-administering/operations-dashboard.md,Operations Dashboard,Learn how to use the Operations Dashboard.,Operations,,,
+help/sites-administering/backup-and-restore.md,Backup and Restore,Learn how to backup and restore your AEM content.,,,,
+help/sites-administering/data-store-garbage-collection.md,Data Store Garbage Collection,Learn how to configure Data Store Garbage Collection to free up disk space.,,,,
+help/sites-administering/jmx-console.md,Monitoring Server Resources Using the JMX Console,Learn how to monitor server resources using the JMX console.,,,,
+help/sites-administering/troubleshooting.md,Working with Logs,Learn how to troubleshoot AEM by working with logs.,,,,
+help/sites-administering/operations-audit-log.md,Audit Log Maintenance in AEM 6,Lear about Audit Log Maintenance in AEM.,Operations,,,
+help/sites-administering/rich-text-editor.md,Configure the Rich Text Editor to author content in Adobe Experience Manager.,Learn to configure the Adobe Experience Manager Rich Text Editor to author content in Adobe Experience Manager.,,,,
+help/sites-administering/rte-accessible-content.md,Configure Rich Text Editor to create accessible webpages and sites.,Configure Rich Text Editor to create accessible webpages and sites.,,,,
+help/sites-administering/config-undo.md,Configuring Undo for Page Editing,Learn how to configure Undo support for page editing in AEM.,,,,
+help/sites-administering/configure-rich-text-editor-plug-ins.md,Configure the Rich Text Editor plug-ins,Learn to configure the Adobe Experience Manager Rich Text Editor plug-ins to enable individual functionalities.,,,,
+help/sites-administering/config-video.md,Configure the Video component,Learn how to configure the Video Component.,,,,
+help/sites-administering/bulk-editor.md,The Bulk Editor,Learn how to use the Bulk Editor.,,,,
+help/sites-administering/notification.md,Configuring Email Notification,Learn how to configure Email Notification in AEM.,,,,
+help/sites-administering/external-link-checker.md,The Link Checker,The Link Checker helps validate both internal and external links and allows link rewriting.,,,,
+help/sites-administering/troubleshoot.md,Troubleshooting AEM,Learn about troubleshooting issues with AEM.,,,,
+help/sites-administering/workflows-managing.md,Managing Access to Workflows,Learn how to manage access to Workflows.,,,,
+help/sites-administering/workflows-starting.md,Starting Workflows,Learn how to start Workflows in AEM.,,,,
+help/sites-administering/workflows.md,Administering Workflows,Learn how to administer workflows in AEM.,,,,
+help/sites-administering/workflows-administering.md,Administering Workflow Instances,Lear how to administer Workflow Instances.,,,,
+help/sites-administering/curl.md,Using cURL with AEM,Learn how to use cURL with AEM.,,,,
+help/sites-administering/proxy-jar.md,Proxy Server Tool (proxy.jar),Learn about the Proxy Server Tool in AEM.,,,,
+help/sites-administering/config-apps.md,Configuring for AEM Apps,Learn how to configure AEM Apps.,,,,
+help/sites-administering/search-forms.md,Configuring Search Forms,Learn how to configure Search Forms.,,,,
+help/sites-administering/tools-consoles.md,Tools Consoles,Learn about the different tools consoles throughout AEM.,,,,
+help/sites-administering/reporting.md,Reporting,Learn how to work with Reporting in AEM.,,,,
+help/sites-administering/configuring-responsive-layout.md,Configuring Layout Container and Layout Mode,Learn how to configure Layout Container and Layout Mode.,,,,
+help/sites-administering/enable-classic-ui-editor.md,Editor,Learn how to switch back to the Classic UI Editor.,,,,
+help/sites-administering/enable-classic-ui.md,Enabling Access to Classic UI,Lear how to enable access to Classic UI.,,,,
+help/sites-administering/enable-classic-ui-admin.md,Admin Consoles,Lear how to use the Admin Consoles available in AEM.,,,,
+help/sites-administering/security.md,User Administration and Security,Learn about User Administration and Security in AEM.,Security,,,
+help/sites-administering/user-group-ac-admin.md,"User, Group and Access Rights Administration","Learn about user, group and access rights administration in AEM.",Security,,,
+help/sites-administering/security-checklist.md,Security Checklist,Learn about the various security considerations when configuring and deploying AEM.,Security,,,
+help/sites-administering/owasp-top10.md,OWASP Top 10,Learn how AEM deals with the top 10 OWASP security risks.,Security,,,
+help/sites-administering/production-ready.md,Running AEM in Production Ready Mode,Learn how to run AEM in Production Ready Mode.,,,,
+help/sites-administering/identity-management.md,Identity Management,Learn about identity management in AEM.,,,,
+help/sites-administering/ims-config-and-admin-console.md,Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services,Learn how to use the [!DNL Admin Console] in AEM.,Security,,,
+help/sites-administering/cug.md,Creating a Closed User Group,Learn how to create a Closed User Group.,,,,
+help/sites-administering/mitigating-serialization-issues.md,Mitigating serialization issues in AEM,Learn how to mitigate serialization issues in AEM.,,,,
+help/sites-administering/sync.md,User Synchronization,Learn about user synchronization in AEM.,Security,,,
+help/sites-administering/encapsulated-token.md,Encapsulated Token Support,Learn about the Encapsulated Token support in AEM.,,,,
+help/sites-administering/audit-user-management-operations.md,How to Audit User Management Operations in AEM,Learn how to audit User Management Operations in AEM.,Operations,,,
+help/sites-administering/ssl-by-default.md,SSL By Default,Learn how to use SSL by Default in AEM.,,,,
+help/sites-administering/saml-2-0-authenticationhandler.md,SAML 2.0 Authentication Handler,Learn about the SAML 2.0 Authentication Handler in AEM.,,,,
+help/sites-administering/closed-user-groups.md,Closed User Groups in AEM,Learn about Closed User Groups in AEM.,Security,,,
+help/sites-administering/granite-user-group-admin.md,Granite Operations - User and Group Administration,Learn about Granite user and group administration.,Security,,,
+help/sites-administering/enabling-crxde-lite.md,Enabling CRXDE Lite in AEM,Learn how to enable CRXDE Lite in AEM.,,,,
+help/sites-administering/ldap-config.md,Configuring LDAP with AEM 6,Learn how to configure LDAP with AEM.,,,,
+help/sites-administering/security-configure-admin-password.md,Configure the Admin Password on Installation,Learn how to change the Admin Password on AEM Installation.,,,,
+help/sites-administering/security-service-users.md,Service Users in AEM,Learn about Service Users in AEM.,Security,,,
+help/sites-administering/encryption-support-for-configuration-properties.md,Encryption Support for Configuration Properties,Encryption Support for Configuration Properties,,,,
+help/sites-administering/handling-gdpr-requests-for-aem-platform.md,Handling GDPR Requests for the AEM Foundation,Handling GDPR Requests for the AEM Foundation,,,,
+help/sites-administering/touch-ui-principal-view.md,Principal View for Permissions Management,Learn about the new Touch UI interface that facilitates permissions management.,,,,
+help/sites-administering/content-disposition-filter.md,Content Disposition Filter,Learn how to use the Content Disposition Filter to prevent XSS attacks.,,,,
+./help/sites-administering/cug-mapping.md,Custom User Group Mapping in AEM 6.5,Lear how Custom User Group Mapping works in AEM.,Security,,,
+help/sites-administering/same-site-cookie-support.md,Same Site Cookie Support for AEM 6.5,Same Site Cookie Support for AEM 6.5,,,,
+help/sites-administering/personalization.md,Personalization,Learn about personalization in AEM.,,,,
+help/sites-administering/client-context.md,Client Context,Learn how to use the Client Context in AEM.,,,,
+help/sites-administering/campaigns.md,Campaigns,Learn the basics of using AEM Campaigns.,,,,
+help/sites-administering/segmentation.md,Configuring Segmentation with ContextHub,Learn how to configure segmentation with Context Hub.,,,,
+help/sites-administering/campaign-segmentation.md,Configuring Segmentation,Learn how to configure segmentation for AEM Campaign.,,,,
+help/sites-administering/extending-the-design-importer-for-landingpages.md,Extending and Configuring the Design Importer for Landing Pages,Learn how to configure the Design Importer for landing pages.,,,,
+help/sites-administering/integrating-landing-pages-with-adobe-analytics.md,Integrating Landing Pages with Adobe Analytics,Learn how to integrate landing pages with Adobe Analytics.,,,,
+help/sites-administering/ecommerce.md,eCommerce,"AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.",,,,
+help/sites-administering/concepts.md,Concepts,General Concepts of eCommerce with AEM.,,,,
+help/sites-administering/generic.md,Administering generic eCommerce,The AEM generic solution provides methods of managing the commerce information held within the repository.,,,,
+help/sites-administering/sap-commerce-cloud.md,SAP Commerce Cloud,Learn how to use AEM with SAP Commerce Cloud.,,,,
+help/sites-administering/third-party-services.md,Integrating with Third-Party Services,Learn how to integrate AEM with third party services.,,,,
+help/sites-administering/salesforce.md,Integrating with Salesforce,Learn about integrating AEM with Salesforce.,,,,
+help/sites-administering/target.md,Integrating with Adobe Target,Learn about integrating AEM with Adobe Target.,,,,
+help/sites-administering/adobeanalytics.md,Integrating with Adobe Analytics,Learn how to integrate AEM with Adobe Analytics.,,,,
+help/sites-administering/adobeanalytics-connect.md,Connecting to Adobe Analytics and Creating Frameworks,Learn about connecting AEM to SiteCatalyst and creating frameworks.,,,,
+help/sites-administering/adobeanalytics-link.md,Configuring Link Tracking for Adobe Analytics,Learn about configuring link tracking for SiteCatalyst.,,,,
+help/sites-administering/adobeanalytics-mapping.md,Mapping Component Data with Adobe Analytics Properties,Learn how to map component data with SiteCatalyst properties.,,,,
+help/sites-administering/adobeanalytics-video.md,Configuring Video Tracking for Adobe Analytics,Learn about configuring video tracking for SiteCatalyst.,,,,
+help/sites-administering/scene7-http2faq.md,HTTP2 Delivery of Content FAQ,Learn about HTTP2 content delivery.,,,,
+help/sites-administering/troubleshooting-campaignintegration.md,Troubleshooting your Adobe Campaign Integration,Learn how to troubleshoot issues with the Adobe Campaign Integration.,,,,
+help/sites-administering/sharepoint-connector-licenses.md,"SharePoint Connector Licenses, Copyright Notices, and Disclaimers","Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.",,,,
+help/sites-administering/sharepoint-connector.md,SharePoint Connector," Day JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.",,,,
+help/sites-administering/dhtml-viewer-endoflifefaqs.md,DHTML Viewer End-of-Life,"Effective January 31, 2014, the DHTML viewer platform is officially end-of-life.",,,,
+help/sites-administering/campaignonpremise.md,Integrating with Adobe Campaign Classic,Learn how to integrate AEM with Adobe Campaign Classic,,,,
+help/sites-administering/related-community-articles.md,Related Community Articles,Find a list of community generated articles about Marketing Cloud integrations with AEM.,,,,
+help/sites-administering/campaignstandard.md,Integrating with Adobe Campaign Standard,Integrating with Adobe Campaign Standard.,,,,
+help/sites-administering/flash-viewers-eol.md,Flash Viewers End-of-Life Notice,"Effective January 31, 2017, Adobe Dynamic Media Claasic officially ended support for the Flash viewer platform.",,,,
+help/sites-administering/product-feed.md,Product Feed,Learn about the AEM Product Feed.,,,,
+help/sites-administering/dtm.md,Integrating with Adobe Dynamic Tag Management,Learn about integration with Adobe Dynamic Tag Management.,,,,
+help/sites-administering/opt-in.md,Opting Into Adobe Analytics and Adobe Target,Learn how to opt into Adobe Analytics and Adobe Target.,,,,
+help/sites-administering/aem-as-portal.md,AEM Portals and Portlets,Learn about Portals and Portles in AEM.,,,,
+help/sites-administering/scene7.md,Integrating with Dynamic Media Classic,Learn how to integrate Adobe Experience Manager with Dynamic Media Classic.,,,,
+help/sites-administering/aem-livefyre-recipes.md,AEM Livefyre Recipes,Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.,,,,
+help/sites-administering/troubleshooting-integration-issues.md,Troubleshooting Integration Issues,Learn how to troubleshoot integration issues.,,,,
+help/sites-administering/brightedge.md,Integrating with BrightEdge Content Optimizer,Learn about integrating AEM with BrightEdge Content Optimizer.,,,,
+help/sites-administering/catalog-producer.md,Catalog Producer,Catalog Producer,,,,
+help/sites-administering/configure-assets-cc-integration.md,Configure AEM Assets integration with Experience Cloud,Learn how to configure AEM Assets integration with Experience Cloud.,Asset Management,,"Business Practitioner, Architect, Administrator",
+help/sites-administering/silverpop.md,Integrating with Silverpop Engage,Learn how to integrate AEM with Silverpop Engage,,,,
+help/sites-administering/campaign.md,Integrating with Adobe Campaign,Learn how to integrate AEM with Adobe Campaign.,,,,
+help/sites-administering/exacttarget.md,Integrating with ExactTarget,Learn how to integrate AEM with ExactTarget.,,,,
+help/sites-administering/external-providers.md,Analytics with External Providers,Learn about Analytics with External Providers.,,,,
+help/sites-administering/marketing-cloud.md,Integrating with the Adobe Marketing Cloud,Learn how to integrate Adobe Experience Manager with Adobe Marketing Cloud.,,,,
+help/sites-administering/target-configuring.md,Manually Configuring the Integration with Adobe Target,Learn how to manually configure the integration with Adobe Target.,,,,
+help/sites-administering/target-requirements.md,Prerequisites for Integrating with Adobe Target,Find out about the prerequisites for integrating with Adobe Target.,,,,
+help/sites-administering/integration-ims-adobe-io.md,Integration with Adobe Target using Adobe I/O,Learn about integrating AEM with Adobe Target using Adobe I/O,,,,
+help/sites-administering/adobeanalytics-classifications.md,Adobe Classifications,Learn about Adobe Classifications.,,,,
+help/sites-administering/search-and-promote.md,Integrating with Adobe Search&Promote,Learn how to integrate with Adobe Search&Promote.,,,,
+help/sites-administering/integration.md,Solutions Integration,Learn more about Solutions Integration in AEM.,,,,
+help/sites-administering/experience-fragments-target.md,Exporting Experience Fragments to Adobe Target,Exporting Experience Fragments to Adobe Target,,,,
+help/sites-administering/best-practices-for-email-templates.md,Best Practices for Email Templates,Find best practices on creating email templates in AEM.,,,,
+help/sites-administering/livefyre.md,Integrating with Livefyre,"Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.",,,,
+help/sites-administering/administer-best-practices.md,Best Practices,Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.,,,,
+help/sites-administering/gdpr-compliance-sites.md,AEM Sites - GDPR Readiness,Learn about the details of GDPR Readiness for AEM Sites.,,,,
+help/sites-administering/gdpr-compliance-commerce.md,AEM Commerce - GDPR Readiness,"""AEM Commerce - GDPR Readiness""",,,,
+help/sites-administering/package-manager.md,How to Work With Packages,Learn the basics of working with packages in AEM.,,,,
+help/sites-administering/tags.md,Administering Tags,Learn how to administer Tags in AEM.,,,,
+help/sites-administering/page-exporter.md,The Page Exporter,Learn how to use the AEM Page Exporter.,,,,
+help/sites-administering/classic-console.md,Classic UI Tagging Console,Learn about the Classic UI Tagging Console.,,,,
+help/sites-administering/content-management-screens.md,Content Management for Screens,Learn about the basics of Content Management for Screens.,,,,
+help/sites-administering/webdav-access.md,WebDAV Access,Learn about WebDAV access in AEM.,,,,
