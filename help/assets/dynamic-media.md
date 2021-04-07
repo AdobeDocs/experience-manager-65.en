@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: Business Practitioner, Administrator
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
+feature: "Collaboration,Asset Management"
 ---
 # Working with Dynamic Media {#working-with-dynamic-media}
 

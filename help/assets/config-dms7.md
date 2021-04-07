@@ -8,6 +8,7 @@ content-type: reference
 docset: aem65
 role: Business Practitioner, Administrator
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
+feature: "Configuration,Scene7 mode"
 ---
 # Configuring Dynamic Media - Scene7 mode{#configuring-dynamic-media-scene-mode}
 

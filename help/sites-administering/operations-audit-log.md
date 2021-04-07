@@ -10,6 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
+feature: Operations
 ---
 # Audit Log Maintenance in AEM 6{#audit-log-maintenance-in-aem}
 

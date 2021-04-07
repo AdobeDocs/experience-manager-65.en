@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
+feature: Security
 ---
 # Closed User Groups in AEM{#closed-user-groups-in-aem}
 

@@ -7,6 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 role: Business Practitioner, Administrator
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
+feature: CDN Cache
 ---
 # Invalidating the CDN cache by way of Dynamic Media {#invalidating-cdn-cache-for-dm-assets}
 

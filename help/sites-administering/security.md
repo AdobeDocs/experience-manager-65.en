@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
+feature: Security
 ---
 # User Administration and Security{#user-administration-and-security}
 
