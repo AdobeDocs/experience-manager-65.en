@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+user-guide-description: Create, manage, process, and distribute digital assets.
 feature-set: Experience Manager Assets, Experience Manager, Experience Manager Sites
 ---
 
