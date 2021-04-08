@@ -7,6 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 role: Business Practitioner, Administrator
 exl-id: 85fa0414-354e-4530-81f9-a5659bb7f2fd
+feature: Configuration
 ---
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
 

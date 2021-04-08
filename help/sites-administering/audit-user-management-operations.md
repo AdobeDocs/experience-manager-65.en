@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
+feature: Operations
 ---
 # How to Audit User Management Operations in AEM{#how-to-audit-user-management-operations-in-aem}
 

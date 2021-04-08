@@ -9,6 +9,7 @@ content-type: reference
 discoiquuid: a70aa448-0f58-4ed2-9381-afcc76fa827f
 role: Business Practitioner, Administrator
 exl-id: 698e8bdb-9b31-49ab-8560-26b05109bb23
+feature: Configuration
 ---
 # Activating hot link protection in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
 
