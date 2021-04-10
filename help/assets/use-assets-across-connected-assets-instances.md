@@ -35,7 +35,7 @@ Before you use or configure this capability, ensure the following:
 
 Authors search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
-* **Image formats**: The formats that the [Image component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) supports. [!DNL Dynamic Media] images are not supported.
+* **Image formats**: The formats that the [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supports. [!DNL Dynamic Media] images are not supported.
 * **Document formats**: See the [supported document formats](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
@@ -103,17 +103,12 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 
 1. Add the [!DNL Sites] deployment as an allowed origin in the CORS configuration on the [!DNL Assets] deployment. For more information, see [understand CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html).
 
-<!-- TBD: See if these steps are not required.
-    1. Log in using the administrator credentials. Search for `Cross-Origin`. Access **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-
-    1. To create a CORS configuration for [!DNL Sites] deployment, click add option ![Assets add icon](assets/do-not-localize/assets_add_icon.png) next to **[!UICONTROL Adobe Granite Cross-Origin Resource Sharing Policy]**.
-
-    1. In the field **[!UICONTROL Allowed Origins]**, input the URL of the local [!DNL Sites], that is, `https://[local_sites]:[port]`. Save the configuration.
---> 
+1. Configure [same site cookie support](/help/sites-administering/same-site-cookie-support.md).
 
 You can check the connectivity between configured [!DNL Sites] deployments and [!DNL Assets] deployment.
 
 ![Connection test of Connected Assets configured [!DNL Sites]](assets/connected-assets-multiple-config.png)
+*Figure: Connection test of Connected Assets configured [!DNL Sites].*
 
 ## Use remote assets {#use-remote-assets}
 
@@ -170,7 +165,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 1. Select an asset in [!DNL Assets] Console and click **[!UICONTROL Properties]** from the toolbar.
 1. Click **[!UICONTROL References]** tab. See **[!UICONTROL Local References]** for use of the asset on the [!DNL Assets] deployment. See **[!UICONTROL Remote References] for use of the asset on [!DNL Sites] deployment where the asset was fetched using Connected Assets functionality.
 
-   ![remote references in asset Properties page](assets/connected-assets-remote-reference.png)
+   ![Remote references in asset Properties page](assets/connected-assets-remote-reference.png)
 
 1. The references for [!DNL Sites] pages displays total count of references for each local [!DNL Sites]. It may take some time to find all the references and display the total number of references.
 1. The list of references is interactive and DAM users can click on a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
@@ -215,11 +210,13 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 To troubleshoot common errors, follow these steps:
 
 * If you are unable to search for remote assets from the [!UICONTROL Content Finder], then ensure that the required roles and permissions are in place.
-* An asset fetched from the remote dam may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and the prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) for errors in asset fetching.
-* If you are unable to access the remote DAM deployment from the local [!DNL Sites] deployment, ensure that cross-site cookies are allowed. If cross-site cookies are blocked the two deployments of [!DNL Experience Manager] may not authenticate. For example, [!DNL Google Chrome] in Incognito mode may block third-party cookies. To allow cookies in [!DNL Chrome] browser, click the 'eye' icon in the address bar, navigate to Site Not Working > Blocked, select the Remote DAM URL, and allow login-token cookie. Alternately, see help about [how to enable third-party cookies](https://support.google.com/chrome/answer/95647).
 
-  ![Cookie error in Chrome in incognito mode](assets/chrome-cookies-incognito-dialog.png)
+* An asset fetched from the remote DAM may not be published on a web page for one or more reasons. It doesn't exist on remote server, lack of appropriate permissions to fetch it, or network failure can be the reasons. Ensure that the asset is not removed from the remote DAM. Ensure that appropriate permissions are in place and the prerequisites are met. Retry adding the asset to the page and republish. Check the [list of asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) for errors in asset fetching.
+
+* If you are unable to access the remote DAM deployment from the local [!DNL Sites] deployment, ensure that cross-site cookies are allowed and [same site cookie support](/help/sites-administering/same-site-cookie-support.md) is configured. If cross-site cookies are blocked the deployments of [!DNL Experience Manager] may not authenticate. For example, [!DNL Google Chrome] in Incognito mode may block third-party cookies. To allow cookies in [!DNL Chrome] browser, click the 'eye' icon in the address bar, navigate to **Site Not Working** > **Blocked**, select the Remote DAM URL, and allow login-token cookie. Alternately, see [how to enable third-party cookies](https://support.google.com/chrome/answer/95647).
+
+  ![Cookie error in Chrome browser in Incognito mode](assets/chrome-cookies-incognito-dialog.png)
 
 * If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
-  ![failure to retried asset remote references](assets/reference-report-failure.png)
+  ![failure to retrieve asset remote references](assets/reference-report-failure.png)
