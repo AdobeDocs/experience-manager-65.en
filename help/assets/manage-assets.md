@@ -595,27 +595,26 @@ See [Download assets from Experience Manager](/help/assets/download-assets-from-
 >
 >If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
 
-## Unpublish assets {#unpublishing-assets}
+## Publish or unpublish assets {#publishing-assets}
 
-1. Navigate to the location of the asset/asset folder you want to remove from the publish environment (unpublish).
+After uploading, processing, or editing your assets on [!DNL Experience Manager] author, you publish the asset to the publish server. Publishing makes the asset available publicly. Unpublishing action removed the asset from the publish server but not from the authoring server.
 
-1. Select the asset/folder to unpublish, and click **[!UICONTROL Manage Publication]** ![manage Publication option](assets/do-not-localize/globe-publication.png) option from the toolbar.
+1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
-1. Select the **[!UICONTROL Unpublish]** action from the list.
+1. Select the asset or the folder to unpublish, and click **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar.
+
+1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
 
    ![Unpublish action](assets/unpublish_action.png)
 
-1. To unpublish the asset later, select **[!UICONTROL Unpublish Later]**, and then select a date for unpublishing the asset.
-1. Schedule a date for the asset to be unavailable from the publish environment.
-1. If the asset references other assets, choose the references you want to unpublish. Click **[!UICONTROL Unpublish]**.
-1. In the confirmation dialog, click:
+1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
 
-    * **[!UICONTROL Cancel]** to stop the action
-    * **[!UICONTROL Unpublish]** to confirm that the assets are unpublished (no longer available on the publish environment) at the specified date.
+1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
 
-   >[!NOTE]
-   >
-   >While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referenced by other published assets.
+>[!TIP]
+>
+>* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
+>* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referenced by other published assets.
 
 ## Closed User Group {#closed-user-group}
 
