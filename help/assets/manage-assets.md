@@ -914,4 +914,24 @@ A collection is an ordered set of assets. Use collections to share related asset
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-See [manage collections](/help/assets/manage-collections.md) for details on collection management.
+To know details of Collection management, see [manage Collections](/help/assets/manage-collections.md).
+
+## Hide expired assets when viewing assets in desktop app or Adobe Asset Link {#hide-expired-assets-via-acp-api}
+
+[!DNL Experience Manager] desktop app allows access to the DAM repository from Windows or Mac desktop. Adobe Asset Link allows access to assets from within the supported [!DNL Creative Cloud] desktop applications. 
+
+When browsing assets from within [!DNL Experience Manager] user interface, the expired assets are not displayed. To prevent viewing, searching, and fetching of expired assets when browsing assets from desktop app and Asset Link, administrators can do the following configuration. The configuration works for all users, irrespective of administrator privilege.
+
+Execute the following CURL command. Ensure read access on `/conf/global/settings/dam/acpapi/` for the users who access assets. Users who are part of `dam-user` group have the permission by default.
+
+```curl
+curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/global/settings/dam/acpapi/configuration/_jcr_content' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'jcr:title=acpapiconfig' \
+--data-urlencode 'hideExpiredAssets=true' \
+--data-urlencode 'hideExpiredAssets@TypeHint=Boolean' \
+--data-urlencode 'jcr:primaryType=nt:unstructured' \
+--data-urlencode '../../jcr:primaryType=sling:Folder'
+```
+
+To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
