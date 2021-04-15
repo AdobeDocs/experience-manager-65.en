@@ -233,7 +233,7 @@ Rollouts are processed as asynchronous jobs and can be checked in the [**Async J
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In the **Sites** console, select the page in the blueprint and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar).
+1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar).
 1. Select the **Blueprint** option from the list, to show the blueprints associated with this page.
 1. Select the required blueprint from the list.
 1. Click or tap **Rollout**.
