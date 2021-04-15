@@ -147,9 +147,11 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 * On adding a page structure to a community group, the [!UICONTROL Group] title in the breadcrumb is changed to the title of the first [!UICONTROL Page] (NPR-35803).
 * Unlike moderators, a standard community member is not able to access and edit any draft post (NPR-35339).
-* Broken access control and denial of service with DSRPReindexServlet which brings the communities site down until the indexing is complete (NPR-35591).
+* Broken access control and denial of service with `DSRPReindexServlet` which brings the communities site down until the indexing is complete (NPR-35591).
 * Removing [!UICONTROL All Users] from the [!UICONTROL Administrators] field does not actually remove them from the back-end (NPR-35592, NPR-35611).
 * The [!UICONTROL Compose Message] component does not return any result when the entered text is a partial-match (NPR-35666).
+
+* When attempting to add tags to a new blog by selecting **Add Tags**, some performance impact is noticed. To improve performance, install [cqTagLucene-0.0.1.zip hotfix](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/cqTagLucene-0.0.1.zip) that resolves the tag suggestion issue. You can download the hotfix from [!DNL Software Distribution].
 
 ### [!DNL Brand Portal] {#brandportal-6580}
 
