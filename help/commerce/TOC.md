@@ -26,17 +26,21 @@ user-guide-description: Understand how to use and administer Experience Manager 
     + [Customizing CIF Components](cif/customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](cif/customizing/use-cif-pickers.md)
 + [Migration](cif/migration.md)
++ [Release Notes] {#release-notes}
+  + [2021](cif/release-notes/release-notes_2021.md)
+  + [2020](cif/release-notes/release-notes_2020.md)
+  + [2019](cif/release-notes/release-notes_2019.md)
 + [FAQ](cif/faq.md)
 + Classic CIF {#classic}
-    + Deploying {#deploying}
-        + [eCommerce Overview](/help/commerce/cif-classic/deploying/ecommerce.md)
-        + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
-    + Administering {#administering}
-        + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
-        + [Concepts](/help/commerce/cif-classic/administering/concepts.md)
-        + [Administering Generic eCommerce](/help/commerce/cif-classic/administering/generic.md)
-        + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)  
-    + Developing {#developing}
-        + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
-        + [Developing (generic)](/help/commerce/cif-classic/developing/generic.md)
-        + [Developing with SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+  + Deploying {#deploying}
+    + [eCommerce Overview](/help/commerce/cif-classic/deploying/ecommerce.md)
+    + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
+  + Administering {#administering}
+    + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
+    + [Concepts](/help/commerce/cif-classic/administering/concepts.md)
+    + [Administering Generic eCommerce](/help/commerce/cif-classic/administering/generic.md)
+    + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)  
+  + Developing {#developing}
+    + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
+    + [Developing (generic)](/help/commerce/cif-classic/developing/generic.md)
+    + [Developing with SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
