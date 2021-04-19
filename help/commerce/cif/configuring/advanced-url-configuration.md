@@ -9,8 +9,8 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
 ---
-
 # Advanced URL Configurations {#url}
 
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations will customize these URLs for search engine optimization (SEO) purposes.  The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
@@ -25,7 +25,7 @@ To configure the `UrlProvider` service according to the SEO requierments and nee
 >
 > The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) project, see below, includes sample configurations to demonstrate the usage of custom URLs for product and category pages.
 
-### Product page URL template {#product}
+### Product Page URL template {#product}
 
 This configures the URLs of the product pages with the following properties:
 
@@ -36,7 +36,7 @@ This configures the URLs of the product pages with the following properties:
 * **Product identifier location**: defines the location of the identifier that will be used to fetch the product data. The default value is `SELECTOR`, the other possible value is `SUFFIX`. With the previous example URL, this means the identifier `chaz-kangeroo-hoodie` will be used to fetch the product data.
 * **Product identifier type**: defines the type of the identifier to be used when fetching the product data. The default value is `URL_KEY`, the other possible value is `SKU`. With the previous example URL, this means that the product data will be fetched with a Magento GraphQL filter like `filter:{url_key:{eq:"chaz-kangeroo-hoodie"}}`.
 
-### Product list page URL template {#product-list}
+### Product List Page URL Template {#product-list}
 
 This configures the URLs of the category or product list pages with the following properties:
 
@@ -69,5 +69,5 @@ The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) proje
 ## Additional Resources
 
 * [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM Resource Mapping](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM Resource Mapping](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

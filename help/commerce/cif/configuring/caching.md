@@ -1,11 +1,11 @@
 ---
 title: Caching & Performance
 description: Learn about the different configurations available to enable GraphQL and content caching to optimize the performance of your commerce implementation.
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
 ---
-
 # Caching & Performance {#caching}
 
-## Component & GraphQL response caching {#graphql}
+## Component & GraphQL Response Caching {#graphql}
 
 The AEM CIF Core Components already have built-in support for caching GraphQL responses for individual components. This feature can be used to reduce the number of GraphQL backend calls by a large factor. An effective caching can be achieved especially for repeating queries like retrieving the category tree for a navigation component or fetching all the available aggregations/facets values displayed on the product search and category pages.
 
@@ -29,7 +29,7 @@ This is typically configured with the following cache entry:
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 ```
 
-Another example scenario where the GraphQL caching feature is recommended to be used is the navigation component because it sends the same GraphQL query on all pages. In this case, the cache entry would be typically set to:
+Another example scenario where the GraphQl caching feature is recommended to be used is the navigation component because it sends the same GraphQL query on all pages. In this case, the cache entry would be typically set to:
 
 ```
 venia/components/structure/navigation:true:10:600
@@ -39,13 +39,13 @@ when considering the [Venia Reference store](https://github.com/adobe/aem-cif-gu
 
 Caching for other components should be defined on a project basis, usually in coordination with caching configured at the Dispatcher level. Remember that there isn't any active invalidation of these caches, so caching duration should be carefully set. There isn't any "one size fits all" values that would match all possible projects and use cases. Make sure that you define a caching strategy at the project level that best matches the requirements of your project.
 
-## Dispatcher caching {#dispatcher}
+## Dispatcher Caching {#dispatcher}
 
-Caching AEM pages or fragments in the [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is a best practice for any AEM project. Usually, it relies on invalidation techniques that ensure that any content changed in AEM is properly updated in the Dispatcher. This is a core feature of the AEM Dispatcher caching strategy.
+Caching AEM pages or fragments in the [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html) is a best practice for any AEM project. Usually, it relies on invalidation techniques that ensure that any content changed in AEM is properly updated in the Dispatcher. This is a core feature of the AEM Dispatcher caching strategy.
 
 In addition to pure AEM managed content CIF a page can typically display commerce data that is dynamically fetched from Magento via GraphQL. While the page structure itself might never change, the commerce content might change, for example, if some product data (name, price, etc) changes in Magento.
 
-To make sure that CIF pages can be cached for a limited amount of time in the AEM dispatcher, we hence recommend the use of [Time Based Cache Invalidation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (also known as TTL-based caching) when caching CIF pages in the AEM Dispatcher. This feature can be configured in AEM with using the extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) package.
+To make sure that CIF pages can be cached for a limited amount of time in the AEM dispatcher, we hence recommend the use of [Time Based Cache Invalidation](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (also known as TTL-based caching) when caching CIF pages in the AEM Dispatcher. This feature can be configured in AEM with using the extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) package.
 
 With TTL-based caching, a developer typically defines one or multiple caching durations for selected AEM pages. This ensures that CIF pages are only cached in the AEM dispatcher up to the configured duration and that the content will be frequently updated.
 
@@ -57,4 +57,4 @@ With TTL-based caching, a developer typically defines one or multiple caching du
 
 - [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL caching configuration](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)

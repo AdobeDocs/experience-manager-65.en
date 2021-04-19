@@ -7,27 +7,26 @@ user-guide-description: Understand how to use and administer Experience Manager 
 
 # Commerce {#commerce}
 
-+ [AEM Commerce](/help/commerce/home.md)
-+ [Introduction](/help/commerce/cif/overview.md)
-+ [Notable Changes](/help/commerce/cif/changes.md)
-+ [AEM Commerce - GDPR Readiness](https://experienceleague.adobe.com/docs/experience-manager-65/administering/ecommerce/gdpr-compliance-commerce.html)
-+ Architecture {#architecture}
-  + [Magento Integration](/help/commerce/cif/magento.md)
-  + [Third Party Commerce Integration](/help/commerce/cif/third-party-commerce.md)
-+ [Getting started](/help/commerce/cif/getting-started.md)
-+ Authoring {#authoring}
-    + [Multi-Store Setup](/help/commerce/cif/multi-store-setup.md)
-+ Develop {#develop}
-    + [Develop with AEM 6.5 OPT](/help/commerce/cif/develop-opt.md)
-    + [Develop with AEM 6.5 AMS](/help/commerce/cif/develop-ams.md)
-+ Configure {#configure}
-    + [Multi-Template Usage](/help/commerce/cif/config-multi-template-usage.md)
-    + [Configuring URLs for SEO](/help/commerce/cif/config-advanced-url.md)
-    + [Caching Options](/help/commerce/cif/config-caching.md)
-+ Customize {#customize}
-    + [Styling CIF Components](/help/commerce/cif/dev-style-cif-component.md)
-    + [Customizing CIF Components](/help/commerce/cif/dev-customize-cif-components.md)
-+ [FAQ](/help/commerce/cif/faq.md)
++ [AEM Content and Commerce](/help/commerce/home.md)
++ [Notable Changes to AEM Content and Commerce as a Cloud Service](cif/changes.md)
++ [Introduction and overview](cif/introduction.md)
++ Integrations {#integrations}
+  + [Adobe Commerce](cif/integrating/magento.md)
+  + [3rd Party Commerce Solution](cif/integrating/third-party.md)
++ AEM Storefront {#storefront}
+  + [Getting started](cif/getting-started.md)
+  + Administering {#administering}
+    + [Multi-Store Setup](cif/configuring/multi-store-setup.md)
+    + [Multi-Template Usage](cif/configuring/multi-template-usage.md)
+    + [Configuring URLs for SEO](cif/configuring/advanced-url-configuration.md)
+    + [Caching Options](cif/configuring/caching.md)
+  + Developing {#developing}
+    + [Developing with AEM Cloud Service SDK](cif/develop.md)
+    + [Styling CIF Components](cif/customizing/style-cif-component.md)
+    + [Customizing CIF Components](cif/customizing/customize-cif-components.md)
+    + [Using CIF catalog pickers](cif/customizing/use-cif-pickers.md)
++ [Migration](cif/migration.md)
++ [FAQ](cif/faq.md)
 + Classic CIF {#classic}
     + Deploying {#deploying}
         + [eCommerce Overview](/help/commerce/cif-classic/deploying/ecommerce.md)
