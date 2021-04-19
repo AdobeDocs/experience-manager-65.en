@@ -8,7 +8,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
 # Commerce {#commerce}
 
 + [AEM Content and Commerce](/help/commerce/home.md)
-+ [Notable Changes to AEM Content and Commerce as a Cloud Service](cif/changes.md)
++ [Notable Changes to AEM Content and Commerce](cif/changes.md)
 + [Introduction and overview](cif/introduction.md)
 + Integrations {#integrations}
   + [Adobe Commerce](cif/integrating/magento.md)
