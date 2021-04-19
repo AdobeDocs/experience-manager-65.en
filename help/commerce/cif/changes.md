@@ -1,15 +1,15 @@
 ---
-title: Notable changes of the Commerce Integration Framework (CIF)
-description: Notable changes of the Commerce Integration Framework (CIF) compared to old CIF versions.
+title: Notable changes of the Commerce Integration Framework (CIF) add-on
+description: Notable changes of the Commerce Integration Framework  (CIF) add-on compared to old CIF versions.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 ---
-# Notable Changes to the Commerce Integration Framework (CIF){#notable-changes}
+# Notable Changes to the Commerce Integration Framework (CIF) add-on{#notable-changes}
 
-This document highlights the important differences between the  Commerce Integration Framework (CIF) and old CIF versions, mainly known as CIF Classic (Quickstart) and CIF Open-source.
+This document highlights the important differences between the Commerce Integration Framework (CIF) add-on and old CIF versions, mainly known as CIF Classic (Quickstart) and CIF Open-source.
 
 ## Installation & Updates
 
-The AEM CIF package gets installed and updated with AEM package manager.
+The AEM CIF add-on package gets installed and updated with AEM package manager.
 
 **Previous CIF versions**
 

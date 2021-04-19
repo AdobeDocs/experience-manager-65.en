@@ -2,7 +2,7 @@
 sub-product: AEM Commerce
 user-guide-title: AEM Commerce
 breadcrumb-title: Commerce Guide
-user-guide-description: Understand how to use and administer Experience Manager Commerce as a Cloud Service.
+user-guide-description: Understand how to use and administer Experience Manager Commerce.
 ---
 
 # Commerce {#commerce}
