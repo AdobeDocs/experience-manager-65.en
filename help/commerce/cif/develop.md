@@ -42,7 +42,7 @@ The following should be installed locally:
 
 ### Accessing the CIF add-on
 
-The CIF add-on can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), search for ´AEM Commerce AMS add-on`.
+The CIF add-on can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), search for ´AEM Commerce add-on`.
 
 >[!TIP]
 >
@@ -92,7 +92,6 @@ For example:
 mvn -B archetype:generate \
  -D archetypeGroupId=com.adobe.granite.archetypes \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=25 \
  -D aemVersion=6.5.5 \
  -D appTitle="My Site" \
  -D appId="mysite" \
