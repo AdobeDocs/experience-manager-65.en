@@ -1,29 +1,24 @@
 ---
-title: Notable changes of the Commerce Integration Framework (CIF) add-on
+title: Notable changes of the Commerce Integration Framework (CIF)
 description: Notable changes of the Commerce Integration Framework (CIF) compared to old CIF versions.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32,c136763f-56aa-450e-8796-bc84bf6c205d
 ---
-# Notable Changes to the Commerce Integration Framework (CIF) Add-on{#notable-changes}
+# Notable Changes to the Commerce Integration Framework (CIF){#notable-changes}
 
-Adobe Experience Manager as a Cloud Service brings many new features and possibilities to manage your AEM projects. To learn more about these capabilities, please follow the link for [changes to Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
-
-This document highlights the important differences between the  Commerce Integration Framework (CIF) add-on and old CIF versions, mainly known as CIF Classic (Quickstart) a CIF Open-source.
+This document highlights the important differences between the  Commerce Integration Framework (CIF) and old CIF versions, mainly known as CIF Classic (Quickstart) and CIF Open-source.
 
 ## Installation & Updates
 
-The AEM CIF add-on gets installed via Cloud Manager. Installation requires a CIF credit except for sandboxes where CIF can be installed without credits. Credits are received automatically via the provisioning of the CIF add-on in your AEM contract.
-
-The add-on gets automatically updates as part of the regular AEM as a Cloud Service updates.
+The AEM CIF package gets installed and updated with AEM package manager.
 
 **Previous CIF versions**
 
 * CIF Classic: No installation needed, CIF was part of the Quickstart. CIF updates were part of regular AEM or service pack updates
-* CIF Open-source for AEM On-premises: Installation via GitHub. Updates were part of manual update / maintenance work.
-* CIF Open-source for AEM Adobe Managed Services: Installation via Customer Success Manager. Updates were part of manual update / maintenance work.
+* CIF Open-source: Installation via GitHub. Updates were part of manual update / maintenance work.
 
 ## Endpoint Configuration
 
-The endpoint gets configured and updated either via Cloud Manager UI or its CLI.
+The endpoint gets configured via OSGi console.
 
 **Previous CIF versions**
 
@@ -32,12 +27,11 @@ The endpoint gets configured and updated either via Cloud Manager UI or its CLI.
 
 ## Deployment of CIF Venia Project
 
-Project available in [Cloud Manager Git Repository](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html) and deployment done via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/deploying/overview.html)
+Project available on [GitHub AEM Guides - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) and deployment done via package AEM manager
 
 **Previous CIF versions**
 
 * CIF Classic: Via AEM package install
-* CIF Open-source: Via [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 
 ## Product Catalog Data
 
