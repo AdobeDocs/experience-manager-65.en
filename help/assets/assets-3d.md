@@ -114,20 +114,14 @@ See also [Previewing assets using the software interface](/help/assets/previewin
 1. Tap the card of the 3D asset to open it in the asset details page.  
 1. On the details view page for the 3D asset, do any of the following:
 
-    * **Turn your camera** &ndash; Orbit your view around the 3D scene and objects.
-      * _Mouse_: Left click + drag.
-      * _Touch screen_: Single-finger press + drag.
-    * **Pan your camera** &ndash; Pan your view left, right, up, or down.
-      * _Mouse_: Right click + drag.
-      * _Touch screen_: Two-finger press + drag.
-    * **Zoom your camera** &ndash; Zoom your camera to move in and out of areas of the 3D scene.
-      * _Mouse_: Scroll wheel.
-      * _Touch screen_: Two-finger pinch.
-    * **Recenter your camera** &ndash; Recenter your camera to a point on a object in the 3D scene.
-      * _Mouse_: Double-click.
-      * _Touch screen_: Double-tap.
-    * **Reset** &ndash; Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
-    * **Full screen mode** &ndash; To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.
+    | View | Description | Mouse action | Touch screen action |
+    | --- | --- | --- | --- |
+    | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
+    | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
+    | **Zoom your camera**  | Zoom your camera to move in and out of areas of the 3D scene. | Scroll wheel. | Two-finger pinch. |
+    | **Recenter your camera**  | Recenter your camera to a point on a object in the 3D scene. | Double-click. | Double-tap. |
+    | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
+    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
 1. In the upper-right corner of the page, tap **[!UICONTROL Close]** to return to the Assets page.
 
@@ -141,7 +135,7 @@ When a web page is in **[!UICONTROL Edit]** mode, no interaction is possible wit
 
 See also [Previewing assets using the software interface.](/help/assets/previewing-assets.md)
 
-**To view and interact with a 3D asset inside a 3D Media component**
+**To view and interact with a 3D asset inside a 3D Media component:**
 
 1. While a web page is in **[!UICONTROL Edit]** mode, do either one of the following:
 
@@ -151,22 +145,16 @@ See also [Previewing assets using the software interface.](/help/assets/previewi
     ![3D asset showing inside the 3D Media component](/help/assets/assets-dm/3d-asset-in-3d-media.png)
     A fully interactive 3D asset as displayed in **[!UICONTROL Preview]** mode.
 
-1.  While in **[!UICONTROL Preview]** mode, do any of the following:
+1. While in **[!UICONTROL Preview]** mode, do any of the following:
 
-    * **Turn your camera** &ndash; Orbit your view around the 3D scene and objects.
-      * _Mouse_: Left click + drag.
-      * _Touch screen_: Single-finger press + drag.
-    * **Pan your camera** &ndash; Pan your view left, right, up, or down.
-      * _Mouse_: Right click + drag.
-      * _Touch screen_: Two-finger press + drag.
-    * **Zoom your camera** &ndash; Zoom your camera to move in and out of areas of the 3D scene.
-      * _Mouse_: Scroll wheel.
-      * _Touch screen_: Two-finger pinch.
-    * **Recenter your camera** &ndash; Recenter your camera to a point on a object in the 3D scene.
-      * _Mouse_: Double-click.
-      * _Touch screen_: Double-tap.
-    * **Reset** &ndash; Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.
-    * **Full screen mode** &ndash; To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.
+    | View | Description | Mouse action | Touch screen action |
+    | --- | --- | --- | --- |
+    | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
+    | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
+    | **Zoom your camera**  | Zoom your camera to move in and out of areas of the 3D scene. | Scroll wheel. | Two-finger pinch. |
+    | **Recenter your camera**  | Recenter your camera to a point on a object in the 3D scene. | Double-click. | Double-tap. |
+    | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
+    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
 ## About working with the 3D Media component {#working-with-three-d-media-component}
 
@@ -176,7 +164,6 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in AE
 * [Adding the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page)
   * [Optional &ndash; Configuring the 3D Media component](#configuring-the-three-d-component)
 * [Assigning a 3D asset to the 3D Media component](#assigning-a-three-d-asset-to-the-component)
-
 
 ## Adding the 3D Media component to the page template {#adding-three-d-media-component-to-page-template}
 
