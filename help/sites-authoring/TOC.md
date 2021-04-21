@@ -6,7 +6,6 @@ audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 breadcrumb-title: Authoring Guide
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
-feature-set: Experience Manager Sites
 feature: Authoring
 role: Business Practitioner
 ---

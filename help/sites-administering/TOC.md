@@ -6,7 +6,6 @@ audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
 user-guide-description: Learn about administering AEM.
-feature-set: Experience Manager Sites,Experience Manager Assets,Experience Manager
 feature: Administering
 role: Administrator
 ---
