@@ -8,8 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
+description: Catalog Producer
+exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 ---
-
 # Catalog Producer{#catalog-producer}
 
 Learn how to use Catalog Producer in AEM Assets to generate product catalogs using your digital assets.
@@ -96,4 +97,3 @@ On selecting the **Done** option, a dialog box opens to select whether you want 
    ![chlimage_1-119](assets/chlimage_1-119a.png)
 
    Review the pages in your catalog in the preview. Tap/click **Close** to close the preview.
-

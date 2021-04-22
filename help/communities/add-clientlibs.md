@@ -10,9 +10,8 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
-
+exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 ---
-
 # Add Clientlibs {#add-clientlibs}
 
 ## Add a ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}

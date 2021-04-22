@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
+exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 ---
-
 # Creating Accessible Content (WCAG 2.0 Conformance){#creating-accessible-content-wcag-conformance}
 
 >[!CAUTION]
@@ -963,4 +963,3 @@ In simple forms with very limited functionality, appropriately labelling a `Subm
 
 * [Understanding Success Criterion 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [How to meet Success Criterion 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-

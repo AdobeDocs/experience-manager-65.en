@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
+exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
 ---
-
 # Component, Function and Feature Essentials  {#component-function-and-feature-essentials}
 
 AEM Communities features require site visitors to become members and login to the [community site](overview.md#communitiessites) before being able to post content. Thus, [community site templates](sites.md), from which a community site is [created](sites-console.md), are designed to include a login feature as well as user profiles, messaging, search, moderation, and translation.
@@ -79,4 +79,3 @@ For each [feature pack](deploy-communities.md#latestfeaturepack), a javadoc jar 
 * [Coding Guidelines](code-guide.md)
 * [Tutorials](tutorials.md)
 * [Troubleshooting](troubleshooting.md)
-

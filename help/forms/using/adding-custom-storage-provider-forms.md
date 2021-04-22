@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
+feature: Forms Portal
+exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 ---
-
 # Custom storage for drafts and submissions component {#custom-storage-for-drafts-and-submissions-component}
 
 ## Overview {#overview}
@@ -206,4 +207,3 @@ To use the above annotation, imports the following to your project:
 import org.apache.felix.scr.annotations.Properties;
 import org.apache.felix.scr.annotations.Property;
 ```
-

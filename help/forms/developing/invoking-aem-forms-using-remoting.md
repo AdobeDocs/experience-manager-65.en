@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
+role: Developer
+exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
 ---
-
 # Invoking AEM Forms using Remoting {#invoking-aem-forms-using-remoting} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

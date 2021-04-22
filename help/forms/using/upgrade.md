@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 
+role: Administrator
+exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 ---
-
 # Upgrade to AEM 6.5 Forms{#upgrade-to-aem-forms}
 
 AEM 6.5 Forms includes several new features and enhancements that streamline the creation, management, and user experiences with forms and correspondences. To learn about all the new capabilities and enhancements of AEM 6.5 Forms, see [New features summary document](../../forms/using/whats-new.md).

@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
+exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
+feature: Security
 ---
-
 # OWASP Top 10{#owasp-top}
 
 The [Open Web Application Security Project](https://www.owasp.org) (OWASP) maintains a list of what they regard as the [Top 10 Web Application Security Risks](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
@@ -66,4 +67,3 @@ Mitigated by server configuration (e.g. use HTTPS only).
 ## 10. Unvalidated Redirects and Forwards {#unvalidated-redirects-and-forwards}
 
 Mitigated by restricting all redirects to user-supplied destinations to internal locations.
-

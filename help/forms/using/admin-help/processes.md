@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
+exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 ---
-
 # Managing Processes {#managing-processes}
 
 The Process List page shows the processes that a user has initiated or that were started automatically.
@@ -193,4 +193,3 @@ The Operation Details page shows a summary of one operation in a process and its
    **Status:** Active means that the process is the one activated for the process version. Inactive means that the process is an old version that still has process instances.
 
    **Creation Date:** The date and time the process was deployed.
-

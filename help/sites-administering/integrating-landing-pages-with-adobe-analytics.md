@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
+exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
 ---
-
 # Integrating Landing Pages with Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
 AEM has integrated the landing pages solution with [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) by using the following call-to-action (CTA) components:
@@ -88,4 +88,3 @@ To map landing page components to Adobe Analytics:
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 
 1. After configuring the framework with the landing page, you can now use the instrumented components and any clicks on CTA are recorded in Adobe Analytics.
-

@@ -2,8 +2,10 @@
 title: Integrate [!DNL Assets] with activity stream
 description: Describes the recording capabilities of [!DNL Experience Manager] and how to configure it to record specific events.
 contentOwner: AG
+role: Developer
+feature: Asset Management
+exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 ---
-
 # Integrate [!DNL Assets] with activity stream {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets] users perform many actions like creating, uploading and deleting Assets. These actions can be recorded so you are able to provide an history of what has been done by a user. This section describes the recording capabilities of [!DNL Experience Manager] and how to configure [!DNL Experience Manager] in order to record specific events.

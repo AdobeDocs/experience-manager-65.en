@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
+feature: Configuring
+exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 ---
-
 # Single Sign On {#single-sign-on}
 
 Single Sign On (SSO) allows a user to access multiple systems after providing authentication credentials (such as a user name and password) once. A separate system (known as the trusted authenticator) performs the authentication and provides Experience Manager with the user credentials. Experience Manager checks and enforces the access permissions for the user (i.e. determines which resources the user is allowed to access).
@@ -176,4 +177,3 @@ To remove the sign out link that is available in the user's personal menu in the
    });
    menu.addSeparator();
    ```
-

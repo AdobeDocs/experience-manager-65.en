@@ -10,7 +10,6 @@ content-type: reference
 topic-tags: platform
 docset: aem65
 ---
-
 # eCommerce{#ecommerce}
 
 The integration framework includes an integration layer with an API. This allows you to:

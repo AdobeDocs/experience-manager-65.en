@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8fe572e0-8a53-4129-940f-3fdb990073fe
+exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
 ---
-
 # Types of endpoints {#types-of-endpoints}
 
 Before a service can be used, you must configure and enable an endpoint. An endpoint specifies how a service is to be invoked.

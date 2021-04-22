@@ -10,8 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 80e3eec4-95e0-4731-a0e5-a617e9bcb069
 docset: aem65
 
+feature: Mobile Forms
+exl-id: 039afdf3-013b-41b2-8821-664d28617f61
 ---
-
 # Form set in AEM Forms{#form-set-in-aem-forms}
 
 ## Overview {#overview}
@@ -377,4 +378,3 @@ The following data patterns are not fully supported in Form set:
   </tr>
  </tbody>
 </table>
-

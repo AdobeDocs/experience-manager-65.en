@@ -6,8 +6,9 @@ uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
+role: Administrator
+exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
 ---
-
 # Correspondence Management | Handling user data {#correspondence-management-handling-user-data}
 
 AEM Forms Correspondence Management enables you to create, manage, and streamline secure and personalized customer correspondences. It provides an intuitive user interface for business users to create correspondences using pre-approved content blocks and media elements. For more information about creating correspondences, see [Create Correspondence](/help/forms/using/create-correspondence.md).

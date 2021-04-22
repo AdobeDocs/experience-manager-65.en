@@ -1,11 +1,13 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Developing User Guide
 breadcrumb-title: Developing Guide
 user-guide-description: This guide covers how to build out your AEM instance.
+feature: Developing
+role: Developer
 ---
 
 # AEM 6.5 Developing User Guide {#developing}
@@ -106,6 +108,9 @@ user-guide-description: This guide covers how to build out your AEM instance.
         + [SPA Model Routing](spa-routing.md)
         + [SPA and Adobe Experience Platform Launch Integration](spa-launch.md)
         + [SPA and Server-Side Rendering](spa-ssr.md)
+        + [The RemotePage Component](spa-remote-page.md)
+        + [Editing an External SPA within AEM](spa-edit-external.md)
+        + [Composite Components in SPAs](spa-composite-component.md)
         + [SPA Reference Materials](spa-reference-materials.md)
     + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
     + [Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)

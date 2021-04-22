@@ -2,8 +2,10 @@
 title: Asset Insights
 description:  Learn how the Asset Insights feature lets you track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Asset Insights,Asset Reports
+exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 ---
-
 # Asset Insights {#asset-insights}
 
 The Asset Insights feature enables you to track user ratings and usage statistics of images that are used in third-party websites, marketing campaigns, and Adobe's creative solutions. It helps derive insights regarding their performance and popularity.

@@ -9,8 +9,9 @@ topic-tags: develop
 discoiquuid: 56b6a573-8aba-43e7-acb7-c2da45869d95
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 ---
-
 # Changing Page Zero content in Designer {#changing-page-zero-content-in-designer}
 
 Page Zero content is displayed by default when a non-Adobe PDF viewer, such as the default PDF viewer in [!DNL Chrome] or [!DNL Firefox], cannot read the content of the PDF/XFA form. The default Page Zero message is shown below.

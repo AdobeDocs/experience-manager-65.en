@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
+feature: Tagging
+exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 ---
-
 # Building Tagging into an AEM Application{#building-tagging-into-an-aem-application}
 
 For the purpose of programmatically working with tags or extending tags within a custom AEM application, this page describes use of the
@@ -192,4 +193,3 @@ The new language (Finnish) is now available in the tag dialog of the page proper
 >[!NOTE]
 >
 >The new language needs to be one of the AEM recognized languages, i.e. it needs to be available as a node below `/libs/wcm/core/resources/languages`.
-

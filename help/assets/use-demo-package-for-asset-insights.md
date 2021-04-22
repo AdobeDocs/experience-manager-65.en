@@ -2,8 +2,10 @@
 title: Use demo package for Asset Insights
 description: Use the demo package to enable Adobe Asset Insights to capture data from and generate insights for a web page.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Asset Insights,Asset Reports
+exl-id: 13947513-da76-43e1-ae01-abd24a59752a
 ---
-
 # Use demo package for Asset Insights {#using-demo-package-for-asset-insights}
 
 Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.

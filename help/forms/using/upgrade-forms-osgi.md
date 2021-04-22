@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: Administrator
+exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 ---
-
 # Upgrade to AEM 6.5 Forms on OSGi {#upgrade-to-aem-forms-osgi}
 
 You can perform a direct upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 Forms.
@@ -105,4 +106,3 @@ Do the following to upgrade from AEM 6.3 Forms or AEM 6.4 Forms to AEM 6.5 Forms
    >[!NOTE]
    >
    >In AEM 6.4 Forms, the structure of crx-repository has changed. If upgrade from 6.3 Forms to AEM 6.5 Forms, use the changed paths for customization that you create afresh. For the complete list of changed paths, see [Forms Repository Restructuring in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
-

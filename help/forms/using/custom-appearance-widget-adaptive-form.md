@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
-
+exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 ---
-
 # Create custom appearances for adaptive form fields{#create-custom-appearances-for-adaptive-form-fields}
 
 ## Introduction {#introduction}

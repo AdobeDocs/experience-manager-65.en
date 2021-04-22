@@ -2,8 +2,10 @@
 title: Create and configure Asset Editor pages
 description: Learn how to create custom Asset Editor pages and edit multiple assets simultaneously.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Developer Tools,Asset Management
+exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 ---
-
 # Create and configure Asset Editor pages {#creating-and-configuring-asset-editor-pages}
 
 This document describes the following:

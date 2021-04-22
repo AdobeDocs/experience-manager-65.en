@@ -10,8 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 081f7c17-4e5d-4c7e-a5c3-5541a29b9d55
 docset: aem65
 
+feature: Mobile Forms
+exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 ---
-
 # HTML5 forms service proxy{#html-forms-service-proxy}
 
 HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter *submissionServiceProxy*.

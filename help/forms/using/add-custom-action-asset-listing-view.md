@@ -10,8 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 
+feature: Correspondence Management
+exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 ---
-
 # Add custom action to the Asset Listing view{#add-custom-action-to-the-asset-listing-view}
 
 ## Overview {#overview}
@@ -365,4 +366,3 @@ After you have added custom functionality to download flat PDF of your letters, 
    ![Download letter as PDF](assets/6_downloadflatpdf.png)
 
    The letter gets downloaded to your computer as a flat PDF.
-

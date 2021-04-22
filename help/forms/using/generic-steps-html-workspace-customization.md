@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
-
+exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
 ---
-
 # Generic steps for AEM Forms workspace customization {#generic-steps-for-aem-forms-workspace-customization}
 
 The generic steps to perform any customizations are:

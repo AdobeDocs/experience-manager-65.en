@@ -11,8 +11,10 @@ content-type: reference
 discoiquuid: ec21237f-9186-49b4-8039-99df4db7c14a
 docset: aem65
 
+feature: Content Fragments
+role: Business Practitioner, Administrator
+exl-id: cc212f95-0be0-4705-8dfd-beda9bfb13e0
 ---
-
 # Content Fragments - Delete Considerations{#content-fragments-delete-considerations}
 
 ## Permissions - Delete or Not Delete {#permissions-delete-or-not-delete}
@@ -88,4 +90,3 @@ The `add` and `modify` privileges can also be administered in CRXDE Lite, or usi
 For example, the definition of the `remove` privileges for a group `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)
-

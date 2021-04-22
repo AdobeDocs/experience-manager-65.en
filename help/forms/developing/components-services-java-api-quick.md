@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
+role: Developer
+exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
 ---
-
 # Components and Services Java API Quick Start (SOAP) {#components-and-services-java-apiquick-start-soap}
 
 Java API Quick Start(SOAP) is available for components and services.
@@ -615,4 +616,3 @@ The following Java code example removes a component by using the Java API.
   
  
 ```
-

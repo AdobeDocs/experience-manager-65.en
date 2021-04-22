@@ -2,8 +2,10 @@
 title: [!DNL Assets] HTTP API.
 description: Create, read, update, delete, manage digital assets using HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
+role: Developer
+feature: APIs,Assets HTTP API,Developer Tools
+exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 ---
-
 # [!DNL Assets] HTTP API {#assets-http-api}
 
 ## Overview {#overview}
@@ -305,4 +307,4 @@ Deletes a resource (-tree) at the provided path.
 
 * [HTTP API updates the metadata properties](#update-asset-metadata) in the `jcr` namespace. However, the Experience Manager user interface updates the metadata properties in the `dc` namespace.
 
-* Asset API does not return the complete metadata. In API the namespaces are hardcoded and those only gets returned. If you need whole metadata, then look at the asset path `/jcr_content/metadata.json`.
+* Assets HTTP API does not return the complete metadata. The namespaces are hardcoded and only those namespaces are returned. For complete metadata, see the asset path `/jcr_content/metadata.json`.

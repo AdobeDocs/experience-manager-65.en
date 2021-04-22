@@ -1,8 +1,8 @@
 ---
 title: Known Issues
 description: Release notes specific to the Known Issues with Adobe Experience Manager 6.5
+exl-id: 736037cf-af8c-4ce2-969e-c100a939a038
 ---
-
 # Known issues {#known-issues}
 
 This page keeps a list of known issues from Adobe Experience Manager 6.5 that was released in April 2019.
@@ -73,4 +73,4 @@ To resolve this error:
   The property enables the client libraries under the runtime folder to access proxies. (CQ-4268679)
 
 * When AEM Forms is started, the `SAX Security Manager could not be setup` warning appears.
-* When you open a PDF protected with AEM Forms Document Security on an Apple iOS or iPadOS running Adobe Acrobat Reader version 20.10.00.  
+* When you open a PDF protected with AEM Forms Document Security on an Apple iOS or iPadOS running Adobe Acrobat Reader version 20.10.00.

@@ -10,8 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
+feature: Multi Site Manager
+exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
 ---
-
 # Configuring Live Copy Synchronization{#configuring-live-copy-synchronization}
 
 Perform the following tasks to control how and when live copies are synchronized with their source content.

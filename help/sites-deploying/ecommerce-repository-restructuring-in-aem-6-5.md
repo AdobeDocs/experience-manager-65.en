@@ -8,8 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
+feature: Upgrading
+exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
 ---
-
 # E-Commerce Repository Restructuring in AEM 6.5{#e-commerce-repository-restructuring-in-aem}
 
 As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM E-Commerce Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
@@ -50,4 +51,3 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
   </tr>
  </tbody>
 </table>
-

@@ -8,8 +8,8 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
+exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
 ---
-
 # Record a transaction for custom implementations {#record-a-transaction-for-custom-implementations}
 
 Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
@@ -91,4 +91,3 @@ $.ajax({
 * [Transaction Reports Overview](/help/forms/using/transaction-reports-overview.md)
 * [Viewing and Understanding a Transaction Reports](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Transaction Reports Billable APIs](/help/forms/using/transaction-reports-billable-apis.md)
-

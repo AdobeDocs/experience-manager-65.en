@@ -9,8 +9,9 @@ topic-tags: integration
 discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 
+feature: Form Data Model
+exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
 ---
-
 # Use form data model{#use-form-data-model}
 
  ![](do-not-localize/data-integeration.png)

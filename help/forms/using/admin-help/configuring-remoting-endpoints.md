@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: aab9d622-d76b-4100-9ca6-e5b86f543381
+exl-id: 891d7d75-555a-46c6-a8a0-d5238b48bc79
 ---
-
 # Configuring Remoting endpoints {#configuring-remoting-endpoints}
 
 A remoting endpoint enables an application built with Flex to invoke the service using (Deprecated for AEM forms) AEM forms Remoting. A remoting endpoint is automatically created for each activated service. A Flex destination that has the same name as the endpoint is created, and Flex clients can create remote objects that point to this destination to invoke operations on the relevant service.

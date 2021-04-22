@@ -12,8 +12,9 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 
+role: Administrator
+exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 ---
-
 # Community Groups Console {#community-groups-console}
 
 The Groups console provides access to creating community groups when a community site's [template structure](/help/communities/sites-console.md#step1) includes the [groups function](/help/communities/functions.md#groups-function).

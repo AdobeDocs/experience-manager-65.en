@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: a62ddf8b-97ea-40b9-9c3b-0922fe134567
+exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 ---
-
 # Working with Adobe Campaign{#working-with-adobe-campaign}
 
 Adobe Campaign is a set of solutions that lets you personalize and deliver campaigns across all of your online and offline channels.
@@ -32,4 +32,3 @@ In addition, if you want to customize your integrations, see the following topic
 
 * [Creating Custom Extensions](/help/sites-developing/extending-campaign-extensions.md)
 * [Creating Custom Form Mappings](/help/sites-developing/extending-campaign-form-mapping.md)
-

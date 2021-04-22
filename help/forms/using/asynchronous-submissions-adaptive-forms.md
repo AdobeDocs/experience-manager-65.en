@@ -10,8 +10,9 @@ topic-tags: develop
 discoiquuid: 0a0d2109-ee1f-43f6-88e5-1108cd215da6
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
 ---
-
 # Asynchronous submission of adaptive forms{#asynchronous-submission-of-adaptive-forms}
 
 Traditionally, web forms are configured to submit synchronously. In synchronous submission, when users submit a form, they are redirected to an acknowledgement page, a thank you page, or in case of submission failure, an error page. However, modern web experiences like single page applications are gaining popularity where the web page remains static while client-server interaction happens in the background. You can now provide this experience with adaptive forms by configuring asynchronous submission.
@@ -99,4 +100,3 @@ Perform the following steps to write rules in code editor to handle success and 
 1. In the code editor, tap **[!UICONTROL Edit Code]**. Tap **[!UICONTROL Edit]** on the confirmation dialog.
 1. Choose **[!UICONTROL Successful Submission]** or **[!UICONTROL Error in Submission]** from the **[!UICONTROL Event]** drop-down.
 1. Write a rule for the selected event and tap **[!UICONTROL Done]** to save the rule.
-

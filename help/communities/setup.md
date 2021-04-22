@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
+exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
 ---
-
 # Initial Setup {#initial-setup}
 
 ## Start Author and Publish Instances {#start-author-and-publish-instances}

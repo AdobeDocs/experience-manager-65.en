@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
+exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
 ---
-
 # Adding Fonts for Graphic-Rendering{#adding-fonts-for-graphic-rendering}
 
 AEM allows you to generate graphics incorporating text dynamically taken from your content.
@@ -43,4 +43,3 @@ Currently all implementations of the Java Platform support [TrueType](https://en
    These fonts are now ready to be used in the Java API.
 
 For full details of how to use the fonts with the Java API, see the [documentation for the Font class of the Java API](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html).
-

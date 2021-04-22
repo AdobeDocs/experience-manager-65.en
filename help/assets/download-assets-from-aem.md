@@ -2,8 +2,10 @@
 title: Download assets
 description: Learn how to download assets from [!DNL Adobe Experience Manager] and enable or disable the download functionality.
 contentOwner: AG
+role: Business Practitioner
+feature: Asset Management,Asset Distribution
+exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 ---
-
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
 You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed.

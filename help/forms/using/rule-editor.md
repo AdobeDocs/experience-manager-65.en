@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 ---
-
 # Adaptive forms rule editor{#adaptive-forms-rule-editor}
 
 ## Overview {#overview}
@@ -838,4 +839,3 @@ The rule appears as follows in the code editor.
 ![example-validate-code](assets/example-validate-code.png)
 
 Rule in the code editor
-

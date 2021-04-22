@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
+exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 ---
-
 # Best Practices{#best-practices}
 
 Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.

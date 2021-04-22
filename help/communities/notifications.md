@@ -11,8 +11,9 @@ content-type: reference
 discoiquuid: ab9088b7-a691-4153-ac82-1e8c0a19ed5d
 docset: aem65
 
+role: Administrator
+exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 ---
-
 # Communities Notifications {#communities-notifications}
 
 ## Overview {#overview}
@@ -129,4 +130,3 @@ To modify the email notifications template for @mention in blog comments, place 
     A new mention <a href="{{objectUrl}}">comment</a> {{#if this.target.properties.[jcr:title]}}to the article "{{{target.displayName}}}" {{/if}}was added by {{{user.name}}} on {{dateUtil this.published format="EEE, d MMM yyyy HH:mm:ss z"}}.\n \
 {{/equals}}\
 ```
-

@@ -7,8 +7,9 @@ uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
+feature: Mobile Forms
+exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 ---
-
 # Customizing error messages for HTML5 forms {#customizing-error-messages-for-html-forms}
 
 In HTML5 forms, out of the box, the error messages and warnings have a fixed position and appearance (font and color), the error is displayed only for a selected field, and only one error is displayed.
@@ -121,4 +122,3 @@ To view a form with the custom error messages, render the form with error profil
 >[!NOTE]
 >
 >The attached package installs the error profile.
-

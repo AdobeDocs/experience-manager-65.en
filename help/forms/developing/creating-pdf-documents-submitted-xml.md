@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
+role: Developer
+exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 ---
-
 # Creating PDF Documents with Submitted XML Data {#creating-pdf-documents-with-submittedxml-data} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

@@ -12,8 +12,9 @@ discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
 
+feature: Upgrading
+exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 ---
-
 # Upgrading Code and Customizations{#upgrading-code-and-customizations}
 
 When planning an upgrade the following areas of an implementation need to be investigated and addressed.

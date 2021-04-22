@@ -10,8 +10,9 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 
+feature: Adaptive Forms, Adobe Sign
+exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 ---
-
 # Integrate [!DNL Adobe Sign] with AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
 
 [!DNL Adobe Sign] enables e-signature workflows for adaptive forms. E-signatures improve workflows to process documents for legal, sales, payroll, human resource management, and many more areas.
@@ -119,5 +120,3 @@ Default interval to sync status of [!DNL Adobe Sign] is now changed.
 
 * [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md)
 * [Using Adobe Sign with AEM Forms (Video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
-
-

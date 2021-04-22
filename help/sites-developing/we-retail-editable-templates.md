@@ -1,7 +1,7 @@
 ---
 title: Trying out Editable Templates in We.Retail
 seo-title: Trying out Editable Templates in We.Retail
-description: null
+description: Trying out Editable Templates in We.Retail
 seo-description: null
 uuid: 0d4b97cb-efcc-4312-a783-eae3ecd6f889
 contentOwner: User
@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
+exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 ---
-
 # Trying out Editable Templates in We.Retail{#trying-out-editable-templates-in-we-retail}
 
 With the editable templates, creating and maintaining templates is no longer a developer-only task. A type of power-user, who is called a template author, can now create templates. Developers are still required to setup the environment, create client libraries, and create the components to be used, but once these basics are in place the template author has the flexibility to create and configure templates without a development project.
@@ -70,4 +70,3 @@ All pages in We.Retail are based on editable templates, allowing non-developers 
 For further information please refer to the authoring document [Creating Page Templates](/help/sites-authoring/templates.md) or the developer document Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) for complete technical details on editable templates.
 
 You may also wish to investigate [core components](/help/sites-developing/we-retail-core-components.md). See the authoring document [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) for an overview of the capabilities of the core components and the developer document [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for a technical overview.
-

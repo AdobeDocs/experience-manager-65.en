@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
-
+exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 ---
-
 # Authoring Pages{#authoring-pages}
 
 The following provide two types of overview to authoring with AEM:
@@ -52,4 +51,3 @@ To aid you when authoring pages the author environment provides features such as
 
 * **Search as you type**
   In certain scenarios (for example, path selection in edit dialogs) searching for content through the AEM interface presents dynamic matches as you type the query.
-

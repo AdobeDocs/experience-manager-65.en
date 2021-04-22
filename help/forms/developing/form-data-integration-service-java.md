@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
+role: Developer
+exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
 ---
-
 # Form Data Integration Service Java API Quick Start (SOAP) {#form-data-integration-service-javaapi-quick-start-soap}
 
 The following Quick Starts are available for the Form Data Integration service.
@@ -223,4 +224,3 @@ The following Java code example exports data from a PDF form. The form data is s
      }
  }
 ```
-

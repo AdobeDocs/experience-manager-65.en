@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
+exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
 ---
-
 # Distribute AEM Forms app {#distribute-aem-forms-app}
 
 Mobile Device Management (MDM) enables the large-scale deployment of apps on mobile devices.

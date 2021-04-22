@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
+exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
 ---
-
 # Single Sign On and timeout handlers {#single-sign-on-and-timeout-handlers}
 
 AEM Forms workspace is SSO enabled. If a user has logged in to an AEM Forms application like Forms Manager or PDF Generator user interface and accesses AEM Forms workspace in the same browser session, then the user is logged in to AEM Forms workspace and vice versa.

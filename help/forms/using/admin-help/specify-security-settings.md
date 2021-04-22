@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
+exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
 ---
-
 # Specify security settings {#specify-security-settings}
 
 Output enables you to control whether external entities in XML inputs are resolved. By default, they are resolved, but you can change this behavior to increase the security of your AEM forms system.
@@ -20,4 +20,3 @@ Output enables you to control whether external entities in XML inputs are resolv
 1. In administration console, click Services &gt; output.
 1. Clear the Resolve External Entities check box.
 1. Click Save.
-

@@ -10,9 +10,8 @@ topic-tags: components
 content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
-
+exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 ---
-
 # Developer Mode{#developer-mode}
 
 When editing pages in AEM, several [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) are available, including Developer mode. This opens a side panel with several tabs that provide a developer with infomation about the current page. The three tabs are:
@@ -137,4 +136,3 @@ The component entry in the tree of the Components tab will also be marked with a
 >In AEM 6.2, the testing features of Developer mode was re-implemented as a standalone Tools application.
 >
 >For full details see [Testing Your UI](/help/sites-developing/hobbes.md).
-

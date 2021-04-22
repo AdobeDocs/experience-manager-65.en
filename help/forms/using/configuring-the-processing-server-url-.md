@@ -10,8 +10,9 @@ topic-tags: Configuration
 discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 
+role: Administrator
+exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
 ---
-
 # Configuring AEM DS settings{#configuring-aem-ds-settings}
 
 This article describes how to configure **AEM DS Settings Service**. This setting can be used in multiple scenarios, for example:
@@ -54,4 +55,3 @@ Following are the steps to configure the **[!UICONTROL AEM DS Settings]**:
    >    * While using either Forms or AEM workflows, before you make any submission from the publish server, it is necessary to configure the DS settings service. Otherwise, the Form submission shall fail.
    >    
    >
-

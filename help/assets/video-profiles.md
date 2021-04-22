@@ -8,8 +8,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
+feature: Video Profiles
+role: Business Practitioner, Administrator
+exl-id: b290fac2-7259-45d7-b733-70419d632b07
 ---
-
 # Video profiles {#video-profiles}
 
 Dynamic Media already comes with a predefined Adaptive Video Encoding profile. The settings in this out-of-the-box profile are optimized to give your customers the best viewing experience possible. When you encode your primary source videos using the Adaptive Video Encoding profile, during playback the video player automatically adjusts the quality of the video stream based on the Internet connection speed of your customers. This is known as adaptive streaming.
@@ -430,4 +432,3 @@ You can remove a video profile from a folder from within the **[!UICONTROL Tools
 1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a video profile from.
 1. On the folder, tap or click the check mark to select it and then tap or click **[!UICONTROL Properties.]**
 1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close.]** Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
-

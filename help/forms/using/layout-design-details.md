@@ -10,8 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 
+feature: Correspondence Management
+exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
 ---
-
 # Layout Design{#layout-design}
 
 XFA form templates or XDPs are the templates for:
@@ -228,4 +229,3 @@ When elements such as your organization’s logo and address appear on all pages
 Use the layout’s server render format to Dynamic XML Form; otherwise, any letters/Interactive Communications based on this layout cannot render correctly. By default, the server render format in Forms Designer is set to Dynamic XML Form. To ensure that you are using the correct format:
 
 * In Designer, click **File** &gt; **Form Properties** &gt; **Defaults**, and ensure that the PDF Render/Format setting is set to Dynamic XML Form.
-

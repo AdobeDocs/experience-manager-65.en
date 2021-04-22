@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
+role: Developer
+exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
 ---
-
 # Understanding AEM Forms Processes {#understanding-aem-forms-processes} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

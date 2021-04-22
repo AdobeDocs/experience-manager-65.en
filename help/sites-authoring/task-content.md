@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
+exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 ---
-
 # Working with Tasks{#working-with-tasks}
 
 Tasks represent items of work to be done on content. When you are assigned a task, it appears in your Workflow Inbox. Task items have a value of task in the Type column.

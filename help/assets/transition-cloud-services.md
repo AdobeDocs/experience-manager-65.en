@@ -2,8 +2,10 @@
 title: Apply translation cloud services to folders
 description: Apply translation cloud services to folders
 contentOwner: AG
+role: Administrator
+feature: Translation
+exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
 ---
-
 # Apply translation cloud services to folders {#applying-translation-cloud-services-to-folders}
 
 [!DNL Adobe Experience Manager] lets you avail cloud-based translation services from the translation provider of your choice to ensure your assets are translated based on your requirements.

@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 70fa0b9c-cb98-45c4-9c94-bef4a9f3741e
 docset: aem65
-
+exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 ---
-
 # Calendar Feature {#calendar-feature}
 
 ## Introduction {#introduction}

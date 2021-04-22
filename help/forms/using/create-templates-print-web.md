@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 
+feature: Interactive Communication
+exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
 ---
-
 # Tutorial: Create templates{#tutorial-create-templates}
 
  ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)

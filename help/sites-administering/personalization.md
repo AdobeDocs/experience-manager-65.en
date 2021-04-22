@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
+exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 ---
-
 # Personalization {#personalization}
 
 ## What is Personalization? {#what-is-personalization}

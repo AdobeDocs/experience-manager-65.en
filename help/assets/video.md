@@ -8,8 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
+feature: Asset Management
+role: Business Practitioner, Administrator
+exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 ---
-
 # Video in Dynamic Media {#video}
 
 This section describes working with video in Dynamic Media.
@@ -1316,4 +1318,3 @@ T**o add a custom video thumbnail**,
 1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes.]**
 
    The custom thumbnail is added to your video.
-

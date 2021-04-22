@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
+exl-id: 57d45b06-e76e-420c-8cd0-389bd9f811af
 ---
-
 # Selecting your UI{#selecting-your-ui}
 
 Since the touch-enabled UI supersedes the classic UI, the user or administrator of the AEM instance must make an active decision to continue using the classic UI. Because the classic UI is no longer maintained, there is no way for the authoring user to simply switch from the classic UI to the equivalent in the touch-enabled UI.

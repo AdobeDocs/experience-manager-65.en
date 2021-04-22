@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
+exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 ---
-
 # Components{#components}
 
 Adobe Experience Manager (AEM) comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-authoring/editing-content.md) and are grouped by main functional area (called component group) to aid filtering.
@@ -63,4 +63,3 @@ In addition to the components that authors can access in a standard installation
 
 * If your page is based on the recommended, modern, editable template, you can [edit the template](/help/sites-authoring/templates.md) enable/disable these and edit parameters for specific components.
 * If your page is based on a static template, you can use [design mode](/help/sites-authoring/default-components-designmode.md#enable-disable-components) to enable/disable these and edit parameters for specific components.
-

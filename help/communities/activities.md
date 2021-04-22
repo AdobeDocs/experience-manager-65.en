@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 89f3630f-c01a-4dc0-9ff5-169785f22c01
 docset: aem65
-
+exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
 ---
-
 # Activity Streams Feature {#activity-streams-feature}
 
 ## Introduction {#introduction}

@@ -10,8 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
+exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 ---
-
 # SharePoint Connector Licenses, Copyright Notices, and Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 This section lists all licenses, copyright notices and disclaimers which must be explicitly stated in connection with Day JCR Connector for MS SharePoint.
@@ -1297,4 +1297,3 @@ documentation shall at all times remain with Princeton University and
 LICENSEE agrees to preserve same.
 
 ```
-

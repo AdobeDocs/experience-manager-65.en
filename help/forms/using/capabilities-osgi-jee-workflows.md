@@ -2,8 +2,8 @@
 title: Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows
 description: Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows
 contentOwner: khsingh
+exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 ---
-
 # Actions and capabilities of Form-centric AEM Workflows on OSGi and AEM Forms JEE workflows {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
 ## AEM Inbox and HTML Workspace {#aem-inbox-and-html-workspace}
@@ -448,4 +448,3 @@ The following table lists the capabilities of AEM Inbox and AEM Forms app:
   </tr>
  </tbody>
 </table>
-

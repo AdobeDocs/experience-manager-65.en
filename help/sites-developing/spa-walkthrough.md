@@ -10,9 +10,8 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
 docset: aem65
-
+exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 ---
-
 # SPA Introduction and Walkthrough{#spa-introduction-and-walkthrough}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.

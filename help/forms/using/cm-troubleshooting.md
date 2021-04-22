@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
+feature: Correspondence Management
+exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
 ---
-
 # Correspondence Management: Troubleshooting {#correspondence-management-troubleshooting}
 
 ## Errors when saving a letter {#errors-when-saving-a-letter}
@@ -47,4 +48,3 @@ Reset the letter cache on the publish instance using the following steps and the
 1. In **Correspondence Management Configurations**, disable **Enable Letter Cache **and then click** Save.**
 1. Enable **Enable Letter Cache** and then click **Save**.
 1. Retry viewing the letter.
-

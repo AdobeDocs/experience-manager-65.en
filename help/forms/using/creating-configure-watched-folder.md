@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
+exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 ---
-
 # Create or Configure a watched folder {#create-or-configure-a-watched-folder}
 
 An administrator can configure a network folder, known as a *watched folder*, so that when a user places a file (such as a PDF file) in the watched folder, a pre-configured operation is started and manipulates the file. After the specified operation is performed, the operation saves the modified file in a specified output folder. For detailed information about administering a watched folder, see [Administration Help](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md).
@@ -115,4 +115,3 @@ Apart from changing the name of the watched folder, you can modify all the prope
 1. Tap **Tools** &gt; **Forms** &gt; **Configure Watched Folder.** A list of already configured watched folders is displayed.
 1. On the left side of the Watched Folder screen, select the watchfolder and tap **Edit.** A list of fields required to create the watched folder is displayed. The fields listed in the **Basic** Tab are mandatory. The advanced tab contains more fields. Most of these fields contain a default value. You can modify these properties as per your requirements.
 1. After modifying the properties, tap **Update**. The modified properties are saved.
-

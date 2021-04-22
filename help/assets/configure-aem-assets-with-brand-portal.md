@@ -9,8 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: dca5a2ac-1fc8-4251-b073-730fd6f49b1c
 docset: aem65
+feature: Brand Portal
+role: Administrator
+exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 ---
-
 # Configure AEM Assets with Brand Portal {#configure-integration-65}
 
 Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets to Brand Portal and distribute them to the Brand Portal users.
@@ -405,5 +407,3 @@ You can now [create configuration](#configure-new-integration-65) via Adobe Deve
 
    <li>Step text</li>
    -->
-
-

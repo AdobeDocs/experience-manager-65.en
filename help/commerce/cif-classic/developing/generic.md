@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 ---
-
 # Developing (generic){#developing-generic}
 
 >[!NOTE]
@@ -570,4 +569,3 @@ Three promotion handlers are provided out of the box:
 * `DiscountPromotionHandler` applies a cart-wide absolute or percentage discount
 * `PerfectPartnerPromotionHandler` applies a product absolute or percentage discount if the product partner is also in the cart
 * `FreeShippingPromotionHandler` applies free shipping
-

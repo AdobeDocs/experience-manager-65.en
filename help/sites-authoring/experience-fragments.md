@@ -1,7 +1,7 @@
 ---
 title: Experience Fragments
 seo-title: Experience Fragments
-description: null
+description: Experience Fragments
 seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
-
+exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 ---
-
 # Experience Fragments{#experience-fragments}
 
 An Experience Fragment is a group of one or more components including content and layout that can be referenced within pages. They can contain any component.

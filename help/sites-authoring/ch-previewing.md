@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
+exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
 ---
-
 # Previewing Pages Using ContextHub Data{#previewing-pages-using-contexthub-data}
 
 The [ContextHub](/help/sites-developing/contexthub.md) toolbar displays data from ContextHub stores and enables you to change store data. The ContextHub toolbar is useful for previewing content that is determined by data in a ContextHub store.
@@ -63,4 +63,3 @@ The popup overlay of a module can include form elements that enable you to chang
 Popup overlays can include an icon that you click or tap to expand the popup content to cover the entire browser window or screen.
 
 ![](do-not-localize/chlimage_1-18.png)
-

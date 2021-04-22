@@ -9,8 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
+role: Developer
+exl-id: 069e5b10-ab93-4492-a70d-6a0d462105a6
 ---
-
 # Validate a DDX document using the web service API {#validate-a-ddx-document-using-theweb-service-api} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

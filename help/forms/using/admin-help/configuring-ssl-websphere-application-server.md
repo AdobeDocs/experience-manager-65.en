@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
+exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 ---
-
 # Configuring SSL for WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
 
 This section includes the following steps to configure SSL with your IBM WebSphere Application Server.
@@ -176,4 +176,3 @@ Perform the following steps to set the port to be dynamic and resolve the issue:
    ```
 
 1. Save the file and restart the server.
-

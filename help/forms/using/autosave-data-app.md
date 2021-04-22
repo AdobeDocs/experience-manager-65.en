@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 2c71cc28-b7c8-4785-9fc2-b47fa80cbd70
 docset: aem65
-
+exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
 ---
-
 # Using autosave in AEM Forms app{#using-autosave-in-aem-forms-app}
 
 When a user enters data in the Adobe Experience Manager Forms app, the autosave feature saves it at regular intervals. The autosave feature in the AEM Forms app helps you avoid data loss if the app is accidentally closed.
@@ -39,4 +38,3 @@ Perform the following steps to use the autosave feature in AEM Forms app:
 
    When you click **OK**, the task is restored with the data corresponding to the latest autosave triggered before the app crashed. It includes the form data and all the attachments associated with the task.
    [ ![Getting a task recovered](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** A work-in-progress form **B.** App closed forcefully **C.** App restarted with Recover Unsaved Task dialog **D.** Form restored with original data
-

@@ -8,8 +8,9 @@ content-type: reference
 topic-tags: develop
 discoiquuid: f5642571-9657-4ca1-93c5-4ae2eb91e967
 noindex: true
+feature: Adaptive Forms
+exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
 ---
-
 # Using AEM translation workflow to localize adaptive forms and document of record {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 Localized forms help you serve a wider audience across geographies. Adobe Experience Manager translation workflow helps you localize adaptive forms and their documents of record . You can use **machine translation** or **human translators** to localize an adaptive form.
@@ -70,4 +71,3 @@ Perform the following steps to localize a form and its document of record using 
 >
 >* Adaptive form components do not support right to left (RTL) languages. For example, Hebrew.
 >
-

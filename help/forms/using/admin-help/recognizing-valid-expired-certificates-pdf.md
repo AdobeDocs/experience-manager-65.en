@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4559218a-65ba-4577-ad26-7721e28971bc
+exl-id: dfe2823a-3a0d-4e45-8765-f618529e22dd
 ---
-
 # Recognizing valid and expired certificates in PDF documents {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
 When a PDF document that has usage rights applied by Reader Extensions is opened in Adobe Reader, a status bar appears that describes the specific usage rights enabled in the PDF document.

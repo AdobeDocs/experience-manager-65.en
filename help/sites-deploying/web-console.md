@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
+feature: Configuring
+exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 ---
-
 # Web Console{#web-console}
 
 The Web console in AEM is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
@@ -173,4 +174,3 @@ Clicking on the name of a particular component will display further information 
 >Enabling, or disabling, a component will only apply until AEM/CRX is restarted.
 >
 >The start state is defined within the component descriptor, which is generated during development and stored in the bundle at bundle creation time.
-

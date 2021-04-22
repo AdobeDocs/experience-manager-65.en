@@ -3,8 +3,8 @@ title: What is new in [!DNL Experience Manager] 6.5 Service Pack 8
 description: What's new in [!DNL Experience Manager] 6.5 Service Pack 8
 contentOwner: AK
 mini-toc-levels: 1
+exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 ---
-
 # What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
@@ -30,6 +30,22 @@ You can now sort the Live Copy pages available for rollout using the [!UICONTROL
 >[!NOTE]
 >
 >The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+### Show or hide CAPTCHA component in an adaptive form based on rules {#show-hide-captcha}
+
+You can now validate CAPTCHA either on adaptive form submission or on user action. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an adaptive form based on rules.
+
+### Add custom CAPTCHA services {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] provides out of the box support to use Google reCAPTCHA (A separate license of Google reCAPTCHA APIs is required) as a CAPTCHA validation service. You can also use a custom CAPTCHA service to validate CAPTCHAs.
+
+### Other enhancements {#other-enhancements-forms-6580}
+
+* Improved accessibility of the [!DNL Experience Manager Forms] Date Picker component.
+
+* Added support to generate an Interactive Communication in PCL format using the PrintChannel API.
+
+* When performing a PDFG conversion, you can now enable or disable the [!DNL Experience Manager Forms] registry changes for custom bookmark generation.
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
@@ -209,6 +225,10 @@ Smart crop for video–an optional feature available in Video Profiles– is a t
 * Validating the field values on the server when you submit an adaptive form.
 
 * Converting a PDF form to an adaptive form using the [!DNL Automated Forms Conversion service].
+
+#### Support for Microsoft SQL Server 2016 Always On availability groups for High Availability (6.5.7.0) {#always-on-availability-groups}
+
+[!DNL Experience Manager Forms] now supports [!DNL Microsoft] SQL Server 2016 Always On availability groups for High Availability for OSGi deployments.
 
 #### Form data model HTTP client configuration to optimize performance (6.5.7.0) {#fdm-http-client-config}
 

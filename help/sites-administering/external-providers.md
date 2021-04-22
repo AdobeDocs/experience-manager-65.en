@@ -10,9 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
-
+exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
 ---
-
 # Analytics with External Providers {#analytics-with-external-providers}
 
 Analytics can provide you with important and interesting information about how your website is being used.

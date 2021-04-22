@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
+exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 ---
-
 # Opening a task {#opening-a-task}
 
 If the AEM Forms app syncs with an AEM Forms server, you can work with tasks assigned to you. Tasks are steps in the Workflow defined in workbench or in the AEM workflow editor. 

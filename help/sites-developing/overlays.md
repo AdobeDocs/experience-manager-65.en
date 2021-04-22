@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
+exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 ---
-
 # Overlays{#overlays}
 
 AEM (and prior to that, CQ) has long used the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
@@ -98,4 +98,3 @@ Some examples are covered when:
 
 * [Customizing the Consoles](/help/sites-developing/customizing-consoles-touch.md)
 * [Customizing Page Authoring](/help/sites-developing/customizing-page-authoring-touch.md)
-

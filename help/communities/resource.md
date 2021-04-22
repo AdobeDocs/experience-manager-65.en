@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
+exl-id: 78908a9c-a260-44ff-ad1e-baa6d78ae399
 ---
-
 # Create and Assign Enablement Resources {#create-and-assign-enablement-resources}
 
 ## Add an Enablement Resource {#add-an-enablement-resource}
@@ -217,4 +217,3 @@ On the Add Resources panel:
 Successful creation of the learning path returns to the Resources console with the newly created learning path selected. From this console, it is possible to publish, add learners and change other settings.
 
 **Publish** the learning path.
-

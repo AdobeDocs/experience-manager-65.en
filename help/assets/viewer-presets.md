@@ -7,8 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
+feature: Viewer Presets
+role: Business Practitioner, Administrator
+exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
 ---
-
 # Applying Dynamic Media viewer presets {#applying-viewer-presets}
 
 A Viewer Preset is a collection of settings that determine how users view rich-media assets on their computer screens and mobile devices. You can apply any viewer presets created by your administrator to an asset.

@@ -10,8 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: adc7ec13-0675-4071-9c4c-e238202d9d85
 docset: aem65
 
+feature: Correspondence Management
+exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
 ---
-
 # Custom watermark in letter PDF preview{#custom-watermark-in-letter-pdf-preview}
 
 ## Overview {#overview}
@@ -82,4 +83,3 @@ You can use the following steps to customize the text and appearance of the wate
    >In the ddx file, the references to result and source should remain unchaged to output.pdf and input.pdf. Name of the file ddx should also not be changed.
 
 1. Click **Save All**.
-

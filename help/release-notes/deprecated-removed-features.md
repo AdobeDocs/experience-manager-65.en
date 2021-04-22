@@ -1,8 +1,8 @@
 ---
 title: Deprecated and Removed Features in Adobe Experience Manager 6.5 release.
 description: Release notes specific to deprecated and removed features in Adobe Experience Manager 6.5.
+exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 ---
-
 # Deprecated and removed features {#deprecated-and-removed-features}
 
 Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
@@ -69,4 +69,4 @@ This section is used to pre-announce the upcoming changes in the future releases
 
 |Area|Feature|Announcement|
 |--- |--- |--- |
-|Foundation|UI Framework|Adobe is planning to deprecate the Coral UI 2 components in 2019. Coral UI 3 was introduced with AEM 6.2, and AEM 6.5 is fully based on Coral 3. Adobe recommends customers and partners that have build custom UIs with Coral 2 to refactored them to Coral 3. Adobe is providing a tool to convert Coral 2 dialogs to Coral 3 - [Read more](/help/sites-developing/dialog-conversion.md).|
+|Foundation|UI Framework|Adobe is planning to deprecate the Coral UI 2 components in 2019. Coral UI 3 was introduced with AEM 6.2, and AEM 6.5 is fully based on Coral 3. Adobe recommends customers and partners that have build custom UIs with Coral 2 to refactored them to Coral 3. Adobe is providing a tool to convert Coral 2 dialogs to Coral 3 - [Read more](/help/sites-developing/modernization-tools.md).|

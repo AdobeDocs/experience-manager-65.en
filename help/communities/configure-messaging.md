@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9d952604-f9ef-498f-937b-871817c80226
 docset: aem65
-
+exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 ---
-
 # Messaging Feature {#messaging-feature}
 
 In addition to the publicly visible interactions which occur in forums and comments, the messaging feature of AEM Communities enables community members to interact with one another more privately.
@@ -199,4 +198,3 @@ To modify the configuration of the compose message page, open the site in [autho
 * **Timestamp patterns**
   
   Provide timestamp patterns for one or more languages. Default is for en, de, fr, it, es, ja, zh_CN, ko_KR.
-

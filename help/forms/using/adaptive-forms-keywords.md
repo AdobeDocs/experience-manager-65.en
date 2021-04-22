@@ -7,8 +7,9 @@ uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
+feature: Adaptive Forms
+exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 ---
-
 # Adaptive forms keywords {#adaptive-forms-keywords}
 
 Adaptive forms keywords are predefined, reserved identifiers that have special meaning for adaptive forms. You cannot use these keywords as identifiers in your adaptive forms. The following table lists all the keywords that are reserved identifiers for adaptive forms.

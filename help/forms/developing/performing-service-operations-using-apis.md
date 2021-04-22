@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8fa1426f-f453-45c5-89b9-67038f56c70e
+role: Developer
+exl-id: 62489194-82ca-44f6-b5be-4411c95f6f80
 ---
-
 # Performing Service Operations Using APIs {#performing-service-operations-using-apis} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

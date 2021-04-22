@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
+exl-id: fd1b1749-13f9-4079-ae39-348676105852
 ---
-
 # Leaderboard Essentials {#leaderboard-essentials}
 
 This page provides the essential information for working with the leaderboard feature.

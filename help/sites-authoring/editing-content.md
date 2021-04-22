@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
-
+exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 ---
-
 # Editing Page Content{#editing-page-content}
 
 Once your page is created (either new or as part of a launch or live copy) you can edit the content to make the updates you require.
@@ -596,4 +595,3 @@ Form fields that form components render are not meant to have values specified w
 >[!NOTE]
 >
 >The history of changes to files and images lasts for a minimum of ten hours. Beyond this time however, the undo of the changes is not guaranteed. Your administrator can change the default time of ten hours.
-

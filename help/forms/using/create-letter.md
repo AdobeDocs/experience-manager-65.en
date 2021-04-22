@@ -7,8 +7,9 @@ uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
+feature: Correspondence Management
+exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 ---
-
 # Create Letter {#create-letter}
 
 ## Correspondence Management workflow {#correspondence-management-workflow}
@@ -470,4 +471,3 @@ You can use an existing letter template to quickly create a letter template with
 1. Tap Paste. The Paste dialog appears. If you are copying and pasting the letters at the same place, the system automatically assigns names and titles to the new copies of letters but you can edit the titles and names of the letters. 
 1. If required, edit the Title and Name with which you want to save the copy of the letter.
 1. Tap Paste. The copy of the letter is created. Now you can make the required changes in your newly created letter.
-

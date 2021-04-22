@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 968b9131-ccdf-4856-b504-bc1a44974980
 docset: aem65
-
+exl-id: cf5849c7-1c6a-46d8-9cc4-f1f20a507a0c
 ---
-
 # Adding Search&Promote Features To Your Page{#adding-search-promote-features-to-your-page}
 
 To integrate Search&Promote capabilities in your web site, use the Search&Promote components to add the following features to your pages:

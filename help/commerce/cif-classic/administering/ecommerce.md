@@ -5,7 +5,6 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 ---
-
 # eCommerce{#ecommerce}
 
 * [Concepts](/help/commerce/cif-classic/administering/concepts.md)

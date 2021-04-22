@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
+exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 ---
-
 # Configuring Shared Queues{#configuring-shared-queues}
 
 Shared Queues allow you to configure and manage user queues effectively. A user queue is simply all tasks assigned to a user, see [To Do Lists](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) for more information. You can assign, unassign, and reassign user queues depending on your organizational needs. You can manage Shared Queues in two ways:
@@ -78,4 +78,3 @@ Once assigned, these tasks can be completed by the user using Workspace.
 1. On the Manage Access By A User tab, find and select the user whose queue you wish to manage.
 1. The bottom right pane displays the list of user queues assigned to the selected user. Select the user queue and click Revoke.
 1. Click Save to complete.
-

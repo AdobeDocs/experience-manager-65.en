@@ -6,8 +6,9 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
+role: Administrator
+exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 ---
-
 # Forms JEE workflows | Handling user data {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE workflows provide tools to design, create, and manage business processes. A workflow process consists of a series of steps that execute in a specified order. Each step performs a specific action such as assigning a task to a user or sending an email message. A process can interact with assets, user accounts, and services, and can be triggered using any of the following methods:
@@ -188,4 +189,3 @@ Once you have the task IDs, do the following to purge the associated files and d
    delete from tb_assignment where task_id=<task_id>
    delete from tb_task where id=<task_id>
    ```
-

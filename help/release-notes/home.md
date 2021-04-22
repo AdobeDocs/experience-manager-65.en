@@ -1,8 +1,8 @@
 ---
 title: Adobe Experience Manager 6.5 Release Notes
 description: The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
+exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 ---
-
 # Adobe Experience Manager 6.5 Release Notes
 
 The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.

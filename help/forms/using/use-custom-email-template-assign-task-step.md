@@ -7,9 +7,8 @@ uuid: ba453d54-813f-4a4f-a82e-1a6a28b6939c
 topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
-
+exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
 ---
-
 # Use custom email templates in an Assign Task step{#use-custom-email-templates-in-an-assign-task-step}
 
 You can use the Assign Task step to create and assign tasks to a user or group. When a task is assigned to a user or group, an email notification is sent to the defined user or to each member of the defined group. A typical email notification contains link of the assigned task and information related to the task. The following image displays a sample email notification:
@@ -68,4 +67,4 @@ Out of the box, Assign task step is configured to use the default template, html
 
 1. Click OK. The template is changed.
 
-An email notification also uses [metadata](../../forms/using/use-metadata-in-email-notifications.md). For example, due date, priority, workflow name, and more. You can also configure the template to use [custom metadata](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification). 
+An email notification also uses [metadata](../../forms/using/use-metadata-in-email-notifications.md). For example, due date, priority, workflow name, and more. You can also configure the template to use [custom metadata](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

@@ -10,9 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: aca444f6-418a-4c01-ae19-663b4e04fab9
 docset: aem65
-
+exl-id: 15f45978-a983-49a0-91cf-c7610fc37eef
 ---
-
 # Integrating with Adobe Search&Promote{#integrating-with-adobe-search-promote}
 
 To call the Adobe Search&Promote service from your website, perform the following tasks:

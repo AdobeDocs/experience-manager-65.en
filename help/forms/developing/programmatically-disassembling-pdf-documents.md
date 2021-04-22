@@ -9,8 +9,9 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
+role: Developer
+exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
 ---
-
 # Programmatically Disassembling PDF Documents {#programmatically-disassembling-pdf-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

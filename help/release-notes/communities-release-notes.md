@@ -1,8 +1,8 @@
 ---
 title: AEM Communities Release Notes
 description: Release notes specific to Adobe Experience Manager 6.5 Communities.
+exl-id: 8eeaf917-aac8-4f5c-be12-d2a6783c5c5c
 ---
-
 # AEM Communities release notes {#aem-communities-release-notes}
 
 Read on for the improvements to AEM Communities since the 6.4 release. To learn about the new features in greater detail, see [AEM 6.5 Communities User Guide](https://helpx.adobe.com/experience-manager/6-4/communities/user-guide.html).

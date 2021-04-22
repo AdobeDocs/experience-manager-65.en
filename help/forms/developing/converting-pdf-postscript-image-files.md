@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
+role: Developer
+exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
 ---
-
 # Converting PDF to Postscript and Image Files {#converting-pdf-to-postscript-andimage-files} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

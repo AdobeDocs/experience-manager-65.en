@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
+feature: Upgrading
+exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 ---
-
 # Using the CRX2Oak Migration Tool{#using-the-crx-oak-migration-tool}
 
 ## Introduction {#introduction}
@@ -213,4 +214,3 @@ java -Xmx4092m -XX:MaxPermSize=1024m -jar crx2oak.jar crx-quickstart/repository/
 >[!NOTE]
 >
 >For more information, see the MongoDB Connection String documentation on [Write Concerns](https://docs.mongodb.org/manual/reference/connection-string/#write-concern-options).
-

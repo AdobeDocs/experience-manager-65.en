@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
+role: Developer
+exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
 ---
-
 # Assembling PDF Documents with Bookmarks {#assembling-pdf-documents-with-bookmarks} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

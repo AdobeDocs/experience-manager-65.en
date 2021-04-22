@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
+exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 ---
-
 # Sample for integrating drafts & submissions component with database {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## Sample overview {#sample-overview}
@@ -416,4 +416,3 @@ Perform the following steps to create [a client library](/help/sites-developing/
    >If you are using custom client libraries instead of of the guideRuntime and guideRuntimeWithXfa client libraries, use the category name to embed the client library created in this procedure to your custom libraries loaded at runtime.
 
 1. Click **[!UICONTROL Save All.]** Now, when the filename is larger than 150 (including extension) characters a message is displayed.
-

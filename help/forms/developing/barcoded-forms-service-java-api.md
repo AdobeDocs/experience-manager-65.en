@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
+role: Developer
+exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
 ---
-
 # Barcoded Forms Service Java API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
 Java API Quick Start(SOAP) is available for the Barcoded Forms service:
@@ -214,4 +215,3 @@ The following Java code decodes form data that is located in a PDF form that is 
 >[!NOTE]
 >
 >When using both an `org.w3c.dom.Document` object and a `com.adobe.idp.Document` object in the same application logic, it is good practice to fully qualify both objects.
-

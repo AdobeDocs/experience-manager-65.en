@@ -1,7 +1,7 @@
 ---
 title: Workflow Step Reference
 seo-title: Workflow Step Reference
-description: null
+description: Workflow Step Reference
 seo-description: null
 uuid: 88bf6997-73a1-4639-82aa-5dff08d3ef86
 contentOwner: User
@@ -10,9 +10,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
-
+exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 ---
-
 # Workflow Step Reference {#workflow-step-reference}
 
 Workflow models consist of a series of steps of various types. According to the type, these steps can be configured and extended with parameters and scripts to provide the functionality and control you require.

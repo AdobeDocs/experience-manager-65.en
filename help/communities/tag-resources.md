@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
+role: Administrator
+exl-id: ce58c8e9-8b4a-43fb-a108-ed2ac40268c7
 ---
-
 # Tagging Enablement Resources {#tagging-enablement-resources}
 
 ## Overview {#overview}
@@ -97,4 +98,3 @@ If tag namespaces were added and are missing, ensure the tags and the site were 
 If no enablement resources appear after selecting a tag when viewing the catalog, ensure there is a tag from the catalog's namespace(s) applied to the enablement resource.
 
 ![view-catalog](assets/viewcatalog.png)
-

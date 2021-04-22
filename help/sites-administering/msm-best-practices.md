@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
+feature: Multi Site Manager
+exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
 ---
-
 # MSM Best Practices{#msm-best-practices}
 
 ## General {#general}
@@ -193,4 +194,3 @@ This and the following pages cover the related issues:
 * [Live Copy Overview Console](/help/sites-administering/msm-livecopy-overview.md)
 * [Configuring Live Copy Synchronization](/help/sites-administering/msm-sync.md)
 * [MSM Rollout Conflicts](/help/sites-administering/msm-rollout-conflicts.md)
-

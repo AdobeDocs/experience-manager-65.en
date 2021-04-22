@@ -8,8 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
+exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 ---
-
 # Reference letter templates {#reference-letter-templates}
 
 In Correspondence Management, a letter template contains typical form fields, layout features such as a header and footer, and empty "target areas" for the placement of content.
@@ -94,4 +94,3 @@ The Visual Top - Classic template has a header on top of the page with the compa
 ![visualtopclassic](assets/visualtopclassic.png)
 
 PDF preview of a letter created using the Visual Top - Classic template
-

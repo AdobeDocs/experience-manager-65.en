@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
+exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 ---
-
 # Configuring Link Tracking for Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 When users click links on pages of your website you can capture related information in Adobe Analytics. For example, use link tracking to learn how users interact with your site, track file downloads, and track exit links.
@@ -348,4 +348,3 @@ Use the following procedure to configure link tracking for a **Text** component:
    Separate multiple values with a comma.
 
 1. Select **OK**.
-

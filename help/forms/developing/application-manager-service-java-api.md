@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
+role: Developer
+exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
 ---
-
 # Application Manager Service JavaAPI Quick Start (SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
 Java API Quick Start(SOAP) is available for the Application Manager service.
@@ -241,4 +242,3 @@ The following Java code example removes an application named *EncryptDocument*.
  }
  
 ```
-

@@ -9,8 +9,10 @@ content-type: reference
 discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 
+feature: Carousel Banners
+role: Business Practitioner, Administrator
+exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 ---
-
 # Carousel Banners{#carousel-banners}
 
 Carousel banners enable marketers to drive conversion by easily creating interactive rotating promotional content and delivering it to any screen.

@@ -9,8 +9,9 @@ topic-tags: introduction
 discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
 ---
-
 # Tutorial: Publish your adaptive form {#tutorial-publish-your-adaptive-form}
 
  ![](do-not-localize/13-publish-your-adaptive-form-small.png)

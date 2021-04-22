@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
+feature: Upgrading
+exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
 ---
-
 # List of Obsolete Bundles Uninstalled After the Upgrade{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
 
 >[!NOTE]
@@ -60,4 +61,3 @@ When upgrading to AEM 6.3 the following bundles will be automatically uninstalle
 * com.day.cq.cq-pinauthhandler, version 1.0.0, Active
 * com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
 * com.day.crx.crxde-support, version 2.3.14, Installed
-

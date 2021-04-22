@@ -8,7 +8,6 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 ---
-
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
 After installation you can configure your instance:

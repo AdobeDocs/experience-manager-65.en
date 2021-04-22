@@ -1,15 +1,10 @@
 ---
-cloud: experience-cloud
-solution-title: Learn & Support
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-manager-65.html
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
-tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/docs/experience-manager-tutorials.html
+cloud: Experience Cloud
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.en
 solution: Experience Manager
+feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
+version: 6.5
 type: Documentation
 index: y
 ---

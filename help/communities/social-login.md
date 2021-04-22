@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
+role: Administrator
+exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
 ---
-
 # Social Login with Facebook and Twitter {#social-login-with-facebook-and-twitter}
 
 Social login is the capability to present a site visitor the option to sign in with their Facebook or Twitter account. Therefore, including permitted Facebook or Twitter data in their AEM member profile.

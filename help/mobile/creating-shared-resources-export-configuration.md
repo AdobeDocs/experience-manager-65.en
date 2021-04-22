@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
+exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 ---
-
 # Creating Shared Resources Export Configuration{#creating-shared-resources-export-configuration}
 
 >[!NOTE]
@@ -54,4 +54,3 @@ To view sample shared resource, see the steps below:
 >[!NOTE]
 >
 >Shared resources should be uploaded or exported to AEM Mobile On-Demand Services when any of the shared resources change.
-

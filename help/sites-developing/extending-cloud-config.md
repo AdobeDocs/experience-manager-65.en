@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
+exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
 ---
-
 # Cloud Service Configurations{#cloud-service-configurations}
 
 Configurations are designed to provide the logic and structure for storing service configurations.
@@ -222,4 +222,3 @@ These services are provided by default:
 >[!NOTE]
 >
 >See also [Creating a Custom Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md).
-

@@ -9,8 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
+feature: PDF Generator
+exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 ---
-
 # Importing and exporting PDF Generator configuration files {#importing-and-exporting-pdf-generator-configuration-files}
 
 The configuration file contains the PDF Generator conversion information, including the PDF, file type, and security settings.
@@ -57,4 +58,3 @@ By default, PDF Generator converts only the default layer of AutoCAD files to PD
 
 1. In administration console, click Services &gt; PDF Generator &gt; Configuration Files &gt; Import Configuration.
 1. Select Reset Configuration To Default Settings and click Import.
-

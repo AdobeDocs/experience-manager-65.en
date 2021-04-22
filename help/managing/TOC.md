@@ -1,10 +1,12 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 Managing User Guide
 breadcrumb-title: Managing Guide
 user-guide-description: Learn how to manage an AEM project.
+feature: Deploying
+role: Business Practitioner
 ---
 
 # AEM 6.5 Managing User Guide {#managing}

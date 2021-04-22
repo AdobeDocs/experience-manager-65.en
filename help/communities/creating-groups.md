@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
-
+exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
 ---
-
 # Community Groups {#community-groups}
 
 The community groups feature is the ability for a sub-community to be dynamically created within a community site by authorized users (community members and authors) from the publish and author environments.

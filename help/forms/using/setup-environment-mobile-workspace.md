@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
-
+exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
 ---
-
 # Set up environment for AEM Forms app{#set-up-environment-for-aem-forms-app}
 
 You need the following hardware, software, and licenses to build and deploy the AEM Forms app:

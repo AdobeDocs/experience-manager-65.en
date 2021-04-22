@@ -3,8 +3,8 @@ title: AEM 6.5 Additional Resources
 seo-title: AEM 6.5 Additional Resources
 description: AEM 6.5 release notes, certifications, and additional resources
 seo-description: AEM 6.5 release notes, certifications, and additional resources
+exl-id: d254d976-f547-4074-b8ad-fe4814184f30
 ---
-
 # AEM 6.5 Additional Resources {#aem-64-additional-resources}
 
 ## AEM 6.5 Release Notes {#aem-64-release-notes}

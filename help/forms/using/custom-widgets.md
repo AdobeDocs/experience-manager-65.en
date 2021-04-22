@@ -11,8 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 
+feature: Mobile Forms
+exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 ---
-
 # Create custom appearances in HTML5 forms{#create-custom-appearances-in-html-forms}
 
 You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets using appearances framework. XFA engine uses various widgets, see [Appearance framework for adaptive and HTML5 forms](/help/forms/using/introduction-widgets.md) for detailed information.

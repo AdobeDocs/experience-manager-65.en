@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
+exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
 ---
-
 # Understanding Segmentation{#understanding-segmentation}
 
 Segmentation is a key consideration when creating a campaign. In most cases, you will need to have segments already defined before starting your campaign.
@@ -76,4 +76,3 @@ For example, combining the referring URL (as a behavioral trait) with demographi
 >[!NOTE]
 >
 >Please see [Segmentation](/help/sites-administering/campaign-segmentation.md) for further information on segments in AEM.
-

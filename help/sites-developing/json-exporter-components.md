@@ -9,8 +9,8 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
+exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
 ---
-
 # Enabling JSON Export for a Component{#enabling-json-export-for-a-component}
 
 Components can be adapted to generate JSON export of their content based on a modeler framework.
@@ -93,4 +93,3 @@ For further details see:
 * [Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
 * [JSON Exporter for Content Services](/help/sites-developing/json-exporter.md)
 * [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-

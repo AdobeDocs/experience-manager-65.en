@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
+role: Developer
+exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 ---
-
 # Creating Document Output Streams  {#creating-document-output-streams} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

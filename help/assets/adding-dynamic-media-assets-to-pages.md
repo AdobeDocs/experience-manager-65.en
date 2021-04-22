@@ -9,8 +9,10 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 
+role: Business Practitioner, Administrator
+exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
+feature: Components,Publishing
 ---
-
 # Adding Dynamic Media Assets to Pages{#adding-dynamic-media-assets-to-pages}
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **Dynamic Media**, **Interactive Media**, **Panoramic Media**, or **Video 360 Media** component directly on the page. You do this by entering Layout mode and enabling the Dynamic Media components. Then you can add these components to the page and add assets to the component. The Dynamic Media components are smart - they know whether you are adding an image or a video and the configuration options available change accordingly.

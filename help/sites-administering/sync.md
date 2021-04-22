@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
-
+exl-id: 89f55598-e749-42b8-8f2a-496f45face66
+feature: Security
 ---
-
 # User Synchronization{#user-synchronization}
 
 ## Introduction {#introduction}

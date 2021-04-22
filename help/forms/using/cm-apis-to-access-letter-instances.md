@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
+feature: Correspondence Management
+exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 ---
-
 # APIs to access letter instances {#apis-to-access-letter-instances}
 
 ## Overview {#overview}

@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
+role: Developer
+exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 ---
-
 # Dynamically Creating DDX Documents {#dynamically-creating-ddx-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

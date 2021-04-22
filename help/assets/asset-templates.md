@@ -2,8 +2,10 @@
 title: Asset templates
 description: Learn about Asset templates in [!DNL Adobe Experience Manager Assets] and how to use asset templates to create marketing collateral.
 contentOwner: AG
+role: Business Practitioner
+feature: Asset Management,Developer Tools
+exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 ---
-
 # Asset templates {#asset-templates}
 
 Asset templates are a special class of assets that facilitate quick re-purposing of visually-rich content for digital and print media. An asset template includes two parts, the fixed messaging section and the editable section. The fixed messaging section can contain proprietary content, such as brand logo and copyright information that are disabled for editing. The editable section can contain visual and textual content in fields that can be edited to customize messaging.

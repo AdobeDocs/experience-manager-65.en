@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
+role: Administrator
+exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
 ---
-
 # JSRP - JCR Storage Resource Provider {#jsrp-jcr-storage-resource-provider}
 
 ## About JSRP {#about-jsrp}

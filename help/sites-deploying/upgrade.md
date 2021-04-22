@@ -12,8 +12,9 @@ discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
 
+feature: Upgrading
+exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
 ---
-
 # Upgrading to AEM 6.5 {#upgrading-to-aem}
 
 In this section, we cover upgrading an AEM installation to AEM 6.5:
@@ -86,4 +87,3 @@ There was a big focus in 6.5 to keep all the new features backward compatible, b
 Finally, in your 6.5 development cycle, features introduced under Sustainable Upgrades(see [Sustainable Upgrades](/help/sites-deploying/sustainable-upgrades.md)) help you follow best practices to make future upgrades even more efficient and seamless.
 
 ![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-

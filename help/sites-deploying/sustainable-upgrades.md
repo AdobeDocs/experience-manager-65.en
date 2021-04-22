@@ -11,8 +11,9 @@ topic-tags: upgrading
 discoiquuid: e35c9352-f0d5-4db5-b88f-0720af8f6883
 docset: aem65
 
+feature: Upgrading
+exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
 ---
-
 # Sustainable Upgrades{#sustainable-upgrades}
 
 ## Customization Framework {#customization-framework}

@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
+exl-id: 14314383-5228-4904-98c1-586f48a1142c
 ---
-
 # Configuring validation messages {#configuring-validation-messages}
 
 For forms that are rendered as HTML, form validation errors that occur are displayed for the user. You can customize how validation messages are displayed. Depending on where the validation messages are displayed, you can also control the location of the message in the form and the size of the frame border.
@@ -59,4 +59,3 @@ When Reporting is set to Frame, you can specify the frame border size.
    The border size must be equal to or greater than 0. The default value is 1.
 
 1. Click Save.
-

@@ -7,7 +7,6 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 ---
-
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
@@ -233,4 +232,3 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 1. You can now use the product cockpit to view the imported catalogs and products:
 
    [http://localhost:9002/productcockpit](http://localhost:9002/productcockpit)
-

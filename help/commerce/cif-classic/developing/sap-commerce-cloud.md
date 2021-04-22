@@ -9,7 +9,6 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 ---
-
 # Developing with SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]

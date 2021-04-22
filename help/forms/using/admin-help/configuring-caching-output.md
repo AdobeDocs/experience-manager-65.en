@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
+exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 ---
-
 # Configuring caching for Output  {#configuring-caching-for-output}
 
 The Output service merges XML form data with a form design created in Designer to create a document output stream in various formats.

@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
+exl-id: d60e9601-d15b-4378-a33e-e90961f63195
 ---
-
 # Annotations when Editing a Page{#annotations-when-editing-a-page}
 
 Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content (as opposed, for example, to layout) allow you to add an annotation.
@@ -96,4 +96,3 @@ Sketches are a feature of annotations that allow you to create simple line graph
 
 * If you move, or copy, a paragraph then any related annotations and their sketches will also be moved, or copied; their position in relation to the paragraph will remain the same.
 * If you delete an annotation all sketches attached to that annotation will be deleted too.
-

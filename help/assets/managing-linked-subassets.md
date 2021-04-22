@@ -2,8 +2,10 @@
 title: Manage compound assets with references and multiple pages
 description: Learn how to create references to digital assets from within [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use the Page Viewer feature to view individual subasset pages of multi-page files such as PDF, INDD, PPT, PPTX, and AI files.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Asset Management
+exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 ---
-
 # Manage compound and multi-page assets {#managing-compound-assets}
 
 [!DNL Adobe Experience Manager Assets] can identify if an uploaded file contains references to assets that already exist in the repository. This feature is available for supported file formats only. If the uploaded asset contains any references to [!DNL Experience Manager] assets, a bidirectional link is created between the uploaded and referenced assets.
@@ -14,7 +16,7 @@ Besides eliminating redundancy, referencing the assets in [!DNL Adobe Creative C
 
 References are resolved on the basis of path, document ID, and instance ID of the referenced assets.
 
-## Add digital assets as references in [!DNL Adobe Illustrator] {#refai}
+## [!DNL Adobe Illustrator]: Add digital assets as references {#refai}
 
 You can reference existing digital assets from within an [!DNL Adobe Illustrator] file.
 
@@ -37,7 +39,7 @@ You can reference existing digital assets from within an [!DNL Adobe Illustrator
 
    *Figure: Asset references in asset details.*
 
-## Add digital assets as references in [!DNL Adobe InDesign] {#add-aem-assets-as-references-in-adobe-indesign}
+## [!DNL Adobe InDesign]: Add digital assets as references {#add-aem-assets-as-references-in-adobe-indesign}
 
 To reference digital assets from within an [!DNL InDesign] file, either drag assets to the [!DNL InDesign] file or export the [!DNL InDesign] file as a ZIP archive.
 
@@ -47,6 +49,8 @@ Referenced assets already exist in [!DNL Experience Manager Assets]. You can ext
 >
 >If the [!DNL InDesign Server] is proxied, [!DNL InDesign] files have their preview embedded within their XMP metadata. In this case, thumbnail extraction is not explicitly required. However, if the [!DNL InDesign Server] is not proxied, thumbnails must be explicitly extracted for [!DNL InDesign] files.
 
+When an INDD file is uploaded, the references are fetched by querying assets having `xmpMM:InstanceID` and `xmpMM:DocumentID` property in the repository.
+
 ### Create references by dragging assets {#create-references-by-dragging-aem-assets}
 
 This procedure is similar to [add digital assets as references in Adobe Illustrator](#refai).
@@ -54,18 +58,18 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 ### Create references to assets by exporting a ZIP file {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Perform the steps in [Create workflow models](/help/sites-developing/workflows-models.md) to create a new workflow.
-1. Use the Package feature of [!DNL Adobe InDesign] to export the document. [!DNL Adobe InDesign] can export a document and the linked assets as a package. In this case, the exported folder contains a Links folder that contains sub-assets in the [!DNL InDesign] file.
+1. Use the [Package feature](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) of [!DNL Adobe InDesign] to export the document. [!DNL Adobe InDesign] can export a document and the linked assets as a package. In this case, the exported folder contains a `Links` folder that contains subassets in the [!DNL InDesign] file. The `Links` folder is present in same folder as the INDD file. 
 1. Create a ZIP file and upload it to the [!DNL Experience Manager] repository.
 1. Start the `Unarchiver` workflow.
 1. When the workflow completes, the references in the Links folder are automatically referenced as subassets. To view a list of referred assets, navigate to the asset details page of the [!DNL InDesign] asset and close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## Add digital assets as references in [!DNL Adobe Photoshop] {#refps}
+## [!DNL Adobe Photoshop]: Add digital assets as references {#refps}
 
 1. Use [!DNL Experience Manager] desktop app to access [!DNL Experience Manager Assets]. Download and reveal the assets on local file system. Use the the [!UICONTROL Place Linked] functionality in [!DNL Adobe Photoshop]. See [place assets in desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
    ![chlimage_1-87](assets/chlimage_1-261.png)
 
-1. Save in [!DNL Photoshop] file to the mounted drive or or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
+1. Save in [!DNL Photoshop] file to the mounted drive or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
 1. After the workflow completes, the references to existing [!DNL Experience Manager] assets are listed in the asset details page.
 
    To view the referenced assets, close the [Rail](/help/sites-authoring/basic-handling.md#rail-selector) in the asset details page.

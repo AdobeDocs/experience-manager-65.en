@@ -11,8 +11,9 @@ content-type: reference
 discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 
+role: Administrator
+exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
 ---
-
 # Analytics Configuration for Communities Features {#analytics-configuration-for-communities-features}
 
 ## Overview {#overview}

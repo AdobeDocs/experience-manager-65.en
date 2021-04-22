@@ -5,13 +5,13 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
+exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 ---
-
 # Configuring Search Forms{#configuring-search-forms}
 
 Use **Search Forms** to customize the selection of search predicates used in the search panels available in various AEM consoles and/or panels of the author environment. Customizing these panels makes the search functionality versatile according your specific needs.
 
-A [range of predicate](#predicates-and-their-settings)s are available out-of-the-box. You can add multiple predicates, including (amongst others) the Fulltext predicate for full-text searches, the Property predicate to search for assets that match a single property specified by you, or the Options predicate to search assets that match one or more values that you specify for a particular property.
+A [range of predicate](#predicates-and-their-settings)s are available out-of-the-box. You can add multiple predicates, including (amongst others) the Property predicate to search for assets that match a single property specified by you, or the Options predicate to search assets that match one or more values that you specify for a particular property.
 
 You can [configure the search forms](#configuring-your-search-forms) used within various consoles and the asset browser (when editing pages). The [dialogs for configuring these forms](#configuring-your-search-forms) can be accessed via:
 
@@ -169,17 +169,6 @@ The following predicates are available, dependent on the configuration:
      <li>Field Label</li>
      <li>Property Name*</li>
      <li>Option Path</li>
-     <li>Description</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Fulltext </td>
-   <td>Search predicate for full-text searches.</td>
-   <td>
-    <ul>
-     <li>Field Label</li>
-     <li>Placeholder</li>
-     <li>Property Name</li>
      <li>Description</li>
     </ul> </td>
   </tr>
@@ -559,4 +548,3 @@ The following table lists the permissions required to perform edit, delete, and 
   </tr>
  </tbody>
 </table>
-

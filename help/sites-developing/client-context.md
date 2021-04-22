@@ -11,8 +11,9 @@ content-type: reference
 discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 
+feature: Context Hub
+exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 ---
-
 # Client Context in Detail{#client-context-in-detail}
 
 >[!NOTE]

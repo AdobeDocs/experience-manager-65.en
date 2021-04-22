@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
+role: Developer
+exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 ---
-
 # Rendering Forms as HTML {#rendering-forms-as-html} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -372,4 +373,3 @@ Render an HTML form by using the Forms API (web service):
 [Rendering Forms as HTML](#rendering-forms-as-html)
 
 [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-

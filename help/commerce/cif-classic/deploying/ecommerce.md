@@ -7,8 +7,8 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
+feature: Commerce Integration Framework
 ---
-
 # eCommerce Overview{#ecommerce-overview}
 
 AEM generic eCommerce is available as part of a standard installation and provides you with the full functionality of the eCommerce framework.

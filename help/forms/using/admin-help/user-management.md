@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
+exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 ---
-
 # User Management {#user-management}
 
 User Management allows you to enable single sign-on (SSO) between AEM forms modules and Netegrity SiteMinder-protected applications by using Security Assertion Markup Language (SAML). When SSO is implemented, the AEM forms user login pages are not required and are not displayed if the user is already authenticated through the company portal.
@@ -50,4 +50,3 @@ Users with certain types of administrator privileges cannot access the Workspace
 >[!NOTE]
 >
 >The Flex Worksapce is deprecated for AEM forms release.
-

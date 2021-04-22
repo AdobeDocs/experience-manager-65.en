@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
-
+exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 ---
-
 # Publishing Pages{#publishing-pages}
 
 Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website (your publish environment).

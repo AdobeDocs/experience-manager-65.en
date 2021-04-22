@@ -8,8 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
+feature: Adaptive Forms
+exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 ---
-
 # AEM Forms Keyboard Shortcuts {#aem-forms-keyboard-shortcuts}
 
 This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management for Windows and Macintosh operating systems.
@@ -351,4 +352,3 @@ This section lists various keyboards and accessibility shortcuts that you can us
   </tr>
  </tbody>
 </table>
-

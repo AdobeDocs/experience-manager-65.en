@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
-
+exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
 ---
-
 # File Library Feature{#file-library-feature}
 
 ## Introduction {#introduction}

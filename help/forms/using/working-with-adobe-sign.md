@@ -10,8 +10,9 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 
+feature: Adaptive Forms, Adobe Sign
+exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 ---
-
 # Using [!DNL Adobe Sign] in an adaptive form{#using-adobe-sign-in-an-adaptive-form}
 
 [!DNL Adobe Sign] enables e-signature workflows for adaptive forms. E-Signatures improve workflows to process documents for legal, sales, payroll, human resource management, and more areas.

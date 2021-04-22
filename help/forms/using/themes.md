@@ -10,8 +10,9 @@ content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 ---
-
 # Creating and using themes {#creating-and-using-themes}
 
 ## Introduction {#introduction}

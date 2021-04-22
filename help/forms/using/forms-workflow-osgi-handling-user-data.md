@@ -6,8 +6,9 @@ uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
+role: Administrator
+exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 ---
-
 # Forms-centric workflows on OSGi | Handling user data {#forms-centric-workflows-on-osgi-handling-user-data}
 
 Forms-centric AEM workflows enable you to automate real-world Forms-centric business processes. Workflows consist of a series of steps that execute in an order specified in the associated workflow model. Each step performs a specific action such as assigning a task to a user or sending an email message. Workflows can interact with assets in the repository, user accounts, and services. Therefore, workflows can coordinate complicated activities that involve any aspect of Experience Manager.
@@ -153,4 +154,3 @@ You can also use APIs to access and remove nodes and properties. See the followi
 * [How to programmatically access the AEM JCR](/help/sites-developing/access-jcr.md)
 * [Removing Nodes and Properties](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API reference](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
-

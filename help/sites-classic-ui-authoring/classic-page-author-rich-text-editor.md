@@ -6,9 +6,8 @@ contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
-
+exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 ---
-
 # Rich Text Editor {#rich-text-editor}
 
 The Rich Text Editor is a basic building block for inputting textual content into AEM. It forms the basis of various components, including:

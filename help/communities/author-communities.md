@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
-
+exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
 ---
-
 # Communities Components {#communities-components}
 
 ## Introduction {#introduction}
@@ -83,4 +82,3 @@ See also the interactive [Community Components guide](/help/communities/componen
 * Visit [Administering Communities Sites](/help/communities/administer-landing.md) to learn about creating a community site, configuring community site templates, moderating community content, managing members, and configuring messaging.
 
 * Visit [Developing Communities](/help/communities/communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
-

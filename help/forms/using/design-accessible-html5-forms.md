@@ -10,8 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 
+feature: Mobile Forms
+exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
 ---
-
 # Designing accessible HTML5 forms {#designing-accessible-html-forms}
 
 HTML5 forms use the ARIA HTML5 accessibility standard to generate accessible HTML forms. These forms support tabbed navigation (except Mozilla FireFox) and are certified to be compatible with common screen readers. To generate an HTML5 form with good accessibility features, design the XFA form template based on some basic designing guidelines. The design guidelines include configuring the correct tab order and providing the Speak Text content for each form control. AEM Forms Designer supports the setting of these form control attributes to generate an Accessible PDF and HTML5 form.

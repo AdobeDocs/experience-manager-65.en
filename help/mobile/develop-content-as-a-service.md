@@ -1,15 +1,15 @@
 ---
 title: Content Delivery
 seo-title: Content Delivery
-description: null
+description: Content Delivery
 seo-description: null
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
+exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 ---
-
 # Content Delivery{#content-delivery}
 
 >[!NOTE]
@@ -138,4 +138,3 @@ Content can get to the app in several ways.
     * Out-of-the-box Default Sling Renderers
     * AEM Mobile/Content Services Content Renderers
     * Custom Renders
-

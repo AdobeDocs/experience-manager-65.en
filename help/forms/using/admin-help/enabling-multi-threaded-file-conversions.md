@@ -9,8 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
+feature: PDF Generator
+exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 ---
-
 # Enabling multi-threaded file conversions {#enabling-multi-threaded-file-conversions}
 
 PDF Generator provides the ability to enable multi-threaded file conversions for certain types of files. Multi-threaded file conversion improves the performance of PDF Generator by allowing it to perform multiple conversions at the same time.
@@ -109,4 +110,3 @@ If you are running OpenOffice, Microsoft Word, or Microsoft PowerPoint on Window
 
 1. In administration console, click Services &gt; PDF Generator &gt; User Accounts.
 1. Click the user name, and enter and confirm the new password. This password must match the user’s system password.
-

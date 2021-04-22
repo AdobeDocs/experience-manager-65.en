@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ac5d8d4f-fc13-4e8d-819c-c5db07fa6870
 docset: aem65
 
+feature: Interactive Communication
+exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 ---
-
 # Tutorial: Create Interactive Communication {#tutorial-create-interactive-communication}
 
  ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
@@ -237,4 +238,3 @@ Execute the following steps to derive the Web channel content using Print channe
    ![Web content tree](assets/ic_web_content_tree_new.png)
 
 1. Repeat steps 13 - 18 of [Create Interactive Communication for Web channel](../../forms/using/create-interactive-communication0.md#create-interactive-communication-for-web-channel) to insert the **Pay Now** and **Subscribe** hyperlinks in the Web channel of the Interactive Communication.
-

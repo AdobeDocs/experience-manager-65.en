@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
+exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
 ---
-
 # Development Tools{#development-tools}
 
 To develop your JCR, Apache Sling or AEM applications, the following tool sets are available:
@@ -43,7 +43,7 @@ AEM ships with other tools that facilitate development:
 * [How to Develop AEM Projects using IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
 * [How to use the VLT Tool](/help/sites-developing/ht-vlttool.md)
 * [How to use the Proxy Server Tool](/help/sites-developing/ht-proxy-server.md)
-* [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md)
+* [AEM Modernization Tools](/help/sites-developing/modernization-tools.md)
 * [AEM Repo Tool](/help/sites-developing/aem-repo-tool.md)
 
 Tools that facilitate creation of new projects:
@@ -55,4 +55,3 @@ Tools that facilitate creation of new projects:
 >
 >Following tutorial might be of interest for starting a new AEM project:
 >[Getting Started with AEM Sites Part 1 - Project Setup](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
-

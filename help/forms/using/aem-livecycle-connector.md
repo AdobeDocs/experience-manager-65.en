@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
+role: Administrator
+exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 ---
-
 # Connecting AEM Forms with Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle connector enables seamless invocation of Adobe LiveCycle ES4 Document Services from within AEM web apps and workflows. LiveCycle provides a rich client SDK, which allows client applications to start LiveCycle services using Java APIs. AEM LiveCycle Connector simplifies using these APIs within the OSGi environment.

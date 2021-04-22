@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
+role: Developer
+exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 ---
-
 # Introducing Java API Quick Start {#introducing-java-api-quickstart} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -82,4 +83,3 @@ Most Quick Starts located in *Programming with AEM Forms on JEE* invoke a specif
 >[!NOTE]
 >
 >Most web service Quick Starts are written in C# and uses the .NET framework. However, you can create client application logic that is able to invoke AEM Forms services in any development environment that supports SOAP standards. (See [Invoking AEM Forms Using Web Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
-

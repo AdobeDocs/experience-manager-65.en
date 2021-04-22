@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
+exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 ---
-
 # Creating Custom Extensions{#creating-custom-extensions}
 
 Generally when you implement a project, you have custom code in both AEM and Adobe Campaign. With the use of the existing API, you can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign. This document describes how to do that.
@@ -198,4 +198,3 @@ request.header["Content-Type"] = "application/json; charset=UTF-8";
 request.execute();
 var response = request.response;
 ```
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
+exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 ---
-
 # Participating in Workflows{#participating-in-workflows}
 
 Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
@@ -85,4 +85,3 @@ Use the following procedure to step back.
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
 1. Click OK to confirm the action.
-

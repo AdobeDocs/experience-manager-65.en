@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
+role: Administrator
+exl-id: d00a8eb2-47ce-425a-a312-f043f82912be
 ---
-
 # Member Contribution Limits {#member-contribution-limits}
 
 ## Overview {#overview}

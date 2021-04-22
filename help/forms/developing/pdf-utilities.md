@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
+role: Developer
+exl-id: e4b204ee-7261-42b8-8db8-a92aa9fd0a28
 ---
-
 # Working with PDF Utilities {#working-with-pdf-utilities} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

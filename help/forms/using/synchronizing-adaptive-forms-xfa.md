@@ -9,8 +9,9 @@ topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 ---
-
 # Synchronizing Adaptive Forms with XFA Form Templates{#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Introduction {#introduction}

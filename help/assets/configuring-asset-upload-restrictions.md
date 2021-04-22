@@ -2,8 +2,10 @@
 title: Configure asset upload restrictions
 description: Restrict the type of assets (files) that users can upload 
 contentOwner: AG
+role: Developer, Administrator, Architect
+feature: Asset Management,Upload
+exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 ---
-
 # Configure asset upload restrictions {#configuring-asset-upload-restrictions}
 
 You can configure [!DNL Adobe Experience Manager Assets] to restrict the type of assets that users can upload. It helps prevent accidental uploads of undesired format and malicious files. The `Day CQ DAM Asset Upload Restriction` service enables you to control the type of files that users can upload. By default, [!DNL Assets] allows users to upload assets of all MIME types. However, you can configure the service to restrict users to upload files of specific MIME types only.

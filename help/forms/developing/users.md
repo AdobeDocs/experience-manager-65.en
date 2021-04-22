@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: Developer
+exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 ---
-
 # Managing Users {#managing-users} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

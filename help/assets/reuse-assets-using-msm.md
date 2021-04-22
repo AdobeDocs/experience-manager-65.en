@@ -3,8 +3,10 @@ title: Reuse assets using MSM
 description: Use assets across multiple pages/folders that are derived from and linked to parent assets. The assets stay in sync with a primary copy and with a few clicks, receive the updates from parent assets.
 contentOwner: AG
 mini-toc-levels: 1
+role: Business Practitioner, Administrator, Architect
+feature: Asset Management,Multi Site Manager
+exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 ---
-
 # Reuse assets using MSM for [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
 Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enables users to reuse content that is authored once and reused across multiple web-locations. The same is available for digital assets as MSM for [!DNL Assets] functionality. Using MSM for [!DNL Assets], you can:

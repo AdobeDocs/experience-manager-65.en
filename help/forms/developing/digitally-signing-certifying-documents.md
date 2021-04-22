@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
+role: Developer
+exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 ---
-
 # Digitally Signing and Certifying Documents {#digitally-signing-and-certifying-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

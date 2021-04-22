@@ -2,8 +2,10 @@
 title: Best practices to translate assets
 description: Best practices for efficient management of assets to synchronize various translated versions and to streamline translation workflows.
 contentOwner: AG
+role: Administrator
+feature: Asset Management
+exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 ---
-
 # Best practices to translate assets {#best-practices-for-translating-assets-efficiently}
 
 [!DNL Adobe Experience Manager Assets] supports multilingual workflows to translate binaries, metadata, and tags for digital assets into multiple locales and to manage the translated assets. For details, see [Multilingual Assets](multilingual-assets.md).

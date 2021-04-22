@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
+role: Administrator
+exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 ---
-
 # Download an XFA or a PDF form template {#download-an-xfa-or-a-pdf-form-template}
 
 The download operation, as the name implies, lets you export forms from the repository to the local system. In combination with the upload operation, this operation helps you migrate your forms from one repository to another.
@@ -49,4 +50,3 @@ Aside from these assets, you can download the `Resource` type of asset if it is 
 * You can upload the ZIP file to any other location in the same repository or another repository
 * The hierarchy of the assets in a folder is retained during the upload operation
 * Any metadata changes made to the downloaded assets before download are reflected upon upload
-

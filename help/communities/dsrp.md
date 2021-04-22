@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
+role: Administrator
+exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 ---
-
 # DSRP - Relational Database Storage Resource Provider {#dsrp-relational-database-storage-resource-provider}
 
 ## About DSRP {#about-dsrp}
@@ -143,4 +144,3 @@ For example, a curl command to re-index DSRP would look like this:
 ```shell
 curl -u admin:password -X POST -F path=/ https://host:port/services/social/datastore/rdb/reindex
 ```
-

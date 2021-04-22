@@ -2,8 +2,8 @@
 title: Same Site Cookie Support for AEM 6.5
 description: Same Site Cookie Support for AEM 6.5
 topic-tags: security
+exl-id: e1616385-0855-4f70-b787-b01701929bbc
 ---
-
 # Same Site Cookie Support for AEM 6.5 {#same-site-cookie-support-for-aem-65}
 
 Since version 80, Chrome, and later Safari, introduced a new model for cookie security. This mode is designed to introduce security controls around availability of cookies to third party sites, through a setting called `SameSite`. For more detailed information, see this [article](https://web.dev/samesite-cookies-explained/).

@@ -10,9 +10,8 @@ topic-tags: integration, best-practices
 content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
-
+exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 ---
-
 # Best Practices for Email Templates {#best-practices-for-email-templates}
 
 >[!CAUTION]

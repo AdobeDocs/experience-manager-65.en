@@ -6,8 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
+role: Business Practitioner, Administrator
+exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
+feature: Publishing
 ---
-
 # Configuring selective publishing at the folder level in Dynamic Media {#selective-publish-configure-folder}
 
 You can choose to publish or unpublish assets to or from AEM or Dynamic Media at the folder level, using either **[!UICONTROL Manage Publication]** or **[!UICONTROL Quick Publish]** instead of relying solely on the **[!UICONTROL Dynamic Media Configuration]** whose settings are global to all folders across your Dynamic Media instance.
@@ -256,4 +258,3 @@ When you use **[!UICONTROL List View]**, an additional column for **[!UICONTROL 
 An asset that is not synced to Dynamic Media but has a Dynamic Media publish action triggered on it results in the following error message and solution:
 
 ![Selective Publish error](/help/assets/assets-dm/selective-publish-error.png)
-

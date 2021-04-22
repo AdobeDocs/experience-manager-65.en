@@ -1,8 +1,9 @@
 ---
 title: Creating and Synchronizing Live Copies
 description: Learn how to create and synchronize Live Copies.
+feature: Multi Site Manager
+exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 ---
-
 # Creating and Synchronizing Live Copies{#creating-and-synchronizing-live-copies}
 
 You can create a live copy from a page or blueprint configuration, then can manage inheritance and synchronization.
@@ -232,7 +233,7 @@ Rollouts are processed as asynchronous jobs and can be checked in the [**Async J
 
 #### Roll Out a Blueprint from the Reference Rail {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. In the **Sites** console, select the page in the blueprint and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar).
+1. In the **Sites** console, select the page in the live copy and open the **[References](/help/sites-authoring/basic-handling.md#references)** panel (from the toolbar).
 1. Select the **Blueprint** option from the list, to show the blueprints associated with this page.
 1. Select the required blueprint from the list.
 1. Click or tap **Rollout**.

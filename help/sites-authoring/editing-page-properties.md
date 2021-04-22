@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
-
+exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 ---
-
 # Editing Page Properties{#editing-page-properties}
 
 You can define the required properties for a page. These can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.

@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
+role: Developer
+exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 ---
-
 # Working with XMP Utilities {#working-with-xmp-utilities} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

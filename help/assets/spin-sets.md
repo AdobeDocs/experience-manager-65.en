@@ -9,8 +9,10 @@ content-type: reference
 discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 
+feature: Spin Sets,Asset Management
+role: Business Practitioner, Administrator
+exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 ---
-
 # Spin Sets{#spin-sets}
 
 A Spin Set simulates the real-world act of turning an object to examine it. Spin Sets make it possible to view items from any angle, gaining the key visual details from any angle.

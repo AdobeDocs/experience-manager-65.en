@@ -2,8 +2,10 @@
 title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Assets] and [!DNL Dynamic Media] and the features supported for each format.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Asset Management,Renditions
+exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 ---
-
 # Formats supported in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
 [!DNL Experience Manager Assets] supports a wide range of file formats and each functionality has varied support for different MIME types. To integrate [!DNL Assets] with other standards-compliant digital asset management (DAM) solutions and desktop software, use Adobe's [!DNL Extensible Metadata Platform] (XMP).

@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
+role: Developer
+exl-id: bee0eebb-c21d-472c-bbdf-28d8c3a5ed4a
 ---
-
 # Invocation API Quick Starts {#invocation-api-quick-starts} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -1109,4 +1110,3 @@ An unsecured PDF document based on a PDF file named *Loan.pdf* is passed to the 
 >[!NOTE]
 >
 >Many quick starts that show how to perform service operations include a SwaRef code example.
-

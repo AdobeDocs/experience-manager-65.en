@@ -5,8 +5,8 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
+exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 ---
-
 # Concepts{#concepts}
 
 The integration framework provides the mechanisms and components for:
@@ -860,4 +860,3 @@ If you require a more thorough implementation, you can either:
 * Implement the search method in your `CommerceService` and then use the eCommerce search component on your search page.
 
 When using an eCommerce engine, the eCommerce search API can be fully implemented in the eCommerce engine solution, so you can use the eCommerce search component that is provided out-of-the-box. The faceted search allows you to search either JCR and/or the engine:
-

@@ -10,8 +10,8 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
+exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
 ---
-
 # SharePoint Connector{#sharepoint-connector}
 
 This article includes details around the Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013, version 4.0.
@@ -282,4 +282,3 @@ The following steps provide guidelines around extending the standard authenticat
 1. Register the `SharepointConnectionFactory` implementation in the connector configuration. In the configuration window of the connector, click **Advanced options**. In the for **Sharepoint Connection Factory** field, specify the name of the implementation `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
 
 1. Restart the connector.
-

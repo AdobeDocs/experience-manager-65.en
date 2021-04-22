@@ -4,8 +4,10 @@ description: Learn about accessibility support in Dynamic Media and Dynamic Medi
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
+feature: Accessibility
+role: Business Practitioner, Administrator
+exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 ---
-
 # Accessibility in [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] supports keyboard control and assistive technologies, such as JAWS and NVDA screen readers, across the authoring user interface.

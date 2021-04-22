@@ -1,7 +1,7 @@
 ---
 title: SPA and Server-Side Rendering
 seo-title: SPA and Server-Side Rendering
-description: null
+description: "SPA and Server-Side Rendering"
 seo-description: null
 uuid: 27e26e3f-65d4-4069-b570-58b8b9e2a1ae
 contentOwner: bohnert
@@ -10,9 +10,8 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
-
+exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 ---
-
 # SPA and Server-Side Rendering{#spa-and-server-side-rendering}
 
 >[!NOTE]

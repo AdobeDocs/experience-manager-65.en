@@ -10,8 +10,10 @@ discoiquuid: cf7823f4-82c2-4e36-9b65-3c58359b8104
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 
+feature: Viewer Presets
+role: Business Practitioner, Administrator
+exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 ---
-
 # Managing Viewer Presets{#managing-viewer-presets}
 
 A Viewer Preset is a collection of settings that determine how users view rich-media assets on their computer screens and mobile devices. If you are an administrator, you can create Viewer Presets. Settings are available for an array of viewer configuration options. For example, you can change the viewer display size or zoom behavior.

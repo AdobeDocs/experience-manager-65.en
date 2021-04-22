@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
+exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 ---
-
 # Administering Tags {#administering-tags}
 
 Tags are a quick and easy method of classifying content within a website. They can be thought of as keywords or labels (metadata) that allow content to be more quickly found as the result of a search.
@@ -307,4 +307,3 @@ To add a new language to the dialog, see [Adding a New Language to the Edit Tag 
   Information about the tagging framework as well as extending and including tags in custom applications.
 
 * [Classic UI Tagging Console](/help/sites-administering/classic-console.md)
-

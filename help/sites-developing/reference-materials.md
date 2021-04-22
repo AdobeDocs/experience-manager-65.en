@@ -11,15 +11,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: d8c9c2db-6709-409a-93d0-11b802763ada
 docset: aem65
-
+exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 ---
-
 # API Guides {#api-guides}
 
 Adobe Experience Manager (AEM) provides several APIs for developing applications and extending AEM. The following list provides the documentation for APIs supported by AEM:
 
 * [Adobe AEM 6.5.0 API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)
-* API differences (coming soon)
 * [Granite UI (Touch-enabled) API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 * [Coral UI guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 * [Widgets API (Classic UI) documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)

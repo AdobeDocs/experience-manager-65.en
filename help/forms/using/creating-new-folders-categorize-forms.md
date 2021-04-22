@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
+role: Administrator
+exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 ---
-
 # Create new folders to categorize forms {#create-new-folders-to-categorize-forms}
 
 You can organize your assets better using folders. Since AEM Forms supports several types of assets—form templates, PDFs, documents, resources, and adaptive forms, with various metadata—you can use folders to categorize your forms based on the desired criteria.
@@ -49,4 +50,3 @@ You can create a folder in AEM Forms in one of the following ways:
 1. Click the edit ![aem6forms_edit](assets/aem6forms_edit.png) icon in the toolbar.
 1. Enter the new title. The text field is prepopulated with the current value of folder title. You can change it to a new value.
 1. Click **[!UICONTROL Submit].**
-

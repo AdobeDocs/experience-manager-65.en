@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
+exl-id: 3458471a-9815-463e-8044-68631073863c
 ---
-
 # Appearance framework for adaptive and HTML5 forms {#appearance-framework-for-adaptive-and-html-forms}
 
 Forms (adaptive forms and HTML5 forms) use [jQuery](https://jquery.com/), [Backbone.js](https://backbonejs.org/) and [Underscore.js](https://underscorejs.org/) libraries for appearance and scripting. The forms also use the [jQuery UI](https://jqueryui.com/) **Widgets** architecture for all interactive elements (such as fields and buttons) in the form. This architecture enables Form developer to use a rich set of available jQuery widgets and plug-ins in Forms. You can also implement form-specific logic while capturing data from users like leadDigits/trailDigits restrictions or implementing picture clauses. Form developers can create and use custom apperances to improve the data capture experience and make it more user-friendly.

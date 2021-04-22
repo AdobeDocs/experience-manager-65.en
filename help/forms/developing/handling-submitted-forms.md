@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
+role: Developer
+exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 ---
-
 # Handling Submitted Forms {#handling-submitted-forms} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
+role: Developer
+exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 ---
-
 # Protecting Documents with Policies {#protecting-documents-with-policies} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

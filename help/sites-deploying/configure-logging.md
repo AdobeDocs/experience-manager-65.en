@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
+feature: Configuring
+exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 ---
-
 # Logging{#logging}
 
 AEM offers you the possibility to configure:
@@ -143,4 +144,3 @@ You can define your own Logger / Writer pair:
 >[!NOTE]
 >
 >In certain circumstances you may want to create a [custom log file](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
-

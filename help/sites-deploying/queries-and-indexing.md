@@ -10,8 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
+feature: Configuring
+exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 ---
-
 # Oak Queries and Indexing{#oak-queries-and-indexing}
 
 >[!NOTE]
@@ -484,4 +485,3 @@ You can gather additional details in order to help troubleshoot the problem, suc
 
 1. The Oak version your instance is running on. You can see this by opening CRXDE and looking at the version in the lower right corner of the welcome page, or by checking the version of the `org.apache.jackrabbit.oak-core` bundle.
 1. The QueryBuilder Debugger output of the troublesome query. The debugger can be accessed at: `https://serveraddress:port/libs/cq/search/content/querydebug.html`
-

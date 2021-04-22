@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
-
+exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
+feature: Security
 ---
-
 # Custom User Group Mapping in AEM 6.5 {#custom-user-group-mapping-in-aem}
 
 ## Comparison of JCR Content related to CUG {#comparison-of-jcr-content-related-to-cug}
@@ -150,4 +150,3 @@ Service to configure exclusion list of principals which should not be affected b
  </tbody>
 </table>
 -->
-

@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
+role: Developer
+exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 ---
-
 # Rendering Forms Based on Fragments {#rendering-forms-based-on-fragments} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

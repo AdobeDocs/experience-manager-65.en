@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
+feature: Context Hub
+exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 ---
-
 # Client Context Javascript API{#client-context-javascript-api}
 
 ## CQ_Analytics.ClientContextMgr {#cq-analytics-clientcontextmgr}

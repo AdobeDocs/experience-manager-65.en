@@ -10,9 +10,8 @@ topic-tags: spa
 content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
-
+exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 ---
-
 # Getting Started with SPAs in AEM - React{#getting-started-with-spas-in-aem-react}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using SPA frameworks.

@@ -8,8 +8,9 @@ topic-tags: author
 discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 ---
-
 # Configuring the Submit action{#configuring-the-submit-action}
 
 ## Introduction to submit actions {#introduction-to-submit-actions}

@@ -7,8 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
+role: Business Practitioner, Administrator
+exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
+feature: Configuration
 ---
-
 # Linking URLs to your web application {#linking-urls-to-your-web-application}
 
 Your websites and applications access Dynamic Media services by way of URL calls. After you publish an asset, Dynamic Media activates a URL string that references the asset. You can paste these URLs into a web browser for testing.

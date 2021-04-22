@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
+exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 ---
-
 # Best Practices for Queries and Indexing{#best-practices-for-queries-and-indexing}
 
 Along with the transition to Oak in AEM 6, some major changes were made to the way that queries and indexes are managed. Under Jackrabbit 2, all content was indexed by default and could be queried freely. In Oak, indexes must be created manually under the `oak:index` node. A query can be executed without an index, but for large datasets, it will execute very slowly, or even abort.
@@ -474,4 +474,3 @@ Pre-extracted text can be incrementally added to over time. Text pre-extraction 
 3a. [Re-index](#how-to-re-index) of Lucene indexes is invoked in AEM
 
 3b. The Apache Jackrabbit Oak DataStore PreExtractedTextProvider OSGi config (configured to point at the Extracted text via a file system path) instructs Oak to sourced full-text text from the Extracted  Files,  and avoids directly hitting and processing the data stored in the repository.
-

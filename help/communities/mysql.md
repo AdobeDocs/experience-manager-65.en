@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9222bc93-c231-4ac8-aa28-30d784a4ca3b
+role: Administrator
+exl-id: 2d33e6ba-cd32-40d1-8983-58f636b21470
 ---
-
 # MySQL Configuration for Enablement Features {#mysql-configuration-for-enablement-features}
 
 MySQL is a relational database primarily used for SCORM tracking and reporting data for enablement resources. Included are tables for other features such as tracking video pause/resume.
@@ -235,4 +236,3 @@ To ensure enablement courses work correctly in all browsers, it is necessary to 
 * Select the `[+]` icon to add a Safe User Agent.
 * Enter `Mozilla/*`.
 * Select **[!UICONTROL Save]**.
-

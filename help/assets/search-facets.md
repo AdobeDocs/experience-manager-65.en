@@ -2,8 +2,10 @@
 title: Search facets to filter search results
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
+role: Administrator, Developer
+feature: Search
+exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 ---
-
 # Search facets {#search-facets}
 
 An enterprise-wide deployment of [!DNL Adobe Experience Manager Assets] has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of [!DNL Experience Manager].

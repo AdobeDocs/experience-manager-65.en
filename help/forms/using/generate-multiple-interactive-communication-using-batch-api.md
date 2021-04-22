@@ -5,8 +5,9 @@ contentOwner: khsingh
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
+feature: Interactive Communication
+exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 ---
-
 # Generate multiple interactive communications using Batch API {#use-batch-api-to-generate-multiple-ic}
 
 You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers.

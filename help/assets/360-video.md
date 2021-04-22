@@ -8,8 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
+feature: 360 VR Video
+role: Business Practitioner, Administrator
+exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 ---
-
 # 360/VR Video {#vr-video}
 
 360-degree videos record a view in every direction at the same time. They are shot using an omnidirectional camera or a collection of cameras. During playback on a flat display the user has control of the viewing angle; playback on mobile devices usually leverage their built-in gyroscopic controls.

@@ -10,8 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 9da10294-2dc8-4e82-8d32-f034e6a5aeeb
 docset: aem65
 
+feature: Content Fragments
+role: Business Practitioner, Administrator
+exl-id: 76f3a684-027d-4822-9eb4-220fc96956e3
 ---
-
 # Content Fragment Models{#content-fragment-models}
 
 Content Fragment Models define the structure of content for your [content fragments](/help/assets/content-fragments/content-fragments.md).
@@ -159,4 +161,3 @@ To publish a content fragment model:
    >[!NOTE]
    >
    >If you publish a content fragment for which the model has not yet been published, a selection list will indicate this and the model will be published with the fragment.
-

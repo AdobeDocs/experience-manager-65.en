@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
-
+exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
 ---
-
 # Integration with Adobe Target using Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
 The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.
@@ -23,7 +22,8 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 >
 >Using the Adobe Target Classic API in AEM is still supported for backward compatibility. The [Target Classic API uses user credentials authentication](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 >
->The API selection is driven by the authentication method used for AEM/Target integration.
+>The API selection is driven by the authentication method used for AEM/Target integration. 
+>See also the [Tenant ID and Client Code](#tenant-client) section.
 
 ## Prerequisites {#prerequisites}
 
@@ -222,7 +222,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Enter the details in the **Adobe Target Settings** tab:
 
     * **Authentication**: IMS
-    * **Tenant ID**: the Adobe IMS Tenant ID
+    * **Tenant ID**: the Adobe IMS Tenant ID. See also the [Tenant ID and Client Code](#tenant-client) section.
       >[!NOTE]
       >
       >For IMS this value needs to be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
@@ -232,7 +232,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Then you would use `yourtenantid`.
-
+    * **Client Code**: See the [Tenant ID and Client Code](#tenant-client) section.
     * **IMS Configuration**: select the name of the IMS Configuration
     * **API Type**: REST
     * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
@@ -245,11 +245,6 @@ The configuration can now be referenced for a Cloud Service to use the Target St
    >[!NOTE]
    >
    >[Configuration of a Cloud Service to use the Target Classic API](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) has been deprecated (uses the Adobe Recommendations Settings tab).
-
-   For example:
-
-   ![](assets/integrate-target-io-14.png)
-
 1. Click **Connect to Target** to initialize the connection with Adobe Target.
 
    If the connection is successful, the message **Connection successful** is displayed.
@@ -257,3 +252,27 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
+### Tenant ID and Client Code {#tenant-client}
+
+With [Adobe Experience Manager 6.5.8.0](/help/release-notes/sp-release-notes.md), the Client Code field had been added to the Target configuration window.
+
+When configuring the Tenant ID and Client Code fields, please be aware of the following:
+
+1. For most customers, the Tenant ID and the Client Code are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+2. For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
+
+In both cases, be aware that:
+
+* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
+* You have the option to change the default Tenant ID set.
+* Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
+
+As stated previously, the first case is the most common for AEM 6.5. Either way, make sure **both** fields contain the correct information depending on your requirements.
+
+>[!NOTE]
+>
+> If you want to change an existing Target Configuration:
+>
+> 1. Re-enter the Tenant ID.
+> 2. Re-connect to Target.
+> 3. Save the configuration.

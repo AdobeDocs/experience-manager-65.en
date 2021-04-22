@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
+feature: Configuring
+exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 ---
-
 # Run Modes{#run-modes}
 
 Run modes allow you to tune your AEM instance for a specific purpose; for example author or publish, test, development, intranet or others.

@@ -1,9 +1,11 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.5 User Guide
 user-guide-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 ---
 
 # AEM 6.5 User Guide {#user-guide}

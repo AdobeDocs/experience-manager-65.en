@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
+role: Developer
+exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
 ---
-
 # Converting Postscript to PDF Documents {#converting-postscript-to-pdf-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

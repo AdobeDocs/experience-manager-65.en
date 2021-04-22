@@ -2,8 +2,10 @@
 title: Assets Guide
 description: This guide covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
 user-guide-title: Assets Guide
+feature: Asset Management
+role: Business Practitioner, Architect, Administrator
+exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 ---
-
 # Assets Guide
 
 This guide covers all [!DNL Experience Manager Assets] tasks, such as how to create, manage, deliver, and optimize digital assets.

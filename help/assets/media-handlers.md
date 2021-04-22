@@ -2,8 +2,10 @@
 title: Process assets using media handlers and workflows
 description: Learn about the media handlers and how to use workflows to perform tasks on your digital assets.
 contentOwner: AG
+role: Business Practitioner
+feature: Workflow,Renditions
+exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 ---
-
 # Process assets using media handlers and workflows {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets] comes with a set of default workflows and media handlers to process assets. A workflow defines the tasks to be executed on the assets, then delegates the specific tasks to the media handlers, for example thumbnail generation or metadata extraction.
@@ -37,6 +39,8 @@ The following media handlers are available within [!DNL Assets] and handle the m
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback in case no other handler was found to extract data from an asset |
+
+{style="table-layout:auto"}
 
 All the handlers perform the following tasks:
 

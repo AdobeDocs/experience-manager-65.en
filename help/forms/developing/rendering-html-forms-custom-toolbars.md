@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
+role: Developer
+exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 ---
-
 # Rendering HTML Forms with CustomToolbars {#rendering-html-forms-with-customtoolbars} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

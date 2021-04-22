@@ -2,8 +2,10 @@
 title: Understand metadata concepts
 description: Learn about the need of and types of metadata that allows for easier categorization and organization of assets.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Metadata
+exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
 ---
-
 # Understand metadata concepts {#why-we-need-metadata}
 
 Metadata means data about data. In this regard, data refers to your digital asset, say an image. Metadata is critical for efficient asset management.

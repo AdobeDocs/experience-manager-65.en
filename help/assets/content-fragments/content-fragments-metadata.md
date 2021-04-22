@@ -11,8 +11,10 @@ content-type: reference
 discoiquuid: 148803f3-1e7b-4d35-99c5-e0d82f3adf24
 docset: aem65
 
+feature: Content Fragments
+role: Business Practitioner, Administrator
+exl-id: 319cd6b0-c866-4838-96a5-eceb7edae9af
 ---
-
 # Metadata - Fragment Properties{#metadata-fragment-properties}
 
 ## Editing Properties / Meta data {#editing-properties-meta-data}
@@ -36,4 +38,3 @@ You can view and edit the metadata (properties) for content fragments:
     * Created (display only)
 
    ![cfm-6420-07](assets/cfm-6420-07.png)
-

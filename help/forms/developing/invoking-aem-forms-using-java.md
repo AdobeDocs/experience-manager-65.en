@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
+role: Developer
+exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 ---
-
 # Invoking AEM Forms using the Java API {#invoking-aem-forms-using-the-javaapi} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

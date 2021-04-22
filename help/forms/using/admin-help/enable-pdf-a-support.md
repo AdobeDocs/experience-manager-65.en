@@ -9,8 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
+feature: PDF Generator
+exl-id: 0e83a208-aa8f-4ff1-b981-244d22a157f2
 ---
-
 # Enable PDF/A support {#enable-pdf-a-support}
 
 PDF Generator supports the creation of PDF/A-compliant files from Microsoft Excel, Microsoft PowerPoint, and Microsoft Word files.
@@ -19,4 +20,3 @@ PDF Generator supports the creation of PDF/A-compliant files from Microsoft Exce
 1. Click New or select an existing file type setting.
 1. Click Microsoft Excel, Microsoft PowerPoint, or Microsoft Word and then select Create PDF/A-1a Compliant File and save your changes.
 1. In the native application (such as Microsoft Word), click Adobe PDF &gt; Change Conversion Settings, and then select PDF/A-1b.
-

@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
+role: Developer
+exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
 ---
-
 # Application Manager Client JavaAPI Quick Start (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
 The following Java API Quick Start(SOAP) are available for the Application Manager Client.
@@ -810,4 +811,3 @@ public class DeleteApplication_SOAP {
     }
 }
 ```
-

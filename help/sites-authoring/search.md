@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
-
+exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 ---
-
 # Search{#searching}
 
 The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.

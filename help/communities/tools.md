@@ -10,8 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
+role: Administrator
+exl-id: ba6c4ad3-c393-42d8-9f1f-d59947c3e7ab
 ---
-
 # Communities Tools {#communities-tools}
 
 To access the Communities tools console, login your author instance:
@@ -31,4 +32,3 @@ To access the Communities tools console, login your author instance:
 * [Component Guide](components-guide.md) - Opens an interactive site that allows for experimentation with how the SCF components work and how they can be configured or customized.
 
 * [Badges](badges.md) - Console from where custom badges can be added for use in [scoring and badging rules](implementing-scoring.md)
-

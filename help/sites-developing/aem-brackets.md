@@ -1,7 +1,7 @@
 ---
 title: AEM Brackets Extension
 seo-title: AEM Brackets Extension
-description: null
+description: AEM Brackets Extension
 seo-description: null
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
+exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 ---
-
 # AEM Brackets Extension{#aem-brackets-extension}
 
 ## Overview {#overview}

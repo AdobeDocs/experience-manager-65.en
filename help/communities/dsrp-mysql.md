@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
+role: Administrator
+exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
 ---
-
 # MySQL Configuration for DSRP {#mysql-configuration-for-dsrp}
 
 MySQL is a relational database that can be used to store user generated content (UGC).
@@ -194,4 +195,3 @@ When MySQL runs on a server different from AEM, the server hostname must be spec
   * **[!UICONTROL Datasource name]**: name entered for the [MySQL connection](#new-connection-settings), for example, 'communities'.
 
 * Select **[!UICONTROL Save]**
-

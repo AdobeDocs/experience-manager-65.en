@@ -2,8 +2,10 @@
 title: Extend Asset Editor
 description: Learn how to extend the capabilities of Asset Editor using custom components.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Developer Tools
+exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 ---
-
 # Extend Asset Editor {#extending-asset-editor}
 
 The Asset Editor is the page that opens when an asset found through the Asset Share is clicked allowing the user to edit such aspects of the asset as metadata, thumbnail, title and tags.

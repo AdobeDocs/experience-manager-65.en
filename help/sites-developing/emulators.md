@@ -10,8 +10,8 @@ topic-tags: mobile-web
 content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
+exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 ---
-
 # Emulators{#emulators}
 
 >[!NOTE]
@@ -148,4 +148,3 @@ To create a custom mobile emulator:
    * Name = `touchScrolling`, Type = `Boolean`, Value = `true`: to include the touch scrolling functionality.
 
    More functionalities can be added by defining your own plugins.
-

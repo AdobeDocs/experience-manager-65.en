@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
+role: Developer
+exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 ---
-
 # Assigning Usage Rights {#assigning-usage-rights} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

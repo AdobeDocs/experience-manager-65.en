@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
+exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
 ---
-
 # Overview of Workspace {#overview-of-workspace}
 
 Workspace lets users start, participate in, and track business processes.
@@ -28,4 +28,3 @@ On the Workspace pages in administration console, you can perform the following 
 >[!NOTE]
 >
 >You must use the navigation methods within administration console. Do not use the Back, Forward, or Refresh buttons in the web browser. Using these buttons can cause data capture and data display problems.
-

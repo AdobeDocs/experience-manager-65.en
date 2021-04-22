@@ -11,8 +11,9 @@ topic-tags: deploying
 discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 
+feature: Configuring
+exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 ---
-
 # How to Run AEM with TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Introduction {#introduction}
@@ -404,4 +405,3 @@ It is important to run garbage collection on file datastore instances from time 
    >[!NOTE]
    >
    >In case you are not using a shared data store, garbage collection will first have to be run on primary and then on the standby.
-

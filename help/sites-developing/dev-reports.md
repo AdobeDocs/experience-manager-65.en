@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
+exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 ---
-
 # Developing Reports{#developing-reports}
 
 AEM provides a selection of [standard reports](/help/sites-administering/reporting.md) most of which are based on a reporting framework.
@@ -1430,4 +1430,3 @@ These can be viewed using the Configuration menu of the web console (available f
 >* one report for two users with different language settings
 >* one user and two reports
 >
-

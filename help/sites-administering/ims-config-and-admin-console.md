@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
+exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
+feature: Security
 ---
-
 # Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
@@ -199,7 +200,9 @@ In the example below, we are adding synced groups to the local *Dam_Users* group
 
 Here, a user has also been assigned to a few groups in the [!DNL Admin Console]. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the [!DNL Admin Console]** above).
 
-&ast;Note that user groups only get synced when the users log in to the instance, for customers that have a large number of users and groups, a Group Sync utility can be run by AMS to pre-fetch groups for access control and permissions management described above.
+>[!NOTE]
+>
+>User groups only get synced when the users log in to the instance.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 

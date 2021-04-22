@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
+exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
 ---
-
 # Publishing an Email to Email Service Providers{#publishing-an-email-to-email-service-providers}
 
 You can publish newsletters to e-mail services such as ExactTarget and Silverpop Engage. This document describes how to configure AEM to publish a newsletter to these e-mail services.
@@ -167,4 +167,3 @@ To update a published email:
    To check if the email/newsletter has been updated on ExactTarget, click **View Published Email**. This takes you to the published email in ExactTarget.
 
    To check if the email/newsletter has been updated on Silverpop Email Service, visit the Silverpop Engage site.
-

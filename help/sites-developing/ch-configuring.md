@@ -8,8 +8,8 @@ contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
 ---
-
 # Configuring ContextHub {#configuring-contexthub}
 
 ContextHub is a framework for storing, manipulating, and presenting context data. For more detail on ContextHub, please see the [developer documentation](/help/sites-developing/contexthub.md). ContextHub replaces [Client Context](/help/sites-administering/client-context.md) in the touch UI.

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
+exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 ---
-
 # Working with Dynamic Media{#working-with-dynamic-media}
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
@@ -22,4 +22,3 @@ Working with Dynamic Media is not available in the classic UI. See [Working with
 >[!NOTE]
 >
 >If you are using Dynamic Media, you cannot simultaneously use automatic uploads available if [integrate Dynamic Media Classic into AEM](/help/sites-administering/scene7.md). See [enabling Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media is disabled by default.
-

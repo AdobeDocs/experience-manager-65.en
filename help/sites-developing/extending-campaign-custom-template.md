@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
+exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 ---
-
 # Creating Custom AEM Page Template with Adobe Campaign Form Components{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
 This page explains how to build a custom page template that uses [Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md) components by examining how the Geometrixx-outdoors template ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) is implemented, and points you to important information you may need when creating your own custom template.
@@ -76,4 +76,3 @@ To create a custom AEM page template using Adobe Campaign Form components, make 
    | **acTemplateId** |mail |
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
-

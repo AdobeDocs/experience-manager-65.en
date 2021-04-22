@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/performing_service_operations_using_apis
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
+role: Developer
+exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
 ---
-
 # Rendering Forms {#rendering-forms} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
@@ -53,4 +54,3 @@ You can accomplish these tasks using the Forms service:
 * Optimize an application. (See [Optimizing the Performance of the Forms Service](/help/forms/developing/optimizing-performance-forms-service.md).)
 
   ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*
-

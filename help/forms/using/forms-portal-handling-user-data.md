@@ -7,8 +7,9 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
+role: Administrator
+exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 ---
-
 # Forms Portal | Handling user data {#forms-portal-handling-user-data}
 
 [!DNL AEM Forms] portal provides components that you can use to list adaptive forms, HTML5 forms, and other Forms assets on [!DNL AEM Sites] page. In addition, you can configure it to display drafts and submitted adaptive forms and HTML5 forms for a logged-in user. For more information about forms portal, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
@@ -114,4 +115,3 @@ To delete drafts and submissions data for a logged-in user from the database tab
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'
 ```
-

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
+exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 ---
-
 # The Checklist{#the-checklist}
 
 The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.

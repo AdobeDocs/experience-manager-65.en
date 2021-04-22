@@ -10,9 +10,8 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
-
+exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 ---
-
 # Authoring - the Environment and Tools{#authoring-the-environment-and-tools}
 
 The authoring environment of AEM provides various mechanisms for organizing and editing your content. The tools provided are accessed from the various consoles and page editors.

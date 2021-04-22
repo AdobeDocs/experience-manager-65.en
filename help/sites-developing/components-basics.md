@@ -10,8 +10,8 @@ topic-tags: components
 content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
+exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 ---
-
 # AEM Components - The Basics{#aem-components-the-basics}
 
 When you start to develop new components you need to understand the basics of their structure and configuration.
@@ -424,7 +424,7 @@ Dialog definitions are specific to the UI:
 >[!NOTE]
 >
 >* For compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.
->* The [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) is also provided to help you extend/convert components that only have dialogs defined for the classic UI.
+>* The [AEM Modernization Tools](/help/sites-developing/modernization-tools.md) are also provided to help you extend/convert components that only have dialogs defined for the classic UI.
 >
 
 * Touch-Enabled UI

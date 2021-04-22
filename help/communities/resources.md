@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
+role: Administrator
+exl-id: 15e16572-c692-41fc-86e4-c1d475afa63c
 ---
-
 # Enablement Resources Console {#enablement-resources-console}
 
 For AEM Communities, the Resources console is where [Enablement Managers](users.md) create, manage and assign resources to members of an enablement community site.

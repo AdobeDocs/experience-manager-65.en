@@ -9,8 +9,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
+exl-id: a9d2fd77-e8cf-45bf-8492-f1bb8d580548
 ---
-
 # Features of Flex workspace not available in AEM Forms workspace {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
 AEM Forms workspace is the brand new workspace. The following are some of the features of Flex-based workspace that are not available in AEM Forms workspace.

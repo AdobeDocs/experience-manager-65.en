@@ -9,9 +9,8 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
-
+exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 ---
-
 # SPA Blueprint{#spa-blueprint}
 
 To enable the author to use the AEM SPA Editor to edit the content of an SPA, there are requirements that the SPA must fulfill, which are described in this document.

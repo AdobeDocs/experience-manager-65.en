@@ -9,8 +9,9 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 ---
-
 # Creating accessible adaptive forms{#creating-accessible-adaptive-forms}
 
 ## Introduction {#introduction}
@@ -155,6 +156,24 @@ The following keyboard shortcuts are available in AEM Forms.
 | Move to the previous panel |Alt+Left Arrow |
 | Reset the filled data in a form |Alt+R |
 | Submit a form |Alt+S |
+
+In addition, there are various keyboard shortcut keys available for the **[!UICONTROL Date Picker]** component in Adaptive Forms. To enable the shortcut keys, tap the **[!UICONTROL Date Picker]** component and tap ![Configure](assets/configure-icon.svg) to open the properties. In the **[!UICONTROL Patterns]** section, select a display pattern using the **[!UICONTROL Type]** and **[!UICONTROL Pattern]** dropdown lists. Save the properties to enable the use of shortcut keys for the **[!UICONTROL Date Picker]** component.
+
+The following keyboard shortcut keys are available for the Date Picker component in Adaptive Forms:
+
+| Action |Keyboard shortcut |
+|---|---|
+| <ul><li>Display the Date Picker component options when the tab focus highlights the calendar icon</li><li>Perform the click event when the tab focus highlights an option</li> |Space or Enter |
+| Hide the Date Picker component options |Esc|
+| <ul><li>Move the cursor forward through the options available in the Date Picker component.</li><li>Set tab focus on calendar icon when date input field is active</li> |Tab |
+| Move the cursor backward through the options available in the Date Picker component |Shift+Tab |
+| <ul><li>Display the Date Picker component options when the tab focus highlights the date input field</li><li>Move the cursor downward in the calendar available in the Date Picker component</li> |Down Arrow |
+| Move the cursor upward in the calendar available in the Date Picker component |Up Arrow |
+| Move the cursor backward in the calendar available in the Date Picker component |Left Arrow |
+| Move the cursor forward in the calendar available in the Date Picker component |Right Arrow |
+| Perform the action for the caption available between right and left navigation arrows in the calendar |Shift + Up Arrow |
+| Perform the action for right navigation arrow icon ![right-arrow](assets/right-navigation-icon.svg) available in the calendar |Shift + Left Arrow |
+| Perform the action for left navigation arrow icon ![left-arrow](assets/left-navigation-icon.svg) available in the calendar|Shift + Right Arrow |
 
 ## Use the accessibility tool to find remaining accessibility issues
 

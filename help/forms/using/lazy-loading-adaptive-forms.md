@@ -9,8 +9,9 @@ topic-tags: develop
 discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 ---
-
 # Improve performance of large forms with lazy loading{#improve-performance-of-large-forms-with-lazy-loading}
 
 ## Introduction to lazy loading {#introduction-to-lazy-loading}
@@ -82,4 +83,3 @@ Important points to keep in mind while developing scripts for lazy loading panel
 * Do not forward reference value of a field inside a lazy panel irrespective of field being marked globally across fragments or not.
 * Use panel reset feature to reset everything visible on the panel by using the following click expression.  
   guideBridge.resolveNode(guideBridge.getFocus({"focusOption": "navigablePanel"})).resetData()
-

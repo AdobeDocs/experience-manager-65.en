@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
-
+exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 ---
-
 # User Interface Recommendations for Customers{#user-interface-recommendations-for-customers}
 
 Adobe Experience Manager comes with two UIs - the unified Experience Cloud UI (also known as the touch-enabled UI) and the Classic UI.
@@ -72,7 +71,7 @@ The following is a list of recommendations from Product Management for Adobe Exp
      <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li>
     </ol> <p>Then, in a second phase:</p>
     <ol>
-     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> to update the components.</li>
+     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/modernization-tools.md">AEM Modernization Tools</a> to update the components.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -84,7 +83,7 @@ The following is a list of recommendations from Product Management for Adobe Exp
      <li>Configure the "Edit Page" action to open the classic UI Page Editor. See <a href="#selecting-your-ui">Selecting Your UI</a>.</li>
     </ol> <p>Then, in a second phase:</p>
     <ol>
-     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/dialog-conversion.md">Dialog Conversion Tool</a> to update the components.</li>
+     <li>Update your components dialogs to use the Coral 3 dialog format. Adobe recommends to use the <a href="/help/sites-developing/modernization-tools.md">AEM Modernization Tools</a> to update the components.</li>
      <li>Configure the ContextHub (the replacement for the ClientContext) and update the page templates to use the ContextHub. Note that the ContextHub has a compatibility mode that allows loading custom ClientContext stores.</li>
     </ol> </td>
   </tr>
@@ -118,7 +117,7 @@ For background information on basic handling:
 For detailed development information:
 
 * [Touch-enabled UI architecture](/help/sites-developing/touch-ui-concepts.md).
-* Use the [Dialog Conversion tool](/help/sites-developing/dialog-conversion.md) to convert component Edit dialogs from the classic UI to the touch-enabled UI.
+* Use the [AEM Modernization Tools](/help/sites-developing/modernization-tools.md) to convert component Edit dialogs from the classic UI to the touch-enabled UI.
 
 * [Structure of the touch-enabled UI](/help/sites-developing/touch-ui-structure.md).
 
@@ -128,4 +127,3 @@ For detailed development information:
 
 * [AEM Gem Session on touch-enabled customization](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
-

@@ -8,8 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
+feature: Language Copy
+exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 ---
-
 # Translation Enhancements{#translation-enhancements}
 
 This page presents incremental enhancements and refinements to AEM translation management capabilities.
@@ -108,4 +109,3 @@ A property can now be selected in the Sites list view that shows if a page has b
 You can now see a **Translated** column which shows the translation status of the pages.
 
 ![screen_shot_2018-04-23at133821](assets/screen_shot_2018-04-23at133821.jpg)
-

@@ -9,8 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
+feature: PDF Generator
+exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
 ---
-
 # Configuring Adobe PDF settings{#configuring-adobe-pdf-settings}
 
 The Adobe PDF Settings page shows the conversion settings that you can specify for your sources to use. You can use any of the predefined PDF settings or create your own. The PDF settings determine precisely how files are converted and their resultant PDF structure and features. Adobe PDF settings were previously known as Distiller® parameters or job options.
@@ -572,4 +573,3 @@ These files have many purposes. For example, prologue files can be edited to spe
 >[!NOTE]
 >
 >PDF Generator supports prologue and epilogue files only for conversion of PostScript and Encapsulated PostScript files to PDF.
-

@@ -10,9 +10,8 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
 docset: aem65
-
+exl-id: fe727406-09cb-4516-8278-806fd78cfc12
 ---
-
 # Integrating Services with the JMX Console{#integrating-services-with-the-jmx-console}
 
 Create and deploy MBeans to manage services using the JMX Console. Expose service attributes and operations to enable administration tasks to be performed.

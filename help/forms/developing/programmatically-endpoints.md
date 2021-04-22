@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
+role: Developer
+exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 ---
-
 # Programmatically Managing Endpoints {#programmatically-managing-endpoints} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

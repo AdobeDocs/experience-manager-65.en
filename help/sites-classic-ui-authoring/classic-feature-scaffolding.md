@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
-
+exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 ---
-
 # Scaffolding{#scaffolding}
 
 Sometimes you may need to create a large set of pages that share the same structure but have differing content. Through the standard AEM interface, you would need to create each page, drag the appropriate components onto the page and fill each of them in individually.

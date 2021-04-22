@@ -11,9 +11,8 @@ content-type: reference
 discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
-
+exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 ---
-
 # Developing AEM Components{#developing-aem-components}
 
 AEM components are used to hold, format, and render the content made available on your webpages.
@@ -459,7 +458,7 @@ When migrating a component that was designed for use with the classic UI to a co
 * Dialogs
 
     * You will need to create a new dialog for use in the touch-enabled UI. However, for compatibility purposes the touch-enabled UI can use the definition of a classic UI dialog, when no dialog has been defined for the touch-enabled UI.
-    * The [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) is provided to help you extend existing components.
+    * The [AEM Modernization Tools](/help/sites-developing/modernization-tools.md) are provided to help you extend existing components.
     * [Mapping ExtJS to Granite UI Components](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) provides a convenient overview of ExtJS xtypes and node types with their equivalent Granite UI resource types.
     * Customizing fields, for more information see the AEM Gems session on [Customizing Dialog Fields](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
     * Migrate from vtypes to [Granite UI validation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)

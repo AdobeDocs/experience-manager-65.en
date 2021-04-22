@@ -10,9 +10,8 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
-
+exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
 ---
-
 # Developing for Targeted Content{#developing-for-targeted-content}
 
 This section describes topics about developing components for use with content targeting.

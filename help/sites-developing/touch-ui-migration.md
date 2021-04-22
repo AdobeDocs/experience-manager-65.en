@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
-
+exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 ---
-
 # Migration to the Touch UI{#migration-to-the-touch-ui}
 
 Starting with version 6.0, Adobe Experience Manager (AEM) introduced a new user interface referred to as the *touch-enabled UI* (also known simply as the *touch UI*). It is aligned to the Adobe Marketing Cloud and to the overall Adobe user interface guidelines. This has become the standard UI in AEM with the legacy, desktop-oriented interface referred to as the *classic UI*.
@@ -113,7 +112,7 @@ Dialogs are a major factor when migrating your components:
 
 * [Developing AEM Components](/help/sites-developing/developing-components.md) (with the touch-enabled UI)
 * [Migrating from a Classic Component](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) - to help you convert the dialogs of your classic UI components to touch UI
+* [AEM Modernization Tools](/help/sites-developing/modernization-tools.md) - to help you convert the dialogs of your classic UI components to touch UI
 
     * There is a compatibility layer in touch UI to open a classic UI dialog within a "Touch UI wrapper", but this has limited functionality and is not recommended for the long-term.
 
@@ -153,4 +152,3 @@ For full information on developing AEM see the collection of resources under:
 >[!CAUTION]
 >
 >AEM Modernization Tools are a community effort and are not supported or warrantied by Adobe.
-

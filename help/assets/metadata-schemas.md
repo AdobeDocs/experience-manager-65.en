@@ -2,8 +2,10 @@
 title: Metadata schemas to define layout of metadata properties page in [!DNL Adobe Experience Manager Assets]. 
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
 contentOwner: AG
+role: Business Practitioner, Administrator
+feature: Metadata
+exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 ---
-
 # Metadata schemas {#metadata-schemas}
 
 Organizations come up with a metadata model that enhances the asset discovery, usage, interoperability, and so on. Correct metadata application is sacrosanct to maintaining metadata-driven workflows and processes. To adhere to organization-wide metadata strategy and standards, you can use metadata schemas that help DAM users to align. [!DNL Adobe Experience Manager] allows easy and flexible methods to create, maintain, and apply metadata schemas.

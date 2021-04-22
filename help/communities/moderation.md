@@ -11,8 +11,9 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 
+role: Administrator
+exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 ---
-
 # Moderation Console {#moderation-console}
 
 In AEM Communities, bulk [moderation of community content](/help/communities/moderate-ugc.md) is possible from both the author and publish environments by administrators and community moderators (trusted community members assigned as moderators).
@@ -368,4 +369,3 @@ To return to the content area display of multiple UGC posts, select the X in the
 For example:
 
 ![view1](assets/view1.png)
-

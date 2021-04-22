@@ -9,9 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
-
+exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
 ---
-
 # Customize layout and positioning of error messages of an adaptive form{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 You can customize layout and positioning of the error messages of an adaptive form. You can perform the following customizations:

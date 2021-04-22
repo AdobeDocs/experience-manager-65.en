@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
+exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
 ---
-
 # Managing certificates {#managing-certificates}
 
 Using the Trust Store Management, you can import, edit, and delete certificates that you trust on the server for validation of digital signatures and certificate authentication. You can import and export any number of certificates. After a certificate is imported, you can edit the trust settings and trust store type. Consider the following options when combining trust store types:
@@ -64,4 +64,3 @@ You can also import and delete certificates using the Trust Manager API. For det
 
 1. In administration console, click **[!UICONTROL Settings > Trust Store Management > Certificates]**.
 1. Select the check boxes for the certificates to delete, click **[!UICONTROL Delete]**, and then click **[!UICONTROL OK]**.
-

@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
-
+exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 ---
-
 # Participating in Workflows{#participating-in-workflows}
 
 Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group. The user receives notification and can then take the appropriate action:

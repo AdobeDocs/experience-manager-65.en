@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
+role: Developer
+exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 ---
-
 # Invoking Human-Centric Long-Lived Processes {#invoking-human-centric-long-lived-processes}
 
 You can programmatically invoke human-centric long-lived processes that were created in Workbench using these client applications:
@@ -1007,4 +1008,3 @@ The following Flex code example invokes the `FirstAppSolution/PreLoanProcess` pr
  </mx:Application>
  
 ```
-

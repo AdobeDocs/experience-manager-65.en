@@ -10,9 +10,8 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
-
+exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 ---
-
 # AEM with MongoDB{#aem-with-mongodb}
 
 This article aims to improve knowledge on tasks and considerations needed to successfully deploy Adobe Experience Manager with MongoDB.
@@ -684,4 +683,3 @@ If AEM is running on a MongoMK persistence manager deployment, [page names are l
 >[!NOTE]
 >
 >[Please refer to the MongoDB documentation](https://docs.mongodb.com/manual/reference/limits/) to make yourself familiar with the known limitations and thresholds of MongoDB itself as well.
-

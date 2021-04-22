@@ -10,8 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
+exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 ---
-
 # Components{#components}
 
 Adobe Experience Manager (AEM) comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors. They are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) and are grouped by main functional area (i.e. component group) to aid filtering.
@@ -37,4 +37,3 @@ The following pages provide fast links to some of the major areas of content man
 ## Using Design Mode to Configure Components {#using-design-mode-to-configure-components}
 
 In addition to the components that authors can access through the sidekick in a standard installation, various other components are also available. You can use [Design mode](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) to enable/disable these and edit parameters for specific components.
-

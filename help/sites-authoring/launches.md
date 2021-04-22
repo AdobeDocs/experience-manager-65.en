@@ -10,9 +10,8 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
-
+exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 ---
-
 # Launches{#launches}
 
 Launches enable you to efficiently develop content for a future release.
@@ -96,6 +95,13 @@ Launches allow you to:
 >Creating and editing launches requires access rights to `/content/launches` - as with the default group `content-authors`. 
 >
 >Please contact your system administrator if you experience any problems.
+
+>[!CAUTION]
+>
+>Re-ordering components on a Launch page is not supported. 
+>
+>When the page is promoted any content changes will be reflected, but the component positions will not change.
+
 
 ### The Launches Console {#the-launches-console}
 

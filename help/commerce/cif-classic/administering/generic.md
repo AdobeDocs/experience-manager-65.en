@@ -7,8 +7,8 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
+exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 ---
-
 # Administering generic eCommerce {#administering-generic-ecommerce}
 
 The AEM generic solution provides methods of managing the commerce information held within the repository (as opposed to using an external ecommerce engine). This includes:

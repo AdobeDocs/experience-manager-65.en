@@ -1,8 +1,8 @@
 ---
 title: AEM Foundation and repository
 description: Release notes for Adobe Experience Manager platform and repository.
+exl-id: 06938419-392b-432d-ba0c-ba444b3e141c
 ---
-
 # AEM Foundation and repository {#aem-foundation-repository}
 
 ## List of changes {#list-of-changes}

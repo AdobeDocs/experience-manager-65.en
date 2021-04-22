@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
+feature: Mobile Forms
+exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 ---
-
 # Scripting support for HTML5 forms {#scripting-support-for-html-forms}
 
 JavaScript, FormCalc properties, and methods supported in HTML5 forms are as listed below:

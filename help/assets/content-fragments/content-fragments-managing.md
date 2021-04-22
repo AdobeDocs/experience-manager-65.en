@@ -11,8 +11,10 @@ content-type: reference
 discoiquuid: 21a18d60-f3fe-4048-9949-8416b5cb4596
 docset: aem65
 
+feature: Content Fragments
+role: Business Practitioner, Administrator
+exl-id: 636daf55-2225-4780-9c57-1a2d7464fe2c
 ---
-
 # Managing Content Fragments{#managing-content-fragments}
 
 Content Fragments are stored as **Assets**, so are primarily managed from the **Assets** console.
@@ -334,4 +336,3 @@ To delete a fragment:
    >[!CAUTION]
    >
    >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **Force Delete**. The fragment, together with its content fragment component, will be deleted from any content pages.
-

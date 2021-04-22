@@ -10,8 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 
+feature: Mobile Forms
+exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 ---
-
 # Integrating Form Bridge with custom portal for HTML5 forms{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 FormBridge is a HTML5 forms bridge API that allows you to interact with a form. For the FormBridge API reference, see [FormBridge API reference](/help/forms/using/form-bridge-apis.md).

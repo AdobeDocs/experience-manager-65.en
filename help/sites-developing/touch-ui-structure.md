@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
+exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
 ---
-
 # Structure of the AEM Touch-Enabled UI{#structure-of-the-aem-touch-enabled-ui}
 
 The AEM touch-enabled UI has several underlying principles and is made up of several key elements:
@@ -163,4 +163,3 @@ Depending on the space available, the component toolbars are positioned at the t
 For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).
 
 For further technical information see the [JS documentation set](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) for the touch-enabled page editor.
-

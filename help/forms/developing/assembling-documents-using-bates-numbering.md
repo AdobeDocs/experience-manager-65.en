@@ -10,8 +10,9 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
+role: Developer
+exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
 ---
-
 # Assembling Documents Using Bates Numbering {#assembling-documents-using-bates-numbering} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

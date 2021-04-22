@@ -10,8 +10,9 @@ topic-tags: develop
 discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 ---
-
 # Adaptive Form Templates{#adaptive-form-templates}
 
 When you author a form, you add fields and components to define form structure, content, and actions in the editor. You add fields and components in the `guideRootPanel` of the form container. With Template Editor, you can create a template that contains basic structure and initial content that authors can use to create forms.
@@ -189,4 +190,3 @@ Perform the following steps to show and hide templates:
 * When you modify properties of the form in template editor, do not use the BindReference property.
 * If you want to add a breakpoint, create it when you author an adaptive form template.
   For more information on breakpoints, see [Responsive Layout](/help/sites-authoring/responsive-layout.md).
-

@@ -9,8 +9,9 @@ topic-tags: develop
 discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
 ---
-
 # Prefill adaptive form fields{#prefill-adaptive-form-fields}
 
 ## Introduction {#introduction}

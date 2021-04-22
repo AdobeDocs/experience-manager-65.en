@@ -8,8 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
+feature: Upgrading
+exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
 ---
-
 # Repository Restructuring for AEM Communities in 6.5 {#repository-restructuring-for-aem-communities-in}
 
 As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-deploying/repository-restructuring.md) page, customers upgrading to AEM 6.5 should use this page to assess the work effort associated with repository changes impacting the AEM Communities Solution. Some changes require work effort during the AEM 6.5 upgrade process, while others can be deferred until a future upgrade.
@@ -338,4 +339,3 @@ As described on the parent [Repository Restructuring in AEM 6.4](/help/sites-dep
   </tr>
  </tbody>
 </table>
-

@@ -9,8 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
+feature: Document Security
+exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 ---
-
 # Managing invited and local user accounts {#managing-invited-and-local-user-accounts}
 
 Use the Invited and Local Users page to manage your invited and local users. This page is displayed only if the following requirements are met:
@@ -126,4 +127,3 @@ You can find users more easily by sorting the user list by column heading. Trian
     1. In administration console, click Services &gt; Document Security &gt; Invited and Local Users.
     1. To sort invited users, click the Invited Users tab and click the appropriate column heading.
     1. To sort local users, click the Local Users tab and click the appropriate column heading.
-

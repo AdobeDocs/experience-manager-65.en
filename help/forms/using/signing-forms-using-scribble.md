@@ -9,8 +9,9 @@ topic-tags: author
 discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 ---
-
 # Apply electronic signatures to a form using scribble signatures{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 You can use the **Scribble Signature** component and **Signature Step** component to draw (Scribble) signature on an adaptive form. The Signature step component displays a PDF version of the adaptive form. You require a Document of Record option enabled or form template based adaptive forms to use the Signature step component.
@@ -65,4 +66,3 @@ Both the components provide a window, as displayed below, to sign a form. You ca
    ![Complete the signing process](assets/scribblecomplete.jpg)
 
 The signatures are added to the form and the form control moves to the next panel.
-

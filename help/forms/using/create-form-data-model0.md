@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 
+feature: Interactive Communication
+exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 ---
-
 # Tutorial: Create form data model{#tutorial-create-form-data-model}
 
  ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
@@ -400,5 +401,3 @@ Do the following to generate, edit, and save sample data:
    ![Edit sample data](assets/edit_sample_data_new.png)
 
 1. In **Edit Sample Data** window, edit data, as required, and tap **Save**. Close the window.
-
-                            

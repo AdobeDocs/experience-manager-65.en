@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
+exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
 ---
-
 # Custom Node Types{#custom-node-types}
 
 Because AEM is based on Sling and uses a JCR repository, node types offered by both of these are available for use:

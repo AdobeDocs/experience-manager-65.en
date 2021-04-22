@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
+role: Developer
+exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
 ---
-
 # Credential Service Java API Quick Start (SOAP) {#credential-service-java-api-quickstart-soap}
 
 Java API Quick Start(SOAP) is available for the Credential service.
@@ -221,4 +222,3 @@ The following code example deletes a credential based on an alias value *secure*
  }
  
 ```
-

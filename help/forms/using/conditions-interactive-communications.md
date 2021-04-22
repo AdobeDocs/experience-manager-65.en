@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 
+feature: Interactive Communication
+exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 ---
-
 # Conditions in Interactive Communications{#conditions-in-interactive-communications}
 
 Creating and editing condition fragments to be used in Interactive Communications - condition is one of the four types of document fragments used to build Interactive Communications. The other three are texts, lists, and layout fragments.
@@ -196,4 +197,3 @@ Tap Resize again to go back to the Create Rule\Edit Rule dialog.
 1. After you have constructed a valid rule, tap **[!UICONTROL Done]**.
 
    Proceed to making further changes, if required, in the condition and saving it.
-

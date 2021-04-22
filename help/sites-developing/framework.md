@@ -10,8 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: f69db472-9f5c-4c0d-9292-2920ef69feeb
 docset: aem65
+feature: Tagging
+exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 ---
-
 # AEM Tagging Framework {#aem-tagging-framework}
 
 To tag content and leverage the AEM Tagging infrastructure :

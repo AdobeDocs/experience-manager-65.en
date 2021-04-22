@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: a3f5a21d-2df6-4663-a1ea-3a067c46f860
 docset: aem65
-
+exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
 ---
-
 # Ideation Feature {#ideation-feature}
 
 ## Introduction {#introduction}

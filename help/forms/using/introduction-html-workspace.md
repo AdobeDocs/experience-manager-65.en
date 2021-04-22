@@ -10,9 +10,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4c89d017-0d4b-4fa2-b648-342f3c755350
 docset: aem65
-
+exl-id: e6759ffd-cf63-4684-a1d7-208fbe55aaed
 ---
-
 # Introduction to AEM Forms workspace{#introduction-to-aem-forms-workspace}
 
 Forms workflow increases organizational efficiency by automating and providing visibility into critical document and form-related business processes. Using Process Management module you can build streamlined, end-to-end workflows — including people, systems, content, and business rules — that are accessible online or offline.Forms workflow includes the AEM Forms workspace. AEM Forms workspace adds new capabilities to extend and integrate workspace and make it more user-friendly.

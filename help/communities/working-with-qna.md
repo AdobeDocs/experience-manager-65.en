@@ -10,9 +10,8 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 6e6ffe09-c50b-4238-8b8c-597c133d0a9e
 docset: aem65
-
+exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 ---
-
 # Q&A Forum Feature{#q-a-forum-feature}
 
 ## Introduction {#introduction}

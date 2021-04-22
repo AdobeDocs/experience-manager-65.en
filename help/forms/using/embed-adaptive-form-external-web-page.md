@@ -9,8 +9,9 @@ topic-tags: author
 discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 ---
-
 # Embed adaptive form in external web page{#embed-adaptive-form-in-external-web-page}
 
 You can [embed adaptive forms in an AEM Sites page](/help/forms/using/embed-adaptive-form-aem-sites.md) or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form..

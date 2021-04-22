@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 96d2b1cc-3252-4cc7-8b06-a897cbef8599
 docset: aem65
 
+feature: Interactive Communication
+exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
 ---
-
 # Print channel and web channel{#print-channel-and-web-channel}
 
 Interactive Communications can be delivered through two channels: print and web. The print channel is used to create PDFs and paper communications, such as a printed letter as a reminder for insurance premium payment, while the web channel is used to deliver online experiences, such as a credit card statement on a website.
@@ -81,4 +82,3 @@ To author a web channel template Complete the following steps:
 While authoring an Interactive Communication, authors can select this option to create the web channel in sync with the print channel. Using print channel as master for web channel ensures the content, inheritance, and data binding of the web channel is derived from the print channel and the changes made in the print channel could be reflected in the web channel. The Interactive Communication authors are, however, allowed to break the inheritance for specific components in the web channel, as required.
 
 ![Print channel as master](assets/create_ic_print_master_new.png) ![Web channel with print channel as master](assets/create_ic_print_master_web_new.png)
-

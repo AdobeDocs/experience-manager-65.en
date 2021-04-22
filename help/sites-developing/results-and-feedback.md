@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
+exl-id: 270e66d1-a3f2-457a-90d1-28b9f3c8c218
 ---
-
 # Tracking results and providing feedback{#tracking-results-and-providing-feedback}
 
 How and where you define the test cases, and the resulting test plan, is at your own discretion; there are many tools available.
@@ -26,4 +26,3 @@ However, regardless of the method or tool you choose, the information stored:
 * Should not be:
 
     * Extended to include tracking information - neither bugs, new features nor follow-on actions. This information should be maintained elsewhere, again there are many tools available.
-

@@ -11,8 +11,9 @@ content-type: reference
 discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 
+feature: Upgrading
+exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
 ---
-
 # Backward Compatibility in AEM 6.5{#backward-compatibility-in-aem}
 
 ## Overview {#overview}

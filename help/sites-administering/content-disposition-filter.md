@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
+exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
 ---
-
 # Content Disposition Filter{#content-disposition-filter}
 
 Content disposition filter is a security feature against XSS attacks on SVG files.

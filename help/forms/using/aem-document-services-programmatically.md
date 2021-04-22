@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
+exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 ---
-
 # Using AEM Document Services Programmatically  {#using-aem-document-services-programmatically}
 
 Samples and examples in this document help you understand and use  AEM Document Services on an AEM Forms on OSGi environment. For samples and examples for AEM Forms on JEE environment, see 
@@ -5061,4 +5061,3 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
  }
 }
 ```
-

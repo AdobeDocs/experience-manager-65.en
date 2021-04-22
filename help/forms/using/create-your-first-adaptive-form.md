@@ -8,8 +8,9 @@ topic-tags: introduction
 discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 ---
-
 # Tutorial: Create your first adaptive form {#tutorial-create-your-first-adaptive-form}
 
  ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)

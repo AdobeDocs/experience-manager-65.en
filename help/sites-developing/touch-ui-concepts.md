@@ -10,9 +10,8 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
-
+exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 ---
-
 # Concepts of the AEM Touch-Enabled UI{#concepts-of-the-aem-touch-enabled-ui}
 
 AEM features a touch-enabled UI with [responsive design](/help/sites-authoring/responsive-layout.md) for the author environment which is designed to operate on both touch and desktop devices.

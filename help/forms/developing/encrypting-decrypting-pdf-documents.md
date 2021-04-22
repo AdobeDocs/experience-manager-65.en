@@ -9,8 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
+role: Developer
+exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 ---
-
 # Encrypting and Decrypting PDF Documents {#encrypting-and-decrypting-pdf-documents} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

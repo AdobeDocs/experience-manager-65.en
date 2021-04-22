@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
+exl-id: e15dae6f-d30d-4770-a5ca-34f522a01d31
 ---
-
 # Considerations when running Administration Console {#considerations-when-running-administrationconsole}
 
 These are some things to consider when running Administration Console:
@@ -24,4 +24,3 @@ These are some things to consider when running Administration Console:
   Best practice is run administration console from another browser, such as Mozilla Firefox, to ensure that no links will fail.
 
 * Do not use backslash characters () when performing searches in administration console.
-

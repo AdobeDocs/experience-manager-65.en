@@ -8,6 +8,7 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
+feature: PDF Generator
 ---
 
 # Configuring file type settings {#configuring-file-type-settings}
@@ -507,6 +508,8 @@ These options determine how Microsoft Word files are converted. For instructions
 **[!UICONTROL Enable Advanced Tagging]**: Adds advanced tags for enhanced accessibility.
 
 **[!UICONTROL Convert All Styles To Bookmarks]**: Converts all styles in the Word document to bookmarks in the PDF document.
+
+**[!UICONTROL Convert specified styles to bookmarks]**: Converts the styles that you define in the **[!UICONTROL Styles with levels]** field to bookmarks in the PDF document.
 
 **[!UICONTROL Styles With Levels]**: Specifies which styles in the Word document are converted to bookmarks in the PDF document. Also specifies the level of the bookmarks. To use this feature, deselect the **[!UICONTROL Convert All Styles To Bookmarks]** option and specify the style names in the following format:
 

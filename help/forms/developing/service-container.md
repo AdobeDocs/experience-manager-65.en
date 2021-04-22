@@ -8,8 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding, development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
+role: Developer
+exl-id: 6abf2401-5a87-4f72-9028-74580df5b9de
 ---
-
 # Service container {#service-container} 
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**

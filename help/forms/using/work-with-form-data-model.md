@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 
+feature: Form Data Model
+exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
 ---
-
 # Work with form data model{#work-with-form-data-model}
 
  ![data-integration](do-not-localize/data-integeration.png)

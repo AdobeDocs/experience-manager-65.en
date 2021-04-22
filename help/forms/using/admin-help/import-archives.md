@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
+exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 ---
-
 # Import and manage archives {#import-and-manage-archives}
 
 Use the archives tab to import and manage LCAs that were created in workbench.
@@ -160,4 +160,3 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
 1. In administration console, click Services &gt; Applications and Services &gt; Archive Management.
 1. On the Archive Management page, select the check box for the archive to remove and click Remove.
-

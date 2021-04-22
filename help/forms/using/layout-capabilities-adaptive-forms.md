@@ -9,8 +9,9 @@ topic-tags: author
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 
+feature: Adaptive Forms
+exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 ---
-
 # Layout capabilities of adaptive forms{#layout-capabilities-of-adaptive-forms}
 
 Adobe Experience Manager (AEM) lets you create easy-to-use adaptive forms that offer dynamic experiences to end users. The form layout controls how items or components are displayed in an adaptive form.
@@ -172,4 +173,3 @@ For the mobile layout, you can add action buttons using icons.
 ![Mobile fixed layout for toolbar](assets/toolbar_layout_mobile_fixed.png)
 
 Mobile fixed layout for toolbar
-

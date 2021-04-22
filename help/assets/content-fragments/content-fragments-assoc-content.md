@@ -11,8 +11,10 @@ content-type: reference
 discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 
+feature: Content Fragments
+role: Business Practitioner, Administrator
+exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
 ---
-
 # Associated Content{#associated-content}
 
 Associated content provides the connection so that assets (i.e.) can be (optionally) used with the fragment when it is added to a content page. This provides flexibility by [providing a range of assets to access when using the content fragment on a page](/help/sites-authoring/content-fragments.md#using-associated-content), while also helping to reduce the time required to search for the appropriate asset.
@@ -48,4 +50,3 @@ Once you have associated a collection you can:
 * **Add Assets** to the collection.
 * Select an asset for further action.
 * Edit the asset.
-
