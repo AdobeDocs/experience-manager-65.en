@@ -9,7 +9,7 @@ This page lists the self-help resources regarding AEM Commerce.
 
 ## Key Commerce Articles {#key-articles}
 
-* [Introduction of AEM Commerce](/help/commerce/cif/overview.md)
+* [Introduction of AEM Commerce](/help/commerce/cif/introduction.md)
 * [Getting Started](/help/commerce/cif/getting-started.md)
 
 ## AEM 6.5 user guides
