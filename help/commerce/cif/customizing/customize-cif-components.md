@@ -10,7 +10,6 @@ audience: developer
 feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
-exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91,6de17630-ddd0-4041-b1c9-6b1f5eee182e
 ---
 # Customize AEM CIF Core Components {#customize-cif-components}
 
@@ -28,7 +27,7 @@ The Venia brand recently started manufacturing some products using sustainable m
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md). To follow the tutorial completely, you will need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Magento.
+A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM](../develop.md). To follow the tutorial completely, you will need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Magento.
 
 You will also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it has the ability to set request headers. On Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is one extension that can do the job.
 

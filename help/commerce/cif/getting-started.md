@@ -6,7 +6,6 @@ feature: Commerce Integration Framework
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
-exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7,b6625d14-a505-4fd1-877b-c15c82a1763d
 ---
 # Getting started with AEM Content and Commerce {#start}
 

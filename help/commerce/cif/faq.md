@@ -25,7 +25,7 @@ Catalog pages and product pages are created and cached dynamically in AEM based 
 
 ## 5. When you update product data in your commerce solution, is that a real-time push to AEM? Or is it a batch process?
 
-The CIF add-on used with AEM Cloud Service enables data to flow from the commerce solution to AEM on-demand. Hence, this is not a real-time push or a batch process when there is an update in your commerce solution.
+The CIF add-on used with AEM enables data to flow from the commerce solution to AEM on-demand. Hence, this is not a real-time push or a batch process when there is an update in your commerce solution.
 
 ## 6. What catalog size does AEM with CIF support?
 

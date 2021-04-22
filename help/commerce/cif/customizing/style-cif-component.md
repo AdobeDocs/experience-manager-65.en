@@ -5,12 +5,9 @@ sub-product: Commerce
 topics: Development
 version: cloud-service
 doc-type: tutorial
-activity: develop
-audience: developer
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
-exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
 ---
 # Style AEM CIF Core Components {#style-aem-cif-core-components}
 
@@ -28,7 +25,7 @@ In this tutorial a new style will be implemented for the Product Teaser componen
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM as a Cloud Service SDK](../develop.md).
+A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM](../develop.md).
 
 ## Clone the Venia Project {#clone-venia-project}
 

@@ -7,7 +7,6 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
-exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 ---
 # AEM Content & Commerce Authoring Pickers {#cif-pickers}
 

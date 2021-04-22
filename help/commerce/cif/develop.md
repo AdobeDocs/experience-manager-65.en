@@ -3,13 +3,12 @@ title: Develop AEM Commerce
 description: Learn how to generate a commerce-enabled AEM project using the AEM project archetype. Learn how to build and deploy the project to a local development environment.
 topics: Commerce, Development
 feature: Commerce Integration Framework
-version: cloud-service
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 ---
 
-# Develop AEM Commerce {#develop}
+# Developing AEM Commerce {#develop}
 
 Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM follows the same rules and best practices like other AEM projects. Please review these first:
 

@@ -136,7 +136,7 @@ description: AEM Content and Commerce Release Notes 2021
 
 ### What's new
 
-This is the 1st version of CIF Core Components that is supported on Adobe Experience Manager Cloud Service.
+This is the 1st version of CIF Core Components that is supported on Adobe Experience Manager.
 
 * Added product sorting on Product List page and Search Results page to allow shoppers to sort based on relevance, price, and product name.
 

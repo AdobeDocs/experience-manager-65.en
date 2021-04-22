@@ -8,9 +8,7 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-discoiquuid: 612b45de-4505-4fc8-9f11-ae5a0952ed65
 docset: aem65
-
 ---
 
 # eCommerce{#ecommerce}

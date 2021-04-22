@@ -5,11 +5,8 @@ description: Learn how to use AEM with SAP Commerce Cloud.
 seo-description: Learn how to use AEM with SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
-pagetitle: Administering hybris
 ---
 
 # SAP Commerce Cloud{#sap-commerce-cloud}
