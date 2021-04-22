@@ -21,7 +21,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
     + [Configuring URLs for SEO](cif/configuring/advanced-url-configuration.md)
     + [Caching Options](cif/configuring/caching.md)
   + Developing {#developing}
-    + [Developing with AEM Cloud Service SDK](cif/develop.md)
+    + [Developing with AEM](cif/develop.md)
     + [Styling CIF Components](cif/customizing/style-cif-component.md)
     + [Customizing CIF Components](cif/customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](cif/customizing/use-cif-pickers.md)

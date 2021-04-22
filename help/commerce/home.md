@@ -32,7 +32,7 @@ This page lists the self-help resources regarding AEM Commerce.
 
 ## Key AEM resources
 
-* [AEM tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM tutorials](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Dispatcher User Guide](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL User Guide](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Core Components User Guide](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)

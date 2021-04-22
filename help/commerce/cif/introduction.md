@@ -10,7 +10,7 @@ With Adobe Experience Manager content and commerce, brands can scale and innovat
 
 ## How Content and Commerce Helps Customers Being Successful
 
-With ever-increasing customer expectations for online commerce experiences, brands are pressured to deliver differentiated experiences and more content faster. However, implementing a content management platform often requires heavy time and budget investments in developing foundational elements, such as custom components and authoring tools, and accrues costs in maintenance and upgrades. Experience Manager Sites offers Content and Commerce as an add-on module for Experience Manager as a Cloud Service that provides out-of-the-box commerce core components, authoring tools, and a reference storefront to accelerate go-live, enable seamless collaboration across teams, and drive conversion.
+With ever-increasing customer expectations for online commerce experiences, brands are pressured to deliver differentiated experiences and more content faster. However, implementing a content management platform often requires heavy time and budget investments in developing foundational elements, such as custom components and authoring tools, and accrues costs in maintenance and upgrades. Experience Manager Sites offers Content and Commerce as an add-on module for Experience Manager that provides out-of-the-box commerce core components, authoring tools, and a reference storefront to accelerate go-live, enable seamless collaboration across teams, and drive conversion.
 
 Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Experience Cloud, as well as any commerce engine of choice. With Experience Manager Content and Commerce, brands can:
 
@@ -22,7 +22,7 @@ Brands can integrate Experience Manager with Adobe Commerce, part of Adobe Exper
 
 ## Introducing AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-As these projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as the Adobe Commerce Cloud to a set of custom commerce services. The integration is highly dependent on the use-cases and ecosystem. It usually touches various places and comes in many different flavors:
+As these projects have to deal with the complexity of integrating a commerce solution. A commerce solution can be anything from a commercial solution such as Adobe Commerce to a set of custom commerce services. The integration is highly dependent on the use-cases and ecosystem. It usually touches various places and comes in many different flavors:
 
 * Integration of a complex and dynamic ecosystem (example product catalogs)
 * Business needs to manage product content with its own lifecycle in an efficient and omnichannel way
