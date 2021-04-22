@@ -61,7 +61,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
 ## Client Libraries and ui.frontend Module {#introduction-to-client-libraries}
 
-The CSS and JavaScript responsible for rendering the theme/styles of the storefront is managed in AEM by a [Client library](/help/implementing/developing/introduction/clientlibs.md) or clientlibs for short. Client libraries provide a mechanism to organize CSS and Javascript in a project's code and then deliver onto the page.
+The CSS and JavaScript responsible for rendering the theme/styles of the storefront is managed in AEM by a [Client library](/help/sites-developing/clientlibs.md) or clientlibs for short. Client libraries provide a mechanism to organize CSS and Javascript in a project's code and then deliver onto the page.
 
 Brand specific styles can be applied to AEM CIF Core Components by adding and overriding the CSS managed by these client libraries. Understanding how client libraries are structured and included on the page is critical.
 
@@ -186,7 +186,8 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
 
     >[!NOTE]
     >
-    > Only the base libraries are "hard-coded" as part of the page scripts. `venia.site` is not included in these files and instead included as part of the page template for greater flexibility. This will be inspected later.
+    > Only the base libraries are "hard-coded" as part of the page scripts. `venia.site` is not included in these files and instead included as part of the page 
+    te for greater flexibility. This will be inspected later.
 
 1. From the terminal, build and deploy the entire project to a local instance of AEM:
 
@@ -243,13 +244,13 @@ Next verify the inclusion of the client libraries on the page.
     </html>
     ```
 
-    Client libraries when delivered to the page are prefixed with `/etc.clientlibs` and are served via a [proxy](/help/implementing/developing/introduction/clientlibs.md) to avoid exposing anything sensitive in `/apps` or `/libs`.
+    Client libraries when delivered to the page are prefixed with `/etc.clientlibs` and are served via a [proxy](/help/sites-developing/clientlibs.md) to avoid exposing anything sensitive in `/apps` or `/libs`.
 
     Notice `venia/clientlibs/clientlib-site.min.css` and `venia/clientlibs/clientlib-site.min.js`. These are the compiled CSS and Javascript files derived from the `ui.frontend` module.
 
 ## Client Library Inclusion with Page Templates {#client-library-inclusion-pagetemplates}
 
-There are several options for how to include a client-side library. Next inspect how the generated project includes the `clientlib-site` libraries via [Page Templates](/help/implementing/developing/components/templates.md).
+There are several options for how to include a client-side library. Next inspect how the generated project includes the `clientlib-site` libraries via [Page Templates](/help/sites-developing/templates.md).
 
 1. Navigate to the **Home Page** of the site within the AEM Editor: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -467,7 +468,7 @@ You just styled your first AEM CIF Core Component and you used a webpack dev ser
 
 ## Bonus Challenge {#bonus-challenge}
 
-Use the [AEM Style system](/help/sites-cloud/authoring/features/style-system.md) to create two styles that can be toggled on/off by a content author. [Developing with the Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) includes detailed steps and information on how to accomplish this.
+Use the [AEM Style system](/help/sites-authoring/style-system.md) to create two styles that can be toggled on/off by a content author. [Developing with the Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) includes detailed steps and information on how to accomplish this.
 
 ![Bonus Challenge - style System](../assets/style-cif-component/bonus-challenge.png)
 
@@ -476,6 +477,6 @@ Use the [AEM Style system](/help/sites-cloud/authoring/features/style-system.md)
 * [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 * [Set up a Local AEM Development Environment](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
-* [Client-Side Libraries](/help/implementing/developing/introduction/clientlibs.md)
+* [Client-Side Libraries](/help/sites-developing/clientlibs.md)
 * [Getting Started with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 * [Developing with the Style System](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
