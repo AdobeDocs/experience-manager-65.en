@@ -186,8 +186,7 @@ Next, make a small change to the Teaser style to see how the `ui.frontend` modul
 
     >[!NOTE]
     >
-    > Only the base libraries are "hard-coded" as part of the page scripts. `venia.site` is not included in these files and instead included as part of the page 
-    te for greater flexibility. This will be inspected later.
+    > Only the base libraries are "hard-coded" as part of the page scripts. `venia.site` is not included in these files and instead included as part of the page template for greater flexibility. This will be inspected later.
 
 1. From the terminal, build and deploy the entire project to a local instance of AEM:
 
