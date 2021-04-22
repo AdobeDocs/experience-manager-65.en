@@ -30,7 +30,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * GraphQL query customization simplified. This allows developers to customize CIF core components with less code.
 
-***
 
 ## Release Date: October, 2019
 
@@ -54,7 +53,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Minicart and Checkout components now use React hooks for improved extensibility.
 
-***
 
 ## Release Date: September, 2019
 
@@ -78,7 +76,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Product Teaser and Product Carousel components support product variants.
 
-***
 
 ## Release Date: August, 2019
 
@@ -108,7 +105,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Magento store configuration moved from OSGi to AEM Product console to make the integration setup more author-friendly.
 
-***
 
 ## Release Date: July, 2019
 
@@ -136,7 +132,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Support for Magento 2.3.2 and bug fixes related to product properties display in the product console.
 
-***
 
 ## Release Date: June, 2019
 

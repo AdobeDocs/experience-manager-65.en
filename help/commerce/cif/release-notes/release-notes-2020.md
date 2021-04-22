@@ -27,7 +27,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Multiple bug fixes.
 
-***
 
 ## Release Date: October, 2020
 
@@ -47,7 +46,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Commerce teaser component bug fixed.
 
-***
 
 ## Release Date: September, 2020
 
@@ -75,7 +73,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Multiple bug fixes.
 
-***
 
 ## Release Date: August, 2020
 
@@ -101,7 +98,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Multiple bug fixes.
 
-***
 
 ## Release Date: July, 2020
 
@@ -129,7 +125,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Multiple bug fixes.
 
-***
 
 ## Release Date: June, 2020
 
@@ -159,7 +154,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes.
 
-***
 
 ## Release Date: May, 2020
 
@@ -185,7 +179,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes applied.
 
-***
 
 ## Release Date: April, 2020
 
@@ -211,7 +204,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes applied.
 
-***
 
 ## Release Date: February, 2020
 
@@ -239,7 +231,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes applied.
 
-***
 
 ## Release Date: January, 2020
 

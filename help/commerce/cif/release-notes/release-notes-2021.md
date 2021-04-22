@@ -34,7 +34,6 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Multiple bug fixes.
 
-***
 
 ## Release Date: February, 2021
 
@@ -56,7 +55,6 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Multiple bug fixes.
 
-***
 
 ## Release Date: January, 2021
 
