@@ -8,11 +8,11 @@ description: AEM Content and Commerce Release Notes 2021
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
-**CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector [GitHub](https://github.com/adobe/commerce-cif-connector) is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
+**CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
 
 |Component| System Requirements|
 |:-------|:-----:|
-|CIF add-on |Minimum: AEM 6.5, Magento 2.3.1 GraphQL schemas|
+|CIF add-on |Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL schemas|
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
@@ -26,7 +26,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 ### What's new {#what-is-new-april}
 
-* **CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector [GitHub](https://github.com/adobe/commerce-cif-connector) is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
+* **CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
 
 * Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
 
