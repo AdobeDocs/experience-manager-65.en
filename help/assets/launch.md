@@ -37,11 +37,13 @@ To learn more about extensions, see [Adobe Extension](https://experienceleague.a
 
 The primary use case for the integration with Experience Platform Launch is customers who use both AEM Assets and AEM Sites. In such scenarios, you can set up a standard integration between your AEM author node and Experience Platform Launch, then associate your Sites instance with the Experience Platform Launch property. After that, any Dynamic Media WCM component added to a Sites page will track data and events from viewers.
 
-See [About tracking Dynamic Media viewers in AEM Sites](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersinAEMSites).
+See [Tracking Dynamic Media viewers in AEM Sites](#tracking-dynamic-media-viewers-in-aem-sites).
 
 A secondary use case that the integration supports are those customers who use AEM Assets only, or Dynamic Media Classic. In such cases, you obtain the embed code for your viewer and add it to the website page. Then, get the Experience Platform Launch library production URL from Experience Platform Launch and manually add it to the web page code.
 
-See [About tracking Dynamic Media viewers using embed code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode).
+See [Tracking Dynamic Media viewers using embed code](#tracking-dynamic-media-viewers-using-embed-code).
+
+<!-- Path on internal wiki [About tracking Dynamic Media viewers using embed code](https://wiki.corp.adobe.com/display/~oufimtse/Dynamic+Media+Viewers+integration+with+Adobe+Launch#DynamicMediaViewersintegrationwithAdobeLaunch-TrackingDynamicMediaViewersusingEmbedcode). -->
 
 ## How data and event tracking works in the integration {#how-data-and-event-tracking-works-in-the-integration}
 

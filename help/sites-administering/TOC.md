@@ -6,7 +6,6 @@ audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
 user-guide-description: Learn about administering AEM.
-feature-set: Experience Manager Sites,Experience Manager Assets,Experience Manager
 feature: Administering
 role: Administrator
 ---
@@ -159,6 +158,7 @@ role: Administrator
     + [AEM Sites - GDPR Readiness](gdpr-compliance-sites.md)
     + [Handling GDPR Requests for the AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
     + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
++ Content Management {#contentmanagement}
     + [How to Work With Packages](package-manager.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)
