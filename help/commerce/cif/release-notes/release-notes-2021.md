@@ -8,18 +8,44 @@ description: AEM Content and Commerce Release Notes 2021
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
-|GitHub| System Requirements|
+**CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector [GitHub](https://github.com/adobe/commerce-cif-connector) is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
+
+|Component| System Requirements|
 |:-------|:-----:|
-|CIF Connector |[System Requirements](https://github.com/adobe/commerce-cif-connector/blob/master/VERSIONS.md)|
+|CIF add-on |Minimum: AEM 6.5, Magento 2.3.1 GraphQL schemas|
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
-## Release Date: March, 2021
+## Release Date: April, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | v2021.04.22|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip)|
+|CIF Core Components |1.10.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases)|
+|CIF Venia Reference Site| 2021.04.22|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases)|
+
+### What's new {#what-is-new-april}
+
+* **CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector [GitHub](https://github.com/adobe/commerce-cif-connector) is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
+
+* Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
+
+* AEM extension for PWA Studio incl. example integration
+
+* New CIF navigation core component that extends WCM navigation core component
+
+* Visual indicator for staged catalog data in AEM storefront
+
+### Bug fixes {#bug-fixes-april}
+
+* The root category field was not displayed under the commerce tab in the page properties of category pages
+
+## Release Date: March, 2021 {#what-is-new-march}
 
 |GitHub| Version| Detailed Release Notes|
 |:-------|:-----:|---------------------:|
 |CIF Connector | 1.9.0|[Release Notes](https://github.com/adobe/commerce-cif-connector/releases)|
-|CIF Core Components |1.10.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
+|CIF Core Components |1.9.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2021.03.25|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
 ### What's new
@@ -34,7 +60,6 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Multiple bug fixes.
 
-
 ## Release Date: February, 2021
 
 |GitHub| Version| Detailed Release Notes|
@@ -43,18 +68,17 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |1.8.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2021.02.24|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new
+### What's new {#what-is-new-february}
 
 * Product Experience Management: Enrich product catalog pages individually with Experience Fragments.
 
 * Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
 
-### What's improved
+### What's improved  {#what-is-new-february}
 
 * Enhanced client-side data layer with product image url and cateogry information
 
 * Multiple bug fixes.
-
 
 ## Release Date: January, 2021
 
@@ -64,11 +88,11 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |1.7.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2021.02.02|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new
+### What's new {#what-is-new-january}
 
 * Product Experience Management: New 'Commerce' property tab for Assets and Experience Fragments. This tab enables you to link Assets and Experience Fragments to products & categories. The tab also shows real-time data for linked commerce objects and a link to show details in the product console.
 
-### What's improved
+### What's improved  {#what-is-improved-january}
 
 * Send user data after authentication to Adobe Client Data Layer.
 

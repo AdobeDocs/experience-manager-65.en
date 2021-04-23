@@ -13,20 +13,19 @@ description: AEM Content and Commerce Release Notes 2021
 |CIF Core Components |1.6.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2020.12.01|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new
+### What's new {#what-is-new-november}
 
 * Template inheritance added to specific category page. This feature improves business user efficiency because it makes it possible for all sub-categories to inherit the template that was created for a specific top category.
 
 * Venia reference storefront updated to use Experience Fragment for the footer. Business users have the ability to edit  the page footer using AEM authoring tools.
 
-### What's improved
+### What's improved {#what-is-improved-november}
 
 * Checkout component improved to provide shoppers with the ability to enter destination country to allow billing/shipping addresses outside the United States.
 
 * Navigation component extended to hydrate Adobe Client Data Layer.
 
 * Multiple bug fixes.
-
 
 ## Release Date: October, 2020
 
@@ -36,7 +35,7 @@ description: AEM Content and Commerce Release Notes 2021
 |CIF Core Components |1.5.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2020.10.27|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new
+### What's new {#what-is-new-october}
 
 * New Category carousel component added to enable business users to drag and drop this component on AEM content pages to enrich content pages with commerce data.
 
@@ -46,7 +45,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Commerce teaser component bug fixed.
 
-
 ## Release Date: September, 2020
 
 |GitHub| Version| Detailed Release Notes|
@@ -55,7 +53,7 @@ description: AEM Content and Commerce Release Notes 2021
 |CIF Core Components |1.4.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2020.10.2|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new
+### What's new {#what-is-new-september}
 
 * Supports queries for Magento 2.4.0 Schema.
 
@@ -73,7 +71,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Multiple bug fixes.
 
-
 ## Release Date: August, 2020
 
 |GitHub| Version| Detailed Release Notes|
@@ -82,7 +79,7 @@ description: AEM Content and Commerce Release Notes 2021
 |CIF Core Components |1.3.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2020.9.2|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new
+### What's new {#what-is-new-august}
 
 * Breadcrumb component added to support content and commerce pages.
 
@@ -98,7 +95,6 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Multiple bug fixes.
 
-
 ## Release Date: July, 2020
 
 |GitHub| Version| Detailed Release Notes|
@@ -107,7 +103,7 @@ description: AEM Content and Commerce Release Notes 2021
 |CIF Core Components |1.2.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2020.8.14|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new
+### What's new {#what-is-new-july}
 
 * CIF Venia Reference Site was extracted from the CIF Archetype repo and is now a standalone GitHub repository.
 
@@ -117,14 +113,13 @@ description: AEM Content and Commerce Release Notes 2021
 
 * CIF Cloud Configuration UI supports publish/unpublish actions.
 
-### What's improved
+### What's improved {#what-is-improved-july}
 
 * Sign-in component moved to user drop-down for easy access.
 
 * Simplified the aem-core-cif-react-components package.
 
 * Multiple bug fixes.
-
 
 ## Release Date: June, 2020
 
@@ -134,7 +129,7 @@ description: AEM Content and Commerce Release Notes 2021
 |CIF Core Components |1.1.1|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Archetype |0.11.0|[Release Notes](https://github.com/adobe/aem-cif-project-archetype/releases)|
 
-### What's new
+### What's new {#what-is-new-june}
 
 This is the 1st version of CIF Core Components that is supported on Adobe Experience Manager.
 
@@ -144,7 +139,7 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Added service user mapping as part of security requirement to ensure access to /conf via service users and not by directly manipulating ACLs. CIF Core Components now must use a service user to access configurations.
 
-### What's improved
+### What's improved {#what-is-improved-june}
 
 * Product List page and Search Result page display total number of items. Number of items is updated when shopper applied filters.
 
@@ -154,7 +149,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes.
 
-
 ## Release Date: May, 2020
 
 |GitHub| Version| Detailed Release Notes|
@@ -163,7 +157,7 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 |CIF Core Components |1.0.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Archetype |0.11.0|[Release Notes](https://github.com/adobe/aem-cif-project-archetype/releases)|
 
-### What's new
+### What's new {#what-is-new-may}
 
 * Supports queries for Magento 2.3.5 Schema.
 
@@ -179,7 +173,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes applied.
 
-
 ## Release Date: April, 2020
 
 |GitHub| Version| Detailed Release Notes|
@@ -188,11 +181,11 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 |CIF Core Components |0.10.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Archetype |0.10.0|[Release Notes](https://github.com/adobe/aem-cif-project-archetype/releases)|
 
-### What's new
+### What's new {#what-is-new-april}
 
 * Configuration settings for CIF Connector unified and simplified. For more details checkout [Getting Started](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) or [New AEM CIF Project Setup](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
 
-### What's improved
+### What's improved {#what-is-improved-april}
 
 * Shopping cart and checkout flow extended to support registered shoppers.
 
@@ -204,7 +197,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes applied.
 
-
 ## Release Date: February, 2020
 
 |GitHub| Version| Detailed Release Notes|
@@ -213,7 +205,7 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 |CIF Core Components |0.9.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Archetype |0.9.0|[Release Notes](https://github.com/adobe/aem-cif-project-archetype/releases)|
 
-### What's new
+### What's new {#what-is-new-february}
 
 * Supports queries for Magento 2.3.4 Schema.
 
@@ -221,7 +213,7 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Pagination in Catogory List component to support large catalog sets.
 
-### What's improved
+### What's improved {#what-is-improved-february}
 
 * Shopping cart enhanced to display discounts.
 
@@ -231,7 +223,6 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Multiple bug fixes applied.
 
-
 ## Release Date: January, 2020
 
 |GitHub| Version| Detailed Release Notes|
@@ -240,7 +231,7 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 |CIF Core Components |0.8.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Archetype |0.7.0|[Release Notes](https://github.com/adobe/aem-cif-project-archetype/releases)|
 
-### What's new
+### What's new {#what-is-new-january}
 
 * Experience Fragment (XF) component added to enable customers to create XF in their commerce project.
 
@@ -250,7 +241,7 @@ This is the 1st version of CIF Core Components that is supported on Adobe Experi
 
 * Generic related product component available.
 
-### What's improved
+### What's improved {#what-is-improved-january}
 
 * Support to display CTA button on product teaser.
 
