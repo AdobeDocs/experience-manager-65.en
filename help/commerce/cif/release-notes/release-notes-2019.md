@@ -128,7 +128,7 @@ description: AEM Content and Commerce Release Notes 2021
 
 * Support for Magento 2.3.2 and bug fixes related to product properties display in the product console.
 
-## Release Date: June, 2019}
+## Release Date: June, 2019
 
 |GitHub| Version| Detailed Release Notes|
 |:-------|:-----:|---------------------:|
