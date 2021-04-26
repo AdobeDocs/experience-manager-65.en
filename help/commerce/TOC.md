@@ -26,7 +26,7 @@ user-guide-description: Understand how to use and administer Experience Manager 
     + [Customizing CIF Components](cif/customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](cif/customizing/use-cif-pickers.md)
 + [Migration](cif/migration.md)
-+ [Release Notes] {#release-notes}
++ Release Notes {#release-notes}
   + [2021](cif/release-notes/release-notes-2021.md)
   + [2020](cif/release-notes/release-notes-2020.md)
   + [2019](cif/release-notes/release-notes-2019.md)
