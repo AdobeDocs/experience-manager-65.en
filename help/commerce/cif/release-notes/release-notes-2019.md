@@ -135,7 +135,7 @@ description: AEM Content and Commerce Release Notes 2021
 |CIF Connector | 0.2.0|[Release Notes](https://github.com/adobe/commerce-cif-connector/releases)|
 |CIF Core Components |0.1.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 
-### What's new {#what-is-new-june
+### What's new {#what-is-new-june}
 
 * AEM B2C storefront with mobile-first Venia CSS styling, landing page, dynamic catalog navigation via product and category pages, product search page, and shopping cart capabilities to kickstart and accelerate commerce projects.
 
