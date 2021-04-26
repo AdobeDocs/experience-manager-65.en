@@ -11,7 +11,7 @@ To get started with AEM Content and Commerce, you need to install the AEM Conten
 
 ## Minimum software requirement
 
-AEM 6.5 Service Pack 7 or later is required.
+[AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 or later is required.
 
 ## Onboarding {#onboarding}
 
@@ -24,6 +24,8 @@ The onboarding for AEM Content and Commerce is a two-step process:
 ### Install the AEM Content and Comemerce add-on for AEM 6.5
 
 Download and install the AEM Commerce Add-On for AEM 6.5 from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
+
+Start and install the requiered AEM 6.5 Service Pack. We recommend to install the last available service pack.
 
     >[!NOTE]
     >

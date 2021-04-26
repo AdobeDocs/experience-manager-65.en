@@ -25,17 +25,17 @@ A local development environment is recommended to work with CIF projects.
 >
 >The following instructions help you setting up a local AEM development environment for AEM Commerce using CIF with focus for AEM 6.5). If you are using AEM as a Cloud Service, please see the [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html) documentation.
 
-The AEM Commerce Add-On for AEM 6.5 aka. CIF Add-On is available for local development as well and provided as an AEM package. It can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) as a feature pack. The zip file available on the Software Distribution portal includes two package files, one for AEM author and one for AEM publish instances.
+The AEM Commerce Add-On for AEM 6.5 aka. CIF Add-On is available for local development as well and provided as an AEM package. It can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) as a feature pack.
 
 ### Required software
 
 The following should be installed locally:
 
 - Local AEM 6.5
-- AEM 6.5 Service Pack 7 or later
+- [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 or later
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 or newer)
-- [Node.js v10+](https://nodejs.org/en/)
+- [Node LTS](https://nodejs.org/en/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
@@ -51,9 +51,9 @@ The CIF add-on can be downloaded from the [Software Distribution portal](https:/
 
 For local CIF project development using the AEM and the CIF add-on following steps:
 
-1. Get the AEM 6.5 release, we recommend also to install the last available service pack
+1. Get the AEM 6.5 release and install the AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 is requiered, however we recommend to install the last available service pack.
 
-Unpack the AEM .jar to create the `crx-quickstart` folder, run:
+1. Unpack the AEM .jar to create the `crx-quickstart` folder, run:
 
     ```bash
     java -jar <jar name> -unpack
@@ -61,7 +61,7 @@ Unpack the AEM .jar to create the `crx-quickstart` folder, run:
 
 1. Create a `crx-quickstart/install` folder
 
-1. Copy the CIF add-on all package, downloaded from Software Distribution portal, into the `crx-quickstart/install` folder. The AEM 6.5 Service Pack package can also be placed in this folder.
+1. Copy the CIF add-on all package, downloaded from Software Distribution portal, into the `crx-quickstart/install` folder.
 
 >[!TIP]
 >
