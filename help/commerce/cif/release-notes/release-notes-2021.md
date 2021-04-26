@@ -74,7 +74,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
 
-### What's improved  {#what-is-new-february}
+### What's improved  {#what-is-improved-february}
 
 * Enhanced client-side data layer with product image url and cateogry information
 
