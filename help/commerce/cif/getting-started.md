@@ -21,17 +21,17 @@ The onboarding for AEM Content and Commerce is a two-step process:
 
 2. Connect AEM with your commerce solution
 
-### Install the AEM Content and Comemerce add-on for AEM 6.5
+### Install the AEM Content and Commerce add-on for AEM 6.5 {#install-add-on}
 
 Download and install the AEM Commerce Add-On for AEM 6.5 from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
 
 Start and install the requiered AEM 6.5 Service Pack. We recommend to install the last available service pack.
 
-    >[!NOTE]
-    >
-    >This will be done by the CSE for AEM Managed Service customers.
+>[!NOTE]
+>
+>This will be done by the CSE for AEM Managed Service customers.
 
-### Connect AEM to your commerce system
+### Connect AEM to your commerce system {#connect}
 
  AEM can be connected to any commerce system that has an accessible GraphQL endpoint for AEM. These endpoints are usually publicly available, or can be connected via private VPN or local connections depending on the individual project setup.
 
