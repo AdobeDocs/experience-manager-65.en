@@ -55,7 +55,7 @@ The following pages provide links to some of additional, important information a
 
 * [Communities](/help/communities/author-communities.md) - Components provide interactive features for a website, such as forums and comments. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) - The eCommerce functionality within AEM also includes a range of components. Actual use can depend on the commerce engine being used.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - The eCommerce functionality within AEM also includes a range of components. Actual use can depend on the commerce engine being used.
 
 ### Configuring Components {#configuring-components}
 

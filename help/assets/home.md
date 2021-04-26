@@ -33,6 +33,7 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 | [Deploying User Guide](/help/sites-deploying/home.md) | This guide shows you the basics of Experience Manager.  |
 | [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your Experience Manager deployment. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an Experience Manager project successfully. |
+| [Commerce User Guide](/help/commerce/home.md)|Learn about Commerce Integration Framework on AEM.|
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
 | [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | This guide shows you how to share user-generated content with [!DNL Livefyre]. |
 

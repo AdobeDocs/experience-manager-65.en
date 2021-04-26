@@ -1,14 +1,9 @@
 ---
 title: Concepts
-seo-title: Concepts
 description: General Concepts of eCommerce with AEM.
-seo-description: General Concepts of eCommerce with AEM.
-uuid: 9a4cc154-d82b-43e0-a66c-3edf059e8b75
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: 6d595c46-b04e-400b-a014-fbecd2010f5f
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 ---
@@ -33,7 +28,7 @@ This means that:
 >The eCommerce framework can be used with:
 >
 >* [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
->* [SAP Commerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
+>* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 >
 
@@ -104,11 +99,11 @@ Various search options are also available.
 
 The integration framework provides the API, a range of components to illustrate functionality and several extensions to provide examples of connection methods:
 
-![chlimage_1-4](assets/chlimage_1-4.png)
+![chlimage_1-4](/help/sites-administering/assets/chlimage_1-4.png)
 
 The framework gives you access to functionality such as:
 
-![chlimage_1-5](assets/chlimage_1-5.png)
+![chlimage_1-5](/help/sites-administering/assets/chlimage_1-5.png)
 
 ### Implementations {#implementations}
 
@@ -127,7 +122,7 @@ AEM eCommerce is implemented with an eCommerce engine:
 >
 >* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout in conjunction with the existing data display and marketing campaigns. In this case the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).
 >
->  The standard AEM installation contains the basics of the [generic eCommerce implemention](/help/sites-administering/generic.md).
+>  The standard AEM installation contains the basics of the [generic eCommerce implemention](/help/commerce/cif-classic/administering/generic.md).
 
 ### Commerce Providers {#commerce-providers}
 
@@ -189,7 +184,7 @@ The integrated system caters for the following roles to maintain the data:
 
 Though the actual location can depend on your implementation; for example, generic or with an eCommerce engine:
 
-![chlimage_1-6](assets/chlimage_1-6.png)
+![chlimage_1-6](/help/sites-administering/assets/chlimage_1-6.png)
 
 ## Products {#products}
 
@@ -228,13 +223,13 @@ In either case, when the product data has been entered/imported into AEM it can 
 * the SKU code
 * when last modified
 
-![chlimage_1-7](assets/chlimage_1-7.png)
+![chlimage_1-7](/help/sites-administering/assets/chlimage_1-7.png)
 
 ### Product Variants {#product-variants}
 
 For appropriate products information about variants can also be held. For example, for items of clothing the different colors available are held as variants:
 
-![ecommerceproductvariants](assets/ecommerceproductvariants.png)
+![ecommerceproductvariants](/help/sites-administering/assets/ecommerceproductvariants.png)
 
 ### Product Attributes {#product-attributes}
 
@@ -317,7 +312,7 @@ Depending on your implementation, you can import the product data required for y
 
 Further changes to the product data will be inevitable:
 
-* for the generic implementation these can be managed with the [product editor](/help/sites-administering/generic.md#editing-product-information)
+* for the generic implementation these can be managed with the [product editor](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
 * when using an [eCommerce engine the changes must be synchronized](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
 #### Data Synchronization with an eCommerce Engine (Ongoing) {#data-synchronization-with-an-ecommerce-engine-ongoing}
@@ -328,7 +323,7 @@ When using an eCommerce engine the product data is maintained there and needs to
 
 This can depend on the type of data:
 
-* A [periodic synchronization is used together with a data feed of changes](/help/sites-developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
+* A [periodic synchronization is used together with a data feed of changes](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
 
   In addition to this, you can select specific updates for an express update.
 
@@ -365,18 +360,13 @@ This scenario involves setting up two author instances:
 
    Imports and post-processes product assets from the PIM, then replicates these back to the master author instance for use.
 
-![Architecture diagram](assets/chlimage_1-8.png)
+![Architecture diagram](/help/sites-administering/assets/chlimage_1-8.png)
 
 #### Only import product data {#only-import-product-data}
 
 For cases when products do not contain assets (images) to be imported, you can import the product data without being affected by asset post-processing.
 
-![Architecture diagram](assets/chlimage_1-9.png)
-
-<!--delete
-#### Import Throttling and Batch Saves {#import-throttling-and-batch-saves}
-
-[Import throttling](/help/sites-deploying/scaling.md#import-throttling) and [batch saves](/help/sites-deploying/scaling.md#batch-saves) are two general [scaling](/help/sites-deploying/scaling.md) mechanisms that can help when importing large volumes of data.-->
+![Architecture diagram](/help/sites-administering/assets/chlimage_1-9.png)
 
 #### Performance Testing {#performance-testing}
 
@@ -444,7 +434,7 @@ For all implementations the following points can be kept in mind:
 * In your technical stack, plan very factorized content access model and services. This is a general best practice, but is even more crucial her, as you can, in optimization phases, add application caches for data that is read very often (and that you do not want to fill the bundle cache with).
 
   For example, attributes management is very frequently a good candidate for caching as it concerns data that is updated through products import.
-* Consider use of [proxy pages](/help/sites-administering/concepts.md#proxy-pages).
+* Consider use of [proxy pages](#proxy-pages).
 
 ### Catalog Section Pages {#catalog-section-pages}
 
@@ -454,7 +444,7 @@ Catalog sections provide you with, for example:
 * links to the individual products in that category
 * links to the other categories
 
-![ecommerce_categoryrunning](assets/ecommerce_categoryrunning.png)
+![ecommerce_categoryrunning](/help/sites-administering/assets/ecommerce_categoryrunning.png)
 
 ### Product Pages {#product-pages}
 
@@ -462,7 +452,7 @@ Product pages provide comprehensive information about individual products. Dynam
 
 Product pages are AEM pages that use the **Product** component; for example, within the **Commerce Product** template:
 
-![ecommerce_nairobirunnersgreen](assets/ecommerce_nairobirunnersgreen.png)
+![ecommerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 
 The Product component provides:
 
@@ -589,7 +579,7 @@ A promotion can be held either in an experience or directly in the campaign:
 
 When a shopper registers, the account details need to be synchronized between AEM and the eCommerce engine. Sensitive data is held independently, but profiles are shared:
 
-![chlimage_1-10](assets/chlimage_1-10.png)
+![chlimage_1-10](/help/sites-administering/assets/chlimage_1-10.png)
 
 The exact mechanism can depend on the scenario:
 
@@ -618,7 +608,7 @@ When using an eCommerce engine, AEM only stores the account ID and password (opt
 
 Often sign-up is required for the shopper to have access to the shopping cart. This requires registration (Create Account) so that a customer-specific account can be created.
 
-![chlimage_1-11](assets/chlimage_1-11.png)
+![chlimage_1-11](/help/sites-administering/assets/chlimage_1-11.png)
 
 >[!NOTE]
 >
@@ -628,7 +618,7 @@ Often sign-up is required for the shopper to have access to the shopping cart. T
 
 After sign-up the shopper can login with their account so that their actions can be tracked and their orders fulfilled.
 
-![chlimage_1-12](assets/chlimage_1-12.png)
+![chlimage_1-12](/help/sites-administering/assets/chlimage_1-12.png)
 
 ### Single Sign-On {#single-sign-on}
 
@@ -640,7 +630,7 @@ Transaction data from the eCommerce engine is combined with personal information
 
 There is a page which allows you to easily manage your account information. You can access it by clicking **My Account** at the top of a geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
 
-![chlimage_1-13](assets/chlimage_1-13.png)
+![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
 ### Address Book {#address-book}
 
@@ -656,7 +646,7 @@ You can choose which address you want as default.
 
 The address book component is reachable from the **My Account** page by clicking **Address Book** or by navigating to `/content/geometrixx-outdoors/en/user/account/address-book.html`.
 
-![chlimage_1-14](assets/chlimage_1-14.png)
+![chlimage_1-14](/help/sites-administering/assets/chlimage_1-14.png)
 
 You can click **Add new address...** to add a new address in your address book. It opens a form that you can fill out and then click **Add address**.
 
@@ -666,7 +656,7 @@ You can click **Add new address...** to add a new address in your address book. 
 
 The Address Book is used when you checkout your cart:
 
-![chlimage_1-15](assets/chlimage_1-15.png)
+![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
 Addresses are persisted below `user_home/profile/addresses`.
 For example, for Alison Parker, it would be under /home/users/geometrixx/aparker@geometrixx.info/profile/addresses
@@ -714,7 +704,7 @@ The shopping cart provides:
     * update the number/quantity of the individual items
     * remove individual items
 
-![ecommerce_shoppingcart](assets/ecommerce_shoppingcart.png)
+![ecommerce_shoppingcart](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 
 The shopping cart is saved according to the engine being used:
 
@@ -826,7 +816,7 @@ When the order is held within AEM the Order console shows the following for each
 * when the order was placed
 * the status
 
-![chlimage_1-16](assets/chlimage_1-16.png)
+![chlimage_1-16](/help/sites-administering/assets/chlimage_1-16.png)
 
 ### Order Tracking {#order-tracking}
 
@@ -840,7 +830,7 @@ After receiving the order delivery, shoppers may also want to view the history o
 
 Order fulfillment and tracking is usually managed by the eCommerce engine. Information can be displayed by AEM using the Order History component, which shows all relevant details, including the vouchers and promotions applied. For example:
 
-![chlimage_1-17](assets/chlimage_1-17.png)
+![chlimage_1-17](/help/sites-administering/assets/chlimage_1-17.png)
 
 ## Checkout {#checkout}
 
@@ -860,7 +850,7 @@ The order is confirmed on screen and can be tracked with the [order tracking](#o
 
 ## Search {#search-features}
 
-![chlimage_1-18](assets/chlimage_1-18.png)
+![chlimage_1-18](/help/sites-administering/assets/chlimage_1-18.png)
 
 Since AEM uses standard pages for products, you can use the standard search component to create a search page.
 

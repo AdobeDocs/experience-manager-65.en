@@ -3,15 +3,9 @@ title: SAP Commerce Cloud
 seo-title: SAP Commerce Cloud
 description: Learn how to deploy eCommerce with SAP Commerce Cloud.
 seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
-uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
-pagetitle: Deploying eCommerce with SAP Commerce Cloud
-feature: Commerce Integration Framework
-exl-id: 4ad00127-0850-4bc0-b747-f94a93df82c1
 ---
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
@@ -40,7 +34,7 @@ This is available under the English (US) branch ( `/content/geometrixx-outdoors/
 
 ### Technical Requirements - hybris Server {#technical-requirements-hybris-server}
 
-The hybris extension of the eCommerce Integration Framework has been updated to support Hybris 5 (as default), while maintaining backward compatibility with [Hybris 4](/help/sites-developing/sap-commerce-cloud.md#developing-for-hybris).
+The hybris extension of the eCommerce Integration Framework has been updated to support Hybris 5 (as default), while maintaining backward compatibility with [Hybris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
@@ -96,7 +90,7 @@ To install a fully-fledged configuration (using the demonstration catalog, Geome
 
 >[!NOTE]
 >
->For developers [API documentation](/help/sites-developing/ecommerce.md#api-documentation) is also available for download.
+>For developers [API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available for download.
 
 ### Download and Build your hybris Server {#download-and-build-your-hybris-server}
 
@@ -141,7 +135,7 @@ The steps in this procedure will download and build the hybris server. It will a
    ```
 
 
-   [Get File](assets/setup.groovy)
+   [Get File](/help/sites-deploying/assets/setup.groovy)
 
    >[!NOTE]
    >
@@ -149,7 +143,7 @@ The steps in this procedure will download and build the hybris server. It will a
 
    5.6.0 and later
 
-   [Get File](assets/setup-1.groovy)
+   [Get File](/help/sites-deploying/assets/setup-1.groovy)
 
 1. From the command line, execute the following to:
 
@@ -202,7 +196,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 1. From the sidebar navigation, expland **System** and **Tools**. Then select **Import** to open the **Wizard: CSV Import** window.
 1. In the **Configuration** tab, **Upload** the following **Import file**:
 
-   [Get File](assets/geometrixx-outdoors-export.csv)
+   [Get File](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
 1. Set the **Locale Setting** to:
 
@@ -211,7 +205,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 1. Open the **Resources** tab.
 1. **Upload** the following **Media-Zip**:
 
-   [Get File](assets/geometrixx-outdoors-images.zip)
+   [Get File](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
 1. Click **Start** to import the specified files. The **Result** tab will show any log entries.
 
@@ -221,11 +215,11 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
 1. **Upload** the following **Import file**:
 
-   [Get File](assets/base-store.csv)
+   [Get File](/help/sites-deploying/assets/base-store.csv)
 
    For hybris 5.7, please use the following:
 
-   [Get File](assets/base-store-5_7.csv)
+   [Get File](/help/sites-deploying/assets/base-store-5_7.csv)
 
 1. Set the **Locale Setting** to:
 

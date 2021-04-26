@@ -3,12 +3,9 @@ title: Administering generic eCommerce
 seo-title: Administering generic eCommerce
 description: The AEM generic solution provides methods of managing the commerce information held within the repository.
 seo-description: The AEM generic solution provides methods of managing the commerce information held within the repository.
-uuid: 8d2b02a6-0658-4957-a366-29a59350f3e8
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: 9167cbe2-2efb-422d-b58b-0c24b9476fe6
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 ---
@@ -16,13 +13,13 @@ exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 
 The AEM generic solution provides methods of managing the commerce information held within the repository (as opposed to using an external ecommerce engine). This includes:
 
-* [Products](/help/sites-administering/concepts.md#products)
-* [Product Variants](/help/sites-administering/concepts.md#product-variants)
-* [Catalog(s)](/help/sites-administering/concepts.md#catalogs)
-* [Promotions](/help/sites-administering/concepts.md#promotions)
-* [Vouchers](/help/sites-administering/concepts.md#vouchers)
-* [Orders](/help/sites-administering/concepts.md#shopping-cart-and-orders)
-* [Proxy Pages](/help/sites-administering/concepts.md#proxy-pages)
+* [Products](/help/commerce/cif-classic/administering/concepts.md#products)
+* [Product Variants](/help/commerce/cif-classic/administering/concepts.md#product-variants)
+* [Catalog(s)](/help/commerce/cif-classic/administering/concepts.md#catalogs)
+* [Promotions](/help/commerce/cif-classic/administering/concepts.md#promotions)
+* [Vouchers](/help/commerce/cif-classic/administering/concepts.md#vouchers)
+* [Orders](/help/commerce/cif-classic/administering/concepts.md#shopping-cart-and-orders)
+* [Proxy Pages](/help/commerce/cif-classic/administering/concepts.md#proxy-pages)
 
 >[!NOTE]
 >
@@ -63,13 +60,13 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console navigate to the required location.
 1. Use the **Import Products** icon to open the wizard.
 
-   ![chlimage_1-1](do-not-localize/chlimage_1-13.png)
+   ![chlimage_1-1](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. Specify:
 
     * **Importer**
 
-      The importer for the specific [commerce provider](/help/sites-administering/concepts.md#commerce-providers), by default `Geometrixx`.
+      The importer for the specific [commerce provider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), by default `Geometrixx`.
 
     * **Source**
 
@@ -102,7 +99,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Tools** console open the **Commerce** folder.
 1. Double-click to open the **Product Importer**:
 
-   ![chlimage_1-22](assets/chlimage_1-22.jpeg)
+   ![chlimage_1-22](/help/sites-administering/assets/chlimage_1-22.jpeg)
 
 1. Specify:
 
@@ -114,7 +111,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
     * **Commerce Provider**
 
-      The importer for your [commerce provider](/help/sites-administering/concepts.md#commerce-providers); by default Geometrixx.
+      The importer for your [commerce provider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); by default Geometrixx.
 
     * **Source File**
 
@@ -140,9 +137,9 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
     * **Create Product**
     * **Create Product Variation**
 
-   ![chlimage_1-14](do-not-localize/chlimage_1-14.png)
+   ![chlimage_1-14](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. The wizard will open. Use the **Basic** and **Product Tabs** to enter the [product attributes](/help/sites-administering/concepts.md#product-attributes) for the new product or product variant.
+1. The wizard will open. Use the **Basic** and **Product Tabs** to enter the [product attributes](/help/commerce/cif-classic/administering/concepts.md#product-attributes) for the new product or product variant.
 
    >[!NOTE]
    >
@@ -164,7 +161,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 >
 >`/etc/commerce/products/...`
 >
->This means that, by default, they are blocked by the [dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), so configure as required.
+>This means that, by default, they are blocked by the [dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html), so configure as required.
 
 #### Editing Product Information - Touch-optimized UI {#editing-product-information-touch-optimized-ui}
 
@@ -176,9 +173,9 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
    Select the **View Product Data** icon:
 
-   ![chlimage_1-3](do-not-localize/chlimage_1-15.png)
+   ![chlimage_1-3](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
-1. The [product attributes](/help/sites-administering/concepts.md#product-attributes) will be shown. Use **Edit** and **Done** to make any changes.
+1. The [product attributes](/help/commerce/cif-classic/administering/concepts.md#product-attributes) will be shown. Use **Edit** and **Done** to make any changes.
 
 ### Showing Product References {#showing-product-references}
 
@@ -187,11 +184,11 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console (via **Commerce**) navigate to your product information.
 1. Open the secondary rail for References with the icon:
 
-   ![chlimage_1-4](do-not-localize/chlimage_1-16.png)
+   ![chlimage_1-4](/help/sites-administering/do-not-localize/chlimage_1-16.png)
 
 1. Select your required product - the secondary rail will update to show the reference types available:
 
-   ![chlimage_1-88](assets/chlimage_1-88.png)
+   ![chlimage_1-88](/help/sites-administering/assets/chlimage_1-88.png)
 
 1. Click/tap on the reference type (e.g. Product Pages) to expand the list.
 1. Select a specific reference to show the options:
@@ -199,18 +196,18 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
     * Navigate to Product Page
     * Edit Product Page
 
-   ![chlimage_1-89](assets/chlimage_1-89.png)
+   ![chlimage_1-89](/help/sites-administering/assets/chlimage_1-89.png)
 
 ### Search for Products {#search-for-products}
 
 1. Navigate to the **Products** console, via **Commerce**.
 1. Open the secondary rail for Search with the icon:
 
-   ![](do-not-localize/chlimage_1-17.png)
+   ![](/help/sites-administering/do-not-localize/chlimage_1-17.png)
 
 1. Several facets are available for you to search for products. You can use only one or several facets for a search. The products found will appear:
 
-   ![chlimage_1-90](assets/chlimage_1-90.png)
+   ![chlimage_1-90](/help/sites-administering/assets/chlimage_1-90.png)
 
 1. Clicking/tapping a product opens it. You can also publish it or view the product data.
 
@@ -248,7 +245,7 @@ You can add multiple assets in the product component, then specify the asset tha
 1. Tap/click Edit icon.
 1. Scroll to **Add**.
 
-   ![chlimage_1-91](assets/chlimage_1-91.png)
+   ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Tap/click **Add**. A new asset placeholder appears.
 1. Tapping/clicking **Change **opens a dialog which allows you to choose an asset.
@@ -256,7 +253,7 @@ You can add multiple assets in the product component, then specify the asset tha
 
    >[!NOTE]
    >
-   >The assets you can select are from [Assets](https://helpx.adobe.com/experience-manager/aem-previous-versions.html#assets).
+   >The assets you can select are from [Assets](/help/assets/assets.md).
 
 1. Tap/click Done icon.
 
@@ -335,7 +332,7 @@ The mechanism to select the image to be displayed is as follows:
 
    Select the **Publish** or **Unpublish** icon as required:
 
-   ![chlimage_1-6](do-not-localize/chlimage_1-18.png) ![chlimage_1-7](do-not-localize/chlimage_1-19.png)
+   ![chlimage_1-6](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![chlimage_1-7](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
    The product information will be published or unpublished as appropriate.
 
@@ -365,7 +362,7 @@ For the `PRODUCT_*` events, the path points to the base product in `/etc/commerc
 
 You can look at them in the Web Console in OSGI events ( `/system/console/events`), for example:
 
-![](do-not-localize/chlimage_1-20.png)
+![](/help/sites-administering/do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
@@ -387,35 +384,35 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 
 1. Click the fullscreen icon.
 
-   ![chlimage_1-92](assets/chlimage_1-92.png)
+   ![chlimage_1-92](/help/sites-administering/assets/chlimage_1-92.png)
 
 1. Click the Launch Map icon.
 
-   ![chlimage_1-93](assets/chlimage_1-93.png)
+   ![chlimage_1-93](/help/sites-administering/assets/chlimage_1-93.png)
 
 1. Click one of the shape icons.
 
-   ![chlimage_1-21](do-not-localize/chlimage_1-21.png)
+   ![chlimage_1-21](/help/sites-administering/do-not-localize/chlimage_1-21.png)
 
 1. Modify and move the shape as required.
 1. Click the shape.
-1. Clicking the browse icon opens the [Asset Picker](../assets/search-assets.md#assetpicker).
+1. Clicking the browse icon opens the [Asset Picker](/help/assets/search-assets.md#assetpicker).
 
    >[!NOTE]
    >
    >Alternatively, you can type directly the product path which has to be at the product level, not the variant level.
 
-   ![chlimage_1-94](assets/chlimage_1-94.png)
+   ![chlimage_1-94](/help/sites-administering/assets/chlimage_1-94.png)
 
 1. Click the confirm icon twice then click exit fullscreen.
 1. Click somewhere on the page next to the component. The page should refresh and you should see the following symbol on your image:
 
-   ![](do-not-localize/chlimage_1-22.png)
+   ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. Switch to [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) mode.
 1. Click the + hotspot. A dialog opens where you can choose the size and quantity of the product you entered in **Path**.
 
-   ![chlimage_1-95](assets/chlimage_1-95.png)
+   ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
 
 1. Enter a size and a quantity.
 1. Click the Add to cart button. The dialog closes.
@@ -427,15 +424,15 @@ You can configure how the dialog looks like when you click the hotspot:
 
 1. Click the component and click the configure icon.
 
-   ![chlimage_1-96](assets/chlimage_1-96.png)
+   ![chlimage_1-96](/help/sites-administering/assets/chlimage_1-96.png)
 
 1. Scroll down. There is a **ADD TO CART** tab.
 
-   ![chlimage_1-97](assets/chlimage_1-97.png)
+   ![chlimage_1-97](/help/sites-administering/assets/chlimage_1-97.png)
 
 1. Click **ADD TO CART**. There are 3 configuration options that you can use.
 
-   ![chlimage_1-98](assets/chlimage_1-98.png)
+   ![chlimage_1-98](/help/sites-administering/assets/chlimage_1-98.png)
 
 1. Click the Done icon.
 
@@ -455,22 +452,22 @@ To generate a Catalog:
 1. Navigate to the location where you want to create the new page.
 1. To open the option list, use the **Create** icon:
 
-   ![](do-not-localize/chlimage_1-23.png)
+   ![create-icon](/help/sites-administering/do-not-localize/chlimage_1-23.png)
 
 1. From the list select **Create Catalog**, the Create Catalog wizard will open.
 
-   ![chlimage_1-99](assets/chlimage_1-99.png)
+   ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigate to the required Catalog Blueprint.
 1. Tap/click **Select** button and tap/click the required Catalog Blueprint.
 1. Tap/click **Next**.
 
-   ![chlimage_1-100](assets/chlimage_1-100.png)
+   ![chlimage_1-100](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Type a **Title** and a **Name**.
 1. Tap/click the **Create** button. The catalog is created and a dialog opens.
 
-   ![chlimage_1-101](assets/chlimage_1-101.png)
+   ![chlimage_1-101](/help/sites-administering/assets/chlimage_1-101.png)
 
 1. Tapping/clicking **Done** button brings you back to the Sites console where you'll be able to see you catalog.
 
@@ -521,7 +518,7 @@ To rollout a catalog:
 
    Select the **Rollout Changes** icon:
 
-   ![](do-not-localize/chlimage_1-24.png)
+   ![rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
 1. In the wizard, set the rollout as needed and then tap/click **Rollout Changes**.
 1. A dialog opens. Tap/click **Done** when the process is finished.
@@ -546,11 +543,11 @@ To rollout a catalog:
 1. Navigate to the location where you want to import the catalog blueprint.
 1. Tap/click the **Import Blueprints** icon.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. In the wizard, select the Source as required and tap/click **Next**.
 
-   ![chlimage_1-340](assets/chlimage_1-102.png)
+   ![chlimage_1-340](/help/sites-administering/assets/chlimage_1-102.png)
 
 1. Tap/click **Done** once the import is finished.
 
@@ -659,9 +656,9 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 1. Using the **Orders** console navigate to the required location.
 1. Use the **Create** icon to select **Create Order**.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/sites-administering/concepts.md#order-information).
+1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
 1. Select **Create** to save the information.
 
@@ -677,6 +674,7 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
    Select the **View Order Data** icon:
 
-   ![](do-not-localize/chlimage_1-15.png)
+   ![](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
-1. The [order information](/help/sites-administering/concepts.md#order-information) will be shown. Use **Edit** and **Done** to make any changes.
+1. The [order information](/help/commerce/cif-classic/administering/concepts.md#order-information) will be shown. Use **Edit** and **Done** to make any changes.
+
