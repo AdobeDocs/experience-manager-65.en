@@ -20,13 +20,11 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
-|CIF add-on | v2021.04.22|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip)|
+|CIF add-on | v021.04.22|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip)|
 |CIF Core Components |1.10.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2021.04.22|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
 ### What's new {#what-is-new-april}
-
-* **CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
 
 * Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
 
