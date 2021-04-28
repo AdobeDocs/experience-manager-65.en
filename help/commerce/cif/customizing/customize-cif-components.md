@@ -54,7 +54,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
 1. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance or add the configurations to the newly created project.
 
-1. At this point you should have a working version of a storefront that is connected to a Magento instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. At this point, you should have a working version of a storefront that is connected to a Magento instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
    You should see that the storefront currently is using the Venia theme. Expanding the Main Menu of the storefront, you should see various categories, indicating that the connection Magento is working.
 
@@ -189,7 +189,7 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
 
    ![Core location IDE](../assets/customize-cif-components/core-location-ide.png)
 
-   `MyProductTeaser.java` is a Java Interface that that extends the CIF [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface.
+   `MyProductTeaser.java` is a Java Interface that extends the CIF [ProductTeaser](https://github.com/adobe/aem-core-cif-components/blob/master/bundles/core/src/main/java/com/adobe/cq/commerce/core/components/models/productteaser/ProductTeaser.java) interface.
 
    Already a new method has been added named `isShowBadge()` to display a badge if the product is considered "New".
 
@@ -255,7 +255,7 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
 
    The `@PostConstruct` annotation ensures that this method is called as soon as the Sling Model is initialized.
 
-   Notice that that the product GraphQL query has already been extended using the `extendProductQueryWith` method to retrieve the additional `created_at` attribute. This attribute is later used as part of the `isShowBadge()` method.
+   Notice that the product GraphQL query has already been extended using the `extendProductQueryWith` method to retrieve the additional `created_at` attribute. This attribute is later used as part of the `isShowBadge()` method.
 
 1. Update the GraphQL query to include the `eco_friendly` attribute in the partial query:
 
@@ -281,7 +281,7 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
 
    Adding to the `extendProductQueryWith` method is a powerful way to ensure additional product attributes are available to the rest of the model. It also minimizes the number of queries executed.
 
-   In the above code the`addCustomSimpleField` is used to retrieve the `eco_friendly` attribute. This illustrates how you can query for any custom attributes that are part of the Magento schema.
+   In the above code, the`addCustomSimpleField` is used to retrieve the `eco_friendly` attribute. This illustrates how you can query for any custom attributes that are part of the Magento schema.
 
    >[!NOTE]
    >
@@ -320,7 +320,7 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
    }
    ```
 
-   In the above method the `productRetriever` is used to fetch the product and the `getAsInteger()` method is used to get the value of the `eco_friendly` attribute. Based on the GraphQL queries we ran earlier we know that the expected value when the `eco_friendly` attribute is set to "**Yes**" is actually an integer of **1**.
+   In the above method, the `productRetriever` is used to fetch the product and the `getAsInteger()` method is used to get the value of the `eco_friendly` attribute. Based on the GraphQL queries we ran earlier we know that the expected value when the `eco_friendly` attribute is set to "**Yes**" is actually an integer of **1**.
 
    Now that the Sling Model has been updated, the Component markup needs to be updated to actually display an indicator of **Eco Friendly** based on the Sling Model.
 
@@ -482,14 +482,14 @@ You just customized your first AEM CIF component! Download the [finished solutio
 
 ## Bonus Challenge {#bonus-challenge}
 
-Review the functionality of the **New** badge that has already be implemented in the Product Teaser. Try to add an additional checkbox for authors to control when the **Eco Friendly** badge should be displayed. You will need to update the component dialog at `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Review the functionality of the **New** badge that has already been implemented in the Product Teaser. Try to add an additional checkbox for authors to control when the **Eco Friendly** badge should be displayed. You will need to update the component dialog at `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![New Badge Implementation challenge](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
 ## Additional Resources {#additional-resources}
 
-- [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 - [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components)
 - [Customizing AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
-- [Customizing Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/customizing.html)
-- [Getting Started with AEM Sites](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+- [Customizing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [Getting Started with AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
