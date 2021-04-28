@@ -1,9 +1,9 @@
 ---
-title: AEM Commerce
-description: AEM Commerce self-help resources and documentation links
+title: AEM Content and Commerce
+description: AEM Content and Commerce self-help resources and documentation links
 ---
 
-# AEM Commerce {#commerce-guide}
+# AEM Content and Commerce {#commerce-guide}
 
 This page lists the self-help resources regarding AEM Commerce.
 
