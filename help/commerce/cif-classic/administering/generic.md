@@ -636,7 +636,7 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
 >[!NOTE]
 >
->It should be remembered that out-of-the-box AEM does not have actions required for standard functionality related to orders, such as returning merchandise, updating order status, doing fulfilment, generating packing slips. It is primarily intended as a technology preview.
+>It should be remembered that out-of-the-box AEM does not have actions required for standard functionality related to orders, such as returning merchandise, updating order status, doing fulfillment, generating packing slips. It is primarily intended as a technology preview.
 >
 >The generic order management in AEM has been kept basic; the fields available in the wizard are dependent on the scaffold:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
@@ -658,7 +658,7 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfilment** tabs to enter the [information about the new order](/help/commerce/cif-classic/administering/concepts.md#order-information).
+1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfillment** tabs to enter the [information about the new order](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
 1. Select **Create** to save the information.
 

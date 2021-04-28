@@ -9,7 +9,7 @@ description: Shopping Cart and Dispatcher Setup
 
 >[!VIDEO](https://video.tv.adobe.com/v/29656/?quality=12)
 
-You can find more information on this topic from the following resource(s):
+You can find more information on this topic from the following resources:
 
 - [Shopping Cart](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
 - [AEM Dispatcher with Magento Proxy](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)

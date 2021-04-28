@@ -4,7 +4,7 @@ description: AEM Content and Commerce Release Notes 2021
 ---
 # Commerce Integration Framework GitHub Release Overview
 
-## Overview of Sytem Requirements
+## Overview of System Requirements
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
@@ -20,13 +20,13 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
-|CIF add-on | v021.04.22|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip)|
+|CIF add-on | 2021.04.22|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip)|
 |CIF Core Components |1.10.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2021.04.22|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new {#what-is-new-april}
+### What's New {#what-is-new-april}
 
-* Support for category UID - This unlocks 3rd party commerce integrations for systems that use Strings for category ids
+* Support for category UID - This unlocks third party commerce integrations for systems that use Strings for category ids
 
 * AEM extension for PWA Studio incl. example integration
 
@@ -50,9 +50,9 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Support for Magento 2.4.2
 
-### What's improved
+### What's Improved
 
-* Improved re-usability of product detail component for content driven pages
+* Improved reusability of product detail component for content driven pages
 
 * Better caching and less backend calls for PDPs
 
@@ -66,15 +66,15 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |1.8.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2021.02.24|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new {#what-is-new-february}
+### What's New {#what-is-new-february}
 
 * Product Experience Management: Enrich product catalog pages individually with Experience Fragments.
 
-* Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigaet to the associated content.
+* Extended product console properties to show linked Assets and Experience Fragments, including action to quickly navigate to the associated content.
 
-### What's improved  {#what-is-improved-february}
+### What's Improved  {#what-is-improved-february}
 
-* Enhanced client-side data layer with product image url and cateogry information
+* Enhanced client-side data layer with product image url and category information.
 
 * Multiple bug fixes.
 
@@ -86,11 +86,11 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |1.7.0|[Release Notes](https://github.com/adobe/aem-core-cif-components/releases)|
 |CIF Venia Reference Site| 2021.02.02|[Release Notes](https://github.com/adobe/aem-cif-guides-venia/releases)|
 
-### What's new {#what-is-new-january}
+### What's New {#what-is-new-january}
 
 * Product Experience Management: New 'Commerce' property tab for Assets and Experience Fragments. This tab enables you to link Assets and Experience Fragments to products & categories. The tab also shows real-time data for linked commerce objects and a link to show details in the product console.
 
-### What's improved  {#what-is-improved-january}
+### What's Improved  {#what-is-improved-january}
 
 * Send user data after authentication to Adobe Client Data Layer.
 

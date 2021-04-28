@@ -23,11 +23,11 @@ A local development environment is recommended to work with CIF projects.
 
 >[!NOTE]
 >
->The following instructions help you setting up a local AEM development environment for AEM Commerce using CIF with focus for AEM 6.5). If you are using AEM as a Cloud Service, please see the [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/home.html) documentation.
+>The following instructions help you setting up a local AEM development environment for AEM Commerce using CIF with focus for AEM 6.5). If you are using AEM as a Cloud Service, please see the [AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) documentation.
 
 The AEM Commerce Add-On for AEM 6.5 aka. CIF Add-On is available for local development as well and provided as an AEM package. It can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) as a feature pack.
 
-### Required software
+### Required Software
 
 The following should be installed locally:
 
@@ -39,7 +39,7 @@ The following should be installed locally:
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
-### Accessing the CIF add-on
+### Accessing the CIF Add-On
 
 The CIF add-on can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), search for ´AEM Commerce add-on`.
 
@@ -51,7 +51,7 @@ The CIF add-on can be downloaded from the [Software Distribution portal](https:/
 
 For local CIF project development using the AEM and the CIF add-on following steps:
 
-1. Get the AEM 6.5 release and install the AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 is requiered, however we recommend to install the last available service pack.
+1. Get the AEM 6.5 release and install the AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 is required, however we recommend installing the last available service pack.
 
 1. Unpack the AEM .jar to create the `crx-quickstart` folder, run:
 
@@ -142,7 +142,7 @@ To get started with the Venia Reference Store simply clone the [Git repository](
 >
 >The Venia Reference Store project contains two build profiles for AEM as a Cloud Service and AEM 6.5. Check the [project readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) to see how they are used. For AEM 6.5 use the `classic` profile.
 
-### Connect AEM to the commerce system
+### Connect AEM to the Commerce System
 
 To connect your project to the commerce system AEM must be configured with the GraphQL endpoint of your commerce system. 
 
