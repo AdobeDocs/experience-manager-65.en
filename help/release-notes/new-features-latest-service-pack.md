@@ -1,6 +1,6 @@
 ---
-title: What is new in [!DNL Experience Manager] 6.5 Service Pack 8
-description: What's new in [!DNL Experience Manager] 6.5 Service Pack 8
+title: What is new in [!DNL Experience Manager] 6.5 Service Pack 9
+description: What's new in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
