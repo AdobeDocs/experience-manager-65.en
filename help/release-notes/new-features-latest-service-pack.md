@@ -5,7 +5,7 @@ contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 ---
-# What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
+# What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
@@ -15,15 +15,11 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Sort the Live Copy pages available for rollout {#sort-livecopy-pages}
-
-You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
+Feature 1
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency.
-
-* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages.
+Feature 1
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -31,25 +27,15 @@ You can now sort the Live Copy pages available for rollout using the [!UICONTROL
 >
 >The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-### Show or hide CAPTCHA component in an adaptive form based on rules {#show-hide-captcha}
-
-You can now validate CAPTCHA either on adaptive form submission or on user action. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an adaptive form based on rules.
-
-### Add custom CAPTCHA services {#add-custom-captcha-services}
-
-[!DNL Experience Manager Forms] provides out of the box support to use Google reCAPTCHA (A separate license of Google reCAPTCHA APIs is required) as a CAPTCHA validation service. You can also use a custom CAPTCHA service to validate CAPTCHAs.
-
-### Other enhancements {#other-enhancements-forms-6580}
-
-* Improved accessibility of the [!DNL Experience Manager Forms] Date Picker component.
-
-* Added support to generate an Interactive Communication in PCL format using the PrintChannel API.
-
-* When performing a PDFG conversion, you can now enable or disable the [!DNL Experience Manager Forms] registry changes for custom bookmark generation.
+Feature 1
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Sort the Live Copy pages available for rollout (6.5.8.0) {#sort-livecopy-pages}
+
+You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
 
 #### Availability of page moves and MSM rollouts as asynchronous operations (6.5.7.0) {#page-moves-msm-asynchronous}
 
@@ -102,6 +88,10 @@ You can now select styles within the component dialog using the enhanced Style S
 * Improved handling of incomplete or invalid URLs. Such URLs can slow the Template Editor.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency (6.5.8.0).
+
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages (6.5.8.0).
 
 * [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
 
@@ -217,6 +207,22 @@ Smart imaging uses each user's unique viewing characteristics to automatically s
 Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Show or hide CAPTCHA component in an adaptive form based on rules (6.5.8.0) {#show-hide-captcha}
+
+You can now validate CAPTCHA either on adaptive form submission or on user action. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an adaptive form based on rules.
+
+#### Add custom CAPTCHA services (6.5.8.0) {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] provides out of the box support to use Google reCAPTCHA (A separate license of Google reCAPTCHA APIs is required) as a CAPTCHA validation service. You can also use a custom CAPTCHA service to validate CAPTCHAs.
+
+#### Other enhancements (6.5.8.0) {#other-enhancements-forms-6580}
+
+* Improved accessibility of the [!DNL Experience Manager Forms] Date Picker component.
+
+* Added support to generate an Interactive Communication in PCL format using the PrintChannel API.
+
+* When performing a PDFG conversion, you can now enable or disable the [!DNL Experience Manager Forms] registry changes for custom bookmark generation.
 
 #### Performance improvements (6.5.7.0) {#performance-improvements-forms}
 
