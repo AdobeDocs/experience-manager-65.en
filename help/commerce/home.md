@@ -7,6 +7,11 @@ description: AEM Content and Commerce self-help resources and documentation link
 
 This page lists the self-help resources regarding AEM Commerce.
 
+>[!NOTE]
+>
+>For AEM Content and Commerce with AEM as a Cloud Service, see [AEM Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html).
+>
+
 ## Key Commerce Articles {#key-articles}
 
 * [Introduction of AEM Commerce](/help/commerce/cif/introduction.md)
