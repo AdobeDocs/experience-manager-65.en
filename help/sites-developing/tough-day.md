@@ -215,7 +215,7 @@ tests:
 
 ### Working with Predefined Test Suites {#working-with-predefined-test-suites}
 
-The examples below show how to add a test to a predifined suite and how to reconfigure and exclude an existing test from a predefined suite.
+The examples below show how to add a test to a predefined suite and how to reconfigure and exclude an existing test from a predefined suite.
 
 You can add a new test to a predefined suite using the `add` parameter and specifying the targeted predefined suite.
 
