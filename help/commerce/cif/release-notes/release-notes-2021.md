@@ -8,7 +8,13 @@ description: AEM Content and Commerce Release Notes 2021
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
-**CIF add-on now available via [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please migrate to the new CIF add-on.**
+**With the April release we have replaced the CIF Connector from GitHub with the CIF add-on which is available on the [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The switch to the add-on comes with great benefits for projects:
+
+* Most of the new features will immediately be available on AEM 6.5 (No more waiting for feature side-port)
+* Easy upgradable to new add-on versions
+* Ready for Cloud Service
+
+The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please replace the CIF Connector with the new CIF add-on. Simply package replacement should be possible for most projects. **
 
 |Component| System Requirements|
 |:-------|:-----:|
