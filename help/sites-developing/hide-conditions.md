@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 ---
-# Using Hide Conditions{#using-hide-conditions}
+# Using Hide Conditions {#using-hide-conditions}
 
 Hide conditions can be used to determine if a component resource is rendered or not. An example of this would be when an template author configures the Core Component [list component](https://helpx.adobe.com/experience-manager/core-components/using/list.html) in the [template editor](/help/sites-authoring/templates.md) and decides to disable the options to build the list based on child pages. Disabling this option in the design dialog sets a property so that when the list component is rendered, the hide condition is evaluated and the option to show child pages is not displayed.
 
@@ -65,12 +65,12 @@ If a template author chooses to disable the child pages option, a design propert
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. A policy node is created under `/conf/we-retail/settings/wcm/policies/weretail/components/content/lis`t with a property `disableChildren` set to `true`.
-1. The hide condition is defined as the value of a `granite:hid`e property on the dialog property node `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
+1. A policy node is created under `/conf/we-retail/settings/wcm/policies/weretail/components/content/list` with a property `disableChildren` set to `true`.
+1. The hide condition is defined as the value of a `granite:hide` property on the dialog property node `/conf/we-retail/settings/wcm/policies/weretail/components/content/list`
 
    ![chlimage_1-220](assets/chlimage_1-220.png)
 
-1. The value of `disableChildren` is pulled from the design configuration and the expression `${cdDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
+1. The value of `disableChildren` is pulled from the design configuration and the expression `${cqDesign.disableChildren}` evaluates to `false`, meaning the option will not be rendered as part of the component.
 
    You can view the hide expression as the value of the `granite:hide` property [in GitHub here](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40).
 
