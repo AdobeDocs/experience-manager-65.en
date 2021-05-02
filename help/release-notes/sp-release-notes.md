@@ -43,7 +43,21 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
 
-* Bug fix 1
+* To verify that a hidden predicate is working after the change, [!DNL Experience Manager] checks that any hidden folder is not displayed on the interface. To improve performance, the `hidden=false` condition is moved from JCR query to QueryBuilder evaluator (NPR-36291).
+
+* Added a global [!DNL Dynamic Media] configuration to prevent any synchronize, publish, or upload actions to [!DNL Dynamic Media] from [!DNL Experience Manager]. This configuration overrides all the other configurations, for example selective sync (NPR-36280).
+
+* Asset Livecopy rendition can be modified without cancelling the inheritance (NPR-36234).
+
+* Custom `ViewerPresets` and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by default (NPR-36232).
+
+* The tags created from within a tag selection element in a [!UICONTROL Folder Metadata Schema] form are not saved (NPR-36119).
+
+* You can use ellipsis as an annotation to review assets. When a small ellipses is used, the ellipse overlaps with the number of the annotation in the print version (NPR-36114).
+
+* In Column view, in some cases, [!DNL Experience Manager] does not prompt for duplicate asset conflict when a duplicate asset is uploaded (NPR-36048).
+
+* Share Link dialog does not close by clicking close button if it is opened and no changes are made (NPR-36030).
 
 #### [!DNL Dynamic Media] {#dynamic-media-6590}
 
