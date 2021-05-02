@@ -247,7 +247,7 @@ The code on the rendered HTML page that creates the mbox is similar to the follo
 </script>
 ```
 
-The values of each parameter are different for each order. Therefore, you require a component that generates the code based on the properties of the purchase. The CQ [eCommerce Integration Framework](/help/sites-administering/ecommerce.md) enables you to integrate with your product catalogue and implement a shopping cart and checkout page.
+The values of each parameter are different for each order. Therefore, you require a component that generates the code based on the properties of the purchase. The CQ [eCommerce Integration Framework](/help/commerce/cif-classic/administering/ecommerce.md) enables you to integrate with your product catalogue and implement a shopping cart and checkout page.
 
 The Geometrixx Outdoors sample displays the following confirmation page when a visitor purchases products:
 

@@ -1,21 +1,14 @@
 ---
 title: eCommerce
-seo-title: eCommerce
 description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
-seo-description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
-uuid: 75818c60-1cf1-4a91-94ce-d722563b661c
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: e972ee05-f0cb-40ca-9ae2-34395791c709
 docset: aem65
-exl-id: 146a2174-fbc5-4ec7-a4e8-4a629c360e8b
 ---
 # eCommerce{#ecommerce}
 
-* [Concepts](/help/sites-administering/concepts.md)
-* [Administering (generic)](/help/sites-administering/generic.md)
+* [Concepts](/help/commerce/cif-classic/administering/concepts.md)
+* [Administering (generic)](/help/commerce/cif-classic/administering/generic.md)
 
 Adobe provides two versions of the Commerce Integration Framework:
 
@@ -69,7 +62,7 @@ Adobe provides two versions of the Commerce Integration Framework:
    <td><p>Scalability</p> </td>
    <td>
     <ul>
-     <li>Can support upto a few million products (depends on the use-case)</li>
+     <li>Can support up to a few million products (depends on the use-case)</li>
      <li>Caching on Dispatcher</li>
     </ul> </td>
    <td>
@@ -120,9 +113,9 @@ The implementation allows real-time access to product information. This can be u
 
 >[!NOTE]
 >
->To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/sites-deploying/ecommerce.md).
+>To use the integration framework with external eCommerce providers, you first need to install the required packages. For more information, see [Deploying eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->For information about extending eCommerce capabilities, see [Developing eCommerce](/help/sites-developing/ecommerce.md).
+>For information about extending eCommerce capabilities, see [Developing eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Main Features {#main-features}
 
@@ -137,7 +130,7 @@ AEM eCommerce provides:
     * Vouchers
     * and others
 
-  ![](assets/chlimage_1-130.png)
+  ![](/help/sites-administering/assets/chlimage_1-130.png)
 
   >[!NOTE]
   >
@@ -150,11 +143,11 @@ AEM eCommerce provides:
     * a third party search (such as Search&Promote)
     * or a combination thereof.
 
-  ![](assets/chlimage_1-131.png)
+  ![](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Uses the AEM ability to **present your content on multiple channels**, be that full browser window or mobile device. This delivers your content in the format needed by your visitors.
 
-  ![](assets/chlimage_1-132.png)
+  ![](/help/sites-administering/assets/chlimage_1-132.png)
 
 * The ability to **develop your own integration implementation based on the [AEM eCommerce framework](#the-framework)**.
 
@@ -167,11 +160,11 @@ AEM eCommerce provides:
 
   In the example below one teaser is shown as the contents of the cart are less than $75:
 
-  ![](assets/chlimage_1-133.png)
+  ![](/help/sites-administering/assets/chlimage_1-133.png)
 
   This can be changed when the contents of the cart exceed $75:
 
-  ![](assets/chlimage_1-134.png)
+  ![](/help/sites-administering/assets/chlimage_1-134.png)
 
 * And other features including:
 
@@ -181,7 +174,7 @@ AEM eCommerce provides:
 
 ## The Framework {#the-framework}
 
-The [Concepts](/help/sites-administering/concepts.md) section covers the framework in more detail, but the following provides a high-level, high-speed view of the framework:
+The [Concepts](/help/commerce/cif-classic/administering/concepts.md) section covers the framework in more detail, but the following provides a high-level, high-speed view of the framework:
 
 ### What? {#what}
 

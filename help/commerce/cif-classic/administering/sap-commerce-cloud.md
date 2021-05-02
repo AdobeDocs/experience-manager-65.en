@@ -5,12 +5,8 @@ description: Learn how to use AEM with SAP Commerce Cloud.
 seo-description: Learn how to use AEM with SAP Commerce Cloud.
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: e-commerce
 content-type: reference
-discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
-pagetitle: Administering hybris
-exl-id: 4c8a859f-b4f3-4c23-90ae-3f3c221e5513
 ---
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
@@ -53,7 +49,7 @@ After installation you can configure your instance:
    >
    >For Hybris 5.0.0 open the `Indexed Types` tab, double-click on `ClothesVariantProduct`, then the tab `SOLR Sort`.
 
-   ![chlimage_1-36](assets/chlimage_1-36a.png)
+   ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
 1. In the **Indexed Types** tab set the **Composed Type** to:
 
@@ -77,20 +73,20 @@ After installation you can configure your instance:
    >
    >For hybris 5.2 make sure that the `Facet` attribute in the Properties table is selected according to the screenshot below:
 
-   ![chlimage_1-37](assets/chlimage_1-37a.png) ![chlimage_1-38](assets/chlimage_1-38a.png)
+   ![chlimage_1-37](/help/sites-administering/assets/chlimage_1-37a.png) ![chlimage_1-38](/help/sites-administering/assets/chlimage_1-38a.png)
 
 1. Open the **Facet Settings** tab and adjust the field values:
 
-   ![chlimage_1-39](assets/chlimage_1-39a.png)
+   ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
 1. **Save** the changes.
 1. Again from **SOLR Item types**, adjust the `price` facet according to the following screenshots. As with `category`, double-click on `price` to open the **Indexed property** tab:
 
-   ![chlimage_1-40](assets/chlimage_1-40a.png)
+   ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
 
 1. Open the **Facet Settings** tab and adjust the field values:
 
-   ![chlimage_1-41](assets/chlimage_1-41a.png)
+   ![chlimage_1-41](/help/sites-administering/assets/chlimage_1-41a.png)
 
 1. **Save** the changes.
 1. Open **System**, **Facet search**, then **Indexer operation wizard**. Start a cronjob:
@@ -227,7 +223,7 @@ The following properties indicate the link with hybris:
 
 1. Configure the required parameters; for example:
 
-   ![chlimage_1-42](assets/chlimage_1-42a.png)
+   ![chlimage_1-42](/help/sites-administering/assets/chlimage_1-42a.png)
 
 1. Click **Import Catalog** to start the import.
 
@@ -287,7 +283,7 @@ The import process can take a long time, so as an extension to the Product Synch
 
 1. In hybris, add the product(s) to the Express Queue; for example:
 
-   ![chlimage_1-43](assets/chlimage_1-43a.png)
+   ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
 1. Open the hybris importer in AEM:
 
@@ -327,7 +323,7 @@ This is available from:
 
 `http://localhost:4502/etc/importers/hybris.html`
 
-![ecommerceimportconsole](assets/ecommerceimportconsole.png)
+![ecommerceimportconsole](/help/sites-administering/assets/ecommerceimportconsole.png)
 
 The following information has to be provided:
 
@@ -380,7 +376,7 @@ To remove one, or more, products from the catalog:
     * Select this product and change the approval status to `unapproved`
 
 1. Perform another incremental update (see [Catalog Import](#catalog-import)). The log will list the deleted product.
-1. [Rollout](/help/sites-administering/generic.md#rolling-out-a-catalog) the appropriate catalog. The product and product page will have been removed from within AEM.
+1. [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) the appropriate catalog. The product and product page will have been removed from within AEM.
 
    For example:
 

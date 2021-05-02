@@ -29,17 +29,23 @@ By defining which components can be included in each parsys on the page, the con
 
 SOLID is an acronym describing five architectural principles that should be adhered to:
 
-* **S**ingle Responsibility Principle - each module, class, method, etc, should do only one thing.
+* **S**ingle Responsibility Principle - each module, class, method, etc, should only have one responsibility.
 * **O**pen/Closed Principle - modules should be open for extension and closed for modification.
 * **L**iskov Substitution Principle - types should be replaceable by their subtypes.
-* **I**nterface Segregration Principle - no client should be forced to depend on methods that it does not use.
+* **I**nterface Segregation Principle - no client should be forced to depend on methods that it does not use.
 * **D**ependency Inversion Principle - High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
 
 Striving for compliance with these five principles should result in a system that has a strict separation of concerns.
 
+>[!TIP]
+>
+>SOLID is a commonly-used concept in object-oriented programming and each element is widely discussed in industry literature.
+>
+>This is just a short summary presented for awareness and you are encouraged to familiarize yourself with these concepts in more depth.
+
 ### Follow the Robustness Principle {#follow-the-robustness-principle}
 
-The Robustness Principle states that we should be conservative in what we send, but be liberal in what we accept. In other words, when sending messages to a third party, we should completely conform to specifications, but when receiving messages from a third-party, we should accept non-conformant messages as long as the meaning of the message is clear.
+The Robustness Principle states that we should be conservative in what we send, but be liberal in what we accept. In other words, when sending messages to a third party, we should completely conform to specifications, but when receiving messages from a third-party, we should accept non-conforming messages as long as the meaning of the message is clear.
 
 ### Implement spikes in their own modules {#implement-spikes-in-their-own-modules}
 

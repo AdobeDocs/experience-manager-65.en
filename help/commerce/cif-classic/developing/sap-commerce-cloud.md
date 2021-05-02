@@ -8,8 +8,6 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
-exl-id: e4f54a39-2bb6-44a2-9e24-6b2e998a64b5
 ---
 # Developing with SAP Commerce Cloud {#developing-with-sap-commerce-cloud}
 
@@ -23,11 +21,11 @@ The integration framework includes an integration layer with an API. This allows
 
 * build AEM components for commerce capabilities independent of the specific eCommerce engine
 
-![chlimage_1-11](assets/chlimage_1-11a.png)
+![chlimage_1-11](/help/sites-developing/assets/chlimage_1-11a.png)
 
 >[!NOTE]
 >
->[API documentation](/help/sites-developing/ecommerce.md#api-documentation) is also available.
+>[API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available.
 
 A number of out-of-the-box AEM components are provided to use the integration layer. Currently these are:
 
@@ -157,7 +155,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 * On hybris it is possible to specify feed contents in a declarative way.
 * Mapping the feed structure to the AEM content model happens in the feed adapter on the AEM side.
 
-![chlimage_1-12](assets/chlimage_1-12a.png)
+![chlimage_1-12](/help/sites-developing/assets/chlimage_1-12a.png)
 
 * The importer (b) is used for the initial setup of the page tree structure in AEM for catalogs.
 * Catalog changes in hybris are indicated to AEM via a feed, these then propagate to AEM (b)
@@ -439,7 +437,7 @@ public class AxisFilter implements VariantFilter {
 
 * The following illustrates an example of cart information in the ClientContext cart:
 
-![chlimage_1-13](assets/chlimage_1-13a.png)
+![chlimage_1-13](/help/sites-developing/assets/chlimage_1-13a.png)
 
 #### Architecture of Checkout {#architecture-of-checkout}
 
@@ -530,7 +528,7 @@ The eCommerce project contains a default search component, located in:
 
 `/libs/commerce/components/search`
 
-![chlimage_1-14](assets/chlimage_1-14a.png)
+![chlimage_1-14](/help/sites-developing/assets/chlimage_1-14a.png)
 
 This makes use of the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
 
@@ -546,7 +544,7 @@ There are several generic / helper classes provided by the core project:
 
    Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you need to display a hyperlink for each value of each facet, such that when the user clicks on the hyperlink the respective value is toggled (i.e. if it was selected it is removed from the query, otherwise added). This takes care of all the logic of handling multiple/single-valued facets, overriding values, etc.
 
-The entry point for the search API is the `CommerceService#search` method which returns a `CommerceResult` object. See the [API Documentation](/help/sites-developing/ecommerce.md#api-documentation) for more information on this topic.
+The entry point for the search API is the `CommerceService#search` method which returns a `CommerceResult` object. See the [API Documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) for more information on this topic.
 
 ### User Integration {#user-integration}
 

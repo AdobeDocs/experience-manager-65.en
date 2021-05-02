@@ -31,7 +31,7 @@ As AEM's standard reference implementation, We.Retail showcases some of the most
 | [Responsive layout](/help/sites-authoring/responsive-layout.md) |All pages feature responsive layout to adapt dynamically to screen and device size. | [Try it!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Editable templates](/help/sites-developing/page-templates-editable.md) |All pages are based on editable templates, allowing non-developers to adapt and customize the templates. | [Try it!](/help/sites-developing/we-retail-editable-templates.md) |
 | [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) |All components are based on HTL |  |
-| [eCommerce capabilities](/help/sites-developing/ecommerce.md) |Features a product catalog |  |
+| [eCommerce capabilities](/help/commerce/cif-classic/developing/ecommerce.md) |Features a product catalog |  |
 | [Communities sites](/help/communities/overview.md) |Allowing visitors to join in community discussions, read blogs, and much more |  |
 | [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) |All components are based on the new core components and are more usable and user-configurable out-of-the-box | [Try it!](/help/sites-developing/we-retail-core-components.md) |
 | [Content Fragments](/help/assets/content-fragments/content-fragments.md) |The We.Retail Experiences section showcases the power of reusing content via content fragments. | [Try them!](/help/sites-developing/we-retail-content-fragments.md) |

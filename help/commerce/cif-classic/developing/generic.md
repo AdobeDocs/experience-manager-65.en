@@ -8,14 +8,12 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
-exl-id: 27e4999d-2d77-49d5-8da9-c31b1a5729ea
 ---
 # Developing (generic){#developing-generic}
 
 >[!NOTE]
 >
->[API documentation](/help/sites-developing/ecommerce.md#api-documentation) is also available.
+>[API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available.
 
 The integration framework includes an integration layer with an API. This allows you to build AEM components for eCommerce capabilities (independent of your specific eCommerce engine). It also allows you to use the internal CRX database or to plug in an eCommerce system and pull product data into AEM.
 
@@ -94,7 +92,7 @@ The **CommerceSession**:
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* Owns persistance of the **order** data:
+* Owns persistence of the **order** data:
 
   `CommerceSession.getUserContext()`
 
@@ -336,7 +334,7 @@ public class AxisFilter implements VariantFilter {
 
 * The following illustrates an example of cart information in the ClientContext cart:
 
-![chlimage_1-33](assets/chlimage_1-33a.png)
+![chlimage_1-33](/help/sites-developing/assets/chlimage_1-33a.png)
 
 #### Architecture of Checkout {#architecture-of-checkout}
 
@@ -402,7 +400,7 @@ The eCommerce project contains a default search component, located in:
 
 `/libs/commerce/components/search`
 
-![chlimage_1-34](assets/chlimage_1-34a.png)
+![chlimage_1-34](/help/sites-developing/assets/chlimage_1-34a.png)
 
 This makes use of the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
 
