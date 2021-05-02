@@ -1,8 +1,8 @@
 ---
-sub-product: AEM Commerce
-user-guide-title: AEM Commerce
+sub-product: AEM Content and Commerce
+user-guide-title: AEM Content and Commerce
 breadcrumb-title: Commerce Guide
-user-guide-description: Understand how to use and administer Experience Manager Commerce.
+user-guide-description: Understand how to use and administer AEM Content and Commerce.
 ---
 
 # Commerce {#commerce}

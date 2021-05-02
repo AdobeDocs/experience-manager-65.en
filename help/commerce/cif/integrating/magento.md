@@ -5,7 +5,7 @@ thumbnail: aem-magento-architecture.jpg
 ---
 # AEM and Adobe Commerce (Magento) integration Using Commerce Integration Framework {#aem-magento-framework}
 
-The Experience Manager and Adobe Commerce (Magento) are seamlessly integrated using the Commerce Integration Framework (CIF). CIF enables AEM to directly access and communicate with the commere instance using Adobe Commerce's [GraphQL APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
+The Experience Manager and Adobe Commerce (Magento) are seamlessly integrated using the Commerce Integration Framework (CIF). CIF enables AEM to directly access and communicate with the commerce instance using Adobe Commerce's [GraphQL APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
 
 ## Architecture Overview {#overview}
 
@@ -13,8 +13,8 @@ The overall architecture is as follows:
 
 ![CIF Architecture Overview](../assets/AEM_Magento_Architecture.png)
 
-Within CIF there is support for server-side and client-side communication patterns.
-Server-side APIs calls are implemented using the build-in, generic [GraphQL client](https://github.com/adobe/commerce-cif-graphql-client) in combination with a [set of generated data models](https://github.com/adobe/commerce-cif-magento-graphql) for the commerce GraphQL schema Additionally, any GraphQL query or mutation in GQL format can be used.
+Within CIF, there is support for server-side and client-side communication patterns.
+Server-side APIs calls are implemented using the build-in, generic [GraphQL client](https://github.com/adobe/commerce-cif-graphql-client) in combination with a [set of generated data models](https://github.com/adobe/commerce-cif-magento-graphql) for the commerce GraphQL schema. Additionally, any GraphQL query or mutation in GQL format can be used.
 
 For the client-side components, which are build using [React](https://reactjs.org/), the [Apollo Client](https://www.apollographql.com/docs/react/) is used.
 

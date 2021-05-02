@@ -40,6 +40,3 @@ The eCommerce API is provided by the packages:
 
 See the [API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) for further information.
 
->[!NOTE]
->
->For a complete article detailing all the steps to build an eCommerce provider see [Creating custom Adobe Experience Manager 6.2 eCommerce providers](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).

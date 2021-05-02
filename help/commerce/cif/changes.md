@@ -9,7 +9,7 @@ This document highlights the important differences between the Commerce Integrat
 
 ## Installation & Updates
 
-The AEM CIF add-on package gets installed and updated with AEM package manager.
+The AEM CIF add-on package gets installed and updated with AEM Package Manager.
 
 **Previous CIF versions**
 
@@ -27,7 +27,7 @@ The endpoint gets configured via OSGi console.
 
 ## Deployment of CIF Venia Project
 
-Project available on [GitHub AEM Guides - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) and deployment done via package AEM manager
+Project available on [GitHub AEM Guides - CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) and deployment done via AEM Package Manager.
 
 **Previous CIF versions**
 
@@ -51,4 +51,4 @@ AEM renders product catalog experiences on-the-fly using AEM catalog templates t
 
 >[!NOTE]
 >
->For additional documentation on how to use CIF with AEM Managed Service or AEM On-premise, refer to [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>For additional documentation on how to use CIF with AEM Managed Service or AEM On-Premise, refer to [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)

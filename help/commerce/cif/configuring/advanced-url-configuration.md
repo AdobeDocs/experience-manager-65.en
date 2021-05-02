@@ -11,13 +11,13 @@ thumbnail: 34350.jpg
 ---
 # Advanced URL Configurations {#url}
 
-[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations will customize these URLs for search engine optimization (SEO) purposes.  The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
+[AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations will customize these URLs for search engine optimization (SEO) purposes. The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuration {#configuration}
 
-To configure the `UrlProvider` service according to the SEO requierments and needs a project must provide a OSGI config for the "CIF URL Provider configuration" configuration, and configure the service as described below.
+To configure the `UrlProvider` service according to the SEO requirements and needs a project must provide an OSGI config for the "CIF URL Provider configuration" configuration, and configure the service as described below.
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ URL rewrites can also be achived by using AEM Dispatcher HTTP server with `mod_r
 
 ## Example
 
-The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) project includes sample configurations to demonstrate the usage of custom URLs for product and category pages. This allows each project to setup individual URL patterns for product and category pages according to their SEO needs. A combination of CIF `UrlProvider` and Sling Mappings as described above is used.
+The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) project includes sample configurations to demonstrate the usage of custom URLs for product and category pages. This allows each project to set up individual URL patterns for product and category pages according to their SEO needs. A combination of CIF `UrlProvider` and Sling Mappings as described above is used.
 
 >[!NOTE]
 >
@@ -67,5 +67,5 @@ The [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia) proje
 ## Additional Resources
 
 * [Venia Reference store](https://github.com/adobe/aem-cif-guides-venia)
-* [AEM Resource Mapping](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/resource-mapping.html)
+* [AEM Resource Mapping](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)

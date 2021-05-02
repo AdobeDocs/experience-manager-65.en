@@ -9,7 +9,7 @@ thumbnail: 37843.jpg
 
 To get started with AEM Content and Commerce, you need to install the AEM Content and Commerce Add-On for AEM 6.5.
 
-## Minimum software requirement
+## Minimum Software Requirement
 
 [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 or later is required.
 
@@ -21,17 +21,17 @@ The onboarding for AEM Content and Commerce is a two-step process:
 
 2. Connect AEM with your commerce solution
 
-### Install the AEM Content and Commerce add-on for AEM 6.5 {#install-add-on}
+### Install the AEM Content and Commerce Add-On for AEM 6.5 {#install-add-on}
 
 Download and install the AEM Commerce Add-On for AEM 6.5 from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.
 
-Start and install the requiered AEM 6.5 Service Pack. We recommend to install the last available service pack.
+Start and install the requiered AEM 6.5 Service Pack. We recommend installing the last available service pack.
 
 >[!NOTE]
 >
 >This will be done by the CSE for AEM Managed Service customers.
 
-### Connect AEM to your commerce system {#connect}
+### Connect AEM to your Commerce System {#connect}
 
  AEM can be connected to any commerce system that has an accessible GraphQL endpoint for AEM. These endpoints are usually publicly available, or can be connected via private VPN or local connections depending on the individual project setup.
 
@@ -43,11 +43,11 @@ Replace the value of the `url` in `com.adobe.cq.commerce.graphql.client.impl.Gra
 
 The AEM Content and Commerce Add-On and CIF Core Components use both AEM server-side and client-side connections. Client-side CIF Core Components and CIF Add-On authoring tools connect by default to `/api/graphql`. This can be adjusted via the CIF Cloud Service config if needed (see below).
 
-The CIF add-on provides a GraphQL proxy servlet at `/api/graphql` which can optionally be used for [local development](develop.md). For production deployments it is strongly recommended to setup a reverse proxy to the commerce GraphQL endpoint via the AEM Dispatcher or at other network layers (like CDN).
+The CIF Add-On provides a GraphQL proxy servlet at `/api/graphql` which can optionally be used for [local development](develop.md). For production deployments it is strongly recommended to setup a reverse proxy to the commerce GraphQL endpoint via the AEM Dispatcher or at other network layers (like CDN).
 
-## Configuring stores and catalogs {#catalog}
+## Configuring Stores and Catalogs {#catalog}
 
-The add-on and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be used on multiple AEM site structures connected to different commerce stores (or store views, etc). By default, the CIF add-on is deployed with a default config connecting to Adobe Commerce's default store and catalog (Magento).
+The Add-On and the [CIF Core Components](https://github.com/adobe/aem-core-cif-components) can be used on multiple AEM site structures connected to different commerce stores (or store views, and so on). By default, the CIF Add-On is deployed with a default config connecting to Adobe Commerce's default store and catalog (Magento).
 
 This configuration can be adjusted for the project via the CIF Cloud Service config following these steps:
 
@@ -73,7 +73,7 @@ The following properties can be configured:
     > Support for UIDs got introduced in Adobe Commerce (Magento) 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 - Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
 
-The configuration shown above is for reference. Projects should provide thier own configurations.
+The configuration shown above is for reference. Projects should provide their own configurations.
 
 For more complex setups using multiple AEM site structures combined with different commerce catalogs see the [Commerce Multi-Store Setup](configuring/multi-store-setup.md) tutorial.
 

@@ -193,7 +193,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
    * username: admin
    * password: nimda
 
-1. From the sidebar navigation, expland **System** and **Tools**. Then select **Import** to open the **Wizard: CSV Import** window.
+1. From the sidebar navigation, expand **System** and **Tools**. Then select **Import** to open the **Wizard: CSV Import** window.
 1. In the **Configuration** tab, **Upload** the following **Import file**:
 
    [Get File](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)

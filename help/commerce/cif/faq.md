@@ -29,7 +29,7 @@ The CIF add-on used with AEM enables data to flow from the commerce solution to 
 
 ## 6. What catalog size does AEM with CIF support?
 
-This depends on a few additional aspects you have to consider. What is the cache ratio of your catalog data & pages? How many concurrent requests do you expect during peak hours? How scaleable are the APIs of your commerce solutions?
+This depends on a few additional aspects you have to consider. What is the cache ratio of your catalog data & pages? How many concurrent requests do you expect during peak hours? How scalable are the APIs of your commerce solutions?
 
 ## 7. How does PIM play into this framework?
 
@@ -57,11 +57,11 @@ Product data is usually already translated in PIM or in Magento. The AEM – Mag
 
 ## 13. Is there a way to enhance the product data with commercial text? Where do you do this? In AEM or in the commerce solution?
 
-We recommend to manage marketing related data and content in AEM. Decorate product data from your commerce solution with additional attributes using Content Fragments or create and link Experience Fragments for un-strutured content with your products.
+We recommend managing marketing related data and content in AEM. Decorate product data from your commerce solution with additional attributes using Content Fragments or create and link Experience Fragments for unstructured content with your products.
 
 ## 14. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
-We recommend to use abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to <https://magento.com/pci-compliance>
+We recommend using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to <https://magento.com/pci-compliance>
 
 ## 15. If I use AEM and Magento cloud versions, is this joint solution PCI compliant?
 

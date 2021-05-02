@@ -92,7 +92,7 @@ The **CommerceSession**:
 
       `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* Owns persistance of the **order** data:
+* Owns persistence of the **order** data:
 
   `CommerceSession.getUserContext()`
 

@@ -15,6 +15,6 @@ thumbnail: 28969.jpg
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-You can find more information on this topic from the following resource(s):
+You can find more information on this topic from the following resource:
 
 - [AEM CIF Core Components - Multi catalog page configuration](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)

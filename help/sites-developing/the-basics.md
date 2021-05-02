@@ -434,7 +434,7 @@ The following list gives an overview of the structure you will see within the re
 
 * `/var`
 
-  Files that change and are updated by the system; such as audit logs, statistics, event-handling. The sub-folder `/var/classes` contains the java servlets in source and compiled forms that have been generated from the components scripts.
+  Files that change and are updated by the system; such as audit logs, statistics, event-handling.
 
 ## Environments {#environments}
 

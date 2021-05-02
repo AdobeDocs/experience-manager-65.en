@@ -62,7 +62,7 @@ Adobe provides two versions of the Commerce Integration Framework:
    <td><p>Scalability</p> </td>
    <td>
     <ul>
-     <li>Can support upto a few million products (depends on the use-case)</li>
+     <li>Can support up to a few million products (depends on the use-case)</li>
      <li>Caching on Dispatcher</li>
     </ul> </td>
    <td>
