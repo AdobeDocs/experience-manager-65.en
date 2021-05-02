@@ -1,14 +1,14 @@
 ---
-title: Metadata schemas to define layout of metadata properties page in [!DNL Adobe Experience Manager Assets]. 
+title: Metadata schemas define layout of metadata properties page 
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: Business Practitioner,Administrator
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 ---
 # Metadata schemas {#metadata-schemas}
 
-Organizations come up with a metadata model that enhances the asset discovery, usage, interoperability, and so on. Correct metadata application is sacrosanct to maintaining metadata-driven workflows and processes. To adhere to organization-wide metadata strategy and standards, you can use metadata schemas that help DAM users to align. [!DNL Adobe Experience Manager] allows easy and flexible methods to create, maintain, and apply metadata schemas.
+Organizations come up with a metadata model that enhances the asset discovery, usage, interoperability, and so on. Correct metadata application is sacrosanct to maintain metadata-driven workflows and processes. To adhere to organization-wide metadata strategy and standards, you can use metadata schemas that help DAM users to align. [!DNL Adobe Experience Manager] allows easy and flexible methods to create, maintain, and apply metadata schemas.
 
 In [!DNL Adobe Experience Manager Assets], schemas contain specific fields for specific information to be filled in. It also contains layout information to display metadata fields in a user-friendly way. Metadata properties include title, description, MIME types, tags, and more. You can use the [!UICONTROL Metadata Schema Forms] editor to modify the existing schemas or add custom metadata schemas.
 
@@ -20,9 +20,9 @@ To view and edit the properties page for an asset, follow these steps:
 
    ![Basic tab of asset Properties, where asset type cannot be changed](assets/asset-properties-basic-tab.png)
 
- *Figure: Basic tab on asset [!UICONTROL Properties].*
+   *Figure: Basic tab on asset [!UICONTROL Properties].*
 
-   To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](/help/assets/metadata-schemas.md#edit-metadata-schema-forms) for more information. If you modify the metadata schema of a MIME type, the properties page layout for the assets and all subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
+   To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](#edit-metadata-schema-forms) for more information. If you modify the metadata schema of a MIME type, the properties page layout for the assets and all subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
 
 ## Metadata Schema forms {#default-metadata-schema-forms}
 
@@ -106,7 +106,7 @@ The following are the valid values for this property:
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
 
-* `./jcr:created`: Stores the creation date and time of an asset. It is a protected property. If you configure these properties, Adobe recommends that you mark them as Disable Edit.
+* `./jcr:created`: Stores the creation date and time of an asset. It is a protected property. If you configure these properties, Adobe recommends that you mark them as Disable Edit. Otherwise, the error "Asset(s) failed to modify" occurs when you save the asset's properties.
 
 To ensure that the component is displayed properly in the metadata schema form, the property path should not include any spaces.
 
@@ -292,19 +292,19 @@ In this case, create a node at `/etc/dam/metadataeditor/mimetypemappings` in the
 
 [!DNL Assets] maps the following MIME types and schema forms:
 
-|         Schema Form         |                     MIME types                      |
-| --------------------------- | --------------------------------------------------- |
-| image/jpeg                  | image/pjpeg                                         |
-| image/tiff                  | image/x-tiff                                        |
-| application/pdf             | application/postscript                              |
-| application/x-ImageSet      | Multipart/Related; type=application/x-ImageSet      |
-| application/x-SpinSet       | Multipart/Related; type=application/x-SpinSet       |
-| application/x-MixedMediaSet | Multipart/Related; type=application/x-MixedMediaSet |
-| video/quicktime             | video/x-quicktime                                   |
-| video/mpeg4                 | video/mp4                                           |
-| video/avi                   | video/avi, video/msvideo, video/x-msvideo           |
-| video/wmv                   | video/x-ms-wmv                                      |
-| video/flv                   | video/x-flv                                         |
+| Schema Form |MIME types |
+|---|---|
+| image/jpeg |image/pjpeg |
+| image/tiff |image/x-tiff |
+| application/pdf |application/postscript |
+| application/x-ImageSet |Multipart/Related; type=application/x-ImageSet |
+| application/x-SpinSet |Multipart/Related; type=application/x-SpinSet |
+| application/x-MixedMediaSet |Multipart/Related; type=application/x-MixedMediaSet |
+| video/quicktime |video/x-quicktime |
+| video/mpeg4 |video/mp4 |
+| video/avi |video/avi, video/msvideo, video/x-msvideo |
+| video/wmv |video/x-ms-wmv |
+| video/flv |video/x-flv |
 
 ## Grant access to metadata schemas {#grant-access-to-metadata-schemas}
 
@@ -318,9 +318,7 @@ For example, you can define a variant of the default metadata schema and apply i
 
 Only assets uploaded to the folder to which this schema is applied conform to the modified metadata defined in the variant metadata schema. [!DNL Assets] in other folders where the original schema is applied continue to conform to metadata defined in the original schema.
 
-Metadata inheritance by assets is based on the schema that is applied to the first-level folder in the hierarchy. In other words, if a folder does not contain subfolders, the assets within the folder inherit the metadata from the schema applied to the folder.
-
-You can apply a different schema at the subfolder. The assets within a subfolder inherit the metadata schema of the immediate subfolder. If no schema or the same schema is applied at the subfolder level, its assets inherit schema from the parent folder.
+Metadata inheritance by assets is based on the schema that is applied to the top-level folder in the hierarchy. The same schema is applied to or inherited by the subfolders. If a different schema is applied at the subfolder level, the inheritance stops.
 
 1. In [!DNL Experience Manager] interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**. The **[!UICONTROL Metadata Schema Forms]** page is displayed.
 1. Select the check box before a form, for example the default metadata form, and click the **[!UICONTROL Copy]** and save it as a custom form. Specify a custom name for the form, for example `my_default`. Alternatively, you can create a custom form.
