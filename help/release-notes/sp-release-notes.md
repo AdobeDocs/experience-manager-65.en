@@ -53,7 +53,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * The tags created from within a tag selection element in a [!UICONTROL Folder Metadata Schema] form are not saved (NPR-36119).
 
-* You can use ellipsis as an annotation to review assets. When a small ellipses is used, the ellipse overlaps with the number of the annotation in the print version (NPR-36114).
+* You can use ellipsis as an annotation to review assets. When a small ellipse is used, the ellipse overlaps with the number of the annotation in the print version (NPR-36114).
 
 * In Column view, in some cases, [!DNL Experience Manager] does not prompt for duplicate asset conflict when a duplicate asset is uploaded (NPR-36048).
 
