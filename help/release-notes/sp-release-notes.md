@@ -89,11 +89,17 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 ### [!DNL Communities] {#communities-6590}
 
-* Bug fix 1
+* In Spam filtering, the system consumes 100% of the JAVA heap space which brings down the AEM server (NPR-36316). 
+* In Forums, the JCR sessions data originating from SearchCommentSocialComponentListProvider is leaked (NPR-36235).
+* Opening a specific inbox message reflects all the messages with improper pagination and other issues (NPR-35917).
+* The Handlebars Scripting Engine embeds vulnerable cache (handlebars-guava-cache-4.0.0.jar) library (NPR-35847).
+* The Handlebars script (handlebar.js) is vulnerable to remote code execution (NPR-35846).
+* Security issues in User Generated Content - /content/usergenerated (CQ-4318188). 
+
 
 ### [!DNL Brand Portal] {#brandportal-6590}
 
-* Bug fix 1
+* The Asset Sourcing feature flag is auto-enabled on configuring [!DNL Experience Manager Assets] with [!DNL Brand Portal] (NPR-36010). 
 
 ### [!DNL Forms] {#forms-6590}
 
