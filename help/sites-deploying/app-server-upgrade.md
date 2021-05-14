@@ -79,7 +79,7 @@ All the examples in this procedure use Tomcat as the Application Server and impl
 
    * Add the following line to `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-       ```customBlobStore=true```
+     `customBlobStore=true`
    
    * Then add the following lines to `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
