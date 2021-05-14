@@ -426,29 +426,6 @@ See [Version Purging](/help/sites-deploying/version-purging.md) for more informa
 
 **Day CQ Workflow Email Notification Service** Configure the email settings for notifications sent by a workflow.
 
-**Day CQSE HTTP Service** Control the CQ Servlet Engine:
-
-* **NIO for HTTP, **Whether or not to use NIO for HTTP. Defaults to true. Only used if HTTP is enabled.
-* **Connection Timeout, **Connection timeout in milliseconds. This property applies to both HTTP and HTTPS connections. Defaults to 60 seconds.
-
-* **Enable HTTPS,** Whether or not HTTPS is enabled. Defaults to false.
-* **Session Timeout**, Default lifetime of an HTTP session specified in minutes. If the timeout is 0 or less, sessions will never timeout. Defaults to 10 minutes.
-* **Debug Logging**, Whether to write DEBUG level messages or not. Defaults to false.
-* **Request Buffer Size**, Size of the buffer for requests in bytes. Default is 8KB.
-* **Maximum number of threads**, Maximum number of threads to use to handle requests. Default is 200.
-
-The following properties only apply if HTTPS is enabled.
-
-* **HTTPS Port**, Port to listen on for HTTPS request. Defaults to 433.
-* **NIO for HTTPS**, Whether or not to use NIO for HTTP. Defaults to the value of the NIO for HTTP property.
-* **Keystore**, Absolute path to the Keystore to use for HTTPS. Required if HTTPS is enabled.
-* **Keystore Password**, Password to access the Keystore.
-* **Key Alias**, Alias of the secret key in the Keystore.
-* **Key Password**, Password to unlock the secret key in the Keystore.
-* **Client Certificate**, Requirement for the Client to provide a valid certifcate. Defaults to none.
-
-See also [Enabling HTTP Over SSL](/help/sites-administering/ssl-by-default.md) for details on the SSL-related options and a complete description on how to enable HTTPS for CQSE.
-
 **CQ Rewriter HTML Parser Factory**
 
 Controls the HTML Parser for the CQ rewriter.
