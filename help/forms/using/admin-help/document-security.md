@@ -220,7 +220,7 @@ Policy set coordinators can perform these tasks:
 
 >[!NOTE]
 >
->You can retrieve a maximum of 1000 policy set names from the database.
+>You can retrieve a maximum of 1000 policy set names from the database using `getAllPolicysetnames()` API.
 
 Policy sets are created and deleted in the document security administration web pages by administrators and policy set coordinators who have permission to do so.
 
