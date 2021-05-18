@@ -277,8 +277,7 @@ The following OSGi settings are available for the Cold Standby service:
 
 * **Allowed IP-Ranges (`primary.allowed-client-ip-ranges`):** - the IP ranges that the primary will allow connections from.
 * **Secure (`secure`):** Enable SSL encryption. In order to make use of this setting, it must be enabled on all instances.
-* **Standby Read Timeout (`standby.readtimeout`):** Timeout for requests issued from the standby instance in milliseconds. The recommended timeout setting is 43200000. It is generally advised you set the timeout to a value of at least 12 hours.
-
+* **Standby Read Timeout (`standby.readtimeout`):** Timeout for requests issued from the standby instance in milliseconds. The default value used is 60000 (1 minute).
 * **Standby Automatic Cleanup (`standby.autoclean`):** Call the cleanup method if the size of the store increases on a sync cycle.
 
 >[!NOTE]
