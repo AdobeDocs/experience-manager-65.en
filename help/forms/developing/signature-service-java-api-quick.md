@@ -1339,7 +1339,7 @@ The following Java code example removes a digital signature from a signature fie
 
 ## Quick Start (SOAP mode): Apply document timestamp using the Java API {#quick-start-soap-mode-apply-document-timestamp-using-the-java-api}
 
-The following Java code example applies a document timestamp to a PDF document:
+The following Java code example applies a timestamp to a PDF document:
 
 ```java
  /*
