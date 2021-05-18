@@ -27,9 +27,50 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 <!-- TBD:
 * Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
 
-* Key feature 1
+* Adobe Experience Manager 6.5.9.0 Assets provides the following enhancements.
+  * To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Experience Manager checks that any hidden folder is not displayed on the interface (NPR-36291).
+  * Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions (CQ-4308974).
+  * Configuration is added to lowercase the email ID in API response from Experience Manager (CQ-4317704).
+  * When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset (CQ-4316924).
+  * When browsing assets in Column view, a visual indicator displays for expired assets (CQ-4316923).
 
-* Key feature 2
+* Adobe Experience Manager 6.5.9.0 Assets provides the following enhancements in Dynamic Media.
+  * Added a global Dynamic Media configuration to prevent any synchronize, publish, or upload actions to Dynamic Media from Experience Manager. This configuration overrides all the other configurations, for example selective sync (NPR-36280).
+  * Performance of UI page load has been enhanced by enhancing lazy loading of assets (CQ-4317216).
+  
+* Accessibility enhancements in Dynamic Media
+  * When you open the dialog to add assets using keyboard keys in Image Set editor:
+    * screen readers narrate that the dialog is opened.
+    * keyboard focus moves to the dialog when it opens.
+    * keyboard focus moves back to Add Asset option when the dialog is closed (CQ-4312134).
+    * You can now add and edit Hotspots on assets using keyboard keys in Hotspot editor (CQ-4305965).
+    * You can now put hyperlink on hotspot through Hotspot management using keyboard keys. The screen reader focus now moves to the field to edit URL Path and option to Open selection dialog (CQ-4290735).
+    * Contrast (with background) of text and controls on Image Set Editor page is improved, so that the users with limited vision and lack of perception of color can comprehend (CQ-4290733).
+    * You can now navigate to asset sharing options on Viewer Preset Editor and collapse the expanded share option using keyboard keys (CQ-4290724).
+    * You can now navigate and view tooltips on the information icons and alert icons on Basic and Advanced tabs of Edit Video Encoding page using keyboard keys (CQ-4290722).
+    * Screen readers now narrate the instructions for various fields in Appearance tab and Behavior tab on Viewer Preset Editor (CQ-4290721).
+    * When navigating the Edit Image Preset page in Form mode, screen reader narrates the purpose and names of various fields and controls (CQ-4290717).
+    * When navigating assets detail page, screen readers now describe the purpose of various options within Viewers (CQ-4290716).
+    * Contrast (with background) of the placeholder text All Renditions in Renditions option of asset details page is improved, so that users with limited vision and lack of perception of color can comprehend (CQ-4290713).
+    * Visual asterisk to signify mandatory field is now provided in Title field of asset in Image Set Editor, and screen readers announce the required information for the field (CQ-4290712).
+    * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
+    * When navigating the Publish page using keyboard keys, screen reader now narrates the information (control type, purpose, and default state) for All Assets and All Collections options (CQ-4290705).
+* Accessibility enhancements in Assets
+  * Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can read them:
+    * asset title on Properties page (NPR-35967).
+    * star rating icons in Rating sections at various places (NPR-36009).
+    * text on the asset and folder card view (NPR-35966).
+    * placeholder text on the timeline view (NPR-35965).
+    * asset names on the asset search results (NPR-35964).
+    * placeholder text on the Link Sharing dialog (NPR-35963).
+    * 'Metadata', 'Status' & 'Other' text in 'List' option in the 'View Settings' dialog (NPR-35910).
+    * ‘Location’, and ‘Type to search’ placeholder texts in global search (NPR-35909).
+    * expand and collapse icons under the Content Tree (NPR-35908).
+    * the ‘Assets’ text on the page where assets folders are displayed (NPR-35905).
+    * text in Asset Metadata, Usage Statistics within Overview option in asset details page (NPR-35904).
+    * text for shortcut keys (p), (e), (m) in asset details page (NPR-35904).
+  
+* Key features 2
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
 
@@ -41,27 +82,33 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 ### [!DNL Assets] {#assets-6590}
 
-[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] fixes the following issues and provides the following enhancements.
-
-* To verify that a hidden predicate is working after the change, [!DNL Experience Manager] checks that any hidden folder is not displayed on the interface. To improve performance, the `hidden=false` condition is moved from JCR query to QueryBuilder evaluator (NPR-36291).
-
-* Added a global [!DNL Dynamic Media] configuration to prevent any synchronize, publish, or upload actions to [!DNL Dynamic Media] from [!DNL Experience Manager]. This configuration overrides all the other configurations, for example selective sync (NPR-36280).
-
-* Asset Livecopy rendition can be modified without cancelling the inheritance (NPR-36234).
-
-* Custom `ViewerPresets` and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by default (NPR-36232).
-
+[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] fixes the following issues.
+* Asset Livecopy rendition can be edited, on the Firefox browser, without cancelling inheritance with the primary copy (NPR-36234).
 * The tags created from within a tag selection element in a [!UICONTROL Folder Metadata Schema] form are not saved (NPR-36119).
-
-* You can use ellipsis as an annotation to review assets. When a small ellipse is used, the ellipse overlaps with the number of the annotation in the print version (NPR-36114).
-
+* When a small ellipse is used to annotate assets, the ellipse overlaps with the number of the annotation in the print version (NPR-36114).
 * In Column view, in some cases, [!DNL Experience Manager] does not prompt for duplicate asset conflict when a duplicate asset is uploaded (NPR-36048).
-
 * Share Link dialog does not close by clicking close button if it is opened and no changes are made (NPR-36030).
+* When multiple assets are selected to update the properties, sometimes either an error occurs, or properties of a deselected asset get updated (NPR-36002).
+* When on asset upload whitespaces are added in the beginning or end of asset file names, with remaining characters same as the name of an existing asset in the repository, the existing asset is replaced without logging any error (NPR-36001).
+* When video is played in the asset details page, the play and pause options do not function (NPR-35999).
+* When unpublishing assets in bulk, Brand Portal generates an error suggesting that the request URI is too long (NPR-35954).
+* When an asset with long annotation text is printed, the annotation text is trimmed, even if space is available (NPR-35948).
+* The option to move to Next page is disabled on selecting the page on select Templates view on Create Catalog page (CQ-4315462).
+* When update asset workflow is started on the video asset, the page refreshes repeatedly (CQ-4313375).
+
 
 #### [!DNL Dynamic Media] {#dynamic-media-6590}
+Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Media:
+* Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
+* When attempting to preview video renditions on asset details page the videos are slow to load (CQ-4320122).
+* Browser page gets unresponsive and slows down when uploading more than 200 assets with Duplicate Asset Detector enabled (CQ-4319633).
+* When a panoramic image asset is added on the panoramic media component on a page, then an Uncaught Reference error is logged (CQ-4317666).
+* When interactive media viewer is implemented with experience fragment, the experience fragment is not opened from the publisher and an error is logged (CQ-4317655).
+* Publish to Dynamic Media option is not available in Quick Publish in metadataeditor view (CQ-4317199). 
+* Site Authors with read only permissions can use smart crop functionality on assets and edit the smart cropped renditions. However, users with read only permissions should not be able to edit asset properties in Sites Dev instance (CQ-4316450).
+* Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
+* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (?) (CQ-4311872).
 
-* Bug fix 1
 
 ### [!DNL Commerce] {#commerce-6590}
 
