@@ -218,6 +218,10 @@ Policy set coordinators can perform these tasks:
 * Revoke access to documents
 * Switch policies for the document.
 
+>[!NOTE]
+>
+>You can retrieve a maximum of 1000 policy set names from the database using `getAllPolicysetnames()` API.
+
 Policy sets are created and deleted in the document security administration web pages by administrators and policy set coordinators who have permission to do so.
 
 Policy sets are generally made available to a limited number of users by specifying which users or groups within a domain can use the policies from the policy set to protect documents.
