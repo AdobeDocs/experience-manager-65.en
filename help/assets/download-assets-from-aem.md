@@ -58,6 +58,8 @@ To allow downloading assets from your DAM, say when using something like Asset S
    asset.download.prezip.maxcontentsize=I"102400"
    ```
 
+By default, for `GET` requests to download files, [!DNL Experience Manager] enforces a 50 MB limit on the ZIP archive's download size. Downloads initiated via `POST` requests or the user interface are not impacted by this limit.
+
 ## Disable asset download servlet {#disable-asset-download-servlet}
 
 The `Asset Download Servlet` can be disabled on an [!DNL Experience Manager] Publish instances by updating the dispatcher configuration to block any asset download requests. The servlet can also be manually disabled via the OSGi console directly.

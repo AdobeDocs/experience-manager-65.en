@@ -8,7 +8,7 @@ exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
 ---
 # Configure Asset Insights {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] fetches usage data around digital assets used by third-party websites from [!DNL Adobe Analytics]. To enable Asset Insights to retrieve this data and generate insights, first configure the feature to integrate with Adobe Analytics.
+[!DNL Adobe Experience Manager Assets] fetches usage data around digital assets used by third-party websites from [!DNL Adobe Analytics]. To enable Asset Insights to retrieve this data and generate insights, first configure the feature to integrate with [!DNL Adobe Analytics]. To use this feature, buy [!DNL Adobe Analytics] license separately. Customers on [!DNL Managed Services] receive [!DNL Analytics] license bundled with [!DNL Experience Manager]. See [Managed Services product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
