@@ -169,7 +169,7 @@ The authorization channel between [!DNL Experience Manager Assets] and [!DNL Bra
 
 The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. See [Configure Experience Manager Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
-#### Accessibility enhancements (6.5.4.0) {#accessibility-enhancements}
+#### Accessibility enhancements (6.5.4.0) {#accessibility-enhancements-6540}
 
 [!DNL Experience Manager Assets] includes the following accessibility enhancements:
 
