@@ -37,7 +37,9 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 ### [!DNL Sites] {#sites-6590}
 
-* Bug fix 1
+* Published pages with Authentication Requirement property enabled do not redirect to the login page and return 404 error message (NPR-36354).
+
+* When creating a hyperlink, the option to search a link does not work in the text component (NPR-35849).
 
 ### [!DNL Assets] {#assets-6590}
 
@@ -59,6 +61,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * Share Link dialog does not close by clicking close button if it is opened and no changes are made (NPR-36030).
 
+* Introduced the [!UICONTROL None] option in Card, Column, and Insights view to sort assets in the order they are stored in the JCR node (NPR-36356).
+
 #### [!DNL Dynamic Media] {#dynamic-media-6590}
 
 * Bug fix 1
@@ -71,6 +75,18 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When you refresh a page, the sorting of folder or assets does not display appropriate results (CQ-4316200).
 
+* Upgraded MongoDB Java driver to version 3.12.7 (NPR-36373).
+
+* Handlebars JavaScript library is upgraded to v4.7.7 (NPR-36375).
+
+* Custom bundles are not updated when installing a new code package using Package Manager (NPR-35949).
+
+* A `resourceresolver` Sling bundle is causing `Sling:alias` query to fail (NPR-35335).
+
+* The context path gets removed when setting up SSL in AEM (NPR-35294).
+
+* The `SegmentNotFound` exception is returned after a long running session (NPR-36405).
+
 ### Integrations {#integrations-6590}
 
 * Unable to save page properties with inheritance enabled for Cloud Services experience fragments (NPR-36107).
@@ -78,6 +94,18 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 * IMS user interface pagination and lazy loading does not display appropriate results (NPR-36046).
 
 * When you create A4T Target configuration and select the reporting source as [!DNL Adobe Analytics], there are no Adobe Target-enabled report suites available in the dropdown list (NPR-36006).
+
+### Projects {#projects-6590}
+
+* Cannot save the properties of a project as the JCR path to the project is not resolved due to an extra forward slash (/) appended to the project path (NPR-36191).
+
+### Screens {#screens-6590}
+
+* [!DNL Experience Manager Screens] players cannot authenticate if custom 2FA authentication handler is used (NPR-35854).
+
+### Commerce {#commerce-6590}
+
+* The [!UICONTROL Commerce Catalog] wizard fails to load more than 40 items in the Column view (CQ-4318379).
 
 ### Translation projects {#translation-6590}
 
@@ -106,8 +134,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 * Opening a specific inbox message reflects all the messages with improper pagination and other issues (NPR-35917).
 * The Handlebars Scripting Engine embeds vulnerable cache (handlebars-guava-cache-4.0.0.jar) library (NPR-35847).
 * The Handlebars script (handlebar.js) is vulnerable to remote code execution (NPR-35846).
-* Security issues in User Generated Content - /content/usergenerated (CQ-4318188). 
-
+* Security issues in User Generated Content - /content/usergenerated (CQ-4318188).
 
 ### [!DNL Brand Portal] {#brandportal-6590}
 
