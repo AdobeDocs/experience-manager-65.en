@@ -27,9 +27,9 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 <!-- TBD:
 * Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
 
-* Key feature 1
+* Support for a new user to refresh the access token using a refresh token.
 
-* Key feature 2
+* Support for SMTP XOAUTH2 mechanism.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
 
@@ -63,29 +63,41 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * Bug fix 1
 
-### [!DNL Commerce] {#commerce-6590}
-
-* Bug fix 1
-
 ### Platform {#platform-6590}
 
-* Bug fix 1
+* When you generate a thumbnail for a blueprint and roll out the changes to the live copy, the inheritance for some fields does not work (CQ-4319517).
 
-### User Interface {#ui-6590}
+* When you create a folder, select the Orderable property, and add more than 20 assets to the folder, selecting all assets in the folder displays a wrong count (CQ-4316243).
 
-* Bug fix 1
+* When you refresh a page, the sorting of folder or assets does not display appropriate results (CQ-4316200).
 
 ### Integrations {#integrations-6590}
 
-* Bug fix 1
+* Unable to save page properties with inheritance enabled for Cloud Services experience fragments (NPR-36107).
+
+* IMS user interface pagination and lazy loading does not display appropriate results (NPR-36046).
+
+* When you create A4T Target configuration and select the reporting source as [!DNL Adobe Analytics], there are no Adobe Target-enabled report suites available in the dropdown list (NPR-36006).
 
 ### Translation projects {#translation-6590}
 
-* Bug fix 1
+* Update or Overwrite options do not display while retranslating an `es` to `es_es` page (NPR-36170).
 
-### Campaign {#campaign-6590}
+* When the auto-approve option is selected for a project with human translation, the job status displays as `Unknown` (NPR-35981).
 
-* Bug fix 1
+* When you are translating a page, the reference path of experience fragments does not update to the destination experience fragment reference path (NPR-35911).
+
+* When you make changes in the parent and child pages and send the parent page for translation, the child pages are incorrectly translated as well (NPR-35896).
+
+* When there are multiple concurrent translation projects for a selected page, the [!UICONTROL Go To Projects] option does not link to the latest translation project (NPR-35454).
+
+* When you publish assets to [!DNL Dynamic Media], [!DNL Experience Manager] displays an incorrect message for unpublished tags (CQ-4315914, CQ-4315913).
+
+* When you open a deleted job, [!DNL Experience Manager] displays an incorrect message (CQ-4315910).
+
+### Workflow {#workflow-6590}
+
+* When you click Complete, Delegate, or Open actions for items available in Inbox, there is no visual clue to signify the completion of these actions (NPR-36317).
 
 ### [!DNL Communities] {#communities-6590}
 
@@ -106,8 +118,6 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
-
-* Bug fix 1
 
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 

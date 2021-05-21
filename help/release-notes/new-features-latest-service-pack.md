@@ -15,7 +15,19 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-Feature 1
+### Ability to restore deleted pages and tree {#ability-to-restore-pages-tree}
+
+You can now restore the deleted pages and the entire tree view on an [!DNL Experience Manager Sites] page.
+
+### Accessibility enhancements {#accessibility-enhancements}
+
+* Improved error reporting by adding text information.
+
+* Improved user interface focus during keyboard navigation.
+
+* Improved Non-Visual Desktop Access (NVDA) capabilities.
+
+* Improved screen reader support.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
@@ -26,8 +38,6 @@ Feature 1
 >[!NOTE]
 >
 >The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
-
-Feature 1
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
