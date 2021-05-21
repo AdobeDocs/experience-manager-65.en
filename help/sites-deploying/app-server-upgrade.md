@@ -1,8 +1,6 @@
 ---
 title: Upgrade Steps for Application Server Installations
-seo-title: Upgrade Steps for Application Server Installations
 description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
-seo-description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
 uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +8,6 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
 docset: aem65
-
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 ---
@@ -82,26 +79,26 @@ All the examples in this procedure use Tomcat as the Application Server and impl
 
    * Add the following line to `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
 
-       ```customBlobStore=true```
+     `customBlobStore=true`
    
    * Then add the following lines to `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
 
-      ```
-      path=./crx-quickstart/repository/datastore
-      minRecordLength=4096
-      ```
+     ```
+     path=./crx-quickstart/repository/datastore
+     minRecordLength=4096
+     ```
 
 1. You now need to change the run modes in the AEM 6.5 war file. In order to do that, first create a temporary folder that will be housing the AEM 6.5 war. The name of the folder in this example will be `temp`. Once the war file has been copied over, extract its contents by running from inside the temp folder: 
 
-      ```
-      jar xvf aem-quickstart-6.5.0.war
-      ```
+   ```
+   jar xvf aem-quickstart-6.5.0.war
+   ```
 
 1. Once the contents have been extracted, go to the **WEB-INF** folder and edit the web.xml file to change the run modes. To find the location where they are set in the XML, look for the `sling.run.modes` string. Once you find it, change the run modes in the next line of code, which by default is set to author:
 
-    ```bash
-    <param-value >author</param-value>
-    ```
+   ```bash
+   <param-value >author</param-value>
+   ```
 
 1. Change the above author value and set the run modes to: `author,crx3,crx3tar`. The final block of code should look like this:
 
@@ -116,8 +113,8 @@ All the examples in this procedure use Tomcat as the Application Server and impl
 
 1. Recreate the jar with the modified contents:
 
-    ```bash
-    jar cvf aem65.war
-    ```
+   ```bash
+   jar cvf aem65.war
+   ```
 
 1. Finally, deploy the new war file in TomCat.
