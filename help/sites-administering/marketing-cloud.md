@@ -20,7 +20,7 @@ With Adobe Experience Manager (AEM), you can seamlessly integrate with the follo
 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites.
 * Adobe Campaign lets you manage email delivery content directly in Adobe Experience Manager.
 
-In addition, you can [integrate AEM with Creative Cloud](/help/assets/aem-cc-folder-sharing-best-practices.md) and with [third-party services](/help/sites-administering/third-party-services.md).
+In addition, you can [integrate AEM with Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) and with [third-party services](/help/sites-administering/third-party-services.md).
 
 ## Integrating with Adobe Analytics {#integrating-with-adobe-analytics}
 
