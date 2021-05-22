@@ -110,7 +110,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When creating a hyperlink, the option to search a link does not work in the text component (NPR-35849).
 
-* A traversal query is triggered on using the com.day.cq.wcm.commons.ReferenceSearch API. It impacts performance of AEM server (NPR-36407).
+* A traversal query is triggered on using the `com.day.cq.wcm.commons.ReferenceSearch` API. It impacts performance of [!DNL Experience Manager] server (NPR-36407).
 
 * Nested Layout container inside another resized Layout Container shows an incorrect number of columns for its child components, resulting in these components not being aligned to the grid (NPR-36359).
 
@@ -118,9 +118,9 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * After displaying references for some time, the references panel starts showing an error message (NPR-36167).
 
-* When moving a component, the automatically created parsys, doesn't have the sling:resourceType node (NPR-36165).
+* When moving a component, the automatically created parsys, does not have the `sling:resourceType` node (NPR-36165).
 
-* When trying to sync a livecopy (while using roll-out configs Activate on Blueprint activation and De-activate on Blueprint activation) if a component is deleted in the livecopy master, the sync fails and a NullPointerException is logged (NPR-36127).
+* When trying to sync a livecopy (while using roll-out configs [!UICONTROL Activate on Blueprint activation] and [!UICONTROL De-activate on Blueprint activation]) if a component is deleted in the livecopy master, the sync fails and a `NullPointerException` is logged (NPR-36127).
 
 * When a user types in ad hoc text for tag (tag that does not exist on the system) and hit enter, the tag appears under the field but when the Content Fragment is saved and re-opened, the ad hoc tag disappears (NPR-36132).
 
@@ -128,11 +128,11 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * A duplicate component is created after restoring inheritance (NPR-36000).
 
-* When using the RemoteContentRenderingService, the request to the RemoteContentRendererRequestHandler.getRequest always includes the root page for the ComponentExporter, but does not include the requested page if it is not included with the root model based on the traversal depth and filtering options set. The request should always include the requested page so that the SPA has enough information to render a response (NPR-35961).
+* When using the `RemoteContentRenderingService`, the request to the `RemoteContentRendererRequestHandler.getRequest` always includes the root page for the  `ComponentExporter`, but does not include the requested page if it is not included with the root model based on the traversal depth and filtering options set. The request should always include the requested page so that the SPA has enough information to render a response (NPR-35961).
 
 * onTime/offTime items do not activate/deactivate on the expected onTime/offTime (NPR-35936).
 
-* When you publish a page containing an Experience Fragment that has no cq:lastModified property, a NullPointerException occurs (NPR-35914).
+* When you publish a page containing an Experience Fragment that has no `cq:lastModified` property, a `NullPointerException` occurs (NPR-35914).
 
 * When trying to resize a component within a container, resizing back to the original size is not possible. When the component container size is reduced, it is not possible to set the size back to the original (NPR-35809).
 
@@ -257,9 +257,6 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Me
 * In Spam filtering, the system consumes 100% of the JAVA heap space which brings down the AEM server (NPR-36316). 
 * In Forums, the JCR sessions data originating from SearchCommentSocialComponentListProvider is leaked (NPR-36235).
 * Opening a specific inbox message reflects all the messages with improper pagination and other issues (NPR-35917).
-* The Handlebars Scripting Engine embeds vulnerable cache (handlebars-guava-cache-4.0.0.jar) library (NPR-35847).
-* The Handlebars script (handlebar.js) is vulnerable to remote code execution (NPR-35846).
-* Security issues in User Generated Content - /content/usergenerated (CQ-4318188).
 
 ### [!DNL Brand Portal] {#brandportal-6590}
 
