@@ -95,7 +95,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   * Visual asterisk to signify mandatory field is now provided in Title field of asset in Image Set Editor, and screen readers announce the required information for the field (CQ-4290712).
 
   * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
-
+  
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0 release.
@@ -131,6 +131,26 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 * When update asset workflow is started on the video asset, the page refreshes repeatedly (CQ-4313375).
 
 #### [!DNL Dynamic Media] {#dynamic-media-6590}
+
+Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Media:
+
+* Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
+
+* When attempting to preview video renditions on asset details page the videos are slow to load (CQ-4320122).
+
+* Browser page gets unresponsive and slows down when uploading more than 200 assets with Duplicate Asset Detector enabled (CQ-4319633).
+
+* When a panoramic image asset is added on the panoramic media component on a page, then an Uncaught Reference error is logged (CQ-4317666).
+
+* When interactive media viewer is implemented with experience fragment, the experience fragment is not opened from the publisher and an error is logged (CQ-4317655).
+
+* Publish to Dynamic Media option is not available in Quick Publish in metadataeditor view (CQ-4317199).
+
+* Site Authors with read only permissions can use smart crop functionality on assets and edit the smart cropped renditions. However, users with read only permissions should not be able to edit asset properties in Sites Dev instance (CQ-4316450).
+
+* Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
+
+* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (?) (CQ-4311872).
 
 Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Media:
 
@@ -183,8 +203,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Me
 * Opening a specific inbox message reflects all the messages with improper pagination and other issues (NPR-35917).
 * The Handlebars Scripting Engine embeds vulnerable cache (handlebars-guava-cache-4.0.0.jar) library (NPR-35847).
 * The Handlebars script (handlebar.js) is vulnerable to remote code execution (NPR-35846).
-* Security issues in User Generated Content - /content/usergenerated (CQ-4318188). 
-
+* Security issues in User Generated Content - /content/usergenerated (CQ-4318188).
 
 ### [!DNL Brand Portal] {#brandportal-6590}
 
