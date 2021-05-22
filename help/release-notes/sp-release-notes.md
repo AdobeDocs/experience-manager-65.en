@@ -31,6 +31,10 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface (NPR-36291).
 
+* Support for a new user to refresh the access token using a refresh token.
+
+* Support for SMTP XOAUTH2 mechanism.
+
 * Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions (CQ-4308974).
 
 * Configuration is added to lowercase the email ID in API response from Adobe Experience Manager (CQ-4317704).
@@ -102,7 +106,9 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 ### [!DNL Sites] {#sites-6590}
 
-* Bug fix 1
+* Published pages with Authentication Requirement property enabled do not redirect to the login page and return 404 error message (NPR-36354).
+
+* When creating a hyperlink, the option to search a link does not work in the text component (NPR-35849).
 
 ### [!DNL Assets] {#assets-6590}
 
@@ -129,6 +135,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 * The option to move to Next page is disabled on selecting the page on select Templates view on Create Catalog page (CQ-4315462).
 
 * When update asset workflow is started on the video asset, the page refreshes repeatedly (CQ-4313375).
+
+* Introduced the [!UICONTROL None] option in Card, Column, and Insights view to sort assets in the order they are stored in the JCR node (NPR-36356).
 
 #### [!DNL Dynamic Media] {#dynamic-media-6590}
 
@@ -172,29 +180,65 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Me
 
 * When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (?) (CQ-4311872).
 
-### [!DNL Commerce] {#commerce-6590}
-
-* Bug fix 1
-
 ### Platform {#platform-6590}
 
-* Bug fix 1
+* When you generate a thumbnail for a blueprint and roll out the changes to the live copy, the inheritance for some fields does not work (CQ-4319517).
 
-### User Interface {#ui-6590}
+* When you create a folder, select the Orderable property, and add more than 20 assets to the folder, selecting all assets in the folder displays a wrong count (CQ-4316243).
 
-* Bug fix 1
+* When you refresh a page, the sorting of folder or assets does not display appropriate results (CQ-4316200).
+
+* Upgraded MongoDB Java driver to version 3.12.7 (NPR-36373).
+
+* Handlebars JavaScript library is upgraded to v4.7.7 (NPR-36375).
+
+* Custom bundles are not updated when installing a new code package using Package Manager (NPR-35949).
+
+* A `resourceresolver` Sling bundle is causing `Sling:alias` query to fail (NPR-35335).
+
+* The context path gets removed when setting up SSL in AEM (NPR-35294).
+
+* The `SegmentNotFound` exception is returned after a long running session (NPR-36405).
 
 ### Integrations {#integrations-6590}
 
-* Bug fix 1
+* Unable to save page properties with inheritance enabled for Cloud Services experience fragments (NPR-36107).
+
+* IMS user interface pagination and lazy loading does not display appropriate results (NPR-36046).
+
+* When you create A4T Target configuration and select the reporting source as [!DNL Adobe Analytics], there are no Adobe Target-enabled report suites available in the dropdown list (NPR-36006).
+
+### Projects {#projects-6590}
+
+* Cannot save the properties of a project as the JCR path to the project is not resolved due to an extra forward slash (/) appended to the project path (NPR-36191).
+
+### Screens {#screens-6590}
+
+* [!DNL Experience Manager Screens] players cannot authenticate if custom 2FA authentication handler is used (NPR-35854).
+
+### Commerce {#commerce-6590}
+
+* The [!UICONTROL Commerce Catalog] wizard fails to load more than 40 items in the Column view (CQ-4318379).
 
 ### Translation projects {#translation-6590}
 
-* Bug fix 1
+* Update or Overwrite options do not display while retranslating an `es` to `es_es` page (NPR-36170).
 
-### Campaign {#campaign-6590}
+* When the auto-approve option is selected for a project with human translation, the job status displays as `Unknown` (NPR-35981).
 
-* Bug fix 1
+* When you are translating a page, the reference path of experience fragments does not update to the destination experience fragment reference path (NPR-35911).
+
+* When you make changes in the parent and child pages and send the parent page for translation, the child pages are incorrectly translated as well (NPR-35896).
+
+* When there are multiple concurrent translation projects for a selected page, the [!UICONTROL Go To Projects] option does not link to the latest translation project (NPR-35454).
+
+* When you publish assets to [!DNL Dynamic Media], [!DNL Experience Manager] displays an incorrect message for unpublished tags (CQ-4315914, CQ-4315913).
+
+* When you open a deleted job, [!DNL Experience Manager] displays an incorrect message (CQ-4315910).
+
+### Workflow {#workflow-6590}
+
+* When you click Complete, Delegate, or Open actions for items available in Inbox, there is no visual clue to signify the completion of these actions (NPR-36317).
 
 ### [!DNL Communities] {#communities-6590}
 
@@ -214,8 +258,6 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Me
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
-
-* Bug fix 1
 
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
