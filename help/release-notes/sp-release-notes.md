@@ -110,6 +110,38 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When creating a hyperlink, the option to search a link does not work in the text component (NPR-35849).
 
+* A traversal query is triggered on using the com.day.cq.wcm.commons.ReferenceSearch API. It impacts performance of AEM server (NPR-36407).
+
+* Nested Layout container inside another resized Layout Container shows an incorrect number of columns for its child components, resulting in these components not being aligned to the grid (NPR-36359).
+
+* External Link Checker is displays valid external links as invalid links (NPR-36289).
+
+* After displaying references for some time, the references panel starts showing an error message (NPR-36167).
+
+* When moving a component, the automatically created parsys, doesn't have the sling:resourceType node (NPR-36165).
+
+* When trying to sync a livecopy (while using roll-out configs Activate on Blueprint activation and De-activate on Blueprint activation) if a component is deleted in the livecopy master, the sync fails and a NullPointerException is logged (NPR-36127).
+
+* When a user types in ad hoc text for tag (tag that does not exist on the system) and hit enter, the tag appears under the field but when the Content Fragment is saved and re-opened, the ad hoc tag disappears (NPR-36132).
+
+* Inbox does not have option display the status of Asynchronous Operations (NPR-36104).
+
+* A duplicate component is created after restoring inheritance (NPR-36000).
+
+* When using the RemoteContentRenderingService, the request to the RemoteContentRendererRequestHandler.getRequest always includes the root page for the ComponentExporter, but does not include the requested page if it is not included with the root model based on the traversal depth and filtering options set. The request should always include the requested page so that the SPA has enough information to render a response (NPR-35961).
+
+* onTime/offTime items do not activate/deactivate on the expected onTime/offTime (NPR-35936).
+
+* When you publish a page containing an Experience Fragment that has no cq:lastModified property, a NullPointerException occurs (NPR-35914).
+
+* When trying to resize a component within a container, resizing back to the original size is not possible. When the component container size is reduced, it is not possible to set the size back to the original (NPR-35809).
+
+* In the roll out dialog, either triggered in the editor or from the Live Copy Overview, the status icons for detached, suspended or not created pages is wrong (NPR-35691).
+
+* Multi-Site Manager rollout on-page properties of master ignore rollout page and sub-pages checkbox (NPR-35634).
+
+* Restore tree functionality, available in the classic UI is missing from Touch UI (CQ-4315352, CQ-4309415).
+
 ### [!DNL Assets] {#assets-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] fixes the following issues.
