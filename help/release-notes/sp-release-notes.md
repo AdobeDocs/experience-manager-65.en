@@ -51,25 +51,25 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier).
 
->[!NOTE]
->
->The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
+  >[!NOTE]
+  >
+  >The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
 
 * **Accessibility enhancements in Assets**
 
   Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
-  * asset title on Properties page (NPR-35967).
-  * star rating icons in Rating sections at various places (NPR-36009).
+  * asset title on [!UICONTROL Properties] page (NPR-35967).
+  * star rating icons in [!UICONTROL Rating] sections at various places (NPR-36009).
   * text on the asset and folder card view (NPR-35966).
-  * placeholder text on the timeline view (NPR-35965).
+  * placeholder text on the [!UICONTROL Timeline] view (NPR-35965).
   * asset names on the asset search results (NPR-35964).
-  * placeholder text on the Link Sharing dialog (NPR-35963).
-  * 'Metadata', 'Status' & 'Other' text in 'List' option in the 'View Settings' dialog (NPR-35910).
-  * ‘Location’, and ‘Type to search’ placeholder texts in global search (NPR-35909).
-  * expand and collapse icons under the Content Tree (NPR-35908).
-  * the ‘Assets’ text on the page where assets folders are displayed (NPR-35905).
-  * text in Asset Metadata, Usage Statistics within Overview option in asset details page (NPR-35904).
-  * text for shortcut keys (p), (e), (m) in asset details page (NPR-35904).
+  * placeholder text on the [!UICONTROL Link Sharing] dialog (NPR-35963).
+  * [!UICONTROL Metadata], [!UICONTROL Status] and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
+  * [!UICONTROL Location] and [!UICONTROL Type to search] placeholder texts in global search (NPR-35909).
+  * expand and collapse icons under the [!UICONTROL Content Tree] (NPR-35908).
+  * the [!UICONTROL Assets] text on the page where assets folders are displayed (NPR-35905).
+  * text in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] within [!UICONTROL Overview] option in asset details page (NPR-35904).
+  * text for shortcut keys for [!UICONTROL properties] and [!UICONTROL edit] options in asset details page (NPR-35904).
 
 * **Accessibility enhancements in Dynamic Media**
 
@@ -143,26 +143,6 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Media:
 
 * Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
-
-* When attempting to preview video renditions on asset details page the videos are slow to load (CQ-4320122).
-
-* Browser page gets unresponsive and slows down when uploading more than 200 assets with Duplicate Asset Detector enabled (CQ-4319633).
-
-* When a panoramic image asset is added on the panoramic media component on a page, then an Uncaught Reference error is logged (CQ-4317666).
-
-* When interactive media viewer is implemented with experience fragment, the experience fragment is not opened from the publisher and an error is logged (CQ-4317655).
-
-* Publish to Dynamic Media option is not available in Quick Publish in metadataeditor view (CQ-4317199).
-
-* Site Authors with read only permissions can use smart crop functionality on assets and edit the smart cropped renditions. However, users with read only permissions should not be able to edit asset properties in Sites Dev instance (CQ-4316450).
-
-* Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
-
-* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (?) (CQ-4311872).
-
-Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Media:
-
-* Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by default < https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config> (NPR-36232).
 
 * When attempting to preview video renditions on asset details page the videos are slow to load (CQ-4320122).
 
