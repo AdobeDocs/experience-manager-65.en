@@ -48,24 +48,24 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 * Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier).
 
 >[!NOTE]
-   >
-   >The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
+>
+>The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
 
 * **Accessibility enhancements in Assets**
 
-  * Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
-    * asset title on Properties page (NPR-35967).
-    * star rating icons in Rating sections at various places (NPR-36009).
-    * text on the asset and folder card view (NPR-35966).
-    * placeholder text on the timeline view (NPR-35965).
-    * asset names on the asset search results (NPR-35964).
-    * placeholder text on the Link Sharing dialog (NPR-35963).
-    * 'Metadata', 'Status' & 'Other' text in 'List' option in the 'View Settings' dialog (NPR-35910).
-    * ‘Location’, and ‘Type to search’ placeholder texts in global search (NPR-35909).
-    * expand and collapse icons under the Content Tree (NPR-35908).
-    * the ‘Assets’ text on the page where assets folders are displayed (NPR-35905).
-    * text in Asset Metadata, Usage Statistics within Overview option in asset details page (NPR-35904).
-    * text for shortcut keys (p), (e), (m) in asset details page (NPR-35904).
+  Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
+  * asset title on Properties page (NPR-35967).
+  * star rating icons in Rating sections at various places (NPR-36009).
+  * text on the asset and folder card view (NPR-35966).
+  * placeholder text on the timeline view (NPR-35965).
+  * asset names on the asset search results (NPR-35964).
+  * placeholder text on the Link Sharing dialog (NPR-35963).
+  * 'Metadata', 'Status' & 'Other' text in 'List' option in the 'View Settings' dialog (NPR-35910).
+  * ‘Location’, and ‘Type to search’ placeholder texts in global search (NPR-35909).
+  * expand and collapse icons under the Content Tree (NPR-35908).
+  * the ‘Assets’ text on the page where assets folders are displayed (NPR-35905).
+  * text in Asset Metadata, Usage Statistics within Overview option in asset details page (NPR-35904).
+  * text for shortcut keys (p), (e), (m) in asset details page (NPR-35904).
 
 * **Accessibility enhancements in Dynamic Media**
 
