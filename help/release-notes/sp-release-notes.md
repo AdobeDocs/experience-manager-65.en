@@ -142,6 +142,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * Restore tree functionality, available in the classic UI is missing from Touch UI (CQ-4315352, CQ-4309415).
 
+* Issues while reverting inheritance and rolling out page on an [!DNL Experience Manager Sites] page (NPR-36033).
+
 ### [!DNL Assets] {#assets-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] fixes the following issues.
@@ -254,7 +256,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Me
 
 ### [!DNL Communities] {#communities-6590}
 
-* In Spam filtering, the system consumes 100% of the JAVA heap space which brings down the AEM server (NPR-36316). 
+* In Spam filtering, the system consumes 100% of the JAVA heap space which brings down the AEM server (NPR-36316, NPR-36493). 
 * In Forums, the JCR sessions data originating from SearchCommentSocialComponentListProvider is leaked (NPR-36235).
 * Opening a specific inbox message reflects all the messages with improper pagination and other issues (NPR-35917).
 
