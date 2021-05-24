@@ -35,7 +35,7 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
 
 * An optional configuration is introduced to lower case the email IDs in ACP api response from [!DNL Adobe Experience Manager].
 
- [!configuration to lowercase the email IDs in ACP response from AEM](/help/release-notes/assets/email-lowcase-config.png)
+ [!configuration to lowercase the email IDs in ACP response from AEM](/assets/email-lowcase-config.png)
  
 * Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and lack of perception of color.
 
