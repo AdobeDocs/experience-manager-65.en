@@ -31,7 +31,45 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-Feature 1
+* Updated the naming of Chinese locales and regions relating to Hong Kong, Macau, and Taiwan, to make them consistent with Chinese social and political views.
+
+* An optional configuration is introduced to lower case the email IDs in ACP api response from [!DNL Adobe Experience Manager].
+
+ [!configuration to lowercase the email IDs in ACP response from AEM](/help/release-notes/assets/email-lowcase-config.png)
+ 
+* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and lack of perception of color.
+
+### Dynamic Media {#assets-dynamic-media}
+
+* Dynamic media is more accessible in terms of:
+
+  * ease of usage with keyboard keys.
+  * contrast (with background) of text, placeholder text, and controls in various editors.
+  * accessibility and narration by screen readers.
+
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
+
+   >[!NOTE]
+   >
+   >The release timeline for smart imaging and image optimization is:
+   >
+   >* North America May 24, 2021 in NA,
+   >
+   >* Europe, the Middle East and Africa June 25, 2021,
+   >
+   >* Asia-Pacific July 19, 2021.
+
+* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier). For more information, see [image serving and rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+
+  >[!NOTE]
+  >
+  >The release timeline for AVIF support is:
+  >
+  >* North America May 10, 2021,
+  >
+  >* Europe, the Middle East and Africa May 24, 2021,
+  >
+  >* Asia-Pacific June 24, 2021.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
