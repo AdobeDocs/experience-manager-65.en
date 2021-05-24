@@ -24,9 +24,9 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.9.0 are:
 
-* AEM Sites Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop (CQ-4317858).
+* AEM Sites Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
 
-* To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface (NPR-36291).
+* To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface.
 
 * Accessibility enhancements in [!DNL Experience Manager] Sites.
 

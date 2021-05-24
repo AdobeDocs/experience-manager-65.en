@@ -37,7 +37,7 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
 
    ![configuration to lowercase the email IDs in ACP response from AEM](assets/email-lowcase-config.png)
  
-* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and lack of perception of color.
+* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and lack of perception of color. For more information, see [Accessibility enhancements in Assets](sp-release-notes.md#assets-accessibility-6590)
 
 ### Dynamic Media {#assets-dynamic-media}
 
