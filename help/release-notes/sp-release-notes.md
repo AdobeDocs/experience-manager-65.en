@@ -36,7 +36,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for SMTP XOAUTH2 mechanism for mailer configuration service.
 
-* Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions (CQ-4308974).
+* Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions.
 
 * Accessibility enhancements in [!DNL Experience Manager] [Assets](#assets-accessibility-6590) and [Dynamic Media](#accessibility-dm-6590).
 
