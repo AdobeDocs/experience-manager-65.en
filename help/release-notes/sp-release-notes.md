@@ -27,7 +27,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 <!-- TBD:
 * Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
 
-* AEM Sites Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop (CQ-4317858).
+* AEM Sites Dynamic Media Foundation component now allows you to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop (CQ-4317858).
 
 * To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface (NPR-36291).
 
@@ -47,7 +47,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * When browsing assets in Column view, a visual indicator displays for expired assets (CQ-4316923).
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently; on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -73,7 +73,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * Nested Layout container inside another resized Layout Container shows an incorrect number of columns for its child components, resulting in these components not being aligned to the grid (NPR-36359).
 
-* External Link Checker is displays valid external links as invalid links (NPR-36289).
+* External Link Checker displays valid external links as invalid links (NPR-36289).
 
 * After displaying references for some time, the references panel starts showing an error message (NPR-36167).
 
@@ -81,13 +81,13 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When trying to sync a livecopy (while using roll-out configs [!UICONTROL Activate on Blueprint activation] and [!UICONTROL De-activate on Blueprint activation]) if a component is deleted in the livecopy master, the sync fails and a `NullPointerException` is logged (NPR-36127).
 
-* When a user types in ad hoc text for tag (tag that does not exist on the system) and hit enter, the tag appears under the field but when the Content Fragment is saved and re-opened, the ad hoc tag disappears (NPR-36132).
+* When a user types in ad hoc text for tag (tag that does not exist on the system) and hit enter, the tag appears under the field but when the Content Fragment is saved and reopened, the ad hoc tag disappears (NPR-36132).
 
 * Inbox does not have option display the status of Asynchronous Operations (NPR-36104).
 
 * A duplicate component is created after restoring inheritance (NPR-36000).
 
-* When using the `RemoteContentRenderingService`, the request to the `RemoteContentRendererRequestHandler.getRequest` always includes the root page for the  `ComponentExporter`, but does not include the requested page if it is not included with the root model based on the traversal depth and filtering options set. The request should always include the requested page so that the SPA has enough information to render a response (NPR-35961).
+* When using the `RemoteContentRenderingService`, the request to the `RemoteContentRendererRequestHandler.getRequest` always includes the root page for the  `ComponentExporter`, but does not include the requested page if it is not included with the root model based on the traversal depth and filtering options set. The request must always include the requested page so that the SPA has enough information to render a response (NPR-35961).
 
 * onTime/offTime items do not activate/deactivate on the expected onTime/offTime (NPR-35936).
 
@@ -95,9 +95,9 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When trying to resize a component within a container, resizing back to the original size is not possible. When the component container size is reduced, it is not possible to set the size back to the original (NPR-35809).
 
-* In the roll out dialog, either triggered in the editor or from the Live Copy Overview, the status icons for detached, suspended or not created pages is wrong (NPR-35691).
+* In the roll out dialog, either triggered in the editor or from the Live Copy Overview, the status icons for detached, suspended, or not created pages is wrong (NPR-35691).
 
-* Multi-Site Manager rollout on-page properties of master ignore rollout page and sub-pages checkbox (NPR-35634).
+* Multi-Site Manager rollout on-page properties of master ignore rollout page and subpages checkbox (NPR-35634).
 
 * Restore tree functionality, available in the classic UI is missing from Touch UI (CQ-4315352, CQ-4309415).
 
@@ -143,7 +143,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 * placeholder text on the [!UICONTROL Timeline] view (NPR-35965).
 * asset names on the asset search results (NPR-35964).
 * placeholder text on the [!UICONTROL Link Sharing] dialog (NPR-35963).
-* [!UICONTROL Metadata], [!UICONTROL Status] and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
+* [!UICONTROL Metadata], [!UICONTROL Status], and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
 * [!UICONTROL Location] and [!UICONTROL Type to search] placeholder texts in global search (NPR-35909).
 * expand and collapse icons under the [!UICONTROL Content Tree] (NPR-35908).
 * the [!UICONTROL Assets] text on the page where assets folders are displayed (NPR-35905).
@@ -156,17 +156,17 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
 
-* When attempting to preview video renditions on asset details page the videos are slow to load (CQ-4320122).
+* When attempting to preview video renditions on asset details page, the videos are slow to load (CQ-4320122).
 
 * Browser page gets unresponsive and slows down when uploading more than 200 assets with Duplicate Asset Detector enabled (CQ-4319633).
 
 * When a panoramic image asset is added on the panoramic media component on a page, then an Uncaught Reference error is logged (CQ-4317666).
 
-* When interactive media viewer is implemented with experience fragment, the experience fragment is not opened from the publisher and an error is logged (CQ-4317655).
+* When interactive media viewer is implemented with Experience Fragment, the Experience Fragment is not opened from the publisher and an error is logged (CQ-4317655).
 
 * Publish to Dynamic Media option is not available in Quick Publish in metadataeditor view (CQ-4317199).
 
-* Site Authors with read only permissions can use smart crop functionality on assets and edit the smart cropped renditions. However, users with read only permissions should not be able to edit asset properties in Sites Dev instance (CQ-4316450).
+* Site Authors with read-only permissions can use smart crop functionality on assets and edit the smart cropped renditions. However, users with read-only permissions must not be able to edit asset properties in Sites Dev instance (CQ-4316450).
 
 * Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
 
@@ -225,7 +225,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 ### Integrations {#integrations-6590}
 
-* Unable to save page properties with inheritance enabled for Cloud Services experience fragments (NPR-36107).
+* Unable to save page properties with inheritance enabled for Cloud Services Experience Fragments (NPR-36107).
 
 * IMS user interface pagination and lazy loading does not display appropriate results (NPR-36046).
 
@@ -249,7 +249,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * When the auto-approve option is selected for a project with human translation, the job status displays as `Unknown` (NPR-35981).
 
-* When you are translating a page, the reference path of experience fragments does not update to the destination experience fragment reference path (NPR-35911).
+* When you are translating a page, the reference path of Experience Fragments does not update to the destination Experience Fragment reference path (NPR-35911).
 
 * When you make changes in the parent and child pages and send the parent page for translation, the child pages are incorrectly translated as well (NPR-35896).
 
@@ -342,7 +342,7 @@ To know the platforms certified to work with this release, see the [technical re
 >Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
 1. Ensure that you have installed the Adobe Experience Manager Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) for your operating system.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 >[!NOTE]
