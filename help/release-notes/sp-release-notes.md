@@ -31,13 +31,17 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface (NPR-36291).
 
-* Support for a new user to refresh the access token using a refresh token.
+* Accessibility enhancements in [!DNL Experience Manager] Sites.
 
-* Support for SMTP XOAUTH2 mechanism.
+* Ability to restore deleted pages and tree on an [!DNL Experience Manager Sites] page.
+
+* Support for a new user to refresh the access token using a refresh token for mailer configuration service.
+
+* Support for SMTP XOAUTH2 mechanism for mailer configuration service.
 
 * Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions (CQ-4308974).
 
-* Configuration is added to lowercase the email ID in API response from Adobe Experience Manager (CQ-4317704).
+* An option to add the email ID in lowercase in API response from Adobe Experience Manager (CQ-4317704).
 
 * When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset (CQ-4316924).
 
