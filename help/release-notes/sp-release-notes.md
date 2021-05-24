@@ -55,51 +55,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   >
   >The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
 
-* **Accessibility enhancements in Assets**
-
-  Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
-  * asset title on [!UICONTROL Properties] page (NPR-35967).
-  * star rating icons in [!UICONTROL Rating] sections at various places (NPR-36009).
-  * text on the asset and folder card view (NPR-35966).
-  * placeholder text on the [!UICONTROL Timeline] view (NPR-35965).
-  * asset names on the asset search results (NPR-35964).
-  * placeholder text on the [!UICONTROL Link Sharing] dialog (NPR-35963).
-  * [!UICONTROL Metadata], [!UICONTROL Status] and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
-  * [!UICONTROL Location] and [!UICONTROL Type to search] placeholder texts in global search (NPR-35909).
-  * expand and collapse icons under the [!UICONTROL Content Tree] (NPR-35908).
-  * the [!UICONTROL Assets] text on the page where assets folders are displayed (NPR-35905).
-  * text in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] within [!UICONTROL Overview] option in asset details page (NPR-35904).
-  * text for shortcut keys for [!UICONTROL properties] and [!UICONTROL edit] options in asset details page (NPR-35904).
-
-* **Accessibility enhancements in Dynamic Media**
-
-  * When you open the dialog to add assets using keyboard keys in Image Set editor:
-    * screen readers narrate that the dialog is opened.
-    * keyboard focus moves to the dialog when it opens.
-    * keyboard focus moves back to Add Asset option when the dialog is closed (CQ-4312134).
-
-  * You can now add and edit Hotspots on assets using keyboard keys in Hotspot editor (CQ-4305965).
-
-  * You can now put hyperlink on hotspot through Hotspot management using keyboard keys. The screen reader focus now moves to the field to edit URL Path and option to Open selection dialog (CQ-4290735).
-
-  * Contrast (with background) of text and controls on Image Set Editor page is improved, so that the users with limited vision and lack of perception of color can comprehend (CQ-4290733).
-
-  * You can now navigate to asset sharing options on Viewer Preset Editor and collapse the expanded share option using keyboard keys (CQ-4290724).
-
-  * You can now navigate and view tooltips on the information icons and alert icons on Basic and Advanced tabs of Edit Video Encoding page using keyboard keys (CQ-4290722).
-
-  * Screen readers now narrate the instructions for various fields in Appearance tab and Behavior tab on Viewer Preset Editor (CQ-4290721).
-
-  * When navigating the Edit Image Preset page in Form mode, screen reader narrates the purpose and names of various fields and controls (CQ-4290717).
-
-  * When navigating assets detail page, screen readers now describe the purpose of various options within Viewers (CQ-4290716).
-
-  * Contrast (with background) of the placeholder text All Renditions in Renditions option of asset details page is improved, so that users with limited vision and lack of perception of color can comprehend (CQ-4290713).
-
-  * Visual asterisk to signify mandatory field is now provided in Title field of asset in Image Set Editor, and screen readers announce the required information for the field (CQ-4290712).
-
-  * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
-  
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0 release.
@@ -172,9 +127,28 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * Introduced the [!UICONTROL None] option in Card, Column, and Insights view to sort assets in the order they are stored in the JCR node (NPR-36356).
 
+**Accessibility enhancements in Assets**
+
+[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements.
+
+  Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
+  
+* asset title on [!UICONTROL Properties] page (NPR-35967).
+* star rating icons in [!UICONTROL Rating] sections at various places (NPR-36009).
+* text on the asset and folder card view (NPR-35966).
+* placeholder text on the [!UICONTROL Timeline] view (NPR-35965).
+* asset names on the asset search results (NPR-35964).
+* placeholder text on the [!UICONTROL Link Sharing] dialog (NPR-35963).
+* [!UICONTROL Metadata], [!UICONTROL Status] and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
+* [!UICONTROL Location] and [!UICONTROL Type to search] placeholder texts in global search (NPR-35909).
+* expand and collapse icons under the [!UICONTROL Content Tree] (NPR-35908).
+* the [!UICONTROL Assets] text on the page where assets folders are displayed (NPR-35905).
+* text in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] within [!UICONTROL Overview] option in asset details page (NPR-35904).
+* text for shortcut keys for [!UICONTROL properties] and [!UICONTROL edit] options in asset details page (NPR-35904).
+
 #### [!DNL Dynamic Media] {#dynamic-media-6590}
 
-Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Media:
+Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
 
 * Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
 
@@ -193,6 +167,37 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in Dynamic Me
 * Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
 
 * When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (?) (CQ-4311872).
+
+**Accessibility enhancements in Dynamic Media**
+
+[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
+
+* When you open the dialog to add assets using keyboard keys in Image Set editor:
+  * screen readers narrate that the dialog is opened.
+  * keyboard focus moves to the dialog when it opens.
+  * keyboard focus moves back to Add Asset option when the dialog is closed (CQ-4312134).
+
+* You can now add and edit Hotspots on assets using keyboard keys in Hotspot editor (CQ-4305965).
+
+* You can now put hyperlink on hotspot through Hotspot management using keyboard keys. The screen reader focus now moves to the field to edit URL Path and option to Open selection dialog (CQ-4290735).
+
+* Contrast (with background) of text and controls on Image Set Editor page is improved, so that the users with limited vision and lack of perception of color can comprehend (CQ-4290733).
+
+* You can now navigate to asset sharing options on Viewer Preset Editor and collapse the expanded share option using keyboard keys (CQ-4290724).
+
+* You can now navigate and view tooltips on the information icons and alert icons on Basic and Advanced tabs of Edit Video Encoding page using keyboard keys (CQ-4290722).
+
+* Screen readers now narrate the instructions for various fields in Appearance tab and Behavior tab on Viewer Preset Editor (CQ-4290721).
+
+* When navigating the Edit Image Preset page in Form mode, screen reader narrates the purpose and names of various fields and controls (CQ-4290717).
+
+* When navigating assets detail page, screen readers now describe the purpose of various options within Viewers (CQ-4290716).
+
+* Contrast (with background) of the placeholder text All Renditions in Renditions option of asset details page is improved, so that users with limited vision and lack of perception of color can comprehend (CQ-4290713).
+
+* Visual asterisk to signify mandatory field is now provided in Title field of asset in Image Set Editor, and screen readers announce the required information for the field (CQ-4290712).
+
+* Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
 
 ### Platform {#platform-6590}
 
