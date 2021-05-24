@@ -37,7 +37,7 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
 
    ![configuration to lowercase the email IDs in ACP response from AEM](assets/email-lowcase-config.png)
  
-* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and lack of perception of color. For more information, see [Accessibility enhancements in Assets](sp-release-notes.md#assets-accessibility-6590)
+* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and lack of perception of color. For more information, see [Accessibility enhancements in Assets](sp-release-notes.md#assets-accessibility-6590).
 
 ### Dynamic Media {#assets-dynamic-media}
 
@@ -47,7 +47,7 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
   * contrast (with background) of text, placeholder text, and controls in various editors.
   * accessibility and narration by screen readers.
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
 
    >[!NOTE]
    >
@@ -55,7 +55,7 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
    >
    >* North America May 24, 2021 in NA,
    >
-   >* Europe, the Middle East and Africa June 25, 2021,
+   >* Europe, the Middle East, and Africa June 25, 2021,
    >
    >* Asia-Pacific July 19, 2021.
 
@@ -67,7 +67,7 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
   >
   >* North America May 10, 2021,
   >
-  >* Europe, the Middle East and Africa May 24, 2021,
+  >* Europe, the Middle Eas, and Africa May 24, 2021,
   >
   >* Asia-Pacific June 24, 2021.
 
