@@ -188,7 +188,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
 
-* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (/?) (CQ-4311872).
+* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
 
 #### Accessibility enhancements in Dynamic Media {#accessibility-dm-6590}
 
