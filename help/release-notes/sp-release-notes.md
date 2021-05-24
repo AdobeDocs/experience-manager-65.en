@@ -24,9 +24,6 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.9.0 are:
 
-<!-- TBD:
-* Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
-
 * AEM Sites Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop (CQ-4317858).
 
 * To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface (NPR-36291).
@@ -144,10 +141,6 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 * Introduced the [!UICONTROL None] option in card, column, and insights view to sort assets in the order they are stored in the JCR node (NPR-36356).
 
 * An option is added to add the email ID in lowercase in API response from Adobe Experience Manager (CQ-4317704).
-
-* When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset (CQ-4316924).
-
-* When browsing assets in Column view, a visual indicator displays for expired assets (CQ-4316923).
 
 #### Accessibility enhancements in Assets {#assets-accessibility-6590}
 
