@@ -24,10 +24,7 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.9.0 are:
 
-<!-- TBD:
-* Using the Connected Assets functionality, it is now possible to connect up to 3 [!DNL Sites] instances with 1 [!DNL Assets] instances. The configuration user interface now allows the administrators to provide the details of these [!DNL Sites] instances. -->
-
-* AEM Sites Dynamic Media Foundation component now allows you to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop (CQ-4317858).
+* AEM Sites Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop (CQ-4317858).
 
 * To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface (NPR-36291).
 
@@ -39,25 +36,33 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for SMTP XOAUTH2 mechanism for mailer configuration service.
 
-* Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions (CQ-4308974).
+* Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions.
 
-* An option to add the email ID in lowercase in API response from Adobe Experience Manager (CQ-4317704).
+* Accessibility enhancements in [!DNL Experience Manager] [Assets](#assets-accessibility-6590) and [Dynamic Media](#accessibility-dm-6590).
 
-* When browsing assets in Column view, a visual indicator displays the approved or rejected status of each asset (CQ-4316924).
-
-* When browsing assets in Column view, a visual indicator displays for expired assets (CQ-4316923).
-
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enables you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
 
    >[!NOTE]
    >
-   >The enhancement is scheduled to release on May 24, 2021 in NA, June 25, 2021 in EMEA, and July 19, 2021 in APAC regions.
+   >The release timeline for smart imaging and image optimization is:
+   >
+   >* North America May 24, 2021 in NA,
+   >
+   >* Europe, the Middle East and Africa June 25, 2021,
+   >
+   >* Asia-Pacific July 19, 2021.
 
-* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier).
+* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier). For more information, see [image serving and rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
   >[!NOTE]
   >
-  >The enhancement is scheduled to release on May 10, 2021 in NA, May 24, 2021 in EMEA, and June 24, 2021 in APAC regions.
+  >The release timeline for AVIF support is:
+  >
+  >* North America May 10, 2021,
+  >
+  >* Europe, the Middle East and Africa May 24, 2021,
+  >
+  >* Asia-Pacific June 24, 2021. 
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
 
@@ -129,13 +134,19 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When update asset workflow is started on the video asset, the page refreshes repeatedly (CQ-4313375).
 
-* Introduced the [!UICONTROL None] option in Card, Column, and Insights view to sort assets in the order they are stored in the JCR node (NPR-36356).
+* DAM folders cannot be deleted or moved, and an exception is logged (NPR-35942).
 
-**Accessibility enhancements in Assets**
+#### Enhancements in Assets {#assets-enhancements}
+
+* Introduced the [!UICONTROL None] option in card, column, and insights view to sort assets in the order they are stored in the JCR node (NPR-36356).
+
+* An option is added to add the email ID in lowercase in API response from Adobe Experience Manager (CQ-4317704).
+
+#### Accessibility enhancements in Assets {#assets-accessibility-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements.
 
-  Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
+Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
   
 * asset title on [!UICONTROL Properties] page (NPR-35967).
 * star rating icons in [!UICONTROL Rating] sections at various places (NPR-36009).
@@ -150,7 +161,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 * text in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] within [!UICONTROL Overview] option in asset details page (NPR-35904).
 * text for shortcut keys for [!UICONTROL properties] and [!UICONTROL edit] options in asset details page (NPR-35904).
 
-#### [!DNL Dynamic Media] {#dynamic-media-6590}
+### [!DNL Dynamic Media] {#dynamic-media-6590}
 
 Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
 
@@ -170,9 +181,9 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
 
-* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (?) (CQ-4311872).
+* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
 
-**Accessibility enhancements in Dynamic Media**
+#### Accessibility enhancements in Dynamic Media {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
 
