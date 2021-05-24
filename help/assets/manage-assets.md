@@ -104,7 +104,7 @@ You can choose to replace an existing asset, create another version, or keep bot
 >
 >When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
 >
->If Asset Insights is enabled to track impressions/clicks with Adobe Analytics, the regenerated asset ID invalidates the data-captured for the asset on Analytics.
+>If Asset Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
 If the asset you upload exists in [!DNL Assets], the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets does not matter.
 

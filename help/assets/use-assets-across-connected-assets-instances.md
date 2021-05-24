@@ -175,7 +175,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
 ## Limitations and best practices {#tip-and-limitations}
 
-* To get insights about asset usage, configure the [Asset Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
+* To get insights about asset usage, configure the [Assets Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
