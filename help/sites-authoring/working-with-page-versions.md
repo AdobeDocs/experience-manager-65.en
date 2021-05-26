@@ -58,6 +58,8 @@ You can create a version of your resource from:
 
    The timeline will be opened with the information updated to indicate the new version.
 
+<!--
+
 ## Reverting to a Page Version {#reverting-to-a-page-version}
 
 Once a version has been created you can revert to that version if needed.
@@ -85,6 +87,106 @@ To revert to a previous version:
    ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
 
 1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
+
+-->
+
+## Reinstating Versions {#reinstating-versions}
+
+Once you have created a version of your page, there are various methods of reinstating a prior version:
+
+* the **Revert to this Version** option from the [Timeline](/help/sites-authoring/basic-handling.md#timeline) rail
+
+  Reinstate a prior version of a selected page.
+
+* the **Restore** options from the top [actions toolbar](/help/sites-authoring/basic-handling.md#actions-toolbar)
+
+  * **Restore Version**
+
+    Reinstate versions of specified pages within the currently selected folder; this can also include restoring pages that have been previously deleted.
+
+  * **Restore Tree**
+
+    Reinstate a version of an entire tree as at a specified date and time; this can include pages that have been previously deleted.
+
+>[!NOTE]
+>
+>When reinstating a page, the version created will be part of a new branch.
+>
+>To illustrate:  
+>
+>1. Create versions of any page.
+>1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
+>1. Reinstate the first version; i.e. 1.0.
+>1. Create new versions again.
+>1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
+
+### Revert to a Version {#revert-to-a-version}
+
+To **Revert** the selected page to a previous version:
+
+1. Navigate to show the page you want to revert to a previous version.
+1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
+1. Select the version you want to revert to. The possible options will be shown:
+
+   ![Revert to this Version](assets/screen-shot_2019-03-05at112505.png)
+
+1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
+
+### Restore Version {#restore-version}
+
+This method can be used to restore versions of specified pages within the current folder; this can also include restoring pages that have been previously deleted:
+
+1. Navigate to, and [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Select **Restore**, then **Restore Version** from the top [actions toolbar](/help/sites-authoring/basic-handling.md#actions-toolbar).
+
+   >[!NOTE]
+   >
+   >If, either:
+   >
+   >* you have selected a single page, that has never had any child pages,
+   >* or none of the pages in the folder have versions,
+   >
+   >Then the display will be empty as there are no versions applicable.
+
+1. The available versions will be listed:
+
+   ![Restore Version - List of all pages in folder](/help/sites-authoring/assets/versions-restore-version-01.png)
+
+1. For a specific page, use the drop down selector under **RESTORE TO VERSION** to select the required version for that page.
+
+   ![Restore Version - Select Version](/help/sites-authoring/assets/versions-restore-version-02.png)
+
+1. In the main display, select the required page to be restored:
+
+   ![Restore Version - Select Page](/help/sites-authoring/assets/versions-restore-version-03.png)
+
+1. Select **Restore** for the selected version, of the selected page, to be restored as the current version.
+
+>[!NOTE]
+>
+>The order in which you select a required page and the related version is interchangeable.
+
+### Restore Tree {#restore-tree}
+
+This method can be used to restore a version of a tree as at a specified date and time; this can include pages that have been previously deleted:
+
+1. Navigate to, and [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), the required folder.
+
+1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-authoring/basic-handling.md#actions-toolbar). The latest version of the tree will be shown:
+
+   ![Restore Tree](/help/sites-authoring/assets/versions-restore-tree-01.png)
+
+1. Use the date and time selector at **Latest Versions at Date** to select another version of the tree - the one to be restored.
+
+1. Set the flag **Preserved Non Versioned Pages** as required:
+
+   * If active (selected), then any non-versioned pages will be maintained and not impacted by the restore. 
+
+   * If inactive (unselected), then any non-versioned pages will be removed as they did not exist in the versioned tree.
+
+1. Select **Restore** for the selected version of the tree to be restored as the *current* version.
 
 ## Previewing a Version {#previewing-a-version}
 
