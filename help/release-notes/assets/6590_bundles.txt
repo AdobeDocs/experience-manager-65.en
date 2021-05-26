@@ -1,0 +1,67 @@
+SYMBOLIC NAME                                               BUNDLE NAME                                           VERSION
+org.apache.oltu.oauth2.client                               org.apache.oltu.oauth2.client                         1.0.0
+com.adobe.cq.cq-experience-fragments                        AEM - Experience Fragments                            1.2.78
+com.adobe.cq.social.cq-social-commons                       AEM Communities Commons - Bundle                      1.10.82
+com.adobe.cq.social.cq-social-handlebars                    AEM Communities Handlebars Scripting Engine - Bundle  1.10.20
+com.adobe.cq.social.cq-social-messaging-api                 AEM Communities Messaging - API Bundle                1.6.8
+com.adobe.cq.social.cq-social-messaging-impl                AEM Communities Messaging - Impl Bundle               1.6.15
+com.adobe.cq.social.cq-social-moderation-spamdetector-core  AEM Communities Spam Detection Core - Bundle          3.3.1
+com.adobe.cq.dam.cq-dynamicmedia-core                       AEM Dynamic Media Integration                         1.0.136
+com.adobe.cq.wcm.com.adobe.cq.wcm.jobs.async                Adobe AEM - WCM Asynchronous Jobs support             1.0.26
+com.day.cq.dam.cq-dam-entitlement                           Adobe CQ DAM Entitlement Implementation               1.3.36
+com.adobe.cq.dam.cq-scene7-imaging                          Adobe CQ DAM Scene7 Dynamic Imaging                   1.6.52.CQ650-B0038
+com.day.cq.dam.cq-dam-annotation-print                      Adobe CQ DAM annotation print implementation          0.2.6
+com.day.cq.wcm.cq-wcm-translation                           Adobe CQ Translation Workflow                         1.5.84
+com.day.cq.wcm.cq-wcm-foundation                            Adobe CQ WCM Foundation Components                    5.12.38
+com.adobe.cq.wcm.cq-wcm-launches-core                       Adobe Communique 5 WCM Launches Core                  5.13.30
+com.adobe.granite.acp.platform                              Adobe Granite ACP Platform                            0.3.28
+com.adobe.granite.jobs.async                                Adobe Granite Async Jobs                              1.0.32
+com.day.cq.cq-authhandler                                   Adobe Granite Authentication Handler                  5.6.92.CQ650-B0003
+com.adobe.granite.omnisearch.core                           Adobe Granite Omnisearch Core Module                  1.0.91.CQ650-B0004
+com.adobe.granite.references.core                           Adobe Granite References Core Bundle                  1.1.0.CQ659-B0002
+com.adobe.granite.threaddump                                Adobe Granite Thread Dumps collector                  1.0.36.CQ650-B0001
+com.day.crx.sling.crx-auth-token                            Adobe Granite Token Authentication                    2.6.12
+com.adobe.cq.adobeims.core                                  Adobe IMS Core Bundle                                 1.1.22
+org.apache.felix.scr                                        Apache Felix Declarative Services                     2.1.20
+org.apache.felix.http.jetty                                 Apache Felix Http Jetty                               4.1.6
+org.apache.servicemix.bundles.rhino                         Apache ServiceMix :: Bundles :: rhino                 1.7.13.1
+org.apache.sling.engine                                     Apache Sling Engine Implementation                    2.7.4
+org.apache.sling.installer.factory.configuration            Apache Sling Installer Configuration Admin Support    1.3.4
+org.apache.sling.resourceresolver                           Apache Sling Resource Resolver                        1.7.2
+org.apache.sling.xss                                        Apache Sling XSS Protection API                       2.2.12
+com.adobe.cq.cq-product-info-provider                       CQ ProductInfo Provider                               6.5.20
+com.day.commons.osgi.wrapper.commons-httpclient             Day Commons Library - HTTP Client 3.1 Bundling        3.1.0.024
+com.day.cq.mcm.cq-mcm-campaign                              Day Communique 5 Adobe Campaign Integration           1.3.22
+com.day.cq.dam.cq-dam-commons                               Day Communique 5 DAM Commons                          5.12.114
+com.day.cq.dam.cq-dam-core                                  Day Communique 5 DAM Core Implementation              5.12.296
+com.day.cq.dam.cq-scene7-api                                Day Communique 5 DAM Scene7 Integration               5.12.40
+com.day.cq.dam.cq-scene7-core                               Day Communique 5 DAM Scene7 Integration               5.12.172
+com.day.cq.cq-mailer                                        Day Communique 5 Mailer                               5.14.3.B0002
+com.day.cq.cq-rewriter                                      Day Communique 5 Rewriter                             5.12.12
+com.day.cq.wcm.cq-wcm-commons                               Day Communique 5 WCM Commons                          5.11.6
+com.day.cq.wcm.cq-wcm-core                                  Day Communique 5 WCM Core Implementation              5.12.164
+com.day.cq.wcm.cq-msm-core                                  Day Communique 5 WCM Multi Site Management Core       5.12.70
+com.day.cq.dam.cq-dam-asset-sourcing                        Day Communique 6 DAM Asset Sourcing Implementation    1.0.38
+org.apache.jackrabbit.oak-jackrabbit-api                    Jackrabbit API                                        1.22.7
+org.apache.jackrabbit.oak-api                               Oak API                                               1.22.7
+org.apache.jackrabbit.oak-blob-cloud-azure                  Oak Azure Cloud Blob Store                            1.22.7
+org.apache.jackrabbit.oak-blob-plugins                      Oak Blob Plugins                                      1.22.7
+org.apache.jackrabbit.oak-blob                              Oak Blob Store                                        1.22.7
+org.apache.jackrabbit.oak-authorization-cug                 Oak CUG Authorization                                 1.22.7
+org.apache.jackrabbit.oak-commons                           Oak Commons                                           1.22.7
+org.apache.jackrabbit.oak-store-composite                   Oak Composite Store                                   1.22.7
+org.apache.jackrabbit.oak-core                              Oak Core                                              1.22.7
+org.apache.jackrabbit.oak-core-spi                          Oak Core SPI                                          1.22.7
+org.apache.jackrabbit.oak-store-document                    Oak DocumentNodeStore                                 1.22.7
+org.apache.jackrabbit.oak-auth-external                     Oak External Authentication Support                   1.22.7
+org.apache.jackrabbit.oak-jcr                               Oak JCR Binding                                       1.22.7
+org.apache.jackrabbit.oak-auth-ldap                         Oak LDAP Authentication Support                       1.22.7
+org.apache.jackrabbit.oak-lucene                            Oak Lucene                                            1.22.7
+org.apache.jackrabbit.oak-store-spi                         Oak NodeStore and Commit SPI                          1.22.7
+org.apache.jackrabbit.oak-query-spi                         Oak Query SPI                                         1.22.7
+org.apache.jackrabbit.oak-security-spi                      Oak Security SPI                                      1.22.7
+org.apache.jackrabbit.oak-segment-azure                     Oak Segment Azure                                     1.22.7
+org.apache.jackrabbit.oak-segment-tar                       Oak Segment Tar                                       1.22.7
+org.apache.jackrabbit.oak-solr-osgi                         Oak Solr OSGi                                         1.22.7
+com.day.cq.remote.content.renderer                          Remote Content Renderer                               2.0.6
+org.mongodb.mongo-java-driver                               mongo-java-driver                                     3.12.7

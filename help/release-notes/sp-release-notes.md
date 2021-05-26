@@ -60,7 +60,9 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   >
   >* Europe, the Middle East and Africa May 24, 2021,
   >
-  >* Asia-Pacific June 24, 2021. 
+  >* Asia-Pacific June 24, 2021.
+
+* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.7.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
 
@@ -429,9 +431,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.9.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.9.0](assets/6580_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.9.0](assets/6590_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.9.0](assets/6580_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.9.0](assets/6590_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
