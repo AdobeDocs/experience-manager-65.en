@@ -176,9 +176,9 @@ This method can be used to restore a version of a tree as at a specified date an
 
 1. Open **Timeline**, then select the up arrow.
 
-   ![Restore Tree](/help/sites-authoring/assets/versions-restore-tree-01.png)
+   ![Timeline - Restore Tree](/help/sites-authoring/assets/versions-restore-tree-01.png)
 
-1. Select **Restore Tree**. The latest version of the tree will be shown:
+1. Select **Restore Tree**. The latest version of the tree will be shown. Select the sub-tree that you want to restore:
 
    ![Restore Tree](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
