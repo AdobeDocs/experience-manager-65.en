@@ -28,8 +28,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface.
 
-* Accessibility enhancements in [!DNL Experience Manager] Sites.
-
 * Ability to restore deleted pages and tree on an [!DNL Experience Manager Sites] page.
 
 * Support for a new user to refresh the access token using a refresh token for mailer configuration service.

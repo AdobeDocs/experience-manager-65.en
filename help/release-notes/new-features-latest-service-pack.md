@@ -19,16 +19,6 @@ This article highlights the features included in the latest Service Pack, [key f
 
 You can now restore the deleted pages and the entire tree view on an [!DNL Experience Manager Sites] page.
 
-### Accessibility enhancements {#accessibility-enhancements}
-
-* Improved error reporting by adding text information.
-
-* Improved user interface focus during keyboard navigation.
-
-* Improved Non-Visual Desktop Access (NVDA) capabilities.
-
-* Improved screen reader support.
-
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 * Updated the naming of Chinese locales and regions relating to Hong Kong, Macau, and Taiwan, to make them consistent with Chinese social and political views.
