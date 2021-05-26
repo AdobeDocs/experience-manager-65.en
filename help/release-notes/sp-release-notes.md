@@ -227,8 +227,6 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * When you refresh a page, the sorting of folder or assets does not display appropriate results (CQ-4316200).
 
-* Upgraded MongoDB Java driver to version 3.12.7 (NPR-36373).
-
 * Handlebars JavaScript library is upgraded to v4.7.7 (NPR-36375).
 
 * Custom bundles are not updated when installing a new code package using Package Manager (NPR-35949).
@@ -351,7 +349,7 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -375,7 +373,7 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
 
 ### UberJar {#uber-jar}
 
