@@ -94,8 +94,12 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
    <td>Support Level</td>
   </tr>
   <tr>
-   <td>Oracle Java SE 12 JDK [1]</td>
-   <td>Z: Not supported </td>
+   <td><strong>Azul Zulu OpenJDK 11 - 64bit [3]</strong></td>
+   <td>A: Supported</td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64bit [3]</td>
+   <td>A: Supported</td>
   </tr>
   <tr>
    <td><strong>Oracle Java SE 11 JDK - 64bit</strong></td>
@@ -128,6 +132,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 
 1. The IBM JRE is only supported along with WebSphere Application Server.
 1. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology. See the [Oracle Java support for Adobe Experience Manager Q&A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
+1. Support and distribution of Azul Zulu Builds of OpenJDK, including all maintenance updates of LTS releases will be supported by Adobe directly for all AEM customers making use of the Azul Zulu Builds of OpenJDK, starting with AEM 6.5 SP9. See the [Azul Java support for Adobe Experience Manager Q&A](assets/adobe-azul-java-license-agreement.pdf) for more information.
 
 ### Storage & Persistence {#storage-persistence}
 
