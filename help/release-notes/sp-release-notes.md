@@ -42,7 +42,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
    >[!NOTE]
    >
-   >The release timeline for smart imaging and image optimization is:
+   >The release timeline for the above Smart Imaging enhancements is:
    >
    >* North America May 24, 2021 in NA,
    >
@@ -151,7 +151,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements.
 
-Contrast (with background) of the following text and icons is improved, so that the users with limited vision and lack of perception of color can comprehend:
+Contrast (with background) of the following text and icons is improved, so that the users with limited vision and perception of color can comprehend:
   
 * asset title on [!UICONTROL Properties] page (NPR-35967).
 * star rating icons in [!UICONTROL Rating] sections at various places (NPR-36009).
@@ -201,7 +201,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * You can now put hyperlink on hotspot through Hotspot management using keyboard keys. The screen reader focus now moves to the field to edit URL Path and option to Open selection dialog (CQ-4290735).
 
-* Contrast (with background) of text and controls on Image Set Editor page is improved, so that the users with limited vision and lack of perception of color can comprehend (CQ-4290733).
+* Contrast (with background) of text and controls on Image Set Editor page is improved, so that the users with limited vision and perception of color can comprehend (CQ-4290733).
 
 * You can now navigate to asset sharing options on Viewer Preset Editor and collapse the expanded share option using keyboard keys (CQ-4290724).
 
@@ -213,7 +213,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * When navigating assets detail page, screen readers now describe the purpose of various options within Viewers (CQ-4290716).
 
-* Contrast (with background) of the placeholder text All Renditions in Renditions option of asset details page is improved, so that users with limited vision and lack of perception of color can comprehend (CQ-4290713).
+* Contrast (with background) of the placeholder text All Renditions in Renditions option of asset details page is improved, so that users with limited vision and perception of color can comprehend (CQ-4290713).
 
 * Visual asterisk to signify mandatory field is now provided in Title field of asset in Image Set Editor, and screen readers announce the required information for the field (CQ-4290712).
 

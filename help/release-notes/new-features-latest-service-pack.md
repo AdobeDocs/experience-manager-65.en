@@ -26,8 +26,8 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
 * An optional configuration is introduced to lower case the email IDs in ACP api response from [!DNL Adobe Experience Manager].
 
    ![configuration to lowercase the email IDs in ACP response from AEM](assets/email-lowcase-config.png)
- 
-* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and lack of perception of color. For more information, see [Accessibility enhancements in Assets](sp-release-notes.md#assets-accessibility-6590).
+
+* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and perception of color. For more information, see [Accessibility enhancements in Assets](sp-release-notes.md#assets-accessibility-6590).
 
 ### Dynamic Media {#assets-dynamic-media}
 
@@ -41,7 +41,7 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
 
    >[!NOTE]
    >
-   >The release timeline for smart imaging and image optimization is:
+   >The release timeline for above Smart Imaging enhancements is:
    >
    >* North America May 24, 2021 in NA,
    >
