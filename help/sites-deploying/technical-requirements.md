@@ -131,7 +131,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in production environment, Adobe provides support only for the LTS releases of Java.
 
 1. The IBM JRE is only supported along with WebSphere Application Server.
-1. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology. See the [Oracle Java support for Adobe Experience Manager Q&A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
+1. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology **until December 2022**. See the [Oracle Java support for Adobe Experience Manager Q&A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
 1. Support and distribution of Azul Zulu Builds of OpenJDK, including all maintenance updates of LTS releases will be supported by Adobe directly for all AEM customers making use of the Azul Zulu Builds of OpenJDK, starting with AEM 6.5 SP9. See the [Azul Java support for Adobe Experience Manager Q&A](assets/adobe-azul-java-license-agreement.pdf) for more information.
 
 ### Storage & Persistence {#storage-persistence}
