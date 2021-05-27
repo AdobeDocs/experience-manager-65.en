@@ -351,7 +351,9 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--
+
+### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -375,7 +377,8 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+-->
 
 ### UberJar {#uber-jar}
 
