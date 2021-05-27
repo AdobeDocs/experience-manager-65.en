@@ -1,6 +1,6 @@
 ---
 title: [!DNL Experience Manager] 6.5 service pack release notes
-description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 service pack 8
+description: Release notes specific to [!DNL Adobe Experience Manager] 6.5 service pack 9
 docset: aem65
 mini-toc-levels: 1
 exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
@@ -14,7 +14,7 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 | Version  | 6.5.9.0                      |
 | Type     | Service Pack Release         |
 | Date     | May 27, 2021                |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.8.zip) |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
 
 <!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
 
@@ -317,7 +317,7 @@ To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, 
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.8.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
