@@ -58,38 +58,6 @@ You can create a version of your resource from:
 
    The timeline will be opened with the information updated to indicate the new version.
 
-<!--
-
-## Reverting to a Page Version {#reverting-to-a-page-version}
-
-Once a version has been created you can revert to that version if needed.
-
->[!NOTE]
->
->When restoring a page, the version created will be part of a new branch.
->
->To illustrate:
->
->1. Create versions of any page.
->1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
->1. Restore the first version; i.e. 1.0.
->1. Create new versions again.
->1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
->
-
-To revert to a previous version:
-
-1. Navigate to show the page you want to revert to a previous version.
-1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
-1. Select the version you want to revert to. The possible options will be shown:
-
-   ![screen-shot_2019-03-05at112505](assets/screen-shot_2019-03-05at112505.png)
-
-1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
-
--->
-
 ## Reinstating Versions {#reinstating-versions}
 
 Once you have created a version of your page, there are various methods of reinstating a prior version:
