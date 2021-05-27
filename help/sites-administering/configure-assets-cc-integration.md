@@ -20,7 +20,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 
 >[!NOTE]
 >
->This feature is deprecated in AEM Assets. Find replacements in [AEM and Creative Cloud Integration best practices](/help/assets/aem-cc-integration-best-practices.md). If you have any queries, [contact Adobe Customer Care](https://www.adobe.com/account/sign-in.supportportal.html).
+>This feature is deprecated in [!DNL Assets]. Find replacements in [AEM and Creative Cloud Integration best practices](/help/assets/aem-cc-integration-best-practices.md). If you have any queries, [contact Adobe Customer Care](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -165,4 +165,3 @@ For example, if an asset is uploaded from an AEM Assets (on premises) instance, 
 >[!MORELIKETHIS]
 >
 >* [Assets and Creative Cloud integration best practices](/help/assets/aem-cc-integration-best-practices.md)
->* [Assets to Creative Cloud folder sharing best practices](/help/assets/aem-cc-folder-sharing-best-practices.md)

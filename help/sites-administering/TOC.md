@@ -129,7 +129,6 @@ role: Administrator
     + [Troubleshooting Integration Issues](troubleshooting-integration-issues.md)
     + [Integrating with BrightEdge Content Optimizer](brightedge.md)
     + [Catalog Producer](catalog-producer.md)
-    + [Configure AEM Assets integration with Experience Cloud and Creative Cloud](configure-assets-cc-integration.md)
     + [Integrating with Silverpop Engage](silverpop.md)
     + [Integrating with Adobe Campaign](campaign.md)
     + [Integrating with ExactTarget](exacttarget.md)

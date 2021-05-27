@@ -118,7 +118,6 @@ user-guide-description: Create, manage, process, and distribute digital assets.
     + [Multi-tenancy for collections, snippets, and snippet templates](multi-tenancy.md)
     + [Watermark your assets](watermarking.md)
     + [Asset templates](asset-templates.md)
-    + [Best practices to share folder with [!DNL Creative Cloud]](aem-cc-folder-sharing-best-practices.md)
 + Brand Portal {#brandportal}
     + [Configure [!DNL Assets] with [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)
     + [Publish assets to [!DNL Brand Portal]](brand-portal-publish-assets.md)
