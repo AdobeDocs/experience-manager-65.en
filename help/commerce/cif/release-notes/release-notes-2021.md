@@ -34,7 +34,7 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 
 * Pagination support for associated content in product console properties
 
-### Bug fixes {#bug-fixes-april}
+### Bug fixes {#bug-fixes-may}
 
 * Asset thumbnails not displayed in Asset tab of product properties
 
