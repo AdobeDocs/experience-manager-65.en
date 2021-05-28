@@ -104,7 +104,7 @@ You can choose to replace an existing asset, create another version, or keep bot
 >
 >When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
 >
->If Asset Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
+>If Assets Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
 If the asset you upload exists in [!DNL Assets], the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets does not matter.
 
@@ -410,7 +410,7 @@ To preview an asset using keyboard, follow these steps:
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-   For more details, see [Asset Insights](/help/assets/asset-insights.md).
+   For more details, see [Assets Insights](/help/assets/asset-insights.md).
 
 1. Click **[!UICONTROL Save & Close]**.
 1. Navigate to the [!DNL Assets] user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.

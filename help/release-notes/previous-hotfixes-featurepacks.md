@@ -882,7 +882,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 * When using cascading popup in metadata schemas, on selecting and saving a drop-down option containing an apostrophe (from the child drop-down) the selected apostrophe option disappears after reopening asset [!UICONTROL Properties] (NPR-32649).
 
-* [!UICONTROL Asset Insights Sync Job] stops and fails if it encounters invalid entries (on the Analytics side) instead of moving to the next entry (NPR-32674).
+* [!UICONTROL Assets Insights Sync Job] stops and fails if it encounters invalid entries (on the Analytics side) instead of moving to the next entry (NPR-32674).
 
 * Gyroscope is not functional as motions sensors are disabled by default on mobile browsers in panoramic viewer (CQ-4272937).
 
