@@ -16,6 +16,24 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: May, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.05.26|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip)|
+|CIF Core Components |1.11.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0)|
+|CIF Venia Reference Site| 2021.05.24|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24)|
+
+### What's New {#what-is-new-may}
+
+* Pagination support for associated content in product console properties
+
+### Bug fixes {#bug-fixes-april}
+
+* Asset thumbnails not displayed in Asset tab of product properties
+
+* Breadcrumb resets preview data in product console
+
 ## Release Date: April, 2021
 
 |Component| Version| Details|
