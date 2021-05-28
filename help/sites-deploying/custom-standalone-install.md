@@ -3,13 +3,8 @@ title: Custom Standalone Install
 seo-title: Custom Standalone Install
 description: Learn about the options available when installing a standalone AEM instance.
 seo-description: Learn about the options available when installing a standalone AEM instance.
-uuid: 83fc49d8-2c44-4bb2-988a-f29475066efc
-contentOwner: Tyler Rushton
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: deae8ecb-a2ee-4442-97ca-98bfd1b85738
-docset: aem65
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 ---
 # Custom Standalone Install{#custom-standalone-install}

@@ -401,15 +401,15 @@ You can use the Batch API to produce multiple interactive communications from a 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Key releases since [!DNL Adobe Experience Manager] 6.5 SP7 {#key-releases-since-last-sp}
+## Key releases since [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
 
-Between November 26, 2020 and February 25, 2021, Adobe released the following, in addition to the Service Packs and Cumulative Fix Packs:
+Between February 25, 2021 and May 27, 2021, Adobe released the following, in addition to the Service Packs:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html), [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html), and [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html), [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html), and [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
 
-* [[!DNL Experience Manager] desktop app 2.1 (2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] desktop app 2.1 (2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: Feature Pack 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
+* [Experience Manager Screens: Feature Pack 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html?lang=en)
 
 >[!MORELIKETHIS]
 >
