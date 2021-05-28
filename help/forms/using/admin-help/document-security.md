@@ -230,11 +230,31 @@ When document security is installed, a default policy set is created called *Glo
 
 ## Best practices {#policy-sets}
 
-* **Create reusable policies**: While creating a policy, add multiple authorized users and confidentiality settings to it. It helps create a reusable policy. You can reuse such policies across multiples documents.
+Policies are reusable sets of permissions and user groups that can be applied on a set of documents. When number of different user roles and documents within a department grow, the number of policies  are also expected to grow. Here are some considerations and best practices to create and manage polices: 
 
-* **Create Custom Policy sets**: A Policy set named *Global Policy Set* is available by default. Create your custom policy sets and add your policies with common business purpose to them. It makes it easier for policy set coordinators to manage related policies. For example, a separate policy set for finance and product management teams. 
+* **Create reusable policies**: Adobe recommends to reuse policies across a variety of documents. Keeping policies to a minimum helps in easier management and providing an optimum performance.
 
-* **Avoid creating a large number of policy sets**: Keep the number of policy set to a minimum. It is easier to manage a few policy sets.
+To create a reusable policy, while creating a policy, add all possible authorized users and confidentiality settings to it.
 
-* **Use external authorizer to apply permissions dynamically:** You can use [external authorizer](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) to evaluate and dynamically apply permissions based on external condition. For example, decide based on the current geo-location of customer whether a user can print a policy-protected document. 
+* **Create Custom Policy sets**: A policy set combines multiple policies into a manageable entity. Create your custom policy sets, use them to group related policies, and make policy sets available to a subset of users in the system. Do not create a separate policy set for each policy.
 
+Using policy sets makes it easier to assign and manage related policies for specific users in the system. For example, separate policy sets for finance and product management teams can help easily manage and apply related policies to documents designated for corresponding teams.
+ 
+
+* **Keep the policy sets to a limited number**: Policies are reusable sets of permissions and users that can be applied across a variety of documents. The number of policies and policy sets are  expected to grow:
+  * When number of different user roles and documents within a department grow.
+  * When departments of an organization work in isolation and have a tight control on the policies they manage.
+
+Adobe recommends to keep the number of policy sets to a minimum. It helps easily manage policy sets and provide a better performance.  To keep policy sets to a minimum:
+
+  * Create reusable policies
+  * Create an organization wide policy sets instead of department wide policy sets
+  * Create policies that can the shared across multiple departments
+
+  >[!NOTE]
+  >
+  > You can retrieve a maximum of 1000 policy set names from the database at any time, so keep the number of policy sets to a minimum. 
+
+* **Use external authorizer to apply permissions dynamically:** You can use [external authorizer](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) to evaluate and dynamically apply permissions based on external condition. For example, decide based on the current geo-location of the customer whether a user can print a policy-protected document.
+
+In some cases, using an external authorizer also helps reduce the number of required policies.  
