@@ -163,7 +163,7 @@ You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTRO
 
     You can edit the following Advanced Settings by tapping **[!UICONTROL Edit]** in the component.
 
-* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
@@ -172,7 +172,7 @@ You *must* edit the following Dynamic Media Settings by tapping the **[!UICONTRO
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
   * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
-  ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png)
+  ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png) -->
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
@@ -240,7 +240,7 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 
 * **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
-* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
 
@@ -250,7 +250,7 @@ You must edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit
 
   * Under Preset Type, **[!UICONTROL Smart Crop]** option is selected.
 
-  ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png)
+  ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png) -->
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 
