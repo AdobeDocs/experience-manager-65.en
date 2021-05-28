@@ -1,14 +1,14 @@
 ---
-title: Configure Asset Insights to get analytics.
-description: Configure Asset Insights in [!DNL Adobe Experience Manager Assets].
+title: Configure Assets Insights to get analytics.
+description: Configure Assets Insights in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Architect, Administrator
 feature: Asset Insights,Asset Reports
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
 ---
-# Configure Asset Insights {#configure-asset-insights}
+# Configure Assets Insights {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets] fetches usage data around digital assets used by third-party websites from [!DNL Adobe Analytics]. To enable Asset Insights to retrieve this data and generate insights, first configure the feature to integrate with [!DNL Adobe Analytics]. To use this feature, buy [!DNL Adobe Analytics] license separately. Customers on [!DNL Managed Services] receive [!DNL Analytics] license bundled with [!DNL Experience Manager]. See [Managed Services product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
+[!DNL Adobe Experience Manager Assets] fetches usage data around digital assets used by third-party websites from [!DNL Adobe Analytics]. To enable Assets Insights to retrieve this data and generate insights, first configure the feature to integrate with [!DNL Adobe Analytics]. To use this feature in an on-premise installation, purchase [!DNL Adobe Analytics] license separately. Customers on [!DNL Managed Services] receive [!DNL Analytics] license bundled with [!DNL Experience Manager]. See [Managed Services product description](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html).
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
    *Figure: Configure [!DNL Adobe Analytics] for Assets Insights in [!DNL Experience Manager].*
 
 1. Click **[!UICONTROL Authenticate]**.
-1. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an [!DNL Adobe Analytics] report suite from where you want Asset Insights to fetch data. Click **[!UICONTROL Add]**.
+1. After [!DNL Experience Manager] authenticates your credentials, from the **[!UICONTROL Report Suite]** list, choose an [!DNL Adobe Analytics] report suite from where you want Assets Insights to fetch data. Click **[!UICONTROL Add]**.
 1. After [!DNL Experience Manager] sets up your report suite, click **[!UICONTROL Done]**.
 
 ## Page tracker {#page-tracker}
