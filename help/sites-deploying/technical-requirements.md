@@ -89,11 +89,11 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
    <td>Support Level</td>
   </tr>
   <tr>
-   <td><strong>Azul Zulu OpenJDK 11 - 64bit [3]</strong></td>
+   <td><strong>Azul Zulu OpenJDK 11 - 64bit [4]</strong></td>
    <td>A: Supported</td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 8 - 64bit [3]</td>
+   <td>Azul Zulu OpenJDK 8 - 64bit [4]</td>
    <td>A: Supported</td>
   </tr>
   <tr>
