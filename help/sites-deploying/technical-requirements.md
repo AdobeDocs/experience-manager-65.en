@@ -11,7 +11,7 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 
 Adobe supports Adobe Experience Manager (AEM) on the platforms as detailed in the following information in this document.
 
-For any issues that are specifically related to the platform, contact the platform vendor. 
+For any issues that are specifically related to the platform, contact the platform vendor.
 
 >[!NOTE]
 >
