@@ -3,20 +3,15 @@ title: Technical Requirements
 seo-title: Technical Requirements
 description: A list of the supported client and server platforms for AEM.
 seo-description: A list of the supported client and server platforms for AEM.
-uuid: 597f8fc1-9ac7-458d-a7c1-f576dd0f189b
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
-discoiquuid: 16c7a97d-884a-447e-9aad-18a2db1bda1d
-docset: aem65
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 ---
 # Technical Requirements{#technical-requirements}
 
 Adobe supports Adobe Experience Manager (AEM) on the platforms as detailed in the following information in this document.
 
-For any issues that are specifically related to the platform, contact the platform vendor.
+For any issues that are specifically related to the platform, contact the platform vendor. 
 
 >[!NOTE]
 >
@@ -132,7 +127,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 
 1. The IBM JRE is only supported along with WebSphere Application Server.
 1. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology **until December 2022**. See the [Oracle Java support for Adobe Experience Manager Q&A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
-1. Support and distribution of Azul Zulu Builds of OpenJDK, including all maintenance updates of LTS releases will be supported by Adobe directly for all AEM customers making use of the Azul Zulu Builds of OpenJDK, starting with AEM 6.5 SP9. 
+1. Support and distribution of Azul Zulu Builds of OpenJDK, including all maintenance updates of LTS releases will be supported by Adobe directly for all AEM customers making use of the Azul Zulu Builds of OpenJDK, starting with AEM 6.5 SP9. See the [Azul Java support for Adobe Experience Manager Q&A](assets/adobe-azul-openjdk-license-agreement.pdf) for more information.
 
 ### Storage & Persistence {#storage-persistence}
 
