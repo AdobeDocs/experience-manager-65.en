@@ -26,7 +26,7 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 ![chlimage_1-550](assets/chlimage_1-550.png)
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >The following list of features requires that you use the out-of-the-box CDN that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with these features.
 >
@@ -41,9 +41,9 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 [Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) is disabled by default. To take advantage of Dynamic Media features, you must enable it.
 
->[!NOTE]
+>[!WARNING]
 >
->Dynamic Media - Scene7 mode is for the Experience Manager Author instance only. As such, you must configure `runmode=dynamicmedia_scene7` on the Experience Manager Author instance, *not* the Experience Manager Publish instance.
+>Dynamic Media - Scene7 mode is for the *Experience Manager Author instance only*. As such, you must configure `runmode=dynamicmedia_scene7` on the Experience Manager Author instance, *not* the Experience Manager Publish instance.
 
 To enable Dynamic Media, you must start up Experience Manager using the `dynamicmedia_scene7` run mode from the command line by entering the following in a terminal window (example port used is 4502):
 
@@ -77,13 +77,13 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 
 ## Creating a Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Before you configure Dynamic Media** &ndash; After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**To create a Dynamic Media Configuration in Cloud Services**
+**To create a Dynamic Media Configuration in Cloud Services:**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. In Experience Manager Author mode, tap the Experience Manager logo to access the global navigation console and tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create]**.
 1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. This information is provided to you by Adobe in the provisioning email. Contact Adobe Customer Care if you did not receive the email.
 
