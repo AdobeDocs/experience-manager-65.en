@@ -236,15 +236,13 @@ Policies are reusable sets of permissions and user groups that can be applied to
 
 1. Identify and define access control requirements at departments and organization level.
 
-1. Create user groups and add users to these groups.  Consider adding a broad range of users.
+1. Create user groups and add users to these groups.
 
-1. Add user groups and set confidentiality (access-control) settings for a policy.
+1. Create a policy set.
 
-1. Add the policy to a policy set.
+1. Open the policy set and create a policy. Add user groups and set confidentiality (access-control) settings for the policy.
 
 Add user groups to policies instead of individual users. It makes it easier to manage and apply policies to a large number of users.
-
-To create a reusable policy, while creating a policy, add all possible authorized users and confidentiality settings to it.
 
 * **Create Custom Policy sets**: A policy set combines multiple policies into a manageable entity. Create custom policy sets for your organization or department, use them to group related policies, and make them available to a subset of users in the system. 
 
