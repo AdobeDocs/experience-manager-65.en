@@ -353,7 +353,7 @@ Next, configure your SMTP OAuth provder by following the procedure below:
 
 Once configured, the settings should look like this:
 
-![oauth smtp provider](assets/oauth-smttprov2.png)
+![oauth smtp provider](assets/oauth-smtpprov2.png)
 
 Now, activate the OAuth components. You can do this by:
 
