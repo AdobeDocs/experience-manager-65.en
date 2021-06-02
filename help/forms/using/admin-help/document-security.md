@@ -228,7 +228,7 @@ Policy sets are generally made available to a limited number of users by specify
 
 When document security is installed, a default policy set is created called *Global Policy Set*. The administrator who installed the software manages this policy set.
 
-## Best practices {#policy-sets}
+## Best practices {#best-practices}
 
 Policies are reusable sets of permissions and user groups that can be applied to various documents. For the protected documents. These policies ensure that only authorized users can use allowed features. The number of policies and policy sets are expected to grow with an increase in different user roles and documents within a department. Here are some considerations and best practices to create and manage policies:
 
