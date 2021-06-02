@@ -171,13 +171,7 @@ Edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** i
 
   ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<<<<<<< Updated upstream
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-=======
-  <!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
->>>>>>> Stashed changes
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
@@ -245,11 +239,7 @@ Edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in th
 
 * **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
-<<<<<<< Updated upstream
-* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
-=======
 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
->>>>>>> Stashed changes
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
@@ -257,15 +247,7 @@ Edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in th
 
   ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<<<<<<< Updated upstream
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
-=======
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
->>>>>>> Stashed changes
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 

@@ -108,7 +108,7 @@ See also [Previewing assets using the software interface](/help/assets/previewin
 
     See [Uploading your 3D assets for use in Dynamic Media](/help/assets/manage-assets.md#uploading-assets).
 
-1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]** > **[!UICONTROL Files]**]**.
+1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Navigate to a 3D asset that you want to view.
 1. Tap the card of the 3D asset.  
