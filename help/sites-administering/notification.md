@@ -353,7 +353,7 @@ Next, configure your SMTP OAuth provder by following the procedure below:
 
 Once configured, the settings should look like this:
 
-![oauth smtp provider](/assets/oauth-smttprov2.png)
+![oauth smtp provider](assets/oauth-smttprov2.png)
 
 Now, activate the OAuth components. You can do this by:
 
@@ -363,7 +363,7 @@ Now, activate the OAuth components. You can do this by:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Press the Play icon to the left of the components
    
-   ![components](/assets/oauth-components-play.png)
+   ![components](assets/oauth-components-play.png)
 
 Finally, confirm the configuration by:
 
