@@ -39,7 +39,7 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 ## Enabling Dynamic Media in Scene7 mode {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) is disabled by default. To take advantage of Dynamic Media features, you must enable it.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) is disabled by default. To take advantage of Dynamic Media features, you must enable it.
 
 >[!WARNING]
 >
@@ -71,7 +71,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 The installation of feature pack 18912 is *optional*.
 
-Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from either Dynamic Media - Hybrid mode or Dynamic Media Classic into Dynamic Media - Scene7 mode on Experience Manager. It is available from [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from either Dynamic Media - Hybrid mode or Dynamic Media Classic into Dynamic Media - Scene7 mode on Experience Manager. It is available from [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
 See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md) for more information.
 
@@ -83,7 +83,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 
 **To create a Dynamic Media Configuration in Cloud Services:**
 
-1. In Experience Manager Author mode, tap the Experience Manager logo to access the global navigation console and tap the Tools icon, then tap **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
+1. In Experience Manager Author mode, tap the Experience Manager logo to access the global navigation console and tap the Tools icon, then tap **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, tap **[!UICONTROL global]** (do not tap or select the folder icon to the left of **[!UICONTROL global]**), then tap **[!UICONTROL Create]**.
 1. On the **[!UICONTROL Create Dynamic Media Configuration]** page, enter a title, the Dynamic Media account email address, password, then select your region. This information is provided to you by Adobe in the provisioning email. Contact Adobe Customer Care if you did not receive the email.
 
@@ -105,7 +105,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 
          ![Replicate Metadata after Dynamic Media publishing checkbox](assets-dm/replicate-metadata-setting.png)
 
-      * **[!UICONTROL Selective Publish]** This option lets you control which folders are published in Dynamic Media. It lets you use features such as Smart Crop or dynamic renditions, or determine which folders are published exclusively in Experience Manager for previewing. Those same assets are *not* published in Dynamic Media for delivery in the public domain.<br>You can set this option here in the **[!UICONTROL Dynamic Media Cloud Configuration]** or, if you prefer, you can choose to set this option at the folder level, in a folder's **[!UICONTROL Properties]**.<br>See [Working with Selective Publish in Dynamic Media.](/help/assets/selective-publishing.md)<br>If you later change this configuration, or you later change it at the folder level, those changes affect only new assets that you upload from that point forward. The publish state of existing assets in the folder remain as-is until you manually change them from either **[!UICONTROL Quick Publish]** or the **[!UICONTROL Manage Publication]** dialog box.   
+      * **[!UICONTROL Selective Publish]** This option lets you control which folders are published in Dynamic Media. It lets you use features such as Smart Crop or dynamic renditions, or determine which folders are published exclusively in Experience Manager for previewing. Those same assets are *not* published in Dynamic Media for delivery in the public domain.<br>You can set this option here in the **[!UICONTROL Dynamic Media Cloud Configuration]** or, if you prefer, you can choose to set this option at the folder level, in a folder's **[!UICONTROL Properties]**.<br>See [Working with Selective Publish in Dynamic Media](/help/assets/selective-publishing.md).<br>If you later change this configuration, or you later change it at the folder level, those changes affect only new assets that you upload from that point forward. The publish state of existing assets in the folder remain as-is until you manually change them from either **[!UICONTROL Quick Publish]** or the **[!UICONTROL Manage Publication]** dialog box.
 
     * **[!UICONTROL Secure Preview Server]** - lets you specify the URL path to your secure renditions preview server. That is, after renditions are generated, Experience Manager can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager instance).
       Unless you have a special arrangement to use your own company's server or a special server, Adobe recommends that you leave this setting as specified.
@@ -115,7 +115,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
     * **[!UICONTROL Dynamic Media sync mode]**
         * **[!UICONTROL Enabled by default]** - The configuration is applied to all folders by default unless you mark a folder specifically for exclusion. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
         * **[!UICONTROL Disabled by default]** - The configuration is not applied to any folder until you explicitly mark a selected folder for sync to Dynamic Media.
-        To mark a selected folder for sync to Dynamic Media, select an asset folder, then on the toolbar, tap **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **Sync all content** earlier.* See also [Working with Selective Publish at the folder level in Dynamic Media.](/help/assets/selective-publishing.md)
+        To mark a selected folder for sync to Dynamic Media, select an asset folder, then on the toolbar, tap **[!UICONTROL Properties]**. On the **[!UICONTROL Details]** tab, in the **[!UICONTROL Dynamic Media sync mode]** drop-down list, choose from the following three options. When you are done, tap **[!UICONTROL Save]**. *Remember: these three options are not available if you selected **[!UICONTROL Sync all content]** earlier.* See also [Working with Selective Publish at the folder level in Dynamic Media](/help/assets/selective-publishing.md).
             * **[!UICONTROL Inherited]** - No explicit sync value on the folder; instead, the folder inherits the sync value from one of its ancestor folders or the default mode in the cloud configuration. The detailed status for inherited shows by way of a tooltip.
             * **[!UICONTROL Enable for subfolders]** -  Include everything in this subtree for sync to Dynamic Media. The folder-specific settings override the default mode in the cloud configuration.
             * **[!UICONTROL Disabled for subfolders]** - Exclude everything in this subtree from syncing to Dynamic Media.
@@ -132,7 +132,7 @@ See [Installing feature pack 18912 for bulk asset migration](/help/assets/bulk-i
 
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
-    * On the navigation bar near the top right of the page, tap **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+    * On the navigation bar near the top right of the page, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 
     * On the Image Server Publish page, in the Publish Context drop-down list, select **[!UICONTROL Test Image Serving]**.
     * For the Client Address Filter, tap **[!UICONTROL Add]**.
@@ -172,7 +172,7 @@ Setup and configuration tasks include the following:
 
 The Publish Setup settings determine how assets are delivered by default from Dynamic Media. If no setting is specified, Dynamic Media delivers an asset according to the default settings defined in Publish Setup. For example, a request to deliver an image that does not include a resolution attribute yields an image with the Default Object Resolution setting.
 
-To configure Publish Setup: in Dynamic Media Classic, tap **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
+To configure Publish Setup: in Dynamic Media Classic, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 
 The Image Server screen establishes default settings for delivering images. See the UI screen for description of each setting.
 
@@ -182,11 +182,11 @@ The Image Server screen establishes default settings for delivering images. See 
 * **[!UICONTROL Defaults for Catalog Fields]**- These settings pertain to the resolution and default thumbnail type of images.
 * **[!UICONTROL Color Management Attributes]** - These settings determine which ICC color profiles are used.
 * **[!UICONTROL Compatibility Attributes]** - This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
-* **[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[Localization Support]**, see [Considerations when setting up localization of assets](https://help.adobe.com/en_US/scene7/using/WS997f1dc4cb0179f034e07dc31412799d19a-8000.html).
+* **[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[Localization Support]**, see [Considerations when setting up localization of assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=en#considerations-when-setting-up-localization-of-assets).
 
 #### Configuring application general settings {#configuring-application-general-settings}
 
-To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, tap **[!UICONTROL Setup > Application Setup > General Settings]**.
+To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 
 **[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by Adobe Customer Care.
 
@@ -251,7 +251,7 @@ See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
 **To edit MIME types for supported formats:**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. In the left rail, navigate to the following:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -278,7 +278,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 **To add MIME types for unsupported formats:**
 
-1. From Experience Manager, tap **[!UICONTROL Tools > Operations > Web Console]**.
+1. From Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
 
@@ -296,7 +296,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 1. Type `DWG=image/vnd.dwg` in the empty text field that you just added.
 
-   The example `DWG=image/vnd.dwg` is for illustration purposes only. The MIME type that you add here can be any other unsupported format.
+   The example `DWG=image/vnd.dwg` is for demonstration purposes only. The MIME type that you add here can be any other unsupported format.
 
    ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
 
@@ -305,7 +305,7 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
    At this point, you can close the browser tab that has the open Adobe Experience Manager Web Console Configuration page.
 
 1. Return to the browser tab that has your open Experience Manager console.
-1. From Experience Manager, tap **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. From Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
    ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
 
@@ -332,7 +332,7 @@ First, define the naming convention for how assets are grouped in a set. Then cr
 
 When you upload files, Dynamic Media automatically creates a set with all files that match the defined naming convention in the active presets.
 
-**Configuring default naming**
+##### Configuring default naming
 
 Create a default naming convention that is used in any batch set preset recipe. The default naming convention selected in the batch set preset definition is likely all that is needed by your company to batch-generate sets. A batch set preset is created to use the default naming convention that you define. You are able to create as many Batch Set presets with alternate, custom naming conventions needed for a particular set of content in cases where there is an exception to the company-defined default naming.
 
@@ -348,7 +348,7 @@ Two elements are available for definition, Match and Base Name. These fields let
 
    Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
-1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup > Application Setup > Batch Set Presets > Default Naming]**.
+1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Default Naming]**.
 1. Select **[!UICONTROL View Form]** or **[!UICONTROL View Code]** to specify how you want to view and enter information about each element.
 
    You can select the **[!UICONTROL View Code]** check box to view the regular expression value building alongside your form selections. You are able to enter or alter these values to help define the elements of the naming convention, if the form view limits you for any reason. If your values are unable to be parsed in the form view, the form fields become inactive.
@@ -368,7 +368,7 @@ Two elements are available for definition, Match and Base Name. These fields let
     * Tap **[!UICONTROL Save As]** and type a name for the preset.
     * Tap **[!UICONTROL Save]** if you are editing an existing preset.
 
-**Creating a Batch Set Preset**
+#####Creating a Batch Set Preset
 
 Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
 
@@ -382,7 +382,7 @@ You can use either the form field method to define a batch set preset or the cod
 
    Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
-1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup > Application Setup > Batch Set Presets > Batch Set Preset]**.
+1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Batch Set Preset]**.
 
    **[!UICONTROL View Form]**, as set in the upper-right corner of the Details page, is the default view.
 
@@ -391,7 +391,7 @@ You can use either the form field method to define a batch set preset or the cod
 1. In the Batch Set Type drop-down menu, select a preset type.
 1. Do one of the following:
 
-    * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, tap **[!UICONTROL Default]**.
+    * If you are using a default naming convention that you previously set up under **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Default Naming]**, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, tap **[!UICONTROL Default]**.
 
     * To define a new naming convention as you set up the preset, expand **[!UICONTROL Asset Naming Conventions]**, and then in the File Naming drop-down list, tap **[!UICONTROL Custom]**.
 
@@ -408,7 +408,7 @@ You can use either the form field method to define a batch set preset or the cod
 
    Activating the preset ensures that when you upload assets to Dynamic Media, the batch set preset is applied to generate the set.
 
-**Creating a Batch Set Preset for the auto-generation of a 2D Spin Set**
+##### Creating a Batch Set Preset for the auto-generation of a 2D Spin Set
 
 You can use the Batch Set Type **[!UICONTROL Multi-Axis Spin Set]** to create a recipe that automates the generation of 2D Spin Sets. The grouping of images uses Row and Column regular expressions so that the image assets are properly aligned in the corresponding location in the multi-dimensional array. There is no minimum or maximum number of rows or columns that you must have in a multi-axis spin set.
 
@@ -428,9 +428,9 @@ With this information, your Batch Set Type recipe can be created as follows:
 
 ![chlimage_1-560](assets/chlimage_1-560.png)
 
-Grouping for the shared asset name part of the spin set is added to the **Match** field (as highlighted). The variable part of the asset name containing the row and column is added to the **Row** and **Column** fields, respectively.
+Grouping for the shared asset name part of the spin set is added to the **[!UICONTROL Match]** field (as highlighted). The variable part of the asset name containing the row and column is added to the **[!UICONTROL Row]** and **[!UICONTROL Column]** fields, respectively.
 
-When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **Batch Set Presets** in the **Upload Job Options** dialog box.
+When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **[!UICONTROL Batch Set Presets]** in the **[!UICONTROL Upload Job Options]** dialog box.
 
 **To create a Batch Set Preset for the auto-generation of a 2D Spin Set:**
 
@@ -438,7 +438,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
    Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
-1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup] > [!UICONTROL Application Setup] > [!UICONTROL Batch Set Presets] > [!UICONTROL Batch Set Preset]**.
+1. On the navigation bar near the top of the page, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Batch Set Preset]**.
 
    **[!UICONTROL View Form]**, as set in the upper-right corner of the Details page, is the default view.
 
@@ -473,7 +473,7 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
    `\w+-\w+-C(\d+)`
 
-   The samples above are for illustration purposes only. You can create your regular expression however you want to suit your needs.
+   The samples above are for demonstration purposes only. You can create your regular expression however you want to suit your needs.
 
    >[!NOTE]
    >
@@ -598,34 +598,10 @@ The filters provide a way for you to *exclude* assets from being replicated to t
 
 If you use Dynamic Media for imaging, or video, or both, you can use the default filters that Adobe provides as-is. The following filters are active by default:
 
-<table>
- <tbody>
-  <tr>
-   <td> </td>
-   <td><strong>Filter</strong></td>
-   <td><strong>Mime type</strong></td>
-   <td><strong>Renditions</strong></td>
-  </tr>
-  <tr>
-   <td>Dynamic Media Image Delivery</td>
-   <td><p>filter-images</p> <p>filter-sets</p> <p> </p> </td>
-   <td><p>Starts with <strong>image/</strong></p> <p>Contains <strong>application/</strong> and ends with <strong>set</strong>.</p> </td>
-   <td>The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will:
-    <ul>
-     <li>Exclude from replication the original image and static image renditions.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>Dynamic Media Video Delivery</td>
-   <td>filter-video</td>
-   <td>Starts with <strong>video/</strong></td>
-   <td>The out-of-the-box "filter-video" will:
-    <ul>
-     <li>Exclude from replication the original video and static thumbnail renditions.<br /> <br /> </li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|   | Filter | Mime type | Renditions |
+| --- | --- | --- | --- |
+| Dynamic Media Image Delivery | filter-image<br>filter-sets | Starts with **image/**<br>Contains **applications/** and end with **set**. | The out-of-the-box "filter-images" (applies to single images assets, including interactive images) and "filter-sets" (applies to Spin Sets, Image Sets, Mixed Media Sets, and Carousel Sets) will:<br>&bull; Exclude from replication the original image and static image renditions. |
+|Dynamic Media Video Delivery | filter-video | Starts with **video/** | The out-of-the-box "filter video" will:<br>&bull; Exclude from replication the original video and static thumbnail renditions. |
 
 >[!NOTE]
 >
@@ -633,7 +609,7 @@ If you use Dynamic Media for imaging, or video, or both, you can use the default
 
 #### Customizing asset filters for replication {#customizing-asset-filters-for-replication}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap the **[!UICONTROL Tools > General > CRXDE Lite]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap the **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` to review the filters.
 
    ![chlimage_1-17](assets/chlimage_1-2.png)
@@ -656,26 +632,11 @@ If you use Dynamic Media for imaging, or video, or both, you can use the default
 
    Characters that you can use to filter for replication include the following:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Character to use</strong></td>
-   <td><strong>How it filters assets for replication</strong></td>
-  </tr>
-  <tr>
-   <td>*</td>
-   <td>Wildcard character</td>
-  </tr>
-  <tr>
-   <td>+</td>
-   <td>Includes assets for replication.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>Excludes assets from replication.</td>
-  </tr>
- </tbody>
-</table>
+   | Character to use  | How it filters assets for replication |
+   | --- | --- |
+   | * | Wildcard character |
+   | + | Includes assets for replication |
+   | - | Excludes assets from replication |
 
    Navigate to `content/dam/<locate your asset>/jcr:content/renditions`.
 
