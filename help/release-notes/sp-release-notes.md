@@ -62,6 +62,18 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   >
   >* Asia-Pacific June 24, 2021.
 
+* Ability to send a notification email to a group using [!UICONTROL Assign Task] workflow step.
+
+* Ability to retrieve an Interactive Communication draft after modifying the source Interactive Communication.
+
+* Set custom domain name for loading, rendering, and validating the reCAPTCHA service in [!DNL Experience Manager Forms].
+
+* Input data enhancements for [!UICONTROL Invoke Form Data Model Service] workflow step.
+
+* Ability to use multiple master pages in a Document of Record template in [!DNL Experience Manager Forms].
+
+* Support page breaks in Document of Record in [!DNL Experience Manager Forms].
+
 * The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.7.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
