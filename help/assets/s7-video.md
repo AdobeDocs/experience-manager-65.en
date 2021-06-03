@@ -68,7 +68,7 @@ If you do not need a workflow or versioning for your assets, you should upload y
 
 To configure universal presets:
 
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Scene7]** configuration and click **[!UICONTROL Edit.]**
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Scene7]** configuration and click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Video]** tab.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -89,7 +89,7 @@ To configure universal presets:
 
 ## Updating viewer and encoding presets {#updating-viewer-and-encoding-presets}
 
-If you need to update the viewer and encoding presets for video in AEM because the presets have been updated in Scene7, navigate to the Scene7 configuration in the cloud configuration and click **[!UICONTROL Update the viewer and encoding presets.]**
+If you need to update the viewer and encoding presets for video in Experience Manager because the presets have been updated in Scene7, navigate to the Scene7 configuration in the cloud configuration and click **[!UICONTROL Update the viewer and encoding presets]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -106,9 +106,9 @@ If you need to update the viewer and encoding presets for video in AEM because t
 
 ## Foundation Video Component versus Scene7 Video Component {#foundation-video-component-versus-scene-video-component}
 
-When using AEM, you have access to both the Video component available in Sites and the Scene7 video component. These components are not interchangeable.
+When using Experience Manager, you have access to both the Video component available in Sites and the Scene7 video component. These components are not interchangeable.
 
-The Scene7 video component only works for Scene7 videos. The foundation component works with videos stored from AEM (using ffmpeg) and Scene7 videos.
+The Scene7 video component only works for Scene7 videos. The foundation component works with videos stored from Experience Manager (using ffmpeg) and Scene7 videos.
 
 The following matrix explains when you should use which component:
 
@@ -116,11 +116,11 @@ The following matrix explains when you should use which component:
 
 >[!NOTE]
 >
->Out of the box, the S7 video component uses the universal video profile. You can however obtain the HTML5-based video player for use by AEM by doing one of the following in Scene7: copy the embed code of the out-of-box HTML5 video player and put it in your AEM page.
+>Out of the box, the S7 video component uses the universal video profile. You can however obtain the HTML5-based video player for use by Experience Manager by doing one of the following in Scene7: copy the embed code of the out-of-box HTML5 video player and put it in your Experience Manager page.
 
 ## AEM Video Component {#aem-video-component}
 
-Even if using the Scene7 video component is recommended for viewing Scene7 videos, this section describes using Scene7 videos with the Foundation Video Component in AEM, for the sake of completeness.
+Even if using the Scene7 video component is recommended for viewing Scene7 videos, this section describes using Scene7 videos with the Foundation Video Component in Experience Manager, for the sake of completeness.
 
 ### AEM Video and Scene7 Video comparison {#aem-video-and-scene-video-comparison}
 
@@ -144,9 +144,9 @@ The various video encodings are created according to the S7 encoding presets sel
 >
 >New video profiles and changes to them must be activated to publish.
 
-1. In AEM, tap **[!UICONTROL Tools] > [!UICONTROL Configuration Console]**.
-1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools > DAM > Video Profiles]** in the navigation tree.
-1. Create a new S7 Video Profile. In the **[!UICONTROL New...]** menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create.]**
+1. In AEM, tap **[!UICONTROL Tools]** > **[!UICONTROL Configuration Console]**.
+1. In the **[!UICONTROL Configuration Console]** navigate to **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Video Profiles]** in the navigation tree.
+1. Create a new S7 Video Profile. In the **[!UICONTROL New]**. menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 

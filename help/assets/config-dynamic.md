@@ -263,16 +263,18 @@ After you have configured the replication agent, you must [validate and test tha
 >
 >An image that requires more than the maximum memory limit is rejected.
 >
->To change the memory limit for PTIFF creation, navigate to **[!UICONTROL Tools > Operations > Web Console > Adobe CQ Scene7 PTiffManager]** and change the **[!UICONTROL maxMemory]** value.
+>To change the memory limit for PTIFF creation, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** and change the **[!UICONTROL maxMemory]** value.
 
 ### Setting up Authentication {#setting-up-authentication}
 
 Set up replication authentication on author so you can replicate images to the Dynamic Media image delivery service. You first obtain a KeyStore and then save it under the **[!UICONTROL dynamic-media-replication]** user and configure it. Your company administrator received a welcome email with the KeyStore file and necessary credentials during the provisioning process. If you did not receive this information, contact Adobe Customer Care.
 
-**To set up authentication**
+**To set up authentication:**
 
 1. Contact Adobe Customer Care for your KeyStore file and password if you do not already have the file and password. This information is a necessary part of provisioning. It associates the keys to your account.
+
 1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+
 1. On the User Management page, navigate to the **[!UICONTROL dynamic-media-replication]** user, then tap to open.
 
    ![dm-replication](assets/dm-replication.png)
@@ -833,7 +835,7 @@ Configuring the Dynamic Media Image Server involves editing the Adobe CQ Scene7 
 To configure Dynamic Media Image Server settings:
 
 1. In the upper-left corner of Experience Manager, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. On the Adobe Experience Manager Web Console Configuration page, tap **[!UICONTROL OSGi > Configuration]** to list all the bundles that are currently running within Experience Manager.
+1. On the Adobe Experience Manager Web Console Configuration page, tap **[!UICONTROL OSGi]** > **[!UICONTROL Configuration]** to list all the bundles that are currently running within Experience Manager.
 
    The Dynamic Media Delivery Servers are found under the following names in the list:
 

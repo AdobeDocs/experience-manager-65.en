@@ -29,7 +29,7 @@ See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.
 
       Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Setup > Application Setup > General Settings.]**
+1. Near the upper-right corner of the page, tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 1. On the Application General Settings page, under the Servers group heading, locate the **[!UICONTROL CDN Invalidation Template]** text box.
 
 1. Specify the template that is used for invalidating the CDN (Content Delivery Network) cache.
@@ -40,8 +40,8 @@ See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.
 
    If the Template just contains `<ID>`, then Dynamic Media fills in `https://<server>/is/image` where `<server>` is the Publish Server Name that is defined in General Settings and &lt;ID&gt; is the assets selected to be invalidated.
 
-1. In the lower-right corner of the page, click **[!UICONTROL Close.]**
-1. In the Dynamic Media Classic user interface, select one or more assets, then click **[!UICONTROL File > Invalidate CDN.]** You see a list of one or more URLs generated from the template you created and the assets you selected. It uses the server URL listed under "Published Server Name" under the Application General Settings.
+1. In the lower-right corner of the page, click **[!UICONTROL Close]**.
+1. In the Dynamic Media Classic user interface, select one or more assets, then click **[!UICONTROL File]** > **[!UICONTROL Invalidate CDN]**. You see a list of one or more URLs generated from the template you created and the assets you selected. It uses the server URL listed under "Published Server Name" under the Application General Settings.
 
    For example, with the CDN Invalidation Template set in the previous step, suppose you selected a single image asset image named `Backpack_B`. When you tap **[!UICONTROL File > Invalidate CDN]**, it results in the following generated URL in the CDN Invalidation user interface:
 
@@ -51,7 +51,7 @@ See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.
 
    After you click **[!UICONTROL Continue]**, an indicator is displayed that gives you an estimate of how long it will take to clear the cache.
 
-   If you selected multiple assets, then tapped **[!UICONTROL File > Invalidate CDN]**, each asset is referenced in the saved **[!UICONTROL Template URL.]** Therefore, you can define a **[!UICONTROL CDN Invalidate Template]** referencing each URL image preset that is referenced on your website (such as product detail and search results). Then, when you select one or images for invalidation from cache, the URLs automatically populate the interface.
+   If you selected multiple assets, then tapped **[!UICONTROL File > Invalidate CDN]**, each asset is referenced in the saved **[!UICONTROL Template URL]**. Therefore, you can define a **[!UICONTROL CDN Invalidate Template]** referencing each URL image preset that is referenced on your website (such as product detail and search results). Then, when you select one or images for invalidation from cache, the URLs automatically populate the interface.
 
    >[!NOTE]
    >

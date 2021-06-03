@@ -44,7 +44,7 @@ Administrators can create Image Presets. To create an image preset, you can star
 
 ## Managing Dynamic Media image presets {#managing-image-presets-1}
 
-You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets > Image Presets.]**
+You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets > Image Presets]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -75,11 +75,11 @@ Adobe Illustrator's file format is a variant of PDF. The main differences, in th
 * Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG sub-asset under the main Illustrator asset.
 * PDF documents consist of one or more pages. Each page is extracted as a single page PDF sub-asset under the main multi-page PDF document.
 
-The sub-assets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit.]**
+The sub-assets are created by the `Create Sub Asset process` component within the overall `DAM Update Asset` workflow. To see this process component within the workflow, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 
 See also [Viewing pages of a multi-page file](/help/assets/managing-linked-subassets.md#view-pages-of-a-multi-page-file).
 
-You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages.]** The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
+You can view the sub-assets or the pages when you open the asset, tap the Content menu, and select **[!UICONTROL Subassets]** or **[!UICONTROL Pages]**. The sub-assets are real assets. That is, PDF pages are extracted by the `Create Sub Asset` workflow component. They are then stored as `page1.pdf`, `page2.pdf`, and so on below the main asset. After they are stored, the `DAM Update Asset` workflow processes them.
 
 To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or PDF files, the following processing steps are required:
 
@@ -100,7 +100,7 @@ To use Dynamic Media to preview and generate dynamic renditions for AI, EPS or P
 
 You access `Rasterize PDF/AI Image Preview Rendition` process component options by way of the `DAM Update Asset` workflow.
 
-Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools > Workflow > Models.]** On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit.]** On the [!UICONTROL DAM Update Asset] workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
+Tap on Adobe Experience Manager in the upper left, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. On the Workflow Models page, select **[!UICONTROL DAM Update Asset]**, then on the toolbar tap **[!UICONTROL Edit]**. On the [!UICONTROL DAM Update Asset] workflow page, double-tap the `Rasterize PDF/AI Image Preview Rendition` process component to open its Step Properties dialog box.
 
 #### Rasterize PDF/AI Image Preview Rendition options {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -197,17 +197,17 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 >
 >* Thumbnail size for EPS files are configured in the **[!UICONTROL EPS thumbnails]** step, in the **[!UICONTROL Arguments]** tab under Thumbnails.
 >
->* Thumbnail size for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments.]**
+>* Thumbnail size for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
 **To configure image thumbnail size**:
 
-1. Tap **[!UICONTROL Tools > Workflow > Models > DAM Update Asset > Edit.]**
-1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and tap or click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK.]**
+1. Tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
+1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and tap or click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
-1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK.]**
+1. Tap the **[!UICONTROL Process Thumbnails]** step, then tap the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
@@ -217,7 +217,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 ### Increasing or decreasing the number of Dynamic Media image presets that display {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Image presets you create are available as dynamic renditions when you preview assets. AEM shows a variety of dynamic renditions when viewing an assets from **[!UICONTROL Detail View > Renditions.]** You can increase or decrease the limit of renditions that are displayed.
+Image presets you create are available as dynamic renditions when you preview assets. AEM shows a variety of dynamic renditions when viewing an assets from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
 
 **To increase or decrease the number of Dynamic Media image presets displayed**:
 
@@ -232,7 +232,7 @@ Image presets you create are available as dynamic renditions when you preview as
    ![chlimage_1-495](assets/chlimage_1-495.png)
 
 1. In the limit property, change the number to the desired number, for example `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
-1. Tap **[!UICONTROL Save All.]**
+1. Tap **[!UICONTROL Save All]**.
 
 ## Creating a Dynamic Media image preset {#creating-image-presets}
 
@@ -254,8 +254,8 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
 
 **To create a Dynamic Media image preset**:
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets.]**
-1. Click **[!UICONTROL Create.]** The **[!UICONTROL Edit Image Preset]** window opens.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
+1. Click **[!UICONTROL Create]**. The **[!UICONTROL Edit Image Preset]** window opens.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -295,7 +295,7 @@ When you create or edit image presets, you have the options described in this se
 
 * **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]** (this sharpening filter offers less control than Unsharp Masking settings).
 
-* **[!UICONTROL Sharpening: Resampling Mode]** - Select **[!UICONTROL Bi-Cubic.]**
+* **[!UICONTROL Sharpening: Resampling Mode]** - Select **[!UICONTROL Bi-Cubic]**.
 
 #### Basic tab options {#basic-tab-options}
 
@@ -486,11 +486,11 @@ The following are some basic examples of what you can do with image modifiers.
 
 ## Editing Image Presets {#modifying-image-presets}
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets.]**
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
-1. Select a preset and then click **[!UICONTROL Edit.]** The **[!UICONTROL Edit Image Preset]** window opens.
+1. Select a preset and then click **[!UICONTROL Edit]**. The **[!UICONTROL Edit Image Preset]** window opens.
 1. Make changes and click **[!UICONTROL Save]** to save your changes or **[!UICONTROL Cancel]** to cancel your changes.
 
 ## Publishing Dynamic Media image presets {#publishing-image-presets}
@@ -501,14 +501,14 @@ If you are running Dynamic Media - Hybrid mode, you must manually publish image 
 
 **To publish image presets in Dynamic Media - Hybrid mode**:
 
-1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets > Image Presets.]**
-1. Select the image preset or multiple image presets from the list of image presets and click or tap **[!UICONTROL Publish.]**
+1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. Select the image preset or multiple image presets from the list of image presets and click or tap **[!UICONTROL Publish]**.
 1. After the image preset is published, the status changes from unpublished to published.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
-1. In AEM, tap or click the AEM logo to access the global navigation console.
-1. Tap the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets > Image Presets.]**
+1. In Experience Manager, tap or click the AEM logo to access the global navigation console.
+1. Tap the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.

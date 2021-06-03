@@ -13,13 +13,13 @@ feature: Collaboration,Asset Management
 ---
 # Working with Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
 Dynamic media serves interactive viewing experiences, including zoom, 360-degree spin, and video. Dynamic media uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
 
->[!NOTE]
+<!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
->A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html).
+>A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
 ## What you can do with Dynamic Media {#what-you-can-do-with-dynamic-media}
 
@@ -44,7 +44,7 @@ See also [Setting up Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->To understand the differences between using Dynamic Media and integrating Dynamic Media Classic with AEM, see [Dynamic Media Classic integration versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>To understand the differences between using Dynamic Media and integrating Dynamic Media Classic with Adobe Experience Manager, see [Dynamic Media Classic integration versus Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media enabled versus Dynamic Media disabled {#dynamic-media-on-versus-dynamic-media-off}
 
