@@ -64,6 +64,18 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   >
   >* Asia-Pacific June 24, 2021.
 
+* Ability to send a notification email to a group using [!UICONTROL Assign Task] workflow step.
+
+* Ability to retrieve an Interactive Communication draft after modifying the source Interactive Communication.
+
+* Set custom domain name for loading, rendering, and validating the reCAPTCHA service in [!DNL Experience Manager Forms].
+
+* Input data enhancements for [!UICONTROL Invoke Form Data Model Service] workflow step.
+
+* Ability to use multiple master pages in a Document of Record template in [!DNL Experience Manager Forms].
+
+* Support page breaks in Document of Record in [!DNL Experience Manager Forms].
+
 * The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.7.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
@@ -295,7 +307,49 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+>* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+>* You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments.
+
+**Adaptive Forms**
+
+* Language initialization issues in [!DNL Experience Manager Forms] 6.5.7.0 while generating multiple translation dictionaries (NPR-36439).
+* When you add an attachment to adaptive form fragment and submit the form, [!DNL Experience Manager Forms] displays the following error message (NPR-36195):
+
+  ```TXT
+   POST /content/forms/af/attachmentissue/jcr:content/guideContainer.af.submit.jsp HTTP/1.1] com.adobe.aemds.guide.servlet.GuideSubmitServlet [AF] Invalid file name or mime type for file resulted in submission failure
+  ```
+
+* When you use human translation to update a dictionary and then preview an adaptive form, the modifications do not display (NPR-36035).
+
+**Interactive Communications**
+
+* When you upload an image using the Interactive Communications Print channel and edit it, the image is not visible anymore (NPR-36518).
+
+* On editing a text asset and populating a placeholder, all the interactive elements are removed from the navigation pane (NPR-35991).
+
+**Workflow**
+
+* When you call the REST endpoint of an [!DNL Experience Manager Forms] service on JBoss, [!DNL Experience Manager] displays the following error message (NPR-36305):
+
+   ```TXT
+   Invalid input. The maximum length of 2000 characters was exceeded.
+   ```
+
+**BackendIntegration**
+
+* Unable to save a form data model while binding Read service argument to a literal value that contains a dash (NPR-36366).
+
+**Document Security**
+
+* When you set certification and HSM for GlobalSign, [!DNL Experience Manager Forms] displays the `Unsuported Algorithm` and `Invalid TSA Certificate` error messages while adding a timestamp to LTV (NPR-36026, NPR-36025).
+
+**Document Services**
+
+* Updates to [!DNL Gibson] library for integration with [!DNL Experience Manager Forms] (NPR-36211).
+
+**Foundation JEE**
+
+* When you select Endpoint Management on the AdminUI, [!DNL Experience Manager Forms] displays the `endpoint registry failure` error message (CQ-4320249).
 
 For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -353,8 +407,6 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-<!--
-
 ### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -380,7 +432,6 @@ For information about installing the cumulative installer for Experience Manager
 >[!NOTE]
 >
 >After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
--->
 
 ### UberJar {#uber-jar}
 
