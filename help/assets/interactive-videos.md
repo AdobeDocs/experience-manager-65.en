@@ -35,7 +35,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->If you create an interactive video to launch a web page when a user clicks a thumbnail image, some devices will block the pop-up web page from opening. In such cases, you must change the pop-up blocker setting on the device. For example, on an Apple iPhone 6, tap **[!UICONTROL Settings]** &gt; **Safari** &gt; **Block Pop-ups**, then slide the control to **[!UICONTROL Off]**. Now, when you play an interactive video and click a thumbnail, you are prompted if you want to open the pop-up. If you accept, the web page opens.
+>If you create an interactive video to launch a web page when a user clicks a thumbnail image, some devices will block the pop-up web page from opening. In such cases, you must change the pop-up blocker setting on the device. For example, on an Apple iPhone 6, tap **[!UICONTROL Settings]** > **Safari** > **Block Pop-ups**, then slide the control to **[!UICONTROL Off]**. Now, when you play an interactive video and click a thumbnail, you are prompted if you want to open the pop-up. If you accept, the web page opens.
 
 ### Watch how interactive videos are created {#watch-how-interactive-videos-are-created}
 
@@ -273,11 +273,11 @@ To add interactivty to your video:
 1. In the Assets view, navigate to the video that you uploaded and want to make interactive.
 1. Do one of the following:
 
-    * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). On the toolbar, tap **[!UICONTROL Edit.]**
+    * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). On the toolbar, tap **[!UICONTROL Edit]**.
 
-    * Hover on the image, then tap **[!UICONTROL More actions]** (three dots icon) **[!UICONTROL > Edit.]**
+    * Hover on the image, then tap **[!UICONTROL More actions]** (three dots icon) **[!UICONTROL > Edit]**.
 
-    * Tap the image to open it in the Detail View page. On the toolbar, tap **[!UICONTROL Edit.]**
+    * Tap the image to open it in the Detail View page. On the toolbar, tap **[!UICONTROL Edit]**.
 
 1. On the Create Interactive Video page, do any one of the following:
 
@@ -285,7 +285,7 @@ To add interactivty to your video:
 
       For each time segment that you add, you can assign one or more thumbnail images to it and then link those thumbnails to Quickview product pages for customers to purchase or to web pages for more information.
 
-    * Tap the **[!UICONTROL Play]** button to begin playing the video. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Pause.]** Tap **[!UICONTROL Add Segment.]**
+    * Tap the **[!UICONTROL Play]** button to begin playing the video. When a particular product, service, or detail that you want to highlight comes into view, tap **[!UICONTROL Pause]**. Tap **[!UICONTROL Add Segment]**.
 
       Continue playing and pausing the video at points along the timeline where you want to add a segment until you reach the end of the video.
 
@@ -364,9 +364,9 @@ To add interactivty to your video:
 
     * To delete a segment
 
-      Select the last segment that is on the timeline, then on the toolbar, tap **[!UICONTROL Delete Segment.]** If two or more segments are selected, the Delete Segment feature is disabled.
+      Select the last segment that is on the timeline, then on the toolbar, tap **[!UICONTROL Delete Segment]**. If two or more segments are selected, the Delete Segment feature is disabled.
 
-      You can only delete the last segment. For example, if you wanted to delete all the segments on the timeline, you must always select the last one, then tap **[!UICONTROL Delete Segment.]**
+      You can only delete the last segment. For example, if you wanted to delete all the segments on the timeline, you must always select the last one, then tap **[!UICONTROL Delete Segment]**.
 
 1. Select a time segment to which you want to associate one or more thumbnail images.
 1. To the right of the video, tap the **[!UICONTROL Content]** tab.
@@ -481,11 +481,11 @@ To add interactivty to your video:
 
    If you created your own Interactive Video viewer preset, you will also see it in the list of presets from which you can choose.
 
-   When you are finished, tap **[!UICONTROL Save.]**
+   When you are finished, tap **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
-   >When you save your interactive video, an associated `.vtt` file is automatically saved with it. The `.vtt` file is saved to the `_VTT` folder located at the root of **[!UICONTROL Assets.]** The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
+   >When you save your interactive video, an associated `.vtt` file is automatically saved with it. The `.vtt` file is saved to the `_VTT` folder located at the root of **[!UICONTROL Assets]**. The file and folder is necessary for your interactive video to play correctly on your website. As such, do not move, edit, or delete the `_VTT` folder or its contents.
 
 1. Publish the interactive video. Publishing creates the embed code or URL that you will eventually copy and paste to your website experiences.
 

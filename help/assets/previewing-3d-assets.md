@@ -49,7 +49,7 @@ In addition, the capabilities of the client computer&mdash;such as a workstation
 
 1. Make sure you have uploaded 3D assets into Experience Manager.
     See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-assets.md#uploading-assets).
-1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files.]**
+1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
 
     ![Navigation page](/help/assets/assets-dm/navigation-assets.png
     )
@@ -74,4 +74,4 @@ In addition, the capabilities of the client computer&mdash;such as a workstation
     | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
     | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close.]**
+1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.

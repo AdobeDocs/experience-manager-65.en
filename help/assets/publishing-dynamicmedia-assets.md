@@ -13,7 +13,7 @@ feature: Publishing
 ---
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish.]** After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by embedding the code on the page.
+You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**. After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by embedding the code on the page.
 
 You can also instantly publish assets that you upload&mdash;without any user intervention. See [Configuring Dynamic Media - Scene7 mode.](config-dms7.md)
 Or, you can selectively publist assets to either Dynamic Media or AEM, mutually exclusive of each other, using **[!UICONTROL Selective Publish]** at the folder level. See [Working with Selective Publish in Dynamic Media.](/help/assets/selective-publishing.md)
