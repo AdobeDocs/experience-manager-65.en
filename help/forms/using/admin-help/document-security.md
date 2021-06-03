@@ -232,7 +232,7 @@ When document security is installed, a default policy set is created called *Glo
 
 Policies are reusable sets of permissions and user groups that can be applied to various documents. For the protected documents. These policies ensure that only authorized users can use allowed features. The number of policies and policy sets are expected to grow with an increase in different user roles and documents within a department. Here are some considerations and best practices to create and manage policies:
 
-* **Create reusable policies**: Adobe recommends reusing policies across various documents. It helps keep the number of policies to a minimum, provide optimum performance, and makes it easier to manage the policies. To create a reusable policy:
+* **Create reusable policies:** Adobe recommends reusing policies across various documents. It helps keep the number of policies to a minimum, provide optimum performance, and makes it easier to manage the policies. To create a reusable policy:
 
 1. Identify and define access control requirements at departments and organization level.
 
@@ -242,34 +242,34 @@ Policies are reusable sets of permissions and user groups that can be applied to
 
 1. Open the policy set and create a policy. Add user groups and set confidentiality (access-control) settings for the policy.
 
-Add user groups to policies instead of individual users. It makes it easier to manage and apply policies to a large number of users.
+  Add user groups to policies instead of individual users. It makes it easier to manage and apply policies to a large number of users.
 
-* **Create Custom Policy sets**: A policy set combines multiple policies into a manageable entity. Create custom policy sets for your organization or department, use them to group related policies, and make them available to a subset of users in the system. 
+* **Create Custom Policy sets:** A policy set combines multiple policies into a manageable entity. Create custom policy sets for your organization or department, use them to group related policies, and make them available to a subset of users in the system. 
 
-Using policy sets makes it easier to assign and manage related policies to specific users in an organization or department. For example, separate policy sets for the finance and human resources department can help easily manage and apply related policies to documents designated for corresponding departments.
+  Using policy sets makes it easier to assign and manage related policies to specific users in an organization or department. For example, separate policy sets for the finance and human resources department can help easily manage and apply related policies to documents designated for corresponding departments.
 
 * **Use an external authorizer to apply permissions dynamically:** You can use [external authorizer](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html) to evaluate and dynamically apply permissions based on external condition. When the permissions are evaluated dynamically, based on external condition, then you can:
 
-* Provide centralized access control for documents in your organization.
+  * Provide centralized access control for documents in your organization.
 
-* Control access to policy-protected documents by dynamically determining whether a user can access a policy-protected document. For example, dynamically decides whether a user can print a policy-protected document.
+  * Control access to policy-protected documents by dynamically determining whether a user can access a policy-protected document. For example, dynamically decides whether a user can print a policy-protected document.
 
-* Use an access control mechanism that your content management system uses, in addition to the standard policy evaluation process. For example, when the service determines whether a user can print a policy-protected document, it can use the standard policy evaluation process and the access control mechanism that your content management system uses.
+  * Use an access control mechanism that your content management system uses, in addition to the standard policy evaluation process. For example, when the service determines whether a user can print a policy-protected document, it can use the standard policy evaluation process and the access control mechanism that your content management system uses.
 
-Although it is possible to completely replace the Document Security policy evaluation process with an external authorization handler, it is recommended that you use an external authorization handler in conjunction with the policy evaluation process. As a result, document access can be controlled by the same control mechanism that your content management system uses. For example, when the Document Security service determines whether a user can print a policy-protected document, it uses the standard policy evaluation process and the access control mechanism that your content management system uses. For more information, see [Creating External Authorization Handlers
-](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html). 
+  Although it is possible to completely replace the Document Security policy evaluation process with an external authorization handler, it is recommended that you use an external authorization handler in conjunction with the policy evaluation process. As a result, document access can be controlled by the same control mechanism that your content management system uses. For example, when the Document Security service determines whether a user can print a policy-protected document, it uses the standard policy evaluation process and the access control mechanism that your content management system uses. For more information, see [Creating External Authorization Handlers
+](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
-* **Keep the policy sets to a limited number**: Several factors lead to the constant growth of policies and policy sets. Some common factors are:
+* **Keep the policy sets to a limited number:** Several factors lead to the constant growth of policies and policy sets. Some common factors are:
 
-  • Increase in user roles, departments, and documents within an organization over a period.
-  • Departments of an organization work in isolation and keep a tight control on the department-specific policies. It leads to identical policies within an organization. 
+  * Increase in user roles, departments, and documents within an organization over a period.
+  * Departments of an organization work in isolation and keep a tight control on the department-specific policies. It leads to identical policies within an organization. 
 
-Adobe recommends keeping the number of policies and policy sets to a minimum. It helps easily manage policies and policy sets and provide better performance. To keep the number to a minimum:
+  Adobe recommends keeping the number of policies and policy sets to a minimum. It helps easily manage policies and policy sets and provide better performance. To keep the number to a minimum:
 
-* Create reusable policies. These can be shared across multiple departments.
-* Consider creating organization-wide policy sets, if some policies apply to multiple departments instead of an individual policy set for each department.
-* Group related policies in a policy set. Do not create a separate policy set for each policy.
-* Use an external authorizer to dynamically  control user permissions.
+  * Create reusable policies. These can be shared across multiple departments.
+  * Consider creating organization-wide policy sets, if some policies apply to multiple departments instead of an individual policy set for each department.
+  * Group related policies in a policy set. Do not create a separate policy set for each policy.
+  * Use an external authorizer to dynamically  control user permissions.
 
   >[!NOTE]
   >
