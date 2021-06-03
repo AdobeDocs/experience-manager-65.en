@@ -368,7 +368,7 @@ Two elements are available for definition, Match and Base Name. These fields let
     * Tap **[!UICONTROL Save As]** and type a name for the preset.
     * Tap **[!UICONTROL Save]** if you are editing an existing preset.
 
-#####Creating a Batch Set Preset
+##### Creating a Batch Set Preset
 
 Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
 
