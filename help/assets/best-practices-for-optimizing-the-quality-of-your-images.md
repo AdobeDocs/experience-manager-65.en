@@ -53,14 +53,14 @@ There are two image sharpening methods that you can use:
 * Simple sharpening ( `&op_sharpen`) &ndash; Similar to the sharpen filter used in Photoshop, simple sharpening applies basic sharpening to the final view of the image following dynamic resizing. However, this method is not user-configurable. The best practice is to not use &op_sharpen unless required.
 * Unsharp masking ( `&op_USM`) &ndash; Unsharp masking is an industry standard sharpening filter. The best practice is to sharpen images with unsharp masking following the guidelines below. Unsharp masking lets you control the following three parameters:
 
-    * `&op_sharpen=`amount,radius,threshold
+  * `&op_sharpen=`amount,radius,threshold
 
-        * **[!UICONTROL amount]** (0-5, strength of the effect.)
-        * **[!UICONTROL radius]** (0-250, width of the "sharpening lines" drawn around the sharpened object, as measured in pixels.)
+    * **[!UICONTROL amount]** (0-5, strength of the effect.)
+    * **[!UICONTROL radius]** (0-250, width of the "sharpening lines" drawn around the sharpened object, as measured in pixels.)
 
-          Keep in mind that the parameters radius and amount work against each other. Reducing radius can be compensated by increasing amount. Radius allows finer control as a lower value sharpens only the edge pixels, whereas a higher value sharpens a wider band of pixels.
+    Keep in mind that the parameters radius and amount work against each other. Reducing radius can be compensated by increasing amount. Radius allows finer control as a lower value sharpens only the edge pixels, whereas a higher value sharpens a wider band of pixels.
 
-        * **[!UICONTROL threshold]** (0-255, sensitivity of effect.)
+    * **[!UICONTROL threshold]** (0-255, sensitivity of effect.)
 
           This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding "noise", while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
 
@@ -91,8 +91,8 @@ Leave the monochrome parameter setting at 0.
 * As a best practice, to stay in the middle, set the `qlt= value` to 85 to stay in the middle.
 * Using the chroma flag in `qlt=`
 
-    * The `qlt=` parameter has a second setting that lets you turn on RGB chromaticity downsampling using the value `,1` or off using the value `,0`.
-    * To keep it simple, start with RGB chromaticity downsampling turned off (`,0`). This setting usually results in better image quality, especially for synthetic images with lots of sharp edges and contrast.
+  * The `qlt=` parameter has a second setting that lets you turn on RGB chromaticity downsampling using the value `,1` or off using the value `,0`.
+  * To keep it simple, start with RGB chromaticity downsampling turned off (`,0`). This setting usually results in better image quality, especially for synthetic images with lots of sharp edges and contrast.
 
 As a best practice for JPG compression use `&qlt=85,0`.
 
