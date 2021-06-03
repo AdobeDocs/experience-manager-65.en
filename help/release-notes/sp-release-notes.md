@@ -32,7 +32,9 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for a new user to refresh the access token using a refresh token for mailer configuration service.
 
-* Support for SMTP XOAUTH2 mechanism for mailer configuration service.
+* Support for [!DNL SMTP XOAUTH2] mechanism for mailer configuration service.
+
+* Support for [!DNL MongoDB] versions 4.2 and 4.4.
 
 * Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions.
 
@@ -83,7 +85,7 @@ For a complete list of features and enhancements introduced in [!DNL Experience 
 >Starting with AEM Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
 >Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
 >You can download the relevant versions of the [!DNL Azul Zulu JDKs] from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated FAQs.
+>The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0 release.
 
