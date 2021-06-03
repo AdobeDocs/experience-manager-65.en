@@ -13,6 +13,13 @@ exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 
 This article highlights the features included in the latest Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key releases since the last Service Pack](#key-releases-since-last-sp) release.
 
+>[!NOTE]
+>
+>Starting with AEM Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
+>Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
+>You can download the relevant versions of the [!DNL Azul Zulu JDKs] from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
+
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
 ### Ability to restore deleted pages and tree {#ability-to-restore-pages-tree}
