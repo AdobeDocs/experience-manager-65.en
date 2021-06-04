@@ -239,6 +239,8 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * The `SegmentNotFound` exception is returned after a long running session (NPR-36405).
 
+* [OAuth2 Support for the Mailer Service](/help/sites-administering/notification.md#setting-up-oauth) has been added, allowing for improved email security.
+
 ### Integrations {#integrations-6590}
 
 * Unable to save page properties with inheritance enabled for Cloud Services Experience Fragments (NPR-36107).
