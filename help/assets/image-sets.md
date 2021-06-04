@@ -35,13 +35,13 @@ For example, suppose you want to present images of caps with different color bil
 
 **To get you up and running quickly:**
 
-1. [Upload your primary source images for multiple views.](#uploading-assets-in-image-sets)
+1. [Upload your primary source images for multiple views](#uploading-assets-in-image-sets).
 
    Start by uploading the images for your Image Sets. When you choose images, remember that your customers can zoom on images in the Image Set Viewer. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 megapixels each. For example, you could use a 5000 x 5000 megapixel image or any other size combination up to 25 megapixels.
 
    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
 
-1. [Create Image Sets.](#creating-image-sets)
+1. [Create Image Sets](#creating-image-sets).
 
    In Image Sets, users click thumbnail images in the Image Set Viewer.
 
@@ -54,7 +54,7 @@ For example, suppose you want to present images of caps with different color bil
 
    See [Preparing Image Set assets for upload and Uploading your files](#uploading-assets-in-image-sets).
 
-   See [Working with Selectors.](/help/assets/working-with-selectors.md)
+   See [Working with Selectors](/help/assets/working-with-selectors.md).
 
 1. Add [Image Set Viewer presets](/help/assets/managing-viewer-presets.md), as needed.
 
@@ -63,11 +63,11 @@ For example, suppose you want to present images of caps with different color bil
    See **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]** if you want to create or edit viewer presets.
 
 1. (Optional) [Viewing Image Sets](/help/assets/image-sets.md#viewing-image-sets) that were created using batch set presets.
-1. [Preview Image Sets.](/help/assets/previewing-assets.md)
+1. [Preview Image Sets](/help/assets/previewing-assets.md).
 
    Select the Image Set and you can preview it. Click the thumbnail icons so you can examine your Image Set in the selected Viewer. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
-1. [Publish Image Sets.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Publish Image Sets](/help/assets/publishing-dynamicmedia-assets.md).
 
    Publishing an Image Set activates the URL and embed code. In addition, you must [publish any custom viewer preset](/help/assets/managing-viewer-presets.md) that you have created. Out-of-the box viewer presets are already published.
 
@@ -79,7 +79,7 @@ For example, suppose you want to present images of caps with different color bil
 
    See [Linking an Image Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embedding the Video or Image Viewer](/help/assets/embed-code.md).
 
-To edit Image Sets, see [editing Image Sets.](#editing-image-sets) In addition, you can view and edit [Image Set properties](/help/assets/manage-assets.md#editing-properties).
+To edit Image Sets, see [editing Image Sets](#editing-image-sets). In addition, you can view and edit [Image Set properties](/help/assets/manage-assets.md#editing-properties).
 
 If you have issues creating sets, see Images and Sets in [Troubleshooting Dynamic Media - Scene7 mode](/help/assets/troubleshoot-dms7.md#images-and-sets).
 
@@ -143,7 +143,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
    With the Asset Selector, you can search for assets by typing in a keyword and tapping or clicking **[!UICONTROL Return]**. You can also apply filters to refine your search results. You can filter by path, collection, file type, and tag. Select the filter and then tap the **[!UICONTROL Filter]** icon on the toolbar. Change the view by tapping the View icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
 
-   See [Working with Selectors.](/help/assets/working-with-selectors.md)
+   See [Working with Selectors](/help/assets/working-with-selectors.md).
 
    ![6_5_imageset-addingassets](assets/6_5_imageset-addingassets.png)
 

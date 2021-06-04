@@ -32,10 +32,10 @@ Regardless of whether you rely on the **[!UICONTROL Publish Assets]** value set 
 
 After you configure selective publishing in a folder, you can do any of the following:
 
-* [Selectively publish assets to Dynamic Media or AEM using Manage Publication.](#selective-publish-manage-publication)
-* [Selectively unpublish assets from Dynamic Media or AEM using Manage Publication.](#selective-unpublish-manage-publication)
-* [Publishing assets to Dynamic Media or AEM using Quick Publish.](#quick-publish-aem-dm)
-* [Selectively publish or unpublish assets by way of search results.](#selective-publish-unpublish-search-results)
+* [Selectively publish assets to Dynamic Media or AEM using Manage Publication](#selective-publish-manage-publication).
+* [Selectively unpublish assets from Dynamic Media or AEM using Manage Publication](#selective-unpublish-manage-publication).
+* [Publishing assets to Dynamic Media or AEM using Quick Publish](#quick-publish-aem-dm).
+* [Selectively publish or unpublish assets by way of search results](#selective-publish-unpublish-search-results).
 
 **To configure selective publishing at the folder level in Dynamic Media**
 
@@ -180,7 +180,7 @@ You can use **[!UICONTROL Quick Publish]** for simple asset activation cases. **
 
 Search results can show assets from across asset folders that have different Dynamic Media publish settings. Where you have selected one or more assets from search results, and the assets have different Dynamic Media publish mode settings, you can trigger **[!UICONTROL Manage Publication]** from the toolbar, to publish or unpublish.
 
-See also [Search assets in AEM.](/help/assets/search-assets.md)
+See also [Search assets in AEM](/help/assets/search-assets.md).
 
 **To selectively publish or unpublish assets by way of search results**
 

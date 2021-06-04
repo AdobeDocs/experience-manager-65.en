@@ -33,11 +33,11 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
    Start by uploading the images and videos for your Mixed Media Sets. If necessary, create your [Image Sets](/help/assets/image-sets.md) and [Spin Sets](/help/assets/spin-sets.md). Because users can zoom on images in the Mixed Media Set Viewer, take zooming into account when you choose images. Make sure that the images are least 2000 pixels in the largest dimension.
 
-1. [Create Mixed Media Sets.](#creating-mixed-media-sets)
+1. [Create Mixed Media Sets](#creating-mixed-media-sets).
 
    To create a Mixed Media Set, from the Assets page, tap **[!UICONTROL Create > Mixed Media Set]** and then name the set, choose the assets, and choose the order the images appear.
 
-   See [Working with Selectors.](/help/assets/working-with-selectors.md)
+   See [Working with Selectors](/help/assets/working-with-selectors.md).
 
 1. Set up [Mixed Media Viewer presets](/help/assets/managing-viewer-presets.md), as needed.
 
@@ -45,13 +45,13 @@ To get you up and running quickly with Mixed Media Sets, follow these steps:
 
    See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
 
-   See [Adding and editing viewer presets.](/help/assets/managing-viewer-presets.md)
+   See [Adding and editing viewer presets](/help/assets/managing-viewer-presets.md).
 
-1. [Preview Mixed Media Sets.](#previewing-mixed-media-sets)
+1. [Preview Mixed Media Sets](#previewing-mixed-media-sets).
 
    Select the Mixed Media Set and you can preview it. Click the thumbnail icons to examine your Mixed Media Set in the selected Viewer. You can choose different Viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
-1. [Publish Mixed Media Sets.](#publishing-mixed-media-sets)
+1. [Publish Mixed Media Sets](#publishing-mixed-media-sets).
 
    Publishing a Mixed Media Set activates the URL and Embed string. In addition, you must [publish the viewer preset](/help/assets/managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -81,7 +81,7 @@ You can add images, Image Sets, Spin Sets, and videos to your Mixed Media set. M
 
 When you add assets to your set, they are automatically added in alphanumeric order. You can manually re-order or sort assets after they have been added.
 
-**To create a Mixed Media Set**
+**To create a Mixed Media Set:**
 
 1. In Assets, navigate to where you want to create a mixed media set, and click **[!UICONTROL Create]**, and select **[!UICONTROL Mixed Media Set]**. You can also create the set from inside a folder that contains your assets. The Mixed Media Set Editor displays.
 
@@ -127,7 +127,7 @@ You can perform a variety of editing tasks to assets in Mixed Media Sets directl
 * Apply viewer presets.
 * Change the default thumbnail.
 
-**To edit a Mixed Media Set**
+**To edit a Mixed Media Set:**
 
 1. Do any one of the following:
 
