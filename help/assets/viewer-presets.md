@@ -24,12 +24,12 @@ Any problems with viewer presets, see [Troubleshooting Dynamic Media - Scene7](t
 
 ## Applying a Dynamic Media viewer preset to an asset {#applying-a-viewer-preset-to-an-asset}
 
-1. Open the asset and in the left rail, and tap **[!UICONTROL Viewers.]**
+1. Open the asset and in the left rail, and tap **[!UICONTROL Viewers]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    * The **[!UICONTROL URL]** and **[!UICONTROL Embed]** buttons appear after you select a viewer preset.
-   * The system shows numerous viewer presets when you select Viewers in an asset's **[!UICONTROL Detail View.]** You can increase the number of presets seen. See [Increasing the number of viewer presets that display](managing-viewer-presets.md).
+   * The system shows numerous viewer presets when you select Viewers in an asset's **[!UICONTROL Detail View]**. You can increase the number of presets seen. See [Increasing the number of viewer presets that display](managing-viewer-presets.md).
 
 1. Select a viewer from the left pane to apply it to the asset as seen in the right pane. You can also [copy the URL to share](linking-urls-to-yourwebapplication.md) with others users.
 

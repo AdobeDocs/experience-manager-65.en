@@ -27,7 +27,7 @@ Ensure that Dynamic Media has been set up properly by doing the following:
 
   This optional feature pack is for FTP support or if you are migrating assets to Dynamic Media from Dynamic Media Classic.
 
-* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **[!UICONTROL Available Configurations.]**
+* Navigate to the Cloud Services user interface and confirm that the provisioned account appears under **[!UICONTROL Available Configurations]**.
 * Ensure that the `Dynamic Media Asset Activation (scene7)` replication agent is enabled.
 
   This replication agent is found under Agents on Author.
