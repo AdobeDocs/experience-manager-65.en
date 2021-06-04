@@ -15,7 +15,7 @@ feature: Configuration
 
 Your websites and applications access Dynamic Media services by way of URL calls. After you publish an asset, Dynamic Media activates a URL string that references the asset. You can paste these URLs into a web browser for testing.
 
-You link to URLs only if you are *not* using AEM as your WCM. Linking&ndash;versus embedding&ndash;is used when you want to deliver a video player as a pop-up or modal window. If you are using AEM as your WCM, [you add the assets directly on your page.](adding-dynamic-media-assets-to-pages.md)
+You link to URLs only if you are *not* using AEM as your WCM. Linking&ndash;versus embedding&ndash;is used when you want to deliver a video player as a pop-up or modal window. If you are using AEM as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
 
 To place these URL strings in your web pages and applications, copy them from Dynamic Media.
 
@@ -23,13 +23,13 @@ To place these URL strings in your web pages and applications, copy them from Dy
 >
 >URL strings are only available for dynamic renditions of assets. They are currently not available for static assets that reside in DAM and not the Dynamic Media server. The URL button does not appear for renditions that are static.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-See also [Linking YouTube URLs to your Web Application.](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](manage-assets.md#uploading-assets)
+See also [Uploading Assets](manage-assets.md#uploading-assets).
 
 ## Obtaining a URL for an asset {#obtaining-a-url-for-an-asset}
 
@@ -53,7 +53,7 @@ There are several different ways you can obtain a URL string. However, the steps
 
    Remember that URLs are only available to copy *after* you have first *published* the assets. In addition, the viewer preset or image preset must also be published.
 
-   See [Publishing Assets.](publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 

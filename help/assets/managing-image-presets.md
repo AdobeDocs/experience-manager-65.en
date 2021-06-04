@@ -56,7 +56,7 @@ You manage your image presets in AEM by tapping or clicking the AEM logo to acce
 >
 >In *Dynamic Media - Hybrid mode*, you need to manually publish image presets.
 >
->See [Publishing Image Presets.](#publishing-image-presets)
+>See [Publishing Image Presets](#publishing-image-presets).
 
 >[!NOTE]
 >

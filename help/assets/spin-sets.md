@@ -31,11 +31,11 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 
 To get you up and running quickly with Spin Sets, follow these steps:
 
-1. [Upload your images for multiple views.](#uploading-assets-for-spin-sets)
+1. [Upload your images for multiple views](#uploading-assets-for-spin-sets).
 
    At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30 degrees (360/12) for each shot.
 
-1. [Create Spin Sets.](#creating-spin-sets)
+1. [Create Spin Sets](#creating-spin-sets).
 
    To create a Spin Set, select **[!UICONTROL Create > Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
 
@@ -51,17 +51,17 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    See **[!UICONTROL Tools > Assets > Viewer Presets]** to create or edit viewer presets.
 
-   See [Adding and editing viewer presets.](/help/assets/managing-viewer-presets.md)
+   See [Adding and editing viewer presets](/help/assets/managing-viewer-presets.md).
 
 1. [Viewing Spin Sets](#viewing-spin-sets).
 
    You can view and access sets created by way of batch set presets in three different ways. (Sets created using batch set presets, do *not* appear in the user interface.)
 
-1. [Preview Spin Sets.](/help/assets/previewing-assets.md)
+1. [Preview Spin Sets](/help/assets/previewing-assets.md).
 
    Select the Spin Set and you can preview it. Rotate the Spin Set. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
-1. [Publish Spin Sets.](/help/assets/publishing-dynamicmedia-assets.md)
+1. [Publish Spin Sets](/help/assets/publishing-dynamicmedia-assets.md).
 
    Publishing a Spin Set activates the URL and Embed string. In addition, you must [publish the viewer preset](/help/assets/managing-viewer-presets.md).
 
@@ -138,7 +138,7 @@ This section describes how to create Spin Sets in AEM.
 
    If necessary, drag an asset's Reorder icon to the right of the asset's file name to re-order images up or down the set list.
 
-   ![Reordering Frame 11 in the spin set by dragging it to a new location.](assets/6_5_spinset-reorderassets.png)
+   ![Reordering Frame 11 in the spin set by dragging it to a new location](assets/6_5_spinset-reorderassets.png).
 
    Reordering Frame 11 in the spin set by dragging it to a new location.
 
@@ -158,7 +158,7 @@ You can create spin sets either in the user interface or automatically using [ba
 >
 >You can also view sets by way of the user interface as described in [Editing Spin Sets](#editing-spin-sets).
 
-**To view Spin Sets**
+**To view Spin Sets:**
 
 1. When opening the properties of an individual asset. Properties indicate what sets the selected asset is a member of (under **[!UICONTROL Member of Sets]**). Click the name of the set to see the entire set.
 
@@ -184,7 +184,7 @@ You can perform a variety of editing tasks on Spin Sets such as the following:
 * Apply viewer presets.
 * Delete the Spin Set.
 
-**To edit a Spin Set**
+**To edit a Spin Set:**
 
 1. Do any one of the following:
 

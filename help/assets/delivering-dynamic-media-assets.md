@@ -24,7 +24,7 @@ With Dynamic Media, you have several options:
 
   * Embedding your video or image on your website.
   * Link URLs to your web application. Use linking when you want to deliver a video player as a pop-up or modal window.
-  * If your site is responsive, you can [deliver optimized images.](/help/assets/responsive-site.md)
+  * If your site is responsive, you can [deliver optimized images](/help/assets/responsive-site.md).
 
 >[!NOTE]
 >

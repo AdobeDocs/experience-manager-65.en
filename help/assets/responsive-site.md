@@ -17,11 +17,11 @@ Use the Responsive code feature when you want to share the code for responsive s
 
 This feature makes sense to use if your website is on a third-party WCM. However, if your website is on AEM instead, an offsite image server renders the image and supplies it to the web page.
 
-See also [Embedding the Video Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video Viewer on a Web Page](embed-code.md).
 
-See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
+See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
-**To deliver optimized images for a responsive site**:
+**To deliver optimized images for a responsive site:**
 
 1. Navigate to the image you want supply responsive code for and in the drop-down menu, tap **[!UICONTROL Renditions]**.
 
