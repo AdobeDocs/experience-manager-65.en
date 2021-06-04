@@ -32,7 +32,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for a new user to refresh the access token using a refresh token for mailer configuration service.
 
-* Support for SMTP XOAUTH2 mechanism for mailer configuration service.
+* [Support for SMTP XOAUTH2](/help/sites-administering/notification.md#setting-up-oauth) mechanism for the mailer configuration service.
 
 * Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions.
 
@@ -238,8 +238,6 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 * The context path gets removed when setting up SSL in AEM (NPR-35294).
 
 * The `SegmentNotFound` exception is returned after a long running session (NPR-36405).
-
-* [OAuth2 Support for the Mailer Service](/help/sites-administering/notification.md#setting-up-oauth) has been added, allowing for improved email security.
 
 ### Integrations {#integrations-6590}
 
