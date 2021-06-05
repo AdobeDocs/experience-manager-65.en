@@ -9,7 +9,7 @@ exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
 ---
 # HTTP2 Delivery of Content FAQ{#http-delivery-of-content-faq}
 
-Adobe is excited to announce the availability of HTTP/2 delivery of content. When using HTTP/2 you will notice an overall performance increase.
+Adobe is excited to announce the availability of HTTP/2 delivery of content. When you use HTTP/2, an overall performance increased is noticed.
 
 ## What is HTTP/2? {#what-is-http}
 
@@ -17,11 +17,11 @@ HTTP/2 improves the way browsers and servers communicate, allowing for faster tr
 
 The following website describes HTTP/2 and its benefits in a brief and simple manner:
 
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+[What you must know about HTTP/2](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/).
 
 ## What are the key benefits of moving to HTTP/2 for content delivery? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Performance improvement varies widely based on factors such as your website's code, how you are using Dynamic Media, the consumer's device, screen and location, and so on.
+Performance improvement varies widely based on factors such as your website's code, how you use Dynamic Media, the customer's device, screen, and location.
 
 Adobe's own testing yielded the following results:
 
@@ -44,7 +44,7 @@ To use HTTP/2, you must meet the following requirements:
 
 ## What is the process for enabling HTTP/2 for my Dynamic Media account? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. You must [use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and request to switch over to HTTP/2; it is not automatically done for you.
+1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) and request to switch over to HTTP/2; it is not automatically done for you.
 1. Provide the following information in your support case:
 
      * Primary contact name, email, and phone number.
@@ -59,7 +59,7 @@ To use HTTP/2, you must meet the following requirements:
         To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
 1. Technical Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
-1. When Adobe is ready to handle your request, Support will contact you to coordinate the transition and set a target date.
+1. When Adobe is ready to handle your request, Support contacts you to coordinate the transition and set a target date.
 1. You will be notified after completion and can verify a successful transition over to HTTP2.
 
 ## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
@@ -68,14 +68,14 @@ Requests are processed in the order that they are received by Technical Support.
 
 >[!NOTE]
 >
->There may be a long lead time because the transition to HTTP/2 involves clearing the cache. Therefore, only a few customer transitions can be handled at a time.
+>There is a long lead time because the transition to HTTP/2 involves clearing the cache. Therefore, only a few customer transitions can be handled at a time.
 
 ## What are the risks with moving to HTTP/2? {#what-are-the-risks-with-moving-to-http}
 
 The transition to HTTP/2 clears out your cache at the CDN because it involves moving to a new CDN configuration.
 
-The non-cached content directly hits Adobe's origin servers until the cache is rebuilt again. Because of this, Adobe plans to handle a few customer transitions at a time so that acceptable performance is maintained when pulling requests from our origin.
+The non-cached content directly hits Adobe's origin servers until the cache is rebuilt again. Because of this action, Adobe plans to handle a few customer transitions at a time so that acceptable performance is maintained when pulling requests from Adobe's origin.
 
 ## How can you verify whether a URL or website is activated with HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-You need to download an externsion to use with your Web browser. For Firefox and Chrome there is an extension called **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers only support HTTP/2 securely, so it is necessary to call a URL with HTTPS to verify. If HTTP/2 is supported, this is indicated by the extension in the form of a blue Flash symbol, and a header "X-Firefox-Spdy" : "h2".
+Download an extension that you can use with your Web browser. For Firefox and Chrome, there is an extension called **[!UICONTROL HTTP/2 and SPDY Indicator]**. Browsers only support HTTP/2 securely, so it is necessary to call a URL with HTTPS to verify. If HTTP/2 is supported, it is indicated by the extension in the form of a blue Flash symbol, and a header "X-Firefox-Spdy" : "h2".
