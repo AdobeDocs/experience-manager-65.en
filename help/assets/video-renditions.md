@@ -27,7 +27,7 @@ The list of video renditions are displayed in the **[!UICONTROL Renditions]** pa
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-To configure the proxy server for DM-encoded renditions, [configure Dynamic Media Cloud services.](config-dynamic.md)
+To configure the proxy server for DM-encoded renditions, [configure Dynamic Media Cloud services](config-dynamic.md).
 
 To generate video renditions with desired parameters, [create a corresponding video profile](video-profiles.md).
 

@@ -14,20 +14,20 @@ exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 
 ## Keyboard accessibility support in [!DNL Dynamic Media]
 
-Because [!DNL Dynamic Media] is a plug-in to [!DNL Adobe Experience Manager Assets], most of the keyboard control behavior is exactly the same as in [!DNL Experience Manager Assets]. For example, the `Cancel` button in [!DNL Dynamic Media] has the same focus highlight as in [!DNL Experience Manager Assets], and reacts to the `Spacebar` key as in [!DNL Experience Manager Assets]. See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Because [!DNL Dynamic Media] is a plug-in to [!DNL Adobe Experience Manager Assets], most of the keyboard control behavior is the same as in [!DNL Experience Manager Assets]. For example, the `Cancel` button in [!DNL Dynamic Media] has the same focus highlight as in [!DNL Experience Manager Assets], and reacts to the `Spacebar` key as in [!DNL Experience Manager Assets]. See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Keystrokes supported by individual user interface elements in [!DNL Dynamic Media] are&ndash;in most cases&ndash;obvious and easy to discover. Keyboard control in [!DNL Dynamic Media] is about the following:
 
 * Ability to use `Tab` and `Shift+Tab` keystrokes to navigate between interactive elements on the page.
 Using `Tab` advances input focus to the next user interface element in the tabbing order; using `Shift+Tab` brings input focus back to the previous user interface element.
 The focus traversal follows the natural user interface element location on the screen and moves in a left-to-right, then top-to-bottom order. In addition, if any field has an error, you can press `Tab` to move the focus to it.
-* Ability to use the `Spacebar` and `Enter` key to activate standard user interface elements, such as buttons, drop-down list, and so on.
-* Ability to see the keyboard focus highlight on the active element. The user interface element that has input focus may receive a visual focus indication as a border rendered around the user interface element.
+* Ability to use the `Spacebar` and `Enter` key to activate standard user interface elements, such as buttons and drop-down lists.
+* Ability to see the keyboard focus highlight on the active element. The user interface element that has input focus receives a visual focus indication as a border rendered around the user interface element.
 * In the Hotspot editor, you can use some custom keystrokes, such as arrow keys, to interact with complex user interface elements to reposition hotspots.
-* In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. In addition, you have the ability to use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` functions as desired to navigate between interactive elements on the page.
-* In the Image Crop/Smart Crop editor, you have the ability to do the following:
-  * Use arrow keys to crop the frame size, or re-position the image, or both.
-  * The first `Tab` stop highlights the entire image frame. You can then use arrow keys on the keyboard to re-position the frame.
+* In the Interactive Video editor, you can use the `Spacebar` to select an image and add it to a segment. In addition, you can use the `Backspace` key to delete the selected item from the **[!UICONTROL Content]** tab. Also, pressing `Tab` functions as desired to navigate between interactive elements on the page.
+* In the Image Crop/Smart Crop editor, you can do the following:
+  * Use arrow keys to crop the frame size, or reposition the image, or both.
+  * The first `Tab` stop highlights the entire image frame. You can then use arrow keys on the keyboard to reposition the frame.
   * The next four `Tab` stops are the frame's four corners. When focus is placed on a frame corner, the corner is highlight. Again, you can use arrow keys on the keyboard to move the focused corner.
   See [Editing the smart crop or smart swatch of a single image](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 

@@ -15,7 +15,7 @@ feature: Configuration
 
 Your websites and applications access Dynamic Media services by way of URL calls. After you publish an asset, Dynamic Media activates a URL string that references the asset. You can paste these URLs into a web browser for testing.
 
-You link to URLs only if you are *not* using AEM as your WCM. Linking&ndash;versus embedding&ndash;is used when you want to deliver a video player as a pop-up or modal window. If you are using AEM as your WCM, [you add the assets directly on your page.](adding-dynamic-media-assets-to-pages.md)
+You link to URLs only if you are *not* using AEM as your WCM. Linking&ndash;versus embedding&ndash;is used when you want to deliver a video player as a pop-up or modal window. If you are using AEM as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
 
 To place these URL strings in your web pages and applications, copy them from Dynamic Media.
 
@@ -23,13 +23,13 @@ To place these URL strings in your web pages and applications, copy them from Dy
 >
 >URL strings are only available for dynamic renditions of assets. They are currently not available for static assets that reside in DAM and not the Dynamic Media server. The URL button does not appear for renditions that are static.
 
-See also [Embedding the Video or Image Viewer on a Web Page.](embed-code.md)
+See also [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-See also [Linking YouTube URLs to your Web Application.](video.md)
+See also [Linking YouTube URLs to your Web Application](video.md).
 
-See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
+See also [Delivering Optimized Images for a Responsive Site](responsive-site.md).
 
-See also [Uploading Assets.](manage-assets.md#uploading-assets)
+See also [Uploading Assets](manage-assets.md#uploading-assets).
 
 ## Obtaining a URL for an asset {#obtaining-a-url-for-an-asset}
 
@@ -53,7 +53,7 @@ There are several different ways you can obtain a URL string. However, the steps
 
    Remember that URLs are only available to copy *after* you have first *published* the assets. In addition, the viewer preset or image preset must also be published.
 
-   See [Publishing Assets.](publishing-dynamicmedia-assets.md)
+   See [Publishing Assets](publishing-dynamicmedia-assets.md).
 
    See [Publishing Viewer Presets](managing-viewer-presets.md#publishing-viewer-presets).
 
@@ -61,25 +61,25 @@ There are several different ways you can obtain a URL string. However, the steps
 
 1. Based on the asset that you selected, do one of the following:
 
-    * If you selected an image, in the drop-down menu, tap **[!UICONTROL Renditions.]**
+    * If you selected an image, in the drop-down menu, tap **[!UICONTROL Renditions]**.
 
       Under the **[!UICONTROL Dynamic]** heading, tap a preset name to view its rendition in the right frame. You may need to scroll the Renditions list to see the Dynamic heading.
 
-      At the bottom of the left rail, tap **[!UICONTROL URL.]**
+      At the bottom of the left rail, tap **[!UICONTROL URL]**.
 
       ![chlimage_1-270](assets/chlimage_1-270.png)
 
-    * If you selected a spin set, an image set, a carousel set, or a video, in the drop-down menu, tap **[!UICONTROL Viewers.]**
+    * If you selected a spin set, an image set, a carousel set, or a video, in the drop-down menu, tap **[!UICONTROL Viewers]**.
 
       In the left rail, tap a viewer preset name. A preview of the set or video is opened in a separate page.
 
-      In the left rail, at the bottom, tap **[!UICONTROL URL.]**
+      In the left rail, at the bottom, tap **[!UICONTROL URL]**.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Select and copy the text to your web browser to preview the asset or to add to your web content page.
 
-   To exit the URL window, tap the **[!UICONTROL X]** or tap **[!UICONTROL Close.]**
+   To exit the URL window, tap the **[!UICONTROL X]** or tap **[!UICONTROL Close]**.
 
 ## Obtaining a URL for a static asset {#obtaining-a-url-for-a-static-asset}
 
@@ -117,8 +117,8 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 ## Obtaining a video URL for a published video rendition {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
-1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations.]**
+1. In AEM, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations]**.
 1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.
 
 1. On the **[!UICONTROL Dynamic Media Cloud Settings]** page, under **[!UICONTROL Video Service URL]**, copy down the entire URL path. You will need the copied URL path later in the steps.
@@ -133,7 +133,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    For example, if the registration ID was `87654321|MyCompany`, the customer name would be `MyCompany`.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General > CRXDE Lite.]**
+1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Copy down the entire video rendition path from the JCR (Java Content Repository).
 
    For example, the video's rendition path may appear similar to the following:
@@ -154,8 +154,8 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 ## Obtaining a video URL for adaptive streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. In AEM, navigate to **[!UICONTROL Tools > Deployment > Cloud > Cloud Services.]**
-1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations.]**
+1. In AEM, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations]**.
 1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.
 1. On the **[!UICONTROL Dynamic Media Cloud Services Settings]** page, do the following:
 

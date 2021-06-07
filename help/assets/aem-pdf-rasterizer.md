@@ -18,7 +18,7 @@ Adobe recommends using the PDF Rasterizer library for the following:
 
 Thumbnails and previews generated using PDF Rasterizer are better in quality compared to out-of-the-box output and, therefore, provide consistent viewing experience across devices. The Adobe PDF Rasterizer library does not support any color space conversion. It always outputs to RGB irrespective of the color space of the source file.
 
-1. Install the PDF Rasterizer package on your [!DNL Adobe Experience Manager] deployment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Install the PDF Rasterizer package on your [!DNL Adobe Experience Manager] deployment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
 
    >[!NOTE]
    >
