@@ -56,7 +56,7 @@ See [Responsive Image library](https://experienceleague.adobe.com/docs/dynamic-m
 >[!NOTE]
 >
 >Please note that you must publish all out-of-the-box viewers before you first use them.
->See [Publishing Viewer Presets.](#publishing-viewer-presets)
+>See [Publishing Viewer Presets].(#publishing-viewer-presets)
 
 ### Viewer Preset system compatibility  {#viewer-preset-system-compatibility}
 

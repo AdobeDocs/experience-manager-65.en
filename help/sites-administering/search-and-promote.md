@@ -35,7 +35,7 @@ To call the Adobe Search&Promote service from your website, perform the followin
 
 The default URL that is configured for the Search&Promote service is `https://searchandpromote.omniture.com/px/`. To use a different service, use the OSGi console to specify a different URL.
 
-1. Open the OSGi console and click the Configuration tab. ([https://localhost:4502/system/console/configMgr.](https://localhost:4502/system/console/configMgr))
+1. Open the OSGi console and click the Configuration tab. ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Click the Day CQ Search&Promote Configuration item.
 1. Enter the URL in the Remote Server URI box, and click Save.
 
