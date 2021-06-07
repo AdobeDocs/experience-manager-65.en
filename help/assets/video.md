@@ -110,7 +110,7 @@ The following step-by-step workflow description is designed to help you get up a
 
 ## Working with video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktop, iOS, Android™, Blackberry, and Windows mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
+Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktop, iOS, Android™, BlackBerry®, and Windows mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
 
 For example, on an iOS mobile device, it detects a bandwidth such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
 
@@ -135,11 +135,11 @@ For managing single video and Adaptive Video Sets, the following is supported:
 
 * Video captioning in all HTML5 video viewers.
 * Organize, browse, and search video with full metadata support for efficient management of video assets.
-* Deliver Adaptive Video Sets to the web and to desktops, and mobile devices, including the iPhone, iPad, Android, Blackberry, and Windows phone.
+* Deliver Adaptive Video Sets to the web and to desktops, and mobile devices, including the iPhone, iPad, Android™, BlackBerry®, and Windows phone.
 
 Adaptive video streaming is supported on various iOS platforms. See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
-Dynamic Media supports mobile video playback for MP4 H.264 video. You can find Blackberry devices that support this video format at the following: [Supported video formats on Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
 
@@ -229,17 +229,17 @@ The following table describes the device, browser, and playback method of videos
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 6 or earlier)</td>
+   <td>Chrome (Android™ 6 or earlier)</td>
    <td>Progressive download.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android 7 or later)</td>
+   <td>Chrome (Android™ 7 or later)</td>
    <td>HLS</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Android (default browser)</td>
+   <td>Android™ (default browser)</td>
    <td>Progressive download.</td>
   </tr>
   <tr>
@@ -254,7 +254,7 @@ The following table describes the device, browser, and playback method of videos
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Blackberry</td>
+   <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
  </tbody>
@@ -592,7 +592,7 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. On the Create YouTube Configuration page, under Google Cloud Platform Settings, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
    You specified the project ID when you initially configured Google Cloud settings earlier.
-   Leave the Create YouTube Configuration page open; you will return to it in a moment.
+   Leave the Create YouTube Configuration page open; in a moment, you are going to return to it.
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -827,7 +827,7 @@ When you unpublish a video asset in Experience Manager, the video is removed fro
 
 ## Monitoring video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
 
-When you upload a new video to a folder that has video encoding applied or you publish your video to YouTube, you can monitor how your video encoding/Youtube publishing is progressing (or failing). Actual YouTube publishing progress is only available by way of the logs. However, its failure or success is listed in additional ways described in the following procedure. In addition, you receive email notifications when a YouTube publish workflow or video encoding completes or is interrupted.
+When you upload a new video to a folder that has video encoding applied, or you publish your video to YouTube, you can monitor how your video encoding/Youtube publishing is progressing (or failing). Actual YouTube publishing progress is only available by way of the logs. However, its failure or success is listed in additional ways described in the following procedure. In addition, you receive email notifications when a YouTube publish workflow or video encoding completes or is interrupted.
 
 ### Monitoring progress {#monitoring-progress}
 
@@ -1026,30 +1026,30 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 1. Create the TrackingManager component by doing the following:
 
-    * After calling `s7sdk.Util.init();` create a TrackingManager instance to track events by adding the following: 
+    * After you call `s7sdk.Util.init();`, create a TrackingManager instance to track events by adding the following: 
 
-      `var trackingManager = new s7sdk.TrackingManager();` 
+      `var trackingManager = new s7sdk.TrackingManager();`
   
-    * Connect components to TrackingManager by doing the following: 
+    * Connect components to TrackingManager by doing the following:
 
-      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager. 
+      In the `s7sdk.Event.SDK_READY` event handler, attach the component you want to track to the TrackingManager.
 
-      For example, if the component is `videoPlayer`, add 
+      For example, if the component is `videoPlayer`, add
 
-      `trackingManager.attach(videoPlayer);` 
+      `trackingManager.attach(videoPlayer);`
 
       to attach the component to the trackingManager. To track multiple viewers on a page, use multiple tracking manager components. 
 
     * Create the AppMeasurementBridge object by adding the following:
 
-      ``` 
+      ```
       var appMeasurementBridge = new AppMeasurementBridge(); appMeasurementBridge.setVideoPlayer(videoPlayer);
   
       ```
 
     * Add the tracking function by adding the following:
 
-      ``` 
+      ```
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
@@ -1201,7 +1201,7 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
 
 A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail serves to encourage a customer to click on the video.
 
-All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can either play the video and pause on the frame you want to use, or you can select an image asset that you have already uploaded and *published* in your digital asset manager.
+All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can play the video and pause on the frame you want to use. Or, you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
 A custom video thumbnail image that you select from a video is not extracted and saved in the DAM as a separate and distinct asset. However, a custom video thumbnail that you select from an existing image asset is saved to the JCR. The path of the selected asset gets stored under the video asset's node as in the following example path:
 
