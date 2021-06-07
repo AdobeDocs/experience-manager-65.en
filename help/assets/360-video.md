@@ -47,7 +47,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 **To upload assets for use with the 360 Video viewer:**
 
 1. Created a folder that is dedicated to your 360 video asset.
-1. [Apply an adaptive video profile to the folder.](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)
+1. [Apply an adaptive video profile to the folder](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
    Rendering 360 video content places higher requirements for source video resolution and for encoded renditions resolution than standard non-360 video content.
 
@@ -95,9 +95,9 @@ See also [Editing Viewer Presets](/help/assets/managing-viewer-presets.md#editin
 
 When you are satisfied with the 360 Video, you can publish it.
 
-See [Embedding the Video or Image Viewer on a Web Page.](/help/assets/embed-code.md)
+See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
 See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
-See [Adding Dynamic Media Assets to pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+See [Adding Dynamic Media Assets to pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **To preview 360 Videos:**
 
@@ -107,7 +107,7 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/adding-dynamic-media-as
 
    Tap the 360 video asset so you can preview the video.
 
-1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **[!UICONTROL Viewers.]**
+1. On the preview page, near the upper-left corner of the page, tap the drop-down list, then select **[!UICONTROL Viewers]**.
 
    ![6_5_360video-preview-viewers](assets/6_5_360video-preview-viewers.png)
 
@@ -118,14 +118,14 @@ See [Adding Dynamic Media Assets to pages.](/help/assets/adding-dynamic-media-as
 
    ![6_5_360video-preview-video360-social](assets/6_5_360video-preview-video360-social.png)*A 360 video screenshot.*
 
-    * From the Viewers list, tap **[!UICONTROL Video360VR.]**
+    * From the Viewers list, tap **[!UICONTROL Video360VR]**.
 
         Virtual Reality (VR) video is immersive video content that is accessed by using virtual reality headsets. As with ordinary videos, you create VR videos at the beginning when a video is being recorded or captured using 360-degree video cameras.
 
    ![6_5_360video-preview-video360vr](assets/6_5_360video-preview-video360vr.png)
    *A 360 VR video screenshot.*
 
-1. Near the upper right of the preview page, tap **[!UICONTROL Close.]**
+1. Near the upper right of the preview page, tap **[!UICONTROL Close]**.
 
 ## Publishing 360 Video {#publishing-video}
 
@@ -134,4 +134,4 @@ Publish the 360 Video so you can use it. Publishing a 360 Video activates the UR
 See [Publishing Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish 360 Video.
 See also [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
 See also [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
-See also [Adding Dynamic Media Assets to pages.](/help/assets/adding-dynamic-media-assets-to-pages.md)
+See also [Adding Dynamic Media Assets to pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
