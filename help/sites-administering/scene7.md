@@ -44,7 +44,7 @@ When you work with assets in this solution, you do one of the following:
 * Upload assets directly to Dynamic Media Classic and then access by way of the **Dynamic Media Classic** content browser for page authoring or
 * Upload to Experience Manager Assets and then enable automatic publishing to Dynamic Media Classic; you access via **Assets** content browser for page authoring
 
-The components you use for this integration are found in the **Dynamic Media Classic** component area in [Design mode.](/help/sites-authoring/author-environment-tools.md#page-modes)
+The components you use for this integration are found in the **Dynamic Media Classic** component area in [Design mode](/help/sites-authoring/author-environment-tools.md#page-modes).
 
 ### Experience Manager Dynamic Media {#aem-dynamic-media}
 
@@ -410,8 +410,8 @@ However, if you do not want assets pushed to Dynamic Media Classic to publish au
 
 Before you can push assets to Dynamic Media Classic without publishing them, you must set up the following:
 
-1. [Use the Admin Console to create a support case.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In your support case, request the enabling of secure preview for your Dynamic Media Classic account.
-1. Follow directions to [setup secure preview for your Dynamic Media Classic account.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). In your support case, request the enabling of secure preview for your Dynamic Media Classic account.
+1. Follow directions to [setup secure preview for your Dynamic Media Classic account](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html).
 
 These steps are the same ones you would follow to create any secure test setup in Dynamic Media Classic.
 

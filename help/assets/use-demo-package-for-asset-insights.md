@@ -1,18 +1,18 @@
 ---
-title: Use demo package for Asset Insights
-description: Use the demo package to enable Adobe Asset Insights to capture data from and generate insights for a web page.
+title: Use demo package for Assets Insights
+description: Use the demo package to enable Adobe Assets Insights to capture data from and generate insights for a web page.
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Insights,Asset Reports
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
 ---
-# Use demo package for Asset Insights {#using-demo-package-for-asset-insights}
+# Use demo package for Assets Insights {#using-demo-package-for-asset-insights}
 
-Using the demo package, you can enable Adobe Asset Insights to capture data from and generate insights for a sample web page.
+Using the demo package, you can enable Adobe Assets Insights to capture data from and generate insights for a sample web page.
 
 ## [!DNL Use Experience Manager Assets] Insights with sample web page  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configure Asset Insights using the instructions in [Configuring Asset Insights](configure-asset-insights.md).
+1. Configure Assets Insights using the instructions in [Configuring Assets Insights](configure-asset-insights.md).
 1. Download the sample Assets package from below and install the package from CRXDE package manager.
 
    [Get File](assets/insightsdemo.zip)

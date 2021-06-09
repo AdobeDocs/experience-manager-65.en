@@ -90,6 +90,16 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p> </p> </td>
   </tr>
   <tr>
+   <td>Azul Zulu OpenJDK 11 - 64bit</td>
+   <td>Z: Not supported</td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64bit</td>
+   <td>Z: Not supported</td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
    <td>Oracle Java™ SE 8 (64 bit)</td>
    <td>A: Supported</td>
    <td>Minor releases and updates</td>

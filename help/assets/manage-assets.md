@@ -104,7 +104,7 @@ You can choose to replace an existing asset, create another version, or keep bot
 >
 >When you select **[!UICONTROL Replace]** in the [!UICONTROL Name Conflict] dialog, the asset ID is regenerated for the new asset. This ID is different from the ID of the previous asset.
 >
->If Asset Insights is enabled to track impressions/clicks with Adobe Analytics, the regenerated asset ID invalidates the data-captured for the asset on Analytics.
+>If Assets Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
 If the asset you upload exists in [!DNL Assets], the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets does not matter.
 
@@ -410,7 +410,7 @@ To preview an asset using keyboard, follow these steps:
     * Channels/devices through which the asset was used
     * Creative solutions where the asset was recently used
 
-   For more details, see [Asset Insights](/help/assets/asset-insights.md).
+   For more details, see [Assets Insights](/help/assets/asset-insights.md).
 
 1. Click **[!UICONTROL Save & Close]**.
 1. Navigate to the [!DNL Assets] user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
@@ -801,10 +801,6 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    ![Select position of annotation/ review status to display on PDF from Print dialog](assets/Print-annotation-dialog.png)
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
-
-   >[!NOTE]
-   >
-   >Lengthy annotations may not render properly in the PDF file. For optimal rendering, Adobe recommends that you limit annotations to 50 words.
 
 1. Click **[!UICONTROL Print]**. Depending upon the option you choose in step 2, the generated PDF displays the annotations/status at the specified position. For example, if you choose to print both annotations and the review status using the **Top-Left** setting, the generated output resembles the PDF file depicted here.
 
