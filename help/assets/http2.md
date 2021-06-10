@@ -25,7 +25,7 @@ HTTP/2 improves the way browsers and servers communicate, allowing for faster tr
 
 The following website describes HTTP/2 and its benefits in a brief and simple manner:
 
-[https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/)
+[What you must know about HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)
 
 ## What are the key benefits of moving to HTTP/2 for content delivery? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -56,7 +56,7 @@ To use HTTP/2, you must meet the following requirements:
 
 You initiate the request to switch over to HTTP/2; it is not automatically done for you.
 
-1. To switch over to HTTP/2, initiate an Adobe Customer Care request. See [Accessing the AEM Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. To switch over to HTTP/2, initiate an Adobe Customer Care request. See [Accessing the Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
     1. Provide the following information in your support request:
 

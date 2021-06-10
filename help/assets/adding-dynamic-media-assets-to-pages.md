@@ -28,8 +28,8 @@ You add Dynamic Media assets directly to the page if you are using Adobe Experie
 Adding a 3D Media, Dynamic Media, Interactive Media, Panoramic Media, Smart Crop Video, or Video 360 Media component to a page is the same as adding a component to any page. The Dynamic Media components are described in the following sections.
 
 1. In Experience Manager, open the page where you want to add the Dynamic Media component.
-1. In the panel on the left side of the page (if necessary, toggle the display of the side panel), click the **[!UICONTROL Components]** icon. 
-1. Under the **[!UICONTROL Components]** heading, in the drop-down list, select **[!UICONTROL Dynamic Media.]** 
+1. In the panel on the left side of the page (if necessary, toggle the display of the side panel), click the **[!UICONTROL Components]** icon.
+1. Under the **[!UICONTROL Components]** heading, in the drop-down list, select **[!UICONTROL Dynamic Media]**.
 
     If no list of Dynamic Media components is available, you must enable the Dynamic Media components that you want to use. See [Enabling Dynamic Media components](#enabling-dynamic-media-components).
 
@@ -60,7 +60,7 @@ If no Dynamic Media components are available to add to a page, it likely means t
 
     ![edit-template](/help/assets/assets-dm/edit-template.png)
 
-1. On the right side of the toolbar near the top of the page, from the drop-down list, tap **[!UICONTROL Structure.]**
+1. On the right side of the toolbar near the top of the page, from the drop-down list, tap **[!UICONTROL Structure]**.
 
     ![Policy](/help/assets/assets-dm/structure-mode.png)
 
@@ -69,7 +69,7 @@ If no Dynamic Media components are available to add to a page, it likely means t
 
     ![Allowed components](/help/assets/assets-dm/allowed-components.png)
 
-1. Scroll until you see **[!UICONTROL Dynamic Media.]**
+1. Scroll until you see **[!UICONTROL Dynamic Media]**.
 1. Tap the > icon to the left of **[!UICONTROL Dynamic Media]** so you can expand the list, then select the Dynamic Media components you want to enable.
 
     ![Dynamic Media components list](/help/assets/assets-dm/dm-components-select.png)
@@ -94,7 +94,7 @@ You can localize Dynamic Media components in one of two ways:
 
 ## Dynamic Media Components {#dynamic-media-components}
 
-Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media.]**
+Dynamic Media components are available when you tap the **[!UICONTROL Components]** icon, then filter on **[!UICONTROL Dynamic Media]**.
 
 The Dynamic Media components that are available include the following:
 
@@ -135,13 +135,13 @@ The Dynamic Media component lets you add dynamic images, including image sets, s
 
 You can also configure the viewer preset, image preset, or image format directly in the component. To make an image responsive, you can either set the breakpoints or apply a responsive image preset.
 
-Edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings.]**
+Edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** icon in the component and then **[!UICONTROL Dynamic Media Settings]**.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
+>By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
 * **[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
@@ -166,13 +166,12 @@ Edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** i
 * **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
+  
   * Under Preset Type, **[!UICONTROL Image Preset]** is selected, and **[!UICONTROL RESS_IP]** is selected from the **[!UICONTROL Image Preset]** drop-down list.
 
   ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
@@ -230,7 +229,7 @@ Edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in th
 
 >[!NOTE]
 >
->By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height.]**
+>By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
 * **[!UICONTROL Image Modifiers]** - You can apply image effects by supplying additional image commands. These effects are described in Image Presets and the Image Serving Command reference.
 
@@ -240,7 +239,7 @@ Edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in th
 
 * **[!UICONTROL Enable Aspect Ration match]** - To let Dynamic Media pick a smart crop rendition with an aspect ratio that best matches the aspect ratio of the original image, select this option.
 
-* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization.
+* **[!UICONTROL Optimize for higher resolution devices]** - Select (default) the checkbox to allow DPR (Device Pixel Ratio) optimization. 
 
   The **[!UICONTROL Optimize for higher resolution devices]** option is only shown when the following is true:
 
@@ -248,9 +247,7 @@ Edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in th
 
   ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr).
-
-  Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 

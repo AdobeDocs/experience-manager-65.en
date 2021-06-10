@@ -191,7 +191,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 | Europe, Middle East, Africa | 25 Jun 2021 | 
 | Asia-Pacific | 19 Jul 2021 | -->
 
-1. [Use the Admin Console to create a support case.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Provide the following information in your support case:
 
     1. Primary contact name, email, phone.
@@ -201,7 +201,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
        Click **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 
-       Look for the field labeled **[!UICONTROL Published Server Name.]**
+       Look for the field labeled **[!UICONTROL Published Server Name]**.
     1. Verify that you are using the CDN through Adobe and not managed with a direct relationship.
     1. Verify you are using a dedicated domain such as `images.company.com` or `mycompany.scene7.com`, and not a generic domain, such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.  
 
