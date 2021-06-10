@@ -584,9 +584,9 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * [Enhanced caching for translated adaptive form pages](../../help/forms/using/configure-adaptive-forms-cache.md).
 
-* Support for [Adobe Sign Text Tags in Automated Forms Conversion Service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
+* Support for [Adobe Sign Text Tags in Automated Forms Conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html).
 
-* Support to [convert colored forms to adaptive forms](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) using [!DNL Automated Forms Conversion service].
+* Support to [convert colored forms to adaptive forms](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html) using [!DNL Automated Forms Conversion service].
 
 * Support for SMB 2 and SMB 3 protocols.
 
@@ -995,7 +995,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 >[!IMPORTANT]
 >
->Windows users of [!DNL Experience Manager desktop app] are advised to upgrade to [desktop app version 2.0.3.2](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html#whats-new-added) to access the DAM repository on [!DNL Adobe Experience Manager 6.5.5.0] instance. As they can encounter issues when accessing the DAM repository on [!DNL Adobe Experience Manager] 6.5.5.0 instance using the desktop app version 2.0.2.
+>Windows users of [!DNL Experience Manager desktop app] are advised to upgrade to [desktop app version 2.0.3.2](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html#what-is-new) to access the DAM repository on [!DNL Adobe Experience Manager 6.5.5.0] instance. As they can encounter issues when accessing the DAM repository on [!DNL Adobe Experience Manager] 6.5.5.0 instance using the desktop app version 2.0.2.
 
 **Accessibility enhancements in Experience Manager Assets**
 
@@ -2177,7 +2177,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Assets - Included
 
-* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://docs.adobe.com/content/help/en/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: Hotfix for CQ-4259922
+* Enabled Multi-Site Manager support for [!DNL Experience Manager Assets]. For more information, see [Reuse assets using MSM for Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/reuse-assets-using-msm.html). NPR-29199: Hotfix for CQ-4259922
 
 #### Sites - Included
 
