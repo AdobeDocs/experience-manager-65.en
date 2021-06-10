@@ -332,7 +332,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
 >[!NOTE]
 >
-> If you customize a component using the CIF product & category pickers like this Product Teaser or the CIF page component make sure you include the required `cif.shell.picker` clientlib for the component dialogs. See [Usage of CIF product & category picker](../use-cif-pickers.md) for details.
+> If you customize a component using the CIF product & category pickers like this Product Teaser or the CIF page component make sure you include the required `cif.shell.picker` clientlib for the component dialogs. See [Usage of CIF product & category picker](use-cif-pickers.md) for details.
 
 1. In the IDE, navigate and expand the `ui.apps` module and expand the folder hierarchy to: `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser` and inspect the `.content.xml` file.
 
@@ -497,4 +497,4 @@ Review the functionality of the **New** badge that has already been implemented 
 - [Customizing AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components/wiki/Customizing-CIF-Core-Components)
 - [Customizing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
 - [Getting Started with AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
-- [Usage of CIF product & category picker](../use-cif-pickers.md)
+- [Usage of CIF product & category picker](use-cif-pickers.md)
