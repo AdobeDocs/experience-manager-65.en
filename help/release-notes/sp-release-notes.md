@@ -32,7 +32,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for a new user to refresh the access token using a refresh token for mailer configuration service.
 
-* Support for [!DNL SMTP XOAUTH2] mechanism for mailer configuration service.
+* [Support for SMTP XOAUTH2](/help/sites-administering/notification.md#setting-up-oauth) mechanism for the mail configuration service.
 
 * Support for [!DNL MongoDB] versions 4.2 and 4.4.
 
