@@ -16,23 +16,21 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 | Date     | May 27, 2021                |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9.zip) |
 
-<!-- TBD: Update the SD link when SP8 is available. Same link is duplicated below in install -->
-
 ## What is included in [!DNL Adobe Experience Manager] 6.5.9.0 {#what-s-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.9.0 are:
 
-* AEM Sites Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
+* [!DNL Experience Manager Sites] Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
 
-* To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Adobe Experience Manager checks that any hidden folder is not displayed on the interface.
+* To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Experience Manager checks that any hidden folder is not displayed on the interface.
 
 * Ability to restore deleted pages and tree on an [!DNL Experience Manager Sites] page.
 
 * Support for a new user to refresh the access token using a refresh token for mailer configuration service.
 
-* Support for [!DNL SMTP XOAUTH2] mechanism for mailer configuration service.
+* [Support for SMTP XOAUTH2](/help/sites-administering/notification.md#setting-up-oauth) mechanism for the mail configuration service.
 
 * Support for [!DNL MongoDB] versions 4.2 and 4.4.
 
@@ -82,9 +80,9 @@ For a complete list of features and enhancements introduced in [!DNL Experience 
 
 >[!NOTE]
 >
->Starting with AEM Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
+>Starting with Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
 >Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
->You can download the relevant versions of the [!DNL Azul Zulu JDKs] from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>You can download the relevant versions of the [!DNL Azul Zulu] JDKs from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 >The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0 release.
@@ -97,7 +95,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * A traversal query is triggered on using the `com.day.cq.wcm.commons.ReferenceSearch` API. It impacts performance of [!DNL Experience Manager] server (NPR-36407).
 
-* Nested Layout container inside another resized Layout Container shows an incorrect number of columns for its child components, resulting in these components not being aligned to the grid (NPR-36359).
+* Nested layout container inside another resized layout container shows an incorrect number of columns for its child components, resulting in these components not being aligned to the grid (NPR-36359).
 
 * External Link Checker displays valid external links as invalid links (NPR-36289).
 
@@ -200,7 +198,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * Site Authors with read-only permissions can use smart crop functionality on assets and edit the smart cropped renditions. However, users with read-only permissions must not be able to edit asset properties in Sites Dev instance (CQ-4316450).
 
-* Video annotations do not work for folder paths where Dynamic Media configuration is not enabled, even if the AEM instance is set-up Dynamic Media mode (CQ-4314950).
+* Video annotations do not work for folder paths [!DNL where Dynamic] Media configuration is not enabled, even if the [!DNL Experience Manager] instance is set-up in [!DNL Dynamic Media] mode (CQ-4314950).
 
 * When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
 
@@ -249,7 +247,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * A `resourceresolver` Sling bundle is causing `Sling:alias` query to fail (NPR-35335).
 
-* The context path gets removed when setting up SSL in AEM (NPR-35294).
+* The context path gets removed when setting up SSL in Experience Manager (NPR-35294).
 
 * The `SegmentNotFound` exception is returned after a long running session (NPR-36405).
 
@@ -263,11 +261,11 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 ### Projects {#projects-6590}
 
-* Cannot save the properties of a project as the JCR path to the project is not resolved due to an extra forward slash (/) appended to the project path (NPR-36191).
+* Cannot save the properties of a project as the JCR path to the project is not resolved due to an extra forward slash (`/`) appended to the project path (NPR-36191).
 
 ### Screens {#screens-6590}
 
-* [!DNL Experience Manager Screens] players cannot authenticate if custom 2FA authentication handler is used (NPR-35854).
+* [!DNL Experience Manager Screens] players cannot authenticate if a custom two-factor authentication handler is used (NPR-35854).
 
 ### Commerce {#commerce-6590}
 
@@ -279,7 +277,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * When the auto-approve option is selected for a project with human translation, the job status displays as `Unknown` (NPR-35981).
 
-* When you are translating a page, the reference path of Experience Fragments does not update to the destination Experience Fragment reference path (NPR-35911).
+* When you are translating a page, the reference path of [!DNL Experience Fragments] does not update to the destination [!DNL Experience Fragment] reference path (NPR-35911).
 
 * When you make changes in the parent and child pages and send the parent page for translation, the child pages are incorrectly translated as well (NPR-35896).
 
@@ -291,12 +289,12 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 ### Workflow {#workflow-6590}
 
-* When you click Complete, Delegate, or Open actions for items available in Inbox, there is no visual clue to signify the completion of these actions (NPR-36317).
+* When you click Complete, Delegate, or Open actions for items available in Inbox, there is no visual clue for the completion of these actions (NPR-36317).
 
 ### [!DNL Communities] {#communities-6590}
 
-* In Spam filtering, the system consumes 100% of the JAVA heap space which brings down the AEM server (NPR-36316, NPR-36493). 
-* In Forums, the JCR sessions data originating from SearchCommentSocialComponentListProvider is leaked (NPR-36235).
+* In spam filtering, the system consumes 100% of the Java heap space making the Experience Manager server unresponsive (NPR-36316, NPR-36493). 
+* In forums, the JCR sessions data originating from `SearchCommentSocialComponentListProvider` is leaked (NPR-36235).
 * Opening a specific inbox message reflects all the messages with improper pagination and other issues (NPR-35917).
 
 ### [!DNL Brand Portal] {#brandportal-6590}
@@ -351,7 +349,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * When you select Endpoint Management on the AdminUI, [!DNL Experience Manager Forms] displays the `endpoint registry failure` error message (CQ-4320249).
 
-For information on security updates, see [Experience Manager security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
+For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
 ## Install 6.5.9.0 {#install}
 
@@ -387,7 +385,7 @@ To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, 
 
 **Automatic installation**
 
-There are two ways to automatically install Adobe Experience Manager 6.5.9.0 on a working instance:
+There are two ways to automatically install [!DNL Experience Manager] 6.5.9.0 on a working instance:
 
 A. Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
 
@@ -397,7 +395,7 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 >
 >Adobe Experience Manager 6.5.9.0 does not support Bootstrap installation.
 
-**Validate installation**
+**Validate the installation**
 
 1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.9.0)` under [!UICONTROL Installed Products].
 
@@ -460,7 +458,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the Experience Manager and Adobe Target integration updated in Experience Manager 6.5 to support the Adobe Target Standard API, which uses authentication via Adobe IMS and I/O, and the growing role of Adobe Launch for instrumenting Experience Manager pages for analytics and personalization, the Opt-In wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective Experience Manager cloud services. |
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the Experience Manager and Adobe Target integration updated in Experience Manager 6.5 to support the Adobe Target Standard API, which uses authentication via Adobe IMS and [!DNL Adobe I/O], and the growing role of Adobe Launch for instrumenting Experience Manager pages for analytics and personalization, the opt-in wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
 | Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues}
@@ -471,7 +469,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`.
 
-* If a folder in the hierarchy is renamed in [!DNL Experience Manager Assets] and the nested folder containing an asset is published to [!DNL Brand Portal], the title of the folder is not updated in [!DNL Brand Portal] until the root folder is published again.
+* If a folder in the hierarchy is renamed in [!DNL Assets] and a nested folder containing an asset is published to [!DNL Brand Portal], the title of the folder is not updated in [!DNL Brand Portal] until the root folder is re-published.
 
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue.
 
