@@ -94,5 +94,5 @@ In order to replicate the key across instances, you need to:
 Once the HMAC key has been replicated, you can enable the Encapsulated Token via the Web Console:
 
 1. Point your browser to `https://serveraddress:port/system/console/configMgr`
-1. Look for an entry called **Day CRX Token Authentication Handler** and click it.
+1. Look for an entry called **Adobe Granite Token Authentication Handler** and click it.
 1. In the following window, tick the **Enable encapsulated token support** box and press **Save**.
