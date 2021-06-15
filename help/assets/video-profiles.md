@@ -32,9 +32,9 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 >[!NOTE]
 >
->To generate a video's metadata and associated video image thumbnails, the video itself needs to go through the encoding process in Dynamic Media. In AEM, the **[!UICONTROL Dynamic Media Encode Video]** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitoring video encoding and YouTube publishing progress](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+>To generate a video's metadata and associated video image thumbnails, the video itself needs to go through the encoding process in Dynamic Media. In Adobe Experience Manager, the **[!UICONTROL Dynamic Media Encode Video]** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitoring video encoding and YouTube publishing progress](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 >
->Metadata is useful when you are searching for assets. The thumbnails are static video images that are generated during encoding. They are required by the AEM system and used in the user interface to help you visually identify videos in the Cards view, Search Results view, and the Asset List view. You can see the generated thumbnails when you tap the Renditions icon (a painter's palette) of an encoded video.
+>Metadata is useful when you are searching for assets. The thumbnails are static video images that are generated during encoding. They are required by the Experience Manager system and used in the user interface to help you visually identify videos in the Cards view, Search Results view, and the Asset List view. You can see the generated thumbnails when you tap the Renditions icon (a painter's palette) of an encoded video.
 
 When you are done creating the video profile, you apply it to a folder or mutliple folders. See [Applying a video profile to folders](#applying-a-video-profile-to-folders).
 
@@ -152,7 +152,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 **To create a video profile for adaptive streaming**,
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Click or tap **[!UICONTROL Create]** to add a new video profile.
 
 1. Enter a name and description for the profile.
@@ -205,7 +205,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 **To create a video profile for progressive streaming:**
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Tap **[!UICONTROL Create]** to add a new video profile.
 1. Enter a name and description for the profile.
 1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
@@ -246,11 +246,11 @@ You can now apply the profile to folders that contain videos. See [Applying a vi
 
 ## Using custom-added video encoding parameters {#using-custom-added-video-encoding-parameters}
 
-You can edit an existing video encoding profile to take advantage of advanced video encoding parameters that are not found in the user interface when you create or edit a Video Profile in AEM. You custom add one or more advanced parameters--such as minBitrate and maxBitrate--to your existing profile.
+You can edit an existing video encoding profile to take advantage of advanced video encoding parameters that are not found in the user interface when you create or edit a Video Profile in Experience Manager. You custom add one or more advanced parameters--such as minBitrate and maxBitrate--to your existing profile.
 
-**To use custom-added video encoding parameters**:
+**To use custom-added video encoding parameters:**
 
-1. Tap the AEM logo, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Tap the Experience Manager logo, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. From the CRXDE Lite page, in the Explorer panel on the left, navigate to the following:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -308,7 +308,7 @@ You can edit an existing video encoding profile to take advantage of advanced vi
     * Repeat steps 3 and 4 to add another parameter to your video encoding profile.
     * Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
 
-1. In the upper-left corner of the CRXDE Lite page, tap the **[!UICONTROL Back Home]** icon to return to AEM.
+1. In the upper-left corner of the CRXDE Lite page, tap the **[!UICONTROL Back Home]** icon to return to Experience Manager.
 
 ### Editing a video profile {#editing-a-video-encoding-profile}
 
@@ -320,9 +320,9 @@ See also [Best Practices for Video Encoding](/help/assets/video.md#best-practice
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
-**To edit a video profile**:
+**To edit a video profile:**
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one video profile name.
 1. On the toolbar, tap **[!UICONTROL Edit]**.
 1. On the Video Encoding Profile page, edit the name and description, as desired.
@@ -336,7 +336,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 ### Copying a video profile {#copying-a-video-encoding-profile}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one video profile name.
 1. On the toolbar, tap **[!UICONTROL Copy]**.
 1. On the Video Encoding Profile page, enter a new name for the profile.
@@ -351,7 +351,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 ### Deleting a video profile {#deleting-a-video-encoding-profile}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one or more video profile names.
 1. On the toolbar, tap **[!UICONTROL Delete]**.
 1. Tap **[!UICONTROL OK]**.
@@ -380,14 +380,14 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 #### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select the video profile that you want to apply to a folder or multiple folders.
 1. Tap **[!UICONTROL Apply Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name while in **[!UICONTROL Card View]**.
     You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
 #### Applying a video profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
 
-1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a video profile to.
+1. Tap or click the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a video profile to.
 1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
@@ -396,7 +396,7 @@ You can [monitor the progress of a video profile processing job](#monitoring-the
 
 ### Applying a video profile globally {#applying-a-video-profile-globally}
 
-In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into AEM assets in any folder has the selected profile applied.
+In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into Experience Manager Assets in any folder has the selected profile applied.
 
 See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
@@ -411,7 +411,7 @@ See also [Reprocessing assets in a folder after you have edited its processing p
 
 A processing indicator (or progress bar) is displayed so you can visually monitor the progress of a video profile processing job.
 
-You can also view the `error.log` file to monitor the progress of an encoding job, to see if encoding is finished, or to see any job errors. The `error.log` is found in the `logs` folder where your instance of AEM is installed.
+You can also view the `error.log` file to monitor the progress of an encoding job, to see if encoding is finished, or to see any job errors. The `error.log` is found in the `logs` folder where your instance of Experience Manager is installed.
 
 ## Removing a video profile from folders {#removing-a-video-profile-from-folders}
 
@@ -421,7 +421,7 @@ You can remove a video profile from a folder from within the **[!UICONTROL Tools
 
 ### Removing a video profile from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the AEM logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select the video profile that you want to remove from a folder or multiple folders.
 1. Tap **[!UICONTROL Remove Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and tap **[!UICONTROL Remove]**.
 
@@ -429,6 +429,6 @@ You can remove a video profile from a folder from within the **[!UICONTROL Tools
 
 ### Removing a video profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Tap or click the AEM logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a video profile from.
+1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a video profile from.
 1. On the folder, tap the check mark to select it and then tap  **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.

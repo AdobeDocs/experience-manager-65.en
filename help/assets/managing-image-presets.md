@@ -16,7 +16,7 @@ exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 ---
 # Managing Dynamic Media image presets{#managing-image-presets}
 
-Image Presets enable AEM Assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically. Each Image Preset represents a predefined collection of sizing and formatting commands for displaying images. When you create an Image Preset, you choose a size for image delivery. You also choose formatting commands so that the appearance of the image is optimized when the image is delivered for viewing.
+Image Presets enable Adobe Experience Manager Assets to dynamically deliver images at different sizes, in different formats, or with other image properties that are generated dynamically. Each Image Preset represents a predefined collection of sizing and formatting commands for displaying images. When you create an Image Preset, you choose a size for image delivery. You also choose formatting commands so that the appearance of the image is optimized when the image is delivered for viewing.
 
 Administrators can create presets for exporting assets. Users can choose a preset when they export images, which also reformats images to the specifications that the administrator specifies.
 
@@ -36,7 +36,7 @@ Like a macro, an Image Preset is a predefined collection of sizing and formattin
 >
 >In Dynamic Media - Scene7 mode, image presets are supported for image assets only.
 
-You could create two image presets: one with 500 x 500 pixels for desktop version and 150 x 150 pixels for the mobile version. You create two Image Presets, one called `Enlarge` to display images at 500x500 pixels and one called `Thumbnail` to display images at 150 x 150 pixels. To deliver images at the `Enlarge` and `Thumbnail` size, AEM looks up the definition of the Enlarge Image Preset and Thumbnail Image Preset. Then AEM dynamically generates an image at the size and formatting specifications of each Image Preset.
+You could create two image presets: one with 500 x 500 pixels for desktop version and 150 x 150 pixels for the mobile version. You create two Image Presets, one called `Enlarge` to display images at 500x500 pixels and one called `Thumbnail` to display images at 150 x 150 pixels. To deliver images at the `Enlarge` and `Thumbnail` size, Experience Manager looks up the definition of the Enlarge Image Preset and Thumbnail Image Preset. Then Experience Manager dynamically generates an image at the size and formatting specifications of each Image Preset.
 
 Images that are reduced in size when they are delivered dynamically can lose sharpness and detail. For this reason, each Image Preset contains formatting controls for optimizing an image when it is delivered at a particular size. These controls make sure that your images are sharp and clear when they are delivered to your web site or application.
 
@@ -44,7 +44,7 @@ Administrators can create Image Presets. To create an image preset, you can star
 
 ## Managing Dynamic Media image presets {#managing-image-presets-1}
 
-You manage your image presets in AEM by tapping or clicking the AEM logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets > Image Presets]**.
+You manage your image presets in Experience Manager by tapping or clicking the Experience Manager logo to access the global navigation console and then tapping or clicking the Tools icon and navigating to **[!UICONTROL Assets > Image Presets]**.
 
 ![6_5_tools-assets-imagepresets](assets/6_5_tools-assets-imagepresets.png)
 
@@ -70,7 +70,7 @@ You manage your image presets in AEM by tapping or clicking the AEM logo to acce
 
 If you intend to support the ingestion of AI, EPS, and PDF files so that you can generate dynamic renditions of these file formats, you may want to review the following information before you create image presets.
 
-Adobe Illustrator's file format is a variant of PDF. The main differences, in the context of AEM Assets, is the following:
+Adobe Illustrator's file format is a variant of PDF. The main differences, in the context of Experience Manager Assets, is the following:
 
 * Adobe Illustrator documents consist of a single page with multiple layers. Each layer is extracted as a PNG sub-asset under the main Illustrator asset.
 * PDF documents consist of one or more pages. Each page is extracted as a single page PDF sub-asset under the main multi-page PDF document.
@@ -148,9 +148,9 @@ The `Rasterize PDF/AI Image Preview Rendition` process component has a maximum d
 
 If you intend to support the ingestion of INDD files so that you can generate dynamic rendition of this file format, you may want to review the following information before you create image presets.
 
-For InDesign files, sub assets are extracted only if the Adobe InDesign server is integrated with AEM. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within AEM before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
+For InDesign files, sub assets are extracted only if the Adobe InDesign server is integrated with Experience Manager. Referenced assets are linked based on their metadata. InDesign Server is not required for linking. However, the referenced assets must be present within Experience Manager before the InDesign files are processed for the links to be created between the InDesign files and the referenced assets.
 
-See [Integrating AEM Assets with InDesign Server](/help/assets/indesign.md).
+See [Integrating Experience Manager Assets with InDesign Server](/help/assets/indesign.md).
 
 The Media Extraction process component in the `DAM Update Asset` workflow runs several preconfigured Extend Scripts to process InDesign files.
 
@@ -200,7 +200,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 >* Thumbnail size for videos are configured in the **[!UICONTROL FFmpeg thumbnails]** step, in the **[!UICONTROL Process]** tab under **[!UICONTROL Arguments]**.
 >
 
-**To configure image thumbnail size**:
+**To configure image thumbnail size:**
 
 1. Tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL DAM Update Asset]** > **[!UICONTROL Edit]**.
 1. Tap the **[!UICONTROL Dynamic Media Process Image Assets]** step and tap or click the **[!UICONTROL Thumbnails]** tab. Change the thumbnail size, as needed, then tap **[!UICONTROL OK]**.
@@ -217,9 +217,9 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 ### Increasing or decreasing the number of Dynamic Media image presets that display {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
-Image presets you create are available as dynamic renditions when you preview assets. AEM shows a variety of dynamic renditions when viewing an assets from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
+Image presets you create are available as dynamic renditions when you preview assets. Experience Manager shows a variety of dynamic renditions when viewing an assets from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
 
-**To increase or decrease the number of Dynamic Media image presets displayed**:
+**To increase or decrease the number of Dynamic Media image presets displayed:**
 
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the image preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -250,11 +250,11 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
 
 >[!NOTE]
 >
->To create Dynamic Media image presets, you must have administrator privileges as an AEM administrator or Admin Console administrator.
+>To create Dynamic Media image presets, you must have administrator privileges as an Experience Manager administrator or Admin Console administrator.
 
-**To create a Dynamic Media image preset**:
+**To create a Dynamic Media image preset:**
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Assets > Image Presets]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Click **[!UICONTROL Create]**. The **[!UICONTROL Edit Image Preset]** window opens.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
@@ -273,7 +273,7 @@ See [InDesign (INDD) file format](#indesign-indd-file-format).
 
 To create a responsive image preset, perform the steps in [Creating Image Presets](#creating-image-presets). When entering the height and width in the **[!UICONTROL Edit Image Preset]** window, erase the values and leave them blank.
 
-Leaving them blank tells AEM that this image preset is responsive. You can adjust the other values as appropriate.
+Leaving them blank tells Experience Manager that this image preset is responsive. You can adjust the other values as appropriate.
 
 
 
@@ -442,7 +442,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 >[!NOTE]
 >
->Some image modifiers [cannot be used in AEM](#advanced-tab-options).
+>Some image modifiers [cannot be used in Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) - Inverts each color component for a negative image effect.
 
@@ -486,7 +486,7 @@ The following are some basic examples of what you can do with image modifiers.
 
 ## Editing Image Presets {#modifying-image-presets}
 
-1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 
    ![6_5_imagepreset-editpreset](assets/6_5_imagepreset-editpreset.png)
 
@@ -499,9 +499,9 @@ If you are running Dynamic Media - Hybrid mode, you must manually publish image 
 
 (If you are running Dynamic Media - Scene7 mode, image presets are automatically published for you; you do not need to complete these steps.)
 
-**To publish image presets in Dynamic Media - Hybrid mode**:
+**To publish image presets in Dynamic Media - Hybrid mode:**
 
-1. In AEM, tap or click the AEM logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
+1. In Experience Manager, tap or click the Experience Manager logo to access the global navigation console and tap or click the Tools icon and navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Select the image preset or multiple image presets from the list of image presets and click or tap **[!UICONTROL Publish]**.
 1. After the image preset is published, the status changes from unpublished to published.
 
@@ -509,6 +509,6 @@ If you are running Dynamic Media - Hybrid mode, you must manually publish image 
 
 ## Deleting Dynamic Media image presets {#deleting-image-presets}
 
-1. In Experience Manager, tap or click the AEM logo to access the global navigation console.
+1. In Experience Manager, tap or click the Experience Manager logo to access the global navigation console.
 1. Tap the **[!UICONTROL Tools]** icon, then navigate to **[!UICONTROL Assets]** > **[!UICONTROL Image Presets]**.
 1. Select a preset, and then click **[!UICONTROL Delete]**. Dynamic Media confirms that you want to delete it. Tap **[!UICONTROL Delete]** to delete or tap **[!UICONTROL Cancel]** to abort.

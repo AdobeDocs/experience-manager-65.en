@@ -78,8 +78,8 @@ By default, Experience Manager detects video as "360" if its aspect ratio (width
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-  * **Property type**: Double
-  * **Value**: floating-point aspect ratio, default 2.0.
+  * **Property type** - Double
+  * **Value** - floating-point aspect ratio, default 2.0.
 
 After you set this property, it takes effect immediately on both existing videos and newly uploaded videos.
 

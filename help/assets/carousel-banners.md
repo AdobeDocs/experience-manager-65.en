@@ -19,7 +19,7 @@ Carousel banners enable marketers to drive conversion by easily creating interac
 
 Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel Banners let you quickly create or modify rotating banners. You can add interactivity such as hotspots linking to product detail or related resources, and deliver them to any screen &ndash; letting you bring new promotional content to market faster.
 
-Carousel Banners are designated by a banner with the word **[!UICONTROL CAROUSELSET]**:
+Carousel Banners are designated by a banner with the word **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
