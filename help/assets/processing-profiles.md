@@ -27,8 +27,8 @@ You must have Administrator rights to create, edit, and delete metadata, image, 
 
 After you create your metadata, image, or video profile, you assign it to one or more folders that you use as the destination for newly uploaded assets.
 
-An important concept regarding the use of profiles in Experience Manager Assets is that they are assigned to folders. Within a profile are settings in the form of metadata profiles, along with video profiles or image profiles. These settings process the contents of a folder along with any of its sub-folders. Therefore, how you name files and folders, how you arrange sub-folders, and how you handle the files within these folders has a significant impact on how those assets are processed by a profile.
-By using consistent and appropriate file and folder naming strategies, along with good metadata practice, you can make the most of your digital asset collection and ensure that the right files are processed by the right profile.
+An important concept regarding the use of profiles in Experience Manager Assets is that they are assigned to folders. Within a profile are settings in the form of metadata profiles, along with video profiles or image profiles. These settings process the contents of a folder along with any of its subfolders. Therefore, how you name files and folders, how you arrange subfolders, and how you handle the files within these folders has a significant impact on how those assets are processed by a profile.
+By using consistent and appropriate file and folder naming strategies, and good metadata practice, you make the most of your digital asset collection, and ensure that the right files are processed by the right profile.
 
 >[!NOTE]
 >
@@ -46,9 +46,9 @@ You can reprocess assets in a folder that already has an existing processing pro
 
 For example, suppose you created an Image profile and assigned it to a folder. Any image assets you uploaded to the folder automatically had the Image profile applied to the assets. However, later you decide to add a new smart crop ratio to the profile. Now, instead of having select and reupload the assets to the folder all over again, you simply run the *Scene7: Reprocess Assets* workflow.
 
-You can run the reprocess workflow on an asset for which processing failed the first time. As such, even if you have not edited a processing profile or applied a processing profile, you can still run the reprocess workflow on a folder of assets any time.
+You can run the reprocess workflow on an asset for which processing failed the first time. As such, even if you have not edited a processing profile or applied a processing profile, you can still run the reprocess workflow on a folder of assets anytime.
 
-You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped together in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on Experience Manager. If the batch size is very large, you may experience a delay in processing. Or, if the batch size is too small, it can cause too many round trips to the Dynamic Media server.
+You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on Experience Manager. If the batch size is large, you may experience a delay in processing. Or, if the batch size is too small, it can cause too many round trips to the Dynamic Media server.
 
 See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
@@ -69,7 +69,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 1. Select a folder.
 
     * The workflow considers all files in the selected folder, recursively.
-    * If there are one or more sub-folders with assets in the main selected folder, the workflow will reprocess every asset in the folder hierarchy.
+    * If there are one or more subfolders with assets in the main selected folder, the workflow reprocesses every asset in the folder hierarchy.
     * As a best practice, you should avoid running this workflow on a folder hierarchy that has more than 1000 assets.
 
 1. Near the upper-left corner of the page, from the drop-down list, click **[!UICONTROL Timeline]**.
@@ -89,7 +89,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
 ### Adjusting the batch size of the reprocess workflow {#adjusting-load}
 
-(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you will have many files in a single reprocessing job. Accordingly, the processing banner stays on Experience Manager assets for a longer time. However, if the average file size is small&ndash;1 MB or less&ndash;Adobe recommends that you increase the value to several hundred, but never more than a 1000. If the average file size is large&ndash;hundreds of megabytes&ndash;Adobe recommends that you lower the batch size up to 10.
+(Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you have many files in a single reprocessing job. So, the processing banner stays on Experience Manager assets for a longer time. However, if the average file size is small &ndash; 1 MB or less &ndash; Adobe recommends that you increase the value to several 100, but never more than 1000. If the average file size is large, such as hundreds of megabytes, Adobe recommends that you lower the batch size up to 10.
 
 **To optionally adjust the batch size of the reprocess workflow:**
 
@@ -104,7 +104,7 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
     ![Scene7 Batch Upload component](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. On the **[!UICONTROL Batch Upload to Scene7&mdash;Step Properties]** dialog box, set the following:
+1. On the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, set the following:
     * In the **[!UICONTROL Title]** and **[!UICONTROL Description]** text fields, enter a new title and description for the job, if desired.
     * Select **[!UICONTROL Handler Advance]** if your handler will advance to the next step.
     * In the **[!UICONTROL Timeout]** field, enter the external process timeout (seconds).
