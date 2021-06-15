@@ -214,7 +214,7 @@ The release schedule for Smart Imaging DPR and network optimization is as follow
 
 1. Adobe Customer Care adds you to the Smart Imaging customer Wait List based on the order in which requests were submitted.
 1. When Adobe is ready to handle your request, support contacts you to coordinate and set a target date.
-1. **Optional**: You can optionally test smart imaging in Staging before Adobe pushes the new feature to production.
+1. **Optional** - You can optionally test smart imaging in Staging before Adobe pushes the new feature to production.
 1. You are notified after completion by Customer Care.
 1. To maximize the performance improvements of Smart Imaging, Adobe recommends setting the Time To Live (TTL) to 24 hours or longer. The TTL defines how long assets are cached by the CDN. To change this setting:
 
