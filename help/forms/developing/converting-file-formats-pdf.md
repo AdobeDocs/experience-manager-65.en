@@ -843,7 +843,7 @@ If you create a script for a native application that was not previously supporte
 
 >[!NOTE]
 >
->In this context, the term additional means the contents of the `appmon.[applicationname].addition.[locale]`.xml` file. Such a file specifies overrides and additions to the dialog XML file.
+>In this context, the term additional means the contents of the `appmon.[applicationname].addition.[locale].xml` file. Such a file specifies overrides and additions to the dialog XML file.
 
 You can also modify the additional dialog XML file for a native application for these purposes:
 

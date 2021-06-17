@@ -573,8 +573,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
     * **Check the Video Analytics preset by way of the JCR**
       To check the Video Analytics preset by way of the JCR, you must have access to CRXDE Lite.
 
-      Experience Manager - In CRXDE Lite, navigate to `/conf/global/settings/
-      dam/dm/presets/analytics/jcr:content/userdata`
+      Experience Manager - In CRXDE Lite, navigate to `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
       As in `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
