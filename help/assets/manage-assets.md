@@ -529,7 +529,7 @@ Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, the
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/renditionpicker-node-crxde.png)
+   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/renditionpicker-node.png)
 
    To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
@@ -643,8 +643,6 @@ In list view and column view, the **[!UICONTROL Select]** option displays when y
 
 In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
-![Select quick action on card view](assets/select_quick_action.png)
-
 When browsing a folder or a collection in the [!DNL Assets] user interface in a browser, you can select all the displayed or loaded assets by using the [!UICONTROL Select All] option from the upper-right corner. Initially, only 100 assets are loaded in card view and 200 are loaded in list view. More assets are loaded in view as you scroll the search results page. The [!UICONTROL Select All] option selects only the loaded assets.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -666,8 +664,6 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/do-not-localize/crop.png).
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
-
-   ![Crop options](assets/crop-options.png)
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 
@@ -795,8 +791,6 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 1. Click **[!UICONTROL Print]** from the toolbar.
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
-
-   ![Select position of annotation/ review status to display on PDF from Print dialog](assets/Print-annotation-dialog.png)
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
