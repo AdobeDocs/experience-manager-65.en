@@ -73,6 +73,9 @@ The following properties can be configured:
     >
     > Support for UIDs got introduced in Adobe Commerce (Magento) 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 - Catalog Root Category Identifier - the identifier (UID or ID) of the store catalog root
+    >[!CAUTION]
+    >
+    > Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. If your project uses CIF Core Components version 2.0.0 you must enable Catalog UID Support and use a valid category UID as "Catalog Root Category Identifier".
 
 The configuration shown above is for reference. Projects should provide their own configurations.
 
