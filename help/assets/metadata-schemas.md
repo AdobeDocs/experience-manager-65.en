@@ -67,10 +67,6 @@ You can edit a newly added or existing metadata schema form. The metadata schema
 
 1. On the **[!UICONTROL Metadata Schema Form Editor]** page, customize the metadata form. Drag the needed components from the **[!UICONTROL Build Form]** tab to one of the tabs.
 
-   ![Metadata Schema Editor to customize asset Properties page](assets/metadata-schema-editor.png)
-
-   *Figure: A [!UICONTROL Metadata Schema Form Editor] page with available tabs.*
-
 1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
 ### Components within the [!UICONTROL Build Form] tab {#components-within-the-build-form-tab}
@@ -145,8 +141,6 @@ Instead of specifying properties for the options in the **[!UICONTROL Settings]*
 #### Add or delete a tab in the schema form {#adding-deleting-a-tab-in-the-schema-form}
 
 The schema editor lets you add or delete a tab. The default schema form includes the **[!UICONTROL Basic]**, **[!UICONTROL Advanced]** , **[!UICONTROL IPTC]**, and **[!UICONTROL IPTC Extension]** tabs.
-
-![Default tabs in Metadata Schema form](assets/metadata-schema-form-tabs.png)
 
 Click `+` to add a tab on a schema form. By default, the new tab has the name `Unnamed-1`. You can modify the name from the **[!UICONTROL Settings]** tab. Click `X` to delete a tab.
 
