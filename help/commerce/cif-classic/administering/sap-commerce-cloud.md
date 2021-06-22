@@ -7,6 +7,7 @@ uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
+exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 ---
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
