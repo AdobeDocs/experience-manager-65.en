@@ -720,11 +720,9 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![Comment box in Add Annotation dialog](assets/annotation-comment-box.png)
-
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
-   ![Specify user's email address and add comment to notify user](assets/annotation-add-user-email.png)
+   ![Specify user's email address and add comment to notify user](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
