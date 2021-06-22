@@ -8,6 +8,7 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
+exl-id: 09e986c4-16b9-4ef5-a0b3-8d65b17a7f2c
 ---
 # Creating Multiple Category and Product Pages
 

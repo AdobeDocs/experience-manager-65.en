@@ -330,7 +330,7 @@ To create the style that authors can apply to Japanese text, follow these steps:
 
 1. Create a new node under the styles node. See [specify a new style](#stylesindropdown).
    * Name: `jpn-word-wrap`
-   * Type: `nt:unstructure
+   * Type: `nt:unstructure`
 
 1. Add the property `cssName` to the node to reference the CSS class. This class name is a reserved name for Japanese word wrap feature.
    * Name: `cssName`

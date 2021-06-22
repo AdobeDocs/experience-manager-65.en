@@ -6,6 +6,7 @@ seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
+exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
 ---
 # SAP Commerce Cloud{#sap-commerce-cloud}
 
