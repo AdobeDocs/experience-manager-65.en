@@ -90,6 +90,16 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p> </p> </td>
   </tr>
   <tr>
+   <td>Azul Zulu OpenJDK 11 - 64bit</td>
+   <td>Z: Not supported</td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
+   <td>Azul Zulu OpenJDK 8 - 64bit</td>
+   <td>Z: Not supported</td>
+   <td><p> </p> </td>
+  </tr>
+  <tr>
    <td>Oracle Java™ SE 8 (64 bit)</td>
    <td>A: Supported</td>
    <td>Minor releases and updates</td>
@@ -205,7 +215,6 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p>Microsoft® SQL Server JDBC driver 6.2.1.0<br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Supplied with AEM Forms on JEE installation.</p> </td>
   </tr>
-  <tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC driver 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>

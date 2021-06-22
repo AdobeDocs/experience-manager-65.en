@@ -97,7 +97,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/sites-administering/ecommerce.md">Commerce</a> sites.</td>
+   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> sites.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>
@@ -278,7 +278,7 @@ How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-
 
 Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
 
-![bh-12](assets/bh-12.png)
+![Actions Toolbar](assets/bh-12.png)
 
 >[!NOTE]
 >

@@ -78,7 +78,7 @@ To apply the CUG to a page:
 
    >[NOTE!]
    >
-   > Note that CUGs in the Permissions tab cannot be rolled back from Blueprints to Live Copies. Please plan around this when configuring Live Copy.
+   > Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
    >
    > For more information, see [this page](closed-user-groups.md#aem-livecopy).
 

@@ -19,7 +19,7 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 
 >[!IMPORTANT]
 >
->The following steps apply only to Dynamic Media - Scene7 mode in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) or later. This CDN invalidation feature also requires that you use the out-of-the-box CDN that is bundled with Experience Manager Dynamic Media; any other custom CDN is not supported.<br>If you use Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) or earlier, follow the steps found in [Invalidating the CDN cache by way of Dynamic Media Classic.](/help/assets/invalidate-cdn-cache-dm-classic.md)
+>The following steps apply only to Dynamic Media - Scene7 mode in Adobe Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) or later. This CDN invalidation feature also requires that you use the out-of-the-box CDN that is bundled with Experience Manager Dynamic Media; any other custom CDN is not supported.<br>If you use Dynamic Media in Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) or earlier, follow the steps found in [Invalidating the CDN cache by way of Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md).
 
 See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
 
@@ -27,7 +27,7 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
 
 *Part 1 of 2: Creating a CDN Invalidation template*
 
-1. In Experience Manager 6.5.6 or later, tap **[!UICONTROL Tools > Assets > CDN Invalidation.]**
+1. In Experience Manager 6.5.6 or later, tap **[!UICONTROL Tools > Assets > CDN Invalidation]**.
 
     ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-template2.png)
 
@@ -40,11 +40,11 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
 
     ![CDN Invalidation Template - Create](/help/assets/assets-dm/cdn-invalidation-template-create-2.png)
 
-1. In the upper-right corner of the **[!UICONTROL CDN Invalidation template]** page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK.]**<br>
+1. In the upper-right corner of the **[!UICONTROL CDN Invalidation template]** page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL OK]**.<br>
     *Part 2 of 2: Setting CDN Invalidation options*
     <br>
 
-1. In Experience Manager as a Cloud Service, tap **[!UICONTROL Tools > Assets > CDN Invalidation.]**
+1. In Experience Manager as a Cloud Service, tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL CDN Invalidation]**.
 
     ![CDN Validation feature](/help/assets/assets-dm/cdn-invalidation-path2.png)
 
@@ -64,7 +64,7 @@ See also [Caching overview in Dynamic Media](https://helpx.adobe.com/experience-
    | **[!UICONTROL Add Assets]** | Use the Asset Picker to select assets you want to invalidate. You can select either published or unpublished assets.<br>Caching at the CDN is URL-based, not asset-based. Therefore, it is necessary for you to be aware of the complete URLs that are on your website. After you determine those URLs, you can add them to the template. Then, you can select and add those assets and invalidate the URLs in one step. <br>Use this option with **[!UICONTROL Invalidate asset associated image presets in CDN]**, or **[!UICONTROL Invalidation based on template]**, or both. |
    | **[!UICONTROL Add URL]** | Manually add or paste full URL paths to Dynamic Media assets whose CDN cache you want to invalidate. Use this option if you did not create a CDN Invalidation Template in ***Part 1 of 2: Creating a CDN Invalidation template***, and have only a few assets to invalidate.<br>**Important:** Each URL that you add must be on its own line.<br>You can invalidate up to 1000 URLs at a give time. If the number of URLs in the **[!UICONTROL Add URL]** text field is greater than 1000, you are unable to tap **[!UICONTROL Next]**. In such cases, you must tap **[!UICONTROL X]** to the right of a selected asset or a manually added URL to delete it from the invalidation list.<br>Specify URLs for image smart crops either in the CDN Invalidation template, or in this **[!UICONTROL Add URL]** text field.|
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Next.]** 
+1. Near the upper-right corner of the page, tap **[!UICONTROL Next]**. 
 1. On the **[!UICONTROL CDN Invalidation - Confirm]** page, in the **[!UICONTROL URLs]** list box, you can see a list of one or more URLs generated from the CDN Invalidation Template you created earlier and the assets you just added.
 
     For example, using the CDN Invalidation Template example that was shown in the steps earlier, suppose you added a single asset named `spinset`. When you tap **[!UICONTROL Tools > Assets > CDN Invalidation]**, it results in the following five generated URLs in the **[!UICONTROL CDN Invalidation - Confirm]** user interface:
@@ -84,7 +84,7 @@ In all cases, either the entire batch is processed for invalidation, or the enti
 | *Failed to retrieve URLs for selected assets.* | Occurs if any of the following scenarios are met:<br>- A Dynamic Media configuration is not found.<br>- There is an exception while retrieving a service user through which the Dynamic Media configuration is read.<br>- The Publish server or the company root used to form the URLs is missing in the Dynamic Media configuration. |
 | *Some URLs are not defined correctly. Correct and resubmit.* | Occurs if the IPS CDN cache invalidation API returns an error that the URL is referring to a different company. Or, if the URL is not valid as per the validation done by the IPS `cdnCacheInvalidation` API. | 
 | *Failed to invalidate CDN cache.* | Occurs if the CDN cache invalidation request fails for any other reason. |
-| *No URLs entered to be invalidated.* | Occurs if there are no URLs present in the **[!UICONTROL CDN Invalidation - Confirm]** page, and you tap **[!UICONTROL Submit.]** |
+| *No URLs entered to be invalidated.* | Occurs if there are no URLs present in the **[!UICONTROL CDN Invalidation - Confirm]** page, and you tap **[!UICONTROL Submit]**. |
 
 
    <!--  | I do not want to create a template. | Near the upper-right corner of the page, tap **[!UICONTROL Cancel]**, then continue with ***Part 2: Working with CDN Invalidation***. Note that while you are not required to create a template to use CDN Invalidation, Adobe recommends that you create one, especially if you have numerous assets that you need to update immediately, on a regular basis. The template is used at the time you set CDN invalidation options. | -->

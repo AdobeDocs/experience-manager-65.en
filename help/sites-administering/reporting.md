@@ -25,6 +25,10 @@ To help you monitor and analyze the state of your instance, AEM provides a selec
 * [Workflow Instance Report](#workflow-instance-report)
 * [Workflow Report](#workflow-report)
 
+>[!NOTE]
+>
+>These reports are only available in the Classic UI. For system monitoring and reporting in the modern UI, see the [Operations Dashboard.](/help/sites-administering/operations-dashboard.md)
+
 All reports can be accessed from the **Tools** console. Select **Reports** in the left-hand pane, then double-click the required report in the right-hand pane to open it for viewing and/or configuration.
 
 New instances of a report can also be created from the **Tools** console. Select **Reports** in the left-hand pane, then **New...** from the toolbar. Define a **Title** and **Name**, select the report type you require, then click **Create**. Your new report instance will appear in the list. Double-click this to open, then drag a component from the sidekick to create the first column and start the report definition.

@@ -8,9 +8,9 @@ exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 ---
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work in tandem. Another reason can be acquisitions leading to heterogenous infrastructure that the parent company wants to use together.
+In large enterprises the infrastructure required to create websites may be distributed. At times the website creation capabilities and digital assets used to create these websites may reside in different deployments. One reason can be geographically distributed existing deployments that are required to work together. Another reason can be acquisitions leading to heterogenous infrastructure, including different [!DNL Experience Manager] versions, that the parent company wants to use together.
 
-Users can create web pages in [!DNL Experience Manager Sites]. [!DNL Experience Manager Assets] is the Digital Asset Management (DAM) system that supplies the required assets for websites. [!DNL Experience Manager] now supports the above use case by integrating [!DNL Sites] and [!DNL Assets].
+Connected Assets functionality supports the above use case by integrating [!DNL Experience Manager Sites] and [!DNL Experience Manager Assets]. Users can create web pages in [!DNL Sites] that use the digital assets from a separate [!DNL Assets] deployments.
 
 ## Overview of Connected Assets {#overview-of-connected-assets}
 
@@ -175,15 +175,15 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
 ## Limitations and best practices {#tip-and-limitations}
 
-* To get insights about asset usage, configure the [Asset Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
+* To get insights about asset usage, configure the [Assets Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
 * Local assets are not synchronized with the original assets on the remote deployment. Any edits, deletions, or revoking of permissions on the DAM deployment are not propagated downstream.
 * Local assets are read-only copies. [!DNL Experience Manager] components do non-destructive edits to assets. No other edits are allowed.
 * Locally fetched assets are available for authoring purposes only. Asset update workflows cannot be applied and metadata cannot be edited.
-* Only images and the listed document formats are supported. [!DNL Dynamic Media] assets, Content Fragments, and Experience Fragments are not supported.
-* [!DNL Experience Manager] does not fetch the metadata schemas. It means that all the fetched metadata may not be displayed. If the schema are updated separately then all the properties are displayed.
+* Only images and the listed document formats are supported. [!DNL Dynamic Media] assets, [!DNL Content Fragments], and [!DNL Experience Fragments] are not supported.
+* [!DNL Experience Manager] does not fetch the metadata schemas. It means that all the fetched metadata may not be displayed. If the schema are separately updated on the [!DNL Sites] deployment then all the metadata properties are displayed.
 * All [!DNL Sites] authors have read permissions on the fetched copies, even if authors cannot access the remote DAM deployment.
 * No API support to customize the integration.
 * The functionality supports seamless search and use of remote assets. To make many remote assets available on local deployment in one-go, consider migrating the assets. See [Assets migration guide](assets-migration-guide.md).
@@ -193,8 +193,8 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
 * [!DNL Assets] deployment on [!DNL Adobe Managed Services] is supported.
 * [!DNL Sites] can connect to a single [!DNL Assets] repository at a time.
-* A license of [!DNL Assets] working as remote repository.
-* One or more licenses of [!DNL Sites] working as local authoring deployment.
+* A license of [!DNL Assets] working as remote repository is required.
+* One or more licenses of [!DNL Sites] working as local authoring deployment is required.
 
 ### Usage {#usage}
 

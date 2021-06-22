@@ -6,7 +6,6 @@ audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
 user-guide-description: Learn about administering AEM.
-feature-set: Experience Manager Sites,Experience Manager Assets,Experience Manager
 feature: Administering
 role: Administrator
 ---
@@ -103,13 +102,6 @@ role: Administrator
     + [Configuring Segmentation](campaign-segmentation.md)
     + [Extending and Configuring the Design Importer for Landing Pages](extending-the-design-importer-for-landingpages.md)
     + [Integrating Landing Pages with Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ eCommerce {#ecommerce}
-    + [eCommerce](ecommerce.md)
-    + [Concepts](concepts.md)
-    + [Administering Generic eCommerce](generic.md)
-    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-    + [SAP Commerce Cloud](sap-commerce-cloud.md)
-    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
 + Integration {#integration}
     + [Integrating with Third-Party Services](third-party-services.md)
     + [Integrating with Salesforce](salesforce.md)
@@ -137,7 +129,6 @@ role: Administrator
     + [Troubleshooting Integration Issues](troubleshooting-integration-issues.md)
     + [Integrating with BrightEdge Content Optimizer](brightedge.md)
     + [Catalog Producer](catalog-producer.md)
-    + [Configure AEM Assets integration with Experience Cloud and Creative Cloud](configure-assets-cc-integration.md)
     + [Integrating with Silverpop Engage](silverpop.md)
     + [Integrating with Adobe Campaign](campaign.md)
     + [Integrating with ExactTarget](exacttarget.md)
@@ -159,6 +150,7 @@ role: Administrator
     + [AEM Sites - GDPR Readiness](gdpr-compliance-sites.md)
     + [Handling GDPR Requests for the AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
     + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
++ Content Management {#contentmanagement}
     + [How to Work With Packages](package-manager.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)

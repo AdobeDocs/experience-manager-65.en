@@ -6,7 +6,6 @@ audience: end-user
 user-guide-title: AEM 6.5 Developing User Guide
 breadcrumb-title: Developing Guide
 user-guide-description: This guide covers how to build out your AEM instance.
-feature-set: Experience Manager Sites
 feature: Developing
 role: Developer
 ---
@@ -64,10 +63,6 @@ role: Developer
     + [Integrating Services with the JMX Console](jmx-integration.md)
     + [Developing the Bulk Editor](dev-bulk-editor.md)
     + [Developing Reports](dev-reports.md)
-    + eCommerce{#ecommerce}
-      + [eCommerce](ecommerce.md)
-      + [Developing (generic)](generic.md)
-      + [Developing with SAP Commerce Cloud](sap-commerce-cloud.md)
 + Components{#components}
     + [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
     + [Style System](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)

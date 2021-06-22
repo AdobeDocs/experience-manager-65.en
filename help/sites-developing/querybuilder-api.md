@@ -183,7 +183,7 @@ orderby.sort=desc
 
 ### Search for pages tagged with a certain tag {#search-for-pages-tagged-with-a-certain-tag}
 
-`http://localhost:4502/bin/querybuilder.json?type=cq:Page&tagid=marketing:interest/product&tagid.property=jcr:content/cq:tags``
+`http://localhost:4502/bin/querybuilder.json?type=cq:Page&tagid=marketing:interest/product&tagid.property=jcr:content/cq:tags`
 
 ```xml
 type=cq:Page
