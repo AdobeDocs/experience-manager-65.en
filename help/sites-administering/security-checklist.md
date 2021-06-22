@@ -19,7 +19,7 @@ This section deals with various steps that you should take to ensure that your A
 
 >[!NOTE]
 >
->Further information [is also available about the most dangerous security threats as published by Open Web Application Security Project (OWASP)](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+>Further information is also available about the most dangerous security threats as published by [Open Web Application Security Project (OWASP)](https://owasp.org/www-project-top-ten/).
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ These development OSGi bundles should be uninstalled on both author and publish 
 
 ### Check if the Sling development bundle is present {#check-if-the-sling-development-bundle-is-present}
 
-The [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) deployes the Apache Sling Tooling Support Install (org.apache.sling.tooling.support.install).
+The [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) deploys the Apache Sling Tooling Support Install (org.apache.sling.tooling.support.install).
 
 This OSGi bundle should be uninstalled on both author and publish productive systems before making them accessible.
 
@@ -156,7 +156,7 @@ This OSGi bundle should be uninstalled on both author and publish productive sys
 
 #### The CSRF Protection Framework {#the-csrf-protection-framework}
 
-AEM 6.1 ships with a mechanism that helps protect agains Cross-Site Request Forgery attacks, called the **CSRF Protection Framework**. For more information on how to use it, consult the [documentation](/help/sites-developing/csrf-protection.md).
+AEM 6.1 ships with a mechanism that helps protect against Cross-Site Request Forgery attacks, called the **CSRF Protection Framework**. For more information on how to use it, consult the [documentation](/help/sites-developing/csrf-protection.md).
 
 #### The Sling Referrer Filter {#the-sling-referrer-filter}
 
@@ -327,11 +327,9 @@ In order to mitigate this, please follow the below steps:
 
 **Mitigate Against DoS Caused by Asset Download Servlet**
 
-The default Asset Download Servlet in AEM allows authenticated users to issue arbitrarily-large, concurrent download requests for creating ZIP files of assets visible to them that can overload the server and/or network.
+The default asset download servlet allows authenticated users to issue arbitrarily-large, concurrent download requests to create ZIP files of assets. Creating large ZIP archives can overload the server and the network. To mitigate a potential Denial of Service (DoS) risk caused by this behavior, `AssetDownloadServlet` OSGi component is disabled by default on [!DNL Experience Manager] publish instance. It is enabled on [!DNL Experience Manager] author instance by default. 
 
-To mitigate potential DoS risks caused by this feature, `AssetDownloadServlet` OSGi component is disabled by default for publish instances on latest AEM versions.
-
-If your setup requires that the Asset Download Server be enabled, please see [this article](/help/assets/download-assets-from-aem.md) for more information.
+If you do not need the download capability then disable the servlet on author and publish deployments. If your setup requires that the asset download capability is enabled, see [this article](/help/assets/download-assets-from-aem.md) for more information. Also, you can define a maximum download limit that your deployment can support.
 
 ### Disable WebDAV {#disable-webdav}
 
@@ -446,4 +444,4 @@ Adobe strongly recommends to perform a penetration test of your AEM infrastructu
 
 ### Development Best Practices {#development-best-practices}
 
-It is critical that new development are following the [Security Best Practices](/help/sites-developing/security.md) to ensure your AEM environement stays safe.
+It is critical that new development are following the [Security Best Practices](/help/sites-developing/security.md) to ensure your AEM environment stays safe.

@@ -30,7 +30,7 @@ The following pages provide fast links to some of the major areas of content man
 
   Components used for creating standard page content are primarily contained in the groups **General**, **Columns** and **Forms**.
 
-* [eCommerce](/help/sites-administering/ecommerce.md)
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
   The eCommerce functionality within AEM also includes a range of components, contained in the **Commerce** group. Actual use can depend on the commerce engine being used.
 

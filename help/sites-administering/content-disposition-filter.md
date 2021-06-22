@@ -11,7 +11,7 @@ topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
 ---
-# Content Disposition Filter{#content-disposition-filter}
+# Content Disposition Filter {#content-disposition-filter}
 
 Content disposition filter is a security feature against XSS attacks on SVG files.
 
@@ -23,8 +23,8 @@ You can view the [Apache Sling Content Disposition Filter in GitHub](https://git
 
 The Content Disposition Filter options provide the following functionality:
 
-* Content Disposition Paths: a list of paths where the filter will be applied followed by a list of mime-types to exclude on that path.This path must be an absolute path and may contain a wildcard ('&ast;') at the end, to match every resource path with the given path prefix. For example: /content/&ast;:image/jpeg,image/svg+xml " will apply the filter to every node in /content except jpg and svg images
+* **Content Disposition Paths:** a list of paths where the filter will be applied followed by a list of mime-types to exclude on that path.This path must be an absolute path and may contain a wildcard (`*`) at the end, to match every resource path with the given path prefix. For example: `/content/*:image/jpeg,image/svg+xml` will apply the filter to every node in `/content?` except jpg and svg images
 
-* Excluded Resource Paths: a list fo excluded resources, each resource path must be given as absolute and fully qualified path. Prefix matching/wildcards are not supported.
+* **Excluded Resource Paths:** a list of excluded resources, each resource path must be given as absolute and fully qualified path. Prefix matching/wildcards are not supported.
 
-* Enable For All Resource Paths: this flag controls whether to enable this filter for all paths, except for the excluded paths defined by Excluded Resource Paths. Setting this to 'true' leads to ignoring Content Disposition Paths. Independent of the configuration, only resource paths are covered which contain a property named 'jcr:data' or 'jcr:content/jcr:data'.
+* **Enable For All Resource Paths:** this flag controls whether to enable this filter for all paths, except for the excluded paths defined by Excluded Resource Paths. Setting this to 'true' leads to ignoring Content Disposition Paths. Independent of the configuration, only resource paths are covered which contain a property named `jcr:data` or `jcr:content/jcr:data`.

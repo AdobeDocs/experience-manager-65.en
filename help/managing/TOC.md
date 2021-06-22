@@ -5,7 +5,6 @@ audience: end-user
 user-guide-title: AEM 6.5 Managing User Guide
 breadcrumb-title: Managing Guide
 user-guide-description: Learn how to manage an AEM project.
-feature-set: Experience Manager Sites
 feature: Deploying
 role: Business Practitioner
 ---

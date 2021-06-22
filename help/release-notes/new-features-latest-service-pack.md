@@ -1,11 +1,11 @@
 ---
-title: What is new in [!DNL Experience Manager] 6.5 Service Pack 8
-description: What's new in [!DNL Experience Manager] 6.5 Service Pack 8
+title: What is new in [!DNL Experience Manager] 6.5 Service Pack 9
+description: What's new in [!DNL Experience Manager] 6.5 Service Pack 9
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 ---
-# What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8 {#aem-whats-new-service-pack}
+# What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
@@ -13,17 +13,60 @@ exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 
 This article highlights the features included in the latest Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key releases since the last Service Pack](#key-releases-since-last-sp) release.
 
+>[!NOTE]
+>
+>Starting with AEM Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
+>Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
+>You can download the relevant versions of the [!DNL Azul Zulu] JDKs from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+>The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
+
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-### Sort the Live Copy pages available for rollout {#sort-livecopy-pages}
+### Ability to restore deleted pages and tree {#ability-to-restore-pages-tree}
 
-You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
+You can now restore the deleted pages and the entire tree view on an [!DNL Experience Manager Sites] page.
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency.
+* Updated the naming of Chinese locales and regions relating to Hong Kong, Macau, and Taiwan, to make them consistent with Chinese social and political views.
 
-* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages.
+* An optional configuration is introduced to lower case the email IDs in ACP api response from [!DNL Adobe Experience Manager].
+
+   ![configuration to lowercase the email IDs in ACP response from AEM](assets/email-lowcase-config.png)
+
+* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and perception of color. For more information, see [Accessibility enhancements in Assets](sp-release-notes.md#assets-accessibility-6590).
+
+### Dynamic Media {#assets-dynamic-media}
+
+* [Dynamic media is more accessible](sp-release-notes.md#assets-accessibility-6590) in terms of:
+
+  * ease of usage with keyboard keys.
+  * contrast (with background) of text, placeholder text, and controls in various editors.
+  * accessibility and narration by screen readers.
+
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
+
+   >[!NOTE]
+   >
+   >The release timeline for above Smart Imaging enhancements is:
+   >
+   >* North America May 24, 2021 in NA,
+   >
+   >* Europe, the Middle East, and Africa June 25, 2021,
+   >
+   >* Asia-Pacific July 19, 2021.
+
+* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier). For more information, see [image serving and rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+
+  >[!NOTE]
+  >
+  >The release timeline for AVIF support is:
+  >
+  >* North America May 10, 2021,
+  >
+  >* Europe, the Middle Eas, and Africa May 24, 2021,
+  >
+  >* Asia-Pacific June 24, 2021.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -31,25 +74,43 @@ You can now sort the Live Copy pages available for rollout using the [!UICONTROL
 >
 >The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-### Show or hide CAPTCHA component in an adaptive form based on rules {#show-hide-captcha}
+### Support for [!DNL Azul Zulu OpenJDK] {#support-azul-zulu}
 
-You can now validate CAPTCHA either on adaptive form submission or on user action. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an adaptive form based on rules.
+You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments. For more information, see [Experience Manager 6.5 Service Pack 9 Release Notes](sp-release-notes.md) and [Technical Requirements](../sites-deploying/technical-requirements.md).
 
-### Add custom CAPTCHA services {#add-custom-captcha-services}
+### Ability to send a notification email to a group using [!UICONTROL Assign Task] {#group-notification-email}
 
-[!DNL Experience Manager Forms] provides out of the box support to use Google reCAPTCHA (A separate license of Google reCAPTCHA APIs is required) as a CAPTCHA validation service. You can also use a custom CAPTCHA service to validate CAPTCHAs.
+You can now send a notification email to a group email address using the Assign Task workflow step.
 
-### Other enhancements {#other-enhancements-forms-6580}
+### Ability to retrieve an Interactive Communication draft after modifying the source Interactive Communication {#retrieve-draft-after-source-modifications}
 
-* Improved accessibility of the [!DNL Experience Manager Forms] Date Picker component.
+You can now retrieve an interactive communication saved as a draft after you make changes to the source Interactive Communication.
 
-* Added support to generate an Interactive Communication in PCL format using the PrintChannel API.
+### Set custom domain name for loading, rendering, and validating the reCAPTCHA service {#set-custom-domain-name-recaptcha}
 
-* When performing a PDFG conversion, you can now enable or disable the [!DNL Experience Manager Forms] registry changes for custom bookmark generation.
+reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can now modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
+
+### Input data enhancements for [!UICONTROL Invoke Form Data Model Service] workflow step {#input-data-enhancements-fdm}
+
+When you select a form data model and a service in [!UICONTROL Invoke Form Data Model Service] workflow step, you specify service arguments for input data.
+
+If you select [!UICONTROL Relative to Payload] option to attach a file as a service argument, you can now specify the folder path that contains the file instead of the actual file name. Defining the folder name, instead of the file attachment name, enables you to reuse workflow models. You do not limit the workflow model to a single file attachment name.
+
+### Ability to use multiple master pages in a Document of Record template {#use-multiple-master-pages-dor-template}
+
+You can now use multiple master pages in a Document of Record template. As a result, you can now have different header, footer, fonts, logo information on the title page and other pages of the template.
+
+### Support page breaks in Document of Record {#support-page-breaks-dor}
+
+You can now add page breaks to a Document of Record. As a result, if a panel breaks within pages, you can add a page break to move the panel to a new page in a Document of Record.
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### [!DNL Experience Manager Sites] {#aem-sites-previous-service-packs}
+
+#### Sort the Live Copy pages available for rollout (6.5.8.0) {#sort-livecopy-pages}
+
+You can now sort the Live Copy pages available for rollout using the [!UICONTROL Name], [!UICONTROL Last modified date], and [!UICONTROL Last rollout date] properties. The [!UICONTROL Last rollout date] for a page is a new property introduced in this release.
 
 #### Availability of page moves and MSM rollouts as asynchronous operations (6.5.7.0) {#page-moves-msm-asynchronous}
 
@@ -102,6 +163,10 @@ You can now select styles within the component dialog using the enhanced Style S
 * Improved handling of incomplete or invalid URLs. Such URLs can slow the Template Editor.
 
 ### [!DNL Adobe Experience Manager Assets] {#aem-assets-previous-service-packs}
+
+* When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency (6.5.8.0).
+
+* When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages (6.5.8.0).
 
 * [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
 
@@ -167,9 +232,9 @@ Support for 3D images in [!DNL Dynamic Media] enables customers to publish and a
 
 The authorization channel between [!DNL Experience Manager Assets] and [!DNL Brand Portal] is changed. Earlier, [!DNL Brand Portal] was configured in Classic UI via Legacy OAuth Gateway, which uses the JWT token exchange to obtain an IMS Access token for authorization. [!DNL Experience Manager Assets] is now configured with [!DNL Brand Portal] through [!DNL Adobe I/O], which procures an IMS token for authorization of your [!DNL Brand Portal] tenant.
 
-The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. See [Configure Experience Manager Assets with Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
+The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal] are different depending on your [!DNL Experience Manager] version, and whether you are configuring for the first time, or upgrading the existing configurations. See [Configure Experience Manager Assets with Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html) for details.
 
-#### Accessibility enhancements (6.5.4.0) {#accessibility-enhancements}
+#### Accessibility enhancements (6.5.4.0) {#accessibility-enhancements-6540}
 
 [!DNL Experience Manager Assets] includes the following accessibility enhancements:
 
@@ -217,6 +282,22 @@ Smart imaging uses each user's unique viewing characteristics to automatically s
 Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
+
+#### Show or hide CAPTCHA component in an adaptive form based on rules (6.5.8.0) {#show-hide-captcha}
+
+You can now validate CAPTCHA either on adaptive form submission or on user action. You can also add conditions to validate CAPTCHA on a user action and show or hide the CAPTCHA component in an adaptive form based on rules.
+
+#### Add custom CAPTCHA services (6.5.8.0) {#add-custom-captcha-services}
+
+[!DNL Experience Manager Forms] provides out of the box support to use Google reCAPTCHA (A separate license of Google reCAPTCHA APIs is required) as a CAPTCHA validation service. You can also use a custom CAPTCHA service to validate CAPTCHAs.
+
+#### Other enhancements (6.5.8.0) {#other-enhancements-forms-6580}
+
+* Improved accessibility of the [!DNL Experience Manager Forms] Date Picker component.
+
+* Added support to generate an Interactive Communication in PCL format using the PrintChannel API.
+
+* When performing a PDFG conversion, you can now enable or disable the [!DNL Experience Manager Forms] registry changes for custom bookmark generation.
 
 #### Performance improvements (6.5.7.0) {#performance-improvements-forms}
 
@@ -357,15 +438,15 @@ You can use the Batch API to produce multiple interactive communications from a 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Key releases since [!DNL Adobe Experience Manager] 6.5 SP7 {#key-releases-since-last-sp}
+## Key releases since [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
 
-Between November 26, 2020 and February 25, 2021, Adobe released the following, in addition to the Service Packs and Cumulative Fix Packs:
+Between February 25, 2021 and May 27, 2021, Adobe released the following, in addition to the Service Packs:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2020.11.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-11-0.html), [2020.12.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2020/release-notes-2020-12-0.html), and [2021.1.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html), [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html), and [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
 
-* [[!DNL Experience Manager] desktop app 2.1 (2.1.0.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+* [[!DNL Experience Manager] desktop app 2.1 (2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: Feature Pack 202011](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202011.html)
+* [Experience Manager Screens: Feature Pack 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html?lang=en)
 
 >[!MORELIKETHIS]
 >

@@ -6,7 +6,6 @@ audience: end-user
 user-guide-title: AEM 6.5 Deploying Guide
 breadcrumb-title: Deploying Guide
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.5, including our Adobe Managed Services cloud deployment.
-feature-set: Experience Manager Sites
 feature: Deploying
 role: Architect
 ---
@@ -84,11 +83,6 @@ role: Architect
     + [Forms Repository Restructuring in AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
     + [E-Commerce Repository Restructuring in AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
     + [Repository Restructuring for AEM Communities in 6.5](communities-repository-restructuring-in-aem-6-5.md)
-+ eCommerce {#ecommerce}
-    + [eCommerce Overview](ecommerce.md)
-    + [SAP Commerce Cloud](sap-commerce-cloud.md)
-    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
 + Best Practices {#practices}
    + [Deploying Best Practices](best-practices.md)
    + [Performance Tree](performance-tree.md)

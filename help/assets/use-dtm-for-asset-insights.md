@@ -1,25 +1,25 @@
 ---
-title: Enable Asset Insights through DTM
-description: Learn how to use Adobe Dynamic Tag Management (DTM) to enable Asset Insights.
+title: Enable Assets Insights through DTM
+description: Learn how to use Adobe Dynamic Tag Management (DTM) to enable Assets Insights.
 contentOwner: AG
 role: Business Practitioner, Administrator
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 ---
-# Enable Asset Insights through DTM {#enable-asset-insights-through-dtm}
+# Enable Assets Insights through DTM {#enable-asset-insights-through-dtm}
 
-Adobe Dynamic Tag Management is a tool that activates your digital marketing tools. It is provided for free to Adobe Analytics customers. You can either customize your tracking code to enable third-party CMS solutions to use Asset Insights or you can use DTM to insert Asset Insights tags. Insights are only supported and provided for images.
+Adobe Dynamic Tag Management is a tool that activates your digital marketing tools. It is provided for free to Adobe Analytics customers. You can either customize your tracking code to enable third-party CMS solutions to use Assets Insights or you can use DTM to insert Assets Insights tags. Insights are only supported and provided for images.
 
 >[!CAUTION]
 >
->Adobe DTM is deprecated in favor of [!DNL Adobe Experience Platform Launch] and will soon reach [end of life](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recommends that you [use [!DNL Launch] for asset insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM is deprecated in favor of [!DNL Adobe Experience Platform Launch] and will soon reach [end of life](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe recommends that you [use [!DNL Launch] for assets insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
-Perform these steps to enable Asset Insights through DTM.
+Perform these steps to enable Assets Insights through DTM.
 
 1. Click the Experience Manager logo, and go to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**.
 1. [Configure Experience Manager deployment with DTM Cloud Service](/help/sites-administering/dtm.md)
 
-   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** in the user Profile. This step is not required from the Asset Insights standpoint, because the integration of Experience Manager Sites with Asset Insights is still in the works.
+   The API token should be available once you log on to [https://dtm.adobe.com](https://dtm.adobe.com/) and visit **[!UICONTROL Account Settings]** in the user Profile. This step is not required from the Assets Insights standpoint, because the integration of Experience Manager Sites with Assets Insights is still in the works.
 
 1. Log on to [https://dtm.adobe.com](https://dtm.adobe.com/), and select a company, as appropriate.
 1. Create or open an existing Web Property
@@ -45,7 +45,7 @@ Perform these steps to enable Asset Insights through DTM.
    >
    >* `AppMeasurement.js` is removed. It is expected to be available through DTM's Adobe Analytics tool.
    >* The call to `assetAnalytics.dispatcher.init()` is removed. The function is expected to be called once DTM's Adobe Analytics tool finishes loading.
-   >* Depending on where Asset Insights Page Tracker is hosted (for example Experience Manager, CDN and so on), the origin of the script source may require changes.
+   >* Depending on where Assets Insights Page Tracker is hosted (for example Experience Manager, CDN and so on), the origin of the script source may require changes.
    >* For Experience Manager-hosted Page Tracker, the source should point to a publish instance using the host name of the dispatcher instance.
 
 1. Access `https://dtm.adobe.com`. Click **[!UICONTROL Overview]** in the web property and click **[!UICONTROL Add Tool]** or open an existing Adobe Analytics Tool. While creating the tool, you can set **[!UICONTROL Configuration Method]** to **[!UICONTROL Automatic]**.

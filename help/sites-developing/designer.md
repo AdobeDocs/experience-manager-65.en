@@ -17,7 +17,7 @@ exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
 >
 >This article describes how to create a website based on the classic UI. Adobe recommends leveraging the latest AEM technologies for your websites as described in detail in the article [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
-You will need to create a design for your website and in AEM, you do so by using the Designer.
+The Designer is used to create a design for your website using the [Classic UI](/help/release-notes/touch-ui-features-status.md) in AEM.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Your design can be defined in the **designs** section of the **Tools** tab:
 
 Here you can create the structure required to store the design, then upload the cascaded style sheets and images required.
 
-Designs are stored under `/etc/designs`. The path to the design to be used for a website is specified using the `cq:designPath` property of the `jcr:content` node.
+Designs are stored under `/apps/<your-project>`. The path to the design to be used for a website is specified using the `cq:designPath` property of the `jcr:content` node.
 
 ![chlimage_1-74](assets/chlimage_1-74a.png)
 
@@ -48,7 +48,7 @@ To realize your design you will need:
 
 ### Considerations When Designing Your Website {#considerations-when-designing-your-website}
 
-When developing a website, it is highly recommended to store images and CSS files under `/etc/design/<project>` so you can reference your resources based on the current design like described by the following snippet.
+When developing a website, it is highly recommended to store images and CSS files under `/apps/<your-project>` so you can reference your resources based on the current design like described by the following snippet.
 
 ```xml
 <%= currentDesign.getPath() + "/static/img/icon.gif %>
