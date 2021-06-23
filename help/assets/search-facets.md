@@ -173,8 +173,6 @@ By default, a lock icon ![lock closed icon](assets/do-not-localize/lock_closed_i
 
 ![Lock icon](assets/locked_admin_rail.png)
 
-****
-
 To restore the default search facet, perform these steps:
 
 1. Select **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page.
