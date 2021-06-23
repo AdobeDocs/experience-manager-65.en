@@ -23,6 +23,23 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: June, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.06.18|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip)|
+|CIF Core Components |1.12.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0)|
+|CIF Venia Reference Site| 2021.06.12|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17)|
+
+### What's New {#what-is-new-june}
+
+* New CIF product and category reference data types for Content Fragments (Incl. product / category picker UI support)
+* New Commerce Content Fragment Core Component
+* Full-text commerce search supported in AEM backend
+* Commerce Core Components support Adobe Commerce Sensei Recs data collection
+* Improved SEO-friendly URLs for category pages
+* Support for custom HTTP headers per site/config
+
 ## Release Date: May, 2021
 
 |Component| Version| Details|
