@@ -3,13 +3,13 @@ title: Custom HTTP headers
 description: Configuring custom HTTP headers
 ---
 
-# Overwiew
+# Overview
 
 To gain more control over their backend, users can configure custom HTTP headers that would be sent to the commerce engine, along with the ones already sent by CIF. Common use-cases include multi-store setups in which you can use HTTP headers to control the response of the commerce back-end.
 
 # Configuration
 
-In order to configure the custom HTTP headers, one needs to first define them. The custom HTTP headers must first be defined by adding them to the `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` service configuration using an OSGi config.
+In order to configure the custom HTTP headers, one must first define them. The custom HTTP headers must first be defined by adding them to the `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` service configuration using an OSGi config.
 
 You can configure the values of the HTTP headers in the Cloud Service Configuration page for your project.
 
@@ -21,7 +21,7 @@ The components using the above cloud service configuration will send these HTTP 
 
 # Restrictions
 
-While the service allow for any header names to be defined, including the standard ones, they won't be available for configuring. In other words, you cannot override the standard HTTP headers using this feature. A list of restricted header names can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). In addition to those, there are two more headers that cannot be used:
+While the service allows for any header names to be defined, including the standard ones, they won't be available for configuring. In other words, you cannot override the standard HTTP headers using this feature. A list of restricted header names can be found [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). In addition to those, there are two more headers that cannot be used:
 
 -   "Store" - used by CIF to identify the Magento store
 -   "Preview-Version" - used by CIF to retrieve staged products
