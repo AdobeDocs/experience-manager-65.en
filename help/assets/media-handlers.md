@@ -1,6 +1,7 @@
 ---
 title: Process assets using media handlers and workflows
 description: Learn about the media handlers and how to use workflows to perform tasks on your digital assets.
+mini-toc-levels: 1
 contentOwner: AG
 role: Business Practitioner
 feature: Workflow,Renditions
