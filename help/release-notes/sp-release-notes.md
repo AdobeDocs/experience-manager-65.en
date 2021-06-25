@@ -24,7 +24,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * [!DNL Experience Manager Sites] Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
 
-* To improve performance, the hidden=false condition is moved from JCR query to QueryBuilder evaluator. To verify that a hidden predicate is working after the change, Experience Manager checks that any hidden folder is not displayed on the interface.
+* To improve performance, the `hidden=false` condition is moved from JCR query to [!UICONTROL QueryBuilder] evaluator. To verify that a hidden predicate is working after the change, [!DNL Experience Manager] checks that any hidden folder is not displayed.
 
 * Ability to restore deleted pages and tree on an [!DNL Experience Manager Sites] page.
 
@@ -34,33 +34,13 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Support for [!DNL MongoDB] versions 4.2 and 4.4.
 
-* Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per new naming conventions for Chinese locales and regions.
+* Occurrences of names related to Hong Kong, Macau, and Taiwan are updated as per the new naming conventions for Chinese locales and regions.
 
-* Accessibility enhancements in [!DNL Experience Manager] [Assets](#assets-accessibility-6590) and [Dynamic Media](#accessibility-dm-6590).
+* Accessibility enhancements in [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) and [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For details and timeline, see [smart imaging FAQs](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >The release timeline for the above Smart Imaging enhancements is:
-   >
-   >* North America May 24, 2021 in NA,
-   >
-   >* Europe, the Middle East and Africa June 25, 2021,
-   >
-   >* Asia-Pacific July 19, 2021.
-
-* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier). For more information, see [image serving and rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-  >[!NOTE]
-  >
-  >The release timeline for AVIF support is:
-  >
-  >* North America May 10, 2021,
-  >
-  >* Europe, the Middle East and Africa May 24, 2021,
-  >
-  >* Asia-Pacific June 24, 2021.
+* [!DNL Dynamic Media] delivery (`fmt` URL modifier) supports the next-generation image format AVIF (AV1 Image format). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 * Ability to send a notification email to a group using [!UICONTROL Assign Task] workflow step.
 
