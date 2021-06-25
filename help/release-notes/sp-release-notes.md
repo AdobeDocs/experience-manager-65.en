@@ -38,7 +38,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Accessibility enhancements in [!DNL Experience Manager] [[!DNL Assets]](#assets-accessibility-6590) and [[!DNL Dynamic Media]](#accessibility-dm-6590).
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For details and timeline, see [smart imaging FAQs](/help/assets/imaging-faq.md).
+* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization lets you deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For details and timeline, see [smart imaging FAQs](/help/assets/imaging-faq.md).
 
 * [!DNL Dynamic Media] delivery (`fmt` URL modifier) supports the next-generation image format AVIF (AV1 Image format). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
@@ -109,6 +109,29 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 ### [!DNL Assets] {#assets-6590}
 
+The following user experience enhancements are done in [!DNL Assets]:
+
+* To view assets not sorted based on any of the [!UICONTROL Create], [!UICONTROL Modify], or [!UICONTROL Name] parameters, [!DNL Adobe Experience Manager] offers a [!UICONTROL None] option within [!UICONTROL Sort by] options. The [!UICONTROL None] option ensures that the assets in the Assets user interface (in Card, Column, and Insights view) are in the same order as they exist in JCR node (NPR-36356).
+
+* To make the email ID lowercase in ACP API response from [!DNL Adobe Experience Manager] an optional setting is introduced; as the [!DNL Adobe Asset Link] users could not check-in assets if their ID was not having all characters in lowercase. Note that the [!DNL Adobe Asset Link] panel consumes the ACP API response from [!DNL Adobe Experience Manager] (CQ-4317704).
+
+[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements.
+
+Contrast (with background) of the following text and icons is improved, so that the users with limited vision and perception of color can comprehend:
+  
+* Asset title on [!UICONTROL Properties] page (NPR-35967).
+* Star rating icons in [!UICONTROL Rating] sections at various places (NPR-36009).
+* Text on the asset and folder Card view (NPR-35966).
+* Placeholder text on the [!UICONTROL Timeline] view (NPR-35965).
+* Asset names on the asset search results (NPR-35964).
+* Placeholder text on the [!UICONTROL Link Sharing] dialog (NPR-35963).
+* [!UICONTROL Metadata], [!UICONTROL Status], and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
+* [!UICONTROL Location] and [!UICONTROL Type to search] placeholder texts in global search (NPR-35909).
+* Expand and collapse icons under the [!UICONTROL Content Tree] (NPR-35908).
+* The [!UICONTROL Assets] text on the page where assets folders are displayed (NPR-35905).
+* Text in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] within [!UICONTROL Overview] option in asset details page (NPR-35904).
+* Text for shortcut keys for [!UICONTROL properties] and [!UICONTROL edit] options in asset details page (NPR-35904).
+
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] fixes the following issues.
 
 * The tags created from within a tag selection element in a [!UICONTROL Folder Metadata Schema] form are not saved (NPR-36119).
@@ -135,61 +158,14 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * DAM folders cannot be deleted or moved, and an exception is logged (NPR-35942).
 
-#### Enhancements in Assets {#assets-enhancements}
-
-* Introduced the [!UICONTROL None] option in card, column, and insights view to sort assets in the order they are stored in the JCR node (NPR-36356).
-
-* An option is added to add the email ID in lowercase in API response from Adobe Experience Manager (CQ-4317704).
-
-#### Accessibility enhancements in Assets {#assets-accessibility-6590}
-
-[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements.
-
-Contrast (with background) of the following text and icons is improved, so that the users with limited vision and perception of color can comprehend:
-  
-* asset title on [!UICONTROL Properties] page (NPR-35967).
-* star rating icons in [!UICONTROL Rating] sections at various places (NPR-36009).
-* text on the asset and folder card view (NPR-35966).
-* placeholder text on the [!UICONTROL Timeline] view (NPR-35965).
-* asset names on the asset search results (NPR-35964).
-* placeholder text on the [!UICONTROL Link Sharing] dialog (NPR-35963).
-* [!UICONTROL Metadata], [!UICONTROL Status], and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
-* [!UICONTROL Location] and [!UICONTROL Type to search] placeholder texts in global search (NPR-35909).
-* expand and collapse icons under the [!UICONTROL Content Tree] (NPR-35908).
-* the [!UICONTROL Assets] text on the page where assets folders are displayed (NPR-35905).
-* text in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] within [!UICONTROL Overview] option in asset details page (NPR-35904).
-* text for shortcut keys for [!UICONTROL properties] and [!UICONTROL edit] options in asset details page (NPR-35904).
-
 ### [!DNL Dynamic Media] {#dynamic-media-6590}
-
-Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
-
-* Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
-
-* When attempting to preview video renditions on asset details page, the videos are slow to load (CQ-4320122).
-
-* Browser page gets unresponsive and slows down when uploading more than 200 assets with Duplicate Asset Detector enabled (CQ-4319633).
-
-* When a panoramic image asset is added on the panoramic media component on a page, then an Uncaught Reference error is logged (CQ-4317666).
-
-* When interactive media viewer is implemented with Experience Fragment, the Experience Fragment is not opened from the publisher and an error is logged (CQ-4317655).
-
-* Publish to Dynamic Media option is not available in Quick Publish in metadataeditor view (CQ-4317199).
-
-* Site Authors with read-only permissions can use smart crop functionality on assets and edit the smart cropped renditions. However, users with read-only permissions must not be able to edit asset properties in Sites Dev instance (CQ-4316450).
-
-* Video annotations do not work for folder paths [!DNL where Dynamic] Media configuration is not enabled, even if the [!DNL Experience Manager] instance is set-up in [!DNL Dynamic Media] mode (CQ-4314950).
-
-* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
-
-#### Accessibility enhancements in Dynamic Media {#accessibility-dm-6590}
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
 
-* When you open the dialog to add assets using keyboard keys in Image Set editor:
-  * screen readers narrate that the dialog is opened.
-  * keyboard focus moves to the dialog when it opens.
-  * keyboard focus moves back to Add Asset option when the dialog is closed (CQ-4312134).
+* When you open the dialog to add assets using keyboard keys in [!UICONTROL Image Set] editor:
+  * Screen readers narrate that the dialog is opened.
+  * Keyboard focus moves to the dialog when it opens.
+  * Keyboard focus moves back to Add Asset option when the dialog is closed (CQ-4312134).
 
 * You can now add and edit Hotspots on assets using keyboard keys in Hotspot editor (CQ-4305965).
 
@@ -212,6 +188,26 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 * Visual asterisk to signify mandatory field is now provided in Title field of asset in Image Set Editor, and screen readers announce the required information for the field (CQ-4290712).
 
 * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
+
+Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
+
+* Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
+
+* When attempting to preview video renditions on asset details page, the videos are slow to load (CQ-4320122).
+
+* Browser page gets unresponsive and slows down when uploading more than 200 assets with Duplicate Asset Detector enabled (CQ-4319633).
+
+* When a panoramic image asset is added on the panoramic media component on a page, then an Uncaught Reference error is logged (CQ-4317666).
+
+* When interactive media viewer is implemented with Experience Fragment, the Experience Fragment is not opened from the publisher and an error is logged (CQ-4317655).
+
+* [!UICONTROL Publish to Dynamic Media] option is not available within [!UICONTROL Quick Publish] options in [!UICONTROL Properties] page (CQ-4317199).
+
+* Site Authors with read-only permissions can use smart crop functionality on assets and edit the smart cropped renditions (CQ-4316450).
+
+* Video annotations do not work for folder paths where [!DNL Dynamic Media] configuration is not enabled, even if the [!DNL Experience Manager] instance is set-up in [!DNL Dynamic Media] mode (CQ-4314950).
+
+* When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
 
 ### Platform {#platform-6590}
 
