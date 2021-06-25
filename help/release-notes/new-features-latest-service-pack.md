@@ -44,9 +44,9 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
   * Contrast (with background) of text, placeholder text, and controls in various editors.
   * Accessibility and narration by screen readers.
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For details and timeline, see [smart imaging FAQs](/help/assets/imaging-faq.md).
+* Deliver best quality images efficiently on devices with high resolution displays and constrained network bandwidth, with Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization. See [Smart imaging FAQs](/help/assets/imaging-faq.md).
 
-* [!DNL Dynamic Media] delivery (`fmt` URL modifier) now supports the next-generation image format AVIF (AV1 Image format). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
+* [!DNL Dynamic Media] delivery (`fmt` URL modifier) now supports next-generation image format AVIF (AV1 Image format). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
