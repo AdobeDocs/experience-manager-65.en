@@ -6,8 +6,8 @@ feature: Commerce Integration Framework
 doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
+exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 ---
-
 # Developing AEM Commerce {#develop}
 
 Developing AEM Commerce projects based on Commerce Integration Framework (CIF) for AEM follows the same rules and best practices like other AEM projects. Please review these first:
@@ -41,7 +41,7 @@ The following should be installed locally:
 
 ### Accessing the CIF Add-On
 
-The CIF add-on can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), search for ´AEM Commerce add-on`.
+The CIF add-on can be downloaded from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html), search for 'AEM Commerce add-on'.
 
 >[!TIP]
 >

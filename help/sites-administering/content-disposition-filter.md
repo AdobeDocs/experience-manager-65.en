@@ -23,7 +23,7 @@ You can view the [Apache Sling Content Disposition Filter in GitHub](https://git
 
 The Content Disposition Filter options provide the following functionality:
 
-* **Content Disposition Paths:** a list of paths where the filter will be applied followed by a list of mime-types to exclude on that path.This path must be an absolute path and may contain a wildcard (`*`) at the end, to match every resource path with the given path prefix. For example: `/content/*:image/jpeg,image/svg+xml` will apply the filter to every node in `/content? except jpg and svg images
+* **Content Disposition Paths:** a list of paths where the filter will be applied followed by a list of mime-types to exclude on that path.This path must be an absolute path and may contain a wildcard (`*`) at the end, to match every resource path with the given path prefix. For example: `/content/*:image/jpeg,image/svg+xml` will apply the filter to every node in `/content?` except jpg and svg images
 
 * **Excluded Resource Paths:** a list of excluded resources, each resource path must be given as absolute and fully qualified path. Prefix matching/wildcards are not supported.
 

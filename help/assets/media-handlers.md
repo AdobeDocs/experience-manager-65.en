@@ -363,7 +363,7 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/samplesite/icons/certificate.png");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);
