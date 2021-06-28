@@ -2,6 +2,7 @@
 title: Metadata schemas define layout of metadata properties page 
 description: Metadata schema defines the layout of the properties page and the metadata properties displayed for assets. Learn how to create custom metadata schema, edit metadata schema, and how to apply metadata schema to assets.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner,Administrator
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c

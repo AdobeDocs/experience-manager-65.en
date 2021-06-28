@@ -22,7 +22,7 @@ The above are the basic metadata properties that [!DNL Experience Manager] can m
 
 You can add more high-level data to digital assets, for example:
 
-* Type of asset (is it an image, a video, an audio clip, or a document?).
+* Type of asset (an image, a video, an audio clip, or a document).
 * Owner of the asset.
 * Title of the asset.
 * Description of the asset.

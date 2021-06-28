@@ -1,6 +1,7 @@
 ---
 title: Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch
 description: The Dynamic Media Viewers extension for Experience Platform Launch, along with Dynamic Media Viewers 5.13, lets customers of Adobe Analytics, and Platform Launch to use events and data specific for the Dynamic Media Viewers in their Platform Launch configuration.
+mini-toc-levels: 3
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
