@@ -3,8 +3,7 @@ title: Getting started with AEM Content and Commerce
 description: Learn how to deploy an AEM Content and Commerce project.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
-exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
+exl-id: 1053D9B6-DAD5-4DF1-AF74-2347C82219E2
 ---
 # Getting started with AEM Content and Commerce {#start}
 
