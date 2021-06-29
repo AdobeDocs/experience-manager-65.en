@@ -17,6 +17,12 @@ exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 
 This section describes working with video in Dynamic Media.
 
+Currently known video playback issues in Dynamic Media:
+
+* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+
+* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
+
 ## Quick Start: Videos {#quick-start-videos}
 
 The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step, there are cross-references to topic headings where you can find more information.
