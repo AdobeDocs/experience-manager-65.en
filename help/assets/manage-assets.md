@@ -755,7 +755,17 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 ### View saved annotations {#viewing-saved-annotations}
 
-1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
+Only one annotation can be viewed at a time. 
+
+>[!NOTE]
+>
+>If you are selecting multiple annotations, the latest annotation will be visible on the user interface. 
+>
+>Multi-select is supported only for printing the annotated asset as PDF.
+
+**To view saved annotations for an asset:**
+
+1. Navigate to the location of the asset and open the asset page.
 
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
@@ -771,6 +781,10 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
 You can also choose to print only the annotations or review status.
+
+>[!NOTE]
+>
+>You can select multiple annotations while printing the annotated asset as PDF.
 
 To print the annotations and review status, click **[!UICONTROL Print]** and follow the instructions in the wizard. The **[!UICONTROL Print]** option appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
