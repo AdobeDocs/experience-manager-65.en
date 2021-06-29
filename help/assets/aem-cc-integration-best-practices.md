@@ -2,6 +2,7 @@
 title: Integration with Adobe Creative Cloud best practices
 description: Best practices to integrate [!DNL Adobe Experience Manager] with [!DNL Adobe Creative Cloud] to streamline asset transfer workflows and achieve high content velocity.
 contentOwner: AG
+mini-toc-levels: 1
 role: Business Practitioner, Administrator
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc

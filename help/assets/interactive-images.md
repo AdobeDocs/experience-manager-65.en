@@ -40,23 +40,23 @@ The tutorial helps to illustrate the steps of integrating interactive images on 
 
 Interactive Images steps:
 
-1. **(Optional) Identifying hotspot variables** &ndash; If you use Experience Manager Assets and Dynamic Media standalone, start by identifying dynamic variables used in your existing Quickview implementation. Then, you can enter hotspot data when creating the interactive image. See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
+1. **(Optional) Identify hotspot variables** &ndash; If you use Experience Manager Assets and Dynamic Media standalone, start by identifying dynamic variables used in your existing Quickview implementation. Then, you can enter hotspot data when creating the interactive image. See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
    However, if you use Adobe Experience Manager Sites, or Adobe Experience Manager eCommerce, or both, then this step is not necessary.
    See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Optional) Creating an Interactive Image viewer preset** &ndash; Customize the graphic image that is used to represent hotspots. Creating your own Interactive Image viewer preset is not required if you intend to use the out-of-the-box Interactive Image viewer preset named `Shoppable_Banner` instead.
+1. **(Optional) Create an Interactive Image viewer preset** &ndash; Customize the graphic image that is used to represent hotspots. Creating your own Interactive Image viewer preset is not required if you intend to use the out-of-the-box Interactive Image viewer preset named `Shoppable_Banner` instead.
 See [(Optional) Creating an Interactive Image viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Uploading an image banner** &ndash; Upload image banners that you want to make interactive.
+1. **Upload an image banner** &ndash; Upload image banners that you want to make interactive.
    See [Uploading an image banner](#uploading-an-image-banner).
 
-1. **Adding hotspots to an image banner** &ndash; Add one or more hotspots to an image banner and associate each one with an action such as a hyperlink, a Quickview, or an Experience Fragment. After you add hotspots, you will finish this task by publishing the interactive image.
+1. **Add hotspots to an image banner** &ndash; Add one or more hotspots to an image banner and associate each one with an action such as a hyperlink, a Quickview, or an Experience Fragment. After you add hotspots, you will finish this task by publishing the interactive image.
 
    * See [Adding hotspots to an image banner](#adding-hotspots-to-an-image-banner).
    * See [Previewing interactive images](#optional-previewing-interactive-images) - Optional. If desired, you can view a representation of your shoppable banner and test its interactivity.
    * See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
 
-1. **Adding an interactive image to your website or to your website in Experience Manager** &ndash; If you use Experience Manager Sites or eCommerce, or both, you can add the interactive image to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Add an interactive image to your website** &ndash; If you use Experience Manager Sites or eCommerce, or both, you can add the interactive image to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
     If you use Experience Manager Assets and Dynamic Media standalone, you must copy the embed code on your website and then integrate it with your existing Quickview. See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
 
@@ -158,14 +158,14 @@ You can apply the same approach used in the three examples above to the demo web
 
 The demo web page has several product thumbnails, each having a Quickview button labeled “See More”. With your web browser's debugging tool still activated, click each button and note the recorded Quickview URLs. After you activate all four product Quickviews available on the page, you have the following list of Quickview requests made to the backend:
 
-* `/datafeed/Men-Windbreaker.json`
-* `/datafeed/Men-SimpleHenley.json`
-* `/datafeed/Men-CamoPullover.json`
-* `/datafeed/Women-QuiltedDownJacket.json`
+* `/datafeed/Male-Windbreaker.json`
+* `/datafeed/Male-SimpleHenley.json`
+* `/datafeed/Male-CamoPullover.json`
+* `/datafeed/Female-QuiltedDownJacket.json`
 
 Looking at the server calls, you see that product-specific information is only present in the request path. You also notice that the query string is not used at all and there are two distinct types of data pieces involved:
 
-* The first type is Men or Women. You can call this "product category".
+* The first type is Male or Female. You can call this "product category".
 * The second type is product name, such as CamoPullover. You can assume that this information is the product SKU.
 
 Given this information, the entire Quickview URL has the following pattern:
@@ -279,7 +279,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 
             * See [Identifying hotspot variables](#optional-identifying-hotspot-variables); you must define these variables.
             * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quickview template so that the system knows to associate the tapped hotspot with a particular SKU's Quickview.
-            * (Optional) If there are other variables within the Quickview that you must use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, `category=Mens` is an added variable.
+            * (Optional) If there are other variables within the Quickview that you must use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, `category=Males` is an added variable.
 
     * Tap **[!UICONTROL Hyperlink]**.
 
@@ -354,7 +354,7 @@ Using the demo website as an example:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-Notice that the picture of the three men is a static `IMG` tag:
+Notice that the picture of the three males is a static `IMG` tag:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
