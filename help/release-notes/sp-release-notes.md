@@ -22,7 +22,7 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.9.0 are:
 
-* [!DNL Experience Manager Sites] Dynamic Media Foundation component now allows to turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
+* [!DNL Experience Manager Sites] Dynamic Media Foundation component now lets you turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
 
 * To improve performance, the `hidden=false` condition is moved from JCR query to [!UICONTROL QueryBuilder] evaluator. To verify that a hidden predicate is working after the change, [!DNL Experience Manager] checks that any hidden folder is not displayed.
 
@@ -60,10 +60,10 @@ For a complete list of features and enhancements introduced in [!DNL Experience 
 
 >[!NOTE]
 >
->Starting with Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
+>Starting with Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java™ SE.
 >Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
 >You can download the relevant versions of the [!DNL Azul Zulu] JDKs from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
+>The usage rights for the Oracle Java™ technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java™] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0 release.
 
@@ -77,7 +77,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * Nested layout container inside another resized layout container shows an incorrect number of columns for its child components, resulting in these components not being aligned to the grid (NPR-36359).
 
-* External Link Checker displays valid external links as invalid links (NPR-36289).
+* External Linkchecker displays valid external links as invalid links (NPR-36289).
 
 * After displaying references for some time, the references panel starts showing an error message (NPR-36167).
 
@@ -85,7 +85,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When trying to sync a livecopy (while using roll-out configs [!UICONTROL Activate on Blueprint activation] and [!UICONTROL De-activate on Blueprint activation]) if a component is deleted in the livecopy master, the sync fails and a `NullPointerException` is logged (NPR-36127).
 
-* When a user types in ad hoc text for tag (tag that does not exist on the system) and hit enter, the tag appears under the field but when the Content Fragment is saved and reopened, the ad hoc tag disappears (NPR-36132).
+* When a user types in improvised text for tag (tag that does not exist on the system) and presses Enter, the tag appears under the field but when the Content Fragment is saved and reopened, the improvised tag disappears (NPR-36132).
 
 * Inbox does not have option display the status of Asynchronous Operations (NPR-36104).
 
@@ -113,7 +113,7 @@ The following user experience enhancements are done in [!DNL Assets]:
 
 * To view assets not sorted based on any of the [!UICONTROL Create], [!UICONTROL Modify], or [!UICONTROL Name] parameters, [!DNL Adobe Experience Manager] offers a [!UICONTROL None] option within [!UICONTROL Sort by] options. The [!UICONTROL None] option ensures that the assets in the Assets user interface (in Card, Column, and Insights view) are in the same order as they exist in JCR node (NPR-36356).
 
-* To make the email ID lowercase in ACP API response from [!DNL Adobe Experience Manager] an optional setting is introduced; as the [!DNL Adobe Asset Link] users could not check-in assets if their ID was not having all characters in lowercase. Note that the [!DNL Adobe Asset Link] panel consumes the ACP API response from [!DNL Adobe Experience Manager] (CQ-4317704).
+* To make the email ID lowercase in ACP API response from [!DNL Adobe Experience Manager] an optional setting is introduced; as the [!DNL Adobe Asset Link] users could not check-in assets if their ID was not having all characters in lowercase. The [!DNL Adobe Asset Link] panel consumes the ACP API response from [!DNL Adobe Experience Manager] (CQ-4317704).
 
 [!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements.
 
@@ -138,7 +138,7 @@ Contrast (with background) of the following text and icons is improved, so that 
 
 * When a small ellipse is used to annotate assets, the ellipse overlaps with the number of the annotation in the print version (NPR-36114).
 
-* In Column view, in some cases, [!DNL Experience Manager] does not prompt for duplicate asset conflict when a duplicate asset is uploaded (NPR-36048).
+* Sometime, in Column view, [!DNL Experience Manager] does not prompt for duplicate asset conflict when a duplicate asset is uploaded (NPR-36048).
 
 * Share Link dialog does not close by clicking close button if it is opened and no changes are made (NPR-36030).
 
@@ -188,6 +188,12 @@ Contrast (with background) of the following text and icons is improved, so that 
 * Visual asterisk to signify mandatory field is now provided in Title field of asset in Image Set Editor, and screen readers announce the required information for the field (CQ-4290712).
 
 * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
+
+Known video playback issues in [!DNL Dynamic Media]:
+
+* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+
+* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
 
@@ -269,7 +275,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 ### [!DNL Communities] {#communities-6590}
 
-* In spam filtering, the system consumes 100% of the Java heap space making the Experience Manager server unresponsive (NPR-36316, NPR-36493). 
+* In spam filtering, the system consumes 100% of the Java™ heap space making the Experience Manager server unresponsive (NPR-36316, NPR-36493). 
 * In forums, the JCR sessions data originating from `SearchCommentSocialComponentListProvider` is leaked (NPR-36235).
 * Opening a specific inbox message reflects all the messages with improper pagination and other issues (NPR-35917).
 
@@ -303,7 +309,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 **Workflow**
 
-* When you call the REST endpoint of an [!DNL Experience Manager Forms] service on JBoss, [!DNL Experience Manager] displays the following error message (NPR-36305):
+* When you call the REST endpoint of an [!DNL Experience Manager Forms] service on JBoss®, [!DNL Experience Manager] displays the following error message (NPR-36305):
 
    ```TXT
    Invalid input. The maximum length of 2000 characters was exceeded.
@@ -393,7 +399,7 @@ To know the platforms certified to work with this release, see the [technical re
 
 >[!NOTE]
 >
->AEM 6.5.9.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to AEM 6.5.9.0, install the latest version of the package post installation of Forms Add-On Package.
+>Experience Manager 6.5.9.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.9.0, install the latest version of the package post installation of Forms Add-On Package.
 
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
@@ -428,14 +434,14 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 
 ## Deprecated features {#removed-deprecated-features}
 
-Below is a list of features and capabilities that are marked as deprecated with [!DNL Experience Manager] 6.5.7.0. Features are marked deprecated initially and later removed in a future release. An alternate option is usually provided.
+Below is a list of features and capabilities that are marked as deprecated with [!DNL Experience Manager] 6.5.7.0. Features are marked deprecated initially and later removed in a future release. An alternate option is provided.
 
 Review if you use a feature or a capability in a deployment. Also, plan to change the implementation to use an alternate option.
 
 | Area | Feature | Replacement |
 |---|---|---|
 | Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated. With the Experience Manager and Adobe Target integration updated in Experience Manager 6.5 to support the Adobe Target Standard API, which uses authentication via Adobe IMS and [!DNL Adobe I/O], and the growing role of Adobe Launch for instrumenting Experience Manager pages for analytics and personalization, the opt-in wizard has become functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
-| Connectors | The Adobe JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
+| Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues}
 
@@ -445,7 +451,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`.
 
-* If a folder in the hierarchy is renamed in [!DNL Assets] and a nested folder containing an asset is published to [!DNL Brand Portal], the title of the folder is not updated in [!DNL Brand Portal] until the root folder is re-published.
+* If a folder in the hierarchy is renamed in [!DNL Assets] and a nested folder containing an asset is published to [!DNL Brand Portal], the title of the folder is not updated in [!DNL Brand Portal] until the root folder is republished.
 
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue.
 
