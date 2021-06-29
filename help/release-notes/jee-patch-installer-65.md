@@ -52,8 +52,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
    * `serializer-2.7.1.jar` to `serializer-2.7.2.jar`
    * `xalan-2.7.1.jar` to `xalan-2.7.2.jar`
    * `xercesImpl-2.9.1.jar` to `xercesImpl-2.12.0.jar`
-
-   In addition, add `xml-apis-2.7.2.jar` to `ConfigurationManager.lax` and `ConfigurationManager_IPv6.lax` files available in the `<AEMForms_Install_Dir>\configurationManager\bin` directory.
+   * `xml-apis-2.7.1.jar` to `xml-apis-2.7.2.jar`
 
 1. The Start Configuration Manager check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager.
 
