@@ -755,7 +755,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 ### View saved annotations {#viewing-saved-annotations}
 
-Only one annotation can be viewed at a time. 
+You can view only one annotation at a time. 
 
 >[!NOTE]
 >
@@ -765,7 +765,7 @@ Only one annotation can be viewed at a time.
 
 **To view saved annotations for an asset:**
 
-1. Navigate to the location of the asset and open the asset page.
+1. Go to the location of the asset and open the asset page.
 
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
