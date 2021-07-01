@@ -40,35 +40,35 @@ The tutorial helps to illustrate the steps of integrating interactive images on 
 
 Interactive Images steps:
 
-1. **(Optional) Identify hotspot variables** &ndash; If you use Experience Manager Assets and Dynamic Media standalone, start by identifying dynamic variables used in your existing Quickview implementation. Then, you can enter hotspot data when creating the interactive image. See [(Optional) Identifying hotspot variables](#optional-identifying-hotspot-variables).
+1. **(Optional) Identify hotspot variables** &ndash; If you use Experience Manager Assets and Dynamic Media standalone, start by identifying dynamic variables used in your existing Quickview implementation. Then, you can enter hotspot data when creating the interactive image. See [(Optional) Identify hotspot variables](#optional-identifying-hotspot-variables).
    However, if you use Adobe Experience Manager Sites, or Adobe Experience Manager eCommerce, or both, then this step is not necessary.
    See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Optional) Create an Interactive Image viewer preset** &ndash; Customize the graphic image that is used to represent hotspots. Creating your own Interactive Image viewer preset is not required if you intend to use the out-of-the-box Interactive Image viewer preset named `Shoppable_Banner` instead.
-See [(Optional) Creating an Interactive Image viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
+See [(Optional) Create an Interactive Image viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset).
 
 1. **Upload an image banner** &ndash; Upload image banners that you want to make interactive.
-   See [Uploading an image banner](#uploading-an-image-banner).
+   See [Upload an image banner](#uploading-an-image-banner).
 
 1. **Add hotspots to an image banner** &ndash; Add one or more hotspots to an image banner and associate each one with an action such as a hyperlink, a Quickview, or an Experience Fragment. After you add hotspots, you will finish this task by publishing the interactive image.
 
-   * See [Adding hotspots to an image banner](#adding-hotspots-to-an-image-banner).
-   * See [Previewing interactive images](#optional-previewing-interactive-images) - Optional. If desired, you can view a representation of your shoppable banner and test its interactivity.
-   * See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
+   * See [Add hotspots to an image banner](#adding-hotspots-to-an-image-banner).
+   * See [Preview interactive images](#optional-previewing-interactive-images) - Optional. If desired, you can view a representation of your shoppable banner and test its interactivity.
+   * See [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
 
-1. **Add an interactive image to your website** &ndash; If you use Experience Manager Sites or eCommerce, or both, you can add the interactive image to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+1. **Add an interactive image to your website** &ndash; If you use Experience Manager Sites or eCommerce, or both, you can add the interactive image to a web page in Experience Manager. Drag the Interactive Media component onto the page. See [Add Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-    If you use Experience Manager Assets and Dynamic Media standalone, you must copy the embed code on your website and then integrate it with your existing Quickview. See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
+    If you use Experience Manager Assets and Dynamic Media standalone, you must copy the embed code on your website and then integrate it with your existing Quickview. See [Integrate an interactive image with your website](#integrating-an-interactive-image-with-your-website).
 
-    If you are using a third-party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrating an interactive image with an existing Quickview](#integrating-an-interactive-image-with-an-existing-quickview).
+    If you are using a third-party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrate an interactive image with an existing Quickview](#integrating-an-interactive-image-with-an-existing-quickview).
 
-## (Optional) Identifying hotspot variables {#optional-identifying-hotspot-variables}
+## (Optional) Identify hotspot variables {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
 >This task is only required if the following are true:
 >
->* You want to add interactivity to your image by triggering to Quickviews.
+>* You want to add interactivity to your image by triggering to Quickview.
 >* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
@@ -156,7 +156,7 @@ You can apply the same approach used in the three examples above to the demo web
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-The demo web page has several product thumbnails, each having a Quickview button labeled “See More”. With your web browser's debugging tool still activated, click each button and note the recorded Quickview URLs. After you activate all four product Quickviews available on the page, you have the following list of Quickview requests made to the backend:
+The demo web page has several product thumbnails, each having a Quickview button labeled “See More”. With your web browser's debugging tool still activated, click each button and note the recorded Quickview URLs. After you activate all four product Quickview's that are available on the page, you have the following list of Quickview requests made to the backend:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -176,7 +176,7 @@ Based on such analysis, you would use `categoryId` and `SKU` for hotspots.
 
 You are now ready to upload an image banner and add hotspots to it using the shoppable interactive image feature in Experience Manager Assets.
 
-## (Optional) Creating an Interactive Image viewer preset {#optional-creating-an-interactive-image-viewer-preset}
+## (Optional) Create an Interactive Image viewer preset {#optional-creating-an-interactive-image-viewer-preset}
 
 You can choose to use the default, out-of-the-box Interactive Image viewer preset called `Shoppable_Banner` that comes with Experience Manager Assets. Or you can create your own custom viewer preset for use with interactive images.
 
@@ -208,7 +208,7 @@ After you save the viewer preset, it is automatically activated (turned on) on t
 
    You are now ready to upload an image banner.
 
-## Uploading an image banner {#uploading-an-image-banner}
+## Upload an image banner {#uploading-an-image-banner}
 
 If you have already uploaded the images that you want to use, advance to the next step, [Adding hotspots to an image banner](#adding-hotspots-to-an-image-banner).
 
@@ -220,7 +220,7 @@ If you have already uploaded the images that you want to use, advance to the nex
 
    You are now ready to add hotspots to the image banner; see the next task below.
 
-## Adding hotspots to an image banner {#adding-hotspots-to-an-image-banner}
+## Add hotspots to an image banner {#adding-hotspots-to-an-image-banner}
 
 You can add hotspots to an image banner using the editor on the Hotspot Management page.
 
@@ -236,7 +236,7 @@ Undo and Redo options, near the upper-right corner of the page, are supported du
 
 When you finish creating your interactive image, you can use Preview to see a representation of how your interactive image appears to customers.
 
-See [(Optional) Previewing interactive images](#optional-previewing-interactive-images).
+See [(Optional) Preview interactive images](#optional-previewing-interactive-images).
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
         * If you are an Experience Manager Sites or eCommerce customer, tap or click the Product Picker icon (magnifying glass) to open the Select Product page. Tap or click the product you want to use, then tap **[!UICONTROL Select]** in the upper-right corner of the page so you can return to the Hotspot management page.
         * If you are *not* an Experience Manager Sites or eCommerce customer
 
-            * See [Identifying hotspot variables](#optional-identifying-hotspot-variables); you must define these variables.
+            * See [Identify hotspot variables](#optional-identifying-hotspot-variables); you must define these variables.
             * Then, manually enter the SKU value. In the SKU Value text field, type the product's SKU (Stock Keeping Unit), which is a unique identifier for each distinct product or service that you offer. The entered SKU value automatically populates the variable portion of the Quickview template so that the system knows to associate the tapped hotspot with a particular SKU's Quickview.
             * (Optional) If there are other variables within the Quickview that you must use to further identify a product, tap **[!UICONTROL Add Generic Variable]**. In the text field, specify an extra variable. For example, `category=Males` is an added variable.
 
@@ -288,7 +288,7 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 
    Be sure you specify whether to open the link in a new browser tab (recommended default) or the same tab.
 
-   See [Working with Selectors](/help/assets/working-with-selectors.md) for more information.
+   See [Work with Selectors](/help/assets/working-with-selectors.md) for more information.
 
     * Tap **[!UICONTROL Experience Fragment]**.
 
@@ -304,24 +304,24 @@ See [(Optional) Previewing interactive images](#optional-previewing-interactive-
 1. Tap **[!UICONTROL Save]** to save your work and return to the Browse page.
 1. Publish the interactive image. Publishing allows for the banner to be delivered through the cloud and also generates embed code if you require to integrate with a third-party website.
 
-   See [Publishing assets](/help/assets/manage-assets.md#publishing-assets).
+   See [Publish assets](/help/assets/manage-assets.md#publishing-assets).
 
    After you have added hotspots and published the interactive image, you are now ready to add it to your existing website.
 
-   See [Integrating an interactive image with your website](#integrating-an-interactive-image-with-your-website).
+   See [Integrate an interactive image with your website](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
    >
    >If you are editing interactive images with hotspots and crop the image, your hotspots are deleted.
 
-### (Optional) Previewing interactive images {#optional-previewing-interactive-images}
+### (Optional) Preview interactive images {#optional-previewing-interactive-images}
 
 You can use Preview to see a representation of how your interactive image appears to customers and to test the image's hotspots to ensure they are behaving as expected.
 
 When you are satisfied with the interactive image, you can publish it.
-See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
-See [Linking URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
-See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+See [Embed the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
+See [Link URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md). The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
+See [Add Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 **To preview interactive images:**
 
@@ -330,20 +330,20 @@ See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-ass
 1. In the Viewers list, tap **[!UICONTROL Shoppable_Banner]** or the name of the interactive image viewer preset you have created.
 1. Tap hotspots on the image if you want to test their associated actions.
 
-## Publishing interactive image assets {#publishing-interactive-image-assets}
+## Publish interactive image assets {#publishing-interactive-image-assets}
 
-See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
+See [Publish assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive image assets.
 
-## Integrating an interactive image with your website {#integrating-an-interactive-image-with-your-website}
+## Integrate an interactive image with your website {#integrating-an-interactive-image-with-your-website}
 
 After you have uploaded a banner image, added hotspots to the image, and published the interactive image, you are now ready to add it to your website page.
 
-If you are an Experience Manager Sites customer, you can add the interactive image by dragging the Interactive Media component onto your page. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+If you are an Experience Manager Sites customer, you can add the interactive image by dragging the Interactive Media component onto your page. See [Add Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 If you are a standalone Experience Manager Assets customer, you can manually add the interactive image to your website as described in this section.
 
 1. Copy the published interactive image's embed code.
-   See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
+   See [Embed the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
 
 1. Add the copied embed code on the desired location within the webpage.
    The copied embed code is set for a responsive environment so it automatically fits the assigned area.
@@ -366,7 +366,7 @@ Integration is as simple as removing the `IMG` tag and replacing it with the cop
 
 >[!NOTE]
 >
->As this point, the hotspots on the shoppable interactive image of the demo website are for display purposes only; they are not yet integrated with the existing Quickviews.
+>As this point, the hotspots on the shoppable interactive image of the demo website are for display purposes only; they are not yet integrated with the existing Quickview.
 
 To apply a "crop" to a shoppable interactive image for a responsive environment, you can include the Interactive Image configuration attribute `ZoomView.iscommand` to the path. The component `ZoomView` is called and `iscommand` is the "crop" image serving command that you apply.
 
@@ -376,7 +376,7 @@ See [crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resou
 
 You are now ready to integrate the interactive image with an existing Quickview on your website.
 
-## Integrating an interactive image with an existing Quickview {#integrating-an-interactive-image-with-an-existing-quickview}
+## Integrate an interactive image with an existing Quickview {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
@@ -432,7 +432,7 @@ So, it is only necessary to uncomment the code and replace the dummy handler bod
 
 The process of constructing the Quickview URL is opposite of the process used for identifying hotspot variables covered earlier.
 
-See [Identifying hotspot variables](#optional-identifying-hotspot-variables).
+See [Identify hotspot variables](#optional-identifying-hotspot-variables).
 
 Using the previous Quickview URL examples, you can see in the following examples, how the Quickview URL is constructed in each case:
 
@@ -513,6 +513,6 @@ The final demo website with the fully integrated interactive image looks like th
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
-## Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
+## Use Quickview to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
 
-See [Creating custom pop-ups using Quickviews](/help/assets/custom-pop-ups.md).
+See [Create custom pop-ups using Quickview](/help/assets/custom-pop-ups.md).
