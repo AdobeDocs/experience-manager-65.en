@@ -63,7 +63,7 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
 
    b. Add a proxy resolver to your UPWARD configuration. A sample UPWARD configuration could look like this:
 
- ```json
+```json
    response:
      resolver: conditional
      when:
