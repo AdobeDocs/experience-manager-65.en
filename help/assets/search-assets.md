@@ -22,7 +22,7 @@ exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 | [Search rank and boosting](#searchrank) | [Text extraction](#extracttextupload) | [Smart collections](#collections) |
 | [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand and troubleshoot unexpected results](#unexpected-results) |
 | [Search from other solutions and apps](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager desktop app](#desktop-app)</li><li>[Adobe Stock images](#adobe-stock)</li><li>[Dynamic Media assets](#dynamic-media)</li></ul> | | |
-| [Asset selector](#assetpicker) | | |
+| [Asset selector](#asset-picker) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
