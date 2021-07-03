@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
-role: Business Practitioner
+role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 ---
 # Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}

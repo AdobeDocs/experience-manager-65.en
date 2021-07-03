@@ -10,7 +10,7 @@ discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
 
 feature: Image Sets,Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 ---
 # Image Sets {#image-sets}
