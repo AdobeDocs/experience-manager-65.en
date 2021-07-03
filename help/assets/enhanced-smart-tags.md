@@ -3,7 +3,7 @@ title: Enhanced Smart Tags
 description: Enhanced Smart Tags
 contentOwner: AG
 feature: Smart Tags, Search
-role: Business Practitioner
+role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 ---
 # Understand, apply, and curate Smart Tags {#enhanced-smart-tags}

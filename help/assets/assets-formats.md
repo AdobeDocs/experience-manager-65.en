@@ -3,7 +3,7 @@ title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Assets] and [!DNL Dynamic Media] and the features supported for each format.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 ---

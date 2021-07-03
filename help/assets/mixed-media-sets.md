@@ -10,7 +10,7 @@ discoiquuid: ed84157a-e6b4-4dde-af2e-a1e0b6259628
 docset: aem65
 
 feature: Mix Media Sets,Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 ---
 # Mixed Media Sets{#mixed-media-sets}

@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 ---
 # 360/VR Video {#vr-video}
