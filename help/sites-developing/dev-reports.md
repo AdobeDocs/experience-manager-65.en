@@ -44,23 +44,12 @@ For the standard reports delivered with AEM:
 >In the examples and definitions below the following notation is used :
 >
 >* Each line defines a node or a property where:
->
->  * `N:<name> [<nodeType>]`
->
->     Describes a node with the name of `<*name*>` and node type of `<*nodeType*>`*.*
->
->  * `P:<name> [<propertyType]`
->
->     Describes a property with the name of `<*name*>` and a property type of `<*propertyType*>`.
->
->  * `P:<name> = <value>`
->
->     Describes a property `<name>` that must be set to the value of `<value>`.
+>  `N:<name> [<nodeType>]` : Describes a node with the name of `<*name*>` and node type of `<*nodeType*>`*.*
+>  `P:<name> [<propertyType]` : Describes a property with the name of `<*name*>` and a property type of `<*propertyType*>`.
+>  `P:<name> = <value>` : Describes a property `<name>` that must be set to the value of `<value>`.
 >
 >* Indentation shows the hierarchical dependencies between the nodes.
->* Items separated by | denotes a list of possible items; for example, types or names:
->
->  e.g. `String|String[]` means that the property can be either String or String[].
+>* Items separated by | denotes a list of possible items; for example, types or names; e.g. `String|String[]` means that the property can be either String or String[].
 >
 >* `[]` depicts an array; such as String[] or an array of nodes as in the [Query Definition](#query-definition).
 >
