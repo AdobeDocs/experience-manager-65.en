@@ -3,8 +3,8 @@ title: Getting started with AEM Content and Commerce
 description: Learn how to deploy an AEM Content and Commerce project.
 topics: Commerce
 feature: Commerce Integration Framework
-exl-id: 1053D9B6-DAD5-4DF1-AF74-2347C82219E2
 ---
+
 # Getting started with AEM Content and Commerce {#start}
 
 To get started with AEM Content and Commerce, you need to install the AEM Content and Commerce Add-On for AEM 6.5.
