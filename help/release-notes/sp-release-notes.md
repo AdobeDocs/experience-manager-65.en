@@ -189,12 +189,6 @@ Contrast (with background) of the following text and icons is improved, so that 
 
 * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
 
-Known video playback issues in [!DNL Dynamic Media]:
-
-* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
-
-* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
-
 Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
 
 * Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
@@ -214,6 +208,11 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 * Video annotations do not work for folder paths where [!DNL Dynamic Media] configuration is not enabled, even if the [!DNL Experience Manager] instance is set-up in [!DNL Dynamic Media] mode (CQ-4314950).
 
 * When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
+
+>Known video playback issues in Dynamic Media *on Experience Manager 6.5.9.0 only*:
+>
+>* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 ### Platform {#platform-6590}
 

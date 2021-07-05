@@ -10,7 +10,7 @@ discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 
 feature: Interactive Videos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 ---
 # Interactive videos{#interactive-videos}

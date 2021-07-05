@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 feature: 3D Assets,Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 ---
 # Working with 3D assets in Dynamic Media {#working-with-three-d-assets-dm}
