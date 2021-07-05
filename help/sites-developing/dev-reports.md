@@ -11,7 +11,8 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 ---
-# Developing Reports{#developing-reports}
+
+# Developing Reports {#developing-reports}
 
 AEM provides a selection of [standard reports](/help/sites-administering/reporting.md) most of which are based on a reporting framework.
 
@@ -21,16 +22,16 @@ For the standard reports delivered with AEM:
 
 * These reports are built on the reporting framework:
 
-    * [Component Report](/help/sites-administering/reporting.md#component-report)
-    * [Page Activity Report](/help/sites-administering/reporting.md#page-activity-report)
-    * [User Report](/help/sites-administering/reporting.md#user-report)
-    * [Workflow Instance Report](/help/sites-administering/reporting.md#workflow-instance-report)
+  * [Component Report](/help/sites-administering/reporting.md#component-report)
+  * [Page Activity Report](/help/sites-administering/reporting.md#page-activity-report)
+  * [User Report](/help/sites-administering/reporting.md#user-report)
+  * [Workflow Instance Report](/help/sites-administering/reporting.md#workflow-instance-report)
 
 * The following reports are based on individual principles and therefore cannot be extended:
 
-    * [Disk Usage](/help/sites-administering/reporting.md#disk-usage)
-    * [Health Check](/help/sites-administering/reporting.md#health-check)
-    * [Workflow Report](/help/sites-administering/reporting.md#workflow-report)
+  * [Disk Usage](/help/sites-administering/reporting.md#disk-usage)
+  * [Health Check](/help/sites-administering/reporting.md#health-check)
+  * [Workflow Report](/help/sites-administering/reporting.md#workflow-report)
 
 >[!NOTE]
 >
