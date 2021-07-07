@@ -4,6 +4,7 @@ description: Learn to configure the Adobe Experience Manager Rich Text Editor pl
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 ---
+
 # Configure the Rich Text Editor plug-ins {#configure-the-rich-text-editor-plug-ins}
 
 RTE functionalities are made available via a series of plug-ins, each with features property. You can configure the features property to enable or disable, one or more RTE features. This article describes how to specifically configure the RTE plug-ins.
@@ -149,53 +150,18 @@ To configure which formats are allowed when pasting text into AEM from another p
    >
    >If not explicitly defined the default value of true is used and the format accepted.
 
-1. Other formats can also be defined using a range of other properties or nodes, also applied to the `htmlPasteRules` node:
+1. Other formats can also be defined using a range of other properties or nodes, also applied to the `htmlPasteRules` node. Save all changes.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property</strong></td>
-   <td><strong>Type</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>allowBlockTags</td>
-   <td>String[]</td>
-   <td><p>Defines the list of block tags allowed.</p> <p>A few possible block tags include:</p>
-    <ul>
-     <li>headlines (h1, h2, h3)</li>
-     <li>paragraphs (p)</li>
-     <li>lists (ol, ul)</li>
-     <li>tables (table)</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>fallbackBlockTag</td>
-   <td>String</td>
-   <td><p>Defines the block tag used for any blocks having a block tag not included in allowBlockTags.</p> <p> p suffices in most cases.</p> </td>
-  </tr>
-  <tr>
-   <td>table</td>
-   <td>nt:unstructured</td>
-   <td><p>Defines the behavior when pasting tables.<br /> </p> <p>This node must have the property <code>allow</code> (type <code>Boolean</code>) to define whether pasting tables is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type<code> String</code>) to define how pasted table content is handled. Valid values for <code>ignoreMode</code> are:</p>
-    <ul>
-     <li><code>remove</code>: Removes table content.</li>
-     <li><code>paragraph</code>: Turns table cells into paragraphs.</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>list</td>
-   <td>nt:unstructured</td>
-   <td><p>Defines the behavior when pasting lists.<br /> </p> <p>Must have the property <code>allow</code> (type <code>Boolean</code>) to define whether the pasting of lists is allowed.</p> <p>If <code>allow</code> is set to <code>false</code>, you must specify the property <code>ignoreMode</code> (type <code>String</code>) to define how to handle any list content pasted. Valid values for <code>ignoreMode</code> are:</p>
-    <ul>
-     <li><code>remove</code>: Removes list content.</li>
-     <li><code>paragraph</code>: Turns list items into paragraphs.</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+You can use the following properties for `htmlPasteRules`.
 
-   Example of a valid `htmlPasteRules` structure:
+| Property | Type | Description |
+|---|---|---|
+| `allowBlockTags` | String | Defines the list of block tags allowed. A few possible block tags include: <ul> <li>headlines (h1, h2, h3)</li> <li>paragraphs (p)</li> <li>lists (ol, ul)</li> <li>tables (table)</li> </ul> |
+| `fallbackBlockTag` | String| Defines the block tag used for any blocks having a block tag not included in `allowBlockTags`. `p` suffices in most cases. |
+| table | nt:unstructured | Defines the behavior when pasting tables. This node must have the property `allow` (type Boolean) to define whether pasting tables is allowed. If allow is set to `false`, you must specify the property `ignoreMode` (type String) to define how pasted table content is handled. Valid values for `ignoreMode` are: <ul> <li>`remove`: Removes table content.</li> <li>`paragraph`: Turns table cells into paragraphs.</li> </ul> |
+| list | nt:unstructured | Defines the behavior when pasting lists. Must have the property `allow` (type Boolean) to define whether the pasting of lists is allowed. If `allow` is set to `false`, you must specify the property `ignoreMode` (type String) to define how to handle any list content pasted. Valid values for `ignoreMode` are: <ul><li> `remove`: Removes list content.</li> <li>`paragraph`: Turns list items into paragraphs.</li> </ul> |
+
+An example of a valid `htmlPasteRules` structure is below.
 
    ```xml
    "htmlPasteRules": {
@@ -217,13 +183,9 @@ To configure which formats are allowed when pasting text into AEM from another p
    }
    ```
 
-1. Save all changes.
-
 ## Configure text styles {#textstyles}
 
-Authors can apply Styles to change the appearance of a portion of text. The styles are based on CSS classes that you pre-define in your CSS style sheet. Stylized content is enclosed in `span` tags using the `class` attribute to refer to the CSS class. For example:
-
-`<span class=monospaced>Monospaced Text Here</span>`
+Authors can apply Styles to change the appearance of a portion of text. The styles are based on CSS classes that you pre-define in your CSS style sheet. Stylized content is enclosed in `span` tags using the `class` attribute to refer to the CSS class. For example, `<span class=monospaced>Monospaced Text Here</span>`.
 
 When the Styles plug-in is enabled for the first time, no default Styles are available. The pop-up list is empty. To provide the authors with Styles, do the following:
 
@@ -231,11 +193,11 @@ When the Styles plug-in is enabled for the first time, no default Styles are ava
 * Specify the location(s) of the style sheet(s).
 * Specify the individual styles that can be selected from the Style drop down list.
 
-For later (re-)configurations, say to add more styles, follow only the instructions to reference a new style sheet and to specify the additional styles.
+For later configurations, say to add more styles, follow only the instructions to reference a new style sheet and to specify the additional styles.
 
 >[!NOTE]
 >
->Styles can also be defined for [tables or table cells](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). These configurations require separate procedures.
+>You can define Styles for [tables or table cells](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). These configurations require separate procedures.
 
 ### Enable the Style drop-down selector list {#styleselectorlist}
 
@@ -713,9 +675,7 @@ To configure how links are added in AEM from another program, define the HTML ru
    >* **Type** `String`
    >* **Value** `richtext`
    >
-   >The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples include:
-   >* `/apps/myProject>/components/text/dialog/items/text`
-   >* `/apps/<myProject>/components/text/dialog/items/panel/items/text`
+   >The location of the `../items/text` node can vary, depending on the structure of your dialog; two examples are `/apps/myProject>/components/text/dialog/items/text` and `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Under `htmlRules`, create a new node.
 
