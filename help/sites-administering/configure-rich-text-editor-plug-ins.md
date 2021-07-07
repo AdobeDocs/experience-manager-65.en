@@ -239,17 +239,11 @@ Then, specify the location(s) of the style sheet(s) you want to reference:
 >
 >The Rich Text Editor uses a container DOM element with an ID of `CQrte` which may be used to provide different styles for viewing and editing:
 >
->```
->#CQ td {
-> // defines the style for viewing
-> }
->```
+>`#CQ td {`
+>` // defines the style for viewing }`
 >
->```
->#CQrte td {
-> // defines the style for editing
-> }
->```
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### Specify the available Styles in the pop-up list {#stylesindropdown}
 
@@ -491,7 +485,7 @@ Styles are typically applied on text, but a separate set of Styles can also be a
 
     * **Name** `features`
     * **Type** `String`
-    * **Value** `*`
+    * **Value** `*` (asterisk)
 
    >[!NOTE]
    >
@@ -613,7 +607,7 @@ To define the tab size:
 
     * **Name** `tabSize`
     * **Type** `String`
-    * **Value** the number of space characters to be used for the tabulator.
+    * **Value** the number of space characters to be used for the tabulator
 
 1. Save the changes.
 
