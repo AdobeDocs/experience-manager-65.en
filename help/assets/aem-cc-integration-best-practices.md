@@ -83,7 +83,7 @@ To support asset distribution use cases, other solutions should be considered:
 
 ### Considerations when using [!DNL Experience Manager] and [!DNL Creative Cloud] integration {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* See [desktop app best practices](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
+* See [desktop app best practices](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * See [Adobe Stock integration](aem-assets-adobe-stock.md)
 * See [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -203,7 +203,7 @@ The description refers to uploading files operationally (for example, every week
 
 You can leverage the following upload capabilities:
 
-* To upload large/hierarchical folders in bulk, use [!DNL Experience Manager] desktop app that provides [folder upload](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#upload-and-add-new-assets-to-aem) functionality. You can also upload hierarchical folder structures. [!DNL Assets] are uploaded in background and, therefore, it is not tied to a web browser session
+* To upload large/hierarchical folders in bulk, use [!DNL Experience Manager] desktop app that provides [folder upload](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem) functionality. You can also upload hierarchical folder structures. [!DNL Assets] are uploaded in background and, therefore, it is not tied to a web browser session
 * To upload a few files from a single folder, drag the files directly to the web interface or use the Create option in the [!DNL Assets] web interface.
 * Depending upon your business requirements, you can also use custom uploader.
 

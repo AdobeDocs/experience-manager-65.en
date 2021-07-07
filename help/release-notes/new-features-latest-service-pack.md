@@ -18,7 +18,7 @@ This article highlights the features included in the latest Service Pack, [key f
 >Starting with [!DNL Experience Manager] Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
 >Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
 >You can download the relevant versions of the [!DNL Azul Zulu] JDKs from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
+>The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf).
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -422,11 +422,11 @@ You can use the Batch API to produce multiple interactive communications from a 
 
 Between February 25, 2021 and May 27, 2021, Adobe released the following, in addition to the Service Packs:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html), [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html), and [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html), [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html), and [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html#release-date).
 
 * [[!DNL Experience Manager] desktop app 2.1 (2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: Feature Pack 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html?lang=en)
+* [Experience Manager Screens: Feature Pack 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html)
 
 >[!MORELIKETHIS]
 >
