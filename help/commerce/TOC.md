@@ -20,6 +20,7 @@ user-guide-description: Understand how to use and administer AEM Content and Com
     + [Multi-Template Usage](cif/configuring/multi-template-usage.md)
     + [Configuring URLs for SEO](cif/configuring/advanced-url-configuration.md)
     + [Caching Options](cif/configuring/caching.md)
+    + [Custom HTTP Headers](/help/commerce/cif/configuring/custom-http-headers.md)
   + Developing {#developing}
     + [Developing with AEM](cif/develop.md)
     + [Styling CIF Components](cif/customizing/style-cif-component.md)
