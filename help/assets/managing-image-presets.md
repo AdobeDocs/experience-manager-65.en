@@ -2,6 +2,7 @@
 title: Managing Dynamic Media image presets
 description: Understand Dynamic Media image presets and learn how to create, modify, and manage image presets
 uuid: 3e9a7af6-bf49-4cff-b516-0a3ee9765391
+mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -11,7 +12,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 
 feature: Image Presets
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 ---
 # Managing Dynamic Media image presets{#managing-image-presets}
@@ -175,7 +176,7 @@ The following scripts, are used by Dynamic Media integration:
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Yes</td>
-   <td>Generates a 300-ppi JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the <code>DAM Update Asset</code> workflow.<br /> </td>
+   <td>Generates a 300 ppi JPEG subasset for each page. The JPEG subasset is a real asset stored under the InDesign asset. It is also optimized and turned into a PTIFF by the <code>DAM Update Asset</code> workflow.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -219,7 +220,7 @@ Thumbnail sizing is defined in the following format: **[!UICONTROL width:height:
 
 Image presets you create are available as dynamic renditions when you preview assets. Experience Manager shows various dynamic renditions when viewing an asset from **[!UICONTROL Detail View > Renditions]**. You can increase or decrease the limit of renditions that are displayed.
 
-**To increase or decrease the number of Dynamic Media image presets displayed:**
+**Increase or decrease the number of Dynamic Media image presets displayed:**
 
 1. Navigate to CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Navigate to the image preset listing node at `/libs/dam/gui/coral/content/commons/sidepanels/imagepresetsdetail/imgagepresetslist`
@@ -399,7 +400,7 @@ When you create or edit image presets, you have the options described in this se
     </ul>
     <div>
       Sharpening is described in
-     <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/sharpening_images.pdf">Sharpening Images</a>.
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">Sharpening Images</a>.
     </div> </td>
   </tr>
   <tr>

@@ -2,7 +2,7 @@
 title: Create translation projects
 description: Learn how to create translation projects in [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Architect, Administrator
+role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 ---
@@ -62,15 +62,9 @@ If you use this option, assets to be translated are copied to the language root 
 
 1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
 
-   ![chlimage_1-65](assets/chlimage_1-65.png)
-
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Create a new translation project]**.
 
-   ![chlimage_1-66](assets/chlimage_1-66.png)
-
 1. In the **[!UICONTROL Project Title]** field, enter a title for the project.
-
-   ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Click **[!UICONTROL Create]**. [!DNL Assets] from the source folder are copied to the target folders for the locales you selected in step 4.
 
@@ -226,8 +220,6 @@ If you use this option, the set of assets are added to an existing translation p
 1. Click **[!UICONTROL Update language copies]** at the bottom.
 
 1. From the **[!UICONTROL Project]** list, choose **[!UICONTROL Add to existing translation project]**.
-
-   ![chlimage_1-97](assets/chlimage_1-97.png)
 
 1. From the **[!UICONTROL Existing translation project]** list, select a project to add the asset for translation.
 

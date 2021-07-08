@@ -2,7 +2,7 @@
 title: Manage compound assets with references and multiple pages
 description: Learn how to create references to digital assets from within [!DNL Adobe InDesign], [!DNL Adobe Illustrator], and [!DNL Adobe Photoshop]. Use the Page Viewer feature to view individual subasset pages of multi-page files such as PDF, INDD, PPT, PPTX, and AI files.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 ---
@@ -66,8 +66,6 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 ## [!DNL Adobe Photoshop]: Add digital assets as references {#refps}
 
 1. Use [!DNL Experience Manager] desktop app to access [!DNL Experience Manager Assets]. Download and reveal the assets on local file system. Use the the [!UICONTROL Place Linked] functionality in [!DNL Adobe Photoshop]. See [place assets in desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
-
-   ![chlimage_1-87](assets/chlimage_1-261.png)
 
 1. Save in [!DNL Photoshop] file to the mounted drive or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
 1. After the workflow completes, the references to existing [!DNL Experience Manager] assets are listed in the asset details page.

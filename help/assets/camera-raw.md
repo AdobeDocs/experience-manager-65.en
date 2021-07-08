@@ -2,7 +2,7 @@
 title: [!DNL Adobe Camera Raw] support.
 description: Learn how to enable [!DNL Adobe Camera Raw] support in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 ---

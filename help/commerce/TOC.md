@@ -26,6 +26,7 @@ user-guide-description: Understand how to use and administer AEM Content and Com
     + [Styling CIF Components](cif/customizing/style-cif-component.md)
     + [Customizing CIF Components](cif/customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](cif/customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migration](cif/migration.md)
 + Release Notes {#release-notes}
   + [2021](cif/release-notes/release-notes-2021.md)

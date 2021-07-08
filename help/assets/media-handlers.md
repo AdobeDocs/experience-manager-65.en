@@ -1,8 +1,9 @@
 ---
 title: Process assets using media handlers and workflows
 description: Learn about the media handlers and how to use workflows to perform tasks on your digital assets.
+mini-toc-levels: 1
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 ---
@@ -362,7 +363,7 @@ After you perform the following procedure, when you upload a TXT file into [!DNL
      Layer watermarkLayer;
      try {
       final Session session = node.getSession();
-      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/geometrixx/icons/certificate.png");
+      watermarkLayer = ImageHelper.createLayer(session, "/content/dam/we-retail/en/products/apparel/gloves/Gloves.jpg");
       watermarkLayer.setX(MARGIN);
       watermarkLayer.setY(MARGIN);
       layer.merge(watermarkLayer);

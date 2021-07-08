@@ -2,7 +2,7 @@
 title: Understand metadata concepts
 description: Learn about the need of and types of metadata that allows for easier categorization and organization of assets.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
 ---
@@ -22,7 +22,7 @@ The above are the basic metadata properties that [!DNL Experience Manager] can m
 
 You can add more high-level data to digital assets, for example:
 
-* Type of asset (is it an image, a video, an audio clip, or a document?).
+* Type of asset (an image, a video, an audio clip, or a document).
 * Owner of the asset.
 * Title of the asset.
 * Description of the asset.

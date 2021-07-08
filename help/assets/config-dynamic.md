@@ -1,6 +1,7 @@
 ---
 title: Configuring Dynamic Media - Hybrid mode
 description: Learn how to configure Dynamic Media - Hybrid mode.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,7 +11,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 ---
@@ -184,22 +185,22 @@ To enable Dynamic Media, you must enable the Dynamic Media run mode either from 
 
 ### If you installed Experience Manager to a different port or context path ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-If you are deploying [Experience Manager to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you must configure the **self** domain in the externalizer. Otherwise, thumbnail generation for assets does not work properly for Dynamic Media assets.
+If you are deploying [Experience Manager to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you must configure the **self-domain** in the externalizer. Otherwise, thumbnail generation for assets does not work properly for Dynamic Media assets.
 
-In addition, if you run quickstart on a different port or context path, you also have to change the **self** domain.
+In addition, if you run quickstart on a different port or context path, you also have to change the **self-domain**.
 
 When Dynamic Media is enabled, the static thumbnail renditions for image assets are generated using Dynamic Media. For thumbnail generation to work properly for Dynamic Media, Experience Manager must perform a URL request to itself and must know both the port number and the context path.
 
 In Experience Manager:
 
-* The **self** domain in the [externalizer](/help/sites-developing/externalizer.md) is used to retrieve both the port number and context path.
-* If no **self** domain is configured, the port number and context path are retrieved from the Jetty HTTP service.
+* The **self-domain** in the [externalizer](/help/sites-developing/externalizer.md) is used to retrieve both the port number and context path.
+* If no **self-domain** is configured, the port number and context path are retrieved from the Jetty HTTP service.
 
-In an Experience Manager QuickStart WAR deployment, the port number and context path cannot be derived, therefore you must configure a **self** domain. See [externalizer documentation](/help/sites-developing/externalizer.md) on how to configure the **self** domain.
+In an Experience Manager QuickStart WAR deployment, the port number and context path cannot be derived, therefore you must configure a **self-domain**. See [externalizer documentation](/help/sites-developing/externalizer.md) on how to configure the **self-domain**.
 
 >[!NOTE]
 >
->In an [Experience Manager Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self** domain generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you must configure the **self** domain.
+>In an [Experience Manager Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self-domain** generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you must configure the **self-domain**.
 
 ## Disabling Dynamic Media  {#disabling-dynamic-media}
 
@@ -673,7 +674,7 @@ The filters provide a way for you to *exclude* assets from being replicated to t
 
 ### Using Default Asset Filters for Replication {#using-default-asset-filters-for-replication}
 
-If you are using Dynamic Media for (1) imaging in production **or** (2) imaging and video, then you can use the default filters that Adobe provides as-is. The following filters are active by default:
+If you use Dynamic Media for (1) imaging in production *or* (2) imaging and video, then you can use the default filters that Adobe provides as-is. The following filters are active by default:
 
 <table>
  <tbody>
@@ -1111,11 +1112,11 @@ After you install the feature pack, configure the appropriate default color prof
  <tbody>
   <tr>
    <th><p>Name</p> </th>
-   <th><p>Colorspace</p> </th>
+   <th><p>Colors pace</p> </th>
    <th><p>Description</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1157,12 +1158,12 @@ After you install the feature pack, configure the appropriate default color prof
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMYK</td>
-   <td>Euroscale Coated v2</td>
+   <td>Euro scale Coated v2</td>
   </tr>
   <tr>
    <td>EuroscaleUncoated</td>
    <td>CMYK</td>
-   <td>Euroscale Uncoated v2</td>
+   <td>Euro scale Uncoated v2</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>

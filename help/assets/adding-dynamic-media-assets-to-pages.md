@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
 
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
 ---
@@ -171,7 +171,7 @@ Edit the following Dynamic Media Settings by tapping the **[!UICONTROL Edit]** i
 
   ![device pixel ratio setting for image preset](/help/assets/assets-dm/dpr-ress-ip.png)
 
-<!--   See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+    See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
 
 * **[!UICONTROL Title]** - Change the title of the image.
 
@@ -247,7 +247,7 @@ Edit the following Dynamic Media Setting by clicking **[!UICONTROL Edit]** in th
 
   ![device pixel ratio setting for smart crop](/help/assets/assets-dm/dpr-smartcrop.png)
 
-<!-- CQDOC-17915 HIDDEN FOR NOW AS OF MAY 28 2021 See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored. -->
+    See also [About device pixel ratio optimization](/help/assets/imaging-faq.md#dpr). Note that any Adobe Experience Manager Dynamic Media Smart Imaging DPR values are ignored.
 
 * **[!UICONTROL Title]** - Change the title of the Smart Crop image.
 

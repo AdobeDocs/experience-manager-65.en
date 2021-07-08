@@ -1,5 +1,5 @@
 ---
-title: Extend search functionality.
+title: Extend search functionality
 description: Extend the search capabilities of [!DNL Adobe Experience Manager Assets] beyond the defaults.
 contentOwner: AG
 role: Developer
@@ -53,7 +53,7 @@ The best practice is to copy an existing predicate and adjust it. Sample predica
 
 To build a property predicate:
 
-1. Create a component folder in your projects directory, for example **/apps/geometrixx/components/titlepredicate**.
+1. Create a component folder in your projects directory, for example **/apps/weretail/components/titlepredicate**.
 1. Add **content.xml**:
 
    ```xml
@@ -146,7 +146,7 @@ To build a property predicate:
 
 To build a group predicate:
 
-1. Create a component folder in your projects directory, for example **/apps/geometrixx/components/picspredicate.**
+1. Create a component folder in your projects directory, for example **/apps/weretail/components/picspredicate**.
 1. Add **content.xml**:
 
    ```xml

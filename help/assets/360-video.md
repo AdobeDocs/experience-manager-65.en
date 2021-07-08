@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: aac3c850-ae84-4bff-80de-d370e150f675
 docset: aem65
 feature: 360 VR Video
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 ---
 # 360/VR Video {#vr-video}
@@ -44,7 +44,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *An uploaded 360 video asset seen in the Card view. The asset is labeled as Multimedia.*
 
-**To upload assets for use with the 360 Video viewer:**
+**Upload assets for use with the 360 Video viewer:**
 
 1. Created a folder that is dedicated to your 360 video asset.
 1. [Apply an adaptive video profile to the folder](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
@@ -56,7 +56,7 @@ See [Edit 360/VR video](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-
     * Ideally, your original 360 video content is best to have either one of the following resolutions:
 
         * 1080p - 1920 x 1080, known as Full HD or FHD resolution or,
-        * 2160p - 3840 x 2160, known as 4K, UHD, or Ultra HD resolution. This large display resolution is most often found on premium television sets and computer monitors. The 2160p resolution is often called "4K" because the width is close to 4000 pixels. In other words, it offers four times the pixels of 1080p.
+        * 2160p - 3840 x 2160, known as 4k, UHD, or Ultra HD resolution. This large display resolution is most often found on premium television sets and computer monitors. The 2160p resolution is often called "4k" because the width is close to 4000 pixels. In other words, it offers four times the pixels of 1080p.
 
     * [Create a custom Adaptive Video Profile](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) with higher-quality renditions. For example, create an Adaptive Video Profile that contains the following three settings:
 
