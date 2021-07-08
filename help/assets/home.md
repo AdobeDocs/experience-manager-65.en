@@ -39,7 +39,7 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 
 ## Key [!DNL Experience Manager] resources
 
-* [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html?lang=en)
+* [Experience Manager Video Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/overview.html)
 * [GDPR Readiness](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?mv=other#recommended/solutions/experience-manager)
 * [Experience Manager Assets Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager-assets/ct-p/experience-manager-assets-community)
