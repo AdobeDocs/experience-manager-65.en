@@ -11,7 +11,7 @@ topic-tags: Configuration
 discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 ---
 # AEM Forms on OSGi Groups and Privileges{#aem-forms-on-osgi-groups-and-privileges}

@@ -12,7 +12,7 @@ discoiquuid: d381ea40-fe49-4d32-bfad-1379c7a02aba
 docset: aem65
 pagetitle: Community Groups Console
 
-role: Administrator
+role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 ---
 # Community Groups Console {#community-groups-console}

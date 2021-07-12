@@ -6,7 +6,7 @@ user-guide-title: Adobe Experience Manager 6.5 Release Notes
 breadcrumb-title: Release Notes
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 feature: Release Information
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 ---
 
 # Adobe Experience Manager 6.5 Release Notes {#release-notes}
