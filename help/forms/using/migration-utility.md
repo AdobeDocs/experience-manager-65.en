@@ -12,7 +12,7 @@ content-strategy: max-2018
 discoiquuid: 39dfef85-d047-4b6d-a0f5-92bd77df103b
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 ---
 # Migrate AEM Forms assets and documents{#migrate-aem-forms-assets-and-documents}

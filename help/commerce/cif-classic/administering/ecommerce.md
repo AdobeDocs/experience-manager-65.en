@@ -4,6 +4,7 @@ description: AEM eCommerce helps marketers deliver branded, personalized shoppin
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
+exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
 ---
 # eCommerce{#ecommerce}
 

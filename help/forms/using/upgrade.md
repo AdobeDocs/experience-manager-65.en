@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 ---
 # Upgrade to AEM 6.5 Forms{#upgrade-to-aem-forms}

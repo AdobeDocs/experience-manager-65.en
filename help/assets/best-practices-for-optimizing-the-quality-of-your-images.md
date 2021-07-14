@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 ---
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}
@@ -74,10 +74,10 @@ There are two image sharpening methods that you can use:
 
 As a best practice, start with the unsharp mask radius parameter. Radius settings that you can start with are the following:
 
-* **[!UICONTROL Website]**: 0.2-0.3 pixels
-* **[!UICONTROL Photographic printing (250-300 ppi)]**: 0.3-0.5 pixels
-* **[!UICONTROL Offset printing (266-300 ppi)]**: 0.7-1.0 pixels
-* **[!UICONTROL Canvas printing (150 ppi)]**: 1.5-2.0 pixels
+* **[!UICONTROL Website]** - 0.2-0.3 pixels
+* **[!UICONTROL Photographic printing (250-300 ppi)]** - 0.3-0.5 pixels
+* **[!UICONTROL Offset printing (266-300 ppi)]** - 0.7-1.0 pixels
+* **[!UICONTROL Canvas printing (150 ppi)]** - 1.5-2.0 pixels
 
 Gradually increase the amount from 1.75 to 4. If sharpening is still not the way you want, increase the radius by a decimal point and run the amount again from 1.75 to 4. Repeat as necessary.
 

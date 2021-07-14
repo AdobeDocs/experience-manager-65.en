@@ -12,7 +12,7 @@ discoiquuid: 90e3fd0e-9bc3-4aff-8c7b-7408f5b940e8
 docset: aem65
 
 feature: Brand Portal
-role: Business Practitioner
+role: User
 exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
 ---
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}

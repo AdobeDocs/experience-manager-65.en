@@ -10,7 +10,7 @@ discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 
 feature: Carousel Banners
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 ---
 # Carousel Banners{#carousel-banners}
@@ -19,7 +19,7 @@ Carousel banners enable marketers to drive conversion by easily creating interac
 
 Creating and modifying content featured in promotional banners can be time-consuming, limiting your ability to quickly publish new content or make it more targeted. Carousel Banners let you quickly create or modify rotating banners. You can add interactivity such as hotspots linking to product detail or related resources, and deliver them to any screen &ndash; letting you bring new promotional content to market faster.
 
-Carousel Banners are designated by a banner with the word **[!UICONTROL CAROUSELSET]**:
+Carousel Banners are designated by a banner with the word **[!UICONTROL CAROUSELSET]**
 
 ![chlimage_1-438](assets/chlimage_1-438.png)
 
@@ -43,7 +43,7 @@ Play a walkthrough on [how carousel banners are created](https://s7d5.scene7.com
 
 ## Quick Start: Carousel Banners {#quick-start-carousel-banners}
 
-To get you up and running quickly:
+To get you up and running quickly with Carousel Banners:
 
 1. [Identify hotspot and image map variables](#identifying-hotspot-and-image-map-variables) (only for customers using Experience Manager Assets + Dynamic Media)
 
@@ -51,7 +51,7 @@ To get you up and running quickly:
 
    >[!NOTE]
    >
-   >If you are an Experience Manager Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing SKUs in the product catalog. You do not need to manually enter hotspot or image map variables. See information on [setting up eCommerce](/help/commerce/cif-classic/administering/generic.md).
+   >If you are an Experience Manager Sites or Ecommerce customer, you can use the built-in feature to navigate to product pages and lookup the existing SKUs (Stock Keeping Unit) in the product catalog. You do not need to manually enter hotspot or image map variables. See information on [setting up eCommerce](/help/commerce/cif-classic/administering/generic.md).
    >
    >
    >If you are an Experience Manager Assets and Dynamic Media customer, you manually enter data for hotspots and image maps, and then integrate the published URL or Embed code with your third-party content management system.

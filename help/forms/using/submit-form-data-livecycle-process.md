@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: ff97424d-b384-4149-9a3c-b4f00aaa1def
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 025a3314-8b9d-48e1-a74f-ea0c933e21e3
 ---
 # Configuring AEM Forms to submit form data to an AEM Forms on JEE process{#configuring-aem-forms-to-submit-form-data-to-an-aem-forms-on-jee-process}

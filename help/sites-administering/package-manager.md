@@ -227,6 +227,12 @@ To grant users the right to create, modify, upload, and install packages, you mu
 * **/etc/packages** (full rights excluding delete)
 * the node that contains the package contents
 
+>[!CAUTION]
+>
+>Granting permissions on packages may lead to sensitive information disclosure and data loss.
+>
+>To limit these risks, it is highly recommended to grant specific group permissions over dedicated subtrees only, for example `/etc/packages/site-content`.
+
 See [Setting permissions](/help/sites-administering/security.md#setting-page-permissions) for instructions on changing permissions.
 
 ### Creating a New Package {#creating-a-new-package}

@@ -12,7 +12,7 @@ discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
 docset: aem65
 
 feature: Content Fragments
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
 ---
 # Markdown{#markdown}
@@ -169,7 +169,7 @@ You can bold text as follows:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
+To indicate a span of code, wrap it with backtick quotes (&grave;). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph.
 
 For example:
 

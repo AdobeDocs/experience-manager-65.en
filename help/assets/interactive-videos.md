@@ -10,10 +10,10 @@ discoiquuid: 04be55f2-c7d8-45ef-89e5-58856b971de5
 docset: aem65
 
 feature: Interactive Videos
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 ---
-# Interactive Videos{#interactive-videos}
+# Interactive videos{#interactive-videos}
 
 You can easily create interactive videos &ndash; also know as shoppable videos &ndash; that drive conversion directly from the video. Customer engagement with the video takes place in a panel alongside the video player where related service, information, or product thumbnails are scrolled into view based on what is featured in the video. Customers can tap the thumbnail and be linked directly to the service, or add the item to a shopping cart for immediate purchase, or be linked to a web page for more information.
 
@@ -66,36 +66,36 @@ When you finish the tutorial in the last Example section, the final demo web pag
 
 Interactive video steps:
 
-1. **(Optional) Identifying Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identifying Quickview variables](#optional-identifying-quickview-variables).
+1. **(Optional) Identify Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identify Quickview variables](#optional-identifying-quickview-variables).
    *This step is only required if all the following are true*:
-   • You want to add interactivity to your video by triggering to Quickviews.
-   • Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+   • You want to add interactivity to your video by triggering to Quickview.
+   • Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, Hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
-1. **(Optional) Creating an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.
+1. **(Optional) Create an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.
    Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead.
-   See [Creating a New Viewer Preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (optional) and [Special considerations for creating an Interactive Viewer preset](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
+   See [Create a Viewer Preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) (optional) and [Special considerations for creating an Interactive Viewer preset](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset).
 
-1. **Uploading a video and its associated image assets** - Upload a video and associated images that you want to make interactive.
-   See [Uploading a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).
+1. **Upload a video and its associated image assets** - Upload a video and associated images that you want to make interactive.
+   See [Upload a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).
 
-1. **Adding interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quickview, or an Experience Fragment.
+1. **Add interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quickview, or an Experience Fragment.
    (The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.)
-   Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you eventually copy and apply to your website landing page. See [Adding interactivity to your video](#adding-interactivity-to-your-video).
-   See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).
+   Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you eventually copy and apply to your website landing page. See [Add interactivity to your video](#adding-interactivity-to-your-video).
+   See [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md).
 
-1. **Adding an interactive video to your website or to your website in Experience Manager** - If you use Experience Manager Sites or eCommerce, or both, you can add the interactive video to a web page. Drag the Interactive Media component onto the page in Experience Manager. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
-   Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
-   If you are using a third-party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrating an interactive video with an existing Quickview](#integrating-an-interactive-video-with-an-existing-quickview).
-   [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
+1. **Add an interactive video to your website or to your website in Experience Manager** - If you use Experience Manager Sites or eCommerce, or both, you can add the interactive video to a web page. Drag the Interactive Media component onto the page in Experience Manager. See [Add Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+   Use the embed code or URL to integrate your interactive video with your website experiences. See [Integrate an interactive video with your website](#integrating-an-interactive-video-with-your-website).
+   If you are using a third-party WCM (Web Content Manager), you must integrate the new interactive video with the existing Quickview implementation that is used on your website. See [Integrate an interactive video with an existing Quickview](#integrating-an-interactive-video-with-an-existing-quickview).
+   [Add Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
 
-## (Optional) Identifying Quickview variables {#optional-identifying-quickview-variables}
+## (Optional) Identify Quickview variables {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 >
 >This task is only required if the following are true:
 >
->* You want to add interactivity to your video by triggering to Quickviews.
->* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+>* You want to add interactivity to your video by triggering to Quickview.
+>* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, Hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -180,7 +180,7 @@ When the above approach is applied to the Example website, you have a web page w
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
-After you activate all product Quickviews available on the page, you get the following list of Quickview requests made to the backend:
+After you activate all product Quickview's that are available on the page, you get the following list of Quickview requests made to the backend:
 
 * datafeed/candles-233396346.json
 * datafeed/candles-233978050.json
@@ -216,7 +216,7 @@ Based on such analysis, you conclude that you can use the following two variable
 
 You are now ready to upload a video and its associated thumbnail assets.
 
-## (Optional) Creating an Interactive Video viewer preset {#optional-creating-an-interactive-video-viewer-preset}
+## (Optional) Create an Interactive Video viewer preset {#optional-creating-an-interactive-video-viewer-preset}
 
 You can skip this task and continue to the next if you intend to use either of the default, out-of-the-box, Interactive Video viewer preset types `Shoppable_Video_dark` or `Shoppable_Video_light`.
 
@@ -228,15 +228,15 @@ You can optionally create your own custom Interactive Video viewer preset. You c
 
 An Interactive Video viewer preset properly renders the video and all timeline segments you have added. It also uses an example default Quickview when you click a product thumbnail in Preview mode so you can test its interactivity before publishing.
 
-After you save the viewer preset, its state is automatically set to **On **in the Viewer Presets page. This state means that it is visible in the Dynamic Media component and whenever you preview a video with it. Be sure you also manually publish your new viewer preset.
+After you save the viewer preset, its state is automatically set to **On** in the Viewer Presets page. This state means that it is visible in the Dynamic Media component and whenever you preview a video with it. Be sure you also manually publish your new viewer preset.
 
-See [Creating a New Viewer Preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) to create your own Interactive Video viewer preset.
+See [Create a New Viewer Preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) to create your own Interactive Video viewer preset.
 
-## Uploading a video and its associated thumbnail assets {#uploading-a-video-and-its-associated-thumbnail-assets}
+## Upload a video and its associated thumbnail assets {#uploading-a-video-and-its-associated-thumbnail-assets}
 
-If you have already uploaded your video and thumbnail assets, proceed to [Adding interactivity to your video](#adding-interactivity-to-your-video).
+If you have already uploaded your video and thumbnail assets, proceed to [Add interactivity to your video](#adding-interactivity-to-your-video).
 
-If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Deleting Assets](/help/assets/manage-assets.md#deleting-assets).
+If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Delete assets](/help/assets/manage-assets.md#deleting-assets).
 
 To upload a video and its associated thumbnail assets:
 
@@ -247,7 +247,7 @@ To upload a video and its associated thumbnail assets:
 
    Now add interactivity to your video.
 
-## Adding interactivity to your video {#adding-interactivity-to-your-video}
+## Add interactivity to your video {#adding-interactivity-to-your-video}
 
 You add timeline segments to a video using the in-place visual editor on the Create Interactive Video page.
 
@@ -488,31 +488,31 @@ After you save your interactive video, the video is immediately opened into Prev
 
 1. Publish the interactive video. Publishing creates the embed code or URL that you eventually copy and paste to your website experiences.
 
-   If you added interactivity with Quickviews, only use the embed code; if you added interactivity with hyperlinked webpages, you can also use the published URL. Note, however, that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
+   If you added interactivity with Quickview, only use the embed code; if you added interactivity with hyperlinked webpages, you can also use the published URL. Note, however, that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
 
-   See [Publishing assets](publishing-dynamicmedia-assets.md).
+   See [Publish assets](publishing-dynamicmedia-assets.md).
 
    >[!NOTE]
    >
-   >To publish a shoppable video with Quickviews, be sure you also publish each of the video's related image assets from your commerce area, separately.
+   >To publish a shoppable video with Quickview, be sure you also publish each of the video's related image assets from your commerce area, separately.
 
-   After you have added timeline segments and published the interactive video, you are ready to add it to your existing website landing page. See [Integrating an interactive video with your website](#integrating-an-interactive-video-with-your-website).
+   After you have added timeline segments and published the interactive video, you are ready to add it to your existing website landing page. See [Integrate an interactive video with your website](#integrating-an-interactive-video-with-your-website).
 
-## Publishing interactive video assets {#publishing-interactive-video-assets}
+## Publish interactive video assets {#publishing-interactive-video-assets}
 
-See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive video assets.
+See [Publish assets](/help/assets/publishing-dynamicmedia-assets.md) for details on how to publish interactive video assets.
 
-## Integrating an interactive video with your website {#integrating-an-interactive-video-with-your-website}
+## Integrate an interactive video with your website {#integrating-an-interactive-video-with-your-website}
 
 After you have uploaded a video, added timeline segments to it, and published the interactive video, you are now ready to add it to your existing website.
 
-If you are an Experience Manager Sites customer, you can add the interactive video by dragging the Interactive Media component to your page. See [Adding Dynamic Media Assets to Pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+If you are an Experience Manager Sites customer, you can add the interactive video by dragging the Interactive Media component to your page. See [Add Dynamic Media assets to pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 If you are a standalone Experience Manager Assets customer, you can manually add the interactive video to your website as described in this section.
 
 1. Copy the published interactive video's embed code or URL.
-   See [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
-   If you added interactivity with Quickviews, only use the embed code; if you added interactivity with hyperlinked webpages, you can also use the published URL. Note, however, that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
+   See [Embed the Video or Image Viewer on a Web Page](/help/assets/embed-code.md).
+   If you added interactivity with Quickview, only use the embed code; if you added interactivity with hyperlinked webpages, you can also use the published URL. Note, however, that the URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.
 
 1. In the target's web page code, identify where the static video is located.
 1. Remove the static video and replace the code with the embed code or URL that you copied from Experience Manager Assets, as is.
@@ -522,7 +522,7 @@ If you are a standalone Experience Manager Assets customer, you can manually add
 >
 >As this point, if you added interactivity with only hyperlinked web pages, you are done.
 >
->However, if you added any interactivity to trigger a Quickview, the thumbnails next to the interactive video are for display purposes only; they are not yet integrated with your existing Quickviews. In such case, you now must integrate the interactive video with existing Quickviews on your website.
+>However, if you added any interactivity to trigger a Quickview, the thumbnails next to the interactive video are for display purposes only; they are not yet integrated with your existing Quickview. In such case, you now must integrate the interactive video with the existing Quickview on your website.
 
 **Example**
 
@@ -558,11 +558,11 @@ Notice that the embed code is standard:
 
 ```
 
-Integration is as simple as removing the video embed code and replacing it with the interactive video embed code from Experience Manager. You can see the result at the following URL. While it shows an Interactive Video present on the page, it is not yet integrated with the existing Quickviews:
+Integration is as simple as removing the video embed code and replacing it with the interactive video embed code from Experience Manager. You can see the result at the following URL. While it shows an Interactive Video present on the page, it is not yet integrated with the existing Quickview:
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## Integrating an interactive video with an existing Quickview {#integrating-an-interactive-video-with-an-existing-quickview}
+## Integrate an interactive video with an existing Quickview {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 >
@@ -590,7 +590,7 @@ In such an event handler the front-end code does the following:
 * Constructs a Quickview URL based on the thumbnail data.
 * Triggers the process of loading the Quickview from the backend and rendering it on the screen for display.
 
-In addition, the Interactive Video viewer supports full screen operation mode. The end user triggers Quickviews by clicking a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quickview modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job must listen to one or more viewer callbacks that is sent after the viewer that loads on the page.
+In addition, the Interactive Video viewer supports full screen operation mode. The end user triggers Quickview by clicking a thumbnail without leaving the full screen. To achieve this functionality, you alter the front-end code so that the Quickview modal dialog box is attached to the viewer's container. Do not add document BODY or some other web page element that is not available when the viewer is in full-screen mode. The code that performs this job must listen to one or more viewer callbacks that is sent after the viewer that loads on the page.
 
 The embed code returned by Experience Manager already has a ready-to-use event handler in place. It is commented out as seen in the following highlighted code snippet:
 
@@ -696,7 +696,7 @@ The demo website is triggering the Quickview dialog box using a simple `loadQuic
 loadQuickView(quickViewUrl);
 ```
 
-Finally, make sure that your Quickview dialog box is attached to the viewer's container element. The default embed code provides sample steps to achieve this functionality. To obtain a reference to the viewer's container element, you can use the following lines of code:
+Finally, make sure that your Quickview dialog box is attached to the viewer's container element. The defaults embed code provides sample steps to achieve this functionality. To obtain a reference to the viewer's container element, you can use the following lines of code:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -707,7 +707,7 @@ Where `inner_container` is a reference to a `DIV` element managed by the viewer.
 
 The steps to actually locate the modal dialog box element and attach it to the above container are case-specific. Again, you can seek the help from your front-end developer who is familiar with your Quickview implementation that is needed.
 
-In the case of the sample website, the Quickview modal dialog box is implemented as a `DIV` with the quickview-modal ID attached directly to the document `BODY`. Therefore, the code to move that dialog box to the viewer's container is as straightforward as the following:
+If you use the sample website, the Quickview modal dialog box is implemented as a `DIV` with the quickview-modal ID attached directly to the document `BODY`. Therefore, the code to move that dialog box to the viewer's container is as straightforward as the following:
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component
@@ -764,6 +764,6 @@ The final demo website with the fully integrated interactive video looks like th
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
-## Create custom pop-ups using Quickviews {#using-quickviews-to-create-custom-pop-ups}
+## Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-See [Create custom pop-ups using Quickviews](/help/assets/custom-pop-ups.md).
+See [Create custom pop-ups using Quickview](/help/assets/custom-pop-ups.md).

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 ---
 # Advanced Scoring and Badges{#advanced-scoring-and-badges}
@@ -179,28 +179,28 @@ Included in the beta release are two advanced scoring rules for the [forum funct
 
 1. `/libs/settings/community/scoring/rules/adv-comments-scoring`
 
-    * `subRules[] =
-      /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
-      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule
+   ```
 
 1. `/libs/settings/community/scoring/rules/adv-forums-scoring`
 
-    * `subRules[] =
-      /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
-      /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
-      /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner`
+   ```
+   subRules[] =
+   /libs/settings/community/scoring/rules/sub-rules/adv-forums-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-comments-rule
+   /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
+   ```
 
 **Notes:**
 
 * Both `rules` and `sub-rules` nodes are of type `cq:Page`.
-
-* `subRules` is an attribute of type String[] on the rule's `jcr:content` node.
-
+* `subRules` is an attribute of type String`[]` on the rule's `jcr:content` node.
 * `sub-rules` may be shared among various scoring rules.
-
 * `rules` should be located in a repository location with read permission for everyone.
-
 * Rule names must be unique regardless of location.
 
 ### Included Badging Rules {#included-badging-rules}

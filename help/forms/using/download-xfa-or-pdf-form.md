@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
-role: Administrator
+role: Admin
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 ---
 # Download an XFA or a PDF form template {#download-an-xfa-or-a-pdf-form-template}

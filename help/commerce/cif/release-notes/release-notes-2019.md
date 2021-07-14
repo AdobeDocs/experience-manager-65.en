@@ -1,6 +1,7 @@
 ---
 title: AEM Content and Commerce Release Notes 2021
 description: AEM Content and Commerce Release Notes 2021
+exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 ---
 # Commerce Integration Framework GitHub Release Overview
 
@@ -148,4 +149,3 @@ description: AEM Content and Commerce Release Notes 2021
   * Navigation
   * Product Search
   * Shopping Cart (REST)
-  

@@ -1,6 +1,7 @@
 ---
 title: Configuring Dynamic Media - Hybrid mode
 description: Learn how to configure Dynamic Media - Hybrid mode.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,7 +11,7 @@ discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
 
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 ---
@@ -57,7 +58,7 @@ If you are a customer of Dynamic Media, you are required to use hybrid delivery 
 
 The configuration tasks that follow reference the following terms:
 
-| **Term** |**Dynamic Media Enabled** |**Description** |
+| **Term** | **Dynamic Media Enabled** | **Description** |
 |---|---|---|
 | Experience Manager Author node |White check mark in a green circle |The author node that you deploy to On-Premise or through Managed Services. |
 | Experience Manager Publish node |White "X" in a red square. |The publish node that you deploy to On-Premise or through Managed Services. |
@@ -184,22 +185,22 @@ To enable Dynamic Media, you must enable the Dynamic Media run mode either from 
 
 ### If you installed Experience Manager to a different port or context path ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-If you are deploying [Experience Manager to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you must configure the **self** domain in the externalizer. Otherwise, thumbnail generation for assets does not work properly for Dynamic Media assets.
+If you are deploying [Experience Manager to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you must configure the **self-domain** in the externalizer. Otherwise, thumbnail generation for assets does not work properly for Dynamic Media assets.
 
-In addition, if you run quickstart on a different port or context path, you also have to change the **self** domain.
+In addition, if you run quickstart on a different port or context path, you also have to change the **self-domain**.
 
 When Dynamic Media is enabled, the static thumbnail renditions for image assets are generated using Dynamic Media. For thumbnail generation to work properly for Dynamic Media, Experience Manager must perform a URL request to itself and must know both the port number and the context path.
 
 In Experience Manager:
 
-* The **self** domain in the [externalizer](/help/sites-developing/externalizer.md) is used to retrieve both the port number and context path.
-* If no **self** domain is configured, the port number and context path are retrieved from the Jetty HTTP service.
+* The **self-domain** in the [externalizer](/help/sites-developing/externalizer.md) is used to retrieve both the port number and context path.
+* If no **self-domain** is configured, the port number and context path are retrieved from the Jetty HTTP service.
 
-In an Experience Manager QuickStart WAR deployment, the port number and context path cannot be derived, therefore you must configure a **self** domain. See [externalizer documentation](/help/sites-developing/externalizer.md) on how to configure the **self** domain.
+In an Experience Manager QuickStart WAR deployment, the port number and context path cannot be derived, therefore you must configure a **self-domain**. See [externalizer documentation](/help/sites-developing/externalizer.md) on how to configure the **self-domain**.
 
 >[!NOTE]
 >
->In an [Experience Manager Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self** domain generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you must configure the **self** domain.
+>In an [Experience Manager Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self-domain** generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you must configure the **self-domain**.
 
 ## Disabling Dynamic Media  {#disabling-dynamic-media}
 
@@ -207,7 +208,7 @@ Dynamic Media is not enabled by default. However, if you have previously enabled
 
 To disable Dynamic Media after you have enabled it, you remove the `-r dynamicmedia` run mode flag.
 
-**To disable Dynamic Media after it has been enabled**
+**To disable Dynamic Media after it has been enabled:**
 
 1. On the command line, when launching the quickstart, you can do either of the following:
 
@@ -228,7 +229,7 @@ To disable Dynamic Media after you have enabled it, you remove the `-r dynamicme
 
 ## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-If you are upgrading Experience Manager Dynamic Media from 6.3 to 6.5 (which now includes the ability for zero downtime deployments), you must run the following curl command. The command migrates all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
+If you are upgrading Experience Manager - Dynamic Media from 6.3 to 6.5 (which now includes the ability for zero downtime deployments), you must run the following curl command. The command migrates all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
 >[!NOTE]
 >
@@ -379,7 +380,8 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**Solution**: Check that the `KeyStore` is saved to **dynamic-media-replication** user and is provided with the correct password.
+**Solution:**
+Check that the `KeyStore` is saved to **dynamic-media-replication** user and is provided with the correct password.
 
 #### Problem: Could Not Decrypt Key - Could Not Decrypt Data {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
@@ -395,7 +397,8 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**Solution**: Check the password. The password saved in the replication agent is not the same password that was used to create keystore.
+**Solution:**
+Check the password. The password saved in the replication agent is not the same password that was used to create keystore.
 
 #### Problem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
@@ -415,7 +418,8 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Solution**: Make sure that the Java™ process on the Experience Manager Author has the system property `-Djavax.net.ssl.trustStore=` set to a valid truststore.
+**Solution:**
+Make sure that the Java™ process on the Experience Manager Author has the system property `-Djavax.net.ssl.trustStore=` set to a valid truststore.
 
 #### Problem: KeyStore is either not set up or it is not initialized {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -434,7 +438,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 ```
 
-**Solution**:
+**Solution:**
 
 1. Navigate to the User Management page:
    `localhost:4502/libs/granite/security/content/useradmin.html`
@@ -570,8 +574,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
     * **Check the Video Analytics preset by way of the JCR**
       To check the Video Analytics preset by way of the JCR, you must have access to CRXDE Lite.
 
-      Experience Manager - In CRXDE Lite, navigate to `/conf/global/settings/
-      dam/dm/presets/analytics/jcr:content/userdata`
+      Experience Manager - In CRXDE Lite, navigate to `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
       As in `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
@@ -594,7 +597,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
       ```
 
     * **Check the Video Analytics preset through the Video Reporting tool in Experience Manager**
-      Tap **[!UICONTROL Tools > Assets > Video Reporting]**
+      Tap **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Reporting]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -671,7 +674,7 @@ The filters provide a way for you to *exclude* assets from being replicated to t
 
 ### Using Default Asset Filters for Replication {#using-default-asset-filters-for-replication}
 
-If you are using Dynamic Media for (1) imaging in production **or** (2) imaging and video, then you can use the default filters that Adobe provides as-is. The following filters are active by default:
+If you use Dynamic Media for (1) imaging in production *or* (2) imaging and video, then you can use the default filters that Adobe provides as-is. The following filters are active by default:
 
 <table>
  <tbody>
@@ -830,7 +833,7 @@ Configuring the Dynamic Media Image Server involves editing the Adobe CQ Scene7 
 >
 >Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media). However, you can optionally choose to fine-tune your installation by configuring Dynamic Media Image Server to meet certain specifications or requirements.
 
-**Prerequisite**: *Before* you configure Dynamic Media Image Server, ensure that your VM of Windows® includes an installation of the Microsoft® Visual C++ Libraries. The libraries are necessary to run Dynamic Media Image Server. You can [download the Microsoft® Visual C++ 2010 Redistributable Package (x64) here](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
+**Prerequisite** - *Before* you configure Dynamic Media Image Server, ensure that your VM of Windows® includes an installation of the Microsoft® Visual C++ Libraries. The libraries are necessary to run Dynamic Media Image Server. You can [download the Microsoft® Visual C++ 2010 Redistributable Package (x64) here](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 To configure Dynamic Media Image Server settings:
 
@@ -908,7 +911,7 @@ To configure Dynamic Media Image Server settings:
 
 The default manifest lets you configure the defaults that are used to generate the Dynamic Media Delivery responses. You can fine-tune quality (JPEG quality, resolution, resampling mode), caching (expiration), and prevent the rendering of images that are too large (defaultpix, defaultthumbpix, maxpix).
 
-The location of the default manifest configuration is taken from the **[!UICONTROL Catalog root]** default value of the **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundle. By default this value is at the following path within **[!UICONTROL Tools > General > CRXDE Lite]**:
+The location of the default manifest configuration is taken from the **[!UICONTROL Catalog root]** default value of the **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundle. By default this value is at the following path within **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**
 
 `/conf/global/settings/dam/dm/imageserver/`
 
@@ -1016,9 +1019,9 @@ To use the Dynamic Media color management capabilities, install feature pack 124
 
 After you install the feature pack, configure the appropriate default color profiles to enable color correction when requesting RGB or CMYK image data.
 
-**To configure the default color profiles**
+**To configure the default color profiles:**
 
-1. In **[!UICONTROL Tools > General > CRXDE Lite]**, navigate to `/conf/global/settings/dam/dm/imageserver/jcr:content` which contains the default Adobe Color Profiles.
+1. In **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**, navigate to `/conf/global/settings/dam/dm/imageserver/jcr:content` which contains the default Adobe Color Profiles.
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
@@ -1109,11 +1112,11 @@ After you install the feature pack, configure the appropriate default color prof
  <tbody>
   <tr>
    <th><p>Name</p> </th>
-   <th><p>Colorspace</p> </th>
+   <th><p>Colors pace</p> </th>
    <th><p>Description</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1155,12 +1158,12 @@ After you install the feature pack, configure the appropriate default color prof
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMYK</td>
-   <td>Euroscale Coated v2</td>
+   <td>Euro scale Coated v2</td>
   </tr>
   <tr>
    <td>EuroscaleUncoated</td>
    <td>CMYK</td>
-   <td>Euroscale Uncoated v2</td>
+   <td>Euro scale Uncoated v2</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>

@@ -1,13 +1,13 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites
+solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 breadcrumb-title: Authoring Guide
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 feature: Authoring
-role: Business Practitioner
+role: User
 ---
 
 # AEM 6.5 Authoring User Guide {#authoring}

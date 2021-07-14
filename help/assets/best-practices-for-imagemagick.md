@@ -2,7 +2,7 @@
 title: Install and configure ImageMagick
 description: Learn about ImageMagick software, how to install it, set up the command line process step, and use it to edit, compose, and generate thumbnails from images.
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 ---
