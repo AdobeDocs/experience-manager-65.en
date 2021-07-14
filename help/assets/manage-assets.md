@@ -3,7 +3,7 @@ title: Manage your digital assets
 description: Learn the asset management tasks like upload, download, edit, search, delete, annotate, and version your digital assets.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
+role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 ---
@@ -159,7 +159,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 1. Using your choice of FTP client, log in to the FTP server using the FTP user name and password that you received from the provisioning email. In the FTP client, upload files or folders to the FTP server.
 
-1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app), then sign in to your account.
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), then sign in to your account.
 
    Your credentials and sign in were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
@@ -859,7 +859,7 @@ You can create versions in [!DNL Experience Manager] in the following scenarios:
 * Upload an asset with the same filename that exists at the same location. It can be a new asset or a modified version of the same asset.
 * Edit an image in [!DNL Experience Manager] and save the changes.
 * Edit the metadata of an asset.
-* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
+* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 

@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: a6f58f6a-015a-4ced-941c-ef1b6d3e1d6f
 docset: aem65
 feature: Interactive Images
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 ---
 # Interactive images{#interactive-images}

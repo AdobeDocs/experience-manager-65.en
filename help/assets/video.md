@@ -10,30 +10,29 @@ content-type: reference
 discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 feature: Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 ---
 # Video in Dynamic Media {#video}
 
 This section describes working with video in Dynamic Media.
 
-Currently known video playback issues in Dynamic Media:
-
-* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
-
-* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
-
 ## Quick Start: Videos {#quick-start-videos}
 
 The following step-by-step workflow description is designed to help you get up and running quickly with adaptive video sets in Dynamic Media. After each step, there are cross-references to topic headings where you can find more information.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Before you work with video in Dynamic Media, make sure that your Adobe Experience Manager administrator has already enabled and configured Dynamic Media Cloud Services in either Dynamic Media - Scene7 mode or Dynamic Media - Hybrid mode.
 >
 >* See [Configure Dynamic Media Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Scene7 mode and [Troubleshoot Dynamic Media - Scene7 mode](/help/assets/troubleshoot-dms7.md).
 >
 >* See [Configure Dynamic Media Cloud Services](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Hybrid mode.
+>
+>Currently known video playback issues in Dynamic Media *on Experience Manager 6.5.9.0 only*:
+>
+>* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 >
 
 1. **Upload your Dynamic Media videos** by doing the following:

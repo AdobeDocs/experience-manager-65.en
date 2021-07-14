@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
 ---

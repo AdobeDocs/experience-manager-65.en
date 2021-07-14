@@ -9,7 +9,7 @@ content-type: reference
 docset: aem65
 
 feature: Viewers
-role: Business Practitioner, Administrator,Developer,Data Engineer,Data Architect
+role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 ---
 # Integrating Dynamic Media Viewers with Adobe Analytics and Experience Platform Launch {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
@@ -236,7 +236,7 @@ The sample set up above also affects the life span of the Data Element value. Th
 
 In any case, values of Data Elements driven by Dynamic Media Viewers are not stored on the local storage or on the server; instead, they are kept only on the client-side Experience Platform Launch library. Values of such Data Element disappear when the web page reloads.
 
-Generally, the Data Element editor supports [storage duration selection](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html?lang=en#create-a-data-element). However, Data Elements that use the Dynamic Media Viewers extension only supports the storage duration option of **[!UICONTROL None]**. Setting any other value is possible in the user interface, but the Data Element behavior is not defined in this case. The extension manages the value of the Data Element on its own: the Data Element that maintains the value of the viewer event argument during the entire viewer life cycle.
+Generally, the Data Element editor supports [storage duration selection](https://experienceleague.adobe.com/docs/launch/using/ui/data-elements.html#create-a-data-element). However, Data Elements that use the Dynamic Media Viewers extension only supports the storage duration option of **[!UICONTROL None]**. Setting any other value is possible in the user interface, but the Data Element behavior is not defined in this case. The extension manages the value of the Data Element on its own: the Data Element that maintains the value of the viewer event argument during the entire viewer life cycle.
 
 ### About Rules in the Dynamic Media Viewers extension {#about-rules-in-the-dynamic-media-viewers-extension}
 

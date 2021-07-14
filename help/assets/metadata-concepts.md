@@ -2,7 +2,7 @@
 title: Understand metadata concepts
 description: Learn about the need of and types of metadata that allows for easier categorization and organization of assets.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
 ---

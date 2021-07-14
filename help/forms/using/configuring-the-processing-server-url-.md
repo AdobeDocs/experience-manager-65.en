@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
 ---
 # Configuring AEM DS settings{#configuring-aem-ds-settings}

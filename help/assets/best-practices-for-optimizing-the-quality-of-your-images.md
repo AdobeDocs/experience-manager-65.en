@@ -8,7 +8,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 ---
 # Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}

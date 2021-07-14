@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 6d165b0d-e3e7-4115-8f2a-827679754b3b
 feature: Selectors
 ---

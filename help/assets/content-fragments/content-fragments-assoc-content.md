@@ -12,7 +12,7 @@ discoiquuid: 5af45caf-5e85-4c57-bcd1-e8f7fc460315
 docset: aem65
 
 feature: Content Fragments
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: ced7c902-193c-4e97-9070-2a4d958b64a3
 ---
 # Associated Content{#associated-content}

@@ -15,15 +15,20 @@ exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 
 You can upload, preview, and submit attachments with HTML5 forms. By default, the attachment support is disabled. To enable the attachment support:
 
-1. Create a [custom profile](/help/forms/using/custom-profile.md) with mutiselect string property `mfAttachmentOptions`.
-1. In the custom profile, specify properties `fileSizeLimit`, `multiSelect`, and `buttonTex`t to configure options of the file attachment widget. As required, you can also specify more custom properties.
+1. Create a [custom profile](/help/forms/using/custom-profile.md) with a `mfAttachmentOptions` multiselect string property. Each string in the `mfAttachmentOptions` property must have a `property=value` format to configure options of the file attachment widget. The `property` and `value` can have any of the following values:
 
-1. In the custom profile, use the following configurations:
+   | Property | Value |
+   |--- |---|
+   | multiSelect| true or false (true by default) |
+   | fileSizeLimit | Number in MBs (2 MBs by default). For example, 5. |
+   | buttonText | Button text for pop-up window ("Attach" by default)|
+   | accept | comma-separated list of file types to accept ("audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf" by default)  |
 
-    * **multiSelect** -&gt; true or false (true by default)
-    * **fileSizeLimit** -&gt; value_in_mb (say 5) (2 MBs by default)
-    * **buttonText** -&gt; Button text for pop-up window ("Attach" by default)
-    * **accept** -&gt; file types to accept ("audio/&ast;, video/&ast;, image/&ast;, text/&ast;, .pdf" by default)
+   For example:
+
+   ![configure options](assets/mfAttachmentOptions.png)
+
+   As required, you can also specify more custom options for the `mfAttachmentOptions` property.
 
    >[!NOTE]
    >
