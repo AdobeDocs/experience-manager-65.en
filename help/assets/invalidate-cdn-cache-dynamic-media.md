@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5.6/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 feature: CDN Cache
 ---

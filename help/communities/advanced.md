@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: eb3d5c37-8097-46de-8c4f-804ea723f1c5
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 ---
 # Advanced Scoring and Badges{#advanced-scoring-and-badges}

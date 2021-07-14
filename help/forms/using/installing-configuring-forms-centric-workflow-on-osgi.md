@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 ---
 # Installing and Configuring Forms-centric workflow on OSGi{#installing-and-configuring-forms-centric-workflow-on-osgi}

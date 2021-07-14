@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 ---
 # Moderation Console {#moderation-console}

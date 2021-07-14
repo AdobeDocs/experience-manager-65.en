@@ -63,7 +63,7 @@ For a complete list of features and enhancements introduced in [!DNL Experience 
 >Starting with Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java™ SE.
 >Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
 >You can download the relevant versions of the [!DNL Azul Zulu] JDKs from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->The usage rights for the Oracle Java™ technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java™] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
+>The usage rights for the Oracle Java™ technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java™] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0 release.
 
@@ -189,15 +189,9 @@ Contrast (with background) of the following text and icons is improved, so that 
 
 * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
 
-Known video playback issues in [!DNL Dynamic Media]:
-
-* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
-
-* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
-
 Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
 
-* Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html?lang=en#troubleshoot-dm-config) (NPR-36232).
+* Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#troubleshoot-dm-config) (NPR-36232).
 
 * When attempting to preview video renditions on asset details page, the videos are slow to load (CQ-4320122).
 
@@ -214,6 +208,11 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 * Video annotations do not work for folder paths where [!DNL Dynamic Media] configuration is not enabled, even if the [!DNL Experience Manager] instance is set-up in [!DNL Dynamic Media] mode (CQ-4314950).
 
 * When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
+
+>Known video playback issues in Dynamic Media *on Experience Manager 6.5.9.0 only*:
+>
+>* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
+>* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
 
 ### Platform {#platform-6590}
 
@@ -394,12 +393,12 @@ To know the platforms certified to work with this release, see the [technical re
 >Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
 1. Ensure that you have installed the Adobe Experience Manager Service Pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) for your operating system.
+1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](../forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
 >[!NOTE]
 >
->Experience Manager 6.5.9.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.9.0, install the latest version of the package post installation of Forms Add-On Package.
+>Experience Manager 6.5.9.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.9.0, install the latest version of the package post installation of Forms Add-On Package.
 
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 

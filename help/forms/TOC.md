@@ -2,12 +2,12 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: forms
-solution: Experience Manager, Experience Manager Forms
+solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
-role: Business Practitioner
+role: User
 ---
 # Adobe Experience Manager 6.5 Forms Guide {#forms}
 

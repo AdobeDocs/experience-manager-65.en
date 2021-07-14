@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
 ---

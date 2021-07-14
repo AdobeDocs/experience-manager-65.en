@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 ---
 # Install and configure data capture capabilities{#install-and-configure-data-capture-capabilities}

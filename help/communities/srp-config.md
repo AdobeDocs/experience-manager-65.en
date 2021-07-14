@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
-role: Administrator
+role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 ---
 # Storage Configuration {#storage-configuration}
