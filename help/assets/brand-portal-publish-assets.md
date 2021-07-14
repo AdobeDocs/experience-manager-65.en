@@ -69,4 +69,4 @@ To schedule publishing the assets to Brand Portal to a later date or time:
 
 Now, login to Brand Portal to see whether the published assets are available on  Brand  Portal interface.
 
-   ![bp_landing_page](assets/bp_landing_page.png)
+   ![bp_landingpage](assets/bp_landingpage.png)
