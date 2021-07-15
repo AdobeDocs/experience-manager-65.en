@@ -1,6 +1,6 @@
 ---
-title: Installing feature pack 18912 for bulk asset migration
-description: Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from Dynamic Media Classic into Dynamic Media on AEM. This optional feature pack is available from Adobe support.
+title: Install feature pack 18912 for bulk asset migration
+description: Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from Dynamic Media Classic into Dynamic Media on Adobe Experience Manager. This optional feature pack is available from Adobe support.
 uuid: 45c2f5f8-4368-4d7b-a43e-fe96cfb272fd
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -13,32 +13,32 @@ feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
 ---
-# Installing feature pack 18912 for bulk asset migration{#installing-feature-pack-for-bulk-asset-migration}
+# Install feature pack 18912 for bulk asset migration{#installing-feature-pack-for-bulk-asset-migration}
 
 The installation of feature pack 18912 is *optional*.
 
-Feature pack 18912 lets you either bulk ingest assets directly into Dynamic Media - Scene7 mode on AEM by way of FTP, or migrate assets from Dynamic Media Classic into Dynamic Media - Scene7 mode on AEM. The feature pack is available from [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+Feature pack 18912 lets you bulk ingest assets directly into Dynamic Media - Scene7 mode on Adobe Experience Manager by way of FTP. It also lets you migrate assets from Dynamic Media Classic into Dynamic Media - Scene7 mode on Experience Manager. The feature pack is available from [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
->[!NOTE]
+>[!IMPORTANT]
 >
->While it is possible for you to use the feature pack to bulk migrate assets on your own from Dynamic Media Classic to Dynamic Media - Scene 7 mode in AEM or bulk migrate assets using the FTP feature in Dynamic Media Classic, Adobe does *not* recommend this method due to the complexity involved.
+>It is possible for you to use the feature pack to bulk migrate assets on your own from Dynamic Media Classic to Dynamic Media - Scene7 mode in Experience Manager. It is also possible for you to bulk migrate assets using the FTP feature in Dynamic Media Classic. However, Adobe does *not* recommend that you use either of these methods due to the complexity involved.
 >
->As such, migration feature packs, such as this one, are *only* supported as part of a migration project when done through [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html).
+>As such, this migration feature pack is *only* supported as part of a migration project when done through [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
 
-Before you can install the feature pack, you must first create a service user and provide that information to Adobe support.
+Before you install the feature pack, create a service user and provide that information to Adobe support.
 
-See also [Configuring Dynamic Media - Scene7 mode](/help/assets/config-dms7.md).
+See also [Configure Dynamic Media - Scene7 mode](/help/assets/config-dms7.md).
 
-**To install feature pack 18912 for bulk asset migration**
+**To install feature pack 18912 for bulk asset migration:**
 
-1. In your AEM instance, navigate to **[!UICONTROL Tools > Security > Users]** and select **[!UICONTROL Create User]**. This service user must have *read/write* permissions to `/content/dam.`
-1. In the **[!UICONTROL ID]** and **[!UICONTROL Password]** fields, enter a user name and password; for example, **FTP User**. This name appears in the timeline as the user who created the asset. When an asset is uploaded from FTP, an asset is considered created when it is uploaded to the FTP server and is pushed to AEM.
+1. In your Experience Manager instance, navigate to **[!UICONTROL Tool]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** and select **[!UICONTROL Create User]**. This service user must have *read/write* permissions to `/content/dam.`
+1. In the **[!UICONTROL ID]** and **[!UICONTROL Password]** fields, enter a user name and password; for example, **FTP User**. This name appears in the timeline as the user who created the asset. When an asset is uploaded from FTP, an asset is considered created when it is uploaded to the FTP server and is pushed to Experience Manager.
 1. Contact [Adobe Enterprise Customer Care for Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) to request access to feature pack 18912 for downloading. You may need the following information when you contact support:
 
     * Server IP address for your Author instance, including the port number (by default, the port number is 4502.)
-    * AEM service user username and password from the previous step.
+    * Experience Manager service user username and password from the previous step.
 
-1. Adobe Enterprise Customer Care for AEM provides you the FTP credentials and access to feature pack 18912.
+1. Adobe Enterprise Customer Care for Experience Manager provides you the FTP credentials and access to feature pack 18912.
 1. When you receive the feature pack 18912, install it.
 
-   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in AEM.
+   See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in Experience Manager.

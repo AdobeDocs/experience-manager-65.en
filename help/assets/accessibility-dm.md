@@ -16,7 +16,7 @@ exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 
 Because [!DNL Dynamic Media] is a plug-in to [!DNL Adobe Experience Manager Assets], most of the keyboard control behavior is the same as in [!DNL Experience Manager Assets]. For example, the `Cancel` button in [!DNL Dynamic Media] has the same focus highlight as in [!DNL Experience Manager Assets], and reacts to the `Spacebar` key as in [!DNL Experience Manager Assets]. See [Keyboard shortcuts in Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Keystrokes supported by individual user interface elements in [!DNL Dynamic Media] are&ndash;in most cases&ndash;obvious and easy to discover. Keyboard control in [!DNL Dynamic Media] is about the following:
+Keystrokes supported by individual user interface elements in [!DNL Dynamic Media] are clear and easy to discover. Keyboard control in [!DNL Dynamic Media] is about the following:
 
 * Ability to use `Tab` and `Shift+Tab` keystrokes to navigate between interactive elements on the page.
 Using `Tab` advances input focus to the next user interface element in the tabbing order; using `Shift+Tab` brings input focus back to the previous user interface element.
@@ -29,7 +29,7 @@ The focus traversal follows the natural user interface element location on the s
   * Use arrow keys to crop the frame size, or reposition the image, or both.
   * The first `Tab` stop highlights the entire image frame. You can then use arrow keys on the keyboard to reposition the frame.
   * The next four `Tab` stops are the frame's four corners. When focus is placed on a frame corner, the corner is highlight. Again, you can use arrow keys on the keyboard to move the focused corner.
-  See [Editing the smart crop or smart swatch of a single image](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+  See [Edit the smart crop or smart swatch of a single image](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
