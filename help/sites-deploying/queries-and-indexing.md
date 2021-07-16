@@ -109,7 +109,7 @@ If a full-text index is configured, then all queries that have a full-text condi
 
 If no full-text index is configured, then queries with full-text conditions will not work as expected.
 
-Because the index is updated via an asynchronbous background thread, some full-text searches will be unavailable for a small window of time until the background processes are finished.
+Because the index is updated via an asynchronous background thread, some full-text searches will be unavailable for a small window of time until the background processes are finished.
 
 You can configure a Lucene full-text index, by following the below procedure:
 
