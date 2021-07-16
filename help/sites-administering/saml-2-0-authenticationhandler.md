@@ -19,7 +19,7 @@ It supports:
 
 * signing and encryption of messages
 * automatic creation of users
-* synching groups to existsing ones in AEM
+* synching groups to existing ones in AEM
 * Service Provider and Identity Provider initiated authentication
 
 This handler stores the encrypted SAML response message in the user-node ( `usernode/samlResponse`) to facilitate communication with a third-party Service Provider.
