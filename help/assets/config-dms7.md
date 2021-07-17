@@ -272,7 +272,7 @@ See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to Experience Manager.
 
-#### Add MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
+#### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
 You can add custom MIME types for unsupported formats in Experience Manager Assets. Ensure that any new node you add in CRXDE Lite is not deleted by Experience Manager by moving the MIME type before `image_`. Also, be sure that its enabled value is set to **[!UICONTROL false]**.
 
