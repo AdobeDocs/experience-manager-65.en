@@ -48,7 +48,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 |HTTP API for structured content (read)|
 |HTTP API for structured content (CRUD)|
 |[Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)|
-|[Dynamic media](/help/assets/dynamic-media.md)|
+|[Dynamic Media](/help/assets/dynamic-media.md)|
 
 ## Admin and Integration Features {#admin-and-integration-features}
 

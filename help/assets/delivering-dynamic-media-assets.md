@@ -1,5 +1,5 @@
 ---
-title: Delivering Dynamic Media Assets
+title: Deliver Dynamic Media assets
 description: Learn how to deliver Dynamic Media assets
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
@@ -8,12 +8,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
-
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
 ---
-# Delivering Dynamic Media Assets{#delivering-dynamic-media-assets}
+# Deliver Dynamic Media assets{#delivering-dynamic-media-assets}
 
 How you can deliver your Dynamic Media assets - both video and images - depends on how your website is implemented.
 
@@ -32,18 +31,18 @@ With Dynamic Media, you have several options:
 
 For more information, see the following topics:
 
-* [Adding Dynamic Media Assets to Web Pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
-* [Embedding the Video or Image Viewer on a Web Page](/help/assets/embed-code.md)
-* [Activating hotlink protection in Dynamic Media](/help/assets/hotlink-protection.md)
-* [Linking URLs to your Web Application](/help/assets/linking-urls-to-yourwebapplication.md)
-* [Delivering Optimized Images for a Responsive Site](/help/assets/responsive-site.md)
-* [HTTP2 Delivery of Content](/help/assets/http2.md)
-* [Invalidating your CDN cache by way of Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
-* [Using Rulesets to Transform URLs](/help/assets/using-rulesets-to-transform-urls.md)
+* [Add Dynamic Media assets to web pages](/help/assets/adding-dynamic-media-assets-to-pages.md)
+* [Embed the Video or Image Viewer on a web page](/help/assets/embed-code.md)
+* [Activate hotlink protection in Dynamic Media](/help/assets/hotlink-protection.md)
+* [Link URLs to your web application](/help/assets/linking-urls-to-yourwebapplication.md)
+* [Deliver optimized images for a responsive site](/help/assets/responsive-site.md)
+* [HTTP2 delivery of content](/help/assets/http2.md)
+* [Invalidate your CDN cache by way of Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+* [Use Rulesets to transform URLs](/help/assets/using-rulesets-to-transform-urls.md)
 
 
 ## HTTP/2 delivery of Dynamic Media assets {#http-delivery-of-dynamic-media-assets}
 
 Experience Manager now supports the delivery of all Dynamic Media content (images and video) over HTTP/2. That is, a published URL or embed code for the image or video is available to be integrated with any application that accepts a hosted asset. That published asset is then delivered by way of HTTP/2 protocol. This method of delivery improves the way browsers and servers communicate, allowing for better response and load times of all your Dynamic Media assets.
 
-To learn more, see [HTTP/2 Delivery of Content Frequently Asked Questions](/help/sites-administering/scene7-http2faq.md).
+To learn more, see [HTTP/2 delivery of content frequently asked questions](/help/sites-administering/scene7-http2faq.md).
