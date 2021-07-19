@@ -258,7 +258,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
    `*viewerInstance.*init()`
 
    **Example**
-   This example uses the Interactive image viewer.
+   This example uses the Interactive Image viewer.
 
    `s7interactiveimageviewer.init()`
 

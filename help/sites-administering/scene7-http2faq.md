@@ -17,7 +17,7 @@ HTTP/2 improves the way browsers and servers communicate, allowing for faster tr
 
 The following website describes HTTP/2 and its benefits in a brief and simple manner:
 
-[What you must know about HTTP/2](https://www.engadget.com/2015/02/24/what-you-need-to-know-about-http-2/).
+[What you must know about HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html).
 
 ## What are the key benefits of moving to HTTP/2 for content delivery? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -40,7 +40,7 @@ To use HTTP/2, you must meet the following requirements:
 * Use the Adobe-bundled CDN (content delivery network) as part of your Dynamic Media license.
 * Use a dedicated domain (that is, `images.company.com` or `mycompany.scene7.com`), not a generic Dynamic Media domain (that is, `s7d1.scene7.com`, `s7d2.scene7.com`, or `s7d13.scene7.com`).
 
-  To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then tap **[!UICONTROL Setup > Application Setup > General Settings]**. Look for the field labelled **Published Server Name**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
+  To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labelled **Published Server Name**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
 ## What is the process for enabling HTTP/2 for my Dynamic Media account? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
@@ -50,13 +50,13 @@ To use HTTP/2, you must meet the following requirements:
      * Primary contact name, email, and phone number.
      * All domains to be transitioned over to HTTP2. That is, `images.company.com` or `mycompany.scene7.com`.
 
-        To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name]**.
+        To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name]**.
 
      * Verify that you use secure HTTPS for rich media requests.
      * Verify you are using the CDN through Adobe and not managed with a direct relationship.
      * Verify you are using a dedicated domain. That is, `images.company.com` or `mycompany.scene7.com`, not a generic Dynamic Media domain such as `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-        To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then tap **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
+        To find your domains, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your company account or accounts. Then navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**. Look for the field labelled **[!UICONTROL Published Server Name]**. If you are currently using a generic Dynamic Media domain, you can request moving over to your own custom domain as part of this transition.
 
 1. Technical Support adds you to the HTTP/2 customer waitlist based on the order in which requests were submitted.
 1. When Adobe is ready to handle your request, Support contacts you to coordinate the transition and set a target date.

@@ -210,7 +210,7 @@ To open the Application General Settings page, in Dynamic Media Classic Global N
 
 #### Configure color management {#configuring-color-management}
 
-Dynamic media color management lets you color correct assets. With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile. When you request a dynamic rendition, the image color is corrected into the target color space using CMYK, RGB, or Gray output. See [Configure Image Presets](/help/assets/managing-image-presets.md).
+Dynamic Media color management lets you color correct assets. With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile. When you request a dynamic rendition, the image color is corrected into the target color space using CMYK, RGB, or Gray output. See [Configure Image Presets](/help/assets/managing-image-presets.md).
 
 To configure the default color properties so color correction is enabled when images are requested:
 
