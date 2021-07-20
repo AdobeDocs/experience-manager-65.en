@@ -152,7 +152,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 #### Applying Dynamic Media image profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply an image profile to.
+1. Tap the AEM logo and navigate to **[!UICONTROL Assets]**. Then navigate to the parent folder of the folder on which you want to apply an image profile.
 1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
 1. Tap the **[!UICONTROL Image Profiles]** tab. From the **[!UICONTROL Profile Name]** drop-down list, select the profile, then tap **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
