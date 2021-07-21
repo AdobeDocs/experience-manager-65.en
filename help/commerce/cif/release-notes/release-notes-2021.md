@@ -38,7 +38,7 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
   * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
   * New sitemap component for content and commerce pages
 
-* Support for Adobe Commerce Sensei Product Recommendation in AEM Storefront using pre-defined or on-the-fly created recommendations
+* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
 
 ## Release Date: June, 2021
 
