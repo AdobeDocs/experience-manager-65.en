@@ -23,6 +23,24 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: July, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.07.21|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip)|
+|CIF Core Components |1.13.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0)|
+|CIF Venia Reference Site| 2021.07.22|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22)|
+
+### What's New {#what-is-new-june}
+
+* CIF Core Components v2
+** Simplified and improved configurations for PDP/PLP URL and SEO
+** Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
+** New sitemap component for content and commerce pages
+
+* Support for Adobe Commerce Sensei Product Recommendation in AEM Storefront using pre-defined or on-the-fly recommendations
+SEO
+
 ## Release Date: June, 2021
 
 |Component| Version| Details|
@@ -73,8 +91,6 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 * AEM extension for PWA Studio incl. example integration
 
 * New CIF navigation core component that extends WCM navigation core component
-
-* Visual indicator for staged catalog data in AEM storefront
 
 ### Bug fixes {#bug-fixes-april}
 
