@@ -9,13 +9,13 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
-**With the April release we have replaced the CIF Connector from GitHub with the CIF add-on which is available on the [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The switch to the add-on comes with great benefits for projects:
+**With the April release we have replaced the CIF Connector from GitHub with the CIF add-on** which is available on the [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The switch to the add-on comes with great benefits for projects:
 
 * Most of the new features will immediately be available on AEM 6.5 (No more waiting for feature side-port)
 * Easy upgradable to new add-on versions
 * Ready for Cloud Service
 
-The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please replace the CIF Connector with the new CIF add-on. Simply package replacement should be possible for most projects. **
+The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please replace the CIF Connector with the new CIF add-on. Simply package replacement should be possible for most projects.
 
 |Component| System Requirements|
 |:-------|:-----:|
@@ -31,15 +31,14 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |CIF Core Components |1.13.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0)|
 |CIF Venia Reference Site| 2021.07.22|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22)|
 
-### What's New {#what-is-new-june}
+### What's New {#what-is-new-july}
 
 * CIF Core Components v2
-** Simplified and improved configurations for PDP/PLP URL and SEO
-** Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
-** New sitemap component for content and commerce pages
+  * Simplified and improved configurations for PDP/PLP URL and SEO
+  * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
+  * New sitemap component for content and commerce pages
 
-* Support for Adobe Commerce Sensei Product Recommendation in AEM Storefront using pre-defined or on-the-fly recommendations
-SEO
+* Support for Adobe Commerce Sensei Product Recommendation in AEM Storefront using pre-defined or on-the-fly created recommendations
 
 ## Release Date: June, 2021
 
