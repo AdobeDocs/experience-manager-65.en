@@ -1,5 +1,5 @@
 ---
-title: "DO NOT PUBLISH Tutorial: Apply rules to adaptive form fields"
+title: Apply rules to adaptive form fields
 seo-title: Apply rules to adaptive form fields
 description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
 seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
