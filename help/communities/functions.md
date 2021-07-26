@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 
-role: Administrator
+role: Admin
 ---
 
 # Community Functions{#community-functions}

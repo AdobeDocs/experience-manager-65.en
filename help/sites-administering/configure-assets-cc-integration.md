@@ -3,7 +3,7 @@ title: Configure AEM Assets integration with Experience Cloud
 description: Learn how to configure AEM Assets integration with Experience Cloud.
 contentOwner: AG
 feature: Asset Management
-role: Business Practitioner, Architect, Administrator
+role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
 ---
 # Configure AEM Assets integration with Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}

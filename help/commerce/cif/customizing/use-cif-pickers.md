@@ -7,6 +7,7 @@ version: cloud-service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
+exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 ---
 # AEM Content & Commerce Authoring Pickers {#cif-pickers}
 
@@ -40,6 +41,9 @@ Also, standard diaglog field properties like `name`, `fieldLabel`, or `fieldDesc
 >[!CAUTION]
 >
 >The `cifproductfield` component requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the extraClientlibs property.
+>[!CAUTION]
+>
+>Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. We highly recommend using `sku` or `slug` as product identifier. We continue to support `id` only for projects using CIF Core Components version 1.x.
 
 A full working example of the `cifproductfield` can be found in the [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. See also [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) of the AEM Core Components documentation.
 
@@ -59,7 +63,7 @@ The following snippet can be used in a cq:dialog configuration:
 
 The category picker field supports the following optional properties:
 
-- selectionId(id, uid, slug, idAndUrlPath, uidAndUrlPath) - allows to choose the category attribute to be returned by the picker (default = id). The idAndUrlPath & uidAndUrlPath are special options that store the category id/uid and url_path separated by a | character like for example 1|men/tops.
+- selectionId(id, uid, slug, urlPath, idAndUrlPath _(deprecated)_, uidAndUrlPath _(deprecated)_) - allows to choose the category attribute to be returned by the picker (default = id).
 - multiple (true, false) - enable the selection of one or multiple categories (default = false)
 
 Also, standard diaglog field properties like `name`, `fieldLabel`, or `fieldDescription` are supported as well.
@@ -67,5 +71,8 @@ Also, standard diaglog field properties like `name`, `fieldLabel`, or `fieldDesc
 >[!CAUTION]
 >
 >Same as the `cifproductfield` component the `cifcategoryfield` component also requires the `cif.shell.picker` clientlib. To add a clientlib to a dialog, you can use the `extraClientlibs` property. See [Customizing Dialogs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) of the AEM Core Components documentation.
+>[!CAUTION]
+>
+>Starting with CIF Core Components version 2.0.0 the support for `id` was removed and replaced with `uid`. We highly recommend using `uid` or `urlPath` as category identifier. We continue to support `id` & `idAndUrlPath` only for projects using CIF Core Components version 1.x.
 
 A full working example of the `cifcategoryfield` can be found in the [CIF Core Components](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.

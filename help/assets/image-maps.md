@@ -2,7 +2,7 @@
 title: Add image maps with hyperlinks
 description: Learn how to add image map with hyperlinks to an image.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
 ---
@@ -20,8 +20,6 @@ Image Maps let you add one or more hyperlinked areas that function like other hy
 
    * In the **[!UICONTROL Card]** or **[!UICONTROL List]** view, select the asset and click **[!UICONTROL Edit]** on the toolbar.
    * Click **[!UICONTROL Edit]** from the asset page.
-
-       ![edit option](assets/do-not-localize/edit_icon.png)
 
 1. To insert an image map, click **[!UICONTROL Launch Map]** ![image map](assets/do-not-localize/image-map-icon.png) from the toolbar.
 1. Select the shape of the image map. The hot-spot of the selected shape is placed on the image.

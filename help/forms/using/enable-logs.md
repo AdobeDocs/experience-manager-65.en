@@ -10,7 +10,6 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 973806f8-fb44-4d52-ad3f-bfbf335f60a1
 docset: aem65
-
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 ---
@@ -47,7 +46,7 @@ You can use the following methods to enable client-side logging in HTML5 forms:
 
 ### Enabling logging using request parameter {#enabling-logging-using-request-parameter}
 
-Using this method, you can generate logs for a particular request. The name of the request parameter is `log. The log URL is as follows:
+Using this method, you can generate logs for a particular request. The name of the request parameter is `log`. The log URL is as follows:
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 

@@ -1,5 +1,5 @@
 ---
-title: Best practices for optimizing the quality of your images
+title: Best practices for optimizing the quality of your images in Dynamic Media
 description: Learn best practices for optimizing image quality in Dynamic Media
 uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
@@ -8,10 +8,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 feature: Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 ---
-# Best practices for optimizing the quality of your images {#best-practices-for-optimizing-the-quality-of-your-images}
+# Best practices for optimizing the quality of your images in Dynamic Media {#best-practices-for-optimizing-the-quality-of-your-images}
 
 Optimizing image quality can be a time consuming process as many factors contribute to rendering acceptable results. The outcome is partly subjective because individuals perceive image quality differently. Structured experimentation is key.
 
@@ -41,7 +41,7 @@ As a best practice for image sizing, use `&wid=<value>&hei=<value>&resMode=sharp
 
 Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in Experience Manager by referring to the following helpful resources:
 
-Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) which applies to Experience Manager as well.
+Best practices white paper [Sharpen images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf) which applies to Experience Manager as well.
 
 <!-- To be reviewed and updated: Broken link.
 See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html). -->
@@ -53,14 +53,14 @@ There are two image sharpening methods that you can use:
 * Simple sharpening ( `&op_sharpen`) &ndash; Similar to the sharpen filter used in Photoshop, simple sharpening applies basic sharpening to the final view of the image following dynamic resizing. However, this method is not user-configurable. The best practice is to not use &op_sharpen unless required.
 * Unsharp masking ( `&op_USM`) &ndash; Unsharp masking is an industry standard sharpening filter. The best practice is to sharpen images with unsharp masking following the guidelines below. Unsharp masking lets you control the following three parameters:
 
-  * `&op_sharpen=`amount,radius,threshold
+  * `&op_sharpen=amount,radius,threshold`
 
-    * **[!UICONTROL amount]** (0-5, strength of the effect.)
-    * **[!UICONTROL radius]** (0-250, width of the "sharpening lines" drawn around the sharpened object, as measured in pixels.)
+    * **[!UICONTROL *amount*]** (0-5, strength of the effect.)
+    * **[!UICONTROL *radius*]** (0-250, width of the "sharpening lines" drawn around the sharpened object, as measured in pixels.)
 
     Keep in mind that the parameters radius and amount work against each other. Reducing radius can be compensated by increasing amount. Radius allows finer control as a lower value sharpens only the edge pixels, whereas a higher value sharpens a wider band of pixels.
 
-    * **[!UICONTROL threshold]** (0-255, sensitivity of effect.)
+    * **[!UICONTROL *threshold*]** (0-255, sensitivity of effect.)
 
           This parameter determines how different the sharpened pixels must be from the surrounding area before they are considered edge pixels and the filter sharpens them. The **[!UICONTROL threshold]** parameter helps to avoid over-sharpening areas with similar colors, such as skin tones. For example, a threshold value of 12 ignores slight variations in skin tone brightness to avoid adding "noise", while still adding edge contrast to high contrast areas, such as where eyelashes meet skin.
 
@@ -68,16 +68,16 @@ There are two image sharpening methods that you can use:
 
       Experience Manager Help topic on Sharpening an image.
 
-      Best practices white paper [Sharpening images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
+      Best practices white paper [Sharpen images in Adobe Dynamic Media Classic](/help/assets/assets/sharpening_images.pdf).
 
     * Experience Manager also lets you control a fourth parameter: monochrome (0,1). This parameter determines if unsharp masking is applied to each color component separately using the value 0 or to the image brightness/intensity using the value 1.
 
 As a best practice, start with the unsharp mask radius parameter. Radius settings that you can start with are the following:
 
-* **[!UICONTROL Website]**: 0.2-0.3 pixels
-* **[!UICONTROL Photographic printing (250-300 ppi)]**: 0.3-0.5 pixels
-* **[!UICONTROL Offset printing (266-300 ppi)]**: 0.7-1.0 pixels
-* **[!UICONTROL Canvas printing (150 ppi)]**: 1.5-2.0 pixels
+* **[!UICONTROL Website]** - 0.2-0.3 pixels
+* **[!UICONTROL Photographic printing (250-300 ppi)]** - 0.3-0.5 pixels
+* **[!UICONTROL Offset printing (266-300 ppi)]** - 0.7-1.0 pixels
+* **[!UICONTROL Canvas printing (150 ppi)]** - 1.5-2.0 pixels
 
 Gradually increase the amount from 1.75 to 4. If sharpening is still not the way you want, increase the radius by a decimal point and run the amount again from 1.75 to 4. Repeat as necessary.
 

@@ -8,6 +8,7 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
+exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
 ---
 # Commerce Multi-Store Setup {#multi-store}
 

@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
+role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 ---
 # How to Setup MongoDB for Demo {#how-to-setup-mongodb-for-demo}

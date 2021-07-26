@@ -8,6 +8,7 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 feature: Commerce Integration Framework
+exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 ---
 # eCommerce Overview{#ecommerce-overview}
 
@@ -36,4 +37,3 @@ For AEM and Magento, please see [AEM and Magento integration](https://www.adobe.
 >For information about concepts and administering eCommerce implementations, see [Administering eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
 >
 >For information about extending eCommerce capabilities, see [Developing eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
-

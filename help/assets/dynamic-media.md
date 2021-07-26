@@ -1,5 +1,5 @@
 ---
-title: Working with Dynamic Media
+title: Work with Dynamic Media
 description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 ---
@@ -15,7 +15,7 @@ feature: Collaboration,Asset Management
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 
-Dynamic media serves interactive viewing experiences, including zoom, 360-degree spin, and video. Dynamic media uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
+Dynamic Media serves interactive viewing experiences, including zoom, 360-degree spin, and video. Dynamic Media uniquely incorporates the workflows of the Adobe Experience Manager digital asset management (Assets) solution to simplify and streamline the digital campaign management process.
 
 <!-- >ARTICLE IS MISSING. GIVES 404 [!NOTE]
 >
@@ -23,7 +23,7 @@ Dynamic media serves interactive viewing experiences, including zoom, 360-degree
 
 ## What you can do with Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media lets you manage your assets before publishing them. How to work with assets in general is covered in detail in [Working with Digital Assets](manage-assets.md). General topics include uploading, downloading, editing, and publishing assets; viewing and editing properties, and searching for assets.
+Dynamic Media lets you manage your assets before publishing them. How to work with assets in general is covered in detail in [Work with digital assets](manage-assets.md). General topics include uploading, downloading, editing, and publishing assets; viewing and editing properties, and searching for assets.
 
 Dynamic Media-only features include the following:
 
@@ -36,11 +36,11 @@ Dynamic Media-only features include the following:
 
 * [Spin Sets](spin-sets.md)
 * [Video](video.md)
-* [Delivering Dynamic Media Assets](delivering-dynamic-media-assets.md)
-* [Managing Assets](managing-assets.md)
-* [Using Quickviews to create custom pop-ups](custom-pop-ups.md)
+* [Deliver Dynamic Media assets](delivering-dynamic-media-assets.md)
+* [Manage assets](managing-assets.md)
+* [Create custom pop-ups using Quickview](custom-pop-ups.md)
 
-See also [Setting up Dynamic Media](administering-dynamic-media.md).
+See also [Set up Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ You can tell whether Dynamic Media is enabled (turned on) by the following chara
 * Image sets, spin sets, mixed media sets are available.
 * PTIFF renditions are created.
 
-When you click an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media uses the on-demand HTML5 viewers.
+When you select an image asset, the view of the asset is different with Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media uses the on-demand HTML5 viewers.
 
 ### Dynamic renditions {#dynamic-renditions}
 
@@ -70,7 +70,7 @@ Image sets, spin sets, and mixed media sets are available if Dynamic Media is en
 
 ### PTIFF renditions {#ptiff-renditions}
 
-Dynamic media enabled assets include `pyramid.tiffs`.
+Dynamic Media-enabled assets include `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 

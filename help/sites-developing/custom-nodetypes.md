@@ -490,7 +490,7 @@ Poll configuration.
 
 **Definition**
 
-* `[cq:PollConfig]
+* `[cq:PollConfig]`
     * `mixin`
     * `- source (String) mandatory`
     * `- target (String)`
@@ -519,7 +519,7 @@ A mixin that defines a geographic location in decimal degrees (DD).
 
 **Definition**
 
-* `[cq:GeoLocation]
+* `[cq:GeoLocation]`
     * `mixin`
     * `- latitude (double)`
     * `- longitude (double)`
@@ -655,7 +655,7 @@ Defines replication status information mixin.
 
 **Definition**
 
-* `[cq:ReplicationStatus]
+* `[cq:ReplicationStatus]`
     * `mixin`
     * `- cq:lastPublished (date) ignore`
     * `- cq:lastPublishedBy (string) ignore`
@@ -918,7 +918,7 @@ Tab panel
 
 **Definition**
 
-* `[cq:TabPanel] > cq:Panel orderable``
+* `[cq:TabPanel]` > `cq:Panel orderable`
     * `- activeTab (long)`
 
 ### cq:Field {#cq-field}

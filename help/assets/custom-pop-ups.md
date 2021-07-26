@@ -1,6 +1,6 @@
 ---
-title: Creating custom pop-ups using Quickviews
-seo-title: Using Quickviews to create custom pop-ups
+title: Create custom pop-ups using Quickview
+seo-title: Use Quickview to create custom pop-ups
 description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
@@ -10,22 +10,22 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 ---
-# Using Quickviews to create custom pop-ups {#using-quickviews-to-create-custom-pop-ups}
+# Create custom pop-ups using Quickview {#using-quickviews-to-create-custom-pop-ups}
 
-The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer, this functionality lets users tap on a hotspot, or a thumbnail image, or on an image map to see information or related content.
+The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. However, you can trigger custom content to display in the pop-ups. Depending on the viewer, this functionality lets users select on a hotspot, or a thumbnail image, or on an image map to see information or related content.
 
-Quickviews are supported by the following viewers in Dynamic Media:
+Quickview is supported by the following viewers in Dynamic Media:
 
-* Interactive Images (clickable hotspots)
-* Interactive Video (clickable thumbnail images during video playback)
-* Carousel Banners (clickable hotspots or image maps)
+* Interactive image (clickable hotspots)
+* Interactive video (clickable thumbnail images during video playback)
+* Carousel banner (clickable hotspots or image maps)
 
 While the functionality of each viewer differs, the process of creating a Quickview is the same across all three supported viewers.
 
-**To use Quickviews to create custom pop-ups:**
+**To create custom pop-ups using Quickview:**
 
 1. Create a Quickview for an uploaded asset.
 
@@ -108,7 +108,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
 1. You now must configure the `quickViewActivate` handler.
 
-   The `quickViewActivate` handler controls the Quickviews in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview and a sample `loadQuickView` function call.
+   The `quickViewActivate` handler controls the Quickview in the viewer. The handler contains the variable list and function calls for use with the Quickview. The embed code provides mapping for the SKU variable set in the Quickview and a sample `loadQuickView` function call.
 
    **Variable mapping**
    Map variables for use in your web page to the SKU value and generic variables contained in the Quickview:
@@ -258,7 +258,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
    `*viewerInstance.*init()`
 
    **Example**
-   This example uses the Interactive image viewer.
+   This example uses the Interactive Image viewer.
 
    `s7interactiveimageviewer.init()`
 

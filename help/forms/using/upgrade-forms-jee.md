@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 ---
 # Upgrade to AEM 6.5 Forms on JEE {#upgrade-to-aem-forms-jee}

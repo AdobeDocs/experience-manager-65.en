@@ -26,7 +26,7 @@ The system information service provides a set of REST APIs to retrieve informati
  <tbody>
   <tr>
    <td><p>SystemInfo.properties</p></td>
-   <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties`</p></td>
+   <td><p>https://'[server]:[port]'/rest/services/SystemInfo.properties'</p></td>
    <td><p>This API is a wrapper for <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. It retrieves configuration of the current working environment. </p></td>
   </tr>
   <tr>

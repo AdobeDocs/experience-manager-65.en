@@ -1,6 +1,7 @@
 ---
-title: Configuring Dynamic Media - Hybrid mode
+title: Configure Dynamic Media - Hybrid mode
 description: Learn how to configure Dynamic Media - Hybrid mode.
+mini-toc-levels: 3
 uuid: 39ad7d83-d310-4baf-9d85-5532c2f201f3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,18 +10,17 @@ content-type: reference
 discoiquuid: 7d8e7273-29f3-4a45-ae94-aad660d2c71d
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/config-dynamic
-
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 ---
-# Configuring Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}
+# Configure Dynamic Media - Hybrid mode {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media-Hybrid must be enabled and configured for use. Depending on your use case, Dynamic Media has several [supported configurations](#supported-dynamic-media-configurations).
 
 >[!NOTE]
 >
->If you intend to configure and run Dynamic Media in Scene7 run mode, see [Configuring Dynamic Media - Scene7 mode](/help/assets/config-dms7.md).
+>If you intend to configure and run Dynamic Media in Scene7 run mode, see [Configure Dynamic Media - Scene7 mode](/help/assets/config-dms7.md).
 >
 >If you intend to configure and run Dynamic Media in hybrid run mode, follow the instructions on this page.
 
@@ -37,7 +37,7 @@ Learn more about working with [video](/help/assets/video.md) in Dynamic Media.
 >* `s7access.log`
 >* `ImageServing.log`
 >
->They are documented in [Monitoring and Maintaining your Experience Manager instance](/help/sites-deploying/monitoring-and-maintaining.md).
+>They are documented in [Monitor and maintain your Experience Manager instance](/help/sites-deploying/monitoring-and-maintaining.md).
 
 Hybrid publishing and delivery is a core feature of the Dynamic Media addition to Adobe Experience Manager. Hybrid publishing lets you deliver Dynamic Media assets, such as images, sets, and video, from the cloud instead of from the Experience Manager publish nodes.
 
@@ -57,7 +57,7 @@ If you are a customer of Dynamic Media, you are required to use hybrid delivery 
 
 The configuration tasks that follow reference the following terms:
 
-| **Term** |**Dynamic Media Enabled** |**Description** |
+| **Term** | **Dynamic Media Enabled** | **Description** |
 |---|---|---|
 | Experience Manager Author node |White check mark in a green circle |The author node that you deploy to On-Premise or through Managed Services. |
 | Experience Manager Publish node |White "X" in a red square. |The publish node that you deploy to On-Premise or through Managed Services. |
@@ -132,7 +132,7 @@ You can choose to implement Dynamic Media only for imaging, only for video, or f
  </tbody>
 </table>
 
-## Enabling Dynamic Media {#enabling-dynamic-media}
+## Enable Dynamic Media {#enabling-dynamic-media}
 
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) is disabled by default. To take advantage of Dynamic Media features, you must enable Dynamic Media by using the `dynamicmedia` run mode as you would, for example, `publish` run mode. Before enabling, make sure to review the [technical requirements](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on).
 
@@ -184,30 +184,30 @@ To enable Dynamic Media, you must enable the Dynamic Media run mode either from 
 
 ### If you installed Experience Manager to a different port or context path ... {#if-you-installed-aem-to-a-different-port-or-context-path}
 
-If you are deploying [Experience Manager to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you must configure the **self** domain in the externalizer. Otherwise, thumbnail generation for assets does not work properly for Dynamic Media assets.
+If you are deploying [Experience Manager to an application server](/help/sites-deploying/application-server-install.md) and have Dynamic Media enabled, you must configure the **self-domain** in the Externalizer. Otherwise, thumbnail generation for assets does not work properly for Dynamic Media assets.
 
-In addition, if you run quickstart on a different port or context path, you also have to change the **self** domain.
+In addition, if you run quickstart on a different port or context path, you also have to change the **self-domain**.
 
 When Dynamic Media is enabled, the static thumbnail renditions for image assets are generated using Dynamic Media. For thumbnail generation to work properly for Dynamic Media, Experience Manager must perform a URL request to itself and must know both the port number and the context path.
 
 In Experience Manager:
 
-* The **self** domain in the [externalizer](/help/sites-developing/externalizer.md) is used to retrieve both the port number and context path.
-* If no **self** domain is configured, the port number and context path are retrieved from the Jetty HTTP service.
+* The **self-domain** in the [Externalizer](/help/sites-developing/externalizer.md) is used to retrieve both the port number and context path.
+* If no **self-domain** is configured, the port number and context path are retrieved from the Jetty HTTP service.
 
-In an Experience Manager QuickStart WAR deployment, the port number and context path cannot be derived, therefore you must configure a **self** domain. See [externalizer documentation](/help/sites-developing/externalizer.md) on how to configure the **self** domain.
+In an Experience Manager QuickStart WAR deployment, the port number and context path cannot be derived, therefore you must configure a **self-domain**. See [Externalizer documentation](/help/sites-developing/externalizer.md) on how to configure the **self-domain**.
 
 >[!NOTE]
 >
->In an [Experience Manager Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self** domain generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you must configure the **self** domain.
+>In an [Experience Manager Quickstart stand-alone deployment](/help/sites-deploying/deploy.md), a **self-domain** generally does not need to be configured because the port number and context path can be auto-configured. However, if all network interfaces are turned off, you must configure the **self-domain**.
 
-## Disabling Dynamic Media  {#disabling-dynamic-media}
+## Disable Dynamic Media  {#disabling-dynamic-media}
 
 Dynamic Media is not enabled by default. However, if you have previously enabled Dynamic Media, you can turn it off later.
 
 To disable Dynamic Media after you have enabled it, you remove the `-r dynamicmedia` run mode flag.
 
-**To disable Dynamic Media after it has been enabled**
+**To disable Dynamic Media:**
 
 1. On the command line, when launching the quickstart, you can do either of the following:
 
@@ -226,9 +226,9 @@ To disable Dynamic Media after you have enabled it, you remove the `-r dynamicme
    >
    >Also note that when Dynamic Media run mode is disabled after configuring the Experience Manager server, all assets that were uploaded under that run mode are now invalid.
 
-## (Optional) Migrating Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Optional) Migrate Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-If you are upgrading Experience Manager Dynamic Media from 6.3 to 6.5 (which now includes the ability for zero downtime deployments), you must run the following curl command. The command migrates all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
+If you are upgrading Experience Manager - Dynamic Media from 6.3 to 6.5 (which now includes the ability for zero downtime deployments), you must run the following curl command. The command migrates all your presets and configurations from `/etc` to `/conf` in CRXDE Lite.
 
 >[!NOTE]
 >
@@ -242,7 +242,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-## Configuring Image Replication {#configuring-image-replication}
+## Configure image replication {#configuring-image-replication}
 
 Dynamic Media image delivery works by publishing image assets, including video thumbnails, from Experience Manager Author and replicating them to Adobe's on-demand replication service (the Replication Service URL). Assets are then delivered by way of the on-demand image delivery service (the Image Service URL).
 
@@ -265,7 +265,7 @@ After you have configured the replication agent, you must [validate and test tha
 >
 >To change the memory limit for PTIFF creation, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]** and change the **[!UICONTROL maxMemory]** value.
 
-### Setting up Authentication {#setting-up-authentication}
+### Set up authentication {#setting-up-authentication}
 
 Set up replication authentication on author so you can replicate images to the Dynamic Media image delivery service. You first obtain a KeyStore and then save it under the **[!UICONTROL dynamic-media-replication]** user and configure it. Your company administrator received a welcome email with the KeyStore file and necessary credentials during the provisioning process. If you did not receive this information, contact Adobe Customer Care.
 
@@ -273,13 +273,13 @@ Set up replication authentication on author so you can replicate images to the D
 
 1. Contact Adobe Customer Care for your KeyStore file and password if you do not already have the file and password. This information is a necessary part of provisioning. It associates the keys to your account.
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 
-1. On the User Management page, navigate to the **[!UICONTROL dynamic-media-replication]** user, then tap to open.
+1. On the User Management page, navigate to the **[!UICONTROL dynamic-media-replication]** user, then select to open.
 
    ![dm-replication](assets/dm-replication.png)
 
-1. In the Edit User Settings For dynamic-media-replication page, tap the **[!UICONTROL Keystore]** tab, then click **[!UICONTROL Create KeyStore]**.
+1. In the Edit User Settings For dynamic-media-replication page, select the **[!UICONTROL Keystore]** tab, then select **[!UICONTROL Create KeyStore]**.
 
    ![dm-replication-keystore](assets/dm-replication-keystore.png)
 
@@ -294,23 +294,23 @@ Set up replication authentication on author so you can replicate images to the D
 1. On the **[!UICONTROL Edit User Settings For dynamic-media-replication]** page, expand the **Add Private Key from KeyStore file** area and add the following (see the images that follow):
 
     * In the **[!UICONTROL New Alias]** field, enter the name of an alias that you want to use later in the replication configuration. For example, you could use `replication` as an alias.
-    * Tap **[!UICONTROL KeyStore File]**. Navigate to the KeyStore file provided to you by Adobe, select it, then tap **[!UICONTROL Open]**.
+    * Select **[!UICONTROL KeyStore File]**. Navigate to the KeyStore file provided to you by Adobe, select it, then select **[!UICONTROL Open]**.
     * In the **[!UICONTROL KeyStore File Password]** field, enter the KeyStore File password. This password is **not** the KeyStore password that you created in Step 5 but is the KeyStore File password Adobe provides in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a KeyStore File password.
     * In the **[!UICONTROL Private Key Password]** field, enter the private key password (can be the same private key password provided in the previous step). Adobe provides the private key password in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key password.
     * In the **[!UICONTROL Private Key Alias]** field, enter the private key alias. For example, `*companyname*-alias`. Adobe provides the private key alias in the Welcome email sent to you during provisioning. Contact Adobe Customer Care if you did not receive a private key alias.
 
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
-1. Tap **[!UICONTROL Save & Close]** to save your changes to this user.
+1. Select **[!UICONTROL Save & Close]** to save your changes to this user.
 
    Next, you must [configure the replication agent](#configuring-the-replication-agent).
 
-### Configuring the Replication Agent {#configuring-the-replication-agent}
+### Configure the replication agent {#configuring-the-replication-agent}
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**.
-1. On the Agents on author page, tap **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery)]**.
-1. Tap **[!UICONTROL Edit]**.
-1. Tap the **[!UICONTROL Settings]** tab, then enter the following:
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**.
+1. On the Agents on author page, select **[!UICONTROL Dynamic Media Hybrid Image Replication (s7delivery)]**.
+1. Select **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL Settings]** tab, then enter the following:
 
     * **[!UICONTROL Enabled]** - Select this check box to enable the replication agent.
     * **[!UICONTROL Region]** - Set to the appropriate region: North America, Europe, or Asia
@@ -322,13 +322,13 @@ Set up replication authentication on author so you can replicate images to the D
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
 
-1. Tap **[!UICONTROL OK]**.
+1. Select **[!UICONTROL OK]**.
 
-### Validating the Replication Agent for Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
+### Validate the replication agent for Dynamic Media {#validating-the-replication-agent-for-dynamic-media}
 
 To validate the replication agent for Dynamic Media, do the following:
 
-Tap **[!UICONTROL Test Connection]**. Example output is as follows:
+Select **[!UICONTROL Test Connection]**. Example output is as follows:
 
 ```shell
 11.03.2016 10:57:55 - Transferring content for ReplicationAction{type=TEST, path[0]='/content/dam', time=1457722675402, userId='admin', revision='null'}
@@ -349,10 +349,10 @@ Replication test succeeded
 >You can also check by doing one of the following:
 >
 >* Check the replication logs to make sure that the asset is replicated.
->* Publish an image. Tap the image and select **[!UICONTROL Viewers]** in drop-down menu, then select a viewer preset. Click **[!UICONTROL URL]**. To verify that you can see the image, copy and paste the URL path in the browser.
+>* Publish an image. Select the image and select **[!UICONTROL Viewers]** in drop-down menu, then select a viewer preset. Select **[!UICONTROL URL]**. To verify that you can see the image, copy and paste the URL path in the browser.
 >
 
-### Troubleshooting Authentication {#troubleshooting-authentication}
+### Troubleshoot authentication {#troubleshooting-authentication}
 
 When setting up authentication, here are some issues you can run into with their solutions. Before checking for these issues, make sure you have set up replication.
 
@@ -379,7 +379,8 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**Solution**: Check that the `KeyStore` is saved to **dynamic-media-replication** user and is provided with the correct password.
+**Solution:**
+Check that the `KeyStore` is saved to **dynamic-media-replication** user and is provided with the correct password.
 
 #### Problem: Could Not Decrypt Key - Could Not Decrypt Data {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
@@ -395,7 +396,8 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**Solution**: Check the password. The password saved in the replication agent is not the same password that was used to create keystore.
+**Solution:**
+Check the password. The password saved in the replication agent is not the same password that was used to create keystore.
 
 #### Problem: InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
@@ -415,7 +417,8 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**Solution**: Make sure that the Java™ process on the Experience Manager Author has the system property `-Djavax.net.ssl.trustStore=` set to a valid truststore.
+**Solution:**
+Make sure that the Java™ process on the Experience Manager Author has the system property `-Djavax.net.ssl.trustStore=` set to a valid truststore.
 
 #### Problem: KeyStore is either not set up or it is not initialized {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
@@ -434,18 +437,18 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 ```
 
-**Solution**:
+**Solution:**
 
 1. Navigate to the User Management page:
    `localhost:4502/libs/granite/security/content/useradmin.html`
-1. On the User Management page, navigate to the `dynamic-media-replication` user, then tap to open.
-1. Click the **[!UICONTROL KeyStore]** tab. If the **[!UICONTROL Create KeyStore]** button appears, then you must redo the steps under [Setting up Authentication](#setting-up-authentication) earlier.
+1. On the User Management page, navigate to the `dynamic-media-replication` user, then select to open.
+1. Select the **[!UICONTROL KeyStore]** tab. If the **[!UICONTROL Create KeyStore]** button appears, then you must redo the steps under [Setting up Authentication](#setting-up-authentication) earlier.
 1. If you had to redo the KeyStore setup, you must do [Configuring the Replication Agent](/help/assets/config-dynamic.md#configuring-the-replication-agent) again, as well.
 
    Reconfigure the s7delivery Replication Agent.
    `localhost:4502/etc/replication/agents.author/s7delivery.html`
 
-1. Tap **[!UICONTROL Test Connection]** to verify that the configuration is valid.
+1. Select **[!UICONTROL Test Connection]** so you can verify that the configuration is valid.
 
 #### Problem: Publish Agent is using SSL instead of OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
@@ -466,7 +469,7 @@ Replicate log example:
 
 **Solution:**
 
-1. In Experience Manager, click **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 
    `localhost:4502/crx/de/index.jsp`
 
@@ -477,9 +480,9 @@ Replicate log example:
 
    `enableOauth=true`
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+1. Near the upper-left corner of the page, select **[!UICONTROL Save All]**.
 
-### Testing your Configuration {#testing-your-configuration}
+### Test your configuration {#testing-your-configuration}
 
 Adobe recommends that you perform an end-to-end test of the configuration.
 
@@ -490,20 +493,20 @@ Be sure you have already done the following before beginning this test:
 
 **To test your configuration:**
 
-1. Upload an image asset. (In Assets, tap **[!UICONTROL Create]** > **[!UICONTROL Files]** and select the file.)
+1. Upload an image asset. (In Assets, navigate to **[!UICONTROL Create]** > **[!UICONTROL Files]** and select the file.)
 1. Wait for the workflow to finish.
-1. Publish the image asset. (Select the asset and tap **[!UICONTROL Quick Publish]**.)
+1. Publish the image asset. (Select the asset and select **[!UICONTROL Quick Publish]**.)
 1. Navigate to the renditions for that image by opening the image, and tapping **[!UICONTROL Renditions]**.
 
    ![chlimage_1-510](assets/chlimage_1-510.png)
 
 1. Select any dynamic rendition.
-1. To obtain the URL for this asset, click **[!UICONTROL URL]**.
+1. To obtain the URL for this asset, select **[!UICONTROL URL]**.
 1. Navigate to the selected URL and check whether the image behaves as expected.
 
 Another way to test that your assets were delivered is to append req=exists to your URL.
 
-## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
+## Configure Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
 The Dynamic Media Cloud Service supports hybrid publishing and delivery of images and video, video analytics, and video encoding, among other things.
 
@@ -513,10 +516,10 @@ As part of the configuration, you must enter a registration ID, video service UR
 >
 >Before setting up Dynamic Media Cloud Services, be sure to have your publish instance set up. You must also have replication set up before configuring Dynamic Media Cloud Services.
 
-To configure Dynamic Media Cloud Services:
+**To configure Dynamic Media Cloud Services:**
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration (Pre-6.3)]**.
-1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]**, then tap **[!UICONTROL Create]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration (Pre-6.3)]**.
+1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]**, then select **[!UICONTROL Create]**.
 1. In the **[!UICONTROL Create Dynamic Media Configuration]** dialog box, in the Title field, type a title.
 1. If you are configuring Dynamic Media for video,
 
@@ -524,10 +527,10 @@ To configure Dynamic Media Cloud Services:
     * In the **[!UICONTROL Video Service URL]** field, enter the video service URL for the Dynamic Media Gateway.
 
 1. If you are configuring Dynamic Media for imaging, in the **[!UICONTROL Image Service URL]** field, enter the image service URL for the Dynamic Media Gateway.
-1. Tap **[!UICONTROL Save]** to return to the Dynamic Media Configuration Browser page.
-1. To access the global navigation console, tap the Experience Manager logo.
+1. Select **[!UICONTROL Save]** to return to the Dynamic Media Configuration Browser page.
+1. To access the global navigation console, select the Experience Manager logo.
 
-## Configuring Video Reporting {#configuring-video-reporting}
+## Configure video reporting {#configuring-video-reporting}
 
 You can configure video reporting across multiple installations of Experience Manager using Dynamic Media Hybrid.
 
@@ -539,7 +542,7 @@ You can configure video reporting across multiple installations of Experience Ma
 1. Install the Video Analytics preset package to any ***new*** Author node ***before*** you configure Dynamic Media Configuration (Pre 6.3).
 1. Verify and debug the package installation.
 
-### Creating a Video Analytics Preset package after configuring the first Author node {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
+### Create a Video Analytics preset package after configuring the first Author node {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 When you have finished this task, you have a package file that contains the Video Analytics presets. These presets contain a report suite, the tracking server, the tracking namespace, and the Experience Cloud Organization ID, if available.
 
@@ -553,7 +556,7 @@ When you have finished this task, you have a package file that contains the Vide
 1. Build the package.
 1. Download or share the Video Analytics preset package so that it can be shared with subsequent new Author nodes.
 
-### Installing the Video Analytics preset package before you configure more Author nodes {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Install the Video Analytics preset package before you configure more Author nodes {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Be sure that you complete this task ***before*** you configure Dynamic Media Configuration (Pre 6.3). Failure to do so results in the creation of another unused report suite. In addition, even though video reporting continues to work correctly, the gathering of data is not optimized.
 
@@ -563,15 +566,14 @@ Make sure that the Video Analytics preset package from the first Author node is 
 1. Install the Video Analytics preset package.
 1. Configure Dynamic Media Configuration (Pre 6.3).
 
-### Verifying and debugging the package installation {#verifying-and-debugging-the-package-installation}
+### Verify and debug the package installation {#verifying-and-debugging-the-package-installation}
 
 1. Do any one of the following to verify and, if necessary, debug the package installation:
 
     * **Check the Video Analytics preset by way of the JCR**
       To check the Video Analytics preset by way of the JCR, you must have access to CRXDE Lite.
 
-      Experience Manager - In CRXDE Lite, navigate to `/conf/global/settings/
-      dam/dm/presets/analytics/jcr:content/userdata`
+      Experience Manager - In CRXDE Lite, navigate to `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
       As in `https://localhost:4502/crx/de/index.jsp#/conf/global/settings/dam/dm/presets/analytics/jcr%3Acontent/userdata`
 
@@ -594,7 +596,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
       ```
 
     * **Check the Video Analytics preset through the Video Reporting tool in Experience Manager**
-      Tap **[!UICONTROL Tools > Assets > Video Reporting]**
+      Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Reporting]**
 
       `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -612,7 +614,7 @@ Make sure that the Video Analytics preset package from the first Author node is 
 
    This error is also displayed if Video Reporting is run before you configure Dynamic Media Configuration (Pre 6.3) services.
 
-### Troubleshooting the video reporting configuration {#troubleshooting-the-video-reporting-configuration}
+### Troubleshoot the video reporting configuration {#troubleshooting-the-video-reporting-configuration}
 
 * During installation, sometimes connections to the Analytics API server times out. The installation retries the connection 20 times, but it still fails. When this situation occurs, the log file records multiple errors. Search for `SiteCatalystReportService`.
 * Not installing the Analytics Preset package first can cause the creation of a new report suite.
@@ -631,7 +633,7 @@ The preset’s properties are the following:
 
 Experience Manager 6.4 and newer versions save this preset at `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
-## Replicating Catalog Settings {#replicating-catalog-settings}
+## Replicate catalog settings {#replicating-catalog-settings}
 
 Publish your own default catalog settings as part of the setup process through the JCR. To replicate catalog settings:
 
@@ -643,19 +645,19 @@ Publish your own default catalog settings as part of the setup process through t
 
    `https://<*server*>:<*port*>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
-1. Tap the **[!UICONTROL Replication]** tab.
-1. Tap **[!UICONTROL Replicate]**.
+1. Select the **[!UICONTROL Replication]** tab.
+1. Select **[!UICONTROL Replicate]**.
 
-## Replicating Viewer Presets {#replicating-viewer-presets}
+## Replicate viewer presets {#replicating-viewer-presets}
 
 To deliver *an asset with a viewer preset, you must replicate/publish* the viewer preset. (All viewer presets must be activated *and* replicated to obtain the URL or embed code for an asset.
-See [Publishing Viewer Presets](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) for more information.
+See [Publish viewer presets](/help/assets/managing-viewer-presets.md#publishing-viewer-presets) for more information.
 
 >[!NOTE]
 >
->By default, the system shows various renditions when you select **[!UICONTROL Renditions]** and various viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase or decrease the number seen. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>By default, the system shows various renditions when you select **[!UICONTROL Renditions]** and various viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase or decrease the number seen. See [Increase the number of image presets that are displayed](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase the number of viewer presets that are displayed](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
-## Filtering Assets for Replication {#filtering-assets-for-replication}
+## Filter assets for replication {#filtering-assets-for-replication}
 
 In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your Experience Manager author environment to the Experience Manager publish node. This workflow is necessary because the Experience Manager Publish servers also deliver the assets.
 
@@ -669,16 +671,16 @@ Besides replicating the assets, the following non-assets are also replicated:
 
 The filters provide a way for you to *exclude* assets from being replicated to the Experience Manager publish node.
 
-### Using Default Asset Filters for Replication {#using-default-asset-filters-for-replication}
+### Use default asset filters for replication {#using-default-asset-filters-for-replication}
 
-If you are using Dynamic Media for (1) imaging in production **or** (2) imaging and video, then you can use the default filters that Adobe provides as-is. The following filters are active by default:
+If you use Dynamic Media for (1) imaging in production *or* (2) imaging and video, then you can use the default filters that Adobe provides as-is. The following filters are active by default:
 
 <table>
  <tbody>
   <tr>
    <td> </td>
    <td><strong>Filter</strong></td>
-   <td><strong>Mimetype</strong></td>
+   <td><strong>Mime type</strong></td>
    <td><strong>Renditions</strong></td>
   </tr>
   <tr>
@@ -718,41 +720,41 @@ If you are using Dynamic Media for (1) imaging in production **or** (2) imaging 
 >
 >Filters apply to MIME types and cannot be path-specific.
 
-### Setting up Asset Filters for Video-Only Deployments {#setting-up-asset-filters-for-video-only-deployments}
+### Set up asset filters for video-only deployments {#setting-up-asset-filters-for-video-only-deployments}
 
 If you are using Dynamic Media for video-only, follow these steps to set up asset filters for replication:
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**.
-1. On the Agents on author page, tap **[!UICONTROL Default Agent (publish)]**.
-1. Tap **[!UICONTROL Edit]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**.
+1. On the Agents on author page, select **[!UICONTROL Default Agent (publish)]**.
+1. Select **[!UICONTROL Edit]**.
 1. In the **[!UICONTROL Agent Settings]** dialog box, in the **[!UICONTROL Settings]** tab, check **[!UICONTROL Enabled]** to turn on the agent.
-1. Tap **[!UICONTROL OK]**.
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Select **[!UICONTROL OK]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
-1. Locate **[!UICONTROL filter-video]**, right-click it and select **[!UICONTROL Copy]**.
+1. Locate **[!UICONTROL filter-video]**, right-click it, then select **[!UICONTROL Copy]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Paste]**.
+1. Locate `jcr:content`, right-click it, then select **[!UICONTROL Paste]**.
 
 These steps set up the Experience Manager publish instance to deliver the video poster image and the video metadata required for playback, while the video itself is delivered by the Dynamic Media Cloud Service. The filter also excludes from replication the original video and static thumbnail renditions, which are not needed on the publish instance.
 
-### Setting up Asset Filters for Imaging in Non-Production Deployments {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
+### Set up asset filters for imaging in non-production deployments {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
 
 If you are using Dynamic Media for imaging in non-production deployments, follow these steps to set up asset filters for replication:
 
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**.
-1. On the Agents on author page, tap **[!UICONTROL Default Agent (publish)]**.
-1. Tap **[!UICONTROL Edit]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**.
+1. On the Agents on author page, select **[!UICONTROL Default Agent (publish)]**.
+1. Select **[!UICONTROL Edit]**.
 1. In the **[!UICONTROL Agent Settings]** dialog box, in the **[!UICONTROL Settings]** tab, check **[!UICONTROL Enabled]** to turn on the agent.
-1. Tap **[!UICONTROL OK]**.
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Select **[!UICONTROL OK]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters`
 
    ![image-2018-01-16-10-22-40-410](assets/image-2018-01-16-10-22-40-410.png)
 
-1. Locate **[!UICONTROL filter-images]**, right-click it and select **[!UICONTROL Copy]**.
+1. Locate **[!UICONTROL filter-images]**, right-click it, then select **[!UICONTROL Copy]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish`
-1. Locate **[!UICONTROL jcr:content]**, right-click it and select **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. Enter the name `damRenditionFilters` of type `nt:unstructured`.
-1. Locate `damRenditionFilters`, right-click it and select **[!UICONTROL Paste]**.
+1. Locate `jcr:content`, right-click it, then go to **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. Enter the name `damRenditionFilters` of type `nt:unstructured`.
+1. Locate `damRenditionFilters`, right-click it, then select **[!UICONTROL Paste]**.
 
 These steps set up the Experience Manager publish instance to deliver the images to your non-production environment. The filter also excludes from replication the original image and static renditions, which are not needed on the publish instance.
 
@@ -760,24 +762,22 @@ These steps set up the Experience Manager publish instance to deliver the images
 >
 >If there are many different filters in an author, each agent needs a different user assigned to it. The granite code enforces one-filter-per-user model. Always have a different user for each filter setup.
 >
->Are you using more than one filter on a server? For example, one filter for replication to publish and a second filter for s7delivery. If so, then you must ensure that these two filters have a different **userId** assigned to them in the **jcr:content** node. See the image that follows:
+>Are you using more than one filter on a server? For example, one filter for replication to publish and a second filter for s7delivery. If so, then you must ensure that these two filters have a different **userId** assigned to them in the `jcr:content` node. See the image that follows:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
-### Customizing Asset Filters for Replication {#customizing-asset-filters-for-replication}
+### Customize asset filters for replication (optional) {#customizing-asset-filters-for-replication}
 
-To optionally customize asset filters for replication:
-
-1. In Experience Manager, tap the Experience Manager logo to access the global navigation console and tap **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/dynamic_media_replication/jcr:content/damRenditionFilters` to review the filters.
 
    ![chlimage_1-511](assets/chlimage_1-511.png)
 
 1. To define the Mime Type for the filter, you can locate the Mime Type as follows:
 
-   In the left rail, expand `content > dam > <locate_your_asset> >  jcr:content > metadata` and then in the table, locate **[!UICONTROL dc:format]**.
+   In the left rail, expand `content > dam > <locate_your_asset> >  jcr:content > metadata` and then in the table, locate `dc:format`.
 
-   The following graphic is an example of an asset's path to dc:format.
+   The following graphic is an example of an asset's path to `dc:format`.
 
    ![chlimage_1-512](assets/chlimage_1-512.png)
 
@@ -791,26 +791,11 @@ To optionally customize asset filters for replication:
 
    Characters that you can use to filter for replication include the following:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Character to use</strong></td>
-   <td><strong>How it filters assets for replication</strong></td>
-  </tr>
-  <tr>
-   <td>*</td>
-   <td>Wildcard character<br /> </td>
-  </tr>
-  <tr>
-   <td>+</td>
-   <td>Includes assets for replication.</td>
-  </tr>
-  <tr>
-   <td>-</td>
-   <td>Excludes assets from replication.</td>
-  </tr>
- </tbody>
-</table>
+   | Character to use | How it filters assets for replication |
+   | --- | --- |
+   | `*` | Wildcard character |
+   | `+` | Includes assets for replication |
+   | `-` | Excludes assets from replication |
 
    Navigate to `content/dam/<locate your asset>/jcr:content/renditions`.
 
@@ -830,67 +815,36 @@ Configuring the Dynamic Media Image Server involves editing the Adobe CQ Scene7 
 >
 >Dynamic Media works out-of-the-box [after it is enabled](#enabling-dynamic-media). However, you can optionally choose to fine-tune your installation by configuring Dynamic Media Image Server to meet certain specifications or requirements.
 
-**Prerequisite**: *Before* you configure Dynamic Media Image Server, ensure that your VM of Windows® includes an installation of the Microsoft® Visual C++ Libraries. The libraries are necessary to run Dynamic Media Image Server. You can [download the Microsoft® Visual C++ 2010 Redistributable Package (x64) here](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
+**Prerequisite** - *Before* you configure Dynamic Media Image Server, ensure that your VM of Windows® includes an installation of the Microsoft® Visual C++ Libraries. The libraries are necessary to run Dynamic Media Image Server. You can [download the Microsoft® Visual C++ 2010 Redistributable Package (x64) here](https://www.microsoft.com/en-us/download/details.aspx?id=26999).
 
 To configure Dynamic Media Image Server settings:
 
-1. In the upper-left corner of Experience Manager, tap **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then tap **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. On the Adobe Experience Manager Web Console Configuration page, tap **[!UICONTROL OSGi]** > **[!UICONTROL Configuration]** to list all the bundles that are currently running within Experience Manager.
+1. In the upper-left corner of Experience Manager, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+1. On the Adobe Experience Manager Web Console Configuration page, go to **[!UICONTROL OSGi]** > **[!UICONTROL Configuration]** to list all the bundles that are currently running within Experience Manager.
 
    The Dynamic Media Delivery Servers are found under the following names in the list:
 
     * `Adobe CQ Scene7 ImageServer`
     * `Adobe CQ Scene7 PlatformServer`
 
-1. In the list of bundles, to the right of Adobe CQ Scene7 ImageServer, tap the **[!UICONTROL Edit]** icon.
+1. In the list of bundles, to the right of Adobe CQ Scene7 ImageServer, select the **[!UICONTROL Edit]** icon.
 1. In the Adobe CQ Scene7 ImageServer dialog box, set the following configuration values:
 
    >[!NOTE]
    >
    >Usually, there is no need to change the default values. However, if you do change the default values, you must restart the bundle for the changes to take effect.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property</strong></td>
-   <td><strong>Default value</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>TcpPort.name</td>
-   <td><code><em>empty</em></code></td>
-   <td>Port number to use for communication with the ImageServer process. By default free port is automatically detected.</td>
-  </tr>
-  <tr>
-   <td>AllowRemoteAccess.name</td>
-   <td><code><em>empty</em></code></td>
-   <td><p>Allow or disallow remote access to ImageServer process. If false, the image server listens only on localhost.</p> <p>Default externalizer settings that point to the localhost must specify the actual domain or IP address of the specific VM instance. The reason is because the localhost points to the parent system of the VM.</p> <p>Domains or IP addresses for the VM must have a host file entry so that it can resolve itself.</p> </td>
-  </tr>
-  <tr>
-   <td>MaxRenderRgnPixels</td>
-   <td>16 MPixels</td>
-   <td>Maximum size in megapixels that is rendered.</td>
-  </tr>
-  <tr>
-   <td>MaxMessageSize</td>
-   <td>16 MBytes</td>
-   <td>Maximum message size in megabytes that is delivered.</td>
-  </tr>
-  <tr>
-   <td>RandomAccessUrlTimeout</td>
-   <td>20</td>
-   <td>Time out value for how long in seconds the Image Server waits for the JCR to respond to a ranged tile request.</td>
-  </tr>
-  <tr>
-   <td>WorkerThreads</td>
-   <td>10</td>
-   <td>Number of worker threads.</td>
-  </tr>
- </tbody>
-</table>
+   | Property | Default value | Description |
+   | --- | --- | --- |
+   | `TcpPort.name` | *`empty`* | Port number to use for communication with the ImageServer process. By default free port is automatically detected. |
+   | `AllowRemoteAccess.name` | *`empty`* | Allow or disallow remote access to ImageServer process. If false, the image server listens only on localhost.<br> Default Externalizer settings that point to the localhost must specify the actual domain or IP address of the specific VM instance. The reason is because the localhost points to the parent system of the VM.<br>Domains or IP addresses for the VM must have a host file entry so that it can resolve itself. |
+   | `MaxRenderRgnPixels` | 16 MP | Maximum size in megapixels that is rendered. |
+   | `MaxMessageSize` | 16 MB | Maximum message size in megabytes that is delivered. |
+   | `RandomAccessUrlTimeout` | 20 | Time out value for how long in seconds the Image Server waits for the JCR to respond to a ranged tile request. |
+   | `WorkerThreads` | 10 | Number of worker threads. |
 
-1. Tap **[!UICONTROL Save]**.
-1. In the list of bundles, to the right of Adobe CQ Scene7 PlatformServer, tap the **[!UICONTROL Edit]** icon.
+1. Select **[!UICONTROL Save]**.
+1. In the list of bundles, to the right of Adobe CQ Scene7 PlatformServer, select the **[!UICONTROL Edit]** icon.
 1. In the Adobe CQ Scene7 PlatformServer dialog box, set the following default value options:
 
    >[!NOTE]
@@ -908,7 +862,7 @@ To configure Dynamic Media Image Server settings:
 
 The default manifest lets you configure the defaults that are used to generate the Dynamic Media Delivery responses. You can fine-tune quality (JPEG quality, resolution, resampling mode), caching (expiration), and prevent the rendering of images that are too large (defaultpix, defaultthumbpix, maxpix).
 
-The location of the default manifest configuration is taken from the **[!UICONTROL Catalog root]** default value of the **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundle. By default this value is at the following path within **[!UICONTROL Tools > General > CRXDE Lite]**:
+The location of the default manifest configuration is taken from the **[!UICONTROL Catalog root]** default value of the **[!UICONTROL Adobe CQ Scene7 PlatformServer]** bundle. By default this value is at the following path within **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**
 
 `/conf/global/settings/dam/dm/imageserver/`
 
@@ -916,68 +870,25 @@ The location of the default manifest configuration is taken from the **[!UICONTR
 
 You can change the values of the properties, as described in the table below, by entering new values.
 
-When you are finished changing the default manifest, in the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+When you are finished changing the default manifest, in the upper-left corner of the page, select **[!UICONTROL Save All]**.
 
-Be sure you tap the **[!UICONTROL Access Control]** tab (to the right of the Properties tab), then set the access control privileges to `jcr:read` for the everyone and dynamic-media-replication users.
+Be sure you select the **[!UICONTROL Access Control]** tab (to the right of the Properties tab), then set the access control privileges to `jcr:read` for the everyone and dynamic-media-replication users.
 
 ![Configure Image Server in CRXDE Lite and setting the Access Control tab](assets/configimageservercrxdeliteaccesscontroltab.png)
 
 Table of Manifest settings and their default values:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Property</strong></td>
-   <td><strong>Default value</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>bkgcolor</td>
-   <td>FFFFFF</td>
-   <td><p>Default background color. RGB value used to fill in any area of a reply image which does not contain actual image data.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api">BkgColor</a> in the Image Serving API.</p> </td>
-  </tr>
-  <tr>
-   <td>defaultpix</td>
-   <td>300,300</td>
-   <td><p>Default view size. The server constrains reply images to be no larger than this width and height, if the request does not specify the view size explicitly using wid=, hei=, or scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values can be set to 0 to keep them unconstrained. Does not apply to nested/embedded requests.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api">DefaultPix</a> in the Image Serving API.</p> <p>Usually, however, you are using a viewer preset or image preset to deliver the asset. Defaultpix only applies to an asset that is not using a viewer preset or image preset.</p> </td>
-  </tr>
-  <tr>
-   <td>defaultthumbpix</td>
-   <td>100,100</td>
-   <td><p>Default thumbnail size. Used instead of attribute::DefaultPix for thumbnail requests (req=tmb).</p> <p>The server constrains reply images to be no larger than this width and height. This action is true if a thumbnail request (req=tmb) does not specify the size explicitly and does not specify the view size explicitly using `wid=`, `hei=`, or `scl=`.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values can be set to 0 to keep them unconstrained. </p> <p>Does not apply to nested/embedded requests.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api">DefaultThumbPix</a> in the Image Serving API. </p> </td>
-  </tr>
-  <tr>
-   <td>expiration</td>
-   <td>36000000</td>
-   <td><p>Default client cache time to live. Provides a default expiration interval in case a particular catalog record does not contain a valid catalog::Expiration value.</p> <p>Real number, 0 or greater. Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. Contact Customer Care if you need the cache cleared sooner.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">Expiration</a> in the Image Serving API.</p> </td>
-  </tr>
-  <tr>
-   <td>jpegquality</td>
-   <td>80</td>
-   <td><p>Default JPEG encoding attributes. Specifies the default attributes for JPEG reply images.</p> <p>Integer number and flag, separated by a comma. The first value is in the range 1..100 and defines the quality. The second value can be 0 for normal behavior, or 1 to disable the RGB chromaticity down-sampling employed by JPEG encoders.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api">JpegQuality</a> in the Image Serving API.</p> </td>
-  </tr>
-  <tr>
-   <td>maxpix</td>
-   <td>2000,2000</td>
-   <td><p>Reply image size limit. Maximum reply image width and height that is returned to the client.</p> <p>The server returns an error if a request causes a reply image whose width or height is larger than attribute::MaxPix.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api">MaxPix</a> in the Image Serving API.</p> </td>
-  </tr>
-  <tr>
-   <td>resmode</td>
-   <td>SHARP2</td>
-   <td><p>Default resampling mode. Specifies the default resampling and interpolation attributes to be used for scaling image data.</p> <p>Used when resMode= is not specified in a request.</p> <p>Allowed values include BILIN, BICUB, or SHARP2.</p> <p>Enum. Set to 2 for bilin, 3 for bicub, or 4 for sharp2 interpolation mode. Use sharp2 for best results.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api">ResMode</a> in the Image Serving API.</p> </td>
-  </tr>
-  <tr>
-   <td>resolution</td>
-   <td>72</td>
-   <td><p>Default object resolution. Provides a default object resolution in case a particular catalog record does not contain a valid catalog::Resolution value.</p> <p>Real number, larger than 0. Typically expressed as pixels per inch, but can also be in other units, such as pixels per meter.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api">Resolution</a> in the Image Serving API.</p> </td>
-  </tr>
-  <tr>
-   <td>thumbnailtime</td>
-   <td>1%,11%,21%,31%,41%,51%,61%,71%,81%,91%</td>
-   <td>These values represent a snapshot of video playtime and are passed to <a href="https://www.encoding.com/">encoding.com</a>. See <a href="/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode">About video thumbnails</a> for more information.</td>
-  </tr>
- </tbody>
-</table>
+   | Property | Default value | Description |
+   | --- | --- | --- |
+   | `bkgcolor` | `FFFFFF` | Default background color. RGB value used to fill in any area of a reply image which does not contain actual image data. See also [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html#image-serving-api) in the Image Serving API. |
+   | `defaultpix` | `300,300` | Default view size. The server constrains reply images to be no larger than this width and height, if the request does not specify the view size explicitly using wid=, hei=, or scl=.<br>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values can be set to 0 to keep them unconstrained. Does not apply to nested/embedded requests.<br>See also [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html#image-serving-api) in the Image Serving API.<br>Usually, however, you are using a viewer preset or image preset to deliver the asset. Defaultpix only applies to an asset that is not using a viewer preset or image preset. |
+   | `defaultthumbpix` | `100,100` | Default thumbnail size. Used instead of attribute::DefaultPix for thumbnail requests (`req=tmb`).<br>The server constrains reply images to be no larger than this width and height. This action is true if a thumbnail request (`req=tmb`) does not specify the size explicitly and does not specify the view size explicitly using `wid=`, `hei=`, or `scl=`.<br>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. Either or both values can be set to 0 to keep them unconstrained.<br>Does not apply to nested/embedded requests.<br>See also [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html#image-serving-api) in the Image Serving API. |
+   | `expiration` | `36000000` | Default client cache time to live. Provides a default expiration interval in case a particular catalog record does not contain a valid catalog::Expiration value.<br>Real number, 0 or greater. Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. Contact Customer Care if you need the cache cleared sooner.<br>See also [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in the Image Serving API. |
+   | `jpegquality` | `80` | Default JPEG encoding attributes. Specifies the default attributes for JPEG reply images.<br>Integer number and flag, separated by a comma. The first value is in the range 1..100 and defines the quality. The second value can be 0 for normal behavior, or 1 to disable the RGB chromaticity down-sampling employed by JPEG encoders.<br>See also [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html#image-serving-api) in the Image Serving API. |
+   | `maxpix` | `2000,2000` | Reply image size limit. Maximum reply image width and height that is returned to the client.<br>The server returns an error if a request causes a reply image whose width or height is larger than attribute::MaxPix.<br>See also [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=en#image-serving-api) in the Image Serving API. |
+   | `resmode` | `SHARP2` | Default resampling mode. Specifies the default resampling and interpolation attributes to be used for scaling image data.<br>Used when `resMode=` is not specified in a request.<br>Allowed values include `BILIN`, `BICUB`, or `SHARP2`.<br>Enum. Set to 2 for `bilin`, 3 for `bicub`, or 4 for `sharp2` interpolation mode. Use `sharp2` for best results.<br>See also [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html#image-serving-api) in the Image Serving API.  |
+   | `resolution` | `72` | Default object resolution. Provides a default object resolution in case a particular catalog record does not contain a valid catalog::Resolution value.<br>Real number, larger than 0. Typically expressed as pixels per inch, but can also be in other units, such as pixels per meter.<br>See also [Resolution](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html#image-serving-api) in the Image Serving API. |
+   | `thumbnailtime` | `1%,11%,21%,31%,41%,51%,61%,71%,81%,91%` | These values represent a snapshot of video playtime and are passed to [encoding.com](https://www.encoding.com/). See [About video thumbnail](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-hybrid-mode) for more information. |
 
 ## Configuring Dynamic Media Color Management {#configuring-dynamic-media-color-management}
 
@@ -1016,17 +927,17 @@ To use the Dynamic Media color management capabilities, install feature pack 124
 
 After you install the feature pack, configure the appropriate default color profiles to enable color correction when requesting RGB or CMYK image data.
 
-**To configure the default color profiles**
+**To configure the default color profiles:**
 
-1. In **[!UICONTROL Tools > General > CRXDE Lite]**, navigate to `/conf/global/settings/dam/dm/imageserver/jcr:content` which contains the default Adobe Color Profiles.
+1. In **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**, navigate to `/conf/global/settings/dam/dm/imageserver/jcr:content` which contains the default Adobe Color Profiles.
 
    ![chlimage_1-514](assets/chlimage_1-514.png)
 
-1. Add a color correction property by scrolling to the bottom of the **[!UICONTROL Properties]** tab. Manually enter the property name, type, and value, which is described in the following tables. After you enter the values, tap **[!UICONTROL Add]** and then **[!UICONTROL Save All]** to save your values.
+1. Add a color correction property by scrolling to the bottom of the **[!UICONTROL Properties]** tab. Manually enter the property name, type, and value, which is described in the following tables. After you enter the values, select **[!UICONTROL Add]** and then **[!UICONTROL Save All]** to save your values.
 
    Color correction properties are described in the **Color Corrections Properties** table. Values that you can assign to color correction properties are in the **Color Profile** table.
 
-   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value]**. Then tap **[!UICONTROL Add]** and then **[!UICONTROL Save All]** to save your values.
+   For example, in **[!UICONTROL Name]**, add `iccprofilecmyk`, select **[!UICONTROL Type]** `String`, and add `WebCoated` as a **[!UICONTROL Value]**. Then select **[!UICONTROL Add]** and then **[!UICONTROL Save All]** to save your values.
 
    ![chlimage_1-515](assets/chlimage_1-515.png)
 
@@ -1109,11 +1020,11 @@ After you install the feature pack, configure the appropriate default color prof
  <tbody>
   <tr>
    <th><p>Name</p> </th>
-   <th><p>Colorspace</p> </th>
+   <th><p>Colors pace</p> </th>
    <th><p>Description</p> </th>
   </tr>
   <tr>
-   <td>AdobeRGB</td>
+   <td>Adobe RGB</td>
    <td>RGB</td>
    <td>Adobe RGB (1998)</td>
   </tr>
@@ -1155,12 +1066,12 @@ After you install the feature pack, configure the appropriate default color prof
   <tr>
    <td>EuroscaleCoated</td>
    <td>CMYK</td>
-   <td>Euroscale Coated v2</td>
+   <td>Euro scale Coated v2</td>
   </tr>
   <tr>
    <td>EuroscaleUncoated</td>
    <td>CMYK</td>
-   <td>Euroscale Uncoated v2</td>
+   <td>Euro scale Uncoated v2</td>
   </tr>
   <tr>
    <td>JapanColorCoated</td>
@@ -1275,7 +1186,7 @@ After you install the feature pack, configure the appropriate default color prof
  </tbody>
 </table>
 
-1. Tap **[!UICONTROL Save All]**.
+1. Select **[!UICONTROL Save All]**.
 
 For example, you could set the **[!UICONTROL iccprofilergb]** to `sRGB`, and **[!UICONTROL iccprofilecmyk]** to **[!UICONTROL WebCoated]**.
 

@@ -4,7 +4,7 @@ description: Learn how to find the required assets in [!DNL Adobe Experience Man
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search, Metadata
-role: Business Practitioner
+role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 ---
 # Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
@@ -22,7 +22,7 @@ exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 | [Search rank and boosting](#searchrank) | [Text extraction](#extracttextupload) | [Smart collections](#collections) |
 | [Advanced search: filtering and scope of search](#scope) | [Custom predicates](#custompredicates) | [Understand and troubleshoot unexpected results](#unexpected-results) |
 | [Search from other solutions and apps](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[Experience Manager desktop app](#desktop-app)</li><li>[Adobe Stock images](#adobe-stock)</li><li>[Dynamic Media assets](#dynamic-media)</li></ul> | | |
-| [Asset selector](#assetpicker) | | |
+| [Asset selector](#asset-picker) | | |
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
@@ -352,7 +352,7 @@ Visual search uses Smart Tags. After configuring smart tagging functionality, fo
    Save the changes.
 
 1. Access `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` and add `similarityTags` property of type `Boolean` with the value of `true`.
-1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=en#configuring).
+1. Apply Smart Tags to the assets in your [!DNL Experience Manager] repository. See [how to configure smart tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
 1. In CRXDE, in `/oak-index/damAssetLucene` node, set the `reindex` property to `true`. Save the changes.
 1. (Optional) If you have customized search form then copy the `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` node to `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Save the changes.
 

@@ -2,7 +2,7 @@
 title: Enable Assets Insights through DTM
 description: Learn how to use Adobe Dynamic Tag Management (DTM) to enable Assets Insights.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 ---
@@ -107,4 +107,4 @@ Perform these steps to enable Assets Insights through DTM.
     * The AppMeasurement object is retrieved by querying `satelliteLib` for all available SiteCatalyst engines. If multiple tags are configured, change the index of the array selector appropriately. Entries in the array are ordered as per SiteCatalyst tools available in the DTM interface.
 
 1. Save and close the Code Editor window, and then save the changes in the Tool configuration.
-1. In the **[!UICONTROL Approvals]** tab, approve both the pending approvals. The DTM tag is ready for insertion in your web page. For details on how to insert DTM tags in web pages, see [Integrate DTM in custom page templates](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/).
+1. In the **[!UICONTROL Approvals]** tab, approve both the pending approvals. The DTM tag is ready for insertion in your web page.

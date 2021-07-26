@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
-role: Administrator
+role: Admin
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 ---
 # Deleting forms and related resources {#deleting-forms-and-related-resources}

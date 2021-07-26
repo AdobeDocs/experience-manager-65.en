@@ -2,7 +2,8 @@
 title: Supported file formats and MIME types
 description: File formats and MIME types supported by [!DNL Assets] and [!DNL Dynamic Media] and the features supported for each format.
 contentOwner: AG
-role: Business Practitioner, Administrator
+mini-toc-levels: 1
+role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 ---
@@ -67,7 +68,7 @@ In addition to the information above, consider the following:
 
 ## Supported 3D formats {#support-3d-formats}
 
-The following list of 3D formats are supported.
+The following list of 3D formats is supported.
 
 See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
@@ -82,7 +83,7 @@ See also [Working with 3D assets in Dynamic Media.](/help/assets/assets-3d.md)
 
 ## Unsupported raster image formats in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-The following list describes the sub-types of raster image file formats that are *not* supported in Dynamic Media.
+The following list describes the subtypes of raster image file formats that are *not* supported in Dynamic Media.
 
 See also [Detect unsupported file formats for Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
@@ -123,13 +124,13 @@ See [Using PDF Rasterizer](aem-pdf-rasterizer.md).
 
 ## Supported Image Transcoding library {#supported-image-transcoding-library}
 
-The Adobe Imaging Transcoding library is an image processing solution that performs core image-handling functions, such as, encoding, transcoding, resampling, and resizing.
+The Adobe Imaging Transcoding library is an image-processing solution that performs core image-handling functions, such as, encoding, transcoding, resampling, and resizing.
 
 Imaging Transcoding library supports JPG/JPEG, PNG (8-bit and 16-bit), GIF, BMP, TIFF/Compressed TIFF (apart from 32-bit TIFF files and PTIFF files), ICO, and ICN MIME types.
 
 See [Imaging Transcoding Library](imaging-transcoding-library.md).
 
-## Supported camera raw {#supported-camera-raw}
+## Supported Camera Raw {#supported-camera-raw}
 
 The [!DNL Adobe Camera Raw] library enables [!DNL Assets] to ingest raw images. See [Camera Raw support](camera-raw.md).
 
@@ -204,10 +205,10 @@ In addition to the above functionality, consider the following:
 | MP4 | MPEG-4 | H264/AVC (all profiles) |&minus; |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson |SWF (vector animation files) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | &minus;|
 | M4V | Apple iTunes | H264/AVC |&minus; |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | WebM | WebM |Google VP8 |&minus; |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | &minus;|
 | MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |&minus; |
@@ -244,13 +245,13 @@ The applicability of the usual DAM functionalities for a few specific file forma
 
 >[!NOTE]
 >
->Uploading and distributing JavaScript files may or may not be safe. If required, overlays can be used to prevent users from uploading JS files.
+>Uploading and distributing JavaScript files may or may not be safe. If necessary, you can use overlays to prevent users from uploading JS files.
 
 ## Supported MIME types {#supported-mime-types}
 
 By default, [!DNL Experience Manager] detects the file type using the file extension. [!DNL Experience Manager] can detect it from the contents of the files. For latter, select [!UICONTROL Detect MIME from content] option in [!UICONTROL Day CQ DAM Mime Type Service] in the [!DNL Experience Manager] Web Console.
 
-A list of supported MIME types are available in CRXDE Lite at `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+A list of supported MIME types is available in CRXDE Lite at `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | File extension | MIME type/ Internet media type | Default jobParam value | Allowed jobParam value |
 |---|---|---|---|

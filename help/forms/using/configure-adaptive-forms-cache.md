@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 ---
 # Configure adaptive forms cache {#configure-adaptive-forms-cache}

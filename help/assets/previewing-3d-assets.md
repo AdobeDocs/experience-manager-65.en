@@ -4,7 +4,7 @@ description: Learn how to preview 3D assets
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D Assets
-role: Business Practitioner
+role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 ---
 # Previewing 3D assets in Adobe Experience Manager{#previewing-3d-assets-aem}

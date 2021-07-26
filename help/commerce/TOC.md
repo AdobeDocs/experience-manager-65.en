@@ -20,11 +20,13 @@ user-guide-description: Understand how to use and administer AEM Content and Com
     + [Multi-Template Usage](cif/configuring/multi-template-usage.md)
     + [Configuring URLs for SEO](cif/configuring/advanced-url-configuration.md)
     + [Caching Options](cif/configuring/caching.md)
+    + [Custom HTTP Headers](/help/commerce/cif/configuring/custom-http-headers.md)
   + Developing {#developing}
     + [Developing with AEM](cif/develop.md)
     + [Styling CIF Components](cif/customizing/style-cif-component.md)
     + [Customizing CIF Components](cif/customizing/customize-cif-components.md)
     + [Using CIF catalog pickers](cif/customizing/use-cif-pickers.md)
++ [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migration](cif/migration.md)
 + Release Notes {#release-notes}
   + [2021](cif/release-notes/release-notes-2021.md)

@@ -12,7 +12,7 @@ discoiquuid: 7ecc1bcf-38a9-4a59-8dd3-79cb90dec33d
 docset: aem65
 
 feature: Content Fragments
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: b204df18-2aef-4905-82f8-c777928ba828
 ---
 # Working with Content Fragments{#working-with-content-fragments}

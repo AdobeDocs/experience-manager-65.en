@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
+role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
 ---
 # Translating User Generated Content {#translating-user-generated-content}

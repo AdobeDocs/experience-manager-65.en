@@ -164,9 +164,9 @@ The following example shows a Link (Campaign) component being displayed.
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-### Scene7 Image Template (Campaign) {#scene-image-template-campaign}
+### Dynamic Media Classic (Scene7) Image Template (Campaign) {#scene-image-template-campaign}
 
-[Scene7 Image Templates](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) are layered are layered image files, where content and properties can be parameterized for variability. The **Image template** component lets you use Scene7 templates within newsletters and change the values of template parameters. In addition, you can use Adobe Campaign metadata variables inside the parameters, so that each user experiences the image in a personalized way.
+Dynamic Media Classic (Scene7) Image Templates are layered are layered image files, where content and properties can be parameterized for variability. The **[!UICONTROL Image template]** component lets you use Scene7 templates within newsletters and change the values of template parameters. In addition, you can use Adobe Campaign metadata variables inside the parameters, so that each user experiences the image in a personalized way.
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 

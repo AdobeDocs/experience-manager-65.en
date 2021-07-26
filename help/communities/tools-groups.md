@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e9bfbbce-93fc-455c-a2f7-4ee44e63c03f
 docset: aem65
 
-role: Administrator
+role: Admin
 ---
 
 # Group Templates {#group-templates}

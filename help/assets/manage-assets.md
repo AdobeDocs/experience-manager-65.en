@@ -3,7 +3,7 @@ title: Manage your digital assets
 description: Learn the asset management tasks like upload, download, edit, search, delete, annotate, and version your digital assets.
 contentOwner: AG
 mini-toc-levels: 1
-role: Business Practitioner
+role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 ---
@@ -70,11 +70,9 @@ The size above which an asset is considered a large asset is configurable. For e
 
 The [!UICONTROL Pause] option does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** option appears.
 
-To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload`node in the CRX repository.
+To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
 When you click **[!UICONTROL Pause]**, it toggles to the **[!UICONTROL Play]** option. To resume uploading, click **[!UICONTROL Play]**.
-
-![Resume the paused asset upload](assets/resume-paused-upload.png)
 
 To cancel an ongoing upload, click close (`X`) next to the progress bar. When you cancel the upload operation, [!DNL Assets] deletes the partially uploaded portion of the asset.
 
@@ -161,7 +159,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 1. Using your choice of FTP client, log in to the FTP server using the FTP user name and password that you received from the provisioning email. In the FTP client, upload files or folders to the FTP server.
 
-1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app), then sign in to your account.
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), then sign in to your account.
 
    Your credentials and sign in were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
@@ -531,7 +529,7 @@ Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, the
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
-   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/renditionpicker-node-crxde.png)
+   ![Overlay renditionpicker node in CRXDE to customize Annotation page image](assets/renditionpicker-node.png)
 
    To configure rendition dimensions for a video asset, navigate to the `videopicker` node in the CRX repository at the location `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, overlay the node, and then edit the appropriate property.
 
@@ -645,8 +643,6 @@ In list view and column view, the **[!UICONTROL Select]** option displays when y
 
 In card view, the **[!UICONTROL Select]** option displays as a quick action.
 
-![Select quick action on card view](assets/select_quick_action.png)
-
 When browsing a folder or a collection in the [!DNL Assets] user interface in a browser, you can select all the displayed or loaded assets by using the [!UICONTROL Select All] option from the upper-right corner. Initially, only 100 assets are loaded in card view and 200 are loaded in list view. More assets are loaded in view as you scroll the search results page. The [!UICONTROL Select All] option selects only the loaded assets.
 
 For more information, see [view and selecting your resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
@@ -668,8 +664,6 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/do-not-localize/crop.png).
 
 1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
-
-   ![Crop options](assets/crop-options.png)
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 
@@ -726,11 +720,9 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-   ![Comment box in Add Annotation dialog](assets/annotation-comment-box.png)
-
 1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
-   ![Specify user's email address and add comment to notify user](assets/annotation-add-user-email.png)
+   ![Specify user's email address and add comment to notify user](assets/annotate-gif.gif)
 
    >[!NOTE]
    >
@@ -763,7 +755,17 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 ### View saved annotations {#viewing-saved-annotations}
 
-1. To view saved annotations for an asset, navigate to the location of the asset and open the asset page for the asset.
+You can view only one annotation at a time. 
+
+>[!NOTE]
+>
+>If you are selecting multiple annotations, the latest annotation will be visible on the user interface. 
+>
+>Multi-select is supported only for printing the annotated asset as PDF.
+
+**To view saved annotations for an asset:**
+
+1. Go to the location of the asset and open the asset page.
 
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
@@ -779,6 +781,10 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 If an asset has annotations or it has been subjected to a review workflow, you can print the asset along with annotations and review status as a PDF file for offline review.
 
 You can also choose to print only the annotations or review status.
+
+>[!NOTE]
+>
+>You can select multiple annotations while printing the annotated asset as PDF.
 
 To print the annotations and review status, click **[!UICONTROL Print]** and follow the instructions in the wizard. The **[!UICONTROL Print]** option appears in the toolbar only when the asset has at least one annotation or review status assigned to it.
 
@@ -797,8 +803,6 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 1. Click **[!UICONTROL Print]** from the toolbar.
 
 1. From the Print dialog, choose the position you want the annotations/review status to be displayed on the PDF. For example, if you want the annotations/status to be printed at the top-right of the page that contains the printed image, use the **Top-Left** setting. It is selected by default.
-
-   ![Select position of annotation/ review status to display on PDF from Print dialog](assets/Print-annotation-dialog.png)
 
    You can choose other settings depending on the position where you want the annotations/status to appear in the printed PDF. If you want the annotations/status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
 
@@ -855,7 +859,7 @@ You can create versions in [!DNL Experience Manager] in the following scenarios:
 * Upload an asset with the same filename that exists at the same location. It can be a new asset or a modified version of the same asset.
 * Edit an image in [!DNL Experience Manager] and save the changes.
 * Edit the metadata of an asset.
-* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#edit-assets-upload-updated-assets).
+* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 

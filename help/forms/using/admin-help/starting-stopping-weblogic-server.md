@@ -97,7 +97,7 @@ After you shut down WebLogic Server, you can close the command prompt from which
 >This task can be performed only after you create a WebLogic domain and a managed server.
 
 1. Ensure that the WebLogic Server and Node Manager are running.
-1. Start WebLogic Server administration console by typing `https://host name]:[port]`/console` in the URL line of a web browser.
+1. Start WebLogic Server administration console by typing `https://host name]:[port]/console` in the URL line of a web browser.
 1. Under Domain Structure, click Environment &gt; Servers.
 1. In the right pane, click the Control tab.
 1. Select the managed server that you want to start.

@@ -2,7 +2,7 @@
 title: Search facets to filter search results
 description: How to create, modify, and use search facets in [!DNL Adobe Experience Manager].
 contentOwner: AG
-role: Administrator, Developer
+role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 ---
@@ -24,8 +24,6 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Use
 
 1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
 1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
-
-   ![Locate and select the Assets or Admin Search Rail](assets/assets_admin_searchrail.png)
 
    >[!NOTE]
    >
@@ -173,7 +171,7 @@ Similar to the way you add a Property predicate or an Options predicate, you can
 
 By default, a lock icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) appears before **[!UICONTROL Assets Admin Search Rail]** in the **[!UICONTROL Search Forms]** page. Lock icon against an option on the Search Forms page indicate that the default settings are intact and are not customized. The icon ![lock closed icon](assets/do-not-localize/lock_closed_icon.svg) disappears if you add search facets to the form indicating that the default form has been modified.
 
-![Lock icon against an option on the Search Forms page indicate that the default settings are intact and are not customized.](assets/locked_admin_rail.png)
+![Lock icon](assets/locked_admin_rail.png)
 
 To restore the default search facet, perform these steps:
 

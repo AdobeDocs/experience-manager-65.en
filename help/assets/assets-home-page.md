@@ -3,7 +3,7 @@ title: [!DNL Assets] Home Page experience
 description: Personalize the [!DNL Experience Manager Assets] Home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
 contentOwner: AG
 feature: Developer Tools, Asset Management
-role: Administrator, Business Practitioner
+role: Admin, User
 exl-id: 042bd959-256a-4794-a34d-0848a6b8840d
 ---
 # [!DNL Adobe Experience Manager Assets] Home Page Experience {#aem-assets-home-page-experience}

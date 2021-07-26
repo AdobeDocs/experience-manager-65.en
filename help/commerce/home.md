@@ -1,8 +1,8 @@
 ---
 title: AEM Content and Commerce
 description: AEM Content and Commerce self-help resources and documentation links
+exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
 ---
-
 # AEM Content and Commerce {#commerce-guide}
 
 This page lists the self-help resources regarding AEM Commerce.

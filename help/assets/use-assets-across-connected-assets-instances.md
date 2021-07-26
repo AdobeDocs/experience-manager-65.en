@@ -2,7 +2,7 @@
 title: Use Connected Assets to share DAM assets in [!DNL Sites]
 description: Use assets available on a remote [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] deployment.
 contentOwner: AG
-role: Business Practitioner, Administrator, Leader
+role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 ---

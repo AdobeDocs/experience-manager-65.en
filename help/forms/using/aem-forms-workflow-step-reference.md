@@ -81,7 +81,9 @@ You can also use the component to control the behavior of the task. For example,
 * **User or Group:** The task is assigned to selected user or group. The option is available when the **To a specific user or group option** is selected in the **Assign options** field. The field lists all the users and groups of the workflow-users group.  
   The **User or Group** drop-down menu lists the users and groups that the logged-in user has access to. The username display depends on if you have access permissions on the **users** node in crx-repository for that particular user. 
 
-* **Notify Assignee by Email:** Select this option to send email notifications to the assignee. These notifications are sent when a task is assigned to a user. Before using the option, enable the notifications from AEM Web Console. For step-by-step instructions, see [configure email notifications for the assign task step](../../forms/using/aem-forms-workflow.md)
+* **[!UICONTROL Send Notification Email]**: Select this option to send email notifications to the assignee. These notifications are sent when a task is assigned to a user or a group. You can use the **[!UICONTROL Recipient Email Address]** option to specify the mechanism to retrieve the email address.
+
+* **[!UICONTROL Recipient Email Address]**: You can store email address in a variable, use a literal to specify a permanent email address, or use default email address of the assignee specified in the profile of the assignee. You can use the literal or a variable to specify email address of a group. The variable option is helpful in dynamically retrieving and using an email address. The **[!UICONTROL Use default email address of the assignee]** option is only for a single assignee. In this case, email address stored in assignees user profile is used.
 
 * **HTML Email Template**: Select email template for the notification email. To edit a template, modify the file located at /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt in crx-repository.
 * **Allow Delegation To:** AEM Inbox provides an option to the logged in user to delegate the assigned workflow to another user. You are allowed to delegate within the same group or to the workflow user of another group. If the task is assigned to a single user and the **allow delegation to members of the assignee group** option is selected, then it is not possible to delegate the task to another user or group.
@@ -237,6 +239,9 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
     * **Literal:** Use the option when you know the exact value to specify. For example, srose@we.info.
     * **Variable:** Use the option to retrieve the value stored in a variable.
     * **Retrieve from Workflow Metadata:** Use the option when the value to use is saved in a workflow metadata property. For example, emailAddress.
+    * **[!UICONTROL Relative to Payload]**: Use the option to retrieve the file attachment saved at a path relative to payload. Select the option and specify either the folder name which includes the file attachment or specify the file attachment name in the text box.
+  
+      For example, if the Relative to Payload folder in the CRX repository includes a file attachment at the `attachment\attachment-folder` location, specify `attachment\attachment-folder` in the text box after selecting the **[!UICONTROL Relative to Payload]** option.
     * **JSON Dot Notation:** Use the option when the value to use is in a JSON file. For example, insurance.customerDetails.emailAddress. The JSON Dot Notation option is available only if Map input fields from input JSON option is selected.
     * **Map input fields from input JSON:** Specify path of a JSON file to obtain input value of some service arguments from the JSON file. Path of the JSON file can be relative to the payload, an absolute path, or you can select an input JSON document using a variable of JSON or Form Data Model type.
 

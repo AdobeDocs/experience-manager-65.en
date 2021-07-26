@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 
-role: Administrator
+role: Admin
 ---
 
 # Communities Sites Console {#communities-sites-console}

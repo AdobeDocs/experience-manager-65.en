@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
-role: Administrator
+role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 ---
 # Connecting AEM Forms with Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}

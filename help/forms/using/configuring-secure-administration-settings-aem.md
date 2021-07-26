@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
-role: Administrator
+role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 ---
 # Configuring Secure Administration Settings for AEM Forms on JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}

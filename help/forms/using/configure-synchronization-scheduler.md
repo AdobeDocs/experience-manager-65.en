@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8c8b1998-eab4-4230-b24f-5e96883ba599
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
 ---
 # Configuring the synchronization scheduler {#configuring-the-synchronization-scheduler}

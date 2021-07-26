@@ -11,7 +11,7 @@ discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
 docset: aem65
 
 feature: Adaptive Forms
-role: Administrator
+role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 ---
 # Supporting new locales for adaptive forms localization{#supporting-new-locales-for-adaptive-forms-localization}

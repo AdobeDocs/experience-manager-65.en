@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 ---
 # Install and configure data capture capabilities{#install-and-configure-data-capture-capabilities}
@@ -183,7 +183,7 @@ Dispatcher is Adobe Experience Manager's caching and/or load balancing tool that
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is `https://[server]:[port_number]/system/console/configMgr`. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is `https://[server]:[port]'.
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is `https://[server]:[port_number]/system/console/configMgr`. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is `https://[server]:[port]`.
 
 #### Configure Cache {#configure-cache}
 

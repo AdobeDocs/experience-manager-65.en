@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 ---
 # Getting XDP and PDF documents in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}

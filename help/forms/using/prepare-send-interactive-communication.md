@@ -206,10 +206,6 @@ After saving an Interactive Communication as a draft, you can retrieve it to con
 
 [draftid] refers to the unique identifier for the draft version that gets generated after saving an Interactive Communication as a draft.
 
->[!NOTE]
->
->If you make any changes to the Interactive Communication after saving it as a draft, the draft version fails to open.
-
 ### Sample ccrDocumentInstance SPI implementation {#sample-ccrDocumentInstance-spi}
 
 Implement the `ccrDocumentInstance` SPI to save an Interactive Communication as a draft. The following is a sample implementation of the `ccrDocumentInstance` SPI.

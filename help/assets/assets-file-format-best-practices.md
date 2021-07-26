@@ -2,7 +2,7 @@
 title: Best practices to process the supported file formats
 description: Best practices to process the various supported file types using [!DNL Experience Manager Assets].
 contentOwner: AG
-role: Administrator
+role: Admin
 feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
 ---

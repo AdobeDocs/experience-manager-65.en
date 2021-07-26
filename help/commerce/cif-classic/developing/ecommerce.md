@@ -9,6 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 docset: aem65
+exl-id: da63c576-34cd-40ce-81de-d7391a331364
 ---
 # eCommerce{#ecommerce}
 
@@ -39,4 +40,3 @@ The eCommerce API is provided by the packages:
 `com.adobe.cq.commerce.*`
 
 See the [API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) for further information.
-

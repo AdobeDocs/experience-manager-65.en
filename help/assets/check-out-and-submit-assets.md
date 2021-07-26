@@ -2,7 +2,7 @@
 title: Check in and Check out files in [!DNL Assets]
 description: Learn how to check out assets for editing and check them back in after the changes are complete.
 contentOwner: AG
-role: Business Practitioner
+role: User
 feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 ---
@@ -57,5 +57,5 @@ Administrators can check in assets that are checked out by other users.
 
 >[!MORELIKETHIS]
 >
->* [Understand check in and check out in [!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#how-app-works2)
+>* [Understand check in and check out in [!DNL Experience Manager] desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#how-app-works2)
 >* [Video tutorial to understand check in and check out in [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/check-in-and-check-out.html)

@@ -2,7 +2,7 @@
 title: Prepare assets for translation
 description: Create language root folders to prepare assets for translation to support multilingual assets.
 contentOwner: AG
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Projects
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
 ---

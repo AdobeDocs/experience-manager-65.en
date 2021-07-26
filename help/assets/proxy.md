@@ -2,7 +2,7 @@
 title: [!DNL Assets] proxy development
 description: A proxy is an [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] proxy, supported operations, proxy components, and how to develop a custom proxy worker.
 contentOwner: AG
-role: Administrator, Architect
+role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 ---
 # [!DNL Assets] proxy development {#assets-proxy-development}
@@ -99,9 +99,11 @@ The following is an example of API usage:
 
 ### Cloud Service configurations {#cloud-service-configurations}
 
+<!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
 >
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
+-->
 
 Both proxy and proxy worker configurations are available via cloud services configurations as accessible from the [!DNL Assets] **Tools** console or under `/etc/cloudservices/proxy`. Each proxy worker is expected to add a node under `/etc/cloudservices/proxy` for worker specific configuration details (for example, `/etc/cloudservices/proxy/workername`).
 

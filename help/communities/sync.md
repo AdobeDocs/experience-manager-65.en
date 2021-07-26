@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 
-role: Administrator
+role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 ---
 # Communities User Synchronization {#communities-user-synchronization}

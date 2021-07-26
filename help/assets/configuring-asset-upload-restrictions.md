@@ -2,7 +2,7 @@
 title: Configure asset upload restrictions
 description: Restrict the type of assets (files) that users can upload 
 contentOwner: AG
-role: Developer, Administrator, Architect
+role: Developer, Admin, Architect
 feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 ---

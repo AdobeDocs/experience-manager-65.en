@@ -8,6 +8,7 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
+exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 ---
 # Developing (generic){#developing-generic}
 

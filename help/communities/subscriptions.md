@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Administrator
+role: Admin
 exl-id: 338be220-659a-459c-8e90-55e3a11ddeb0
 ---
 # Communities Subscriptions {#communities-subscriptions}

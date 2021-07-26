@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
-role: Administrator
+role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
 ---
 # In-Context Moderation {#in-context-moderation}

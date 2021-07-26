@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 docset: aem65
-role: Business Practitioner, Administrator
+role: User, Admin
 feature: Scene7 Mode,Hybrid Mode
 exl-id: 07f0803c-4ec4-4745-8214-63370e9d0282
 ---

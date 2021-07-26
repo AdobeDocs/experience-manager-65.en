@@ -12,7 +12,7 @@ discoiquuid: 324df1da-78fa-460f-a744-3504259f1d4a
 docset: aem65
 
 feature: Content Fragments
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: ded05f24-ab5c-4195-b5c4-704a9fd93c7e
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}

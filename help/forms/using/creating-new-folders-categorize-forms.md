@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Administrator
+role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 ---
 # Create new folders to categorize forms {#create-new-folders-to-categorize-forms}

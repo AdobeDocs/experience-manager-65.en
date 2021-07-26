@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Administrator
+role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 ---
 # Upgrade to AEM 6.5 Forms on OSGi {#upgrade-to-aem-forms-osgi}

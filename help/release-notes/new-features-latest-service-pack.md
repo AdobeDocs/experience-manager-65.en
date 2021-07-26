@@ -15,10 +15,10 @@ This article highlights the features included in the latest Service Pack, [key f
 
 >[!NOTE]
 >
->Starting with AEM Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
+>Starting with [!DNL Experience Manager] Service Pack 9, [!DNL Experience Manager] customers can develop and operate their [!DNL Experience Manager] applications with distributions of the [!DNL Azul Zulu] builds of OpenJDK, standards-compliant with Java SE.
 >Support for the [!DNL Azul Zulu] JDKs is also provided by Adobe to the [!DNL Experience Manager] customers.
 >You can download the relevant versions of the [!DNL Azul Zulu] JDKs from [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
->The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf?lang=en).
+>The usage rights for the Oracle Java technology, as distributed by Adobe, will expire by the end of December 2022. [!DNL Experience Manager] customers are encouraged to plan and implement usage for the [!DNL Azul Zulu] JDKs latest by this date. For more information about the usage of the [!DNL Oracle Java] technology and [!DNL Azul Zulu] technology, refer to the associated [FAQs](https://experienceleague.adobe.com/docs/experience-manager-65/assets/adobe-azul-openjdk-license-agreement.pdf).
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
@@ -30,43 +30,23 @@ You can now restore the deleted pages and the entire tree view on an [!DNL Exper
 
 * Updated the naming of Chinese locales and regions relating to Hong Kong, Macau, and Taiwan, to make them consistent with Chinese social and political views.
 
-* An optional configuration is introduced to lower case the email IDs in ACP api response from [!DNL Adobe Experience Manager].
+* An optional configuration is introduced to change casing in the email IDs in ACP API response from [!DNL Adobe Experience Manager].
 
-   ![configuration to lowercase the email IDs in ACP response from AEM](assets/email-lowcase-config.png)
+   ![configuration to change email IDs to lowercase in ACP response from [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* Contrast (with background) of text and icons at various places is enhanced as per WCAG, to make it accessible for users with limited vision and perception of color. For more information, see [Accessibility enhancements in Assets](sp-release-notes.md#assets-accessibility-6590).
+* Contrast of text and icons against the background is enhanced for various features. This implementation of WCAG guidelines makes [!DNL Assets] more accessible for users with limited vision and perception of color. See [accessibility enhancements in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590).
 
-### Dynamic Media {#assets-dynamic-media}
+### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* [Dynamic media is more accessible](sp-release-notes.md#assets-accessibility-6590) in terms of:
+* [[!DNL Dynamic Media] is more accessible](sp-release-notes.md#assets-accessibility-6590) in terms of:
 
-  * ease of usage with keyboard keys.
-  * contrast (with background) of text, placeholder text, and controls in various editors.
-  * accessibility and narration by screen readers.
+  * Ease of usage with keyboard keys.
+  * Contrast (with background) of text, placeholder text, and controls in various editors.
+  * Accessibility and narration by screen readers.
 
-* Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization enable you to deliver best quality images efficiently; on devices with high-resolution displays and constrained network bandwidth. For more information, see [Smart imaging FAQs](/help/assets/imaging-faq.md).
+* Deliver best quality images efficiently on devices with high resolution displays and constrained network bandwidth, with Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization. See [Smart imaging FAQs](/help/assets/imaging-faq.md).
 
-   >[!NOTE]
-   >
-   >The release timeline for above Smart Imaging enhancements is:
-   >
-   >* North America May 24, 2021 in NA,
-   >
-   >* Europe, the Middle East, and Africa June 25, 2021,
-   >
-   >* Asia-Pacific July 19, 2021.
-
-* Introduced support for next-gen image format AVIF in Dynamic Media delivery (fmt URL modifier). For more information, see [image serving and rendering api fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
-
-  >[!NOTE]
-  >
-  >The release timeline for AVIF support is:
-  >
-  >* North America May 10, 2021,
-  >
-  >* Europe, the Middle Eas, and Africa May 24, 2021,
-  >
-  >* Asia-Pacific June 24, 2021.
+* [!DNL Dynamic Media] delivery (`fmt` URL modifier) now supports next-generation image format AVIF (AV1 Image format). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
@@ -442,11 +422,11 @@ You can use the Batch API to produce multiple interactive communications from a 
 
 Between February 25, 2021 and May 27, 2021, Adobe released the following, in addition to the Service Packs:
 
-* [!DNL Adobe Experience Manager] as a Cloud Service [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html), [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html), and [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en#release-date).
+* [!DNL Adobe Experience Manager] as a Cloud Service [2021.2.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-2-0.html), [2021.3.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-3-0.html), and [2021.4.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html#release-date).
 
 * [[!DNL Experience Manager] desktop app 2.1 (2.1.2.0)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
 
-* [Experience Manager Screens: Feature Pack 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html?lang=en)
+* [Experience Manager Screens: Feature Pack 202103](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202103.html)
 
 >[!MORELIKETHIS]
 >

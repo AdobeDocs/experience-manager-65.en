@@ -10,7 +10,7 @@ discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 
 feature: Panoramic Images,Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 ---
 # Panoramic images{#panoramic-images}

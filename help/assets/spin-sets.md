@@ -10,7 +10,7 @@ discoiquuid: 8e9b3815-2893-4e6b-ac41-77720b42d56b
 docset: aem65
 
 feature: Spin Sets,Asset Management
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 ---
 # Spin Sets{#spin-sets}

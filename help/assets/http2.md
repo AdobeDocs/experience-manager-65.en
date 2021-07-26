@@ -1,5 +1,5 @@
 ---
-title: HTTP2 Delivery of Content
+title: HTTP2 delivery of content
 description: HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of needed processing power.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
@@ -7,11 +7,11 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
-role: Business Practitioner, Administrator
+role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 ---
-# HTTP/2 Delivery of Content {#http-delivery-of-content}
+# HTTP/2 delivery of content {#http-delivery-of-content}
 
 Adobe is excited to announce the availability of HTTP/2 delivery of content with the overall benefit of improved performance.
 
@@ -56,7 +56,7 @@ To use HTTP/2, you must meet the following requirements:
 
 You initiate the request to switch over to HTTP/2; it is not automatically done for you.
 
-1. To switch over to HTTP/2, initiate an Adobe Customer Care request. See [Accessing the Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. To switch over to HTTP/2, initiate an Adobe Customer Care request. See [Access the Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
     1. Provide the following information in your support request:
 

@@ -4,7 +4,7 @@ seo-title: Install workbench
 description: Install workbench.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-role: Administrator
+role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 ---
 # Install Workbench {#install-workbench}
