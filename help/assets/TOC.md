@@ -62,7 +62,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
     + [Interactive Images](interactive-images.md)
     + [Interactive Videos](interactive-videos.md)
     + [360 VR Video](/help/assets/360-video.md)
-    + [Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Launch](/help/assets/launch.md)
+    + [Integrating Dynamic Media Viewers with Adobe Analytics and Adobe Experience Platform Tags](/help/assets/tags.md)
     + [Using Quickviews to create custom pop-ups](custom-pop-ups.md)
     + [Delivering optimized images for a responsive site](responsive-site.md)
     + [Previewing Dynamic Media assets](previewing-assets.md)
