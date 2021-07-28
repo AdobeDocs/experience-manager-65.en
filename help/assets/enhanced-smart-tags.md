@@ -181,6 +181,7 @@ You can also assign a higher rank to a tag to increase its relevance for an imag
 
 ## Tips and limitations {#tips-best-practices-limitations}
 
+* To train the model, use the most appropriate images. The training cannot be reverted or training model cannot be removed. Your tagging accuracy depends on the current training, so do it carefully.
 * Use of Smart Content Services is limited to up to 2 million tagged images per year. Any duplicate images that are processed and tagged are each counted as a tagged image.
 * If you run the tagging workflow from the timeline, you can apply tags on a maximum of 15 assets at a time.
 * Smart Tags work for only PNG and JPG image formats. So supported assets that have renditions created in these two formats get tagged with Smart Tags.
