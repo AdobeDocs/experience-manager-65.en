@@ -28,59 +28,59 @@ For a complete list of features and enhancements introduced in [!DNL Experience 
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.0 release.
 
-### [!DNL Sites] {#sites-6590}
+### [!DNL Sites] {#sites-65100}
 
 * 
 
-### [!DNL Assets] {#assets-6590}
+### [!DNL Assets] {#assets-65100}
 
 The following user experience enhancements are done in [!DNL Assets]:
 
 * 
 
-### [!DNL Dynamic Media] {#dynamic-media-6590}
+### [!DNL Dynamic Media] {#dynamic-media-65100}
 
 [!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
 
 * 
 
-### Platform {#platform-6590}
+### Platform {#platform-65100}
 
 * 
 
-### Integrations {#integrations-6590}
+### Integrations {#integrations-65100}
 
 * 
 
-### Projects {#projects-6590}
+### Projects {#projects-65100}
 
 * 
 
-### Screens {#screens-6590}
+### Screens {#screens-65100}
 
 * 
 
-### Commerce {#commerce-6590}
+### Commerce {#commerce-65100}
 
 * 
 
-### Translation projects {#translation-6590}
+### Translation projects {#translation-65100}
 
 * 
 
-### Workflow {#workflow-6590}
+### Workflow {#workflow-65100}
 
 *
 
-### [!DNL Communities] {#communities-6590}
+### [!DNL Communities] {#communities-65100}
 
 * 
 
-### [!DNL Brand Portal] {#brandportal-6590}
+### [!DNL Brand Portal] {#brandportal-65100}
 
 * 
 
-### [!DNL Forms] {#forms-6590}
+### [!DNL Forms] {#forms-65100}
 
 >[!NOTE]
 >
