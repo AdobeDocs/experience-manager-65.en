@@ -50,7 +50,7 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance or add the configurations to the newly created project.
@@ -270,11 +270,9 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
        productRetriever = productTeaser.getProductRetriever();
 
        if (productRetriever != null) {
-           productRetriever.extendProductQueryWith(p ->
-                productRetriever.extendProductQueryWith(p -> p
-                   .createdAt()
-                   .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
-               );
+           productRetriever.extendProductQueryWith(p -> p
+               .createdAt()
+               .addCustomSimpleField(ECO_FRIENDLY_ATTRIBUTE)
            );
        }
    }
@@ -395,7 +393,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Open a new browser window and navigate to AEM and the **OSGi console** > **Status** > **Sling Models**: [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -474,7 +472,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallPackage,cloud
+   $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
 1. Refresh to the **Venia Home Page** at [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) where the Product Teaser has been added.
