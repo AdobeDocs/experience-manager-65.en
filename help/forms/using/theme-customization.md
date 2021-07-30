@@ -72,8 +72,7 @@ You can customize the HTML code and CSS file to provide a distinct organization-
     * In Eclipse, navigate to **assets &gt; www &gt; wsmobile &gt; css**.
     * In Visual Studio, navigate to **MWSWindows &gt; www &gt; wsmobile &gt; css**.
 
-1.
-   Open the `_style.css` file for editing.
+1. Open the `_style.css` file for editing.
 1. For Background image, change `#323232` to `#fff`.
 1. Save the changes and close `_style.css` file.
 1. Open the AEM Forms app.
