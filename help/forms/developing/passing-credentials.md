@@ -31,5 +31,5 @@ In order to make the most of this document, you need to have a solid understandi
 
 >[!MORELIKETHIS]
 >
->* [Passing credentials using WS-Security headers (PDF, 86K](assets/passing-credentials-using-ws-security-headers.pdf)
+>* [Passing credentials using WS-Security headers](assets/passing-credentials-using-ws-security-headers.pdf)
 
