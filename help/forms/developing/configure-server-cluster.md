@@ -218,7 +218,7 @@ Depending on your application server, it may be natural that the JDBC connection
 
 The reverse problem is actually more common—that is, a situation where multiple standalone (or cluster) AEM Forms on JEE nodes accidentally point at the same schema when they are not intended to. This most often happens when a DBA unknowingly gives out a single AEM Forms on JEE database's connection information to both the DEV and QA setup teams, none of them realizing that the DEV and QA instances require separate databases.
 
-## Application server cluster {#application-server-cluster}
+## Application server cluster {#application-server-cluster-1}
 
 To have a successful AEM Forms on JEE cluster, it is essential that the application server be configured and operate properly as a cluster. In WebSphere and Weblogic, this is a straightforward well-documented process. In Jboss, cluster configuration is a bit more hands-on, and ensuring the nodes are configured to act as a cluster and do in fact find and communicate with one another can be a challenge. JBoss relies internally on JGroups, which uses UDP multicast to find and coordinate with peer nodes, and some of the problems mentioned with GemFire can occur, such as nodes failing to find one another when they should, or finding each other when they shouldn't.
 
