@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media Newsletter
-description: The Dynamic Media Newsletter by Experience League is a monthly newsletter. It is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can start realize value right away. Valuable knowledge-building resources are available in this one-stop shop newsletter. It includes how to videos, solution overviews, and introductions to some of the key features and capabilities like image presets, viewer presets, video profiles, and more. 
+title: Dynamic Media newsletter archive
+description: The archived Dynamic Media Newsletter by Experience League was a monthly newsletter. It was designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you could realize value right away. The archived newsletters contain valuable knowledge-building resources that were available in this one-stop shop newsletter that is now discontinued. Archived newsletters include how-to videos and solution overviews. There are also introductions to key features and capabilities like image presets, viewer presets, and video profiles. 
 keywords: Dynamic Media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
 contentOwner: Rick Brough 
 solution: Experience Manager, Dynamic Media Classic
@@ -10,15 +10,19 @@ feature: Collaboration,Dynamic Media Classic
 ---
 # ![Dynamic Media Newsletter logo](/help/assets/assets/dynamic-media-newsletter-logo.png)
 
-The monthly Dynamic Media Newsletter by Experience League is designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you can start realizing value right away.
+>[!NOTE]
+>
+>The monthly newsletter is now discontinued. However, you can still access the newsletter archives below.
 
-Valuable knowledge-building resources are available in this one-stop shop newsletter. It includes how to videos, solution overviews, and introductions to some of the key features and capabilities like image presets, viewer presets, video profiles, and more.
+The Dynamic Media Newsletter by Experience League was designed to help you get up to speed with Dynamic Media and Dynamic Media Classic so that you could start realizing value right away.
 
-## Get inspired - Stay informed
+In this one-stop shop archived newsletter, you can find valuable knowledge-building resources such as how-to videos and solution overviews. There are also introductions to key features and capabilities like image presets, viewer presets, and video profiles.
 
-[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox.
+<!-- ## Get inspired - Stay informed
 
-## Missed an issue of the Dynamic Media Newsletter?
+[Sign up](https://www.adobe.com/subscription/dynamic-media-newsletter.html) to receive the Dynamic Media Newsletter on a monthly basis in your inbox. -->
+
+## Dynamic Media newsletter archive
 
 <!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
 
@@ -46,9 +50,9 @@ Valuable knowledge-building resources are available in this one-stop shop newsle
   * Learn more about Adobe's free Dynamic Media Classic audits.
   * Meet John Monroe, Senior Program Manager for Customer Success Services.
 
-    >[!IMPORTANT]
+<!--     >[!IMPORTANT]
     >
-    >Adobe wants to make sure they are only sending the Dynamic Media newsletter to people who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0).
+    >Adobe wants to make sure they are only sending the Dynamic Media newsletter to people who want to receive it. To continue receiving the newsletter after this issue, please sign up for it [here](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&reserved=0). -->
 
 * **[February 2020, Issue 2](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -147,7 +151,7 @@ Valuable knowledge-building resources are available in this one-stop shop newsle
 
 * **[April 2019, Issue 04](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_04_2019_April.html)**
 
-    Welcome to the inauguration issue of the Dynamic Media Newsletter, Adobe's new monthly newsletter filled with news, events, and resources for users of Dynamic Media within Adobe Experience Manager Assets and Adobe Dynamic Media Classic.
+    Welcome to the inauguration issue of the Dynamic Media Newsletter, Adobe's newsletter filled with news, events, and resources for users of Dynamic Media within Adobe Experience Manager Assets and Adobe Dynamic Media Classic.
 
     In this issue:
   * Register for Adobe's Dynamic Media Classic Hidden Features webinar.
