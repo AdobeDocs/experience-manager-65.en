@@ -4,16 +4,7 @@
             "pattern": "^.*example.com"
         },
         {
-            "pattern": "^.*your_clientcode"
-        },
-        {
             "pattern": "^.*INSERT-DOMAIN-AND-PATH-TO-CODE-HERE"
-        },
-        {
-            "pattern": "^.*training.adobe.com"
-        },
-        {
-            "pattern": "^.*homedepot.com"
         },
         {
             "pattern": "^.*github.com"
