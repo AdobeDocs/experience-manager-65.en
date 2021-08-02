@@ -183,13 +183,13 @@ You initiate the request to use smart imaging; it is not automatically enabled.
 
 By default, Smart Imaging DPR and network optimization is disabled (turned off) for a Dynamic Media company account. If you want to enable (turn on) one or both of these out-of-the-box enhancements, create a support case as described below.
 
-The release schedule for Smart Imaging DPR and network optimization is as follows:
+<!-- NOW AVAILABLE IN ALL THREE REGIONS AS OF AUGUST 2. 2021. SEE CQDOC- 17915 The release schedule for Smart Imaging DPR and network optimization is as follows:
 
 | Region | Target date |
 |---|---|
 | North America | Live |
 | Europe, Middle East, Africa | 13 Aug 2021 |
-| Asia-Pacific | 22 Jul 2021 |
+| Asia-Pacific | 22 Jul 2021 | -->
 
 1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
 1. Provide the following information in your support case:
