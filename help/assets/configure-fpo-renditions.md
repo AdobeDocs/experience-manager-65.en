@@ -18,10 +18,10 @@ Experience Manager allows many methods to process images that can be used to gen
 
 You can use ImageMagick to process images, including to generate FPO renditions. Such renditions are downsampled, that is, the pixel dimensions of the rendition are proportionally reduced if the original image has PPI larger than 72. See [install and configure ImageMagick to work with Experience Manager Assets](best-practices-for-imagemagick.md). 
 
- |  | Using Experience Manager's in-built workflow | Using ImageMagick workflow | Remarks |
-   |--- |--- |---|--- |
-   | For new assets | Enable FPO rendition ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Add ImageMagick command-line in Experience Manager workflow ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager executes the DAM Update Assets workflow for every upload. |
-   | For existing assets | Enable FPO rendition in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Add ImageMagick command-line in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | FPO renditions of the existing assets can be created on-demand or in bulk. |
+|  | Using Experience Manager's in-built workflow | Using ImageMagick workflow | Remarks |
+|--- |--- |---|--- |
+| For new assets | Enable FPO rendition ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Add ImageMagick command-line in Experience Manager workflow ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager executes the DAM Update Assets workflow for every upload. |
+| For existing assets | Enable FPO rendition in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Add ImageMagick command-line in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | FPO renditions of the existing assets can be created on-demand or in bulk. |
 
 >[!CAUTION]
 >

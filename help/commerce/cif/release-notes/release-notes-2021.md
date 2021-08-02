@@ -9,19 +9,36 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
-**With the April release we have replaced the CIF Connector from GitHub with the CIF add-on which is available on the [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The switch to the add-on comes with great benefits for projects:
+**With the April release we have replaced the CIF Connector from GitHub with the CIF add-on** which is available on the [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The switch to the add-on comes with great benefits for projects:
 
 * Most of the new features will immediately be available on AEM 6.5 (No more waiting for feature side-port)
 * Easy upgradable to new add-on versions
 * Ready for Cloud Service
 
-The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please replace the CIF Connector with the new CIF add-on. Simply package replacement should be possible for most projects. **
+The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please replace the CIF Connector with the new CIF add-on. Simply package replacement should be possible for most projects.
 
 |Component| System Requirements|
 |:-------|:-----:|
 |CIF add-on |Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL schemas|
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
+
+## Release Date: July, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.07.21|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip)|
+|CIF Core Components |1.13.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0)|
+|CIF Venia Reference Site| 2021.07.22|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22)|
+
+### What's New {#what-is-new-july}
+
+* CIF Core Components v2
+  * Simplified and improved configurations for PDP/PLP URL and SEO
+  * Visual indicator for staged product data in authoring mode for better visibility of upcoming changes
+  * New sitemap component for content and commerce pages
+
+* Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
 
 ## Release Date: June, 2021
 
@@ -73,8 +90,6 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 * AEM extension for PWA Studio incl. example integration
 
 * New CIF navigation core component that extends WCM navigation core component
-
-* Visual indicator for staged catalog data in AEM storefront
 
 ### Bug fixes {#bug-fixes-april}
 

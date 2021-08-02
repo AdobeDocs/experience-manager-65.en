@@ -31,7 +31,7 @@ The following media handlers are available within [!DNL Assets] and handle the m
 | [!UICONTROL TextHandler] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b> - When you upload an MP3 file, it is [processed using a third-party library](http://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). The library calculates a non-accurate approximate length if the MP3 has variable bitrate (VBR). |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>Important</b> - When you upload an MP3 file, it is [processed using a third-party library](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). The library calculates a non-accurate approximate length if the MP3 has variable bitrate (VBR). |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -50,7 +50,7 @@ All the handlers perform the following tasks:
 
 To view the active media handlers:
 
-1. In your browser, navigate to `http://localhost:4502/system/console/components`.
+1. In your browser, navigate to `https://localhost:4502/system/console/components`.
 1. Click `com.day.cq.dam.core.impl.store.AssetStoreImpl`.
 1. A list with all the active media handlers is displayed. For example:
 
@@ -445,7 +445,7 @@ The following conversions can be automatically run and stored within [!DNL Asset
 * EPS and AI transformation using [ImageMagick](https://www.imagemagick.org/script/index.php) and [Ghostscript](https://www.ghostscript.com/).
 * FLV video transcoding using [FFmpeg](https://ffmpeg.org/).
 * MP3 encoding using [LAME](https://lame.sourceforge.io/).
-* Audio processing using [SOX](https://sox.sourceforge.net/).
+* Audio processing using [SOX](https://sox.sourceforge.io/).
 
 >[!NOTE]
 >
@@ -488,7 +488,7 @@ Install [!DNL ImageMagick] on the disk hosting the [!DNL Experience Manager] ser
 To test the modified workflow, add an asset to `/content/dam`.
 
 1. In the file system, get a TIFF image of your choice. Rename it to `myImage.tiff` and copy it to `/content/dam`, for example by using WebDAV.
-1. Go to the **[!UICONTROL CQ5 DAM]** console, for example `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Go to the **[!UICONTROL CQ5 DAM]** console, for example `https://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open the asset **[!UICONTROL myImage.tiff]** and verify that the flipped image and the three thumbnails have been created.
 
 #### Configure the CommandLineProcess process step {#configuring-the-commandlineprocess-process-step}
