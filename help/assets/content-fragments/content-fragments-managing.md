@@ -354,7 +354,7 @@ Content Fragments must be published for use in the publish environment. They can
 
 * After creation; using [actions available in the Assets console](#actions-for-a-content-fragment-assets-console).
 * From the [Content Fragment Editor](#toolbar-actions-in-the-content-fragment-editor).
-* When you [publish a page that uses the fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); the fragment will be listed in the page references.
+* When you [publish a page that uses the fragment](/help/sites-authoring/content-fragments.md#publishing); the fragment will be listed in the page references.
 
 >[!CAUTION]
 >

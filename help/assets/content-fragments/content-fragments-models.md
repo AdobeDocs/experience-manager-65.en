@@ -329,7 +329,7 @@ To implement content governance, you can configure **Policies** on Assets folder
 
 >[!NOTE]
 >
->The mechanism is similar to [allowing page templates](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
+>The mechanism is similar to [allowing page templates](/help/sites-authoring/templates.md#allowing-a-template-author) for a page, and its children, in advanced properties of a page. 
 
 To configure the **Policies** for **Allowed Content Fragment Models**:
 

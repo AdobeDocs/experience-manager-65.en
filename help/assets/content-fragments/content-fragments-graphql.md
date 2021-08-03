@@ -45,7 +45,7 @@ The [AEM GraphQL API](#aem-graphql-api) allows you to perform (complex) queries 
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-For Adobe Experience as a Cloud Experience, a customized implementation of the standard GraphQL API has been developed. See [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md) for details. 
+For Adobe Experience, a customized implementation of the standard GraphQL API has been developed. See [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md) for details. 
 
 The AEM GraphQL API implementation is based on the [GraphQL Java libraries](https://graphql.org/code/#java).
 

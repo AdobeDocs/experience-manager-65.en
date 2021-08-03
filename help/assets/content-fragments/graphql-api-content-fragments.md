@@ -1,14 +1,14 @@
 ---
 title: AEM GraphQL API for use with Content Fragments
-description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
+description: Learn how to use Content Fragments in Adobe Experience Manager (AEM) with the AEM GraphQL API for headless content delivery.
 feature: Content Fragments,GraphQL API
 ---
 
 # AEM GraphQL API for use with Content Fragments {#graphql-api-for-use-with-content-fragments}
 
-Learn how to use Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service with the AEM GraphQL API for headless content delivery.
+Learn how to use Content Fragments in Adobe Experience Manager (AEM) with the AEM GraphQL API for headless content delivery.
 
-AEM as a Cloud Service GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
+AEM GraphQL API used with Content Fragments is heavily based on the standard, open source GraphQL API.
 
 Using the GraphQL API in AEM enables the efficient delivery of Content Fragments to JavaScript clients in headless CMS implementations:
 
@@ -18,7 +18,7 @@ Using the GraphQL API in AEM enables the efficient delivery of Content Fragments
 
 >[!NOTE]
 >
->GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
+>GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM):
 >
 >* [AEM Commerce consumes data from a Commerce platform via GraphQL](/help/commerce/cif/integrating/magento.md).
 >* AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications.
@@ -203,18 +203,20 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
 
+<!-- 6.5.10.0 -->
+
 The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
-The use cases can depend on the type of AEM as a Cloud Service environment:
+The use cases can depend on the type of AEM environment:
 
 * Publish environment; used to: 
   * Query data for JS application (standard use-case)
 
 * Author environment; used to: 
   * Query data for "content management purposes":
-    * GraphQL in AEM as a Cloud Service is currently a read-only API.
+    * GraphQL in AEM is currently a read-only API.
     * The REST API can be used for CR(u)D operations.
 
 ## Permissions {#permission}
