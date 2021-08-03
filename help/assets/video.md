@@ -48,8 +48,10 @@ The following step-by-step workflow description is designed to help you get up a
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organize digital assets](/help/assets/organize-assets.md).
 
-    * Upload your primary source videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes.
+        * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
 
@@ -147,7 +149,7 @@ Adaptive video streaming is supported on various iOS platforms. See [Dynamic Med
 
 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://docs.microsoft.com/en-us/previous-versions/windows/apps/ff462087(v=vs.105))
+You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
@@ -290,6 +292,9 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
 
+* Dynamic Media supports mainly short-form videos with a maximum length of 30 minutes.
+* You can upload primary source video files that are up to 15 GB each.
+
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
 
 |Size|Aspect ratio|Minimum bit rate|
@@ -302,7 +307,7 @@ The following table describes the recommended size, aspect ratio, and minimum bi
 
 You can obtain a file’s metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file’s metadata:
 
-1. Go to this web page: [https://mediainfo.sourceforge.net/en/Download](https://mediainfo.sourceforge.net/en/Download).
+1. Go to [MediaInfo Download](https://mediaarea.net/en/MediaInfo/Download).
 1. Select and download the installer for the GUI version, and follow the installation instructions.
 1. After installation, either right-click the video file (Windows only) and select MediaInfo, or open MediaInfo and drag your video file into the application. You see all metadata associated with your video file, including its width, height, and fps.
 
@@ -439,7 +444,7 @@ You can also [unpublish videos to remove them from YouTube](#unpublishing-videos
 
 ### Configure Google Cloud settings {#configuring-google-cloud-settings}
 
-To publish to YouTube, you need a Google account. If you have a GMAIL account, then you already have a Google account; if you do not have a Google account, you can easily create one. You need the account because you need credentials to publish video assets to YouTube. If you have an account already created, then skip this task and proceed directly to [Creating a YouTube channel](#creating-a-youtube-channel).
+To publish to YouTube, you need a Google account. If you have a GMAIL account, then you already have a Google account; if you do not have a Google account, you can easily create one. You need the account because you need credentials to publish video assets to YouTube. If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel).
 
 The account used with Google Cloud and the Google account used for YouTube do not need to be the same.
 
@@ -493,9 +498,9 @@ To configure Google Cloud settings:
 
     * From the **[!UICONTROL Which API are you using?]** drop-down list, select **[!UICONTROL YouTube Data API v3]**.
 
-    * From the **[!UICONTROL Where will you be calling the API from?]** drop-down list, select **[!UICONTROL Web Server (e.g. node.js, Tomcat)]**
+    * From the **[!UICONTROL Where are you calling the API from?]** drop-down list, select **[!UICONTROL Web Server (for example, node.js, Tomcat)]**
 
-    * From the **[!UICONTROL What data will you be accessing?]** drop-down list, tap **[!UICONTROL User data]**.
+    * From the **[!UICONTROL What data are you accessing?]** drop-down list, tap **[!UICONTROL User data]**.
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
