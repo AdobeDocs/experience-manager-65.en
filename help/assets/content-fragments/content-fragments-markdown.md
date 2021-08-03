@@ -1,25 +1,15 @@
 ---
 title: Markdown
-seo-title: Markdown
-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
-seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
-uuid: afcbf82f-3a75-4491-9172-706188db65bb
-contentOwner: Alison Heimoz
-products: SG_EXPERIENCEMANAGER/6.5/ASSETS
-topic-tags: content-fragments
-content-type: reference
-discoiquuid: b193f28c-46c2-4eab-bbb8-578530f80ba5
-docset: aem65
-
+description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create headless content.
 feature: Content Fragments
-role: User, Admin
-exl-id: 28e1052f-62b5-47bc-9bc8-f2d92f0254f6
+role: User
+exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 ---
-# Markdown{#markdown}
+# Markdown {#markdown}
 
-When you are [authoring](content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write content:
+When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write headless content:
 
-![markdown editor](/help/assets/content-fragments/assets/cfm-6420-08.png)
+![markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 You can define:
 
