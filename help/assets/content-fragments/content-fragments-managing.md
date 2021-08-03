@@ -116,7 +116,7 @@ Select the fragment to reveal the toolbar with applicable actions:
 
 >[!NOTE]
 >
->Many of these are [standard actions for Assets](/help/assets/manage-digital-assets.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Many of these are [standard actions for Assets](/help/assets/manage-assets.md) and/or the [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## Opening the Fragment Editor {#opening-the-fragment-editor}
 
@@ -269,7 +269,7 @@ You can view, and edit, the properties of a fragment using the [Metadata](/help/
 
 ## Timeline for Content Fragments {#timeline-for-content-fragments}
 
-In addition to the standard options, [Timeline](/help/assets/manage-digital-assets.md#timeline) provides both information and actions specific to content fragments:
+In addition to the standard options, [Timeline](/help/assets/manage-assets.md#timeline) provides both information and actions specific to content fragments:
 
 * View information about versions, comments, and annotations
 * Actions for Versions

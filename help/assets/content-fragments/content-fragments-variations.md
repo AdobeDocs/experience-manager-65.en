@@ -297,7 +297,7 @@ Annotations:
 
 ### Inserting Assets into your Fragment {#inserting-assets-into-your-fragment}
 
-To ease the process of authoring content fragments you can add [Assets](/help/assets/manage-digital-assets.md) (images) directly to the fragment.
+To ease the process of authoring content fragments you can add [Assets](/help/assets/manage-assets.md) (images) directly to the fragment.
 
 They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-authoring/content-fragments.md).
 

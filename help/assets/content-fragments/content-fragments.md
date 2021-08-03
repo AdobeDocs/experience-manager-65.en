@@ -44,7 +44,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 >
 >* [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md).
 >* [Customizing and Extending Content Fragments](/help/sites-developing/customizing-content-fragments.md)
->* [Content Fragments Configuring Components for Rendering](/help/sites-developing/content-fragments-configuring-components-rendering.md)
+>* [Content Fragments Configuring Components for Rendering](/help/sites-developing/content-fragments-config-components-rendering.md)
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md)
 >* [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
@@ -92,17 +92,21 @@ AEM Content Fragments can be used to describe and manage structured content. Str
 
 Together with the JSON export capabilities of AEM core components, this structured content can then be used to deliver AEM content to channels other than AEM pages.
 
+<!--
 >[!NOTE]
 >
 >See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+--> 
 
 >[!NOTE]
 >
 >AEM also supports the translation of fragment content. 
 
+<!--
 >[!NOTE]
 >
 >AEM also supports the translation of fragment content. See [Translating Assets](/help/assets/translate-assets.md) for further information.
+-->
 
 ## Content Type {#content-type}
 
@@ -156,7 +160,10 @@ Assets can be used with a content fragment in several ways; each with its own ad
   * Allow full flexibility for selection of an asset.
   * Allows some flexibility for positioning.
   * Does not provide the concept of being approved for a specific fragment.
+
+<!--
   * See [Assets Browser](/help/sites-authoring/environment-tools.md#assets-browser) for more information.
+-->
 
 ### Constituent Parts of a Content Fragment {#constituent-parts-of-a-content-fragment}
 
@@ -281,6 +288,7 @@ To use your Content Fragments for page authoring you also need:
 
 A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
 
+<!--
 ### WKND Sample {#wknd-sample}
 
 The [WKND Site](/help/sites-developing/develop-wknd-tutorial.md) samples are provided to help you learn about AEM as a Cloud Service. 
@@ -292,3 +300,4 @@ The WKND project includes:
 
 * Content Fragments (and other content) available under:
   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+-->

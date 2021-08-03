@@ -15,7 +15,7 @@ You can view and edit the metadata (properties) for content fragments:
 1. In the **Assets** console navigate to the location of the content fragment.
 2. Either:
 
-    * Select [**View Properties** to open the dialogs](/help/assets/manage-digital-assets.md#editing-properties). Once open for viewing you can also edit.
+    * Select [**View Properties** to open the dialogs](/help/assets/manage-assets.md#editing-properties). Once open for viewing you can also edit.
     * Open the content fragment for editing, then select **Metadata** from the side panel.
 
    ![metadata](assets/cfm-metadata-01.png)
