@@ -139,6 +139,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Markdown](content-fragments/content-fragments-markdown.md)
   + [Structure Tree](/help/assets/content-fragments/content-fragments-structure-tree.md)
   + [Preview - JSON Representation](/help/assets/content-fragments/content-fragments-json-preview.md)
+  + [Creating translation projects for Content Fragments](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
     + [Manage digital assets](manage-assets.md)
     + [Manage collections](manage-collections.md)
