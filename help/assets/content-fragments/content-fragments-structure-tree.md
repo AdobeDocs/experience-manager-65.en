@@ -3,7 +3,6 @@ title: Content Fragment Structure Tree
 description: Use the Structure Tree feature of the Content Fragment Editor in AEM to better understand your headless content.
 feature: Content Fragments
 role: User
-exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 ---
 # Content Fragment Structure Tree {#content-fragment-structure-tree}
 

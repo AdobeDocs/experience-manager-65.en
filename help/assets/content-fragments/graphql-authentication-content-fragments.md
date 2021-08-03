@@ -2,7 +2,6 @@
 title: Authentication for Remote AEM GraphQL Queries on Content Fragments
 description: Understand the authentication required for Remote AEM GraphQL queries in order to secure your headless content delivery.
 feature: Content Fragments,GraphQL API
-exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 ---
 # Authentication for Remote AEM GraphQL Queries on Content Fragments {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
@@ -16,7 +15,11 @@ For authentication the third party service needs to [retrieve an Access Token](#
 
 ## Retrieving an Access Token {#retrieving-access-token}
 
-See [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) for full details.
+<!-- does this page need to be migrated? -->
+
+<!--
+See [Generating Access Tokens for Server Side APIs](/help/sites-developing/generating-access-tokens-for-server-side-apis.md) for full details.
+-->
 
 ## Using the Access Token in a GraphQL Request {#use-access-token-in-graphql-request}
 

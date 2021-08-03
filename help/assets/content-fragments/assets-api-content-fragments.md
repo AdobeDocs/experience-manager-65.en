@@ -2,7 +2,6 @@
 title: Adobe Experience Manager as a Cloud Service Content Fragments Support in Assets HTTP API
 description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
 feature: Content Fragments,Assets HTTP API
-exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 ---
 # Content Fragments Support in AEM Assets HTTP API {#content-fragments-support-in-aem-assets-http-api}
 
@@ -138,8 +137,8 @@ If the Assets REST API is used within an environment without specific authentica
 >
 >For further information see:
 >
->* [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
->* [Video - Developing for CORS with AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+>* [CORS/AEM explained](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
+>* [Video - Developing for CORS with AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
 >
 
 In environments with specific authentication requirements, OAuth is recommended.
