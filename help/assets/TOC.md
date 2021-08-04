@@ -113,6 +113,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
     + [Integrate with [!DNL InDesign Server]](indesign.md)
     + [Digital Rights Management in assets](drm.md)
     + [Use demo package for assets insights](use-demo-package-for-asset-insights.md)
+    + [Generate FPO renditions for Adobe InDesign](configure-fpo-renditions.md)
     + [Assets file format best practices](assets-file-format-best-practices.md)
     + [Best practices to monitor assets](assets-monitoring-best-practices.md)
     + [Camera Raw support](camera-raw.md)
