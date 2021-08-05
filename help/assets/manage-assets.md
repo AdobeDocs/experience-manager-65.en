@@ -44,7 +44,7 @@ You can upload various types of assets (including images, PDF files, RAW files, 
 
 >[!NOTE]
 >
->In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](#optional-config-dms7-assets-larger-than-2gb).
+>In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
@@ -147,7 +147,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 >[!NOTE]
 >
->In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](#optional-config-dms7-assets-larger-than-2gb).
+>In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
