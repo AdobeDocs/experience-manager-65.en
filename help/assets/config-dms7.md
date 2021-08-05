@@ -7,6 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
+mini-toc-levels: 3
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
 ---
@@ -20,7 +21,8 @@ The following architecture diagram describes how Dynamic Media - Scene7 mode wor
 
 With the new architecture, Experience Manager is responsible for primary source assets and synchs with Dynamic Media for asset processing and publishing:
 
-1. When the primary source asset is uploaded to Experience Manager, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. <!-- (In Dynamic Media - Scene7 mode, be aware that you can only upload assets whose file sizes are 2 GB or less.) Jira ticket CQ-4286561 fixed this issue. DM-S7 NOW SUPPORTS THE UPLOAD OF ASSETS LARGER THAN 2 GB. -->
+1. When the primary source asset is uploaded to Experience Manager, it is replicated to Dynamic Media. At that point, Dynamic Media handles all asset processing and rendition generation, such as video encoding and dynamic variants of an image. 
+(In Dynamic Media - Scene7 mode, the default upload file size is 2 GB or less. To enable upload file sizes of 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](#optional-config-dms7-assets-larger-than-2gb).)
 1. After the renditions are generated, Experience Manager can securely access and preview the remote Dynamic Media renditions (no binaries are sent back to the Experience Manager instance).
 1. After content is ready to be published and approved, it triggers the Dynamic Media service to push content out to delivery servers and cache content at the CDN (Content Delivery Network).
 
@@ -147,11 +149,95 @@ If you want to further customize your configuration, you can optionally complete
 
 If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following *optional* tasks:
 
+* [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](#optional-config-dms7-assets-larger-than-2gb)
+
 * [(Optional) Setup and configuration of Dynamic Media - Scene7 mode settings](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
 
 * [(Optional) Tune the performance of Dynamic Media - Scene7 mode](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Optional) Filter assets for replication](#optional-filtering-assets-for-replication)
+
+### (Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB {#optional-config-dms7-assets-larger-than-2gb}
+
+In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. However, you can optionally configure upload of assets larger than 2 GB and up to 15 GB.
+
+Be aware of the following prerequisites and points if you intend to use this feature:
+
+* You must be running Experience Manager 6.5 with Service Pack 6.5.4.0 or later.
+* [Oak's Direct Binary Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) is enabled.
+
+    To enable, set property `presignedHttpDownloadURIExpirySeconds > 0` in the datastore configuration. The value should be long enough to download larger binaries and possibly retry.
+
+* Assets larger than 15 GB do not get uploaded. (The size limit is set in step 8 below.)
+* When the Scene7 Reprocess Assets workflow is triggered on a folder, it reprocesses the already uploaded large assets that are in the folder. However, it does upload large assets that do not exist in the Scene7 company.
+* Large uploads work for single asset payloads only, not in the case when the workflow is triggered on a folder.
+
+**To configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB:**
+
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+
+1. In CRXDE Lite window, do either one of the following:
+
+   * In the left rail, navigate to the following path:
+
+      `/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Copy and paste the path above into the CRXDE Lite path field below the toolbar, then press `Enter`.
+
+1. In the left rail, right-click on `fileupload`, then from the pop-up menu, select **[!UICONTROL Overlay Node]**.
+
+   ![Overlay Node option](/help/assets/assets-dm/uploadassets>2gb_a.png)
+
+1. On the Overlay Node dialog box, select the **[!UICONTROL Match Node Types]** check box to enable (turn on) the option, then select **[!UICONTROL OK]**.
+
+   ![Overlay Node dialog box](/help/assets/assets-dm/uploadassets>2gb_b.png)
+
+1. From the CRXDE Lite window, do either one of the following:
+
+   * In the left rail, navigate to the following overlay node path:
+
+      `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
+
+   * Copy and paste the path above into the CRXDE Lite path field below the toolbar, then press `Enter`.
+
+1. In the **[!UICONTROL Properties]** tab, under the **[!UICONTROL Name]** column, locate `sizeLimit`.
+1. To the right of the `sizeLimit` name, under the **[!UICONTROL Value]** column, double-click the value field.
+1. Enter the appropriate value in bytes so you can increase the size limit to the maximum desired upload size. For example, to increase the upload asset size limit to 10 GB, enter `10737418240` in the value field.
+You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded assets that are larger than 15 GB do not get uploaded.
+
+
+   ![Size limit value](/help/assets/assets-dm/uploadassets>2gb_c.png)
+
+1. Near the upper-left corner of the CRXDE Lite window, select **[!UICONTROL Save All]**.
+
+   *Now set the timeout for the Adobe Granite Workflow External Process Job Handler by doing the following:*
+
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console.
+1. Do either one of the following:
+
+   * Navigate to the following URL path:
+
+      `localhost:4502/system/console/configMgr/com.adobe.granite.workflow.core.job.ExternalProcessJobHandler`
+
+   * Copy and paste the path above into the URL field of your browser. Be sure you replace `localhost:4502` with your own Experience Manager instance.
+
+1. In the **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** dialog box, in the **[!UICONTROL Max Timeout]** field, set the value to `18000` minutes (five hours). Default is 10800 minutes (three hours).
+
+   ![Max timeout value](/help/assets/assets-dm/uploadassets>2gb_d.png)
+
+1. In the lower-right corner of the dialog box, select **[!UICONTROL Save]**.
+
+   *Now set the timeout for the Scene7 Direct Binary Upload process step by doing the following:*
+
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console.
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. On the Workflow Models page, select **[!UICONTROL Dynamic Media Encode Video]**.
+1. On the toolbar, select **[!UICONTROL Edit]**.
+1. On the workflow page, double-click the **[!UICONTROL Scene7 Direct Binary Upload]** process step.
+1. In the **[!UICONTROL Step Properties]** dialog box, under the **[!UICONTROL Common]** tab, under the **[!UICONTROL Advanced Settings]** heading, in the **[!UICONTROL Timeout]** field, enter a value of `18000` minutes (five hours). The default is `3600` minutes (one hour).
+1. Select **[!UICONTROL OK]**.
+1. Select **[!UICONTROL Sync]**.
+1. Repeat steps 14-21 for the **[!UICONTROL DAM Update Asset]** workflow model and the **[!UICONTROL Scene7 Reprocess Workflow]** workflow model.
 
 ### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
@@ -529,7 +615,7 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 **To update the Granite transient workflow queue:**
 
-1. Navigate to [https://&lt;server&gt;/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search for **Queue: Granite Transient Workflow Queue**.
+1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search for **Queue: Granite Transient Workflow Queue**.
 
    >[!NOTE]
    >
