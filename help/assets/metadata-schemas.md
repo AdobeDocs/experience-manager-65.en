@@ -101,7 +101,7 @@ To edit the properties of a metadata component on the form, click the component 
 
 **Map to Property**: This property specifies the relative path to or name of the asset node where it is saved in the CRX repository. It starts with `./` to indicate that the path is under the asset's node.
 
-The following are the examples of valid values for a property:
+The following are examples of valid values for a property:
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
 

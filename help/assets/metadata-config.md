@@ -60,7 +60,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    ![Map to property setting in metadata profile](assets/metadata-profile-setting-map-property.png)
 
-   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify `./jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, [!DNL Assets] stores the value `dc:desc` at the asset's metadata node.
+   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify `./jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, [!DNL Assets] stores the value `dc:desc` at the asset's metadata node. It is recommended to map only one field to a given property in the metadata schema. Otherwise, the latest added field mapped to the property is picked by the system.
 
     * **[!UICONTROL Default Value]**: Use this property to add a default value for the metadata component. For example, if you specify "My description" then this value is assigned to the property `dc:desc` at the asset's metadata node.
 
