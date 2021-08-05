@@ -186,11 +186,11 @@ Be aware of the following prerequisites and points if you intend to use this fea
 
 1. In the left rail, right-click on `fileupload`, then from the pop-up menu, select **[!UICONTROL Overlay Node]**.
 
-   ![Overlay Node option](/help/assets/assets-dm/uploadassets>2gb_a.png)
+   ![Overlay Node option](/help/assets/assets-dm/uploadassets15gb_a.png)
 
 1. On the Overlay Node dialog box, select the **[!UICONTROL Match Node Types]** check box to enable (turn on) the option, then select **[!UICONTROL OK]**.
 
-   ![Overlay Node dialog box](/help/assets/assets-dm/uploadassets>2gb_b.png)
+   ![Overlay Node dialog box](/help/assets/assets-dm/uploadassets15gb_b.png)
 
 1. From the CRXDE Lite window, do either one of the following:
 
@@ -206,7 +206,7 @@ Be aware of the following prerequisites and points if you intend to use this fea
 You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded assets that are larger than 15 GB do not get uploaded.
 
 
-   ![Size limit value](/help/assets/assets-dm/uploadassets>2gb_c.png)
+   ![Size limit value](/help/assets/assets-dm/uploadassets15gb_c.png)
 
 1. Near the upper-left corner of the CRXDE Lite window, select **[!UICONTROL Save All]**.
 
@@ -223,7 +223,7 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 
 1. In the **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** dialog box, in the **[!UICONTROL Max Timeout]** field, set the value to `18000` minutes (five hours). Default is 10800 minutes (three hours).
 
-   ![Max timeout value](/help/assets/assets-dm/uploadassets>2gb_d.png)
+   ![Max timeout value](/help/assets/assets-dm/uploadassets15gb_d.png)
 
 1. In the lower-right corner of the dialog box, select **[!UICONTROL Save]**.
 
