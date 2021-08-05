@@ -9,7 +9,7 @@ exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 ---
 # Manage your digital assets {#manage-digital-assets}
 
-In [!DNL Adobe Experience Manager Assets] you can do more than just store and govern your assets. [!DNL Experience Manager] offers enterprise-grade asset management capabilities. You can edit and share assets, run advanced searches, create multiple renditions of dozens of supported file formats, manage versions and digital rights, automate processing of assets, manage and govern metadata, collaborate using annotations, and much more.
+In [!DNL Adobe Experience Manager Assets], you can do more than store and govern your assets. [!DNL Experience Manager] offers enterprise-grade asset management capabilities. You can edit and share assets, run advanced searches, and create multiple renditions of dozens of supported file formats. You can also manage versions and digital rights, automate processing of assets, manage and govern metadata, collaborate using annotations, and much more.
 
 This article describes the basic asset management tasks such as create or upload; metadata updates; copy, move, and delete; publish, unpublish, and search assets. To understand the user interface, see [get started with assets user interface](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [manage Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) assets.
 
@@ -19,10 +19,10 @@ When organizing a collection of assets, for example, all `Nature` images, you ca
 
 >[!NOTE]
 >
->* Sharing an [!DNL Assets] folder of the type `sling:OrderedFolder` is not supported when sharing to Marketing Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
->* [!DNL Experience Manager] does not allow using `subassets` word as the name of a folder. It is a keyword reserved for node that contain subassets for compound assets.
+>* Sharing an [!DNL Assets] folder of the type `sling:OrderedFolder` is not supported when sharing to Experience Cloud. If you want to share a folder, do not select [!UICONTROL Ordered] when creating a folder.
+>* [!DNL Experience Manager] does not allow using `subassets` word as the name of a folder. It is a keyword reserved for a node that contains subassets for compound assets.
 
-1. Navigate to the place in your digital assets folder where you want to create a new folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
+1. Navigate to the place in your digital assets folder where you want to create a folder. In the menu, click **[!UICONTROL Create]**. Select **[!UICONTROL New Folder]**.
 1. In the **[!UICONTROL Title]** field, provide a folder name. By default, DAM uses the title that you provided as the folder name. Once the folder is created, you can override the default and specify another folder name.
 1. Click **[!UICONTROL Create]**. Your folder is displayed in the digital assets folder.
 
@@ -44,7 +44,7 @@ You can upload various types of assets (including images, PDF files, RAW files, 
 
 >[!NOTE]
 >
->In Dynamic Media - Scene7 mode, you can only upload assets whose file sizes are 2 GB or less.
+>In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
@@ -68,7 +68,7 @@ Before uploading an asset, ensure that it is in a [format](/help/assets/assets-f
 
 The size above which an asset is considered a large asset is configurable. For example, you can configure the system to consider assets above 1000 MB (instead of 500 MB) as large assets. In this case, **[!UICONTROL Pause]** appears on the progress bar when assets of size greater than 1000 MB are uploaded.
 
-The [!UICONTROL Pause] option does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000 MB file upload, the **[!UICONTROL Pause]** option appears.
+The [!UICONTROL Pause] option does not show if a file greater than 1000 MB is uploaded with a file less than 1000 MB. However, if you cancel the less than 1000-MB file upload, the **[!UICONTROL Pause]** option appears.
 
 To modify the size limit, configure the `chunkUploadMinFileSize` property of the `fileupload` node in the CRX repository.
 
@@ -84,15 +84,15 @@ To configure the cleanup task for the unfinished chunk upload jobs, go to `https
 
 >[!CAUTION]
 >
->The default value when chunk upload is triggered is 500 MB and the chunk size is 50 MB. If you modify the [Apache Jackrabbit Oak TokenConfiguration](https://helpx.adobe.com/experience-manager/kb/How-to-set-token-session-expiration-AEM.html) to set the `timeout configuration` to be less than the time it takes for an asset to upload, then you can encounter a session timeout situation while the asset upload is in progress. You, therefore, need to change the `chunkUploadMinFileSize` and `chunksize`, so that each chunk request refreshes the session.
+>Chunk upload is triggered when the default value is 500 MB and the chunk size is 50 MB. If you edit [Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) and set the `timeout configuration` to less than the time it takes for an asset to upload, you encounter a session timeout situation while the asset upload is in progress. Therefore, change the `chunkUploadMinFileSize` and `chunksize` so that each chunk request refreshes the session.
 >
->Given the credential-expiry-timeout, latency, bandwidth, and expected concurrent uploads, the highest value that allows you to ensure the following is picked:
+>Given the credential-expiry-timeout, latency, bandwidth, and expected concurrent uploads, the highest value that lets you ensure that the following is picked:
 >
 >* To ensure that chunk upload is enabled for files with sizes likely to cause credential expiry while upload is in progress.
 >
 >* To ensure that each chunk finishes before the credential expires.
 
-If you upload an asset with the same name as that of an asset already available at the location where you are uploading the asset, a warning dialog is displayed.
+If you upload an asset with the same name as an asset that is already available at the location where you are uploading the asset, a warning dialog is displayed.
 
 You can choose to replace an existing asset, create another version, or keep both by renaming the new asset that is uploaded. If you replace an existing asset, the metadata for the asset and any prior modifications (for example annotate or crop) you made to the existing asset are deleted. If you choose to keep both assets, the new asset is renamed with number `1` appended to its name.
 
@@ -104,7 +104,7 @@ You can choose to replace an existing asset, create another version, or keep bot
 >
 >If Assets Insights is enabled to track impressions or clicks with [!DNL Adobe Analytics], the regenerated asset ID invalidates the data-captured for the asset on [!DNL Analytics].
 
-If the asset you upload exists in [!DNL Assets], the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets does not matter.
+If the asset you upload exists in [!DNL Assets], the **[!UICONTROL Duplicates Detected]** dialog warns that you are attempting to upload a duplicate asset. The dialog appears only if the `SHA 1` checksum value of the binary of the existing asset matches the checksum value of the asset you upload. In this case, the names of assets do not matter.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ The upload progress dialog in [!DNL Assets] displays the count of successfully u
 
 ### Serial uploads {#serialuploads}
 
-Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your [!DNL Assets] deployment. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. As a result, the upload operation fails or terminate prematurely. In other words, [!DNL Experience Manager Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
+Uploading numerous assets in bulk consumes significant I/O resources, which may adversely impact the performance of your [!DNL Assets] deployment. In particular, if you have a slow internet connection, the time to upload drastically increases due to a spike in disk I/O. Moreover, your web browser may introduce additional restrictions to the number of POST requests [!DNL Assets] can handle for concurrent asset uploads. As a result, the upload operation fails or terminates prematurely. In other words, [!DNL Experience Manager Assets] may miss some files while ingesting a bunch of files or altogether fail to ingest any file.
 
 To overcome this situation, [!DNL Assets] ingests one asset at a time (serial upload) during a bulk upload operation, instead of the concurrently ingesting all the assets.
 
@@ -143,15 +143,15 @@ Serial uploading of assets is enabled by default. To disable the feature and all
 
 ### Upload assets using FTP {#uploading-assets-using-ftp}
 
-Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets (>1 GB) or upload entire folders and sub-folders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
+Dynamic Media enables batch uploading of assets via FTP server. If you intend to upload large assets (>1 GB) or upload entire folders and subfolders, you should use FTP. You can even set up FTP upload to occur on a recurring scheduled basis.
 
 >[!NOTE]
 >
->In Dynamic Media - Scene7 mode, you can only upload assets whose file sizes are 2 GB or less.
+>In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
 >[!NOTE]
 >
->To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the [!DNL Experience Manager] author instances. Contact [Adobe Customer Care](https://helpx.adobe.com/contact/enterprise-support.ec.html) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
+>To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the [!DNL Experience Manager] author instances. Contact [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
 >
 >If you use FTP for uploading assets, the upload settings specified in [!DNL Experience Manager] are ignored. Instead, file processing rules, as defined in Dynamic Media Classic, are used.
 
@@ -161,7 +161,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), then sign in to your account.
 
-   Your credentials and sign in were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+   Your credentials and sign-in were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
 1. On the Global Navigation Bar, click **[!UICONTROL Upload]**.
 1. On the Upload page, near the upper-left corner, click the **[!UICONTROL Via FTP]** tab.
@@ -182,26 +182,26 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 #### Upload Job Options {#upload-job-options}
 
-| Upload option | Sub-option | Description |
+| Upload option | Suboption | Description |
 |---|---|---|
 | Job Name | | The default name that is pre-filled in the text field includes the user-entered portion of the name and the date-and-time stamp. You can use the default name or enter a name of your own creation for this upload job. <br>The job and other upload and publishing jobs are recorded on the Jobs page, where you can check the status of jobs. |
 | Publish After Uploading | | Automatically publishes the assets that you upload. |
 | Overwrite in any folder, same base asset name regardless of extension | | Select this option if you want the files you upload to replace existing files with the same names. The name of this option could be different, depending on the settings in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
 | Uncompress Zip or Tar Files on Upload | | |
-| Job Options | | Click **[!UICONTROL Job Options]** to open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Select the **[!UICONTROL Default Upload Options]** option to open the [!UICONTROL Upload Job Options] dialog box. |
+| Job Options | | Click **[!UICONTROL Job Options]** so you can open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Select the **[!UICONTROL Default Upload Options]** option to open the [!UICONTROL Upload Job Options] dialog box. |
 | | When | Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary. |
 | | Include subfolders | Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in [!DNL Experience Manager Assets]. |
-| | Crop Options | To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.<br> To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:<br> **Trim Away Based On** <ul><li>**Color** - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li><li>**Transparency** - Choose the Transparency option.<br> **Tolerance** - Drag the slider to specify a tolerance from 0 through 1.For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br>For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li></ul><br>Note that these crop options are non-destructive. |
+| | Crop Options | To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.<br> To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:<br> **Trim Away Based On** <ul><li>**Color** - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li><li>**Transparency** - Choose the Transparency option.<br> **Tolerance** - Drag the slider to specify a tolerance from 0 through 1.For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br>For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li></ul><br>These crop options are non-destructive. |
 | | Color Profile Options | Choose a color conversion when you create optimized files that are used for delivery:<ul><li>Default Color Preservation: Maintains the source image colors whenever the images contain color space information; there is no color conversion. Nearly all images today have the appropriate color profile already embedded. However, if a CMYK source image does not contain an embedded color profile, the colors are converted to sRGB (standard Red Green Blue) color space. sRGB is the recommended color space for displaying images on web pages.</li><li>Keep Original Color Space: Retains the original colors without any color conversion at the point. For images without an embedded color profile, any color conversion is done using the default color profiles configured in the Publish settings. The color profiles may not align with the color in the files created with this option. Therefore, you are encouraged to use the option Default Color Preservation.</li><li>Custom From > To<br> Opens menus so you can choose a Convert From and Convert To color space. This advanced option overrides any color information that is embedded in the source file. Select this option when all the images that you are submitting contain incorrect or missing color profile data.</li></ul> |
-| | Image Editing Options | You can preserve the clipping masks in images, and choose a color profile.<br> See [Setting image editing options at upload](#setting-image-editing-options-at-upload). |
+| | Image-Editing Options | You can preserve the clipping masks in images, and choose a color profile.<br> See [Setting options for image edits at upload](#setting-image-editing-options-at-upload). |
 | | Postscript Options | You can rasterize PostScript® files, crop files, maintain transparent backgrounds, choose a resolution, and choose a color space.<br> See [Setting PostScript and Illustrator upload options](#setting-postscript-and-illustrator-upload-options). |
-| | Photoshop Options | You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.<br> Note that templates are not supported in [!DNL Experience Manager].<br> See [Setting Photoshop upload options](#setting-photoshop-upload-options). |
-| | PDF Options | You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.<br> Note that eCatalogs are not supported in [!DNL Experience Manager]. <br> See [Setting PDF upload options](#setting-pdf-upload-options). |
+| | Photoshop Options | You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.<br> Templates are not supported in [!DNL Experience Manager].<br> See [Setting Photoshop upload options](#setting-photoshop-upload-options). |
+| | PDF Options | You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.<br>eCatalogs are not supported in [!DNL Experience Manager]. <br> See [Setting PDF upload options](#setting-pdf-upload-options). |
 | | Illustrator Options | You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.<br> See [Setting PostScript and Illustrator upload options](#setting-postscript-and-illustrator-upload-options). |
 | | EVideo Options | You can transcode a video file by choosing a Video Preset.<br> See [Setting eVideo upload options](#setting-evideo-upload-options). |
 | | Batch Set Presets | To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.<br> See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.<br> See [Setting Batch Set Presets at upload](#setting-batch-set-presets-at-upload). |
 
-#### Set image editing options at upload {#setting-image-editing-options-at-upload}
+#### Set options for image edits at upload {#setting-image-editing-options-at-upload}
 
 When uploading image files, including AI, EPS, and PSD files, you can take the following editing actions in the [!UICONTROL Upload Job Options] dialog box:
 
@@ -231,7 +231,7 @@ When uploading image files, including AI, EPS, and PSD files, you can take the f
 
 When you upload PostScript (EPS) or Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available in the [!UICONTROL Upload Job Options] dialog box under [!UICONTROL PostScript Options] and [!UICONTROL Illustrator Options].
 
-| Option | Sub-option | Description |
+| Option | Suboption | Description |
 |---|---|---|
 | Processing | | Choose **[!UICONTROL Rasterize]** to convert vector graphics in the file to the bitmap format. |
 | Maintain transparent background in rendered image | | Maintain the background transparency of the file. |
@@ -254,14 +254,14 @@ Use the [!UICONTROL Crop Options] and [!UICONTROL Color Profile Options], descri
 >
 >Templates are not supported in [!DNL Experience Manager].
 
-| Option | Sub-option | Description |
+| Option | Suboption | Description |
 |---|---|---|
 | Maintain Layers | | Rips the layers in the PSD, if any, into individual assets. The asset layers remain associated with the PSD. You can view them by opening the PSD file in Detail view and selecting the layer panel. |
 | Create Template | | Creates a template from the layers in the PSD file. |
 | Extract Text | | Extracts the text so that users can search for text in a Viewer. |
 | Extend layers to background size | | Extends the size of ripped image layers to the size of the background layer. |
 | Layer Naming | | Layers in the PSD file are uploaded as separate images. |
-| | Layer Name | Names the images after their layer names in the PSD file. For example, a layer named Price Tag in the original PSD file becomes an image named Price Tag. However, if the layer names in the PSD file are default Photoshop layer names (Background, Layer 1, Layer 2, and so on), the images are named after their layer numbers in the PSD file, not their default layer names. |
+| | Layer Name | Names the images after their layer names in the PSD file. For example, a layer named Price Tag in the original PSD file becomes an image named Price Tag. However, if the layer names in the PSD file are default Photoshop layer names (Background, Layer 1, Layer 2, and so on), the images are named after their layer numbers in the PSD file. They are not named after their default layer names. |
 | | Photoshop and Layer Number | Names the images after their layer numbers in the PSD file, ignoring original layer names. Images are named with the Photoshop filename and an appended layer number. For example, the second layer of a file called Spring Ad.psd is named Spring Ad_2 even if it had a non-default name in Photoshop. |
 | | Photoshop and Layer Name | Names the images after the PSD file followed by the layer name or layer number. The layer number is used if the layer names in the PSD file are default Photoshop layer names. For example, a layer named Price Tag in a PSD file named SpringAd is named Spring Ad_Price Tag. A layer with the default name Layer 2 is called Spring Ad_2. |
 | Anchor | | Specify how images are anchored in templates that are generated from the layered composition produced from the PSD file. By default, the anchor is the center. A center anchor allows replacement images to best fill the same space, no matter the aspect ratio of the replacement image. Images with a different aspect that replace this image, when referencing the template and using parameter substitution, effectively occupy the same space. Change to a different setting if your application requires the replacement images to fill the allocated space in the template. |
@@ -276,9 +276,9 @@ When you upload a PDF file, you can format it in various ways. You crop its page
 
 Choose from the following options:
 
-| Option | Sub-option | Description |
+| Option | Suboption | Description |
 |---|---|---|
-| Processing | Rasterize | (Default) Rips the pages in the PDF file and converts vector graphics to bitmap images. Choose this option to create an eCatalog. |
+| Processing | Rasterize | (Default) Rips the pages in the PDF file and converts vector graphics to bitmap images. Choose this option if you want to create an eCatalog. |
 | Extract | Search words | Extracts words from the PDF file so that the file can be searched by keyword in an eCatalog Viewer. |
 | | Links | Extracts links from the PDF files and coverts them to Image Maps that are used in an eCatalog Viewer. |
 | Auto-Generate eCatalog from multiple page PDF | | Automatically creates an eCatalog from the PDF file. The eCatalog is named after the PDF file you uploaded. (This option is only available if you rasterize the PDF file as you upload it.) |
@@ -291,15 +291,15 @@ Choose from the following options:
 
 #### Set eVideo upload options {#setting-evideo-upload-options}
 
-To transcode a video file by choosing from a variety of video presets.
+To transcode a video file by choosing from various video presets.
 
-| Option | Sub-option | Description |
+| Option | Suboption | Description |
 |---|---|---|
 | Adaptive Video | | A single encoding preset that works with any aspect ratio to create videos for delivery to mobile, tablet, and desktop. Uploaded source videos that are encoded with this preset are set with a fixed height. However, the width automatically scales to preserve the video’s aspect ratio. <br>Best practice is to use Adaptive Video encoding. |
-| Single Encoding Presets | Sort Encoding Presets | Select Name or Size to sort the encoding presets listed under Desktop, Mobile, and Tablet by name or by resolution size. |
-| | Desktop | Create an MP4 file for delivering a streaming or progressive video experience to desktop computers.Select one or more aspect ratios with the resolution size and target data rate you desire. |
-| | Mobile | Create an MP4 file for delivery on iPhone or Android mobile devices.Select one or more aspect ratios with the resolution size and target data rate you desire. |
-| | Tablet | Create an MP4 file for delivery on iPad or Android tablet devices.Select one or more aspect ratios with the resolution size and target data rate you desire. |
+| Single Encoding Presets | Sort Encoding Presets | Select **[!UICONTROL Name]** or **[!UICONTROL Size]** if you want to sort the encoding presets listed under Desktop, Mobile, and Tablet by name or by resolution size. |
+| | Desktop | Create an MP4 file for delivering a streaming or progressive video experience to desktop computers. Select one or more aspect ratios with the resolution size and target data rate you desire. |
+| | Mobile | Create an MP4 file for delivery on iPhone or Android™ mobile devices. Select one or more aspect ratios with the resolution size and target data rate you desire. |
+| | Tablet | Create an MP4 file for delivery on iPad or Android™ tablet devices. Select one or more aspect ratios with the resolution size and target data rate you desire. |
 
 #### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
@@ -319,7 +319,7 @@ If you upload many assets to Adobe Experience Manager, the I/O requests to serve
 
 You can upload ZIP archives just like any other supported asset. The same file name rules apply to ZIP files. [!DNL Experience Manager] allows you to extract a ZIP archive to a DAM location. If the archive files do not contain ZIP as extension, enable file type detection using content.
 
-Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and select a destination folder. Select an option to handle conflicts, if any. If the assets in the ZIP file already exist in the destination folder, you can select one of these options: skip extraction, replace existing files, keep both assets by renaming, or create new version.
+Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and select a destination folder. Select an option that you want to handle conflicts, if any. If the assets in the ZIP file exist in the destination folder, you can select one of these options: skip extraction, replace existing files, keep both assets by renaming, or create a version.
 
 After the extraction is complete, [!DNL Experience Manager] notifies you in the notification area. While [!DNL Experience Manager] extracts the ZIP, you can go back to your work without interrupting the extraction.
 
@@ -337,7 +337,7 @@ Some limitations of the feature are:
 To preview an asset, follow these steps.
 
 1. From the [!DNL Assets] user interface, navigate to the location of the asset you want to preview.
-1. Click the desired asset to open it.
+1. Click the desired asset so you can open it.
 
 1. In the preview mode, zoom options are available for [supported Image types](/help/assets/assets-formats.md#supported-raster-image-formats) (with interactive editing).
 
@@ -349,13 +349,13 @@ To preview an asset using keyboard, follow these steps:
 
 1. From the [!DNL Assets] user interface, navigate to the desired asset using `Tab` and arrow keys.
 
-1. Select `Enter` key on the desired asset to open it. You can zoom into assets in preview mode.
+1. Press `Enter` key on the desired asset so you can open it. You can zoom into assets in preview mode.
 
 1. To zoom into the asset:
    1. Use `Tab` key to move focus to zoom-in option.
    1. Use `Enter` key to zoom into the image.
 
-   To zoom out use `Tab` key to move focus to the the zoom-out option and select `Enter`.
+   To zoom out, use the `Tab` key to place focus on the zoom-out option and press `Enter`.
 
 1. Use `Shift` + `Tab` keys to move the focus back on the image.
 
@@ -368,13 +368,13 @@ To preview an asset using keyboard, follow these steps:
 
 ## Edit properties and metadata {#editing-properties}
 
-1. Navigate to the location of the asset to edit its metadata.
+1. Navigate to the location of the asset whose metadata you want to edit.
 
-1. Select the asset, and click **[!UICONTROL Properties]** from the toolbar to view asset properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
+1. Select the asset, then from the toolbar, select **[!UICONTROL Properties]** so you can view the asset's properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
    ![Properties quick action on asset card view](assets/properties_quickaction.png)
 
-1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. For example, under the **[!UICONTROL Basic]** tab, edit the title, description, and so on.
+1. In the [!UICONTROL Properties] page, edit the metadata properties under various tabs. For example, under the **[!UICONTROL Basic]** tab, edit the title and description.
 
    >[!NOTE]
    >
@@ -400,7 +400,7 @@ To preview an asset using keyboard, follow these steps:
 
    The rating score that you assign to the asset is displayed under **[!UICONTROL Your Ratings]**. The average rating score that the asset received from users who rated the asset is displayed under **[!UICONTROL Rating]**. In addition, the breakup of the rating scores that contribute to the average rating score is displayed under **[!UICONTROL Rating Breakdown]**. You can search assets based on average rating scores.
 
-1. To view usage usage statistics for the asset, click the **[!UICONTROL Insights]** tab.
+1. To view usage statistics for the asset, click the **[!UICONTROL Insights]** tab.
 
    Usage statistics include the following:
 
@@ -411,7 +411,7 @@ To preview an asset using keyboard, follow these steps:
    For more details, see [Assets Insights](/help/assets/asset-insights.md).
 
 1. Click **[!UICONTROL Save & Close]**.
-1. Navigate to the [!DNL Assets] user interface. The edited metadata properties, including title, description, ratings, and so on are displayed on the asset card in Card view and under relevant columns in the List view.
+1. Navigate to the [!DNL Assets] user interface. The edited metadata properties, including title, description, ratings, and so on, are displayed on the asset card in Card view and under relevant columns in the List view.
 
 ## Copy assets {#copying-assets}
 
@@ -446,7 +446,7 @@ The other properties and metadata information is retained. A partial copy is not
 ## Move and rename assets {#moving-or-renaming-assets}
 
 When you move assets (or folders) to another location, then the assets (or folders) are not duplicated unlike while copying the asset. The assets (or the folders) get placed at the target location and are removed from the source location. You can also rename the asset when moving it to the new location.
-If you are moving a published asset to a different location, then you have an option to republish the asset. By default move operation on a published asset automatically unpublishes it. A moved asset is republished if author selects the [!UICONTROL Republish] option when moving the asset.
+If you are moving a published asset to a different location, then you can optionally republish the asset. By default move operation on a published asset automatically unpublishes it. A moved asset is republished if author selects the [!UICONTROL Republish] option when moving the asset.
 
 ![You can republish an already published asset when moving it](assets/republish-on-move.png)
 
@@ -499,7 +499,7 @@ Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, the
 
 1. You can add or remove renditions for an asset, except the original. Navigate to the location of the asset for which you want to add or remove renditions.
 
-1. Click the asset to open its page.
+1. Click the asset so its page is opened.
 1. In the Experience Manager interface, select **[!UICONTROL Renditions]** from the list.
 1. In the **[!UICONTROL Renditions]** panel, view the list of renditions generated for the asset.
 
@@ -513,7 +513,7 @@ Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, the
 
    **Delete a rendition**
 
-   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** ![Option to delete a rendition](assets/do-not-localize/deleteoutline.png) option from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and re-upload the deleted assets.
+   Select a rendition from the **[!UICONTROL Renditions]** panel, and then click the **[!UICONTROL Delete Rendition]** ![Option to delete a rendition](assets/do-not-localize/deleteoutline.png) option from the toolbar. Renditions cannot be deleted in bulk after asset processing is complete. For individual assets, you can remove renditions manually from the user interface. For multiple assets, you can customize Experience Manager to delete either specific renditions or delete the assets and reupload the deleted assets.
 
    **Upload a new rendition**
 
@@ -525,7 +525,7 @@ Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, the
 
    You can configure the dimensions for the rendition you want displayed in the details page of an image or video asset. Based on the dimensions you specify, [!DNL Assets] displays the rendition with the exact or closest dimensions.
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width to customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
+   To configure rendition dimensions of an image at the asset detail level, overlay the `renditionpicker` node (`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`) and configure the value of the width property. Configure the property **[!UICONTROL size (Long) in KB]** in place of width so you can customize rendition on asset detail page based on image size. For size-based customization, the property `preferOriginal` assigns preference to the original if the size of the matched rendition is greater than the original.
 
    Similarly, you can customize the Annotation page image by overlaying `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
 
@@ -580,7 +580,7 @@ For information specific to [!DNL Dynamic Media], see [publishing [!DNL Dynamic 
 
 1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
-1. Select the asset or the folder to unpublish, and click **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
+1. Select the asset or the folder that you want to unpublish, and click **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
 
 1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
 
@@ -596,9 +596,9 @@ For information specific to [!DNL Dynamic Media], see [publishing [!DNL Dynamic 
 Understand the following limitations and tips related to publishing or unpublishing assets or folders:
 
 * The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
-* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
+* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because they may be referenced by other published assets.
 * Empty folders are not published.
-* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+* If you publish an asset that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or republish the asset once the processing completes.
 
 ## Closed User Group {#closed-user-group}
 
@@ -606,7 +606,7 @@ A closed user group (CUG) is used to limit access to specific asset folders publ
 
 CUGs are an extra way to restrict access to your assets. You can also configure a login page for the folder.
 
-1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] option from the toolbar to display the properties page.
+1. Select a folder from the [!DNL Assets] interface, and click the [!UICONTROL Properties] option from the toolbar so you can display the properties page.
 1. From the **[!UICONTROL Permissions]** tab, add members or groups under **[!UICONTROL Closed User Group]**.
 
    ![Add user in closed user group](assets/add_user.png)
@@ -624,7 +624,7 @@ CUGs are an extra way to restrict access to your assets. You can also configure 
 
 ## Search assets {#assetsearch}
 
-Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
+Searching assets is central to the usage of a digital asset management system. This functionality is important for creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators.
 
 For simple, advanced, and custom searches to discover and use the most appropriate assets, see [search assets in Experience Manager](search-assets.md).
 
@@ -672,7 +672,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
    ![Clockwise and anti-clockwise rotate options](assets/do-not-localize/rotate-options.png)
 
-1. Click the appropriate **[!UICONTROL Flip]** options to flip the image horizontally ![reflect horizontal option](assets/do-not-localize/flip-horizontal.png) or vertically ![reflect vertical option](assets/do-not-localize/flip-vertical.png).
+1. Click the appropriate **[!UICONTROL Flip]** options if you want to flip the image horizontally ![reflect horizontal option](assets/do-not-localize/flip-horizontal.png) or vertically ![reflect vertical option](assets/do-not-localize/flip-vertical.png).
 
 1. To complete the image editing, click **[!UICONTROL Finish]** ![Finish option](assets/do-not-localize/check-ok-done-icon.png). Clicking **Finish** also starts the regeneration of renditions.
 
@@ -720,7 +720,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
 1. Add a comment in the **[!UICONTROL Comment]** box at the bottom of the timeline. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog.
 
-1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users is displayed in a list. Select Aaron's email address from the list to tag her with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
+1. To notify a user about an annotation, specify the email address of the user and add the comment. For example, to notify Aaron MacDonald about an annotation, enter @aa. Hints for all matching users are displayed in a list. Select Aaron's email address from the list so you can tag the person with the comment. Similarly, you can tag more users anywhere within the annotation or before or after it.
 
    ![Specify user's email address and add comment to notify user](assets/annotate-gif.gif)
 
@@ -759,7 +759,7 @@ You can view only one annotation at a time.
 
 >[!NOTE]
 >
->If you are selecting multiple annotations, the latest annotation will be visible on the user interface. 
+>If you are selecting multiple annotations, the latest annotation is visible on the user interface. 
 >
 >Multi-select is supported only for printing the annotated asset as PDF.
 
@@ -770,7 +770,7 @@ You can view only one annotation at a time.
 1. In the Experience Manager interface, choose **[!UICONTROL Timeline]**.
 1. From the **[!UICONTROL Show All]** list in the timeline, select **[!UICONTROL Comments]** to filter the results based on annotations.
 
-   Click a comment in the **[!UICONTROL Timeline]** panel to view the corresponding annotation on the image.
+   Click a comment in the **[!UICONTROL Timeline]** panel if you want to view the corresponding annotation on the image.
 
    ![Timeline panel to view annotation on image](assets/timeline-view-annotations.png)
 
@@ -816,7 +816,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
    >
    >If the asset has subassets, you can print all the subassets along with their specific page-wise annotations.
 
-   To modify the appearance of the rendered PDF file, for example the font color, size, and style, background color of the comments and statuses, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-assets.md#annotating).
+   To edit the appearance of the rendered PDF file, for example the font color, size, and style, open the **[!UICONTROL Annotation PDF configuration]** from Configuration Manager, and modify the desired options. For example, to change the display color of the approved status, modify the color code in the corresponding field. For information around changing the font color of annotations, see [Annotating](/help/assets/manage-assets.md#annotating).
 
    ![Configuration to print asset annotation on PDF document](assets/annotation-print-pdf-config.png)
 
@@ -830,16 +830,16 @@ If an asset includes annotations in foreign languages (especially non-latin lang
     * In the System Fonts directory option, specify the complete path to the fonts directory on your system. For example, if you're a Mac user, you can specify the path as */Library/Fonts* in the System Fonts directory option. [!DNL Experience Manager] fetches the fonts from this directory.
     * Create a directory named `fonts` inside the `crx-quickstart` folder. CQ-DAM-Handler-Gibson Font Manager Service automatically fetches the fonts at the location `crx-quickstart/fonts`. You can override this default path from within the Adobe Server Fonts directory option.
 
-    * Create a new folder for fonts in your system, and store the desired fonts in the folder. Then, specify the complete path to that folder in the Customer Fonts directory option.
+    * Create a folder for fonts in your system, and store the desired fonts in the folder. Then, specify the complete path to that folder in the Customer Fonts directory option.
 
 1. Access the Annotation PDF configuration from the URL `https://[aem_server]:[4502]/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig`.
 1. Configure the Annotation PDF with the correct set of font-family as follows:
 
-    * Include the string `<font_family_name_of_custom_font, sans-serif>` within the font-family option. For example, if you want to print annotations in CJK (Chinese, Japanese and Korean), include the string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in the font-family option. If you want to print annotations in Hindi, download the appropriate font and configure the font-family as Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
+    * Include the string `<font_family_name_of_custom_font, sans-serif>` within the font-family option. For example, if you want to print annotations in CJK (Chinese, Japanese and Korean), include the string `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in the font-family option. If you want to print annotations in Hindi, download the appropriate font and configure the font-family as Arial® Unicode MS®, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
 1. Restart the [!DNL Experience Manager] deployment.
 
-Here is an example of how you can configure [!DNL Experience Manager] to print annotations in CJK (Chinese, Japanese and Korean):
+Here is an example of how you can configure [!DNL Experience Manager] to print annotations in CJK (Chinese, Japanese, and Korean):
 
 1. Download Google Noto CJK fonts from the following links, and store them in the font directory configured in Font Manager Service.
 
@@ -852,7 +852,7 @@ Here is an example of how you can configure [!DNL Experience Manager] to print a
 
 ## Create, manage, preview, and revert asset versions {#asset-versioning}
 
-Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state at a later time. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset. In [!DNL Experience Manager], you can create a version, view the current revision, view side-by-side differences between two versions of images, and restore an asset to its previous version.
+Versioning creates a snapshot of digital assets at a specific point in time. Versioning helps restore assets to a previous state later. For example, if you want to undo a change that you made to an asset, restore the unedited version of the asset. In [!DNL Experience Manager], you can create a version, view the current revision, view side-by-side differences between two versions of images, and restore an asset to its previous version.
 
 You can create versions in [!DNL Experience Manager] in the following scenarios:
 
@@ -872,7 +872,7 @@ You can also enable automatic versioning through a workflow. When you create a v
 1. To create a version of the asset:
   
    * Click the **[!UICONTROL Actions]** at the bottom.
-   * Click **[!UICONTROL Save as Version]** to create a version for the asset. Optionally, add a label and comment.
+   * Click **[!UICONTROL Save as Version]** so you can create a version for the asset. Optionally, add a label and comment.
    * Click **[!UICONTROL Create]** to create a version.
 
      ![Create asset version from sidebar](assets/create-new-version-from-timeline.png)
