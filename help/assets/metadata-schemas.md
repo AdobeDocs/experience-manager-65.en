@@ -23,6 +23,8 @@ To view and edit the properties page for an asset, follow these steps:
 
    *Figure: Basic tab on asset [!UICONTROL Properties].*
 
+   Ensure that only one property is mapped to a field while you create or edit the metadata schema. 
+
    To modify the MIME type for an asset, use a custom metadata schema form or modify an existing form. See [Edit Metadata Schema Forms](#edit-metadata-schema-forms) for more information. If you modify the metadata schema of a MIME type, the properties page layout for the assets and all subtypes are modified. For example, modifying a jpeg schema under `default/image` only modifies the metadata layout (asset properties) for assets with MIME type `image/jpeg`. However, if you edit the default schema, your changes modify the metadata layout for all types of assets.
 
 ## Metadata Schema forms {#default-metadata-schema-forms}
@@ -42,7 +44,7 @@ To view a list of forms or templates, in [!DNL Experience Manager] interface nav
 | [!UICONTROL collection] | | Schema form for collections. |
 | [!UICONTROL contentfragment] | | [Schema form for content fragments](/help/sites-developing/customizing-content-fragments.md). |
 | [!UICONTROL forms] | | This schema form relates to [Adobe Experience Manager Forms](/help/forms/home.md). |
-| [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
+ | [!UICONTROL ugc_contentfragment] | | Schema form for user generated content pieces and assets integrated into Experience Manager from social media. |
 
 >[!NOTE]
 >
@@ -93,13 +95,13 @@ The **[!UICONTROL Build Form]** tab lists form items that you use in your schema
 
 #### Edit the metadata component {#edit-the-metadata-component}
 
-To edit the properties of a metadata component on the form, click the component to edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab.
+To edit the properties of a metadata component on the form, click the component to edit all or a subset of the following properties in the **[!UICONTROL Settings]** tab. It is recommended to map only one field to a given property in the metadata schema. Otherwise, the latest added field mapped to the property is picked by the system.  
 
 **Field Label**: The name of the metadata property that is displayed on the properties page for the asset.
 
 **Map to Property**: This property specifies the relative path to or name of the asset node where it is saved in the CRX repository. It starts with `./` to indicate that the path is under the asset's node.
 
-The following are the valid values for this property:
+The following are the examples of valid values for a property:
 
 * `./jcr:content/metadata/dc:title`: Stores the value at the asset's metadata node as the property `dc:title`.
 
