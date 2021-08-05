@@ -31,7 +31,7 @@ The global also declares the [Sling library](/help/sites-developing/taglib.md#sl
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling" %>
 ```
 
-### <ui:includeClientLib> {#ui-includeclientlib}
+### &lt;ui:includeClientLib&gt; {#ui-includeclientlib}
 
 The `<ui:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css, or a theme library. For multiple inclusions of different types, for example js and css, this tag needs to be used multiple times in the jsp. This tag is a convenience wrapper around the ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` service interface.
 
@@ -93,7 +93,7 @@ When you develop the jsp script of a AEM component, it is recommended to include
 
 It declares the sling, CQ, and jstl taglibs and exposes the regularly used scripting objects defined by the [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) tag. This shortens and simplifies the jsp code of your component.
 
-### <cq:text> {#cq-text}
+### &lt;cq:text&gt; {#cq-text}
 
 The `<cq:text>` tag is a convenience tag that outputs component text in a JSP.
 
@@ -151,7 +151,7 @@ Some examples how the `<cq:text>` tag can be used in a JSP:
 <cq:text property="text" tagClass="text"/>
 ```
 
-### <cq:setContentBundle> {#cq-setcontentbundle}
+### &lt;cq:setContentBundle&gt; {#cq-setcontentbundle}
 
 The `<cq:setContentBundle>` tag creates an i18n localization context and stores it in the `javax.servlet.jsp.jstl.fmt.localizationContext` configuration variable.
 
@@ -198,7 +198,7 @@ For user personalized pages:
 </div> ...
 ```
 
-### <cq:include> {#cq-include}
+### &lt;cq:include&gt; {#cq-include}
 
 The `<cq:include>` tag includes a resource into the current page.
 
@@ -248,7 +248,7 @@ Should you use `<cq:include>` or `<sling:include>`?
 * When developing AEM components, Adobe recommends that you use `<cq:include>`.
 * `<cq:include>` allows you to directly include script files by their name when using the script attribute. This takes component and resource type inheritance into account, and is often simpler than strict adherence to Sling's script resolution using selectors and extensions.
 
-### <cq:includeClientLib> {#cq-includeclientlib}
+### &lt;cq:includeClientLib&gt; {#cq-includeclientlib}
 
 >[!CAUTION]
 >
@@ -292,7 +292,7 @@ The `<cq:includeClientLib>` tag can be used as follows in a jsp:
 <cq:includeClientLib css="cq.collab.calendar, cq.security" />
 ```
 
-### <cq:defineObjects> {#cq-defineobjects}
+### &lt;cq:defineObjects&gt; {#cq-defineobjects}
 
 The `<cq:defineObjects>` tag exposes the following, regularly used, scripting objects which can be referenced by the developer. It also exposes the objects defined by the [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) tag.
 
@@ -434,7 +434,7 @@ The `<cq:defineObjects>` tag exposes the following, regularly used, scripting ob
 >
 >When the `/libs/foundation/global.jsp` file is included in the script, the `<cq:defineObjects />` tag is automatically included.
 
-### <cq:requestURL> {#cq-requesturl}
+### &lt;cq:requestURL&gt; {#cq-requesturl}
 
 The `<cq:requestURL>` tag writes the current request URL to the JspWriter. The two tags [ `<cq:addParam>`](#amp-lt-cq-addparam) and [ `<cq:removeParam>`](#amp-lt-cq-removeparam) and may be used inside the body of this tag to modify the current request URL before it is written.
 
@@ -456,7 +456,7 @@ Examples:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:addParam> {#cq-addparam}
+### &lt;cq:addParam&gt; {#cq-addparam}
 
 The `<cq:addParam>` tag adds a request parameter with the given name and value to the enclosing [ `<cq:requestURL>`](#amp-lt-cq-requesturl) tag.
 
@@ -476,7 +476,7 @@ It has the following attributes:
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
 ```
 
-### <cq:removeParam> {#cq-removeparam}
+### &lt;cq:removeParam&gt; {#cq-removeparam}
 
 The `<cq:removeParam>` tag removes a request parameter with the given name and value from the enclosing [ `<cq:requestURL>`](#amp-lt-cq-requesturl) tag. If no value is provided all parameters with the given name are removed.
 
@@ -506,7 +506,7 @@ When you use the Sling Tag Library in your script, the script must start with th
 >
 >When the `/libs/foundation/global.jsp` file is included in the script, the sling taglib is automatically declared.
 
-### <sling:include> {#sling-include}
+### &lt;sling:include&gt; {#sling-include}
 
 The `<sling:include>` tag includes a resource into the current page.
 
@@ -571,7 +571,7 @@ Examples:
 <sling:include replaceSelectors="content" />
 ```
 
-### <sling:defineObjects> {#sling-defineobjects}
+### &lt;sling:defineObjects&gt; {#sling-defineobjects}
 
 The `<sling:defineObjects>` tag exposes the following, regularly used, scripting objects which can be referenced by the developer:
 
