@@ -76,6 +76,10 @@ These content fragments can then be assembled to provide experiences over a vari
 >
 >For further information see also [Understanding Content Fragments and Experience Fragments in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=en#content-fragments).
 
+>[!NOTE]
+>
+>Prior to AEM 6.3 Content Fragments were created with the use of templates instead of models. Templates are no longer available for creating new fragments, but any fragments created with such a template are still supported.
+
 ## Content Fragments and Content Services {#content-fragments-and-content-services}
 
 AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages.
