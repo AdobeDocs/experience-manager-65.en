@@ -24,12 +24,24 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * 
 
+<!--
+Vishabh - In-progress task
+* A new user interface is introduced to configure GraphQL endpoints. The users will now be able to communicate with the Experience Manager server using the GraphQL APIs. (SITES-1753) Asked Engineering...... In-Progress
+-->
+
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.0 release.
 
 ### [!DNL Sites] {#sites-65100}
 
+* When opening an existing page (Page v3 component version), the page Properties dialog does not opens and a `NullPointerException` is logged (SITES-1830).
+* Adding indexes on unwanted elements and variations in `ContentFragmentReferenceResolver` introduces some new queries. It impacts performance of Experience Manager server (SITES-1822).
+* The system does not accepts a valid `Content Fragement` defined in `Allowed Content Fragment Models` as a `Default Value` if the selected content fragment is not the first one in the list of allowed models. Experience Manager displays the following error message (SITES-1805).
+  
+  ```This fragment is not of type <model-path>```
+
+* 
 * 
 
 ### [!DNL Assets] {#assets-65100}
