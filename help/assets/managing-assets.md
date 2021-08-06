@@ -13,7 +13,7 @@ exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
 ---
 # About managing Dynamic Media assets {#managing-assets}
 
-Managing Dynamic Media assets&ndash;images, video, and interactive assets&ndash;after they are uploaded&ndash;involves many tasks including previewing, downloading, or publishing them.
+Managing Dynamic Media assets &ndash; images, video, and interactive assets &ndash; after they are uploaded&ndash;involves many tasks including previewing, downloading, or publishing them.
 
 When previewing, you can also apply image presets (for images only) or viewer presets (for video and images). You cannot apply both to an asset. See [Applying viewer presets](/help/assets/viewer-presets.md) and [Applying image presets](/help/assets/image-sets.md).
 
