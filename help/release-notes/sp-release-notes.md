@@ -43,47 +43,47 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 * `RTE Link` plugin currently allows to select `Content Fragments` along with all other types of assets (SITES-1537).
 
 * When creating a new Content Fragment using the inline Wizard, the `Allowed Content Fragment Models` are not visible in the select model list (SITES-1522).
-   
+
 
 ### [!DNL Assets] {#assets-65100}
 
 The following user experience enhancements are done in [!DNL Assets]:
 
-* 
+* TBD
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
 [!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
 
-* 
+* TBD
 
 ### Platform {#platform-65100}
 
-* 
+* TBD
 
 ### Integrations {#integrations-65100}
 
-* 
+* TBD
 
 ### Projects {#projects-65100}
 
-* 
+* TBD
 
 ### Screens {#screens-65100}
 
-* 
+* TBD
 
 ### Commerce {#commerce-65100}
 
-* 
+* TBD
 
 ### Translation projects {#translation-65100}
 
-* 
+* TBD
 
 ### Workflow {#workflow-65100}
 
-*
+* TBD
 
 ### [!DNL Communities] {#communities-65100}
 
