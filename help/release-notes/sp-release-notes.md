@@ -22,12 +22,9 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.10.0 are:
 
-* 
+* Experience Manager Sites introduces a self-managed user interface to configure custom `GraphQL` endpoints for their external tenants (SITES-1753).
 
-<!--
-Vishabh - In-progress task
-* A new user interface is introduced to configure GraphQL endpoints. The users will now be able to communicate with the Experience Manager server using the GraphQL APIs. (SITES-1753) Asked Engineering...... In-Progress
--->
+* Additional validation in `Content Fragrament` editor to ensure uniqueness of a `Content Fragment` within the same `Content Fragment` model (SITES-1730).
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -41,8 +38,12 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
   
   ```This fragment is not of type <model-path>```
 
-* 
-* 
+* When creating a new `Content Fragment` in `Content Fragment` editor, the user is able to create `Content Fragment` for a disabled model (SITES-1723).
+
+* `RTE Link` plugin currently allows to select `Content Fragments` along with all other types of assets (SITES-1537).
+
+* When creating a new Content Fragment using the inline Wizard, the `Allowed Content Fragment Models` are not visible in the select model list (SITES-1522).
+   
 
 ### [!DNL Assets] {#assets-65100}
 
@@ -86,11 +87,16 @@ The following user experience enhancements are done in [!DNL Assets]:
 
 ### [!DNL Communities] {#communities-65100}
 
-* 
+* Community site pages are by default opening in `LoggedIn` state for anonymous guest users (NPR-36908). 
 
+* When there are more than one page in the **[!UICONTROL Community]** > **[!UICONTROL Ideas]** > **[!UICONTROL Comments]** section and the user tries to navigate to the first, next, or last page, the page navigation does not work (NPR-36541). 
+
+
+<!--
 ### [!DNL Brand Portal] {#brandportal-65100}
 
-* 
+*
+--> 
 
 ### [!DNL Forms] {#forms-65100}
 
