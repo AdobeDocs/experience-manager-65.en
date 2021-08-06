@@ -161,16 +161,22 @@ If you want to further customize the configuration and setup of Dynamic Media - 
 
 In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. However, you can optionally configure upload of assets larger than 2 GB and up to 15 GB.
 
-Be aware of the following prerequisites and points if you intend to use this feature:
+If you intend to use this feature, be aware of the following prerequisites and points:
 
-* You must be running Experience Manager 6.5 with Service Pack 6.5.4.0 or later.
-* [Oak's Direct Binary Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) is enabled.
+* You must be running Experience Manager 6.5 with Service Pack 6.5.4.0 or later in Dynamic Media - Scene7 mode.
+* This large upload feature is only supported for [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) customers.
+* Be sure that your Experience Manager instance is configured with Amazon S3 or Microsoft® Azure Blob storage.
 
-    To enable, set property `presignedHttpDownloadURIExpirySeconds > 0` in the datastore configuration. The value should be long enough to download larger binaries and possibly retry.
+   >[!NOTE]
+   >
+   >Configure the Azure Blob storage with both access keys (key1 and key2) because this large upload feature is not supported with AzureSas in the Blob storage configuration.
+
+* Oak's [Direct Binary Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) is enabled (Oak's *Direct Binary Access upload* is not required).
+
+    To enable Direct Binary Access download, set property `presignedHttpDownloadURIExpirySeconds > 0` in the datastore configuration. The value should be long enough to download larger binaries and possibly retry.
 
 * Assets larger than 15 GB do not get uploaded. (The size limit is set in step 8 below.)
-* When the Scene7 Reprocess Assets workflow is triggered on a folder, it reprocesses the already uploaded large assets that are in the folder. However, it does upload large assets that do not exist in the Scene7 company.
-* Large uploads work for single asset payloads only, not in the case when the workflow is triggered on a folder.
+* When the **[!UICONTROL Dynamic Media Reprocess]** assets workflow is triggered on a folder, it reprocesses any large assets that are already in sync with the Dynamic Media company. However, if any large assets are not yet synced in the folder, it does not upload the asset. Therefore, to sync existing large assets in Dynamic Media, you can run **[!UICONTROL Dynamic Media Reprocess]** assets workflow on individual assets.
 
 **To configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB:**
 
@@ -237,7 +243,7 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 1. In the **[!UICONTROL Step Properties]** dialog box, under the **[!UICONTROL Common]** tab, under the **[!UICONTROL Advanced Settings]** heading, in the **[!UICONTROL Timeout]** field, enter a value of `18000` minutes (five hours). The default is `3600` minutes (one hour).
 1. Select **[!UICONTROL OK]**.
 1. Select **[!UICONTROL Sync]**.
-1. Repeat steps 14-21 for the **[!UICONTROL DAM Update Asset]** workflow model and the **[!UICONTROL Scene7 Reprocess Workflow]** workflow model.
+1. Repeat steps 14-21 for the **[!UICONTROL DAM Update Asset]** workflow model and the **[!UICONTROL Dynamic Media Reprocess]** workflow model.
 
 ### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
