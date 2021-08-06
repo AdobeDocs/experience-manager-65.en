@@ -26,6 +26,9 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Additional validation in `Content Fragrament` editor to ensure uniqueness of a `Content Fragment` within the same `Content Fragment` model (SITES-1730).
 
+* Ability to manage publication for `Models`. When selecting a `Model` and publishing it, a popup displays the list of all the referenced `Models` to be published (SITES-1496).
+
+
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.0 release.
@@ -42,7 +45,11 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 * `RTE Link` plugin currently allows to select `Content Fragments` along with all other types of assets (SITES-1537).
 
-* When creating a new Content Fragment using the inline Wizard, the `Allowed Content Fragment Models` are not visible in the select model list (SITES-1522).
+* When creating a new Content Fragment using the inline wizard, the `Allowed Content Fragment Models` are not visible in the select model list (SITES-1522).
+
+* When a `Model` type is selected on the `Model Editor` page, `Edit Content Fragement` button appears on the `Fragment Reference Properties` sheet (SITES-1485).
+
+* When adding a reference to the `Fragment Reference` field in `Content Fragment Model Editor`, only the models that are `enabled` are allowed. If the parent model is in `draft` state, it is not allowed to refer it to other `draft` models (SITES-1477). 
 
 
 ### [!DNL Assets] {#assets-65100}
@@ -87,9 +94,13 @@ The following user experience enhancements are done in [!DNL Assets]:
 
 ### [!DNL Communities] {#communities-65100}
 
-* Community site pages are by default opening in `LoggedIn` state for anonymous guest users (NPR-36908). 
+* Community site pages are opening in `LoggedIn` state for anonymous guest users (NPR-36908). 
 
-* When there are more than one page in the **[!UICONTROL Community]** > **[!UICONTROL Ideas]** > **[!UICONTROL Comments]** section and the user tries to navigate to the first, next, or last page, the page navigation does not work (NPR-36541). 
+* When there are more than one page in the **[!UICONTROL Community]** > **[!UICONTROL Ideas]** > **[!UICONTROL Comments]** page, the page navigation does not work (NPR-36541). 
+
+<!--
+Need to verify with Engineering, the status is currently showing as Resolved
+-->
 
 
 <!--
