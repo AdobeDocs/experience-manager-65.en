@@ -203,7 +203,7 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 ### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
 
-<!-- 6.5.10.0 -->
+<!-- 6.5.10.0??? -->
 
 The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
 
