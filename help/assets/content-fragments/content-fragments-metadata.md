@@ -31,4 +31,4 @@ You can view and edit the metadata (properties) for content fragments:
       For example, you can tag relevant fragments as “Christmas launch” to allow browsing only these as a subset, or to copy them for use with another future launch in a new folder.
     * Created (display only)
 
-   ![metadata](assets/cfm-metadata-02.png)
+    ![metadata](assets/cfm-metadata-02.png)

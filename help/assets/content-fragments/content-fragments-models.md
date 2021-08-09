@@ -42,6 +42,7 @@ The content fragment model effectively defines the structure of the resulting co
 1. Navigate to **Tools**, **Assets**, then open **Content Fragment Models**.
 
 1. Navigate to the folder holding your content fragment model.
+
 1. Open the required model for **Edit**; use either the quick action, or select the model and then the action from the toolbar.
 
    Once open the model editor shows:
@@ -53,7 +54,7 @@ The content fragment model effectively defines the structure of the resulting co
    >
    >When a field as **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&#42;**).
 
-  ![properties](assets/cfm-models-03.png)
+   ![properties](assets/cfm-models-03.png)
 
 1. **To Add a Field**
 

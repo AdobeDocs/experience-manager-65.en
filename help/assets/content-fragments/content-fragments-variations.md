@@ -159,11 +159,15 @@ If the Content Fragment Model contains Fragment References, your fragment author
 
 #### Edit Content Fragment {#fragment-references-edit-content-fragment}
 
+The option **Edit Content Fragment** will open that fragment in a new window tab.
+
+<!--
 The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
 
 Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
 
 ![Fragment References](assets/cfm-variations-editreference.png)
+--> 
 
 #### New Content Fragment {#fragment-references-new-content-fragment}
 
@@ -443,6 +447,8 @@ When editing a variation you have access to the action for synchronizing the cur
 >Synchronization only works on the **Multi line text** data-type.
 >
 >Transferring changes *from a variation to **Master*** is not available as an option.
+
+<!-- needs new screenshot for synchronize effect -->
 
 1. Open your content fragment in the fragment editor. Ensure that the **Master** has been edited.
 
