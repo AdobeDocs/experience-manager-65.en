@@ -11,19 +11,19 @@ feature: Asset Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 ---
-# Delivering optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
+# Deliver optimized images for a responsive site {#delivering-optimized-images-for-a-responsive-site}
 
 Use the Responsive code feature when you want to share the code for responsive serving with your web developer. You copy the responsive (**[!UICONTROL RESS]**) code to the clipboard so you can share it with the web developer.
 
-This feature makes sense to use if your website is on a third-party WCM. However, if your website is on AEM instead, an offsite image server renders the image and supplies it to the web page.
+This feature makes sense to use if your website is on a third-party WCM. However, if your website is on Adobe Experience Manager instead, an offsite image server renders the image and supplies it to the web page.
 
-See also [Embedding the Video Viewer on a Web Page](embed-code.md).
+See also [Embed the Video Viewer on a Web Page](embed-code.md).
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+See also [Link URLs to your Web Application](linking-urls-to-yourwebapplication.md).
 
 **To deliver optimized images for a responsive site:**
 
-1. Navigate to the image you want supply responsive code for and in the drop-down menu, tap **[!UICONTROL Renditions]**.
+1. Navigate to the image you want supply responsive code for and in the drop-down menu, select **[!UICONTROL Renditions]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 
@@ -37,12 +37,12 @@ See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplicati
    >
    >Dynamic Media - Hybrid mode requires you to publish image presets; Dynamic Media - Scene7 mode automatically publishes image presets.
 
-1. Tap **[!UICONTROL RESS]**.
+1. Select **[!UICONTROL RESS]**.
 
     ![chlimage_1-410](assets/chlimage_1-410.png)
 
-1. In the **[!UICONTROL Embed Responsive Image]** dialog box, select and copy the responsive code text and paste it in your web site to access the responsive asset.
-1. Edit the default breakpoints in the embed code to match those of the responsive web site directly in the code. In addition, test the different image resolutions being served at different page breakpoints.
+1. In the **[!UICONTROL Embed Responsive Image]** dialog box, select, and copy the responsive code text and paste it in your web site to access the responsive asset.
+1. Edit the default breakpoints in the embed code to match the breakpoints of the responsive web site, directly in the code. In addition, test the different image resolutions being served at different page breakpoints.
 
 ## Using HTTP/2 to delivery your Dynamic Media assets {#using-http-to-delivery-your-dynamic-media-assets}
 
