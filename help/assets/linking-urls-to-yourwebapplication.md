@@ -15,7 +15,7 @@ feature: Configuration
 
 Your websites and applications access Dynamic Media services by way of URL calls. After you publish an asset, Dynamic Media activates a URL string that references the asset. You can paste these URLs into a web browser for testing.
 
-You link to URLs only if you are *not* using AEM as your WCM. Linking&ndash;versus embedding&ndash;is used when you want to deliver a video player as a pop-up or modal window. If you are using AEM as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
+You link to URLs only if you are *not* using Experience Manager as your WCM. Linking &ndash; versus embedding &ndash; is used when you want to deliver a video player as a pop-up or modal window. If you are using Experience Manager as your WCM, [you add the assets directly on your page](adding-dynamic-media-assets-to-pages.md).
 
 To place these URL strings in your web pages and applications, copy them from Dynamic Media.
 
@@ -63,7 +63,7 @@ There are several different ways you can obtain a URL string. However, the steps
 
     * If you selected an image, in the drop-down menu, tap **[!UICONTROL Renditions]**.
 
-      Under the **[!UICONTROL Dynamic]** heading, tap a preset name to view its rendition in the right frame. You may need to scroll the Renditions list to see the Dynamic heading.
+      Under the **[!UICONTROL Dynamic]** heading, tap a preset name to view its rendition in the right frame. If necessary, scroll the Renditions list to see the Dynamic heading.
 
       At the bottom of the left rail, tap **[!UICONTROL URL]**.
 
@@ -77,7 +77,7 @@ There are several different ways you can obtain a URL string. However, the steps
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Select and copy the text to your web browser to preview the asset or to add to your web content page.
+1. Select and copy the text to your web browser so you can preview the asset or add it to your web content page.
 
    To exit the URL window, tap the **[!UICONTROL X]** or tap **[!UICONTROL Close]**.
 
@@ -117,32 +117,32 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
 ## Obtaining a video URL for a published video rendition {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. In AEM, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations]**.
 1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.
 
-1. On the **[!UICONTROL Dynamic Media Cloud Settings]** page, under **[!UICONTROL Video Service URL]**, copy down the entire URL path. You will need the copied URL path later in the steps.
+1. On the **[!UICONTROL Dynamic Media Cloud Settings]** page, under **[!UICONTROL Video Service URL]**, copy down the entire URL path. You need to the copied URL path later in the steps.
 
    For example, the URL path may appear similar to the following:
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (The path above is for illustration purposes only; it is not the actual path you copy.)
+   (The path above is an example only; it is not the actual path you copy.)
 
 1. Under **[!UICONTROL Registration ID]**, copy the customer name found in the last part of the ID.
 
    For example, if the registration ID was `87654321|MyCompany`, the customer name would be `MyCompany`.
 
 1. Near the upper-left corner of the page, tap **[!UICONTROL Cloud Services]**, then tap the Experience Manager logo and navigate to **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
-1. Copy down the entire video rendition path from the JCR (Java Content Repository).
+1. Copy down the entire video rendition path from the JCR (Java™ Content Repository).
 
    For example, the video's rendition path may appear similar to the following:
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (The path above is for illustration purposes only; it is not the actual path you copy.)
+   (The path above is an example only; it is not the actual path you copy.)
 
-1. Arrange the copied information in the following order to form a complete URL path:
+1. Arrange the copied information in the following order so it forms a complete URL path:
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -150,33 +150,33 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    `https://s7athens.macromedia.com:9090/DMGateway/public/MyCompany/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112ff/avs/Momentum_1080-0x720-2600k.mp4`
 
-   This is the complete video URL for a published video rendition.
+   This example is the complete video URL for a published video rendition.
 
 ## Obtaining a video URL for adaptive streaming (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. In AEM, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
+1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then tap **[!UICONTROL Show Configurations]**.
 1. Under **[!UICONTROL Available Configurations]**, tap the name of the configuration you want.
 1. On the **[!UICONTROL Dynamic Media Cloud Services Settings]** page, do the following:
 
-    * Under **[!UICONTROL Video Service URL]**, copy the entire URL path. You will need the copied URL path later in these steps. For example, the URL path may appear similar to the following:
+    * Under **[!UICONTROL Video Service URL]**, copy the entire URL path. You need the copied URL path later in these steps. For example, the URL path may appear similar to the following:
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (The path above is for illustration purposes only; it is not the actual path you copy.)
+   (The path above is an example only; it is not the actual path you copy.)
 
-    * Under **[!UICONTROL Registration ID]**, copy the customer name found in the last part of the ID. You will need the copied customer name later in these steps.
+    * Under **[!UICONTROL Registration ID]**, copy the customer name found in the last part of the ID. You need the copied customer name later in these steps.
 
       For example, if the registration ID was `87654321|demoCo`, the customer name you copy would be `demoCo`.
 
-1. Based on the video delivery protocol you are using, copy the respective protocol selector. You will need the copied protocol selector later in these steps.
+1. Based on the video delivery protocol you are using, copy the respective protocol selector. You need the copied protocol selector later in these steps.
 
    | Video delivery protocol you are using | Protocol selector to use |
    |---|---|
    | HTTP <br> If you are using HTTP (non-secure video delivery), be sure you change https to http in the Video Service URL value you copied earlier. | `public/` |
    | HTTPS | `public-ssl/` |
 
-1. Copy the full video asset path in AEM, as processed by Dynamic Media. You will need this copied video asset path later in these steps.
+1. Copy the full video asset path in Experience Manager, as processed by Dynamic Media. You need this copied video asset path later in these steps.
 
    For example:
 

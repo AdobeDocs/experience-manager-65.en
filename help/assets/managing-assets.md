@@ -19,7 +19,7 @@ When previewing, you can also apply image presets (for images only) or viewer pr
 
 General information on managing assets is found in [Manage assets](/help/assets/manage-assets.md).
 
-The following topics describe what you need to do to manage Dynamic Media assets:
+The following topics describes how to manage Dynamic Media assets:
 
 * [Best practices for optimizing the quality of your images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Previewing Dynamic Media assets](/help/assets/previewing-assets.md)
