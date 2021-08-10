@@ -1,12 +1,12 @@
 ---
 title: Working with Content Fragments
-description: Learn how Content Fragments in Adobe Experience Manager (AEM) as a Cloud Service allow you to design, create, curate, and use page-independent content, ideal for headless delivery.
+description: Learn how Content Fragments in Adobe Experience Manager (AEM) allow you to design, create, curate, and use page-independent content, ideal for headless delivery.
 feature: Content Fragments
 role: User
 ---
 # Working with Content Fragments {#working-with-content-fragments}
 
-With Adobe Experience Manager (AEM) as a Cloud Service, Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-authoring/content-fragments.md) They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery.
+With Adobe Experience Manager (AEM), Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-authoring/content-fragments.md) They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery.
 
 Content fragments contain structured content:
 
@@ -99,7 +99,7 @@ Together with the JSON export capabilities of AEM core components, this structur
 <!--
 >[!NOTE]
 >
->See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites as a Cloud Service.
+>See [Headless and AEM](/help/implementing/developing/headless/introduction.md) for an introduction to Headless Development for AEM Sites.
 --> 
 
 >[!NOTE]
@@ -291,17 +291,3 @@ To use your Content Fragments for page authoring you also need:
 ## Example Usage {#example-usage}
 
 A fragment, with its elements and variations, can be used to create coherent content for multiple channels. When designing your fragment you need to consider what will be used where.
-
-<!--
-### WKND Sample {#wknd-sample}
-
-The [WKND Site](/help/sites-developing/develop-wknd-tutorial.md) samples are provided to help you learn about AEM as a Cloud Service. 
-
-The WKND project includes:
-
-* Content Fragment Models available under:
-  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
-
-* Content Fragments (and other content) available under:
-  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
--->
