@@ -64,7 +64,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
     + [360 VR Video](/help/assets/360-video.md)
     + [Integrate Dynamic Media Viewers with Adobe Analytics and Adobe Experience Platform Tags](/help/assets/tags.md)
     + [Create custom pop-ups using Quickview](custom-pop-ups.md)
-    + [Delivere optimized images for a responsive site](responsive-site.md)
+    + [Deliver optimized images for a responsive site](responsive-site.md)
     + [Preview Dynamic Media assets](previewing-assets.md)
     + [Add Dynamic Media assets to pages](adding-dynamic-media-assets-to-pages.md)
     + [Embed the Dynamic Video or Image viewer on a web page](embed-code.md)
@@ -75,7 +75,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
     + [Invalidate the CDN cache by way of Dynamic Media](invalidate-cdn-cache-dynamic-media.md)
     + [Invalidate the CDN cache by way of Dynamic Media Classic](invalidate-cdn-cache-dm-classic.md)
     + [Install Feature Pack 18912 for bulk asset migration](bulk-ingest-migrate.md)
-    + [Working with Selectors](working-with-selectors.md)
+    + [Work with Selectors](working-with-selectors.md)
 + Extend Assets {#extending}
     + [Customize and extend [!DNL Assets]](extending-assets.md)
     + [Process assets using media handlers and workflows](media-handlers.md)

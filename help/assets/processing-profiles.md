@@ -8,7 +8,6 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
-
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
@@ -36,7 +35,7 @@ By using consistent and appropriate file and folder naming strategies, and good 
 >
 >The same is true even when you move assets between two folders that have the same profile assigned to it.
 
-## Reprocessing assets in a folder {#reprocessing-assets}
+## Reprocess assets in a folder {#reprocessing-assets}
 
 >[!NOTE]
 >
@@ -50,7 +49,7 @@ You can run the reprocess workflow on an asset for which processing failed the f
 
 You can optionally adjust the batch size of the reprocess workflow from a default of 50 assets up to 1000 assets. When you run the _Scene7: Reprocess Assets_ workflow on a folder, assets are grouped in batches, then sent to the Dynamic Media server for processing. Following processing, the metadata of each asset in the entire batch set is updated on Experience Manager. If the batch size is large, you may experience a delay in processing. Or, if the batch size is too small, it can cause too many round trips to the Dynamic Media server.
 
-See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
+See [Adjust the batch size of the reprocess workflow](#adjusting-load).
 
 >[!NOTE]
 >
@@ -72,35 +71,35 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
     * If there are one or more subfolders with assets in the main selected folder, the workflow reprocesses every asset in the folder hierarchy.
     * As a best practice, you should avoid running this workflow on a folder hierarchy that has more than 1000 assets.
 
-1. Near the upper-left corner of the page, from the drop-down list, click **[!UICONTROL Timeline]**.
-1. Near the lower-left corner of the page, to the right of the Comment field, click the carat icon  ( **^** ) .
+1. Near the upper-left corner of the page, from the drop-down list, select **[!UICONTROL Timeline]**.
+1. Near the lower-left corner of the page, to the right of the Comment field, select the carat icon  ( **^** ) .
 
     ![Reprocess assets workflow 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Click **[!UICONTROL Start Workflow]**.
+1. Select **[!UICONTROL Start Workflow]**.
 1. From the **[!UICONTROL Start Workflow]** drop-down list, choose **[!UICONTROL Scene7: Reprocess Assets]**.
 1. (Optional) In the **Enter title of workflow** text field, enter a name for the workflow. You can use the name to reference the workflow instance, if necessary.
 
     ![Reprocess assets 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Click **[!UICONTROL Start]**, then click **[!UICONTROL Confirm]**.
+1. Select **[!UICONTROL Start]**, then select **[!UICONTROL Confirm]**.
 
-    To monitor the workflow or check its progress, from the Experience Manager main console page, click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. On the Workflow Instances page, select a workflow. On the menu bar, click **[!UICONTROL Open History]**. You can also terminate, suspend, or rename a selected workflow from the same Workflow Instances page.
+    To monitor the workflow or check its progress, from the Experience Manager main console page, select **[!UICONTROL Tools]** > **[!UICONTROL Workflow]**. On the Workflow Instances page, select a workflow. On the menu bar, select **[!UICONTROL Open History]**. You can also terminate, suspend, or rename a selected workflow from the same Workflow Instances page.
 
-### Adjusting the batch size of the reprocess workflow {#adjusting-load}
+### Adjust the batch size of the reprocess workflow {#adjusting-load}
 
 (Optional) The default batch size in the reprocessing workflow is 50 assets per job. This optimal batch size is governed by the average asset size and the MIME types of assets on which the reprocess is run. A higher value means you have many files in a single reprocessing job. So, the processing banner stays on Experience Manager assets for a longer time. However, if the average file size is small &ndash; 1 MB or less &ndash; Adobe recommends that you increase the value to several 100, but never more than 1000. If the average file size is large, such as hundreds of megabytes, Adobe recommends that you lower the batch size up to 10.
 
 **To optionally adjust the batch size of the reprocess workflow:**
 
-1. In Experience Manager, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. In Experience Manager, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. On the Workflow Models page, in Card View or List View, select **[!UICONTROL Scene7: Reprocess Assets]**.
 
     ![Workflow Models page with Scene7: Reprocess Assets workflow selected in Card View](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. On the tool bar, click **[!UICONTROL Edit]**. A new browser tab opens the Scene7: Reprocess Assets workflow model page.
-1. On the Scene7: Reprocess Assets workflow page, near the upper-right corner, click **[!UICONTROL Edit]** to "unlock" the workflow.
-1. In the workflow, select the Scene7 Batch Upload component to open the toolbar, then click **[!UICONTROL Configure]** on the toolbar.
+1. On the tool bar, select **[!UICONTROL Edit]**. A new browser tab opens the Scene7: Reprocess Assets workflow model page.
+1. On the Scene7: Reprocess Assets workflow page, near the upper-right corner, select **[!UICONTROL Edit]** to "unlock" the workflow.
+1. In the workflow, select the Scene7 Batch Upload component to open the toolbar, then select **[!UICONTROL Configure]** on the toolbar.
 
     ![Scene7 Batch Upload component](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -114,16 +113,16 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
 
     ![Properties dialog box](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, click **[!UICONTROL Done]**. 
+1. In the upper-right corner of the **[!UICONTROL Batch Upload to Scene7 &ndash; Step Properties]** dialog box, select **[!UICONTROL Done]**. 
 
-1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, click **[!UICONTROL Sync]**. When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
+1. In the upper-right corner of the Scene7: Reprocess Assets workflow model page, select **[!UICONTROL Sync]**. When you see **[!UICONTROL Synced]**, the workflow runtime model is successfully synchronized and ready to reprocess assets in a folder.
 
-    ![Synchronizing the workflow model](/help/assets/assets-dm/reprocess-assets1.png)
+    ![Synchronize the workflow model](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. Close the browser tab that shows the Scene7: Reprocess Assets workflow model.
  
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
-1. In the upper-left corner of the page, click **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then click the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
+1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
    `/conf/global/settings/workflow/models/scene7_reprocess_assets/jcr:content/flow/reprocess/metaData`
@@ -134,10 +133,10 @@ See [Adjusting the batch size of the reprocess workflow](#adjusting-load).
     * **[!UICONTROL Name]**: `reprocess-batch-size`
     * **[!UICONTROL Type]**: `Long`
     * **[!UICONTROL Value]**: enter a default value (50-1000) for the batch size
-1. In the lower-right corner, click **[!UICONTROL Add]**. The new property appears as the following:
+1. In the lower-right corner, select **[!UICONTROL Add]**. The new property appears as the following:
 
     ![Saving the new property](/help/assets/assets/workflow-models10.png)
 
-1. On the menu bar of the CRXDE Lite page, click **[!UICONTROL Save All]**.
-1. In the upper-left corner of the page, click **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
+1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
 1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
