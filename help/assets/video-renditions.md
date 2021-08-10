@@ -9,21 +9,21 @@ exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
 ---
 # Video renditions {#video-renditions}
 
-Adobe Experience Manager (AEM) Assets generates video renditions for video assets of various formats including OGG, FLV, and so on.
+Adobe Experience Manager Assets generates video renditions for video assets of various formats including OGG, FLV, and so on.
 
-AEM Assets supports static and dynamic renditions (DM-encoded renditions) for media assets.
+Experience Manager Assets supports static and dynamic renditions (DM-encoded renditions) for media assets.
 
 Static renditions are generated natively using FFMPEG (installed and available on the system path) and stored in the content repository.
 
 The DM-encoded renditions are stored in the proxy server and served at runtime.
 
-AEM assets provide playback support for these renditions on the client side.
+Experience Manager Assets provide playback support for these renditions on the client side.
 
-To view the renditions of a particular video asset, open its asset page, and tap the Global Navigation icon. Then, choose **[!UICONTROL Renditions]** from the list.
+To view the renditions of a particular video asset, open its asset page, and select the Global Navigation icon. Then, choose **[!UICONTROL Renditions]** from the list.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-The list of video renditions are displayed in the **[!UICONTROL Renditions]** panel.
+The list of video renditions is displayed in the **[!UICONTROL Renditions]** panel.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
@@ -35,6 +35,6 @@ After you configure the proxy server and create video profiles, you can include 
 
 >[!NOTE]
 >
->Audio playback do not work for OGG and WAV files on Microsoft Internet Explorer 11. An error `Invalid Source` displays up on the asset details page for assets with extension OGG or WAV.
+>Audio playback does not work for OGG and WAV files on Microsoft® Internet Explorer 11. An error `Invalid Source` displays up on the asset details page for assets with extension OGG or WAV.
 >
->On MS Edge and iPad, OGG files do not play and raise an unsupported format error.
+>On MS® Edge and iPad, OGG files do not play and raise an unsupported format error.
