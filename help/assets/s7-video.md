@@ -8,6 +8,7 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
 ---
@@ -39,7 +40,7 @@ The following formats are supported for the Scene7 Video component:
 * F4V H.264
 * MP4 H.264
 
-## Deciding where to upload your video {#deciding-where-to-upload-your-video}
+## Decide where to upload your video {#deciding-where-to-upload-your-video}
 
 Deciding where to upload your video assets depends on the following:
 
@@ -64,11 +65,9 @@ If you do not need a workflow or versioning for your assets, upload your assets 
 1. In Experience Manager, access video assets in WCM in the **[!UICONTROL Scene7]** tab of the Content Finder.
 1. Author with the **[!UICONTROL Scene7 Video]** component.
 
-## Configuring Integration with Scene7 Video {#configuring-integration-with-scene-video}
+## Configure integration with Scene7 Video {#configuring-integration-with-scene-video}
 
-To configure universal presets:
-
-1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Scene7]** configuration and click **[!UICONTROL Edit]**.
+1. In **[!UICONTROL Cloud Services]**, navigate to your **[!UICONTROL Scene7]** configuration and select **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL Video]** tab.
 
    ![chlimage_1-363](assets/chlimage_1-363.png)
@@ -87,16 +86,16 @@ To configure universal presets:
 
 1. The selected encoding profiles are automatically applied to all videos uploaded to the CQ DAM target folder you set up for this Scene7 cloud configuration. You can set up multiple Scene7 cloud configurations with different target folders to apply different encoding profiles as needed.
 
-## Updating viewer and encoding presets {#updating-viewer-and-encoding-presets}
+## Update viewer and encoding presets {#updating-viewer-and-encoding-presets}
 
-To update the viewer and encoding presets for video because the presets were updated in Scene7, navigate to the Scene7 configuration in the Cloud Configuration and tap **[!UICONTROL Update the viewer and encoding presets]**.
+To update the viewer and encoding presets for video because the presets were updated in Scene7, navigate to the Scene7 configuration in the Cloud Configuration and select **[!UICONTROL Update the viewer and encoding presets]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-## Uploading your primary source video to Scene7 from Adobe DAM {#uploading-your-master-video}
+## Upload your primary source video to Scene7 from Adobe DAM {#uploading-your-master-video}
 
 1. Navigate to the CQ DAM target folder where you have set up your cloud configuration with Scene7 encoding profiles.
-1. Click **[!UICONTROL Upload]** to upload primary source video. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
+1. Select **[!UICONTROL Upload]** to upload primary source video. Video uploading and encoding is complete after the [!UICONTROL DAM Update Asset] workflow is complete and **[!UICONTROL Publish to Scene7]** has a checkmark.
 
    >[!NOTE]
    >
@@ -134,9 +133,9 @@ The following table provides a high-level comparison of supported capabilities b
 | Extensibility |Yes |No |
 | Mobile Video |Yes |Yes |
 
-### Setting Up {#setting-up}
+### Set up {#setting-up}
 
-#### Creating Video Profiles {#creating-video-profiles}
+#### Create Video Profiles {#creating-video-profiles}
 
 The various video encodings are created according to the S7 encoding presets selected in the S7 cloud config. For the foundation video component to use them, a video profile must be created for each S7 encoding preset selected. This method allows the video component to select the DAM renditions accordingly.
 
@@ -144,9 +143,9 @@ The various video encodings are created according to the S7 encoding presets sel
 >
 >New video profiles and changes to them must be activated to publish.
 
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Configuration Console]**.
+1. In Experience Manager, select **[!UICONTROL Tools]** > **[!UICONTROL Configuration Console]**.
 1. In the **[!UICONTROL Configuration Console]**, navigate to **[!UICONTROL Tools]** > **[!UICONTROL DAM]** > **[!UICONTROL Video Profiles]** in the navigation tree.
-1. Create a S7 Video Profile. In the **[!UICONTROL New]**. menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and click **[!UICONTROL Create]**.
+1. Create a S7 Video Profile. In the **[!UICONTROL New]**. menu, select **[!UICONTROL Create Page]** and then select the Scene7 Video Profile template. Give the new video profile page a name and select **[!UICONTROL Create]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -162,7 +161,7 @@ The various video encodings are created according to the S7 encoding presets sel
 
    Repeat this step for all encoding presets selected in the cloud config that you want to use in the video component.
 
-#### Configuring design {#configuring-design}
+#### Configure design {#configuring-design}
 
 The **[!UICONTROL Foundation Video]** component must know about what video profiles to use in order to build the video sources list. Open the video components design dialog box and configure the components design for using the new video profiles.
 

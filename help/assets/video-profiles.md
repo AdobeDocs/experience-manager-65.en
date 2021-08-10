@@ -10,6 +10,7 @@ discoiquuid: 3b8791c8-2c97-42b7-b4a9-e1157ac9ea02
 docset: aem65
 feature: Video Profiles
 role: User, Admin
+mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 ---
 # Video profiles {#video-profiles}
@@ -32,15 +33,15 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
 >[!NOTE]
 >
->To generate a video's metadata and associated video image thumbnails, the video itself must go through the encoding process in Dynamic Media. In Adobe Experience Manager, the **[!UICONTROL Dynamic Media Encode Video]** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitoring video encoding and YouTube publishing progress](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+>To generate a video's metadata and associated video image thumbnails, the video itself must go through the encoding process in Dynamic Media. In Adobe Experience Manager, the **[!UICONTROL Dynamic Media Encode Video]** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitor video encoding and YouTube publishing progress](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 >
->Metadata is useful when you are searching for assets. The thumbnails are static video images that are generated during encoding. They are required by the Experience Manager system and used in the user interface to help you visually identify videos in the Cards view, Search Results view, and the Asset List view. You can see the generated thumbnails when you tap the Renditions icon (a painter's palette) of an encoded video.
+>Metadata is useful when you are searching for assets. The thumbnails are static video images that are generated during encoding. They are required by the Experience Manager system and used in the user interface to help you visually identify videos in the Cards view, Search Results view, and the Asset List view. You can see the generated thumbnails when you select the Renditions icon (paint palette) of an encoded video.
 
-When you are done creating the video profile, you apply it to a folder or multiple folders. See [Applying a video profile to folders](#applying-a-video-profile-to-folders).
+When you are done creating the video profile, you apply it to a folder or multiple folders. See [Apply a video profile to folders](#applying-a-video-profile-to-folders).
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configure asset processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
-See also [Profiles for Processing Metadata, Images, and Videos](processing-profiles.md).
+See also [Profiles for processing Metadata, Images, and Videos](processing-profiles.md).
 
 ## Adaptive video encoding presets {#adaptive-video-encoding-presets}
 
@@ -101,7 +102,7 @@ The maximum supported video file size for smart crop is the following criteria:
 
 * Duration of five minutes.
 * 30 frames per second (FPS).
-* 300 MB file size.
+* 300-MB file size.
 
 Adobe Sensei is limited to 9000 frames. That is, five minutes at 30 FPS. If your video has a higher FPS, the maximum supported video duration decreases. For example, a 60 FPS video must be two and a half minutes long to be supported by Adobe Sensei and smart crop.
 
@@ -113,17 +114,17 @@ Adobe Sensei is limited to 9000 frames. That is, five minutes at 30 FPS. If your
 
 To use smart crop for video, you create an adaptive or progressive video encoding profile. As part of your profile, use the **[!UICONTROL Smart Crop Ratio]** tool to select pre-defined aspect ratios. As an example, after you define your video encoding presets, you can add a "Mobile Landscape" definition with an aspect ratio of 16x9, and a "Mobile Portrait" definition with an aspect ratio of 9x16. Other aspect or crop ratios from which you can choose include 1x1, 4x3, and 4x5.
 
-![Editing a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
+![Edit a video encoding profile with smart crop](assets/edit-smart-crop-video2.png)
 
 You can toggle video smart crop in the video profile to either on or off using the slider to the far right of **[!UICONTROL Smart Crop Ratio]** in the user interface.  
 
 After you create and save your video profile, you can apply it to the folders you want.
 
-See [Applying video profiles to specific folders](#applying-video-profiles-to-specific-folders) or [Applying a video profile globally](#applying-a-video-profile-globally). 
+See [Apply video profiles to specific folders](#applying-video-profiles-to-specific-folders) or [Apply a video profile globally](#applying-a-video-profile-globally). 
 
 See also [Smart crop for images](image-profiles.md).
 
-## Creating a video profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Create a video profile for adaptive streaming {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media already comes with a predefined Adaptive Video Encoding profile-a group of video upload settings for MP4 H.264-that is optimized for the best viewing experience. You can use this profile when you upload your videos.
 
@@ -144,38 +145,38 @@ So, for all MP4 H.264 video encoding presets in the profile, the following value
 
 If the values are not the same, you can continue creating the profile as is. However, adaptive streaming is not possible. Instead, users experience single-bitrate streaming. It is recommended that you edit the encoding settings to use the same values across individual encoding presets in the profile. (The video profile/preset editor enforces parity of the adaptive video encoding settings if **[!UICONTROL Encode for adaptive streaming]** is enabled.)
 
-See also [Creating a video encoding profile for progressive streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
+See also [Create a video encoding profile for progressive streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
 
-See also [Best Practices for Video Encoding](/help/assets/video.md#best-practices-for-encoding-videos).
+See also [Best practices for video encoding](/help/assets/video.md#best-practices-for-encoding-videos).
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configure asset processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **To create a video profile for adaptive streaming**,
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
-1. Tap **[!UICONTROL Create]** to add a video profile.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Select **[!UICONTROL Create]** to add a video profile.
 
 1. Enter a name and description for the profile.
-1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
+1. On the Create/Edit Video Encoding Presets page, select **[!UICONTROL Add Video Encoding Preset]**.
 1. On the **[!UICONTROL Basic]** tab, set the video and audio options.
-   Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
+   Select the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 1. Under the Video Size heading, ensure that **[!UICONTROL Keep aspect ratio]** is checked.
 1. Set the video frame size resolution in pixels. Use the **[!UICONTROL Auto]** value to automatically scale to match the source aspect ratio (width to height ratio). For example, Auto x 480 or 640 x Auto.
 
-1.  Do one of the following:
+1. Do one of the following:
 
     * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**. In the **[!UICONTROL Height]** field, enter a value in pixels.
 
-    * To help you visualize the size of the video, tap the Information icon (i) to the right of **[!UICONTROL Height]** to open the Size Calculator page. Use **[!UICONTROL Size Calculator]** to set the video dimensions (represented by the blue box) you want. Tap **[!UICONTROL X]** in the upper-right corner when you are done.
+    * To help you visualize the size of the video, select the Information icon (i) to the right of **[!UICONTROL Height]** to open the Size Calculator page. Use **[!UICONTROL Size Calculator]** to set the video dimensions (represented by the blue box) you want. Select **[!UICONTROL X]** in the upper-right corner when you are done.
 
-1. (Optional) Tap the **[!UICONTROL Advanced]** tab and ensure that the **[!UICONTROL Use Default Values]** check box is selected (recommended). Alternatively, modify advanced video and audio settings.
-1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
+1. (Optional) Select the **[!UICONTROL Advanced]** tab and ensure that the **[!UICONTROL Use Default Values]** check box is selected (recommended). Alternatively, modify advanced video and audio settings.
+1. In the upper-right corner of the page, select **[!UICONTROL Save]** to save the preset.
 1. Do one of the following:
     * Repeat steps 4-10 to create additional encoding presets. (Adaptive video streaming requires more than one video preset.)
     * Continue to the next step.
 
 1. (Optional) To add video smart crop to the videos that this profile is applied to, do the following:
-    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
+    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, select **[!UICONTROL Add New]**.
     * In the Name field, type a name for the crop ratio that helps you easily identify it.
     * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
 
@@ -184,11 +185,11 @@ To define advanced processing parameters for other asset types, see [Configuring
     * Continue adding new crop ratios as needed.
     * Continue to the next step.
 
-1. In the upper-right corner of the page, tap **[!UICONTROL Save]** again to save the profile.
+1. In the upper-right corner of the page, select **[!UICONTROL Save]** again to save the profile.
 
-You can now apply the profile to folders that contain videos. See [Applying a video profile to folders](#applying-a-video-profile-to-folders) or [Applying a video profile globally](#applying-a-video-profile-globally).
+You can now apply the profile to folders that contain videos. See [Apply a video profile to folders](#applying-a-video-profile-to-folders) or [Apply a video profile globally](#applying-a-video-profile-globally).
 
-## Creating a video profile for progressive streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
+## Create a video profile for progressive streaming {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 If you choose not to use the option **[!UICONTROL Encode for adaptive streaming]**, all encoding presets that you add to the profile are treated as individual video renditions for single-bitrate streaming or progressive video delivery. Also, there is no validation to ensure that all the video renditions have the same aspect ratio.
 
@@ -197,33 +198,33 @@ Depending on which mode you are running, the supported video format codecs are t
 * Dynamic Media-Scene7 mode: H.264 (.mp4)
 * Dynamic Media-Hybrid mode: H.264 (.mp4), WebM
 
-See also [Creating a video encoding profile for adaptive streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
+See also [Create a video encoding profile for adaptive streaming](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
-See also [Best Practices for Video Encoding](/help/assets/video.md#best-practices-for-encoding-videos).
+See also [Best practices for video encoding](/help/assets/video.md#best-practices-for-encoding-videos).
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configure asset processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **To create a video profile for progressive streaming:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
-1. Tap **[!UICONTROL Create]** to add a video profile.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Select **[!UICONTROL Create]** to add a video profile.
 1. Enter a name and description for the profile.
-1. On the Create/Edit Video Encoding Presets page, tap **[!UICONTROL Add Video Encoding Preset]**.
+1. On the Create/Edit Video Encoding Presets page, select **[!UICONTROL Add Video Encoding Preset]**.
 1. On the **[!UICONTROL Basic]** tab, set the video and audio options.
-   Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
+   Select the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 1. (Optional) Under the Video Size heading, uncheck **[!UICONTROL Keep aspect ratio]**.
 1. Do the following:
     * In the **[!UICONTROL Width]** field, enter **[!UICONTROL auto]**.
     * In the **[!UICONTROL Height]** field, enter a value in pixels.
-        To help you visualize the size of the video, tap the Height's information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, tap **[!UICONTROL X]**.
+        To help you visualize the size of the video, select the Height's information icon to open the **[!UICONTROL Size Calculator]** page. Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. When you are done, in the upper-right corner of the dialog box, select **[!UICONTROL X]**.
 1. (Optional) Do one of the following:
 
-    * Tap the **[!UICONTROL Advanced]** tab, and make sure that the **[!UICONTROL Use Default Values]** check box is selected (recommended).
+    * Select the **[!UICONTROL Advanced]** tab, and make sure that the **[!UICONTROL Use Default Values]** check box is selected (recommended).
 
     * Clear the **[!UICONTROL Use Default Values]** check box and specify the video settings and audio settings you want.
-      Tap the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
+      Select the information icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 
-1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the preset.
+1. In the upper-right corner of the page, select **[!UICONTROL Save]** to save the preset.
 1. Do one of the following:
 
     * Repeat steps 4-9 to create additional encoding presets.
@@ -231,7 +232,7 @@ To define advanced processing parameters for other asset types, see [Configuring
 
 1. (Optional) To add video smart crop to the videos that this profile is applied to, do the following:
 
-    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, tap **[!UICONTROL Add New]**.
+    * On the Edit Video Profile page, to the right of the Smart Crop Ratio heading, select **[!UICONTROL Add New]**.
     * In the Name field, type a name for the crop ratio that helps you easily identify it.
     * From the **[!UICONTROL Crop Ratio]** drop-down list, select the ratio you want to use.
 
@@ -240,17 +241,17 @@ To define advanced processing parameters for other asset types, see [Configuring
     * Continue adding new crop ratios as needed.
     * Continue to the next step.
 
-1. In the upper-right corner of the page, tap **[!UICONTROL Save]** to save the profile.
+1. In the upper-right corner of the page, select **[!UICONTROL Save]** to save the profile.
 
 You can now apply the profile to folders that contain videos. See [Applying a video profile to folders](#applying-a-video-profile-to-folders) or [Applying a video profile globally](#applying-a-video-profile-globally).
 
-## Using custom-added video encoding parameters {#using-custom-added-video-encoding-parameters}
+## Use custom-added video encoding parameters {#using-custom-added-video-encoding-parameters}
 
 You can edit an existing video encoding profile to take advantage of advanced video encoding parameters that are not found in the user interface when you create or edit a Video Profile in Experience Manager. Add one or more advanced parameters &ndash; such as minBitrate and maxBitrate &ndash; to your existing profile.
 
 **To use custom-added video encoding parameters:**
 
-1. Tap the Experience Manager logo, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Select the Experience Manager logo, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. From the CRXDE Lite page, in the Explorer panel on the left, navigate to the following:
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
@@ -302,61 +303,61 @@ You can edit an existing video encoding profile to take advantage of advanced vi
 
    ![chlimage_1-516](assets/chlimage_1-516.png)
 
-1. Near the lower-right corner of the page, tap **[!UICONTROL Add]**.
+1. Near the lower-right corner of the page, select **[!UICONTROL Add]**.
 1. Do one of the following:
 
     * Repeat steps 3 and 4 to add another parameter to your video encoding profile.
-    * Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
+    * Near the upper-left corner of the page, select **[!UICONTROL Save All]**.
 
-1. In the upper-left corner of the CRXDE Lite page, tap the **[!UICONTROL Back Home]** icon to return to Experience Manager.
+1. In the upper-left corner of the CRXDE Lite page, select the **[!UICONTROL Back Home]** icon to return to Experience Manager.
 
-### Editing a video profile {#editing-a-video-encoding-profile}
+### Edit a video profile {#editing-a-video-encoding-profile}
 
 You can edit any video profile that you have created to add, edit, or delete video presets within that profile.
 
 By default, you cannot edit the predefined, out-of-the-box **[!UICONTROL Adaptive Video Encoding]** profile that came with Dynamic Media. Instead, you can easily copy the profile and save it with a new name. You can then edit the desired presets in the copied profile.
 
-See also [Best Practices for Video Encoding](/help/assets/video.md#best-practices-for-encoding-videos).
+See also [Best practices for video encoding](/help/assets/video.md#best-practices-for-encoding-videos).
 
-To define advanced processing parameters for other asset types, see [Configuring Asset Processing](/help/assets/config-dms7.md#configuring-asset-processing).
+To define advanced processing parameters for other asset types, see [Configure asset processing](/help/assets/config-dms7.md#configuring-asset-processing).
 
 **To edit a video profile:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one video profile name.
-1. On the toolbar, tap **[!UICONTROL Edit]**.
+1. On the toolbar, select **[!UICONTROL Edit]**.
 1. On the Video Encoding Profile page, edit the name and description, as desired.
 1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected.
-   Tap the information icon for a description of adaptive streaming. (If you are editing a progressive video profile, do not select this check box.)
+   Select the information icon for a description of adaptive streaming. (If you are editing a progressive video profile, do not select this check box.)
 1. Under the Video Encoding Presets heading, add, edit, or delete video encoding presets that make up the profile.
 
-   Tap the information icon next to each option on the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs for additional descriptions or recommended settings based on the selected video format codec.
+   Select the information icon next to each option on the **[!UICONTROL Basic]** and **[!UICONTROL Advanced]** tabs for additional descriptions or recommended settings based on the selected video format codec.
 
-1. In the upper-right corner ofthepage, tap **[!UICONTROL Save]**.
+1. In the upper-right corner ofthepage, select **[!UICONTROL Save]**.
 
-### Copying a video profile {#copying-a-video-encoding-profile}
+### Copy a video profile {#copying-a-video-encoding-profile}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one video profile name.
-1. On the toolbar, tap **[!UICONTROL Copy]**.
+1. On the toolbar, select **[!UICONTROL Copy]**.
 1. On the Video Encoding Profile page, enter a new name for the profile.
-1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. Tap the information icon for a description of adaptive streaming. (If you are copying a progressive video profile, do not select the check box.)
+1. As a best practice, ensure that the **[!UICONTROL Encode for adaptive streaming]** check box is selected. Select the information icon for a description of adaptive streaming. (If you are copying a progressive video profile, do not select the check box.)
 
    In Dynamic Media - Hybrid mode, if a WebM video preset is part of the video profile, then **[!UICONTROL Encode for adaptive streaming]** is not possible because all presets must be MP4.
 1. Under the Video Encoding Presets heading, add, edit, or delete video encoding presets that make up the profile.
 
-   Tap the information icon next to each option on the Basic and Advanced tabs for recommended settings and descriptions.
+   Select the information icon next to each option on the Basic and Advanced tabs for recommended settings and descriptions.
 
-1. In the upper-right corner ofthepage, tap **[!UICONTROL Save]**.
+1. In the upper-right corner ofthepage, select **[!UICONTROL Save]**.
 
-### Deleting a video profile {#deleting-a-video-encoding-profile}
+### Delete a video profile {#deleting-a-video-encoding-profile}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. On the Video Profiles page, check one or more video profile names.
-1. On the toolbar, tap **[!UICONTROL Delete]**.
-1. Tap **[!UICONTROL OK]**.
+1. On the toolbar, select **[!UICONTROL Delete]**.
+1. Select **[!UICONTROL OK]**.
 
-## Applying a video profile to folders {#applying-a-video-profile-to-folders}
+## Apply a video profile to folders {#applying-a-video-profile-to-folders}
 
 When you assign a video profile to a folder, any subfolders automatically inherit the profile from its parent folder. This rule means that you can assign only one video profile to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
 
@@ -368,28 +369,28 @@ Folders that have a profile assigned to it are indicated in the user interface b
 
 You can apply video profiles to specific folders or globally to all assets.
 
-You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocess assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
-### Applying a video profile to specific folders {#applying-video-profiles-to-specific-folders}
+### Apply a video profile to specific folders {#applying-video-profiles-to-specific-folders}
 
 You can apply a video profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Properties]**. This section describes how to apply video profiles to folders both ways.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
+See also [Reprocess assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
-#### Applying a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
+#### Apply a video profile to folders by way of the Profiles user interface {#applying-video-profiles-to-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select the video profile that you want to apply to a folder or multiple folders.
-1. Tap **[!UICONTROL Apply Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name while in **[!UICONTROL Card View]**.
+1. Select **[!UICONTROL Apply Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and select **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name while in **[!UICONTROL Card View]**.
     You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
-#### Applying a video profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
+#### Apply a video profile to folders from Properties {#applying-video-profiles-to-folders-from-properties}
 
-1. Tap or click the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a video profile to.
-1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
-1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply a video profile to.
+1. On the folder, select the check mark to select it and then select **[!UICONTROL Properties]**.
+1. Select the **[!UICONTROL Video Profiles]** tab and select the profile from the drop-down menu and select **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
@@ -398,37 +399,37 @@ You can [monitor the progress of a video profile processing job](#monitoring-the
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into Experience Manager Assets in any folder has the selected profile applied.
 
-See also [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
+See also [Reprocess assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
 **To apply a video profile globally:**
 
-* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and tap **[!UICONTROL Save All]**.
+* Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`. Add the property `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` and select **[!UICONTROL Save All]**.
 
   ![chlimage_1-519](assets/chlimage_1-519.png)
 * You can [monitor the progress of a video profile processing job](#monitoring-the-progress-of-an-encoding-job).
 
-## Monitoring the progress of a video profile processing job {#monitoring-the-progress-of-an-encoding-job}
+## Monitor the progress of a video profile processing job {#monitoring-the-progress-of-an-encoding-job}
 
 A processing indicator (or progress bar) is displayed so you can visually monitor the progress of a video profile processing job.
 
 You can also view the `error.log` file to monitor the progress of an encoding job, to see if encoding is finished, or to see any job errors. The `error.log` is found in the `logs` folder where your instance of Experience Manager is installed.
 
-## Removing a video profile from folders {#removing-a-video-profile-from-folders}
+## Remove a video profile from folders {#removing-a-video-profile-from-folders}
 
 When you remove a video profile from a folder, any subfolders automatically inherit the removal of the profile from its parent folder. However, any processing of files that has occurred within the folders remains intact.
 
 You can remove a video profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from the **[!UICONTROL Folder Settings]**. This section describes how to remove video profiles from folders both ways.
 
-### Removing a video profile from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
+### Remove a video profile from folders by way of the Profiles user interface {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]**.
 1. Select the video profile that you want to remove from a folder or multiple folders.
-1. Tap **[!UICONTROL Remove Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and tap **[!UICONTROL Remove]**.
+1. Select **[!UICONTROL Remove Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and select **[!UICONTROL Remove]**.
 
    You can confirm that the video profile is no longer applied to a folder because the name no longer appears below the folder name.
 
-### Removing a video profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
+### Remove a video profile from folders by way of Properties {#removing-video-profiles-from-folders-by-way-of-properties}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a video profile from.
-1. On the folder, tap the check mark to select it and then tap  **[!UICONTROL Properties]**.
-1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and click **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to remove a video profile from.
+1. On the folder, select the check mark, and then select **[!UICONTROL Properties]**.
+1. Select the **[!UICONTROL Video Profiles]** tab and select **[!UICONTROL None]** from the drop-down menu and select **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
