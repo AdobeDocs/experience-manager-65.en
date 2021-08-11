@@ -169,7 +169,7 @@ If you intend to use this feature, be aware of the following prerequisites and p
 
    >[!NOTE]
    >
-   >Configure the Azure Blob storage with both access keys (key1 and key2) because this large upload feature is not supported with AzureSas in the Blob storage configuration.
+   >Configure the Azure Blob storage with an access key and secret key because this large upload feature is not supported with AzureSas in the Blob storage configuration.
 
 * Oak's [Direct Binary Access download](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html) is enabled (Oak's *Direct Binary Access upload* is not required).
 
