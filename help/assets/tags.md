@@ -805,7 +805,7 @@ The Experience Manager configuration consists of the following two major steps:
 
     * **[!UICONTROL Title]** - Enter a descriptive configuration title. For example, `We.Retail Tags cloud configuration`.
 
-    * **[!UICONTROL Associated Adobe IMS Configuration]** - Select the IMS configuration that you created earlier in [Configuring Experience Manager IMS](#configuring-aem-ims).
+    * **[!UICONTROL Associated Adobe IMS Configuration]** - Select the IMS configuration that you created earlier in [Configure Experience Manager IMS](#configuring-aem-ims).
 
     * **[!UICONTROL Company]** - From the **[!UICONTROL Company]** drop-down list, select your Experience Cloud company. The list populates automatically.
 

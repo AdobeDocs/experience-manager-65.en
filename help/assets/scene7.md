@@ -9,6 +9,7 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
 ---
 # Add Dynamic Media Classic features to your page {#adding-scene-features-to-your-page}
@@ -25,7 +26,7 @@ You can view Experience Manager assets published in Dynamic Media Classic in var
 
 You can publish digital assets directly from Experience Manager to Dynamic Media Classic and you can publish digital assets from Dynamic Media Classic to Experience Manager.
 
-This document describes how to publish digital assets from Experience Manager to Dynamic Media Classic and conversely. Viewers are also described in detail. For information on configuring Experience Manager for Dynamic Media Classic, see [Integrating Dynamic Media Classic with Experience Manager](/help/sites-administering/scene7.md).
+This document describes how to publish digital assets from Experience Manager to Dynamic Media Classic and conversely. Viewers are also described in detail. For information on configuring Experience Manager for Dynamic Media Classic, see [Integrate Dynamic Media Classic with Experience Manager](/help/sites-administering/scene7.md).
 
 See also [Add Image Maps](image-maps.md).
 
@@ -97,11 +98,11 @@ Adding a Dynamic Media Classic (Scene7) component to a page is the same as addin
    >
    >In touch UI only, you must drag and drop the image or video onto the Dynamic Media Classic component you placed on the page. Selecting and editing the Dynamic Media Classic component and then choosing the asset is not supported.
 
-### Add interactive viewing experiences to a responsive site {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Add an interactive viewing experience to a responsive site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Responsive design for your assets means that your asset adapts depending on where it is displayed. With responsive design, the same assets can be effectively displayed on multiple devices.
 
-See also [Responsive Design for Web Pages](/help/sites-developing/responsive.md).
+See also [Responsive design for web pages](/help/sites-developing/responsive.md).
 
 **To add an interactive viewing experience to a responsive site:**
 
@@ -163,11 +164,11 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
+**[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Manage Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
 **[!UICONTROL Dynamic Media Classic Configuration]** - Select the Dynamic Media Classic configuration you want to use to fetch active image presets from SPS.
 
-**[!UICONTROL Image preset]** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See [Managing Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
+**[!UICONTROL Image preset]** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
 **[!UICONTROL Output Format]** - Select the output format of the image, for example jpeg. Depending on the output format you select, there are additional configuration options. See [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options).
 
