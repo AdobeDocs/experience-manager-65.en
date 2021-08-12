@@ -207,6 +207,10 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
 
+>[!NOTE]
+>
+>The package available is fully compatible with AEM 6.5.10.0 and AEM as a Cloud Service.
+
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
 The use cases can depend on the type of AEM environment:
