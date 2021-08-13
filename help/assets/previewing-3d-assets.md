@@ -7,7 +7,7 @@ feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 ---
-# Previewing 3D assets in Adobe Experience Manager{#previewing-3d-assets-aem}
+# Preview 3D assets in Adobe Experience Manager {#previewing-3d-assets-aem}
 
 Experience Manager supports the upload, delivery, and interactive preview of 3D assets as part of the authoring process.
 
@@ -21,12 +21,12 @@ Interactive 3D preview supports the following file formats:
 
 |3D file extension |File format | MIME type |Notes |
 |---|---|---|---|
-| GLB |Binary GL Transmission|model/gltf-binary ||
-| GLTF |GL Transmission Format|model/gltf+json |See **Note** below. |
-| OBJ |WaveFront 3D Object File|application/x-tgif ||
-| STL |Stereolithography|application/vnd.ms-pki.stl ||
-| DN |Adobe Dimension|model/x-adobe-dn |Support for ingestion only; preview not available.|
-| USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |Support for ingestion only; preview not available.|
+| GLB | Binary GL Transmission | model/gltf-binary | |
+| GLTF | GL Transmission Format | model/gltf+json | See **Note** below. |
+| OBJ | WaveFront 3D Object File | application/x-tgif | |
+| STL | Stereolithography | application/vnd.ms-pki.stl | |
+| DN | Adobe Dimension | model/x-adobe-dn | Support for ingestion only; preview not available.|
+| USDZ | Universal Scene Description Zip archive | model/vnd.usdz+zip | Support for ingestion only; preview not available.|
 
 >[!NOTE]
 >
@@ -43,23 +43,23 @@ Interactive 3D preview supports the following file formats:
 
 The time it takes to open a 3D asset in the asset details view page depends on several factors such things as bandwidth, image complexity, and latencies to the server.
 
-In addition, the capabilities of the client computer&mdash;such as a workstation, notebook, or mobile touch device&mdash;are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable. 
+In addition, the capabilities of the client computer &ndash; such as a workstation, notebook, or mobile touch device &ndash; are also important to consider when you manipulate the camera interactively. A reasonably powerful system with good graphics capabilities can make the interactive 3D viewing experience smoother and more favorable.
 
 **To preview 3D assets in Experience Manager:**
 
 1. Make sure you have uploaded 3D assets into Experience Manager.
-    See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Uploading assets](/help/assets/manage-assets.md#uploading-assets).
-1. From Experience Manager, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Assets > Files]**.
+    See [Supported formats for 3D preview](#supported-3d-previewing-assets) and [Upload Assets](/help/assets/manage-assets.md#uploading-assets).
+1. From Experience Manager, on the **[!UICONTROL Navigation]** page, select **[!UICONTROL Assets]** > **[!UICONTROL Files]**.
 
     ![Navigation page](/help/assets/assets-dm/navigation-assets.png
     )
 
-1. Near the upper-right corner of the page, from the View drop-down list, tap **[!UICONTROL Card View]**, then navigate to a 3D asset that you want to preview.
+1. Near the upper-right corner of the page, from the View drop-down list, select **[!UICONTROL Card View]**, then navigate to a 3D asset that you want to preview.
 
     ![3D card select](/help/assets/assets-dm/3d-card-select.png)
-    _In Card View, tap the card of the 3D asset you want to preview._
+    _In Card View, select the card of the 3D asset you want to preview._
 
-1. Tap the card of the 3D asset.
+1. Select the card of the 3D asset.
 
     ![Interactive 3D preview](/help/assets/assets-dm/3d-preview.png)
     _Interactive preview of a 3D asset in the asset details view page._ 
@@ -71,7 +71,7 @@ In addition, the capabilities of the client computer&mdash;such as a workstation
     | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
     | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
-    | **Reset**  | Near the lower-right corner of the page, tap the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
-    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, tap the Fullscreen icon.  |   |   |
+    | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |
+    | **Full screen mode**  | To enter full screen mode, in the lower-right corner of the page, select the Fullscreen icon.  |   |   |
 
-1. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Close]**.
+1. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Close]**.

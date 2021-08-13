@@ -1,5 +1,5 @@
 ---
-title: Adding Dynamic Media Classic Features to your Page
+title: Add Dynamic Media Classic features to your page
 description: Learn how to add Dynamic Media Classic features and components to your Adobe Experience Manager page.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
@@ -9,9 +9,10 @@ topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 feature: Dynamic Media Classic
 role: User, Admin
+mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
 ---
-# Adding Dynamic Media Classic Features to your Page {#adding-scene-features-to-your-page}
+# Add Dynamic Media Classic features to your page {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
@@ -25,9 +26,9 @@ You can view Experience Manager assets published in Dynamic Media Classic in var
 
 You can publish digital assets directly from Experience Manager to Dynamic Media Classic and you can publish digital assets from Dynamic Media Classic to Experience Manager.
 
-This document describes how to publish digital assets from Experience Manager to Dynamic Media Classic and conversely. Viewers are also described in detail. For information on configuring Experience Manager for Dynamic Media Classic, see [Integrating Dynamic Media Classic with Experience Manager](/help/sites-administering/scene7.md).
+This document describes how to publish digital assets from Experience Manager to Dynamic Media Classic and conversely. Viewers are also described in detail. For information on configuring Experience Manager for Dynamic Media Classic, see [Integrate Dynamic Media Classic with Experience Manager](/help/sites-administering/scene7.md).
 
-See also [Adding Image Maps](image-maps.md).
+See also [Add Image Maps](image-maps.md).
 
 For more information on using video components with Experience Manager, see [Video](video.md).
 
@@ -45,7 +46,7 @@ You can publish digital assets to Dynamic Media Classic as follows:
 
 >[!NOTE]
 >
->Experience Manager publishes to Dynamic Media Classic asynchronously. After you click **[!UICONTROL Publish]**, it takes several seconds for your asset to publish to Dynamic Media Classic.
+>Experience Manager publishes to Dynamic Media Classic asynchronously. After you select **[!UICONTROL Publish]**, it takes several seconds for your asset to publish to Dynamic Media Classic.
 >
 
 ## Dynamic Media Classic components {#scene-components}
@@ -72,9 +73,7 @@ After they are made available in **[!UICONTROL Design]** mode, you can add the c
 
 Effective January 31, 2017, Adobe Dynamic Media Classic ended support for the Flash viewer platform.
 
-<!-- For more information about this important change, see [Flash Viewer End-of-Life FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html). -->
-
-### Adding a Dynamic Media Classic (Scene7) component to a page {#adding-a-scene-component-to-a-page}
+### Add a Dynamic Media Classic (Scene7) component to a page {#adding-a-scene-component-to-a-page}
 
 Adding a Dynamic Media Classic (Scene7) component to a page is the same as adding a component to any page. Dynamic Media Classic components are described in detail in the following sections.
 
@@ -82,28 +81,28 @@ Adding a Dynamic Media Classic (Scene7) component to a page is the same as addin
 
 1. In Experience Manager, open the page where you want to add the **[!UICONTROL Dynamic Media Classic (Scene7)]** component.
 
-1. If no Dynamic Media Classic components are available, click **[!UICONTROL Design]** mode, tap any component with a blue border, tap the **[!UICONTROL Parent]** icon, and then the **[!UICONTROL Configuration]** icon. In **[!UICONTROL Parsys (Design)]**, select all the Dynamic Media Classic components to make them available and click **[!UICONTROL OK]**.
+1. If no Dynamic Media Classic components are available, select **[!UICONTROL Design]** mode, select any component with a blue border, select the **[!UICONTROL Parent]** icon, and then the **[!UICONTROL Configuration]** icon. In **[!UICONTROL Parsys (Design)]**, select all the Dynamic Media Classic components to make them available and select **[!UICONTROL OK]**.
 
    ![chlimage_1-224](assets/chlimage_1-224.png)
 
-1. Click **[!UICONTROL Edit]** so you can return to **[!UICONTROL Edit]** mode.
+1. Select **[!UICONTROL Edit]** so you can return to **[!UICONTROL Edit]** mode.
 
 1. Drag a component from the Dynamic Media Classic group in the sidekick onto the page in the desired location.
 
-1. Click the **[!UICONTROL Configuration]** icon so you can open the component.
+1. Select the **[!UICONTROL Configuration]** icon so you can open the component.
 
-1. Edit the component as necessary and click **[!UICONTROL OK]** to save changes.
+1. Edit the component as necessary and select **[!UICONTROL OK]** to save changes.
 1. Drag your image or video from the content browser onto the Dynamic Media Classic component you added to the page.
 
    >[!NOTE]
    >
    >In touch UI only, you must drag and drop the image or video onto the Dynamic Media Classic component you placed on the page. Selecting and editing the Dynamic Media Classic component and then choosing the asset is not supported.
 
-### Adding interactive viewing experiences to a responsive site {#adding-interactive-viewing-experiences-to-a-responsive-website}
+### Add an interactive viewing experience to a responsive site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
 Responsive design for your assets means that your asset adapts depending on where it is displayed. With responsive design, the same assets can be effectively displayed on multiple devices.
 
-See also [Responsive Design for Web Pages](/help/sites-developing/responsive.md).
+See also [Responsive design for web pages](/help/sites-developing/responsive.md).
 
 **To add an interactive viewing experience to a responsive site:**
 
@@ -114,7 +113,7 @@ See also [Responsive Design for Web Pages](/help/sites-developing/responsive.md)
    >If Dynamic Media Classic components are not available, be sure [to enable them by way of Design mode](/help/sites-authoring/default-components-designmode.md).
 
 1. In a website with the **[!UICONTROL Dynamic Media Classic]** components enabled, drag an **[!UICONTROL Image]** component to the page.
-1. Select the component and tap the configuration icon.
+1. Select the component and select the configuration icon.
 1. In the **[!UICONTROL Dynamic Media Classic Settings]** tab, adjust the breakpoints.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -137,13 +136,13 @@ You set these configuration options by opening (double-clicking) a Dynamic Media
 
 The HTML5 Zoom component displays a larger image when you press the **[!UICONTROL +]** button.
 
-The asset has zoom tools at the bottom. Tap **[!UICONTROL +]** if you want to enlarge; tap **[!UICONTROL -]** if you want to reduce. Tapping the **[!UICONTROL x]** or the reset zoom arrow brings the image back to the original size it was imported as. Tap the diagonal arrows so you make it full screen. Tap **[!UICONTROL Edit]** so you can configure the component. With this component, you can configure [settings common to all [!UICONTROL Dynamic Media Classic] components](#settings-common-to-all-scene-components).
+The asset has zoom tools at the bottom. Select **[!UICONTROL +]** if you want to enlarge; select **[!UICONTROL -]** if you want to reduce. Tapping the **[!UICONTROL x]** or the reset zoom arrow brings the image back to the original size it was imported as. Select the diagonal arrows so you make it full screen. Select **[!UICONTROL Edit]** so you can configure the component. With this component, you can configure [settings common to all [!UICONTROL Dynamic Media Classic] components](#settings-common-to-all-scene-components).
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
 ### Flyout {#flyout}
 
-In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split screen; left the asset in the specified size; right the zoom portion is displayed. Tap **[!UICONTROL Edit]** so you can configure the component. With this component, you can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components).
+In the HTML5 **[!UICONTROL Flyout]** component, the asset is shown as split screen; left the asset in the specified size; right the zoom portion is displayed. Select **[!UICONTROL Edit]** so you can configure the component. With this component, you can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components).
 
 >[!NOTE]
 >
@@ -165,11 +164,11 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
 
-**[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
+**[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Manage Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
 **[!UICONTROL Dynamic Media Classic Configuration]** - Select the Dynamic Media Classic configuration you want to use to fetch active image presets from SPS.
 
-**[!UICONTROL Image preset]** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See [Managing Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
+**[!UICONTROL Image preset]** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See [Manage Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
 **[!UICONTROL Output Format]** - Select the output format of the image, for example jpeg. Depending on the output format you select, there are additional configuration options. See [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options).
 
@@ -183,7 +182,7 @@ The Dynamic Media Classic **[!UICONTROL Image]** component lets you add Dynamic 
 
 [Dynamic Media Classic Image Templates](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html) are layered Photoshop content that was imported to Dynamic Media Classic, where content and properties were parameterized for variability. The **[!UICONTROL Image template]** component lets you import images and change the text dynamically in Experience Manager. In addition, you can configure the **[!UICONTROL Image template]** component to use values from client context, so that each user experiences the image in a personalized way.
 
-Tap **[!UICONTROL Edit]** if you want to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) and other settings described in this section.
+Select **[!UICONTROL Edit]** if you want to configure the component. You can configure [settings common to all Dynamic Media Classic components](#settings-common-to-all-scene-components) and other settings described in this section.
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
@@ -203,9 +202,9 @@ Tap **[!UICONTROL Edit]** if you want to configure the component. You can config
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
-#### Changing text dynamically {#changing-text-dynamically}
+#### Change text dynamically {#changing-text-dynamically}
 
-To change the text dynamically, enter new text in the fields and click **[!UICONTROL OK]**. In this example, the **[!UICONTROL Price]** is now $50 and shipping is 99 cents.
+To change the text dynamically, enter new text in the fields and select **[!UICONTROL OK]**. In this example, the **[!UICONTROL Price]** is now $50 and shipping is 99 cents.
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -213,9 +212,9 @@ The text in the image changes. You can reset the text back to the original value
 
 ![chlimage_1-235](assets/chlimage_1-235.png)
 
-#### Changing text to reflect the value of a client context value {#changing-text-to-reflect-the-value-of-a-client-context-value}
+#### Change text to reflect the value of a client context value {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-To link a field to a client context value, tap **[!UICONTROL Select]** to open the client-context menu, select the client context, and tap **[!UICONTROL OK]**. In this example, the name changes based on linking the Name with the formatted name in the profile.
+To link a field to a client context value, select **[!UICONTROL Select]** to open the client-context menu, select the client context, and select **[!UICONTROL OK]**. In this example, the name changes based on linking the Name with the formatted name in the profile.
 
 ![chlimage_1-236](assets/chlimage_1-236.png)
 
@@ -223,14 +222,14 @@ The text reflects the name of the currently logged in user. You can reset the te
 
 ![chlimage_1-237](assets/chlimage_1-237.png)
 
-#### Making the Dynamic Media Classic Image Template a link {#making-the-scene-image-template-a-link}
+#### Make the Dynamic Media Classic Image Template a link {#making-the-scene-image-template-a-link}
 
-1. On the page with the Dynamic Media Classic **[!UICONTROL Image Template]** component, tap **[!UICONTROL Edit]**.
+1. On the page with the Dynamic Media Classic **[!UICONTROL Image Template]** component, select **[!UICONTROL Edit]**.
 1. In the **[!UICONTROL URL]** field, enter the URL that users go to when the image is tapped. In the **[!UICONTROL Open in]** field, select whether you want the target to open (a new window or same window).
 
    ![chlimage_1-238](assets/chlimage_1-238.png)
 
-1. Tap **[!UICONTROL OK]**.
+1. Select **[!UICONTROL OK]**.
 
 ### Video component {#video-component}
 
@@ -242,7 +241,7 @@ See [Video](s7-video.md) for more information on how videos work with Dynamic Me
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-### Known limitations for the video component {#known-limitations-for-the-video-component}
+### Known limitations of the video component {#known-limitations-for-the-video-component}
 
 Adobe DAM and WCM shows if a primary source video is uploaded. They do not show these proxy assets:
 
@@ -268,7 +267,7 @@ If you have multiple configurations, Experience Manager by default displays the 
 >   * Single MP4 video
 >   * Single F4V video
 
-### Browsing content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
+### Browse content in the touch-optimized UI {#browsing-content-in-the-touch-optimized-ui}
 
 You can access the content browser either in the touch-optimized or classic UI. Currently the touch-optimized has the following limitation:
 
@@ -291,7 +290,7 @@ In addition, you can browse resolution information, size, days since modificatio
 * For Adaptive Video Sets and Templates, no size information is generated for thumbnails.
 * For Adaptive Video Sets, no resolution is generated for thumbnails.
 
-### Searching for Dynamic Media Classic assets with the content browser {#searching-for-scene-assets-with-the-content-browser}
+### Search for Dynamic Media Classic assets with the content browser {#searching-for-scene-assets-with-the-content-browser}
 
 Searching for assets in Dynamic Media Classic is similar to searching for assets in Experience Manager Assets. However, when you search you are actually seeing a remote view of the assets in the Dynamic Media Classic system, rather than importing them directly into Experience Manager.
 
@@ -299,7 +298,7 @@ You can use either the classic UI or the touch-optimized UI to both view and sea
 
 When searching in either UI, you can filter by the following criteria (shown here in the touch-optimized UI):
 
-**[!UICONTROL Enter keywords]** - You can search assets by name. When searching, the keywords you enter is what the file name starts with. For example, typing the word "swimming" would look for any asset file names that start with those letters in that order. Be sure to tap enter after you type the term to find the asset.
+**[!UICONTROL Enter keywords]** - You can search assets by name. When searching, the keywords you enter is what the file name starts with. For example, typing the word "swimming" would look for any asset file names that start with those letters in that order. Be sure to press enter after you type the term to find the asset.
 
 ![chlimage_1-242](assets/chlimage_1-242.png)
 

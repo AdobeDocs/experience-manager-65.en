@@ -673,3 +673,10 @@ role: User
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using the web service API](developing/validate-ddx-document-using-web.md)
+    + Legacy documentation {#legacy-documentation}
+      + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
+      + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
+      + [Configuring and troubleshooting an AEM Forms on JEE server cluster](developing/configure-server-cluster.md)
+      + [Generating and working with Hashes in dynamic PDF forms](developing/hashing-forms.md)
+      + [Passing credentials using WS-Security headers](developing/passing-credentials.md)
+    

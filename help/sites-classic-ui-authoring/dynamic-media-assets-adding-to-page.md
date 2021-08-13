@@ -1,5 +1,5 @@
 ---
-title: Adding Dynamic Media assets to pages
+title: Add Dynamic Media assets to pages
 description: To add the Dynamic Media functionality to assets you use on your websites, you can add the Dynamic Media or Interactive Media component directly on the page.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -7,7 +7,7 @@ topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 ---
-# Adding Dynamic Media assets to pages{#adding-dynamic-media-assets-to-pages}
+# Add Dynamic Media assets to pages{#adding-dynamic-media-assets-to-pages}
 
 To add the Dynamic Media functionality to assets you use on your websites, you can add the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component directly on the page. Enter **[!UICONTROL Design]** mode and enabling the Dynamic Media components. Then you can add these components to the page and add assets to the component. The Dynamic Media and interactive media components are smart - they know whether you are adding an image or a video and the options available change accordingly.
 
@@ -17,14 +17,16 @@ You add Dynamic Media assets directly to the page if you are using Adobe Experie
 >
 >Image maps are available out of the box for carousel banners.
 
-## Adding a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
+## Add a Dynamic Media component to a page {#adding-a-dynamic-media-component-to-a-page}
 
 Adding the [!UICONTROL Dynamic Media] or [!UICONTROL Interactive Media] component to a page is the same as adding a component to any page. The [!UICONTROL Dynamic Media] and [!UICONTROL Interactive Media] components are described in detail in the following sections.
 
 To add a Dynamic Media component/viewer to a page:
 
 1. In Experience Manager, open the page where you want to add the Dynamic Media component.
-1. If no Dynamic Media component is available, click the ruler in the [!UICONTROL Sidekick] to enter **[!UICONTROL Design]** mode, click **[!UICONTROL Edit]** parsys, and select **[!UICONTROL Dynamic Media]** to make the Dynamic Media components available.
+1. If no Dynamic Media component is available, select the ruler in the [!UICONTROL Sidekick] to enter **[!UICONTROL Design]** mode.
+1. Select **[!UICONTROL Edit]** parsys.
+1. Select **[!UICONTROL Dynamic Media]** so you can make the Dynamic Media components available.
 
    >[!NOTE]
    >
@@ -32,8 +34,9 @@ To add a Dynamic Media component/viewer to a page:
 
 1. Return to **[!UICONTROL Edit]** mode by clicking the pencil icon in the [!UICONTROL Sidekick].
 1. Drag the **[!UICONTROL Dynamic Media]** or **[!UICONTROL Interactive Media]** component from the **[!UICONTROL Other]** group in the sidekick onto the page in the desired location.
-1. Click **[!UICONTROL Edit]** so the component opens.
-1. [Edit the component](#dynamic-media-component) as necessary and click **[!UICONTROL OK]** to save changes.
+1. Select **[!UICONTROL Edit]** so the component opens.
+1. [Edit the component](#dynamic-media-component) as necessary.
+1. Select **[!UICONTROL OK]** so your changes are saved.
 
 ## Dynamic Media Components {#dynamic-media-components}
 
@@ -73,35 +76,35 @@ You can edit the following Dynamic Media settings by clicking **[!UICONTROL Edit
 >
 >By default, the Dynamic Media image component is adaptive. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]** properties.
 
-**[!UICONTROL Viewer preset]** &ndash; Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
+**[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
 This option is only available if you view image sets, spin sets, or mixed media sets. The viewer presets displayed are smart. That is, only relevant viewer presets appear.
 
-**[!UICONTROL Image preset]** &ndash; Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See [Managing Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
+**[!UICONTROL Image preset]** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See [Managing Image Presets](/help/assets/managing-image-presets.md). You cannot select a viewer preset if you are using an image preset and conversely.
 
 This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-**[!UICONTROL Image Modifiers]** &ndash; You can change image effects by supplying additional image commands. These commands are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Image Modifiers]** - You can change image effects by supplying additional image commands. These commands are described in [Managing Image Presets](/help/assets/managing-viewer-presets.md) and the [Command reference](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-**[!UICONTROL Breakpoints]** &ndash; If you are using this asset on a responsive site, you must add the page breakpoints. Image breakpoints are separated by commas (,). This option works when there is no height or width defined in an image preset.
+**[!UICONTROL Breakpoints]** - If you are using this asset on a responsive site, you must add the page breakpoints. Image breakpoints are separated by commas (,). This option works when there is no height or width defined in an image preset.
 
 This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
 You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
 
-**[!UICONTROL Title]** &ndash; Change the title of the image.
+**[!UICONTROL Title]** - Change the title of the image.
 
-**[!UICONTROL Alt Text]** &ndash; Add a title to the image for those users who have graphics turned off.
-
-This option is not available if you are viewing image sets, spin sets, or mixed media sets.
-
-**[!UICONTROL URL, Open in]** &ndash; You can set an asset from to open a link. Set the **[!UICONTROL URL]** and **[!UICONTROL Open in]** to indicate whether you want it to open in the same window or a new window.
+**[!UICONTROL Alt Text]** - Add a title to the image for those users who have graphics turned off.
 
 This option is not available if you are viewing image sets, spin sets, or mixed media sets.
 
-**[!UICONTROL Width and Height]** &ndash; Enter value in pixels if you want the image to be a fixed size. Leaving these values blank makes the asset adaptive.
+**[!UICONTROL URL, Open in]** - You can set an asset from to open a link. Set the **[!UICONTROL URL]** and **[!UICONTROL Open in]** to indicate whether you want it to open in the same window or a new window.
+
+This option is not available if you are viewing image sets, spin sets, or mixed media sets.
+
+**[!UICONTROL Width and Height]** - Enter value in pixels if you want the image to be a fixed size. Leaving these values blank makes the asset adaptive.
 
 #### When working with video {#when-working-with-video}
 
@@ -115,21 +118,21 @@ You can edit the following [!UICONTROL Dynamic Media Settings] by clicking **[!U
 >
 >By default, the Dynamic Media video component is adaptive. If you want to make it a fixed size, set it in the component with the **[!UICONTROL Width]** and **[!UICONTROL Height]** in the **[!UICONTROL Advanced]** tab.
 
-**[!UICONTROL Viewer preset]** &ndash; Select an existing video viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
+**[!UICONTROL Viewer preset]** - Select an existing video viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
 
 You can edit the following [!UICONTROL Advanced] settings by clicking **[!UICONTROL Edit]** in the component.
 
-**[!UICONTROL Title]** &ndash; Change the title of the video.
+**[!UICONTROL Title]** - Change the title of the video.
 
-**[!UICONTROL Width and Height]** &ndash; Enter value in pixels if you want the video to be a fixed size. Leaving these values blank makes it adaptive.
+**[!UICONTROL Width and Height]** - Enter value in pixels if you want the video to be a fixed size. Leaving these values blank makes it adaptive.
 
-#### How to delivery secure video {#how-to-delivery-secure-video}
+#### Deliver secure video {#how-to-delivery-secure-video}
 
 In Experience Manager 6.2, when you install [FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480), you can control whether a video is delivered over a secure SSL connection (HTTPS) or an insecure connection (HTTP). By default, the video delivery protocol is automatically inherited from the protocol of the embedding web page. If the web page is loaded over HTTPS, the video is also delivered over HTTPS. And conversely, if the web page is on HTTP, the video is delivered over HTTP. Usually, this default behavior is fine and there is no need to make any configuration changes. However, you can override this default behavior. Append `VideoPlayer.ssl=on` to either the end of a URL path or to the list of other viewer configuration parameters in an embed code snippet. Either action forces secure video delivery.
 
 For more information about secure video delivery and using the `VideoPlayer.ssl` configuration attribute in your URL path, see [Secure Video Delivery](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html) in the Viewers Reference Guide. Besides the Video viewer, secure video delivery is available for Mixed Media viewer and Interactive Video viewer.
 
-### Interactive Media Component {#interactive-media-component}
+### Interactive Media component {#interactive-media-component}
 
 Interactive Media component is for those assets that have interactivity on them such hotspots or image maps. If you have an interactive image, interactive video, or carousel banner, use the **[!UICONTROL Interactive Media]** component.
 
@@ -139,16 +142,16 @@ The [!UICONTROL Interactive Media] component is smart &ndash; depending on wheth
 
 You can edit the following **[!UICONTROL General]** settings by clicking **[!UICONTROL Edit]** in the component.
 
-**[!UICONTROL Viewer preset]** &ndash; Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. Viewer Presets must be published before they can be used. See [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
+**[!UICONTROL Viewer preset]** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. Viewer Presets must be published before they can be used. See [Manage Viewer presets](/help/assets/managing-viewer-presets.md).
 
-**[!UICONTROL Title]** &ndash; Change the title of the video.
+**[!UICONTROL Title]** - Change the title of the video.
 
-**[!UICONTROL Width and Height]** &ndash; Enter value in pixels if you want the video to be a fixed size. Leaving these values blank makes it adaptive.
+**[!UICONTROL Width and Height]** - Enter value in pixels if you want the video to be a fixed size. Leaving these values blank makes it adaptive.
 
 You can edit the following **[!UICONTROL Add To Cart]** settings by clicking **[!UICONTROL Edit]** in the component.
 
-**[!UICONTROL Show Product Asset]** &ndash; By default, this value is selected. The product asset shows an image of the product as defined in the Commerce module. Clear the check mark to not show the product asset.
+**[!UICONTROL Show Product Asset]** - By default, this value is selected. The product asset shows an image of the product as defined in the Commerce module. Clear the check mark to not show the product asset.
 
-**[!UICONTROL Show Product Price]** &ndash; By default, this value is selected. Product price shows the price of the item as defined in the Commerce module. Clear the check mark to not show the product price.
+**[!UICONTROL Show Product Price]** - By default, this value is selected. Product price shows the price of the item as defined in the Commerce module. Clear the check mark to not show the product price.
 
-**[!UICONTROL Show Product Form]** &ndash; By default, this value is not selected. The Product Form includes any product variants such as size and color. Clear the check mark to not show the product variants.
+**[!UICONTROL Show Product Form]** - By default, this value is not selected. The Product Form includes any product variants such as size and color. Clear the check mark to not show the product variants.

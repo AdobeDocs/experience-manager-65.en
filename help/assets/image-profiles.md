@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media Image Profiles
+title: Dynamic Media image profiles
 description: Create image profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
@@ -11,7 +11,7 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 ---
-# Dynamic Media Image Profiles {#image-profiles}
+# Dynamic Media image profiles {#image-profiles}
 
 When uploading images, you can automatically crop the image upon upload by applying an image profile to the folder.
 
@@ -33,46 +33,15 @@ Each Smart Crop generation that you create requires extra processing. For exampl
 
 You have two image crop options from which you can choose. You also have an option for automating the creation of color and image swatches.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Option</strong></td>
-   <td><strong>When to use</strong></td>
-   <td><strong>Description</strong></td>
-  </tr>
-  <tr>
-   <td>Pixel Crop</td>
-   <td>Bulk crop images based on dimensions only.</td>
-   <td><p>To use this option, select <strong>Pixel Crop</strong> from the Cropping Options drop-down list.</p> <p>To crop from the sides of an image, you enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file.</p> <p>An Image Profile pixel crop renders in the following manner:<br /> </p>
-    <ul>
-     <li>Values are Top, Bottom, Left, and Right.</li>
-     <li>Top left is considered 0,0 and the pixel crop is calculated from there.</li>
-     <li>Crop starting point: Left is X and Top is Y</li>
-     <li>Horizontal calculation: horizontal pixel dimension of original image minus Left and then minus Right.</li>
-     <li>Vertical calculation: vertical pixel height minus Top, and then minus Bottom.</li>
-    </ul> <p>For example, suppose you have a 4000 x 3000 pixel image. You use values: Top=250, Bottom=500, Left=300, Right=700.</p> <p>From Top Left (300,250) crop using the fill space of (4000-300-700, 3000-250-500, or 3000,2250).</p> </td>
-  </tr>
-  <tr>
-   <td>Smart Crop</td>
-   <td>Bulk crop images based on their visual focal point.</td>
-   <td><p>Smart Crop uses the power of artificial intelligence in Adobe Sensei to quickly automate the cropping of images in bulk. Smart Crop automatically detects and crops to the focal point in any image to capture the intended point of interest, regardless of screen size.</p> <p>To use Smart Crop, select <strong>Smart Crop</strong> from the Cropping Options drop-down list, then to the right of Responsive Image Crop, enable (turn on) the feature.</p> <p>The default breakpoint sizes of Large, Medium, and Small generally cover the full range of sizes that most images are used on mobile and tablet devices, desktops, and banners. If desired, you can edit the default names of Large, Medium, and Small.</p> <p>To add more breakpoints, click <strong>Add Crop</strong>; to delete a crop, click the Garbage Can icon.</p> </td>
-  </tr>
-  <tr>
-   <td>Color and Image Swatch</td>
-   <td>Bulk generates an image swatch for each image.</td>
-   <td><p><strong>Note</strong>: Smart Swatch is not supported in Dynamic Media Classic.</p> <p>Automatically locate and generate high-quality swatches from product images that show color or texture.</p> <p>To use Color and Image Swatch, select <strong>Smart Crop</strong> from the Cropping Options drop-down list, then to the right of Color and Image Swatch, enable (turn on) the feature. Enter a pixel value in the Width and Height text boxes.</p> <p>While all image crops are available from the Renditions rail, swatches are only used by way of the Copy URL feature. Use your own viewing component to render the swatch on your site. (The exception to this rule is carousel banners. Dynamic Media provides the viewing component for the swatch used in carousel banners.)</p> <p><strong>Using image swatches</strong></p> <p>The URL for image swatches is straightforward. It is:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>where <code>:Swatch</code> is appended to the asset request.</p> <p><strong>Using color swatches</strong></p> <p>To use color swatches, you make a <code>req=userdata</code> request with the following:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>For example, the following is a swatch asset in Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>and here is the swatch asset's corresponding <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>The <code>req=userdata</code> response is as follows:</p> <p><code class="code">SmartCropDef=Swatch
-       SmartCropHeight=200.0
-       SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
-       SmartCropType=Swatch
-       SmartCropWidth=200.0
-       SmartSwatchColor=0xA56DB2</code></p> <p>You can also request a <code>req=userdata</code> response in either XML or JSON format, as in the following respective URL examples:</p> <p><code>https://<span class="code">my.company.com</code>:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json</span><br /> <br /> <code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p> <p><strong>Note</strong>: You must create your own WCM component to request a color swatch and parse the <code>SmartSwatchColor</code> attribute, represented by a 24-bit RGB hexadecimal value.</p> <p>See also <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html" target="_blank">userdata in the Viewers Reference Guide</a>.</p> </td>
-  </tr>
- </tbody>
-</table>
+| Option | When to use | Description |
+| --- | --- | --- |
+| Pixel Crop | Bulk crop images based on dimensions only. | To use this option, select **[!UICONTROL Pixel Crop]** from the Cropping Options drop-down list.<br><br>To crop from the sides of an image, you enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file.<br><br>An Image Profile pixel crop renders in the following manner:<br>&bull; Values are Top, Bottom, Left, and Right.<br>&bull; Top left is considered `0,0` and the pixel crop is calculated from there.<br>&bull; Crop starting point: Left is X and Top is Y<br>&bull; Horizontal calculation: horizontal pixel dimension of original image minus Left and then minus Right.<br>&bull; Vertical calculation: vertical pixel height minus Top, and then minus Bottom.<br><br>For example, suppose you have a 4000 x 3000 pixel image. You use values: Top=250, Bottom=500, Left=300, Right=700.<br><br>From Top Left (300,250) crop using the fill space of (4000-300-700, 3000-250-500, or 3000,2250).  |
+| Smart Crop | Bulk crop images based on their visual focal point. | Smart Crop uses the power of artificial intelligence in Adobe Sensei to quickly automate the cropping of images in bulk. Smart Crop automatically detects and crops to the focal point in any image to capture the intended point of interest, regardless of screen size.</p> <p>To use Smart Crop, select **[!UICONTROL Smart Crop]** from the Cropping Options drop-down list, then to the right of Responsive Image Crop, enable (turn on) the feature.</p> <p>The default breakpoint sizes of Large, Medium, and Small generally cover the full range of sizes that most images are used on mobile and tablet devices, desktops, and banners. If desired, you can edit the default names of Large, Medium, and Small.</p> <p>To add more breakpoints, select **[!UICONTROL Add Crop]** to delete a crop, select the Garbage Can icon. |
+| Color and Image Swatch | Bulk generates an image swatch for each image. | **Note**: Smart Swatch is not supported in Dynamic Media Classic.<br><br>Automatically locate and generate high-quality swatches from product images that show color or texture.<br><br>To use Color and Image Swatch, select **[!UICONTROL Smart Crop]** from the Cropping Options drop-down list, then to the right of Color and Image Swatch, enable (turn on) the feature. Enter a pixel value in the Width and Height text boxes.<br><br>While all image crops are available from the Renditions rail, swatches are only used by way of the Copy URL feature. Use your own viewing component to render the swatch on your site. (The exception to this rule is carousel banners. Dynamic Media provides the viewing component for the swatch used in carousel banners.)<br><br>**Using image swatches**<br>The URL for image swatches is straightforward. It is:<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>where `:Swatch` is appended to the asset request.<br><br>**Using color swatches**<br>To use color swatches, you make a `req=userdata` request with the following:<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>For example, the following is a swatch asset in Dynamic Media Classic:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>and here is the swatch asset's corresponding `req=userdata` URL:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>The `req=userdata` response is as follows:<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>You can also request a `req=userdata` response in either XML or JSON format, as in the following respective URL examples:<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**Note:** Create your own WCM component to request a color swatch and parse the `SmartSwatchColor` attribute, represented by a 24-bit RGB hexadecimal value.<br><br>See also [`userdata` in the Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata.html). |
 
 ## Unsharp Mask {#unsharp-mask}
 
-You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Adobe Photoshop’s “Unsharp Mask” filter.
+You use **[!UICONTROL Unsharp mask]** to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Adobe Photoshop’s *Unsharp Mask* filter.
 
 >[!NOTE]
 >
@@ -88,7 +57,7 @@ Threshold | Determines the range of contrast to ignore when the unsharp mask fil
 
 Sharpening is described in [Sharpening Images](/help/assets/assets/sharpening_images.pdf.
 
-## Creating Dynamic Media Image Profiles {#creating-image-profiles}
+## Create Dynamic Media image profiles {#creating-image-profiles}
 
 To define advanced processing parameters for other asset types, see [Configuring Asset Processing](config-dms7.md#configuring-asset-processing).
 
@@ -96,10 +65,10 @@ See [Profiles for Processing Metadata, Images, and Videos](processing-profiles.m
 
 See also [Best Practices for Organizing your Digital Assets for using Processing Profiles](/help/assets/organize-assets.md).
 
-**To create Dynamic Media Image Profiles:**
+**To create Dynamic Media image profiles:**
 
-1. Tap the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
-1. Tap **[!UICONTROL Create]** so you can add an image profile.
+1. Select the Adobe Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Select **[!UICONTROL Create]** so you can add an image profile.
 1. Enter a profile name, and values for unsharp mask, crop, or swatch, or both.
 
    Use a profile name that is specific to its intended purpose. For example, if you want to create a profile that generates swatches only &ndash; that is, Smart Crop is disabled (turned off) and Color and Image Swatch is enabled (turned on) &ndash; use the profile name "Smart Swatches".
@@ -108,18 +77,18 @@ See also [Best Practices for Organizing your Digital Assets for using Processing
 
    ![crop](assets/crop.png)
 
-1. Tap **[!UICONTROL Save]**. The newly created profile appears in the list of available profiles.
+1. Select **[!UICONTROL Save]**. The newly created profile appears in the list of available profiles.
 
-## Editing or deleting Dynamic Media Image Profiles {#editing-or-deleting-image-profiles}
+## Edit or delete Dynamic Media image profiles {#editing-or-deleting-image-profiles}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
-1. Select the image profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Processing Profile]**. To remove it, select **[!UICONTROL Delete Image Processing Profile]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Select the image profile you want to edit or remove. To edit it, select **[!UICONTROL Edit Image Profile]**. To remove it, select **[!UICONTROL Delete Image Profile]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. If editing, save the changes. If deleting, confirm that you want to remove the profile.
 
-## Applying a Dynamic Media image profile to folders {#applying-an-image-profile-to-folders}
+## Apply a Dynamic Media image profile to folders {#applying-an-image-profile-to-folders}
 
 When you assign an image profile to a folder, any subfolders automatically inherit the profile from its parent folder. This workflow means that you can assign only one image profile to a folder. As such, consider carefully the folder structure of where you upload, store, use, and archive assets.
 
@@ -131,34 +100,34 @@ Folders that have a profile assigned to it are indicated in the user interface u
 
 You can apply image profiles to specific folders or globally to all assets.
 
-You can reprocess assets in a folder that already has an existing image profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
+You can reprocess assets in a folder that already has an existing image profile that you later changed. See [Reprocess assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
-### Applying Dynamic Media image profiles to specific folders {#applying-image-profiles-to-specific-folders}
+### Apply Dynamic Media image profiles to specific folders {#applying-image-profiles-to-specific-folders}
 
 You can apply an image profile to a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to apply image profiles to folders both ways.
 
 Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocessing assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
+You can reprocess assets in a folder that already has an existing video profile that you later changed. See [Reprocess assets in a folder after you have edited its processing profile](processing-profiles.md#reprocessing-assets).
 
-#### Applying Dynamic Media image profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Apply Dynamic Media image profiles to folders from Profiles user interface {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Select the image profile that you want to apply to a folder or multiple folders.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap **[!UICONTROL Apply Processing Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Select **[!UICONTROL Apply Processing Profile to Folders]** and select the folder or multiple folders you want use to receive the newly uploaded assets and select **[!UICONTROL Apply]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
-#### Applying Dynamic Media image profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
+#### Apply Dynamic Media image profiles to folders from Properties {#applying-image-profiles-to-folders-from-properties}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]** and then to the folder that you want to apply an image profile to.
-1. On the folder, tap the check mark to select it and then tap **[!UICONTROL Properties]**.
-1. Tap the **[!UICONTROL Image Profiles]** tab. From the **[!UICONTROL Profile Name]** drop-down list, select the profile, then tap **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
+1. Select the Experience League logo and navigate to **[!UICONTROL Assets]**. Then navigate to the parent folder of the folder to which you want to apply an image profile.
+1. On the folder, select the check mark to select it and then select **[!UICONTROL Properties]**.
+1. Select the **[!UICONTROL Image Profiles]** tab. From the **[!UICONTROL Profile Name]** drop-down list, select the profile, then select **[!UICONTROL Save & Close]**. Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Applying a Dynamic Media image profile globally {#applying-an-image-profile-globally}
+### Apply a Dynamic Media image profile globally {#applying-an-image-profile-globally}
 
 In addition to applying a profile to a folder, you can also apply one globally so that any content uploaded into Experience Manager assets in any folder has the selected profile applied.
 
@@ -168,17 +137,17 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 1. Do one of the following:
 
-    * Navigate to `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and tap **[!UICONTROL Save]**.
+    * Navigate to `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` and apply the appropriate profile and select **[!UICONTROL Save]**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
     * Navigate to CRXDE Lite to the following node: `/content/dam/jcr:content`.
 
-      Add the property `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` and tap **[!UICONTROL Save All]**.
+      Add the property `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` and select **[!UICONTROL Save All]**.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
-## Editing the smart crop or smart swatch of a single image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
+## Edit the smart crop or smart swatch of a single image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!NOTE]
 >
@@ -190,26 +159,26 @@ After you edit a smart crop and save, the change is propagated everywhere you us
 
 You can rerun smart crop to generate the additional crops again, if necessary.
 
-See also [Editing the smart crop or smart swatch of multiple images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
+See also [Edit the smart crop or smart swatch of multiple images](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **To edit the smart crop or smart swatch of a single image:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch image profile applied to it.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]**, then to the folder that has a smart crop or smart swatch image profile applied to it.
 
-1. Tap the folder so you can open its contents.
-1. Tap the image whose smart crop or smart swatch you want to adjust.
-1. In the toolbar, tap **[!UICONTROL Smart Crop]**.
+1. Select the folder so you can open its contents.
+1. Select the image whose smart crop or smart swatch you want to adjust.
+1. In the toolbar, select **[!UICONTROL Smart Crop]**.
 
 1. Do any of the following:
 
     * Near the upper-right corner of the page, drag the slider bar left or right to increase or decrease the image display, respectively.
     * On the image, drag a corner handle to adjust the size of the viewable area of the crop or swatch.
     * On the image, drag the box/swatch to a new location. You can only edit image swatches; color swatches are static.
-    * Above the image, tap  **[!UICONTROL Revert]** to undo all your edits and restore the original crop or swatch.
+    * Above the image, select  **[!UICONTROL Revert]** to undo all your edits and restore the original crop or swatch.
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL Close]** to return to the folder of assets.
+1. Near the upper-right corner of the page, select **[!UICONTROL Save]**, then select **[!UICONTROL Close]** to return to the folder of assets.
 
-## Editing the smart crop or smart swatch of multiple images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## Edit the smart crop or smart swatch of multiple images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 After you apply an image profile &ndash; containing Smart Crop &ndash; to a folder, all images in that folder have a crop applied to them. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
 
@@ -219,8 +188,8 @@ You can rerun smart crop to generate the additional crops again, if necessary.
 
 **To edit the smart crop or smart swatch of multiple images:**
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Assets]**, then to a folder that has a smart crop or smart swatch image profile applied to it.
-1. On the folder, tap the **[!UICONTROL More Actions]** (...) icon, then tap **[!UICONTROL Smart Crop]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Assets]**, then to a folder that has a smart crop or smart swatch image profile applied to it.
+1. On the folder, select the **[!UICONTROL More Actions]** (...) icon, then select **[!UICONTROL Smart Crop]**.
 
 1. On the **[!UICONTROL Edit Smart Crops]** page, do any of the following:
 
@@ -239,44 +208,44 @@ You can rerun smart crop to generate the additional crops again, if necessary.
     * Resize the smart crop box. Do any one of the following:
 
         * If the image has a smart crop or a smart swatch only, on the image, drag the corner handle of the crop box to adjust the size of the viewable area of the crop.
-        * If the image has both a smart crop and a smart swatch, on the image, drag the corner handle of the crop box to adjust the size of the viewable area of the crop. Or, tap or click the smart swatch below the image (color swatches are static), then drag the corner handle of the crop box to adjust the size of the viewable area of the swatch.
+        * If the image has both a smart crop and a smart swatch, on the image, drag the corner handle of the crop box to adjust the size of the viewable area of the crop. Or, select the smart swatch below the image (color swatches are static), then drag the corner handle of the crop box to adjust the size of the viewable area of the swatch.
 
-       ![Resizing the smart crop of an image](assets/edit_smart_crops-resize.png)
+       ![Resize the smart crop of an image](assets/edit_smart_crops-resize.png)
 
     * Move the smart crop box. Do any one of the following:
 
         * If the image has a smart crop or a smart swatch only, on the image, drag the crop box to a new location.
-        * If the image has both a smart crop and a smart swatch, on the image, drag the smart crop box to a new location. Or, tap or click the smart swatch below the image (color swatches are static), then drag the smart swatch crop box to a new location.
+        * If the image has both a smart crop and a smart swatch, on the image, drag the smart crop box to a new location. Or, select the smart swatch below the image (color swatches are static), then drag the smart swatch crop box to a new location.
 
        ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
     * Undo all your edits and restore the original smart crop or smart swatch (applies to the current editing session only).
 
-      Tap **[!UICONTROL Revert]** above the image.
+      Select **[!UICONTROL Revert]** above the image.
 
        ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**, then tap **[!UICONTROL Close]** to return to the folder of assets.
+1. Near the upper-right corner of the page, select **[!UICONTROL Save]**, then select **[!UICONTROL Close]** to return to the folder of assets.
 
-## Removing an image profile from folders {#removing-an-image-profile-from-folders}
+## Remove a Dynamic Media image profile from folders {#removing-an-image-profile-from-folders}
 
 When you remove an image profile from a folder, any subfolders automatically inherit the removal of the profile from its parent folder. However, any processing of files that has occurred within the folders remains intact.
 
 You can remove an image profile from a folder from within the **[!UICONTROL Tools]** menu or if you are in the folder, from **[!UICONTROL Properties]**. This section describes how to remove image profiles from folders both ways.
 
-### Removing Dynamic Media image profiles from folders by way of Profiles user interface {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Remove Dynamic Media image profiles from folders by way of Profiles user interface {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Tap the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
+1. Select the Experience Manager logo and navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Image Profiles]**.
 1. Select the image profile that you want to remove from a folder or multiple folders.
-1. Tap **[!UICONTROL Remove Processing Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and tap **[!UICONTROL Remove]**.
+1. Select **[!UICONTROL Remove Processing Profile from Folders]** and select the folder or multiple folders you want use to remove the profile from and select **[!UICONTROL Remove]**.
 
     You can confirm that the image profile is no longer applied to a folder because the name no longer appears below the folder name.
 
-### Removing Dynamic Media image profiles from folders by way of Properties {#removing-image-profiles-from-folders-via-properties}
+### Remove Dynamic Media image profiles from folders by way of Properties {#removing-image-profiles-from-folders-via-properties}
 
-1. Tap the Experience Manager logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an image profile from.
-1. On the folder, tap the check mark to select it, then tap **[!UICONTROL Properties]**.
+1. Select the Experience Manager logo and navigate **[!UICONTROL Assets]** and then to the folder that you want to remove an image profile from.
+1. On the folder, select the check mark to select it, then select **[!UICONTROL Properties]**.
 1. Select the **[!UICONTROL Image Profiles]** tab.
-1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save & Close]**.
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then select **[!UICONTROL Save & Close]**.
 
     Folders that have a profile already assigned to it are indicated by the display of the profile's name directly below the folder name.
