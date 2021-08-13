@@ -48,8 +48,10 @@ The following step-by-step workflow description is designed to help you get up a
         * Learn more about [Best practices for organizing your digital assets for using processing profiles](/help/assets/organize-assets.md).
         * Learn more about [Organize digital assets](/help/assets/organize-assets.md).
 
-    * Upload your primary source videos to the folders. You can upload video files that are up to 15 GB each. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
+    * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes.
+        * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
 
@@ -289,6 +291,9 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 ### Source video files {#source-video-files}
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
+
+* Dynamic Media supports short-form videos with a maximum length of 30 minutes.
+* You can upload primary source video files that are up to 15 GB each.
 
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
 
@@ -553,7 +558,7 @@ Publishing videos to YouTube requires that you have one or more channels. If you
 
 1. Go to [https://www.youtube.com](https://www.youtube.com/) and sign in using your Google account credentials.
 1. In the upper-right corner of the YouTube page, click your profile picture (can also appear as a letter within a solid colored circle), then click **[!UICONTROL YouTube settings]** (round gear icon).
-1. On the Overview page, under the Additional Features heading, click **[!UICONTROL See all my channels or create a new channel]**.
+1. On the Overview page, under the Additional Features heading, click **[!UICONTROL See all my channels or create a channel]**.
 1. On the Channels page, click **[!UICONTROL Create a new channel]**.
 1. On the Brand Account page, in the Brand Account Name field, enter a business name or any other channel name you choose where you want to publish your video assets, then click **[!UICONTROL Create]**.
 
@@ -1107,7 +1112,7 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/
 
    Remember that URLs are only available to copy *after* you have first *published* the assets.
 
-   See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).
+   See [Publish assets](/help/assets/publishing-dynamicmedia-assets.md).
 
 1. Do one of the following:
 
@@ -1163,7 +1168,7 @@ Because you are using an HTML5 video viewer, ensure that the chapter file you cr
 
 See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
 
-**To add chapter markers to video:**
+**To add video chapter navigation:**
 
 1. Save the `.vtt` file in UTF8 encoding so you avoid problems with character rendition in the chapter title text.
 
@@ -1226,7 +1231,7 @@ These steps apply only to Dynamic Media running in "Dynamicmedia_Scene7" mode.
 1. Be sure you have already done the following:
 
     * Created a folder for your video assets.
-    * [Applied a video profile to the folder](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
+    * [Apply a video profile to the folder](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 
     * [Uploaded your videos to the folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 

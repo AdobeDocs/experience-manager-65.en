@@ -18,10 +18,10 @@ Experience Manager allows many methods to process images that can be used to gen
 
 You can use ImageMagick to process images, including to generate FPO renditions. Such renditions are downsampled, that is, the pixel dimensions of the rendition are proportionally reduced if the original image has PPI larger than 72. See [install and configure ImageMagick to work with Experience Manager Assets](best-practices-for-imagemagick.md). 
 
- |  | Using Experience Manager's in-built workflow | Using ImageMagick workflow | Remarks |
-   |--- |--- |---|--- |
-   | For new assets | Enable FPO rendition ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Add ImageMagick command-line in Experience Manager workflow ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager executes the DAM Update Assets workflow for every upload. |
-   | For existing assets | Enable FPO rendition in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Add ImageMagick command-line in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | FPO renditions of the existing assets can be created on-demand or in bulk. |
+|  | Using Experience Manager's in-built workflow | Using ImageMagick workflow | Remarks |
+|--- |--- |---|--- |
+| For new assets | Enable FPO rendition ([help](#generate-renditions-of-new-assets-using-aem-workflow)) | Add ImageMagick command-line in Experience Manager workflow ([help](#generate-renditions-of-new-assets-using-imagemagick)) | Experience Manager executes the DAM Update Assets workflow for every upload. |
+| For existing assets | Enable FPO rendition in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-aem-workflow)) | Add ImageMagick command-line in a new, dedicated Experience Manager workflow ([help](#generate-renditions-of-existing-assets-using-imagemagick)) | FPO renditions of the existing assets can be created on-demand or in bulk. |
 
 >[!CAUTION]
 >
@@ -55,9 +55,11 @@ Following are the steps to configure DAM Update Asset workflow model to enable r
 
 In Experience Manager, DAM Update Asset workflow executes when a new asset is uploaded. To use ImageMagick to process renditions of newly uploaded assets, add a new command to the workflow model.
 
-1. Click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. Select **[!UICONTROL DAM Update Asset]** model and click **[!UICONTROL Edit]**.
+1. Click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. 
 
-1. Click **[!UICONTROL Toggle Side Panel]** in the upper left corner. Search for command line step.
+1. Select **[!UICONTROL DAM Update Asset]** model and click **[!UICONTROL Edit]**.
+
+1. Click **[!UICONTROL Toggle Side Panel]** in the upper left corner and search for command line step.
 
 1. Drag the **[!UICONTROL Command Line]** step and add it before the **[!UICONTROL Process Thumbnails]** step.
 
@@ -83,13 +85,21 @@ For detailed information on ImageMagick command line capabilities, see [https://
 
 To use Experience Manager workflow to generate FPO rendition of the existing assets, create a dedicated workflow model that uses the in-built FPO rendition option.
 
-1. Click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. To create a model, click **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. Add a meaningful **[!UICONTROL Title]** and a **[!UICONTROL Name]**.
+1. Click **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**. 
 
-1. Select the model and click **[!UICONTROL Edit]**. Click **[!UICONTROL Page Information]** > **[!UICONTROL Open Properties]**. Select **[!UICONTROL Transient Workflow]**. This improves scalability and performance. Click **[!UICONTROL Save]** and **[!UICONTROL Close]**.
+1. To create a model, click **[!UICONTROL Create]** > **[!UICONTROL Create Model]**. 
 
-1. Click **[!UICONTROL Toggle Side Panel]** in the upper left corner. Search for process thumbnail step. Drag the **[!UICONTROL Process Thumbnails]** step.
+1. Add a meaningful **[!UICONTROL Title]** and **[!UICONTROL Name]**.
 
-1. Select **[!UICONTROL Process Thumbnails]** and click **[!UICONTROL Configure]**. Follow the [configuration to generate rendition of new assets using Experience Manager workflow](#generate-renditions-of-new-assets-using-aem-workflow). To activate the changes, click **[!UICONTROL Sync]**.
+1. Select the model and click **[!UICONTROL Edit]**. Click **[!UICONTROL Page Information]** > **[!UICONTROL Open Properties]**, and then select **[!UICONTROL Transient Workflow]**. This improves scalability and performance. 
+
+1. Click **[!UICONTROL Save]** and **[!UICONTROL Close]**.
+
+1. Click **[!UICONTROL Toggle Side Panel]** in the upper left corner and search for process thumbnail step. 
+
+1. Select **[!UICONTROL Process Thumbnails]** and click **[!UICONTROL Configure]**. Follow the [configuration to generate rendition of new assets using Experience Manager workflow](#generate-renditions-of-new-assets-using-aem-workflow). 
+
+1. To activate the changes, click **[!UICONTROL Sync]**.
 
 
 ## Generate renditions of existing assets using ImageMagick {#generate-renditions-of-existing-assets-using-imagemagick}
