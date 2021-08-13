@@ -54,9 +54,19 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 ### [!DNL Assets] {#assets-65100}
 
-The following user experience enhancements are done in [!DNL Assets]:
+The following issues are fixed in [!DNL Assets]:
 
-* TBD
+* The dropdown for various fields in Folder Metadata Properties do not display the last selected values (NPR-36937)(CQ-4314429).
+
+* Quick Publish option is not available on Search Results page (NPR-36904)(CQ-4317748).
+
+* When users create live copy of an asset without specifying its extension, then after download the live copy file is not usable (NPR-36903) (CQ-4326305).
+
+* When a user is added as an owner of a child folder, then the user gets owner permission of its parent folder too and hence of the other children folders of the parent. Also, the user is not removed as owner of parent folder on attempting to remove it. (NPR-36801) (CQ-4323737).
+
+* Out of Memory exception is encountered on generating sub-assets for compound assets, such as power point presentation (NPR-36668).
+
+* When users move an asset that is already used in a published sites page, then the sites page is published again even if the option to publish is not selected (NPR-36636)(CQ-4323500).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
