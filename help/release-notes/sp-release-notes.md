@@ -22,12 +22,15 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.10.0 are:
 
+<!-- TBD for Anuj: Should there be ticket numbers in enhancements? -->
+
 * Experience Manager Sites introduces a self-managed user interface to configure custom `GraphQL` endpoints for their external tenants (SITES-1753).
 
 * Additional validation in `Content Fragrament` editor to ensure uniqueness of a `Content Fragment` within the same `Content Fragment` model (SITES-1730).
 
 * Ability to manage publication for `Models`. When selecting a `Model` and publishing it, a popup displays the list of all the referenced `Models` to be published (SITES-1496).
 
+* When sharing assets as a link (link share feature), you now have an option to select the original assets or its renditions or both.
 
 For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -56,17 +59,33 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 The following issues are fixed in [!DNL Assets]:
 
-* The dropdown for various fields in Folder Metadata Properties do not display the last selected values (NPR-36937)(CQ-4314429).
+* The value of the property `jcr:title` is not updated on the Publish instance after a folder is moved. Renaming and republishing a folder within author does not update the `jcr:title` property value of the same in the Publish instance (NPR-36369).
 
-* Quick Publish option is not available on Search Results page (NPR-36904)(CQ-4317748).
+* If two or more assets are selected and one or more metadata fields are edited, the save operation fails with error code 500 in Safari browser (NPR-36413).
 
-* When users create live copy of an asset without specifying its extension, then after download the live copy file is not usable (NPR-36903) (CQ-4326305).
+* Bulk metadata import fails because of incorrect date format (NPR-36428).
 
-* When a user is added as an owner of a child folder, then the user gets owner permission of its parent folder too and hence of the other children folders of the parent. Also, the user is not removed as owner of parent folder on attempting to remove it. (NPR-36801) (CQ-4323737).
+* When a selection is made in the Properties page to update metadata, the interface is slow to respond when there are many options provided by the schema (NPR-36430).
 
-* Out of Memory exception is encountered on generating sub-assets for compound assets, such as power point presentation (NPR-36668).
+* Search Filter using the [!UICONTROL Expiry Status] predicate is not working (NPR-36436).
 
-* When users move an asset that is already used in a published sites page, then the sites page is published again even if the option to publish is not selected (NPR-36636)(CQ-4323500).
+* The dropdown for various fields in Folder Metadata Properties do not display the last selected values (NPR-36937, CQ-4314429).
+
+* When searching for files and folders, if user applies a filter and selects [!UICONTROL Files & Folders], only the files are displayed but not the folder (CQ-4319543).
+
+* The toolbar options are different when the same Collection is selected from within a folder and when it is selected from a search result (NPR-36620).
+
+* The [!UICONTROL Quick Publish] option is not available on the search results page (NPR-36904, CQ-4317748).
+
+* When users create live copy of an asset without specifying its extension, then after download the live copy file is not usable (NPR-36903, CQ-4326305).
+
+* When a user is added as an owner of a child folder, then the user gets owner permission of its parent folder too and hence of the other children folders of the parent. Also, the user is not removed as owner of parent folder on attempting to remove it. (NPR-36801, CQ-4323737).
+
+* [!DNL Assets] generates an out of memory exception when you attempt to create sub-assets for compound assets, such as a PowerPoint presentation (NPR-36668).
+
+* When users move an asset that is already used in a published sites page, then the sites page is published again even if the option to publish is not selected (NPR-36636, CQ-4323500).
+
+* When using the Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
