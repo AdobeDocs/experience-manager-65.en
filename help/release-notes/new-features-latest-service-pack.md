@@ -19,11 +19,11 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-
+* [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
 ### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-
+* Many accessibility enhancements are done in [!DNL Dynamic Media] client so that a screen reader can present a more appropriate and useful description of the action or user interface.
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 

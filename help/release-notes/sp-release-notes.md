@@ -22,7 +22,11 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.10.0 are:
 
-<!-- TBD for Anuj: Should there be ticket numbers in enhancements? -->
+<!-- TBD for Anuj: 
+* Should ticket numbers be mentioned in enhancements? 
+* Should these enhancements be mentioned in the new features article?
+* Adjust the sequence of each list item using this order as a guide: Foundation, Sites, Assets, Forms, Commerce, and Screens.
+-->
 
 * Experience Manager Sites introduces a self-managed user interface to configure custom `GraphQL` endpoints for their external tenants (SITES-1753).
 
@@ -30,9 +34,11 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Ability to manage publication for `Models`. When selecting a `Model` and publishing it, a popup displays the list of all the referenced `Models` to be published (SITES-1496).
 
-* When sharing assets as a link (link share feature), you now have an option to select the original assets or its renditions or both.
+* [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
+* When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
+
+For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.0 release.
 
@@ -65,11 +71,11 @@ The following issues are fixed in [!DNL Assets]:
 
 * Bulk metadata import fails because of incorrect date format (NPR-36428).
 
-* When a selection is made in the Properties page to update metadata, the interface is slow to respond when there are many options provided by the schema (NPR-36430).
+* When a selection is made in the [!UICONTROL Properties] page to update metadata, the interface is slow to respond when there are many options provided by the schema (NPR-36430).
 
 * Search Filter using the [!UICONTROL Expiry Status] predicate is not working (NPR-36436).
 
-* The dropdown for various fields in Folder Metadata Properties do not display the last selected values (NPR-36937, CQ-4314429).
+* The popup menu for various fields in [!UICONTROL Folder Metadata] properties does not display the last selected values (NPR-36937, CQ-4314429).
 
 * When searching for files and folders, if user applies a filter and selects [!UICONTROL Files & Folders], only the files are displayed but not the folder (CQ-4319543).
 
@@ -81,17 +87,19 @@ The following issues are fixed in [!DNL Assets]:
 
 * When a user is added as an owner of a child folder, then the user gets owner permission of its parent folder too and hence of the other children folders of the parent. Also, the user is not removed as owner of parent folder on attempting to remove it. (NPR-36801, CQ-4323737).
 
-* [!DNL Assets] generates an out of memory exception when you attempt to create sub-assets for compound assets, such as a PowerPoint presentation (NPR-36668).
+* [!DNL Assets] generates an out of memory exception when you attempt to create subassets for compound assets, such as a PowerPoint presentation (NPR-36668).
 
 * When users move an asset that is already used in a published sites page, then the sites page is published again even if the option to publish is not selected (NPR-36636, CQ-4323500).
 
-* When using the Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
+* When using the Apache Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
+
+* All DRM-protected assets are downloaded and user selection to download specific asset is not followed (CQ-4327422).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
-[!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
+[!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fixes in [!DNL Dynamic Media].
 
-* TBD
+* Uploaded videos to [!DNL Experience Manager] display `Process failed` after `dynamicmedia_scene7` runmode is enabled and sync is disabled (CQ-4327791).
 
 ### Platform {#platform-65100}
 
