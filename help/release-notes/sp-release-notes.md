@@ -93,13 +93,22 @@ The following issues are fixed in [!DNL Assets]:
 
 * When using the Apache Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
 
-* All DRM-protected assets are downloaded and user selection to download specific asset is not followed (CQ-4327422).
+* When downloading DRM-protected assets, all the assets are downloaded. User selection to download specific assets is not respected (CQ-4327422).
+
+* Smart Collection API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DNL Experience Manager] (CQ-4326322).
+
+* [!DNL Experience Manager] does not sort assets in any column in the List view (CQ-4325472).
+
+* The default report on smart tagging displays a blank page when opened (CQ-4325060).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
 [!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fixes in [!DNL Dynamic Media].
 
 * Uploaded videos to [!DNL Experience Manager] display `Process failed` after `dynamicmedia_scene7` runmode is enabled and sync is disabled (CQ-4327791).
+* At times, the uploaded assets are not displayed in the processing state or not displayed in DM application and the workflows are not triggered. Clearing trasient workflow jobs resolves the issue but the issue occurs intermittently (CQ-4326308).
+
+* Experience Manager generates an error when users attempt to move some sub-folders with imagesets (CQ-4325896).
 
 ### Platform {#platform-65100}
 
