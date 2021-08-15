@@ -318,9 +318,15 @@ To localize the branding information that you enter in the Document of Record ta
     * **Exclude hidden fields from the document of record**
     * **Hide description of panels**
 
+    If the custom XDP template that you select includes multiple master pages, the properties for those pages appear in the **[!UICONTROL content]** section of the **[!UICONTROL Document of Record]** tab.
+
+    ![Master Page Properties](assets/master-page-properties.png)
+
+    The master page properties include Logo Image, Header Text, Form Title, Disclaimer Label, and Disclaimer Text. You can apply adaptive form or XDP template properties to the Document of Record. AEM Forms applies the template properties to the Document of Record by default. You can also define custom values for the master page properties. For information on how to apply multiple master pages in a Document of Record, see [Apply multiple master pages to a Document of Record](#apply-multiple-master-pages-dor).
+
    >[!NOTE]
    >
-   >If you are using an adaptive form template created with a verision of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your adaptive form template under the root subform:
+   >If you are using an adaptive form template created with a version of Designer prior to 6.3, for Accent Color and Font Family properties to work, ensure that the following is present in your adaptive form template under the root subform:
 
    ```xml
    <proto>
@@ -363,11 +369,68 @@ The document of record settings of a component are available under its propertie
 * **Display panel as table:** Setting the property displays panel as table in document of record if panel has less than 6 fields in it. Applicable for panel only.
 * **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from document of record. Applicable for panel and table only.
 * **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from document of record. Applicable for panel and table only.
+* **Pagination**: The following fields are available in the **[!UICONTROL Pagination]** section:
+  * **[!UICONTROL Place]** > **[!UICONTROL Following Previous]**: Places the panel after the previous object  in the parent panel.
+  * **[!UICONTROL Place]** > **[!UICONTROL In Content Area]** > Name of content area: Places the panel in the specified content area.
+  * **[!UICONTROL Place]** > **[!UICONTROL Top of Next Content Area]**: Places the panel at the top of the next content area.
+  * **[!UICONTROL Place]** > **[!UICONTROL Top of Content Area]** > Name of content area: Places the panel at the top of the specified content area.
+  * **[!UICONTROL Place]** > **[!UICONTROL On Page]** > Name of master page: Places the panel on the specified page. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
+  * **[!UICONTROL Place]** > **[!UICONTROL Top of Next Page]**: Places the panel at the top of the next page. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
+  * **[!UICONTROL Place]** > **[!UICONTROL Top of Page]** > Name of master page: Places the panel at the top of the page, when the specified page is rendered. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
+* **After**: Determines which area to fill after a panel is placed.The following fields are available in the **[!UICONTROL After]** section:
+  * **[!UICONTROL After]** > **[!UICONTROL Continue Filling Parent]**: Continues merging data for all objects remaining to be filled in the parent panel.
+  * **[!UICONTROL After]** > **[!UICONTROL Go to Next Content Area]**: Starts filling the next content area after placing the panel.
+  * **[!UICONTROL After]** > **[!UICONTROL Go To Content Area]** > Name of content area: Starts filling the specified content area after placing the panel.
+  * **[!UICONTROL After]** > **[!UICONTROL Go To Next Page]**: Starts filling the next page after placing the panel.
+  * **[!UICONTROL After]** > **[!UICONTROL Go To Page]** > Name of page: Starts filling the specified page after placing the panel.
+* **Overflow**: Sets an overflow for a panel or a table that spans pages. The following fields are available in the **[!UICONTROL Overflow]** section:
+  * **[!UICONTROL Overflow]** > **[!UICONTROL None]**: Starts filling the next page. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
+  * **[!UICONTROL Overflow]** > **[!UICONTROL Go to Content Area]** > Name of content area: Starts filling the specified content area.
+  * **[!UICONTROL Overflow]** > **[!UICONTROL Go To Page]** > Name of page: Starts filling the specified page.
 
+For information on how to apply page breaks and apply multiple master pages in a Document of Record, see [Apply page break in a Document of Record](#apply-page-breaks-in-dor) and [Apply multiple master pages to a Document of Record](#apply-multiple-master-pages-dor).
+    
 **Form level settings**
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
 * **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from document of record if the property is set true, provided “Exclude From Document of Record” property is not set.
+
+## Apply page break in a Document of Record {#apply-page-breaks-in-dor}
+
+You can apply page breaks in a Document of Record using multiple methods.
+
+To apply a page break to a Document of Record:
+
+1. Tap the panel and select ![Configure](assets/configure-icon.svg).
+
+1. Expand **[!UICONTROL Document of Record]** to view the properties.
+
+1. In the **[!UICONTROL Pagination]** section, tap ![Folder](assets/folder-icon.svg) in the **[!UICONTROL Place]** field.
+1. Tap **[!UICONTROL Top of Next page]** and tap **[!UICONTROL Select]**. You can also tap **[!UICONTROL Top of Page]**, select the master page, and tap **[!UICONTROL Select]** to apply the page break.
+1. Tap ![Save](assets/save_icon.svg) to save the properties.
+
+The selected panel moves to the next page.
+
+## Apply multiple master pages to a Document of Record {#apply-multiple-master-pages-dor}
+
+If the custom XDP template that you select includes multiple master pages, the properties for those pages appear in the [!UICONTROL content] section of the [!UICONTROL Document of Record] tab. For more information, see [Customize the branding information in document of record](#customize-the-branding-information-in-document-of-record).
+
+You can apply multiple master pages to a Document of Record by applying different master pages to the components of an adaptive form. Use the [Pagination](#document-of-record-settings) section of the Document of Record properties to apply multiple master pages.
+
+The following is an example of how to apply multiple master pages to a Document of Record:
+You upload an XDP template that includes four master pages to the [!DNL AEM Forms] server. [!DNL AEM Forms] applies the template properties to the Document of Record by default. [!DNL AEM Forms] also applies the first master page properties in the template to the Document of Record.
+
+To apply the second master page properties to a panel and the third master page properties to the panels that follow, execute the following steps:
+
+1. Tap the panel to apply the second master page and select ![Configure](assets/configure-icon.svg).
+1. In the **[!UICONTROL Pagination]** section, tap ![Folder](assets/folder-icon.svg) in the **[!UICONTROL Place]** field.
+1. Tap **[!UICONTROL On page]**, select the second master page and tap **[!UICONTROL Select]**.
+   AEM Forms applies second master page to the panel and all subsequent panels in the adaptive form.
+1. In the **[!UICONTROL Pagination]** section, tap ![Folder](assets/folder-icon.svg) in the **[!UICONTROL After]** field.
+1. Tap **[!UICONTROL Go To page]**, select the third master page and tap **[!UICONTROL Select]**.
+1. Tap ![Save](assets/save_icon.svg) to save the properties.
+   AEM Forms applies third master page to the panel and all subsequent panels in the adaptive form.
+
 
 ## Key considerations when working with document of record {#key-considerations-when-working-with-document-of-record}
 
