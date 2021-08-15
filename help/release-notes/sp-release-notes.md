@@ -101,14 +101,19 @@ The following issues are fixed in [!DNL Assets]:
 
 * The default report on smart tagging displays a blank page when opened (CQ-4325060).
 
+* When a large image is used to generate a thumbnail for a Collections folder, it takes much longer and results in an out of memory exception (CQ-4322127).
+
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
 [!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fixes in [!DNL Dynamic Media].
 
 * Uploaded videos to [!DNL Experience Manager] display `Process failed` after `dynamicmedia_scene7` runmode is enabled and sync is disabled (CQ-4327791).
-* At times, the uploaded assets are not displayed in the processing state or not displayed in DM application and the workflows are not triggered. Clearing trasient workflow jobs resolves the issue but the issue occurs intermittently (CQ-4326308).
 
-* Experience Manager generates an error when users attempt to move some sub-folders with imagesets (CQ-4325896).
+* At times, the uploaded assets are not displayed in the processing state or not displayed in DM application and the workflows are not triggered. Clearing transient workflow jobs resolves the issue but the issue occurs intermittently (CQ-4326308).
+
+* [!DNL Experience Manager] generates an error when users attempt to move some sub-folders with imagesets (CQ-4325896).
+
+* When [!UICONTROL Publish Mode] set to [!UICONTROL Selective Publish], the manage publication interface does not display the options to publish assets to or unpublish assets from Dynamic Media (CQ-4329416).
 
 ### Platform {#platform-65100}
 
