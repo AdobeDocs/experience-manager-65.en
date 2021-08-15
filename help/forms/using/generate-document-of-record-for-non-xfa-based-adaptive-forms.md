@@ -395,7 +395,7 @@ For information on how to apply page breaks and apply multiple master pages in a
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
 * **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from document of record if the property is set true, provided “Exclude From Document of Record” property is not set.
 
-## Apply page break in a Document of Record {#apply-page-breaks-in-dor}
+## Apply a page break in a Document of Record {#apply-page-breaks-in-dor}
 
 You can apply page breaks in a Document of Record using multiple methods.
 
