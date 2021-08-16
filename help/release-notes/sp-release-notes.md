@@ -38,6 +38,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
 
+* A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
+
 For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.0 release.
@@ -109,7 +111,7 @@ The following issues are fixed in [!DNL Assets]:
 
 [!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fixes in [!DNL Dynamic Media].
 
-<!--  TBD: Need to copyedit the a11y enh.
+<!--  TBD: Need to copyedit the DM a11y enh.
 
 * The following accessibility enhancements are made in Dynamic Media Viewers:
 
