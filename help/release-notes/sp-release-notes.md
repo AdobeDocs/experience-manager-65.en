@@ -103,9 +103,43 @@ The following issues are fixed in [!DNL Assets]:
 
 * When a large image is used to generate a thumbnail for a Collections folder, it takes much longer and results in an out of memory exception (CQ-4322127).
 
+* Experience Manager displays the image predicate even when the search result is empty (CQ-4323801).
+
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
 [!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fixes in [!DNL Dynamic Media].
+
+<!--  TBD: Need to copyedit the a11y enh.
+
+* The following accessibility enhancements are made in Dynamic Media Viewers:
+
+  * VERIFY E2E : [Screen Readers- AEM Dynamic Media-Delivery-Generate copy URL/embed code for assets]: Screen readers(NVDA, JAWS, Narrator) do not announce Search/Add Email Address combobox as required in Link Sharing dialog (CQ-4327761).
+  * [Forms and Validations-AEM Dynamic Media-Tools-Assets-Viewer Presets-Create-Zoom]: Screen readers (NVDA/JAWS/Narrator) Useless element mentioned in aria-labelledby attr of Selected Type dropdown element (CQ-4325677).
+  * AEM Dynamic Media-Tools-Assets-Viewer Presets : Focus is not moving to Asset Picker Dialog box (CQ-4324736).
+  * NumberInput should support labelledBy with decrement button announced by ScreenReader (CQ-4323900).
+  * [Screen Readers- AEM Dynamic Media-Delivery-Generate copy URL/embed code for assets]: Screen readers(NVDA, JAWS, Narrator) do not announce Search/Add Email Address combobox as required in Link Sharing dialog (CQ-4323352).
+  * Keyboard shortcuts to prev/next asset block access to primary toolbar (CQ-4322037).
+  * [Screen Readers-AEM Dynamic Media-Create Image profile]: NVDA/JAWS/Narrator is not narrating the newly added Â‘EditÂ’ field information after selecting the Â‘Add cropÂ’ button present under the 'Responsive image cropÂ’ header. (CQ-4290734).
+  * [Screen readers- AEM Dynamic Media -Assets-Image Presets-Create (Basic)]: 'H1' heading level is not implemented for the 'Image Preset Editor' page. (CQ-4290730).
+  * [Screen Readers-AEM Dynamic Media-Tools-Assets-Viewer Presets-Create-Zoom]: Screen readers (NVDA/JAWS/Narrator) are not identifying the 'Multiple Landmarks' while navigating using landmark/Region shortcut keys D/R. (CQ-4290729).
+  * [Screen Readers-AEM Dynamic Media-Tools-Assets-Viewer Presets-Create-Video]: Screen readers are not narrating the name for the share button in the video frame, while navigating using down arrow key. (CQ-4290728).
+  * [Screen Readers-AEM Dynamic Media-Tools-Assets-Viewer Presets-Create-Zoom]: Screen readers (NVDA/JAWS/Narrator) are not narrating name for the  buttons present in 'Sprite Tab' and 'Background Tab'. (CQ-4290727).
+  * [Visual Requirements-AEM Dynamic Media-Tools-Assets-Video properties-Edit-Basic]: Visual asterisk(*) symbol is not provided for mandatory 'width' edit field in the 'Basic' tab section. (CQ-4290725).
+  * [Screen Readers-AEM Dynamic Media-Tools-Assets-Image profiles]: Screen readers are not narrating the label mapped information for the check boxes present in the table. (CQ-4290723).
+  * [Keyboard Navigation-AEM Dynamic Media-Tools-Assets-Viewer Presets-Create-Zoom]: Alternate mechanism or Bypass blocks are not provided for the expanded 'CSS Editor', While navigating using Keyboard Tab key. (CQ-4290720).
+  * [Forms and validations-AEM Dynamic Media-Assets-Image Presets-Create(Basic)]:While navigating in Screen readers Form mode (F) respective labels are not mapped with Edit fields & buttons present under Â‘BasicsÂ’ tab in Image Preset editor page. (CQ-4290717).
+  * [Screen Readers-AEM Dynamic Media-Image Set Editor]: Screen readers are not recognizing  multiple landmarks in the 'Image Set Editor' page, when navigated using landmark/region (D/R) shortcuts. (CQ-4290710).
+  * [Screen Readers-AEM Dynamic Media-Assets-Renditions]: Screen readers(NVDA, JAWS, Narrator) is not narrating the role(button) and state(selected/Unselected) for the interactive buttons present in the left navigation bar. (CQ-4290709).
+  * [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not narrating the state and narrating incorrect role for the images present in the 'Content' tab, when navigated in down arrow key. (CQ-4290707).
+  * [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not narrating the name, role and state for the segments present in the 'Video Timeline scale', when navigated in down arrow key. (CQ-4290706).
+  * [Screen readers- AEM Dynamic Media -Assets-Publish]: Screen readers (NVDA/JAWS/Narrator) are not narrating the name, role & default check boxes state (Selected/unselected) in Â‘All AssetsÂ’ & Â‘All CollectionsÂ’ tables when navigating using table shortcut key (CQ-4290705).
+  * [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not narrating the state(collapsed/expanded) and the property(menu sub menu), when navigated to 'Shoppable video Dark' menu button in down arrow key. (CQ-4290704).
+  * [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not recognizing multiple landmarks in the page, when navigated using landmark/region (D/R) shortcuts. (CQ-4290702).
+  * [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not recognizing any headings in the page, when navigating using heading shortcut(H). (CQ-4290701).
+  * [Forms & Validations-AEM Dynamic Media-Create Interactive Video]: There is no error message getting displayed after uploading an unsupported video format (i.e. other than MP4). (CQ-4290700).
+  * [Visual Requirement-AEM Dynamic Media-Create Interactive Video]: The color contrast for the numbers(Seconds) present in the timeline scale fails to meet the minimum required luminosity ratio of 4.5:1. (CQ-4290699).
+  * [Screen Readers-AEM Dynamic Media-Create Interactive Video]: There is no visual label provided for the 'Product Name' edit field and screen readers are also not narrating any label when navigated using down arrow/ form mode(F). (CQ-4290697).
+-->
 
 * Uploaded videos to [!DNL Experience Manager] display `Process failed` after `dynamicmedia_scene7` runmode is enabled and sync is disabled (CQ-4327791).
 
@@ -114,6 +148,12 @@ The following issues are fixed in [!DNL Assets]:
 * [!DNL Experience Manager] generates an error when users attempt to move some sub-folders with imagesets (CQ-4325896).
 
 * When [!UICONTROL Publish Mode] set to [!UICONTROL Selective Publish], the manage publication interface does not display the options to publish assets to or unpublish assets from Dynamic Media (CQ-4329416).
+
+* Operations using `Scene7APIClientImpl` can be a bottleneck when there are many concurrent DM operations (CQ-4324211).
+
+* The video thumbnails when using Assets Share Commons are blurred (CQ-4315461).
+
+* Dynamic renditions do not work for PDF, EPS, and AI files (CQ-4307467).
 
 ### Platform {#platform-65100}
 
