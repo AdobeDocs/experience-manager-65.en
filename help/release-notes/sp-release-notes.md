@@ -60,8 +60,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 * When a `Model` type is selected on the `Model Editor` page, `Edit Content Fragement` button appears on the `Fragment Reference Properties` sheet (SITES-1485).
 
-* When adding a reference to the `Fragment Reference` field in `Content Fragment Model Editor`, only the models that are `enabled` are allowed. If the parent model is in `draft` state, it is not allowed to refer it to other `draft` models (SITES-1477). 
-
+* When adding a reference to the `Fragment Reference` field in `Content Fragment Model Editor`, only the models that are `enabled` are allowed. If the parent model is in `draft` state, it is not allowed to refer it to other `draft` models (SITES-1477).
 
 ### [!DNL Assets] {#assets-65100}
 
@@ -95,22 +94,13 @@ The following issues are fixed in [!DNL Assets]:
 
 * When using the Apache Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
 
-* When downloading DRM-protected assets, all the assets are downloaded. User selection to download specific assets is not respected (CQ-4327422).
-
-* Smart Collection API `com.day.cq.dam.api.collection.SmartCollection` is not available in [!DNL Experience Manager] (CQ-4326322).
-
-* [!DNL Experience Manager] does not sort assets in any column in the List view (CQ-4325472).
-
-* The default report on smart tagging displays a blank page when opened (CQ-4325060).
-
-* When a large image is used to generate a thumbnail for a Collections folder, it takes much longer and results in an out of memory exception (CQ-4322127).
-
-* Experience Manager displays the image predicate even when the search result is empty (CQ-4323801).
+* All DRM-protected assets are downloaded and user selection to download specific asset is not followed (CQ-4327422).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
 [!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fixes in [!DNL Dynamic Media].
 
+<<<<<<< Updated upstream
 <!--  TBD: Need to copyedit the DM a11y enh.
 
 * The following accessibility enhancements are made in Dynamic Media Viewers:
@@ -143,19 +133,15 @@ The following issues are fixed in [!DNL Assets]:
   * [Screen Readers-AEM Dynamic Media-Create Interactive Video]: There is no visual label provided for the 'Product Name' edit field and screen readers are also not narrating any label when navigated using down arrow/ form mode(F). (CQ-4290697).
 -->
 
+=======
+>>>>>>> Stashed changes
 * Uploaded videos to [!DNL Experience Manager] display `Process failed` after `dynamicmedia_scene7` runmode is enabled and sync is disabled (CQ-4327791).
 
-* At times, the uploaded assets are not displayed in the processing state or not displayed in DM application and the workflows are not triggered. Clearing transient workflow jobs resolves the issue but the issue occurs intermittently (CQ-4326308).
+[!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
 
-* [!DNL Experience Manager] generates an error when users attempt to move some sub-folders with imagesets (CQ-4325896).
+* Screen reader now announces the placeholder text to search and add Email address as a required field on share assets as a link dialog, and also announces the [!UICONTROL Please fill out this field] tooltip (CQ-4327761).
 
-* When [!UICONTROL Publish Mode] set to [!UICONTROL Selective Publish], the manage publication interface does not display the options to publish assets to or unpublish assets from Dynamic Media (CQ-4329416).
-
-* Operations using `Scene7APIClientImpl` can be a bottleneck when there are many concurrent DM operations (CQ-4324211).
-
-* The video thumbnails when using Assets Share Commons are blurred (CQ-4315461).
-
-* Dynamic renditions do not work for PDF, EPS, and AI files (CQ-4307467).
+* ().
 
 ### Platform {#platform-65100}
 
