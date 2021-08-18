@@ -8,7 +8,6 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
 discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
-
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
@@ -17,11 +16,11 @@ exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
 
 This section describes working with the Panoramic Image viewer to render spherical panoramic images for an immersive 360° viewing experience of a room, property, location, or landscape.
 
-See also [Managing Viewer Presets](/help/assets/managing-viewer-presets.md).
+See also [Manage Viewer Presets](/help/assets/managing-viewer-presets.md).
 
 ![panoramic-image2](assets/panoramic-image2.png)
 
-## Uploading assets for use with the Panoramic Image viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
+## Upload assets for use with the Panoramic Image viewer {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
 For an uploaded asset to qualify as a spherical panorama image that you intend to use with the Panoramic Image viewer, the asset must have either one or both of the following:
 
@@ -33,15 +32,15 @@ For an uploaded asset to qualify as a spherical panorama image that you intend t
 
 Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the `Panoramic Media` WCM component.
 
-To upload assets for use with the Panoramic Image viewer, see [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
+To upload assets for use with the Panoramic Image viewer, see [Upload Assets](/help/assets/manage-assets.md#uploading-assets).
 
-## Configuring Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
+## Configure Dynamic Media Classic {#configuring-dynamic-media-classic-scene}
 
 For the Panoramic Image viewer to work properly within Adobe Experience Manager, synchronize the Panoramic Image viewer presets with Dynamic Media Classic and Dynamic Media Classic-specific metadata so the viewer presets get updated in the JCR. To accomplish this synch, configure Dynamic Media Classic as follows:
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
-1. Near the upper-right corner of the page, click **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+1. Near the upper-right corner of the page, select **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. On the Image Server Publish page, from the **[!UICONTROL Publish Context]** drop-down menu near the top, select **[!UICONTROL Image Serving]**.
 
 1. On the same Image Server Publish page, locate the heading **[!UICONTROL Request Attributes]**.
@@ -60,24 +59,24 @@ For the Panoramic Image viewer to work properly within Adobe Experience Manager,
 
    These settings are necessary for using the `Panoramic Media` WCM component in Experience Manager.
 
-1. At the bottom of the Image Server Publish page, on the left side, click **[!UICONTROL Save]**.
+1. At the bottom of the Image Server Publish page, on the left side, select **[!UICONTROL Save]**.
 
-1. In the lower-right corner, click **[!UICONTROL Close]**.
+1. In the lower-right corner, select **[!UICONTROL Close]**.
 
-### Troubleshooting the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
+### Troubleshoot the Panoramic Media WCM component {#troubleshooting-the-panoramic-media-wcm-component}
 
 If you dropped an image into the Panoramic Media component in your WCM and the component placeholder collapsed, troubleshoot the following:
 
-* If you experience a 403 Forbidden error, it could be caused by the requested image size being too large. Review the **[!UICONTROL Reply Image Size Limit]** settings in [Configuring Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* If you experience a 403 Forbidden error, it could be caused by the requested image size being too large. Review the **[!UICONTROL Reply Image Size Limit]** settings in [Configure Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
 * For an "Invalid lock" on the asset or "Parsing error" displayed on the page, check Request Obfuscation Mode and Request Locking Mode to ensure they are disabled.
 * For a tainted canvas error, set up a Rule Set Definition File Path and Invalidate CTN for the previous requests for the image asset.
-* If image quality becomes low after an image request with sizing above the supported limit, check that the **[!UICONTROL JPEG Encoding Attributes > Quality]** setting is not empty. A typical setting for the **[!UICONTROL Quality]** field is `95`. You can find the setting on the Image Server Publish page. To access the page, see [Configuring Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
+* If image quality becomes low after an image request with sizing above the supported limit, check that the **[!UICONTROL JPEG Encoding Attributes > Quality]** setting is not empty. A typical setting for the **[!UICONTROL Quality]** field is `95`. You can find the setting on the Image Server Publish page. To access the page, see [Configure Dynamic Media Classic](/help/assets/panoramic-images.md#configuring-dynamic-media-classic-scene).
 
-## Previewing Panoramic Images {#previewing-panoramic-images}
+## Preview Panoramic Images {#previewing-panoramic-images}
 
-See [Previewing Assets](/help/assets/previewing-assets.md).
+See [Preview Assets](/help/assets/previewing-assets.md).
 
-## Publishing Panoramic Images {#publishing-panoramic-images}
+## Publish Panoramic Images {#publishing-panoramic-images}
 
-See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).
+See [Publish Assets](/help/assets/publishing-dynamicmedia-assets.md).
