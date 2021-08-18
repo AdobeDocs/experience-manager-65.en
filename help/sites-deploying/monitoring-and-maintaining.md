@@ -71,7 +71,7 @@ To do this, you need to [back up your entire repository](#backing-up-your-reposi
 
 >[!CAUTION]
 >
->If you are operating a third-party application server, then additional folders may be in a different location and may also need to be backed up. See [How to install AEM with an Application Server](/help/sites-deploying/application-server-install.md) for information about installing application servers. [](/content/docs/en/aem/6-3/deploy/installing.md#installing adobe experience manager with an application server)
+>If you are operating a third-party application server, then additional folders may be in a different location and may also need to be backed up. See [How to install AEM with an Application Server](/help/sites-deploying/application-server-install.md) for information about installing application servers.
 
 >[!CAUTION]
 >
