@@ -122,28 +122,43 @@ The following issues are fixed in [!DNL Assets]:
 
 * Screen readers now narrate the newly added [!UICONTROL Edit] field information after selecting the [!UICONTROL Add Crop] option within the [!UICONTROL Responsive Image Crop] on [!UICONTROL Edit Image Processing Profile] page (CQ-4290734).
 
-* On [!UICONTROL Edit Image Preset] page, screen readers now appropriately announce the page heading when navigating the page using heading keyboard shortcut keys (CQ-4290730).
+* On [!UICONTROL Edit Image Preset] and [!UICONTROL Create Interactive Video] pages, screen readers now appropriately announce the page heading when navigating the pages using heading keyboard shortcut keys (CQ-4290730)(CQ-4290701).
 
-* Screen readers can now identify the various areas of the screen (such as right panel region, toolbar landmark, viewer toolbar landmark, and zoomable image landmark) when navigating the screen using landmark and region shortcut keys on keyboard (CQ-4290729).
+* Screen readers can now recognize the various regions of the screen (such as right panel region, left panel, action toolbar, viewer toolbar landmark, and zoomable image landmark) using landmark and region shortcut keys when navigating the following pages; so that users can perform various operations using options on these regions.
 
-* Screen readers now narrate the name for the share button in the video frame, when navigating using down arrow key (CQ-4290728).
+  * [!UICONTROL Viewer Preset Editor] (CQ-4290729)
 
-<!--* [Screen Readers-AEM Dynamic Media-Tools-Assets-Viewer Presets-Create-Zoom]: Screen readers (NVDA/JAWS/Narrator) are not narrating name for the  buttons present in 'Sprite Tab' and 'Background Tab'. (CQ-4290727).
-* [Visual Requirements-AEM Dynamic Media-Tools-Assets-Video properties-Edit-Basic]: Visual asterisk(*) symbol is not provided for mandatory 'width' edit field in the 'Basic' tab section. (CQ-4290725).
-* [Screen Readers-AEM Dynamic Media-Tools-Assets-Image profiles]: Screen readers are not narrating the label mapped information for the check boxes present in the table. (CQ-4290723).
-* [Keyboard Navigation-AEM Dynamic Media-Tools-Assets-Viewer Presets-Create-Zoom]: Alternate mechanism or Bypass blocks are not provided for the expanded 'CSS Editor', While navigating using Keyboard Tab key. (CQ-4290720).
-* [Forms and validations-AEM Dynamic Media-Assets-Image Presets-Create(Basic)]:While navigating in Screen readers Form mode (F) respective labels are not mapped with Edit fields & buttons present under Â‘BasicsÂ’ tab in Image Preset editor page. (CQ-4290717).
-* [Screen Readers-AEM Dynamic Media-Image Set Editor]: Screen readers are not recognizing  multiple landmarks in the 'Image Set Editor' page, when navigated using landmark/region (D/R) shortcuts. (CQ-4290710).
-* [Screen Readers-AEM Dynamic Media-Assets-Renditions]: Screen readers(NVDA, JAWS, Narrator) is not narrating the role(button) and state(selected/Unselected) for the interactive buttons present in the left navigation bar. (CQ-4290709).
-* [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not narrating the state and narrating incorrect role for the images present in the 'Content' tab, when navigated in down arrow key. (CQ-4290707).
-* [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not narrating the name, role and state for the segments present in the 'Video Timeline scale', when navigated in down arrow key. (CQ-4290706).
-* [Screen readers- AEM Dynamic Media -Assets-Publish]: Screen readers (NVDA/JAWS/Narrator) are not narrating the name, role & default check boxes state (Selected/unselected) in Â‘All AssetsÂ’ & Â‘All CollectionsÂ’ tables when navigating using table shortcut key (CQ-4290705).
-* [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not narrating the state(collapsed/expanded) and the property(menu sub menu), when navigated to 'Shoppable video Dark' menu button in down arrow key. (CQ-4290704).
-* [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not recognizing multiple landmarks in the page, when navigated using landmark/region (D/R) shortcuts. (CQ-4290702).
-* [Screen Readers-AEM Dynamic Media-Create Interactive Video]: Screen readers are not recognizing any headings in the page, when navigating using heading shortcut(H). (CQ-4290701).
-* [Forms & Validations-AEM Dynamic Media-Create Interactive Video]: There is no error message getting displayed after uploading an unsupported video format (i.e. other than MP4). (CQ-4290700).
-* [Visual Requirement-AEM Dynamic Media-Create Interactive Video]: The color contrast for the numbers(Seconds) present in the timeline scale fails to meet the minimum required luminosity ratio of 4.5:1. (CQ-4290699).
-* [Screen Readers-AEM Dynamic Media-Create Interactive Video]: There is no visual label provided for the 'Product Name' edit field and screen readers are also not narrating any label when navigated using down arrow/ form mode(F). (CQ-4290697).-->
+  * [!UICONTROL Image Set Editor] (CQ-4290710)
+
+  * [!UICONTROL Create Interactive Video] (CQ-4290702).
+
+* Screen readers now announce the name for the share option in the video frame, when navigating using down arrow key (CQ-4290728).
+
+* Screen readers now narrate the names for various options in [!UICONTROL Sprite] and [!UICONTROL Background] tabs in [!UICONTROL Appearance] tab in [!UICONTROL Viewer Preset Editor] (CQ-4290727).
+
+* Mandatory fields, like the field to edit [!UICONTROL Width], in the [!UICONTROL Basic] tab of [!UICONTROL Edit Video Encoding] page now have an asterisk symbol (*) (CQ-4290725).
+
+* Screen readers now announce the label for the options on [!UICONTROL Image Profiles] page (CQ-4290723).
+
+* Windows users can now navigate out of the expanded CSS editor on [!UICONTROL Viewer Preset Editor] when the focus is on the CSS Editor (CQ-4290720).
+
+* On [!UICONTROL Basic] tab of [!UICONTROL Edit Image Preset] when navigating in Form mode, the screen readers now narrate the labels for various edit fields and options (CQ-4290717).
+
+* Screen readers now narrate the role and state (selected or not selected) for user interface options in the left navigation on assets' details page (CQ-4290709).
+
+* Screen readers now correctly narrate the state (selected or not selected) and link for the image toggles in the [!UICONTROL Content] tab of [!UICONTROL Create Interactive Video] page (CQ-4290707).
+
+* Screen readers now correctly narrate the name, role, and state of various segments in the video timeline scale when navigating using down arrow key on [!UICONTROL Create Interactive Video] page (CQ-4290706).
+
+* Screen readers now narrate the name, role, and default state (selected or not selected) and property when navigating the options in [!UICONTROL Create Interactive Video] page (CQ-4290704).
+
+* Screen readers now narrate the name, role, and default state (selected or not selected) of options in [!UICONTROL All Assets] and [!UICONTROL All Collections] options when navigating the [!UICONTROL Publish] page (CQ-4290705).
+
+* Error messages are now displayed and announced when an an unsupported video format (that is other than MP4) is uploaded on [!UICONTROL Create Interactive Video] page (CQ-4290700).
+
+* The contrast of the numbers (time in seconds) in the timeline scale on [!UICONTROL Create Interactive Video] page now meet minimum required luminosity ratio, so that users with limited perception of color can easily read (CQ-4290699).
+
+* Screen readers now announce the label for the [!UICONTROL Product Name] field when navigating the [!UICONTROL Create Interactive Video] page (CQ-4290697).
 
 ### Platform {#platform-65100}
 
