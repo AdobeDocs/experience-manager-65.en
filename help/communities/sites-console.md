@@ -125,7 +125,7 @@ The Design panel contains 2 sub-panels for selecing the theme and branding banne
 
 ![sitetheme](assets/sitetheme.png)
 
-The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes may be selected to style the selected community site template, or a Bootstrap theme may be uploaded.
+The framework uses `Twitter Bootstrap` to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes may be selected to style the selected community site template, or a Bootstrap theme may be uploaded.
 
 When selected, the theme will be overlayed with an opaque blue checkmark.
 
