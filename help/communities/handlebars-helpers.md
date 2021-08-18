@@ -445,8 +445,6 @@ NOTE: this may return an empty string
 
 ## Handlebars.js Basic Overview {#handlebars-js-basic-overview}
 
-A quick overview of helper functions from [Handlebars.js documentation](https://handlebarsjs.com/expressions.html):
-
 * A Handlebars helper call is a simple identifier (the *name* of the helper), followed by zero or more space-separated parameters.
 * Parameters may be a simple String, number, boolean, or JSON object, as well as an optional sequence of key-value pairs (hash arguments) as the last parameter(s).
 * The keys in hash arguments must be simple identifiers.
