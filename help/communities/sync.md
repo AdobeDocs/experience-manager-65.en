@@ -160,7 +160,7 @@ This configuration is used to configure the data you want to sync across publish
 
 To configure the data (node paths) to synchronize:
 
-1. Sign in with administrator privileges on your author instance.
+1. Sign in with administrator privileges on your publish instance.
 1. Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
@@ -183,7 +183,7 @@ If changing the membership of a group in one publisher does not update its membe
 
 To ensure member synchronization:
 
-1. Sign in with administrator privileges on your AEM author instance.
+1. Sign in with administrator privileges on your publish instance.
 1. Access the [Web Console](https://helpx.adobe.com/experience-manager/6-4/help/sites-deploying/configuring-osgi.html).
 
    For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
