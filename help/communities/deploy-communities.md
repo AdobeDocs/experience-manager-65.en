@@ -161,7 +161,8 @@ For the SRP collection (MSRP or DSRP) to support advanced multilingual search (M
 
 The advanced MLS download (also known as 'phasetwo') is available from the Adobe repository :
 
-* AEM-SOLR-MLS-phasetwo(
+* AEM-SOLR-MLS-phasetwo
+  
   To obtain the Advanced MLS package, see [AEM Advanced MLS](deploy-communities.md#aem-advanced-mls) in the deploy section of the documentation.
 
   * Version 1.2.40, April 6, 2016
