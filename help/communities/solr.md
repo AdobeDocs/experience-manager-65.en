@@ -42,7 +42,7 @@ Download and install Apache Solr:
 
 ## SolrCloud Mode {#solrcloud-mode}
 
-[SolrCloud](https://cwiki.apache.org/confluence/display/solr/SolrCloud) mode is recommended for production environments. When running in SolrCloud mode, SolrCloud must be installed and configured before installing Multilingual Search (MLS).
+[SolrCloud](https://solr.apache.org/guide/6_6/solrcloud.html) mode is recommended for production environments. When running in SolrCloud mode, SolrCloud must be installed and configured before installing Multilingual Search (MLS).
 
 The recommendation is to follow the SolrCloud instructions to install:
 
