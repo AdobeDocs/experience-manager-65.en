@@ -369,7 +369,7 @@ The document of record settings of a component are available under its propertie
 * **Display panel as table:** Setting the property displays panel as table in document of record if panel has less than 6 fields in it. Applicable for panel only.
 * **Exclude title from Document of Record:** Setting the property excludes title of the panel/table from document of record. Applicable for panel and table only.
 * **Exclude description from Document of Record:** Setting the property excludes description of the panel/table from document of record. Applicable for panel and table only.
-* **Pagination**: The following fields are available in the **[!UICONTROL Pagination]** section:
+* **[!UICONTROL Pagination]** > **[!UICONTROL Place]**: Determines where you select to place the panel.
   * **[!UICONTROL Place]** > **[!UICONTROL Following Previous]**: Places the panel after the previous object  in the parent panel.
   * **[!UICONTROL Place]** > **[!UICONTROL In Content Area]** > Name of content area: Places the panel in the specified content area.
   * **[!UICONTROL Place]** > **[!UICONTROL Top of Next Content Area]**: Places the panel at the top of the next content area.
@@ -377,13 +377,13 @@ The document of record settings of a component are available under its propertie
   * **[!UICONTROL Place]** > **[!UICONTROL On Page]** > Name of master page: Places the panel on the specified page. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
   * **[!UICONTROL Place]** > **[!UICONTROL Top of Next Page]**: Places the panel at the top of the next page. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
   * **[!UICONTROL Place]** > **[!UICONTROL Top of Page]** > Name of master page: Places the panel at the top of the page, when the specified page is rendered. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
-* **After**: Determines which area to fill after a panel is placed.The following fields are available in the **[!UICONTROL After]** section:
+* **[!UICONTROL Pagination]** > **[!UICONTROL After]**: Determines which area to fill after a panel is placed.The following fields are available in the **[!UICONTROL After]** section:
   * **[!UICONTROL After]** > **[!UICONTROL Continue Filling Parent]**: Continues merging data for all objects remaining to be filled in the parent panel.
   * **[!UICONTROL After]** > **[!UICONTROL Go to Next Content Area]**: Starts filling the next content area after placing the panel.
   * **[!UICONTROL After]** > **[!UICONTROL Go To Content Area]** > Name of content area: Starts filling the specified content area after placing the panel.
   * **[!UICONTROL After]** > **[!UICONTROL Go To Next Page]**: Starts filling the next page after placing the panel.
   * **[!UICONTROL After]** > **[!UICONTROL Go To Page]** > Name of page: Starts filling the specified page after placing the panel.
-* **Overflow**: Sets an overflow for a panel or a table that spans pages. The following fields are available in the **[!UICONTROL Overflow]** section:
+* **[!UICONTROL Pagination]** > **[!UICONTROL Overflow]**: Sets an overflow for a panel or a table that spans pages. The following fields are available in the **[!UICONTROL Overflow]** section:
   * **[!UICONTROL Overflow]** > **[!UICONTROL None]**: Starts filling the next page. If a page break is not inserted automatically, [!DNL AEM Forms] adds a page break.
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go to Content Area]** > Name of content area: Starts filling the specified content area.
   * **[!UICONTROL Overflow]** > **[!UICONTROL Go To Page]** > Name of page: Starts filling the specified page.
