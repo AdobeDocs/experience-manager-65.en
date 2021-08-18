@@ -23,6 +23,22 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: August, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.08.xx|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.08.xx.zip)|
+|CIF Core Components |1.14.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.14.0)|
+|CIF Venia Reference Site| 2021.08.xx|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.xx)|
+
+### What's New {#what-is-new-august}
+
+* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
+
+  ![New Category Picker](/help/assets/CIF/category-picker.png)
+
+* Better A11Y support for CIF Core Components
+
 ## Release Date: July, 2021
 
 |Component| Version| Details|
