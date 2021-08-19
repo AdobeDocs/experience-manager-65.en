@@ -178,9 +178,18 @@ The following issues are fixed in [!DNL Assets]:
 
 ### Platform {#platform-65100}
 
+The following enhancements are delivered in this service pack:
+
+* When a user selects an item in the Tree view, the screen readers announce the selection and the toolbar options displayed at the top (NPR-36504).
+* Some text and control names are easier to read for users with vision issues, as the luminosity ratio meets the minimum required ratio of 4.5:1 (NPR-36503).
+* When a user uses the calendar controls, the screen reader narrates the descriptive date, month, and weekday information. When a user uses calendar shortkey, a screen reader narrates the change in date, month, and year (NPR-36498).
+* Support provided to execute custom JavaScript Clientlibs using ECMAScript 6 features without complying with strict mode. Specifically, `emitUseStrict` flag is added to the `GCCScriptProcessor` (NPR-36411).
+
+The following bug fixes are part of this service pack:
+
 * Custom health checks run frequently than scheduled (NPR-36985).
 * The `Resourceresolver map` method returns incorrect result for alias pages (NPR-36767).
-* Experience Manager start-up is delayed due to loading workflows (NPR-36615).
+* [!DNL Experience Manager] start-up is delayed due to loading workflows (NPR-36615).
 
 ### Integrations {#integrations-65100}
 
