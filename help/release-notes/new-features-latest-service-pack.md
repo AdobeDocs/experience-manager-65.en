@@ -1,11 +1,11 @@
 ---
 title: What is new in [!DNL Experience Manager] 6.5 Service Pack 10
-description: What's new in [!DNL Experience Manager] 6.5 Service Pack 10
+description: What is new in [!DNL Experience Manager] 6.5 Service Pack 10
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 ---
-# What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9 {#aem-whats-new-service-pack}
+# What is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9 {#aem-whats-new-service-pack}
 
 ![Whats-new](assets/whatsnew.jpeg)
 
@@ -16,6 +16,11 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
+* [!DNL Experience Manager] directly displays a list of all the content models under a folder without content authors having to navigate through the file structure. This requires fewer clicks and improves authoring efficiency.
+
+* Pathfield in [!DNL Sites] editor allows authors to drag assets from [!DNL Content Finder].
+
+* Platform provides a few accessibility enhancements. See [Platform updates](/help/release-notes/sp-release-notes.md#platform-65100).
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
@@ -23,9 +28,11 @@ This article highlights the features included in the latest Service Pack, [key f
 
 * A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
+* When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
+
 ### [!DNL Dynamic Media] {#assets-dynamic-media}
 
-* Many accessibility enhancements are done in [!DNL Dynamic Media] client so that a screen reader can present a more appropriate and useful description of the action or user interface.
+* Many accessibility enhancements are done in [!DNL Dynamic Media] client so that a screen reader can present a more appropriate and useful description of the action or user interface. See [[!DNL Dynamic Media] updates](/help/release-notes/sp-release-notes.md#dynamic-media-65100).
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
