@@ -303,8 +303,6 @@ The import process can take a long time, so as an extension to the Product Synch
        /etc/commerce/products
    ```
 
-   ` [](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
-
 ## Configure the Catalog Importer {#configure-the-catalog-importer}
 
 The hybris catalog can be imported into AEM, using the batch importer for hybris catalogs, categories and products.

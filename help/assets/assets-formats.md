@@ -209,14 +209,10 @@ In addition to the above functionality, consider the following:
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | &minus;|
 | M4V | Apple iTunes | H264/AVC |&minus; |
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
-| WebM | WebM |Google VP8 |&minus; |
+| WebM | WebM | Google VP8 |&minus; |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | &minus;|
-| MXF | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro |&minus; |
-| MTS | AVCHD | H264/AVC |&minus; |
 | MKV | Matroska | H264/AVC | &minus;|
-| R3D, RM | Red Raw Video | MJPEG 2000 |&minus; |
 | RAM, RM | RealVideo | Unsupported | Real G2 (RV20), Real 8 (RV30), Real 10 (RV40) |
-| FLAC | Native Flac | Free lossless audio codec | &minus;|
 | MJ2 | Motion JPEG 2000 | Motion JPEG 2000 codec |&minus;|
 
 ## Supported archive formats {#supported-archive-formats}

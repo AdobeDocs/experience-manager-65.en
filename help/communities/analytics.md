@@ -147,7 +147,7 @@ To enable Video Heartbeat reporting after [configuring the Analytics report suit
 * Enable [Analytics for a community site](#enable-analytics-for-a-community-site)
 * Associate the `Marketing Cloud Org Id` with the community site
 
-The `Marketing Cloud Org Id` may be entered at the time of [community site creation](/help/communities/sites-console.md#enablement) or later by [modifying](/help/communities/sites-console.md#modifying-site-properties) the community site properties. [](#aem-analytics-cloud-service-configuration)
+The `Marketing Cloud Org Id` may be entered at the time of [community site creation](/help/communities/sites-console.md#enablement) or later by [modifying](/help/communities/sites-console.md#modifying-site-properties) the community site properties.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 

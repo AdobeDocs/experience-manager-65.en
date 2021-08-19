@@ -198,7 +198,7 @@ For example, go to **author** instance, open the `engage` folder in the [Communi
 
 When the community member has moderation privileges, then the Moderation link will be visible and selecting it will display the community content posted and allow it to be [moderated](/help/communities/moderate-ugc.md) in a manner similar to the [moderation console](/help/communities/moderation.md) in the author environment.
 
-Use the browser's back button to return to the published site. Most consoles are not accessible from global navigation in the publish environment. [](/help/communities/moderate-ugc.md)
+Use the browser's back button to return to the published site. Most consoles are not accessible from global navigation in the publish environment.
 
 ![moderationlink](assets/moderationlink.png)
 
