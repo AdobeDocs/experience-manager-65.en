@@ -28,12 +28,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 * Adjust the sequence of each list item using this order as a guide: Foundation, Sites, Assets, Forms, Commerce, and Screens.
 -->
 
-* Experience Manager Sites introduces a self-managed user interface to configure custom `GraphQL` endpoints for their external tenants (SITES-1753).
-
-* Additional validation in `Content Fragrament` editor to ensure uniqueness of a `Content Fragment` within the same `Content Fragment` model (SITES-1730).
-
-* Ability to manage publication for `Models`. When selecting a `Model` and publishing it, a popup displays the list of all the referenced `Models` to be published (SITES-1496).
-
 * [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
 * When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
@@ -46,21 +40,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 ### [!DNL Sites] {#sites-65100}
 
-* When opening an existing page (Page v3 component version), the page Properties dialog does not opens and a `NullPointerException` is logged (SITES-1830).
-* Adding indexes on unwanted elements and variations in `ContentFragmentReferenceResolver` introduces some new queries. It impacts performance of Experience Manager server (SITES-1822).
-* The system does not accepts a valid `Content Fragement` defined in `Allowed Content Fragment Models` as a `Default Value` if the selected content fragment is not the first one in the list of allowed models. Experience Manager displays the following error message (SITES-1805).
-  
-  ```This fragment is not of type <model-path>```
-
-* When creating a new `Content Fragment` in `Content Fragment` editor, the user is able to create `Content Fragment` for a disabled model (SITES-1723).
-
-* `RTE Link` plugin currently allows to select `Content Fragments` along with all other types of assets (SITES-1537).
-
-* When creating a new Content Fragment using the inline wizard, the `Allowed Content Fragment Models` are not visible in the select model list (SITES-1522).
-
-* When a `Model` type is selected on the `Model Editor` page, `Edit Content Fragement` button appears on the `Fragment Reference Properties` sheet (SITES-1485).
-
-* When adding a reference to the `Fragment Reference` field in `Content Fragment Model Editor`, only the models that are `enabled` are allowed. If the parent model is in `draft` state, it is not allowed to refer it to other `draft` models (SITES-1477).
+* The focus shift to another field when typing in the **[!UICONTROL Default Value]** field under the **[!UICONTROL Properties]** tab of the Content Fragment Editor (NPR-36992).
 
 ### [!DNL Assets] {#assets-65100}
 
@@ -95,6 +75,8 @@ The following issues are fixed in [!DNL Assets]:
 * When using the Apache Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
 
 * All DRM-protected assets are downloaded and user selection to download specific asset is not followed (CQ-4327422).
+* Cannot drag assets to `pathfield` in Touch UI (NPR-36849).
+* Asset detail panel disappears when selecting an asset in the Column view (NPR-36667).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
@@ -162,27 +144,30 @@ The following issues are fixed in [!DNL Assets]:
 
 ### Platform {#platform-65100}
 
-* TBD
+* Custom health checks run frequently than scheduled (NPR-36985).
+* The `Resourceresolver map` method returns incorrect result for alias pages (NPR-36767).
+* Experience Manager start-up is delayed due to loading workflows (NPR-36615).
 
 ### Integrations {#integrations-65100}
 
-* TBD
+* Experience Manager becomes unresponsive when the primary MongoDB node switches to another node (NPR-36566).
+* [!DNL Sling content distribution] fails when performing the collection member delete operation (NPR-36521, CQ-4323578).
 
-### Projects {#projects-65100}
+### User Interface {#user-interface-65100}
 
-* TBD
-
-### Screens {#screens-65100}
-
-* TBD
+* Asset and Site references are not displayed in the **[!UICONTROL References]** side-panel (GRANITE-35078, GRANITE-34892).
 
 ### Commerce {#commerce-65100}
 
-* TBD
+* The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
+* New products are marked as modified on Catalog rollout (NPR-36666).
+* Product page is not recreated when you recreate a deleted product (NPR-36665).
+* Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
+* The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
 
 ### Translation projects {#translation-65100}
 
-* TBD
+* Extra sub-pages in a language copy of a multi-translation project are deleted (NPR-36622).
 
 ### Workflow {#workflow-65100}
 
