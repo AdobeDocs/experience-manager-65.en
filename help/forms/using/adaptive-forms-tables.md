@@ -124,7 +124,7 @@ You can define the style for a table by using the Style mode in the page toolbar
 
 >[!NOTE]
 >
->You can change the color theme for header and body rows by changing the values of LESS variables. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md) [](/help/forms/using/creating-custom-adaptive-form-themes.md).
+>You can change the color theme for header and body rows by changing the values of LESS variables. For more information, see [Themes in AEM Forms](/help/forms/using/themes.md).
 
 ## Add or delete a row dynamically {#add-or-delete-a-row-dynamically}
 

@@ -121,7 +121,7 @@ When creating a new editable template you:
     * Or directly at: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Can [create a folder for the templates](#creating-a-template-folder-admin) if necessary
-* [Create a new template](#creatinganewtemplateauthor), which will initially be empty [](#templatedefinitions)
+* [Create a new template](#creatinganewtemplateauthor), which will initially be empty
 
 * [Define additional properties](#definingtemplatepropertiesauthor) for the template if required
 * [Edit the template](#editingtemplates) to define the:
