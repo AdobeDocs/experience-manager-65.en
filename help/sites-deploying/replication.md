@@ -353,7 +353,7 @@ From the Tools tab in the author environment you can configure replication agent
 
 >[!NOTE]
 >
->When a dispatcher handles HTTP requests for author or publish instances, the HTTP request from the replication agent must include the PATH header. In addition to the following procedure, you must add the PATH header to the dispatcher list of client headers. (See [/clientheaders (Client Headers)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders). [](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
+>When a dispatcher handles HTTP requests for author or publish instances, the HTTP request from the replication agent must include the PATH header. In addition to the following procedure, you must add the PATH header to the dispatcher list of client headers. (See [/clientheaders (Client Headers)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. Access the **Tools** tab in AEM.
