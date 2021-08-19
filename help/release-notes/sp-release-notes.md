@@ -42,6 +42,40 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 * The focus shift to another field when typing in the **[!UICONTROL Default Value]** field under the **[!UICONTROL Properties]** tab of the Content Fragment Editor (NPR-36992).
 
+* While filtering content fragment models under a specified path, omnisearch returns all nodes with cq:Template instead of returning paths and nodes only for the content fragment model (SITES-1453).
+* Content authors have to browse the conf structure to get to the list of content models to select the content model filter. This involves multiple clicks and lowers authoring efficiency (SITES-1401).
+* Content Fragments return null as the status of folders (SITES-1157).
+* Experience manager does not provide the ability to disable and enable Content Fragment Models (SITES-1088).
+* When a user moves, rename, or deletes content fragments or media assets, the referenced content fragments are not automatically updated (SITES-196).
+* Pasting components from one page to another produces JavaScript errors (NPR-37030).
+* When page properties are viewed quickly, Page Properties for a different page are opened (NPR-37025).
+* The Content Fragment allows the Content Fragment to reference itself. The picker does not support the operation (NPR-36993).
+* When a user upgrades to Service Pack 9, the moving folder operation starts failing and errors are returned (SITES-1481).
+* While adjusting the width of the component in the layout container on edit mode, a flicker is observed (NPR-36961).
+* On promoting a launch, the changes in the promoted launch are double rolled out to the other launches. If a user promotes the double rolled out launch, the doubled contents will also be reflected on the source page (NPR-36893).
+* Images show a gray edge with resized using the Core Component’s AdaptiveImageServlet (NPR-36879).
+* AEM Sites Admin UI with a high number of templates results in extremely slow navigation (NPR-36870).
+* When a user upgrades to Service Pack 9, Sites pages stop working (NPR-36857).
+* Unclosed ResourceResolver at com.adobe.granite.contexthub.impl.ContextHubImpl result in unexpected results (NPR-36853).
+* On synchronizing a single live copy from blueprint page properties, all other live copies are also synchronized (NPR-36829, NPR-36522).
+* Pathfield does not allow drag and drop in Touch UI (NPR-36790).
+* When only .xls mime type is used, the file upload function doesn't work as expected (NPR-36785).
+* New tags with pascal case and all upper case words are not displayed in the tag field within Content Fragments (NPR-36742).
+* The Single Text Element option when adding a content fragment causes text to be missing and creates odd formatting related to lists and nested lists (NPR-36565).
+* When an author annotates any component on a page, deletes the component, and performs an undo on the delete operation, an error is encountered when attempting to view the Timeline data for the page in the sites console (NPR-36528).
+* Page properties bulk editor's "Save & Close" button saves changes but does not close the editor (NPR-36527).
+* When a user attempts to drag and drop a new Text component to a page, the component immediately disappears (NPR-36442).
+* When a user types in an ad hoc tag that includes space (the tag that does not exist on the system) and hits enter, the tag appears under the field but when the Content Fragment is saved and re-opened, the ad hoc tag disappears (NPR-36441).
+* The template cannot be deleted when the instance is accessed via the dispatcher (NPR-36385).
+* When a page is moved, a manual refresh of the browser is required to render the changes (NPR-36381).
+* When selecting a component, you can cut or copy it with Ctrl-X or Ctrl-C (and ⌘X/⌘C on Mac). When you click another component, you can paste with the toolbar, but not the keyboard (Ctrl-V or ⌘V) (NPR-36379).
+* When a user tries cut components using the scissor icon to move them somewhere else, a console error happens. Moreover, when pasting only one component gets moved (NPR-36378).
+* AEM has a query without index on WCM or notifications, it slows down performance (NPR-36303).
+* When the author restores the inheritance on the deleted inherited component there is only a checkbox to synchronize full page content after reverting inheritance, thus content authors are forced to sync the whole page even if the inheritance is restored only on one component which can cause unwanted content sync (NPR-34456, CQ-4310183).
+* Live Usages of a component on AEM Author is not showing all the occurrences. Some of the components are used in more than 1k pages but the report only pulls around 40 (CQ-4323724).
+* When we have a site structure that has lot of subpages, loading of the subpages in column view takes more time in AEM 6.5.8 as compared to AEM 6.4.8.2 (CQ-4322766).
+* Uncheck 'All' does not work on the 'Rollout Page' option (NPR-37070).                                 
+
 ### [!DNL Assets] {#assets-65100}
 
 The following issues are fixed in [!DNL Assets]:
