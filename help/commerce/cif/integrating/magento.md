@@ -8,6 +8,17 @@ exl-id: f843784c-5ff7-41d1-97c5-13facb8459b2
 
 The Experience Manager and Adobe Commerce (Magento) are seamlessly integrated using the Commerce Integration Framework (CIF). CIF enables AEM to directly access and communicate with the commerce instance using Adobe Commerce's [GraphQL APIs](https://devdocs.magento.com/guides/v2.4/graphql/).
 
+>[!NOTE]
+>
+> Minimum supported GraphQL API version is 2.3.5. Certain features are only supported in newer versions or just in the Adobe Commerce edition.
+
+>[!NOTE]
+>
+>GraphQL is currently used in two (separate) scenarios in Adobe Experience Manager (AEM) as a Cloud Service:
+>
+>* This scenario, where CIF communicates with commerce via GraphQL.
+>* [AEM Content Fragments work together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to deliver structured content for use in your applications](/help/assets/content-fragments/graphql-api-content-fragments.md).
+
 ## Architecture Overview {#overview}
 
 The overall architecture is as follows:
