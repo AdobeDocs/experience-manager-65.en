@@ -28,11 +28,19 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 * Adjust the sequence of each list item using this order as a guide: Foundation, Sites, Assets, Forms, Commerce, and Screens.
 -->
 
-* [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
+* [!DNL Experience Manager] extends the [!DNL Connected Assets] functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
 * When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
 
 * A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
+
+* [!DNL Dynamic Media] provides many accessibility enhancements for Viewers. See [[!DNL Dynamic Media] updates](#dynamic-media-65100).
+
+* [!DNL Experience Manager] directly displays a list of all the content models under a folder without content authors having to navigate through the file structure. This requires fewer clicks and improves authoring efficiency.
+
+* Pathfield in [!DNL Sites] editor allows authors to drag assets from [!DNL Content Finder].
+
+* Platform provides a few accessibility enhancements. See [Platform updates](#platform-65100).
 
 For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -42,9 +50,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 * The focus shift to another field when typing in the **[!UICONTROL Default Value]** field under the **[!UICONTROL Properties]** tab of the Content Fragment Editor (NPR-36992).
 
-* While filtering content fragment models under a specified path, omnisearch returns all nodes with cq:Template instead of returning paths and nodes only for the content fragment model (SITES-1453).
-* Content authors have to browse the conf structure to get to the list of content models to select the content model filter. This involves multiple clicks and lowers authoring efficiency (SITES-1401).
-* Content Fragments return null as the status of folders (SITES-1157).
+* While filtering [!DNL Content Fragment] models under a specified path, [!DNL Experience Manager] search returns all nodes with `cq:Template` instead of returning paths and nodes only for the [!DNL Content Fragment] model (SITES-1453).
+* Content Fragments return `null` as the status of folders (SITES-1157).
 * Experience manager does not provide the ability to disable and enable Content Fragment Models (SITES-1088).
 * When a user moves, rename, or deletes content fragments or media assets, the referenced content fragments are not automatically updated (SITES-196).
 * Pasting components from one page to another produces JavaScript errors (NPR-37030).
@@ -52,27 +59,26 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 * The Content Fragment allows the Content Fragment to reference itself. The picker does not support the operation (NPR-36993).
 * When a user upgrades to Service Pack 9, the moving folder operation starts failing and errors are returned (SITES-1481).
 * While adjusting the width of the component in the layout container on edit mode, a flicker is observed (NPR-36961).
-* On promoting a launch, the changes in the promoted launch are double rolled out to the other launches. If a user promotes the double rolled out launch, the doubled contents will also be reflected on the source page (NPR-36893).
-* Images show a gray edge with resized using the Core Component’s AdaptiveImageServlet (NPR-36879).
-* AEM Sites Admin UI with a high number of templates results in extremely slow navigation (NPR-36870).
-* When a user upgrades to Service Pack 9, Sites pages stop working (NPR-36857).
-* Unclosed ResourceResolver at com.adobe.granite.contexthub.impl.ContextHubImpl result in unexpected results (NPR-36853).
+* On promoting a launch, the changes in the promoted launch are double rolled out to the other launches. If a user promotes the double rolled out launch, the doubled contents is reflected on the source page (NPR-36893).
+* [!DNL Experience Manager] adds a gray border or edge to some PNG images with transparency if you add the images to the page with the Image Core Component or if you resize using the Foundation Image component (NPR-36879).
+* [!DNL Experience Manager Sites] Admin UI with a high number of templates results in slow navigation (NPR-36870).
+* When a user upgrades to Service Pack 9, [!DNL Sites] pages stop working (NPR-36857).
+* The `ContextHubImpl` method creates a `ResourceResolver` that is not closed. It leads to warning messages about long-running `ResourceResolver` and the service returns unexpected results at times (NPR-36853).
 * On synchronizing a single live copy from blueprint page properties, all other live copies are also synchronized (NPR-36829, NPR-36522).
-* Pathfield does not allow drag and drop in Touch UI (NPR-36790).
-* When only .xls mime type is used, the file upload function doesn't work as expected (NPR-36785).
+* When only XLS MIME type is used, the file upload function does not work as expected (NPR-36785).
 * New tags with pascal case and all upper case words are not displayed in the tag field within Content Fragments (NPR-36742).
 * The Single Text Element option when adding a content fragment causes text to be missing and creates odd formatting related to lists and nested lists (NPR-36565).
 * When an author annotates any component on a page, deletes the component, and performs an undo on the delete operation, an error is encountered when attempting to view the Timeline data for the page in the sites console (NPR-36528).
-* Page properties bulk editor's "Save & Close" button saves changes but does not close the editor (NPR-36527).
+* Page properties bulk editor's [!UICONTROL Save & Close] option saves changes but does not close the editor (NPR-36527).
 * When a user attempts to drag and drop a new Text component to a page, the component immediately disappears (NPR-36442).
 * When a user types in an ad hoc tag that includes space (the tag that does not exist on the system) and hits enter, the tag appears under the field but when the Content Fragment is saved and re-opened, the ad hoc tag disappears (NPR-36441).
 * The template cannot be deleted when the instance is accessed via the dispatcher (NPR-36385).
 * When a page is moved, a manual refresh of the browser is required to render the changes (NPR-36381).
-* When selecting a component, you can cut or copy it with Ctrl-X or Ctrl-C (and ⌘X/⌘C on Mac). When you click another component, you can paste with the toolbar, but not the keyboard (Ctrl-V or ⌘V) (NPR-36379).
+* When selecting a component, you can cut or copy it with Ctrl+X or Ctrl+C (and Command+X or Command+C on Mac). When you click another component, you can paste with the toolbar, but not the keyboard (Ctrl+V or Command+V) (NPR-36379).
 * When a user tries cut components using the scissor icon to move them somewhere else, a console error happens. Moreover, when pasting only one component gets moved (NPR-36378).
 * AEM has a query without index on WCM or notifications, it slows down performance (NPR-36303).
 * When the author restores the inheritance on the deleted inherited component there is only a checkbox to synchronize full page content after reverting inheritance, thus content authors are forced to sync the whole page even if the inheritance is restored only on one component which can cause unwanted content sync (NPR-34456, CQ-4310183).
-* Live Usages of a component on AEM Author is not showing all the occurrences. Some of the components are used in more than 1k pages but the report only pulls around 40 (CQ-4323724).
+* Live Usage of a component on Author instance does not display all the occurrences. Some components are used in more than 1000 pages but the report only displays about 40 pages (CQ-4323724).
 * When we have a site structure that has lot of subpages, loading of the subpages in column view takes more time in AEM 6.5.8 as compared to AEM 6.4.8.2 (CQ-4322766).
 * Uncheck 'All' does not work on the 'Rollout Page' option (NPR-37070).                                 
 
@@ -102,21 +108,21 @@ The following issues are fixed in [!DNL Assets]:
 
 * When a user is added as an owner of a child folder, then the user gets owner permission of its parent folder too and hence of the other children folders of the parent. Also, the user is not removed as owner of parent folder on attempting to remove it. (NPR-36801, CQ-4323737).
 
-* [!DNL Assets] generates an out of memory exception when you attempt to create subassets for compound assets, such as a PowerPoint presentation (NPR-36668).
+* [!DNL Assets] generates an out-of-memory exception when you attempt to create subassets for compound assets, such as a PowerPoint presentation (NPR-36668).
 
 * When users move an asset that is already used in a published sites page, then the sites page is published again even if the option to publish is not selected (NPR-36636, CQ-4323500).
 
 * When using the Apache Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
 
 * All DRM-protected assets are downloaded and user selection to download specific asset is not followed (CQ-4327422).
-* Cannot drag assets to `pathfield` in Touch UI (NPR-36849).
-* Asset detail panel disappears when selecting an asset in the Column view (NPR-36667).
+* Cannot drag assets to `pathfield` on the user interface (NPR-36849).
+* When you select an asset in the Column view, the asset details panel disappears (NPR-36667).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
 **Issues fixed**
 
-[!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fixes in [!DNL Dynamic Media].
+[!DNL Adobe Experience Manager] 6.5.10.0 [!DNL Assets] provides the following bug fix in [!DNL Dynamic Media].
 
 * Uploaded videos to [!DNL Experience Manager] display `Process failed` after `dynamicmedia_scene7` runmode is enabled and sync is disabled (CQ-4327791).
 
@@ -170,7 +176,7 @@ The following issues are fixed in [!DNL Assets]:
 
 * Screen readers now narrate the name, role, and default state (selected or not selected) of options in [!UICONTROL All Assets] and [!UICONTROL All Collections] options when navigating the [!UICONTROL Publish] page (CQ-4290705).
 
-* Error messages are now displayed and announced when an an unsupported video format (that is other than MP4) is uploaded on [!UICONTROL Create Interactive Video] page (CQ-4290700).
+* When you upload an unsupported video format (other than MP4) on [!UICONTROL Create Interactive Video] page, Experience Manager displays and announces error messages (CQ-4290700).
 
 * The contrast of the numbers (time in seconds) in the timeline scale on [!UICONTROL Create Interactive Video] page now meet minimum required luminosity ratio, so that users with limited perception of color can easily read (CQ-4290699).
 
@@ -182,7 +188,7 @@ The following enhancements are delivered in this service pack:
 
 * When a user selects an item in the Tree view, the screen readers announce the selection and the toolbar options displayed at the top (NPR-36504).
 * Some text and control names are easier to read for users with vision issues, as the luminosity ratio meets the minimum required ratio of 4.5:1 (NPR-36503).
-* When a user uses the calendar controls, the screen reader narrates the descriptive date, month, and weekday information. When a user uses calendar shortkey, a screen reader narrates the change in date, month, and year (NPR-36498).
+* When a user uses the calendar controls, the screen reader narrates the descriptive date, month, and weekday information. When a user uses calendar shortcut key, the screen reader narrates the change in date, month, and year (NPR-36498).
 * Support provided to execute custom JavaScript Clientlibs using ECMAScript 6 features without complying with strict mode. Specifically, `emitUseStrict` flag is added to the `GCCScriptProcessor` (NPR-36411).
 
 The following bug fixes are part of this service pack:
@@ -203,8 +209,8 @@ The following bug fixes are part of this service pack:
 ### Commerce {#commerce-65100}
 
 * The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
-* New products are marked as modified on Catalog rollout (NPR-36666).
-* Product page is not recreated when you recreate a deleted product (NPR-36665).
+* When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
+* When you recreate a deleted product, the product page is not recreated (NPR-36665).
 * Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
 * The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
 
