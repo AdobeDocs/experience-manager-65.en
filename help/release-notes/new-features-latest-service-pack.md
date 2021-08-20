@@ -24,11 +24,17 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
+* When users download assets shared with them as a link, they can choose to download the original assets, their renditions, or both.
+
+* When sharing assets and collections as link (using [!UICONTROL Link Sharing] dialog), users can choose whether to allow the download of original assets, or their renditions, or both using the shared link.<br/>
+![option to download original assets or renditions or both](assets/share-renditions.png)
+
+* Users can now specify the limit to the number of sub-assets to be generated for the compound assets.<br/>
+![limit the sub asset generation](assets/sub-asset-limit.png)
+
 * [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
 * A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
-
-* When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
 
 ### [!DNL Dynamic Media] {#assets-dynamic-media}
 

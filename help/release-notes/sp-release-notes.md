@@ -36,7 +36,9 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * [!DNL Experience Manager] extends the [!DNL Connected Assets] functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
+* When users download assets shared as a link (link share feature), the users can choose to download the original assets, their renditions, or both.
+
+* When sharing assets and collections as link, users can choose whether to allow the download of original assets, or their renditions, or both using the shared link.
 
 * A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -83,10 +85,19 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 * When selecting a component, you can cut or copy it with Ctrl+X or Ctrl+C (and Command+X or Command+C on Mac). When you click another component, you can paste with the toolbar, but not the keyboard (Ctrl+V or Command+V) (NPR-36379).
 * When a user tries cut components using the scissor icon to move them somewhere else, a console error happens. Moreover, when pasting only one component gets moved (NPR-36378).
 * AEM has a query without index on WCM or notifications, it slows down performance (NPR-36303).
+
 * When the author restores the inheritance on the deleted inherited component there is only a checkbox to synchronize full page content after reverting inheritance, thus content authors are forced to sync the whole page even if the inheritance is restored only on one component which can cause unwanted content sync (NPR-34456, CQ-4310183).
+
 * Live Usage of a component on Author instance does not display all the occurrences. Some components are used in more than 1000 pages but the report only displays about 40 pages (CQ-4323724).
+<<<<<<< Updated upstream
 * When there is a site structure that has lot of subpages, loading of the subpages in column view takes more time in AEM 6.5.8 as compared to AEM 6.4.8.2 (CQ-4322766).
 * Uncheck 'All' does not work on the 'Rollout Page' option (NPR-37070).                                 
+=======
+
+* When we have a site structure that has lot of subpages, loading of the subpages in column view takes more time in AEM 6.5.8 as compared to AEM 6.4.8.2 (CQ-4322766).
+
+* Uncheck 'All' does not work on the 'Rollout Page' option (NPR-37070).
+>>>>>>> Stashed changes
 
 ### [!DNL Assets] {#assets-65100}
 
@@ -121,7 +132,9 @@ The following issues are fixed in [!DNL Assets]:
 * When using the Apache Tika MIME type detection feature, the assets uploaded using the `AssetManager.createAsset` method leave a temporary file named `apache-tika-*.tmp` file in the temporary directory. This temporary file uses all the available free disk space (NPR-36545).
 
 * All DRM-protected assets are downloaded and user selection to download specific asset is not followed (CQ-4327422).
+
 * Cannot drag assets to `pathfield` on the user interface (NPR-36849).
+
 * When you select an asset in the Column view, the asset details panel disappears (NPR-36667).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
