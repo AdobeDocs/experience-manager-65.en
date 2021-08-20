@@ -206,14 +206,6 @@ The following bug fixes are part of this service pack:
 
 * Asset and Site references are not displayed in the **[!UICONTROL References]** side-panel (GRANITE-35078, GRANITE-34892).
 
-### Commerce {#commerce-65100}
-
-* The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
-* When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
-* When you recreate a deleted product, the product page is not recreated (NPR-36665).
-* Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
-* The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
-
 ### Translation projects {#translation-65100}
 
 * Extra subpages in a language copy of a multi-translation project are deleted (NPR-36622).
@@ -244,6 +236,14 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+### Commerce {#commerce-65100}
+
+* The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
+* When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
+* When you recreate a deleted product, the product page is not recreated (NPR-36665).
+* Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
+* The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
