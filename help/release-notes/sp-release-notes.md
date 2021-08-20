@@ -52,7 +52,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 
 * While filtering [!DNL Content Fragment] models under a specified path, [!DNL Experience Manager] search returns all nodes with `cq:Template` instead of returning paths and nodes only for the [!DNL Content Fragment] model (SITES-1453).
 * Content Fragments return `null` as the status of folders (SITES-1157).
-* Experience manager does not provide the ability to disable and enable Content Fragment Models (SITES-1088).
+* Experience Manager does not provide the ability to disable and enable Content Fragment Models (SITES-1088).
 * When a user moves, rename, or deletes content fragments or media assets, the referenced content fragments are not automatically updated (SITES-196).
 * Pasting components from one page to another produces JavaScript errors (NPR-37030).
 * When page properties are viewed quickly, Page Properties for a different page are opened (NPR-37025).
@@ -69,17 +69,17 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 * New tags with pascal case and all upper case words are not displayed in the tag field within Content Fragments (NPR-36742).
 * The Single Text Element option when adding a content fragment causes text to be missing and creates odd formatting related to lists and nested lists (NPR-36565).
 * When an author annotates any component on a page, deletes the component, and performs an undo on the delete operation, an error is encountered when attempting to view the Timeline data for the page in the sites console (NPR-36528).
-* Page properties bulk editor's [!UICONTROL Save & Close] option saves changes but does not close the editor (NPR-36527).
+* Page properties Bulk Editor's [!UICONTROL Save & Close] option saves changes but does not close the editor (NPR-36527).
 * When a user attempts to drag and drop a new Text component to a page, the component immediately disappears (NPR-36442).
-* When a user types in an ad hoc tag that includes space (the tag that does not exist on the system) and hits enter, the tag appears under the field but when the Content Fragment is saved and re-opened, the ad hoc tag disappears (NPR-36441).
-* The template cannot be deleted when the instance is accessed via the dispatcher (NPR-36385).
+* When a user types in an ad hoc tag that includes space (the tag that does not exist on the system) and hits enter, the tag appears under the field but when the Content Fragment is saved and reopened, the ad hoc tag disappears (NPR-36441).
+* The template cannot be deleted when the instance is accessed via the Dispatcher (NPR-36385).
 * When a page is moved, a manual refresh of the browser is required to render the changes (NPR-36381).
 * When selecting a component, you can cut or copy it with Ctrl+X or Ctrl+C (and Command+X or Command+C on Mac). When you click another component, you can paste with the toolbar, but not the keyboard (Ctrl+V or Command+V) (NPR-36379).
 * When a user tries cut components using the scissor icon to move them somewhere else, a console error happens. Moreover, when pasting only one component gets moved (NPR-36378).
 * AEM has a query without index on WCM or notifications, it slows down performance (NPR-36303).
 * When the author restores the inheritance on the deleted inherited component there is only a checkbox to synchronize full page content after reverting inheritance, thus content authors are forced to sync the whole page even if the inheritance is restored only on one component which can cause unwanted content sync (NPR-34456, CQ-4310183).
 * Live Usage of a component on Author instance does not display all the occurrences. Some components are used in more than 1000 pages but the report only displays about 40 pages (CQ-4323724).
-* When we have a site structure that has lot of subpages, loading of the subpages in column view takes more time in AEM 6.5.8 as compared to AEM 6.4.8.2 (CQ-4322766).
+* When there is a site structure that has lot of subpages, loading of the subpages in column view takes more time in AEM 6.5.8 as compared to AEM 6.4.8.2 (CQ-4322766).
 * Uncheck 'All' does not work on the 'Rollout Page' option (NPR-37070).                                 
 
 ### [!DNL Assets] {#assets-65100}
@@ -216,7 +216,7 @@ The following bug fixes are part of this service pack:
 
 ### Translation projects {#translation-65100}
 
-* Extra sub-pages in a language copy of a multi-translation project are deleted (NPR-36622).
+* Extra subpages in a language copy of a multi-translation project are deleted (NPR-36622).
 
 ### Workflow {#workflow-65100}
 
@@ -226,7 +226,7 @@ The following bug fixes are part of this service pack:
 
 * Community site pages are opening in `LoggedIn` state for anonymous guest users (NPR-36908). 
 
-* When there are more than one page in the **[!UICONTROL Community]** > **[!UICONTROL Ideas]** > **[!UICONTROL Comments]** page, the page navigation does not work (NPR-36541). 
+* When there is more than one page in the **[!UICONTROL Community]** > **[!UICONTROL Ideas]** > **[!UICONTROL Comments]** page, the page navigation does not work (NPR-36541). 
 
 <!--
 Need to verify with Engineering, the status is currently showing as Resolved
@@ -244,7 +244,6 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
->* You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments.
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -302,7 +301,7 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+<!--### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -326,7 +325,7 @@ For information about installing the cumulative installer for Experience Manager
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.-->
 
 ### UberJar {#uber-jar}
 
@@ -360,7 +359,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 ## Known issues {#known-issues}
 
-* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. Restart the instance to resolve the issue.
+* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. To resolve the issue, restart the instance.
 
 * If you install [!DNL Experience Manager] 6.5 Service Pack 5 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:

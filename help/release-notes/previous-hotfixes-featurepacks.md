@@ -277,7 +277,6 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
->* You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments.
 
 **Adaptive Forms**
 
