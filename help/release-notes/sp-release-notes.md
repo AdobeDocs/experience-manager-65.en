@@ -28,6 +28,12 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 * Adjust the sequence of each list item using this order as a guide: Foundation, Sites, Assets, Forms, Commerce, and Screens.
 -->
 
+* Enhanced Content Fragment Models and Editor.
+
+* [!DNL Experience Manager Launches] hierarchy management & future preview.
+
+* New GraphQL API for Content Fragment delivery.
+
 * [!DNL Experience Manager] extends the [!DNL Connected Assets] functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
 * When users download assets shared as a link (link share feature), the users can choose to download the original assets, its renditions, or both.
