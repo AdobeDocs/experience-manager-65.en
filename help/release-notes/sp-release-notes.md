@@ -23,8 +23,8 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.10.0 are:
 
 <!-- TBD for Anuj: 
-* Should ticket numbers be mentioned in enhancements? 
-* Should these enhancements be mentioned in the new features article?
+* Should ticket numbers be mentioned in enhancements? Yes for enhancements but no ticket numbers for key highlights.
+* Should these enhancements be mentioned in the new features article? - Yes, they should be but at the end it should be PM's call.
 * Adjust the sequence of each list item using this order as a guide: Foundation, Sites, Assets, Forms, Commerce, and Screens.
 -->
 
@@ -220,7 +220,7 @@ The following bug fixes are part of this service pack:
 
 ### Workflow {#workflow-65100}
 
-* TBD
+* If the server receives an out-of-office message, it reports memory alerts and stops responding (NPR-36768).
 
 ### [!DNL Communities] {#communities-65100}
 
