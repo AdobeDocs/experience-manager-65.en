@@ -16,7 +16,7 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-* [!DNL Experience Manager] directly displays a list of all the content models under a folder without content authors having to navigate through the file structure. This requires fewer clicks and improves authoring efficiency.
+* [!DNL Experience Manager] directly displays a list of all the content models under a folder without content authors having to navigate through the file structure. The functionality now requires fewer clicks and improves authoring efficiency.
 
 * Pathfield in [!DNL Sites] editor allows authors to drag assets from [!DNL Content Finder].
 
@@ -29,7 +29,7 @@ This article highlights the features included in the latest Service Pack, [key f
 * When sharing assets and collections as link (using [!UICONTROL Link Sharing] dialog), users can choose whether to allow the download of original assets, or their renditions, or both using the shared link.<br/>
 ![option to download original assets or renditions or both](assets/share-renditions.png)
 
-* Users can now specify the limit to the number of sub-assets to be generated for the compound assets.<br/>
+* Users can now specify the limit to the number of subassets to be generated for the compound assets.<br/>
 ![limit the sub asset generation](assets/sub-asset-limit.png)
 
 * [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
@@ -117,7 +117,7 @@ You can now select styles within the component dialog using the enhanced Style S
 
    ![configuration to change email IDs to lowercase in ACP response from [!DNL Experience Manager]](assets/email-lowcase-config.png)
 
-* Contrast of text and icons against the background is enhanced for various features. This implementation of WCAG guidelines makes [!DNL Assets] more accessible for users with limited vision and perception of color. See [accessibility enhancements in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590) (6.5.9.0).
+* Contrast of text and icons against the background is enhanced for various features. This implementation of Web Content Accessibility Guidelines (WCAG) guidelines makes [!DNL Assets] more accessible for users with limited vision and perception of color. See [accessibility enhancements in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590) (6.5.9.0).
 * When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency (6.5.8.0).
 
 * When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages (6.5.8.0).
@@ -219,7 +219,7 @@ A new sortable column for created date of assets is added in DAM list view and o
   * Contrast (with background) of text, placeholder text, and controls in various editors.
   * Accessibility and narration by screen readers.
 
-* Deliver best quality images efficiently on devices with high resolution displays and constrained network bandwidth, with Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization. See [Smart imaging FAQs](/help/assets/imaging-faq.md) (6.5.9.0).
+* Deliver best quality images efficiently on devices with high-resolution displays and constrained network bandwidth, with Smart Imaging DPR (Device Pixel Ratio) and network bandwidth optimization. See [Smart imaging FAQs](/help/assets/imaging-faq.md) (6.5.9.0).
 
 * [!DNL Dynamic Media] delivery (`fmt` URL modifier) now supports next-generation image format AVIF (AV1 Image format). For more details and timeline, see [image serving and rendering API fmt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html) (6.5.9.0).
 
@@ -243,7 +243,7 @@ Smart imaging uses each user's unique viewing characteristics to automatically s
 
 #### Smart crop in video profiles for Dynamic Media (6.5.3.0) {#smart-crop-video}
 
-Smart crop for video–an optional feature available in Video Profiles– is a tool that uses the power of artificial intelligence in Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video that you have uploaded, regardless of size. See [About using smart crop in video profiles](../assets/video-profiles.md).
+Smart crop for video – an optional feature available in Video Profiles – uses Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video, regardless of size. See [about using smart crop in video profiles](../assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
@@ -257,11 +257,11 @@ You can now send a notification email to a group email address using the Assign 
 
 #### Ability to retrieve an Interactive Communication draft after modifying the source Interactive Communication (6.5.9.0) {#retrieve-draft-after-source-modifications}
 
-You can now retrieve an interactive communication saved as a draft after you make changes to the source Interactive Communication.
+You can now retrieve an interactive communication saved as a draft after you change the source Interactive Communication.
 
 #### Set custom domain name for loading, rendering, and validating the reCAPTCHA service (6.5.9.0) {#set-custom-domain-name-recaptcha}
 
-reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can now modify the settings to set `https://www.google.com/` or any custom domain name for loading, rendering, and validating the reCAPTCHA service.
+reCAPTCHA service uses `https://www.recaptcha.net/` as the default domain. You can now modify the settings to set `https://www.google.com/` or any custom domain name to load, render, and validate the reCAPTCHA service.
 
 #### Input data enhancements for [!UICONTROL Invoke Form Data Model Service] workflow step (6.5.9.0) {#input-data-enhancements-fdm}
 
