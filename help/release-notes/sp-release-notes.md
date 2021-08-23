@@ -27,6 +27,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 * Should these enhancements be mentioned in the new features article? - Yes, they should be but at the end it should be PM's call.
 * Adjust the sequence of each list item in what's new and each heading using this order: Foundation, Sites, Assets, Forms, Commerce, and Screens.
 * Delete these comments after a triaging/resolving.
+
+Anuj: Please feel free to delete the comment if all queries are answered. Thanks!
 -->
 
 * **Enhanced [!DNL Content Fragment] Models and Editor**: You can now create complex and custom models for structured content using nested [!DNL Content Fragment] models. Content structures are modularized into basic elements that are modeled as sub-fragments. Higher-level fragments reference these sub-fragments. More data type enhancements such as advanced validation rules further enhance the flexibility of content modeling with [!DNL Content Fragments]. The [!DNL Experience Manager] [!DNL Content Fragment] editor supports nested fragment structures in a common editor session, with enhancements such as structure tree view and tabbed breadcrumb navigation through fragment hierarchies.
