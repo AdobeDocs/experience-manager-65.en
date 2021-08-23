@@ -355,7 +355,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.9-1.0</version>
+     <version>6.5.10.0</version>
      <scope>provided</scope>
 </dependency>
 ```
