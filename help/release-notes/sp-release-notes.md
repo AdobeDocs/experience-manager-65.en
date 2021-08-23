@@ -16,20 +16,11 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 | Date     | August 26, 2021                |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.9-1.0.zip) |
 
-## What is included in [!DNL Adobe Experience Manager] 6.5.10.0 {#what-s-included-in-aem}
+## What is included in [!DNL Adobe Experience Manager] 6.5.10.0 {#what-is-included-in-aem}
 
 [!DNL Adobe Experience Manager] 6.5.10.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.10.0 are:
-
-<!-- TBD for Anuj: 
-* Should ticket numbers be mentioned in enhancements? Yes for enhancements but no ticket numbers for key highlights.
-* Should these enhancements be mentioned in the new features article? - Yes, they should be but at the end it should be PM's call.
-* Adjust the sequence of each list item in what's new and each heading using this order: Foundation, Sites, Assets, Forms, Commerce, and Screens.
-* Delete these comments after a triaging/resolving.
-
-Anuj: Please feel free to delete the comment if all queries are answered. Thanks!
--->
 
 * **Enhanced [!DNL Content Fragment] Models and Editor**: You can now create complex and custom models for structured content using nested [!DNL Content Fragment] models. Content structures are modularized into basic elements that are modeled as sub-fragments. Higher-level fragments reference these sub-fragments. More data type enhancements such as advanced validation rules further enhance the flexibility of content modeling with [!DNL Content Fragments]. The [!DNL Experience Manager] [!DNL Content Fragment] editor supports nested fragment structures in a common editor session, with enhancements such as structure tree view and tabbed breadcrumb navigation through fragment hierarchies.
 
@@ -39,10 +30,9 @@ Anuj: Please feel free to delete the comment if all queries are answered. Thanks
 
 * **Connected Assets**: [!DNL Experience Manager] extends the [!DNL Connected Assets] functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* **Option to download shared assets or renditions**: When sharing assets and Collections as link, users can choose whether to allow the download of original assets, or their renditions, or both using the shared link.<br/>
-Also, users who download the assets shared with them through link get the option in download dialog to download only original assets, or their renditions, or both.
+* **Link share options to download assets or renditions**: When sharing assets and Collections as link, users can choose whether to allow the download of original assets, or their renditions, or both using the shared link. Also, the users who download the assets shared with them through link get the option to download only the original assets, only the renditions, or both.
 
-* **Limit to sub-assets generation**: Administrators can now specify the limit to the number of sub assets to be generated for the compound assets, such as PDF, Power Point presentations, InDesign files, and Keynote files.
+* **Limit sub-assets generated**: * Administrators can limit the number of sub-assets that [!DNL Experience Manager] generates for compound assets such as PDF, PowerPoint, InDesign, and Keynote files.
 
 * **Camera Raw support**: A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -67,23 +57,23 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 * The focus shift to another field when typing in the **[!UICONTROL Default Value]** field under the **[!UICONTROL Properties]** tab of the Content Fragment Editor (NPR-36992).
 
 * While filtering [!DNL Content Fragment] models under a specified path, [!DNL Experience Manager] search returns all nodes with `cq:Template` instead of returning paths and nodes only for the [!DNL Content Fragment] model (SITES-1453).
-* Content Fragments return `null` as the status of folders (SITES-1157).
-* Experience Manager does not let users disable and enable [!DNL Content Fragment] Models (SITES-1088).
-* When a user moves, rename, or deletes content fragments or media assets, the referenced content fragments are not automatically updated (SITES-196).
+* [!DNL Content Fragments] return `null` as the status of folders (SITES-1157).
+* [!DNL Experience Manager] does not let users disable and enable [!DNL Content Fragment] Models (SITES-1088).
+* When a user moves, rename, or deletes [!DNL Content Fragments] or media assets, the referenced [!DNL Content Fragments] are not automatically updated (SITES-196).
 * Pasting components from one page to another produces JavaScript errors (NPR-37030).
 * When page properties are viewed quickly, Page Properties for a different page are opened (NPR-37025).
 * The Content Fragment allows the Content Fragment to reference itself. The picker does not support the operation (NPR-36993).
-* When a user upgrades to Service Pack 9, the moving folder operation starts failing and errors are returned (SITES-1481).
+* After upgrading to service pack 9, some users cannot move folders in Experience Manager and see errors in the logs (SITES-1481).
 * While adjusting the width of the component in the layout container on edit mode, a flicker is observed (NPR-36961).
 * On promoting a launch, the changes in the promoted launch are double rolled out to the other launches. If a user promotes the double rolled out launch, the doubled contents is reflected on the source page (NPR-36893).
 * [!DNL Experience Manager] adds a gray border to some PNG images with transparency if you add the images to a page using the Image Core Component or if you resize using the Foundation Image component (NPR-36879).
 * [!DNL Experience Manager Sites] Admin UI with a high number of templates results in slow navigation (NPR-36870).
-* When a user upgrades to Service Pack 9, [!DNL Sites] pages stop working (NPR-36857).
+* Upgrade to service pack 9 prevents authoring of a few components. This issue does not allow [!DNL Sites] users to create new pages (NPR-36857).
 * The `ContextHubImpl` method creates a `ResourceResolver` that is not closed. It leads to warning messages about long-running `ResourceResolver` and the service returns unexpected results at times (NPR-36853).
 * On synchronizing a single live copy from blueprint page properties, all other live copies are also synchronized (NPR-36829, NPR-36522).
 * When only XLS MIME type is used, the file upload function does not work as expected (NPR-36785).
-* New tags with pascal case and all upper case words are not displayed in the tag field within Content Fragments (NPR-36742).
-* The Single Text Element option when adding a content fragment causes text to be missing and creates odd formatting related to lists and nested lists (NPR-36565).
+* New tags with pascal case and all upper case words are not displayed in the tag field within [!DNL Content Fragments] (NPR-36742).
+* The Single Text Element option when adding a [!DNL Content Fragment] causes text to be missing and creates odd formatting related to lists and nested lists (NPR-36565).
 * When an author annotates any component on a page, deletes the component, and performs an undo on the delete operation, an error is encountered when attempting to view the Timeline data for the page in the sites console (NPR-36528).
 * Page properties Bulk Editor's [!UICONTROL Save & Close] option saves changes but does not close the editor (NPR-36527).
 * When a user attempts to drag and drop a new Text component to a page, the component immediately disappears (NPR-36442).
@@ -124,7 +114,7 @@ The following issues are fixed in [!DNL Assets]:
 
 * When a user is added as an owner of a child folder, then the user gets owner permission of its parent folder too and hence of the other children folders of the parent. Also, the user is not removed as owner of parent folder on attempting to remove it. (NPR-36801, CQ-4323737).
 
-* [!DNL Experience Manager] generates an out-of-memory exception when you attempt to create subassets for compound assets, such as a PowerPoint presentation (NPR-36668).
+* [!DNL Experience Manager] generates an out-of-memory exception when you attempt to create sub-assets for compound assets, such as a PowerPoint presentation (NPR-36668).
 
 * When users move an asset that is already used in a published sites page, then the sites page is published again even if the option to publish is not selected (NPR-36636, CQ-4323500).
 
@@ -222,7 +212,7 @@ The following bug fixes are part of this service pack:
 
 ### User Interface {#user-interface-65100}
 
-* Asset and Site references are not displayed in the **[!UICONTROL References]** side-panel (GRANITE-35078, GRANITE-34892).
+* The **[!UICONTROL References]** side-panel does not display asset and site references (GRANITE-35078, GRANITE-34892).
 
 ### Translation projects {#translation-65100}
 

@@ -7,6 +7,9 @@ exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 ---
 # What is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10 {#aem-whats-new-service-pack}
 
+<!-- TBD: Downsample this image. We do not need as big an image since customers don't use as big a screen to view. Also, having a 700+ KB decorative image is bad for page load time.
+-->
+
 ![Whats-new](assets/whatsnew.jpeg)
 
 [!DNL Adobe Experience Manager] 6.5 Service Packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
@@ -30,15 +33,17 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* When sharing assets and collections as link (using [!UICONTROL Link Sharing] dialog), users can choose whether to allow the download of original assets, or their renditions, or both using the shared link.<br/>
-![option to download original assets or renditions or both](assets/share-renditions.png)
-
-* When users download assets shared with them as a link, they can choose to download the original assets, their renditions, or both.
-
-* Users can now specify the limit to the number of sub assets to be generated for the compound assets compound assets, such as PDF, Power Point presentations, InDesign files, and Keynote files.<br/>
-![limit the sub asset generation](assets/sub-asset-limit.png)
-
 * [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
+
+* When sharing individual assets and Collections as a link (using [!UICONTROL Link Sharing] dialog), users can choose whether to let the receiver download original assets, or their renditions, or both.
+
+  ![option to download only original assets, only the renditions, or both](/help/assets/assets/share-renditions.png)
+
+* When users download assets shared with them as a link, they can choose to download the original assets, the renditions, or both.
+
+* Administrators can limit the number of sub-assets that [!DNL Experience Manager] generates for compound assets such as PDF, PowerPoint, InDesign, and Keynote files.
+
+  ![limit the sub-asset generation](/help/assets/assets/sub-asset-limit.png)
 
 * A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
@@ -450,6 +455,6 @@ Between February 25, 2021 and May 27, 2021, Adobe released the following, in add
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Adobe Experience Manager] 6.5 documentation](../user-guide/home.md)
->* [General release notes for [!DNL Adobe Experience Manager] 6.5](release-notes.md)
->* [Service pack release notes for [!DNL Adobe Experience Manager] 6.5](sp-release-notes.md)
+>* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+>* [General availability release notes for [!DNL Experience Manager] 6.5](release-notes.md)
+>* [Service pack release notes for [!DNL Experience Manager] 6.5](sp-release-notes.md)

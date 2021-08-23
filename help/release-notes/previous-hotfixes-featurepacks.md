@@ -1,10 +1,11 @@
 ---
-title: [!DNL Adobe Experience Manager] 6.5 previous Service Pack release notes
-description: Release notes for [!DNL Adobe Experience Manager] 6.5 Service Packs.
+title: [!DNL Adobe Experience Manager] 6.5 previous service pack release notes
+description: Release notes for [!DNL Adobe Experience Manager] 6.5 service packs
 contentOwner: AK
+mini-toc-levels: 2
 exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
 ---
-# Hotfixes and Feature Packs included in the previous Service Packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
+# Hotfixes and Feature Packs included in the previous service packs {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
 ## [!DNL Adobe Experience Manager] 6.5.9.0 {#experience-manager-6590}
 
@@ -12,7 +13,7 @@ exl-id: aeed49a0-c7c2-44da-b0b8-ba9f6b6f7101
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.9.0 are:
 
-* [!DNL Experience Manager Sites] Dynamic Media Foundation component now lets you turn on or off optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
+* [!DNL Experience Manager Sites] Dynamic Media Foundation component now lets you turn on or off the optimization for higher resolution devices when using responsive Image Preset or Smart Crop.
 
 * To improve performance, the `hidden=false` condition is moved from JCR query to [!UICONTROL QueryBuilder] evaluator. To verify that a hidden predicate is working after the change, [!DNL Experience Manager] checks that any hidden folder is not displayed.
 
@@ -89,7 +90,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.9.0
 
 * When trying to resize a component within a container, resizing back to the original size is not possible. When the component container size is reduced, it is not possible to set the size back to the original (NPR-35809).
 
-* In the roll out dialog, either triggered in the editor or from the Live Copy Overview, the status icons for detached, suspended, or not created pages is wrong (NPR-35691).
+* In the rollout dialog, either triggered in the editor or from the Live Copy Overview, the status icons for detached, suspended, or not created pages is wrong (NPR-35691).
 
 * Multi-Site Manager rollout on-page properties of master ignore rollout page and subpages checkbox (NPR-35634).
 
@@ -105,7 +106,7 @@ The following user experience enhancements are done in [!DNL Assets]:
 
 * To make the email ID lowercase in ACP API response from [!DNL Adobe Experience Manager] an optional setting is introduced; as the [!DNL Adobe Asset Link] users could not check-in assets if their ID was not having all characters in lowercase. The [!DNL Adobe Asset Link] panel consumes the ACP API response from [!DNL Adobe Experience Manager] (CQ-4317704).
 
-[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements.
+The following accessibility enhancements are available in [!DNL Assets] as part of service pack 9:
 
 Contrast (with background) of the following text and icons is improved, so that the users with limited vision and perception of color can comprehend:
   
@@ -117,12 +118,12 @@ Contrast (with background) of the following text and icons is improved, so that 
 * Placeholder text on the [!UICONTROL Link Sharing] dialog (NPR-35963).
 * [!UICONTROL Metadata], [!UICONTROL Status], and [!UICONTROL Other] text in [!UICONTROL List] option in the [!UICONTROL View Settings] dialog (NPR-35910).
 * [!UICONTROL Location] and [!UICONTROL Type to search] placeholder texts in global search (NPR-35909).
-* Expand and collapse icons under the [!UICONTROL Content Tree] (NPR-35908).
+* Expand and collapse icons under [!UICONTROL Content Tree] (NPR-35908).
 * The [!UICONTROL Assets] text on the page where assets folders are displayed (NPR-35905).
 * Text in [!UICONTROL Asset Metadata], [!UICONTROL Usage Statistics] within [!UICONTROL Overview] option in asset details page (NPR-35904).
 * Text for shortcut keys for [!UICONTROL properties] and [!UICONTROL edit] options in asset details page (NPR-35904).
 
-[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] fixes the following issues.
+The following bug fixes are available in [!DNL Assets] as part of service pack 9:
 
 * The tags created from within a tag selection element in a [!UICONTROL Folder Metadata Schema] form are not saved (NPR-36119).
 
@@ -150,7 +151,7 @@ Contrast (with background) of the following text and icons is improved, so that 
 
 ### [!DNL Dynamic Media] {#dynamic-media-6590}
 
-[!DNL Adobe Experience Manager] 6.5.9.0 [!DNL Assets] provides the following accessibility enhancements in [!DNL Dynamic Media].
+In [!DNL Adobe Experience Manager] 6.5.9.0, the following accessibility enhancements are available in [!DNL Dynamic Media]:
 
 * When you open the dialog to add assets using keyboard keys in [!UICONTROL Image Set] editor:
   * Screen readers narrate that the dialog is opened.
@@ -179,7 +180,7 @@ Contrast (with background) of the following text and icons is improved, so that 
 
 * Screen readers can now access and narrate the purpose of various interactive options within Viewers in asset details page (CQ-4290708).
 
-Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dynamic Media]:
+Adobe Experience Manager 6.5.9.0 Assets fixes The following issues in [!DNL Dynamic Media]:
 
 * Custom ViewerPresets and CSS are not replicated to [!DNL Dynamic Media] when [!DNL Dynamic Media] is activated selectively and disabled by [default](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/config-dm.html#troubleshoot-dm-config) (NPR-36232).
 
@@ -195,7 +196,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes the following issues in [!DNL Dyna
 
 * Site Authors with read-only permissions can use smart crop functionality on assets and edit the smart cropped renditions (CQ-4316450).
 
-* Video annotations do not work for folder paths where [!DNL Dynamic Media] configuration is not enabled, even if the [!DNL Experience Manager] instance is set-up in [!DNL Dynamic Media] mode (CQ-4314950).
+* Video annotations do not work for folder paths where [!DNL Dynamic Media] configuration is not enabled, even if the [!DNL Experience Manager] instance is set up in [!DNL Dynamic Media] mode (CQ-4314950).
 
 * When the assets title has double byte, multi-byte, high ASCII, Cyrillic, surrogate pair, Hebrew, Arabic, and GB18030 characters, then on publishing to Dynamic Media the asset title have a question mark (&#63;) (CQ-4311872).
 
@@ -366,7 +367,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 * Omni search and asset filters return irrelevant or no results (CQ-4312322, NPR-35793).
 * When multiple pages simultaneously access a client library, the HTML library manager fails to load the client library. It leads to the incorrect rendering of pages (NPR-35538).
 * The context path gets removed automatically when you set up an SSL in [!DNL Experience Manager] (NPR-35294).
-* Package manager does not logout users after clicking the Logout option (NPR-35160).
+* Package manager does not log out users after clicking the Logout option (NPR-35160).
 
 ### [!DNL Assets] {#assets-6580}
 
@@ -516,7 +517,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0
 
 * Multiple issues reported for the [!UICONTROL Edit Policy] option on AdminUI (NPR-35747).
 
-### Known issues for [!DNL Experience Manager 6.5.8.0] {#known-issues}
+### Known issues in 6.5.8.0 {#known-issues-6580}
 
 * If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.8.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. Restart the instance to resolve the issue.
 
@@ -632,7 +633,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0
 
 * After you use the Rotate Right option, the screen reader stops narrating the current rotation or flip state (CQ-4282128).
 
-* Done and Cancel Configure dialog buttons have more than one tab-stops (CQ-4274601).
+* Done and Cancel Configure dialog buttons have many tab-stops (CQ-4274601).
 
 * Moving of pages with a similar name on the same level is not allowed (NPR-35041).
 
@@ -1732,7 +1733,7 @@ For a complete list of features and key highlights introduced in the latest Serv
 
 * Metadata schema popup values are not visible in asset properties (CQ-4283287).
 
-* Metadata subschema do not display tabs based on mimetype in asset properties (CQ-4283288).
+* Metadata subschema do not display tabs based on MIME types in asset properties (CQ-4283288).
 
 * Unpublish metadata schema populates an error message although the schema is removed at backend.
 
@@ -2161,7 +2162,7 @@ Some key highlights of this Service Pack release are:
 
 **Product Enhancements**
 
-* EnhanceDocument type filters with more MIME Types to support multi valued options. Hotfix for CQ-4270694
+* `EnhanceDocument` type filters with more MIME Types to support multi-valued options. Hotfix for CQ-4270694
 
 ### Content Fragment Management {#content-fragment-management-6520}
 
@@ -2247,7 +2248,7 @@ The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
 **Forms - Document Services**
 
-* If the "SubmitURL" contains an ampersand (&), parsing errors are seen in the log when POST request is made to renderpdf servlet. NPR-30865: Hotfix for CQ-4278232
+* If the "SubmitURL" contains an ampersand (&), parsing errors are seen in the log when POST request is made to `renderpdf` servlet. NPR-30865: Hotfix for CQ-4278232
 
 **Forms - Foundation JEE**
 
