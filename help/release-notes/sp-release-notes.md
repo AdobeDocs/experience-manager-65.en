@@ -37,11 +37,14 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * **Connected Assets**: [!DNL Experience Manager] extends the [!DNL Connected Assets] functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* **Download shared assets**: When sharing assets and Collections as link, users can choose whether to allow the download of original assets, or their renditions, or both using the shared link.
+* **Option to download shared assets or renditions**: When sharing assets and Collections as link, users can choose whether to allow the download of original assets, or their renditions, or both using the shared link.<br/>
+Also, users who download the assets shared with them through link get the option in download dialog to download only original assets, or their renditions, or both.
+
+* **Limit to sub-assets generation**: Administrators can now specify the limit to the number of sub assets to be generated for the compound assets, such as PDF, Power Point presentations, InDesign files, and Keynote files.
 
 * **Camera Raw support**: A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
-* **Accessibility enhancements**: 
+* **Accessibility enhancements**:
 
   * [!DNL Dynamic Media] provides many accessibility enhancements for Viewers. See [[!DNL Dynamic Media] updates](#dynamic-media-65100).
 
