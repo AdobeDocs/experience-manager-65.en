@@ -76,7 +76,6 @@ Configure one or more connections to Search&Promote so that your web pages can i
    >
    >using your valid Seach&Promote credentials (email/password).
    >Then, you must look at your url in your browser's address bar which should look something like this:
-   >[](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
    >[https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY](https://searchandpromote.omniture.com/px/home/?sp_id=XXXXXXXX-spYYYYYYYY)
    >
