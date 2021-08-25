@@ -105,7 +105,7 @@ The following issues are fixed in [!DNL Assets]:
 
 * The popup menu for various fields in [!UICONTROL Folder Metadata] properties does not display the last selected values (NPR-36937, CQ-4314429).
 
-* When searching for files and folders, if user applies a filter and selects [!UICONTROL Files & Folders], only the files are displayed but not the folder (CQ-4319543).
+* When searching for files and folders, if user applies a filter and selects [!UICONTROL Files & Folders], only the files are displayed but not the folder (CQ-4319543, NPR-36627).
 
 * The toolbar options are different when the same Collection is selected from within a folder and when it is selected from a search result (NPR-36620).
 
