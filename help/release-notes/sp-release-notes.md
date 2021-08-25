@@ -36,6 +36,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * **Camera Raw support**: A new [!DNL Camera Raw] package is available that supports [!DNL Adobe Camera Raw] v10.4. See [process images using [!DNL Camera Raw]](/help/assets/camera-raw.md).
 
+* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.8.
+
 * **Accessibility enhancements**:
 
   * [!DNL Dynamic Media] provides many accessibility enhancements for Viewers. See [[!DNL Dynamic Media] updates](#dynamic-media-65100).
