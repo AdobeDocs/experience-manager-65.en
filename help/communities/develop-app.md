@@ -116,7 +116,7 @@ Using CRXDE Lite:
 
 **View the page in a browser in edit mode:**
 
-* Standard UI: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* Standard UI: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 You should not only see the heading **Community Play**, but also the UI for editing page content.
 
@@ -124,7 +124,7 @@ The Assets/Component side panel is seen when both the side panel is toggled open
 
 ![view-page](assets/view-page.png)
 
-* Classic UI: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* Classic UI: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 Following is how the play page appears in the classic UI including with content finder (cf):
 
@@ -164,7 +164,7 @@ In a multi-language environment, the root page would include a script which woul
 
 In this simple example, the root page is being statically set to redirect to the english page, which may be developed in the future to be the main landing page with a link to the play page.
 
-Change the browser URL to the root page: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
+Change the browser URL to the root page: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * Select the Page Information icon
 * Select **[!UICONTROL Open Properties]**

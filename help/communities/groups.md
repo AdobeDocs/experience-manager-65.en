@@ -108,7 +108,7 @@ To access the Groups console:
 
 ![communitygrouptheme](assets/communitygrouptheme.png)
 
-The framework uses [Twitter Bootstrap](https://twitterbootstrap.org/) to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes can be selected to style the selected community group template, or a Bootstrap theme can be uploaded.
+The framework uses `Twitter Bootstrap` to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes can be selected to style the selected community group template, or a Bootstrap theme can be uploaded.
 
 When selected, the theme will be overlayed with an opaque blue check mark.
 
