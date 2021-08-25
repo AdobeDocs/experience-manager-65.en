@@ -86,7 +86,8 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 * When an author restores the inheritance on the deleted inherited component, the available option is to synchronize all page content. The content authors are required to sync the complete page even if the inheritance is restored only on one component. A complete sync can result in unwanted content getting synchronized (NPR-34456, CQ-4310183).
 * Live Usage of a component on Author instance does not display all the occurrences. Some components are used in more than 1000 pages but the report only displays about 40 pages (CQ-4323724).
 * When there is a site structure that has lot of subpages, loading of the subpages in column view takes more time in Experience Manager 6.5.8 as compared to Experience Manager 6.4.8.2 (CQ-4322766).
-* Uncheck 'All' does not work on the 'Rollout Page' option (NPR-37070).                                 
+* Uncheck 'All' does not work on the 'Rollout Page' option (NPR-37070).
+* When opening an existing v3 component version of a page, the page Properties dialog does not open and a `NullPointerException` is logged (SITES-1830).                                 
 
 ### [!DNL Assets] {#assets-65100}
 
