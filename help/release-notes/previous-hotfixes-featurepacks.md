@@ -322,7 +322,7 @@ Adobe Experience Manager 6.5.9.0 Assets fixes The following issues in [!DNL Dyna
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
-## Known issues in Experience Manager 6.5.9.0 {#known-issues-6590}
+### Known issues in Experience Manager 6.5.9.0 {#known-issues-6590}
 
 * If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. To resolve the issue, restart the instance.
 
