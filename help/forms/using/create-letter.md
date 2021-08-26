@@ -224,7 +224,7 @@ You need the following in place first to create a correspondence:
 
 * [Compatibility Package](compatibility-package.md). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
 * The letter XDP ([layout](/help/forms/using/document-fragments.md)).
-* Other XDPs ([layout fragments](document-fragments.md#document-fragments)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/). 
+* Other XDPs ([layout fragments](document-fragments.md#document-fragments)) that form parts of the letter. The XDPs\Layouts are created in [Designer](http://www.adobe.com/go/learn_aemforms_designer_65). 
 * The relevant [data dictionary](/help/forms/using/data-dictionary.md) (Optional). 
 * The [data modules](/help/forms/using/document-fragments.md) you want to use in the correspondence.
 * [Test Data](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) is the XML file with the test data ported in it. Test data is required if you are using a data dictionary.
