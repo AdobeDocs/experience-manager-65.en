@@ -110,7 +110,7 @@ You can check the connectivity between configured [!DNL Sites] deployments and [
 ![Connection test of Connected Assets configured [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *Figure: Connection test of Connected Assets configured [!DNL Sites].*
 
-### Configure a connection for dynamic media assets{#sites-dynamic-media-connected-assets}
+### Configure a connection for dynamic media assets {#sites-dynamic-media-connected-assets}
 
 You can configure a connection between [!DNL Sites] deployment and [!DNL Dynamic Media] deployment that allows webpage authors to use [!DNL Dynamic Media] images in their web pages. While authoring webpages, the experience of using remote Assets and remote [!DNL Dynamic Media] deployments remains the same.
 
