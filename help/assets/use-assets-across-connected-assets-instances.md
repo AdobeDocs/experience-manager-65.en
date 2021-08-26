@@ -35,7 +35,7 @@ Before you use or configure this capability, ensure the following:
 
 Authors search for images and the following types of documents in Content Finder and use the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
-* **Image formats**: The formats that the [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supports. [!DNL Dynamic Media] images are not supported.
+* **Image formats**: The formats that the [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supports.
 * **Document formats**: See the [supported document formats](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
@@ -182,7 +182,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 * Local assets are not synchronized with the original assets on the remote deployment. Any edits, deletions, or revoking of permissions on the DAM deployment are not propagated downstream.
 * Local assets are read-only copies. [!DNL Experience Manager] components do non-destructive edits to assets. No other edits are allowed.
 * Locally fetched assets are available for authoring purposes only. Asset update workflows cannot be applied and metadata cannot be edited.
-* Only images and the listed document formats are supported. [!DNL Dynamic Media] assets, [!DNL Content Fragments], and [!DNL Experience Fragments] are not supported.
+* Only images and the listed document formats are supported. [!DNL Content Fragments] and [!DNL Experience Fragments] are not supported.
 * [!DNL Experience Manager] does not fetch the metadata schemas. It means that all the fetched metadata may not be displayed. If the schema are separately updated on the [!DNL Sites] deployment then all the metadata properties are displayed.
 * All [!DNL Sites] authors have read permissions on the fetched copies, even if authors cannot access the remote DAM deployment.
 * No API support to customize the integration.

@@ -12,9 +12,6 @@ This guide covers all [!DNL Experience Manager Assets] tasks, such as how to cre
 
 ## Key [!DNL Experience Manager] articles
 
-<!-- TBD: Some of these links will soon be updated. Change these when new articles go live on docs.adobe.com.
--->
-
 * [Experience Manager 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [Security Checklist](/help/sites-administering/security-checklist.md)

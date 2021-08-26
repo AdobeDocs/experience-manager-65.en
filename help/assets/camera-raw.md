@@ -1,12 +1,12 @@
 ---
-title: [!DNL Adobe Camera Raw] support.
-description: Learn how to enable [!DNL Adobe Camera Raw] support in [!DNL Adobe Experience Manager Assets].
+title: [!DNL Adobe Camera Raw] support to process digital assets
+description: Learn how to enable [!DNL Adobe Camera Raw] support in [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 ---
-# Process images using Camera Raw {#camera-raw-support}
+# Process images using [!DNL Adobe Camera Raw] {#camera-raw-support}
 
 You can enable the [!DNL Adobe Camera Raw] support to process raw file formats, such as CR2, NEF, and RAF, and render the images in JPEG format. The functionality is supported in [!DNL Adobe Experience Manager Assets] using the [Camera Raw package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) available from Software Distribution.
 
@@ -16,9 +16,9 @@ You can enable the [!DNL Adobe Camera Raw] support to process raw file formats, 
 
 To enable [!DNL Camera Raw] support in [!DNL Experience Manager Assets], follow these steps:
 
-1. Download the [Camera Raw package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from Software Distribution.
+1. Download the [Camera Raw package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from [!DNL Software Distribution].
 1. Access `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
-1. Open the **[!UICONTROL Process Thumbnails]** step.
+1. Edit the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
 
     * **[!UICONTROL Thumbnails]**: `140:100:false, 48:48:false, 319:319:false`
@@ -30,7 +30,7 @@ To enable [!DNL Camera Raw] support in [!DNL Experience Manager Assets], follow 
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
-1. From the side panel, add the **[!UICONTROL Camera Raw/DNG Handler]** step below the **[!UICONTROL Thumbnail creation]** step.
+1. From the side panel, add the **[!UICONTROL Camera Raw/DNG Handler]** step below the **[!UICONTROL Process Thumbnails]** step.
 1. In the **[!UICONTROL Camera Raw/DNG Handler]** step, add the following configuration in the **[!UICONTROL Arguments]** tab:
 
    * **[!UICONTROL Mime Types]**: `image/dng` and `image/x-raw-(.*)`
