@@ -16,7 +16,6 @@ exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 
 This article highlights the features included in the latest Service Pack, [key features included in the previous 6.5 Service Packs](#key-features-previous-service-packs), and the [key releases since the last Service Pack](#key-releases-since-last-sp) release.
 
-
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
 * **Enhanced [!DNL Content Fragment] Models and Editor**: You can now create complex and custom models for structured content using nested [!DNL Content Fragment] models. Content structures are modularized into basic elements that are modeled as sub-fragments. Higher-level fragments reference these sub-fragments. More data type enhancements such as advanced validation rules further enhance the flexibility of content modeling with [!DNL Content Fragments]. The [!DNL Experience Manager] [!DNL Content Fragment] editor supports nested fragment structures in a common editor session, with enhancements such as structure tree view and tabbed breadcrumb navigation through fragment hierarchies.
@@ -35,13 +34,14 @@ This article highlights the features included in the latest Service Pack, [key f
 
 * [!DNL Experience Manager] extends the Connected Assets functionality to the use of [!DNL Dynamic Media] images in the applicable core components. See [use Connected Assets](/help/assets/use-assets-across-connected-assets-instances.md).
 
-* When sharing individual assets and Collections as a link (using [!UICONTROL Link Sharing] dialog), users can choose whether to let the receiver download original assets, or their renditions, or both.
+* When sharing individual assets and Collections as a link (using [!UICONTROL Link Sharing] dialog), users can choose whether to let the receiver download original assets, or their renditions, or both. See [Share assets via link](/help/assets/link-sharing.md).
 
-  ![option to download only original assets, only the renditions, or both](/help/assets/assets/share-renditions.png)
+  ![option to allow download only original assets, only the renditions, or both](/help/release-notes/assets/share-assets-as-link.png)
 
 * When users download assets shared with them as a link, they can choose to download the original assets, the renditions, or both.
 
-* Administrators can limit the number of sub-assets that [!DNL Experience Manager] generates for compound assets such as PDF, PowerPoint, InDesign, and Keynote files.
+* **Limit sub-assets generated**:
+Administrators can limit the number of sub-assets that [!DNL Experience Manager] generates for compound assets such as PDF, PowerPoint, InDesign, and Keynote files.
 
   ![limit the sub-asset generation](/help/assets/assets/sub-asset-limit.png)
 
