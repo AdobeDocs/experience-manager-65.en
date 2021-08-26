@@ -443,9 +443,9 @@ You can use the Batch API to produce multiple interactive communications from a 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
 
-## Key releases since [!DNL Adobe Experience Manager] 6.5 SP8 {#key-releases-since-last-sp}
+## Key releases since [!DNL Adobe Experience Manager] 6.5 SP9 {#key-releases-since-last-sp}
 
-Between February 25, 2021 and May 27, 2021, Adobe released the following, in addition to the Service Packs:
+Between May 27, 2021 and August 26, 2021, Adobe released the following, in addition to the Service Packs:
 
 * [!DNL Adobe Experience Manager] as a Cloud Service [2021.6.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-6-0.html), [2021.7.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-7-0.html), and [2021.8.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=en).
 
