@@ -16,7 +16,7 @@ You can enable the [!DNL Adobe Camera Raw] support to process raw file formats, 
 
 To enable [!DNL Camera Raw] support in [!DNL Experience Manager Assets], follow these steps:
 
-1. Download the [Camera Raw package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) from [!DNL Software Distribution].
+1. Download the [[!DNL Camera Raw] package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) from [!DNL Software Distribution].
 1. Access `https://[aem_server]:[port]/workflow`. Open the **[!UICONTROL DAM Update Asset]** workflow.
 1. Edit the **[!UICONTROL Process Thumbnails]** step.
 1. Provide the following configuration in the **[!UICONTROL Thumbnails]** tab:
