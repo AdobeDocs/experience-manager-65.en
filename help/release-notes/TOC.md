@@ -15,7 +15,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + [General Release Notes](release-notes.md)
 + Service Pack Release Notes {#service-pack}
   + [What's New](new-features-latest-service-pack.md)
-  + [Service Pack 9 Release Notes](sp-release-notes.md)
+  + [Service Pack 10 Release Notes](sp-release-notes.md)
   + [Previous Service Pack Release Notes](previous-hotfixes-featurepacks.md)
 + [AEM Sites Release Notes](sites.md)
 + [AEM Assets Release Notes](assets.md)
