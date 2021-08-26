@@ -122,7 +122,11 @@ You can send deadline notifications to users and groups when the deadline to act
 
 ### Hide the DO NOT DELETE tag for all emails {#hide-the-do-not-delete-tag-for-all-emails}
 
-You can configure email to hide to the DO NOT DELETE tracking tag in all emails send in a human-centric process. For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+You can configure email to hide to the DO NOT DELETE tracking tag in all emails send in a human-centric process. 
+
+<!-- 
+For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html) 
+-->
 
 ## Configuring notifications for administrators {#configuring-notifications-for-administrators}
 

@@ -30,16 +30,6 @@ The Java API supports the following features:
 * Different authentication, such as user name and password
 * Synchronous and asynchronous invocation requests
 
-**Adobe Developer website**
-
-The Adobe Developer website contains the following articles that discuss invoking AEM Forms services using the Java API:
-
-[Using Java servlets to invoke AEM Forms processes](https://www.adobe.com/devnet/livecycle/articles/java_servlets.html)
-
-[Invoking the AEM Forms Distiller API from Java](https://www.adobe.com/devnet/livecycle/articles/distiller_java_03.html)
-
-**See also**
-
 [Including AEM Forms Java library files](#including-aem-forms-java-library-files)
 
 [Invoking Human-Centric Long-Lived Processes](invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)

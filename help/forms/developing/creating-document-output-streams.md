@@ -395,7 +395,7 @@ When a PDF/A document is opened in Acrobat, a message is displayed that confirms
 
 >[!NOTE]
 >
->The AIIM web site has a PDF/A FAQ section that you can access at [https://www.aiim.org/documents/standards/19005-1_FAQ.pdf](https://www.aiim.org/documents/standards/19005-1_FAQ.pdf).
+>The AIIM web site has a PDF/A FAQ section that you can access at [https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml).
 
 >[!NOTE]
 >

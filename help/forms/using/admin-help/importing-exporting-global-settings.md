@@ -99,7 +99,11 @@ The remaining properties in this setting should not be changed.
 
 **server_remoteevents_JGroupName:** The name of the JGroup used for remote event communication. This value is randomly generated to avoid conflicts in clusters. This value should not be changed.
 
+<!--
+
 For additional information on JGroups and Workspace, see [JGroups and AEM forms Workspace - Explained](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+
+-->
 
 ### formView settings {#formview-settings}
 

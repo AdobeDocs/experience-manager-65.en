@@ -52,5 +52,3 @@ You can accomplish these tasks using the Forms service:
 * Passing Documents. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md)
 * Calculate form data. (See [Calculating Form Data](/help/forms/developing/calculating-form-data.md).)
 * Optimize an application. (See [Optimizing the Performance of the Forms Service](/help/forms/developing/optimizing-performance-forms-service.md).)
-
-  ***Tip**: The Adobe Developer web site contains the following article that discusses how to create a ASP.NET application that invokes the Forms service and renders forms. See [Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html).*

@@ -73,7 +73,7 @@ To render a form by value, pass a `com.adobe.idp.Document` instance that contain
 
 >[!NOTE]
 >
->If you want to display data within the form, the data must be specified within the `xfa:datasets` element. For information about XFA architecture, go to [https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html).
+>If you want to display data within the form, the data must be specified within the `xfa:datasets` element. For information about XFA architecture, go to [https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf).
 
 **Write the form data stream to the client web browser**
 
