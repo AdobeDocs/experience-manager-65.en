@@ -121,7 +121,7 @@ On remote [!DNL Assets] deployment, in [!UICONTROL Dynamic Media sync mode], sel
 
 1. Create Connected Assets configuration as described in [Configure connection between sites and assets deployments](#configure-a-connection-between-sites-and-assets-deployments). Also, select **[!UICONTROL Fetch Original Rendition for Dynamic Media Connected Assets]** option.
 
-1. Configure [!DNL Dynamic Media] on local [!DNL Sites] and remote [!DNL Assets] deployments. Follow the instructions to [configure [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. Configure [!DNL Dynamic Media] on local [!DNL Sites] and remote [!DNL Assets] deployments. Follow the instructions to [configure [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 
    * Use the same company name in all configurations.
    * On local [!DNL Sites], in [!UICONTROL Dynamic Media sync mode], select **[!UICONTROL Disabled by default]**. The [!DNL Sites] deployment needs only read-only access to the [!DNL Dynamic Media] account.
