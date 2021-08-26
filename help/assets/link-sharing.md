@@ -17,20 +17,17 @@ exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 
 ## Share assets {#share-assets}
 
-To generate the URL for assets that you want to share with users, use the Link Sharing dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
+To generate the URL for assets that you want to share with users, use the [!UICONTROL Link Sharing] dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
 
 1. In the [!DNL Assets] user interface, select the asset to share as a link.
-1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png). The link that will be created after clicking **[!UICONTROL Share]** is displayed in advance in the [!UICONTROL Share Link] field. The link is not yet created till you click **[!UICONTROL Submit]**.
 
-   ![Dialog with the Link Share](assets/Link-sharing-dialog-box.png)
+1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png). The link that will be created after clicking **[!UICONTROL Share]** is displayed in advance in the [!UICONTROL Share Link] field. The link is not created till you select **[!UICONTROL Submit]**.
+
+   ![Dialog with the Link Share](/help/assets/assets/share-assets-as-link.png)
 
    *Figure: The dialog to share assets as a link.*
 
 1. In the email address box of the **[!UICONTROL Link Sharing]** dialog, type the email ID of the user you want to share the link with. You can add one or more users.
-
-   ![Share links to assets directly from the Link Sharing dialog](assets/Asset-Sharing-LinkShareDialog.png)
-
-   *Figure: Share links to assets directly from the [!UICONTROL Link Sharing] dialog.*
 
    >[!NOTE]
    >
@@ -44,7 +41,7 @@ To generate the URL for assets that you want to share with users, use the Link S
 
    ![Set expiration date of shared link](assets/Set-shared-link-expiration.png)
 
-1. To let users download the original asset along with the renditions, select **[!UICONTROL Allow download of original file]**. By default, users can only download the renditions of the asset that you share as a link.
+1. To let users download the original asset, select **[!UICONTROL Allow download of original file]**. To let users download only the renditions of the shared assets, select **[!UICONTROL Allow download of renditions of file]**.
 
 1. Click **[!UICONTROL Share]**. A message confirms that the link is shared with the users via an email.
 
