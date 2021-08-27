@@ -20,6 +20,10 @@ exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
 >
 >Content fragment models are used for all examples in We.Retail.
 
+>[!NOTE]
+>
+>Prior to AEM 6.3 Content Fragments were created with the use of templates instead of models. Templates are no longer available for creating new fragments, but any fragments created with such a template are still supported.
+
 Templates are selected when creating a content fragment. They provide the new fragment with the basic structure, element(s) and variation. The templates used for content fragments are subject to the Granite Configuration Manager.
 
 The out-of-the-box templates are held under:

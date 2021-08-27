@@ -238,7 +238,7 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 1. Navigate to the “Authentication Settings” tab.
 1. Enter the following details:
 
-    1. **Service Root:** e.g https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/
+    1. **Service Root:** e.g `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
     1. **Authentication Type:** OAuth 2.0
     1. **Authentication Settings** (see [MS Dynamics cloud configuration settings](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) to collect this information):
 
@@ -277,7 +277,7 @@ The steps detailed in this section are included to help you locate the Client Id
 1. Click on “Customizations” and “Developer Resources” near the bottom right.
 1. There you’ll find the Service Root URL: e.g
 
-   *[https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/](https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/)*
+   *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
 1. Details on the Refresh and Access Token URL are available here:
 
