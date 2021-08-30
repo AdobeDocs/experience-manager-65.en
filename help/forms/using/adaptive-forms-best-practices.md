@@ -278,14 +278,14 @@ You often need to move your AEM projects from one environment to another. Some o
 
 Some best practices to configure AEM to improve the overall performance are as follows:
 
-* Enable HTML client library compression for JavaScript and CSS from Felix Console. See [Clientlibs explained by example](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/).
+* Enable HTML client library compression for JavaScript and CSS from Felix Console. 
 * Cache all client libraries at `/etc.clientlibs/fd` and any additional custom client libraries on AEM dispatcher to increase the responsiveness and security of your published forms. For more information, see [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
 
 * Do not cache `/content/forms/af/` and `/content/dam/formsanddocuments/*` paths. for detailed information about configuring adaptive forms caching, see [Caching adaptive forms](/help/forms/using/configure-adaptive-forms-cache.md).
 
 * Enable HTML via web server compression module. For more information, see [Performance tuning of AEM Forms server](/help/forms/using/performance-tuning-aem-forms.md).
 * Increase calls per request configuration for large forms. See [Optimizing performance of large and complex forms](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
-* Create [custom error pages shown by error handler](https://helpx.adobe.com/experience-manager/6-2/sites-developing/customizing-errorhandler-pages.html).
+* Create [custom error pages shown by error handler](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html).
 * Secure AEM Forms server.
 
     * Use `nosamplecontent` run mode to ensure there are no sample content and sample users deployed on the production server. See [Running AEM in Production Ready Mode](/help/sites-administering/production-ready.md).

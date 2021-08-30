@@ -175,7 +175,7 @@ You can create a [Transient](/help/sites-developing/workflows.md#transient-workf
 
 >[!NOTE]
 >
->When you run a workflow in [transient](/help/sites-developing/workflows.md#transient-workflows) mode AEM does not store any workflow history. Therefore, [Timeline](/help/sites-authoring/basic-handling.md#timeline) does not display any information related to that workflow. [](/help/sites-authoring/basic-handling.md#timeline)
+>When you run a workflow in [transient](/help/sites-developing/workflows.md#transient-workflows) mode AEM does not store any workflow history. Therefore, [Timeline](/help/sites-authoring/basic-handling.md#timeline) does not display any information related to that workflow. 
 
 ## Make workflow models available in Touch UI {#classic2touchui}
 

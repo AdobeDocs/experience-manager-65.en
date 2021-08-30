@@ -173,7 +173,7 @@ You combine data (records) saved in an external data source with an interactive 
 
  1. Log in to your AEM instance and create an Interactive Communication. To use the interactive communication mentioned in the sample code given below, [click here](assets/SimpleMediumIC.zip).
  1. [Build and deploy an AEM Project using Apache Maven](https://helpx.adobe.com/experience-manager/using/maven_arch13.html) on your AEM instance.
- 1. Add [AEM Forms Client SDK version 6.0.12](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/) or later in dependencies list of POM file of your AEM project. For example,
+ 1. Add [AEM Forms Client SDK version 6.0.12](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) or later in dependencies list of POM file of your AEM project. For example,
 
     ```xml
         <dependency>

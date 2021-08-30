@@ -17,7 +17,7 @@ exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 Perform the following procedure to upgrade existing AEM 6.3 Forms on JEE or AEM 6.4 Forms on JEE to AEM 6.5 Forms on JEE:
 
 1. Download the AEM 6.5 Forms on JEE installer from the [Adobe Licensing Website (LWS)](https://licensing.adobe.com/). You require a valid Maintenance & Support contract to download the installer.
-1. See [Upgrade checklist and planning](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_65) to learn about the checks to perform to ensure a successful upgrade.
+1. See [Upgrade checklist and planning](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65) to learn about the checks to perform to ensure a successful upgrade.
 1. See [Prepare to upgrade to AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65) to learn and perform the tasks that ensure the upgrade runs correctly with minimal server downtime.
 1. Depending on your existing environment and application server, choose one of the following documents and follow the instructions.
 

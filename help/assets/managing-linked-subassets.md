@@ -96,7 +96,11 @@ To generate the subassets do one of the following:
   * Select an asset and click [!UICONTROL Timeline] to open the left panel. Alternately, use the keyboard shortcut `alt + 3`. Click [!UICONTROL Start Workflow], select [!UICONTROL DAM Update Asset], click [!UICONTROL Start], and click [!UICONTROL Proceed].
   * Select an asset and click [!UICONTROL Create] > [!UICONTROL Workflow] from the toolbar. From the popup dialog, select [!UICONTROL DAM Update Asset] workflow, click [!UICONTROL Start], and click [!UICONTROL Proceed].
 
-Specifically for Microsoft Word documents, execute the **[!UICONTROL DAM Parse Word Documents]** workflow. It generates a `cq:Page` component from the contents of the Microsoft Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if subasset generation is disabled.
+Specifically for Microsoft Word documents, execute the **[!UICONTROL DAM Parse Word Documents]** workflow. It generates a `cq:Page` component from the contents of the Microsoft Word document. The images extracted from the document are referenced from the `cq:Page` component. These images are extracted even if sub asset generation is disabled.
+
+>[!NOTE]
+>
+>In the [!UICONTROL Create Sub Asset Process - Step Properties] in [!UICONTROL Process Arguments], you can specify the number of sub-assets that [!DNL Experience Manager] generates. The default value is 5. To generate all the sub assets, leave the field empty. If the field has negative, then no sub assets are generated.
 
 ## View subassets {#viewing-subassets}
 

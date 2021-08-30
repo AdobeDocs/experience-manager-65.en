@@ -655,7 +655,7 @@ Certain URLs are highlighted as end-user-facing web applications. You should avo
 
 A Cross-Site Request Forgery (CSRF) attack exploits the trust that a website has for the user, to transmit commands that are unauthorized and unintended by the user. The attack is set up by including a link or a script in a web page, or a URL in an email message, to access another site to which the user has already been authenticated.
 
-For example, you may be logged in to Administration Console while simultaneously browsing another website. One of the web pages may include an HTML image tag with a `src` attribute that targets a server-side script on the victim website. By leveraging the cookie-based session-authentication mechanism provided by web browsers, the attacking website can send malicious requests to this victim server-side script, masquerading as the legitimate user. For more examples, see [https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples).
+For example, you may be logged in to Administration Console while simultaneously browsing another website. One of the web pages may include an HTML image tag with a `src` attribute that targets a server-side script on the victim website. By leveraging the cookie-based session-authentication mechanism provided by web browsers, the attacking website can send malicious requests to this victim server-side script, masquerading as the legitimate user. For more examples, see [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 The following characteristics are common to CSRF:
 

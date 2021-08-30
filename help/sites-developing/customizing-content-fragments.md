@@ -36,6 +36,10 @@ Depending on the type of fragment, either models or templates are also used:
 >
 >Content fragment models are used for all examples in We.Retail.
 
+>[!NOTE]
+>
+>Prior to AEM 6.3 Content Fragments were created with the use of templates instead of models. Templates are no longer available for creating new fragments, but any fragments created with such a template are still supported.
+
 * Content Fragment Models:
 
     * Used for defining content fragments that hold structured content.

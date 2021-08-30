@@ -50,7 +50,7 @@ Only members of the fd-administrator group can view transaction reports. To allo
 
 ### (Optional) Configure Transaction Flush Period and Outboxes {#optional-configure-transaction-flush-period-and-outboxes}
 
-Transactions are cached in-memory before being stored to the repository. By default, the caching period (Transaction Flush Period) is set to 60 seconds. Perform the following steps to change the default caching period:
+Transactions are cached in memory before being stored in the repository. The process is followed to ensure that there are no frequent writes to the repository. By default, the caching period (Transaction Flush Period) is set to 60 seconds. You can change the default period to suit your environment. Perform the following steps to change the default caching period:
 
 1. Log in to author instances as an administrator. Go to **Tools** &gt; **Operations** &gt; **Web Console**.
 1. Locate and open the **Forms Transaction Repository Storage Provider** service.

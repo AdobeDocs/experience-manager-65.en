@@ -17,7 +17,7 @@ A *credential* contains your private key information needed for signing or ident
 
 * Acrobat Reader DC extensions uses a credential to enable Adobe Reader usage rights in PDF documents. (See [Configuring credentials for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
 * You can configure Rights Management to display credentials for use in Acrobat only from trusted issuers. (See [Configure Rights Management display settings](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) The Common Name (CN) must be present in the certificate.
-* The Signature service accesses certificates and credentials. For details on the Signature service, see [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63).
+* The Signature service accesses certificates and credentials. For details on the Signature service, see [Services Reference](https://www.adobe.com/go/learn_aemforms_services_65).
 
 **Generating a pair key**
 
@@ -29,7 +29,7 @@ AEM forms does not provide any option to generate a key pair. However, you can g
 
 [https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
 
-[https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html](https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html)
+[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
 The following signature types are supported and can be imported in AEM forms:
 
