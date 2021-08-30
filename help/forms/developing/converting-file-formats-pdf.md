@@ -766,7 +766,7 @@ Use Microsoft Spy++ to obtain the identities of window element properties in the
 
 #### Using regular expressions in caption attributes {#using-regular-expressions-in-caption-attributes}
 
-You can use regular expressions in caption specifications. The Generate PDF service uses the `java.util.regex.Matcher` class to support regular expressions. That utility supports the regular expressions described in `java.util.regex.Pattern`. (Go to the Java website at [https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html](https://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html).)
+You can use regular expressions in caption specifications. The Generate PDF service uses the `java.util.regex.Matcher` class to support regular expressions. That utility supports the regular expressions described in `java.util.regex.Pattern`.
 
 **Regular expression accommodating the file name prepended to Notepad in the Notepad banner**
 

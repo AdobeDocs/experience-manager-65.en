@@ -173,7 +173,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
 ### Housekeeping tasks after running the migration utility {#housekeepingtasks}
 
-After running the Migration utility, take care of the following housekeeping tasks: [](../../forms/using/import-export-forms-templates.md)
+After running the Migration utility, take care of the following housekeeping tasks:
 
 1. Ensure that XFA version of layouts and fragment layouts is 3.3 or later. If you are using layouts and fragment layouts of an older version, then there could be issues in rendering the letter. To update version of an older XFA to the latest version, complete the following steps:
 

@@ -41,7 +41,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 >[!NOTE]
 >
->If you have a custom component and you are using SOAP or EJB protocols to invoke DSCs on the same local server, and those invocations stop working after an upgrade, then use in-VM ([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY)) invocation strategy. Use the in-VM DSC invocation method with default ServiceClientFactory and do not construct ServiceClientFactory using SOAP or EJB protocols.
+>If you have a custom component and you are using SOAP or EJB protocols to invoke DSCs on the same local server, and those invocations stop working after an upgrade, then use in-VM invocation strategy. Use the in-VM DSC invocation method with default ServiceClientFactory and do not construct ServiceClientFactory using SOAP or EJB protocols.
 
 ## Quick Start (SOAP mode): Deploying a component using the Java API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

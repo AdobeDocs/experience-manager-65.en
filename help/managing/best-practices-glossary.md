@@ -41,7 +41,7 @@ Ensure that the required levels of system access have been granted to all roles.
 
 ### Adobe Security Checklist {#adobe-security-checklist}
 
-The [Adobe Security Checklist](/help/sites-administering/security-checklist.md) is the official checklist provided to ensure that AEM is secure at installation. It contains the security measures and verification steps you need to perform to ensure the integrity of your instance. [](/help/sites-administering/security-checklist.md)
+The [Adobe Security Checklist](/help/sites-administering/security-checklist.md) is the official checklist provided to ensure that AEM is secure at installation. It contains the security measures and verification steps you need to perform to ensure the integrity of your instance.
 
 ### Adobe Support Portal Project Set Up {#adobe-support-portal-project-set-up}
 

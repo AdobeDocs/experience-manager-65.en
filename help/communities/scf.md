@@ -119,7 +119,7 @@ Visit [Server-Side Customizations](server-customize.md) for information on custo
 
 ## Handlebars JS Templating Language {#handlebars-js-templating-language}
 
-One of the more noticeable changes in the new framework is the use of the [Handlebars JS templating language (HBS)](https://www.handlebarsjs.com/), a popular open-source technology for server-client rendering.
+One of the more noticeable changes in the new framework is the use of the `Handlebars JS` (HBS)templating language, a popular open-source technology for server-client rendering.
 
 HBS scripts are simple, logic-less, compile on both server and client, are easy to overlay and customize, and naturally bind with the client UX because HBS supports client side rendering.
 

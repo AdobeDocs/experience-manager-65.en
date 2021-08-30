@@ -31,7 +31,7 @@ AEM Forms supports the following web service standards:
 * **MTOM**: Represents a way to encode attachments with SOAP requests. (See [Invoking AEM Forms using MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: Represents another way to encode attachments with SOAP requests. (See [Invoking AEM Forms using SwaRef](#invoking-aem-forms-using-swaref).)
 * **SOAP with attachments**: Supports both MIME and DIME (Direct Internet Message Encapsulation). These protocols are standard ways of sending attachments over SOAP. Microsoft Visual Studio .NET applications use DIME. (See [Invoking AEM Forms using Base64 encoding](#invoking-aem-forms-using-base64-encoding).)
-* **WS-Security**: Supports a user name password token profile, which is a standard way of sending user names and passwords as part of the WS Security SOAP header. AEM Forms also supports HTTP basic authentication. (See [Passing credentials using WS-Security headers](https://www.adobe.com/devnet/livecycle/articles/passing_credentials.html).)
+* **WS-Security**: Supports a user name password token profile, which is a standard way of sending user names and passwords as part of the WS Security SOAP header. AEM Forms also supports HTTP basic authentication. s
 
 To invoke AEM Forms services using a web service, typically you create a proxy library that consumes the service WSDL. The *Invoking AEM Forms using Web Services* section uses JAX-WS to create Java proxy classes to invoke services. (See [Creating Java proxy classes using JAX-WS](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -343,18 +343,6 @@ The following table lists Java data types and shows the corresponding web servic
  </tbody>
 </table>
 
-**Adobe Developer website**
-
-The Adobe Developer website contains the following article that discusses invoking AEM Forms services using the web service API:
-
-[Creating form rendering ASP.NET applications](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)
-
-[Invoking web services using custom components](https://www.adobe.com/devnet/livecycle/articles/extend_webservices.html)
-
->[!NOTE]
->
->Invoking web services using custom components describes how to create a AEM Forms component that invokes third party web services.
-
 ## Creating Java proxy classes using JAX-WS {#creating-java-proxy-classes-using-jax-ws}
 
 You can use JAX-WS to convert a Forms service WSDL to Java proxy classes. These classes enable you to invoke AEM Forms services operations. Apache Ant lets you create a build script that generates Java proxy classes by referencing a AEM Forms service WSDL. You can generate JAX-WS proxy files by performing the following steps:
@@ -481,7 +469,7 @@ You can generate Axis Java library files by performing the following steps:
     * Add the bin directory to your class path.
     * Set the `ANT_HOME` environment variable to the directory where you installed Ant.
 
-1. Install Apache Axis 1.4 on the client computer. It is available at [https://ws.apache.org/axis/](https://ws.apache.org/axis/.md).
+1. Install Apache Axis 1.4 on the client computer. It is available at [https://ws.apache.org/axis/](https://ws.apache.org/axis/).
 1. Set up the class path to use the Axis JAR files in your web service client, as described in the Axis installation instructions at [https://ws.apache.org/axis/java/install.html](https://ws.apache.org/axis/java/install.html).
 1. Use the Apache WSDL2Java tool in Axis to generate Java proxy classes. Create an Ant build script to accomplish this task. The following script is a sample Ant build script named build.xml:
 

@@ -49,7 +49,7 @@ This means that the front end developer can add customer content before or after
 
 ### Dynamic Rendering {#dynamic-rendering}
 
-The SPA should only rely on dynamic rendering of content. This is the default expectation where AEM fetches and renders all children of the content structure. [](/help/sites-developing/spa-architecture.md#portability)
+The SPA should only rely on dynamic rendering of content. This is the default expectation where AEM fetches and renders all children of the content structure.
 
 Any explicit rendering that points to specific content is considered static rendering and though supported will not be compatible with AEM's content authoring features. This also goes against the principle of [portability](/help/sites-developing/spa-architecture.md#portability).
 
@@ -65,7 +65,7 @@ Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.c
 
 ## SPA Design Models {#spa-design-models}
 
-If the [principles of developing SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) are followed, then your SPA will be functional with all supported AEM content authoring features. [](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
+If the [principles of developing SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) are followed, then your SPA will be functional with all supported AEM content authoring features.
 
 There may be cases however when this is not entirely necessary. The following table gives an overview of the various design models, their advantages, and their disadvantages.
 
@@ -97,7 +97,6 @@ There may be cases however when this is not entirely necessary. The following ta
 >[!NOTE]
 >
 >Although all models are supported in AEM, only by implementing the third (and thereby following the recommended [SPA development principles in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) will the content authors be able to interact with and edit the content of the SPA in AEM as they are accustomed.
->[](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)
 
 ## Migrating Existing SPAs to AEM {#migrating-existing-spas-to-aem}
 
