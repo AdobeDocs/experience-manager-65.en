@@ -50,7 +50,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
   * Pathfield in [!DNL Sites] editor allows authors to drag assets from [!DNL Content Finder].
 
-* Added support for ` GuideBridge#getGuidePath` API in [!DNL AEM Forms].
+* Added support for `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
 
 * You can now use Automated Forms Conversion service to convert PDF Forms in French, German, and Spanish language to adaptive forms.
 

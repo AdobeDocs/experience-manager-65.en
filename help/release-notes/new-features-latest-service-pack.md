@@ -72,6 +72,8 @@ Administrators can limit the number of sub-assets that [!DNL Experience Manager]
   * [!DNL RHEL8]
   * [!DNL Apache Geode cache solution]
 
+* Added support for `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
+
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### Ability to restore deleted pages and tree (6.5.9.0) {#ability-to-restore-pages-tree}
