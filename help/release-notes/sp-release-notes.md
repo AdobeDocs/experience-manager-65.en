@@ -52,7 +52,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Added support for `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
 
-* You can now use Automated Forms Conversion service to convert PDF Forms in French, German, and Spanish language to adaptive forms.
+* You can now use Automated Forms Conversion service to [convert PDF Forms in French, German, and Spanish language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) to adaptive forms.
 
 * **Error messages in Properties browser**: Added error messages for each property in the Adaptive Forms Properties browser. These messages help understand allowed values for a field.
 
