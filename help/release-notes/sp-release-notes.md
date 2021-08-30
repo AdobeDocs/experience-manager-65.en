@@ -64,7 +64,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   * [!DNL Open Office 4.1.10]
   * [!DNL Microsoft Office 2019]
   * [!DNL Microsoft Windows Server 2019]
-  * [!DNL RHEL8]
+  * [!DNL RHEL8.3]
   * [!DNL Apache Geode cache solution]
 
 For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
