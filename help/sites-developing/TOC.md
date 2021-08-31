@@ -113,7 +113,7 @@ role: Developer
         + [Composite Components in SPAs](spa-composite-component.md)
         + [SPA Reference Materials](spa-reference-materials.md)
     + [HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
-    + [Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/fragments/content-fragments.html)
+    + [Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
     + [Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/experience-fragments.html)
     + [Understanding Content Fragments and Content Services in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Development Tools{#devtools}
