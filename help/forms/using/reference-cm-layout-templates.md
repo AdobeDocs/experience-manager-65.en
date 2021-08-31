@@ -14,7 +14,7 @@ exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 
 In Correspondence Management, a letter template contains typical form fields, layout features such as a header and footer, and empty "target areas" for the placement of content.
 
-Correspondence Management provides letter templates in the AEM Forms package [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). For installing a package, see [How to Work With Packages](/help/sites-administering/package-manager.md). You can customize the templates in Designer according to your branding and business needs. The package includes the following templates:
+Correspondence Management provides letter templates in the [AEM Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). You can customize the templates in Designer according to your branding and business needs. The package includes the following templates:
 
 * Classic
 * Classic Simple
