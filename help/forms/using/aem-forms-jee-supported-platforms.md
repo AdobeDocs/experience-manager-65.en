@@ -788,7 +788,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 >[!NOTE]
 >
->The platforms marked as [deprecated remain in support until AEM Forms 6.5 SP 15 (6.5.15.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html). 
+>The platforms marked as [deprecated remain in support until AEM Forms 6.5 Service Pack 15 (6.5.15.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html). 
 
 
 
