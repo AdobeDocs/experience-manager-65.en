@@ -291,7 +291,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit) (Deprecated)</br><b>Note:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> reaches the End of Maintenance phase and transitions to the Extended Life Cycle Support phase on Nov 30, 2020. Adobe recommends Red Hat Enterprise Linux 7 for upgrades and new installations. Existing installations can use Red Hat Enterprise Linux 6 during the Extended Life Cycle Support phase.</p> </td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit) (Deprecated)</td>
    <td><p>A: Supported</p> </td>
    <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
   </tr>
@@ -461,25 +461,37 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016<br /> </td>
+   <td>Microsoft® Office Visio 2019<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2016<br /> </td>
+   <td>Microsoft® Office Visio 2016 (Deprecated)<br /> </td>
+   <td>VSD, VSDX</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Publisher 2019<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016<br /> </td>
+   <td>Microsoft® Publisher 2016 (Deprecated)<br /> </td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Project 2019<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
-   <td>OpenOffice 4.1.2 (Deprecated)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
+   <td>Microsoft® Project 2016 (Deprecated)<br /> </td>
+   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
   </tr>
+  <tr>
+   <td>OpenOffice 4.1.2 (Deprecated)</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
+  </tr>  
  </tbody>
 </table>
 
@@ -490,7 +502,6 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >In addition:
 >
 >* PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006 or later or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
->* PDF Generator requires 32-bit version of [Acrobat 2017 classic track version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) (TBD) to perform the conversion.
 >* PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion.
 >* PDF Generator does not support Microsoft Office 365.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
@@ -765,7 +776,7 @@ Additional information for third-party patches can also be found by searching th
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on 2nd September, 2021:
 
-* Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends 6th June, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+* Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends June 6th, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 * Microsoft Windows Server 2016 (64-bit)
 
@@ -777,7 +788,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 >[!NOTE]
 >
->The platforms marked as deprectaed remain in support until AEM Forms 6.5 SP 15 (6.5.15.0) release. 
+>The platforms marked as [deprecated remain in support until AEM Forms 6.5 SP 15 (6.5.15.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html). 
 
 
 
