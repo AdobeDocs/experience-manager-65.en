@@ -776,7 +776,7 @@ Additional information for third-party patches can also be found by searching th
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 2, 2021:
 
-* Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+* Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 * Microsoft Windows Server 2016 (64-bit)
 
