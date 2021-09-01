@@ -270,13 +270,28 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <th><p><strong>Support level</strong></p> </th>
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
   </tr>
-  <tr>
-   <td>Microsoft Windows Server 2016 (64-bit)</td>
+   <tr>
+   <td>Microsoft Windows Server 2019 (64-bit)</td>
    <td>A: Supported</td>
    <td>Service packs and critical updates</td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit)</br><b>Note:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> reaches the End of Maintenance phase and transitions to the Extended Life Cycle Support phase on Nov 30, 2020. Adobe recommends Red Hat Enterprise Linux 7 for upgrades and new installations. Existing installations can use Red Hat Enterprise Linux 6 during the Extended Life Cycle Support phase.</p> </td>
+   <td>Ubuntu 20.04</td>
+   <td>A: Supported</td>
+   <td>Service packs and critical updates</td>
+  </tr>
+  <tr>
+   <td>Microsoft Windows Server 2016 (64-bit) (Deprecated)</td>
+   <td>A: Supported</td>
+   <td>Service packs and critical updates</td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 8 (Kernel 4.x) (64-bit)</p> </td>
+   <td><p>A: Supported</p> </td>
+   <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
+  </tr>
+  <tr>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit) (Deprecated)</br><b>Note:</b> <a href="https://access.redhat.com/articles/4665701">Red Hat Enterprise Linux 6</a> reaches the End of Maintenance phase and transitions to the Extended Life Cycle Support phase on Nov 30, 2020. Adobe recommends Red Hat Enterprise Linux 7 for upgrades and new installations. Existing installations can use Red Hat Enterprise Linux 6 during the Extended Life Cycle Support phase.</p> </td>
    <td><p>A: Supported</p> </td>
    <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
   </tr>
@@ -426,11 +441,19 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
    <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> latest version</td>
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version (Deprecated)</td>
+   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2019</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2016 (Deprecated)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
@@ -450,7 +473,11 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
    <td>MPP</td>
   </tr>
   <tr>
-   <td>OpenOffice 4.1.2</td>
+   <td>OpenOffice 4.1.2 (Deprecated)</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
+  </tr>
+  <tr>
+   <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
   </tr>
  </tbody>
@@ -462,7 +489,8 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition:
 >
->* PDF Generator requires 32-bit version of [Acrobat 2017 classic track version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>* PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006 or later or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>* PDF Generator requires 32-bit version of [Acrobat 2017 classic track version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) (TBD) to perform the conversion.
 >* PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion.
 >* PDF Generator does not support Microsoft Office 365.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
@@ -534,7 +562,7 @@ For additional reuirements see:
    <td>Service packs and critical updates</td>
   </tr>
   <tr>
-   <td>Microsoft® Windows® 2016 Server</td>
+   <td>Microsoft® Windows® 2016 Server (TBD)</td>
    <td>Service packs and critical updates</td>
   </tr>
  </tbody>
@@ -570,9 +598,14 @@ For additional reuirements see:
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
   </tr>
   <tr>
-   <td>Acrobat 2017 (Classic track)</td>
+   <td>Acrobat 2020 (Classic track)</td>
+   <td>Version 20.004.30006 or later<br /> </td>
+  </tr>
+  <tr>
+   <td>Acrobat 2017 (Classic track) (Deprecated)</td>
    <td>Version 17.011.30078 or later<br /> </td>
   </tr>
+  
  </tbody>
 </table>
 
@@ -727,6 +760,26 @@ Under circumstances beyond Adobe’s control, third-party patches that claim bac
 Adobe reserves the right to change the third-party reference platforms supported by a AEM Forms on JEE release and their supported patch definitions at any given point.
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
+
+## Platform updates {#platform-updates}
+
+The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on 2nd September, 2021:
+
+* Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends 6th June, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
+
+* Microsoft Windows Server 2016 (64-bit)
+
+* Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit)
+
+* Microsoft® Office 2016
+
+* OpenOffice 4.1.2
+
+>[!NOTE]
+>
+>The platforms marked as deprectaed remain in support until AEM Forms 6.5 SP 15 (6.5.15.0) release. 
+
+
 
 ## Revision History {#revision-history}
 
