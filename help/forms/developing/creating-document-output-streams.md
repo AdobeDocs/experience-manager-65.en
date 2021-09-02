@@ -399,7 +399,7 @@ When a PDF/A document is opened in Acrobat, a message is displayed that confirms
 
 >[!NOTE]
 >
->For more information about the Output service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>For more information about the Output service, see [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_65).
 
 ### Summary of steps {#summary_of_steps-1}
 
