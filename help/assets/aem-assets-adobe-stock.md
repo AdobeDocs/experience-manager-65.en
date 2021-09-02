@@ -8,21 +8,82 @@ exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 ---
 # Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
+<!-- old content
+
+[!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager]. 
+
 Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of [!DNL Experience Manager].
 
 [!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. [!DNL Experience Manager] users are able to quickly find, preview, and license [!DNL Adobe Stock] assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
+-->
 
+<!-- New overview content
+-->
+
+[!DNL Adobe Stock] service provides designers and businesses with access to millions of high-quality, curated, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets for all their creative projects. 
+
+[!DNL Adobe Stock] for enterprise offering, by default, includes sharing rights across the organization. Once an asset has been licensed by a user of your organization, other users of your organization can identify, download, and use this asset without having to license it again. Once an asset has been licensed by your organization, the right to use it is perpetual.
+
+Organizations can integrate their enterprise [!DNL Adobe Stock] plan with [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of [!DNL Experience Manager]. [!DNL Experience Manager] users can quickly find, preview, and license Adobe Stock assets that are saved in [!DNL Experience Manager], without leaving the [!DNL Experience Manager] interface.
+
+<!-- Old content
 ## Prerequisites {#prerequisites}
 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
+-->
 
 ## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
 
+[!DNL Experience Manager Assets] provides users the ability to search, preview, save and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
+
+**Prerequisites**
+
+The integration requires: 
+* An [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
+* A user with permissions in Admin Console to the default Stock product profile
+* A user with permissions to the Developer Access profile for creating integration in Adobe Developer Console
+
+An enterprise [!DNL Adobe Stock] plan,
+* Provides product entitlement for [!DNL Adobe Stock] (Stocks connected to Experience Manager)
+* Credits purchased into the [!DNL Adobe Admin Console] for your stock entitlement
+* Enables Service Account (JWT) authentication within [!DNL Adobe Developer Console] for your stock entitlement
+* Enables managing the credits and licensing globally from within [!DNL Adobe Admin Console]
+
+Within the entitlement, a default Product Profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having access directly to the Product can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create integration (API) to authenticate communication between [!DNL Experience Manager] and [!DNL Adobe Stock].
+
+>[!NOTE]
+>
+>The Stock service account (JWT) authentication comes with the enterprise Stock entitlement.
+>
+>The integration does not support Oauth authentication for enterprise Stock entitlement.
+
+<!-- old content
 To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock], create an IMS configuration and an [!DNL Adobe Stock] configuration in [!DNL Experience Manager].
 
 >[!NOTE]
 >
 >Only [!DNL Experience Manager] administrators and [!DNL Admin Console] administrators for an organization can perform the integration as it requires administrator privileges.
+-->
+
+### Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
+
+Perform the following steps in the listed sequence to integrate [!DNL Experience Manager] and [!DNL Adobe Stock]: 
+
+1. [Obtain public certificate](#public-certificate)
+   
+   In [!DNL Experience Manager], create an IMS account and generate a public certificate (public key).
+
+1. [Create service account (JWT) connection](#createnewintegration) 
+   
+   In [!DNL Adobe Developer Console], create a project for your [!DNL Adobe Stock] organization. Under the project, configure an API using the public key to create a service account (JWT) connection. Get the service account credentials and JWT payload information.
+
+1. [Configure IMS account](#create-ims-account-configuration)
+
+   In [!DNL Experience Manager], configure the IMS account using the service account credentials and JWT payload.
+
+1. [Configure cloud service](#configure-the-cloud-service)
+
+   In [!DNL Experience Manager], configure an [!DNL Adobe Stock cloud] service using the IMS account.
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
