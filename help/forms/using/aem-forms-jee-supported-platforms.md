@@ -177,7 +177,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>R: Restricted Support</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 </td>
+   <td>MySQL 5.7.34 </td>
    <td>-</td>
    <td>R: Restricted Support</td>
   </tr>  
@@ -573,7 +573,7 @@ For additional reuirements see:
    <td>Service packs and critical updates</td>
   </tr>
   <tr>
-   <td>Microsoft® Windows® 2016 Server (TBD)</td>
+   <td>Microsoft® Windows® 2016 Server</td>
    <td>Service packs and critical updates</td>
   </tr>
  </tbody>
