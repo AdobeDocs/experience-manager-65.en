@@ -23,12 +23,38 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: August, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.08.20|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.08.20.zip)|
+|CIF Core Components |2.1.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0)|
+|CIF Venia Reference Site| 2021.08.27|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27)|
+
+### What's New {#what-is-new-august}
+
+* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
+
+  ![New Category Picker](/help/assets/CIF/category-picker.png)
+
+* Better A11Y support for CIF Core Components
+
+### Bug fixes {#bug-fixes-august}
+
+* Cannot close category filter accordion once it is open
+
+* 'Call to action text' property broken in product teaser
+
+* CIF JS errors during AEM CS deployment step
+
+* Fix raw product access for mapped product product list items
+
 ## Release Date: July, 2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
 |CIF add-on | 2021.07.21|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip)|
-|CIF Core Components |1.13.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.13.0)|
+|CIF Core Components |2.0.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0)|
 |CIF Venia Reference Site| 2021.07.22|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22)|
 
 ### What's New {#what-is-new-july}
