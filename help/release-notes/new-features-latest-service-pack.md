@@ -57,6 +57,23 @@ Administrators can limit the number of sub-assets that [!DNL Experience Manager]
 >
 >The add-on package of [!DNL Experience Manager Forms] is made available a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
+* You can now use Automated Forms Conversion service to [convert PDF Forms in French, German, and Spanish language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) to adaptive forms.
+
+* **Error messages in Properties browser**: Added error messages for each property in the Adaptive Forms Properties browser. These messages help understand allowed values for a field.
+
+* **Support to use the literal option to set value for a JSON type variable**: You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
+
+* **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+  * [!DNL Adobe Acrobat 2020]
+  * [!DNL Ubuntu 20.04]
+  * [!DNL Open Office 4.1.10]
+  * [!DNL Microsoft Office 2019]
+  * [!DNL Microsoft Windows Server 2019]
+  * [!DNL RHEL8.3]
+  * [!DNL Apache Geode cache solution]
+
+* Added support for `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
+
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
 ### Ability to restore deleted pages and tree (6.5.9.0) {#ability-to-restore-pages-tree}
