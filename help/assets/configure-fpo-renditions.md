@@ -4,7 +4,6 @@ description: Generate FPO renditions of new and existing assets using Experience
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
-exl-id: 
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 

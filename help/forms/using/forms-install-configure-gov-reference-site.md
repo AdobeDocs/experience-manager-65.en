@@ -249,7 +249,7 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
         1. Access Token URL - e.g. [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
         1. Authorization Scope - **openid**
         1. Authentication Header - **Authorization Bearer**
-        1. Resource - e.g [https://msdynamicsserver.api.crm3.dynamics.com](https://msdynamicsserver.api.crm3.dynamics.com)
+        1. Resource - e.g `https://msdynamicsserver.api.crm3.dynamics.com`
 
     1. Click “Connect to OAuth”.
 
