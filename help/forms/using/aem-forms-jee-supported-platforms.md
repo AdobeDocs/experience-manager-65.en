@@ -176,8 +176,13 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Repository Microkernel</td>
    <td>R: Restricted Support</td>
   </tr>
-    <tr>
-   <td>MySQL 5.7.19 </td>
+  <tr>
+   <td>MySQL 5.7.35 </td>
+   <td>-</td>
+   <td>R: Restricted Support</td>
+  </tr>
+  <tr>
+   <td>MySQL 5.7.19 (Deprecated) </td>
    <td>-</td>
    <td>R: Restricted Support</td>
   </tr>
