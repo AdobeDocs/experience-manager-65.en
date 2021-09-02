@@ -69,8 +69,7 @@ Administrators can limit the number of sub-assets that [!DNL Experience Manager]
   * [!DNL Open Office 4.1.10]
   * [!DNL Microsoft Office 2019]
   * [!DNL Microsoft Windows Server 2019]
-  * [!DNL RHEL8.3]
-  * [!DNL Apache Geode cache solution]
+  * [!DNL RHEL8]
 
 * Added support for `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
 

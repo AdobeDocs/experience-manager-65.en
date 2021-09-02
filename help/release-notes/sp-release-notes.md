@@ -64,8 +64,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   * [!DNL Open Office 4.1.10]
   * [!DNL Microsoft Office 2019]
   * [!DNL Microsoft Windows Server 2019]
-  * [!DNL RHEL8.3]
-  * [!DNL Apache Geode cache solution]
+  * [!DNL RHEL8]
 
 For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -284,7 +283,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Delay in the display of characters in the [!UICONTROL Data] tab as well as in the HTML letter preview (NPR-37020).
 
-* When you are editing a text document fragment, the new words displays as HTML tags after saving the fragment (NPR-36837).
+* When you are editing a text document fragment, the new words display as HTML tags after saving the fragment (NPR-36837).
 
 * Unable to view the letters that are saved as drafts (NPR-36816).
 
