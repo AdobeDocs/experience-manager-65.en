@@ -501,7 +501,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition:
 >
->* PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Actobat 2017 to perform the conversion.
+>* PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Actobat 2017 version 17.011.30078 to perform the conversion.
 >* PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion.
 >* PDF Generator does not support Microsoft Office 365.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
@@ -796,3 +796,13 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 * Sep 09, 2020
   * Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
+
+* Sep 02, 2021
+  * **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+    * [!DNL Adobe Acrobat 2020]
+    * [!DNL Ubuntu 20.04]
+    * [!DNL Open Office 4.1.10]
+    * [!DNL Microsoft Office 2019]
+    * [!DNL Microsoft Windows Server 2019]
+    * [!DNL RHEL8]
+
