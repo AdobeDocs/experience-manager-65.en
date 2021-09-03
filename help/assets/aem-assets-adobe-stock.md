@@ -279,15 +279,13 @@ You can create a user group or assign permissions to an existing user group. Per
 1. Add the user or the group to the [!DNL Adobe Stock] cloud configuration. 
 
 
-## User access to Adobe Stock assets {#access-stock-assets}
-
 A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuration can search and license the [!DNL Adobe Stock] assets from the [!DNL Experience Manager] interface. The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. If the user is assigned permissions on multiple Adobe Stock cloud configurations, the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
 
 To activate the [!DNL Adobe Stock] cloud configuration:
 
 1. Log in to [!DNL Experience Manager].
 
-1. Click the user icon located at the upper-right corner and then click **[!UICONTROL User Preferences]**. 
+1. Click the user icon located at the upper-right corner and then click **[!UICONTROL User Preferences]**.
 
 1. Select the desired **[!UICONTROL Stock Configuration]** from the dropdown list and click **[!UICONTROL Accept]** to activate the configuration. 
 
