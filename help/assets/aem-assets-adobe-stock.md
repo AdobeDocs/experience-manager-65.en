@@ -285,6 +285,7 @@ A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuratio
 
 The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. If the user is assigned permissions on multiple Adobe Stock cloud configurations (for example, locale based configurations), the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
 
+**To activate the [!DNL Adobe Stock] cloud configuration:**
 
 1. Log in to [!DNL Experience Manager].
 
@@ -299,13 +300,11 @@ The user has to perform an additional step of activating the [!DNL Adobe Stock] 
 The following table explains how the user permissions works while accessing the [!DNL Adobe Stock] assets:
 
 | User | Group | Permissions | Accept Stock configuration in User Preferences | Access Assets | Access Adobe Stock |
-   | --- | --- | --- | --- | --- | --- |
-   | admin | N/A | All | N/A | Yes | Yes |  
-   | test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | Yes | Yes | Yes |
-   | test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | No | Error: Failed to load data | No |
-   | test-doc1 | DAM user | allow: `/conf/global/settings/stock` deny: `/cloud-config`| Stock configuration is not visible | Yes | No |
-
-
+| --- | --- | --- | --- | --- | --- |
+| admin | N/A | All | N/A | Yes | Yes |  
+| test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | Yes | Yes | Yes |
+| test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | No | Error: Failed to load data | No |
+| test-doc1 | DAM user | allow: `/conf/global/settings/stock` deny: `/cloud-config`| Stock configuration is not visible | Yes | No |
 
 
 ## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
