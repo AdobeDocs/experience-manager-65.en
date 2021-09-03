@@ -221,10 +221,83 @@ Perform the following steps to configure the [!DNL Adobe Stock] cloud service:
 
 1. To add users or groups, select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]**. 
 
-1. Search to add the users or groups to whom you have assigned permissions to access the Adobe Stock configuration. See, user access to [!DNL Adobe Stock] configuration. 
+1. Search to add the users or groups to whom you have assigned permissions to access the Adobe Stock configuration. See, [user access to [!DNL Adobe Stock] configuration](#user-access-to-stocks). 
    
 
+### Assign permissions to user group {#assign-permissions-to-group}
 
+Administrators can create user groups and give permissions to certain users or groups to access the [!DNL Adobe Stock] cloud service. 
+
+Following are the permissions required for a user to search and license Adobe Stock assets:
+
+* Configure the path: `/conf/global/settings/stock`
+* Privileges: `jcr:read`
+* Permission Type: `Allow`
+
+You can create a new user group or assign permissions to an existing user group. Permissions can be assigned from the [!DNL Experience Manager Assets] interface or from the [!DNL User Admin] console.
+
+**To provide access to a user group from [!DNL Experience Manager]:**
+
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]**. Create a new user group for [!DNL Adobe Stock].
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Permissions]**. 
+
+1. Search for the user group in the left panel and add new **[!UICONTROL Access Control Entry (ACE)]** for Adobe Stock. 
+
+   * Configure the path: `/conf/global/settings/stock`
+   * Privileges: `jcr:read`
+   * Permission Type: `Allow`
+
+   Click **[!UICONTROL Add]**.
+
+   ![user-permissions](assets/aem-stock-user-permissions.png)
+
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]**.
+
+1. Add the newly created user group to allow them access access to the [!DNL Adobe Stock] configuration. Click **[!UICONTROL Save & Close]**.
+   
+   ![assign-user](assets/aem-stock-adduser.png)
+
+**To provide access to a user from [!DNL User Admin console]:**
+
+1. Open the [!DNL Experience Manager] User Admin console. The default URL is `http://localhost:4502/userdamin`.
+
+1. In the left panel, search for the user by using the `user_id` or `name`. Double-click to open the user properties. 
+
+1. Navigate to the **[!UICONTROL Permissions]** tab and allow `read` permissions for the [!DNL Adobe Stock] cloud configuration located at: `/conf/global/settings/stock`.
+   
+   >[!CAUTION]
+   >
+   >If the cloud configuration is not allowed, the user can only access **[!UICONTROL Assets]** in the [!DNL Experience Manager] interface. 
+   >
+   >To allow access to [!UICONTROL Assets] and [!DNL Adobe Stock] assets, ensure that the cloud configuration is allowed for the user.  
+   
+1. Click **[!UICONTROL Save]** to update the permissions. 
+
+   ![assign-user-in-user-admin](assets/aem-stock-user-admin-console.png)
+
+1. Add the user or the group to the [!DNL Adobe Stock] cloud configuration. 
+
+
+### User access to Adobe Stock assets in Experience Manager {#user-access-to-stocks}
+
+A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuration can search and license the [!DNL Adobe Stock] assets from the [!DNL Experience Manager] interface. 
+
+The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. 
+
+If the user is assigned permissions on multiple Adobe Stock cloud configurations (for example, locale based configurations), the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
+
+
+1. Log in to [!DNL Experience Manager].
+1. Click the user icon located at the upper-right corner and then click **[!UICONTROL User Preferences]** 
+1. Select the desired **[!UICONTROL Stock Configuration]** from the dropdown list and click **[!UICONTROL Accept]** to activate the configuration. 
+
+   ![user-preferences](assets/aem-stock-preferences.png)
+
+1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock]**. You can now view, search, and license [!DNL Adobe Stock] assets.
+
+The following table explains how the user permissions works while accessing the [!DNL Adobe Stock] assets:
+ 
 
 <!--old content
 
