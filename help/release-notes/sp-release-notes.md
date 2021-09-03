@@ -266,7 +266,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 >[!NOTE]
 >
->* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+>The service pack enables you to run [!DNL AEM Forms] on the latest server operating systems, application servers, and databases. It also brings some features available on Cloud Service to on-premise environment and provides fixes for customer reported issues. [!DNL AEM Forms] on OSGi service pack is available to download and install. [!DNL AEM Forms on JEE]  service pack would be available on September 09, 2021.
 
 **Adaptive Forms**
 
