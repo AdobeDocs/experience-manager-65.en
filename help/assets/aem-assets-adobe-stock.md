@@ -221,7 +221,7 @@ Perform the following steps to configure the [!DNL Adobe Stock] cloud service:
 
 1. To add users or groups, select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]**. 
 
-1. Search to add the users or groups to whom you have assigned permissions to access the Adobe Stock configuration. See, [user access to [!DNL Adobe Stock] configuration](#user-access-to-stocks). 
+1. Search to add the users or groups to whom you have assigned permissions to access the Adobe Stock configuration. See, [assign permissions to user group](#assign-permissions-to-group). 
    
 
 ### Assign permissions to user group {#assign-permissions-to-group}
@@ -283,13 +283,13 @@ You can create a new user group or assign permissions to an existing user group.
 
 A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuration can search and license the [!DNL Adobe Stock] assets from the [!DNL Experience Manager] interface. 
 
-The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. 
-
-If the user is assigned permissions on multiple Adobe Stock cloud configurations (for example, locale based configurations), the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
+The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. If the user is assigned permissions on multiple Adobe Stock cloud configurations (for example, locale based configurations), the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
 
 
 1. Log in to [!DNL Experience Manager].
-1. Click the user icon located at the upper-right corner and then click **[!UICONTROL User Preferences]** 
+
+1. Click the user icon located at the upper-right corner and then click **[!UICONTROL User Preferences]**. 
+
 1. Select the desired **[!UICONTROL Stock Configuration]** from the dropdown list and click **[!UICONTROL Accept]** to activate the configuration. 
 
    ![user-preferences](assets/aem-stock-preferences.png)
@@ -297,39 +297,16 @@ If the user is assigned permissions on multiple Adobe Stock cloud configurations
 1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock]**. You can now view, search, and license [!DNL Adobe Stock] assets.
 
 The following table explains how the user permissions works while accessing the [!DNL Adobe Stock] assets:
- 
 
-<!--old content
+| User | Group | Permissions | Accept Stock configuration in User Preferences | Access Assets | Access Adobe Stock |
+   | --- | --- | --- | --- | --- | --- |
+   | admin | N/A | All | N/A | Yes | Yes |  
+   | test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | Yes | Yes | Yes |
+   | test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | No | Error: Failed to load data | No |
+   | test-doc1 | DAM user | allow: `/conf/global/settings/stock` deny: `/cloud-config`| Stock configuration is not visible | Yes | No |
 
-### Create an IMS configuration {#create-an-ims-configuration}
 
-1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
-1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
-1. Click **[!UICONTROL Create certificate]**. Once created, download the public key. Click **[!UICONTROL Next]**. Leave the [!UICONTROL Adobe IMS Technical Account Configuration] screen open to provide the required values shortly.
-1. Access [Adobe Developer Console](https://console.adobe.io). Ensure that your account has administrator permissions for the organization for which the integration is required.
-1. Click **[!UICONTROL Create new project]** and click **[!UICONTROL Add API]**. Select **[!UICONTROL Adobe Stock]** from the list of APIs that are available to you. Select [!UICONTROL OAUTH 2.0 Web].
-1. Provide **[!UICONTROL Default redirect URI]** and **[!UICONTROL Redirect URI pattern]** values. Click **[!UICONTROL Save configured API]**. Copy the generated ID and secret.
-1. In [!UICONTROL Adobe IMS Technical Account Configuration] screen, provide the values in the boxes titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. For detailed information about these values, see [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
 
--->
-
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
--->
-
-<!--
-### Create [!DNL Adobe Stock] configuration in [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
-
-1. In the [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
-1. Click **[!UICONTROL Create]** to create a configuration and associate it with your existing IMS Configuration. Select `PROD` as the environment parameter.
-1. In **[!UICONTROL Licensed Assets Path]** field, leave a location as is. Do not change the location where you want to store the [!DNL Adobe Stock] assets.
-1. Complete creation by adding all the required properties. Click **[!UICONTROL Save & Close]**.
-1. Add [!DNL Experience Manager] users or groups, who can license the assets.
-
->[!NOTE]
->
->If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in [!UICONTROL User Preferences] panel. To access the panel from [!DNL Experience Manager] home page, click the user icon and then click **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
-
--->
 
 ## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
 
@@ -402,3 +379,36 @@ Users can see the properties for both, licensed and unlicensed assets.
 >* [Video tutorial on using [!DNL Adobe Stock] assets with [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [[!DNL Adobe Stock] enterprise plan help](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/stock/faq.html)
+
+
+<!--old content
+
+### Create an IMS configuration {#create-an-ims-configuration}
+
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Click **[!UICONTROL Create]** and select **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
+1. Either reuse an existing certificate or select **[!UICONTROL Create new certificate]**.
+1. Click **[!UICONTROL Create certificate]**. Once created, download the public key. Click **[!UICONTROL Next]**. Leave the [!UICONTROL Adobe IMS Technical Account Configuration] screen open to provide the required values shortly.
+1. Access [Adobe Developer Console](https://console.adobe.io). Ensure that your account has administrator permissions for the organization for which the integration is required.
+1. Click **[!UICONTROL Create new project]** and click **[!UICONTROL Add API]**. Select **[!UICONTROL Adobe Stock]** from the list of APIs that are available to you. Select [!UICONTROL OAUTH 2.0 Web].
+1. Provide **[!UICONTROL Default redirect URI]** and **[!UICONTROL Redirect URI pattern]** values. Click **[!UICONTROL Save configured API]**. Copy the generated ID and secret.
+1. In [!UICONTROL Adobe IMS Technical Account Configuration] screen, provide the values in the boxes titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. For detailed information about these values, see [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
+
+-->
+
+<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+-->
+
+<!--
+### Create [!DNL Adobe Stock] configuration in [!DNL Experience Manager] {#create-adobe-stock-configuration-in-aem}
+
+1. In the [!DNL Experience Manager], navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Click **[!UICONTROL Create]** to create a configuration and associate it with your existing IMS Configuration. Select `PROD` as the environment parameter.
+1. In **[!UICONTROL Licensed Assets Path]** field, leave a location as is. Do not change the location where you want to store the [!DNL Adobe Stock] assets.
+1. Complete creation by adding all the required properties. Click **[!UICONTROL Save & Close]**.
+1. Add [!DNL Experience Manager] users or groups, who can license the assets.
+
+>[!NOTE]
+>
+>If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in [!UICONTROL User Preferences] panel. To access the panel from [!DNL Experience Manager] home page, click the user icon and then click **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
+
+-->
