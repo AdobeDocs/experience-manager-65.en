@@ -58,6 +58,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * **Support to use the literal option to set value for a JSON type variable**: You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
 
+<!--
+
 * [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
   * [!DNL Adobe Acrobat 2020]
   * [!DNL Ubuntu 20.04]
@@ -65,6 +67,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   * [!DNL Microsoft Office 2019]
   * [!DNL Microsoft Windows Server 2019]
   * [!DNL RHEL8]
+
+  -->
 
 For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -266,7 +270,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 **Adaptive Forms**
 
-* If the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+<!-->
+
+* When the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+
+-->
 
 * When you add a language dictionary to a translation project and then open the project, [!DNL AEM Forms] displays an error message (CQ-4324933):
 
@@ -302,19 +310,26 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * When you select all text in an editor, you cannot change the font text to Arial (NPR-36646).
 
+<!--
+
 * When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
+
+-->
 
 * When you copy and paste text to an editor, there are issues while changing the font to Arial for bullets available in the document (NPR-36628). 
 
 * Indentation issues for bullets in the text editor (NPR-36513).
 
+<!--
 **Designer**
 
 * Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
 
+-->
+
 **Document Services**
 
-* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message:
+* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message(CQ-4328666):
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -408,6 +423,8 @@ To know the platforms certified to work with this release, see the [technical re
 >
 >Experience Manager 6.5.10.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.10.0, install the latest version of the package post installation of Forms Add-On Package.
 
+<!--
+
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
@@ -420,6 +437,7 @@ For information about installing the cumulative installer for Experience Manager
 >
 >After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
+-->
 
 ### UberJar {#uber-jar}
 
