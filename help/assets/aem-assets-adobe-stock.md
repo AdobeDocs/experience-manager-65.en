@@ -279,6 +279,7 @@ You can create a new user group or assign permissions to an existing user group.
 1. Add the user or the group to the [!DNL Adobe Stock] cloud configuration. 
 
 
+<!--
 ### User access to Adobe Stock assets in Experience Manager {#access-to-stock}
 
 A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuration can search and license the [!DNL Adobe Stock] assets from the [!DNL Experience Manager] interface. 
@@ -305,7 +306,7 @@ The following table explains how the user permissions works while accessing the 
 | test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | Yes | Yes | Yes |
 | test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | No | Error: Failed to load data | No |
 | test-doc1 | DAM user | allow: `/conf/global/settings/stock` deny: `/cloud-config`| Stock configuration is not visible | Yes | No |
-
+-->
 
 ## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
 
