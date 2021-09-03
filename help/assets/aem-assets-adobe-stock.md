@@ -307,35 +307,6 @@ The following table explains how the user permissions works while accessing the 
 | test-doc1 | DAM user | allow: `/conf/global/settings/stock` deny: `/cloud-config`| Stock configuration is not visible | Yes | No |
 
 
-<!--
-### User access to Adobe Stock assets in Experience Manager {#access-to-stock}
-
-A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuration can search and license the [!DNL Adobe Stock] assets from the [!DNL Experience Manager] interface. 
-
-The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. If the user is assigned permissions on multiple Adobe Stock cloud configurations, the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
-
-**To activate the [!DNL Adobe Stock] cloud configuration:**
-
-1. Log in to [!DNL Experience Manager].
-
-1. Click the user icon located at the upper-right corner and then click **[!UICONTROL User Preferences]**. 
-
-1. Select the desired **[!UICONTROL Stock Configuration]** from the dropdown list and click **[!UICONTROL Accept]** to activate the configuration. 
-
-   ![user-preferences](assets/aem-stock-preferences.png)
-
-1. Navigate to **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock]**. You can now view, search, and license [!DNL Adobe Stock] assets.
-
-The following table explains how the user permissions works while accessing the [!DNL Adobe Stock] assets:
-
-| User | Group | Permissions | Accept Stock configuration in User Preferences | Access Assets | Access Adobe Stock |
-| --- | --- | --- | --- | --- | --- |
-| admin | N/A | All | N/A | Yes | Yes |  
-| test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | Yes | Yes | Yes |
-| test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | No | Error: Failed to load data | No |
-| test-doc1 | DAM user | allow: `/conf/global/settings/stock` deny: `/cloud-config`| Stock configuration is not visible | Yes | No |
--->
-
 ## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
 
 Using this capability, organizations can allow its users to work using [!DNL Adobe Stock] assets in [!DNL Experience Manager Assets]. From within the [!DNL Experience Manager] user interface, users can search [!DNL Adobe Stock] assets and license the required assets.
@@ -397,6 +368,8 @@ Users can see the properties for both, licensed and unlicensed assets.
 ## Known limitations {#known-limitations}
 
 * **Functionality to restrict users from licensing is not working properly**: All users having `read` permissions to the stock configuration are allowed to search and license the [!DNL Adobe Stock] assets. 
+
+* **To access [!DNL Adobe Stock] assets, non-admin users have to perform an additional step**: The **[!UICONTROL User Preferences]** panel shows the Adobe Stock configuration enabled but it does not work for a non-admin user. The user has to click on the **[!UICONTROL Accept]** button to activate the configuration. If the user does not perform this step, the system reflects an error message on accessing **[!UICONTROL Assets]**.   
 
 * **Editorial image warning is not displayed**: When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
 
