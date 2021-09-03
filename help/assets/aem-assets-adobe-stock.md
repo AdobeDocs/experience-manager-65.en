@@ -211,7 +211,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
    Your [!DNL Experience Manager Assets] author instance is now integrated with [!DNL Adobe Stock]. You can create multiple [!DNL Adobe Stock] configurations (for example, locale-based configurations). You can now access, search, and license the [!DNL Adobe Stock] assets from within the [!DNL Experience Manager] user interface. 
 
-   ![Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Adobe Experience Manager] workspace](assets/adobe-stock-search-results-workspace.png)
+   ![search-stock-assets](assets/aem-stock-searchstocks.png)
 
    >[!NOTE]
    >
