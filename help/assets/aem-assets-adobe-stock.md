@@ -280,9 +280,8 @@ You can create a user group or assign permissions to an existing user group. Per
 
 
 ## User access to Adobe Stock assets {#access-stock-assets}
-A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuration can search and license the [!DNL Adobe Stock] assets from the [!DNL Experience Manager] interface. 
 
-The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. If the user is assigned permissions on multiple Adobe Stock cloud configurations, the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
+A non-admin user having permissions to the [!DNL Adobe Stock] cloud configuration can search and license the [!DNL Adobe Stock] assets from the [!DNL Experience Manager] interface. The user has to perform an additional step of activating the [!DNL Adobe Stock] cloud configuration before accessing [!DNL Adobe Stock] assets. This is a one-time activity. If the user is assigned permissions on multiple Adobe Stock cloud configurations, the user can select the desired configuration from the **[!UICONTROL User Preferences** panel.
 
 To activate the [!DNL Adobe Stock] cloud configuration:
 
@@ -394,6 +393,8 @@ Users can see the properties for both, licensed and unlicensed assets.
 *Figure: View and access metadata and license references of saved assets.*
 
 ## Known limitations {#known-limitations}
+
+* **Functionality to restrict users from licensing is not working properly**: All users having `read` permissions to the stock configuration are allowed to search and license the [!DNL Adobe Stock] assets. 
 
 * **Editorial image warning is not displayed**: When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
 
