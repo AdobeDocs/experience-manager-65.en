@@ -12,6 +12,10 @@ exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
 ---
 # Advanced URL Configurations {#url}
 
+>[!NOTE]
+>
+> Search Engine Optimization (SEO) has become a key concern for many marketers. As a result, SEO concerns need to be addressed on many AEM projects. Please read [SEO and URL Management Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) for additional information.
+
 [AEM CIF Core Components](https://github.com/adobe/aem-core-cif-components) provides advanced configurations to customize the URLs for product and category pages. Many implementations will customize these URLs for search engine optimization (SEO) purposes. The following video details how to configure the `UrlProvider` Service and features of [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) to customize the URLs for product and category pages.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
@@ -22,7 +26,7 @@ To configure the `UrlProvider` service according to the SEO requierments and nee
 
 >[!NOTE]
 >
-> Since release 2.0.0 of the AEM CIF Core Components, the URL Provider configuration only provides pre-defined url formats, instead of the free-text configureable formats kown from 1.x releases. Furthermore the use of selectors to pass data in URLs has been replaced with suffixes. 
+> Since release 2.0.0 of the AEM CIF Core Components, the URL Provider configuration only provides pre-defined url formats, instead of the free-text configureable formats kown from 1.x releases. Furthermore the use of selectors to pass data in URLs has been replaced with suffixes.
 
 ### Product Page URL Format {#product}
 
