@@ -796,3 +796,13 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 * Sep 09, 2020
   * Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
+
+* Sep 02, 2021
+  * **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+    * [!DNL Adobe Acrobat 2020]
+    * [!DNL Ubuntu 20.04]
+    * [!DNL Open Office 4.1.10]
+    * [!DNL Microsoft Office 2019]
+    * [!DNL Microsoft Windows Server 2019]
+    * [!DNL RHEL8]
+
