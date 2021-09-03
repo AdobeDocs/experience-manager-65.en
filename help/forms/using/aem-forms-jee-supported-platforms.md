@@ -177,7 +177,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>R: Restricted Support</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.34 </td>
+   <td>MySQL 5.7.19 </td>
    <td>-</td>
    <td>R: Restricted Support</td>
   </tr>  
@@ -269,29 +269,14 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <th><p><strong> Platform</strong></p> </th>
    <th><p><strong>Support level</strong></p> </th>
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
-  </tr>
-   <tr>
-   <td>Microsoft Windows Server 2019 (64-bit)</td>
+  </tr>   
+  <tr>
+   <td>Microsoft Windows Server 2016 (64-bit)</td>
    <td>A: Supported</td>
    <td>Service packs and critical updates</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Ubuntu 20.04</td>
-   <td>A: Supported</td>
-   <td>Service packs and critical updates</td>
-  </tr>
-  <tr>
-   <td>Microsoft Windows Server 2016 (64-bit) (Deprecated)</td>
-   <td>A: Supported</td>
-   <td>Service packs and critical updates</td>
-  </tr>
-  <tr>
-   <td><p>Red Hat Enterprise Linux 8 (Kernel 4.x) (64-bit)</p> </td>
-   <td><p>A: Supported</p> </td>
-   <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
-  </tr>
-  <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit) (Deprecated)</td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit)</td>
    <td><p>A: Supported</p> </td>
    <td><p>Minor releases, cumulative updates, and critical updates</p> </td>
   </tr>
@@ -439,57 +424,33 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
   <tr>
    <th><p><strong>Product</strong></p> </th>
    <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
-  </tr>
+  </tr>  
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> latest version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version</td>
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
-  </tr>
+  </tr> 
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version (Deprecated)</td>
-   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office 2016 (Deprecated)</td>
+   <td>Microsoft® Office 2016</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
    <td>WordPerfect X7</td>
    <td>WP, WPD</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
+   <td>Microsoft® Office Visio 2016<br /> </td>
    <td>VSD, VSDX</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Office Visio 2016 (Deprecated)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
+   <td>Microsoft® Publisher 2016<br /> </td>
    <td>PUB</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Publisher 2016 (Deprecated)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2019<br /> </td>
+   <td>Microsoft® Project 2016<br /> </td>
    <td>MPP</td>
-  </tr>
+  </tr>  
   <tr>
-   <td>Microsoft® Project 2016 (Deprecated)<br /> </td>
-   <td>MPP</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.10</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
-  </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (Deprecated)</td>
+   <td>OpenOffice 4.1.2</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
   </tr>  
  </tbody>
@@ -501,7 +462,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition:
 >
->* PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Actobat 2017 version 17.011.30078 to perform the conversion.
+>* PDF Generator requires 32-bit version of [Acrobat 2017 version 17.011.30078](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
 >* PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion.
 >* PDF Generator does not support Microsoft Office 365.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
@@ -608,12 +569,8 @@ For additional reuirements see:
    <th><p><strong>Acrobat and Adobe Reader (Base)</strong></p> </th>
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
   </tr>
-  <tr>
-   <td>Acrobat 2020 (Classic track)</td>
-   <td>Version 20.004.30006 or later<br /> </td>
-  </tr>
-  <tr>
-   <td>Acrobat 2017 (Classic track) (Deprecated)</td>
+    <tr>
+   <td>Acrobat 2017 (Classic track)</td>
    <td>Version 17.011.30078 or later<br /> </td>
   </tr>
   
@@ -772,37 +729,9 @@ Adobe reserves the right to change the third-party reference platforms supported
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
 
-## Platform updates {#platform-updates}
-
-The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 2, 2021:
-
-* Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
-
-* Microsoft Windows Server 2016 (64-bit)
-
-* Red Hat Enterprise Linux 7 (Kernel 3.x) (64-bit)
-
-* Microsoft® Office 2016
-
-* OpenOffice 4.1.2
-
->[!NOTE]
->
->The platforms marked as [deprecated remain in support until AEM Forms 6.5 Service Pack 15 (6.5.15.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html). 
-
-
-
 ## Revision History {#revision-history}
 
 * Sep 09, 2020
   * Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
 
-* Sep 02, 2021
-  * **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
-    * [!DNL Adobe Acrobat 2020]
-    * [!DNL Ubuntu 20.04]
-    * [!DNL Open Office 4.1.10]
-    * [!DNL Microsoft Office 2019]
-    * [!DNL Microsoft Windows Server 2019]
-    * [!DNL RHEL8]
 
