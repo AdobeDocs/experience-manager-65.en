@@ -119,6 +119,8 @@ In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools
 
    Click **[!UICONTROL Next]**.
 
+   ![generate-certificate](assets/stock-integration-ims-account.png)
+
 1. In the **Account** tab, Adobe IMS account is created which requires the service account credentials that are generated in Adobe Developer Console. Keep this page open for now.
 
    Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration) to get the credentials and JWT payload to configure the IMS account. 
@@ -142,7 +144,9 @@ Perform the following steps to generate the service account credentials and JWT 
 
 1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL Adobe Stock]** and click **[!UICONTROL Next]**. 
 
-1. In the **[!UICONTROL Configure API]** window, select **[!UICONTROL Service Account (JWT)]** authentication. Click **[!UICONTROL Next]**. 
+1. In the **[!UICONTROL Configure API]** window, select **[!UICONTROL Service Account (JWT)]** authentication. Click **[!UICONTROL Next]**.
+
+   ![create-jwt-credentials](assets/aem-stock-jwt.png)
 
 1. Click **[!UICONTROL Upload your public key]**. Then, click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. Click **[!UICONTROL Next]**.
 
@@ -155,6 +159,8 @@ Perform the following steps to generate the service account credentials and JWT 
 1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
    Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
+
+   ![generate-jwt-credentials](assets/aem-stock-jwt-credential.png)
 
 1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
 
@@ -175,10 +181,14 @@ Perform the following steps to configure the IMS account:
    Enter the client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
 1. Click **[!UICONTROL Create]**. An IMS account configuration is created. 
+
+   ![configure-ims-acount](assets/aem-stock-ims-config.png)
    
 1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
    Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
+
+   ![health-check](assets/aem-stock-healthcheck.png)
 
 
 ### Configure cloud service {#configure-the-cloud-service}
@@ -195,9 +205,13 @@ Perform the following steps to configure the [!DNL Adobe Stock] cloud service:
 
    Select your locale from the dropdown list.
 
+   ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
+
 1. Click **[!UICONTROL Save & Close]**. 
 
    Your [!DNL Experience Manager Assets] author instance is now integrated with [!DNL Adobe Stock]. You can create multiple [!DNL Adobe Stock] configurations (for example, locale-based configurations). You can now access, search, and license the [!DNL Adobe Stock] assets from within the [!DNL Experience Manager] user interface. 
+
+   ![Search for [!DNL Adobe Stock] assets and filter results from your [!DNL Adobe Experience Manager] workspace](assets/adobe-stock-search-results-workspace.png)
 
    >[!NOTE]
    >
@@ -205,11 +219,13 @@ Perform the following steps to configure the [!DNL Adobe Stock] cloud service:
    >
    >Administrators can further add users or groups to the [!DNL Adobe Stock] cloud service and give permissions to these non-admin users in [!DNL Experience Manager] to access the Stock configuration. 
 
-1. To add users or groups, select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]. 
+1. To add users or groups, select the [!DNL Adobe Stock] cloud configuration and click **[!UICONTROL Properties]**. 
 
 1. Search to add the users or groups to whom you have assigned permissions to access the Adobe Stock configuration. See, user access to [!DNL Adobe Stock] configuration. 
    
-   
+
+
+
 <!--old content
 
 ### Create an IMS configuration {#create-an-ims-configuration}
