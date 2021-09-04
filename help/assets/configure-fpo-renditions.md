@@ -4,6 +4,7 @@ description: Generate FPO renditions of new and existing assets using Experience
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
+exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 ---
 # Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 
@@ -124,4 +125,4 @@ Click **[!UICONTROL FPO rendition]** to load its preview. Optionally, you can ri
 * To use ImageMagick-based configuration, install ImageMagick on the same machine as Experience Manager.
 * To generate FPO renditions of many assets or of the entire repository, plan and execute the workflows during low-traffic duration. Generating FPO renditions for a large number of assets is a resource-intensive activity and the Experience Manager servers must have sufficient processing power and memory available.
 * For performance and scalability, see [Fine-tune ImageMagick](performance-tuning-guidelines.md).
-* For generic command line handling of assets, see [command line handler to process assets](media-handlers.md). 
+* For generic command line handling of assets, see [command line handler to process assets](media-handlers.md).

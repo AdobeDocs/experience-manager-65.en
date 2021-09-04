@@ -3,6 +3,7 @@ title: Variations - Authoring Fragment Content
 description: Understand how variations can make your headless content in AEM even more flexible by allowing you to author content for the fragment, then create variations of that content according to purpose.
 feature: Content Fragments
 role: User
+exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 

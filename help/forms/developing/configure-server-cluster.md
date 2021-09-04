@@ -1,6 +1,7 @@
 ---
 title: How to configure and troubleshoot an AEM Forms on JEE server cluster?
 description: Learn how to configure and troubleshoot an AEM Forms on JEE server cluster
+exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 ---
 # Configuring and troubleshooting an AEM Forms on JEE server cluster {#configuring-troubleshooting-aem-forms-jee-server-cluster}
 
@@ -336,19 +337,3 @@ Although these files and paths may be shared among the nodes or located separate
 The Temporary Directory path, in particular, should not be shared among nodes. A procedure similar to the one described for verifying the GDS should be used to verify that the temporary directory is not being shared: go to each node, create a temporary file in the path indicated by path setting, and then verify that the other nodes do not share the file. The temporary directory path should refer to local disk storage on each node, if at all possible, and should be checked.
 
 For each of the path settings, ensure that the path actually exists and is accessible from each node in the cluster, using the effective use identity under which AEM Forms on JEE runs. The font directory contents must be readable. The temp directory must allow read, write, and control.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
