@@ -3,6 +3,7 @@ title: Associated Content
 description: Understand how AEM's associated content feature provides the connection so that assets can be optionally used with the fragment when it is added to a content page, adding additional flexibility to headless content delivery.
 feature: Content Fragments
 role: User
+exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 ---
 # Associated Content{#associated-content}
 
