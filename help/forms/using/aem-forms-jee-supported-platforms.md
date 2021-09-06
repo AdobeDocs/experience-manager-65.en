@@ -462,7 +462,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >In addition:
 >
->* PDF Generator requires 32-bit version of [Acrobat 2017 version 17.011.30078](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
+>* PDF Generator requires 32-bit version of [Acrobat 2017 version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
 >* PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion.
 >* PDF Generator does not support Microsoft Office 365.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
@@ -514,10 +514,10 @@ The following subsystems of AEM Forms are not [508](https://www.section508.gov/)
  </tbody>
 </table>
 
-For additional reuirements see:
+For additional requirements see:
 
-* [System requirements for a single-server AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_single_63)
-* [System requirements for a clustered AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_63)
+* [System requirements for a single-server AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+* [System requirements for a clustered AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ## Supported Clients for AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 

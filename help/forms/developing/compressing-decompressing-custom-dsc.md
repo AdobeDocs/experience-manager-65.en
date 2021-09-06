@@ -1,6 +1,7 @@
 ---
 title: How to pass credentials using WS-security headers?
 description: Learn how to pass credentials using WS-security headers
+exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 ---
 # Compressing and decompressing files using a AEM Forms on JEE Custom DSC {#compressing-decompressing-files}
 
@@ -215,6 +216,3 @@ You can use this ZIP Service for the following use cases:
 * Policy protect a list of documents and return as a ZIP file.
 
 * Allow users to download all the attachments of a process instance as a single ZIP file.
-
-
-
