@@ -359,9 +359,11 @@ Users can see the properties for both, licensed and unlicensed assets.
 
 ## Known limitations {#known-limitations}
 
+* **Issues in integration with [!DNL Experience Manager] Service Pack 6.5.7.0 and above**: An unexpected issue is identified during integration with [!DNL Experience Manager] 6.5.7.0 and above. The issue is under testing and expected to be available in [!DNL Experience Manager] 6.5.11.0. Contact [!DNL Customer Support] for an immediate hotfix.
+
 * **Functionality to restrict users from licensing is not working properly**: All users having `read` permissions to the stock configuration are allowed to search and license the [!DNL Adobe Stock] assets. 
 
-* **Non-admin users have to activate the [!DNL Adobe Stock] cloud configuration**: In the **[!UICONTROL User Preferences]** window, the **[!UICONTROL Stock Configuration]** shows the [!DNL Adobe Stock] cloud configuration as enabled but it does not work for a non-admin user. The user has to click on the **[!UICONTROL Accept]** button to activate the Stock configuration. In absence of this step, the system reflects an error message on accessing **[!UICONTROL Assets]**.   
+* **Non-admin users have to manually activate the [!DNL Adobe Stock] cloud configuration**: In the **[!UICONTROL User Preferences]** window, the **[!UICONTROL Stock Configuration]** shows the [!DNL Adobe Stock] cloud configuration as enabled but it does not work for a non-admin user. The user has to click on the **[!UICONTROL Accept]** button to activate the Stock configuration. In absence of this step, the system reflects an error message on accessing **[!UICONTROL Assets]**.   
 
 * **Editorial image warning is not displayed**: When licensing an image, users cannot check if an image is Editorial Use Only. To prevent possible misuse, the administrators can turn off the access to editorial assets from the Admin Console.
 
