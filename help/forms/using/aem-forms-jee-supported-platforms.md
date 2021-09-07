@@ -223,7 +223,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
   <tr>
    <td>Oracle</td>
    <td><p>Oracle Database 19.3.0.0.0 JDBC driver</p> <p>ojdbc8.jar (version 19.3.0.0.0)<br /> </p> </td>
-   <td><p>Download from <a href="https://www.oracle.com/technetwork/database/features/jdbc/jdbc-ucp-122-3110062.html">Oracle Website</a>.</p> </td>
+   <td><p>Download from <a href="https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html">Oracle Website</a>.</p> </td>
   </tr>
  </tbody>
 </table>
