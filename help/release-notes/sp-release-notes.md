@@ -52,7 +52,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Added support for `GuideBridge#getGuidePath` API in [!DNL AEM Forms].
 
-* You can now use Automated Forms Conversion service to [convert PDF Forms in French, German, and Spanish language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) to adaptive forms.
+* You can now use Automated Forms Conversion service to [convert PDF Forms in French, German, Spanish, Italian, and  Portuguese languages](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#language-specific-meta-model) to adaptive forms.
 
 * **Error messages in Properties browser**: Added error messages for each property in the Adaptive Forms Properties browser. These messages help understand allowed values for a field.
 
@@ -265,9 +265,9 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
-[!DNL AEM Forms 6.5.10.0] includes the following bug fixes:
+[!DNL AEM 6.5.10.0 Forms] includes the following bug fixes:
 
-* When you install [!DNL AEM Forms 6.5], the following third-party libraries are installed automatically (CQDOC-18373):
+* When you install [!DNL AEM 6.5 Forms], the following third-party libraries are installed automatically (CQDOC-18373):
   * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
   * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
 
