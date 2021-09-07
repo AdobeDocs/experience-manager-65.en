@@ -58,8 +58,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * **Support to use the literal option to set value for a JSON type variable**: You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
 
-<!--
-
 * [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
   * [!DNL Adobe Acrobat 2020]
   * [!DNL Ubuntu 20.04]
@@ -67,8 +65,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
   * [!DNL Microsoft Office 2019]
   * [!DNL Microsoft Windows Server 2019]
   * [!DNL RHEL8]
-
-  -->
 
 For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
 
@@ -264,17 +260,20 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 ### [!DNL Forms] {#forms-65100}
 
+
 >[!NOTE]
 >
->The service pack enables you to run [!DNL AEM Forms] on the latest server operating systems, application servers, and databases. It also brings some features available on Cloud Service to on-premise environment and provides fixes for customer reported issues. [!DNL AEM Forms] on OSGi service pack is available to download and install. [!DNL AEM Forms on JEE]  service pack would be available on September 09, 2021.
+>* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+[!DNL AEM Forms 6.5.10.0] includes the following bug fixes:
+
+* When you install [!DNL AEM Forms 6.5], the following third-party libraries are installed automatically (CQDOC-18373):
+  * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
+  * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
 
 **Adaptive Forms**
 
-<!--
-
-* When the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
-
--->
+* If the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
 
 * When you add a language dictionary to a translation project and then open the project, [!DNL AEM Forms] displays an error message (CQ-4324933):
 
@@ -310,26 +309,19 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * When you select all text in an editor, you cannot change the font text to Arial (NPR-36646).
 
-<!--
-
 * When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
-
--->
 
 * When you copy and paste text to an editor, there are issues while changing the font to Arial for bullets available in the document (NPR-36628). 
 
 * Indentation issues for bullets in the text editor (NPR-36513).
 
-<!--
 **Designer**
 
 * Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
 
--->
-
 **Document Services**
 
-* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message(CQ-4328666):
+* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message:
 
    ```TXT
    Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
@@ -423,8 +415,6 @@ To know the platforms certified to work with this release, see the [technical re
 >
 >Experience Manager 6.5.10.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.10.0, install the latest version of the package post installation of Forms Add-On Package.
 
-<!--
-
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
@@ -437,7 +427,6 @@ For information about installing the cumulative installer for Experience Manager
 >
 >After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
--->
 
 ### UberJar {#uber-jar}
 
@@ -471,14 +460,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 ## Known issues {#known-issues}
 
-<!--
-
-* (For JBoss on Microsoft Windows only) To continue using the Create PDF service on [!DNL AEM Forms on JEE], download [omniORB_4.1.1_x86_win32_vc10.zip](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/omniORB_4.1.1_x86_win32_vc10.zip) from Software Distribution, extract and copy the folder available in the Zip file to the following location:
-`[AEM Forms Installation]\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\CommonNatives\lib`
-
 * As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
-
--->
 
 * If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. To resolve the issue, restart the instance.
 
