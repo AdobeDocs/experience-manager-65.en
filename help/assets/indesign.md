@@ -168,7 +168,7 @@ If the [!DNL InDesign Server] and [!DNL Experience Manager] are on different hos
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**. Click **[!UICONTROL Edit]** to open.
 1. Link Externalizer settings help create absolute URLs for the [!DNL Experience Manager] deployment and for the [!DNL InDesign Server]. Use **[!UICONTROL Domains]** field to specify the host name for the [!DNL Adobe InDesign Server]. Click **Save**.
 
-   When creating absolute URLs, you must use the host name `localhost` for your local, author, and publish instances. 
+   In absolute URLs, you must use the host name `localhost` for your local, author, and publish instances. 
 
    ![Link externalizer setting](assets/link-externalizer-config.png)
 
