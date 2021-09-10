@@ -13,7 +13,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
 ---
-# Add custom action/button in Create Correspondence UI {#add-custom-action-button-in-create-correspondence-ui}
+# Add a custom action button in Create Correspondence UI {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Overview {#overview}
 
