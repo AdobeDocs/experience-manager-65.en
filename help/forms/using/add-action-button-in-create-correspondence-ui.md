@@ -326,7 +326,7 @@ In this scenario, enable the following components, which are a part of the attac
 * Send letter for review process LCA (SendLetterForReview.lca)
 
 Download and unzip the components.zip file to get DSCSample.jar and SendLetterForReview.lca files. Use these files as specified in the following procedures.
-components.zip
+[Get File](assets/components.zip)
 
 #### Configure the LiveCycle Server to run the LCA process {#configure-the-livecycle-server-to-run-the-lca-process}
 
