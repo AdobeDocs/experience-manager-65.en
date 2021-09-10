@@ -13,7 +13,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
 ---
-# Add custom action/button in Create Correspondence UI {#add-custom-action-button-in-create-correspondence-ui}
+# Add a custom action button in Create Correspondence UI {#add-custom-action-button-in-create-correspondence-ui}
 
 ## Overview {#overview}
 
@@ -355,7 +355,7 @@ The required LiveCycle process that enables email service process.
 >
 >To view what this process does or to create a similar process of your own, you need Workbench.
 
-1. Log in as Administrator to Livecycle Server adminui at `https:/[lc server]/:[lc port]/adminui`.
+1. Log in as Administrator to LiveCycle® Server adminui at `https:/[lc server]/:[lc port]/adminui`.
 
 1. Navigate to **Home &gt; Services &gt; Applications and Services &gt; Application Management**.
 
@@ -377,7 +377,7 @@ The required LiveCycle process that enables email service process.
 
 #### Adding ServiceName to the Allowlist Service list {#adding-servicename-to-the-allowlist-service-list}
 
-Mention in the AEM server the LiveCycle services you want to access the AEM server.
+Mention in the Experience Manager server the LiveCycle services you want to access the Experience Manager server.
 
 1. Log in as Administrator to `https:/[host]:'port'/system/console/configMgr`.
 
@@ -390,7 +390,7 @@ Mention in the AEM server the LiveCycle services you want to access the AEM serv
 
 In this scenario, for Correspondence Management to be able to send an email, configure the email service in the LiveCycle server.
 
-1. Log in with Admin credentials to Livecycle Server adminui at `https:/[lc server]:[lc port]/adminui`.
+1. Log in with Admin credentials to LiveCycle Server adminui at `https:/[lc server]:[lc port]/adminui`.
 
 1. Navigate to **Home &gt; Services &gt; Applications and Services &gt; Service Management**.
 
@@ -402,30 +402,30 @@ In this scenario, for Correspondence Management to be able to send an email, con
 
 #### Configure the DSC service {#configure-the-dsc-service}
 
-To use the Correspondence Management API, download the DSCSample.jar (attached in this document as part of components.zip) and upload it to the LiveCycle server. After the DSCSample.jar file is uploaded to the LiveCycle server, the AEM server uses the DSCSample.jar file to access the renderLetter API.
+To use the Correspondence Management API, download the DSCSample.jar (attached in this document as part of components.zip) and upload it to the LiveCycle server. After the DSCSample.jar file is uploaded to the LiveCycle server, the Experience Manager server uses the DSCSample.jar file to access the renderLetter API.
 
 For more information, see [Connecting AEM Forms with Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. Update the AEM server URL in cmsa.properties in DSCSample.jar, which is at the following location:
+1. Update the Experience Manager server URL in cmsa.properties in DSCSample.jar, which is at the following location:
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. Provide the following parameters in configuration file:
 
     * **crx.serverUrl**=https:/host:port/[context path]/[AEM URL]
-    * **crx.username**= AEM user name
-    * **crx.password**= AEM password
+    * **crx.username**= Experience Manager user name
+    * **crx.password**= Experience Manager password
     * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >Every time you make any changes at the server sidde, restart the LiveCycle Server. 
+   >Every time you make any changes at the server side, restart the LiveCycle Server. 
 
-   The DSCSample.jar file uses the renderLetter API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   The DSCSample.jar file uses the renderLetter API. For more Information about the renderLetter API, see [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### Import DSC to LiveCyle {#import-dsc-to-livecyle}
 
-DSCSample.jar file uses the renderLetter API to render letter as PDF bytes from XML data that C give as input. For more Information about the renderLetter and other APIs, see [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+DSCSample.jar file uses the renderLetter API to render letter as PDF bytes from XML data that DSC gives as input. For more Information about the renderLetter and other APIs, see [Letter Render Service](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. Start Workbench and log in.
 1. Select **Window &gt; Show Views &gt; Components**. The Components view gets added to Workbench ES2.
