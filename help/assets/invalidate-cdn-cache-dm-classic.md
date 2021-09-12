@@ -25,7 +25,7 @@ See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.
 
 **To invalidate the CDN cache by way of Dynamic Media Classic:**
 
-1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app), then sign in to your account.
+1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), then sign in to your account.
 
       Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
 
