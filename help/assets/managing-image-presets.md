@@ -419,7 +419,7 @@ When you create or edit image presets, you have the options described in this se
   </tr>
   <tr>
    <td><strong>Image Modifier</strong></td>
-   <td><p>Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the <strong>Image Modifiers</strong> field. These parameters are defined in the <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en#image-serving-api">Image Server Protocol command reference</a>.</p> <p>Important: The following functionality listed in the API is not supported:</p>
+   <td><p>Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the <strong>Image Modifiers</strong> field. These parameters are defined in the <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">Image Server Protocol command reference</a>.</p> <p>Important: The following functionality listed in the API is not supported:</p>
     <ul>
      <li>Basic templating and text rendering commands: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> and <code>textPs=</code></li>
      <li>Localization commands: <code>locale=</code> and <code>req=xlate</code></li>
