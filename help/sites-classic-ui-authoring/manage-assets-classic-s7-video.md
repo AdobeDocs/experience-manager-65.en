@@ -57,7 +57,7 @@ If you need a workflow or versioning for your assets, you should upload to Adobe
 
 If you do not need a workflow or versioning for your assets, you should upload your assets to Dynamic Media Classic. The following is the recommended workflow:
 
-1. In the Dynamic Media Classic desktop app, [set up a scheduled FTP uploading and encoding to Dynamic Media Classic (system automated)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=en#upload-options).
+1. In the Dynamic Media Classic desktop app, [set up a scheduled FTP uploading and encoding to Dynamic Media Classic (system automated)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. In Experience Manager, access video assets in WCM in the **[!UICONTROL Dynamic Media Classic]** tab of the Content Finder.
 1. Author with the Dynamic Media Classic video component.
 
@@ -74,7 +74,7 @@ If you do not need a workflow or versioning for your assets, you should upload y
 
    >[!NOTE]
    >
-   >For more information about what the video presets mean, see [Video presets for encoding video files](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=en#video-presets-for-encoding-video-files).
+   >For more information about what the video presets mean, see [Video presets for encoding video files](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
    >Adobe recommends that you select either both adaptive video sets when configuring the universal presets or select the **[!UICONTROL Adaptive Video Encoding]** option.
 
