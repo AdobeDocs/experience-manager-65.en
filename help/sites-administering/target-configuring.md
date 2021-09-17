@@ -65,7 +65,7 @@ You can configure Adobe Target to use Adobe Analytics as the reporting source wh
 
 >[!NOTE]
 >
->User-Credential Authentication (Legacy) does not work with A4T (for both Target and Analytics). As such, all customers should use [IMS authentication](/help/sites-administering/integration-ims-adobe-io.md).
+>User-Credential Authentication (Legacy) does not work with A4T (for both Target and Analytics). As such, customers should use [IMS authentication](/help/sites-administering/integration-ims-adobe-io.md) instead of User-Credential authentication.
 
 To do this, you need to specify which A4T cloud configuration to connect your Adobe Target cloud configuration with:
 
