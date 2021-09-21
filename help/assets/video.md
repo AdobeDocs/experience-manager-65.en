@@ -29,10 +29,9 @@ The following step-by-step workflow description is designed to help you get up a
 >
 >* See [Configure Dynamic Media Cloud Services](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) in Configuring Dynamic Media - Hybrid mode.
 >
->Currently known video playback issues in Dynamic Media *on Experience Manager 6.5.9.0 only*:
+>Currently known video playback issue in Dynamic Media *on Experience Manager 6.5.9.0 only*:
 >
->* <!-- CQDOC-18116 -->You cannot play video renditions from the asset's Details page on Experience Manager - Dynamic Media running in hybrid mode.
->* <!-- CQDOC-18116 -->You cannot stream videos on Experience Manager - Dynamic Media running in hybrid mode.
+>* If a published video is updated, it must be published again to reflect changes on delivery.
 >
 
 1. **Upload your Dynamic Media videos** by doing the following:

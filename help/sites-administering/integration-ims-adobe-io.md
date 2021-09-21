@@ -236,6 +236,8 @@ The configuration can now be referenced for a Cloud Service to use the Target St
     * **IMS Configuration**: select the name of the IMS Configuration
     * **API Type**: REST
     * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+    >[!NOTE]
+    >User-Credential Authentication (Legacy) does not work with A4T (for both Target and Analytics). As such, customers should use     IMS authentication instead of User-Credential authentication.
     * **Use accurate targeting**: By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
     * **Synchronize segments from Adobe Target**: Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
     * **Client library**: Select whether you want the AT.js client library, or mbox.js (deprecated).
