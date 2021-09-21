@@ -65,7 +65,7 @@ You can configure Adobe Target to use Adobe Analytics as the reporting source wh
 
 >[!NOTE]
 >
->User-Credential Authentication (Legacy) does not work with A4T (for both Target and Analytics). As such, customers should use [IMS authentication](/help/sites-administering/integration-ims-adobe-io.md) instead of User-Credential authentication.
+>User-Credential Authentication (Legacy) does not work with A4T (for both Target and Analytics). As such, customers should use IMS authentication instead of User-Credential authentication.
 
 To do this, you need to specify which A4T cloud configuration to connect your Adobe Target cloud configuration with:
 
@@ -81,7 +81,7 @@ To do this, you need to specify which A4T cloud configuration to connect your Ad
    >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
    >
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
-   >1. Navigate to **/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
+   >1. Navigate to `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    >1. Set the property **disable** to **false**.
    >1. Tap or click **Save All**.
    >
