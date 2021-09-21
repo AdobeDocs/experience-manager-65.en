@@ -82,7 +82,7 @@ To do this, you need to specify which A4T cloud configuration to connect your Ad
    >
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
    >1. Navigate to: 
-   >`/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
+   `/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig`
    >1. Set the property **disable** to **false**.
    >1. Tap or click **Save All**.
    >
