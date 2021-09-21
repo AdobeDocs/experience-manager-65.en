@@ -23,6 +23,34 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: September, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.09.xx|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.xx.zip)|
+|CIF Core Components |2.2.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0)|
+|CIF Venia Reference Site| 2021.09.xx|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.xx)|
+
+### What's New {#what-is-new-september}
+
+* New "associated commerce content" tab in Sites editor increases author efficiency by quickly getting access to relevant AEM  product content for the current context
+
+  ![Associated commerce content](/help/assets/CIF/associated-commerce-content.png)
+
+* Improved product picker UI for better user experience, increased efficiency and support for complex product catalog
+
+  ![New Product Picker](/help/assets/CIF/product-picker.png)
+
+* Respect "include_in_menu" property in navigation component
+
+### Bug fixes {#bug-fixes-september}
+
+* Menu cache flush is not working as expected
+
+* JS errors during AEM CS deployment step and when not using clientside components
+
+* Cannot create CIF cloud config in folders that have a sling:configs node
+
 ## Release Date: August, 2021
 
 |Component| Version| Details|
