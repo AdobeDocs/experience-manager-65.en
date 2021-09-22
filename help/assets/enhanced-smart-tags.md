@@ -41,30 +41,30 @@ Before you can use the Smart Content Service, ensure the following to create an 
 
 The service applies Smart Tags to assets of the following MIME types:
 
-* image/jpeg
-* image/tiff
-* image/png
-* image/bmp
-* image/gif
-* image/pjpeg
-* image/x-portable-anymap
-* image/x-portable-bitmap
-* image/x-portable-graymap
-* image/x-portable-pixmap
-* image/x-rgb
-* image/x-xbitmap
-* image/x-xpixmap
-* image/x-icon
-* image/photoshop
-* image/x-photoshop
-* image/psd
-* image/vnd.adobe.photoshop
+* `image/jpeg`
+* `image/tiff`
+* `image/png`
+* `image/bmp`
+* `image/gif`
+* `image/pjpeg`
+* `image/x-portable-anymap`
+* `image/x-portable-bitmap`
+* `image/x-portable-graymap`
+* `image/x-portable-pixmap`
+* `image/x-rgb`
+* `image/x-xbitmap`
+* `image/x-xpixmap`
+* `image/x-icon`
+* `image/photoshop`
+* `image/x-photoshop`
+* `image/psd`
+* `image/vnd.adobe.photoshop`
 
 The service applies Smart Tags to asset renditions of the following MIME types:
 
-* image/jpeg
-* image/pjpeg
-* image/png
+* `image/jpeg`
+* `image/pjpeg`
+* `image/png`
 
 ## Onboarding {#onboarding}
 
@@ -73,10 +73,6 @@ The Smart Content Service is available for purchase as an add-on to [!DNL Experi
 The administrator can follow the link to integrate the Smart Content Service with [!DNL Experience Manager]. To integrate the service with [!DNL Experience Manager Assets], see [Configure Smart Tags](config-smart-tagging.md).
 
 The onboarding process is complete when the administrator configures the service and adds users in [!DNL Experience Manager].
-
->[!NOTE]
->
->If you are using [!DNL Experience Manager] 6.3 or earlier version and require tagging service for your assets, see [Smart Tags](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html). Smart Tags do not use the latest AI capabilities and are hence less accurate than the enhanced smart tagging service.
 
 ## Review assets and tags {#reviewing-assets-and-tags}
 

@@ -63,7 +63,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 1. Open [!DNL Experience Manager] Configuration Manager.
 1. Choose **[!UICONTROL Adobe CQ DAM Expiry Notification]**. By default, **[!UICONTROL Time based Scheduler]** is selected, which schedules a job to check at a specific time whether an asset has expired subassets. After the job completes, assets that have expired subassets and referenced assets are displayed as expired in search results.
 
-1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. For example, the example expression `0 0 0 &ast; &ast; ?` triggers the job at 00 hrs.
+1. To run the job periodically, clear the **[!UICONTROL Time Based Scheduler Rule]** field and modify the time in seconds in the **[!UICONTROL Periodic Scheduler]** field. For example, the example expression `0 0 0 * * ?` triggers the job at 00 hrs.
 1. Select **[!UICONTROL send email]** to receive emails when an asset expires.
 
    >[!NOTE]
