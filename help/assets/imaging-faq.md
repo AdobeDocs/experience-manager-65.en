@@ -191,7 +191,7 @@ By default, Smart Imaging DPR and network optimization is disabled (turned off) 
 | Europe, Middle East, Africa | 13 Aug 2021 |
 | Asia-Pacific | 22 Jul 2021 | -->
 
-1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html).
+1. [Use the Admin Console to create a support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 1. Provide the following information in your support case:
 
     1. Primary contact name, email, phone.
@@ -281,3 +281,8 @@ Smart Imaging determines if the conversion is beneficial or not. It returns the 
 * Any viewer side DPR optimization works in tandem with server-side Smart Imaging DPR optimization, and does not result in over-sized images. In other words, wherever DPR is handled by the viewer, such as the main view only in a zoom-enabled viewer, the server-side Smart Imaging DPR values are not triggered. Likewise, wherever viewer elements, such as swatches and thumbnails, do not have DPR handling, the server-side Smart Imaging DPR value is triggered.
 
 See also [When working with images](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-images) and [When working with Smart Crop](/help/assets/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
+
+>[!MORELIKETHIS]
+>
+>* [Image optimization with next generation image formats WebP and AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
