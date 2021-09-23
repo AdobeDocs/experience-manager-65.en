@@ -84,9 +84,9 @@ To do this, you need to specify which A4T cloud configuration to connect your Ad
    >1. Navigate to [1] (see below)
    >1. Set the property **disable** to **false**.
    >1. Tap or click **Save All**.
-   >
 
 [1]
+
 ```
    >/libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
 
