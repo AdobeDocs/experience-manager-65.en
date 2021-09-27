@@ -252,7 +252,7 @@ Actual job topics that workflow models generate include model-specific suffix. F
 
 `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
-Therefore, you can create a job queue for the topic that matches the job topics of your workflow model. Configuring the performance-related properties of the queue affects only the worklfow model that generates the jobs that match the queue topic.
+Therefore, you can create a job queue for the topic that matches the job topics of your workflow model. Configuring the performance-related properties of the queue affects only the workflow model that generates the jobs that match the queue topic.
 
 The following procedure creates a job queue for a workflow, using the **DAM Update Asset** workflow as an example.
 
