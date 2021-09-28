@@ -233,7 +233,11 @@ You can find the code of this page on GitHub
 
 ## Customizing the Request for Activation Workflow {#customizing-the-request-for-activation-workflow}
 
-The out-of-the-box workflow, **Request for Activation**, is automatically triggered when a content author does not have the appropriate replication rights.
+The out-of-the-box workflow, **Request for Activation**:
+
+* Will automatically appear on the appropriate menu when a content author **does not have** the appropriate replication rights, but **does have** membership of DAM-Users and Authors. 
+
+* Otherwise nothing will be displayed, as replication rights have been removed.
 
 To have customized behavior upon such activation you can overlay the **Request for Activation** workflow:
 
