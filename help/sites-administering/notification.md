@@ -88,7 +88,7 @@ The default configuration looks as follows in the Web Console:
 
 Email templates for page notifications are located below:
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 The default English template ( `en.txt`) is defined as follows:
 
@@ -115,7 +115,7 @@ To customize the English email template for page notification:
 
 1. In CRXDE, open the file:
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. Modify the file to your needs.
 1. Save the changes.
@@ -200,7 +200,7 @@ The following variables can be used within the email template for forum notifica
 
 The email template for workflow notifications (English) is located at:
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 It is defined as follows:
 
@@ -229,7 +229,7 @@ To customize the English email template for workflow event notification:
 
 1. In CRXDE, open the file:
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. Modify the file to your needs.
 1. Save the changes.
@@ -287,9 +287,9 @@ To add a template for a new language:
 
 1. In CRXDE, add a file `<language-code>.txt` below:
 
-    * `/etc/notification/email/default/com.day.cq.wcm.core.page` : for page notifications
+    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : for page notifications
     * `/etc/notification/email/default/com.day.cq.collab.forum` : for forum notifications
-    * `/etc/workflow/notification/email/default` : for workflow notifications
+    * `/libs/settings/workflow/notification/email/default` : for workflow notifications
 
 1. Adapt the file to the language.
 1. Save the changes.
