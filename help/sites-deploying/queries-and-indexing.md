@@ -62,9 +62,9 @@ Next, each index is consulted to estimate the cost for the query. Once that is c
 
 >[!NOTE]
 >
->For a large repository, building an index is a time consuming operation. This is true for both the initial creation of an index, and reindexing (rebuilding an index after changing the definition). See also [Troubleshooting Oak Indexes](/help/sites-deploying/troubleshooting-oak-indexes.md) and [Preventing Slow Re-indexing](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>For a large repository, building an index is a time consuming operation. This is true for both the initial creation of an index, and re-indexing (rebuilding an index after changing the definition). See also [Troubleshooting Oak Indexes](/help/sites-deploying/troubleshooting-oak-indexes.md) and [Preventing Slow Re-indexing](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
-If reindexing is needed in very large repositories, specially when using MongoDB and for fulltext indexes, consider text pre-extraction, and using oak-run to build the initial index and to reindex.
+If re-indexing is needed in very large repositories, specially when using MongoDB and for full-text indexes, consider text pre-extraction, and using oak-run to build the initial index and to re-index.
 
 Indexes are configured as nodes in the repository under the **oak:index** node.
 
@@ -95,7 +95,7 @@ The Property Index has the following configuration options:
 * The **unique** flag which, if set to **true** adds a uniqueness constraint on the property index.
 
 * The **declaringNodeTypes** propery allows you to specify a certain node type that the index will only apply to.
-* The **reindex** flag which if set to **true**, will trigger a full content reindex.
+* The **reindex** flag which if set to **true**, will trigger a full content re-index.
 
 ### The Ordered Index {#the-ordered-index}
 
@@ -109,7 +109,7 @@ If a full-text index is configured, then all queries that have a full-text condi
 
 If no full-text index is configured, then queries with full-text conditions will not work as expected.
 
-Because the index is updated via an asynchronbous background thread, some full-text searches will be unavailable for a small window of time until the background processes are finished.
+Because the index is updated via an asynchronous background thread, some full-text searches will be unavailable for a small window of time until the background processes are finished.
 
 You can configure a Lucene full-text index, by following the below procedure:
 
@@ -151,21 +151,21 @@ Once the node has been created, add the following properties:
 
 * **type:**
 
-  ```
+  ```xml
   lucene (of type String)
 
   ```
 
 * **async:**
 
-  ```
+  ```xml
   async (of type String)
 
   ```
 
 * **fulltextEnabled:**
 
-  ```
+  ```xml
   false (of type Boolean)
 
   ```
@@ -291,7 +291,7 @@ It can be configured to work as an embedded server with the AEM instance, or as 
 
 >[!CAUTION]
 >
->Do not use an embedded Solr server in a production enviroment. It should be used only in a development enviroment.
+>Do not use an embedded Solr server in a production environment. It should be used only in a development environment.
 
 AEM can be used with an embedded Solr server that can be configured via the Web Console. In this case, the Solr server will run in the same JVM as the AEM instance it is embedded to.
 
@@ -318,10 +318,10 @@ You can configure the embedded Solr server by:
 
 ### Configuring AEM with a single remote Solr server {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM can also be confiured to work with a remote Solr server instance:
+AEM can also be configured to work with a remote Solr server instance:
 
 1. Download and extract the latest version of Solr. For more info on how to do this, please consult the [Apache Solr Installation documentation](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
-1. Now, create two Solr shards. You can do this by creating folders for each shard in the folder where Solr has been upacked:
+1. Now, create two Solr shards. You can do this by creating folders for each shard in the folder where Solr has been unpacked:
 
     * For the first shard, create the folder:
 
@@ -381,7 +381,7 @@ AEM can also be confiured to work with a remote Solr server instance:
 
 #### Recommended configuration for Solr {#recommended-configuration-for-solr}
 
-Below is an example of a base configuration that can be used with all three Solr deployments described in this article. It accomodates the dedicated property indexes that are already present in AEM and should not be used with other applications.
+Below is an example of a base configuration that can be used with all three Solr deployments described in this article. It accommodates the dedicated property indexes that are already present in AEM and should not be used with other applications.
 
 In order to properly use it, you need to place the contents of the archive directly in the Solr Home Directory. In the case of multi-node deployments, it should go directly under the root folder of each node.
 
