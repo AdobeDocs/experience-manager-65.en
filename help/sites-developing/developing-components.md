@@ -129,8 +129,6 @@ Dialogs are used to allow author to interact with the component. Using a dialog 
 
 [Granite UI provides a large range of the basic components (widgets)](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) needed to create your dialog on the authoring environment. When necessary you can extend this selection and [create your own widget](#creatinganewwidget).
 
-For more information on developing components using Coral and Granite resource types see: [Building Experience Manager components using Coral/Granite resource types](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
-
 For full details see:
 
 * Coral UI
