@@ -296,7 +296,7 @@ To help prevent DoS misuse you can:
 
       **JSON Max results** ( `json.maximumresults`)
 
-      in the configuration for the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `200`.
+      in the configuration for the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet). When this limit is exceeded the rendering will be collapsed. The default value for Sling within AEM is `1000`.
 
     * As a preventive measure disable the other default renderers (HTML, plain text, XML). Again by configuring the [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
 

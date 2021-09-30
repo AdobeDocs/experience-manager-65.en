@@ -81,13 +81,13 @@ To do this, you need to specify which A4T cloud configuration to connect your Ad
    >When configuring A4T with AEM, you may see a Configuration reference missing entry. To be able to select the analytics framework, do the following:
    >
    >1. Navigate to **Tools** &gt; **General** &gt; **CRXDE Lite**.
-   >1. Navigate to [1] (see below)
+   >1. Navigate to the [A4T Analytics Configuration Dialog](#a4t-analytics-config-dialog) (see below)
    >1. Set the property **disable** to **false**.
    >1. Tap or click **Save All**.
 
-[1]
+#### A4T Analytics Configuration Dialog {#a4t-analytics-config-dialog}
 
-```
+```xml
 /libs/cq/analytics/components/testandtargetpage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig
 
 ```
