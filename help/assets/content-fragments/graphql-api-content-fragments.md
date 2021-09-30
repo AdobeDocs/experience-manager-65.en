@@ -49,7 +49,7 @@ For further information about the GraphQL API, see the following sections (among
 
   * [Introduction to GraphQL](https://graphql.org/learn)
 
-  * [The GraphQL Specification](http://spec.graphql.org/)
+  * [The GraphQL Specification](https://spec.graphql.org/)
 
 * At [graphql.com](https://graphql.com):
 
