@@ -30,6 +30,15 @@ Content is synced linearly between the primary instance and the standby instance
 >
 >For info on more available deployments, see the [Recommended Deployments](/help/sites-deploying/recommended-deploys.md) page.
 
+>[!NOTE]
+>
+>When the Standby instance is setup, or derived from the Primary node, it only allows access to the following two consoles (for administration related activities):
+>
+>* CRXDE Lite
+>* OSGI Web Console 
+>
+>Other consoles are not accessible.
+
 ## How it works {#how-it-works}
 
 On the primary AEM instance, a TCP port is opened and is listening to incoming messages. Currently, there are two type of messages that the slaves will send to the master:
