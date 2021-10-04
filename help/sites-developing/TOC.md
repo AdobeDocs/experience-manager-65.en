@@ -145,6 +145,7 @@ role: Developer
       + [Client Context in Detail](client-context.md)
       + [Client Context Javascript API](ccjsapi.md)
 + Extending AEM{#extending-aem}
+    + [Extending AEM using Adobe Developer App Builder](app-builder.md)
     + [Customizing Page Authoring](customizing-page-authoring-touch.md)
     + [Customizing the Consoles](customizing-consoles-touch.md)
     + [Customizing Views of Page Properties](page-properties-views.md)
