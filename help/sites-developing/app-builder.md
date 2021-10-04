@@ -19,6 +19,10 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 
 App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](http://adobe.ly/appbuilder-trial).
 
+>[!NOTE]
+>
+> For Cloud Services customers who want to leverage the App Builder, please go to [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/app-builder.html).
+
 ## Architecture {#architecture}
 
 Instead of an out-of-the-box solution, Adobe Developer App Builder provides a common, consistent, standardized development platform for extending Adobe Cloud solutions such as AEM including:
