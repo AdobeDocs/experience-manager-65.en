@@ -155,7 +155,7 @@ You can search assets based on exact values of metadata fields, such as, title, 
 | Creator | creator:John |
 | Location | location:NA |
 | Description | description:"Sample Image" |
-| Creator tool | creatortool:"Adobe Photoshop CC 2015" |
+| Creator tool | creatortool:"Adobe Photoshop" |
 | Copyright Owner | copyrightowner:"Adobe Systems" |
 | Contributor | contributor:John |
 | Usage Terms | usageterms:"CopyRights Reserved" |
