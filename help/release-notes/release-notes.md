@@ -188,7 +188,7 @@ You can integrate Livefyre with your AEM 6.5 instance. See [how to integrate Liv
 
 Adobe is using a customer focused development model that allows customers to contribute to all stages of the development process, during specification, development and testing. Our thanks goes to all contributing customers and partners in this process.
 
-Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/contact/enterprise-support.ec.html) is integrated with the Adobe Enhancement and Defect Tracking System. Customer questions are identified and resolved with Customer Care where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support, warrantee issues, and customer-paid enhancements.
+Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Experience Manager Support portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) is integrated with the Adobe Enhancement and Defect Tracking System. Customer questions are identified and resolved by Customer Support team where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support, warrantee issues, and customer-paid enhancements.
 
 This process of prioritization has yielded more than 750 customer focused changes fixed in AEM 6.5.
 

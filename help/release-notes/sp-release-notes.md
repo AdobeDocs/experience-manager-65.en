@@ -493,7 +493,7 @@ The following text documents list the OSGi bundles and Content Packages included
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* See [how to contact Adobe Customer Care](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* See [how to contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >
