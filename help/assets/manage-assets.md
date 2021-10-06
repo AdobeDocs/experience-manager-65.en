@@ -151,7 +151,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 >[!NOTE]
 >
->To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the [!DNL Experience Manager] author instances. Contact [Adobe Customer Care](https://experienceleague.adobe.com/?support-solution=General#support) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
+>To upload assets via FTP in Dynamic Media - Scene7 mode, install Feature Pack 18912 on the [!DNL Experience Manager] author instances. Contact [Adobe Customer Support](https://experienceleague.adobe.com/?support-solution=General#support) to get access to FP-18912 and complete the setup of your FTP account. For more information, see [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md).
 >
 >If you use FTP for uploading assets, the upload settings specified in [!DNL Experience Manager] are ignored. Instead, file processing rules, as defined in Dynamic Media Classic, are used.
 
@@ -161,7 +161,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), then sign in to your account.
 
-   Your credentials and sign-in were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+   Your credentials and sign-in were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
 
 1. On the Global Navigation Bar, click **[!UICONTROL Upload]**.
 1. On the Upload page, near the upper-left corner, click the **[!UICONTROL Via FTP]** tab.

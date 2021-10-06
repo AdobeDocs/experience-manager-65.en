@@ -48,7 +48,7 @@ To use HTTP/2, you must meet the following requirements:
 * Use the Adobe-bundled CDN (content delivery network) as part of your Dynamic Media license.
 * Use a dedicated (non- company-h.assetsadobe#.com) domain.
 
-  If you already have a dedicated domain, you can opt in by way of Technical Support.
+  If you already have a dedicated domain, you can opt in by way of Adobe Customer Support.
 
   If you do not have a dedicated domain, Adobe plans to schedule your transition to HTTP/2 in 2018.
 
@@ -56,7 +56,7 @@ To use HTTP/2, you must meet the following requirements:
 
 You initiate the request to switch over to HTTP/2; it is not automatically done for you.
 
-1. To switch over to HTTP/2, initiate an Adobe Customer Care request. See [Access the Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. To switch over to HTTP/2, initiate an Adobe Customer Support request. See [Access the Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
 
     1. Provide the following information in your support request:
 
@@ -66,8 +66,8 @@ You initiate the request to switch over to HTTP/2; it is not automatically done 
         1. Verify you use the CDN through Adobe and are not managed with a direct relationship.
         1. Verify you use a dedicated domain. If you use Dynamic Media, then you use a dedicated domain.
 
-    1. Customer Care adds you to the HTTP/2 customer waitlist based in the order in which requests were submitted.
-    1. When Adobe is ready to handle your request, Customer Care contacts you to coordinate the transition and set a target date.
+    1. Customer Support adds you to the HTTP/2 customer waitlist based in the order in which requests were submitted.
+    1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate the transition and set a target date.
     1. You are notified after completion and can verify successful transition over to HTTP2.
 
        Because the browser does not state this fact, it is necessary to download an extension.
@@ -76,7 +76,7 @@ You initiate the request to switch over to HTTP/2; it is not automatically done 
 
 ## When can I expect to be transitioned over to HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Requests are processed in the order in which they are received by Customer Care.
+Requests are processed in the order in which they are received by Customer Support.
 
 >[!NOTE]
 >

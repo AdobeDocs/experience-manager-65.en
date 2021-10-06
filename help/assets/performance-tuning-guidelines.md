@@ -206,7 +206,7 @@ In addition, set the path of ImageMagick's temporary folder in the `configure.xm
 >
 >The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`.See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for location of the configuration files.
 
-If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
+If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Support representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -300,6 +300,6 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Configure [!DNL ImageMagick] to limit resource consumption.
 * Remove unnecessary steps from the [!UICONTROL DAM Update Asset] workflow.
 * Configure workflow and version purging.
-* Optimize indexes with the latest Service Packs and hotfixes. Check with Adobe Customer Care for any additional index optimizations that may be available.
+* Optimize indexes with the latest Service Packs and hotfixes. Check with Adobe Customer Support for any additional index optimizations that may be available.
 * Use guessTotal to optimize query performance.
 * If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.
