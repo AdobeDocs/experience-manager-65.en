@@ -3,14 +3,8 @@ title: Deploying Communities
 seo-title: Deploying Communities
 description: How to deploy AEM Communities
 seo-description: How to deploy AEM Communities
-uuid: 18d9b424-004d-43b2-968a-318e27a93759
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
-docset: aem65
-
 ---
 
 # Deploying Communities{#deploying-communities}
@@ -161,7 +155,7 @@ For the SRP collection (MSRP or DSRP) to support advanced multilingual search (M
 
 The advanced MLS download (also known as 'phasetwo') is available from the Adobe repository :
 
-* [AEM-SOLR-MLS-phasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
+* [AEM-SOLR-MLS-phasetwo](https://repo1.maven.org/maven2/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
     * Version 1.2.40, April 6, 2016
     * Download AEM-SOLR-MLS-phasetwo-1.2.40.zip
