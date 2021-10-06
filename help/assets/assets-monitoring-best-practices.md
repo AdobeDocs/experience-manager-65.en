@@ -193,5 +193,5 @@ In the process of monitoring, if you encounter issues, here are some troubleshoo
 * Use the workflow console to verify that your workflows perform as expected. If possible, condense multiple workflows into a single workflow.
 * Revisit live monitoring, and look for additional bottlenecks or high consumers of any specific resources.
 * Investigate the egress points from the client network and the ingress points to the [!DNL Experience Manager] deployment network, including the dispatcher. Frequently, these are bottleneck areas. For more information, see [Assets network considerations](/help/assets/assets-network-considerations.md).
-* Up-size your [!DNL Experience Manager] server. You may have an inadequately sized your [!DNL Experience Manager] deployment. Adobe Customer Care can help you identify whether your server is undersized.
+* Up-size your [!DNL Experience Manager] server. You may have an inadequately sized your [!DNL Experience Manager] deployment. Adobe Customer Support can help you identify whether your server is undersized.
 * Examine the `access.log` and `error.log` files for entries around the time of something went wrong. Look for patterns that can potentially indicate custom code anomalies. Add them to the list of events you monitor.

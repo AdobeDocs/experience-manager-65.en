@@ -79,7 +79,7 @@ To use the Media Library functionality, you can use the default [!DNL Experience
 
 >[!IMPORTANT]
 >
->Many advanced DAM use cases are fulfilled by [!DNL Experience Manager Assets]. Media Library license entitles you to fulfil only the listed use cases using Media Library. If a use case is not listed, do not use it with Media Library license. If you have any queries, contact Adobe Customer Care.
+>Many advanced DAM use cases are fulfilled by [!DNL Experience Manager Assets]. Media Library license entitles you to fulfil only the listed use cases using Media Library. If a use case is not listed, do not use it with Media Library license. If you have any queries, contact Adobe Customer Support.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
