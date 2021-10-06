@@ -33,12 +33,12 @@ See also [Configure Dynamic Media - Scene7 mode](/help/assets/config-dms7.md).
 
 1. In your Experience Manager instance, navigate to **[!UICONTROL Tool]** > **[!UICONTROL Security]** > **[!UICONTROL Users]** and select **[!UICONTROL Create User]**. This service user must have *read/write* permissions to `/content/dam.`
 1. In the **[!UICONTROL ID]** and **[!UICONTROL Password]** fields, enter a user name and password; for example, **FTP User**. This name appears in the timeline as the user who created the asset. When an asset is uploaded from FTP, an asset is considered created when it is uploaded to the FTP server and is pushed to Experience Manager.
-1. Contact [Adobe Enterprise Customer Care for Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) to request access to feature pack 18912 for downloading. You may need the following information when you contact support:
+1. Contact [Adobe Customer Support for Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support) to request access to feature pack 18912 for downloading. You may need the following information when you contact support:
 
     * Server IP address for your Author instance, including the port number (by default, the port number is 4502.)
     * Experience Manager service user username and password from the previous step.
 
-1. Adobe Enterprise Customer Care for Experience Manager provides you the FTP credentials and access to feature pack 18912.
+1. Adobe Customer Support for Experience Manager provides you the FTP credentials and access to feature pack 18912.
 1. When you receive the feature pack 18912, install it.
 
    See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in Experience Manager.

@@ -18,6 +18,10 @@ feature: Security
 >
 >Please note that this feature is available to Adobe Managed Services customers only.
 
+>[!NOTE]
+>
+>IMS login for AEM does not support nested groups in the Admin Console.
+
 ## Introduction {#introduction}
 
 AEM 6.4.3.0 introduces [!DNL Admin Console] support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.

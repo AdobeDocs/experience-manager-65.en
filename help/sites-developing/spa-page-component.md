@@ -87,7 +87,7 @@ The meta resource properties that describe the SPA content:
 >
 >This document uses the We.Retail Journal app for demonstration purposes only. It should not be used for any project work.
 >
->Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.All SPA projects on AEM should be based on the Maven Archetype for SPA Starter Kit.
+>Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.All SPA projects on AEM should be based on the Maven Archetype for SPA Starter Kit.
 
 ## Page Editor Overlay Synchronization {#page-editor-overlay-synchronization}
 

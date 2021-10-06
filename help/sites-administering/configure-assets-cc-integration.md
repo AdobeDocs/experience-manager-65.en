@@ -20,7 +20,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 
 >[!NOTE]
 >
->This feature is deprecated in [!DNL Assets]. Find replacements in [AEM and Creative Cloud Integration best practices](/help/assets/aem-cc-integration-best-practices.md). If you have any queries, [contact Adobe Customer Care](https://www.adobe.com/account/sign-in.supportportal.html).
+>This feature is deprecated in [!DNL Assets]. Find replacements in [AEM and Creative Cloud Integration best practices](/help/assets/aem-cc-integration-best-practices.md). If you have any queries, [contact Adobe Customer Support](https://www.adobe.com/account/sign-in.supportportal.html).
 
 <!-- Hiding this for now via cqdoc-16834.
 ![Flow of data when AEM Assets and Creative Cloud are integrated](assets/chlimage_1-48.png)
@@ -49,7 +49,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 1. From the **[!UICONTROL Scope]** list, select **[!UICONTROL dam-read]**, **[!UICONTROL dam-sync]**, **[!UICONTROL dam-write]**, and **[!UICONTROL cc-share]**.
 1. Click **[!UICONTROL Create]**. A message notifies that the application is created.
 
-   ![Notification of successful creation of the application to integrate AEM Assets with Adobe CC](assets/chlimage_1-50.png)
+   ![Notification of successful creation of the application to integrate AEM Assets with Creative Cloud](assets/chlimage_1-50.png)
 
 1. Copy the **[!UICONTROL Application ID]** that is generated for the new application.
 
@@ -69,7 +69,7 @@ At the backend, the AEM server authenticates your profile with the gateway and t
 
 1. In the **[!UICONTROL Create Configuration]** dialog, specify a title and name for the new configuration and click **[!UICONTROL Create]**.
 
-   ![Name a new configuration to integrate AEM Assets and CC](assets/aem-ec-integration-config1.png)
+   ![Name a new configuration to integrate AEM Assets and Creative Cloud](assets/aem-ec-integration-config1.png)
 
 1. In the **[!UICONTROL Tenant URL]** field, specify the URL for AEM Assets. In the past, if the URL was defined as `https://<tenant_id>.marketing.adobe.com`, change it to `https://<tenant_id>.experiencecloud.adobe.com`.
 

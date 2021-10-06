@@ -64,6 +64,8 @@ After you configure selective publishing in a folder, you can do any of the foll
     >[!IMPORTANT]
     >
     >Regardless of the Dynamic Media Publish mode option you select, any updates you later make to an asset that is *already* published, those updates are immediately published without any further user action.
+    >
+    >If a published video is updated, it must be published again to reflect changes on delivery.
 
     | Dynamic Media Publish mode option | Description |
     | --- | --- |

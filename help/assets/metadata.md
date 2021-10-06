@@ -25,7 +25,7 @@ The following methods can be used to add metadata to digital assets:
 
 * To begin with, the native applications that create assets add some metadata to it. For example, [Acrobat adds some metadata](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) to PDF files or a camera adds some basic metadata to the photographs. When generating assets, you can add the metadata in native applications itself. For example, you can [add IPTC metadata in Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Before uploading an asset to [!DNL Experience Manager], you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed. For example, see how to [work with metadata in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) and see the [tags panel for [!DNL Bridge CC]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
+* Before uploading an asset to [!DNL Experience Manager], you can edit and modify metadata using either the native application used to create an asset or using some other metadata editing application. When you upload an asset to Experience Manager, the metadata is processed. For example, see how to [work with metadata in [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) and see the [tags panel for [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
 * In [!DNL Experience Manager Assets], you can manually add or edit metadata of assets in the [!UICONTROL Properties] page.
 
@@ -104,7 +104,7 @@ The metadata import is asynchronous and does not impede system performance. Simu
     | [!UICONTROL Batch Size] | Number of assets in a batch for which metadata is to be imported. Default value is 50. Maximum value is 100. |
     | [!UICONTROL Field Separator] | Default value is `,` (a comma). You can specify any other character. |
     | [!UICONTROL Multi Value Delimiter] | Separator for metadata values. Default value is `|`. |
-    | [!UICONTROL Launch Workflows] | False by default. When set to `true` and default Launcher settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Enabling launch workflows slows the system down. |
+    | [!UICONTROL Launch Workflows] | False by default. When set to `true` and default settings are in effect for the [!UICONTROL DAM Metadata WriteBack] workflow (that writes metadata to the binary XMP data). Enabling the workflows slows the system down. |
     | [!UICONTROL Asset Path Column Name] | Defines the column name for the CSV file with assets. |
 
 1. Click **[!UICONTROL Import]** from the toolbar. After the metadata is imported, a notification is displayed in [!UICONTROL Notification] inbox.

@@ -16,7 +16,7 @@ To process large files using ImageMagick, consider higher than usual memory requ
 
 >[!NOTE]
 >
->If you are using [!DNL Experience Manager] on [!DNL Adobe Managed Services] (AMS), contact Adobe Customer Care if you plan to process many high-resolution PSD or PSB files. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
+>If you are using [!DNL Experience Manager] on [!DNL Adobe Managed Services] (AMS), contact Adobe Customer Support if you plan to process many high-resolution PSD or PSB files. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ## Install ImageMagick {#installing-imagemagick}
 

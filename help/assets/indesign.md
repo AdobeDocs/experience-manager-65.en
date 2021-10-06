@@ -18,7 +18,7 @@ To fully upload files to [!DNL Experience Manager Assets] that you have created 
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign] is offered as two separate offerings. [Adobe InDesign](https://www.adobe.com/products/indesign.html) desktop app that is used to design page layouts for print and digital distribution. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) enables you to programmatically create automated documents based on what you have created with [!DNL InDesign]. It operates as a service offering an interface to its [ExtendScript](https://www.adobe.com/devnet/scripting.html) engine.The scripts are written in [!DNL ExtendScript], which is similar to [!DNL JavaScript]. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+>[!DNL Adobe InDesign] is offered as two separate offerings. [Adobe InDesign](https://www.adobe.com/products/indesign.html) desktop app that is used to design page layouts for print and digital distribution. [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html) enables you to programmatically create automated documents based on what you have created with [!DNL InDesign]. It operates as a service offering an interface to its [ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) engine.The scripts are written in [!DNL ExtendScript], which is similar to [!DNL JavaScript]. For information about [!DNL InDesign] scripts see [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
 
 ## How the extraction works {#how-the-extraction-works}
 

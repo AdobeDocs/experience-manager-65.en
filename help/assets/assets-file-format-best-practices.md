@@ -14,7 +14,7 @@ For the supported file formats, see [Assets supported formats](/help/assets/asse
 
 >[!TIP]
 >
->If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
+>If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Support representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ## [!DNL Adobe Camera Raw] library {#adobe-camera-raw-library}
 

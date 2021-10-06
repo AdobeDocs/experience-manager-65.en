@@ -91,7 +91,7 @@ role: Developer
       + [Using xtypes (Classic UI)](xtypes.md)
       + [Developing Forms (Classic UI)](developing-forms.md)
 + Headless Experience Management{#headless}
-    + [Headless and Hybrid with AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+    + [Headless and Hybrid with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [Enabling JSON Export for a Component](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/json-exporter-components.html)
     + Single Page Applications{#spas}
         + [SPA Introduction and Walkthrough](spa-walkthrough.md)
@@ -145,6 +145,7 @@ role: Developer
       + [Client Context in Detail](client-context.md)
       + [Client Context Javascript API](ccjsapi.md)
 + Extending AEM{#extending-aem}
+    + [Extending AEM using Adobe Developer App Builder](app-builder.md)
     + [Customizing Page Authoring](customizing-page-authoring-touch.md)
     + [Customizing the Consoles](customizing-consoles-touch.md)
     + [Customizing Views of Page Properties](page-properties-views.md)
