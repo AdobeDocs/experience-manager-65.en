@@ -202,7 +202,7 @@ This process of prioritization has yielded more than 750 customer focused change
 * Plug-in for Eclipse IDE ([read more and download](/help/sites-developing/aem-eclipse.md))
 
 * Extension for Brackets Code Editor ([read more and download](/help/sites-developing/aem-brackets.md))
-* Maven/Gradle dependencies ([download link](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.5.0/))
+* Maven/Gradle dependencies ([download link](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
 **Sites**
 
@@ -231,8 +231,8 @@ This process of prioritization has yielded more than 750 customer focused change
 
 **Forms**
 
-* [Packages for AEM Forms capabilities](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
+* [Packages for AEM Forms capabilities](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [AEM Forms OSGi Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Languages {#languages}
 
