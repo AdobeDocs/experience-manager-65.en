@@ -73,13 +73,22 @@ To use the Media Library functionality, you can use the default [!DNL Experience
 * Annotate assets.
 * Add assets to [!DNL Sites] pages through Content Finder.
 * Use [!DNL Content Fragments].
+* Use HTTP REST and GraphQL APIs for [!DNL Content Fragments] and referenced media assets, under Sites license.
+* Marketing Cloud integration.
+* Customize and extend asset management user interface.
+* Access the Query Builder (API) to extend the search functionality.
+* Create static tags.
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+
+As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
 >
 >Many advanced DAM use cases are fulfilled by [!DNL Experience Manager Assets]. Media Library license entitles you to fulfil only the listed use cases using Media Library. If a use case is not listed, do not use it with Media Library license. If you have any queries, contact Adobe Customer Support.
+
+Note that you cannot use smart tags, [!DNL Asset] link, [!DNL Asset] selector, bulk tagging, modifying asset workflows without [!DNL Assets] license.
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
