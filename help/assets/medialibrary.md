@@ -6,14 +6,6 @@ role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 ---
-<!--
-
-Define Media Lib
-Define req for it
-Define use cases
-Define what is not included
-
--->
 
 # Use Media Library for basic asset management {#manage-assets-using-media-library}
 
@@ -37,9 +29,9 @@ If you want to prevent unintended use of [!DNL Assets] features that you have no
 
 ## Use Media Library {#use-media-library}
 
-Media Library broadly covers the following use cases:
+Media Library provides basic DAM features for the following use cases:
 
-* Provide basic DAM features for web pages crated using [!DNL Adobe Experience Manager Sites].
+* Web pages created using [!DNL Adobe Experience Manager Sites].
 * Adaptive forms and communications created using [!DNL Adobe Experience Manager Forms].
 * Digital screen experiences created using [!DNL Adobe Experience Manager Screens].
 * [!DNL Assets] HTTP REST APIs for headless operations.
