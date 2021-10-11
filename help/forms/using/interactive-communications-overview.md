@@ -129,7 +129,7 @@ Interactive Communication is the default and recommended approach to create cust
    <td>Supported</td>
   </tr>
    <tr>
-   <td>Manage instance</td>
+   <td>Drafts Manage instances</td>
    <td>Not Supported</td>
    <td>Supported</td>
   </tr>
