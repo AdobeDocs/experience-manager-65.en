@@ -113,14 +113,24 @@ Interactive Communication is the default and recommended approach to create cust
    <td>Uses themes to style web channel</td>
    <td>Does not support themes</td>
   </tr>
-  <tr>
-   <td>Auditing and Versioning</td>
-   <td>Not Supported</td>
+   <tr>
+   <td>Drafts</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
-   <td>Drafts and manage instance</td>
+   <td>Auditing</td>
+   <td>Not Supported</td>
    <td>Supported</td>
+  </tr>
+   <tr>
+   <td>Versioning</td>
+   <td>Not Supported</td>
+   <td>Supported</td>
+  </tr>
+   <tr>
+   <td>Manage instance</td>
+   <td>Not Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
