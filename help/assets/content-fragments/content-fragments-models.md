@@ -68,6 +68,10 @@ The content fragment model effectively defines the structure of the resulting co
      * Many properties are self-explanatory, for additional details see [Properties](#properties).
      * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
 
+>[!CAUTION]
+>
+>When manually updating data type Property Names, note that names must contain only Latin characters, numerical digits and underscore "_" as special character. 
+     
      For example:
 
      ![field properties](assets/cfm-models-05.png)
