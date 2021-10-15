@@ -70,7 +70,7 @@ The content fragment model effectively defines the structure of the resulting co
 
        >[!CAUTION]
        >
-       >When manually updating a data type **Property Name**, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+       >When manually updating the property **Property Name** for a data type, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
        >
        >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
@@ -133,11 +133,14 @@ A selection of data types is available for defining your model:
 
 Many properties are self-explanatory, for certain properties additional details are below:
 
->[!CAUTION]
->
->When manually updating the **Property Name**, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
->
->If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
+
+* **Property Name**
+
+  When manually updating this property for a data type, note that names **must** contain *only* Latin characters, numerical digits and underscore "_" as special character.
+
+  >[!CAUTION]
+  >
+  >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
