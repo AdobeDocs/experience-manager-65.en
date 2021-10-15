@@ -68,6 +68,12 @@ The content fragment model effectively defines the structure of the resulting co
      * Many properties are self-explanatory, for additional details see [Properties](#properties).
      * Typing a **Field Label** will auto-complete the **Property Name**  - if empty, and it can be manually updated afterwards.
 
+       >[!CAUTION]
+       >
+       >When manually updating data type Property Names, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+       >
+       >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
+
      For example:
 
      ![field properties](assets/cfm-models-05.png)
@@ -126,6 +132,12 @@ A selection of data types is available for defining your model:
 ## Properties {#properties}
 
 Many properties are self-explanatory, for certain properties additional details are below:
+
+>[!CAUTION]
+>
+>When manually updating data type Property Names, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+>
+>If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
 * **Render As**
   The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
