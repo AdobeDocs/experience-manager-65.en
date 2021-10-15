@@ -70,7 +70,7 @@ The content fragment model effectively defines the structure of the resulting co
 
        >[!CAUTION]
        >
-       >When manually updating data type Property Names, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+       >When manually updating a data type **Property Name**, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
        >
        >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
@@ -135,7 +135,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
 >[!CAUTION]
 >
->When manually updating data type Property Names, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+>When manually updating the **Property Name**, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
 >
 >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
