@@ -72,7 +72,7 @@ When you synchronize your domains after deleting a directory, all users and grou
 
 When you add a directory to a domain, specify the following directory settings.
 
-**Server:** (Mandatory) Fully qualified domain name (FQDN) of the directory server. For example, for a computer called x on the corp.adobe.com network, the FQDN is x.corp.adobe.com. An IP address can be used in place of the FQDN server name.
+**Server:** (Mandatory) Fully qualified domain name (FQDN) of the directory server. For example, for a computer called x on the adobe.com network, the FQDN is x.adobe.com. An IP address can be used in place of the FQDN server name.
 
 **Port:** (Mandatory) The port that the directory server uses. Typically 389, or 636 if the Secure Sockets Layer (SSL) protocol is used for sending authentication information over the network.
 
