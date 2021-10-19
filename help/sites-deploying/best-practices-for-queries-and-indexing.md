@@ -209,10 +209,7 @@ When removing an index on a MongoDB instance, the cost of deletion is proportion
 
 ### The JCR Query Cheat Sheet {#jcrquerycheatsheet}
 
-To support you to create efficient JCR queries and index definitions, you can download the [JCR Query Cheat Sheet|assets/JCR_query_cheatsheet-v1.0.pdf] and use it as reference during the development work. It contains sample queries for QueryBuilder, XPath and SQL-2 covering multiple scenarios which behave differently in terms of query performance. It also gives you recommendations how to build oder customize Oak indexes.
-The content of this Cheat Sheet applies for AEM 6.5 and AEM as a Cloud Service.
-
-
+To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet|assets/JCR_query_cheatsheet-v1.0.pdf] is available for download and use as a reference during development. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
 
 ## Re-indexing {#re-indexing}
 
