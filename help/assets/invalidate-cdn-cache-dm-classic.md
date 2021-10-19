@@ -27,7 +27,7 @@ See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app), then sign in to your account.
 
-      Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+      Your credentials and logon were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
 
 1. Near the upper-right corner of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
 1. On the Application General Settings page, under the Servers group heading, locate the **[!UICONTROL CDN Invalidation Template]** text box.

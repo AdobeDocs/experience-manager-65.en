@@ -10,11 +10,12 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 ---
+
 # Interactive Communications Overview {#interactive-communications-overview}
 
 This article includes overview, sample use cases, creation workflow, and differences between Interactive Communication and letter.
 
- ![](do-not-localize/correspondence-management.png)
+![](do-not-localize/correspondence-management.png)
 
 Interactive Communications centralizes and manages the creation, assembly, and delivery of secure, personalized, and interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 
@@ -22,14 +23,14 @@ Interactive Communications centralizes and manages the creation, assembly, and d
 
 Following are the key capabilities of Interactive Communications:
 
-* Out-of-the-box integration with form data model to enable easy and streamlined access to back end databases and other CRM systems, such as MS® Dynamics
-* Integrated authoring interface for print and web channels with ability to auto generate web channel from the print channel
-* Charts to present information in easily understandable visual formats in print and web
-* Document fragments support rule editor and form data model
-* Agent user interface displays print and web preview of the Interactive Communication
-* Drag-and-drop components to quickly construct print and web channels
+- Out-of-the-box integration with form data model to enable easy and streamlined access to back end databases and other CRM systems, such as MS® Dynamics
+- Integrated authoring interface for print and web channels with ability to auto generate web channel from the print channel
+- Charts to present information in easily understandable visual formats in print and web
+- Document fragments support rule editor and form data model
+- Agent user interface displays print and web preview of the Interactive Communication
+- Drag-and-drop components to quickly construct print and web channels
 
-## Interactive Communication creation  {#interactive-communication-creation}
+## Interactive Communication creation {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
@@ -44,10 +45,10 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
 1. Using the [drag-and-drop interface](/help/forms/using/introduction-interactive-communication-authoring.md), add document fragments, images, components to print and web channel of the Interactive Communication as required.
 1. Configure the properties for the components inserted, such as the following:
 
-    1. [Images](/help/forms/using/create-interactive-communication.md#step2)
-    1. [Tables](/help/forms/using/create-interactive-communication.md#tables) (Including Layout Fragments)
-    1. [Charts](/help/forms/using/chart-component-interactive-communications.md)
-    1. [Document fragments](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
+   1. [Images](/help/forms/using/create-interactive-communication.md#step2)
+   1. [Tables](/help/forms/using/create-interactive-communication.md#tables) (Including Layout Fragments)
+   1. [Charts](/help/forms/using/chart-component-interactive-communications.md)
+   1. [Document fragments](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. Preview print and web channels and, if required, edit the Interactive Communication.
 1. The agent uses the Agent UI to [prepare the Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md) for sending it to the recipient/post process.
@@ -56,11 +57,11 @@ To create an Interactive Communication, have the [building blocks](#buildingbloc
 
 Following are the building blocks required for creating an Interactive Communication:
 
-* [Form data model](/help/forms/using/data-integration.md)
-* [Print and web channel templates](/help/forms/using/web-channel-print-channel.md)
-* [Document fragments](/help/forms/using/document-fragments.md)
-* Images
-* [Themes](/help/forms/using/themes.md) for the Web channel
+- [Form data model](/help/forms/using/data-integration.md)
+- [Print and web channel templates](/help/forms/using/web-channel-print-channel.md)
+- [Document fragments](/help/forms/using/document-fragments.md)
+- Images
+- [Themes](/help/forms/using/themes.md) for the Web channel
 
 ## Interactive Communications Vs Correspondence Management {#interactive-communications-vs-correspondence-management}
 
@@ -112,14 +113,24 @@ Interactive Communication is the default and recommended approach to create cust
    <td>Uses themes to style web channel</td>
    <td>Does not support themes</td>
   </tr>
-  <tr>
-   <td>Auditing and Versioning</td>
-   <td>Not supported</td>
+   <tr>
+   <td>Drafts</td>
+   <td>Supported</td>
    <td>Supported</td>
   </tr>
   <tr>
-   <td>Drafts and manage instance</td>
-   <td>Not supported</td>
+   <td>Auditing</td>
+   <td>Not Supported</td>
+   <td>Supported</td>
+  </tr>
+   <tr>
+   <td>Versioning</td>
+   <td>Not Supported</td>
+   <td>Supported</td>
+  </tr>
+   <tr>
+   <td>Drafts Manage instances</td>
+   <td>Not Supported</td>
    <td>Supported</td>
   </tr>
   <tr>

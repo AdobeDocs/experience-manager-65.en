@@ -3,13 +3,8 @@ title: Integrating Services with the JMX Console
 seo-title: Integrating Services with the JMX Console
 description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
-uuid: 4a489a24-af10-4505-8333-aafc0c81dd3e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 83c590e0-2e6c-4499-a6ea-216e4c7bc43c
-docset: aem65
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
 ---
 # Integrating Services with the JMX Console{#integrating-services-with-the-jmx-console}
@@ -556,13 +551,13 @@ Add the following profile to your maven settings file to use the public Adobe re
     <properties>
          <releaseRepository-Id>adobe-public-releases</releaseRepository-Id>
          <releaseRepository-Name>Adobe Public Releases</releaseRepository-Name>
-         <releaseRepository-URL>https://repo.adobe.com/nexus/content/groups/public</releaseRepository-URL>
+         <releaseRepository-URL>https://repo1.maven.org/maven2/com/adobe/</releaseRepository-URL>
     </properties>
     <repositories>
          <repository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe  Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>
@@ -575,8 +570,8 @@ Add the following profile to your maven settings file to use the public Adobe re
      <pluginRepositories>
          <pluginRepository>
              <id>adobe-public-releases</id>
-             <name>Adobe Basel Public Repository</name>
-             <url>https://repo.adobe.com/nexus/content/groups/public</url>
+             <name>Adobe Public Repository</name>
+             <url>https://repo1.maven.org/maven2/com/adobe/</url>
              <releases>
                  <enabled>true</enabled>
                  <updatePolicy>never</updatePolicy>

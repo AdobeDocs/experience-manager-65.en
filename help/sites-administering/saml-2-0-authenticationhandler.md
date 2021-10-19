@@ -19,7 +19,7 @@ It supports:
 
 * signing and encryption of messages
 * automatic creation of users
-* synching groups to existsing ones in AEM
+* synching groups to existing ones in AEM
 * Service Provider and Identity Provider initiated authentication
 
 This handler stores the encrypted SAML response message in the user-node ( `usernode/samlResponse`) to facilitate communication with a third-party Service Provider.
@@ -44,7 +44,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 >[!NOTE]
 >
->SAML assertions are signed and may optionally be encrypted. In order for this to work you have to provide at least the public certificate of the Indentity Provider in the TrustStore. See [Adding the IdP certificate to the TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) section for more information.
+>SAML assertions are signed and may optionally be encrypted. In order for this to work you have to provide at least the public certificate of the Identity Provider in the TrustStore. See [Adding the IdP certificate to the TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) section for more information.
 
 **Path** Repository path for which this authentication handler should be used by Sling. If this is empty, the authentication handler will be disabled.
 

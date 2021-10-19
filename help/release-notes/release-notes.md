@@ -188,7 +188,7 @@ You can integrate Livefyre with your AEM 6.5 instance. See [how to integrate Liv
 
 Adobe is using a customer focused development model that allows customers to contribute to all stages of the development process, during specification, development and testing. Our thanks goes to all contributing customers and partners in this process.
 
-Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/contact/enterprise-support.ec.html) is integrated with the Adobe Enhancement and Defect Tracking System. Customer questions are identified and resolved with Customer Care where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support, warrantee issues, and customer-paid enhancements.
+Adobe has the procedures and processes in place to enable collection, prioritization, and tracking of customer focused bug resolution and enhancement request development. The [Experience Manager Support portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) is integrated with the Adobe Enhancement and Defect Tracking System. Customer questions are identified and resolved by Customer Support team where possible. When escalated to R&D, all customer information is captured, and used for prioritization and reporting purposes. Priority is given in development to paid support, warrantee issues, and customer-paid enhancements.
 
 This process of prioritization has yielded more than 750 customer focused changes fixed in AEM 6.5.
 
@@ -202,7 +202,7 @@ This process of prioritization has yielded more than 750 customer focused change
 * Plug-in for Eclipse IDE ([read more and download](/help/sites-developing/aem-eclipse.md))
 
 * Extension for Brackets Code Editor ([read more and download](/help/sites-developing/aem-brackets.md))
-* Maven/Gradle dependencies ([download link](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.5.0/))
+* Maven/Gradle dependencies ([download link](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
 **Sites**
 
@@ -231,8 +231,8 @@ This process of prioritization has yielded more than 750 customer focused change
 
 **Forms**
 
-* [Packages for AEM Forms capabilities](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
-* [AEM Forms OSGi Client SDK](https://repo.adobe.com/nexus/content/repositories/public/com/adobe/aemfd/aemfd-client-sdk/6.0.80/)
+* [Packages for AEM Forms capabilities](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [AEM Forms OSGi Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Languages {#languages}
 

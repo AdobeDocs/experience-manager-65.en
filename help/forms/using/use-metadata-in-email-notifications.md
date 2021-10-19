@@ -193,7 +193,7 @@ You can also use custom metadata in an email notification. Custom metadata conta
 
 You can use the WorkitemUserMetadataService Java interface to add custom metadata for email templates. You can create an OSGi bundle that uses the WorkitemUserMetadataService Java interface and deploy it to the AEM Forms server. It makes the metadata available for selection in the Assign Task step.
 
-To create an OSGi bundle with Java interface, add [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar and [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) files as external dependencies to the OSGi bundle project. You can use any Java IDE to create an OSGi bundle. The following procedure provides steps to use Eclipse to create an OSGi bundle:
+To create an OSGi bundle with Java interface, add [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar and [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) files as external dependencies to the OSGi bundle project. You can use any Java IDE to create an OSGi bundle. The following procedure provides steps to use Eclipse to create an OSGi bundle:
 
 1. Open Eclipse IDE. Navigate to File &gt; New Project.  
 
