@@ -40,7 +40,7 @@ Under the **Settings** tab, you provide the basic features of the group:
 
 * **Group Name**
   
-  The title of the group to display on the community site.
+  The title of the group to display on the community site. Avoid using underscore characters (_) and keywords such as resources and configuration in group name.  
 
 * **Description**
   
