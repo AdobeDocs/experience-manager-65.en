@@ -115,7 +115,7 @@ You can also extract the indexes in your system in JSON format. In order to do t
 
 **During Development**
 
-Set low threshholds for `oak.queryLimitInMemory` (eg. 10000) and oak. `queryLimitReads` (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying “The query read more than x nodes..."
+Set low thresholds for `oak.queryLimitInMemory` (eg. 10000) and oak. `queryLimitReads` (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying “The query read more than x nodes..."
 
 This helps avoiding resource intensive queries (ie. not backed by any index or backed by less covering index). For example, a query that reads 1 million nodes would lead to increased I/O, and negatively impact the overall application performance. Any query that fails due to above limits should be analyzed and optimized.
 
@@ -209,19 +209,19 @@ When removing an index on a MongoDB instance, the cost of deletion is proportion
 
 ### The JCR Query Cheat Sheet {#jcrquerycheatsheet}
 
-To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet|assets/JCR_query_cheatsheet-v1.0.pdf] is available for download and use as a reference during development. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
+To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](assets/JCR_query_cheatsheet-v1.0.pdf) is available for download and use as a reference during development. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
 
 ## Re-indexing {#re-indexing}
 
 This section outlines the **only** acceptable reasons to re-index Oak indexes.
 
-Outside the reasons outlined below, initiating re-indexes of Oak indexes will **not** change behavior or resolve issues, and unncessarily increase load on AEM.
+Outside the reasons outlined below, initiating re-indexes of Oak indexes will **not** change behavior or resolve issues, and unnecessarily increase load on AEM.
 
 Re-indexing of Oak indexes is to be avoided unless covered by a reasons in the tables below.
 
 >[!NOTE]
 >
->Prior to consulting the tables below to determine is re-indexing is useful,** always **verify:
+>Prior to consulting the tables below to determine is re-indexing is useful, **always** verify:
 >
 >* the query is correct
 >* the query resolves to the expected index (using [Explain Query](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
