@@ -1697,7 +1697,7 @@ For a complete list of features and key highlights introduced in the latest Serv
 
 * Incorrect container height of an uploaded 3D model previewed in 3D viewer is observed on asset’s details page (CQ-4283309).
 
-* Carousel Editor does not open in IE 11 on Experience Manager Dynamic Media Hybrid mode (CQ-4255590).
+* Carousel Editor does not open in IE 11 on Experience Manager Dynamic Media Hybrid mode (CQ-4255590). **For Adobe Dynamic Media - Hybrid mode customers:** Adobe is ending support for Internet Explorer 11 in Dynamic Media - Hybrid mode, after May 2022.
 
 * Keyboard focus gets stuck in Email drop-down in Download dialog, in Chrome and Safari browsers (NPR-32067).
 
