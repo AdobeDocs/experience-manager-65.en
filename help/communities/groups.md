@@ -91,11 +91,11 @@ To access the Groups console:
 
 * **Community Group Name** 
 
-  The name of the group's root page which appears in the URL.
+  The name of the group's root page which appears in the URL. Avoid using underscore characters (_) and keywords such as resources and configuration in group name.
 
-    * Double-check the name as it is not easily changed after the group is created.
-    * The base URL will be displayed underneath the `Community Group Name`.
-    * For a valid URL, append ".html"
+  * Double-check the name as it is not easily changed after the group is created.
+  * The base URL will be displayed underneath the `Community Group Name`.
+  * For a valid URL, append ".html"
       *for example*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Community Group Template** menu
