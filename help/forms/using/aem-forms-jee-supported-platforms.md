@@ -61,7 +61,7 @@ Adobe recommends these configurations and provides full or restricted support as
 | E: Expected to work | The configuration is expected to work, and there are no reports to the contrary.                                                       |
 | Z: Not supported    | The configuration is not supported. Adobe does not make any statements about whether the configuration works, and does not support it. |
 
-> [!NOTE]
+>[!NOTE]
 >
 > To help AEM Forms customers reduce the cost of ownership, simplify the deployment architecture, and modernize the development stack, Adobe Experience Manager enterprise platform is moving away from application server-based deployments in favor of standalone OSGi-based deployments. Adobe continues to support the AEM Forms JEE stack with a reduced matrix of infrastructure components.
 >
@@ -117,7 +117,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
  </tbody>
 </table>
 
-> [!NOTE]
+>[!NOTE]
 >
 > - It is recommend to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
 > - AEM Forms on JEE supports only 64-bit JVMs on production environments.
@@ -254,7 +254,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
  </tbody>
 </table>
 
-> [!NOTE]
+>[!NOTE]
 >
 > IBM® WebSphere® clusters are only supported in Network Deployment editions.
 
@@ -494,7 +494,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
  </tbody>
 </table>
 
-> [!NOTE]
+>[!NOTE]
 >
 > PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
 >
@@ -618,7 +618,7 @@ For additional requirements see:
  </tbody>
 </table>
 
-> [!NOTE]
+>[!NOTE]
 >
 > The Acrobat DC product family introduces two tracks for both Acrobat and Reader which are essentially different products: “Classic” and “Continuous.” For details and a comparison of the two tracks, see [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
@@ -671,7 +671,7 @@ For additional requirements see:
  </tbody>
 </table>
 
-> [!NOTE]
+>[!NOTE]
 >
 > Some browser-related exceptions for desktops are as follows:
 >
@@ -709,7 +709,7 @@ For additional requirements see:
  </tbody>
 </table>
 
-> [!NOTE]
+>[!NOTE]
 >
 > - Forms Portal is supported on Safari on iPad only.
 
@@ -740,7 +740,7 @@ AEM Forms app is available on the following platforms:
  </tbody>
 </table>
 
-> [!NOTE]
+>[!NOTE]
 >
 > Adobe will [stop updating and distributing the Flash Player at the end of 2020](https://theblog.adobe.com/adobe-flash-update/).
 
@@ -782,7 +782,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 - OpenOffice 4.1.2
 
-> [!NOTE]
+>[!NOTE]
 >
 > The platforms marked as [deprecated remain in support until AEM Forms 6.5 Service Pack 15 (6.5.15.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
@@ -806,3 +806,4 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
   - Sep 09, 2020
 
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
+
