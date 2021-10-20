@@ -41,6 +41,8 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 
 * Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
 
+* AEM Storefront Venia returns HTTP 404 error if category or product page is not found
+
 ## Release Date: September, 2021
 
 |Component| Version| Details|
