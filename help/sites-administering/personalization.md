@@ -29,8 +29,10 @@ There are three main elements involved in personalization:
 ### Content {#content}
 
 * Is what the user wants to see. Preferably content of interest and use to them for fulfilling their tasks.
-* Can be categorized, and therefore made available to users according to predefined rules.must be dynamic; in other words the content
-* Must, in some way, be dependent upon the user - if every user would see the same content, then personalization would be redundant.
+* Can be categorized, and therefore made available to users according to predefined rules.
+* Must be dynamic.
+ 
+In other words the content must, in some way, be dependent upon the user. If every user is just going to see the same content then personalization is redundant.
 
 ### Rules {#rules}
 
