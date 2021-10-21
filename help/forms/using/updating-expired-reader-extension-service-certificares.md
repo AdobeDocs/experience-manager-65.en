@@ -61,11 +61,11 @@ You can use the Trust Store Management pages to import a new or replacement cred
 
 To import the credentials: 
 
-1.	In administration console, click Settings > Trust Store Management > Local Credentials.
-1.	Click Import and, under Trust Store Type, select Acrobat Reader DC extensions Credential.
-1.	(Optional) To indicate that this credential is the default credential to use with Acrobat Reader DC extensions, select Default.
-1.	In the Alias box, type an identifier for the credential. This identifier is used as the display name for the credential in Acrobat Reader DC extensions. This alias is also used to access the credential programmatically using the AEM forms SDK.
-1.	Click Choose File to locate the credential, type the password of the credential, and then click OK.
+1. In administration console, click Settings > Trust Store Management > Local Credentials.
+1. Click Import and, under Trust Store Type, select Acrobat Reader DC extensions Credential.
+1. (Optional) To indicate that this credential is the default credential to use with Acrobat Reader DC extensions, select Default.
+1. In the Alias box, type an identifier for the credential. This identifier is used as the display name for the credential in Acrobat Reader DC extensions. This alias is also used to access the credential programmatically using the AEM forms SDK.
+1. Click Choose File to locate the credential, type the password of the credential, and then click OK.
 
 If the error message “Failed to import credential due to either incorrect file format, or incorrect password” appears, verify that the password is valid.
 
@@ -90,13 +90,13 @@ Updating and applying new certificates on AEM Forms on OSGi stack requires impor
 
 In an AEM Forms on OSGi environment, a Reader Extension credential is associated with fd-service user. Before adding credentials for fd-user key store, perform the following steps to create a key-store: 
 
-1.	Login to your AEM Author instance as an Administrator.
-1.	Go to Tools> Security>Users.
-1.	Scroll down the list of users till you find fd-service user account.
-1.	Click on the fd-service user.
-1.	Click on the keystore tab.
-1.	Click on Create KeyStore.
-1.	Set the KeyStore Access Password and save your settings to create the KeyStore password.
+1. Login to your AEM Author instance as an Administrator.
+1. Go to Tools> Security>Users.
+1. Scroll down the list of users till you find fd-service user account.
+1. Click on the fd-service user.
+1. Click on the keystore tab.
+1. Click on Create KeyStore.
+1. Set the KeyStore Access Password and save your settings to create the KeyStore password.
 
 After creating the key-store, add credentials to fd-service user.
 
