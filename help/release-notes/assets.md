@@ -11,7 +11,7 @@ Here are the key features and highlights of the [!DNL Adobe Experience Manager] 
 
 [!DNL Adobe Experience Manager] offers various ways to integrate with [!DNL Adobe Creative Cloud] and share assets for use in workflows where the creative and marketing or business teams collaborate closely. [!DNL Experience Manager] 6.5 continues to improve on the integration and streamlines it further to expose more opportunities and streamline the existing methods.
 
-Read on to know the specific capabilities and integrations of [!DNL Experience Manager] 6.5 that you can leverage to best support your content velocity use cases.
+Read on to know the specific capabilities and integrations of [!DNL Experience Manager] 6.5 that you can use to best support your content velocity use cases.
 
 ### Adobe Asset Link {#aal}
 
@@ -39,13 +39,13 @@ For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/a
 
 ### Dynamic references in [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
 
-[!DNL Experience Manager Assets] used in [!DNL Adobe InDesign] files are dynamic. The references update automatically if the referenced assets moves in the repository. For more information see, [how to manage compound assets](/help/assets/managing-linked-subassets.md).
+[!DNL Experience Manager Assets] used in [!DNL Adobe InDesign] files are dynamic. The references update automatically if the referenced assets moves in the repository. For more information, see [how to manage compound assets](/help/assets/managing-linked-subassets.md).
 
 ## Brand Portal capabilities {#brand-portal-capabilities}
 
 [!DNL Experience Manager Assets Brand Portal] helps you easily acquire, effectively control, and securely distribute the approved assets to external vendors/agencies and internal business users across devices. It helps improve the efficiency of asset sharing, accelerates the time-to-market for assets, and eliminates the risk of non-compliant usage and unauthorized access.
 
-For more info, see [What's new in Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html).
+For more information, see [What's new in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=en).
 
 ## Connected Assets {#connectedassets}
 
@@ -59,21 +59,21 @@ In large enterprises the infrastructure required to create websites can be distr
 
 ## Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] provides enhanced rich-media authoring and delivery in [!DNL Experience Manager Assets] to drive cutting-edge experiences that are immersive and personalized. By uploading a single high-quality master asset and using our advanced cloud rendering and viewers, you can deliver any combination of renditions on-the-fly to support your organization’s media strategy.
+[!DNL Dynamic Media] provides enhanced rich-media authoring and delivery in [!DNL Experience Manager Assets] to drive cutting-edge experiences that are immersive and personalized. By uploading a single high-quality primary asset and using Adobe's advanced cloud rendering and viewers, you can deliver any combination of renditions on-the-fly to support your organization’s media strategy.
 
-For more details on new [!DNL Dynamic Media] features see [Dynamic Media Release Notes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
+For more details on new [!DNL Dynamic Media] features, see [Dynamic Media Release Notes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
 ### 360 video support {#video-support}
 
-Manage your 360-video files directly in [!DNL Experience Manager] using the cutting edge viewers to deliver VR-experiences to desktops, mobile and VR-headsets. For more information see [Using 360 Video](/help/assets/360-video.md).
+Manage your 360-video files directly in [!DNL Experience Manager] using the cutting edge viewers to deliver VR-experiences to desktops, mobile, and VR-headsets. For more information, see [Using 360 Video](/help/assets/360-video.md).
 
 ### Custom video thumbnails {#custom-video-thumbnails}
 
-You can now customize the thumbnails for your video assets using frames from the video itself or other content stored in the DAM. For additional instructions see [About Video Thumbnails](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
+You can now customize the thumbnails for your video assets using frames from the video itself or other content stored in the DAM. For additional instructions, see [About Video Thumbnails](/help/assets/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
 ### Accessibility enhancements {#accessibility-enhancements}
 
-[!DNL Dynamic Media] viewers now support enhanced accessibility features like Aria-support, screen-readers, and Alt-text. For additional details see [Dynamic Media viewers Release Notes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
+[!DNL Dynamic Media] viewers now support enhanced accessibility features like Aria-support, screen-readers, and Alt-text. For additional details, see [Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html).
 
 ## Search experience enhancement {#experience-enhancement-for-searching}
 
@@ -85,7 +85,7 @@ You can now customize the thumbnails for your video assets using frames from the
 
 ## Usability enhancement {#usability-enhancement}
 
-You can now select all the loaded assets within a folder or from a search result in one go. It helps you to manage multiple assets quickly. The check box selects all the assets that fits the scenario, say a search result and not just the assets that are visible in the [!DNL Experience Manager] interface.
+You can now select all the loaded assets within a folder or from a search result in one go. It helps you to manage multiple assets quickly. The check box selects all the assets that fit the scenario, say a search result, and not just the assets that are visible in the [!DNL Experience Manager] interface.
 
 ![Use Select All option to select all the loaded assets in one click.](assets/select-all-in-aem-assets.gif)
 
@@ -93,7 +93,7 @@ You can now select all the loaded assets within a folder or from a search result
 
 ## Metadata enhancements {#metadata-enhancements}
 
-[!DNL Assets] lets you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a new folder. For more information, see [Folder metadata schema](/help/assets/metadata-config.md#folder-metadata-schema).
+[!DNL Assets] let you create metadata schemas for asset folders, which define the layout and metadata displayed in folder properties pages. You can now assign a folder metadata schema to an existing folder or when creating a folder. For more information, see [Folder metadata schema](/help/assets/metadata-config.md#folder-metadata-schema).
 
 When specifying cascading metadata, the choices can be loaded from a JSON file at the run-time, say instead of typing manually in the form. For more information, see [cascading metadata](/help/assets/metadata-schemas.md#cascading-metadata).
 

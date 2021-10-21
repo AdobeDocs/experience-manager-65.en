@@ -20,7 +20,7 @@ feature: Security
 
 >[!NOTE]
 >
->IMS login for AEM does not support nested groups in the Admin Console.
+>AEM currently does not support assigning groups to profiles.  Users should be added individually instead.
 
 ## Introduction {#introduction}
 

@@ -122,8 +122,8 @@ An API call fails with a `500` response code if the parent node of the provided 
 
 **Request**
 
-* `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
-* `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
+* `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"jcr:title":"My Folder"}}'`
+* `POST /api/assets/* -F"name=myfolder" -F"jcr:title=My Folder"`
 
 **Response codes**: The response codes are:
 
