@@ -52,7 +52,7 @@ To use the LDAP server specified in your directory configuration, select LDAP as
 
 To use a different LDAP server to perform authentication, select LDAP as the authentication provider, and select the Custom LDAP Authentication check box. The following configuration settings are displayed.
 
-**Server:** (Mandatory) Fully qualified domain name (FQDN) of the directory server. For example, for a computer called x on the corp.example.com network, the FQDN is x.corp.example.com. An IP address can be used in place of the FQDN server name.
+**Server:** (Mandatory) Fully qualified domain name (FQDN) of the directory server. For example, for a computer called x on the example.com network, the FQDN is x.example.com. An IP address can be used in place of the FQDN server name.
 
 **Port:** (Mandatory) The port the directory server uses. Typically 389, or 636 if the Secure Sockets Layer (SSL) protocol is used for sending authentication information over the network.
 
@@ -80,7 +80,7 @@ If you are configuring authentication for an enterprise or hybrid domain and sel
 
 **KDC Host:** Fully qualified host name or IP address of the Active Directory server that is used for authentication.
 
-**Service User:** If you are using Active Directory 2003, this value is the mapping created for the service principal in the form `HTTP/<server name>`. If you are using Active Directory 2008, this value is the login ID of the service principal. For example, assume that the service principal is named um spnego, the user ID is spnegodemo, and the mapping is HTTP/example.corp.yourcompany.com. With Active Directory 2003, you set Service User to HTTP/example.corp.yourcompany.com. With Active Directory 2008, you set Service User to spnegodemo. (See Enable SSO using SPNEGO.)
+**Service User:** If you are using Active Directory 2003, this value is the mapping created for the service principal in the form `HTTP/<server name>`. If you are using Active Directory 2008, this value is the login ID of the service principal. For example, assume that the service principal is named um spnego, the user ID is spnegodemo, and the mapping is HTTP/example.yourcompany.com. With Active Directory 2003, you set Service User to HTTP/example.yourcompany.com. With Active Directory 2008, you set Service User to spnegodemo. (See Enable SSO using SPNEGO.)
 
 **Service Realm:** Domain name for Active Directory
 

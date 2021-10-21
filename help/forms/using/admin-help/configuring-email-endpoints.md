@@ -100,7 +100,7 @@ For forms workflow to receive and handle incoming email messages from users, you
 
 **POP3/IMAP SSL Enabled:** When selected, enables SSL.
 
-**SMTP Host:** The host name of the mail server that the email provider uses to send results and error messages. For example, mail.corp.example.com.
+**SMTP Host:** The host name of the mail server that the email provider uses to send results and error messages. For example, mail.example.com.
 
 **SMTP Port:** The port that is used to connect to the mail server. The default value is 25.
 
