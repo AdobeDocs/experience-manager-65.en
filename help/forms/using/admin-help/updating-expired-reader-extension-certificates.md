@@ -127,3 +127,7 @@ You can contact [Adobe Support](https://experienceleague.adobe.com/?support-solu
 On attempting to open a PDF documents Reader Extended with old certificates, users experience  an error message and can no longer access the reader-extended features. An example error is. 
 
 `The document has been changed since it was created and use of extended features in no longer available. Please contact the author for the orignal version of this document.`
+
+**Is there any change in the name of new description?**
+
+New Reader Extension certificates mention G3-P24 as program name in the description. In the older certificates, program name P24 was mentioned in the description. 
