@@ -46,7 +46,7 @@ The following types of Rights credentials are available:
 
 If you have already used certificates to reader extend PDF files, download a production certificate from [Adobe Licensing Website (LWS)](https://licensing.adobe.com/).
 
-## Updating and Applying certificates for an AEM Forms on JEE environment 
+## Updating and Applying certificates for an AEM Forms on JEE environment {#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment} 
 
 Updating and applying new certificates on AEM Forms on JEE stack requires importing new credentials, removing usage rights from existing PDF documents, and applying usage rights. You can use admin console to import credentials and AEM Forms Reader Extension APIs to remove and apply usage rights. 
 
