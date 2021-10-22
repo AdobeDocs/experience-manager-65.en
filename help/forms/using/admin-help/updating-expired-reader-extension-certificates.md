@@ -110,7 +110,7 @@ For example keytool -v -list -storetype pkcs12 -keystore 1005566.pfx where 10055
 
 ### Remove usage rights from existing rights-enabled PDF documents
 
-Remove usage rights from existing rights-enabled PDF documents before applying usage rights with latest credentials. You can remove the usage rights for a document by invoking the removeUsageRights API from within the docAssuranceServiceAPI. For detailed information, see [Remove Usage Rights](aem-document-services-programmatically.md#removing-usage-rights) document.
+Remove usage rights from existing rights-enabled PDF documents before applying usage rights with latest credentials. You can remove the usage rights for a document by invoking the removeUsageRights API from within the docAssuranceServiceAPI. For detailed information, see [Remove Usage Rights](/help/forms/using/aem-document-services-programmatically.md#removing-usage-rights) document.
 
 ### Apply the usage rights to PDF documents 
 
