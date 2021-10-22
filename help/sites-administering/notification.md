@@ -314,7 +314,7 @@ You can configure OAuth for multiple email providers, as outlined below.
 
 >[!NOTE]
 >
->The procedure outlined below is an example for a Publish instance. You can also follow this procedure for an Author instance, should you wish to do so.
+>This procedure is an example for a Publish instance. If you wish to enable email notifications on an Author instance, you need to follow the same steps on the Author.
 
 ### Gmail {#gmail}
 
