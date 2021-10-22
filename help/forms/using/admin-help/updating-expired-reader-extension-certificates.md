@@ -73,13 +73,13 @@ You can also import and delete credentials programmatically. (See [Programming w
 
 ### Remove usage rights from existing rights-enabled PDF documents
 
-Remove usage rights from existing rights-enabled PDF documents before applying usage rights with latest credentials. AEM Forms on JEE provides APIs to remove usage rights. For detailed instructions, see [Removing Usage Rights from PDF Documents](..\developing\assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
+Remove usage rights from existing rights-enabled PDF documents before applying usage rights with latest credentials. AEM Forms on JEE provides APIs to remove usage rights. For detailed instructions, see [Removing Usage Rights from PDF Documents](..\..\developing\assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
 
 To remove usage rights for AEM Forms on JEE processes developed in Workbench, see [Workbench Help](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf).
 
 ### Apply the usage rights to PDF documents 
 
-After importing new credentials and removing usage rights from existing rights-enabled PDF documents, apply usage rights to PDF documents using the new credentials. You can apply usage rights to PDF documents using the Acrobat Reader DC extensions Java Client API and web service.  For details, see [Applying Usage Rights to PDF Documents](..\developing\assigning-usage-rights.md#applying-usage-rights-to-pdf-documents). 
+After importing new credentials and removing usage rights from existing rights-enabled PDF documents, apply usage rights to PDF documents using the new credentials. You can apply usage rights to PDF documents using the Acrobat Reader DC extensions Java Client API and web service.  For details, see [Applying Usage Rights to PDF Documents](..\..\developing\assigning-usage-rights.md#applying-usage-rights-to-pdf-documents). 
 
 
 ## Updating and Applying certificates for an AEM Forms on OSGi environment {#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment}
