@@ -69,7 +69,7 @@ To import the credentials:
 
 If the error message “Failed to import credential due to either incorrect file format, or incorrect password” appears, verify that the password is valid.
 
-You can also import and delete credentials programmatically. (See [Programming with AEM forms](https://www.adobe.com/go/learn_aemforms_programming_63).)
+You can also import and delete credentials programmatically. (See [Programming with AEM forms](..\..\developing\credentials.md).)
 
 ### Remove usage rights from existing rights-enabled PDF documents
 
