@@ -40,7 +40,7 @@ Depending on the type of fragment, either models or templates are also used:
 >
 >Prior to AEM 6.3 Content Fragments were created with the use of templates instead of models. 
 >
->Templates are now deprecated (for creating new fragments), but any fragments created with such a template are still supported.
+>Templates are now deprecated, but any fragments created with such a template are still supported.
 
 * Content Fragment Models:
 
