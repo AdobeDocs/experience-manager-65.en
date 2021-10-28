@@ -37,7 +37,7 @@ AEM Delivery and Content Management APIs:
 
   * [JSON Exporter](/help/sites-developing/json-exporter.md)
   * [Enabling JSON Export for a Component](/help/sites-developing/json-exporter-components.md)
-  * See the [Components section in the Developing User Guide](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) for more information
+  * See the [Components section in the Developing User Guide](/help/sites-developing/home.md) for more information
 
 * **Assets**: The Assets HTTP API allows for create-read-update-delete (CRUD) operations on Assets, including binary, metadata, renditions, and comments. See [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
@@ -47,5 +47,5 @@ The following external resources are for reference only:
 
 * [Apache Sling 11 API](https://sling.apache.org/apidocs/sling11/)
 * [Jackrabbit Oak API](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html)
-* [Java Content Repository API](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html)
+* [Java Content Repository API](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)
 * [Apache Jackrabbit API](https://jackrabbit.apache.org/api)
