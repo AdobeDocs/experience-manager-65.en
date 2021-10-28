@@ -16,15 +16,15 @@ exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
 
 >[!CAUTION]
 >
->[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are now recommended for creating all your fragments.
+>[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are recommended for creating all new content fragments.
 >
 >Content fragment models are used for all examples in We.Retail.
 
 >[!NOTE]
 >
->Prior to AEM 6.3 Content Fragments were created with the use of templates instead of models. 
+>Prior to AEM 6.3 Content Fragments were created based on templates instead of models. 
 >
->Templates are now deprecated, but any fragments created with such a template are still supported.
+>Content Fragment templates are now deprecated. They can still be used for creating fragments, but using Content Fragment Models instead is recommended. No new features will be added to fragment templates, and they will be removed in a future version.
 
 Templates are selected when creating a content fragment. They provide the new fragment with the basic structure, element(s) and variation. The templates used for content fragments are subject to the Granite Configuration Manager.
 
