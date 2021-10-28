@@ -57,7 +57,7 @@ This section lists features and capabilities that have been removed from AEM 6.5
 |Integrations|Salesforce Force API integration has been removed from the default distribution (Quickstart) and is now an extra package to install from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).| The feature is still available.|
 |Forms|Support for Adobe Central Migration Bridge service has been removed as Adobe Central product is no longer supported.|No replacement. ||
 |Forms|`com.adobe.fd.df.fdinternal.model.ConfigurationInstance`|No replacement. ||
-|Forms|`com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer`|No replacement|
+|Forms|`com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer`|No replacement||
 |Forms|Single-hop upgrade from LiveCycle ES4 SP1 to AEM 6.5 Forms on JEE is not available|See [available upgrade paths](../forms/using/upgrade.md) in AEM Forms upgrade documentation.||
 |Forms|Removed UPD based clustering support from AEM Forms on JEE| You can use only TCP-based clustering in AEM Forms on JEE. If you upgrade a UDP multicast server from a previous version to AEM 5.5 Forms on JEE perform manual configurations to switch to TCP based gemfire clustering. For detailed instructions, see [Upgrade to AEM 6.5 forms on JEE](../forms/using/upgrade-forms-jee.md)||
 |Developers|Firebug Lite has been removed from the default distribution (Quickstart)|Use the browser built-in developer consoles|
