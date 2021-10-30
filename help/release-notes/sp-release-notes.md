@@ -22,19 +22,19 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.11.0 are:
 
-* 
+* Feature 1
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
 ### [!DNL Sites] {#sites-65100}
 
-*                                  
+* Fix 1                              
 
 ### [!DNL Assets] {#assets-65100}
 
 The following issues are fixed in [!DNL Assets]:
 
-* 
+* Fix 1
 
 ### [!DNL Dynamic Media] {#dynamic-media-65100}
 
@@ -42,39 +42,39 @@ The following issues are fixed in [!DNL Assets]:
 
 The following accessibility enhancements are available in [!DNL Dynamic Media Viewers].
 
-* 
+* Fix 1
 
 **Issues fixed**
 
 The following bug fixes are available in [!DNL Dynamic Media].
 
-* 
+* Fix 1
 
 ### Platform {#platform-65100}
 
 The following enhancements are delivered in this service pack:
 
-* 
+* Fix 1
 
 ### Integrations {#integrations-65100}
 
-* 
+* Fix 1
 
 ### User Interface {#user-interface-65100}
 
-* 
+* Fix 1
 
 ### Translation projects {#translation-65100}
 
-* 
+* Fix 1
 
 ### Workflow {#workflow-65100}
 
-* 
+* Fix 1
 
 ### [!DNL Communities] {#communities-65100}
 
-* 
+* Fix 1
 
 <!--
 Need to verify with Engineering, the status is currently showing as Resolved

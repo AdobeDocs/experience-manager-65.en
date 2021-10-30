@@ -18,17 +18,17 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-* 
+* Feature 1
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* 
+* Feature 1
 
 ### [!DNL dynamic-media] {#dynamic-media}
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
-* 
+* Feature 1
 
 ## Key features in previous [!DNL Experience Manager] 6.5 Service Packs {#key-features-previous-service-packs}
 
