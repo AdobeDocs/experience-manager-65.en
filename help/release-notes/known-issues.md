@@ -74,3 +74,4 @@ To resolve this error:
 
 * When AEM Forms is started, the `SAX Security Manager could not be setup` warning appears.
 * When you open a PDF protected with AEM Forms Document Security on an Apple iOS or iPadOS running Adobe Acrobat Reader version 20.10.00.
+* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. Apple iOS 15.1 provides a fix for the issue.  
