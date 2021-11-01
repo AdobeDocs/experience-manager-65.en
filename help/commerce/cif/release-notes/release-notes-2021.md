@@ -29,7 +29,7 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |:-------|:-----:|---------------------:|
 |CIF add-on | 2021.10.20.02|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip)|
 |CIF Core Components |2.4.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0)|
-|CIF Venia Reference Site| 2021.10.28|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.10.28)|
+|CIF Venia Reference Site| 2021.11.01|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01)|
 
 ### What's New {#what-is-new-october}
 
@@ -49,7 +49,7 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |:-------|:-----:|---------------------:|
 |CIF add-on | 2021.09.27|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip)|
 |CIF Core Components |2.2.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0)|
-|CIF Venia Reference Site| 2021..23|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01)|
+|CIF Venia Reference Site| 2021.09.23|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23)|
 
 ### What's New {#what-is-new-september}
 
