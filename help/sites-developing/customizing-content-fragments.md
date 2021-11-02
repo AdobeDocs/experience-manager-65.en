@@ -34,7 +34,7 @@ Depending on the type of fragment, either models or templates are also used:
 >
 >[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are recommended for creating all new fragments.
 >
->Content Fragment Models are used for all examples in We.Retail.
+>Content Fragment Models are used for all examples in WKND.
 
 >[!NOTE]
 >

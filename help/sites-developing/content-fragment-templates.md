@@ -18,7 +18,7 @@ exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
 >
 >[Content fragment models](/help/assets/content-fragments/content-fragments-models.md) are recommended for creating all new content fragments.
 >
->Content fragment models are used for all examples in We.Retail.
+>Content fragment models are used for all examples in WKND.
 
 >[!NOTE]
 >
