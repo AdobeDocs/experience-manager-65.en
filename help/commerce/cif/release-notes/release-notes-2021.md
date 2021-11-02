@@ -23,6 +23,26 @@ The old AEM CIF Connector is going into maintenance mode and should not be used 
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: October, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.10.20.02|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip)|
+|CIF Core Components |2.4.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0)|
+|CIF Venia Reference Site| 2021.11.01|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01)|
+
+### What's New {#what-is-new-october}
+
+* The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
+
+* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
+
+* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Magento's extensible Peregrine components
+
+* Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
+
+* AEM Storefront Venia returns HTTP 404 error if category or product page is not found
+
 ## Release Date: September, 2021
 
 |Component| Version| Details|
