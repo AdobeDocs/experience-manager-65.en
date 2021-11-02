@@ -33,7 +33,7 @@ user-guide-description: Understand how to use and administer AEM Content and Com
   + [2020](cif/release-notes/release-notes-2020.md)
   + [2019](cif/release-notes/release-notes-2019.md)
 + [FAQ](cif/faq.md)
-+ Classic CIF {#classic}
++ [Classic CIF](cif-classic/home.md)
   + Deploying {#deploying}
     + [eCommerce Overview](/help/commerce/cif-classic/deploying/ecommerce.md)
     + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
