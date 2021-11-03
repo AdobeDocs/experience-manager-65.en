@@ -50,7 +50,7 @@ To create, modify, upload, and install packages, users must have the appropriate
 You can access Package Manager in three ways:
 
 1. From the AEM main menu -&gt; **Tools** -&gt; **Deployment** -&gt; **Packages**
-1. From [CRXDE Lite](crxde.md) using the top switcher bar
+1. From [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) using the top switcher bar
 1. Directly by accessing `http://<host>:<port>/crx/packmgr/`
 
 ### Package Manager UI {#ui}
