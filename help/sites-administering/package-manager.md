@@ -319,7 +319,7 @@ After a package has been built, you can view the contents.
 
 ### Sharing a Package {#share}
 
-Package Share was a centralized public service to share content packages. Package Share has ben superseded by [Software Distribution.](#software-distribution)
+Package Share was a centralized public service to distribute content packages. Package Share has ben superseded by [Software Distribution](#software-distribution) and this button no longer works.
 
 ### Uploading Packages from Your File System {#uploading-packages-from-your-file-system}
 
@@ -354,10 +354,6 @@ Package Manager can perform the following validations:
 
 ##### Validate OSGi Package Imports {#osgi-package-imports}
 
->[!NOTE]
->
->Because packages can not be used to deploy code in AEMaaCS, **OSGi Package Imports** validation is unnecessary. 
-
 **What's Checked**
 
 This validation inspects the package for all JAR files (OSGi bundles), extracts their `manifest.xml` (which contains the versioned dependencies on which said OSGi bundle relies), and verifies the AEM instance exports said dependencies with the correct versions.
@@ -375,10 +371,6 @@ If dependencies are unsatisfied, then the OSGi bundles in the package with those
 To resolve errors due to unsatisfied OSGi bundles, the dependency version in the bundle with unsatisfied imports must be adjusted.
 
 ##### Validate Overlays {#overlays}
-
->[!NOTE]
->
->Because packages can not be used to deploy code in AEMaaCS, **Overlays** validation is unnecessary. 
 
 **What's Checked**
 
@@ -551,7 +543,7 @@ Deleting a package only deletes its details from Package Manager. If this packag
 
 1. Open the package details of the package you wish to delete from the package list by clicking the package name.
 
-1. AEM asks for confirmation that you want to delete the package. Click **OK** to confirm the deletion.
+1. Package Manager asks for confirmation that you want to delete the package. Click **OK** to confirm the deletion.
 
 1. The package information is deleted and details are reported in the Activity Log.
 
@@ -569,8 +561,12 @@ Replicate the contents of a package to install it on the publish instance.
 
 ## Software Distribution {#software-distribution}
 
-AEM Packages can be used to create and share content across AEMaaCS environments.
+AEM Packages can be used to create and share content across AEM environments.
 
-[Software Distribution](https://downloads.experiencecloud.adobe.com) provides AEM packages for use on the local development AEM SDK. AEM Packages provided on Software Distribution must not be installed on AEMaaCS cloud environments unless expressly approved by Adobe Support.
+[Software Distribution](https://downloads.experiencecloud.adobe.com) is a centralized service  designed to simplify the search and download of AEM packages.
 
-For more information, have a look at the [Software Distribution documentation](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html).
+For more information, please refer to the [Software Distribution documentation.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+
+>[!NOTE]
+>
+>Package Manager is not currently integrated with Software Distribution as it was with the former Package Share service. Therefore the share buttons and other links to Package Share within Package Manager no longer work. The solution is to download packages to your local disk.
