@@ -13,6 +13,10 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 
 "Tough Day 2" is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) for a presentation of the application.
 
+>[!CAUTION]
+>
+>Tough Day 2 requires Java 8.
+
 ## How to Run Tough Day 2 {#how-to-run-tough-day}
 
 Download the latest version of Tough Day 2 from the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). After you download the application, you can run it out of the box by providing the `host` parameter. In the following example, the AEM instance runs locally so the `localhost` value is used:
