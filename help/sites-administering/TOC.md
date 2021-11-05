@@ -151,7 +151,7 @@ role: Admin
     + [Handling GDPR Requests for the AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
     + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
 + Content Management {#contentmanagement}
-    + [How to Work With Packages](package-manager.md)
+    + [Package Manager](package-manager.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)
     + [Classic UI Tagging Console](classic-console.md)
