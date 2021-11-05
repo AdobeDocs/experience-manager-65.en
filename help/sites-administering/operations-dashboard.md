@@ -501,7 +501,7 @@ The first entry in the Query Explanation section is the actual explanation. The 
 
 The second entry is the execution plan.
 
-Ticking the **Include execution time** box before running the query will also show the amount of time the query was executed in, allowing for more information that can be used for optimizing the indexes for your application or deployment.
+Ticking the **Include execution time** box before running the query will also show the amount of time the query was executed in. The **Include Node Count** option will report the node count. These allow for more information, that can be used for optimizing the indexes for your application or deployment.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
