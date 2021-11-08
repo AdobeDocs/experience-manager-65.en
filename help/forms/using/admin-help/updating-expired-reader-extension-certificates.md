@@ -9,10 +9,10 @@ Adobe Experience Manager Forms (AEM Forms) customers with Adobe Managed Services
 
 Adobe leverages a PKI (public key infrastructure) to issue digital certificates for use in licensing and feature enablement. Adobe has been issuing certificates under the certificate authority “Adobe Root CA”, it is scheduled to expire on Jan 7, 2023. It will lead to expiration of all certificates issued under this certificate authority. Once the certificate expires, all features dependent on the certificates no longer work. For example, a reader-extended PDF document that allows adding comments using Adobe Acrobat Reader stops working for customers after Jan 7, 2023. To resolve the issue, administrator of Reader Extension service, using old certificates, should obtain and reapply new certificates issued by new Adobe Root CA G2 to their PDF documents (reader extend the PDF documents with new certificates).  
 
-The expiration of certificates impacts both AEM Forms on JEE and AEM Forms on OSGi stacks. Both the stacks have a different set of instructions. Depending on your stack, choose one of the following paths: 
+The expiration of certificates impacts both AEM Forms on JEE and AEM Forms on OSGi stacks. Both the stacks have a different set of instructions. After meeting the [pre-requistes](#Pre-requisites) and [obtaining new certificates](#obtain-the-certificates), depending on your stack, choose one of the following paths: 
 
-* Updating certificates for an AEM Forms on JEE environment 
-* Updating certificates for an AEM Forms on OSGi environment
+* [Updating certificates for an AEM Forms on JEE environment](#Updating-and-Applying-certificates-for-an-AEM-Forms-on-JEE-environment) 
+* [Updating certificates for an AEM Forms on OSGi environment](#Updating-and-applying-certificates-for-an-AEM-Forms-on-OSGi-environment)
 
 >[!NOTE]
 >
@@ -91,14 +91,14 @@ Updating and applying new certificates on AEM Forms on OSGi stack requires impor
 In an AEM Forms on OSGi environment, a Reader Extension credential is associated with fd-service user. Before adding credentials for fd-user key store, perform the following steps to create a key-store: 
 
 1. Login to your AEM Author instance as an Administrator.
-1. Go to Tools> Security>Users.
+1. Go to **[!UICONTROL Tools]**> **[!UICONTROL Security]**>**[!UICONTROL Users]**.
 1. Scroll down the list of users till you find fd-service user account.
-1. Click on the fd-service user.
-1. Click on the keystore tab.
-1. Click on Create KeyStore.
+1. Click **[!UICONTROL fd-service]** user.
+1. Click keystore tab.
+1. Click **[!UICONTROL Create KeyStore]**.
 1. Set the KeyStore Access Password and save your settings to create the KeyStore password.
 
-After creating the key-store, add credentials to fd-service user.
+After creating the key-store, add credentials to fd-service user. The following video explains the steps: 
 
 >[!VIDEO](https://images-tv.adobe.com/mpcv3/5577/8db8e554-f04b-4fae-8108-b9b5e0eb03ad_1627925794.854x480at800_h264.mp4)
 
