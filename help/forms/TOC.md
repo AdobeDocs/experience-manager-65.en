@@ -458,6 +458,9 @@ role: User
     + [Review the usage rights of a PDF file](/help/forms/using/admin-help/review-usage-rights-pdf-file.md)
     + [Enabling online commenting for Adobe Reader web browser plug-in](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
     + [Setting timeout values for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
+    + [Updating expired Reader Extension service certificates](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
+    
+
   + Working with PDF Generator {#work-with-pdf-generator}
     + [Introduction to working with PDF Generator](/help/forms/using/admin-help/overview-5.md)
     + [Enabling multi-threaded file conversions](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
@@ -591,7 +594,7 @@ role: User
       + [Application Manager Client JavaAPI Quick Start(SOAP)](developing/application-manager-client-java-api.md)
       + [Application Manager Service JavaAPI Quick Start(SOAP)](developing/application-manager-service-java-api.md)
       + [Assembler Service Java API QuickStart(SOAP)](developing/assembler-service-java-api-quick.md)
-      + [Acrobat Reader DC extensions ServiceJava API Quick Start(SOAP)](developing/acrobat-reader-dc-extensions-service.md)
+      + [Acrobat Reader DC extensions Service Java API Quick Start(SOAP)](developing/acrobat-reader-dc-extensions-service.md)
       + [Backup and Restore Service APIQuick Starts](developing/backup-restore-service-api-quick.md)
       + [Barcoded Forms Service Java APIQuick Start(SOAP)](developing/barcoded-forms-service-java-api.md)
       + [Components and Services Java APIQuick Start(SOAP)](developing/components-services-java-api-quick.md)
