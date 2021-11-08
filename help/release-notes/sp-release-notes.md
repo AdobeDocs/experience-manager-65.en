@@ -286,6 +286,8 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * Performance issues after installing [!DNL AEM Forms] Service Pack 7 (CQ-4326828).
 
+* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. Apple iOS 15.1 provides a fix for the issue (CQ-4325361).
+
 **Correspondence Management**
 
 * Delay in the display of characters in the [!UICONTROL Data] tab as well as in the HTML letter preview (NPR-37020).

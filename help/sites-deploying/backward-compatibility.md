@@ -58,10 +58,10 @@ Legacy mode is for customers having custom interfaces based on legacy or depreca
 
 ## How to Set Up {#how-to-set-up}
 
-The AEM 6.3 Compatibility Package can be installed as a package using the Package Manager. You can download the [AEM 6.3 Compatibility Package from the Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) site.
+The **AEM 6.4 Compatability Pack for 6.5** can be installed as a package using the Package Manager. You can download the [AEM 6.4 Compatability Pack for 6.5 from the Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=20&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) site.
 
 Once the Compatibility Package is installed, the routing can be enabled or disabled using a switch in the OSGI configuration as shown below:
 
-![screen_shot_2017-11-27at122421pm](assets/screen_shot_2017-11-27at122421pm.png)
+![Compat Switches](assets/compat-switches.png)
 
 Once the Compatibility Package is installed and set up, the features will be used based on the compatibility mode that has been chosen.
