@@ -108,7 +108,15 @@ For the cache named **Document-Diff**, the hit rate should be over `.90`. If the
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-The **ObservationQueueMaxLength** section will show the number of events in Oak’s observation queue over the last hours, minutes, seconds and weeks. Find the largest number of events in the "per hour" section. This number needs to be compared to the `oak.observation.queue-length` setting which can be found in the **SlingRepositoryManager** component in the [OSGi console](/help/sites-deploying/web-console.md). If the highest number shown for the observation queue exceeds the `queue-length` setting, contact Adobe Support for assistance with raising the setting. The default setting is 1,000, but most deployments usually need to raise it to 20,000 or 50,000.
+The **ObservationQueueMaxLength** section will show the number of events in Oak’s observation queue over the last hours, minutes, seconds and weeks. Find the largest number of events in the "per hour" section. This number needs to be compared to the `oak.observation.queue-length` setting. If the highest number shown for the observation queue exceeds the `queue-length` setting:
+
+1. Create a file named: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` containing the parameter `oak.observation.queue‐length=50000`
+1. Place it under the /crx-­‐quickstart/install folder. 
+
+>[!NOTE]
+>See also the KB article on [AEM 6.x | Performance Tuning Tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+
+The default setting is 10,000, but most deployments usually need to raise it to 20,000 or 50,000.
 
 ## Publish Environment {#publish-environment}
 
