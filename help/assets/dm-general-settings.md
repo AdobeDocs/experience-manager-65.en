@@ -54,6 +54,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 ## Upload to Application {#upload-to-application}
 
 * **[!UICONTROL Overwrite Images]**
+
 Adobe Dynamic Media does not allow two files to have the same name. Each item’s Adobe Dynamic Media ID (the image name minus the filename extension) must be unique. Because of this rule, **[UICONTROL Upload to Application]** has an overwrite. The exact effect of this option depends on the specified Overwrite Images option you have chosen. These options specify how replacement images are uploaded: whether they replace the original images, or become duplicate images. Duplicate images are renamed with a `-1`. For example, `chair.tif` is renamed `chair-1.tif`. These options affect images uploaded to a different folder than the original or images with a different filename extension from the original, such as JPG, TIF, or PNG.
 
     | Overwrite Images option | Description |
