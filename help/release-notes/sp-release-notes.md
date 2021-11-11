@@ -22,21 +22,24 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.11.0 are:
 
-* Feature 1
+* SEO enhancements are available via a bundle that supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
+
+<!-- A bundle needs to be updated on SD via NPR-37512. If it is uploaded, then link to it.
+-->
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
-### [!DNL Sites] {#sites-65100}
+### [!DNL Sites] {#sites-65110}
 
 * Fix 1                              
 
-### [!DNL Assets] {#assets-65100}
+### [!DNL Assets] {#assets-65110}
 
 The following issues are fixed in [!DNL Assets]:
 
 * Fix 1
 
-### [!DNL Dynamic Media] {#dynamic-media-65100}
+### [!DNL Dynamic Media] {#dynamic-media-65110}
 
 **Accessibility enhancements**
 
@@ -50,29 +53,39 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * Fix 1
 
-### Platform {#platform-65100}
+<!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
+
+### Commerce {#commerce-65110}
+
+The following bug fixes are available:
+
+* Fix 1
+
+-->
+
+### Platform {#platform-65110}
 
 The following enhancements are delivered in this service pack:
 
 * Fix 1
 
-### Integrations {#integrations-65100}
+### Integrations {#integrations-65110}
 
 * Fix 1
 
-### User Interface {#user-interface-65100}
+### User Interface {#user-interface-65110}
 
 * Fix 1
 
-### Translation projects {#translation-65100}
+### Translation projects {#translation-65110}
 
 * Fix 1
 
-### Workflow {#workflow-65100}
+### Workflow {#workflow-65110}
 
 * Fix 1
 
-### [!DNL Communities] {#communities-65100}
+### [!DNL Communities] {#communities-65110}
 
 * Fix 1
 
@@ -82,11 +95,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 
 <!--
-### [!DNL Brand Portal] {#brandportal-65100}
+### [!DNL Brand Portal] {#brandportal-65110}
 
 *
 
-### [!DNL Forms] {#forms-65100}
+### [!DNL Forms] {#forms-65110}
 
 
 >[!NOTE]
@@ -167,7 +180,7 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * When you render an XDP as HTML using `dataXml`, [!DNL AEM Forms] displays a `Page Unresponsive` error (NPR-36631).
 
-### Commerce {#commerce-65100}
+### Commerce {#commerce-65110}
 
 * The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
 * When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
@@ -319,9 +332,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.11.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.11.0](assets/65100_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.11.0](assets/65110_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.11.0](assets/65100_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.11.0](assets/65110_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
