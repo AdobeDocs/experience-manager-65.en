@@ -332,9 +332,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.11.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.11.0](assets/65110_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.11.0](assets/65100_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.11.0](assets/65110_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.11.0](assets/65100_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
