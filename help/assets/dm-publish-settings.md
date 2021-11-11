@@ -210,11 +210,11 @@ To ensure that Secure Testing service works as expected, do the following:
 1. In the upper right corner of the Image Server page, select **[!UICONTROL Save]**.
 1. Upload the desired images to your Adobe Dynamic Media account.
 
-   See [Upload files](uploading-files.md#uploading_files).
+<!--    See [Upload files](uploading-files.md#uploading_files). -->
 
 1. Make sure some of the images are marked for publish and others are unmarked, and then submit the publish job.
 
-   See [Publish files](publishing-files.md#publishing_files).
+<!--    See [Publish files](publishing-files.md#publishing_files). -->
 
 1. Determine the name of your Secure Testing service by going to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**. 
 1. On the **[!UICONTROL Server]** page, find the server name to the right of **[!UICONTROL Published Server Name]**.
