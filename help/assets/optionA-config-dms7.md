@@ -10,8 +10,8 @@ role: User, Admin
 mini-toc-levels: 3
 hide: yes
 hidefromtoc: yes
-
 feature: Configuration,Scene7 Mode
+exl-id: 
 ---
 # OPTION A - Configure Dynamic Media - Scene7 mode{#configuring-dynamic-media-scene-mode}
 
@@ -22,6 +22,8 @@ feature: Configuration,Scene7 Mode
 If you use Adobe Experience Manager set up for different environments, such as development, staging, and production, configure Dynamic Media Cloud Services for each one of those environments.
 
 ## Architecture diagram of Dynamic Media - Scene7 mode {#architecture-diagram-of-dynamic-media-scene-mode}
+
+**RICK: KEEP AS IS**
 
 The following architecture diagram describes how Dynamic Media - Scene7 mode works.
 
@@ -47,6 +49,8 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 ## Enable Dynamic Media in Scene7 mode {#enabling-dynamic-media-in-scene-mode}
 
+**RICK: KEEP AS IS**
+
 [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) is disabled by default. To take advantage of Dynamic Media features, you must enable it.
 
 >[!WARNING]
@@ -60,6 +64,8 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 ```
 
 ## (Optional) Migrate Dynamic Media presets and configurations from 6.3 to 6.5 Zero Downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+
+**RICK: KEEP AS IS**
 
 Upgrading Experience Manager Dynamic Media from 6.3 to 6.4 or 6.5 now includes the ability for zero downtime deployments. To migrate all your presets and configurations from `/etc` to `/conf` in CRXDE Lite, be sure you run the following curl command.
 
@@ -77,6 +83,8 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 ## Install feature pack 18912 for bulk asset migration {#installing-feature-pack-for-bulk-asset-migration}
 
+**RICK: KEEP AS IS**
+
 The installation of feature pack 18912 is *optional*.
 
 Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from either Dynamic Media - Hybrid mode or Dynamic Media Classic into Dynamic Media - Scene7 mode on Experience Manager. It is available from [Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html).
@@ -84,6 +92,8 @@ Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate 
 See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-ingest-migrate.md) for more information.
 
 ## Create a Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
+
+**RICK: KEEP AS IS**
 
 **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
@@ -99,7 +109,7 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
    >[!NOTE]
    >
-   >After you receive your provisioning email with Dynamic Media credentials, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+   >**RICK: KEEP AS IS??** After you receive your provisioning email with Dynamic Media credentials, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
 1. When the connection is successful, set the following. Headings with an asterisk (*) are required:
 
@@ -138,7 +148,7 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 1. Select **[!UICONTROL Save]**.
 1. To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager author instance to connect to Dynamic Media:
 
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
+    * **RICK: LINK TO NEW PUBLISH SETUP TOPIC** Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
 
     * On the navigation bar near the top right of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 
@@ -149,9 +159,11 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
 
-If you want to further customize your configuration, you can optionally complete any of the tasks under [(Optional) Configuring Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+If you want to further customize your configuration, you can optionally complete any of the tasks under [(Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ## (Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+
+**RICK: KEEP AS IS**
 
 If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following *optional* tasks:
 
@@ -164,6 +176,8 @@ If you want to further customize the configuration and setup of Dynamic Media - 
 * [(Optional) Filter assets for replication](#optional-filtering-assets-for-replication)
 
 ### (Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB {#optional-config-dms7-assets-larger-than-2gb}
+
+**RICK: KEEP AS IS**
 
 In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. However, you can optionally configure upload of assets larger than 2 GB and up to 15 GB.
 
@@ -251,82 +265,112 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 1. Select **[!UICONTROL Sync]**.
 1. Repeat steps 14-21 for the **[!UICONTROL DAM Update Asset]** workflow model and the **[!UICONTROL Dynamic Media Reprocess]** workflow model.
 
-### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
+### (Optional) Configure Dynamic Media Publish Setup {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings.
+**RICK: ENTIRE CONTENT FROM THE NEW PUBLISH SETUP TOPIC ADDED HERE**
 
-Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
+>[!IMPORTANT]
+>
+>Dynamic Media Publish Setup is only available if:
+>
+>* You are running Dynamic Media in Scene7 mode.
+>* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or in Experience Manager as a Cloud Service.
+>* You are an Experience Manager system administrator with administrator privileges.
 
-Setup and configuration tasks include the following:
+The Dynamic Media Publish Setup page settings determine how assets are delivered by default from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting on a Publish Setup page. For example, a request to deliver an image that does not include a resolution attribute yields an image with the Default Object Resolution setting on the Image Server page.
 
-* [Publish setup for Image Server](#publishing-setup-for-image-server)
-* [Configure application general settings](#configuring-application-general-settings)
-* [Configure color management](#configuring-color-management)
-* [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats)
-* [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
-* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
-
-#### Publish setup for Image Server {#publishing-setup-for-image-server}
-
-The Publish Setup settings determine how assets are delivered by default from Dynamic Media. If no setting is specified, Dynamic Media delivers an asset according to the default settings defined in Publish Setup. For example, a request to deliver an image that does not include a resolution attribute yields an image with the Default Object Resolution setting.
-
-To configure Publish Setup: in Dynamic Media Classic, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
-
-The Image Server screen establishes default settings for delivering images. See the UI screen for description of each setting.
-
-* **[!UICONTROL Request Attributes]** - These settings impose limits on images that can be delivered from the server.
-* **[!UICONTROL Default Request Attributes]** - These settings pertain to the default appearance of images.
-* **[!UICONTROL Common Thumbnail Attributes]** - These settings pertain to the default appearance of thumbnail images.
-* **[!UICONTROL Defaults for Catalog Fields]**- These settings pertain to the resolution and default thumbnail type of images.
-* **[!UICONTROL Color Management Attributes]** - These settings determine which ICC color profiles are used.
-* **[!UICONTROL Compatibility Attributes]** - This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
-* **[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[Localization Support]**, see [Considerations when setting up localization of assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
-
-#### Configure application general settings {#configuring-application-general-settings}
-
-To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
-
-**[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by Adobe Customer Support.
-
-**[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder than the original or assets with a different filename extension from the original (such as JPG, TIF, or PNG).
-
-* **[!UICONTROL Overwrite in current folder, same base image name/extension]** - This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created.
+Administrators can change the default settings on the Image Server, Image Renderer, and Vignette pages to establish default settings for delivering assets from servers.
 
 >[!NOTE]
 >
->To maintain consistency with Experience Manager, always choose this setting: **Overwrite in current folder, same base image name/extension**
+>Dynamic Media Publish Setup is intended for use by experienced web site developers and programmers. Adobe recommends that users who change any of these default publish settings are familiar with Adobe Dynamic Media, HTTP protocol standards and conventions, and basic imaging technology.
 
-* **[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location
-* **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
+**To configure Dynamic Media Publish Setup:**
 
-**[!UICONTROL Default Color Profiles]** - See [Configure Color Management](#configuring-color-management) for additional information.
+1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
+1. In the Image Server page, set your Image Server - publish context, and then use the five tabs to configure default publish settings.
 
->[!NOTE]
->
->By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increase the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
->
+   * [Image Server](#image-server)
+   * [Security](#security-tab) tab
+   * [Catalog Management](#catalog-management-tab) tab
+   * [Request Attributes](#request-attributes-tab) tab
+   * [Common Thumbnail Attributes](#common-thumbnail-attributes-tab) tab
+   * [Color Management Attributes](#color-management-attributes-tab) tab
 
-#### Configure color management {#configuring-color-management}
+   ![Dynamic Media Publish Setup page](/help/assets/assets-dm/dm-publish-setup.png)
+   *Dynamic Media Publish Setup page, with the **[!UICONTROL Request Attributes]** tab selected.*<br><br>
 
-Dynamic Media color management lets you color correct assets. With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile. When you request a dynamic rendition, the image color is corrected into the target color space using CMYK, RGB, or Gray output. See [Configure Image Presets](/help/assets/managing-image-presets.md).
+1. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Save]**.
 
-To configure the default color properties so color correction is enabled when images are requested:
+#### Image Server {#image-server}
 
-1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account using credentials provided during provisioning. 
-1. Navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**.
-1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
-1. Scroll to the property you want to change. For example, a property in the **[!UICONTROL Color Management Attributes]** area.
+The Image Server page establishes default settings for delivering images from image servers. Settings are available in five categories
 
-   You can set the following color correction properties:
+| Publish Context | Description |
+| --- | --- |
+| Image Serving | Specifies the context for publish settings. |
+| Test Image Serving | Specifies the context for testing publish settings.<br>See [Test assets before making them public](#test-assets-before-making-public). |
 
-    * **[!UICONTROL CMYK Default Color Space]** - Name of the default CMYK color profile
-    * **[!UICONTROL Gray-Scale Default Color Space]** - Name of the default Gray color profile
-    * **[!UICONTROL RGB Default Color Space]** - Name of the default RGB color profile
-    * **[!UICONTROL Color Conversion Rendering Intent]** - Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default.
+#### Security tab {#security-tab}
 
-1. Select **[!UICONTROL Save]**.
+**[!UICONTROL Client address]** - Lets you specify one or more IP addresses or IP address ranges. When specified, requests to this image catalog that originates from a client at an unlisted IP address is rejected. This rule applies both to delivery of images and rendered images.
 
-For example, you could set the **[!UICONTROL RGB Default Color Space]** to *sRGB*, and **[!UICONTROL CMYK Default Color Space]** to *WebCoated*.
+#### Catalog Management tab {#catalog-management-tab}
+
+**[!UICONTROL Rule set definition file path]** - Specifies the file that contains the rule set definitions for the image catalog.
+
+See also [RuleSetFile](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-rulesetfile.html) parameter in the Dynamic Media Viewers Reference Guide.
+
+#### Request Attributes tab {#request-attributes-tab}
+
+These settings pertain to the default appearance of images.
+
+| Setting | Description |
+| --- | --- |
+| **[!UICONTROL Reply image size limit]** | Required.<br>Specifies the maximum reply image width and height that is returned to the client. The server returns an error if a request causes a reply image whose width, or height, or both, is larger than this setting.<br>See also [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Request obfuscation mode]** | Enable if you want base64 encoding applied to valid requests.<br>See also [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Request locking mode]** | Enable if you want a simple hash lock included in requests.<br>See also [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default Request Attributes]** | |
+| **[!UICONTROL Default image file suffix]** | Required.<br>Default data file extension that is appended to the catalog Path and MaskPath field values if the path does not include a file suffix.<br>See also [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default font face name]** | Specifies which font is used if no font is provided by a text layer request. If specified, it must be a valid font name value in the font map of this image catalog or in the font map of the default catalog.<br>See also [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default image]** | Provides a default image to return in response to a request where the requested image is not found.<br>See also [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default image mode]** | When the slider box is enabled (slider on the right), the **[!UICONTROL Default image]** replaces each missing layer in the source image with the default image and returns the composite as usual. When the slider box is disabled (slider on the left), the default image replaces the entire composite image, even if the missing image is just one of several layers.<br>See also [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default view size]** | Required.<br>The server constrains reply images to be no larger than this width and height, if the request does not specify the view size explicitly using `wid=`, `hei=`, or `scl=`.<br>See also [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default thumbnail size]** | Required.<br>Used instead of attribute **[!UICONTROL Default view size]** for thumbnail requests (`req=tmb`). The server constrains reply images to be no larger that this width and height, if a thumbnail request (`req=tmb`) does not specify the size explicitly using `wid=`, `hei=`, or `scl=`.<br>See also [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default background color]** | Specifies the RGB value used to fill in any area of a reply image that does not contain actual image data.<br>See also [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL JPEG Encoding Attributes]** |  |
+| **[!UICONTROL Quality]** | Specifies the default attributes for JPEG reply images. The **[!UICONTROL Quality]** field is defined in the range of 1 - 100.<br>See also [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Chromatically downsampling]** | Enable or disable chromatically downsampling which is employed by JPEG encoders. |
+| **[!UICONTROL Default resampling mode]** | Specifies the default resampling and interpolation attributes to use for scaling image data. Use when `resMode` is not specified in a request.<br>See also [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) parameter in the Dynamic Media Viewers Reference Guide. |
+
+#### Common Thumbnail Attributes tab {#common-thumbnail-attributes-tab}
+
+These settings pertain to the default appearance and alignment of thumbnail images.
+
+| Setting | Description |
+| --- | --- |
+| **[!UICONTROL Default background color for thumbnail]** | Specifies the RGB value used to fill the area of an output thumbnail image that does not contain actual image data. Used only for thumbnail requests (`req=tmb`) and when **[!UICONTROL Default Thumbnail Type]** setting is set to **[!UICONTROL Fit]** or **[!UICONTROL Texture]**.<br>See also [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Horizontal alignment]** | Specifies the horizontal alignment of the thumbnail image in the reply image rectangle specified by `wid=` and `hei=` values.<br>Used only for thumbnail requests (`req=tmb`) and when **[!UICONTROL Default Thumbnail Type]** setting is set to **[!UICONTROL Fit]**.<br>There are three horizontal alignments to choose from: **[!UICONTROL Center alignment]**, **[!UICONTROL Left alignment]**, and **[!UICONTROL Right alignment]**.<br>See also [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Vertical alignment]** | Specifies the vertical alignment of the thumbnail image in the reply image rectangle specified by `wid=` and `hei=` values. Used only for thumbnail requests (`req=tmb`) and when **[!UICONTROL Default Thumbnail Type]** setting is set to **[!UICONTROL Fit]**.<br>There are three vertical alignments to choose from: **[!UICONTROL Top alignment]**, **[!UICONTROL Center alignment]**, and **[!UICONTROL Bottom alignment]**.<br>See also [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default cache time to live]** | Provides a default expiration interval in hours in case a particular catalog record does not contain a valid catalog Expiration value. Set to `-1` to mark as never expire. <br>See also [Expiration](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default thumbnail type]** | Provides a default for the thumbnail type in case a particular catalog record does not contain a valid catalog ThumbType value. Used only for thumbnail requests (`req=tmb`).<br>There are three thumbnail types to choose from: **[!UICONTROL Crop]**, **[!UICONTROL Fit]**, and **[!UICONTROL Texture]**.<br>See also [ThumbType](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default thumbnail resolution]** | Provides a default for the thumbnail object resolution in case a particular catalog record does not contain a valid catalog ThumbRes value. Used only for thumbnail requests (`req=tmb`) and when the **[!UICONTROL Default thumbnail type]** setting is set to **[!UICONTROL Texture]**.<br>See also [ThumbRes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres.html) parameter in the Dynamic Media Viewers Reference Guide. |
+
+#### Color Management Attributes tab {#color-management-attributes-tab}
+
+These settings determine which ICC color profiles are used for images.
+
+**Color Conversion Rendering Intent**
+A color conversion rendering intent permits overriding of the default rendering intent of the working profiles to determine how the source colors are adjusted. Used when:
+
+1. One of the default ICC profiles is the target color space of a color conversion.
+1. An output device (printer or monitor) is characterized by this profile.
+1. And, the specified rendering intent is valid for this profile.
+
+Different rendering intents use different rules to determine how the source colors are adjusted.
+
+As an example, you could set the **[!UICONTROL RGB default color space]** to **[!UICONTROL sRGB]**, and **[!UICONTROL CMYK default color space]** to **[!UICONTROL WebCoated]**.
 
 Doing so would do the following:
 
@@ -336,7 +380,291 @@ Doing so would do the following:
 * Dynamic renditions that return RGB output, return it in the *sRGB* color space.
 * Dynamic renditions that return CMYK output, return it in the *WebCoated* color space.
 
+See also [IccRenderIntent](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html) parameter in the Dynamic Media Viewers Reference Guide.
+
+>[!NOTE]
+>
+>In general, it is best to use the default rendering intent for the selected color setting, which has been tested by Adobe to meet industry standards. For example, if you choose a color setting for North America or Europe, the default color conversion rendering intent is **[!UICONTROL Relative Colormetric]**. If you choose a color setting for Japan, the default color conversion rendering intent is **[!UICONTROL Perceptual]**.
+
+| Setting | Characteristics |
+| --- | --- |
+| **[!UICONTROL CMYK default color space]** | Specifies the name of the ICC color profile to use as a working profile for CMYK data. If **[!UICONTROL None Specified]** is chosen, color management is disabled for this image catalog when CMYK source images are involved. All CMYK working spaces are device-dependent, meaning that they are based on actual ink and paper combinations. The CMYK working spaces Adobe supplies are based on standard commercial print conditions.<br> See also [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Gray-Scale default color space]** | Specifies the name of the ICC color profile to use as a working profile for gray-scale data. If **[!UICONTROL None Specified]** is chosen, color management is disabled for this image catalog when gray-scale source images are involved.<br>See also [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL RGB default color space]** | Specifies the name of the ICC color profile to use as a working profile for RGB data. If **[!UICONTROL None Specified]** is chosen, color management is disabled for this image catalog when RGB sources images are involved. In general, it is best to choose **[!UICONTROL Adobe RGB]** or **[!UICONTROL sRGB]**, rather than the profile for a specific device (such as a monitor profile). **[!UICONTROL sRGB]** is recommended when you prepare images for the web or mobile devices, because it defines the color space of the standard monitor used to view images on the web. **[!UICONTROL sRGB]** is also a good choice when you work with images from consumer-level digital cameras, because most of these cameras use sRGB as their default color space.<br>See also [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Color conversion rendering intent]** | **[!UICONTROL Perceptual]** &ndash; Aims to preserve the visual relationship between colors so it’s perceived as natural to the human eye, even though the color values themselves may change. This intent is suitable for photographic images with lots of out-of-gamut colors. This setting is the standard rendering intent for the Japanese printing industry. |
+|  | **[!UICONTROL Relative Colorimetric]** - Compares the extreme highlight of the source color space to that of the destination color space and shifts all colors accordingly. Out-of-gamut colors are shifted to the closest reproducible color in the destination color space. Relative Colorimetric preserves more of the original colors in an image than Perceptual. This setting is the standard rendering intent for printing in North America and Europe. |
+|  | **[!UICONTROL Saturation]** &ndash; Tries to produce vivid colors in an image at the expense of color accuracy. This rendering intent is suitable for business graphics like graphs or charts, where bright saturated colors are more important than the exact relationship between colors. |
+|  | **[!UICONTROL Absolute Colorimetric]** &ndash; Leaves colors that fall inside the destination gamut unchanged. Out-of-gamut colors are clipped. No scaling of colors to destination white point is performed. This intent aims to maintain color accuracy at the expense of preserving relationships between colors and is suitable for proofing to simulate the output of a particular device. This intent is useful for previewing how paper color affects printed colors.|
+
+### Test assets before making them public {#test-assets-before-making-public}
+
+Secure Testing helps you define a secure test environment and build a robust business-to-business solution, based on a configurable set of IP address and ranges. This functionality lets you match your Adobe Dynamic Media deployments with the architecture of your content management and business system.
+
+With Secure Testing, you can preview the staging version of the website with unpublished content.
+
+If desired, create a staging environment rather than making assets publicly available for the following reasons:
+
+* Preview websites before public launch (staging website).
+* Serve assets that require restricted access, such as eCatalogs that show prices in a B2B web application.
+* Use assets behind a firewall as part of product information management system, customer service application, training site, and so on.
+
+>[!NOTE]
+>
+>Secure Testing does not affect access to Adobe Dynamic Media Classic. Adobe Dynamic Media Classic security remains consistent and requires the usual credentials for access to Adobe Dynamic Media Classic and related web services.
+
+#### How Secure Testing works {#how-test-assets-works}
+
+Most corporations run their Internet behind a firewall. Access to the Internet is possible through certain routes and typically through a limited range of public IP addresses.
+
+From your corporate network, you can figure out your public IP address using websites like [https://www.whatismyip.com](https://www.whatismyip.com/) or request this information from your corporate IT organization.
+
+With Secure Testing, Adobe Dynamic Media establishes a dedicated Image Server for staging environments or internal applications. Any request to this server checks the origin IP address. If the incoming request is not within the approved list of IP addresses, a failure response is returned. The Adobe Dynamic Media Company Administrator configures the approved list of IP addresses for their company’s Secure Testing environment.
+
+Because the location of the original request must be confirmed, the traffic of the Secure Testing service is not routed through a content distribution network like public Dynamic Media Image Server traffic. Requests to the Secure Testing service have a slightly higher latency compared to the public Dynamic Media Image Servers.
+
+Unpublished assets are immediately available from the Secure Testing services, without the need to publish. In this way, you can run a preview before assets are published to their public facing image server.
+
+>[!NOTE]
+>
+>Secure Testing services use the Catalog Server that is configured with an internal publish context. Therefore, if your company is configured to publish to Secure Testing, any uploaded assets in Adobe Dynamic Media immediately become available on Secure Testing services. This functionality is true regardless of whether the assets are marked for publish on upload.
+
+Secure Testing services currently support the following asset types and functionalities:
+
+* Images.
+* Vignettes (Render Server requests).
+* Render Server requests (supported, but must be requested explicitly by customer).
+* Sets, including image sets, eCatalog, render sets, and media sets.
+* Standard Adobe Dynamic Media rich media viewers.
+* Adobe Dynamic Media OnDemand JSP pages.
+* Static content, such as PDF files and progressively served videos.
+* HTTP video streaming.
+* Progressive video streaming.
+
+The following asset types and functionalities are currently not supported:
+
+* Adobe Dynamic Media Classic Info or eCatalog search
+* RTMP video streaming
+* Web-to-print
+* UGC (User-Generated Content) services
+
+>[!IMPORTANT]
+>
+>Support for new or existing UGC vector image assets in Adobe Dynamic Media ended on September 30, 2021.
+
+#### Test the Secure Testing service {#test-secure-testing-service}
+
+To ensure that Secure Testing service works as expected, do the following:
+
+##### Prepare your account
+
+1. Contact Adobe Customer Care and request that they enable Secure Testing on your account.
+1. In Adobe Experience Manager, select **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
+1. On the Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
+1. Select the **[!UICONTROL Security]** tab.
+1. For the **[!UICONTROL Client address]** filter, select **[!UICONTROL Add]**.
+1. In the **[!UICONTROL IP Address]** field, type an IP address.
+1. In the **[!UICONTROL Mask]** field, type a net mask.
+
+   >[!NOTE]
+   >
+   >If you add more than one IP address and net mask, it effectively permits *all* IP addresses to make asset calls, and they all show up.
+
+1. Do one of the following:
+
+   * To add more IP addresses, repeat the previous three steps.
+   * Continue to the next step.
+
+1. In the upper right corner of the Image Server page, select **[!UICONTROL Save]**.
+1. Upload the desired images to your Adobe Dynamic Media account.
+
+<!--    See [Upload files](uploading-files.md#uploading_files). -->
+
+1. Make sure some of the images are marked for publish and others are unmarked, and then submit the publish job.
+
+<!--    See [Publish files](publishing-files.md#publishing_files). -->
+
+1. Determine the name of your Secure Testing service by going to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**. 
+1. On the **[!UICONTROL Server]** page, find the server name to the right of **[!UICONTROL Published Server Name]**.
+
+Contact Adobe Care if the server name is missing or the URL to the server does not work.
+
+##### Prepare website variations
+
+You need two variations of a website that links the published and unpublished assets:
+
+* Public version - Link assets using your traditional Adobe Dynamic Media URL syntax.
+* Staging version - Link assets using the same syntax but with the Secure Testing site name.
+
+##### Run the tests
+
+Perform the following tests:
+
+1. Check whether assets are visible from within your corporate network.
+
+   From within the corporate network identified by the previously defined IP address range, the staging version of the website displays all images, whether marked for publish or not. As such, you can test without accidentally making images available before preview approval or product launch.
+
+   Confirm that the public version of your site shows published assets as previously experienced with Adobe Dynamic Media.
+
+1. From outside your corporate network, verify that nonpublished assets (that is, unmarked for publish) are protected from third-party access.
+
+   Access your network from outside (such as from your home computer, or over a 4G/5G connection), then verify that the public version of the site shows all published assets but none of the unpublished content.
+
+   Confirm that the staging version does not show any asset because you are accessing the Secure Testing service from an unapproved IP address.
+
+### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+
+>[!IMPORTANT]
+>
+>Dynamic Media General Setting is only available if:
+>
+>* You are running Dynamic Media in Scene7 mode.
+>* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or in Experience Manager as a Cloud Service.
+>* You are an Experience Manager system administrator with administrator privileges.
+
+On account creation, Adobe Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account.
+
+See also [Test the Secure Testing Service](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+
+**To configure Dynamic Media General Setting:**
+
+1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**.
+1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure default publish settings.
+
+   * [Server](#server-general-setting)
+   * [Upload to Application](#upload-to-application)
+   * [Image Editing](#image-editing-tab) tab
+   * [PostScript](#postscript-tab) tab
+   * [Photoshop](#photoshop-tab) tab
+   * [PDF](#pdf-tab) tab
+   * [Illustrator](#illustrator-tab) tab
+
+   ![Dynamic Media General Settings page](/help/assets/assets-dm/dm-general-settings.png)
+   *Dynamic Media General Settings page, with the **[!UICONTROL Image Editing]** tab selected.*<br><br>
+
+1. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Save]**.
+
+#### Server {#server-general-setting}
+
+On account creation, Adobe Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account.
+
+| Option | Description |
+| --- | --- |
+| **[!UICONTROL Published Server Name]** | Required.<br>This server is the live CDN (Content Deliver Network) server used in all system-generated URL calls that are specific to your account. Do not change this server name unless you are instructed to do so by Adobe Technical Support. The name must use `https://` in the path.|
+| **[!UICONTROL Origin Server Name]** | Required.<br>This server is used for quality assurance testing only. Do not change this server name unless instructed to do so by Adobe Technical Support. |
+
+#### Upload to Application {#upload-to-application}
+
+* **[!UICONTROL Overwrite Images]**
+
+    Adobe Dynamic Media does not allow two files to have the same name. Each item’s Adobe Dynamic Media ID (the image name minus the filename extension) must be unique. Because of this rule, **[!UICONTROL Upload to Application]** has an overwrite. The exact effect of this option depends on the specified Overwrite Images option you have chosen. These options specify how replacement images are uploaded: whether they replace the original images, or become duplicate images. Duplicate images are renamed with a `-1`. For example, `chair.tif` is renamed `chair-1.tif`. These options affect images uploaded to a different folder than the original or images with a different filename extension from the original, such as JPG, TIF, or PNG.
+
+    | Overwrite Images option | Description |
+    | --- | --- |
+    | **[!UICONTROL Overwrite in current folder, same base name/extension]** | Default.<br>This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created. |
+    | **[!UICONTROL Overwrite in current folder, same base name regardless of extension]** | Requires that you upload the replacement image to the same folder as the original, however the filename extension can be different from the original. For example, chair.tif replaces chair.jpg. |
+    | **[!UICONTROL Overwrite in any folder, same base asset name/extension]** | Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location. |
+    | **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** | This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded. |
+
+* **[!UICONTROL Preserve Crop]**
+
+    Controls the preservation of any existing manual crop definition.
+
+    See also `preserveCrop` in [UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html) and [ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html), both in the Dynamic Media Viewers Reference Guide.
+
+#### Default Upload Options {#default-upload-options}
+
+##### Image Editing tab {#image-editing-tab}
+
+This filter lets you fine-tune a sharpening filter effect on the final downsampled image. It helps you control the intensity of the effect, the radius of the effect (as measured in pixels), and a threshold of contrast that is ignored.
+
+The Unsharp Mask effect uses the same options as Photoshop’s Unsharp Mask filter. Contrary to what the name suggests, Unsharp Mask is a sharpening filter.
+
+| Unsharp Mask options |Description |
+| --- | --- |
+| **[!UICONTROL Amount]** | Required.<br>Controls the amount of contrast that is applied to edge pixels.<br>Think of it as the intensity of the effect. The main difference between the amount values of Unsharp Mask in Adobe Dynamic Media and the amount values in Adobe Photoshop, is that Photoshop has an amount range of 1% to 500%. Whereas in Adobe Dynamic Media, the value range is `0.0` to `5.0`. A value of 5.0 in Adobe Dynamic Media is the rough equivalent of 500% in Photoshop; a value of 0.9 is the equivalent of 90%, and so on. |
+| **[!UICONTROL Radius]** | Required.<br>Controls the radius of the effect.<br>The value range is `0` to `250`. The effect is run on all pixels in an image and radiates out from all pixels in all directions. The radius is measured in pixels. For example, to get a similar sharpening effect for a 2000 x 2000 pixel image and 500 x 500 pixel image, you would set a radius of two pixels on the 2000 x 2000 pixel image. Then set a radius value of one pixel on the 500 x 500 pixel image. A larger value is used for an image that has more pixels. |
+| **[!UICONTROL Threshold]** | Required.<br>Threshold is a range of contrast that is ignored when the Unsharp Mask filter is applied. This effect is important so that no "noise" is introduced to an image when this filter is used. The value range is `0` - `255`, which is the number of brightness steps in a grayscale image. `0`=black, `128`=50% gray and `255`=white.<br>A threshold value of `12` ignores slight variations is skin tone brightness to avoid adding noise, but still add edge contrast to contrasty areas such as where eyelashes meet skin.<br>If you have a photo of someone’s face, the Unsharp Mask affects the contrasty parts of the image. For example, where eyelashes and skin meet to create an obvious area of contrast, and the smooth skin itself. Even the smoothest skin exhibits subtle changes in brightness values. If you do not use a threshold value, the filter accentuates these subtle changes in skin pixels. In turn, a noisy and undesirable effect is created while contrast on the eyelashes is increased, enhancing sharpness.<br>To avoid this issue, a threshold value is introduced that tells the filter to ignore pixels that do not change contrast dramatically, like smooth skin.<br>In the zipper graphic shown earlier, notice the texture next to the zippers. Image noise is exhibited because the threshold values were too low to suppress the noise. |
+| **[!UICONTROL Monochrome]** | Select to unsharp-mask image brightness (intensity).<br>Deselect to unsharp-mask each color component separately. |
+
+See also [Sharpen images in Adobe Dynamic Media and on Image Server](/help/assets/assets/sharpening_images.pdf).
+
+##### PostScript tab {#postscript-tab}
+
+You can rasterize Adobe PostScript® files, maintain transparent backgrounds, choose a resolution, and choose a color space.
+
+You can use Adobe PostScript® (EPS) files in Adobe Dynamic Media. Adobe Dynamic Media offers commands for configuring these files as you upload them.
+
+When you upload PostScript (EPS) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space.
+
+| PostScript option | Description |
+| --- | --- |
+| **[!UICONTROL Processing]** | Choose Rasterize to convert vector graphics in the file to the bitmap format. |
+| **[!UICONTROL Maintain transparent background in rendered images]** | Preserves the background transparency of the file. |
+| **[!UICONTROL Resolution (pixel/inch)]** | Determines the resolution setting. This setting determines how many pixels are displayed per inch in the file. |
+| **[!UICONTROL Color space]** | &bull; **[!UICONTROL Detect automatically]** - Retains the color space of the file.<br>&bull; **[!UICONTROL Force as RGB]** - Converts to the RGB color space.<br>&bull; **[!UICONTROL Force as CMYK]** - Converts to the CMYK color space.<br>&bull; **[!UICONTROL Force as Grayscale]** - Converts to the Grayscale color space.|
+
+##### Photoshop tab {#photoshop-tab}
+
+You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.
+
+| Photoshop option | Description |
+| --- | --- |
+| **[!UICONTROL Maintain layers]** | Rips the layers in the PSD, if any, into individual assets. The asset layers remain associated with the PSD. You can view them by opening the PSD file in Detail View and selecting the layer panel. See Viewing and editing layers in a PSD file. |
+| **[!UICONTROL Create template]** | Creates a template from the layers in the PSD file. |
+| **[!UICONTROL Extract text]** | Extracts the text so that users can search for text in a Viewer. |
+| **[!UICONTROL Extend layers to background size]** | Extends the size of ripped image layers to the size of the background layer. |
+| **[!UICONTROL Layer naming]** | Extends the size of ripped image layers to the size of the background layer.<br>&bull; **[!UICONTROL Layer name]** - Names the images after their layer names in the PSD file. For example, a layer named Price Tag in the original PSD file becomes an image named Price Tag. However, if the layer names in the PSD file are default Photoshop layer names (Background, Layer 1, Layer 2, and so on), the images are named after their layer numbers in the PSD file. <br>&bull; **[!UICONTROL Photoshop and layer number]** - Names the images after their layer numbers in the PSD file, ignoring original layer names. Images are named with the Photoshop filename and an appended layer number. For example, the second layer of a file called `Spring Ad.psd` is named `Spring Ad_2` even if it had a non-default name in Photoshop.<br>&bull; **[!UICONTROL Photoshop and layer name]** - Names the images after the PSD file followed by the layer name or layer number. The layer number is used if the layer names in the PSD file are default Photoshop layer names. For example, a layer named `Price Tag` in a PSD file named `SpringAd` is named `Spring Ad_Price Tag`. A layer with the default name Layer 2 is called `Spring Ad_2`. |
+| **[!UICONTROL Anchor]** | Specify how images are anchored in templates that are generated from the layered composition produced from the PSD file. By default, the anchor is the center. A center anchor allows replacement images to best fill the same space, no matter the aspect ratio of the replacement image. Images with a different aspect that replace this image, when referencing the template and using parameter substitution, effectively occupy the same space. Change to a different setting if your application requires the replacement images to fill the allocated space in the template. |
+
+##### PDF tab {#pdf-tab}
+
+You can choose to rasterize the files, extract search words and links, set the resolution, and choose a color space.
+
+| PDF option | Description |
+| --- | --- |
+| **[!UICONTROL Processing]** | &bull; **[!UICONTROL None]** - No processing of the PDF is done.<br>&bull; **[!UICONTROL Thumbnail]** - Rips each page in the PDF file and converts it to a thumbnail image.<br> &bull; **[!UICONTROL Rasterize]** - Rips the pages in the PDF file and converts vector graphics to bitmap images. To create an eCatalog, choose this option. |
+| **[!UICONTROL Extract]** | &bull; **[!UICONTROL None]** - No search words or links are extracted from the PDF.<br>&bull; **[!UICONTROL Search words]** - Extracts search words from the PDF file so that the file can be searched by keyword in an eCatalog Viewer.<br>&bull; **[!UICONTROL Links]** - Extracts links from the PDF files and coverts them to Image Maps that are used in an eCatalog Viewer.<br>&bull; **[!UICONTROL Search words and links]** - Extracts both search words and links for use in an eCatalog viewer. |
+| **[!UICONTROL Resolution (pixel/inch)]** | Determines the resolution setting. This setting determines how many pixels are displayed per inch in the PDF file. The default is 150. |
+| **[!UICONTROL Color space]** | &bull; **[!UICONTROL Detect automatically]** - Maintains the color space of the PDF file.<br>&bull; **[!UICONTROL Force as RGB]** - Converts to the RGB color space.<br>&bull; **[!UICONTROL Force as CMYK]** - Converts to the CMYK color space.<br>&bull; **[!UICONTROL Force as Grayscale]** - Converts to the Grayscale color space.  |
+
+##### Illustrator tab {#illustrator-tab}
+
+You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.
+
+You can use Adobe® Illustrator® (AI) files in Adobe Dynamic Media. Adobe Dynamic Media offers commands for configuring these files as you upload them.
+
+When you upload Illustrator (AI) image files, you can format them in various ways. You can rasterize the files, maintain the transparent background, choose a resolution, and choose a color space. Options for formatting PostScript and Illustrator files are available on the Upload screen under PostScript Options and Illustrator Options in the Upload Job Options box.
+
+
+| Illustrator option | Description |
+| --- | --- |
+| **[!UICONTROL Processing]** | Choose Rasterize to convert vector graphics in the file to the bitmap format. |
+| **[!UICONTROL Maintain transparent background in rendered images]** | Preserves the background transparency of the file. |
+| **[!UICONTROL Resolution (pixel/inch)]** | Determines the resolution setting. This setting determines how many pixels are displayed per inch in the file. |
+| **[!UICONTROL Color space]** | &bull; **[!UICONTROL Detect automatically]** - Retains the color space of the file.<br>&bull; **[!UICONTROL Force as RGB]** - Converts to the RGB color space.<br>&bull; **[!UICONTROL Force as CMYK]** - Converts to the CMYK color space.<br>&bull; **[!UICONTROL Force as Grayscale]** - Converts to the Grayscale color space.|
+
+
+**[!UICONTROL Default Color Profiles]** - See [Configure Color Management](#configuring-color-management) for additional information.
+
+>[!NOTE]
+>
+>By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increase the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+>
+### (Optional) Additional configuration tasks
+
+Optional setup and configuration tasks include the following:
+
+* [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats) **RICK: KEEP?**
+* [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats) **RICK: KEEP?**
+* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) **RICK: KEEP?**
+
+* **[!UICONTROL Compatibility Attributes]** - **RICK: STILL NEEDED? WAS IN CLASSIC** This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
+* **[!UICONTROL Localization Support]** - **RICK: STILL NEEDED? WAS IN CLASSIC** These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[Localization Support]**, see [Considerations when setting up localization of assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
+
 #### Edit MIME types for supported formats {#editing-mime-types-for-supported-formats}
+
+**RICK: KEEP AS IS??**
 
 You can define which asset types are processed by Dynamic Media and customize advanced asset processing parameters. For example, you can specify asset processing parameters to do the following:
 
@@ -371,6 +699,8 @@ See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to Experience Manager.
 
 #### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
+
+**RICK: KEEP AS IS??**
 
 You can add custom MIME types for unsupported formats in Experience Manager Assets. Ensure that any new node you add in CRXDE Lite is not deleted by Experience Manager by moving the MIME type before `image_`. Also, be sure that its enabled value is set to **[!UICONTROL false]**.
 
@@ -424,6 +754,8 @@ You can add custom MIME types for unsupported formats in Experience Manager Asse
 
 #### Create batch set presets to auto-generate Image Sets and Spin Sets {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
+**RICK: KEEP AS IS??**
+
 Use batch set presets to automate the creation of image sets or spin sets while assets are uploaded to Dynamic Media.
 
 First, define the naming convention for how assets are grouped in a set. Then create a batch set preset that is a uniquely named, self-contained set of instructions. It must define how to construct the set using images that match the defined naming conventions in the preset recipe.
@@ -441,6 +773,8 @@ As an alternative, you can use **[!UICONTROL View Code]** with no form fields av
 Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention often uses one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
 
 **To configure default naming:**
+
+**RICK: KEEP AS IS??**
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
@@ -475,6 +809,8 @@ You can create, edit, and manage your batch set presets. There are two forms of 
 You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
 
 **To create a Batch Set Preset:**
+
+**RICK: KEEP AS IS??**
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
@@ -531,6 +867,8 @@ Grouping for the shared asset name part of the spin set is added to the **[!UICO
 When the Spin Set is uploaded and published, you would activate the name of the 2D Spin Set recipe that is listed under **[!UICONTROL Batch Set Presets]** in the **[!UICONTROL Upload Job Options]** dialog box.
 
 **To create a Batch Set Preset for the auto-generation of a 2D Spin Set:**
+
+**RICK: KEEP AS IS??**
 
 1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
 
@@ -590,6 +928,8 @@ When the Spin Set is uploaded and published, you would activate the name of the 
 
 ### (Optional) Tune the performance of Dynamic Media - Scene7 mode {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
+**RICK: KEEP AS IS??**
+
 To keep Dynamic Media - Scene7 mode running smoothly, Adobe recommends the following synchronization performance/scalability fine-tuning tips:
 
 * Updating the predefined Job parameters for processing of different file formats.
@@ -598,6 +938,8 @@ To keep Dynamic Media - Scene7 mode running smoothly, Adobe recommends the follo
 * Updating the maximum upload connections to the Dynamic Media Classic server.
 
 #### Update the predefined Job parameters for processing of different file formats
+
+**RICK: KEEP AS IS??**
 
 You can tune job parameters for faster processing when you upload files. For example, if you upload PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter appears as follows: `process=None&createTemplate=false`.
 
@@ -623,6 +965,8 @@ To update any of these parameters, follow the steps in [Enabling MIME type-based
 
 #### Update the Granite transient workflow queue {#updating-the-granite-transient-workflow-queue}
 
+**RICK: KEEP AS IS??**
+
 The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media, it is used for image ingestion and processing.
 
 **To update the Granite transient workflow queue:**
@@ -647,6 +991,8 @@ The Granite Transit Workflow queue is used for the **[!UICONTROL DAM Update Asse
 
 #### Update the Granite workflow queue {#updating-the-granite-workflow-queue}
 
+**RICK: KEEP AS IS??**
+
 The Granite Workflow queue is used for non-transient workflows. In Dynamic Media, it used to process video with the **[!UICONTROL Dynamic Media Encode Video]** workflow.
 
 **To update the Granite workflow queue:**
@@ -667,6 +1013,8 @@ The Granite Workflow queue is used for non-transient workflows. In Dynamic Media
 
 #### Update the Dynamic Media Classic upload connection {#updating-the-scene-upload-connection}
 
+**RICK: KEEP AS IS??**
+
 The Scene7 Upload Connection setting synchronizes Experience Manager assets to Dynamic Media Classic servers.
 
 **To update the Dynamic Media Classic upload connection:**
@@ -686,6 +1034,8 @@ The Scene7 Upload Connection setting synchronizes Experience Manager assets to D
 
 ### (Optional) Filter assets for replication {#optional-filtering-assets-for-replication}
 
+**RICK: KEEP AS IS**
+
 In non-Dynamic Media deployments, you replicate *all* assets (both images and video) from your Experience Manager author environment to the Experience Manager Publish node. This workflow is necessary because the Experience Manager Publish servers also deliver the assets.
 
 However, in Dynamic Media deployments, because assets are delivered by way of the Cloud Service, there is no need to replicate those same assets to Experience Manager publish nodes. Such a "hybrid publishing" workflow avoids extra storage costs and longer processing times to replicate assets. Other content, such as Site pages, continue to be served from the Experience Manager publish nodes.
@@ -693,6 +1043,8 @@ However, in Dynamic Media deployments, because assets are delivered by way of th
 The filters provide a way for you to *exclude* assets from being replicated to the Experience Manager publish node.
 
 #### Use default asset filters for replication {#using-default-asset-filters-for-replication}
+
+**RICK: KEEP AS IS**
 
 If you use Dynamic Media for imaging, or video, or both, you can use the default filters that Adobe provides as-is. The following filters are active by default:
 
@@ -706,6 +1058,8 @@ If you use Dynamic Media for imaging, or video, or both, you can use the default
 >Filters apply to MIME types and cannot be path-specific.
 
 #### Customize asset filters for replication {#customizing-asset-filters-for-replication}
+
+**RICK: KEEP AS IS**
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console and navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. In the left folder tree, navigate to `/etc/replication/agents.author/publish/jcr:content/damRenditionFilters` to review the filters.
