@@ -168,11 +168,11 @@ If you want to further customize your configuration, you can optionally complete
 If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following *optional* tasks:
 
 * [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](#optional-config-dms7-assets-larger-than-2gb)
-
-* [(Optional) Setup and configuration of Dynamic Media - Scene7 mode settings](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
-
+* [(Optional) Configure Dynamic Media Publish Setup](#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)
+  * [(Optional) Test assets before making them public](#test-assets-before-making-public)
+* [(Optional) Configure Dynamic Media General Settings](#configuring-application-general-settings)
+* [(Optional) Additional configuration tasks](#additional-configuration-tasks)
 * [(Optional) Tune the performance of Dynamic Media - Scene7 mode](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
-
 * [(Optional) Filter assets for replication](#optional-filtering-assets-for-replication)
 
 ### (Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB {#optional-config-dms7-assets-larger-than-2gb}
@@ -652,7 +652,7 @@ When you upload Illustrator (AI) image files, you can format them in various way
 >By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increase the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 >
 
-### (Optional) Additional configuration tasks
+### (Optional) Additional configuration tasks {#additional-configuration-tasks}
 
 Optional setup and configuration tasks include the following:
 
