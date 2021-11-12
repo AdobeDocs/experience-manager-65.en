@@ -22,7 +22,6 @@ exl-id:
 >* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or in Experience Manager as a Cloud Service.
 >* You are an Experience Manager system administrator with administrator privileges.
 
-
 The Dynamic Media Publish Setup page settings determine how assets are delivered by default from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting on a Publish Setup page. For example, a request to deliver an image that does not include a resolution attribute yields an image with the Default Object Resolution setting on the Image Server page.
 
 Administrators can change the default settings on the Image Server, Image Renderer, and Vignette pages to establish default settings for delivering assets from servers.
@@ -35,7 +34,7 @@ Administrators can change the default settings on the Image Server, Image Render
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
 1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
-1. In the Image Server page, set your Image Server - publish context, and then use the five tabs to configure defaults publish settings.
+1. In the Image Server page, set your Image Server - publish context, and then use the five tabs to configure default publish settings.
 
    * [Image Server](#image-server)
    * [Security](#security-tab) tab
@@ -43,6 +42,9 @@ Administrators can change the default settings on the Image Server, Image Render
    * [Request Attributes](#request-attributes-tab) tab
    * [Common Thumbnail Attributes](#common-thumbnail-attributes-tab) tab
    * [Color Management Attributes](#color-management-attributes-tab) tab
+
+   ![Dynamic Media Publish Setup page](/help/assets/assets-dm/dm-publish-setup.png)
+   *Dynamic Media Publish Setup page, with the **[!UICONTROL Request Attributes]** tab selected.*<br><br>
 
 1. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Save]**.
 
