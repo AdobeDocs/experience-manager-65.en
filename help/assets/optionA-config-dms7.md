@@ -651,6 +651,7 @@ When you upload Illustrator (AI) image files, you can format them in various way
 >
 >By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increase the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 >
+
 ### (Optional) Additional configuration tasks
 
 Optional setup and configuration tasks include the following:
