@@ -162,7 +162,7 @@ Dynamic Media includes a Dynamic Media 3D Media component that you can use in Ad
 
 * [Add the 3D Media component to the page template](#adding-three-d-media-component-to-page-template)
 * [Add the 3D Media component to a web page](#adding-the-three-d-media-component-to-a-web-page)
-  * [Optional - Configuring the 3D Media component](#configuring-the-three-d-component)
+  * [Optional - Configure the 3D Media component](#configuring-the-three-d-component)
 * [Assign a 3D asset to the 3D Media component](#assigning-a-three-d-asset-to-the-component)
 
 ## Add the 3D Media component to the page template {#adding-three-d-media-component-to-page-template}

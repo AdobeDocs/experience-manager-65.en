@@ -30,7 +30,7 @@ See also [Test the Secure Testing Service](/help/assets/dm-publish-settings.md#t
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
 1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**.
-1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure defaults publish settings.
+1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure default publish settings.
 
    * [Server](#server-general-setting)
    * [Upload to Application](#upload-to-application)
@@ -39,6 +39,9 @@ See also [Test the Secure Testing Service](/help/assets/dm-publish-settings.md#t
    * [Photoshop](#photoshop-tab) tab
    * [PDF](#pdf-tab) tab
    * [Illustrator](#illustrator-tab) tab
+
+   ![Dynamic Media General Settings page](/help/assets/assets-dm/dm-general-settings.png)
+   *Dynamic Media General Settings page, with the **[!UICONTROL Image Editing]** tab selected.*<br><br>
 
 1. When you are finished, near the upper-right corner of the page, select **[!UICONTROL Save]**.
 
