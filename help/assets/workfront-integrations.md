@@ -8,9 +8,11 @@ feature: Asset Management
 
 # Adobe Experience Manager Assets integration with Adobe Workfront {#assets-integration-overview}
 
-[!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The native integration between Adobe Workfront and Adobe Experience Manager Assets lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and the images.
+[!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The native integration between [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and the images.
 
-Adobe offers two different connectors to integration both the solution. Assets Essentials is available as an add-on that new Workfront customers can purchase separately. To know more, see Workfront and Essentials integration. [!DNL Workfront for Experience Manage enhanced connector] is also made available. It enables your organization to:
+Adobe offers two different connectors to integrate both the solutions. The connectors enable complex enterprise automation, configuration, and extensible workflows between [!DNL Assets] and [!DNL Workfront]. In addition, [!DNL Assets Essentials] is available as an add-on that new [!DNL Workfront] customers can purchase separately. To know more, see [Workfront and Essentials integration](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
+
+[!DNL Workfront for Experience Manage enhanced connector] enables your organization to:
 
 * Easily collaborate. Creative teams can worry about one less thing. Now when the work is done they can send it to AEM Assets with the click of a button
 * Enrich assets at every step. Collect new data at each stage of the asset lifecycle. From ideation to delivery, your organization can capture key metrics to make more informed business decisions about future asset development.
