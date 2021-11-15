@@ -165,7 +165,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Related assets](related-assets.md)
   + [Private folder sharing](private-folder.md)
   + [Video renditions](video-renditions.md)
-+ Integration with other systems {#integrations}
++ Integration with other solutions {#integrations}
   + [Integrations with [!DNL Adobe Workfront]](workfront-integrations.md)
   + [Install [!DNL enhanced Connector for Workfront]](workfront-connector-install.md)
   + [Configure [!DNL enhanced Connector for Workfront]](workfront-connector-configure.md)

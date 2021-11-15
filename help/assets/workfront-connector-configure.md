@@ -76,7 +76,7 @@ To subscribe to the events, follow these steps:
 
 In workflow editor, edit the properties of [!UICONTROL Workfront - Set Status] in the [!UICONTROL Arguments] tab.
 
-![Edit workflow to set status](/)
+![Edit workflow to set status](/help/assets/assets/wf-set-status.png)
 
 ## Comments synchronization {#comments-sync}
 
