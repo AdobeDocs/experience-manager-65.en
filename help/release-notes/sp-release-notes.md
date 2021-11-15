@@ -22,32 +22,42 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.11.0 are:
 
-* SEO enhancements are available via a bundle that supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
+* SEO enhancements are available via a bundle that supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components]. <!-- The bundle needs to be updated on SD via NPR-37512. If and when the bundle is uploaded, link to it. -->
 
-<!-- A bundle needs to be updated on SD via NPR-37512. If it is uploaded, then link to it.
--->
+* You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+
+   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
+
+* You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
+
+   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
+
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
 ### [!DNL Sites] {#sites-65110}
 
-* Fix 1                              
+* Fix 1
 
 ### [!DNL Assets] {#assets-65110}
 
 The following issues are fixed in [!DNL Assets]:
 
-* Fix 1
+* Saving an [!DNL Adobe Target] activity with [!DNL Experience Manager] targeting mode fails in case an [!DNL Adobe Analytics] report metric is referenced (NPR-37167).
+* [!DNL Adobe Asset Link] is not able to access the digital assets even when the [!DNL Creative Cloud] and [!DNL Experience Management] entitlements are provided by two different organizations.
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
+<!-- Check if a11y enh. are to be covered in SP11.
 **Accessibility enhancements**
 
 The following accessibility enhancements are available in [!DNL Dynamic Media Viewers].
 
 * Fix 1
 
+
 **Issues fixed**
+-->
 
 The following bug fixes are available in [!DNL Dynamic Media].
 

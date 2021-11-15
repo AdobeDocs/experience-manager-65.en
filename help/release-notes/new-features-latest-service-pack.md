@@ -18,13 +18,24 @@ This article highlights the features included in the latest Service Pack, [key f
 
 ## [!DNL Adobe Experience Manager Sites] {#aem-sites}
 
-* Feature 1
+* SEO enhancements are available via a bundle that supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components]. <!-- The bundle needs to be updated on SD via NPR-37512. If and when the bundle is uploaded, link to it. -->
+
+<!-- TBD: Fill in Assets section later. CC Anuj
 
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 * Feature 1
+-->
 
-### [!DNL dynamic-media] {#dynamic-media}
+### [!DNL Dynamic Media] {#dynamic-media}
+
+* You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+
+   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
+
+* You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
+
+   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
 
 ## [!DNL Adobe Experience Manager Forms] {#aem-forms}
 
