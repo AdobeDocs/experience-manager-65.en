@@ -100,9 +100,9 @@ To maintain version history of assets in AEM, configure asset versioning in AEM.
 
 1. In Experience Manager, access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]**, and open the **[!UICONTROL Advanced]** tab.
 
-1. Option **[!UICONTROL Store assets with the same name as versions of the existing asset]**: when checked, this option enables storing assets uploaded with the same name and to the same location as the version of the existing asset. If left unchecked, a new asset will be created with a different name (for example, `asset-name.pdf` and `asset-name-1.pdf`).
+1. Select option **[!UICONTROL Store assets with the same name as versions of the existing asset]**. When checked, this option enables storing assets uploaded with the same name and to the same location as the version of the existing asset. If left unchecked, a new asset will be created with a different name (for example, `asset-name.pdf` and `asset-name-1.pdf`).
 
-1. Option **[!UICONTROL Update asset metadata when creating a new version]**: when checked, this option updates the asset metadata whenever a new version of the asset is created. If unchecked, the asset will keep the metadata it had prior to creating the new version.
+1. Select option **[!UICONTROL Update asset metadata when creating a new version]**. When checked, this option updates the asset metadata whenever a new version of the asset is created. If unchecked, the asset will keep the metadata it had prior to creating the new version.
 
 ![configure asset versioning](/help/assets/assets/wf-config-versioning.png)
 
@@ -112,8 +112,20 @@ To maintain version history of assets in AEM, configure asset versioning in AEM.
 
 ## Attach custom forms {#attach-custom-forms}
 
+This workflow step lets users attach a custom form to a [!DNL Workfront] artifact. This workflow step can be added to any workflow model. The [!DNL Workfront] artifact this step affects will be looked up using a relative path from the payload.
 
+In workflow editor in Experience Manager, edit the properties of the [!UICONTROL Workfront - Attach custom form] workflow step.
+
+![custom forms](/help/assets/assets/wf-custom-forms.png).
 
 ## Auto-publish assets {#auto-publish-assets}
+
+1. In Experience Manager, access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]**, and open the **[!UICONTROL Advanced]** tab.
+
+1. Select **[!UICONTROL Automatically publish assets when sent from Workfront]**. This option enables automatic publishing of assets when they are sent from Workfront to AEM. This feature can be enabled conditionally by specifying a Workfront custom form field  and the value it should be set to. Whenever a document is sent to AEM, if it satisfies the condition, then the asset will be automatically published.
+
+1. Select **[!UICONTROL Publish all project assets to Brand Portal upon project completion]**. This option enables automatic publishing of assets to [!DNL Brand Portal] when the status of the Workfront project they belong to is changed to `Complete`.
+
+![configure auto-publish](/help/assets/assets/wf-auto-publish-config.png)
 
 ## Content Fragments {#content-fragments}
