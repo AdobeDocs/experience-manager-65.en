@@ -24,6 +24,10 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
 
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+   ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
+
 * You can now render the sort option in Card and Column view (NPR-37199).
 
 * You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
@@ -34,7 +38,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
    ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
 
-* The following accessibility enhancements are available:
+* The following accessibility enhancement is available:
 
   * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
 
@@ -64,6 +68,7 @@ The following issues are fixed in [!DNL Assets]:
 
 * Adding a video with custom metadata generated upon upload to a page displays an error about unknown namespace, even if the namespace is registered (CQ-4331471).
 
+* In [!DNL Assets] if [!DNL Launcher] is disabled then metadata writeback does not work when triggered manually (CQ-4329082).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
@@ -79,6 +84,7 @@ The following accessibility enhancements are available in [!DNL Dynamic Media Vi
 
 The following bug fixes are available in [!DNL Dynamic Media].
 
+* When synchronizing assets using `Scene7: Reprocess Assets` workflow, some assets are not synchronized and remain in processing state (CQ-4328711).
 * Asset is not updated in [!DNL Dynamic Media] when restoring an asset version in [!DNL Experience Manager] (NPR-37421).
 * When a [!DNL Dynamic Media Classic] user starts using the publish setup page, [!DNL Experience Manager] does not fetch and store the Rule Set and Default Image file if those are already set ().
 * After migration to service pack 9, users face an issue with [!DNL Dynamic Media] image auto-upload (CQ-4332800).

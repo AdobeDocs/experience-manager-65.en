@@ -20,12 +20,15 @@ This article highlights the features included in the latest Service Pack, [key f
 
 * Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
 
-<!-- TBD: Fill in Assets section later. CC Anuj
-
 ## [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
-* Feature 1
--->
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+   ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
+
+* The following accessibility enhancement is available:
+
+  * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
 
 ### [!DNL Dynamic Media] {#dynamic-media}
 
