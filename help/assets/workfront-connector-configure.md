@@ -8,7 +8,7 @@ feature: Asset Management
 
 # Configure [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-Adobe Experience Manager administrators configure the enhanced connector after it is installed. For instructions to install, see [Install enhanced connector](/help/assets/integrations.md).
+Adobe Experience Manager administrators configure the enhanced connector after it is installed. For instructions to install, see [Install enhanced connector](/help/assets/workfront-integrations.md).
 
 ## System User Configuration {#system-user-config}
 
