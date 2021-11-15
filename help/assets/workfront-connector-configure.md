@@ -10,18 +10,7 @@ feature: Asset Management
 
 Adobe Experience Manager administrators configure the enhanced connector after it is installed. For instructions to install, see [Install enhanced connector](/help/assets/workfront-integrations.md).
 
-## System User Configuration {#system-user-config}
-
-<!--
-Use the wiki shared by James. 
-If not documented on the wiki, use the steps from https://workfront-tools.hoodoo.digital/WTFAUG/Installing-Workfront-for-Experience-Manager-enhanced-connector.618823781.html#InstallingWorkfrontforExperienceManagerenhancedconnector-SystemUserConfiguration.
-
--->
-
 ## Configure event subscriptions {#event-subscriptions}
-
-<!-- From https://workfront-tools.hoodoo.digital/WTFAUG/Configure-Event-Subscriptions.630259731.html. 
--->
 
 Event subscriptions are used to notify AEM of events that take place in [!DNL Adobe Workfront]. There are three Workfront for Experience Manager enhanced connector features that need event subscriptions in order to work, these are:
 
@@ -38,9 +27,6 @@ To use these features, enable event subscriptions.
    ![Event subscription](/help/assets/assets/event-subs.png)
 
 ## Configure linked folders {#linked-folders}
-
-<!-- From https://workfront-tools.hoodoo.digital/WTFAUG/Configure-Linked-Folders.618659910.html.
--->
 
 To subscribe to the events, follow these steps:
 
@@ -60,15 +46,46 @@ To subscribe to the events, follow these steps:
 1. Create a linked folder in projects with custom form field: Custom form field and its corresponding value that the project has to have in order to create the linked folder. This configuration will be ignored if left empty. Select `CUSTOM FORMS: Create DAM Linked Folder` for the field and input `Yes` for the value.
 1. Click on Enable automatic creation of linked folders. If you go back to the Event Subscriptions tab, you'll see there is now one create event.
 
+![linked folder configuration](/help/assets/assets/wf-linked-folder-config.png)
 
 ## Metadata schema mapping {#metadata-schema-mapping}
 
 ### Configure folder metadata mapping {#folder-metadata-mapping}
 
+Metadata mapping between Workfront Projects and AEM Folders is defined within AEM Folder Metadata Schemas. Folder Metadata Schemas should be created and configured as usual in AEM. Workfront Tools adds an autocomplete dropdown to the Settings configuration tab of each folder metadata schema form field. This autocomplete drop- down menu will allow you to specify to which Workfront field each AEM folder property should be mapped to.
+
+To configure the mappings, follow these steps:
+
+1. Navigate to [!UICONTROL Tools] > [!UICONTROL Assets] > [!UICONTROL Folder Metadata Schemas].
+1. Select the folder metadata schema form you wish to edit and click Edit.
+1. Select the folder metadata schema form field you wish to edit and select Settings tab on the right panel.
+1. In [!UICONTROL Mapped from Workfront Field] field, select the name of the Workfront field that you wish to map to the selected AEM folder property. Available options are:
+
+   * Project custom form fields
+   * Project Overview fields (ID, Name, Description, Reference Number, Planned Completion Date, Project Owner, Project Sponsor, Portfolio or Program)
+
+![metadata mapping config](/help/assets/assets/wf-metadata-mapping-config2.png)
+
 ### Configure asset metadata mapping {#asset-metadata-mapping}
 
-<!-- From https://workfront-tools.hoodoo.digital/WTFAUG/Metadata-Schema-Mapping.618790933.html.
--->
+Metadata mapping between Adobe Workfront Documents and Assets is defined within AEM Metadata Schemas. Metadata Schemas should be created and configured as usual in AEM. Workfront Tools adds configuration options to the Settings configuration tab of each metadata schema form field. These options will allow you to specify to which Workfront field each AEM property should be mapped to.
+
+To configure the mappings, follow these steps:
+
+1. Navigate to **Tools** > **Assets** > **Metadata Schemas**.
+1. Select the metadata schema form you wish to edit and click **Edit** or create a new metadata schema from scratch.
+1. Select the metadata schema form field you wish to edit and select **Settings** tab on the right panel.
+1. In [!DNL Workfront] Custom Form Field select the name of the [!DNL Workfront] field that you wish to map to the selected AEM property. Available options are:
+
+   * Document custom form fields
+   * Project custom form fields
+   * Issue custom form fields
+   * Task custom form fields
+   * Project Overview fields (ID, Name, Description, or Reference Number)
+
+1. In the case where the Workfront field selected in Workfront Custom Form Field is a Workfront User type-ahead field, it will be necessary to specify which Workfront User field you wish to map. To do so, check Get value from Workfront referenced object field and then specify the name of the Workfront User Custom Form Field from which to retrieve the value to be mapped.
+
+   ![metadata mapping configuration](/help/assets/assets/wf-metadata-mapping-config1.png)
 
 ## Map property {#map-property}
 
