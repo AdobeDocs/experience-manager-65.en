@@ -22,7 +22,7 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.11.0 are:
 
-* SEO enhancements are available via a bundle that supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
+* Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
 
 * You can now render the sort option in Card and Column view (NPR-37199).
 
@@ -34,14 +34,15 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
    ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
 
-<!-- A bundle needs to be updated on SD via NPR-37512. If it is uploaded, then link to it.
--->
+* The following accessibility enhancements are available:
+
+  * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
 ### [!DNL Sites] {#sites-65110}
 
-* Fix 1                              
+* Fix 1
 
 ### [!DNL Assets] {#assets-65110}
 
@@ -58,11 +59,15 @@ The following issues are fixed in [!DNL Assets]:
 * Incorrect PDF rendition is generated for the brochure, flyer, and InDesign templates (NPR-36433).
 
 * Saving an [!DNL Adobe Target] activity with [!DNL Experience Manager] targeting mode fails in case an [!DNL Adobe Analytics] report metric is referenced (NPR-37167).
+
 * [!DNL Adobe Asset Link] is not able to access the digital assets even when the [!DNL Creative Cloud] and [!DNL Experience Management] entitlements are provided by two different organizations.
+
+* Adding a video with custom metadata generated upon upload to a page displays an error about unknown namespace, even if the namespace is registered (CQ-4331471).
+
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
-<!--
+<!-- Check if a11y enh. are to be covered in SP11.
 **Accessibility enhancements**
 
 The following accessibility enhancements are available in [!DNL Dynamic Media Viewers].
@@ -70,10 +75,16 @@ The following accessibility enhancements are available in [!DNL Dynamic Media Vi
 * Fix 1
 
 **Issues fixed**
-
+-->
 
 The following bug fixes are available in [!DNL Dynamic Media].
--->
+
+* Asset is not updated in [!DNL Dynamic Media] when restoring an asset version in [!DNL Experience Manager] (NPR-37421).
+* When a [!DNL Dynamic Media Classic] user starts using the publish setup page, [!DNL Experience Manager] does not fetch and store the Rule Set and Default Image file if those are already set ().
+* After migration to service pack 9, users face an issue with [!DNL Dynamic Media] image auto-upload (CQ-4332800).
+* In [!DNL Experience Manager] setup containing custom launcher with ActivationModel as the workflow, the developer environment crashes due to memory issues. The crash happens when uploading PDF files and not images (CQ-4330512).
+* After explicitly publishing a PDF file from Experience Manager to Dynamic Media Classic, the catalog is not published (CQ-4329886).
+* When a 3D asset is added to a page and the page is published, the 3D asset does not load when the published page is opened (CQ-4329205).
 
 * In a zoomable image, using the shortcut keys ('+', '-') or 'Esc' key traps the screen readers focus (CQ-4290719).
 
