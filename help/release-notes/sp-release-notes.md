@@ -24,6 +24,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * SEO enhancements are available via a bundle that supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
 
+* You can now render the sort option in Card and Column view (NPR-37199).
+
 <!-- A bundle needs to be updated on SD via NPR-37512. If it is uploaded, then link to it.
 -->
 
@@ -37,10 +39,19 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.
 
 The following issues are fixed in [!DNL Assets]:
 
-* Fix 1
+* When a user of the contributor group navigates to the DAM assets repository, an exceptionable POST request is triggered for creating a collection. This POST request fails and reflects an error in the logs (NPR-37171).
+
+* When creating a live copy of the blueprint having a nested folder structure, the modified properties of the source folder are not updated in the live copy folder (NPR-37449).
+
+* When selecting multiple assets and modifying the metadata field values, saving the assets does not retain the values. Also, the metadata changes are not applied (NPR-37341).
+
+* When selecting multiple assets and modifying the properties, the custom properties (dropdowns) values are overridden by the default values (NPR-36437).
+
+* Incorrect PDF rendition is generated for the brochure, flyer, and InDesign templates (NPR-36433).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
+<!--
 **Accessibility enhancements**
 
 The following accessibility enhancements are available in [!DNL Dynamic Media Viewers].
@@ -49,37 +60,118 @@ The following accessibility enhancements are available in [!DNL Dynamic Media Vi
 
 **Issues fixed**
 
-The following bug fixes are available in [!DNL Dynamic Media].
 
-* Fix 1
+The following bug fixes are available in [!DNL Dynamic Media].
+-->
+
+* In a zoomable image, using the shortcut keys ('+', '-') or 'Esc' key traps the screen readers focus (CQ-4290719).
+
+* When a user clicks on the form mode shortcut key ('F'), the screen reader does not map the label of the Embed Size menu button present in the Get Embed code dialog box (CQ-4290929).
+
+* When using keyboard navigation to open the email link popup window, the error suggestions displayed on the user interface for the 'To' and 'From' fields are not descriptive (CQ-4290930).
+
+* When navigating to the email link dailog box, the screen reader does not narrate the label information for the newly added edit fields on using the down arrow and form mode shortcut key ('F') (CQ-4290934).
+
+* When navigating to the email link dailog box, the screen reader does not reflect the visual asterisk (*) symbol for the 'To' and 'From' mandatory fields (CQ-4290935).
+
+* The users are not able to identify the landmark and region using the shortcut keys ('D', 'R') (CQ-4312118).
+
+* Publishing the images from Experience Manager Assets does not publish them in DMSS7 (CQ-4334072).
+
+* When editing a saved spin set, the stored XSS payload is executed and an exceptionable dialog box appears (CQ-4333404).
+
+* In Experience Manager as a Cloud Service, the users are not able to see the OOTB (Out of the box) metadata properties for a .mov asset (CQ-4332546).
+
+* If a shoppable video hyperlink (linked-URL) contains special characters, the target URL gets encoded by the viewer and results as an incorrect product page (CQ-4331639).
+
+* In a video profile page, the toolbar options disappear if the user selects a video profile immediately on page load (CQ-4308521).
+
+* When uploading assets in Experience Manager 6.5.6.0 DMS7, the asset processing fails intermittently with the following error (CQ-4333489): 
+
+  ```TXT
+  com.adobe.granite.workflow.WorkflowException: --Dynamic Media asset upload failed. Please contact your system administrator.--
+  ```
+
+* Accessing the Video Profiles page fails with the following error message (CQ-4332941):
+
+  ```TXT
+  Exception: javax.jcr.nodetype.ConstraintViolationException: Item is protected.
+  ```
+
+* When uploading a PDF from Experience Manager to Scene7, the processing workflow reflects the following error message (CQ-4331145):
+
+  ```TXT
+  Failed to render: Processing was not successful [Status: error]
+  ```
+
+
+
+  
 
 <!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
+--> 
 
 ### Commerce {#commerce-65110}
 
-The following bug fixes are available:
+* When using the Publish Later option, the user interface is not reflecting the status as Publication Pending (CQ-4334229).
 
-* Fix 1
-
--->
+* Unpublishing a folder does not unpublish the products of that folder completely, the products are removed from the publisher but still exists in the author instance (CQ-4332731).
 
 ### Platform {#platform-65110}
 
-The following enhancements are delivered in this service pack:
+* When installing Experience Manager 6.5.11.0 on version 6.5.10.0, com.adobe.granite.ui.coralui3 content package remains in installed state (CQ-4333716).
 
-* Fix 1
+* When a user clicks on the reorder icon for a multi-field option, the scroll bar disappears from the user interface (CQ-4331100).
+
+* After upgrade, when a user opens the workplace login container component, the header of the dialog box are not visible on the user interface (CQ-4316173).
 
 ### Integrations {#integrations-65110}
 
 * Fix 1
 
+### Projects {#projects-65110}
+
+* When upgrading from Experience Manager 6.5.8.0 to version 6.5.9.0, the installation overwrites the properties on /content/dam/projects. It resets the assigned metadata schema and properties of the folder to default (NPR-37124).
+
 ### User Interface {#user-interface-65110}
 
-* Fix 1
+* The folder icon representing the model is incorrect (NPR-37176).
+
+* When a user performs a search or browses using the path field browser, incorrect nodes are displayed (NPR-37175).
+
+* On the publish instance, the incoming requests are blocked for several minutes (NPR-37169).
+
+* In Smart Tags Training report, the HTML injection generates an execptionable notification (NPR-37077).
+
+* When adding a multi-field property in a dialog box for a custom workflow, the dialog box fails to proceed and the user is not able to close the dialog box.
 
 ### Translation projects {#translation-65110}
 
-* Fix 1
+* Auto-promotion of the translation launch fails with an exception (NPR-37528).
+
+* Translation of the Experience Fragment does not update the references for the language copy of the URL (NPR-37522).
+
+* When an Experience Fragment is created in a path that does not match the path of the language root structure, adding that page to a translation project reflects a blank error message (NPR-37425).
+
+* When a page (English) containing Experience Fragments is modified and sent for translation, the already translated Experience Fragments are overwritten by English content (NPR-37283).
+
+* Translation provider filter is not working appropriately (NPR-37186).
+
+* Experience Fragment and Accordion components are not getting translated out-of-the-box for the sample site content (NPR-37170).
+
+* After upgrading to Experience Manager 6.5.9.0, adding a page to the translation project reflects an empty error message (NPR-37105).
+
+* When adding pages inside launch, the translation pages having similar names are not included in the project (NPR-37082).
+
+* When exporting a forms dictionary as a .xliff file using the translator interface, the field order of the exported file is incorrect (NPR-37048).
+
+* When rolling out a parent page from a translation project, the language-specific child pages are deleted (NPR-36998).
+
+* When creating a translation project, cyclic referencing of the pages triggers a launch which results as an error (CQ-4332982).
+
+### Sling {#sling-65110}
+
+* When uploading a new package, the memory alias in the MapEntries map is removed (NPR-37067).
 
 ### Workflow {#workflow-65110}
 
@@ -87,7 +179,14 @@ The following enhancements are delivered in this service pack:
 
 ### [!DNL Communities] {#communities-65110}
 
-* Fix 1
+* The user is not able to add comment to the page, the post operation fails with error code 500 (NPR-37156).
+
+* When deploying the application, a segment not found exception is observed due to the long running session of SyncManager (NPR-37351).
+
+* The user is not able to see the thread replies on the forum discussion post (NPR-37083).
+
+
+
 
 <!--
 Need to verify with Engineering, the status is currently showing as Resolved
