@@ -26,9 +26,11 @@ This article highlights the features included in the latest Service Pack, [key f
 
    ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
 
-* The following accessibility enhancement is available:
+* The following accessibility enhancements are available:
 
   * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
+  * In [!DNL Dynamic Media] [!UICONTROL Viewer Preset Editor], when Shadow Color and Border Color are not present, the inputs are disabled using the disabled property. Keyboard users are not able to focus the input and screen readers do not announce the state for the control as disabled.
+  * In [!DNL Dynamic Media], in the interface to create a new video encoding profile, the [!UICONTROL Smart Crop Ratio] option is labelled for accessibility so that screen readers announce it appropriately.
 
 ### [!DNL Dynamic Media] {#dynamic-media}
 
