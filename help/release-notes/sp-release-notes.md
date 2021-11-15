@@ -26,6 +26,14 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * You can now render the sort option in Card and Column view (NPR-37199).
 
+* You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+
+   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
+
+* You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
+
+   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
+
 <!-- A bundle needs to be updated on SD via NPR-37512. If it is uploaded, then link to it.
 -->
 
@@ -48,6 +56,9 @@ The following issues are fixed in [!DNL Assets]:
 * When selecting multiple assets and modifying the properties, the custom properties (dropdowns) values are overridden by the default values (NPR-36437).
 
 * Incorrect PDF rendition is generated for the brochure, flyer, and InDesign templates (NPR-36433).
+
+* Saving an [!DNL Adobe Target] activity with [!DNL Experience Manager] targeting mode fails in case an [!DNL Adobe Analytics] report metric is referenced (NPR-37167).
+* [!DNL Adobe Asset Link] is not able to access the digital assets even when the [!DNL Creative Cloud] and [!DNL Experience Management] entitlements are provided by two different organizations.
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
