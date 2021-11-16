@@ -100,7 +100,7 @@ This workflow step lets a user map a property to a [!DNL Workfront] custom form 
 * The `workfront-field` can be 
 
   * A custom form field identified by the prefix `DE:`.
-  * An editable field identified by its name. The field names are found in [Workfront API Explorer](https://experience.workfront.com/s/api-explorer).
+  * An editable field identified by its name. The field names are found in [[!DNL Workfront] API explorer](https://experience.workfront.com/s/api-explorer).
 
 * The `aem-mapped-property` can be:
 
@@ -127,7 +127,7 @@ In workflow editor, edit the properties of **[!UICONTROL Workfront - Set Status]
 
 ## Comments synchronization {#comments-sync}
 
-1. In Experience Manager, access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]**, select the configuration, and select **[!UICONTROL Properties]**.
+1. In [!DNL Experience Manager], access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]**, select the configuration, and select **[!UICONTROL Properties]**.
 
    ![comments sync](/help/assets/assets/comments-sync1.png)
 
