@@ -86,7 +86,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.
 * On promoting a launch, the changes in the promoted launch are double rolled out to the other launches. If a user promotes the double rolled out launch, the doubled contents is reflected on the source page (NPR-36893).
 * [!DNL Experience Manager] adds a gray border to some PNG images with transparency if you add the images to a page using the Image Core Component or if you resize using the Foundation Image component (NPR-36879).
 * [!DNL Experience Manager Sites] Admin UI with a high number of templates results in slow navigation (NPR-36870).
-* Upgrade to service pack 9 prevents authoring of a few components. This issue does not allow [!DNL Sites] users to create new pages (NPR-36857).
+* Webpages fail to render when the links are modified by custom servlet filter bundles (NPR-36857).
 * The `ContextHubImpl` method creates a `ResourceResolver` that is not closed. It leads to warning messages about long-running `ResourceResolver` and the service returns unexpected results at times (NPR-36853).
 * On synchronizing a single live copy from blueprint page properties, all other live copies are also synchronized (NPR-36829, NPR-36522).
 * When only XLS MIME type is used, the file upload function does not work as expected (NPR-36785).
