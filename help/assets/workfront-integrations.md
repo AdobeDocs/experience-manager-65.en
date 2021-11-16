@@ -6,11 +6,11 @@ role: Admin
 feature: Asset Management
 ---
 
-# Adobe Experience Manager Assets integration with Adobe Workfront {#assets-integration-overview}
+# [!DNL Adobe Experience Manager Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
 
 [!DNL Adobe Workfront] is a work management application that helps you manage the entire lifecycle of work in one place. The native integration between [!DNL Workfront] and [!DNL Adobe Experience Manager Assets] lets organizations improve content velocity and time-to-market by intrinsically connecting work and digital asset management. Within the context of managing their work in Workfront, users have access to the required documents and the images.
 
-Adobe offers two different connectors to integrate both the solutions. The connectors enable complex enterprise automation, configuration, and extensible workflows between [!DNL Assets] and [!DNL Workfront]. In addition, [!DNL Assets Essentials] is available as an add-on that new [!DNL Workfront] customers can purchase separately. To know more, see [Workfront and Essentials integration](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
+Adobe offers two different connectors to integrate both the solutions. The connectors enable complex enterprise automation, configuration, and extensible workflows between [!DNL Assets] and [!DNL Workfront]. In addition, [!DNL Assets Essentials] is available as an add-on that new [!DNL Workfront] customers can purchase separately. To know more, see [[!DNL Workfront] and [!DNL Assets Essentials] integration](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
 
 [!DNL Workfront for Experience Manage enhanced connector] enables your organization to:
 
@@ -18,7 +18,6 @@ Adobe offers two different connectors to integrate both the solutions. The conne
 * Enrich assets at every step. Collect new data at each stage of the asset lifecycle. From ideation to delivery, your organization can capture key metrics to make more informed business decisions about future asset development.
 * Reference existing assets. Easily find and reuse existing assets in production and add them to new projects as reference items.
 * Sync all your metadata. Enhance your metadata by making it as easy as possible to add. With the connector, metadata is bi-directionally synced between Workfront and AEM Assets
-* Bi-directional comment syncing allows for an all-inclusive communication stream between the two platforms.
 * Leverage [!DNL Experience Manager Assets] digital management capabilities. Access to all your digital assets directly within your favorite [!DNL Creative Cloud] applications. AI-enabled smart tagging and cropping, search tools, dynamic delivery through [!DNL Dynamic Media], and a whole lot more.
 
 >[!IMPORTANT]
@@ -27,14 +26,14 @@ Adobe offers two different connectors to integrate both the solutions. The conne
 >
 >Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that makes this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 
-For platform support and other prerequisites, see [Enhanced Connector landing page](https://www.adobe.com).
+For platform support and other prerequisites, see [[!DNL enhanced connector] landing page](https://www.adobe.com).
 
 <!-- TBD: Add the link above that Courtney shares.
 -->
 
-## Compare various integrations between Assets and Workfront {#feature-parity-matrix}
+## Compare various integrations between [!DNL Assets] and [!DNL Workfront] {#feature-parity-matrix}
 
-The following are the details of the functionalities available through various types of integrations between AEM Assets and Adobe Workfront.
+The following are the details of the functionalities available through various types of integrations between [!DNL Assets] and [!DNL Workfront].
 
 | Feature   |Description  | Workfront and Assets Essentials | Workfront for AEM connector | Adobe Workfront for Experience Manager enhanced connector |
 |----|----|----|------|-----|
