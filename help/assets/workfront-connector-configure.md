@@ -83,7 +83,7 @@ To configure the mappings, follow these steps:
    * Task custom form fields
    * Project Overview fields (ID, Name, Description, or Reference Number)
 
-1. In the case where the Workfront field selected in Workfront Custom Form Field is a Workfront User type-ahead field, it will be necessary to specify which Workfront User field you wish to map. To do so, check Get value from Workfront referenced object field and then specify the name of the Workfront User Custom Form Field from which to retrieve the value to be mapped.
+1. In the case where the [!DNL Workfront] field selected in [!UICONTROL Workfront Custom Form Field] is a Workfront User type-ahead field, it will be necessary to specify which Workfront User field you wish to map. To do so, check Get value from Workfront referenced object field and then specify the name of the [!UICONTROL Workfront User Custom Form Field] from which to retrieve the value to be mapped.
 
    ![metadata mapping configuration](/help/assets/assets/wf-metadata-mapping-config1.png)
 
