@@ -129,7 +129,7 @@ In workflow editor, edit the properties of **[!UICONTROL Workfront - Set Status]
 
 1. In Experience Manager, access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Workfront Tools Configuration]**, select the configuration, and select **[!UICONTROL Properties]**.
 
-  ![comments sync](/help/assets/assets/comments-sync1.png)
+   ![comments sync](/help/assets/assets/comments-sync1.png)
 
 1. Select **[!UICONTROL Event Subscriptions]** tab, click **[!UICONTROL Enable Comment Sync]** on **[!UICONTROL Send Comments made in Workfront to AEM]** option.
 
@@ -137,7 +137,7 @@ To test the synchronization of comments from Workfront to AEM, follow these step
 
 1. Navigate to a linked document in Workfront and add a comment in the Updates tab.
 
-   ![leave comment in Workfront](/help/assets/assets/comments-sync2.png)
+    ![leave comment in Workfront](/help/assets/assets/comments-sync2.png)
 
 1. Navigate to the same linked document in AEM, select the document and open the [!UICONTROL Timeline] option in the left navigation, and select [!UICONTROL Comments]. The left sidebar displays the comments synchronized from [!DNL Workfront].
 
@@ -174,5 +174,3 @@ In workflow editor in Experience Manager, edit the properties of the [!UICONTROL
 1. Select **[!UICONTROL Publish all project assets to Brand Portal upon project completion]**. This option enables automatic publishing of assets to [!DNL Brand Portal] when the status of the Workfront project they belong to is changed to `Complete`.
 
 ![configure auto-publish](/help/assets/assets/wf-auto-publish-config.png)
-
-## Content Fragments {#content-fragments}

@@ -45,7 +45,7 @@ To create a connection with Workfront, follow these steps:
 
 1. Select `workfront-tools` in the left panel and select **[!UICONTROL Create]** option in the upper-right area of the page.
 
-1. In the [!UICONTROL Workfront Connection] dialog, provide the required details of your [!DNL Workfront] deployment, and select [!UICONTROL Connect to Workfront] option. Once successfully connected, the [!DNL Workfront] document custom integration is auto-created in the [!DNL Workfront] environment.
+1. In the **[!UICONTROL Workfront Connection]** dialog, provide the required details of your [!DNL Workfront] deployment, and select **[!UICONTROL Connect to Workfront]** option. Once successfully connected, the [!DNL Workfront] document custom integration is auto-created in the [!DNL Workfront] environment.
 
    ![Connect [!DNL Experience Manager] and [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
@@ -53,5 +53,4 @@ To create a connection with Workfront, follow these steps:
 
 <!--
 Borrow the instructions from internal wiki https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=AdobeDAM&title=Workfront+for+Experience+Manager+enhanced+connector+%7C+Internal+access
-Some more info is available at https://wiki.corp.adobe.com/pages/viewpage.action?pageId=2445063100 
 -->
