@@ -89,9 +89,39 @@ To configure the mappings, follow these steps:
 
 ## Map property {#map-property}
 
+This workflow step lets a user map a property to a [!DNL Workfront] custom form on a project, task, issue, or document. The [!DNL Workfront] artifact this step affects is looked up using a relative path from the payload. The properties to be mapped are controlled from within the steps dialog configuration.
+
+**Type**: This field lets you select the Workfront object type that the properties should be mapped to.
+
+**ID Property**: This field lets you specify the path to the ID of the Workfront object that the properties should be mapped to. The path specified in this field should be relative to the workflow payload.
+
+**Property Assignments**: This multifield lets you specify the mappings between AEM properties and Workfront fields. Each item in the multi-field will specify one mapping. Each mapping should have the format `<workfront-field>=<aem-mapped-property>`. 
+
+* The `workfront-field` can be 
+
+  * A custom form field identified by the prefix `DE:`.
+  * An editable field identified by its name. The field names are found in [Workfront API Explorer](https://experience.workfront.com/s/api-explorer).
+
+* The `aem-mapped-property` can be:
+
+  * A literal value. These should be surrounded by quotation marks.
+  * An AEM property. This reference should be relative to the workflow payload.
+  * A named value. These should be surrounded by brackets.
+  * A concatenation of the above 3 items. Specify it using `{+}`.
+  * An alteration of the above 3 items by surrounding the value with `{replace(<value>,”old-char”,”new-char”)}`.
+
+* Some example are:
+
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL=”https://my-aem-author/assets.html”{+}{path}`
+
+![Configuration to map property](/help/assets/assets/wf-map-property-config.png)
+
 ## Set status {#set-status}
 
-In workflow editor, edit the properties of [!UICONTROL Workfront - Set Status] in the [!UICONTROL Arguments] tab.
+In workflow editor, edit the properties of **[!UICONTROL Workfront - Set Status]** in the **[!UICONTROL Arguments]** tab.
 
 ![Edit workflow to set status](/help/assets/assets/wf-set-status.png)
 
