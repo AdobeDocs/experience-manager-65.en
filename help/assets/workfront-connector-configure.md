@@ -30,9 +30,9 @@ To use these features, enable event subscriptions.
 
 To subscribe to the events, follow these steps:
 
-1. Go to the Event Subscriptions tab in the cloud services.
-1. Select the custom integration you created in Workfront.
-1. Click Enable Workfront Event Subscriptions.
+1. Navigate to the **[!UICONTROL Event Subscriptions]** tab in the cloud services.
+1. Select the custom integration created in [!DNL Workfront].
+1. Click **[!UICONTROL Enable Workfront Event Subscriptions]**.
 
 ### Linked folder structure configuration {#linked-folder-structure}
 
@@ -56,7 +56,7 @@ Metadata mapping between Workfront Projects and AEM Folders is defined within AE
 
 To configure the mappings, follow these steps:
 
-1. Navigate to [!UICONTROL Tools] > [!UICONTROL Assets] > [!UICONTROL Folder Metadata Schemas].
+1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Select the folder metadata schema form you wish to edit and click Edit.
 1. Select the folder metadata schema form field you wish to edit and select Settings tab on the right panel.
 1. In [!UICONTROL Mapped from Workfront Field] field, select the name of the Workfront field that you wish to map to the selected AEM folder property. Available options are:
