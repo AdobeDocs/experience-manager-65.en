@@ -66,7 +66,10 @@ The following issues are fixed in [!DNL Assets]:
 
 * Saving an [!DNL Adobe Target] activity with [!DNL Experience Manager] targeting mode fails in case an [!DNL Adobe Analytics] report metric is referenced (NPR-37167).
 
-* [!DNL Adobe Asset Link] is not able to access the digital assets even when the [!DNL Creative Cloud] and [!DNL Experience Management] entitlements are provided by two different organizations.
+* When a user with email using mixed case domain name checks out an asset, the asset is not visible in the user's checked out assets in [!DNL Asset Link] (CQ-4329266).
+
+<!-- Add 
+* [!DNL Adobe Asset Link] is not able to access the digital assets even when the [!DNL Creative Cloud] and [!DNL Experience Management] entitlements are provided by two different organizations. -->
 
 * Adding a video with custom metadata generated upon upload to a page displays an error about unknown namespace, even if the namespace is registered (CQ-4331471).
 
