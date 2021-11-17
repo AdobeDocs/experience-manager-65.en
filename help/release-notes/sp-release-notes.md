@@ -168,7 +168,7 @@ Following accessibility enhancements are available in [!DNL Adobe Experience Man
 
 The following issues are fixed in [!DNL Assets]:
 
-* When a user of the contributor group navigates to the DAM assets repository, an exceptionable POST request is triggered for creating a collection. This POST request fails and reflects an error in the logs (NPR-37171).
+* When a user of the contributor group navigates to the DAM assets repository, an exceptionable `POST` request is triggered for creating a collection. This `POST` request fails and reflects an error in the logs (NPR-37171).
 
 * When creating a live copy of the blueprint having a nested folder structure, the modified properties of the source folder are not updated in the live copy folder (NPR-37449).
 
@@ -203,7 +203,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * In a zoomable image, using the shortcut keys ('+', '-') or 'Esc' key traps the screen readers focus (CQ-4290719).
 
-* When a user clicks on the form mode shortcut key ('F'), the screen reader does not map the label of the Embed Size menu button present in the Get Embed code dialog box (CQ-4290929).
+* When a user clicks on the form mode shortcut key ('F'), the screen reader does not map the label of the [!UICONTROL Embed Size] menu button present in the [!UICONTROL Get Embed] code dialog box (CQ-4290929).
 
 * When using keyboard navigation to open the email link popup window, the error suggestions displayed on the user interface for the 'To' and 'From' fields are not descriptive (CQ-4290930).
 
@@ -213,17 +213,17 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * The users are not able to identify the landmark and region using the shortcut keys ('D', 'R') (CQ-4312118).
 
-* Publishing the images from Experience Manager Assets does not publish them in DMSS7 (CQ-4334072).
+* Publishing the images from [!DNL Experience Manager Assets] does not publish them in [!DNL DMSS7] (CQ-4334072).
 
 * When editing a saved spin set, the stored XSS payload is executed and an exceptionable dialog box appears (CQ-4333404).
 
-* In Experience Manager as a Cloud Service, the users are not able to see the OOTB (Out of the box) metadata properties for a .mov asset (CQ-4332546).
+* In [!DNL Experience Manager] as a [!DNL Cloud Service], the users are not able to see the OOTB (Out of the box) metadata properties for a .mov asset (CQ-4332546).
 
 * If a shoppable video hyperlink (linked-URL) contains special characters, the target URL gets encoded by the viewer and results as an incorrect product page (CQ-4331639).
 
 * In a video profile page, the toolbar options disappear if the user selects a video profile immediately on page load (CQ-4308521).
 
-* When uploading assets in Experience Manager 6.5.6.0 DMS7, the asset processing fails intermittently with the following error (CQ-4333489): 
+* When uploading assets in [!DNL Experience Manager] version 6.5.6.0 [!DNL DMS7], the asset processing fails intermittently with the following error (CQ-4333489): 
 
   ```TXT
   com.adobe.granite.workflow.WorkflowException: --Dynamic Media asset upload failed. Please contact your system administrator.--
@@ -235,7 +235,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
   Exception: javax.jcr.nodetype.ConstraintViolationException: Item is protected.
   ```
 
-* When uploading a PDF from Experience Manager to Scene7, the processing workflow reflects the following error message (CQ-4331145):
+* When uploading a PDF from [!DNL Experience Manager] to [!DNL Scene7], the processing workflow reflects the following error message (CQ-4331145):
 
   ```TXT
   Failed to render: Processing was not successful [Status: error]
@@ -246,13 +246,13 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 ### Commerce {#commerce-65110}
 
-* When using the Publish Later option, the user interface is not reflecting the status as Publication Pending (CQ-4334229).
+* When using the [!UICONTROL Publish Later] option, the user interface is not reflecting the status as [!UICONTROL Publication Pending] (CQ-4334229).
 
 * Unpublishing a folder does not unpublish the products of that folder completely, the products are removed from the publisher but still exists in the author instance (CQ-4332731).
 
 ### Platform {#platform-65110}
 
-* When installing Experience Manager 6.5.11.0 on version 6.5.10.0, com.adobe.granite.ui.coralui3 content package remains in installed state (CQ-4333716).
+* When installing [!DNL Experience Manager] 6.5.11.0 on version 6.5.10.0, `com.adobe.granite.ui.coralui3` content package remains in installed state (CQ-4333716).
 
 * When a user clicks on the reorder icon for a multi-field option, the scroll bar disappears from the user interface (CQ-4331100).
 
@@ -264,7 +264,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 ### Projects {#projects-65110}
 
-* When upgrading from Experience Manager 6.5.8.0 to version 6.5.9.0, the installation overwrites the properties on /content/dam/projects. It resets the assigned metadata schema and properties of the folder to default (NPR-37124).
+* When upgrading from [!DNL Experience Manager] 6.5.8.0 to version 6.5.9.0, the installation overwrites the properties on `/content/dam/projects`. It resets the assigned metadata schema and properties of the folder to default (NPR-37124).
 
 ### User Interface {#user-interface-65110}
 
@@ -292,7 +292,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * Experience Fragment and Accordion components are not getting translated out-of-the-box for the sample site content (NPR-37170).
 
-* After upgrading to Experience Manager 6.5.9.0, adding a page to the translation project reflects an empty error message (NPR-37105).
+* After upgrading to [!DNL Experience Manager] 6.5.9.0, adding a page to the translation project reflects an empty error message (NPR-37105).
 
 * When adding pages inside launch, the translation pages having similar names are not included in the project (NPR-37082).
 
@@ -312,7 +312,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 ### [!DNL Communities] {#communities-65110}
 
-* The user is not able to add comment to the page, the post operation fails with error code 500 (NPR-37156).
+* The user is not able to add comment to the page, the `Post` operation fails with error code 500 (NPR-37156).
 
 * When deploying the application, a segment not found exception is observed due to the long running session of SyncManager (NPR-37351).
 
