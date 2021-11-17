@@ -64,27 +64,15 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Added multifield support for multiline text data type (SITES-802).
 
+* Added support for GraphQL APIs (SITES-15).
+
+* Enhancement to make users aware of the asynchronous job currently running in the background to prevent them from triggering multiple asynchronous operations on same path (NPR-37611).
+
 * The following accessibility enhancements are available:
 
   * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
   * In [!DNL Dynamic Media] [!UICONTROL Viewer Preset Editor], when Shadow Color and Border Color are not present, the inputs are disabled using the disabled property. Keyboard users are not able to focus the input and screen readers do not announce the state for the control as disabled.
   * In [!DNL Dynamic Media], in the interface to create a new video encoding profile, the [!UICONTROL Smart Crop Ratio] option is labelled for accessibility so that screen readers announce it appropriately.
-
-  * Screen readers now announce the role of the [!UICONTROL Site References] and [!UICONTROL Language Copies] options (SITES-1791).
-
-  * The order of browser mode focus now moves sequentially on various option on User interface (SITES-1791).
-
-  * Screen readers now narrates whether the selected tree item is in selected state and also announces to the user that the action region is displayed (SITES-2109).
-
-  * Screen readers now announce when there is a loading indicator on selecting filter or searching a page (SITES-1790).
-
-  * Screen readers now narrate when the [!UICONTROL Filter] option does not return any search result in the left rail (SITES-1599).
-
-  * When navigating in browse mode, screen readers narrate the role of the content page and selected state of a page when enter key is pressed (SITES-1579).
-
-  * Screen readers now narrate when [!UICONTROL Note Add] option is selected (SITES-1573).
-
-  * Form fields now have visual labels apart from the placeholders, so that screen reader users are guided appropriately when entering the field values (SITES-1258).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
@@ -92,9 +80,9 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.
 
 The following issues are fixed in [!DNL Sites]:
 
-*	Template to create a content fragment is not visible when creating a content fragment (SITES-3365).
+* Template to create a content fragment is not visible when creating a content fragment (SITES-3365).
 
-*	Regular expressions and [!UICONTROL Unique] field options are not working in [!UICONTROL appsUrl] model in the content fragment editor (SITES-1823).
+* Regular expressions and [!UICONTROL Unique] field options are not working in [!UICONTROL appsUrl] model in the content fragment editor (SITES-1823).
 
 * Configurations are added in `/apps/system` node rather that `/libs` when installing previous service pack (SITES-3203).
 
@@ -129,6 +117,52 @@ The following issues are fixed in [!DNL Sites]:
 * Global search in fragment picker path is not working (SITES-1973).
 
 * References are updating when moving a content fragment (SITES-1897).
+
+* Option to create page is missing in card view and column view (NPR-37549).
+
+*	When re-ordering components on a Launch page, then promoting the Launch does not preserve the re-ordering of components (NPR-37539).
+
+* The option to select all the items in a list is not working in rollout page (NPR-37443).
+
+* Scheduled activation of pages logs error (NPR-37417).
+
+* Move operation on folders in the Sites console is failing with an error message "Failed to retrieve launches information for selected item”(NPR-37340).
+
+* When generating a thumbnail for blueprint and rolling out to live copies then inheritance for tabs after thumbnail in live copies is broken" (NPR-37190).
+
+* The filter predicate to display Live Copy does not display all the live copies (NPR-37126).
+
+* Replication event does not return the list of all the parent and children pages that were marked for deletion when the replication event handler is called on the author (NPR-37123).
+
+* When saving a multi-valued property using bulk editor, then the comma separated string is stored as the first element of the array (NPR-37089).
+
+* The component layout resizing does not work in mobile layout (NPR-37086).
+
+* A new node is incorrectly created at the live copy level on saving page properties after adding rollout configurations (NPR-37084).
+
+* User cannot create live copies or roll out using page properties for new master pages (SITES-3442).
+
+* Tags display tag names instead of title and close option does not remove the tags completely due to tags property working incorrectly when inheritance is cancelled at property level (NPR-36831).
+
+* Option to deselect all items is not working and header overlaps with first row in table, of the page which displays a list of live copies (NPR-37070).
+
+Following accessibility enhancements are available in [!DNL Adobe Experience Manager Sites].
+
+* Screen readers now announce the role of the [!UICONTROL Site References] and [!UICONTROL Language Copies] options (SITES-1791).
+
+* The order of browser mode focus now moves sequentially on various option on User interface (SITES-1791).
+
+* Screen readers now narrates whether the selected tree item is in selected state and also announces to the user that the action region is displayed (SITES-2109).
+
+* Screen readers now announce when there is a loading indicator on selecting filter or searching a page (SITES-1790).
+
+* Screen readers now narrate when the [!UICONTROL Filter] option does not return any search result in the left rail (SITES-1599).
+
+* When navigating in browse mode, screen readers narrate the role of the content page and selected state of a page when enter key is pressed (SITES-1579).
+
+* Screen readers now narrate when [!UICONTROL Note Add] option is selected (SITES-1573).
+
+* Form fields now have visual labels apart from the placeholders, so that screen reader users are guided appropriately when entering the field values (SITES-1258).
 
 ### [!DNL Assets] {#assets-65110}
 
