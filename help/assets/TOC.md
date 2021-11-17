@@ -34,10 +34,10 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Set up Dynamic Media](administering-dynamic-media.md)
   + [Work with Dynamic Media](dynamic-media.md)
   + [Configure Dynamic Media - Scene7 mode](config-dms7.md)
-    + [Configure Dynamic Media General Settings](dm-general-settings.md)
-    + [Configure Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
+    + [Optional Configurations]{#optional-configs}
+      + [Configure Dynamic Media General Settings](dm-general-settings.md)
+      + [Configure Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
   + [Configure Dynamic Media - Hybrid mode](config-dynamic.md)
-  + [Option A](option-a-config-dms7.md)
   + [Option B](option-b-config-dms7.md)
   + [Troubleshoot Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
   + [Accessibility in Dynamic Media](accessibility-dm.md)

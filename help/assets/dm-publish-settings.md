@@ -7,6 +7,7 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
+mini-toc-levels: 4
 hide: yes
 hidefromtoc: yes
 exl-id: 
