@@ -110,7 +110,7 @@ The following issues are fixed in [!DNL Sites]:
 
 * When creating two content fragments with the same title using the inline [!UICONTROL New Content Fragment] action, the wizard returns the same fragment path (SITES-1978).
 
-*	Auto-complete is not working in [!UICONTROL Content Fragment Model] search facet (SITES-1976).
+* Auto-complete is not working in [!UICONTROL Content Fragment Model] search facet (SITES-1976).
 
 * If a content fragment contains a huge hierarchy of nested fragments the [!UICONTROL Content Fragment Editor] becomes irresponsive when loading side panel (SITES-1974).
 
@@ -120,7 +120,7 @@ The following issues are fixed in [!DNL Sites]:
 
 * Option to create page is missing in card view and column view (NPR-37549).
 
-*	When re-ordering components on a Launch page, then promoting the Launch does not preserve the re-ordering of components (NPR-37539).
+* When re-ordering components on a Launch page, then promoting the Launch does not preserve the re-ordering of components (NPR-37539).
 
 * The option to select all the items in a list is not working in rollout page (NPR-37443).
 
@@ -251,12 +251,8 @@ The following bug fixes are available in [!DNL Dynamic Media].
   Failed to render: Processing was not successful [Status: error]
   ```
 
-
-
-  
-
 <!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
---> 
+-->
 
 ### Commerce {#commerce-65110}
 
