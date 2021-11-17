@@ -8,16 +8,11 @@ feature: Asset Management
 
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-[!DNL Adobe Experience Manager] administrators install the enhanced connector. Before you install, review the platform support and other prerequisites at [Enhanced Connector landing page](https://www.adobe.com).
-
-<!-- TBD: 
-Add the landing page link shared by Courtney above.
-Add the SD link below.
--->
+[!DNL Adobe Experience Manager] administrators install the enhanced connector. Before you install, review the platform support and other [prerequisites for the enhanced connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 To install the connector, follow these steps:
 
-1. Download the enhanced connector from [Software Distribution link](https://www.adobe.com).
+1. Download the enhanced connector from [Software Distribution link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
 1. [Configure the firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
 

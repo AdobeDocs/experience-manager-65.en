@@ -20,16 +20,13 @@ Adobe offers two different connectors to integrate both the solutions. The conne
 * Sync all your metadata. Enhance your metadata by making it as easy as possible to add. With the connector, metadata is bi-directionally synced between Workfront and AEM Assets
 * Leverage [!DNL Experience Manager Assets] digital management capabilities. Access to all your digital assets directly within your favorite [!DNL Creative Cloud] applications. AI-enabled smart tagging and cropping, search tools, dynamic delivery through [!DNL Dynamic Media], and a whole lot more.
 
-For platform support and other prerequisites, see [[!DNL enhanced connector] landing page](https://www.adobe.com).
+See the platform support and other [prerequisites for the enhanced connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
 >Adobe requires deployment and configuration of the [!DNL Adobe Workfront] for [!DNL Experience Manager] enhanced connector only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
 >
 >Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that makes this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
-
-<!-- TBD: Add the link above that Courtney shares.
--->
 
 ## Compare various integrations between [!DNL Assets] and [!DNL Workfront] {#feature-parity-matrix}
 

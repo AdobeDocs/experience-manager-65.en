@@ -8,7 +8,7 @@ feature: Asset Management
 
 # Configure [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-Adobe Experience Manager administrators configure the enhanced connector after it is installed. For instructions to install, see [Install enhanced connector](/help/assets/workfront-integrations.md).
+Adobe Experience Manager administrators configure the enhanced connector after installing it. For instructions to install, see [Install enhanced connector](/help/assets/workfront-integrations.md).
 
 ## Configure event subscriptions {#event-subscriptions}
 
@@ -133,6 +133,8 @@ In workflow editor, edit the properties of **[!UICONTROL Workfront - Set Status]
 
 1. Select **[!UICONTROL Event Subscriptions]** tab, click **[!UICONTROL Enable Comment Sync]** on **[!UICONTROL Send Comments made in Workfront to AEM]** option.
 
+   ![Synchronization is enabled](/help/assets/assets/wf-comment-sync-enabled.png)
+
 To test the synchronization of comments from Workfront to AEM, follow these steps:
 
 1. Navigate to a linked document in Workfront and add a comment in the Updates tab.
@@ -174,3 +176,9 @@ In workflow editor in Experience Manager, edit the properties of the [!UICONTROL
 1. Select **[!UICONTROL Publish all project assets to Brand Portal upon project completion]**. This option enables automatic publishing of assets to [!DNL Brand Portal] when the status of the Workfront project they belong to is changed to `Complete`.
 
 ![configure auto-publish](/help/assets/assets/wf-auto-publish-config.png)
+
+## Workfront document custom form updates {#subscribe-workfront-doc-custom-form-updates}
+
+To subscribe to the changes in [!DNL Workfront] document custom forms, select the relevant option in the **[!UICONTROL Advanced]** tab. When you subscribe to these updates, it updates your mapped [!DNL Experience Manager] metadata fields when the corresponding field in [!DNL Workfront] document custom form is changed.
+
+![Workfront document custom form updates configuration in [!DNL Experience Manager]](/help/assets/assets/wf-custom-form-update.png)
