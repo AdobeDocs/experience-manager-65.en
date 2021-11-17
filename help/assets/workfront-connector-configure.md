@@ -1,18 +1,23 @@
 ---
-title: Configure Workfront for Experience Manager enhanced connector
-description: Configure Workfront for Experience Manager enhanced connector
-contentOwner: AG
+title: Configure [!DNL Workfront for Experience Manager enhanced connector]
+description: Configure [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Asset Management
+feature: Integrations
 ---
 
 # Configure [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-Adobe Experience Manager administrators configure the enhanced connector after installing it. For instructions to install, see [Install enhanced connector](/help/assets/workfront-integrations.md).
+A user with administrator access in [!DNL Adobe Experience Manager] configures the enhanced connector after installing it. For instructions to install, see [Install the connector](/help/assets/workfront-integrations.md).
+
+>[!IMPORTANT]
+>
+>Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
+>
+>Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that makes this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 
 ## Configure event subscriptions {#event-subscriptions}
 
-Event subscriptions are used to notify AEM of events that take place in [!DNL Adobe Workfront]. There are three Workfront for Experience Manager enhanced connector features that need event subscriptions in order to work, these are:
+Event subscriptions are used to notify AEM of events that take place in [!DNL Adobe Workfront]. There are three [!DNL Workfront for Experience Manager enhanced connector] features that need event subscriptions in order to work, these are:
 
 * Automatic creation of project linked folders.
 * Synchronization of changes in Workfront document custom form values to AEM asset metadata.

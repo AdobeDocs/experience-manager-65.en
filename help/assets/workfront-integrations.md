@@ -1,9 +1,8 @@
 ---
-title: Experience Manager Assets integration with other solutions
-description: Introduction to integration between Assets and other solutions.
-contentOwner: AG
-role: Admin
-feature: Asset Management
+title: [!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
+description: Introduction to integration between [!DNL Assets] and [!DNL Workfront]
+role: Admin,Leader,Architect
+feature: Integrations
 ---
 
 # [!DNL Adobe Experience Manager Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
@@ -24,15 +23,15 @@ See the platform support and other [prerequisites for the enhanced connector](ht
 
 >[!IMPORTANT]
 >
->Adobe requires deployment and configuration of the [!DNL Adobe Workfront] for [!DNL Experience Manager] enhanced connector only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
+>Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
 >
 >Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that makes this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 
-## Compare various integrations between [!DNL Assets] and [!DNL Workfront] {#feature-parity-matrix}
+## Compare different integrations between [!DNL Assets] and [!DNL Workfront] {#feature-parity-matrix}
 
 The following are the details of the functionalities available through various types of integrations between [!DNL Assets] and [!DNL Workfront].
 
-| Feature   |Description  | Workfront and Assets Essentials | Workfront for AEM connector | Adobe Workfront for Experience Manager enhanced connector |
+| Feature   |Description  | [!DNL Workfront] and [!DNL Assets Essentials] | [!DNL Workfront] for [!DNL Experience Manager] connector | [!DNL Workfront for Experience Manager enhanced connector] |
 |----|----|----|------|-----|
 | Deployment methods   | Appropriate for which [!DNL Assets] offering. | Assets Essentials| Cloud Service, Adobe Managed Services, On-premise | Cloud Service, Adobe Managed Services, On-premise|
 | Send digital files from [!DNL Workfront] to [!DNL Assets]| Latest version of a WF document can be uploaded to AEM Assets which will be linked as a new version of the document.  | &#10003; | &#10003;   | &#10003;  |
@@ -41,14 +40,12 @@ The following are the details of the functionalities available through various t
 | Assets added to linked folders are automatically sent to AEM| If document is added to a linked folder, the associated asset is automatically uploaded to AEM Assets as a new asset. | &#10003; | &#10003;   | &#10003;  |
 | Download Linked AEM Assets from within Workfront   | When an asset is linked in Workfront, the user can download the bytes of the asset. | &#10003; | &#10003;   | &#10003;  |
 | Search for AEM Assets from within Workfront| The AEM Assets selector in Workfront allows for full-text searches for assets. | &#10003; | &#10003;   | &#10003;  |
-| Search for AEM Folders from within Workfront | The AEM Assets selector in Workfront allows for full-text searches for folders.| No  | No    | &#10003;  |
 | View and Navigate AEM Folder Hierarchy from within Workfront   | The AEM Assets selector in Workfront allows for browsing of the AEM Assets hierarchy limited by the   user’s associated access controls and permissions set in AEM.  | &#10003; | &#10003;   | &#10003;  |
-| Track Asset Versions in AEM Timelines| Maintain document version history between Workfront and AEM. | &#10003; | &#10003;   | &#10003;  |
 | Unlink Assets from AEM Assets in Workfront | An existing linked asset from AEM can be unlinked from the associated Workfront document. This does not delete the original asset inside of AEM.| &#10003; | &#10003;   | &#10003;  |
 | Add Newly Versioned Asset to AEM Assets from Workfront  | When a newly added version is added on a document in Workfront, a user can send the new version to AEM to replace the existing version.   | &#10003; | &#10003;   | &#10003;  |
-| Assets Linked in Workfront when Clicked Direct User to AEM| Users are directed to AEM to preview a linked asset from within Workfront.| &#10003; | &#10003;   | &#10003;  |
+| Assets Linked in Workfront when Clicked Direct User to AEM| Users are directed to AEM to preview a linked asset from within Workfront.| &#10003; | &#10003;   | Custom |
 | Automatically Create Linked AEM Folders in Workfront    | Automatically create linked AEM folders in Workfront using object statuses. Automatically, organize AEM folders based on Workfront Portfolios, Programs, and Projects.   | No  | No    | &#10003;  |
-| Comment Syncing| Automatically sync comments for assets between Workfront and AEM Assets| No  | &#10003;   | &#10003;  |
+| Comment Syncing| Automatically sync comments for assets from [!DNL Workfront] to [!DNL Assets]| No  | &#10003;   | &#10003;  |
 | Map Workfront Asset Metadata to AEM Assets | Workfront object and custom form properties may be mapped to AEM asset metadata properties. Values will be pushed on initial upload/link.    | &#10003; | &#10003;   | &#10003;  |
 | Automatically Create Document Custom Forms in Workfront | Attach custom forms to Workfront documents, tasks, and issues using AEM workflows.| No  | Manually add the custom form, then automated syncing works | &#10003;  |
 | Bi-directional Automatic Updating of Metadata between AEM Assets and Workfront   | Automatically update metadata between AEM Assets and Workfront.| No  | &#10003;   | &#10003;  |

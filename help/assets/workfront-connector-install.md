@@ -1,18 +1,23 @@
 ---
-title: Install Workfront for Experience Manager enhanced connector
-description: Install Workfront for Experience Manager enhanced connector
-contentOwner: AG
+title: Install [!DNL Workfront for Experience Manager enhanced connector]
+description: Install [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Asset Management
+feature: Integrations
 ---
 
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-[!DNL Adobe Experience Manager] administrators install the enhanced connector. Before you install, review the platform support and other [prerequisites for the enhanced connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+A user with administrator access in [!DNL Adobe Experience Manager] installs the enhanced connector. Before you install, review the platform support and other [prerequisites for the connector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
+
+>[!IMPORTANT]
+>
+>Adobe requires deployment and configuration of the [!DNL Adobe Workfront for Experience Manager enhanced connector] only via certified partners or [!DNL Adobe Professional Services]. If deployed and configured without a certified partner or [!DNL Adobe Professional Services], it is not supported by Adobe.
+>
+>Adobe may release updates to [!DNL Adobe Workfront] and [!DNL Adobe Experience Manager] that makes this connector redundant; if this occurs, customers may be required to transition from the use of this connector.
 
 To install the connector, follow these steps:
 
-1. Download the enhanced connector from [Software Distribution link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. Download the connector from [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
 1. [Configure the firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
 
@@ -30,7 +35,7 @@ To install the connector, follow these steps:
 
 1. Create `wf-workfront-users` in [!DNL Experience Manager] User Group and assign the permission `jcr:all` to `/content/dam`.
 
-A system user `workfront-tools` is automatically created and the required permissions are managed automatically. All users from [!DNL Workfront] who use the enhanced connector are automatically added as a part of this group.
+A system user `workfront-tools` is automatically created and the required permissions are managed automatically. All users from [!DNL Workfront] who use the connector are automatically added as a part of this group.
 
 ## Configure the connection between [!DNL Experience Manager] and [!DNL Workfront] {#configure-connection}
 
@@ -45,7 +50,3 @@ To create a connection with Workfront, follow these steps:
    ![Connect [!DNL Experience Manager] and [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. To verify the connection, access it in [!DNL Workfront] and verify that the API key is the same and that the connection is **[!UICONTROL Enabled]**. To do so, select **[!UICONTROL Setup]** > **[!UICONTROL Documents]** > **[!UICONTROL Custom Integrations]** in [!DNL Workfront].
-
-<!--
-Borrow the instructions from internal wiki https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=AdobeDAM&title=Workfront+for+Experience+Manager+enhanced+connector+%7C+Internal+access
--->

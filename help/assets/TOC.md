@@ -167,5 +167,5 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Video renditions](video-renditions.md)
 + Integration with other solutions {#integrations}
   + [Integrations with [!DNL Adobe Workfront]](workfront-integrations.md)
-  + [Install [!DNL enhanced Connector for Workfront]](workfront-connector-install.md)
-  + [Configure [!DNL enhanced Connector for Workfront]](workfront-connector-configure.md)
+  + [Install [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-install.md)
+  + [Configure [!DNL enhanced connector for [!DNL Workfront]]](workfront-connector-configure.md)
