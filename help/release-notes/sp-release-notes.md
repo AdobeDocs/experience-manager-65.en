@@ -68,12 +68,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Enhancement to make users aware of the asynchronous job currently running in the background to prevent them from triggering multiple asynchronous operations on same path (NPR-37611).
 
-* The following accessibility enhancements are available:
-
-  * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
-  * In [!DNL Dynamic Media] [!UICONTROL Viewer Preset Editor], when Shadow Color and Border Color are not present, the inputs are disabled using the disabled property. Keyboard users are not able to focus the input and screen readers do not announce the state for the control as disabled.
-  * In [!DNL Dynamic Media], in the interface to create a new video encoding profile, the [!UICONTROL Smart Crop Ratio] option is labelled for accessibility so that screen readers announce it appropriately.
-
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
 ### [!DNL Sites] {#sites-65110}
@@ -165,6 +159,12 @@ Following accessibility enhancements are available in [!DNL Adobe Experience Man
 * Form fields now have visual labels apart from the placeholders, so that screen reader users are guided appropriately when entering the field values (SITES-1258).
 
 ### [!DNL Assets] {#assets-65110}
+
+* The following accessibility enhancements are available:
+
+  * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
+  * In [!DNL Dynamic Media] [!UICONTROL Viewer Preset Editor], when Shadow Color and Border Color are not present, the inputs are disabled using the disabled property. Keyboard users are not able to focus the input and screen readers do not announce the state for the control as disabled.
+  * In [!DNL Dynamic Media], in the interface to create a new video encoding profile, the [!UICONTROL Smart Crop Ratio] option is labelled for accessibility so that screen readers announce it appropriately.
 
 The following issues are fixed in [!DNL Assets]:
 
