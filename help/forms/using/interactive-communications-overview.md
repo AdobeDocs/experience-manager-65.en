@@ -118,6 +118,12 @@ Interactive Communication is the default and recommended approach to create cust
    <td>Supported</td>
    <td>Supported</td>
   </tr>
+   <tr>
+   <td>Submissions</td>
+   <td>Supported</td>
+   <td>Supported</td>
+  </tr>
+  <tr>
   <tr>
    <td>Auditing</td>
    <td>Not Supported</td>
@@ -128,12 +134,6 @@ Interactive Communication is the default and recommended approach to create cust
    <td>Not Supported</td>
    <td>Supported</td>
   </tr>
-   <tr>
-   <td>Drafts Manage instances</td>
-   <td>Not Supported</td>
-   <td>Supported</td>
-  </tr>
-  <tr>
    <td>Batch processing</td>
    <td>Supported </td>
    <td>Supported</td>

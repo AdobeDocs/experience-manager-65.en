@@ -20,17 +20,17 @@ For example, if you are looking for an image, you can choose whether you want a 
 
 The search facets that appear in the Filters panel are defined in the underlying search form using predicates. To display more or different facets, you add predicates to the default form or use a custom form that includes facets of your choice.
 
-For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
+For full-text searches, add the **[!UICONTROL Fulltext]** predicate to the form. Use the Property predicate to search for assets that match a single property you specify. Use the Options predicate to search assets that match one or more values for a particular property. Add the Date Range predicate to search assets created within a specified date range.
 
 1. Click the [!DNL Experience Manager] logo, and then go to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**.
-1. From the Search Forms page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
+1. From the [!UICONTROL Search Forms] page, select **[!UICONTROL Assets Admin Search Rail]**, then click **[!UICONTROL Edit]** ![edit icon](assets/do-not-localize/aemassets_edit.png).
 
    >[!NOTE]
    >
-   >To use the folder search functionality from the pre-configured **Assets Admin Search Rail** from an earlier version, perform these steps:
+   >To use the folder search functionality from the pre-configured [!DNL Assets] Admin Search Rail from an earlier version, perform these steps:
    >
    >1. Navigate to `/conf/global/settings/dam/search/facets/assets/jcr:content/items` in CRXDE.
-   >1. Delete the **type** node.
+   >1. Delete the `type` node.
    >1. From the path `/libs/settings/dam/search/facets/assets/jcr:content/items`, copy the nodes `asset`, `directory`, `typeor`, `excludepaths`, and `searchtype` to the path mentioned in step 1.
    >1. Save the changes.
 
@@ -42,7 +42,7 @@ For full-text searches, add the [!UICONTROL Fulltext] predicate to the form. Use
 
 1. In the [!UICONTROL Settings] tab, enter a field label, placeholder text, and description for the predicate. Specify a valid name for the metadata property you want to associate with the predicate. The header label in the [!UICONTROL Settings] tab identifies the type of the selected predicate.
 
-1. In the **[!UICONTROL Property Name]** field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. For example, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`.
+1. In the [!UICONTROL Property Name] field, specify a valid name for the metadata property you want to associate with the predicate. It is the name based on which the search is performed. For example, enter `jcr:content/metadata/dc:description` or `./jcr:content/metadata/dc:description`.
 
    You can also select an existing node from the selection dialog.
 
