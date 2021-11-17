@@ -191,16 +191,6 @@ The following issues are fixed in [!DNL Assets]:
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
-<!-- Check if a11y enh. are to be covered in SP11.
-**Accessibility enhancements**
-
-The following accessibility enhancements are available in [!DNL Dynamic Media Viewers].
-
-* Fix 1
-
-**Issues fixed**
--->
-
 The following bug fixes are available in [!DNL Dynamic Media].
 
 * When synchronizing assets using `Scene7: Reprocess Assets` workflow, some assets are not synchronized and remain in processing state (CQ-4328711).
