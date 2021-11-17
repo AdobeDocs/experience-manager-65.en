@@ -1,5 +1,5 @@
 ---
-title: Configure Dynamic Media Publish Setup
+title: Configure Dynamic Media Publish Setup for Image Server
 description: Learn how to set up Publishing in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,25 +12,25 @@ hidefromtoc: yes
 exl-id: 
 ---
 
-# Configure Dynamic Media Publish Setup
+# Configure Dynamic Media Publish Setup for Image Server
 
->[!IMPORTANT]
->
->Dynamic Media Publish Setup is only available if:
->
->* You are running Dynamic Media in Scene7 mode.
->* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or in Experience Manager as a Cloud Service.
->* You are an Experience Manager system administrator with administrator privileges.
+Configuring Dynamic Media Publish Setup is available only if:
 
-The Dynamic Media Publish Setup page settings determine how assets are delivered by default from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting on a Publish Setup page. For example, a request to deliver an image that does not include a resolution attribute yields an image with the Default Object Resolution setting on the Image Server page.
+* You are running Dynamic Media in Scene7 mode. See [Enable Dynamic Media in Scene7 mode](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or in Experience Manager as a Cloud Service.
+* You are an Experience Manager system administrator with administrator privileges.
 
-Administrators can change the default settings on the Image Server, Image Renderer, and Vignette pages to establish default settings for delivering assets from servers.
+Dynamic Media Publish Setup is intended for use by experienced web site developers and programmers. Adobe Dynamic Media recommends that users who change these publish settings be familiar with Adobe Dynamic Media, HTTP protocol standards and conventions, and basic imaging technology.
+
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
 
 >[!NOTE]
 >
->Dynamic Media Publish Setup is intended for use by experienced web site developers and programmers. Adobe Dynamic Media assumes that users who change any of these defaults publish settings are familiar with Adobe Dynamic Media, HTTP protocol standards and conventions, and basic imaging technology.
+>Upgrading from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager? The General Settings and Publish Setup pages in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are all the values listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are already in Experience Manager. As such, any changes that you make under **[!UICONTROL Default upload options]**, across all five tabs, by way of the Experience Manager user interface are reflected in Dynamic Media, not in Dynamic Media Classic. All other settings and values in the General Setting and Publish Setup page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
 
-**To configure Dynamic Media Publish Setup:**
+See also [(Optional) Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}help/assets/option-b-config-dms7.md).
+
+**To configure Dynamic Media Publish Setup Image Server:**
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
 1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -55,7 +55,7 @@ The Image Server page establishes default settings for delivering images from im
 | Publish Context | Description |
 | --- | --- |
 | Image Serving | Specifies the context for publish settings. |
-| Test Image Serving | Specifies the context for testing publish settings.<br>See [Test assets before making them public](#test-assets-before-making-public). |
+| Test Image Serving | Specifies the context for testing publish settings.<br>For new Dynamic Media accounts only, the default **[!UICONTROL Client address]** field is set to `127.0.0.1` automatically.<br>See [Test assets before making them public](#test-assets-before-making-public). |
 
 ### Security tab {#security-tab}
 
@@ -67,27 +67,31 @@ The Image Server page establishes default settings for delivering images from im
 
 See also [RuleSetFile](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-rulesetfile.html) parameter in the Dynamic Media Viewers Reference Guide.
 
+>[!NOTE]
+>
+>If your Dynamic Media Classic account already has a **[!UICONTROL Rule set definition file path]** selected (as set under **[!UICONTROL Setup]** > **[!UICONTROL Application]** > **[!UICONTROL Publish setup]**, under **[!UICONTROL Catalog Management]** group), your Dynamic Media account on Experience Manager fetches the file from Dynamic Media Classic. The file is then stored and made available in this field, when you open the **[!UICONTROL Dynamic Media Publish Setup]** page for the first time.
+
 ### Request Attributes tab {#request-attributes-tab}
 
 These settings pertain to the default appearance of images.
 
 | Setting | Description |
 | --- | --- |
-| **[!UICONTROL Reply image size limit]** | Required.<br>Specifies the maximum reply image width and height that is returned to the client. The server returns an error if a request causes a reply image whose width, or height, or both, is larger than this setting.<br>See also [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Reply image size limit]** | Required.<br>For new Dynamic Media accounts only, the default size limit is automatically set to Width: `3000` and Height: `3000` for both **[!UICONTROL Image Serving]** and **[!UICONTROL Test Image Serving]**.<br>Specifies the maximum reply image width and height that is returned to the client. The server returns an error if a request causes a reply image whose width, or height, or both, is larger than this setting.<br>See also [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Request obfuscation mode]** | Enable if you want base64 encoding applied to valid requests.<br>See also [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Request locking mode]** | Enable if you want a simple hash lock included in requests.<br>See also [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default Request Attributes]** | |
 | **[!UICONTROL Default image file suffix]** | Required.<br>Default data file extension that is appended to the catalog Path and MaskPath field values if the path does not include a file suffix.<br>See also [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default font face name]** | Specifies which font is used if no font is provided by a text layer request. If specified, it must be a valid font name value in the font map of this image catalog or in the font map of the default catalog.<br>See also [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) parameter in the Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Default image]** | Provides a default image to return in response to a request where the requested image is not found.<br>See also [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default image]** | Provides a default image to return in response to a request where the requested image is not found.<br>See also [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) parameter in the Dynamic Media Viewers Reference Guide.<br>**NOTE**: If your Dynamic Media Classic account already has a **[!UICONTROL Default image]** selected (as set under **[!UICONTROL Setup]** > **[!UICONTROL Application]** > **[!UICONTROL Publish setup]**, under **[!UICONTROL Default Request Attributes]** group), your Dynamic Media account on Experience Manager fetches the file from Dynamic Media Classic. The file is then stored and made available in this field when you open the **[!UICONTROL Dynamic Media Publish Setup]** page for the first time.|
 | **[!UICONTROL Default image mode]** | When the slider box is enabled (slider on the right), the **[!UICONTROL Default image]** replaces each missing layer in the source image with the default image and returns the composite as usual. When the slider box is disabled (slider on the left), the default image replaces the entire composite image, even if the missing image is just one of several layers.<br>See also [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) parameter in the Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Default view size]** | Required.<br>The server constrains reply images to be no larger than this width and height, if the request does not specify the view size explicitly using `wid=`, `hei=`, or `scl=`.<br>See also [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default view size]** | Required.<br>For new Dynamic Media accounts only, the default view size is automatically set to Width: `1280` and Height: `1280` for both **[!UICONTROL Image Serving]** and **[!UICONTROL Test Image Serving]**.<br>The server constrains reply images to be no larger than this width and height, if the request does not specify the view size explicitly using `wid=`, `hei=`, or `scl=`.<br>See also [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default thumbnail size]** | Required.<br>Used instead of attribute **[!UICONTROL Default view size]** for thumbnail requests (`req=tmb`). The server constrains reply images to be no larger that this width and height, if a thumbnail request (`req=tmb`) does not specify the size explicitly using `wid=`, `hei=`, or `scl=`.<br>See also [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default background color]** | Specifies the RGB value used to fill in any area of a reply image that does not contain actual image data.<br>See also [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL JPEG Encoding Attributes]** |  |
-| **[!UICONTROL Quality]** | Specifies the default attributes for JPEG reply images. The **[!UICONTROL Quality]** field is defined in the range of 1 - 100.<br>See also [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Quality]** | <br>Specifies the default attributes for JPEG reply images.<br>For new Dynamic Media accounts only, the **[!UICONTROL Quality]** default value is automatically set to `80` for both **[!UICONTROL Image Serving]** and **[!UICONTROL Test Image Serving]**.<br>This field is defined in the range of 1 - 100.<br>See also [JpegQuality](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Chromatically downsampling]** | Enable or disable chromatically downsampling which is employed by JPEG encoders. |
-| **[!UICONTROL Default resampling mode]** | Specifies the default resampling and interpolation attributes to use for scaling image data. Use when `resMode` is not specified in a request.<br>See also [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) parameter in the Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default resampling mode]** | Specifies the default resampling and interpolation attributes to use for scaling image data. Use when `resMode` is not specified in a request.<br>For new Dynamic Media accounts only, the default resampling mode is automatically set to `Sharp2` for both **[!UICONTROL Image Serving]** and **[!UICONTROL Test Image Serving]**.<br>See also [ResMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html) parameter in the Dynamic Media Viewers Reference Guide. |
 
 ### Common Thumbnail Attributes tab {#common-thumbnail-attributes-tab}
 
@@ -119,7 +123,7 @@ See also [IccRenderIntent](https://experienceleague.adobe.com/docs/dynamic-media
 
 >[!NOTE]
 >
->In general, it is best to use the default rendering intent for the selected color setting, which has been tested by Adobe to meet industry standards. For example, if you choose a color setting for North America or Europe, the default color conversion rendering intent is **[!UICONTROL Relative Colormetric]**. If you choose a color setting for Japan, the default color conversion rendering intent is **[!UICONTROL Perceptual]**.
+>In general, it is best to use the default rendering intent for the selected color setting, which has been tested by Adobe to meet industry standards. For example, if you choose a color setting for North America or Europe, the default color conversion rendering intent is **[!UICONTROL Relative Colorimetric]**. If you choose a color setting for Japan, the default color conversion rendering intent is **[!UICONTROL Perceptual]**.
 
 | Setting | Characteristics |
 | --- | --- |
@@ -218,7 +222,7 @@ To ensure that Secure Testing service works as expected, do the following:
 
 <!--    See [Publish files](publishing-files.md#publishing_files). -->
 
-1. Determine the name of your Secure Testing service by going to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**. 
+1. Determine the name of your Secure Testing service by going to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**.
 1. On the **[!UICONTROL Server]** page, find the server name to the right of **[!UICONTROL Published Server Name]**.
 
 Contact Adobe Care if the server name is missing or the URL to the server does not work.
@@ -245,6 +249,3 @@ Perform the following tests:
    Access your network from outside (such as from your home computer, or over a 4G/5G connection), then verify that the public version of the site shows all published assets but none of the unpublished content.
 
    Confirm that the staging version does not show any asset because you are accessing the Secure Testing service from an unapproved IP address.
-
-
-
