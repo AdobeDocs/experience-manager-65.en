@@ -38,17 +38,97 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
    ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
 
+* Users can now simply save their in-progress work without having to exit the editor using the [!UICONTROL Save] option in Content Fragment editor (SITES-1990).
+
+* Enhancements to content fragments editor actions (SITES-1989).
+
+* Content authors can now filter content fragments by content fragments model type, by writing model name in the picker path field and getting suggestions for all the models with that name to select from (SITES-1987).
+
+* Content authors can now navigate between nested content fragments within the same window, and can also see the publish status of the nested fragments (SITES-1984).
+
+* All the information about last modified can now be set using Content Fragment Management API, instead of having to set it explicitly (SITES-1983).
+
+* Introduced a new Language Copy Update workflow that can be made to run using API from outside [!DNL Adobe Experience Manager]. This workflow can synchronize content and structure changes from language master to language copy (SITES-1977).
+
+* Enhanced support for models with the same name in content fragments (SITES-1975).
+
+* Publish process has been streamlined in Content Fragments models, by:
+  * ensuring successful publishing of all resources required to execute and cache persisted queries on publish instance
+  * providing information to users about dependencies and risks before, during, and after publish action
+  * providing notifications after publish action, about everything that is published
+  * providing warnings, with suggested actions, in case of risk of breaking live GraphQL queries (SITES-1971)
+
+* Enhanced Content Fragments search filters (SITES-1927).
+
+* Added support for [!UICONTROL Image Field] data type (SITES-812).
+
+* Added multifield support for multiline text data type (SITES-802).
+
 * The following accessibility enhancements are available:
 
   * In card view in the [!DNL Assets] repository, when using `Tab` key to move focus to the first item that opens Quick Actions on focus, the screen reader announces the name of the focused item.
   * In [!DNL Dynamic Media] [!UICONTROL Viewer Preset Editor], when Shadow Color and Border Color are not present, the inputs are disabled using the disabled property. Keyboard users are not able to focus the input and screen readers do not announce the state for the control as disabled.
   * In [!DNL Dynamic Media], in the interface to create a new video encoding profile, the [!UICONTROL Smart Crop Ratio] option is labelled for accessibility so that screen readers announce it appropriately.
 
+  * Screen readers now announce the role of the [!UICONTROL Site References] and [!UICONTROL Language Copies] options (SITES-1791).
+
+  * The order of browser mode focus now moves sequentially on various option on User interface (SITES-1791).
+
+  * Screen readers now narrates whether the selected tree item is in selected state and also announces to the user that the action region is displayed (SITES-2109).
+
+  * Screen readers now announce when there is a loading indicator on selecting filter or searching a page (SITES-1790).
+
+  * Screen readers now narrate when the [!UICONTROL Filter] option does not return any search result in the left rail (SITES-1599).
+
+  * When navigating in browse mode, screen readers narrate the role of the content page and selected state of a page when enter key is pressed (SITES-1579).
+
+  * Screen readers now narrate when [!UICONTROL Note Add] option is selected (SITES-1573).
+
+  * Form fields now have visual labels apart from the placeholders, so that screen reader users are guided appropriately when entering the field values (SITES-1258).
+
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
 ### [!DNL Sites] {#sites-65110}
 
-* Fix 1
+The following issues are fixed in [!DNL Sites]:
+
+*	Template to create a content fragment is not visible when creating a content fragment (SITES-3365).
+
+*	Regular expressions and [!UICONTROL Unique] field options are not working in [!UICONTROL appsUrl] model in the content fragment editor (SITES-1823).
+
+* Configurations are added in `/apps/system` node rather that `/libs` when installing previous service pack (SITES-3203).
+
+* Features making use of content fragments are not functioning as usual on installing the previous service pack (SITES-3151).
+
+* Sorting does not work in [!UICONTROL Content Fragment Models] console (SITES-2722).
+
+* GraphiQL is not loading models (schemas) and is encountering error for endpoint JSON (SITES-2428).
+
+* The enumeration field types that were added to a [!UICONTROL Content Fragment Model] are not visible in [!UICONTROL Content Fragment Model Editor] (SITES-2391).
+
+* Tags data type does not support certain data types (SITES-2390).
+
+* [!UICONTROL Content Fragment Rest API] is exporting outdated tag values (SITES-2386).
+
+* Arrow in breadcrumb is not aligned properly in Content Fragments Editor (SITES-2341).
+
+* Content fragment reference search is slow for large datasets (SITES-2147).
+
+* [!UICONTROL CopyUrl] option is inappropriate in [!UICONTROL Content Fragments Editor] (SITES-2007).
+
+* No warning is displayed when content fragment is published along with an associated model and the model introduces braking changes (SITES-1988).
+
+* URL editing of content fragment model is different for different use cases of editing content fragment models (SITES-1980).
+
+* When creating two content fragments with the same title using the inline [!UICONTROL New Content Fragment] action, the wizard returns the same fragment path (SITES-1978).
+
+*	Auto-complete is not working in [!UICONTROL Content Fragment Model] search facet (SITES-1976).
+
+* If a content fragment contains a huge hierarchy of nested fragments the [!UICONTROL Content Fragment Editor] becomes irresponsive when loading side panel (SITES-1974).
+
+* Global search in fragment picker path is not working (SITES-1973).
+
+* References are updating when moving a content fragment (SITES-1897).
 
 ### [!DNL Assets] {#assets-65110}
 
