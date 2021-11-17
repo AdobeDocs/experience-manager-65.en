@@ -31,7 +31,7 @@ Community content, also known as user generated content (UGC), is created when a
 
 Moderation of UGC is useful for recognizing positive contributions as well as limiting negative ones (such as spam and abusive language). UGC can be moderated from several environments: 
 
-* [Community content storate](working-with-srp.md)
+* [Community content storage](working-with-srp.md)
 
 * [Bulk moderation console](moderation.md)
 
