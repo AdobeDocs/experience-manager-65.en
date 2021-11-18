@@ -33,11 +33,11 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Newsletter archive by Experience League](dynamic-media-newsletter.md)
   + [Set up Dynamic Media](administering-dynamic-media.md)
   + [Work with Dynamic Media](dynamic-media.md)
-  + [Configure Dynamic Media - Scene7 mode](config-dms7.md)
+  + [Configure Dynamic Media - Scene7 mode]{#config-scene7-mode}
+    + [Configure Dynamic Media - Scene7 mode](config-dms7.md)
+    + [Optional - Configure Dynamic Media General Settings](dm-general-settings.md)
+    + [Optional - Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
   + [Configure Dynamic Media - Hybrid mode](config-dynamic.md)
-  + [Configure Dynamic Media General Setting](dm-general-settings.md)
-  + [Configure Dynamic Media Publish Setup](dm-publish-settings.md)
-  + [Option A](option-a-config-dms7.md)
   + [Option B](option-b-config-dms7.md)
   + [Troubleshoot Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
   + [Accessibility in Dynamic Media](accessibility-dm.md)
@@ -165,3 +165,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Related assets](related-assets.md)
   + [Private folder sharing](private-folder.md)
   + [Video renditions](video-renditions.md)
++ Integration with other solutions {#integrations}
+  + [Integrations with [!DNL Adobe Workfront]](workfront-integrations.md)
+  + [Install [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
+  + [Configure [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)
