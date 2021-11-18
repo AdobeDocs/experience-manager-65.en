@@ -146,7 +146,7 @@ Following accessibility enhancements are available in [!DNL Adobe Experience Man
 
 * The order of browser mode focus now moves sequentially on various option on User interface (SITES-1791).
 
-* Screen readers now narrates whether the selected tree item is in selected state and also announces to the user that the action region is displayed (SITES-2109).
+* Screen readers now narrate whether the selected tree item is in selected state and also announces to the user that the action region is displayed (SITES-2109).
 
 * Screen readers now announce when there is a loading indicator on selecting filter or searching a page (SITES-1790).
 
