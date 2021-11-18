@@ -254,7 +254,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * When installing [!DNL Experience Manager] 6.5.11.0 on version 6.5.10.0, `com.adobe.granite.ui.coralui3` content package remains in installed state (CQ-4333716).
 
-* When a user clicks on the reorder icon for a multi-field option, the scroll bar disappears from the user interface (CQ-4331100).
+* When a user clicks on the reorder icon for a multifield option, the scroll bar disappears from the user interface (CQ-4331100).
 
 * After upgrade, when a user opens the workplace login container component, the header of the dialog box are not visible on the user interface (CQ-4316173).
 
@@ -276,7 +276,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * In Smart Tags Training report, the HTML injection generates an execptionable notification (NPR-37077).
 
-* When adding a multi-field property in a dialog box for a custom workflow, the dialog box fails to proceed and the user is not able to close the dialog box.
+* When adding a multifield property in a dialog box for a custom workflow, the dialog box fails to proceed and the user is not able to close the dialog box (NPR-37075).
 
 ### Translation projects {#translation-65110}
 
