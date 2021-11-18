@@ -22,51 +22,19 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.11.0 are:
 
+* Added multifield support for multiline text data type.
+
+* Enhancement to make users aware of the asynchronous job currently running in the background to prevent them from triggering multiple asynchronous operations on same path.
+
 * Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
-
-   ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
 
 * You can now render the sort option in Card and Column view (NPR-37199).
 
 * You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
-   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
-
 * You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
-
-   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
-
-* Users can now simply save their in-progress work without having to exit the editor using the [!UICONTROL Save] option in Content Fragment editor (SITES-1990).
-
-* Enhancements to content fragments editor actions (SITES-1989).
-
-* Content authors can now filter content fragments by content fragments model type, by writing model name in the picker path field and getting suggestions for all the models with that name to select from (SITES-1987).
-
-* Content authors can now navigate between nested content fragments within the same window, and can also see the publish status of the nested fragments (SITES-1984).
-
-* All the information about last modified can now be set using Content Fragment Management API, instead of having to set it explicitly (SITES-1983).
-
-* Introduced a new Language Copy Update workflow that can be made to run using API from outside [!DNL Adobe Experience Manager]. This workflow can synchronize content and structure changes from language master to language copy (SITES-1977).
-
-* Enhanced support for models with the same name in content fragments (SITES-1975).
-
-* Publish process has been streamlined in Content Fragments models, by:
-  * ensuring successful publishing of all resources required to execute and cache persisted queries on publish instance
-  * providing information to users about dependencies and risks before, during, and after publish action
-  * providing notifications after publish action, about everything that is published
-  * providing warnings, with suggested actions, in case of risk of breaking live GraphQL queries (SITES-1971)
-
-* Enhanced Content Fragments search filters (SITES-1927).
-
-* Added support for [!UICONTROL Image Field] data type (SITES-812).
-
-* Added multifield support for multiline text data type (SITES-802).
-
-* Added support for GraphQL APIs (SITES-15).
-
-* Enhancement to make users aware of the asynchronous job currently running in the background to prevent them from triggering multiple asynchronous operations on same path (NPR-37611).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
@@ -139,6 +107,8 @@ The following issues are fixed in [!DNL Sites]:
 * Tags display tag names instead of title and close option does not remove the tags completely due to tags property working incorrectly when inheritance is cancelled at property level (NPR-36831).
 
 * Option to deselect all items is not working and header overlaps with first row in table, of the page which displays a list of live copies (NPR-37070).
+
+* In a custom dialog used in a workflow, when trying to validate the dialog, Experience Manager fails with an error in the browser console (GRANITE-35049).
 
 Following accessibility enhancements are available in [!DNL Adobe Experience Manager Sites].
 
@@ -260,7 +230,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 ### Integrations {#integrations-65110}
 
-* Fix 1
+* Saving an [!DNL Adobe Target] activity with [!DNL Experience Manager] targeting mode fails in case an [!DNL Adobe Analytics] report metric is referenced (NPR-37167).
 
 ### Projects {#projects-65110}
 
@@ -308,7 +278,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 ### Workflow {#workflow-65110}
 
-* Fix 1
+* `Deactivate` method in `InboxOmniSearchHandler` displays a null pointer exception (NPR-37533).
 
 ### [!DNL Communities] {#communities-65110}
 
@@ -331,12 +301,16 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 *
 
+-->
+
 ### [!DNL Forms] {#forms-65110}
 
 
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+<!--
 
 [!DNL AEM 6.5.10.0 Forms] includes the following bug fixes:
 
@@ -518,7 +492,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.10</version>
+     <version>6.5.11</version>
      <scope>provided</scope>
 </dependency>
 ```
