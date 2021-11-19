@@ -74,7 +74,7 @@ The following issues are fixed in [!DNL Sites]:
 
 * Auto-complete is not working in [!UICONTROL Content Fragment Model] search facet (SITES-1976).
 
-* If a content fragment contains a huge hierarchy of nested fragments the [!UICONTROL Content Fragment Editor] becomes irresponsive when loading side panel (SITES-1974).
+* If a content fragment contains a huge hierarchy of nested fragments, the [!UICONTROL Content Fragment Editor] becomes irresponsive when loading side panel (SITES-1974).
 
 * Global search in fragment picker path is not working (SITES-1973).
 
@@ -82,7 +82,7 @@ The following issues are fixed in [!DNL Sites]:
 
 * Option to create page is missing in card view and column view (NPR-37549).
 
-* When re-ordering components on a Launch page, then promoting the Launch does not preserve the re-ordering of components (NPR-37539).
+* When reordering components on a Launch page, then promoting the Launch does not preserve the reordering of components (NPR-37539).
 
 * The option to select all the items in a list is not working in rollout page (NPR-37443).
 
@@ -90,13 +90,13 @@ The following issues are fixed in [!DNL Sites]:
 
 * Move operation on folders in the Sites console is failing with an error message "Failed to retrieve launches information for selected item”(NPR-37340).
 
-* When generating a thumbnail for blueprint and rolling out to live copies then inheritance for tabs after thumbnail in live copies is broken" (NPR-37190).
+* When generating a thumbnail for blueprint and rolling out to live copies, the inheritance for tabs after thumbnail in live copies is broken" (NPR-37190).
 
 * The filter predicate to display Live Copy does not display all the live copies (NPR-37126).
 
 * Replication event does not return the list of all the parent and children pages that were marked for deletion when the replication event handler is called on the author (NPR-37123).
 
-* When saving a multi-valued property using bulk editor, then the comma separated string is stored as the first element of the array (NPR-37089).
+* When saving a multi-valued property using Bulk Editor, then the comma-separated string is stored as the first element of the array (NPR-37089).
 
 * The component layout resizing does not work in mobile layout (NPR-37086).
 
@@ -114,7 +114,7 @@ Following accessibility enhancements are available in [!DNL Adobe Experience Man
 
 * Screen readers now announce the role of the [!UICONTROL Site References] and [!UICONTROL Language Copies] options (SITES-1791).
 
-* The order of browser mode focus now moves sequentially on various option on User interface (SITES-1791).
+* The order of browser mode focus now moves sequentially on various options on User interface (SITES-1791).
 
 * Screen readers now narrate whether the selected tree item is in selected state and also announces to the user that the action region is displayed (SITES-2109).
 
