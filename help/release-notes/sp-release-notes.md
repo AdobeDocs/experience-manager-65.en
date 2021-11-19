@@ -177,9 +177,9 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * When using keyboard navigation to open the email link popup window, the error suggestions displayed on the user interface for the 'To' and 'From' fields are not descriptive (CQ-4290930).
 
-* When navigating to the email link dailog box, the screen reader does not narrate the label information for the newly added edit fields on using the down arrow and form mode shortcut key ('F') (CQ-4290934).
+* When navigating to the email link dialog box, the screen reader does not narrate the label information for the newly added edit fields on using the down arrow and form mode shortcut key ('F') (CQ-4290934).
 
-* When navigating to the email link dailog box, the screen reader does not reflect the visual asterisk (*) symbol for the 'To' and 'From' mandatory fields (CQ-4290935).
+* When navigating to the email link dialog box, the screen reader does not reflect the visual asterisk (*) symbol for the 'To' and 'From' mandatory fields (CQ-4290935).
 
 * The users are not able to identify the landmark and region using the shortcut keys ('D', 'R') (CQ-4312118).
 
@@ -244,7 +244,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * On the publish instance, the incoming requests are blocked for several minutes (NPR-37169).
 
-* In Smart Tags Training report, the HTML injection generates an execptionable notification (NPR-37077).
+* In Smart Tags Training report, the HTML injection generates an exceptionable notification (NPR-37077).
 
 * When adding a multifield property in a dialog box for a custom workflow, the dialog box fails to proceed and the user is not able to close the dialog box (NPR-37075).
 
