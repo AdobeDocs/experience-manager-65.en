@@ -136,6 +136,8 @@ The following accessibility enhancements are available in [!DNL Assets]:
 * In [!DNL Dynamic Media] [!UICONTROL Viewer Preset Editor], when Shadow Color and Border Color are not present, the inputs are disabled using the disabled property. Keyboard users are not able to focus the input and screen readers do not announce the state for the control as disabled.
 * In [!DNL Dynamic Media], in the interface to create a new video encoding profile, the [!UICONTROL Smart Crop Ratio] option is labelled for accessibility so that screen readers announce it appropriately.
 
+* You can now access the reference list controls in [!DNL Experience Manager Assets] using a keyboard.
+
 The following issues are fixed in [!DNL Assets]:
 
 * When a user of the contributor group navigates to the DAM assets repository, an exceptionable `POST` request is triggered for creating a collection. This `POST` request fails and reflects an error in the logs (NPR-37171).
@@ -209,6 +211,8 @@ The following bug fixes are available in [!DNL Dynamic Media]:
   Failed to render: Processing was not successful [Status: error]
   ```
 
+* Unable to upload .MXF video files to [!DNL Dynamic Media] using [!DNL Experience Manager] (CQ-4329709). 
+
 <!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
 -->
 
@@ -269,6 +273,8 @@ The following bug fixes are available in [!DNL Dynamic Media]:
 * When rolling out a parent page from a translation project, the language-specific child pages are deleted (NPR-36998).
 
 * When creating a translation project, cyclic referencing of the pages triggers a launch which results in an error (CQ-4332982).
+
+* The experience fragment link in the translated experience fragment and page contains the launch reference (NPR-37649).
 
 ### Sling {#sling-65110}
 
