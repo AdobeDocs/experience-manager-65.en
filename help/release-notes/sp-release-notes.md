@@ -80,17 +80,17 @@ The following issues are fixed in [!DNL Sites]:
 
 * References are updating when moving a content fragment (SITES-1897).
 
-* Option to create page is missing in card view and column view (NPR-37549).
+* Option to create page is missing in Card view and Column view (NPR-37549).
 
-* When reordering components on a Launch page, then promoting the Launch does not preserve the reordering of components (NPR-37539).
+* When reordering components on a Launch page, promoting the Launch does not preserve the reordering of components (NPR-37539).
 
-* The option to select all the items in a list is not working in rollout page (NPR-37443).
+* The option to select all the items in a list is not working on the rollout page (NPR-37443).
 
 * Scheduled activation of pages logs error (NPR-37417).
 
 * Move operation on folders in the Sites console is failing with an error message "Failed to retrieve launches information for selected item”(NPR-37340).
 
-* When generating a thumbnail for blueprint and rolling out to live copies, the inheritance for tabs after thumbnail in live copies is broken" (NPR-37190).
+* When generating a thumbnail for blueprint and rolling out to live copies, the inheritance for tabs after thumbnail in live copies is broken (NPR-37190).
 
 * The filter predicate to display Live Copy does not display all the live copies (NPR-37126).
 
@@ -110,7 +110,7 @@ The following issues are fixed in [!DNL Sites]:
 
 * In a custom dialog used in a workflow, when trying to validate the dialog, Experience Manager fails with an error in the browser console (GRANITE-35049).
 
-Following accessibility enhancements are available in [!DNL Adobe Experience Manager Sites].
+Following accessibility enhancements are available in [!DNL Adobe Experience Manager Sites]:
 
 * Screen readers now announce the role of the [!UICONTROL Site References] and [!UICONTROL Language Copies] options (SITES-1791).
 
@@ -157,11 +157,11 @@ The following issues are fixed in [!DNL Assets]:
 
 * Adding a video with custom metadata generated upon upload to a page displays an error about unknown namespace, even if the namespace is registered (CQ-4331471).
 
-* In [!DNL Assets] if [!DNL Launcher] is disabled then metadata writeback does not work when triggered manually (CQ-4329082).
+* In [!DNL Assets], if [!DNL Launcher] is disabled, then metadata writeback does not work when triggered manually (CQ-4329082).
 
 ### [!DNL Dynamic Media] {#dynamic-media-65110}
 
-The following bug fixes are available in [!DNL Dynamic Media].
+The following bug fixes are available in [!DNL Dynamic Media]:
 
 * When synchronizing assets using `Scene7: Reprocess Assets` workflow, some assets are not synchronized and remain in processing state (CQ-4328711).
 * Asset is not updated in [!DNL Dynamic Media] when restoring an asset version in [!DNL Experience Manager] (NPR-37421).
@@ -185,9 +185,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * Publishing the images from [!DNL Experience Manager Assets] does not publish them in [!DNL DMSS7] (CQ-4334072).
 
-* When editing a saved spin set, the stored XSS payload is executed and an exceptionable dialog box appears (CQ-4333404).
-
-* In [!DNL Experience Manager] as a [!DNL Cloud Service], the users are not able to see the OOTB (Out of the box) metadata properties for a .mov asset (CQ-4332546).
+* In [!DNL Experience Manager] as a [!DNL Cloud Service], the users are not able to see the deafult metadata properties for a .MOV asset (CQ-4332546).
 
 * If a shoppable video hyperlink (linked-URL) contains special characters, the target URL gets encoded by the viewer and results as an incorrect product page (CQ-4331639).
 
@@ -270,7 +268,7 @@ The following bug fixes are available in [!DNL Dynamic Media].
 
 * When rolling out a parent page from a translation project, the language-specific child pages are deleted (NPR-36998).
 
-* When creating a translation project, cyclic referencing of the pages triggers a launch which results as an error (CQ-4332982).
+* When creating a translation project, cyclic referencing of the pages triggers a launch which results in an error (CQ-4332982).
 
 ### Sling {#sling-65110}
 
