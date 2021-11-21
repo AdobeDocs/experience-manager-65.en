@@ -247,18 +247,16 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 
 ### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings.
-
-Setup and configuration tasks include the following:
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
 * [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md)
 * [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md)
 * [Configure color management](#configuring-color-management)
 * [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats)
 * [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
-* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (done in the Dynamic Media Classic user interface)
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
+#### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
 
 The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
 
@@ -266,9 +264,9 @@ See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-pub
 
 #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
-To configure the default color properties so color correction is enabled when images are requested, see [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+Configure the default color properties so color correction is enabled when images are requested.
 
-See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md). -->
+See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
 #### Configure color management {#configuring-color-management}
 
