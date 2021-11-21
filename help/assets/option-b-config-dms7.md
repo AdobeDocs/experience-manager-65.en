@@ -258,7 +258,7 @@ Setup and configuration tasks include the following:
 * [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
 * [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
+#### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
 
 The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
 
@@ -266,9 +266,9 @@ See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-pub
 
 #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
-To configure the default color properties so color correction is enabled when images are requested, see [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+Configure the default color properties so color correction is enabled when images are requested.
 
-See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md). -->
+See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
 #### Configure color management {#configuring-color-management}
 
