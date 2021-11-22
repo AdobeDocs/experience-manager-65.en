@@ -27,7 +27,7 @@ This document focuses on the full headless implementation model of AEM. However 
 
 ## AEM 6.5 and Headless {#aem-headless}
 
-AEM as a Cloud Service is a flexible tool for the headless implementation model by offering three powerful services:
+AEM 6.5 is a flexible tool for the headless implementation model by offering three powerful services:
 
 1. Content Models
    * Content Models are structured representation of content.
