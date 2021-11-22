@@ -17,19 +17,19 @@ exl-id:
 
 Configuring Dynamic Media Publish Setup is available only if:
 
-* You are running Dynamic Media in Scene7 mode. See [Enable Dynamic Media in Scene7 mode](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)
-* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or in Experience Manager as a Cloud Service.
+* You are running Dynamic Media in Scene7 mode. See [Enable Dynamic Media in Scene7 mode](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or above.
 * You are an Experience Manager system administrator with administrator privileges.
 
 Dynamic Media Publish Setup is intended for use by experienced web site developers and programmers. Adobe Dynamic Media recommends that users who change these publish settings be familiar with Adobe Dynamic Media, HTTP protocol standards and conventions, and basic imaging technology.
 
 The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
 
+See also [Optional - Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) for more optional configuration tasks.
+
 >[!NOTE]
 >
->Upgrading from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager? The General Settings and Publish Setup pages in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are all the values listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are already in Experience Manager. As such, any changes that you make under **[!UICONTROL Default upload options]**, across all five tabs, by way of the Experience Manager user interface are reflected in Dynamic Media, not in Dynamic Media Classic. All other settings and values in the General Setting and Publish Setup page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
-
-See also [Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
+>Upgrading from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager? The [General Settings](/help/assets/dm-general-settings.md) page and Publish Setup page in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are all the values that are listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are already in Experience Manager. As such, any changes that you make under **[!UICONTROL Default upload options]**, across any of the five tabs, by way of the Experience Manager user interface, are reflected in Dynamic Media, not in Dynamic Media Classic. All other settings and values in the [General Settings](/help/assets/dm-general-settings.md) page and the Publish Setup page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
 
 **To configure Dynamic Media Publish Setup Image Server:**
 
