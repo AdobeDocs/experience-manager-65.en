@@ -16,7 +16,7 @@ For authentication the third party service needs to authenticate, using the AEM 
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 
-<!-->
+<!--
 For authentication the third party service needs to [retrieve an Access Token](#retrieving-access-token), that can then be [used in the GraphQL Request](#use-access-token-in-graphql-request).
 
 ## Retrieving an Access Token {#retrieving-access-token}
