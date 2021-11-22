@@ -263,7 +263,7 @@ See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-pub
 
 #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
-Configure the default color properties so color correction is enabled when images are requested.
+Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
 
 See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 

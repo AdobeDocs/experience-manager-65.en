@@ -18,7 +18,7 @@ exl-id:
 Configuring **[!UICONTROL Dynamic Media General Settings]** is available only if:
 
 * You are running Dynamic Media in Scene7 mode. See [Enable Dynamic Media in Scene7 mode](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or above.
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 or above.
 * You are an Experience Manager system administrator with administrator privileges.
 
 Dynamic Media General Settings is intended for use by experienced web site developers and programmers. Adobe Dynamic Media recommends that users who change these publish settings be familiar with Dynamic Media on Adobe Experience Manager and basic imaging technology.
