@@ -165,17 +165,37 @@ The following issues are fixed in [!DNL Assets]:
 
 The following bug fixes are available in [!DNL Dynamic Media]:
 
-* When synchronizing assets using `Scene7: Reprocess Assets` workflow, some assets are not synchronized and remain in processing state (CQ-4328711).
 * Asset is not updated in [!DNL Dynamic Media] when restoring an asset version in [!DNL Experience Manager] (NPR-37421).
-* When a [!DNL Dynamic Media Classic] user starts using the publish setup page, [!DNL Experience Manager] does not fetch and store the Rule Set and Default Image file if those are already set ().
-* After migration to service pack 9, users face an issue with [!DNL Dynamic Media] image auto-upload (CQ-4332800).
-* In [!DNL Experience Manager] setup containing custom launcher with ActivationModel as the workflow, the developer environment crashes due to memory issues. The crash happens when uploading PDF files and not images (CQ-4330512).
-* After explicitly publishing a PDF file from Experience Manager to Dynamic Media Classic, the catalog is not published (CQ-4329886).
-* When a 3D asset is added to a page and the page is published, the 3D asset does not load when the published page is opened (CQ-4329205).
+
+* ECatalogs are not published on publishing PDF files (CQ-4329886).
+
+* 3D assets do not load when the published page is opened in case the component is using out-of-the-box preset (CQ-4329205).
+
+* Issues in PDF asset processing in case of large repositories (CQ-4328711).
+
+* PDF processing error does not propagate to [!DNL Experience Manager] in case of failure at [!DNL Scene7] (CQ-4331145).
+
+* Users are not able to see the default metadata properties for a .MOV asset (CQ-4332546).
+
+* Unable to upload .MXF video files to [!DNL Dynamic Media] using [!DNL Experience Manager] (CQ-4329709).
+
+* Upload issues when custom company root is setup (CQ-4332800).
+
+* In [!DNL Experience Manager] setups containing custom launcher with `ActivationModel` as the workflow, Experience Manager crashes due to memory issues on uploading PDF files. (CQ-4330512).
+
+* Performance issues in DamEventRecorder (CQ-4334072).
+
+* If a shoppable video hyperlink (linked-URL) contains special characters, the target URL gets encoded by the viewer and results as an incorrect product page (CQ-4331639).
+
+* In a video profile page, the toolbar options disappear if the user selects a video profile immediately on page load (CQ-4308521).
+
+* DM asset processing failure due to JCR concurrent writes (CQ-4333489).
+
+* Accessing the Video Profiles page fails if user's video profile root has custom access policies defined on video profiles root node (CQ-4332941).
 
 * In a zoomable image, using the shortcut keys ('+', '-') or 'Esc' key traps the screen readers focus (CQ-4290719).
 
-* When a user clicks on the form mode shortcut key ('F'), the screen reader does not map the label of the [!UICONTROL Embed Size] menu button present in the [!UICONTROL Get Embed] code dialog box (CQ-4290929).
+* When a user clicks on the form mode shortcut key ('F'), the screen reader does not map the label of the [!UICONTROL Embed Size] menu button available in the [!UICONTROL Get Embed] code dialog box (CQ-4290929).
 
 * When using keyboard navigation to open the email link popup window, the error suggestions displayed on the user interface for the 'To' and 'From' fields are not descriptive (CQ-4290930).
 
@@ -184,34 +204,6 @@ The following bug fixes are available in [!DNL Dynamic Media]:
 * When navigating to the email link dialog box, the screen reader does not reflect the visual asterisk (*) symbol for the 'To' and 'From' mandatory fields (CQ-4290935).
 
 * The users are not able to identify the landmark and region using the shortcut keys ('D', 'R') (CQ-4312118).
-
-* Publishing the images from [!DNL Experience Manager Assets] does not publish them in [!DNL DMSS7] (CQ-4334072).
-
-* In [!DNL Experience Manager] as a [!DNL Cloud Service], the users are not able to see the deafult metadata properties for a .MOV asset (CQ-4332546).
-
-* If a shoppable video hyperlink (linked-URL) contains special characters, the target URL gets encoded by the viewer and results as an incorrect product page (CQ-4331639).
-
-* In a video profile page, the toolbar options disappear if the user selects a video profile immediately on page load (CQ-4308521).
-
-* When uploading assets in [!DNL Experience Manager] version 6.5.6.0 [!DNL DMS7], the asset processing fails intermittently with the following error (CQ-4333489): 
-
-  ```TXT
-  com.adobe.granite.workflow.WorkflowException: --Dynamic Media asset upload failed. Please contact your system administrator.--
-  ```
-
-* Accessing the Video Profiles page fails with the following error message (CQ-4332941):
-
-  ```TXT
-  Exception: javax.jcr.nodetype.ConstraintViolationException: Item is protected.
-  ```
-
-* When uploading a PDF from [!DNL Experience Manager] to [!DNL Scene7], the processing workflow reflects the following error message (CQ-4331145):
-
-  ```TXT
-  Failed to render: Processing was not successful [Status: error]
-  ```
-
-* Unable to upload .MXF video files to [!DNL Dynamic Media] using [!DNL Experience Manager] (CQ-4329709). 
 
 <!-- Anuj to check if this section is required or not. We have an enh. in CIF area that is mentioned. It is added above and not part of this bug fix section.
 -->
