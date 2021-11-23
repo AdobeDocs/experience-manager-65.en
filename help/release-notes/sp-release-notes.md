@@ -86,7 +86,7 @@ The following issues are fixed in [!DNL Sites]:
 
 * The option to select all the items in a list is not working on the rollout page (NPR-37443).
 
-* Scheduled activation of pages logs error (NPR-37417).
+* Scheduled activation of multiple pages results in opening a new JCR session for `wcm-workflow-service` user (NPR-37417).
 
 * Move operation on folders in the Sites console is failing with an error message "Failed to retrieve launches information for selected item”(NPR-37340).
 
@@ -216,8 +216,6 @@ The following bug fixes are available in [!DNL Dynamic Media]:
 
 ### Platform {#platform-65110}
 
-* When installing [!DNL Experience Manager] 6.5.11.0 on version 6.5.10.0, `com.adobe.granite.ui.coralui3` content package remains in installed state (CQ-4333716).
-
 * When a user clicks on the reorder icon for a multifield option, the scroll bar disappears from the user interface (CQ-4331100).
 
 * After upgrade, when a user opens the workplace login container component, the header of the dialog box are not visible on the user interface (CQ-4316173).
@@ -237,8 +235,6 @@ The following bug fixes are available in [!DNL Dynamic Media]:
 * When a user performs a search or browses using the path field browser, incorrect nodes are displayed (NPR-37175).
 
 * On the publish instance, the incoming requests are blocked for several minutes (NPR-37169).
-
-* In Smart Tags Training report, the HTML injection generates an exceptionable notification (NPR-37077).
 
 * When adding a multifield property in a dialog box for a custom workflow, the dialog box fails to proceed and the user is not able to close the dialog box (NPR-37075).
 
@@ -509,6 +505,8 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 | Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues}
+
+* When you install AEM 6.5 Service Pack 11 and try to download the status ZIP file, Experience Manager downloads a corrupt file. Install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
 
 * As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
