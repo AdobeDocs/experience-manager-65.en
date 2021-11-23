@@ -27,7 +27,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
 The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
 
-See also [Optional - Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/option-b-config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr more optional configuration tasks.
+See also [Optional - Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr more optional configuration tasks.
 
 >[!NOTE]
 >
