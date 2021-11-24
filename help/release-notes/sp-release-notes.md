@@ -36,6 +36,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
 
+* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.9.
+
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
 ### [!DNL Sites] {#sites-65110}
@@ -476,7 +478,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.11.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.10/).
+The UberJar for Experience Manager 6.5.11.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.11/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -532,9 +534,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.11.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.11.0](assets/65100_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.11.0](assets/65110_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.11.0](assets/65100_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.11.0](assets/65110_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
