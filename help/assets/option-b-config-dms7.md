@@ -95,7 +95,7 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
    >[!NOTE]
    >
-   >**RICK: KEEP AS IS?** After you receive your provisioning email with Dynamic Media credentials, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+   >After you receive your provisioning email with Dynamic Media credentials, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
 1. When the connection is successful, set the following. Headings with an asterisk (*) are required:
 
@@ -133,14 +133,13 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 1. Select **[!UICONTROL Save]**.
 1. To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager author instance to connect to Dynamic Media:
 
-    * **RICK: LINK TO NEW PUBLISH SETUP TOPIC** Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
-
-    * On the navigation bar near the top right of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
-
-    * On the Image Server Publish page, in the Publish Context drop-down list, select **[!UICONTROL Test Image Serving]**.
-    * For the Client Address Filter, select **[!UICONTROL Add]**.
-    * To enable (turn on) the address, select the check box. Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * Select **[!UICONTROL Save]**.
+    * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+    * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
+    * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
+    * Select the **[!UICONTROL Security]** tab.
+    * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
+    * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
 
@@ -247,18 +246,16 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 
 ### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings.
-
-Setup and configuration tasks include the following:
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
 * [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md)
 * [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md)
 * [Configure color management](#configuring-color-management)
 * [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats)
 * [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
-* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (done in the Dynamic Media Classic user interface)
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
+#### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
 
 The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
 
@@ -266,9 +263,9 @@ See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-pub
 
 #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
-To configure the default color properties so color correction is enabled when images are requested, see [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
 
-See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md). -->
+See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
 #### Configure color management {#configuring-color-management}
 
