@@ -8,8 +8,6 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-hide: yes
-hidefromtoc: yes
 exl-id: 
 ---
 
@@ -18,7 +16,7 @@ exl-id:
 Configuring Dynamic Media Publish Setup is available only if:
 
 * You are running Dynamic Media in Scene7 mode. See [Enable Dynamic Media in Scene7 mode](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 or above.
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 or above. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * You are an Experience Manager system administrator with administrator privileges.
 
 Dynamic Media Publish Setup is intended for use by experienced web site developers and programmers. Adobe Dynamic Media recommends that users who change these publish settings be familiar with Adobe Dynamic Media, HTTP protocol standards and conventions, and basic imaging technology.
