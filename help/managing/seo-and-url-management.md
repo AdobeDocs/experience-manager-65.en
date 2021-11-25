@@ -393,7 +393,9 @@ In order to enable the background job that generates the XML sitemaps a `Sitemap
 
 The sitemap generation job can run on both, author and publish tier instances. In most cases, it is recommended to run the generation on publish tier instances, as only there proper canonical URLs can be generated (due to the Sling Resource Mapping rules commonly being present only on publish tier instances). However, it is possible to plug-in a custom implementation of the externalization mechanism used to generate the canonical URLs by implementing the [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html) interface. If a custom implementation is able to generate the canonical URLs of a sitemap on the author tier instances, the `SitemapScheduler` can be configured for the author run mode and the XML sitemap generation workload could be distributed across the instances of the author service cluster. In this scenario, particular caution must be spent on handling content that has not yet been published, has been modified or is only visible to a restricted group of users. 
 
-AEM Sites contains a default implementation of a `SitemapGenerator` that traverses a tree of pages to generate a sitemap. It is pre-configured to contain the last modification date of a page and its language alternatives if available. 
+AEM Sites contains a default implementation of a `SitemapGenerator` that traverses a tree of pages to generate a sitemap. It is pre-configured to only output the canonical URLs of a site and any language alternatives if available. It can also be configured to include the last modified date of a page if needed. For that, enable the _Add Last Modified_ option of the _Adobe AEM SEO - Page Tree Sitemap Generator_ Configuration and select a _Last Modified Source_. When the Sitemaps are generated on the publish tier it is recommended to use the `cq:lastModified` date.
+
+![Adobe AEM SEO - Page Tree Sitemap Generator Configuration](assets/sling-sitemap-pagetreegenerator.png)
 
 To limit the content of a sitemap, the following service interfaces can be implemented when needed:
 
@@ -473,7 +475,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
+Furthermore, the functionality implemented for XML sitemaps can be used for different use cases as well, for example to add the canonical link or the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
 
 ### Creating 301 redirects for legacy URLs {#creating-redirects-for-legacy-urls}
 
