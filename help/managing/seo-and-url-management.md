@@ -403,47 +403,74 @@ To limit the content of a sitemap, the following service interfaces can be imple
 If the default implementations do not work of a particular use case or if the extension points are not flexible enough, a custom `SitemapGenerator` may be implemented to take full control of the content of a generated sitemap. The following example shows how this can be done, making use of the default implementation's logic for AEM Sites. It usess the [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) as a starting point to traverse a tree of pages:
 
 ```
-import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
-import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
-import com.adobe.aem.wcm.seo.sitemap.externalizer.SitemapLinkExternalizer;
-import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import java.util.Optional;
 
-@Component({
-  service = SitemapGenerator.class,
-  property = { "service.ranking:Integer=200" }
-})
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.sitemap.SitemapException;
+import org.apache.sling.sitemap.builder.Sitemap;
+import org.apache.sling.sitemap.builder.Url;
+import org.apache.sling.sitemap.spi.common.SitemapLinkExternalizer;
+import org.apache.sling.sitemap.spi.generator.ResourceTreeSitemapGenerator;
+import org.apache.sling.sitemap.spi.generator.SitemapGenerator;
+import org.jetbrains.annotations.NotNull;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.adobe.aem.wcm.seo.sitemap.PageTreeSitemapGenerator;
+import com.day.cq.wcm.api.Page;
+
+@Component(
+    service = SitemapGenerator.class,
+    property = { "service.ranking:Integer=20" }
+)
 public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 
-  @Reference
-  private SitemapLinkExternalizer externalizer;
-  @Reference 
-  private PageTreeSitemapGenerator defaultGenerator;
+    private static final Logger LOG = LoggerFactory.getLogger(SitemapGeneratorImpl.class);
 
-  @Override
-  protected void addResource(String name, Sitemap sitemap, Resource resource) throws SitemapException {
-    Page page = resource.adaptTo(Page.class);
-    if (page == null) {
-      LOG.debug("Skipping resource at {}: not a page", resource.getPath());
-      return;
+    @Reference
+    private SitemapLinkExternalizer externalizer;
+    @Reference
+    private PageTreeSitemapGenerator defaultGenerator;
+
+    @Override
+    protected void addResource(@NotNull String name, @NotNull Sitemap sitemap, Resource resource) throws SitemapException {
+        Page page = resource.adaptTo(Page.class);
+        if (page == null) {
+            LOG.debug("Skipping resource at {}: not a page", resource.getPath());
+            return;
+        }
+        String location = externalizer.externalize(resource);
+        Url url = sitemap.addUrl(location + ".html");
+        // add any additional content to the Url like lastmod, change frequency, etc
     }
-    String location = externalizer.externalize(resource);
-    Url url = sitemap.addUrl(location + ".html");
-    // add addotional data to the Url object like lastmod, frequency, etc.
-  }
 
-  @Override
-  protected boolean shouldFollow(Resource resource) {
-    // add addotional conditions to restrict which paths will be traversed
-    return defaultGenerator.shouldFollow(resource);
-  }
+    @Override
+    protected final boolean shouldFollow(@NotNull Resource resource) {
+        return super.shouldFollow(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldFollow).orElse(Boolean.TRUE);
+    }
 
-  @Override
-  protected final boolean shouldInclude(Resource resource) {
-    // add addotional conditions to restrict which paths will be included
-    return defaultGenerator.shouldInclude(resource);
-  }
+    private boolean shouldFollow(Page page) {
+        // add additional conditions to stop traversing some pages
+        return !defaultGenerator.isProtected(page);
+    }
+
+    @Override
+    protected final boolean shouldInclude(@NotNull Resource resource) {
+        return super.shouldInclude(resource)
+            && Optional.ofNullable(resource.adaptTo(Page.class)).map(this::shouldInclude).orElse(Boolean.FALSE);
+    }
+
+    private boolean shouldInclude(Page page) {
+        // add additional conditions to stop including some pages
+        return defaultGenerator.isPublished(page)
+            && !defaultGenerator.isNoIndex(page)
+            && !defaultGenerator.isRedirect(page)
+            && !defaultGenerator.isProtected(page);
+    }
 }
-
 ```
 
 Furthermore, the functionality implemented for XML sitemaps can be used in different use cases as well, for example to add the canonical link or the language alternates to a page's head. Please refer to the [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) interface for more information. 
