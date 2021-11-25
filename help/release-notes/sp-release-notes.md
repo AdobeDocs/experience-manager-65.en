@@ -14,7 +14,7 @@ exl-id: 28a5ed58-b024-4dde-a849-0b3edc7b8472
 | Version  | 6.5.11.0                      |
 | Type     | Service Pack Release         |
 | Date     | November 25, 2021                |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.10.zip) |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip) |
 
 ## What is included in [!DNL Adobe Experience Manager] 6.5.11.0 {#what-is-included-in-aem}
 
@@ -41,6 +41,15 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
 
 ### [!DNL Sites] {#sites-65110}
+
+To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the [index definition package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.0.0.zip), and reindex the following asynchronous AEM index definitions:
+
+* /oak:index/assetPrefixNodename
+
+* /oak:index/fragments
+
+* /oak:index/graphqlConfig
+
 
 The following issues are fixed in [!DNL Sites]:
 
@@ -185,7 +194,7 @@ The following bug fixes are available in [!DNL Dynamic Media]:
 
 * In [!DNL Experience Manager] setups containing custom launcher with `ActivationModel` as the workflow, Experience Manager crashes due to memory issues on uploading PDF files. (CQ-4330512).
 
-* Performance issues in DamEventRecorder (CQ-4334072).
+* Performance issues in `DamEventRecorder` (CQ-4334072).
 
 * If a shoppable video hyperlink (linked-URL) contains special characters, the target URL gets encoded by the viewer and results as an incorrect product page (CQ-4331639).
 
@@ -412,7 +421,7 @@ To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, 
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.10.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
