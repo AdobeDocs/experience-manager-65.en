@@ -12,15 +12,16 @@ A primary use case for The [Adobe Experience Manager (AEM) GraphQL API for Conte
 >
 >For testing and development you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interface.
 
+For authentication the third party service needs to authenticate, using the AEM account username and password.
+
+<!-- 6.5.10.0 - does this content/page need to be migrated? -->
+
+<!--
 For authentication the third party service needs to [retrieve an Access Token](#retrieving-access-token), that can then be [used in the GraphQL Request](#use-access-token-in-graphql-request).
 
 ## Retrieving an Access Token {#retrieving-access-token}
 
-<!-- 6.5.10.0 - does this page need to be migrated? -->
-
-<!--
 See [Generating Access Tokens for Server Side APIs](/help/sites-developing/generating-access-tokens-for-server-side-apis.md) for full details.
--->
 
 ## Using the Access Token in a GraphQL Request {#use-access-token-in-graphql-request}
 
@@ -39,3 +40,4 @@ All requests made using the access token will actually be made *by the user acco
 This means that you need to check that the account has the permissions required to run GraphQL queries. 
 
 You can check this by using GraphiQL on the local instance.
+-->

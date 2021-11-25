@@ -33,10 +33,9 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Newsletter archive by Experience League](dynamic-media-newsletter.md)
   + [Set up Dynamic Media](administering-dynamic-media.md)
   + [Work with Dynamic Media](dynamic-media.md)
-  + [Configure Dynamic Media - Scene7 mode]{#config-scene7-mode}
-    + [Configure Dynamic Media - Scene7 mode](config-dms7.md)
-    + [Optional - Configure Dynamic Media General Settings](dm-general-settings.md)
-    + [Optional - Dynamic Media Publish Setup Image Server](dm-publish-settings.md)
+  + [Configure Dynamic Media - Scene7 mode](config-dms7.md)
+  + [Optional - Configure Dynamic Media - Scene7 mode, General Settings](dm-general-settings.md)
+  + [Optional - Configure Dynamic Media - Scene7 mode, Publish Setup](dm-publish-settings.md)
   + [Configure Dynamic Media - Hybrid mode](config-dynamic.md)
   + [Option B](option-b-config-dms7.md)
   + [Troubleshoot Dynamic Media - Scene7 mode](troubleshoot-dms7.md)
