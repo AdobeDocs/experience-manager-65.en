@@ -22,9 +22,7 @@ An administrator would only need to create a configuration once, or very seldoml
 1. Log into AEM 6.5 and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
 1. Provide a **Title** and a **Name** for your configuration.
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository.
-      * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md)
-      * It can be adjusted if necessary.
+     A name will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md). It will become the node name in the repository.
 1. Check the following options:
    * **Content Fragment Models**
    * **GraphQL Persistent Queries**
