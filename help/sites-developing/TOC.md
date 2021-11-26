@@ -92,7 +92,7 @@ role: Developer
       + [Developing Forms (Classic UI)](developing-forms.md)
 + Headless Experience Management{#headless}
     + [Headless and AEM](headless/introduction.md)
-    + [Content Fragments](#content-fragments)
+    + Content Fragments{#content-fragments}
         + [Headless Delivery with Content Fragments and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
         + [Working with Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
         + [Enable Content Fragment Functionality for your Instance](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-configuration-browser.html)
@@ -104,7 +104,7 @@ role: Developer
         + [Metadata - Fragment Properties](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-metadata.html)
         + [Structure Tree](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-structure-tree.html)
         + [Preview - JSON Representation](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-json-preview.html)
-    + [Delivery API](#delivery-api)
+    + Delivery API{#delivery-api}
         + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
         + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
         + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
