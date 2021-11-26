@@ -106,10 +106,10 @@ role: Developer
         + [Preview - JSON Representation](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-json-preview.html)
     + [Delivery API]{#delivery-api}
         + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
-        + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/admin/assets-api-content-fragments.html)
-        + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/admin/graphql-api-content-fragments.html)
-        + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-65/assets/admin/content-fragments-graphql-samples.html)
-        + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/admin/graphql-authentication-content-fragments.html)    
+        + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
+        + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
+        + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+        + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)    
 + Hybrid and SPA AEM Development{#spas}
     + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [SPA Introduction and Walkthrough](spa-walkthrough.md)
