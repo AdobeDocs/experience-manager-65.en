@@ -92,6 +92,13 @@ role: Developer
       + [Developing Forms (Classic UI)](developing-forms.md)
 + Headless Experience Management{#headless}
     + [Headless and AEM](headless/introduction.md)
+    + Getting Started Guides {#getting-started}
+        + [Introduction](headless/getting-started/introduction.md)
+        + [Creating a Configuration](headless/getting-started/create-configuration.md)
+        + [Creating a Content Fragment Model](headless/getting-started/create-content-model.md)
+        + [Creating an Assets Folder](headless/getting-started/create-assets-folder.md)
+        + [Creating a Content Fragment](headless/getting-started/create-content-fragment.md)
+        + [Accessing and Delivering Content Fragments](headless/getting-started/create-api-request.md)
     + Content Fragments{#content-fragments}
         + [Headless Delivery with Content Fragments and GraphQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-graphql.html)
         + [Working with Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments.html)
