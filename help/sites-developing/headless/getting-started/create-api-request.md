@@ -20,13 +20,7 @@ The remainder of this guide will focus on GraphQL access and Content Fragment de
 
 Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
 
-<!-- Not in the UI yet - will need updating when it is -->
-<!--
-1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
-   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
--->
-
-1. Log into AEM as a Cloud Service and access the GraphiQL interface:
+1. Log into AEM and access the GraphiQL interface:
    * For example: `https://<host>:<port>/content/graphiql.html`.
 
 1. The GraphiQL is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlesly as JSON.
@@ -57,7 +51,9 @@ Information architects will need to design queries for their channel endpoints i
 1. Click the **Execute Query** button or use the `Ctrl-Enter` hotkey and the results are displayed as JSON in the right panel.
    ![GraphiQL results](../assets/graphiql-results.png)
 
-1. Click the **Docs** link at the top-right of the page to show in-context documentation to help you build your queries which adapts to your own models.
+1. Click:
+   * **Docs** at the top-right of the page to show in-context documentation to help you build your queries which adapts to your own models.
+   * **History** in the top toolbar to show previous queries.
    ![GraphiQL documentation](../assets/graphiql-documentation.png)
 
 GraphQL enables structured queries that can target not only specific data sets or individual data objects, but also can deliver specific elements of the objects, nested results, offers support for query variables, and much more.

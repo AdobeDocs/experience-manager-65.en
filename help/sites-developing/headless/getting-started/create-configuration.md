@@ -13,16 +13,17 @@ The Configuration Browser provides a generic configuration API, content structur
 
 In the context of headless content management in AEM, think of a configuration as a workplace within AEM where you can create your Content Models, which define the structure of your future content and Content Fragments. You can have multiple configurations to separate these models.
 
-If you are familiar with [page templates in a full-stack AEM implementation,](/help/sites-authoring/templates.md) the usage of configurations for the management of Content Models is similar.
+[!NOTE]
+>
+>If you are familiar with [page templates in a full-stack AEM implementation,](/help/sites-authoring/templates.md) the usage of configurations for the management of Content Models is similar.
 
 ## How to Create a Configuration {#how-to-create-a-configuration}
 
 An administrator would only need to create a configuration once, or very seldomly when a new workspace is required for organizing your Content Models. For the purposes of this getting started guide, we only need to create one configuration.
 
-1. Log into AEM 6.5 and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
-1. Provide a **Title** and a **Name** for your configuration.
-   * The **Title** should be descriptive.
-     A name will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md). It will become the node name in the repository.
+1. Log into AEM and from the main menu select **Tools -&gt; General -&gt; Configuration Browser**.
+1. Provide a **Title** for your configuration.
+   * A name will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md). It will become the node name in the repository.
 1. Check the following options:
    * **Content Fragment Models**
    * **GraphQL Persistent Queries**
