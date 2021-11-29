@@ -19,7 +19,7 @@ Headless implementation forgoes page and component management as is traditional 
 
 This document focuses on the full headless implementation model of AEM. However headful versus headless need not be a binary choice in AEM. Headless features can be used to manage and deliver your content to a variety of endpoints while also enabling your content authors to edit single page applications. All in AEM.
 
-<!--
+<!-- HM-Links
 >[!TIP]
 >
 >See the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) for more information.
@@ -50,7 +50,7 @@ There are a number of resources available for your to get started with AEM's hea
 |---|---|---|---|---|
 |[Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html)|**If you prefer a hands-on approach and are familiar with AEM**, this tutorial dives directly into creating a simple headless project.|Tutorial|Developers|2 hours|
 
-<!--
+<!-- HM-Links
 |Resource|Description|Type|Audience|Est. Time|
 |---|---|---|---|---|
 |[Headless Developer Journey](/help/journey-headless/developer/overview.md)|**For users new to AEM and headless** technologies, start here for a comprehensive introduction to AEM and its headless features from the theory of headless through going live with your first headless project.|Guide|Developers **new to AEM and headless**|1 hour|
