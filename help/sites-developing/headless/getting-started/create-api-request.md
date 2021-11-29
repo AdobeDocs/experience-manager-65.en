@@ -11,7 +11,8 @@ Learn how to use AEM's Assets REST API to manage Content Fragments and the Graph
 
 [Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
 
-* [The GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) allows you to create requests to access and deliver Content Fragments.
+* [The GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) allows you to create requests to access and deliver Content Fragments. 
+   * To use this, endpoints need to be defined and enabled in AEM, and if required, the GraphiQL interface installed.
 * [The Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) allows you to create and modify Content Fragments (and other assets).
 
 The remainder of this guide will focus on GraphQL access and Content Fragment delivery.
