@@ -164,8 +164,8 @@ Document formats supported for asset management features are as follows:
 | Format | Upload<br> (Input format) | Create<br> image<br> preset<br> (Output format) | Preview<br> dynamic<br> rendition | Deliver<br> dynamic<br> rendition | Download<br> dynamic<br> rendition |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &minus;| &minus;| &minus;| &minus;|
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &minus;| &minus;| &minus;| &minus;|
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
 
 In addition to the above functionality, consider the following:
 
@@ -202,16 +202,17 @@ In addition to the above functionality, consider the following:
 
 | Video file extension | Container | Recommended video codecs | Unsupported video codecs |
 |---|---|---|---|
-| MP4 | MPEG-4 | H264/AVC (all profiles) | &minus; |
-| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vector animation files) |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
-| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | &minus; |
-| M4V | Apple iTunes | H264/AVC | &minus; |
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
-| WebM | WebM | Google VP8 | &minus; |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | &minus; |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vector animation files) |
+| M4V | Apple iTunes | H264/AVC | &minus; |
+| MFX | MPEG-2  | Apple ProRes422 | &minus; |
 | MKV | Matroska | H264/AVC | &minus; |
+| MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
+| MP4 | MPEG-4 | H264/AVC (all profiles) | &minus; |
+| MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | &minus; |
+| OGV, OGG | Ogg | Theora, VP3, Dirac | &minus; |
+| WebM | WebM | Google VP8 | &minus; |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
 ## Supported archive formats {#supported-archive-formats}
 
