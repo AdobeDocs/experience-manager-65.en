@@ -40,7 +40,7 @@ Content authors will create any number of Content Fragments to represent the con
 
 Content Fragments can reference other Content Fragments, allowing for a nested content structure if necessary.
 
-Content Fragments can also reference other assets in AEM. [These assets need to be stored in AEM](/help/assets/manage-digital-assets.md) before creating a referencing Content Fragment.
+Content Fragments can also reference other assets in AEM. [These assets need to be stored in AEM](/help/assets/manage-assets.md) before creating a referencing Content Fragment.
 
 ## Next Steps {#next-steps}
 

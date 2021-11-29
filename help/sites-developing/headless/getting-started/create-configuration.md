@@ -42,6 +42,8 @@ You can create multiple configurations if required. Configurations can also be n
 
 Using this configuration, you can now move on to the second part of the getting started guide and [create Content Fragment Models.](create-content-model.md)
 
+<!--
 >[!TIP]
 >
->For complete details about the Configuration Browser, [see the Configuration Browser documentation.](/help/implementing/developing/introduction/configurations.md)
+>For complete details about the Configuration Browser, [see the Configuration Browser documentation.](/help/sites-developing/configurations.md)
+-->
