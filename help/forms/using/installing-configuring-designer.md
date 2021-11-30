@@ -37,18 +37,18 @@ Designer is available as a stand-alone installer and is also bundled with WorkBe
 1. Click Back to change any preferences. To install Designer, click Install.
 1. Click Finish when the installation completes.
 
-Alternatively, you can install the Designer through command-line using passive or silent mode. The command-line input and syntax are as follows:
+Alternatively, you can install the Designer through command-line using passive or silent mode.
 
-* Passive command-line install. For a passive display option, the installer displays a progress bar that indicates that an installation is in progress but no prompts or error messages are displayed to the user. Once launched, you will not be able to cancel the installation. Use of the “norestart” command ensures that the installer does not restart the computer after installation.
+* Passive command-line install: The installer displays a progress bar that indicates that the installation is in progress but no prompts or error messages are displayed. Once launched, you cannot cancel the installation. Use of the `norestart` command ensures that the installer does not restart the computer after installation.
 
 ```shell
-   msiexec /i "<path>\Designer.msi" /passive /norestart SERIALNUMBER=****-****-****-****-****-****
+msiexec /i "<path>\Designer.msi" /passive /norestart SERIALNUMBER=****-****-****-****-****-****
 ```
 
-* Silent command-line install. For the quiet display option, the installer runs your installation without displaying a user interface. No prompts, messages, or dialog boxes are displayed. Once launched, you will not be able to cancel the installation.
+* Silent command-line install: The installer runs the installation without displaying a user interface. No prompts, messages, or dialog boxes are displayed. Once launched, you cannot cancel the installation.
 
 ```shell
-   msiexec /i "<path>\Designer.msi" /quiet /norestart SERIALNUMBER=****-****-****-****-****-****
+msiexec /i "<path>\Designer.msi" /quiet /norestart SERIALNUMBER=****-****-****-****-****-****
 ```
 
 
