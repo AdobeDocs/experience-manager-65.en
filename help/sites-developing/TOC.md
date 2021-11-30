@@ -90,6 +90,7 @@ role: Developer
       + [Using and Extending Widgets (Classic UI)](widgets.md)
       + [Using xtypes (Classic UI)](xtypes.md)
       + [Developing Forms (Classic UI)](developing-forms.md)
++ [Headful and Headless in AEM](headful-headless.md)
 + Headless Experience Management{#headless}
     + [Headless and AEM](headless/introduction.md)
     + Getting Started Guides {#getting-started}
