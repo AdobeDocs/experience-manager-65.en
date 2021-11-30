@@ -4,7 +4,6 @@ description: Learn the basic of modeling content for your Headless CMS using Con
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 ---
 # Learn the Content Modeling Basics for Headless with AEM {#content-modeling-headless-basics}
 
@@ -150,8 +149,8 @@ Now that you have learned the basics, the next step is to [Learn about Creating 
 
   * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring Concepts](/help/sites-authoring/author.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
+* [Basic Handling](/help/sites-authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)

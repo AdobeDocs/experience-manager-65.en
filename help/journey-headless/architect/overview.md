@@ -4,7 +4,6 @@ description: Start here for a guided journey through the powerful and flexible h
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
 ---
 # AEM Headless Content Architect Journey {#aem-headless-content-architect-journey}
 
@@ -64,5 +63,5 @@ As such journeys are designed to stand on their own. However a number of them ca
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
-* [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
+* [AEM technical documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
 * [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technically inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.

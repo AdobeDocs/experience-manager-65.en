@@ -4,7 +4,6 @@ description: Learn about the concepts and mechanics of modeling content for your
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 ---
 # Learn about Creating Content Fragment Models in AEM {#architect-headless-content-fragment-models}
 
@@ -105,9 +104,9 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 ## Additional Resources {#additional-resources}
 
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md)
+* [Authoring Concepts](/help/sites-authoring/author.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **Assets** console.
+* [Basic Handling](/help/sites-authoring/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for navigating to, and taking action on, **Content Fragment Models** under the **Assets** console.
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
  
@@ -129,4 +128,4 @@ Now that you have learned the basics, the next step is to start creating your ow
 
 * Getting Started Guides
   
-  * [Creating Content Fragment Models Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-content-model.md)
+  * [Creating Content Fragment Models Headless Quick Start Guide](/help/sites-developing/headless/getting-started/create-content-model.md)

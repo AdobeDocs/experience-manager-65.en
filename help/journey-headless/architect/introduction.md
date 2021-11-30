@@ -1,14 +1,13 @@
 ---
 title: AEM Headless Content Architect Journey
-description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
+description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager, and how to model content for your project.
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 ---
 # Content Modeling for Headless with AEM - An Introduction {#architect-headless-introduction}
 
-In this part of the [AEM Headless Content Architect Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand content modeling for headless content delivery with Adobe Experience Manager (AEM) as a Cloud Service.
+In this part of the [AEM Headless Content Architect Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand content modeling for headless content delivery with Adobe Experience Manager (AEM).
 
 This document helps you understand headless content delivery, how AEM supports headless, and how content is modeled for headless. After reading you should:
 
@@ -65,7 +64,7 @@ This is more of a development detail - but it might interest you, just to comple
 
 Once you've created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content. 
 
-Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. Using the API a developer can formulate queries that select specific content.This selection process is based on *your* Content Fragment Models. 
+Adobe Experience Manager (AEM), can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. Using the API a developer can formulate queries that select specific content.This selection process is based on *your* Content Fragment Models. 
 
 This means your project can realize headless delivery of structured content for use in your applications.
 
