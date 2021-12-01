@@ -1,5 +1,5 @@
 ---
-title: Configure Dynamic Media General Setting
+title: Configure Dynamic Media General Settings
 description: Learn how to manage General Settings in Dynamic Media. You can set your publish server name and origin server name here and set an image overwrite option. There are also default upload options for unsharp masking of images, and upload options for how you want to process PostScript, Adobe Photoshop, PDF, and Adobe Illustrator files.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -7,30 +7,35 @@ topic-tags: administering
 content-type: reference
 feature: Image Profiles
 role: User, Admin
-hide: yes
-hidefromtoc: yes
+mini-toc-levels: 4
 exl-id: 
 ---
 
-# Configure Dynamic Media General Setting
+# Configure Dynamic Media General Settings
 
->[!IMPORTANT]
->
->Dynamic Media General Setting is only available if:
->
->* You are running Dynamic Media in Scene7 mode.
->* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5 or in Experience Manager as a Cloud Service.
->* You are an Experience Manager system administrator with administrator privileges.
+Configuring **[!UICONTROL Dynamic Media General Settings]** is available only if:
+
+* You are running Dynamic Media in Scene7 mode. See [Enable Dynamic Media in Scene7 mode](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 or above. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* You are an Experience Manager system administrator with administrator privileges.
+
+Dynamic Media General Settings is intended for use by experienced web site developers and programmers. Adobe Dynamic Media recommends that users who change these publish settings be familiar with Dynamic Media on Adobe Experience Manager and basic imaging technology.
 
 On account creation, Adobe Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account.
 
-See also [Test the Secure Testing Service](/help/assets/dm-publish-settings.md#test-assets-before-making-public).
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
 
-**To configure Dynamic Media General Setting:**
+See also [Optional - Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr more optional configuration tasks.
+
+>[!NOTE]
+>
+>Upgrading from Dynamic Media Classic to Dynamic Media on Adobe Experience Manager? The General Settings page and [Publish Setup](/help/assets/dm-publish-settings.md) page in Dynamic Media are pre-populated with the values taken from your Dynamic Media Classic account. The exceptions are all the values that are listed under the **[!UICONTROL Default upload options]** area of the General Settings page. Those values are already in Experience Manager. As such, any changes that you make under **[!UICONTROL Default upload options]**, across any of the five tabs, by way of the Experience Manager user interface, are reflected in Dynamic Media, not in Dynamic Media Classic. All other settings and values in the General Settings page and the [Publish Setup](/help/assets/dm-publish-settings.md) page are maintained between Dynamic Media Classic and Dynamic Media on Experience Manager.
+
+**To configure Dynamic Media General Settings:**
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
-1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**.
-1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure default publish settings.
+1. In the left rail, select the Tools icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Settings]**.
+1. In the Server page, set your **[!UICONTROL Published Server Name]** and **[!UICONTROL Origin Server Name]**, and then use the five tabs to configure default upload options for Image Editing, and for Postscript, Photoshop, PDF, and Illustrator files.
 
    * [Server](#server-general-setting)
    * [Upload to Application](#upload-to-application)
@@ -51,7 +56,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
 | Option | Description |
 | --- | --- |
-| **[!UICONTROL Published Server Name]** | Required.<br>This server is the live CDN (Content Deliver Network) server used in all system-generated URL calls that are specific to your account. Do not change this server name unless you are instructed to do so by Adobe Technical Support. The name must use `https://` in the path.|
+| **[!UICONTROL Published Server Name]** | Required.<br>The name must use `https://` in the path.<br>This server is the live CDN (Content Deliver Network) server used in all system-generated URL calls that are specific to your account. Do not change this server name unless you are instructed to do so by Adobe Technical Support.|
 | **[!UICONTROL Origin Server Name]** | Required.<br>This server is used for quality assurance testing only. Do not change this server name unless instructed to do so by Adobe Technical Support. |
 
 ## Upload to Application {#upload-to-application}
@@ -62,7 +67,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
     | Overwrite Images option | Description |
     | --- | --- |
-    | **[!UICONTROL Overwrite in current folder, same base name/extension]** | Default.<br>This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created. |
+    | **[!UICONTROL Overwrite in current folder, same base name/extension]** | Default for new Dynamic Media accounts only.<br>This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created. |
     | **[!UICONTROL Overwrite in current folder, same base name regardless of extension]** | Requires that you upload the replacement image to the same folder as the original, however the filename extension can be different from the original. For example, chair.tif replaces chair.jpg. |
     | **[!UICONTROL Overwrite in any folder, same base asset name/extension]** | Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location. |
     | **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** | This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded. |
