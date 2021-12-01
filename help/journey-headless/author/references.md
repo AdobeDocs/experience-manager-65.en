@@ -4,7 +4,6 @@ description: Learn about using references in Content Fragments, for content, oth
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 ---
 # Learn about using references in Content Fragments {#author-headless-references}
 
@@ -70,10 +69,6 @@ Representing these interrelationships can be achieved with Fragment References, 
 
 As an author you're not responsible for defining these relationships (that's done by the Content Architect when creating the Content Fragment Model), but you need to know how to recognize and edit the references.
 
-<!--
-![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
---> 
-
 ### How to author nested fragments {#author-nested-fragment}
 
 Authoring Fragment References is fairly straightforward (though usually the field will not be labelled as **Fragment Reference**). You can either type in the reference directly, or (more likely) select the folder icon to open a browser that allows you to navigate and select the fragment you need. 
@@ -124,8 +119,8 @@ Now that you have learned about references and structure in Content Fragments, t
     * [Content Fragment Models - Properties](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * Getting Started Guides
-  * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+  * [Creating an Assets Folder Headless Quick Start Guide](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* AEM Headless Content Architect Journey
+* [AEM Headless Content Architect Journey](/help/journey-headless/architect/overview.md)
 
-* AEM Headless Translation Journey
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md)
