@@ -4,7 +4,6 @@ description: Learn about the concepts and mechanics of authoring content for you
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 ---
 # Authoring Basics for Headless with AEM {#author-headless-basics}
 
@@ -230,15 +229,15 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
 
   * [Navigation Panel](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 
-  * [The Header](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header)
+  * [The Header](/help/sites-authoring/basic-handling.md#the-header)
   
-  * [Action Toolbar](/help/sites-cloud/authoring/getting-started/basic-handling.md#actions-toolbar)
+  * [Action Toolbar](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-  * [Quick Actions](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
+  * [Quick Actions](/help/sites-authoring/basic-handling.md#quick-actions)
   
-  * [Viewing and Selecting Resources](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+  * [Viewing and Selecting Resources](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
   
-  * [Rail Selector](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+  * [Rail Selector](/help/sites-authoring/basic-handling.md#rail-selector)
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
  
@@ -259,8 +258,8 @@ Now that you have learned the basics, the next step is to [Learn how about Refer
     *  [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * Getting Started Guides
-  * [Creating an Assets Folder Headless Quick Start Guide](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+  * [Creating an Assets Folder Headless Quick Start Guide](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* AEM Headless Content Architect Journey
+* [AEM Headless Content Architect Journey](/help/journey-headless/architect/overview.md)
 
-* AEM Headless Translation Journey
+* [AEM Headless Translation Journey](/help/journey-headless/architect/translation.md)

@@ -1,14 +1,13 @@
 ---
 title: AEM Headless Content Author Journey
-description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to author content for your project.
+description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager, and how to author content for your project.
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 ---
 # Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
 
-In this part of the [AEM Headless Content Author Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand authoring content for headless content delivery with Adobe Experience Manager (AEM) as a Cloud Service.
+In this part of the [AEM Headless Content Author Journey](overview.md), you can learn the (basic) concepts and terminology necessary to understand authoring content for headless content delivery with Adobe Experience Manager (AEM).
 
 ## Objective {#objective}
 
@@ -35,7 +34,7 @@ This means that your content can be delivered to any device, in a wide range of 
 >
 >If you want to learn more about the technical details of Headless CMS you can read more at Learn About CMS Headless Development.
 
-## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
+## Adobe Experience Manager {#aem-cms}
 
 So what is AEM?
 
@@ -74,8 +73,7 @@ Now that you have learned the concepts and terminology, the next step is to [Lea
 
 * AEM Headless Developer Journey
   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
-  * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
 
-* AEM Headless Content Architect Journey
+* [AEM Headless Content Architect Journey](/help/journey-headless/architect/overview.md)
 
-* AEM Headless Content Translation Journey
+* [AEM Headless Content Translation Journey](/help/journey-headless/translation/overview.md)
