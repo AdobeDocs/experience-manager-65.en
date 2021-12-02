@@ -34,11 +34,11 @@ Ensure that you install the appropriate service pack and package as necessary. S
 
 ## Configure Experience Manager using the configuration package {#configure-using-package}
 
-Adobe recommends that you install adobe-asset-link-config configuration package to automate most of the configuration tasks, followed by a few manual tasks. Alternatively, you can configure manually.
+Adobe recommends that you install [adobe-asset-link-config](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/adobe-asset-link-config) configuration package to automate most of the configuration tasks, followed by a few manual tasks. Alternatively, you can [configure manually](#manual-configuration).
 
 >[!CAUTION]
 >
->If your Experience Manager instance is configured for user login with Adobe IMS accounts, do not use the configuration package. Instead, manually configure your Experience Manager instance.
+>If your Experience Manager instance is configured for user login with Adobe IMS accounts, do not use the configuration package. Instead, [manually configure](#manual-configuration) your Experience Manager instance.
 
 1. To open Package Manager, in Experience Manager web interface, access **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Package Share]**. Install `adobe-asset-link-config` package.
 
@@ -46,15 +46,15 @@ Adobe recommends that you install adobe-asset-link-config configuration package 
 
    Set the following properties and save the changes.
 
-   * [!UICONTROL Group Mappings]: Leave empty unless desired. For details, see Group Mapping.
-   * [!UICONTROL Organization]: Enter the organization ID you are using in the Adobe Admin Console. For more information about organization IDs, see Create user group.
+   * [!UICONTROL Group Mappings]: Leave empty unless desired. For details, see [Group Mapping](#group-mapping).
+   * [!UICONTROL Organization]: Enter the organization ID you are using in the Adobe Admin Console. For more information about organization IDs, see [Create user group](https://helpx.adobe.com/enterprise/using/create-user-group.html).
 
 1. Locate **[!UICONTROL Adobe Granite Bearer Authentication Handler]** configuration, and click to edit it. 
    
    Add **[!UICONTROL InDesignAem2]** Client IDs to the **[!UICONTROL Allowed OAuth client ids]** configuration property. 
 
 
-## Manually configure Experience Manager {#configure-manually}
+## Manually configure Experience Manager {#manual-configuration}
 
 Manually configure Experience Manager if you choose not to use a configuration package or if your Experience Manager deployment is configured to support user login with Adobe IMS accounts. To configure manually, follow these steps.
 
@@ -68,8 +68,8 @@ Manually configure Experience Manager if you choose not to use a configuration p
    * [!UICONTROL Token Endpoint]: ` https://ims-na1.adobelogin.com/ims/token/v1`
    * [!UICONTROL Profile Endpoint]: ` https://ims-na1.adobelogin.com/ims/profile/v1`
    * [!UICONTROL Validation URL]: ` https://ims-na1.adobelogin.com/ims/validate_token/v1`
-   * [!UICONTROL Organization]: Set to the organization ID in the Adobe Admin Console.
-   * [!UICONTROL Group Mappings]: Leave empty unless you have a special case. For details, see Group Mapping.
+   * [!UICONTROL Organization]: Set to the organization ID in the [Adobe Admin Console](https://adminconsole.adobe.com/).
+   * [!UICONTROL Group Mappings]: Leave empty unless you have a special case. For details, see [Group Mapping](#group-mapping).
 
 1. Locate **[!UICONTROL Adobe Granite Bearer Authentication Handler]** configuration, and click to edit it.
 
@@ -91,7 +91,7 @@ Manually configure Experience Manager if you choose not to use a configuration p
 
    Set the following configuration properties, and click **[!UICONTROL Save]**.
 
-   * [!UICONTROL User Expiration Time and User Membership Expiration]: Time in minutes following by 'm' without space. For example, 15m for fifteen minutes. For details, see Group Mapping.
+   * [!UICONTROL User Expiration Time and User Membership Expiration]: Time in minutes following by 'm' without space. For example, 15m for fifteen minutes. For details, see [Group Mapping](#group-mapping).
    * [!UICONTROL User auto membership]: Do not change
    * [!UICONTROL User Dynamic Membership]: ` Deslect`
 
@@ -159,22 +159,22 @@ Groups in Experience Manager that correspond to and are synchronized with groups
 The following rules apply to group mappings in Experience Manager:
 
 * Ensure that the **[!UICONTROL Group Mappings]** property in **[!UICONTROL Adobe Granite OAuth IMS Provider]** configuration is blank.
-* Adobe Asset Link user group membership is evaluated when the user authenticates and the time period in **[!UICONTROL User Expiration Time]** property in **[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]** configuration has elapsed. Currently, users can be added to and removed from groups in AEM to synchronize with what is found in Adobe IMS.
-* Avoid group name conflicts. Ensure that the names used for groups created in Adobe IMS (to manage users) are different from all AEM system group names.
+* Adobe Asset Link user group membership is evaluated when the user authenticates and the time period in **[!UICONTROL User Expiration Time]** property in **[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]** configuration has elapsed. Currently, users can be added to and removed from groups in Experience Manager to synchronize with what is found in Adobe IMS.
+* Avoid group name conflicts. Ensure that the names used for groups created in Adobe IMS (to manage users) are different from all Experience Manager system group names.
 
-  For example, make sure that they are different from the `dam-users` group and the groups created by the AEM administrator.
+  For example, make sure that they are different from the `dam-users` group and the groups created by the Experience Manager administrator.
   
-  An Adobe IMS group whose name conflicts with the name of an AEM system group or manually created group are not used to control user permissions.
-* If an Adobe IMS user connects to an AEM instance, on which the user's name conflicts with a previously created AEM user, the Adobe IMS user is given another name with numbers added to make it unique.
+  An Adobe IMS group whose name conflicts with the name of an Experience Manager system group or manually created group are not used to control user permissions.
+* If an Adobe IMS user connects to an Experience Manager instance, on which the user's name conflicts with a previously created Experience Manager user, the Adobe IMS user is given another name with numbers added to make it unique.
 
 **Setup first-time access control**
 
-Users who connect through Adobe Asset Link can only view and interact with assets after they are granted the required permission. The Group Mapping section above discusses how are user groups created in Experience Manager, which correspond to and are synchronized with user groups in your organization within Adobe IMS. It is recommended that the AEM administrators use these groups to manage access control for Adobe Asset Link users.
+Users who connect through Adobe Asset Link can only view and interact with assets after they are granted the required permission. The [Group Mapping](#group-mapping) section above discusses how are user groups created in Experience Manager, which correspond to and are synchronized with user groups in your organization within Adobe IMS. It is recommended that the AEM administrators use these groups to manage access control for Adobe Asset Link users.
 
-For each AEM group that is synchronized with an Adobe IMS group (which is used to manage user access control):
+For each Experience Manager group that is synchronized with an Adobe IMS group (which is used to manage user access control):
 
 1. Ensure that the group has a member that can be used for an initial connection from Adobe Asset Link.
-1. Use that user to log in to Adobe Asset Link, and connect to AEM. This connection is expected to fail.
+1. Use that user to log in to Adobe Asset Link, and connect to Experience Manager. This connection is expected to fail.
 1. In AEM, locate the group that corresponds to the group in Adobe IMS, and grant it the desired access control. For example, the new group is made a member of the dam-users group.
 1. Close Adobe Asset Link and restart the Creative Cloud application.
 1. To verify that the user has the expected access, reopen Adobe Asset Link.
@@ -183,39 +183,42 @@ Once these steps are performed, other users in the same group can connect to Exp
 
 ## Manage Experience Manager users to work with Adobe Asset Link {#manage-users}
 
-Adobe Asset Link users are able to connect with AEM when they are signed in to their Creative Cloud application. This authentication uses Adobe IMS technology and creates user information in AEM, if it does not exist. It is common for AEM enterprise customers to manage their users with an external identity provider that is integrated with AEM. Identity providers include Adobe IMS and other products that use the SAML and LDAP protocols. Alternatively, users can be created and managed locally in AEM.
+Adobe Asset Link users are able to connect with Experience Manager when they are signed in to their Creative Cloud application. This authentication uses Adobe IMS technology and creates user information in Experience Manager, if it does not exist. It is common for AEM enterprise customers to manage their users with an external identity provider that is integrated with Experience Manager. Identity providers include Adobe IMS and other products that use the SAML and LDAP protocols. Alternatively, users can be created and managed locally in AEM.
 
-Users who connect to AEM from Adobe Asset Link have no conflict with existing user information stored in AEM from previous direct sign-in, if:
+Users who connect to Experience Manager from Adobe Asset Link have no conflict with existing user information stored in Experience Manager from previous direct sign-in, if:
 
-* All user names used for direct sign-in to AEM are different from user names used in Adobe IMS for Creative Cloud sign-in.
-* Adobe IMS is used as the identity provider for direct AEM sign-in.
-* Users connects to AEM from Adobe Asset Link before direct AEM sign-in with the same account.
+* All user names used for direct sign-in to Experience Manager are different from user names used in Adobe IMS for Creative Cloud sign-in.
+* Adobe IMS is used as the identity provider for direct Experience Manager sign-in.
+* Users connects to Experience Manager from Adobe Asset Link before direct Experience Manager sign-in with the same account.
 
 
 On the other hand, the user information created as a result of direct AEM sign-in must be updated to work with Adobe Asset Link, in the following scenarios:
 
-* The same user name, such as the user’s Email address, is used for both—the account in Creative Cloud, which uses Adobe IMS, and the account in an external identity provider other than Adobe IMS.
+* The same user name, such as the user’s Email address, is used for both - the account in Creative Cloud, which uses Adobe IMS, and the account in an external identity provider other than Adobe IMS.
 * The same user name is used for both—the account in Creative Cloud and a local AEM account.
 * The Creative Cloud accounts in Adobe IMS are Federated IDs, which are served by the same external identity provider that is integrated with AEM for direct sign-in.
 
-AEM users created through these scenarios do not have a property that is required for users, which are synchronized with Adobe IMS. To update such users in AEM to work with Adobe Asset Link:
+The users created through these scenarios do not have a property that is required for users, which are synchronized with Adobe IMS. 
 
-1. In the AEM web console, locate Apache Jackrabbit Oak External PrincipalConfiguration configuration and click  to edit it. Deselect the External Identity Protection check box, and click Save.
-1. To access User Management interface of AEM, navigate to Tools > Security > Users. Select the user you want to update, then make a note of the end of your browser’s URL path for that user, starting with /home/users. Alternatively, you can search for the user name using AEM CRXDE. The user path looks something like /home/users/x/xTac082TDh-guJzzG7WM.
-1. Use AEM CRXDE to navigate to the user path, select the user node, and view the properties of the node by selecting the Properties tab in the lower-middle area. This node has a jcr:primaryType property value of rep:User.
-1. At the bottom of the Properties tab area enter a Name value of rep:externalId, Type value of String, and a Value value of <rep:authorizableId>;ims, where <rep:authorizableId> is the value of the rep:authorizableId property of the node. (A semicolon is used with no spaces to separate the rep:authorizableId value from ims.)
-1. Click the Add button to the right of your new entry, and then click Save All in the upper left corner of the browser window, or press Command + S / Ctrl + S.
+To update such users in Experience Manager to work with Adobe Asset Link:
+
+1. In the Experience Manager web console, locate **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** configuration and click to edit it. Deselect the **[!UICONTROL External Identity Protection]** check box, and click **[!UICONTROL Save]**.
+1. To access User Management interface in Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Select the user you want to update, then make a note of the end of your browser’s URL path for that user, starting with `/home/users`. Alternatively, you can search for the user name in CRXDE. A sample user path: `/home/users/x/xTac082TDh-guJzzG7WM`.
+1. In CRXDE, navigate to the user path, select the user node, and view the properties of the node by selecting the **[!UICONTROL Properties]** tab in the lower-middle area. This node has a `jcr:primaryType` property value of `rep:User`.
+1. At the bottom of the **[!UICONTROL Properties]** tab area enter a `Name` value of `rep:externalId`, `Type` value of `String`, and a `Value` value of `rep:authorizableId`;`ims`, where `rep:authorizableId` is the value of the `rep:authorizableId` property of the node. (A semicolon is used with no spaces to separate the `rep:authorizableId` value from `ims`.)
+1. Click the **[!UICONTROL Add]** button to the right of your new entry, and then click **[!UICONTROL Save All]**.
 1. Repeat steps 2 through 5 for any other users you want to upgrade to work with Adobe Asset Link.
-1. With the AEM web console, locate Apache Jackrabbit Oak External PrincipalConfiguration configuration and click  to edit it. Deselect the External Identity Protection check box, and click Save.
+1. In the Experience Manager web console, locate **[!UICONTROL Apache Jackrabbit Oak External PrincipalConfiguration]** configuration and click to edit it. Deselect the **[!UICONTROL External Identity Protection]** check box, and click **[!UICONTROL Save]**.
  
-Note:
-If the services are not restored in a few minutes, restart AEM to allow successful authentications.
+>[!NOTE]
+>
+>If the services are not restored in a few minutes, restart Experience Manager to allow successful authentications.
 
 After this change, an updated AEM user can connect with Adobe Asset Link and continues to be able to use the method of direct sign-in to AEM that was used before the update. On successful authentication with Adobe IMS, the AEM user profile information is synchronized with the user profile in Adobe IMS.
 
 There is a method by which a bulk migration of multiple AEM users can be performed to enable them to work with Adobe Asset Link. Contact Adobe Care for more information and assistance with enabling this option.
 
-As an alternative to the steps, in certain circumstances, an Adobe Asset Link user may be provided quick access to AEM. These are cases where the pre-existing user information is found and deleted with AEM User Management or AEM CRXDE prior to their connection with Adobe Asset Link. New user information is created in AEM following the connection. Use this approach only if you are certain that there is no important data that is added as a child of the user node. Such extra data is any node that is the child of the user node other than tokens, preferences, profile, profiles, profiles/public, and rep:policy/* nodes.
+As an alternative to the steps, in certain circumstances, an Adobe Asset Link user may be provided quick access to AEM. These are cases where the pre-existing user information is found and deleted with AEM User Management or AEM CRXDE prior to their connection with Adobe Asset Link. New user information is created in AEM following the connection. Use this approach only if you are certain that there is no important data that is added as a child of the user node. Such extra data is any node that is the child of the user node other than `tokens`, `preferences`, `profile`, `profiles`, `profiles/public`, and `rep:policy/*` nodes.
 
 ## Auto-start workflow to process assets conditionally {#auto-start-workflow}
 
@@ -223,14 +226,14 @@ In Experience Manager 6.4 and Experience Manager 6.5, the administrators can con
 
 This configurations is useful for line-of-business users and marketers, for example, to create a custom workflow on a few specific folders. Say all assets from an agency's photoshoot can be watermarked or all assets uploaded by a freelancer can be processed to create specific renditions.
 
-For more information and for Experience Manager configuration, see auto-execute workflow on assets.
+For more information and for Experience Manager configuration, see [auto-execute workflow on assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html#auto-execute-workflow-on-some-assets).
 
 
 ## Create a custom index in AEM 6.4.x versions {#create-custom-index}
 
 AEM contains indexes that are used for querying. Create the following custom index for specified version. AEM 6.5.0 contains this index by default. Adobe Asset Link requires this to determine which assets a user has checked out. 
 
-1. In CRXDE, locate `/oak:index` node. Create a new node named `cqDrivelock`. Set its `Type` to `oak:QueryIndexDefinition`.
+1. In CRXDE, locate `/oak:index` node. Create a new node named `cqDrivelock` and set its `Type` to `oak:QueryIndexDefinition`.
 
 1. Add the following properties to the new node and save the changes:
 
@@ -241,13 +244,35 @@ AEM contains indexes that are used for querying. Create the following custom ind
 
 ## Configure visual or similarity search {#configure-visual-similarity-search}
 
-Visual Search capability allows you to search for visually similar assets in the AEM Assets repository, using the Adobe Asset Link panel. The functionality is available in 6.5.0 or later versions and only the indexed assets are searched. For more info, see how to configure visual search.
+Visual Search capability allows you to search for visually similar assets in the AEM Assets repository, using the Adobe Asset Link panel. The functionality is available in 6.5.0 or later versions and only the indexed assets are searched. For more information, see [how to configure visual search](https://helpx.adobe.com/experience-manager/6-5/assets/using/search-assets.html#configvisualsearch).
+
+## Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
+
+AEM provides renditions that are used for placement only (FPO). These FPO renditions have a small file size but are of the same aspect ratio. If an FPO rendition is not available for an asset, Adobe InDesign uses the original asset instead. This fallback mechanism ensures that the creative workflow proceeds without any breaks. for more information, see [generate FPO renditions](/help/assets/configure-fpo-renditions.md).
+
 
 ## Integrate with Adobe Stock {#adobe-stock-integration}
 
 Organizations integrate their Adobe Stock accounts with Experience Manager Assets. It helps marketers to make licensed high-quality, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets available for their creative and marketing projects. Creative professionals can use these assets using the Asset Link panel.
 
-To Integrate with Adobe Stock, see Adobe Stock assets in Experience Manager Assets. Experience Manager 6.4.2 or later is required for integration with Adobe Stock.
+To Integrate with Adobe Stock, see [Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md). Experience Manager 6.4.2 or later is required for integration with Adobe Stock.
 
-## Tips and limitations {#tips-limitations}
+
+## Troubleshoot Experience Manager related issues {#troubleshoot}
+
+
+If you face issues when configuring or using Adobe Asset Link, try the following:
+
+* Ensure that your deployment meets the prerequisites. Specifically, ensure that the appropriate feature packs or packages are installed.
+* Contact your organization's partner or system integrator.
+* If your Creative Cloud users are unable to check in the checked out assets, then check for issue because of casing of domain names in the email IDs. To fix, see [manual configuration](#manual-configuration).
+* For more info, see [troubleshoot Asset Link](https://helpx.adobe.com/enterprise/kb/asset-link-troubleshooting.html).
+
+
+>[!MORELIKETHIS]
+>
+>* [About Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [Use Asset Link in Creative Cloud desktop app and manage assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+
+
 
