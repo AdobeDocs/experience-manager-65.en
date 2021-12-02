@@ -179,7 +179,7 @@ For each AEM group that is synchronized with an Adobe IMS group (which is used t
 1. Close Adobe Asset Link and restart the Creative Cloud application.
 1. To verify that the user has the expected access, reopen Adobe Asset Link.
 
-Once these steps are performed, other users in the same group can connect to Experience Manager with Adobe Asset Link in their first attempt. They automatically have the same permissions as the other users in the group
+Once these steps are performed, other users in the same group can connect to Experience Manager with Adobe Asset Link in their first attempt. They automatically have the same permissions as the other users in the group.
 
 ## Manage Experience Manager users to work with Adobe Asset Link {#manage-users}
 
@@ -216,6 +216,38 @@ After this change, an updated AEM user can connect with Adobe Asset Link and con
 There is a method by which a bulk migration of multiple AEM users can be performed to enable them to work with Adobe Asset Link. Contact Adobe Care for more information and assistance with enabling this option.
 
 As an alternative to the steps, in certain circumstances, an Adobe Asset Link user may be provided quick access to AEM. These are cases where the pre-existing user information is found and deleted with AEM User Management or AEM CRXDE prior to their connection with Adobe Asset Link. New user information is created in AEM following the connection. Use this approach only if you are certain that there is no important data that is added as a child of the user node. Such extra data is any node that is the child of the user node other than tokens, preferences, profile, profiles, profiles/public, and rep:policy/* nodes.
+
+## Auto-start workflow to process assets conditionally {#auto-start-workflow}
+
+In Experience Manager 6.4 and Experience Manager 6.5, the administrators can configure workflows to automatically execute and process assets based on pre-defined conditions.
+
+This configurations is useful for line-of-business users and marketers, for example, to create a custom workflow on a few specific folders. Say all assets from an agency's photoshoot can be watermarked or all assets uploaded by a freelancer can be processed to create specific renditions.
+
+For more information and for Experience Manager configuration, see auto-execute workflow on assets.
+
+
+## Create a custom index in AEM 6.4.x versions {#create-custom-index}
+
+AEM contains indexes that are used for querying. Create the following custom index for specified version. AEM 6.5.0 contains this index by default. Adobe Asset Link requires this to determine which assets a user has checked out. 
+
+1. In CRXDE, locate `/oak:index` node. Create a new node named `cqDrivelock`. Set its `Type` to `oak:QueryIndexDefinition`.
+
+1. Add the following properties to the new node and save the changes:
+
+   * `Name: type; Type: string; Value: property`
+
+   * `Name: propertyNames; Type: Name[] (click the "Multi" button); Value: cq:drivelock`
+
+
+## Configure visual or similarity search {#configure-visual-similarity-search}
+
+Visual Search capability allows you to search for visually similar assets in the AEM Assets repository, using the Adobe Asset Link panel. The functionality is available in 6.5.0 or later versions and only the indexed assets are searched. For more info, see how to configure visual search.
+
+## Integrate with Adobe Stock {#adobe-stock-integration}
+
+Organizations integrate their Adobe Stock accounts with Experience Manager Assets. It helps marketers to make licensed high-quality, royalty-free photos, vectors, illustrations, videos, templates, and 3D assets available for their creative and marketing projects. Creative professionals can use these assets using the Asset Link panel.
+
+To Integrate with Adobe Stock, see Adobe Stock assets in Experience Manager Assets. Experience Manager 6.4.2 or later is required for integration with Adobe Stock.
 
 ## Tips and limitations {#tips-limitations}
 
