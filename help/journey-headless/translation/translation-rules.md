@@ -4,7 +4,6 @@ description: Learn how to define translation rules to identify content for trans
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 ---
 # Configure Translation Rules {#configure-translation-rules}
 
@@ -43,7 +42,7 @@ Because Content Fragment Models, which define the structure of your Content Frag
 
 >[!TIP]
 >
->Generally the content architect provides the translation specialist with the **Property Name**s of all of the fields needed for translation. These names are needed to configure translation rules. As the translation specialist, you [can find these **Property Name**s yourself](getting-started.md#content-modlels) as previously described in this journey.
+>Generally the content architect provides the translation specialist with the **Property Name**s of all of the fields needed for translation. These names are needed to configure translation rules. As the translation specialist, you [can find these **Property Name**s yourself](getting-started.md#content-models) as previously described in this journey.
 
 ## Creating Translation Rules {#creating-rules}
 
@@ -93,6 +92,6 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 
 ## Additional Resources {#additional-resources}
 
-While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Translate content,](translate-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
+While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Translate content](translate-content.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
-* [Identifying Content to Translate](/help/sites-cloud/administering/translation/rules.md) - Learn how translation rules identify content that needs translating.
+* [Identifying Content to Translate](/help/sites-administering/tc-rules.md) - Learn how translation rules identify content that needs translating.

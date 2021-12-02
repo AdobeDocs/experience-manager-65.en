@@ -4,7 +4,6 @@ description: Learn how to publish your translated content and update the transla
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 ---
 # Publish Translated Content {#publish-content}
 
@@ -68,7 +67,7 @@ Under this path you have sub-folders for each translation language and can choos
 ![Manage publication options](assets/manage-publication-options.png)
 1. In the next **Manage Publication** window, confirm that the proper path(s) is/are selected. Tap or click **Publish**.
 ![Manage publication scope](assets/manage-publication-scope.png)
-1. AEM confirms the publish action with a pop-up message at the bottom of the screen.
+1. AEM confirms the publish action with a pop-up message at the top of the screen.
 ![Resources published banner](assets/resources-published-message.png)
 
 Your translated headless content is now published! It can now be accessed and consumed by your headless services.
@@ -107,9 +106,13 @@ The content is added to the existing translation project. To view the translatio
 1. Tap or click the project that you just updated.
 1. Tap or click the language or one of the languages that you updated.
 
+You see that new job cards are added to the project as appropriate.
+
+<!--
 You see that a new job card was added to the project. In this example, another Spanish translation was added.
 
 ![Additional translation job added](assets/additional-translation-job.png)
+-->
 
 You may notice that the statistics listed on the new card (number of assets and content fragments) is different. This is because AEM recognizes what has changed since the last translation and only includes the content that needs to be translated. This includes re-translation of updated content as well as the first-time translation of new content.
 
@@ -158,7 +161,7 @@ You are now ready to translate your own headless content in AEM. However AEM is 
 
 ## Additional Resources {#additional-resources}
 
-* [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
-* [Authoring concepts](/help/sites-cloud/authoring/getting-started/concepts.md) - Learn about the author and publish model of AEM in more detail. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
-* [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Learn about the additional features available when publishing content. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
-* [Authoring Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.
+* [Managing Translation Projects](/help/sites-administering/tc-manage.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
+* [Authoring concepts](/help/sites-authoring/author.md) - Learn about the author and publish model of AEM in more detail. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [Publishing Pages](/help/sites-authoring/publishing-pages.md) - Learn about the additional features available when publishing content. This document is focused on authoring pages rather than Content Fragments, but the theory still applies.
+* [Authoring Environment and Tools](/help/sites-authoring/author-environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.

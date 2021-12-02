@@ -4,7 +4,6 @@ description: Use the translation connector and rules to translate your headless 
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 ---
 # Translate Content {#translate-content}
 
@@ -76,7 +75,7 @@ For translation project managers, it is often necessary to manually select speci
 1. Navigate to **Navigation** -&gt; **Projects**.
 1. Tap or click **Create** -&gt; **Folder** to create a folder for your projects.
    * This is optional, but helpful to organize your translation efforts.
-1. In the **Create Project** window, add a **Title** for the folder and then tap or click **Create**.
+1. In the **Create Folder** window, add a **Title** for the folder and then tap or click **Create**.
 
    ![Create project folder](assets/create-project-folder.png)
 
@@ -131,7 +130,6 @@ To see the detail of the headless content included in this project:
 ![Translation Job detail](assets/translation-job-detail.png)
 1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
 1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
-
 ![Translation Job options](assets/translation-job-options.png)
 
 Typically the content for the translation job starts in the **Draft** state as indicated by the **State** column in the **Translation Job** window.
@@ -171,8 +169,7 @@ To add content to a translation job:
    ![Content added to translation job](assets/content-added.png)
 
 1. Tap or click the selection checkbox for a line item to see further options such as the option to delete it from the job or view it in the Content Fragments or Assets consoles.
-
-![Translation Job options](assets/translation-job-options.png)
+![Translation Job options](assets/translation-job-options-manual.png)
 
 1. Repeat these steps to include all required content in the job.
 
@@ -188,11 +185,11 @@ Typically the content for the translation job starts in the **Draft** state as i
 
 To start the translation job, return to the translation project overview and tap or click the chevron button at the top of the **Translation Job** card and select **Start**.
 
-![Start translation job](assets/start-translation-job.png)
+![Start translation job](assets/start-translation-job-manual.png)
 
 AEM now communicates with your translation configuration and connector to send the content to the translation service. You can view the progress of the translation by returning to the **Translation Job** window and viewing the **State** column of the entries.
 
-![Translation Job approved](assets/translation-job-approved.png)
+![Translation Job approved](assets/translation-job-approved-manual.png)
 
 Machine translations automatically return with a state of **Approved**. Human translation allows for more interaction, but is beyond the scope of this journey.
 
@@ -216,7 +213,7 @@ The project's purpose is to collect all the resources related to a translation i
 /content/dam/wknd/es
 ```
 
-If you navigate to this folder via **Navigation** -&gt; **Files** -&gt; **Assets**, you see the translated content.
+If you navigate to this folder via **Navigation** -&gt; **Assets** -&gt; **Files**, you see the translated content.
 
 ![Translated content folder structure](assets/translated-file-content.png)
 
@@ -244,5 +241,5 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 
 While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
-* [Managing Translation Projects](/help/sites-cloud/administering/translation/managing-projects.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
-* [Authoring Environment and Tools](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.
+* [Managing Translation Projects](/help/sites-administering/tc-manage.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
+* [Authoring Environment and Tools](/help/sites-authoring/author-environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.

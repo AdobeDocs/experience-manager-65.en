@@ -4,7 +4,6 @@ description: Learn how to connect AEM to a translation service.
 index: yes
 hide: no
 hidefromtoc: no
-exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 ---
 # Configure the Translation Connector {#configure-connector}
 
@@ -133,5 +132,5 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 
 While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Configure translation rules](translation-rules.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
-* [Configuring the Translation Integration Framework](/help/sites-cloud/administering/translation/integration-framework.md) - Review a list of selected translation connectors and learn how to configure the Translation Integration Framework to integrate with third-party translation services.
-* [Connecting to Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) - AEM provides a trial Microsoft Translation account for testing purposes.
+* [Configuring the Translation Integration Framework](/help/sites-administering/tc-tic.md) - Review a list of selected translation connectors and learn how to configure the Translation Integration Framework to integrate with third-party translation services.
+* [Connecting to Microsoft Translator](/help/sites-administering/tc-msconf.md) - AEM provides a trial Microsoft Translation account for testing purposes.
