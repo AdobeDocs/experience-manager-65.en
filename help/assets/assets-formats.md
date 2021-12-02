@@ -205,11 +205,11 @@ In addition to the above functionality, consider the following:
 | AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vector animation files) |
 | M4V | Apple iTunes | H264/AVC | &minus; |
-| MFX | MPEG-2  | Apple ProRes422 | &minus; |
 | MKV | Matroska | H264/AVC | &minus; |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 & HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC (all profiles) | &minus; |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | &minus; |
+| MXF | MXF  | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | &minus; |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | &minus; |
 | WebM | WebM | Google VP8 | &minus; |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
