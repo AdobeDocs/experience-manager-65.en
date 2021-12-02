@@ -12,13 +12,13 @@ exl-id:
 
 To configure Experience Manager Assets to be used with Asset Link, implement the following tasks. Use Experience Manager administrator account to do the configuration:
 
-1. Install the packages as required. Details are in prerequisites.
+1. Install the packages as required. Details are in [prerequisites](#prerequisites).
 
-1. Configure Experience Manager either manually or using a package.
+1. Configure Experience Manager either [manually](#manual-configuration) or using a package.
 
-1. Manage user access control to map Creative Cloud licensed users with Experience Manager users.
+1. Manage [user access control](#user-access) to map Creative Cloud licensed users with Experience Manager users.
 
-1. Create custom query index, configure FPO renditions for InDesign, configure Adobe Stock integration, and configure visual or similarity search. 
+1. Create [custom query index](#create-custom-index), configure [FPO renditions](/help/assets/configure-fpo-renditions.md) for InDesign, configure [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md), and configure [visual or similarity search](https://helpx.adobe.com/experience-manager/6-5/assets/using/search-assets.html#configvisualsearch). 
 
 ## Prerequisites and support for various functionalities {#prerequisites}
 
@@ -273,6 +273,7 @@ If you face issues when configuring or using Adobe Asset Link, try the following
 >
 >* [About Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 >* [Use Asset Link in Creative Cloud desktop app and manage assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Configure Adobe Experience Manager Assets as a Cloud Service to use with AAL](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
 
 
 
