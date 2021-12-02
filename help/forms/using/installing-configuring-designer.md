@@ -39,16 +39,16 @@ Designer is available as a stand-alone installer and is also bundled with WorkBe
 
 Alternatively, you can install the Designer through command line using passive or silent mode.
 
-* Passive command-line install: The installer displays a progress bar that indicates that the installation is in progress but no prompts or error messages are displayed. Once launched, you cannot cancel the installation. Use of the `norestart` command ensures that the installer does not restart the computer after installation.
+* Passive command-line install: The installer displays a progress bar that indicates that the installation is in progress but no prompts or error messages are displayed. Once launched, you cannot cancel the installation.
 
 ```shell
-msiexec /i "<path>\Designer.msi" /passive /norestart SERIALNUMBER=****-****-****-****-****-****
+msiexec /i "<path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
 ```
 
 * Silent command-line install: The installer runs the installation without displaying a user interface. No prompts, messages, or dialog boxes are displayed. Once launched, you cannot cancel the installation.
 
 ```shell
-msiexec /i "<path>\Designer.msi" /quiet /norestart SERIALNUMBER=****-****-****-****-****-****
+msiexec /i "<path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
 ```
 
 
