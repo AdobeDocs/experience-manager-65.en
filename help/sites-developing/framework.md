@@ -87,9 +87,6 @@ Tag referencing non-existing paths or paths that do not point to a cq:Tag node a
 
 The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository:
 
-The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository :
-The following table shows some sample TagIDs, their elements, and how the TagID resolves to an absolute path in the repository :
-
 <table>
  <tbody>
   <tr>
