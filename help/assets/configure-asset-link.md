@@ -15,7 +15,7 @@ To configure Experience Manager Assets to be used with Asset Link, implement the
 
 1. Install the packages as required. Details are in [prerequisites](#prerequisites).
 
-1. Configure Experience Manager either [manually](#manual-configuration) or using a package.
+1. Configure Experience Manager either [manually](#manual-configuration) or using a [package](#configure-using-package).
 
 1. To map Creative Cloud licensed users with Experience Manager users, manage [user access control](#user-access).
 
