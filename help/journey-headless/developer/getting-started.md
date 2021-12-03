@@ -1,9 +1,8 @@
 ---
-title: Getting Started with AEM Headless as a Cloud Service
+title: Getting Started with AEM Headless
 description: In this part of the AEM Headless Developer Journey, learn about AEM Headless prerequisites.
-exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 ---
-# Getting Started with AEM Headless as a Cloud Service {#getting-started}
+# Getting Started with AEM Headless {#getting-started}
 
 In this part of the [AEM Headless Developer Journey,](overview.md) learn about what is required to get your own project started with AEM Headless.
 
@@ -135,7 +134,7 @@ For any successful project, it is important to clearly define not only the requi
 
 It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and allows you to establish a definition of done.
 
-The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you’ve built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) and find the section that better suits what you want to accomplish.
+The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you’ve built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) and find the section that better suits what you want to accomplish.
 
 ### Roles and Responsibilities {#roles-responsibilities}
 
@@ -269,20 +268,24 @@ You should continue your AEM headless journey by next reviewing the document [Pa
 
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Path to Your First Experience Using AEM Headless,](path-to-first-experience.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
+<!-- HM-Links
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [An Introduction to the Architecture of Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Understand AEM as a Cloud Service's structure
+-->
+
+* [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
-* [Authoring Concepts](/help/sites-cloud/authoring/getting-started/concepts.md) - Technical documentation for the authoring environment of AEM including details on the author-publish setup
-* [Publishing Pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) - Technical documentation for publishing content on AEM
-* [Naming Conventions](/help/implementing/developing/introduction/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
-* [Multi Site Manager and Translation](/help/sites-cloud/administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
-* [AEM workflows](/help/sites-cloud/authoring/workflows/overview.md) - Technical documentation on how to automate workflows in AEM
+* [Authoring Concepts](/help/sites-authoring/author.md) - Technical documentation for the authoring environment of AEM including details on the author-publish setup
+* [Publishing Pages](/help/sites-authoring/publishing-pages.md) - Technical documentation for publishing content on AEM
+* [Naming Conventions](/help/sites-developing/naming-conventions.md) - Technical documentation of page naming restrictions in AEM
+* [Multi Site Manager and Translation](/help/sites-administering/msm-and-translation.md) - Technical documentation on AEM's powerful translation features
+* [AEM workflows](/help/sites-authoring/workflows.md) - Technical documentation on how to automate workflows in AEM
 * [Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation for Content Fragments.
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation for Content Fragment Models.
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
 * [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
-* [Assets REST API](/help/assets/content-fragments/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
+* [Assets REST API](/help/assets/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
 * [Persisted Queries](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - Technical documentation on persisted queries in AEM
-* [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM
+* [Headful and Headless in AEM](/help/sites-developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM

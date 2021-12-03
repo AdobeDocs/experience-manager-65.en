@@ -1,7 +1,6 @@
 ---
 title: How to Model Your Content
 description: In this part of the AEM Headless Developer Journey, learn how to model your content for AEM Headless delivery using Content Modeling with Content Fragment Models and Content Fragments.
-exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 ---
 # How to Model Your Content {#model-your-content}
 
@@ -9,7 +8,7 @@ In this part of the [AEM Headless Developer Journey](overview.md), you can learn
 
 ## The Story So Far {#story-so-far}
 
-At the beginning [Learn About CMS Headless Development](learn-about.md) covered headless content delivery and why it should be used. Then [Getting Started with AEM Headless as a Cloud Service](getting-started.md) described AEM Headless in the context of your own project.
+At the beginning [Learn About CMS Headless Development](learn-about.md) covered headless content delivery and why it should be used. Then [Getting Started with AEM Headless](getting-started.md) described AEM Headless in the context of your own project.
 
 In the previous document of the AEM headless journey, [Path to Your First Experience Using AEM Headless](path-to-first-experience.md), you then learned the steps needed to implement your first project. After reading it you should:
 

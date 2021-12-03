@@ -1,7 +1,6 @@
 ---
 title: AEM Headless Developer Journey
 description: AEM Headless CMS Documentation. Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
-exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 ---
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 
@@ -54,14 +53,18 @@ Although you can go directly to a particular part of the journey, many concepts 
 |---|---|---|
 |0|AEM Headless Developer Journey|This document|
 |1|[Learn about CMS Headless Development](learn-about.md)|Learn about Headless Technology and when to use it.|
-|2|[Getting Started with AEM Headless as a Cloud Service](getting-started.md)|Learn about AEM Headless prerequisites|
+|2|[Getting Started with AEM Headless](getting-started.md)|Learn about AEM Headless prerequisites|
 |3|[Path to your first experience using AEM Headless](path-to-first-experience.md)|Setup your development environment and learn how to integrate a simple app with AEM Headless|
 |4|[How to model your content](model-your-content.md)|Learn how to model your content structure. Then realize that structure for Adobe Experience Manager (AEM) using Content Fragments Models and Content Fragments, for reuse across channels.|
 |5|[How to access your content via AEM delivery APIs](access-your-content.md)|Learn how to use GraphQL queries to access your Content Fragments content.|
 |6|[How to update your content via AEM Assets APIs](update-your-content.md)|Learn how to use REST API to access and update your Content Fragments content.|
 |7|[How to put it all together - your app and your content in AEM Headless](put-it-all-together.md)|Learn how to take your AEM Project and prepare it for going live with the AEM Headless SDK.|
+|8|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
+
+<!-- HM-Links
 |8|[How to go live with your headless application](go-live.md)|Learn how to deploy application live and take your local code in Git and move it to Cloud Manager Git for CI/CD pipeline.|
 |9|[Optional - How to create single page applications (SPAs) with AEM](create-spa.md)|Once you understand AEM's headless features, explore how to combine headful and headless delivery and learn how you can create editable SPAs using AEM's SPA Editor framework.|
+--> 
 
 ## What's Next {#what-is-next}
 
@@ -80,8 +83,8 @@ Documentation journeys show you how AEM solves a business problem by providing a
 
 As such journeys are designed to stand on their own. However a number of them can be related to each other. Check out these additional journeys for more information on how AEM's powerful features work together.
 
-* [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technicall inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
+* [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technically inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
-* [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
-* [AEM as a Cloud Service technical documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
+* [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager, and how to model content for your project.
+* [AEM technical documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
