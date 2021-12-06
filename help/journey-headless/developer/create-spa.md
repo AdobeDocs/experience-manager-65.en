@@ -41,7 +41,7 @@ There are a number of requirements before you begin working with SPAs in AEM.
 
 * Development experience creating SPAs with React or Angular frameworks
 * Basic AEM skills creating Content Fragments and using the editor
-* Be sure to review the document [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) in order to understand the various levels of SPA integration possible.
+* Be sure to review the document [Headful and Headless in AEM](/help/sites-developing/headful-headless.md) in order to understand the various levels of SPA integration possible.
 
 ### Tools {#tools}
 
@@ -99,14 +99,14 @@ For a full description of how to make an external SPA editable in AEM, see the [
 
 To gets started developing your own SPAs for AEM, review the following documents:
 
-* [SPA WKND Tutorial](/help/implementing/developing/hybrid/wknd-tutorial.md)
-* [Getting Started Using React](/help/implementing/developing/hybrid/getting-started-react.md)
-* [Getting Started Using Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
+* [SPA WKND Tutorial](/help/sites-developing/spa-wknd.md)
+* [Getting Started Using React](/help/sites-developing/spa-getting-started-react.md)
+* [Getting Started Using Angular](/help/sites-developing/spa-getting-started-angular.md)
 
 If you need to adapt an existing SPA to use it in AEM, review the following documents:
 
-* [The RemotePage Component](/help/implementing/developing/hybrid/remote-page.md)
-* [Editing an External SPA within AEM](/help/implementing/developing/hybrid/editing-external-spa.md)
+* [The RemotePage Component](/help/sites-developing/spa-remote-page.md)
+* [Editing an External SPA within AEM](/help/sites-developing/spa-edit-external.md)
 
 See below for [additional resources](#additional-resources) that can take you deeper into SPA topics in AEM.
 
@@ -114,11 +114,11 @@ See below for [additional resources](#additional-resources) that can take you de
 
 The following are some additional resources that do a deeper dive on some concepts mentioned in this document.
 
-* [Headful and Headless in AEM](/help/implementing/developing/headful-headless.md) - A description of the different delivery models available in AEM
-* [SPA Introduction and Walkthrough.](/help/implementing/developing/hybrid/introduction.md) - A good introduction to SPAs in AEM
-* [Developing SPAs for AEM](/help/implementing/developing/hybrid/developing.md) - Guidelines on how to develop SPAs for AEM
-* [SPA Editor Overview](/help/implementing/developing/hybrid/editor-overview.md) - Details of how the SPA Editor works
-* [Server Side Rendering](/help/implementing/developing/hybrid/ssr.md) - How to configure SSR for AEM SPAs
-* [SPA Reference Documents](/help/implementing/developing/hybrid/reference-materials.md) - JavaScript API references and links to the open source AEM SPA GitHub projects
+* [Headful and Headless in AEM](/help/sites-developing/headful-headless.md) - A description of the different delivery models available in AEM
+* [SPA Introduction and Walkthrough.](/help/sites-developing/spa-walkthrough.md) - A good introduction to SPAs in AEM
+* [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md) - Guidelines on how to develop SPAs for AEM
+* [SPA Editor Overview](/help/sites-developing/spa-overview.md) - Details of how the SPA Editor works
+* [Server Side Rendering](/help/sites-developing/spa-ssr.md) - How to configure SSR for AEM SPAs
+* [SPA Reference Documents](/help/sites-developing/spa-reference-materials.md) - JavaScript API references and links to the open source AEM SPA GitHub projects
 * [Content Fragments](/help/assets/content-fragments/content-fragments.md) - How to create Content Fragments
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Maven template that creates a minimal, best-practices-based Adobe Experience Manager (AEM) project as a starting point for your website
