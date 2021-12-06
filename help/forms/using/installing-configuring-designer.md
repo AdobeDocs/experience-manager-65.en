@@ -20,7 +20,7 @@ exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 
 AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation. 
 
-You require administrator rights to install or unintall Designer.
+You require administrator rights to install or uninstall Designer.
 
 ## Install Designer {#install-designer}
 
