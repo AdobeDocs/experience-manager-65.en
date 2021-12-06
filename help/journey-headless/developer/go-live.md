@@ -1,11 +1,10 @@
 ---
 title: How to Go Live with Your Headless Application
-description: In this part of the AEM Headless Developer Journey, learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
-exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
+description: In this part of the AEM Headless Developer Journey, learn how to deploy a headless application live.
 ---
 # How to Go Live with Your Headless Application {#go-live}
 
-In this part of the [AEM Headless Developer Journey](overview.md), learn how to deploy a headless application live by taking your local code in Git and moving it to Cloud Manager Git for the CI/CD pipeline.
+In this part of the [AEM Headless Developer Journey](overview.md), learn how to deploy a headless application live.
 
 ## The Story So Far {#story-so-far}
 

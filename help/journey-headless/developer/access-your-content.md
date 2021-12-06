@@ -1,7 +1,6 @@
 ---
 title: How to Access Your Content via AEM Delivery APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use GraphQL queries to access your Content Fragments content.
-exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 ---
 # How to Access Your Content via AEM Delivery APIs {#access-your-content}
 
@@ -30,7 +29,7 @@ So...you've got all this content, neatly structured (in Content Fragments), and 
 
 What you need is a way to target specific content, select what you need and return it to your app for further processing.
 
-With Adobe Experience Manager (AEM) as a Cloud Service, you can selectively access your Content Fragments, using the AEM GraphQL API, to return only the content that you need. This means you can realize headless delivery of structured content for use in your applications.
+With Adobe Experience Manager (AEM), you can selectively access your Content Fragments, using the AEM GraphQL API, to return only the content that you need. This means you can realize headless delivery of structured content for use in your applications.
 
 >[!NOTE]
 >
@@ -94,14 +93,14 @@ To help you directly input, and test queries, an implementation of the standard 
 <!--
 ### Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
-The use cases for the AEM GraphQL API can depend on the type of AEM as a Cloud Service environment:
+The use cases for the AEM GraphQL API can depend on the type of AEMenvironment:
 
 * Publish environment; used to: 
   * Query content for JS application (standard use-case)
 
 * Author environment; used to: 
   * Query content for "content management purposes":
-    * GraphQL in AEM as a Cloud Service is currently a read-only API.
+    * GraphQL in AEM is currently a read-only API.
     * The REST API can be used for CR(u)D operations.
 -->
 
@@ -370,5 +369,8 @@ Now that you have learned how to access and query your headless content using th
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
   * [JSON output](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Understand Cross-Origin Resource Sharing (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=en#understand-cross-origin-resource-sharing-(cors))
-* [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL.
+
+<!--
+* [Generating Access Tokens for Server Side APIs](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+-->

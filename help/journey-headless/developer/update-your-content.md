@@ -1,7 +1,6 @@
 ---
 title: How to Update Your Content via AEM Assets APIs
 description: In this part of the AEM Headless Developer Journey, learn how to use the REST API to access and update the content of your Content Fragments.
-exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 ---
 # How to Update Your Content via AEM Assets APIs {#update-your-content}
 
@@ -37,7 +36,7 @@ So why is another API needed?
 
 The Assets HTTP API does allow you to **Read** your content, but it also allows you to **Create**, **Update** and **Delete** content - actions that are not possible with the GraphQL API.
 
-The Assets REST API is available on each out-of-the-box install of a recent Adobe Experience Manager as a Cloud Service version.
+The Assets REST API is available on each out-of-the-box install of a recent Adobe Experience Manager version.
 
 ## Assets HTTP API {#assets-http-api}
 
@@ -48,7 +47,7 @@ The Assets HTTP API encompasses the:
 
 The current implementation of the Assets HTTP API is based on the **REST** architectural style and enables you to access content (stored in AEM) via **CRUD** operations (Create, Read, Update, Delete).
 
-With these operation the API allows you to operate Adobe Experience Manager as a Cloud Service as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses. For example, Single Page Applications (SPA), framework-based or custom, require content provided over an API, often in JSON format.
+With these operation the API allows you to operate Adobe Experience Manager as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses. For example, Single Page Applications (SPA), framework-based or custom, require content provided over an API, often in JSON format.
 
 <!--
 >[!NOTE]
@@ -244,11 +243,11 @@ Usage can differ depending on whether you are using an AEM author or publish env
 
 >[!CAUTION]
 >
->The dispatcher configuration on AEM cloud instances might block access to `/api`.
+>The dispatcher configuration on AEM instances might block access to `/api`.
 
 >[!NOTE]
 >
->For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>For further details, see the API Reference. In particular, [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html).
 
 ### Read/Delivery {#read-delivery}
 
@@ -316,9 +315,9 @@ You should continue your AEM headless journey by next reviewing the document [Ho
 ## Additional Resources {#additional-resources}
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
-* [Content Fragments REST API](/help/assets/content-fragments/assets-api-content-fragments.md)
-  * [API Reference](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html)
+* [Content Fragments REST API](/help/assets/assets-api-content-fragments.md)
+  * [API Reference](/help/assets/assets-api-content-fragments.md#api-reference)
+* [Adobe Experience Manager Assets API - Content Fragments](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
 * [AEM Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM explained](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
