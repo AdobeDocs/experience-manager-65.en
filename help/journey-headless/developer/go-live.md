@@ -95,8 +95,10 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 
 ### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
 
-1. Configure [Token Based Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
+1. Configure [Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
+<!--
 1. Configure [Caching](/help/implementing/dispatcher/caching.md).
+-->
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
@@ -121,6 +123,7 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 * Leverage `Last-modified-since` to refresh resources.
 * Use `_reference` output in JSON file to start downloading assets without having to parse complete JSON files.
 
+<!--
 ## Deploy to Production {#deploy-to-production}
 
 Once you make sure everything has been tested and is working properly, you are ready to push your code updates to a [centralized Git repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
@@ -128,7 +131,9 @@ Once you make sure everything has been tested and is working properly, you are r
 After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
 
 You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+-->
 
+<!--
 ## Performance Monitoring {#performance-monitoring}
 
 In order for users to have the best possible experience when using the AEM headless application, it is important that you monitor key performance metrics, as detailed below:
@@ -146,6 +151,7 @@ In order for users to have the best possible experience when using the AEM headl
   * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
+-->
 
 ## Troubleshooting {#troubleshooting}
 
@@ -190,8 +196,10 @@ If this kind of flexibility is something you need for your project, continue on 
 
 ## Additional Resources {#additional-resources}
 
+<!--
 * [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [The AEM as a Cloud Service SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Set Up A Local AEM Environment](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 * [Use Cloud Manager to Deploy Your Code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Integrate the Cloud Manager Git Repository with an External Git Repository and Deploy a Project to AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html)
+-->
