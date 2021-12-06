@@ -9,19 +9,29 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
-**With the April release we have replaced the CIF Connector from GitHub with the CIF add-on** which is available on the [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The switch to the add-on comes with great benefits for projects:
-
-* Most of the new features will immediately be available on AEM 6.5 (No more waiting for feature side-port)
-* Easy upgradable to new add-on versions
-* Ready for Cloud Service
-
-The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please replace the CIF Connector with the new CIF add-on. Simply package replacement should be possible for most projects.
-
 |Component| System Requirements|
 |:-------|:-----:|
 |CIF add-on |Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL schemas|
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
+
+## Release Date: November, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.11.18.00|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip)|
+|CIF Core Components |2.4.2|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2)|
+|CIF Venia Reference Site| 2021.12.01|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01)|
+
+### What's New {#what-is-new-november}
+
+* Extended myAccount components that are based on Commerce's extensible Peregrine components
+
+![Extended myAccount components](/help/assets/CIF/extended-myAccount-components.png)
+
+* Authors can create ad-hoc Commerce Product Recommendations using additional recommendation types
+
+* Support for gift cards in AEM Storefront
 
 ## Release Date: October, 2021
 
