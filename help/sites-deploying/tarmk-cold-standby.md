@@ -32,10 +32,9 @@ Content is synced linearly between the primary instance and the standby instance
 
 >[!NOTE]
 >
->When the Standby instance is setup, or derived from the Primary node, it only allows access to the following two consoles (for administration related activities):
+>When the Standby instance is setup, or derived from the Primary node, it only allows access to the following console (for administration related activities):
 >
->* CRXDE Lite
->* OSGI Web Console 
+>* OSGI Web Console
 >
 >Other consoles are not accessible.
 
