@@ -112,11 +112,12 @@ To manually configure Experience Manager:
 
 Adobe Asset Link users are able to connect to Experience Manager to allow IMS login from the main Creative Cloud for Enterprise (CCE) org. Experience Manager uses the client IDs to identify the permitted IMS organization. After migration to Business Profiles, it is required to configure the Client ID and Secret Key for the IMS org in  Experience Manager for the Bearer Authentication Handler. For more information on Business Profiles, see [introducing Adobe Profiles](https://helpx.adobe.com/enterprise/kb/introducing-adobe-profiles.html).
 
+Additional configuration is required only if you are using different Adobe IMS organizations for Experience Manager and Creative Cloud for Enterprise (CCE), and a domain trust relationship is established between these two organizations.
+
 >[!NOTE]
 >
 >* The fix for Business Profiles is provided in Experience Manager 6.5.11.0.
->* Additional configuration is required only if the IMS org ID of your Experience Manager instance is different from the IMS org ID of the Creative Cloud for Enterprise (CCE).
->* The existing configuration continues to work if the IMS org ID of your Experience Manager instance and CCE is same.
+>* The existing configuration continues to work if you are using the same Adobe  IMS orgganization with Experience Manager and CCE.
 
 
 **Prerequisites**
