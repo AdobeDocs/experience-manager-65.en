@@ -91,14 +91,15 @@ In order to get a more in depth look at setting up a local development environme
 
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
+<!-- Start of CDN Review -->
+
 Now, it's time to get your AEM headless application ready for launch, by following the best practices outlined below.
 
 ### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
 
 1. Configure [Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
-<!--
-1. Configure [Caching](/help/implementing/dispatcher/caching.md).
--->
+
+1. Configure [Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
@@ -123,17 +124,27 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 * Leverage `Last-modified-since` to refresh resources.
 * Use `_reference` output in JSON file to start downloading assets without having to parse complete JSON files.
 
-<!--
+<!-- End of CDN Review -->
+
 ## Deploy to Production {#deploy-to-production}
 
-Once you make sure everything has been tested and is working properly, you are ready to push your code updates to a [centralized Git repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+Deploying to Production can depend on whether you are on Adobe Managed Services (AMS) and therefore using Cloud Manager.
 
-After the updates have been uploaded to Cloud Manager, they can be deployed to AEM as a Cloud Service using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+## Deploy to Production using Maven {#deploy-to-production-maven}
 
+For a standard deployment (non-AMS) then you can see the [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) for an overview.
+
+## Deploy to Production using Cloud Manager {#deploy-to-production-cloud-manager}
+
+If you are an AMS customer using Cloud Manager, then once you make sure everything has been tested and is working properly, you are ready to push your code updates to a [centralized Git repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html).
+
+After the updates have been uploaded to Cloud Manager, they can be deployed to AEM using [Cloud Manager's CI/CD pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+
+<!-- Can't find a parallel link -->
+<!--
 You can start deploying your code by leveraging the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
 -->
 
-<!--
 ## Performance Monitoring {#performance-monitoring}
 
 In order for users to have the best possible experience when using the AEM headless application, it is important that you monitor key performance metrics, as detailed below:
@@ -142,7 +153,6 @@ In order for users to have the best possible experience when using the AEM headl
 * Verify AEM status pages for current service availability status
 * Access performance reports
   * Delivery Performance
-    * CDN (Fastly) performance – check number of calls, cache rate, error rates and payload traffic
     * Origin servers - number of calls, error rates, CPU loads, payload traffic
   * Author Performance
     * Check number of users, requests and load
@@ -151,7 +161,6 @@ In order for users to have the best possible experience when using the AEM headl
   * Open same reports above filtered to app or space (for example Photoshop desktop, paywall)
   * Use Splunk log APIs to access service and application performance
   * Contact Customer Support in case there are other issues.
--->
 
 ## Troubleshooting {#troubleshooting}
 
@@ -195,6 +204,12 @@ The headless stores in AEM doesn't need to stop here, though. You might remember
 If this kind of flexibility is something you need for your project, continue on to the optional, additional part of the journey, [How to Create Single Page Applications (SPAs) with AEM.](create-spa.md)
 
 ## Additional Resources {#additional-resources}
+
+* [AEM Developing Guide](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+
+* [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+
+* [Cloud Manager for AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en) 
 
 <!--
 * [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
