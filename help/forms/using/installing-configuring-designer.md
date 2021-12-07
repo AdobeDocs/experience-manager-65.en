@@ -18,7 +18,9 @@ exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 
 ## Pre-requisites {#pre-requisites}
 
-AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Ensure that the aforementioned redistributable runtime packages are installed before starting the installation.
+AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation. 
+
+You require administrator rights to install or uninstall Designer.
 
 ## Install Designer {#install-designer}
 
@@ -36,3 +38,19 @@ Designer is available as a stand-alone installer and is also bundled with WorkBe
 1. (Optional) change the default installation path, if you want to install Designer at a location of your choice. Click Next.
 1. Click Back to change any preferences. To install Designer, click Install.
 1. Click Finish when the installation completes.
+
+Alternatively, you can install the Designer through command line using passive or silent mode.
+
+* Passive command-line install: The installer displays a progress bar that indicates that the installation is in progress but no prompts or error messages are displayed. Once launched, you cannot cancel the installation.
+
+```shell
+msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-****-****-****
+```
+
+* Silent command-line install: The installer runs the installation without displaying a user interface. No prompts, messages, or dialog boxes are displayed. Once launched, you cannot cancel the installation.
+
+```shell
+msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
+```
+
+
