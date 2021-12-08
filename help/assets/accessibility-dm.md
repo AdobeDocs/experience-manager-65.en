@@ -54,6 +54,14 @@ See [Keyboard accessibility and navigation](https://experienceleague.adobe.com/d
 All [!DNL Dynamic Media] viewer components support ARIA (Accessible Rich Internet Applications) roles and attributes to improve integration with assistive technologies such as screen readers.
 See the **Assistive technology support** Help topic in any customizing viewer topic in the Dynamic Media Viewers Reference Guide. For example, see [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html) for the Video viewer, or [Assistive technology support](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) for the Interactive Image viewer.
 
+## Closed caption support in [!DNL Dynamic Media] {#closed-caption-support}
+
+Closed caption support for video that is delivered through 
+
+Dynamic Media supports the delivery of videos and adaptive video sets with closed captioning. The captions must be displayed on top of the video content.
+
+See [Video in Dynamic Media - Add captions or subtitles to video](/help/assets/video.md#adding-captions-to-video).
+
 >[!MORELIKETHIS]
 >
 >* [Accessibility for Adobe solutions](https://www.adobe.com/accessibility.html)
