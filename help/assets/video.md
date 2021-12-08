@@ -1078,7 +1078,7 @@ Closed captioning also allows for greater accessibility by people who are deaf o
 >
 >The video player that you use must support the display of captions.
 
-See also [Accessibility in Dynamic Media](help/assets/accessibility-dm.md).
+See also [Accessibility in Dynamic Media](/help/assets/accessibility-dm.md).
 
 Dynamic Media converts caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl and index the content to make the videos more easily discoverable and give customers additional details about the video content.
 
