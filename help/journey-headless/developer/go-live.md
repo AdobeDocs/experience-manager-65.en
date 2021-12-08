@@ -49,7 +49,7 @@ Git is what you will use to manage source control as well as to check in the cha
 
 AEM uses Apache Maven to build projects projects generated from the AEM Maven Project archetype. All major IDEs provide integration support for Maven.
 
-Node.js is a JavaScript runtime environment used to work with the front-end assets of an AEM project’s `ui.frontend` sub-project. Node.js is distributed with npm, is the de facto Node.js package manager, used to manage JavaScript dependencies.
+`Node.js` is a JavaScript runtime environment used to work with the front-end assets of an AEM project’s `ui.frontend` sub-project. `Node.js` is distributed with npm, which is the de facto `Node.js` package manager, used to manage JavaScript dependencies.
 
 ## Components of an AEM System at a Glance {#components-of-an-aem-system-at-a-glance}
 
@@ -59,7 +59,7 @@ A full AEM environment is made up of an Author, Publish, and Dispatcher. These s
 
 * **The Author service** is where internal users create, manage, and preview content.
 
-* **The Publish service** is considered the “Live” environment and is typically what end users interact with. Content, after being edited and approved on the Author service, is distributed to the Publish service. The most common deployment pattern with AEM headless applications is to have the production version of the application connect to an AEM Publish service.
+* **The Publish service** is considered the “Live” environment and is typically what end users interact with. Content, after being edited and approved on the Author service, is distributed (replicated) to the Publish service. The most common deployment pattern with AEM headless applications is to have the production version of the application connect to an AEM Publish service.
 
 * **The Dispatcher** is a static web server augmented with the AEM dispatcher module. It caches web pages produced by the publish instance to improve performance.
 
@@ -95,11 +95,9 @@ In order to get a more in depth look at setting up a local development environme
 
 Now, it's time to get your AEM headless application ready for launch, by following the best practices outlined below.
 
-### Secure and Scale your Headless Application Before Launch {#secure-and-scale-before-launch}
+### Secure your Headless Application Before Launch {#secure-and-scale-before-launch}
 
-1. Configure [Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) with your GraphQL requests
-
-1. Configure [Caching](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+1. Prepare [Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) for your GraphQL requests
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
@@ -128,11 +126,11 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 
 ## Deploy to Production {#deploy-to-production}
 
-Deploying to Production can depend on whether you are on Adobe Managed Services (AMS) and therefore using Cloud Manager.
+Deploying to Production can depend on whether you have a *traditional* AEM instance that deploys using Maven, or are on Adobe Managed Services (AMS) and therefore using Cloud Manager.
 
 ## Deploy to Production using Maven {#deploy-to-production-maven}
 
-For a standard deployment (non-AMS) then you can see the [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) for an overview.
+For a *traditional* deployment (non-AMS) using Maven you can see the [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) for an overview.
 
 ## Deploy to Production using Cloud Manager {#deploy-to-production-cloud-manager}
 
