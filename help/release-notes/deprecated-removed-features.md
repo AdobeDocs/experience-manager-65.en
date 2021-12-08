@@ -22,6 +22,7 @@ Customers are advised to review if they make use of the feature/capability in th
 
 |Area|Feature|Replacement|Version (SP)|
 |---|---|---|---|
+| [!DNL Sites]       | Experience Fragments properties for **Social Media Status**. |   | 6.5.11.0 |
 | [!DNL Sites]       | Content fragment templates, for creating simple content fragments. | [Model-based structured content fragments](/help/assets/content-fragments/content-fragments-models.md) now. |6.5.11.0|
 |Creative Cloud integration|AEM to Creative Cloud Folder Sharing was introduced in AEM 6.2 as a way to give creative users access to assets from AEM, so that they could open them in [!DNL Creative Cloud] applications and upload new files or save changes to AEM. A new capability released in Creative Cloud application, Adobe Asset Link, provides a much better user experience and more powerful access to assets from AEM directly from inside Photoshop, InDesign, and Illustrator. Adobe does not plan to make further enhancements to the AEM to Creative Cloud Folder Sharing integration. While the feature is included in AEM, customers are strongly advised to use replacement solutions.|Customers are advised to switch to new Creative Cloud integration capabilities, including Adobe Asset Link or AEM desktop app. ||
 | Assets |`AssetDownloadServlet` is disabled by default for the publish instances. For more details, see [AEM security checklist](/help/sites-administering/security-checklist.md). | Configuration described at [AEM Security checklist](/help/sites-administering/security-checklist.md). ||
