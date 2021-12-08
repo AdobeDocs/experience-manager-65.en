@@ -6,24 +6,27 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 ---
-# Share asset via a link {#asset-link-sharing}
+# Share asset as a link {#asset-link-sharing}
 
-[!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first log in to [!DNL Assets].
+[!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first login to [!DNL Assets].
 
 >[!PREREQUISITES]
 >
->* You require Edit ACL permission on the folder or the asset that you want to share as a link.
+>* You require `Edit ACL` permission on the folder or the asset that you want to share as a link.
 >* To send emails to the users, configure the SMTP server details in [Day CQ Mail Service](#configmailservice).
 
 ## Share assets {#share-assets}
 
-To generate the URL for assets that you want to share with users, use the [!UICONTROL Link Sharing] dialog. Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them.
+To generate the URL for assets that you want to share with users, use the [!UICONTROL Link Sharing] dialog. 
+
+* The users with administrator privileges or with read permissions at `/var/dam/share` location can view the links shared with them. 
+* The users having read permissions at `/var/dam/jobs/download` location can download assets from the shared link.
 
 1. In the [!DNL Assets] user interface, select the asset to share as a link.
 
 1. From the toolbar, click the **[!UICONTROL Share Link]** ![share assets icon](assets/do-not-localize/assets_share.png). The link that will be created after clicking **[!UICONTROL Share]** is displayed in advance in the [!UICONTROL Share Link] field. The link is not created till you select **[!UICONTROL Submit]**.
 
-   ![Dialog with the Link Share](/help/assets/assets/share-assets-as-link.png)
+   ![Dialog with the Link Share](/assets/share-assets-as-link.png)
 
    *Figure: The dialog to share assets as a link.*
 
