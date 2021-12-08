@@ -49,7 +49,7 @@ Git is what you will use to manage source control as well as to check in the cha
 
 AEM uses Apache Maven to build projects projects generated from the AEM Maven Project archetype. All major IDEs provide integration support for Maven.
 
-`Node.js` is a JavaScript runtime environment used to work with the front-end assets of an AEM project’s `ui.frontend` sub-project. `Node.js` is distributed with npm, which is the de facto `Node.js` package manager, used to manage JavaScript dependencies.
+Node.js is a JavaScript runtime environment used to work with the front-end assets of an AEM project’s `ui.frontend` sub-project. Node.js is distributed with npm, which is the de facto Node.js package manager, used to manage JavaScript dependencies.
 
 ## Components of an AEM System at a Glance {#components-of-an-aem-system-at-a-glance}
 
