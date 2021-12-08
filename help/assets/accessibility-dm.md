@@ -56,8 +56,6 @@ See the **Assistive technology support** Help topic in any customizing viewer to
 
 ## Closed caption support in [!DNL Dynamic Media] {#closed-caption-support}
 
-Closed caption support for video that is delivered through 
-
 Dynamic Media supports the delivery of videos and adaptive video sets with closed captioning. The captions must be displayed on top of the video content.
 
 See [Video in Dynamic Media - Add captions or subtitles to video](/help/assets/video.md#adding-captions-to-video).
