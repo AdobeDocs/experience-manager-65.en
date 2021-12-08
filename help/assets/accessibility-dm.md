@@ -1,6 +1,6 @@
 ---
 title: Accessibility in Dynamic Media
-description: Learn about accessibility support in Dynamic Media and Dynamic Media Viewers
+description: Learn about accessibility support in Dynamic Media and Dynamic Media Viewers.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
