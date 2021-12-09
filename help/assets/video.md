@@ -1,6 +1,6 @@
 ---
 title: Video in Dynamic Media
-description: Learn how to work with video in Dynamic Media
+description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, subtitles, or chapter markers to videos.
 mini-toc-levels: 3
 uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
@@ -1068,15 +1068,17 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## Add captions or subtitles to video {#adding-captions-to-video}
+## Add closed captions or subtitles to video {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding captioning to single videos or to Adaptive Video Sets. By adding captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
-Captioning also allows for greater accessibility by using closed captioning for people who are deaf or hard of hearing.
+Closed captioning also allows for greater accessibility by people who are deaf or hard of hearing.
 
 >[!NOTE]
 >
 >The video player that you use must support the display of captions.
+
+See also [Accessibility in Dynamic Media](/help/assets/accessibility-dm.md).
 
 Dynamic Media converts caption files to JSON (JavaScript Object Notation) format. This conversion means you can embed the JSON text into a web page as a hidden but complete transcript of the video. Search engines can then crawl and index the content to make the videos more easily discoverable and give customers additional details about the video content.
 
