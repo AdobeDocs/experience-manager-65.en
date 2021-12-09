@@ -75,10 +75,10 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
 1. Go back to the **[!UICONTROL Create Adobe Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, the **[!UICONTROL OAuth URL]** field mentions the  default URL. The format of the URL is:
 
-   https://<shard>/public/oAuth/v2
+   `https://<shard>/public/oAuth/v2`
 
    For example: 
-   https://secure.na1.echosign.com/public/oauth/v2
+   `https://secure.na1.echosign.com/public/oauth/v2`
 
    where:
 
