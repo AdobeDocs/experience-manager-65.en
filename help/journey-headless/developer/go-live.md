@@ -114,6 +114,10 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 * Split JSON files/GraphQL queries between low and high content change rate in order to reduce client traffic to CDN and assign higher TTL. This minimizes the CDN revalidating the JSON with the origin server.
 * To actively invalidate content from the CDN use Soft Purge. This allows the CDN to re-download the content without causing a cache miss.
 
+>[!NOTE]
+>
+>See [Additional Resources](#additional-resources) for more information about CDN and caching.
+
 ### Improve Time to Download Headless Content {#improve-download-time}
 
 * Make sure HTTP clients use HTTP/2.
@@ -208,6 +212,12 @@ If this kind of flexibility is something you need for your project, continue on 
 * [WKND Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
 
 * [Cloud Manager for AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en) 
+
+* CDN Cache
+
+  * [Controlling a CDN Cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+
+  * Configuring the [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*search for CDN Rewriter*)
 
 <!--
 * [An Overview of Deploying to AEM as a Cloud Service](/help/implementing/deploying/overview.md)
