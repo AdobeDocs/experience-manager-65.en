@@ -506,6 +506,16 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
 
+* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query will fail; i.e. the functionality will not work. 
+  To ensure correct operation you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
+
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
+
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.11.0:

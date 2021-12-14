@@ -8,8 +8,8 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
+exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
 ---
-
 # Configure Dynamic Media Publish Setup for Image Server
 
 Configuring Dynamic Media Publish Setup is available only if:
