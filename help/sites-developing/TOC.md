@@ -93,6 +93,23 @@ role: Developer
 + [Headful and Headless in AEM](headful-headless.md)
 + Headless Experience Management{#headless}
     + [Headless and AEM](headless/introduction.md)
+    + Headless Journeys {#journeys}
+      + Headless Developer Journey {#developer}
+        + [Understand Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
+        + [Learn about CMS Headless Development](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
+        + [Getting Started with AEM Headless as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/getting-started.html)
+        + [Path to your first experience using AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/path-to-first-experience.html)
+        + [How to model your content as AEM Content Models](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/model-your-content.html)
+        + [How to access your content via AEM delivery APIs](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/access-your-content.html)
+        + [How to update your content via AEM Assets APIs](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/update-your-content.html)
+        + [How to put it all together](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html)
+        + [How to go live with your headless application](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html)
+        + [Optional - How to create single page applications with AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html)
+      + Headless Content Architect Journey {#architect}
+        + [AEM Headless Content Architect Journey Overview](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html)
+        + [Content Modeling for Headless with AEM - An Introduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
+        + [Learn the Content Modeling Basics for Headless with AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
+        + [Learn about Creating Content Fragment Models in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
     + Getting Started Guides {#getting-started}
         + [Introduction](headless/getting-started/introduction.md)
         + [Creating a Configuration](headless/getting-started/create-configuration.md)
