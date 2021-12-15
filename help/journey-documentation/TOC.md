@@ -15,6 +15,9 @@ Please note that all links to other guides need to be absolute references with l
 
 + AEM Documentation Journeys {#overview}
   + [What is a documentation journey?](home.md)
+
+<!-- comment out until all pages published 
+
 + Headless Journeys {#headless}
   + [Headless Journeys Home](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/home.html)
   + Headless Developer Journey {#developer}
@@ -47,6 +50,16 @@ Please note that all links to other guides need to be absolute references with l
     + [Content Modeling for Headless with AEM - An Introduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html)
     + [Learn the Content Modeling Basics for Headless with AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html)
     + [Learn about Creating Content Fragment Models in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html)
+  + Headless Translation Journey {#translation}
+    + [Understand headless translation in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html)
+    + [Get started with AEM headless translation](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html)
+    + [Learn about headless content and how to translate in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/learn-about.html)
+    + [Configure translation connector](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/configure-connector.html)
+    + [Configure translation rules](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translation-rules.html)
+    + [Translate content](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translate-content.html)
+    + [Publish translated content](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/publish-content.html)
+
+-->
 
 <!--
 + AEM Documentation Journeys {#overview}
