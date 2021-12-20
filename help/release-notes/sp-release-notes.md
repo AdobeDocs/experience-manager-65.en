@@ -365,11 +365,11 @@ Need to verify with Engineering, the status is currently showing as Resolved
 
 * After installing AEM 6.5 Forms Service Pack 9, the CRX repository URLs are no longer available (NPR-37592).
 
-**Issues fixed in AEM Forms [version]**
+**Issues fixed in AEM Forms 6.5.11.1**
 
 >[!NOTE]
 >
->Adobe recommends installing the AEM Forms [version] add-on package on top of AEM 6.5.11.0 Forms add-on package. If you have not upgraded to AEM 6.5.11.0 Forms, install the AEM Forms [version] add-on package directly.
+>If you have not upgraded to AEM 6.5.11.0 Forms, install the AEM Forms 6.5.11.1 add-on package directly. If you have installed AEM 6.5.11.0 Forms, Adobe recommends to upgrade to AEM 6.5.11.1 Forms.
 
 * Submit actions, Send Email and Invoke an AEM Workflow stop working after installing the Forms 6.5.11.0 add-on package.
 * CreatePDF operation stops converting Microsoft Word documents to PDF documents after installing the Forms 6.5.11.0 add-on package.
