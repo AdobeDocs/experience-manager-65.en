@@ -1,6 +1,6 @@
 ---
-title: Previewing 3D assets
-description: Learn how to preview 3D assets
+title: Preview 3D assets
+description: Learn how to preview 3D assets in Experience Manager.
 contentOwner: Rick Brough
 docset: aem65
 feature: 3D Assets
