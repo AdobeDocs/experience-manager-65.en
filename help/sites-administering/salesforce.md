@@ -42,7 +42,7 @@ To configure AEM to integrate with Salesforce:
 
 >[!CAUTION]
 >
->You need to install the [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=salesforce*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=1&package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcom.adobe.cq.mcm.salesforce.content) integration package before you continue with the procedure. For more details on how to work with packages see the [How to Work with Packages](/help/sites-administering/package-manager.md#package-share) page.
+>You need to install the [Salesforce Force API](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/com.adobe.cq.mcm.salesforce.content) integration package before you continue with the procedure. For more details on how to work with packages see the [How to Work with Packages](/help/sites-administering/package-manager.md#package-share) page.
 
 1. In AEM, navigate to **Cloud Services**. In Third-Party Services, click **Configure Now** in **Salesforce**.
 
