@@ -12,6 +12,7 @@ discoiquuid: bee7144e-4276-4e81-a3a0-5b7273af34fe
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
 ---
+
 # Integrating with Salesforce {#integrating-with-salesforce}
 
 Integrating Salesforce with AEM provides lead management capabilities and leverages the existing capabilities provided out of the box by Salesforce. You can configure AEM to post leads to Salesforce and create components that access data directly from Salesforce.
