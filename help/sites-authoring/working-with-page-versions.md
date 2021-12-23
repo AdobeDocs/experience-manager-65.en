@@ -171,7 +171,7 @@ You can preview a specific version:
 
    >[!CAUTION]
    >
-   >If a page has been moved, you can no longer perform a preview on any versions made before the move.
+   >If a page has been moved, you can no longer perform a preview on any versions made before the move. This is a known issue. 
    >
    >* If you experience problems with a preview, check the [Timeline](/help/sites-authoring/basic-handling.md#timeline) for the page to see whether the page has been moved.
 
