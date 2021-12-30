@@ -46,6 +46,8 @@ In the case of the [Venia Reference store](https://github.com/adobe/aem-cif-guid
 * `{{url_path}}` will be replaced by the product's `url_path`, e.g. `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` will be replaced by the currently selected variant, e.g. `VP09-KH-S`
 
+Since the `url_path` got deprecated, the pre-defined product URL formats use a product's `url_rewrites` and pick the one with the most path segmenents as alternative if the `url_path` is not available.
+
 With the above example data, a product variant URL formatted using the default URL format will look like `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### Category Page URL Format {#product-list}
@@ -67,16 +69,19 @@ With the above example data, a category page URL formatted using the default URL
 > 
 > The `url_path` is a concatenation of the `url_keys` of a product or category's ancestors and the product or category's `url_key` separated by `/` slash.
 
+### Specific Category-/Product-Pages {#specific-pages}
+
+It is possible to create [multile category and product pages](../authoring/multi-template-usage) for only a specific subset of categories or products of a catalog. 
+
+The `UrlProvider` is pre-configured to generate deep links to such pages on author tier instances. This is useful to editors, that browse a site using Preview mode, navigate to a specific product or category page and switch back to Edit mode to edit the page. 
+
+On publish tier instances on the other hand, catalog page urls should be kept stable to not lose gains on search engine rankings for example. Because of that publish tier instances will not render deep links to specific catalog pages per default. To change this behaviour, the _CIF URL Provider Specific Page Strategy_ can be configured to always generate specific page urls. 
+
 ## Custom URL Formats {#custom-url-format}
 
-To provide a custom URL format a project can implement the [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) and regsiter the implementation as OSGI service, using it either as category page or product page url format. The `UrlFormat#PROP_USE_AS` service property indicates, which of the configured pre-defined formats to replace:
+To provide a custom URL format a project can implement etiher the [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) or the [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) service interface and register the implementation as OSGI service. Those implementations, if available, will replace the configured, pre-defined format. If there are multiple implementations registered, the one with the higher service ranking replaces the one(s) with the lower service ranking.
 
-* `useAs=productPageUrlFormat`, will replace the configured product page url format
-* `useAs=categoryPageUrlFormat`, will replace the configured category page url format
-
-If there are multiple implementations of the `UrlFormat` registered as OSGI services, the one with the higher service ranking replaces the one(s) with the lower service ranking.
-
-The `UrlFormat` must implement a pair of methods to build a URL from a given Map of parameters and to parse an URL to return the same Map of parameters. The parameters are the same as described above, only for categories an additional `{{uid}}` parameter is provided to the `UrlFormat`.
+The custom URL format implementations must implement a pair of methods to build a URL from given parameters, and to parse a URL to return the same parameters respectively. 
 
 ## Combine with Sling Mappings {#sling-mapping}
 
