@@ -71,7 +71,7 @@ With the above example data, a category page URL formatted using the default URL
 
 ### Specific Category-/Product-Pages {#specific-pages}
 
-It is possible to create [multile category and product pages](../authoring/multi-template-usage) for only a specific subset of categories or products of a catalog. 
+It is possible to create [multile category and product pages](multi-template-usage.md) for only a specific subset of categories or products of a catalog. 
 
 The `UrlProvider` is pre-configured to generate deep links to such pages on author tier instances. This is useful to editors, that browse a site using Preview mode, navigate to a specific product or category page and switch back to Edit mode to edit the page. 
 
