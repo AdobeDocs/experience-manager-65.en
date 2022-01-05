@@ -2,8 +2,6 @@
 title: AEM Headless Translation Journey
 description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
 index: yes
-hide: no
-hidefromtoc: no
 ---
 # AEM Headless Translation Journey {#aem-headless-translation-journey}
 

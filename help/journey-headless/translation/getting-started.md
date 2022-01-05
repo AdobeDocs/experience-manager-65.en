@@ -2,8 +2,6 @@
 title: Get started with AEM headless translation
 description: Get to know how to organize your headless content and how AEM's translation tools work.
 index: yes
-hide: no
-hidefromtoc: no
 ---
 # Get Started with AEM Headless Translation {#getting-started}
 
