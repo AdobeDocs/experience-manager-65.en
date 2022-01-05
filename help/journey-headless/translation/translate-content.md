@@ -1,7 +1,6 @@
 ---
 title: Translate Content
 description: Use the translation connector and rules to translate your headless content.
-index: yes
 ---
 # Translate Content {#translate-content}
 

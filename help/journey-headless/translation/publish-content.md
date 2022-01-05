@@ -1,7 +1,6 @@
 ---
 title: Publish Translated Content
 description: Learn how to publish your translated content and update the translations as the content updates.
-index: yes
 ---
 # Publish Translated Content {#publish-content}
 
