@@ -7,7 +7,7 @@ topic-tags: dynamic-media
 content-type: reference
 docset: aem65
 role: User, Admin
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
 ---
@@ -47,7 +47,7 @@ With the new architecture, Experience Manager is responsible for primary source 
 >
 >Dynamic Media - Scene7 mode is for the *Experience Manager Author instance only*. As such, you must configure `runmode=dynamicmedia_scene7` on the Experience Manager Author instance, *not* the Experience Manager Publish instance.
 
-To enable Dynamic Media, you must start up Experience Manager using the `dynamicmedia_scene7` run mode from the command line by entering the following in a terminal window (example port used is 4502):
+To enable Dynamic Media, start up Experience Manager using `dynamicmedia_scene7` run mode from the command line by entering the following in a terminal window (example port used is 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -124,26 +124,24 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
    >[!NOTE]
    >
-   >There is no support for versioning in DMS7. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
-   >
+   >There is no support for versioning in Dynamic Media - Scene7 mode. Also, delayed activation applies only if **[!UICONTROL Publish Assets]** in the Edit Dynamic Media Configuration page is set to **[!UICONTROL Upon Activation]**, and then only until the first time the asset is activated.
    >
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
 1. Select **[!UICONTROL Save]**.
 1. To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager author instance to connect to Dynamic Media:
 
-    * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
-
-    * On the navigation bar near the top right of the page, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
-
-    * On the Image Server Publish page, in the Publish Context drop-down list, select **[!UICONTROL Test Image Serving]**.
-    * For the Client Address Filter, select **[!UICONTROL Add]**.
-    * To enable (turn on) the address, select the check box. Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * Select **[!UICONTROL Save]**.
+    * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+    * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
+    * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
+    * Select the **[!UICONTROL Security]** tab.
+    * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
+    * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
 
-If you want to further customize your configuration, you can optionally complete any of the tasks under [(Optional) Configuring Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+If you want to further customize your configuration, you can optionally complete any of the tasks under [(Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ## (Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
@@ -211,7 +209,6 @@ If you intend to use this feature, be aware of the following prerequisites and p
 1. Enter the appropriate value in bytes so you can increase the size limit to the maximum desired upload size. For example, to increase the upload asset size limit to 10 GB, enter `10737418240` in the value field.
 You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded assets that are larger than 15 GB do not get uploaded.
 
-
    ![Size limit value](/help/assets/assets-dm/uploadassets15gb_c.png)
 
 1. Near the upper-left corner of the CRXDE Lite window, select **[!UICONTROL Save All]**.
@@ -247,88 +244,36 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 
 ### (Optional) Setup and configuration of Dynamic Media - Scene7 mode settings {#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings}
 
-When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings.
+<!-- When you are in run mode `dynamicmedia_scene7`, use the Dynamic Media Classic user interface to change your Dynamic Media settings. -->
 
-Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account.
-
-Setup and configuration tasks include the following:
-
-* [Publish setup for Image Server](#publishing-setup-for-image-server)
-* [Configure application general settings](#configuring-application-general-settings)
+* [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md)
+* [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md)
 * [Configure color management](#configuring-color-management)
 * [Edit MIME types for supported formats](#editing-mime-types-for-supported-formats)
 * [Add MIME types for unsupported formats](#adding-mime-types-for-unsupported-formats)
-* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
+* [Create batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) (done in the Dynamic Media Classic user interface)
 
-#### Publish setup for Image Server {#publishing-setup-for-image-server}
+#### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server} 
 
-The Publish Setup settings determine how assets are delivered by default from Dynamic Media. If no setting is specified, Dynamic Media delivers an asset according to the default settings defined in Publish Setup. For example, a request to deliver an image that does not include a resolution attribute yields an image with the Default Object Resolution setting.
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
 
-To configure Publish Setup: in Dynamic Media Classic, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dm-publish-settings.md).
 
-The Image Server screen establishes default settings for delivering images. See the UI screen for description of each setting.
+#### Configure Dynamic Media General Settings {#configuring-application-general-settings}
 
-* **[!UICONTROL Request Attributes]** - These settings impose limits on images that can be delivered from the server.
-* **[!UICONTROL Default Request Attributes]** - These settings pertain to the default appearance of images.
-* **[!UICONTROL Common Thumbnail Attributes]** - These settings pertain to the default appearance of thumbnail images.
-* **[!UICONTROL Defaults for Catalog Fields]**- These settings pertain to the resolution and default thumbnail type of images.
-* **[!UICONTROL Color Management Attributes]** - These settings determine which ICC color profiles are used.
-* **[!UICONTROL Compatibility Attributes]** - This setting enables leading and trailing paragraphs in text layers to be treated as they were in version 3.6 for backwards compatibility.
-* **[!UICONTROL Localization Support]** - These settings let you manage multiple locale attributes. It also lets you specify a locale map string so you can define which languages you want to support for the various tooltips in Viewers. For more information about setting up **[Localization Support]**, see [Considerations when setting up localization of assets](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#considerations-when-setting-up-localization-of-assets).
+Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
 
-#### Configure application general settings {#configuring-application-general-settings}
-
-To open the Application General Settings page, in Dynamic Media Classic Global Navigation bar, navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]**.
-
-**[!UICONTROL Servers]** - On account provisioning, Dynamic Media automatically provides the assigned servers for your company. These servers are used to construct URL strings for your web site and applications. These URL calls are specific to your account. Do not change any of the server names unless explicitly instructed to do so by Adobe Customer Support.
-
-**[!UICONTROL Overwrite Images]** - Dynamic Media does not allow two files to have the same name. Each item's URL ID (the filename minus the extension) must be unique. These options specify how replacement assets are uploaded: whether they replace the original or become duplicate. Duplicate assets are renamed with a “-1” (for example, chair.tif is renamed chair-1.tif). These options affect assets uploaded to a different folder than the original or assets with a different filename extension from the original (such as JPG, TIF, or PNG).
-
-* **[!UICONTROL Overwrite in current folder, same base image name/extension]** - This option is the strictest rule for replacement. It requires that you upload the replacement image to the same folder as the original, and that the replacement image has the same filename extension as the original. If these requirements are not met, a duplicate is created.
-
->[!NOTE]
->
->To maintain consistency with Experience Manager, always choose this setting: **Overwrite in current folder, same base image name/extension**
-
-* **[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Requires that the replacement image has the same filename extension as the original image (for example, chair.jpg must replace chair.jpg, not chair.tif). However, you can upload the replacement image to a different folder than the original. The updated image resides in the new folder; the file can no longer be found in its original location
-* **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - This option is the most inclusive replacement rule. You can upload a replacement image to a different folder than the original, upload a file with a different filename extension, and replace the original file. If the original file is in a different folder, the replacement image resides in the new folder to which it was uploaded.
-
-**[!UICONTROL Default Color Profiles]** - See [Configure Color Management](#configuring-color-management) for additional information.
-
->[!NOTE]
->
->By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's detail view. You can increase this limit. See [Increase the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
->
+See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
 #### Configure color management {#configuring-color-management}
 
-Dynamic Media color management lets you color correct assets. With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile. When you request a dynamic rendition, the image color is corrected into the target color space using CMYK, RGB, or Gray output. See [Configure Image Presets](/help/assets/managing-image-presets.md).
+Dynamic Media color management lets you color correct assets. With color correction, ingested assets retain their color space (RGB, CMYK, Gray) and embedded color profile. When you request a dynamic rendition, the image color is corrected into the target color space using CMYK, RGB, or Gray output.
 
-To configure the default color properties so color correction is enabled when images are requested:
+See [Configure Image Presets](/help/assets/managing-image-presets.md).
 
-1. Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account using credentials provided during provisioning. 
-1. Navigate to **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**.
-1. Expand the **[!UICONTROL Publish Setup]** area and select **[!UICONTROL Image Server]**. Set **[!UICONTROL Publish Context]** to **[!UICONTROL Image Serving]** when setting defaults for publish instances.
-1. Scroll to the property you want to change. For example, a property in the **[!UICONTROL Color Management Attributes]** area.
-
-   You can set the following color correction properties:
-
-    * **[!UICONTROL CMYK Default Color Space]** - Name of the default CMYK color profile
-    * **[!UICONTROL Gray-Scale Default Color Space]** - Name of the default Gray color profile
-    * **[!UICONTROL RGB Default Color Space]** - Name of the default RGB color profile
-    * **[!UICONTROL Color Conversion Rendering Intent]** - Specifies the render intent. Acceptable values are: **[!UICONTROL perceptual]**, **[!UICONTROL relative colometric]**, **[!UICONTROL saturation]**, **[!UICONTROL absolute colometric]**. Adobe recommends **[!UICONTROL relative]** as the default.
-
-1. Select **[!UICONTROL Save]**.
-
-For example, you could set the **[!UICONTROL RGB Default Color Space]** to *sRGB*, and **[!UICONTROL CMYK Default Color Space]** to *WebCoated*.
-
-Doing so would do the following:
-
-* Enables color correction for RGB and CMYK images.
-* RGB images that do not have a color profile are assumed to be in the *sRGB* color space.
-* CMYK images that do not have a color profile are assumed to be in *WebCoated* color space.
-* Dynamic renditions that return RGB output, return it in the *sRGB* color space.
-* Dynamic renditions that return CMYK output, return it in the *WebCoated* color space.
+>[!NOTE]
+>
+>By default, the system shows 15 renditions when you select **[!UICONTROL Renditions]** and 15 viewer presets when you select **[!UICONTROL Viewers]** in the asset's Detail view. You can increase this limit. See [Increase the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increase the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 #### Edit MIME types for supported formats {#editing-mime-types-for-supported-formats}
 
@@ -461,6 +406,8 @@ Two elements are available for definition, Match and Base Name. These fields let
     * Select **[!UICONTROL Save]** if you are editing an existing preset.
 
 ##### Create a Batch Set Preset
+
+
 
 Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
 

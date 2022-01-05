@@ -39,7 +39,7 @@ AEM Forms operations can be performed using the AEM Forms strongly-typed API and
 
 >[!NOTE]
 >
-Quick starts located in Programming with AEM forms are based on the Forms Server being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as UNIX, replace windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick starts located in Programming with AEM forms are based on the Forms Server being deployed on JBoss and the Windows operating system. However, if you are using another operating system, such as UNIX, replace windows-specific paths with paths supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Quick Start (SOAP mode): Create Content Services spaces using the Java API (Deprecated) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 

@@ -2,8 +2,8 @@
 title: Configure the Rich Text Editor to author content in Adobe Experience Manager.
 description: Learn to configure the Adobe Experience Manager Rich Text Editor to author content in Adobe Experience Manager.
 contentOwner: AG
+exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 ---
-
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 The Rich Text Editor (RTE) provides authors with a wide range of functionality for editing their text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience.
