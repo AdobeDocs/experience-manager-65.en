@@ -1,7 +1,6 @@
 ---
 title: AEM Headless Content Author Journey
 description: Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to author content for your project.
-index: yes
 ---
 # AEM Headless Content Author Journey {#aem-headless-author-journey}
 

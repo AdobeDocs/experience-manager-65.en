@@ -1,7 +1,6 @@
 ---
 title: Configure Translation Rules
 description: Learn how to define translation rules to identify content for translation.
-index: yes
 ---
 # Configure Translation Rules {#configure-translation-rules}
 
