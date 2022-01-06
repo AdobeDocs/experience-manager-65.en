@@ -400,8 +400,10 @@ Tough Day 2 creates a logs folder in the same directory where you ran Tough Day 
 
 The logs are not overwritten, subsequent runs will append messages to the existing logs. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
+<!--
 #### Example Usage {#example-usage}
 
 #### Known Issues {#known-issues}
 
 [Get File](assets/toughday-6_1.jar)
+-->
