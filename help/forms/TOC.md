@@ -13,9 +13,9 @@ role: User
 
 + [AEM 6.5 Forms Guide](home.md)
 + Release Notes {#release-notes-new-features}
-  + [Release Notes](/help/release-notes/release-notes.md)
+  + [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
   + [New features summary](using/whats-new.md)
-  + [Deprecated features](/help/release-notes/deprecated-removed-features.md)
+  + [Deprecated features](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Getting Started {#getting-started}
   + [Introduction to AEM Forms](using/introduction-aem-forms.md)
   + [Introduction to authoring adaptive forms](using/introduction-forms-authoring.md)
