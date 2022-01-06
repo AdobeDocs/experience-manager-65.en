@@ -15,8 +15,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + [General Release Notes](release-notes.md)
 + Previous Release Notes {#service-pack}
   + [What's New](new-features-latest-service-pack.md)
-  + [Service Pack 11 Release Notes](sp-release-notes.md)
-  + [Previous Service Pack Release Notes](previous-hotfixes-featurepacks.md)
+  + [Previous Service Pack Release Notes](previous/previous-hotfixes-featurepacks.md)
   + [6.5.0](previous/ga.md)
 + [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
 + [Deprecated and Removed Features](deprecated-removed-features.md)
