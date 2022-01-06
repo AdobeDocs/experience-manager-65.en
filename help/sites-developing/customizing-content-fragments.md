@@ -3,15 +3,12 @@ title: Customizing and Extending Content Fragments
 seo-title: Customizing and Extending Content Fragments
 description: A content fragment extends a standard asset.
 seo-description: A content fragment extends a standard asset.
-uuid: f72c3a23-9b0d-4fab-a960-bb1350f01175
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d0770bee-4be5-4a6a-8415-70fdfd75015c
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 ---
+
 # Customizing and Extending Content Fragments{#customizing-and-extending-content-fragments}
 
 A content fragment extends a standard asset; see:
@@ -44,11 +41,11 @@ Depending on the type of fragment, either models or templates are also used:
 
 * Content Fragment Models:
 
-    * Used for defining content fragments that hold structured content.
-    * Content fragment models define the structure of a content fragment when it is created.
-    * A fragment references the model; so changes to the model may/will impact any dependent fragments.
-    * Models are built-up of data types.
-    * Functions to add new variations, etc., have to update the fragment accordingly.
+  * Used for defining content fragments that hold structured content.
+  * Content fragment models define the structure of a content fragment when it is created.
+  * A fragment references the model; so changes to the model may/will impact any dependent fragments.
+  * Models are built-up of data types.
+  * Functions to add new variations, etc., have to update the fragment accordingly.
 
   >[!CAUTION]
   >
@@ -56,12 +53,12 @@ Depending on the type of fragment, either models or templates are also used:
 
 * Content Fragment Templates:
 
-    * Used for defining simple content fragments.
-    * Templates define the (basic, text-only) structure of a content fragment when it is created.
-    * The template is copied to the fragment when it is created; so further changes to the template will not be reflected in existing fragments.
-    * Functions to add new variations, etc., have to update the fragment accordingly.
-    * [Content fragment templates](/help/sites-developing/content-fragment-templates.md) operate in a different manner to that of other templating mechanisms within the AEM ecosystem (e.g. page templates, etc.). Therefore they should be considered separately.
-    * When based on a template the MIME type of the content is managed on the actual content; this means that each element and variation can have a different MIME type.
+  * Used for defining simple content fragments.
+  * Templates define the (basic, text-only) structure of a content fragment when it is created.
+  * The template is copied to the fragment when it is created; so further changes to the template will not be reflected in existing fragments.
+  * Functions to add new variations, etc., have to update the fragment accordingly.
+  * [Content fragment templates](/help/sites-developing/content-fragment-templates.md) operate in a different manner to that of other templating mechanisms within the AEM ecosystem (e.g. page templates, etc.). Therefore they should be considered separately.
+  * When based on a template the MIME type of the content is managed on the actual content; this means that each element and variation can have a different MIME type.
 
 ### Integration with Assets {#integration-with-assets}
 
@@ -79,14 +76,14 @@ Content fragments with structured content (i.e. based on a content fragment mode
 
 * All content is stored under the `jcr:content/data` node of the asset:
 
-    * The element data is stored under the master sub-node:
-      `jcr:content/data/master`
+  * The element data is stored under the master sub-node:
+    `jcr:content/data/master`
 
-    * Variations are stored under a sub-node that carries the name of the variation:
-      e.g. `jcr:content/data/myvariation`
+  * Variations are stored under a sub-node that carries the name of the variation:
+    e.g. `jcr:content/data/myvariation`
 
-    * The data of each element is stored in the respective sub-node as a property with the element name:
-      e.g. the content of element `text` is stored as property `text` on `jcr:content/data/master`
+  * The data of each element is stored in the respective sub-node as a property with the element name:
+    e.g. the content of element `text` is stored as property `text` on `jcr:content/data/master`
 
 * Metadata and associated content is stored below `jcr:content/metadata`
   Except for the title and description, which are not considered traditional metadata and stored on `jcr:content`
@@ -100,12 +97,12 @@ Simple content fragments (based on a template) are mapped to a composite consist
 * All non-content information of a fragment (such as title, description, metadata, structure) is managed on the main asset exclusively.
 * The content of the first element of a fragment is mapped to the original rendition of the main asset.
 
-    * The variations (if there are any) of the first element are mapped to other renditions of the main asset.
+  * The variations (if there are any) of the first element are mapped to other renditions of the main asset.
 
 * Additional elements (if existing) are mapped to sub-assets of the main asset.
 
-    * The main content of these additional elements map to the original rendition of the respective sub-asset.
-    * Other variations (if applicable) of any additional elements map to other renditions of the respective sub-asset.
+  * The main content of these additional elements map to the original rendition of the respective sub-asset.
+  * Other variations (if applicable) of any additional elements map to other renditions of the respective sub-asset.
 
 #### Asset Location {#asset-location}
 
@@ -127,9 +124,9 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 
 >[!CAUTION]
 >
->The [Content Fragment Core Component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) is now recommended. See [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) for more details.
+>The [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) is now recommended. See [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) for more details.
 
-Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the [**Content Fragment** core component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) - a [component that allows you to include content fragments on your pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this **Content Fragment** core component.
+Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the [**Content Fragment** core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [component that allows you to include content fragments on your pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this **Content Fragment** core component.
 
 * The component uses the `fragmentPath` property to reference the actual content fragment. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
 
@@ -137,11 +134,11 @@ Content fragments can be referenced from AEM pages, just as any other asset type
 * Additionally, a range of paragraphs can be selected to restrict the output; for example, this can be used for multi-column output.
 * The component allows [in-between content](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-    * Here the component allows you to place other assets (images, etc.) in between the paragraphs of the referenced fragment.
-    * For in-between content you need to:
+  * Here the component allows you to place other assets (images, etc.) in between the paragraphs of the referenced fragment.
+  * For in-between content you need to:
 
-        * be aware of the possibility of unstable references; in-between content (added when authoring a page) has no fixed relationship to the paragraph it is positioned next to, inserting a new paragraph (in the content fragment editor) before the position of the in-between content can lose the relative position
-        * consider the additional parameters (such as like variation and paragraph filters) to avoid false positives in search results
+    * be aware of the possibility of unstable references; in-between content (added when authoring a page) has no fixed relationship to the paragraph it is positioned next to, inserting a new paragraph (in the content fragment editor) before the position of the in-between content can lose the relative position
+    * consider the additional parameters (such as like variation and paragraph filters) to avoid false positives in search results
 
 >[!NOTE]
 >
@@ -181,14 +178,14 @@ There are still some guidelines you must follow to ensure your component is comp
 
 * If the output of multiple elements is supported (by using `elementNames` to specify multiple elements), the actual display mode is defined by property `displayMode`:
 
-    * If the value is `singleText` (and there is only one element configured) then the element is rendered as a text with in-between content, layout support, etc. This is the default for fragments where only one single element is rendered.
-    * Otherwise, a much more simple approach is used (could be called "form view"), where no in-between content is supported and the fragment content is rendered "as is".
+  * If the value is `singleText` (and there is only one element configured) then the element is rendered as a text with in-between content, layout support, etc. This is the default for fragments where only one single element is rendered.
+  * Otherwise, a much more simple approach is used (could be called "form view"), where no in-between content is supported and the fragment content is rendered "as is".
 
 * If the fragment is rendered for `displayMode` == `singleText` (implicitly or explicitly) the following additional properties come into play:
 
-    * `paragraphScope` defines whether all paragraphs, or only a range of paragraphs, should be rendered (values: `all` vs. `range`)
+  * `paragraphScope` defines whether all paragraphs, or only a range of paragraphs, should be rendered (values: `all` vs. `range`)
 
-    * if `paragraphScope` == `range` then the property `paragraphRange` defines the range of paragraphs to be rendered
+  * if `paragraphScope` == `range` then the property `paragraphRange` defines the range of paragraphs to be rendered
 
 ### Integration with other Frameworks {#integration-with-other-frameworks}
 
@@ -198,51 +195,50 @@ Content fragments can be integrated with:
 
   Content Fragments are fully integrated with the [AEM translation workflow](/help/sites-administering/tc-manage.md). On an architectural level, this means:
 
-    * The individual translations of a content fragment are actually separate fragments; for example:
+  * The individual translations of a content fragment are actually separate fragments; for example:
 
-        * they are located under different language roots:
+    * they are located under different language roots:
 
-          `/content/dam/<path>/en/<to>/<fragment>`
+      `/content/dam/<path>/en/<to>/<fragment>`
 
-          vs.
+      vs.
 
-          `/content/dam/<path>/de/<to>/<fragment>`
+      `/content/dam/<path>/de/<to>/<fragment>`
 
-        * but they share exactly the same relative path below the language root:
+    * but they share exactly the same relative path below the language root:
 
-          `/content/dam/<path>/en/<to>/<fragment>`
+      `/content/dam/<path>/en/<to>/<fragment>`
 
-          vs.
+      vs.
 
-          `/content/dam/<path>/de/<to>/<fragment>`
+      `/content/dam/<path>/de/<to>/<fragment>`
 
-    * Besides the rule-based paths, there is no further connection between the different language versions of a content fragment; they are handled as two separate fragments, although the UI provides the means to navigate between the language variants.
+  * Besides the rule-based paths, there is no further connection between the different language versions of a content fragment; they are handled as two separate fragments, although the UI provides the means to navigate between the language variants.
 
   >[!NOTE]
   >
   >The AEM translation workflow works with `/content`:
   >
-  >    * As the content fragment models reside in `/conf`, these are not included in such translations. You can [internationalize the UI strings](/help/sites-developing/i18n-dev.md).
+  >* As the content fragment models reside in `/conf`, these are not included in such translations. You can [internationalize the UI strings](/help/sites-developing/i18n-dev.md).
   >
-  >    * Templates are copied to create the fragment so this is implicit.
-  >
+  >* Templates are copied to create the fragment so this is implicit.
 
 * **Metadata schemas**
 
-    * Content fragments (re)use the [metadata schemas](/help/assets/metadata-schemas.md), that can be defined with standard assets.
-    * CFM provides its own, specific schema:
+  * Content fragments (re)use the [metadata schemas](/help/assets/metadata-schemas.md), that can be defined with standard assets.
+  * CFM provides its own, specific schema:
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+    `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      this can be extended if required.
+    this can be extended if required.
 
-    * The respective schema form is integrated with the fragment editor.
+  * The respective schema form is integrated with the fragment editor.
 
 ## The Content Fragment Management API - Server-Side {#the-content-fragment-management-api-server-side}
 
 You can use the server-side API to access your content fragments; see:
 
-[com.adobe.cq.dam.cfm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
+[com.adobe.cq.dam.cfm](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/package-summary.html)
 
 >[!CAUTION]
 >
@@ -252,7 +248,7 @@ You can use the server-side API to access your content fragments; see:
 
 The following three interfaces can serve as entry points:
 
-* **Fragment Template** ([FragmentTemplate](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
+* **Fragment Template** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
   Use `FragmentTemplate.createFragment()` for creating a new fragment.
 
@@ -265,38 +261,38 @@ The following three interfaces can serve as entry points:
 
   This interface represents:
 
-    * either a content fragment model or content fragment template from which to create a content fragment,
-    * and (after the creation) the structural information of that fragment
+  * either a content fragment model or content fragment template from which to create a content fragment,
+  * and (after the creation) the structural information of that fragment
 
   This information can include:
 
-    * Access basic data (title, description)
-    * Access templates/models for the elements of the fragment:
+  * Access basic data (title, description)
+  * Access templates/models for the elements of the fragment:
 
-        * List element templates
-        * Get structural information for a given element
-        * Access the element template (see `ElementTemplate`)
+    * List element templates
+    * Get structural information for a given element
+    * Access the element template (see `ElementTemplate`)
 
-    * Access templates for the variations of the fragment:
+  * Access templates for the variations of the fragment:
 
-        * List variation templates
-        * Get structural information for a given variation
-        * Access the variation template (see `VariationTemplate`)
+    * List variation templates
+    * Get structural information for a given variation
+    * Access the variation template (see `VariationTemplate`)
 
-    * Get initial associated content
+  * Get initial associated content
 
   Interfaces that represent important information:
 
-    * `ElementTemplate`
+  * `ElementTemplate`
 
-        * Get basic data (name, title)
-        * Get initial element content
+    * Get basic data (name, title)
+    * Get initial element content
 
-    * `VariationTemplate`
+  * `VariationTemplate`
 
-        * Get basic data (name, title, description)
+    * Get basic data (name, title, description)
 
-* **Content Fragment** ([ContentFragment](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
+* **Content Fragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
   This interface allows you to work with a content fragment in an abstract way.
 
@@ -306,53 +302,53 @@ The following three interfaces can serve as entry points:
 
   The interface provides you with the means to:
 
-    * Manage basic data (e.g. get name; get/set title/description)
-    * Access meta data
-    * Access elements:
+  * Manage basic data (e.g. get name; get/set title/description)
+  * Access meta data
+  * Access elements:
 
-        * List elements
-        * Get elements by name
-        * Create new elements (see [Caveats](#caveats))
+    * List elements
+    * Get elements by name
+    * Create new elements (see [Caveats](#caveats))
 
-        * Access element data (see `ContentElement`)
+    * Access element data (see `ContentElement`)
 
-    * List variations defined for the fragment
-    * Create new variations globally
-    * Manage associated content:
+  * List variations defined for the fragment
+  * Create new variations globally
+  * Manage associated content:
 
-        * List collections
-        * Add collections
-        * Remove collections
+    * List collections
+    * Add collections
+    * Remove collections
 
-    * Access the fragment's model or template
+  * Access the fragment's model or template
 
   Interfaces that represent the prime elements of a fragment are:
 
-    * **Content Element** ([ContentElement](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+  * **Content Element** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
-        * Get basic data (name, title, description)
-        * Get/Set content
-        * Access variations of an element:
+    * Get basic data (name, title, description)
+    * Get/Set content
+    * Access variations of an element:
 
-            * List variations
-            * Get variations by name
-            * Create new variations (see [Caveats](#caveats))
-            * Remove variations (see [Caveats](#caveats))
-            * Access variation data (see `ContentVariation`)
+      * List variations
+      * Get variations by name
+      * Create new variations (see [Caveats](#caveats))
+      * Remove variations (see [Caveats](#caveats))
+      * Access variation data (see `ContentVariation`)
 
-        * Shortcut for resolving variations (applying some additional, implementation-specific fallback logic if the specified variation is not available for an element)
+    * Shortcut for resolving variations (applying some additional, implementation-specific fallback logic if the specified variation is not available for an element)
 
-    * **Content Variation** ([ContentVariation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+  * **Content Variation** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
-        * Get basic data (name, title, description)
-        * Get/Set content
-        * Simple synchronization, based on last modified information
+    * Get basic data (name, title, description)
+    * Get/Set content
+    * Simple synchronization, based on last modified information
 
   All three interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) extend the `Versionable` interface, which adds versioning capabilities, required for content fragments:
 
-    * Create new version of the element
-    * List versions of the element
-    * Get the content of a specific version of the versioned element
+  * Create new version of the element
+  * List versions of the element
+  * Get the content of a specific version of the versioned element
 
 ### Adapting - Using adaptTo() {#adapting-using-adaptto}
 
@@ -360,24 +356,24 @@ The following can be adapted:
 
 * `ContentFragment` can be adapted to:
 
-    * `Resource` - the underlying Sling resource; note that updating the underlying `Resource` directly, requires rebuilding the `ContentFragment` object.
+  * `Resource` - the underlying Sling resource; note that updating the underlying `Resource` directly, requires rebuilding the `ContentFragment` object.
 
-    * `Asset` - the DAM `Asset` abstraction that represents the content fragment; note that updating the `Asset` directly, requires rebuilding the `ContentFragment` object.
+  * `Asset` - the DAM `Asset` abstraction that represents the content fragment; note that updating the `Asset` directly, requires rebuilding the `ContentFragment` object.
 
 * `ContentElement` can be adapted to:
 
-    * `ElementTemplate` - for accessing the element's structural information.
+  * `ElementTemplate` - for accessing the element's structural information.
 
 * `FragmentTemplate` can be adapted to:
 
-    * `Resource` - the `Resource` determining the referenced model or the original template that was copied;
+  * `Resource` - the `Resource` determining the referenced model or the original template that was copied;
 
-        * changes made through the `Resource` are not automatically reflected in the `FragmentTemplate`.
+    * changes made through the `Resource` are not automatically reflected in the `FragmentTemplate`.
 
 * `Resource` can be adapted to:
 
-    * `ContentFragment`
-    * `FragmentTemplate`
+  * `ContentFragment`
+  * `FragmentTemplate`
 
 ### Caveats {#caveats}
 
@@ -387,10 +383,10 @@ It should be noted that:
 * The entire API is designed to **not** persist changes automatically (unless otherwise noted in the API JavaDoc). So you will always have to commit the resource resolver of the respective request (or the resolver you are actually using).
 * Tasks that might require additional effort:
 
-    * Creating/removing new elements will not update the data structure of simple fragments (based on a fragment template).
-    * Creating new variations from `ContentElement` will not update the data structure (but creating them globally from `ContentFragment` will).
+  * Creating/removing new elements will not update the data structure of simple fragments (based on a fragment template).
+  * Creating new variations from `ContentElement` will not update the data structure (but creating them globally from `ContentFragment` will).
 
-    * Removing existing variations will not update the data structure.
+  * Removing existing variations will not update the data structure.
 
 ## The Content Fragment Management API - Client-Side {#the-content-fragment-management-api-client-side}
 
@@ -426,27 +422,27 @@ The processes involved are:
 
 * Starting a session
 
-    * A new version of the content fragment is created.
-    * Auto save is started.
-    * Cookies are set; these define the currently edited fragment and that there is an edit session open.
+  * A new version of the content fragment is created.
+  * Auto save is started.
+  * Cookies are set; these define the currently edited fragment and that there is an edit session open.
 
 * Finishing a session
 
-    * Auto save is stopped.
-    * Upon commit:
+  * Auto save is stopped.
+  * Upon commit:
 
-        * The last modified information is updated.
-        * Cookies are removed.
+    * The last modified information is updated.
+    * Cookies are removed.
 
-    * Upon rollback:
+  * Upon rollback:
 
-        * The version of the content fragment that was created when the edit session was started is restored.
-        * Cookies are removed.
+    * The version of the content fragment that was created when the edit session was started is restored.
+    * Cookies are removed.
 
 * Editing
 
-    * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
-    * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
+  * All changes (auto save included) are done on the active content fragment - not in a separated, protected area.
+  * Therefore, those changes are reflected immediately on AEM pages that reference the respective content fragment
 
 #### Actions {#actions}
 
@@ -454,24 +450,24 @@ The possible actions are:
 
 * Entering a page
 
-    * Check if an editing session is already present; by checking the respective cookie.
+  * Check if an editing session is already present; by checking the respective cookie.
 
-        * If one exists, verify that the editing session was started for the content fragment that is currently being edited
+    * If one exists, verify that the editing session was started for the content fragment that is currently being edited
 
-            * If the current fragment, reestablish the session.
-            * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
+      * If the current fragment, reestablish the session.
+      * If not, try to cancel editing for the previously edited content fragment and remove cookies (no editing session present afterwards).
 
-        * If no edit session exists, wait for the first change made by the user (see below).
+    * If no edit session exists, wait for the first change made by the user (see below).
 
-    * Check if the content fragment is already referenced on a page and display appropriate information if so.
+  * Check if the content fragment is already referenced on a page and display appropriate information if so.
 
 * Content change
 
-    * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
+  * Whenever the user changes content and there is no edit session present, a new edit session is created (see [Starting a session](#processes)).
 
 * Leaving a page
 
-    * If an editing session is present and the changes have not been persisted, a modal confirmation dialog is shown to notify the user of potentially lost content and allow them to stay on the page.
+  * If an editing session is present and the changes have not been persisted, a modal confirmation dialog is shown to notify the user of potentially lost content and allow them to stay on the page.
 
 ## Examples {#examples}
 
@@ -535,5 +531,5 @@ See [Content Fragment Templates](/help/sites-developing/content-fragment-templat
 
 For further information see
 
-* [Core Components - Content Fragment Component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) (recommended)
+* [Core Components - Content Fragment Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recommended)
 * [Content Fragment Components - Components for Page Authoring](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)

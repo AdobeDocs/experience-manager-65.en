@@ -8,17 +8,14 @@ content-type: reference
 feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
-hide: yes
-hidefromtoc: yes
-exl-id: 
+exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
 ---
-
 # Configure Dynamic Media General Settings
 
 Configuring **[!UICONTROL Dynamic Media General Settings]** is available only if:
 
 * You are running Dynamic Media in Scene7 mode. See [Enable Dynamic Media in Scene7 mode](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 or above.
+* You have an *existing* **[!UICONTROL Dynamic Media Configuration]** (in **[!UICONTROL Cloud Services]**) in Adobe Experience Manager 6.5.11 or above. See [Create a Dynamic Media Configuration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * You are an Experience Manager system administrator with administrator privileges.
 
 Dynamic Media General Settings is intended for use by experienced web site developers and programmers. Adobe Dynamic Media recommends that users who change these publish settings be familiar with Dynamic Media on Adobe Experience Manager and basic imaging technology.
@@ -27,7 +24,7 @@ On account creation, Adobe Dynamic Media automatically provides the assigned ser
 
 The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications. If no setting is specified, the Adobe Dynamic Media server delivers an asset according to a default setting that was configured on the Dynamic Media Publish Setup page.
 
-See also [Optional - Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) fpr more optional configuration tasks.
+See also [Optional - Setup and configuration of Dynamic Media - Scene7 mode settings](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) for more optional configuration tasks.
 
 >[!NOTE]
 >

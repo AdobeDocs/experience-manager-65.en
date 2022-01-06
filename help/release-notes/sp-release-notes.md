@@ -315,91 +315,69 @@ Need to verify with Engineering, the status is currently showing as Resolved
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
-<!--
-
-[!DNL AEM 6.5.10.0 Forms] includes the following bug fixes:
-
-* When you install [!DNL AEM 6.5 Forms], the following third-party libraries are installed automatically (CQDOC-18373):
-  * [!DNL Microsoft Visual C++ 2008 Service Pack 1 (x86)]
-  * [!DNL Microsoft Visual C++ 2010 Service Pack 1 (x86)]
-
 **Adaptive Forms**
 
-* If the validations performed on the field values in an adaptive form are successful, [!DNL AEM Forms] fails to invoke the Form Data Model (CQ-4325491).
+* Accessibility – When you set the `Wizard` layout for a panel in an adaptive form, the navigation buttons do not have Aria labels and role (NPR-37613).
 
-* When you add a language dictionary to a translation project and then open the project, [!DNL AEM Forms] displays an error message (CQ-4324933):
+* Validations on a date field in an adaptive form does not work, as expected (NPR-37556).
 
-   ```TXT
-   Uncaught TypeError: Cannot read property 'PROJECT_LISTING_PATH' of undefined
-   at openButtonClickHandler (clientlibs.js:245)
-   at HTMLButtonElement.onclick (clientlibs.js:258)
+* When the label text for the Checkbox and Radio Button components is long, the text does not fit appropriately (NPR-37294).
 
-   ```
+* When you apply styling changes to the Thank You message of the AEM Forms Container component, the changes do not replicate in the source adaptive form (NPR-37284).
 
-* Performance issues after installing [!DNL AEM Forms] Service Pack 7 (CQ-4326828).
+* Differences in the value of the `Switch` component on the user interface and in the backend (NPR-37268).
 
-* When you submit a form containing a standard HTML upload field from an Apple iOS device, sometimes, the content of the file is not sent and a 0-byte file is received at the other end. Apple iOS 15.1 provides a fix for the issue (CQ-4325361).
+* When you use the keyboard keys to navigate to the `Submit` option and press the `Enter` key, you can submit the adaptive form multiple times (CQ-4333993).
 
-**Correspondence Management**
+* The Remove operation for the File Attachment component does not work, as expected (NPR-37376).
 
-* Delay in the display of characters in the [!UICONTROL Data] tab as well as in the HTML letter preview (NPR-37020).
-
-* When you are editing a text document fragment, the new words display as HTML tags after saving the fragment (NPR-36837).
-
-* Unable to view the letters that are saved as drafts (NPR-36816).
-
-* When you edit a text document fragment and then preview the letter, AEM Forms displays the expression language in the HTML letter preview (CQ-4322331).
-
-* Issues while rendering data with a self-service letter template (NPR-37161).
-
-
-**Interactive Communications**
-
-* A tab character duplicates between two words each time you print preview an Interactive Communication after editing a text document fragment (NPR-37021).
-
-* [!DNL AEM Forms] displays an error when you save a text document fragment that exceeds the maximum size limit (NPR-36874).
-
-* When you add an image to an Interactive Communication, an additional empty block displays after the image (NPR-36659).
-
-* When you select all text in an editor, you cannot change the font text to Arial (NPR-36646).
-
-* When you create a URL in an editor and preview the changes, a black background displays instead of the URL text (NPR-36640).
-
-* When you copy and paste text to an editor, there are issues while changing the font to Arial for bullets available in the document (NPR-36628). 
-
-* Indentation issues for bullets in the text editor (NPR-36513).
-
-**Designer**
-
-* Screen Reader fails to read floating field data placed inside text label on the Master page or on Subform pages in a dynamic PDF (CQ-4321587).
+* When a label for a field exceeds 1000 characters in an adaptive form that translates to various languages, the dictionary fails to retrieve the translation of the label (CQ-4329290).
 
 **Document Services**
 
-* When you convert XDP files to PDF files and then assemble the resultant PDF, the PDF generations fails and displays the following error message:
+* An error displays while using the Assembler service (NPR-37606):
 
-   ```TXT
-   Caused by: com.adobe.fd.assembler.client.AssemblerException$ClientException: Document is in a disposed state!
-   ```
+  ```TXT
+    500 Internal Server Error
+  ```
 
-**Forms Workflow**
+* When the document attachments are passed to the Assembler service, the following exception displays (NPR-37582):
 
-* Unable to submit a form to a Workbench process after upgrading to AEM Forms Service Pack 8 (CQ-4325846).
+  ```TXT
+    com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
+  ```
+
+* Missing closing parenthesis from data after converting a PDF document to a PDF-A/1B PDF document (NPR-37608).
 
 **HTML5 Forms**
 
-* When you set the value for the `mfAllowAttachments` property as `True` in the CRX DE repository, the `dataXml` gets corrupted on submitting the HTML5 form (NPR-37035).
+* When you install AEM 6.5.10.0, the HTML preview for an XDP form does not work (NPR-37503, CQ-4331926).
 
-* When you render an XDP as HTML using `dataXml`, [!DNL AEM Forms] displays a `Page Unresponsive` error (NPR-36631).
+* Text overlapping issues while migrating the PDF forms to HTML 5 forms in various languages (NPR-37173).
 
-### Commerce {#commerce-65110}
+**Letters**
 
-* The value in the **[!UICONTROL Published By]** field displayed is incorrect in the Column view (NPR-36902).
-* When a Catalog is rolled out, new products are incorrectly marked as modified products (NPR-36666).
-* When you recreate a deleted product, the product page is not recreated (NPR-36665).
-* Modified pages are updated but the corresponding linked products are not updated on Catalog rollout (CQ-4321409, NPR-36422).
-* The **[!UICONTROL Publish later]** and **[!UICONTROL Unpublish later]** workflows do not work (CQ-4327679).
+* When you submit a letter and reopen it in HTML view, the position of text document fragments does not remain the same (NPR-37307).
 
--->
+**Forms Workflow**
+
+* In case of embedded container workflow, you get multiple workflow completion emails even after selecting the `Notify on Complete of Container Workflow` option (NPR-37280).
+
+**Foundation JEE**
+
+* After installing AEM 6.5 Forms Service Pack 9, the CRX repository URLs are no longer available (NPR-37592).
+
+**Issues fixed in AEM Forms 6.5.11.1**
+
+>[!NOTE]
+>
+>If you have not upgraded to AEM 6.5.11.0 Forms, install the AEM Forms 6.5.11.1 add-on package directly. If you have installed AEM 6.5.11.0 Forms, Adobe recommends to upgrade to AEM 6.5.11.1 Forms.
+
+* Submit actions, Send Email and Invoke an AEM Workflow stop working after installing the Forms 6.5.11.0 add-on package.
+* CreatePDF operation stops converting Microsoft Word documents to PDF documents after installing the Forms 6.5.11.0 add-on package.
+* (JEE Only) Critical security vulnerabilities (CVE-2021-44228 and CVE-2021-45046) reported for Apache Log4j2.
+* (JEE only) Assembler DSC in 6.5.11.0 patch contains incorrect metainfo like specification version and impl version.
+
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -540,6 +518,16 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
+
+* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query will fail; i.e. the functionality will not work. 
+  To ensure correct operation you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
+
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
