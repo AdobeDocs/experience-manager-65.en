@@ -1,7 +1,6 @@
 ---
 title: General Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: [!DNL Adobe Experience Manager] 6.5 notes outlining the release information, what's new, how to install, and detailed change lists.
-exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 ---
 # General Release Notes for [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 
@@ -277,7 +276,7 @@ Custom filters in Bulk Moderation
 
 A [sample project](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) demonstrating filtering through tags is available in [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). This project can be used as a base to develop analogous custom filters.
 
-![Custom filters](assets/custom-tag-filter.png)
+![Custom filters](/help/release-notes/assets/custom-tag-filter.png)
 
 **List View in Bulk Moderation**
 
@@ -325,7 +324,7 @@ Read on to know the specific capabilities and integrations of [!DNL Experience M
 
 [!DNL Adobe Asset Link] is a part of [Creative Cloud for enterprise](https://www.adobe.com/creativecloud/business/enterprise.html) offering. For more information about it, including necessary configuration of your [!DNL Experience Manager] deployment, see [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
-![Search assets in Adobe Photoshop](assets/asset_search_photoshop.png)
+![Search assets in Adobe Photoshop](/help/release-notes/assets/asset_search_photoshop.png)
 
 ##### [!DNL Adobe Stock] integration {#stock}
 
@@ -335,11 +334,11 @@ Your organization can use its [!DNL Adobe Stock] enterprise plan within [!DNL Ex
 
 For more info, see [Use Adobe Stock assets in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
-![Preview Adobe Stock image and license from within Experience Manager Assets](assets/stock_image_preview_license_options.png)
+![Preview Adobe Stock image and license from within Experience Manager Assets](/help/release-notes/assets/stock_image_preview_license_options.png)
 
 *Figure: Preview [!DNL Adobe Stock] image and license from within [!DNL Experience Manager Assets].*
 
-![Search and filter the licensed Adobe Stock images in Experience Manager](assets/aem-search-filters2.jpg)
+![Search and filter the licensed Adobe Stock images in Experience Manager](/help/release-notes/assets/aem-search-filters2.jpg)
 
 *Figure: Search and filter the licensed [!DNL Adobe Stock] images in [!DNL Experience Manager].*
 
@@ -383,7 +382,7 @@ You can now customize the thumbnails for your video assets using frames from the
 
 #### Search experience enhancement {#experience-enhancement-for-searching}
 
-[!DNL Experience Manager] 6.5 onwards, marketers can discover the desired assets faster from the search results page. The search facets are updated with the number of assets even before applying the search filter. Seeing the expected count against the filter helps users navigate through the search results efficiently. For more information, see [Search assets in Experience Manager](../assets/search-assets.md).
+[!DNL Experience Manager] 6.5 onwards, marketers can discover the desired assets faster from the search results page. The search facets are updated with the number of assets even before applying the search filter. Seeing the expected count against the filter helps users navigate through the search results efficiently. For more information, see [Search assets in Experience Manager](/help/assets/search-assets.md).
 
 ![See the number of assets without filtering search results in search facets](/help/assets/assets/asset_search_results_in_facets_filters.png)
 
@@ -393,7 +392,7 @@ You can now customize the thumbnails for your video assets using frames from the
 
 You can now select all the loaded assets within a folder or from a search result in one go. It helps you to manage multiple assets quickly. The check box selects all the assets that fit the scenario, say a search result, and not just the assets that are visible in the [!DNL Experience Manager] interface.
 
-![Use Select All option to select all the loaded assets in one click.](assets/select-all-in-aem-assets.gif)
+![Use Select All option to select all the loaded assets in one click.](/help/release-notes/assets/select-all-in-aem-assets.gif)
 
 *Figure: Use the Select All option to select all the loaded assets in one click.*
 
@@ -424,7 +423,7 @@ See the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/
 
 ### [!DNL Experience Manager Livefyre] {#experience-manager-livefyre}
 
-You can integrate Livefyre with your AEM 6.5 instance. See [how to integrate Livefyre with AEM](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html).
+You can integrate Livefyre with your AEM 6.5 instance. See [how to integrate Livefyre with AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/livefyre.html).
 
 ### Leverage Customer-focused Development {#leverage-customer-focused-development}
 
@@ -440,7 +439,7 @@ This process of prioritization has yielded more than 750 customer focused change
 
 * Standalone Quickstart: `cq-quickstart-6.5.0.jar`.
 * Application Server Quickstart: `cq-quickstart-6.5.0.war`.
-* Dispatcher 4.3.2 or later for the various web servers and platforms. See [download link](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)
+* Dispatcher 4.3.2 or later for the various web servers and platforms. See [download link](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
 * Plug-in for Eclipse IDE ([read more and download](/help/sites-developing/aem-eclipse.md))
 
 * Extension for Brackets Code Editor ([read more and download](/help/sites-developing/aem-brackets.md))

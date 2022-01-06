@@ -542,7 +542,6 @@ These websites are only available to customers. If you are a customer and need a
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 6.5 release notes](/help/release-notes/release-notes.md)
 >* [[!DNL Experience Manager] product page](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 >* [Subscribe to Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)

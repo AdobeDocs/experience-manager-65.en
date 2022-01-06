@@ -10,7 +10,7 @@ exl-id: 32470e6e-8a66-4670-82da-2259f6e001c3
 <!-- TBD: Downsample this image. We do not need as big an image since customers don't use as big a screen to view. Also, having a 700+ KB decorative image is bad for page load time.
 -->
 
-![Whats-new](assets/whatsnew.jpeg)
+![Whats-new](/help/release-notes/assets/whatsnew.jpeg)
 
 [!DNL Adobe Experience Manager] 6.5 Service Packs provide new features, customer-requested enhancements, and performance, stability, and security improvements at quarterly intervals. The quarterly availability makes it easy to access and adopt new features and innovations.
 
@@ -153,7 +153,7 @@ Administrators can limit the number of sub-assets that [!DNL Experience Manager]
 
 * An optional configuration is introduced to change casing in the email IDs in ACP API response from [!DNL Adobe Experience Manager] (6.5.9.0).
 
-   ![configuration to change email IDs to lowercase in ACP response from [!DNL Experience Manager]](assets/email-lowcase-config.png)
+   ![configuration to change email IDs to lowercase in ACP response from [!DNL Experience Manager]](/help/release-notes/assets/email-lowcase-config.png)
 
 * Contrast of text and icons against the background is enhanced for various features. This implementation of Web Content Accessibility Guidelines (WCAG) guidelines makes [!DNL Assets] more accessible for users with limited vision and perception of color. See [accessibility enhancements in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590) (6.5.9.0).
 * When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency (6.5.8.0).
@@ -204,7 +204,7 @@ Administrators can limit the number of sub-assets that [!DNL Experience Manager]
 
 * Color and contrast of some user interface elements are updated so that users with limited vision or users without perception of color can distinguish these user interface elements. For example, the color of star rating icons (such as in [!UICONTROL Rating] section of [!UICONTROL Advanced] tab in asset [!UICONTROL Properties] or in card view) is changed for appropriate contrast.
 
-  ![Rating icons with improved contrast](assets/star-rating-icons.png)
+  ![Rating icons with improved contrast](/help/release-notes/assets/star-rating-icons.png)
 
 #### Enhanced exception handling (6.5.5.0) {#exception-handling}
 
@@ -220,7 +220,7 @@ The steps to configure [!DNL Experience Manager Assets] with [!DNL Brand Portal]
 
 [!DNL Experience Manager Assets] includes the following accessibility enhancements:
 
-* Arrow keys on keyboard can be used to move and pan areas within zoomed images. For more information, see [preview assets using keyboard keys only](../assets/manage-assets.md#previewing-assets).
+* Arrow keys on keyboard can be used to move and pan areas within zoomed images. For more information, see [preview assets using keyboard keys only](/help/assets/manage-assets.md#previewing-assets).
 
 * The mixed state checkboxes (in which unless you select all the nested predicates the first-level checkboxes are not selected and are stricken through) in Filters panel are readable by screen readers.
 
@@ -233,11 +233,11 @@ For example, `On Time (MM-DD-YYYY HH:mm)`. Here MM is month in two-digit format,
 
 A new sortable column for created date of assets is added in DAM list view and on asset search results in list view.
 
-![Sortable column for date created](assets/asset-created-date.png)
+![Sortable column for date created](/help/release-notes/assets/asset-created-date.png)
 
 #### Visual search for [!DNL Adobe Experience Manager Assets] (6.5.2.0) {#visual-search}
 
-[!DNL Assets] users can search visually similar images. Experience Manager displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [Visual search](../assets/search-assets.md).
+[!DNL Assets] users can search visually similar images. Experience Manager displays the smart tagged images from the DAM repository that are similar to a user-selected image. See [Visual search](/help/assets/search-assets.md).
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
@@ -279,11 +279,11 @@ You can now choose to selectively publish or unpublish assets to either [!DNL Ex
 
 #### Smart Imaging for Dynamic Media {#smart-imaging}
 
-Smart imaging uses each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement. Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](../assets/imaging-faq.md).
+Smart imaging uses each user's unique viewing characteristics to automatically serve the right images optimized for their experience, resulting in better performance and engagement. Smart imaging works with your existing image presets and uses intelligence at the last millisecond of delivery to further reduce image file size based on browser or network connection speed. See [Smart Imaging](/help/assets/imaging-faq.md).
 
 #### Smart crop in video profiles for Dynamic Media (6.5.3.0) {#smart-crop-video}
 
-Smart crop for video – an optional feature available in Video Profiles – uses Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video, regardless of size. See [about using smart crop in video profiles](../assets/video-profiles.md).
+Smart crop for video – an optional feature available in Video Profiles – uses Adobe Sensei to automatically detect and crop the focal point in any adaptive video or progressive video, regardless of size. See [about using smart crop in video profiles](/help/assets/video-profiles.md).
 
 ### Experience Manager Forms {#aem-forms-previous-service-packs}
 
@@ -299,7 +299,7 @@ Smart crop for video – an optional feature available in Video Profiles – use
 
 * **Support to use the literal option to set value for a JSON type variable**: You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
 
-* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+* [Platform Updates](/help/forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
   * [!DNL Adobe Acrobat 2020]
   * [!DNL Ubuntu 20.04]
   * [!DNL Open Office 4.1.10]
@@ -311,7 +311,7 @@ Smart crop for video – an optional feature available in Video Profiles – use
 
 #### Support for [!DNL Azul Zulu OpenJDK] (6.5.9.0) {#support-azul-zulu}
 
-You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments. For more information, see [Experience Manager 6.5 Service Pack 9 Release Notes](sp-release-notes.md) and [Technical Requirements](../sites-deploying/technical-requirements.md).
+You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments. For more information, see [Experience Manager 6.5 Service Pack 9 Release Notes](sp-release-notes.md) and [Technical Requirements](/help/sites-deploying/technical-requirements.md).
 
 #### Ability to send a notification email to a group using [!UICONTROL Assign Task] (6.5.9.0) {#group-notification-email}
 
@@ -369,20 +369,20 @@ You can now validate CAPTCHA either on adaptive form submission or on user actio
 
 #### Form data model HTTP client configuration to optimize performance (6.5.7.0) {#fdm-http-client-config}
 
-[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](../../help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
+[!DNL Experience Manager Forms] form data model when integrating with RESTful web services as the data source now includes HTTP client configurations for performance optimization. See [Configure data sources](/help/forms/using/configure-data-sources.md#fdm-http-client-configuration).
 
 #### Availability of Reset Option for each component in the Layout mode (6.5.7.0) {#reset-option-layout-mode}
 
-You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](../../help/forms/using/resize-using-layout-mode.md#resize-components).
+You can now use the reset option for each component in Layout mode of an adaptive form. When you define a multicolumn layout for a panel, you can use this feature to reset individual components within the panel. See [Use layout mode to resize components](/help/forms/using/resize-using-layout-mode.md#resize-components).
 
 #### Prefill an adaptive form at the client (6.5.6.0) {#prefill-merge-data-at-client}
 
 When you prefill an adaptive form, the [!DNL Experience Manager Forms] server merges data with an adaptive form and delivers the filled form to you. By default, the data merge action takes place at the server.
-You can now configure the [!DNL Experience Manager Forms] server to [perform the data merge action at the client](../../help/forms/using/prepopulate-adaptive-form-fields.md) instead of the server. It significantly reduces the time required to prefill and render adaptive forms.
+You can now configure the [!DNL Experience Manager Forms] server to [perform the data merge action at the client](/help/forms/using/prepopulate-adaptive-form-fields.md) instead of the server. It significantly reduces the time required to prefill and render adaptive forms.
 
 #### Form data model integration with RESTful APIs on a server with two-way SSL implementation (6.5.6.0) {#fdm-integration-rest-apis-two-way-ssl}
 
-[!DNL Experience Manager Forms] form data model can now [integrate with RESTful APIs on a server that has a two-way SSL implemented on it](../../help/forms/using/configure-data-sources.md).
+[!DNL Experience Manager Forms] form data model can now [integrate with RESTful APIs on a server that has a two-way SSL implemented on it](/help/forms/using/configure-data-sources.md).
 
 #### Added support for [!DNL Adobe Sign] Text Tags in Automated Forms Conversion Service (6.5.6.0) {#sign-integration-acroform-afcs}
 
@@ -398,7 +398,7 @@ You can use [!DNL Automated Forms Conversion service] to convert colored PDF for
 
 #### Enhanced caching for translated adaptive form pages (6.5.6.0) {#enhanced-caching-translated-adaptive-forms}
 
-You can now specify [locale as a selector in the adaptive form URL instead of an argument in adaptive form URL](../../help/forms/using/supporting-new-language-localization.md). It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher]. Caching translated adaptive form was not possible in previous versions. For detailed information about configuring caching for using locale as a selector in the adaptive form URL, see [Configure adaptive form cache at dispatcher](../../help/forms/using/configure-adaptive-forms-cache.md).
+You can now specify [locale as a selector in the adaptive form URL instead of an argument in adaptive form URL](/help/forms/using/supporting-new-language-localization.md). It helps cache translated adaptive forms on [!DNL Experience Manager Dispatcher]. Caching translated adaptive form was not possible in previous versions. For detailed information about configuring caching for using locale as a selector in the adaptive form URL, see [Configure adaptive form cache at dispatcher](/help/forms/using/configure-adaptive-forms-cache.md).
 
 #### Save output of form data model service to a variable (6.5.6.0) {#save-fdm-service-to-variable}
 
@@ -406,19 +406,19 @@ Form data model allows you to save output of a form data model service to a vari
 
 #### Attach multiple files for File Attachment component (6.5.6.0) {#attach-multiple-files}
 
-You can now [attach multiple files](../../help/forms/using/introduction-forms-authoring.md) to the [!UICONTROL File Attachment] component of adaptive forms.
+You can now [attach multiple files](/help/forms/using/introduction-forms-authoring.md) to the [!UICONTROL File Attachment] component of adaptive forms.
 
 #### Customize the Adobe Experience Manager Inbox columns (6.5.5.0) {#customize-aem-inbox-columns}
 
-You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns. For more information, see [Admin Control](../sites-authoring/inbox.md#inbox-admin-control).
+You can customize an [!DNL Experience Manager] Inbox to change the default title of a column, reorder the position of a column, and display additional columns based on the data of a workflow. Members of `administrators` or `workflow-administrators` group can customize the columns. For more information, see [Admin Control](/help/sites-authoring/inbox.md#inbox-admin-control).
 
-![Customize Experience Manager Inbox columns](assets/customize-columns.gif)
+![Customize Experience Manager Inbox columns](/help/release-notes/assets/customize-columns.gif)
 
 #### Save Interactive Communications as a draft (6.5.5.0) {#save-as-draft}
 
-You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it. For more information, see [Save Interactive Communications as a draft](../forms/using/prepare-send-interactive-communication.md#save-as-draft).
+You can use the Agent UI to save one or more drafts for each Interactive Communication and retrieve the draft later to continue working on it. You can specify a different name for each draft to identify it. For more information, see [Save Interactive Communications as a draft](/help/forms/using/prepare-send-interactive-communication.md#save-as-draft).
 
-![Save as draft](assets/save-as-draft.gif)
+![Save as draft](/help/release-notes/assets/save-as-draft.gif)
 
 #### [!DNL Oracle WebLogic] application server support (6.5.5.0) {#weblogic-support}
 
@@ -436,7 +436,7 @@ Adobe Experience Manager Forms includes the following accessibility enhancements
 
 #### X-509 certificate-based authentication for SOAP-based web services in form data model (6.5.5.0) {#x509-based-authentication-soap}
 
-Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source. For more information, see [Configure SOAP web services](../forms/using/configure-data-sources.md#configure-soap-web-services).
+Form data model now supports X-509 certificate-based authentication while using SOAP web services as the data source. For more information, see [Configure SOAP web services](/help/forms/using/configure-data-sources.md#configure-soap-web-services).
 
 #### Other key improvements (6.5.5.0) {#other-improvements}
 
@@ -446,15 +446,15 @@ Form data model now supports X-509 certificate-based authentication while using 
 
 #### Generate printable output in Experience Manager Forms workflows (6.5.4.0) {#generate-printable-output}
 
-The Generate Printable Output workflow step enables you to integrate a source template file with a data file. This integration enables you to print or save different copies of the template file. The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output. For more information on this feature, see [Forms-centric workflow on OSGi - Step Reference](../forms/using/aem-forms-workflow-step-reference.md).
+The Generate Printable Output workflow step enables you to integrate a source template file with a data file. This integration enables you to print or save different copies of the template file. The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output. For more information on this feature, see [Forms-centric workflow on OSGi - Step Reference](/help/forms/using/aem-forms-workflow-step-reference.md).
 
-![Generate Printable Output](assets/generate-print-output-step.gif)
+![Generate Printable Output](/help/release-notes/assets/generate-print-output-step.gif)
 
 #### Multi-column support for adaptive forms and interactive communications in Layout mode (6.5.4.0) {#multi-column-adaptive-forms}
 
-You can now define the number of columns for a panel in adaptive forms and interactive communications. Switch to layout mode to use the new multi-column option. For more information, see [Use Layout mode to resize components](../forms/using/resize-using-layout-mode.md).
+You can now define the number of columns for a panel in adaptive forms and interactive communications. Switch to layout mode to use the new multi-column option. For more information, see [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md).
 
-![Multi column layout](assets/multi-column-layout.gif)
+![Multi column layout](/help/release-notes/assets/multi-column-layout.gif)
 
 #### Experience Manager Inbox customizations (6.5.4.0) {#aem-inbox}
 
@@ -464,11 +464,11 @@ The new Admin Control option enables the administrators to:
 
 * Control the display of navigation links available in the header.
 
-The Admin Control option is visible only to the members of the `administrators` or `workflow-administrators` group. For more information on this feature, see [Your Inbox](../sites-authoring/inbox.md).
+The Admin Control option is visible only to the members of the `administrators` or `workflow-administrators` group. For more information on this feature, see [Your Inbox](/help/sites-authoring/inbox.md).
 
 #### Rich text support in HTML5 forms (6.5.4.0) {#rich-text-support}
 
-Convert a text field in an XFA form to a rich text field in an HTML5 form. For more information, see [Designing form templates for HTML5 forms](../forms/using/designing-form-template.md).
+Convert a text field in an XFA form to a rich text field in an HTML5 form. For more information, see [Designing form templates for HTML5 forms](/help/forms/using/designing-form-template.md).
 
 #### Accessibility enhancements (6.5.4.0) {#forms-accessibility-enhancements-6540}
 
@@ -480,16 +480,16 @@ Experience Manager Forms includes the following accessibility enhancements:
 
 #### Share and request access to Inbox items of an Experience Manager Forms user (6.5.3.0) {#share-request-access}
 
-You can share your Inbox items with another user. Once another user gains access to your Inbox items, the user can claim and take appropriate action on shared items. Similarly, you can request access to Inbox items from other users. See [Share and request access to Inbox items of a user](../forms/using/configure-shared-queues-osgi.md).
+You can share your Inbox items with another user. Once another user gains access to your Inbox items, the user can claim and take appropriate action on shared items. Similarly, you can request access to Inbox items from other users. See [Share and request access to Inbox items of a user](/help/forms/using/configure-shared-queues-osgi.md).
 
 #### Configure the out-of-office settings for Inbox items of an Experience Manager Forms user (6.5.3.0) {#configure-out-of-office}
 
 If you plan to be out of the office, you can specify what happens to items that are assigned to you for that period.
-You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. You can set a default person to whom all of your items are sent. See [Configure Out of Office settings](../forms/using/configure-out-of-office-settings.md).
+You have the option of specifying a start date and time and an end date and time for your out-of-office settings to be in effect. You can set a default person to whom all of your items are sent. See [Configure Out of Office settings](/help/forms/using/configure-out-of-office-settings.md).
 
 #### Generate multiple interactive communications using Batch API for Experience Manager Forms (6.5.3.0) {#generate-multiple-ic}
 
-You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](../forms/using/generate-multiple-interactive-communication-using-batch-api.md).
+You can use the Batch API to produce multiple interactive communications from a template. The template is an interactive communication without any data. The Batch API combines data with a template to produce an interactive communication. The API is useful in the mass production of interactive communications. For example, telephone bills, credit card statements for multiple customers. See [Generate multiple interactive communications using Batch API](/help/forms/using/generate-multiple-interactive-communication-using-batch-api.md).
 
 <!-- TBD: Check if the wider team released anything in FY21.
 -->
@@ -507,5 +507,5 @@ Between August 26, 2021, and November 25, 2021, Adobe released the following, in
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
->* [General availability release notes for [!DNL Experience Manager] 6.5](release-notes.md)
->* [Service pack release notes for [!DNL Experience Manager] 6.5](sp-release-notes.md)
+>* [General availability release notes for [!DNL Experience Manager] 6.5](/help/release-notes/previous/ga.md)
+>* [Latest Service pack release notes for [!DNL Experience Manager] 6.5](/help/release-notes/release-notes.md)

@@ -14,7 +14,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + [AEM 6.5 overview](home.md)
 + [General Release Notes](release-notes.md)
 + Previous Release Notes {#service-pack}
-  + [What's New](new-features-latest-service-pack.md)
+  + [What's New](previous/new-features-latest-service-pack.md)
   + [Previous Service Pack Release Notes](previous/previous-hotfixes-featurepacks.md)
   + [6.5.0](previous/ga.md)
 + [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
