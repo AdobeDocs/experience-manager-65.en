@@ -9,8 +9,8 @@ The AEM Release Notes cover important information about the latest release of AE
 
 ## Key AEM articles
 
-* [Get started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Get started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+* [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5 user guides
