@@ -85,17 +85,17 @@ To configure Analytics for Communities features, it is necessary to work with yo
 
 ## Adobe Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
-Using the Adobe Marketing Cloud's [Report Suite Manager](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html), Analytics report suites can be configured so that a community site may be enabled to provide reports for Communities features.
+Using the Adobe Marketing Cloud's [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html), Analytics report suites can be configured so that a community site may be enabled to provide reports for Communities features.
 
-By signing in to [Adobe Experience Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) with [Company Name and User name](/help/communities/analytics.md#prerequisites), it is possible to configure a new or existing report suite to have:
+By signing in to [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) with [Company Name and User name](/help/communities/analytics.md#prerequisites), it is possible to configure a new or existing report suite to have:
 
-* [11 Conversion Variables](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (eVars)
+* [11 Conversion Variables](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (eVars)
 
     * **`evar1`** through **`evar11`** enabled
 
     * Can repurpose (rename) existing eVars or create new ones to use for Communities features
 
-* [7 Success Events](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) (events)
+* [7 Success Events](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) (events)
 
     * **`event1`** through **`event7`** enabled
 
@@ -105,7 +105,7 @@ By signing in to [Adobe Experience Cloud](https://docs.adobe.com/content/help/en
 
     * Can repurpose (rename) existing events or create new ones to use for Communities features
 
-* [Video Management](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+* [Video Management](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
     * Video Reporting console
 
@@ -653,10 +653,10 @@ The forum topic is presently the only example of this customization:
 
 ## Manage user data in Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics provides APIs that allow you to access, export, and delete user data. For more information, see [Submit Access and Delete Requests](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+Adobe Analytics provides APIs that allow you to access, export, and delete user data. For more information, see [Submit Access and Delete Requests](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## Resources {#resources}
 
-* Adobe Experience Cloud: [Analytics Help and Reference](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+* Adobe Experience Cloud: [Analytics Help and Reference](https://experienceleague.adobe.com/docs/analytics.html)
 * AEM: [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics with External Providers](/help/sites-administering/external-providers.md)
