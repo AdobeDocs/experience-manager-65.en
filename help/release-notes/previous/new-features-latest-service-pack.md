@@ -68,7 +68,7 @@ This article highlights the features included in the latest Service Pack [key fe
 
 * Pathfield in [!DNL Sites] editor allows authors to drag assets from [!DNL Content Finder].
 
-* Platform provides a few accessibility enhancements. See [Platform updates](/help/release-notes/sp-release-notes.md#platform-65100).
+* Platform provides a few accessibility enhancements. See [Platform updates](/help/release-notes/previous/6.5.10.md#platform-65100).
 
 #### Ability to restore deleted pages and tree (6.5.9.0) {#ability-to-restore-pages-tree}
 
@@ -155,12 +155,12 @@ Administrators can limit the number of sub-assets that [!DNL Experience Manager]
 
    ![configuration to change email IDs to lowercase in ACP response from [!DNL Experience Manager]](/help/release-notes/assets/email-lowcase-config.png)
 
-* Contrast of text and icons against the background is enhanced for various features. This implementation of Web Content Accessibility Guidelines (WCAG) guidelines makes [!DNL Assets] more accessible for users with limited vision and perception of color. See [accessibility enhancements in [!DNL Assets]](sp-release-notes.md#assets-accessibility-6590) (6.5.9.0).
+* Contrast of text and icons against the background is enhanced for various features. This implementation of Web Content Accessibility Guidelines (WCAG) guidelines makes [!DNL Assets] more accessible for users with limited vision and perception of color. See [accessibility enhancements in [!DNL Assets]](/help/release-notes/previous/6.5.9.md#assets-accessibility-6590) (6.5.9.0).
 * When using [Connected Assets functionality](/help/assets/use-assets-across-connected-assets-instances.md), you can now view a list of all the [!DNL Sites] pages that use the asset. These references to an asset are available in an asset's [!UICONTROL Properties] page. This allows administrators, marketers, and librarians a complete view of assets usage, allowing for better tracking, management, and brand consistency (6.5.8.0).
 
 * When deleting an asset that is referenced in a web page, [!DNL Experience Manager] displays a warning. You can force delete a referenced asset or check and modify the references that are displayed in the [!DNL Properties] page of the asset. Clicking the references opens the local and remote [!DNL Sites] pages (6.5.8.0).
 
-* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/sp-release-notes.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/sp-release-notes.md#dynamic-media-6570) (6.5.7.0)
+* [!DNL Assets] and [!DNL Dynamic Media] provide multiple accessibility enhancements. The enhancements are related to keyboard navigation, use of screen readers, similar enhancements to enable use of assistive technologies (AT). See [[!DNL Assets] enhancements](/help/release-notes/previous/6.5.7.md#assets-6570) and [[!DNL Dynamic Media] enhancements](/help/release-notes/previous/6.5.7.md#dynamic-media-6570) (6.5.7.0)
 
 * Users can sort digital assets in Card and Column views (6.5.7.0).
 
@@ -241,9 +241,9 @@ A new sortable column for created date of assets is added in DAM list view and o
 
 ### Dynamic Media {#dynamic-media-previous-service-packs}
 
-* Many accessibility enhancements are done in [!DNL Dynamic Media] client so that a screen reader can present a more appropriate and useful description of the action or user interface. See [[!DNL Dynamic Media] updates](/help/release-notes/sp-release-notes.md#dynamic-media-65100) (6.5.10.0).
+* Many accessibility enhancements are done in [!DNL Dynamic Media] client so that a screen reader can present a more appropriate and useful description of the action or user interface. See [[!DNL Dynamic Media] updates](/help/release-notes/previous/6.5.10.md#dynamic-media-65100) (6.5.10.0).
 
-* [[!DNL Dynamic Media] is more accessible](sp-release-notes.md#assets-accessibility-6590) in terms of:
+* [[!DNL Dynamic Media] is more accessible](/help/release-notes/previous/6.5.9.md#assets-accessibility-6590) in terms of:
 
   * Ease of usage with keyboard keys.
   * Contrast (with background) of text, placeholder text, and controls in various editors.
@@ -311,7 +311,7 @@ Smart crop for video – an optional feature available in Video Profiles – use
 
 #### Support for [!DNL Azul Zulu OpenJDK] (6.5.9.0) {#support-azul-zulu}
 
-You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments. For more information, see [Experience Manager 6.5 Service Pack 9 Release Notes](sp-release-notes.md) and [Technical Requirements](/help/sites-deploying/technical-requirements.md).
+You can now develop and operate applications with [!DNL Azul Zulu] builds of [!DNL OpenJDK] for [!DNL Experience Manager Forms] on OSGi deployments. For more information, see [Experience Manager 6.5 Service Pack 9 Release Notes](/help/release-notes/previous/6.5.9.md) and [Technical Requirements](/help/sites-deploying/technical-requirements.md).
 
 #### Ability to send a notification email to a group using [!UICONTROL Assign Task] (6.5.9.0) {#group-notification-email}
 

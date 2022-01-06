@@ -165,7 +165,7 @@ For these use cases AEM provides the Link Rewriter Provider Interface.
 
 >[!NOTE]
 >
->This interface was introduced in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/sp-release-notes.md).
+>This interface was introduced in [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
 
 For more complicated cases, not covered by the [default](#default-link-rewriting), AEM offers the Link Rewriter Provider Interface. This is a `ConsumerType` interface that you can implement in your bundles, as a service. It bypasses the modifications AEM performs on internal links of an HTML offer as rendered from an Experience Fragment. This interface allows you to customize the process of rewriting internal HTML links to align with your business needs.
 

@@ -14,7 +14,7 @@ exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 
 ## About the patch installer {#about-the-patch-installer}
 
-The AEM 6.5 Forms JEE patch installer includes all fixed issues for all components of AEM 6.5 Forms JEE available until the release of this patch. See the latest  [Service Pack Release Notes](sp-release-notes.md) for a complete list of fixed issues.
+The AEM 6.5 Forms JEE patch installer includes all fixed issues for all components of AEM 6.5 Forms JEE available until the release of this patch. See the latest  [Service Pack Release Notes](release-notes.md) for a complete list of fixed issues.
 
 ## Prerequisites to installing the patch {#prerequisites-to-installing-the-patch}
 

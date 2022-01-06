@@ -358,7 +358,7 @@ In large enterprises the infrastructure required to create websites can be distr
 
 [!DNL Experience Manager Sites] offers capabilities to create web pages and [!DNL Experience Manager Assets] is the Digital Asset Management (DAM) system that supplies the required assets for websites. [!DNL Experience Manager] now supports the above use case by integrating [!DNL Sites] and [!DNL Assets]. See [how to configure and use Connected Assets feature](/help/assets/use-assets-across-connected-assets-instances.md).
 
-![Drag an asset from an [!DNL Experience Manager] deployment on a [!DNL Sites] page of a different [!DNL Experience Manager] deployment](assets/connected-assets-drag-and-drop-only.gif)
+![Drag an asset from an [!DNL Experience Manager] deployment on a [!DNL Sites] page of a different [!DNL Experience Manager] deployment](/help/release-notes/assets/connected-assets-drag-and-drop-only.gif)
 
 *Figure: Drag an asset from an [!DNL Experience Manager] deployment on a [!DNL Sites] page on a different [!DNL Experience Manager] deployment.*
 

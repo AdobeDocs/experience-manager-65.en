@@ -219,6 +219,6 @@ To provide feedback, ask questions, and request product enhancements, related to
 >[!MORELIKETHIS]
 >
 >* [Accessibility features in [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
->* [Release notes of enhancements done in each Service Pack release](/help/release-notes/new-features-latest-service-pack.md).
+>* [Release notes of enhancements done in each Service Pack release](/help/release-notes/previous/new-features-latest-service-pack.md).
 >* [[!DNL Adobe Experience Manager] accessibility guidance](/help/managing/web-accessibility.md).
 >* [Conformance reports (ACR) and VPAT listing for Adobe solutions](https://www.adobe.com/accessibility/compliance.html).

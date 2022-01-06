@@ -330,7 +330,7 @@ Some limitations of the feature are:
 * If a folder by the same name exists at the destination, the assets from the ZIP file are extracted in the existing folder.
 * If you cancel the extraction, the already extracted assets are not deleted.
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
-* When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing [the latest Service Pack](/help/release-notes/sp-release-notes.md).
+* When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing [the latest Service Pack](/help/release-notes/release-notes.md).
 
 ## Preview assets {#previewing-assets}
 
