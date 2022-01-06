@@ -52,7 +52,7 @@ Only the following characters are allowed for property name: A-Za-z0-9_. A digit
 
 * **Support to use the literal option to set value for a JSON type variable**: You can use literal option to set value for a JSON type variable in the set variable step of an AEM Workflow. The literal option allows you to specify a JSON in the form of a string.
 
-* [Platform Updates](../forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+* [Platform Updates](/help/forms/using/aem-forms-jee-supported-platforms.md): [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
   * [!DNL Adobe Acrobat 2020]
   * [!DNL Ubuntu 20.04]
   * [!DNL Open Office 4.1.10]
@@ -60,7 +60,7 @@ Only the following characters are allowed for property name: A-Za-z0-9_. A digit
   * [!DNL Microsoft Windows Server 2019]
   * [!DNL RHEL8]
 
-For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](new-features-latest-service-pack.md).
+For a list of all features and enhancements introduced in [!DNL Experience Manager] 6.5.10.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 10](previous/new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.10.0 release.
 
@@ -403,7 +403,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.7.
 
-For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](new-features-latest-service-pack.md).
+For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.9.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 9](previous/new-features-latest-service-pack.md).
 
 >[!NOTE]
 >
@@ -715,7 +715,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.6. <!-- TBD: Mention the version -->
 
-For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](new-features-latest-service-pack.md).
+For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.8.0, see [what is new in [!DNL Adobe Experience Manager] 6.5 Service Pack 8](previous/new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.8.0 release.
 
@@ -945,7 +945,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.5.
 
-For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.7.0, see [What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 7](new-features-latest-service-pack.md).
+For a complete list of features and enhancements introduced in [!DNL Experience Manager] 6.5.7.0, see [What's new in [!DNL Adobe Experience Manager] 6.5 Service Pack 7](previous/new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.7.0 release.
 
@@ -1284,7 +1284,7 @@ The key features and enhancements introduced in Adobe Experience Manager 6.5.6.0
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.4.
 
-For a complete list of features and enhancements introduced in Experience Manager 6.5.6.0, see [What's new in Adobe Experience Manager 6.5 Service Pack 6](new-features-latest-service-pack.md).
+For a complete list of features and enhancements introduced in Experience Manager 6.5.6.0, see [What's new in Adobe Experience Manager 6.5 Service Pack 6](previous/new-features-latest-service-pack.md).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0 release.
 
@@ -1300,7 +1300,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 * In [!DNL Rich Text Editor] if all text is removed then the paragraph tag gets removed as well (NPR-33976).
 * When the `siteadmin` page (in Classic UI) is opened or refreshed, the options in the `New` menu are disabled (NPR-33949).
 
-  ![Screenshot to illustrate the issue of missing menu in Classic UI](assets/33949_missing_menu.png)
+  ![Screenshot to illustrate the issue of missing menu in Classic UI](/help/release-notes/assets/33949_missing_menu.png)
 
 * A [!DNL Content Fragment] cannot be used as a `TemplatedResource` as it fails in `ContentFragmentUsePojo` (NPR-33911).
 * Synchronous and asynchronous move operations can lead to errors due to concurrent transfers. Page move operations are restricted to asynchronous move only. It prevents concurrent move of pages (NPR-33875).
@@ -1309,7 +1309,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 * Move a blueprint page with live copies to another folder. When moving it to the original folder, the move operation fails without any error (NPR-33864).
 * When move action is used to rename a web page in the [!DNL Sites] Console, it displays two overlapped dialogs at the last step of the wizard (NPR-33831).
 
-  ![Screenshot to illustrate NPR-33831 issue of overlapping move dialog](assets/33831_rename_dialog.png)
+  ![Screenshot to illustrate NPR-33831 issue of overlapping move dialog](/help/release-notes/assets/33831_rename_dialog.png)
 
 * The `cq:acLinks` and `cq:acUUID` properties for [!DNL Adobe Campaign] on the copy are removed during copy and paste operation (NPR-33794).
 * When attempting a rollout on a child page of a detached parent live copy, [!DNL Experience Manager] generates a null pointer exception (NPR-33676).
@@ -1390,13 +1390,13 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.6.0
 
   * The [!UICONTROL Searching Help] status message that is displayed when user enters a search string in [!UICONTROL Search for Help] field under [!UICONTROL Help] option.
   
-  ![Help menu in header](assets/Help_aem_header.png)
+  ![Help menu in header](/help/release-notes/assets/Help_aem_header.png)
   
   *Figure: [!UICONTROL Search for Help] in [!UICONTROL Help] menu.*
   
   * The error message if incorrect value is entered in [!UICONTROL Impersonate as] field under [!UICONTROL User] option and focus correctly moves to the text field (NPR-33804).
   
-  ![User menu in header](assets/User_aem_header.png)
+  ![User menu in header](/help/release-notes/assets/User_aem_header.png)
   
   *Figure: [!UICONTROL Impersonate as] field in [!UICONTROL User] menu in header.*
 
@@ -1649,7 +1649,7 @@ Some key features and enhancements introduced in [!DNL Adobe Experience Manager]
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.22.3.
 
-For complete list of features, key highlights, key features introduced in Experience Manager 6.5 Service Pack 5, see [What's new in Adobe Experience Manager 6.5 Service Pack 5](new-features-latest-service-pack.md) .
+For complete list of features, key highlights, key features introduced in Experience Manager 6.5 Service Pack 5, see [What's new in Adobe Experience Manager 6.5 Service Pack 5](previous/new-features-latest-service-pack.md) .
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0 release.
 
@@ -1917,7 +1917,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.5.0
 
 >[!NOTE]
 >
->Experience Manager Service Pack does not include fixes for [!DNL Forms]. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for AEM Forms on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>Experience Manager Service Pack does not include fixes for [!DNL Forms]. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for AEM Forms on JEE. For more information, see [Install Experience Manager Forms on JEE](/help/release-notes/jee-patch-installer-65.md).
 
 * Correspondence Management: The order of assets in a target area shuffles after submitting a letter (NPR-33359, NPR-33153).
 * Adaptive Forms: When a user edits an adaptive form, the [!UICONTROL Start Workflow] option available in the [!UICONTROL Page Information] menu does not work (NPR-33004).
@@ -1949,7 +1949,7 @@ Some key features and enhancements introduced in Adobe Experience Manager 6.5.4.
 
 * Support for [Rich Text](../forms/using/designing-form-template.md) in HTML5 forms.
 
-* [Accessibility enhancements](new-features-latest-service-pack.md#accessibility-enhancements) in Experience Manager Assets.
+* [Accessibility enhancements](previous/new-features-latest-service-pack.md#accessibility-enhancements) in Experience Manager Assets.
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to version 1.10.8.
 
@@ -1959,7 +1959,7 @@ Some key features and enhancements introduced in Adobe Experience Manager 6.5.4.
 
 * SOAP input or output and complex data structures now support Dynamic Group Substitution.
 
-For a complete list of features and key highlights introduced in the latest Service Packs, see [What's new in Adobe Experience Manager 6.5 Service Packs](new-features-latest-service-pack.md).
+For a complete list of features and key highlights introduced in the latest Service Packs, see [What's new in Adobe Experience Manager 6.5 Service Packs](previous/new-features-latest-service-pack.md).
 
 ### Sites {#sites-fixes}
 
@@ -2135,7 +2135,7 @@ For a complete list of features and key highlights introduced in the latest Serv
 
 >[!NOTE]
 >
->Experience Manager Service Pack does not include fixes for Experience Manager Forms. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for Adobe Experience Manager Forms on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>Experience Manager Service Pack does not include fixes for Experience Manager Forms. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for Adobe Experience Manager Forms on JEE. For more information, see [Install Experience Manager Forms on JEE](/help/release-notes/jee-patch-installer-65.md).
 
 * Correspondence Management: Letters display extra characters after submission to post process workflows (NPR-32626).
 
@@ -2394,7 +2394,7 @@ Remove one mention of this fix.
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate Forms add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms on JEE](/help/release-notes/jee-patch-installer-65.md).
 
 #### Forms add-on package {#forms-add-on-package-6530}
 
@@ -2580,7 +2580,7 @@ Some key highlights of this Service Pack release are:
 
 >[!NOTE]
 >
->[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms add-on](/help/release-notes/sp-release-notes.md#install-aem-forms-add-on-package) and [Install Experience Manager Forms on JEE](/help/release-notes/sp-release-notes.md#install-aem-forms-jee-installer).
+>[!DNL Experience Manager] Service Pack does not include fixes for [!DNL Experience Manager Forms]. They are delivered using a separate [!DNL Forms] add-on package. In addition, a cumulative installer is released that includes fixes for [!DNL Experience Manager Forms] on JEE. For more information, see [Install Experience Manager Forms on JEE](/help/release-notes/jee-patch-installer-65.md).
 
 The key highlights for [!DNL Experience Manager] 6.5.2.0 forms are:
 
@@ -2873,7 +2873,7 @@ The key highlights for [!DNL Experience Manager Forms] 6.5.1.0 are:
 
 #### Sites - Included
 
-* Export [!DNL Experience Manager] Experience Fragments to [!DNL Adobe Target]. For more details, see [The Experience Fragment Link Rewriter Provider - HTML](https://helpx.adobe.com/experience-manager/6-5/help/sites-developing/experience-fragments.html#TheExperienceFragmentLinkRewriterProviderHTML). Hotfix for CQ-4265469
+* Export [!DNL Experience Manager] Experience Fragments to [!DNL Adobe Target]. For more details, see [The Experience Fragment Link Rewriter Provider - HTML](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/experience-fragments.html#the-experience-fragment-link-rewriter-provider-html). Hotfix for CQ-4265469
 
 #### Forms - Document Services - Included
 
@@ -2887,8 +2887,8 @@ The following text documents list the OSGi bundles and Content Packages included
 
 List of OSGi bundles included in [!DNL Experience Manager] 6.5.1.0
 
-[Get File](assets/6_5-bundle-list.txt)
+[Get File](/help/release-notes/assets/6_5-bundle-list.txt)
 
 List of Content Packages included in [!DNL Experience Manager] 6.5.1.0
 
-[Get File](assets/6_5-content-package-list.txt)
+[Get File](/help/release-notes/assets/6_5-content-package-list.txt)
