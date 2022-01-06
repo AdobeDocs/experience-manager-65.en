@@ -13,7 +13,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 
 + [AEM 6.5 overview](home.md)
 + [General Release Notes](release-notes.md)
-+ Service Pack Release Notes {#service-pack}
++ Previous Release Notes {#service-pack}
   + [What's New](new-features-latest-service-pack.md)
   + [Service Pack 11 Release Notes](sp-release-notes.md)
   + [Previous Service Pack Release Notes](previous-hotfixes-featurepacks.md)
