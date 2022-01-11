@@ -87,10 +87,12 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
   <tr>
    <td><strong>Platform</strong></td>
    <td><strong>Support Level</strong></td>
+   <td><strong>Link</strong></td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64bit</td>
    <td>A: Supported [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18 </td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 - 64bit</td>
