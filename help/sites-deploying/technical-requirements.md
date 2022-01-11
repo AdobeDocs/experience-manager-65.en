@@ -87,18 +87,22 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
   <tr>
    <td><strong>Platform</strong></td>
    <td><strong>Support Level</strong></td>
+   <td><strong>Link</strong></td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64bit</td>
    <td>A: Supported [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24</td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 - 64bit</td>
    <td>A: Supported [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18</td>
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK - 64bit</td>
    <td>A: Supported [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
@@ -111,6 +115,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
   <tr>
    <td>Oracle Java SE 8 JDK - 64bit</td>
    <td>A: Supported [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10<td>
   </tr>
   <tr>
    <td>IBM J9 VM - build 2.9, JRE 1.8.0</td>
