@@ -82,7 +82,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 >
 >It is recommended to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
 
-<table>
+<!--- <table>
  <tbody>
   <tr>
    <td><strong>Platform</strong></td>
@@ -126,16 +126,16 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
    <td>A: Supported [3]</td>
   </tr>
  </tbody>
-</table>
+</table> --->
 
-| **Platform** | **Support Level** | **Links** |
+| **Platform** | **Support Level** | **Link** |
 |---|---|---|
 | Azul Zulu OpenJDK 11 - 64bit | A: Supported `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24) |
 | Azul Zulu OpenJDK 8 - 64bit | A: Supported `[1]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18) |
-| Oracle Java SE 11 JDK - 64bit | A: Supported `[2]` |
+| Oracle Java SE 11 JDK - 64bit | A: Supported `[2]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
 | Oracle Java SE 10 JDK | Z: Not supported `[2]` |
 | Oracle Java SE 9 JDK | Z: Not supported `[2]` |
-| Oracle Java SE 8 JDK - 64bit | A: Supported `[2]` |
+| Oracle Java SE 8 JDK - 64bit | A: Supported `[2]` | [https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
 | IBM J9 VM - build 2.9, JRE 1.8.0 | A: Supported `[3]` |
 | IBM J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[3]` |
 
