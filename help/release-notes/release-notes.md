@@ -28,13 +28,19 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
 
+   ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
+   
 * You can now render the sort option in Card and Column view.
 
 * Business profiles support for Adobe Asset Link.
 
 * You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
 
+   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
+
 * You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
+
+   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
 
 * The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.9.
 
@@ -541,6 +547,17 @@ These websites are only available to customers. If you are a customer and need a
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
 * See [how to contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+
+## Key releases since [!DNL Adobe Experience Manager] 6.5 SP10{#key-releases-since-last-sp}
+
+Between August 26, 2021, and November 25, 2021, Adobe released the following, in addition to the Service Packs:
+
+* [!DNL Adobe Experience Manager] as a Cloud Service [2021.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) and [2021.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
+
+* [[!DNL Experience Manager] desktop app 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
+
+* [Experience Manager Screens: Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html)
+
 
 >[!MORELIKETHIS]
 >
