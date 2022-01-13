@@ -17,7 +17,7 @@ AEM Assets lets your organization easily create, manage, deliver and optimize di
 
 * [Working with AEM Assets](/help/assets/manage-assets.md)
 * [Working with Dynamic Media](/help/assets/dynamic-media.md)
-* [AEM Assets Release Notes](/help/release-notes/assets.md)
+* [AEM Release Notes](/help/release-notes/release-notes.md)
 
 ## AEM Forms {#aem-forms}
 
