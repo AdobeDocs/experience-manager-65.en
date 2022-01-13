@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 
 # Adobe Experience Manager 6.5 Release Notes {#release-notes}
 
-+ [AEM 6.5 Overview](home.md)
++ [AEM 6.5 Release Notes](home.md)
 + [Current Release Notes](release-notes.md)
 + Previous Release Notes {#service-pack}
   + [6.5.10](previous/6.5.10.md)
