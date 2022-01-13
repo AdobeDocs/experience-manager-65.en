@@ -40,6 +40,10 @@ To resolve this error:
 
 1. Save the file and restart the AEM instance.
 
+## Sites {#sites}
+
+* **Working with Page Versions**: If a page has been moved, you can no longer perform a preview on any versions made before the move.
+
 ## Assets {#assets}
 
 * **Search:** Search does not result any returns if the search string contains leading space(s) ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
