@@ -291,7 +291,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 When you encode a video file, use a source video file of the highest possible quality. Avoid using previously encoded video files because these files are already compressed, and further encoding creates a subpar quality video.
 
-* Dynamic Media supports short-form videos with a maximum length of 30 minutes.
+* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 50 x 50.
 * You can upload primary source video files that are up to 15 GB each.
 
 The following table describes the recommended size, aspect ratio, and minimum bit rate that your source video files must have before you encode them:
