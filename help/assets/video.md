@@ -49,7 +49,7 @@ The following step-by-step workflow description is designed to help you get up a
 
     * Upload your primary source videos to the folders. When you add videos to the folder, they are encoded according to the video processing profile that you assigned to the folder.
 
-        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes.
+        * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 50 x 50.
         * You can upload video files that are up to 15 GB each.
         * [Upload your videos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
         * Learn more about [Supported input file formats](/help/assets/assets-formats.md#supported-multimedia-formats).
