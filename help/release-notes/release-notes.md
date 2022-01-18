@@ -30,8 +30,6 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
    ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
    
-* You can now render the sort option in Card and Column view.
-
 * Business profiles support for Adobe Asset Link.
 
 * You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
