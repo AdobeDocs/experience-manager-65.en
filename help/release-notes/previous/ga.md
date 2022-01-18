@@ -545,9 +545,9 @@ To resolve this error:
 
 1. Save the file and restart the AEM instance.
 
-## Sites {#sites}
+### Sites {#sites}
 
-* **Working with Page Versions**: If a page has been moved, you can no longer perform a preview on any versions made before the move.
+* **Working with Page Versions**: [If a page has been moved, you can no longer perform a preview on any versions made before the move](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
 ### Assets {#assets}
 
