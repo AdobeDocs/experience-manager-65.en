@@ -401,7 +401,7 @@ If structure of a payload is different from the structure of the watched folder,
 
 #### Creating a custom Payload Mapper Filter {#creating-a-custom-payload-mapper-filter}
 
-1. Download [Adobe Client SDK](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aemfd/aemfd-client-sdk/6.3.0/aemfd-client-sdk-6.3.0.jar).
+1. Download [Adobe Client SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
 1. Setup the client SDK in the build path of the maven-based project. To get started, you can download and open the following maven-based project in the IDE of your choice.
 1. Edit the payload mapper filter code available in sample bundle to suit your requirement.
 1. Use maven to create a bundle of the custom Payload Mapper Filter.

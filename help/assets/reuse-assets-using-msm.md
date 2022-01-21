@@ -17,7 +17,7 @@ Multi Site Manager (MSM) functionality in [!DNL Adobe Experience Manager] enable
 
 ## Prerequisites {#prereq}
 
-To use MSM for [!DNL Assets], install at least [!DNL Experience Manager] 6.5 Service Pack 1. For more information, see [the release notes of latest service pack](/help/release-notes/sp-release-notes.md).
+To use MSM for [!DNL Assets], install at least [!DNL Experience Manager] 6.5 Service Pack 1. For more information, see [the release notes of latest service pack](/help/release-notes/release-notes.md).
 
 ## Understand the benefits and the concepts {#concepts}
 

@@ -9,19 +9,77 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 
 Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
 
-**With the April release we have replaced the CIF Connector from GitHub with the CIF add-on** which is available on the [Adobe Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). The switch to the add-on comes with great benefits for projects:
-
-* Most of the new features will immediately be available on AEM 6.5 (No more waiting for feature side-port)
-* Easy upgradable to new add-on versions
-* Ready for Cloud Service
-
-The old AEM CIF Connector is going into maintenance mode and should not be used anymore. Please replace the CIF Connector with the new CIF add-on. Simply package replacement should be possible for most projects.
-
 |Component| System Requirements|
 |:-------|:-----:|
 |CIF add-on |Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL schemas|
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
+
+## Release Date: November, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.11.18.00|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip)|
+|CIF Core Components |2.4.2|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2)|
+|CIF Venia Reference Site| 2021.12.01|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01)|
+
+### What's New {#what-is-new-november}
+
+* Extended myAccount components that are based on Commerce's extensible Peregrine components
+
+![Extended myAccount components](/help/assets/CIF/extended-myAccount-components.png)
+
+* Authors can create ad-hoc Commerce Product Recommendations using additional recommendation types
+
+* Support for gift cards in AEM Storefront
+
+## Release Date: October, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.10.20.02|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip)|
+|CIF Core Components |2.4.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0)|
+|CIF Venia Reference Site| 2021.11.01|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01)|
+
+### What's New {#what-is-new-october}
+
+* The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
+
+* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
+
+* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Magento's extensible Peregrine components
+
+* Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
+
+* AEM Storefront Venia returns HTTP 404 error if category or product page is not found
+
+## Release Date: September, 2021
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2021.09.27|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip)|
+|CIF Core Components |2.2.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0)|
+|CIF Venia Reference Site| 2021.09.23|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23)|
+
+### What's New {#what-is-new-september}
+
+* New "associated commerce content" tab in Sites editor increases author efficiency by quickly getting access to relevant AEM  product content for the current context
+
+  ![Associated commerce content](/help/assets/CIF/associated-commerce-content.png)
+
+* Improved product picker UI for better user experience, increased efficiency and support for complex product catalog
+
+  ![New Product Picker](/help/assets/CIF/product-picker.png)
+
+* Respect "include_in_menu" property in navigation component
+
+### Bug fixes {#bug-fixes-september}
+
+* Menu cache flush is not working as expected
+
+* JS errors during AEM CS deployment step and when not using clientside components
+
+* Cannot create CIF cloud config in folders that have a sling:configs node
 
 ## Release Date: August, 2021
 

@@ -56,7 +56,7 @@ See also [Use 'asset' instead of 'is' image in a rule set](https://helpx.adobe.c
 
 1. Sign in to your [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
-   Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Technical Support.
+   Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
 
 1. Upload your rule set file by doing the following:
 

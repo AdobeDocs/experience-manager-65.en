@@ -206,7 +206,7 @@ In addition, set the path of ImageMagick's temporary folder in the `configure.xm
 >
 >The ImageMagick `policy.xml` and `configure.xml` files are available at `/usr/lib64/ImageMagick-&#42;/config/` instead of `/etc/ImageMagick/`.See [ImageMagick documentation](https://www.imagemagick.org/script/resources.php) for location of the configuration files.
 
-If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Care if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Care representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
+If you are using [!DNL Experience Manager] on Adobe Managed Services (AMS), reach out to Adobe Customer Support if you plan to process lots of large PSD or PSB files. Work with Adobe Customer Support representative to implement these best practices for your AMS deployment and to choose the best possible tools and models for Adobe's proprietary formats. [!DNL Experience Manager] may not process very high-resolution PSB files that are more than 30000 x 23000 pixels.
 
 ### XMP writeback {#xmp-writeback}
 
@@ -236,7 +236,7 @@ When replicating assets to a large number of publish instances, for example in a
 
 ## Search indexes {#search-indexes}
 
-Install [the latest Service Packs](/help/release-notes/sp-release-notes.md) and performance-related hotfixes as those often include updates to system indexes. See [performance tuning tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations.
+Install [the latest Service Packs](/help/release-notes/release-notes.md) and performance-related hotfixes as those often include updates to system indexes. See [performance tuning tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations.
 
 Create custom indexes for queries that you run often. For details, see [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/help/sites-deploying/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -300,6 +300,6 @@ To minimize latency and achieve high throughput through efficient CPU utilizatio
 * Configure [!DNL ImageMagick] to limit resource consumption.
 * Remove unnecessary steps from the [!UICONTROL DAM Update Asset] workflow.
 * Configure workflow and version purging.
-* Optimize indexes with the latest Service Packs and hotfixes. Check with Adobe Customer Care for any additional index optimizations that may be available.
+* Optimize indexes with the latest Service Packs and hotfixes. Check with Adobe Customer Support for any additional index optimizations that may be available.
 * Use guessTotal to optimize query performance.
 * If you configure [!DNL Experience Manager] to detect file types from the content of the files (by enabling **[!UICONTROL Day CQ DAM Mime Type Service]** in the **[!UICONTROL AEM Web Console]**), upload many files in bulk during non-peak hours as it is resource-intensive.

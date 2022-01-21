@@ -140,9 +140,6 @@ To open your fragment for editing:
 
    ![fragment editor](assets/cfm-managing-03.png)
 
-1. After making changes, use **Save & close**.
-
-<!-- 
 1. After making changes, use **Save**, **Save & close** or **Close** as required.
 
    >[!NOTE]
@@ -152,7 +149,6 @@ To open your fragment for editing:
    >[!NOTE]
    >
    >Both **Save & Close** and **Close** will exit the editor - see [Save, Close and Versions](#save-close-and-versions) for full information on how the various options operate for content fragments.
--->
 
 ## Modes and Actions in the Content Fragment Editor {#modes-actions-content-fragment-editor}
 
@@ -176,9 +172,7 @@ Navigate through the various modes using the icons in the side panel:
 
 Some features in the top toolbar are available from multiple modes:
 
-<!-- screenshot changed from original text see commented out below -->
-
-![modes](assets/cfm-managing-03.png)
+![modes](assets/cfm-managing-top-toolbar.png)
 
 * A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
 
@@ -190,21 +184,15 @@ Some features in the top toolbar are available from multiple modes:
 
 * See the status of the fragment; for example, information about when it was created, modified or published. 
 
-* **Save & Close** 
+* **Save** provides access to the **Save & close** option.
   
+* The three dots (**...**) drop-down provides access to additional actions:
+  * **Update page references**
+    * This updates any page references. 
+  * **[Quick publish](#publishing-and-referencing-a-fragment)**
+  * **[Manage Publication](#publishing-and-referencing-a-fragment)** 
+
 <!--
-Some features in the top toolbar are available from multiple modes:
-
-![modes](assets/cfm-managing-top-toolbar.png)
-
-* A message will be shown when the fragment is already referenced on a content page. You can **Close** the message.
-
-* The side panel can be hidden/shown using the **Toggle Side Panel** icon.
-
-* Underneath the fragment name you can see the name of the [Content Fragment Model](/help/assets/content-fragments/content-fragments-models.md) used for creating the current fragment:
-
-  * The name is also a link that will open the model editor.
-
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
 
   * **New**: grey
@@ -212,20 +200,12 @@ Some features in the top toolbar are available from multiple modes:
   * **Published**: green
   * **Modified**: orange
   * **Deactivated**: red
-
-* **Save** provides access to the **Save & close** option.
-  
-* The three dots (**...**) drop-down provides access to additional actions:
-  * **Update page references**
-    * This updates any page references. 
-  * **[Quick publish](#publishing-and-referencing-a-fragment)**
-  * **[Manage Publication](#publishing-and-referencing-a-fragment)**
---> 
+-->
 
 <!--
-This updates any page references and ensures that the Dispatcher is flushed as required. -->
+This updates any page references and ensures that the Dispatcher is flushed as required. 
+-->
 
-<!--
 ## Save, Close and Versions {#save-close-and-versions}
 
 >[!NOTE]
@@ -275,7 +255,6 @@ While editing your content fragment AEM automatically creates versions to ensure
 
 3. If the user cancels the edit, the version created at the start of the editing session is restored and the token is removed to end the editing session.
 4. If the user selects to **Save** the edits, the updated elements/variations are persisted and the token is removed to end the editing session.
---> 
 
 ## Editing the Content of your Fragment {#editing-the-content-of-your-fragment}
 

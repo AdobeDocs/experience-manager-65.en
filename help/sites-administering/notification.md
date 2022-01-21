@@ -312,6 +312,10 @@ AEM offers OAuth2 support for its integrated Mailer Service, in order to allow o
 
 You can configure OAuth for multiple email providers, as outlined below.
 
+>[!NOTE]
+>
+>This procedure is an example for a Publish instance. If you wish to enable email notifications on an Author instance, you need to follow the same steps on the Author.
+
 ### Gmail {#gmail}
 
 1. Create your project at `https://console.developers.google.com/projectcreate`
@@ -374,7 +378,7 @@ Finally, confirm the configuration by:
 1. Going to the address of the Publish instance, and logging in as admin.
 1. Open a new tab in the browser and go to `http://serveraddress:serverport/services/mailer/oauth2/authorize`. This will redirect you to the page of your SMTP provider, in this case Gmail.
 1. Login and consent to giving required permissions
-1. After consenting, the token will be stored in the repository. You can access it under `accessToken` by directly accessing this URL on your publish instance: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
+1. After consenting, the token will be stored in the repository. You can access it under `accessToken` by directly accessing this URL on your publish instance: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
 1. Repeat the above for each publish instance
 
 <!-- clarify if the ip/server address in the last procedure is that of the publish instance -->
@@ -457,4 +461,4 @@ Finally, confirm the configuration by:
 1. Going to the address of the Publish instance, and logging in as admin.
 1. Open a new tab in the browser and go to `http://serveraddress:serverport/services/mailer/oauth2/authorize`. This will redirect you to the page of your SMTP provider, in this case Gmail.
 1. Login and consent to giving required permissions
-1. After consenting, the token will be stored in the repository. You can access it under `accessToken` by directly accessing this URL on your publish instance: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth2 `
+1. After consenting, the token will be stored in the repository. You can access it under `accessToken` by directly accessing this URL on your publish instance: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`

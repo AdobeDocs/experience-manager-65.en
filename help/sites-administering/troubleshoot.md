@@ -22,7 +22,7 @@ The following section covers some issues that you may encounter when using AEM, 
 
 >[!NOTE]
 >
->When experiencing problems it is also worthwhile checking the list of [Known Issues](/help/release-notes/known-issues.md) for your instance (release and service packs).
+>When experiencing problems it is also worthwhile checking the list of [Known Issues](/help/release-notes/release-notes.md) for your instance (release and service packs).
 
 ## Troubleshooting scenarios for Administrators {#troubleshooting-scenarios-for-administrators}
 

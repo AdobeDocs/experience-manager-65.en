@@ -254,7 +254,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 ### Tenant ID and Client Code {#tenant-client}
 
-With [Adobe Experience Manager 6.5.8.0](/help/release-notes/sp-release-notes.md), the Client Code field had been added to the Target configuration window.
+With [Adobe Experience Manager 6.5.8.0](/help/release-notes/release-notes.md), the Client Code field had been added to the Target configuration window.
 
 When configuring the Tenant ID and Client Code fields, please be aware of the following:
 

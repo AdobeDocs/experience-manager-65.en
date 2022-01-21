@@ -2,8 +2,8 @@
 title: Configure the Rich Text Editor to author content in Adobe Experience Manager.
 description: Learn to configure the Adobe Experience Manager Rich Text Editor to author content in Adobe Experience Manager.
 contentOwner: AG
+exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 ---
-
 # Configure the Rich Text Editor {#configure-the-rich-text-editor}
 
 The Rich Text Editor (RTE) provides authors with a wide range of functionality for editing their text content. Icons, selection boxes, toolbar, and menus are provided for a WYSIWYG text-editing experience.
@@ -336,7 +336,7 @@ AEM RTE capability has the following limitations:
 
 * RTE capabilities are supported only in AEM component dialogs. RTE is not supported on wizards or Foundation-forms like [Page Properties](/help/sites-developing/page-properties-views.md) and [Scaffolding](/help/sites-authoring/scaffolding.md) on Touch-enabled UI.
 
-* AEM does not work on [Hybrid devices](/help/release-notes/known-issues.md).
+* AEM does not work on [Hybrid devices](/help/release-notes/release-notes.md).
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 

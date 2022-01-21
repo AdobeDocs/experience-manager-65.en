@@ -39,7 +39,7 @@ To change the limit, access **[!UICONTROL Tools]** > **[!UICONTROL Operations]**
 
 ## Metadata profiles {#metadata-profiles}
 
-A metadata profile lets you apply default metadata to assets within a folder. Create a metadata profile and apply it to a folder. Any asset that you subsequently upload to the folder inherits the default metadata that you configured in the metadata profile.
+A metadata profile lets you apply default metadata to assets within a folder. Create a metadata profile and apply it to a folder. Any asset that you later upload to the folder inherits the default metadata that you configured in the metadata profile.
 
 ### Add a metadata profile {#adding-a-metadata-profile}
 
@@ -60,7 +60,7 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    ![Map to property setting in metadata profile](assets/metadata-profile-setting-map-property.png)
 
-   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify `./jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, [!DNL Assets] stores the value `dc:desc` at the asset's metadata node. It is recommended to map only one field to a given property in the metadata schema. Otherwise, the latest added field mapped to the property is picked by the system.
+   The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset's metadata node. For example, if you specify `./jcr:content/metadata/dc:desc` as the name of **[!UICONTROL Map to property]**, [!DNL Assets] stores the value `dc:desc` at the asset's metadata node. Adobe recommends that you map only one field to a given property in the metadata schema. Otherwise, the latest added field mapped to the property is picked by the system.
 
     * **[!UICONTROL Default Value]**: Use this property to add a default value for the metadata component. For example, if you specify "My description" then this value is assigned to the property `dc:desc` at the asset's metadata node.
 
@@ -68,14 +68,14 @@ A metadata profile lets you apply default metadata to assets within a folder. Cr
 
    >[!NOTE]
    >
-   >Adding a default value to a new metadata property (which doesn't exist already at the . `/jcr:content/metadata` node) does not display the property and its value on the asset's Properties page by default. To view the new property on the assets' [!UICONTROL Properties] page, modify the corresponding schema form.
+   >Adding a default value to a new metadata property (that does not exist at `/jcr:content/metadata` node) does not display the property and its value on the asset's [!UICONTROL Properties] page by default. To view the new property on the assets' [!UICONTROL Properties] page, modify the corresponding schema form.
 
-1. (Optional) Add more components to the Edit Form from the **[!UICONTROL Build Form]** tab, and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available from the **[!UICONTROL Build Form]** tab:
+1. (Optional) In the **[!UICONTROL Build Form]** tab, add more components to [!UICONTROL Edit Form], and configure their properties in the **[!UICONTROL Settings]** tab. The following properties are available in the **[!UICONTROL Build Form]** tab:
 
 |           Component           |                               Properties                                |
 | ----------------------------- | ----------------------------------------------------------------------- |
 | [!UICONTROL Section Header]   | Field Label, <br> Description                                           |
-| [!UICONTROL Single Line Text] | Field Label, <br> Map to property, <br> Default Value                   |
+| [!UICONTROL Single-Line Text] | Field Label, <br> Map to property, <br> Default Value                   |
 | [!UICONTROL Multi Value Text] | Field Label, <br> Map to property, <br> Default Value                   |
 | [!UICONTROL Number]           | Field Label, <br> Map to property, <br> Default Value                   |
 | [!UICONTROL Date]             | Field Label, <br> Map to property, <br> Default Value                   |
@@ -150,7 +150,7 @@ You can map/configure these form items to a field within a metadata node in the 
 
    ![custom_tab](assets/custom_tab.png)
 
-   To add more tabs, click `+`. Click `X` on a tab to delete it.
+   To add more tabs, click `+`. To delete, click `X` on a tab.
 
 1. In the active tab, add one or more components from the **[!UICONTROL Build Form]** tab.
 
@@ -160,11 +160,11 @@ You can map/configure these form items to a field within a metadata node in the 
 
 1. To configure a component, select it and modify its properties in the **[!UICONTROL Settings]** tab.
 
-   If required, delete a component from the **[!UICONTROL Settings]** tab.
+   If necessary, delete a component from the **[!UICONTROL Settings]** tab.
 
    ![configure_properties](assets/configure_properties.png)
 
-1. Click **[!UICONTROL Save]** from the toolbar to save the changes.
+1. To save the changes, select **[!UICONTROL Save]** from the toolbar.
 
 #### Components to build forms {#components-to-build-forms}
 
@@ -265,7 +265,7 @@ Enter metadata values in the various fields and click **[!UICONTROL Save]** to s
 >
 >* [Metadata concepts and understanding](metadata-concepts.md).
 >* [Edit metadata properties of multiple collections](manage-collections.md#editing-collection-metadata-in-bulk).
->* [Metadata import and export in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html).
+>* [Metadata import and export in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html).
 >* [Profiles to process metadata, images, and videos](processing-profiles.md).
 >* [Best Practices to organize your digital assets to use processing profiles](/help/assets/organize-assets.md).
 >* [XMP writeback](/help/assets/xmp-writeback.md).

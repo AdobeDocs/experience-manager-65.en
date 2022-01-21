@@ -39,11 +39,13 @@ The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stocken
 **Prerequisites**
 
 The integration requires: 
+
 * An [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
 * A user with permissions in Admin Console to the default Stock product profile
 * A user with permissions to the Developer Access profile for creating integration in Adobe Developer Console
 
 An enterprise [!DNL Adobe Stock] plan,
+
 * Provides product entitlement for [!DNL Adobe Stock] (Stocks connected to Experience Manager)
 * Credits purchased into the [!DNL Adobe Admin Console] for your stock entitlement
 * Enables Service Account (JWT) authentication within [!DNL Adobe Developer Console] for your stock entitlement
@@ -300,9 +302,9 @@ The following table explains how the user permissions work while accessing the [
 | User | Group | Permissions | Accept Stock configuration in User Preferences | Access Assets | Access Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | admin | N/A | All | N/A | Yes | Yes |  
-| test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | Yes | Yes | Yes |
-| test-doc1 | DAM user | `/conf/global/settings/stock/cloud-config` | No | Error: Failed to load data | No |
-| test-doc1 | DAM user | allow: `/conf/global/settings/stock` deny: `/cloud-config`| Stock configuration is not visible | Yes | No |
+| test-doc1 | DAM user | /conf/global /settings/stock/cloud-config | Yes | Yes | Yes |
+| test-doc1 | DAM user | /conf/global /settings/stock/cloud-config | No | Error: Failed to load data | No |
+| test-doc1 | DAM user | **allow**: /conf/global /settings/stock     **deny**: /cloud-config | Stock configuration is not visible | Yes | No |
 
 
 ## Use and manage [!DNL Adobe Stock] assets in [!DNL Experience Manager] {#usemanage}
@@ -407,5 +409,5 @@ Users can see the properties for both, licensed and unlicensed assets.
 >[!NOTE]
 >
 >If there are multiple [!DNL Adobe Stock] configurations, select the desired configuration in [!UICONTROL User Preferences] panel. To access the panel from [!DNL Experience Manager] home page, click the user icon and then click **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**.
-
 -->
+

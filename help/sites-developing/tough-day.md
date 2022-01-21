@@ -3,24 +3,23 @@ title: Tough Day
 seo-title: Tough Day
 description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
-uuid: 1b672182-40f5-4580-b038-2e3c8fbfb8b7
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: ea6b40fe-b6e1-495c-b34f-8815a4e2e42e
-docset: aem65
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 ---
 # Tough Day{#tough-day}
 
 ## What is Tough Day 2 {#what-is-tough-day}
 
-"Tough Day 2" is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) for a presentation of the application.
+"Tough Day 2" is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) for a presentation of the application.
+
+>[!CAUTION]
+>
+>Tough Day 2 requires Java 8.
 
 ## How to Run Tough Day 2 {#how-to-run-tough-day}
 
-Download the latest version of Tough Day 2 from the [Adobe Repository](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/qe/toughday2/). After you download the application, you can run it out of the box by providing the `host` parameter. In the following example, the AEM instance runs locally so the `localhost` value is used:
+Download the latest version of Tough Day 2 from the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). After you download the application, you can run it out of the box by providing the `host` parameter. In the following example, the AEM instance runs locally so the `localhost` value is used:
 
 ```xml
 java -jar toughday2.jar --host=localhost
@@ -401,8 +400,10 @@ Tough Day 2 creates a logs folder in the same directory where you ran Tough Day 
 
 The logs are not overwritten, subsequent runs will append messages to the existing logs. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
+<!--
 #### Example Usage {#example-usage}
 
 #### Known Issues {#known-issues}
 
 [Get File](assets/toughday-6_1.jar)
+-->

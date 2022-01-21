@@ -8,13 +8,21 @@ exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed.
+You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. 
 
 >[!NOTE]
 >
->Recipients of emails must be members of the `dam-users` group to access the ZIP download link in the email message. To be able to download the assets, the members must have permissions to launch workflows that trigger downloading of assets.
+>Any user having read permissions at `/var/dam/share` location can access the download link shared in the email message.
+>
+>Any user having read permissions to `/var/dam/jobs/download` location can download assets.
+>
+>The asset types - Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets cannot be downloaded.
 
-The asset types Image Sets, Spin Sets, Mixed Media Sets, and Carousel Sets cannot be downloaded.
+<!--
+OLD content of the above NOTE, changed wrt CQDOC-18661.
+>The email recipients must be members of the `dam-users` group to access the ZIP download link in the email message.
+>
+-->
 
 **To download assets, follow these steps:**
 

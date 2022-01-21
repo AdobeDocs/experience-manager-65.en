@@ -11,17 +11,20 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 
 # Adobe Experience Manager 6.5 Release Notes {#release-notes}
 
-+ [AEM 6.5 overview](home.md)
-+ [General Release Notes](release-notes.md)
-+ Service Pack Release Notes {#service-pack}
-  + [What's New](new-features-latest-service-pack.md)
-  + [Service Pack 10 Release Notes](sp-release-notes.md)
-  + [Previous Service Pack Release Notes](previous-hotfixes-featurepacks.md)
-+ [AEM Sites Release Notes](sites.md)
-+ [AEM Assets Release Notes](assets.md)
++ [AEM 6.5 Release Notes](home.md)
++ [Current Release Notes](release-notes.md)
++ Previous Release Notes {#service-pack}
+  + [6.5.10](previous/6.5.10.md)
+  + [6.5.9](previous/6.5.9.md)
+  + [6.5.8](previous/6.5.8.md)
+  + [6.5.7](previous/6.5.7.md)
+  + [6.5.6](previous/6.5.6.md)
+  + [6.5.5](previous/6.5.5.md)
+  + [6.5.4](previous/6.5.4.md)
+  + [6.5.3](previous/6.5.3.md)
+  + [6.5.2](previous/6.5.2.md)
+  + [6.5.1](previous/6.5.1.md)
+  + [6.5.0](previous/ga.md)
 + [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
-+ [AEM Communities Release Notes](communities-release-notes.md)
 + [Deprecated and Removed Features](deprecated-removed-features.md)
-+ [Known Issues](known-issues.md)
-+ [AEM Foundation and Repository](wcm-platform.md)
 + [Touch UI Feature Status](touch-ui-features-status.md)

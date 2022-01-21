@@ -82,9 +82,11 @@ In addition to list of privileges and the Permission Type on a given path, this 
 
 >[!NOTE]
 >
->For more information on what each restriction means, please consult [this page](/help/sites-administering/user-group-ac-admin.md#restrictions).
+>For more information on what each restriction means, please consult [the Jackrabbit Oak Documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon. ![](assets/sapte-1.png) ![](assets/opt-1.png)
+Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon. 
+
+![](assets/sapte-1.png) ![](assets/opt-1.png)
 
 The new ACE is reflected in the Access Control List as shown below. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as its covered under `jcr:write`.
 
@@ -94,11 +96,11 @@ Access Control Entries can be edited by selecting a principal and choosing the A
 
 For example here we can edit the below entry for **dam-users** by clicking the pencil icon on the right:
 
-![](assets/image2019-3-21_0-35-39.png)
+![Add restriction](assets/image2019-3-21_0-35-39.png)
 
 The edit screen is shown with configured ACEs preselected, these can be deleted by clicking the cross icon next to them or new privileges can be added for the given path, as shown below.
 
-![](assets/noua-1.png)
+![Edit entry](assets/noua-1.png)
 
 Here we are adding the `addChildNodes` privilege for **dam-users** on the given path.
 

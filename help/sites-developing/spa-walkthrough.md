@@ -32,7 +32,7 @@ The goal of this introduction and walkthrough is to demonstrate to an AEM develo
 
 The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. The following requirements must be met:
 
-* [AEM version 6.4 with service pack 2 or newer](/help/release-notes/sp-release-notes.md)
+* [AEM version 6.4 with service pack 2 or newer](/help/release-notes/release-notes.md)
 * [Install the sample We.Retail Journal app available on GitHub here.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 
 >[!CAUTION]
@@ -96,7 +96,7 @@ When an SPA is built to leverage the AEM SPA Editor, the content author notices 
 >
 >The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. The following requirements must be met:
 >
->* [AEM version 6.4 with service pack 2](/help/release-notes/sp-release-notes.md)
+>* [AEM version 6.4 with service pack 2](/help/release-notes/release-notes.md)
 >* [Install the sample We.Retail Journal app available on GitHub here.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 >
 
