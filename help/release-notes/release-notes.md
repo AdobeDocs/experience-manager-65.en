@@ -11,7 +11,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 | -------- | ---------------------------- |
 | Version  | 6.5.12.0                      |
 | Type     | Service Pack Release         |
-| Date     | February 24, 2021                |
+| Date     | February 24, 2022               |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.11.zip) |
 
 ## What is included in [!DNL Adobe Experience Manager] 6.5.12.0 {#what-is-included-in-aem}
