@@ -35,4 +35,4 @@ Content Fragments are a feature of Adobe Experience Manager that allows a market
 
 ## Related Resources {#related}
 
-It is also possible to customize an entire template for a specific set of products or categories. Learn how by [creating multiple category and product pages](./multi-template-usage.md).
+It is also possible to customize an entire template for a specific set of products or categories. Learn how by [creating multiple category and product pages](/help/commerce/cif/configuring/multi-template-usage.md).
