@@ -11,7 +11,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 |Component| System Requirements|
 |:-------|:-----:|
-|CIF add-on |Minimum: AEM 6.5.7, Magento 2.3.5 GraphQL schemas|
+|CIF add-on |Minimum: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL schemas|
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
@@ -47,7 +47,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
 
-* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Magento's extensible Peregrine components
+* Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Adobe Commerce's extensible Peregrine components
 
 * Merchants can hide certain product catalog categories in the navigation using the Commerce backend. The CIF Navigation Core Component respects the commerce backend configuration "include in menu" to show / hide categories in navigation
 
@@ -189,7 +189,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 ### What's new
 
-* Support for Magento 2.4.2
+* Support for Adobe Commerce 2.4.2
 
 ### What's Improved
 

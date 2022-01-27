@@ -35,7 +35,7 @@ Adobe provides two versions of the Commerce Integration Framework:
     </ul> </td>
    <td>
     <ul>
-     <li>Magento</li>
+     <li>Adobe Commerce</li>
      <li>Java &amp; Javascript</li>
      <li>No commerce data stored in JCR repository</li>
     </ul> </td>
@@ -75,12 +75,12 @@ Adobe provides two versions of the Commerce Integration Framework:
   <tr>
    <td>Standardized data model</td>
    <td>No</td>
-   <td>Yes, Magento GraphQL schema</td>
+   <td>Yes, Adobe Commerce GraphQL schema</td>
   </tr>
   <tr>
    <td>Availability</td>
    <td><p>Yes. SAP Commerce Cloud (Extension updated to support AEM 6.4 and Hybris 5 (default) and maintains compatibility with Hybris 4</p> <p>Salesforce Commerce Cloud (Connector open-sourced to support AEM 6.4)</p> </td>
-   <td>Yes via open source via GitHub. Magento Commerce (Supports Magento 2.3.2 (default) and compatible with Magento 2.3.1).</td>
+   <td>Yes via open source via GitHub. Adobe Commerce (Supports 2.3.2 (default) and compatible with 2.3.1).</td>
   </tr>
   <tr>
    <td>When to use</td>

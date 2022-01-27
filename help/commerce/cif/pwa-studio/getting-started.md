@@ -20,7 +20,7 @@ Designing the structure you need is easy with the Content Fragment Model Editor 
 
 ## Setup PWA Studio {#setup-pwa}
 
-Follow the Adobe Commerce [PWA Studio documentation](https://magento.github.io/pwa-studio/tutorials/) to setup your PWA Studio app.
+Follow the Adobe Commerce [PWA Studio documentation](https://developer.adobe.com/commerce/pwa-studio/tutorials/) to setup your PWA Studio app.
 
 To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Extension for PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
 
@@ -54,7 +54,7 @@ To connect PWA Studio with the GraphQL endpoint of AEM, you can use the [AEM Ext
    }    
    ```
 
-   You can find more details on the customization of the Navigation component in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) and in the [Extensibility Framework](https://magento.github.io/pwa-studio/pwa-buildpack/extensibility-framework/) documentation of PWA Studio.
+   You can find more details on the customization of the Navigation component in [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) and in the [Extensibility Framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentation of PWA Studio.
 
 1. The Apollo client will expect the AEM GraphQL endpoint at <https://pwa-studio/endpoint.js>. To map the endpoint to this location, you will need to customise the UPWARD configuration of your PWA Studio application:
    a. Add the AEM_CFM_GRAPHQL variable to pwa-root/.env and adapt it to point to your AEM Content Fragments GraphQL endpoint.
@@ -110,7 +110,7 @@ Depending on your use case, you want to create your own custom Content Fragment 
 
 Production setups can vary in multiple aspects.
 
-* You can have a single federated GraphQL endpoint which combines AEM and Magento GraphQL data instead of customising Apollo client.
+* You can have a single federated GraphQL endpoint which combines AEM and Adobe Commerce GraphQL data instead of customising Apollo client.
 * Your PWA Studio application could use the AEM GraphQL endpoint URL directly, without a proxy with UPWARD. The proxy could also be moved to a different layer (e.g. CDN).
 * Which approach fits best for you also heavily depends on how you deliver the PWA Studio application to the end user.
 

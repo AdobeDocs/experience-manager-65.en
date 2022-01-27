@@ -25,7 +25,7 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 
 ### What's Improved {#what-is-improved-november}
 
-* Category/Product pickers enhanced to respect specified Magento store view in a multi-store setup.
+* Category/Product pickers enhanced to respect specified Adobe Commerce store view in a multi-store setup.
 
 * React-based components available as a npm package. This allows developers to use the React Components package as a dependency for a new React project to allow customization of existing components or develop new React-based components.
 
@@ -89,7 +89,7 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 
 * CIF Components decoupled from "Venia" specific CSS styling to allow developers to apply CSS styling of their choice.
 
-* Multi-store/site feature to allow use of CIF Core Components on multiple AEM site structures and enabling the underlying GraphQL client implementation to connect to different Magento store/store views.
+* Multi-store/site feature to allow use of CIF Core Components on multiple AEM site structures and enabling the underlying GraphQL client implementation to connect to different Adobe Commerce store/store views.
 
 * GraphQL caching enabled for certain GraphQL queries via HTTP GET to reduce response time.
 
@@ -101,7 +101,7 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 
 ### What's Improved {#what-is-improved-august}
 
-* Magento store configuration moved from OSGi to AEM Product console to make the integration setup more author-friendly.
+* Adobe Commerce store configuration moved from OSGi to AEM Product console to make the integration setup more author-friendly.
 
 ## Release Date: July, 2019
 
@@ -127,7 +127,7 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 
 ### What's Improved {#what-is-improved-july}
 
-* Support for Magento 2.3.2 and bug fixes related to product properties display in the product console.
+* Support for Adobe Commerce 2.3.2 and bug fixes related to product properties display in the product console.
 
 ## Release Date: June, 2019
 
@@ -142,7 +142,7 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 
 * CIF Connector and authoring tools (Product Console, Product Picker, and Category Picker) to enable authors to create experiences in AEM with commerce content.
 
-* First version of CIF Core Components compatible with Magento 2.3.1:
+* First version of CIF Core Components compatible with Adobe Commerce 2.3.1:
   * Product Detail
   * Product List
   * Product Teaser
