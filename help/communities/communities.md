@@ -83,7 +83,7 @@ AEM Communities components, functions and features provide the building blocks f
 ## Troubleshooting {#troubleshooting}
 
 * [Troubleshooting](troubleshooting.md)
-* [Known Issues](/help/release-notes/known-issues.md)
+* [Known Issues](/help/release-notes/release-notes.md)
 
 ## Related Communities Documentation {#related-communities-documentation}
 

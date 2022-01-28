@@ -26,7 +26,7 @@ In this tutorial a new style will be implemented for the Product Teaser componen
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM](../develop.md).
+A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM](../develop.md).
 
 ## Clone the Venia Project {#clone-venia-project}
 
@@ -49,11 +49,11 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
     $ mvn clean install -PautoInstallPackage,cloud
     ```
 
-1. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance or add the configurations to the newly created project.
+1. Add the necessary OSGi configurations to connect your AEM instance to an Adobe Commerce instance or add the configurations to the newly created project.
 
-1. At this point you should have a working version of a storefront that is connected to a Magento instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. At this point you should have a working version of a storefront that is connected to an Adobe Commerce instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-    You should see that the storefront currently is using the Venia theme. Expanding the Main Menu of the storefront, you should see various categories, indicating that the connection Magento is working.
+    You should see that the storefront currently is using the Venia theme. Expanding the Main Menu of the storefront, you should see various categories, indicating that the connection to Adobe Commerce is working.
 
     ![Storefront Configured with Venia Theme](../assets/style-cif-component/venia-store-configured.png)
 
