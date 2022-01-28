@@ -1,6 +1,6 @@
 ---
-title: Add Dynamic Media Classic features to your page
-description: Learn how to add Dynamic Media Classic features and components to your Adobe Experience Manager page.
+title: Add Dynamic Media Classic features to pages
+description: How to add Dynamic Media Classic features and components to a page in Adobe Experience Manager.
 uuid: aa5a4735-bfec-43b8-aec0-a0c32bff134f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,7 +12,7 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
 ---
-# Add Dynamic Media Classic features to your page {#adding-scene-features-to-your-page}
+# Add Dynamic Media Classic features to pages {#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html) is a hosted solution for managing, enhancing, publishing, and delivering rich media assets to Web, mobile, email, and Internet-connected displays and print.
 
