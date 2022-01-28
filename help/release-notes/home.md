@@ -7,10 +7,12 @@ exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 
 The AEM Release Notes cover important information about the latest release of AEM, including what's new, supported platforms, deprecated and removed features, and known issues.
 
+* [Current Release Notes](/help/release-notes/release-notes.md)
+
 ## Key AEM articles
 
-* [Get started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Get started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+* [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5 user guides
