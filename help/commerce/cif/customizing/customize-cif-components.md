@@ -14,7 +14,7 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 ---
 # Customize AEM CIF Core Components {#customize-cif-components}
 
-The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial you will further extend the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to display a custom attribute from Magento. You will also learn more about the GraphQL integration between AEM and Magento and the extension hooks provided by the CIF Core Components.
+The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial you will further extend the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to display a custom attribute from Adobe Commerce. You will also learn more about the GraphQL integration between AEM and Adobe Commerce and the extension hooks provided by the CIF Core Components.
 
 >[!TIP]
 >
@@ -22,13 +22,13 @@ The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a refe
 
 ## What You Will Build
 
-The Venia brand recently started manufacturing some products using sustainable materials and the business would like to display an **Eco Friendly** badge as part of the Product Teaser. A new custom attribute will be created in Magento to indicate if a product uses the **Eco friendly** material. This custom attribute will then be added as part of the GraphQL query and displayed on the Product Teaser for specified products.
+The Venia brand recently started manufacturing some products using sustainable materials and the business would like to display an **Eco Friendly** badge as part of the Product Teaser. A new custom attribute will be created in Adobe Commerce to indicate if a product uses the **Eco friendly** material. This custom attribute will then be added as part of the GraphQL query and displayed on the Product Teaser for specified products.
 
 ![Eco Friendly Badge Final Implementation](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
 ## Prerequisites {#prerequisites}
 
-A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to a Magento instance. Review the requirements and steps for [setting up a local development with AEM](../develop.md). To follow the tutorial completely, you will need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Magento.
+A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM](../develop.md). To follow the tutorial completely, you will need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
 You will also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it has the ability to set request headers. On Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is one extension that can do the job.
 
@@ -53,11 +53,11 @@ We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia)
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. Add the necessary OSGi configurations to connect your AEM instance to a Magento instance or add the configurations to the newly created project.
+1. Add the necessary OSGi configurations to connect your AEM instance to an Adobe Commerce instance or add the configurations to the newly created project.
 
-1. At this point, you should have a working version of a storefront that is connected to a Magento instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. At this point, you should have a working version of a storefront that is connected to an Adobe Commerce instance. Navigate to the `US` > `Home` page at: [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   You should see that the storefront currently is using the Venia theme. Expanding the Main Menu of the storefront, you should see various categories, indicating that the connection Magento is working.
+   You should see that the storefront currently is using the Venia theme. Expanding the Main Menu of the storefront, you should see various categories, indicating that the connection to Adobe Commerce is working.
 
    ![Storefront Configured with Venia Theme](../assets/customize-cif-components/venia-store-configured.png)
 
@@ -71,7 +71,7 @@ The Product Teaser Component will be extended throughout this tutorial. As a fir
 
    ![Insert Product Teaser](../assets/customize-cif-components/product-teaser-add-component.png)
 
-3. Expand the Side Panel (if not already toggled) and switch the asset finder dropdown to **Products**. This should display a list of available products from a connected Magento instance. Select a product and **drag+drop** it onto the **Product Teaser** component on the page.
+3. Expand the Side Panel (if not already toggled) and switch the asset finder dropdown to **Products**. This should display a list of available products from a connected Adobe Commerce instance. Select a product and **drag+drop** it onto the **Product Teaser** component on the page.
 
    ![Drag + Drop Product Teaser](../assets/customize-cif-components/drag-drop-product-teaser.png)
 
@@ -83,15 +83,15 @@ The Product Teaser Component will be extended throughout this tutorial. As a fir
 
    ![Product Teaser - default style](../assets/customize-cif-components/product-teaser-default-style.png)
 
-## Add a Custom Attribute in Magento {#add-custom-attribute}
+## Add a Custom Attribute in Adobe Commerce {#add-custom-attribute}
 
-The products and product data displayed in AEM are stored in Magento. Next add a new attribute for **Eco Friendly** as part of the product attribute set by using the Magento UI.
+The products and product data displayed in AEM are stored in Adobe Commerce. Next add a new attribute for **Eco Friendly** as part of the product attribute set by using the Adobe Commerce UI.
 
 >[!TIP]
 >
 > Already have a custom **Yes/No** attribute as part of your product attribute set? Feel free to use it and skip this section.
 
-1. Login to your Magento instance.
+1. Login to your Adobe Commerce instance.
 1. Navigate to **Catalog** > **Products**.
 1. Update the search filter to find the **Configurable Product** used when added to the Teaser component in the previous exercise. Open the product in edit mode.
 
@@ -118,24 +118,24 @@ The products and product data displayed in AEM are stored in Magento. Next add a
 
    >[!TIP]
    >
-   > More details about managing [Product Attributes can be found in the Magento user guide](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
+   > More details about managing [Product Attributes can be found in the Adobe Commerce user guide](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. Navigate to **System** > **Tools** > **Cache Management**. Since an update has been made to the data schema we need to invalidate some of the Cache Types in Magento.
+1. Navigate to **System** > **Tools** > **Cache Management**. Since an update has been made to the data schema we need to invalidate some of the Cache Types in Adobe Commerce.
 1. Check the box next to **Configuration** and submit the cache type for **Refresh**
 
    ![Refresh Configuration Cache Type](../assets/customize-cif-components/refresh-configuration-cache-type.png)
 
    >[!TIP]
    >
-   > More details about [Cache Management can be found in the Magento user guide](https://docs.magento.com/user-guide/system/cache-management.html).
+   > More details about [Cache Management can be found in the Adobe Commerce user guide](https://docs.magento.com/user-guide/system/cache-management.html).
 
 ## Use a GraphQL IDE to Verify Attribute {#use-graphql-ide}
 
-Before jumping into AEM code it is useful to explore the [Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) using a GraphQL IDE. The Magento integration with AEM is primarily done via a series of GraphQL queries. Understanding and modifying the GraphQL queries is one of the key ways in which the CIF Core Components can be extended.
+Before jumping into AEM code it is useful to explore the [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) using a GraphQL IDE. The Adobe Commerce integration with AEM is primarily done via a series of GraphQL queries. Understanding and modifying the GraphQL queries is one of the key ways in which the CIF Core Components can be extended.
 
 Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been added to the product attribute set. Screenshots in this tutorial are using the [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
 
-1. Open the GraphQL IDE and enter the URL `http://<magento-server>/graphql` in the URL bar of your IDE or extension.
+1. Open the GraphQL IDE and enter the URL `http://<server>/graphql` in the URL bar of your IDE or extension.
 2. Add the following [products query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) where `YOUR_SKU` is the **SKU** of the product used in the previous exercise:
 
    ```json
@@ -176,7 +176,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    >[!TIP]
    >
-   > More detailed documentation about [Magento GraphQL can be found here](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+   > More detailed documentation about [Adobe Commerce GraphQL can be found here](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 
@@ -280,7 +280,7 @@ Use [the IDE of your choice](https://docs.adobe.com/content/help/en/experience-m
 
    Adding to the `extendProductQueryWith` method is a powerful way to ensure additional product attributes are available to the rest of the model. It also minimizes the number of queries executed.
 
-   In the above code, the`addCustomSimpleField` is used to retrieve the `eco_friendly` attribute. This illustrates how you can query for any custom attributes that are part of the Magento schema.
+   In the above code, the`addCustomSimpleField` is used to retrieve the `eco_friendly` attribute. This illustrates how you can query for any custom attributes that are part of the Adobe Commerce schema.
 
    >[!NOTE]
    >
