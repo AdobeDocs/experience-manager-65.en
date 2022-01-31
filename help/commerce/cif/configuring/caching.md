@@ -17,7 +17,7 @@ Once configured for a given component, the cache starts storing GraphQL queries 
 
 When configuring caching for components, the cache name must be the name of the **proxy** components that you define in your project.
 
-Before the client sends a GraphQL request, it checks if that **exact** same GraphQL request is already cached and possibly returns the cached response. To match, the GraphQL request MUST exactly match, that is, the query, operation name (if any), variables (if any) MUST all be equal to the cached request, and also all custom HTTP headers that might be set MUST also be the same. For example, the Magento `Store` header MUST match.
+Before the client sends a GraphQL request, it checks if that **exact** same GraphQL request is already cached and possibly returns the cached response. To match, the GraphQL request MUST exactly match, that is, the query, operation name (if any), variables (if any) MUST all be equal to the cached request, and also all custom HTTP headers that might be set MUST also be the same. For example, the Adobe Commerce `Store` header MUST match.
 
 ### Examples
 
@@ -43,7 +43,7 @@ Caching for other components should be defined on a project basis, usually in co
 
 Caching AEM pages or fragments in the [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) is a best practice for any AEM project. Usually, it relies on invalidation techniques that ensure that any content changed in AEM is properly updated in the Dispatcher. This is a core feature of the AEM Dispatcher caching strategy.
 
-In addition to pure AEM managed content CIF a page can typically display commerce data that is dynamically fetched from Magento via GraphQL. While the page structure itself might never change, the commerce content might change, for example, if some product data ( such as name or price) changes in Magento.
+In addition to pure AEM managed content CIF a page can typically display commerce data that is dynamically fetched from Adobe Commerce via GraphQL. While the page structure itself might never change, the commerce content might change, for example, if some product data ( such as name or price) changes in Adobe Commerce.
 
 To make sure that CIF pages can be cached for a limited amount of time in the AEM Dispatcher, we hence recommend the use of [Time Based Cache Invalidation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) (also known as TTL-based caching) when caching CIF pages in the AEM Dispatcher. This feature can be configured in AEM with using the extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) package.
 
