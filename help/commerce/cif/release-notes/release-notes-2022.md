@@ -27,7 +27,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Enhanced myAccount components
 * Product Recommendation component suppports additional page types (home page, shopping cart, order confirmation)
-* * **Wishlist**
+* **Wishlist**
   * Logged in visitors can add products to a wishlist
   * Mangaging the wishlist and its products is possible via myAccount
   * The "Add to wishlist" button can be enabled / disabled on a component level via policy (example product teaser, product detail
