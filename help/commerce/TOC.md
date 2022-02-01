@@ -15,6 +15,10 @@ user-guide-description: Understand how to use and administer AEM Content and Com
   + [3rd Party Commerce Solution](cif/integrating/third-party.md)
 + AEM Storefront {#storefront}
   + [Getting started](cif/getting-started.md)
+  + Authoring {#authoring}
+    + [Commerce Experiences](cif/authoring/authoring-commerce-experiences.md)
+    + [Product Cockpit](cif/authoring/product-cockpit.md)
+    + [Enrich Product Data with Associated Content](cif/authoring/enrich-product-associated-content.md)
   + Administering {#administering}
     + [Multi-Store Setup](cif/configuring/multi-store-setup.md)
     + [Multi-Template Usage](cif/configuring/multi-template-usage.md)

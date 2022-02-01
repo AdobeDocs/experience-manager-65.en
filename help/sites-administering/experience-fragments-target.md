@@ -16,9 +16,9 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 
 >[!CAUTION]
 >
->Some functionality on this page requires the application of AEM 6.5.3.0.
+>Some functionality on this page requires the application of AEM 6.5.3.0 (or later).
 >
->6.5.3.0
+>6.5.3.0:
 >
 >* **Externalizer Domains** can now be selected.
 >  **Note:** Externalizer Domains are only relevant to the content of the Experience Fragment that is sent to Target, and not metadata such as View Offer Content.

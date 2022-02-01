@@ -1,6 +1,6 @@
 ---
-title: Working with Selective Publish in Dynamic Media
-description: Information on how to work with Selective Publish in Dynamic Media.
+title: Work with Selective Publish in Dynamic Media
+description: You can choose to publish or unpublish assets to or from Adobe Experience Manager or Dynamic Media at the folder level. You can use either Manage Publication or Quick Publish instead of relying solely on the Dynamic Media Configuration whose settings are global to all folders across your Dynamic Media instance.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
