@@ -20,8 +20,8 @@ Review the minimum system requirements in the table below for the CIF version yo
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
 |CIF add-on | 2022.01.20.00|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.01.20.00.zip)|
-|CIF Core Components |2.4.3|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.3)|
-|CIF Venia Reference Site| 2022.01.01|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.01)|
+|CIF Core Components |2.5.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0)|
+|CIF Venia Reference Site| 2022.01.27|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27)|
 
 ### What's New {#what-is-new-january}
 
@@ -32,3 +32,6 @@ Review the minimum system requirements in the table below for the CIF version yo
   * Available as a Core Component and in the AEM Venia Storefront
 
 ![Wishlist](/help/assets/CIF/wishlist.png)
+
+* Enhanced myAccount components
+* Product Recommendation component suppports additional page types (home page, shopping cart, order confirmation)
