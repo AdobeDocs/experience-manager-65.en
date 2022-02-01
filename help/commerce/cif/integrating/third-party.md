@@ -22,7 +22,7 @@ As the Experience Manager retrieves data on-demand, real-time APIs for product c
 
 >[!TIP]
 >
->If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://magento.com/products/magento-open-source).
+>If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 There is no need to implement the complete GraphQL schema, just the objects of the schema to enable the desired use-cases.
 
