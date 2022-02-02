@@ -129,7 +129,8 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
 1. Select **[!UICONTROL Save]**.
-1. To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager author instance to connect to Dynamic Media:
+1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).
+<!-- 1. By default Experience Manager Author cannot preview Dynamic Media content. Therefore, to securely preview Dynamic Media content before it gets published, you must *allowlist* the Experience Manager Author instance to connect to Dynamic Media. In addition, if you want to provide users access to securely preview content, you can *allowlist* additional IP addresses:
 
     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -138,7 +139,7 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
     * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
     * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
     * In the upper-right corner of the page, select **[!UICONTROL Save]**.
-
+ -->
 You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
 
 If you want to further customize your configuration, you can optionally complete any of the tasks under [(Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
