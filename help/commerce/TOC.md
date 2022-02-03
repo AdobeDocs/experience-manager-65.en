@@ -19,6 +19,7 @@ user-guide-description: Understand how to use and administer AEM Content and Com
     + [Commerce Experiences](cif/authoring/authoring-commerce-experiences.md)
     + [Product Cockpit](cif/authoring/product-cockpit.md)
     + [Enrich Product Data with Associated Content](cif/authoring/enrich-product-associated-content.md)
+    + [Product Recommendations](cif/authoring/product-recommendations.md)
   + Administering {#administering}
     + [Multi-Store Setup](cif/configuring/multi-store-setup.md)
     + [Multi-Template Usage](cif/configuring/multi-template-usage.md)
