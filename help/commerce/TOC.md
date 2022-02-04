@@ -19,6 +19,7 @@ user-guide-description: Understand how to use and administer AEM Content and Com
     + [Commerce Experiences](cif/authoring/authoring-commerce-experiences.md)
     + [Product Cockpit](cif/authoring/product-cockpit.md)
     + [Enrich Product Data with Associated Content](cif/authoring/enrich-product-associated-content.md)
+    + [Product Recommendations](cif/authoring/product-recommendations.md)
   + Administering {#administering}
     + [Multi-Store Setup](cif/configuring/multi-store-setup.md)
     + [Multi-Template Usage](cif/configuring/multi-template-usage.md)
@@ -33,6 +34,7 @@ user-guide-description: Understand how to use and administer AEM Content and Com
 + [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migration](cif/migration.md)
 + Release Notes {#release-notes}
+  + [2022](cif/release-notes/release-notes-2022.md)
   + [2021](cif/release-notes/release-notes-2021.md)
   + [2020](cif/release-notes/release-notes-2020.md)
   + [2019](cif/release-notes/release-notes-2019.md)
