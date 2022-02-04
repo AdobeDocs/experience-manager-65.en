@@ -9,7 +9,7 @@ role: User,Admin
 mini-toc-levels: 4
 hide: yes
 hidefromtoc: yes
-
+exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
 ---
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}
 
