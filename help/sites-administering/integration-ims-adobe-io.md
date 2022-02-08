@@ -136,7 +136,7 @@ You must now assign the required privileges to the integration:
 
 1. Navigate to **Products** (top toolbar), then select **Adobe Target - &lt;*your-tenant-id*&gt;** (from the left panel).
 1. Select **Product Profiles**, then your required workspace from the list presented. For example, Default Workspace.
-1. Select **Integrations**, then the required integration configuration.
+1. Select **API Credentials**, then the required integration configuration.
 1. Select **Editor** as the **Product Role**; instead of **Observer**.
 
 ## Details stored for the Adobe I/O Integration Project {#details-stored-for-the-adobe-io-integration-project}
