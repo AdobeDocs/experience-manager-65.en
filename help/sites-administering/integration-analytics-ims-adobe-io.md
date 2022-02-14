@@ -8,11 +8,13 @@ The integration of AEM with Adobe Analytics via the Analytics Standard API requi
 
 >[!NOTE]
 >
->Support for the Adobe Analytics Standard API is new in AEM 6.5.12.0. The Analytics Standard API uses IMS authentication.
+>Support for the Adobe Analytics Standard API 2.0 is new in AEM 6.5.12.0. This version of the API supports IMS authentication.
 >
->Using the Adobe Analytics Classic API in AEM is still supported for backward compatibility. The [Analytics Classic API uses user credentials authentication](/help/sites-administering/adobeanalytics-connect.md).
+>Using the Adobe Analytics Classic API 1.4 in AEM is still supported for backward compatibility. The [Analytics Classic API uses user credentials authentication](/help/sites-administering/adobeanalytics-connect.md).
 >
->The API selection is driven by the authentication method used for AEM/Target integration. See also the [Tenant ID and Client Code](#tenant-client) section.
+>The API selection is driven by the authentication method used for AEM/Analytics integration.
+>
+>Further information is also available under [Migrating to the 2.0 APIs](https://developer.adobe.com/analytics-apis/docs/2.0/guides/migration/).
 
 ## Prerequisites {#prerequisites}
 
