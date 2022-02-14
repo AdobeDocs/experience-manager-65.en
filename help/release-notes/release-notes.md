@@ -20,7 +20,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.12.0 are:
 
-* feature 1
+* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
 
@@ -28,21 +28,46 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.
 
 * Bug fix 1
 
-### [!DNL Assets] {#assets-65110}
+### [!DNL Assets] {#assets-65120}
 
+<!--
 The following accessibility enhancements are available in [!DNL Assets]:
 
 * enhancement 1
+-->
 
 The following issues are fixed in [!DNL Assets]:
 
-* bug fix 1
+* When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-377120).
+* When adding watermark to an asset, the watermark is always displayed in black color irrespective of the color defined by the user (NPR-37720).
+* When using Connected Assets, a non-admin user is able to search for an asset even when the non-admin users are restricted to access the DAM repository (NPR-37644).
+* When creating a Catalog, the `Catalog` button under the `Create` dropdown does not work (NPR-37589).
+* When updating asset metadata using bulk edit, the changes applied to the dropdown fields are not saved and reset to the default values (NPR-37345).
+* Deleting a folder in taking too long which impacts the overall performance (NPR-37107).
+* When applying rules in metadata schema, the user is not able to view the complete value for the dropdown `Field Value` and `Field Choices` if the value is larger than the text box (CQ-4338074).
+* After upgrading to version 6.5.10.0, the asset properties page reflects an unnecessary HTML rendering message (CQ-4336994).
+* After upgrading to version 6.5.12.0, the review workflow fails to load the approved or rejected assets as a printable PDF (CQ-4336842).
+* Sorting the assets in `List View` does not work effectively (CQ-4335298).
+* When sharing assets using share link, the assets are downloaded in separate folders (CQ-4335000).
+* When verifying the [!DNL Experience Manager] `Inbox` settings, the `Share` and `Out of office` tabs reflect untranslated content (CQ-4334858).
 
-### [!DNL Dynamic Media] {#dynamic-media-65110}
+* The following fixes are related to cascading metadata in asset properties.
+  * A mandatory dropdown reflects multiple error messages for each selection in the multivalue field (NPR-37859).
+  * Only the last selection of the parent field is saved for the dependent uneditable field (NPR-37858).
+  * The dependent dropdown (multivalue field) reflects the default value intermittently for the selected parent dropdown (NPR-37791).
 
-The following bug fixes are available in [!DNL Dynamic Media]:
 
-* bug fix 1
+### [!DNL Dynamic Media] {#dynamic-media-65120}
+
+The following issues are fixed in [!DNL Dynamic Media]:
+
+* The assets of a folder containing `renditions` in the folder name are not synced in `Dynamic Media` (CQ-4338428).
+* When creating an image preset in `tiff` format, the preset is created but the format changes to `jpeg` (CQ-4335985).
+* When modifying the `Progressive JPEG Scan` value, the dropdown value always resets to `auto`(CQ-4335971).
+* The video metadata is not generated for the `mxf` videos in the asset properties (CQ-4335499).
+* When reprocessing the assets, the AVS (audio and video) and transcode assets are unpublished from the target server (CQ-4335461).
+* The PDF thumbnails generated are different from the first page of the actual PDF. Some parts of the image are missing in the thumbnail (CQ-4315554).
+* CDN invalidation fails with a bad URL response if the `companyName` and `companyRoot` are different (CQ-4339896).
 
 ### Commerce {#commerce-65110}
 
