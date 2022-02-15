@@ -137,6 +137,7 @@ role: Admin
     + [Manually Configuring the Integration with Adobe Target](target-configuring.md)
     + [Prerequisites for Integrating with Adobe Target](target-requirements.md)
     + [Integration with Adobe Target using Adobe I/O](integration-ims-adobe-io.md)
+    + [Integration with Adobe Target using Adobe I/O](integration-target-ims-adobe-io.md)
     + [Adobe Classifications](adobeanalytics-classifications.md)
     + [Integrating with Adobe Search&Promote](search-and-promote.md)
     + [Solutions Integration](integration.md)

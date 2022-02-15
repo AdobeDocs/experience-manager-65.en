@@ -10,9 +10,7 @@ content-type: reference
 topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
-exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
-hide: yes
-hidefromtoc: yes
+exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 ---
 # Integration with Adobe Target using Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
