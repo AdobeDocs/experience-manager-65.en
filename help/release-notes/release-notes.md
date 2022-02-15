@@ -48,7 +48,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.
 
 >[!WARNING]
 >
->A new version of this package is being developed. The link will be published as soon as it is made available.
+>A new version of the "index definition" package is being developed. The link below will be published as soon as it is made available.
 
 To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the index definition package, and reindex the following asynchronous AEM index definitions: 
 
