@@ -46,14 +46,17 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.
 
 ### [!DNL Sites] {#sites-65110}
 
-To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the [index definition package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.0.0.zip), and reindex the following asynchronous AEM index definitions:
+>[!WARNING]
+>
+>A new version of this package is being developed. The link will be published as soon as it is made available.
 
-* /oak:index/assetPrefixNodename
+To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the index definition package, and reindex the following asynchronous AEM index definitions: 
 
-* /oak:index/fragments
+* `/oak:index/assetPrefixNodename`
 
-* /oak:index/graphqlConfig
+* `/oak:index/fragments`
 
+* `/oak:index/graphqlConfig`
 
 The following issues are fixed in [!DNL Sites]:
 
