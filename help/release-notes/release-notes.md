@@ -22,11 +22,66 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
 
+*	[Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
+
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
 
 ### [!DNL Sites] {#sites-65120}
+* Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
 
-* Bug fix 1
+* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
+
+   ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
+   
+* Business profiles support for Adobe Asset Link.
+
+* You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
+
+   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
+
+* You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
+
+   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
+
+* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.9.
+
+The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
+
+### [!DNL Sites] {#sites-65110}
+
+>[!WARNING]
+>
+>A new version of the "index definition" package is being developed. The link below will be published as soon as it is made available.
+
+To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the index definition package, and reindex the following asynchronous AEM index definitions: 
+
+* `/oak:index/assetPrefixNodename`
+
+* `/oak:index/fragments`
+
+* `/oak:index/graphqlConfig`
+
+The following issues are fixed in [!DNL Sites]:
+
+* Layout of the content fragment Properties is broken as Basic and Advance tabs have no margins to the left (SITES-4484).
+* Option to close banner on content fragments, that are referenced on various sites pages, is not working. This banner informs the users that the content fragment is referenced on one or more pages (SITES-4173).
+* The checkboxes are not aligned in Revert Inheritance dialog box (SITES-3514).
+* The template page on we-retail and wknd sites is broken, as components don't load and structure option is not available, as pageinfo.json servlet is stuck on LaunchManagerImpl.getLaunchStream (SITES-3489).
+* User node publishing from Author to Publish environment is not working (NPR-38005).
+* Attempt to create a new experience fragment using an edited template doesn’t show the edits made to the initial page properties (NPR-37962).
+* The page move operation on Experience Manager is slow (NPR-37961).
+* Experience fragment translation does not update references to language copy paths (NPR-37953).
+* Users without replication permissions are not able to delete or move pages, even if the pages are not activated (NPR-37936).
+* Random org.apache.felix.metatype errors are observed on server (NPR-37935).
+* References in Sites admin touch user interface are not displaying incoming links correctly (NPR-37934).
+* Launch path to add new pages or assets is not available when selecting pages in a translation job (NPR-37912).
+* Reference pages in a list component added in experience fragments are not updated to destination page when promoting the launch (NPR-37886).
+* Author environment has user interface issues—such as Edit mode page title is not centered and allowed components selector on policy editor: group checkbox takes entire width of the container, so the label is rendered in the next line (NPR-37878).
+* [Platform] The version number of xmlns:metatype in metatype.xml file of commons-httpclient is "http://www.osgi.org/xmlns/metatype/v1.0.0" instead of "http://www.osgi.org/xmlns/metatype/v1.2.0" (NPR-37865).  
+* Errors are observed and pages fail to move when trying to a page (NPR-37864).
+* [Rich Text Editor] Image does not render in the classic user interface when adding the image as a list item in Rich Text Editor (NPR-37835).
+* Authors are able to apply tags that are outside of the configured root path [NPR-37834].
+
 
 ### [!DNL Assets] {#assets-65120}
 
