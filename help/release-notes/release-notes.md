@@ -22,11 +22,33 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
 
+*	[Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
+
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
 
 ### [!DNL Sites] {#sites-65120}
 
-* Bug fix 1
+The following issues are fixed in [!DNL Sites]:
+
+* Layout of the content fragment Properties is broken as Basic and Advance tabs have no margins to the left (SITES-4484).
+* Option to close banner on content fragments, that are referenced on various sites pages, is not working. This banner informs the users that the content fragment is referenced on one or more pages (SITES-4173).
+* The checkboxes are not aligned in Revert Inheritance dialog box (SITES-3514).
+* The template page on we-retail and wknd sites is broken, as components don't load and structure option is not available, as pageinfo.json servlet is stuck on LaunchManagerImpl.getLaunchStream (SITES-3489).
+* User node publishing from Author to Publish environment is not working (NPR-38005).
+* Attempt to create a new experience fragment using an edited template doesn’t show the edits made to the initial page properties (NPR-37962).
+* The page move operation on Experience Manager is slow (NPR-37961).
+* Experience fragment translation does not update references to language copy paths (NPR-37953).
+* Users without replication permissions are not able to delete or move pages, even if the pages are not activated (NPR-37936).
+* Random org.apache.felix.metatype errors are observed on server (NPR-37935).
+* References in Sites admin touch user interface are not displaying incoming links correctly (NPR-37934).
+* Launch path to add new pages or assets is not available when selecting pages in a translation job (NPR-37912).
+* Reference pages in a list component added in experience fragments are not updated to destination page when promoting the launch (NPR-37886).
+* Author environment has user interface issues—such as Edit mode page title is not centered and allowed components selector on policy editor: group checkbox takes entire width of the container, so the label is rendered in the next line (NPR-37878).
+* [Platform] The version number of xmlns:metatype in metatype.xml file of commons-httpclient is "http://www.osgi.org/xmlns/metatype/v1.0.0" instead of "http://www.osgi.org/xmlns/metatype/v1.2.0" (NPR-37865).  
+* Errors are observed and pages fail to move when trying to a page (NPR-37864).
+* [Rich Text Editor] Image does not render in the classic user interface when adding the image as a list item in Rich Text Editor (NPR-37835).
+* Authors are able to apply tags that are outside of the configured root path [NPR-37834].
+
 
 ### [!DNL Assets] {#assets-65120}
 
