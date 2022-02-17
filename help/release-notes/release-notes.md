@@ -27,6 +27,7 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
 
 ### [!DNL Sites] {#sites-65120}
+
 * Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
 
 * A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
@@ -55,11 +56,18 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.
 
 To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the index definition package, and reindex the following asynchronous AEM index definitions: 
 
-* `/oak:index/assetPrefixNodename`
+   * `/oak:index/assetPrefixNodename`
 
-* `/oak:index/fragments`
+   * `/oak:index/fragments`
 
-* `/oak:index/graphqlConfig`
+   * `/oak:index/graphqlConfig`
+
+*	[Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
+*	[!DNL Experience Manager Sites] admin user interface now allows 1:many push rollouts from a live copy source by default, regardless of whether a blueprint configuration exists (CQ-4259951).
+*	The status of currently in-progress async operation is now made visible to users so that they do not simultaneously trigger multiple async operations on same path (NPR-37611).
+*	Support for IMS based authentication is provided for Analytics 2.0 (CQ-4285474).
+*	API support for json offer type experience fragment is provided (NPR-37796).
+*	Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
 
 The following issues are fixed in [!DNL Sites]:
 
@@ -80,8 +88,32 @@ The following issues are fixed in [!DNL Sites]:
 * [Platform] The version number of xmlns:metatype in metatype.xml file of commons-httpclient is "http://www.osgi.org/xmlns/metatype/v1.0.0" instead of "http://www.osgi.org/xmlns/metatype/v1.2.0" (NPR-37865).  
 * Errors are observed and pages fail to move when trying to a page (NPR-37864).
 * [Rich Text Editor] Image does not render in the classic user interface when adding the image as a list item in Rich Text Editor (NPR-37835).
-* Authors are able to apply tags that are outside of the configured root path [NPR-37834].
-
+* Authors are able to apply tags that are outside of the configured root path when using tag field in a dialog [NPR-37834].
+* Multifield does not render correctly in layout container and gives error (NPR-37811).
+* Attempt to resize component layout in page editor doesn’t work in mobile layout (NPR-37805).
+* Experience Fragment translation does not update cyclic references to language copy paths (NPR-37745).
+* Use of cq-msm-lockable rich text field in page properties does not disable the field on rolling out the page and it can be modified by the authors (NPR-37714).
+* On activating an experience fragment, publisher sends many activation requests to Dispatcher (NPR-37707).
+* On topology change, the Sling job for asset processing gets reset resulting in the jobs that are in progress at the time of topology change getting ignored (NPR-37706).
+* Quotation marks, cross, and dash are not exported to CSV when users of MacOS export sites and assets URLs (NPR-37698).
+* Layout container in SPA page template is not able to register the custom CSS classes defined in the Template Policy when running react SPA pages (NPR-37697).
+* Background image is not visible when user selects targeting on an experience fragment that has background in the container (NPR-37662).
+* Translation job on an experience fragment is not translating all the components on that experience fragment (NPR-37660).
+* Translation of experience fragments and the page containing the experience fragment does not update the launch path in the experience fragment link (NPR-37659).
+* File Upload widget does not show the file name, when a file is uploaded, and dialog is saved (NPR-37634).
+* The scheduled activation (publishing) of asset does not trigger on the scheduled time if the folder containing that asset is moved (NPR-37621).
+* [Platform] External link checker dashboard fails to render results in [!DNL Adobe Experience Manager] WCM (NPR-37614).
+* Content fragment editor does not work correctly when capital case letters are used in tag names when editing tags in the editor (NPR-37601).
+* Classic user interface editor doesn't show mark up as in compare view of touch user interface (NPR-37588).
+* Intermittent 500 error is logged on adding an experience fragment to translation jobs (NPR-37587).
+* Authors are able to select and use date picker date even on disabled date picker (NPR-37583).
+* [Foundation] Authors are not able to enter some decimal values in number field resource type in a component dialog structure for touch user interface (NPR-37059).
+* The paths in libs folder get deleted on installing previous service packs (NPR-36815).
+* [Commerce] The deactivation of a root folder doesn’t change deactivation status of child products in [!DNL Experience Manager Commerce] console; moreover the count of children folders of a root folder at the time of deactivation is incorrectly displayed in the user interface (CQ-4338261).
+* [Localization Workflow] The content for column customization and branding customization is not localized in Admin Control dialog―on selecting icon under profile icon in [!DNL Adobe Experience Manager] inbox (CQ-4334864).
+* [Communities] The content inside the table for group members is not clickable (CQ-4334404).
+* [Oak] The Cold-Standby sync process is not working and is logging error (CQ-4333868).
+* [Platform Foundation UI] [!DNL Experience Manager] start page appears again when user selects the [!DNL Adobe Experience Manager] icon already being on the start page (CQ-4317409).
 
 ### [!DNL Assets] {#assets-65120}
 
