@@ -364,17 +364,6 @@ These websites are only available to customers. If you are a customer and need a
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
 * See [how to contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
-## Key releases since [!DNL Adobe Experience Manager] 6.5 SP11{#key-releases-since-last-sp}
-
-Between August 26, 2021, and November 25, 2021, Adobe released the following, in addition to the Service Packs:
-
-* [!DNL Adobe Experience Manager] as a Cloud Service [2021.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) and [2021.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
-
-* [[!DNL Experience Manager] desktop app 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
-
-* [Experience Manager Screens: Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html)
-
-
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] product page](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
