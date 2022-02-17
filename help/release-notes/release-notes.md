@@ -33,8 +33,6 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.
 
 ### [!DNL Sites] {#sites-65120}
 
-Following enhancements are available in Adobe Experience Manager Sites:
-
 The following issues are fixed in [!DNL Sites]:
 
 * Layout of the content fragment Properties is broken as Basic and Advance tabs have no margins to the left (SITES-4484).
@@ -121,42 +119,6 @@ The following issues are fixed in [!DNL Dynamic Media]:
 * When reprocessing the assets, the AVS (audio and video) and transcode assets are unpublished from the target server (CQ-4335461).
 * The PDF thumbnails generated are different from the first page of the actual PDF. Some parts of the image are missing in the thumbnail (CQ-4315554).
 * CDN invalidation fails with a bad URL response if the `companyName` and `companyRoot` are different (CQ-4339896).
-
-### Commerce {#commerce-65110}
-
-* bug fix 1
-
-### Platform {#platform-65110}
-
-* bug fix 1
-
-### Integrations {#integrations-65110}
-
-* bug fix 1
-
-### Projects {#projects-65110}
-
-* bug fix 1
-
-### User Interface {#user-interface-65110}
-
-* bug fix 1
-
-### Translation projects {#translation-65110}
-
-* bug fix 1
-
-### Sling {#sling-65110}
-
-* bug fix 1
-
-### Workflow {#workflow-65110}
-
-* bug fix 1
-
-### [!DNL Communities] {#communities-65110}
-
-* bug fix 1
 
 <!--
 
