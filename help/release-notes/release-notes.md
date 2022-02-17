@@ -20,12 +20,12 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.12.0 are:
 
-* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
+* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment (NPR-37816).
 
 * [Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
 * [!DNL Experience Manager Sites] admin user interface now allows 1:many push rollouts from a live copy source by default, regardless of whether a blueprint configuration exists (CQ-4259951).
 * The status of currently in-progress async operation is now made visible to users so that they do not simultaneously trigger multiple async operations on same path (NPR-37611).
-* Support for IMS based authentication is provided for Analytics 2.0 (CQ-4285474).
+* Support for IMS-based authentication is provided for Analytics 2.0 (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
 * API support for json offer type experience fragment is provided (NPR-37796).
 * Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
 
@@ -40,7 +40,7 @@ The following issues are fixed in [!DNL Sites]:
 * The checkboxes are not aligned in Revert Inheritance dialog box (SITES-3514).
 * The template page on we-retail and wknd sites is broken, as components don't load and structure option is not available, as pageinfo.json servlet is stuck on LaunchManagerImpl.getLaunchStream (SITES-3489).
 * User node publishing from Author to Publish environment is not working (NPR-38005).
-* Attempt to create a new experience fragment using an edited template doesn’t show the edits made to the initial page properties (NPR-37962).
+* Attempt to create an experience fragment using an edited template doesn’t show the edits made to the initial page properties (NPR-37962).
 * The page move operation on Experience Manager is slow (NPR-37961).
 * Experience fragment translation does not update references to language copy paths (NPR-37953).
 * Users without replication permissions are not able to delete or move pages, even if the pages are not activated (NPR-37936).
@@ -52,7 +52,7 @@ The following issues are fixed in [!DNL Sites]:
 * [Platform] The version number of xmlns:metatype in metatype.xml file of commons-httpclient is "http://www.osgi.org/xmlns/metatype/v1.0.0" instead of "http://www.osgi.org/xmlns/metatype/v1.2.0" (NPR-37865).  
 * Errors are observed and pages fail to move when trying to a page (NPR-37864).
 * [Rich Text Editor] Image does not render in the classic user interface when adding the image as a list item in Rich Text Editor (NPR-37835).
-* Authors are able to apply tags that are outside of the configured root path when using tag field in a dialog [NPR-37834].
+* Authors are able to apply tags that are outside of the configured root path when using tag field in a dialog(NPR-37834).
 * Multifield does not render correctly in layout container and gives error (NPR-37811).
 * Attempt to resize component layout in page editor doesn’t work in mobile layout (NPR-37805).
 * Experience Fragment translation does not update cyclic references to language copy paths (NPR-37745).
@@ -89,7 +89,7 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 The following issues are fixed in [!DNL Assets]:
 
-* When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-377120).
+* When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-37712).
 * When adding watermark to an asset, the watermark is always displayed in black color irrespective of the color defined by the user (NPR-37720).
 * When using Connected Assets, a non-admin user is able to search for an asset even when the non-admin users are restricted to access the DAM repository (NPR-37644).
 * When creating a Catalog, the `Catalog` button under the `Create` dropdown does not work (NPR-37589).
@@ -119,6 +119,10 @@ The following issues are fixed in [!DNL Dynamic Media]:
 * When reprocessing the assets, the AVS (audio and video) and transcode assets are unpublished from the target server (CQ-4335461).
 * The PDF thumbnails generated are different from the first page of the actual PDF. Some parts of the image are missing in the thumbnail (CQ-4315554).
 * CDN invalidation fails with a bad URL response if the `companyName` and `companyRoot` are different (CQ-4339896).
+
+### Workflows {#workflows-65120}
+
+* Scrolling does not work as expected if you apply filter on Inbox items (CQ-4333594).
 
 <!--
 
@@ -335,8 +339,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
 
-* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query will fail; i.e. the functionality will not work. 
-  To ensure correct operation you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
+* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work. 
+  To ensure correct operation, you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
 
    ```xml
    "tags": [
