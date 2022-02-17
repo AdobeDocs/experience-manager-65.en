@@ -22,52 +22,18 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
 
-*	[Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
+* [Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
+* [!DNL Experience Manager Sites] admin user interface now allows 1:many push rollouts from a live copy source by default, regardless of whether a blueprint configuration exists (CQ-4259951).
+* The status of currently in-progress async operation is now made visible to users so that they do not simultaneously trigger multiple async operations on same path (NPR-37611).
+* Support for IMS based authentication is provided for Analytics 2.0 (CQ-4285474).
+* API support for json offer type experience fragment is provided (NPR-37796).
+* Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
 
 ### [!DNL Sites] {#sites-65120}
 
-* Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
-
-* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
-
-   ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
-   
-* Business profiles support for Adobe Asset Link.
-
-* You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
-
-   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
-
-* You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
-
-   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
-
-* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.9.
-
-The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
-
-### [!DNL Sites] {#sites-65110}
-
->[!WARNING]
->
->A new version of the "index definition" package is being developed. The link below will be published as soon as it is made available.
-
-To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the index definition package, and reindex the following asynchronous AEM index definitions: 
-
-   * `/oak:index/assetPrefixNodename`
-
-   * `/oak:index/fragments`
-
-   * `/oak:index/graphqlConfig`
-
-*	[Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
-*	[!DNL Experience Manager Sites] admin user interface now allows 1:many push rollouts from a live copy source by default, regardless of whether a blueprint configuration exists (CQ-4259951).
-*	The status of currently in-progress async operation is now made visible to users so that they do not simultaneously trigger multiple async operations on same path (NPR-37611).
-*	Support for IMS based authentication is provided for Analytics 2.0 (CQ-4285474).
-*	API support for json offer type experience fragment is provided (NPR-37796).
-*	Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
+Following enhancements are available in Adobe Experience Manager Sites:
 
 The following issues are fixed in [!DNL Sites]:
 
