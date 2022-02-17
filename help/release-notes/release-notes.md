@@ -124,14 +124,15 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * Scrolling does not work as expected if you apply filter on Inbox items (CQ-4333594).
 
-<!--
 
-### [!DNL Forms] {#forms-65110}
+### [!DNL Forms] {#forms-65120}
 
 
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+<!--
 
 **Adaptive Forms**
 
