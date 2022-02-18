@@ -20,46 +20,18 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.12.0 are:
 
-* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment.
+* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment (NPR-37816).
 
-*	[Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
+* [Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
+* [!DNL Experience Manager Sites] admin user interface now allows 1:many push rollouts from a live copy source by default, regardless of whether a blueprint configuration exists (CQ-4259951).
+* The status of currently in-progress async operation is now made visible to users so that they do not simultaneously trigger multiple async operations on same path (NPR-37611).
+* Support for IMS-based authentication is provided for Analytics 2.0 (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
+* API support for json offer type experience fragment is provided (NPR-37796).
+* Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
 
 ### [!DNL Sites] {#sites-65120}
-* Auto-generation of sitemap for SEO purposes is possible using the [SEO index package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip). It supports sitemaps, alternate URLs, robot meta tags, and more in the [!DNL Core Components].
-
-* A user experience enhancements displays the number of assets present in a folder. For more than 1000 assets in a folder, [!DNL Assets] displays 1000+.
-
-   ![Number of assets in a folder](/help/assets/assets/browse-folder-number-of-assets.png)
-   
-* Business profiles support for Adobe Asset Link.
-
-* You can now use [!DNL Dynamic Media] to configure General Settings instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media General Settings](/help/assets/dm-general-settings.md).
-
-   ![DM general settings](/help/assets/assets-dm/dm-general-settings.png)
-
-* You can now use [!DNL Dynamic Media] to configure Publish Setup instead of having to go through the [!DNL Dynamic Media Classic] desktop application. See [Configure Dynamic Media Publish Setup](/help/assets/dm-publish-settings.md).
-
-   ![DM publish settings](/help/assets/assets-dm/dm-publish-setup.png)
-
-* The built-in repository (Apache Jackrabbit Oak) is updated to 1.22.9.
-
-The following is the list of fixes provided in [!DNL Experience Manager] 6.5.11.0 release.
-
-### [!DNL Sites] {#sites-65110}
-
->[!WARNING]
->
->A new version of the "index definition" package is being developed. The link below will be published as soon as it is made available.
-
-To access headless content delivery using Content Fragments with GraphQL and use the enhanced Content Fragment Models and Editor capabilities, install the index definition package, and reindex the following asynchronous AEM index definitions: 
-
-* `/oak:index/assetPrefixNodename`
-
-* `/oak:index/fragments`
-
-* `/oak:index/graphqlConfig`
 
 The following issues are fixed in [!DNL Sites]:
 
@@ -68,7 +40,7 @@ The following issues are fixed in [!DNL Sites]:
 * The checkboxes are not aligned in Revert Inheritance dialog box (SITES-3514).
 * The template page on we-retail and wknd sites is broken, as components don't load and structure option is not available, as pageinfo.json servlet is stuck on LaunchManagerImpl.getLaunchStream (SITES-3489).
 * User node publishing from Author to Publish environment is not working (NPR-38005).
-* Attempt to create a new experience fragment using an edited template doesn’t show the edits made to the initial page properties (NPR-37962).
+* Attempt to create an experience fragment using an edited template doesn’t show the edits made to the initial page properties (NPR-37962).
 * The page move operation on Experience Manager is slow (NPR-37961).
 * Experience fragment translation does not update references to language copy paths (NPR-37953).
 * Users without replication permissions are not able to delete or move pages, even if the pages are not activated (NPR-37936).
@@ -80,8 +52,32 @@ The following issues are fixed in [!DNL Sites]:
 * [Platform] The version number of xmlns:metatype in metatype.xml file of commons-httpclient is "http://www.osgi.org/xmlns/metatype/v1.0.0" instead of "http://www.osgi.org/xmlns/metatype/v1.2.0" (NPR-37865).  
 * Errors are observed and pages fail to move when trying to a page (NPR-37864).
 * [Rich Text Editor] Image does not render in the classic user interface when adding the image as a list item in Rich Text Editor (NPR-37835).
-* Authors are able to apply tags that are outside of the configured root path [NPR-37834].
-
+* Authors are able to apply tags that are outside of the configured root path when using tag field in a dialog(NPR-37834).
+* Multifield does not render correctly in layout container and gives error (NPR-37811).
+* Attempt to resize component layout in page editor doesn’t work in mobile layout (NPR-37805).
+* Experience Fragment translation does not update cyclic references to language copy paths (NPR-37745).
+* Use of cq-msm-lockable rich text field in page properties does not disable the field on rolling out the page and it can be modified by the authors (NPR-37714).
+* On activating an experience fragment, publisher sends many activation requests to Dispatcher (NPR-37707).
+* On topology change, the Sling job for asset processing gets reset resulting in the jobs that are in progress at the time of topology change getting ignored (NPR-37706).
+* Quotation marks, cross, and dash are not exported to CSV when users of MacOS export sites and assets URLs (NPR-37698).
+* Layout container in SPA page template is not able to register the custom CSS classes defined in the Template Policy when running react SPA pages (NPR-37697).
+* Background image is not visible when user selects targeting on an experience fragment that has background in the container (NPR-37662).
+* Translation job on an experience fragment is not translating all the components on that experience fragment (NPR-37660).
+* Translation of experience fragments and the page containing the experience fragment does not update the launch path in the experience fragment link (NPR-37659).
+* File Upload widget does not show the file name, when a file is uploaded, and dialog is saved (NPR-37634).
+* The scheduled activation (publishing) of asset does not trigger on the scheduled time if the folder containing that asset is moved (NPR-37621).
+* [Platform] External link checker dashboard fails to render results in [!DNL Adobe Experience Manager] WCM (NPR-37614).
+* Content fragment editor does not work correctly when capital case letters are used in tag names when editing tags in the editor (NPR-37601).
+* Classic user interface editor doesn't show mark up as in compare view of touch user interface (NPR-37588).
+* Intermittent 500 error is logged on adding an experience fragment to translation jobs (NPR-37587).
+* Authors are able to select and use date picker date even on disabled date picker (NPR-37583).
+* [Foundation] Authors are not able to enter some decimal values in number field resource type in a component dialog structure for touch user interface (NPR-37059).
+* The paths in libs folder get deleted on installing previous service packs (NPR-36815).
+* [Commerce] The deactivation of a root folder doesn’t change deactivation status of child products in [!DNL Experience Manager Commerce] console; moreover the count of children folders of a root folder at the time of deactivation is incorrectly displayed in the user interface (CQ-4338261).
+* [Localization Workflow] The content for column customization and branding customization is not localized in Admin Control dialog―on selecting icon under profile icon in [!DNL Adobe Experience Manager] inbox (CQ-4334864).
+* [Communities] The content inside the table for group members is not clickable (CQ-4334404).
+* [Oak] The Cold-Standby sync process is not working and is logging error (CQ-4333868).
+* [Platform Foundation UI] [!DNL Experience Manager] start page appears again when user selects the [!DNL Adobe Experience Manager] icon already being on the start page (CQ-4317409).
 
 ### [!DNL Assets] {#assets-65120}
 
@@ -93,7 +89,7 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 The following issues are fixed in [!DNL Assets]:
 
-* When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-377120).
+* When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-37712).
 * When adding watermark to an asset, the watermark is always displayed in black color irrespective of the color defined by the user (NPR-37720).
 * When using Connected Assets, a non-admin user is able to search for an asset even when the non-admin users are restricted to access the DAM repository (NPR-37644).
 * When creating a Catalog, the `Catalog` button under the `Create` dropdown does not work (NPR-37589).
@@ -124,50 +120,19 @@ The following issues are fixed in [!DNL Dynamic Media]:
 * The PDF thumbnails generated are different from the first page of the actual PDF. Some parts of the image are missing in the thumbnail (CQ-4315554).
 * CDN invalidation fails with a bad URL response if the `companyName` and `companyRoot` are different (CQ-4339896).
 
-### Commerce {#commerce-65110}
+### Workflows {#workflows-65120}
 
-* bug fix 1
+* Scrolling does not work as expected if you apply filter on Inbox items (CQ-4333594).
 
-### Platform {#platform-65110}
 
-* bug fix 1
-
-### Integrations {#integrations-65110}
-
-* bug fix 1
-
-### Projects {#projects-65110}
-
-* bug fix 1
-
-### User Interface {#user-interface-65110}
-
-* bug fix 1
-
-### Translation projects {#translation-65110}
-
-* bug fix 1
-
-### Sling {#sling-65110}
-
-* bug fix 1
-
-### Workflow {#workflow-65110}
-
-* bug fix 1
-
-### [!DNL Communities] {#communities-65110}
-
-* bug fix 1
-
-<!--
-
-### [!DNL Forms] {#forms-65110}
+### [!DNL Forms] {#forms-65120}
 
 
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+<!--
 
 **Adaptive Forms**
 
@@ -375,8 +340,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
 
-* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query will fail; i.e. the functionality will not work. 
-  To ensure correct operation you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
+* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work. 
+  To ensure correct operation, you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
 
    ```xml
    "tags": [
@@ -399,17 +364,6 @@ These websites are only available to customers. If you are a customer and need a
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
 * See [how to contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
-
-## Key releases since [!DNL Adobe Experience Manager] 6.5 SP11{#key-releases-since-last-sp}
-
-Between August 26, 2021, and November 25, 2021, Adobe released the following, in addition to the Service Packs:
-
-* [!DNL Adobe Experience Manager] as a Cloud Service [2021.9.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/2021/release-notes-2021-9-0.html) and [2021.10.0](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html).
-
-* [[!DNL Experience Manager] desktop app 2.1 (2.1.3.4)](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html).
-
-* [Experience Manager Screens: Feature Pack 202109](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/release-notes/release-notes-fp-202109.html)
-
 
 >[!MORELIKETHIS]
 >
