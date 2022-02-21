@@ -20,11 +20,10 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.12.0 are:
 
-* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the [update, delete, rename, and move](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html) operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment (NPR-37816).
+* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the update, delete, rename, and move operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment (NPR-37816).
 
-* [Campaign-Targeting] ES6 compilation support is available for the client library (NPR-37908).
-* [!DNL Experience Manager Sites] admin user interface now allows 1:many push rollouts from a live copy source by default, regardless of whether a blueprint configuration exists (CQ-4259951).
-* The status of currently in-progress async operation is now made visible to users so that they do not simultaneously trigger multiple async operations on same path (NPR-37611).
+* Push-rollouts of a live copy source to multiple live copies is now possible by default, without requiring a blueprint configuration (CQ-4259951).
+* The status of in-progress async operations is now shown in the user interface to help prevent users from accidentally triggering multiple async operations on the same path (NPR-37611).
 * Support for IMS-based authentication is provided for Analytics 2.0 (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
 * API support for json offer type experience fragment is provided (NPR-37796).
 * Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
@@ -114,9 +113,9 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * The assets of a folder containing `renditions` in the folder name are not synced in `Dynamic Media` (CQ-4338428).
 * When creating an image preset in `tiff` format, the preset is created but the format changes to `jpeg` (CQ-4335985).
-* When modifying the `Progressive JPEG Scan` value, the dropdown value always resets to `auto`(CQ-4335971).
-* The video metadata is not generated for the `mxf` videos in the asset properties (CQ-4335499).
-* When reprocessing the assets, the AVS (audio and video) and transcode assets are unpublished from the target server (CQ-4335461).
+* When modifying the `Progressive JPEG Scan` value in Image Preset Editor, the dropdown value always resets to `auto`(CQ-4335971).
+* The video metadata is not visible for the `mxf` videos on the asset properties page (CQ-4335499).
+* When reprocessing the video assets, the AVS (Adaptive Video Set) and video renditions are unpublished from the Publish server (CQ-4335461).
 * The PDF thumbnails generated are different from the first page of the actual PDF. Some parts of the image are missing in the thumbnail (CQ-4315554).
 * CDN invalidation fails with a bad URL response if the `companyName` and `companyRoot` are different (CQ-4339896).
 
