@@ -330,7 +330,7 @@ Some limitations of the feature are:
 * If a folder by the same name exists at the destination, the assets from the ZIP file are extracted in the existing folder.
 * If you cancel the extraction, the already extracted assets are not deleted.
 * You cannot select two ZIP files at the same time and extract them. You can only extract one ZIP archive at a time.
-* When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing [the latest Service Pack](/help/release-notes/sp-release-notes.md).
+* When uploading a ZIP archive, if the upload dialog displays a 500 server error, retry after installing [the latest Service Pack](/help/release-notes/release-notes.md).
 
 ## Preview assets {#previewing-assets}
 
@@ -535,7 +535,7 @@ Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, the
 
    >[!NOTE]
    >
-   >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported.
+   >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported. However, MXF video format is not yet supported with video annotations.
 
 For more information about generating and viewing subassets, see [manage subassets](managing-linked-subassets.md#generate-subassets).
 
@@ -706,7 +706,7 @@ The timeline lets you view various events for a selected item, such as active wo
 
 Annotations are comments or explanatory notes added to images or videos. Annotations provide marketers the ability to collaborate and leave feedback about assets.
 
-Video annotations are only supported on browsers with HTML5-compatible video formats. Video formats that [!DNL Assets] supports depend on the browser.
+Video annotations are only supported on browsers with HTML5-compatible video formats. Video formats that [!DNL Assets] supports depend on the browser. However, MXF video format is not yet supported with video annotations.
 
 >[!NOTE]
 >
@@ -739,7 +739,7 @@ Video annotations are only supported on browsers with HTML5-compatible video for
 
    >[!NOTE]
    >
-   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](/help/assets/managing-video-assets.md).
+   >Annotations can also be added to video assets. While annotating videos, the player pauses to let you annotate on a frame. For details, see [managing video assets](/help/assets/managing-video-assets.md). MXF video format is not yet supported with video annotations.
 
 1. To choose a different color so you can differentiate between users, click the Profile option and click **[!UICONTROL My Preferences]**.
 

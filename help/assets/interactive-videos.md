@@ -78,6 +78,10 @@ Interactive video steps:
 1. **Upload a video and its associated image assets** - Upload a video and associated images that you want to make interactive.
    See [Upload a video and its associated thumbnail assets](#uploading-a-video-and-its-associated-thumbnail-assets).
 
+   >[!NOTE]
+   >
+   >MXF video format is not yet supported for use with interactive videos in Dynamic Media.
+
 1. **Add interactivity to your video** - Add one or more time segments to the video. Then, associate image thumbnails within those time segments. Assign each image thumbnail to an action such as a hyperlink, a Quickview, or an Experience Fragment.
    (The URL-based method of linking is not possible if your interactive content has links with relative URLs, particularly links to Experience Manager Sites pages.)
    Finish by publishing the interactive video assets. Publishing creates the embed code or URL that you eventually copy and apply to your website landing page. See [Add interactivity to your video](#adding-interactivity-to-your-video).
@@ -235,6 +239,10 @@ See [Create a New Viewer Preset](/help/assets/managing-viewer-presets.md#creatin
 ## Upload a video and its associated thumbnail assets {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 If you have already uploaded your video and thumbnail assets, proceed to [Add interactivity to your video](#adding-interactivity-to-your-video).
+
+>[!NOTE]
+>
+>MXF video format is not yet supported for use with Interactive Videos in Dynamic Media.
 
 If you uploaded the wrong videos or images, or you want to delete uploaded videos or images that you no longer need, see [Delete assets](/help/assets/manage-assets.md#deleting-assets).
 

@@ -7,13 +7,13 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 
 ## 1. Is CIF GraphQL only used for commerce or will this be available for querying content authored on AEMs JCR?
 
-Adobe has adopted Magento’s GraphQL APIs as its official commerce API for all commerce related data. Hence, AEM uses GraphQL to exchange commerce data with Magento and with any commerce engine via I/O Runtime. This GraphQL API is independent from AEM's GraphQL API to access Content Fragments.
+Adobe has adopted Adobe Commerce's GraphQL APIs as its official commerce API for all commerce related data. Hence, AEM uses GraphQL to exchange commerce data with Adobe Commerce and with any commerce engine via I/O Runtime. This GraphQL API is independent from AEM's GraphQL API to access Content Fragments.
 
-## 2. Can Product assets (images) be stored and referenced from AEM via Adobe Commerce (Magento) admin? How can assets from Dynamic Media be consumed?
+## 2. Can Product assets (images) be stored and referenced from AEM via Adobe Commerce admin? How can assets from Dynamic Media be consumed?
 
-There is no official AEM Assets – Magento integration available. There is a partner connector available on the [marketplace](https://marketplace.magento.com/bounteous-dam.html).
+There is no official AEM Assets – Adobe Commerce integration available. There is a partner connector available on the [marketplace](https://marketplace.magento.com/bounteous-dam.html).
 
-Or as a workaround, you can store product assets (images) in AEM Assets but you will have to manually store the asset URLs in Magento. Dynamic Media is now part of AEM Assets and will work the same way.
+Or as a workaround, you can store product assets (images) in AEM Assets but you will have to manually store the asset URLs in Adobe Commerce. Dynamic Media is now part of AEM Assets and will work the same way.
 
 ## 3. Does it matter where the commerce solution is deployed? (On-prem or in the cloud)
 
@@ -33,7 +33,7 @@ This depends on a few additional aspects you have to consider. What is the cache
 
 ## 7. How does PIM play into this framework?
 
-PIM data gets exposed to AEM and clients via GraphQL requests. Our recommendation is to integrate PIM with the commerce engine (Magento or others) so that PIM data can then be retrieved from the commerce engine.
+PIM data gets exposed to AEM and clients via GraphQL requests. Our recommendation is to integrate PIM with the commerce engine (Adobe Commerce or others) so that PIM data can then be retrieved from the commerce engine.
 
 ## 8. Do you also cache pricing and other data via Dispatcher. Does that raise a frequent cache invalidation challenge?
 
@@ -53,7 +53,7 @@ CIF provides Search bar and Search Result components. The Search bar component s
 
 ## 12. How can product data be used in MSM or translations?
 
-Product data is usually already translated in PIM or in Magento. The AEM – Magento Integration supports the connection to multiple Magento stores & store views. In an MSM setup typically one AEM site is linked to one Magento store view.
+Product data is usually already translated in PIM or in Adobe Commerce. The AEM – Adobe Commerce Integration supports the connection to multiple Adobe Commerce stores & store views. In an MSM setup typically one AEM site is linked to one Adobe Commerce store view.
 
 ## 13. Is there a way to enhance the product data with commercial text? Where do you do this? In AEM or in the commerce solution?
 
@@ -61,9 +61,9 @@ We recommend managing marketing related data and content in AEM. Decorate produc
 
 ## 14. How can we ensure PCI compliance when using AEM for the entire presentation layer?
 
-We recommend using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Magento PCI compliance, please refer to <https://magento.com/pci-compliance>
+We recommend using abstracted payment methods. This puts the browser client in direct communication with the payment gateway provider so that neither Adobe or the commerce solutions hold or pass cardholder data. This approach requires only a level 3 PCI compliance. However, there are additional things to consider to be fully PCI compliant such as how employees interact with the system and data. For more information about Adobe Commerce PCI compliance, please refer to [PCI compliance](https://business.adobe.com/products/magento/pci-compliance.html)
 
-## 15. If I use AEM and Magento cloud versions, is this joint solution PCI compliant?
+## 15. If I use AEM and Adobe Commerce cloud versions, is this joint solution PCI compliant?
 
 Yes, Self-Assessment Questionnaire D and Attestation of Compliance are available on-request.
 
