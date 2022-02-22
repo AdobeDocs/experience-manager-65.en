@@ -192,6 +192,22 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
    ![force delete warning](assets/delete-referenced-asset.png)
 
+### Manage updates to assets in remote DAM {#manage-updates-in-remote-dam}
+
+After [configuring a connection](#configure-a-connection-between-sites-and-assets-deployments) between remote DAM and [!DNL Sites] deployments, the assets on remote DAM are made available on the [!DNL Sites] deployment. You can then perform the update, delete, rename, and move operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the [!DNL Sites] deployment. In addition, if an asset on remote DAM is used on a local [!DNL Experience Manager Sites] page, the updates to the asset on remote DAM are displayed on the [!DNL Sites] page.
+
+While moving an asset from one location to another, ensure that you [adjust references](/help/assets/manage-assets.md) so that the asset displays on the [!DNL Sites] page. If you move an asset to a location that is not accessible from the local [!DNL Sites] deployment, the asset fails to display on the Sites deployment.
+
+You can also update the metadata properties for an asset on remote DAM and the changes are available on the local [!DNL Sites] deployment.
+
+[!DNL Sites] authors can preview the available updates on the [!DNL Sites] deployment and then republish the changes to make them available on the [!DNL Experience Manager] publish instance.
+
+[!DNL Experience Manager] displays an expired status visual indicator on assets in `Remote Assets Content Finder` to stop site authors from using the asset on a [!DNL Sites] page. If you use an asset with an expired status on a [!DNL Sites] page, the asset fails to display on the [!DNL Experience Manager] publish instance.
+
+>[!NOTE]
+>
+>The updates to assets in remote DAM are made available to the [!DNL Sites] deployment only if remote DAM and [!DNL Sites] deployments are on [!DNL Experience Manager].
+
 ## Limitations and best practices {#tip-and-limitations}
 
 * To get insights about asset usage, configure the [Assets Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
