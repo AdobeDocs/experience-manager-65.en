@@ -24,9 +24,10 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 
 * Push-rollouts of a live copy source to multiple live copies is now possible by default, without requiring a blueprint configuration (CQ-4259951).
 * The status of in-progress async operations is now shown in the user interface to help prevent users from accidentally triggering multiple async operations on the same path (NPR-37611).
-* Support for IMS-based authentication is provided for Analytics 2.0 (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
+* Support for IMS-based authentication is provided for Analytics 2.0 APIs (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
 * API support for json offer type experience fragment is provided (NPR-37796).
 * Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
+* The built-in repository (Apache Jackrabbit Oak) still remains at 1.22.9.
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
 
@@ -91,12 +92,10 @@ The following issues are fixed in [!DNL Assets]:
 * When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-37712).
 * When adding watermark to an asset, the watermark is always displayed in black color irrespective of the color defined by the user (NPR-37720).
 * When using Connected Assets, a non-admin user is able to search for an asset even when the non-admin users are restricted to access the DAM repository (NPR-37644).
-* When creating a Catalog, the `Catalog` button under the `Create` dropdown does not work (NPR-37589).
 * When updating asset metadata using bulk edit, the changes applied to the dropdown fields are not saved and reset to the default values (NPR-37345).
 * Deleting a folder in taking too long which impacts the overall performance (NPR-37107).
 * When applying rules in metadata schema, the user is not able to view the complete value for the dropdown `Field Value` and `Field Choices` if the value is larger than the text box (CQ-4338074).
 * After upgrading to version 6.5.10.0, the asset properties page reflects an unnecessary HTML rendering message (CQ-4336994).
-* After upgrading to version 6.5.12.0, the review workflow fails to load the approved or rejected assets as a printable PDF (CQ-4336842).
 * Sorting the assets in `List View` does not work effectively (CQ-4335298).
 * When sharing assets using share link, the assets are downloaded in separate folders (CQ-4335000).
 * When verifying the [!DNL Experience Manager] `Inbox` settings, the `Share` and `Out of office` tabs reflect untranslated content (CQ-4334858).
@@ -287,7 +286,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.12.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.11/).
+The UberJar for Experience Manager 6.5.12.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -353,9 +352,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.12.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.12.0](assets/65110_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.12.0](assets/65120_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.12.0](assets/65110_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.12.0](assets/65120_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
