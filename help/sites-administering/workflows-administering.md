@@ -26,6 +26,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 * **Launchers**: Manage how workflows are to be launched
 * **Archive**: View history of workflows that completed successfully
 * **Failures**: View history of workflows that completed with errors
+* **Auto-Assign**: Configure Auto-Assigning workflows to templates
 
 ## Monitoring the Status of Workflow Instances {#monitoring-the-status-of-workflow-instances}
 
@@ -34,9 +35,26 @@ A range of consoles are available for administering your workflows. Use the [glo
 
    ![wf-96](assets/wf-96.png)
 
-1. Select a specific item, then **Open History** to see more details:
 
-   ![wf-97](assets/wf-97.png)
+## Search Workflow Instances {#search-workflow-instances}
+
+1. Using Navigation select **Tools**, then **Workflow**.
+1. Select **Instances** to display the list of workflow instances currently in progress. On the top rail, in the left corner, select **Filters**. Alternatively, you can use the keystrokes alt+1. The following dialog is displayed:
+
+   ![wf-99-1](assets/wf-99-1.png)
+
+1. In the Filter dialog, select the workflow search criteria. You can search based on these inputs:
+
+   * Payload path: Select a specific path
+   * Workflow model: Select a workflow model
+   * Assignee: Select a workflow Assignee
+   * Type: Task, Workflow item or Workflow Failure
+   * Task Status: Active, Complete or Terminated
+   * Where I Am: Owner AND Assignee, Owner only, Assignee only
+   * Start Date: Start date before or after a specified date
+   * End Date: End date before or after a specified date
+   * Due Date: Due date before or after a specified date
+   * Updated Date: Updated date before or after a specified date
 
 ## Suspending, Resuming, and Terminating a Workflow Instance {#suspending-resuming-and-terminating-a-workflow-instance}
 
@@ -156,3 +174,78 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 | Property Name (Web Console) |OSGi Property Name |
 |---|---|
 | Max Inbox Query Size |granite.workflow.inboxQuerySize |
+
+## Using Workflow variables for customer owned datastores {#using-workflow-variables-customer-datastore}
+
+Data processed by workflows is stored in the Adobe provided storage (JCR). This data can be sensitive in nature. You may want to save all the user defined metadata/data in your own managed storage instead of Adobe provided storage. These sections describes how to set up these variables for external storage.
+
+### Set the model to use external storage of metadata {#set-model-for-external-storage}
+
+At the level of workflow model, a flag is provided to indicate that the model (and its runtime instances) has external storage of metadata. Workflow variables will not be persisted in JCR for the workflow instances of the models marked for external storage. 
+
+The property *userMetadataPersistenceEnabled* will be stored on the *jcr:content node* of the workflow model. This flag will be persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
+
+The illustration below shows have to set the flag on a workflow.
+
+ ![workflow-externalize-config](assets/workflow-externalize-config.png)
+
+### APIs for metadata in external storage {#apis-for-metadata-external-storage}
+
+In order to store the variables externally you must implement the APIs that the workflow exposes.
+
+UserMetaDataPersistenceContext
+
+The following samples show you how to use the API.
+
+``` 
+
+@ProviderType
+public interface UserMetaDataPersistenceContext {
+ 
+    /**
+     * Gets the workflow for persistence
+     * @return workflow
+     */
+    Workflow getWorkflow();
+ 
+    /**
+     * Gets the workflow id for persistence
+     * @return workflowId
+     */
+    String getWorkflowId();
+ 
+    /**
+     * Gets the user metadata persistence id
+     * @return userDataId
+     */
+    String getUserDataId();
+}
+``` 
+
+UserMetaDataPersistenceProvider
+
+``` 
+/**
+ * This provider can be implemented to store the user defined workflow-data metadata in a custom storage location
+ */
+@ConsumerType
+public interface UserMetaDataPersistenceProvider {
+ 
+   /**
+    * Retrieves the metadata using a unique identifier
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap of user defined workflow data metaData
+    * @throws WorkflowException
+    */
+   void get(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+ 
+   /**
+    * Stores the given metadata to the custom storage location
+    * @param userMetaDataPersistenceContext
+    * @param metaDataMap metadata map
+    * @return the unique identifier that can be used to retrieve metadata. If null is returned, then workflowId is used.
+    * @throws WorkflowException
+    */
+   String put(UserMetaDataPersistenceContext userMetaDataPersistenceContext, MetaDataMap metaDataMap) throws WorkflowException;
+} 
+```
