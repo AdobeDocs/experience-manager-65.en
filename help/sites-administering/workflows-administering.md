@@ -41,7 +41,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 1. Using Navigation select **Tools**, then **Workflow**.
 1. Select **Instances** to display the list of workflow instances currently in progress. On the top rail, in the left corner, select **Filters**. Alternatively, you can use the keystrokes alt+1. The following dialog is displayed:
 
-   ![wf-99-1](/help/sites-cloud/administering/assets/wf-99-1.png)
+   ![wf-99-1](assets/wf-99-1.png)
 
 1. In the Filter dialog, select the workflow search criteria. You can search based on these inputs:
 
