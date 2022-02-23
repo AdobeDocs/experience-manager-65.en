@@ -25,8 +25,8 @@ The key features and enhancements introduced in [!DNL Adobe Experience Manager] 
 * Push-rollouts of a live copy source to multiple live copies is now possible by default, without requiring a blueprint configuration (CQ-4259951).
 * The status of in-progress async operations is now shown in the user interface to help prevent users from accidentally triggering multiple async operations on the same path (NPR-37611).
 * Support for IMS-based authentication is provided for Analytics 2.0 APIs (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
-* API support for json offer type experience fragment is provided (NPR-37796).
-* Offer request is provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
+* API support for JSON offer type experience fragment (NPR-37796).
+* Offer request is now provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
 * The built-in repository (Apache Jackrabbit Oak) still remains at 1.22.9.
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
