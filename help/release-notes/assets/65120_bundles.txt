@@ -1,0 +1,48 @@
+SYMBOLIC NAME                                    BUNDLE NAME                                      VERSION
+com.adobe.cq.cq-experience-fragments             AEM - Experience Fragments                       1.2.82
+com.adobe.cq.cq-ref-update-processor-impl        AEM - Reference Update Processor Impl bundle     1.0.12
+com.adobe.cq.cq-target-integration               AEM 6 - Adobe Target integration                 1.3.50
+com.adobe.cq.cq-analytics-integration            AEM 6 Analytics Integration Bundle               1.3.32
+com.adobe.cq.dam.cq-dynamicmedia-core            AEM Dynamic Media Integration                    1.0.150
+com.adobe.cq.com.adobe.cq.msm.ui                 AEM MSM - UI Utilities                           0.2.16
+com.day.cq.cq-personalization                    AEM Personalization                              5.12.46
+com.adobe.cq.wcm.com.adobe.cq.wcm.jobs.async     Adobe AEM - WCM Asynchronous Jobs support        1.0.40
+com.adobe.cq.cq-content-insight                  Adobe CQ Content Insight and Recommendations     1.5.10
+com.day.cq.dam.cq-dam-entitlement                Adobe CQ DAM Entitlement Implementation          1.3.38
+com.adobe.cq.dam.cq-scene7-imaging               Adobe CQ DAM Scene7 Dynamic Imaging              1.6.60.CQ650-B0047
+com.day.cq.dam.cq-dam-stock-integration          Adobe CQ DAM Stock Integration                   1.2.8
+com.adobe.cq.export.json.impl                    Adobe CQ JSON Exporter Implementation            0.2.8
+com.adobe.cq.remotedam.cq-remotedam-api          Adobe CQ Remote DAM API Bundle                   0.8.14
+com.adobe.cq.remotedam.cq-remotedam-commons      Adobe CQ Remote DAM Commons Bundle               0.0.14
+com.adobe.cq.remotedam.cq-remotedam-server-core  Adobe CQ Remote DAM Server Core                  1.1.44
+com.adobe.cq.remotedam.cq-remotedam-client-core  Adobe CQ Remote Dam Client Core Bundle           1.0.36
+com.day.cq.wcm.cq-wcm-translation                Adobe CQ Translation Workflow                    1.5.112
+com.day.cq.wcm.cq-wcm-foundation                 Adobe CQ WCM Foundation Components               5.12.48
+com.adobe.cq.commerce.cq-commerce-core           Adobe Communique 5 Commerce Core                 5.17.20
+afml                                             Adobe FO Markup Layout Library                   3.0.628531
+afe                                              Adobe Font Engine                                3.0.630138
+com.adobe.granite.workflow.api                   Adobe Granite Workflow API                       1.0.22.CQ650-B0007
+com.adobe.granite.workflow.console               Adobe Granite Workflow Console                   1.0.118.CQ650-B0005
+com.adobe.granite.workflow.core                  Adobe Granite Workflow Core                      2.0.240.CQ656-B0017
+pdfcore                                          Adobe PDF Core                                   4.0.631484
+pdfencryption                                    Adobe PDF Encryption                             4.0.631484
+PDFServices.extraction                           Adobe PDF Extraction services                    4.0.631484
+PDFServices.manipulations                        Adobe PDF Manipulation services                  4.0.631484
+PDFServices.security                             Adobe PDF Security services                      4.0.631484
+rideau                                           Adobe Rideau(I/O)                                3.0.552257
+com.adobe.stock.api                              Adobe Stock Apis SDK                             1.0.5
+org.apache.sling.event                           Apache Sling Event Support                       4.2.24
+com.adobe.cq.cq-product-info-provider            CQ ProductInfo Provider                          6.5.26
+com.adobe.dam.cq-dam-cfm-impl                    ContentFragmentManagement - Implementation       0.11.86
+com.day.cq.dam.cq-dam-similaritysearch           DAM Similarity Search Bundle                     5.12.22
+com.day.commons.osgi.wrapper.commons-httpclient  Day Commons Library - HTTP Client 3.1 Bundling   3.1.0.28
+com.day.cq.dam.cq-dam-api                        Day Communique 5 DAM API                         6.0.30
+com.day.cq.dam.cq-dam-commons                    Day Communique 5 DAM Commons                     5.12.134
+com.day.cq.dam.cq-dam-core                       Day Communique 5 DAM Core Implementation         5.12.334
+com.day.cq.dam.cq-dam-indesign                   Day Communique 5 DAM InDesign Integration        5.12.22
+com.day.cq.dam.cq-scene7-api                     Day Communique 5 DAM Scene7 Integration          5.12.52
+com.day.cq.dam.cq-scene7-core                    Day Communique 5 DAM Scene7 Integration          5.12.218
+com.day.cq.dam.cq-dam-video                      Day Communique 5 DAM Video Extensions            5.12.10
+com.day.cq.cq-mailer                             Day Communique 5 Mailer                          5.14.3.B0006
+com.day.cq.wcm.cq-wcm-core                       Day Communique 5 WCM Core Implementation         5.12.198
+com.day.cq.wcm.cq-msm-core                       Day Communique 5 WCM Multi Site Management Core  5.12.76
