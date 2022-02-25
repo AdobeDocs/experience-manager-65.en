@@ -1,6 +1,6 @@
 ---
 title: General Release Notes for [!DNL Adobe Experience Manager] 6.5
-description: [!DNL Adobe Experience Manager] 6.5 notes outlining the release information, what's new, how to install, and detailed change lists.
+description: "[!DNL Adobe Experience Manager] 6.5 notes outlining the release information, what's new, how to install, and detailed change lists."
 ---
 # General Release Notes for [!DNL Adobe Experience Manager] 6.5{#general-release-notes-for-adobe-experience-manager}
 
