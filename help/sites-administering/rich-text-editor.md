@@ -336,7 +336,7 @@ AEM RTE capability has the following limitations:
 
 * RTE capabilities are supported only in AEM component dialogs. RTE is not supported on wizards or Foundation-forms like [Page Properties](/help/sites-developing/page-properties-views.md) and [Scaffolding](/help/sites-authoring/scaffolding.md) on Touch-enabled UI.
 
-* AEM does not work on [Hybrid devices](/help/release-notes/known-issues.md).
+* AEM does not work on [Hybrid devices](/help/release-notes/release-notes.md).
 
 * Do not name the RTE configuration node `config`. Otherwise, the RTE configuration takes effect for only the administrators and not for the users in the group `content-author`.
 

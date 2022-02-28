@@ -1,9 +1,6 @@
 ---
 title: Learn about defining Metadata and Tagging for Content Fragments
 description: Learn about defining Metadata and Tagging for Content Fragments
-index: yes
-hide: no
-hidefromtoc: no
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 ---
 # Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}

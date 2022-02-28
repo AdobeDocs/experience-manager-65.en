@@ -98,6 +98,7 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 1. When the connection is successful, set the following. Headings with an asterisk (*) are required:
 
     * **[!UICONTROL Company]** - the name of the Dynamic Media account. You have multiple Dynamic Media accounts. For example, you could have different subbrands, divisions, staging, or production environments.
+    <!-- UNHIDE FEBRUARY 24, 2022 See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md). -->
 
     * **[!UICONTROL Company Root Folder Path]**
 
@@ -129,15 +130,16 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
 1. Select **[!UICONTROL Save]**.
-1. To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager author instance to connect to Dynamic Media:
+1. By default Experience Manager Author cannot preview Dynamic Media content. Therefore, to securely preview Dynamic Media content before it gets published, you must *allowlist* the Experience Manager Author instance to connect to Dynamic Media. In addition, if you want to provide users access to securely preview content, you can *allowlist* additional IP addresses.
+To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).
 
-    * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+<!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
     * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
     * Select the **[!UICONTROL Security]** tab.
     * For the **[!UICONTROL Client address]**, select **[!UICONTROL Add]**.
     * Enter the IP address of the Experience Manager Author instance (not Dispatcher IP).
-    * In the upper-right corner of the page, select **[!UICONTROL Save]**.
+    * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
 

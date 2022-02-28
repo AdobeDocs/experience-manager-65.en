@@ -1,5 +1,5 @@
 ---
-title: [!DNL Assets] Home Page experience
+title: "[!DNL Assets] Home Page experience"
 description: Personalize the [!DNL Experience Manager Assets] Home page for a rich welcome screen experience, including a snapshot of recent activities around assets.
 contentOwner: AG
 feature: Developer Tools, Asset Management

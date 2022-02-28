@@ -22,7 +22,7 @@ As the Experience Manager retrieves data on-demand, real-time APIs for product c
 
 >[!TIP]
 >
->If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://magento.com/products/magento-open-source).
+>If no real-time APIs are available, an external product cache with APIs should be used for the integration. Example [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 There is no need to implement the complete GraphQL schema, just the objects of the schema to enable the desired use-cases.
 
@@ -45,3 +45,14 @@ We recommend using [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatf
 The [reference implementation](https://github.com/adobe/commerce-cif-graphql-integration-reference) is a great starting point to build the integration to your commerce solution. Although it supports GraphQL, it can also be integrated with any other type of API such as REST.
 
 This integration layer is not required if a third party layer is available (such as Mulesoft) or the integration gets built on top of the third party solution.
+
+## Pre-built connectors {#connectors}
+
+Connectors provide a good starting for projects. They come with a commerce solution specific connection and default API mapping. These connectors are built by 3rd parties and not maintained by Adobe. Please reach out to the respective partner for information.
+
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), built by Diconium
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), built by Diconium
+
+>[!TIP]
+>
+>While connectors help projects to accelerate the commerce integration, they are not plug-n-play. Enterprise commerce solutions are usually heavily customized and require a custom integration. Good knowledge of the commerce platform, Adobe Commerce GraphQL schemas, and Adobe I/O Runtime is required.

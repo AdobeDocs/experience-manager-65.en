@@ -59,6 +59,8 @@ The Image Server page establishes default settings for delivering images from im
 
 **[!UICONTROL Client address]** - Lets you specify one or more IP addresses or IP address ranges. When specified, requests to this image catalog that originates from a client at an unlisted IP address is rejected. This rule applies both to delivery of images and rendered images.
 
+   ![Security tab](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Security tab showing IP "allow" field.*
+
 ### Catalog Management tab {#catalog-management-tab}
 
 **[!UICONTROL Rule set definition file path]** - Specifies the file that contains the rule set definitions for the image catalog.

@@ -82,23 +82,27 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 >
 >It is recommended to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
 
-<table>
+<!--- <table>
  <tbody>
   <tr>
    <td><strong>Platform</strong></td>
    <td><strong>Support Level</strong></td>
+   <td><strong>Link</strong></td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64bit</td>
    <td>A: Supported [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24</td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 8 - 64bit</td>
    <td>A: Supported [1]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18</td>
   </tr>
   <tr>
    <td>Oracle Java SE 11 JDK - 64bit</td>
    <td>A: Supported [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>
   </tr>
   <tr>
    <td>Oracle Java SE 10 JDK</td>
@@ -111,6 +115,7 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
   <tr>
    <td>Oracle Java SE 8 JDK - 64bit</td>
    <td>A: Supported [2]</td>
+   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10<td>
   </tr>
   <tr>
    <td>IBM J9 VM - build 2.9, JRE 1.8.0</td>
@@ -121,7 +126,18 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
    <td>A: Supported [3]</td>
   </tr>
  </tbody>
-</table>
+</table> --->
+
+| **Platform** | **Support Level** | **Link** |
+|---|---|---|
+| Azul Zulu OpenJDK 11 - 64bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24) |
+| Azul Zulu OpenJDK 8 - 64bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18) |
+| Oracle Java SE 11 JDK - 64bit | A: Supported `[2]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
+| Oracle Java SE 10 JDK | Z: Not supported `[2]` |
+| Oracle Java SE 9 JDK | Z: Not supported `[2]` |
+| Oracle Java SE 8 JDK - 64bit | A: Supported `[2]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
+| IBM J9 VM - build 2.9, JRE 1.8.0 | A: Supported `[3]` |
+| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[3]` |
 
 1. Support and distribution of Azul Zulu Builds of OpenJDK, including all maintenance updates of LTS releases will be supported by Adobe directly for all AEM customers making use of the Azul Zulu Builds of OpenJDK, starting with AEM 6.5 SP9 resp. See the [Azul Java support for Adobe Experience Manager Q&A](assets/adobe-azul-openjdk-license-agreement.pdf) for more information.
 
@@ -141,16 +157,18 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Store binaries in TAR files on file system `[1]` |Binaries |Z: Not supported for production |
 | Amazon S3 |Binaries |A: Supported |
 | Microsoft Azure Blob Storage |Binaries |A: Supported |
-| MongoDB Enterprise 4.0 |Repository |A: Supported `[2, 3]` |
+| MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.6 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.4 |Repository |Z: Not supported |
-| IBM DB2 10.5 |Repository & Forms Database |R: Restricted Support `[4]` |
+| IBM DB2 10.5 |Repository & Forms Database |R: Restricted Support `[5]` |
 | Oracle Database 12c (12.1.x) |Repository & Forms Database |R: Restricted Support |
 | Microsoft SQL Server 2016 |Forms Database |A: Supported |
 | **Apache Lucene (Quickstart built-in)** |Search Service |A: Supported |
 | Apache Solr |Search Service |A: Supported |
 
 1. 'File System' includes block storage that is POSIX-compliant. This includes network storage technology. Mind that file system performance might vary and influences the overall performance. It is recommended to load test AEM in combination with the network/remote file system.
+1. MongoDB Enterprise 4.2 requires AEM 6.5 SP9 as minimum.
 1. MongoDB Sharding is not supported in AEM.
 1. MongoDB Storage Engine WiredTiger is supported only.
 1. Supported for AEM Forms upgrade customers. Not supported for new installations.
@@ -216,11 +234,12 @@ Adobe Experience Manager works with the following server platforms for productio
 | Oracle Solaris 11 |Z: Not supported  |
 | IBM AIX 7.2 |Z: Not supported  |
 
-1. Linux Kernel 2.6, 3.x and 4.x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux and Amazon Linux. AEM Forms add-on features are only supported on CentOS 7 and Red Hat Enterprise Linux 7.
+1. Linux Kernel 2.6, 3.x and 4.x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux and Amazon Linux. AEM Forms add-on features are only supported on CentOS 7, Red Hat Enterprise Linux 7, and Red Hat Enterprise Linux 8.
 1. AEM Forms is supported only on Ubuntu 16.04 LTS
 1. Linux distribution supported by Adobe Managed Services
 1. Microsoft Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions
+1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions. 
+
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
 

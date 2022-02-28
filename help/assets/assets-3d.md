@@ -1,8 +1,6 @@
 ---
 title: Working with 3D assets in Dynamic Media
-seo-title: Working with 3D assets in Dynamic Media
 description: Learn how to work with 3D assets in Dynamic Media
-seo-description: Learn how to work with 3D assets in Dynamic Media
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -21,7 +19,7 @@ Dynamic Media lets you upload, manage, view, and deliver 3D assets as immersive 
 
 There is no additional configuration required to use 3D assets in Dynamic Media.
 
-![Shoe in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png)
+![Shoe in 3d](/help/assets/assets-dm/3d-dimensional-viewer-quickpublish-url-embed2.png) *Details page of a three-dimensional shoe.*
 
 <!-- See also [Dynamic Media 3D Release Notes](/help/release-notes/aem3d-release-notes.md). -->
 
@@ -37,6 +35,10 @@ See also [3D formats supported](/help/assets/assets-formats.md).
 | OBJ |WaveFront 3D Object File|application/x-tgif ||
 | STL |Stereolithography|application/vnd.ms-pki.stl ||
 | USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is a proprietary 3D format that can be viewed natively by Safari and iOS devices.|
+
+>[!NOTE]
+>
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x).
 
 ## Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
 
@@ -80,7 +82,7 @@ See [ConfigurE Dynamic Media Cloud Services](/help/assets/config-dms7.md#configu
 
 ## About viewing and interacting with 3D assets {#viewing-three-d-assets}
 
-This section describes how to view and interact with 3D assets two different ways: from within the asset details page and from within the 3D Media component in Sites.
+This section describes how to view and interact with 3D assets two different ways: from within the asset details page and from within the 3D Media component in Experience Manager Sites.
 
 The interactive 3D viewer includes, among other things, a collection of interactive camera controls that let you orbit, zoom, and pan the 3D asset.
 

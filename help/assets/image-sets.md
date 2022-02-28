@@ -8,18 +8,17 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: ccc4eb23-934c-4e67-860b-a6faa2bcaafc
 docset: aem65
-
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 ---
 # Image Sets {#image-sets}
 
-Image Sets give users an integrated viewing experience, where users can see different views of an item by clicking a thumbnail image. Image Sets let you present alternative views of an item and the viewer offers zooming tools for examining images closely.
+Image Sets give users an integrated viewing experience, where users can see different views of an item by selecting a thumbnail image. Image Sets let you present alternative views of an item and the viewer offers zooming tools for examining images closely.
 
 Image sets are designated by a banner with the word `IMAGESET`. In addition, if the Image Set is published, then the publish date, indicated by the **[!UICONTROL World]** icon is on the banner along with the last modification date, indicated by the **[!UICONTROL Pencil]** icon displays.
 
-![chlimage_1-133](assets/chlimage_1-339.png)
+![Image Set](assets/chlimage_1-339.png)
 
 Within the Image Set, you can also create swatches by creating an Image Set and adding thumbnails.
 
@@ -39,7 +38,9 @@ For example, suppose you want to present images of caps with different color bil
 
    Start by uploading the images for your Image Sets. When you choose images, remember that your customers can zoom on images in the Image Set Viewer. Make sure that the images are least 2000 pixels in the largest dimension for optimal zoom detail. Dynamic Media can render images up to 25 MP (megapixels) each. For example, you could use a 5000 x 5000 MP image or any other size combination up to 25 MP.
 
-   Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+   See [Dynamic Media - Supported raster image formats](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) for a list of formats supported by Image Sets.
+
+<!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
 1. [Create Image Sets](#creating-image-sets).
 
@@ -89,13 +90,15 @@ Start by uploading the images for your Image Sets. When you choose images, remem
 
 You can upload images for Image Sets as you would [upload any other asset in Assets](/help/assets/manage-assets.md#uploading-assets).
 
+See [Dynamic Media - Supported raster image formats](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) for a list of formats supported by Image Sets.
+
 ### Prepare Image Set assets for upload {#preparing-image-set-assets-for-upload}
 
 Before creating Image Sets, make sure that the images are the right size and format.
 
 To create a multiple-view Image Set, you need images that show an item from different points of view or show different aspects of the same item. The goal is to highlight the important features of an item so viewers have a complete picture of what it looks like or does.
 
-Because users can zoom images in Image Sets, make sure that the images are at least 2000 pixels in the largest dimension. Assets support many image file formats, but lossless TIFF, PNG, and EPS images are recommended.
+Because users can zoom images in Image Sets, make sure that the images are at least 2000 pixels in the largest dimension. <!-- Assets support many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
 >[!NOTE]
 >

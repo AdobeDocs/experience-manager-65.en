@@ -1,9 +1,6 @@
 ---
 title: Learn about headless content and how to translate it in AEM
 description: Learn headless concepts, how they map to AEM, and the theory of AEM translation.
-index: yes
-hide: no
-hidefromtoc: no
 ---
 # Learn about headless content and how to translate it in AEM {#learn-about}
 

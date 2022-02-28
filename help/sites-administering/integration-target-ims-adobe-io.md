@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: integration
 discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
 docset: aem65
-exl-id: ba7abc53-7db8-41b1-a0fa-4e4dbbeca402
+exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 ---
 # Integration with Adobe Target using Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
 
@@ -136,7 +136,7 @@ You must now assign the required privileges to the integration:
 
 1. Navigate to **Products** (top toolbar), then select **Adobe Target - &lt;*your-tenant-id*&gt;** (from the left panel).
 1. Select **Product Profiles**, then your required workspace from the list presented. For example, Default Workspace.
-1. Select **Integrations**, then the required integration configuration.
+1. Select **API Credentials**, then the required integration configuration.
 1. Select **Editor** as the **Product Role**; instead of **Observer**.
 
 ## Details stored for the Adobe I/O Integration Project {#details-stored-for-the-adobe-io-integration-project}
@@ -168,7 +168,7 @@ Returning to AEM you can complete the IMS configuration by adding required value
 1. Here you can use the [details from Adobe I/O](#details-stored-for-the-adobe-io-integration-project):
 
     * **Title**: Your text.
-    * **Authorization Server**: Copy/paste this from the `"aud"` line of the **Payload** section below, e.g. `"https://ims-na1.adobelogin.com"` in the example below
+    * **Authorization Server**: Copy/paste this from the `aud` line of the **Payload** section below, e.g. `https://ims-na1.adobelogin.com` in the example below
     * **API Key**: Copy this from the [Overview](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target
     * **Client Secret**: Generate this in the [Overview](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target, and copy
     * **Payload**: Copy this from the [Generate JWT](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target
@@ -222,7 +222,9 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Enter the details in the **Adobe Target Settings** tab:
 
     * **Authentication**: IMS
+
     * **Tenant ID**: the Adobe IMS Tenant ID. See also the [Tenant ID and Client Code](#tenant-client) section.
+
       >[!NOTE]
       >
       >For IMS this value needs to be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
@@ -232,29 +234,40 @@ The configuration can now be referenced for a Cloud Service to use the Target St
       >`https://experience.adobe.com/#/@yourtenantid/target/activities`
       >
       >Then you would use `yourtenantid`.
+
     * **Client Code**: See the [Tenant ID and Client Code](#tenant-client) section.
+
     * **IMS Configuration**: select the name of the IMS Configuration
+
     * **API Type**: REST
+
     * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+
     * **Use accurate targeting**: By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
+
     * **Synchronize segments from Adobe Target**: Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
+
     * **Client library**: Select whether you want the AT.js client library, or mbox.js (deprecated).
+
     * **Use Tag Management System to deliver client library**: Use DTM (deprecated), Adobe Launch or any other tag management system.
+
     * **Custom AT.js**: Leave blank if you checked the Tag Management box or to use the default AT.js. Alternatively upload your custom AT.js. Only appears if you have selected AT.js.
 
    >[!NOTE]
    >
    >[Configuration of a Cloud Service to use the Target Classic API](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) has been deprecated (uses the Adobe Recommendations Settings tab).
+
 1. Click **Connect to Target** to initialize the connection with Adobe Target.
 
    If the connection is successful, the message **Connection successful** is displayed.
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
+
 1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
 ### Tenant ID and Client Code {#tenant-client}
 
-With [Adobe Experience Manager 6.5.8.0](/help/release-notes/sp-release-notes.md), the Client Code field had been added to the Target configuration window.
+With [Adobe Experience Manager 6.5.8.0](/help/release-notes/release-notes.md), the Client Code field had been added to the Target configuration window.
 
 When configuring the Tenant ID and Client Code fields, please be aware of the following:
 
