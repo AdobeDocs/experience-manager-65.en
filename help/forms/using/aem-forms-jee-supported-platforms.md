@@ -114,6 +114,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>A: Supported</td>
    <td>Minor releases and updates</td>
   </tr>
+    <tr>
+   <td>IBM® JDK SR6-FP26 <br /> </td>
+   <td>A: Supported</td>
+   <td>Minor releases and updates</td>
+  </tr>
  </tbody>
 </table>
 
@@ -175,7 +180,12 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>MySQL 5.7.35 (Deprecated) </td>
    <td>-</td>
    <td>R: Restricted Support</td>
-  </tr>  
+  </tr>
+  <tr>
+   <td>MySQL 8.0.27</td>
+   <td>-</td>
+   <td>R: Restricted Support</td>
+  </tr>
  </tbody>
 </table>
 
@@ -243,6 +253,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
   </tr>
   <tr>
    <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (Deprecated) </p> </td>
+   <td><p>A: Supported</p> </td>
+   <td><p>Patches and cumulative patches for the supported EAP version</p> </td>
+  </tr>
+  <tr>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
    <td><p>A: Supported</p> </td>
    <td><p>Patches and cumulative patches for the supported EAP version</p> </td>
   </tr>
@@ -332,13 +347,13 @@ You can run AEM Forms on JEE on a physical machine or a virtual environment. How
 
 Consider the following exceptions while choosing a platform to set up your AEM Forms on JEE server.
 
-1. AEM Forms on JEE doesn’t support IBM® WebSphere® with MySQL.
-1. AEM Forms on JEE doesn’t support and JBoss on SUSE Linux Enterprise Server 12. Only IBM WebSphere is supported on SUSE Linux Enterprise Server 12.
+1. AEM Forms on JEE does not support IBM® WebSphere® with MySQL.
+1. AEM Forms on JEE does not support and JBoss on SUSE Linux Enterprise Server 12. Only IBM WebSphere is supported on SUSE Linux Enterprise Server 12.
 1. AEM Forms on JEE doesn’t support any JDK with JBoss® other than Oracle Java™ SE.
 1. AEM Forms on JEE doesn’t support any JDK with IBM® WebSphere® other than IBM® JDK.
 1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
 1. AEM Forms on JEE does not support WebSphere application server on CentOS.
-1. AEM Forms on JEE doesn’t support JBoss role based access control (RBAC).
+1. AEM Forms on JEE does not support JBoss role based access control (RBAC).
 
 In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
 
