@@ -31,7 +31,7 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 >   * a named workspace, specified in the Cloud Configuration.
 >   * **Note:** Exporting to specific workspaces requires Adobe Target Premium.
 >
->* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
+>* AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-target-ims.md).
 >
 >AEM 6.5.0.0 and 6.5.1.0:
 >
@@ -46,7 +46,7 @@ There are three format options available for exporting an Experience Fragment to
 * JSON: Support for headless content delivery
 * HTML & JSON
 
-AEM Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target. This is done via Adobe I/O, for which AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
+AEM Experience Fragments can be exported to the default workspace in Adobe Target, or to user-defined workspaces for Adobe Target. This is done via Adobe I/O, for which AEM must be [integrated with Adobe Target using Adobe I/O](/help/sites-administering/integration-target-ims.md).
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 
 Various actions are required:
 
-1. You have to [integrate AEM with Adobe Target using Adobe I/O](/help/sites-administering/integration-target-ims-adobe-io.md).
+1. You have to [integrate AEM with Adobe Target using Adobe I/O](/help/sites-administering/integration-target-ims.md).
 2. Experience Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Experience Fragment are externalized for web delivery.
 
    >[!NOTE]
