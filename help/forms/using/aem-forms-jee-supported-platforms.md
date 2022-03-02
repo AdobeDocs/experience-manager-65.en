@@ -105,17 +105,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Minor releases and updates</td>
   </tr>
   <tr>
-   <td>IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)</td>
-   <td>A: Supported</td>
-   <td>Minor releases and updates</td>
-  </tr>
-  <tr>
-   <td>IBM® J9 Virtual Machine (build 2.9, JRE 1.8.0)<br /> </td>
-   <td>A: Supported</td>
-   <td>Minor releases and updates</td>
-  </tr>
-    <tr>
-   <td>IBM® JDK SR6-FP26 <br /> </td>
+   <td>IBM® J9 Virtual Machine (build 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
    <td>A: Supported</td>
    <td>Minor releases and updates</td>
   </tr>
@@ -752,7 +742,7 @@ Additional information for third-party patches can also be found by searching th
 
 ## Platform updates {#platform-updates}
 
-The following platforms are marked as deprecated with AEM Forms 6.5.120.0 release on February 3, 2022:
+The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release on February 3, 2022:
 
 - MongoDB Enterprise 4.0
 - IBM DB2 11.1
@@ -762,10 +752,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.120.0 releas
 - JBoss® Enterprise Application Platform (EAP) 7.1.4
 - IBM Content Manager Server 8.5 Fix pack 2
 - IBM Content Manager Client 8.5
-
->[!NOTE]
->
-> The platforms marked as [deprecated on with AEM Forms 6.5.12.0 remain in support until AEM Forms 6.5 Service Pack 15 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
@@ -777,13 +763,20 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 >[!NOTE]
 >
-> The platforms marked as [deprecated on with AEM Forms 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 15 (6.5.15.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
+> The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Revision History {#revision-history}
 
 - Feb 03, 2022
-  
-  - Marked some platforms deprecated. For details see,
+
+  - Removed support for the following:
+    - IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)
+    - Oracle Database 12c Release 2
+    - Oracle Database 18c
+    - Oracle Unified Directory (OUD) 11g Release 2
+    - IBM Lotus Domino 9.0
+    - IBM Filenet 5.2
+    - Adobe Flash Player
 
 - Oct 10, 2021
 
