@@ -322,7 +322,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
   >
   >A new version of the "index definition" package is being developed. The link below will be published as soon as it is made available.
   >
-  >Until then, please contact Customer Care to for the hotfix.
+  >Until then, please contact Customer Care for the hotfix.
 
   <!--
   Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
