@@ -316,7 +316,19 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 ## Known issues {#known-issues}
 
-* When you install AEM 6.5 Service Pack 11 and try to download the status ZIP file, Experience Manager downloads a corrupt file. Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
+* When you install AEM 6.5 Service Pack 12 and try to download the status ZIP file, Experience Manager downloads a corrupt file. 
+
+  >[!CAUTION]
+  >
+  >A new version of the "index definition" package is being developed. The link below will be published as soon as it is made available.
+  >
+  >Until then, please contact Customer Care to for the hotfix.
+
+  <!--
+  Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
+  -->
+
+  Download and install AEM Sites SEO Index Package on your AEM instance before downloading the ZIP file to resolve the issue.
 
 * As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
