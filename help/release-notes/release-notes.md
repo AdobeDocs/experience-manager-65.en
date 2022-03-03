@@ -130,72 +130,41 @@ The following issues are fixed in [!DNL Dynamic Media]:
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
-<!--
-
 **Adaptive Forms**
 
-* Accessibility – When you set the `Wizard` layout for a panel in an adaptive form, the navigation buttons do not have Aria labels and role (NPR-37613).
+* When a text component in an adaptive form contains a table, pasting content into the component results in erasing the table in the editor (NPR-38078).
 
-* Validations on a date field in an adaptive form does not work, as expected (NPR-37556).
+* A form displays a toolbar only when you open a saved form (NPR-38060).
 
-* When the label text for the Checkbox and Radio Button components is long, the text does not fit appropriately (NPR-37294).
+* The undo operation does not work correctly for the rule editor (NPR-37973).
 
-* When you apply styling changes to the Thank You message of the AEM Forms Container component, the changes do not replicate in the source adaptive form (NPR-37284).
+* `getAemFormContainer` returns a null pointer after installing AEM Forms 6.5.10.0 (NPR-37881).
 
-* Differences in the value of the `Switch` component on the user interface and in the backend (NPR-37268).
+* Accessibility - The screen reader announces the long description of a text box as soon as the tab focus shifts to the field instead of announcing only when you click the field (NPR-37855).
 
-* When you use the keyboard keys to navigate to the `Submit` option and press the `Enter` key, you can submit the adaptive form multiple times (CQ-4333993).
+* When you enable the Allow Rich Text property for a text box, there are issues with the maximum allowed character length (NPR-37825).
 
-* The Remove operation for the File Attachment component does not work, as expected (NPR-37376).
+* CSS issues when you copy any component in an adaptive form (NPR-37812).
 
-* When a label for a field exceeds 1000 characters in an adaptive form that translates to various languages, the dictionary fails to retrieve the translation of the label (CQ-4329290).
+**Interactive Communication**
+
+* The Reference tab does not list any references in an Interactive Communication (NPR-37995).
 
 **Document Services**
 
-* An error displays while using the Assembler service (NPR-37606):
+* Assembler does not embed fonts, as expected (NPR-38056).
 
-  ```TXT
-    500 Internal Server Error
-  ```
+* Unable to convert PDF to PDFA using workbench (NPR-37879).
 
-* When the document attachments are passed to the Assembler service, the following exception displays (NPR-37582):
+**Document Security**
 
-  ```TXT
-    com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
-  ```
-
-* Missing closing parenthesis from data after converting a PDF document to a PDF-A/1B PDF document (NPR-37608).
-
-**HTML5 Forms**
-
-* When you install AEM 6.5.10.0, the HTML preview for an XDP form does not work (NPR-37503, CQ-4331926).
-
-* Text overlapping issues while migrating the PDF forms to HTML 5 forms in various languages (NPR-37173).
-
-**Letters**
-
-* When you submit a letter and reopen it in HTML view, the position of text document fragments does not remain the same (NPR-37307).
-
-**Forms Workflow**
-
-* In case of embedded container workflow, you get multiple workflow completion emails even after selecting the `Notify on Complete of Container Workflow` option (NPR-37280).
+* PDF encryption does not work after upgrading to java version 1.8.0_281 (NPR-37716).
 
 **Foundation JEE**
 
-* After installing AEM 6.5 Forms Service Pack 9, the CRX repository URLs are no longer available (NPR-37592).
+* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM Forms 6.5.7.0 (NPR-38053).
 
-**Issues fixed in AEM Forms 6.5.11.1**
-
->[!NOTE]
->
->If you have not upgraded to AEM 6.5.11.0 Forms, install the AEM Forms 6.5.11.1 add-on package directly. If you have installed AEM 6.5.11.0 Forms, Adobe recommends to upgrade to AEM 6.5.11.1 Forms.
-
-* Submit actions, Send Email and Invoke an AEM Workflow stop working after installing the Forms 6.5.11.0 add-on package.
-* CreatePDF operation stops converting Microsoft Word documents to PDF documents after installing the Forms 6.5.11.0 add-on package.
-* (JEE Only) Critical security vulnerabilities (CVE-2021-44228 and CVE-2021-45046) reported for Apache Log4j2.
-* (JEE only) Assembler DSC in 6.5.11.0 patch contains incorrect metainfo like specification version and impl version.
-
--->
+* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967).
 
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
@@ -254,8 +223,6 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-<!-- 
-
 ### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -268,7 +235,7 @@ To know the platforms certified to work with this release, see the [technical re
 
 >[!NOTE]
 >
->Experience Manager 6.5.10.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.10.0, install the latest version of the package post installation of Forms Add-On Package.
+>Experience Manager 6.5.12.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.10.0, install the latest version of the package post installation of Forms Add-On Package.
 
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
@@ -281,8 +248,6 @@ For information about installing the cumulative installer for Experience Manager
 >[!NOTE]
 >
 >After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
-
--->
 
 ### UberJar {#uber-jar}
 
