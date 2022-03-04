@@ -666,7 +666,6 @@ For additional requirements see:
 >
 > Some browser-related exceptions for desktops are as follows:
 >
-> - Most modern browsers no longer support NPAPI-based plug-ins. For information about how it impacts AEM Forms applications and workflows, see [Discontinuation of NPAPI browser plugins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 > - Safari is supported only on Macintosh OS X.
 > - Workspace supports Safari 5.1 on Macintosh OS X 10.6 and 10.7 with Acrobat DC or later versions. For more information about Safari 5.1 compatibility with Adobe Reader, Acrobat, see [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
 > - Administration Console is not supported on Safari.
