@@ -189,7 +189,7 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * Issues while storing UTF-8 special characters as part of a workflow on AEM 6.5.10.0 Forms publish instance (NPR-37673).
 
-* Issue while creating variale of ArrayList type and JSON subtype (NPR-37600).
+* Issue while creating variable of ArrayList type and JSON subtype (NPR-37600).
 
 * Issues with XPath/Dot Notation Browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582). 
 
