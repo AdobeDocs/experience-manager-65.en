@@ -148,7 +148,7 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 **Form Data Model**
 
-* Issue while saving adaptive form attachments in the Form Data Model (CQ-4338561). 
+* Issue while saving adaptive form attachments connected to a Form Data Model to the database (CQ-4338561). 
 
 **Interactive Communication**
 
@@ -191,7 +191,7 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * Issue while creating variable of ArrayList type and JSON subtype (NPR-37600).
 
-* Issues with XPath/Dot Notation Browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582). 
+* Issues with XPath/Dot Notation browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582). 
 
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
