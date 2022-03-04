@@ -146,6 +146,10 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * CSS issues when you copy any component in an adaptive form (NPR-37812).
 
+**Form Data Model**
+
+* Issue while saving adaptive form attachments connected to a Form Data Model to the database (CQ-4338561). 
+
 **Interactive Communication**
 
 * The Reference tab does not list any references in an Interactive Communication (NPR-37995).
@@ -156,15 +160,38 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * Unable to convert PDF to PDFA using workbench (NPR-37879).
 
+* Issues with office documents while using the PDF Generator service after upgrading from AEM 6.5.7.0 Forms to AEM 6.5.10.0 Forms (NPR-37758).
+
 **Document Security**
 
 * PDF encryption does not work after upgrading to java version 1.8.0_281 (NPR-37716).
 
 **Foundation JEE**
 
-* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM Forms 6.5.7.0 (NPR-38053).
+* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM 6.5.7.0 Forms (NPR-38053).
 
-* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967).
+* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967, CQ-4336081).
+
+* Saving logs result in high CPU utilization that requires a server restart (NPR-37868).
+
+* `Gemfire.log` does not get created in the `temp\adobejb_server1\Caching` folder after installing AEM Forms-6.5.0-0038 (CQ-4340237).
+
+* The following error displays after executing the `ConfigurationManager.sh` command (CQ-4338323):
+
+  ```TXT
+    [root@localhost bin]# ./ConfigurationManager.sh 
+    bash: ./ConfigurationManagerCLI.sh: /bin/sh^M: bad interpreter: No such file or directory
+  ```
+
+* AEM 6.5 Forms on RHEL8 does not support JBOSS EAP 7.3 and MySQL8 (CQ-4331770).
+
+**Workflow**
+
+* Issues while storing UTF-8 special characters as part of a workflow on AEM 6.5.10.0 Forms publish instance (NPR-37673).
+
+* Issue while creating variable of ArrayList type and JSON subtype (NPR-37600).
+
+* Issues with XPath/Dot Notation browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582). 
 
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
@@ -285,7 +312,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
   * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip)
   
-  * [AEM Content Fragment with GraphQL Index Package 1.0.4](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.4.zip) 
+  * [AEM Content Fragment with GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip) 
 
 * As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
