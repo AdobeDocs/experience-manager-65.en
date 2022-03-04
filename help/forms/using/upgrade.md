@@ -52,6 +52,16 @@ You can also perform a multi-hop upgrade from
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
+AEM 6.5.12.0 Forms on JEE provides provides two types of installers: Full installer and Patch installer.
+
+**Full installer**: You can use the full installer to upgrade from AEM 6.3 Forms on JEE or AEM 6.4 on JEE to AEM 6.5.12.0 Forms on JEE. It is also for customers setting up fresh AEM Forms instances and performing out-of-the-place upgrades.
+
+**Patch installer**: Patch installer is for customers already using AEM 6.5.x.x versions. You can use the patch installer to upgrade to the latest version of AEM Forms.
+
+The following table depicts senarios for using full and patch installer.
+
+![](assets/full-and-patch-installer.png)
+
 <!--
 [Work in Progress]
 
