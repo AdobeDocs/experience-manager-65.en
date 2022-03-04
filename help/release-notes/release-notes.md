@@ -146,6 +146,10 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * CSS issues when you copy any component in an adaptive form (NPR-37812).
 
+**Form Data Model**
+
+* Issue while saving adaptive form attachments in the Form Data Model (CQ-4338561). 
+
 **Interactive Communication**
 
 * The Reference tab does not list any references in an Interactive Communication (NPR-37995).
@@ -156,15 +160,38 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * Unable to convert PDF to PDFA using workbench (NPR-37879).
 
+* Issues with office documents while using the PDF Generator service after upgrading from AEM 6.5.7.0 Forms to AEM 6.5.10.0 Forms (NPR-37758).
+
 **Document Security**
 
 * PDF encryption does not work after upgrading to java version 1.8.0_281 (NPR-37716).
 
 **Foundation JEE**
 
-* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM Forms 6.5.7.0 (NPR-38053).
+* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM 6.5.7.0 Forms (NPR-38053).
 
-* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967).
+* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967, CQ-4336081).
+
+* Saving logs result in high CPU utilization that requires a server restart (NPR-37868).
+
+* `Gemfire.log` does not get created in the `temp\adobejb_server1\Caching` folder after installing AEM Forms-6.5.0-0038 (CQ-4340237).
+
+* The following error displays after executing the `ConfigurationManager.sh` command (CQ-4338323):
+
+  ```TXT
+    [root@localhost bin]# ./ConfigurationManager.sh 
+    bash: ./ConfigurationManagerCLI.sh: /bin/sh^M: bad interpreter: No such file or directory
+  ```
+
+* AEM 6.5 Forms on RHEL8 does not support JBOSS EAP 7.3 and MySQL8 (CQ-4331770).
+
+**Workflow**
+
+* Issues while storing UTF-8 special characters as part of a workflow on AEM 6.5.10.0 Forms publish instance (NPR-37673).
+
+* Issue while creating variable of ArrayList type and JSON subtype (NPR-37600).
+
+* Issues with XPath/Dot Notation Browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582). 
 
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
