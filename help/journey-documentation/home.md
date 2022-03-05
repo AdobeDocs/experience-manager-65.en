@@ -1,6 +1,7 @@
 ---
 title: AEM Documentation Journeys
 description: Documentation Journeys provide a narrative structure within AEM documentation by tying together complex and disparate features in order to solve a business goal in a best-practices fashion. Designed with AEM beginners in mind, journeys introduce the concepts and features to achieve a goal from A to Z.
+exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
 ---
 # AEM Documentation Journeys {#aem-documentation-journeys}
 
