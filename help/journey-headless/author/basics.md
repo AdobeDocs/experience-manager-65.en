@@ -1,6 +1,7 @@
 ---
 title: Learn Authoring Basics
 description: Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.
+exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 ---
 # Authoring Basics for Headless with AEM {#author-headless-basics}
 

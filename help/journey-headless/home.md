@@ -1,6 +1,7 @@
 ---
 title: AEM Headless Journeys
 description: A collection of documentation journeys describing how to use Adobe Experience Manager as a Headless CMS.
+exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 ---
 # AEM Headless Journeys {#aem-headless-journeys}
 

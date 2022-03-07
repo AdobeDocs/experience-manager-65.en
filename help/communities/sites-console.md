@@ -10,10 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
-
 role: Admin
+exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
 ---
-
 # Communities Sites Console {#communities-sites-console}
 
 The Communities Sites console provides access to:
@@ -586,6 +585,3 @@ From the global navigation Sites console, community sites are located in the `Co
 While it is possible to access a community site in this manner, for administrative tasks, the community site should be accessed from the Communities Sites console.
 
 ![access-site](assets/access-site.png)
-
-
-

@@ -1,6 +1,7 @@
 ---
 title: Getting Started with AEM Headless
 description: In this part of the AEM Headless Developer Journey, learn about AEM Headless prerequisites.
+exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 ---
 # Getting Started with AEM Headless {#getting-started}
 

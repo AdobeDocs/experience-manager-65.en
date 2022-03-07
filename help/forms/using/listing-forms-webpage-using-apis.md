@@ -8,8 +8,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
+exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
 ---
-
 # Listing forms on a web page using APIs {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms provides a REST-based search API that web developers can use to query and retrieve a set of forms that meets the search criteria. You can use APIs to search forms based on various filters. The response object contains form attributes, properties, and render end points of forms.
