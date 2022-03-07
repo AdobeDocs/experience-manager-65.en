@@ -741,7 +741,7 @@ Additional information for third-party patches can also be found by searching th
 
 ## Platform updates {#platform-updates}
 
-The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release on February 3, 2022:
+The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release on March 3, 2022:
 
 - MongoDB Enterprise 4.0
 - IBM DB2 11.1
@@ -766,7 +766,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 ## Revision History {#revision-history}
 
-- Feb 03, 2022
+- Mar 03, 2022
 
   - Removed support for the following:
     - IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)
