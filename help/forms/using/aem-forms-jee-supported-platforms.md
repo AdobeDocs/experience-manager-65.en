@@ -770,7 +770,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
   - Removed support for the following:
     - IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)
-    - Oracle Database 12c Release 2
+    - Oracle Database 12c Release 1
     - Oracle Database 18c
     - Oracle Unified Directory (OUD) 11g Release 2
     - IBM Lotus Domino 9.0
