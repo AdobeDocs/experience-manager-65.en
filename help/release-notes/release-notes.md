@@ -78,6 +78,7 @@ The following issues are fixed in [!DNL Sites]:
 * [Communities] The content inside the table for group members is not clickable (CQ-4334404).
 * [Oak] The Cold-Standby sync process is not working and is logging error (CQ-4333868).
 * [Platform Foundation UI] [!DNL Experience Manager] start page appears again when user selects the [!DNL Adobe Experience Manager] icon already being on the start page (CQ-4317409).
+* For a user (without replication permissions) to delete or move pages (even if the pages are not activated), the `Page Subtree Activation Check` under Configuration `Page Manager Factory` needs to be enabled (NPR-37936).
 
 ### [!DNL Assets] {#assets-65120}
 
