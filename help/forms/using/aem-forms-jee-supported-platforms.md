@@ -152,7 +152,7 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td>Supported</td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft SQL Server 2016 (Deprecated)</p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
@@ -751,6 +751,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release
 - JBoss® Enterprise Application Platform (EAP) 7.1.4
 - IBM Content Manager Server 8.5 Fix pack 2
 - IBM Content Manager Client 8.5
+- Microsoft SQL Server 2016
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
