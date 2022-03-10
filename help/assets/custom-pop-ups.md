@@ -1,9 +1,6 @@
 ---
 title: Create custom pop-ups using Quickview
-seo-title: Use Quickview to create custom pop-ups
 description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
-seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
-uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -29,7 +26,7 @@ While the functionality of each viewer differs, the process of creating a Quickv
 
 1. Create a Quickview for an uploaded asset.
 
-   You typically create a Quickview the same time you edit an asset for use with the viewer you are using.
+   You typically create a Quickview the same time that you edit an asset for use with the viewer you are using.
 
    <table>
     <tbody>
