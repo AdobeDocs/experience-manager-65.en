@@ -161,7 +161,7 @@ On remote [!DNL Assets] deployment, in [!UICONTROL Dynamic Media sync mode], sel
 
 ## Use remote assets {#use-remote-assets}
 
-The website authors use Content Finder to connect to the DAM deployment. The authors can browse, search for, and drag the remote assets in a component. To authenticate to the remote DAM, keep the credentials of the DAM user provided by your administrator handy.
+The website authors use Content Finder to connect to the DAM deployment. The authors can browse, search for, and drag the remote assets in a component. To authenticate to the remote DAM, keep the credentials provided by your administrator (if any) handy.
 
 Authors can use the assets available on the local DAM and the remote DAM deployment, in a single web page. Use the Content Finder to switch between searching the local DAM or searching the remote DAM.
 
@@ -177,7 +177,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
    Click **[!UICONTROL Toggle Side Panel]** on upper-left corner of the page.
 
-1. Open the [!UICONTROL Assets] tab and click **[!UICONTROL Log in to Connected Assets]**.
+1. Open the [!UICONTROL Assets] tab (Remote Content Finder) and click **[!UICONTROL Log in to Connected Assets]**.
 1. Provide the credentials -- `ksaner` as user name and `password` as password. This user has authoring permissions on both the [!DNL Experience Manager] deployments.
 1. Search for the asset that you added to DAM. The remote assets are displayed in the left panel. Filter for images or documents and further filter for types of supported documents. Drag the images on an `Image` component and documents on a `Download` component.
 
@@ -187,7 +187,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
    *Figure: Options to filter document types and images when searching assets on remote DAM.*
 
-1. A site author is notified if an asset is fetched asynchronously and if any fetch task fails. While authoring or even after authoring, the authors can see detailed information about fetch tasks and errors in the [asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) user interface.
+1. A site author is notified if an asset's original is fetched asynchronously and if any fetch task fails. While authoring or even after authoring, the authors can see detailed information about fetch tasks and errors in the [asynchronous jobs](/help/sites-administering/asynchronous-jobs.md) user interface.
 
    ![Notification about asynchronous fetching of assets that happens in the background.](assets/assets_async_transfer_fails.png)
 
@@ -197,7 +197,7 @@ Use the above setup to try the authoring experience to understand how the functi
 
    >[!NOTE]
    >
-   >Even if one or more remote assets are not fetched, the page is published. The component using the remote asset is published empty. The [!DNL Experience Manager] notification area displays a notification for errors that show in asynchronous jobs page.
+   >Even if one or more remote assets are not fetched completely, the page is published. The [!DNL Experience Manager] notification area displays a notification for errors that show in asynchronous jobs page.
 
 >[!CAUTION]
 >
@@ -218,7 +218,7 @@ To view and manage references on the [!DNL Assets] deployment, follow these step
 
 1. The references for [!DNL Sites] pages displays total count of references for each local [!DNL Sites]. It may take some time to find all the references and display the total number of references.
 1. The list of references is interactive and DAM users can click on a reference to open the referencing page. If remote references cannot be fetched for some reason, a notification is displayed informing the user of the failure.
-1. Users can move or delete the asset. When moving or deleting an asset, the total number of references of all the selected assets/folders are displayed in a warning dialog. When deleting an asset for which the references are not yet displayed, a warning dialog is displayed.
+1. Users can move or delete the asset. When moving or deleting an asset, the total number of references of all the selected assets/folders are displayed in a warning dialog. When deleting an asset for which the references are not yet retrieved, a warning dialog is displayed.
 
    ![force delete warning](assets/delete-referenced-asset.png)
 
@@ -270,7 +270,7 @@ No, you cannot use content fragments and video assets from the remote DAM deploy
 
 ### Can you use Dynamic Media assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets?
 
-Yes, you can configure and use Dynamic Media assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#dynamic-media-assets).
+Yes, you can configure and use Dynamic Media image assets from the remote DAM deployment on the [!DNL Sites] deployment after configuring Connected Assets. For more information, see [Configure a connection between Sites and Dynamic Media deployments](#dynamic-media-assets).
 
 ### After configuring Connected Assets, can you perform the update, delete, rename, and move operations on the remote DAM assets or folders?
 
@@ -286,7 +286,6 @@ You can add assets to the [!DNL Sites] deployment, however, those assets cannot 
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 
-* Local assets are not synchronized with the original assets on the remote deployment. Any edits, deletions, or revoking of permissions on the DAM deployment are not propagated downstream.
 * Local assets are read-only copies. [!DNL Experience Manager] components do non-destructive edits to assets. No other edits are allowed.
 * Locally fetched assets are available for authoring purposes only. Asset update workflows cannot be applied and metadata cannot be edited.
 * Only images and the listed document formats are supported. [!DNL Content Fragments] and [!DNL Experience Fragments] are not supported.
@@ -299,7 +298,7 @@ You can add assets to the [!DNL Sites] deployment, however, those assets cannot 
 ### Set up and licensing {#setup-licensing}
 
 * [!DNL Assets] deployment on [!DNL Adobe Managed Services] is supported.
-* [!DNL Sites] can connect to a single [!DNL Assets] repository at a time.
+* [!DNL Sites] can connect to a single [!DNL Assets] deployment at a time.
 * A license of [!DNL Assets] working as remote repository is required.
 * One or more licenses of [!DNL Sites] working as local authoring deployment is required.
 
