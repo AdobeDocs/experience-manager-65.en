@@ -144,6 +144,12 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * CSS issues when you copy any component in an adaptive form (NPR-37812).
 
+* While generating the adaptive forms translation the generated XLIFF file does not contain the same sequence of texts as in the Adaptive Form. In some cases it is needed to see the context of the texts. This is not possible if the sequence in XLIFF is alphabetic. (NPR-37435).
+
+* When an adaptive form is translated, the HTML tags are part of the translation. If a user makes a mistake and the tags are not valid, the whole text is not shown in the document of record. (NPR-37499)
+
+* When an adaptive form is created and finalized in base language and translation is done by an external team and imported. If there even a small change of text like addition or missing dot (.) is done in the for the base language, the complete translation goes missing for all other languages. (NPR-37189)
+
 **Form Data Model**
 
 * Issue while saving adaptive form attachments connected to a Form Data Model to the database (CQ-4338561).
