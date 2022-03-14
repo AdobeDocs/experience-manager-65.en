@@ -263,6 +263,10 @@ WorkflowModel model = workflowSession.getModel(modelId);
 workflowSession.startWorkflow(model, wfData, metaData);
 ```
 
+### Store sensitive user data outside JCR using workflow variables {#jcr-independent-persistance}
+
+Data processed using forms workflow can contain sensitive user data, such as Personally Identifiable Information and Sensitive Personal Information. Businesses can choose to store the data, that is processed by various workflow steps (and passed using workflow variables), out of JCR storage into an external data store owned and managed by them. To know more about persisting workflow data in an external storage, see [Using workflow variables for customer owned datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe Experience Manager] provides Workflow API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) to store workflow variables in external Azure blob storages. For details about using the API, see [Use workflow variables to parameterize sensitive data and store in external data stores](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 ## Edit a variable {#edit-a-variable}
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
