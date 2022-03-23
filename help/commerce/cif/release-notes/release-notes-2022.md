@@ -24,7 +24,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 ### What's New {#what-is-new-march}
 
-* AEM CIF Search Core Component support Commerce LiveSearch
+* Beta: AEM CIF Search Core Component support Commerce LiveSearch
 * Improved SEO for multi-store scenarios: URL formats for PDP / PLP can now be configured on a store level via the CIF Cloud Config properties
 * Product picker supports staged products via new filter option in the UI.  This enables content practitioners to prepare product content management for upcoming product launches
 * Simplified CIF configuration management and error handling by using CIF Cloud Config name instead of config proxy url
