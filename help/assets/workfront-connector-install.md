@@ -50,3 +50,15 @@ To create a connection with Workfront, follow these steps:
    ![Connect [!DNL Experience Manager] and [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
 1. To verify the connection, access it in [!DNL Workfront] and verify that the API key is the same and that the connection is **[!UICONTROL Enabled]**. To do so, select **[!UICONTROL Setup]** > **[!UICONTROL Documents]** > **[!UICONTROL Custom Integrations]** in [!DNL Workfront].
+
+## Upgrade enhanced connector for Workfront {#upgrade-enhanced-connector-for-workfront}
+
+Experience Manager Assets enables you to upgrade the enhanced connector for Workfront from a previous version to the latest version. 
+
+To upgrade the enhanced connector for Workfront to the latest version:
+
+1. Download the connector from [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+
+1. Install the package using [!UICONTROL Package Manager]. To know how to install packages, see [Package Manager documentation](/help/sites-administering/package-manager.md).
+
+
