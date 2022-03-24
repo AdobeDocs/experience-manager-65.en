@@ -1,6 +1,7 @@
 ---
 title: Integration with Adobe Analytics using IMS
 description: Learn about integrating AEM with Adobe Analytics using IMS
+exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
 ---
 # Integration with Adobe Analytics using IMS {#integration-with-adobe-analytics-using-ims}
 
@@ -209,4 +210,4 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics.

@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
+exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
 ---
-
 # Planning{#planning}
 
 This document describes what you need to know to plan for your test. In addition you should answer these questions before conducting your tests:

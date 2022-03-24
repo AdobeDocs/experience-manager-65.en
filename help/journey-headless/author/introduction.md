@@ -1,6 +1,7 @@
 ---
 title: AEM Headless Content Author Journey
 description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager, and how to author content for your project.
+exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 ---
 # Authoring for Headless with AEM - An Introduction {#author-headless-introduction}
 

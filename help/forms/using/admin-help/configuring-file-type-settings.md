@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
+exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 ---
-
 # Configuring file type settings {#configuring-file-type-settings}
 
 In PDF Generator, you can set up the application settings for supported file types. On Windows, you can set up the application settings for each supported file type. On UNIX and Linux, you can set up the application settings for HTML-to-PDF and OpenOffice.

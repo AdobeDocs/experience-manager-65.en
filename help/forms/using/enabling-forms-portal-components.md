@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
+exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
 ---
-
 # Enabling forms portal components {#enabling-forms-portal-components}
 
 Out of the box, forms portal components are not available for use. To make the components appear in the list of available components in AEM sidekick, perform the following steps:

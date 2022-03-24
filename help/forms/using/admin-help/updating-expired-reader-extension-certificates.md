@@ -1,8 +1,8 @@
 ---
 title: Updating expired Reader Extension service certificates
-description: Reader extended documents not working, update certificates 
+description: Reader extended documents not working, update certificates
+exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 ---
-
 # Updating expired Reader Extension service certificates {#Updating-expired-Reader-Extension-service-certificates}
 
 Adobe Experience Manager Forms (AEM Forms) customers with Adobe Managed Services or On-premise Enterprise Base licenses are entitled to use Reader Extension service. The service enables an organization to easily share interactive PDF documents by extending the functionality of Adobe Reader with additional usage rights. The service adds usage rights to a PDF document and activates features that are not usually available when a PDF document is opened using Adobe Acrobat Reader DC, such as adding comments to a document, filling forms, and saving the document. Third-party users do not require additional software or plug-ins to work with rights-enabled documents. PDF documents that have usage rights added are called rights-enabled documents. A user who opens a rights-enabled PDF document in Adobe Reader can perform the operations that are enabled for that document.
@@ -130,4 +130,4 @@ On attempting to open a PDF documents Reader Extended with old certificates, use
 
 **Is there any change in the name of new description?**
 
-New Reader Extension certificates mention G3-P24 as program name in the description. In the older certificates, program name P24 was mentioned in the description. 
+New Reader Extension certificates mention G3-P24 as program name in the description. In the older certificates, program name P24 was mentioned in the description.
