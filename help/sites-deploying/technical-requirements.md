@@ -312,7 +312,7 @@ To successfully connect with Microsoft Windows 7+ to an AEM instance that is not
 
 1. Add the BasicAuthLevel registry entry to this subkey using a value of 2 or more.
 
-To improve responsivness of the WebDav Client under Windows - see [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570)
+To improve responsiveness of the WebDav Client under Windows - see [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570)
 
 ## Additional Platform Notes {#additional-platform-notes}
 
