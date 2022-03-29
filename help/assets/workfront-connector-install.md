@@ -61,7 +61,7 @@ Experience Manager Assets enables you to update the [!DNL Workfront for Experien
 
 To update the [!DNL Workfront for Experience Manager enhanced connector] to the latest version:
 
-1. Download the connector from [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
+1. Download the latest version of the enhanced connector from [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
 1. Install the package using [!UICONTROL Package Manager]. To know how to install packages, see [Package Manager documentation](/help/sites-administering/package-manager.md).
 
