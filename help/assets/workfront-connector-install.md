@@ -22,11 +22,8 @@ A user with administrator access in [!DNL Adobe Experience Manager] installs the
 To install the connector, follow these steps:
 
 1. Download the connector from [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. [Configure the firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
-
 1. On the dispatcher, allow HTTP headers named `authorization`, `username`, and `apikey`. Allow `GET`, `POST`, and `PUT` requests to `/bin/workfront-tools`.
-
 1. Ensure that the following paths do not exist in [!DNL Experience Manager] repository:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
@@ -36,7 +33,6 @@ To install the connector, follow these steps:
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
 1. Install the package using [!UICONTROL Package Manager]. To know how to install packages, see [Package Manager documentation](/help/sites-administering/package-manager.md).
-
 1. Create `wf-workfront-users` in [!DNL Experience Manager] User Group and assign the permission `jcr:all` to `/content/dam`.
 
 A system user `workfront-tools` is automatically created and the required permissions are managed automatically. All users from [!DNL Workfront] who use the connector are automatically added as a part of this group.
@@ -62,7 +58,4 @@ Experience Manager Assets enables you to update the [!DNL Workfront for Experien
 To update the [!DNL Workfront for Experience Manager enhanced connector] to the latest version:
 
 1. Download the latest version of the enhanced connector from [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-
 1. Install the package using [!UICONTROL Package Manager]. To know how to install packages, see [Package Manager documentation](/help/sites-administering/package-manager.md).
-
-
