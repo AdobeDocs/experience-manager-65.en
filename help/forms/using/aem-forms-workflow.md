@@ -271,15 +271,19 @@ Minimizing the number of workflow instances increases the performance of the wor
 
 ## Parameterize sensitive data to workflow variables and store in external data stores {#externalize-wf-variables}
 
-Any data that is submitted from adaptive forms to [!DNL Experience Manager] workflows can have PII (Personally Identifiable Information) or SPD (Sensitive Personal Data) of your business' end users. However, it is not mandatory to have your data stored in [!DNL Adobe Experience Manager] [JCR  repository](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). You can externalize the storage of end-user data into your managed data storage, such as Azure storage, by parameterizing the information into [workflow variables](/help/forms/using/variable-in-aem-workflows.md).
+Any data that is submitted from adaptive forms to [!DNL Experience Manager] workflows can have PII (Personally Identifiable Information) or SPD (Sensitive Personal Data) of your business' end users. However, it is not mandatory to have your data stored in [!DNL Adobe Experience Manager] [JCR  repository](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). You can externalize the storage of end-user data into your managed data storage (for example Azure) by parameterizing the information into [workflow variables](/help/forms/using/variable-in-aem-workflows.md).
 
-In an [!DNL Adobe Experience Manager] Forms workflow, data is processed and passed through a series of workflow steps by way of workflow variables. These variables are named properties or key-value pairs that are stored in workflow instances metadata node. Any variable that is put in workflow instances metadata node is accessible to other steps in the workflow. These workflow variables can be externalized into a separate repository other than JCR and then securely processed by [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] provides API `[!UICONTROL UserMetaDataPersistenceProvider]` to store the workflow variables in your managed Azure blob storage. To know more about Using workflow variables for customer owned datastores in [!DNL Adobe Experience Manager], see [Administer workflow variables for external datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+In an [!DNL Adobe Experience Manager] Forms workflow, data is processed and passed through a series of workflow steps by way of workflow variables. These variables are named properties or key-value pairs that are stored in workflow instances metadata node. These workflow variables can be externalized into a separate repository other than JCR and then processed by [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] provides API `[!UICONTROL UserMetaDataPersistenceProvider]` to store the workflow variables in your managed external storage. To know more about Using workflow variables for customer owned datastores in [!DNL Adobe Experience Manager], see [Administer workflow variables for external datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe] provides the following [sample](https://github.com/adobe/workflow-variable-externalizer) to store variables from workflow metadata map to Azure storage, by using the API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). On the similar lines you can use the sample as a guide to use [UserMetaDataPersistenceProvider] API to externalize the workflow variables in any other data storage external to [!DNL Adobe Experience Manager] and manage the same.
+
+>[!NOTE]
+>
+>When you store your workflow variables to an external data storage, see the pointers in the [guidelines for workflows external data storage](#guidelines-workflows-external-data-storage).
 
 ### Install the workflow API sample implementation
 
-To store variables from workflow metadata map to an external storage of your choice:
-
-1. Install the [sample](https://github.com/adobe/workflow-variable-externalizer) workflow API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md):
+To store workflow variables in your managed Azure blob storage:
+1. Install the [sample](https://github.com/adobe/workflow-variable-externalizer) workflow API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) as follows:
 
     1. Run in the project root directory the `mvn clean install` command with Maven 3.
 
@@ -289,16 +293,15 @@ To store variables from workflow metadata map to an external storage of your cho
 
 1. Initialize the following properties in the externalizer OSGi configuration file in the `ui.config` content package:
 
-```JQL
-   accountKey=""
-   accountName=""
-   endpointSuffix=""
-   containerName=""
-   protocol=""
+   ```JQL
+      accountKey=""
+      accountName=""
+      endpointSuffix=""
+      containerName=""
+      protocol=""
+   ```
 
-```
-
-1. [Configure the workflow model](#configure-aem-wf-model) in [!DNL Adobe Experience Manager].
+1. Configure the workflow model in [!DNL Adobe Experience Manager]. To know how to configure the workflow model for an external storage, see [Configure the workflow model](#configure-aem-wf-model).
 
 ### Configure workflow model in [!DNL Adobe Experience Manager] for external data storage {#configure-aem-wf-model}
 
@@ -313,3 +316,15 @@ To configure an AEM Workflow model for an external data storage:
 1. Select **[!UICONTROL Externalize workflow data storage]**.
 
 1. Select **[!UICONTROL Save & Close]** to save the properties.
+
+### Guidelines for AEM Workflows for external data storage {#guidelines-workflows-external-data-storage}
+
+The following are the guidelines when you are using [!DNL Adobe Experience Manager] workflows and storing data to external data storages (for example Microsoft Azure storage server):
+
+* Use variables to store data while defining input and output data files and attachments in workflow model steps. Do not select **[!UICONTROL Relative to Payload]** and **[!UICONTROL Available at an absolute path]** options. The **[!UICONTROL Relative to Payload]** and **[!UICONTROL Available at an absolute path]** options do not display automatically once you [configure an [!DNL Adobe Experience Manager] workflow model for external data storage](#configure-aem-wf-model).
+
+* Use variables to store data file and attachments while submitting an adaptive form to an AEM Workflow. Do not select **[!UICONTROL Relative to Payload]** option while submitting an adaptive form to an [!DNL Adobe Experience Manager] workflow. The **[!UICONTROL Relative to Payload]** option does not display automatically once you [configure an [!DNL Adobe Experience Manager] workflow model for external data storage](#configure-aem-wf-model).
+
+* Do not use a custom [!DNL Adobe Experience Manager] workflow step in a workflow model to store data in the [!UICONTROL CRX DE] repository.
+
+* When you [configure an [!DNL Adobe Experience Manager] workflow model for external data storage](#configure-aem-wf-model), do not create custom columns for [!DNL Adobe Experience Manager] [!UICONTROL Inbox] since the values of the custom columns are not fetched if the work item in the [!DNL Adobe Experience Manager] [!UICONTROL Inbox] belongs to a workflow that is marked for external storage.
