@@ -278,7 +278,7 @@ In an [!DNL Adobe Experience Manager] Forms workflow, data is processed and pass
 
 >[!NOTE]
 >
->When you store your workflow variables to an external data storage, see the pointers in the [guidelines for workflows external data storage](#guidelines-workflows-external-data-storage).
+>When you store your workflow variables to an external data storage, refer the pointers in the [guidelines for workflows external data storage](#guidelines-workflows-external-data-storage).
 
 ### Install the workflow API sample implementation
 
