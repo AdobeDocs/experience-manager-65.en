@@ -1,13 +1,13 @@
 ---
 title: AEM 6.5 Developing User Guide
 seo-title: AEM 6.5 Developing User Guide
-description: This guide covers how to build out your AEM instance.
+description: Learn how to build out your AEM instance. Learn more about the platform and components, and find information around development tools and personalization.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
 ---
 # AEM 6.5 Developing User Guide
 
-This guide covers how to build out your AEM instance. 
+Learn how to build out your AEM instance. Learn more about the platform and components, and find information around development tools and personalization. 
 
 ## Key AEM articles
 
