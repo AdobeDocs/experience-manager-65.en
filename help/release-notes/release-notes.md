@@ -78,6 +78,7 @@ The following issues are fixed in [!DNL Sites]:
 * [Communities] The content inside the table for group members is not clickable (CQ-4334404).
 * [Oak] The Cold-Standby sync process is not working and is logging error (CQ-4333868).
 * [Platform Foundation UI] [!DNL Experience Manager] start page appears again when user selects the [!DNL Adobe Experience Manager] icon already being on the start page (CQ-4317409).
+* For a user (without replication permissions) to delete or move pages (even if the pages are not activated), the `Page Subtree Activation Check` under Configuration `Page Manager Factory` needs to be enabled (NPR-37936).
 
 ### [!DNL Assets] {#assets-65120}
 
@@ -105,7 +106,6 @@ The following issues are fixed in [!DNL Assets]:
   * Only the last selection of the parent field is saved for the dependent uneditable field (NPR-37858).
   * The dependent dropdown (multivalue field) reflects the default value intermittently for the selected parent dropdown (NPR-37791).
 
-
 ### [!DNL Dynamic Media] {#dynamic-media-65120}
 
 The following issues are fixed in [!DNL Dynamic Media]:
@@ -122,81 +122,80 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 * Scrolling does not work as expected if you apply filter on Inbox items (CQ-4333594).
 
-
 ### [!DNL Forms] {#forms-65120}
-
 
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
-<!--
-
 **Adaptive Forms**
 
-* Accessibility – When you set the `Wizard` layout for a panel in an adaptive form, the navigation buttons do not have Aria labels and role (NPR-37613).
+* When a text component in an adaptive form contains a table, pasting content into the component results in erasing the table in the editor (NPR-38078).
 
-* Validations on a date field in an adaptive form does not work, as expected (NPR-37556).
+* A form displays a toolbar only when you open a saved form (NPR-38060).
 
-* When the label text for the Checkbox and Radio Button components is long, the text does not fit appropriately (NPR-37294).
+* The undo operation does not work correctly for the rule editor (NPR-37973).
 
-* When you apply styling changes to the Thank You message of the AEM Forms Container component, the changes do not replicate in the source adaptive form (NPR-37284).
+* `getAemFormContainer` returns a null pointer after installing AEM Forms 6.5.10.0 (NPR-37881).
 
-* Differences in the value of the `Switch` component on the user interface and in the backend (NPR-37268).
+* Accessibility - The screen reader announces the long description of a text box as soon as the tab focus shifts to the field instead of announcing only when you click the field (NPR-37855).
 
-* When you use the keyboard keys to navigate to the `Submit` option and press the `Enter` key, you can submit the adaptive form multiple times (CQ-4333993).
+* When you enable the Allow Rich Text property for a text box, there are issues with the maximum allowed character length (NPR-37825).
 
-* The Remove operation for the File Attachment component does not work, as expected (NPR-37376).
+* CSS issues when you copy any component in an adaptive form (NPR-37812).
 
-* When a label for a field exceeds 1000 characters in an adaptive form that translates to various languages, the dictionary fails to retrieve the translation of the label (CQ-4329290).
+* While generating the adaptive forms translation the generated XLIFF file does not contain the same sequence of texts as in the Adaptive Form. In some cases it is needed to see the context of the texts. This is not possible if the sequence in XLIFF is alphabetic. (NPR-37435).
+
+* When an adaptive form is translated, the HTML tags are part of the translation. If a user makes a mistake and the tags are not valid, the whole text is not shown in the document of record. (NPR-37499)
+
+* When an adaptive form is created and finalized in base language and translation is done by an external team and imported. If there even a small change of text like addition or missing dot (.) is done in the for the base language, the complete translation goes missing for all other languages. (NPR-37189)
+
+**Form Data Model**
+
+* Issue while saving adaptive form attachments connected to a Form Data Model to the database (CQ-4338561).
+
+**Interactive Communication**
+
+* The Reference tab does not list any references in an Interactive Communication (NPR-37995).
 
 **Document Services**
 
-* An error displays while using the Assembler service (NPR-37606):
+* Assembler does not embed fonts, as expected (NPR-38056).
 
-  ```TXT
-    500 Internal Server Error
-  ```
+* Unable to convert PDF to PDFA using workbench (NPR-37879).
 
-* When the document attachments are passed to the Assembler service, the following exception displays (NPR-37582):
+* Issues with office documents while using the PDF Generator service after upgrading from AEM 6.5.7.0 Forms to AEM 6.5.10.0 Forms (NPR-37758).
 
-  ```TXT
-    com.adobe.livecycle.assembler.client.ProcessingException: ⁪: Failed to execute the DDX
-  ```
+**Document Security**
 
-* Missing closing parenthesis from data after converting a PDF document to a PDF-A/1B PDF document (NPR-37608).
-
-**HTML5 Forms**
-
-* When you install AEM 6.5.10.0, the HTML preview for an XDP form does not work (NPR-37503, CQ-4331926).
-
-* Text overlapping issues while migrating the PDF forms to HTML 5 forms in various languages (NPR-37173).
-
-**Letters**
-
-* When you submit a letter and reopen it in HTML view, the position of text document fragments does not remain the same (NPR-37307).
-
-**Forms Workflow**
-
-* In case of embedded container workflow, you get multiple workflow completion emails even after selecting the `Notify on Complete of Container Workflow` option (NPR-37280).
+* PDF encryption does not work after upgrading to java version 1.8.0_281 (NPR-37716).
 
 **Foundation JEE**
 
-* After installing AEM 6.5 Forms Service Pack 9, the CRX repository URLs are no longer available (NPR-37592).
+* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM 6.5.7.0 Forms (NPR-38053).
 
-**Issues fixed in AEM Forms 6.5.11.1**
+* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967, CQ-4336081).
 
->[!NOTE]
->
->If you have not upgraded to AEM 6.5.11.0 Forms, install the AEM Forms 6.5.11.1 add-on package directly. If you have installed AEM 6.5.11.0 Forms, Adobe recommends to upgrade to AEM 6.5.11.1 Forms.
+* Saving logs result in high CPU utilization that requires a server restart (NPR-37868).
 
-* Submit actions, Send Email and Invoke an AEM Workflow stop working after installing the Forms 6.5.11.0 add-on package.
-* CreatePDF operation stops converting Microsoft Word documents to PDF documents after installing the Forms 6.5.11.0 add-on package.
-* (JEE Only) Critical security vulnerabilities (CVE-2021-44228 and CVE-2021-45046) reported for Apache Log4j2.
-* (JEE only) Assembler DSC in 6.5.11.0 patch contains incorrect metainfo like specification version and impl version.
+* `Gemfire.log` does not get created in the `temp\adobejb_server1\Caching` folder after installing AEM Forms-6.5.0-0038 (CQ-4340237).
 
--->
+* The following error displays after executing the `ConfigurationManager.sh` command (CQ-4338323):
 
+  ```TXT
+    [root@localhost bin]# ./ConfigurationManager.sh 
+    bash: ./ConfigurationManagerCLI.sh: /bin/sh^M: bad interpreter: No such file or directory
+  ```
+
+* AEM 6.5 Forms on RHEL8 does not support JBOSS EAP 7.3 and MySQL8 (CQ-4331770).
+
+**Workflow**
+
+* Issues while storing UTF-8 special characters as part of a workflow on AEM 6.5.10.0 Forms publish instance (NPR-37673).
+
+* Issue while creating variable of ArrayList type and JSON subtype (NPR-37600).
+
+* Issues with XPath/Dot Notation browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582).
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -254,8 +253,6 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-<!-- 
-
 ### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -265,10 +262,6 @@ To know the platforms certified to work with this release, see the [technical re
 1. Ensure that you have installed the Adobe Experience Manager Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-
->[!NOTE]
->
->Experience Manager 6.5.10.0 includes a new version of [AEM Forms Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#aem-65-forms-releases). If you are using an older version of AEM Forms Compatibility Package and updating to Experience Manager 6.5.10.0, install the latest version of the package post installation of Forms Add-On Package.
 
 ### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
@@ -281,8 +274,6 @@ For information about installing the cumulative installer for Experience Manager
 >[!NOTE]
 >
 >After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
-
--->
 
 ### UberJar {#uber-jar}
 
@@ -316,7 +307,11 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 ## Known issues {#known-issues}
 
-* When you install AEM 6.5 Service Pack 11 and try to download the status ZIP file, Experience Manager downloads a corrupt file. Download and install [AEM Sites SEO Index Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/sites-seo-index-content-1.0.0.zip) on your AEM instance before downloading the ZIP file to resolve the issue.
+* If you are using Content Fragments and GraphQL then it is recommended that you install the following packages on top of 6.5.12.0:
+
+  * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this replaces SP12, but can be installed on top of SP12)
+  
+  * [AEM Content Fragment with GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
 * As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
@@ -338,7 +333,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
 
-* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work. 
+* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work.
   To ensure correct operation, you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
 
    ```xml

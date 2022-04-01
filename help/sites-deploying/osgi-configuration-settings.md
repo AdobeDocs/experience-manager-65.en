@@ -384,6 +384,10 @@ Various configuration properties are available:
 
 * **List of rewrite configurations** to specify a list of locations for content-based linkchecker configurations. The configurations can be based on run mode; this is important to distinguish between author and publish environments, as linkchecker settings may differ.
 
+**Day CQ WCM Page Manager Factory** Configure:
+
+* **Page Subtree Activation Check** for a user (without replication permissions) to delete or move pages (even if the pages are not activated).
+
 **Day CQ WCM Page Processor** Configure:
 
 * **Paths**, a list of locations where the system listens for page modifications before triggering a `jcr:Event`.

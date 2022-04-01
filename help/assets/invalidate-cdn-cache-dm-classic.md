@@ -21,7 +21,7 @@ Dynamic Media assets are cached by the CDN (Content Delivery Network) for fast d
 >
 >The following steps apply only to Dynamic Media in Adobe Experience Manager 6.5, Service Pack 5 (Experience Manager 6.5.5) or earlier.<br>If you use Dynamic Media in Experience Manager 6.5, Service Pack 6 (Experience Manager 6.5.6) or later, follow the steps found in [Invalidate the CDN cache by way of Dynamic Media](/help/assets/invalidate-cdn-cache-dynamic-media.md).
 
-See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html).
+<!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
 **To invalidate the CDN cache by way of Dynamic Media Classic:**
 

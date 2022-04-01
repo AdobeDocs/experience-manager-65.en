@@ -1,10 +1,11 @@
 ---
-title: Integration with Adobe Analytics using Adobe I/O
-description: Learn about integrating AEM with Adobe Analytics using Adobe I/O
+title: Integration with Adobe Analytics using IMS
+description: Learn about integrating AEM with Adobe Analytics using IMS
+exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
 ---
-# Integration with Adobe Analytics using Adobe I/O {#integration-with-adobe-analytics-using-adobe-i-o}
+# Integration with Adobe Analytics using IMS {#integration-with-adobe-analytics-using-ims}
 
-The integration of AEM with Adobe Analytics via the Analytics Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.
+The integration of AEM with Adobe Analytics via the Analytics Standard API requires the configuration of Adobe IMS (Identity Management System) using the Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -23,13 +24,13 @@ Before starting this procedure:
 * [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for:
 
   * Adobe Console
-  * Adobe I/O
+  * Adobe Developer Console
   * Adobe Analytics and 
   * Adobe IMS (Identity Management System)
 
 * Your organization's System Admininstrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
 
-  * This provides the specific developers with permissions to enable integrations within Adobe I/O. 
+  * This provides the specific developers with permissions to enable integrations within the Adobe Developer Console. 
   * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -46,7 +47,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
    ![](assets/integrate-analytics-io-01.png)
 
-1. Select **Download** (or **Download Public Key**) to download the file to your local drive, so that it is ready for use when [configuring Adobe I/O for Adobe Analytics integration with AEM](#configuring-adobe-i-o-for-adobe-analytics-integration-with-aem).
+1. Select **Download** (or **Download Public Key**) to download the file to your local drive, so that it is ready for use when [configuring IMS for Adobe Analytics integration with AEM](#configuring-ims-for-adobe-analytics-integration-with-aem).
 
    >[!CAUTION]
    >
@@ -54,23 +55,17 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
    ![](assets/integrate-analytics-io-02.png)
 
-## Configuring Adobe I/O for Adobe Analytics integration with AEM {#configuring-adobe-i-o-for-adobe-analytics-integration-with-aem}
+## Configuring IMS for Adobe Analytics integration with AEM {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
-You need to create the Adobe I/O Project (integration) with Adobe Analytics that AEM will use, then assign the required privileges.
+Using the Adobe Developer Console you need to create a Project (integration) with Adobe Analytics (for AEM to use), then assign the required privileges.
 
 ### Creating the Project {#creating-the-project}
 
-Open the Adobe I/O console to create an I/O Project with Adobe Analytics that AEM will use:
+Open the Adobe Developer Console to create a Project with Adobe Analytics that AEM will use:
 
-<!--
->[!NOTE]
->
->See also the [Adobe I/O tutorials](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
---> 
+1. Open the Adobe Developer Console for Projects:
 
-1. Open the Adobe I/O console for Projects:
-
-   [https://console.adobe.io/projects](https://console.adobe.io/projects)
+   [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. Any projects that you have will be shown. Select **Create New Project** - the location and usage will depend on:
 
@@ -123,11 +118,11 @@ You must now assign the required privileges to the integration:
 1. Select **API Credentials**, then the required integration configuration.
 1. Select **Editor** as the **Product Role**; instead of **Observer**.
 
-## Details stored for the Adobe I/O Integration Project {#details-stored-for-the-adobe-io-integration-project}
+## Details stored for the Adobe Developer Console Integration Project {#details-stored-for-the-ims-integration-project}
 
-From the Adobe I/O Projects console you can see a list of all your integration projects:
+From the Adobe Developer Projects console you can see a list of all your integration projects:
 
-* [https://console.adobe.io/projects](https://console.adobe.io/projects)
+* [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 Select a specific project entry to show further details about the configuration. These include:
 
@@ -140,22 +135,22 @@ Select a specific project entry to show further details about the configuration.
 * APIS
   * For example, Adobe Analytics
 
-Some of these you will need to complete the Adobe I/O integration for Adobe Analytics in AEM.
+Some of these you will need to complete the integration for Adobe Analytics in AEM.
 
 ## Completing the IMS Configuration in AEM {#completing-the-ims-configuration-in-aem}
 
-Returning to AEM you can complete the IMS configuration by adding required values from the Adobe I/O integration for Analytics:
+Returning to AEM you can complete the IMS configuration by adding required values from the integration project for Analytics:
 
 1. Return to the [IMS Configuration open in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Select **Next**.
 
-1. Here you can use the [details from the project configuration in Adobe I/O](#details-stored-for-the-adobe-io-integration-project):
+1. Here you can use the [Details stored for the Adobe Developer Console Integration Project](#details-stored-for-the-ims-integration-project):
 
     * **Title**: Your text.
     * **Authorization Server**: Copy/paste this from the `aud` line of the **Payload** section below, e.g. `https://ims-na1.adobelogin.com` in the example below
-    * **API Key**: Copy this from the **Credentials** section of the [Project overview](#details-stored-for-the-adobe-io-integration-project) 
-    * **Client Secret**: Generate this in the [Client Secret tab of the Service Account (JWT) section](#details-stored-for-the-adobe-io-integration-project), and copy
-    * **Payload**: Copy this from the [Generate JWT tab of the Service Account (JWT) section](#details-stored-for-the-adobe-io-integration-project) 
+    * **API Key**: Copy this from the **Credentials** section of the [Project overview](#details-stored-for-the-ims-integration-project) 
+    * **Client Secret**: Generate this in the [Client Secret tab of the Service Account (JWT) section](#details-stored-for-the-ims-integration-project), and copy
+    * **Payload**: Copy this from the [Generate JWT tab of the Service Account (JWT) section](#details-stored-for-the-ims-integration-project) 
 
     ![AEM IMS COnfiguration details](assets/integrate-analytics-io-10.png)
 
@@ -215,4 +210,4 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics.

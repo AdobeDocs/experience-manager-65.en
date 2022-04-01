@@ -1,20 +1,11 @@
 ---
-title: Integration with Adobe Target using Adobe I/O
-seo-title: Integration with Adobe Target using Adobe I/O
-description: Learn about integrating AEM with Adobe Target using Adobe I/O
-seo-description: Learn about integrating AEM with Adobe Target using Adobe I/O
-uuid: dd4ed638-e182-4d7e-9c98-282431812467
-contentOwner: aheimoz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: integration
-discoiquuid: 3b9285db-8fba-4d12-8f52-41daa50a5403
-docset: aem65
+title: Integration with Adobe Target using IMS
+description: Learn about integrating AEM with Adobe Target using IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 ---
-# Integration with Adobe Target using Adobe I/O{#integration-with-adobe-target-using-adobe-i-o}
+# Integration with Adobe Target using IMS{#integration-with-adobe-target-using-ims}
 
-The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) and Adobe I/O.
+The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) using the Adobe Developer Console.
 
 >[!NOTE]
 >
@@ -32,13 +23,13 @@ Before starting this procedure:
 * [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for:
 
   * Adobe Console
-  * Adobe I/O
+  * Adobe Developer Console
   * Adobe Target and 
   * Adobe IMS (Identity Management System)
 
 * Your organization's System Admininstrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
 
-  * This provides the specific developers with permissions to enable integrations within Adobe I/O. 
+  * This provides the specific developers with permissions to enable integrations within the Adobe Developer Console. 
   * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -55,7 +46,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
    ![](assets/integrate-target-io-01.png)
 
-1. Select **Download** (or **Download Public Key**) to download the file to your local drive, so that it is ready for use when [configuring Adobe I/O for Adobe Target integration with AEM](#configuring-adobe-i-o-for-adobe-target-integration-with-aem).
+1. Select **Download** (or **Download Public Key**) to download the file to your local drive, so that it is ready for use when [configuring IMS for Adobe Target integration with AEM](#configuring-ims-for-adobe-target-integration-with-aem).
 
    >[!CAUTION]
    >
@@ -63,21 +54,17 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
    ![](assets/integrate-target-io-02.png)
 
-## Configuring Adobe I/O for Adobe Target integration with AEM {#configuring-adobe-i-o-for-adobe-target-integration-with-aem}
+## Configuring IMS for Adobe Target integration with AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
-You need to create the Adobe I/O Project (integration) with Adobe Target that AEM will use, then assign the required privileges.
+Using the Adobe Developer Console you need to create a Project (integration) with Adobe Target that AEM will use, then assign the required privileges.
 
 ### Creating the Project {#creating-the-project}
 
-Open the Adobe I/O console to create an I/O Project with Adobe Target that AEM will use:
+Open the Adobe Developer Console to create a Project with Adobe Target that AEM will use:
 
->[!NOTE]
->
->See also the [Adobe I/O tutorials](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html).
+1. Open the Adobe Developer Console for Projects:
 
-1. Open the Adobe I/O console for Projects:
-
-   [https://console.adobe.io/projects](https://console.adobe.io/projects)
+   [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 1. Any projects that you have will be shown. Select **Create New Project** - the location and usage will depend on:
 
@@ -139,11 +126,11 @@ You must now assign the required privileges to the integration:
 1. Select **API Credentials**, then the required integration configuration.
 1. Select **Editor** as the **Product Role**; instead of **Observer**.
 
-## Details stored for the Adobe I/O Integration Project {#details-stored-for-the-adobe-io-integration-project}
+## Details stored for the Adobe Developer Console Integration Project {#details-stored-for-the-ims-integration-project}
 
-From the Adobe I/O Projects console you can see a list of all your integration projects:
+From the Adobe Developer Console - Projects you can see a list of all your integration projects:
 
-* [https://console.adobe.io/projects](https://console.adobe.io/projects)
+* [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
 Select **View** (to the right of a specific project entry) to show further details about the configuration. These include:
 
@@ -156,22 +143,22 @@ Select **View** (to the right of a specific project entry) to show further detai
 * APIS
   * For example, Adobe Target
 
-Some of these you will need to complete the Adobe I/O integration for Target in AEM.
+Some of these you will need to complete the integration of Adobe Target in AEM based on IMS.
 
 ## Completing the IMS Configuration in AEM {#completing-the-ims-configuration-in-aem}
 
-Returning to AEM you can complete the IMS configuration by adding required values from the Adobe I/O integration for Target:
+Returning to AEM you can complete the IMS configuration by adding required values from the Adobe Developer Console integration for Target:
 
 1. Return to the [IMS Configuration open in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Select **Next**.
 
-1. Here you can use the [details from Adobe I/O](#details-stored-for-the-adobe-io-integration-project):
+1. Here you can use the [details from the project configuration in the Adobe Developer Console](#details-stored-for-the-ims-integration-project):
 
     * **Title**: Your text.
     * **Authorization Server**: Copy/paste this from the `aud` line of the **Payload** section below, e.g. `https://ims-na1.adobelogin.com` in the example below
-    * **API Key**: Copy this from the [Overview](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target
-    * **Client Secret**: Generate this in the [Overview](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target, and copy
-    * **Payload**: Copy this from the [Generate JWT](#details-stored-for-the-adobe-io-integration-project) section of the Adobe I/O integration for Target
+    * **API Key**: Copy this from the [Overview](#details-stored-for-the-ims-integration-project) section 
+    * **Client Secret**: Generate this in the [Overview](#details-stored-for-the-ims-integration-project) section, and copy
+    * **Payload**: Copy this from the [Generate JWT](#details-stored-for-the-ims-integration-project) section 
 
    ![](assets/integrate-target-io-10.png)
 
