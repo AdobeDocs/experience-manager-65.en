@@ -185,7 +185,7 @@ An OData service is identified by its service root URL. To configure an OData se
 
 >[!NOTE]
 >
-> Form data model supports [OData version 4.0](https://www.odata.org/documentation/) and later.
+> Form data model supports [OData version 4](https://www.odata.org/documentation/).
 >For step-by-step guide to configure Microsoft Dynamics 365, online or on-premises, see [Microsoft Dynamics OData Configuration](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tap to select the folder where you want to create a cloud configuration.
