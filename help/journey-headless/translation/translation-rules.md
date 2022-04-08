@@ -1,6 +1,7 @@
 ---
 title: Configure Translation Rules
 description: Learn how to define translation rules to identify content for translation.
+exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 ---
 # Configure Translation Rules {#configure-translation-rules}
 

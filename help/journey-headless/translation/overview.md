@@ -1,6 +1,7 @@
 ---
 title: AEM Headless Translation Journey
 description: Start here for a guided journey through translating your headless content using AEM's powerful translation tools.
+exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
 ---
 # AEM Headless Translation Journey {#aem-headless-translation-journey}
 

@@ -1,6 +1,7 @@
 ---
 title: Get started with AEM headless translation
 description: Get to know how to organize your headless content and how AEM's translation tools work.
+exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 ---
 # Get Started with AEM Headless Translation {#getting-started}
 

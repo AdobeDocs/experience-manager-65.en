@@ -8,8 +8,8 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
+exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
 ---
-
 # Content Services{#content-services}
 
 >[!NOTE]

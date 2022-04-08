@@ -36,9 +36,9 @@ See also [3D formats supported](/help/assets/assets-formats.md).
 | STL |Stereolithography|application/vnd.ms-pki.stl ||
 | USDZ |Universal Scene Description Zip archive|model/vnd.usdz+zip |*Support for ingestion only; no viewing or interaction is available.* USDZ is a proprietary 3D format that can be viewed natively by Safari and iOS devices.|
 
-<!-- >[!NOTE]
+>[!NOTE]
 >
->The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). -->
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x).
 
 ## Quick Start: 3D assets in Dynamic Media {#quick-start-three-d}
 

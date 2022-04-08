@@ -1,6 +1,7 @@
 ---
 title: Publish Translated Content
 description: Learn how to publish your translated content and update the translations as the content updates.
+exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 ---
 # Publish Translated Content {#publish-content}
 

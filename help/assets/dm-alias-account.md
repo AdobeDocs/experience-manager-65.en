@@ -7,10 +7,11 @@ content-type: reference
 feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
-hide: yes
-hidefromtoc: yes
 exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
 ---
+<!-- hide: yes
+hidefromtoc: yes -->
+
 # About configuring a Dynamic Media company alias account {#about-dm-alias-acct}
 
 Dynamic Media URLs and viewer embed code contain your company account name. This account name was created at the time of provisioning Dynamic Media. There may be scenarios where your business has undergone an acquisition, or a rebranding, or you simply want to use a more memorable name. In such scenarios, it is not easy to manually update your company account name in all URLs and viewer embed code that comes out of the box. Furthermore, there is the possibility that you may impact your existing Dynamic Media repository or impact live content. To resolve this issue, you can configure a Dynamic Media company alias account.

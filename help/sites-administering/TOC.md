@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
@@ -111,6 +111,7 @@ role: Admin
     + [Configuring Link Tracking for Adobe Analytics](adobeanalytics-link.md)
     + [Mapping Component Data with Adobe Analytics Properties](adobeanalytics-mapping.md)
     + [Configuring Video Tracking for Adobe Analytics](adobeanalytics-video.md)
+    + [Integration with Adobe Analytics using IMS](integration-analytics-ims.md)
     + [HTTP2 Delivery of Content FAQ](scene7-http2faq.md)
     + [Troubleshooting your Adobe Campaign Integration](troubleshooting-campaignintegration.md)
     + [SharePoint Connector Licenses, Copyright Notices, and Disclaimers](sharepoint-connector-licenses.md)
@@ -136,7 +137,7 @@ role: Admin
     + [Integrating with the Adobe Marketing Cloud](marketing-cloud.md)
     + [Manually Configuring the Integration with Adobe Target](target-configuring.md)
     + [Prerequisites for Integrating with Adobe Target](target-requirements.md)
-    + [Integration with Adobe Target using Adobe I/O](integration-target-ims-adobe-io.md)
+    + [Integration with Adobe Target using IMS](integration-target-ims.md)
     + [Adobe Classifications](adobeanalytics-classifications.md)
     + [Integrating with Adobe Search&Promote](search-and-promote.md)
     + [Solutions Integration](integration.md)
