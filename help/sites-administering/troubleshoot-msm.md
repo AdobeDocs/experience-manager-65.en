@@ -55,7 +55,7 @@ Here are some frequently-asked questions related to MSM and Live Copy.
 
 MSM sync actions are highly configurable. Which properties or components are modified during rollouts directly depends on properties of those configurations.
 
-Please see [this article](best-practices.md) for more information on this topic.
+Please see [this article](msm-best-practices.md) for more information on this topic.
 
 ### How can I remove rollout permissions for a group of authors? {#remove-rollout-permissions}
 
