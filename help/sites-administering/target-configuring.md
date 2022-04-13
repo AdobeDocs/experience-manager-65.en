@@ -92,7 +92,7 @@ To do this, you need to specify which A4T cloud configuration to connect your Ad
 
 ```
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+   ![AdobeTargetSettings](assets/adobe-target-settings.jpg)
 
    Click **OK**. When you target content with Adobe Target, you are able to [select your report source](/help/sites-authoring/content-targeting-touch.md).
 
@@ -136,7 +136,7 @@ Use the following procedure to create a Target cloud configuration in AEM:
 
    The edit dialog opens.
 
-   ![chlimage_1-160](assets/chlimage_1-160.png)
+   ![AdobeTargetSettings](assets/adobe-target-settings.jpg)
 
    >[!NOTE]
    >
