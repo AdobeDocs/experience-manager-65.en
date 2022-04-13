@@ -30,8 +30,7 @@ MSM is a configurable framework for automating content deployment. Implementatio
 >
 >Further information about working with MSM is available in the Knowledge Base articles:
 >
->* [MSM FAQ](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
->* [Troubleshooting MSM issues](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
+>* [Troubleshooting MSM Issues and FAQ](/help/sites-cloud/administering/msm/troubleshooting.md)
 >
 
 >[!NOTE]
@@ -39,7 +38,7 @@ MSM is a configurable framework for automating content deployment. Implementatio
 >You can also use the [Reference component](/help/sites-authoring/default-components-foundation.md#reference) to reuse a single page or paragraph. Keep in mind however:
 >
 >* MSM is more flexible and allows fine-grained control over what content is synchronized and when.
->* [Core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) are now recommended over the foundation components.
+>* [Core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) are now recommended over the foundation components.
 >
 
 ## Live Copy Sources and Blueprint Configurations {#live-copy-sources-and-blueprint-configurations}
@@ -136,7 +135,7 @@ Modifications to the content structure in a blueprint/source tree are reflected 
 
 >[!NOTE]
 >
->This will work only with the [On Rollout trigger](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
+>This will work only with the [On Rollout trigger](/help/sites-administering/msm-sync.md#rollout-triggers).
 
 * Create a custom rollout configuration:
 
