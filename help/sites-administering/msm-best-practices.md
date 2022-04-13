@@ -23,7 +23,7 @@ MSM is a configurable framework for automating content deployment. Implementatio
 >
 >Further information about working with MSM is available in the Knowledge Base articles:
 >
->* [Troubleshooting MSM Issues and FAQ](/help/sites-cloud/administering/msm/troubleshooting.md)
+>* [Troubleshooting MSM Issues and FAQ](troubleshoot-msm.md)
 >
 
 >[!NOTE]
@@ -122,7 +122,7 @@ Modifications to the content structure in a blueprint/source tree are reflected 
 
 * **Moving** pages in a blueprint will **not** result in corresponding pages being moved in live copies after rollout with standard rollout configuration:
 
-    * The reason for this behavior is that a page move implicitly includes a page delete. This could potentionally lead to unexpected behavior on publish, as deleting pages on author automatically deactivates corresponding content on publish. This can also have a knock-on effect on related items such as links, bookmarks, and others.
+    * The reason for this behavior is that a page move implicitly includes a page delete. This could potentially lead to unexpected behavior on publish, as deleting pages on author automatically deactivates corresponding content on publish. This can also have a knock-on effect on related items such as links, bookmarks, and others.
     * Content inheritance in the respective live copy pages is updated to reflect the new location of their sources in the blueprint.
     * To fully realize a page move from a blueprint to live copies, consider the following best practices:
 
