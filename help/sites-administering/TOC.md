@@ -21,6 +21,7 @@ role: Admin
     + [Configuring Live Copy Synchronization](msm-sync.md)
     + [Creating and Synchronizing Live Copies](msm-livecopy.md)
     + [MSM Rollout Conflicts](msm-rollout-conflicts.md)
+    + [Troubleshooting MSM Issues and FAQ](troubleshoot-msm.md)
     + [MSM Best Practices](msm-best-practices.md)
     + [Translating Content for Multilingual Sites](translation.md)
     + [Managing Translation Projects](tc-manage.md)
