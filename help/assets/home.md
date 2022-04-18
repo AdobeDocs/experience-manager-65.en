@@ -1,6 +1,6 @@
 ---
 title: Assets Guide
-description: This guide covers all Experience Manager Assets tasks, such as how to create, manage, deliver, and optimize digital assets.
+description: Create, manage, process, and distribute digital assets in Experience Manager. These guides describe best practices, accessibility features, and how to use AEM 6.5 assets.
 user-guide-title: Assets Guide
 feature: Asset Management
 role: User, Architect, Admin
@@ -8,7 +8,7 @@ exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
 ---
 # Assets Guide
 
-This guide covers all [!DNL Experience Manager Assets] tasks, such as how to create, manage, deliver, and optimize digital assets.
+Create, manage, process, and distribute digital assets in Experience Manager. These guides describe best practices, accessibility features, and how to use AEM 6.5 assets.
 
 ## Key [!DNL Experience Manager] articles
 

@@ -1,13 +1,13 @@
 ---
 title: AEM 6.5 Authoring User Guide
 seo-title: AEM 6.5 Authoring User Guide
-description: This guide explains the concepts of authoring in AEM.
+description: Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates and other page features.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 ---
 # AEM 6.5 Authoring User Guide
 
-This guide explains the concepts of authoring in AEM. 
+Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates, and other page features. 
 
 ## Key AEM articles
 
