@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: admin-user
 user-guide-title: AEM 6.5 Administering User Guide
 breadcrumb-title: Administering Guide
@@ -21,6 +21,7 @@ role: Admin
     + [Configuring Live Copy Synchronization](msm-sync.md)
     + [Creating and Synchronizing Live Copies](msm-livecopy.md)
     + [MSM Rollout Conflicts](msm-rollout-conflicts.md)
+    + [Troubleshooting MSM Issues and FAQ](troubleshoot-msm.md)
     + [MSM Best Practices](msm-best-practices.md)
     + [Translating Content for Multilingual Sites](translation.md)
     + [Managing Translation Projects](tc-manage.md)

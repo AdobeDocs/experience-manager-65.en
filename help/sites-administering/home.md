@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5 Administering User Guide
-seo-title: AEM 6.5 Administering User Guide
-description: AEM administering
-seo-description: AEM administering
+description: Learn about administering AEM 6.5. These guides cover site features, deployment operations, security features, personalization, integration, and more.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 ---
 # AEM 6.5 Administering User Guide
 
-This guide covers all AEM Administering tasks.
+Learn about administering AEM 6.5. These guides cover site features, deployment operations, security features, personalization, integration, and more.
 
 ## Key articles
 
