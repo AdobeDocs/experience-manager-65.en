@@ -651,8 +651,8 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 * Ensure a PDF Generator user is added in PDF configuration UI.
 * Ensure that System readiness tool does not report any error.
 * Ensure the PDF Generator user is a member of administrators group and **replace process level token** privilege is set for the user.
-* Ensure that the \Windows\SysWOW64\config\systemprofile\Deskop folder exists. If the folder does not exist, create it.
-* Grant full control on \Windows\SysWOW64\config\systemprofile, <crx-quickstart-home>\temp, and \Windows\Temp folders to the PDF Generator user.
+* Ensure that the `\Windows\SysWOW64\config\systemprofile\Deskop` folder exists. If the folder does not exist, create it.
+* Grant full control on `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`, and `\Windows\Temp` folders to the PDF Generator user.
 * Ensure that the user is configured in PDF Generator UI. Also:
    1. Log in to the Microsoft® Windows with PDF Generator user.
    1. Open Microsoft® Office or Open Office applications and cancel all dialogues.
@@ -678,7 +678,7 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 +++Linux® and Solaris™(WebKit conversion)
 
-* Ensure that the directories /usr/lib/X11/fonts and /usr/share/fonts exist. If the directories do not exist, create a symbolic link from /usr/share/X11/fonts to /usr/lib/X11/fonts and another symbolic link from /usr/share/fonts to /usr/share/X11/fonts.
+* Ensure that the directories `/usr/lib/X11/fonts` and `/usr/share/fonts` exist. If the directories do not exist, create a symbolic link from `/usr/share/X11/fonts` to `/usr/lib/X11/fonts` and another symbolic link from `/usr/share/fonts` to `/usr/share/X11/fonts`.
 
    ```
 
