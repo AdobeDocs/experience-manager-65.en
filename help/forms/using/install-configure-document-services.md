@@ -671,13 +671,25 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 +++
 
-+++HTMLtoPDF
++++HTML to PDF conversion issues
 
 * Ensure that fonts directories are added in PDF Generator config UI.
 
-+++
+**Linux and Solaris (PhantomJS conversion route)**
 
-+++Linux® and Solaris™(WebKit conversion)
+* Ensure that 32-bit library is available (libicudata.so.42) for Webkit based HTMLToPDF conversion and 64-bit (libicudata.so.42 libs are available for PhantomJS based HTMLToPDF conversion.
+
+* Run the following command to list missing libraries for phantomjs:
+
+   ```
+
+   ldd phantomjs | grep not
+
+   ```
+
+* Ensure that JAVA_HOME_32 environment variable points to corect location.
+
+**Linux® and Solaris™ (WebKit conversion route)**
 
 * Ensure that the directories `/usr/lib/X11/fonts` and `/usr/share/fonts` exist. If the directories do not exist, create a symbolic link from `/usr/share/X11/fonts` to `/usr/lib/X11/fonts` and another symbolic link from `/usr/share/fonts` to `/usr/share/X11/fonts`.
 
@@ -723,29 +735,13 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 +++
 
-+++Linux® and Solaris(PhantomJS)HTMLtoPDF
-
-* Ensure that 32-bit library is available (libicudata.so.42) for Webkit based HTMLToPDF conversion and 64-bit (libicudata.so.42 libs are available for PhantomJS based HTMLToPDF conversion.
-
-* Run the following command to list missing libraries for phantomjs:
-
-```
-
-ldd phantomjs | grep not
-
-```
-
-* Ensure that JAVA_HOME_32 environment variable points to corect location.
-
-+++
-
 +++ Unable to add a PDF Generator (PDFG) user
 
 * Ensure Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86, and Microsoft® Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
 +++
 
-+++Automation tests fail
++++Automation test failures
 
 * For Microsoft® Office and OpenOffice, perform at least one conversion manually (as each user) to ensure that no dialogue pops up during conversion. If any dialogue appears, dismissed it. No such dialogue should appear during automated conversion.
 
@@ -753,7 +749,7 @@ ldd phantomjs | grep not
 
 +++
 
-+++Multi-User conversions fail
++++Multiple user conversion failures
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
