@@ -131,7 +131,7 @@ The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive
 
 Before using the **Invoke an AEM Workflow** submit action, [configure the Experience Manager DS settings](../../forms/using/configuring-the-processing-server-url-.md). For information about creating an AEM Workflow, see [Form-centric workflows on OSGi](../../forms/using/aem-forms-workflow.md).
 
-The Submit Action places the following at the payload location of the workflow, or the variable if the workflow is marked for external data storage:
+The Submit Action places the following at the payload location of the workflow. Or the variable option is displayed if the workflow model is marked for external data storage; then payload option is not visible.
 
 * **Data file**: It contains data submitted to the Adaptive Form. You can use the **[!UICONTROL Data File Path]** option to specify the name of the file and path of file relative to the payload. For example, the `/addresschange/data.xml` path creates a folder named `addresschange` and places it relative to payload. You can also specify only `data.xml` to send only submitted data without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
 
