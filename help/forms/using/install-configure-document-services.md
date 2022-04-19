@@ -589,32 +589,32 @@ The System Readiness tool checks if the machine is configured properly to run PD
 
 1. Create a configuration file for System Readiness tool. For example, srt_config.yaml. The format of the file is:
 
-```
+   ```
 
-   # =================================================================
-   # SRT Configuration
-   # =================================================================
-   #Note - follow correct format to avoid parsing failures
-   #e.g. <param name>:<space><param value> 
-   #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-   locale: en
+      # =================================================================
+      # SRT Configuration
+      # =================================================================
+      #Note - follow correct format to avoid parsing failures
+      #e.g. <param name>:<space><param value> 
+      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+      locale: en
 
-   #aemTempDir: AEM Temp direcotry
-   aemTempDir:
+      #aemTempDir: AEM Temp direcotry
+      aemTempDir:
 
-   #users: provide PDFG converting users list
-   #users:
-   # - user1
-   # - user2
-   users:
+      #users: provide PDFG converting users list
+      #users:
+      # - user1
+      # - user2
+      users:
 
-   #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-   profile:
+      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+      profile:
 
-   #outputDir: directory where output files will be saved
-   outputDir:
+      #outputDir: directory where output files will be saved
+      outputDir:
 
-```
+   ```
 
 1. Open command prompt. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` folder. Run the following command from the command prompt:
 
@@ -632,14 +632,14 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 +++ Adobe Acrobat
 
-* Ensure only supported version of Microsoft® Office (32-bit) and Adobe Acrobat is installed and opening dialogs are cancelled.
-* Ensure that Adobe Acrobat service is disabled.
-* Ensure that Pdfgconfig batch was run with administrator privileges.
+* Ensure only [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft® Office (32-bit) and Adobe Acrobat is installed and opening dialogs are cancelled.
+* Ensure that Adobe Acrobat Update Service is disabled.
+* Ensure that the [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) batch file was run with administrator privileges.
 * Ensure a PDF Generator user is added in PDF configuration UI.
-* Ensure the Rights Management > Replace process level token permission is added for the PDF Generator user.
+* Ensure that the [Replace a  process level token](#grant-the-replace-a-process-level-token-privilege) permission is added for the PDF Generator user.
 * (For app server-based installations) Ensure that application server is running as service.
-* Ensure that the users have read and write permissions on PDF Generator's temp and temp directory.
-* Ensure the PDF generator configuration add-in (pdfgconfig) is visible in Microsoft® Office applications. If pdfgconfig add-in is not visible in office application. Then run Adobe Acrobat repair, run the pdfgconfig.bat file, and restart the AEM Forms Server.
+* Ensure that the users have read and write permissions on PDF Generator's temp and operating systems temp directory. For example, `<crx-quickstart-home>\temp` and `C:\Windows\Temp`
+* Ensure the Acrobat PDFMaker Office COM Addin is enabled for Microsoft Office applications. If the add-in is not enabled, run Adobe Acrobat repair, run the [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) file, and restart the AEM Forms Server.
 
 +++
 
@@ -647,26 +647,27 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 **Microsoft® Windows**
 
-* Ensure that supported version of Open Office is installed and opening dialogs are cancelled for all applications.
+* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed and opening dialogs are cancelled for all applications.
 * Ensure a PDF Generator user is added in PDF configuration UI.
-* Ensure that System readiness tool does not report any error.
-* Ensure the PDF Generator user is a member of administrators group and **replace process level token** privilege is set for the user.
+* Ensure that [System Readiness Tool](#SRT) does not report any error.
+* Ensure the PDF Generator user is a member of administrators group and the [Replace a process level token](#grant-the-replace-a-process-level-token-privilege) privilege is set for the user.
 * Ensure that the `\Windows\SysWOW64\config\systemprofile\Deskop` folder exists. If the folder does not exist, create it.
 * Grant full control on `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`, and `\Windows\Temp` folders to the PDF Generator user.
-* Ensure that the user is configured in PDF Generator UI. Also:
+* Ensure that the user is configured in PDF Generator UI and perform the following actions:
    1. Log in to the Microsoft® Windows with PDF Generator user.
-   1. Open Microsoft® Office or Open Office applications and cancel all dialogues.
+   1. Open Microsoft® Office or Open Office applications and cancel all dialogs.
    1. Set AdobePDF as default printer.
    1. Set Acrobat as default program for PDF files.
-   1. Perform manual conversion using PDFMaker ribbon items and File > Print options and cancel all dialogues.
-   1. Restart the AEM Forms Server. Also, kill all the processes related to conversion such as winword.exe, powerpoint.exe, and excel.exe.
+   1. Perform manual conversion using options  File > Print and Acrobat ribbon in Microsoft Office applications and cancel all dialogs.
+   1. End all the processes related to conversion such as winword.exe, powerpoint.exe, and excel.exe.
+   1. Restart the AEM Forms Server.
 
 **Linux®**
 
-* Ensure that supported version of Open Office is installed, opening dialogs are cancelled for all applications, and office applications launch successfully.
-* Path of OpenOffice is set in the console or the dt (Device Tree) profile.  
+* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed, opening dialogs are cancelled for all applications, and office applications launch successfully.
+* Create an environment variable `OpenOffice_PATH` and set it to point it to OpenOffice installtion is set in the [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) or the dt (Device Tree) profile.  
 * Use 32-bit Java™ to start AEM Forms Server.
-* If there are issues in installing OpenOffice, ensure that 32-bit libs required for OpenOffice installation are available.
+* If there are issues in installing OpenOffice, ensure that [32-bit libraries](#extrarequirements) required for OpenOffice installation are available.
 
 +++
 
@@ -689,42 +690,42 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
    ```
 
 * Ensure that IBM fonts are copied under usr/share/fonts.
-* Ensure that ghost vulnerability fix glibc is available on the machine.
-* Ensure that the latest versions of 32-bit lib curl, libcrypto, and libssl libraries are installed on the system. Also create symlinks /usr/lib/libcurl.so (or libcurl.a for AIX®), /usr/lib/libcrypto.so (or libcrypto.a for AIX®) and /usr/lib/libssl.so (or libssl.a for AIX®) pointing to the latest versions (32-bit) of respective libraries.
+* Ensure that ghost vulnerability fix glibc is available on the machine. Use your default package manager to update to the latest version of glibc. It includes ghost vulnerability fix.
+* Ensure that the latest versions of 32-bit lib curl, libcrypto, and libssl libraries are installed on the system. Also create symlinks `/usr/lib/libcurl.so` (or libcurl.a for AIX®), `/usr/lib/libcrypto.so` (or libcrypto.a for AIX®) and `/usr/lib/libssl.so` (or libssl.a for AIX®) pointing to the latest versions (32-bit) of respective libraries.
 
 * Perform the following steps for IBM® SSL Socket provider:
-   1  Copy the java.security file from <WAS_Installed_JAVA>\jre\lib\security to any location on your AEM Forms Server. The default location is Default Location is = <WAS_Installed>\Appserver\java_1.7_64\jre\lib\security.
+   1. Copy the java.security file from `<WAS_Installed_JAVA>\jre\lib\security` to any location on your AEM Forms Server. The default location is Default Location is = `<WAS_Installed>\Appserver\java_1.7_64\jre\lib\security`.
 
-   1 Edit the java.security file at the copied location and change the default SSL Socket factories with JSSE2 factories (Use JSSE2 factories instead of WebSphere®).
+   1. Edit the java.security file at the copied location and change the default SSL Socket factories with JSSE2 factories (Use JSSE2 factories instead of WebSphere®).
 
-   Change the following default JSSE socket factories:
+      Change the following default JSSE socket factories:
 
-   ```
-   
-   #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-   #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-   WebSphere socket factories (in cryptosf.jar)
-   ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-   ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-   
-   ```
+      ```
+      
+      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+      WebSphere socket factories (in cryptosf.jar)
+      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+      
+      ```
 
-   with
+      with
 
-   ```
-   ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-   ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-   WebSphere socket factories (in cryptosf.jar)
-   #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-   #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+      ```
+      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+      WebSphere socket factories (in cryptosf.jar)
+      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
 
-   ```
+      ```
 
 +++
 
 +++Linux® and Solaris(PhantomJS)HTMLtoPDF
 
-* Ensure that 32-bit libs are available (libicudata.so.42) for Webkit based HTMLToPDF conversion and 64-bit libicudata.so.42 libs are available for PhantomJS based HTMLToPDF conversion.
+* Ensure that 32-bit library is available (libicudata.so.42) for Webkit based HTMLToPDF conversion and 64-bit (libicudata.so.42 libs are available for PhantomJS based HTMLToPDF conversion.
 
 * Run the following command to list missing libraries for phantomjs:
 
@@ -734,21 +735,17 @@ ldd phantomjs | grep not
 
 ```
 
-+++
-
-+++Linux® and Solaris(PhantomJS)HTMLtoPDF
-
-* Ensure JAVA_HOME_32 is set correctly.
+* Ensure that JAVA_HOME_32 environment variable points to corect location.
 
 +++
 
-+++ Unable to add PDF Generator(PDFG) user
++++ Unable to add a PDF Generator (PDFG) user
 
 * Ensure Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86, and Microsoft® Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
 +++
 
-+++Automation test failures
++++Automation tests fail
 
 * For Microsoft® Office and OpenOffice, perform at least one conversion manually (as each user) to ensure that no dialogue pops up during conversion. If any dialogue appears, dismissed it. No such dialogue should appear during automated conversion.
 
@@ -756,7 +753,7 @@ ldd phantomjs | grep not
 
 +++
 
-+++Multi-User PDFG Conversion
++++Multi-User conversions fail
 
 * Verify the server logs to check if the conversion is failing for a particular user.(Process Explorer can help you check running process for different users)
 
