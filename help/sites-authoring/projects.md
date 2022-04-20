@@ -71,6 +71,7 @@ You can use the filter to toggle between all projects and only those that are ac
 Select a project by hovering the mouse over the project tile and clicking the checkmark.
 
 View the detail of a project by clicking on it to drill down into its detail.
+
 ### Creating New Projects {#creating}
 
 Click **Create** to add a new project.
