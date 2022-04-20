@@ -196,7 +196,7 @@ If you customize the [!UICONTROL DAM Update Asset] workflow to generate renditio
 </policymap>
 ```
 
-In addition, set the path of ImageMagick's temporary folder in the `configure.xml` file (or by setting the environment variable `MAGIC_TEMPORARY_PATH`) to a disk partition that has sufficient space and IOPS.
+In addition, set the path of ImageMagick's temporary folder in the `configure.xml` file (or by setting the environment variable `MAGICK_TEMPORARY_PATH`) to a disk partition that has sufficient space and IOPS.
 
 >[!CAUTION]
 >
