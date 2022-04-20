@@ -196,7 +196,7 @@ If you are going use the PDF Generator service to convert native file formats su
 >* Adobe Acrobat, Microsoft® Word, Excel, and Powerpoint are available only for Microsoft® Windows. If you are using the UNIX-based operating system, install OpenOffice to convert rich text files and supported Microsoft® Office files to PDF documents.
 >* Dismiss all the dialog boxes that are displayed after installing Adobe Acrobat and third-party software for all the users configured to use the PDF Generator service.
 >* Start all the installed software at least once. Dismiss all the dialog boxes for all the users configured to use the PDF Generator service.
->
+>* [Check expiration date of your Adobe Acrobat serial numbers](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) and set a date to update license or [migrate your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) based on the expiry date.  
 
 After installing Acrobat, open Microsoft® Word. On the **Acrobat** tab, click **Create PDF** and convert a .doc or .docx file available on your machine to a PDF Document. If the conversion is successful, AEM Forms is ready to use Acrobat with PDF Generator service.
 
