@@ -11,6 +11,7 @@ discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 ---
+
 # Projects{#projects}
 
 Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
@@ -92,7 +93,7 @@ You can have the following tiles associated with your project.
 * [Launches](#launches)
 * [Tasks](#tasks)
 
-Click on the drop-down menu in the top-right of any tile to manage the tile's attributes including adding more data to the tile.
+Click on the drop-down menu in the top-right of any tile to add more data to the tile.
 
 Click on the ellipses button at the bottom-right of any tile to open the tile's data in its associated console.
 
@@ -225,7 +226,7 @@ When you create the project and add users to the various roles, groups associate
 
 For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**.
 
-If the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
+If the project is deleted, those groups are only deleted if you select the appropriate option [when deleting the project.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) An administrator can also manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
 
 ## Additional Resources {#additional-resources}
 

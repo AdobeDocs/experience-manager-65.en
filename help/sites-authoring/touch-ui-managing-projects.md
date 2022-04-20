@@ -11,98 +11,70 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 ---
+
 # Managing Projects{#managing-projects}
 
-Projects lets you organize your project by grouping resources into one entity.
+In the **Projects** console, you access and manage your projects.
 
-In the **Projects** console, you access and take action on your projects:
+![The Projects console](assets/projects-console.png)
 
-![chlimage_1-255](assets/chlimage_1-255.png)
+Using the console, you can create a project, associate resources with your project, and also delete a project or resource links. 
 
-In Projects, you can create a project, associate resources with your project, and also delete a project or Resource links. You may want to open a tile to view its content as well as add items to a tile. This topic describes those procedures.
+## Access Requirements {#access-requirements}
 
->[!NOTE]
->
->6.2 introduced the ability to organize Projects into folders. On the Projects page, you have the ability to create a project or a folder.
->
->If a folder is created, the user is then taken to that folder where they can create another folder or a project. It helps to organize projects into folders based on categories like product campaigns, location, translation languages, and so on.
->
->The projects and folders can be viewed in a list view and also searched.
+Projects a standard AEM feature and don't require any additional setup.
 
->[!CAUTION]
->
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and **/home/groups**.
+However for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
+
+The easiest way to do this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
 
 ## Creating a Project {#creating-a-project}
 
-Out of the box, AEM provides these templates to choose from when you create a project:
+Follow these steps to create a new project.
 
-* Simple Project
-* Media Project
-* Product Photo Shoot Project
-* Translation Project
+1. In the **Projects** console, tap or click **Create** to open the **Create Project** wizard.
+1. Select a template and click **Next**. You can learn more about the standard project templates [here.](/help/sites-authoring/projects.md#project-templates)
 
-The procedure of creating a project is the same from project to project. The difference between the types of projects includes available [user roles](/help/sites-authoring/projects.md) and [workflows](/help/sites-authoring/projects-with-workflows.md).  To create a new project:
+   ![Create Project wizard](assets/create-project-wizard.png)
 
-1. In **Projects**, tap/click **Create** to open the **Create Project** wizard:
-1. Select a template. Out of the box, Simple Project, Media Project, [Translation Project](/help/sites-administering/tc-manage.md), and [Product Photo Shoot Product](/help/sites-authoring/managing-product-information.md) are available and click **Next**.
+1. Define the **Title** and **Description** and add a **Thumbnail** image if required. You also add or delete users and what group they belong to.
 
-   ![chlimage_1-256](assets/chlimage_1-256.png)
-
-1. Define the **Title** and **Description** and add a **Thumbnail** image if required. You also add or delete users and what group they belong to. In addition, click **Advanced** to add a name used in the URL.
-
-   ![chlimage_1-257](assets/chlimage_1-257.png)
+   ![Properties step of wizard](assets/create-project-wizard-properties.png)
 
 1. Tap/click **Create**. The confirmation asks whether you want to open your new project or to return to the console.
 
-### Associating Resources with your Project {#associating-resources-with-your-project}
+The procedure for creating a project is the same for all project templates. The difference between the types of projects relates to available [user roles](/help/sites-authoring/projects.md) and [workflows.](/help/sites-authoring/projects-with-workflows.md)
 
-As projects enable you to group resources into one entity, you want to associate resources to your project. These resources are called **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-authoring/projects.md#project-tiles).
+### Associating Resources with Your Project {#associating-resources-with-your-project}
+
+Projects enable you to group resources into one entity in order to manage them as a whole. Therefore you need to associate resources to your project. These resources are grouped within the project as **Tiles**. The types of resources you can add are described in [Project Tiles](/help/sites-authoring/projects.md#project-tiles).
 
 To associate resources with your project:
 
 1. Open your project from the **Projects** console.
 1. Tap/click **Add Tile** and select the tile that you want to link to your project. You can select multiple types of tiles.
 
-   ![chlimage_1-258](assets/chlimage_1-258.png)
-
-   >[!NOTE]
-   >
-   >Project tiles that can be associated with a project are described in detail in [Project tiles.](/help/sites-authoring/projects.md#project-tiles)
+   ![Add tile](assets/project-add-tile.png)
 
 1. Tap/click **Create**. Your resource is linked to your project and from now on you can access it from your project.
-
-### Deleting a Project or Resource Link {#deleting-a-project-or-resource-link}
-
-The same method is used to delete a project from the console or a linked resource from your project:
-
-1. Navigate to the appropriate location:
-
-    * To delete a project go to the top level of the **Projects** console.
-    * To delete a resource link within a project, open your project in the **Projects** console.
-
-1. Enter selection mode by clicking **Select** and selecting your project or resource link.
-1. Tap/click **Delete**.
-
-1. You need to confirm the deletion in a dialog. If confirmed, the project or resource link is deleted. Tap/click **Deselect** to exit selection mode.
-
->[!NOTE]
->
->When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
 
 ### Adding Items to a Tile {#adding-items-to-a-tile}
 
 In some tiles, you may want to add more than one item. For example, you may have more than one workflow running at once or more than one experience.
 
-To add items to a Tile:
+To add items to a tile:
 
-1. In **Projects**, navigate to the project and click the Add + icon on the tile you want to add an item to.
+1. In **Projects**, navigate to the project and click the downward chevron icon at the top-right of the tile you want to add an item to and select the appropriate option.
 
-   ![chlimage_1-259](assets/chlimage_1-259.png)
+   * The option depends on the type of tile. For example it may be **Create Task** for the **Tasks** tile or **Start Workflow** for the **Workflows** tile.
 
-1. Add an item to the tile as you would when creating a new tile. Project tiles are described [here](/help/sites-authoring/projects.md#project-tiles). In this example, another workflow was added.
+   ![Tile chevron](assets/project-tile-create-task.png)
 
-   ![chlimage_1-260](assets/chlimage_1-260.png)
+1. Add the item to the tile as you would when creating a new tile. Project tiles are described [here.](/help/sites-authoring/projects.md#project-tiles)
+
+## Viewing Project Information {#viewing-project-info}
+
+The main purpose of projects is to group associated information in one place to make it more accessible and actionable. You have a number of ways to access this information.
 
 ### Opening a Tile {#opening-a-tile}
 
@@ -110,51 +82,78 @@ You may want to see what items are included in a current tile, or modify or dele
 
 To open a tile so that you can view or modify items:
 
-1. In the Projects console, tap/click the ellipses (...)
+1. Tap or click the ellipses icon at the bottom-right of the tile.
 
-   ![chlimage_1-261](assets/chlimage_1-261.png)
+   ![Tasks tile](assets/project-tile-tasks.png)
 
-1. AEM lists the items in that tile. You can enter selection mode to modify or delete the items.
+1. AEM opens the console for the types of items associated with the tile and filters based on the project selected.
 
-   ![chlimage_1-262](assets/chlimage_1-262.png)
-
-## Viewing Project Statistics {#viewing-project-statistics}
-
-To view project statistics, in the **Projects** console, click **Show Statistics View**. The level of completion for each project displays. Click **Show Statistics View** again to go to the **Projects** console.
-
-![chlimage_1-263](assets/chlimage_1-263.png)
+   ![Project tasks](assets/project-tasks.png)
 
 ### Viewing a Project Timeline {#viewing-a-project-timeline}
 
-The project timeline provides information on when assets in the project were last used. To view the project timeline, click/tap **Timeline**, then enter selection mode and select the project. Assets are displayed in the left pane. Click/tap **Timeline** to return to the **Projects** console.
+The project timeline provides information on when assets in the project were last used. To view the project timeline follow these steps.
 
-![chlimage_1-264](assets/chlimage_1-264.png)
+1. In the **Projects** console, click or tap **Timeline** in the rail selector at the top-left of the console.
+   ![Selecting timeline mode](assets/projects-timeline-rail.png)
+2. In the console select the project for which you wish to view its timeline.
+   ![Project timeline view](assets/project-timeline-view.png)
 
-### Viewing Active/Inactive Projects {#viewing-active-inactive-projects}
+Assets are displayed in the rail. Use the rail selector to return to normal view when finished.
 
-To toggle between your active and inactive projects, in the **Projects** console, click **Toggle Active Projects**. If the icon has a checkmark next to it, it is displaying the active projects.
+### Viewing Inactive Projects {#viewing-active-inactive-projects}
 
-![chlimage_1-265](assets/chlimage_1-265.png)
+To toggle between your active and [inactive projects,](#making-projects-inactive-or-active) in the **Projects** console, click the **Toggle Active Projects** icon in the toolbar.
 
-If the icon has an x next to, it is displaying the inactive projects.
+![Toggle active projects icon](assets/projects-toggle-active.png)
 
-![chlimage_1-266](assets/chlimage_1-266.png)
+By default the console shows active projects. Click the **Toggle Active Projects** icon once to switch to viewing inactive projects. Click it again to switch back to active projects.
 
-## Making Projects Inactive or Active {#making-projects-inactive-or-active}
+## Organizing Projects {#organizing-projects}
 
-You may want to make a project inactive if you've completed it but you still want to keep the information on the project.
+There are several options available to help organize your projects to keep the **Projects** console manageable.
 
-To make a project inactive (or active):
+### Project Folders {#project-folders}
 
-1. In the **Projects** console, open your project and then find the **Project information** tile.
+You can create folders in the **Projects** console to group and organize similar projects.
 
-   >[!NOTE]
-   >
-   >You may need to add this tile if it is not already in your project. See [Adding Tiles](#adding-items-to-a-tile).
+1. In the **Projects** console tap or click **Create** and then **Create Folder**.
 
-1. Tap/click **Edit**.
-1. Change the selector from **Active** to **Inactive** (or vice versa).
+   ![Create folder](assets/project-create-folder.png)
 
-   ![chlimage_1-267](assets/chlimage_1-267.png)
+1. Give your folder a title and click **Create**.
 
-1. Tap/click **Done** to save your changes.
+1. The folder is added to the console.
+
+You can now create projects within the folder. You can create multiple folders and also nest folders. 
+
+### Inactivating Projects {#making-projects-inactive-or-active}
+
+You may want to mark a project inactive if it's completed but you still want to keep the information about the project. [Inactive projects do now show](#viewing-active-inactive-projects) by default in the **Projects** console.
+
+To make a project inactive follow these steps.
+
+1. Open the **Project Properties** window of the project.
+   * You can do this from the console by selecting the project or from within the project via the **Project Info** tile.
+1. In the **Project Properties** window, change the **Project Status** slider from **Active** to **Inactive**.
+
+   ![Project status selector in properties window](assets/project-status.png)
+
+1. Tap or click **Save &amp; Close** to save your changes.
+
+### Deleting Projects {#deleting-a-project}
+
+Follow these steps to delete a project.
+
+1. Navigate to the top level of the **Projects** console.
+1. Selecting your project in the console.
+1. Tap or click **Delete** in the toolbar.
+1. AEM can remove/modify associated project data upon project deletion. Select which options you need in the **Delete Project** dialog.
+   * Remove Project Groups and Roles
+   * Delete Project Assets Folder
+   * Terminate Project Workflows
+
+   ![Project delete options](assets/project-delete-options.png)
+1. Tap or click **Delete** to delete the project with the options selected.
+
+To learn more about groups automatically created by projects see [Automatic Group Creation](/help/sites-authoring/projects.md#auto-group-creation) for details.
