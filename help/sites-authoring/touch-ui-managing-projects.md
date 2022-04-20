@@ -12,7 +12,7 @@ discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 ---
 
-# Managing Projects{#managing-projects}
+# Managing Projects {#managing-projects}
 
 In the **Projects** console, you access and manage your projects.
 

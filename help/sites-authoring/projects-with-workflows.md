@@ -12,7 +12,7 @@ discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 ---
 
-# Working with Project Workflows{#working-with-project-workflows}
+# Working with Project Workflows {#working-with-project-workflows}
 
 The project workflows available out of the box include the following:
 

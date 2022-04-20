@@ -12,7 +12,7 @@ discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 ---
 
-# Creative Project and PIM Integration{#creative-project-and-pim-integration}
+# Creative Project and PIM Integration {#creative-project-and-pim-integration}
 
 If you are a marketer or creative professional, you can use Creative Project tools in Adobe Experience Manager (AEM) to manage eCommerce-related product photography and associated creative processes within your organization.
 

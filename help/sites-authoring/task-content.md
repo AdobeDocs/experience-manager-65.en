@@ -12,7 +12,7 @@ discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 ---
 
-# Working with Tasks{#working-with-tasks}
+# Working with Tasks {#working-with-tasks}
 
 Tasks represent items of work to be performed with regard to content. When you are assigned a task, it appears in your Workflow Inbox. Task items can be distinguished from workflow items by the value the **Type** column.
 
