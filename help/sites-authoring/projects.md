@@ -165,99 +165,67 @@ This workflow is described in the document[Create a Landing Page workflow.](/hel
 
 The **Emails** tile helps you manage requests for email. It starts the **Request for Email** workflow.
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![Email tile](assets/project-tile-email.png)
 
 More information is described in the [Request Email workflow.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Workflows {#workflows}
 
-You can assign your project to follow certain workflows. If any workflows are running, their status displays in the **Workflows** tile in Projects.
+You can start workflows for your project. If any workflows are running, their status displays in the **Workflows** tile.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![Workflows tile](assets/project-tile-workflows.png)
 
-You can assign your project to follow certain workflows. Depending on which project you choose you have different workflows available.
+Depending on which project you create there are different workflows available.
 
 These are described in [Working with Project Workflows.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Launches {#launches}
 
-The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-authoring/projects-with-workflows.md)
+The **Launches** tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-authoring/projects-with-workflows.md)
 
-![chlimage_1-86](assets/chlimage_1-86.png)
+![Launches tile](assets/project-tile-launches.png)
 
 ### Tasks {#tasks}
 
 Tasks let you monitor the status of any project-related tasks, including workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+![Tasks tile](assets/project-tile-tasks.png)
 
 ## Project Templates {#project-templates}
 
-AEM ships with three different templates out of the box:
+Templates serve as a basis to start your project. AEM provides these standard project templates.
 
-* A simple project - A reference sample for any projects that do not fit into other categories (a catch-all). It includes three basic roles (Owners, Editors, and Observers) and four workflows (Project Approval, Request Launch, Request Landing Page and Request Email).
-* A media project - A reference sample project for media-related activities. It includes several media related project roles (Photographers, Editors, Copywriters, Designers, Owners and Observers). It also includes two workflows related to media content - Request Copy (for requesting and reviewing text) and Product Photo Shoot (for managing product related photography)
-* [Product Photo Shoot Project](/help/sites-authoring/managing-product-information.md) - A reference sample for managing eCommerce related product photography. It includes roles for Photographers, Editors, Photo Retouchers, Owners, Creative Directors, Social Media Marketers, Marketing Managers, Reviewers and Observers.
-* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.
+* **Media Project** - This is a reference sample project for media-related activities. It includes several media related project roles and also includes workflows related to media content.
+* **[Product Photo Shoot Project](/help/sites-authoring/managing-product-information.md)** - This is a reference sample for managing eCommerce related product photography.
+* **[Translation project](/help/sites-administering/translation.md)** - This is a reference sample for managing translation related activities. It includes basic roles and includes workflows for managing translation.
+* **Simple Project** - This is a reference sample for any projects that do not fit into other categories. It includes three basic roles and four general AEM workflows.
 
-Based on the template you select, you have different options available to you particularly around user roles and workflows.
+Based on the template you select, you have different options available to you within the project such as the user roles and workflows provided.
 
 ## User Roles in a Project {#user-roles-in-a-project}
 
-The different user roles are set in a Project template and are used for two primary reasons:
+The different user roles are defined in the project template and are used for two primary reasons:
 
-1. Permissions. The user roles fall into one of the three categories listed: Observer, Editor, Owner. For example, a Photographer or Copywriter will have the same privileges as an Editor. The permissions determine what a user can do to content in a project.
-1. Workflows. The workflows determine who is assigned tasks in a project. The tasks can be associated with a project role. For example, a task can be assigned to Photographers so all team members that have the Photographer role will get the task.
+1. Permissions: The user roles fall into one of the three categories listed: observer, editor, owner. For example, a photographer or copywriter will have the same privileges as an editor. The permissions determine what a user can do to content in a project.
+1. Workflows: The workflows determine who is assigned tasks in a project. The tasks can be associated with a project role. For example, a task can be assigned to photographers so all team members that have the photographer role will get the task.
 
-All projects support the following default roles to let you administer security and control permissions:
+All projects support the following default roles to let you administer security and control permissions.
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Role</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-   <td><p><strong>Permissions</strong></p> </td>
-   <td><p><strong>Group Membership</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Observer</p> </td>
-   <td><p>A user in this role can view project details, including the project status.</p> </td>
-   <td><p>Read-only permissions on a project</p> </td>
-   <td><p>workflow-users group</p> </td>
-  </tr>
-  <tr>
-   <td><p>Editor</p> </td>
-   <td><p>A user in this role can upload and edit the contents of a project.</p> <p> </p> </td>
-   <td>
-    <ul>
-     <li>Read and Write access on a project, associated metadata, and related assets.</li>
-     <li>Privileges to upload a shot list, photo shoot, and review and approve assets</li>
-     <li>Write permission on /etc/commerce</li>
-     <li>Have modify permision on a specific project</li>
-    </ul> </td>
-   <td><p>workflow-users group</p> </td>
-  </tr>
-  <tr>
-   <td><p>Owner</p> </td>
-   <td><p>A user in this role can initiate a project. An owner can create a project, intiate work in a project and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.</p> </td>
-   <td>
-    <ul>
-     <li>Write permission on /etc/commerce</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>DAM-users group (to be able to create a project)</li>
-     <li>project-administrators group (to be able to create a project and move assets)</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|Role|Description|Permissions|Group Membership|
+|---|---|---|---|
+|Observer|A user in this role can view project details, including the project status.|Read-only permissions on a project|`workflow-users` group|
+|Editor|A user in this role can upload and edit the contents of a project.|Read and write access on a project, associated metadata, and related assets<br>Privileges to upload a shot list, photo shoot, and review and approve assets<br>Write permission on `/etc/commerce`<br>Modify permission on a specific project|`workflow-users` group|
+|Owner|A user in this role can create a project, initiate work in a project, and  move approved assets to the production folder. All other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group to be able to create a project<br>`project-administrators` group to be able to create a project and move assets|
 
-For creative projects, additional roles - for example, photographers - are also provided. You can use these roles to derive custom roles for a specific project.
+For creative projects, additional roles such as photographers are also provided. You can use these roles to derive custom roles for a specific project.
 
->[!NOTE]
->
->When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
+### Automatic Group Creation {#auto-group-creation}
+
+When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions.
+
+For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**.
+
+If the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
 
 ## Additional Resources {#additional-resources}
 
