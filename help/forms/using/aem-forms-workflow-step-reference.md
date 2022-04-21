@@ -18,15 +18,7 @@ You use workflow models to convert a business logic to automated repetitive proc
 
 Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps allow you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
 
-Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Workflow. These steps allow you to rapidly build Adaptive Forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal and across- the-firewall business processes. You can also use Forms Workflow steps to:
-
-* Create business processes, post-submission workflows, and backend workflows to manage enrollment processes.
-* Create and assign tasks to a user or group.
-* Use [!DNL Adobe Sign] in an AEM Workflow to send a document for  signing.
-* Generate a Document of Record on-demand or on form submission.
-* Connect a workflow model with various data sources to easily save and retrieve data.
-
-* Use the email step to send notification emails and other attachments on completion of an action and at the start or completion of a  workflow.
+Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Workflow. These steps allow you to rapidly build Adaptive Forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal and across- the-firewall business processes.
 
 >[!NOTE]
 >
