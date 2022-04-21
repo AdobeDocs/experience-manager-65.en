@@ -217,11 +217,6 @@ Set environment variables for 32-bit and 64-bit Java Development Kit, third-part
    <td><p>C:\Program Files\Java\jdk1.8.0_74</p> </td>
   </tr>
   <tr>
-   <td><p><strong>JDK (32-bit)</strong></p> </td>
-   <td><p>JAVA_HOME_32</p> </td>
-   <td><p>C:\Program Files (x86)\Java\jdk1.8.0_74</p> </td>
-  </tr>
-  <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
    <td><p>Acrobat_PATH</p> </td>
    <td><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
@@ -588,48 +583,54 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 
 The System Readiness tool checks if the machine is configured properly to run PDF Generator conversions. The tool generates report at the specified path. To run the tool:
 
-1. Create a configuration file for System Readiness tool. For example, srt_config.yaml. The format of the file is:
+1. Open command prompt. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` folder.
 
-   ```
-
-      # =================================================================
-      # SRT Configuration
-      # =================================================================
-      #Note - follow correct format to avoid parsing failures
-      #e.g. <param name>:<space><param value> 
-      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-      locale: en
-
-      #aemTempDir: AEM Temp direcotry
-      aemTempDir:
-
-      #users: provide PDFG converting users list
-      #users:
-      # - user1
-      # - user2
-      users:
-
-      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-      profile:
-
-      #outputDir: directory where output files will be saved
-      outputDir:
-
-   ```
-
-1. Open command prompt. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` folder. Run the following command from the command prompt:
+1. Run the following command from the command prompt:
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
+   The command generates report and also creates the srt_config.yaml file.
+
    >[!NOTE]
    >
-   >If the System Readiness Tool reports that the pdfgen.api file is not available in the Acrobat plug-ins folder then copy the pdfgen.api file from the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` directory to the `[Acrobat_root]\Acrobat\plug_ins` directory.
+   > * If the System Readiness Tool reports that the pdfgen.api file is not available in the Acrobat plug-ins folder then copy the pdfgen.api file from the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` directory to the `[Acrobat_root]\Acrobat\plug_ins` directory.
+   >
+   > * You can use the srt_config.yaml file to configure
+   various settings of . The format of the file is:
+
+      ```
+         # =================================================================
+         # SRT Configuration
+         # =================================================================
+         #Note - follow correct format to avoid parsing failures
+         #e.g. <param name>:<space><param value> 
+         #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+         locale: en
+
+         #aemTempDir: AEM Temp direcotry
+         aemTempDir:
+
+         #users: provide PDFG converting users list
+         #users:
+         # - user1
+         # - user2
+         users:
+
+         #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+         profile:
+
+         #outputDir: directory where output files will be saved
+         outputDir:
+
+      ```
 
 1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
 
 ## Troubleshooting
 
 If you face issues even after fixing all the problems reported by SRT tool, perform the following checks:
+
+Before perfroming the following checks, ensure that [System Readiness Tool](#SRT) does not report any error.
 
 +++ Adobe Acrobat
 
@@ -638,9 +639,7 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 * Ensure that the [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) batch file was run with administrator privileges.
 * Ensure a PDF Generator user is added in PDF configuration UI.
 * Ensure that the [Replace a  process level token](#grant-the-replace-a-process-level-token-privilege) permission is added for the PDF Generator user.
-* (For app server-based installations) Ensure that application server is running as service.
-* Ensure that the users have read and write permissions on PDF Generator's temp and operating systems temp directory. For example, `<crx-quickstart-home>\temp` and `C:\Windows\Temp`
-* Ensure the Acrobat PDFMaker Office COM Addin is enabled for Microsoft Office applications. If the add-in is not enabled, run Adobe Acrobat repair, run the [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) file, and restart the AEM Forms Server.
+* Ensure the Acrobat PDFMaker Office COM Addin is enabled for Microsoft Office applications.
 
 +++
 
@@ -648,12 +647,9 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 **Microsoft® Windows**
 
-* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed and opening dialogs are cancelled for all applications.
+* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft Office is installed and opening dialogs are cancelled for all applications.
 * Ensure a PDF Generator user is added in PDF configuration UI.
-* Ensure that [System Readiness Tool](#SRT) does not report any error.
 * Ensure the PDF Generator user is a member of administrators group and the [Replace a process level token](#grant-the-replace-a-process-level-token-privilege) privilege is set for the user.
-* Ensure that the `\Windows\SysWOW64\config\systemprofile\Deskop` folder exists. If the folder does not exist, create it.
-* Grant full control on `\Windows\SysWOW64\config\systemprofile`, `<crx-quickstart-home>\temp`, and `\Windows\Temp` folders to the PDF Generator user.
 * Ensure that the user is configured in PDF Generator UI and perform the following actions:
    1. Log in to the Microsoft® Windows with PDF Generator user.
    1. Open Microsoft® Office or Open Office applications and cancel all dialogs.
@@ -667,7 +663,6 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 * Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed, opening dialogs are cancelled for all applications, and office applications launch successfully.
 * Create an environment variable `OpenOffice_PATH` and set it to point it to OpenOffice installtion is set in the [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) or the dt (Device Tree) profile.  
-* Use 32-bit Java™ to start AEM Forms Server.
 * If there are issues in installing OpenOffice, ensure that [32-bit libraries](#extrarequirements) required for OpenOffice installation are available.
 
 +++
@@ -707,7 +702,7 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 * Ensure that the latest versions of 32-bit lib curl, libcrypto, and libssl libraries are installed on the system. Also create symlinks `/usr/lib/libcurl.so` (or libcurl.a for AIX®), `/usr/lib/libcrypto.so` (or libcrypto.a for AIX®) and `/usr/lib/libssl.so` (or libssl.a for AIX®) pointing to the latest versions (32-bit) of respective libraries.
 
 * Perform the following steps for IBM® SSL Socket provider:
-   1. Copy the java.security file from `<WAS_Installed_JAVA>\jre\lib\security` to any location on your AEM Forms Server. The default location is Default Location is = `<WAS_Installed>\Appserver\java_1.7_64\jre\lib\security`.
+   1. Copy the java.security file from `<WAS_Installed_JAVA>\jre\lib\security` to any location on your AEM Forms Server. The default location is Default Location is = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
    1. Edit the java.security file at the copied location and change the default SSL Socket factories with JSSE2 factories (Use JSSE2 factories instead of WebSphere®).
 
@@ -738,7 +733,7 @@ If you face issues even after fixing all the problems reported by SRT tool, perf
 
 +++ Unable to add a PDF Generator (PDFG) user
 
-* Ensure Microsoft® Visual C++ 2008 x86, Microsoft® Visual C++ 2010 x86, Microsoft® Visual C++ 2012 x86, and Microsoft® Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
+* Ensure Microsoft® Visual C++ 2012 x86 and Microsoft® Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
 +++
 
