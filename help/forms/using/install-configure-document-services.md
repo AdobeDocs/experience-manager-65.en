@@ -595,9 +595,8 @@ The System Readiness tool checks if the machine is configured properly to run PD
    >
    > * If the System Readiness Tool reports that the pdfgen.api file is not available in the Acrobat plug-ins folder then copy the pdfgen.api file from the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` directory to the `[Acrobat_root]\Acrobat\plug_ins` directory.
    >
-   > * You can use the srt_config.yaml file to configure
-   various settings of . The format of the file is:
-
+   > * You can use the srt_config.yaml file to configure various settings of . The format of the file is:
+   >
       ```
          # =================================================================
          # SRT Configuration
