@@ -35,7 +35,7 @@ The following shortcuts are available for the Sites, Commerce, Screens, Assets, 
 |Consoles|`?`|Keyboard shortcut help|
 ||`/`|Invoke [search](/help/sites-authoring/search.md)|
 ||`Alt+`&lt;`Number`&gt;|Toggle which [rail selector](/help/sites-authoring/basic-handling.md#rail-selector) option to view|
-||&#96;|Hide rail|
+||``` ` ```|Hide rail|
 ||`e`|Edit|
 ||`p`|Properties|
 ||`m`|Move|

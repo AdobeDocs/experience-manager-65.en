@@ -1,10 +1,9 @@
 ---
 title: Projects
 seo-title: Projects
-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
+description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects.
 seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
 uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
@@ -12,229 +11,229 @@ discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 ---
-# Projects{#projects}
+
+# Projects {#projects}
 
 Projects let you group resources into one entity. A common, shared environment makes it easy to manage your projects. The types of resources you can associate with a project are referred to in AEM as Tiles. Tiles may include project and team information, assets, workflows, and other types of information, as described in detail in [Project Tiles.](#project-tiles)
 
->[!CAUTION]
->
->For users in projects to see other users/groups while using Projects functionality like creating projects, creating tasks/workflows, seeing and managing the team, those users need to have read access on **/home/users** and **/home/groups**. The easiest way to implement this is to give the **projects-users** group read access to **/home/users** and**/home/groups**.
+As a user, you can:
 
-As a user, you can do the following:
-
-* Create projects
+* Create and delete projects
 * Associate content and asset folders to a project
-* Delete projects
 * Remove content links from project
 
-See the following additional topics:
+## Access Requirements {#access-requirements}
 
-* [Managing Projects](/help/sites-authoring/touch-ui-managing-projects.md)
-* [Working with Tasks](/help/sites-authoring/task-content.md)
-* [Working with Project Workflows](/help/sites-authoring/projects-with-workflows.md)
-* [Creative Project and PIM Integration](/help/sites-authoring/managing-product-information.md)
+Projects a standard AEM feature and don't require any additional setup.
+
+However for users in projects to see other users/groups while using Projects such as when creating projects, creating tasks/workflows, or viewing and managing the team, those users need to have read access on `/home/users` and `/home/groups`.
+
+The easiest way to do this is to give the **projects-users** group read access to `/home/users` and `/home/groups`.
 
 ## Projects Console {#projects-console}
 
 The projects console is where you access and manage your projects within AEM.
 
-![screen-shot_2019-03-05at125110](assets/screen-shot_2019-03-05at125110.png)
+![The Projects Console](assets/screen-shot_2019-03-05at125110.png)
 
-* Select **Timeline** and then a project to view its timeline.
-* Click/tap **Select** to enter selection mode.
-* Click **Create** to add projects.
-* **Toggle Active Projects** lets you switch between all projects and only those that are active.
-* **Show Statistics View** lets you see project statistics concerning task completions.
+The Projects console is similar to other consoles in AEM, allow a number of actions on individual projects as well as adjusting your view of the projects.
+
+### Toggle Your Mode {#modes}
+
+You can use the rail selector to change between console modes.
+
+![Rail selector](assets/projects-rail.png)
+
+#### Content Only {#content-only}
+
+Content Only is the default mode when opening the console. It will show all of your projects.
+
+#### Timeline {#timeline}
+
+The timeline view allow you to select an individual project and view activity on it. Use the rail selector or the hotkey `alt+1` to change to this view.
+
+![Timeline mode](assets/project-timeline.png)
+
+### Toggle Your View {#views}
+
+You can use the view selector to change between viewing projects as large tiles (the default), to viewing them as a list, or on a calendar.
+
+![Views](assets/projects-views.png)
+
+### Filter Your View {#filter}
+
+You can use the filter to toggle between all projects and only those that are active.
+
+![Filter](assets/projects-filter.png)
+
+### Selecting and viewing Projects {#selecting}
+
+Select a project by hovering the mouse over the project tile and clicking the checkmark.
+
+View the detail of a project by clicking on it to drill down into its detail.
+
+### Creating New Projects {#creating}
+
+Click **Create** to add a new project.
 
 ## Project Tiles {#project-tiles}
 
-With Projects, you associate different types of information with your projects. These are called **Tiles**. Each of the tiles and what kind of information they contain is described in this section.
+Projects are made up of different types of information that you wish to manage together. This information is represented by different **Tiles**.
 
-You can have the following tiles associated with your project. Each is described in the sections that follow:
+You can have the following tiles associated with your project.
 
-* Assets and asset collections
-* Experiences
-* Links
-* Project Information
-* Team
-* Landing Pages
-* Emails
-* Workflows
-* Launches
-* Tasks
+* [Assets](#assets)
+* [Asset Collections](#asset-collections)
+* [Experiences](#experiences)
+* [Links](#links)
+* [Project Information](#project-info)
+* [Team](#team)
+* [Landing Pages](#landing-pages)
+* [Emails](#emails)
+* [Workflows](#workflows)
+* [Launches](#launches)
+* [Tasks](#tasks)
+
+Click on the drop-down menu in the top-right of any tile to add more data to the tile.
+
+Click on the ellipses button at the bottom-right of any tile to open the tile's data in its associated console.
 
 ### Assets {#assets}
 
 In the **Assets** tile, you can gather all assets that you use for a particular project.
 
-![chlimage_1-70](assets/chlimage_1-70.png)
+![Assets tile](assets/project-tile-assets.png)
 
-You upload assets directly in the tile. In addition you can create Image Sets, Spin Sets, or Mixed Media Sets if you have the Dynamic Media add-on.
-
-![chlimage_1-71](assets/chlimage_1-71.png)
+You upload assets directly in the tile.
 
 ### Asset Collections {#asset-collections}
 
 Similar to assets, you can add [asset collections](/help/assets/manage-collections.md) directly to your project. You define collections in Assets.
 
-![chlimage_1-72](assets/chlimage_1-72.png)
+![Asset collection tile](assets/project-tile-asset-collection.png)
 
 Add a collection by clicking **Add Collection** and selecting the appropriate collection from the list.
 
 ### Experiences {#experiences}
 
-The **Experiences** tile lets you add a Mobile app, web site, or publication to the project.
+The **Experiences** tile lets you add a mobile app, web site, or publication to the project.
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![Experiences tile](assets/project-tile-experiences.png)
 
-The icons indicate which kind of experience is represented: web site, mobile application or a publication. Add experiences by clicking the + sign or clicking **Add Experience** and selecting the type of experience.
+The icons indicate which kind of experience is represented.
 
-![chlimage_1-74](assets/chlimage_1-74.png)
-
-Select the path for the thumbnails and if applicable, change the thumbnail for the experience. Experiences are grouped together in the **Experiences** tile.
+* Web site
+* Mobile application
 
 ### Links {#links}
 
-The Links tile lets you associate external links with your project.
+The **Links** tile lets you associate external links with your project.
 
-![chlimage_1-75](assets/chlimage_1-75.png)
+![Links tile](assets/project-tile-links.png)
 
 You can name the link with an easy-to-recognize name as well as change the thumbnail.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
-
 ### Project Info {#project-info}
 
-The Project Information tile provides general information on the project including a description, project status (inactive or active), a due date, and members. In addition, you can add a project thumbnail, which is displayed on the main Projects page.
+The **Project Information** tile provides general information on the project including a description, project status (inactive or active), a due date, and members. In addition, you can add a project thumbnail, which is displayed on the main Projects page.
 
-![chlimage_1-77](assets/chlimage_1-77.png)
-
-Team members can be assigned and deleted from this tile (or have their roles changed) as well as the Team tile.
-
-![chlimage_1-78](assets/chlimage_1-78.png)
+![Project information tile](assets/project-tile-info.png)
 
 ### Translation Job {#translation-job}
 
-The Translation Job tile is where you start a translation and also where you see the status of your translations. To set up your translation, see [Creating Translation Projects](/help/assets/translation-projects.md).
+The **Translation Job** tile is where you start a translation and also where you see the status of your translations.
 
-![chlimage_1-79](assets/chlimage_1-79.png)
+![Translation job tile](assets/project-tile-translation.png)
 
-Click the ellipsis at the bottom of the **Translation Job** card to view the assets in the translation workflow. The translation job list also displays entries for asset metadata and tags. These entries indicate that the metadata and tags for the assets are also translated.
-
-![chlimage_1-80](assets/chlimage_1-80.png)
+To set up your translation, see the document [Creating Translation Projects.](/help/assets/translation-projects.md)
 
 ### Team {#team}
 
 In this tile, you can specify the members of the project team. When editing, you can enter the name of the team member and assign the user role.
 
-![chlimage_1-81](assets/chlimage_1-81.png)
+![Team tile](assets/project-tile-team.png)
 
 You can add and delete team members from the team. In addition, you can edit the [user role](#userroles) assigned to the team member.
 
-![chlimage_1-82](assets/chlimage_1-82.png)
-
 ### Landing Pages {#landing-pages}
 
-The **Landing** Pages tile lets you request a new landing page.
+The **Landing Pages** tile lets you request a new landing page.
 
-![chlimage_1-83](assets/chlimage_1-83.png)
+![Landing page tile](assets/project-tile-landing.png)
 
-This workflow is described in [Create a Landing Page workflow](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow).
+This workflow is described in the document[Create a Landing Page workflow.](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### Emails {#emails}
 
-The **Emails** tile helps you manage requests for email. It starts the Request for Email workflow.
+The **Emails** tile helps you manage requests for email. It starts the **Request for Email** workflow.
 
-![chlimage_1-84](assets/chlimage_1-84.png)
+![Email tile](assets/project-tile-email.png)
 
 More information is described in the [Request Email workflow.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Workflows {#workflows}
 
-You can assign your project to follow certain workflows. If any workflows are running, their status displays in the **Workflows** tile in Projects.
+You can start workflows for your project. If any workflows are running, their status displays in the **Workflows** tile.
 
-![chlimage_1-85](assets/chlimage_1-85.png)
+![Workflows tile](assets/project-tile-workflows.png)
 
-You can assign your project to follow certain workflows. Depending on which project you choose you have different workflows available.
+Depending on which project you create there are different workflows available.
 
 These are described in [Working with Project Workflows.](/help/sites-authoring/projects-with-workflows.md)
 
 ### Launches {#launches}
 
-The Launches tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-authoring/projects-with-workflows.md)
+The **Launches** tile shows any launches that have been requested with a [Request Launch workflow.](/help/sites-authoring/projects-with-workflows.md)
 
-![chlimage_1-86](assets/chlimage_1-86.png)
+![Launches tile](assets/project-tile-launches.png)
 
 ### Tasks {#tasks}
 
 Tasks let you monitor the status of any project-related tasks, including workflows. Tasks are covered in detail at [Working with Tasks](/help/sites-authoring/task-content.md).
 
-![chlimage_1-87](assets/chlimage_1-87.png)
+![Tasks tile](assets/project-tile-tasks.png)
 
 ## Project Templates {#project-templates}
 
-AEM ships with three different templates out of the box:
+Templates serve as a basis to start your project. AEM provides these standard project templates.
 
-* A simple project - A reference sample for any projects that do not fit into other categories (a catch-all). It includes three basic roles (Owners, Editors, and Observers) and four workflows (Project Approval, Request Launch, Request Landing Page and Request Email).
-* A media project - A reference sample project for media-related activities. It includes several media related project roles (Photographers, Editors, Copywriters, Designers, Owners and Observers). It also includes two workflows related to media content - Request Copy (for requesting and reviewing text) and Product Photo Shoot (for managing product related photography)
-* [Product Photo Shoot Project](/help/sites-authoring/managing-product-information.md) - A reference sample for managing eCommerce related product photography. It includes roles for Photographers, Editors, Photo Retouchers, Owners, Creative Directors, Social Media Marketers, Marketing Managers, Reviewers and Observers.
-* [A translation project](/help/sites-administering/translation.md) - A reference sample for managing translation related activities. It includes three basic roles (Owners, Editors, and Observers). It includes two workflows that are accessed in the Workflows user interface.
+* **Media Project** - This is a reference sample project for media-related activities. It includes several media related project roles and also includes workflows related to media content.
+* **[Product Photo Shoot Project](/help/sites-authoring/managing-product-information.md)** - This is a reference sample for managing eCommerce related product photography.
+* **[Translation project](/help/sites-administering/translation.md)** - This is a reference sample for managing translation related activities. It includes basic roles and includes workflows for managing translation.
+* **Simple Project** - This is a reference sample for any projects that do not fit into other categories. It includes three basic roles and four general AEM workflows.
 
-Based on the template you select, you have different options available to you particularly around user roles and workflows.
+Based on the template you select, you have different options available to you within the project such as the user roles and workflows provided.
 
 ## User Roles in a Project {#user-roles-in-a-project}
 
-The different user roles are set in a Project template and are used for two primary reasons:
+The different user roles are defined in the project template and are used for two primary reasons:
 
-1. Permissions. The user roles fall into one of the three categories listed: Observer, Editor, Owner. For example, a Photographer or Copywriter will have the same privileges as an Editor. The permissions determine what a user can do to content in a project.
-1. Workflows. The workflows determine who is assigned tasks in a project. The tasks can be associated with a project role. For example, a task can be assigned to Photographers so all team members that have the Photographer role will get the task.
+1. Permissions: The user roles fall into one of the three categories listed: observer, editor, owner. For example, a photographer or copywriter will have the same privileges as an editor. The permissions determine what a user can do to content in a project.
+1. Workflows: The workflows determine who is assigned tasks in a project. The tasks can be associated with a project role. For example, a task can be assigned to photographers so all team members that have the photographer role will get the task.
 
-All projects support the following default roles to let you administer security and control permissions:
+All projects support the following default roles to let you administer security and control permissions.
 
-<table>
- <tbody>
-  <tr>
-   <td><p><strong>Role</strong></p> </td>
-   <td><p><strong>Description</strong></p> </td>
-   <td><p><strong>Permissions</strong></p> </td>
-   <td><p><strong>Group Membership</strong></p> </td>
-  </tr>
-  <tr>
-   <td><p>Observer</p> </td>
-   <td><p>A user in this role can view project details, including the project status.</p> </td>
-   <td><p>Read-only permissions on a project</p> </td>
-   <td><p>workflow-users group</p> </td>
-  </tr>
-  <tr>
-   <td><p>Editor</p> </td>
-   <td><p>A user in this role can upload and edit the contents of a project.</p> <p> </p> </td>
-   <td>
-    <ul>
-     <li>Read and Write access on a project, associated metadata, and related assets.</li>
-     <li>Privileges to upload a shot list, photo shoot, and review and approve assets</li>
-     <li>Write permission on /etc/commerce</li>
-     <li>Have modify permision on a specific project</li>
-    </ul> </td>
-   <td><p>workflow-users group</p> </td>
-  </tr>
-  <tr>
-   <td><p>Owner</p> </td>
-   <td><p>A user in this role can initiate a project. An owner can create a project, intiate work in a project and also move approved assets to the Production folder. Although all other tasks in the project can also be viewed and performed by the owner.</p> </td>
-   <td>
-    <ul>
-     <li>Write permission on /etc/commerce</li>
-    </ul> </td>
-   <td>
-    <ul>
-     <li>DAM-users group (to be able to create a project)</li>
-     <li>project-administrators group (to be able to create a project and move assets)</li>
-    </ul> </td>
-  </tr>
- </tbody>
-</table>
+|Role|Description|Permissions|Group Membership|
+|---|---|---|---|
+|Observer|A user in this role can view project details, including the project status.|Read-only permissions on a project|`workflow-users` group|
+|Editor|A user in this role can upload and edit the contents of a project.|Read and write access on a project, associated metadata, and related assets<br>Privileges to upload a shot list, photo shoot, and review and approve assets<br>Write permission on `/etc/commerce`<br>Modify permission on a specific project|`workflow-users` group|
+|Owner|A user in this role can create a project, initiate work in a project, and  move approved assets to the production folder. All other tasks in the project can also be viewed and performed by the owner.|Write permission on `/etc/commerce`|`dam-users` group to be able to create a project<br>`project-administrators` group to be able to create a project and move assets|
 
-For creative projects, additional roles - for example, photographers - are also provided. You can use these roles to derive custom roles for a specific project.
+For creative projects, additional roles such as photographers are also provided. You can use these roles to derive custom roles for a specific project.
 
->[!NOTE]
->
->When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions. For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**. However, if the project is deleted, those groups are not automatically deleted. An administrator needs to manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
+### Automatic Group Creation {#auto-group-creation}
+
+When you create the project and add users to the various roles, groups associated with the project are automatically created to manage associated permissions.
+
+For example, a project called Myproject would have three groups **Myproject Owners**, **Myproject Editors**, **Myproject Observers**.
+
+If the project is deleted, those groups are only deleted if you select the appropriate option [when deleting the project.](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) An administrator can also manually delete the groups in **Tools** &gt; **Security** &gt; **Groups**.
+
+## Additional Resources {#additional-resources}
+
+For more details about using projects, see the following additional documents:
+
+* [Managing Projects](/help/sites-authoring/touch-ui-managing-projects.md)
+* [Working with Tasks](/help/sites-authoring/task-content.md)
+* [Working with Project Workflows](/help/sites-authoring/projects-with-workflows.md)
+* [Creative Project and PIM Integration](/help/sites-authoring/managing-product-information.md)
