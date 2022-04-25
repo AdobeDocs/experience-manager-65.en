@@ -278,7 +278,7 @@ Once the author adds a child component to the container, the new container node 
 
 More components and content can be added to the container now as the author requires and the changes will be persisted.
 
-#### Requirements and Limitations {#limitations}
+#### Requirements and Limitations {#container-limitations}
 
 There are a number of requirements to add virtual containers as well as some limitations.
 
