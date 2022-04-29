@@ -1,8 +1,6 @@
 ---
 title: Tough Day
-seo-title: Tough Day
 description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
-seo-description: The Tough Day test simulates the daily load of around 1000 authors in a worst-case scenario with all the operations going on at the same time.
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
@@ -138,7 +136,7 @@ You can find the relevant parameters in the list bellow:
 
 Customization can be achieved in two ways: command line parameters or yaml configuration files. **Configuration files are generally used for large custom suites and they will override the Tough Day 2 default parameters. Command line parameters override both configuration files and the default parameters.**
 
-The only way to save a test configuration is to copy it in yaml format. For additional details, see this [toughday.yaml](https://repo.adobe.com/nexus/service/local/repositories/releases/content/com/adobe/qe/toughday2/0.2.1/toughday2-0.2.1.yaml) configuration and the yaml configuration examples in the sections below.
+The only way to save a test configuration is to copy it in yaml format.
 
 ### Adding a New Test {#adding-a-new-test}
 
