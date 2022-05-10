@@ -193,7 +193,7 @@ If you need to upgrade to a new version of the 1.10.x S3 connector (for example,
    >
    >The file names presented above are used for illustration purposes only.
 
-1. Download the latest version of the 1.8.x feature pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/granite/com.adobe.granite.oak.s3connector).
+1. Download the latest version of the 1.10.x feature pack from the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Unzip the contents to a separate folder, then navigate to `jcr_root/libs/system/install/15`.
 1. Copy the jar files to **&lt;aem-install&gt;**/crx-quickstart/install/15 in the AEM installation folder.
 1. Start AEM and check the connector functionality.
