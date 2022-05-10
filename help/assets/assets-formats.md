@@ -250,7 +250,11 @@ A list of supported MIME types is available in CRXDE Lite at `/conf/global/setti
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &minus;| &minus;| &minus;| &minus;|
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | &#10003; | &minus;| &minus;| &minus;| &minus;|
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) (See Note below) | &#10003; | &#10003; | &#10003; | &#10003; | &#10003; |
+
+>[!Note]
+>
+>For secure PDFs, only Upload is supported.
 
 In addition to the above functionality, consider the following:
 
