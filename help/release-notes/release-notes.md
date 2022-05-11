@@ -277,7 +277,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.12.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
+The UberJar for Experience Manager 6.5.12.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
