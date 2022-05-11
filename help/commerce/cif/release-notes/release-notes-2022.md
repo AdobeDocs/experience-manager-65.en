@@ -19,9 +19,9 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
-|CIF add-on | 2022.04.??.00|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.??.00.zip)|
-|CIF Core Components |2.7.2|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.7.2)|
-|CIF Venia Reference Site| 2022.03.31|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.03.31)|
+|CIF add-on | 2022.04.28.00|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.28.00.zip)|
+|CIF Core Components |2.8.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0)|
+|CIF Venia Reference Site| 2022.04.28|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28)|
 
 ### What's New {#what-is-new-march}
 
