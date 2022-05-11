@@ -23,7 +23,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |2.8.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0)|
 |CIF Venia Reference Site| 2022.04.28|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28)|
 
-### What's New {#what-is-new-march}
+### What's New {#what-is-new}
 
 * Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
 
@@ -60,10 +60,10 @@ Review the minimum system requirements in the table below for the CIF version yo
 ### What's New {#what-is-new-january}
 
 * Enhanced myAccount components
-* Product Recommendation component suppports additional page types (home page, shopping cart, order confirmation)
+* Product Recommendation component supports additional page types (home page, shopping cart, order confirmation)
 * **Wishlist**
   * Logged in visitors can add products to a wishlist
-  * Mangaging the wishlist and its products is possible via myAccount
+  * Managing the wishlist and its products is possible via myAccount
   * The "Add to wishlist" button can be enabled / disabled on a component level via policy (example product teaser, product detail
   * Available as a Core Component and in the AEM Venia Storefront
 
