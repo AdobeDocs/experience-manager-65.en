@@ -20,7 +20,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are:
 
-*
+<!-- Insert bullet list here -->
 
 The following is the list of fixes provided in [!DNL Experience Manager] 6.5.13.0 release.
 
@@ -28,7 +28,7 @@ The following is the list of fixes provided in [!DNL Experience Manager] 6.5.13.
 
 The following issues are fixed in [!DNL Sites]:
 
-* 
+<!-- Insert bullet list here -->
 
 ### [!DNL Assets] {#assets-65130}
 
@@ -40,19 +40,19 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 The following issues are fixed in [!DNL Assets]:
 
-* 
+<!-- Insert bullet list here --> 
 
 ### [!DNL Dynamic Media] {#dynamic-media-65130}
 
 The following issues are fixed in [!DNL Dynamic Media]:
 
-* 
+<!-- Insert bullet list here -->
 
 ### Workflows {#workflows-65130}
 
-* 
+<!-- Insert bullet list here -->
 
-### [!DNL Forms] {#forms-65130}
+<!-- ### [!DNL Forms] {#forms-65130}
 
 >[!NOTE]
 >
@@ -60,35 +60,35 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 **Adaptive Forms**
 
-* 
+
 
 **Form Data Model**
 
-* 
+
 
 **Interactive Communication**
 
-* 
+
 
 **Document Services**
 
-* 
+
 
 **Document Security**
 
-* 
+
 
 **Foundation JEE**
 
-* 
 
-**Workflow**
 
-* 
+**Workflow** -->
+
+
 
 ## Install 6.5.13.0 {#install}
 
-**Setup requirements and more information**
+**Setup requirements and more information** <!-- Remaining content from here to bottom stays the same except for version updating as needed -->
 
 * Experience Manager 6.5.13.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
@@ -193,7 +193,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 | Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues} 
-<!-- ARE THESE ISSUES CARRIED OVER OR ARE THEY NEW ISSUES FOR EACH SERVICE PACK RELEASE?
+<!-- ARE THESE ISSUES CARRIED OVER OR ARE THEY NEW ISSUES FOR EACH SERVICE PACK RELEASE? WHERE DO THESE ISSUES COME FROM?
  -->
 * If you are using Content Fragments and GraphQL then it is recommended that you install the following packages on top of 6.5.12.0:
 
@@ -235,9 +235,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.13.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.13.0](assets/65130_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.13.0](assets/65130_bundles.txt) <!-- WHERE DOES THIS COME FROM? -->
 
-* [List of Content Packages included in Experience Manager 6.5.13.0](assets/65130_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.13.0](assets/65130_packages.txt) <!-- WHERE DOES THIS COME FROM? -->
 
 ## Restricted websites {#restricted-sites}
 
