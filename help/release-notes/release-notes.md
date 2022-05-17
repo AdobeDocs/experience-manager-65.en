@@ -9,78 +9,28 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 | Products | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Version  | 6.5.12.0                      |
+| Version  | 6.5.13.0                      |
 | Type     | Service Pack Release         |
-| Date     | February 24, 2022               |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.12.0.zip) |
+| Date     | May 26, 2022               |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.13.0.zip) |
 
-## What is included in [!DNL Adobe Experience Manager] 6.5.12.0 {#what-is-included-in-aem}
+## What is included in [!DNL Adobe Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
 
-[!DNL Adobe Experience Manager] 6.5.12.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
+[!DNL Adobe Experience Manager] 6.5.13.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
-The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.12.0 are:
+The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are:
 
-* After configuring a connection between remote DAM and Sites deployments, the assets on remote DAM are made available on the Sites deployment. You can now perform the update, delete, rename, and move operations on the remote DAM assets or folders. The updates, with some delay, are available automatically on the Sites deployment (NPR-37816).
+*
 
-* Push-rollouts of a live copy source to multiple live copies is now possible by default, without requiring a blueprint configuration (CQ-4259951).
-* The status of in-progress async operations is now shown in the user interface to help prevent users from accidentally triggering multiple async operations on the same path (NPR-37611).
-* Support for IMS-based authentication is provided for Analytics 2.0 APIs (CQ-4285474, NPR-37803, NPR-37701, NPR-37702, NPR-37703).
-* API support for JSON offer type experience fragment (NPR-37796).
-* Offer request is now provided for Delete offer (Experience Fragment API) in IMS (NPR-37668).
-* The built-in repository (Apache Jackrabbit Oak) still remains at 1.22.9.
+The following is the list of fixes provided in [!DNL Experience Manager] 6.5.13.0 release.
 
-The following is the list of fixes provided in [!DNL Experience Manager] 6.5.12.0 release.
-
-### [!DNL Sites] {#sites-65120}
+### [!DNL Sites] {#sites-65130}
 
 The following issues are fixed in [!DNL Sites]:
 
-* Layout of the content fragment Properties is broken as Basic and Advance tabs have no margins to the left (SITES-4484).
-* Option to close banner on content fragments, that are referenced on various sites pages, is not working. This banner informs the users that the content fragment is referenced on one or more pages (SITES-4173).
-* The checkboxes are not aligned in Revert Inheritance dialog box (SITES-3514).
-* The template page on we-retail and wknd sites is broken, as components don't load and structure option is not available, as pageinfo.json servlet is stuck on LaunchManagerImpl.getLaunchStream (SITES-3489).
-* User node publishing from Author to Publish environment is not working (NPR-38005).
-* Attempt to create an experience fragment using an edited template doesn’t show the edits made to the initial page properties (NPR-37962).
-* The page move operation on Experience Manager is slow (NPR-37961).
-* Experience fragment translation does not update references to language copy paths (NPR-37953).
-* Users without replication permissions are not able to delete or move pages, even if the pages are not activated (NPR-37936).
-* Random org.apache.felix.metatype errors are observed on server (NPR-37935).
-* References in Sites admin touch user interface are not displaying incoming links correctly (NPR-37934).
-* Launch path to add new pages or assets is not available when selecting pages in a translation job (NPR-37912).
-* Reference pages in a list component added in experience fragments are not updated to destination page when promoting the launch (NPR-37886).
-* Author environment has user interface issues—such as Edit mode page title is not centered and allowed components selector on policy editor: group checkbox takes entire width of the container, so the label is rendered in the next line (NPR-37878).
-* [Platform] The version number of xmlns:metatype in metatype.xml file of commons-httpclient is "http://www.osgi.org/xmlns/metatype/v1.0.0" instead of "http://www.osgi.org/xmlns/metatype/v1.2.0" (NPR-37865).  
-* Errors are observed and pages fail to move when trying to a page (NPR-37864).
-* [Rich Text Editor] Image does not render in the classic user interface when adding the image as a list item in Rich Text Editor (NPR-37835).
-* Authors are able to apply tags that are outside of the configured root path when using tag field in a dialog(NPR-37834).
-* Multifield does not render correctly in layout container and gives error (NPR-37811).
-* Attempt to resize component layout in page editor doesn’t work in mobile layout (NPR-37805).
-* Experience Fragment translation does not update cyclic references to language copy paths (NPR-37745).
-* Use of cq-msm-lockable rich text field in page properties does not disable the field on rolling out the page and it can be modified by the authors (NPR-37714).
-* On activating an experience fragment, publisher sends many activation requests to Dispatcher (NPR-37707).
-* On topology change, the Sling job for asset processing gets reset resulting in the jobs that are in progress at the time of topology change getting ignored (NPR-37706).
-* Quotation marks, cross, and dash are not exported to CSV when users of MacOS export sites and assets URLs (NPR-37698).
-* Layout container in SPA page template is not able to register the custom CSS classes defined in the Template Policy when running react SPA pages (NPR-37697).
-* Background image is not visible when user selects targeting on an experience fragment that has background in the container (NPR-37662).
-* Translation job on an experience fragment is not translating all the components on that experience fragment (NPR-37660).
-* Translation of experience fragments and the page containing the experience fragment does not update the launch path in the experience fragment link (NPR-37659).
-* File Upload widget does not show the file name, when a file is uploaded, and dialog is saved (NPR-37634).
-* The scheduled activation (publishing) of asset does not trigger on the scheduled time if the folder containing that asset is moved (NPR-37621).
-* [Platform] External link checker dashboard fails to render results in [!DNL Adobe Experience Manager] WCM (NPR-37614).
-* Content fragment editor does not work correctly when capital case letters are used in tag names when editing tags in the editor (NPR-37601).
-* Classic user interface editor doesn't show mark up as in compare view of touch user interface (NPR-37588).
-* Intermittent 500 error is logged on adding an experience fragment to translation jobs (NPR-37587).
-* Authors are able to select and use date picker date even on disabled date picker (NPR-37583).
-* [Foundation] Authors are not able to enter some decimal values in number field resource type in a component dialog structure for touch user interface (NPR-37059).
-* The paths in libs folder get deleted on installing previous service packs (NPR-36815).
-* [Commerce] The deactivation of a root folder doesn’t change deactivation status of child products in [!DNL Experience Manager Commerce] console; moreover the count of children folders of a root folder at the time of deactivation is incorrectly displayed in the user interface (CQ-4338261).
-* [Localization Workflow] The content for column customization and branding customization is not localized in Admin Control dialog―on selecting icon under profile icon in [!DNL Adobe Experience Manager] inbox (CQ-4334864).
-* [Communities] The content inside the table for group members is not clickable (CQ-4334404).
-* [Oak] The Cold-Standby sync process is not working and is logging error (CQ-4333868).
-* [Platform Foundation UI] [!DNL Experience Manager] start page appears again when user selects the [!DNL Adobe Experience Manager] icon already being on the start page (CQ-4317409).
-* For a user (without replication permissions) to delete or move pages (even if the pages are not activated), the `Page Subtree Activation Check` under Configuration `Page Manager Factory` needs to be enabled (NPR-37936).
+* 
 
-### [!DNL Assets] {#assets-65120}
+### [!DNL Assets] {#assets-65130}
 
 <!--
 The following accessibility enhancements are available in [!DNL Assets]:
@@ -90,39 +40,19 @@ The following accessibility enhancements are available in [!DNL Assets]:
 
 The following issues are fixed in [!DNL Assets]:
 
-* When adding an asset or folder (containing `single quote` in the name) in Connected Assets, the reference path fails and results as an exception (NPR-37712).
-* When adding watermark to an asset, the watermark is always displayed in black color irrespective of the color defined by the user (NPR-37720).
-* When using Connected Assets, a non-admin user is able to search for an asset even when the non-admin users are restricted to access the DAM repository (NPR-37644).
-* When updating asset metadata using bulk edit, the changes applied to the dropdown fields are not saved and reset to the default values (NPR-37345).
-* Deleting a folder in taking too long which impacts the overall performance (NPR-37107).
-* When applying rules in metadata schema, the user is not able to view the complete value for the dropdown `Field Value` and `Field Choices` if the value is larger than the text box (CQ-4338074).
-* After upgrading to version 6.5.10.0, the asset properties page reflects an unnecessary HTML rendering message (CQ-4336994).
-* Sorting the assets in `List View` does not work effectively (CQ-4335298).
-* When sharing assets using share link, the assets are downloaded in separate folders (CQ-4335000).
-* When verifying the [!DNL Experience Manager] `Inbox` settings, the `Share` and `Out of office` tabs reflect untranslated content (CQ-4334858).
+* 
 
-* The following fixes are related to cascading metadata in asset properties.
-  * A mandatory dropdown reflects multiple error messages for each selection in the multivalue field (NPR-37859).
-  * Only the last selection of the parent field is saved for the dependent uneditable field (NPR-37858).
-  * The dependent dropdown (multivalue field) reflects the default value intermittently for the selected parent dropdown (NPR-37791).
-
-### [!DNL Dynamic Media] {#dynamic-media-65120}
+### [!DNL Dynamic Media] {#dynamic-media-65130}
 
 The following issues are fixed in [!DNL Dynamic Media]:
 
-* The assets of a folder containing `renditions` in the folder name are not synced in `Dynamic Media` (CQ-4338428).
-* When creating an image preset in `tiff` format, the preset is created but the format changes to `jpeg` (CQ-4335985).
-* When modifying the `Progressive JPEG Scan` value in Image Preset Editor, the dropdown value always resets to `auto`(CQ-4335971).
-* The video metadata is not visible for the `mxf` videos on the asset properties page (CQ-4335499).
-* When reprocessing the video assets, the AVS (Adaptive Video Set) and video renditions are unpublished from the Publish server (CQ-4335461).
-* The PDF thumbnails generated are different from the first page of the actual PDF. Some parts of the image are missing in the thumbnail (CQ-4315554).
-* CDN invalidation fails with a bad URL response if the `companyName` and `companyRoot` are different (CQ-4339896).
+* 
 
-### Workflows {#workflows-65120}
+### Workflows {#workflows-65130}
 
-* Scrolling does not work as expected if you apply filter on Inbox items (CQ-4333594).
+* 
 
-### [!DNL Forms] {#forms-65120}
+### [!DNL Forms] {#forms-65130}
 
 >[!NOTE]
 >
@@ -130,86 +60,43 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 **Adaptive Forms**
 
-* When a text component in an adaptive form contains a table, pasting content into the component results in erasing the table in the editor (NPR-38078).
-
-* A form displays a toolbar only when you open a saved form (NPR-38060).
-
-* The undo operation does not work correctly for the rule editor (NPR-37973).
-
-* `getAemFormContainer` returns a null pointer after installing AEM Forms 6.5.10.0 (NPR-37881).
-
-* Accessibility - The screen reader announces the long description of a text box as soon as the tab focus shifts to the field instead of announcing only when you click the field (NPR-37855).
-
-* When you enable the Allow Rich Text property for a text box, there are issues with the maximum allowed character length (NPR-37825).
-
-* CSS issues when you copy any component in an adaptive form (NPR-37812).
-
-* While generating the adaptive forms translation the generated XLIFF file does not contain the same sequence of texts as in the Adaptive Form. In some cases it is needed to see the context of the texts. This is not possible if the sequence in XLIFF is alphabetic. (NPR-37435).
-
-* When an adaptive form is translated, the HTML tags are part of the translation. If a user makes a mistake and the tags are not valid, the whole text is not shown in the document of record. (NPR-37499)
-
-* When an adaptive form is created and finalized in base language and translation is done by an external team and imported. If there even a small change of text like addition or missing dot (.) is done in the for the base language, the complete translation goes missing for all other languages. (NPR-37189)
+* 
 
 **Form Data Model**
 
-* Issue while saving adaptive form attachments connected to a Form Data Model to the database (CQ-4338561).
+* 
 
 **Interactive Communication**
 
-* The Reference tab does not list any references in an Interactive Communication (NPR-37995).
+* 
 
 **Document Services**
 
-* Assembler does not embed fonts, as expected (NPR-38056).
-
-* Unable to convert PDF to PDFA using workbench (NPR-37879).
-
-* Issues with office documents while using the PDF Generator service after upgrading from AEM 6.5.7.0 Forms to AEM 6.5.10.0 Forms (NPR-37758).
+* 
 
 **Document Security**
 
-* PDF encryption does not work after upgrading to java version 1.8.0_281 (NPR-37716).
+* 
 
 **Foundation JEE**
 
-* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM 6.5.7.0 Forms (NPR-38053).
-
-* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967, CQ-4336081).
-
-* Saving logs result in high CPU utilization that requires a server restart (NPR-37868).
-
-* `Gemfire.log` does not get created in the `temp\adobejb_server1\Caching` folder after installing AEM Forms-6.5.0-0038 (CQ-4340237).
-
-* The following error displays after executing the `ConfigurationManager.sh` command (CQ-4338323):
-
-  ```TXT
-    [root@localhost bin]# ./ConfigurationManager.sh 
-    bash: ./ConfigurationManagerCLI.sh: /bin/sh^M: bad interpreter: No such file or directory
-  ```
-
-* AEM 6.5 Forms on RHEL8 does not support JBOSS EAP 7.3 and MySQL8 (CQ-4331770).
+* 
 
 **Workflow**
 
-* Issues while storing UTF-8 special characters as part of a workflow on AEM 6.5.10.0 Forms publish instance (NPR-37673).
+* 
 
-* Issue while creating variable of ArrayList type and JSON subtype (NPR-37600).
-
-* Issues with XPath/Dot Notation browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582).
-
-For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
-
-## Install 6.5.12.0 {#install}
+## Install 6.5.13.0 {#install}
 
 **Setup requirements and more information**
 
-* Experience Manager 6.5.12.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* Experience Manager 6.5.13.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* On a deployment with MongoDB and multiple instances, install Experience Manager 6.5.12.0 on one of the Author instances using the Package Manager.
+* On a deployment with MongoDB and multiple instances, install Experience Manager 6.5.13.0 on one of the Author instances using the Package Manager.
 
 >[!NOTE]
 >
->Adobe does not recommend removing or uninstalling the [!DNL Adobe Experience Manager] 6.5.12.0 package.
+>Adobe does not recommend removing or uninstalling the [!DNL Adobe Experience Manager] 6.5.13.0 package.
 
 ### Install the service pack {#install-service-pack}
 
@@ -219,7 +106,7 @@ To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, 
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.12.0.zip).
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.13.0.zip).
 
 1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -233,7 +120,7 @@ To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, 
 
 **Automatic installation**
 
-There are two ways to automatically install [!DNL Experience Manager] 6.5.12.0 on a working instance:
+There are two ways to automatically install [!DNL Experience Manager] 6.5.13.0 on a working instance:
 
 A. Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
 
@@ -241,11 +128,11 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 >[!NOTE]
 >
->Adobe Experience Manager 6.5.12.0 does not support Bootstrap installation.
+>Adobe Experience Manager 6.5.13.0 does not support Bootstrap installation.
 
 **Validate the installation**
 
-1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.12.0)` under [!UICONTROL Installed Products].
+1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.13.0)` under [!UICONTROL Installed Products].
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
@@ -277,7 +164,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.12.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
+The UberJar for Experience Manager 6.5.13.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.13/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -285,7 +172,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.12</version>
+     <version>6.5.13</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -305,8 +192,9 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 | Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in Experience Manager 6.5. The integration supports the Adobe Target Standard API. The API uses authentication via Adobe IMS and [!DNL Adobe I/O] and supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
 | Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
-## Known issues {#known-issues}
-
+## Known issues {#known-issues} 
+<!-- ARE THESE ISSUES CARRIED OVER OR ARE THEY NEW ISSUES FOR EACH SERVICE PACK RELEASE?
+ -->
 * If you are using Content Fragments and GraphQL then it is recommended that you install the following packages on top of 6.5.12.0:
 
   * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this replaces SP12, but can be installed on top of SP12)
@@ -345,11 +233,11 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.12.0:
+The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.13.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.12.0](assets/65120_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.13.0](assets/65130_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.12.0](assets/65120_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.13.0](assets/65130_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
