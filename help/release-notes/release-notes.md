@@ -88,7 +88,9 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 ## Install 6.5.13.0 {#install}
 
-**Setup requirements and more information** <!-- Remaining content from here to bottom stays the same except for version updating as needed -->
+**Setup requirements and more information** 
+
+<!-- Remaining content from here to bottom stays the same except for version updating as needed -->
 
 * Experience Manager 6.5.13.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
@@ -193,8 +195,10 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 | Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues} 
+
 <!-- ARE THESE ISSUES CARRIED OVER OR ARE THEY NEW ISSUES FOR EACH SERVICE PACK RELEASE? WHERE DO THESE ISSUES COME FROM?
  -->
+
 * If you are using Content Fragments and GraphQL then it is recommended that you install the following packages on top of 6.5.12.0:
 
   * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this replaces SP12, but can be installed on top of SP12)
