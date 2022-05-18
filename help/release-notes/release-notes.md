@@ -26,35 +26,57 @@ The following issues are fixed in [!DNL Experience Manager] 6.5.13.0:
 
 <!-- Insert bullet list here -->
 
-### [!DNL Sites] {#sites-65130}
-
-The following issues are fixed in [!DNL Sites]:
-
-<!-- Insert bullet list here -->
-
-### [!DNL Assets] {#assets-65130}
+## [!DNL Assets] {#assets-6513}
 
 The following enhancements were made in [!DNL Assets]:
 
-<!--
-* enhancement 1
--->
 
 The following issues are fixed in [!DNL Assets]:
 
-<!-- Insert bullet list here --> 
 
-### [!DNL Dynamic Media] {#dynamic-media-65130}
+
+### [!DNL Dynamic Media] {#dynamic-media-6513}
 
 The following issues are fixed in [!DNL Dynamic Media]:
 
-<!-- Insert bullet list here -->
+* In Image presets, visually challenged users who rely on screen readers are getting impacted if the Alt attribute is not implemented on an image in a page. (ASSETS-9817)
+* After adding a Dynamic Media component on a site and after publishing the page, the newly added Dynamic Media asset is not visible on the published page, nor it is viewable in the Preview page. This issue occurred for both image and video asset types. (ASSETS-9467)
+* Zero day exploit with the Java Spring Core Framework impacting Experience Manager 6.5.7 to 6.5.12. (ASSETS-9031)
+*  (ASSETS-5691)
+*  (ASSETS-5651)
+*  (ASSETS-5641)
+*  (ASSETS-5582)
+*  (ASSETS-5576)
+*  (ASSETS-5569)
+*  (ASSETS-5393)
 
-### Workflows {#workflows-65130}
 
-<!-- Insert bullet list here -->
 
-<!-- ### [!DNL Forms] {#forms-65130}
+## Campaign {#campaign-6513}
+
+
+## Commerce {#commerce-6513}
+
+
+## Integrations {#integrations-6513}
+
+
+## Platform {#platform-6513}
+
+
+## Sling {#sling-6513}
+
+
+## Translation projects {#translation-6513}
+
+
+## WCM {#wcm-6513}
+
+
+## Workflow {#workflows-6513}
+
+
+<!-- ## [!DNL Forms] {#forms-65130}
 
 >[!NOTE]
 >
@@ -86,7 +108,11 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 **Workflow** -->
 
+## [!DNL Sites] {#sites-6513}
 
+The following issues are fixed in [!DNL Sites]:
+
+<!-- Insert bullet list here -->
 
 ## Install 6.5.13.0 {#install}
 
