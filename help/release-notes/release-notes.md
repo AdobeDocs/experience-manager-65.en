@@ -51,26 +51,74 @@ The following issues are fixed in [!DNL Dynamic Media]:
 *  (ASSETS-5393)
 
 
-
 ## Campaign {#campaign-6513}
+
+The following issues are fixed in Campaign:
+
 
 
 ## Commerce {#commerce-6513}
 
+The following issues are fixed in Commerce:
+
+
+
+## Granite {#granite-6513}
+
+The following issues are fixed in Granite:
+
+
 
 ## Integrations {#integrations-6513}
+
+The following issues are fixed in Integrations:
+
+
+
+## Jetty {#jetty-6513}
+
+The following issues are fixed in Jetty:
+
+
+
+## Oak - Indexing and Queries {#oak-6513}
+
+The following issues are fixed in Oak:
+
 
 
 ## Platform {#platform-6513}
 
+c
+
+
+## Replication {#replication-6513}
+
+The following issues are fixed in Replication:
+
+
+## [!DNL Sites] {#sites-6513}
+
+The following issues are fixed in [!DNL Sites]:
+
+
 
 ## Sling {#sling-6513}
+
+The following issues are fixed in Sling:
+
 
 
 ## Translation projects {#translation-6513}
 
+The following issues are fixed in translation projects:
+
+
 
 ## WCM {#wcm-6513}
+
+The following issues are fixed in WCM:
+
 
 
 ## Workflow {#workflows-6513}
@@ -108,11 +156,6 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 **Workflow** -->
 
-## [!DNL Sites] {#sites-6513}
-
-The following issues are fixed in [!DNL Sites]:
-
-<!-- Insert bullet list here -->
 
 ## Install 6.5.13.0 {#install}
 
