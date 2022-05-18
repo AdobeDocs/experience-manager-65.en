@@ -18,11 +18,13 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 [!DNL Adobe Experience Manager] 6.5.13.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
 
-The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are:
+The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are the following:
 
 <!-- Insert bullet list here -->
 
-The following is the list of fixes provided in [!DNL Experience Manager] 6.5.13.0 release.
+The following issues are fixed in [!DNL Experience Manager] 6.5.13.0:
+
+<!-- Insert bullet list here -->
 
 ### [!DNL Sites] {#sites-65130}
 
@@ -32,9 +34,9 @@ The following issues are fixed in [!DNL Sites]:
 
 ### [!DNL Assets] {#assets-65130}
 
-<!--
-The following accessibility enhancements are available in [!DNL Assets]:
+The following enhancements were made in [!DNL Assets]:
 
+<!--
 * enhancement 1
 -->
 
@@ -166,7 +168,7 @@ For information about installing the cumulative installer for Experience Manager
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.13.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.13/).
+The UberJar for Experience Manager 6.5.13.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -191,7 +193,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in Experience Manager 6.5. The integration supports the Adobe Target Standard API. The API uses authentication via Adobe IMS and [!DNL Adobe I/O] and supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in Experience Manager 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
 | Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
 
 ## Known issues {#known-issues} 
@@ -199,13 +201,13 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 <!-- ARE THESE ISSUES CARRIED OVER OR ARE THEY NEW ISSUES FOR EACH SERVICE PACK RELEASE? WHERE DO THESE ISSUES COME FROM?
  -->
 
-* If you are using Content Fragments and GraphQL then it is recommended that you install the following packages on top of 6.5.12.0:
+* If you are using Content Fragments and GraphQL, Adobe recommends that you install the following packages on top of 6.5.12.0:
 
-  * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this replaces SP12, but can be installed on top of SP12)
+  * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this hot fix replaces SP12, but can be installed on top of SP12)
   
   * [AEM Content Fragment with GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
-* As [!DNL Microsoft Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss EAP 7.1], [!DNL Microsoft Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft® Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
 * If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. To resolve the issue, restart the instance.
 
@@ -226,7 +228,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
 
 * When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work.
-  To ensure correct operation, you need to add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
+  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
 
    ```xml
    "tags": [
