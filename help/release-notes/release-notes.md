@@ -40,7 +40,6 @@ The following enhancements and fixes were made in [!DNL Assets]:
 * FFmpeg transcoding workflow failing for FLV Video profile. (CQ-4343249)
 * Browser performance issues in Metadata editor. (CQ-4341359)
 * Smart Collection issue when filtering by Publish status. (CQ-4341191)
-* Asset able to be published while in 'Check Out' state by other non-admin user. (CQ-4340125)
 * Unable to change Label "Sort by" and drop-down in Assets Console by language preference. (CQ-4339306)
 * User experience issue with Metadata Schema rules for drop-down list. (ASSETS-9442)
 * Assets Metadata disabled drop-down not retaining values. (ASSETS-8918)
@@ -52,7 +51,6 @@ The following enhancements and fixes were made in [!DNL Assets]:
 * Asset download button does not show complete menu on the asset Details page. (CQ-4336703)
 * Unlocalized "Allow download of renditions of file" and "Search/Add Email Address" strings in link sharing dialog box. (CQ-4330540)
 * The string `[[0]] selected` is untranslated in Manage Publication Add Items dialog box. (CQ-4330491)
-* Asset able to be published while in 'Check Out' state by a separate user. (CQ-4263853)
 
 ### [!DNL Dynamic Media] {#dynamic-media-6513}
 
