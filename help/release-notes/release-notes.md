@@ -138,7 +138,6 @@ The following issues are fixed in [!DNL Sites]:
 * TemplatedResource valueMap should allow deep reads as per ValueMap API. (NPR-38439)
 * When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384)
 * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361)
-*
 * Updated Image is not visible When a new image is dragged on top of an existing image the updated image is not visible in RTE - Classic UI. (NPR-38141)
 * Some strings in the Content Fragment Model editor are not localized. (NPR-38126)
 * For invalid tags, graceful handling of error message is not working as expected. (NPR-38106)
