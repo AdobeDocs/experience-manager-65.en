@@ -42,14 +42,13 @@ The following issues are fixed in [!DNL Dynamic Media]:
 * In Image presets, visually challenged users who rely on screen readers are getting impacted if the Alt attribute is not implemented on an image in a page. (ASSETS-9817)
 * After adding a Dynamic Media component on a site and after publishing the page, the newly added Dynamic Media asset is not visible on the published page, nor it is viewable in the Preview page. This issue occurred for both image and video asset types. (ASSETS-9467)
 * Zero day exploit with the Java Spring Core Framework impacting Experience Manager 6.5.7 to 6.5.12. (ASSETS-9031)
-*  (ASSETS-5691)
-*  (ASSETS-5651)
-*  (ASSETS-5641)
-*  (ASSETS-5582)
-*  (ASSETS-5576)
-*  (ASSETS-5569)
-*  (ASSETS-5393)
-
+* When creating an Image Preset for Dynamic Media in Experience Manager, the allowed maximum is limited to 2000x2000 pixels in the user interface. When the value is increased to 2001 pixels for either width or height, the **[!UICONTROL Save]** button is deactivated. (ASSETS-5691)
+* Visually challenged users who rely on screen readers are getting impacted, as screen readers are narrating unlabeled image for the images present in the "Timeline segment" and in the "Actions" tab, when navigated to in Down Arrow mode. (ASSETS-5651)
+* Users who rely on screen readers are getting impacted as Screen readers (NVDA/JAWS) are not narrating the Descriptive name (Send Email) for the "Send Email" button in the "EmailLink" dialog box, while navigating using (Browse/Cursor) modes. (ASSETS-5641)
+* Users who rely on keyboard navigation are getting impacted as Keyboard focus is not moving to the "Redo" button which appears after invoking the "Undo" button in the Image Set Editor page, while navigating using the TAB key on the keyboard. (ASSETS-5582)
+* Users who rely on screen readers are getting impacted as the Alt attribute is not provided for an Image Set image which is present under the Properties heading. (ASSETS-5576)
+* User who rely on screen readers are getting impacted as screen readers are not narrating the heading role for `Cannot save this set` text in the `Cannot save this set` alert, while navigating using heading shortcut key (H), and Down Arrow key. (ASSETS-5569)
+* User who rely on screen readers are getting impacted to navigate through the forms and find difficulties understanding the information about the form controls if NVDA is not narrating the label information for the "Width and height" spin controls, present under the Responsive Image Crop header while navigating in NVDA form mode ‘F’. (ASSETS-5393)
 
 ## Campaign {#campaign-6513}
 
@@ -89,7 +88,8 @@ The following issues are fixed in Oak:
 
 ## Platform {#platform-6513}
 
-c
+The following issues are fixed in Platform:
+
 
 
 ## Replication {#replication-6513}
@@ -101,6 +101,19 @@ The following issues are fixed in Replication:
 
 The following issues are fixed in [!DNL Sites]:
 
+* If the customer is trying to access the editor of the content fragment models, they get a query error because of too many fragments on the dam. (SITES-6284)
+* Virtual container support. (SITES-5762)
+* Upgrading jquery-ui to latest version resulted in the breaking of the Editor. (SITES-5647)
+* A moved page is broken after Service Pack 12 (6.5.12.0). (SITES-5298)
+* Paths were getting deleted when AEM 6.5.12.0 was installed on existing 6.5.11.0 instance. (SITES-5088)
+* Apple 6.5.10 system crashing when using CF model editor, due to erroneous feature toggle check. (SITES-4967)
+* Adapt external index package to leverage selection Policy (fragment versus asset index). (SITES-4784)
+* Identify and remove Odin specific code from 6.5. (SITES-3574)
+* Allow new email templated under campaign and ambit. (NPR-38445)
+* TemplatedResource valueMap should allow deep reads as per ValueMap API. (NPR-38439)
+* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384)
+* When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component has to be reconfigured from scratch. (NPR-38361)
+*
 
 
 ## Sling {#sling-6513}
