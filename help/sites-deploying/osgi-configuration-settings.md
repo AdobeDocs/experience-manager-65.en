@@ -93,7 +93,7 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 **Apache Sling GET Servlet** Configure some aspects of rendering:
 
 * **Auto Index** to enable/disable directory rendering for browsing.
-* **Enable** (or disable) default renditions, such as **HMTL**, **Plain Text**, **JSON** or **XML**.
+* **Enable** (or disable) default renditions, such as **HTML**, **Plain Text**, **JSON** or **XML**.
   You should not disable JSON.
 
 >[!NOTE]
