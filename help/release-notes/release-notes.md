@@ -58,16 +58,18 @@ The following enhancements and fixes were made in [!DNL Assets]:
 
 The following issues are fixed in [!DNL Dynamic Media]:
 
-* In Image presets, visually challenged users who rely on screen readers are getting impacted if the Alt attribute is not implemented on an image in a page. (ASSETS-9817)
-* After adding a Dynamic Media component on a site and after publishing the page, the newly added Dynamic Media asset is not visible on the published page, nor it is viewable in the Preview page. This issue occurred for both image and video asset types. (ASSETS-9467)
-* Zero day exploit with the Java™ Spring Core Framework impacting Experience Manager 6.5.7 to 6.5.12. (ASSETS-9031)
+* Zero day exploit with the Java™ Spring Core Framework (CVE-2022-22963) impacting Adobe Experience Manager 6.5.12. (ASSETS-9031)
+* Token based secure preview for Dynamic Media assets on AEM Authors. (ASSETS-4995)
 * When creating an Image Preset for Dynamic Media in Experience Manager, the allowed maximum is limited to 2000x2000 pixels in the user interface. When the value is increased to 2001 pixels for either width or height, the **[!UICONTROL Save]** button is deactivated. (ASSETS-5691)
-* Visually challenged users who rely on screen readers are getting impacted as screen readers are narrating unlabeled image for the images present in the "Timeline segment" and in the "Actions" tab, when navigated to in the down arrow mode. (ASSETS-5651)
-* Users who rely on screen readers are getting impacted as Screen readers (NVDA/JAWS) are not narrating the Descriptive name (Send Email) for the "Send Email" button in the "EmailLink" dialog box, while navigating using (Browse/Cursor) modes. (ASSETS-5641)
-* Users who rely on keyboard navigation are getting impacted as Keyboard focus is not moving to the "Redo" button which appears after invoking the "Undo" button in the Image Set Editor page, while navigating using the TAB key on the keyboard. (ASSETS-5582)
-* Users who rely on screen readers are getting impacted as the Alt attribute is not provided for an Image Set image which is present under the Properties heading. (ASSETS-5576)
-* Users who rely on screen readers are getting impacted as screen readers are not narrating the heading role for `Cannot save this set` text in the `Cannot save this set` alert, while navigating using heading shortcut key (H), and Down Arrow key. (ASSETS-5569)
-* Users who rely on screen readers are getting impacted to navigate through the forms. They find difficulties understanding the information about the form controls if NVDA is not narrating the label information for the "Width and height" spin controls, present under the Responsive Image Crop header while navigating in NVDA form mode ‘F’. (ASSETS-5393)
+* User can prevent certain file formats from getting uploaded to Dynamic Media. (ASSETS-5693)
+* Accessibility - Visually challenged users who rely on screen readers are getting impacted if the Alt attribute is not implemented on an image on Image presets user interface. (ASSETS-9817)
+* Accessibility - Screen readers are getting impacted as screen readers narrate unlabeled image for the images present in the "Timeline segment" and in the "Actions" tab, when navigated to in the down arrow mode. (ASSETS-5651)
+* Accessibility - Screen readers are getting impacted as Screen readers (NVDA/JAWS) do not narrate the Descriptive name (Send Email) for the "Send Email" button in the "EmailLink" dialog box in Video player, while navigating using (Browse/Cursor) modes. (ASSETS-5641)
+* Accessibility - Keyboard focus is not moving to the "Redo" button which appears after invoking the "Undo" button in the Image Set Editor page, while navigating using the TAB key on the keyboard. (ASSETS-5582)
+* Accessibility - Users who rely on screen readers are getting impacted as the Alt attribute is not provided for an Image Set image which is present under the Properties heading. (ASSETS-5576)
+* Accessibility - Screen readers are not narrating the heading role for `Cannot save this set` text in the `Cannot save this set` alert, while navigating using heading shortcut key `H`, and Down Arrow key. (ASSETS-5569)
+* Accessibility - Users who rely on screen readers are getting impacted to navigate through the forms. They find difficulties understanding the information about the form controls if NVDA is not narrating the label information for the "Width and height" spin controls, present under the Responsive Image Crop header while navigating in NVDA form mode ‘F’. (ASSETS-5393)
+* After adding a Dynamic Media component on a site and after publishing the page, the newly added Dynamic Media asset is not visible on the published page, nor it is viewable in the Preview page. This issue occurred for both image and video asset types. (ASSETS-9467)
 
 ## Commerce {#commerce-6513}
 
