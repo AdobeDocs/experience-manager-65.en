@@ -114,6 +114,48 @@ The following issues are fixed in [!DNL Sites]:
 * When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384)
 * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component has to be reconfigured from scratch. (NPR-38361)
 *
+* Updated Image is not visible When a new image is dragged on top of an existing image the updated image is not visible in RTE - Classic UI. (NPR-38141)
+
+* Some strings in the Content Fragment Model editor are not localized. (NPR-38126)
+
+* For invalid tags, graceful handling of error message is not working as expected. (NPR-38106)
+
+* The unique field validation query is now fixed. (NPR-38142)
+
+* Text component is misaligned when added to nested Layout Containers. (NPR-38193)
+
+* The "Approve for Adobe Campaign" workflow was only running for pages which are of type or extending the resource types: "mcm/neolane/components/newsletter", "mcm/campaign/components/newsletter" and "mcm/campaign/components/campaign_newsletterpage". (NPR-38204)
+
+* Update of Content Fragment references is returning an invalid JSON response via Dispatcher. (NPR-38205)
+
+* Content Fragment Model Rich Text Validation Prevents Blocks Saving a Content Fragment Model. (NPR-38210)
+
+* Context hub UI models are not rendering properly without hard page refresh. (NPR-38212)
+
+* Content Fragment issue with the boolean property not showing Field Text in "title" rather showing 'Property Name'. (NPR-38244)
+
+* An unexpected error message is coming in Postman, when executing the graphQL persisted query having query variables. (NPR-38251)
+
+* Job queue configuration is incorrect. (NPR-38269)
+
+* Template changes won’t get published until you publish a page that uses that template. (NPR-38274)
+
+* Unclosed ResourceResolver in com.day.cq.wcm.workflow.impl.WcmWorkflowServiceImpl.autoSubmitPageAfterModification (NPR-38286)
+
+* When using the Navigate to Page action in the References for an Experience Fragment, it opens the wrong page. (NPR-38062)
+
+* Error while executing persisted query with query variable via Postman. (NPR-38057)
+
+* After applying SP11 to the Publish instance of AEM 6.5.6, the display result of the Content Fragment set in the published page changes. (NPR-38055)
+
+* The Configuration Manager now allows you to set the Content Fragment Model config on a sub-config folder. (NPR-38054)
+
+* Cannot remove users from user groups. (NPR-38041)
+
+* The property useLegacyResponsiveBehaviour only works when authenticated. (NPR-37996)
+
+* When editing Content Fragment from the Assets Search Rail results page, it throws 'Not Found' error. (NPR-37810)
+
 
 
 ## Sling {#sling-6513}
