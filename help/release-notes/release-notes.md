@@ -20,11 +20,15 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are the following:
 
-<!-- WHO PROVIDES THIS CONTENT? -->
+>[!NOTE]
+>
+>WHO PROVIDES THIS CONTENT? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
 
 The following issues are fixed in [!DNL Experience Manager] 6.5.13.0:
 
-<!-- WHO PROVIDES THIS CONTENT? -->
+>[!NOTE]
+>
+>WHO PROVIDES THIS CONTENT? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
 
 ## [!DNL Assets] {#assets-6513}
 
@@ -78,6 +82,40 @@ The following issues are fixed in Commerce:
 The following issue is fixed in CRX:
 
 * Not possible to download a package if it has the special character `+` in the package name. (NPR-38102)
+
+## [!DNL Forms] {#forms-65130}
+
+<!-- KHUSHWANT IS OVER THIS SECTION -->
+
+>[!NOTE]
+>
+>* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
+
+<!-- **Adaptive Forms**
+
+
+
+**Form Data Model**
+
+
+
+**Interactive Communication**
+
+
+
+**Document Services**
+
+
+
+**Document Security**
+
+
+
+**Foundation JEE**
+
+
+
+**Workflow** -->
 
 ## Granite {#granite-6513}
 
@@ -199,41 +237,6 @@ The following issues are fixed in the user interface:
 The following issue is fixed in WCM:
 
 * Experience Manager MCM (Campaign) 6.5: Chinese Locale Naming Fixes. (CQ-4308973)
-
-<!-- ## [!DNL Forms] {#forms-65130}
-
-KHUSHWANT IS OVER THIS SECTION
-
->[!NOTE]
->
->* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
-
-**Adaptive Forms**
-
-
-
-**Form Data Model**
-
-
-
-**Interactive Communication**
-
-
-
-**Document Services**
-
-
-
-**Document Security**
-
-
-
-**Foundation JEE**
-
-
-
-**Workflow** -->
-
 
 ## Install 6.5.13.0 {#install}
 
@@ -388,11 +391,17 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.13.0:
 
+* [List of OSGi bundles included in Experience Manager 6.5.12.0](assets/65120_bundles.txt)
 
+>[!NOTE]
+>
+>WHO PROVIDES THE .TXT FILE ABOVE? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
 
-* [List of OSGi bundles included in Experience Manager 6.5.12.0](assets/65120_bundles.txt) <!-- WHERE DOES THIS COME FROM? NEEDS TO BE UPDATED/ADDED  -->
+* [List of Content Packages included in Experience Manager 6.5.12.0](assets/65120_packages.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.12.0](assets/65120_packages.txt) <!-- WHERE DOES THIS COME FROM? NEEDS TO BE UPDATED/ADDED-->
+>[!NOTE]
+>
+>WHO PROVIDES THE .TXT FILE ABOVE? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
 
 ## Restricted websites {#restricted-sites}
 
