@@ -56,7 +56,7 @@ The following enhancements and fixes were made in [!DNL Assets]:
 
 The following issues are fixed in [!DNL Dynamic Media]:
 
-* Zero day exploit with the Java™ Spring Core Framework (CVE-2022-22963) impacting Adobe Experience Manager 6.5.12. (ASSETS-9031)
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Zero day exploit with the Java™ Spring Core Framework (CVE-2022-22963) impacting Adobe Experience Manager 6.5.12. (ASSETS-9031) -->
 * Token based secure preview for Dynamic Media assets on AEM Authors. (ASSETS-4995)
 * When creating an Image Preset for Dynamic Media in Experience Manager, the allowed maximum is limited to 2000x2000 pixels in the user interface. When the value is increased to 2001 pixels for either width or height, the **[!UICONTROL Save]** button is deactivated. (ASSETS-5691)
 * User can prevent certain file formats from getting uploaded to Dynamic Media. (ASSETS-5693)
@@ -126,23 +126,25 @@ The following issues are fixed in Granite:
 
 ## Integrations {#integrations-6513}
 
-The following issues are fixed in Integrations:
+The following issue is fixed in Integrations:
 
 * Leak of resource resolver sessions on Test and Target service from deprecated UserInfoServlet. (NPR-38112)
-* AEM‑OP‑13 ‑ HTTP Parameter Pollution in `com.day.cq.searchpromote.impl.servlet`. (NPR-38033)
-* Analytics 2.0 IMS support added to Experience Manager 6.5. (NPR-37914)
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑13 ‑ HTTP Parameter Pollution in `com.day.cq.searchpromote.impl.servlet`. (NPR-38033) -->
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Analytics 2.0 IMS support added to Experience Manager 6.5. (NPR-37914) -->
 
 ## Oak - Indexing and Queries {#oak-6513}
 
-The following issues are fixed in Oak:
+The following issue is fixed in Oak:
 
-* Create a CFP based on latest 6.5.12 and update Oak-related bundle versions. (NPR-38144)
+* The Oak version for 6.5.13.0 is now updated to 1.22.11. (NPR-38084)
+
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Create a CFP based on latest 6.5.12 and update Oak-related bundle versions. (NPR-38144) -->
 
 ## Platform {#platform-6513}
 
 The following issues are fixed in Platform:
 
-* RTC : Universal XSS through cq-rewriter HtmlParser. (NPR-38064)
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * RTC : Universal XSS through cq-rewriter HtmlParser. (NPR-38064) -->
 * Upgrade dependency of `org.apache.httpcomponents.httpclient` in Experience Manager 6.5. (NPR-37999)
 * High Author load due to path field suggestions. (CQ-4341826)
 * User must refresh the page when they change the project from Card view to Calendar view. (CQ-4340368)
@@ -171,7 +173,7 @@ The following issues are fixed in [!DNL Sites]:
 * Paths were getting deleted when AEM 6.5.12.0 was installed on existing 6.5.11.0 instance. (SITES-5088)
 * Apple 6.5.10 system crashing when using CF model editor, due to erroneous feature toggle check. (SITES-4967)
 * Adapt external index package to use selection Policy (fragment versus asset index). (SITES-4784)
-* Identify and remove Odin specific code from 6.5. (SITES-3574)
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Identify and remove Odin specific code from 6.5. (SITES-3574) -->
 * Allow new email templated under campaign and ambit. (NPR-38445)
 * TemplatedResource valueMap should allow deep reads as per ValueMap API. (NPR-38439)
 * When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384)
@@ -207,7 +209,7 @@ The following issues are fixed in Sling:
 
 * Memory leak in `DiscoveryLiteDescriptor`. (NPR-38288)
 * Update `sling-javax.activation` bundle with fix of SLING-8777. (NPR-38077)
-* Security issues reported under `org.apache.sling.scripting.jst`. (NPR-38067)
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Security issues reported under `org.apache.sling.scripting.jst`. (NPR-38067) -->
 
 ## Translation projects {#translation-6513}
 
@@ -228,7 +230,7 @@ The following issues are fixed in the user interface:
 * When you are on start page > Tools section and click the Adobe Experience Manager icon, the Adobe Experience Manager Navigation screen should pop up. (NPR-38417)
 * Enable ES6 for `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Enable ES6 for `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
-* AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301)
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
 * Date picker in touch UI displays in Korean. (NPR-38079)
 * Authoring dialog with multifields, upon reordering the fields loosing the radio button selection value. (NPR-38063)
 
@@ -353,7 +355,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 * If you are using Content Fragments and GraphQL, Adobe recommends that you install the following packages on top of 6.5.12.0:
 
-  * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this hot fix replaces SP12, but can be installed on top of SP12)
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this hot fix replaces SP12, but can be installed on top of SP12) -->
   
   * [AEM Content Fragment with GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
