@@ -40,7 +40,7 @@ Before you use or configure this capability, ensure the following:
 
 Authors search for images and the following types of documents in Content Finder and drag the searched assets in Page Editor. Documents are added to the `Download` component and images to the `Image` component. Authors may also add the remote assets in any custom [!DNL Experience Manager] component that extends the default `Download` or `Image` components. The supported formats are:
 
-* **Image formats**: The formats that the [Image component](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html) supports.
+* **Image formats**: The formats that the [Image component](assets-formats.md#supported-raster-image-formats) supports.
 * **Document formats**: See the [supported document formats](assets-formats.md#supported-document-formats).
 
 ### Users and groups involved {#users-and-groups-involved}
