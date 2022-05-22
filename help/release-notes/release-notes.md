@@ -20,13 +20,13 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are the following:
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >WHO PROVIDES THIS CONTENT? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
 
 The following issues are fixed in [!DNL Experience Manager] 6.5.13.0:
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >WHO PROVIDES THIS CONTENT? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
 
@@ -393,17 +393,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.13.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.12.0](assets/65120_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.13.0](assets/65130_bundles.txt)
 
->[!NOTE]
->
->WHO PROVIDES THE .TXT FILE ABOVE? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
-
-* [List of Content Packages included in Experience Manager 6.5.12.0](assets/65120_packages.txt)
-
->[!NOTE]
->
->WHO PROVIDES THE .TXT FILE ABOVE? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
+* [List of Content Packages included in Experience Manager 6.5.13.0](assets/65130_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
