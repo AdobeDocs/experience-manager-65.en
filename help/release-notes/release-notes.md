@@ -89,8 +89,7 @@ The following issue is fixed in CRX:
 
   `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
 
-* The Radio button, Checkbox, and File Upload components are not correctly translated from German language to English language. (“NPR-38527”)
-
+* The Radio button, Checkbox, and File Upload components are not correctly translated from German language to English language. (NPR-38527)
 * The PDF417 barcode encoding produced by Experience Manager Forms is invalid for a radio button group. (NPR-38525)
 * The following error occurs on submitting an Adaptive Form.
   `WARN [10.172.114.236 [1650871578492] POST /lc/content/forms/af/public/DHS-3754-ENG/jcr:content/guideContainer.af.internalsubmit.jsp HTTP/1.1] com.adobe.aemds.guide.internal.impl.utils.SubmitDataCollector TemplateKey not found in merge json:cq:responsive` (NPR-38520)
