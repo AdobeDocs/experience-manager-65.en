@@ -66,7 +66,7 @@ The following issues are fixed in [!DNL Dynamic Media]:
 * Accessibility - Keyboard focus is not moving to the "Redo" button which appears after invoking the "Undo" button in the Image Set Editor page, while navigating using the TAB key on the keyboard. (ASSETS-5582)
 * Accessibility - Users who rely on screen readers are getting impacted as the Alt attribute is not provided for an Image Set image which is present under the Properties heading. (ASSETS-5576)
 * Accessibility - Screen readers are not narrating the heading role for `Cannot save this set` text in the `Cannot save this set` alert, while navigating using heading shortcut key `H`, and Down Arrow key. (ASSETS-5569)
-* Accessibility - Users who rely on screen readers are getting impacted to navigate through the forms. They find difficulties understanding the information about the form controls if NVDA is not narrating the label information for the "Width and height" spin controls that are present under the Responsive Image Crop header while navigating in NVDA form mode ‘F’. (ASSETS-5393)
+* Accessibility - Users who rely on screen readers are getting impacted to navigate through the forms. They find difficulties understanding the information about the form controls if NVDA is not narrating the label information for the "Width and height" spin controls. These controls that are present under the Responsive Image Crop header while navigating in NVDA form mode ‘F’. (ASSETS-5393)
 * After adding a Dynamic Media component on a site and after publishing the page, the newly added Dynamic Media asset is not visible on the published page, nor it is viewable in the Preview page. This issue occurred for both image and video asset types. (ASSETS-9467)
 
 ## Commerce {#commerce-6513}
@@ -124,36 +124,21 @@ The following issue is fixed in CRX:
 * User is unable to set custom time in Job Purge Scheduler. (CQ-4339192)
 * User is unable to update any configuration under endpoint management UI and encounter error ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 
-
-
-
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
 <!-- **Adaptive Forms**
 
-
-
 **Form Data Model**
-
-
 
 **Interactive Communication**
 
-
-
 **Document Services**
-
-
 
 **Document Security**
 
-
-
 **Foundation JEE**
-
-
 
 **Workflow** -->
 
