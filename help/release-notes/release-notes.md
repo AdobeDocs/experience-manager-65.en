@@ -34,23 +34,23 @@ The following issues are fixed in [!DNL Experience Manager] 6.5.13.0:
 
 The following enhancements and fixes were made in [!DNL Assets]:
 
-* When a dropdown is configured as Disable edit in the metadata schema, when editing an asset metadata and saving changes, the disabled Dropdown field value deleted. (NPR-38389)
-* FFMpeg transcoding process step fails for mp4 without video, preventing workflow completion. (NPR-38116)
-* Improvements in AssetReferenceSearch in 6.5. (NPR-38061)
+* When trying to edit a read-only dropdown field, the dropdown value gets reset to empty. (NPR-38389)
+* The user is not able to ingest a video (.mp4) asset if there is no audio in the video file. The DAM Update Asset workflow fails and reflects an error message. (NPR-38116)
+* When using the Move Asset Wizard to move a folder containing assets, the workflow fails and reflects an error message. (NPR-38061)
 * FFmpeg transcoding workflow failing for FLV Video profile. (CQ-4343249)
-* Browser performance issues in Metadata editor. (CQ-4341359)
-* Smart Collection issue when filtering by Publish status. (CQ-4341191)
-* Unable to change Label "Sort by" and drop-down in Assets Console by language preference. (CQ-4339306)
-* User experience issue with Metadata Schema rules for drop-down list. (ASSETS-9442)
+* After updating to Experience Manager 6.5 SP10, the asset metadata editor is not working properly. (CQ-4341359)
+* When opening a Smart Collection which is saved with the search filter applied as Publish, the search filter automatically changes to Unpublished. (CQ-4341191)
+* When switching language in **[!UICONTROL User Preference]**, the label **[!UICONTROL Sort By]**, drop-down button, and other options within the sort options on the Asset homepage are not reflected in the selected language. (CQ-4339306)
+* When adding a rule to a drop-down field in **[!UICONTROL Metadata Schema]**, the **[!UICONTROL Dependent On]** list does not reflect the field label of the drop-down. (ASSETS-9442)
 * Assets Metadata disabled drop-down not retaining values. (ASSETS-8918)
-* Unable to display correct annotation when asset is viewed using "More details" in Column view. (ASSETS-8851)
-* Create version with a duplicate does not work. (ASSETS-8607)
+* When viewing the asset using **[!UICONTROL More Details]** option in **[!UICONTROL Column]** view, incorrect annotations are displayed. (ASSETS-8851)
+* When creating a duplicate asset with a different version, the renditions are not generated. (ASSETS-8607)
 
-* Asset able to be published while in 'Check Out' state by other non-admin user. (NPR-38128)
+* A non-admin user is able to publish an asset that is already checked out by another user. (NPR-38128)
 * Dimensional viewer is not functional on Chrome 97. (CQ-4340456)
 * Asset download button does not show complete menu on the asset Details page. (CQ-4336703)
-* Unlocalized "Allow download of renditions of file" and "Search/Add Email Address" strings in link sharing dialog box. (CQ-4330540)
-* The string `[[0]] selected` is untranslated in Manage Publication Add Items dialog box. (CQ-4330491)
+* When using Link Share, some of the strings in the link sharing window are not localized. (CQ-4330540)
+* When adding items in Manage Publication, the string that reflects the count of selected items is not localized. (CQ-4330491)
 
 ### [!DNL Dynamic Media] {#dynamic-media-6513}
 
@@ -66,7 +66,7 @@ The following issues are fixed in [!DNL Dynamic Media]:
 * Accessibility - Keyboard focus is not moving to the "Redo" button which appears after invoking the "Undo" button in the Image Set Editor page, while navigating using the TAB key on the keyboard. (ASSETS-5582)
 * Accessibility - Users who rely on screen readers are getting impacted as the Alt attribute is not provided for an Image Set image which is present under the Properties heading. (ASSETS-5576)
 * Accessibility - Screen readers are not narrating the heading role for `Cannot save this set` text in the `Cannot save this set` alert, while navigating using heading shortcut key `H`, and Down Arrow key. (ASSETS-5569)
-* Accessibility - Users who rely on screen readers are getting impacted to navigate through the forms. They find difficulties understanding the information about the form controls if NVDA is not narrating the label information for the "Width and height" spin controls, present under the Responsive Image Crop header while navigating in NVDA form mode ‘F’. (ASSETS-5393)
+* Accessibility - Users who rely on screen readers are getting impacted to navigate through the forms. They find difficulties understanding the information about the form controls if NVDA is not narrating the label information for the "Width and height" spin controls that are present under the Responsive Image Crop header while navigating in NVDA form mode ‘F’. (ASSETS-5393)
 * After adding a Dynamic Media component on a site and after publishing the page, the newly added Dynamic Media asset is not visible on the published page, nor it is viewable in the Preview page. This issue occurred for both image and video asset types. (ASSETS-9467)
 
 ## Commerce {#commerce-6513}
