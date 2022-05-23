@@ -244,7 +244,7 @@ The following issue is fixed in WCM:
 
 **Setup requirements and more information** 
 
-<!-- Remaining content from here to bottom stays the same except for version updating as needed -->
+<!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback -->
 
 * Experience Manager 6.5.13.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
@@ -393,9 +393,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.13.0:
 
-* [List of OSGi bundles included in Experience Manager 6.5.13.0](assets/65130_bundles.txt)
+* [List of OSGi bundles included in Experience Manager 6.5.13.0](/help/release-notes/assets/65130_bundles.txt)
 
-* [List of Content Packages included in Experience Manager 6.5.13.0](assets/65130_packages.txt)
+* [List of Content Packages included in Experience Manager 6.5.13.0](/help/release-notes/assets/65130_packages.txt)
 
 ## Restricted websites {#restricted-sites}
 
