@@ -120,7 +120,7 @@ The following issue is fixed in CRX:
 * For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
 * Unable to convert an Image to PDF using the PDFG service with OCR, after applying the AEMForms-6.5.0-0038 (log4jv2.16) patch. (CQ-4342450)
 * Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
-* Unable to import a Microsoft® Word file to Forms Designer. User encounters error `Word (version XP or onwards) could not be found on the machine. (CQ-4342146)
+* Unable to import a Microsoft® Word file to Forms Designer. User encounters error `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
 * In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899)
 * User is unable to set custom time in Job Purge Scheduler. (CQ-4339192)
 * User is unable to update any configuration under endpoint management UI and encounter error ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
