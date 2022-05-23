@@ -128,74 +128,44 @@ The following issues are fixed in [!DNL Dynamic Media]:
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date.
 
-**Adaptive Forms**
+* When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
 
-* When a text component in an adaptive form contains a table, pasting content into the component results in erasing the table in the editor (NPR-38078).
+  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
 
-* A form displays a toolbar only when you open a saved form (NPR-38060).
-
-* The undo operation does not work correctly for the rule editor (NPR-37973).
-
-* `getAemFormContainer` returns a null pointer after installing AEM Forms 6.5.10.0 (NPR-37881).
-
-* Accessibility - The screen reader announces the long description of a text box as soon as the tab focus shifts to the field instead of announcing only when you click the field (NPR-37855).
-
-* When you enable the Allow Rich Text property for a text box, there are issues with the maximum allowed character length (NPR-37825).
-
-* CSS issues when you copy any component in an adaptive form (NPR-37812).
-
-* While generating the adaptive forms translation the generated XLIFF file does not contain the same sequence of texts as in the Adaptive Form. In some cases it is needed to see the context of the texts. This is not possible if the sequence in XLIFF is alphabetic. (NPR-37435).
-
-* When an adaptive form is translated, the HTML tags are part of the translation. If a user makes a mistake and the tags are not valid, the whole text is not shown in the document of record. (NPR-37499)
-
-* When an adaptive form is created and finalized in base language and translation is done by an external team and imported. If there even a small change of text like addition or missing dot (.) is done in the for the base language, the complete translation goes missing for all other languages. (NPR-37189)
-
-**Form Data Model**
-
-* Issue while saving adaptive form attachments connected to a Form Data Model to the database (CQ-4338561).
-
-**Interactive Communication**
-
-* The Reference tab does not list any references in an Interactive Communication (NPR-37995).
-
-**Document Services**
-
-* Assembler does not embed fonts, as expected (NPR-38056).
-
-* Unable to convert PDF to PDFA using workbench (NPR-37879).
-
-* Issues with office documents while using the PDF Generator service after upgrading from AEM 6.5.7.0 Forms to AEM 6.5.10.0 Forms (NPR-37758).
-
-**Document Security**
-
-* PDF encryption does not work after upgrading to java version 1.8.0_281 (NPR-37716).
-
-**Foundation JEE**
-
-* Multithreaded PDF Generator service deadlocks after a random amount of time for AEM 6.5.7.0 Forms (NPR-38053).
-
-* In the AEM Workbench version 6.5.0.20210518.1.338459, when you use a email startpoint and edit the username and password, the configurations are not saved (NPR-37967, CQ-4336081).
-
-* Saving logs result in high CPU utilization that requires a server restart (NPR-37868).
-
-* `Gemfire.log` does not get created in the `temp\adobejb_server1\Caching` folder after installing AEM Forms-6.5.0-0038 (CQ-4340237).
-
-* The following error displays after executing the `ConfigurationManager.sh` command (CQ-4338323):
-
-  ```TXT
-    [root@localhost bin]# ./ConfigurationManager.sh 
-    bash: ./ConfigurationManagerCLI.sh: /bin/sh^M: bad interpreter: No such file or directory
-  ```
-
-* AEM 6.5 Forms on RHEL8 does not support JBOSS EAP 7.3 and MySQL8 (CQ-4331770).
-
-**Workflow**
-
-* Issues while storing UTF-8 special characters as part of a workflow on AEM 6.5.10.0 Forms publish instance (NPR-37673).
-
-* Issue while creating variable of ArrayList type and JSON subtype (NPR-37600).
-
-* Issues with XPath/Dot Notation browser with Set Variable step in Workflow in AEM 6.5.9.0 Forms and AEM 6.5.10.0 Forms (CQ-4336582).
+* The Radio button, Checkbox, and File Upload components are not correctly translated from German language to English language. (NPR-38527)
+* The PDF417 barcode encoding produced by Experience Manager Forms is invalid for a radio button group. (NPR-38525)
+* The following error occurs on submitting an Adaptive Form.
+  `WARN [10.172.114.236 [1650871578492] POST /lc/content/forms/af/public/DHS-3754-ENG/jcr:content/guideContainer.af.internalsubmit.jsp HTTP/1.1] com.adobe.aemds.guide.internal.impl.utils.SubmitDataCollector TemplateKey not found in merge json:cq:responsive` (NPR-38520)
+* The Exclude hidden fields from Document of Record option does not work. (NPR-38512)
+* After adding Forms Container component to a Sites page, users are unable to traverse to a different Sites page and Sites page hangs on some occasions. The issue appears intermittently. (NPR-38506)  
+* Users experience overlapping text in Adaptive Forms after applying Experience Manager 6.5 Service Pack 11. (NPR-38376, CQ-4342472)
+* Users encounter an exception on moving adaptive form panels to new responsive layout. (NPR-38369)
+* ECMASCRIPT 6 (ES6) support is not enabled for the client library ` /libs/fd/expeditor/clientlibs/view`. (NPR-38358)        
+* When you use an Experience Manager Workflow to send an email in Hebrew language, the email received at user’s end contains question marks (??) instead of Hebrew language text (NPR-38296).     
+* Users are randomly logged out of experience manager publish instances and an Adaptive Form fails to submit. The issue appears on Experience Manager instances that use Dispatcher. (NPR-38285)     
+* When you use the getFormDataString option in an Adobe Launch's rule to capture the Adaptive Form data, the option does not return Adaptive Forms data. (NPR-38283)
+* Experience Manager 6.5 Forms deprecated java.acl.Group-related API and the following error messages appear in error.log file: 
+  ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)
+* Forms created in German language fail to translate to English or any other language. (NPR-38280)
+* When you use a localized version of an Adaptive form, the corresponding Document of Record (DoR) is not localized. (NPR-38235)
+* When you use the Send Email step to send an attachment along with email, the attachment does not retain name specified in the Workflow step. (NPR-38216)
+* When a new version of the letter is published, users unable to open the draft letters for previous versions of the letters. (NPR-38215, CQ-4342515)
+* On invoking an AEM Forms JEE service SOAP end-point service method on a button click configured as an Adaptive Form rule, the SOAP service fails with below exception:
+  `ERROR* [0:0:0:0:0:0:0:1 [1624362360493] POST /content/forms/af/testsoapwsdl/jcr:content/guideContainer.af.dermis HTTP/1.1] com.adobe.aemds.guide.addon expeditor.servlet.ExpEditorServiceManager Error while making web service related call java.lang.Exception: createSOAPParam: JSONException`
+* On using com.adobe.fd.pdfutility.services.PDFUtilityService#convertPDFtoXDP to convert a PDF to XDP format, an invalid XDP file is returned. (NPR-38140, CQ-4342099)
+* When multiple users use Correspondence Management to generate different letters, on preview, a wrong letter is displayed to some users. (NPR-38134)
+* AEM Forms component embedded in the SITES page uses the width attribute that has value in % and is not valid as per W3C HTML validation. Users encounter bad parsing error during HTML validation. (NPR-38124)
+* Radio button and checkbox items for most of the OOTB themes in adaptive forms are not part of the tabbing order (NPR-38108)
+* When a user adds HTML tags to the comment section while executing a workflow, the HTML tags are rendered. (NPR-37591)   
+* On importing and publishing a letter that includes a new XDP file, the letters fail to preview on the Publish instance. However, if the letters are imported and published a second time using the same CMP file the letters are previewed successfully. (CQ-4343599)
+* A form with the Prepare data process property set fails to render in HTML Workspace. (CQ-4343294)
+* For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+* Unable to convert an Image to PDF using the PDFG service with OCR, after applying the AEMForms-6.5.0-0038 (log4jv2.16) patch. (CQ-4342450)
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+* Unable to import a Microsoft® Word file to Forms Designer. User encounters error `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899)
+* User is unable to set custom time in Job Purge Scheduler. (CQ-4339192)
+* User is unable to update any configuration under endpoint management UI and encounter error ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 
 For information on security updates, see [[!DNL Experience Manager] security bulletins page](https://helpx.adobe.com/security/products/experience-manager.html).
 
