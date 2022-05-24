@@ -20,15 +20,11 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are the following:
 
->[!IMPORTANT]
->
->WHO PROVIDES THIS CONTENT? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
+* Oak version for 6.5.13.0 is now updated to 1.22.11. (NPR-38084)
 
 The following issues are fixed in [!DNL Experience Manager] 6.5.13.0:
 
->[!IMPORTANT]
->
->WHO PROVIDES THIS CONTENT? I DON'T HAVE IT OR KNOW WHERE TO FIND IT.
+
 
 ## [!DNL Assets] {#assets-6513}
 
@@ -157,11 +153,11 @@ The following issue is fixed in Integrations:
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑13 ‑ HTTP Parameter Pollution in `com.day.cq.searchpromote.impl.servlet`. (NPR-38033) -->
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Analytics 2.0 IMS support added to Experience Manager 6.5. (NPR-37914) -->
 
-## Oak - Indexing and Queries {#oak-6513}
+<!-- ## Oak - Indexing and Queries {#oak-6513}
 
 The following issue is fixed in Oak:
 
-* The Oak version for 6.5.13.0 is now updated to 1.22.11. (NPR-38084)
+* The Oak version for 6.5.13.0 is now updated to 1.22.11. (NPR-38084) -->
 
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Create a CFP based on latest 6.5.12 and update Oak-related bundle versions. (NPR-38144) -->
 
