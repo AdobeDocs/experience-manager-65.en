@@ -14,17 +14,15 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 | Date     | May 26, 2022               |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.13.0.zip) |
 
-## What is included in [!DNL Adobe Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
+## What is included in [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
 
-[!DNL Adobe Experience Manager] 6.5.13.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the availability of 6.5 release in April 2019. The service pack is installed on [!DNL Adobe Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.13.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5.
 
-The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are the following:
+The key features and enhancements introduced in [!DNL Experience Manager] 6.5.13.0 are the following:
 
 * Oak version for 6.5.13.0 is now updated to 1.22.11. (NPR-38084)
 
-The following issues are fixed in [!DNL Experience Manager] 6.5.13.0:
-
-
+<!-- The following issues are fixed in [!DNL Experience Manager] 6.5.13.0: -->
 
 ## [!DNL Assets] {#assets-6513}
 
@@ -52,7 +50,7 @@ The following enhancements and fixes were made in [!DNL Assets]:
 
 The following issues are fixed in [!DNL Dynamic Media]:
 
-<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Zero day exploit with the Java™ Spring Core Framework (CVE-2022-22963) impacting Adobe Experience Manager 6.5.12. (ASSETS-9031) -->
+<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Zero day exploit with the Java™ Spring Core Framework (CVE-2022-22963) impacting Experience Manager 6.5.12. (ASSETS-9031) -->
 * Token based secure preview for Dynamic Media assets on AEM Authors. (ASSETS-4995)
 * When creating an Image Preset for Dynamic Media in Experience Manager, the allowed maximum is limited to 2000x2000 pixels in the user interface. When the value is increased to 2001 pixels for either width or height, the **[!UICONTROL Save]** button is deactivated. (ASSETS-5691)
 * User can prevent certain file formats from getting uploaded to Dynamic Media. (ASSETS-5693)
@@ -248,7 +246,7 @@ The following issues are fixed in translation projects:
 
 The following issues are fixed in the user interface:
 
-* When you are on start page > Tools section and click the Adobe Experience Manager icon, the Adobe Experience Manager Navigation screen should pop up. (NPR-38417)
+* When you are on start page > Tools section and click the Experience Manager icon, the Experience Manager Navigation screen should pop up. (NPR-38417)
 * Enable ES6 for `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Enable ES6 for `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
@@ -261,9 +259,9 @@ The following issue is fixed in WCM:
 
 * Experience Manager MCM (Campaign) 6.5: Chinese Locale Naming Fixes. (CQ-4308973)
 
-## Install 6.5.13.0 {#install}
+## Install Experience Manager 6.5.13.0 {#install}
 
-**Setup requirements and more information** 
+ 
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback -->
 
@@ -273,11 +271,9 @@ The following issue is fixed in WCM:
 
 >[!NOTE]
 >
->Adobe does not recommend removing or uninstalling the [!DNL Adobe Experience Manager] 6.5.13.0 package.
+>Adobe does not recommend removing or uninstalling the [!DNL Experience Manager] 6.5.13.0 package.
 
-### Install the service pack {#install-service-pack}
-
-To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, follow these steps:
+### Install the service pack on Experience Manager 6.5 {#install-service-pack}
 
 1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
 
@@ -297,17 +293,18 @@ To install the service pack on an [!DNL Adobe Experience Manager] 6.5 instance, 
 
 **Automatic installation**
 
-There are two ways to automatically install [!DNL Experience Manager] 6.5.13.0 on a working instance:
+There are two different methods you can use to automatically install [!DNL Experience Manager] 6.5.13.0.
 
-A. Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
-
-B. Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
+* Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
+* Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
 >[!NOTE]
 >
->Adobe Experience Manager 6.5.13.0 does not support Bootstrap installation.
+>Experience Manager 6.5.13.0 does not support Bootstrap installation.
 
 **Validate the installation**
+
+To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
 1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.13.0)` under [!UICONTROL Installed Products].
 
@@ -315,23 +312,22 @@ B. Use the [HTTP API from Package Manager](/help/sites-administering/package-man
 
 1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or later (Use Web Console: `/system/console/bundles`).
 
-To know the platforms certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-### Install Adobe Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+### Install Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
 >Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-1. Ensure that you have installed the Adobe Experience Manager Service Pack.
+1. Ensure that you have installed the Experience Manager Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Install Adobe Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+### Install Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Adobe Experience Manager Forms on JEE are delivered through a separate installer.
+>Skip if you are not using AEM Forms on JEE. Fixes in Experience Manager Forms on JEE are delivered through a separate installer.
 
 For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
@@ -374,9 +370,9 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-* If you are using Content Fragments and GraphQL, Adobe recommends that you install the following packages on top of 6.5.12.0:
+<!-- * If you are using Content Fragments and GraphQL, Adobe recommends that you install the following packages on top of 6.5.12.0:
 
-<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this hot fix replaces SP12, but can be installed on top of SP12) -->
+https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this hot fix replaces SP12, but can be installed on top of SP12) -->
   
 * [AEM Content Fragment with GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
@@ -401,7 +397,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
 
 * When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work.
-  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required) :
+  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required):
 
    ```xml
    "tags": [
@@ -423,7 +419,7 @@ The following text documents list the OSGi bundles and Content Packages included
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
 * [Product download at licensing.adobe.com](https://licensing.adobe.com/)
-* See [how to contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
+* [Contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >
