@@ -198,62 +198,33 @@ If you need to upgrade to a new version of the 1.10.x S3 connector (for example,
 1. Copy the jar files to **&lt;aem-install&gt;**/crx-quickstart/install/15 in the AEM installation folder.
 1. Start AEM and check the connector functionality.
 
-You can use the configuration file with the following options:
+### S3 Connector Configuration File Options {#s3-connector-configuration-file-options}
+   >[!NOTE]
+   >
+   >The S3 connector supports both IAM user authentication and IAM role authentication. To use IAM role authentication, simply omit the `accessKey` and `secretKey` values from your configuration file. The S3 connector will then default to the IAM role assigned to the instance.
 
-* accessKey: The AWS access key.
-* secretKey: The AWS secret access key. **Note:** Alternatively, [IAM roles](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) can be used for authentication. If you are using IAM roles you no longer need to specify the `accessKey` and `secretKey`.
-
-* s3Bucket: The bucket name.
-* s3Region: The bucket region.
-* path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**
-* minRecordLength: The minimum size of an object that should be stored in the data store. The minimum/default is **16KB.**
-* maxCachedBinarySize: Binaries with size less than or equal to this size will be stored in memory cache. The size is in bytes. The default is **17408 **(17 KB).
-
-* cacheSize: The size of the cache. The value is specified in bytes. The default is **64GB**.
-* secret: Only to be used if using binaryless replication for shared datastore setup.
-* stagingSplitPercentage: The percentage of cache size configured to be used for staging asynchronous uploads. The default value is **10**.
-* uploadThreads: The number of uploads threads that are used for asynchronous uploads. The default value is **10**.
-* stagingPurgeInterval: The interval in seconds for purging finished uploads from the staging cache. The default value is **300** seconds (5 minutes).
-* stagingRetryInterval: The retry interval in seconds for failed uploads. The default value is **600** seconds (10 minutes).
-
-### Bucket region options {#bucket-region-options}
-
-<table>
- <tbody>
-  <tr>
-   <td>US Standard</td>
-   <td><code>us-standard</code></td>
-  </tr>
-  <tr>
-   <td>US West</td>
-   <td><code>us-west-2</code></td>
-  </tr>
-  <tr>
-   <td>US West (Northern California)</td>
-   <td><code>us-west-1</code></td>
-  </tr>
-  <tr>
-   <td>EU (Ireland)<br /> </td>
-   <td><code>EU</code></td>
-  </tr>
-  <tr>
-   <td>Asia Pacific (Singapore)<br /> </td>
-   <td><code>ap-southeast-1</code></td>
-  </tr>
-  <tr>
-   <td>Asia Pacific (Sydney)<br /> </td>
-   <td><code>ap-southeast-2</code></td>
-  </tr>
-  <tr>
-   <td>Asia Pacific (Tokyo)</td>
-   <td><code>ap-northeast-1</code></td>
-  </tr>
-  <tr>
-   <td>South America (Sao Paolo)<br /> </td>
-   <td><code>sa-east-1</code></td>
-  </tr>
- </tbody>
-</table>
+| Key | Description | Default | Required |
+| --- | --- | --- | --- |
+| accessKey | Access Key ID for IAM user with access to bucket | | Yes, when not using IAM roles |
+| cacheSize | The size (in bytes) of the local cache | 64GB | No |
+| connectionTimeout | Sets the amount of time to wait (in milliseconds) when initially establishing a connection before giving up and timing out | 10000 | No |
+| maxCachedBinarySize | Binaries with size less than or equal to this value (in bytes) will be stored in memory cache | 17408 (17 KB) | No |
+| maxConnections | Sets the maximum number of allowed open HTTP connections | 50 | No |
+| maxErrorRetry | Sets the maximum number of retry attempts for failed retryable requests | 3 | No |
+| minRecordLength | The minimum size of an object (in bytes) that should be stored in the data store | 16384 | No |
+| path | The local path of the AEM datastore | `crx-quickstart/repository/datastore` | No |
+| proxyHost | Sets the optional proxy host the client will connect through | | No |
+| proxyPort | Sets the optional proxy port the client will connect through | | No |
+| s3Bucket | Name of the S3 bucket to use | | Yes |
+| s3EndPoint | S3 REST API endpoint | | No |
+| s3Region | Region where the bucket resides | Region where AWS instance is running | No |
+| secretKey | Secret access key for IAM user with access to bucket | | Yes, when not using IAM roles |
+| socketTimeout | Sets the amount of time to wait (in milliseconds) for data to be transferred over an established, open connection before the connection times out and is closed | 50000 | No |
+| stagingPurgeInterval | The interval (in seconds) for purging finished uploads from the staging cache | 300 | No |
+| stagingRetryInterval | The interval (in seconds) to retry failed uploads | 600 | No |
+| stagingSplitPercentage | The percentage of `cacheSize` to use for staging asynchronous uploads | 10 | No |
+| uploadThreads | The number of threads used for asynchronous uploads | 10 | No |
+| writeThreads | The number of concurrent threads to use for writing via S3 Transfer Manager | 10 | No |
 
 **DataStore Caching**
 
