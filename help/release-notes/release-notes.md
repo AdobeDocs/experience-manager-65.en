@@ -192,7 +192,7 @@ The following issue is fixed in Replication:
 The following issues are fixed in [!DNL Sites]:
 
 * If the customer is trying to access the editor of the content fragment models, they get a query error because of too many fragments on the dam. (SITES-6284)
-* Virtual container support. (SITES-5762)
+* Virtual container support - Adding a child component to a virtual container that is not yet present in the database implies the creation of a node to represent the container in content structure. (SITES-5762)
 * Upgrading jquery-ui to latest version resulted in the breaking of the Editor. (SITES-5647)
 * A moved page is broken after Service Pack 12 (6.5.12.0). (SITES-5298)
 * Paths were getting deleted when AEM 6.5.12.0 was installed on existing 6.5.11.0 instance. (SITES-5088)
@@ -214,7 +214,7 @@ The following issues are fixed in [!DNL Sites]:
 * Context hub UI models are not rendering properly without hard page refresh. (NPR-38212)
 * Content Fragment issue with the boolean property not showing Field Text in "title" rather showing 'Property Name'. (NPR-38244)
 * An unexpected error message is coming in Postman, when executing the graphQL persisted query having query variables. (NPR-38251)
-* Job queue configuration is incorrect. (NPR-38269)
+* Job queue configuration is incorrect - The OSGi configuration for the reference updater job queue has not been ported back to 6.5. This issue leads to jobs being run in the main queue, which has a higher priority and allows more jobs to run in parallel. This flow can lead to CPU exhaustion. (NPR-38269)
 * Template changes do not get published until you publish a page that uses that template. (NPR-38274)
 * Unclosed ResourceResolver in com.day.cq.wcm.workflow.impl.WcmWorkflowServiceImpl.autoSubmitPageAfterModification (NPR-38286)
 * When using the Navigate to Page action in the References for an Experience Fragment, it opens the wrong page. (NPR-38062)
@@ -224,7 +224,7 @@ The following issues are fixed in [!DNL Sites]:
 * Cannot remove users from user groups. (NPR-38041)
 * The property useLegacyResponsiveBehaviour only works when authenticated. (NPR-37996)
 * When editing Content Fragment from the Assets Search Rail results page, it throws 'Not Found' error. (NPR-37810)
-* Sites SEO enhancements to 6.5. (NPR-38219)
+* Sites SEO enhancements to 6.5 - It was not possible to remove the .html extension in the Sitemap and canonical link. (NPR-38219)
 * Style tab is blank on components without styles/policies. (NPR-38218)
 * Layout properties coming from XF Template not observed in side of a Page. (NPR-38214)
 
