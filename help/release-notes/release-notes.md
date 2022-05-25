@@ -1,13 +1,14 @@
 ---
 title: Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 6.5 notes outlining the release information, what's new, how to install, and detailed change lists."
+mini-toc-levels: 3 
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
 ## Release information {#release-information}
 
-| Products | [!DNL Adobe Experience Manager] 6.5 |
+| Product | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
 | Version  | 6.5.13.0                      |
 | Type     | Service Pack release         |
@@ -18,21 +19,17 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 [!DNL Experience Manager] 6.5.13.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5.
 
-The key features and enhancements introduced in [!DNL Experience Manager] 6.5.13.0 are the following:
-
-* Oak version for 6.5.13.0 is now updated to 1.22.11. (NPR-38084)
+The following bug fixes, key features, and enhancements were introduced in [!DNL Experience Manager] 6.5.13.0:
 
 <!-- The following issues are fixed in [!DNL Experience Manager] 6.5.13.0: -->
 
 ## [!DNL Assets] {#assets-6513}
 
-The following enhancements and fixes were made in [!DNL Assets]:
-
 * When trying to edit a read-only dropdown field, the dropdown value gets reset to empty. (NPR-38389)
 * The user is not able to ingest a video (.mp4) asset if there is no audio in the video file. The DAM Update Asset workflow fails and reflects an error message. (NPR-38116)
 * When using the Move Asset Wizard to move a folder containing assets, the workflow fails and reflects an error message. (NPR-38061)
 * FFmpeg transcoding workflow failing for FLV Video profile. (CQ-4343249)
-* After updating to Experience Manager 6.5 SP10, the asset metadata editor is not working properly. (CQ-4341359)
+* After updating to [!DNL Experience Manager] 6.5 SP10, the asset metadata editor is not working properly. (CQ-4341359)
 * When opening a Smart Collection which is saved with the search filter applied as Publish, the search filter automatically changes to Unpublished. (CQ-4341191)
 * When switching language in **[!UICONTROL User Preference]**, the label **[!UICONTROL Sort By]**, drop-down button, and other options within the sort options on the Asset homepage are not reflected in the selected language. (CQ-4339306)
 * When adding a rule to a drop-down field in **[!UICONTROL Metadata Schema]**, the **[!UICONTROL Dependent On]** list does not reflect the field label of the drop-down. (ASSETS-9442)
@@ -48,11 +45,9 @@ The following enhancements and fixes were made in [!DNL Assets]:
 
 ### [!DNL Dynamic Media] {#dynamic-media-6513}
 
-The following issues are fixed in [!DNL Dynamic Media]:
-
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Zero day exploit with the Java™ Spring Core Framework (CVE-2022-22963) impacting Experience Manager 6.5.12. (ASSETS-9031) -->
 * Token based secure preview for Dynamic Media assets on AEM Authors. (ASSETS-4995)
-* When creating an Image Preset for Dynamic Media in Experience Manager, the allowed maximum is limited to 2000x2000 pixels in the user interface. When the value is increased to 2001 pixels for either width or height, the **[!UICONTROL Save]** button is deactivated. (ASSETS-5691)
+* When creating an Image Preset for Dynamic Media in [!DNL Experience Manager], the allowed maximum is limited to 2000x2000 pixels in the user interface. When the value is increased to 2001 pixels for either width or height, the **[!UICONTROL Save]** button is deactivated. (ASSETS-5691)
 * User can prevent certain file formats from getting uploaded to Dynamic Media. (ASSETS-5693)
 * Accessibility - Visually challenged users who rely on screen readers are getting impacted if the Alt attribute is not implemented on an image on Image presets user interface. (ASSETS-9817)
 * Accessibility - Screen readers are getting impacted as screen readers narrate unlabeled image for the images present in the "Timeline segment" and in the "Actions" tab, when navigated to in the down arrow mode. (ASSETS-5651)
@@ -65,15 +60,11 @@ The following issues are fixed in [!DNL Dynamic Media]:
 
 ## Commerce {#commerce-6513}
 
-The following issues are fixed in Commerce:
-
 * "everyone" has jcr:write on `/content/usergenerated/etc/commerce/smartlists`. (NPR-35230)
 * Local sorting of Commerce Products does not work anymore. (CQ-4343750)
 * Unable to Quick Publish a product from search results page after changing properties. (CQ-4343318)
 
 ## CRX {#crx-6513}
-
-The following issue is fixed in CRX:
 
 * Not possible to download a package if it has the special character `+` in the package name. (NPR-38102)
 
@@ -84,18 +75,18 @@ The following issue is fixed in CRX:
   `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
 
 * The Radio button, Checkbox, and File Upload components are not correctly translated from German language to English language. (NPR-38527)
-* The PDF417 barcode encoding produced by Experience Manager Forms is invalid for a radio button group. (NPR-38525)
+* The PDF417 barcode encoding produced by [!DNL Experience Manager] Forms is invalid for a radio button group. (NPR-38525)
 * The following error occurs on submitting an Adaptive Form.
   `WARN [10.172.114.236 [1650871578492] POST /lc/content/forms/af/public/DHS-3754-ENG/jcr:content/guideContainer.af.internalsubmit.jsp HTTP/1.1] com.adobe.aemds.guide.internal.impl.utils.SubmitDataCollector TemplateKey not found in merge json:cq:responsive` (NPR-38520)
 * The Exclude hidden fields from Document of Record option does not work. (NPR-38512)
 * After adding Forms Container component to a Sites page, users are unable to traverse to a different Sites page and Sites page hangs on some occasions. The issue appears intermittently. (NPR-38506)  
-* Users experience overlapping text in Adaptive Forms after applying Experience Manager 6.5 Service Pack 11. (NPR-38376, CQ-4342472)
+* Users experience overlapping text in Adaptive Forms after applying [!DNL Experience Manager] 6.5 Service Pack 11. (NPR-38376, CQ-4342472)
 * Users encounter an exception on moving adaptive form panels to new responsive layout. (NPR-38369)
 * ECMASCRIPT 6 (ES6) support is not enabled for the client library ` /libs/fd/expeditor/clientlibs/view`. (NPR-38358)        
-* When you use an Experience Manager Workflow to send an email in Hebrew language, the email received at user’s end contains question marks (??) instead of Hebrew language text (NPR-38296).     
-* Users are randomly logged out of experience manager publish instances and an Adaptive Form fails to submit. The issue appears on Experience Manager instances that use Dispatcher. (NPR-38285)     
+* When you use an [!DNL Experience Manager] Workflow to send an email in Hebrew language, the email received at user’s end contains question marks (??) instead of Hebrew language text (NPR-38296).     
+* Users are randomly logged out of [!DNL Experience Manager] Publish instances and an Adaptive Form fails to submit. The issue appears on [!DNL Experience Manager] instances that use Dispatcher. (NPR-38285)     
 * When you use the getFormDataString option in an Adobe Launch's rule to capture the Adaptive Form data, the option does not return Adaptive Forms data. (NPR-38283)
-* Experience Manager 6.5 Forms deprecated java.acl.Group-related API and the following error messages appear in error.log file: 
+* [!DNL Experience Manager] 6.5 Forms deprecated java.acl.Group-related API and the following error messages appear in error.log file: 
   ` *WARN* [default task-36] org.apache.jackrabbit.oak.spi.security.principal.AclGroupDeprecation use of deprecated java.acl.Group-related API - this method is going to be removed in future Oak releases - see OAK-7358 for details` (NPR-38282)
 * Forms created in German language fail to translate to English or any other language. (NPR-38280)
 * When you use a localized version of an Adaptive form, the corresponding Document of Record (DoR) is not localized. (NPR-38235)
@@ -117,6 +108,7 @@ The following issue is fixed in CRX:
 * In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899)
 * User is unable to set custom time in Job Purge Scheduler. (CQ-4339192)
 * User is unable to update any configuration under endpoint management UI and encounter error ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
+* For invalid tags, graceful handling of error message is not working as expected. (NPR-38106 and CQ-4337173)
 
 >[!NOTE]
 >
@@ -138,22 +130,16 @@ The following issue is fixed in CRX:
 
 ## Granite {#granite-6513}
 
-The following issues are fixed in Granite:
-
 * Omnisearch returns result for users without read rights. (NPR-38373)
 * Enable ES6 for `/libs/granite/configurations/clientlibs/confbrowser`. (NPR-38300)
 
 ## Integrations {#integrations-6513}
 
-The following issue is fixed in Integrations:
-
 * Leak of resource resolver sessions on Test and Target service from deprecated UserInfoServlet. (NPR-38112)
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑13 ‑ HTTP Parameter Pollution in `com.day.cq.searchpromote.impl.servlet`. (NPR-38033) -->
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Analytics 2.0 IMS support added to Experience Manager 6.5. (NPR-37914) -->
 
-<!-- ## Oak - Indexing and Queries {#oak-6513}
-
-The following issue is fixed in Oak:
+## Oak - Indexing and Queries {#oak-6513}
 
 * The Oak version for 6.5.13.0 is now updated to 1.22.11. (NPR-38084) -->
 
@@ -161,70 +147,111 @@ The following issue is fixed in Oak:
 
 ## Platform {#platform-6513}
 
-The following issues are fixed in Platform:
-
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * RTC : Universal XSS through cq-rewriter HtmlParser. (NPR-38064) -->
-* Upgrade dependency of `org.apache.httpcomponents.httpclient` in Experience Manager 6.5. (NPR-37999)
+* Upgrade dependency of `org.apache.httpcomponents.httpclient` in [!DNL Experience Manager] 6.5. (NPR-37999)
 * High Author load due to path field suggestions. (CQ-4341826)
 * User must refresh the page when they change the project from Card view to Calendar view. (CQ-4340368)
 * Tags are lost due to permissions restrictions. (CQ-4339543)
 * Multiple issues reported with Search and Filter in Path Selection not working. (CQ-4339402)
 * Stop using DTM on 6.5 - switch to Launch for Omega Instrumentation and add Gainsight support. (CQ-4337809)
 * Restrict pathfield component search function based on the pathfield filter property that is set. (CQ-4309556)
-* Experience Manager Platform 6.5: Chinese Locale Naming Fixes. (CQ-4308978)
+* [!DNL Experience Manager] Platform 6.5: Chinese Locale Naming Fixes. (CQ-4308978)
 * Switch to Launch for Omega Instrumentation. (NPR-38377)
-* Experience Manager Platform 6.5: Chinese locale-naming fixes. (CQ-4308978)
+* [!DNL Experience Manager] Platform 6.5: Chinese locale-naming fixes. (CQ-4308978)
 
 ## Replication {#replication-6513}
-
-The following issue is fixed in Replication:
 
 * Publishing of user Node Failing from Author to Publisher. (NPR-38005)
 
 ## [!DNL Sites] {#sites-6513}
 
-The following issues are fixed in [!DNL Sites]:
+### Admin {#sites-admin-6513}
 
-* If the customer is trying to access the editor of the content fragment models, they get a query error because of too many fragments on the dam. (SITES-6284)
-* Virtual container support - Adding a child component to a virtual container that is not yet present in the database implies the creation of a node to represent the container in content structure. (SITES-5762)
-* Upgrading jquery-ui to latest version resulted in the breaking of the Editor. (SITES-5647)
-* A moved page is broken after Service Pack 12 (6.5.12.0). (SITES-5298)
-* Paths were getting deleted when AEM 6.5.12.0 was installed on existing 6.5.11.0 instance. (SITES-5088)
-* Apple 6.5.10 system crashing when using CF model editor, due to erroneous feature toggle check. (SITES-4967)
-* Adapt external index package to use selection Policy (fragment versus asset index). (SITES-4784)
-<!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Identify and remove Odin specific code from 6.5. (SITES-3574) -->
-* Allow new email templated under campaign and ambit. (NPR-38445)
-* TemplatedResource valueMap should allow deep reads as per ValueMap API. (NPR-38439)
-* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384)
-* When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361)
-* Updated Image is not visible When a new image is dragged on top of an existing image the updated image is not visible in RTE - Classic UI. (NPR-38141)
-* Some strings in the Content Fragment Model editor are not localized. (NPR-38126)
-* For invalid tags, graceful handling of error message is not working as expected. (NPR-38106)
-* The unique field validation query is now fixed. (NPR-38142)
-* Text component is misaligned when added to nested Layout Containers. (NPR-38193)
-* The "Approve for Adobe Campaign" workflow was only running for pages which are of type or extending the resource types: "mcm/neolane/components/newsletter", "mcm/campaign/components/newsletter" and "mcm/campaign/components/campaign_newsletterpage". (NPR-38204)
-* Update of Content Fragment references is returning an invalid JSON response via Dispatcher. (NPR-38205)
-* Content Fragment Model Rich Text Validation Prevents Blocks Saving a Content Fragment Model. (NPR-38210)
-* Context hub UI models are not rendering properly without hard page refresh. (NPR-38212)
+* Fix regression introduced with SP 12 that might have caused an issue when moving pages. (SITES-5298)
+
+### Classic User Interface {#sites-classicui-6513}
+
+* RTE: Updated image is not visible when a new image is dragged on top of an existing image. (NPR-38141)
+<!-- version 2 of description above * Updated Image is not visible When a new image is dragged on top of an existing image the updated image is not visible in RTE - Classic UI. (NPR-38141) -->
+
+### Content Fragments {#sites-contentfragments-6513}
+
+* Support creating Content Fragment Models in Sub-configurations. (NPR-38054)
+<!-- version 2 of description above * The Configuration Manager now allows you to set the Content Fragment Model config on a sub-config folder. (NPR-38054) -->
+* Improve performance when using the 'Unique field' validation in Content Fragment Model. (NPR-38142)
+<!-- version 2 of description above * The unique field validation query is now fixed. (NPR-38142) -->
+* Improve response-time when opening Content Fragment Model Editor. Customers with numerous fragments in Assets might have seen errors when opening. (SITES-6284)
+<!-- version 2 of description above * If the customer is trying to access the editor of the content fragment models, they get a query error because of too many fragments on the dam. (SITES-6284) -->
+* Fix regression introduced when updating from 6.5.11 to 6.5.12 that might have caused Content Fragment Model Editor errors. (SITES-5088 and SITES-4967)
+<!-- version 2 of description above * Paths were getting deleted when AEM 6.5.12.0 was installed on existing 6.5.11.0 instance. (SITES-5088)
+* Apple 6.5.10 system crashing when using CF model editor, due to erroneous feature toggle check. (SITES-4967) -->
+* Improve localization of the Content Fragment Model Editor user interface. (NPR-38126)
+<!-- version 2 of description above * Some strings in the Content Fragment Model editor are not localized. (NPR-38126) -->
+* Fix issue that closing the Content Fragment Editor may cause an error when Author server is used with Dispatcher. (NPR-38205)
+<!-- version 2 of description above * Update of Content Fragment references is returning an invalid JSON response via Dispatcher. (NPR-38205) -->
+* Fix issue that saving a model was not possible when validation was used on a RTE field. (NPR-38210)
+<!--version 2 of description above * Content Fragment Model Rich Text Validation Prevents Blocks Saving a Content Fragment Model. (NPR-38210) -->
 * Content Fragment issue with the boolean property not showing Field Text in "title" rather showing 'Property Name'. (NPR-38244)
-* An unexpected error message is coming in Postman, when executing the graphQL persisted query having query variables. (NPR-38251)
-* Job queue configuration is incorrect - The OSGi configuration for the reference updater job queue has not been ported back to 6.5. This issue leads to jobs being run in the main queue, which has a higher priority and allows more jobs to run in parallel. This flow can lead to CPU exhaustion. (NPR-38269)
-* Template changes do not get published until you publish a page that uses that template. (NPR-38274)
-* Unclosed ResourceResolver in com.day.cq.wcm.workflow.impl.WcmWorkflowServiceImpl.autoSubmitPageAfterModification (NPR-38286)
+* Error while running persisted query with query variable by way of Postman. (NPR-38251, NPR-38057)
+<!--version 2 of description above * An unexpected error message is coming in Postman, when executing the graphQL persisted query having query variables. (NPR-38251) -->
+* Content Fragment Component: Regression in 'handle headings as paragraphs' option fixed that was 6.5 SP7. (NPR-38055)
+<!--version 2 of description above * After applying SP11 to the Publish instance of AEM 6.5.6, the display result of the Content Fragment set in the published page changes. (NPR-38055) -->
+* Fix regression introduced in 6.5.11 that may have caused asset search errors. (SITES-4784)
+<!--version 2 of description above * Adapt external index package to use selection Policy (fragment versus asset index). (SITES-4784) -->
+* Using **[!UICONTROL Edit]** from the search results could result in a `Not Found` error. (NPR-37810)
+<!--version 2 of description above * When editing Content Fragment from the Assets Search Rail results page, it throws 'Not Found' error. (NPR-37810) -->
+
+### ContentHub {#sites-contenthub-6513}
+
+* Context hub UI models are not rendering properly without a hard page refresh. (NPR-38212)
+
+### E-mail Editor {#sites-emaileditor-6513}
+
+* Enable support for upcoming release of E-Mail Core Components [https://github.com/adobe/aem-core-email-components](https://github.com/adobe/aem-core-email-components). (NPR-38445 and NPR-38204)
+<!-- version 2 of description above * Allow new email templated under campaign and ambit. (NPR-38445) * The "Approve for Adobe Campaign" workflow was only running for pages which are of type or extending the resource types: "mcm/neolane/components/newsletter", "mcm/campaign/components/newsletter" and "mcm/campaign/components/campaign_newsletterpage". (NPR-38204) -->
+
+### Experience Fragments {#sites-experiencefragments-6513}
+
 * When using the Navigate to Page action in the References for an Experience Fragment, it opens the wrong page. (NPR-38062)
-* Error while executing persisted query with query variable via Postman. (NPR-38057)
-* After applying SP11 to the Publish instance of AEM 6.5.6, the display result of the Content Fragment set in the published page changes. (NPR-38055)
-* The Configuration Manager now allows you to set the Content Fragment Model config on a sub-config folder. (NPR-38054)
-* Cannot remove users from user groups. (NPR-38041)
-* The property useLegacyResponsiveBehaviour only works when authenticated. (NPR-37996)
-* When editing Content Fragment from the Assets Search Rail results page, it throws 'Not Found' error. (NPR-37810)
-* Sites SEO enhancements to 6.5 - It was not possible to remove the .html extension in the Sitemap and canonical link. (NPR-38219)
-* Style tab is blank on components without styles/policies. (NPR-38218)
 * Layout properties coming from XF Template not observed in side of a Page. (NPR-38214)
+* Improved performance of XF reference calculation. (NPR-38269)
+<!-- version 2 of description above * Job queue configuration is incorrect - The OSGi configuration for the reference updater job queue has not been ported back to 6.5. This issue leads to jobs being run in the main queue, which has a higher priority and allows more jobs to run in parallel. This flow can lead to CPU exhaustion. (NPR-38269) -->
+
+### Page Editor {#sites-pageeditor-6513}
+
+* Improve undo for components that do not have inlineEditing or dropTarget feature in `cq:editConfig`. (NPR-38361)
+<!-- version 2 of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
+* The Style System drop-down might have been positioned on the top of the page instead of in-context of the component - for components that use `cq:editConfig` “afteredit: REFRESH_PAGE”. This issue is now resolved. (NPR-38384)
+<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384) -->
+* Text component is misaligned when added to nested Layout Containers. (NPR-38193)
+* An empty style tab was displayed when there was no Style System config for a component; the tab is now hidden when no config is present. (NPR-38218)
+<!-- version 2 of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
+* The property `useLegacyResponsiveBehaviour` works only when authenticated. (NPR-37996)
+* Upgrading jquery-ui to latest version resulted in the breaking of the Editor. (SITES-5647)
+
+### Security {#sites-security-6513}
+
+* The User Group Management user interface sometimes failed to remove users, particularly in groups with +20 users. (NPR-38041)
+<!--version 2 of description above * Cannot remove users from user groups. (NPR-38041) -->
+
+### SEO {#sites-seo-6513}
+
+* Sitemap Generator and Canonical tag add support for URLs without .html. (CIF-2647)
+* Add support for removing alternative languages using the noindex configuration. (CIF-2496)
+* Add support to provide custom URL to overwrite the default canonical URL for pages that have near identical content. (CIF-2747)
+
+### SPA Editor and SDK {#sites-spa-sdk-6513}
+
+* Starting 6.5.13, you no longer must create the container component node in JCR before making edits by way of the SPA Editor. A `virtual container` is created before saving it by way of the SDK. (SITES-5762)
+<!-- version 2 of description above * Virtual container support - Adding a child component to a virtual container that is not yet present in the database implies the creation of a node to represent the container in content structure. (SITES-5762) -->
+
+### Template Editor {#sites-templateeditor-6513}
+
+* Fix regression that publishing a changed template was not publishing all dependencies. (NPR-38274)
+<!-- version 2 of description above * Template changes do not get published until you publish a page that uses that template. (NPR-38274) -->
+* TemplatedResource valueMap should allow deep reads as per ValueMap API. (NPR-38439)
 
 ## Sling {#sling-6513}
-
-The following issues are fixed in Sling:
 
 * Memory leak in `DiscoveryLiteDescriptor`. (NPR-38288)
 * Update `sling-javax.activation` bundle with fix of SLING-8777. (NPR-38077)
@@ -232,21 +259,17 @@ The following issues are fixed in Sling:
 
 ## Translation projects {#translation-6513}
 
-The following issues are fixed in translation projects:
-
 * Multiple launches getting created for referenced pages/xf. (NPR-38263)
 * Changed behavior of adding pages to translation projects since Service Pack 10. The translation project does not contain a newly created page [ex: test-page-women-2] on the list, when selected parent of the newly created page [not the newly created page directly]. (NPR-38256)
 * Add `cq:isTranslationLaunch` property in Launches created by Translation Project. (NPR-38224)
 * Launch is getting created for a page having a referenced XF which has an asset in it. (NPR-38199)
-* Experience Manager update translation memory does not work. (NPR-38196)
+* [!DNL Experience Manager] update translation memory does not work. (NPR-38196)
 * Enable ES6 for `/libs/cq/gui/components/projects/admin/translation/job/addcontent/clientlibs.js`. (NPR-38306)
-* Latest 18n package for translations for Experience Manager 6.5. (CQ-4339505)
+* Latest 18n package for translations for [!DNL Experience Manager] 6.5. (CQ-4339505)
 
 ## User interface {#ui-6513}
 
-The following issues are fixed in the user interface:
-
-* When you are on start page > Tools section and click the Experience Manager icon, the Experience Manager Navigation screen should pop up. (NPR-38417)
+* When you are on start page > Tools section and click the [!DNL Experience Manager] icon, the [!DNL Experience Manager] Navigation screen should pop up. (NPR-38417)
 * Enable ES6 for `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Enable ES6 for `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
@@ -255,25 +278,22 @@ The following issues are fixed in the user interface:
 
 ## WCM {#wcm-6513}
 
-The following issue is fixed in WCM:
+* [!DNL Experience Manager] MCM (Campaign) 6.5: Chinese Locale Naming Fixes. (CQ-4308973)
+* Unclosed ResourceResolver in com.day.cq.wcm.workflow.impl.WcmWorkflowServiceImpl.autoSubmitPageAfterModification (NPR-38286)
 
-* Experience Manager MCM (Campaign) 6.5: Chinese Locale Naming Fixes. (CQ-4308973)
-
-## Install Experience Manager 6.5.13.0 {#install}
-
- 
+## Install [!DNL Experience Manager] 6.5.13.0 {#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback -->
 
-* Experience Manager 6.5.13.0 requires Experience Manager 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
+* [!DNL Experience Manager] 6.5.13.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions.
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* On a deployment with MongoDB and multiple instances, install Experience Manager 6.5.13.0 on one of the Author instances using the Package Manager.
+* On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.13.0 on one of the Author instances using the Package Manager.
 
 >[!NOTE]
 >
 >Adobe does not recommend removing or uninstalling the [!DNL Experience Manager] 6.5.13.0 package.
 
-### Install the service pack on Experience Manager 6.5 {#install-service-pack}
+### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
 1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
 
@@ -293,14 +313,14 @@ The following issue is fixed in WCM:
 
 **Automatic installation**
 
-There are two different methods you can use to automatically install [!DNL Experience Manager] 6.5.13.0.
+There are two different methods that you can use to automatically install [!DNL Experience Manager] 6.5.13.0.
 
 * Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
 * Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
 >[!NOTE]
 >
->Experience Manager 6.5.13.0 does not support Bootstrap installation.
+>[!DNL Experience Manager] 6.5.13.0 does not support Bootstrap installation.
 
 **Validate the installation**
 
@@ -313,31 +333,31 @@ To know the platforms that are certified to work with this release, see the [tec
 1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or later (Use Web Console: `/system/console/bundles`).
 
 
-### Install Experience Manager Forms add-on package {#install-aem-forms-add-on-package}
+### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
->Skip if you are not using Experience Manager Forms. Fixes in Experience Manager Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Skip if you are not using [!DNL Experience Manager] Forms. Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
-1. Ensure that you have installed the Experience Manager Service Pack.
+1. Ensure that you have installed the [!DNL Experience Manager] Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 
-### Install Experience Manager Forms on JEE {#install-aem-forms-jee-installer}
+### Install [!DNL Experience Manager] Forms on JEE {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in Experience Manager Forms on JEE are delivered through a separate installer.
+>Skip if you are not using AEM Forms on JEE. Fixes in [!DNL Experience Manager] Forms on JEE are delivered through a separate installer.
 
-For information about installing the cumulative installer for Experience Manager Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+For information about installing the cumulative installer for [!DNL Experience Manager] Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
 >[!NOTE]
 >
->After installing the cumulative installer for Experience Manager Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>After installing the cumulative installer for [!DNL Experience Manager] Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
 ### UberJar {#uber-jar}
 
-The UberJar for Experience Manager 6.5.13.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.12/).
+The UberJar for [!DNL Experience Manager] 6.5.13.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.13/)(https://).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -362,17 +382,17 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in Experience Manager 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
-| Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for Experience Manager 6.5. | N/A |
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
+| Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for [!DNL Experience Manager] 6.5. | N/A |
 
 ## Known issues {#known-issues} 
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-<!-- * If you are using Content Fragments and GraphQL, Adobe recommends that you install the following packages on top of 6.5.12.0:
+<!-- VULNERABILITY ISSUE - REMOVED MAY 23, 2022 AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * If you are using Content Fragments and GraphQL, Adobe recommends that you install the following packages on top of 6.5.12.0:
 
-https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this hot fix replaces SP12, but can be installed on top of SP12) -->
+  * [AEM 6.5.12 Sites HotFix-NPR-38144](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Faem-service-pkg-6.5.12.0-NPR-38144-B0002.zip) (this hot fix replaces SP12, but can be installed on top of SP12) -->
   
 * [AEM Content Fragment with GraphQL Index Package 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
 
@@ -388,8 +408,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue.
 
-* The following errors and warning messages may display during installation of Experience Manager 6.5.x.x:
-  * “When the Adobe Target integration is configured in Experience Manager using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
+* The following errors and warning messages may display during installation of [!DNL Experience Manager] 6.5.x.x:
+  * “When the Adobe Target integration is configured in [!DNL Experience Manager] using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
   * `com.adobe.granite.maintenance.impl.TaskScheduler`: No maintenance windows found at granite/operations/maintenance.
   * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used (CQ-4274424).
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
