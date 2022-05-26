@@ -1,7 +1,7 @@
 ---
 title: Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 6.5 notes outlining the release information, what's new, how to install, and detailed change lists."
-mini-toc-levels: 4
+mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
@@ -357,7 +357,7 @@ For information about installing the cumulative installer for [!DNL Experience M
 
 ### UberJar {#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.13.0 is available in the [Maven Central repository](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.13/)(https://).
+The UberJar for [!DNL Experience Manager] 6.5.13.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.13/)(https://).
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
