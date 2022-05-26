@@ -1,7 +1,7 @@
 ---
 title: Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: "[!DNL Adobe Experience Manager] 6.5 notes outlining the release information, what's new, how to install, and detailed change lists."
-mini-toc-levels: 3 
+mini-toc-levels: 4
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
