@@ -232,7 +232,7 @@ In CRXDE Lite do the following:
 1. Navigate to `<sync-folder>/_CSS/_OOTB` folder within your Dynamic Media sync folder (for example, `/content/dam/_CSS/_OOTB`).
 1. Find the metadata node of the problematic asset (for example, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
 1. Check for the presence of `dam:scene7*` properties. If the asset was successfully synced and published, you see the `dam:scene7FileStatus` set is to **PublishComplete**.
-1. Attempt to request the artwork directly from Dynamic Media by concatenating the values of the following properties and string literals:
+1. Attempt to request the artwork directly from Dynasmic Media by concatenating the values of the following properties and string literals:
 
    * `dam:scene7Domain`
    * `"is/content"`
@@ -257,8 +257,17 @@ If the sample assets or viewer preset artwork has not synced or published, resta
 
 **Solution**
 
-In CRXDE Lite, do the following:
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In the left rail, navigate to the sample content folder at the following location:
 
-1. Delete the sample content folder (`/content/dam/_DMSAMPLE`). 
-1. Delete the presets folder (`/conf/global/settings/dam/dm/presets/viewer`).
+   `/content/dam/_DMSAMPLE`
+
+1. Delete the `_DMSAMPLE` folder. 
+1. In the left rail, navigate to the presets folder at the following location:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Delete the `viewer` folder.
+1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the CRXDE Lite page, select the **Back Home** icon.
 1. Re-create a [Dynamic Media Configuration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
