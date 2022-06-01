@@ -19,6 +19,22 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 [!DNL Experience Manager] 6.5.13.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5.
 
+The key features and enhancements introduced in [!DNL Adobe Experience Manager] 6.5.13.0 are:
+
+* Use invisible CAPTCHA in an adaptive form: You can now use an invisible CAPTCHA to show the CAPTCHA challenge only in the case of a suspicious activity. If no suspicious activity is found, the CAPTCHA challenge is not displayed. It helps assess human form completion without checkbox requirements, reduce customization efforts, and improve the end-user experience. (NPR-38500)
+
+* Added support to fetch response headers in Form Data Model post processor for REST endpoints. (NPR-38275)
+
+* Now, on generating an Adaptive Form translation file, the same sequence of texts the generated XLIFF file is identical to the sequence of components in the corresponding Adaptive Form. (NPR-37700)
+
+* When you localize an Adaptive Form and make even a small change made to text of the base language, the complete translation goes missing for all the other languages. The issue is fixed in [!DNL Experience Manager] 6.5.13.0. (NPR-37189)
+
+* Accessibility improvements for Forms:
+
+  * Added support for screen readers to recognize header and body of a table as continues and connected entities. It helps screen readers navigate the tables properly. (NPR-37139)
+  * Added support for screen readers to stop navigating HTML workspace until a dialog is open. (NPR-37134)
+  * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+
 The following bug fixes, key features, and enhancements were introduced in [!DNL Experience Manager] 6.5.13.0:
 
 <!-- The following issues are fixed in [!DNL Experience Manager] 6.5.13.0: -->
