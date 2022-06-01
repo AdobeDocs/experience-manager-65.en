@@ -50,6 +50,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Dynamic Media Video Profiles](video-profiles.md)
   + [Dynamic Media Image Profiles](image-profiles.md)
   + [Smart Imaging](imaging-faq.md)
+  + [Smart Imaging with client-side Device Pixel Ratio](client-side-dpr.md)
   + [Video](s7-video.md)
   + [HTTP2 delivery of content](http2.md)
   + [Deliver Dynamic Media assets](delivering-dynamic-media-assets.md)
