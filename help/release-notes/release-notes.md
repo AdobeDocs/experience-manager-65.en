@@ -86,9 +86,9 @@ The following bug fixes, key features, and enhancements were introduced in [!DNL
 
 ## [!DNL Forms] {#forms-65130}
 
-* When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
+<!-- * When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
 
-  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
+  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542) -->
 
 * The Radio button, Checkbox, and File Upload components are not correctly translated from German language to English language. (NPR-38527)
 * The PDF417 barcode encoding produced by [!DNL Experience Manager] Forms is invalid for a radio button group. (NPR-38525)
