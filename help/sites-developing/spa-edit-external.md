@@ -252,6 +252,42 @@ There are a number of requirements to add virtual leaf components as well as som
   * In this example, `root/responsivegrid` must exist so that the new node `text_20` can be created there.
 * Only leaf component creation is supported. Virtual container and page will be supported in future versions.
 
+### Virtual Containers {#virtual-containers}
+
+The ability to add containers, even if the corresponding container is not yet created in AEM, is supported. The concept and approach is similar to [virtual leaf components.](#virtual-leaf-components)
+
+The front-end developer can add the container components in appropriate locations within the SPA and these components will display placeholders when opened in the editor in AEM. The author can then add components and their content to the container which will create the required nodes in the JCR structure.
+
+For example, if a container already exists at `/root/responsivegrid` and the developer wants to add a new child container:
+
+![Container location](assets/container-location.png)
+
+`newContainer` does not yet exist in the AEM.
+
+When editing the page containing this component in AEM, an empty placeholder for a container is displayed into which the author can add content.
+
+![Container placeholder](assets/container-placeholder.png)
+
+![Container location in JCR](assets/container-jcr-structure.png)
+
+Once the author adds a child component to the container, the new container node is created with the corresponding name in the JCR structure.
+
+![Container with content](assets/container-with-content.png)
+
+![Container with content in JCR](assets/container-with-content-jcr.png)
+
+More components and content can be added to the container now as the author requires and the changes will be persisted.
+
+#### Requirements and Limitations {#container-limitations}
+
+There are a number of requirements to add virtual containers as well as some limitations.
+
+* The policy for determining which components can be added will be inherited from the parent container.
+* The immediate parent of the container to be created must already exist in AEM.
+  * If the container `root/responsivegrid` already exists in the AEM container, then a new container can be created by providing the path `root/responsivegrid/newContainer`.
+  * However `root/responsivegrid/newContainer/secondNewContainer` is not possible.
+* Only one new level of component can be virtually created at a time.
+
 ## Additional Customizations {#additional-customizations}
 
 If you followed the previous examples, your external SPA is now editable within AEM. However there are additional aspects of your external SPA that you can further customize.

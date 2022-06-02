@@ -10,9 +10,17 @@ Since version 80, Chrome, and later Safari, introduced a new model for cookie se
 
 The default value of this setting (`SameSite=Lax`) might cause authentication between AEM instances or services to not work. This is because the domains or URL structures of these services might not fall under the constraints of this cookie policy.
 
-In order to get around this, you need to set the SameSite cookie attribe to `None` for the login token.
+In order to get around this, you need to set the `SameSite` cookie attribute to `None` for the login token.
 
-You can do this by following the below steps:
+>[!CAUTION]
+>
+>The `SameSite=None` setting is only applied if the protocol is secure (HTTPS). 
+>
+>If the protocol is not secure (HTTP), then the setting is ignored and the server will show this WARN message:
+>
+>`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
+
+You can add the setting by following the below steps:
 
 1. Go to the Web Console at `http://serveraddress:serverport/system/console/configMgr`
 1. Search for and click the **Adobe Granite Token Authentication Handler**
