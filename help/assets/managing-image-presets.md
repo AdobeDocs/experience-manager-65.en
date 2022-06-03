@@ -295,7 +295,7 @@ When you create or edit image presets, you have the options described in this se
 
 * **[!UICONTROL Enable Simple Sharpening]** - Do not select **[!UICONTROL Enable Simple Sharpening]** (this sharpening filter offers less control than Unsharp Masking settings).
 
-* **[!UICONTROL Sharpening: Resampling Mode]** - Select **[!UICONTROL Bi-Cubic]**.
+* **[!UICONTROL Sharpening: Resampling Mode]** - Select **[!UICONTROL Sharp2]**.
 
 #### Basic tab options {#basic-tab-options}
 
