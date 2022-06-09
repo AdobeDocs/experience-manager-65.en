@@ -3,7 +3,7 @@ title: Unable to use Experience Manager Forms with certain versions of Oracle JD
 seo-title: Unable to use Experience Manager Forms with certain versions of Oracle JDK
 description: Unable to use Experience Manager Forms with certain versions of Oracle JDK
 seo-description: Unable to use Experience Manager Forms with certain versions of Oracle JDK
-
+exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
 ---
 # Unable to use Experience Manager Forms with certain versions of Oracle JDK {#unable-to-use-forms-with-certain-versions-of-oracle-jdk}
 

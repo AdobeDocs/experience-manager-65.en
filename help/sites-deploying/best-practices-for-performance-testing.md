@@ -88,7 +88,7 @@ Google’s PageSpeed tools offer site analysis for adherence to best practices f
 
 ### Performing Tests {#performing-tests}
 
-In order to conduct performance testing on the author environment it is necessary that you simulate the experience of porduction authors. This means that the author installations must contain all the components, OSGi bundles, UI customization, custom indexes and any other additions you have in place for the production author instances.
+In order to conduct performance testing on the author environment it is necessary that you simulate the experience of production authors. This means that the author installations must contain all the components, OSGi bundles, UI customization, custom indexes and any other additions you have in place for the production author instances.
 
 There are many automation frameworks available that are designed for performance and load testing. Custom scripts can be recorded in these tools and then played back to simulate a peak number of authors performing similar content creation and activation activities simultaneously. It is recommended you use the Tough Day tool to simulate activities like uploading thousands of assets or activating large numbers of pages.
 
