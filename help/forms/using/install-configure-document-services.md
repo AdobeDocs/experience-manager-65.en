@@ -766,11 +766,11 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
     * Generate prov.xml
 
-         ```
+      ```
 
          adobe_prtk --tool=VolumeSerialize --generate --serial=<serialnum> [--leid=<LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=<Absolute path to prov.xml>]
 
-         ```
+      ```
 
     * Volume serialize the package (Re-serialize the existing install using the prov.xml file and the new serial): Run the following command from the PRTK installation folder as an administrator to serialize and activate the deployed packages on client machines:
 
