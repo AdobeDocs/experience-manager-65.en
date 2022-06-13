@@ -762,9 +762,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-  * Use the following commands to generate prov.xml and re-serialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
-
-    * Generate prov.xml
+   * Use the following commands to generate prov.xml and re-serialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
 
          ```
 
@@ -772,7 +770,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
          ```
 
-    * Volume serialize the package (Re-serialize the existing install using the prov.xml file and the new serial): Run the following command from the PRTK installation folder as an administrator to serialize and activate the deployed packages on client machines:
+   * Volume serialize the package (Re-serialize the existing install using the prov.xml file and the new serial): Run the following command from the PRTK installation folder as an administrator to serialize and activate the deployed packages on client machines:
 
          ```
          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
