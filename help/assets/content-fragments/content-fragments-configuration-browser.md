@@ -38,7 +38,7 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 
 >[!CAUTION]
 >
->Sub-configurations (a configuration nested within a configuration) are not supported for use with Content Fragments.
+>Sub-configurations (a configuration nested within a configuration) are supported for use with Content Fragments, but cannot be used for GraphQL queries.
 
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 

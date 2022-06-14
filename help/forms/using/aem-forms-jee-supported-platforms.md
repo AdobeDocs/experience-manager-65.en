@@ -214,6 +214,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <td><p>Microsoft® SQL Server JDBC driver 6.2.1.0 (Deprecated) <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Supplied with AEM Forms on JEE installation.</p> </td>
   </tr>
+    <tr>
+   <td>Microsoft SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC driver 6.2.2.0 <br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Supplied with AEM Forms on JEE installation.</p> </td>
+  </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
    <td><p>Microsoft® SQL Server JDBC driver 8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
@@ -412,8 +417,12 @@ In addition, consider the following points while choosing software for Adobe AEM
    <td>8.5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016 (Deprecated)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft Sharepoint </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -745,6 +754,10 @@ Adobe reserves the right to change the third-party reference platforms supported
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
 
 ## Platform updates {#platform-updates}
+
+The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
+
+- Microsoft SharePoint 2016
 
 The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release on March 3, 2022:
 
