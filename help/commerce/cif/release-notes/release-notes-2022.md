@@ -15,6 +15,30 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: May, 2022
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2022.05.31.00|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip)|
+|CIF Core Components |2.9.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0)|
+|CIF Venia Reference Site| 2022.05.30|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30)|
+
+### What's New {#what-is-new-may}
+
+* New product cockpit properties page for better and simplified overview
+
+ ![product cockpit properties overview](/help/assets/CIF/product_cockpit_properties_overview.png)
+
+* Improved compatibility and robustness for 3rd party connectors on I/O Runtime
+
+* Improve support for GQL Client configuration overwrites (e.g. set custom caching behavior)
+
+### Bug fixes {#bug-fixes-may}
+
+* Multi value product picker field shows 2nd and additional products as invalid
+
+* Product Picker is occasionally hidden behind components
+
 ## Release Date: April, 2022
 
 |Component| Version| Details|
@@ -23,7 +47,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |2.8.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0)|
 |CIF Venia Reference Site| 2022.04.28|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28)|
 
-### What's New {#what-is-new}
+### What's New {#what-is-new-april}
 
 * Quick access to product cockpit: Easily access full detailed product information with one-click in Sites Editor
 
