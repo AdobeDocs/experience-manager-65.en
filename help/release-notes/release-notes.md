@@ -255,7 +255,7 @@ The following bug fixes, key features, and enhancements were introduced in [!DNL
 
 ## Sling {#sling-6513}
 
-* Memory leak in `DiscoveryLiteDescriptor`. (NPR-38288)
+<!-- OBSOLETE BASED ON CQDOC-19400 * Memory leak in `DiscoveryLiteDescriptor`. (NPR-38288) -->
 * Update `sling-javax.activation` bundle with fix of SLING-8777. (NPR-38077)
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Security issues reported under `org.apache.sling.scripting.jst`. (NPR-38067) -->
 

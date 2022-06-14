@@ -18,7 +18,7 @@ com.day.cq.cq-replication                     Adobe Granite Replication         
 org.apache.httpcomponents.httpclient          Apache Apache HttpClient OSGi bundle                4.5.12
 org.apache.felix.http.jetty                   Apache Felix Http Jetty                             4.1.12
 org.apache.sling.discovery.commons            Apache Sling Discovery Commons                      1.0.26
-org.apache.sling.installer.core               Apache Sling Installer (Adobe Vendor Branch)        3.11.2
+org.apache.sling.installer.core               Apache Sling Installer (Adobe Vendor Branch)        3.9.0B002
 org.apache.sling.jcr.repoinit                 Apache Sling Repoinit JCR                           1.1.36
 org.apache.sling.repoinit.parser              Apache Sling Repoinit Parser                        1.6.10
 org.apache.sling.sitemap                      Apache Sling Sitemap                                1.0.6
