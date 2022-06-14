@@ -93,7 +93,7 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 **Apache Sling GET Servlet** Configure some aspects of rendering:
 
 * **Auto Index** to enable/disable directory rendering for browsing.
-* **Enable** (or disable) default renditions, such as **HMTL**, **Plain Text**, **JSON** or **XML**.
+* **Enable** (or disable) default renditions, such as **HTML**, **Plain Text**, **JSON** or **XML**.
   You should not disable JSON.
 
 >[!NOTE]
@@ -104,7 +104,7 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 
 Certain settings can affect performance, these should be disabled where possible, in particular for a production instance.
 
-* S**ource VM** and **Target VM**, define the JDK version as that used as the runtime JVM
+* **Source VM** and **Target VM**, define the JDK version as that used as the runtime JVM
 
 * for production instances:
 
@@ -315,19 +315,19 @@ When using [closed user groups](/help/sites-administering/cug.md) you can config
 There are two UIs available in AEM:
 
 * the touch-enabled UI is the standard UI
-* and the deprecatd classic UI is still fully operational
+* and the deprecated classic UI is still fully operational
 
 Using AEM Root Mapping you can configure the UI that you want to have as the default for your instance:
 
 * To have the touch-enabled UI as the default UI the **Target Path** should point to:
 
-  ```
+  ```shell
      /projects.html
   ```
 
 * To have the classic UI as the default UI the **Target Path** should point to:
 
-  ```
+  ```shell
      /welcome.html
   ```
 

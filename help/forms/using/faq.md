@@ -167,6 +167,10 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
    Answer: HTML5 forms do not support display patterns for floating fields.
 
+1. What is the format of the Date field in HTML5 Forms?
+  
+  Answer: The Date field accepts the ISO format, YYYY-MM-DD. If you specify a date in some other format, the Date Field does not accept the formatting until the user tabs out of the field.
+
 ### Scripting {#scripting}
 
 1. Are there any limitations in JavaScript implementation for HTML Forms?
@@ -183,7 +187,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Is there any recommended naming convention and are there any reserved keywords to avoid?
 
-    * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore, _&lt;prefix&gt;&lt;objectname&gt;.
+    * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore,_&lt;prefix&gt;&lt;objectname&gt;.
     * All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/help/forms/using/scripting-support.md).
 
 1. Do HTML5 forms support floating fields?

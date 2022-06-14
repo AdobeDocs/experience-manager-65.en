@@ -190,26 +190,6 @@ This is a sample ECMAScript process.
 * **Arguments**: None
 * **Timeout**: Ignored
 
-### urlcaller {#urlcaller}
-
-This is a simple workflow process that calls the given URL. Typically the URL will be a reference to a JSP (or other servlet equivalent) that performs a simple task. This process should be used only during development and demonstrations and not in a production environment. The arguments specify the URL, login and password.
-
-* **ECMAScript path**: `/libs/workflow/scripts/urlcaller.ecma`
-
-* **Payload**: None
-* **Arguments**:
-
-```
-        args := url [',' login ',' password]
-        url := /* The URL to be called */
-        login := /* The login to access the URL */
-        password := /* The password to access the URL */
-```
-
-For example: `http://localhost:4502/my.jsp, mylogin, mypassword`
-
-* **Timeout**: Ignored
-
 ### LockProcess {#lockprocess}
 
 Locks the payload of the workflow.
