@@ -37,7 +37,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Multi value product picker field shows 2nd and additional products as invalid
 
-* Product Picker is occassionally hidden behind components
+* Product Picker is occasionally hidden behind components
 
 ## Release Date: April, 2022
 
