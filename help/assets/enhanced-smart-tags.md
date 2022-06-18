@@ -8,6 +8,12 @@ exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 ---
 # Understand, apply, and curate Smart Tags {#enhanced-smart-tags}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en)                  |
+| AEM 6.5     | This article         |
+| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html?lang=en)
+
 Organizations that deal with digital assets increasingly use taxonomy-controlled vocabulary in asset metadata. Essentially, it includes a list of keywords that employees, partners, and customers commonly use to refer to and search for digital assets of a particular class. Tagging assets with taxonomy-controlled vocabulary ensures that assets are easily identified and retrieved.
 
 Compared to natural language vocabularies, tagging digital assets based on business taxonomy helps align them with a company's business and ensures that the most relevant assets appear in searches.

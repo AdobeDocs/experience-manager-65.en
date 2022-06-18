@@ -9,6 +9,12 @@ exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 ---
 # Manage your digital assets {#manage-digital-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en)                  |
+| AEM 6.5     | This article         |
+| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en)
+
 In [!DNL Adobe Experience Manager Assets], you can do more than store and govern your assets. [!DNL Experience Manager] offers enterprise-grade asset management capabilities. You can edit and share assets, run advanced searches, and create multiple renditions of dozens of supported file formats. You can also manage versions and digital rights, automate processing of assets, manage and govern metadata, collaborate using annotations, and much more.
 
 This article describes the basic asset management tasks such as create or upload; metadata updates; copy, move, and delete; publish, unpublish, and search assets. To understand the user interface, see [get started with assets user interface](/help/sites-authoring/basic-handling.md). To manage Content Fragments, see [manage Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) assets.
