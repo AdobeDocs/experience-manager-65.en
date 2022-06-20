@@ -8,6 +8,12 @@ exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 ---
 # XMP writeback to renditions {#xmp-writeback-to-renditions}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=en)                  |
+| AEM 6.5     | This article         |
+| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html?lang=en)           |
+
 This XMP writeback feature in [!DNL Adobe Experience Manager Assets] replicates the metadata changes to the renditions of the original asset. When you change the metadata for an asset from within Assets or while uploading the asset, the changes are initially stored in the metadata node in the asset hierarchy. 
 
 The XMP writeback feature lets you propagate the metadata changes to all or specific renditions of the asset. The feature writes back only those metadata properties that use `jcr` namespace, that is, a property named `dc:title` is written back but a property named `mytitle` is not.
