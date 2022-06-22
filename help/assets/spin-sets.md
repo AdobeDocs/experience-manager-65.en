@@ -26,6 +26,14 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >For information on the Assets user interface, see [Manage assets](/help/assets/manage-assets.md).
 
+When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
+
+| Limit type | Best practice | Implemented limit |
+| --- | --- | --- |
+| Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
+
+See also [Dynamic Media limitations](/help/assets/limitations.md).
+
 ## Quick Start: Spin Sets {#quick-start-spin-sets}
 
 To get you up and running quickly with Spin Sets, follow these steps:
@@ -108,6 +116,14 @@ This section describes how to create a Spin Set in Experience Manager.
 >[!NOTE]
 >
 >The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360° view.
+
+When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
+
+| Limit type | Best practice | Implemented limit |
+| --- | --- | --- |
+| Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
+
+See also [Dynamic Media limitations](/help/assets/limitations.md).
 
 **To create a Spin Set:**
 

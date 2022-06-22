@@ -56,6 +56,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Deliver Dynamic Media assets](delivering-dynamic-media-assets.md)
   + [Activate hotlink protection in Dynamic Media](hotlink-protection.md)
   + [3D Support](/help/assets/assets-3d.md)
+  + [Dynamic Media limitations](limitations.md)
   + [Image Sets](image-sets.md)
   + [Panoramic Images](panoramic-images.md)
   + [Mixed Media Sets](mixed-media-sets.md)
