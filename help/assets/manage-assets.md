@@ -2,10 +2,9 @@
 title: Manage your digital assets
 description: Learn the asset management tasks like upload, download, edit, search, delete, annotate, and version your digital assets.
 contentOwner: AG
-mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 ---
 # Manage your digital assets {#manage-digital-assets}
