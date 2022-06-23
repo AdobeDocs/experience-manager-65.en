@@ -32,10 +32,10 @@ For example, suppose you want to present images of caps with different color bil
 
 When you create an Image Set, Adobe recommends the following best practices and enforces the following limits:
 
-| Asset - Limit type | Best practice | Implemented limit | Changes to limit December 31, 2022 |
-| --- | --- | --- | --- |
-| **Image Set** - Number of duplicate assets per set | No duplicates | 100 | 20 |
-| **Image Set** - Maximum number of images per set | 5-10 images per set | 1000 |
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Number of duplicate assets per set | No duplicates | 20 |
+| Maximum number of images per set | 5-10 images per set  | 1000 |
 
 See also [Dynamic Media limitations](/help/assets/limitations.md).
 
@@ -135,10 +135,10 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 When you create an Image Set, Adobe recommends the following best practices and enforces the following limits:
 
-| Asset - Limit type | Best practice | Implemented limit | Changes to limit December 31, 2022 |
-| --- | --- | --- | --- |
-| **Image Set** - Number of duplicate assets per set | No duplicates | 100 | 20 |
-| **Image Set** - Maximum number of images per set | 5-10 images per set | 1000 |
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Number of duplicate assets per set | No duplicates | 20 |
+| Maximum number of images per set | 5-10 images per set  | 1000 |
 
 See also [Dynamic Media limitations](/help/assets/limitations.md).
 
