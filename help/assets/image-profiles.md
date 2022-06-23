@@ -27,9 +27,9 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 When you implement Smart Crop on images, Adobe recommends the following best practice and enforces the following limit:
 
-| Limit type | Best practice | Implemented limit |
-| --- | --- | --- |
-| Number of Smart Crops per image | 5 | 100 |
+| Limit type | Best practice | Limit imposed | Change to limit on December 31, 2022 |
+| --- | --- | --- | --- |
+| Number of Smart Crops per image | 5 | 100 | 20 |
 
 See also [Dynamic Media limitations](/help/assets/limitations.md).
 
