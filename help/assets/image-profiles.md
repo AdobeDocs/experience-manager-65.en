@@ -25,6 +25,14 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 ## Crop options {#crop-options}
 
+When you implement Smart Crop on images, Adobe recommends the following best practice and enforces the following limit:
+
+| Limit type | Best practice | Limit imposed | Change to limit on December 31, 2022 |
+| --- | --- | --- | --- |
+| Number of Smart Crops per image | 5 | 100 | 20 |
+
+See also [Dynamic Media limitations](/help/assets/limitations.md).
+
 <!-- CQDOC-16069 for paragraph directly below -->
 
 Smart Crop coordinates are aspect ratio dependent. For the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions in the image profile, then the same aspect ratio is sent to Dynamic Media. Adobe recommends that you use the same crop area. Doing so ensures that there is no impact to different dimensions used in the image profile.

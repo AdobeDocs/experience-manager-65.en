@@ -8,6 +8,12 @@ exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
 ---
 # Review folder assets and collections {#review-folder-assets-and-collections}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en)                  |
+| AEM 6.5     | This article         |
+| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/bulk-approval.html?lang=en)           |
+
 Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 
 [!DNL Adobe Experience Manager Assets] lets you set up an ad-hoc review workflow for assets within a folder or collection, and share it with reviewers or creative partners to seek feedback.

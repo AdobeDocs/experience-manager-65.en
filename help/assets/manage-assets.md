@@ -2,12 +2,18 @@
 title: Manage your digital assets
 description: Learn the asset management tasks like upload, download, edit, search, delete, annotate, and version your digital assets.
 contentOwner: AG
-mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
+mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 ---
 # Manage your digital assets {#manage-digital-assets}
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en)                  |
+| AEM 6.5     | This article         |
+| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en)|
 
 In [!DNL Adobe Experience Manager Assets], you can do more than store and govern your assets. [!DNL Experience Manager] offers enterprise-grade asset management capabilities. You can edit and share assets, run advanced searches, and create multiple renditions of dozens of supported file formats. You can also manage versions and digital rights, automate processing of assets, manage and govern metadata, collaborate using annotations, and much more.
 
@@ -196,7 +202,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 | | Image-Editing Options | You can preserve the clipping masks in images, and choose a color profile.<br> See [Setting options for image edits at upload](#setting-image-editing-options-at-upload). |
 | | Postscript Options | You can rasterize PostScript® files, crop files, maintain transparent backgrounds, choose a resolution, and choose a color space.<br> See [Setting PostScript and Illustrator upload options](#setting-postscript-and-illustrator-upload-options). |
 | | Photoshop Options | You can create templates from Adobe® Photoshop® files, maintain layers, specify how layers are named, extract text, and specify how images are anchored into templates.<br> Templates are not supported in [!DNL Experience Manager].<br> See [Setting Photoshop upload options](#setting-photoshop-upload-options). |
-| | PDF Options | You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.<br>eCatalogs are not supported in [!DNL Experience Manager]. <br> See [Setting PDF upload options](#setting-pdf-upload-options). |
+| | PDF Options | You can rasterize the files, extract search words and links, auto-generate an eCatalog, set the resolution, and choose a color space.<br>eCatalogs are not supported in [!DNL Experience Manager]. <br> See [Setting PDF upload options](#setting-pdf-upload-options).<br>**Note**: The maximum number of pages for a PDF to be considered for extraction is 5000 for new uploads. This limit will change to 100 page (for all PDFs) on December 31, 2022. See also [Dynamic Media limitations](/help/assets/limitations.md). |
 | | Illustrator Options | You can rasterize Adobe Illustrator® files, maintain transparent backgrounds, choose a resolution, and choose a color space.<br> See [Setting PostScript and Illustrator upload options](#setting-postscript-and-illustrator-upload-options). |
 | | EVideo Options | You can transcode a video file by choosing a Video Preset.<br> See [Setting eVideo upload options](#setting-evideo-upload-options). |
 | | Batch Set Presets | To create an Image Set, or Spin Set from the uploaded files, click the Active column for the preset you want to use. You can select more than one preset. You create the presets in the Application Setup/Batch Set Presets page of Dynamic Media Classic.<br> See [Configuring Batch Set Presets to Auto-Generate Image Sets and Spin Sets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) to learn more about creating batch set presets.<br> See [Setting Batch Set Presets at upload](#setting-batch-set-presets-at-upload). |
@@ -269,6 +275,8 @@ Use the [!UICONTROL Crop Options] and [!UICONTROL Color Profile Options], descri
 #### Set PDF upload options {#setting-pdf-upload-options}
 
 When you upload a PDF file, you can format it in various ways. You crop its pages, extract search words, enter a pixels-per-inch resolution, and choose a color space. PDF files often contain a trim margin, crop marks, registration marks, and other printer’s marks. You can crop these marks from the sides of pages as you upload a PDF file.
+
+The maximum number of pages for a PDF to be considered for extraction is 5000 for new uploads. This limit will change to 100 pages (for all PDFs) on December 31, 2022. See also [Dynamic Media limitations](/help/assets/limitations.md).
 
 >[!NOTE]
 >

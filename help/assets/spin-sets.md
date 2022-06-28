@@ -26,6 +26,14 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >For information on the Assets user interface, see [Manage assets](/help/assets/manage-assets.md).
 
+When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
+
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
+
+See also [Dynamic Media limitations](/help/assets/limitations.md).
+
 ## Quick Start: Spin Sets {#quick-start-spin-sets}
 
 To get you up and running quickly with Spin Sets, follow these steps:
@@ -36,7 +44,7 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
       See [Dynamic Media - Supported raster image formats](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) for a list of formats supported by Spin Sets.
 
-1. [Create Spin Sets](#creating-spin-sets).
+1. [Create a Spin Set](#creating-spin-sets).
 
    To create a Spin Set, select **[!UICONTROL Create > Spin Set]** and then name the set, choose the assets, and choose the order the images appear.
 
@@ -54,15 +62,15 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    See [Add and edit viewer presets](/help/assets/managing-viewer-presets.md).
 
-1. [View Spin Sets](#viewing-spin-sets).
+1. [View a Spin Set](#viewing-spin-sets).
 
    You can view and access sets created by way of batch set presets in three different ways. (Sets created using batch set presets, do *not* appear in the user interface.)
 
-1. [Preview Spin Sets](/help/assets/previewing-assets.md).
+1. [Preview a Spin Set](/help/assets/previewing-assets.md).
 
    Select the Spin Set and you can preview it. Rotate the Spin Set. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
-1. [Publish Spin Sets](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publish a Spin Set](/help/assets/publishing-dynamicmedia-assets.md).
 
    Publishing a Spin Set activates the URL and Embed string. In addition, you must [publish the viewer preset](/help/assets/managing-viewer-presets.md).
 
@@ -74,9 +82,9 @@ To get you up and running quickly with Spin Sets, follow these steps:
 
    See [Link a Spin Set to a web page](/help/assets/linking-urls-to-yourwebapplication.md) and [Embed the Video or Image Viewer](/help/assets/embed-code.md).
 
-If necessary, you can [edit Spin Sets](#editing-spin-sets). In addition, you can view and modify [Spin Set properties](/help/assets/manage-assets.md#editing-properties).
+If necessary, you can [edit a Spin Set](#editing-spin-sets). In addition, you can view and modify [Spin Set properties](/help/assets/manage-assets.md#editing-properties).
 
-## Upload assets for Spin Sets {#uploading-assets-for-spin-sets}
+## Upload assets for a Spin Set {#uploading-assets-for-spin-sets}
 
 At minimum, you need 8-12 shots of an item for a one-dimensional Spin Set and 16-24 for a two-dimensional Spin Set. The shots must be taken at regular intervals to give the impression that the item is rotating and being flipped. For example, if a one-dimensional Spin Set includes 12 shots, rotate the item 30° (360/12) for each shot.
 
@@ -108,6 +116,14 @@ This section describes how to create a Spin Set in Experience Manager.
 >[!NOTE]
 >
 >The order in which images appear in a spin set matter. Be sure to order them so that the spin is a smooth 360° view.
+
+When you create a Spin Set, Adobe recommends the following best practice and enforces the following limit:
+
+| Limit type | Best practice | Limited imposed |
+| --- | --- | --- |
+| Maximum number of rows/columns per 2D set | 12-18 images per set | 1000 |
+
+See also [Dynamic Media limitations](/help/assets/limitations.md).
 
 **To create a Spin Set:**
 
