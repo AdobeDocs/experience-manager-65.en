@@ -166,6 +166,7 @@ Consider the following best practices to overcome performance issues with large 
     * File attachment and Terms and conditions components are not supported in lazily loaded fragments.
     * Mark a value in a lazy loaded panel as Use Value Globally if that value is used in some other part the form so that the value is available for use when the containing panel is unloaded.
     * Consider writing visibility rules for fragments that should show or hide based on a condition.
+* Set the value of the **Number of calls per request** in the **Apache Sling Main Servlet** to a fairly large number. It enables the Forms server to allow additional calls. The configuration displays a default value of 1500. The value, 1500 calls, is for other Experience Manager components like Sites and Assets. The default value set of adaptive forms is 20000. If you encounter the `too many calls` error in logs or the form fails to render, try increasing the value to a large number to resolve the issue. If the number of calls are exceeding 20000, that means the form is complex and it might take some time to render the form in browser. This only happens for the first time the form is loaded, after that the form is cached and once the form is cached, there is no significant impact on performance.
 
 ### Prefilling adaptive forms {#prefilling-adaptive-forms}
 
