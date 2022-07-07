@@ -280,7 +280,7 @@ The Sign Document step enables you to use Adobe Sign to sign documents. The Sign
 * **Select Document to be signed using:** You can choose a document from a location relative to the payload, use payload as the document, specify an absolute path of the document, or retrieve the document stored in a variable of Document data type.
 
 
-* **Input Attachment Path:** Path of the attachments. These attachments are included in the Signing Document. You can keep the attachments at a location relative to the payload, specify an absolute path of the attachments, or retrieve attachments stored in a variable of array of Document data type.
+* **Select Input Attachment Path using:** Path of the attachments. These attachments are included in the Signing Document. You can keep the attachments at a location relative to the payload, specify an absolute path of the attachments, or retrieve attachments stored in a variable of array of Document data type.
   
   
 If you specify the path of a folder, for example, attachments, all the files directly available in the folder are attached to Signing Document. If any files are available in the folders directly available in the specified attachment path, the files are included in Signing Document as attachments. If there are any folders in directly available folders, those are skipped.
