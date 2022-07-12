@@ -22,12 +22,6 @@ exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 
 AEM provides a framework for automating tests for your AEM UI. Using the framework, you write and run UI tests directly in a web browser. The framework provides a javascript API for creating tests.
 
-The AEM test framework uses Hobbes.js, a testing library written in Javascript. The Hobbes.js framework was developed for testing AEM as part of the development process. The framework is now available for public use for testing your AEM applications.
-
->[!NOTE]
->
->Refer to the Hobbes.js [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) for full details of the API.
-
 ## Structure of Tests {#structure-of-tests}
 
 When using automated tests within AEM, the following terms are important to understand:
@@ -98,8 +92,6 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 ## Creating and Using a Simple Test Suite {#creating-and-using-a-simple-test-suite}
 
 The following procedure steps you through the creation and execution of a Test Suite using [We.Retail content](/help/sites-developing/we-retail.md), but you can easily modify the test to use a different web page.
-
-For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Right-click the `/etc/clientlibs` folder and click **Create > Create Folder**. Type `myTests` for the name and click **OK**.
