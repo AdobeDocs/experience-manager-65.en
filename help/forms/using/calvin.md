@@ -19,7 +19,7 @@ exl-id: 59d6b23a-5917-4ea3-a924-0e76d8d6ff2b
 
 Adaptive forms are integral to your customer interactions. It is important to test your adaptive forms with every change you make in them, such as while rolling out a new fix pack or changing a rule in the form. However, functional testing adaptive forms and every field in them may be tedious.
 
-Calvin allows you to automate testing of your adaptive forms in the web browser. Calvin utilizes [Hobbes](/help/sites-developing/hobbes.md)'s user interface for running the tests and provides the following tools:
+Calvin allows you to automate testing of your adaptive forms in the web browser. Calvin utilizes Hobbes's user interface for running the tests and provides the following tools:
 
 * A JavaScript API for creating tests.
 * A user interface for running tests.
@@ -74,7 +74,7 @@ Using Calvin, you can create test cases in CRXDE and run UI tests directly in th
    <td><p>UI Interaction</p> </td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html#toc2__anchor" target="_blank">Testing UI interaction with Adaptive Form objects</a></li>
+     <li>Testing UI interaction with Adaptive Form objects</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -84,9 +84,9 @@ Using Calvin, you can create test cases in CRXDE and run UI tests directly in th
 
 Before using this article to create your test cases, you need to know the following:
 
-* Creating test suites and executing test cases using [Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
-* [Hobbes JavaScript APIs](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
-* [Calvin JavaScript APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+* Creating test suites and executing test cases using Hobbes
+* Hobbes JavaScript APIs
+* Calvin JavaScript APIs
 
 ## Example: Create a test suite for an adaptive form using Hobbes as testing framework {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
@@ -174,7 +174,7 @@ The following example walks you through creation of a test suite for testing mul
 
 1. Right-click the folder you have created for the test form (here testForm) and select **Create** &gt; **Create File**. Name the file scriptingTest.js and add the following code to the file and click **Save All.**
 
-   To use the following code to test another adaptive form, change the path and name of the form in **navigateTo** (lines 11, 36, and 62) and the respective test cases. For more information on APIs for testing different aspects of forms and form objects, see [Calvin APIs](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
+   To use the following code to test another adaptive form, change the path and name of the form in **navigateTo** (lines 11, 36, and 62) and the respective test cases. 
 
    ```javascript
    (function(window, hobs) {
@@ -303,7 +303,7 @@ To run a Test Suite:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-The steps for testing your AEM adaptive forms are similar to steps for testing your AEM UI. For more information on testing your adaptive forms, see the following topics in [Testing Your UI](https://helpx.adobe.com//experience-manager/6-3/help/sites-developing/hobbes.html):
+The steps for testing your AEM adaptive forms are similar to steps for testing your AEM UI. For more information on testing your adaptive forms, see the following topics in [Testing Your UI](/help/sites-developing/hobbes.md):
 
 * Viewing Test Suites
 * Running Multiple Tests
