@@ -169,7 +169,6 @@ role: User
   + [XFA support in XDP-based adaptive forms](using/xfa-api-supported-in-adaptive-form.md)
   + [Grant rule editor access to select user groups](using/rule-editor-access-user-groups.md)
   + [Using AEM translation workflow to localize adaptive forms and document of record](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-  + [Automate testing of adaptive forms](using/calvin.md)
   + [Styling constructs for adaptive forms](using/styling-constructs-adaptive-forms.md)
   + [Synchronizing Adaptive Forms with XFA Form Templates](using/synchronizing-adaptive-forms-xfa.md)
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
