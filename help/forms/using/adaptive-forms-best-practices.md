@@ -223,7 +223,7 @@ A document of record (DoR) is a flattened PDF version of an adaptive form that y
 
 For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
 
-Calvin SDK is a utility API for Adaptive Forms developers to test Adaptive Forms. Calvin SDK is built on top of the [Hobbes.js testing framework](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). You can use the framework to test the following:
+Calvin SDK is a utility API for Adaptive Forms developers to test Adaptive Forms. Calvin SDK is built on top of the Hobbes.js testing framework. You can use the framework to test the following:
 
 * Rendition experience of an Adaptive Form
 * Prefill experience of an Adaptive Form
@@ -232,7 +232,6 @@ Calvin SDK is a utility API for Adaptive Forms developers to test Adaptive Forms
 * Validations
 * Lazy Loading
 
-For more information, see [Automate testing of adaptive forms](/help/forms/using/calvin.md).
 
 ### Validating adaptive forms on AEM server {#validating-adaptive-forms-on-aem-server}
 
