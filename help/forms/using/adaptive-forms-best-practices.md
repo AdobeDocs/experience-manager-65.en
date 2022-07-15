@@ -128,7 +128,7 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
     * In addition, you can use the following field properties:
 
         * `field.value` to change value of a field.
-        * f `ield.enabled` to enable/disable a field.
+        * `field.enabled` to enable/disable a field.
         * `field.visible` to change visibility of a field.
 
 * Adaptive form authors may need to write JavaScript code to build business logic in a form. While JavaScript is powerful and effective, it is likely that it could compromise on security expectations. Therefore, you must ensure that the form author is a trusted persona and there are processes to review and approve the JavaScript code before a form is put into production. Administrator can restrict the access to rule editor access to user groups based on their role or function. See [Grant rule editor access to select user groups](/help/forms/using/rule-editor-access-user-groups.md).
