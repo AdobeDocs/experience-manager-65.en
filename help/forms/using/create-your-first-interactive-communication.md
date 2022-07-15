@@ -136,19 +136,7 @@ Interactive Communications can be delivered through two channels: Print and Web.
 
     [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-interactive-communication0.md)
 
-## Step 6: Test your Interactive Communication {#step-test-your-interactive-communication}
-
-![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
-
-Once you have created an Interactive Communication, it is important that you test every change that you make in them. Testing every field of an Interactive Communication is tedious. AEM Forms provide an SDK (Calvin SDK) to automate testing of Interactive Communications in web browser.
-
-**Goals:**
-
-* Create test suite
-* Create test cases
-* Run the test cases
-
-## Step 7: Publish your Interactive Communication {#step-publish-your-interactive-communication}
+## Step 6: Publish your Interactive Communication {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

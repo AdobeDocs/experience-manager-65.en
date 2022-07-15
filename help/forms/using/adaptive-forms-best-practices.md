@@ -128,7 +128,7 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
     * In addition, you can use the following field properties:
 
         * `field.value` to change value of a field.
-        * f `ield.enabled` to enable/disable a field.
+        * `field.enabled` to enable/disable a field.
         * `field.visible` to change visibility of a field.
 
 * Adaptive form authors may need to write JavaScript code to build business logic in a form. While JavaScript is powerful and effective, it is likely that it could compromise on security expectations. Therefore, you must ensure that the form author is a trusted persona and there are processes to review and approve the JavaScript code before a form is put into production. Administrator can restrict the access to rule editor access to user groups based on their role or function. See [Grant rule editor access to select user groups](/help/forms/using/rule-editor-access-user-groups.md).
@@ -222,17 +222,6 @@ A document of record (DoR) is a flattened PDF version of an adaptive form that y
 * Explore and learn about guideBridge APIs
 
 For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-Calvin SDK is a utility API for Adaptive Forms developers to test Adaptive Forms. Calvin SDK is built on top of the [Hobbes.js testing framework](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). You can use the framework to test the following:
-
-* Rendition experience of an Adaptive Form
-* Prefill experience of an Adaptive Form
-* Submit experience of an Adaptive Form
-* Expression Rules
-* Validations
-* Lazy Loading
-
-For more information, see [Automate testing of adaptive forms](/help/forms/using/calvin.md).
 
 ### Validating adaptive forms on AEM server {#validating-adaptive-forms-on-aem-server}
 
