@@ -1,6 +1,6 @@
 ---
-title: Adding Dynamic Media Assets to Pages
-description: How to add Dynamic Media components to a page in Adobe Experience Manager
+title: Add Dynamic Media Assets to pages
+description: How to add Dynamic Media components to a page in Adobe Experience Manager.
 uuid: b5e982f5-fa1c-478a-bcb3-a1ef980df201
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,7 +8,6 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 97a5f018-8255-4b87-9d21-4a0fdf740e4d
 docset: aem65
-
 role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing

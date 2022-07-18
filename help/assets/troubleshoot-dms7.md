@@ -11,6 +11,7 @@ docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
+mini-toc-levels: 3
 ---
 # Troubleshoot Dynamic Media - Scene7 mode{#troubleshooting-dynamic-media-scene-mode}
 
@@ -203,56 +204,70 @@ If you are having issues with video, see the following troubleshooting guidance.
 
 If you are having issues with viewers, see the following troubleshooting guidance.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Issue</strong></td>
-   <td><strong>How to debug</strong></td>
-   <td><strong>Solution</strong></td>
-  </tr>
-  <tr>
-   <td>Viewer Presets are not published</td>
-   <td><p>Proceed to sample manager diagnostic page: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observe computed values. When operating correctly, you see the following:</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Note</strong>: It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.</p> <p>If unactivated assets remain, select either of the <strong>List all Unactivated Assets</strong> buttons to see details.</p> </td>
-   <td>
-    <ol>
-     <li>Navigate to viewer preset list in admin tools: <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Select all viewer presets, then select <strong>Publish</strong>.</li>
-     <li>Navigate back to sample manager and observe that unactivated asset count is now zero.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>Viewer Preset artwork returns 404 from preview in asset details or copy URL/embed code</td>
-   <td><p>In CRXDE Lite do the following:</p>
-    <ol>
-     <li>Navigate to <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> folder within your Dynamic Media sync folder (for example, <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>Find the metadata node of the problematic asset (for example, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Check for the presence of <code>dam:scene7*</code> properties. If the asset was successfully synced and published, you see the <code>dam:scene7FileStatus</code> set is to <strong>PublishComplete</strong>.</li>
-     <li>Attempt to request the artwork directly from Dynamic Media by concatenating the values of the following properties and string literals
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>Example: <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>If the sample assets or viewer preset artwork has not synced or published, restart the entire copy/sync process:</p>
-    <ol>
-     <li>Navigate to CRXDE Lite.
-      <ul>
-       <li>Delete <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Navigate to the CRX Package Manager: <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
-      <ol>
-       <li>Search for viewer package in list (it starts with <code>cq-dam-scene7-viewers-content</code>)</li>
-       <li>Select <strong>Reinstall</strong>.</li>
-      </ol> </li>
-     <li>Under Cloud Services, navigate to the Dynamic Media Configuration page, then open the configuration dialog box for your Dynamic Media - S7 configuration.
-      <ul>
-       <li>Make no changes, select <strong>Save</strong>. This action triggers the logic again to create and sync the sample assets, viewer preset CSS, and artwork.<br />  </li>
-      </ul> </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### Issue: Viewer presets are not published {#viewers-not-published}
+
+**How to debug**
+
+1. Proceed to sample manager diagnostic page: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Observe computed values. When operating correctly, you see the following: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >It can take about 10 minutes after configuration of Dynamic Media cloud settings for the viewer assets to sync.
+   
+1. If unactivated assets remain, select either of the **List all Unactivated Assets** buttons to see details.
+
+**Solution**
+
+1. Navigate to viewer preset list in admin tools: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Select all viewer presets, then select **Publish**.
+1. Navigate back to sample manager and observe that unactivated asset count is now zero.
+
+### Issue: Viewer preset artwork returns 404 from Preview in asset details or Copy URL/Embed code {#viewer-preset-404}
+
+**How to debug**
+
+In CRXDE Lite do the following:
+
+1. Navigate to `<sync-folder>/_CSS/_OOTB` folder within your Dynamic Media sync folder (for example, `/content/dam/_CSS/_OOTB`).
+1. Find the metadata node of the problematic asset (for example, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Check for the presence of `dam:scene7*` properties. If the asset was successfully synced and published, you see the `dam:scene7FileStatus` set is to **PublishComplete**.
+1. Attempt to request the artwork directly from Dynasmic Media by concatenating the values of the following properties and string literals:
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder` 
+   * `<asset-name>` 
+    Example: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Solution**
+
+If the sample assets or viewer preset artwork has not synced or published, restart the entire copy/sync process:
+
+1. Navigate to CRXDE Lite. 
+1. Delete `<sync-folder>/_CSS/_OOTB`. 
+1. Navigate to the CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Search for viewer package in the list; it starts with `cq-dam-scene7-viewers-content`.
+1. Select **Reinstall**.
+1. Under Cloud Services, navigate to the Dynamic Media Configuration page, then open the configuration dialog box for your Dynamic Media - S7 configuration.
+1. Make no changes, select **Save**.
+   This save action triggers the logic again to create and sync the sample assets, viewer preset CSS, and artwork.
+
+### Issue: Image Preview is not loading in Viewer presets authoring {#image-preview-not-loading}
+
+**Solution**
+
+1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then navigate to **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. In the left rail, navigate to the sample content folder at the following location:
+
+   `/content/dam/_DMSAMPLE`
+
+1. Delete the `_DMSAMPLE` folder. 
+1. In the left rail, navigate to the presets folder at the following location:
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Delete the `viewer` folder.
+1. Near the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
+1. In the upper-left corner of the CRXDE Lite page, select the **Back Home** icon.
+1. Re-create a [Dynamic Media Configuration in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

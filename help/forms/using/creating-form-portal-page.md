@@ -9,10 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
-
 feature: Forms Portal
+exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
 ---
-
 # Creating a forms portal page{#creating-a-forms-portal-page}
 
 Forms portal components equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM). For a quick overview of forms portal, see [Introduction to publishing forms on a portal](../../forms/using/introduction-publishing-forms.md).

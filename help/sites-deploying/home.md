@@ -1,17 +1,16 @@
 ---
 title: AEM 6.5 Deploying User Guide
 seo-title: AEM 6.5 Deploying User Guide
-description: This guide covers all AEM Deploying tasks, such as installing and deploying AEM.
-seo-description: Covers all AEM Deploying tasks, such as installing and deploying AEM.
+description: Learn about installing and deploying Adobe Experience Manager 6.5 and about its architecture, including our Adobe Managed Services cloud deployment.
+exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 ---
-
 # AEM 6.5 Deploying User Guide
 
 This guide covers all AEM Deploying tasks, such as installing and deploying AEM.
 
 ## Key AEM articles
 
-* [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Getting Started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)

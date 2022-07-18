@@ -1,11 +1,11 @@
 ---
 title: AEM Content and Commerce
-description: AEM Content and Commerce self-help resources and documentation links
+description: Understand how to use and administer AEM Content and Commerce, with our helpful articles on integrations and how to get started using AEM Storefront.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
 ---
 # AEM Content and Commerce {#commerce-guide}
 
-This page lists the self-help resources regarding AEM Commerce.
+Understand how to use and administer AEM Content and Commerce, with our helpful articles on integrations and how to get started using AEM Storefront.
 
 >[!NOTE]
 >

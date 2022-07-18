@@ -192,6 +192,10 @@ To compare a previous version with the current page:
 
 Timewarp is a feature designed to simulate the *published* state of a page at specific times in the past.
 
+>[!TIP]
+>
+>[Timewarp can also be used with Launches to preview the future](/help/sites-authoring/launches.md) when running AEM 6.5.10.0 or later.
+
 Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time in order to understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
 
 To do this:

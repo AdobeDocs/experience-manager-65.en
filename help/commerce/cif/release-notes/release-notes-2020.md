@@ -41,7 +41,7 @@ exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 
 * CIF core components extended to hydrate the Adobe Client Data Layer by sending commerce data. The Adobe Client Data Layer is a standardized method to collect data and communicate the data to digital analytics and reporting servers. For more details, refer to [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer/wiki).
 
-* Product Detail and Product List pages extended to automatically populate SEO metadata (such as title, meta description, meta keywords) configured from within the Magento admin UI
+* Product Detail and Product List pages extended to automatically populate SEO metadata (such as title, meta description, meta keywords) configured from within the Adobe Commerce admin UI
 
 * Commerce teaser component bug fixed.
 
@@ -55,7 +55,7 @@ exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 
 ### What's New {#what-is-new-september}
 
-* Supports queries for Magento 2.4.0 Schema.
+* Supports queries for Adobe Commerce 2.4.0 Schema.
 
 * Account information features added to allow shoppers to update personal information.
 
@@ -159,7 +159,7 @@ This is the first version of CIF Core Components that is supported on Adobe Expe
 
 ### What's New {#what-is-new-may}
 
-* Supports queries for Magento 2.3.5 Schema.
+* Supports queries for Adobe Commerce 2.3.5 Schema.
 
 * Faceted Search support added to Search Page and Product List Page to allow shoppers to filter search results based on Product facets.
 
@@ -207,7 +207,7 @@ This is the first version of CIF Core Components that is supported on Adobe Expe
 
 ### What's New {#what-is-new-february}
 
-* Supports queries for Magento 2.3.4 Schema.
+* Supports queries for Adobe Commerce 2.3.4 Schema.
 
 * Added search support in Category Picker.
 

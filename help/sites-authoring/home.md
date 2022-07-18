@@ -1,17 +1,17 @@
 ---
 title: AEM 6.5 Authoring User Guide
 seo-title: AEM 6.5 Authoring User Guide
-description: This guide explains the concepts of authoring in AEM. 
-seo-description: Explains the concepts of authoring in AEM. 
+description: Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates and other page features.
+seo-description: Explains the concepts of authoring in AEM.
+exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 ---
-
 # AEM 6.5 Authoring User Guide
 
-This guide explains the concepts of authoring in AEM. 
+Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates, and other page features. 
 
 ## Key AEM articles
 
-* [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Getting Started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)

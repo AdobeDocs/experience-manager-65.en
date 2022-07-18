@@ -10,11 +10,19 @@ discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 ---
-# Forms-centric workflow on OSGi - Step Reference{#forms-centric-workflow-on-osgi-step-reference}
+# Forms-centric workflow on OSGi - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
+
+You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](/help/sites-developing/workflows-models.md#extending-aem).
 
 ## Forms Workflow Steps {#forms-workflow-steps}
 
 Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps allow you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
+
+Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Workflow. These steps allow you to rapidly build Adaptive Forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal and across- the-firewall business processes.
+
+>[!NOTE]
+>
+>If the workflow model is marked for an external storage, then for all the Forms workflow steps, you can select only the variable option to store or retrieve data files and attachments.
 
 ## Assign task step {#assign-task-step}
 
@@ -50,11 +58,12 @@ You can also use the component to control the behavior of the task. For example,
 * **For completed task, render the adaptive form as**: When a task is marked complete, you can render the adaptive form as a read-only adaptive form or a PDF document. You require a Document of Record option enabled or form template based adaptive forms for rendering the adaptive form as Document of Record.
 * **Pre-populated:** The following fields listed below serve as inputs to the task:
 
-    * **Select input data file using:** Path of input data file (.json,. xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
-    * **Select input attachments using:** Attachments available at the location are attached to the form associated with the task. The path is always relative to the payload. An example path is [Payload_Directory]/attachments/
+  * **[!UICONTROL Select input data file using]**: Path of input data file (.json, .xml, .doc, or form data model). You can retrieve the input data file using a path that is relative to the payload or retrieve the file stored in a variable of Document, XML, or JSON data type. For example, the file contains the data submitted for the form through an AEM Inbox application. An example path is [Payload_Directory]/workflow/data.
+  
+  * **Select input attachments using:** Attachments available at the location are attached to the form associated with the task. The path can be relative to the payload or retrieve the attachments stored in a variable of the type ArrayList of Document. An example path is [Payload_Directory]/attachments/. You can specify attachments placed relative to the payload or use a document type (Array list > Document) variable to specify an input attachment for the Adaptive Form.
+  
     * **Choose input JSON:** Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
-    * **Choose a custom prefill service:** Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.   
-    
+    * **Choose a custom prefill service:** Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.
     * **Use the prefill service of the interactive communication selected above:** Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list.
     * **Request Attribute Mapping:** Use the Request Attribute Mapping section to define the [name and value of the request attribute](../../forms/using/work-with-form-data-model.md#bindargument). Retrieve the details from the data source based on the attribute name and value specified in the request. You can define a request attribute value using a literal value or a variable of String data type.  
       The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
@@ -70,7 +79,7 @@ You can also use the component to control the behavior of the task. For example,
     * **Save layout template using:** Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](../../forms/using/layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
 
 * **Assignee &gt; Assign options:** Specify the method to assign the task to a user. You can dynamically assign the task to a user or a group using the Participant Chooser script or assign the task to a specific AEM user or group.
-* **Participant Chooser:** The option is available when the **Dynamically to a user or group** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://helpx.adobe.com/experience-manager/using/dynamic-steps.html)
+* **Participant Chooser:** The option is available when the **Dynamically to a user or group** option is selected in the Assign options field. You can use an ECMAScript or a service to dynamically select a user or a group. For more information, see [Dynamically assign a workflow to the users](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) and [Creating a custom Adobe Experience Manager Dynamic Participant step.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)
 
 * **Participants:** The field is available when the **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** option is selected in the **Participant Chooser** field. The field allows you to select users or groups for the RandomParticipantChooser option.
 
@@ -112,6 +121,10 @@ You can also use the component to control the behavior of the task. For example,
 * **Show Data from Previous Steps**: Select this option to enable assignees to view previous assignees, action already taken on the task, comments added to the task, and document of record of the completed task, if available. 
 * **Show Data from Subsequent Steps:** Select this option to enable the current assignee to view the action taken and comments added to task by subsequent assignees. It also allows the current assignee to view a document of record of the completed task, if available.
 * **Visibility of data type:** By default, an assignee can view a Document of Record, assignees, action taken, and comments that previous and subsequent assignees have added. Use the visibility of data type option to limit the type of data visible to the assignees.
+
+>[!NOTE]
+>
+>The options to save the Assign Task step as draft and to retrieve the history of the Assign Task step are disabled when you configure an [!DNL Adobe Experience Manager] workflow model for external data storage. Also, in Inbox, the option to save is disabled.
 
 ## Send Email Step {#send-email-step}
 
@@ -265,6 +278,13 @@ The Sign Document step enables you to use Adobe Sign to sign documents. The Sign
 * **Adobe Sign Cloud Configuration**: Choose an Adobe Sign Cloud Configuration. If you have not configured Adobe Sign for AEM Forms, see [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md). 
 
 * **Select Document to be signed using:** You can choose a document from a location relative to the payload, use payload as the document, specify an absolute path of the document, or retrieve the document stored in a variable of Document data type.
+
+
+* **Select Input Attachment Path using:** Path of the attachments. These attachments are included in the Signing Document. You can keep the attachments at a location relative to the payload, specify an absolute path of the attachments, or retrieve attachments stored in a variable of array of Document data type.
+  
+  
+  If you specify the path of a folder, for example, attachments, all the files directly available in the folder are attached to Signing Document. If any files are available in the folders directly available in the specified attachment path, the files are included in Signing Document as attachments. If there are any folders in directly available folders, those are skipped.
+
 * **Days Until Deadline:** A document is marked due (passed deadline) after there is no activity on the task for the number of days specifies in the **Days Until Deadline** field. The number of days are counted after the documented is assigned to a user for signing.
 * **Reminder Email Frequency:** You can send a reminder email at daily or weekly interval. The week is counted from the day the documented is assigned to a user for signing.
 * **Signature Process:** You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, then the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.  

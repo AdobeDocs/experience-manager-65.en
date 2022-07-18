@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: forms
-solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
@@ -13,9 +13,9 @@ role: User
 
 + [AEM 6.5 Forms Guide](home.md)
 + Release Notes {#release-notes-new-features}
-  + [Release Notes](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/release-notes.html#experience-manager-forms)
+  + [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
   + [New features summary](using/whats-new.md)
-  + [Deprecated features](https://docs.adobe.com/content/help/en/experience-manager-65/release-notes/deprecated-removed-features.html)
+  + [Deprecated features](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Getting Started {#getting-started}
   + [Introduction to AEM Forms](using/introduction-aem-forms.md)
   + [Introduction to authoring adaptive forms](using/introduction-forms-authoring.md)
@@ -29,7 +29,6 @@ role: User
     + [Tutorial: Apply rules to adaptive form fields l](using/apply-rules-to-adaptive-form-fields.md)
     + [Tutorial: Style your adaptive form](using/style-your-adaptive-form.md)
     + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
-    + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
     + [Tutorial: Create your first Interactive Communication](using/create-your-first-interactive-communication.md)
     + [Tutorial: Plan the Interactive Communication](using/planning-interactive-communications.md)
@@ -167,10 +166,8 @@ role: User
   + [Using SOM expressions in adaptive forms](using/using-som-expressions-adaptive-forms.md)
   + [Adding information from user data to form submission metadata](using/form-submission-metadata.md)
   + [XFA support in XDP-based adaptive forms](using/xfa-api-supported-in-adaptive-form.md)
-  + [Changing Page Zero content in Designer](using/changing-page-zero-content-designer.md)
   + [Grant rule editor access to select user groups](using/rule-editor-access-user-groups.md)
   + [Using AEM translation workflow to localize adaptive forms and document of record](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-  + [Automate testing of adaptive forms](using/calvin.md)
   + [Styling constructs for adaptive forms](using/styling-constructs-adaptive-forms.md)
   + [Synchronizing Adaptive Forms with XFA Form Templates](using/synchronizing-adaptive-forms-xfa.md)
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
@@ -367,6 +364,7 @@ role: User
   + [Enable AEM to search document security protected PDF and Microsoft Office documents](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
   + [Protect a document on behalf of another user](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
+  + [Forms Designer Help](using/forms-designer-help.md)
   + [Using Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
   + [Designer Quick Start Tutorials](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
   + [Designer Samples](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
@@ -374,6 +372,7 @@ role: User
   + [Designer Scripting Reference](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
   + [Designer FormCalc Reference](http://www.adobe.com/go/learn_aemforms_formCalc_65)
   + [Using Scribble Signature in HTML5 forms](using/scribble-signature.md)
+  + [Changing Page Zero content in Designer](using/changing-page-zero-content-designer.md)
 + Customize AEM Forms {#customize-aem-forms}
   + [Appearance framework for adaptive and HTML5 forms](using/introduction-widgets.md)
   + [Creating a custom adaptive form template](using/custom-adaptive-forms-templates.md)
@@ -459,7 +458,6 @@ role: User
     + [Enabling online commenting for Adobe Reader web browser plug-in](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
     + [Setting timeout values for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
     + [Updating expired Reader Extension service certificates](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
-    
 
   + Working with PDF Generator {#work-with-pdf-generator}
     + [Introduction to working with PDF Generator](/help/forms/using/admin-help/overview-5.md)
@@ -676,10 +674,12 @@ role: User
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using the web service API](developing/validate-ddx-document-using-web.md)
-    + Legacy documentation {#legacy-documentation}
-      + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
-      + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
-      + [Configuring and troubleshooting an AEM Forms on JEE server cluster](developing/configure-server-cluster.md)
-      + [Generating and working with Hashes in dynamic PDF forms](developing/hashing-forms.md)
-      + [Passing credentials using WS-Security headers](developing/passing-credentials.md)
-    
++ Troubleshooting {#troubleshooting}
+  + [Unable to use some forms features with certain versions of Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
++ Legacy documentation {#legacy-documentation}
+  + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
+  + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
+  + [Configuring and troubleshooting an AEM Forms on JEE server cluster](developing/configure-server-cluster.md)
+  + [Generating and working with Hashes in dynamic PDF forms](developing/hashing-forms.md)
+  + [Passing credentials using WS-Security headers](developing/passing-credentials.md)
+

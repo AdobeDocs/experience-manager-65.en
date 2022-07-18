@@ -93,7 +93,7 @@ Configure campaign properties that control the behavior:
 
 * **Adobe Target:** Properties that configure campaigns that are integrated with Adobe Target. (See [Integrating with Adobe Target](/help/sites-administering/target.md).)
 
-1. From **Campaigns**, select your brand. In the right pane, select your campaign and cick **Properties**.
+1. From **Campaigns**, select your brand. In the right pane, select your campaign and click **Properties**.
 
    You can enter various properties, including a **Title**, **Description** and any **Cloud Services** you want.
 
@@ -215,14 +215,8 @@ To import leads from a comma-separated list:
    >
    >Alternatively, you can import leads by doing one of the following:
    >
-   >
-   >
-   >    * In the Dashboard, click **Import Leads** in the **Lists** pane
-   >
-   >    * Click **Lists** and in the **Tools** menu, select **Import Leads**.
-   >
-   >
-   >
+   >* In the Dashboard, click **Import Leads** in the **Lists** pane 
+   >* Click **Lists** and in the **Tools** menu, select **Import Leads**.  
 
 1. In the **Tools** menu, select **Import** **Leads**.
 

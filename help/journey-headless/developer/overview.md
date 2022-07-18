@@ -1,6 +1,7 @@
 ---
 title: AEM Headless Developer Journey
 description: AEM Headless CMS Documentation. Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
+exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
 ---
 # AEM Headless Developer Journey {#aem-headless-developer-journey}
 

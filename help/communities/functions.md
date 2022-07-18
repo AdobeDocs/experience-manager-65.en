@@ -10,10 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
-
 role: Admin
+exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
 ---
-
 # Community Functions{#community-functions}
 
 The type of features expected from a community experience are well known. Community features are available as community functions. Essentially, they are one or more pages pre-wired to implement a community feature which requires more than simply adding a component to a page in author mode. They are the building blocks used to define the structure of a [community site template](/help/communities/sites.md) from which community sites are [created](/help/communities/sites-console.md).

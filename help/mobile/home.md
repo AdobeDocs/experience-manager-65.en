@@ -1,17 +1,17 @@
 ---
 title: AEM 6.5 Mobile User Guide
 seo-title: AEM 6.5 Mobile User Guide
-description: This guide describes how to create and manage content for mobile applications.
+description: Benefit from AEM support to create and manage content for mobile apps. Get an introduction to and learn how to author, develop, and administer on the On-Demand Services App and Adobe PhoneGap Enterprise.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
 ---
 # AEM 6.5 Mobile User Guide
 
-This guide covers all AEM Mobile tasks, such as how to create and manage content for mobile applications.
+Benefit from AEM support to create and manage content for mobile apps. Get an introduction to and learn how to author, develop, and administer on the On-Demand Services App and Adobe PhoneGap Enterprise.
 
 ## Key AEM articles
 
-* [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Getting Started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)

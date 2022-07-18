@@ -1,17 +1,15 @@
 ---
 title: AEM 6.5 Administering User Guide
-seo-title: AEM 6.5 Administering User Guide
-description: AEM administering
-seo-description: AEM administering
+description: Learn about administering AEM 6.5. These guides cover site features, deployment operations, security features, personalization, integration, and more.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 ---
 # AEM 6.5 Administering User Guide
 
-This guide covers all AEM Administering tasks.
+Learn about administering AEM 6.5. These guides cover site features, deployment operations, security features, personalization, integration, and more.
 
 ## Key articles
 
-* [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Getting Started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)

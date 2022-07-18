@@ -1,17 +1,17 @@
 ---
 title: Adobe Experience Manager 6.5 Communities Guide
 seo-title: Adobe Experience Manager 6.5 Communities Guide
-description: This guide covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
+description: Create online experiences such as forums, user groups, learning resources, and other social features. Browse our guide that explains how to deploy, administer, develop and author Communities.
 seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 ---
 # Adobe Experience Manager 6.5 Communities Guide
 
-This guide covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
+Create online experiences such as forums, user groups, learning resources, and other social features. Browse our guide that explains how to deploy, administer, develop and author Communities.
 
 ## Key AEM articles
 
-* [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Getting Started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
