@@ -3,15 +3,11 @@ title: Upgrading to AEM 6.5
 seo-title: Upgrading to AEM 6.5
 description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
 seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
-uuid: 45368056-273c-4f1a-9da6-e7ba5c2bbc0d
 contentOwner: sarchiz
 topic-tags: upgrading
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
-
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
 ---
@@ -67,10 +63,8 @@ AEM recently introduces the [Pattern Detector](/help/sites-deploying/pattern-det
 
 For more details about what else has changed in recent AEM versions, see the complete release notes:
 
-* [https://helpx.adobe.com/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
-* [https://helpx.adobe.com/experience-manager/6-5/release-notes.html](https://helpx.adobe.com/experience-manager/6-5/release-notes.html)
+* [General Release Notes for Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html)
+* [Adobe Experience Manager 6.5 Latest Service Pack Release Notes](/help/release-notes/release-notes.md)
 
 ## Upgrade Overview {#upgrade-overview}
 
