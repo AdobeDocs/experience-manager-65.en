@@ -278,6 +278,13 @@ The Sign Document step enables you to use Adobe Sign to sign documents. The Sign
 * **Adobe Sign Cloud Configuration**: Choose an Adobe Sign Cloud Configuration. If you have not configured Adobe Sign for AEM Forms, see [Integrate Adobe Sign with AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md). 
 
 * **Select Document to be signed using:** You can choose a document from a location relative to the payload, use payload as the document, specify an absolute path of the document, or retrieve the document stored in a variable of Document data type.
+
+
+* **Select Input Attachment Path using:** Path of the attachments. These attachments are included in the Signing Document. You can keep the attachments at a location relative to the payload, specify an absolute path of the attachments, or retrieve attachments stored in a variable of array of Document data type.
+  
+  
+  If you specify the path of a folder, for example, attachments, all the files directly available in the folder are attached to Signing Document. If any files are available in the folders directly available in the specified attachment path, the files are included in Signing Document as attachments. If there are any folders in directly available folders, those are skipped.
+
 * **Days Until Deadline:** A document is marked due (passed deadline) after there is no activity on the task for the number of days specifies in the **Days Until Deadline** field. The number of days are counted after the documented is assigned to a user for signing.
 * **Reminder Email Frequency:** You can send a reminder email at daily or weekly interval. The week is counted from the day the documented is assigned to a user for signing.
 * **Signature Process:** You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, then the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.  

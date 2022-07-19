@@ -185,13 +185,12 @@ For additional information about the `editElementQuery` property and the configu
 
 ### Limitations {#limitations}
 
-The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully supported by Adobe, and as a new feature it continues to be enhanced and expanded. The following AEM features are not yet supported by the SPA Editor:
+The AEM SPA Editor SDK was introduced with AEM 6.4 service pack 2. It is fully supported by Adobe, and it continues to be enhanced and expanded. The following AEM features are not yet supported by the SPA Editor:
 
 * Target mode
 * ContextHub
 * Inline image editing
 * Edit configs (eg. listeners)
-* Style System
 * Undo / Redo
 * Page diff and Time Warp
 * Features performing HTML rewriting server-side such as Link Checker, CDN rewriter service, URL shortening etc.
