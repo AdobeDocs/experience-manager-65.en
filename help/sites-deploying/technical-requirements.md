@@ -183,7 +183,7 @@ Adobe Experience Manager works with the following server platforms for productio
 | **Linux, based on Red Hat distribution** |A: Supported `[1]` `[3]` |
 | Linux, based on Debian distribution incl. Ubuntu |A: Supported `[2]` |
 | Linux, based on SUSE distribution |A: Supported |
-| Microsoft Windows Server 2019 `[4]` |R: Restricted Support for new contracts |
+| Microsoft Windows Server 2019 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft Windows Server 2016 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft Windows Server 2012 R2 |Z: Not supported  |
 | Oracle Solaris 11 |Z: Not supported  |

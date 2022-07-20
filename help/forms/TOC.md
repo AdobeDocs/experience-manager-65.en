@@ -29,7 +29,6 @@ role: User
     + [Tutorial: Apply rules to adaptive form fields l](using/apply-rules-to-adaptive-form-fields.md)
     + [Tutorial: Style your adaptive form](using/style-your-adaptive-form.md)
     + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
-    + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
     + [Tutorial: Create your first Interactive Communication](using/create-your-first-interactive-communication.md)
     + [Tutorial: Plan the Interactive Communication](using/planning-interactive-communications.md)
@@ -169,7 +168,6 @@ role: User
   + [XFA support in XDP-based adaptive forms](using/xfa-api-supported-in-adaptive-form.md)
   + [Grant rule editor access to select user groups](using/rule-editor-access-user-groups.md)
   + [Using AEM translation workflow to localize adaptive forms and document of record](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-  + [Automate testing of adaptive forms](using/calvin.md)
   + [Styling constructs for adaptive forms](using/styling-constructs-adaptive-forms.md)
   + [Synchronizing Adaptive Forms with XFA Form Templates](using/synchronizing-adaptive-forms-xfa.md)
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
