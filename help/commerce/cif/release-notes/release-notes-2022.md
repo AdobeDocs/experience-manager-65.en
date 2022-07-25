@@ -25,7 +25,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 ### What's New {#what-is-new-june}
 
-* Template name now visible is Sites editor when authoring product catalog template
+* Product catalog enrichment now supports AEM pages. This enables authors to manage page - product association.
 
 * Various CIF Core Component improvements
 
