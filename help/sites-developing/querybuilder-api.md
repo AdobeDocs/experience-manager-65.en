@@ -35,7 +35,7 @@ The REST API provides access to exactly the same features through HTTP with resp
 
 >[!NOTE]
 >
->See the AEM Gem session [Search forms made easy with the AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) for a detailed overview of the query builder.
+>See the AEM Gem session [Search forms made easy with the AEM querybuilder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) for a detailed overview of the query builder.
 
 ## Sample Queries {#sample-queries}
 
