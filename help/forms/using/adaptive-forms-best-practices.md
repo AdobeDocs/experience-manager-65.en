@@ -99,7 +99,7 @@ The form templates can be uploaded from Adaptive Form packages that are created 
 * Authoring of assets such as adaptive form, themes, templates, or cloud configurations are performed over Author nodes only, which can be replicated at the configured Publish nodes.
 For more information, see [Publishing and unpublishing forms and documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
 * Forms addon package is required for Authoring as well as Publishing to support the document services operations; hence it can be considered as a dependency. 
-If you only want Forms related sample template, themes, and DOR packages, then you can download them from the [aemforms-references-* packages]().
+If you only want Forms related sample template, themes, and DOR packages, then you can download them from the [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
 
 For further information, see the best practices in [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md).
 
