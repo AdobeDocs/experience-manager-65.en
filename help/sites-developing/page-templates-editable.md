@@ -501,7 +501,7 @@ This node holds properties for the template:
 
 * **Name**: `status`
 
-    * ``**Type**: `String`
+    * **Type**: `String`
 
     * **Value**: `draft`, `enabled` or `disabled`
 

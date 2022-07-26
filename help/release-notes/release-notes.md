@@ -271,6 +271,7 @@ The following bug fixes, key features, and enhancements were introduced in [!DNL
 
 ## User interface {#ui-6513}
 
+* Update to `favicon.ico` that is used in Experience Manager. (CQ-4315324)
 * When you are on start page > Tools section and click the [!DNL Experience Manager] icon, the [!DNL Experience Manager] Navigation screen should pop up. (NPR-38417)
 * Enable ES6 for `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Enable ES6 for `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
