@@ -65,6 +65,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 
 1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
 
+>
 >**Note:** Before launching **Configuration Manager**, download and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
 >
 
