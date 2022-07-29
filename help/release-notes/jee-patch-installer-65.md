@@ -54,10 +54,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
    * `xercesImpl-2.9.1.jar` to `xercesImpl-2.12.0.jar`
    * `xml-apis-2.7.1.jar` to `xml-apis-2.7.2.jar`
 
->**Note:** Download and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file from this link, before running **ConfigurationManager.exe** file.
->
-
-13.  The Start Configuration Manager check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager.
+1. The Start Configuration Manager check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager.
 
 1. To run Configuration Manager later, deselect the Start Configuration Manager option before you click Done. You can start Configuration Manager later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
 
@@ -68,6 +65,8 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 
 1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
 
+>**Note:** Download and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file from this link, before running **ConfigurationManager.exe** file.
+>
 ## Post-deployment configurations {#post-deployment-configurations}
 
 ### SAML configurations {#saml-configurations}
