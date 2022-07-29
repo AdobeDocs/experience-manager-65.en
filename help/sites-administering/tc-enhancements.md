@@ -67,9 +67,12 @@ Manual edits of translated content can be synchronized back to the Translation M
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-   >[!NOTE]
-   >
-   >AEM will send the selected strings back to the Translation Management System.
+AEM will send the selected strings back to the Translation Management System.
+
+* The action updates the translation of existing strings in the translation memory of configured Translation Management Systems (TMS). 
+* It does not create new translation jobs.
+* It sends the value pairs of strings and their translations back to the TMS, via AEM translation API. 
+* This feature requires that a Translation Management System is configured for use with AEM. 
 
 ## Language Copies on Multiple Levels {#language-copies-on-multiple-levels}
 
