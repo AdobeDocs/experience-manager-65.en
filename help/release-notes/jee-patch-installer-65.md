@@ -67,6 +67,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 
 >**Note:** Download and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file from this link, before running **ConfigurationManager.exe** file.
 >
+
 ## Post-deployment configurations {#post-deployment-configurations}
 
 ### SAML configurations {#saml-configurations}
