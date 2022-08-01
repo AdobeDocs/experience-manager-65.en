@@ -46,14 +46,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 1. Read the Pre-Installation Summary information and click **[!UICONTROL Install]**.
 1. When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.  
 
-1. Deselect the Start Configuration Manager option before you click Done. Before running configuration manager using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *&lt;AEMForms_Install_Dir&gt;\configurationManager\bin* directory and update `ConfigurationManager.lax` and `ConfigurationManager_IPv6.lax` files with the following rename operations: 
-
-   * `axis.jar` to `axis-1.4.1.1.jar`
-   * `serializer-2.7.1.jar` to `serializer-2.7.2.jar`
-   * `xalan-2.7.1.jar` to `xalan-2.7.2.jar`
-   * `xercesImpl-2.9.1.jar` to `xercesImpl-2.12.0.jar`
-   * `xml-apis-2.7.1.jar` to `xml-apis-2.7.2.jar`
-
+1. Navigate to <AEMForms_Install_Dir>\configurationManager\bin directory, and download and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
 1. The Start Configuration Manager check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager.
 
 1. To run Configuration Manager later, deselect the Start Configuration Manager option before you click Done. You can start Configuration Manager later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
@@ -64,12 +57,6 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
     * [Installing and Deploying AEM forms for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
-
->
->[!NOTE]
->
->Before launching **Configuration Manager**, download and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
->
 
 ## Post-deployment configurations {#post-deployment-configurations}
 
