@@ -46,7 +46,9 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 1. Read the Pre-Installation Summary information and click **[!UICONTROL Install]**.
 1. When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.  
 
-1. Navigate to <AEMForms_Install_Dir>\configurationManager\bin directory, and download and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
+1. [Windows only] Perform the following step:
+
+   Deselect the **Start Configuration Manager** option before you click Done. Before running configuration manager using ConfigurationManager.exe or ConfigurationManager_IPv6.exe, navigate to <AEMForms_Install_Dir>\configurationManager\bin directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
 1. The Start Configuration Manager check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager.
 
 1. To run Configuration Manager later, deselect the Start Configuration Manager option before you click Done. You can start Configuration Manager later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
