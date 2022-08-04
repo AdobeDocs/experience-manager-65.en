@@ -57,7 +57,7 @@ It is possible to configure multiple target languages in a translation project, 
 
 ## Translation Memory Updates {#translation-memory-updates}
 
-Manual edits of translated content can be synchronized back to the Translation Management System (TMS) to train its Translation Memory.
+Manual edits of translated content can be synchronized back to the Translation Management System (TMS) to train its translation memory.
 
 1. From the Sites console, after updating text content in a translated page, select **Update Translation Memory**.
 
@@ -67,12 +67,20 @@ Manual edits of translated content can be synchronized back to the Translation M
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-AEM will send the selected strings back to the Translation Management System.
+AEM updates the translation of the existing strings in the translation memory of the configured TMS.
 
-* The action updates the translation of existing strings in the translation memory of configured Translation Management Systems (TMS). 
+* The action updates the translation of existing strings in the translation memory of the configured TMS. 
 * It does not create new translation jobs.
-* It sends the value pairs of strings and their translations back to the TMS, via AEM translation API. 
-* This feature requires that a Translation Management System is configured for use with AEM. 
+* It sends the translations back to the TMS, via AEM translation API (see below).
+
+To use this feature:
+
+* A TMS must be configured for use with AEM.
+* The connector needs to implement the method [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+  * Code within this method determines what happens to the translation memory update request.
+  * The AEM translation framework sends the string value pairs (original and updated translation) back to the TMS  via this method implementation. 
+
+The translation memory updates can be intercepted and sent to a custom destination, for cases where a proprietary translation memory is used.
 
 ## Language Copies on Multiple Levels {#language-copies-on-multiple-levels}
 
