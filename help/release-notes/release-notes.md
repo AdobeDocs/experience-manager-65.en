@@ -24,7 +24,8 @@ Some of the key features and enhancements are the following:
 * bullet item here
 
 
-<!-- UPDATE FOR EACH NEW RELEASE -->
+<!-- UPDATE BELOW FOR EACH NEW RELEASE -->
+
 ## [!DNL Assets] {#assets-6514}
 
 * bullet item here
