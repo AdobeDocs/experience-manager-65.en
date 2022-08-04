@@ -21,118 +21,116 @@ mini-toc-levels: 3
 
 Some of the key features and enhancements are the following:
 
-
-
-
+* bullet item here
 
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 ## [!DNL Assets] {#assets-6514}
 
-*
+* bullet item here
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
-*
+* bullet item here
 
 ## Commerce {#commerce-6514}
 
-*
+* bullet item here
 
 ## CRX {#crx-6514}
 
-*
+* bullet item here
 
 ## [!DNL Forms] {#forms-6514}
 
-*
+* bullet item here
 
 ## Granite {#granite-6514}
 
-* 
+* bullet item here
 
 ## Integrations {#integrations-6514}
 
-* 
+* bullet item here
 
 ## Oak - Indexing and Queries {#oak-6514}
 
-*
+* bullet item here
 
 
 ## Platform {#platform-6514}
 
-*
+* bullet item here
 
 
 ## Replication {#replication-6514}
 
-*
+* bullet item here
 
 
 ## [!DNL Sites] {#sites-6514}
 
-*
+* bullet item here
 
 ### Admin {#sites-admin-6514}
 
-*
+* bullet item here
 
 ### Classic User Interface {#sites-classicui-6514}
 
-*
+* bullet item here
 
 ### Content Fragments {#sites-contentfragments-6514}
 
-*
+* bullet item here
 
 ### ContentHub {#sites-contenthub-6514}
 
-*
+* bullet item here
 
 ### E-mail Editor {#sites-emaileditor-6514}
 
-* 
+* bullet item here
 
 ### Experience Fragments {#sites-experiencefragments-6514}
 
-* 
+* bullet item here
 
 ### Page Editor {#sites-pageeditor-6514}
 
-*
+* bullet item here
 
 ### Security {#sites-security-6514}
 
-*
+* bullet item here
 
 ### SEO {#sites-seo-6514}
 
-*
+* bullet item here
 
 ### SPA Editor and SDK {#sites-spa-sdk-6514}
 
-*
+* bullet item here
 
 ### Template Editor {#sites-templateeditor-6514}
 
-*
+* bullet item here
 
 ## Sling {#sling-6514}
 
-*
+* bullet item here
 
 ## Translation projects {#translation-6514}
 
-*
+* bullet item here
 
 ## User interface {#ui-6514}
 
-*
+* bullet item here
 
 ## WCM {#wcm-6514}
 
-*
+* bullet item here
 
 
 ## Install [!DNL Experience Manager] 6.5.14.0 {#install}
