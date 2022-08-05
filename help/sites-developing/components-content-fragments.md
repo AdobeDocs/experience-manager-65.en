@@ -76,21 +76,21 @@ To illustrate this, let us consider that we have:
 * An instance of a content fragment composed of three paragraphs
 * And that some content has already been inserted after the second paragraph
 
-    * This means that the content will be stored in the second parsys.
+  * This means that the content will be stored in the second parsys.
 
 Basically, if the paragraph structure of this instance changes (by changing the variation, element, or range of paragraphs displayed), it could affect the in-between content displayed when the content fragment content:
 
 * Is edited and another paragraph is added before the second paragraph:
 
-    * The in-between content will be displayed after the newly created paragraph (the second parsys now holds the newly created paragraph).
+  * The in-between content will be displayed after the newly created paragraph (the second parsys now holds the newly created paragraph).
 
 * Is edited and the second paragraph is removed:
 
-    * The in-between content will be displayed after the paragraph that was previously the third (the second parsys now holds the previous third paragraph).
+  * The in-between content will be displayed after the paragraph that was previously the third (the second parsys now holds the previous third paragraph).
 
 * Is configured so that only the first paragraph is shown:
 
-    * The in-between content will not be displayed (the second parsys is not rendered anymore due to the new configuration).
+  * The in-between content will not be displayed (the second parsys is not rendered anymore due to the new configuration).
 
 ### Customizing the Content Fragment Component {#customizing-the-content-fragment-component}
 
@@ -99,15 +99,25 @@ To use the out-of-the-box content fragment component as a blueprint for extensio
 * Reuse the HTL rendering script and its associated POJO to see how the in-between content feature is implemented.
 * Reuse the content fragment node: `cq:editConfig`
 
-    * The `afterinsert`/ `afteredit`/ `afterdelete` listeners are used to trigger JS events. These events will be handled in the `cq.authoring.editor.plugin.cfm` client library to display the associated content in the side panel.
-    * The `cq:dropTargets` are configured to support dragging content fragment assets.
-    * `cq:inplaceEditing` is configured to support authoring of a content fragment in the page editor. The fragment in-place editor is defined in the `cq.authoring.editor.plugin.cfm` client library and allows a quick link to open the current [element/variation](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) in the [fragment editor](/help/assets/content-fragments/content-fragments-variations.md).
+  * The `afterinsert`/ `afteredit`/ `afterdelete` listeners are used to trigger JS events. These events will be handled in the `cq.authoring.editor.plugin.cfm` client library to display the associated content in the side panel.
+  * The `cq:dropTargets` are configured to support dragging content fragment assets.
+  * `cq:inplaceEditing` is configured to support authoring of a content fragment in the page editor. The fragment in-place editor is defined in the `cq.authoring.editor.plugin.cfm` client library and allows a quick link to open the current [element/variation](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) in the [fragment editor](/help/assets/content-fragments/content-fragments-variations.md).
 
 ### Asset Rewriting Before Rendering {#asset-rewriting-before-rendering}
 
 Content Fragment Management uses an internal rendering process to generate the final HTML output for a page. This is used internally by the Content Fragment component, but also by the background process that updates referenced fragments on referencing pages.
 
 Internally, the Sling Rewriter is used for that rendering. The respective configuration is found at `/libs/dam/config/rewriter/cfm` and can be adjusted if required. See the [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) for more information.
+
+>[!CAUTION]
+>
+>If you do adjust/overlay the configuration of the rewriter:
+>
+>* `/libs/dam/config/rewriter/cfm` 
+>
+>then the `serializerType` **must** be updated to:
+>
+>* `serializerType="html5-serializer"`
 
 The out-of-the-box configuration uses the following transformers:
 
