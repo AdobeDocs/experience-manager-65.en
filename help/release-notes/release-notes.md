@@ -17,7 +17,7 @@ mini-toc-levels: 3
 
 ## What is included in [!DNL Experience Manager] 6.5.14.0 {#what-is-included-in-aem-6514} 
 
-[!DNL Experience Manager] 6.5.14.0 includes new features, key customer-requested enhancements, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.14.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 Some of the key features and enhancements are the following:
 
@@ -32,106 +32,129 @@ Some of the key features and enhancements are the following:
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
-* bullet item here
+* Screen reader not reading **[!UICONTROL Mute]** and **[!UICONTROL Unmute]** button on video using Dynamic Media component. (ASSETS-10169)
+* Experience Manager not showing set failures (in Image Sets, Spin Sets, Adaptive Video Sets, Mixed Media Sets, and so on) when a set exceeds 1000 asset or 20 duplicate assets. (ASSETS-10264)
+* Dynamic Media was not generating thumbnails for all EPS files. (ASSETS-10959)
+* Unable to apply a saved policy to one of the containers of an editable template to let you add Dynamic Media components. (ASSETS-11044)
+* No assets were moving into the Dynamic Media account after running the Dynamic Media Reprocess Assets workflow or the DAM Update Assets workflow on folders. (ASSETS-12084, ASSETS-9877) 
+* Smart Crop ignored the transparent background and placed everything on a white background instead. (ASSETS-13148)
+* DAM Update Asset workflow fails and a processing failed banner appears on assets when the Scene7 workflow is running. (ASSETS-13165)
+* Screen reader users are impacted by the `title` attribute not being provided for `<frame>` and `<iframe>` in the **[!UICONTROL Type to Search]** dialog box. (ASSETS-5483)
+* In screen readers, related and meaningful `alt=` value should be provided for multiple images that are present under **[!UICONTROL Assets]** heading in the left pane. (ASSETS-5644)
+* Configuring the options in Dynamic Media **[!UICONTROL General Settings]** and **[!UICONTROL Publish Setup]** should not be accessible by non-administrator users. (ASSETS-8628)
+* Allow assets with names greater than 127 characters limit to be uploaded into Dynamic Media. (ASSETS-9991)
+* Enablement of JavaScript ES6 (ECMAScript 6) for Dynamic Media Viewers on AEM 6.5.14.0. (NPR-38393)
 
 ## Commerce {#commerce-6514}
 
-* bullet item here
+* Commerce products are not getting sorted using the column header and it is using _remote_ sort mode; instead, Commerce products should be getting sorted using column headers with _local_ sort mode. (CQ-4343750, NPR-38498)
+
 
 ## CRX {#crx-6514}
 
-* bullet item here
+* EMPTY
+
 
 ## [!DNL Forms] {#forms-6514}
 
-* bullet item here
+* EMPTY
+
 
 ## Granite {#granite-6514}
 
-* bullet item here
+* EMPTY
+
 
 ## Integrations {#integrations-6514}
 
-* bullet item here
+* Enable JavaScript ES6 (ECMAScript6 mode or better) compilation support for the minification of the `/libs/cq/analytics/widgets.js` library. (NPR-38433)
+* Enable JavaScript ES6 (ESMAScript6 mode or better) compilation support for the minification of the `/libs/cq/testandtarget/clientlibs/testandtarget/util.js` library. (NPR-38435)
+* The more content there is in `/content/campaigns`, the longer the call to `targeteditor.html` (`/libs/cq/personalization/touch-ui/content/targeteditor.html`) takes when you open the Page Editor. (NPR-38663)
 
 ## Oak - Indexing and Queries {#oak-6514}
 
-* bullet item here
+* EMPTY
 
 
 ## Platform {#platform-6514}
 
-* bullet item here
+* EMPTY
 
 
 ## Replication {#replication-6514}
 
-* bullet item here
+* EMPTY
 
 
 ## [!DNL Sites] {#sites-6514}
 
-* bullet item here
+* EMPTY
+
+### Accessibility {#access-6514}
+
+* In Experience Manager Sites, when you expand the **[!UICONTROL Switch display format and adjust display setting]** button, then select **[!UICONTROL List View]**, the **[!UICONTROL Drag and Drop]** button is missing an accessible name. (SITES-2863)
+* Screen reader must announce the accessible name such as `Show description for Archive` or `Show description for mini shopping cart`. However, the current accessible name is announced as `Info Circle button show description` for _all_ the tooltip information buttons. (SITES-3104)
+
 
 ### Admin {#sites-admin-6514}
 
-* bullet item here
+* EMPTY
 
 ### Classic User Interface {#sites-classicui-6514}
 
-* bullet item here
+* EMPTY
 
 ### Content Fragments {#sites-contentfragments-6514}
 
-* bullet item here
+* Content Fragments enumeration field validation issue the first time the content fragment is loaded. (SITES-7140)
 
 ### ContentHub {#sites-contenthub-6514}
 
-* bullet item here
+* EMPTY
 
 ### E-mail Editor {#sites-emaileditor-6514}
 
-* bullet item here
+* EMPTY
 
 ### Experience Fragments {#sites-experiencefragments-6514}
 
-* bullet item here
+* EMPTY
 
 ### Page Editor {#sites-pageeditor-6514}
 
-* bullet item here
+* EMPTY
 
 ### Security {#sites-security-6514}
 
-* bullet item here
+* EMPTY
 
 ### SEO {#sites-seo-6514}
 
-* bullet item here
+* EMPTY
 
 ### SPA Editor and SDK {#sites-spa-sdk-6514}
 
-* bullet item here
+* EMPTY
 
 ### Template Editor {#sites-templateeditor-6514}
 
-* bullet item here
+* EMPTY
 
 ## Sling {#sling-6514}
 
-* bullet item here
+* EMPTY
 
 ## Translation projects {#translation-6514}
 
-* bullet item here
+* EMPTY
 
 ## User interface {#ui-6514}
 
-* bullet item here
+* EMPTY
 
 ## WCM {#wcm-6514}
 
-* bullet item here
+* EMPTY
 
 
 ## Install [!DNL Experience Manager] 6.5.14.0 {#install}
