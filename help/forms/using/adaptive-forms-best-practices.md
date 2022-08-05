@@ -90,6 +90,19 @@ For more information, see [Create an adaptive form](/help/forms/using/creating-a
 
 * See [Handling personally identifiable information](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) for recommendations on handling PII data.
 
+### Creating Form Templates 
+
+You can create an adaptive form using the form templates enabled in **Configuration Browser**. To enable the form templates, see [Creating Adaptive Form Template](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+The form templates can also be uploaded from Adaptive Form packages that are created on another author machine. Form templates are  made available by installing [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Some of the best practices recommended are:
+* The **nosamplecontent** runmode is recommended only for author and not for the publish nodes.
+* Authoring of assets such as adaptive form, themes, templates, or cloud configurations are performed over Author nodes only, which can be published at the configured Publish nodes.
+For more information, see [Publishing and unpublishing forms and documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* Forms addon package is required for Authoring as well as for Publishing to support the document service operations; hence it can be considered as a dependency. 
+If you only want Forms related sample template, themes, and DOR packages, then you can download them from [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+For further information, see the best practices in [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md).
+
 ## Author adaptive forms {#author-adaptive-forms}
 
 ### Using touch-optimized UI for authoring {#using-touch-optimized-ui-for-authoring}
@@ -303,3 +316,5 @@ One of the key challenges for organizations is how to handle personally identifi
 
 * Use a secure, external storage like database to store data from draft and submitted forms. See [Configuring external storage for drafts and submitted forms data](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Use Terms and Conditions form component to take explicit consent from user before enabling auto save. In this case, enable auto save only when user agrees to the conditions in Terms and Conditions component.
+
+
