@@ -107,6 +107,7 @@ role: Admin
     + [Integrating with Third-Party Services](third-party-services.md)
     + [Integrating with Salesforce](salesforce.md)
     + [Integrating with Adobe Target](target.md)
+    + [Integrating with Adobe Learning Manager](adobe-learningmanager.md)
     + [Integrating with Adobe Analytics](adobeanalytics.md)
     + [Connecting to Adobe Analytics and Creating Frameworks](adobeanalytics-connect.md)
     + [Configuring Link Tracking for Adobe Analytics](adobeanalytics-link.md)
