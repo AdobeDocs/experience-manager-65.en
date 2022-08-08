@@ -13,8 +13,8 @@ role: Admin
 # AEM 6.5 Administering User Guide {#administering}
 
 + [Administering User Guide overview](home.md)
-+ Sites Features {#introduction}
-  + [Website Administration](msm-and-translation.md)
+  + Sites Features {#introduction}
+    + [Website Administration](msm-and-translation.md)
     + [Asynchronous Jobs](asynchronous-jobs.md)
     + [Reusing Content: Multi Site Manager and Live Copy](msm.md)
     + [Live Copy Overview Console](msm-livecopy-overview.md)
@@ -35,9 +35,9 @@ role: Admin
     + [Translation Best Practices](tc-bp.md)
     + [Configurations and the Configuration Browser](configurations.md)
     + [AEM FAQs](aem-faqs.md)
-+ Operations {#operations}
-  + [Dashboards](dashboards.md)
-  + [Operations Dashboard](operations-dashboard.md)
+  + Operations {#operations}
+    + [Dashboards](dashboards.md)
+    + [Operations Dashboard](operations-dashboard.md)
     + [Backup and Restore](backup-and-restore.md)
     + [Data Store Garbage Collection](data-store-garbage-collection.md)
     + [Monitoring Server Resources Using the JMX Console](jmx-console.md)
@@ -66,8 +66,8 @@ role: Admin
     + [Editor](enable-classic-ui-editor.md)
     + [Enabling Access to Classic UI](enable-classic-ui.md)
     + [Admin Consoles](enable-classic-ui-admin.md)
-+ Security {#security}
-  + [User Administration and Security](security.md)
+  + Security {#security}
+    + [User Administration and Security](security.md)
     + [User, Group and Access Rights Administration](user-group-ac-admin.md)
     + [Security Checklist](security-checklist.md)
     + [OWASP Top 10](owasp-top10.md)
@@ -94,8 +94,8 @@ role: Admin
     + [Content Disposition Filter](content-disposition-filter.md)
     + [Custom User Group Mapping in AEM 6.5](/help/sites-administering/cug-mapping.md)
     + [Same Site Cookie Support](same-site-cookie-support.md)
-+ Personalization {#personalization}
-  + [Personalization](personalization.md)
+  + Personalization {#personalization}
+    + [Personalization](personalization.md)
     + [Configuring ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
     + [Client Context](client-context.md)
     + [Campaigns](campaigns.md)
@@ -103,8 +103,8 @@ role: Admin
     + [Configuring Segmentation](campaign-segmentation.md)
     + [Extending and Configuring the Design Importer for Landing Pages](extending-the-design-importer-for-landingpages.md)
     + [Integrating Landing Pages with Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ Integration {#integration}
-  + [Integrating with Third-Party Services](third-party-services.md)
+  + Integration {#integration}
+    + [Integrating with Third-Party Services](third-party-services.md)
     + [Integrating with Salesforce](salesforce.md)
     + [Integrating with Adobe Target](target.md)
     + [Integrating with Adobe Learning Manager](adobe-learningmanager.md)
@@ -146,15 +146,15 @@ role: Admin
     + [Exporting Experience Fragments to Adobe Target](experience-fragments-target.md)
     + [Best Practices for Email Templates](best-practices-for-email-templates.md)
     + [Integrating with Livefyre](livefyre.md)
-+ Best Practices {#bestpractices}
-  + [Best Practices](administer-best-practices.md)
+  + Best Practices {#bestpractices}
+    + [Best Practices](administer-best-practices.md)
     + [Translation Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/tc-bp.html)
     + [MSM Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/msm-best-practices.html)
     + [AEM Sites - GDPR Readiness](gdpr-compliance-sites.md)
     + [Handling GDPR Requests for the AEM Foundation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/handling-gdpr-requests-for-aem-platform.html)
     + [AEM Commerce - GDPR Readiness](gdpr-compliance-commerce.md)
-+ Content Management {#contentmanagement}
-  + [Package Manager](package-manager.md)
+  + Content Management {#contentmanagement}
+    + [Package Manager](package-manager.md)
     + [Administering Tags](tags.md)
     + [The Page Exporter](page-exporter.md)
     + [Classic UI Tagging Console](classic-console.md)
