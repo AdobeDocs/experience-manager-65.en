@@ -12,7 +12,7 @@ role: Admin
 
 # AEM 6.5 Administering User Guide {#administering}
 
-+ [Administering User Guide overview](home.md)
++ [Administering User Guide overview]{#overview}
   + Sites Features {#introduction}
     + [Website Administration](msm-and-translation.md)
     + [Asynchronous Jobs](asynchronous-jobs.md)
