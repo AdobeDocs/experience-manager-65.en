@@ -78,7 +78,12 @@ Some of the key features and enhancements are the following:
 
 ## Platform {#platform-6514}
 
-* EMPTY
+* Unable to login to Package Manager to deploy updates. (NPR-38646)
+* In the assets tag picker user interface, tags appear in the order they were created. However, when there is a large number of tags, viewing and managing the tags is difficult because they cannot be sorted. (CQ-4344279)
+* Create a notification in the user interface when a user being impersonated by an administrator or anyone else using the **[!UICONTROL Impersonate as]** field. (CQ-4345288)
+* In a Smart Collection, all assets were being shown when filtering using a saved search. (CQ-4345326)
+* An incorrect selected assets count is shown for **[!UICONTROL Add to collection]** when **[!UICONTROL Select All]** is selected. (CQ-4345424)
+* An exception message occurred when using the **[!UICONTROL Impersonate as]** field with a group or non-existant user. (CQ-4346098)
 
 
 ## Replication {#replication-6514}
@@ -88,7 +93,7 @@ Some of the key features and enhancements are the following:
 
 ## [!DNL Sites] {#sites-6514}
 
-* EMPTY
+* Unexpected path deletions occurred while upgrading Experience Manager from 6.5.12.0 to 6.5.13.0. (NPR)
 
 ### Accessibility {#access-6514}
 
@@ -107,10 +112,18 @@ Some of the key features and enhancements are the following:
 ### Content Fragments {#sites-contentfragments-6514}
 
 * Content Fragments enumeration field validation issue the first time the content fragment is loaded. (SITES-7140)
+* Need to add Campaign personalization fields in the Rich Text Editor of the Content Fragments editor. (NPR-38526)
+* When creating or editing a new Content Fragment (CF) in the CF editor, by way of the Dispatcher, the CF model is not saved, the CF editor is not closed, and an error is displayed in the browser log. (NPR-38691)
+* Persistent query validation error. (NPR-38523) 
+
 
 ### ContentHub {#sites-contenthub-6514}
 
 * EMPTY
+
+### Core Components {#sites-corecomponents-6514}
+
+* The new Page Email component should not force you into the classic user interface while editing `/etc`. (NPR-38648)
 
 ### E-mail Editor {#sites-emaileditor-6514}
 
@@ -122,7 +135,7 @@ Some of the key features and enhancements are the following:
 
 ### Page Editor {#sites-pageeditor-6514}
 
-* EMPTY
+* The user is not able to resize the component to the desired number of columns. (NPR-38688)
 
 ### Security {#sites-security-6514}
 
@@ -138,7 +151,8 @@ Some of the key features and enhancements are the following:
 
 ### Template Editor {#sites-templateeditor-6514}
 
-* EMPTY
+* Missing **[!UICONTROL Delete]** and **[!UICONTROL Cut]** buttons on the Menu bar in an editable template after a `cq:actions` property was customized. (NPR-38521)
+* If a component includes another component, it is not possible to delete the component within the template structure because the **[!UICONTROL Delete]** button is missing from the Menu bar. (NPR-38585)
 
 ## Sling {#sling-6514}
 
