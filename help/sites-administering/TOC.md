@@ -13,7 +13,7 @@ role: Admin
 
 + [Administering User Guide overview](home.md)
 + Sites Features {#introduction}
-+ [Website Administration](#administration)
+  + [Website Administration](msm-and-translation.md)
   + [Asynchronous Jobs](asynchronous-jobs.md)
   + [Reusing Content: Multi Site Manager and Live Copy](msm.md)
   + [Live Copy Overview Console](msm-livecopy-overview.md)
