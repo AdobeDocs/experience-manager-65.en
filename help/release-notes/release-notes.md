@@ -57,7 +57,9 @@ Some of the key features and enhancements are the following:
 
 ## [!DNL Forms] {#forms-6514}
 
-* EMPTY
+>[!NOTE]
+>
+>* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
 
 
 ## Granite {#granite-6514}
@@ -78,12 +80,12 @@ Some of the key features and enhancements are the following:
 
 ## Platform {#platform-6514}
 
-* Unable to login to Package Manager to deploy updates. (NPR-38646)
-* In the assets tag picker user interface, tags appear in the order they were created. However, when there is a large number of tags, viewing and managing the tags is difficult because they cannot be sorted. (CQ-4344279)
+* Unable to log on to Package Manager to deploy updates. (NPR-38646)
+* In the assets tag picker user interface, tags appear in the order they were created. However, when there are many tags, viewing and managing the tags is difficult because they cannot be sorted. (CQ-4344279)
 * Create a notification in the user interface when a user being impersonated by an administrator or anyone else using the **[!UICONTROL Impersonate as]** field. (CQ-4345288)
 * In a Smart Collection, all assets were being shown when filtering using a saved search. (CQ-4345326)
 * An incorrect selected assets count is shown for **[!UICONTROL Add to collection]** when **[!UICONTROL Select All]** is selected. (CQ-4345424)
-* An exception message occurred when using the **[!UICONTROL Impersonate as]** field with a group or non-existant user. (CQ-4346098)
+* An exception message occurred when using the **[!UICONTROL Impersonate as]** field with a group or non-existent user. (CQ-4346098)
 
 
 ## Replication {#replication-6514}
@@ -97,7 +99,7 @@ Some of the key features and enhancements are the following:
 
 ### Accessibility {#access-6514}
 
-* In Experience Manager Sites, when you expand the **[!UICONTROL Switch display format and adjust display setting]** button, then select **[!UICONTROL List View]**, the **[!UICONTROL Drag and Drop]** button is missing an accessible name. (SITES-2863)
+* In Experience Manager Sites, when you expand the **[!UICONTROL Switch display format and adjust display setting]** button, then select **[!UICONTROL List View]**, the **[!UICONTROL Drag and Drop]** button is missing an accessible name. (SITES-2863, NPR-38760)
 * Screen reader must announce the accessible name such as `Show description for Archive` or `Show description for mini shopping cart`. However, the current accessible name is announced as `Info Circle button show description` for _all_ the tooltip information buttons. (SITES-3104)
 
 
@@ -111,10 +113,11 @@ Some of the key features and enhancements are the following:
 
 ### Content Fragments {#sites-contentfragments-6514}
 
-* Content Fragments enumeration field validation issue the first time the content fragment is loaded. (SITES-7140)
+* Content Fragments enumeration field validation issue the first time that the content fragment is loaded. (SITES-7140)
 * Need to add Campaign personalization fields in the Rich Text Editor of the Content Fragments editor. (NPR-38526)
-* When creating or editing a new Content Fragment (CF) in the CF editor, by way of the Dispatcher, the CF model is not saved, the CF editor is not closed, and an error is displayed in the browser log. (NPR-38691)
-* Persistent query validation error. (NPR-38523) 
+* When creating or editing a new content fragment in the Content Fragment editor, by way of the Dispatcher, the content fragment model is not saved. Furthermore, the Content Fragment editor is not closed, and an error is displayed in the browser log. (NPR-38691)
+* Persistent query validation error. (NPR-38523)
+* In the Content Fragment dialog box, under **[!UICONTROL Properties]**, the **[!UICONTROL Content Fragment]** field does not retain the saved path in the selection pop-up. (NPR-38632)
 
 
 ### ContentHub {#sites-contenthub-6514}
@@ -156,7 +159,8 @@ Some of the key features and enhancements are the following:
 
 ## Sling {#sling-6514}
 
-* EMPTY
+* An increase in the number of open files on production was experienced due to a memory leak in module `DiscoveryLiteDescriptor` in `org.apache.sling.discovery.commons`, version 1.0.20. (NPR-38288)
+* In Experience Manager, from **[!UICONTROL Operations]** > **[!UICONTROL Diagnosis]**, you experience an error when you select **[!UICONTROL Download Status ZIP]** > **[!UICONTROL Download]**. (NPR-38514)
 
 ## Translation projects {#translation-6514}
 
