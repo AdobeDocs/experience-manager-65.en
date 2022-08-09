@@ -55,7 +55,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 
    >[!NOTE]
    >
-   >Using **ConfigurationManager.bat** file helps you to avoid updating name of axis.jar name in .lax files manually. Before launching **ConfigurationManager**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) file.
+   >Using **ConfigurationManager.bat** file helps you to avoid updating name of axis.jar name in .lax files manually. Before launching **ConfigurationManager**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
    >
 
 1. **[For Unix-based only]:** Perform one of the following step:
