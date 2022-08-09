@@ -52,7 +52,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
    * Deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to `<AEMForms_Install_Dir>\configurationManager\bin` directory and update axis.jar to axis-1.4.1.1.jar in the following files:
       * ConfigurationManager.lax
       * ConfigurationManager_IPv6.lax
-
+   >
    >[!NOTE]
    >
    >Using **ConfigurationManager.bat** file helps you to avoid updating name of axis.jar name in .lax files manually. Before launching **ConfigurationManager**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
