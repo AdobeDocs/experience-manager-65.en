@@ -49,7 +49,6 @@ Some of the key features and enhancements are the following:
 
 * Commerce products are not getting sorted using the column header and it is using _remote_ sort mode; instead, Commerce products should be getting sorted using column headers with _local_ sort mode. (CQ-4343750, NPR-38498)
 
-
 ## CRX {#crx-6514}
 
 * EMPTY
@@ -195,9 +194,9 @@ Some of the key features and enhancements are the following:
 
 1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Open Package Manager and click **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
+1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
-1. Select the package and click **[!UICONTROL Install]**.
+1. Select the package, then select **[!UICONTROL Install]**.
 
 1. To update the S3 connector, stop the instance after installation of the Service Pack, replace the existing connector with a new binary file provided in the install folder, and restart the instance. See [Amazon S3 Data Store](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
 
