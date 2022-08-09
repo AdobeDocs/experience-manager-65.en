@@ -47,7 +47,7 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 1. When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.  
 
 1. **[For Windows only]:** Perform one of the following step:
-   * Deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `aem-forms root]\configurationManager\bin`. 
+   * Deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `[aem-forms root]\configurationManager\bin`. 
 
    * Deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to `<AEMForms_Install_Dir>\configurationManager\bin` directory and update axis.jar to axis-1.4.1.1.jar in the following files:
       * ConfigurationManager.lax
