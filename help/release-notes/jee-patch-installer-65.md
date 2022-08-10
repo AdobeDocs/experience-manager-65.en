@@ -49,13 +49,12 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
 1. **[For Windows only]:** Perform one of the following step:
    * Deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `[aem-forms root]\configurationManager\bin`. 
 
-   * Deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to `<AEMForms_Install_Dir>\configurationManager\bin` directory and update axis.jar to axis-1.4.1.1.jar in the following files:
-      * ConfigurationManager.lax
-      * ConfigurationManager_IPv6.lax
+   * Deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
+
    >
    >[!NOTE]
    >
-   >Using **ConfigurationManager.bat** file helps you to avoid updating name of axis.jar name in .lax files manually. Before launching **ConfigurationManager**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
+   >Using **ConfigurationManager.bat** file helps you to avoid updating name of .lax files manually.
    >
 
 1. **[For Unix-based only]:** Perform one of the following step:
