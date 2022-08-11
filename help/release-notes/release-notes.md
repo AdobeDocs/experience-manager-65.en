@@ -21,7 +21,7 @@ mini-toc-levels: 3
 
 Some of the key features and enhancements are the following:
 
-* bullet item here
+* _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_
 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
@@ -76,7 +76,6 @@ Some of the key features and enhancements are the following:
 
 * EMPTY
 
-
 ## Platform {#platform-6514}
 
 * Unable to log on to Package Manager to deploy updates. (NPR-38646)
@@ -86,11 +85,9 @@ Some of the key features and enhancements are the following:
 * An incorrect selected assets count is shown for **[!UICONTROL Add to collection]** when **[!UICONTROL Select All]** is selected. (CQ-4345424)
 * An exception message occurred when using the **[!UICONTROL Impersonate as]** field with a group or non-existent user. (CQ-4346098)
 
-
 ## Replication {#replication-6514}
 
 * EMPTY
-
 
 ## [!DNL Sites] {#sites-6514}
 
@@ -117,6 +114,7 @@ Some of the key features and enhancements are the following:
 * When creating or editing a new content fragment in the Content Fragment editor, by way of the Dispatcher, the content fragment model is not saved. Furthermore, the Content Fragment editor is not closed, and an error is displayed in the browser log. (NPR-38691)
 * Persistent query validation error. (NPR-38523)
 * In the Content Fragment dialog box, under **[!UICONTROL Properties]**, the **[!UICONTROL Content Fragment]** field does not retain the saved path in the selection pop-up. (NPR-38632)
+* When you create a content fragment model and add an enumeration field of the drop-down type, the correct validation for _`is required`_ fails. (NPR-38237) 
 
 
 ### ContentHub {#sites-contenthub-6514}
@@ -163,16 +161,25 @@ Some of the key features and enhancements are the following:
 
 ## Translation projects {#translation-6514}
 
-* EMPTY
+* Launch for subpages that were added as a reference in a parent page were not getting promoted when the `isDeep` property was set to `false`. (NPR-38531)
 
 ## User interface {#ui-6514}
 
-* EMPTY
+* When using **[!UICONTROL Select All]** > **[!UICONTROL Quick Publish]**, Experience Manager was not publishing all the assets or showing how many assets would be published in **[!UICONTROL Card]** view or **[!UICONTROL List]** view. (NPR-38546)
+* Incorrect selected assets count is shown for **[!UICONTROL Add to collection]** in **[!UICONTROL Select All]** case. (NPR-38633)
+* Disabled users can still be added to Collections and Projects. (NPR-38651)
+* Deleting a filter without saving the Search Form creates an error. (NPR-38698)
+* A user's session cannot obtain a `ModifiableValueMap` instance for the groups in order to establish the direct group membership. (NPR-38710)
 
 ## WCM {#wcm-6514}
 
 * EMPTY
 
+## Workflow {#workflow-6514}
+
+* Enable JavaScript ES6 (ESMAScript6 mode or better) compilation support for the minification of the `/libs/cq/inbox/gui/components/inbox/clientlibs/commons.js` library. (NPR-38304)
+* Clean up client library compilation errors in `/libs/cq/workflow/widgets.js`. (NPR-38617)
+* After the workflow runs and the process steps are complete, the same comment is repeated multiple times. (NPR-38364)
 
 ## Install [!DNL Experience Manager] 6.5.14.0 {#install}
 
@@ -213,7 +220,7 @@ There are two different methods that you can use to automatically install [!DNL 
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 6.5.14.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.14.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **Validate the installation**
 
@@ -276,7 +283,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O] integrations via the respective [!DNL Experience Manager] cloud services. |
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O Runtime]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O Runtime] integrations via the respective [!DNL Experience Manager] cloud services. |
 | Connectors | The Adobe JCR Connector for Microsoft® SharePoint 2010 and Microsoft® SharePoint 2013 is deprecated for [!DNL Experience Manager] 6.5. | N/A |
 
 ## Known issues {#known-issues} 
@@ -304,10 +311,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used (CQ-4274424).
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
-  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for reg change to complete unregistered.
+  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for register change to complete unregistered.
 
 * When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work.
-  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no re-indexing is required):
+  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no reindexing is required):
 
    ```xml
    "tags": [
