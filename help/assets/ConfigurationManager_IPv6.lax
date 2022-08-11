@@ -1,0 +1,189 @@
+#   LaunchAnywhere (tm) Executable Properties File - Flexera Software LLC
+
+#   LAX.APPLICATION.NAME
+#   --------------------
+#   the default name of this executable -- do not edit
+
+lax.application.name=ConfigurationManager_IPv6.exe
+
+
+#   LAX.CLASS.PATH
+#   --------------
+#   the Java classpath necessary to run this application
+#   Can be separated by colons (Mac OS/Unix) or semicolons (Windows)
+
+lax.class.path=..\\lib\\adobe-lcm-bootstrapper.jar;lax.jar
+
+
+#   LAX.COMMAND.LINE.ARGS
+#   ---------------------
+#   what will be passed to the main method -- be sure to quote arguments with spaces in them
+
+lax.command.line.args=..\\lib\\adobe-lcm.jar;..\\lib\\serializer-2.7.2.jar;..\\lib\\xalan-2.7.2.jar;..\\lib\\xercesImpl-2.12.0.jar;..\\lib\\xml-apis-2.7.2.jar;..\\lib\\commons-net-1.4.1.jar;..\\lib\\adobe-bootstrapper-client.jar;..\\lib\\adobe-truststore-api.jar;..\\lib\\cryptojcommon-6.2.5.0.2.jar;..\\lib\\certj-6.2.4.jar;..\\lib\\ant\\ant-1.6.5.jar;..\\lib\\ant\\ant-launcher-1.6.5.jar;..\\lib\\ant\\ant-trax-1.6.5.jar;..\\lib\\ant\\ant-xalan1-1.6.5.jar;..\\..\\sdk\\client-libs\\common\\adobe-livecycle-client.jar;..\\..\\sdk\\client-libs\\common\\adobe-applicationmanager-client-sdk.jar;..\\..\\sdk\\client-libs\\common\\adobe-usermanager-client.jar;..\\..\\sdk\\client-libs\\common\\adobe-truststore-client.jar;..\\..\\sdk\\client-libs\\thirdparty\\axis-1.4.1.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\jaxrpc-api-1.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\saaj-1.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\xercesImpl-2.12.0.jar;..\\..\\sdk\\client-libs\\thirdparty\\activation-1.0.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-codec-1.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-collections-3.2.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-discovery-0.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-logging-1.0.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-httpclient-3.1.jar;..\\sdk\\client-libs\\thirdparty\\commons-io-2.6.jar;..\\..\\sdk\\client-libs\\thirdparty\\commons-lang-2.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\dom3-xml-apis-2.5.0.jar;..\\..\\sdk\\client-libs\\thirdparty\\jaxen-1.1.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\log4j-1.2.14.jar;..\\..\\sdk\\client-libs\\thirdparty\\mail-1.4.jar;..\\..\\sdk\\client-libs\\thirdparty\\wsdl4j-1.5.1.jar;..\\..\\sdk\\client-libs\\thirdparty\\xalan-2.7.2.jar;..\\..\\sdk\\client-libs\\thirdparty\\xbean-2.3.0.jar;..\\sdk\\client-libs\\thirdparty\\jacorb.jar;..\\..\\sdk\\client-libs\\common\\adobe-application-remote-client.jar;..\\..\\sdk\\client-libs\\common\\adobe-repository-client.jar -guiMode
+
+
+#   LAX.COMPANY.NAME
+#   ----------------
+#   The company name of LaunchAnywhere that created this properties file
+
+lax.company.name=
+
+
+#   LAX.COPYRIGHT
+#   -------------
+#   The copyright of the LaunchAnywhere that created this properties file
+
+lax.copyright=
+
+
+#   LAX.DIR
+#   -------
+#   path to directory holding LaunchAnywhere's native launcher
+
+lax.dir=<installation_path>\\configurationManager\\bin\\
+
+
+#   LAX.FILE.DESCRIPTION
+#   --------------------
+#   The description of the LaunchAnywhere that created this properties file
+
+lax.file.description=
+
+
+#   LAX.MAIN.CLASS
+#   --------------
+#   the class that contains the main method for the application
+
+#lax.main.class=com.adobe.livecycle.lcm.gui.LCMGUI
+lax.main.class=com.adobe.livecycle.lcm.bootstrap.LCMBootStrapper
+
+
+#   LAX.MAIN.METHOD
+#   ---------------
+#   the method in the main class that will be invoked
+
+lax.main.method=main
+
+
+#   LAX.NL.CURRENT.VM
+#   -----------------
+#   the VM to use for the next launch
+
+lax.nl.current.vm=<installation_path>\\Java\\jdk1.8.0_181\\bin\\javaw.exe
+
+
+#   LAX.NL.JAVA.LAUNCHER.MAIN.CLASS
+#   -------------------------------
+#   main class of LaunchAnywhere's java launcher -- do not adjust
+
+lax.nl.java.launcher.main.class=com.zerog.lax.LAX
+
+
+#   LAX.NL.JAVA.LAUNCHER.MAIN.METHOD
+#   --------------------------------
+#   main method of LaunchAnywhere's java launcher -- do not adjust
+
+lax.nl.java.launcher.main.method=main
+
+
+
+lax.nl.java.option.additional=-Djava.net.preferIPv6Stack=true -Dinternal.lcm.installerLang=en -Dfile.encoding=utf8
+
+
+
+lax.nl.java.option.java.heap.size.initial=134217728
+
+
+
+lax.nl.java.option.java.heap.size.max=1610612736
+
+
+#   LAX.NL.VALID.VM.LIST
+#   --------------------
+#   Defines which VMs are valid for your project.
+#   If the native launcher cannot find the current vm,
+#   it will search for ones in this list
+
+lax.nl.valid.vm.list=1.5+
+
+
+#   LAX.NL.WIN32.JAVA.LAUNCHER.PLATFORM
+#   -----------------------------------
+#   Set this variable to following values for launching on a 64 bit machine.
+#   0, to Prefer 64bit JVM, if not available use 32 bit JVM
+#   1, to Prefer 32bit JVM, if not available use 64 bit JVM
+#   2, to Prefer 64bit JVM, if not available exit with error
+#   3, to Prefer 32bit JVM, if not available exit with error
+
+lax.nl.win32.java.launcher.platform=0
+
+
+#   LAX.NL.WIN32.MICROSOFTVM.MIN.VERSION
+#   ------------------------------------
+#   The minimum version of Microsoft's VM this application will run against
+
+lax.nl.win32.microsoftvm.min.version=2750
+
+
+#   LAX.PRODUCT.NAME
+#   ----------------
+#   The product name of the LaunchAnywhere that created this properties file
+
+lax.product.name=
+
+
+#   LAX.PRODUCT.VERSION
+#   -------------------
+#   The product version of the LaunchAnywhere that created this properties file
+
+lax.product.version=
+
+
+#   LAX.ROOT.INSTALL.DIR
+#   --------------------
+#   path to the installdir magic folder
+
+lax.root.install.dir=<installation_path>\\ConfigurationManager\\bin
+
+
+#   LAX.STDERR.REDIRECT
+#   -------------------
+#   leave blank for no output, "console" to send to a console window,
+#   and any path to a file to save to the file
+
+lax.stderr.redirect=<installation_path>\\ConfigurationManager\\LaunchLCM_IPv6.log
+
+
+#   LAX.STDIN.REDIRECT
+#   ------------------
+#   leave blank for no input, "console" to read from the console window,
+#   and any path to a file to read from that file
+
+lax.stdin.redirect=
+
+
+#   LAX.STDOUT.REDIRECT
+#   -------------------
+#   leave blank for no output, "console" to send to a console window,
+#   and any path to a file to save to the file
+
+lax.stdout.redirect=<installation_path>\\ConfigurationManager\\LaunchLCM_IPv6.log
+
+
+#   LAX.USER.DIR
+#   ------------
+#   left blank, this property will cause the native launcher to not
+#   alter the platform default behavior for setting the user dir.
+#   To override this you may set this property to a relative or absolute path.
+#   Relative paths are relative to the launcher.
+
+lax.user.dir=.
+
+
+#   LAX.VERSION
+#   -----------
+#   version of LaunchAnywhere that created this properties file
+
+lax.version=20.0
+
+
