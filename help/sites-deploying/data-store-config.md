@@ -201,8 +201,7 @@ If you need to upgrade to a new version of the 1.10.x S3 connector (for example,
 You can use the configuration file with the following options:
 
 * accessKey: The AWS access key.
-* secretKey: The AWS secret access key. **Note:** Alternatively, [IAM roles](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) can be used for authentication. If you are using IAM roles you no longer need to specify the `accessKey` and `secretKey`.
-
+* secretKey: The AWS secret access key. **Note:** When the `accessKey` or `secretKey` is not specified then the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) is used for authentication.
 * s3Bucket: The bucket name.
 * s3Region: The bucket region.
 * path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**

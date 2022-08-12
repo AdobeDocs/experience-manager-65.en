@@ -15,6 +15,26 @@ Review the minimum system requirements in the table below for the CIF version yo
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
+## Release Date: June, 2022
+
+|Component| Version| Details|
+|:-------|:-----:|---------------------:|
+|CIF add-on | 2022.06.xx.00|[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip)|
+|CIF Core Components |2.10.0|[GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0)|
+|CIF Venia Reference Site| 2022.07.04|[GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04)|
+
+### What's New {#what-is-new-june}
+
+* Product catalog enrichment now supports AEM pages. This enables authors to manage page - product association.
+
+* Various CIF Core Component improvements
+
+### Bug fixes {#bug-fixes-june}
+
+* Add login token to client-side price fetching
+
+* Wrong page component in datalayer
+
 ## Release Date: May, 2022
 
 |Component| Version| Details|
@@ -57,7 +77,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
     ![Sites editor shortcut to product cockpit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Release Date: March, 2022
+## Release Date: February, 2022
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
