@@ -28,7 +28,27 @@ Some of the key features and enhancements are the following:
 
 ## [!DNL Assets] {#assets-6514}
 
-* bullet item here
+* Unable to add or view tags for PDF files. (NPR-38452)
+
+* When you configure Connected Assets, save the configuration, reopen the configuration page, and test the already saved configuration, the test connection fails. (NPR-38507)
+
+* Unable to add users with numeric user ID to collections. (NPR-38538)
+
+* Experience Manager fails to process the FFmpeg installed on the author instance. (NPR-38568)
+
+* PDF processing fails with a `NoClassDefFoundError` error message. (NPR-38741)
+
+* The Add button under Custom Columns does not display correctly while creating an asset report for `de_DE` locale. (ASSETS-10641)
+
+* Experience Manager does not identify **[!UICONTROL Select a Workflow model]** dropdown list as a required field while creating a workflow model. (ASSETS-6871)
+
+* When you download a Collection, Experience Manager displays a message that is low in contrast in comparison to other user interface items. (ASSETS-6934)
+
+* When you upload a duplicate asset to the Digital Asset Management repository and Experience Manager detects and provides an option to delete the duplicate asset, the original asset also gets deleted from the repository. (ASSETS-10826)
+
+* Experience Manager does not save the folder metadata correctly when you specify special characters in multifields. (ASSETS-10721)
+
+* Unable to save Asset properties until you click **[!UICONTROL Save & Close]** twice. (ASSETS-12040)
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
