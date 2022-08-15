@@ -23,31 +23,20 @@ Some of the key features and enhancements are the following:
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_
 
-
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ## [!DNL Assets] {#assets-6514}
 
 * Unable to add or view tags for PDF files. (NPR-38452)
-
 * When you configure Connected Assets, save the configuration, reopen the configuration page, and test the already saved configuration, the test connection fails. (NPR-38507)
-
 * Unable to add users with numeric user ID to collections. (NPR-38538)
-
 * Experience Manager fails to process the FFmpeg installed on the author instance. (NPR-38568)
-
 * PDF processing fails with a `NoClassDefFoundError` error message. (NPR-38741)
-
 * The Add button under Custom Columns does not display correctly while creating an asset report for `de_DE` locale. (ASSETS-10641)
-
 * Experience Manager does not identify **[!UICONTROL Select a Workflow model]** dropdown list as a required field while creating a workflow model. (ASSETS-6871)
-
 * When you download a Collection, Experience Manager displays a message that is low in contrast in comparison to other user interface items. (ASSETS-6934)
-
 * When you upload a duplicate asset to the Digital Asset Management repository and Experience Manager detects and provides an option to delete the duplicate asset, the original asset also gets deleted from the repository. (ASSETS-10826)
-
 * Experience Manager does not save the folder metadata correctly when you specify special characters in multifields. (ASSETS-10721)
-
 * Unable to save Asset properties until you click **[!UICONTROL Save & Close]** twice. (ASSETS-12040)
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
@@ -69,32 +58,17 @@ Some of the key features and enhancements are the following:
 
 * Commerce products are not getting sorted using the column header and it is using _remote_ sort mode; instead, Commerce products should be getting sorted using column headers with _local_ sort mode. (CQ-4343750, NPR-38498)
 
-## CRX {#crx-6514}
-
-* EMPTY
-
-
 ## [!DNL Forms] {#forms-6514}
 
 >[!NOTE]
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
 
-
-## Granite {#granite-6514}
-
-* EMPTY
-
-
 ## Integrations {#integrations-6514}
 
 * Enable JavaScript ES6 (ECMAScript6 mode or better) compilation support for the minification of the `/libs/cq/analytics/widgets.js` library. (NPR-38433)
 * Enable JavaScript ES6 (ESMAScript6 mode or better) compilation support for the minification of the `/libs/cq/testandtarget/clientlibs/testandtarget/util.js` library. (NPR-38435)
 * The more content there is in `/content/campaigns`, the longer the call to `targeteditor.html` (`/libs/cq/personalization/touch-ui/content/targeteditor.html`) takes when you open the Page Editor. (NPR-38663)
-
-## Oak - Indexing and Queries {#oak-6514}
-
-* EMPTY
 
 ## Platform {#platform-6514}
 
@@ -105,10 +79,6 @@ Some of the key features and enhancements are the following:
 * An incorrect selected assets count is shown for **[!UICONTROL Add to collection]** when **[!UICONTROL Select All]** is selected. (CQ-4345424)
 * An exception message occurred when using the **[!UICONTROL Impersonate as]** field with a group or non-existent user. (CQ-4346098)
 
-## Replication {#replication-6514}
-
-* EMPTY
-
 ## [!DNL Sites] {#sites-6514}
 
 * Unexpected path deletions occurred while upgrading Experience Manager from 6.5.12.0 to 6.5.13.0. (NPR)
@@ -117,15 +87,6 @@ Some of the key features and enhancements are the following:
 
 * In Experience Manager Sites, when you expand the **[!UICONTROL Switch display format and adjust display setting]** button, then select **[!UICONTROL List View]**, the **[!UICONTROL Drag and Drop]** button is missing an accessible name. (SITES-2863, NPR-38760)
 * Screen reader must announce the accessible name such as `Show description for Archive` or `Show description for mini shopping cart`. However, the current accessible name is announced as `Info Circle button show description` for _all_ the tooltip information buttons. (SITES-3104)
-
-
-### Admin {#sites-admin-6514}
-
-* EMPTY
-
-### Classic User Interface {#sites-classicui-6514}
-
-* EMPTY
 
 ### Content Fragments {#sites-contentfragments-6514}
 
@@ -136,38 +97,13 @@ Some of the key features and enhancements are the following:
 * In the Content Fragment dialog box, under **[!UICONTROL Properties]**, the **[!UICONTROL Content Fragment]** field does not retain the saved path in the selection pop-up. (NPR-38632)
 * When you create a content fragment model and add an enumeration field of the drop-down type, the correct validation for _`is required`_ fails. (NPR-38237) 
 
-
-### ContentHub {#sites-contenthub-6514}
-
-* EMPTY
-
 ### Core Components {#sites-corecomponents-6514}
 
 * The new Page Email component should not force you into the classic user interface while editing `/etc`. (NPR-38648)
 
-### E-mail Editor {#sites-emaileditor-6514}
-
-* EMPTY
-
-### Experience Fragments {#sites-experiencefragments-6514}
-
-* EMPTY
-
 ### Page Editor {#sites-pageeditor-6514}
 
 * The user is not able to resize the component to the desired number of columns. (NPR-38688)
-
-### Security {#sites-security-6514}
-
-* EMPTY
-
-### SEO {#sites-seo-6514}
-
-* EMPTY
-
-### SPA Editor and SDK {#sites-spa-sdk-6514}
-
-* EMPTY
 
 ### Template Editor {#sites-templateeditor-6514}
 
@@ -190,10 +126,6 @@ Some of the key features and enhancements are the following:
 * Disabled users can still be added to Collections and Projects. (NPR-38651)
 * Deleting a filter without saving the Search Form creates an error. (NPR-38698)
 * A user's session cannot obtain a `ModifiableValueMap` instance for the groups in order to establish the direct group membership. (NPR-38710)
-
-## WCM {#wcm-6514}
-
-* EMPTY
 
 ## Workflow {#workflow-6514}
 
