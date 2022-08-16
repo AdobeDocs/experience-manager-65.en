@@ -115,9 +115,9 @@ To create the mapping that prefixes any request to https://localhost:4503/ with 
 
         * **Value** `localhost.4503/`
 
-    * **Name** `sling:internalRedirect[]`
+    * **Name** `sling:internalRedirect`
 
-        * **Type** `multi-value String`
+        * **Type** `String[]`
 
         * **Value** `/content/`
 
