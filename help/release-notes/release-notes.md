@@ -41,18 +41,20 @@ Some of the key features and enhancements are the following:
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
-* Screen reader not reading **[!UICONTROL Mute]** and **[!UICONTROL Unmute]** button on video using Dynamic Media component. (ASSETS-10169)
-* Experience Manager not showing set failures (in Image Sets, Spin Sets, Adaptive Video Sets, Mixed Media Sets, and so on) when a set exceeds 1000 asset or 20 duplicate assets. (ASSETS-10264)
-* Dynamic Media was not generating thumbnails for all EPS files. (ASSETS-10959)
+* Add support for password reset for Dynamic Media Classic user within Experience Manager. (ASSETS-10298)
+* Smart Crops generated for the images with transparent background have white background. (ASSETS-13148)
+* Dynamic Media do not generate thumbnails for EPS files. (ASSETS-10959)
+* Assets not getting uploaded to Dynamic Media account because of missing upload parameter. (ASSETS-13165)
+* Allow assets with names greater than 127 characters to be uploaded into Dynamic Media. (ASSETS-9991)
+* Enablement of JavaScript ES6 (ECMAScript 6) for Dynamic Media Viewers on Experience Manager 6.5.14.0. (NPR-38393)
+* Configuring the options in Dynamic Media **[!UICONTROL General Settings]** and **[!UICONTROL Publish Setup]** should not be accessible by non-administrator users. (ASSETS-8628)
+* Dynamic Media **[!UICONTROL General settings]** page do not show the already configured upload parameters correctly. (ASSETS-10245)
+* Experience Manager user interface do not show any failure message in case set creation/update fails. (ASSETS-10264)
 * Unable to apply a saved policy to one of the containers of an editable template to let you add Dynamic Media components. (ASSETS-11044)
-* No assets were moving into the Dynamic Media account after running the Dynamic Media Reprocess Assets workflow or the DAM Update Assets workflow on folders. (ASSETS-12084, ASSETS-9877) 
-* Smart Crop ignored the transparent background and placed everything on a white background instead. (ASSETS-13148)
-* DAM Update Asset workflow fails and a processing failed banner appears on assets when the Scene7 workflow is running. (ASSETS-13165)
+* Assets not getting uploaded to Dynamic Media account after running the Dynamic Media Reprocess Assets workflow on assets with incorrect job handle. (ASSETS-12084, ASSETS-9877)
 * Screen reader users are impacted by the `title` attribute not being provided for `<frame>` and `<iframe>` in the **[!UICONTROL Type to Search]** dialog box. (ASSETS-5483)
 * In screen readers, related and meaningful `alt=` value should be provided for multiple images that are present under **[!UICONTROL Assets]** heading in the left pane. (ASSETS-5644)
-* Configuring the options in Dynamic Media **[!UICONTROL General Settings]** and **[!UICONTROL Publish Setup]** should not be accessible by non-administrator users. (ASSETS-8628)
-* Allow assets with names greater than 127 characters limit to be uploaded into Dynamic Media. (ASSETS-9991)
-* Enablement of JavaScript ES6 (ECMAScript 6) for Dynamic Media Viewers on AEM 6.5.14.0. (NPR-38393)
+* Screen reader does not read **[!UICONTROL Mute]** and **[!UICONTROL Unmute]** button on video using Dynamic Media component. (ASSETS-10169)
 
 ## Commerce {#commerce-6514}
 
