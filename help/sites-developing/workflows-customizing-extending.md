@@ -523,7 +523,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 To use the script:
 
-1. Create the script (for example with CRXDE Lite) and save it in the repository below `/apps/myapp/workflow/scripts`
+1. Create the script (for example with CRXDE Lite) and save it in the repository below `//apps/workflow/scripts/`
 1. To specify a title that identifies the script in the **Process Step** edit dialog, add the following properties to the `jcr:content` node of your script:
 
    | Name |Type |Value |
@@ -640,7 +640,7 @@ function getParticipant() {
 }
 ```
 
-1. Create the script (for example with CRXDE Lite) and save it in the repository below `/apps/myapp/workflow/scripts`
+1. Create the script (for example with CRXDE Lite) and save it in the repository below `//apps/workflow/scripts`
 1. To specify a title that identifies the script in the **Process Step** edit dialog, add the following properties to the `jcr:content` node of your script:
 
    | Name |Type |Value |
