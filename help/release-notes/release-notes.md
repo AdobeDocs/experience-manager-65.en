@@ -19,7 +19,7 @@ mini-toc-levels: 3
 
 [!DNL Experience Manager] 6.5.14.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-Some of the key features and enhancements are the following:
+Some of the key features and improvements are the following:
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_
 
@@ -90,7 +90,7 @@ Some of the key features and enhancements are the following:
 * In Experience Manager Sites, when you expand the **[!UICONTROL Switch display format and adjust display setting]** button, then select **[!UICONTROL List View]**, the **[!UICONTROL Drag and Drop]** button is missing an accessible name. (SITES-2863, NPR-38760)
 * Screen reader must announce the accessible name such as `Show description for Archive` or `Show description for mini shopping cart`. However, the current accessible name is announced as `Info Circle button show description` for _all_ the tooltip information buttons. (SITES-3104)
 
-### Content Fragments {#sites-contentfragments-6514}
+### [!DNL Content Fragments] {#sites-contentfragments-6514}
 
 * Content Fragments enumeration field validation issue the first time that the content fragment is loaded. (SITES-7140)
 * Need to add Campaign personalization fields in the Rich Text Editor of the Content Fragments editor. (NPR-38526)
