@@ -50,6 +50,10 @@ Some of the key features and enhancements are the following:
 
 * Unable to save Asset properties until you click **[!UICONTROL Save & Close]** twice. (ASSETS-12040)
 
+>[!NOTE]
+>
+>Smart Content Services will not be available to new Experience Manager Assets On-Premise customers effective September  1, 2022. No impact to existing On-Premise and Adobe Managed Services customers, who already have this capability enabled.
+
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
 * Screen reader not reading **[!UICONTROL Mute]** and **[!UICONTROL Unmute]** button on video using Dynamic Media component. (ASSETS-10169)
