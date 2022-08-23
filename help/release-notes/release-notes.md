@@ -1,6 +1,6 @@
 ---
 title: Release Notes for [!DNL Adobe Experience Manager] 6.5
-description: "[!DNL Adobe Experience Manager] 6.5 notes outlining the release information, what's new, how to install, and detailed change lists."
+description: "Find release information, what's new, install how-tos, and a detailed change list for [!DNL Adobe Experience Manager] 6.5."
 mini-toc-levels: 3
 
 ---

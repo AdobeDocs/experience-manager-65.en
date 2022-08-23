@@ -3,7 +3,7 @@ title: Usage of CIF product & category picker
 description: Learn how to use CIF product & category picker in your customer commerce components to support authors and marketers to efficiently work with commerce product and catalog data.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
