@@ -6,6 +6,8 @@ mini-toc-levels: 3
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
+<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession&cid=a915e87c-369a-480c-9daf-d13efc766798 -->
+
 ## Release information {#release-information}
 
 | Product | [!DNL Adobe Experience Manager] 6.5 |
@@ -19,9 +21,13 @@ mini-toc-levels: 3
 
 [!DNL Experience Manager] 6.5.14.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-Some of the key features and enhancements are the following:
+Some of the key features and improvements are the following:
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_
+
+* Added support for password reset for Dynamic Media Classic users within Experience Manager. (ASSETS-10298)
+
+
 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
@@ -29,26 +35,18 @@ Some of the key features and enhancements are the following:
 ## [!DNL Assets] {#assets-6514}
 
 * Unable to add or view tags for PDF files. (NPR-38452)
-
 * When you configure Connected Assets, save the configuration, reopen the configuration page, and test the already saved configuration, the test connection fails. (NPR-38507)
-
 * Unable to add users with numeric user ID to collections. (NPR-38538)
-
 * Experience Manager fails to process the FFmpeg installed on the author instance. (NPR-38568)
-
 * PDF processing fails with a `NoClassDefFoundError` error message. (NPR-38741)
-
 * The Add button under Custom Columns does not display correctly while creating an asset report for `de_DE` locale. (ASSETS-10641)
-
-* Experience Manager does not identify **[!UICONTROL Select a Workflow model]** dropdown list as a required field while creating a workflow model. (ASSETS-6871)
-
-* When you download a Collection, Experience Manager displays a message that is low in contrast in comparison to other user interface items. (ASSETS-6934)
-
 * When you upload a duplicate asset to the Digital Asset Management repository and Experience Manager detects and provides an option to delete the duplicate asset, the original asset also gets deleted from the repository. (ASSETS-10826)
-
 * Experience Manager does not save the folder metadata correctly when you specify special characters in multifields. (ASSETS-10721)
-
 * Unable to save Asset properties until you click **[!UICONTROL Save & Close]** twice. (ASSETS-12040)
+* The screen reader only announces the `Relate` button. However, the `Relate` button also contains a submenu and can be expanded and collapsed. (ASSETS-6938)
+* Required ARIA (Accessible Rich Internet Applications) attributes `aria-expanded` for `role="combo box"` is missing. (ASSETS-6928)
+* In Card view, in the main file navigation area, the text content **[!UICONTROL Sort by]** does not have at least a 4.5:1 contrast ratio against their background color. (ASSETS-6926)
+* Experience Manager does not identify **[!UICONTROL Select a Workflow model]** dropdown list as a required field while creating a workflow model. (ASSETS-6871)
 
 >[!NOTE]
 >
@@ -56,27 +54,24 @@ Some of the key features and enhancements are the following:
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
-* Screen reader not reading **[!UICONTROL Mute]** and **[!UICONTROL Unmute]** button on video using Dynamic Media component. (ASSETS-10169)
-* Experience Manager not showing set failures (in Image Sets, Spin Sets, Adaptive Video Sets, Mixed Media Sets, and so on) when a set exceeds 1000 asset or 20 duplicate assets. (ASSETS-10264)
-* Dynamic Media was not generating thumbnails for all EPS files. (ASSETS-10959)
+* Add support for password reset for Dynamic Media Classic user within Experience Manager. (ASSETS-10298)
+* Smart Crops generated for the images with transparent background have white background. (ASSETS-13148)
+* Dynamic Media do not generate thumbnails for EPS files. (ASSETS-10959)
+* Assets not getting uploaded to Dynamic Media account because of missing upload parameter. (ASSETS-13165)
+* Allow assets with names greater than 127 characters to be uploaded into Dynamic Media. (ASSETS-9991)
+* Enablement of JavaScript ES6 (ECMAScript 6) for Dynamic Media Viewers on Experience Manager 6.5.14.0. (NPR-38393)
+* Configuring the options in Dynamic Media **[!UICONTROL General Settings]** and **[!UICONTROL Publish Setup]** should not be accessible by non-administrator users. (ASSETS-8628)
+* Dynamic Media **[!UICONTROL General settings]** page does not show the already configured upload parameters correctly. (ASSETS-10245)
+* Experience Manager user interface does not show any failure message in case set creation/update fails. (ASSETS-10264)
 * Unable to apply a saved policy to one of the containers of an editable template to let you add Dynamic Media components. (ASSETS-11044)
-* No assets were moving into the Dynamic Media account after running the Dynamic Media Reprocess Assets workflow or the DAM Update Assets workflow on folders. (ASSETS-12084, ASSETS-9877) 
-* Smart Crop ignored the transparent background and placed everything on a white background instead. (ASSETS-13148)
-* DAM Update Asset workflow fails and a processing failed banner appears on assets when the Scene7 workflow is running. (ASSETS-13165)
+* Assets not getting uploaded to Dynamic Media account after running the Dynamic Media Reprocess Assets workflow on assets with incorrect job handle. (ASSETS-12084, ASSETS-9877)
 * Screen reader users are impacted by the `title` attribute not being provided for `<frame>` and `<iframe>` in the **[!UICONTROL Type to Search]** dialog box. (ASSETS-5483)
 * In screen readers, related and meaningful `alt=` value should be provided for multiple images that are present under **[!UICONTROL Assets]** heading in the left pane. (ASSETS-5644)
-* Configuring the options in Dynamic Media **[!UICONTROL General Settings]** and **[!UICONTROL Publish Setup]** should not be accessible by non-administrator users. (ASSETS-8628)
-* Allow assets with names greater than 127 characters limit to be uploaded into Dynamic Media. (ASSETS-9991)
-* Enablement of JavaScript ES6 (ECMAScript 6) for Dynamic Media Viewers on AEM 6.5.14.0. (NPR-38393)
+* Screen reader does not read **[!UICONTROL Mute]** and **[!UICONTROL Unmute]** button on video using Dynamic Media component. (ASSETS-10169)
 
 ## Commerce {#commerce-6514}
 
 * Commerce products are not getting sorted using the column header and it is using _remote_ sort mode; instead, Commerce products should be getting sorted using column headers with _local_ sort mode. (CQ-4343750, NPR-38498)
-
-## CRX {#crx-6514}
-
-* EMPTY
-
 
 ## [!DNL Forms] {#forms-6514}
 
@@ -84,21 +79,11 @@ Some of the key features and enhancements are the following:
 >
 >* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
 
-
-## Granite {#granite-6514}
-
-* EMPTY
-
-
 ## Integrations {#integrations-6514}
 
 * Enable JavaScript ES6 (ECMAScript6 mode or better) compilation support for the minification of the `/libs/cq/analytics/widgets.js` library. (NPR-38433)
 * Enable JavaScript ES6 (ESMAScript6 mode or better) compilation support for the minification of the `/libs/cq/testandtarget/clientlibs/testandtarget/util.js` library. (NPR-38435)
 * The more content there is in `/content/campaigns`, the longer the call to `targeteditor.html` (`/libs/cq/personalization/touch-ui/content/targeteditor.html`) takes when you open the Page Editor. (NPR-38663)
-
-## Oak - Indexing and Queries {#oak-6514}
-
-* EMPTY
 
 ## Platform {#platform-6514}
 
@@ -109,29 +94,16 @@ Some of the key features and enhancements are the following:
 * An incorrect selected assets count is shown for **[!UICONTROL Add to collection]** when **[!UICONTROL Select All]** is selected. (CQ-4345424)
 * An exception message occurred when using the **[!UICONTROL Impersonate as]** field with a group or non-existent user. (CQ-4346098)
 
-## Replication {#replication-6514}
-
-* EMPTY
-
 ## [!DNL Sites] {#sites-6514}
 
-* Unexpected path deletions occurred while upgrading Experience Manager from 6.5.12.0 to 6.5.13.0. (NPR)
+* Unexpected path deletions occurred while upgrading Experience Manager from 6.5.12.0 to 6.5.13.0. (NPR-38532)
 
 ### Accessibility {#access-6514}
 
 * In Experience Manager Sites, when you expand the **[!UICONTROL Switch display format and adjust display setting]** button, then select **[!UICONTROL List View]**, the **[!UICONTROL Drag and Drop]** button is missing an accessible name. (SITES-2863, NPR-38760)
 * Screen reader must announce the accessible name such as `Show description for Archive` or `Show description for mini shopping cart`. However, the current accessible name is announced as `Info Circle button show description` for _all_ the tooltip information buttons. (SITES-3104)
 
-
-### Admin {#sites-admin-6514}
-
-* EMPTY
-
-### Classic User Interface {#sites-classicui-6514}
-
-* EMPTY
-
-### Content Fragments {#sites-contentfragments-6514}
+### [!DNL Content Fragments] {#sites-contentfragments-6514}
 
 * Content Fragments enumeration field validation issue the first time that the content fragment is loaded. (SITES-7140)
 * Need to add Campaign personalization fields in the Rich Text Editor of the Content Fragments editor. (NPR-38526)
@@ -140,38 +112,13 @@ Some of the key features and enhancements are the following:
 * In the Content Fragment dialog box, under **[!UICONTROL Properties]**, the **[!UICONTROL Content Fragment]** field does not retain the saved path in the selection pop-up. (NPR-38632)
 * When you create a content fragment model and add an enumeration field of the drop-down type, the correct validation for _`is required`_ fails. (NPR-38237) 
 
-
-### ContentHub {#sites-contenthub-6514}
-
-* EMPTY
-
 ### Core Components {#sites-corecomponents-6514}
 
 * The new Page Email component should not force you into the classic user interface while editing `/etc`. (NPR-38648)
 
-### E-mail Editor {#sites-emaileditor-6514}
-
-* EMPTY
-
-### Experience Fragments {#sites-experiencefragments-6514}
-
-* EMPTY
-
 ### Page Editor {#sites-pageeditor-6514}
 
 * The user is not able to resize the component to the desired number of columns. (NPR-38688)
-
-### Security {#sites-security-6514}
-
-* EMPTY
-
-### SEO {#sites-seo-6514}
-
-* EMPTY
-
-### SPA Editor and SDK {#sites-spa-sdk-6514}
-
-* EMPTY
 
 ### Template Editor {#sites-templateeditor-6514}
 
@@ -195,14 +142,9 @@ Some of the key features and enhancements are the following:
 * Deleting a filter without saving the Search Form creates an error. (NPR-38698)
 * A user's session cannot obtain a `ModifiableValueMap` instance for the groups in order to establish the direct group membership. (NPR-38710)
 
-## WCM {#wcm-6514}
-
-* EMPTY
-
 ## Workflow {#workflow-6514}
 
 * Enable JavaScript ES6 (ESMAScript6 mode or better) compilation support for the minification of the `/libs/cq/inbox/gui/components/inbox/clientlibs/commons.js` library. (NPR-38304)
-* Clean up client library compilation errors in `/libs/cq/workflow/widgets.js`. (NPR-38617)
 * After the workflow runs and the process steps are complete, the same comment is repeated multiple times. (NPR-38364)
 
 ## Install [!DNL Experience Manager] 6.5.14.0 {#install}
@@ -254,7 +196,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.3 or later (Use Web Console: `/system/console/bundles`).
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.12 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-38747 -->
 
 
 ### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
@@ -282,7 +224,7 @@ For information about installing the cumulative installer for [!DNL Experience M
 
 ### UberJar {#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.14.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.14/)(https://). <!-- UPDATE FOR EACH NEW RELEASE -->
+The UberJar for [!DNL Experience Manager] 6.5.14.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.14/). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -351,8 +293,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.14.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [List of OSGi bundles included in Experience Manager 6.5.13.0](/help/release-notes/assets/65130_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.13.0](/help/release-notes/assets/65130_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.14.0](/help/release-notes/assets/65140_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.14.0](/help/release-notes/assets/65140_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites {#restricted-sites}
 
