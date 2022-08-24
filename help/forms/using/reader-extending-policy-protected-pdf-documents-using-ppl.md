@@ -119,7 +119,7 @@ while ((read = output.read(bytes)) != -1) {
     outputStream.write(bytes, 0, read);
 }
 
-System.out.println("UsageRights applied successfully to the document. ”);
+System.out.println("UsageRights applied successfully to the document. ");
  outputStream.close();
 inputFileStream.close();
 
@@ -179,7 +179,7 @@ while ((read = fileStream.read(bytes)) != -1) {
 
     outputStream.write(bytes, 0, read);
 }
-System.out.println("RE rights removed successfully from the document.”);
+System.out.println("RE rights removed successfully from the document.");
 outputStream.close();
 inputFileStream.close();
 

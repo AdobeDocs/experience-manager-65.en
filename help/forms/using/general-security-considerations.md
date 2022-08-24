@@ -131,7 +131,7 @@ For security information about databases that AEM Forms on JEE supports, see the
   </tr>
   <tr>
    <td><p>Microsoft SQL Server 2016</p> </td>
-   <td>Search the Web for “SQL Server 2016: Security”</td>
+   <td>Search the Web for "SQL Server 2016: Security"</td>
   </tr>
   <tr>
    <td><p>MySQL 5</p> </td>

@@ -203,7 +203,7 @@ Business KPIs define measurable values that demonstrate how effectively a compan
 A business requirements document (BRD) details the business solution for a project, providing a clear specification of the customer's business needs and expectations. The BRD also distinguishes between the business solution and the technical solution.
 
 When examining the business solution the BRD should answer the question:
-“What does the business want to do?”
+"What does the business want to do?"
 
 ### Business Sign Off on any Required Adjustments to the Solution or Architecture Identified and Aligned Against ROI and KPI Expectations {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 

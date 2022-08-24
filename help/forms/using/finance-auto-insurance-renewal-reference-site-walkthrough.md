@@ -31,9 +31,9 @@ The We.Finance Auto-Insurance application scenario is a visual narration for the
 
 ### Gloria sends an Insurance policy renewal communication from We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria logs into AEM instance, clicks **Auto Insurance Renewal,** and then clicks **Open Agent UI. **The click prefills the insurance document with policy details of Sarah Rose. Gloria clicks** Submit** and a message is displayed on the screen “Submission Initiated” and then in few seconds “Submitted Successfully”.
+Gloria logs into AEM instance, clicks **Auto Insurance Renewal,** and then clicks **Open Agent UI. **The click prefills the insurance document with policy details of Sarah Rose. Gloria clicks** Submit** and a message is displayed on the screen "Submission Initiated" and then in few seconds "Submitted Successfully".
 
-Sarah receives an email with the subject “Your Auto Insurance Renewal”.
+Sarah receives an email with the subject "Your Auto Insurance Renewal".
 
 ![Agent UI](assets/agent_ui_email_new.png) 
 

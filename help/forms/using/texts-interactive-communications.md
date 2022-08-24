@@ -246,7 +246,7 @@ If required, insert special characters in the document fragment. For example, yo
 
 * Currency symbols such as €,￥, and £
 * Mathematical symbols such as ∑, √, ∂, and ^
-* Punctuation symbols such as ‟ and ”
+* Punctuation symbols such as ‟ and "
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 

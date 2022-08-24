@@ -100,7 +100,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
    >[!NOTE]
    >
-   >During assets migration, you may find warning messages such as “Conflict found for…”. Such messages indicate that rules for some of the components in adaptive forms could not be migrated. For example, if the component had an event which had both rules and scripts, if rules occur after any script none of the rules for the component are migrated. You can [migrate such rules by opening the rule editor](#migrate-rules) in adaptive form authoring.
+   >During assets migration, you may find warning messages such as "Conflict found for…". Such messages indicate that rules for some of the components in adaptive forms could not be migrated. For example, if the component had an event which had both rules and scripts, if rules occur after any script none of the rules for the component are migrated. You can [migrate such rules by opening the rule editor](#migrate-rules) in adaptive form authoring.
 
     * To migrate adaptive form custom components, tap **Adaptive Forms Custom Components Migration** and in the Custom Components Migration page, tap **Start Migration**. The following get migrated:
 
@@ -142,7 +142,7 @@ When you run the Migration Utility for the first time, a log is created with the
 
    When executed, the Migration utility does the following:
 
-    * **Adds the tags to the assets**: Adds the tag “Correspondence Management : Migrated Assets” / “Adaptive Forms : Migrated Assets”. to the migrated assets, so that the users can identify migrated assets. When you run the Migration utility, all the existing assets in the system are marked as Migrated.
+    * **Adds the tags to the assets**: Adds the tag "Correspondence Management : Migrated Assets" / "Adaptive Forms : Migrated Assets". to the migrated assets, so that the users can identify migrated assets. When you run the Migration utility, all the existing assets in the system are marked as Migrated.
     * **Generates tags**: Categories and subcategories present in the previous system are created as tags, and then these tags are associated with the relevant Correspondence Management assets in AEM. For example, a Category (Claims) and a Subcategory (Claims) of a letter template are generated as tags.
 
 1. After the Migration utility finishes running, proceed to the [housekeeping tasks](#housekeepingtasks).

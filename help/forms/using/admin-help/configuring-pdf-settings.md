@@ -433,7 +433,7 @@ When working with the Advanced options, it is helpful to have an understanding o
 
 ## Standards reporting and compliance options {#standards-reporting-and-compliance-options}
 
-PDF Generator can check document contents in a PostScript file to ensure that they meet the standard PDF/X-1a, PDF/X-3, or PDF/A criteria before creating the PDF file. For PDF/X-compliant files, you can also require that the PostScript file meets additional criteria by selecting other options under “Standards reporting and compliance”. The availability of options depends on the standard you select.
+PDF Generator can check document contents in a PostScript file to ensure that they meet the standard PDF/X-1a, PDF/X-3, or PDF/A criteria before creating the PDF file. For PDF/X-compliant files, you can also require that the PostScript file meets additional criteria by selecting other options under "Standards reporting and compliance". The availability of options depends on the standard you select.
 
 PDF/X-compliant files are primarily used as a standardized format for the exchange of PDF files that are intended for high-resolution print production. Unless you are creating a PDF document for print production, you can ignore the PDF/X compliance standards.
 
@@ -495,7 +495,7 @@ These options are enabled when Compatibility (in the General area) is set to Acr
 
 **Cancel Job:** Creates a PDF file only if the PostScript file meets PDF/A requirements and is otherwise valid.
 
-**Output Intent Profile Name:** Indicates the characterized printing condition for which the document has been prepared and is required for PDF/A compliance. If your workflow requires that the document specifies Output Intent information, select “None”. The document will fail compliance checking if this information is not provided.
+**Output Intent Profile Name:** Indicates the characterized printing condition for which the document has been prepared and is required for PDF/A compliance. If your workflow requires that the document specifies Output Intent information, select "None". The document will fail compliance checking if this information is not provided.
 
 **Output Condition:** Describes the intended printing condition. This entry is not required, but can be used to provide useful information to the intended receiver of the PDF document.
 

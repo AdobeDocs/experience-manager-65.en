@@ -64,7 +64,7 @@ You can find more information in the [JSP EL specification](https://download.ora
 
 ### Remote function {#remote-function}
 
-Remote functions provide the capability to use custom logic in expressions. You can write custom logic to be used in expression as a method in Java and same function can be used inside expressions. Available remote functions are listed under the “Remote Functions” tab on the left side of Expression Editor.
+Remote functions provide the capability to use custom logic in expressions. You can write custom logic to be used in expression as a method in Java and same function can be used inside expressions. Available remote functions are listed under the "Remote Functions" tab on the left side of Expression Editor.
 
 ![remotefunction](assets/remotefunction.png) 
 

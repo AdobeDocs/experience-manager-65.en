@@ -19,7 +19,7 @@ The Sling API works at a higher, more abstract level than the JCR API. This allo
 
 ## Avoid queries wherever possible {#avoid-queries-wherever-possible}
 
-It is always faster to navigate the repository to retrieve data than it is to run a query. There are cases in which queries will be necessary, such as an end user query or needing to find structured content from across the entire repository, but for all other cases, it is preferred to navigate to the necessary nodes. Queries should always be avoided in render logic such as navigation components, a “recent items list”, counts of items, and so on. In these cases, it is better to walk through the hierarchy or pre-cache the result so that it can be used directly when rendered.
+It is always faster to navigate the repository to retrieve data than it is to run a query. There are cases in which queries will be necessary, such as an end user query or needing to find structured content from across the entire repository, but for all other cases, it is preferred to navigate to the necessary nodes. Queries should always be avoided in render logic such as navigation components, a "recent items list", counts of items, and so on. In these cases, it is better to walk through the hierarchy or pre-cache the result so that it can be used directly when rendered.
 
 ## Restrict the scope of JCR observation {#restrict-the-scope-of-jcr-observation}
 

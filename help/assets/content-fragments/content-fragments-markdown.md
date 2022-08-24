@@ -93,7 +93,7 @@ A Reference-style image has the following syntax:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`![Alt text][id]`
 
-Where “id” is the name of a defined image reference. Image references are defined using syntax identical to link references:
+Where "id" is the name of a defined image reference. Image references are defined using syntax identical to link references:
 
 &nbsp;&nbsp;&nbsp;&nbsp;`[id]: url/to/image "Optional title attribute"`
 

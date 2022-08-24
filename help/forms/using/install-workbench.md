@@ -184,7 +184,7 @@ To use Workbench, you must have an instance of AEM Forms running, typically on a
 
 ### Configuring time-out settings {#configuring-timeout-settings}
 
-By default, Workbench times out after two hours, regardless of activity or inactivity. To edit the time-out setting, see “Configuring User Management > Configure advanced system attributes” in the <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administration console Help</a>.
+By default, Workbench times out after two hours, regardless of activity or inactivity. To edit the time-out setting, see "Configuring User Management > Configure advanced system attributes" in the <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administration console Help</a>.
 
 ### Configuring Workbench to connect over HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 

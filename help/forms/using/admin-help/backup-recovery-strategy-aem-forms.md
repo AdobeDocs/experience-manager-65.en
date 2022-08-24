@@ -88,7 +88,7 @@ If the main AEM forms database is moved or changed, review the install Guides re
 
 ### Changing the AEM forms hostname or IP address {#changing-the-aem-forms-hostname-or-ip-address}
 
-In a cluster, if you use TCP caching instead of UDP, you must update the cache locator configuration. See “Configuring the caching locators (caching using TCP only)” in the configuration guide relevant to your application server.
+In a cluster, if you use TCP caching instead of UDP, you must update the cache locator configuration. See "Configuring the caching locators (caching using TCP only)" in the configuration guide relevant to your application server.
 
 ### Changing the AEM forms node file system paths {#changing-the-aem-forms-node-file-system-paths}
 

@@ -510,7 +510,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 > - PDF Generator does not support Microsoft Office 365.
 > - PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
 > - The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
-> - A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+> - A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"
 >
 > - PDF Generator service does not support Microsoft Windows 10.
 
@@ -625,7 +625,7 @@ For additional requirements see:
 
 >[!NOTE]
 >
-> The Acrobat DC product family introduces two tracks for both Acrobat and Reader which are essentially different products: “Classic” and “Continuous.” For details and a comparison of the two tracks, see [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
+> The Acrobat DC product family introduces two tracks for both Acrobat and Reader which are essentially different products: "Classic" and "Continuous." For details and a comparison of the two tracks, see [https://www.adobe.com/go/acrobatdctracks.](https://www.adobe.com/go/acrobatdctracks)
 
 ### Browsers {#browsers}
 
@@ -739,7 +739,7 @@ AEM Forms on JEE supports updates, patches, and fix packs on top of the specifie
 
 ## Third-party patch support policy {#third-party-patch-support-policy}
 
-The third-party software requirements for AEM Forms on JEE are documented in the “System Requirements” section of their respective product documents. All documentation can be accessed from [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
+The third-party software requirements for AEM Forms on JEE are documented in the "System Requirements" section of their respective product documents. All documentation can be accessed from [https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65) .
 
 AEM Forms on JEE’s third-party reference platforms state the specific patch level of third-party infrastructure that was current during the development and release of AEM Forms on JEE, and from the minimum patch/service pack level of the infrastructure supported by that version of AEM Forms on JEE.
 

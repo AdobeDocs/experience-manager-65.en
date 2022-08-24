@@ -124,7 +124,7 @@ In the content tab, manage the content such as document fragments and content va
 
     * Currency symbols such as €,￥, and £
     * Mathematical symbols such as ∑, √, ∂, and ^
-    * Punctuation symbols such as ‟ and ”
+    * Punctuation symbols such as ‟ and "
 
    ![specialcharacters](assets/specialcharacters.png)
 

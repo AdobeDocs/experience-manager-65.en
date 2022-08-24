@@ -233,8 +233,8 @@ For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility
 
 * Improve undo for components that do not have inlineEditing or dropTarget feature in `cq:editConfig`. (NPR-38361)
 <!-- version 2 of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
-* The Style System drop-down might have been positioned on the top of the page instead of in-context of the component - for components that use `cq:editConfig` “afteredit: REFRESH_PAGE”. This issue is now resolved. (NPR-38384)
-<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384) -->
+* The Style System drop-down might have been positioned on the top of the page instead of in-context of the component - for components that use `cq:editConfig` "afteredit: REFRESH_PAGE". This issue is now resolved. (NPR-38384)
+<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
 * Text component is misaligned when added to nested Layout Containers. (NPR-38193)
 * An empty style tab was displayed when there was no Style System config for a component; the tab is now hidden when no config is present. (NPR-38218)
 <!-- version 2 of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
@@ -423,7 +423,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue.
 
 * The following errors and warning messages may display during installation of [!DNL Experience Manager] 6.5.x.x:
-  * “When the Adobe Target integration is configured in [!DNL Experience Manager] using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type “Experience Fragment”/source “Adobe Experience Manager,” Target creates several offers with type “HTML”/source “Adobe Target Classic.”
+  * "When the Adobe Target integration is configured in [!DNL Experience Manager] using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type "Experience Fragment"/source "Adobe Experience Manager," Target creates several offers with type "HTML"/source "Adobe Target Classic."
   * `com.adobe.granite.maintenance.impl.TaskScheduler`: No maintenance windows found at granite/operations/maintenance.
   * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used (CQ-4274424).
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.

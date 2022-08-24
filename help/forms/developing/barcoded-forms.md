@@ -173,7 +173,7 @@ Decode form data by using the barcoded forms API(web service):
 1. Include project files
 
     * Create a Microsoft .NET client assembly that consumes the barcoded forms service WSDL. For information, see [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
-    * Reference the Microsoft .NET client assembly. For information, see “Referencing the .NET client assembly” in [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+    * Reference the Microsoft .NET client assembly. For information, see "Referencing the .NET client assembly" in [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Create a barcoded forms Client API object
 

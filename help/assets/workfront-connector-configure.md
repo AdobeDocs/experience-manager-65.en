@@ -123,14 +123,14 @@ This workflow step lets a user map a property to a [!DNL Workfront] custom form 
   * An AEM property. This reference should be relative to the workflow payload.
   * A named value. These should be surrounded by brackets.
   * A concatenation of the above 3 items. Specify it using `{+}`.
-  * An alteration of the above 3 items by surrounding the value with `{replace(<value>,”old-char”,”new-char”)}`.
+  * An alteration of the above 3 items by surrounding the value with `{replace(<value>,"old-char","new-char")}`.
 
 * Some example are:
 
   * `status="INP"`
   * `DE:Asset Type=jcr:content/metadata/assetType`
   * `DE:Path={path}`
-  * `URL=”https://my-aem-author/assets.html”{+}{path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![Configuration to map property](/help/assets/assets/wf-map-property-config.png)
 

@@ -141,7 +141,7 @@ The following procedure demonstrates how to use the javascript box to customize 
 
 1. Add your javascript code in the **s_doPlugins** function.
 
-The following example concatenates the data captured on a page in hierarchical order, using a common separator of “|”.
+The following example concatenates the data captured on a page in hierarchical order, using a common separator of "|".
 
 A Adobe Analytics framework has the following configruations:
 

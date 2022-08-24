@@ -110,8 +110,8 @@ Here are some baseline parameters that you can monitor for [!DNL Experience Mana
 
 Replication agents
 
-* MBean: `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
+* MBean: `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
+* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * Instances: One Author and all publish instances (for flush agents)
 * Alarm threshold: When the value of `QueueBlocked` is `true` or the value of `QueueNumEntries` is greater than 150% of the baseline.
 

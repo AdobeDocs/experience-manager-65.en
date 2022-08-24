@@ -484,8 +484,8 @@ Validations that are applied at the Data Dictionary Element Level.
 * All DDEs must have a "not null/non null" element type.
 * All DDE reference names must not be null.
 * All DDE reference names must be unique.
-* All DDE reference must only contain alphanumeric characters and “_”.
-* All DDE display names must only contain alphanumeric characters and “_”.
+* All DDE reference must only contain alphanumeric characters and "_".
+* All DDE display names must only contain alphanumeric characters and "_".
 * Composite and Collection elements are not allowed at leaf level. Only Primitive (String, Date, Number, Boolean) elements are allowed at leaf level. This validation ensures that there is no composite and collection element without a child DDE.
 * A composite parent DDE must not have two child elements with the same name.
 * The ENUM subtype is only used for String and Number elements.
@@ -588,7 +588,7 @@ When mapping a collection DDE to an XML Schema element:
 
 * The binding for all the child DDEs of Collection element must be relative to the parent Collection element.
 
-The XML Schema below declares an element with the name Tokens and a maxOccurs attribute of “unbounded”. Thus, Tokens is a collection element.
+The XML Schema below declares an element with the name Tokens and a maxOccurs attribute of "unbounded". Thus, Tokens is a collection element.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

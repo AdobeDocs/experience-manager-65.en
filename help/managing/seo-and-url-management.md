@@ -24,7 +24,7 @@ There are some generally accepted best practices when it comes to URLs.
 
 In your AEM project, when evaluating your URLs, ask yourself the following:
 
-“If a user were to see this URL and none of the content on the page, could they describe what this page was?”
+"If a user were to see this URL and none of the content on the page, could they describe what this page was?"
 
 If the answer is yes, then it is likely that the URL will work well for a search engine.
 
@@ -150,7 +150,7 @@ There are a few points to be considered with this approach:
 The SCR annotation for this type of servlet would look something like this:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 
 ```
 
@@ -316,7 +316,7 @@ Examples:
 Both would apply the following tag to the head of the page:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 
 ```
 

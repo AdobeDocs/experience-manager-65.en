@@ -124,7 +124,7 @@ The Summary expression is typically used for repeating children of an accordion 
 
 **Return Type:** The expression returns a String that becomes the title of the accordion.
 
-**Example:** “Account number : “ + textbox1.value
+**Example:** "Account number : " + textbox1.value
 
 ### Validate Expression {#validate-expression}
 

@@ -133,7 +133,7 @@ A useful way to identify if the Lucene index is returning a lot of results to re
 
 #### During Development {#during-development-2}
 
-Set low threshholds for oak.queryLimitInMemory (eg. 10000) and oak.queryLimitReads (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying “The query read more than x nodes..."
+Set low threshholds for oak.queryLimitInMemory (eg. 10000) and oak.queryLimitReads (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying "The query read more than x nodes..."
 
 This helps avoiding resource intensive queries (ie. not backed by any index or backed by less covering index). For example, a query that reads 1M nodes would lead to lots of IO, and negatively impact the overall application performance. So any query which fails due to above limits should be analyzed and optimized.
 

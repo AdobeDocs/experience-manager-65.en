@@ -71,7 +71,7 @@ In this procedure:
 
 1. Import the certificate by typing the following command:
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
+   `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Type `changeit` as the password. This password is the default password for a Java installation and may have been changed by the system administrator.
 1. When prompted for `Trust this certificate? [no]`:, type `yes`. The confirmation "Certificate was added to keystore" is displayed.

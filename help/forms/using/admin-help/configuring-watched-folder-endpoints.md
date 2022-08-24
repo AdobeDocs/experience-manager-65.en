@@ -265,7 +265,7 @@ Output parameter mappings can also specify additional patterns, such as these:
 * %F = Source Filename
 * %E = Source Filename Extension
 
-If the output parameter mapping pattern ends with “File.separator”, (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with “File.separator”, the content (result file or folder) is created with that name. For more information about output parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+If the output parameter mapping pattern ends with "File.separator", (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with "File.separator", the content (result file or folder) is created with that name. For more information about output parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## About throttling {#about-throttling}
 
