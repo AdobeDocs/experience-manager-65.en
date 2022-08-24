@@ -593,7 +593,7 @@ If color is used as a cue to provide information, you should provide an addition
 
 * [Understanding Success Criteria 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [How to Meet Success Criteria 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Guidance on meeting a 3:1 contrast ratio, containing a list of “web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Guidance on meeting a 3:1 contrast ratio, containing a list of "web safe” colors](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Contrast (Minimum) (1.4.3) {#contrast-minimum}
 
@@ -842,11 +842,11 @@ To meet this success criterion, the default language of a web page can be identi
 
 * If a page is written in British English, the `<html>` element should read:
 
-  `<html lang = “en-gb”>`
+  `<html lang = "en-gb”>`
 
 * Whereas a page to be rendered as US English should adopt the following standard:
 
-  `<html lang = “en-us”>`
+  `<html lang = "en-us”>`
 
 In AEM, the default language of your page is set when creating the page, but may also be changed when editing a page, which is accessible by **Sidekick** - **Page** tab - **Page Properties...** - **Advanced** tab.
 
@@ -874,7 +874,7 @@ Pages applying this success criterion allow:
 
 #### How to Meet - Language of Parts (3.1.2) {#how-to-meet-language-of-parts}
 
-Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code “de”) can be shown as follows:
+Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code "de”) can be shown as follows:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -889,7 +889,7 @@ Tthe `lang` attribute can be used to identify changes in the language of content
 Similarly, the browser can render an uncommon loan word or phrase correctly if the `span` element is used as follows:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</span>.</p>
+<p>The only French phrase I know is <span lang = "fr”>je ne sais quoi</span>.</p>
 ```
 
 >[!NOTE]

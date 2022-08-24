@@ -197,7 +197,7 @@ The Chart component lets you add a bar, line, or pie chart. AEM creates a chart 
 * **Data**
 
     * **Chart Data**
-      Enter your chart data using the CSV format; the Comma Separated Values format uses commas (“,”) as the field separator.
+      Enter your chart data using the CSV format; the Comma Separated Values format uses commas (",”) as the field separator.
 
 * **Advanced**
 
