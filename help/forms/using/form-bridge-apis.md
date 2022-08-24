@@ -192,7 +192,7 @@ Returns the version number of the Scripting library
 ### Example of&nbsp;getFieldValue() API {#example-of-nbsp-getfieldvalue-api}
 
 ```JavaScript
-var a =  formBridge.getFieldValue(“xfa.form.form1.Subform1.TextField”);
+var a =  formBridge.getFieldValue("xfa.form.form1.Subform1.TextField");
 if(a.errors) {
     var err;
      while((err = a.getNextMessage()) != null)

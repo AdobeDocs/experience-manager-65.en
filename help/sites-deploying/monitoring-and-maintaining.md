@@ -690,7 +690,7 @@ This log has one line per request or response:
 
 * For responses, the line contains:
 
-    * the status code (200 means “success”, 404 means “page not found”
+    * the status code (200 means "success", 404 means "page not found"
     * the MIME type
     * the response time
 

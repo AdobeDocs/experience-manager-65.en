@@ -134,7 +134,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><strong>Vertical Zoom</strong></td>
    <td><p>The Vertical Zoom viewer lets you maximize a product imagery viewing experience to give your users the best representation of a product. The vertical location of swatches does the following:</p>
     <ul>
-     <li>Ensures that swatches are “above the fold”.<br/> With horizontal swatches, depending on the user’s desktop screen size, they are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
+     <li>Ensures that swatches are "above the fold".<br/> With horizontal swatches, depending on the user’s desktop screen size, they are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
      <li>Maximizes main image size.<br /> With horizontal swatches, it is necessary to reserve space on the page to ensure that they are visible. This positioning decreased the size of the main image. With a vertical swatch layout, however, you do not need to allocate this space. As such, you can maximize the main image size.</li>
     </ul> </td>
   </tr>

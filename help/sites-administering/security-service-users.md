@@ -82,7 +82,7 @@ If the above fails, Sling 7 offers a Service User Mapping service, which allows 
 * They allow mapping services to users
 * They make it possinle to define sub-service users
 * The central configuration point is: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` = `service-name` [ “:” subservice-name ] 
+* `service-id` = `service-name` [ ":" subservice-name ] 
 
 * `service-id` is mapped to a resource resolver and/or JCR repository user ID for authentication
 * `service-name` is the symbolic name of the bundle providing the service

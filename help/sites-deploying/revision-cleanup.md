@@ -381,7 +381,7 @@ In some cases, alternating between the tail and full compaction modes delays the
   </tr>
   <tr>
    <td><strong>Where can we find the statistics of the last Online Revision Cleanup executions ?</strong></td>
-   <td><p>Status, progress and statistics are exposed via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). For more details about the <code>SegmentRevisionGarbageCollection</code> MBean, read the <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">following paragraph</a>.</p> <p>Progress can be tracked via the <code>EstimatedRevisionGCCompletion</code> attribute of the <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>You can obtain a reference of the MBean using the <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Note that the statistics are only available since the last system start. External monitoring tooling could be leveraged to keep the data beyond AEM uptime. See <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">the AEM documentation for attaching health checks to Nagios as an example for an external monitoring tool</a>.</p> </td>
+   <td><p>Status, progress and statistics are exposed via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). For more details about the <code>SegmentRevisionGarbageCollection</code> MBean, read the <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">following paragraph</a>.</p> <p>Progress can be tracked via the <code>EstimatedRevisionGCCompletion</code> attribute of the <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>You can obtain a reference of the MBean using the <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Note that the statistics are only available since the last system start. External monitoring tooling could be leveraged to keep the data beyond AEM uptime. See <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">the AEM documentation for attaching health checks to Nagios as an example for an external monitoring tool</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -390,15 +390,15 @@ In some cases, alternating between the tail and full compaction modes delays the
     <ul>
      <li>Online Revision Cleanup has started / stopped
       <ul>
-       <li>Online Revision Cleanup is composed of three phases: estimation, compaction and cleanup. Estimation can force compaction and cleanup to skip if the repository does not contain enough garbage. In the latest version of AEM, the message "<code>TarMK GC #{}: estimation started</code>” marks the start of estimation, "<code>TarMK GC #{}: compaction started, strategy={}</code>” marks the start of compaction and "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>” marks the start of cleanup.</li>
+       <li>Online Revision Cleanup is composed of three phases: estimation, compaction and cleanup. Estimation can force compaction and cleanup to skip if the repository does not contain enough garbage. In the latest version of AEM, the message "<code>TarMK GC #{}: estimation started</code>" marks the start of estimation, "<code>TarMK GC #{}: compaction started, strategy={}</code>" marks the start of compaction and "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" marks the start of cleanup.</li>
       </ul> </li>
      <li>Disk space gained by the revision cleanup
       <ul>
-       <li>Space is reclaimed only when the cleanup phase completes. The completion of the cleanup phase is marked by the log message "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Post cleanup size is {} ({} bytes) and space reclaimed {} ({} bytes). Compaction map weight/depth is {}/{} ({} bytes/{}).”.</li>
+       <li>Space is reclaimed only when the cleanup phase completes. The completion of the cleanup phase is marked by the log message "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Post cleanup size is {} ({} bytes) and space reclaimed {} ({} bytes). Compaction map weight/depth is {}/{} ({} bytes/{}).".</li>
       </ul> </li>
      <li>A problem occured during the revision cleanup
       <ul>
-       <li>There are many failure conditions, all of them are marked by WARN or ERROR log messages staring with "TarMK GC”.</li>
+       <li>There are many failure conditions, all of them are marked by WARN or ERROR log messages staring with "TarMK GC".</li>
       </ul> </li>
     </ul> <p>Also, see the <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Troubleshooting Based on Error Messages</a> section below.</p> </td>
    <td> </td>
@@ -419,7 +419,7 @@ In some cases, alternating between the tail and full compaction modes delays the
   </tr>
   <tr>
    <td><strong>How to detect if Online Revision Cleanup has failed and what are the steps to recover?</strong></td>
-   <td>Failure conditions are marked by WARN or ERROR log messages starting with "TarMK GC”. Also, see the <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Troubleshooting Based on Error Messages</a> section below.</td>
+   <td>Failure conditions are marked by WARN or ERROR log messages starting with "TarMK GC". Also, see the <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Troubleshooting Based on Error Messages</a> section below.</td>
    <td> </td>
   </tr>
   <tr>
@@ -429,7 +429,7 @@ In some cases, alternating between the tail and full compaction modes delays the
   </tr>
   <tr>
    <td><p><strong>How to monitor Automatic Cleanup on a standby instance?</strong></p> </td>
-   <td><p>Status, progress and statistics are exposed via JMX by using the <code>SegmentRevisionGarbageCollection</code> MBean. See also the following <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak documentation</a>. </p> <p>You can obtain a reference of the MBean by using the <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Note that the statistics are available only since the last system start. External monitoring tooling could be leveraged to keep the data beyond the AEM uptime. Also, see See <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">the AEM documentation for attaching health checks to Nagios as an example for an external monitoring tool</a>.</p> <p>The log files can also be used to check the status, progress and statistics of the Automatic Cleanup.</p> </td>
+   <td><p>Status, progress and statistics are exposed via JMX by using the <code>SegmentRevisionGarbageCollection</code> MBean. See also the following <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Oak documentation</a>. </p> <p>You can obtain a reference of the MBean by using the <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Note that the statistics are available only since the last system start. External monitoring tooling could be leveraged to keep the data beyond the AEM uptime. Also, see See <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">the AEM documentation for attaching health checks to Nagios as an example for an external monitoring tool</a>.</p> <p>The log files can also be used to check the status, progress and statistics of the Automatic Cleanup.</p> </td>
    <td> </td>
   </tr>
   <tr>

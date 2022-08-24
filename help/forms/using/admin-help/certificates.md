@@ -24,7 +24,7 @@ Only X509v3 certificates are supported. This certificate type can be supplied in
 
 Certificates required to complete a signature verification must be in the same store (HSM or database).
 
-You can also import and delete certificates using the Trust Manager API. For details, see “Importing certificates using the Trust Manager API” and “Deleting certificates using the Trust Manager API” in [Programming with AEM forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+You can also import and delete certificates using the Trust Manager API. For details, see "Importing certificates using the Trust Manager API" and "Deleting certificates using the Trust Manager API" in [Programming with AEM forms](https://www.adobe.com/go/learn_aemforms_programming_63).
 
 ## Import a certificate {#import-a-certificate}
 

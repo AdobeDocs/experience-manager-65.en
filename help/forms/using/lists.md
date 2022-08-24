@@ -21,7 +21,7 @@ Document fragments are reusable parts/components of a correspondence using which
 * **Text**: A text asset is a piece of content that consists of one or more paragraphs of text. A paragraph can be static or dynamic.
 * **List**: List is a group of document fragments, including text, lists, conditions, and images. The order of the list elements can be fixed or editable. While creating a letter, you can use some or all the list elements to replicate a reusable pattern of elements.
 * **Condition**: Conditions enable you to define what content gets included at correspondence creation time, based on the supplied data. The condition is described in terms of control variables. A control variable can be either a data dictionary element or a placeholder.
-* **Layout fragment**: A layout fragment is a layout that can be used within one or more letters. A layout fragment is used to create repeatable patterns, especially dynamic tables. The layout can contain typical form fields such as “Address” and "Reference Number." It also contains empty sub forms that denote target areas. The layouts (XDPs) are created in Designer and then are uploaded to AEM Forms.
+* **Layout fragment**: A layout fragment is a layout that can be used within one or more letters. A layout fragment is used to create repeatable patterns, especially dynamic tables. The layout can contain typical form fields such as "Address" and "Reference Number." It also contains empty sub forms that denote target areas. The layouts (XDPs) are created in Designer and then are uploaded to AEM Forms.
 
 ## Text {#text}
 
@@ -97,7 +97,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
     * Currency symbols such as €,￥, and £
     * Mathematical symbols such as ∑, √, ∂, and ^
-    * Punctuation symbols such as ‟ and ”
+    * Punctuation symbols such as ‟ and "
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
@@ -293,7 +293,7 @@ Based on the options you choose, either only the first expression that is found 
 
 The Condition Editor comes with an [Expression Builder](/help/forms/using/expression-builder.md) user interface that supports creating expressions using both multiple placeholders and Data Dictionary elements. You can use common operands and local / global functions in such expressions. Each expression can be associated with some content and optionally there could be a default section if none of the expressions evaluates to true. All expressions are evaluated in the sequence in which they are defined and the first expressions returning true is selected and its associated content is returned by that conditional module.
 
-For example, if the terms and conditions text in a letter differs depending which state the customer is in, and the data dictionary contains an element called “state”, then you could add the condition as follows:
+For example, if the terms and conditions text in a letter differs depending which state the customer is in, and the data dictionary contains an element called "state", then you could add the condition as follows:
 • state = NY, select T&C_NY text paragraph
 • state = NC, select T&C_NC text paragraph
 
@@ -317,7 +317,7 @@ The Condition editor enables you to specify a default condition. If the value of
 1. To add an asset to the Condition, select it in the Select Assets page and tap **Done**. The assets are added to the Expression pane.
 1. You can select the following options to specify how the condition behaves at runtime:
 
-    * **Disable Multiple Results Evaluation\Enable Multiple Results Evaluation**: When this option is enabled (appears as “Enable Multiple…”), all the conditions are evaluated and the result is the sum of all the true conditions. If this option is disabled (appears as "Disable Multiple...") then only the first condition that is found to be true is evaluated and becomes the output of the condition.
+    * **Disable Multiple Results Evaluation\Enable Multiple Results Evaluation**: When this option is enabled (appears as "Enable Multiple…"), all the conditions are evaluated and the result is the sum of all the true conditions. If this option is disabled (appears as "Disable Multiple...") then only the first condition that is found to be true is evaluated and becomes the output of the condition.
     * **Page Break**: Select this option ( ![break](assets/break.png)) to add a page break between the modules of the conditions. When this option is not selected ( ![nobreak](assets/nobreak.png)), if a condition is overflowing to the next page, the whole condition is shifted to the next page instead of breaking in the page between the condition.
 
 1. To change the order of the assets within the condition, tap and hold the arrows icon ( ![dragndrop](assets/dragndrop.png) ) and drag-and-drop. When the user opens a letter template in the Create Correspondence user interface, the content is assembled in the order you defined here.
@@ -448,7 +448,7 @@ If the finished letter created in the Create Correspondence user interface is us
 
 #### Date formats in Designer and Asset Configuration Manager {#date-formats-in-designer-and-asset-configuration-manager}
 
-While designing a layout in Designer, ensure that the formats for date fields match the date formats specified in Data Display Formats in [Correspondence Management Configuration Properties](/help/forms/using/cm-configuration-properties.md). For more information, see “Formatting field values and using patterns” in Designer Help.
+While designing a layout in Designer, ensure that the formats for date fields match the date formats specified in Data Display Formats in [Correspondence Management Configuration Properties](/help/forms/using/cm-configuration-properties.md). For more information, see "Formatting field values and using patterns" in Designer Help.
 
 #### Capturing date ranges {#capturing-date-ranges}
 

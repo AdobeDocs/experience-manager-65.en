@@ -266,7 +266,7 @@ MongoDB runs on a number of operating systems including a wide variety of Linux 
 
 #### Windows {#windows}
 
-* Consider disabling NTFS “last access time” updates. This is analogous to disabling atime on Unix-like systems.
+* Consider disabling NTFS "last access time" updates. This is analogous to disabling atime on Unix-like systems.
 
 ### WiredTiger {#wiredtiger}
 
@@ -276,7 +276,7 @@ As of MongoDB 3.2 the default storage engine for MongoDB is the WiredTiger stora
 
 WiredTiger uses document-level concurrency control for write operations. As a result, multiple clients can modify different documents of a collection at the same time.
 
-For most read and write operations, WiredTiger uses optimistic concurrency control. WiredTiger uses only intent locks at the global, database and collection levels. When the storage engine detects conflicts between two operations, one will incur a write conflict causing MongoDB to transparently retry that operation.Some global operations, typically short lived operations involving multiple databases, still require a global “instance-wide” lock.
+For most read and write operations, WiredTiger uses optimistic concurrency control. WiredTiger uses only intent locks at the global, database and collection levels. When the storage engine detects conflicts between two operations, one will incur a write conflict causing MongoDB to transparently retry that operation.Some global operations, typically short lived operations involving multiple databases, still require a global "instance-wide" lock.
 
 Some other operations, such as dropping a collection, still require an exclusive database lock.
 

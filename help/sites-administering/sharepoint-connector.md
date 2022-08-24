@@ -200,8 +200,8 @@ The AEM JCR Connector for Microsoft SharePoint 2010 and Microsoft SharePoint 201
 Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 1. Click OSGI -&gt; Configuration
-1. Search “Day JCR Connector for Microsoft Sharepoint”
-1. Click “Edit the configuration values”
+1. Search "Day JCR Connector for Microsoft Sharepoint"
+1. Click "Edit the configuration values"
 1. Set the value of ‘Sharepoint Connection Factory’ as ‘com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory’
 1. Click **Save**.
 

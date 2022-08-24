@@ -82,7 +82,7 @@ public Boolean assign(User user);
 
 ### Create a just-in-time-enabled domain {#create-a-just-in-time-enabled-domain}
 
-1. Write a DSC implementing the APIs in the “APIs for just-in-time provisioning” section.
+1. Write a DSC implementing the APIs in the "APIs for just-in-time provisioning" section.
 1. Deploy the DSC to the forms server.
 1. Create a just-in-time-enabled domain:
 

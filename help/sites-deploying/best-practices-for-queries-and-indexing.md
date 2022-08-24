@@ -115,7 +115,7 @@ You can also extract the indexes in your system in JSON format. In order to do t
 
 **During Development**
 
-Set low thresholds for `oak.queryLimitInMemory` (eg. 10000) and oak. `queryLimitReads` (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying “The query read more than x nodes..."
+Set low thresholds for `oak.queryLimitInMemory` (eg. 10000) and oak. `queryLimitReads` (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying "The query read more than x nodes..."
 
 This helps avoiding resource intensive queries (ie. not backed by any index or backed by less covering index). For example, a query that reads 1 million nodes would lead to increased I/O, and negatively impact the overall application performance. Any query that fails due to above limits should be analyzed and optimized.
 

@@ -47,7 +47,7 @@ On a Windows Operating system, the administrator user accounts that are used for
 If you are running OpenOffice, Microsoft Word, or Microsoft PowerPoint on Windows Server 2008, disable UAC for each user added.
 
 1. Click Control Panel &gt; User Accounts &gt; Turn User Account Control on or off.
-1. Deselect the box “Use User Account Control (UAC) to help protect your computer” and click OK.
+1. Deselect the box "Use User Account Control (UAC) to help protect your computer" and click OK.
 1. Restart the computer for settings to take effect.
 
 ### Additional configuration required for OpenOffice on Linux or Solaris {#additional-configuration-required-for-openoffice-on-linux-or-solaris}

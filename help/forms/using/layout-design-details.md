@@ -26,7 +26,7 @@ An XDP is designed in Adobe Forms Designer. This article provides details about 
 
 ## Creating a layout for letters or for Interactive Communications' print channel {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-A layout defines the graphical layout of a letter/print channel of an Interactive Communication. The layout can contain typical form fields such as “Address” and "Reference Number". It also contains empty subforms that denote target areas. Create the layout in form designer and when completed the Application Specialist uploads it to AEM server. From there, you can select the layout when creating a correspondence template or print channel of an Interactive Communication.
+A layout defines the graphical layout of a letter/print channel of an Interactive Communication. The layout can contain typical form fields such as "Address" and "Reference Number". It also contains empty subforms that denote target areas. Create the layout in form designer and when completed the Application Specialist uploads it to AEM server. From there, you can select the layout when creating a correspondence template or print channel of an Interactive Communication.
 
 ![Designer: create a layout](assets/claimsubrogationlayout.png)
 

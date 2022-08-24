@@ -17,7 +17,7 @@ You can use metadata in an email template to dynamically populate information in
 
 ![Default email template](assets/default_email_template_metadata_new.png)
 
-Metadata is stored in key-value pairs. You can specify the key in the email template and the key is replaced with a value at the runtime (when an email notification is generated). For example, in the below code sample, "$ {workitem_title} " is a key. It is replaced with value “Loan-Request” at the runtime.
+Metadata is stored in key-value pairs. You can specify the key in the email template and the key is replaced with a value at the runtime (when an email notification is generated). For example, in the below code sample, "$ {workitem_title} " is a key. It is replaced with value "Loan-Request" at the runtime.
 
 ```html
 subject=Task Assigned - ${workitem_title}

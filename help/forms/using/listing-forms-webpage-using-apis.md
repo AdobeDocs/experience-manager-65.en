@@ -135,7 +135,7 @@ statements: [{"name":"name","value":"*Claim.xdp","operator":"CONTAINS"},
                 {"name":"status","value":"false","operator":"EQ"},
                 {"name":"lastModifiedDate","value":"01/09/2013","operator":"GTEQ"},
                 {"name":"lastModifiedDate","value":"01/18/2013","operator":"LTEQ"}]
-orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
+orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 ```
 
 ## Sample response {#sample-response}

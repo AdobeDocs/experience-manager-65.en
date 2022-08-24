@@ -31,9 +31,9 @@ For example, consider a scenario where you are logged in to administration conso
 * any desktop client making an HTTP request on a AEM forms SOAP or REST endpoint
 * when a new browser window is opened and the URL for any AEM forms web application login page is entered
 
-Allow a null referer on SOAP and REST endpoints. Also allow a null referer on all URI login pages such as /adminui and /contentspace and their corresponding mapped resources. For example, the mapped servlet for /contentspace is /contentspace/faces/jsp/login.jsp, which should be a null referer exception. This exception is required only if you enable GET filtering for your web application. Your applications can specify whether to allow null referers. See “Protecting from Cross-Site Request Forgery attacks” in [Hardening and Security for AEM forms](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+Allow a null referer on SOAP and REST endpoints. Also allow a null referer on all URI login pages such as /adminui and /contentspace and their corresponding mapped resources. For example, the mapped servlet for /contentspace is /contentspace/faces/jsp/login.jsp, which should be a null referer exception. This exception is required only if you enable GET filtering for your web application. Your applications can specify whether to allow null referers. See "Protecting from Cross-Site Request Forgery attacks" in [Hardening and Security for AEM forms](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
-**Allowed Referer Exception:** Allowed Referer Exception is a sublist of the list of allowed referers, from which requests are blocked. Allowed Refer Exceptions are particular to a web application. If a subset of the Allowed Referers should not be allowed to invoke a particular web application, you can blocklist the referers via Allowed Referer Exceptions. Allowed Referer Exceptions are specified in the web.xml file for your application. (See “Protecting from Cross-Site Request Forgery attacks” in Hardening and Security for AEM forms on Help and Tutorials page.)
+**Allowed Referer Exception:** Allowed Referer Exception is a sublist of the list of allowed referers, from which requests are blocked. Allowed Refer Exceptions are particular to a web application. If a subset of the Allowed Referers should not be allowed to invoke a particular web application, you can blocklist the referers via Allowed Referer Exceptions. Allowed Referer Exceptions are specified in the web.xml file for your application. (See "Protecting from Cross-Site Request Forgery attacks" in Hardening and Security for AEM forms on Help and Tutorials page.)
 
 ## How allowed referers work {#how-allowed-referers-work}
 
@@ -42,7 +42,7 @@ AEM forms provides referer filtering, which can help prevent CSRF attacks. Here 
 1. The forms server checks the HTTP method used for invocation:
 
     * If it is POST, the forms server performs the referer header check.
-    * If it is GET, the forms server bypasses the referer check, unless CSRF_CHECK_GETS is set to true, in which case it performs the referer header check. CSRF_CHECK_GETS is specified in the web.xml file for your application. (See “Protecting from Cross-Site Request Forgery attacks” in [Hardening and Security guide](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
+    * If it is GET, the forms server bypasses the referer check, unless CSRF_CHECK_GETS is set to true, in which case it performs the referer header check. CSRF_CHECK_GETS is specified in the web.xml file for your application. (See "Protecting from Cross-Site Request Forgery attacks" in [Hardening and Security guide](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
 1. The forms server checks whether the requested URI is allowlisted:
 

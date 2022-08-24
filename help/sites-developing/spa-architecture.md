@@ -167,7 +167,7 @@ These code blocks illustrate how your React and Angular components need nothing 
 
 ![screen_shot_2018-12-11at144019](assets/screen_shot_2018-12-11at144019.png)
 
-The `MapTo` helper is the “glue” that allows the back-end and the front-end components to be matched together:
+The `MapTo` helper is the "glue" that allows the back-end and the front-end components to be matched together:
 
 * It tells the JS container (or JS paragraph system) what JS component is responsible for rendering each of the components that are present in the JSON.
 * It adds an HTML data attribute to the HTML that the JS component renders, so that the SPA Editor knows what dialog to display to the author when editing the component.

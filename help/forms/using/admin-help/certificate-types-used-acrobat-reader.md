@@ -20,7 +20,7 @@ The Certificate Viewer provides the following information about the certificate:
 * Validity period
 * Acrobat Reader DC extensions usage rights
 
-## Certificate “friendly” name {#certificate-friendly-name}
+## Certificate "friendly" name {#certificate-friendly-name}
 
 The "friendly" name of a Acrobat Reader DC extensions certificate is a string that describes the properties of the certificate, as in the following example:
 

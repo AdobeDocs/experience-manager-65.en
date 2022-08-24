@@ -89,7 +89,7 @@ Do the following to register an OAuth client on Active Directory Federation Serv
 
 1. Run the following command:
 
-   `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
+   `Add-AdfsClient -ClientId "<Client-ID>" -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
    Where:
 
@@ -99,7 +99,7 @@ Do the following to register an OAuth client on Active Directory Federation Serv
 
 1. Run the following command to grant access on AD FS machine:
 
-   `Grant-AdfsApplicationPermission -ClientRoleIdentifier “<Client-ID>” -ServerRoleIdentifier <resource> -ScopeNames openid`
+   `Grant-AdfsApplicationPermission -ClientRoleIdentifier "<Client-ID>" -ServerRoleIdentifier <resource> -ScopeNames openid`
 
    Where:
 

@@ -251,7 +251,7 @@ For instructions about accessing this setting, see [Create or edit file type set
 
    >[!NOTE]
    >
-   >*If you want to unembed some fonts whose subsets are embedded in the document, prefix the font name with the + sign. For example, “+Helvetica”.*
+   >*If you want to unembed some fonts whose subsets are embedded in the document, prefix the font name with the + sign. For example, "+Helvetica".*
 
 1. If you want to embed only the in-use subsets of the embedded fonts, select **Subset all embedded fonts**.
 
@@ -515,7 +515,7 @@ These options determine how Microsoft Word files are converted. For instructions
 
 **styleName1=level1[,styleName2=level2...]**
 
-If a Microsoft Word style name includes a comma (,) or equal sign (=), precede the special characters with the escape character (“\_). For example, specify a style named “Heading, 1" as Heading\, 1.
+If a Microsoft Word style name includes a comma (,) or equal sign (=), precede the special characters with the escape character ("\_). For example, specify a style named "Heading, 1" as Heading\, 1.
 
 **Acrobat PDFMaker Encoding:** Specifies the encoding type of the input plain-text files to the Acrobat PDFMaker. For example, if you are using a UTF-8 encoded file, select UTF-8 for best results.
 
@@ -619,6 +619,6 @@ You cannot change the settings for other applications through administration con
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Support for these file types may need to be customized. For more information, see “Adding Support for Additional Native File Formats” in [Programming with AEM forms](https://www.adobe.com/go/learn_aemforms_programming_62).
+Support for these file types may need to be customized. For more information, see "Adding Support for Additional Native File Formats" in [Programming with AEM forms](https://www.adobe.com/go/learn_aemforms_programming_62).
 
 For help on configuring a PDFG network printer, see [Setting up a PDFG network printer (Windows only)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).

@@ -289,7 +289,7 @@ Leaving them blank tells Experience Manager that this image preset is responsive
 
 ### Image Preset options {#image-preset-options}
 
-When you create or edit image presets, you have the options described in this section. In addition, Adobe recommends these “best practice” option choices to start:
+When you create or edit image presets, you have the options described in this section. In addition, Adobe recommends these "best practice" option choices to start:
 
 * **[!UICONTROL Format]** (**[!UICONTROL Basic]** tab) - Select **[!UICONTROL JPEG]** or another format that meets your requirements. All web browsers support the JPEG image format; it offers a good balance between small files sizes and image quality. However, JPEG format images use a lossy compression scheme that can introduce unwanted image artifacts if the compression setting is too low. For that reason, Adobe recommends setting the compression quality to 75. This setting offers a good balance between image quality and small file size.
 
@@ -389,7 +389,7 @@ When you create or edit image presets, you have the options described in this se
     <ul>
      <li>Select <strong>None</strong> if you want to disable sharpening.</li>
      <li>Select <strong>Sharpen</strong> if you want to apply a basic sharpening filter to the image after all scaling takes place. Sharpening can help compensate for blurriness that can result when you display an image at a different size. </li>
-     <li>Select<strong> Unsharp mask</strong> if you want to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Photoshop’s “Unsharp Mask” filter.</li>
+     <li>Select<strong> Unsharp mask</strong> if you want to fine-tune a sharpening filter effect on the final downsampled image. You can control intensity of effect, radius of the effect (measured in pixels), and a threshold of contrast that is ignored. This effect uses the same options as Photoshop’s "Unsharp Mask" filter.</li>
     </ul> <p>In <strong>Unsharp Mask</strong>, you have the following options:</p>
     <ul>
      <li><strong>Amount</strong> - Controls the amount of contrast applied to edge pixels. The default real number value is 1.0. For high-resolution images, you can increase it to as high as 5.0. Think of Amount as a measure of filter intensity.</li>

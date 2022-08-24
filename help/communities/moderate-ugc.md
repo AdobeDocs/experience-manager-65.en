@@ -208,7 +208,7 @@ Spam detection is an auto-moderation functionality, which filters out undesireab
 
 However, to customize or extend the default spam words create a set of words in the /apps directory following the structure of the default spam words by means of [overlay](/help/communities/overlay-comments.md).
 
-A user generated post (across all the content types, for example blogs, forums, and comments) containing spam word(s) is marked with the text “This post was classified as spam” above the post.
+A user generated post (across all the content types, for example blogs, forums, and comments) containing spam word(s) is marked with the text "This post was classified as spam" above the post.
 
 Moderator can see such a post and mark the same to allow or deny from appearing on the site. Moderation actions on these posts can be performed either in-context or through bulk moderation UI.
 

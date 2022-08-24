@@ -655,7 +655,7 @@ The following 2 OSGi components have been introduced to defne authentication req
 
 The authentication related parts of the CUG rewrite only come with a single configuration option associated with the Adobe Granite Authentication Requirement and Login Path Handler:
 
-**“Authentication Requirement and Login Path Handler”**
+**"Authentication Requirement and Login Path Handler"**
 
 <table>
  <tbody>
@@ -676,11 +676,11 @@ The authentication related parts of the CUG rewrite only come with a single conf
 
 ## Default Configuration since AEM 6.3 {#default-configuration-since-aem}
 
-New installations of AEM will by default use the new implementations both for the authorization and authentication related parts of the CUG feature. The old implementation “Adobe Granite Closed User Group (CUG) Support” has been deprecated and will by default be disabled in all AEM installations. The new implementations will instead be enabled as follows:
+New installations of AEM will by default use the new implementations both for the authorization and authentication related parts of the CUG feature. The old implementation "Adobe Granite Closed User Group (CUG) Support" has been deprecated and will by default be disabled in all AEM installations. The new implementations will instead be enabled as follows:
 
 ### Author Instances {#author-instances}
 
-| **“Apache Jackrabbit Oak CUG Configuration”** |**Explanation** |
+| **"Apache Jackrabbit Oak CUG Configuration"** |**Explanation** |
 |---|---|
 | Supported Paths `/content` | Access control management for CUGpolicies is enabled. |
 | CUG Evaluation Enabled FALSE | Permission evaluation is disabled. CUG policies take no effect. |
@@ -692,17 +692,17 @@ New installations of AEM will by default use the new implementations both for th
 
 ### Publish Instances {#publish-instances}
 
-| **“Apache Jackrabbit Oak CUG Configuration”** |**Explanation** |
+| **"Apache Jackrabbit Oak CUG Configuration"** |**Explanation** |
 |---|---|
 | Supported Paths `/content` | Access control management for CUG policies is enabled below the configured paths.  |
 | CUG Evaluation Enabled TRUE | Permission evaluation is enabled below the configured paths. CUG policies take effect upon `Session.save()`. |
 | Ranking |200 | See Oak documentation. |
 
-| **“Apache Jackrabbit Oak CUG Exclude List”** |**Explanation** |
+| **"Apache Jackrabbit Oak CUG Exclude List"** |**Explanation** |
 |---|---|
 | Principal Names administrators | Excludes administrators principal from CUG evaluation. |
 
-| **“Adobe Granite Authentication Requirement and Login Path Handler”** |**Explanation** |
+| **"Adobe Granite Authentication Requirement and Login Path Handler"** |**Explanation** |
 |---|---|
 | Supported Paths  `/content` | Authentication requirements as defined in the repository by means of the `granite:AuthenticationRequired` mixin type take effect below `/content` upon `Session.save()`. Sling Authenticator gets updated. Adding the mixin type outside of the supported paths is ignored. |
 
@@ -755,7 +755,7 @@ This has been adjusted to make the reference to `CugSupport` optional in order t
 
 >[!NOTE]
 >
->By default, the **Adobe Granite HTTP Header Authentication Handler** is only configured in publish run mode with the “Disable Login Page” ( `auth.http.nologin`) option enabled.
+>By default, the **Adobe Granite HTTP Header Authentication Handler** is only configured in publish run mode with the "Disable Login Page" ( `auth.http.nologin`) option enabled.
 
 ### AEM LiveCopy {#aem-livecopy}
 
