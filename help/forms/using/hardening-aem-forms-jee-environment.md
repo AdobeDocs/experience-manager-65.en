@@ -102,7 +102,7 @@ The following table describes some potential approaches to minimizing security v
  </tbody> 
 </table>
 
-For additional security information for your operating system, see [“Operating system security information”](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+For additional security information for your operating system, see ["Operating system security information"](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Installation {#installation}
 
@@ -402,7 +402,7 @@ As an added precaution, you should consider using database vendor-specific tools
 * Trust Store HSM PIN encryption key
 * Local User Password Hashes
 
-For information about vendor-specific tools, see [“Database security information”](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+For information about vendor-specific tools, see ["Database security information"](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP security {#ldap-security}
 
@@ -948,7 +948,7 @@ For information about WebSphere ports that AEM Forms on JEE requires, go to Port
 
 Referring to the physical architecture that is described in the section [AEM Forms on JEE physical architecture](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), you should configure SSL for all of the connections that you plan to use. Specifically, all SOAP connections must be conducted over SSL to prevent exposure of user credentials on a network.
 
-For instructions on how to configure SSL on JBoss, WebLogic, and WebSphere, see “Configuring SSL” in the [administration help](https://www.adobe.com/go/learn_aemforms_admin_64).
+For instructions on how to configure SSL on JBoss, WebLogic, and WebSphere, see "Configuring SSL" in the [administration help](https://www.adobe.com/go/learn_aemforms_admin_64).
 
 For instructions on how to import certificates to JVM (Java Virtual Machine) configured for an AEM Forms server, see Mutual Authentication section in [AEM Forms Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65).
 

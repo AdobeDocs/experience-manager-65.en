@@ -91,13 +91,13 @@ The widget configuration is provided as a JSON object (a collection of key value
 ```
 *{*
 
-*“identifier1” : “customwidgetname”,
-“identifier2” : “customwidgetname2”,
+*"identifier1" : "customwidgetname",
+"identifier2" : "customwidgetname2",
 ..
 }*
 ```
 
-where “identifier” is a jQuery CSS selector that represents a particular field, a set of fields of a particular type, or all fields. The following lists the value of the identifier in different cases:
+where "identifier" is a jQuery CSS selector that represents a particular field, a set of fields of a particular type, or all fields. The following lists the value of the identifier in different cases:
 
 | Type of identifier |Identifier  |Description |
 |---|---|---|

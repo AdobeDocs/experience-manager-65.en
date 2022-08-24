@@ -320,10 +320,10 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
 * Logs out of the server by calling the `ROLogout` function in response to a Button click event
 
 ```java
- <?xml version=”1.0”?>
+ <?xml version="1.0"?>
  <!-- security/SecurityConstraintCustom.mxml -->
- <mx:Application xmlns:mx=”https://www.adobe.com/2006/mxml” width=”100%”
-     height=”100%” creationComplete=”creationCompleteHandler();”>
+ <mx:Application xmlns:mx="https://www.adobe.com/2006/mxml" width="100%"
+     height="100%" creationComplete="creationCompleteHandler();">
  
      <mx:Script>
          <![CDATA[
@@ -352,7 +352,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
              private function ROLogin():void {
                  // Make sure that the user is not already logged in.
                  if (cs.authenticated == false) {
-                     token = cs.login(“sampleuser”, “samplepassword”);
+                     token = cs.login(“sampleuser", “samplepassword");
                      // Add result and fault handlers.
                      token.addResponder(new AsyncResponder(LoginResultEvent,
                      LoginFaultEvent));
@@ -363,7 +363,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
              private function LoginResultEvent(event:ResultEvent,
                  token:Object=null):void  {
                      switch(event.result) {
-                         case “success”:
+                         case “success":
                              authenticatedCB.selected = true;
                              break;
                              default:
@@ -374,7 +374,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
                  private function LoginFaultEvent(event:FaultEvent,
                      token:Object=null):void {
                          switch(event.fault.faultCode) {
-                             case “Client.Authentication”:
+                             case “Client.Authentication":
                                  default:
                                  authenticatedCB.selected = false;
                                  Alert.show(“Login failure: “ + event.fault.faultString);
@@ -393,7 +393,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
                  private function LogoutResultEvent(event:ResultEvent,
                      token:Object=null):void {
                          switch (event.result) {
-                             case “success”:
+                             case “success":
                                  authenticatedCB.selected = false;
                                  break;
                                  default:
@@ -407,35 +407,35 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
                  }
                  // Handle message recevied by RemoteObject component.
                  private function resultHandler(event:ResultEvent):void {
-                     ta.text += “Server responded: “+ event.result + “\n”;
+                     ta.text += “Server responded: “+ event.result + “\n";
                  }
  
                  // Handle fault from RemoteObject component.
                  private function faultHandler(event:FaultEvent):void {
-                     ta.text += “Received fault: “ + event.fault + “\n”;
+                     ta.text += “Received fault: “ + event.fault + “\n";
                  }
              ]]>
      </mx:Script>
      <mx:HBox>
-         <mx:Label text=”Enter a text for the server to echo”/>
-         <mx:TextInput id=”ti” text=”Hello World!”/>
-         <mx:Button label=”Login”
-             click=”ROLogin();”/>
-         <mx:Button label=”Echo”
-             enabled=”{authenticatedCB.selected}”
-             click=”remoteObject.echo(ti.text);”/>
-         <mx:Button label=”Logout”
-             click=”ROLogout();”/>
-         <mx:CheckBox id=”authenticatedCB”
-             label=”Authenticated?”
-             enabled=”false”/>
+         <mx:Label text="Enter a text for the server to echo"/>
+         <mx:TextInput id="ti" text="Hello World!"/>
+         <mx:Button label="Login"
+             click="ROLogin();"/>
+         <mx:Button label="Echo"
+             enabled="{authenticatedCB.selected}"
+             click="remoteObject.echo(ti.text);"/>
+         <mx:Button label="Logout"
+             click="ROLogout();"/>
+         <mx:CheckBox id="authenticatedCB"
+             label="Authenticated?"
+             enabled="false"/>
      </mx:HBox>
-     <mx:TextArea id=”ta” width=”100%” height=”100%”/>
+     <mx:TextArea id="ta" width="100%" height="100%"/>
  
-     <mx:RemoteObject id=”remoteObject”
-         destination=”myDest”
-         result=”resultHandler(event);”
-         fault=”faultHandler(event);”/>
+     <mx:RemoteObject id="remoteObject"
+         destination="myDest"
+         result="resultHandler(event);"
+         fault="faultHandler(event);"/>
  </mx:Application>
 ```
 

@@ -29,7 +29,7 @@ You can view and edit the metadata (properties) for content fragments:
     * **Description**
     * **Tags**
       * [Tags](/help/sites-authoring/tags.md) are particularly powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for the purpose of finding content (by tags) and applying bulk operations. 
-      For example, you can tag relevant fragments as “Christmas launch” to allow browsing only these as a subset, or to copy them for use with another future launch in a new folder.
+      For example, you can tag relevant fragments as "Christmas launch" to allow browsing only these as a subset, or to copy them for use with another future launch in a new folder.
     * Created (display only)
 
     ![metadata](assets/cfm-metadata-02.png)

@@ -22,13 +22,13 @@ Here are the logical steps to make design importer recognize your custom compone
 
 1. Create a TagHandler
 
-    * A tag handler is a POJO that handles HTML tags of a specific kind. The “kind” of HTML tags your TagHandler can handle is defined via the TagHandlerFactory’s OSGi property “tagpattern.name”. This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it’s up to you how you wish to take care of it.
+    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory’s OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it’s up to you how you wish to take care of it.
     * The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
 
 1. Create its corresponding TagHandlerFactory.
 
     * The tag handler factory is an OSGi component(singleton) that’s responsible for spawning instances of your tag handler.
-    * your tag handler factory must expose an OSGi property called “tagpattern.name” the value of which is matched against the input html tag.
+    * your tag handler factory must expose an OSGi property called "tagpattern.name" the value of which is matched against the input html tag.
     * If there are multiple tag handlers matching the input html tag, the one with a higher ranking is picked. The ranking itself is exposed as an OSGi property **service.ranking**.
     * The TagHandlerFactory is an OSGi component. Any references that you wish to provide to your TagHandler must be via this factory.
 
@@ -321,8 +321,8 @@ A lead form is a form that is used to collect a visitor/lead's profile informati
 * With the help of these components author can design a standalone lead form, these fields corresponds to lead form fields. In standalone or imported zip application user can add extra fields using cq:form or cta lead form fields, name and design them according to the requirements.
 * Map lead form fields using specific pre-defined names of CTA lead form, for example - firstName for first-name in lead form, and so on.
 * Fields that are not mapped to lead form will map to cq:form components - text, radio, checkbox, dropdown, hidden, password.
-* User can provide the title using “label” tag and can provide styling by using style attribute “class” (only available for CTA lead form components).
-* Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of “Start of lead form”
+* User can provide the title using "label" tag and can provide styling by using style attribute "class" (only available for CTA lead form components).
+* Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of "Start of lead form"
 
   &lt;input type="hidden" name="redirectUrl" value="/content/we-retail/en/user/register/thank_you"/&gt;
 
@@ -466,7 +466,7 @@ Use of CSS selectors similar to following ones is not recommended for use with e
 This is due to the fact that additional html elements like &lt;div&gt; tag are added to the generated Html after the import.
 
 * Scripts relying on the structure similar to above also are not recommended for use with elements marked for conversion to AEM components.
-* Use of styles on the markup tags for component conversion like &lt;div data-cq-component=”&ast;”&gt; is not recommended.
+* Use of styles on the markup tags for component conversion like &lt;div data-cq-component="&ast;"&gt; is not recommended.
 * The design layout should follow best practices from HTML5 Boilerplate. Read more on: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuring OSGI modules {#configuring-osgi-modules}

@@ -117,7 +117,7 @@ End users can authenticate to AEM Forms through Workbench, AEM Forms web applica
 1. Click **Export** to produce a config.xml file with the existing AEM Forms settings.
 1. Open the XML file in an editor and locate the following entry:
 
-   `<entry key=”assertionValidityInMinutes” value=”120”/>`
+   `<entry key="assertionValidityInMinutes" value="120"/>`
 
 1. Change the value to any number greater than 5 (in minutes) and save the file. 
 1. In administration console, navigate to the Import And Export Configuration Files page. 

@@ -825,7 +825,7 @@ Authenticate a user using the Authentication Manager Service API (web service):
 1. Include project files.
 
     * Create a Microsoft .NET client assembly that consumes the Authentication Manager WSDL. (See [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-    * Reference the Microsoft .NET client assembly. (See “Referencing the .NET client assembly” in [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+    * Reference the Microsoft .NET client assembly. (See “Referencing the .NET client assembly" in [Invoking AEM Forms using Base64 encoding](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 1. Create an AuthenticationManagerService client.
 

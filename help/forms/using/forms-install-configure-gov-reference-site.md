@@ -94,13 +94,13 @@ This section contains information on installing the demo package.
 
 1. Download and locate the **we-gov-forms.pkg.all-&lt;version&gt;.zip** file.
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/crx/packmgr/index.jsp*.
-1. Select the “Upload Package” option.
+1. Select the "Upload Package" option.
 
    ![Upload Package Option](assets/upload_package.jpg)
 
 1. Use the file browser to navigate to and select the downloaded ZIP file.
-1. Click “Open” to upload.
-1. Once uploaded, select the “Install” option to install the package.
+1. Click "Open" to upload.
+1. Once uploaded, select the "Install" option to install the package.
 
    ![Install WeGov Forms package](assets/wegov_forms_package-1.jpg)
 
@@ -113,12 +113,12 @@ To install new package version, follow the steps defined in 4.1 and 4.2. Install
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/crx/packmgr/index.jsp*
 1. Locate the older **we-gov-forms.pkg.all-&lt;version&gt;.zip** file.
-1. Select the “More” option.
-1. From the dropdown, select the “Uninstall” option.
+1. Select the "More" option.
+1. From the dropdown, select the "Uninstall" option.
 
    ![Uninstall WeGov package](assets/uninstall_wegov_forms_package.jpg)
 
-1. On confirmation, select “Uninstall” again, and allow the uninstallation process to complete.
+1. On confirmation, select "Uninstall" again, and allow the uninstallation process to complete.
 
 ## Demo package configuration {#demo-package-configuration}
 
@@ -129,18 +129,18 @@ This section contains details and instructions on the post-deployment configurat
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/libs/granite/security/content/groupadmin.html*
 1. Login as an administrator in order to perform the tasks below.
 1. Scroll down to the end of the page to load all user groups.
-1. Search for “**workflow**”.
-1. Select the “**workflow-users**” group and click on “Properties”.
-1. Navigate to the “Members” tab.
-1. Type in **wegov** in “Select User or Group” field.
-1. Select from the dropdown “**We.Gov Forms Users**”.
+1. Search for "**workflow**".
+1. Select the "**workflow-users**" group and click on "Properties".
+1. Navigate to the "Members" tab.
+1. Type in **wegov** in "Select User or Group" field.
+1. Select from the dropdown "**We.Gov Forms Users**".
 
    ![Editing group settings for workflow users](assets/edit_group_settings.jpg)
 
-1. Click “Save & Close” in the menu bar.
-1. Repeat steps 2-7 by searching for “**analytics**”, selecting the “**Analytics Administrators**” group, and adding the “**We.Gov Forms Users**” group as a member.
-1. Repeat steps 2-7 by searching for “**forms users**”, selecting the “**forms-power-users**” group, and adding the “**We.Gov Forms Users**” group as a member.
-1. Repeat steps 2-7 by searching for “**forms-users**”, selecting the “**forms-users**” group, and this time adding the “**We.Gov Users**” group as a member.
+1. Click "Save & Close" in the menu bar.
+1. Repeat steps 2-7 by searching for "**analytics**", selecting the "**Analytics Administrators**" group, and adding the "**We.Gov Forms Users**" group as a member.
+1. Repeat steps 2-7 by searching for "**forms users**", selecting the "**forms-power-users**" group, and adding the "**We.Gov Forms Users**" group as a member.
+1. Repeat steps 2-7 by searching for "**forms-users**", selecting the "**forms-users**" group, and this time adding the "**We.Gov Users**" group as a member.
 
 ### Email server configuration {#email-server-configuration}
 
@@ -156,11 +156,11 @@ This section contains details and instructions on the post-deployment configurat
     1. **SMTP Server hostname**: e.g (smtp.gmail.com)
     1. **Server Port**: e.g (465) for gmail using SSL
     1. **SMTP User:** demo@ &lt;companyname&gt; .com
-    1. **“From” Address**: aemformsdemo@adobe.com
+    1. **"From" Address**: aemformsdemo@adobe.com
 
    ![Configure SMTP](assets/configure_smtp.jpg)
 
-1. Click “Save” to save the configuration.
+1. Click "Save" to save the configuration.
 
 ### (Optional) AEM SSL Configuration {#aemsslconfig}
 
@@ -177,9 +177,9 @@ This section contains details on configuring SSL on the AEM instance in order to
 
 1. SSL certificate and key details:
 
-    1. issued to “CN=localhost”
+    1. issued to "CN=localhost"
     1. 10yr validity
-    1. password value of “password”
+    1. password value of "password"
 1. Private key is the *localhostprivate.der*.
 1. Certificate is the *localhost.crt*.
 1. Click Next.
@@ -205,13 +205,13 @@ This section contains details and instructions on the Adobe Sign Cloud Configura
    >
    >The URL used to access the AEM server should match the URL configured in the Adobe Sign OAuth Redirect URI to avoid configuration issues (e.g. *https://&lt;aemserver&gt;:&lt;port&gt;/mnt/overlay/adobesign/cloudservices/adobesign/properties.html*)
 
-1. Select the “We.gov Adobe Sign” configuration.
-1. Click on “Properties”.
-1. Navigate to the “Settings” tab.
+1. Select the "We.gov Adobe Sign" configuration.
+1. Click on "Properties".
+1. Navigate to the "Settings" tab.
 1. Enter the oAuth URL e.g.: [https://secure.na1.echosign.com/public/oauth](https://secure.na1.echosign.com/public/oauth)
 1. Provide the configured Client Id and Client Secret from the configured Adobe Sign instance.
-1. Click “Connect to Adobe Sign”.
-1. After successful connection, click “Save & Close” to complete the integration.
+1. Click "Connect to Adobe Sign".
+1. After successful connection, click "Save & Close" to complete the integration.
 
 ### (Optional) MS Dynamics cloud configuration {#ms-dynamics-cloud-configuration}
 
@@ -230,12 +230,12 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 
     1. Ensure that you are accessing the server using the same redirect URL as configured in the MS Dynamics application registration.
 
-1. Select the “Microsoft Dynamics OData Cloud Service” configuration.
-1. Click “Properties”.
+1. Select the "Microsoft Dynamics OData Cloud Service" configuration.
+1. Click "Properties".
 
    ![Properties for Microsoft OData Cloud Service](assets/properties_odata_cloud_service.jpg)
 
-1. Navigate to the “Authentication Settings” tab.
+1. Navigate to the "Authentication Settings" tab.
 1. Enter the following details:
 
     1. **Service Root:** e.g `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
@@ -251,30 +251,30 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
         1. Authentication Header - **Authorization Bearer**
         1. Resource - e.g `https://msdynamicsserver.api.crm3.dynamics.com`
 
-    1. Click “Connect to OAuth”.
+    1. Click "Connect to OAuth".
 
-1. After successful authentication, click “Save & Close” to complete the integration.
+1. After successful authentication, click "Save & Close" to complete the integration.
 
 #### MS Dynamics cloud configuration settings {#dynamicsconfig}
 
 The steps detailed in this section are included to help you locate the Client Id, Client Secret and details from your MS Dynamics Cloud instance.
 
 1. Navigate to [https://portal.azure.com/](https://portal.azure.com/) and login.
-1. From the left hand menu select “All Services”.
-1. Search for or navigate to “App Registration”.
+1. From the left hand menu select "All Services".
+1. Search for or navigate to "App Registration".
 1. Create, or select an existing application registration.
 1. Copy the **Application ID** to be used as the OAuth **Client Id** in the AEM cloud configuration
-1. Click on “Settings” or “Manifest” to configure the **Reply URLs.**
+1. Click on "Settings" or "Manifest" to configure the **Reply URLs.**
 
     1. This URL must match the URL used to access your AEM server when configuring the OData service.
 
-1. From the Setting view, click “Keys” to view create new key (this is used as the Client Secret in AEM ).
+1. From the Setting view, click "Keys" to view create new key (this is used as the Client Secret in AEM ).
 
     1. Make sure to keep a copy of the key as you will not be able to view it later in Azure or AEM.
 
 1. To locate the Resource URL/Service Root URL, navigate to the MS Dynamics instance dashboard.
-1. In the top navigation bar, click “Sales” or your own instance type and “Select Settings”.
-1. Click on “Customizations” and “Developer Resources” near the bottom right.
+1. In the top navigation bar, click "Sales" or your own instance type and "Select Settings".
+1. Click on "Customizations" and "Developer Resources" near the bottom right.
 1. There you’ll find the Service Root URL: e.g
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
@@ -291,12 +291,12 @@ Once the cloud configuration is complete, you may want to test the form data mod
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments-fdm/we-gov*
 
-1. Select the “We.gov Microsoft Dynamics CRM FDM” and select “Properties”.
+1. Select the "We.gov Microsoft Dynamics CRM FDM" and select "Properties".
 
    ![Properties of Dynamics CRM FDM](assets/properties_dynamics_crm.jpg)
 
-1. Navigate to the “Update Source” tab.
-1. Ensure that the “Context-Aware Configuration” is set to “/conf/we-gov” and that the configured data source is “ms-dynamics-odata-cloud-service”.
+1. Navigate to the "Update Source" tab.
+1. Ensure that the "Context-Aware Configuration" is set to "/conf/we-gov" and that the configured data source is "ms-dynamics-odata-cloud-service".
 
    ![Configured data source](assets/configured_data_source.jpg)
 
@@ -355,16 +355,16 @@ This section contains details and instructions on the Adobe Analytics Cloud Conf
 This package comes pre-configured to connect to Adobe Analytics. The steps below are provided to allow this configuration to be updated.
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/libs/cq/core/content/tools/cloudservices.html*
-1. Locate the Adobe Analytics section, and select “Show Configurations” link.
-1. Select the “We.Gov Adobe Analytics (Analytics Configuration)” configuration.
+1. Locate the Adobe Analytics section, and select "Show Configurations" link.
+1. Select the "We.Gov Adobe Analytics (Analytics Configuration)" configuration.
 
    ![Analytics cloud service configuration](assets/analytics_config.jpg)
 
-1. Click on the “Edit” button to update the Adobe Analytics configuration (you will need to provide the Shared Secret). Click on “Connect to Analytics” to connect, and “OK” to complete.
+1. Click on the "Edit" button to update the Adobe Analytics configuration (you will need to provide the Shared Secret). Click on "Connect to Analytics" to connect, and "OK" to complete.
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
-1. From the same page, click “We.Gov Adobe Analytics Framework (Analytics Framework)” if you wish to update the framework configurations (see [Enable AEM authoring](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) to enable Authoring).
+1. From the same page, click "We.Gov Adobe Analytics Framework (Analytics Framework)" if you wish to update the framework configurations (see [Enable AEM authoring](../../forms/using/forms-install-configure-gov-reference-site.md#enableauthoring) to enable Authoring).
 
 #### Adobe Analytics Locating User Credentials {#analytics-locating-user-credentials}
 
@@ -418,8 +418,8 @@ Administrators can provide users with AEM analytics permissions by performing th
 >AEM Forms Analytics data is available while offline or without an Adobe Analytics cloud configuration if the `we-gov-forms.ui.analytics-<version>.zip` package is installed, but AEM Sites data requires an active cloud configuration.
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
-1. Select the “AEM Forms We.Gov Site” to view the site pages.
-1. Select one of the site page (e.g. Home), and choose “Analytics & Recommendations”.
+1. Select the "AEM Forms We.Gov Site" to view the site pages.
+1. Select one of the site page (e.g. Home), and choose "Analytics & Recommendations".
 
    ![Analysis and Recommendations](assets/analytics_recommendations.jpg)
 
@@ -427,16 +427,16 @@ Administrators can provide users with AEM analytics permissions by performing th
 
    ![AEM Sites analysis](assets/sites_analysis.jpg)
 
-1. Back on the page view page (accessed in step 3.), you can also view the page view information by changing the display setting to view items in the “List View”.
-1. Locate the “View” dropdown menu and select “List View”.
+1. Back on the page view page (accessed in step 3.), you can also view the page view information by changing the display setting to view items in the "List View".
+1. Locate the "View" dropdown menu and select "List View".
 
    ![List view](assets/list_view.jpg)
 
-1. From the same menu, select “View Setting” and select the columns you wish to display from the “Analytics” section.
+1. From the same menu, select "View Setting" and select the columns you wish to display from the "Analytics" section.
 
    ![Configure columns](assets/configure_columns.jpg)
 
-1. Click “Update” to make the new columns available.
+1. Click "Update" to make the new columns available.
 
    ![Display of new columns](assets/new_columns_display.jpg)
 
@@ -450,7 +450,7 @@ Administrators can provide users with AEM analytics permissions by performing th
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Select the “Enrollment Application For Health Benefits” adaptive form and select the “Analytics Report” option.
+1. Select the "Enrollment Application For Health Benefits" adaptive form and select the "Analytics Report" option.
 
    ![Analytics Report](assets/analytics_report.jpg)
 

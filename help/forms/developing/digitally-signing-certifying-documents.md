@@ -653,7 +653,7 @@ You can also specify whether or not to perform a revocation check that determine
 
 To perform revocation checking on a certificate, you can specify a URL to a certificate revocation list (CRL) server by using a `CRLOptionSpec` object. However, if you want to perform revocation checking and you do not specify a URL to a CRL server, then the Signature service obtains the URL from the certificate.
 
-Instead of using a CRL server, you can use an online certificate status protocol (OCSP) server when performing revocation checking. Typically when using an OCSP server as opposed to a CRL server, the revocation check is performed faster. (See “Online Certificate Status Protocol” at [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
+Instead of using a CRL server, you can use an online certificate status protocol (OCSP) server when performing revocation checking. Typically when using an OCSP server as opposed to a CRL server, the revocation check is performed faster. (See “Online Certificate Status Protocol" at [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
 You can set the CRL and OCSP server order that the Signature service uses using Adobe Applications and Services. For example, if the OCSP server is set first in Adobe Applications and Services, then the OCSP server is checked, followed by the CRL server. (See “Managing certificates and credentials using Trust Store“ in AAC Help).
 

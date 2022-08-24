@@ -158,7 +158,7 @@ To assemble a PDF document that contains new bookmarks, use the Assembler servic
 
 **Save the PDF document that contains bookmarks**
 
-You must extract the results from the returned map object and save the corresponding PDF document. (See “Extract the results” in [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+You must extract the results from the returned map object and save the corresponding PDF document. (See “Extract the results" in [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **See also**
 

@@ -146,7 +146,7 @@ Below is the procedure that needs to be followed in order to create a setup with
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Create a new Apache Sling Logging Logger for the **org.apache.jackrabbit.oak.segment** package. Set log level to “Debug” and point its log output to a separate logfile, like */logs/tarmk-coldstandby.log*. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
+1. Create a new Apache Sling Logging Logger for the **org.apache.jackrabbit.oak.segment** package. Set log level to "Debug" and point its log output to a separate logfile, like */logs/tarmk-coldstandby.log*. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
 1. Go to the location of the **standby** instance and start it by running the jar.
 1. Create the same logging configuration as for the primary. Then, stop the instance.
 1. Next, prepare the standby instance. You can do this by performing the same steps as for the primary instance:

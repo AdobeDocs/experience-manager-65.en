@@ -23,7 +23,7 @@ For example, you can insert the following special characters:
 
 * Currency symbols such as €,￥, and £
 * Mathematical symbols such as ∑, √, ∂, and ^
-* Punctuation symbols as ‟ and ”
+* Punctuation symbols as ‟ and "
 
 You can insert special characters in letters:
 
@@ -94,7 +94,7 @@ Use the following steps to add support for custom special characters:
    <td>Add a custom special character</td>
    <td>
     <ol>
-     <li>Add a child node under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” with mandatory properties.</li>
+     <li>Add a child node under "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" with mandatory properties.</li>
      <li>Click Save All</li>
      <li>Refresh the Text Editor\Create Correspondence UI to see the changes.</li>
     </ol> </td>
@@ -113,7 +113,7 @@ Use the following steps to add support for custom special characters:
    <td>Hide a special charcter</td>
    <td>
     <ol>
-     <li>Overlay the node to be hidden under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
+     <li>Overlay the node to be hidden under "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
      <li>Add sling:hideResource (Boolean) property to the node (under apps) to be hidden. </li>
      <li>Click Save All. </li>
      <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li>
@@ -123,7 +123,7 @@ Use the following steps to add support for custom special characters:
    <td>Hide multiple special characters</td>
    <td>
     <ol>
-     <li>Add the property "sling:hideChildren (String or String[])" to “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”. </li>
+     <li>Add the property "sling:hideChildren (String or String[])" to "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
      <li>Add node names (special characters to be hidden) as values for "sling:hideChildren" property. </li>
      <li>Click Save All. </li>
      <li>Refresh the Text Editor\Create Correspondence UI to see the changes.<br /> </li>
@@ -133,7 +133,7 @@ Use the following steps to add support for custom special characters:
    <td>Order special characters</td>
    <td>
     <ol>
-     <li>Add a child node under “/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters” with mandatory properties. </li>
+     <li>Add a child node under "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" with mandatory properties. </li>
      <li>Add "sling:orderBefore (String)" property to the newly-created child node. </li>
      <li>Add node name as value before which newly added special charcter is to be shown. </li>
      <li>Click Save All. </li>

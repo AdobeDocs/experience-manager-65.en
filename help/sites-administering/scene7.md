@@ -568,7 +568,7 @@ Specifically, you configure the accepted file format by MIME type in the OSGi (O
    >
    >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   >Be sure that your PSD file has “layers.” If it is strictly one image or an image with mask, it is processed as an image because there are no layers to process.
+   >Be sure that your PSD file has "layers." If it is strictly one image or an image with mask, it is processed as an image because there are no layers to process.
 
 1. In the upper-left corner of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 

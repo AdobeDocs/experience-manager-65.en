@@ -139,7 +139,7 @@ For more details on changes to AEM Screens - see the Release Notes in the [AEM S
 * Single-page App Maven Project Archetype 1.0.6+ for new projects, see [Github for release notes](https://github.com/adobe/aem-spa-project-archetype/releases).
 * HTL version 1.4, see [Github for release notes](https://github.com/adobe/htl-spec/releases/tag/1.4).
 
-  * “in” operator for strings, arrays and objects:
+  * "in" operator for strings, arrays and objects:
 
     ```html
     ${'a' in 'abc’}

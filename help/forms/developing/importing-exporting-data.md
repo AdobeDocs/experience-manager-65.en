@@ -175,7 +175,7 @@ Import form data by using the Form Data Integration API (Java):
 
 1. Save the PDF form as a PDF file.
 
-    * Create a `java.io.File` object and ensure that the file extension is “.PDF”.
+    * Create a `java.io.File` object and ensure that the file extension is “.PDF".
     * Invoke the `Document` object’s `copyToFile` method to copy the contents of the `Document` object to the file (ensure that you use the `Document` object that was returned by the `importData` method).
 
 **See also**

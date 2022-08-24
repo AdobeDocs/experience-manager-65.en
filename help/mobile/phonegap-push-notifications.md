@@ -213,8 +213,8 @@ With these properties (.content.xml files) :
 jcr:primaryType="nt:unstructured"
 excludeProperties="[appAPIAccessToken]"
 path="../../../.."
-targetRootDirectory=“www"
-type="notificationsconfig”/&gt;
+targetRootDirectory="www"
+type="notificationsconfig"/&gt;
 
 >[!NOTE]
 >
@@ -229,7 +229,7 @@ In CRXDE Lite:
 1. Navigate to */etc/designs/phonegap/&lt;app name&gt;/clientlibsall.*
 1. Double click on the embed section in the properties pane.
 1. In the dialog that appears, add a new client lib by clicking the + button.
-1. In the new text field, add “cq.mobile.push”, and click OK.
+1. In the new text field, add "cq.mobile.push", and click OK.
 1. Add one more called cq.mobile.push.amazon, and click OK.
 1. Save the changes.
 

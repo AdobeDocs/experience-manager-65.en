@@ -150,7 +150,7 @@ Assemble a non-interactive PDF document by using the Assembler Service API (Java
     * Create a `java.io.File` object and ensure that the file name extension is .pdf.
     * Invoke the `Document` object’s `copyToFile` method to copy the contents of the `Document` object to the file. Ensure that you use the `Document` object that the `invokeOneDocument` method returned.
 
-* “Quick Start (SOAP mode): Assembling a non-interactive PDF document using the Java API”
+* “Quick Start (SOAP mode): Assembling a non-interactive PDF document using the Java API"
 
 ## Assemble a non-interactive PDF document using the web service API {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
@@ -215,7 +215,7 @@ Assemble a non-interactive PDF document by using the Assembler Service API (web 
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
     * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
 
-* “Quick Start (MTOM): Assembling a non-interactive PDF document using the web service API”.
+* “Quick Start (MTOM): Assembling a non-interactive PDF document using the web service API".
 
 **See also**
 

@@ -115,7 +115,7 @@ For more information about using the keytool command, see the keytool.html file 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   The Custom Identity keystore file named ‘‘ads-credentials.jks” is created in the [appserverdomain]/adobe/[server name] directory.
+   The Custom Identity keystore file named ‘‘ads-credentials.jks" is created in the [appserverdomain]/adobe/[server name] directory.
 
 1. Extract the certificate from the ads-credentials keystore by entering the following command:
 
@@ -135,7 +135,7 @@ For more information about using the keytool command, see the keytool.html file 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   The certificate file named “ads-ca.cer” is created in the [appserverdomain]/adobe/[*server name*] directory.
+   The certificate file named "ads-ca.cer" is created in the [appserverdomain]/adobe/[*server name*] directory.
 
 1. Copy the ads-ca.cer file to any host computers that need secure communication with the application server.
 1. Insert the certificate into a new keystore file (the Custom Trust keystore) by entering the following command:

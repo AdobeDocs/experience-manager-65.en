@@ -849,6 +849,6 @@ The guidelines presented on this page can be summarized as follows:
 
     * Lucene indexes should be used for the custom indexes
 
-* **Customizing workflow can substantially improve the performance**, for example, removing the video step in the “Update Asset” workflow, disabling listeners which are not used, etc.
+* **Customizing workflow can substantially improve the performance**, for example, removing the video step in the "Update Asset" workflow, disabling listeners which are not used, etc.
 
 For more details, also read the [Recommended Deployments](/help/sites-deploying/recommended-deploys.md) page.

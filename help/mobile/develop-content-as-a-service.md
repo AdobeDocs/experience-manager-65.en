@@ -80,7 +80,7 @@ Currently these are spread around the Assets repository. The files the app needs
 
 #### Accessing CS Asset Entities {#accessing-cs-asset-entities}
 
-Let’s put aside the steps of how the page is made available through the API for now (it will be covered by the AEM UI description) and assume it has been done. Asset entities have been created and added to the “appImages” space. Additional folders were created under the space for organization purposes. So the asset entities are stored in the AEM JCR as:
+Let’s put aside the steps of how the page is made available through the API for now (it will be covered by the AEM UI description) and assume it has been done. Asset entities have been created and added to the "appImages" space. Additional folders were created under the space for organization purposes. So the asset entities are stored in the AEM JCR as:
 
 * /content/entities/appImages/logos/logo_light
 * /content/entities/appImages/logos/logo_dark

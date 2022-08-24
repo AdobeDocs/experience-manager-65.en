@@ -57,7 +57,7 @@ The way content should be modeled in a Java Content Repository requires an entir
 
 The REST approach is deeply ingrained in what we do. This means, among other things, avoiding stateful interactions and keeping in mind that URIs are definitive addresses for content and services.
 
-REST (REpresentational State Transfer) refers to the software architectural style on which the World Wide Web is based. It describes the key elements that make the Web work, and so provides a set of principles for how web-based software should be designed. When designing an API to be used over the Web, it therefore makes sense to adhere to these “best practices.”
+REST (REpresentational State Transfer) refers to the software architectural style on which the World Wide Web is based. It describes the key elements that make the Web work, and so provides a set of principles for how web-based software should be designed. When designing an API to be used over the Web, it therefore makes sense to adhere to these "best practices."
 
 Because REST provides the guiding philosophy behind so much of what we do, you should consider it essential to become well-versed in the tenets of RESTful design. A good place to start is with [Roy Fielding's dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 

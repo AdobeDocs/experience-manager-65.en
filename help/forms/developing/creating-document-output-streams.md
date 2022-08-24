@@ -1802,7 +1802,7 @@ After the Output service performs an operation, it returns XML data that specifi
 
 Create multiple PDF files by using the Output API (Java):
 
-1. Include project files”
+1. Include project files"
 
    Include client JAR files, such as adobe-output-client.jar, in your Java project’s class path. .
 
