@@ -49,7 +49,7 @@ The following table describes the steps in this diagram.
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>After the user fills the loan form and clicks the submit button, data is submitted to the <code>HandleData</code> Java Servlet. (See <i>“Loan form"</i>.)</p></td>
+   <td><p>After the user fills the loan form and clicks the submit button, data is submitted to the <code>HandleData</code> Java Servlet. (See <i>"Loan form"</i>.)</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>

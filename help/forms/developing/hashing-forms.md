@@ -89,7 +89,7 @@ Follow the steps below to try the second sample:
    1. The password for the man is `bob`
    1. The password for the woman is `alice`
 1. When you move the focus out of the password fields or press the Enter key, the hash of the password you have entered is generated automatically and is compared with the stored hash of the correct password in the background. The correct, hashed passwords are stored in the invisible text fields labeled `passwd_man_hashed` and `passwd_woman_hashed`. If you type in the correct password for the man, then the text fields labeled `Man 1` and `Man 2` are made accessible so you can type text in them. The same behavior applies for the woman’s fields.
-1. Optionally, you can click the button labeled “delete passwords", which will disable the text fields and change their border.
+1. Optionally, you can click the button labeled "delete passwords", which will disable the text fields and change their border.
 
 The code to compare the two hashed values and enable the text fields is straightforward:
 

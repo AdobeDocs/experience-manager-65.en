@@ -352,7 +352,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
              private function ROLogin():void {
                  // Make sure that the user is not already logged in.
                  if (cs.authenticated == false) {
-                     token = cs.login(“sampleuser", “samplepassword");
+                     token = cs.login("sampleuser", "samplepassword");
                      // Add result and fault handlers.
                      token.addResponder(new AsyncResponder(LoginResultEvent,
                      LoginFaultEvent));
@@ -363,7 +363,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
              private function LoginResultEvent(event:ResultEvent,
                  token:Object=null):void  {
                      switch(event.result) {
-                         case “success":
+                         case "success":
                              authenticatedCB.selected = true;
                              break;
                              default:
@@ -374,10 +374,10 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
                  private function LoginFaultEvent(event:FaultEvent,
                      token:Object=null):void {
                          switch(event.fault.faultCode) {
-                             case “Client.Authentication":
+                             case "Client.Authentication":
                                  default:
                                  authenticatedCB.selected = false;
-                                 Alert.show(“Login failure: “ + event.fault.faultString);
+                                 Alert.show("Login failure: " + event.fault.faultString);
                      }
                  }
  
@@ -393,7 +393,7 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
                  private function LogoutResultEvent(event:ResultEvent,
                      token:Object=null):void {
                          switch (event.result) {
-                             case “success":
+                             case "success":
                                  authenticatedCB.selected = false;
                                  break;
                                  default:
@@ -403,16 +403,16 @@ The following example uses the `ChannelSet.login` and `ChannelSet.logout` method
                  // Handle logout failure.
                  private function LogoutFaultEvent(event:FaultEvent,
                      token:Object=null):void {
-                         Alert.show(“Logout failure: “ + event.fault.faultString);
+                         Alert.show("Logout failure: " + event.fault.faultString);
                  }
                  // Handle message recevied by RemoteObject component.
                  private function resultHandler(event:ResultEvent):void {
-                     ta.text += “Server responded: “+ event.result + “\n";
+                     ta.text += "Server responded: "+ event.result + "\n";
                  }
  
                  // Handle fault from RemoteObject component.
                  private function faultHandler(event:FaultEvent):void {
-                     ta.text += “Received fault: “ + event.fault + “\n";
+                     ta.text += "Received fault: " + event.fault + "\n";
                  }
              ]]>
      </mx:Script>

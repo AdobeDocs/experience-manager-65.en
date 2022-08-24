@@ -24,7 +24,7 @@ When using REST requests, it is recommended that you do not invoke Forms service
 
 When you invoke a service using REST, you are prompted for a AEM forms user name and password. However, if you do not want to specify a user name and password, you can disable service security.
 
-To invoke a Forms service (a process becomes a service when the process is activated) using REST, configure a REST endpoint. (See “Managing Endpoints" in [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+To invoke a Forms service (a process becomes a service when the process is activated) using REST, configure a REST endpoint. (See "Managing Endpoints" in [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 After a REST endpoint is configured, you can invoke a Forms service by using an HTTP GET method or a POST method.
 
@@ -93,7 +93,7 @@ An AEM Forms service can be invoked asynchronously by substituting `services` wi
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
-This URL returns the identifier value (in “text/plain" format) of the job responsible for this invocation.
+This URL returns the identifier value (in "text/plain" format) of the job responsible for this invocation.
 
 The status of the asynchronous invocation can be retrieved by using an invocation URL with `services` substituted with `async_status`. The URL must contain a `job_id` parameter specifying the identifier value of the job associated with this invocation. For example:
 
@@ -101,7 +101,7 @@ The status of the asynchronous invocation can be retrieved by using an invocatio
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
-This URL returns an integer value (in “text/plain" format) encoding the job status according to the Job Manager’s specification (for example, 2 means running, 3 means completed, 4 means failed, and so on.)
+This URL returns an integer value (in "text/plain" format) encoding the job status according to the Job Manager’s specification (for example, 2 means running, 3 means completed, 4 means failed, and so on.)
 
 If the job is completed, the URL returns the same result as if the service was invoked synchronously.
 

@@ -1066,7 +1066,7 @@ After you create a web reference, the following two proxy data types are availab
 
 >[!NOTE]
 >
->Before creating a web reference to the Forms service, ensure that you reference Web Services Enhancements 2.0 in your project. (See “Installing Web Services Enhancements 2.0".)
+>Before creating a web reference to the Forms service, ensure that you reference Web Services Enhancements 2.0 in your project. (See "Installing Web Services Enhancements 2.0".)
 
 **Reference the WSE library**
 
