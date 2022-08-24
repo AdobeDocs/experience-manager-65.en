@@ -21,14 +21,11 @@ mini-toc-levels: 3
 
 [!DNL Experience Manager] 6.5.14.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-Some of the key features and improvements are the following:
+<!-- Some of the key features and improvements are the following:
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_
 
-* Added support for password reset for Dynamic Media Classic users within Experience Manager. (ASSETS-10298)
-
-
-
+* Added support for password reset for Dynamic Media Classic users within Experience Manager. (ASSETS-10298) -->
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -50,7 +47,7 @@ Some of the key features and improvements are the following:
 
 >[!NOTE]
 >
->Smart Content Services will not be available to new Experience Manager Assets On-Premise customers effective September  1, 2022. No impact to existing On-Premise and Adobe Managed Services customers, who already have this capability enabled.
+>Smart Content Services will not be available to new Experience Manager Assets On-Premise customers effective September  1, 2022. No impact to existing On-Premise and Adobe Managed Services customers who enabled this capability already.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
@@ -104,10 +101,10 @@ Some of the key features and improvements are the following:
 * Screen reader must announce the accessible name such as `Show description for Archive` or `Show description for mini shopping cart`. However, the current accessible name is announced as `Info Circle button show description` for _all_ the tooltip information buttons. (SITES-3104)
 * Improve undo for components that do not have inlineEditing or dropTarget feature in `cq:editConfig`. (NPR-38361)
 <!-- version 2 of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
-* The Style System drop-down might have been positioned on the top of the page instead of in-context of the component - for components that use `cq:editConfig` "afteredit: REFRESH_PAGE". This issue is now resolved. (NPR-38384)
+* The Style System drop-down may have been positioned at the top of the page instead of in-context of the component - for components that use `cq:editConfig` "afteredit: REFRESH_PAGE". (NPR-38384)
 <!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
 * Text component is misaligned when added to nested Layout Containers. (NPR-38193)
-* An empty style tab was displayed when there was no Style System config for a component; the tab is now hidden when no config is present. (NPR-38218)
+* An empty style tab was displayed when there was no Style System configuration for a component. The tab is now hidden when no configuration is present. (NPR-38218)
 <!-- version 2 of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
 * The property `useLegacyResponsiveBehaviour` works only when authenticated. (NPR-37996)
 * Upgrading jquery-ui to latest version resulted in the breaking of the Editor. (SITES-5647)
@@ -233,15 +230,19 @@ For information about installing the cumulative installer for [!DNL Experience M
 
 ### UberJar {#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.14.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.14/). <!-- UPDATE FOR EACH NEW RELEASE -->
+The UberJar for [!DNL Experience Manager] 6.5.13.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.13/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
-To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- UPDATE FOR EACH NEW RELEASE -->
+>[!NOTE]
+>
+>In Experience Manager 6.5.14.0, be aware that the UberJar version (6.5.13.0) remains the same as the previous release.
+
+To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 ```shell
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.14</version>
+     <version>6.5.13</version>
      <scope>provided</scope>
 </dependency>
 ```
