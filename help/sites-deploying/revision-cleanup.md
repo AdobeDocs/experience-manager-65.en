@@ -122,7 +122,7 @@ In some cases, alternating between the tail and full compaction modes delays the
 
 ### AEM 6.5 Upgrade Considerations {#aem-upgrade-considerations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td>Questions </td>
@@ -137,7 +137,7 @@ In some cases, alternating between the tail and full compaction modes delays the
 
 ### Migrating to Oak Segment Tar {#migrating-to-oak-segment-tar}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Questions</strong></td>
@@ -199,7 +199,7 @@ In some cases, alternating between the tail and full compaction modes delays the
 
 ### Running Online Revision Cleanup {#running-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Questions</strong></td>
@@ -362,7 +362,7 @@ In some cases, alternating between the tail and full compaction modes delays the
 
 ### Monitoring Online Revision Cleanup {#monitoring-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>What needs to be monitored during Online Revision Cleanup?</strong></td>
@@ -447,7 +447,7 @@ In some cases, alternating between the tail and full compaction modes delays the
 
 ### Troubleshooting Online Revision Cleanup {#troubleshooting-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>What is the worst that can happen if you do not run Online Revision Cleanup?</strong></td>
@@ -594,7 +594,7 @@ In addition to the methods presented above, you can also trigger the revision cl
 
 ### Offline Revision Cleanup Frequently Asked Questions {#offline-revision-cleanup-frequently-asked-questions}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>What are the factors that determine the duration of the Offline Revision Cleanup?</strong></td>
