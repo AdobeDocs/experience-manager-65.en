@@ -557,7 +557,7 @@ The error.log will be verbose if there are incidents during the online revision 
   <tr>
     <td>Cleanup</td>
     <td>TarMK GC #2: cleanup interrupted.</td>
-    <td>Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle.</td>
+    <td>Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space will most likely not be reclaimed to full extent. It will be reclaimed during next revision cleanup cycle.</td>
     <td>Investigate why the repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows.</td>
   </td>
   </tr>
