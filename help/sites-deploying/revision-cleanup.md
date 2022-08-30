@@ -501,7 +501,7 @@ In some cases, alternating between the tail and full compaction modes delays the
 
 The error.log will be verbose if there are incidents during the online revision cleanup process. The following matrix aims to explain the most common messages and to provide possible solutions:
 
-| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
+<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
 |   |  |  |  |
 | Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
@@ -509,7 +509,60 @@ The error.log will be verbose if there are incidents during the online revision 
 | Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
 |   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
 |   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
-| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Phase</th>
+    <th>Log Messages</th>
+    <th>Explanation</th>
+    <th>Next Steps</th>
+  </tr>  
+  <tr>
+    <td>Estimation</td>
+    <td>TarMK GC #2: estimation skipped because compaction is paused.</td>
+    <td>The estimation phase is skipped when compaction is disabled on the system by configuration.</td>
+    <td>Enable Online Revision Cleanup.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>N/A</td>
+    <td>TarMK GC #2: estimation interrupted: ${REASON}. Skipping compaction.</td>
+    <td>The estimation phase terminated prematurely. Some examples of events that could interrupt the estimation phase: not enough memory or disk space on the host system.</td>
+    <td>Depends on the given reason.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Compaction</td>
+    <td>TarMK GC #2: compaction paused.</td>
+    <td>As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed.</td>
+    <td>Enable online revision cleanup.</td>
+  </td>
+  </tr>
+   <tr>
+    <td>N/A</td>
+    <td>TarMK GC #2: compaction cancelled: ${REASON}.</td>
+    <td>The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard.</td>
+    <td>Depends on the given reason.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>N/A</td>
+    <td>TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles.</td>
+    <td>This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">following paragraph.</a></td>
+    <td>Read the following <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak documentation</a>, and the last question of the Running Online Revision Cleanup section.</a></td>
+  </td>
+  </tr>
+  <tr>
+    <td>Cleanup</td>
+    <td>TarMK GC #2: cleanup interrupted.</td>
+    <td>Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle.</td>
+    <td>Investigate why the repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows.</td>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 ## How to Run Offline Revision Cleanup {#how-to-run-offline-revision-cleanup}
 
