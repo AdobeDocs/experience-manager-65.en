@@ -187,7 +187,7 @@ Here are some out-of-the-box health checks that are helpful to monitor:
 In the process of monitoring, if you encounter issues, here are some troubleshooting tasks that you can perform to resolve common issues with [!DNL Experience Manager] deployments:
 
 * If using TarMK, run Tar compaction often. For more details, see [Maintain the repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Check `OutOfMemoryError` logs. For more information, see [Analyze memory problems](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Check `OutOfMemoryError` logs. For more information, see [Analyze Memory Problems](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 * Check the logs for any references to unindexed queries, tree traversals, or index traversals. These indicate unindexed queries or inadequately indexed queries. For For best practices on optimizing query and indexing performance, see [Best practices for queries and indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Use the workflow console to verify that your workflows perform as expected. If possible, condense multiple workflows into a single workflow.
