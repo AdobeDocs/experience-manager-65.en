@@ -543,7 +543,7 @@ The error.log will be verbose if there are incidents during the online revision 
    <tr>
     <td>N/A</td>
     <td>TarMK GC #2: compaction cancelled: ${REASON}.</td>
-    <td>The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard.</td>
+    <td>The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashboard.</td>
     <td>Depends on the given reason.</td>
   </td>
   </tr>
