@@ -47,7 +47,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 >[!NOTE]
 >
->Smart Content Services will not be available to new Experience Manager Assets On-Premise customers effective September  1, 2022. No impact to existing On-Premise and Adobe Managed Services customers who enabled this capability already.
+>Smart Content Services will not be available to new Experience Manager Assets On-Premise customers effective September  1, 2022. No impact to existing On-Premise and Adobe Managed Services customers who already have this capability enabled.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 

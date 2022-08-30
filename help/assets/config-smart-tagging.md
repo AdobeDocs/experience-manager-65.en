@@ -10,6 +10,12 @@ exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 
 Before you can start tagging your assets using Smart Content Services, integrate [!DNL Experience Manager Assets] with Adobe Developer Console to leverage smart service of [!DNL Adobe Sensei]. Once configured train the service using a few images and a tag.
 
+>[!NOTE]
+>
+>* Smart Content Services is no longer available to [!DNL Experience Manager Assets] On-Premise customers. Existing On-Premise customers, who already have this capability enabled, can continue using Smart Content Services.
+>* Smart Content Services is available for existing [!DNL Experience Manager Assets] Managed Services customers, who already have this capability enabled.
+>* New [!DNL Experience Manager Assets] Managed Services customers can follow the instructions mentioned in this article to set up Smart Content Services.
+
 Before you use the Smart Content Service, ensure the following:
 
 * [Integrate with Adobe Developer Console](#integrate-adobe-io).
@@ -45,7 +51,14 @@ A public certificate allows you to authenticate your profile on Adobe Developer 
 
 1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the following values:
 
-   **[!UICONTROL Service URL]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   **[!UICONTROL Service URL]**: `https://smartcontent.adobe.io/<name-of-your-closest-region>`
+
+   For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the name of your closest region. 
+
+   >[!NOTE]
+   >
+   >If you are provisioned on Smart Content Services by Adobe corporate provisioning team, use the following Service URL:
+   `https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
 
