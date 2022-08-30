@@ -58,7 +58,7 @@ A public certificate allows you to authenticate your profile on Adobe Developer 
    >[!NOTE]
    >
    >If you are provisioned on Smart Content Services by Adobe corporate provisioning team, use the following Service URL:
-   `https://mc.adobe.io/marketingcloud/smartcontent`
+     `https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
 
