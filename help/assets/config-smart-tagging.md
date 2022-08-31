@@ -51,13 +51,13 @@ A public certificate allows you to authenticate your profile on Adobe Developer 
 
 1. In the **[!UICONTROL AEM Smart Content Service]** dialog, use the following values:
 
-   **[!UICONTROL Service URL]**: `https://smartcontent.adobe.io/<name-of-your-closest-region>`
+   **[!UICONTROL Service URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the name of your closest region. 
+   For example, `https://smartcontent.adobe.io/apac`. You can specify `na`, `emea`, or, `apac` as the regions where your Experience Manager author instance is hosted. 
 
    >[!NOTE]
    >
-   >If you are provisioned on Smart Content Services by Adobe corporate provisioning team, use the following Service URL:
+   >If the Experience Manager Managed Service is provisioned before September 01, use the following Service URL:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Authorization Server]**: `https://ims-na1.adobelogin.com`
