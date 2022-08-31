@@ -171,7 +171,7 @@ The following `component.xml` file is used for the invite external users handler
 ### Defining the component XML file for the invite external users handler {#component-xml-invite-external-users-handler}
 
 ```as3
-<component xmlns="http://adobe.com/idp/dsc/component/document"> 
+<component xmlns="https://adobe.com/idp/dsc/component/document"> 
 <component-id>com.adobe.livecycle.samples.inviteexternalusers</component-id> 
 <version>1.0</version> 
 <bootstrap-class>com.adobe.livecycle.samples.inviteexternalusers.provider.BootstrapImpl</bootstrap-class> 

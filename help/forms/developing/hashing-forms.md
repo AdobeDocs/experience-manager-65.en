@@ -114,5 +114,5 @@ I encourage you to continue to explore the two sample PDF files.  You can genera
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
 * [Hash collision](https://en.wikipedia.org/wiki/Hash_collision)
 * [Rainbow table](https://en.wikipedia.org/wiki/Rainbow_table)
-* [JavaScript MD5 project home page](http://pajhome.org.uk/crypt/md5/)
+* [JavaScript MD5 project home page](https://pajhome.org.uk/crypt/md5/)
 * [jsSHA2 project home page](https://anmar.eu.org/projects/jssha2/)

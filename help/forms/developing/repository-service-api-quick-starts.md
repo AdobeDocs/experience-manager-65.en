@@ -56,7 +56,7 @@ The path to a resource located in the AEM Forms repository is:
 
 >[!NOTE]
 >
->Applications/FormsApplication does not exist by default. To follow along with the quick starts, create this application by using Workbench. For information about creating an application using Workbench, see [Getting started with process design](http://www.adobe.com/go/learn_aemforms_workbench_65).
+>Applications/FormsApplication does not exist by default. To follow along with the quick starts, create this application by using Workbench. For information about creating an application using Workbench, see [Getting started with process design](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ## Quick Start (SOAP mode): Creating a folder using the Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

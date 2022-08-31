@@ -19,7 +19,7 @@ HTML5 forms use standard HTML constructs allowing regular accessibility tools fo
 
 ## Accessibility standards {#accessibility-standards}
 
-HTML5 forms comply to section 508 for accessibility with known exceptions. See [VPAT for HTML5 forms](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf) for details.
+HTML5 forms comply to section 508 for accessibility with known exceptions. See [VPAT for HTML5 forms](https://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf) for details.
 
 ## Certified screen readers for HTML5 forms {#certified-screen-readers-for-html-forms}
 

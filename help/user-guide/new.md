@@ -16,7 +16,7 @@ Adobe Experience Manager (AEM) is a web-based client-server system for building,
 
 ## Where do I download AEM software? {#download}
 
-Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [Adobe Licensing Website](http://licensing.adobe.com/).
+Customers with a valid maintenance and support contract should have received a mail notification with a code and be able to download AEM from the [Adobe Licensing Website](https://licensing.adobe.com/).
 
 [More information about deploying the AEM software.](/help/sites-deploying/home.md)
 
@@ -53,4 +53,4 @@ You can find all the release notes for AEM here:
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [List of Removed and Deprecated Features in AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
-If you have questions you can reach out to our [AEM Community team](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) or ask us on Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).
+If you have questions you can reach out to our [AEM Community team](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) or ask us on Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).
