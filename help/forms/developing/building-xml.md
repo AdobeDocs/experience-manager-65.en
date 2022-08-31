@@ -49,7 +49,7 @@ The Java classes used to store XML variables are:
 
 * org.apache.xerces.dom.DocumentImpl
 
-DocumentImpl is a subclass of NodeImpl, so it can be supposed that any XML process variable is a NodeImpl derivation. You can find the documentation for NodeImpl [here](http://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
+DocumentImpl is a subclass of NodeImpl, so it can be supposed that any XML process variable is a NodeImpl derivation. You can find the documentation for NodeImpl [here](https://xerces.apache.org/xerces-j/apiDocs/org/apache/xerces/dom/NodeImpl.html).
 
 **A Sample XML Creation Using the Execute Script Service**
 

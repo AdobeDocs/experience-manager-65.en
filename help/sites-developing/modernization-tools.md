@@ -9,14 +9,14 @@ exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
 ---
 # AEM Modernization Tools {#modernization-tools}
 
-[AEM Modernization Tools](http://opensource.adobe.com/aem-modernize-tools/) allow for the easy conversion of:
+[AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/) allow for the easy conversion of:
 
 * [Static templates](page-templates-static.md) to [editable templates](page-templates-editable.md)
 * [Design configurations](page-templates-static.md) to [policies](page-templates-editable.md)
 * [Foundation Components](/help/sites-authoring/default-components-foundation.md) to [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Classic UI](website.md) to [Touch-Enabled UI](touch-ui-concepts.md)
 
-For further information about the usage of these tools, [see their documentation](http://opensource.adobe.com/aem-modernize-tools/).
+For further information about the usage of these tools, [see their documentation](https://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
