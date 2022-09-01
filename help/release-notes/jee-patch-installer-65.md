@@ -63,8 +63,8 @@ The AEM 6.5 Forms JEE patch installer includes all fixed issues for all componen
   
 1. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
 
-    * [Installing and Deploying AEM forms for JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-    * [Installing and Deploying AEM forms for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+    * [Installing and Deploying AEM forms for JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+    * [Installing and Deploying AEM forms for WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
 

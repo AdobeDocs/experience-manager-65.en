@@ -82,7 +82,7 @@ In addition to list of privileges and the Permission Type on a given path, this 
 
 >[!NOTE]
 >
->For more information on what each restriction means, please consult [the Jackrabbit Oak Documentation](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>For more information on what each restriction means, please consult [the Jackrabbit Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon. 
 

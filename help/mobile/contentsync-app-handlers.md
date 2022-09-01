@@ -135,14 +135,14 @@ The handler should be used on AEM App Shell ContentSync Config (node with pge-ty
 * ***path - String*** - Path to an app shell (node with pge-type=app-instance or a RT that extends /libs/mobileapps/core/components/instance)
 * ***targetRootDirectory - String*** - the prefix to add to paths as a target root for content update for this handler
 
-**notificationsconfig** Extracts notifications configurations required on device. The properties are extracted from the respective push service cloud  service configuration associated with the app.
+**notificationsconfig** Extracts notifications configurations required on device. The properties are extracted from the respective push service cloud service configuration associated with the app.
 
-Non-AEM properties in the cloud service's jcr:content node are extracted and added to the **pge-notifications-config.json** JSON  file for inclusion in the app content's www root.
+Non-AEM properties in the cloud service's jcr:content node are extracted and added to the **pge-notifications-config.json** JSON file for inclusion in the app content's www root.
 
-AEM properties are those that are name-spaced with "cq", "sling" or "jcr". Other properties  may be excluded using the "excludeProperties" property on the content-sync config node.
+AEM properties are those that are name-spaced with "cq", "sling" or "jcr". Other properties may be excluded using the "excludeProperties" property on the content-sync config node.
 
 * ***type - String*** - notificationsconfig
-* ***excludeProperties - String[]*** - properties  to be excluded
+* ***excludeProperties - String[]*** - properties to be excluded
 
 **contentsyncconfigcontent** Collects content from an existing ContentSync config.
 

@@ -1419,7 +1419,7 @@ public class ApplyDocumentTimeStamp {
 
                 //Create a TSPOptionSpec object to pass to in AddSignatureValidationOptionSpec
                 TSPOptionSpec tspSpec = new TSPOptionSpec();
-                tspSpec.setTspServerURL("http://tsp-server-url.com");
+                tspSpec.setTspServerURL("https://tsp-server-url.com");
                 tspSpec.setTspServerPassword("provide Timestamp server password");
                 tspSpec.setTspServerUsername("provide Timestamp server username");
                 addSigValidiationSpec.setTSPOptionSpec(tspSpec);

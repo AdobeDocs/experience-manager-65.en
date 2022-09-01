@@ -112,8 +112,9 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
 1. When the connection is successful, set the following. Headings with an asterisk (*) are required:
 
-    * **[!UICONTROL Company]** - the name of the Dynamic Media account. You have multiple Dynamic Media accounts. For example, you could have different subbrands, divisions, staging, or production environments.
-    <!-- UNHIDE FEBRUARY 24, 2022 See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md). -->
+    * **[!UICONTROL Company]** - the name of the Dynamic Media account. You can have one Dynamic Media account in Experience Manager. <!-- CQDOC-19579 and CQDOC-19612 -->
+  
+      See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md).
 
     * **[!UICONTROL Company Root Folder Path]**
 

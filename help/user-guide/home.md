@@ -42,8 +42,8 @@ Support delegates can get assisted support via:
 
 Join the conversation!
 
-* [AEM Sites Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
-* [AEM Communities Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
-* [AEM Forms Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
-* [AEM Assets Forum](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
-* [AEM Mobile Forum](http://forums.adobe.com/community/experiencemanagermobile)
+* [AEM Sites Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+* [AEM Communities Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
+* [AEM Forms Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
+* [AEM Assets Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
+* [AEM Mobile Forum](https://forums.adobe.com/community/experiencemanagermobile)
