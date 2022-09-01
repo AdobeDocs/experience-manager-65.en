@@ -16,10 +16,30 @@ exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 
 You can use the **Scribble Signature** component and **Signature Step** component to draw (Scribble) signature on an adaptive form. The Signature step component displays a PDF version of the adaptive form. You require a Document of Record option enabled or form template based adaptive forms to use the Signature step component.
 
-Both the components provide a window, as displayed below, to sign a form. You can also click the geolocation icon ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) to add geolocation to the signature.
+![Scribble sign dialog](/help/forms/using/assets/scribble-signature.png)
 
-![Scribble sign dialog](assets/scribble-signature.png)
+## Various Options available in Signature Window
 
+* **A:** Click the **Paint Brush** icon to draw your signature on canvas.
+* **B:** Click the **Clear** icon to clear the signature on canvas.
+* **C:** Click the **Geolocation** icon to add geolocation along with the signature.
+* **D:** Click the **Keyboard** icon to type your name on canvas. 
+
+ Once you tap the Done![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon in Scribble signature window, you cannot edit the signature. In case, if you want to edit the signature, you have to disregard the current signature and re-sign using the above Paint Brush/Keyboard option.
+
+You can tap the **Configure** ![configure](assets/configure.png) icon to set the aspect ratio of Scribble Signature canvas. 
+* When the aspect ratio of the Scribble Signature canvas is less than 1, the geolocation information is added at the bottom of the Scribble Signature canvas.
+
+* When the aspect ratio of the Scribble Signature canvas is more than 1, the geolocation information is added to the right-side of the Scribble Signature canvas. 
+ 
+ ![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+
+
+   >[!NOTE]
+   >
+   >Signatures are always saved in a PNG format.
+   >
+   
 ## Configure an adaptive form to use Scribble Signature {#configure-an-adaptive-form-to-use-scribble-signature}
 
 1. Create a Document of Record option enabled or form template based adaptive form. For step-by-step information, see [Creating an adaptive form](../../forms/using/creating-adaptive-form.md).
@@ -30,12 +50,14 @@ Both the components provide a window, as displayed below, to sign a form. You ca
    >[!NOTE]
    >
    >The Signature Step component takes up full width available for the form. It is recommended to not have any other component on the section containing the Signature Step component.
+   >
 
 1. In the Content browser, tap **Form Container**, and tap the **Configure** ![](/help/forms/using/assets/configure.png) icon. It opens properties browser and displays Adaptive Form container properties. Navigate to **Adaptive Form Container** &gt; **Electronic Signature** and deselect the **Enable Adobe Sign** option. Tap the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the changes.
 
    >[!NOTE]
    >
    >When you add a Signature Step component to an adaptive form, the Enable Adobe Sign option is selected automatically.
+   >
 
 1. Tap the **Configure** ![configure](assets/configure.png) icon. It opens properties browser and displays Signature step properties. Configure the following properties:
 
@@ -55,14 +77,14 @@ Both the components provide a window, as displayed below, to sign a form. You ca
 
 1. After you fill an adaptive form and reach the Signature Step page, the signature screen is displayed.
 
-   ![Signature screen for EchoSign page](assets/esignscribblesign.jpg)
+   ![Scribble sign dialog](/help/forms/using/assets/esignscribblesign.jpg)
 
 1. Click **[!UICONTROL Sign]**. The scribble sign dialog appears. Sign the form and click the Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) icon to save the signature.
 
-   ![Scribble sign dialog](assets/scribblewidget.jpg)
+   ![Scribble sign dialog](/help/forms/using/assets/scribblewidget.png)
 
 1. Click complete to finish the signing process.
 
-   ![Complete the signing process](assets/scribblecomplete.jpg)
+   ![Complete the signing process](/help/forms/using/assets/scribblecomplete.jpg)
 
 The signatures are added to the form and the form control moves to the next panel.

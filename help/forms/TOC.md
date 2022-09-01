@@ -116,6 +116,7 @@ role: User
     + [General Security Considerations for AEM Forms on JEE](using/general-security-considerations.md)
     + [Hardening Your AEM Forms on JEE Environment](using/hardening-aem-forms-jee-environment.md)
     + [Configuring Secure Administration Settings for AEM Forms on JEE](using/configuring-secure-administration-settings-aem.md)
+    + [OAuth2 Support for the mail Service](using/oauth2-support-for-mail-service.md)
 + Form Data Model {#form-data-model}
   + [Introduction to AEM Forms Data Integration](using/data-integration.md)
   + [Configure data sources](using/configure-data-sources.md)
@@ -326,6 +327,7 @@ role: User
   + [Configuring analytics and reports](using/configure-analytics-forms-documents.md)
   + [View and understand AEM Forms analytics reports](using/view-understand-aem-forms-analytics-reports.md)
   + [Create and manage A/B test for adaptive forms](using/ab-testing-adaptive-forms.md)
+  + [Integrate with Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + Publish and process AEM Forms {#publish-process-aem-forms}
   + [Introduction to publishing forms on a portal](using/introduction-publishing-forms.md)
   + [Sample for integrating drafts & submissions component with database](using/integrate-draft-submission-database.md)
@@ -676,6 +678,7 @@ role: User
       + [Validate a DDX document using the web service API](developing/validate-ddx-document-using-web.md)
 + Troubleshooting {#troubleshooting}
   + [Unable to use some forms features with certain versions of Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
+  + [Additional Steps to get Email with Attachment for Adaptive Forms On JEE version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
   + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
