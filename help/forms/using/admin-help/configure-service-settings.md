@@ -181,16 +181,6 @@ The following settings are available for the Email service.
 
 **SMTP Password:** The password that is associated with the SMTP user account.
 
-**0Auth2.0 Authentication:** Auth2.0 authentication service offers support to its integrated Mail Service to allow organizations to adhere to secure email requirements.
-
-**Client ID:** Azure portal generates an Application ID, which is used for authentication.
-
-**Client Secret:** Azure portal generates a secret key, which is used for authentication. 
-
-**Refresh Token:**  OAuth client uses a string to get a new access token without user's interaction.
-
-For more information on how to retrieve and use Client ID, Client secret and Refresh Token, See [OAuth2.0 Authentication Support for Email Services](/help/forms/using/oauth2-support-for-mail-service.md).
-
 **SMTP Transport Security:** The security protocol to use for connecting to the SMTP server:
 
 * Select None if no protocol is used (data is sent in clear text)
