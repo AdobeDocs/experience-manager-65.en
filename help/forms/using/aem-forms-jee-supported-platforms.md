@@ -85,11 +85,6 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Oracle Java™ SE 11 (64 bit) <sup> [8] </sup> </p>  </td>
-   <td><p>A: Supported</p> </td>
-   <td><p>Minor releases and updates </p> </td>
-  </tr>
-  <tr>
    <td>Azul Zulu OpenJDK 11 - 64bit</td>
    <td>Z: Not supported</td>
    <td><p> </p> </td>
@@ -786,9 +781,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 ## Revision History {#revision-history}
 
+<!-- 
 - Sep 01, 2022
   
   - Added support for Oracle Java™ SE 11 (64 bit) SDK for application server JBoss EAP 7.4.
+
+  --> 
 
 - Mar 03, 2022
 

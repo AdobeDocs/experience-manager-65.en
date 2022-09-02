@@ -326,7 +326,6 @@ role: User
   + [Configuring analytics and reports](using/configure-analytics-forms-documents.md)
   + [View and understand AEM Forms analytics reports](using/view-understand-aem-forms-analytics-reports.md)
   + [Create and manage A/B test for adaptive forms](using/ab-testing-adaptive-forms.md)
-  + [Integrate with Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + Publish and process AEM Forms {#publish-process-aem-forms}
   + [Introduction to publishing forms on a portal](using/introduction-publishing-forms.md)
   + [Sample for integrating drafts & submissions component with database](using/integrate-draft-submission-database.md)
