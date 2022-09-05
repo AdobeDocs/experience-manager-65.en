@@ -84,6 +84,11 @@ Adobe Experience Manager Forms requires a Java Virtual Machine to run, which is 
    <th><p><strong>Support Level</strong></p> </th>
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
   </tr>
+  <tr> 
+   <td><p>Oracle Java™ SE 11 (64 bit) <sup> [8] </sup> </p>  </td>
+   <td><p>A: Supported</p> </td>
+   <td><p>Minor releases and updates </p> </td>
+  </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 - 64bit</td>
    <td>Z: Not supported</td>
@@ -349,7 +354,7 @@ Consider the following exceptions while choosing a platform to set up your AEM F
 1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
 1. AEM Forms on JEE does not support WebSphere application server on CentOS.
 1. AEM Forms on JEE does not support JBoss role based access control (RBAC).
-1. AEM Forms on JEE supports Oracle Java™ SE 11 (64 bit) SDK for application server JBoss EAP 7.4 only. 
+1. AEM Forms on JEE supports Oracle Java™ SE 11 (64 bit) SDK for application server JBoss EAP 7.4 only.
 
 In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
 
@@ -781,12 +786,9 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 ## Revision History {#revision-history}
 
-<!-- 
 - Sep 01, 2022
   
   - Added support for Oracle Java™ SE 11 (64 bit) SDK for application server JBoss EAP 7.4.
-
-  --> 
 
 - Mar 03, 2022
 

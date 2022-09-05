@@ -74,9 +74,49 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 ## [!DNL Forms] {#forms-6514}
 
+<!--
+
 >[!NOTE]
 >
 > Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+>[!NOTE]
+>
+>* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
+
+-->
+
+* When a file is attached to a multi-panel adaptive form and a draft of the adaptive form is saved, an error occurs. (NPR-38978)
+* When a user converts RGB profile to CMYK profile using createPDF2 Java API with AdobePDF settings, the option does not work with Java API. The option works fine with standalone DistillerClient application. (NPR-38858, CQ-4346181)
+* After installing AEM 6.5 Forms service pack 12 (6.5.12.0), all the options except to close the task become unavailable in Assign Task step of AEM Workflows. (NPR-38743)
+* In a Document of Record (DoR), some values in a table are truncated. (NPR-38657)
+* While previewing FormSet with Data XML, when the XDP contains a floating field, on previewing a FormSet, no data is displayed, but data is displayed when the Preview PDF option is used.
+* In Adaptive Forms, radio button and checkbox are not in tab order. (NPR-38645)
+* When you use the `Summary Step` to generate Document of Record (DoR) for a translated Adaptive Form after submission form, is not translated to localized language. (NPR-38567)
+* The disable retry option in AEM Workflow steps is not working as expected. The issue appears intermittently. (NPR-38547)
+* When Adaptive Form is submitted with Rich text field, the `an Internal Error while Submitting a Form` error occur. When the user brings focus on the rich text field, prior to form submission, the error does not occur. (NPR-38542)
+* An error `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` is logged. (NPR-38541)
+* When a user uploads a PDF to an Adaptive Form, the AEM Forms server becomes unresponsive. (NPR-38398)
+* On an AEM Forms on OSGi server, when you use Document Service API to certify PDF, it fails with error: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
+* On submitting the draft letters, the `Could not upload asset from xml input` error occurs. It has no impact on functionality. One opening a draft, the letter is rendered correctly. (CQ-4345979, CQ-4344418)
+* When a date is entered in German format and the `Preview with Data` option is used for a letter, the Date field is not rendered. (CQ-4345783)
+* When you build a web portal and generate the barcodes based on data, some barcodes are not decoded correctly. (CQ-4345743)
+* Postscript conversion to the PDF does not rendered output document with expected colors. (CQ-4345074)
+* Resource resolver causes intermittent submission failures and results in same stack trace to appear multiple times for a single submission. (CQ-4344764)
+* Users cannot open the modified draft letters that use the `cmDataUrl` parameter. The drafts opens fine for the first time. The issues starts appearing on subsequent tries. (CQ-4344418)  
+* When user enters the `&` symbol in an Interactive Communication (IC), the draft of corresponding IC fails to load. (CQ-4343969)
+* When you use style options in AEM Forms Designer to generate PCL files, the specified style is not applied to generated files. (CQ-4339573)
+* When page count is more than 15, automated conversion of dynamic XDP forms to Adaptive Form fails. This works fine when page count is less than 15. (NPR-35337)
+* When the Add to Favorites option is used, it does not indicate the status of the toggle to the screen reader. (NPR-37137)
+* In Form Data Model, the values after decimal in database backed Form Data Model are truncated for money and small money data type. . (CQDOC-19509)
+* When you select a navigation link for workflow in HTML Workspace, it is not indicated that the navigation link is selected. (NPR-37138)
+* Scribble Signature feature is not compatible to accessibility guidelines. (NPR-37596)
+* AEM Forms uses log4j 1.x. Support for log4j 1.x has reached end of life. (NPR-38273)
+* When you use MSSQL database as a data source in a Form Data Model and retrieve values, numbers after the decimal in the retrieve values are turncated. (CQ-4346190)
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899)
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+* For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+* Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
 
 ## Integrations {#integrations-6514}
 
@@ -209,7 +249,11 @@ To know the platforms that are certified to work with this release, see the [tec
 >
 >Skip if you are not using [!DNL Experience Manager] Forms.
 
+<!-- 
+
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+-->
 
 1. Ensure that you have installed the [!DNL Experience Manager] Service Pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
