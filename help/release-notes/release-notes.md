@@ -146,7 +146,6 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * Text component is misaligned when added to nested Layout Containers. (NPR-38193)
 * An empty style tab was displayed when there was no Style System configuration for a component. The tab is now hidden when no configuration is present. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
 * The property `useLegacyResponsiveBehaviour` works only when authenticated. (NPR-37996)
-* Upgrading jquery-ui to latest version resulted in the breaking of the Editor. (SITES-5647)
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6514}
 
