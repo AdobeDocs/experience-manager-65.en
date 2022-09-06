@@ -324,7 +324,8 @@ role: User
 + Integrate AEM Forms with Experience Cloud solutions {#integrate-aem-forms-with-experience-cloud-solutions}
   + [Create targeted experiences in AEM Forms](/help/forms/using/experience-targeting-forms.md)
   + [Measure and improve effectiveness and conversion of forms](using/measure-improve-performance-forms-documents.md)
-  + [Configuring analytics and reports](using/configure-analytics-forms-documents.md)
+  + [Analytics Using Cloud Service Framework](using/configure-analytics-forms-documents.md)
+  + [Analytics using Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
   + [View and understand AEM Forms analytics reports](using/view-understand-aem-forms-analytics-reports.md)
   + [Create and manage A/B test for adaptive forms](using/ab-testing-adaptive-forms.md)
 + Publish and process AEM Forms {#publish-process-aem-forms}
