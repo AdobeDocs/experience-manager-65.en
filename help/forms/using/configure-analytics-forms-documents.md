@@ -11,9 +11,9 @@ discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 ---
-# Configuring analytics and reports{#configuring-analytics-and-reports}
+# Analytics using Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms integrates with Adobe Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
+AEM Forms integrates with Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
 
 >[!NOTE]
 >
@@ -181,4 +181,4 @@ Now, you can enable analytics for forms and generate an analytics report.
 
    **A.** Enable Analytics button **B.** Selected form
 
-   For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md)
+   For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md).
