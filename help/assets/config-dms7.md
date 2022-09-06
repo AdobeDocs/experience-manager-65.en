@@ -112,7 +112,12 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
 1. When the connection is successful, set the following. Headings with an asterisk (*) are required:
 
-    * **[!UICONTROL Company]** - the name of the Dynamic Media account. You can have one Dynamic Media account in Experience Manager. <!-- CQDOC-19579 and CQDOC-19612 -->
+    * **[!UICONTROL Company]** - the name of the Dynamic Media account.
+      >[!IMPORTANT]
+      >
+      >Only one Dynamic Media Configuration in Cloud Services is supported on an instance of Experience Manager; do not add more than one configuration. Multiple Dynamic Media Configurations on an Experience Manager instance is _not_ supported or recommended by Adobe.
+    
+      <!-- CQDOC-19579 and CQDOC-19612 -->
   
       See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md).
 
