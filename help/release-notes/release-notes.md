@@ -108,7 +108,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * When you use style options in AEM Forms Designer to generate PCL files, the specified style is not applied to generated files. (CQ-4339573)
 * When page count is more than 15, automated conversion of dynamic XDP forms to Adaptive Form fails. This works fine when page count is less than 15. (NPR-35337)
 * When the Add to Favorites option is used, it does not indicate the status of the toggle to the screen reader. (NPR-37137)
-* In Form Data Model, the values after decimal in database backed Form Data Model are truncated for money and small money data type. . (CQDOC-19509)
+* In Form Data Model, the values after decimal in database backed Form Data Model are truncated for money and small money data type. s(CQDOC-19509)
 * When you select a navigation link for workflow in HTML Workspace, it is not indicated that the navigation link is selected. (NPR-37138)
 * Scribble Signature feature is not compatible to accessibility guidelines. (NPR-37596)
 * AEM Forms uses log4j 1.x. Support for log4j 1.x has reached end of life. (NPR-38273)
