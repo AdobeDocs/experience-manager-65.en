@@ -117,6 +117,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
 * For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
 * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+* When you add repeatable panel to a non-XFA adaptive form and count of the repeatable panels in a non-XFA form is more than 15, adding a new instance can take up to 7-8 seconds. (NPR-37346)
 
 ## Integrations {#integrations-6514}
 
