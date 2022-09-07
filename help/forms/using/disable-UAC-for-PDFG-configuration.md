@@ -8,7 +8,7 @@ description: Steps to disable UAC for PDFG Configuration
 
 When user tries to convert Word and Excel files to PDF on Windows Server 2016, the following error is encountered as:
 
-`Error message from the primary converter:
+`Error message from the primary converter -
 ALC-PDG-015-003-The system cannot open the input file. Please submit your file again or contact your system administrator.`
 
 ## Solution {#solution}
