@@ -679,6 +679,7 @@ role: User
 + Troubleshooting {#troubleshooting}
   + [Unable to use some forms features with certain versions of Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
   + [Additional Steps to get Email with Attachment for Adaptive Forms On JEE version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+  + [Disable UAC for PDFG Configuration](/help/forms/using/disable-UAC-for-PDFG-configuration.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
   + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
