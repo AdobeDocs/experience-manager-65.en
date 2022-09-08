@@ -646,7 +646,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 **Microsoft® Windows**
 
-* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft Office is installed and opening dialogs are cancelled for all applications.
+* Ensure that 32-bit [supported version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft Office is installed and opening dialogs are cancelled for all applications.
 * Ensure a PDF Generator user is added in PDF configuration UI.
 * Ensure the PDF Generator user is a member of administrators group and the [Replace a process level token](#grant-the-replace-a-process-level-token-privilege) privilege is set for the user.
 * Ensure that the user is configured in PDF Generator UI and perform the following actions:
@@ -660,7 +660,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 **Linux®**
 
-* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed, opening dialogs are cancelled for all applications, and office applications launch successfully.
+* Ensure that 32-bit or 64-bit [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed, opening dialogs are cancelled for all applications, and office applications launch successfully.
 * Create an environment variable `OpenOffice_PATH` and set it to point it to OpenOffice installtion is set in the [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) or the dt (Device Tree) profile.  
 * If there are issues in installing OpenOffice, ensure that [32-bit libraries](#extrarequirements) required for OpenOffice installation are available.
 
