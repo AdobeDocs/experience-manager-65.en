@@ -1,15 +1,16 @@
 ---
 title: Disable UAC for PDFG Configuration applicable to both JEE and OSGI
+SEO Description: Unable to convert Word and Excel files to PDF
 description: Steps to disable UAC for PDFG Configuration   
 ---
-# Unable to convert Word and Excel files to PDF on Windows Server 2016 {#unable-to-convert-word-excel-files-PDF}
+# Unable to convert Word or Excel file to PDF on Windows Server {#unable-to-convert-word-excel-files-PDF}
 
 ## Issue {#issue}
 
-When user tries to convert Word and Excel files to PDF on Windows Server 2016, the following error is encountered as:
+When user tries to convert Word or Excel files to PDF on Microsoft Windows Server, the following error is encountered as:
 
-*Error message from the primary converter:
-ALC-PDG-015-003-The system cannot open the input file. Please submit your file again or contact your system administrator.*
+*`Error message from the primary converter:
+ALC-PDG-015-003-The system cannot open the input file. Please submit your file again or contact your system administrator.`*
 
 ## Solution {#solution}
 
