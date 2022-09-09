@@ -27,7 +27,7 @@ A number of out-of-the-box AEM components are provided to use the integration la
 * Check-out
 * Search
 
-For search an integration hook is provided that allows you to use the AEM search, a third party search (like Search&Promote) or a combination thereof.
+For search an integration hook is provided that allows you to use the AEM search, a third party search or a combination thereof.
 
 ## eCommerce Engine Selection {#ecommerce-engine-selection}
 
