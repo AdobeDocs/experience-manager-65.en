@@ -43,7 +43,6 @@ role:  User
     + [Using Tags](classic-feature-tags.md)
     + [Scaffolding](classic-feature-scaffolding.md)
     + [Configuring Components in Design Mode](classic-page-author-design-mode.md)
-    + [Adding Search&Promote Features To Your Page](classic-feature-search-promote.md)
     + [Components](classic-page-author-default-components.md)
 + Workflows {#workflows}
     + [Participating in Workflows](classic-workflows-participating.md)

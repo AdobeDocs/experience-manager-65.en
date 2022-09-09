@@ -37,7 +37,7 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
 
    ![aa-13](assets/aa-13.png)
 
-   There are several default component groups: **General**, **Commerce**, **Communities**, **Search&Promote**, and **Other**. Your AEM instance may be configured to display different groups and components.
+   There are several default component groups: **General**, **Commerce**, **Communities**, and **Other**. Your AEM instance may be configured to display different groups and components.
 
 1. To map Adobe Analytics variables with variables that are defined in the component, drag an **Analytics variable** from the content finder onto a field on the tracking component. For example, drag `Page Name (pageName)` to `pagedata.title`.
 
@@ -114,10 +114,6 @@ The list can be manipulated in the following ways:
    >[!NOTE]
    >
    >Only one filter button can be active at once.
-
-   >[!NOTE]
-   >
-   >Search&Promote variables belong to the Conversion section as well.
 
    1. The list also has a search feature, which filters the elements according to the text entered in the search field.
    1. If a filter option is activated while searching for elements in the list, the results displayed will be filtered according to the active button as well.
