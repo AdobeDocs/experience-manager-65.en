@@ -326,8 +326,6 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
 
 1. Restart your computer.
 
->Note: For more information, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
-
 ### (Windows Only) Disable Error Reporting service {#disable-error-reporting-service}
 
 While converting a document to PDF using the PDF Generator service on Windows Server, occasionally, Windows Server reports that the executable has encountered a problem and must close. However, it does not impact the PDF conversion as it continues in the background.
@@ -788,6 +786,16 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 * You can go online within 7 days of the first launch of your Adobe product to complete an online activation and registration or use an internet-enabled device and your product's serial number to complete this process. For detailed instructions, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
+
++++ Unable to convert Word or Excel file to PDF on Windows Server
+
+When user tries to convert Word or Excel files to PDF on Microsoft Windows Server, the following error is encountered as:
+
+*Error message from the primary converter:
+ALC-PDG-015-003-The system cannot open the input file. Please submit your file again or contact your system administrator.*
+
+To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
+
 
 ## Next steps {#next-steps}
 
