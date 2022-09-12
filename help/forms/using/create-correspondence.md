@@ -282,7 +282,7 @@ Such instances can only be saved when the letter is being viewed on publish inst
 1. Locate **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Check **[!UICONTROL Manage Letter Instances on Publish]** configuration and then click **[!UICONTROL Save]**.
 
-#### Enable save draft feature {#enable-save-draft-feature}
+### Enable save draft feature {#enable-save-draft-feature}
 
  Before publishing letters or saving drafts on the publish instance, perform the following steps to enable Save as Draft feature:
  
