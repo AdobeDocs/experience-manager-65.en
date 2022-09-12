@@ -326,6 +326,8 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
 
 1. Restart your computer.
 
+>Note: For more information, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
+
 ### (Windows Only) Disable Error Reporting service {#disable-error-reporting-service}
 
 While converting a document to PDF using the PDF Generator service on Windows Server, occasionally, Windows Server reports that the executable has encountered a problem and must close. However, it does not impact the PDF conversion as it continues in the background.
