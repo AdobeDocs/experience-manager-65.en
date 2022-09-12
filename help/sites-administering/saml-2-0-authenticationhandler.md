@@ -36,7 +36,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 >
 >The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties in order to enable the handler:
 >
->* The Identity Provider POST URL.
+>* The Identity Provider POST URL, or IDP URL.
 >* The Service Provider Entity ID.
 >
 
@@ -50,7 +50,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 **IDP Certificate Alias** The alias of the IdP's certificate in the global truststore. If this property is empty the authentication handler is disabled. See the "Add the IdP Certificate to the AEM TrustStore" chapter below on how to set it up.
 
-**Identity Provider URL** URL of the IDP where the SAML Authentication Request should be sent to. If this property is empty the authentication handler is disabled.
+**IDP URL** URL of the IDP where the SAML Authentication Request should be sent to. If this property is empty the authentication handler is disabled.
 
 >[!CAUTION]
 >
