@@ -282,6 +282,19 @@ Such instances can only be saved when the letter is being viewed on publish inst
 1. Locate **[!UICONTROL Correspondence Management Configurations]** and click it.
 1. Check **[!UICONTROL Manage Letter Instances on Publish]** configuration and then click **[!UICONTROL Save]**.
 
+#### Enable save draft feature {#enable-save-draft-feature}
+
+ Before publishing letters or saving drafts on the publish instance, perform the following steps to enable Save as Draft feature:
+ 
+1. Open Web Console Configuration for your server using the following URL: https://&lt;server&gt;:&lt;port&gt;/&lt;contextpath&gt;/system/console/configMgr. 
+
+1. Find and click the **Edit** icon next to the *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* setting.
+
+1. In the *VersionRestoreManager Author URL* field, specify the URL for the corresponding author instance.
+
+1. Click Save .
+ 
+
 When the saving of letter instances is turned on, you have the option to select where to save the letter instances. There are two options for saving the letter instances: Local Save or Remote Save.
 
 ### Local save {#local-save}
