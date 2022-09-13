@@ -814,6 +814,11 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - [!DNL Microsoft Windows Server 2019]
     - [!DNL RHEL8]
 
-  - Sep 09, 2020
+- Dec 03, 2020
+  - Support added with AEM Forms 6.5.7.0 or later for the following platform:
+    - [!DNL Microsoft SQL Server 2019]
+
+- Sep 09, 2020
 
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
+
