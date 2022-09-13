@@ -18,6 +18,14 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 
 ## Supported Platforms {#supported-platforms}
 
+<div class="preview">
+
+AEM 6.5 Forms Service Pack 12 (6.5.12.0) provides the latest full installer for AEM 6.5 Forms on JEE.
+
+Adobe recommends to use <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html"> AEM 6.5.12.0 Forms on JEE </a> full installer (released on 03 March 2022) instead of AEM 6.5. installer (released on 08 April 2019).
+
+</div>
+
 ### Support levels {#support-levels}
 
 AEM Forms on JEE server can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers.
