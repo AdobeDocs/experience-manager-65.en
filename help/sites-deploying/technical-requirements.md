@@ -489,14 +489,14 @@ For Windows x86:
 > In addition:
 >
 > * PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
-> > * PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
-> * PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion on Windows Operating System.
-> * PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on Linux Operating system.
+> * PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
+> * PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion on Windows operating system.
+> * PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on Linux operating system.
 > * PDF Generator does not support Microsoft Office 365.
 > * The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 > * A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->
 > * PDF Generator service does not support Microsoft Windows 10.
+>
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
