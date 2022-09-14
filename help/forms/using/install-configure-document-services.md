@@ -642,7 +642,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 +++
 
-+++Open Office
++++OpenOffice
 
 **Microsoft® Windows**
 
@@ -660,7 +660,8 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 **Linux®**
 
-* Ensure that 32-bit or 64-bit [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed, opening dialogs are cancelled for all applications, and office applications launch successfully.
+* Install the [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of OpenOffice. AEM Forms supports both 32-bit and 64-bit versions. After installing, open all the OpenOffice applications, cancel all the dialog windows, and close the applications. Reopen the applications and ensure no dialog box is displayed on opening an OpenOffice application.
+
 * Create an environment variable `OpenOffice_PATH` and set it to point it to OpenOffice installtion is set in the [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) or the dt (Device Tree) profile.  
 * If there are issues in installing OpenOffice, ensure that [32-bit libraries](#extrarequirements) required for OpenOffice installation are available.
 
