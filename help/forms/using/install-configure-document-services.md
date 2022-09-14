@@ -597,10 +597,9 @@ The System Readiness tool checks if the machine is configured properly to run PD
    >
    > * You can use the srt_config.yaml file to configure various settings of . The format of the file is:
    >
-      ```
-         # =================================================================
+         #=================================================================
          # SRT Configuration
-         # =================================================================
+         #=================================================================
          #Note - follow correct format to avoid parsing failures
          #e.g. <param name>:<space><param value> 
          #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
@@ -620,8 +619,8 @@ The System Readiness tool checks if the machine is configured properly to run PD
 
          #outputDir: directory where output files will be saved
          outputDir:
-      ```
-
+   >
+   
 1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
 
 ## Troubleshooting
