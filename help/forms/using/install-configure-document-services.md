@@ -651,7 +651,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 * Ensure the PDF Generator user is a member of administrators group and the [Replace a process level token](#grant-the-replace-a-process-level-token-privilege) privilege is set for the user.
 * Ensure that the user is configured in PDF Generator UI and perform the following actions:
    1. Log in to the Microsoft® Windows with PDF Generator user.
-   1. Open Microsoft® Office or Open Office applications and cancel all dialogs.
+   1. Open Microsoft® Office or OpenOffice applications and cancel all dialogs.
    1. Set AdobePDF as default printer.
    1. Set Acrobat as default program for PDF files.
    1. Perform manual conversion using options  File > Print and Acrobat ribbon in Microsoft Office applications and cancel all dialogs.
