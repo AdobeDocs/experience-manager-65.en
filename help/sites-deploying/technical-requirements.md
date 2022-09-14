@@ -495,7 +495,6 @@ For Windows x86:
 > * PDF Generator does not support Microsoft Office 365.
 > * The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 > * A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->
 > * PDF Generator service does not support Microsoft Windows 10.
 >
 
