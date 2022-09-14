@@ -336,16 +336,16 @@ The mechanism to select the image to be displayed is as follows:
 
    The product information will be published or unpublished as appropriate.
 
-### Product Feed {#product-feed}
+<!-- Search&Promote is end of life as of September 1, 2022 ### Product Feed {#product-feed} -->
 
-The Search&Promote integration allows you to:
+<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration allows you to: -->
 
-* use the eCommerce API, independently of the underlying repository structure and commerce platform.
-* leverage the Index Connector feature of Search&Promote to provide a product feed in XML format.
-* leverage the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed
-* feed generation for different Search&Promote accounts, configured as cloud services configurations.
+<!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
+<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
+<!-- Search&Promote is end of life as of September 1, 2022 * leverage the Remote Control feature of Search&Promote to perform on-demand or scheduled requests of the product feed -->
+<!-- Search&Promote is end of life as of September 1, 2022 * feed generation for different Search&Promote accounts, configured as cloud services configurations. -->
 
-For more information, read [Product Feed](/help/sites-administering/product-feed.md).
+<!-- Search&Promote is end of life as of September 1, 2022 For more information, read [Product Feed](/help/sites-administering/product-feed.md). -->
 
 ### Event Handler for Product Updates {#event-handler-for-product-updates}
 
