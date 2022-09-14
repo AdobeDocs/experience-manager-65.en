@@ -619,6 +619,7 @@ The System Readiness tool checks if the machine is configured properly to run PD
 
          #outputDir: directory where output files will be saved
          outputDir:
+   >
    
 1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
 
