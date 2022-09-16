@@ -112,7 +112,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * When you select a navigation link for workflow in HTML Workspace, it is not indicated that the navigation link is selected. (NPR-37138)
 * Scribble Signature feature is not compatible to accessibility guidelines. (NPR-37596)
 * AEM Forms uses log4j 1.x. Support for log4j 1.x has reached end of life. (NPR-38273)
-* When you use MSSQL database as a data source in a Form Data Model and retrieve values, numbers after the decimal in the retrieve values are turncated. (CQ-4346190)
+* When you use MSSQL database as a data source in a Form Data Model and retrieve values, numbers after the decimal in the retrieve values are truncated. (CQ-4346190)
 * In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899)
 * Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
 * For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
