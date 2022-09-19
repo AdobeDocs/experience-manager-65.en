@@ -296,8 +296,7 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
 The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. To enable reloading of draft at publish instance, these properties are required at the publish instance. 
 
-In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the component as *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* at the Author instance using the URL: 
-`http://server:port/system/console/components`  
+In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the component as *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* at the Author instance using the URL:`http://server:port/system/console/components`  
 
 When the saving of letter instances is turned on, you have the option to select where to save the letter instances. There are two options for saving the letter instances: Local Save or Remote Save.
 
