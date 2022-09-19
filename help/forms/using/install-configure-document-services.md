@@ -597,12 +597,12 @@ The System Readiness tool checks if the machine is configured properly to run PD
    >
    > * You can use the srt_config.yaml file to configure various settings of . The format of the file is:
    >
-      ```
-         # =================================================================
          # SRT Configuration
-         # =================================================================
-         #Note - follow correct format to avoid parsing failures
-         #e.g. <param name>:<space><param value> 
+
+         # Note - Follow correct format to avoid parsing failures
+
+         # e.g. <param name>:<space><param value> 
+         
          #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
          locale: en
 
@@ -620,9 +620,8 @@ The System Readiness tool checks if the machine is configured properly to run PD
 
          #outputDir: directory where output files will be saved
          outputDir:
-
-      ```
-
+   >
+   
 1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
 
 ## Troubleshooting
@@ -642,16 +641,16 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 +++
 
-+++Open Office
++++OpenOffice
 
 **Microsoft® Windows**
 
-* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft Office is installed and opening dialogs are cancelled for all applications.
+* Ensure that 32-bit [supported version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft Office is installed and opening dialogs are cancelled for all applications.
 * Ensure a PDF Generator user is added in PDF configuration UI.
 * Ensure the PDF Generator user is a member of administrators group and the [Replace a process level token](#grant-the-replace-a-process-level-token-privilege) privilege is set for the user.
 * Ensure that the user is configured in PDF Generator UI and perform the following actions:
    1. Log in to the Microsoft® Windows with PDF Generator user.
-   1. Open Microsoft® Office or Open Office applications and cancel all dialogs.
+   1. Open Microsoft® Office or OpenOffice applications and cancel all dialogs.
    1. Set AdobePDF as default printer.
    1. Set Acrobat as default program for PDF files.
    1. Perform manual conversion using options  File > Print and Acrobat ribbon in Microsoft Office applications and cancel all dialogs.
@@ -660,7 +659,8 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 **Linux®**
 
-* Ensure that [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Open Office is installed, opening dialogs are cancelled for all applications, and office applications launch successfully.
+* Install the [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of OpenOffice. AEM Forms supports both 32-bit and 64-bit versions. After installing, open all the OpenOffice applications, cancel all the dialog windows, and close the applications. Reopen the applications and ensure no dialog box is displayed on opening an OpenOffice application.
+
 * Create an environment variable `OpenOffice_PATH` and set it to point it to OpenOffice installtion is set in the [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) or the dt (Device Tree) profile.  
 * If there are issues in installing OpenOffice, ensure that [32-bit libraries](#extrarequirements) required for OpenOffice installation are available.
 
