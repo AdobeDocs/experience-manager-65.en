@@ -198,13 +198,6 @@ Perform the following steps to save an Interactive Communication as a draft:
 
 Once you save the Interactive Communication as a draft, tap **[!UICONTROL Save Changes]** to save any further changes to the draft.
 
-### Enable Save as draft feature {#enable-save-as-draft}
-
-The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. 
-
-In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the component as *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* at the Author instance using the URL: 
-`http://server:port/system/console/components`  
-
 ### Retrieve the draft of an Interactive Communication {#retrieve-draft}
 
 After saving an Interactive Communication as a draft, you can retrieve it to continue working on it. Retrieve the Interactive Communication using:
