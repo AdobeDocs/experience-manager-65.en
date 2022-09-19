@@ -286,19 +286,19 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
  Before publishing letters or saving drafts on the publish instance, perform the following steps to enable Save as Draft feature:
  
-1. On the author instance, open Adobe Experience Manager Component Configuration window using the following URL:`http://server:port/system/console/components`
-1. Search for the **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** setting.
-1. Locate and disable it.
+1. On the author instance, open Adobe Experience Manager Web Console Components for your server using the following URL:`http://server:port/system/console/components`
+1. Search for the **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** component.
+1. Click ![Enable button](/help/forms/using/assets/enablebutton.png) icon to disable [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component.
 1. Click Save.
 
    >[!NOTE]
    >
-   >The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the **com.day.cq.replication.impl.ReplicationPropertiesFilterFactory** setting on the author instance.   
+   >The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the **com.day.cq.replication.impl.ReplicationPropertiesFilterFactory** component on the author instance.   
 
-1. On the publish instance, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. On the publish instance, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/system/console/configMgr`
 1. Search for **[!UICONTROL Correspondence Management Configurations]** component and click it.
 
-1. Search for [!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name] setting and click **Edit** icon.
+1. Search for [!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name] setting and click ![Edit](/help/forms/using/assets/edit.png) icon.
 
 1. Locate **[!UICONTROL VersionRestoreManager Author URL]** field and specify the URL for the corresponding author instance. For instance, replace value of 
 http://localhost:4503/system/console/configMgr with value http://localhost.com:4502.
@@ -323,7 +323,7 @@ This option exists for people who have concerns over saving user data on publish
 
 #### Specify processing author settings {#specify-processing-author-settings}
 
-1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. In AEM, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/system/console/configMgr`
 
    ![Adobe Experience Manager Web Console Configuration](assets/2configmanager.png)
 
