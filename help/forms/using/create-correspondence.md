@@ -300,8 +300,8 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
 1. Search for [!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name] setting and click ![Edit](/help/forms/using/assets/edit.png) icon.
 
-1. Locate **[!UICONTROL VersionRestoreManager Author URL]** field and specify the URL for the corresponding author instance. For instance, replace value of 
-http://localhost:4503/system/console/configMgr with value http://localhost.com:4502.
+1. Locate **[!UICONTROL VersionRestoreManager Author URL]** field and specify the URL for the corresponding author instance. For instance, replace value 
+`http://localhost:4503/system/console/configMgr` with value `http://localhost.com:4502`.
 
 1. Click Save.
 
