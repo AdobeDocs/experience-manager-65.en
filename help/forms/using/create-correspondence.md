@@ -286,17 +286,21 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
  Before publishing letters or saving drafts on the publish instance, perform the following steps to enable Save as Draft feature:
  
-1. Open Web Console Configuration for your server using the following URL: https://&lt;server&gt;:&lt;port&gt;/&lt;contextpath&gt;/system/console/configMgr. 
+1. At the author instance, search the **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** component using the URL:`http://server:port/system/console/components` and disable it.
 
-1. Find and click the **Edit** icon next to the *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* setting.
+   >[!NOTE]
+   >
+   >The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the component as **com.day.cq.replication.impl.ReplicationPropertiesFilterFactory** at the author instance.   
 
-1. In the *VersionRestoreManager Author URL* field, specify the URL for the corresponding author instance.
+1. At the publish instance, open Adobe Experience Manager Web Console Configuration for your server using the following URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Search for **[!UICONTROL Correspondence Management Configurations]** and click it.
+
+1. Search for [!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name] setting and click **Edit** icon.
+
+1. Locate **[!UICONTROL VersionRestoreManager Author URL]** field and specify the URL for the corresponding author instance. For instance, replace value of 
+http://abc.corp.adobe.com:4503/system/console/configMgr with value http://abc.corp.adobe.com:8080/lc at [!UICONTROL VersionRestoreManager Author URL].
 
 1. Click Save .
-
-The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. To enable reloading of draft at publish instance, these properties are required at the publish instance. 
-
-In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the component as *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* at the Author instance using the URL:`http://server:port/system/console/components`  
 
 When the saving of letter instances is turned on, you have the option to select where to save the letter instances. There are two options for saving the letter instances: Local Save or Remote Save.
 
