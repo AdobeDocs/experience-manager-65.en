@@ -289,7 +289,6 @@ Such instances can only be saved when the letter is being viewed on publish inst
 1. On the author instance, open Adobe Experience Manager Web Console Components for your server using the following URL:`http://server:port/system/console/components`
 1. Search for the **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** component.
 1. Click ![Enable button](/help/forms/using/assets/enablebutton.png) icon to disable [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component.
-1. Click Save.
 
    >[!NOTE]
    >
