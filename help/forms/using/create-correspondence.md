@@ -288,7 +288,7 @@ Such instances can only be saved when the letter is being viewed on publish inst
  
 1. On the author instance, open Adobe Experience Manager Component Configuration window using the following URL:`http://server:port/system/console/components`
 1. Search for the **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** setting.
-1. Locate and disable **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** setting.
+1. Locate and disable it.
 1. Click Save.
 
    >[!NOTE]
@@ -301,7 +301,7 @@ Such instances can only be saved when the letter is being viewed on publish inst
 1. Search for [!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name] setting and click **Edit** icon.
 
 1. Locate **[!UICONTROL VersionRestoreManager Author URL]** field and specify the URL for the corresponding author instance. For instance, replace value of 
-*http://<localhost>:4503/system/console/configMgr* with value *http://<localhost>.com:4502*.
+http://localhost:4503/system/console/configMgr with value http://localhost.com:4502.
 
 1. Click Save.
 
