@@ -288,17 +288,17 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
  The *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties are not carried over to publish instance by default. In order to carry over *cq:lastReplicationAction*, *cq:lastreplicated* and *cq:lastReplicatedBy* properties to publish instance, disable the [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component. To disable the component:
 
-   1. On the author instance, open the Adobe Experience Manager Web Console Components console. The default URL is `http://author-server:port/system/console/components`.
+   1. On the author instance, open the Adobe Experience Manager Web Console Components console. The default URL is `http://author-server:port/system/console/components`
 
    1. Search for the **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** component.
 
    1. Click ![Disable button](/help/forms/using/assets/enablebutton.png) icon to disable the [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component.
 
-![Author instance](/help/forms/using/assets/replicationproperties.png)
+![Author instance](/help/forms/using/assets/replicationproperties.png) 
 
-To enable save as draft feature, replace the existing URL at [!UICONTROL VersionRestoreManager Author URL] with URL of your author instance. To replace the URL:
+To enable save as draft feature, replace the existing URL at [!UICONTROL VersionRestoreManager Author URL] with URL of your author instance. To replace the URL: 
 
-   1. On the publish instance, open [!UICONTROL Aode Manager Web Console Configuration]. The default URL is `http://publish-server:port/system/console/configMgr`.	
+   1. On the publish instance, open [!UICONTROL Aode Manager Web Console Configuration]. The default URL is `https://publish-server:port/system/console/configMgr`
    
    1. Search and open the **[!UICONTROL Correspondence Management - Author instance Version Restore configurations]** component.
 
