@@ -300,7 +300,7 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
 1. On the publish instance:
 
-To enable save as draft feature, replace the URL at [!UICONTROL VersionRestoreManager Author URL] with URL of author instance. 
+   To enable save as draft feature, replace the URL at [!UICONTROL VersionRestoreManager Author URL] with URL of author instance. 
 
    * Open **[!UICONTROL Adobe Experience Manager Web Console Configuration]** using the following URL: `https://<server>:<port>/system/console/configMgr`
 
@@ -310,7 +310,7 @@ To enable save as draft feature, replace the URL at [!UICONTROL VersionRestoreMa
 
    * Click Save.
 
-      ![Publish Instance](/help/forms/using/assets/correspondencemanagement.png)
+   ![Publish Instance](/help/forms/using/assets/correspondencemanagement.png)
 When the saving of letter instances is turned on, you have the option to select where to save the letter instances. There are two options for saving the letter instances: Local Save or Remote Save.
 
 ### Local save {#local-save}
