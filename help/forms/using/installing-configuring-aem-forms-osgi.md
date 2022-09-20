@@ -99,7 +99,7 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 
     * libicu
 
-* Install [Microsoft Visual Studio 2019 32-bit Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) 
+* Install [Microsoft Visual Studio 2019 32-bit Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
