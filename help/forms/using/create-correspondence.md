@@ -294,21 +294,23 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
    * Search for the **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** component.
 
-   * Click ![Enable button](/help/forms/using/assets/enablebutton.png) icon to disable the [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component.
+   * Click ![Disable button](/help/forms/using/assets/enablebutton.png) icon to disable the [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] component.
 
+      ![Author instance](/help/forms/using/assets/replicationproperties.png)
 
 1. On the publish instance:
 
+To enable save as draft feature, replace the URL at [!UICONTROL VersionRestoreManager Author URL] with URL of author instance. 
+
    * Open **[!UICONTROL Adobe Experience Manager Web Console Configuration]** using the following URL: `https://<server>:<port>/system/console/configMgr`
 
-   * Search and open for the **[!UICONTROL Correspondence Management Configurations]** component.
-
-   * Search for the [!UICONTROL com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name] setting and click ![Edit](/help/forms/using/assets/edit.png) icon.
+   * Search and open for the **[!UICONTROL Correspondence Management - Author instance Version Restore configurations]** component.
 
    * Locate the **[!UICONTROL VersionRestoreManager Author URL]** field and specify the URL for the  author instance. 
 
    * Click Save.
 
+      ![Publish Instance](/help/forms/using/assets/correspondencemanagement.png)
 When the saving of letter instances is turned on, you have the option to select where to save the letter instances. There are two options for saving the letter instances: Local Save or Remote Save.
 
 ### Local save {#local-save}
