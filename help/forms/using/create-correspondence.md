@@ -298,8 +298,8 @@ Such instances can only be saved when the letter is being viewed on publish inst
 
 To enable save as draft feature, replace the existing URL at [!UICONTROL VersionRestoreManager Author URL] with URL of your author instance. To replace the URL:
 
-   1.	On the publish instance, open [!UICONTROL Adobe Experience Manager Web Console Configuration]. The default URL is `https://publish-server:port/system/console/configMgr`.
-
+   1. On the publish instance, open [!UICONTROL Aode Manager Web Console Configuration]. The default URL is `http://publish-server:port/system/console/configMgr`.	
+   
    1. Search and open the **[!UICONTROL Correspondence Management - Author instance Version Restore configurations]** component.
 
    1. Locate the **[!UICONTROL VersionRestoreManager Author URL]** field and specify the URL for the  author instance. 
