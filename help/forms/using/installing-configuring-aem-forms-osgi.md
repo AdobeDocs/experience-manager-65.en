@@ -99,6 +99,9 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 
     * libicu
 
+* Install [Microsoft Visual Studio 2019 32-bit Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms data capture and other capabilities. Perform the following steps to install the add-on package:
@@ -118,7 +121,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 ### (Windows only) Automatic installation of Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
 
-If you install an AEM instance in elevated mode, the missing Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
+If you install an AEM instance in elevated mode, the 32-bit Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
 
 To evaluate if the Visual Studio redistributables are installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
 
