@@ -216,7 +216,7 @@ These services are provided by default:
 * [Tracker Snippets](/help/sites-administering/external-providers.md) (Google, WebTrends etc.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-* [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
+<!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]

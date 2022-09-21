@@ -84,14 +84,14 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 
 | **Platform** | **Support Level** | **Link** |
 |---|---|---|
-| Oracle Java SE 11 JDK - 64bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
+| Oracle Java SE 11 JDK - 64-bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
 | Oracle Java SE 10 JDK | Z: Not supported `[1]` |
 | Oracle Java SE 9 JDK | Z: Not supported `[1]` |
-| Oracle Java SE 8 JDK - 64bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
+| Oracle Java SE 8 JDK - 64-bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
 | IBM J9 VM - build 2.9, JRE 1.8.0 | A: Supported `[2]` |
 | IBM J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[2]` |
-| Azul Zulu OpenJDK 11 - 64bit | A: Supported `[3]` | |
-| Azul Zulu OpenJDK 8 - 64bit | A: Supported `[3]` | |
+| Azul Zulu OpenJDK 11 - 64-bit | A: Supported `[3]` | |
+| Azul Zulu OpenJDK 8 - 64-bit | A: Supported `[3]` | |
 
 1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in production environment, Adobe provides support only for the LTS releases of Java. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology. See the [Java support policy for Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) for more information.
 
@@ -181,8 +181,8 @@ Adobe Experience Manager works with the following server platforms for productio
 | **Platform** |**Support Level** |
 |---|---|
 | **Linux, based on Red Hat distribution** |A: Supported `[1]` `[3]` |
-| Linux, based on Debian distribution incl. Ubuntu |A: Supported `[2]` |
-| Linux, based on SUSE distribution |A: Supported |
+| Linux, based on Debian distribution incl. Ubuntu |A: Supported `[1]` `[2]` |
+| Linux, based on SUSE distribution |A: Supported `[1]`|
 | Microsoft Windows Server 2019 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft Windows Server 2016 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft Windows Server 2012 R2 |Z: Not supported  |
@@ -489,13 +489,14 @@ For Windows x86:
 > In addition:
 >
 > * PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
-> * PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion.
-> * PDF Generator does not support Microsoft Office 365.
 > * PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
+> * PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion on Windows operating system.
+> * PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on Linux operating system.
+> * PDF Generator does not support Microsoft Office 365.
 > * The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 > * A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->
 > * PDF Generator service does not support Microsoft Windows 10.
+>
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
