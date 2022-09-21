@@ -15,6 +15,8 @@ exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 
 AEM Forms integrates with [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) to allow you to capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to enable business users to gain insights into end user behavior and optimize the data capture experience. You can capture and track behavior of both logged-in and not logged-in (Anonymous) users via Adobe Analytics for Adaptive Forms.
 
+You can also perform analytics using Cloud Service Framework. For more information on how to integrate AEM Forms with Cloud Service Framework, see [Analytics using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md). The main advantage of using Adobe Launch over Analytics using Cloud Service Framework is that you can also define custom events, in addition to these out of the box events. The customized events are defined using rule editor or customer clientlibs and are mapped to events in [!DNL Adobe Analytics].
+
 After performing the actions mentioned in this article, you can configure and view reports in [!DNL Adobe Analytics], as demonstrated in the following video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/337262)
@@ -35,7 +37,7 @@ You can use [!DNL Adobe Analytics] to discover interaction patterns and problems
 
 * **Save**: Number of times users save a form to the Forms Portal.
 
-The main advantage of using Adobe Launch over [Analytics using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) is that you can also define custom events, in addition to these out of the box events. The customized events are defined using rule editor or customer clientlibs and are mapped to events in [!DNL Adobe Analytics].
+Apart from these out of the box events, you can also define custom events. 
 
 The following figure illustrates the actions that you need to perform before viewing reports in [!DNL Adobe Analytics]:
 
