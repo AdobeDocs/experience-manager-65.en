@@ -21,6 +21,8 @@ AEM Forms integrates with Analytics that allows you to capture and track perform
 >
 >In addition to the add-on package, you need an Adobe Analytics account and administrator privileges on the AEM instance. For information about the solution, see [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
+You can also perform analytics using Adobe Launch. For more information on how to integrate AEM Forms with Adobe Launch, see [Analytics using Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
+
 ## Overview {#overview}
 
 You can use Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, HTML5 forms and interactive communication. Out of the box, Adobe analytics tracks and stores information about the following parameters:
