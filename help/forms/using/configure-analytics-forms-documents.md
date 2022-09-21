@@ -11,15 +11,17 @@ discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 ---
-# Configuring analytics and reports{#configuring-analytics-and-reports}
+# Analytics using Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms integrates with Adobe Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
+AEM Forms integrates with Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
 
 >[!NOTE]
 >
 >The analytics feature in AEM Forms is available as part of the AEM Forms add-on package. For information about installing the add-on package, see [Installing and configuring AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md).
 >
 >In addition to the add-on package, you need an Adobe Analytics account and administrator privileges on the AEM instance. For information about the solution, see [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
+
+You can also perform analytics using Adobe Launch. For more information on how to integrate AEM Forms with Adobe Launch, see [Analytics using Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Overview {#overview}
 
@@ -181,4 +183,4 @@ Now, you can enable analytics for forms and generate an analytics report.
 
    **A.** Enable Analytics button **B.** Selected form
 
-   For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md)
+   For detailed information on viewing forms analytics reports, see [Viewing and understanding AEM Forms analytics reports](../../forms/using/view-understand-aem-forms-analytics-reports.md).

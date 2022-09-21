@@ -787,6 +787,16 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 +++
 
++++ Unable to convert Word or Excel file to PDF on Windows Server
+
+When user tries to convert Word or Excel files to PDF on Microsoft Windows Server, the following error is encountered as:
+
+*Error message from the primary converter:
+ALC-PDG-015-003-The system cannot open the input file. Please submit your file again or contact your system administrator.*
+
+To resolve the issue, see [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md). 
+
+
 ## Next steps {#next-steps}
 
 You have a working AEM Forms document services environment. You can use document services through:

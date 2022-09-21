@@ -324,7 +324,8 @@ role: User
 + Integrate AEM Forms with Experience Cloud solutions {#integrate-aem-forms-with-experience-cloud-solutions}
   + [Create targeted experiences in AEM Forms](/help/forms/using/experience-targeting-forms.md)
   + [Measure and improve effectiveness and conversion of forms](using/measure-improve-performance-forms-documents.md)
-  + [Configuring analytics and reports](using/configure-analytics-forms-documents.md)
+  + [Analytics Using Cloud Service Framework](using/configure-analytics-forms-documents.md)
+  + [Analytics using Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
   + [View and understand AEM Forms analytics reports](using/view-understand-aem-forms-analytics-reports.md)
   + [Create and manage A/B test for adaptive forms](using/ab-testing-adaptive-forms.md)
 + Publish and process AEM Forms {#publish-process-aem-forms}
@@ -678,6 +679,7 @@ role: User
 + Troubleshooting {#troubleshooting}
   + [Unable to use some forms features with certain versions of Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
   + [Additional Steps to get Email with Attachment for Adaptive Forms On JEE version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+  + [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
   + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
