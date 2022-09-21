@@ -18,6 +18,14 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 
 ## Supported Platforms {#supported-platforms}
 
+<div class="preview">
+
+Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE along with the patch installers. The full installer provides support for new platforms while the patch installer includes only bug fixes.
+
+If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using [AEM 6.5.12.0 Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) released on 03 March 2022 instead of AEM 6.5 Forms installer released on 08 April 2019.
+
+</div>
+
 ### Support levels {#support-levels}
 
 AEM Forms on JEE server can be set up using any combination of supported operating systems, application servers, databases, database drivers, JDK, LDAP servers, and email servers.
@@ -814,6 +822,11 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - [!DNL Microsoft Windows Server 2019]
     - [!DNL RHEL8]
 
-  - Sep 09, 2020
+- Dec 03, 2020
+  - Support added with AEM Forms 6.5.7.0 or later for the following platform:
+    - [!DNL Microsoft SQL Server 2019]
+
+- Sep 09, 2020
 
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
+

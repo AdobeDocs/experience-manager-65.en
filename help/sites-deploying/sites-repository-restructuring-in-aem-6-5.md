@@ -30,7 +30,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 * [Page Scaffolding](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Responsive Grid LESS](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
 * [Static Template Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
-* [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries)
+<!-- Search&Promote is end-of-life September 1, 2022 * [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries) -->
 * [Adobe Target Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
 * [WCM Foundation Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
 
@@ -370,7 +370,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
  </tbody>
 </table>
 
-### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
+<!-- Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
 
 <table>
  <tbody>
@@ -401,7 +401,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
     </ul> </td>
   </tr>
  </tbody>
-</table>
+</table> -->
 
 ### Adobe Target Integration Client Libraries {#adobe-target-integration-client-libraries}
 

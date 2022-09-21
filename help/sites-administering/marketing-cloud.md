@@ -17,7 +17,7 @@ With Adobe Experience Manager (AEM), you can seamlessly integrate with the follo
 * Adobe Target gives marketers the ability to continually make their online content more relevant to their customers — yielding greater conversion.
 * Adobe Dynamic Media Classic automates media management, streamlines web publishing, and enhances web experiences, all in a hosted environment.
 * Adobe Dynamic Tag Management gives marketers intuitive tools to quickly and easily manage an unlimited number of Adobe and third-party tags.
-* Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites.
+<!-- Search&Promote is end of life as of September 1, 2022 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites. -->
 * Adobe Campaign lets you manage email delivery content directly in Adobe Experience Manager.
 
 In addition, you can [integrate AEM with Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) and with [third-party services](/help/sites-administering/third-party-services.md).
@@ -81,13 +81,13 @@ For more information on how Adobe Experience Manager integrates with Dynamic Med
 
 The Audience Manager integration has been removed in AEM 6.3.
 
-## Integrating with Search&Promote {#integrating-with-search-promote}
+<!-- Search&Promote is end of life as of September 1, 2022 ## Integrating with Search&Promote {#integrating-with-search-promote} -->
 
-Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics.
+<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote enables marketers to optimizehow visitors browse, find, compare, and select relevant products and content on web and mobile sites. Businesses can easily promote priority items based on business objectives and visitor intent, as well as automate merchandising and promotions activity via KPI-based triggers or metrics. -->
 
-Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance.
+<!-- Search&Promote is end of life as of September 1, 2022 Adobe Search&Promote is a reliable and scalable hosted site search application, capable of scaling to millions of pages or products, for heavily visited online businesses ranging from retail to news sites. It offers unprecedented levels of marketer control and metrics-based relevance. -->
 
-For information about integrating AEM and Search&Promote, see [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md).
+<!-- Search&Promote is end of life as of September 1, 2022 For information about integrating AEM and Search&Promote, see [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md). -->
 
 ## Integrating with Adobe Campaign {#integrating-with-adobe-campaign}
 
