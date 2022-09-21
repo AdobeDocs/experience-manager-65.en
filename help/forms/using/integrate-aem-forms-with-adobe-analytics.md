@@ -41,7 +41,7 @@ Apart from these out of the box events, you can also define custom events.
 
 The following figure illustrates the actions that you need to perform before viewing reports in [!DNL Adobe Analytics]:
 
-![Analytics overview](/help/forms/using/assets/analytics-workflow.png)
+![Analytics overview](/help/forms/using/assets/analyticsworkflow.png)
 
 ## 1. Configure [!DNL Adobe Analytics] {#Configure-adobe-analytics}
 
