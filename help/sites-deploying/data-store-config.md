@@ -254,7 +254,7 @@ You can use the configuration file with the following options:
  </tbody>
 </table>
 
-### DataStore Caching {data-store-caching}
+### DataStore Caching {#data-store-caching}
 
 >[!NOTE]
 >
@@ -266,11 +266,11 @@ You can also upgrade the cache offline by using the `datastorecacheupgrade` comm
 
 The cache has a size limit and it can be configured by using the cacheSize parameter.
 
-#### Downloads {downloads}
+#### Downloads {#downloads}
 
 The local cache will be checked for the record of the requested file/blob before accessing it from the DataStore. When the cache exceeds the configured limit (see the `cacheSize` parameter) while adding a file into the cache, then some of the file(s) will be evicted to reclaim space.
 
-#### Asynchronous Upload {async-upload}
+#### Asynchronous Upload {#async-upload}
 
 The cache supports asynchronous uploads to the DataStore. The files are staged locally, in the cache (on the file system), and an asynchronous job starts to upload the file. The number of asynchronous uploads is limited by the size of the staging cache. The size of the staging cache is configured by using the `stagingSplitPercentage` parameter. This parameter defines the percentage of cache size to be used for the staging cache. Also, the percentage of cache available for downloads is calculated as **(100 - `stagingSplitPercentage`) &#42; `cacheSize`**.
 
