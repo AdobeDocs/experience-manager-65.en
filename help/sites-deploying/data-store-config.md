@@ -200,7 +200,7 @@ If you need to upgrade to a new version of the 1.10.x S3 connector (for example,
 
 You can use the configuration file with the options detailed below.
 
-<!-->
+<!--
 * accessKey: The AWS access key.
 * secretKey: The AWS secret access key. **Note:** When the `accessKey` or `secretKey` is not specified then the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) is used for authentication.
 * s3Bucket: The bucket name.
@@ -220,7 +220,7 @@ You can use the configuration file with the options detailed below.
 
 >[!NOTE]
 >
->The S3 connector supports both IAM user authentication and IAM role authentication. To use IAM role authentication, omit the `accessKey` and `secretKey` values from your configuration file. The S3 connector will then default to the [IAM role]((https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html)) assigned to the instance.
+>The S3 connector supports both IAM user authentication and IAM role authentication. To use IAM role authentication, omit the `accessKey` and `secretKey` values from your configuration file. The S3 connector will then default to the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html)) assigned to the instance.
 
 | Key | Description | Default | Required |
 | --- | --- | --- | --- |
