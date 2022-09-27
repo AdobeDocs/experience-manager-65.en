@@ -177,7 +177,7 @@ Once downloaded, you can install and configure the S3 Connector as follows:
 1. Edit the file and add the configuration options required by your setup.
 1. Start AEM.
 
-### Upgrading to a new version of the 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
+## Upgrading to a new version of the 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
 
 If you need to upgrade to a new version of the 1.10.x S3 connector (for example, from 1.10.0 to 1.10.4) follow these steps:
 
@@ -254,12 +254,11 @@ You can use the configuration file with the following options:
  </tbody>
 </table>
 
-**DataStore Caching**
+### DataStore Caching {#data-store-caching}
 
 >[!NOTE]
 >
 >The DataStore implementations of `S3DataStore`, `CachingFileDataStore` and `AzureDataStore` support local file system caching. The `CachingFileDataStore` implementation is useful when the DataStore is on NFS (Network File System).
->
 
 When upgrading from an older cache implementation (pre Oak 1.6) there is a difference in the structure of the local file system cache directory. In the old cache structure both the downloaded and the uploaded files were put directly under the cache path. The new structure segregates the downloads and uploads and stores them in two directories named `upload` and `download` under cache path. The upgrade process should be seamless and any pending uploads should be scheduled for upload and any previously downloaded files in the cache will be put in the cache on initialization.
 
@@ -267,11 +266,11 @@ You can also upgrade the cache offline by using the `datastorecacheupgrade` comm
 
 The cache has a size limit and it can be configured by using the cacheSize parameter.
 
-**Downloads**
+#### Downloads {#downloads}
 
 The local cache will be checked for the record of the requested file/blob before accessing it from the DataStore. When the cache exceeds the configured limit (see the `cacheSize` parameter) while adding a file into the cache, then some of the file(s) will be evicted to reclaim space.
 
-**Asynchronous Upload**
+#### Asynchronous Upload {#async-upload}
 
 The cache supports asynchronous uploads to the DataStore. The files are staged locally, in the cache (on the file system), and an asynchronous job starts to upload the file. The number of asynchronous uploads is limited by the size of the staging cache. The size of the staging cache is configured by using the `stagingSplitPercentage` parameter. This parameter defines the percentage of cache size to be used for the staging cache. Also, the percentage of cache available for downloads is calculated as **(100 - `stagingSplitPercentage`) &#42; `cacheSize`**.
 
