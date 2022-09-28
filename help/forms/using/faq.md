@@ -94,7 +94,9 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Why are some fonts displayed in the HTML form different from the ones used while designing the form?
 
-   Answer: HTML5 form does not allow embedding fonts (in contrast to PDF forms where fonts are embedded inside the form). For the HTML version of a form to render as expected, ensure that the fonts are available in the CRX Repository (AEM Content Repository) of your AEM Forms Server. When the fonts are not available in CRX Repository of your AEM Forms Server, the form is rendered with fallback fonts. 
+   Answer: HTML5 form does not allow embedding fonts (in contrast to PDF forms where fonts are embedded inside the form). For the HTML version of a form to render as expected, ensure that the fonts are available where AEM designer is installed on the server and in the CRX Repository (AEM Content Repository) of your AEM Forms server. When the fonts are not available in the CRX Repository of your AEM Forms server or at the location where AEM designer is installed, the form is rendered with fallback fonts. 
+
+   ensure that the fonts are available on server where AEM designer is present and in the CRX Repository (AEM Content Repository) of your AEM Forms Server where HTML form is rendered.
    
 1. Are vAlign and hAlign attributes supported in HTML forms?
 
