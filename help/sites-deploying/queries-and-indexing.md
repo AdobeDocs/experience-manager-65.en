@@ -285,36 +285,7 @@ The purpose of the Solr index is mainly full-text search but it can also be used
 
 The integration in AEM happens at the repository level so that Solr is one of the possible indexes that can be used in Oak, the new repository implementation shipped with AEM.
 
-It can be configured to work as an embedded server with the AEM instance, or as a remote server.
-
-### Configuring AEM with an embedded Solr server {#configuring-aem-with-an-embedded-solr-server}
-
->[!CAUTION]
->
->Do not use an embedded Solr server in a production environment. It should be used only in a development environment.
-
-AEM can be used with an embedded Solr server that can be configured via the Web Console. In this case, the Solr server will run in the same JVM as the AEM instance it is embedded to.
-
-You can configure the embedded Solr server by:
-
-1. Going to the Web Console at `https://serveraddress:4502/system/console/configMgr`
-1. Search for "**Oak Solr server provider**".
-1. Press the edit button and in the following window set the server type to **Embedded Solr** in the drop-down list.
-
-1. Next, edit "**Oak Solr embedded server configuration**" and create a configuration. For more info on the configuration options, please visit the [Apache Solr website](https://lucene.apache.org/solr/documentation.html).
-
-   >[!NOTE]
-   >
-   >The Solr home directory (solr.home.path) configuration will look for a folder with the same name in the AEM installation folder.
-
-1. Open CRXDE and login as Admin.
-1. Add a node called **solrlndex** of type **oak:QueryIndexDefinition** under **oak:index** with the following properties:
-
-    * **type:** `solr`(of type String)
-    * **async:** `async`(of type String)
-    * **reindex:** `true`(of type Boolean)
-
-1. Save the changes.
+It can be configured to work as a remote server with the AEM instance.
 
 ### Configuring AEM with a single remote Solr server {#configuring-aem-with-a-single-remote-solr-server}
 
