@@ -220,7 +220,7 @@ You can use the configuration file with the options detailed below.
 
 >[!NOTE]
 >
->The S3 connector supports both IAM user authentication and IAM role authentication. To use IAM role authentication, omit the `accessKey` and `secretKey` values from your configuration file. The S3 connector will then default to the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html)) assigned to the instance.
+>The S3 connector supports both IAM user authentication and IAM role authentication. To use IAM role authentication, omit the `accessKey` and `secretKey` values from your configuration file. The S3 connector will then default to the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) assigned to the instance.
 
 | Key | Description | Default | Required |
 | --- | --- | --- | --- |
@@ -228,23 +228,24 @@ You can use the configuration file with the options detailed below.
 | secretKey | Secret access key for the IAM user with access to the bucket. | | Yes, when not using IAM roles. |
 | cacheSize | The size (in bytes) of the local cache. | 64GB | No. |
 | connectionTimeout | Set the amount of time to wait (in milliseconds) before timing out when initially establishing a connection.  | 10000 | No. |
-| maxCachedBinarySize | Binaries with size less than or equal to this value (in bytes) will be stored in memory cache. | 17408 (17 KB) | No. |
+| maxCachedBinarySize | Binaries with size less than or equal to this value (in bytes) will be stored in the memory cache. | 17408 (17 KB) | No. |
 | maxConnections | Set the maximum number of allowed open HTTP connections. | 50 | No. |
 | maxErrorRetry | Set the maximum number of retry attempts for failed (retriable) requests. | 3 | No. |
 | minRecordLength | The minimum size of an object (in bytes) that should be stored in the data store. | 16384 | No. |
 | path | The local path of the AEM datastore. | `crx-quickstart/repository/datastore` | No. |
 | proxyHost | Set the optional proxy host the client will connect through. | | No. |
 | proxyPort | Set the optional proxy port the client will connect through. | | No. |
-| s3Bucket | Name of the S3 bucket to use. | | Yes |
+| s3Bucket | Name of the S3 bucket. | | Yes |
 | s3EndPoint | S3 REST API endpoint. | | No. |
-| s3Region | Region where the bucket resides. | Region where AWS instance is running. | No. |
+| s3Region | Region where the bucket resides. See this [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) for more details.| Region where AWS instance is running. | No. |
 | socketTimeout | Set the amount of time to wait (in milliseconds) for data to be transferred over an established, open connection before the connection times out and is closed. | 50000 | No. |
 | stagingPurgeInterval | The interval (in seconds) for purging finished uploads from the staging cache. | 300 | No. |
 | stagingRetryInterval | The interval (in seconds) to retry failed uploads. | 600 | No. |
-| stagingSplitPercentage | The percentage of `cacheSize` to use for staging asynchronous uploads. | 10 | No. |
-| uploadThreads | The number of threads used for asynchronous uploads. | 10 | No. |
-| writeThreads | The number of concurrent threads to use for writing via S3 Transfer Manager. | 10 | No. |
+| stagingSplitPercentage | The percentage of `cacheSize` to be used for staging asynchronous uploads. | 10 | No. |
+| uploadThreads | The number of upload threads used for asynchronous uploads. | 10 | No. |
+| writeThreads | The number of concurrent threads used for writing via S3 Transfer Manager. | 10 | No. |
 
+<!---
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -283,6 +284,7 @@ You can use the configuration file with the options detailed below.
   </tr>
  </tbody>
 </table>
+-->
 
 ### DataStore Caching {#data-store-caching}
 
