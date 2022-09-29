@@ -55,8 +55,6 @@ The following OSGi configuration settings (listed according to bundle) are relev
 * The **Admin Password** should be changed after installation to ensure the [security](/help/sites-administering/security-checklist.md) of your instance.
 * Other changes should not be necessary and care must be taken as they can affect access to the repository.
 
-**Wiki Mail Service** Configure the email settings for emails sent by a wiki.
-
 **Apache Felix OSGi Management Console** Configure:
 
 * **Plugins**, the main navigation items (console plugins) to be available in the **Apache Felix Web Management Console** as top level menu items. Disable any you do not need as each requires space and resources.
@@ -440,10 +438,6 @@ Controls the HTML Parser for the CQ rewriter.
 **Day Commons JDBC Connections Pool** Configure access to an external database being used as a source for content.
 
 This is a Factory Configuration, so multiple instances can be configured.
-
-**Adobe CQ Media DPS Sessions Service** Manage DPS Sessions for use with Publications.
-
-In particular you can define the `dps.session.service.url.name`: default is set to [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **CDN Rewriter** Communication between AEM and a CDN must be ensured so that assets/binaries are delivered to end user in a secure way. This involves two tasks:
 
