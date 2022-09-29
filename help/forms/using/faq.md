@@ -94,8 +94,8 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Why are some fonts displayed in the HTML form different from the ones used while designing the form?
 
-   Answer: HTML5 forms do not embed fonts (in contrast to PDF forms where fonts are embedded inside the form). For the HTML version of form to render as expected, ensure that the fonts specified in the XDP are available on the server and on the client machine. If the required fonts are not available on server, then fall-back fonts are used. Moreover, if you use fonts in Form Template that are not available on the client device, then default fonts of the browser are used to render the text.
-
+   Answer: HTML5 Forms do not allow embedding fonts (in contrast to PDF forms where fonts are embedded inside the form). For the HTML version of a form to render as expected, ensure that the fonts are available in the CRX Repository (AEM Content Repository) of your AEM Forms server and on the machine that has AEM Designer installed. When the fonts are not available in the CRX Repository of your AEM Forms server or at the location where AEM Designer is installed, the form is rendered with fallback fonts. 
+   
 1. Are vAlign and hAlign attributes supported in HTML forms?
 
    Yes, the vAlign and hAlign attributes are supported. The vAlign attribute is not supported in Internet Explorer and in multiline field.
