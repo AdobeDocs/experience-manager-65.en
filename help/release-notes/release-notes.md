@@ -202,7 +202,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 >[!NOTE]
 >
->Adobe does not recommend removing or uninstalling the [!DNL Experience Manager] 6.5.14.0 package. In case, you want to uninstall [!DNL Experience Manager] 6.5.14.0 package, it is recommended to take a backup of the CRX repository of your AEM Forms server.
+>Adobe does not recommend removing or uninstalling the [!DNL Experience Manager] 6.5.14.0 package. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
