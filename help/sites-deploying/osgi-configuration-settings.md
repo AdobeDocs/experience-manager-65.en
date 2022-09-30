@@ -239,11 +239,6 @@ Various parameters can be set, including:
 
 * **Default Extensions** The list of extensions for which the default behavior will be used. This means that the last path segment of the resource type can be used as the script name.
 
-**Day Commons GFX Font Helper** When rendering graphics you can use DrawText to embed text. For this you can also install your own fonts:
-
-* Define the **Font Path** to be searched for project specific fonts.
-  For example, `/apps/myapp/fonts`.
-
 **Apache HTTP Components Proxy Configuration** Proxy configuration for all code using the Apache HTTP client, used when a HTTP is made; for example upon replication.
 
 When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **https://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
