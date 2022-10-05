@@ -151,7 +151,7 @@ To configure the service, you can use the [Web Console](/help/sites-deploying/co
   <tr>
    <td>Models To Purge</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>The ID of the workflow models to purge. The ID is the path to the model node, for example:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Specify no value to purge instances of all workflow models.</p> <p>To specify multiple models, click the + button in the Web Console. </p> </td>
+   <td><p>The ID of the workflow models to purge. The ID is the path to the model node, for example:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>To specify multiple models, click the + button in the Web Console. </p> <p>Do not specify any value to purge instances of all workflow models.</p> </td>
   </tr>
   <tr>
    <td>Workflow Age</td>
