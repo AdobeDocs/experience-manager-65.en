@@ -19,6 +19,10 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 >Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (such as _React_). [Learn more](/help/sites-developing/spa-overview.md).
 >
 
+>[!NOTE]
+>
+>Various examples are based on the Geometrixx sample content, which is no longer shipped with AEM, having been replaced by We.Retail. See the document [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx) for how to download and install Geometrixx.
+
 Design your web pages so that they adapt to the client viewport in which they are displayed. With responsive design, the same pages can be effectively displayed on multiple devices in both orientations. The following image demonstrates some ways in which a page can respond to changes in viewport size:
 
 * Layout: Use single-column layouts for smaller viewports, and multiple-column layouts for larger viewports.
