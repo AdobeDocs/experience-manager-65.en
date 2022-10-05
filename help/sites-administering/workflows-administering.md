@@ -106,7 +106,7 @@ To investigate failures, then resume or terminate the workflow afterwards, use t
 1. Select a specific item, then the appropriate action:
 
    ![wf-47](assets/wf-47.png)
-ƒ
+
 ## Regular Purging of Workflow Instances {#regular-purging-of-workflow-instances}
 
 Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository.
