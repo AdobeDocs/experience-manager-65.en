@@ -48,8 +48,8 @@ A range of consoles are available for administering your workflows. Use the [glo
    * Payload path: Select a specific path
    * Workflow model: Select a workflow model
    * Assignee: Select a workflow Assignee
-   * Type: Task, Workflow item or Workflow Failure
-   * Task Status: Active, Complete or Terminated
+   * Type: Task, Workflow item, or Workflow Failure
+   * Task Status: Active, Complete, or Terminated
    * Where I Am: Owner AND Assignee, Owner only, Assignee only
    * Start Date: Start date before or after a specified date
    * End Date: End date before or after a specified date
@@ -90,13 +90,13 @@ A range of consoles are available for administering your workflows. Use the [glo
 When a workflow fails, AEM provides the **Failures** console to allow you to investigate and take appropriate action once the original cause has been handled:
 
 * **Failure Details**
-  Opens a window to show the **Failure Message**, **Step** and **Failure Stack**.
+  Opens a window to show the **Failure Message**, **Step**, and **Failure Stack**.
 
 * **Open History**
   Shows details of the workflow history.
 
-* **Retry Step** Executes the Script Step component instance again. Use the Retry Step command after you have fixed the cause of the original errror. For example, retry the step after you fix a bug in the script that the Process Step executes.
-* **Terminate** Terminate the workflow if the error has caused an irreconsilable situation for the workflow. For example, the workflow can rely on environmental conditions such as information in the respository that are no longer valid for the workflow intance.
+* **Retry Step** Executes the Script Step component instance again. Use the Retry Step command after you have fixed the cause of the original error. For example, retry the step after you fix a bug in the script that the Process Step executes.
+* **Terminate** Terminate the workflow if the error has caused an irreconcilable situation for the workflow. For example, the workflow can rely on environmental conditions such as information in the repository that are no longer valid for the workflow instance.
 * **Terminate and Retry** Similar to **Terminate** except that a new workflow instance is started using the original payload, title, and description.
 
 To investigate failures, then resume or terminate the workflow afterwards, use the following steps:
@@ -106,12 +106,12 @@ To investigate failures, then resume or terminate the workflow afterwards, use t
 1. Select a specific item, then the appropriate action:
 
    ![wf-47](assets/wf-47.png)
-
+ƒ
 ## Regular Purging of Workflow Instances {#regular-purging-of-workflow-instances}
 
 Minimizing the number of workflow instances increases the performance of the workflow engine, so you can regularly purge completed or running workflow instances from the repository.
 
-Configure **Adobe Granite Workflow Purge Configuration** to purge workflow instances according their age and status. You can also purge workflow instances of all models or of a specific model.
+Configure **Adobe Granite Workflow Purge Configuration** to purge workflow instances according to their age and status. You can also purge workflow instances of all models or of a specific model.
 
 You can also create multiple configurations of the service to purge workflow instances that satisfy different criteria. For example, create a configuration that purges the instances of a particular workflow model when they are running for much longer than the expected time. Create another configuration that purges all completed workflows after a certain number of days to minimize the size of the repository.
 
@@ -177,7 +177,7 @@ You can set the maximum size of the inbox by configuring the **Adobe Granite Wor
 
 ## Using Workflow variables for customer owned datastores {#using-workflow-variables-customer-datastore}
 
-Data processed by workflows is stored in the Adobe provided storage (JCR). This data can be sensitive in nature. You may want to save all the user defined metadata/data in your own managed storage instead of Adobe provided storage. These sections describes how to set up these variables for external storage.
+Data processed by workflows is stored in the Adobe provided storage (JCR). This data can be sensitive in nature. You may want to save all the user defined metadata/data in your own managed storage instead of Adobe provided storage. These sections describe how to set up these variables for external storage.
 
 ### Set the model to use external storage of metadata {#set-model-for-external-storage}
 
@@ -185,7 +185,7 @@ At the level of workflow model, a flag is provided to indicate that the model (a
 
 The property *userMetadataPersistenceEnabled* will be stored on the *jcr:content node* of the workflow model. This flag will be persisted in workflow metadata as *cq:userMetaDataCustomPersistenceEnabled*.
 
-The illustration below shows have to set the flag on a workflow.
+The illustration below shows how to set the flag on a workflow.
 
  ![workflow-externalize-config](assets/workflow-externalize-config.png)
 
