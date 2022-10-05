@@ -13,6 +13,17 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 ---
 # Query Builder Predicate Reference{#query-builder-predicate-reference}
 
+>[!CAUTION]
+>
+>The information on this page is not exhaustive.
+>
+>For full information, see the list under **Available predicates** on the Query Builder Debugger console; for example, at:
+>* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>
+>For example, see:
+>
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29) 
+
 ## General {#general}
 
 * [root](#root)
