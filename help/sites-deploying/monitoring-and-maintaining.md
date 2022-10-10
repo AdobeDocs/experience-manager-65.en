@@ -123,13 +123,13 @@ To purge versions of a web site, proceed as follows:
    ![Version Purge Configuration](assets/version-purge-configuration.png)
 
     * **Purge paths**
-      Set the start path of the content to be purged (e.g. `/content/wknd`).
+      Set the start path of the content to be purged; for example, `/content/wknd`.
 
       >[!CAUTION]
       >
-      >It is strongly recommended that your define multiple paths, for each of your websites.
+      >It is strongly recommended that you define multiple paths, for each of your websites.
       >
-      >Defining a path with too many children lengthen the time to perform the purge.
+      >Defining a path with too many children can significantly lengthen the time needed to perform the purge.
 
     * **Purge versions recursively**
 
