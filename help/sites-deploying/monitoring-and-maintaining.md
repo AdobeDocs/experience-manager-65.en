@@ -95,42 +95,59 @@ This section deals with maintenance operations related to the versioning feature
 
 ### Overview {#overview}
 
-The **Purge Versions** tool is available in the **[Tools](/help/sites-administering/tools-consoles.md) console** under **Versioning** or directly at:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Start Path** An absolute path on which the purge must be done. You can select the Start Path by clicking the repository tree navigator.
-
-**Recursive** When purging data you can choose between performing the operation on one node or on a whole hierarchy by selecting Recursive. In the last case the given path defines the root node of the hierarchy.
-
-**Maximum versions to keep** The maximum number of versions to be kept for a node. When these number exceeds this value, the oldest versions are purged.
-
-**Maximum version age** The maximum age of the version of a node. When the age of a version exceeds this value, it is purged.
-
-**Dry Run** Because removing versions of your content is definite and can not be reverted without restoring a backup, the Purge Versions tool provides a dry run mode that allows you to preview the purged versions. To launch a dry run of the purge process, click Dry Run.
-
-**Purge** Launch the purge of the versions on the node defined by the Start Path.
+The **Purge Versions** tool is available as a weekly maintenance task. Before using for the first time it needs to be added, then configured. After that it can be run on request, or on a weekly basis.
 
 ### Purging Versions of a Web Site {#purging-versions-of-a-web-site}
 
 To purge versions of a web site, proceed as follows:
 
-1. Navigate to the **[Tools](/help/sites-administering/tools-consoles.md)** **console**, select **Versioning** and double-click **Purge Versions.**
-1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
+1. Navigate to the **[Tools](/help/sites-administering/tools-consoles.md)** **console**, select **Operation**, **Maintenance**, then **Weekly Maintenance Window**. 
 
-    * If you want to only purge the node defined by your path, unselect **Recursive**.
-    * If you want to purge the node defined by your path and its descendants select **Recursive**.
+1. Select **+ Add** from the top toolbar.
 
-1. Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+   ![Add Version Purge](assets/version-purge-add.png)
 
-1. Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
+1. Select **Version Purge** from the drop down list in the **Add New Task** dialog. Then **Save**.
 
-1. Click **Dry Run** to preview what the purge process would do.
-1. Click **Purge** to launch the process.
+   ![Add Version Purge](assets/version-purge-add-new-task.png)
+
+1. The **Version Purge** task will be added. Use the card actions to:
+   * Select - will reveal additional actions in the top toolbar
+   * Run - to run the configured purge immediately
+   * Configure - to configure the weekly purge task
+
+   ![Version Purge Actions](assets/version-purge-actions.png)
+
+1. Select the **Configure** action to open the Web Console for **Day CQ WCM Version Purge Task**, where you can configure:
+
+   ![Version Purge Configuration](assets/version-purge-configuration.png)
+
+    * **Purge paths**
+      Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
+
+    * **Purge versions recursively**
+
+      * Unselect if you want to only purge the node defined by your path.
+      * Select if you want to purge the node defined by your path and its descendants.
+
+    * **Maximum number of versions**
+      Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+
+    * **Minimum number of versions**
+      Set the minimum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+
+    * **Maximun version age**
+      Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
+
+   Then **Save**.
+
+1. Navigate/return to the **Weekly Maintenance Window** window and select **Run** to launch the process immediately.
 
 >[!CAUTION]
+>
+>You can use the Classic UI dialog to perform a **Dry Run** of your configuration:
+>
+>* http://localhost:4502/etc/versioning/purge.html
 >
 >Purged nodes can not be reverted without restoring the repository. You should take care of your configuration, so we recommend you to always perform a dry run before purging.
 
