@@ -123,7 +123,7 @@ To purge versions of a web site, proceed as follows:
    ![Version Purge Configuration](assets/version-purge-configuration.png)
 
     * **Purge paths**
-      Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
+      Set the start path of the content to be purged (e.g. `/content/wknd`).
 
       >[!CAUTION]
       >
