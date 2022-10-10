@@ -125,6 +125,12 @@ To purge versions of a web site, proceed as follows:
     * **Purge paths**
       Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
 
+      >[!CAUTION]
+      >
+      >It is strongly recommended that your define multiple paths, for each of your websites.
+      >
+      >Defining a path with too many children lengthen the time to perform the purge.
+
     * **Purge versions recursively**
 
       * Unselect if you want to only purge the node defined by your path.
@@ -169,7 +175,7 @@ The process lists all the nodes that have been processed. During the process, a 
 Moreover the console provides useful information about the versions:
 
 * `V 1.0`: the version number.
-* `V 1.0.1`&#42;: the star indicates that the version is the current one.
+* `V 1.0.1`&#42;: the star indicates that the version is the current (base) version and cannot be purged.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: the date of the version.
 
