@@ -157,7 +157,7 @@ The classic UI provides a **Dry Run** option from:
 
 * http://localhost:4502/etc/versioning/purge.html
 
-The process list all the nodes that have been processed. During the process, a node can have one of the following status:
+The process lists all the nodes that have been processed. During the process, a node can have one of the following status:
 
 * `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.
 
