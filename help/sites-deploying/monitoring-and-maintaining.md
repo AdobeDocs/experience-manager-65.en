@@ -95,48 +95,69 @@ This section deals with maintenance operations related to the versioning feature
 
 ### Overview {#overview}
 
-The **Purge Versions** tool is available in the **[Tools](/help/sites-administering/tools-consoles.md) console** under **Versioning** or directly at:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Start Path** An absolute path on which the purge must be done. You can select the Start Path by clicking the repository tree navigator.
-
-**Recursive** When purging data you can choose between performing the operation on one node or on a whole hierarchy by selecting Recursive. In the last case the given path defines the root node of the hierarchy.
-
-**Maximum versions to keep** The maximum number of versions to be kept for a node. When these number exceeds this value, the oldest versions are purged.
-
-**Maximum version age** The maximum age of the version of a node. When the age of a version exceeds this value, it is purged.
-
-**Dry Run** Because removing versions of your content is definite and can not be reverted without restoring a backup, the Purge Versions tool provides a dry run mode that allows you to preview the purged versions. To launch a dry run of the purge process, click Dry Run.
-
-**Purge** Launch the purge of the versions on the node defined by the Start Path.
+The **Purge Versions** tool is available as a weekly maintenance task. Before using for the first time it needs to be added, then configured. After that it can be run on request, or on a weekly basis.
 
 ### Purging Versions of a Web Site {#purging-versions-of-a-web-site}
 
 To purge versions of a web site, proceed as follows:
 
-1. Navigate to the **[Tools](/help/sites-administering/tools-consoles.md)** **console**, select **Versioning** and double-click **Purge Versions.**
-1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
+1. Navigate to the **[Tools](/help/sites-administering/tools-consoles.md)** **console**, select **Operation**, **Maintenance**, then **Weekly Maintenance Window**. 
 
-    * If you want to only purge the node defined by your path, unselect **Recursive**.
-    * If you want to purge the node defined by your path and its descendants select **Recursive**.
+1. Select **+ Add** from the top toolbar.
 
-1. Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+   ![Add Version Purge](assets/version-purge-add.png)
 
-1. Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
+1. Select **Version Purge** from the drop down list in the **Add New Task** dialog. Then **Save**.
 
-1. Click **Dry Run** to preview what the purge process would do.
-1. Click **Purge** to launch the process.
+   ![Add Version Purge](assets/version-purge-add-new-task.png)
+
+1. The **Version Purge** task will be added. Use the card actions to:
+   * Select - will reveal additional actions in the top toolbar
+   * Run - to run the configured purge immediately
+   * Configure - to configure the weekly purge task
+
+   ![Version Purge Actions](assets/version-purge-actions.png)
+
+1. Select the **Configure** action to open the Web Console for **Day CQ WCM Version Purge Task**, where you can configure:
+
+   ![Version Purge Configuration](assets/version-purge-configuration.png)
+
+    * **Purge paths**
+      Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
+
+    * **Purge versions recursively**
+
+      * Unselect if you want to only purge the node defined by your path.
+      * Select if you want to purge the node defined by your path and its descendants.
+
+    * **Maximum number of versions**
+      Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+
+    * **Minimum number of versions**
+      Set the minimum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+
+    * **Maximum version age**
+      Set the maximum version age in days (for each node) that you want to keep. Leave empty to not use this setting.
+
+   Then **Save**.
+
+1. Navigate/return to the **Weekly Maintenance Window** window and select **Run** to launch the process immediately.
 
 >[!CAUTION]
 >
+>You can use the Classic UI dialog to perform a [Dry Run](#analyzing-the-console) of your configuration:
+>
+>* http://localhost:4502/etc/versioning/purge.html
+>
 >Purged nodes can not be reverted without restoring the repository. You should take care of your configuration, so we recommend you to always perform a dry run before purging.
 
-### Analyzing the Console {#analyzing-the-console}
+#### Dry Run - Analyzing the Console {#analyzing-the-console}
 
-The **Dry Run** and **Purge** processes list all the nodes that have been processed. During the process, a node can have one of the following status:
+The classic UI provides a **Dry Run** option from:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+The process lists all the nodes that have been processed. During the process, a node can have one of the following status:
 
 * `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.
 
@@ -645,7 +666,7 @@ Some of these will be dependent on your operating system.
 
 ### Interpreting the request.log {#interpreting-the-request-log}
 
-This file registers basic information about every request made to AEM. From this valuable conclusions can be extracted.
+This file registers basic information about every request made to AEM. From this, valuable conclusions can be extracted.
 
 The `request.log` offers a built-in way to get a look at how long requests take. For development purposes it is useful to `tail -f` the `request.log` and watch for slow response times. To analyze a bigger `request.log` we recommend the [use of `rlog.jar` which allows you to sort and filter for response times](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -660,7 +681,7 @@ The request log registers each request made, together with the response made:
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-By totaling all the GET entries within a specific periods (e.g. over various 24 hour periods) you can make statements about the average traffic on your website.
+By totaling all the GET entries within specific periods (e.g. over various 24 hour periods) you can make statements about the average traffic on your website.
 
 #### Monitoring response times with the request.log {#monitoring-response-times-with-the-request-log}
 
