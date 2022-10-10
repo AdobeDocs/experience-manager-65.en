@@ -136,8 +136,8 @@ To purge versions of a web site, proceed as follows:
     * **Minimum number of versions**
       Set the minimum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
 
-    * **Maximun version age**
-      Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
+    * **Maximum version age**
+      Set the maximum version age in days (for each node) that you want to keep. Leave empty to not use this setting.
 
    Then **Save**.
 
@@ -662,7 +662,7 @@ Some of these will be dependent on your operating system.
 
 ### Interpreting the request.log {#interpreting-the-request-log}
 
-This file registers basic information about every request made to AEM. From this valuable conclusions can be extracted.
+This file registers basic information about every request made to AEM. From this, valuable conclusions can be extracted.
 
 The `request.log` offers a built-in way to get a look at how long requests take. For development purposes it is useful to `tail -f` the `request.log` and watch for slow response times. To analyze a bigger `request.log` we recommend the [use of `rlog.jar` which allows you to sort and filter for response times](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -677,7 +677,7 @@ The request log registers each request made, together with the response made:
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-By totaling all the GET entries within a specific periods (e.g. over various 24 hour periods) you can make statements about the average traffic on your website.
+By totaling all the GET entries within specific periods (e.g. over various 24 hour periods) you can make statements about the average traffic on your website.
 
 #### Monitoring response times with the request.log {#monitoring-response-times-with-the-request-log}
 
