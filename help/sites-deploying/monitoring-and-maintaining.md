@@ -145,15 +145,19 @@ To purge versions of a web site, proceed as follows:
 
 >[!CAUTION]
 >
->You can use the Classic UI dialog to perform a **Dry Run** of your configuration:
+>You can use the Classic UI dialog to perform a [Dry Run](#analyzing-the-console) of your configuration:
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
 >Purged nodes can not be reverted without restoring the repository. You should take care of your configuration, so we recommend you to always perform a dry run before purging.
 
-### Analyzing the Console {#analyzing-the-console}
+#### Dry Run - Analyzing the Console {#analyzing-the-console}
 
-The **Dry Run** and **Purge** processes list all the nodes that have been processed. During the process, a node can have one of the following status:
+The classic UI provides a **Dry Run** option from:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+The process list all the nodes that have been processed. During the process, a node can have one of the following status:
 
 * `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.
 
