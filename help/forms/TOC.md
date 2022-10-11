@@ -79,7 +79,6 @@ role: User
     + [Connecting AEM Forms with Adobe LiveCycle](using/aem-livecycle-connector.md)
     + [Configuring AEM Forms to submit form data to an AEM Forms on JEE process](using/submit-form-data-livecycle-process.md)
     + [AEM desktop app for AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
-    + [OAuth2 support for the mailing service](/help/forms/using//oauth2-support-for-mail-service.md)
 + Upgrade AEM Forms {#upgrade-aem-forms}
   + [Available upgrade paths](using/upgrade.md)
   + Upgrade AEM Forms on OSGi {#aem-forms-osgi-upgrade}
