@@ -64,7 +64,9 @@ The various roles that are involved to configure and use the capability and thei
 
 ### Connected Assets architecture {#connected-assets-architecture}
 
-Experience Manager allows you to connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. You can connect a maximum of four [!DNL Sites] deployments to a source remote DAM. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
+Experience Manager allows you to connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
+
+Evaluate the optimal number of Sites instances to connect to a remote DAM deployment. Adobe recommends to incrementally connect Sites instances to the deployment and test that there is no performance impact at the remote DAM, as each connected Sites instance contributes to the data traffic on the remote DAM.
 
 The following diagrams illustrate the supported scenarios:
 
@@ -258,9 +260,9 @@ Configure the Connected Assets feature only when you need to use the assets avai
 
 +++
 
-+++**How many [!DNL Sites] deployments can you connect to a remote DAM deployment after configuring Connected Assets?**
++++**Can you connect multiple [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets?**
 
-You can connect a maximum of four [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
+Yes, you can connect multiple [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
 
 +++
 
