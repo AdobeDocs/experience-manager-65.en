@@ -27,8 +27,6 @@ This handler stores the encrypted SAML response message in the user-node ( `user
 >[!NOTE]
 >
 >See [a demonstration of AEM and SAML integration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
->
->To read an end to end community article, click: [Integrating SAML with Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
 ## Configuring The SAML 2.0 Authentication Handler {#configuring-the-saml-authentication-handler}
 
