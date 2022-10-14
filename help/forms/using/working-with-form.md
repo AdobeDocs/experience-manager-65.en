@@ -24,6 +24,15 @@ To sync your form in AEM Forms app:
 
 To sync multiple forms, in the author instance, select multiple forms in forms manager and tap **Sync with AEM Forms App**. When the form is published, the AEM Forms app can connect to the publish server and fetch the forms.
 
+In case, the AFA Android app doesn't sync with AEM 6.5 instances out-of-the-box due to the security feature used in AFA webview. The users needs to update the server configuration property by using the following steps:
+
+1. Go to the **https://'[server]:[port]'system/console/configMgr**.
+1. Search for the **[!UICONTROL Adobe Granite Token Authentication Handler]** and click **[!UICONTROL Edit]**.
+1. Select the **[!UICONTROL None]** option from the dropdown menu for the **[!UICONTROL SameSite attribute for the login-token cookie]** attribute. 
+1. Click **[!UICONTROL Save]**.
+
+![Sync Image with AFA Android app](/help/forms/using/assets/afaandroid.png)
+
 >[!NOTE]
 >
 >Supported forms:
@@ -33,7 +42,8 @@ To sync multiple forms, in the author instance, select multiple forms in forms m
 >
 >Form level attachments are not supported in the adaptive forms fetched in the AEM Forms app synced with AEM Forms OSGi server. Users can attach files in a field, if the author has enabled field level attachments at the time of authoring the form.
 
+
 **To open and update a form**
 
-1. To open a form, tap the form in the home screen.
+1. To open a form, tap the **[!UICONTROL Form]** in the home screen.
 1. You can update the fields of the form, add attachments, save as draft, and submit it.
