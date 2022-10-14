@@ -24,7 +24,7 @@ To sync your form in AEM Forms app:
 
 To sync multiple forms, in the author instance, select multiple forms in forms manager and tap **Sync with AEM Forms App**. When the form is published, the AEM Forms app can connect to the publish server and fetch the forms.
 
-To sync AFA Android app with AEM 6.5 instances, the users needs to update the server configuration property by using the following steps:
+To sync AFA (AEM Form Application) Android app with AEM 6.5 instances, the users needs to update the server configuration property by using the following steps:
 
 1. Go to the **https://'[server]:[port]'system/console/configMgr**.
 1. Search for the **[!UICONTROL Adobe Granite Token Authentication Handler]** and click **[!UICONTROL Edit]**.
