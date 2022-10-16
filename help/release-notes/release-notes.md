@@ -12,14 +12,14 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 | Product | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Version  | 6.5.14.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
+| Version  | 6.5.15.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | August 25, 2022 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | November 24, 2022 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
-## What is included in [!DNL Experience Manager] 6.5.14.0 {#what-is-included-in-aem-6514}
+## What is included in [!DNL Experience Manager] 6.5.15.0 {#what-is-included-in-aem-6515}
 
-[!DNL Experience Manager] 6.5.14.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.15.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -29,52 +29,19 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets] {#assets-6514}
+## [!DNL Assets] {#assets-6515}
 
-* Unable to add or view tags for PDF files. (NPR-38452)
-* When you configure Connected Assets, save the configuration, reopen the configuration page, and test the already saved configuration, the test connection fails. (NPR-38507)
-* Unable to add users with numeric user ID to collections. (NPR-38538)
-* Experience Manager fails to process the FFmpeg installed on the author instance. (NPR-38568)
-* PDF processing fails with a `NoClassDefFoundError` error message. (NPR-38741)
-* The Add button under Custom Columns does not display correctly while creating an asset report for `de_DE` locale. (ASSETS-10641)
-* When you upload a duplicate asset to the Digital Asset Management repository and Experience Manager detects and provides an option to delete the duplicate asset, the original asset also gets deleted from the repository. (ASSETS-10826)
-* Experience Manager does not save the folder metadata correctly when you specify special characters in multifields. (ASSETS-10721)
-* Unable to save Asset properties until you click **[!UICONTROL Save & Close]** twice. (ASSETS-12040)
-* The screen reader only announces the `Relate` button. However, the `Relate` button also contains a submenu and can be expanded and collapsed. (ASSETS-6938)
-* Required ARIA (Accessible Rich Internet Applications) attributes `aria-expanded` for `role="combo box"` is missing. (ASSETS-6928)
-* In Card view, in the main file navigation area, the text content **[!UICONTROL Sort by]** does not have at least a 4.5:1 contrast ratio against their background color. (ASSETS-6926)
-* Experience Manager does not identify **[!UICONTROL Select a Workflow model]** dropdown list as a required field while creating a workflow model. (ASSETS-6871)
+* 
 
->[!NOTE]
->
->Smart Content Services will not be available to new Experience Manager Assets On-Premise customers effective September  1, 2022. No impact to existing On-Premise and Adobe Managed Services customers who already have this capability enabled.
+### [!DNL Dynamic Media] {#dynamic-media-6515}
 
-### [!DNL Dynamic Media] {#dynamic-media-6514}
+* 
 
-* Add support for password reset for Dynamic Media Classic user within Experience Manager. (ASSETS-10298)
-* Smart Crops generated for the images with transparent background have white background. (ASSETS-13148)
-* Dynamic Media do not generate thumbnails for EPS files. (ASSETS-10959)
-* Assets not getting uploaded to Dynamic Media account because of missing upload parameter. (ASSETS-13165)
-* Allow assets with names greater than 127 characters to be uploaded into Dynamic Media. (ASSETS-9991)
-* Enablement of JavaScript ES6 (ECMAScript 6) for Dynamic Media Viewers on Experience Manager 6.5.14.0. (NPR-38393)
-* Configuring the options in Dynamic Media **[!UICONTROL General Settings]** and **[!UICONTROL Publish Setup]** should not be accessible by non-administrator users. (ASSETS-8628)
-* Dynamic Media **[!UICONTROL General settings]** page does not show the already configured upload parameters correctly. (ASSETS-10245)
-* Experience Manager user interface does not show any failure message in case set creation/update fails. (ASSETS-10264)
-* Unable to apply a saved policy to one of the containers of an editable template to let you add Dynamic Media components. (ASSETS-11044)
-* Assets not getting uploaded to Dynamic Media account after running the Dynamic Media Reprocess Assets workflow on assets with incorrect job handle. (ASSETS-12084, ASSETS-9877)
-* Screen reader users are impacted by the `title` attribute not being provided for `<frame>` and `<iframe>` in the **[!UICONTROL Type to Search]** dialog box. (ASSETS-5483)
-* In screen readers, related and meaningful `alt=` value should be provided for multiple images that are present under **[!UICONTROL Assets]** heading in the left pane. (ASSETS-5644)
-* Screen reader does not read **[!UICONTROL Mute]** and **[!UICONTROL Unmute]** button on video using Dynamic Media component. (ASSETS-10169)
+## Commerce {#commerce-6515}
 
-## Commerce {#commerce-6514}
+* 
 
-* Commerce products are not getting sorted using the column header and it is using _remote_ sort mode; instead, Commerce products should be getting sorted using column headers with _local_ sort mode. (CQ-4343750, NPR-38498)
-
-
-
-## [!DNL Forms] {#forms-6514}
-
-<!--
+## [!DNL Forms] {#forms-6515}
 
 >[!NOTE]
 >
@@ -82,123 +49,65 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 >[!NOTE]
 >
->* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
+>[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
 
--->
+* 
 
-* When a file is attached to a multi-panel adaptive form and a draft of the adaptive form is saved, an error occurs. (NPR-38978)
-* When a user converts RGB profile to CMYK profile using createPDF2 Java API with AdobePDF settings, the option does not work with Java API. The option works fine with standalone DistillerClient application. (NPR-38858, CQ-4346181)
-* After installing AEM 6.5 Forms service pack 12 (6.5.12.0), all the options except to close the task become unavailable in Assign Task step of AEM Workflows. (NPR-38743)
-* In a Document of Record (DoR), some values in a table are truncated. (NPR-38657)
-* While previewing FormSet with Data XML, when the XDP contains a floating field, on previewing a FormSet, no data is displayed, but data is displayed when the Preview PDF option is used.
-* In Adaptive Forms, radio button and checkbox are not in tab order. (NPR-38645)
-* When you use the `Summary Step` to generate Document of Record (DoR) for a translated Adaptive Form after submission form, is not translated to localized language. (NPR-38567)
-* The disable retry option in AEM Workflow steps is not working as expected. The issue appears intermittently. (NPR-38547)
-* When Adaptive Form is submitted with Rich text field, the `an Internal Error while Submitting a Form` error occur. When the user brings focus on the rich text field, prior to form submission, the error does not occur. (NPR-38542)
-* An error `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` is logged. (NPR-38541)
-* When a user uploads a PDF to an Adaptive Form, the AEM Forms server becomes unresponsive. (NPR-38398)
-* On an AEM Forms on OSGi server, when you use Document Service API to certify PDF, it fails with error: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
-* On submitting the draft letters, the `Could not upload asset from xml input` error occurs. It has no impact on functionality. One opening a draft, the letter is rendered correctly. (CQ-4345979, CQ-4344418)
-* When a date is entered in German format and the `Preview with Data` option is used for a letter, the Date field is not rendered. (CQ-4345783)
-* When you build a web portal and generate the barcodes based on data, some barcodes are not decoded correctly. (CQ-4345743)
-* Postscript conversion to the PDF does not rendered output document with expected colors. (CQ-4345074)
-* Resource resolver causes intermittent submission failures and results in same stack trace to appear multiple times for a single submission. (CQ-4344764)
-* Users cannot open the modified draft letters that use the `cmDataUrl` parameter. The drafts opens fine for the first time. The issues starts appearing on subsequent tries. (CQ-4344418)  
-* When user enters the `&` symbol in an Interactive Communication (IC), the draft of corresponding IC fails to load. (CQ-4343969)
-* When you use style options in AEM Forms Designer to generate PCL files, the specified style is not applied to generated files. (CQ-4339573)
-* When page count is more than 15, automated conversion of dynamic XDP forms to Adaptive Form fails. This works fine when page count is less than 15. (NPR-35337)
-* When the Add to Favorites option is used, it does not indicate the status of the toggle to the screen reader. (NPR-37137)
-* In Form Data Model, the values after decimal in database backed Form Data Model are truncated for money and small money data type. . (CQDOC-19509)
-* When you select a navigation link for workflow in HTML Workspace, it is not indicated that the navigation link is selected. (NPR-37138)
-* Scribble Signature feature is not compatible to accessibility guidelines. (NPR-37596)
-* AEM Forms uses log4j 1.x. Support for log4j 1.x has reached end of life. (NPR-38273)
-* When you use MSSQL database as a data source in a Form Data Model and retrieve values, numbers after the decimal in the retrieve values are truncated. (CQ-4346190)
-* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899)
-* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
-* For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
-* Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
-* When you add repeatable panel to a non-XFA adaptive form and count of the repeatable panels in a non-XFA form is more than 15, adding a new instance can take up to 7-8 seconds. (NPR-37346)
+## Integrations {#integrations-6515}
 
-## Integrations {#integrations-6514}
+* 
 
-* Enable JavaScript ES6 (ECMAScript6 mode or better) compilation support for the minification of the `/libs/cq/analytics/widgets.js` library. (NPR-38433)
-* Enable JavaScript ES6 (ESMAScript6 mode or better) compilation support for the minification of the `/libs/cq/testandtarget/clientlibs/testandtarget/util.js` library. (NPR-38435)
-* The more content there is in `/content/campaigns`, the longer the call to `targeteditor.html` (`/libs/cq/personalization/touch-ui/content/targeteditor.html`) takes when you open the Page Editor. (NPR-38663)
+## Platform {#platform-6515}
 
-## Platform {#platform-6514}
+* 
 
-* Unable to log on to Package Manager to deploy updates. (NPR-38646)
-* In the assets tag picker user interface, tags appear in the order they were created. However, when there are many tags, viewing and managing the tags is difficult because they cannot be sorted. (CQ-4344279)
-* Create a notification in the user interface when a user being impersonated by an administrator or anyone else using the **[!UICONTROL Impersonate as]** field. (CQ-4345288)
-* In a Smart Collection, all assets were being shown when filtering using a saved search. (CQ-4345326)
-* An incorrect selected assets count is shown for **[!UICONTROL Add to collection]** when **[!UICONTROL Select All]** is selected. (CQ-4345424)
-* An exception message occurred when using the **[!UICONTROL Impersonate as]** field with a group or non-existent user. (CQ-4346098)
+## [!DNL Sites] {#sites-6515}
 
-## [!DNL Sites] {#sites-6514}
+* 
 
-* Unexpected path deletions occurred while upgrading Experience Manager from 6.5.12.0 to 6.5.13.0. (NPR-38532)
+### Accessibility {#access-6515}
 
-### Accessibility {#access-6514}
+* 
 
-* In Experience Manager Sites, when you expand the **[!UICONTROL Switch display format and adjust display setting]** button, then select **[!UICONTROL List View]**, the **[!UICONTROL Drag and Drop]** button is missing an accessible name. (SITES-2863, NPR-38760)
-* Screen reader must announce the accessible name such as `Show description for Archive` or `Show description for mini shopping cart`. However, the current accessible name is announced as `Info Circle button show description` for _all_ the tooltip information buttons. (SITES-3104)
-* Improve undo for components that do not have inlineEditing or dropTarget feature in `cq:editConfig`. (NPR-38361) <!-- version 2 (old) of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
-* The Style System drop-down may have been positioned at the top of the page instead of in-context of the component - for components that use `cq:editConfig` "afteredit: REFRESH_PAGE". (NPR-38384) <!-- version 2 (old) of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
-* Text component is misaligned when added to nested Layout Containers. (NPR-38193)
-* An empty style tab was displayed when there was no Style System configuration for a component. The tab is now hidden when no configuration is present. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
-* The property `useLegacyResponsiveBehaviour` works only when authenticated. (NPR-37996)
+### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-### [!DNL Content Fragments] {#sites-contentfragments-6514}
+* 
 
-* Content Fragments enumeration field validation issue the first time that the content fragment is loaded. (SITES-7140)
-* Need to add Campaign personalization fields in the Rich Text Editor of the Content Fragments editor. (NPR-38526)
-* When creating or editing a new content fragment in the Content Fragment editor, by way of the Dispatcher, the content fragment model is not saved. Furthermore, the Content Fragment editor is not closed, and an error is displayed in the browser log. (NPR-38691)
-* Persistent query validation error. (NPR-38523)
-* In the Content Fragment dialog box, under **[!UICONTROL Properties]**, the **[!UICONTROL Content Fragment]** field does not retain the saved path in the selection pop-up. (NPR-38632)
-* When you create a content fragment model and add an enumeration field of the drop-down type, the correct validation for _`is required`_ fails. (NPR-38237)
+### Core Components {#sites-corecomponents-6515}
 
-### Core Components {#sites-corecomponents-6514}
+* 
 
-* The new Page Email component should not force you into the classic user interface while editing `/etc`. (NPR-38648)
+### Page Editor {#sites-pageeditor-6515}
 
-### Page Editor {#sites-pageeditor-6514}
+* 
 
-* The user is not able to resize the component to the desired number of columns. (NPR-38688)
+### Template Editor {#sites-templateeditor-6515}
 
-### Template Editor {#sites-templateeditor-6514}
+* 
 
-* Missing **[!UICONTROL Delete]** and **[!UICONTROL Cut]** buttons on the Menu bar in an editable template after a `cq:actions` property was customized. (NPR-38521)
-* If a component includes another component, it is not possible to delete the component within the template structure because the **[!UICONTROL Delete]** button is missing from the Menu bar. (NPR-38585)
+## Sling {#sling-6515}
 
-## Sling {#sling-6514}
+* 
 
-* An increase in the number of open files on production was experienced due to a memory leak in module `DiscoveryLiteDescriptor` in `org.apache.sling.discovery.commons`, version 1.0.20. (NPR-38288)
-* In Experience Manager, from **[!UICONTROL Operations]** > **[!UICONTROL Diagnosis]**, you experience an error when you select **[!UICONTROL Download Status ZIP]** > **[!UICONTROL Download]**. (NPR-38514)
+## Translation projects {#translation-6515}
 
-## Translation projects {#translation-6514}
+* 
 
-* Launch for subpages that were added as a reference in a parent page were not getting promoted when the `isDeep` property was set to `false`. (NPR-38531)
+## User interface {#ui-6515}
 
-## User interface {#ui-6514}
+* 
 
-* When using **[!UICONTROL Select All]** > **[!UICONTROL Quick Publish]**, Experience Manager was not publishing all the assets or showing how many assets would be published in **[!UICONTROL Card]** view or **[!UICONTROL List]** view. (NPR-38546)
-* Incorrect selected assets count is shown for **[!UICONTROL Add to collection]** in **[!UICONTROL Select All]** case. (NPR-38633)
-* Disabled users can still be added to Collections and Projects. (NPR-38651)
-* Deleting a filter without saving the Search Form creates an error. (NPR-38698)
-* A user's session cannot obtain a `ModifiableValueMap` instance for the groups in order to establish the direct group membership. (NPR-38710)
+## Workflow {#workflow-6515}
 
-## Workflow {#workflow-6514}
+* 
 
-* Enable JavaScript ES6 (ESMAScript6 mode or better) compilation support for the minification of the `/libs/cq/inbox/gui/components/inbox/clientlibs/commons.js` library. (NPR-38304)
-* After the workflow runs and the process steps are complete, the same comment is repeated multiple times. (NPR-38364)
-
-## Install [!DNL Experience Manager] 6.5.14.0 {#install}
+## Install [!DNL Experience Manager] 6.5.15.0 {#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.14.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.15.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
 * The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.14.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
+* On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.15.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!NOTE]
 >
@@ -224,20 +133,20 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 **Automatic installation**
 
-There are two different methods that you can use to automatically install [!DNL Experience Manager] 6.5.14.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+There are two different methods that you can use to automatically install [!DNL Experience Manager] 6.5.15.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
 * Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
 >[!NOTE]
 >
->Experience Manager 6.5.14.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.15.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **Validate the installation**
 
 To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.14.0)` under [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.15.0)` under [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
@@ -308,7 +217,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 ## Known issues {#known-issues}
 
-<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
+<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
 * [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
@@ -346,10 +255,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.14.0: <!-- UPDATE FOR EACH NEW RELEASE -->
+The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.15.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [List of OSGi bundles included in Experience Manager 6.5.14.0](/help/release-notes/assets/65140_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.14.0](/help/release-notes/assets/65140_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.15.0](/help/release-notes/assets/65140_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.15.0](/help/release-notes/assets/65140_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites {#restricted-sites}
 
