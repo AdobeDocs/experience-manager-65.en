@@ -31,15 +31,15 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 ## [!DNL Assets] {#assets-6515}
 
-* 
+* Note
 
 ### [!DNL Dynamic Media] {#dynamic-media-6515}
 
-* 
+* Note
 
 ## Commerce {#commerce-6515}
 
-* 
+* Note
 
 ## [!DNL Forms] {#forms-6515}
 
@@ -51,55 +51,55 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 >
 >[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
 
-* 
+* Note
 
 ## Integrations {#integrations-6515}
 
-* 
+* Note
 
 ## Platform {#platform-6515}
 
-* 
+* Note
 
 ## [!DNL Sites] {#sites-6515}
 
-* 
+* Note
 
 ### Accessibility {#access-6515}
 
-* 
+* Note
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* 
+* Note
 
 ### Core Components {#sites-corecomponents-6515}
 
-* 
+* Note
 
 ### Page Editor {#sites-pageeditor-6515}
 
-* 
+* Note
 
 ### Template Editor {#sites-templateeditor-6515}
 
-* 
+* Note
 
 ## Sling {#sling-6515}
 
-* 
+* Note
 
 ## Translation projects {#translation-6515}
 
-* 
+* Note
 
 ## User interface {#ui-6515}
 
-* 
+* Note
 
 ## Workflow {#workflow-6515}
 
-* 
+* Note
 
 ## Install [!DNL Experience Manager] 6.5.15.0 {#install}
 
