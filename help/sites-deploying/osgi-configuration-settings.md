@@ -271,7 +271,7 @@ When creating a new configuration, do not make changes to the factory configurat
 
 >[!CAUTION]
 >
->When changing the setting for either **Minify** or **Gzip** you will also need to delete the contents of `/var/clientlibs`. This is a cached version of the clientlibs and will be rebuilt when next requested.
+>When changing the setting for either **Minify** or **Gzip** you will also need to delete the contents of clientlibs cache. Refer to this [Knowledge Base article](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) for details.
 
 >[!NOTE]
 >
