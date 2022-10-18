@@ -277,7 +277,7 @@ The email messages may contain a link that opens the task in AEM Forms workspace
 >
 >* To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
 >
->* Email notifications for forwarding of Drafts appear only when the drafts are forwarded after submitting the task in the AEM Forms workspace. If the Drafts are forwarded from the startpoint of the AEM Forms workspace, no email notifications are sent in this case.
+>* If drafts are forwarded after submitting the task in the AEM Forms workspace, email notifications are sent. If the drafts are forwarded from the startpoint of the AEM Forms workspace, no email notifications are sent.
 
 When you complete a task through email, the task is removed from your To-do list in AEM Forms workspace.
 
