@@ -34,16 +34,16 @@ You can perform some actions without opening the task by clicking the icons that
 
 When opening and working on a task, the tools that are available to you depend on the task. Different tasks require you to perform different actions and, for this reason, some tools may or may not be available to you. The typical tasks that you may receive are described below.
 
-**Provide information**: You receive a task that requires you to complete and submit a form.
+* **Provide information**: You receive a task that requires you to complete and submit a form.
 
-**Review information**: You receive a task that requires you to review the information and sign off on the content.
+* **Review information**: You receive a task that requires you to review the information and sign off on the content.
 
-**Multiuser review**: You receive a task at the same time other users receive the task. You and the other users must either provide information or review the content, or both. The following tools may be available with this type of task:
+* **Multiuser review**: You receive a task at the same time other users receive the task. You and the other users must either provide information or review the content, or both. The following tools may be available with this type of task:
 
-* Viewing the instructions for the task
-* Viewing the completion status of all users who are assigned the task
-* Viewing the comments of all users who are assigned the task
-* Adding comments to the task yourself
+   * Viewing the instructions for the task
+   * Viewing the completion status of all users who are assigned the task
+   * Viewing the comments of all users who are assigned the task
+   * Adding comments to the task yourself
 
 Additional tools that may be available with any of the above tasks include the following:
 
