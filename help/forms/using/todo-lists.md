@@ -100,17 +100,17 @@ When you open and claim a task from a group or shared list, the task is moved fr
 
 After opening a task, the tabs that are displayed in the main pane and the tools that are available to you depend on the task. The tabs that you may see are described below:
 
-**Task Summary**: When a task opens, the Task Summary pane allows you to show information about the task, if it exists, using a URL specified in the process at Assign Task step. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end-user of AEM Forms workspace. This tab is not available, if the Task Summary URL does not exist.
+* **Task Summary**: When a task opens, the Task Summary pane allows you to show information about the task, if it exists, using a URL specified in the process at Assign Task step. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end-user of AEM Forms workspace. This tab is not available, if the Task Summary URL does not exist.
 
-**Details**: Provides some information about the current task and process that it belongs to.
+* **Details**: Provides some information about the current task and process that it belongs to.
 
-**Form**: Displays the form that is associated with the task. The form can be of many file types, including PDF, HTML, Guide, and SWF file. The form can look like a regular printable or web-based form or guide you through a series of wizard-style panels to gather information.
+* **Form**: Displays the form that is associated with the task. The form can be of many file types, including PDF, HTML, Guide, and SWF file. The form can look like a regular printable or web-based form or guide you through a series of wizard-style panels to gather information.
 
-**History**: Lists the tasks that are part of the process instance and the associated form, task assignments, and attachments for each task.
+* **History**: Lists the tasks that are part of the process instance and the associated form, task assignments, and attachments for each task.
 
-**Attachments**: Displays existing attachments that are associated with the task and add attachments, if necessary.
+* **Attachments**: Displays existing attachments that are associated with the task and add attachments, if necessary.
 
-**Notes**: Displays the existing notes associated with the task and add notes, if necessary.
+* **Notes**: Displays the existing notes associated with the task and add notes, if necessary.
 
 When working on a task, the tools you may see and actions you can take are described below.
 
