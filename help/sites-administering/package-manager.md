@@ -506,7 +506,7 @@ Prior to installation of your package, Package Manager automatically creates a s
 >* If you are installing digital assets, you must:
 >  First, deactivate the WorkflowLauncher.
 >  Use the Components menu option of the OSGi console to deactivate 
-   `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* Next, when installation is complete, reactivate the WorkflowLauncher.
 >
 >Deactivating the WorkflowLauncher ensures that the Assets importer framework does not (unintentionally) manipulate the assets upon installation.
