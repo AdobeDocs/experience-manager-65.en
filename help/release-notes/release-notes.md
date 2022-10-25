@@ -95,7 +95,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 ## User interface {#ui-6515}
 
-* Note
+* Note goes here
 
 ## Workflow {#workflow-6515}
 
