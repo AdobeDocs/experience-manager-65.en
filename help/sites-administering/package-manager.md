@@ -501,6 +501,16 @@ Prior to installation of your package, Package Manager automatically creates a s
 
 1. The Activity Log details the progress of the installation.
 
+>[!CAUTION]
+>
+>* If you are installing digital assets, you must:
+>  First, deactivate the WorkflowLauncher.
+>  Use the Components menu option of the OSGi console to deactivate 
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Next, when installation is complete, reactivate the WorkflowLauncher.
+>
+>Deactivating the WorkflowLauncher ensures that the Assets importer framework does not (unintentionally) manipulate the assets upon installation.
+
 Once the installation is complete and successful, the package list is updated and the word **Installed** appears in the package status.
 
 ### Reinstalling Packages {#reinstalling-packages}
