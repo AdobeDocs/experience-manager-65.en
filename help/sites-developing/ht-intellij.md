@@ -116,7 +116,7 @@ The last step required is to start AEM with the JVM options proposed by IntelliJ
 
 You can do this by starting the AEM jar file directly and adding these options, for example with the following command line:
 
-`java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart-5.6.1.jar`
+`java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
 You can also add these options to your start script in `crx-quickstart/bin/start` as shown below.
 
@@ -125,7 +125,7 @@ You can also add these options to your start script in `crx-quickstart/bin/start
 
 # default JVM options
 if [ -z "$CQ_JVM_OPTS" ]; then
- CQ_JVM_OPTS='-server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true'
+ CQ_JVM_OPTS='-server -Xmx1024m -Djava.awt.headless=true'
 fi
 
 CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y"
