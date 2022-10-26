@@ -27,7 +27,7 @@ All the examples in this procedure use Tomcat as the Application Server and impl
 1. Now, migrate the repository using the crx2oak migration tool. In order to do that, download the latest version of crx2oak from [this location](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
    ```
 
 1. Delete the necessary properties in the sling.properties file by doing the following:
