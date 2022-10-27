@@ -34,7 +34,7 @@ When you create a Spin Set or an Image Set, or upload PDFs for page extraction, 
 
 ## Unsupported web browser and operating system combinations for Dynamic Media {#unsupported-browser-os}
 
-Dynamic Media do not support the following web browser and operating system combinations.
+Dynamic Media does not support the following web browser and operating system combinations.
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
