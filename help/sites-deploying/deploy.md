@@ -171,16 +171,10 @@ In the following section we describe the **standalone installation**. For detail
 
 1. To start up the instance in a GUI environment, just double-click the **`cq-quickstart-6.5.0.jar`** file.
 
-   Alternative, you can launch AEM from the command line. For a 32-bit Java VM enter the following:
+   Alternative, you can launch AEM from the command line:
 
    ```shell
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
-   ```
-
-   For a 64-bit VM, enter:
-
-   ```shell
-       java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
 AEM will take a few minutes to unpack the jar file, install itself, and start up. The above procedure results in:
