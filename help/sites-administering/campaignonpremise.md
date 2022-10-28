@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
 ---
+
 # Integrating with Adobe Campaign Classic {#integrating-campaign-classic}
 
 By integrating AEM with Adobe Campaign, you can manage email delivery, content, and forms directly in AEM. Configuration steps in both Adobe Campaign Classic and AEM are needed to enable bidirectional communication between solutions.
