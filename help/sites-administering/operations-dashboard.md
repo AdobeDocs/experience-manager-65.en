@@ -322,6 +322,12 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
  </tbody>
 </table>
 
+### Health Check Configuration {#health-check-configuration}
+
+By default, for an out-of-the-box AEM instance, the health checks run every 60 seconds.
+
+You can configure the **Period** with the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) **Query Health Check Configuration** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics). 
+
 ## Monitoring with Nagios {#monitoring-with-nagios}
 
 The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans. The below example illustrates how to add a check that shows used memory on the server running AEM.
