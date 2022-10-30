@@ -82,7 +82,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * Identified and removed Odin-specific code from Experience Manager 6.5 that was unnecessary. (SITES-3574)
 * When publishing a language copy fragment from the Content Fragment Editor user interface, the associated references were getting published under the English folder. (NPR-39182)
 * Date fields are getting pre-populated with a date. (NPR-39124)
-* Tags disappeared the second time you selected the radio button option. (NPR-39071)
+* Tags disappeared the second time that you select the radio button option. (NPR-39071)
 
 <!-- ### Core Components {#sites-corecomponents-6515}
 
@@ -118,11 +118,11 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 ## User interface {#ui-6515}
 
-* Javascript errors occur inside the file `multifield.js` for certain fields in the Content Fragment model in the Content Fragment model editor and also in the Content Fragment editor. (NPR-39350)
+* JavaScript errors occur inside the file `multifield.js` for certain fields in the Content Fragment model in the Content Fragment model editor and also in the Content Fragment editor. (NPR-39350)
 
 ## Workflow {#workflow-6515}
 
-* Workflow's that ran successfully on Experience Manager 6.5.11 were not running consistently on Experience Manager 6.5.13.  (NPR-39023)
+* Workflow's that ran successfully on Experience Manager 6.5.11 were not running consistently on 6.5.13 of Experience Manager. (NPR-39023)
 
 ## Install [!DNL Experience Manager] 6.5.15.0 {#install}
 
