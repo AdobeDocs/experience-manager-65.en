@@ -33,73 +33,96 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 * Note
 
-### [!DNL Dynamic Media] {#dynamic-media-6515}
+<!-- ### [!DNL Dynamic Media] {#dynamic-media-6515}
 
-* Note
+* Note -->
 
 ## Commerce {#commerce-6515}
 
-* Note
+* The creation of a store page failed, stopping the overall catalog rollout process. (CQ-4347181)
 
 ## [!DNL Forms] {#forms-6515}
 
 >[!NOTE]
 >
-> Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+> Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week following the scheduled [!DNL Experience Manager] Service Pack release.
 
 >[!NOTE]
 >
->[!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
+>Experience Manager Forms releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, December 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
 
-* Note
 
-## Integrations {#integrations-6515}
 
-* Note
+<!-- ## Integrations {#integrations-6515}
 
-## Platform {#platform-6515}
+* Note -->
 
-* Note
+<!-- ## Platform {#platform-6515}
+
+* Note -->
 
 ## [!DNL Sites] {#sites-6515}
 
-* Note
+* Experience Manager Sites Launches console was coming up blank. (NPR-39188)
+* References were not adjusted when the page that had the reference also needed to be activated during the page move. (NPR-39061)
+* When a Layout container is unhidden using parent container, layout changes are not getting applied to all components inside the nested container. (NPR-39041)
 
 ### Accessibility {#access-6515}
 
-* Note
+* The scrollable region of the Page Editor did not have keyboard access. (SITES-2936)
+* The color input field of the Page Editor is not labeled or visible on the screen. (SITES-2925)
+* The iframe in the Page Editor is missing a title attribute; it must have an accessible name. (SITES-2894)
+* The **[!UICONTROL Annotation]** button is missing its accessibility name. (SITES-2892)
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
-* Note
+* GraphQL raises an exception. For example, you cannot get variation tags from a content fragment. There is no variation with the name 'electric'. This issue is due to calling `getVariationTags` for a non-existing variation which raises an exception. (SITES-8898)
+* Sorting title orders in List view, both ascending and descending, how the titles with the order A, C, B. (SITES-7585)
+* Added tagging support for content fragment variations. (SITES-8168)
+* Identified and removed Odin-specific code from Experience Manager 6.5 that was unnecessary. (SITES-3574)
+* When publishing a language copy fragment from the Content Fragment Editor user interface, the associated references were getting published under the English folder. (NPR-39182)
+* Date fields are getting pre-populated with a date. (NPR-39124)
+* Tags disappeared the second time you selected the radio button option. (NPR-39071)
 
-### Core Components {#sites-corecomponents-6515}
+<!-- ### Core Components {#sites-corecomponents-6515}
 
-* Note
+* Note -->
+
+### Fluid XP {#sites-fluidxp-6515}
+
+* Enable ES6 compilation support for the client library `/libs/cq/gui/components/siteadmin/admin/restoretree/clientlibs/restoretree.js`. (NPR-39067)
+* The Multifield in a Content Fragment Model cannot be emptied and saved because validation occurs even if **[!UICONTROL Required]** is not selected. (NPR-39063)
+* In either **[!UICONTROL Copy]** or **[!UICONTROL Livecopy]** tasks, the `cq:targetMetadata` information was incorrectly being duplicated. This functionality caused two or more Experience Fragments in Experience Manager to point to the same exported offer in target. (NPR-38970)
+* Following a Restore Tree action, the message "Un-publication pending. #0 in the queue" appears in the user interface for a page that was never published in the first place. (NPR-38847)
 
 ### Page Editor {#sites-pageeditor-6515}
 
-* Note
+* Undo did not delete the last change made to text that was added into the component. Instead, when the page was refreshed, the entire component got deleted. (SITES-8597)
+* Upgrading `jquery-ui` to the latest version resulted in the Page Editor not working correctly. (NPR-38596)
 
-### Template Editor {#sites-templateeditor-6515}
 
-* Note
+<!-- ### Template Editor {#sites-templateeditor-6515}
+
+* Note -->
 
 ## Sling {#sling-6515}
 
-* Note
+* `Repoinit` did not support the creation or management of groups with whitespace in the principal name because the group name was treated as a string, and it did not support being quoted. (SLING-10952)
+* Logs are inadvertently filled with error messages and exceptions. (NPR-39024)
 
 ## Translation projects {#translation-6515}
 
-* Note
+* Destination page was getting added to the translation job for Updated Language Copies through the Projects panel; source page was not updated. (NPR-39278)
+* Translation process was failing while generating a preview for all the pages in a translation project. (NPR-39059)
+* If language locale does not exist, it is still getting created in a locale folder when reference rules are configured for an event. (NPR-39054)
 
 ## User interface {#ui-6515}
 
-* Note goes here
+* Javascript errors occur inside the file `multifield.js` for certain fields in the Content Fragment model in the Content Fragment model editor and also in the Content Fragment editor. (NPR-39350)
 
 ## Workflow {#workflow-6515}
 
-* Note
+* Workflow's that ran successfully on Experience Manager 6.5.11 were not running consistently on Experience Manager 6.5.13.  (NPR-39023)
 
 ## Install [!DNL Experience Manager] 6.5.15.0 {#install}
 
