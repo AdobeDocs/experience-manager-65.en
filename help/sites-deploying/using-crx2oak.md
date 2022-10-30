@@ -208,7 +208,7 @@ When migrating to a MongoDB replica set, make sure you set the `WriteConcern` pa
 You can do this by adding the `w=2` parameter at the end of the connection string, like this:
 
 ```xml
-java -Xmx4092m -XX:MaxPermSize=1024m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:27017/aem-author?replicaset=replica1&w=2
+java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:27017/aem-author?replicaset=replica1&w=2
 ```
 
 >[!NOTE]

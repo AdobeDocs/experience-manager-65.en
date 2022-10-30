@@ -347,7 +347,7 @@ In order to configure binaryless replication with S3, the following steps are re
 1. Make sure MongoDB is installed and an instance of `mongod` is running.
 1. Start AEM with the following command:
 
-   `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
+   `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Repeat steps 1 through 4 for the second AEM instance.
 1. Start the second AEM instance.

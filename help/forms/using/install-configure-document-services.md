@@ -9,6 +9,7 @@ discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 ---
+
 # Installing and configuring document services {#installing-and-configuring-document-services}
 
 AEM Forms provides a set of OSGi services to accomplish different document level operations, for example, services to create, assemble, distribute, and archive PDF documents, add digital signatures to limit access to documents, and decode Barcoded Forms. These services are included in AEM Forms add-on package. Collectively, these services are known as document services. The list of available document services and their major capabilities is as below:
@@ -278,14 +279,6 @@ Perform the following steps to configure IBM® SSL socket provider:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Windows Only) Configure Install Ink and Handwriting service {#configure-install-ink-and-handwriting-service}
-
-If you are running Microsoft® Windows Server, configure the Ink and Handwriting service. The service is required to open Microsoft® PowerPoint files which use inking capabilities of Microsoft® Office:
-
-1. Open the Server Manager. Click the **[!UICONTROL Server Manager]** icon on the Quick Launch tray.
-1. Click **[!UICONTROL Add Features]** in the **[!UICONTROL Features]** menu. Select the **[!UICONTROL Ink and Handwriting Services]** check box.
-1. **[!UICONTROL Select Features]** dialog box with **[!UICONTROL Ink and Handwriting Services]** selected. Click **[!UICONTROL Install]** and the service is installed.
-
 ### (Windows Only) Configure the file block settings for Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
 Change the Microsoft® Office trust center settings to enable the PDF Generator service to convert files created with older versions of Microsoft® Office.
@@ -471,7 +464,9 @@ On Microsoft® Windows, the PDF Generator service uses Adobe Acrobat to convert 
 
     1. Open [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) and download the `adobe-aemfd-pdfg-common-pkg-[version].zip` file from the Package Manager.
     1. Unzip the downloaded .zip file. Open the command prompt with administrative privileges.
-    1. Navigate to the [extracted-zip-file]`\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directory. Run the following batch file:
+    1. Navigate to the `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
+    1. Unzip the `adobe-aemfd-pdfg-common-pkg-[version]`.
+    1. Navigate to the `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` directory. Run the following batch file:
 
        `Acrobat_for_PDFG_Configuration.bat`
 
@@ -581,7 +576,7 @@ The Assembler service depends on the Reader Extensions service, Signature servic
 
 ## System Readiness Tool (SRT) {#SRT}
 
-The System Readiness tool checks if the machine is configured properly to run PDF Generator conversions. The tool generates report at the specified path. To run the tool:
+The [System Readiness tool](#srt-configuration) checks if the machine is configured properly to run PDF Generator conversions. The tool generates report at the specified path. To run the tool:
 
 1. Open command prompt. Navigate to the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools` folder.
 
@@ -589,46 +584,55 @@ The System Readiness tool checks if the machine is configured properly to run PD
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   The command generates report and also creates the srt_config.yaml file.
+   The command generates report and also creates the srt_config.yaml file. You can use it to configure options for SRT tool. It is optional to configure options for SRT tool. 
 
    >[!NOTE]
    >
    > * If the System Readiness Tool reports that the pdfgen.api file is not available in the Acrobat plug-ins folder then copy the pdfgen.api file from the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` directory to the `[Acrobat_root]\Acrobat\plug_ins` directory.
    >
-   > * You can use the srt_config.yaml file to configure various settings of . The format of the file is:
-   >
-         # SRT Configuration
-
-         # Note - Follow correct format to avoid parsing failures
-
-         # e.g. <param name>:<space><param value> 
-         
-         #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
-         locale: en
-
-         #aemTempDir: AEM Temp direcotry
-         aemTempDir:
-
-         #users: provide PDFG converting users list
-         #users:
-         # - user1
-         # - user2
-         users:
-
-         #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
-         profile:
-
-         #outputDir: directory where output files will be saved
-         outputDir:
-   >
-   
 1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
+
+### Configuring options for the SRT tool {#srt-configuration}
+
+You can use the srt_config.yaml file to configure various settings for the SRT tool. The format of the file is:
+
+   ``` shell
+
+      # =================================================================
+      # SRT Configuration
+      # =================================================================
+      #Note - follow correct format to avoid parsing failures
+      #e.g. <param name>:<space><param value> 
+      #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
+      locale: en
+      
+      #aemTempDir: AEM Temp direcotry
+      aemTempDir:
+      
+      #users: provide PDFG converting users list
+      #users:
+      # - user1
+      # - user2
+      users:
+      
+      #profile: select profile to run specific checks. Choose from [LCM], more will be added soon 
+      profile:
+      
+      #outputDir: directory where output files will be saved
+      outputDir:
+   
+   ```
+
+* **Locale:** It is a mandatory parameter. It supports English(en), German (de), French (fr), and Japanese(ja). The default value is en. It has no impact on PDF Generator services running on AEM Forms on OSGi.
+* **aemTempDir:** It is an optional parameter. It specifies temporary storage location of Adobe Experience Manager.
+* **users:** It is an optional parameter. You can specify a user to check if the user has required permissions and read/write access on directories required to run PDF Generator. If no user is specified, user-specific checks are skipped and displayed as failed in the report.
+* **outputDir:** Specify the location to save the SRT report. The default location is the current working directory of SRT tool.
 
 ## Troubleshooting
 
 If you face issues even after fixing all the problems reported by SRT tool, perform the following checks:
 
-Before perfroming the following checks, ensure that [System Readiness Tool](#SRT) does not report any error.
+Before performing the following checks, ensure that [System Readiness Tool](#SRT) does not report any error.
 
 +++ Adobe Acrobat
 
@@ -648,7 +652,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 * Ensure that 32-bit [supported version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft Office is installed and opening dialogs are cancelled for all applications.
 * Ensure a PDF Generator user is added in PDF configuration UI.
 * Ensure the PDF Generator user is a member of administrators group and the [Replace a process level token](#grant-the-replace-a-process-level-token-privilege) privilege is set for the user.
-* Ensure that the user is configured in PDF Generator UI and perform the following actions:
+* Ensure that the user is configured in PDF Generator UI and performs the following actions:
    1. Log in to the Microsoft® Windows with PDF Generator user.
    1. Open Microsoft® Office or OpenOffice applications and cancel all dialogs.
    1. Set AdobePDF as default printer.
@@ -659,9 +663,9 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 **Linux®**
 
-* Install the [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of OpenOffice. AEM Forms supports both 32-bit and 64-bit versions. After installing, open all the OpenOffice applications, cancel all the dialog windows, and close the applications. Reopen the applications and ensure no dialog box is displayed on opening an OpenOffice application.
+* Install the [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of OpenOffice. AEM Forms supports both 32-bit and 64-bit versions. After installing, open all the OpenOffice applications, cancel all the dialog windows, and close the applications. Reopen the applications and ensure that no dialog box is displayed on opening an OpenOffice application.
 
-* Create an environment variable `OpenOffice_PATH` and set it to point it to OpenOffice installtion is set in the [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) or the dt (Device Tree) profile.  
+* Create an environment variable `OpenOffice_PATH` and set it to point it to OpenOffice installation is set in the [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) or the dt (Device Tree) profile.  
 * If there are issues in installing OpenOffice, ensure that [32-bit libraries](#extrarequirements) required for OpenOffice installation are available.
 
 +++
@@ -682,7 +686,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
    ```
 
-* Ensure that JAVA_HOME_32 environment variable points to corect location.
+* Ensure that JAVA_HOME_32 environment variable points to correct location.
 
 **Linux® and Solaris™ (WebKit conversion route)**
 
@@ -762,7 +766,7 @@ Before perfroming the following checks, ensure that [System Readiness Tool](#SRT
 
 * If you have an existing license of Adobe Acrobat and it has expired, [Download the latest version of Adobe Application Manager](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), and migrating your serial number. Before [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Use the following commands to generate prov.xml and re-serialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
+   * Use the following commands to generate prov.xml and reserialize the existing install using the prov.xml file instead of commands provided in [migrating your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) number article.
 
          ```
 
