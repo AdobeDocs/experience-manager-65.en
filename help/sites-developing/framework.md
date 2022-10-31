@@ -226,7 +226,7 @@ The following is a description of the effects in the repository when moving or m
     >[!NOTE]
     >
     >The `cq:movedTo` property is only added to the moved or merged tag if either of these conditions are met:
-	>
+    >
     >1. Tag is used in content (meaning it has a reference) OR
     >1. Tag has children that have already been moved.
 
