@@ -200,7 +200,7 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
     >[!NOTE]
     >
     >The default installation location of JBoss Application Server:
-	>
+    >
     >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
     >* Linux: /opt/jboss/
 
