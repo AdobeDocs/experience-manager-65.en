@@ -199,9 +199,11 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
     
     >[!NOTE]
     >
-    > The default installation location of JBoss Application Server: 
-    > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-    > * Linux: /opt/jboss/
+    >The default installation location of JBoss Application Server:
+	>
+    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+    >* Linux: /opt/jboss/
+
 1. Start the application server.
 
 **Disabling the Configuration Manager bootstrap servlet**
@@ -1019,9 +1021,10 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
     
     >[!NOTE]
     >
-    > The default installation location of JBoss Application Server: 
-    > * Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
-    > * Linux: /opt/jboss/.
+    >The default installation location of JBoss Application Server:
+	>
+    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
+    >* Linux: /opt/jboss/.
  
 1. Start the application server service.
 

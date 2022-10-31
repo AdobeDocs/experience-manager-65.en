@@ -169,7 +169,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 >[!NOTE]
 >
-> Server-side validation validates the form model. It is recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
+>Server-side validation validates the form model. It is recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
 
 ### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
 

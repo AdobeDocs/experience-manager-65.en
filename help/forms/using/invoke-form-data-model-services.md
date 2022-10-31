@@ -125,7 +125,7 @@ The `GETOrder` operation takes the value in the `Order ID` form field as input f
 
 >[!NOTE]
 >
-> If you use the `success` callback function, the output values do not populate in the specified form fields.
+>If you use the `success` callback function, the output values do not populate in the specified form fields.
 
 ```javascript
 var operationInfo = {

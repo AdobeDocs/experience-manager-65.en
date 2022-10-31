@@ -194,10 +194,10 @@ Use the request attribute to retrieve the associated properties from the data so
 
    >[!NOTE]
    >
-   > * If you use a static template, overlay the head.jsp at:
-   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
-   > * If you use an editable template, overlay the aftemplatedpage.jsp at:
-   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >* If you use a static template, overlay the head.jsp at:
+   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >* If you use an editable template, overlay the aftemplatedpage.jsp at:
+   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Set [!DNL paramMap] for the request attribute. For example, include the following code in the .jsp file in the apps folder:
 

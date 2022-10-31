@@ -244,7 +244,7 @@ Set environment variables for 32-bit and 64-bit Java Development Kit, third-part
 >* On UNIX-based platforms, install OpenOffice as /root. If OpenOffice is not installed as root, the PDF Generator service fails to convert OpenOffice documents to PDF documents. If you are required to install and run OpenOffice as a non-root user, then provide sudo rights to the non-root user.  
 >* If you are using OpenOffice on a UNIX-based platform, run the following command to set the path variable:  
 >
-> `export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Only for IBM® WebSphere®) Configure IBM® SSL socket provider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -406,7 +406,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
    >[!NOTE]
    >
    >Your right to use fonts provided by parties other than Adobe is governed by the license agreements provided to you by such parties with those fonts, and is not covered under your license to use Adobe software. Adobe recommends that you review and ensure that you are in compliance with all applicable non-Adobe license agreements before using non-Adobe fonts with Adobe software, particularly concerning use of fonts in a server environment.
-   > When you install new fonts to the fonts folder, restart the AEM Forms instance.
+   >When you install new fonts to the fonts folder, restart the AEM Forms instance.
    >
 
 ### Configure a local user account to run the PDF Generator service  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
@@ -588,8 +588,8 @@ The [System Readiness tool](#srt-configuration) checks if the machine is configu
 
    >[!NOTE]
    >
-   > * If the System Readiness Tool reports that the pdfgen.api file is not available in the Acrobat plug-ins folder then copy the pdfgen.api file from the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` directory to the `[Acrobat_root]\Acrobat\plug_ins` directory.
-   >
+   >* If the System Readiness Tool reports that the pdfgen.api file is not available in the Acrobat plug-ins folder then copy the pdfgen.api file from the `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` directory to the `[Acrobat_root]\Acrobat\plug_ins` directory.
+
 1. Navigate to `[Path_of_reports_folder]`. Open the SystemReadinessTool.html file. Verify the report and fix the mentioned issues.
 
 ### Configuring options for the SRT tool {#srt-configuration}
