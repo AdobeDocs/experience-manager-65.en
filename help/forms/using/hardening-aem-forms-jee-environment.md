@@ -1022,7 +1022,7 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
     >[!NOTE]
     >
     >The default installation location of JBoss Application Server:
-	>
+    >
     >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
     >* Linux: /opt/jboss/.
  
