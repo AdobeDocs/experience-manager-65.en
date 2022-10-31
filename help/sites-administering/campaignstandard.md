@@ -232,3 +232,9 @@ When you [created an AEM-specific email delivery template,](#aem-email-delivery-
 1. Ensure that the **Enabled** checkbox is selected and then click **Save** to save your changes.
 
 Congratulations! You have completed the integration between AEM and Adobe Campaign Standard!
+
+## Next Steps {#next-steps}
+
+With both Adobe Campaign Classic and AEM configured, the integration is now complete.
+
+You can now learn how to create a newsletter in Adobe Experience Manager by continuing with [this document.](/help/sites-authoring/campaign.md)
