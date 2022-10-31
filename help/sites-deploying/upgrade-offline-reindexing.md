@@ -121,7 +121,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> The above index definition creation process is supported only from the `oak-run-1.12.0` version onwards. Targeting is done using the Granite repository bundle `com.adobe.granite.repository-x.x.xx.jar`.
+>The above index definition creation process is supported only from the `oak-run-1.12.0` version onwards. Targeting is done using the Granite repository bundle `com.adobe.granite.repository-x.x.xx.jar`.
 
 The above steps create a JSON file called `merge-index-definitions_target.json` which is the index definition.
 
@@ -135,7 +135,7 @@ Once this is done, copy the newly created checkpoint id and validate the lifetim
 
 >[!NOTE]
 >
-> This checkpoint will be deleted when the index is imported later.
+>This checkpoint will be deleted when the index is imported later.
 
 For more details, consult [checkpoint creation](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) from the Oak documentation.
 

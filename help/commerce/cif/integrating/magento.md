@@ -10,7 +10,7 @@ The Experience Manager and Adobe Commerce are seamlessly integrated using the Co
 
 >[!NOTE]
 >
-> Minimum supported GraphQL API version is 2.3.5. Certain features are only supported in newer versions or just in the Adobe Commerce edition.
+>Minimum supported GraphQL API version is 2.3.5. Certain features are only supported in newer versions or just in the Adobe Commerce edition.
 
 ## Architecture Overview {#overview}
 

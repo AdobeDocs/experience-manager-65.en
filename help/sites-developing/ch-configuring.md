@@ -35,9 +35,9 @@ or
 >
 >[Due to repository restructuring in AEM 6.4,](/help/sites-deploying/repository-restructuring.md) the location of ContextHub configurations changed from `/etc/cloudsettings` to:
 >
-> * `/libs/settings/cloudsettings`
-> * `/conf/global/settings/cloudsettings`
-> * `/conf/<tenant>/settings/cloudsettings`
+>* `/libs/settings/cloudsettings`
+>* `/conf/global/settings/cloudsettings`
+>* `/conf/<tenant>/settings/cloudsettings`
 
 ## Showing and Hiding the ContextHub UI {#showing-and-hiding-the-contexthub-ui}
 

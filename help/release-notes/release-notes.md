@@ -78,7 +78,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 >[!NOTE]
 >
-> Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 
 >[!NOTE]
 >

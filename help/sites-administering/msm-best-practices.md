@@ -48,9 +48,9 @@ In the case that a blueprint configuration is not referenced, rollouts can only 
 
 When creating a new site with live copy, it is advantageous to create blueprint configurations to ensure the availability of the full MSM feature set.
 
->[NOTE!]
+>[!NOTE]
 >
-> Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+>Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
 
 ## Components and Container Synchronization {#components-and-container-synchronization}
 
