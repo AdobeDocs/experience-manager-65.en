@@ -85,7 +85,7 @@ Your `AEMResourceTypeFilter` is now configured to retrieve the correct content f
 
 ## Create an AEM-Specific Email Delivery Template in Campaign {#aem-email-delivery-template}
 
-By default, AEM is not enabled in Adobe Campaign’s email templates. You must configure a new email delivery template that can be used to create emails using AEM content. To create an AEM-specific email delivery template follow these steps.
+By default, AEM is not enabled in Adobe Campaign’s email templates. You must configure a new email delivery template that can be used to create emails using AEM content. To create an AEM-specific email delivery template, follow these steps.
 
 1. Log into Adobe Campaign as an administrator.
 
@@ -105,9 +105,9 @@ By default, AEM is not enabled in Adobe Campaign’s email templates. You must c
 
 1. In the properties window, change the **Label** field to be descriptive of your new AEM template.
 
-1. Click the **Content** heading to expand it and select **Adobe Experience Manager** in the **Content source** drop down.
+1. Click the **Content** heading to expand it and select **Adobe Experience Manager** in the **Content source** drop-down.
 
-1. This will reveal the **Adobe Experience Manager account** field. Use the drop-down to select **Adobe Experience Manager instance (aemInstance)** user. This this is the default external user for the AEM integration.
+1. This reveals the **Adobe Experience Manager account** field. Use the drop-down to select **Adobe Experience Manager instance (aemInstance)** user. This is the default external user for the AEM integration.
 
 ![Configure template properties](assets/acs-template-properties.png)
 
@@ -179,7 +179,7 @@ You have configured replication to the AEM publish instance so your campaign rec
 
 ## Configure the AEM Externalizer {#externalizer}
 
-[The Externalizer](/help/sites-developing/externalizer.md) is an OSGi service in AEM that transforms a resource path into an external and absolute URL, which is necessary for AEM to serve content that Campaign can use. You must configure it in order for the Campaign integration to work.
+[The Externalizer](/help/sites-developing/externalizer.md) is an OSGi service in AEM that transforms a resource path into an external and absolute URL, which is necessary for AEM to serve content that Campaign can use. You must configure it for the Campaign integration to work.
 
 1. Sign into the AEM authoring instance as an administrator.
 1. From the global navigation side rail, select **Tools** &gt; **Operations** &gt; **Web Console** &gt; **OSGi Configuration** and search for **Day CQ link Externalizer**.
@@ -221,7 +221,7 @@ When you [created an AEM-specific email delivery template,](#aem-email-delivery-
 
 1. Ensure that the user has **Adobe Experience Manager** as the **Type**.
 
-1. In the **Connection** section define the following fields:
+1. In the **Connection** section, define the following fields:
 
    1. Server: This is the URL of your AEM authoring server. This should not end in a slash.
    1. Account: This is the `campaign-remote` user you [previously configured in AEM.](#campaign-remote-user)
