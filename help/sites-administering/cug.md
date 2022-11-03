@@ -16,7 +16,7 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 
 Closed User Groups (CUGs) are used to limit access to specific pages that reside within a published internet site. Such pages require the assigned members to login and provide security credentials.
 
-To configure such a area within your website you:
+To configure such an area within your website you:
 
 * [create the actual closed user group and assign members](#creating-the-user-group-to-be-used).
 
@@ -86,7 +86,7 @@ To apply the CUG to a page, or pages:
 
    >[!NOTE]
    >
-   >Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+   >CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
    >
    >For more information, see [this page](closed-user-groups.md#aem-livecopy).
 
