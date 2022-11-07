@@ -15,6 +15,7 @@ role: User
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
   + [New features summary](using/whats-new.md)
+  + [Frequently asked questions](/help/forms/using/frequently-asked-questions-faq.md)  
   + [Deprecated features](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Getting Started {#getting-started}
   + [Introduction to AEM Forms](using/introduction-aem-forms.md)
