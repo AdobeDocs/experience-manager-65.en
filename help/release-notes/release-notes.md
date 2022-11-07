@@ -73,6 +73,8 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * The color input field of the Page Editor is not labeled or visible on the screen. (SITES-2925)
 * The iframe in the Page Editor is missing a title attribute; it must have an accessible name. (SITES-2894)
 * The **[!UICONTROL Annotation]** button is missing its accessibility name. (SITES-2892)
+* The state of an ACTIVE user interface component (**[!UICONTROL Cut]**, **[!UICONTROL Copy]**, **[!UICONTROL Paste]**, **[!UICONTROL Insert Components]**, **[!UICONTROL Group]**, and so on) does not have at least a three to one luminosity contrast ratio with either the inner or outer adjacent background. (SITES-8889)
+
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
