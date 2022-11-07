@@ -155,9 +155,8 @@ Perform the following steps, on all the author and publish instances, to install
 
    >[!NOTE]
    >
-   > * The JDBC driver for MySQL is not provided with the sample. Ensure that you have provisioned for it and provide the required information to configure the JDBC connection pool.
-   > * Point your author and publish instances to use same database. Value of the JDBC connection URI field must be same for all the author and publish instances.
-   >
+   >* The JDBC driver for MySQL is not provided with the sample. Ensure that you have provisioned for it and provide the required information to configure the JDBC connection pool.
+   >* Point your author and publish instances to use same database. Value of the JDBC connection URI field must be same for all the author and publish instances.
 
 1. Leave other configurations as is and click **[!UICONTROL Save]**.
 

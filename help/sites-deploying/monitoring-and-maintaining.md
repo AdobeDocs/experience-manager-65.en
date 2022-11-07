@@ -445,11 +445,12 @@ In certain circumstances you may want to create a custom log file with a differe
    >| `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
    >
    >Note: When specifying a time/date:
-   > 1. You should "escape" literal text within a pair of single quotes (' ');
    >
-   >     this is to avoid certain characters being interpreted as pattern letters.
+   >1. You should "escape" literal text within a pair of single quotes (' ');
    >
-   >  1. Only use characters allowed for a valid file name anywhere in the option.
+   >    this is to avoid certain characters being interpreted as pattern letters.
+   >
+   >1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 

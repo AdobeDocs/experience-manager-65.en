@@ -292,7 +292,7 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 >[!NOTE]
 >
-> It is not possible to move a segment from one folder to another.
+>It is not possible to move a segment from one folder to another.
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 

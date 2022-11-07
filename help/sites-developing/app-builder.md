@@ -21,7 +21,7 @@ App Builder (previously known as Project Firefly) has been available to enterpri
 
 >[!NOTE]
 >
-> For AEM as a Cloud Service customers who want to leverage the App Builder, please go to [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/app-builder.html).
+>For AEM as a Cloud Service customers who want to leverage the App Builder, please go to [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/app-builder.html).
 
 ## Architecture {#architecture}
 

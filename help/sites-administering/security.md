@@ -81,7 +81,7 @@ The following tables list each item together with:
    <td>administrators</td>
    <td>Group</td>
    <td><p>Group that gives administrator rights to all its members. Only admin is allowed to edit this group.</p> <p>Has full access rights.</p> </td>
-   <td>If you set a 'deny-everyone' on a node, the administrators will only have access if it is enabled again for that group.</td>
+   <td>Even if you set a 'deny-everyone' on a node, the administrators still can access the node</td>
   </tr>
   <tr>
    <td>content-authors</td>

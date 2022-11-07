@@ -488,11 +488,12 @@ You can run data store garbage collection by:
 >When performing garbage collection in a clustered or shared data store setup (with Mongo or Segment Tar) the log might display warnings about the inability to delete certain blob IDs. This happens because blob IDs deleted in a previous garbage collection are incorrectly referenced again by other cluster or shared nodes which do not have information about the ID deletions. As a result, when garbage collection is performed it logs a warning when it tries to delete an ID that has already been deleted in the last run. This behaviour does not affect performance or functionality.
 
 >[!NOTE]
-> If you are using a shared datastore setup and datastore garbage collection is disabled, running the Lucene Binary cleanup task can suddenly increase the disk space used. To avoid this, you need to disable BlobTracker on all author and publish instances as follows:
 >
-> 1. Stop the AEM Instance.
-> 2. Add the `blobTrackSnapshotIntervalInSecs=L"0"` parameter in the `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` file. This parameter requires Oak 1.12.0, 1.10.2 or later.
-> 3. Re-start the AEM Instance.
+>If you are using a shared datastore setup and datastore garbage collection is disabled, running the Lucene Binary cleanup task can suddenly increase the disk space used. To avoid this, you need to disable BlobTracker on all author and publish instances as follows:
+>
+>1. Stop the AEM Instance.
+>2. Add the `blobTrackSnapshotIntervalInSecs=L"0"` parameter in the `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` file. This parameter requires Oak 1.12.0, 1.10.2 or later.
+>3. Re-start the AEM Instance.
 
 With newer versions of AEM, data store garbage collection can also be run on data stores shared by more than one repository. In order to be able to run data store garbage collection on a shared data store, take the following steps:
 

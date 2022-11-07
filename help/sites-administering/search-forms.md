@@ -325,9 +325,8 @@ The following predicates are available, dependent on the configuration:
 >* The common search predicates are defined in:
 >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
 >* Search predicates related only to siteadmin (classic UI) are located under:
-> `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * These are deprecated and only available for backward compatibility.
 >
 >This information is for reference only, you must not make changes to `/libs`.

@@ -271,8 +271,8 @@ As stated previously, the first case is the most common for AEM 6.5. Either way,
 
 >[!NOTE]
 >
-> If you want to change an existing Target Configuration:
+>If you want to change an existing Target Configuration:
 >
-> 1. Re-enter the Tenant ID.
-> 2. Re-connect to Target.
-> 3. Save the configuration.
+>1. Re-enter the Tenant ID.
+>2. Re-connect to Target.
+>3. Save the configuration.

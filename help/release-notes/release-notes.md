@@ -47,6 +47,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 >
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week following the scheduled [!DNL Experience Manager] Service Pack release.
 
+
 >[!NOTE]
 >
 >Experience Manager Forms releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, December 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
