@@ -105,24 +105,8 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 * Undo did not delete the last change made to text that was added into the component. Instead, when the page was refreshed, the entire component got deleted. (SITES-8597)
 * Upgrading `jquery-ui` to the latest version resulted in the Page Editor not working correctly. (NPR-38596)
-
-
-
 * Content now no longer overlaps with other content at 320px width. (SITES-8756)
 * added focus after closing the Dialog (SITES-8756)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- ### Template Editor {#sites-templateeditor-6515}
 
