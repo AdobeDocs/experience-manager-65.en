@@ -66,15 +66,19 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * Experience Manager Sites Launches console was coming up blank. (NPR-39188)
 * References were not adjusted when the page that had the reference also needed to be activated during the page move. (NPR-39061)
 * When a Layout container is unhidden using parent container, layout changes are not getting applied to all components inside the nested container. (NPR-39041)
+* Content now no longer overlaps with other content at 320px width. (SITES-8885)
+* Added focus after closing a dialog box. (SITES-8885)
 
 ### Accessibility {#access-6515}
 
-* The scrollable region of the Page Editor did not have keyboard access. (SITES-2936)
-* The color input field of the Page Editor is not labeled or visible on the screen. (SITES-2925)
-* The iframe in the Page Editor is missing a title attribute; it must have an accessible name. (SITES-2894)
+<!-- REMOVED FROM TOTAL RELEASE CANDIDATE LIST * The scrollable region of the Page Editor did not have keyboard access. (SITES-2936) -->
+<!-- REMOVED FROM TOTAL RELEASE CANDIDATE LIST * The color input field of the Page Editor is not labeled or visible on the screen. (SITES-2925) -->
+<!-- REMOVED FROM TOTAL RELEASE CANDIDATE LIST * The iframe in the Page Editor is missing a title attribute; it must have an accessible name. (SITES-2894) -->
 * The **[!UICONTROL Annotation]** button is missing its accessibility name. (SITES-2892)
-* The state of an ACTIVE user interface component (**[!UICONTROL Cut]**, **[!UICONTROL Copy]**, **[!UICONTROL Paste]**, **[!UICONTROL Insert Components]**, **[!UICONTROL Group]**, and so on) does not have at least a three to one luminosity contrast ratio with either the inner or outer adjacent background. (SITES-8889)
-
+* The state of an ACTIVE user interface component (**[!UICONTROL Cut]**, **[!UICONTROL Copy]**, **[!UICONTROL Paste]**, **[!UICONTROL Insert Components]**, **[!UICONTROL Group]**, and so on) does not have at least a three to one luminosity contrast ratio with either the inner or outer adjacent background. (SITES-8889, SITES-8756, SITES-8885)
+* Status message not automatically announced. (SITES-8889, SITES-8756, SITES-8885)
+* Text content lacks 4.5:1 contrast ratio. (SITES-8756, SITES-8885)
+* Link or button text lacks 4.5:1 contrast ratio on hover or focus. (SITES-8756, SITES-8885)
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
@@ -101,6 +105,23 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 * Undo did not delete the last change made to text that was added into the component. Instead, when the page was refreshed, the entire component got deleted. (SITES-8597)
 * Upgrading `jquery-ui` to the latest version resulted in the Page Editor not working correctly. (NPR-38596)
+
+
+
+* Content now no longer overlaps with other content at 320px width. (SITES-8756)
+* added focus after closing the Dialog (SITES-8756)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- ### Template Editor {#sites-templateeditor-6515}
