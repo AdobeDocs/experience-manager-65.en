@@ -31,7 +31,17 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 ## [!DNL Assets] {#assets-6515}
 
-* Note
+* While creating an Asset Report on de_DE locale, the **[!UICONTROL Add]** button text under custom columns does not display appropriately. 
+* Issues while saving names that contain special characters in multifields.
+* When you try to upload a duplicate asset, Experience Manager correctly detects the duplication, however, on clicking **[!UICONTROL Replace]**, the existing and the new asset are deleted from the repository. 
+* When you rollout the changes from the parent document to its live copies, the **[!UICONTROL Save and Close]** button on the Properties page does not save the changes until clicked twice.
+* Experience Manager does not identify the Select a Workflow Model field as a mandatory field while creating a workflow.
+* While downloading a model, the text content Please wait while your download is being generated. This may take several seconds displays in low contrast as compared to its background.
+* While adding or viewing tags in the PDF files, Experience Manager displays the `There is no content to display` error message.
+* When you reopen an already configured Connected Assets page, the test connection fails.
+* Unable to add users to a collection if the user ID contains only numeric characters.
+* Experience Manager does not process the current version of FFMpeg, as installed on the Author instance.
+* When you annotate a PDF file in Experience Manager and print it after migrating from open JDK to Oracle JDK 1.8.333, Experience Manager displays an error message.
 
 <!-- ### [!DNL Dynamic Media] {#dynamic-media-6515}
 
