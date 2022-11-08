@@ -2,8 +2,8 @@
 title: How to integrate AEM Forms with Adobe Analytics?
 description: AEM Forms integrates with Adobe Analytics to capture and track performance metrics for your published forms.
 docset: aem65
+exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 ---
-
 # Analytics using [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
 AEM Forms integrates with [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) to allow you to capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to enable business users to gain insights into end user behavior and optimize the data capture experience. You can capture and track behavior of both logged-in and not logged-in (Anonymous) users via Adobe Analytics for Adaptive Forms.
