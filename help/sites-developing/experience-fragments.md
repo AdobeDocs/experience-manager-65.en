@@ -4,7 +4,7 @@ seo-title: Experience Fragments
 description: Learn about customizing Experience Fragments.
 seo-description: Learn about customizing Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference

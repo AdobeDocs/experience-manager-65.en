@@ -4,7 +4,7 @@ seo-title: "Reusing Content: Multi Site Manager and Live Copy"
 description: Learn about reusing content with Live Copies and the Multi Site Manager.
 seo-description: Learn about reusing content with Live Copies and the Multi Site Manager.
 uuid: 9f955226-8fc9-4357-b90c-c6896b0dc4b4
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
