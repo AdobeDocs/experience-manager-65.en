@@ -98,7 +98,7 @@ The properties are distributed across several tabs.
   >* Should not be set to an existing page.
   >
 
-  You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
+  You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
 
 * **Redirect Vanity URL**
 

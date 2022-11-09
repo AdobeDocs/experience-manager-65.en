@@ -14,7 +14,7 @@ The deployment of the constructed packages to AEM is performed by the Adobe Cont
 >For further details, see:
 >
 >* The [Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) article in the AEM as a Cloud Service documentation for how to deploy AEM applications.
->* The [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation for how to structure modern AEM projects.
+>* The [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) article in the AEM as a Cloud Service documentation for how to structure modern AEM projects.
 >* The [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) documentation for how to start a new AEM project using the archetype.
 >
 >All three documents apply to AEM 6.5.

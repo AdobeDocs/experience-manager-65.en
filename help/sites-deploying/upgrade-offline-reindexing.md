@@ -172,7 +172,7 @@ It is recommended to clone the production system and create the offline index us
 
 ### Prepare a Runbook and Trial Run {#prepare-a-runbook-and-trial-run}
 
-It is recommended to prepare a [runbook](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) and perform a few trials before running the upgrade in production.
+It is recommended to prepare a [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) and perform a few trials before running the upgrade in production.
 
 ### Doc Traversal Mode With Offline Indexing {#doc-traversal-mode-with-offline-indexing}
 

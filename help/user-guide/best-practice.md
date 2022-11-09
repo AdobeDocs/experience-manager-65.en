@@ -40,7 +40,7 @@ AEM has many uses in organizations and is broad enough to deliver functionality 
 * [AEM Communities Getting Started](/help/communities/getting-started.md)
 * [AEM Livefyre Getting Started](https://answers.livefyre.com/developers/getting-started/)
 
-We also have a new [WKND tutorial, which is a step-by-step guide to the creation of your first website using AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) as well as a [step-by-step recipe for deploying our Digital Foundation solution](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), for which AEM is a key building block.
+We also have a new [WKND tutorial, which is a step-by-step guide to the creation of your first website using AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) as well as a [step-by-step recipe for deploying our Digital Foundation solution](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), for which AEM is a key building block.
 
 ## Recommended deployments for AEM {#deployments}
 

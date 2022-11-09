@@ -20,7 +20,7 @@ exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 >
 >Most Foundation Components are now deprecated with AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further information.
 >
->Adobe recommends leveraging the more modern and extensible [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in AEM projects. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
+>Adobe recommends leveraging the more modern and extensible [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in AEM projects. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
 >You can use the [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) to refactor your Foundation Components-based site to use Core Components.
 
@@ -152,7 +152,7 @@ For information about customizing the Adaptive Image component, see [Understandi
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Carousel Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Carousel Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html) instead.
 
 The Carousel Component allows you to display images associated with individual pages:
 
@@ -641,7 +641,7 @@ Once configured the content will appear exactly as on the source page. The fact 
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Quick Search Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/quick-search.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Quick Search Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html) instead.
 
 The Search component adds search capability to your page.
 
@@ -1097,7 +1097,7 @@ These tabs provide you with the necessary parameters; these can depend on the in
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Container Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-container.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Container Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html) instead.
 
 The Form component defines both the start and end of a form using the **Form Start** and **Form End** elements. These are always paired to ensure that the form is correctly defined.
 
@@ -1325,7 +1325,7 @@ This marks the end of the form. You can configure:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) instead.
 
 This allows the user to input an account name:
 
@@ -1335,7 +1335,7 @@ This allows the user to input an account name:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) instead.
 
 This allows you to add an international address field with the following format:
 
@@ -1439,7 +1439,7 @@ This component allows you to create a hidden field. These can be used for variou
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) instead.
 
 An image button allows you to create a button with your own image and text:
 
@@ -1514,7 +1514,7 @@ You can specify the element name together with a title and description Using the
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) instead.
 
 This component allows you to create a submit button, with either the default text:
 
@@ -1555,7 +1555,7 @@ You can specify various parameters, including the namespaces can be used using t
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-text.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Text Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html) instead.
 
 The standard text field can be configured to your required size and with with your own lead in message:
 
@@ -1565,7 +1565,7 @@ The standard text field can be configured to your required size and with with yo
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/forms/form-button.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Form Button Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html) instead.
 
 This allows you to create a Submit button for use in a workflow.
 

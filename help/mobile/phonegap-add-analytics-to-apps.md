@@ -98,7 +98,7 @@ After performing these steps your app will be enabled to report all the lifecycl
 
 ### Instrument your code for full App tracking {#instrument-your-code-for-full-app-tracking}
 
-There are several tracking APIs provided in the [AMS Phonegap Plugin API.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+There are several tracking APIs provided in the [AMS Phonegap Plugin API.](https://experienceleague.adobe.com/docs/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 These will allow you to track states and actions such as where pages your users are navigating to in your app, which controls are being used the most. The easiest way to instrument you app for tracking is to make use of the Analytics APIs provided by the AMS plugin.
 

@@ -32,7 +32,7 @@ AEM Forms combine form authoring, management, and publishing along with correspo
 
 ## AEM Screens {#aem-screens}
 
-Screens is an Adobe Experience Manager capability that allows you to publish dynamic and interactive digital experiences and interactions involving different types of screens in conjunction with a comprehensive digital marketing platform.  [Learn more.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens is an Adobe Experience Manager capability that allows you to publish dynamic and interactive digital experiences and interactions involving different types of screens in conjunction with a comprehensive digital marketing platform.  [Learn more.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 

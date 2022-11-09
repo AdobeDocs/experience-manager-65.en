@@ -9,7 +9,7 @@ exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 
 Adobe Experience Manager Fluid Experiences draws from the powerful feature sets of AEM Sites, AEM Dynamic Media, and AEM Assets to provide a robust solution for headless content delivery.
 
-AEM Fluid Experiences differentiates itself from classic AEM in that only the headless delivery use case is addressed. Headful content authoring and delivery and AEM's strong support for hybrid use cases are available with the [full AEM Sites, Assets, and Dynamic Media solutions.](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)
+AEM Fluid Experiences differentiates itself from classic AEM in that only the headless delivery use case is addressed. Headful content authoring and delivery and AEM's strong support for hybrid use cases are available with the [full AEM Sites, Assets, and Dynamic Media solutions.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)
 
 The following tables define the features of AEM Fluid Experiences and link to the relevant support documentation.
 
@@ -79,7 +79,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 * [Fluid Experiences for headless use cases](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
 * [AEM Content Service: What, Why, and How?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Using Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Developing mobile app](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/developing/developing-content-services.html)
+* [Developing mobile app](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
 * [FAQ for Third Party Access](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
 * [Fluid Experiences Everywhere](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
 * [Using Sling APIs](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)

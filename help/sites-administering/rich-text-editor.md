@@ -176,7 +176,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 >
 >The [Core Components text component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) allows template editors to configure many RTE plugins in a GUI as content policies, eliminating the need for technical configuration. Content policies can work with RTE UI configurations as described in this document.
 >
->For more information, see the [RTE UI settings and content polices](/help/sites-administering/rich-text-editor.md) section of this document as well as [Creating Page Templates](/help/sites-authoring/templates.md) and the [Core Components developer documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/developing.html).
+>For more information, see the [RTE UI settings and content polices](/help/sites-administering/rich-text-editor.md) section of this document as well as [Creating Page Templates](/help/sites-authoring/templates.md) and the [Core Components developer documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >

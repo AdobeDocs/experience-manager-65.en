@@ -144,7 +144,7 @@ For full information on developing AEM see the collection of resources under:
 
 * [Developing User Guide](/help/sites-developing/home.md)
 * [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sites Tutorials and Videos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [AEM 6.5 Sites Tutorials and Videos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)
