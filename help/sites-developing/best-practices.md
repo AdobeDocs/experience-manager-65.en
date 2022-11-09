@@ -26,7 +26,7 @@ Before you start your AEM development project, first review these best practices
 * [Code Pitfalls](/help/sites-developing/code-pitfalls.md)
 * [JCR Interaction](/help/sites-developing/jcr-integration.md)
 * [OSGi Bundles](/help/sites-developing/osgi-bundles.md)
-* [Java API Best Practices](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Java API Best Practices](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Additional Best Practices Information {#additional-best-practices-information}
 

@@ -20,7 +20,7 @@ exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 >
 >Most Foundation Components are now deprecated with AEM 6.5. See the [release notes](/help/release-notes/deprecated-removed-features.md) for further information.
 >
->Adobe recommends leveraging the more modern and extensible [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in AEM projects. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
+>Adobe recommends leveraging the more modern and extensible [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in AEM projects. These are part of the [We.Retail sample content](/help/sites-developing/we-retail.md) and can also be [installed separately and used for development](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/using.html) by your administrator.
 >
 >You can use the [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) to refactor your Foundation Components-based site to use Core Components.
 
@@ -59,7 +59,7 @@ The General components are the basic components that you use to create content.
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 You can define a link with title and description.
 
@@ -224,7 +224,7 @@ These are available in two tabs:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 The Chart component lets you add a bar, line, or pie chart. AEM creates a chart from the data you provide. You provide data by typing directly into the Data tab or by copying and pasting a spreadsheet.
 
@@ -267,7 +267,7 @@ The following show an example of chart data followed by the resulting Bar chart:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 This allows you to upload a zip file holding a design package.
 
@@ -275,7 +275,7 @@ This allows you to upload a zip file holding a design package.
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 The Download component creates a link on the selected web-page to download a specific file. You can either drag an asset from the Content Finder or upload a file.
 
@@ -295,7 +295,7 @@ The following example shows the Download component in Geometrixx:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 The external application integration component (**External**) enables you to embed external applications into your AEM page using an iframe.
 
@@ -327,7 +327,7 @@ The external application is integrated into the paragraph system of the AEM page
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 >[!CAUTION]
 >
@@ -541,7 +541,7 @@ The following example shows a **List** component the way it may display a list o
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 >[!CAUTION]
 >
@@ -977,7 +977,7 @@ The Column Control component lets users select how they want to split the conten
 
 >[!CAUTION]
 >
->The Foundation Component from components have been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>The Foundation Component from components have been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 Form components are used to create forms for visitors to submit input. Forms and form components can be used to collect information including user feedback (for example, a customer satisfaction questionnaire) and user information (for example, user registration).
 
@@ -1107,7 +1107,7 @@ In between the start and end of a form, you can add form components that define 
 
 >[!NOTE]
 >
->The foundation components form component only supports the use of other foundation components form components (button, text, hidden, etc.). Using [core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) form components within a foundation component form (and vice versa) is not supported.
+>The foundation components form component only supports the use of other foundation components form components (button, text, hidden, etc.). Using [core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) form components within a foundation component form (and vice versa) is not supported.
 
 #### Start of Form {#start-of-form}
 
@@ -1347,7 +1347,7 @@ The component is configured for immediate use, but you can change the configurat
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 >[!CAUTION]
 >
@@ -1381,7 +1381,7 @@ You can specify various parameters including a title, description and element na
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 This allows you to provide the fields needed for entering credit card details. You can configure it to specify the types of card accepted and the information required (for example, security code).
 
@@ -1409,7 +1409,7 @@ You can specify a title and items to appear in the list. Using the + and - butto
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 The file upload component provides the user with a mechanism for selecting and uploading a file.
 
@@ -1449,7 +1449,7 @@ An image button allows you to create a button with your own image and text:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 The image upload component provides the user with a mechanism for selecting and uploading an image file.
 
@@ -1459,7 +1459,7 @@ The image upload component provides the user with a mechanism for selecting and 
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 The link field allows the user to specify a URL:
 
@@ -1471,7 +1471,7 @@ Most commonly used for the calendar event form, where it is used for the URL/lin
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 This is used to allow the user to input their password:
 
@@ -1481,7 +1481,7 @@ This is used to allow the user to input their password:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 This component provides your user with two fields for:
 
@@ -1528,7 +1528,7 @@ Or with your own text:
 
 >[!CAUTION]
 >
->This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) instead.
+>This Foundation Component has been deprecated. Adobe recommends leveraging the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
 This field allows you to select tags:
 

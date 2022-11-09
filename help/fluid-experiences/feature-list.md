@@ -47,7 +47,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 |[Experience fragments](/help/sites-authoring/experience-fragments.md)|
 |HTTP API for structured content (read)|
 |HTTP API for structured content (CRUD)|
-|[Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)|
+|[Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)|
 |[Dynamic Media](/help/assets/dynamic-media.md)|
 
 ## Admin and Integration Features {#admin-and-integration-features}
@@ -60,7 +60,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 |[Content translation](/help/sites-administering/translation.md)|
 |[Monitoring](/help/sites-deploying/monitoring-and-maintaining.md)|
 |[Backup](/help/sites-administering/backup-and-restore.md)|
-|[Cloud manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)|
+|[Cloud manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)|
 |[PIM Integration](/help/sites-authoring/managing-product-information.md)|
 |[Projects and tasks](/help/sites-authoring/projects.md)|
 |[Workflows](/help/sites-administering/workflows-starting.md)|

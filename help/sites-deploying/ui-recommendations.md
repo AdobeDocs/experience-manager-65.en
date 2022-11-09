@@ -125,5 +125,4 @@ For detailed development information:
 
 * [Customizing page authoring in the touch-enabled UI](/help/sites-developing/customizing-page-authoring-touch.md) (includes sample code).
 
-* [AEM Gem Session on touch-enabled customization](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Granite UI documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
