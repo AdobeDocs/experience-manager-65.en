@@ -574,7 +574,7 @@ role: User
   + [Troubleshooting Process Reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Developer Reference {#developer-reference}
   + [Developer basics](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-  + [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+  + [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
   + [AEM plug-in to debug adaptive forms](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
   + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)

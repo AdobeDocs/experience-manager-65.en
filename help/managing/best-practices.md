@@ -623,7 +623,7 @@ For best practices on deploying, administering, developing, or authoring, see th
 
         * [Developing - the basics](/help/sites-developing/the-basics.md)
         * [MSM concepts](/help/sites-administering/msm.md)
-        * [HTML Template Language (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+        * [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * Related Documentation
 

@@ -131,8 +131,8 @@ You can also costomize the consoles:
 Although not directly related to a migration to the touch UI, there are related issues that are worth considering at the same time, as they are also recommended practice:
 
 * [Templates](/help/sites-developing/templates.md) - [Editable templates](/help/sites-developing/page-templates-editable.md)
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
 >

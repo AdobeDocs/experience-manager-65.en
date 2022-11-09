@@ -45,7 +45,7 @@ These can be used in many ways to extend the page authoring functionality in you
 >* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-structure.md) for details of the structural areas used for page authoring.
 >
->This topic is also covered in the [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) session - [User interface customization for AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+
 
 >[!CAUTION]
 >

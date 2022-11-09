@@ -34,7 +34,7 @@ In addition to [developing new components](/help/sites-developing/developing-com
 
 >[!NOTE]
 >
->This document focuses on developing forms using the [Foundation Components](/help/sites-authoring/default-components-foundation.md) in the classic UI. Adobe recommends leveraging the new [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and [Hide Conditions](/help/sites-developing/hide-conditions.md) for form development in the touch-enabled UI.
+>This document focuses on developing forms using the [Foundation Components](/help/sites-authoring/default-components-foundation.md) in the classic UI. Adobe recommends leveraging the new [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and [Hide Conditions](/help/sites-developing/hide-conditions.md) for form development in the touch-enabled UI.
 
 ## Preloading Form Values {#preloading-form-values}
 

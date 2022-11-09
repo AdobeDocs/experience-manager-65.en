@@ -24,7 +24,7 @@ The classic UI uses ExtJS to create widgets that provide the look-and-feel of th
 >
 >Although both the HTML Template Language (HTL) and JSP can be used for developing components for the classic UI, this page illustrates development with JSP. This is solely due to the history of using JSP within the classic UI.
 >
->HTL is now the recommended scripting language for AEM. See [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) and [Developing AEM Components](/help/sites-developing/developing-components.md) to compare methods.
+>HTL is now the recommended scripting language for AEM. See [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) and [Developing AEM Components](/help/sites-developing/developing-components.md) to compare methods.
 
 ## Structure {#structure}
 
