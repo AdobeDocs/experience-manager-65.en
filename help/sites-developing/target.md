@@ -194,7 +194,7 @@ The JSP script of this component generates calls to the Target javascript API an
 
 The default mbox.js file that is used to create mboxes is located at /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. To use a customer mbox.js file, add the file to the Target cloud configuration. To add the file, the mbox.js file must be available on the file system.
 
-For example, if you want to use the [Marketing Cloud ID service](https://docs.adobe.com/content/help/en/id-service/using/home.html) you need to download mbox.js so that it contains the correct value for the `imsOrgID` variable, which is based on your tenant. This variable is required for integrating with the Marketing Cloud ID service. For information, see [Adobe Analytics as the Reporting Source for Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) and [Before You Implement](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
+For example, if you want to use the [Marketing Cloud ID service](https://experienceleague.adobe.com/docs/id-service/using/home.html) you need to download mbox.js so that it contains the correct value for the `imsOrgID` variable, which is based on your tenant. This variable is required for integrating with the Marketing Cloud ID service. For information, see [Adobe Analytics as the Reporting Source for Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) and [Before You Implement](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
 
 >[!NOTE]
 >
@@ -230,7 +230,7 @@ For example, to disable targeting for the title components of the Geometrixx Dem
 >
 >If you are not using DTM, you send order confirmation to Adobe Target.
 
-For tracking the performance of your website, send purchase information from your order confirmation page to Adobe Target. (See [Create an orderConfirmPage Mbox](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) in the Adobe Target documentation.) Adobe Target recognizes mbox data as order confirmation data when your MBox name is `orderConfirmPage` and uses the following specific parameter names:
+For tracking the performance of your website, send purchase information from your order confirmation page to Adobe Target. (See [Create an orderConfirmPage Mbox](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) in the Adobe Target documentation.) Adobe Target recognizes mbox data as order confirmation data when your MBox name is `orderConfirmPage` and uses the following specific parameter names:
 
 * productPurchasedId: A list of IDs that identify the purchased products.
 * orderId: The ID of the order.

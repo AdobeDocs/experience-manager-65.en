@@ -134,7 +134,7 @@ The following table describes the default CQ variables that are provided for the
 
 1. To map the CQ variables to Adobe Analytics properties, drag the Adobe Analytics properties from ContentFinder beside the CQ variable on the component.
 
-   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guide.
 
 1. [Add the framework](/help/sites-administering/adobeanalytics.md) to the page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
@@ -269,7 +269,7 @@ eventdata.events.milestoneXX
 
 1. To map the CQ variables to Adobe Analytics properties, drag the Adobe Analytics properties from ContentFinder beside the CQ variable on the component.
 
-   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   For information about optimizing the mappings, see the [Measuring Video in Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) guide.
 
 1. [Add the framework](/help/sites-administering/adobeanalytics.md) to the page.
 1. To test the setup in **Preview mode**, play the video to get Adobe Analytics calls to trigger.
@@ -378,4 +378,4 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
 **References used in this tutorial:**
 
-[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

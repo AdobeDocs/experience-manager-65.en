@@ -22,7 +22,7 @@ role: User
   + [Introduction to authoring adaptive forms](using/introduction-forms-authoring.md)
   + [Introduction to Interactive Communications](using/interactive-communications-overview.md)
   + [Introduction to managing forms](using/introduction-managing-forms.md)
-  + [Introduction to Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+  + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
   + Tutorial: Create your First Adaptive Form {#create-first-adaptive-form}
     + [Tutorial: Create your first adaptive form](using/create-your-first-adaptive-form.md)
     + [Tutorial: Create an adaptive form](using/create-adaptive-form.md)
@@ -51,12 +51,12 @@ role: User
   + [Architecture and deployment topologies for AEM Forms](using/aem-forms-architecture-deployment.md)
   + [Choosing a persistence type for an AEM Forms installation](using/choosing-persistence-type-for-aem-forms.md)
   + Install AEM Forms on OSGi {#osgi-installation}
-    + [Supported platforms for AEM forms on OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
+    + [Supported platforms for AEM forms on OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html)
     + [Install and configure document services](using/install-configure-document-services.md)
     + [Install and configure data capture capabilities](using/installing-configuring-aem-forms-osgi.md)
     + [Install and Configure Forms-centric workflow on OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
     + [Install and configure Interactive Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)
-    + [Install and configure Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+    + [Install and configure Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
   + Install AEM Forms on JEE {#jee-installation}
     + [Supported platforms for AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
     + [Installing and Deploying AEM Forms on JEE Using JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
@@ -573,7 +573,7 @@ role: User
   + [Ad-hoc Queries in Process Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
   + [Troubleshooting Process Reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Developer Reference {#developer-reference}
-  + [Developer basics](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
+  + [Developer basics](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
   + [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
   + [AEM plug-in to debug adaptive forms](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)

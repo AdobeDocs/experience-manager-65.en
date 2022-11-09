@@ -57,10 +57,10 @@ You can also configure adaptive form caching at dispatcher for additional perfor
 
 Perform the below listed steps to enable and configure caching  adaptive forms on dispatcher:
 
-1. Open the following URL for every publish instance of you environment and [enable flush agent for publish instances of your environment](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Open the following URL for every publish instance of you environment and [enable flush agent for publish instances of your environment](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Add the following to your dispatcher.any file](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [Add the following to your dispatcher.any file](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -90,7 +90,7 @@ Perform the below listed steps to enable and configure caching  adaptive forms o
    * An adaptive form remains in cache until an updated version of the form is not published.
 
    * When a newer version of resource referenced in an adaptive form is published, the impacted adaptive forms is automatically invalidated. There are some exceptions to automatic invalidation of referenced resources. For workaround to exceptions, see [troubleshooting](#troubleshooting) section.
-1. [Add the below rules dispatcher.any or custom rules file](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). It excludes the URLs that do not support caching. For example, Interactive Communication.
+1. [Add the below rules dispatcher.any or custom rules file](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). It excludes the URLs that do not support caching. For example, Interactive Communication.
 
    ``` JSON
 
@@ -116,7 +116,7 @@ Perform the below listed steps to enable and configure caching  adaptive forms o
 
    ```
 
-1. [Add the following parameters to the ignore URL parameters list](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters): 
+1. [Add the following parameters to the ignore URL parameters list](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters): 
 
    ``` JSON
 
@@ -127,7 +127,7 @@ Perform the below listed steps to enable and configure caching  adaptive forms o
       }
    ```
 
-Your AEM environment is configured to cache adaptive forms. It caches all types of adaptive forms. If you have a requirement to check user access permissions for a page before delivering the cached page, see [caching secured content](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+Your AEM environment is configured to cache adaptive forms. It caches all types of adaptive forms. If you have a requirement to check user access permissions for a page before delivering the cached page, see [caching secured content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Troubleshooting {#troubleshooting}
 

@@ -437,7 +437,7 @@ Return to the IDE and the generated project.
     ```
 
     >[!NOTE]
-    >There are additional [IDE Setup and Tools](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) that can sync project files directly to a local AEM instance without having to perform a full Maven build.
+    >There are additional [IDE Setup and Tools](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment) that can sync project files directly to a local AEM instance without having to perform a full Maven build.
 
 ## View Updated Product Teaser {#view-updated-product-teaser}
 
