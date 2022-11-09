@@ -75,7 +75,7 @@ Your component will be rendered with [HTML](https://www.w3schools.com/htmL/html_
 
 ### Using the HTML Template Language {#using-the-html-template-language}
 
-The [HTML Templating Language (HTL)](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), introduced with AEM 6.0, takes the place of JSP (JavaServer Pages) as the preferred and recommended server-side template system for HTML. For web developers who need to build robust enterprise websites, HTL helps to achieve increased security and development efficiency.
+The [HTML Templating Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), introduced with AEM 6.0, takes the place of JSP (JavaServer Pages) as the preferred and recommended server-side template system for HTML. For web developers who need to build robust enterprise websites, HTL helps to achieve increased security and development efficiency.
 
 >[!NOTE]
 >
@@ -433,7 +433,7 @@ The [AEM Brackets Extension](/help/sites-developing/aem-brackets.md) provides a 
 The extension:
 
 * Eases synchronization (no Maven or File Vault required) to help increase developer efficiency and also helps front-end developers with limited AEM knowledge to participate on projects.
-* Provides some [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) support, the template language designed to simplify component development and increase security.
+* Provides some [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) support, the template language designed to simplify component development and increase security.
 
 >[!NOTE]
 >
@@ -445,7 +445,7 @@ When migrating a component that was designed for use with the classic UI to a co
 
 * HTL
 
-    * Use of [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) is not compulsory, but if your component needs updating then it is an ideal time to consider [migrating from JSP to HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+    * Use of [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) is not compulsory, but if your component needs updating then it is an ideal time to consider [migrating from JSP to HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Components
 

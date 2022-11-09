@@ -26,7 +26,7 @@ This page provides an overview of Adobe Experience Manager (AEM) components such
 * Have a standardized user interface.
 * Have edit behavior that can be configured.
 * Use dialog boxes that are built using sub-elements based on Granite UI components
-* Are developed using [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) (recommended) or JSP.
+* Are developed using [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (recommended) or JSP.
 * Can be developed to create customized components that extend the default functionality.
 
 Because components are modular, you can:

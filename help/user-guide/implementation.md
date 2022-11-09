@@ -17,7 +17,7 @@ Are you an AEM developer? [Get started developing on AEM.](/help/sites-developin
 
 ## HTL (HTML Template Language) for AEM {#htl-for-aem}
 
-[Use HTML Template Language to develop for AEM.](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+[Use HTML Template Language to develop for AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 ## Cloud Manager for AEM {#cloud-manager-for-aem}
 

@@ -59,7 +59,7 @@ A useful additional benefit is that text alternatives enable non-text content to
 
 #### How to Meet - Non-text Content (1.1.1) {#how-to-meet-non-text-content}
 
-For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)**.
+For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >

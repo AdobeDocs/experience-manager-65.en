@@ -90,7 +90,7 @@ HTML Template Language (HTL) is a new HTML templating system, introduced with AE
 
 ||||
 |---|---|---|
-| HTL overview | [HTL overview and syntax](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) |This document describes what HTL is, how to move to HTL, a sample project, syntax, expressions, and statements |
+| HTL overview | [HTL overview and syntax](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) |This document describes what HTL is, how to move to HTL, a sample project, syntax, expressions, and statements |
 | Using API in java | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) |The HTL Java Use-API enables a HTL file to access helper methods in a custom Java class.  |
 
 >[!NOTE]
