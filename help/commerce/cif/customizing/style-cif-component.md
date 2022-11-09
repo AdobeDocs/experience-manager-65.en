@@ -63,7 +63,7 @@ The CSS and JavaScript responsible for rendering the theme/styles of the storefr
 
 Brand specific styles can be applied to AEM CIF Core Components by adding and overriding the CSS managed by these client libraries. Understanding how client libraries are structured and included on the page is critical.
 
-The [ui.frontend](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/uifrontend.html) is a dedicated [webpack](https://webpack.js.org/) project to manage all of the front-end assets for a project. This allows front-end developers to use any number of languages and technologies like [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) and much more.
+The [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=en) is a dedicated [webpack](https://webpack.js.org/) project to manage all of the front-end assets for a project. This allows front-end developers to use any number of languages and technologies like [TypeScript](https://www.typescriptlang.org/), [Sass](https://sass-lang.com/) and much more.
 
 The `ui.frontend` module is also a Maven module and integrated with the larger project through the use of an NPM module the [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator). During a build, the `aem-clientlib-generator` copies the compiled CSS and JavaScript files into a client library in the `ui.apps` module.
 
