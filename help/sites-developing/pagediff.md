@@ -52,3 +52,7 @@ However there are a number of limitations that need to be considered by the deve
     * Components that use AJAX to include content
     * Single Page Applications
     * Javascript based components that manipulate the DOM upon user interaction.
+
+>[!NOTE]
+>
+>Page diff comparison will only work for the components which have valid cq:editConfig nodes.
