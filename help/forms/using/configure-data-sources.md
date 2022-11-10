@@ -14,7 +14,7 @@ exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 ---
 # Configure data sources{#configure-data-sources}
 
- ![](do-not-localize/data-integeration.png)
+ ![Data Integration](do-not-localize/data-integeration.png)
 
 AEM Forms Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box. However, with little customization, you can integrate other data sources as well.
 
@@ -30,7 +30,7 @@ Data integration supports OAuth2.0, Basic Authentication, and API Key authentica
 
 You can configure relational databases using AEM Web Console Configuration. Do the following:
 
-1. Go to AEM web console at https://server:host/system/console/configMgr.
+1. Go to AEM web console at `https://server:host/system/console/configMgr`.
 1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
 1. In the configuration dialog, specify the details for the database you want to configure, such as:
 
@@ -44,22 +44,22 @@ You can configure relational databases using AEM Web Console Configuration. Do t
    >
    >Ensure that you encrypt sensitive information like passwords before configuring the data source. To encrypt:
    >
-   >    
-   >    
-   >    1. Go to https://'[server]:[port]'/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
-   >    
-   >    
-   >    
+   > 1. Go to https://'[server]:[port]'/system/console/crypto.
+   > 1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
+   >
    >The encrypted text appears in the Protected Text field that you can specify in the configuration.
 
 1. Enable **[!UICONTROL Test on Borrow]** or **[!UICONTROL Test on Return]** to specify that the objects are validated before being borrowed or returned from and to the pool, respectively.
 1. Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
 
-    * SELECT 1 (MySQL and MS SQL) 
+    * SELECT 1 (MySQL and MS SQL)
     * SELECT 1 from dual (Oracle)
 
 1. Tap **[!UICONTROL Save]** to save the configuration.
+
+   >[!NOTE]
+   >
+   > If your Forms Data Model contains an object that is a reserved keyword for your relational database, it can lead to data addition, updation, or retrieval issues. So, avoid using such objects in your Form Data Model.
 
 ## Configure AEM user profile {#configure-aem-user-profile}
 
@@ -67,7 +67,7 @@ You can configure AEM user profile using User Profile Connector configuration in
 
 1. Go to AEM web console at https://'[server]:[port]'system/console/configMgr.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -97,9 +97,9 @@ To configure the folder for cloud service configurations:
 1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
 
     1. In the **[!UICONTROL Configuration Browser]**, select the `global` folder and tap **[!UICONTROL Properties]**.
-    
+
     1. In the **[!UICONTROL Configuration Properties]** dialog, enable **[!UICONTROL Cloud Configurations]**.
-    
+
     1. Tap **[!UICONTROL Save & Close]** to save the configuration and exit the dialog.
 
 1. In the **[!UICONTROL Configuration Browser]**, tap **[!UICONTROL Create]**.
@@ -155,7 +155,6 @@ Perform the following steps to configure the form data model HTTP client:
    * Specify the duration, for which the [!DNL Experience Manager Forms] server waits for a connection to establish, in the **[!UICONTROL Connection timeout]** field. The default value is 10 seconds.
 
    * Specify the maximum time period for inactivity between two data packets in the **[!UICONTROL Socket timeout]** field. The default value is 30 seconds.
-
 
 ## Configure SOAP web services {#configure-soap-web-services}
 
@@ -219,4 +218,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Next steps {#next-steps}
 
-You have configured the data sources. Next you can create a form data model or if you have already created a form data model without a data source, you can associate it with the data sources you just configured. See [Create form data model](/help/forms/using/create-form-data-models.md) for details.
+You have configured the data sources. Next you can create a form data model or if you have already created a form data model without a data source, you can associate it with the data sources you configured. See [Create form data model](/help/forms/using/create-form-data-models.md) for details.
