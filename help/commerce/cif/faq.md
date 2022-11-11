@@ -1,7 +1,7 @@
 ---
 title: AEM - Commerce Integration using Commerce Integration Framework FAQ
 description: AEM - Commerce Integration using Commerce Integration Framework FAQ
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
+exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
 ---
 # AEM - Commerce Integration using Commerce Integration Framework FAQ
 
