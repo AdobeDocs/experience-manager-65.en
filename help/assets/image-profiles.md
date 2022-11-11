@@ -15,13 +15,11 @@ exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 
 When uploading images, you can automatically crop the image upon upload by applying an image profile to the folder.
 
->[!NOTE]
->
->Smart Crop is available only in Dynamic Media - Scene7 mode.
-
 >[!IMPORTANT]
 >
->Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
+>&bull; Smart crop is available only in Dynamic Media - Scene7 mode.
+>&bull; CMYK images are not supported with smart crop.
+>&bull; Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Crop options {#crop-options}
 
@@ -157,9 +155,10 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 ## Edit the smart crop or smart swatch of a single image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Smart Crop is available only in Dynamic Media - Scene7 mode.
+>&bull; Smart crop is available only in Dynamic Media - Scene7 mode.
+>&bull; CMYK images are not supported with smart crop. 
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
