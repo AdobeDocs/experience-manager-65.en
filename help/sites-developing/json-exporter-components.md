@@ -72,7 +72,7 @@ The Model interface needs to be properly annotated to define which methods shoul
 
 ## Example {#example}
 
-The Core Components have supported JSON export since release [1.1.0 of the core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and can be used as a reference.
+The Core Components have supported JSON export since release [1.1.0 of the core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and can be used as a reference.
 
 For an example, see the Sling Model implementation of the Image Core Component and its annotated interface.
 
@@ -92,4 +92,4 @@ For further details see:
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
 * [JSON Exporter for Content Services](/help/sites-developing/json-exporter.md)
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

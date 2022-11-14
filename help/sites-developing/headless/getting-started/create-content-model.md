@@ -1,7 +1,7 @@
 ---
 title: Creating Content Fragment Models Headless Quick Start Guide
 description: Define the structure of the content you will create and serve using AEM's headless capabilities by using Content Fragment Models.
-exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
+exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 ---
 # Creating Content Fragment Models Headless Quick Start Guide {#creating-content-fragment-models}
 

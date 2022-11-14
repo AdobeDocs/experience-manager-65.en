@@ -85,4 +85,4 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 >
 >Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.

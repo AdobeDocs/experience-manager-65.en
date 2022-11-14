@@ -51,7 +51,7 @@ When defining your hide expression keep in mind:
 
 ## Example {#example}
 
-Examples of hide conditions can be found throughout AEM and the [core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) in particular. For example, consider the [list core component](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
+Examples of hide conditions can be found throughout AEM and the [core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in particular. For example, consider the [list core component](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
 
 [Using the template editor](/help/sites-authoring/templates.md), the template author can define in the design dialog which options of the list component that are available to the page author. Such options as whether to allow the list to be a static list, a list of child pages, a list of tagged pages, etc. can be enabled or disabled.
 

@@ -135,7 +135,7 @@ You can import Twitter and Instagram user-generated content (UGC) from Livefyre 
 
 >[!NOTE]
 >
->Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
+>Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
 To import UGC into AEM Assets:
 

@@ -26,7 +26,7 @@ The Client Code identifies the Adobe Target customer account when calling the Ad
 >
 >Your account must also be enabled by the Target team in order to use the integration.
 >
->If it is not the case, please contact [Adobe Customer Care](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
+>If it is not the case, please contact [Adobe Customer Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 
 ## Enabling the Target Replication Agent {#enabling-the-target-replication-agent}
 

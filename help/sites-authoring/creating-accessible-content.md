@@ -59,11 +59,11 @@ A useful additional benefit is that text alternatives enable non-text content to
 
 #### How to Meet - Non-text Content (1.1.1) {#how-to-meet-non-text-content}
 
-For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)**.
+For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
 >When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

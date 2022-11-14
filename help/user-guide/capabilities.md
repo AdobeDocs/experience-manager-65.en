@@ -41,7 +41,7 @@ exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Share user-generated content with AEM Livefyre.](https://docs.adobe.com/content/help/en/livefyre/using/home.html)
+[Share user-generated content with AEM Livefyre.](https://experienceleague.adobe.com/docs/livefyre/using/home.html)
 
 ## AEM Mobile {#aem-mobile}
 
