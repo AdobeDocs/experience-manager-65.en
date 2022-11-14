@@ -31,14 +31,14 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 ## [!DNL Assets] {#assets-6515}
 
-* If the movement of an Asset in Experience Manager fails, the Asset still can still be renamed. (NPR-38753)
+* If the movement of an Asset in Experience Manager fails, the Asset can still be renamed. (NPR-38753)
 * While viewing the Assets in a [!UICONTROL List View], some of the titles are missing. (CQ-4345746)
 * Screen reader does not announce the sub menu of the [!UICONTROL Relate] button on the Basic tab on Asset properties page. (ASSETS-6938)
 * Screen reader incorrectly detects the folder icons on the Assets navigation page with the list of folders. (ASSETS-6936)
 * While copying a Collection, the image is missing an empty `alt` attribute or role="presentation". As a result, the image is exposed to the screen reader users. (ASSETS-6932)
 * The text displayed while annotating an asset does not have a 4:5:1 contrast ratio in comparison to the background color. (ASSETS-6931)
 * On the IPTC tab of the Asset properties page, when you adjust page width, the page content does not fit properly and results in horizontal scrolling. (ASSETS-6929)
-* When you filter assets, the filter text in [!UICONTROL min] and [!UICONTROL max] fields disappear once a value is entered. (ASSETS-6925)
+* When you filter assets, the filter text in the [!UICONTROL min] and [!UICONTROL max] fields disappears after a value is entered. (ASSETS-6925)
 * In Experience Manager Collections, the screen reader does not announce the [!UICONTROL email] field on the Download screen. (ASSETS-6923)
 * An alternative text is missing while annotating the elements. (ASSETS-6922)
 * If the text is written in Hours and Minutes in date picker field, no text error message is displayed. The error is only identified using the Red color. (ASSETS-6852, ASSETS-6921, ASSETS-6920, ASSETS-6907)
@@ -46,7 +46,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * Incorrect screen reader announcement for the [!UICONTROL Create] submenu. (ASSETS-6916)
 * In Experience Manager Collections, the remove button `X` does not have any text to announce for the screen readers. (ASSETS-6912)
 * While using Color Contrast Analyzer in Experience Manager, there is no color differentiation between the current date and the chosen date in date picker of the calendar widget. It lacks at least 3:1 contrast ratio in odds to its adjacent colors. (ASSETS-6911)
-* In Experience Manager Files, while selecting one of the options from [!UICONTROL Scheduling] radio button in Manage Publication, the radio button options name and state are announced by the screen reader, but the **Scheduling** label  is not announced. (ASSETS-6908, ASSETS-6906)
+* In Experience Manager Files, while selecting one of the options from [!UICONTROL Scheduling] radio button in Manage Publication, the radio button options name and state are announced by the screen reader. However, the **Scheduling** label is not announced. (ASSETS-6908, ASSETS-6906)
 * The alternative text is missing for the Sort icon. (ASSETS-6904)
 * On Asset properties page, the field name `Person` in IPTC Extension tab labels are not announced by the screen readers. The screen reader only announces editable and currently blank field, but not the label name. (ASSETS-6903, ASSETS-6848)
 * The annotation tool cannot be displayed using keyboard. A mouse is used to draw an image to display the Annotation tool. (ASSETS-6899)
@@ -55,8 +55,8 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * The screen reader does not correctly identify the heading while creating a workflow. (ASSETS-6892)
 * While copying a Collection, the SVG image remove button `X` with role="img" is missing a role="presentation". As a result, the image is exposed to the screen reader users. (ASSETS-6890)
 * In the **Basic** tab of Asset properties, the screen reader does not appropriately announce the expand or collapse state of the Tags field. (ASSETS-6889)
-* The **Basic** tab under the Asset properties contain pages with duplicate ID. (ASSETS-6888)
-* The label of the text field to define a title while creating a workflow disappears as soon as you specify a value in the text box. (ASSETS-6887)
+* The **Basic** tab under Asset properties contains pages with duplicate ID. (ASSETS-6888)
+* The label of the text field to define a title while creating a workflow disappears when you specify a value in the text box. (ASSETS-6887)
 * The list of recipients while sharing a link displays as  a data table with headings, but it is not semantically identified as a data table to the screen reader users. (ASSETS-6886)
 * No error message to represent an empty field is displayed in `Add Email Address` field. The error is only represented using a color. (ASSETS-6885, ASSETS-6843)
 * Placeholder texts, Path, and Alt Text do not have at least a 4.5:1 contrast ratio in comparison to their background color. (ASSETS-6884, ASSETS-6865)
@@ -85,14 +85,10 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * While uploading a PDF to the Experience Manager, the memory usage is constantly increasing. (ASSETS-16889)
 * When a workflow converts a .ZIP file to a folder name in Assets, it does not retain the casing of the .ZIP file name. (ASSETS-16712)
 * While switching from Brand Portal to Experience Manager 6.5, the user predicate filter does not display appropriate results when you apply the filter for the first time. (ASSETS-15932)
-* Unable to annotate a video.(ASSETS-15217)
+* Unable to annotate a video. (ASSETS-15217)
 * **Manage Publication** option disappears for a user with no replicate access and `READ` and `WRITE` access to `ETC` and `VAR`. (ASSETS-15007)
 * The load time for the properties page increases for an asset with multiple references. (ASSETS-14182)
-* When an image is unpublished from Brand Portal, Experience Manager also unpublishes it from Dynamic Media and as a result there is no image displayed on the live website.(ASSETS-14118) 
-
-<!-- ### [!DNL Dynamic Media] {#dynamic-media-6515}
-
-* Note -->
+* When an image is unpublished from Brand Portal, Experience Manager also unpublishes it from Dynamic Media and as a result there is no image displayed on the live website. (ASSETS-14118) 
 
 ## Commerce {#commerce-6515}
 
@@ -102,19 +98,14 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week following the scheduled [!DNL Experience Manager] Service Pack release.
-
-
->[!NOTE]
->
->Experience Manager Forms releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, December 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, December 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
 
 ## [!DNL Sites] {#sites-6515}
 
 * Experience Manager Sites Launches console was coming up blank. (NPR-39188)
 * References were not adjusted when the page that had the reference also needed to be activated during the page move. (NPR-39061)
 * When a Layout container is unhidden using parent container, layout changes are not getting applied to all components inside the nested container. (NPR-39041)
-* Content now no longer overlaps with other content at 320px width. (SITES-8885)
+* Content now no longer overlaps with other content at 320-pixel width. (SITES-8885)
 * Added focus after closing a dialog box. (SITES-8885)
 
 ### Accessibility {#access-6515}
@@ -138,27 +129,19 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * Date fields are getting pre-populated with a date. (NPR-39124)
 * Tags disappeared the second time that you select the radio button option. (NPR-39071)
 
-<!-- ### Core Components {#sites-corecomponents-6515}
-
-* Note -->
-
 ### Fluid XP {#sites-fluidxp-6515}
 
 * Enable ES6 compilation support for the client library `/libs/cq/gui/components/siteadmin/admin/restoretree/clientlibs/restoretree.js`. (NPR-39067)
 * The Multifield in a Content Fragment Model cannot be emptied and saved because validation occurs even if **[!UICONTROL Required]** is not selected. (NPR-39063)
-* In either **[!UICONTROL Copy]** or **[!UICONTROL Livecopy]** tasks, the `cq:targetMetadata` information was incorrectly being duplicated. This functionality caused two or more Experience Fragments in Experience Manager to point to the same exported offer in target. (NPR-38970)
+* In either **[!UICONTROL Copy]** or **[!UICONTROL Livecopy]** tasks, the `cq:targetMetadata` information was incorrectly being duplicated. This functionality caused two or more Experience Fragments in Experience Manager to point to the same offer exported in target. (NPR-38970)
 * Following a Restore Tree action, the message "Un-publication pending. #0 in the queue" appears in the user interface for a page that was never published in the first place. (NPR-38847)
 
 ### Page Editor {#sites-pageeditor-6515}
 
 * Undo did not delete the last change made to text that was added into the component. Instead, when the page was refreshed, the entire component got deleted. (SITES-8597)
 * Upgrading `jquery-ui` to the latest version resulted in the Page Editor not working correctly. (NPR-38596)
-* Content now no longer overlaps with other content at 320px width. (SITES-8756)
+* Content now no longer overlaps with other content at 320-pixel width. (SITES-8756)
 * added focus after closing the Dialog (SITES-8756)
-
-<!-- ### Template Editor {#sites-templateeditor-6515}
-
-* Note -->
 
 ## Sling {#sling-6515}
 
@@ -265,7 +248,7 @@ The UberJar for [!DNL Experience Manager] 6.5.13.0 is available in the [Maven Ce
 
 >[!NOTE]
 >
->In Experience Manager 6.5.14.0, be aware that the UberJar version (6.5.13.0) remains the same as the previous release.
+>In Experience Manager 6.5.14.0, the UberJar version (6.5.13.0) remains the same as the previous release.
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
