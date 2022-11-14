@@ -76,7 +76,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * While sharing an asset, required ARIA attributes for `Search/Add Email Address` field are not specified. (ASSETS-6860)
 * The **map** dialog box cannot be displayed using keyboard. Instead, a mouse click is required to display the map dialog box. (ASSETS-6859)
 * Missing child elements for some of the ARIA roles on the Basic tab of the Asset properties page. (ASSETS-6858)
-* The empty text input fields, available in the IPTC tab of Asset properties, do not have a 3:1 contrast ratio in comparison to its adjacent colors. (ASSETS-6854)
+* The empty text input fields, available in the IPTC tab of Asset properties, do not have a 3:1 contrast ratio in comparison to its adjacent colors. (ASSETS-, ASSETS-6847)
 * The profile icons in the **Timeline** section are incorrectly detected by the screen readers. (ASSETS-6850)
 * Screen reader does not announce that the Review Status combo box, available in the Basic tab of Asset properties, is a read-only field. (ASSETS-6849)
 * Screen reader does not announce the label of the Select All and Annotation checkboxes appropriately. (ASSETS-6846)
