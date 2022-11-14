@@ -231,7 +231,7 @@ The offloading framework uses replication to transport resources between author 
 
 >[!CAUTION]
 >
->A known issue with the automatically-generated replication agents requires you to manually create new replication agents. Follow the procedure in [Problems Using the Automatically Generated Replication Agents](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) before you create the agents for Offloading.
+>A known issue with the automatically-generated replication agents requires you to manually create new replication agents.
 
 Create the replication agents that transport job payloads between instances for offloading. The following illustration shows the agents that are required to offload from the author to a worker instance. The author has a Sling ID of 1 and the worker instance has a Sling ID of 2:
 

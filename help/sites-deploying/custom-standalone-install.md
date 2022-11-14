@@ -261,7 +261,7 @@ The license.properties file
 Log files
 --------------------------------------------------------------------------------
   Once Quickstart has been unpacked and started, log files can be found under   
-  /Users/aheimoz/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
+  /Users/aemdocs/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
 --------------------------------------------------------------------------------
 ```
 

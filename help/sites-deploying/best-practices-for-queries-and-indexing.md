@@ -170,7 +170,7 @@ Solr indexes can be configured to run embedded on the AEM server for development
 
 >[!NOTE]
 >
->While taking the integrated Solr search approach would allow for offloading of indexing to a Solr server. If the more advanced features of the Solr server are used through a crawler based approach, additional configuration work will be required. Headwire has created an [open source connector](https://www.aemsolrsearch.com/#/) to accelerate these types of implementations.
+>While taking the integrated Solr search approach would allow for offloading of indexing to a Solr server. If the more advanced features of the Solr server are used through a crawler based approach, additional configuration work will be required.
 
 The downside to taking this approach is that while by default, AEM queries will respect ACLs and thus hide results that a user does not have access to, externalizing search to a Solr server will not support this feature. If search is to be externalized in this way, extra care must be taken to ensure that users are not presented with results that they should not see.
 

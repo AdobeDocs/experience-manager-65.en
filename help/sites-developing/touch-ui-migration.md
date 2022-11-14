@@ -4,7 +4,7 @@ seo-title: Migration to the Touch UI
 description: Migration to the Touch UI
 seo-description: Migration to the Touch UI
 uuid: 47c43b56-532b-4ada-8503-04d66bab3564
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction

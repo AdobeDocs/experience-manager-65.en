@@ -123,9 +123,9 @@ You can configure the cloud configuration to synchronize segments from Adobe Tar
 
 Use the following procedure to create a Target cloud configuration in AEM:
 
-1. Navigate to **Cloud Services** via the **AEM logo** &gt; **Tools** &gt; **Deployment** &gt; **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Navigate to **Cloud Services** via the **AEM logo** &gt; **Tools** &gt; **Cloud Services** &gt; **Legacy Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   The **Adobe Marketing Cloud** overview page opens.
+   The **Cloud Services** overview page opens.
 
 1. In the **Adobe Target** section, click **Configure Now**.
 1. In the **Create Configuration** dialog:
