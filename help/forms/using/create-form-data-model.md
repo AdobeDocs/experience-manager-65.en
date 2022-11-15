@@ -71,7 +71,7 @@ Do the following to configure your [!DNL MySQL] database:
         
         >[!NOTE]
         >
-        > When the [!DNL MySQL] database is behind a firewall, then database hostname is not a Public DNS. IP address of the database needs to be added in the *[/etc/hosts](C:\Windows\System32\drivers\etc\hosts)* file of the AEM host machine.
+        > When the [!DNL MySQL] database is behind a firewall, then database hostname is not a Public DNS. IP address of the database needs to be added in the */etc/hosts* file of the AEM host machine.
 
         * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
