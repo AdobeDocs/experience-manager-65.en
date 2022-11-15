@@ -78,7 +78,7 @@ Do the following to configure your [!DNL MySQL] database:
 
         >[!NOTE]
         >
-        >AEM Forms does not support NT Authentication for [!DNL MySQL], so create an SQL user account. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search "Apache Sling Connection Pooled Datasource".For "JDBC connection URI" property set value of "integratedSecurity" as False  and use created username and password for connecting with [!DNL MySQL] database.
+        >AEM Forms does not support NT Authentication for [!DNL MySQL]. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search "Apache Sling Connection Pooled Datasource".For "JDBC connection URI" property set value of "integratedSecurity" as False  and use created username and password for connecting with [!DNL MySQL] database.
 
         * **Test on Borrow:** Enable the **[!UICONTROL Test on Borrow]** option.
         * **Test on Return:** Enable the **[!UICONTROL Test on Return]** option.
