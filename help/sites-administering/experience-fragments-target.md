@@ -61,7 +61,7 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 >For further information see also:
 >
 >* [Adobe Target development](https://www.adobe.io/apis/experiencecloud/target.html)
->* [Core Components - Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+>* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 >
 
 ## Prerequisites {#prerequisites}
@@ -110,7 +110,7 @@ The required options can be selected in **Page Properties** of the required fold
    >
    >See the core component:
    >
-   >[Core Components - Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+   >[Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 
    Under **Adobe Target** select:
 

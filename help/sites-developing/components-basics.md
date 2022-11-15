@@ -61,13 +61,13 @@ For this reason we will cover the basics of both, and how to recognize them, on 
 
 It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
-This philosophy is supported by [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This (optional) logic is invoked from HTL with a specific command. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
+This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This (optional) logic is invoked from HTL with a specific command. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTL is a HTML templating language introduced with AEM 6.0.
 
-The discussion of whether to use [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) or JSP (Java Server Pages) when developing your own components should be straightforward as HTL is now the recommended scripting language for AEM.
+The discussion of whether to use [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) or JSP (Java Server Pages) when developing your own components should be straightforward as HTL is now the recommended scripting language for AEM.
 
 Both HTL and JSP can be used for developing components for both the classic and the touch-enabled UI. Although there can be a tendency to assume that HTL is only for the touch-enabled UI and JSP for the classic UI, this is a misconception and more due to timing. The touch-enabled UI and HTL were incorporated into AEM over approximately the same period. Since HTL is now the recommended language, it is being used for new components, which tend to be for the touch-enabled UI.
 

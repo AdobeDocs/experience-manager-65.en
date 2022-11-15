@@ -82,7 +82,7 @@ This section contains information on installing the demo package.
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
 1. Tap the **we-gov-forms.pkg.all-&lt;version&gt;.zip** package name, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
-1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
+1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
    ![we gov forms package](assets/wegov_forms_package.jpg)
@@ -219,7 +219,7 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 
 **References:**
 
-1. [Microsoft Dynamics OData configuration](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
+1. [Microsoft Dynamics OData configuration](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
 1. [Configuring Microsoft Dynamics for AEM Forms](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
 #### MS Dynamics OData cloud service {#ms-dynamics-odata-cloud-service}
@@ -470,7 +470,7 @@ In order to install and configure AEM Forms with the Adobe Forms, Conversion too
 
 Please review the following prior to reading further instructions:
 
-* [Configure the Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html)
+* [Configure the Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### Creating an IMS Configuration Part 1 {#creating-ims-config}
 
@@ -569,7 +569,7 @@ Once the IMS configuration is complete then we can proceed to review the cloud c
 
 1. For this configuration, we left the two checkbox values empty.
 
-   * To understand more about these options, see [Configure the cloud service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * To understand more about these options, see [Configure the cloud service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Configure Cloud Configuration (We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -599,7 +599,7 @@ Once the IMS configuration is complete then we can proceed to create the cloud c
 
 1. For this configuration, we left the two checkbox values empty.
 
-   * To understand more about these options, see [Configure the cloud service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * To understand more about these options, see [Configure the cloud service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Testing the forms Conversion (We.Gov Enrollment Application) {#test-forms-conversion}
 
@@ -639,7 +639,7 @@ Once the configuration is set up users can test it by uploading a PDF document.
 
 #### Known Issues & Notes {#known-issues-notes}
 
-The Automated Forms Conversion service includes certain [best practices, known complex patterns](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), and [known issues](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). Review these before you begin using AEM Forms Automated Forms Conversion service.
+The Automated Forms Conversion service includes certain [best practices, known complex patterns](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), and [known issues](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Review these before you begin using AEM Forms Automated Forms Conversion service.
 
 1. Generate the Form with Generate adaptive form(s) without data bindings enabled if you would like to bind the form to an FDM after conversion.
 

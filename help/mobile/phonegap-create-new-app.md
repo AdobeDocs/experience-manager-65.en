@@ -31,7 +31,7 @@ You can also provide an image file to use as the application thumbnail, select t
 Additional (and optional) tabs exist for build cloud service and integrating the Adobe Mobile Services SDK plug-in into your app.
 
 * Build: Click manage configurations and set up your build.phonegap.com build service here. Then from the drop-down you will be able to select the newly created PhoneGap build cloud service.
-* Analytics: Click manage configurations and set up your [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) cloud service. Then from the drop-down you will be able to select the newly created Mobile Service to integrate into your mobile app.
+* Analytics: Click manage configurations and set up your [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) cloud service. Then from the drop-down you will be able to select the newly created Mobile Service to integrate into your mobile app.
 
 ## Using App Templates {#using-app-templates}
 

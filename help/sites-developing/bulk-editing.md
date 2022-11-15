@@ -57,7 +57,7 @@ Fields are enabled on the page component (*not* on the template):
 
    >[!NOTE]
    >
-   >This example assumes that the Core Components have been installed on the instance, which is the case if the instance is running with We.Retail sample content. See the [Core Components documentation](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) for more information.
+   >This example assumes that the Core Components have been installed on the instance, which is the case if the instance is running with We.Retail sample content. See the [Core Components documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) for more information.
 
 1. Navigate to the required field within the `cq:dialog` definition.
 1. Define the following property on the field node:

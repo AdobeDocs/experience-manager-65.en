@@ -45,13 +45,13 @@ AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) tha
 
 AEM Sites includes an optional integration with Enhanced Insights by Analytics which uses functionality within the Adobe Analytics On-demand Service.
 
-For further information on managing GDPR data subject requests related to Adobe Analytics see [Adobe Analytics and GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+For further information on managing GDPR data subject requests related to Adobe Analytics see [Adobe Analytics and GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites includes an optional integration with Enhanced Personalization by Target which uses functionality within the Adobe Target On-demand Service.
 
-For further information on managing GDPR data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+For further information on managing GDPR data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
