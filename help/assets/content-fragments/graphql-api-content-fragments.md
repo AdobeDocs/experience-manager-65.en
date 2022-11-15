@@ -535,6 +535,11 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * add `List` to the model name; for example,  `cityList`
   * See [Sample Query - All Information about All Cities](#sample-all-information-all-cities)
 
+* The filter `includeVariations` is included in the `List` query type.  To retrieve Content Fragment Variations in the query results, then the `includeVariations` filter must be set to `true`.
+
+  >[!CAUTION]
+  >The filter `includeVariations` cannot be used together with the system-generated field `_variation`.
+
 * If you want to use a logical OR:
   * use ` _logOp: OR`
   * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
@@ -569,7 +574,19 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       >
       >If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
 
+      >[!CAUTION]
+      >The system-generated field `_variation` cannot be used together with the filter `includeVariations`.
+
       * See [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+
+    * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
+
+      * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+      * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+  
+      >[!NOTE]
+      >
+      >Tags can also be queried by listing the Metadata of a Content Fragment.
 
   * And operations:
   
