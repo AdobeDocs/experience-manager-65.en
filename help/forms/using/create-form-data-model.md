@@ -51,6 +51,7 @@ Do the following to configure your [!DNL MySQL] database:
 
 1. Install JDBC driver for [!DNL MySQL] database as an OSGi bundle:
 
+    1. Download [[!DNL MySQL] JDBC Driver OSGi Bundle](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
     1. Log in to AEM [!DNL Forms] Author Instance as an administrator and go to AEM web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
     1. Tap **[!UICONTROL Install/Update]**. An [!UICONTROL Upload / Install Bundles] dialog appears.
@@ -67,8 +68,18 @@ Do the following to configure your [!DNL MySQL] database:
         * **DataSource service property name**: Specify name of the service property containing the DataSource name. It is specified while registering the data source instance as OSGi service. For example, **datasource.name**.
         * **JDBC driver class**: Specify Java class name of the JDBC driver. For [!DNL MySQL] database, specify **com.mysql.jdbc.Driver**.
         * **JDBC connection URI**: Specify connection URL of the database. For [!DNL MySQL] database running on port 3306 and schema weretail, the URL is: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+        
+        >[!NOTE]
+        >
+        > When the [!DNL MySQL] database is behind a firewall, then database hostname is not a Public DNS. IP address of the database needs to be added in the *[/etc/hosts](C:\Windows\System32\drivers\etc\hosts)* file of the AEM host machine.
+
         * **Username:** Username of the database. It is required to enable JDBC driver to establish a connection with the database.
         * **Password:** Password of the database. It is required to enable JDBC driver to establish a connection with the database.
+
+        >[!NOTE]
+        >
+        >AEM Forms does not support NT Authentication for [!DNL MySQL], so create an SQL user account. Go to AEM web console at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) and search "Apache Sling Connection Pooled Datasource".For "JDBC connection URI" property set value of "integratedSecurity" as False  and use created username and password for connecting with [!DNL MySQL] database.
+
         * **Test on Borrow:** Enable the **[!UICONTROL Test on Borrow]** option.
         * **Test on Return:** Enable the **[!UICONTROL Test on Return]** option.
         * **Validation Query:** Specify a SQL SELECT query to validate connections from the pool. The query must return at least one row. For example, **select &#42; from customerdetails**.
