@@ -20,9 +20,9 @@ Perform the following steps to resolve the issue:
 
 1. If the issue is still not resolved, restore from the CRX repository from the backup or rebuild the CRX repository if backup is not available. 
 
->[!NOTE]
->
->Take the backup of your CRX repository before performing the above steps.
+    >[!NOTE]
+    >
+    >Take the backup of your CRX repository before performing the above steps.s
 
 ## Applies To {#applies-to}
 
