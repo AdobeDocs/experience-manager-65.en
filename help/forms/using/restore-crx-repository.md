@@ -22,7 +22,7 @@ Perform the following steps to resolve the issue:
 
     >[!NOTE]
     >
-    >Take the backup of your CRX repository before performing the above steps.s
+    >Take the backup of your CRX repository before performing the above steps.
 
 ## Applies To {#applies-to}
 
