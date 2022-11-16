@@ -16,7 +16,7 @@ Perform the following steps to resolve the issue:
 
 1. Locate the `oak-core` bundle and check whether that it is running. 
 
-1. Restart `oak-core` bundle if it is not running. If pause button is present in front of `oak-core` bundle, then it indicates that the bundle is in running state. 
+1. Restart the `oak-core` bundle if it is not running. If pause button is present in front of the `oak-core` bundle, then it indicates that the bundle is in running state. 
 
 1. If the issue is still not resolved, restore from the CRX repository from the backup or rebuild the CRX repository if backup is not available. 
 
