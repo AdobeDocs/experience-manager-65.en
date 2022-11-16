@@ -12,13 +12,17 @@ For AEM Forms deployed on JEE with RDB persistence, it is necessary that AEM For
 ## Solution {#solution}
 
 Perform the following steps to resolve the issue:
-1. Go to [!UICONTROL AEM Web Console Configuration] page at [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr). 
+1. Go to  [https://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles). 
 
 1. Locate the `oak-core` bundle and check whether that it is running. 
 
-1. Restart `oak-core` bundle if it is not running.
+1. Restart `oak-core` bundle if it is not running. If pause button is present in front of `oak-core` bundle, then it indicates that the bundle is in running state. 
 
 1. If the issue is still not resolved, restore from the CRX repository from the backup or rebuild the CRX repository if backup is not available. 
+
+>[!Note]
+>
+> Take the backup of your CRX repository before performing the above steps.
 
 ## Applies To {#applies-to}
 
