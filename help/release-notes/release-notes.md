@@ -89,6 +89,10 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * **Manage Publication** option disappears for a user with no replicate access and `READ` and `WRITE` access to `ETC` and `VAR`. (ASSETS-15007)
 * The load time for the properties page increases for an asset with multiple references. (ASSETS-14182)
 * When an image is unpublished from Brand Portal, Experience Manager also unpublishes it from Dynamic Media and as a result there is no image displayed on the live website. (ASSETS-14118) 
+* XSS issues on Smart Crop cards in Dynamic Media. (ASSETS-14212, ASSETS-14208, ASSETS-13704)
+* XSS issue in Viewew Presets in Dynamic Media. (ASSETS-13822)
+* Validate user access while previewing DM assets on AEM. (CQ-4314757)
+
 
 ## Commerce {#commerce-6515}
 
