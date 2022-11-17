@@ -82,8 +82,7 @@ Before you begin to install and configure AEM Forms document services, ensure th
 
 ### Extra requirements for UNIX-based operating system {#extrarequirements}
 
-If you are using a UNIX-based operating system, install the following 32-bit version packages from the installation media of the respective operating system:
-
+If you are using a UNIX-based operating system, install the following 32-bit packages from the installation media of the respective operating system: 
 <table>
  <tbody>
   <tr>
