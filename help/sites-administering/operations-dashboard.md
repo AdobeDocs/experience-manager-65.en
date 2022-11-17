@@ -519,7 +519,7 @@ It can be accessed by going to **Tools - Operations - Diagnosis **from the Welco
 
 It can also be accessed directly at this URL: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
+![index_manager](assets/index_manager.png)
 
 The UI can be used to filter indexes in the table by typing in the filter criteria in the search box in the upper left corner of the screen.
 
