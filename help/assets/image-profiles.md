@@ -17,16 +17,16 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->&bull; Smart crop is available only in Dynamic Media - Scene7 mode.
+>&bull; Smart Crop is available only in Dynamic Media - Scene7 mode.
 >&bull; Image profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Crop options {#crop-options}
 
 When you implement Smart Crop on images, Adobe recommends the following best practice and enforces the following limit:
 
-| Limit type | Best practice | Limit imposed | Change to limit on December 31, 2022 |
-| --- | --- | --- | --- |
-| Number of Smart Crops per image | 5 | 100 | 20 |
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Number of Smart Crops per image | 5 | 100 |
 
 See also [Dynamic Media limitations](/help/assets/limitations.md).
 
@@ -156,7 +156,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 >[!IMPORTANT]
 >
->Smart crop is available only in Dynamic Media - Scene7 mode.
+>&bull; Smart crop is available only in Dynamic Media - Scene7 mode.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
@@ -184,6 +184,10 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 1. Near the upper-right corner of the page, select **[!UICONTROL Save]**, then select **[!UICONTROL Close]** to return to the folder of assets.
 
 ## Edit the smart crop or smart swatch of multiple images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+>
+>&bull; Smart crop is available only in Dynamic Media - Scene7 mode.
 
 After you apply an image profile &ndash; containing Smart Crop &ndash; to a folder, all images in that folder have a crop applied to them. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
 
