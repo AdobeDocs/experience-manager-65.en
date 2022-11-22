@@ -90,7 +90,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * The load time for the properties page increases for an asset with multiple references. (ASSETS-14182)
 * When an image is unpublished from Brand Portal, Experience Manager also unpublishes it from Dynamic Media and as a result there is no image displayed on the live website. (ASSETS-14118) 
 * XSS issues on Smart Crop cards in Dynamic Media. (ASSETS-14212, ASSETS-14208, ASSETS-13704)
-* XSS issue in Viewew Presets in Dynamic Media. (ASSETS-13822)
+* XSS issue in Viewer Presets in Dynamic Media. (ASSETS-13822)
 * Validate user access while previewing DM assets on AEM. (CQ-4314757)
 
 
@@ -138,7 +138,7 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 * Enable ES6 compilation support for the client library `/libs/cq/gui/components/siteadmin/admin/restoretree/clientlibs/restoretree.js`. (NPR-39067)
 * The Multifield in a Content Fragment Model cannot be emptied and saved because validation occurs even if **[!UICONTROL Required]** is not selected. (NPR-39063)
 * In either **[!UICONTROL Copy]** or **[!UICONTROL Livecopy]** tasks, the `cq:targetMetadata` information was incorrectly being duplicated. This functionality caused two or more Experience Fragments in Experience Manager to point to the same offer exported in target. (NPR-38970)
-* Following a Restore Tree action, the message "Un-publication pending. #0 in the queue" appears in the user interface for a page that was never published in the first place. (NPR-38847)
+* Following a Restore Tree action, the message `Un-publication pending. #0 in the queue` appears in the user interface for a page that was never published in the first place. (NPR-38847)
 
 ### Page Editor {#sites-pageeditor-6515}
 
