@@ -1,0 +1,54 @@
+SYMBOLIC NAME                                 BUNDLE NAME                                               VERSION
+com.adobe.cq.dam.cq-dynamicmedia-core         AEM Dynamic Media Integration                             1.0.156
+com.adobe.cq.com.adobe.cq.ui.commons          AEM UI WCM Commons Bundle                                 1.3.30
+com.adobe.cq.wcm.com.adobe.cq.wcm.jobs.async  Adobe AEM - WCM Asynchronous Jobs support                 1.0.42
+com.adobe.cq.dam.cq-scene7-imaging            Adobe CQ DAM Scene7 Dynamic Imaging                       1.6.66.CQ650-B0057
+com.day.cq.wcm.cq-wcm-translation             Adobe CQ Translation Workflow                             1.5.130
+com.day.cq.wcm.cq-wcm-foundation              Adobe CQ WCM Foundation Components                        5.12.62
+com.adobe.cq.commerce.cq-commerce-pim         Adobe Communique 5 Commerce Product Information Manager   5.14.14
+com.day.cq.wcm.cq-command                     Adobe Experience Manager Command Implementation           1.1.32
+cq-dam-cfm-graphql                            Adobe Experience Manager GraphQL for Content Fragments    0.0.1.CQ650-B0014
+com.day.cq.cq-replication                     Adobe Granite Replication                                 6.2.86.CQ650-B0006
+com.adobe.granite.distribution.core           Adobe Granite Sling Distribution - Core                   0.2.54.B0004
+com.adobe.granite.workflow.core               Adobe Granite Workflow Core                               2.0.240.CQ660-B0017
+pdfcore                                       Adobe PDF Core                                            4.0.1663319196
+pdfencryption                                 Adobe PDF Encryption                                      4.0.1663319196
+PDFServices.extraction                        Adobe PDF Extraction services                             4.0.1663319196
+PDFServices.manipulations                     Adobe PDF Manipulation services                           4.0.1663319196
+PDFServices.security                          Adobe PDF Security services                               4.0.1663319196
+org.apache.felix.http.jetty                   Apache Felix Http Jetty                                   4.2.2
+org.apache.felix.http.servlet-api             Apache Felix Servlet API                                  1.2.0
+org.apache.sling.engine                       Apache Sling Engine Implementation (Adobe vendor branch)  2.7.10.B0004
+org.apache.sling.models.impl                  Apache Sling Models Implementation                        1.4.16.B0002
+org.apache.sling.jcr.repoinit                 Apache Sling Repoinit JCR                                 1.1.38
+org.apache.sling.repoinit.parser              Apache Sling Repoinit Parser                              1.6.14
+com.adobe.cq.cq-product-info-provider         CQ ProductInfo Provider                                   6.5.32
+com.adobe.dam.cq-dam-cfm-api                  ContentFragmentManagement - API                           1.3.26
+com.adobe.dam.cq-dam-cfm-impl                 ContentFragmentManagement - Implementation                0.11.108
+com.day.cq.dam.cq-dam-commons                 Day Communique 5 DAM Commons                              5.12.150
+com.day.cq.dam.cq-dam-core                    Day Communique 5 DAM Core Implementation                  5.12.346
+com.day.cq.dam.cq-scene7-core                 Day Communique 5 DAM Scene7 Integration                   5.12.240
+com.day.cq.wcm.cq-wcm-api                     Day Communique 5 WCM API                                  5.14.16
+com.day.cq.wcm.cq-wcm-content-sync            Day Communique 5 WCM Content Sync Extensions              5.12.10
+com.day.cq.wcm.cq-wcm-core                    Day Communique 5 WCM Core Implementation                  5.12.216
+org.apache.jackrabbit.oak-jackrabbit-api      Jackrabbit API                                            1.22.13
+org.apache.jackrabbit.oak-api                 Oak API                                                   1.22.13
+org.apache.jackrabbit.oak-blob-cloud-azure    Oak Azure Cloud Blob Store                                1.22.13
+org.apache.jackrabbit.oak-blob-plugins        Oak Blob Plugins                                          1.22.13
+org.apache.jackrabbit.oak-blob                Oak Blob Store                                            1.22.13
+org.apache.jackrabbit.oak-authorization-cug   Oak CUG Authorization                                     1.22.13
+org.apache.jackrabbit.oak-commons             Oak Commons                                               1.22.13
+org.apache.jackrabbit.oak-store-composite     Oak Composite Store                                       1.22.13
+org.apache.jackrabbit.oak-core                Oak Core                                                  1.22.13
+org.apache.jackrabbit.oak-core-spi            Oak Core SPI                                              1.22.13
+org.apache.jackrabbit.oak-store-document      Oak DocumentNodeStore                                     1.22.13
+org.apache.jackrabbit.oak-auth-external       Oak External Authentication Support                       1.22.13
+org.apache.jackrabbit.oak-jcr                 Oak JCR Binding                                           1.22.13
+org.apache.jackrabbit.oak-auth-ldap           Oak LDAP Authentication Support                           1.22.13
+org.apache.jackrabbit.oak-lucene              Oak Lucene                                                1.22.13
+org.apache.jackrabbit.oak-store-spi           Oak NodeStore and Commit SPI                              1.22.13
+org.apache.jackrabbit.oak-query-spi           Oak Query SPI                                             1.22.13
+org.apache.jackrabbit.oak-security-spi        Oak Security SPI                                          1.22.13
+org.apache.jackrabbit.oak-segment-azure       Oak Segment Azure                                         1.22.13
+org.apache.jackrabbit.oak-segment-tar         Oak Segment Tar                                           1.22.13
+org.apache.jackrabbit.oak-solr-osgi           Oak Solr OSGi                                             1.22.13
