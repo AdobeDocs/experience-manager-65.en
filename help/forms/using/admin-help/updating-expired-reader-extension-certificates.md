@@ -21,7 +21,9 @@ All PDF documents, Reader extended using the older certificates before January 7
 A. Adobe Root CA is the certificate authority from which an Acrobat Reader Extensions certificate is issued. On January 7, 2023, "Adobe Root CA" and all the certificates issued from it are expiring.
 
 **Q. There was a previous communication from Adobe regarding the expiration of certificates and the impact on using/opening PDF documents. Should that communication be ignored?**
-A. Based on the reassessment of the situation, all PDF documents extended using production certificates issued from the old "Adobe Root CA" before January 7, 2023 continue to work without any change after January 7, 2023. If you have already updated your PDFs there will be no change in experience
+
+A. Based on the reassessment of the situation, all PDF documents extended using production certificates issued from the old "Adobe Root CA" before January 7, 2023 continue to work without any change after January 7, 2023. If you have already updated your PDFs there is no change in the experience.
+
 
 **Q. Who should I contact if I have additional questions?** 
 
