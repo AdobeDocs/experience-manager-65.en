@@ -20,9 +20,8 @@ All PDF documents, Reader extended using the older certificates before January 7
 
 A. Adobe Root CA is the certificate authority from which an Acrobat Reader Extensions certificate is issued. On January 7, 2023, "Adobe Root CA" and all the certificates issued from it are expiring.
 
-**Q. There was a previous communication from Adobe regarding expiration of certificates and impact on using/opening PDFs? Should that communication be ignored?**
-A.  Based on reassessment of the situation, all PDF documents extended using production certificates issued from the old 'Adobe Root CA' before January 7, 2023 continue to work without any change after January 7, 2023. If you have already updated your PDFs there will be no change in experience
-
+**Q. There was a previous communication from Adobe regarding the expiration of certificates and the impact on using/opening PDF documents. Should that communication be ignored?**
+A. Based on the reassessment of the situation, all PDF documents extended using production certificates issued from the old "Adobe Root CA" before January 7, 2023 continue to work without any change after January 7, 2023. If you have already updated your PDFs there will be no change in experience
 
 **Q. Who should I contact if I have additional questions?** 
 
@@ -38,11 +37,11 @@ A. The description of the new Acrobat Reader Extensions certificates mentions **
 
 **Q. How do I obtain the latest certificates?**
 
-A. All the entitled Forms Customers (with active license) can be download  the new certificates (certificates based on "Adobe Root CA G2") from the [Adobe Licensing Website](https://licensing.adobe.com/). If you are unable to find the certificate on Adobe Licensing Website, contact [Adobe Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support) or raise a support ticket.
+A. All the entitled Forms Customers (with active license) can download  the new certificates (certificates based on "Adobe Root CA G2") from the [Adobe Licensing Website](https://licensing.adobe.com/). If you are unable to find the certificate on Adobe Licensing Website, contact [Adobe Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support) or raise a support ticket.
 
-**Q. Do my PDF documents extended using certificates issued from 'Adobe Root CA' (old certificate authority) continue to work after January 7, 2023?**
+**Q. Do my PDF documents extended using certificates issued from "Adobe Root CA" (the old certificate authority) continue to work after January 7, 2023?**
 
-A. Yes, all PDF documents extended using production certificates issued from the 'Adobe Root CA' (old certificate authority) before January 7, 2023, continue to work without any change after January 7, 2023. PDF documents extended with evaluation certificates cease to work past the expiration date.
+A. Yes, all PDF documents extended using production certificates issued from the "Adobe Root CA" (the old certificate authority) before January 7, 2023, continue to work without any change after January 7, 2023. PDF documents extended with evaluation certificates cease to work past the expiration date.
 
 **Q. Which version of Adobe Acrobat Reader is required to continue using PDF documents extended with certificates issued from "Adobe Root CA" (the old certificate authority)?**
 
@@ -64,7 +63,7 @@ A. Yes, you can keep both certificates but with different aliases on an Adobe Ex
 
 A. Yes, the same Acrobat Reader Extensions certificate can be used across multiple environments.
 
-**Q. How do I check the usage rights applied on a PDF document?**
+**Q. How do I check the usage rights applied to a PDF document?**
 
 A. You can use the [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API to retrieve the information about the usage rights applied to a PDF document.
 
