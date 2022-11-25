@@ -153,6 +153,8 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 1. Select **[!UICONTROL Save]**.
 1. To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can allowlist more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).
 
+If you want to further customize your configuration, such as enabling ACL permissions, you can optionally complete any of the tasks under [(Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
     * On the Dynamic Media Image Server page, in the **[!UICONTROL Publish Context]** drop-down list, select **[!UICONTROL Test Image Serving]**.
@@ -162,8 +164,6 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
     * In the upper-right corner of the page, select **[!UICONTROL Save]**. -->
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
-
-If you want to further customize your configuration, such as enabling ACL permissions, you can optionally complete any of the tasks under [(Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 ### Change the password to Dynamic Media {#change-dm-password}
 
