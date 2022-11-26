@@ -212,7 +212,7 @@ If you want to further customize the configuration and setup of Dynamic Media - 
 
 ### (Optional) Enable Access Control List permissions in Dynamic Media - Scene7 mode {#optional-enable-acl}
 
-When you run Dynamic Media - Scene7 mode on AEM, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, *enable* ACL permissions. Doing so only forwards the authorized `/is/image` requests if the user is not authorized to access the asset. In such cases, a 403 forbidden error is displayed.
+When you run Dynamic Media - Scene7 mode on AEM, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, *enable* ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
 
 **To enable ACL permissions in Dynamic Media - Scene7 mode:**
 
