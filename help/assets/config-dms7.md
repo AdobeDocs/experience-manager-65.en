@@ -200,7 +200,7 @@ The changed password is saved when you select **[!UICONTROL Save]** in the upper
 
 If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following *optional* tasks:
 
-* [(Optional) Enable ACL permission in Dynamic Media - Scene7 mode](#optional-enable-acl)
+* [(Optional) Enable ACL permissions in Dynamic Media - Scene7 mode](#optional-enable-acl)
 
 * [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](#optional-config-dms7-assets-larger-than-2gb)
 
