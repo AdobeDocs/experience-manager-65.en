@@ -17,13 +17,14 @@ Take the backup of your CRX-repository before performing the below-mentioned ste
 ## Solution {#solution}
 
 Perform the following steps to resolve the issue:
-1. Go to  [https://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles). 
+1. Go to  `https://[AEM Forms Server]:[port]/system/console/bundles`. 
 
 1. Locate the `oak-core` bundle and check whether that it is running. 
 
-1. Restart the `oak-core` bundle if it is not running. If the ![Pause button](/help/forms/using/assets/stop.png) icon is present in front of the `oak-core` bundle, then it indicates that the bundle is in the running state. 
+1. Restart the `oak-core` bundle if it is not running. If  ![Pause button](/help/forms/using/assets/stop.png) icon is present in front of the `oak-core` bundle, then it indicates that the bundle is in the running state. 
 
-1. If the issue is still not resolved, restore from the CRX repository from the backup or rebuild the CRX repository if backup is not available. 
+1. If the issue is still not resolved, restore from the CRX-repository from the backup or rebuild the CRX-repository if backup is not available. 
+
 
 ## Applies To {#applies-to}
 
