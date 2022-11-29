@@ -8,25 +8,26 @@ exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
 
 ## Issue {#issue}
 
-For AEM Forms deployed on JEE with RDB persistence, it is necessary that AEM Forms host machines and database machines must be in absolute time synch. However, if for some reason clocks get out of synch, then CRX repository gets corrupt, and its URLs become inaccessible. The error as `AuthenticationsupportService missing` occurs in log files. 
+For AEM Forms on JEE that uses a relational database, time on the machine hosting AEM Forms and relational database should always be in absolute sync. If the time on these machines gets out of sync, the CRX-repository of AEM Forms on JEE server can become inaccessible. It may appear corrupt and become inaccessible via URL. The `AuthenticationsupportService missing` error is logged.
+
+## Prerequisites {#prerequisites}
+
+Take the backup of your CRX-repository before performing the below-mentioned steps.
 
 ## Solution {#solution}
 
 Perform the following steps to resolve the issue:
-1. Go to  [https://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles). 
+1. Go to  `https://[AEM Forms Server]:[port]/system/console/bundles`. 
 
 1. Locate the `oak-core` bundle and check whether that it is running. 
 
-1. Restart the `oak-core` bundle if it is not running. If pause button is present in front of the `oak-core` bundle, then it indicates that the bundle is in running state. 
+1. Restart the `oak-core` bundle if it is not running. If  ![Pause button](/help/forms/using/assets/stop.png) icon is present in front of the `oak-core` bundle, then it indicates that the bundle is in the running state. 
 
-1. If the issue is still not resolved, restore from the CRX repository from the backup or rebuild the CRX repository if backup is not available. 
+1. If the issue is still not resolved, restore from the CRX-repository from the backup or rebuild the CRX-repository if backup is not available. 
 
-    >[!NOTE]
-    >
-    >Take the backup of your CRX repository before performing the above steps.
 
 ## Applies To {#applies-to}
 
 This solution applies to:
 
-* AEM Forms on JEE Cluster Server
+* AEM Forms on JEE Cluster Environment
