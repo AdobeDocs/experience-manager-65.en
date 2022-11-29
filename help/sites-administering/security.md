@@ -209,16 +209,17 @@ Access Control Lists are made up of the individual permissions and are used to d
 
 >[!NOTE]
 >
->There are ACLs that are included with the samples. It is recommended that you review and determine what is appropriate for your applications. To review the ACLs that are included, go to **CRXDE **and select the **Access Control** tab for the following nodes:
+>There are ACLs that are included with the samples. It is recommended that you review and determine what is appropriate for your applications. To review the ACLs that are included, go to **CRXDE** and select the **Access Control** tab for the following nodes:
 >
->`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp`: Allows everyone read access.
->`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: Allows everyone read access.
->`/home/users/geometrixx-outdoors`: Allows everyone read access for `*/profile*` and
->`*/social/relationships/following/*`.
+>* `/etc/cloudservices`
+>* `/home/users/we-retail`
 >
->Your custom application may set access for other relationships, such as `*/social/relationships/friend/*` or `*/social/relationships/pending-following/*`.
+>Your custom application may set access for other relationships, such as:
 >
->When you create ACLs specific to communities, members joining those communities may be granted additional permissions. For example, this could be the case when users join the communities at `/content/geometrixx-outdoors/en/community/hiking` or `/content/geometrixx-outdoors/en/community/winter-sports`.
+>* `*/social/relationships/friend/*` 
+>* or `*/social/relationships/pending-following/*`.
+>
+>When you create ACLs specific to communities, members joining those communities may be granted additional permissions. For example, this could be the case when users join the communities at: `/content/we-retail/us/en/community` 
 
 ### Permission States {#permission-states}
 
