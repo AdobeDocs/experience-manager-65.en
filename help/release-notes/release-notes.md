@@ -2,7 +2,6 @@
 title: Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: Find release information, what's new, install how-tos, and a detailed change list for [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
@@ -100,9 +99,44 @@ exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, December 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
+### Key Features {#keyfeatures}
+
+* AEM Forms Designer is now available in Spanish locale. (LC-3920051)
+* You can now use OAuth2 to authenticate with Microsoft Office 365 mail server protocols (SMTP and IMAP). (NPR-35177)
+* You can set [Revalidate on server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) property to true to identify the hidden fields for exclusion from a Document of Record on server-side. (NPR-38149)
+* AEM Forms Designer requires 32-bit version of Visual C++ 2019 Redistributable (x86).  (NPR-36690)
+
+### Fixes {#fixes}
+
+* When the data-disabled property of an Adaptive Form is toggled, the appearance of radio button and checkbox groups does not change. (NPR-39368)
+* When an Adaptive Form is translated, some of the translations are missed and not shown correctly. (NPR-39367)
+* When the property of a page is set to hidden, the page is not removed from the formset. (NPR-39325)
+* In a Document of Record, the dynamic footnote section at the end of the page is not present. (NPR-39322)
+* When a Document of Record is generated for an Adaptive Form, only the vertical alignment is allowed for radio buttons and checkboxes. The user cannot set the horizontal alignment for radio buttons and checkboxes. (NPR-39321)
+* After deploying Correspondence Management, if multiple users try to access a form, org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentialLanguageRoots becomes bottleneck and a majority of the threads gets struck. Various forms page requests often took more than 1 minute to load each even when the server has a very low load. (NPR-39176, CQ-4347710)
+* In an Adaptive Form, when you use a Rich Text field in a lazy loaded Adaptive Form fragment, some of the following errors are experienced:
+  * You cannot edit the content or append anything to the Rich Text field.
+  * The display pattern applied to the rich text is not honored. 
+  * The error message for minimum field length is not displayed on submitting the form.
+  * The content of this rich-text field is included several times in the produced submit-XML. (NPR-39168)
+* When the Date picker option is used in an Adaptive Form, it fails to convert the value into the correct format. (NPR-39156)
+* While previewing an Adaptive Form as an HTML form, it is not rendered properly, as some of the sub forms overlap with the parent form. (NPR-39046)
+* If the panel has hidden table and adaptive form is rendered using tabular view, fields on the first tab are not displayed correctly. (NPR-39025)
+* The `Body` tag is missing for the OOTB (Out-of-the-Box) template. (NPR–39022)
+* The Document of Record is not generated in the language of the Adaptive Form. It is always generated in English language. (NPR-39020)
+* When an Adaptive Form has multiple panels and some of the panels use the out-of-the-box **File Attachment** component, the `Error occurred while draft saving` error occurs . (NPR-38978)
+* When `=` sign is used in the check box, drop-down list, or radio button fields of an Adaptive Form and the Document of Record is generated, then `=` sign is not visible in the generated Document of Record.(NPR-38859)
+* There is multifold increase in the number of the Notice Batch Processing errors after 6.5.11.0 service pack upgrade. (NPR-39636)
+* When you do not provide test data, Correspondence Management letters fail to load in the Agent UI. (CQ-4348702)
+* When user applies the AEM Forms Service Pack 14 (SP14) form AEM Forms deployed using IBM® WebSphere®, the bootstrapping fails while initializing a database and the `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` error occurs.(NPR-39414)
+* On an AEM Form on OSGi server, when you use Document Service API to certify PDF, it fails with error: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311-003. (NPR-38855)
+* When user tries to use the wrapper service for rendering letters with AEM 6.3 Forms, the `java.lang.reflect.UndeclaredThrowableException` error occurs. (CQ-4347259)
+* When an XDP is rendered as HTML5 form, the content of the master page is rendered first regardless of the placement of the objects in an Adaptive Form. (CQ-4345218)
+* The configuration of the application at the destination server changes to the settings defined at the source server even though the **Overwrite configuration when import is complete** option is not checked at the time of importing the application. (NPR-39044)
+* When a user tries to update connector configuration using Configuration Manager, it fails.(CQ-4347077)
+* When user tries to run an AEM Forms on JEE patch after changing the default password of the administrator user, an exception `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` occurs. (CQ-4348277)
+* In AEM Designer, form fields without captions are placed in table cells including checkboxes.(LC-3920410)
+* When the user tries to open Help in the AEM Forms Designer, it is not displayed properly. (CQ-4341996)
 
 ## [!DNL Sites] {#sites-6515}
 

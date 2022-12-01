@@ -365,6 +365,7 @@ role: User
   + [Reader extending policy-protected PDF documents using Portable Protection Library](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
   + [Enable AEM to search document security protected PDF and Microsoft Office documents](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
   + [Protect a document on behalf of another user](using/protect-document-on-behalf-of-another-user.md)
+  + [oAuth2.0 Support for Microsoft Mail Service](/help/forms/using/oauth2-support-for-mail-service.md)
 + Forms Designer {#use-forms-designer}
   + [Forms Designer Help](using/forms-designer-help.md)
   + [Using Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
