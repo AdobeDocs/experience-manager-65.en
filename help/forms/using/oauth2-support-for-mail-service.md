@@ -1,12 +1,10 @@
 ---
-title: OAuth2 support for Microsoft® Office 365 mail server protocols
-description: Oauth2 support for Microsoft® Office 365 mail server protocols
+title: Configure OAuth2-based authentication for Microsoft® Office 365 mail server protocols
+description: Configure OAuth2-based authentication for Microsoft® Office 365 mail server protocols
 ---
-# OAuth 2.0 Support for the Microsoft® Office 365 mail server protocols {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Integrate with Microsoft® Office 365 mail server protocols {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-AEM Forms offer OAuth 2.0 support for integration with Microsoft® Office 365 mail server protocols, in order to allow organizations to adhere to secure email requirements. Azure Active Directory (Azure AD) offers OAuth 2.0 authentication service, which enables your application to connect with various protocols such as IMAP, POP or SMTP and access email data for Office 365 users.
-
-Below are step-by-step instructions for configuring the Microsoft® Office 365 mail server protocols to authenticate via OAuth 2.0 service:
+To allow organizations to adhere to secure email requirements, AEM Forms offer OAuth 2.0 support for integration with Microsoft® Office 365 mail server protocols. You can use Azure Active Directory (Azure AD) OAuth 2.0 authentication service,  to connect with various protocols such as IMAP, POP or SMTP and access email data for Office 365 users. Below are step-by-step instructions for configuring the Microsoft® Office 365 mail server protocols to authenticate via OAuth 2.0 service:
 
 1. Login [https://portal.azure.com/](https://portal.azure.com/) and search for **Azure Active Directory** in the search bar and click on the result. 
 Alternatively, you can browse directly to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -16,8 +14,6 @@ Alternatively, you can browse directly to [https://portal.azure.com/#blade/Micro
 
 1. Fill in the information according to your requirements, then click **Register**.
    ![Supported Account](/help/forms/using/assets/azure_suuportedaccountype.png)
-
-
    In the above case, **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft® accounts (for example, Skype, Xbox)** option is selected. 
 
    >[!NOTE]
@@ -39,7 +35,6 @@ Alternatively, you can browse directly to [https://portal.azure.com/#blade/Micro
    * `POP.AccessAsUser.All`
    * `SMTP.Send`
    * `User.Read`
-
 
    ![API Permission](/help/forms/using/assets/azure_apipermission.png)
 
@@ -67,7 +62,7 @@ Next, you need to generate the authorization code, explained in the following st
 1. Open the following URL in the browser after replacing `clientID` with the `<client_id>` and `redirect_uri` with your redirect URI of your application: 
 
     ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
-   
+
 1. When, you type the above URL, you are redirected to the login screen:
    ![Login Screen](/help/forms/using/assets/azure_loginscreen.png)
 
@@ -82,7 +77,9 @@ Next, you need to generate the authorization code, explained in the following st
 ## Generating the Refresh Token {#generating-the-refresh-token}
 
 Next, you need to generate the refresh token, explained in the following steps:
+
 1. Open the command prompt and use the following cURL command to get the refreshToken. 
+
 1. Replace the `clientID`, `client_secret` and `redirect_uri` with the values for your application along with the value of `<code>`:
    
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
@@ -156,9 +153,4 @@ Next, you need to generate the refresh token, explained in the following steps:
 * If the e-mail service is not working properly. Try to regenerate the `Refresh Token` as described above. It takes a few minutes for the new value to be deployed.
 
 * Error while configuring e-mail server details in email endpoint using Workbench.Try to configure endpoint via Admin UI instead of Workbench.
-
- 
-
-
-
 

@@ -101,9 +101,9 @@ mini-toc-levels: 3
 
 ### Key Features {#keyfeatures}
 
-* AEM Forms Designer is now available in Spanish locale. (LC-3920051)
-* You can now use OAuth2 to authenticate with Microsoft Office 365 mail server protocols (SMTP and IMAP). (NPR-35177)
-* You can set [Revalidate on server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) property to true to identify the hidden fields for exclusion from a Document of Record on server-side. (NPR-38149)
+* AEM Forms Designer is now available in [Spanish locale](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
+* You can now use [OAuth2 to authenticate with Microsoft Office 365 mail server protocols (SMTP and IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* You can set [Revalidate on server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) property to true to identify the hidden fields for exclusion from a Document of Record on server-side. (NPR-38149)
 * AEM Forms Designer requires 32-bit version of Visual C++ 2019 Redistributable (x86).  (NPR-36690)
 
 ### Fixes {#fixes}
