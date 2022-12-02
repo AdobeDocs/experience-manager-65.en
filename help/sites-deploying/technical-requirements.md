@@ -190,7 +190,7 @@ Adobe Experience Manager works with the following server platforms for productio
 | IBM AIX 7.2 |Z: Not supported  |
 
 1. Linux Kernel 2.6, 3.x, 4.x and 5.x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux and Amazon Linux. AEM Forms add-on features are only supported on CentOS 7, Red Hat Enterprise Linux 7, and Red Hat Enterprise Linux 8.
-1. AEM Forms is supported only on Ubuntu 16.04 LTS
+1. AEM Forms is supported only on Ubuntu 20.04 LTS
 1. Linux distribution supported by Adobe Managed Services
 1. Microsoft Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
 1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions. 
