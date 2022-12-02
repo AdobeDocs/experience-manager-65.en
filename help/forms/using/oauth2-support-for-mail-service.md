@@ -1,6 +1,7 @@
 ---
 title: Configure OAuth2-based authentication for Microsoft® Office 365 mail server protocols
 description: Configure OAuth2-based authentication for Microsoft® Office 365 mail server protocols
+exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 ---
 # Integrate with Microsoft® Office 365 mail server protocols {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
@@ -153,4 +154,3 @@ Next, you need to generate the refresh token, explained in the following steps:
 * If the e-mail service is not working properly. Try to regenerate the `Refresh Token` as described above. It takes a few minutes for the new value to be deployed.
 
 * Error while configuring e-mail server details in email endpoint using Workbench.Try to configure endpoint via Admin UI instead of Workbench.
-
