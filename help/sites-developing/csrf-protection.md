@@ -29,7 +29,7 @@ Any component that relies on the `granite.jquery` dependency will benefit from t
 
 ### Replicating the Crypto Key {#replicating-crypto-keys}
 
-In order to make use of the tokens, you need to replicate the HMAC binary to all of the instances in your deployment. See [Replicating the HMAC key](help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) for more details.
+In order to make use of the tokens, you need to replicate the HMAC binary to all of the instances in your deployment. See [Replicating the HMAC key](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) for more details.
 
 >[!NOTE]
 >
