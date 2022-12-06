@@ -588,6 +588,29 @@ Supported `jsdoc` tags:
 
   All other return types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Return types are not case sensitive.
 
+* **This**
+   Syntax: `@this currentComponent`
+
+   Use @this to refer to the Adaptive Form component on which the rule is written. 
+  
+   The following example is based on the field value. In the following example, the rule hides a field in the form. The `this` portion of `this.value` refers to underlying Adaptive Form component, on which the rule is written.
+
+   ```
+      /**
+      * @function myTestFunction
+      * @this currentComponent
+      * @param {scope} scope in which code inside function will be executed.
+      */
+      myTestFunction = function (scope) {
+         if(this.value == "O"){
+               scope.age.visible = true;
+         } else {
+            scope.age.visible = false;
+         }
+      }
+
+   ```
+
 >[!NOTE]
 >
 >Comments before custom function are used for summary. Summary can extend to multiple lines until a tag is encountered. Limit the size to a single for a concise description in the rule builder.
