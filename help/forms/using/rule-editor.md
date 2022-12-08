@@ -573,6 +573,9 @@ Supported `jsdoc` tags:
     1. string
     1. number
     1. boolean
+    1. scope
+
+   Scope refers fields of an Adaptive Form. When a form uses lazy loading, you can use `scope` to access its fields. You can access fields either when the fields are loaded or if the fields are marked global.
 
   All other parameter types are categorized under one of the above. None is not supported. Ensure that you select one of the types above. Types are not case sensitive. Spaces are not allowed in the parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
