@@ -52,6 +52,19 @@ The plain rendition selector uses a transformer as opposed to additional scripts
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
+### Configuring the HTML rendition generation {#configuring-html-rendition-generation}
+
+The HTML rendition is generated using the Sling Rewriter Pipelines. The pipeline is defined at `/libs/experience-fragments/config/rewriter/experiencefragments`. The HTML Transformer supports the following options:
+
+* `allowedCssClasses`
+  * A RegEx expression which matches the CSS classes that should be left in the final rendition. 
+  * This is useful if the customer wants to strip away some specific CSS classes
+* `allowedTags` 
+  * A list of HTML tags to to be allowed in the final rendition. 
+  * By default the following tags are allowed (no configuration needed): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link, and script
+
+It is recommended to configure the rewriter using an overlay. See [Overlays in AEM as a Cloud Service](/help/sites-developing/overlays.md)
+
 ## Social Variations {#social-variations}
 
 Social variants can be posted on social media (text and image). In AEM these social variants can contain components; for example, text components, image components.

@@ -62,16 +62,12 @@ There are a few things you need to take into consideration when configuring the 
 
 ### Replicating the HMAC key {#replicating-the-hmac-key}
 
-The HMAC key is present as a binary property of `/etc/key` in the repository. You can download it separately by pressing the **view** link next to it:
-
-![chlimage_1-35](assets/chlimage_1-35a.png)
-
 In order to replicate the key across instances, you need to:
 
 1. Access the AEM instance, typically an author instance, that contains the key material to copy;
 1. Locate the `com.adobe.granite.crypto.file` bundle in the local file system. For example, under this path:
 
-    * &lt;author-aem-install-dir&gt;/crx-quickstart/launchpad/felix/bundle21
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    The `bundle.info` file inside each folder will identify the bundle name.
 
