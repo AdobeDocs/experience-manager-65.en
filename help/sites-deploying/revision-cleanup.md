@@ -1,8 +1,8 @@
 ---
 title: Revision Cleanup
 seo-title: Revision Cleanup
-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,7 +18,7 @@ exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 
 Each update to the repository creates a new content revision. As a result, with each update the size of the repository grows. To avoid uncontrolled repository growth, old revisions need to be be cleaned up to free disk resources. This maintenance functionality is called Revision Cleanup. It has been available as an offline routine since AEM 6.0.
 
-With AEM 6.3 an online version of this functionality called Online Revision Cleanup was introduced. Compared to Offline Revision Cleanup where the AEM instance has to be shut down, Online Revision Cleanup can be run while the AEM instance is online. Online Revision Cleanup is turned on by default and it is the recommended way of performing a revision cleanup.
+With AEM 6.3 and higher, an online version of this functionality called Online Revision Cleanup was introduced. Compared to Offline Revision Cleanup where the AEM instance has to be shut down, Online Revision Cleanup can be run while the AEM instance is online. Online Revision Cleanup is turned on by default and it is the recommended way of performing a revision cleanup.
 
 **Note**: [See the Video](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) for an introduction and how to use Online Revision Cleanup.
 
@@ -156,7 +156,7 @@ In some cases, alternating between the tail and full compaction modes delays the
   </tr>
   <tr>
    <td><strong>Is the previous Tar format still supported?</strong></td>
-   <td>Only the new Oak Segment Tar is supported with AEM 6.3.</td>
+   <td>Only the new Oak Segment Tar is supported with AEM 6.3 or higher.</td>
    <td> </td>
   </tr>
   <tr>
@@ -165,7 +165,7 @@ In some cases, alternating between the tail and full compaction modes delays the
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Can I upgrade to 6.3 and do the migration later (for example, using another maintenance window)?</strong></td>
+   <td><strong>Can I upgrade to 6.3 or higher and do the migration later (for example, using another maintenance window)?</strong></td>
    <td>No, as explained above, the content migration is mandatory.</td>
    <td> </td>
   </tr>
@@ -243,7 +243,7 @@ In some cases, alternating between the tail and full compaction modes delays the
   </tr>
   <tr>
    <td><strong>Are there any prerequisites before running Online Revision Cleanup?</strong></td>
-   <td><p>Online Revision Cleanup is available only with AEM 6.3 and later releases. Also, if you are using an older version of AEM you need to migrate to the new <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
+   <td><p>Online Revision Cleanup is available only with AEM 6.3 and higher releases. Also, if you are using an older version of AEM you need to migrate to the new <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
