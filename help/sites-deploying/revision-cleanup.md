@@ -156,7 +156,7 @@ In some cases, alternating between the tail and full compaction modes delays the
   </tr>
   <tr>
    <td><strong>Is the previous Tar format still supported?</strong></td>
-   <td>Only the new Oak Segment Tar is supported with AEM 6.3  or higher.</td>
+   <td>Only the new Oak Segment Tar is supported with AEM 6.3 or higher.</td>
    <td> </td>
   </tr>
   <tr>
