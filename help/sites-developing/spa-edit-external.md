@@ -352,6 +352,10 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
    * Deploy the project to AEM and navigate to the newly created `test` page. The page content is now rendered and AEM components are editable.
 
+## Limitations {#limitations}
+
+The RemotePage component expects that the implementation provides an asset-manifest like the one [found here.](https://github.com/shellscape/webpack-manifest-plugin) The RemotePage component, however, has only been tested to work with the React framework (and Next.js via the remote-page-next component), and therefore doesn't support remotely loading applications from other frameworks, such as Angular.
+
 ## Additional Resources {#additional-resources}
 
 The following reference material may be helpful to understand SPAs in the context of AEM.
