@@ -31,7 +31,7 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
 * [AEM version 6.5.4 or newer](/help/release-notes/release-notes.md)
   * You must have admin rights to the system.
 * [The sample WKND SPA Project app available on GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-  * Download the [latest release.](https://github.com/adobe/aem-guides-wknd-spa/releases) It will be named similar to `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+  * Download the [latest release of the React app.](https://github.com/adobe/aem-guides-wknd-spa/releases) It will be named similar to `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
   * Download the [latest sample images](https://github.com/adobe/aem-guides-wknd-spa/releases) for the app. It will be named similar to `wknd-spa-sample-images-X.Y.Z.zip`.
   * [Use package manager](/help/sites-administering/package-manager.md) to install the packages as a you would any other package in AEM.
   * The app does not need to be installed using Maven for the purposes of this walkthrough.
