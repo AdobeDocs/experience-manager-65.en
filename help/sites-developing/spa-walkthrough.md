@@ -26,18 +26,19 @@ The goal of this introduction and walkthrough is to demonstrate to an AEM develo
 
 ## Requirements {#requirements}
 
-The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. To follow along with this walkthrough, you must have the following available.
+The walkthrough is based on standard AEM functionality and the sample WKND SPA Project app. To follow along with this walkthrough, you must have the following available.
 
-* [AEM version 6.4 with service pack 2 or newer](/help/release-notes/release-notes.md)
+* [AEM version 6.5.4 or newer](/help/release-notes/release-notes.md)
   * You must have admin rights to the system.
-* [The sample We.Retail Journal app available on GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
-  * Download the [latest release.](https://github.com/adobe/aem-sample-we-retail-journal/releases)
-  * [Use package manager](/help/sites-administering/package-manager.md) to install the app and start it as a you would any other package in AEM.
+* [The sample WKND SPA Project app available on GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+  * Download the [latest release.](https://github.com/adobe/aem-guides-wknd-spa/releases) It will be named similar to `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+  * Download the [latest sample images](https://github.com/adobe/aem-guides-wknd-spa/releases) for the app. It will be named similar to `wknd-spa-sample-images-X.Y.Z.zip`.
+  * [Use package manager](/help/sites-administering/package-manager.md) to install the packages as a you would any other package in AEM.
   * The app does not need to be installed using Maven for the purposes of this walkthrough.
 
 >[!CAUTION]
 >
->This document uses the [We.Retail Journal app](https://github.com/adobe/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
+>This document uses the [WKND Spa Project app](https://github.com/adobe/aem-guides-wknd-spa) for demonstration purposes only. It should not be used for any project work.
 >
 >Any AEM project should leverage the [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) which supports SPA projects using React or Angular and leverages the SPA SDK.
 
@@ -91,14 +92,6 @@ By rendering on the client side, page element react faster, and interactions wit
 ## Content Editing Experience with SPA {#content-editing-experience-with-spa}
 
 When an SPA is built to leverage the AEM SPA Editor, the content author notices no difference when editing and creating content. Common AEM functionality is available and no changes to the author's workflow is required.
-
->[!NOTE]
->
->The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. The following requirements must be met:
->
->* [AEM version 6.4 with service pack 2](/help/release-notes/release-notes.md)
->* [Install the sample We.Retail Journal app available on GitHub here.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
->
 
 1. Edit the WKND SPA Project app in AEM.
 
