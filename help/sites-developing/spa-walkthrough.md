@@ -1,18 +1,12 @@
 ---
 title: SPA Introduction and Walkthrough
-seo-title: SPA Introduction and Walkthrough
 description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
-seo-description: This article introduces the concepts of a SPA and walks through using a basic SPA application for authoring, showing how it relates to the underlying AEM SPA Editor.
-uuid: 4b0a9e53-3892-4d60-8bd3-7ff740d2f137
-contentOwner: bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 0478afcb-b029-4ce6-b3e6-cee4bb5408ce
-docset: aem65
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 ---
-# SPA Introduction and Walkthrough{#spa-introduction-and-walkthrough}
+
+# SPA Introduction and Walkthrough {#spa-introduction-and-walkthrough}
 
 Single page applications (SPAs) can offer compelling experiences for website users. Developers want to be able to build sites using SPA frameworks and authors want to seamlessly edit content within AEM for a site built using such frameworks.
 
@@ -30,16 +24,22 @@ This article introduces the basic concepts of SPAs before leading the reader thr
 
 The goal of this introduction and walkthrough is to demonstrate to an AEM developer why SPAs are relevant, how they generally work, how a SPA is handled by the AEM SPA Editor, and how it is different from a standard AEM application.
 
-The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. The following requirements must be met:
+## Requirements {#requirements}
+
+The walkthrough is based on standard AEM functionality and the sample We.Retail Journal app. To follow along with this walkthrough, you must have the following available.
 
 * [AEM version 6.4 with service pack 2 or newer](/help/release-notes/release-notes.md)
-* [Install the sample We.Retail Journal app available on GitHub here.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+  * You must have admin rights to the system.
+* [The sample We.Retail Journal app available on GitHub](https://github.com/adobe/aem-sample-we-retail-journal)
+  * Download the [latest release.](https://github.com/adobe/aem-sample-we-retail-journal/releases)
+  * [Use package manager](/help/sites-administering/package-manager.md) to install the app and start it as a you would any other package in AEM.
+  * The app does not need to be installed using Maven for the purposes of this walkthrough.
 
 >[!CAUTION]
 >
->This document uses the [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
+>This document uses the [We.Retail Journal app](https://github.com/adobe/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
 >
->Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+>Any AEM project should leverage the [AEM Project Archetype,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) which supports SPA projects using React or Angular and leverages the SPA SDK.
 
 ### What is a SPA? {#what-is-a-spa}
 
