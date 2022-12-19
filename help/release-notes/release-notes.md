@@ -281,7 +281,7 @@ For information about installing the cumulative installer for [!DNL Experience M
 
 >[!NOTE]
 >
-> In case, you install the latest [AEM Service pack (6.5.15.0)]((https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip))
+> In case, you install the latest [AEM service pack (6.5.15.0)]((https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)), the CRX/bundle and the start page show service unavailable error. [Click here](/help/forms/usin) to know the troubleshooting steps.  
 
 ### UberJar {#uber-jar}
 
