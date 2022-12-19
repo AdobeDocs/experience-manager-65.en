@@ -26,7 +26,7 @@ To sync multiple forms, in the author instance, select multiple forms in forms m
 
 If your AFA (AEM Form Application) Android app fails to sync, perform the following steps to fix the sync issue:
 
-1. Go to the **https://'[server]:[port]'system/console/configMgr**.
+1. Go to the **https://[server]:[port]/system/console/configMgr**.
 1. Search for the **[!UICONTROL Adobe Granite Token Authentication Handler]** and click **[!UICONTROL Edit]**.
 1. Select the **[!UICONTROL None]** option from the dropdown menu for the **[!UICONTROL SameSite attribute for the login-token cookie]** attribute. 
 1. Click **[!UICONTROL Save]**.
