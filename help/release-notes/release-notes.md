@@ -252,6 +252,11 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
+>[!NOTE]
+>
+> If you install the latest [AEM service pack (6.5.15.0)]((https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)), the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md).  
+
+
 ### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -278,10 +283,6 @@ For information about installing the cumulative installer for [!DNL Experience M
 >[!NOTE]
 >
 >After installing the cumulative installer for [!DNL Experience Manager] Forms on JEE,install latest Service Pack. After successfull installation of Service Pack, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
-
->[!NOTE]
->
-> In case, you install the latest [AEM service pack (6.5.15.0)]((https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)), the CRX/bundle and the start page show service unavailable error. [Click here](/help/forms/usin) to know the troubleshooting steps.  
 
 ### UberJar {#uber-jar}
 
