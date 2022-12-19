@@ -27,7 +27,7 @@ While this recommendation is intended to reduce attack surfaces as much as possi
 
 You can enable CRXDE Lite with either [OSGi settings](#enabling-crxde-lite-osgi) or with a [cURL command](#enabling-crxde-lite-curl).
 
->[!WARN]
+>[!WARNING]
 >
 >Due to slight differences in how these methods operate you should use ***either*** OSGI ***or*** cURL. 
 >
