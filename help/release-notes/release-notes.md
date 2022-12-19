@@ -277,7 +277,11 @@ For information about installing the cumulative installer for [!DNL Experience M
 
 >[!NOTE]
 >
->After installing the cumulative installer for [!DNL Experience Manager] Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>After installing the cumulative installer for [!DNL Experience Manager] Forms on JEE,install latest Service Pack. After successfull installation of Service Pack, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+
+>[!NOTE]
+>
+> In case, you install the latest [AEM Service pack (6.5.15.0)]((https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip))
 
 ### UberJar {#uber-jar}
 
