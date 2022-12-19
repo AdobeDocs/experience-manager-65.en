@@ -1,6 +1,6 @@
 ---
-title: CRX and Start page service unavailable error once latets 6.5.15.0 service pack is installed
-description: CRX and Start page service unavailable error once latets 6.5.15.0 service pack is installed
+title: CRX bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed
+description: CRX bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed
 SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
 ---
 
