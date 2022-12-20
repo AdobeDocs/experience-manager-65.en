@@ -103,7 +103,7 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 ### Key Features {#keyfeatures}
 
 * AEM Forms Designer is now available in [Spanish locale](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
-* You can now use [OAuth2 to authenticate with Microsoft Office 365 mail server protocols (SMTP and IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* You can now use [OAuth2 to authenticate with Microsoft® Office 365 mail server protocols (SMTP and IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
 * You can set [Revalidate on server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) property to true to identify the hidden fields for exclusion from a Document of Record on server-side. (NPR-38149)
 * AEM Forms Designer requires 32-bit version of Visual C++ 2019 Redistributable (x86).  (NPR-36690)
 
@@ -135,7 +135,7 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 * When an XDP is rendered as HTML5 form, the content of the master page is rendered first regardless of the placement of the objects in an Adaptive Form. (CQ-4345218)
 * The configuration of the application at the destination server changes to the settings defined at the source server even though the **Overwrite configuration when import is complete** option is not checked at the time of importing the application. (NPR-39044)
 * When a user tries to update connector configuration using Configuration Manager, it fails.(CQ-4347077)
-* When user tries to run an AEM Forms on JEE patch after changing the default password of the administrator user, an exception `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` occurs. (CQ-4348277)
+* When user tries to run an AEM Form on JEE patch after changing the default password of the administrator user, an exception `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` occurs. (CQ-4348277)
 * In AEM Designer, form fields without captions are placed in table cells including checkboxes.(LC-3920410)
 * When the user tries to open Help in the AEM Forms Designer, it is not displayed properly. (CQ-4341996)
 
