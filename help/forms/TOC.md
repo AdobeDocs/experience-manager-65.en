@@ -682,7 +682,7 @@ role: User
   + [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
   + [Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer, or Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
   + [Unable to restore CRX Repository](/help/forms/using/restore-crx-repository.md)
-  + [Error after installing AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
+  + [Service unavailable errors after installing AEM 6.5.15.0 service pack](/help/forms/using/aem-service-pack-installation-solution.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
   + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
