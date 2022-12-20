@@ -12,6 +12,7 @@ After installing the [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/
 * ERROR [FelixDispatchQueue] org.apache.sling.scripting.console FrameworkEvent ERROR (org.osgi.framework.BundleException: Unable to resolve org.apache.sling.scripting.console
 
 After installing AEM 6.5.15.0 service pack the CRX/bundle and the start page show service unavailable errors.
+
 ## Solution {#solution}
 
 >[!NOTE]
@@ -29,14 +30,14 @@ After installing [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/down
 >
 >In case the `bundle.info` under `bundle52` doesn't contains the `org.apache.felix.http.bridge` bundle, check the bundle number in square bracket next to the `org.apache.felix.http.bridge`. Then navigate to [aem-forms root]\crx-repository\launchpad\felix\bundle[x] and perform the next steps at this location.
 
-6. Navigate to URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
+1. Navigate to URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Search for `bundle.jar` and rename the `bundle.jar` to `bundle.jar.bak`.
 1. Copy `bundle.jar` at this location from the [Software Distribution](https://jira.corp.adobe.com/secure/attachment/9402702/bundle.jar).
 1. Start the Application Server, wait for logs to stabilize and check the bundle state.
-8. Once all bundles are in the activated state, install the `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` servlet fragment from the `system/console/bundles` downloaded from [Software Distribution.](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
-9. Again, wait for  Application Server to stabilize.
-10. Stop the Application Server.
-11. Navigate to `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` and delete the `bundle.jar`.
+1. Once all bundles are in the activated state, install the `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` servlet fragment from the `system/console/bundles` downloaded from [Software Distribution.](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+1. Again, wait for  Application Server to stabilize.
+1. Stop the Application Server.
+1. Navigate to `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` and delete the `bundle.jar`.
 1. Rename the `bundle.jar.bak` to the `bundle.jar`. 
 1. Start the Application Server. 
 
