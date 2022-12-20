@@ -103,7 +103,7 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 ### Key Features {#keyfeatures}
 
 * AEM Forms Designer is now available in [Spanish locale](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). (LC-3920051)
-* You can now use [OAuth2 to authenticate with Microsoft Office 365 mail server protocols (SMTP and IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* You can now use [OAuth2 to authenticate with Microsoft® Office 365 mail server protocols (SMTP and IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
 * You can set [Revalidate on server](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) property to true to identify the hidden fields for exclusion from a Document of Record on server-side. (NPR-38149)
 * AEM Forms Designer requires 32-bit version of Visual C++ 2019 Redistributable (x86).  (NPR-36690)
 
@@ -135,7 +135,7 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 * When an XDP is rendered as HTML5 form, the content of the master page is rendered first regardless of the placement of the objects in an Adaptive Form. (CQ-4345218)
 * The configuration of the application at the destination server changes to the settings defined at the source server even though the **Overwrite configuration when import is complete** option is not checked at the time of importing the application. (NPR-39044)
 * When a user tries to update connector configuration using Configuration Manager, it fails.(CQ-4347077)
-* When user tries to run an AEM Forms on JEE patch after changing the default password of the administrator user, an exception `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` occurs. (CQ-4348277)
+* When user tries to run an AEM Form on JEE patch after changing the default password of the administrator user, an exception `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` occurs. (CQ-4348277)
 * In AEM Designer, form fields without captions are placed in table cells including checkboxes.(LC-3920410)
 * When the user tries to open Help in the AEM Forms Designer, it is not displayed properly. (CQ-4341996)
 
@@ -215,14 +215,6 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 
 ### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
->[!NOTE]
->
-> Before installing the latest [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), perform the following steps:  
-> 1.  Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment.
-> 1. Wait for Application Server to stabilize.
-> 1. Install [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). 
-
-
 1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
@@ -262,7 +254,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 >[!NOTE]
 >
->If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md).  
+>If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
 
 
 ### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
@@ -286,11 +278,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 >
 >Skip if you are not using AEM Forms on JEE. Fixes in [!DNL Experience Manager] Forms on JEE are delivered through a separate installer.
 
-For information about installing the cumulative installer for [!DNL Experience Manager] Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+Perform the following steps for all the AEM Forms on JEE environments using any application servers other than JBoss EAP 7.4.0.
 
->[!NOTE]
->
->After installing the cumulative installer for [!DNL Experience Manager] Forms on JEE,install latest Service Pack. After successfull installation of Service Pack, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+1. Install the cumulative installer for [!DNL Experience Manager] Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
+
+1.  Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment and wait for the Application Server to stabilize.
+1. Install [AEM 6.5.15.0 service pack](#install-service-pack).
+1. Install the [latest Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
 ### UberJar {#uber-jar}
 
