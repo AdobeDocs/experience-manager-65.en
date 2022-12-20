@@ -215,6 +215,14 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 
 ### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
+>[!NOTE]
+>
+> Before installing the latest [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), perform the following steps:  
+> 1.  Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment.
+> 1. Wait for Application Server to stabilize.
+> 1. Install [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). 
+
+
 1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
