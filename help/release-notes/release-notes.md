@@ -215,6 +215,14 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 
 ### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
+>[!NOTE]
+>
+> Before installing the latest [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), perform the following steps:  
+> 1.  Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment.
+> 1. Wait for Application Server to stabilize.
+> 1. Install [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). 
+
+
 1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
@@ -252,6 +260,11 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
+>[!NOTE]
+>
+>If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md).  
+
+
 ### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
 
 >[!NOTE]
@@ -277,7 +290,7 @@ For information about installing the cumulative installer for [!DNL Experience M
 
 >[!NOTE]
 >
->After installing the cumulative installer for [!DNL Experience Manager] Forms on JEE, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+>After installing the cumulative installer for [!DNL Experience Manager] Forms on JEE,install latest Service Pack. After successfull installation of Service Pack, install the latest Forms add-on package, delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
 ### UberJar {#uber-jar}
 
