@@ -254,8 +254,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 >[!NOTE]
 >
->If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
-
+>If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), prior to the fragment servlet `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` for the AEM Forms on JEE environment, the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
 
 ### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
 
