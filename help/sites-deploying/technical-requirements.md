@@ -193,7 +193,11 @@ Adobe Experience Manager works with the following server platforms for productio
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux distribution supported by Adobe Managed Services.
 1. Microsoft Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions. 
+1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions.
+
+>[!NOTE]
+>
+> To know the technical requirements for the AEM Forms for the OSGi environment, [click here.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.html)
 
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
