@@ -92,7 +92,7 @@ To make the identical configuration available in the publish environment:
 
 On AEM Author instance:
 
-* Navigate from main menu to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Replication]**
+* Navigate from main menu to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**
 * Select **Activate Tree**
 * **Start Path**: browse to `/conf/global/settings/communities/srpc/`
 * Deselect **Only Modified**
