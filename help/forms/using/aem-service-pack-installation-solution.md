@@ -37,7 +37,7 @@ After installing [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/down
 
 1. Navigate to URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Search for `bundle.jar` and rename the `bundle.jar` to `bundle.jar.bak`.
-1. Copy `Bundle for AEM 6.5 Forms on JEE Service Pack 15` at this location from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
+1. Copy the `Bundle for AEM 6.5 Forms on JEE Service Pack 15` at this location from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Start the application server, wait for logs to stabilize and check the bundle state.
 1. Once all bundles are in the active state, install the [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) from the `system/console/bundles` and wait for the application server to stabilize.
 1. Stop the application server.
