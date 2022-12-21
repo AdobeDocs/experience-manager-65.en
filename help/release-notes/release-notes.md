@@ -254,8 +254,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 >[!NOTE]
 >
->If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
-
+>If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), prior to the fragment servlet `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` for the AEM Forms on JEE environment, the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
 
 ### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
 
@@ -267,7 +266,7 @@ To know the platforms that are certified to work with this release, see the [tec
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 -->
 
-1. Ensure that you have installed the [!DNL Experience Manager] Service Pack.
+1. Ensure that you have installed the [!DNL Experience Manager] service pack.
 1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
 1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
@@ -282,7 +281,7 @@ Perform the following steps for all the AEM Forms on JEE environments using any 
 
 1. Install the cumulative installer for [!DNL Experience Manager] Forms on JEE and post-deployment configuration, see the [release notes](jee-patch-installer-65.md).
 
-1.  Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment and wait for the Application Server to stabilize.
+1. Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment and wait for the application server to stabilize. -->
 1. Install [AEM 6.5.15.0 service pack](#install-service-pack).
 1. Install the [latest Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
