@@ -13,6 +13,11 @@ After installing the [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/
 
 After installing AEM 6.5.15.0 service pack the CRX/bundle and the start page show service unavailable errors.
 
+## Applies to {#applies-to}
+
+This solution applies to:
+* AEM Forms on all JEE servers except those running on JBoss EAP 7.4.0
+
 ## Solution {#solution}
 
 >[!NOTE]
@@ -39,8 +44,3 @@ After installing [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/down
 1. Navigate to `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` and delete the `bundle.jar`.
 1. Rename the `bundle.jar.bak` to the `bundle.jar`. 
 1. Start the application server. 
-
-## Applies to {#applies-to}
-
-This solution applies to:
-* AEM Forms on all JEE servers except those running on JBoss EAP 7.4.0
