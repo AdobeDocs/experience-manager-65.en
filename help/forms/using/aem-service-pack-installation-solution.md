@@ -4,7 +4,7 @@ description: CRX/bundle and Start page service unavailable errors once latest 6.
 SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
 ---
 
-# Service unavailable errors after installing AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
+# Service unavailable error after installing AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
 
 ## Issue {#issue}
 
