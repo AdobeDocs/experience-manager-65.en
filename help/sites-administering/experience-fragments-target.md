@@ -207,9 +207,11 @@ To avoid such situations:
 
 ## Removing ClientLibs from Experience Fragments exported to Target {#removing-clientlibs-from-fragments-exported-target}
 
-Experience Fragments [XFs] contain full html tags and all of the necessary Client Libraries (CSS/JS) to render the XF exactly as it was created by the XF Content Author. This is by-design.
+Experience Fragments contain full html tags and all of the necessary Client Libraries (CSS/JS) to render the fragment exactly as it was created by the Experience Fragment Content Author. This is by-design.
 
-When using an XF Offer with Target on a page that is being delivered by AEM, the Targeted page already contains all of the necessary Client Libraries. In addition, the extraneous html in the XF Offer is also not needed (see caveat section). Here is an psuedo-example of the html in an XF Offer:
+When using an Experience Fragment Offer with Adobe Target on a page that is being delivered by AEM, the Targeted page already contains all of the necessary Client Libraries. In addition, the extraneous html in the Experience Fragment Offer is also not needed (see [Considerations](#considerations)). 
+
+The following is a psuedo-example of the html in an Experience Fragment Offer:
 
 ```html
 <!DOCTYPE>
@@ -225,60 +227,62 @@ When using an XF Offer with Target on a page that is being delivered by AEM, the
 </html>
 ```
 
-At a high-level, when AEM exports an XF to Target, it does so using a couple of additional Sling Selectors. For example, the URL for the exported XF might look like this (notice the bolded items):
+At a high-level, when AEM exports an Experience Fragment to Adobe Target, it does so using a several additional Sling Selectors. For example, the URL for the exported Experience Fragment might look like as follows (notice ``nocloudconfigs.atoffer``):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-The nocloudonfigs selector is defined through the use of HTL and can be overlayed by copying it from:
+The `nocloudonfigs` selector is defined through the use of HTL and can be overlayed by copying it from:
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-The atoffer selector is, actually, applied post-processing using Sling Rewriter. Either can be used to remove the Client Libraries. However, for the sake of this post, I'm going to reference how to do this via nocloudconfigs. Note, if you are new to Editable Templates, please have a look at Adobe's docs on the matter. Also, there are several good LinkedIn articles written on the topic.
+The `atoffer` selector is actually applied post-processing using Sling Rewriter. Either can be used to remove the Client Libraries. However, for the purpose here, we will illustrate how to do this with `nocloudconfigs`. 
 
-**Overlays** 
+>[!NOTE]
+>
+>Please see [Editable Templates](/help/sites-developing/templates.md#editable-templates) for further details.
 
-In this particular example, the overlays being included will remove the Client Libraries AND the extraneous html. It is assumes that you have already created the XF Template Type. The necessary files that will need to be copied from /libs/cq/experience-fragments/components/xfpage/ include:
+### Overlays {#overlays}
 
-* nocloudconfigs.html
-* head.nocloudconfigs.html
-* body.nocloudconfigs.html
+In this particular example, the [overlays](/help/sites-developing/overlays.md) being included will remove the Client Libraries *and* the extraneous html. It is assumed that you have already created the Experience Fragment Template Type. The necessary files that will need to be copied from `/libs/cq/experience-fragments/components/xfpage/` include:
 
-**Template-Type Overlays**
+* `nocloudconfigs.html`
+* `head.nocloudconfigs.html`
+* `body.nocloudconfigs.html`
 
-<!-- IMAGE -->
+### Template-Type Overlays {#template-type-overlays}
+
+For the purpose of this example we will use the following structure:
+
+![Template-Type Overlays](assets/xf-target-integration-02.png "Template-Type Overlays")
 
 The content of these files includes:
 
-body.nocloudconfigs.html:
+* `body.nocloudconfigs.html`
 
-6.5.6.0
+  6.5.12.0
 
-<!-- IMAGE -->
+  <!-- IMAGE -->
 
-6.5.12.0
+* `head.nocloudconfigs.html`
 
-<!-- IMAGE -->
+  ```html
+  <!--/* blanked this out */-->
+  ```
 
-**head.nocloudconfigs.html:**
+* `nocloudconfigs.html`
 
-6.5.6.0 - 6.5.12.0:
+  6.5.12.0
 
-<!-- IMAGE -->
-
-**nocloudconfigs.html**
-
-6.5.6.0 - 6.5.12.0
-
-<!-- IMAGE -->
+  <!-- IMAGE -->
 
 >[!NOTE]
 >
 >I ended up adding nocloudconfigs.html so that I could use 'data-sly-unwrap' to remove the body tag.
 
-**Considerations**
+### Considerations {#considerations}
 
-If you need to support both AEM sites and non-AEM sites, using XF Offers in Target, you will want to create 2 XFs (two different template types):
+If you need to support both AEM sites and non-AEM sites using Experience Fragment Offers in Adobe Target, you will need to create two Experience Fragments (two different template types):
 
 * One with the overlay to remove clientlibs/extra html
 
-* One that doesn't have the overlay and, thus, includes the needed clientlibs
+* One that does not have the overlay, and therefore includes the required clientlibs
