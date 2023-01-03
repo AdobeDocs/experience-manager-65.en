@@ -197,9 +197,88 @@ To avoid such situations:
 
   The error message in AEM does not prohibit the user from (force-)deleting the Experience Fragment. If the Experience Fragment is deleted:
 
-    * The Target offer with AEM Experience Fragment may show undesired behavior
+  * The Target offer with AEM Experience Fragment may show undesired behavior
 
-        * The offer will likely still render, as the Experience Fragment HTML was pushed to Target
-        * Any references in the Experience Fragment may not work correctly if referenced assets were deleted in AEM as well.
+    * The offer will likely still render, as the Experience Fragment HTML was pushed to Target
+    * Any references in the Experience Fragment may not work correctly if referenced assets were deleted in AEM as well.
 
-    * Of course, any further modifications to the Experience Fragment are impossible as the Experience Fragment does not exist anymore in AEM.
+  * Of course, any further modifications to the Experience Fragment are impossible as the Experience Fragment does not exist anymore in AEM.
+
+
+## Removing ClientLibs from Experience Fragments exported to Target {#removing-clientlibs-from-fragments-exported-target}
+
+Experience Fragments [XFs] contain full html tags and all of the necessary Client Libraries (CSS/JS) to render the XF exactly as it was created by the XF Content Author. This is by-design.
+
+When using an XF Offer with Target on a page that is being delivered by AEM, the Targeted page already contains all of the necessary Client Libraries. In addition, the extraneous html in the XF Offer is also not needed (see caveat section). Here is an psuedo-example of the html in an XF Offer:
+
+```html
+<!DOCTYPE>
+<html>
+   <head>
+      <title>…</title>
+      <!-- all of the client libraries (css/js) -->
+      …
+   </head>
+   <body>
+        <!--/* Actual XF Offer content would appear here... */-->
+   </body>
+</html>
+```
+
+At a high-level, when AEM exports an XF to Target, it does so using a couple of additional Sling Selectors. For example, the URL for the exported XF might look like this (notice the bolded items):
+
+* http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
+
+The nocloudonfigs selector is defined through the use of HTL and can be overlayed by copying it from:
+
+* /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
+
+The atoffer selector is, actually, applied post-processing using Sling Rewriter. Either can be used to remove the Client Libraries. However, for the sake of this post, I'm going to reference how to do this via nocloudconfigs. Note, if you are new to Editable Templates, please have a look at Adobe's docs on the matter. Also, there are several good LinkedIn articles written on the topic.
+
+**Overlays** 
+
+In this particular example, the overlays being included will remove the Client Libraries AND the extraneous html. It is assumes that you have already created the XF Template Type. The necessary files that will need to be copied from /libs/cq/experience-fragments/components/xfpage/ include:
+
+* nocloudconfigs.html
+* head.nocloudconfigs.html
+* body.nocloudconfigs.html
+
+**Template-Type Overlays**
+
+<!-- IMAGE -->
+
+The content of these files includes:
+
+body.nocloudconfigs.html:
+
+6.5.6.0
+
+<!-- IMAGE -->
+
+6.5.12.0
+
+<!-- IMAGE -->
+
+**head.nocloudconfigs.html:**
+
+6.5.6.0 - 6.5.12.0:
+
+<!-- IMAGE -->
+
+**nocloudconfigs.html**
+
+6.5.6.0 - 6.5.12.0
+
+<!-- IMAGE -->
+
+>[!NOTE]
+>
+>I ended up adding nocloudconfigs.html so that I could use 'data-sly-unwrap' to remove the body tag.
+
+**Considerations**
+
+If you need to support both AEM sites and non-AEM sites, using XF Offers in Target, you will want to create 2 XFs (two different template types):
+
+* One with the overlay to remove clientlibs/extra html
+
+* One that doesn't have the overlay and, thus, includes the needed clientlibs
