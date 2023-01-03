@@ -255,13 +255,13 @@ For the purpose of this example we will use the following structure:
 
 ![Template-Type Overlays](assets/xf-target-integration-02.png "Template-Type Overlays")
 
-The content of these files includes:
+The content of these files are as follows:
 
 * `body.nocloudconfigs.html`
 
-  6.5.12.0
-
-  <!-- IMAGE -->
+  ```html
+  
+  ```
 
 * `head.nocloudconfigs.html`
 
@@ -271,13 +271,14 @@ The content of these files includes:
 
 * `nocloudconfigs.html`
 
-  6.5.12.0
-
-  <!-- IMAGE -->
+  ```html
+  <body data-sly-use-body="body.js" class=${body.cssClasses}"
+        data-sly-include="body.nocloudconfigs.html" data-sly-unwrap></body>
+  ```
 
 >[!NOTE]
 >
->I ended up adding nocloudconfigs.html so that I could use 'data-sly-unwrap' to remove the body tag.
+>To use `data-sly-unwrap` to remove the body tag you need `nocloudconfigs.html`.
 
 ### Considerations {#considerations}
 
