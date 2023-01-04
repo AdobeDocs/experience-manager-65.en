@@ -209,7 +209,7 @@ To avoid such situations:
 
 Experience Fragments contain full html tags and all of the necessary Client Libraries (CSS/JS) to render the fragment exactly as it was created by the Experience Fragment Content Author. This is by-design.
 
-When using an Experience Fragment Offer with Adobe Target on a page that is being delivered by AEM, the Targeted page already contains all of the necessary Client Libraries. In addition, the extraneous html in the Experience Fragment Offer is also not needed (see [Considerations](#considerations)). 
+When using an Experience Fragment Offer with Adobe Target on a page that is being delivered by AEM, the Targeted page already contains all of the necessary Client Libraries. In addition, the extraneous html in the Experience Fragment Offer is not needed either (see [Considerations](#considerations)). 
 
 The following is a psuedo-example of the html in an Experience Fragment Offer:
 
@@ -227,7 +227,7 @@ The following is a psuedo-example of the html in an Experience Fragment Offer:
 </html>
 ```
 
-At a high-level, when AEM exports an Experience Fragment to Adobe Target, it does so using a several additional Sling Selectors. For example, the URL for the exported Experience Fragment might look like as follows (notice ``nocloudconfigs.atoffer``):
+At a high-level, when AEM exports an Experience Fragment to Adobe Target, it does so using several additional Sling Selectors. For example, the URL for the exported Experience Fragment might look like as follows (notice `nocloudconfigs.atoffer`):
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
@@ -235,13 +235,17 @@ The `nocloudonfigs` selector is defined through the use of HTL and can be overla
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-The `atoffer` selector is actually applied post-processing using Sling Rewriter. Either can be used to remove the Client Libraries. However, for the purpose here, we will illustrate how to do this with `nocloudconfigs`. 
+The `atoffer` selector is actually applied post-processing using [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Either can be used to remove the Client Libraries. 
+
+### Example {#example}
+
+For the purpose here, we will illustrate how to do this with `nocloudconfigs`. 
 
 >[!NOTE]
 >
 >Please see [Editable Templates](/help/sites-developing/templates.md#editable-templates) for further details.
 
-### Overlays {#overlays}
+#### Overlays {#overlays}
 
 In this particular example, the [overlays](/help/sites-developing/overlays.md) being included will remove the Client Libraries *and* the extraneous html. It is assumed that you have already created the Experience Fragment Template Type. The necessary files that will need to be copied from `/libs/cq/experience-fragments/components/xfpage/` include:
 
@@ -249,7 +253,7 @@ In this particular example, the [overlays](/help/sites-developing/overlays.md) b
 * `head.nocloudconfigs.html`
 * `body.nocloudconfigs.html`
 
-### Template-Type Overlays {#template-type-overlays}
+#### Template-Type Overlays {#template-type-overlays}
 
 For the purpose of this example we will use the following structure:
 
@@ -259,22 +263,15 @@ The content of these files are as follows:
 
 * `body.nocloudconfigs.html`
 
-  ```html
-  
-  ```
+  ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
 
 * `head.nocloudconfigs.html`
 
-  ```html
-  <!--/* blanked this out */-->
-  ```
+  ![head.nocloudconfigs.html](assets/xf-target-integration-04.png "head.nocloudconfigs.html")
 
 * `nocloudconfigs.html`
 
-  ```html
-  <body data-sly-use-body="body.js" class=${body.cssClasses}"
-        data-sly-include="body.nocloudconfigs.html" data-sly-unwrap></body>
-  ```
+  ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
 
 >[!NOTE]
 >
