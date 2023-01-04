@@ -138,6 +138,7 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 * When user tries to run an AEM Form on JEE patch after changing the default password of the administrator user, an exception `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` occurs. (CQ-4348277)
 * In AEM Designer, form fields without captions are placed in table cells including checkboxes.(LC-3920410)
 * When the user tries to open Help in the AEM Forms Designer, it is not displayed properly. (CQ-4341996)
+* Adaptive Forms with multiple locales are slow to load. (NPR-39176)
 
 ## [!DNL Sites] {#sites-6515}
 
