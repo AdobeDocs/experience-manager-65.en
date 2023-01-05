@@ -487,10 +487,6 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2019<br /> </td>
-   <td>MPP</td>
-  </tr>
-  <tr>
    <td>Microsoft® Project 2016 (Deprecated)<br /> </td>
    <td>MPP</td>
   </tr>
