@@ -110,7 +110,15 @@ SAML assertions are signed and may optionally be encrypted. In order for this to
 >
 >The below steps are required only if handler should be able to sign or decrypt messages.
 
-1. Upload the Private key file by clicking **Select Private Key File**. The key meeds to be in PKCS#8 format with DER encoding.
+1. Create the certificate/keypair for AEM. The command to generate it via openssl should resemble the example below:
+
+   `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
+
+1. Convert the key to PKCS#8 format with DER encoding. This is the format required by the AEM keystore.
+
+   `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
+
+1. Upload the Private key file by clicking **Select Private Key File**.
 1. Upload the certificate file by clicking **Select Certificate Chain Files**.
 1. Assign an Alias, as shown below:
 
