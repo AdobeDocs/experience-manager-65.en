@@ -197,7 +197,12 @@ Adobe Experience Manager works with the following server platforms for productio
 
 >[!NOTE]
 >
-> To know the technical requirements for the AEM Forms for the OSGi environment, [click here.](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/installing-aem-form-on-windows-tutorial-use.html)
+>If you are installing AEM Forms 6.5, Please make sure you have installed the following 32 bit Microsoft Visual C++ redistributables.
+>
+>* Microsoft Visual C++ 2008 redistributable
+>* Microsoft Visual C++ 2010 redistributable
+>* Microsoft Visual C++ 2012 redistributable
+>* Microsoft Visual C++ 2013 redistributable (as of 6.5)
 
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
