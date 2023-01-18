@@ -8,11 +8,9 @@ exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 
 Adobe Experience Manager Forms (AEM Forms) customers with Adobe Managed Services or On-premise Enterprise Base licenses are entitled to use Acrobat Reader DC Extensions service. The service enables an organization to easily share interactive PDF documents by extending the functionality of Acrobat Reader with additional usage rights. The service adds usage rights to a PDF document and activates features that are not available when a PDF document is opened using Adobe Acrobat Reader, such as adding comments to a document, filling forms, and saving the document. Third-party users do not require additional software or plug-ins to work with rights-enabled documents. PDF documents that have usage rights added are called rights-enabled documents. A user who opens a rights-enabled PDF document in Acrobat Reader can perform the operations that are enabled for that document.
 
-Adobe leverages a public key infrastructure (PKI) to issue digital certificates for use in licensing and feature enablement. Adobe has been issuing certificates under the certificate authority “Adobe Root CA”, which is set to expire on January 7, 2023. A new certificate authority, "Adobe Root CA G2", and certificates based on the new certificate authority are now available. 
+Adobe leverages a public key infrastructure (PKI) to issue digital certificates for use in licensing and feature enablement. Adobe has been issuing certificates under the certificate authority **Adobe Root CA**, which is set to expire on January 7, 2023. The expiration of certificate does not impact PDF documents extended using production certificates issued from the **Adobe Root CA** based certificates (old certificates). All PDF documents, Reader extended using the old certificates before January 7, 2023, including the ones downloaded by your customers, would continue to work with all the usage rights that are applied to them, and do not require any updates.
 
-Old certificates (certificates based on “Adobe Root CA”) no longer work after January 7, 2023. Adobe recommends that you start using the new certificates —  those based on "Adobe Root CA G2" — to Reader extend your PDF documents on or before January 7, 2023.  You can [obtain new certificates from the Adobe Licensing Website](https://licensing.adobe.com/) or Adobe Support.  
-
-All PDF documents, Reader extended using the older certificates before January 7th 2023, including the ones downloaded by your customers, would continue to work with all the usage rights that are applied to them, and do not require any updates.
+A new certificate authority, **Adobe Root CA G2**, and certificates based on the new certificate authority are now available. On or before January 7, 2023, start using the new certificates —  those based on **Adobe Root CA G2** — to Reader extend your new PDF documents.  You can [obtain new certificates from the Adobe Licensing Website](https://licensing.adobe.com/) or Adobe Support.  
 
 ## Frequently Asked Questions
 
@@ -22,9 +20,9 @@ A. Adobe Root CA is the certificate authority from which an Acrobat Reader Exten
 
 **Q. There was a previous communication from Adobe regarding the expiration of certificates and the impact on using/opening PDF documents. Should that communication be ignored?**
 
-A. Based on the reassessment of the situation, all PDF documents extended using production certificates issued from the old "Adobe Root CA" before January 7, 2023 continue to work without any change after January 7, 2023. If you have already updated your PDF documents there is no change in the experience.
+A. Based on the reassessment of the situation, all PDF documents extended using production certificates issued from the old "Adobe Root CA" before January 7, 2023 continue to work without any change after January 7, 2023. If you have already updated your PDF documents, there is no change in the experience.
 
-**Q. Who should I contact if I have additional questions?** 
+**Q. Whom should I contact if I have additional questions?** 
 
 A. You can contact [Adobe Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) or raise a support ticket. 
 

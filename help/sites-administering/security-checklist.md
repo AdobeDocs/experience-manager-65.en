@@ -404,18 +404,18 @@ More specifically, you need to:
 1. Access the AEM instance, typically an author instance, that contains the key material to copy;
 1. Locate the com.adobe.granite.crypto.file bundle in the local file system. For example, under this path:
 
-    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    The `bundle.info` file inside each folder will identify the bundle name.
 
 1. Navigate to the data folder. For example:
 
-    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Copy the HMAC and master files.
 1. Then, go to the target instance you want to duplicate the HMAC key to, and navigate to the data folder. For example:
 
-    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Paste the two files you previously copied.
 1. [Refresh the Crypto Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) if the target instance is already running.
