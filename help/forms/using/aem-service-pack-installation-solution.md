@@ -2,8 +2,8 @@
 title: CRX/bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed
 description: CRX/bundle and Start page service unavailable errors once latest 6.5.15.0 service pack is installed
 SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
+exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 ---
-
 # Service unavailable error after installing AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
 
 ## Issue {#issue}
@@ -43,4 +43,4 @@ After installing [AEM 6.5.15.0 service pack](https://experience.adobe.com/#/down
 1. Stop the application server.
 1. Navigate to `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` and delete the `bundle.jar`.
 1. Rename the `bundle.jar.bak` to the `bundle.jar`. 
-1. Start the application server. 
+1. Start the application server.
