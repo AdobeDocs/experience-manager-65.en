@@ -193,7 +193,16 @@ Adobe Experience Manager works with the following server platforms for productio
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux distribution supported by Adobe Managed Services.
 1. Microsoft Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions. 
+1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions.
+
+>[!NOTE]
+>
+>If you are installing AEM Forms 6.5, Please make sure you have installed the following 32 bit Microsoft Visual C++ redistributables.
+>
+>* Microsoft Visual C++ 2008 redistributable
+>* Microsoft Visual C++ 2010 redistributable
+>* Microsoft Visual C++ 2012 redistributable
+>* Microsoft Visual C++ 2013 redistributable (as of 6.5)
 
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
