@@ -211,7 +211,7 @@ Experience Fragments contain full html tags and all of the necessary Client Libr
 
 When using an Experience Fragment Offer with Adobe Target on a page that is being delivered by AEM, the Targeted page already contains all of the necessary Client Libraries. In addition, the extraneous html in the Experience Fragment Offer is not needed either (see [Considerations](#considerations)). 
 
-The following is a psuedo-example of the html in an Experience Fragment Offer:
+The following is a pseudo-example of the html in an Experience Fragment Offer:
 
 ```html
 <!DOCTYPE>
@@ -231,7 +231,7 @@ At a high-level, when AEM exports an Experience Fragment to Adobe Target, it doe
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-The `nocloudonfigs` selector is defined through the use of HTL and can be overlayed by copying it from:
+The `nocloudconfigs` selector is defined through the use of HTL and can be overlayed by copying it from:
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
