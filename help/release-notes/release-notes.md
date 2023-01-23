@@ -33,25 +33,31 @@ mini-toc-levels: 3
 ## [!DNL Assets] {#assets-6516}
 
 
+### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
+
+
 ## Commerce {#commerce-6516}
 
 
 ## [!DNL Forms] {#forms-6516}
 
-### Key Features {#forms-keyfeatures-6516}
+> [!NOTE]
+>
+> Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, March 2, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
 
-### Fixes {#forms-fixes-6516}
-
+<!--
+### [!DNL Forms] Fixes {#forms-fixes-6516}
+-->
 
 ## [!DNL Sites] {#sites-6516}
 
-### Accessibility {#access-6516}
+### [!DNL Sites] - Accessibility {#access-6516}
 
-### [!DNL Content Fragments] {#sites-contentfragments-6516}
+### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6516}
 
-### Fluid XP {#sites-fluidxp-6516}
+### [!DNL Sites] - Fluid XP {#sites-fluidxp-6516}
 
-### Page Editor {#sites-pageeditor-6516}
+### [!DNL Sites] - Page Editor {#sites-pageeditor-6516}
 
 
 ## Sling {#sling-6516}
