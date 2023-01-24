@@ -41,9 +41,9 @@ mini-toc-levels: 3
 
 ## [!DNL Forms] {#forms-6516}
 
-> [!NOTE]
+>[!NOTE]
 >
-> Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, March 2, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, March 2, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
 
 <!--
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
