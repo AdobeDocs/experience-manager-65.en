@@ -61,6 +61,10 @@ mini-toc-levels: 3
 
 * Centralise the link processing on e-mail pages so that model customisations are not needed anymore. (SITES-9002)
 
+### [!DNL Sites] - Foundation Components {#sites-foundation-components-6516}
+
+* (SITES-7989)
+
 
 ### [!DNL Sites] - Admin User Interface {#sites-adminui-6516}
 
@@ -76,6 +80,7 @@ mini-toc-levels: 3
 ### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6516}
 
 * You are unable to move an experience fragment to another folder even if the template is listed under allowed templates. (SITES-8601)
+* (SITES-7989)
 
 ### [!DNL Sites] - Fluid XP {#sites-fluidxp-6516}
 
@@ -91,6 +96,8 @@ mini-toc-levels: 3
 
 
 ## User interface {#ui-6516}
+
+* When changing to a smaller resolution, the DatePicker does not display the AM/PM select doesn't display or change visibly. (NPR-39948)
 
 
 ## WCM {#wcm-6516}
