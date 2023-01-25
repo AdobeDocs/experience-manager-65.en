@@ -51,13 +51,37 @@ mini-toc-levels: 3
 
 ## [!DNL Sites] {#sites-6516}
 
-### [!DNL Sites] - Accessibility {#access-6516}
+* Current `cq-wcm-core` artifactory release does not have the POM. (SITES-10983)
+* The rollout preview action should not list the page to be created. (SITES-10355, CQ-4266213)
+* Rollout after MSM detach recreates the detached page. (SITES-9841)
+* Creating a launch is timing out; user must wait many minutes on a loading screen before the request times out. (SITES-9051)
+* The Rollout Page user interface is displaying non-existent parent page paths. You can rollout the page with a success message, but the child page is not rolled out due to the parent page never getting rolled out in the first place. (SITES-8621)
+
+### [!DNL Sites] - Core Components {#sites-core-components-6516}
+
+* Centralise the link processing on e-mail pages so that model customisations are not needed anymore. (SITES-9002)
+
+
+### [!DNL Sites] - Admin User Interface {#sites-adminui-6516}
+
+* CSV Export is not exporting all the pages under the selected page. (SITES-9390)
+
+### [!DNL Sites] - Accessibility {#sites-access-6516}
 
 ### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6516}
+
+* Unable to print a content fragment's JSON. The reason is because the GraphQL query cannot be generated when you open the content fragment's Preview page. (SITES-8619)
+* When re-opening the Content Fragment Model Editor, all **[!UICONTROL Date and Time]** fields are defaulting to Date & Time type. (SITES-8401)
+
+### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6516}
+
+* You are unable to move an experience fragment to another folder even if the template is listed under allowed templates. (SITES-8601)
 
 ### [!DNL Sites] - Fluid XP {#sites-fluidxp-6516}
 
 ### [!DNL Sites] - Page Editor {#sites-pageeditor-6516}
+
+* Update dependencies for the resource resolver improvement made in SITES-8464 in which page rendering in Authoring mode created a high number of `TemplatedResourceImpl` objects. (SITES-9350)
 
 
 ## Sling {#sling-6516}
@@ -69,7 +93,12 @@ mini-toc-levels: 3
 ## User interface {#ui-6516}
 
 
+## WCM {#wcm-6516}
+
+* The rollout preview action should not list the page to be created. (CQ-4266213, SITES-10355) 
+
 ## Workflow {#workflow-6516}
+
 
 
 ## Install [!DNL Experience Manager] 6.5.16.0 {#install}
