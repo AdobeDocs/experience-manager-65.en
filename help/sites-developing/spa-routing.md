@@ -54,7 +54,7 @@ The `ModelRouter` supports the concept of model routing as it listens for `pushS
 By default, this behavior is automatically enabled. To disable it, the SPA should render the following meta property:
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Note that every route of the SPA should correspond to an accessible resource in AEM (e.g., " `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a "block list" of routes that should be ignored by the `PageModelManager`:
