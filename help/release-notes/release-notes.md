@@ -59,11 +59,11 @@ mini-toc-levels: 3
 * The rollout preview action should not list the page to be created. (SITES-10355, CQ-4266213)
 * Rollout after MSM detach recreates the detached page. (SITES-9841)
 * Creating a launch is timing out; user must wait many minutes on a loading screen before the request times out. (SITES-9051)
-* The Rollout Page user interface is displaying non-existent parent page paths. You can rollout the page with a success message, but the child page is not rolled out due to the parent page never getting rolled out in the first place. (SITES-8621)
+* The Rollout Page user interface is displaying non-existent parent page paths. You can roll out the page with a success message, but the child page is not rolled out due to the parent page never getting rolled out in the first place. (SITES-8621)
 
 ### [!DNL Sites] - Core Components {#sites-core-components-6516}
 
-* Centralise the link processing on e-mail pages so that model customisations are not needed anymore. (SITES-9002)
+* Centralize the link processing on e-mail pages so that model customizations are not needed anymore. (SITES-9002)
 
 ### [!DNL Sites] - Foundation Components {#sites-foundation-components-6516}
 
@@ -77,11 +77,11 @@ mini-toc-levels: 3
 ### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6516}
 
 * Unable to print a content fragment's JSON. The reason is because the GraphQL query cannot be generated when you open the content fragment's Preview page. (SITES-8619)
-* When re-opening the Content Fragment Model Editor, all **[!UICONTROL Date and Time]** fields are defaulting to Date & Time type. (SITES-8401)
+* When reopening the Content Fragment Model Editor, all **[!UICONTROL Date and Time]** fields are defaulting to Date & Time type. (SITES-8401)
 
 ### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6516}
 
-* You are unable to move an experience fragment to another folder even if the template is listed under allowed templates. (SITES-8601)
+* You are unable to move an Experience Fragment to another folder even if the template is listed under allowed templates. (SITES-8601)
 * (SITES-7989)
 
 ### [!DNL Sites] - Fluid XP {#sites-fluidxp-6516}
@@ -94,7 +94,7 @@ mini-toc-levels: 3
 ## Sling {#sling-6516}
 
 * Experience Manager is deadlocked on startup. (NPR-39832)
-* When a large number of vanity paths are present in Experience Manager's version storage, Experience Manager fails to start. (NPR-38955)
+* When many vanity paths are present in Experience Manager's version storage, Experience Manager fails to start. (NPR-38955)
 
 
 ## Translation projects {#translation-6516}
@@ -105,8 +105,9 @@ mini-toc-levels: 3
 
 ## User interface {#ui-6516}
 
-* When changing to a smaller resolution, the DatePicker does not display, and the AM/PM select doesn't display or change visibly. (NPR-39948)
-* When minify js (minimization of javascript) is used, it does not process the minification due to a parsing error. (NPR-39650)
+* When changing to a smaller resolution, the DatePicker does not display, and the AM/PM select does not display or change visibly. (NPR-39948)
+* When minify js (minimization of JavaScript) is used, it does not process the minification due to a parsing error. (NPR-39650)
+* Tag field (`/libs/cq/gui/components/coral/common/form/tagfield`) conflicts with timeline. (CQ-4350751)
 
 
 ## WCM {#wcm-6516}
@@ -115,6 +116,7 @@ mini-toc-levels: 3
 
 ## Workflow {#workflow-6516}
 
+* Manually deleting the editable workflow model from `/conf` leaves a lingering runtime model instance without an editable model. (CQ-4349365)
 
 
 ## Install [!DNL Experience Manager] 6.5.16.0 {#install}
@@ -189,15 +191,16 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 >
 >Skip if you are not using AEM Forms on JEE. Fixes in [!DNL Experience Manager] Forms on JEE are delivered through a separate installer.
 
-Perform the following steps for all the AEM Forms on JEE environments using any application servers other than JBoss EAP 7.4.0.
-1. Install [AEM Forms JEE Patch](jee-patch-installer-65.md). The includes all fixed issues for all components of AEM 6.5 Forms on JEE. 
+Perform the following steps for all the AEM Forms on JEE environments using any application servers other than JBoss&reg; EAP 7.4.0.
+
+1. Install [AEM Forms JEE Patch](jee-patch-installer-65.md). The install includes all fixed issues for all components of AEM 6.5 Forms on JEE. 
 1. Install the [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). The fragment adds the dependencies required to install AEM Service Pack 15 (6.5.16.0).
 1. After installing the fragment, wait for the application server to stabilize.
-1. [Install the service pack on Experience Manager 6.5](#install-service-pack).
+1. Install the [service pack on Experience Manager 6.5](#install-service-pack).
 
    >[!NOTE]
    >
-   >If you install the latest [AEM service pack (6.5.16.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), prior to installing the [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) on your AEM 6.5 Forms on JEE environment, the CRX/bundle and the start page can stop working and you encounter the service unavailable error. To resolve the issue, perform the actions [listed here](/help/forms/using/aem-service-pack-installation-solution.md).
+   >If you install the latest [AEM service pack (6.5.16.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), before installing [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) on your AEM 6.5 Forms on JEE environment, the CRX/bundle and the start page can stop working. In such case, you encounter a service unavailable error. To resolve the issue, perform the actions [listed here](/help/forms/using/aem-service-pack-installation-solution.md).
    
 1. Install the [latest Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
