@@ -76,7 +76,7 @@ Building on this base, AEM also offers a number of application-level features fo
 * **Communities**
 * **Online Commerce**
 
-Finally, customers can use these infrastructrue and application-level building blocks to create customized solutions by building applications of their own.
+Finally, customers can use these infrastructure and application-level building blocks to create customized solutions by building applications of their own.
 
 The AEM server is **Java-based** and runs on most operating systems that support that platform. All client interaction with AEM is done through a **web browser**.
 
@@ -159,7 +159,7 @@ In the following section we describe the **standalone installation**. For detail
 
    *Note that path of the file directory must consist of only US ASCII characters.*
 
-1. Place the **jar** and **license **files in this directory:
+1. Place the **jar** and **license**files in this directory:
 
    ```shell
    <aem-install>/
