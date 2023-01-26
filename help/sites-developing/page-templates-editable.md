@@ -536,7 +536,7 @@ When [editing a template you can define the layout](/help/sites-authoring/templa
 
 ### Content Policies {#content-policies}
 
-The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template). Content policies can be created and selected in the template editor.
+The content (or design) policies define the design properties of a component such as the component's availability or minimum/maximum dimensions. These are applicable to the template (and pages created with the template). Content policies can be created and selected in the template editor.
 
 * The property `cq:policy`, on the `root` node
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
