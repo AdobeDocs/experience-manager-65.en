@@ -159,7 +159,7 @@ In the following section we describe the **standalone installation**. For detail
 
    *Note that path of the file directory must consist of only US ASCII characters.*
 
-1. Place the **jar** and **license**files in this directory:
+1. Place the **jar** and **license** files in this directory:
 
    ```shell
    <aem-install>/
