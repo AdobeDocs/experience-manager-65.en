@@ -49,6 +49,10 @@ mini-toc-levels: 3
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
 -->
 
+## Integrations {#integrations-6516}
+
+* Remove Adobe Search&Promote code and dependency from Experience Manager 6.5. Adobe Search&Promote reached end-of-service September 2022. See [Adobe Search&Promote End-of-Service Announcement](https://experienceleague.adobe.com/docs/discontinued/using/search-promote.html?lang=en). (NPR-39706)
+
 ## [!DNL Sites] {#sites-6516}
 
 * Current `cq-wcm-core` artifactory release does not have the POM. (SITES-10983)
@@ -62,8 +66,6 @@ mini-toc-levels: 3
 * Centralise the link processing on e-mail pages so that model customisations are not needed anymore. (SITES-9002)
 
 ### [!DNL Sites] - Foundation Components {#sites-foundation-components-6516}
-
-* (SITES-7989)
 
 
 ### [!DNL Sites] - Admin User Interface {#sites-adminui-6516}
@@ -91,13 +93,20 @@ mini-toc-levels: 3
 
 ## Sling {#sling-6516}
 
+* Experience Manager is deadlocked on startup. (NPR-39832)
+* When a large number of vanity paths are present in Experience Manager's version storage, Experience Manager fails to start. (NPR-38955)
+
 
 ## Translation projects {#translation-6516}
 
+* In `MicrosoftTranslationServiceImpl`, the query string parameter `Category` is incorrect. (NPR-39828)
+* Creating a translation project displays the error *Master page resource does not exist*; the translation project is not created. (NPR-39762)
+* Unable to set a due date on a translation project that uses a human translation connector. (NPR-39593)
 
 ## User interface {#ui-6516}
 
-* When changing to a smaller resolution, the DatePicker does not display the AM/PM select doesn't display or change visibly. (NPR-39948)
+* When changing to a smaller resolution, the DatePicker does not display, and the AM/PM select doesn't display or change visibly. (NPR-39948)
+* When minify js (minimization of javascript) is used, it does not process the minification due to a parsing error. (NPR-39650)
 
 
 ## WCM {#wcm-6516}
