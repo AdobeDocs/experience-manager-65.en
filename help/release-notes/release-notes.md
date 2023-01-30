@@ -33,6 +33,7 @@ mini-toc-levels: 3
 ## [!DNL Assets] {#assets-6516}
 
 
+
 ### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
 
 * Form element does not contain label. With screen readers such as NVDA and JAWS, Form label information is not announcing properly. (CQ-4344078)
@@ -41,6 +42,11 @@ mini-toc-levels: 3
 * `getManifestURI` returns null due to a JCR property being read as `toString` instead of `getString`. (ASSETS-18674)
 * SmartCrop video component is not behaving correctly. The component is carrying-out playback instead of streaming, and VTT calls are failing, giving a 404 error. (ASSETS-18468)
 * Selecting **[!UICONTROL Properties]** on an asset's Viewer page causes a null pointer exception. (ASSETS-18420)
+* [!DNL Experience Manager] user inteface changes for DASH streaming that includes having a visible CMAF (Common Media Application Format) field in the Video Profile editor, having the video upload process send a CMAF flag, and an HLS, DASH option visible in the playback drop-down in the Viewer Preset editor's behavior tab. (ASSETS-17428)
+* In Navigation, when you select **[!UICONTROL Assets]** > **[!UICONTROL Files]** > **[!UICONTROL Create]** > **[!UICONTROL Carousel Set]**, the picture icon is overlapped with "Slide 1" text string. (ASSETS-18578)
+* Unpublished assets are published again. (ASSETS-16428)
+* Experience Manager Author goes down due to a load issue, prompting the creation of a synthetic alert. (ASSETS-15937)
+* In the Dynamic Media General Settings page, an untranslated error message `Failed to fetch data` appears. (ASSETS-15617)
 
 ## Commerce {#commerce-6516}
 
