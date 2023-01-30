@@ -13,7 +13,7 @@ SEO Description: AEM Forms installation instructions for OSGi and JEE environmen
 | Version  |  6.5.15.0 |
 | Type  |  Service Pack release |
 | Date  |  December 01, 2022 |
-| Download | [Latest AEM Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
+| Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html) |
 
 ## What is included in Experience Manager Forms 6.5
 
