@@ -35,6 +35,12 @@ mini-toc-levels: 3
 
 ### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
 
+* Form element does not contain label. With screen readers such as NVDA and JAWS, Form label information is not announcing properly. (CQ-4344078)
+* Drop-downs are not getting closed when the `Escape` key is used on a keyboard. (CQ-4344077)
+* The Information icon (the letter "i") that appears for the inline error suggestion after an invalid input is given, is not accessible using a keyboard. (CQ-4344076)
+* `getManifestURI` returns null due to a JCR property being read as `toString` instead of `getString`. (ASSETS-18674)
+* SmartCrop video component is not behaving correctly. The component is carrying-out playback instead of streaming, and VTT calls are failing, giving a 404 error. (ASSETS-18468)
+* Selecting **[!UICONTROL Properties]** on an asset's Viewer page causes a null pointer exception. (ASSETS-18420)
 
 ## Commerce {#commerce-6516}
 
@@ -238,17 +244,16 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
+<!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
+To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
+`<designModelPath>/jcr:content.generate.json`. -->
 
 * [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
   This package is needed for customers using GraphQL; this enables them to add the required index definition based on the features they actually use.
 
 * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
-* If you are upgrading your [!DNL Experience Manager] instance from 6.5 to 6.5.10.0 version, you can view `RRD4JReporter` exceptions in the `error.log` file. To resolve the issue, restart the instance.
-
-* If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
-To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
-`<designModelPath>/jcr:content.generate.json`.
+* If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
 * Users can rename a folder in a hierarchy in [!DNL Assets] and publish a nested folder to [!DNL Brand Portal]. However, the title of the folder is not updated in [!DNL Brand Portal] until the root folder is republished.
 
