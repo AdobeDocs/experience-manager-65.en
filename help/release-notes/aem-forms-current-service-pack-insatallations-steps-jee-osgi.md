@@ -39,12 +39,13 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 +++2.Download the required software:
 
+* [AEM Forms on JEE 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en)
+* [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)
+* [Forms add-on package](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package)
+* [Fragment](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+* [Bundle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar)
 
-* AEM Forms on JEE 6.5.15.0 Service Pack 
-* AEM 6.5.15.0 Service Pack
-* Forms add-on package
-* Bundle
-* Fragments
+
 
 +++
 
