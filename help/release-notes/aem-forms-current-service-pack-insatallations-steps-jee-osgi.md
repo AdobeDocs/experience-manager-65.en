@@ -13,8 +13,9 @@ SEO Description: AEM Forms installation instructions for OSGi and JEE environmen
 | Version  |  6.5.15.0 |
 | Type  |  Service Pack release |
 | Date  |  December 01, 2022 |
+| Download | [Latest AEM Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
-## What is included in Experience Manager Forms 6.5.15.0
+## What is included in Experience Manager Forms 6.5
 
 Adobe Experience Manager (AEM) Forms service pack includes new and upgraded features, such as key customer-requested enhancements, performance, stability, and security improvements. AEM Forms releases service packs at a regular interval to provide latest features and improvements. Depending on your stack, choose one of the following paths to download and install service pack on your environment: 
 
@@ -23,12 +24,11 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 >[!NOTE]
 >
-> Adobe releases a full installer after every 6th service pack. AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE isthe last full installer. The full installer provides support for new platforms while the regular service packinstaller includes only bug fixes and general improvements. If you are performing a fresh installation or planningto use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.12.0 Forms on JEEfull installer released on 03 March 2022 instead of AEM 6.5 Forms installer released on 08 April 2019. After usingthe full installer, install the latest service pack.  
+> Adobe releases a full installer after every 6th service pack. AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE is the last full installer. The full installer provides support for new platforms while the regular service pack installer includes only bug fixes and general improvements. If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.12.0 Forms on JEE full installer released on 03 March 2022 instead of AEM 6.5 Forms installer released on 08 April 2019. After using the full installer, install the latest service pack.  
 
 ## Download and install Service Pack on an AEM Forms on JEE envrionment {#download-and-install-for-jee-service-pack}
 
-![](assets/aem-forms-on-jee.png)
-
+![JEE Installation](/help/forms/using/assets/jeeinstallation.png)
 
 +++1. Take backup of your existing envronment:
    
@@ -163,7 +163,7 @@ It is mandatory to install **servlet fragment** for all application servers exce
 
 ## Download and install Service Pack on an AEM Forms on OSGi envrionment {#download-and-install-for-osgi-service-pack}
 
-![](assets/aem-forms-on-osgi.png)
+![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
 
 
 +++1. Take backup of your existing environment:
