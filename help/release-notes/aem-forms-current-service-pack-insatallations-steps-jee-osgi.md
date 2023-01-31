@@ -35,6 +35,10 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
    1. Backup your [CRX Repository, Database Schema, and GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html). 
    1. Backup  the &lt;*AEM_forms_root*&gt;/deploy folder. It is required if you decide to uninstall the service pack.
 
+   >[!NOTE]
+   >
+   > Before running the AEM installer, make sure you have write-access rights.
+
 +++
 
 +++2.Download the required software:
@@ -97,7 +101,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 It is mandatory to install **servlet fragment** for all application servers except those    running on JBoss EAP 7.4.0. To download and install the servlet fragment: 
 
-1. If you have not downloaded the fragment, download it from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+1. If you have not downloaded the fragment, download it from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
 1. Start the application server, wait for logs to stabilize and check the bundle state.
 
@@ -226,6 +230,8 @@ It is mandatory to install **servlet fragment** for all application servers exce
 +++
 
 ## Troubleshooting
+
+* AEM Forms service packs can be installed again if an error occurs during installation. If the problem persists, contact the product team.
 
 * If **Dialog on Package Manager UI** exits during the installation of the service pack, wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations are successful. Typically, this issue occurs in Safari browser but can intermittently occur on any browser.
 
