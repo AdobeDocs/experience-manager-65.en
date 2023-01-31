@@ -225,7 +225,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 1. **Create** allows you to create:
 
     * **Variation**
-    * **Variation as live-copy**.
+    * **Variation as [live-copy](/help/sites-administering/msm.md#live-copies)**.
 
 1. Define the required properties:
 

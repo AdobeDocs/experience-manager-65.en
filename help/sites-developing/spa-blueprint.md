@@ -144,7 +144,7 @@ Each component must be extended with a functionality that will decorate the oute
 
 A container is a component meant to contain and render child components. To do so, the container iterates over the `:itemsOrder`, `:items` and `:children` properties of its model.
 
-The container dynamically gets the child components from the store of the ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` library. The container then extends the child component with the Model Provider capabilities and finally instantiate it.
+The container dynamically gets the child components from the store of the [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) library. The container then extends the child component with the Model Provider capabilities and finally instantiate it.
 
 ### Page {#page}
 
