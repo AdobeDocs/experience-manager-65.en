@@ -89,11 +89,22 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
    1. **[For Unix-based only]:** The **Start Configuration Manager** check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager instantly or to run **Configuration Manager** later, deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. You can start **Configuration Manager** later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
   
+      You are required to perform the aforementioned tasks when running the **Configuration Manager**: 
+      * Configure CRX
+      * Deploy Adobe Experience Manager Forms EARs
+      * Initialize Adobe Experience Manager Forms database
+      * Deploy Adobe Experience Manager Forms components
+      * Enable messaging on standalone JBoss
+  
    1. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
 
       * [Installing and Deploying AEM forms for JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
       * [Installing and Deploying AEM forms for WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
       * [Installing and Deploying AEM Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+
+>[!NOTE]
+>
+> After installing AEM Forms on JEE service pack, you need to remove the Forms add-on package from `crx-repository\install` folder. Remove the Forms add-on package before restarting the appserver. Download the latest Forms add-on package from the [Software Distribution portal](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
 +++
 
@@ -150,7 +161,7 @@ It is mandatory to install **servlet fragment** for all application servers exce
    1. Ensure that you have installed the [!DNL Experience Manager] service pack.
    1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https:/experienceleague.adobe.com/      docs/experience-manager-release-informationaem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)       for youroperating system.
    1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](help/forms/using/     installing-configuring-aem-forms-osgimd#install-aem-forms-add-on-package).
-   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFDCompatibility package](https://     experienceleague.adobe.com/docsexperience-manager-release-information/aem-release-updates/forms-updates/  aem-forms-releases.html#forms-updates).
+   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experienceleague.adobe.com/docsexperience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
 
 +++
 
@@ -231,10 +242,11 @@ It is mandatory to install **servlet fragment** for all application servers exce
 
 ## Troubleshooting
 
-* AEM Forms service packs can be installed again if an error occurs during installation. If the problem persists, contact the product team.
+* Re-install the AEM Forms service packs if an error occurs during its installation. If the problem persists, contact the Product team.
 
 * If **Dialog on Package Manager UI** exits during the installation of the service pack, wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations are successful. Typically, this issue occurs in Safari browser but can intermittently occur on any browser.
 
 * Check the monitor logs (error.log) once the installation is complete for any activity. Wait for few minutes until there is no activity in the logs. Restart the AEM instance.
 
-* If you encounter **service unavailable error** after installing the latest AEM Forms 6.5.15.0 service pack, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to see the troubleshooting steps.
+* If the **service unavailable error** error occurs after installing the latest AEM Forms 6.5.15.0 service pack, [install servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md), to troubleshoot the error.
+
