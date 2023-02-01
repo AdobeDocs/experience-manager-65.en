@@ -149,7 +149,7 @@ It is mandatory to install **servlet fragment** for all application servers exce
    
    **Validate the installation**
    
-   To know the platforms that are certified to work with this release, see the [technical requirements](/help/    sites-deploying/technical-requirements.md).
+   To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
    
    1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience      Manager (6.5.15.0)` under [!UICONTROL Installed Products].<!-- UPDATE FOR EACH NEW RELEASE -->
    1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in theOSGi Console (Use Web     Console: `/system/console/bundles`).
@@ -222,7 +222,7 @@ It is mandatory to install **servlet fragment** for all application servers exce
 
    **Validate the installation**
 
-   To know the platforms that are certified to work with this release, see the [technical requirements](/help/    sites-deploying/technical-requirements.md).
+   To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
    1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience      Manager (6.5.15.0)` under [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
