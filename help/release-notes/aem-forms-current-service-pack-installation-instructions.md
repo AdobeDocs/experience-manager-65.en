@@ -141,7 +141,7 @@ It is mandatory to install **servlet fragment** for all application servers exce
    * Place the package into `../crx-quickstart/install` folder when the server is available online. 
    The package is      automatically installed.
    
-   * Use the [HTTP API from Package Manager](/help/sites-administering/package-managermd#package-share). Use     `cmd=install&recursive=true` so that the nested packages are installed.
+   * Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use  `cmd=install&recursive=true` so that the nested packages are installed.
    
       >[!NOTE]
       >
@@ -214,7 +214,7 @@ It is mandatory to install **servlet fragment** for all application servers exce
    There are two different methods that you can use to automatically install [!DNL Experience Manager] 6.5.15.0.<!--       UPDATE FOR EACH NEW RELEASE -->
 
    * Place the package into `../crx-quickstart/install` folder when the server is available online. The package is      automatically installed.
-   * Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use     `cmd=install&recursive=true` so that the nested packages are installed.
+   * Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
       >[!NOTE]
       >
