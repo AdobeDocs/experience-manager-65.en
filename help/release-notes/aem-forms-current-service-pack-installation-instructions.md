@@ -160,9 +160,9 @@ It is mandatory to install **servlet fragment** for all application servers exce
 +++6. Install AEM Experience Manager Forms add-on package
       
    1. Ensure that you have installed the [!DNL Experience Manager] service pack.
-   1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) for your operating system.
-   1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
-   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+   1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)   for your operating system.
+   1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=en#install-aem-forms-add-on-package).
+   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
 
@@ -235,9 +235,9 @@ It is mandatory to install **servlet fragment** for all application servers exce
 +++4. Install AEM Experience Manager Forms add-on package
       
    1. Ensure that you have installed the [!DNL Experience Manager] service pack.
-   1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) for your operating system.
-   1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
-   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+   1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)   for your operating system.
+   1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html?lang=en#install-aem-forms-add-on-package).
+   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
 
