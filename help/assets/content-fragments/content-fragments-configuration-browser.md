@@ -36,10 +36,6 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 >
 >For further details see also [Configuration Browser:](/help/sites-administering/configurations.md#using-configuration-browser).
 
->[!CAUTION]
->
->Sub-configurations (a configuration nested within a configuration) are supported for use with Content Fragments, but cannot be used for GraphQL queries.
-
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 
 1. Use **Create** to open the dialog, where you:
