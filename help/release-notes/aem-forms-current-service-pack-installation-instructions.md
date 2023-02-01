@@ -249,5 +249,6 @@ It is mandatory to install **servlet fragment** for all application servers exce
 
 * Check the monitor logs (error.log) once the installation is complete for any activity. Wait for few minutes until there is no activity in the logs. Restart the AEM instance.
 
-* In case the **service-unavailable error** error occurs after installing the latest AEM Forms 6.5.15.0 service pack, [install servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md), to troubleshoot the error.
+* In case you get a **service-unavailable error** after installing the latest AEM Forms 6.5.15.0 service pack, [install the servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md) to fix the error.
+
 
