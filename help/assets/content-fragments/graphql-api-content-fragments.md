@@ -185,11 +185,13 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 
 ## GraphiQL Interface {#graphiql-interface}
 
-An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is available for use with AEM GraphQL. This can be [installed with AEM](#installing-graphiql-interface). 
+An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is available for use with AEM GraphQL. 
 
 >[!NOTE]
 >
->GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
+>GraphiQL is included in all environments of AEM (but will only be accessible/visible when you configure your endpoints).
+>
+>In previous releases, a package was needed to install the GraphiQL IDE. If you have this installed, it can now be removed.
 
 This interface allows you to directly input, and test, queries.
 
@@ -200,14 +202,6 @@ For example:
 This provides features such as syntax-highlighting, auto-complete, auto-suggest, together with a history and online documentation:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
-
-### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
-
-The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
-
->[!NOTE]
->
->The package available is fully compatible with AEM 6.5.10.0 and AEM as a Cloud Service.
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
