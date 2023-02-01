@@ -256,7 +256,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 ### Install Service Pack on [!DNL Experience Manager] Forms {#install-service-pack-on-aemforms}
 
-For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installtion instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
