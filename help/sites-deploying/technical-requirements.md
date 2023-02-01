@@ -189,7 +189,7 @@ Adobe Experience Manager works with the following server platforms for productio
 | Oracle Solaris 11 |Z: Not supported  |
 | IBM AIX 7.2 |Z: Not supported  |
 
-1. Linux Kernel 2.6, 3.x, 4.x and 5.x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux and Amazon Linux. AEM Forms add-on features are only supported on CentOS 7, Red Hat Enterprise Linux 7, and Red Hat Enterprise Linux 8.
+1. Linux Kernel 2.6, 3. x, 4. x, and 5. x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux, and Amazon Linux. AEM Forms add-on features are only supported on CentOS 7, Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, and Red Hat Enterprise Linux 9. 
 1. AEM Forms is supported on Ubuntu 20.04 LTS.
 1. Linux distribution supported by Adobe Managed Services.
 1. Microsoft Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
@@ -207,7 +207,7 @@ Adobe Experience Manager works with the following server platforms for productio
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager is supported running in a virtual machine on cloud computing environments, such as Microsoft Azure and Amazon Web Services (AWS), in compliance with the technical requirements listed on this page, and according to Adobe’s standard support terms.
+Adobe Experience Manager is supported running in a virtual machine on cloud computing environments, such as Microsoft Azure and Amazon Web Services (AWS), in compliance with the technical requirements listed on this page, and according to Adobe's standard support terms.
 
 For a cloud-native environment, review the latest offering from the AEM product line: Adobe Experience Manager as a Cloud Service. See [Adobe Experience Manager as a Cloud Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) for details.
 
@@ -445,11 +445,11 @@ For Windows x86:
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2019</td>
+   <td>Microsoft&reg; Office 2019</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 (Deprecated)</td>
+   <td>Microsoft&reg; Office 2016 (Deprecated)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
@@ -457,19 +457,19 @@ For Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016 (Deprecated)<br /> </td>
+   <td>Microsoft&reg; Office Visio 2016 (Deprecated)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2019<br /> </td>
+   <td>Microsoft&reg; Publisher 2019<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2016 (Deprecated)<br /> </td>
+   <td>Microsoft&reg; Publisher 2016 (Deprecated)<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016 (Deprecated)<br /> </td>
+   <td>Microsoft&reg; Project 2016 (Deprecated)<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
@@ -503,7 +503,7 @@ For Windows x86:
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft® Windows® 10
+* Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, or Microsoft&reg; Windows&reg; 10
 * 1 GHz or faster processor with support for PAE, NX, and SSE2.
 * 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
 * 16 GB disk space for 32-bit or 20 GB disk space for 64-bit OS
