@@ -21,7 +21,7 @@ The remainder of this guide will focus on GraphQL access and Content Fragment de
 
 Information architects will need to design queries for their channel endpoints in order to deliver content. These queries will generally only need to be considered once per endpoint per model. For the purposes of this getting started guide we will only need to create one.
 
-1. Log into AEM and access the GraphiQL interface:
+1. Log into AEM and access the [GraphiQL interface](/help/assets/content-fragments/graphiql-ide.md):
    * For example: `http://<host>:<port>/aem/graphiql.html`.
 
 1. The GraphiQL is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them headlesly as JSON.

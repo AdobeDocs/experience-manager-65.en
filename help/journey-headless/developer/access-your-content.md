@@ -263,7 +263,7 @@ The fragment models will be used:
 
 ### Where to Test Your Queries {#where-to-test-your-queries}
 
-The queries can be entered in the GraphiQL interface, for example at:
+The queries can be entered in the [GraphiQL interface](/help/assets/content-fragments/graphiql-ide.md), for example at:
 
 * `http://localhost:4502/aem/graphiql.html`
 

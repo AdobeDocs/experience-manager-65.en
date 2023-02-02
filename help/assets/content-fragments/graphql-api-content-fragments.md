@@ -203,6 +203,10 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
+>[!NOTE]
+>
+>For further details see [Using the GraphiQL IDE](/help/assets/content-fragments/graphiql-ide.md).
+
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
 The use cases can depend on the type of AEM environment:
@@ -442,6 +446,7 @@ query GetArticlesByVariation($variation: String!) {
         items {
             _path
             author
+            _variations
         }
     }
 }
