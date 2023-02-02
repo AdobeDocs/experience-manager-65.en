@@ -164,7 +164,7 @@ The **Delete** option is also accessible via the three vertical dots to the righ
 
 ## Installing your Persisted Query on Production {#installing-persisted-query-production}
 
-After developing and testing your persisted query with GraphiQL, the final goal is to [transfer it to your production environment](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) for use by your applications.
+After developing and testing your persisted query with GraphiQL, the final goal is to [transfer it to your production environment](/help/assets/content-fragments/persisted-queries.md#transfer-persisted-query-production) for use by your applications.
 
 ## Keyboard shortcuts {#keyboard-shortcuts}
 
