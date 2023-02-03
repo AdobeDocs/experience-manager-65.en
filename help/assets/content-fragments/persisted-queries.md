@@ -271,9 +271,11 @@ If you want to change the TTL for your GraphLQ query, then the query must be eit
 * persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers)
 * persisted using the [API method](#cache-api). 
 
+<!--
 ### Managing HTTP Cache Headers in GraphQL  {#http-cache-headers-graphql}
 
 The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
+-->
 
 ### Managing Cache from the API {#cache-api}
 

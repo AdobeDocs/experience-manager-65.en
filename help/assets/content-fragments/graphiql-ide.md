@@ -65,7 +65,7 @@ Use **Save As** to persist your new query.
 
 ## Updating your persisted query {#updating-persisted-query}
 
-Select the query you want to update from the list in the **Persisted Queries** panel (far left).
+Select the query you want to update from the list in the **[Persisted Queries](/help/assets/content-fragments/persisted-queries.md)** panel (far left).
 
 The query will be shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
 
@@ -125,7 +125,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publishing persisted queries {#publishing-persisted-queries}
 
-Once you have selected your persisted query from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
+Once you have selected your [persisted query](/help/assets/content-fragments/persisted-queries.md) from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
 
 >[!NOTE]
 >
