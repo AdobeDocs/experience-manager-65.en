@@ -253,6 +253,7 @@ This query can be persisted under a path `wknd/adventures-by-activity`. To call 
 
 Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`. The query variables and any special characters must be [encoded properly](#encoding-query-url) for the Persisted query to execute.
 
+<!--
 ## Caching your persisted queries {#caching-persisted-queries}
 
 Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
@@ -271,11 +272,9 @@ If you want to change the TTL for your GraphLQ query, then the query must be eit
 * persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers)
 * persisted using the [API method](#cache-api). 
 
-<!--
 ### Managing HTTP Cache Headers in GraphQL  {#http-cache-headers-graphql}
 
 The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
--->
 
 ### Managing Cache from the API {#cache-api}
 
@@ -293,6 +292,7 @@ curl -X PUT \
 ```
 
 The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
+-->
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
