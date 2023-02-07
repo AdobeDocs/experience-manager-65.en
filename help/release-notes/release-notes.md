@@ -34,12 +34,12 @@ mini-toc-levels: 3
 
 * Connected Assets: When you enable the Smart Crop options for images on remote DAM, upload images to a folder, and sync the folder to local sites, the folder does not open on the local Sites deployment. (NPR-39912)
 * While sorting a collection by name, the list view is not working appropriately (ASSETS-19401)
-* When a large media file (JPEG) is uploaded to Collections, the AEM stops responding. (ASSETS-19387)
+* When a large media file (JPEG) is uploaded to Collections, Experience Manager stops responding. (ASSETS-19387)
 * In the content tree pane, the displayed asset name is incorrect as the location of the asset is not rendered appropriately. (ASSETS-18870)
 * While sharing a Collection using a link, the data in the URL mismatches between the shuffle of card view and list view. (ASSETS-18758)
 * When you perform an omnisearch by using a filter on the folder type, the search results are inconsistent. (ASSETS-18227)
 * The `dam:size` property is not updated after XMP writeback, which results in incorrect information being returned from the `/platform/path/to/asset.jpg;resource=metadata` API. (ASSETS-17631)
-* Unclosed resource resolver on all AEM instances. (ASSETS-16904)
+* Unclosed resource resolver on all Experience Manager instances. (ASSETS-16904)
 * Unable to create a version for an asset even if you are assigned the `create` and `modify` permissions. (ASSETS-15956)
 * The `move` button is disabled randomly while moving an asset from one point to another. (ASSETS-14889)
 * Screen readers are unable to identify headings, as the text is not defined inside heading tags but as the general text. (ASSETS-6924)
@@ -48,20 +48,21 @@ mini-toc-levels: 3
 
 ### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
 
-* Form element does not contain label. With screen readers such as NVDA and JAWS, Form label information is not announcing properly. (CQ-4344078)
-* Drop-downs are not getting closed when the `Escape` key is used on a keyboard. (CQ-4344077)
-* The Information icon (the letter "i") that appears for the inline error suggestion after an invalid input is given, is not accessible using a keyboard. (CQ-4344076)
-* `getManifestURI` returns null due to a JCR property being read as `toString` instead of `getString`. (ASSETS-18674)
-* SmartCrop video component is not behaving correctly. The component is carrying-out playback instead of streaming, and VTT calls are failing, giving a 404 error. (ASSETS-18468)
-* Selecting **[!UICONTROL Properties]** on an asset's Viewer page causes a null pointer exception. (ASSETS-18420)
-* [!DNL Experience Manager] user inteface changes for DASH streaming that includes having a visible CMAF (Common Media Application Format) field in the Video Profile editor, having the video upload process send a CMAF flag, and an HLS, DASH option visible in the playback drop-down in the Viewer Preset editor's behavior tab. (ASSETS-17428)
-* In Navigation, when you select **[!UICONTROL Assets]** > **[!UICONTROL Files]** > **[!UICONTROL Create]** > **[!UICONTROL Carousel Set]**, the picture icon is overlapped with "Slide 1" text string. (ASSETS-18578)
-* Unpublished assets are published again. (ASSETS-16428)
-* Experience Manager Author goes down due to a load issue, prompting the creation of a synthetic alert. (ASSETS-15937)
-* In the Dynamic Media General Settings page, an untranslated error message `Failed to fetch data` appears. (ASSETS-15617)
-
-## Commerce {#commerce-6516}
-
+*   Form element does not contain label. With screen readers such as NVDA and JAWS, Form label information is not announcing properly. (CQ-4344078)
+*   Drop-downs are not getting closed when the `Escape` key is used on a keyboard. (CQ-4344077)
+*   The Information icon (the letter "i") that appears for the inline error suggestion after an invalid input is given, is not accessible using a keyboard. (CQ-4344076)
+*   `getManifestURI` returns null due to a JCR property being read as `toString` instead of `getString`. (ASSETS-18674)
+*   SmartCrop video component is not behaving correctly. The component is carrying-out playback instead of streaming, and VTT calls are failing, giving a 404 error. (ASSETS-18468)
+*   Selecting **[!UICONTROL Properties]** on an asset's Viewer page causes a null pointer exception. (ASSETS-18420)
+*   [!DNL Experience Manager] user interface changes for DASH streaming that includes the following:
+    *   having a visible CMAF (Common Media Application Format) field in the Video Profile editor
+    *   having the video upload process send a CMAF flag 
+    *   an HLS, DASH option visible in the playback drop-down in the Viewer Preset editor's behavior tab. 
+    (ASSETS-17428)
+*   In Navigation, when you select **[!UICONTROL Assets]** > **[!UICONTROL Files]** > **[!UICONTROL Create]** > **[!UICONTROL Carousel Set]**, the picture icon is overlapped with "Slide 1" text string. (ASSETS-18578)
+*   Unpublished assets are published again. (ASSETS-16428)
+*   Experience Manager Author goes down due to a load issue, prompting the creation of a synthetic alert. (ASSETS-15937)
+*   In the Dynamic Media General Settings page, an untranslated error message `Failed to fetch data` appears. (ASSETS-15617)
 
 ## [!DNL Forms] {#forms-6516}
 
@@ -89,14 +90,9 @@ mini-toc-levels: 3
 
 * Centralize the link processing on e-mail pages so that model customizations are not needed anymore. (SITES-9002)
 
-### [!DNL Sites] - Foundation Components {#sites-foundation-components-6516}
-
-
 ### [!DNL Sites] - Admin User Interface {#sites-adminui-6516}
 
 * CSV Export is not exporting all the pages under the selected page. (SITES-9390)
-
-### [!DNL Sites] - Accessibility {#sites-access-6516}
 
 ### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6516}
 
@@ -108,7 +104,6 @@ mini-toc-levels: 3
 * You are unable to move an Experience Fragment to another folder even if the template is listed under allowed templates. (SITES-8601)
 * (SITES-7989)
 
-### [!DNL Sites] - Fluid XP {#sites-fluidxp-6516}
 
 ### [!DNL Sites] - Page Editor {#sites-pageeditor-6516}
 
@@ -157,17 +152,17 @@ mini-toc-levels: 3
 
 ### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
-1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
+1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
 
-1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
+1.  Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1.  Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
+1.  Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
-1. Select the package, then select **[!UICONTROL Install]**.
+1.  Select the package, then select **[!UICONTROL Install]**.
 
-1. To update the S3 connector, stop the instance after installation of the Service Pack, replace the existing connector with a new binary file provided in the install folder, and restart the instance. See [Amazon S3 Data Store](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+1.  To update the S3 connector, stop the instance after installation of the Service Pack, replace the existing connector with a new binary file provided in the install folder, and restart the instance. See [Amazon S3 Data Store](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
 
 >[!NOTE]
 >
@@ -188,11 +183,11 @@ There are two different methods that you can use to automatically install [!DNL 
 
 To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
 
-1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.16.0)` under [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1.  The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.16.0)` under [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
+1.  All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1.  The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
 
@@ -213,20 +208,21 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 >[!NOTE]
 >
->Skip if you are not using AEM Forms on JEE. Fixes in [!DNL Experience Manager] Forms on JEE are delivered through a separate installer.
+>Skip if you are not using Experience Manager Forms on JEE. Fixes in [!DNL Experience Manager] Forms on JEE are delivered through a separate installer.
 
-Perform the following steps for all the AEM Forms on JEE environments using any application servers other than JBoss&reg; EAP 7.4.0.
+Perform the following steps for all the Experience Forms on JEE environments using any application servers other than JBoss&reg; EAP 7.4.0.
 
-1. Install [AEM Forms JEE Patch](jee-patch-installer-65.md). The install includes all fixed issues for all components of AEM 6.5 Forms on JEE. 
-1. Install the [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). The fragment adds the dependencies required to install AEM Service Pack 15 (6.5.16.0).
+1. Install [Experience Manager Forms JEE Patch](jee-patch-installer-65.md). The install includes all fixed issues for all components of Experience Manager 6.5 Forms on JEE. 
+1. Install the [Fragment for Experience Manager 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). The fragment adds the dependencies required to install Experience Manager Service Pack 16 (6.5.16.0).
 1. After installing the fragment, wait for the application server to stabilize.
 1. Install the [service pack on Experience Manager 6.5](#install-service-pack).
 
    >[!NOTE]
    >
-   >If you install the latest [AEM service pack (6.5.16.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), before installing [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) on your AEM 6.5 Forms on JEE environment, the CRX/bundle and the start page can stop working. In such case, you encounter a service unavailable error. To resolve the issue, perform the actions [listed here](/help/forms/using/aem-service-pack-installation-solution.md).
+   >_If you install the latest [Experience Manager Service Pack (6.5.16.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip):_
+  before you install [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) on your Experience Manager 6.5 Forms on JEE environment, the CRX/bundle and the start page may stop working. In such case, you encounter a "service unavailable" error. To resolve the issue, perform the actions [listed here](/help/forms/using/aem-service-pack-installation-solution.md).
    
-1. Install the [latest Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+1.  Install the [latest Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
 
 ### UberJar {#uber-jar}
 
@@ -269,7 +265,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
   This package is needed for customers using GraphQL; this enables them to add the required index definition based on the features they actually use.
 
-* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
