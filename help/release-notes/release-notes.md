@@ -42,8 +42,8 @@ mini-toc-levels: 3
 * Unclosed resource resolver on all AEM instances. (ASSETS-16904)
 * Unable to create a version for an asset even if you are assigned the `create` and `modify` permissions. (ASSETS-15956)
 * The `move` button is disabled randomly while moving an asset from one point to another. (ASSETS-14889)
-* Screen recorders are unable to identify headings, as the text is not defined inside heading tags but as the general text. (ASSETS-6924)
-* The alternative text under the image is not mandatory but the text displayed under the image is repetitive with 	a `Type` attribute. (ASSETS-6915)
+* Screen readers are unable to identify headings, as the text is not defined inside heading tags but as the general text. (ASSETS-6924)
+* The alternative text under the image is not mandatory but the text displayed under the image is repetitive with a `Type` attribute. (ASSETS-6915)
 
 
 ### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
