@@ -239,9 +239,8 @@ Before starting with queries on your content you need to:
   * Use Tools -> Assets -> GraphQL
   * [Enabling your GraphQL Endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
   
-* Install GraphiQL (if required)
-  * Installed as a dedicated package
-  * [Installing the AEM GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
+* Access GraphiQL (if required)
+  * [AEM GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Sample Structure {#sample-structure}
 
@@ -264,9 +263,9 @@ The fragment models will be used:
 
 ### Where to Test Your Queries {#where-to-test-your-queries}
 
-The queries can be entered in the GraphiQL interface, for example at:
+The queries can be entered in the [GraphiQL interface](/help/assets/content-fragments/graphiql-ide.md), for example at:
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/graphiql-interface.png "GraphiQL Interface")
 
