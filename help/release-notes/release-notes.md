@@ -32,6 +32,18 @@ mini-toc-levels: 3
 
 ## [!DNL Assets] {#assets-6516}
 
+* Connected Assets: When you enable the Smart Crop options for images on remote DAM, upload images to a folder, and sync the folder to local sites, the folder does not open on the local Sites deployment. (NPR-39912)
+* While sorting a collection by name, the list view is not working appropriately (ASSETS-19401)
+* When a large media file (JPEG) is uploaded to Collections, the AEM stops responding. (ASSETS-19387)
+* In the content tree pane, the displayed asset name is incorrect as the location of the asset is not rendered appropriately. (ASSETS-18870)
+* While sharing a Collection using a link, the data in the URL mismatches between the shuffle of card view and list view. (ASSETS-18758)
+* When you perform an omnisearch by using a filter on the folder type, the search results are inconsistent. (ASSETS-18227)
+* The `dam:size` property is not updated after XMP writeback, which results in incorrect information being returned from the `/platform/path/to/asset.jpg;resource=metadata` API. (ASSETS-17631)
+* Unclosed resource resolver on all AEM instances. (ASSETS-16904)
+* Unable to create a version for an asset even if you are assigned the `create` and `modify` permissions. (ASSETS-15956)
+* The `move` button is disabled randomly while moving an asset from one point to another. (ASSETS-14889)
+* Screen recorders are unable to identify headings, as the text is not defined inside heading tags but as the general text. (ASSETS-6924)
+* The alternative text under the image is not mandatory but the text displayed under the image is repetitive with 	a `Type` attribute. (ASSETS-6915)
 
 
 ### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
