@@ -1,6 +1,6 @@
 ---
 title: AEM Forms Patch Installation Instructions for AEM Forms
-description: AEM Forms service pack installtions instructions for OSGi and JEE environment
+description: AEM Forms service pack installation instructions for OSGi and JEE environment
 SEO Description: AEM Forms installation instructions for OSGi and JEE environment
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 ---
@@ -16,24 +16,24 @@ exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 
 ## What is included in Experience Manager Forms 6.5.15.0
 
-Adobe Experience Manager (AEM) Forms service pack includes new and upgraded features, such as key customer-requested enhancements, performance, stability, and security improvements. AEM Forms releases service packs at a regular interval to provide latest features and improvements. Depending on your stack, choose one of the following paths to download and install service pack on your environment: 
+Adobe Experience Manager (AEM) Forms service pack includes new and upgraded features, such as key customer-requested enhancements, performance, stability, and security improvements. AEM Forms release service packs at a regular interval to provide latest features and improvements. Depending on your stack, choose one of the following paths to download and install service pack on your environment: 
 
-* [Download and install Service Pack on an AEM Forms on JEE envrionment](#download-and-install-for-jee-service-pack) 
-* [Download and install Service Pack on an AEM Forms on OSGi envrionment](#download-and-install-for-osgi-service-pack) 
+* [Download and install Service Pack on an AEM Forms on JEE environment](#download-and-install-for-jee-service-pack) 
+* [Download and install Service Pack on an AEM Forms on OSGi environment](#download-and-install-for-osgi-service-pack) 
 
 >[!NOTE]
 >
-> Adobe releases a full installer after every 6th service pack. AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE isthe last full installer. The full installer provides support for new platforms while the regular service packinstaller includes only bug fixes and general improvements. If you are performing a fresh installation or planningto use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.12.0 Forms on JEEfull installer released on 03 March 2022 instead of AEM 6.5 Forms installer released on 08 April 2019. After usingthe full installer, install the latest service pack.  
+> Adobe releases a full installer after every sixth service pack. AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE is the last full installer. The full installer supports new platforms while the regular service pack installer includes only bug fixes and general improvements. If you perform a fresh installation or plan to use the latest software for Experience Manager 6.5 Forms on JEE environment, Adobe recommends  using Experience Manager 6.5.12.0 Forms on JEE full installer released on 03 March 2022. Do not use Experience Manager 6.5 Forms installer released on 08 April 2019. After using the full installer, install the latest service pack.  
 
-## Download and install Service Pack on an AEM Forms on JEE envrionment {#download-and-install-for-jee-service-pack}
+## Download and install Service Pack on Experience Manager Forms on JEE environment {#download-and-install-for-jee-service-pack}
 
 ![](assets/aem-forms-on-jee.png)
 
 
-+++1. Take backup of your existing envronment:
++++1. Take backup of your existing environment:
    
-   1. Backup your [CRX Repository, Database Schema, and GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html). 
-   1. Backup  the &lt;*AEM_forms_root*&gt;/deploy folder. It is required if you decide to uninstall the service pack.
+   1. Back up your [CRX Repository, Database Schema, and GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html). 
+   1. Back up the &lt;*AEM_forms_root*&gt;/deploy folder. It is required if you decide to uninstall the service pack.
 
 +++
 
@@ -56,24 +56,24 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
       * **Windows** 
           Navigate to the appropriate directory on the installation media or folder on your hard disk where you copied     the installer, and double-click the `aemforms65_cfp_install.exe` file.
 
-          * (Windows 32-bit) `Windows\Disk1\InstData\VM`
-          * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+          * (Windows 32 bit) `Windows\Disk1\InstData\VM`
+          * (Windows 64 bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-      * **Linux** 
+      * **Linux&reg;** 
           Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_install.bin`.
 
-          * (Linux) `Linux/Disk1/InstData/NoVM` 
+          * (Linux&reg;) `Linux/Disk1/InstData/NoVM` 
 
       This launches an install wizard that guides you through the installation.
 
    1.  On the Introduction panel, click **[!UICONTROL Next]**.
-   1.  On the **Choose Install Folder** screen, verify that the default location displayed is correct for your existing installation, or click **[!UICONTROL Browse]** to select the alternate folder where AEM forms is installed, and click **[!UICONTROL Next]**.
-   1.  Read the Sevice Pack summary information and click **[!UICONTROL Next]**.
+   1.  On the **Choose Install Folder** screen, verify that the default location displayed is correct for your existing installation. Or, click **[!UICONTROL Browse]** to select the alternate folder where AEM forms is installed, and click **[!UICONTROL Next]**.
+   1.  Read the Service Pack summary information and click **[!UICONTROL Next]**.
    1.  Read the Pre-Installation Summary information and click **[!UICONTROL Install]**.
    1.  When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.
    1.  **[For Windows only]:** Perform one of the following step:
    
-         * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `[aem-forms root]\configurationManager\bin`. 
+         * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file in `[aem-forms root]\configurationManager\bin`. 
 
          * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
 
@@ -86,19 +86,19 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
   
    1. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
 
-      * [Installing and Deploying AEM forms for JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-      * [Installing and Deploying AEM forms for WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-      * [Installing and Deploying AEM Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+      * [Installing and Deploying Adobe Experience Manager Forms on JEE for JBoss&reg;](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+      * [Installing and Deploying Adobe Experience Manager Forms on JEE for WebSphere&reg;](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+      * [Installing and Deploying Adobe Experience Manager Forms on JEE for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
 
 +++
 
 +++4. Install the servlet fragment
 
-It is mandatory to install **servlet fragment** for all application servers except those    running on JBoss EAP 7.4.0. To download and install the servlet fragment: 
+It is mandatory to install **servlet fragment** for all application servers except those    running on JBoss&reg; EAP 7.4.0. To download and install the servlet fragment: 
 
 1. If you have not downloaded the fragment, download it from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
-1. Start the application server, wait for logs to stabilize and check the bundle state.
+1. Start the application server, wait for logs to stabilize, and check the bundle state.
 
 1. Open Web Console Bundles. The default URL is `http://[Server]:[Port]/system/console/bundles`.
 
@@ -121,10 +121,10 @@ It is mandatory to install **servlet fragment** for all application servers exce
    
    There are two different methods that you can use to automatically install [!DNL ExperienceManager] 6.5.15.0.<!--       UPDATE FOR EACH NEW RELEASE -->
    
-   * Place the package into `../crx-quickstart/install` folder when the server is availableonline. 
+   * Place the package into `../crx-quickstart/install` folder when the server is available online. 
    The package is      automatically installed.
    
-   * Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use     `cmd=install&recursive=true` so that the nested packages areinstalled.
+   * Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use     `cmd=install&recursive=true` so that the nested packages are installed.
    
       >[!NOTE]
       >
@@ -132,9 +132,9 @@ It is mandatory to install **servlet fragment** for all application servers exce
    
    **Validate the installation**
    
-   To know the platforms that are certified to work with this release, see the [technicalrequirements](/help/sites-deploying/technical-requirements.md).
+   To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
    
-   1. The product information page (`/system/console/productinfo`) displays the updated versionstring `Adobe Experience      Manager (6.5.15.0)` under [!UICONTROL Installed Products].<!-- UPDATE FOR EACH NEW RELEASE -->
+   1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience      Manager (6.5.15.0)` under [!UICONTROL Installed Products].<!-- UPDATE FOR EACH NEW RELEASE -->
    1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in theOSGi Console (Use Web     Console: `/system/console/bundles`).
    1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use WebConsole: `/system/console/     bundles`).
 
@@ -161,14 +161,14 @@ It is mandatory to install **servlet fragment** for all application servers exce
 ### !-->
 
 
-## Download and install Service Pack on an AEM Forms on OSGi envrionment {#download-and-install-for-osgi-service-pack}
+## Download and install Service Pack on an AEM Forms on OSGi environment {#download-and-install-for-osgi-service-pack}
 
 ![](assets/aem-forms-on-osgi.png)
 
 
-+++1. Take backup of your existing environment:
++++1. Create a backup of your existing environment:
    
-   1. Backup your [CRX Repository and Database Schema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html). 
+   1. Back up your [CRX Repository and Database Schema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html). 
 
    >[!NOTE]
    >
