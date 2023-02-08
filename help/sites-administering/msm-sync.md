@@ -166,7 +166,7 @@ The following table lists the synchronization actions that are installed with AE
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>On the live copy, this synchronization action updates references such as like links.<br /> It searches for paths in the live copy pages that point to a resource within the blueprint. When found, it updates the path to point to the related resource inside the live copy (instead of the blueprint). References that have targets outside the blueprint are not changed.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure the CQ MSM References Update Action service</a> to specify the node types, paragraph items, and page properties to exclude. </p> </td>
+   <td><p>On the live copy, this synchronization action updates references such as links.<br /> It searches for paths in the live copy pages that point to a resource within the blueprint. When found, it updates the path to point to the related resource inside the live copy (instead of the blueprint). References that have targets outside the blueprint are not changed.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configure the CQ MSM References Update Action service</a> to specify the node types, paragraph items, and page properties to exclude. </p> </td>
    <td> </td>
   </tr>
   <tr>
