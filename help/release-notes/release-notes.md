@@ -151,6 +151,7 @@ mini-toc-levels: 3
 > Adobe does not recommend that you remove or uninstall the [!DNL Experience Manager] 6.5.16.0 package. As such, before you install the pack, you should create a backup of the `crx-repository` in case you need to roll it back. <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
+
 ### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
 1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
@@ -202,6 +203,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 -->
+
 
 ### UberJar {#uber-jar}
 
