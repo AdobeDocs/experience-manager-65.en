@@ -121,14 +121,14 @@ It is mandatory to install **servlet fragment** for all application servers exce
    
    There are two different methods that you can use to automatically install [!DNL ExperienceManager] 6.5.15.0.<!--       UPDATE FOR EACH NEW RELEASE -->
    
-   * Place the package into `../crx-quickstart/install` folder when the server is available online. 
+* Place the package into `../crx-quickstart/install` folder when the server is available online. 
    The package is      automatically installed.
    
-   * Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use     `cmd=install&recursive=true` so that the nested packages are installed.
+* Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use     `cmd=install&recursive=true` so that the nested packages are installed.
    
-      >[!NOTE]
-      >
-      >Experience Manager 6.5.15.0 does not support Bootstrap installation. <!-- UPDATE FOR EACHNEW RELEASE -->
+  >[!NOTE]
+  >
+  >Experience Manager 6.5.15.0 does not support Bootstrap installation. <!-- UPDATE FOR EACHNEW RELEASE -->
    
    **Validate the installation**
    
@@ -196,12 +196,12 @@ It is mandatory to install **servlet fragment** for all application servers exce
 
    There are two different methods that you can use to automatically install [!DNL Experience Manager] 6.5.15.0.<!--       UPDATE FOR EACH NEW RELEASE -->
 
-   * Place the package into `../crx-quickstart/install` folder when the server is available online. The package is      automatically installed.
-   * Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use     `cmd=install&recursive=true` so that the nested packages are installed.
+* Place the package into `../crx-quickstart/install` folder when the server is available online. The package is      automatically installed.
+* Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use     `cmd=install&recursive=true` so that the nested packages are installed.
 
-      >[!NOTE]
-      >
-      >Experience Manager 6.5.15.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+   >[!NOTE]
+   >
+   >Experience Manager 6.5.15.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
    **Validate the installation**
 
