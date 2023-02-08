@@ -351,6 +351,13 @@ To troubleshoot common errors, follow these steps:
 
   ![Cookie error in Chrome browser in Incognito mode](assets/chrome-cookies-incognito-dialog.png)
 
+* If you are unable to access the Adobe Managed Services remote DAM deployment from Experience Manager Sites as a Cloud Service Sites deployment, update the `aem_author.vhost` file, available at `"/etc/httpd/conf.d/available_vhosts`, for remote DAM to include the following headers in the Dispatcher configuration:
+
+   ```xml   
+   Header Set Access-Control-Allow-Origin <Local Sites instance host>
+   Header Set Access-Control-Allow-Credentials true
+   ```
+
 * If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
   ![failure to retrieve asset remote references](assets/reference-report-failure.png)
