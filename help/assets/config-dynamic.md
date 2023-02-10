@@ -155,14 +155,14 @@ To enable Dynamic Media, you must enable the Dynamic Media run mode either from 
 
     * Add `-r dynamicmedia` to the end of the command line when starting the jar file.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -r dynamicmedia
 
    ```
 
    If you are publishing to s7delivery, you must also include the following trustStore arguments:
 
-   ```
+   ``` shellsession {.line-numbers}
    -Djavax.net.ssl.trustStore=<absoluteFilePath>/customerTrustStoreFileName>
 
     -Djavax.net.ssl.trustStorePassword=<passwordForTrustStoreFile>
@@ -213,7 +213,7 @@ To disable Dynamic Media after you have enabled it, you remove the `-r dynamicme
 
     * Do not add `-r dynamicmedia` to the command line when starting the jar file.
 
-   ```shell
+   ```shellsession {.line-numbers}
    java -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar
 
    ```
