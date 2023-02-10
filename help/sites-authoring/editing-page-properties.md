@@ -32,14 +32,14 @@ The properties are distributed across several tabs.
 
   Here you can add, or remove tags from the page by updating the list in the selection box:
 
-    * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
-    * A completely new tag can be entered by typing the name in an empty selection box.
+  * After selecting a tag is it listed below the selection box. You can remove a tag from this list using the x.
+  * A completely new tag can be entered by typing the name in an empty selection box.
 
-        * The new tag will be created when you hit enter.
-        * The new tag will then be shown with a small star on the right indicating that it is a new tag.
+    * The new tag will be created when you hit enter.
+    * The new tag will then be shown with a small star on the right indicating that it is a new tag.
 
-    * With the drop-down functionality you can select from existing tags.
-    * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
+  * With the drop-down functionality you can select from existing tags.
+  * An x appears when you mouse-over a tag entry in the selection box, which can be used to remove that tag for this page.
 
   For more information about tags, see [Using Tags](/help/sites-authoring/tags.md).
 
@@ -98,7 +98,7 @@ The properties are distributed across several tabs.
   >* Should not be set to an existing page.
   >
 
-  You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
+  You also need to configure Dispatcher to enable access to vanity URLs. See [Enabling Access to Vanity URLs](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) for more details.
 
 * **Redirect Vanity URL**
 
@@ -222,10 +222,10 @@ Shows the page thumbnail image. You can:
 
   In this tab you can:
 
-    * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
-    * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+  * [Add Permissions](/help/sites-administering/user-group-ac-admin.md)
+  * [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
 
-    * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
+  * View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)
 
   >[!CAUTION]
   >
@@ -260,16 +260,16 @@ You can define page properties:
 
 * From the **Sites** console:
 
-    * [Creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)
+  * [Creating a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page) (a subset of the properties)
 
-    * Clicking or tapping **Properties**
+  * Clicking or tapping **Properties**
 
-        * For a single page
-        * For multiple pages (only a subset of the properties are available for editing en masse)
+    * For a single page
+    * For multiple pages (only a subset of the properties are available for editing en masse)
 
 * From the page editor:
 
-    * Using **Page Information** (then **Open Properties**)
+  * Using **Page Information** (then **Open Properties**)
 
 ### From the Sites Console - Single Page {#from-the-sites-console-single-page}
 
@@ -279,8 +279,8 @@ Clicking or tapping **Properties** to define the page properties:
 
 1. Select the **Properties** option for the required page using either:
 
-    * [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
-    * [Selection mode](/help/sites-authoring/basic-handling.md#selectionmode)
+   * [Quick actions](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [Selection mode](/help/sites-authoring/basic-handling.md#selectionmode)
 
    The page properties will be shown using the appropriate tabs.
 
@@ -331,7 +331,7 @@ You can only bulk edit pages that:
 * Share the same resource type
 * Are not part of a livecopy
 
-    * If any of the pages are in a live copy then a message will be shown when the properties are opened.
+  * If any of the pages are in a live copy then a message will be shown when the properties are opened.
 
 Once you have entered Bulk Editing you can:
 
@@ -339,23 +339,23 @@ Once you have entered Bulk Editing you can:
 
   When viewing Page Properties for multiple pages you can see:
 
-    * A list of the pages impacted
+  * A list of the pages impacted
 
-        * You can select/deselect if required
+    * You can select/deselect if required
 
-    * Tabs
+  * Tabs
 
-        * As when viewing properties for a single page, the properties are ordered under tabs.
+    * As when viewing properties for a single page, the properties are ordered under tabs.
 
-    * A subset of properties
+  * A subset of properties
 
-        * Properties that are available on all selected pages and have been explicitly defined as available to bulk editing are visible.
-        * If you reduce the page selection to one page, then all properties are visible.
+    * Properties that are available on all selected pages and have been explicitly defined as available to bulk editing are visible.
+    * If you reduce the page selection to one page, then all properties are visible.
 
-    * Common properties with a common value
+  * Common properties with a common value
 
-        * Only properties with a common value are shown in View mode.
-        * When the field is multi-value (for example Tags), values will only be shown when *all* are common. If only some are common, they will only be shown when editing.
+    * Only properties with a common value are shown in View mode.
+    * When the field is multi-value (for example Tags), values will only be shown when *all* are common. If only some are common, they will only be shown when editing.
 
   When no properties with a common value exist, a message is displayed.
 
@@ -363,12 +363,12 @@ Once you have entered Bulk Editing you can:
 
   When editing Page Properties for multiple pages:
 
-    * You can update the values in the fields available.
+  * You can update the values in the fields available.
 
-        * The new values will be applied to all selected pages when you select **Done**.
-        * When the field is multi-value (for example Tags), you can either append a new value or remove a common value.
+    * The new values will be applied to all selected pages when you select **Done**.
+    * When the field is multi-value (for example Tags), you can either append a new value or remove a common value.
 
-    * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. Care should be taken when editing such fields to prevent data loss.
+  * Fields that are common, but have different values across the various pages will be indicated with a special value such as the text `<Mixed Entries>`. 
 
 >[!NOTE]
 >

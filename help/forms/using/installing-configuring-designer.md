@@ -18,19 +18,19 @@ exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 
 ## Pre-requisites {#pre-requisites}
 
-AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://support.microsoft.com/en-us/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) and [Visual C++ redistributable runtime package 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation. 
-
-You require administrator rights to install or uninstall Designer.
+* Install 32-bit version of  [Visual C++ 2019 Redistributable (x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation.
+* A user with administrator rights to install or uninstall Designer.
 
 ## Install Designer {#install-designer}
 
 Designer is available as a stand-alone installer and is also bundled with WorkBench. If you are using a stand-alone installer for Designer, perform the following steps:
 
-1. Download Designer from Adobe [Licensing Website](https://licensing.adobe.com/).
+1. Uninstall the previous version of AEM Forms Designer, if it is already installed.
+1. Download Designer from [Adobe Licensing Website](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
-   >If you have a previous version of Designer installed, uninstall the previous version before proceeding.
+   > * Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) onwards Forms Designer version also includes the Service Pack version. For example, for Service Pack 15 the version number is 6.5.15.20221112.1.0. In this example, 6.5.15 is service pack version.
 
 1. Launch the Designer installer by double-clicking setup.exe.
 1. Proceed and provide your details and the serial number on the Personalization screen.
@@ -52,5 +52,3 @@ msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-*
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
 ```
-
-

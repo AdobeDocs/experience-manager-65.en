@@ -117,7 +117,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> will allow you to manage all your customer-facing screens, of any size and in any location.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> will allow you to manage all your customer-facing screens, of any size and in any location.</td>
   </tr>
   <tr>
    <td>Sites</td>

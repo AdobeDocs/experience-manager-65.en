@@ -609,7 +609,7 @@ var wfData = wfSession.newWorkflowData("JCR_PATH", repoPath);
 wfSession.startWorkflow(model, wfData);
 
 // querying and managing a workflow
-var workflows = wfSession.getWorkflows(“RUNNING“);
+var workflows = wfSession.getWorkflows("RUNNING");
 var workflow= wfSession.getWorkflow(id);
 wfSession.suspendWorkflow(workflow);
 wfSession.resumeWorkflow(workflow);

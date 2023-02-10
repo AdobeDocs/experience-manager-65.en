@@ -101,9 +101,9 @@ To install and start AEM as a Windows service:
 
    This command invokes the appropriate script that starts the Windows service daemon in 64-bit Java instead of 32-bit Java.
 
-1. To prevent the process from forking into more than one process, increase the maximum heap size and the PermGen JVM parameters. Locate the `set jvm_options` command and set the value as follows:
+1. To prevent the process from forking into more than one process, increase the PermGen JVM parameter. Locate the `set jvm_options` command and set the value as follows:
 
-   `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
+   `set jvm_options=-Xmx1792m`
 
 1. Open Command Prompt, change the current directory to the crx-quickstart/opt/helpers folder of the AEM installation, and enter the following command to create the service:
 
@@ -152,92 +152,117 @@ to either:
 
 Further options and renaming conventions are described in the Quickstart help file, which is available through the -help option. To access the help, type:
 
-* `java -jar cq5-<*version*>.jar -help`
+* `java -jar cq-quickstart-6.5.0.jar -help`
+
+>[!CAUTION]
+>
+>These options are valid as of the original release of AEM 6.5 (6.5.0.0). Changes in later SP releases are possible.
 
 ```shell
 Loading quickstart properties: default
 Loading quickstart properties: instance
-Setting properties from filename '/Users/Desktop/AEM/cq-quickstart-5.6.0.jar'
+Setting properties from filename '/Users/Desktop/AEM/cq-quickstart-6.5.0.jar'
 --------------------------------------------------------------------------------
-Adobe Experience Manager Quickstart (build 20130129)
+Adobe Experience Manager Quickstart (build 20190328)                            
 --------------------------------------------------------------------------------
-Usage:
- Use these options on the Quickstart command line.
+Usage:                                                                          
+ Use these options on the Quickstart command line.                              
 --------------------------------------------------------------------------------
 
 -help (--help,-h)
-         Show this help message
+         Show this help message                                                 
 -quickstart.server.port (-p,-port) <port>
-         Set server port number
+         Set server port number                                                 
 -contextpath (-c,-org.apache.felix.http.context_path) <contextpath>
-         Set context path
+         Set context path                                                       
 -debug <port>
-         Enable Java Debugging on port number; forces forking
--gui
-         Show GUI if running on a terminal
+         Enable Java Debugging on port number; forces forking                   
+-gui 
+         Show GUI if running on a terminal                                      
 -nobrowser (-quickstart.nobrowser)
-         Do not open browser at startup
+         Do not open browser at startup                                         
 -unpack
-         Unpack installation files only, do not start the server (implies
-         -verbose)
+         Unpack installation files only, do not start the server (implies       
+         -verbose)                                                              
 -v (-verbose)
-         Do not redirect stdout/stderr to files and do not close stdin
+         Do not redirect stdout/stderr to files and do not close stdin          
 -nofork
-         Do not fork the JVM, even if not running on a console
+         Do not fork the JVM, even if not running on a console                  
 -fork
-         Force forking the JVM if running on a console, using recommended
-         default memory settings for the forked JVM.
+         Force forking the JVM if running on a console, using recommended       
+         default memory settings for the forked JVM.                            
 -forkargs <args> [<args> ...]
-         Additional arguments for the forked JVM, defaults to '-Xmx1024m
-         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,
-         example: '-forkargs -- -server'
+         Additional arguments for the forked JVM, defaults to '-Xmx1024m        
+         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,     
+         example: '-forkargs -- -server'                                        
 -a (--interface) <interface>
-         Optional IP address (interface) to bind to
+         Optional IP address (interface) to bind to                             
 -pt <string>
-         Process type (main/fork) - do not use directly, used when forking a
-         process
+         Process type (main/fork) - do not use directly, used when forking a    
+         process                                                                
 -r <string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string>]]]]]]]]]
-         Runmode(s) - Use this to define the run mode(s)
+         Runmode(s) - Use this to define the run mode(s)                        
 -b <string>
-         Base folder - defines the path under which the quickstart work folder
-         is created
+         Base folder - defines the path under which the quickstart work folder  
+         is created                                                             
 -low-mem-action <string>
-         Low memory action - what to do if memory is insufficient at startup
+         Low memory action - what to do if memory is insufficient at startup    
 -use-control-port
-         Start a control port
+         Start a control port                                                   
+-nointeractive
+         Start with no interactivity                                            
 -ll <level>
-         Define launchpad log level (1 = error...4 = debug)
+         Define launchpad log level (1 = error...4 = debug)                     
+-n   
+         Do not install shutdown hook                                           
+-D<property>=<value>
+         Additional framework properties.                                       
+-listener-port <listener-port>
+         Set listener port number                                               
+-x <string>
+         Run a Quickstart extension.                                            
+  Options for executing Quickstart extensions:
+                                                                                
+    -xargs <arg> [<arg> ...]
+         Construct an arguments list for a Quickstart extension (e.g. -xargs -- 
+         -arg1 val1 -arg2 val2).                                                
 --------------------------------------------------------------------------------
-Quickstart filename options
+Quickstart filename options                                                     
 --------------------------------------------------------------------------------
-Usage:
- Rename the jar file, including one of the patterns shown below, to set the
-corresponding option. Command-line options have priority on these filename
-patterns.
+Usage:                                                                          
+ Rename the jar file, including one of the patterns shown below, to set the     
+corresponding option. Command-line options have priority on these filename      
+patterns.                                                                       
 --------------------------------------------------------------------------------
 
 -NNNN
-         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port
-         NNNN, for example: quickstart-8085.jar
+         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port 
+         NNNN, for example: quickstart-8085.jar                                 
 -nobrowser
-         Include -nobrowser in the renamed jar filename to avoid opening the
-         browser at startup, example: quickstart-nobrowser-8085.jar
+         Include -nobrowser in the renamed jar filename to avoid opening the    
+         browser at startup, example: quickstart-nobrowser-8085.jar             
 -publish
-         Include -publish in the renamed jar filename to run cq5 in "publish"
-         mode, example: cq5-publish-7502.jar
+         Include -publish in the renamed jar filename to run in "publish" mode, 
+         example: cq-publish-7502.jar                                           
+-dynamicmedia
+         Include -dynamicmedia in the renamed jar filename to run in            
+         "dynamicmedia" mode, example: quickstart-dynamicmedia-4502.jar         
+-dynamicmedia_scene7
+         Include -dynamicmedia_scene7 in the renamed jar filename to run in     
+         "dynamicmedia_scene7" mode, example:                                   
+         quickstart-dynamicmedia_scene7-p4502.jar                               
 --------------------------------------------------------------------------------
 The license.properties file
 --------------------------------------------------------------------------------
-  The license.properties file stores licensing information, created from the
-  licensing form displayed on first startup and stored in the folder from where
-  Quickstart is run.
+  The license.properties file stores licensing information, created from the    
+  licensing form displayed on first startup and stored in the folder from where 
+  Quickstart is run.                                                            
 --------------------------------------------------------------------------------
 Log files
 --------------------------------------------------------------------------------
-  Once Quickstart has been unpacked and started, log files can be found under
-  ./crx-quickstart/logs.
+  Once Quickstart has been unpacked and started, log files can be found under   
+  /Users/aemdocs/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
 --------------------------------------------------------------------------------
-
 ```
 
 ## Installing AEM in the Amazon EC2 environment {#installing-aem-in-the-amazon-ec-environment}

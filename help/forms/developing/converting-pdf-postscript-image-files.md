@@ -56,7 +56,7 @@ Include the necessary files into your development project. If you are creating a
 
 Before you can programmatically perform a Convert PDF service operation, you must create a Convert PDF service client. If you are using the Java API, create a `ConvertPdfServiceClient` object. If you are using the web service API, create a `ConvertPDFServiceService` object.
 
-This section uses web service functionality that is introduced in AEM Forms. To access new functionality, you have to construct your proxy object using the `lc_version` attribute. (See “Accessing new functionality using web services” in [Invoking AEM Forms using Web Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+This section uses web service functionality that is introduced in AEM Forms. To access new functionality, you have to construct your proxy object using the `lc_version` attribute. (See "Accessing new functionality using web services" in [Invoking AEM Forms using Web Services](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 **Reference the PDF document to convert to a PostScript file**
 

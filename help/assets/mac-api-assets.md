@@ -8,6 +8,12 @@ exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 ---
 # [!DNL Assets] HTTP API {#assets-http-api}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en)                  |
+| AEM 6.5     | This article         |
+| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=en)           |
+
 ## Overview {#overview}
 
 The [!DNL Assets] HTTP API allows for create-read-update-delete (CRUD) operations on digital assets, including on metadata, on renditions, and on comments, together with structured content using [!DNL Experience Manager] Content Fragments. It is exposed at `/api/assets` and is implemented as REST API. It includes [support for Content Fragments](/help/assets/assets-api-content-fragments.md).
@@ -277,7 +283,7 @@ Moves a folder or asset at the given path to a new destination.
 Do not use `/content/dam` in the URL. A sample command to move assets and overwriting existing ones is:
 
 ```shell
-curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: http://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
+curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: https://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
 ```
 
 **Response codes**: The response codes are:

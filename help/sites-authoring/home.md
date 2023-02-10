@@ -1,17 +1,17 @@
 ---
 title: AEM 6.5 Authoring User Guide
 seo-title: AEM 6.5 Authoring User Guide
-description: This guide explains the concepts of authoring in AEM.
+description: Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates and other page features.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 ---
 # AEM 6.5 Authoring User Guide
 
-This guide explains the concepts of authoring in AEM. 
+Explore the key concepts of creating content and authoring in AEM 6.5. You will also find information around using tags, templates, and other page features. 
 
 ## Key AEM articles
 
-* [Getting Started with AEM](https://helpx.adobe.com/experience-manager/get-started.html)
+* [Getting Started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
 * [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
@@ -27,21 +27,21 @@ This guide explains the concepts of authoring in AEM.
 | [Administering Guide](/help/sites-administering/home.md) | Understand how to administer AEM |
 | [Authoring Guide](/help/sites-authoring/home.md) | This guide explains the concepts of authoring in AEM. |
 | [Classic UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | This guide explains the concepts of authoring in AEM in the classic user interface. |
-| [Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Learn about the digital signage solution to publish dynamic and interactive digital experiences. |
+| [Screens User Guide](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | Learn about the digital signage solution to publish dynamic and interactive digital experiences. |
 | [Deploying User Guide](/help/sites-deploying/home.md) | This guide shows you the basics of AEM.  |
 | [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your AEM instance. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an AEM project successfully. |
 | [Commerce User Guide](/help/commerce/home.md)|Learn about Commerce Integration Framework on AEM.|
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
-| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | This guide shows you how to share user-generated content with Livefyre. |
+| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | This guide shows you how to share user-generated content with Livefyre. |
 
 ## Key AEM resources
 
 * [AEM tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Dispatcher User Guide](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL User Guide](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [Core Components User Guide](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [Dispatcher User Guide](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+* [HTL User Guide](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Core Components User Guide](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR Readiness](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
 * [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)

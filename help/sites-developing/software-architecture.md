@@ -23,7 +23,7 @@ This will allow for the site to maintain a more consistent look and feel and sim
 
 ### Design template designs {#design-template-designs}
 
-By defining which components can be included in each parsys on the page, the consistency of the look/feel of the site can be controlled. By restricting access to the design on pages, “super authors” can be allowed to modify the allowed components per page without developer intervention while ensuring that the other authors follow the corporate standards.
+By defining which components can be included in each parsys on the page, the consistency of the look/feel of the site can be controlled. By restricting access to the design on pages, "super authors" can be allowed to modify the allowed components per page without developer intervention while ensuring that the other authors follow the corporate standards.
 
 ### Develop a SOLID architecture {#develop-a-solid-architecture}
 

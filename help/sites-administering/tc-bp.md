@@ -23,7 +23,7 @@ Creating or expanding a global web presence can be a complex process, but with g
     * Assess the current state of your organization’s localization maturity. Determine whether you have the **tools**, **processes** and **resources** in place to support global expansion.
     * Be aware of **global regulations** and **regional language preferences**. Design flexible content structures and processes that can accommodate a changing global business environment.
 
-* Determine a **governance** model that supports your global business and use AEM mechanisms like MSM and user permissions to enforce your chosen model. For example, determine if content will be centrally authored and “pushed” or “pulled” to regions/countries. Determine what content can be unlocked and altered in the geographies. Determine who is responsible for initiating and managing translations.
+* Determine a **governance** model that supports your global business and use AEM mechanisms like MSM and user permissions to enforce your chosen model. For example, determine if content will be centrally authored and "pushed" or "pulled" to regions/countries. Determine what content can be unlocked and altered in the geographies. Determine who is responsible for initiating and managing translations.
 * If resources allow, it is best to manage translation activity from a central team who can develop expertise in the necessary tools, processes and vendor relationships.
 * **Plan**, **prototype** and **test** your global structure and processes to ensure that they support the business and that you have the required support from stakeholders in the geographies.
 

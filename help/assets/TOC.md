@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager 6.5, Experience Manager Assets
+solution: Experience Manager, Experience Manager Assets
 audience: end-user
 user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
@@ -50,11 +50,13 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Dynamic Media Video Profiles](video-profiles.md)
   + [Dynamic Media Image Profiles](image-profiles.md)
   + [Smart Imaging](imaging-faq.md)
+  + [Smart Imaging with client-side Device Pixel Ratio](client-side-dpr.md)
   + [Video](s7-video.md)
   + [HTTP2 delivery of content](http2.md)
   + [Deliver Dynamic Media assets](delivering-dynamic-media-assets.md)
   + [Activate hotlink protection in Dynamic Media](hotlink-protection.md)
   + [3D Support](/help/assets/assets-3d.md)
+  + [Dynamic Media limitations](limitations.md)
   + [Image Sets](image-sets.md)
   + [Panoramic Images](panoramic-images.md)
   + [Mixed Media Sets](mixed-media-sets.md)

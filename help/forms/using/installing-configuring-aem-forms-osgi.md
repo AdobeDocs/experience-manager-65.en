@@ -99,6 +99,9 @@ Before you begin to install and configure data capture capability of AEM Forms, 
 
     * libicu
 
+* Install [Microsoft Visual Studio 2019 32-bit Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## Install AEM Forms add-on package {#install-aem-forms-add-on-package}
 
 AEM Forms add-on package is an application deployed onto AEM. The package contains AEM Forms data capture and other capabilities. Perform the following steps to install the add-on package:
@@ -109,7 +112,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
 1. Tap the package name applicable to your operating system, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
-1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
+1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
    You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
@@ -118,7 +121,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 
 ### (Windows only) Automatic installation of Visual Studio redistributables {#automatic-installation-visual-studio-redistributables}
 
-If you install an AEM instance in elevated mode, the missing Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
+If you install an AEM instance in elevated mode, the 32-bit Visual Studio redistributables are installed automatically during the installation of AEM Forms add-on package.
 
 To evaluate if the Visual Studio redistributables are installed automatically, open the `error.log` file available at the `/crx-repository/logs/` directory. The logs include the following message:
 
@@ -232,5 +235,5 @@ AEM forms integrates with Adobe Target, an Adobe Marketing Cloud solution, to de
 You have configured an environment to use AEM Forms data capture capabilities. Now, the next steps towards using the capability are:
 
 * [Create your first adaptive form](/help/forms/using/create-your-first-adaptive-form.md)
-* [Create your first PDF form](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Create your first PDF form](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
 * [Introduction to HTML5 Forms](/help/forms/using/introduction.md)

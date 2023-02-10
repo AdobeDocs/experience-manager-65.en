@@ -1,7 +1,7 @@
 ---
 title: Learn about defining Metadata and Tagging for Content Fragments
 description: Learn about defining Metadata and Tagging for Content Fragments
-exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
+exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
 ---
 # Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
 

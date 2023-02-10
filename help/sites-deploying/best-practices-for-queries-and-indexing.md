@@ -115,7 +115,7 @@ You can also extract the indexes in your system in JSON format. In order to do t
 
 **During Development**
 
-Set low thresholds for `oak.queryLimitInMemory` (eg. 10000) and oak. `queryLimitReads` (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying “The query read more than x nodes..."
+Set low thresholds for `oak.queryLimitInMemory` (eg. 10000) and oak. `queryLimitReads` (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying "The query read more than x nodes..."
 
 This helps avoiding resource intensive queries (ie. not backed by any index or backed by less covering index). For example, a query that reads 1 million nodes would lead to increased I/O, and negatively impact the overall application performance. Any query that fails due to above limits should be analyzed and optimized.
 
@@ -170,7 +170,7 @@ Solr indexes can be configured to run embedded on the AEM server for development
 
 >[!NOTE]
 >
->While taking the integrated Solr search approach would allow for offloading of indexing to a Solr server. If the more advanced features of the Solr server are used through a crawler based approach, additional configuration work will be required. Headwire has created an [open source connector](https://www.aemsolrsearch.com/#/) to accelerate these types of implementations.
+>While taking the integrated Solr search approach would allow for offloading of indexing to a Solr server. If the more advanced features of the Solr server are used through a crawler based approach, additional configuration work will be required.
 
 The downside to taking this approach is that while by default, AEM queries will respect ACLs and thus hide results that a user does not have access to, externalizing search to a Solr server will not support this feature. If search is to be externalized in this way, extra care must be taken to ensure that users are not presented with results that they should not see.
 
@@ -209,7 +209,7 @@ When removing an index on a MongoDB instance, the cost of deletion is proportion
 
 ### The JCR Query Cheat Sheet {#jcrquerycheatsheet}
 
-To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](assets/JCR_query_cheatsheet-v1.0.pdf) is available for download and use as a reference during development. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
+To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](assets/JCR_query_cheatsheet-v1.1.pdf) is available for download and use as a reference during development. It contains sample queries for QueryBuilder, XPath and SQL-2, covering multiple scenarios which behave differently in terms of query performance. It also provides recommendations for how to build or customize Oak indexes. The content of this Cheat Sheet applies to AEM 6.5 and AEM as a Cloud Service.
 
 ## Re-indexing {#re-indexing}
 

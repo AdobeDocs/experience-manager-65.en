@@ -79,10 +79,10 @@ Here’s an example of the inputs and resulting outputs of a Digital Publishing 
 #### Inputs: {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### Outputs {#outputs}

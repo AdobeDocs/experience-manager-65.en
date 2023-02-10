@@ -29,7 +29,6 @@ Adobe released the following extensions:
 
 * [AEM Eclipse Extension](/help/sites-developing/aem-eclipse.md)
 * [AEM Brackets Extension](/help/sites-developing/aem-brackets.md)
-* [AEM IntelliJ Extension](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) (from Headwire)
 
 ### Other Tools {#other-tools}
 

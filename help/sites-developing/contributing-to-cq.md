@@ -57,7 +57,7 @@ The way content should be modeled in a Java Content Repository requires an entir
 
 The REST approach is deeply ingrained in what we do. This means, among other things, avoiding stateful interactions and keeping in mind that URIs are definitive addresses for content and services.
 
-REST (REpresentational State Transfer) refers to the software architectural style on which the World Wide Web is based. It describes the key elements that make the Web work, and so provides a set of principles for how web-based software should be designed. When designing an API to be used over the Web, it therefore makes sense to adhere to these “best practices.”
+REST (REpresentational State Transfer) refers to the software architectural style on which the World Wide Web is based. It describes the key elements that make the Web work, and so provides a set of principles for how web-based software should be designed. When designing an API to be used over the Web, it therefore makes sense to adhere to these "best practices."
 
 Because REST provides the guiding philosophy behind so much of what we do, you should consider it essential to become well-versed in the tenets of RESTful design. A good place to start is with [Roy Fielding's dissertation](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm).
 
@@ -137,7 +137,7 @@ In essence, JCR is a system of nodes and properties, in which nodes can inherit 
 
 JCR has a number of predefined node types and property types, but in general the typing system is quite flexible, and (indeed) one of the strengths of JCR is that it allows structured as well as unstructured content to be stored/managed with equal ease. That is, JCR can accommodate highly structured data, but it can also accommodate arbitrary dynamic data structures without schema constraints.
 
-The JavaDoc for JCR's Java API is [here](http://jackrabbit.apache.org/jcr/jcr-api.html).
+The JavaDoc for JCR's Java API is [here](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Before attempting to read the JavaDoc or the JCR spec itself, you might want to look at [this high-level explanation](/help/sites-developing/the-basics.md#java-content-repository) of JCR as implemented by Adobe Experience Services.
 

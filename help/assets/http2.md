@@ -56,7 +56,7 @@ To use HTTP/2, you must meet the following requirements:
 
 You initiate the request to switch over to HTTP/2; it is not automatically done for you.
 
-1. To switch over to HTTP/2, initiate an Adobe Customer Support request. See [Access the Adobe Experience Manager Support Portal](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html).
+1. To switch over to HTTP/2, initiate an Adobe Customer Support request. See [Open a support ticket](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support).
 
     1. Provide the following information in your support request:
 

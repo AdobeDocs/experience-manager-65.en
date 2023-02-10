@@ -432,7 +432,7 @@ If you have created a template that can serve as the basis of other templates, y
 1. Create a template as you would any editable template [as documented here](/help/sites-authoring/templates.md#creating-a-new-template-template-author), which will serve as the basis of your template type.
 1. Using CRXDE Lite, copy the newly-created template from the `templates` node to the `template-types` node under the [template folder](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Delete the template from the `templates` node under the [template folder](/help/sites-developing/page-templates-editable.md#template-folders).
-1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` `jcr:content` properties.
+1. In the copy of the template that is under the `template-types` node, delete all `cq:template` and `cq:templateType` properties from all `jcr:content` nodes.
 
 You can also develop your own template type using an example editable template as a basis, available on GitHub.
 
@@ -501,7 +501,7 @@ This node holds properties for the template:
 
 * **Name**: `status`
 
-    * ``**Type**: `String`
+    * **Type**: `String`
 
     * **Value**: `draft`, `enabled` or `disabled`
 
@@ -536,7 +536,7 @@ When [editing a template you can define the layout](/help/sites-authoring/templa
 
 ### Content Policies {#content-policies}
 
-The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template). Content policies can be created and selected in the template editor.
+The content (or design) policies define the design properties of a component such as the component's availability or minimum/maximum dimensions. These are applicable to the template (and pages created with the template). Content policies can be created and selected in the template editor.
 
 * The property `cq:policy`, on the `root` node
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

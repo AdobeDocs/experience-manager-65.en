@@ -52,7 +52,7 @@ Once you have familiarized yourself with these basics, you will find in more adv
 * [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
 * [Performance Guidelines](/help/sites-deploying/performance-guidelines.md)
 * [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [What is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [What is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Basic Concepts {#basic-concepts}
 
@@ -76,7 +76,7 @@ Building on this base, AEM also offers a number of application-level features fo
 * **Communities**
 * **Online Commerce**
 
-Finally, customers can use these infrastructrue and application-level building blocks to create customized solutions by building applications of their own.
+Finally, customers can use these infrastructure and application-level building blocks to create customized solutions by building applications of their own.
 
 The AEM server is **Java-based** and runs on most operating systems that support that platform. All client interaction with AEM is done through a **web browser**.
 
@@ -121,7 +121,7 @@ With AEM Managed Services customers can realize the following benefits:
 
 **Cloud Manager**: Cloud Manager, part of the Adobe Experience Manager Managed Services offering is a self-service portal that further enables organizations to self-manage Adobe Experience Manager in the cloud. It includes a state-of-the-art continuous integration and continuous delivery (CI/CD) pipeline that lets IT teams and implementation partners speed the delivery of customizations or updates without compromising performance or security. Cloud Manager is only available for Adobe Managed Service customers.
 
-To learn more about Cloud Manger and its resources, please refer to [**Cloud Manager User Guide**](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html).
+To learn more about Cloud Manger and its resources, please refer to [**Cloud Manager User Guide**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
 
 ## Getting Started {#getting-started}
 
@@ -159,7 +159,7 @@ In the following section we describe the **standalone installation**. For detail
 
    *Note that path of the file directory must consist of only US ASCII characters.*
 
-1. Place the **jar** and **license **files in this directory:
+1. Place the **jar** and **license** files in this directory:
 
    ```shell
    <aem-install>/
@@ -171,16 +171,10 @@ In the following section we describe the **standalone installation**. For detail
 
 1. To start up the instance in a GUI environment, just double-click the **`cq-quickstart-6.5.0.jar`** file.
 
-   Alternative, you can launch AEM from the command line. For a 32-bit Java VM enter the following:
+   Alternative, you can launch AEM from the command line:
 
    ```shell
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
-   ```
-
-   For a 64-bit VM, enter:
-
-   ```shell
-       java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
 AEM will take a few minutes to unpack the jar file, install itself, and start up. The above procedure results in:
@@ -313,4 +307,4 @@ The above section should give you a good understanding of the basics of AEM inst
 * [Introduction to the AEM Platform](/help/sites-deploying/platform.md)
 * [Performance Guidelines](/help/sites-deploying/performance-guidelines.md)
 * [Getting Started with AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [What is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [What is AEM Screens?](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)

@@ -4,7 +4,7 @@ seo-title: Migration to the Touch UI
 description: Migration to the Touch UI
 seo-description: Migration to the Touch UI
 uuid: 47c43b56-532b-4ada-8503-04d66bab3564
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
@@ -131,8 +131,8 @@ You can also costomize the consoles:
 Although not directly related to a migration to the touch UI, there are related issues that are worth considering at the same time, as they are also recommended practice:
 
 * [Templates](/help/sites-developing/templates.md) - [Editable templates](/help/sites-developing/page-templates-editable.md)
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
 >
@@ -144,7 +144,7 @@ For full information on developing AEM see the collection of resources under:
 
 * [Developing User Guide](/help/sites-developing/home.md)
 * [Granite UI Documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 Sites Tutorials and Videos](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/overview.html)
+* [AEM 6.5 Sites Tutorials and Videos](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Getting Started Developing AEM Sites - WKND Tutorial](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
 * [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/)

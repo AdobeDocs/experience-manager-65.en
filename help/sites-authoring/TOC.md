@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Authoring User Guide
 breadcrumb-title: Authoring Guide
@@ -74,7 +74,6 @@ role: User
     + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
     + [Analyzing Page Performance](ci-analyze.md)
     + [Seeing Page Analytics Data](pa-using.md)
-    + [Adding Search&Promote Features To Your Page](search-and-promote.md)
 + Personalization {#personalization}
     + [Personalization](personalization.md)
     + [Previewing Pages Using ContextHub Data](ch-previewing.md)

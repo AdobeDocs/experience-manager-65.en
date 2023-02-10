@@ -95,48 +95,75 @@ This section deals with maintenance operations related to the versioning feature
 
 ### Overview {#overview}
 
-The **Purge Versions** tool is available in the **[Tools](/help/sites-administering/tools-consoles.md) console** under **Versioning** or directly at:
-
-`https://<server>:<port>/etc/versioning/purge.html`
-
-![screen_shot_2012-03-15at14418pm](assets/screen_shot_2012-03-15at14418pm.png)
-
-**Start Path** An absolute path on which the purge must be done. You can select the Start Path by clicking the repository tree navigator.
-
-**Recursive** When purging data you can choose between performing the operation on one node or on a whole hierarchy by selecting Recursive. In the last case the given path defines the root node of the hierarchy.
-
-**Maximum versions to keep** The maximum number of versions to be kept for a node. When these number exceeds this value, the oldest versions are purged.
-
-**Maximum version age** The maximum age of the version of a node. When the age of a version exceeds this value, it is purged.
-
-**Dry Run** Because removing versions of your content is definite and can not be reverted without restoring a backup, the Purge Versions tool provides a dry run mode that allows you to preview the purged versions. To launch a dry run of the purge process, click Dry Run.
-
-**Purge** Launch the purge of the versions on the node defined by the Start Path.
+The **Purge Versions** tool is available as a weekly maintenance task. Before using for the first time it needs to be added, then configured. After that it can be run on request, or on a weekly basis.
 
 ### Purging Versions of a Web Site {#purging-versions-of-a-web-site}
 
 To purge versions of a web site, proceed as follows:
 
-1. Navigate to the **[Tools](/help/sites-administering/tools-consoles.md)** **console**, select **Versioning** and double-click **Purge Versions.**
-1. Set the start path of the content to be purged (e.g. `/content/geometrixx-outdoors`).
+1. Navigate to the **[Tools](/help/sites-administering/tools-consoles.md)** **console**, select **Operation**, **Maintenance**, then **Weekly Maintenance Window**. 
 
-    * If you want to only purge the node defined by your path, unselect **Recursive**.
-    * If you want to purge the node defined by your path and its descendants select **Recursive**.
+1. Select **+ Add** from the top toolbar.
 
-1. Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+   ![Add Version Purge](assets/version-purge-add.png)
 
-1. Set the maximun version age in days (for each node) that you want to keep. Leave empty to not use this setting.
+1. Select **Version Purge** from the drop down list in the **Add New Task** dialog. Then **Save**.
 
-1. Click **Dry Run** to preview what the purge process would do.
-1. Click **Purge** to launch the process.
+   ![Add Version Purge](assets/version-purge-add-new-task.png)
+
+1. The **Version Purge** task will be added. Use the card actions to:
+   * Select - will reveal additional actions in the top toolbar
+   * Run - to run the configured purge immediately
+   * Configure - to configure the weekly purge task
+
+   ![Version Purge Actions](assets/version-purge-actions.png)
+
+1. Select the **Configure** action to open the Web Console for **Day CQ WCM Version Purge Task**, where you can configure:
+
+   ![Version Purge Configuration](assets/version-purge-configuration.png)
+
+    * **Purge paths**
+      Set the start path of the content to be purged; for example, `/content/wknd`.
+
+      >[!CAUTION]
+      >
+      >It is strongly recommended that you define multiple paths, for each of your websites.
+      >
+      >Defining a path with too many children can significantly lengthen the time needed to perform the purge.
+
+    * **Purge versions recursively**
+
+      * Unselect if you want to only purge the node defined by your path.
+      * Select if you want to purge the node defined by your path and its descendants.
+
+    * **Maximum number of versions**
+      Set the maximum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+
+    * **Minimum number of versions**
+      Set the minimum number of versions (for each node) that you want to keep. Leave empty to not use this setting.
+
+    * **Maximum version age**
+      Set the maximum version age in days (for each node) that you want to keep. Leave empty to not use this setting.
+
+   Then **Save**.
+
+1. Navigate/return to the **Weekly Maintenance Window** window and select **Run** to launch the process immediately.
 
 >[!CAUTION]
 >
+>You can use the Classic UI dialog to perform a [Dry Run](#analyzing-the-console) of your configuration:
+>
+>* http://localhost:4502/etc/versioning/purge.html
+>
 >Purged nodes can not be reverted without restoring the repository. You should take care of your configuration, so we recommend you to always perform a dry run before purging.
 
-### Analyzing the Console {#analyzing-the-console}
+#### Dry Run - Analyzing the Console {#analyzing-the-console}
 
-The **Dry Run** and **Purge** processes list all the nodes that have been processed. During the process, a node can have one of the following status:
+The classic UI provides a **Dry Run** option from:
+
+* http://localhost:4502/etc/versioning/purge.html
+
+The process lists all the nodes that have been processed. During the process, a node can have one of the following status:
 
 * `ignore (not versionnable)`: the node does not support versioning and is ignored during the process.
 
@@ -148,7 +175,7 @@ The **Dry Run** and **Purge** processes list all the nodes that have been proces
 Moreover the console provides useful information about the versions:
 
 * `V 1.0`: the version number.
-* `V 1.0.1`&#42;: the star indicates that the version is the current one.
+* `V 1.0.1`&#42;: the star indicates that the version is the current (base) version and cannot be purged.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100`: the date of the version.
 
@@ -418,11 +445,12 @@ In certain circumstances you may want to create a custom log file with a differe
    >| `'.'yyyy-MM-dd-HH-mm` |Rotation at the beginning of every minute. |
    >
    >Note: When specifying a time/date:
-   > 1. You should "escape" literal text within a pair of single quotes (' ');
    >
-   >     this is to avoid certain characters being interpreted as pattern letters.
+   >1. You should "escape" literal text within a pair of single quotes (' ');
    >
-   >  1. Only use characters allowed for a valid file name anywhere in the option.
+   >    this is to avoid certain characters being interpreted as pattern letters.
+   >
+   >1. Only use characters allowed for a valid file name anywhere in the option.
 
 1. Read your new log file with your chosen tool.
 
@@ -578,12 +606,12 @@ Some of these will be dependent on your operating system.
   <tr>
    <td>Thread dumps</td>
    <td>Observe JVM threads. Identify contentions, locks and long-runners.</td>
-   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>Dependent on the operating system:<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (console mode): Ctrl-Break<br /> </p> <p>Analysis tools are also available, such as <a href="https://github.com/irockel/tda">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Heap Dumps</td>
    <td>Out of Memory issues that cause slow performance.</td>
-   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>See the <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Troubleshooting Guide for Java SE 6 with HotSpot VM</a>.</p> </td>
+   <td><p>Add the:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> option to the java call to AEM.</p> <p>See the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">Options/Flags for JVM Troubleshooting Page</a>.</p> </td>
   </tr>
   <tr>
    <td>System calls</td>
@@ -593,7 +621,7 @@ Some of these will be dependent on your operating system.
   <tr>
    <td>Apache Bench</td>
    <td>Identify memory leaks, selectively analyze response time.</td>
-   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">ab man page</a> for full details.</p> </td>
+   <td><p>basic usage is:</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>See <a href="#apache-bench">Apache Bench</a> and the <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">ab man page</a> for full details.</p> </td>
   </tr>
   <tr>
    <td>Search Analysis</td>
@@ -603,7 +631,7 @@ Some of these will be dependent on your operating system.
   <tr>
    <td>JMeter</td>
    <td>Load and functional tests.</td>
-   <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td>
+   <td><a href="https://jmeter.apache.org/">https://jmeter.apache.org/</a></td>
   </tr>
   <tr>
    <td>JProfiler</td>
@@ -611,14 +639,19 @@ Some of these will be dependent on your operating system.
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
+   <td>Java Flight Recorder</td>
+   <td>Java Flight Recorder (JFR) is a tool for collecting diagnostic and profiling data about a running Java application.</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE</a></td>
+  </tr>
+  <tr>
    <td>JConsole</td>
    <td>Observe JVM metrics and threads.</td>
-   <td><p>Usage: jconsole</p> <p>See <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a> and <a href="#monitoring-performance-using-jconsole">Monitoring Performance using JConsole</a>.</p> <p><strong>Note:</strong> With JDK 1.6, JConsole is extensible with plug-ins; for example, Top or TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Usage: jconsole</p> <p>See <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> and <a href="#monitoring-performance-using-jconsole">Monitoring Performance using JConsole</a>.</p> <p><strong>Note:</strong> With JDK 1.8, JConsole is extensible with plug-ins; for example, Top or TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>Observe JVM metrics, threads, memory and profiling.</td>
-   <td><p>Usage: jvisualvm or visualvm<br /> </p> <p>See <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.dev.java.net/">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.6, VisualVM is extensible with plug-ins.</p> </td>
+   <td><p>Usage: visualvm or visualvm<br /> </p> <p>See <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> and <a href="#monitoring-performance-using-j-visualvm">Monitoring Performance using (J)VisualVM</a>.</p> <p><strong>Note:</strong> With JDK 1.8, VisualVM is extensible with plug-ins. VisualVM is discontinued after JDK 9. Use the Java Flight Recorder instead.</p> </td>
   </tr>
   <tr>
    <td>truss/strace, lsof</td>
@@ -633,7 +666,7 @@ Some of these will be dependent on your operating system.
   <tr>
    <td>CPU and memory profiling tool<br /> </td>
    <td><a href="#interpreting-the-request-log">Used when analyzing slow requests during development</a>.</td>
-   <td>For example, <a href="https://www.yourkit.com/">YourKit</a>.</td>
+   <td>For example, <a href="https://www.yourkit.com/">YourKit</a>. or the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Java Flight Recorder</a>.</td>
   </tr>
   <tr>
    <td><a href="#information-collection">Information Collection</a></td>
@@ -645,7 +678,7 @@ Some of these will be dependent on your operating system.
 
 ### Interpreting the request.log {#interpreting-the-request-log}
 
-This file registers basic information about every request made to AEM. From this valuable conclusions can be extracted.
+This file registers basic information about every request made to AEM. From this, valuable conclusions can be extracted.
 
 The `request.log` offers a built-in way to get a look at how long requests take. For development purposes it is useful to `tail -f` the `request.log` and watch for slow response times. To analyze a bigger `request.log` we recommend the [use of `rlog.jar` which allows you to sort and filter for response times](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -660,7 +693,7 @@ The request log registers each request made, together with the response made:
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-By totaling all the GET entries within a specific periods (e.g. over various 24 hour periods) you can make statements about the average traffic on your website.
+By totaling all the GET entries within specific periods (e.g. over various 24 hour periods) you can make statements about the average traffic on your website.
 
 #### Monitoring response times with the request.log {#monitoring-response-times-with-the-request-log}
 
@@ -690,7 +723,7 @@ This log has one line per request or response:
 
 * For responses, the line contains:
 
-    * the status code (200 means “success”, 404 means “page not found”
+    * the status code (200 means "success", 404 means "page not found"
     * the MIME type
     * the response time
 
@@ -779,7 +812,7 @@ You may need to concatenate the individual `request.log` files if you need to do
 
 ### Apache Bench {#apache-bench}
 
-To minimize the impact of special cases (such as garbage collection, etc), it is recommended to use a tool such as `apachebench` (see for example, [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) for further documentation) to help identify memory leaks and selectively analyze response time.
+To minimize the impact of special cases (such as garbage collection, etc), it is recommended to use a tool such as `apachebench` (see for example, [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) for further documentation) to help identify memory leaks and selectively analyze response time.
 
 Apache Bench can be used in the following way:
 
@@ -891,7 +924,7 @@ The tool command `jconsole` is available with the JDK.
 
 ### Monitoring Performance using (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
-Since JDK 1.6, the tool command `jvisualvm` is available. After you have installed JDK 1.6 you can:
+For JDK 6-8, the tool command `visualvm` is available. After you have installed a JDK you can:
 
 1. Start your AEM instance.
 
@@ -902,7 +935,7 @@ Since JDK 1.6, the tool command `jvisualvm` is available. After you have install
 1. Run either:
 
     * `jvisualvm`: in the JDK 1.6 bin folder (tested version)
-    * `visualvm`: can be downloaded from [VisualVM](https://visualvm.dev.java.net/) (bleeding edge version)
+    * `visualvm`: can be downloaded from [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (bleeding edge version)
 
 1. From within the `Local` application, double-click `com.day.crx.quickstart.Main`; the Overview will be shown as default:
 
@@ -1154,7 +1187,7 @@ Or JConsole:
   ```
 
 * Then connect to the JVM with the JConsole; see:
-  ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
+  ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
 This will help you see how much memory is being used, what GC algorithms are being used, how long they take to run, and what effect this has on your application performance. Without this, tuning is just "randomly twiddling knobs".
 
@@ -1162,4 +1195,4 @@ This will help you see how much memory is being used, what GC algorithms are bei
 >
 >For Oracle's VM there is also information at:
 >
->[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

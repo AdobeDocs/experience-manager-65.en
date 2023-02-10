@@ -156,7 +156,7 @@ You can apply the same approach used in the three examples above to the demo web
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
-The demo web page has several product thumbnails, each having a Quickview button labeled “See More”. With your web browser's debugging tool still activated, select each button and note the recorded Quickview URLs. After you activate all four product Quickview's that are available on the page, you have the following list of Quickview requests made to the backend:
+The demo web page has several product thumbnails, each having a Quickview button labeled "See More". With your web browser's debugging tool still activated, select each button and note the recorded Quickview URLs. After you activate all four product Quickview's that are available on the page, you have the following list of Quickview requests made to the backend:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`

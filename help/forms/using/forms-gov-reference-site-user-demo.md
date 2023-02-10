@@ -194,8 +194,8 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
    >
    >If the user earns more than $200,000/yr, they aren’t eligible.  
 
-1. Click the “**Am I Eligible?**” button.
-1. Click the “**Apply Now**” button to proceed.
+1. Click the "**Am I Eligible?**" button.
+1. Click the "**Apply Now**" button to proceed.
 
    ![Apply Now link](/help/forms/using/assets/apply_now_link.png)
 
@@ -240,8 +240,8 @@ Aya needs to review some documents at home before she can complete the service r
 **User Instructions:**
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
-1. From the navigation bar, select click on “**Online Services**”.
-1. From the “Draft Forms” panel, select the existing “Enrollment Application For Health Benefits".
+1. From the navigation bar, select click on "**Online Services**".
+1. From the "Draft Forms" panel, select the existing "Enrollment Application For Health Benefits".
 
    ![Enrollment Application for Health Benefits](/help/forms/using/assets/enrollment_application.png)
 
@@ -274,8 +274,8 @@ Aya needs to review some documents at home before she can complete the service r
 
 **User Instructions:**
 
-1. Check the “**I agree**” box.
-1. Click “**Accept**”.
+1. Check the "**I agree**" box.
+1. Click "**Accept**".
 1. Scroll to the bottom of the reviewed document.
 1. Click on the highlighted yellow tab to sign the document.
 
@@ -292,7 +292,7 @@ Aya needs to review some documents at home before she can complete the service r
 **User Instructions:**
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
-1. Click on the user icon (top right-hand corner) and use the “**Sign Out**”, or the “**Impersonate as**” menu option if you are currently logged in with an administrative user.
+1. Click on the user icon (top right-hand corner) and use the "**Sign Out**", or the "**Impersonate as**" menu option if you are currently logged in with an administrative user.
 
     1. Login with:
 
@@ -301,13 +301,13 @@ Aya needs to review some documents at home before she can complete the service r
 
     1. Or Impersonate:
 
-        1. Type “**George**” in the “**Impersonate as**” field.
+        1. Type "**George**" in the "**Impersonate as**" field.
 
         1. Click okay to impersonate.
 
 1. From the top right corner, click the Notification (bell) Icon.
-1. Click “**View All**” to navigate to the Inbox.
-1. From the Inbox, open the latest “**Health Benefits Application Review**” task.
+1. Click "**View All**" to navigate to the Inbox.
+1. From the Inbox, open the latest "**Health Benefits Application Review**" task.
 
    ![Health Benefits Application Review](/help/forms/using/assets/health_benefits.png)
 
@@ -318,7 +318,7 @@ Thanks to data integrations and automated workflows, Aya’s application appears
 **User Instructions:**
 
 1. Open and inspect the read-only adaptive form.
-1. Click on the “**Open MS Dynamics**” button to open the MS Dynamics record in a new window.
+1. Click on the "**Open MS Dynamics**" button to open the MS Dynamics record in a new window.
 1. In the CRM you can see all information can be updated
 
     1. Optionally, add some review notes directly in Dynamics.
@@ -333,7 +333,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 **User Instructions:**
 
-1. Navigate to the top left corner and click “**Approve**” to approve the application.
+1. Navigate to the top left corner and click "**Approve**" to approve the application.
 1. In the modal, you can leave a message for the CX lead.
 1. Click Done.
 1. (Citizen role) Open up your email client to view the email sent to Aya.
@@ -351,7 +351,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 **User Instructions:**
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
-1. Click on the user icon (top right-hand corner) and use the “**Sign Out**”, or the “**Impersonate as**” menu option if you are currently logged in with an administrative user.
+1. Click on the user icon (top right-hand corner) and use the "**Sign Out**", or the "**Impersonate as**" menu option if you are currently logged in with an administrative user.
 
     1. Login with:
 
@@ -360,29 +360,29 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
     1. Or Impersonate:
 
-        1. Type “**Camila**” in the “**Impersonate as**” field.
+        1. Type "**Camila**" in the "**Impersonate as**" field.
 
         1. Click okay to impersonate.
 
 1. From the top right corner, click the Notification (bell) icon.
-1. Click “**View All**” to navigate to the Inbox.
-1. From the Inbox, open the latest “**New Contact Approval**” task.
+1. Click "**View All**" to navigate to the Inbox.
+1. From the Inbox, open the latest "**New Contact Approval**" task.
 
 ![New Contact Approval](/help/forms/using/assets/new_contact_approval.png)
 
    **(Optional) User Instructions:**
 
 1. Open and inspect the read-only adaptive form.
-1. Click on the “**Open MS Dynamics**” button to open the MS Dynamics record in a new window.
+1. Click on the "**Open MS Dynamics**" button to open the MS Dynamics record in a new window.
 1. In the CRM you can see all information can be updated
 
     1. Optionally, add a new call activity directly in Dynamics.
-    1. Open the “**Activities**” section.
-    1. Click on the “**New Phone Call**” option.
+    1. Open the "**Activities**" section.
+    1. Click on the "**New Phone Call**" option.
     1. Add phone call details.
     1. Save and close the window.
 
-1. Back in AEM, navigate to the top left corner and click “**Submit**” to submit the application.
+1. Back in AEM, navigate to the top left corner and click "**Submit**" to submit the application.
 1. In the modal, you can leave a message.
 1. Click Done.
 
@@ -399,7 +399,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. Locate and open the Welcome Kit email.
 1. Scroll to PDF attachment at the bottom of the page.
 1. Click to open the PDF attachment.
-1. Scroll back up in your email client and click on “**View welcome kit online**”.
+1. Scroll back up in your email client and click on "**View welcome kit online**".
 
     1. This will open the web channel version of the same document.
 
@@ -423,7 +423,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 1. Navigate to your email client.
 1. Locate and open the Renewal Reminder email.
-1. Click on the “**Submit a new application**” button to open the adaptive form.
+1. Click on the "**Submit a new application**" button to open the adaptive form.
 
     1. This section is intentionally left empty to support data pre-fill in phase 2.
 
@@ -480,8 +480,8 @@ George approves Aya’s application, and thanks to an existing automated workflo
 ### Adobe Analytics Sites Reporting (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
-1. Select the “**AEM Forms We.Gov Site**” to view the site pages.
-1. Select one of the site page (e.g. Home), and choose “**Analytics & Recommendations**”.
+1. Select the "**AEM Forms We.Gov Site**" to view the site pages.
+1. Select one of the site page (e.g. Home), and choose "**Analytics & Recommendations**".
 
    ![Analytics and Recommendation](/help/forms/using/assets/analytics_recommendation.jpg)
 
@@ -489,16 +489,16 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    ![Adobe Analytics key metrics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. Back on the page view page (accessed in step 3.), you can also view the page view information by changing the display setting to view items in the “**List View**”.
-1. Locate the “**View**” dropdown menu and select “**List View**”.
+1. Back on the page view page (accessed in step 3.), you can also view the page view information by changing the display setting to view items in the "**List View**".
+1. Locate the "**View**" dropdown menu and select "**List View**".
 
    ![List view in View drop-down menu](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. From the same menu, select “**View Setting**” and select the columns you wish to display from the “**Analytics**” section.
+1. From the same menu, select "**View Setting**" and select the columns you wish to display from the "**Analytics**" section.
 
    ![Configure the display of columns](/help/forms/using/assets/view_setting_analytics.jpg)
 
-1. Click “**Update**” to make the new columns available.
+1. Click "**Update**" to make the new columns available.
 
    ![Make new columns available](/help/forms/using/assets/new_columns_available.jpg)
 
@@ -508,7 +508,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Select the “**Enrollment Application For Health Benefits**” adaptive form and select the “**Analytics Report**” option.
+1. Select the "**Enrollment Application For Health Benefits**" adaptive form and select the "**Analytics Report**" option.
 
    ![Enrollment Application for Health Benefits](/help/forms/using/assets/analytics_report_benefits.jpg)
 

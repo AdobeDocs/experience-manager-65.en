@@ -146,6 +146,12 @@ curl -u <user>:<password> -F cmd=delete http://localhost:4502/crx/packmgr/servic
 curl -u <user>:<password> http://localhost:4502/etc/packages/my_packages/test.zip
 ```
 
+#### Replicate a Package {#replicate-a-package}
+
+```shell
+curl -u <user>:<password> -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/my_packages/test.zip?cmd=replicate
+```
+
 ### User Management {#user-management}
 
 #### Create a New User {#create-a-new-user}

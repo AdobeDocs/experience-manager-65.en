@@ -127,9 +127,21 @@ For more information about the Forms Portal and submit action, see [Drafts and s
 
 ## Invoke an AEM Workflow {#invoke-an-aem-workflow}
 
-The **Invoke an AEM Workflow** submit action associates an adaptive form with an AEM Workflow. When a form is submitted, the associated workflow starts automatically on the processing node. Moreover, it places data file, attachments, and document of Record, if applicable, at the payload location of the workflow.
+The **[!UICONTROL Invoke an AEM Workflow]** Submit Action associates an Adaptive Form with an [AEM Workflow](/help/sites-developing/workflows-models.md). When a form is submitted, the associated workflow starts automatically on the Author instance. You can save the data file, attachments, and Document of Record to the folder relative or under the payload of the workflow or to a variable. If the workflow is marked for external data storage then the variable option is available and not the payload option. You can select from the list of variables available for the workflow model. If the workflow is marked for external data storage at a later stage and not at the time of workflow creation, then ensure that the required variable configurations are in place.
 
 Before using the **Invoke an AEM Workflow** submit action, [configure the Experience Manager DS settings](../../forms/using/configuring-the-processing-server-url-.md). For information about creating an AEM Workflow, see [Form-centric workflows on OSGi](../../forms/using/aem-forms-workflow.md).
+
+The Submit Action places the following at the payload location of the workflow. However, note that only the Variable option is displayed if the workflow model is marked for external data storage, and not the payload option.
+
+* **Data file**: It contains data submitted to the Adaptive Form. You can use the **[!UICONTROL Data File Path]** option to specify the name of the file and path of file relative to the payload. For example, the `/addresschange/data.xml` path creates a folder named `addresschange` and places it relative to payload. You can also specify only `data.xml` to send only submitted data without creating a folder hierarchy. Use the variable option and select the variable from the list of variables available for the workflow model.
+
+>[!NOTE]
+>
+>Variables can be used whether workflow model is marked for external data storage or not.
+
+* **Attachments**: You can use the **[!UICONTROL Attachment Path]** option to specify the folder name to store the attachments uploaded to the Adaptive Form. The folder is created relative to the payload. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
+
+* **Document of Record**: It contains the Document of Record generated for the Adaptive Form. You can use the **[!UICONTROL Document of Record Path]** option to specify the name of the Document of Record file and path of file relative to the payload. For example, the `/addresschange/DoR.pdf` path creates a folder named `addresschange` relative to the payload and places the `DoR.pdf` relative to payload. You can also specify only `DoR.pdf` to save only Document of Record without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
 
 ## Server-Side Revalidation in Adaptive Form {#server-side-revalidation-in-adaptive-form}
 
@@ -157,7 +169,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 >[!NOTE]
 >
-> Server-side validation validates the form model. It is recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
+>Server-side validation validates the form model. It is recommended to create a separate client library for validations and not mix it with other things like HTML styling and DOM manipulation in the same client library.
 
 ### Supporting Custom functions in Validation Expressions {#supporting-custom-functions-in-validation-expressions-br}
 

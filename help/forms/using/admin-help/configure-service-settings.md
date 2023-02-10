@@ -22,7 +22,7 @@ You can use the Service Management page to configure settings for each of the se
 
    >[!NOTE]
    >
-   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See “Configuration parameters” in the [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) 
+   >Not all of the services listed on the Service Management page have a Configuration tab. For processes that you have created, the Configuration tab appears only if you have added a configuration parameter to the process in Workbench. (See "Configuration parameters" in the [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) .) 
 
 
 1. Click the Security tab and set the security settings for the service. See [Modifying security settings for a service](configure-service-settings.md#modifying-security-settings-for-a-service).
@@ -117,7 +117,7 @@ The following settings are available for the Convert PDF service.
 
 **Transaction Time Out (in sec):** The number of seconds that the underlying transaction provider should wait before rolling back a transaction that is wrapping this operation. This value will be ignored if an existing transaction context is propagated. The default value is 180.
 
-**Threshold Resolution For Smoothing (in dpi):** The image resolution below which smoothing (or anti-aliasing) is applied to text, line art and images, if you have selected the “Apply smoothing to” options for those elements.
+**Threshold Resolution For Smoothing (in dpi):** The image resolution below which smoothing (or anti-aliasing) is applied to text, line art and images, if you have selected the "Apply smoothing to" options for those elements.
 
 **Apply smoothing to text:** Controls anti-aliasing of text. To disable smoothing of text and make text sharper and easier to read with a screen magnifier, clear this checkbox.
 

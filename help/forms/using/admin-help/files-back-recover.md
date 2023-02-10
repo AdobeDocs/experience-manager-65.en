@@ -50,7 +50,7 @@ The location of the GDS may be changed during a recovery if the original locatio
 
 You can enable AEM forms document storage in the AEM forms database using the administration console. Even though this option keeps all persistent documents in the database, AEM forms still requires the file system-based GDS directory because it is used to store permanent and temporary files and resources related to sessions and invocations of AEM forms.
 
-When you select the “Enable document storage in the database” option in the Core System Settings in the administration console or by using Configuration Manager, AEM forms does not allow snapshot backup mode and rolling backup mode. Therefore, you do not need to manage backup modes using AEM forms. If you use this option, you should back up the GDS only once after enabling the option. When you recover AEM forms from a backup, you do not need to rename the backup directory for the GDS or restore GDS.
+When you select the "Enable document storage in the database" option in the Core System Settings in the administration console or by using Configuration Manager, AEM forms does not allow snapshot backup mode and rolling backup mode. Therefore, you do not need to manage backup modes using AEM forms. If you use this option, you should back up the GDS only once after enabling the option. When you recover AEM forms from a backup, you do not need to rename the backup directory for the GDS or restore GDS.
 
 ## AEM repository {#aem-repository}
 

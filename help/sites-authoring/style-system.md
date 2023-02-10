@@ -57,7 +57,7 @@ The following diagram illustrates the architecture of the Style System.
 
 ## Use {#use}
 
-To demonstrate the feature, we will use [WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)'s implementation of the core component's [title component](https://www.adobe.com/go/aem_cmp_title_v2) as an example.
+To demonstrate the feature, we will use [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)'s implementation of the core component's [title component](https://www.adobe.com/go/aem_cmp_title_v2) as an example.
 
 The following sections [As a Content Author](#as-a-content-author) and [As a Template Author](#as-a-template-author) describe how to test the functionality of the Style System using the Style System of WKND.
 

@@ -48,7 +48,7 @@ You can use Document Security SDK, Adobe Acrobat, Document Security Extension fo
   
   The Document Security SDK is available for both Java and C++. Java SDK is included in AEM Forms Document Security offering and it is installed on deploying AEM forms on JEE. You can contact [AEM support team](https://helpx.adobe.com/marketing-cloud/contact-support.html) to procure C++ SDK. The C++ SDK can be compiled with Microsoft Visual Studio 2013. You can visit [Document Security API documentation](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) site to learn and use features the SDK.
 
-* **Adobe Acrobat:** You can use Adobe Acrobat to apply security policy to PDF documents createdusing popular desktop applications, such as Microsoft Office, web browsers, or any application that supports printing in PDF format.  
+* **Adobe Acrobat:** You can use Adobe Acrobat to apply security policy to PDF documents created using popular desktop applications, such as Microsoft Office, web browsers, or any application that supports printing in PDF format.  
   
   You can purchase and download Adobe Acrobat from [Adobe Website](https://acrobat.adobe.com/us/en/free-trial-download.html). Adobe Acrobat article [setting up security policies for PDFs](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html) provides detailed information about creating and applying policies in Adobe Acrobat.
 

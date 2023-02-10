@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Classic UI Authoring User Guide
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
@@ -43,7 +43,6 @@ role:  User
     + [Using Tags](classic-feature-tags.md)
     + [Scaffolding](classic-feature-scaffolding.md)
     + [Configuring Components in Design Mode](classic-page-author-design-mode.md)
-    + [Adding Search&Promote Features To Your Page](classic-feature-search-promote.md)
     + [Components](classic-page-author-default-components.md)
 + Workflows {#workflows}
     + [Participating in Workflows](classic-workflows-participating.md)

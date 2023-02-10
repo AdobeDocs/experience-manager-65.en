@@ -95,19 +95,19 @@ To interact with forms framework, a widget triggers some events to enable the fo
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>This event is triggered whenever the field is in focus. It allows the “enter” script to run on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>This event is triggered whenever the field is in focus. It allows the "enter" script to run on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>This event is triggered whenever the user leaves the field. It allows the engine to set the value of the field and run its “exit” script. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>This event is triggered whenever the user leaves the field. It allows the engine to set the value of the field and run its "exit" script. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>This event is triggered to allow the engine to run the “change” script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>This event is triggered to allow the engine to run the "change" script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>This event is triggered whenever the field is clicked. it allows the engine to run the “click” script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>This event is triggered whenever the field is clicked. it allows the engine to run the "click" script written on the field. The syntax for triggering the event is<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -131,7 +131,7 @@ The appearance framework calls some functions of the widget which are implemente
    <td>Puts focus on the field and calls XFA_CLICK_EVENT.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string (“warning”/”error”)</em></p> <p><strong>Note</strong>: Applicable only for HTML5 forms.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>erorrMessage: string </em>representing the error<br /> <em>errorType: string ("warning"/"error")</em></p> <p><strong>Note</strong>: Applicable only for HTML5 forms.</p> </td>
    <td>Sends error message and error type to the widget. The widget displays the error.</td>
   </tr>
   <tr>

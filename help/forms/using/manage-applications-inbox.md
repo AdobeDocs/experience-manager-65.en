@@ -145,8 +145,8 @@ A workflow model owner is unable to view items related to AEM Workflow in AEM in
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ``` 
 
-1. [Create a Property Index and set it to true](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index). 
+1. [Create a Property Index and set it to true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index). 
 
 1. After configuring indices in CRX DE or deploying via a package, [re-index the repository](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 
-https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html

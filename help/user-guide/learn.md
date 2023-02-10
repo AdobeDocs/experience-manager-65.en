@@ -9,7 +9,7 @@ exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites is a content management system within Adeobe Experience Manager that gives you one place to create, manage, and deliver digital experiences across websites, mobile sites, and on-site screens to make them global in reach, yet personally relevant and engaging. [Learn more](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) or [dig into some of our new video feature tutorials.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites is a content management system within Adobe Experience Manager that gives you one place to create, manage, and deliver digital experiences across websites, mobile sites, and on-site screens to make them global in reach, yet personally relevant and engaging. [Learn more](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) or [dig into some of our new video feature tutorials.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -32,15 +32,15 @@ AEM Forms combine form authoring, management, and publishing along with correspo
 
 ## AEM Screens {#aem-screens}
 
-Screens is an Adobe Experience Manager capability that allows you to publish dynamic and interactive digital experiences and interactions involving different types of screens in conjunction with a comprehensive digital marketing platform.  [Learn more.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens is an Adobe Experience Manager capability that allows you to publish dynamic and interactive digital experiences and interactions involving different types of screens in conjunction with a comprehensive digital marketing platform.  [Learn more.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-Communities is an Adobe Experience Manager capability that helps you create online community experiences including forums, user groups, learning resources, and other social features that are valuable to customers, employees, and your brand. [Learn more.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+Communities is an Adobe Experience Manager capability that helps you create online community experiences including forums, user groups, learning resources, and other social features that are valuable to customers, employees, and your brand. [Learn more.](https://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre is an all-new Adobe Experience Manager capability that lets you tap into everything shared on the web to create a constant flow of fresh and high-quality content on your own sites. [Learn more](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) or [jump right into our guides.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre is an all-new Adobe Experience Manager capability that lets you tap into everything shared on the web to create a constant flow of fresh and high-quality content on your own sites. [Learn more](https://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) or [jump right into our guides.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 

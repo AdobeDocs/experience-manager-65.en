@@ -13,7 +13,7 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 ---
 # SAML 2.0 Authentication Handler{#saml-authentication-handler}
 
-AEM ships with a [SAML](http://saml.xml.org/saml-specifications) authentication handler. This handler provides support for the [SAML](http://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (Web-SSO profile) using the `HTTP POST` binding.
+AEM ships with a [SAML](https://saml.xml.org/saml-specifications) authentication handler. This handler provides support for the [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Request Protocol (Web-SSO profile) using the `HTTP POST` binding.
 
 It supports:
 
@@ -26,19 +26,17 @@ This handler stores the encrypted SAML response message in the user-node ( `user
 
 >[!NOTE]
 >
->See [a demonstration of AEM and SAML integration](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html).
->
->To read an end to end community article, click: [Integrating SAML with Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
+>See [a demonstration of AEM and SAML integration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
 
 ## Configuring The SAML 2.0 Authentication Handler {#configuring-the-saml-authentication-handler}
 
-The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the [SAML](http://saml.xml.org/saml-specifications) 2.0 Authentication Handler configuration called **Adobe Granite SAML 2.0 Authentication Handler**. The following properties can be set.
+The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to the [SAML](https://saml.xml.org/saml-specifications) 2.0 Authentication Handler configuration called **Adobe Granite SAML 2.0 Authentication Handler**. The following properties can be set.
 
 >[!NOTE]
 >
 >The SAML 2.0 Authentication Handler is disabled by default. You must set at least one of the following properties in order to enable the handler:
 >
->* The Identity Provider POST URL.
+>* The Identity Provider POST URL, or IDP URL.
 >* The Service Provider Entity ID.
 >
 
@@ -52,7 +50,7 @@ The [Web console](/help/sites-deploying/configuring-osgi.md) provides access to 
 
 **IDP Certificate Alias** The alias of the IdP's certificate in the global truststore. If this property is empty the authentication handler is disabled. See the "Add the IdP Certificate to the AEM TrustStore" chapter below on how to set it up.
 
-**Identity Provider URL** URL of the IDP where the SAML Authentication Request should be sent to. If this property is empty the authentication handler is disabled.
+**IDP URL** URL of the IDP where the SAML Authentication Request should be sent to. If this property is empty the authentication handler is disabled.
 
 >[!CAUTION]
 >
@@ -112,7 +110,15 @@ SAML assertions are signed and may optionally be encrypted. In order for this to
 >
 >The below steps are required only if handler should be able to sign or decrypt messages.
 
-1. Upload the Private key file by clicking **Select Private Key File**. The key meeds to be in PKCS#8 format with DER encoding.
+1. Create the certificate/keypair for AEM. The command to generate it via openssl should resemble the example below:
+
+   `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
+
+1. Convert the key to PKCS#8 format with DER encoding. This is the format required by the AEM keystore.
+
+   `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
+
+1. Upload the Private key file by clicking **Select Private Key File**.
 1. Upload the certificate file by clicking **Select Certificate Chain Files**.
 1. Assign an Alias, as shown below:
 

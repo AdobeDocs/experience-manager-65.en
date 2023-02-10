@@ -7,7 +7,7 @@ exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 
 Content authors should not have to concern themselves with validating every link that they include in their content pages.
 
-The Link Checker runs automatically assist content authors with their links including:
+The Link Checker runs automatically to assist content authors with their links including:
 
 * Validating links as they are added to content
 * Showing a list of all external links in the content

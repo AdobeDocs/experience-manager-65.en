@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 product: adobe experience manager
 sub-product: forms
-solution: Experience Manager, Experience Manager Forms, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
@@ -15,13 +15,14 @@ role: User
 + Release Notes {#release-notes-new-features}
   + [Release Notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
   + [New features summary](using/whats-new.md)
+  + [Frequently asked questions](/help/forms/using/frequently-asked-questions-faq.md)  
   + [Deprecated features](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/deprecated-removed-features.html)
 + Getting Started {#getting-started}
   + [Introduction to AEM Forms](using/introduction-aem-forms.md)
   + [Introduction to authoring adaptive forms](using/introduction-forms-authoring.md)
   + [Introduction to Interactive Communications](using/interactive-communications-overview.md)
   + [Introduction to managing forms](using/introduction-managing-forms.md)
-  + [Introduction to Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+  + [Introduction to Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
   + Tutorial: Create your First Adaptive Form {#create-first-adaptive-form}
     + [Tutorial: Create your first adaptive form](using/create-your-first-adaptive-form.md)
     + [Tutorial: Create an adaptive form](using/create-adaptive-form.md)
@@ -29,7 +30,6 @@ role: User
     + [Tutorial: Apply rules to adaptive form fields l](using/apply-rules-to-adaptive-form-fields.md)
     + [Tutorial: Style your adaptive form](using/style-your-adaptive-form.md)
     + [Tutorial: Publish your adaptive form](/help/forms/using/publish-your-adaptive-form.md)
-    + [Tutorial: Testing your adaptive form](/help/forms/using/testing-your-adaptive-form.md)
   + Tutorial: Create your First Interactive Communication {#create-first-interactive-communication}
     + [Tutorial: Create your first Interactive Communication](using/create-your-first-interactive-communication.md)
     + [Tutorial: Plan the Interactive Communication](using/planning-interactive-communications.md)
@@ -51,32 +51,32 @@ role: User
   + [Architecture and deployment topologies for AEM Forms](using/aem-forms-architecture-deployment.md)
   + [Choosing a persistence type for an AEM Forms installation](using/choosing-persistence-type-for-aem-forms.md)
   + Install AEM Forms on OSGi {#osgi-installation}
-    + [Supported platforms for AEM forms on OSGi](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/introduction/technical-requirements.html)
+    + [Supported platforms for AEM forms on OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html)
     + [Install and configure document services](using/install-configure-document-services.md)
     + [Install and configure data capture capabilities](using/installing-configuring-aem-forms-osgi.md)
     + [Install and Configure Forms-centric workflow on OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
     + [Install and configure Interactive Communications](using/installing-configuring-intreactive-communication-correspondence-management.md)
-    + [Install and configure Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+    + [Install and configure Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
   + Install AEM Forms on JEE {#jee-installation}
     + [Supported platforms for AEM forms on JEE](using/aem-forms-jee-supported-platforms.md)
-    + [Installing and Deploying AEM Forms on JEE Using JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_65)
+    + [Installing and Deploying AEM Forms on JEE Using JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)
     + [Installing and configuring AEM Forms Document Security server](using/installing-and-configuring-the-document-security-server.md)
-    + [Preparing to install AEM Forms (Single Server)](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
-    + [Installing and Deploying Adobe Experience Manager Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-    + [Installing and Deploying Adobe Experience Manager forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-    + [Installing and Deploying AEM Forms on JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_65)
+    + [Preparing to install AEM Forms (Single Server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_65)
+    + [Installing and Deploying Adobe Experience Manager Forms on JEE for JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+    + [Installing and Deploying Adobe Experience Manager forms on JEE for WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+    + [Installing and Deploying AEM Forms on JEE for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
     + [Install AEM Forms Workbench](using/install-workbench.md)
     + [Install and configure Designer](using/installing-configuring-designer.md)
-    + [Preparing to Install AEM Forms (Server Cluster)](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
-    + [Configuring Adobe Experience Manager Forms on JEE on JBoss Cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
-    + [Configuring Adobe Experience Manager Forms on JEE on WebSphere Cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
-    + [Configuring Adobe Experience Manager Forms on JEE on WebLogic Cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
+    + [Preparing to Install AEM Forms (Server Cluster)](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_65)
+    + [Configuring Adobe Experience Manager Forms on JEE on JBoss Cluster](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65)
+    + [Configuring Adobe Experience Manager Forms on JEE on WebSphere Cluster](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65)
+    + [Configuring Adobe Experience Manager Forms on JEE on WebLogic Cluster](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65)
   + Configure AEM Forms {#configure-aem-forms}
     + [Performance tuning of AEM Forms server](using/performance-tuning-aem-forms.md)
     + [Configure adaptive forms cache](using/configure-adaptive-forms-cache.md)
     + [Configuring AEM DS settings](using/configuring-the-processing-server-url-.md)
     + [Configuring the synchronization scheduler](using/configure-synchronization-scheduler.md)
-    + [Configuring the Connector for Microsoft SharePoint](http://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
+    + [Configuring the Connector for Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
     + [Connecting AEM Forms with Adobe LiveCycle](using/aem-livecycle-connector.md)
     + [Configuring AEM Forms to submit form data to an AEM Forms on JEE process](using/submit-form-data-livecycle-process.md)
     + [AEM desktop app for AEM Forms](/help/forms/using/aem-desktop-app-for-aem-forms.md)
@@ -87,13 +87,13 @@ role: User
     + [Install Compatibility Package](using/compatibility-package.md)
     + [Migrate AEM Forms assets and documents](using/migration-utility.md)
   + Upgrade AEM Forms on JEE {#aem-forms-jee-upgrade}
-    + [Preparing to upgrade AEM Forms](http://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
-    + [Adobe Experience Manager Forms on JEE upgrade checklist and planning](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
+    + [Preparing to upgrade AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65)
+    + [Adobe Experience Manager Forms on JEE upgrade checklist and planning](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65)
     + [Upgrade to AEM 6.5 forms on JEE](using/upgrade-forms-jee.md)
-    + [Upgrading to Adobe Experience Manager Forms on JEE for JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-    + [Upgrading to AEM Forms on JEE for JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-    + [Upgrading to Adobe Experience Manager Forms on JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-    + [Upgrading to Adobe Experience Manager Forms on JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
+    + [Upgrading to Adobe Experience Manager Forms on JEE for JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
+    + [Upgrading to AEM Forms on JEE for JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+    + [Upgrading to Adobe Experience Manager Forms on JEE for WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
+    + [Upgrading to Adobe Experience Manager Forms on JEE for WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
 + Manage AEM Forms {#manage-administer-aem-forms}
   + [AEM Forms on OSGi Groups and Privileges](using/forms-groups-privileges-tasks.md)
   + [Create new folders to categorize forms](using/creating-new-folders-categorize-forms.md)
@@ -167,10 +167,8 @@ role: User
   + [Using SOM expressions in adaptive forms](using/using-som-expressions-adaptive-forms.md)
   + [Adding information from user data to form submission metadata](using/form-submission-metadata.md)
   + [XFA support in XDP-based adaptive forms](using/xfa-api-supported-in-adaptive-form.md)
-  + [Changing Page Zero content in Designer](using/changing-page-zero-content-designer.md)
   + [Grant rule editor access to select user groups](using/rule-editor-access-user-groups.md)
   + [Using AEM translation workflow to localize adaptive forms and document of record](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-  + [Automate testing of adaptive forms](using/calvin.md)
   + [Styling constructs for adaptive forms](using/styling-constructs-adaptive-forms.md)
   + [Synchronizing Adaptive Forms with XFA Form Templates](using/synchronizing-adaptive-forms-xfa.md)
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
@@ -326,7 +324,8 @@ role: User
 + Integrate AEM Forms with Experience Cloud solutions {#integrate-aem-forms-with-experience-cloud-solutions}
   + [Create targeted experiences in AEM Forms](/help/forms/using/experience-targeting-forms.md)
   + [Measure and improve effectiveness and conversion of forms](using/measure-improve-performance-forms-documents.md)
-  + [Configuring analytics and reports](using/configure-analytics-forms-documents.md)
+  + [Analytics Using Cloud Service Framework](using/configure-analytics-forms-documents.md)
+  + [Analytics using Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
   + [View and understand AEM Forms analytics reports](using/view-understand-aem-forms-analytics-reports.md)
   + [Create and manage A/B test for adaptive forms](using/ab-testing-adaptive-forms.md)
 + Publish and process AEM Forms {#publish-process-aem-forms}
@@ -367,13 +366,15 @@ role: User
   + [Enable AEM to search document security protected PDF and Microsoft Office documents](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
   + [Protect a document on behalf of another user](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
-  + [Using Designer](http://www.adobe.com/go/learn_aemforms_designer_65)
-  + [Designer Quick Start Tutorials](http://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-  + [Designer Samples](http://www.adobe.com/go/learn_aemforms_designer_samples_65)
-  + [Designer Scripting Basics](http://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-  + [Designer Scripting Reference](http://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-  + [Designer FormCalc Reference](http://www.adobe.com/go/learn_aemforms_formCalc_65)
+  + [Forms Designer Help](using/forms-designer-help.md)
+  + [Using Designer](https://www.adobe.com/go/learn_aemforms_designer_65)
+  + [Designer Quick Start Tutorials](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+  + [Designer Samples](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+  + [Designer Scripting Basics](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+  + [Designer Scripting Reference](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+  + [Designer FormCalc Reference](https://www.adobe.com/go/learn_aemforms_formCalc_65)
   + [Using Scribble Signature in HTML5 forms](using/scribble-signature.md)
+  + [Changing Page Zero content in Designer](using/changing-page-zero-content-designer.md)
 + Customize AEM Forms {#customize-aem-forms}
   + [Appearance framework for adaptive and HTML5 forms](using/introduction-widgets.md)
   + [Creating a custom adaptive form template](using/custom-adaptive-forms-templates.md)
@@ -445,6 +446,7 @@ role: User
   + Managing Endpoints {#manage-endpoints}
     + [Adding, enabling, modifying, or removing endpoints](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
     + [Configuring email endpoints](/help/forms/using/admin-help/configuring-email-endpoints.md)
+    + [Configure oAuth2.0 authentication](/help/forms/using/oauth2-support-for-mail-service.md)
     + [Configuring Remoting endpoints](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
     + [Configuring watched folder endpoints](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
     + [Configuring Task Manager endpoints](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
@@ -459,8 +461,6 @@ role: User
     + [Enabling online commenting for Adobe Reader web browser plug-in](/help/forms/using/admin-help/enabling-online-commenting-reader-web.md)
     + [Setting timeout values for use with Acrobat Reader DC extensions](/help/forms/using/admin-help/setting-timeout-values-acrobat-reader.md)
     + [Updating expired Reader Extension service certificates](/help/forms/using/admin-help/updating-expired-reader-extension-certificates.md)
-    
-
   + Working with PDF Generator {#work-with-pdf-generator}
     + [Introduction to working with PDF Generator](/help/forms/using/admin-help/overview-5.md)
     + [Enabling multi-threaded file conversions](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
@@ -573,15 +573,15 @@ role: User
   + [Ad-hoc Queries in Process Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
   + [Troubleshooting Process Reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Developer Reference {#developer-reference}
-  + [Developer basics](https://docs.adobe.com/content/help/en/experience-manager-65/developing/home.html)
-  + [HTML Template Language](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
+  + [Developer basics](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+  + [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
   + [AEM plug-in to debug adaptive forms](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
   + [AEM Forms Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
   + [AEM Forms on JEE Java API Reference](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
   + [Form Bridge APIs for HTML5 forms](using/form-bridge-apis.md)
   + [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
-  + [Assembler Service and DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_65)
-  + [Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65)
+  + [Assembler Service and DDX Reference](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
+  + [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_65)
   + Programming with AEM Forms on JEE {#programming-aem-forms-jee}
     + Introduction to programming with AEM Forms on JEE {#introduction-programming-aem-forms-jee}
       + [Introducing Java API QuickStart](developing/introducing-java-api-soap-quick.md)
@@ -676,10 +676,17 @@ role: User
       + [Programmatically managing the Preferences Nodes](developing/programmatically-preferences-nodes.md)
       + [Protecting Documents with Policies](developing/protecting-documents-policies.md)
       + [Validate a DDX document using the web service API](developing/validate-ddx-document-using-web.md)
-    + Legacy documentation {#legacy-documentation}
-      + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
-      + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
-      + [Configuring and troubleshooting an AEM Forms on JEE server cluster](developing/configure-server-cluster.md)
-      + [Generating and working with Hashes in dynamic PDF forms](developing/hashing-forms.md)
-      + [Passing credentials using WS-Security headers](developing/passing-credentials.md)
-    
++ Troubleshooting {#troubleshooting}
+  + [Unable to use some forms features with certain versions of Oracle JDK](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
+  + [Additional Steps to get Email with Attachment for Adaptive Forms On JEE version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+  + [Unable to convert Word or Excel file to PDF on Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
+  + [Unable to open XFA-based PDF forms in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer, or Apple Safari](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+  + [Unable to restore CRX Repository](/help/forms/using/restore-crx-repository.md)
+  + [Service unavailable errors after installing AEM 6.5.15.0 service pack](/help/forms/using/aem-service-pack-installation-solution.md)
++ Legacy documentation {#legacy-documentation}
+  + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
+  + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)
+  + [Configuring and troubleshooting an AEM Forms on JEE server cluster](developing/configure-server-cluster.md)
+  + [Generating and working with Hashes in dynamic PDF forms](developing/hashing-forms.md)
+  + [Passing credentials using WS-Security headers](developing/passing-credentials.md)
+

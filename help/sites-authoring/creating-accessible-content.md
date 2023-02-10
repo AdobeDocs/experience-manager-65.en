@@ -59,11 +59,11 @@ A useful additional benefit is that text alternatives enable non-text content to
 
 #### How to Meet - Non-text Content (1.1.1) {#how-to-meet-non-text-content}
 
-For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/image.html)**.
+For static graphics, the basic requirement is to provide an equivalent text alternative for the graphic. This can be done in the **Alternative Text** field; see for example, the Core Component **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html)**.
 
 >[!NOTE]
 >
->Some out-of-the-box Core Components, such as **[Carousel](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
+>Some out-of-the-box Core Components, such as **[Carousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)** do not provide an **Alternative Text** field for adding alternate text descriptions to individual images, though there is the **Label** field (**[Accessibility](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)** tab) for the entire component. 
 >
 >When implementing versions of these for your AEM instance, your development team will need to configure such components to support the `alt` attribute so that authors can add it to the content (see [Adding Support for Additional HTML Elements and Attributes](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -550,7 +550,7 @@ Make sure that the text contrasts sufficiently with its background. Contrast rat
 >
 >* [Px to Em Calculater - Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Font size conversion: pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com: PX to EM conversion made simple](http://pxtoem.com)
+>* [PMtoEM.com: PX to EM conversion made simple](https://pxtoem.com)
 
 To check contrast ratios, use a color contrast tool, such as the [Paciello Group Color Contrast Analyser](https://www.paciellogroup.com/resources/contrast-analyser.html) or the [WebAIM color contrast checker](https://www.webaim.org/resources/contrastchecker/). These tools allow you to check pairs of colors and report on any contrast problems.
 
@@ -930,7 +930,7 @@ The purpose of this success criterion is to help a person know which element has
 
 It must be possible for a person to know which element among multiple elements has the keyboard focus. If there is only one keyboard actionable control on the screen, the success criterion would be met because the visual design presents only one keyboard actionable item.
 
-Where the success criterion says “mode of operation”, this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
+Where the success criterion says "mode of operation", this is to account for platforms which may not always show a focus indicator. In most cases there is only one mode of operation so this success criteria applies.
 
 #### How to Meet - Focus Visible (2.4.7) {#how-to-meet-focus-visible}
  
@@ -964,10 +964,10 @@ The purpose of this success criterion is to make sure that text and other lingui
 To meet this success criterion, the default language of a web page can be identified using the `lang` attribute within the `<html>` element at the top of the page. For example:
 
 * If a page is written in English, the `<html>` element should read:
-  `<html lang = “en”>`
+  `<html lang = "en">`
 
 * Whereas a page to be rendered in Spanish should adopt the following standard:
-  `<html lang = “es”>`
+  `<html lang = "es">`
 
 In AEM, the default language of your page is set when creating the page, but may also be changed when editing [Page Properties](/help/sites-authoring/editing-page-properties.md).
 
@@ -999,7 +999,7 @@ Pages applying this success criterion allow:
 
 #### How to Meet - Language of Parts (3.1.2) {#how-to-meet-language-of-parts}
 
-Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code “de”) can be shown as follows:
+Tthe `lang` attribute can be used to identify changes in the language of content. For example, a quotation in German (ISO 639-1 code "de") can be shown as follows:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1014,7 +1014,7 @@ Tthe `lang` attribute can be used to identify changes in the language of content
 Similarly, the browser can render an uncommon loan word or phrase correctly if the `span` element is used as follows:
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]

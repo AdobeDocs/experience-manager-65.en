@@ -15,9 +15,9 @@ The AEM Community has thousands of members around the world. They range from peo
 
 ## What events are there for AEM Community members? {#events}
 
-There are a whole host of events for members! Every month we hold sessions where you can ask the expert on specific AEM topics. We also will let you know about major events, such as [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) or the [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&mv=other), or even user group events in your area.
+There are a whole host of events for members! Every month we hold sessions where you can ask the expert on specific AEM topics. We also will let you know about major events, such as [Immerse](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) or the [Adobe Summit](https://summit.adobe.com/na/?promoid=6JMR7JQY&mv=other), or even user group events in your area.
 
-The best thing to do is [visit the AEM Community today and see what's going on.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+The best thing to do is [visit the AEM Community today and see what's going on.](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
 ## Can I get code samples to help me? {#code-samples}
 

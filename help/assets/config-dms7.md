@@ -79,11 +79,11 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
 ## Create a Dynamic Media Configuration in Cloud Services {#configuring-dynamic-media-cloud-services}
 
-**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+<!-- **Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-**To create a Dynamic Media Configuration in Cloud Services:**
+**To create a Dynamic Media Configuration in Cloud Services:** -->
 
 1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console and select the Tools icon, then go to **[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media Configuration]**.
 1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]** (do not select the folder icon to the left of **[!UICONTROL global]**), then select **[!UICONTROL Create]**.
@@ -91,14 +91,35 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
 
    Select **[!UICONTROL Connect to Dynamic Media]**.
 
-   >[!NOTE]
-   >
-   >After you receive your provisioning email with Dynamic Media credentials, open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+1. In the **[!UICONTROL Change Password]** dialog box, in the **[!UICONTROL New Password]** field, enter a new password that consists of 8-25 characters. The password must contain at least one of each of the following:
+
+      * Uppercase letter
+      * Lowercase letter
+      * Number
+      * Special character: `# $ & . - _ : { }`
+
+      The **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
+
+      If necessary, you can check the spelling of a password you have typed or retyped by selecting the password eye icon to reveal the password. Select the icon again to hide the password.
+
+1. In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+
+   The new password is saved when you select **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Create Dynamic Media Configuration]** page.
+
+   If you selected **[!UICONTROL Cancel]** in the **[!UICONTROL Change Password]** dialog box, you must still enter a new password when you save the newly created Dynamic Media configuration.
+  
+   See also [Change the password to Dynamic Media](#change-dm-password).
 
 1. When the connection is successful, set the following. Headings with an asterisk (*) are required:
 
-    * **[!UICONTROL Company]** - the name of the Dynamic Media account. You have multiple Dynamic Media accounts. For example, you could have different subbrands, divisions, staging, or production environments.
-    <!-- UNHIDE FEBRUARY 24, 2022 See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md). -->
+    * **[!UICONTROL Company]** - the name of the Dynamic Media account.
+      >[!IMPORTANT]
+      >
+      >Only one Dynamic Media Configuration in Cloud Services is supported on an instance of Experience Manager; do not add more than one configuration. Multiple Dynamic Media Configurations on an Experience Manager instance is _not_ supported or recommended by Adobe.
+    
+      <!-- CQDOC-19579 and CQDOC-19612 -->
+  
+      See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md).
 
     * **[!UICONTROL Company Root Folder Path]**
 
@@ -130,8 +151,9 @@ See [Install feature pack 18912 for bulk asset migration](/help/assets/bulk-inge
    >After an asset is activated, any updates are immediately published live to S7 Delivery.
 
 1. Select **[!UICONTROL Save]**.
-1. By default Experience Manager Author cannot preview Dynamic Media content. Therefore, to securely preview Dynamic Media content before it gets published, you must *allowlist* the Experience Manager Author instance to connect to Dynamic Media. In addition, if you want to provide users access to securely preview content, you can *allowlist* additional IP addresses.
-To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).
+1. To securely preview Dynamic Media content before it gets published, Experience Manager Author uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can "allowlist" more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).
+
+If you want to further customize your configuration, such as enabling ACL (Access Control List) permissions, you can optionally complete any of the tasks under [(Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -143,11 +165,42 @@ To set up this action in Experience Manager, see [Configure Dynamic Media Publis
 
 You are now finished with the basic configuration; you are ready to use Dynamic Media - Scene7 mode.
 
-If you want to further customize your configuration, you can optionally complete any of the tasks under [(Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+### Change the password to Dynamic Media {#change-dm-password}
+
+Password expiration in Dynamic Media is set to 100 years from the current system date.
+
+The password must contain at least one of each of the following:
+
+* Uppercase letter
+* Lowercase letter
+* Number
+* Special character: `# $ & . - _ : { }`
+
+If necessary, you can check the spelling of a password you have typed or retyped by selecting the password eye icon to reveal the password. Select the icon again to hide the password.
+
+The changed password is saved when you select **[!UICONTROL Save]** in the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page.
+
+**To change the password to Dynamic Media:**
+
+1. In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
+1. On the left of the console, select the Tools icon, then go to **[!UICONTROL Cloud Services] > [!UICONTROL Dynamic Media Configuration]**.
+1. On the Dynamic Media Configuration Browser page, in the left pane, select **[!UICONTROL global]**. Do not select the folder icon to the left of **[!UICONTROL global]**. Then, select **[!UICONTROL Edit]**.
+1. On the **[!UICONTROL Edit Dynamic Media Configuration]** page, directly below the **[!UICONTROL Password]** field, select **[!UICONTROL Change Password]**.
+1. In the **[!UICONTROL Change Password]** dialog box, do the following:
+
+   * In the **[!UICONTROL New Password]** field, enter a new password.
+
+      The **[!UICONTROL Current Password]** field is intentionally pre-filled and hidden from interaction.
+
+   * In the **[!UICONTROL Repeat Password]** field, retype the new password, then select **[!UICONTROL Done]**.
+
+1. In the upper-right corner of the **[!UICONTROL Edit Dynamic Media Configuration]** page, select **[!UICONTROL Save]**, then select **[!UICONTROL OK]**.
 
 ## (Optional) Configure Advanced Settings in Dynamic Media - Scene7 mode {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 If you want to further customize the configuration and setup of Dynamic Media - Scene7 mode, or optimize its performance, you can complete one or more of the following *optional* tasks:
+
+* [(Optional) Enable ACL permissions in Dynamic Media - Scene7 mode](#optional-enable-acl)
 
 * [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](#optional-config-dms7-assets-larger-than-2gb)
 
@@ -156,6 +209,33 @@ If you want to further customize the configuration and setup of Dynamic Media - 
 * [(Optional) Tune the performance of Dynamic Media - Scene7 mode](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 * [(Optional) Filter assets for replication](#optional-filtering-assets-for-replication)
+
+### (Optional) Enable Access Control List permissions in Dynamic Media - Scene7 mode {#optional-enable-acl}
+
+When you run Dynamic Media - Scene7 mode on AEM, it currently forwards `/is/image` requests to Secure Preview Image Serving without checking ACL (Access Control List) permissions on the PlatformServerServlet. You can, however, *enable* ACL permissions. Doing so forwards the authorized `/is/image` requests. If a user is not authorized to access the asset, a "403 - Forbidden" error is displayed.
+
+**To enable ACL permissions in Dynamic Media - Scene7 mode:**
+
+1. From Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
+
+   ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
+
+1. A new browser tab opens to the **[!UICONTROL Adobe Experience Manager Web Console Configuration]** page.
+
+   ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
+
+1. On the page, scroll to the name *Adobe CQ Scene7 PlatformServer*.
+
+1. To the right of the name, select the pencil icon (**[!UICONTROL Edit the configuration values]**).
+
+1. On the **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** page, select the check box for the following two settings:
+
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for two minutes (default) to save.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` &ndash; When enabled, this setting validates a user's access while they preview assets by way of Dynamic Media Image Server.
+
+   ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/assets-dm/acl.png)
+
+1. Near the lower-right corner of the page, select **[!UICONTROL Save]**.
 
 ### (Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB {#optional-config-dms7-assets-larger-than-2gb}
 
@@ -302,7 +382,7 @@ See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
     * Double-click the **[!UICONTROL enabled]** field. By default all asset mime types are enabled (set to **[!UICONTROL true]**), which means the assets are synched to Dynamic Media for processing. If you wish to exclude this asset mime type from being processed, change this setting to **[!UICONTROL false]**.
 
-    * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/assets-formats.md#supported-mime-types) for a list of permitted processing parameter values you can use for a given mime type.
+    * Double-tap **[!UICONTROL jobParam]** to open its associated text field. See [Supported Mime Types](/help/assets/assets-formats.md#supported-mime-types) for a list of permitted processing parameter values that you can use for a given mime type.
 
 1. Do one of the following:
 
@@ -313,7 +393,7 @@ See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
 
 #### Adding MIME types for unsupported formats {#adding-mime-types-for-unsupported-formats}
 
-You can add custom MIME types for unsupported formats in Experience Manager Assets. Ensure that any new node you add in CRXDE Lite is not deleted by Experience Manager by moving the MIME type before `image_`. Also, be sure that its enabled value is set to **[!UICONTROL false]**.
+You can add custom MIME types for unsupported formats in Experience Manager Assets. Ensure any new node that you add in CRXDE Lite is not deleted by Experience Manager by moving the MIME type before `image_`. Also, be sure that its enabled value is set to **[!UICONTROL false]**.
 
 **To add MIME types for unsupported formats:**
 
@@ -394,7 +474,7 @@ Two elements are available for definition, Match and Base Name. These fields let
 
    >[!NOTE]
    >
-   >De-activated form fields perform no validation that your regular expressions are correct. You see results of the regular expression you are building for each element after the Result line. The complete regular expression is visible at the bottom of the page.
+   >De-activated form fields perform no validation that your regular expressions are correct. You see results of the regular expression that you are building for each element after the Result line. The complete regular expression is visible at the bottom of the page.
 
 1. Expand each element as necessary and enter the naming conventions you want to use.
 1. As necessary, do any of the following:
@@ -409,11 +489,9 @@ Two elements are available for definition, Match and Base Name. These fields let
 
 ##### Create a Batch Set Preset
 
-
-
 Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
 
-You can create, edit, and manage your batch set presets. There are two forms of batch set preset definitions: one for a default naming convention that you can set up, and one for custom naming conventions that you create on the fly.
+You can create, edit, and manage your batch set presets. There are two forms of batch set preset definitions: one for a default naming convention that you can set up, and one for custom-naming conventions that you create on the fly.
 
 You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose View Code at the same time you are defining in the Form View and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
 

@@ -53,7 +53,7 @@ The readme for the Starter Kit Git repository includes a tutorial for using the 
 IOS developers should be aware of an open issue with Cordova apps running on iOS 9. This issue prevents requests from being made to insecure hosts (such as *http://localhost:4502*). This issue will be resolved with an upcoming release of cordova-ios (consumed by the Cordova CLI), but in the meantime there are two workarounds available:
 
 1. As an immediate workaround, you can still use any of the iOS 8 simulators without issue.
-1. If you must use iOS 9, your apps -Info.plist (found after running `cordova platform add ios` in “&lt;app root&gt;/platforms/ios/&lt;app name&gt;/&lt;app name&gt;-Info.plist”) file can be manually edited to include the following property:
+1. If you must use iOS 9, your apps -Info.plist (found after running `cordova platform add ios` in "&lt;app root&gt;/platforms/ios/&lt;app name&gt;/&lt;app name&gt;-Info.plist") file can be manually edited to include the following property:
 
 ```
 <key>NSAppTransportSecurity</key>
@@ -67,7 +67,7 @@ IOS developers should be aware of an open issue with Cordova apps running on iOS
 
 >[!NOTE]
 >
->For more detail on “App Transport Security”, see the following section of [Apple’s iOS9 prerelease docs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) and this [Stack Overflow discussion](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>For more detail on "App Transport Security", see the following section of [Apple’s iOS9 prerelease docs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) and this [Stack Overflow discussion](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Developing Mobile Applications in AEM {#developing-mobile-applications-in-aem-1}
 

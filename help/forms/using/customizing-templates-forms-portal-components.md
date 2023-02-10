@@ -103,7 +103,7 @@ Various Forms Portal components provide exclusive sets of OOTB metadata that you
 * **pdfUrl**: URL to render the form as PDF
 * **assetType**: Type of the asset. Valid values include **Form**,**PDF Form**, **Print Form**, and **Adaptive Form**
 
-* **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are “**__FP_display_none**” or blank.
+* **htmlStyle **& **pdfStyle**: Display style for HTML and PDF icons respectively used for rendering. Valid values are "**__FP_display_none**" or blank.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Support for localization, sorting, and using configuration properties on the use
 
 * **Title:** Title of the form
 * **formUrl**: URL to render the form as HTML
-* **target**: Target attribute of the link. Valid values are “_blank” and “_self.”
+* **target**: Target attribute of the link. Valid values are "_blank" and "_self."
 * **linkText**: Link caption
 
 ### Drafts &amp; Submissions component {#drafts-amp-submissions-component}

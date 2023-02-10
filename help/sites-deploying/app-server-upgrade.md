@@ -1,13 +1,6 @@
 ---
 title: Upgrade Steps for Application Server Installations
 description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
-uuid: e4020966-737c-40ea-bfaa-c63ab9a29cee
-contentOwner: sarchiz
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: upgrading
-content-type: reference
-discoiquuid: 1876d8d6-bffa-4a1c-99c0-f6001acea825
-docset: aem65
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 ---
@@ -31,10 +24,10 @@ All the examples in this procedure use Tomcat as the Application Server and impl
 
 1. Next, undeploy AEM 6.4. This can be done from the TomCat App Manager (`http://serveraddress:serverport/manager/html`)
 
-1. Now, migrate the repository using the crx2oak migration tool. In order to do that, download the latest version of crx2oak from [this location](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak).
+1. Now, migrate the repository using the crx2oak migration tool. In order to do that, download the latest version of crx2oak from [this location](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
-   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -XX:MaxPermSize=2048M -jar crx2oak.jar --load-profile segment-fds
+   SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
    ```
 
 1. Delete the necessary properties in the sling.properties file by doing the following:

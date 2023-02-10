@@ -63,7 +63,7 @@ Conditions enable you to define what content gets included at correspondence cre
 
 #### Layout fragment {#layout-fragment}
 
-A layout fragment is a layout that can be used within one or more letters. A layout fragment is used to create repeatable patterns, especially dynamic tables. The layout can contain typical form fields such as “Address” and "Reference Number." It also contains empty sub forms that denote target areas. The layouts (XDPs) are created in Designer and then are [uploaded to Forms and Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+A layout fragment is a layout that can be used within one or more letters. A layout fragment is used to create repeatable patterns, especially dynamic tables. The layout can contain typical form fields such as "Address" and "Reference Number." It also contains empty sub forms that denote target areas. The layouts (XDPs) are created in Designer and then are [uploaded to Forms and Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Letter creation {#letter-creation}
 
@@ -224,7 +224,7 @@ You need the following in place first to create a correspondence:
 
 * [Compatibility Package](compatibility-package.md). Install the Compatibility Package to view the **Letters** option on the **Forms** page.
 * The letter XDP ([layout](/help/forms/using/document-fragments.md)).
-* Other XDPs ([layout fragments](document-fragments.md#document-fragments)) that form parts of the letter. The XDPs\Layouts are created in [Designer](http://www.adobe.com/go/learn_aemforms_designer_65). 
+* Other XDPs ([layout fragments](document-fragments.md#document-fragments)) that form parts of the letter. The XDPs\Layouts are created in [Designer](https://www.adobe.com/go/learn_aemforms_designer_65). 
 * The relevant [data dictionary](/help/forms/using/data-dictionary.md) (Optional). 
 * The [data modules](/help/forms/using/document-fragments.md) you want to use in the correspondence.
 * [Test Data](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) is the XML file with the test data ported in it. Test data is required if you are using a data dictionary.

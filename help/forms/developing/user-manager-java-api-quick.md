@@ -975,7 +975,7 @@ public class ManagePreferences {
         map = pmutil.getPreferences(path);
         for(String str:map.keySet()) {
             //assert on the key as "ReverseOrder"
-            //assert on the value[map.get(str)] as "false”
+            //assert on the value[map.get(str)] as "false"
         }
     } catch (UMException e) {
         e.printStackTrace();

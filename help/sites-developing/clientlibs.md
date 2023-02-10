@@ -218,7 +218,7 @@ Embedding code is useful for providing access to libraries that are stored in se
 
 #### App-Specific Client Library Folders {#app-specific-client-library-folders}
 
-It is a best practice to keep all application-related files in their application folder below `/app`. It is also a best practice to deny access for web site visitors to the `/app` folder. To satisfy both best practices, create a client library folder below the `/etc` folder that embeds the client library that is below `/app`.
+It is a best practice to keep all application-related files in their application folder below `/apps`. It is also a best practice to deny access for web site visitors to the `/apps` folder. To satisfy both best practices, create a client library folder below `/apps`, and make it accessible through the proxy servlet as described under [Locating a Client Library Folder and Using the Proxy Client Libraries Servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Use the categories property to identify the client library folder to embed. To embed the library, add a property to the embedding `cq:ClientLibraryFolder` node, using the following property attributes:
 
@@ -307,12 +307,13 @@ For example, the following table lists the value of the `channels` property for 
 | `/libs/cq/analytics/widgets` | `!touch` |
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` |*[no value]* |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
 | `/libs/cq/ui/widgets/themes/default` | `!touch` |
+
+<!-- Search&Promote is end of life as of September 1, 2022 | `/libs/cq/searchpromote/widgets` | `!touch` | -->
+<!-- Search&Promote is end of life as of September 1, 2022 | `/libs/cq/searchpromote/widgets/themes/default` |*[no value]* -->
 
 ## Using Preprocessors {#using-preprocessors}
 

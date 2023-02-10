@@ -196,7 +196,7 @@ If you customize the [!UICONTROL DAM Update Asset] workflow to generate renditio
 </policymap>
 ```
 
-In addition, set the path of ImageMagick's temporary folder in the `configure.xml` file (or by setting the environment variable `MAGIC_TEMPORARY_PATH`) to a disk partition that has sufficient space and IOPS.
+In addition, set the path of ImageMagick's temporary folder in the `configure.xml` file (or by setting the environment variable `MAGICK_TEMPORARY_PATH`) to a disk partition that has sufficient space and IOPS.
 
 >[!CAUTION]
 >
@@ -216,7 +216,7 @@ XMP writeback updates the original asset whenever metadata is modified in [!DNL 
 * A version of the asset is created
 * [!UICONTROL DAM Update Asset] is run against the asset
 
-The outcomes listed consume considerable resources. Therefore, Adobe recommends [disabling XMP Writeback](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), if it is not required.
+The outcomes listed consume considerable resources. Therefore, Adobe recommends disabling XMP writeback if it is not required. For more information, see [XMP writeback](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
 
 Importing a large amount of metadata can result in resource-intensive XMP writeback activity if run workflows flag is checked. Plan such an import during lean server usage so that performance for other users is not impacted.
 
@@ -236,7 +236,7 @@ When replicating assets to a large number of publish instances, for example in a
 
 ## Search indexes {#search-indexes}
 
-Install [the latest Service Packs](/help/release-notes/release-notes.md) and performance-related hotfixes as those often include updates to system indexes. See [performance tuning tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) for some index optimizations.
+Install [the latest Service Packs](/help/release-notes/release-notes.md) and performance-related hotfixes as those often include updates to system indexes. See [performance tuning tips](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en) for some index optimizations.
 
 Create custom indexes for queries that you run often. For details, see [methodology for analyzing slow queries](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) and [crafting custom indexes](/help/sites-deploying/queries-and-indexing.md). For additional insights around query and index best practices, see [Best Practices for Queries and Indexing](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

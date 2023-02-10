@@ -1,17 +1,9 @@
 ---
 title: Configuring node stores and data stores in AEM 6
-seo-title: Configuring node stores and data stores in AEM 6
 description: Learn how to configure node stores and data stores and how to perform data store garbage collection.
-seo-description: Learn how to configure node stores and data stores and how to perform data store garbage collection.
-uuid: 1a58c0ba-1c32-4539-ad0d-0a27c8c4ff5e
-contentOwner: User
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: b97482f2-2791-4d14-ae82-388302d9eab3
 docset: aem65
-legacypath: /deploy/platform/data-store-config
-
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 ---
@@ -123,7 +115,7 @@ Details on the different data stores and configurations are described below.
 
 ### File Data Store {#file-data-store}
 
-This is the implementation of [FileDataStore](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) present in Jackrabbit 2. It provides a way to store the binary data as normal files on the file system. It uses the `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
+This is the implementation of [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) present in Jackrabbit 2. It provides a way to store the binary data as normal files on the file system. It uses the `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
 
 These configuration options are available:
 
@@ -141,7 +133,7 @@ These configuration options are available:
 
 AEM can be configured to store data in Amazon's Simple Storage Service (S3). It uses the `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID for configuration.
 
-In order to enable the S3 data store functionality, a feature pack containing the S3 Datastore Connector needs to be downloaded and installed. Go to the [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/) and download the latest version from the 1.10.x versions of the feature pack (for example, com.adobe.granite.oak.s3connector-1.10.0.zip). Additionally, you also need to download and install the latest AEM service pack as listed on the [AEM 6.5 Release Notes](/help/release-notes/release-notes.md) page.
+In order to enable the S3 data store functionality, a feature pack containing the S3 Datastore Connector needs to be downloaded and installed. Go to the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) and download the latest version from the 1.10.x versions of the feature pack (for example, com.adobe.granite.oak.s3connector-1.10.0.zip). Additionally, you also need to download and install the latest AEM service pack as listed on the [AEM 6.5 Release Notes](/help/release-notes/release-notes.md) page.
 
 >[!NOTE]
 >
@@ -185,7 +177,7 @@ Once downloaded, you can install and configure the S3 Connector as follows:
 1. Edit the file and add the configuration options required by your setup.
 1. Start AEM.
 
-### Upgrading to a new version of the 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
+## Upgrading to a new version of the 1.10.x S3 Connector {#upgrading-to-a-new-version-of-the-s-connector}
 
 If you need to upgrade to a new version of the 1.10.x S3 connector (for example, from 1.10.0 to 1.10.4) follow these steps:
 
@@ -201,29 +193,59 @@ If you need to upgrade to a new version of the 1.10.x S3 connector (for example,
    >
    >The file names presented above are used for illustration purposes only.
 
-1. Download the latest version of the 1.8.x feature pack from the [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Download the latest version of the 1.10.x feature pack from the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Unzip the contents to a separate folder, then navigate to `jcr_root/libs/system/install/15`.
 1. Copy the jar files to **&lt;aem-install&gt;**/crx-quickstart/install/15 in the AEM installation folder.
 1. Start AEM and check the connector functionality.
 
-You can use the configuration file with the following options:
+You can use the configuration file with the options detailed below.
 
+<!--
 * accessKey: The AWS access key.
-* secretKey: The AWS secret access key. **Note:** Alternatively, [IAM roles](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) can be used for authentication. If you are using IAM roles you no longer need to specify the `accessKey` and `secretKey`.
-
+* secretKey: The AWS secret access key. **Note:** When the `accessKey` or `secretKey` is not specified then the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) is used for authentication.
 * s3Bucket: The bucket name.
 * s3Region: The bucket region.
 * path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**
 * minRecordLength: The minimum size of an object that should be stored in the data store. The minimum/default is **16KB.**
 * maxCachedBinarySize: Binaries with size less than or equal to this size will be stored in memory cache. The size is in bytes. The default is **17408 **(17 KB).
-
 * cacheSize: The size of the cache. The value is specified in bytes. The default is **64GB**.
 * secret: Only to be used if using binaryless replication for shared datastore setup.
 * stagingSplitPercentage: The percentage of cache size configured to be used for staging asynchronous uploads. The default value is **10**.
 * uploadThreads: The number of uploads threads that are used for asynchronous uploads. The default value is **10**.
 * stagingPurgeInterval: The interval in seconds for purging finished uploads from the staging cache. The default value is **300** seconds (5 minutes).
 * stagingRetryInterval: The retry interval in seconds for failed uploads. The default value is **600** seconds (10 minutes).
+-->
 
+### S3 Connector Configuration File Options {#s3-connector-configuration-file-options}
+
+>[!NOTE]
+>
+>The S3 connector supports both IAM user authentication and IAM role authentication. To use IAM role authentication, omit the `accessKey` and `secretKey` values from your configuration file. The S3 connector will then default to the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) assigned to the instance.
+
+| Key | Description | Default | Required |
+| --- | --- | --- | --- |
+| accessKey | Access Key ID for the IAM user with access to the bucket. | | Yes, when not using IAM roles. |
+| secretKey | Secret access key for the IAM user with access to the bucket. | | Yes, when not using IAM roles. |
+| cacheSize | The size (in bytes) of the local cache. | 64GB | No. |
+| connectionTimeout | Set the amount of time to wait (in milliseconds) before timing out when initially establishing a connection.  | 10000 | No. |
+| maxCachedBinarySize | Binaries with size less than or equal to this value (in bytes) will be stored in the memory cache. | 17408 (17 KB) | No. |
+| maxConnections | Set the maximum number of allowed open HTTP connections. | 50 | No. |
+| maxErrorRetry | Set the maximum number of retry attempts for failed (retriable) requests. | 3 | No. |
+| minRecordLength | The minimum size of an object (in bytes) that should be stored in the data store. | 16384 | No. |
+| path | The local path of the AEM datastore. | `crx-quickstart/repository/datastore` | No. |
+| proxyHost | Set the optional proxy host the client will connect through. | | No. |
+| proxyPort | Set the optional proxy port the client will connect through. | | No. |
+| s3Bucket | Name of the S3 bucket. | | Yes |
+| s3EndPoint | S3 REST API endpoint. | | No. |
+| s3Region | Region where the bucket resides. See this [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) for more details.| Region where AWS instance is running. | No. |
+| socketTimeout | Set the amount of time to wait (in milliseconds) for data to be transferred over an established, open connection before the connection times out and is closed. | 50000 | No. |
+| stagingPurgeInterval | The interval (in seconds) for purging finished uploads from the staging cache. | 300 | No. |
+| stagingRetryInterval | The interval (in seconds) to retry failed uploads. | 600 | No. |
+| stagingSplitPercentage | The percentage of `cacheSize` to be used for staging asynchronous uploads. | 10 | No. |
+| uploadThreads | The number of upload threads used for asynchronous uploads. | 10 | No. |
+| writeThreads | The number of concurrent threads used for writing via S3 Transfer Manager. | 10 | No. |
+
+<!---
 ### Bucket region options {#bucket-region-options}
 
 <table>
@@ -262,13 +284,13 @@ You can use the configuration file with the following options:
   </tr>
  </tbody>
 </table>
+-->
 
-**DataStore Caching**
+### DataStore Caching {#data-store-caching}
 
 >[!NOTE]
 >
 >The DataStore implementations of `S3DataStore`, `CachingFileDataStore` and `AzureDataStore` support local file system caching. The `CachingFileDataStore` implementation is useful when the DataStore is on NFS (Network File System).
->
 
 When upgrading from an older cache implementation (pre Oak 1.6) there is a difference in the structure of the local file system cache directory. In the old cache structure both the downloaded and the uploaded files were put directly under the cache path. The new structure segregates the downloads and uploads and stores them in two directories named `upload` and `download` under cache path. The upgrade process should be seamless and any pending uploads should be scheduled for upload and any previously downloaded files in the cache will be put in the cache on initialization.
 
@@ -276,11 +298,11 @@ You can also upgrade the cache offline by using the `datastorecacheupgrade` comm
 
 The cache has a size limit and it can be configured by using the cacheSize parameter.
 
-**Downloads**
+#### Downloads {#downloads}
 
 The local cache will be checked for the record of the requested file/blob before accessing it from the DataStore. When the cache exceeds the configured limit (see the `cacheSize` parameter) while adding a file into the cache, then some of the file(s) will be evicted to reclaim space.
 
-**Asynchronous Upload**
+#### Asynchronous Upload {#async-upload}
 
 The cache supports asynchronous uploads to the DataStore. The files are staged locally, in the cache (on the file system), and an asynchronous job starts to upload the file. The number of asynchronous uploads is limited by the size of the staging cache. The size of the staging cache is configured by using the `stagingSplitPercentage` parameter. This parameter defines the percentage of cache size to be used for the staging cache. Also, the percentage of cache available for downloads is calculated as **(100 - `stagingSplitPercentage`) &#42; `cacheSize`**.
 
@@ -325,7 +347,7 @@ In order to configure binaryless replication with S3, the following steps are re
 1. Make sure MongoDB is installed and an instance of `mongod` is running.
 1. Start AEM with the following command:
 
-   `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
+   `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Repeat steps 1 through 4 for the second AEM instance.
 1. Start the second AEM instance.
@@ -379,7 +401,7 @@ In order to configure binaryless replication with S3, the following steps are re
 
 AEM can be configured to store data in Microsoft's Azure storage service. It uses the `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID for configuration.
 
-In order to enable the Azure data store functionality, a feature pack containing the Azure Connector needs to be downloaded and installed. Go to the [Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) and download the latest version from the 1.6.x versions of the feature pack (for example, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+In order to enable the Azure data store functionality, a feature pack containing the Azure Connector needs to be downloaded and installed. Go to the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) and download the latest version from the 1.6.x versions of the feature pack (for example, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
@@ -466,11 +488,12 @@ You can run data store garbage collection by:
 >When performing garbage collection in a clustered or shared data store setup (with Mongo or Segment Tar) the log might display warnings about the inability to delete certain blob IDs. This happens because blob IDs deleted in a previous garbage collection are incorrectly referenced again by other cluster or shared nodes which do not have information about the ID deletions. As a result, when garbage collection is performed it logs a warning when it tries to delete an ID that has already been deleted in the last run. This behaviour does not affect performance or functionality.
 
 >[!NOTE]
-> If you are using a shared datastore setup and datastore garbage collection is disabled, running the Lucene Binary cleanup task can suddenly increase the disk space used. To avoid this, you need to disable BlobTracker on all author and publish instances as follows:
 >
-> 1. Stop the AEM Instance.
-> 2. Add the `blobTrackSnapshotIntervalInSecs=L"0"` parameter in the `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` file. This parameter requires Oak 1.12.0, 1.10.2 or later.
-> 3. Re-start the AEM Instance.
+>If you are using a shared datastore setup and datastore garbage collection is disabled, running the Lucene Binary cleanup task can suddenly increase the disk space used. To avoid this, you need to disable BlobTracker on all author and publish instances as follows:
+>
+>1. Stop the AEM Instance.
+>2. Add the `blobTrackSnapshotIntervalInSecs=L"0"` parameter in the `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` file. This parameter requires Oak 1.12.0, 1.10.2 or later.
+>3. Re-start the AEM Instance.
 
 With newer versions of AEM, data store garbage collection can also be run on data stores shared by more than one repository. In order to be able to run data store garbage collection on a shared data store, take the following steps:
 

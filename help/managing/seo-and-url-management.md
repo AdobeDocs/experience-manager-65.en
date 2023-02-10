@@ -24,7 +24,7 @@ There are some generally accepted best practices when it comes to URLs.
 
 In your AEM project, when evaluating your URLs, ask yourself the following:
 
-“If a user were to see this URL and none of the content on the page, could they describe what this page was?”
+"If a user were to see this URL and none of the content on the page, could they describe what this page was?"
 
 If the answer is yes, then it is likely that the URL will work well for a search engine.
 
@@ -150,7 +150,7 @@ There are a few points to be considered with this approach:
 The SCR annotation for this type of servlet would look something like this:
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 
 ```
 
@@ -316,7 +316,7 @@ Examples:
 Both would apply the following tag to the head of the page:
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 
 ```
 
@@ -365,9 +365,9 @@ AEM uses the [Apache Sling Sitemap module](https://github.com/apache/sling-org-a
 
 >[!NOTE]
 >
-> This is available as product feature since Adobe Experience Manager Version 6.5.11.0.
+>This is available as product feature since Adobe Experience Manager Version 6.5.11.0.
 > 
-> For older versions you can register a Sling Servlet yourself, to listen for a `sitemap.xml` call and use the resource provided via the servlet API to lookup the current page and its descendants to output a sitemap.xml file. 
+>For older versions you can register a Sling Servlet yourself, to listen for a `sitemap.xml` call and use the resource provided via the servlet API to lookup the current page and its descendants to output a sitemap.xml file. 
 
 The Apache Sling Sitemap module distinguishes between a top level sitemap and a nested sitemap, both being generated for any resource that has the `sling:sitemapRoot` property set to `true`. In general, sitemaps are rendered using selectors at the path of the tree's top level sitemap, which is the resource that has no other sitemap root ancestor. This top level sitemap root also exposes the sitemap index, which normally is what a site owner would configure in the Search Engine's configuration portal or add to the site's `robots.txt`. 
 
@@ -379,7 +379,7 @@ For example, consider a site that defines a top level sitemap root at `my-page` 
 
 >[!NOTE]
 >
-> The selectors `sitemap` and `sitemap-index` may interfere with custom implementations. If you do not want to use the product feature, configure your own servlet serving these selectors with a `service.ranking` higher than 0. 
+>The selectors `sitemap` and `sitemap-index` may interfere with custom implementations. If you do not want to use the product feature, configure your own servlet serving these selectors with a `service.ranking` higher than 0. 
 
 In the default configuration, the Page Properties Dialog provides an option to mark a Page as a sitemap root and so, as described above, generate a sitemap of itself and its descendants. This behavior is implemented by implementations of the `SitemapGenerator` interface and may be extended by adding alternative implementations. However, as the frequency on which to regenerate the XML sitemaps highly depends on the content authoring workflows and workloads, the product does not ship any `SitemapScheduler` configuration. This makes the feature effectively opt-in. 
 

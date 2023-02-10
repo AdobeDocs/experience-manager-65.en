@@ -18,7 +18,7 @@ The configuration file contains the PDF Generator conversion information, includ
 
 >[!NOTE]
 >
->You cannot change the time-out setting for PDF Generator by importing a custom native2pdfconfig.xml file. The time-out setting in that file is for informational purposes only, and displays the current setting in PDF Generator. To change the time-out setting, see “Setting PDF Generator performance parameters” in [Installing and Deploying AEM forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>You cannot change the time-out setting for PDF Generator by importing a custom native2pdfconfig.xml file. The time-out setting in that file is for informational purposes only, and displays the current setting in PDF Generator. To change the time-out setting, see "Setting PDF Generator performance parameters" in [Installing and Deploying AEM forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
 
 ## Export your current configuration file {#export-your-current-configuration-file}
 

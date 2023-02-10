@@ -4,7 +4,7 @@ seo-title: Creating Translation Projects for Content Fragments
 description: Learn how to translate content fragments.
 seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
-contentOwner: heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference

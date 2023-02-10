@@ -82,68 +82,23 @@ Adobe Experience Manager operates with the following versions of the Java Virtua
 >
 >It is recommended to track the Security Bulletins from the Java vendor to ensure the safety and security of production environments and install the latest Java Updates.
 
-<!--- <table>
- <tbody>
-  <tr>
-   <td><strong>Platform</strong></td>
-   <td><strong>Support Level</strong></td>
-   <td><strong>Link</strong></td>
-  </tr>
-  <tr>
-   <td>Azul Zulu OpenJDK 11 - 64bit</td>
-   <td>A: Supported [1]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24</td>
-  </tr>
-  <tr>
-   <td>Azul Zulu OpenJDK 8 - 64bit</td>
-   <td>A: Supported [1]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18</td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 11 JDK - 64bit</td>
-   <td>A: Supported [2]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 10 JDK</td>
-   <td>Z: Not supported [2]</td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 9 JDK</td>
-   <td>Z: Not supported [2]</td>
-  </tr>
-  <tr>
-   <td>Oracle Java SE 8 JDK - 64bit</td>
-   <td>A: Supported [2]</td>
-   <td> https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10<td>
-  </tr>
-  <tr>
-   <td>IBM J9 VM - build 2.9, JRE 1.8.0</td>
-   <td>A: Supported [3]</td>
-  </tr>
-  <tr>
-   <td>IBM J9 VM - build 2.8, JRE 1.8.0</td>
-   <td>A: Supported [3]</td>
-  </tr>
- </tbody>
-</table> --->
-
 | **Platform** | **Support Level** | **Link** |
 |---|---|---|
-| Azul Zulu OpenJDK 11 - 64bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24) |
-| Azul Zulu OpenJDK 8 - 64bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Azul*+Zulu*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=18) |
-| Oracle Java SE 11 JDK - 64bit | A: Supported `[2]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
-| Oracle Java SE 10 JDK | Z: Not supported `[2]` |
-| Oracle Java SE 9 JDK | Z: Not supported `[2]` |
-| Oracle Java SE 8 JDK - 64bit | A: Supported `[2]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
-| IBM J9 VM - build 2.9, JRE 1.8.0 | A: Supported `[3]` |
-| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[3]` |
+| Oracle Java SE 11 JDK - 64-bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=24<td>) |
+| Oracle Java SE 10 JDK | Z: Not supported `[1]` |
+| Oracle Java SE 9 JDK | Z: Not supported `[1]` |
+| Oracle Java SE 8 JDK - 64-bit | A: Supported `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=10) |
+| IBM J9 VM - build 2.9, JRE 1.8.0 | A: Supported `[2]` |
+| IBM J9 VM - build 2.8, JRE 1.8.0 | A: Supported `[2]` |
+| Azul Zulu OpenJDK 11 - 64-bit | A: Supported `[3]` | |
+| Azul Zulu OpenJDK 8 - 64-bit | A: Supported `[3]` | |
 
-1. Support and distribution of Azul Zulu Builds of OpenJDK, including all maintenance updates of LTS releases will be supported by Adobe directly for all AEM customers making use of the Azul Zulu Builds of OpenJDK, starting with AEM 6.5 SP9 resp. See the [Azul Java support for Adobe Experience Manager Q&A](assets/adobe-azul-openjdk-license-agreement.pdf) for more information.
+1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in production environment, Adobe provides support only for the LTS releases of Java. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology. See the [Java support policy for Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) for more information.
 
-1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java SE products. Java 9, Java 10, and Java 12 are non-LTS releases by Oracle (see [Oracle Java SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in production environment, Adobe provides support only for the LTS releases of Java. Support and distribution of the Oracle Java SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, will be supported by Adobe directly for all AEM customers making use of the Oracle Java SE technology **until December 2022**. See the [Oracle Java support for Adobe Experience Manager Q&A](assets/adobe-oracle-java-license-agreement.pdf) for more information.
 
 1. The IBM JRE is only supported along with WebSphere Application Server.
+ 
+1. Azul Zulu OpenJDK LTS versions are supported for on-premises AEM deployments starting with version 6.5 SP9. Support and distribution of the Azul Zulu JDK LTS versions must be licensed directly from Azul by our customers.
 
 
 ### Storage & Persistence {#storage-persistence}
@@ -226,26 +181,37 @@ Adobe Experience Manager works with the following server platforms for productio
 | **Platform** |**Support Level** |
 |---|---|
 | **Linux, based on Red Hat distribution** |A: Supported `[1]` `[3]` |
-| Linux, based on Debian distribution incl. Ubuntu |A: Supported `[2]` |
-| Linux, based on SUSE distribution |A: Supported |
-| Microsoft Windows Server 2019 `[4]` |R: Restricted Support for new contracts |
+| Linux, based on Debian distribution incl. Ubuntu |A: Supported `[1]` `[2]` |
+| Linux, based on SUSE distribution |A: Supported `[1]`|
+| Microsoft Windows Server 2019 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft Windows Server 2016 `[4]` |R: Restricted Support for new contracts `[5]` |
 | Microsoft Windows Server 2012 R2 |Z: Not supported  |
 | Oracle Solaris 11 |Z: Not supported  |
 | IBM AIX 7.2 |Z: Not supported  |
 
-1. Linux Kernel 2.6, 3.x and 4.x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux and Amazon Linux. AEM Forms add-on features are only supported on CentOS 7, Red Hat Enterprise Linux 7, and Red Hat Enterprise Linux 8.
-1. AEM Forms is supported only on Ubuntu 16.04 LTS
-1. Linux distribution supported by Adobe Managed Services
+1. Linux Kernel 2.6, 3. x, 4. x, and 5. x includes derivatives from Red Hat distribution, including Red Hat Enterprise Linux, CentOS, Oracle Linux, and Amazon Linux. AEM Forms add-on features are only supported on CentOS 7, Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, and Red Hat Enterprise Linux 9. 
+1. AEM Forms is supported on Ubuntu 20.04 LTS.
+1. Linux distribution supported by Adobe Managed Services.
 1. Microsoft Windows production deployments are supported for customers upgrading to 6.5 and for non-production usage. New deployments are on-request for AEM Sites and Assets.
-1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions. 
+1. AEM Forms is supported on Microsoft Window Server without the Support-Level R restrictions.
+
+>[!NOTE]
+>
+>If you are installing AEM Forms 6.5, Please make sure you have installed the following 32 bit Microsoft Visual C++ redistributables.
+>
+>* Microsoft Visual C++ 2008 redistributable
+>* Microsoft Visual C++ 2010 redistributable
+>* Microsoft Visual C++ 2012 redistributable
+>* Microsoft Visual C++ 2013 redistributable (as of 6.5)
 
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager is supported running in a virtual machine on cloud computing environments, such as Microsoft Azure and Amazon Web Services (AWS), in compliance with the technical requirements listed on this page, and according to Adobe’s standard support terms.
+Adobe Experience Manager is supported running in a virtual machine on cloud computing environments, such as Microsoft Azure and Amazon Web Services (AWS), in compliance with the technical requirements listed on this page, and according to Adobe's standard support terms.
 
-Adobe recommends using Adobe Managed Services to deploy AEM on Azure or AWS. Adobe Managed Services provides experts with experience and skills of deploying and operating AEM in these cloud computing environments. See [additional documentation on Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+For a cloud-native environment, review the latest offering from the AEM product line: Adobe Experience Manager as a Cloud Service. See [Adobe Experience Manager as a Cloud Service Documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) for details.
+
+Adobe also offers Adobe Managed Services to deploy AEM on Azure or AWS. Adobe Managed Services provides experts with experience and skills of deploying and operating AEM in these cloud computing environments. See [additional documentation on Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 In all other cases of deploying AEM on Azure or AWS, or any other cloud computing environment, support from Adobe will be contained to the virtual compute environment in compliance with the technical specifications listed on this page. Any reported issue relative to AEM running in any of these cloud environments will need to be reproducible independently from any cloud service specific to the cloud computing environment, unless the cloud service is specifically supported as part of the technical requirements listed on this page, for example Azure Blob storage or AWS S3.
 
@@ -358,7 +324,7 @@ To successfully connect with Microsoft Windows 7+ to an AEM instance that is not
 
 1. Add the BasicAuthLevel registry entry to this subkey using a value of 2 or more.
 
-To improve responsivness of the WebDav Client under Windows - see [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570)
+To improve responsiveness of the WebDav Client under Windows - see [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570)
 
 ## Additional Platform Notes {#additional-platform-notes}
 
@@ -462,6 +428,8 @@ For Windows x86:
 
 ### Requirements for AEM Forms PDF Generator {#requirements-for-aem-forms-pdf-generator}
 
+### Software support for PDF Generator {#software-support-for-pdf-generator}
+
 <table>
  <tbody>
   <tr>
@@ -469,33 +437,49 @@ For Windows x86:
    <th><p><strong>Supported Formats for Conversion to PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> latest version</td>
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version (Deprecated)</td>
+   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
+  </tr>
+  <tr>
+   <td>Microsoft&reg; Office 2019</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
-   <td>WordPerfect X7</td>
+   <td>Microsoft&reg; Office 2016 (Deprecated)</td>
+   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
+  </tr>
+  <tr>
+   <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2016<br /> </td>
+   <td>Microsoft&reg; Office Visio 2016 (Deprecated)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
   <tr>
-   <td>Microsoft® Publisher 2016<br /> </td>
+   <td>Microsoft&reg; Publisher 2019<br /> </td>
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016<br /> </td>
+   <td>Microsoft&reg; Publisher 2016 (Deprecated)<br /> </td>
+   <td>PUB</td>
+  </tr>
+  <tr>
+   <td>Microsoft&reg; Project 2016 (Deprecated)<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
-   <td>OpenOffice 4.1.2</td>
+   <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
   </tr>
+  <tr>
+   <td>OpenOffice 4.1.2 (Deprecated)</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX,image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
+  </tr>  
  </tbody>
 </table>
 
@@ -505,19 +489,21 @@ For Windows x86:
 >
 >In addition:
 >
->* PDF Generator requires 32-bit version of [Acrobat 2017 classic track version 17.011.30078 or later](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
->* PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion.
->* PDF Generator does not support Microsoft Office 365.
+>* PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux.
+>* PDF Generator supports only the 32-bit Retail version of Microsoft Office Professional Plus and other software required for conversion on Windows operating system.
+>* PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on Linux operating system.
+>* PDF Generator does not support Microsoft Office 365.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
->* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
->
+>* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* PDF Generator service does not support Microsoft Windows 10.
+>* PDF Generator fails to convert files using Microsoft Visio 2019. You can continue to use Microsoft Visio 2016 to convert .VSD and .VSDX files.
+>* PDF Generator fails to convert files using Microsoft Project 2019. You can continue to use Microsoft Project 2016 to convert .VSD and .VSDX files.
 >
 
 ### Requirements for AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft® Windows® 10
+* Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, or Microsoft&reg; Windows&reg; 10
 * 1 GHz or faster processor with support for PAE, NX, and SSE2.
 * 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
 * 16 GB disk space for 32-bit or 20 GB disk space for 64-bit OS

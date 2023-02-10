@@ -30,11 +30,11 @@ The resources in this table can help you learn more about and get started using 
   </tr>
   <tr>
    <td><p>General information about AEM Forms and how it integrates with other Adobe products</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms Overview</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms Overview</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>All the documentation available for AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms documentation</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms documentation</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Patch updates, technical notes, and additional information on this product version</p> </td>
@@ -93,7 +93,7 @@ Disk space for installation:
 
 ### Supported Platforms {#supported-platforms}
 
-See the complete list of supported platforms for Workbench at [AEM Forms Supported Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+See the complete list of supported platforms for Workbench at [AEM Forms Supported Platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Designer installation considerations {#designer-installation-considerations}
 
@@ -168,7 +168,7 @@ Before you install Workbench, you must ensure that your environment includes the
 1. The following items are now installed on your computer:
    * **Workbench**: To run Workbench from the Start menu, select All Programs > AEM Forms > Workbench, if you chose to store the shortcut folder there. For  information,   see the <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Using Workbench</a> documentation.
    * **Designer**: You can access Designer from inside Workbench. For information, see Getting Started topic in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer Help</a>.
-   * **AEM Forms SDK**: For more information on using the SDK, see <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programming with AEM Forms</a>.
+   * **AEM Forms SDK**: For more information on using the SDK, see <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programming with AEM Forms</a>.
 
 ## Upgrading processes {#upgrading-processes}
 
@@ -184,7 +184,7 @@ To use Workbench, you must have an instance of AEM Forms running, typically on a
 
 ### Configuring time-out settings {#configuring-timeout-settings}
 
-By default, Workbench times out after two hours, regardless of activity or inactivity. To edit the time-out setting, see “Configuring User Management > Configure advanced system attributes” in the <a href="https://docs.adobe.com/content/help/en/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administration console Help</a>.
+By default, Workbench times out after two hours, regardless of activity or inactivity. To edit the time-out setting, see "Configuring User Management > Configure advanced system attributes" in the <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">administration console Help</a>.
 
 ### Configuring Workbench to connect over HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
@@ -227,7 +227,7 @@ When forms generator or output searches for, or updates, entries in the cache fo
 * **Template UUID**: Designer inserts in each template a unique identifier (UUID) for the form and its version. Each time the form is updated, the embedded UUID is updated. For example, an XDP template might show the following content:
 
   `<?xml version="1.0" encoding="UTF-8"?>`
-  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Render options**: Within the rendered form cache, the cache contents are stored separately for each set of unique render options.
 

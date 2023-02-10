@@ -90,6 +90,19 @@ For more information, see [Create an adaptive form](/help/forms/using/creating-a
 
 * See [Handling personally identifiable information](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) for recommendations on handling PII data.
 
+### Creating Form Templates 
+
+You can create an adaptive form using the form templates enabled in **Configuration Browser**. To enable the form templates, see [Creating Adaptive Form Template](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+The form templates can also be uploaded from Adaptive Form packages that are created on another author machine. Form templates are  made available by installing [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Some of the best practices recommended are:
+* The **nosamplecontent** runmode is recommended only for author and not for the publish nodes.
+* Authoring of assets such as adaptive form, themes, templates, or cloud configurations are performed over Author nodes only, which can be published at the configured Publish nodes.
+For more information, see [Publishing and unpublishing forms and documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* Forms addon package is required for Authoring as well as for Publishing to support the document service operations; hence it can be considered as a dependency. 
+If you only want Forms related sample template, themes, and DOR packages, then you can download them from [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+For further information, see the best practices in [Introduction to authoring adaptive forms](/help/forms/using/introduction-forms-authoring.md).
+
 ## Author adaptive forms {#author-adaptive-forms}
 
 ### Using touch-optimized UI for authoring {#using-touch-optimized-ui-for-authoring}
@@ -128,7 +141,7 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
     * In addition, you can use the following field properties:
 
         * `field.value` to change value of a field.
-        * f `ield.enabled` to enable/disable a field.
+        * `field.enabled` to enable/disable a field.
         * `field.visible` to change visibility of a field.
 
 * Adaptive form authors may need to write JavaScript code to build business logic in a form. While JavaScript is powerful and effective, it is likely that it could compromise on security expectations. Therefore, you must ensure that the form author is a trusted persona and there are processes to review and approve the JavaScript code before a form is put into production. Administrator can restrict the access to rule editor access to user groups based on their role or function. See [Grant rule editor access to select user groups](/help/forms/using/rule-editor-access-user-groups.md).
@@ -166,6 +179,7 @@ Consider the following best practices to overcome performance issues with large 
     * File attachment and Terms and conditions components are not supported in lazily loaded fragments.
     * Mark a value in a lazy loaded panel as Use Value Globally if that value is used in some other part the form so that the value is available for use when the containing panel is unloaded.
     * Consider writing visibility rules for fragments that should show or hide based on a condition.
+* Set the value of the **Number of calls per request** in the **Apache Sling Main Servlet** to a fairly large number. It enables the Forms server to allow additional calls. The configuration displays a default value of 1500. The value, 1500 calls, is for other Experience Manager components like Sites and Assets. The default value set of adaptive forms is 20000. If you encounter the `too many calls` error in logs or the form fails to render, try increasing the value to a large number to resolve the issue. If the number of calls are exceeding 20000, that means the form is complex and it might take some time to render the form in browser. This only happens for the first time the form is loaded, after that the form is cached and once the form is cached, there is no significant impact on performance.
 
 ### Prefilling adaptive forms {#prefilling-adaptive-forms}
 
@@ -221,17 +235,6 @@ A document of record (DoR) is a flattened PDF version of an adaptive form that y
 * Explore and learn about guideBridge APIs
 
 For more information, see [AEM Chrome Plug-in - Adaptive Form](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-Calvin SDK is a utility API for Adaptive Forms developers to test Adaptive Forms. Calvin SDK is built on top of the [Hobbes.js testing framework](https://docs.adobe.com/docs/en/aem/6-3/develop/ref/test-api/index.html). You can use the framework to test the following:
-
-* Rendition experience of an Adaptive Form
-* Prefill experience of an Adaptive Form
-* Submit experience of an Adaptive Form
-* Expression Rules
-* Validations
-* Lazy Loading
-
-For more information, see [Automate testing of adaptive forms](/help/forms/using/calvin.md).
 
 ### Validating adaptive forms on AEM server {#validating-adaptive-forms-on-aem-server}
 
@@ -313,3 +316,5 @@ One of the key challenges for organizations is how to handle personally identifi
 
 * Use a secure, external storage like database to store data from draft and submitted forms. See [Configuring external storage for drafts and submitted forms data](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Use Terms and Conditions form component to take explicit consent from user before enabling auto save. In this case, enable auto save only when user agrees to the conditions in Terms and Conditions component.
+
+

@@ -61,19 +61,19 @@ You can configure the following properties for a Watched Folder.
 * **inputProcessorType (String)**: The type of the process to start. You can specify workflow, script, or service. It is a mandatory property.
 * **inputProcessorId (String)**: The behavior of the inputProcessorId property is based on the value specified for the inputProcessorType property. It is a mandatory property. The following list details all the possible values of the inputProcessorType property and corresponding requisite for the inputProcessorType property:
 
-    * For workflow, specify the workflow model to be executed. For example, /etc/workflow/models/&lt;workflow_name&gt;/jcr:content/model
-    * For script, specify JCR path of the script to be executed. For example, /etc/fd/watchfolder/test/testScript.ecma
-    * For service, specify the filter used for locating an OSGi service. The service is registered as an implementation of com.adobe.aemfd.watchfolder.service.api.ContentProcessor Interface.
+  * For workflow, specify the workflow model to be executed. For example, /etc/workflow/models/&lt;workflow_name&gt;/jcr:content/model
+  * For script, specify JCR path of the script to be executed. For example, /etc/fd/watchfolder/test/testScript.ecma
+  * For service, specify the filter used for locating an OSGi service. The service is registered as an implementation of com.adobe.aemfd.watchfolder.service.api.ContentProcessor Interface.
 
 * **runModes (String)**: A comma-separated list of allowed run-modes for workflow execution. A few examples are:
 
-    * author
+  * author
 
-    * publish
+  * publish
 
-    * author, publish
+  * author, publish
 
-    * publish, author
+  * publish, author
 
 >[!NOTE]
 >
@@ -93,27 +93,27 @@ You can configure the following properties for a Watched Folder.
 * **excludeFilePattern (String)**: A semi-colon (;) delimited list of patterns that a Watched Folder uses to determine which files and folders to scan and pick up. Any file or folder with this pattern is not scanned for processing. This setting is useful when the input is a folder with multiple files. The contents of the folder can be copied into a folder with a name that are picked up by the Watched Folder. This prevents the Watched Folder from picking up a folder for processing before the folder is completely copied into the input folder. The default value is null.
   You can use [file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) to exclude:
 
-    * Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-    * Files with specific names; for example, data&#42; would exclude files and folders named data1, data2, and so on.
-    * Files with composite expressions in the name and extension, as in these examples:
+  * Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Files with specific names; for example, data&#42; would exclude files and folders named data1, data2, and so on.
+  * Files with composite expressions in the name and extension, as in these examples:
 
-        * Data[0-9][0-9][0-9].[dD][aA]'port'
-        * &#42;.[dD][Aa]'port'
-        * &#42;.[Xx][Mm][Ll]
+    * Data[0-9][0-9][0-9].[dD][aA]'port'
+    * &#42;.[dD][Aa]'port'
+    * &#42;.[Xx][Mm][Ll]
 
 For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
 * **includeFilePattern (String)**: A semi-colon (;) delimited list of patterns that the Watched Folder uses to determine which folders and files to scan and pick up. For example, if the IncludeFilePattern is input&#42;, all files and folders that match input&#42; are picked up. This includes files and folders named input1, input2, and so on. The default value is &#42; and indicates all files and folders. You can use file patterns to include:
 
-    * Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-    * Files with specific names; for example, data.&#42; would include files and folders named data1, data2, and so on.
+  * Files with specific filename extensions; for example, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+  * Files with specific names; for example, data.&#42; would include files and folders named data1, data2, and so on.
 
 * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA]'port'
+  * Data[0-9][0-9][0-9].[dD][aA]'port'
 
-        * &#42;.[dD][Aa]'port'
-        * &#42;.[Xx][Mm][Ll]
+    * &#42;.[dD][Aa]'port'
+    * &#42;.[Xx][Mm][Ll]
 
 For more information about file patterns, see [About file patterns](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -121,20 +121,20 @@ For more information about file patterns, see [About file patterns](../../forms/
 * **purgeDuration (Long)**: Files and folders in the result folder are purged when they are older than this value. This value is measured in days. This setting is useful in ensuring that the result folder does not become full. A value of -1 days indicates to never delete the results folder. The default value is -1.
 * **resultFolderName (String)**: The folder where the saved results are stored. If the results do not appear in this folder, check the failure folder. Read-only files are not processed and are saved in the failure folder. This value can be an absolute or relative path with the following file patterns:
 
-    * %F = filename prefix
-    * %E = filename extension
-    * %Y = year (full)
-    * %y = year (last two digits)
-    * %M = month
-    * %D = day of month
-    * %d = day of year
-    * %H = hour (24-hour clock)
-    * %h = hour (12-hour clock)
-    * %m = minute
-    * %s = second
-    * %l = millisecond
-    * %R = random number (between 0 and 9)
-    * %P = process or job id
+  * %F = filename prefix
+  * %E = filename extension
+  * %Y = year (full)
+  * %y = year (last two digits)
+  * %M = month
+  * %D = day of month
+  * %d = day of year
+  * %H = hour (24-hour clock)
+  * %h = hour (12-hour clock)
+  * %m = minute
+  * %s = second
+  * %l = millisecond
+  * %R = random number (between 0 and 9)
+  * %P = process or job id
 
   For example, if it is 8 PM on July 17, 2009 and you specify C:/Test/WF0/failure/%Y/%M/%D/%H/, the result folder is C:/Test/WF0/failure/2009/07/17/20
 
@@ -168,9 +168,9 @@ For more information about file patterns, see [About file patterns](../../forms/
 * **enabled (Boolean)**: Deactivates and activates scanning for a Watched Folder. Set enabled to true, to start scanning the Watched Folder. The default value is true.
 * **payloadMapperFilter:** When a folder is configured as watched folder, a folder structure is created within the watched folder. The structure has folders to provide inputs, receive outputs (results), save data for failures, preserve data for long-lived processes, and save data for various stages. The folder structure of a Watched Folder can serve as a payload of Forms-centric workflows. A payload mapper allows you to define structure of a payload which uses a Watched Folder for input, output, and processing. For example, if you use the default mapper, it maps content of Watched Folder with [payload]\input and [payload]\output folder. Two out-of-the-box payload mapper implementations are available. If you do not have [a custom implementation](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), use one of out-of-the-box implementation:
 
-    * **Default mapper:** Use the default payload mapper to keep input and output contents of the watched folders in separate input and output folders in the payload. Also, in payload path of a workflow, use [payload]/input/ and [payload]/output paths to retrive and save content.
+  * **Default mapper:** Use the default payload mapper to keep input and output contents of the watched folders in separate input and output folders in the payload. Also, in payload path of a workflow, use [payload]/input/ and [payload]/output paths to retrive and save content.
 
-    * **Simple File-based payload mapper:** Use the Simple File-based payload mapper to keep input and output contents directly in the payload folder. It does not create any extra hierarchy, like default mapper.
+  * **Simple File-based payload mapper:** Use the Simple File-based payload mapper to keep input and output contents directly in the payload folder. It does not create any extra hierarchy, like default mapper.
 
 ### Custom configuration parameters {#custom-configuration-parameters}
 
@@ -527,8 +527,8 @@ After files are moved to the stage folder, invocation requests are created for e
 
 * If Watched Folder has successfully created the invocation request for each of the files in the stage folder and the server crashes, there are two behaviors based on the invocation type:
 
-    * **Synchronous**: If Watched Folder is configured to invoke the service synchronously, all the files in the stage folder remain unprocessed in the stage folder.
-    * **Asynchronous**: In this case, Watched Folder relies on the Job Manager service. If the Job Manager Service calls back Watched Folder, the files in the stage folder are moved to the preserve or failure folder based on the results of the invocation. If the Job Manager service does not call back Watched Folder, the files will remain unprocessed in the stage folder. This situation happens when Watched Folder is not running when the Job Manager calls back.
+  * **Synchronous**: If Watched Folder is configured to invoke the service synchronously, all the files in the stage folder remain unprocessed in the stage folder.
+  * **Asynchronous**: In this case, Watched Folder relies on the Job Manager service. If the Job Manager Service calls back Watched Folder, the files in the stage folder are moved to the preserve or failure folder based on the results of the invocation. If the Job Manager service does not call back Watched Folder, the files will remain unprocessed in the stage folder. This situation happens when Watched Folder is not running when the Job Manager calls back.
 
 #### Recover unprocessed source files in the stage folder {#recover-unprocessed-source-files-in-the-stage-folder}
 
@@ -567,9 +567,9 @@ Administrators can specify the type of file that can invoke a service. Multiple 
 * Files with specific names; for example, data.&#42;
 * Files with composite expressions in the name and extension, as in these examples:
 
-    * Data[0-9][0-9][0-9].[dD][aA]'port'
-    * &#42;.[dD][Aa]'port'
-    * &#42;.[Xx][Mm][Ll]
+  * Data[0-9][0-9][0-9].[dD][aA]'port'
+  * &#42;.[dD][Aa]'port'
+  * &#42;.[Xx][Mm][Ll]
 
 * The administrator can define the file pattern of the output folder in which to store the results. For the output folders (result, preserve, and failure), the administrator can specify any of these file patterns:
 * %Y = year (full)
@@ -590,7 +590,7 @@ Output parameter mappings can also specify additional patterns, such as these:
 * %F = Source Filename
 * %E = Source Filename Extension
 
-If the output parameter mapping pattern ends with “File.separator”, (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with “File.separator”, the content (result file or folder) is created with that name.
+If the output parameter mapping pattern ends with "File.separator", (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with "File.separator", the content (result file or folder) is created with that name.
 
 ## Using PDF Generator with a Watched Folder {#using-pdf-generator-with-a-watched-folder}
 
@@ -641,7 +641,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
 ### Create a Workflow {#create-a-workflow}
 
 1. Open AEM Workflow UI in a browser window.
-   https://[servername]:'port'/workflow
+   <https://[servername>]:'port'/workflow
 
 1. In the Models view, click **New**. In the New Workflow dialog, specify **Title**, and click **OK**.
 
@@ -677,3 +677,7 @@ The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Wo
     * outputFilePattern (String): Pattern of the output file. You can specify a folder or file pattern. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
    Apart from the mandatory properties mentioned above, Watched Folders also support a few optional properties. For complete list and description of optional properties, see [Watched Folder properties](#watchedfolderproperties).
+
+## Known issues {#watched-folder-known-issues}
+
+On starting AEM 6.5 Forms on JEE, files start getting processed before JBoss completely starts and files fail to process. To avoid it, before starting JBoss, clear out all the Watched Folders.

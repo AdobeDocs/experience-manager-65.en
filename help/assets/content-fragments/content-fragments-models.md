@@ -13,7 +13,7 @@ To use Content Fragment Models you:
 
 1. [Enable Content Fragment Model functionality for your instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Create](#creating-a-content-fragment-model), and [configure](#defining-your-content-fragment-model), your Content Fragment Models
-1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments for use when creating Content Fragments
+1. [Enable your Content Fragment Models](#enabling-disabling-a-content-fragment-model) for use when creating Content Fragments 
 1. [Allow your Content Fragment Models on the required Assets folders](#allowing-content-fragment-models-assets-folder) by configuring **Policies**.
 
 ## Creating a Content Fragment Model {#creating-a-content-fragment-model}
@@ -70,7 +70,7 @@ The content fragment model effectively defines the structure of the resulting co
 
        >[!CAUTION]
        >
-       >When manually updating the property **Property Name** for a data type, note that names must contain only Latin characters, numerical digits and underscore "_" as special character.
+       >When manually updating the property **Property Name** for a data type, note that names must contain only A-Z, a-z, 0-9 and underscore "_" as special character.
        >
        >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
@@ -136,7 +136,7 @@ Many properties are self-explanatory, for certain properties additional details 
 
 * **Property Name**
 
-  When manually updating this property for a data type, note that names **must** contain *only* Latin characters, numerical digits and underscore "_" as special character.
+  When manually updating this property for a data type, note that names **must** contain *only* A-Z, a-z, 0-9 and underscore "_" as special character.
 
   >[!CAUTION]
   >

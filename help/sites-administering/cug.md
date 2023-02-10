@@ -16,13 +16,14 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 
 Closed User Groups (CUGs) are used to limit access to specific pages that reside within a published internet site. Such pages require the assigned members to login and provide security credentials.
 
-To configure such a area within your website you:
+To configure such an area within your website you:
 
 * [create the actual closed user group and assign members](#creating-the-user-group-to-be-used).
 
 * [apply this group to the required pages](#applying-your-closed-user-group-to-content-pages) and select (or create) the login page for use by the members of the CUG; also specified when applying a CUG to a content page.
 
-* [create a link, of some form, to at least one page within the protected area](#linking-to-the-realm), otherwise it will not be visible.
+* [create a link, of some form, to at least one page within the protected area](#linking-to-the-cug-pages), otherwise it will not be visible.
+
 * [configure the Dispatcher](#configure-dispatcher-for-cugs) if in use.
 
 >[!CAUTION]
@@ -61,58 +62,63 @@ To create a closed user group:
 
 ## Applying Your Closed User Group To Content Pages {#applying-your-closed-user-group-to-content-pages}
 
-To apply the CUG to a page:
+To apply the CUG to a page, or pages:
 
 1. Navigate to the root page of the restricted section you want to assign to your CUG.
-1. Select the page by clicking on its thumbnail and then clicking **Properties** in the top panel.
+1. Select the page by clicking on its thumbnail and then selecting **Properties** in the top toolbar.
 
    ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. In the following window, go to the **Advanced** tab.
-1. Scroll down and enable the tickbox in the **Authentication Requirement** section.
+1. In the following window, open the **Advanced** tab.
 
-1. Add your configuration path below, then press Save.
-1. Next, go to the **Permissions** tab and press the **Edit Closed User Group** button.
+1. Scroll down to the **Authentication Requirement** section.
+
+   1. Activate the **Enable** tickbox.
+
+   1. Add the path to your **Login Page**.
+   This is optional, if left blank the standard login page will be used.
+
+   ![CUG added](assets/cug-authentication-requirement.png)
+
+1. Next, go to the **Permissions** tab and select **Edit Closed User Group**.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
-   >[NOTE!]
+   >[!NOTE]
    >
-   > Note that CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
+   >CUGs in the Permissions tab cannot be rolled out to Live Copies from Blueprints. Please plan around this when configuring Live Copy.
    >
-   > For more information, see [this page](closed-user-groups.md#aem-livecopy).
+   >For more information, see [this page](closed-user-groups.md#aem-livecopy).
 
-1. Look for and add your CUG in the following window - in this case add the group named **cug_access**. Finally, press **Save**.
-1. Click **Enabled** to define that this page (and any child pages) belong to a CUG.
-1. Specify the **Login Page** that members of the group will use; for example:
+1. The **Edit Closed User Group** dialog will open. Here you can search for, and select, your CUG, then confirm the group selection with **Save**. 
 
-   `/content/geometrixx/en/toolbar/login.html`
+   The group will be added to the list; for example, the group **cug_access**.
 
-   This is optional, if left blank the standard login page will be used.
+   ![CUG added](assets/cug-added.png)
 
-1. Add the **Admitted Groups**. Use + to add groups or - to remove. Only members of these groups will be allowed to log in and access the pages.
-1. Assign a **Realm** (a name for the groups of pages) if required. Leave empty to use the page title.
-1. Click **OK** to save the specification.
+1. Confirm the changes with **Save & Close**.
 
-See [Identity Management](/help/sites-administering/identity-management.md) for information about profiles in the publish environment and providing forms for logging in and out.
+>[!NOTE]
+>
+>See [Identity Management](/help/sites-administering/identity-management.md) for information about profiles in the publish environment and providing forms for logging in and out.
 
-## Linking To The Realm {#linking-to-the-realm}
+## Linking To The CUG Pages {#linking-to-the-cug-pages}
 
-Since the target of any links to the CUG Realm are not visible to the anonymous user, the linkchecker will remove such links.
+Since the target of any links to the CUG pages are not visible to the anonymous user, the linkchecker will remove such links.
 
-To avoid this, it is advisable to create non-protected redirect pages that point to pages within the CUG Realm. The navigation entries are then rendered without causing the linkchecker any problems. Only when actually accessing the redirect page will the user be redirected inside the CUG Realm - after successfully providing their login credentials.
+To avoid this, it is advisable to create non-protected redirect pages that point to pages within the CUG area. The navigation entries are then rendered without causing the linkchecker any problems. Only when actually accessing the redirect page will the user be redirected inside the CUG area - after successfully providing their login credentials.
 
 ## Configure Dispatcher for CUGs {#configure-dispatcher-for-cugs}
 
 If you are using Dispatcher, you need to define a Dispatcher farm with the following properties:
 
-* [virtualhosts](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): Matches the path to the pages that the CUG applies to.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts): Matches the path to the pages that the CUG applies to.
 * \sessionmanagement: see below.
-* [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): A cache directory that is dedicated to the files that the CUG applies to.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache): A cache directory that is dedicated to the files that the CUG applies to.
 
 ### Configuring Dispatcher Session Management for CUGs {#configuring-dispatcher-session-management-for-cugs}
 
-Configure [session management in the dispatcher.any file](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) for the CUG. The authentication handler that is used when access is requested for CUG pages determines how you configure session management.
+Configure [session management in the dispatcher.any file](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) for the CUG. The authentication handler that is used when access is requested for CUG pages determines how you configure session management.
 
 ```xml
 /sessionmanagement
@@ -126,7 +132,7 @@ Configure [session management in the dispatcher.any file](https://helpx.adobe.co
 >When a Dispatcher farm has session-management enabled, all pages that the farm handles are not cached. To cache pages that are outside of CUG, create a second farm in dispatcher.any
 >that handles the non-CUG pages.
 
-1. Configure [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) by defining `/directory`; for example:
+1. Configure [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) by defining `/directory`; for example:
 
    ```xml
    /sessionmanagement
@@ -136,4 +142,4 @@ Configure [session management in the dispatcher.any file](https://helpx.adobe.co
      }
    ```
 
-1. Set [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) to `0`.
+1. Set [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-when-authentication-is-used) to `0`.

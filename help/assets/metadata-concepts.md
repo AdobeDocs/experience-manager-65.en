@@ -215,7 +215,7 @@ XMP standardizes how metadata is defined, created, and processed by providing a 
 All legacy metadata from EXIF, ID3, or Microsoft Office is automatically translated to XMP, which can be extended to support customer-specific metadata schema, such as product catalogs.
 
 Metadata in XMP consists of a set of properties. These properties are always associated with a
-particular entity referred to as a resource; that is, the properties are “about” the resource. In the case of XMP, the resource is always the asset.
+particular entity referred to as a resource; that is, the properties are "about" the resource. In the case of XMP, the resource is always the asset.
 
 ### XMP ecosystem {#xmp-ecosystem}
 

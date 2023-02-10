@@ -26,7 +26,7 @@ This page provides an overview of Adobe Experience Manager (AEM) components such
 * Have a standardized user interface.
 * Have edit behavior that can be configured.
 * Use dialog boxes that are built using sub-elements based on Granite UI components
-* Are developed using [HTL](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) (recommended) or JSP.
+* Are developed using [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (recommended) or JSP.
 * Can be developed to create customized components that extend the default functionality.
 
 Because components are modular, you can:
@@ -58,7 +58,7 @@ The components provided and their usage within the [sample We.Retail websites](/
 
 There are two sets of Adobe-provided AEM components available:
 
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Foundation Components](/help/sites-authoring/default-components-foundation.md)
 
 **Core Components** were introduced with AEM 6.3 and offer flexible and feature-rich authoring functionality. The [We.Retail reference site](/help/sites-developing/we-retail.md) illustrates how the core components can be used and represent the current best-practices of component development.
@@ -67,7 +67,7 @@ There are two sets of Adobe-provided AEM components available:
 
 >[!NOTE]
 >
->[Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) represent the current best practices for component design and development and serve as reference implementations.
+>[Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) represent the current best practices for component design and development and serve as reference implementations.
 >
 >[AEM Modernization Tools](modernization-tools.md) can help the migration to Core Components.
 
@@ -100,7 +100,7 @@ The following pages provide more detailed information about developing these&mda
 * [Components for Content Fragments](/help/sites-developing/components-content-fragments.md)
 * [Obtaining Page Information in JSON Format](/help/sites-developing/pageinfo.md)
 * [Internationalizing Components](/help/sites-developing/i18n.md)
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Using Hide Conditions](/help/sites-developing/hide-conditions.md)
 * Classic UI
 

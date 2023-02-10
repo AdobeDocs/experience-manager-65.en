@@ -51,7 +51,7 @@ The [Components Console](/help/sites-authoring/default-components-console.md) gi
 
 The following pages provide links to some of additional, important information about components:
 
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - The Core Components offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) - The Core Components offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
 
 * [Communities](/help/communities/author-communities.md) - Components provide interactive features for a website, such as forums and comments. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
 

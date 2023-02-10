@@ -1,7 +1,7 @@
 ---
 cloud: Experience Cloud
 product: adobe experience manager
-solution: Experience Manager, Experience Manager Sites, Experience Manager 6.5
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5 Developing User Guide
 breadcrumb-title: Developing Guide
@@ -64,7 +64,7 @@ role: Developer
     + [Developing the Bulk Editor](dev-bulk-editor.md)
     + [Developing Reports](dev-reports.md)
 + Components{#components}
-    + [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+    + [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
     + [Style System](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
     + [Components Overview](components.md)
     + [AEM Components - The Basics](components-basics.md)

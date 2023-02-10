@@ -9,6 +9,12 @@ exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 ---
 # Manage metadata of your digital assets {#managing-metadata-for-digital-assets}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en)                  |
+| AEM 6.5     | This article         |
+| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata.html?lang=en)           |
+
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.

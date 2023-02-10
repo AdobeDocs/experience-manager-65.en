@@ -397,7 +397,7 @@ To view the tracked events you can use the Document Events filter on the Events 
 
 These settings control the text displayed in the login prompt that appears when a user logs into document security through a client application.
 
-**Welcome Text:** The welcome message text, such as “Please Login with Your User name and Password”. The welcome message text should contain information on how to log in to document security and how to contact an administrator or other designated support person in your organization for assistance. For example, external users may need to contact an administrator if they forget their passwords or need assistance with the registration or login process. The maximum length of the welcome text is 512 characters.
+**Welcome Text:** The welcome message text, such as "Please Login with Your User name and Password". The welcome message text should contain information on how to log in to document security and how to contact an administrator or other designated support person in your organization for assistance. For example, external users may need to contact an administrator if they forget their passwords or need assistance with the registration or login process. The maximum length of the welcome text is 512 characters.
 
 **User Name Text:** The text label for the user name box.
 
@@ -435,7 +435,7 @@ You can create dynamic watermarks with several watermark elements with each elem
 
 If you choose a text-based watermark, you can specify several elements within the watermark with multiple text entries and specify the positioning of each element. Assign meaningful names to these elements, such as header, footer, and so on.
 
-For example, if you want to specify different text in the header, footer, on the margins, and across the document as a watermark, you create several watermark elements and specify their positions. If you want the user ID of the user and the current date of accessing the document to appear in the header, the policy name in the right margin, and a custom text “CONFIDENTIAL” to appear diagonally across the document, you define separate watermark elements with text as the type, and specify its formatting and positioning. When the watermark is applied to a document, all the elements in the watermark are applied to the document at the same time, in the order they are added to the watermark.
+For example, if you want to specify different text in the header, footer, on the margins, and across the document as a watermark, you create several watermark elements and specify their positions. If you want the user ID of the user and the current date of accessing the document to appear in the header, the policy name in the right margin, and a custom text "CONFIDENTIAL" to appear diagonally across the document, you define separate watermark elements with text as the type, and specify its formatting and positioning. When the watermark is applied to a document, all the elements in the watermark are applied to the document at the same time, in the order they are added to the watermark.
 
 Typically, you use PDF-based watermarks to include graphic contents such as logos or special symbols such as copyright or registered trademark.
 
@@ -548,7 +548,7 @@ Document security automatically generates a registration invitation email when t
 
 The registration email contains a link to a Registration page and information about how to register. After the invited user registers, document security issues an activation email with a link to an Activation page. When activated, the account remains valid until you deactivate or delete it.
 
-If you enable built-in registration, you specify your SMTP server, registration email details, access capabilities, and reset password email information only once. Before you enable built-in registration, ensure that you have created a local domain in User Management have assigned the “Document security Invite User” role to the appropriate users and groups in your organization. (See [Add a local domain](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) and [Creating and configuring roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) If you do not use built-in registration, you must have your own user registration system created using the AEM forms SDK. See the help on “Developing SPIs for AEM forms” in [Programming with AEM forms](/help/forms/developing/introducing-java-api-soap-quick.md). If you do not use the Built-in Registration option, it is recommended that you configure a message in the activation email and on the client login screen to notify users about how to contact the administrator for a new password or for other information.
+If you enable built-in registration, you specify your SMTP server, registration email details, access capabilities, and reset password email information only once. Before you enable built-in registration, ensure that you have created a local domain in User Management have assigned the "Document security Invite User" role to the appropriate users and groups in your organization. (See [Add a local domain](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) and [Creating and configuring roles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) If you do not use built-in registration, you must have your own user registration system created using the AEM forms SDK. See the help on "Developing SPIs for AEM forms" in [Programming with AEM forms](/help/forms/developing/introducing-java-api-soap-quick.md). If you do not use the Built-in Registration option, it is recommended that you configure a message in the activation email and on the client login screen to notify users about how to contact the administrator for a new password or for other information.
 
 **Enable and configure invited user registration**
 
@@ -895,7 +895,7 @@ In this example, My Application version 3.0 and My Other Application version 2.0
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>
@@ -920,7 +920,7 @@ In this example, all requests from a Microsoft PowerPoint 2007 or Microsoft Powe
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>

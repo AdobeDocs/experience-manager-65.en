@@ -17,11 +17,11 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 * Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic.
 * User Experience Extensibility - Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
 
-App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](http://adobe.ly/appbuilder-trial).
+App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
-> For AEM as a Cloud Service customers who want to leverage the App Builder, please go to [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/app-builder.html).
+>For AEM as a Cloud Service customers who want to leverage the App Builder, please go to [Extending Adobe Experience Manager as a Cloud Service using Adobe Developer App Builder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/app-builder.html).
 
 ## Architecture {#architecture}
 

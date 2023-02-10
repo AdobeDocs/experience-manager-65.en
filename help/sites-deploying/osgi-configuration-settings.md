@@ -55,8 +55,6 @@ The following OSGi configuration settings (listed according to bundle) are relev
 * The **Admin Password** should be changed after installation to ensure the [security](/help/sites-administering/security-checklist.md) of your instance.
 * Other changes should not be necessary and care must be taken as they can affect access to the repository.
 
-**Wiki Mail Service** Configure the email settings for emails sent by a wiki.
-
 **Apache Felix OSGi Management Console** Configure:
 
 * **Plugins**, the main navigation items (console plugins) to be available in the **Apache Felix Web Management Console** as top level menu items. Disable any you do not need as each requires space and resources.
@@ -93,7 +91,7 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 **Apache Sling GET Servlet** Configure some aspects of rendering:
 
 * **Auto Index** to enable/disable directory rendering for browsing.
-* **Enable** (or disable) default renditions, such as **HMTL**, **Plain Text**, **JSON** or **XML**.
+* **Enable** (or disable) default renditions, such as **HTML**, **Plain Text**, **JSON** or **XML**.
   You should not disable JSON.
 
 >[!NOTE]
@@ -104,7 +102,7 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 
 Certain settings can affect performance, these should be disabled where possible, in particular for a production instance.
 
-* S**ource VM** and **Target VM**, define the JDK version as that used as the runtime JVM
+* **Source VM** and **Target VM**, define the JDK version as that used as the runtime JVM
 
 * for production instances:
 
@@ -241,11 +239,6 @@ Various parameters can be set, including:
 
 * **Default Extensions** The list of extensions for which the default behavior will be used. This means that the last path segment of the resource type can be used as the script name.
 
-**Day Commons GFX Font Helper** When rendering graphics you can use DrawText to embed text. For this you can also install your own fonts:
-
-* Define the **Font Path** to be searched for project specific fonts.
-  For example, `/apps/myapp/fonts`.
-
 **Apache HTTP Components Proxy Configuration** Proxy configuration for all code using the Apache HTTP client, used when a HTTP is made; for example upon replication.
 
 When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **https://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
@@ -278,7 +271,7 @@ When creating a new configuration, do not make changes to the factory configurat
 
 >[!CAUTION]
 >
->When changing the setting for either **Minify** or **Gzip** you will also need to delete the contents of `/var/clientlibs`. This is a cached version of the clientlibs and will be rebuilt when next requested.
+>When changing the setting for either **Minify** or **Gzip** you will also need to delete the contents of clientlibs cache. Refer to this [Knowledge Base article](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) for details.
 
 >[!NOTE]
 >
@@ -315,19 +308,19 @@ When using [closed user groups](/help/sites-administering/cug.md) you can config
 There are two UIs available in AEM:
 
 * the touch-enabled UI is the standard UI
-* and the deprecatd classic UI is still fully operational
+* and the deprecated classic UI is still fully operational
 
 Using AEM Root Mapping you can configure the UI that you want to have as the default for your instance:
 
 * To have the touch-enabled UI as the default UI the **Target Path** should point to:
 
-  ```
+  ```shell
      /projects.html
   ```
 
 * To have the classic UI as the default UI the **Target Path** should point to:
 
-  ```
+  ```shell
      /welcome.html
   ```
 
@@ -440,10 +433,6 @@ Controls the HTML Parser for the CQ rewriter.
 **Day Commons JDBC Connections Pool** Configure access to an external database being used as a source for content.
 
 This is a Factory Configuration, so multiple instances can be configured.
-
-**Adobe CQ Media DPS Sessions Service** Manage DPS Sessions for use with Publications.
-
-In particular you can define the `dps.session.service.url.name`: default is set to [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **CDN Rewriter** Communication between AEM and a CDN must be ensured so that assets/binaries are delivered to end user in a secure way. This involves two tasks:
 

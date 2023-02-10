@@ -30,6 +30,15 @@ For example, suppose you want to present images of caps with different color bil
 >
 >For information on the Assets user interface, see [Manage assets](/help/assets/manage-assets.md).
 
+When you create an Image Set, Adobe recommends the following best practices and enforces the following limits:
+
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Number of duplicate assets per set | No duplicates | 20 |
+| Maximum number of images per set | 5-10 images per set  | 1000 |
+
+See also [Dynamic Media limitations](/help/assets/limitations.md).
+
 ## Quick Start: Image Sets {#quick-start-image-sets}
 
 **To get you up and running quickly:**
@@ -42,7 +51,7 @@ For example, suppose you want to present images of caps with different color bil
 
 <!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-1. [Create Image Sets](#creating-image-sets).
+1. [Create an Image Set](#creating-image-sets).
 
    In Image Sets, users select thumbnail images in the Image Set Viewer.
 
@@ -63,12 +72,12 @@ For example, suppose you want to present images of caps with different color bil
 
    Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]** if you want to create or edit viewer presets.
 
-1. (Optional) [View Image Sets](/help/assets/image-sets.md#viewing-image-sets) that were created using batch set presets.
+1. (Optional) [View an Image Set](/help/assets/image-sets.md#viewing-image-sets) that were created using batch set presets.
 1. [Preview Image Sets](/help/assets/previewing-assets.md).
 
    Select the Image Set and you can preview it. Select the thumbnail icons so you can examine your Image Set in the selected Viewer. You can choose different viewers from the **[!UICONTROL Viewers]** menu, available from the left rail drop-down menu.
 
-1. [Publish Image Sets](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publish an Image Set](/help/assets/publishing-dynamicmedia-assets.md).
 
    Publishing an Image Set activates the URL and embed code. In addition, you must [publish any custom viewer preset](/help/assets/managing-viewer-presets.md) that you have created. Out-of-the box viewer presets are already published.
 
@@ -109,7 +118,7 @@ Because users can zoom images in Image Sets, make sure that the images are at le
 >* A black, brown, and green shot of the same jacket.
 >* A black, brown, and green color thumbnail.
 
-## Create Image Sets {#creating-image-sets}
+## Create an Image Set {#creating-image-sets}
 
 You can create Image Sets through the user interface or via the API. This section describes how to create Image Sets in the UI.
 
@@ -124,7 +133,16 @@ When you add assets to your set, they are automatically added in alphanumeric or
 >
 >Image sets are not supported for assets with "," (comma) in the file name.
 
-**To create Image Sets:**
+When you create an Image Set, Adobe recommends the following best practices and enforces the following limits:
+
+| Limit type | Best practice | Limit imposed |
+| --- | --- | --- |
+| Number of duplicate assets per set | No duplicates | 20 |
+| Maximum number of images per set | 5-10 images per set  | 1000 |
+
+See also [Dynamic Media limitations](/help/assets/limitations.md).
+
+**To create an Image Set:**
 
 1. In Experience Manager, select the Experience Manager logo to access the global navigation console, then go to **[!UICONTROL Navigation]** > **[!UICONTROL Assets]**. Navigate to where you want to create an Image Set, then go to **[!UICONTROL Create]** > **[!UICONTROL Image Set]** to open the Image Set Editor page.
 
@@ -170,7 +188,7 @@ When you add assets to your set, they are automatically added in alphanumeric or
 
 1. Select **[!UICONTROL Save]**. Your newly created Image Set appears in the folder you created it in.
 
-## View Image Sets {#viewing-image-sets}
+## View an Image Set {#viewing-image-sets}
 
 You can create image sets either in the user interface or automatically using [batch set presets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -198,7 +216,7 @@ However, sets created using batch set presets, do *not* appear in the user inter
 >
 >You can view sets by way of the user interface as described in [Edit Image Sets](#editing-image-sets).
 
-## Edit Image Sets {#editing-image-sets}
+## Edit an Image Set {#editing-image-sets}
 
 You can perform various editing tasks on Image Sets such as the following:
 
@@ -208,7 +226,7 @@ You can perform various editing tasks on Image Sets such as the following:
 * Apply viewer presets.
 * Delete the Image Set.
 
-**To edit Image Sets:**
+**To edit an Image Set:**
 
 1. Do any one of the following:
 
@@ -235,10 +253,10 @@ You can perform various editing tasks on Image Sets such as the following:
 
 1. Select **[!UICONTROL Save]** when you are done editing.
 
-## Preview Image Sets {#previewing-image-sets}
+## Preview an Image Set {#previewing-image-sets}
 
 See [Previewing assets](/help/assets/previewing-assets.md).
 
-## Publish Image Sets {#publishing-image-sets}
+## Publish an Image Set {#publishing-image-sets}
 
 See [Publishing Assets](/help/assets/publishing-dynamicmedia-assets.md).

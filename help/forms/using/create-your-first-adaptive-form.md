@@ -36,7 +36,7 @@ The website runs on Adobe Experience Manager (AEM) and uses AEM [!DNL Forms] for
 
 ### Prerequisite {#prerequisite}
 
-* Setup an AEM author instance.
+* Setup an [AEM author instance](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
 * Install [AEM Forms add-on](../../forms/using/installing-configuring-aem-forms-osgi.md) on author instance.
 * Obtain JDBC database driver (JAR file) from database provider. Examples in the tutorial are based on [!DNL MySQL] database and use [!DNL Oracle's] [MySQL JDBC database driver](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -102,21 +102,7 @@ Goals:
 
 [![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Step 5: Test your adaptive form {#step-test-your-adaptive-form}
-
-![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
-
-Adaptive forms are integral to your customer interactions. It is important to test your adaptive forms with every change you make in them. Testing every field of a form is tedious. AEM [!DNL Forms] provide an SDK (Calvin SDK) to automate testing of adaptive forms. Calvin allows you to automate testing of your adaptive forms in the web browser.
-
-Goals:
-
-* Create test suite for the adaptive form
-* Create test cases for the adaptive forms
-* Run the test cases
-
-[![See the Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](testing-your-adaptive-form.md)
-
-## Step 6: Publish your adaptive form {#step-publish-your-adaptive-form}
+## Step 5: Publish your adaptive form {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

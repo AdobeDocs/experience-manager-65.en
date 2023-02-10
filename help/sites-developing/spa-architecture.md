@@ -61,7 +61,7 @@ Any static routing works against the [principle of portability](/help/sites-deve
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-Any AEM project should leverage the [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
+Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
 
 ## SPA Design Models {#spa-design-models}
 
@@ -167,7 +167,7 @@ These code blocks illustrate how your React and Angular components need nothing 
 
 ![screen_shot_2018-12-11at144019](assets/screen_shot_2018-12-11at144019.png)
 
-The `MapTo` helper is the “glue” that allows the back-end and the front-end components to be matched together:
+The `MapTo` helper is the "glue" that allows the back-end and the front-end components to be matched together:
 
 * It tells the JS container (or JS paragraph system) what JS component is responsible for rendering each of the components that are present in the JSON.
 * It adds an HTML data attribute to the HTML that the JS component renders, so that the SPA Editor knows what dialog to display to the author when editing the component.

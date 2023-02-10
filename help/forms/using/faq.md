@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
-
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 ---
+
 # Frequently asked questions (FAQ) for HTML5 forms{#frequently-asked-questions-faq-for-html-forms}
 
 There are some frequently asked questions (FAQ) about layout, scripting support, and scope of HTML5 forms.
@@ -94,15 +94,15 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Why are some fonts displayed in the HTML form different from the ones used while designing the form?
 
-   Answer: HTML5 forms do not embed fonts (in contrast to PDF forms where fonts are embedded inside the form). For the HTML version of form to render as expected, ensure that the fonts specified in the XDP are available on the server and on the client machine. If the required fonts are not available on server, then fall-back fonts are used. Moreover, if you use fonts in Form Template that are not available on the client device, then default fonts of the browser are used to render the text.
-
+   Answer: HTML5 Forms do not allow embedding fonts (in contrast to PDF forms where fonts are embedded inside the form). For the HTML version of a form to render as expected, ensure that the fonts are available in the CRX Repository (AEM Content Repository) of your AEM Forms server and on the machine that has AEM Designer installed. When the fonts are not available in the CRX Repository of your AEM Forms server or at the location where AEM Designer is installed, the form is rendered with fallback fonts. 
+   
 1. Are vAlign and hAlign attributes supported in HTML forms?
 
-   Yes, the vAlign and hAlign attributes are supported. The vAlign attribute is not supported in Internet Explorer and in multiline field.
+   Answer: Yes, the vAlign and hAlign attributes are supported. The vAlign attribute is not supported in Internet Explorer and in multiline field.
 
 1. Do HTML5 forms support Hebrew characters?
 
-   HTML5 forms support Hebrew characters in all the browsers except Microsoft Internet Explorer.
+   Answer: HTML5 forms support Hebrew characters in all the browsers except Microsoft Internet Explorer.
 
 1. Do HTML5 forms have any limitations on numeric field?
 
@@ -110,7 +110,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Why HTML forms are larger in size than PDF forms?
 
-   A lot of intermediate data structures and objects such as form dom, data dom, and layout dom are required to render an XDP to an HTML form.
+   Answer: A lot of intermediate data structures and objects such as form dom, data dom, and layout dom are required to render an XDP to an HTML form.
 
    For PDF Forms, Adobe Acrobat has a built-in XTG engine to create intermediate data structures, and objects. Acrobat also takes care of layout and scripts.
 
@@ -137,12 +137,13 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. What is the reading order of tool tip and caption for screen readers?
 
-    * When both caption and tool tip are present, the only caption is read. If the caption is not available, then the tool tip is read. You can also specify the precedence for reading in an XDP using form designer
+   Answer: 
+   * When both caption and tool tip are present, the only caption is read. If the caption is not available, then the tool tip is read. You can also specify the precedence for reading in an XDP using form designer
     * When you hover an element, then tool tip is displayed. If tool-tip is not available speech text is displayed. If speech text is not available, then field name is displayed.
 
 1. When you hover a field, a tool tip is displayed. How to disable it?
 
-   To disable tool tip on hover, select none in the accessibility panel of the Designer.
+   Answer: To disable tool tip on hover, select none in the accessibility panel of the Designer.
 
 1. In Designer, a user can configure custom appearance properties of radio button and check boxes. Do, while rendering the forms, HTML5 forms take such custom appearance properties into account?
 
@@ -150,7 +151,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. When an HTML5 Form is opened in a supported browser, the border of the fields placed adjacently is not aligned properly or subforms appear overlapped. When the same HTML5 Form is previewed in Forms Designer, the fields and layout do not appear misaligned and subforms appear in the correct position. How to fix the issue?
 
-   When a subform is set to flow content and the subform has a hidden border element, the border of the fields placed adjacently is not aligned properly or subforms appear overlapped. To resolve the issue, you can remove or comment the hidden &lt;border&gt; elements from the corresponding XDP. For example, the following &lt;border&gt; element is marked as a comment:
+   Answer: When a subform is set to flow content and the subform has a hidden border element, the border of the fields placed adjacently is not aligned properly or subforms appear overlapped. To resolve the issue, you can remove or comment the hidden &lt;border&gt; elements from the corresponding XDP. For example, the following &lt;border&gt; element is marked as a comment:
 
    ```xml
                <!--<border>
@@ -161,11 +162,15 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Why screen readers do not work correctly with the Date/Time field object?
 
-   Screen readers do not support date/time fields. However, you can manually enter date/time to the field to make the screen reader read it. Use tool-tip or screen-reader text to instruct the user to manually select date/time for the field.
+   Answer: Screen readers do not support date/time fields. However, you can manually enter date/time to the field to make the screen reader read it. Use tool-tip or screen-reader text to instruct the user to manually select date/time for the field.
 
 1. Do HTML5 forms support display patterns for floating fields?
 
    Answer: HTML5 forms do not support display patterns for floating fields.
+
+1. What is the format of the Date field in HTML5 Forms?
+  
+  Answer: The Date field accepts the ISO format, YYYY-MM-DD. If you specify a date in some other format, the Date Field does not accept the formatting until the user tabs out of the field.
 
 ### Scripting {#scripting}
 
@@ -183,12 +188,13 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Is there any recommended naming convention and are there any reserved keywords to avoid?
 
-    * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore, _&lt;prefix&gt;&lt;objectname&gt;.
+   Answer:
+    * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore,_&lt;prefix&gt;&lt;objectname&gt;.
     * All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/help/forms/using/scripting-support.md).
 
 1. Do HTML5 forms support floating fields?
 
-   Yes, HTML5 Forms support floating fields. To enable floating fields, add the following property to the rendering profile:
+   Answer: Yes, HTML5 Forms support floating fields. To enable floating fields, add the following property to the rendering profile:
 
    >[!NOTE]
    >
@@ -204,7 +210,7 @@ There are some frequently asked questions (FAQ) about layout, scripting support,
 
 1. Does HTML5 forms execute the initialization script and form ready event multiple times?
 
-   Yes, the initialization scripts and form ready events are executed multiple times, at least once on the server and once on the client side. It is suggested to write scripts like initialize or form:ready events based on some business logic (form or field data) so that the action is performed based on the state of data and idempotent (if data is same).
+   Answer: Yes, the initialization scripts and form ready events are executed multiple times, at least once on the server and once on the client side. It is suggested to write scripts like initialize or form:ready events based on some business logic (form or field data) so that the action is performed based on the state of data and idempotent (if data is same).
 
 ### Designing XDP {#designing-xdp}
 

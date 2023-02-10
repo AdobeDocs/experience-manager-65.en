@@ -70,7 +70,7 @@ If you see the following error message in the AEM log file:
 Use the following workaround:
 
 1. Open file **$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js**
-1. Modify line 467 of method “amcGetSeedMetaData”
+1. Modify line 467 of method "amcGetSeedMetaData"
 1. Change `label : [inclView.@label](mailto:inclView.@label)` to `label : String([inclView.@label](mailto:inclView.@label))`
 
 1. Save.
