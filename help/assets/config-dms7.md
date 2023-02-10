@@ -49,7 +49,7 @@ With the new architecture, Experience Manager is responsible for primary source 
 
 To enable Dynamic Media, start up Experience Manager using `dynamicmedia_scene7` run mode from the command line by entering the following in a terminal window (example port used is 4502):
 
-```shell
+```shell {.line-numbers}
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
@@ -533,7 +533,7 @@ You can use the Batch Set Type **[!UICONTROL Multi-Axis Spin Set]** to create a 
 
 As an example, suppose you want to create a multi-axis spin set named `spin-2dspin`. You have a set of spin set images that contain three rows, with 12 images per row. The images are named as follows:
 
-```
+```xml {.line-numbers}
 spin-01-01
  spin-01-02
  …
