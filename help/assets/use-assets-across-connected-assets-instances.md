@@ -361,6 +361,8 @@ To troubleshoot common errors, follow these steps:
 * If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
   ![failure to retrieve asset remote references](assets/reference-report-failure.png)
+  
+* If you see that the cookies are not being sent from the Sites server to the Assets server in Chrome this is because the Assets connection is not over HTTPS. If you do not use HTTPS on the Assets instance then the SameSite=None header cannot be added to the response after you authenticate with the Assets server. 
 
 
 
