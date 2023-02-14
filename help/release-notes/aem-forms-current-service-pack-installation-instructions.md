@@ -1,9 +1,9 @@
 ---
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installations instructions for OSGi and JEE environment
-SEO Description: AEM Forms installation instructions for OSGi and JEE environment 
+SEO Description: AEM Forms installation instructions for OSGi and JEE environment
+exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 ---
-
 # AEM 6.5 Forms Service Pack installation instructions {#aem-form-patch-installation-instructions}
 
 ## Release information
@@ -248,5 +248,3 @@ It is mandatory to install **servlet fragment** for all application servers exce
 * Check the monitor logs (error.log) once the installation is complete for any activity. Wait for few minutes until there is no activity in the logs. Restart the AEM instance.
 
 * In case you get a **service-unavailable error** after installing the latest AEM Forms 6.5.15.0 service pack, [install the servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md) to fix the error.
-
-
