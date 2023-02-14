@@ -93,7 +93,7 @@ I.e. the `sling:resourceType` of the ContextHub configuration must be relative r
       <ol>
        <li>For example, export:
         <ul>
-         <li><code>/config/settings/workflow/models/dam/my_workflow_model</code><br /> and </li>
+         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code><br /> and </li>
          <li><code>/var/workflow/models/dam/my_workflow_model</code></li>
         </ul> </li>
       </ol> </li>
