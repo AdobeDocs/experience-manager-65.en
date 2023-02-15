@@ -85,8 +85,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
             >[!NOTE]
             >
-            > Using the **ConfigurationManager.bat** file helps you to avoid updating name of .lax files manually.
-            >
+            >* Updating or replacing the **ConfigurationManager.bat** file helps you to avoid updating the name of .lax files manually.
 
    1. **[For Unix-based only]:** The **Start Configuration Manager** check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager instantly or to run **Configuration Manager** later, deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. You can start **Configuration Manager** later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
   
@@ -98,9 +97,8 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
       * [Installing and Deploying AEM forms for JBoss® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
       * [Installing and Deploying AEM forms for WebSphere® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
       * [Installing and Deploying AEM Forms for WebLogic Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
-   
-   It is 
 
+ 
 >[!NOTE]
 >
 > After installing AEM Forms on JEE service pack, you need to remove the Forms add-on package from `crx-repository\install` folder before restarting the appserver. Download the latest Forms add-on package from the [Software Distribution portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
@@ -240,8 +238,6 @@ It is mandatory to install **servlet fragment** for all application servers exce
 +++
 
 ## Troubleshooting
-
-* Reinstall the AEM Forms service packs if an error occurs during its installation. If the problem persists, contact the Adobe Support.
 
 * If **Dialog on Package Manager UI** exits during the installation of the service pack, wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations are successful. Typically, this issue occurs in Safari browser but can intermittently occur on any browser.
 
