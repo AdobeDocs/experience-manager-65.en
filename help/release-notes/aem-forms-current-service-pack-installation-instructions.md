@@ -109,7 +109,6 @@ mini-toc-levels: 3
 
 * Update dependencies for the resource resolver improvement made in SITES-8464 in which page rendering in Authoring mode created a high number of `TemplatedResourceImpl` objects. (SITES-9350)
 
-
 ## Sling {#sling-6516}
 
 * Experience Manager is deadlocked on startup. (NPR-39832)
@@ -240,6 +239,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 <!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
+
 
 * [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
   This package is needed for customers using GraphQL; this enables them to add the required index definition based on the features they actually use.
