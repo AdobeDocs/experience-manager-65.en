@@ -46,7 +46,19 @@ mini-toc-levels: 3
 * The alternative text under the image is not mandatory but the text displayed under the image is repetitive with a `Type` attribute. (ASSETS-6915)
 
 
-### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
+## [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516}
+
+### New feature
+
+New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive streaming in Dynamic Media video delivery (with CMAF enabled).
+
+* Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
+* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
+* Available now in North America.
+* Available in Asia-Pacific, April 2023; available in Europe-Middle East-Africa, August 2023.
+
+
+### Fixes, updates, and enhancements
 
 *   Form element does not contain label. With screen readers such as NVDA and JAWS, Form label information is not announcing properly. (CQ-4344078)
 *   Drop-downs are not getting closed when the `Escape` key is used on a keyboard. (CQ-4344077)
@@ -55,9 +67,9 @@ mini-toc-levels: 3
 *   SmartCrop video component is not behaving correctly. The component is carrying-out playback instead of streaming, and VTT calls are failing, giving a 404 error. (ASSETS-18468)
 *   Selecting **[!UICONTROL Properties]** on an asset's Viewer page causes a null pointer exception. (ASSETS-18420)
 *   [!DNL Experience Manager] user interface changes for DASH streaming that includes the following:
-    *   having a visible CMAF (Common Media Application Format) field in the Video Profile editor
-    *   having the video upload process send a CMAF flag 
-    *   an HLS, DASH option visible in the playback drop-down in the Viewer Preset editor's behavior tab. 
+    *   having a visible CMAF (Common Media Application Format) field in the Video Profile editor.
+    *   having the video upload process send a CMAF flag.
+    *   the options **[!UICONTROL auto]**, **[!UICONTROL hls]** and **[!UICONTROL dash]** are now available in the playback drop-down list in the Viewer Preset editor's **[!UICONTROL Behavior]** tab. 
     (ASSETS-17428)
 *   In Navigation, when you select **[!UICONTROL Assets]** > **[!UICONTROL Files]** > **[!UICONTROL Create]** > **[!UICONTROL Carousel Set]**, the picture icon is overlapped with "Slide 1" text string. (ASSETS-18578)
 *   Unpublished assets are published again. (ASSETS-16428)
@@ -248,7 +260,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
-* As [!DNL Microsoft® Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
