@@ -418,16 +418,9 @@ import javax.jcr.Session;
 /**
  * Sample workflow process that sets an <code>approve</code> property to the payload based on the process argument value.
  */
-@Component
-@Service
+ 
+@Component(service = { WorkflowProcess.class, MyProcess.class }, property = { "Constants.SERVICE_DESCRIPTION=An example workflow process implementation.", "Constants.SERVICE_VENDOR=Adobe", "process.label=My Sample Workflow Process" })
 public class MyProcess implements WorkflowProcess {
-
- @Property(value = "An example workflow process implementation.")
- static final String DESCRIPTION = Constants.SERVICE_DESCRIPTION;
- @Property(value = "Adobe")
- static final String VENDOR = Constants.SERVICE_VENDOR;
- @Property(value = "My Sample Workflow Process")
- static final String LABEL="process.label";
 
  private static final String TYPE_JCR_PATH = "JCR_PATH";
 
