@@ -24,9 +24,18 @@ mini-toc-levels: 3
 
 <!-- Some of the key features and improvements are the following:
 
-* _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_
+* _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-* Added support for password reset for Dynamic Media Classic users within Experience Manager. (ASSETS-10298) -->
+A key feature and improvement in Dynamic Media is the following:
+
+New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive streaming in Dynamic Media video delivery (with CMAF enabled).
+
+* Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
+* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
+* Available now in North America.
+* Available in Asia-Pacific, April 2023; available in Europe-Middle East-Africa, August 2023
+
+See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -47,18 +56,6 @@ mini-toc-levels: 3
 
 
 ## [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516}
-
-### New feature
-
-New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive streaming in Dynamic Media video delivery (with CMAF enabled).
-
-* Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
-* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
-* Available now in North America.
-* Available in Asia-Pacific, April 2023; available in Europe-Middle East-Africa, August 2023.
-
-
-### Fixes, updates, and enhancements
 
 *   Form element does not contain label. With screen readers such as NVDA and JAWS, Form label information is not announcing properly. (CQ-4344078)
 *   Drop-downs are not getting closed when the `Escape` key is used on a keyboard. (CQ-4344077)
@@ -201,7 +198,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1.  All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1.  The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1.  The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.14 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39939 for 6.5.16.0 --> <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Install Service Pack for [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
 
@@ -216,10 +213,14 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 -->
 
-
 ### UberJar {#uber-jar}
 
 The UberJar for [!DNL Experience Manager] 6.5.16.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+
+>[!NOTE]
+>
+>In Experience Manager 6.5.16.0, be aware that the UberJar version (6.5.15.0) remains the same as the previous release.
+
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -227,7 +228,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.16</version>
+     <version>6.5.15</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -290,8 +291,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.16.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [List of OSGi bundles included in Experience Manager 6.5.16.0](/help/release-notes/assets/65150_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.16.0](/help/release-notes/assets/65150_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.16.0](/help/release-notes/assets/65160_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.16.0](/help/release-notes/assets/65160_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites {#restricted-sites}
 
