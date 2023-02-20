@@ -1394,7 +1394,7 @@ This API takes in the following three parameters:
 | `manifestType` | Can be either `ManifestType.DASH` or `ManifestType.HLS`|
 | `onlyIfPublished` | Set to true in case the manifest uri is generated only if it is published and available on the delivery tier.|
 
-To fetch the manifest URLs for videos using the method above, add a [video encoding profile](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) to an "upload videos" folder. Dynamic Media processes these videos based on the encodings found in the video encoding file that was assigned to the folder. Now you can invoke the above API for fetching manifest URLs for the uploaded videos. 
+To fetch the manifest URLs for videos using the method above, add a [video encoding profile](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) to an "upload videos" folder. Dynamic Media processes these videos based on the encodings found in the video encoding file that was assigned to the folder. Now you can invoke the above API for fetching manifest URLs for the uploaded videos. 
 
 ### Error scenarios 
 

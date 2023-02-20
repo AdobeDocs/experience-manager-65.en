@@ -465,7 +465,7 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
 
    >[!NOTE]
    >
-   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](/help/assets/dynamic-media/video.md#enable-dash).
+   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
@@ -487,7 +487,7 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
 
    >[!IMPORTANT]
    >
-   >For old videos that use an adaptive streaming profile, the URL continues to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
+   >For old videos that use an adaptive streaming profile, the URL continues to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/processing-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
 
 ### Special considerations for creating an Interactive Viewer preset {#special-considerations-for-creating-an-interactive-viewer-preset}
 
