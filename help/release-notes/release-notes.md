@@ -212,7 +212,8 @@ exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
 
 >[!IMPORTANT]
 >
->Adobe does not recommend that you remove or uninstall the [!DNL Experience Manager] 6.5.15.0 package. As such, before you install the pack, you should create a backup of the `crx-repository` in case you need to roll it back. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Adobe does not recommend that you remove or uninstall the [!DNL Experience Manager] 6.5.15.0 package. As such, before you install the pack, you should create a backup of the `crx-repository` in case you need to roll it back. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * For instructions to install Service Pack for AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
 
@@ -251,40 +252,11 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). 
 
-### Install [!DNL Experience Manager] Forms add-on package {#install-aem-forms-add-on-package}
+### Install Service Pack on [!DNL Experience Manager] Forms {#install-service-pack-on-aemforms}
 
->[!NOTE]
->
->Skip if you are not using [!DNL Experience Manager] Forms.
-
-<!-- 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
--->
-
-1. Ensure that you have installed the [!DNL Experience Manager] service pack.
-1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) for your operating system.
-1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
-
-### Install [!DNL Experience Manager] Forms on JEE {#install-aem-forms-jee-installer}
-
->[!NOTE]
->
->Skip if you are not using AEM Forms on JEE. Fixes in [!DNL Experience Manager] Forms on JEE are delivered through a separate installer.
-
-Perform the following steps for all the AEM Forms on JEE environments using any application servers other than JBoss EAP 7.4.0.
-1. Install [AEM Forms JEE Patch](jee-patch-installer-65.md). The includes all fixed issues for all components of AEM 6.5 Forms on JEE. 
-1. Install the [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). The fragment adds the dependencies required to install AEM Service Pack 15 (6.5.15.0).
-1. After installing the fragment, wait for the application server to stabilize.
-1. [Install the service pack on Experience Manager 6.5](#install-service-pack).
-
-   >[!NOTE]
-   >
-   >If you install the latest [AEM service pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), prior to installing the [Fragment for AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) on your AEM 6.5 Forms on JEE environment, the CRX/bundle and the start page can stop working and you encounter the service unavailable error. To resolve the issue, perform the actions [listed here](/help/forms/using/aem-service-pack-installation-solution.md).
-   
-1. Install the [latest Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html), delete the Forms add-on package from the `crx-repository\install` folder, and restart the server.
+For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
@@ -323,6 +295,8 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 * [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
   This package is needed for customers using GraphQL; this enables them to add the required index definition based on the features they actually use.
+
+* Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
 * As [!DNL Microsoft® Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 

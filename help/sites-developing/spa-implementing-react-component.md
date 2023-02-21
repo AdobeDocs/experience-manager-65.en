@@ -31,7 +31,7 @@ This article illustrates the example of the weather component on the We.Retail J
 You should be familiar with the [structure of an SPA application for AEM](/help/sites-developing/spa-getting-started-react.md) before reading this article.
 
 >[!CAUTION]
->This document uses the [We.Retail Journal app](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
+>This document uses the [We.Retail Journal app](https://github.com/adobe/aem-sample-we-retail-journal) for demonstration purposes only. It should not be used for any project work.
 >
 >Any AEM project should leverage the [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), which supports SPA projects using React or Angular and leverages the SPA SDK.
 
