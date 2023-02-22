@@ -28,11 +28,11 @@ mini-toc-levels: 3
 
 A key feature and improvement in Dynamic Media is the following:
 
-New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive streaming in Dynamic Media video delivery (with CMAF enabled).
+New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive streaming in Dynamic Media video delivery (with CMAF [Common Media Application Format] enabled).
 
 * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
 * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
-* Available now in North America (to be enabled via support ticket), coming soon in Asia-Pacific and Europe-Middle East-Africa
+* Available now in North America (to be enabled via support ticket), coming soon in Asia-Pacific and Europe-Middle East-Africa.
 
 See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
@@ -65,7 +65,7 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 *   [!DNL Experience Manager] user interface changes for DASH streaming that includes the following:
     *   having a visible CMAF (Common Media Application Format) field in the Video Profile editor.
     *   having the video upload process send a CMAF flag.
-    *   the options **[!UICONTROL auto]**, **[!UICONTROL hls]** and **[!UICONTROL dash]** are now available in the playback drop-down list in the Viewer Preset editor's **[!UICONTROL Behavior]** tab. 
+    *   the options **[!UICONTROL auto]**, **[!UICONTROL hls]**, and **[!UICONTROL dash]** are now available in the playback drop-down list in the Viewer Preset editor's **[!UICONTROL Behavior]** tab. 
     (ASSETS-17428)
 *   In Navigation, when you select **[!UICONTROL Assets]** > **[!UICONTROL Files]** > **[!UICONTROL Create]** > **[!UICONTROL Carousel Set]**, the picture icon is overlapped with "Slide 1" text string. (ASSETS-18578)
 *   Unpublished assets are published again. (ASSETS-16428)
@@ -218,7 +218,7 @@ The UberJar for [!DNL Experience Manager] 6.5.16.0 is available in the [Maven Ce
 
 >[!NOTE]
 >
->In Experience Manager 6.5.16.0, be aware that the UberJar version (6.5.15.0) remains the same as the previous release.
+>In Experience Manager 6.5.16.0, the UberJar version (6.5.15.0) remains the same as the previous release.
 
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
@@ -262,7 +262,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
-* If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
+* If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
 * Users can rename a folder in a hierarchy in [!DNL Assets] and publish a nested folder to [!DNL Brand Portal]. However, the title of the folder is not updated in [!DNL Brand Portal] until the root folder is republished.
 

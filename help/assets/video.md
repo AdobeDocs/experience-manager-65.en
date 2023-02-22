@@ -135,7 +135,7 @@ For detailed technical information about the algorithm, see [https://android.goo
 
 For managing single video and Adaptive Video Sets, the following is supported:
 
-* Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
+* Uploading video from numerous-supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
   * When an adaptive video set is generated, it includes MP4 videos.
   * **Note**: Master/source videos are not added to an Adaptive Video Set.
@@ -148,7 +148,9 @@ Adaptive video streaming is supported on various iOS platforms. See [Dynamic Med
 
 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
+You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
+
+
 
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
@@ -346,7 +348,7 @@ When selecting a bitrate encoding, there are two types you can choose:
 * **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate, or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
   Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Use custom-added video encoding parameters](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
+* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit that you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
   VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
 
 When do you use VBR versus CRB?
@@ -436,7 +438,7 @@ Some key benefits from enabling DASH on your account include the following:
 
    >[!IMPORTANT]
    >
-   >Enabling DASH on your account is currently available only in North America.
+   >Enabling DASH on your account currently is available only in North America.
 
 **To enable DASH on your account:**
 
@@ -661,9 +663,9 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. Tap the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
 1. Tap one or more tags so you can add them.
 
-   To delete a tag you have added, select the tag, and tap **[!UICONTROL X]**.
+   To delete a tag that you have added, select the tag, and tap **[!UICONTROL X]**.
 
-1. When you are finished adding the tags you want, tap **[!UICONTROL Save]**.
+1. When you are finished adding the tags that you want, tap **[!UICONTROL Save]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -707,9 +709,9 @@ Starting with Experience Manager 6.4, a new touch user interface method was intr
 1. Tap the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
 1. Tap one or more tags so you can add them.
 
-   To delete a tag you have added, select the tag, and tap **X**.
+   To delete a tag that you have added, select the tag, and tap **X**.
 
-1. When you are finished adding the tags you want, tap **[!UICONTROL OK]**.
+1. When you are finished adding the tags that you want, tap **[!UICONTROL OK]**.
 
    Now you publish videos to your YouTube channel.
 
@@ -832,7 +834,7 @@ You can obtain a YouTube URL string that is generated by Dynamic Media after you
 
 **To link YouTube URLs to your web application:**
 
-1. Navigate to the *YouTube published* video asset whose URL you want to copy, then select it.
+1. Navigate to the *YouTube published* video asset whose URL that you want to copy, then select it.
 
    Remember that YouTube URLs are only available to copy *after* you have first *published* the video assets to YouTube.
 
@@ -1098,7 +1100,7 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 ## Add closed captions or subtitles to video {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
 Closed captioning also allows for greater accessibility by people who are deaf or hard of hearing.
 
@@ -1116,7 +1118,7 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/
 
 1. Use a third-party application or service to create your video caption/subtitle file.
 
-   Ensure that the file you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
+   Ensure the file that you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
 
    See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
@@ -1279,7 +1281,7 @@ These steps apply only to Dynamic Media running in "Dynamicmedia_Scene7" mode.
 
         * On the toolbar, tap **[!UICONTROL Select Thumbnail from Assets]**.
         * Tap **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
+        * Navigate to a previously uploaded and published image asset that you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
         * Select the image asset, then tap **[!UICONTROL Select]**.
 
 1. On the Change Thumbnail page, tap **[!UICONTROL Save Change]**.
@@ -1357,7 +1359,7 @@ These steps apply only to Dynamic Media running in Hybrid mode.
 1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
 1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Upload New Thumbnail]**.
-1. Navigate to a thumbnail image you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
+1. Navigate to a thumbnail image that you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
 1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
