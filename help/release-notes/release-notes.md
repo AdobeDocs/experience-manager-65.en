@@ -26,7 +26,7 @@ mini-toc-levels: 3
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-A key feature and improvement in Dynamic Media is the following:
+A key improvement in Dynamic Media is the following:
 
 New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive streaming in Dynamic Media video delivery (with CMAF [Common Media Application Format] enabled).
 
