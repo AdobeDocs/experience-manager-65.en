@@ -74,13 +74,31 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 ## [!DNL Forms] {#forms-6516}
 
->[!NOTE]
->
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, March 2, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
-
 <!--
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
 -->
+
+* When a user enables both the Document of record functionality and the **Send Email** submission handler for an Adaptive Form, the **Generate Preview** button displays an error message as **DoR Generation Failed**. (NPR 40081)
+* When using an Adaptive Form with a data model based on XDP and binding references to checkboxes or radio buttons, either the selected or unselected events at a time, and not both are captured simultaneously.(NPR-40077),(CQ-4351921), (CQ-4351572)
+*  When a user uses the bind reference radio button component in an Adaptive Form, it ignores a events checks and shows a  shows validation error message. (NPR-40064)
+* When a user hides the table headers, it causes the previously set column width to be unset, and all columns retain the same width. (NPR-40063)
+* When a user upgrades to AEM 6.5.15.0 Service Pack, the redirection stops working with Internet Explorer. (NPR-40046)
+* The OutputService and AssemblerService APIs, fail to convert PDF Form to PDF/A. (NPR-39990)
+* The AssemblerService not able to convert PDF to PDF/A. When a user converts PDF to PDF/A, the following error occurs: 
+`PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Summary" ignoreUnusedResources="true" allowCertificationSignatures="true"> <Violation count="6" key="PDFA_CS_001_NOT_DEVICE_INDEPENDENT" description="ColorSpace is not device independent`. (NPR-39956)
+* The Visual Editor of Rule Editor in Adaptive Forms is unable to redirect relative URLs. (NPR-39947)
+* When server-side validation fails for a GuideSubmitServlet API call, the errors are not returned in the response sent to the client. (NPR-39925)
+* On slight movement of a switch control, the value of the switch is changed. The values should change when the switch button is dragged to middle or to extreme left or right. (NPR-39916)
+* After a user upgrades to AEM 6.5.15.0 Service Pack, HTML heading tag is not recognized. HTML code for the heading tag is displayed as text in the HTML form. (NPR-39915)
+* When the user tries to submit an Adaptive Form, a typecast error occurs: `" ERROR [10.207.64.167 [1668589530607] POST /app/LS4/content/forms/af/revalidate/jcr:content/guideContainer.af.submit.jsp HTTP/1.1]”`( NPR-39809)
+* After a user upgrades to AEM 6.5.15.0 Service Pack, the PostScript-to-Pdf conversion is not working. (NPR-39765)
+* When user tries to open the tour screen after opening an Adaptive Form, it fails with a NullPointer exception:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* When a user upgrades to AEM 6.5.14.0 Service Pack, the PDF generation using Output service fails to work. (LC-3920769)
+* An error occurs when a user attempts to convert an XDP file to PDF using Assembler Forms Service. (CQ-4352210)
+* After a user upgrades to AEM 6.5.15.0 Service Pack, the SentToPrinter service fails to work. (CQ-4350975)
+* When a user runs a translation job, the `formAlreadySubmitted` and `datatypeMessage` messages do not translate to German language. (CQ-4343999)
+* When a user enables high contrast black settings in Windows, the mobile forms content become unclear when rendered as an HTML preview in the browser. (NPR-39018)
+* The Reader Extension service in the OSGi stack allows for the individual application of import and export usage rights to a document. (NPR-39909)
 
 ## Integrations {#integrations-6516}
 
