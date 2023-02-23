@@ -91,6 +91,8 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [[!DNL Assets] HTTP API](mac-api-assets.md)
   + [Content Fragments support in [!DNL Assets] HTTP API](assets-api-content-fragments.md)
   + [GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
+  + [Using the GraphiQL IDE](content-fragments/graphiql-ide.md)
+  + [Persisted Queries](content-fragments/persisted-queries.md)
   + [Authentication for Remote GraphQL Queries on Content Fragments](content-fragments/graphql-authentication-content-fragments.md)
   + [GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
   + [[!DNL Assets] proxy development](proxy.md)

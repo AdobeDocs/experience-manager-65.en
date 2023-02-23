@@ -1,246 +1,291 @@
 ---
-title: AEM Forms Patch Installation Instructions for AEM Forms
-description: AEM Forms service pack installations instructions for OSGi and JEE environment
-SEO Description: AEM Forms installation instructions for OSGi and JEE environment
-exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
+title: Release Notes for [!DNL Adobe Experience Manager] 6.5
+description: Find release information, what's new, install how-tos, and a detailed change list for [!DNL Adobe Experience Manager] 6.5.
+mini-toc-levels: 3
+
+
 ---
-# AEM 6.5 Forms Service Pack installation instructions {#aem-form-patch-installation-instructions}
+# [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
-## Release information
+<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/Documents/issue_tracker_sp_cfp_updates.xlsx?d=w3ea81ae4e6054153b132f2698c86f84e&csf=1&web=1&e=WRAZ43&nav=MTVfezk2OTJDQTNFLUI4QTQtNDY2RS05NEVCLUQ5QjcyNEVENkJDNn0 -->
 
-| Product   | Adobe Experience Manager 6.5 Forms  |
-|---|---|
-| Version  |  6.5.15.0 |
-| Type  |  Service Pack release |
-| Date  |  December 01, 2022 |
-| Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
+## Release information {#release-information}
+
+| Product | [!DNL Adobe Experience Manager] 6.5 |
+| -------- | ---------------------------- |
+| Version  | 6.5.16.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
+| Type     | Service Pack release         |
+| Date     | Thursday, February 23, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+
+## What is included in [!DNL Experience Manager] 6.5.16.0 {#what-is-included-in-aem-6516}
+
+[!DNL Experience Manager] 6.5.16.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+
+<!-- Some of the key features and improvements are the following:
+
+* _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_
+
+* Added support for password reset for Dynamic Media Classic users within Experience Manager. (ASSETS-10298) -->
+
+<!-- UPDATE BELOW FOR EACH NEW RELEASE -->
+
+## [!DNL Assets] {#assets-6516}
+
+* Connected Assets: When you enable the Smart Crop options for images on remote DAM, upload images to a folder, and sync the folder to local sites, the folder does not open on the local Sites deployment. (NPR-39912)
+* While sorting a collection by name, the list view is not working appropriately (ASSETS-19401)
+* When a large media file (JPEG) is uploaded to Collections, Experience Manager stops responding. (ASSETS-19387)
+* In the content tree pane, the displayed asset name is incorrect as the location of the asset is not rendered appropriately. (ASSETS-18870)
+* While sharing a Collection using a link, the data in the URL mismatches between the shuffle of card view and list view. (ASSETS-18758)
+* When you perform an omnisearch by using a filter on the folder type, the search results are inconsistent. (ASSETS-18227)
+* The `dam:size` property is not updated after XMP writeback, which results in incorrect information being returned from the `/platform/path/to/asset.jpg;resource=metadata` API. (ASSETS-17631)
+* Unclosed resource resolver on all Experience Manager instances. (ASSETS-16904)
+* Unable to create a version for an asset even if you are assigned the `create` and `modify` permissions. (ASSETS-15956)
+* The `move` button is disabled randomly while moving an asset from one point to another. (ASSETS-14889)
+* Screen readers are unable to identify headings, as the text is not defined inside heading tags but as the general text. (ASSETS-6924)
+* The alternative text under the image is not mandatory but the text displayed under the image is repetitive with a `Type` attribute. (ASSETS-6915)
+
+
+### [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516} 
+
+*   Form element does not contain label. With screen readers such as NVDA and JAWS, Form label information is not announcing properly. (CQ-4344078)
+*   Drop-downs are not getting closed when the `Escape` key is used on a keyboard. (CQ-4344077)
+*   The Information icon (the letter "i") that appears for the inline error suggestion after an invalid input is given, is not accessible using a keyboard. (CQ-4344076)
+*   `getManifestURI` returns null due to a JCR property being read as `toString` instead of `getString`. (ASSETS-18674)
+*   SmartCrop video component is not behaving correctly. The component is carrying-out playback instead of streaming, and VTT calls are failing, giving a 404 error. (ASSETS-18468)
+*   Selecting **[!UICONTROL Properties]** on an asset's Viewer page causes a null pointer exception. (ASSETS-18420)
+*   [!DNL Experience Manager] user interface changes for DASH streaming that includes the following:
+    *   having a visible CMAF (Common Media Application Format) field in the Video Profile editor
+    *   having the video upload process send a CMAF flag 
+    *   an HLS, DASH option visible in the playback drop-down in the Viewer Preset editor's behavior tab. 
+    (ASSETS-17428)
+*   In Navigation, when you select **[!UICONTROL Assets]** > **[!UICONTROL Files]** > **[!UICONTROL Create]** > **[!UICONTROL Carousel Set]**, the picture icon is overlapped with "Slide 1" text string. (ASSETS-18578)
+*   Unpublished assets are published again. (ASSETS-16428)
+*   Experience Manager Author goes down due to a load issue, prompting the creation of a synthetic alert. (ASSETS-15937)
+*   In the Dynamic Media General Settings page, an untranslated error message `Failed to fetch data` appears. (ASSETS-15617)
+
+## [!DNL Forms] {#forms-6516}
 
 >[!NOTE]
 >
->See the latest [AEM Service Pack Release Notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html) for a complete list of fixed issues.
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, March 2, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
 
-## What is included in Experience Manager Forms 6.5
+<!--
+### [!DNL Forms] Fixes {#forms-fixes-6516}
+-->
 
-Adobe Experience Manager (AEM) Forms service pack includes new and upgraded features, such as key customer-requested enhancements, performance, stability, and security improvements. AEM Forms release service packs at a regular interval to provide latest features and improvements. Depending on your stack, choose one of the following paths to download and install service pack on your environment: 
+## Integrations {#integrations-6516}
 
-* [Download and install Service Pack on an AEM Form on JEE environment](#download-and-install-for-jee-service-pack) 
-* [Download and install Service Pack on an AEM Form on OSGi environment](#download-and-install-for-osgi-service-pack) 
+* Remove Adobe Search&Promote code and dependency from Experience Manager 6.5. Adobe Search&Promote reached end-of-service September 2022. See [Adobe Search&Promote End-of-Service Announcement](https://experienceleague.adobe.com/docs/discontinued/using/search-promote.html?lang=en). (NPR-39706)
 
->[!NOTE]
->
-> Adobe releases a full installer after every 6th service pack. AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE is the last full installer. The full installer provides support for new platforms while the regular service pack installer includes only bug fixes and general improvements. If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.12.0 Forms on JEE full installer released on 03 March 2022 instead of AEM 6.5 Forms installer released on 08 April 2019. After using the full installer, install the latest service pack.  
+## [!DNL Sites] {#sites-6516}
 
-## Download and install Service Pack on an AEM Form on JEE environment {#download-and-install-for-jee-service-pack}
+* Current `cq-wcm-core` artifactory release does not have the POM. (SITES-10983)
+* The rollout preview action should not list the page to be created. (SITES-10355, CQ-4266213)
+* Rollout after MSM detach recreates the detached page. (SITES-9841)
+* Creating a launch is timing out; user must wait many minutes on a loading screen before the request times out. (SITES-9051)
+* The Rollout Page user interface is displaying non-existent parent page paths. You can roll out the page with a success message, but the child page is not rolled out due to the parent page never getting rolled out in the first place. (SITES-8621)
 
-![JEE Installation](/help/forms/using/assets/jeeinstallation.png)
+### [!DNL Sites] - Core Components {#sites-core-components-6516}
 
-+++1. Take backup of your existing environment:
-   
-   1. Back up your [CRX Repository, Database Schema, and GDS (Global Document Storage)](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html). 
-   1. Back up  the &lt;*AEM_forms_root*&gt;/deploy folder. It is required if you decide to uninstall the service pack.
+* Centralize the link processing on e-mail pages so that model customizations are not needed anymore. (SITES-9002)
 
-   >[!NOTE]
-   >
-   > Before running the AEM service pack installer, make sure you have write-access privileges on AEM installation directory.
+### [!DNL Sites] - Admin User Interface {#sites-adminui-6516}
 
-+++
+* CSV Export is not exporting all the pages under the selected page. (SITES-9390)
 
-+++2.Download the required software:
+### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6516}
 
-* [AEM Forms on JEE 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-* [AEM 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-* [Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
-* [Fragment Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+* Unable to print a content fragment's JSON. The reason is because the GraphQL query cannot be generated when you open the content fragment's Preview page. (SITES-8619)
+* When reopening the Content Fragment Model Editor, all **[!UICONTROL Date and Time]** fields are defaulting to Date & Time type. (SITES-8401)
 
-+++
+### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6516}
 
-+++3. Install AEM Forms on JEE service pack:
-
-   1. Stop your application server.
-   1. Extract the **AEM Forms on JEE 6.5.15.0 Service Pack installer archive** to your hard drive: 
-
-      * **Windows** 
-          Navigate to the appropriate directory on the installation media or folder on your hard disk where you copied     the installer, and double-click the `aemforms65_cfp_install.exe` file.
-
-          * (Windows 32-bit) `Windows\Disk1\InstData\VM`
-          * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
-
-      * **Linux®** 
-          Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_install.bin`.
-
-          * (Linux®) `Linux/Disk1/InstData/NoVM` 
-
-      This launches an install wizard that guides you through the installation.
-
-   1.  On the Introduction panel, click **[!UICONTROL Next]**.
-   1.  On the **Choose Install Folder** screen, verify that the default location displayed is correct for your existing installation, or click **[!UICONTROL Browse]** to select the alternate folder where AEM forms is installed, and click **[!UICONTROL Next]**.
-   1.  Read the Service Pack summary information and click **[!UICONTROL Next]**.
-   1.  Read the Pre-Installation Summary information and click **[!UICONTROL Install]**.
-   1.  When the installation is complete, click **[!UICONTROL Next]** to apply the quick fix updates to your installed files.
-   1.  **[For Windows only]:** Perform one of the following step:
-   
-         * Either deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Run **Configuration Manager** by using the **ConfigurationManager.bat** file located in `[aem-forms root]\configurationManager\bin`. 
-
-         * Or deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. Before running **Configuration Manager** using **ConfigurationManager.exe** or **ConfigurationManager_IPv6.exe**, navigate to *`<AEMForms_Install_Dir>\configurationManager\bin`* directory and replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) and [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) files.
-
-            >[!NOTE]
-            >
-            >* Updating or replacing the **ConfigurationManager.bat** file helps you to avoid updating the name of .lax files manually.
-
-   1. **[For Unix-based only]:** The **Start Configuration Manager** check box is selected by default. Click **[!UICONTROL Done]** to run the Configuration Manager instantly or to run **Configuration Manager** later, deselect the **Start Configuration Manager** option before you click **[!UICONTROL Done]**. You can start **Configuration Manager** later using the appropriate script in the `[AEM_forms_root]/configurationManager/bin` directory.
-  
-   1. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
-
-      * [Installing and Deploying AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-      * [Installing and Deploying AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
-      * [Installing and Deploying AEM Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-      * [Installing and Deploying AEM forms for JBoss® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
-      * [Installing and Deploying AEM forms for WebSphere® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
-      * [Installing and Deploying AEM Forms for WebLogic Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
-
- 
->[!NOTE]
->
-> After installing AEM Forms on JEE service pack, you need to remove the Forms add-on package from `crx-repository\install` folder before restarting the appserver. Download the latest Forms add-on package from the [Software Distribution portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-
-+++
-
-+++4. Install the servlet fragment
-
-It is mandatory to install **servlet fragment** for all application servers except those    running on JBoss® EAP 7.4.0. To download and install the servlet fragment: 
-
-1. If you have not downloaded the fragment, download it from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
-
-1. Start the application server, wait for logs to stabilize and check the bundle state.
-
-1. Open Web Console Bundles. The default URL is `http://[Server]:[Port]/system/console/bundles`.
-
-1. Click Install/Update. Choose the downloaded fragment, `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. Click **Install** or **Update**. Wait for the application server to stabilize
-
-1. Stop the application server.
-
-+++
-
-+++5. Install AEM Service Pack
-
-   1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
-   1.  Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
-   1.  Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
-   1.  Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
-   1.  Select the package, then select **[!UICONTROL Install]**.
-   1.  To update the S3 connector, stop the instance after installation of the Service Pack, replace the existing connector with a new binary file provided in the install folder, and restart the instance. See [Amazon S3 Data Store](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
-
-   **Automatic installation**
-   
-   There are two different methods that you can use to automatically install [!DNL ExperienceManager] 6.5.15.0.<!--       UPDATE FOR EACH NEW RELEASE -->
-   
-   * Place the package into `../crx-quickstart/install` folder when the server is available online. 
-   The package is      automatically installed.
-   
-   * Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use  `cmd=install&recursive=true` so that the nested packages are installed.
-   
-      >[!NOTE]
-      >
-      >Experience Manager 6.5.15.0 does not support Bootstrap installation. <!-- UPDATE FOR EACHNEW RELEASE -->
-   
-   **Validate the installation**
-   
-   To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
-   
-   1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience      Manager (6.5.15.0)` under [!UICONTROL Installed Products].<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in theOSGi Console (Use Web     Console: `/system/console/bundles`).
-   1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use WebConsole: `/system/console/     bundles`).
-
-+++
-
-+++6. Install AEM Experience Manager Forms add-on package
-      
-   1. Ensure that you have installed the [!DNL Experience Manager] service pack.
-   1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) for your operating system.
-   1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-
-+++
+* You are unable to move an Experience Fragment to another folder even if the template is listed under allowed templates. (SITES-8601)
+* (SITES-7989)
 
 
-<!-- 1. (JBoss only) After installing the patch and configuring the server, delete  tmp  and work directories of JBoss application server.
+### [!DNL Sites] - Page Editor {#sites-pageeditor-6516}
+
+* Update dependencies for the resource resolver improvement made in SITES-8464 in which page rendering in Authoring mode created a high number of `TemplatedResourceImpl` objects. (SITES-9350)
+
+## Sling {#sling-6516}
+
+* Experience Manager is deadlocked on startup. (NPR-39832)
+* When many vanity paths are present in Experience Manager's version storage, Experience Manager fails to start. (NPR-38955)
+
+
+## Translation projects {#translation-6516}
+
+* In `MicrosoftTranslationServiceImpl`, the query string parameter `Category` is incorrect. (NPR-39828)
+* Creating a translation project displays the error *Master page resource does not exist*; the translation project is not created. (NPR-39762)
+* Unable to set a due date on a translation project that uses a human translation connector. (NPR-39593)
+
+## User interface {#ui-6516}
+
+* When changing to a smaller resolution, the DatePicker does not display, and the AM/PM select does not display or change visibly. (NPR-39948)
+* When minify js (minimization of JavaScript) is used, it does not process the minification due to a parsing error. (NPR-39650)
+* Tag field (`/libs/cq/gui/components/coral/common/form/tagfield`) conflicts with timeline. (CQ-4350751)
+
+
+## WCM {#wcm-6516}
+
+* The rollout preview action should not list the page to be created. (CQ-4266213, SITES-10355) 
+
+## Workflow {#workflow-6516}
+
+* Manually deleting the editable workflow model from `/conf` leaves a lingering runtime model instance without an editable model. (CQ-4349365)
+
+
+## Install [!DNL Experience Manager] 6.5.16.0 {#install}
+
+<!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
+
+* [!DNL Experience Manager] 6.5.16.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
+* The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.16.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
->Before installing [AEM 6.5.15.0 service pack](#install-the-aem-service-pack-install-aem-service-pack), for all the AEM Forms on JEE environments using any application servers other than JBoss EAP 7.4.0: 
-> * Install  the [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) servlet fragment and wait for the application server to stabilize.
->* If you install the latest [AEM service pack (6.5.15.0)](#install-the-aem-service-pack-install-aem-service-pack), prior to the fragment servlet `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` on JEE environment, the CRX/bundle and the start page show service unavailable errors, [click here](/help/forms/using/aem-service-pack-installation-solution.md) to know the troubleshooting steps. 
+> Adobe does not recommend that you remove or uninstall the [!DNL Experience Manager] 6.5.16.0 package. As such, before you install the pack, you should create a backup of the `crx-repository` in case you need to roll it back. <!-- UPDATE FOR EACH NEW RELEASE -->
+<!-- For instructions to install Service Pack for AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
-### !-->
+### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
+
+1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
+
+1.  Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
+
+1.  Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+
+1.  Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
+
+1.  Select the package, then select **[!UICONTROL Install]**.
+
+1.  To update the S3 connector, stop the instance after installation of the Service Pack, replace the existing connector with a new binary file provided in the install folder, and restart the instance. See [Amazon S3 Data Store](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+
+>[!NOTE]
+>
+>Dialog on Package Manager UI sometimes exits during the installation of the service pack. Adobe recommends that you wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations is successful. Typically, this issue occurs in [!DNL Safari] browser but can intermittently occur on any browser.
+
+**Automatic installation**
+
+There are two different methods that you can use to automatically install [!DNL Experience Manager] 6.5.16.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+
+* Place the package into `../crx-quickstart/install` folder when the server is available online. The package is automatically installed.
+* Use the [HTTP API from Package Manager](/help/sites-administering/package-manager.md#package-share). Use `cmd=install&recursive=true` so that the nested packages are installed.
+
+>[!NOTE]
+>
+>Experience Manager 6.5.16.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+
+**Validate the installation**
+
+To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
+
+1.  The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience Manager (6.5.16.0)` under [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
+
+1.  All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
+
+1.  The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+
+### Install Service Pack for [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>Skip if you are not using [!DNL Experience Manager] Forms.
+
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+
+<!-- 
+
+For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+-->
+
+### UberJar {#uber-jar}
+
+The UberJar for [!DNL Experience Manager] 6.5.16.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+
+To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+
+```shell
+<dependency>
+     <groupId>com.adobe.aem</groupId>
+     <artifactId>uber-jar</artifactId>
+     <version>6.5.16</version>
+     <scope>provided</scope>
+</dependency>
+```
+
+>[!NOTE]
+>
+>UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. So, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
+
+## Deprecated features {#removed-deprecated-features}
+
+Below is a list of features and capabilities that are marked as deprecated with [!DNL Experience Manager] 6.5.7.0. Features are marked deprecated initially and later removed in a future release. An alternate option is provided.
+
+Review if you use a feature or a capability in a deployment. Also, plan to change the implementation to use an alternate option.
+
+| Area | Feature | Replacement |
+|---|---|---|
+| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O Runtime]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O Runtime] integrations via the respective [!DNL Experience Manager] cloud services. |
+| Connectors | The Adobe JCR Connector for Microsoft&reg; SharePoint 2010 and Microsoft&reg; SharePoint 2013 is deprecated for [!DNL Experience Manager] 6.5. | N/A |
+
+## Known issues {#known-issues}
+
+<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
+ -->
+<!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
+To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
+`<designModelPath>/jcr:content.generate.json`. -->
 
 
-## Download and install Service Pack on an AEM Form on OSGi environment {#download-and-install-for-osgi-service-pack}
+* [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+  This package is needed for customers using GraphQL; this enables them to add the required index definition based on the features they actually use.
 
-![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
+* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0].
 
+* If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
-+++1. Take backup of your existing environment:
-   
-   1. Back up your [CRX Repository and Database Schema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html). 
+* Users can rename a folder in a hierarchy in [!DNL Assets] and publish a nested folder to [!DNL Brand Portal]. However, the title of the folder is not updated in [!DNL Brand Portal] until the root folder is republished.
 
-   >[!NOTE]
-   >
-   > If you install AEM Forms service pack for relational database, it is mandatory to take backup of DB_schema.
+* When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue.
 
-+++
+* The following errors and warning messages may display during installation of [!DNL Experience Manager] 6.5.x.x:
+  * "When the Adobe Target integration is configured in [!DNL Experience Manager] using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type "Experience Fragment"/source "Adobe Experience Manager," Target creates several offers with type "HTML"/source "Adobe Target Classic."
+  * `com.adobe.granite.maintenance.impl.TaskScheduler`: No maintenance windows found at granite/operations/maintenance.
+  * Adaptive Form server-side validation fails when aggregate functions such as SUM, MAX, and MIN are used (CQ-4274424).
+  * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
+  * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
+  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for register change to complete unregistered.
 
-+++2.Download the required software:
+* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work.
+  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no reindexing is required):
 
-* [AEM 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
-* [Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
 
-+++
+## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
-+++3. Install AEM Service Pack
+The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.16.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
-   1.  Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
-   1.  Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
-   1.  Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
-   1.  Select the package, then select **[!UICONTROL Install]**.
-   1.  To update the S3 connector, stop the instance after installation of the Service Pack, replace the existing connector with a new binary file provided in the install folder, and restart the instance. See [Amazon S3 Data Store](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector).
+* [List of OSGi bundles included in Experience Manager 6.5.16.0](/help/release-notes/assets/65150_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.16.0](/help/release-notes/assets/65150_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
-   **Automatic installation**
+## Restricted websites {#restricted-sites}
 
-   There are two different methods that you can use to automatically install [!DNL Experience Manager] 6.5.15.0.<!--       UPDATE FOR EACH NEW RELEASE -->
+These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
-   * Place the package into `../crx-quickstart/install` folder when the server is available online. The package is      automatically installed.
-   * Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use `cmd=install&recursive=true` so that the nested packages are installed.
+* [Product download at licensing.adobe.com](https://licensing.adobe.com/)
+* [Contact Adobe Customer Support](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
-      >[!NOTE]
-      >
-      >Experience Manager 6.5.15.0 does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
-
-   **Validate the installation**
-
-   To know the platforms that are certified to work with this release, see the [technical requirements](/help/sites-deploying/technical-requirements.md).
-
-   1. The product information page (`/system/console/productinfo`) displays the updated version string `Adobe Experience      Manager (6.5.15.0)` under [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
-
-   1. All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
-
-      1. The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.13 or later (Use Web Console: `/system/console/bundles`).
-
-+++
-
-+++4. Install AEM Experience Manager Forms add-on package
-      
-   1. Ensure that you have installed the [!DNL Experience Manager] service pack.
-   1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) for your operating system.
-   1. Install the Forms add-on package as described in [Installing AEM Forms add-on packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-   1. If you use letters in Experience Manager 6.5 Forms, install the [latest AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-
-+++
-
-## Troubleshooting
-
-* If **Dialog on Package Manager UI** exits during the installation of the service pack, wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations are successful. Typically, this issue occurs in Safari browser but can intermittently occur on any browser.
-
-* Check the monitor logs (error.log) once the installation is complete for any activity. Wait for few minutes until there is no activity in the logs. Restart the AEM instance.
-
-* In case you get a **service-unavailable error** after installing the latest AEM Forms 6.5.15.0 service pack, [install the servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md) to fix the error.
+>[!MORELIKETHIS]
+>
+>* [[!DNL Experience Manager] product page](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 6.5 documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html)
+>* [Subscribe to Adobe priority product updates](https://www.adobe.com/subscription/priority-product-update.html)

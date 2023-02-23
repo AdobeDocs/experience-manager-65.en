@@ -15,6 +15,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 + [Current Release Notes](release-notes.md)
 + [AEM Forms Service Pack installation instructions](aem-forms-current-service-pack-installation-instructions.md)
 + [Previous Release Notes]{#service-pack}
+  + [6.5.15](previous/6.5.15.md)
   + [6.5.14](previous/6.5.14.md)
   + [6.5.13](previous/6.5.13.md)
   + [6.5.12](previous/6.5.12.md)

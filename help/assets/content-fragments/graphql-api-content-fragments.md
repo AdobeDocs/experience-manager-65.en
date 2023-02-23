@@ -93,12 +93,26 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-You can also perform:
+AEM provides capabilities to convert queries (both types) to [Persisted Queries](/help/assets/content-fragments/persisted-queries.md), that can be cached by Dispatcher and the CDN.
 
-* [Persisted Queries, that are cached](#persisted-queries-caching)
+### GraphQL Query Best Practices (Dispatcher and CDN) {#graphql-query-best-practices}
+
+The [Persisted Queries](/help/assets/content-fragments/persisted-queries.md) are the recommended method to be used on publish instances as:
+
+* they are cached
+* they are managed centrally by AEM 
 
 >[!NOTE]
->You can test and debug GraphQL queries using the [GraphiQL IDE](#graphiql-interface).
+>
+>Usually there is no dispatcher/CDN on author, so there is no gain in using persisted queries there; apart from testing them.
+
+GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
+
+While GraphQL also supports GET requests, these can hit limits (for example the length of the URL) that can be avoided using Persisted Queries.
+
+>[!NOTE]
+>
+>The ability to perform direct queries may be deprecated at some point in the future.
 
 ## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
 
@@ -185,11 +199,13 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 
 ## GraphiQL Interface {#graphiql-interface}
 
-An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is available for use with AEM GraphQL. This can be [installed with AEM](#installing-graphiql-interface). 
+An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) interface is available for use with AEM GraphQL. 
 
 >[!NOTE]
 >
->GraphiQL is bound the global endpoint (and does not work with other endpoints for specific Sites configurations).
+>GraphiQL is included in all environments of AEM (but will only be accessible/visible when you configure your endpoints).
+>
+>In previous releases, a package was needed to install the GraphiQL IDE. If you have this installed, it can now be removed.
 
 This interface allows you to directly input, and test, queries.
 
@@ -201,13 +217,9 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
-### Installing the AEM GraphiQL interface {#installing-graphiql-interface}
-
-The GraphiQL user interface can be installed on AEM with a dedicated package: the [GraphiQL Content Package v0.0.6 (2021.3)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-graphql/graphiql-0.0.6.zip) package.
-
 >[!NOTE]
 >
->The package available is fully compatible with AEM 6.5.10.0 and AEM as a Cloud Service.
+>For further details see [Using the GraphiQL IDE](/help/assets/content-fragments/graphiql-ide.md).
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
@@ -224,6 +236,10 @@ The use cases can depend on the type of AEM environment:
 ## Permissions {#permission}
 
 The permissions are those required for accessing Assets.
+
+GraphQL queries are executed with the permission of the AEM user of the underlying request. If the user does not have read access to some fragments (stored as Assets), they will not become part of the result set. 
+
+Also, the user needs to have access to a GraphQL endpoint to be able to execute GraphQL queries. 
 
 ## Schema Generation {#schema-generation}
 
@@ -448,6 +464,7 @@ query GetArticlesByVariation($variation: String!) {
         items {
             _path
             author
+            _variations
         }
     }
 }
@@ -609,6 +626,7 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
   * If the requested variation does not exist in a nested fragment, then the **Master** variation will be returned.
 
+<!--
 ## Persisted Queries (Caching) {#persisted-queries-caching}
 
 After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
@@ -831,6 +849,7 @@ To access the GraphQL endpoint from an external website you need to configure th
 
 * [CORS Filter](#cors-filter)
 * [Referrer Filter](#referrer-filter)
+-->
 
 ### CORS Filter {#cors-filter}
 
