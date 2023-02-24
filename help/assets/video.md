@@ -461,7 +461,7 @@ Enabling DASH on your account requires two steps:
 1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
 1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
 1. You are notified after completion by Customer Support.
-1. Create your [video viewer preset](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
+1. Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
 
 ## Publish videos to YouTube {#publishing-videos-to-youtube}
 
