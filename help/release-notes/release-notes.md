@@ -74,9 +74,12 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 ## [!DNL Forms] {#forms-6516}
 
-<!--
+### [!DNL Forms] Key Features {#forms-features-6516}
+
+* The Reader Extension service in the OSGi stack allows for the individual application of import and export usage rights to a document. (NPR-39909)
+* To enable translation, the dictionary includes locales with special characters such as underscores or hyphens. (NPR-40088)
+
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
--->
 
 * When a user enables both the Document of record functionality and the **Send Email** submission handler for an Adaptive Form, the **Generate Preview** button displays an error message as **DoR Generation Failed**. (NPR 40081)
 * When using an Adaptive Form with a data model based on XDP and binding references to checkboxes or radio buttons, either the selected or unselected events at a time, and not both are captured simultaneously.(NPR-40077),(CQ-4351921), (CQ-4351572)
@@ -91,14 +94,20 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * On slight movement of a switch control, the value of the switch is changed. The values should change when the switch button is dragged to middle or to extreme left or right. (NPR-39916)
 * After a user upgrades to AEM 6.5.15.0 Service Pack, HTML heading tag is not recognized. HTML code for the heading tag is displayed as text in the HTML form. (NPR-39915)
 * When the user tries to submit an Adaptive Form, a typecast error occurs: `" ERROR [10.207.64.167 [1668589530607] POST /app/LS4/content/forms/af/revalidate/jcr:content/guideContainer.af.submit.jsp HTTP/1.1]”`( NPR-39809)
-* After a user upgrades to AEM 6.5.15.0 Service Pack, the PostScript-to-Pdf conversion is not working. (NPR-39765)
+* After a user upgrades to AEM 6.5.15.0 Service Pack, the PostScript-to-Pdf conversion is not working. (NPR-39765), (NPR-39764)
 * When user tries to open the tour screen after opening an Adaptive Form, it fails with a NullPointer exception:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
-* When a user upgrades to AEM 6.5.14.0 Service Pack, the PDF generation using Output service fails to work. (LC-3920769)
+* When you upgrade to AEM 6.5.14.0 Service Pack, the PDF generation using Output service fails to work. (LC-3920769)
 * An error occurs when a user attempts to convert an XDP file to PDF using Assembler Forms Service. (CQ-4352210)
 * After a user upgrades to AEM 6.5.15.0 Service Pack, the SentToPrinter service fails to work. (CQ-4350975)
-* When a user runs a translation job, the `formAlreadySubmitted` and `datatypeMessage` messages do not translate to German language. (CQ-4343999)
+* When a you run a translation job, the `formAlreadySubmitted` and `datatypeMessage` messages do not translate to German language. (CQ-4343999)
 * When a user enables high contrast black settings in Windows, the mobile forms content become unclear when rendered as an HTML preview in the browser. (NPR-39018)
-* The Reader Extension service in the OSGi stack allows for the individual application of import and export usage rights to a document. (NPR-39909)
+* When you upgrade to AEM 6.5.14.0 and use importData service to merge PDFs with XML, the following error occurs:
+`Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
+* When you create an Adaptive Form using core components and configure a thank you message, the configured thank you message fails to display as intended. Instead, upon submitting the Adaptive Form, the default thank you page is shown. (NPR-40084)
+* While rendering XDP as HTML forms, the screen reader indicates the total number of items in the list. (NPR-40048)
+* In case a user rearranges the components in an Adaptive Form using core components and then translates the form, the dictionary fails to rearrange the keys in the order in which they appear.Though the dictionary functions properly for newly added or deleted components. (NPR-40041)
+* When user tries to `Prepare Adobe Experience Manager Server For DSC deployment` check while running the AEM Forms JEE service pack it fails, if the default password of the admin user is changed from admin.(NPR-40062), (NPR-39387)
+
 
 ## Integrations {#integrations-6516}
 
