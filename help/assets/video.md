@@ -224,17 +224,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 or later</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>HLS adaptive streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -244,7 +244,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android&trade; 7 or later)</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -254,17 +254,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>HLS adaptive streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>DASH* or HLS</td>
+   <td>HLS adaptive streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive streaming./td>
   </tr>
  </tbody>
 </table>
@@ -425,7 +425,7 @@ Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 fil
 
 ### Enable DASH on your account {#enable-dash}
 
-DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When you enable DASH, you get the option to choose from HLS or DASH for adaptive video streaming. You can also opt for both with automatic switching between players.
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
 
 Some key benefits from enabling DASH on your account include the following:
      
@@ -440,12 +440,28 @@ Some key benefits from enabling DASH on your account include the following:
    >
    >Enabling DASH on your account currently is available only in North America.
 
+Enabling DASH on your account requires two steps: 
+
+* Configuring Dynamic Media to use DASH which you can easily do yourself.
+* Configuring Experience Manager 6.5 to use DASH which is done by way of an Adobe Customer Support case that you create and submit. 
+
 **To enable DASH on your account:**
 
-1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. **Configure Dynamic Media** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
 1. Select the checkbox to enable (turn on) DASH.
 1. Select **[!UICONTROL Save]**.
+1. **Configure Experience Manager 6.5** - [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Follow the instructions to create a support case while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH enabled on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
+1. You are notified after completion by Customer Support.
+1. Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
 
 ## Publish videos to YouTube {#publishing-videos-to-youtube}
 
