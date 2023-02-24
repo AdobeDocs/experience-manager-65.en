@@ -100,14 +100,13 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * An error occurs when a user attempts to convert an XDP file to PDF using Assembler Forms Service. (CQ-4352210)
 * After a user upgrades to AEM 6.5.15.0 Service Pack, the SentToPrinter service fails to work. (CQ-4350975)
 * When a you run a translation job, the `formAlreadySubmitted` and `datatypeMessage` messages do not translate to German language. (CQ-4343999)
-* When a user enables high contrast black settings in Windows, the mobile forms content become unclear when rendered as an HTML preview in the browser. (NPR-39018)
+* In Windows, when user enables high contrast black settings, the HTML5 Forms content become unclear when rendered as an HTML preview in the browser. (NPR-39018)
 * When you upgrade to AEM 6.5.14.0 and use importData service to merge PDFs with XML, the following error occurs:
 `Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
 * When you create an Adaptive Form using core components and configure a thank you message, the configured thank you message fails to display as intended. Instead, upon submitting the Adaptive Form, the default thank you page is shown. (NPR-40084)
 * While rendering XDP as HTML forms, the screen reader indicates the total number of items in the list. (NPR-40048)
 * In case a user rearranges the components in an Adaptive Form using core components and then translates the form, the dictionary fails to rearrange the keys in the order in which they appear.Though the dictionary functions properly for newly added or deleted components. (NPR-40041)
-* When user tries to `Prepare Adobe Experience Manager Server For DSC deployment` check while running the AEM Forms JEE service pack it fails, if the default password of the admin user is changed from admin.(NPR-40062), (NPR-39387)
-
+* In case you change the default password of the admin user from `admin`, while performing the `Prepare Adobe Experience Manager Server For DSC deployment` check on the AEM Forms JEE service pack it fails. (NPR-40062), (NPR-39387)
 
 ## Integrations {#integrations-6516}
 
