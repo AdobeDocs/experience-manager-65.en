@@ -112,6 +112,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Store binaries in TAR files on file system `[1]` |Binaries |Z: Not supported for production |
 | Amazon S3 |Binaries |A: Supported |
 | Microsoft Azure Blob Storage |Binaries |A: Supported |
+| MongoDB Enterprise 4.4 |Repository |A: Supported `[2, 3, 4]` |
 | MongoDB Enterprise 4.2 |Repository |A: Supported `[2, 3, 4]` |
 | MongoDB Enterprise 4.0 |Repository |Z: Not supported |
 | MongoDB Enterprise 3.6 |Repository |Z: Not supported |
