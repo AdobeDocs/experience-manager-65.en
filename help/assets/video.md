@@ -193,7 +193,7 @@ In Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, D
 * If you have an HTTPS website with HTTPS video streaming, streaming is fine.
 * If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
 
-DASH is the international standard and HLS is an Apple standard, and both are used for adaptive video streaming. Both technologies automatically adjust playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
+DASH is the international standard and HLS is an Apple standard. Both are used for adaptive video streaming. And, both technologies automatically adjust playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
 
 Progressive video is delivered by downloading and storing the video locally on a user's desktop system or mobile device.
 
