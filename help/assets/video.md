@@ -166,11 +166,11 @@ See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
-The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback. And, issues associated with mobile devices such as lack of adaptive streaming delivery and limited desktop browser reach.
+The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback. And, issues associated with mobile devices such as lack of adaptive bitrate streaming delivery and limited desktop browser reach.
 
 On the design side of the player, you can design the video player's functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS or DASH, also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS (HTTP Live Streaming) or DASH (Dynamic Adaptive Streaming over HTTP) , also known as adaptive bitrate streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
 
 By combining into a single player the following:
 
@@ -186,14 +186,14 @@ See also [About HTML5 Viewers](https://experienceleague.adobe.com/docs/dynamic-m
 
 For desktop and mobile adaptive video streaming, the videos used for bit rate switching are based on all MP4 videos in the Adaptive Video Set.
 
-Video playback occurs using either HLS or DASH, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
+Video playback occurs using either DASH or HLS, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP. 
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
+In Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, DASH or HLS) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming always occurs over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
 
 * If you have an HTTPS website with HTTPS video streaming, streaming is fine.
 * If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
 
-HLS is an Apple standard for adaptive video streaming that automatically adjusts playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
+DASH is the international standard and HLS is an Apple standard, and both are used for adaptive video streaming. Both technologies automatically adjust playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
 
 Progressive video is delivered by downloading and storing the video locally on a user's desktop system or mobile device.
 
@@ -224,17 +224,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 or later</td>
-   <td>DASH* or HLS adaptive streaming.</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>DASH* or HLS adaptive streaming.</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS adaptive streaming.</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -244,7 +244,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android&trade; 7 or later)</td>
-   <td>DASH* or HLS adaptive streaming.</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -254,17 +254,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS adaptive streaming.</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS adaptive streaming.</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>DASH* or HLS adaptive streaming./td>
+   <td>DASH* or HLS adaptive bitrate streaming./td>
   </tr>
  </tbody>
 </table>
@@ -429,7 +429,7 @@ DASH (Digital Adaptive Streaming over HTTP) is the international standard for vi
 
 Some key benefits from enabling DASH on your account include the following:
      
-* Package DASH stream video for adaptive streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
 * Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
 * You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
 * Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
