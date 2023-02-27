@@ -78,6 +78,7 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 * The Reader Extension service in the OSGi stack allows for the individual application of import and export usage rights to a document. (NPR-39909)
 * To enable translation, the dictionary includes locales with special characters such as underscores or hyphens. (NPR-40088)
+* Added two-factor authentication for accessing ADMIN UI. (NPR-39911)
 
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
 
@@ -107,16 +108,15 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * While rendering XDP as HTML forms, the screen reader indicates the total number of items in the list. (NPR-40048)
 * In case a user rearranges the components in an Adaptive Form using core components and then translates the form, the dictionary fails to rearrange the keys in the order in which they appear.Though the dictionary functions properly for newly added or deleted components. (NPR-40041)
 * In case you change the default password of the admin user from `admin`, while performing the `Prepare Adobe Experience Manager Server For DSC deployment` check on the AEM Forms JEE service pack it fails. (NPR-40062), (NPR-39387)
-* Added two-factor authentication for accessing ADMIN UI. (NPR-39911)
-* After upgrading to AEM 6.5.15.0 Service Pack on Windows server, the user encounters multiple error messages, and the email service is not working. (NPR-39919)
-* After entering incorrect information, such as an incorrect month and date. The "Date Input Field" doesn't display any error or warning messages. (NPR-39369)
+* After upgrading to AEM 6.5.15.0 Service Pack on Windows server, the user encounters multiple error messages, and the email service is not working.(NPR-39919)
+* After entering incorrect information, such as an incorrect month and date, the Date Input Field does not display any error or warning messages. (NPR-39369)
 * When moving through the sidebar or left panel (Content, Properties, Assets, Components, Data Sources) using the tab on the keyboard, the focus shifts unexpectedly to the tab panel. (NPR-39987)
-* When AEM 6.5.15.0 is installed on a Level Access internal Ubuntu web server. The iframe element does not have a mechanism that allows to access and edit accessible name value in Rule Editor. (NPR-39640)
-* Navigation from one panel to the other panel through tabs is not working, and the container is non-interactive, and "tab panel" role is present. (NPR-39824)
+* When AEM 6.5 is installed on a Level Access internal Ubuntu web server, the iframe element does not have a mechanism that allows you to calculate accessible name value in the Rule editor. (NPR-39640)
+* Navigation from one panel to the other panel through tabs is not working, and the container is non-interactive, and **tab panel** role is present. (NPR-39824)
 * Form fields in the side panel have visible labels that are not associated with the form fields. Form fields are missing valid, accessible labels. (NPR-39955)
-* When AEM 6.5.15.0 is installed on a Level Access internal Ubuntu web server. The body element does not contain elements that create a heading structure (h1-h6 elements) and does not contain an element given a role as heading, in the rule editor. (NPR-39835)
-* The spinbox elements to adjust dimensions have **label** elements that are not programmatically associated through the **for** attribute. ( NPR-39626)
-* In Send Email, when selecting variables for Recipient Email Address in the Recipient Details tab, the variables are not listed in the next drop-down tab. (NPR-39642)
+* On AEM 6.5 installed on a Level Access internal Ubuntu web server, the body element does not contain tags to create a heading structure (`<h1>, <h2>` elements ) and element role  in rule editor. (NPR-39835)
+* The spinbox elements to adjust dimensions have [label] elements that are not programmatically associated through the `for` attribute. (NPR-39626)
+* In **Send Email**, on selecting the Variables for **Recipient Email Address** option in the **Recipient Details** tab, the variables are not listed in the next drop-down tab. (NPR-39642)
 
 ## Integrations {#integrations-6516}
 
