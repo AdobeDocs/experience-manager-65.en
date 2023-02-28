@@ -124,7 +124,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Apache Solr |Search Service |A: Supported |
 
 1. 'File System' includes block storage that is POSIX-compliant. This includes network storage technology. Mind that file system performance might vary and influences the overall performance. It is recommended to load test AEM in combination with the network/remote file system.
-1. MongoDB Enterprise 4.2 requires AEM 6.5 SP9 as minimum.
+1. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as minimum.
 1. MongoDB Sharding is not supported in AEM.
 1. MongoDB Storage Engine WiredTiger is supported only.
 1. Supported for AEM Forms upgrade customers. Not supported for new installations.
