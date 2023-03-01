@@ -60,7 +60,7 @@ Alternatively, you can browse directly to [https://portal.azure.com/#blade/Micro
 
 Next, you need to generate the authorization code, explained in the following steps:
 
-1. Open the following URL in the browser after replacing `clientID` with the `<client_id>` and `redirect_uri` with your redirect URI of your application: 
+1. Open the following URL in the browser after replacing `clientID` with the `<client_id>` and `redirect_uri` with the redirect URI of your application: 
 
     ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
 
@@ -91,7 +91,7 @@ Next, you need to generate the refresh token, explained in the following steps:
 
    >[!NOTE]
    >
-   > In single tenant application, to generate refresh token use the following cURL command and replace `common` with your `[tenantid]` in:
+   > In single tenant application, to generate refresh token use the following cURL command and replace `common` with the `[tenantid]` in:
    >`curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Make note of the refresh token.
