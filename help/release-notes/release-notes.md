@@ -117,6 +117,7 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * On AEM 6.5 installed on a Level Access internal Ubuntu web server, the body element does not contain tags to create a heading structure (`<h1>, <h2>` elements ) and element role  in rule editor. (NPR-39835)
 * The spinbox elements to adjust dimensions have [label] elements that are not programmatically associated through the `for` attribute. (NPR-39626)
 * In **Send Email**, on selecting the Variables for **Recipient Email Address** option in the **Recipient Details** tab, the variables are not listed in the next drop-down tab. (NPR-39642)
+* When using a **Assign task** step to send a notification for an assigned task, two emails are sent instead of one to the assigned individual. (NPR-40078)
 
 ## Integrations {#integrations-6516}
 
@@ -237,16 +238,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 ### Install Service Pack for [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
 
->[!NOTE]
->
->Skip if you are not using [!DNL Experience Manager] Forms.
-
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
-
-<!-- 
-
 For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
--->
 
 ### UberJar {#uber-jar}
 
@@ -321,6 +313,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
      ]
    "refresh": true
    ```
+* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft Office 365 single tenant applications.
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 

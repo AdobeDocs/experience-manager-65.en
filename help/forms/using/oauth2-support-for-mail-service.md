@@ -20,7 +20,7 @@ Alternatively, you can browse directly to [https://portal.azure.com/#blade/Micro
    >[!NOTE]
    >
    > * For **Accounts in any organizational directory (Any Azure AD directory - Multitenant)** application, it is recommended to use work account rather than personal email account.
-   > * **Personal Microsoft® accounts only** and **Single Tenant** applications are not supported.
+   > * **Personal Microsoft® accounts only** application is not supported.
    > * It is recommended to use **Multi tenant and personal Microsoft® account** application.
 
 1. Next, go to **Certificates and Secrets**, click **New client secret** and follow the on-screen steps to create a secret. Make sure to take note of this value of secret for later use.
