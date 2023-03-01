@@ -64,6 +64,11 @@ Next, you need to generate the authorization code, explained in the following st
 
     ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
 
+   >[!NOTE]
+   >
+   > In case of the single tenant application, replace `common` with your `[tenantid]` in the following URL for generating authorization code:
+   `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+
 1. When, you type the above URL, you are redirected to the login screen:
    ![Login Screen](/help/forms/using/assets/azure_loginscreen.png)
 
@@ -84,6 +89,11 @@ Next, you need to generate the refresh token, explained in the following steps:
 1. Replace the `clientID`, `client_secret` and `redirect_uri` with the values for your application along with the value of `<code>`:
    
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
+
+   >[!NOTE]
+   >
+   > In single tenant application, to generate refresh token use the following cURL command and replace `common` with your `[tenantid]` in:
+   >`curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Make note of the refresh token.
 
@@ -109,7 +119,7 @@ Next, you need to generate the refresh token, explained in the following steps:
    >[!NOTE]
    >
    >* Transport Security protocol has valid values as: 'blank', 'SSL' or 'TLS'. You must set values of **SMTP Transport Security** and **Receive Transport Security** to **TLS** for enabling oAuth authentication service.
-   >* **POP3 protocol** is not supported for OAuth.
+   >* **POP3 protocol** is not supported for OAuth while using email endpoints.
 
     ![Connection Settings](/help/forms/using/assets/oauth_connectionsettings.png)
     
