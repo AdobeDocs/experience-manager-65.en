@@ -289,7 +289,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
      ]
    "refresh": true
    ```
-* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft Office 365.
+
+* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft Office 365 for single tenant applications.
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 

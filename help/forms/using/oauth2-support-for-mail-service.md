@@ -66,8 +66,7 @@ Next, you need to generate the authorization code, explained in the following st
 
    >[!NOTE]
    >
-   > In case of the single tenant application, replace `common` with your `[tenantid]` in the following URL for generating authorization code:
-   `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+   > In case of the single tenant application, replace `common` with your `[tenantid]` in the following URL for generating authorization code: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. When, you type the above URL, you are redirected to the login screen:
    ![Login Screen](/help/forms/using/assets/azure_loginscreen.png)
