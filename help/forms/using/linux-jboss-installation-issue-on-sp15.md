@@ -28,4 +28,4 @@ To fix the installation issue AEM Forms JEE 6.5.15.0 service pack, add the `RUP_
 1. Copy the `Resource1.zip` file at some different location outside the extracted folder and unzip `Resource1.zip` file.
 1. Navigate to `/C_/builds/dev_releng/branches/rrt/aem6.5.0_rollup/tier1/install/patch/fileset_dir/xml` and copy the `RUP_BOM.xml` file.
 1. Paste the RUP_BOM.xml file at `[aem_forms_jee_installation_dir]/patch/AEMForms-6.5.0-0057/xml`.
-1. Reinstall the [AEM Forms JEE 6.5.15.0 service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html). 
+1. Reinstall the [AEM Forms JEE 6.5.15.0 service pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). 
