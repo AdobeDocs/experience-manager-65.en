@@ -74,13 +74,30 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 ## [!DNL Forms] {#forms-6516}
 
->[!NOTE]
->
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, March 2, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
+### [!DNL Forms] Key Features {#forms-features-6516}
 
-<!--
+* [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. 
+
+*  [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are a set of 24 open-source, BEM-compliant components that are built on the foundation of the Adobe Experience Manager WCM Core Components. These components are open-source and provide developers the ability to easily customize and extend these components to match the specific needs of their organization. Anyone with existing skills to customize [WCM Core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) can easily customize and style these components.
+
+* The Reader Extension service on OSGi now provides separate options to enable import and export usage rights on a PDF to import or export data in Adobe Acrobat Reader. (NPR-39909)
+
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
--->
+
+* When using an Assign task** step to send a notification for an assigned task, two emails are sent instead of one to the assigned individual. (NPR-40078)
+* When a user hides the table headers, it causes the previously set column width to be unset, and all columns retain the same width. (NPR-40063)
+* In case you change the default password of the admin user from `admin`, while performing the `Prepare Adobe Experience Manager Server For DSC deployment` check on the AEM Forms JEE service pack it fails. (NPR-40062), (NPR-39387)
+* The OutputService and AssemblerService APIs, fail to convert PDF Form to PDF/A. (NPR-39990)
+* The AssemblerService not able to convert PDF to PDF/A. When a user converts PDF to PDF/A, the following error occurs: `PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Summary" ignoreUnusedResources="true" allowCertificationSignatures="true"> <Violation count="6" key="PDFA_CS_001_NOT_DEVICE_INDEPENDENT" description="ColorSpace is not device independent`. (NPR-39956)
+* When server-side validation fails for a GuideSubmitServlet API call, the errors are not returned in the response sent to the client. (NPR-39925)
+* After upgrading to AEM 6.5.15.0 Service Pack on Windows server, the user encounters multiple error messages, and the email service is not working.(NPR-39919)
+* When you upgrade to AEM 6.5.14.0 and use importData service to merge PDFs with XML, the following error occurs: `Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
+* When user installs **Document Security Office** extension, following issues occur:
+  * Microsoft® Excel crashes frequently.
+  * While opening a secured document, the **Document security office** extension is not detected as installed on a machine. Instructs the user to download and install the security extension. (NPR-39768)
+* After a user upgrades to AEM 6.5.15.0 Service Pack, the PostScript-to-Pdf conversion is not working. (NPR-39765), (NPR-39764)
+* When user tries to open the tour screen after opening an Adaptive Form, it fails with a NullPointer exception:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* In Windows, when user enables high contrast black settings, the HTML5 Forms content become unclear when rendered as an HTML preview in the browser. (NPR-39018)
 
 ## Integrations {#integrations-6516}
 
@@ -201,16 +218,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 ### Install Service Pack for [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
 
->[!NOTE]
->
->Skip if you are not using [!DNL Experience Manager] Forms.
-
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
-
-<!-- 
-
 For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
--->
 
 ### UberJar {#uber-jar}
 
@@ -260,7 +268,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
-* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft®&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss®&reg; EAP 7.1], [!DNL Microsoft®&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
@@ -285,6 +293,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
      ]
    "refresh": true
    ```
+
+* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft® Office 365.
+* On JBoss® 7.1.4 platform, when user install AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
