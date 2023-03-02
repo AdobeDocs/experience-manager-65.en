@@ -134,6 +134,8 @@ role: Developer
         + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
         + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
         + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
+        + [Using the GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
+        + [Persisted Queries](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
         + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)    
 + Hybrid and SPA AEM Development{#spas}
     + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
