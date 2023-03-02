@@ -166,11 +166,11 @@ See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
-The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback. And, issues associated with mobile devices such as lack of adaptive streaming delivery and limited desktop browser reach.
+The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback. And, issues associated with mobile devices such as lack of adaptive bitrate streaming delivery and limited desktop browser reach.
 
 On the design side of the player, you can design the video player's functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS or DASH, also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS (HTTP Live Streaming) or DASH (Dynamic Adaptive Streaming over HTTP) , also known as adaptive bitrate streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
 
 By combining into a single player the following:
 
@@ -186,14 +186,14 @@ See also [About HTML5 Viewers](https://experienceleague.adobe.com/docs/dynamic-m
 
 For desktop and mobile adaptive video streaming, the videos used for bit rate switching are based on all MP4 videos in the Adaptive Video Set.
 
-Video playback occurs using either HLS or DASH, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
+Video playback occurs using either DASH or HLS, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP. 
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS or DASH) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
+In Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, DASH or HLS) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming always occurs over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
 
 * If you have an HTTPS website with HTTPS video streaming, streaming is fine.
 * If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
 
-HLS is an Apple standard for adaptive video streaming that automatically adjusts playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
+DASH is the international standard and HLS is an Apple standard. Both are used for adaptive video streaming. And, both technologies automatically adjust playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
 
 Progressive video is delivered by downloading and storing the video locally on a user's desktop system or mobile device.
 
@@ -224,17 +224,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 or later</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -244,7 +244,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android&trade; 7 or later)</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -254,17 +254,17 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>DASH* or HLS</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>BlackBerry&reg;</td>
-   <td>DASH* or HLS</td>
+   <td>DASH* or HLS adaptive bitrate streaming./td>
   </tr>
  </tbody>
 </table>
@@ -425,11 +425,11 @@ Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 fil
 
 ### Enable DASH on your account {#enable-dash}
 
-DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When you enable DASH, you get the option to choose from HLS or DASH for adaptive video streaming. You can also opt for both with automatic switching between players.
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
 
 Some key benefits from enabling DASH on your account include the following:
      
-* Package DASH stream video for adaptive streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
 * Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
 * You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
 * Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
@@ -440,12 +440,28 @@ Some key benefits from enabling DASH on your account include the following:
    >
    >Enabling DASH on your account currently is available only in North America.
 
+Enabling DASH on your account requires two steps: 
+
+* Configuring Dynamic Media to use DASH which you can easily do yourself.
+* Configuring Experience Manager 6.5 to use DASH which is done by way of an Adobe Customer Support case that you create and submit. 
+
 **To enable DASH on your account:**
 
-1. Navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. **Configure Dynamic Media** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
 1. Select the checkbox to enable (turn on) DASH.
 1. Select **[!UICONTROL Save]**.
+1. **Configure Experience Manager 6.5** - [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. Follow the instructions to create a support case while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH enabled on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
+1. You are notified after completion by Customer Support.
+1. Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
 
 ## Publish videos to YouTube {#publishing-videos-to-youtube}
 

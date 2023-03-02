@@ -28,7 +28,7 @@ mini-toc-levels: 3
 
 A key improvement in Dynamic Media is the following:
 
-New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive streaming in Dynamic Media video delivery (with CMAF [Common Media Application Format] enabled).
+New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive bitrate streaming in Dynamic Media video delivery (with CMAF [Common Media Application Format] enabled).
 
 * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
 * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
