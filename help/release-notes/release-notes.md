@@ -76,9 +76,11 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Key Features {#forms-features-6516}
 
+* [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. 
+
+*  [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are a set of 24 open-source, BEM-compliant components that are built on the foundation of the Adobe Experience Manager WCM Core Components. These components are open-source and provide developers the ability to easily customize and extend these components to match the specific needs of their organization. Anyone with existing skills to customize [WCM Core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) can easily customize and style these components.
+
 * The Reader Extension service on OSGi now provides separate options to enable import and export usage rights on a PDF to import or export data in Adobe Acrobat Reader. (NPR-39909)
-* The [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are used for designing forms that can dynamically adjust to the user's device, browser, and screen size. As these components are open source, users can customize them to align with the organization's requirements.
-* [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) facilitate the creation and management of interactive forms by users. These forms are accessed using APIs rather than graphical user interface.   
 
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
 
