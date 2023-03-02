@@ -76,11 +76,13 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Key Features {#forms-features-6516}
 
-* The Reader Extension service in the OSGi stack allows for the individual application of import and export usage rights to a document. (NPR-39909)
+* The Reader Extension service on OSGi now provides separate options to enable import and export usage rights on a PDF to import or export data in Adobe Acrobat Reader. (NPR-39909)
+* The [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are used for designing forms that can dynamically adjust to the user's device, browser, and screen size. As these components are open source, users can customize them to align with the organization's requirements.
+* [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) facilitate the creation and management of interactive forms by users. These forms are accessed using APIs rather than graphical user interface.   
 
 ### [!DNL Forms] Fixes {#forms-fixes-6516}
 
-* When using a **Assign task** step to send a notification for an assigned task, two emails are sent instead of one to the assigned individual. (NPR-40078)
+* When using an Assign task** step to send a notification for an assigned task, two emails are sent instead of one to the assigned individual. (NPR-40078)
 * When a user hides the table headers, it causes the previously set column width to be unset, and all columns retain the same width. (NPR-40063)
 * In case you change the default password of the admin user from `admin`, while performing the `Prepare Adobe Experience Manager Server For DSC deployment` check on the AEM Forms JEE service pack it fails. (NPR-40062), (NPR-39387)
 * The OutputService and AssemblerService APIs, fail to convert PDF Form to PDF/A. (NPR-39990)
@@ -89,7 +91,7 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * After upgrading to AEM 6.5.15.0 Service Pack on Windows server, the user encounters multiple error messages, and the email service is not working.(NPR-39919)
 * When you upgrade to AEM 6.5.14.0 and use importData service to merge PDFs with XML, the following error occurs: `Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
 * When user installs **Document Security Office** extension, following issues occur:
-  * Microsoft Excel crashes frequently.
+  * Microsoft® Excel crashes frequently.
   * While opening a secured document, the **Document security office** extension is not detected as installed on a machine. Instructs the user to download and install the security extension. (NPR-39768)
 * After a user upgrades to AEM 6.5.15.0 Service Pack, the PostScript-to-Pdf conversion is not working. (NPR-39765), (NPR-39764)
 * When user tries to open the tour screen after opening an Adaptive Form, it fails with a NullPointer exception:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
@@ -264,7 +266,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
-* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft®&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss®&reg; EAP 7.1], [!DNL Microsoft®&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
@@ -290,7 +292,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    "refresh": true
    ```
 
-* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft Office 365 for single tenant applications.
+* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft® Office 365.
+* On JBoss® 7.1.4 platform, when user install AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
