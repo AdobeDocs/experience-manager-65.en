@@ -152,7 +152,7 @@ Dynamic Media supports the delivery of static assets, which are additional asset
 
    This example is the complete video URL for a published video rendition.
 
-## Obtain a video URL for adaptive streaming (DASH or HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtain a video URL for adaptive bitrate streaming (DASH or HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. In Experience Manager, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud]** > **[!UICONTROL Cloud Services]**.
 1. On the **[!UICONTROL Cloud Services]** page, scroll down to the **[!UICONTROL Dynamic Media Cloud Services]** heading, then select **[!UICONTROL Show Configurations]**.
