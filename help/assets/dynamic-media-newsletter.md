@@ -48,7 +48,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Watch the on-demand Skill Builder webinars for Dynamic Media Classic.
   * View the Dynamic Media sessions from Online Adobe Summit 2020.
   * Learn more about Adobe's free Dynamic Media Classic audits.
-  * Meet `John Monroe`, Senior Program Manager for Adobe Customer Solutions.
+  * Meet `Jon Monroe`, Senior Program Manager for Adobe Customer Solutions.
 
 * **[February 2020, Issue 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
