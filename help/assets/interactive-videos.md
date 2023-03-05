@@ -42,7 +42,7 @@ To see an interactive, shoppable video in action, select [Live Demos](https://la
 Play a walkthrough on [how interactive videos are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveVideo) (7 minutes and 30 seconds).
 Although the video walkthrough is branded with Assets on Demand, the principles and steps still apply to Interactive Video in Adobe Experience Manager Assets.
 
-### Adobe Customer Success Webinar {#adobe-customer-success-webinar}
+### Adobe Customer Solutions Webinar {#adobe-customer-success-webinar}
 
 The "Using Interactive Video, Link Sharing, and YouTube sharing in Experience Manager Assets" webinar teaches you how to use interactive video and other features to tie conversion driven events into your video marketing content.
 
@@ -68,8 +68,8 @@ Interactive video steps:
 
 1. **(Optional) Identify Quickview variables** - Start by identifying dynamic variables used by your existing Quickview implementation. You use the variables to map product thumbnails to their corresponding product Quickview when you create your interactive video. See [(Optional) Identify Quickview variables](#optional-identifying-quickview-variables).
    *This step is only required if all the following are true*:
-   • You want to add interactivity to your video by triggering to Quickview.
-   • Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, Hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+   * You want to add interactivity to your video by triggering to Quickview.
+   * Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM&reg; WebSphere&reg; Commerce, Elastic Path, Hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 
 1. **(Optional) Create an Interactive Video viewer preset** - Customize the appearance and behavior of various components that make up the player such as the video scrubber and the interactive thumbnails.
    Creating your own Interactive Video viewer preset is not required if you intend to use the out-of-the-box Interactive Video viewer presets `Shoppable_Video_Light` or `Shoppable_Video_Dark` instead.
@@ -99,7 +99,7 @@ Interactive video steps:
 >This task is only required if the following are true:
 >
 >* You want to add interactivity to your video by triggering to Quickview.
->* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM® WebSphere® Commerce, Elastic Path, Hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
+>* Your implementation of Experience Manager does *not* use an eCommerce integration framework for pulling product data into Experience Manager from any eCommerce solution such as IBM&reg; WebSphere&reg; Commerce, Elastic Path, Hybris, or Intershop. See [eCommerce concepts in Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
 >
 >If your implementation of Experience Manager uses eCommerce, you can skip this task and proceed to the next task.
 
@@ -442,7 +442,7 @@ After you save your interactive video, the video is immediately opened into Prev
       </tr> 
       <tr> 
       <td>To change the text label of a thumbnail image</td> 
-      <td><p>By default, the text label uses the thumbnail image’s <code>Title</code> metadata field. If <code>Title</code> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the screenshot below.</p> <p>The new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td> 
+      <td><p>By default, the text label uses the thumbnail image's <code>Title</code> metadata field. If <code>Title</code> is not present, the thumbnail image's filename is used instead, but without the extension.</p> <p>To change the text label of a thumbnail image, under the <strong>Actions </strong>tab, directly below the image asset that is displayed, enter the desired text. See the screenshot below.</p> <p>The new text label is used only by the video player itself and the thumbnail text that is displayed in the timeline segment. The label change does not affect the thumbnail image's Title metadata field nor its filename.</p> </td> 
       </tr> 
       <tr> 
       <td>To revert a change:</td> 

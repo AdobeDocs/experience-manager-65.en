@@ -111,7 +111,7 @@ AEM Managed Services is a complete solution for Digital Experience management. I
 
 With AEM Managed Services customers can realize the following benefits:
 
-**Faster Time to Market:** With flexible cloud infrastructure of Adobe Managed Services, organizations can rapidly plan, launch and optimize successful digital experiences. Adobe manages the cloud architecture with no additional capital, hardware, or software required and Adobe’s Customer Success Engineers, help with AEM architecture, provisioning, customization for connecting to back-end apps and go-live best practices.
+**Faster Time to Market:** With flexible cloud infrastructure of Adobe Managed Services, organizations can rapidly plan, launch and optimize successful digital experiences. Adobe manages the cloud architecture with no additional capital, hardware, or software required and Adobe's Customer Solutions Engineers, help with AEM architecture, provisioning, customization for connecting to back-end apps and go-live best practices.
 
 **Higher Performance:** Provides reliable digital experiences for your business with four service availability options 99.5%, 99.9%, 99.95%, and 99.99%. Additionally, it allows automatic backup and multimode disaster recovery models to help ensure reliability and contingency management.
 
