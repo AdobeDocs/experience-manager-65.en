@@ -1,5 +1,5 @@
 ---
-title: Work with Dynamic Media
+title: Work with Dynamic Media in Sites Classic Authoring
 description: Dynamic Media helps deliver rich visual merchandising and marketing assets on demand, automatically scaled for consumption on web, mobile, and social sites. Using a set of primary source assets, Dynamic Media generates and delivers multiple variations of rich content in real time through its global, scalable, performance-optimized network.
 uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
 contentOwner: Chris Bohnert
