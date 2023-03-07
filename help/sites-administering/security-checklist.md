@@ -88,7 +88,8 @@ The password must be changed after the initial installation to ensure the securi
 To do this:
 
 1. Navigate to the web console at `<server>:<port>/system/console/configMgr`.
-1. Navigate to **Apache Felix OSGi Management Console** and change the **user name** and **password**.
+1. In the **Configurations** table, find the **Apache Felix OSGi Management Console**, e.g. by scrolling or with Ctrl + F or Command + F.
+1. Click the corresponding row's **Actions** > **Edit** (the configuration values, pencil icon), and change the **user name** and **password**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
