@@ -568,14 +568,9 @@ The error.log will be verbose if there are incidents during the online revision 
 
 >[!CAUTION]
 >
->Different versions of the Oak-run tool need to be used depending on the Oak version you use with your AEM installation. Please check the version requirements list below before using the tool:
->
->* For Oak versions **1.0.0 through 1.0.11 **or** 1.1.0 through 1.1.6**, use Oak-run version** 1.0.11**
->
->* For Oak versions **newer than the above**, use the version of Oak-run that matches the Oak core of your AEM installation.
->
+>Use a Oak-run tool release which has a version number (both major and minor) that matches the Oak core version of your AEM installation. For example, if your AEM instance has Oak core version 1.22.x you should use Oak-run tool version 1.22.x.
 
-Adobe provides a tool called **Oak-run** for performing revision cleanup. It can be downloaded at the following location:
+Adobe provides a tool called **Oak-run** to perform revision cleanup. It can be downloaded at the following location:
 
 [https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 
