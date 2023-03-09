@@ -257,16 +257,27 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
 
+<!-- from here -->
+<!-- this is original content - any changes needed? -->
+
 By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
 
-This value is set to:
+This is defined by:
 
 * 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
-  * default: s-maxage=7200
+  * default: `s-maxage` : 7200
 * 60 is the default TTL for the client (for example, a browser)
-  * default: maxage=60
+  * default: `maxage` : 60
+<!-- to here -->
 
-The Cache Headers for your persisted queries can be managed:
+In addition to these settings, the Cache Headers for your persisted queries can be managed using:
+
+* `cacheControlMaxAge`
+* `surrogateControlMaxAge`
+* `surrogateControlStaleWhileRevalidate`
+* `surrogateControlStaleIfError`
+
+These can be defined at:
 
 <!--
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
@@ -294,26 +305,7 @@ If none of these are defined, then the defaults used by AEM are:
   * `surrogateControlStaleWhileRevalidate` : 86400
   * `surrogateControlStaleIfError` : 86400
 
-<!-- keep for future use (or not) - maybe the link to IDE at least -->
-<!--
-Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
-
-By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
-
-This value is set to:
-
-* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
-  * default: s-maxage=7200
-* 60 is the default TTL for the client (for example, a browser)
-  * default: maxage=60
-  
-If you want to change the TTL for your GraphQL query, then the query must be either:
-
-* persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers-graphiql-ide)
-* [Managing Cache at the Persisted Query Level](#cache-persisted-query-level). 
--->
-
-<!-- keep for future use -->
+<!-- keep for future use? -->
 <!--
 ### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
@@ -381,6 +373,7 @@ An example of defining such variables:
 ### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
 <!-- what's the name of the configuration? -->
+<!-- info on the wiki is for git.corp.adobe.com -->
 
 The OSGi configuration is only available for publish instances and:
 
@@ -388,10 +381,10 @@ The OSGi configuration is only available for publish instances and:
 
   |--- |--- |--- |
   | OSGi Configuration Property | reads this | Cloud Manager Variable |
-  | `cacheControlMaxAge` | reads | `graphqlCacheControl`| 
+  | `cacheControlMaxAge` | reads | `graphqlCacheControl`|
   | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
-  | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` | 
-  | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` | 
+  | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
+  | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
 
 * and if not available, uses the following default values: 
 
