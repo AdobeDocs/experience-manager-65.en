@@ -277,7 +277,18 @@ In addition to these settings, the Cache Headers for your persisted queries can 
 * `surrogateControlStaleWhileRevalidate`
 * `surrogateControlStaleIfError`
 
-These can be defined at:
+### Author instances {#author-instances}
+
+For author instances the default values are always used (and cannot be manipulated):
+
+* `cacheControlMaxAge`  : 60
+* `surrogateControlMaxAge` : 60
+* `surrogateControlStaleWhileRevalidate` : 86400
+* `surrogateControlStaleIfError` : 86400
+
+### Publish instances {#publish-instances}
+
+For publish instances these values can be defined at:
 
 <!--
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
@@ -291,19 +302,10 @@ These can be defined at:
 
 If none of these are defined, then the defaults used by AEM are:
 
-* For publish instances:
-
-  * `cacheControlMaxAge` : 60
-  * `surrogateControlMaxAge` : 7200
-  * `surrogateControlStaleWhileRevalidate` : 86400
-  * `surrogateControlStaleIfError` : 86400
-
-* For author instances:
-
-  * `cacheControlMaxAge`  : 60
-  * `surrogateControlMaxAge` : 60
-  * `surrogateControlStaleWhileRevalidate` : 86400
-  * `surrogateControlStaleIfError` : 86400
+* `cacheControlMaxAge` : 60
+* `surrogateControlMaxAge` : 7200
+* `surrogateControlStaleWhileRevalidate` : 86400
+* `surrogateControlStaleIfError` : 86400
 
 <!-- keep for future use? -->
 <!--
@@ -312,7 +314,7 @@ If none of these are defined, then the defaults used by AEM are:
 The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
 -->
 
-### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
+#### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
 
 This involves posting the query to AEM using CURL in your command line interface. 
 
@@ -348,7 +350,7 @@ curl -X PUT \
 
 The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
 
-### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
+#### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
 
 Variables can be defined with Cloud Manager to define the required values.
 
@@ -370,7 +372,7 @@ An example of defining such variables:
 }
 ```
 
-### Managing Cache with an OSGi configuration {#cache-osgi-configration}
+#### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
 <!-- what's the name of the configuration? -->
 <!-- info on the wiki is for git.corp.adobe.com -->
