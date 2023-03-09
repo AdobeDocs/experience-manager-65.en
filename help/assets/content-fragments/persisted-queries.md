@@ -334,6 +334,7 @@ curl -u admin:admin -X PUT \
 ```
 
 For an example of the POST (update) method:
+
 ```xml
 curl -u admin:admin -X POST \
 --url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
