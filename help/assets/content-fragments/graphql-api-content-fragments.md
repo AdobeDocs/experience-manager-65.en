@@ -102,6 +102,7 @@ The [Persisted Queries](/help/assets/content-fragments/persisted-queries.md) are
 * they are cached
 * they are managed centrally by AEM 
 
+<!-- is this fully accurate? -->
 >[!NOTE]
 >
 >Usually there is no dispatcher/CDN on author, so there is no gain in using persisted queries there; apart from testing them.

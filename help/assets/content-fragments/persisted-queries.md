@@ -266,21 +266,83 @@ This value is set to:
 * 60 is the default TTL for the client (for example, a browser)
   * default: maxage=60
 
-If you want to change the TTL for your GraphLQ query, then the query must be either:
+The Cache Headers for your persisted queries can be managed:
 
-* persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers)
-* persisted using the [API method](#cache-api). 
+<!--
+* [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
+-->
 
-### Managing HTTP Cache Headers in GraphQL  {#http-cache-headers-graphql}
+* [at the Persisted Query Level](#cache-persisted-query-level)
+
+* [with Cloud Manager variables](#cache-cloud-manager-variables)
+
+* [with an OSGi configuration](#cache-osgi-configration)
+
+If none of these are defined, then the defaults used by AEM are:
+
+* For publish instances:
+
+  * `cacheControlMaxAge` : 60
+  * `surrogateControlMaxAge` : 7200
+  * `surrogateControlStaleWhileRevalidate` : 86400
+  * `surrogateControlStaleIfError` : 86400
+
+* For author instances:
+
+  * `cacheControlMaxAge`  : 60
+  * `surrogateControlMaxAge` : 60
+  * `surrogateControlStaleWhileRevalidate` : 86400
+  * `surrogateControlStaleIfError` : 86400
+
+<!-- keep for future use (or not) - maybe the link to IDE at least -->
+<!--
+Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
+
+By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+
+This value is set to:
+
+* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
+  * default: s-maxage=7200
+* 60 is the default TTL for the client (for example, a browser)
+  * default: maxage=60
+  
+If you want to change the TTL for your GraphQL query, then the query must be either:
+
+* persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers-graphiql-ide)
+* [Managing Cache at the Persisted Query Level](#cache-persisted-query-level). 
+-->
+
+<!-- keep for future use -->
+<!--
+### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
 The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
+-->
 
-### Managing Cache from the API {#cache-api}
+### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
 
 This involves posting the query to AEM using CURL in your command line interface. 
 
-For an example:
+For an example of the PUT (create) method:
 
+```xml
+curl -u admin:admin -X PUT \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
+```
+
+For an example of the POST (update) method:
+```xml
+curl -u admin:admin -X POST \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
+```
+
+
+<!--
 ```xml
 curl -X PUT \
     -H 'authorization: Basic YWRtaW46YWRtaW4=' \
@@ -289,9 +351,53 @@ curl -X PUT \
     -d \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
+-->
 
 The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
 
+### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
+
+Variables can be defined with Cloud Manager to define the required values.
+
+An example of defining such variables:
+
+```xml
+{
+  "name": "graphqlStaleIfError",
+  "value": "86400",
+  "type": "string",
+  "status": "ready"
+}
+
+{
+  "name": "graphqlSurrogateControl",
+  "value": "600",
+  "type": "string",
+  "status": "ready"
+}
+```
+
+### Managing Cache with an OSGi configuration {#cache-osgi-configration}
+
+<!-- what's the name of the configuration? -->
+
+The OSGi configuration is only available for publish instances and:
+
+* reads the Cloud Manager variables if available: 
+
+  |--- |--- |--- |
+  | OSGi Configuration Property | reads this | Cloud Manager Variable |
+  | `cacheControlMaxAge` | reads | `graphqlCacheControl`| 
+  | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
+  | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` | 
+  | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` | 
+
+* and if not available, uses the following default values: 
+
+  * `cacheControlMaxAge` : 60
+  * `surrogateControlMaxAge` : 7200
+  * `surrogateControlStaleWhileRevalidate` : 86400
+  * `surrogateControlStaleIfError` : 86400
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
