@@ -205,7 +205,7 @@ Where `PERSISTENT_PATH` is a shortened path to where the Persisted query is save
 
    For example:
 
-   ```xml
+   ```bash
    $ curl -X GET \
        "https://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
@@ -259,6 +259,8 @@ Persisted queries are recommended as they can be cached at the dispatcher and CD
 
 <!-- from here -->
 <!-- this is original content - any changes needed? -->
+<!-- SG: I would also add the other headers here (stale-while-revalidate, stale-if-error). -->
+<!-- want clarification -->
 
 By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
 
@@ -268,7 +270,6 @@ This is defined by:
   * default: `s-maxage` : 7200
 * 60 is the default TTL for the client (for example, a browser)
   * default: `maxage` : 60
-<!-- to here -->
 
 In addition to these settings, the Cache Headers for your persisted queries can be managed using:
 
@@ -277,14 +278,31 @@ In addition to these settings, the Cache Headers for your persisted queries can 
 * `surrogateControlStaleWhileRevalidate`
 * `surrogateControlStaleIfError`
 
+|HTTP Header |UI/Curl | OSGi Configuration |Cloud Manager |
+|--- |--- |--- |--- |
+|`maxage` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
+|`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |
+|`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
+|`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
+
+<!-- to here -->
+
 ### Author instances {#author-instances}
 
-For author instances the default values are always used (and cannot be manipulated):
+For author instances the default values are:
 
 * `cacheControlMaxAge`  : 60
 * `surrogateControlMaxAge` : 60
 * `surrogateControlStaleWhileRevalidate` : 86400
 * `surrogateControlStaleIfError` : 86400
+
+These:
+
+* cannot be overwritten with an OSGi configuration
+
+<!-- only when the GraphiQL IDE is ready; add cross-reference too
+* can be overwritten if you specify values in the "Headers" dialog
+-->
 
 ### Publish instances {#publish-instances}
 
@@ -320,7 +338,7 @@ This involves posting the query to AEM using CURL in your command line interface
 
 For an example of the PUT (create) method:
 
-```xml
+```bash
 curl -u admin:admin -X PUT \
 --url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
 --header "Content-Type: application/json" \
@@ -329,16 +347,15 @@ curl -u admin:admin -X PUT \
 
 For an example of the POST (update) method:
 
-```xml
+```bash
 curl -u admin:admin -X POST \
 --url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
 --header "Content-Type: application/json" \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-
 <!--
-```xml
+```bash
 curl -X PUT \
     -H 'authorization: Basic YWRtaW46YWRtaW4=' \
     -H "Content-Type: application/json" \
@@ -356,7 +373,7 @@ Variables can be defined with Cloud Manager to define the required values.
 
 An example of defining such variables:
 
-```xml
+```bash
 {
   "name": "graphqlStaleIfError",
   "value": "86400",
@@ -377,12 +394,16 @@ An example of defining such variables:
 <!-- what's the name of the configuration? -->
 <!-- info on the wiki is for git.corp.adobe.com -->
 
-The OSGi configuration is only available for publish instances and:
+>[!NOTE]
+>
+>The OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
+
+The OSGi configuration for publish instances:
 
 * reads the Cloud Manager variables if available: 
 
-  |--- |--- |--- |
   | OSGi Configuration Property | reads this | Cloud Manager Variable |
+  |--- |--- |--- |
   | `cacheControlMaxAge` | reads | `graphqlCacheControl`|
   | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
   | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
@@ -401,7 +422,7 @@ For use by an application, any special characters used when constructing query v
 
 For example:
 
-```xml
+```bash
 curl -X GET \ "https://localhost:4502/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
 ```
 

@@ -105,7 +105,7 @@ The [Persisted Queries](/help/assets/content-fragments/persisted-queries.md) are
 <!-- is this fully accurate? -->
 >[!NOTE]
 >
->Usually there is no dispatcher/CDN on author, so there is no gain in using persisted queries there; apart from testing them.
+>Usually there is no dispatcher/CDN on author, so there is no performance gain in using persisted queries there; apart from testing them.
 
 GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
 
