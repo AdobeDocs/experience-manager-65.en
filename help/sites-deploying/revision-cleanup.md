@@ -16,7 +16,7 @@ exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 
 ## Introduction {#introduction}
 
-Each update to the repository creates a new content revision. As a result, with each update the size of the repository grows. To avoid uncontrolled repository growth, old revisions need to be be cleaned up to free disk resources. This maintenance functionality is called Revision Cleanup. It has been available as an offline routine since AEM 6.0.
+Each update to the repository creates a new content revision. As a result, with each update, the size of the repository grows. Old revisions need to be cleaned up to free disk resources - this is important to avoid uncontrolled repository growth. This maintenance functionality is called Revision Cleanup. It has been available as an offline routine since AEM 6.0.
 
 With AEM 6.3 and higher, an online version of this functionality called Online Revision Cleanup was introduced. Compared to Offline Revision Cleanup where the AEM instance has to be shut down, Online Revision Cleanup can be run while the AEM instance is online. Online Revision Cleanup is turned on by default and it is the recommended way of performing a revision cleanup.
 
