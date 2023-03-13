@@ -1,10 +1,10 @@
 ---
 title: Persisted GraphQL queries
-description: Learn how to to persist GraphQL queries in Adobe Experience Manager to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the dispatcher and CDN layers, ultimately improving the performance of the client applications.
+description: Learn how to to persist GraphQL queries in Adobe Experience Manager to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the Dispatcher and CDN layers, ultimately improving the performance of the client applications.
 ---
 # Persisted GraphQL queries {#persisted-queries-caching}
 
-Persisted queries are GraphQL queries that are created and stored on the Adobe Experience Manager (AEM) as a Cloud Service server. They can be requested with a GET request by client applications. The response of a GET request can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application. This differs from standard GraphQL queries, which are executed using POST requests where the response cannot easily be cached.
+Persisted queries are GraphQL queries that are created and stored on the Adobe Experience Manager (AEM) as a Cloud Service server. They can be requested with a GET request by client applications. The response of a GET request can be cached at the Dispatcher and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application. This differs from standard GraphQL queries, which are executed using POST requests where the response cannot easily be cached.
 
 <!--
 >[!NOTE]
@@ -255,14 +255,14 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 ## Caching your persisted queries {#caching-persisted-queries}
 
-Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
+Persisted queries are recommended as they can be cached at the Dispatcher and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
 
 <!-- from here -->
 <!-- this is original content - any changes needed? -->
 <!-- SG: I would also add the other headers here (stale-while-revalidate, stale-if-error). -->
 <!-- want clarification -->
 
-By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+By default AEM will invalidate the CDN cache based on a default Time To Live (TTL). 
 
 This is defined by:
 
@@ -286,7 +286,7 @@ In addition to these settings, the Cache Headers for your persisted queries can 
 <!-- dispatcher vs query -->
 <!-- pre-defined/stored vs on-the-fly -->
 
-|HTTP Header |UI/Curl | OSGi Configuration |Cloud Manager |
+|HTTP Header |UI/Curl |OSGi Configuration |Cloud Manager |
 |--- |--- |--- |--- |
 |`maxage` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
 |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |
