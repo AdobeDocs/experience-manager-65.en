@@ -80,19 +80,25 @@ For more information on changing the web console password, see [Changing the OSG
 
 #### Changing the OSGi web console admin password {#changing-the-osgi-web-console-admin-password}
 
-You must also change the password used for accessing the Web console. This is done by configuring the following properties of the [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
+You must also change the password used for accessing the Web console. This is done with an [OSGI configuration](/help/sites-deploying/configuring-osgi.md) to update the following properties of the **Apache Felix OSGi Management Console**:
 
-**User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.
-The password must be changed after the initial installation to ensure the security of your instance.
+* **User Name** and **Password**, the credentials for accessing the Apache Felix Web Management Console itself.
+The password must be changed *after* the initial installation to ensure the security of your instance.
 
 To do this:
 
-1. Navigate to the web console at `<server>:<port>/system/console/configMgr`.
-1. Navigate to **Apache Felix OSGi Management Console** and change the **user name** and **password**.
+>[!NOTE]
+>
+>See [OSGI configuration](/help/sites-deploying/configuring-osgi.md) for full details of configuring OSGi settings.
+
+1. Using the **Tools**, **Operations** menu, open the **Web Console** and navigate to the **Configuration** section. 
+   For example, at `<server>:<port>/system/console/configMgr`.
+1. Navigate to, and open, the entry for **Apache Felix OSGi Management Console**.
+1. Change the **user name** and **password**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-1. Click **Save**.
+1. Select **Save**.
 
 ### Implement Custom Error Handler {#implement-custom-error-handler}
 
