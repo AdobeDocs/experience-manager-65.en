@@ -257,16 +257,7 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 Persisted queries are recommended as they can be cached at the Dispatcher and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
 
-By default AEM will invalidate cache based on a default Time To Live (TTL). This is defined by:
-
-* `s-maxage` : default = 7200
-  * default TTL for the Dispatcher and CDN; also known as *shared caches*
-* `maxage` : default = 60
-  * default TTL for the client (for example, a browser)
-* `stale-while-revalidate`
-* `stale-if-error`
-
-These parameters can be accessed by various means, with variations in the names according to the mechanism used:
+By default AEM will invalidate cache based on a Time To Live (TTL). These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
 |Cache Type |Default|[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |Cloud Manager |
 |--- |--- |--- |--- |--- |--- |
