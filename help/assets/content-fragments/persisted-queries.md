@@ -266,6 +266,8 @@ By default AEM will invalidate the Content Delivery Network (CDN) cache based on
 
 This is defined by:
 
+<!-- are these purely for Dispatcher, or for headers in general? -->
+
 * 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
   * default: `s-maxage` : 7200
 * 60 is the default TTL for the client (for example, a browser)
@@ -273,10 +275,16 @@ This is defined by:
 
 In addition to these settings, the Cache Headers for your persisted queries can be managed using:
 
+<!--
 * `cacheControlMaxAge`
 * `surrogateControlMaxAge`
+-->
 * `surrogateControlStaleWhileRevalidate`
 * `surrogateControlStaleIfError`
+
+<!-- want clarification of how the various options interact -->
+<!-- dispatcher vs query -->
+<!-- pre-defined/stored vs on-the-fly -->
 
 |HTTP Header |UI/Curl | OSGi Configuration |Cloud Manager |
 |--- |--- |--- |--- |
