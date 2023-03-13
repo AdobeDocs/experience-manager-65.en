@@ -257,41 +257,23 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 Persisted queries are recommended as they can be cached at the Dispatcher and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
 
-<!-- from here -->
-<!-- this is original content - any changes needed? -->
-<!-- SG: I would also add the other headers here (stale-while-revalidate, stale-if-error). -->
-<!-- want clarification -->
+By default AEM will invalidate cache based on a default Time To Live (TTL). This is defined by:
 
-By default AEM will invalidate the CDN cache based on a default Time To Live (TTL). 
+* `s-maxage` : default = 7200
+  * default TTL for the Dispatcher and CDN; also known as *shared caches*
+* `maxage` : default = 60
+  * default TTL for the client (for example, a browser)
+* `stale-while-revalidate`
+* `stale-if-error`
 
-This is defined by:
+These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
-<!-- are these purely for Dispatcher, or for headers in general? -->
-
-* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
-  * default: `s-maxage` : 7200
-* 60 is the default TTL for the client (for example, a browser)
-  * default: `maxage` : 60
-
-In addition to these settings, the Cache Headers for your persisted queries can be managed using:
-
-<!--
-* `cacheControlMaxAge`
-* `surrogateControlMaxAge`
--->
-* `surrogateControlStaleWhileRevalidate`
-* `surrogateControlStaleIfError`
-
-<!-- want clarification of how the various options interact -->
-<!-- dispatcher vs query -->
-<!-- pre-defined/stored vs on-the-fly -->
-
-|HTTP Header |UI/Curl |OSGi Configuration |Cloud Manager |
-|--- |--- |--- |--- |
-|`maxage` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
-|`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |
-|`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
-|`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
+|Cache Type |Default|[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |Cloud Manager |
+|--- |--- |--- |--- |--- |--- |
+|Dispatcher |7200 |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
+|CDN |60 |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
+|CDN | |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
+|CDN | |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
 
 <!-- to here -->
 
@@ -299,23 +281,27 @@ In addition to these settings, the Cache Headers for your persisted queries can 
 
 For author instances the default values are:
 
-* `cacheControlMaxAge`  : 60
-* `surrogateControlMaxAge` : 60
-* `surrogateControlStaleWhileRevalidate` : 86400
-* `surrogateControlStaleIfError` : 86400
+* `max-age`  : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
 These:
 
 * cannot be overwritten with an OSGi configuration
 
-<!-- only when the GraphiQL IDE is ready; add cross-reference too
-* can be overwritten if you specify values in the "Headers" dialog
+<!-- CQDOC-20186 -->
+<!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
+<!--
+* can be overwritten if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
 ### Publish instances {#publish-instances}
 
 For publish instances these values can be defined at:
 
+<!-- CQDOC-20186 -->
+<!-- following entry is only when the GraphiQL IDE is ready -->
 <!--
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
@@ -328,12 +314,13 @@ For publish instances these values can be defined at:
 
 If none of these are defined, then the defaults used by AEM are:
 
-* `cacheControlMaxAge` : 60
-* `surrogateControlMaxAge` : 7200
-* `surrogateControlStaleWhileRevalidate` : 86400
-* `surrogateControlStaleIfError` : 86400
+* `max-age`  : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
-<!-- keep for future use? -->
+<!-- CQDOC-20186 -->
+<!-- keep for future use; check link -->
 <!--
 ### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
@@ -361,17 +348,6 @@ curl -u admin:admin -X POST \
 --header "Content-Type: application/json" \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
-
-<!--
-```bash
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "https://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-```
--->
 
 The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
 
