@@ -259,12 +259,12 @@ Persisted queries are recommended as they can be cached at the Dispatcher and Co
 
 By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
-|Cache Type |Default|[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |Cloud Manager |
-|--- |--- |--- |--- |--- |--- |
-|Dispatcher |7200 |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
-|CDN |60 |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
-|CDN | |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
-|CDN | |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
+|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |Cloud Manager |
+|--- |--- |--- |--- |--- |
+|Dispatcher |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
+|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
+|CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
+|CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
 
 ### Author instances {#author-instances}
 
@@ -288,7 +288,14 @@ These:
 
 ### Publish instances {#publish-instances}
 
-For publish instances these values can be defined at:
+For author instances the default values are:
+
+* `max-age`  : 60
+* `s-maxage` : 7200
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
+
+These can be overwritten:
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready -->
@@ -317,7 +324,7 @@ If none of these are defined, then the defaults used by AEM are:
 The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
 -->
 
-#### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
+### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
 
 This involves posting the query to AEM using CURL in your command line interface. 
 
@@ -341,7 +348,7 @@ curl -u admin:admin -X POST \
 
 The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
 
-#### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
+### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
 
 Cloud Manager Environment Variables can be defined with [Cloud Manager Plugin for the Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md) to define the required values.
 
@@ -363,10 +370,9 @@ An example of defining such variables:
 }
 ```
 
-#### Managing Cache with an OSGi configuration {#cache-osgi-configration}
+### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
-<!-- what's the name of the configuration? -->
-<!-- info on the wiki is for git.corp.adobe.com -->
+To manage the cache, you can [configure the OSGi settings](/help/sites-deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**. 
 
 >[!NOTE]
 >
