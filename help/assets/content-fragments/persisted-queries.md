@@ -257,7 +257,7 @@ Note that `%3B` is the UTF-8 encoding for `;` and `%3D` is the encoding for `=`.
 
 Persisted queries are recommended as they can be cached at the Dispatcher and Content Delivery Network (CDN) layers, ultimately improving the performance of the requesting client application.
 
-By default AEM will invalidate cache based on a Time To Live (TTL). These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
+By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
 |Cache Type |Default|[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |Cloud Manager |
 |--- |--- |--- |--- |--- |--- |
@@ -265,8 +265,6 @@ By default AEM will invalidate cache based on a Time To Live (TTL). These TTLs c
 |CDN |60 |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
 |CDN | |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
 |CDN | |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
-
-<!-- to here -->
 
 ### Author instances {#author-instances}
 
@@ -280,6 +278,7 @@ For author instances the default values are:
 These:
 
 * cannot be overwritten with an OSGi configuration
+* can be overwritten in a HTTP Header request
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -344,7 +343,7 @@ The `cache-control` can be set at the creation time (PUT) or later on (for examp
 
 #### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
 
-Variables can be defined with Cloud Manager to define the required values.
+Cloud Manager Environment Variables can be defined with [Cloud Manager Plugin for the Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md) to define the required values.
 
 An example of defining such variables:
 
