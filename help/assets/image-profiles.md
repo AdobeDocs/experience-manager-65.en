@@ -39,14 +39,14 @@ Each Smart Crop generation that you create requires extra processing. For exampl
 **Guidelines for defining Smart Crop in an Image Profile**
 To keep Smart Crop usage under control, and to optimize for processing time and storage of crops, Adobe recommends the following guidelines and tips:
 
-* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. <!-- CQDOC-20087>
-* An Image Profile that contains duplicate smart crop dimensions is not permitted. <!-- CQDOC-20087>
-* Duplicate named Image Profiles that have smart crop options set are not permitted. <!-- CQDOC-20087>
+* Image assets that are going to have a smart crop applied to them must be a minimum of 50 x 50 pixels or larger. <!-- CQDOC-20087 -->
+* An Image Profile that contains duplicate smart crop dimensions is not permitted. <!-- CQDOC-20087 -->
+* Duplicate named Image Profiles that have smart crop options set are not permitted. <!-- CQDOC-20087 -->
 * Create page-wise/asset type-wise Image Profiles for specific folders and subfolders instead of a common smart crop profile that is applied to all folders or all assets.
 * An Image Profile that you apply to subfolders overrides an Image Profile that is applied to the folder.
 * Ideally, have 10-15 smart crops per image to optimize for screen ratios and processing time.
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
 You have two image crop options from which to choose. You can also choose to automate the creation of color and image swatches or preserve crop content across target resolutions.
 
