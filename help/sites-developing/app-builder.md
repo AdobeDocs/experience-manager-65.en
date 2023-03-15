@@ -34,7 +34,7 @@ Instead of an out-of-the-box solution, Adobe Developer App Builder provides a co
 
 The following diagram illustrates how a standard application built on App Builder leverages these functionalities:
 
-![Architecture](asset/appbuilder-architecture.jpg)
+![Architecture](assets/appbuilder-architecture.jpg)
 
 For more details about the App Builder architecture, have a look at [Architecture Overview](https://www.adobe.io/app-builder/docs/guides/).
 
