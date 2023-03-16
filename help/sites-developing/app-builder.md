@@ -5,7 +5,7 @@ exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
 ---
 # Extending [!DNL Adobe Experience Manager] using Adobe Developer App Builder {#extend-using-app-builder}
 
-## What is App Builder for AEM {#project-firefly}
+## What is App Builder for AEM {#project-appbuilder}
 
 The new Adobe Developer App Builder provides an extensibility framework for a developer to easily extend AEM functionalities. 
 
@@ -17,7 +17,7 @@ App Builder provides a way for customers to easily extend Adobe Experience Manag
 * Core Services Extensibility - Extend core application capabilities by extending the default behavior with custom features & business logic.
 * User Experience Extensibility - Extend core experience to support business requirements or build customer-specific digital properties, storefronts & back-office apps.
 
-App Builder (previously known as Project Firefly) has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](https://adobe.ly/appbuilder-trial).
+App Builder has been available to enterprise customers and partners via our Developer Preview since Summer 2020. General availability (GA) of App Builder is scheduled for December 2021. We welcome developers to try out App Builder through our [Trial Program](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Instead of an out-of-the-box solution, Adobe Developer App Builder provides a co
 
 The following diagram illustrates how a standard application built on App Builder leverages these functionalities:
 
-![Architecture](assets/firefly-architecture.jpg)
+![Architecture](assets/appbuilder-architecture.jpg)
 
 For more details about the App Builder architecture, have a look at [Architecture Overview](https://www.adobe.io/app-builder/docs/guides/).
 
@@ -57,6 +57,3 @@ Ready to start developing? We have lots of sample applications to help you get g
 
 * [App Builder Code Labs on Adobe Developer Website](https://www.adobe.io/app-builder/docs/resources/)
 
-## Support {#support}
-
-For developer support type of requests, we encourage developers to use our [Experience League forum](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).
