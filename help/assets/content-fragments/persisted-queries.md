@@ -259,12 +259,12 @@ Persisted queries are recommended as they can be cached at the [Dispatcher](http
 
 By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
-|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |Cloud Manager |
+|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |
 |--- |--- |--- |--- |--- |
-|Dispatcher |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |`graphqlCacheControl` |
-|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |`graphqlSurrogateControl` |60 |
-|CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |`graphqlStaleWhileRevalidate` |
-|CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |`graphqlStaleIfError` |
+|Dispatcher |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |
+|CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |
+|CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |
+|CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |
 
 ### Author instances {#author-instances}
 
@@ -304,8 +304,6 @@ These can be overwritten:
 -->
 
 * [at the Persisted Query Level](#cache-persisted-query-level)
-
-* [with Cloud Manager variables](#cache-cloud-manager-variables)
 
 * [with an OSGi configuration](#cache-osgi-configration)
 
@@ -348,28 +346,6 @@ curl -u admin:admin -X POST \
 
 The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
 
-### Managing Cache with Cloud Manager variables {#cache-cloud-manager-variables}
-
-Cloud Manager Environment Variables can be defined with [Cloud Manager Plugin for the Adobe I/O CLI](https://github.com/adobe/aio-cli-plugin-cloudmanager/blob/main/README.md) to define the required values.
-
-An example of defining such variables:
-
-```bash
-{
-  "name": "graphqlStaleIfError",
-  "value": "86400",
-  "type": "string",
-  "status": "ready"
-}
-
-{
-  "name": "graphqlSurrogateControl",
-  "value": "600",
-  "type": "string",
-  "status": "ready"
-}
-```
-
 ### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
 To manage the cache, you can [configure the OSGi settings](/help/sites-deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**. 
@@ -378,23 +354,12 @@ To manage the cache, you can [configure the OSGi settings](/help/sites-deploying
 >
 >The OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
 
-The OSGi configuration for publish instances:
+The OSGi configuration for publish instances uses the following default values: 
 
-* reads the Cloud Manager variables if available: 
-
-  | OSGi Configuration Property | reads this | Cloud Manager Variable |
-  |--- |--- |--- |
-  | `cacheControlMaxAge` | reads | `graphqlCacheControl`|
-  | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
-  | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
-  | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
-
-* and if not available, uses the following default values: 
-
-  * `cacheControlMaxAge` : 60
-  * `surrogateControlMaxAge` : 7200
-  * `surrogateControlStaleWhileRevalidate` : 86400
-  * `surrogateControlStaleIfError` : 86400
+* `cacheControlMaxAge` : 60
+* `surrogateControlMaxAge` : 7200
+* `surrogateControlStaleWhileRevalidate` : 86400
+* `surrogateControlStaleIfError` : 86400
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
