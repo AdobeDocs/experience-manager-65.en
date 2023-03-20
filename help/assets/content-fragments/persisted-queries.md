@@ -259,7 +259,7 @@ Persisted queries are recommended as they can be cached at the [Dispatcher](http
 
 By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
-|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control?retiredLocale=de) |Curl |OSGi Configuration |
+|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) |Curl |OSGi Configuration |
 |--- |--- |--- |--- |--- |
 |Dispatcher |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |
 |CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |
