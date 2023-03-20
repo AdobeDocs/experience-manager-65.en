@@ -278,7 +278,7 @@ For author instances the default values are:
 These:
 
 * cannot be overwritten with an OSGi configuration
-* can be overwritten in a HTTP Header request: for example, using a curl request that includes suitable settings for `cache-control` and/or `surrogate-control` (see examples under [Managing Cache at the Persisted Query Level](#cache-persisted-query-level))
+* can be overwritten by a request that defines HTTP header settings using curl; it should include suitable settings for `cache-control` and/or `surrogate-control`
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -291,7 +291,7 @@ These:
 For publish instances the default values are:
 
 * `max-age`  : 60
-* `s-maxage` : 60
+* `s-maxage` : 7200
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
 
@@ -341,18 +341,11 @@ The `cache-control` can be set at the creation time (PUT) or later on (for examp
 
 ### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
-To manage the cache, you can [configure the OSGi settings](/help/sites-deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**. 
+To manage the cache, you can [configure the OSGi settings](/help/sites-deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**. Otherwise this OSGi configuration uses the [default values for publish instances](#publish-instances).
 
 >[!NOTE]
 >
 >The OSGi configuration is only appropriate for publish instances. The configuration exists on author instances, but is ignored.
-
-The OSGi configuration for publish instances uses the following default values: 
-
-* `cacheControlMaxAge` : 60
-* `surrogateControlMaxAge` : 7200
-* `surrogateControlStaleWhileRevalidate` : 86400
-* `surrogateControlStaleIfError` : 86400
 
 ## Encoding the query URL for use by an app {#encoding-query-url}
 
