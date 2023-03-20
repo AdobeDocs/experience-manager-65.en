@@ -288,7 +288,7 @@ These:
 
 ### Publish instances {#publish-instances}
 
-For author instances the default values are:
+For publish instances the default values are:
 
 * `max-age`  : 60
 * `s-maxage` : 7200
