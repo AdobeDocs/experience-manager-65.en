@@ -278,7 +278,7 @@ For author instances the default values are:
 These:
 
 * cannot be overwritten with an OSGi configuration
-* can be overwritten in a HTTP Header request
+* can be overwritten in a HTTP Header request: for example, using a curl request that includes suitable settings for `cache-control` and/or `surrogate-control` (see examples under [Managing Cache at the Persisted Query Level](#cache-persisted-query-level))
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -291,7 +291,7 @@ These:
 For author instances the default values are:
 
 * `max-age`  : 60
-* `s-maxage` : 7200
+* `s-maxage` : 60
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
 
@@ -303,16 +303,9 @@ These can be overwritten:
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [at the Persisted Query Level](#cache-persisted-query-level)
+* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using CURL in your command line interface.
 
 * [with an OSGi configuration](#cache-osgi-configration)
-
-If none of these are defined, then the defaults used by AEM are:
-
-* `max-age`  : 60
-* `s-maxage` : 60
-* `stale-while-revalidate` : 86400
-* `stale-if-error` : 86400
 
 <!-- CQDOC-20186 -->
 <!-- keep for future use; check link -->
