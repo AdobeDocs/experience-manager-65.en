@@ -28,9 +28,9 @@ HTML5 forms functionality is deployed as a package within the embedded AEM insta
 
 For details on REST endpoint and supported request parameters, see [Rendering Form Template](/help/forms/using/rendering-form-template.md).
 
-When a user makes a request from a client device such as an iOS or Android browser, Sling first resolves the Profile Node based on the request URL. From this Profile Node, it reads **sling:resourceSuperType** and **sling:resourceType** to determine all available scripts that can handle this Form Render request. It then uses Sling request selectors along with request method to identify the script best suited for handling this request. Once the request reaches a Profile Renderer JSP, the JSP calls the Forms OSGi service.
+When a user makes a request from a client device such as an iOS or Android&trade; browser, Sling first resolves the Profile Node based on the request URL. From this Profile Node, it reads **sling:resourceSuperType** and **sling:resourceType** to determine all available scripts that can handle this Form Render request. It then uses Sling request selectors along with request method to identify the script best suited for handling this request. Once the request reaches a Profile Renderer JSP, the JSP calls the Forms OSGi service.
 
-For more details on sling script resolution, see [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) or [Apache Sling Url decomposition](https://sling.apache.org/site/url-decomposition.html).
+For more details on sling script resolution, see [AEM Sling Cheat Sheet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) or [Apache Sling Url decomposition](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
 #### Typical form processing call flow {#typical-form-processing-call-flow}
 
@@ -174,8 +174,8 @@ The Profile node has a property **sling:resourceSuperType** with value **xfaform
 * **xfaforms.I18N.&lt;locale&gt;**: This library contains localized data.
 * **xfaforms.profile**: This library contains implementation for XFA Scripting and Layout engine.
 
-These libraries are modeled as CQ Client Libraries which takes advantages of automatic concatenation, minification, and compression capabilities of the CQ framework JavaScript libraries.
-For more information on CQ Client Libs, see [CQ Clientlib Documentation](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html).
+These libraries are modeled as CQ Client Libraries which take advantages of automatic concatenation, minification, and compression capabilities of the CQ framework JavaScript libraries.
+For more information on CQ Client Libs, see [CQ Clientlib Documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
 
 As described above, the profile renderer JSP calls Forms Service via a sling include. This JSP also sets various debug options based on admin configuration or request parameters.
 
