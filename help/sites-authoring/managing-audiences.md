@@ -19,11 +19,11 @@ The Audiences console enables you to create, organize, and manage audiences for 
 * Add Audiences - either Adobe Target audiences or ContextHub segments.
 * Manage audiences.
 
-An Audience, called *segment* in ContextHub and Client Context, is a class of visitors defined by specific criteria, which then determines who sees a targeted activity. When you target an activity, you can either select audiences directly in the Targeting process or create new ones in the Audiences console.
+An Audience, called *segment* in ContextHub and Client Context, is a class of visitors defined by specific criteria, which then determines who sees a targeted activity. When you target an activity, you can either select audiences directly in the Targeting process or create more in the Audiences console.
 
 In the Audiences console, audiences are organized by brand.
 
-Audiences are available in Targeting mode for [authoring targeted content](/help/sites-authoring/content-targeting-touch.md), where you can also create audiences (but you need to create Adobe Target audiences in the Audiences console). Audiences that you create in Targeting mode appear in the Audiences console.
+Audiences are available in Targeting mode for [authoring targeted content](/help/sites-authoring/content-targeting-touch.md), where you can also create audiences (but you must create Adobe Target audiences in the Audiences console). Audiences that you create in Targeting mode appear in the Audiences console.
 
 Audiences are displayed with a label describing what kind of audience is defined:
 
@@ -48,7 +48,7 @@ To create a ContextHub segment in the Audiences console:
    >
    >You can sort the modified list by tapping or clicking **Modified** to sort by descending order to see any newly created audiences.
 
-For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.
+For further detail about creating segments using ContextHub, see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.
 
 ## Creating an Adobe Target Audience Using the Audience Console {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -87,9 +87,9 @@ You can create targeting rules for each of the following attributes:
 |---|---|---|
 | **Mobile** |Target mobile devices based on parameters such as mobile device, type of device, device vendor, screen dimensions (by pixels), and more. |See [Mobile documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) at Adobe Target. |
 | **Custom** |Custom parameters are mbox parameters. If you pass any mbox parameters to mboxes, or use the targetPageParams function, those parameters appear here for use in audiences. |See [Custom Parameters documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) at Adobe Target. |
-| **OS** |You can target visitors who use a certain operating system. |Target users who are using Linux, Macintosh, or Windows. |
+| **OS** |You can target visitors who use a certain operating system. |Target users who are using Linux&reg;, Macintosh, or Windows. |
 | **Site Pages** |Target visitors who are on a specific page or have a specific mbox parameter. |See [Site Pages documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) at Adobe Target. |
-| **Browser** |You can target users who use a specific browser or specific browser options when they visit your page. |See [Browser options documentation](https://docs.adobe.com/help/en/target/using/audiences/create-audiences/categories-audiences/browser.html)at Adobe Target. |
+| **Browser** |You can target users who use a specific browser or specific browser options when they visit your page. |See [Browser options documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=en) at Adobe Target. |
 | **Visitor Profile** |Target visitors who meet specific profile parameters. |See [Visitor Profile documentation](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) at Adobe Target. |
 | **Traffic Sources** |Target visitors based on the search engine or landing page that refers them to your site. |See [Traffic Sources documentation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) at Adobe Target. |
 
@@ -99,7 +99,7 @@ You can create targeting rules for each of the following attributes:
 >
 >You can only edit Adobe Target audiences that were created in the same AEM instance where you are editing. Target audiences created in different AEM environments cannot be edited.
 
-You can edit any ContextHub or Client Context audience from the Audiences console. You can alse edit Adobe Target audiences, but only those that were created in AEM:
+You can edit any ContextHub or Client Context audience from the Audiences console. You can also edit Adobe Target audiences, but only those audiences that were created in AEM:
 
 1. In the Navigation console, click or tap **Personalization**. Click or tap **Audiences**.
 1. Tap or click the icon next to the ContextHub or Client Context segment you want to edit, and tap or click **Edit**.
