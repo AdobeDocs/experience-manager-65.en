@@ -12,7 +12,7 @@ Persisted queries are GraphQL queries that are created and stored on the Adobe E
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 -->
 
-The [GraphiQL IDE](/help/assets/content-fragments/graphiql-ide.md) is available in AEM for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/assets/content-fragments/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the curl example provided in [How to persist a GraphQL query](#how-to-persist-query).
+The [GraphiQL IDE](/help/assets/content-fragments/graphiql-ide.md) is available in AEM for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/assets/content-fragments/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the cURL example provided in [How to persist a GraphQL query](#how-to-persist-query).
 
 ## Persisted Queries and Endpoints {#persisted-queries-and-endpoints}
 
@@ -50,10 +50,10 @@ It is recommended to persist queries on an AEM author environment initially and 
 There are various methods of persisting queries, including:
 
 * GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#saving-persisted-queries) (preferred method)
-* curl - see the following example
+* cURL - see the following example
 * Other tools, including [Postman](https://www.postman.com/)
 
-The GraphiQL IDE is the **preferred** method for persisting queries. To persist a given query using the **curl** command line tool:
+The GraphiQL IDE is the **preferred** method for persisting queries. To persist a given query using the **cURL** command line tool:
 
 1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -259,9 +259,9 @@ Persisted queries are recommended as they can be cached at the [Dispatcher](http
 
 By default AEM will invalidate cache based on a Time To Live (TTL) definition. These TTLs can be defined by the following parameters. These parameters can be accessed by various means, with variations in the names according to the mechanism used:
 
-|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) |Curl |OSGi Configuration |
+|Cache Type |[HTTP header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control) |cURL |OSGi Configuration |
 |--- |--- |--- |--- |--- |
-|Dispatcher |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |
+|Browser |`max-age` |`cache-control : max-age` |`cacheControlMaxAge` |
 |CDN |`s-maxage` |`surrogate-control : max-age` |`surrogateControlMaxAge` |
 |CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |
 |CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |
@@ -278,7 +278,7 @@ For author instances the default values are:
 These:
 
 * cannot be overwritten with an OSGi configuration
-* can be overwritten by a request that defines HTTP header settings using curl; it should include suitable settings for `cache-control` and/or `surrogate-control`
+* can be overwritten by a request that defines HTTP header settings using cURL; it should include suitable settings for `cache-control` and/or `surrogate-control`; for examples, see [Managing Cache at the Persisted Query Level](#cache-persisted-query-level)
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -303,7 +303,7 @@ These can be overwritten:
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using CURL in your command line interface.
+* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using cURL in your command line interface.
 
 * [with an OSGi configuration](#cache-osgi-configration)
 
@@ -317,7 +317,7 @@ The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments
 
 ### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}
 
-This involves posting the query to AEM using CURL in your command line interface. 
+This involves posting the query to AEM using cURL in your command line interface. 
 
 For an example of the PUT (create) method:
 
@@ -337,11 +337,11 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
+The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using cURL.
 
 ### Managing Cache with an OSGi configuration {#cache-osgi-configration}
 
-To manage the cache, you can [configure the OSGi settings](/help/sites-deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**. Otherwise this OSGi configuration uses the [default values for publish instances](#publish-instances).
+To manage the cache globally, you can [configure the OSGi settings](/help/sites-deploying/configuring-osgi.md) for the **Persisted Query Service Configuration**. Otherwise this OSGi configuration uses the [default values for publish instances](#publish-instances).
 
 >[!NOTE]
 >
