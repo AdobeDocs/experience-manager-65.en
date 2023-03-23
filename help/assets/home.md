@@ -32,7 +32,7 @@ Create, manage, process, and distribute digital assets in Experience Manager. Th
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an Experience Manager project successfully. |
 | [Commerce User Guide](/help/commerce/home.md)|Learn about Commerce Integration Framework on Experience Manager.|
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
-| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | This guide shows you how to share user-generated content with [!DNL Livefyre]. |
+
 
 ## Key [!DNL Experience Manager] resources
 

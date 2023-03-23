@@ -33,7 +33,6 @@ Understand how to use and administer AEM Content and Commerce, with our helpful 
 | [Developing User Guide](/help/sites-developing/home.md)| Learn how to build out your AEM instance. |
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an AEM project successfully. |
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html) | This guide shows you how to share user-generated content with Livefyre. |
 
 ## Key AEM resources
 
