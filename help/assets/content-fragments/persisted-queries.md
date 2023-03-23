@@ -303,7 +303,7 @@ These can be overwritten:
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using cURL in your command line interface.
+* [at the Persisted Query Level](#cache-persisted-query-level); this involves posting the query to AEM using cURL in your command line interface, and publishing the Persisted Query.
 
 * [with an OSGi configuration](#cache-osgi-configration)
 
