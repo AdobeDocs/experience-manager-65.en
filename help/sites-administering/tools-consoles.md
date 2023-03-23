@@ -232,10 +232,6 @@ The **Tools** consoles provide access to a number of specialized tools that help
    <td>Offloading</td>
   </tr>
   <tr>
-   <td> </td>
-   <td>Livefyre Configuration</td>
-  </tr>
-  <tr>
    <td>Security</td>
    <td> </td>
   </tr>
