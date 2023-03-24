@@ -13,6 +13,11 @@ exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
 ---
 # AEM Livefyre Recipes{#aem-livefyre-recipes}
 
+>[!IMPORTANT]
+>
+>[Adobe Livefyre is officially end-of-service as of November 30, 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+
+<!--
 Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.
 
 ## Curate UGC using the out-of-the-box Livefyre AEM components and display using Livefyre Media Wall {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall}
@@ -42,7 +47,7 @@ There are three ways to implement Livefyre into a custom AEM component or other 
 
 * **What:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) is the core library that powers Apps and Auth on a site. It defines the global *window.Livefyre* object and a single public method, *Livefyre.require*, which can be used to load other Livefyre JavaScript libraries that help with embedding Livefyre Apps and integrating with third party User Auth platforms.
 
-* **How**: [Use the Livefyre JavaScript SDK’s streamhub-wallpackage](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
+* **How**: [Use the Livefyre JavaScript SDK's streamhub-wallpackage](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
 
 * **Example**: [https://codepen.io/dharafyre/pen/KZKBNv?editors=1010](https://codepen.io/dharafyre/pen/KZKBNv?editors=1010)
 
@@ -191,3 +196,4 @@ Additional Ratings and Reviews APIs can be found [here](https://api.livefyre.com
 
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 * [myrecipes](https://www.myrecipes.com/recipe/shrimp-florentine-pasta)
+-->
