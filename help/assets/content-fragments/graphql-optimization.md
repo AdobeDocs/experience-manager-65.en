@@ -7,7 +7,7 @@ description: Learn how to optimize your GraphQL queries when Filtering, Paging a
 
 >[!NOTE]
 >
->Prior to applying these optimization recommendations consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md) for best performance.
+>Prior to applying these optimization recommendations consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/assets/content-fragments/graphql-optimized-filtering-content-update.md) for best performance.
 
 On an AEM instance with a high number of Content Fragments that share the same model, GraphQL list queries can become costly (in terms of resources).
 
@@ -42,11 +42,13 @@ This technique keeps the flexibility that GraphQL filters provide, while delegat
 
 GraphQL in AEM provides support for two types of pagination:
 
-* [limit/offset-based pagination](/help/headless/graphql-api/content-fragments.md#list-offset-limit)
+<!-- check links -->
+
+* [limit/offset-based pagination](/help/assets/content-fragments/graphql-api-content-fragments.md#list-offset-limit)
   This is used for list queries; these end with `List`; for example, `articleList`. 
   To use it, you have to provide the position of the first item to return (the `offset`) and the number of items to return (the `limit`, or page size).
 
-* [cursor-based pagination](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (represented by `first`and `after`)
+* [cursor-based pagination](/help/assets/content-fragments/graphql-api-content-fragments.md#paginated-first-after) (represented by `first`and `after`)
   This provides a unique ID for each item; also known as the cursor. 
   In the query, you specify the cursor of the last item of the previous page, plus the page size (the maximum number of items to be returned).
 

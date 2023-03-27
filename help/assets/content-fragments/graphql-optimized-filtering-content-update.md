@@ -1,6 +1,6 @@
 ---
 title: Updating your Content Fragments for Optimized GraphQL Filtering 
-description: Learn how to update your Content Fragments for Optimized GraphQL Filtering in Adobe Experience Manager as a Cloud Service for headless content delivery.
+description: Learn how to update your Content Fragments for Optimized GraphQL Filtering in Adobe Experience Manager for headless content delivery.
 ---
 
 # Updating your Content Fragments for optimized GraphQL Filtering {#updating-content-fragments-for-optimized-graphql-filtering}
@@ -9,7 +9,7 @@ To optimize the performance of your GraphQL filters you need to run a procedure 
 
 >[!NOTE]
 >
->After updating your Content Fragments you can follow the recommendations for [Optimizing GraphQL Queries](/help/headless/graphql-api/graphql-optimization.md).
+>After updating your Content Fragments you can follow the recommendations for [Optimizing GraphQL Queries](/help/assets/content-fragments/graphql-optimization.md).
 
 
 ## Prerequisites {#prerequisites}
@@ -22,7 +22,9 @@ To run the procedure use the following steps:
 
 1. Enable the update by setting the following variables for your instance using the Cloud Manager UI:
 
+<!-->
    ![Cloud Manager Environment Configuration](assets/cfm-graphql-update-01.png "Cloud Manager Environment Configuration")
+-->
 
    The available variables are:
 
