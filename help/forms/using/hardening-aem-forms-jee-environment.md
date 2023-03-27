@@ -31,7 +31,7 @@ Before installing AEM Forms on JEE , you can apply security solutions to the net
 
 **Installation and configuration on UNIX and Linux**
 
-You should not install or configure AEM Forms on JEE using a root shell. By default, files are installed under the /opt directory, and the user who performs the installation needs all file permissions under /opt. Alternatively, an installation can be performed under an individual user’s /user directory where they already have all file permissions.
+You should not install or configure AEM Forms on JEE using a root shell. By default, files are installed under the /opt directory, and the user who performs the installation needs all file permissions under /opt. Alternatively, an installation can be performed under an individual user's /user directory where they already have all file permissions.
 
 **Installation and configuration on Windows**
 
@@ -187,7 +187,7 @@ To run the application server on which AEM Forms on JEE is deployed, using a spe
     * **CRX-Repository directory**: The default location is `[AEM-Forms-installation-location]\crx-repository`  
     * **AEM Forms temporary directories**:  
         * (Windows) TMP or TEMP path as set in the environment variables
-        * (AIX, Linux, or Solaris) Logged-in user’s home directory
+        * (AIX, Linux, or Solaris) Logged-in user's home directory
         On UNIX-based systems, a non-root user can use the following directory as the temporary directory:
         * (Linux) /var/tmp or /usr/tmp
         * (AIX) /tmp or /usr/tmp
@@ -305,7 +305,7 @@ In addition, it is recommended to change the default password for CRX Administra
 
 #### Disable WSDL generation {#disable-wsdl-generation}
 
-Web Service Definition Language (WSDL) generation should be enabled only for development environments, where WSDL generation is used by developers to build their client applications. You may choose to disable WSDL generation in a production environment to avoid exposing a service’s internal details.
+Web Service Definition Language (WSDL) generation should be enabled only for development environments, where WSDL generation is used by developers to build their client applications. You may choose to disable WSDL generation in a production environment to avoid exposing a service's internal details.
 
 1. Type the following URL in a web browser:
 
@@ -433,7 +433,7 @@ You can use auditing to detect many types of attacks, including these:
 * Denial of service attacks
 * Injection of hostile input and related classes of scripting attacks
 
-This table describes auditing and logging techniques you can use to reduce your server’s vulnerabilities.
+This table describes auditing and logging techniques you can use to reduce your server's vulnerabilities.
 
 <table> 
  <thead> 
@@ -829,8 +829,8 @@ When you configure a secure network architecture as described in the previous se
    <td> 
     <ul> 
      <li><p>Web service client applications, such as .NET applications</p> </li> 
-     <li><p>Adobe Reader® uses SOAP for AEM Forms on JEE server web services</p> </li> 
-     <li><p>Adobe Flash® applications uses SOAP for forms server web services</p> </li> 
+     <li><p>Adobe Reader&reg; uses SOAP for AEM Forms on JEE server web services</p> </li> 
+     <li><p>Adobe Flash&reg; applications uses SOAP for forms server web services</p> </li> 
      <li><p>AEM Forms on JEE SDK calls when used in SOAP mode</p> </li> 
      <li><p>Workbench design environment</p> </li> 
     </ul> </td> 
@@ -952,7 +952,7 @@ Referring to the physical architecture that is described in the section [AEM For
 
 For instructions on how to configure SSL on JBoss, WebLogic, and WebSphere, see "Configuring SSL" in the [administration help](https://www.adobe.com/go/learn_aemforms_admin_64).
 
-For instructions on how to import certificates to JVM (Java Virtual Machine) configured for an AEM Forms server, see Mutual Authentication section in [AEM Forms Workbench Help](http://www.adobe.com/go/learn_aemforms_workbench_65).
+For instructions on how to import certificates to JVM (Java Virtual Machine) configured for an AEM Forms server, see Mutual Authentication section in [AEM Forms Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
 ### Configuring SSL redirect {#configuring-ssl-redirect}
 
@@ -1009,7 +1009,7 @@ The AEM Forms on JEE turnkey installation sets up a service account, by default,
     * **CRX-Repository directory**: The default location is `[AEM-Forms-installation-location]\crx-repository`  
     * **AEM Forms temporary directories**:  
         * (Windows) TMP or TEMP path as set in the environment variables
-        * (AIX, Linux, or Solaris) Logged-in user’s home directory
+        * (AIX, Linux, or Solaris) Logged-in user's home directory
         On UNIX-based systems, a non-root user can use the following directory as the temporary directory:
         * (Linux) /var/tmp or /usr/tmp
         * (AIX) /tmp or /usr/tmp
@@ -1048,7 +1048,7 @@ Access to the JBoss Management Console and JMX Console is already configured (JM
 
 ### Disable directory browsing {#disable-directory-browsing}
 
-After logging into Administration Console, it is possible to browse the console’s directory listing by modifying the URL. For example, if you change the URL to one of the following URLs, a directory listing may appear:
+After logging into Administration Console, it is possible to browse the console's directory listing by modifying the URL. For example, if you change the URL to one of the following URLs, a directory listing may appear:
 
 ```java
 https://<servername>:8080/adminui/secured/ 
