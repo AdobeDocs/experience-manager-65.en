@@ -1,7 +1,7 @@
 ---
 title: Asset Selector
 description: Learn how to use the asset selector to search, filter, browse, and fetch metadata for assets within Adobe Experience Manager Assets. Also learn how to customize the asset selector interface.
-contentOwner: AG
+contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
