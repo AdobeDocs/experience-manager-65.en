@@ -267,7 +267,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Steps 37 and 38</strong></td>
    <td>Lazy-loading</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">See the Gem Session on AEM Web Performance.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">See the Gem Session on AEM Web Performance.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Step 39</strong></td>
@@ -287,7 +287,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 49</strong></td>
    <td>Shrink payload size</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Enable Gzip</a> and <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">shrink the image size</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Enable Gzip</a> and <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">shrink the image size</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Steps 42 and 43</strong></td>
@@ -319,7 +319,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Steps 50 and 51</strong></td>
    <td>JS code blocking</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
   </tr>
  </tbody>
 </table>

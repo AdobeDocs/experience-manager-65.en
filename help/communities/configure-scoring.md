@@ -14,7 +14,7 @@ exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
 ---
 # Scoring and Badges Essentials {#scoring-and-badges-essentials}
 
-The AEM Communities scoring and badges feature provides the ability to identify and reward community members.
+The AEM Communities scoring and badges feature identifies and rewards community members.
 
 The details of setting up the feature are described at
 
@@ -62,11 +62,11 @@ For example, search for `this.isAssigned` in `/libs/social/forum/components/hbs/
 {{/each}}
 ```
 
-If true, isAssigned indicates the badge was assigned for a role and the badge should be displayed as text.
+If true, isAssigned indicates that the badge was assigned for a role and the badge should be displayed as text.
 
-If false, is Assigned indicates the badge was awarded for an earned score and the badge should be displayed as an image.
+If false, isAssigned indicates that the badge was awarded for an earned score and the badge should be displayed as an image.
 
-Any changes to this behavior should be made in a customized script (either override or overlay). See [Client-side Customizaton](/help/communities/client-customize.md).
+Any changes to this behavior should be made in a customized script (either override or overlay). See [Client-side Customization](/help/communities/client-customize.md).
 
 ## Debug Log for Scoring and Badging {#debug-log-for-scoring-and-badging}
 
@@ -121,7 +121,7 @@ The descriptions for accessing scoring and badging data use JSRP, as the UGC is 
 
 **JSRP on author**: experimenting in the author environment results in UGC that is only visible from the author environment.
 
-**JSRP on publish**: similarly, if testing on the publish environment, it will be necessary to access CRXDE Lite with administrative privileges on a publish instance. If the publish instance is running in [production mode](/help/sites-administering/production-ready.md) (nosamplecontent runmode), it will be necessary to [enable CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP on publish**: similarly, if testing on the publish environment, it is necessary to access CRXDE Lite with administrative privileges on a publish instance. If the publish instance is running in [production mode](/help/sites-administering/production-ready.md) (nosamplecontent runmode), it is necessary to [enable CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 The base location of UGC on JSRP is `/content/usergenerated/asi/jcr/`.
 
@@ -129,8 +129,8 @@ The base location of UGC on JSRP is `/content/usergenerated/asi/jcr/`.
 
 The following APIs are available for use :
 
-* [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
-* [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
+* [com.adobe.cq.social.scoring.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+* [com.adobe.cq.social.badging.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
 
 The latest Javadocs for the installed feature pack are available to developers from the Adobe repository. See [Using Maven for Communities : Javadocs](/help/communities/maven.md#javadocs).
 
@@ -164,7 +164,7 @@ The screen shots of repository data come from setting up scoring and badging for
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
       ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Add property to display badges
+   * To display badges, add property
 
      `allowBadges = true`
 
@@ -194,7 +194,7 @@ The screen shots of repository data come from setting up scoring and badging for
      `/content/community-components/en/forum/jcr:content/content/forum`
     ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Add property to display badges
+   * To display badges, add property
 
      `allowBadges = true`
 
@@ -208,7 +208,7 @@ The screen shots of repository data come from setting up scoring and badging for
 
    ```
 
-   As a user has earned two bronze badges and has been awarded a moderator badge, this is how the user appears with their forum entry.
+   As a user has earned two bronze badges and has been awarded a moderator badge, the user appears with their forum entry as follows:
 
    ![moderator](assets/moderator.png)
 
@@ -235,15 +235,15 @@ For investigative purposes, using JSRP for the example, the base folder containi
 
 The child node of `scoring` is the scoring rule name. Thus, a best practice is that scoring rule names on a server be globally unique.
 
-For the Geometrixx Engage site, the user and their score is in a path contstructed with the scoring rule name, community site's site id ( `engage-ba81p`), an unique id, and the user's id :
+For the Geometrixx Engage site, the user, and their score, are in a path constructed with the scoring rule name, community site's site id ( `engage-ba81p`), a unique id, and the user's id :
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-For the Community Components guide site, the user and their score is in a path constructed with the scoring rule name, a default id ( `default-site`), an unique id, and the user's id :
+For the Community Components guide site, the user, and their score, are in a path constructed with the scoring rule name, a default id ( `default-site`), a unique id, and the user's id :
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-The score is stored in the property `scoreValue_tl` which may directonly contain a value or indirectly refer to an atomicCounter.
+The score is stored in the property `scoreValue_tl` which may only contain a value or indirectly refer to an atomicCounter.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 

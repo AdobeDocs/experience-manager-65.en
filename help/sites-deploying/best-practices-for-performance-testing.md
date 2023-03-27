@@ -49,10 +49,10 @@ There are many commercially available performance testing tools on the market. W
 
 #### Testing Tools {#testing-tools}
 
-* Adobe’s **Tough Day** tool can be used to generate load on AEM instances and collect performance data. Adobe’s AEM engineering team actually uses the tool to do load testing of the AEM product itself. The scripts executed in Tough Day are configured via property files and JMX XML files. For more information, see the [Tough Day documentation](/help/sites-developing/tough-day.md).
+* Adobe's **Tough Day** tool can be used to generate load on AEM instances and collect performance data. Adobe's AEM engineering team actually uses the tool to do load testing of the AEM product itself. The scripts executed in Tough Day are configured via property files and JMX XML files. For more information, see the [Tough Day documentation](/help/sites-developing/tough-day.md).
 
 * AEM provides out of the box tools to quickly see problematic queries, requests and error messages. For more information, see the [Diagnosis Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) section of the Operations Dashboard documentation.
-* Apache provides a product called **JMeter** that can be used for performance and load testing as well as functional behavior. It is open source software and free to use, but has a smaller feature set than enterprise products and a steeper learning curve. JMeter can be found on Apache’s website at [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* Apache provides a product called **JMeter** that can be used for performance and load testing as well as functional behavior. It is open source software and free to use, but has a smaller feature set than enterprise products and a steeper learning curve. JMeter can be found on Apache's website at [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
 * **Load Runner** is an enterprise grade load testing product. A free evaluation version is available. More information can be found at [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
@@ -70,7 +70,7 @@ The [Monitoring Performance](/help/sites-deploying/monitoring-and-maintaining.md
 
 **Developer Mode in Touch UI**
 
-One of the new features in AEM 6’s touch UI is the Developer Mode. Just as authors can switch between edit and preview modes, developers can switch to developer mode in the author UI to see the render time for each of the components on the page and to see stack traces of any errors. For more information on developer mode, see this [CQ Gems presentation](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+One of the new features in AEM 6's touch UI is the Developer Mode. Just as authors can switch between edit and preview modes, developers can switch to developer mode in the author UI to see the render time for each of the components on the page and to see stack traces of any errors. For more information on developer mode, see this [CQ Gems presentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 
 **Using the rlog.jar to read the request logs**
 
@@ -82,7 +82,7 @@ The [Explain Query tool](/help/sites-administering/operations-dashboard.md#expla
 
 **PageSpeed Tools**
 
-Google’s PageSpeed tools offer site analysis for adherence to best practices for page performance as well as a plugin that can be installed alongside the dispatcher on an Apache instance for additional optimizations. For more information, see the [PageSpeed Tools Website](https://developers.google.com/speed/pagespeed/).
+Google's PageSpeed tools offer site analysis for adherence to best practices for page performance as well as a plugin that can be installed alongside the dispatcher on an Apache instance for additional optimizations. For more information, see the [PageSpeed Tools Website](https://developers.google.com/speed/pagespeed/).
 
 ## Author Environment {#author-environment}
 
@@ -108,7 +108,7 @@ For the cache named **Document-Diff**, the hit rate should be over `.90`. If the
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-The **ObservationQueueMaxLength** section will show the number of events in Oak’s observation queue over the last hours, minutes, seconds and weeks. Find the largest number of events in the "per hour" section. This number needs to be compared to the `oak.observation.queue-length` setting. If the highest number shown for the observation queue exceeds the `queue-length` setting:
+The **ObservationQueueMaxLength** section will show the number of events in Oak's observation queue over the last hours, minutes, seconds and weeks. Find the largest number of events in the "per hour" section. This number needs to be compared to the `oak.observation.queue-length` setting. If the highest number shown for the observation queue exceeds the `queue-length` setting:
 
 1. Create a file named: `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` containing the parameter `oak.observation.queue‐length=50000`
 1. Place it under the /crx-­‐quickstart/install folder. 
@@ -147,6 +147,6 @@ After running performance tests on the author instance, any issues will need to 
 * If issues are present with editing certain pages or components on author instances, use the TouchUI Developer Mode to inspect the page in question. This will provide a breakdown of each content area on the page as well as its load time
 * Minify all JS and CSS on the site. For more information on how to do this, see this [blog post](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
 * Eliminate embedded CSS and JS from the components. They should be included and minified with the client-side libraries to minimize the number of requests required to render the page
-* Use browser tools like Chrome’s Network tab to inspect the server requests and see which are taking the longest.
+* Use browser tools like Chrome's Network tab to inspect the server requests and see which are taking the longest.
 
 Once problem areas are identified, application code can be inspected for performance optimizations. Any out of the box AEM features that are not performing properly can be addressed with Adobe Support.

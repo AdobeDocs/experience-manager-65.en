@@ -32,7 +32,6 @@ This guide covers all AEM Deploying tasks, such as installing and deploying AEM.
 | [Managing User Guide](/help/managing/home.md)| This guide describes how to manage an AEM project successfully. |
 | [Commerce User Guide](/help/commerce/home.md)|Learn about Commerce Integration Framework on AEM.|
 | [Mobile User Guide](/help/mobile/home.md)|This guide describes how to create and manage content for mobile applications.|
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html) | This guide shows you how to share user-generated content with Livefyre. |
 
 ## Key AEM resources
 

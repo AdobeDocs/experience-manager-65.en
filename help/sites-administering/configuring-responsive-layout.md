@@ -42,7 +42,7 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-  This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content will be rendered using the Emulator.
+  This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content is rendered using the Emulator.
 
 >[!CAUTION]
 >
@@ -73,7 +73,7 @@ To specify the device groups that appear in the Devices list of the emulator see
 
 ### Link your Site to the Specified Device Groups {#link-your-site-to-the-specified-device-groups}
 
-To include the dmulator you need to link your site to the device groups. See [Adding the Devices List](/help/sites-developing/responsive.md#adding-the-devices-list) (for both the classic and touch-optimized UI).
+To include the emulator, link your site to the device groups. See [Adding the Devices List](/help/sites-developing/responsive.md#adding-the-devices-list) (for both the classic and touch-optimized UI).
 
 ## Activate Layout Mode for your Site {#activate-layout-mode-for-your-site}
 
@@ -86,12 +86,12 @@ These procedures are used to enable the **Layout** mode on your site.
 * Are used in responsive design.
 * Can be defined:
 
-    * On the page template, from where the settings will be copied to any pages created with that template.
-    * On the page node, from where the settings will be inherited by any child pages.
+    * On the page template, from where the settings are copied to any pages created with that template.
+    * On the page node, from where the settings are inherited by any child pages.
 
 * Define a title and a width:
 
-    * The title describes the generic device grouping, with orientation if required; for example phone, tablet, tabletlandscape.
+    * The title describes the generic device grouping, with orientation if necessary; for example, phone, tablet, tabletlandscape.
     * The width defines the maximum width in pixels for that generic device grouping. For example, if the breakpoint phone has a width of 768 then that it the maximum width of the layout used for a phone device.
 
 * Are visible as markers at the top of the page editor when you are using the emulator.
@@ -104,9 +104,9 @@ They can be defined using CRXDE Lite or XML.
 >
 >If you are setting up a new project:
 >
->* you need to add breakpoints to the templates.
+>* add breakpoints to the templates.
 >
->If you are migrating an existing project (with existing content) you need to:
+>If you are migrating an existing project (with existing content), you must:
 >
 >* add breakpoints to the templates
 >* add the same breakpoints to the existing pages
@@ -168,7 +168,7 @@ These procedures are required so you can resize components in the **Layout** mod
 
 ### Set Layout Container as Main Parsys {#set-layout-container-as-main-parsys}
 
-To set the main parsys of your page to be a layout container you need to define the parsys as:
+To set the main parsys of your page to be a layout container, define the parsys as:
 
 `wcm/foundation/components/responsivegrid`
 
@@ -197,7 +197,7 @@ The following two examples illustrate the definition:
 
 AEM uses LESS to generate parts of the necessary CSS, these need to be included for your projects.
 
-You will also need to create a [client library](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) to provide additional configuration and function calls. The following LESS extract is an example of the minimum you need to add to your project:
+You will also must create a [client library](https://experienceleague.adobe.com/docs/) to provide additional configuration and function calls. The following LESS extract is an example of the minimum that you must add to your project:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -231,7 +231,7 @@ The base grid definition can be found under:
 
 #### Styling Considerations {#styling-considerations}
 
-Components held within a responsive container will be resized (together with their respective HTML DOM elements) according to the responsive grid size. Therefore, in these circumstances, it is recommended to avoid (or update) definitions of fixed width (contained) DOM elements.
+Components held within a responsive container are resized (together with their respective HTML DOM elements) according to the responsive grid size. Therefore, in these circumstances, it is recommended to avoid (or update) definitions of fixed width (contained) DOM elements.
 
 For example:
 
