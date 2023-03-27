@@ -38,8 +38,8 @@ This page helps you extend the functionalities of the Multi Site Manager:
 
 Multi Site Management consists of the following packages:
 
-* [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 The main MSM API objects interact as follows (see also [Terms Used](/help/sites-administering/msm.md#terms-used)):
 
@@ -98,31 +98,31 @@ The main MSM API objects interact as follows (see also [Terms Used](/help/sites-
 
 Create custom synchronization actions to use with your rollout configurations. Create a synchronization action when the [installed actions](/help/sites-administering/msm-sync.md#installed-synchronization-actions) do not meet your specific application requirements. To do so, create two classes:
 
-* An implementation of the [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface that performs the action.
-* An OSGI component that implements the [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface and creates instances of your `LiveAction` class.
+* An implementation of the [ `com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface that performs the action.
+* An OSGI component that implements the [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) interface and creates instances of your `LiveAction` class.
 
 The `LiveActionFactory` creates instances of the `LiveAction` class for a given configuration:
 
 * `LiveAction` classes include the following methods:
 
-    * `getName`: Returns the name of the action The name is used to refer to the action, for example in rollout configurations.
-    * `execute`: Performs the tasks of the action.
+  * `getName`: Returns the name of the action The name is used to refer to the action, for example in rollout configurations.
+  * `execute`: Performs the tasks of the action.
 
 * `LiveActionFactory` classes include the following members:
 
-    * `LIVE_ACTION_NAME`: A field that contains the name of the associated `LiveAction`. This name must coincide with the value that is returned by the `getName` method of the `LiveAction` class.
+  * `LIVE_ACTION_NAME`: A field that contains the name of the associated `LiveAction`. This name must coincide with the value that is returned by the `getName` method of the `LiveAction` class.
 
-    * `createAction`: Creates an instance of the `LiveAction`. The optional `Resource` parameter can be used to provide configuration information.
+  * `createAction`: Creates an instance of the `LiveAction`. The optional `Resource` parameter can be used to provide configuration information.
 
-    * `createsAction`: Returns the name of the associated `LiveAction`.
+  * `createsAction`: Returns the name of the associated `LiveAction`.
 
 ### Accessing the LiveAction Configuration Node {#accessing-the-liveaction-configuration-node}
 
-Use the `LiveAction` configuration node in the repository to store information that affects the runtime behaviour of the `LiveAction` instance. The node in the repository that stores the `LiveAction` configuration is available to the `LiveActionFactory` object at runtime. Therefore, you can add properties to the configuration node to and use them in your `LiveActionFactory` implementation as needed.
+Use the `LiveAction` configuration node in the repository to store information that affects the runtime behavior of the `LiveAction` instance. The node in the repository that stores the `LiveAction` configuration is available to the `LiveActionFactory` object at runtime. Therefore, you can add properties to the configuration node to and use them in your `LiveActionFactory` implementation as needed.
 
 For example, a `LiveAction` needs to store the name of the blueprint author. A property of the configuration node includes the property name of the blueprint page that stores the information. At runtime, the `LiveAction` retrieves the property name from the configuration, then obtains the property value.
 
-The parameter of the ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration; see [Creating a Rollout Configuration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). As usual when using a configuration node, you should adapt it to a `ValueMap` object:
+The parameter of the [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) method is a `Resource` object. This `Resource` object represents the `cq:LiveSyncAction` node for this live action in the rollout configuration; see [Creating a Rollout Configuration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). As usual when using a configuration node, you should adapt it to a `ValueMap` object:
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -140,9 +140,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 The following objects are provided as parameters of the `execute` method of the `LiveAction` object:
 
-* A [ `Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) object that represents the source of the Live Copy.
+* A [ `Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) object that represents the source of the Live Copy.
 * A `Resource` object that represents the target of the Live Copy.
-* The [ `LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) object for the live copy.
+* The [ `LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) object for the live copy.
 * The `autoSave` value indicates whether your `LiveAction` should save changes that are made to the repository.
 
 * The reset value indicates the rollout reset mode.
@@ -159,7 +159,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->The `Resource` arguments may be `null` or `Resources` objects that do not adapt to `Node` objects, such as [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objects.
+>The `Resource` arguments may be `null` or `Resources` objects that do not adapt to `Node` objects, such as [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objects.
 
 ## Creating a New Rollout Configuration {#creating-a-new-rollout-configuration}
 
@@ -183,19 +183,20 @@ To create a new rollout configuration:
 
 1. Navigate to :
    `/apps/msm/<your-project>/rolloutconfigs`
-   
+
    >[!NOTE]
    >This is your project's customized version of:
    >`/libs/msm/wcm/rolloutconfigs`
-   >Must be created if this is your first configuration.
+   >If this is your first configuration, this `/libs` branch must be used as a template to create the new branch under `/apps`.
 
    >[!NOTE]
    >
-   >You must not change anything in the /libs path.
-   >This is because the content of /libs is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+   >You must not change anything in the `/libs` path.
+   >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
    >The recommended method for configuration and other changes is:
-   >* Recreate the required item (i.e. as it exists in /libs) under /apps
-   >* Make any changes within /apps
+   >
+   >* Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+   >* Make any changes within `/apps`
 
 1. Under this **Create** a node with the following properties:
 
@@ -656,30 +657,30 @@ For example, if two new page properties are being added:
 
 * Contact Email:
 
-    * This property is not required to be rolled out, as it will be different in each country (or brand, etc).
+  * This property is not required to be rolled out, as it will be different in each country (or brand, etc).
 
 * Key Visual Style:
 
-    * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, etc).
+  * The project requirement is that this property is to be rolled out as it is (usually) common to all countries (or brands, etc).
 
 Then you need to ensure that:
 
 * Contact Email:
 
-    * Is excluded from the rolled out properties; see [Excluding Properties and Node Types from Synchronization](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
+* Is excluded from the rolled out properties; see [Excluding Properties and Node Types from Synchronization](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization).
 
 * Key Visual Style:
 
-    * Make sure you are not allowed to edit this property in the touch-enabled UI unless inheritance is cancelled, also that you can then reinstate inheritance; this is controlled by clicking the chain/broken-chain links that toggle to indicate the status of the connection.
+* Make sure you are not allowed to edit this property in the touch-enabled UI unless inheritance is cancelled, also that you can then reinstate inheritance; this is controlled by clicking the chain/broken-chain links that toggle to indicate the status of the connection.
 
 Whether a page property is subject to roll out and therefore, subject to cancelling/reinstating inheritance when editing, is controlled by the dialog property:
 
 * `cq-msm-lockable`
 
-    * is applicable to items in a touch-enabled UI dialog
-    * will create the chain-link symbol in the dialog
-    * only allows editing if inheritance is cancelled (the chain-link is broken)
-    * only applies to the first child level of the resource
+  * is applicable to items in a touch-enabled UI dialog
+  * will create the chain-link symbol in the dialog
+  * only allows editing if inheritance is cancelled (the chain-link is broken)
+  * only applies to the first child level of the resource
     * **Type**: `String`
 
     * **Value**: holds the name of the property under consideration (and is comparable to the value of the property `name`; for example, see
@@ -689,15 +690,15 @@ When `cq-msm-lockable` has been defined, breaking/closing the chain will interac
 
 * if the value of `cq-msm-lockable` is:
 
-    * **Relative** (e.g. `myProperty` or `./myProperty`)
+  * **Relative** (e.g. `myProperty` or `./myProperty`)
 
-        * it will add and remove the property from `cq:propertyInheritanceCancelled`.
+    * it will add and remove the property from `cq:propertyInheritanceCancelled`.
 
-    * **Absolute** (e.g. `/image`)
+  * **Absolute** (e.g. `/image`)
 
-        * breaking the chain will cancel inheritance by adding the `cq:LiveSyncCancelled` mixin to `./image` and setting `cq:isCancelledForChildren` to `true`.
+    * breaking the chain will cancel inheritance by adding the `cq:LiveSyncCancelled` mixin to `./image` and setting `cq:isCancelledForChildren` to `true`.
 
-        * closing the chain will revert inheritance.
+    * closing the chain will revert inheritance.
 
 >[!NOTE]
 >
