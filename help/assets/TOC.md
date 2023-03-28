@@ -152,6 +152,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
 + Manage Assets {#managing}
   + [Manage digital assets](manage-assets.md)
   + [Manage collections](manage-collections.md)
+  + [Asset Selector](asset-selector.md)
   + [Enable duplicate detection](duplicate-detection.md)
   + [Organize digital assets](organize-assets.md)
   + [Manage video assets](managing-video-assets.md)
