@@ -47,7 +47,7 @@ This and the following pages cover the tasks for creating, configuring, maintain
 >* [Customizing and Extending Content Fragments](/help/sites-developing/customizing-content-fragments.md)
 >* [Content Fragments Configuring Components for Rendering](/help/sites-developing/content-fragments-config-components-rendering.md)
 >* [Content Fragments Support in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md)
->* [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [AEM GraphQL API for use with Content Fragments](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
@@ -126,7 +126,7 @@ Content fragments are:
 
   * The **Content Fragment** component is available to page authors. It allows them to reference, and deliver, the required content fragment in either HTML or JSON format.
 
-* Accessible using the [AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md).
+* Accessible using the [AEM GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
 Content Fragments are a content structure that:
 
