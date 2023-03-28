@@ -22,9 +22,7 @@ To run the procedure use the following steps:
 
 1. Enable the update by setting the following variables for your instance using the Cloud Manager UI:
 
-<!--
    ![Cloud Manager Environment Configuration](assets/cfm-graphql-update-01.png "Cloud Manager Environment Configuration")
--->
 
    The available variables are:
 
