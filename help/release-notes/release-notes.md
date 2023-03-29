@@ -268,7 +268,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
-* A GraphQL query may use the `damAssetLucene` index instead of the `fragments` index.
+* A GraphQL query may use the `damAssetLucene` index instead of the `fragments` index. This might result in GraphQL queries that fail, or take a very long time to execute.
 
   To correct the problem, `damAssetLucene` has to be configured to include the following two properties:
 
