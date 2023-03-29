@@ -269,6 +269,6 @@ Now that you have learned how to model your structure, and create content depend
   * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
   * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
 * [AEM GraphQL Schemas](access-your-content.md) - how GraphQL realizes models
-* [The Sample Content Fragment Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [The Sample Content Fragment Structure](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL
   * [GraphQL Modeling Basics](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Learn how to define and use Content Fragments in Adobe Experience Manager (AEM) for use with GraphQL.

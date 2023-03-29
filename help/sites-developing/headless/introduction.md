@@ -13,7 +13,7 @@ Headless implementation is increasingly becoming important for delivering experi
 
 Headless implementation forgoes page and component management as is traditional in full stack and hybrid solutions and focuses on the creation of channel-neutral, reusable fragments of content and their cross-channel delivery. It is a modern and dynamic development pattern for implementing web experiences.
 
-![AEM Implementation Models](assets/aem-implementation-models.png)
+![AEM Implementation Models](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 ## Comparing Headful and Headless {#headful-headless}
 

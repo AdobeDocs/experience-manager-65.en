@@ -20,21 +20,21 @@ An information architect would perform these tasks only sporadically as new mode
 1. Log into AEM and from the main menu select **Tools -&gt; Assets -&gt; Content Fragment Models**.
 1. Tap or click on the folder that was made by creating your configuration.
 
-   ![The models folder](../assets/models-folder.png)
+   ![The models folder](assets/models-folder.png)
 1. Tap or click **Create**.
 1. Provide a **Model Title**, **Tags** and **Description**. You can also select/deselect **Enable model** to control whether the model is immediately enabled upon creation.
 
-   ![Create a model](../assets/models-create.png)
+   ![Create a model](assets/models-create.png)
 1. In the confirmation window, tap or click **Open** to configure your model.
 
-   ![Confirmation window](../assets/models-confirmation.png)
+   ![Confirmation window](assets/models-confirmation.png)
 1. Using the **Content Fragment Model Editor**, build your Content Fragment Model by dragging and dropping fields from the **Data Types** column.
 
-   ![Drag and drop fields](../assets/models-drag-and-drop.png)
+   ![Drag and drop fields](assets/models-drag-and-drop.png)
 
 1. Once you place a field, you must configure its properties. The editor will automatically switch to the **Properties** tab for the added field where you can provide the mandatory fields.
 
-   ![Configure properties](../assets/models-configure-properties.png)
+   ![Configure properties](assets/models-configure-properties.png)
 1. When you are finished building your model, tap or click **Save**. 
 
 1. The mode of the newly-created model depends on whether you selected **Enable Model** when creating the model:
@@ -44,13 +44,13 @@ An information architect would perform these tasks only sporadically as new mode
 1. If not already enabled, the model must be **Enabled** in order to use it. 
    1. Select the model you just created and then tap or click **Enable**.
 
-      ![Enabling the model](../assets/models-enable.png)
+      ![Enabling the model](assets/models-enable.png)
    1. Confirm enabling the model by tapping or clicking **Enable** in the confirmation dialog.
 
-      ![Enabling confirmation dialog](../assets/models-enabling.png)
+      ![Enabling confirmation dialog](assets/models-enabling.png)
 1. The model is now enabled and ready to use.
 
-   ![Model enabled](../assets/models-enabled.png)
+   ![Model enabled](assets/models-enabled.png)
 
 The **Content Fragment Model Editor** supports many different data type such as simple text fields, asset references, references to other models, and JSON data.
 

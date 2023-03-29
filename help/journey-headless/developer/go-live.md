@@ -98,7 +98,7 @@ Now, it's time to get your AEM headless application ready for launch, by followi
 
 ### Secure your Headless Application Before Launch {#secure-and-scale-before-launch}
 
-1. Prepare [Authentication](/help/assets/content-fragments/graphql-authentication-content-fragments.md) for your GraphQL requests
+1. Prepare [Authentication](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) for your GraphQL requests
 
 ### Model Structure vs GraphQL Output {#structure-vs-output}
 
