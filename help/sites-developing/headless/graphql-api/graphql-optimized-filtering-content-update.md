@@ -9,7 +9,7 @@ To optimize the performance of your GraphQL filters you need to run a procedure 
 
 >[!NOTE]
 >
->After updating your Content Fragments you can follow the recommendations for [Optimizing GraphQL Queries](/help/assets/content-fragments/graphql-optimization.md).
+>After updating your Content Fragments you can follow the recommendations for [Optimizing GraphQL Queries](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
 
 
 ## Prerequisites {#prerequisites}
