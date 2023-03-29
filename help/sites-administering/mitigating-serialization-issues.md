@@ -15,7 +15,7 @@ exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
 
 ## Overview {#overview}
 
-The AEM team at Adobe worked closely with the open-source project [NotSoSerial](https://github.com/kantega/notsoserial) to help in mitigating the vulnerabilities described in **CVE-2015-7501**. NotSoSerial is licensed under the [Apache 2 license](https://www.apache.org/licenses/LICENSE-2.0) and includes ASM code licensed under its own [BSD-like license](hhttps://asm.ow2.io/).
+The AEM team at Adobe worked closely with the open-source project [NotSoSerial](https://github.com/kantega/notsoserial) to help in mitigating the vulnerabilities described in **CVE-2015-7501**. NotSoSerial is licensed under the [Apache 2 license](https://www.apache.org/licenses/LICENSE-2.0) and includes ASM code licensed under its own [BSD-like license](https://asm.ow2.io/).
 
 The agent jar included with this package is Adobe's modified distribution of NotSoSerial.
 
