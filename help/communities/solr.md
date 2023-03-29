@@ -16,7 +16,7 @@ exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
 
 ## Solr for AEM Platform {#solr-for-aem-platform}
 
-An [Apache Solr](https://lucene.apache.org/solr/) installation may be shared between the [node store](../../help/sites-deploying/data-store-config.md) (Oak) and [common store](working-with-srp.md) (SRP) by using different collections.
+An [Apache Solr](https://solr.apache.org/) installation may be shared between the [node store](../../help/sites-deploying/data-store-config.md) (Oak) and [common store](working-with-srp.md) (SRP) by using different collections.
 
 If both the Oak and SRP collections are used intensively, a second Solr may be installed for performance reasons.
 
@@ -28,7 +28,7 @@ Download and install Apache Solr:
 
 * [Version 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
-* Solr requires Java 1.7 or greater
+* Solr requires Java&trade; 1.7 or greater
 * No service is needed
 * Choice of run modes:
 
@@ -57,14 +57,14 @@ It is also recommended to configure JVM to tune memory usage and garbage collect
 JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
-### SolrCloud Setup Commands {#solrcloud-setup-commands}
+### SolrCloud Set up Commands {#solrcloud-setup-commands}
 
-When running in SolrCloud mode, prior to MLS installation, use and knowledge of the following SolrCloud set-up commands is necessary.
+When running in SolrCloud mode, before MLS installation, use, and knowledge of the following SolrCloud set-up commands is necessary.
 
 #### 1. Upload a configuration to ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Reference:
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Usage:
 sh ./scripts/cloud-scripts/zkcli.sh \
@@ -77,7 +77,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 #### 2. Create a collection {#create-a-collection}
 
 Reference:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
 Usage:
 ./bin/solr create \
@@ -93,7 +93,7 @@ Usage:
 Link a collection to a configuration already uploaded to ZooKeeper.
 
 Reference:
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Usage:
 sh ./scripts/cloud-scripts/zkcli.sh \
@@ -106,7 +106,7 @@ sh ./scripts/cloud-scripts/zkcli.sh \
 
 Multilingual Search (MLS) for AEM Communities is built for the Solr platform to provide improved search across all supported languages, including English.
 
-MLS for AEM communities is available as either Standard MLS or Advanced MLS. Standard MLS only includes Solr configuration settings, and excludes any plugins or resource files. Advanced MLS is the more comprehensive solution and includes Solr configuration settings as well as plugins and related resources
+MLS for AEM Communities is available as either Standard MLS or Advanced MLS. Standard MLS only includes Solr configuration settings, and excludes any plugins or resource files. Advanced MLS is the more comprehensive solution and includes Solr configuration settings as well as plugins and related resources
 
 Standard MLS includes enhancements for content search for the following languages:
 
@@ -136,7 +136,7 @@ In all, the following 33 languages are supported in Advanced MLS.
 | Finnish |Latvian |Thai |
 | French |Lithuanian |Turkish |
 
-#### Comparison of AEM 6.1 Solr search, Standard MLS and Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Comparison of AEM 6.1 Solr search, Standard MLS, and Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
 **Note**: AEM 6.1 refers to AEM 6.1 Communities FP3 and earlier.
 
@@ -167,8 +167,8 @@ The Standard MLS files are stored in the AEM repository.
 1. Download to local server on which Solr is deployed.
 
    * Locate the `jcr:content` node's `jcr:data` property.
-   * Select `view` to start the download.
-   * Ensure the files are saved with the appropriate names and encoding (UTF8).
+   * To start the download, select `view`.
+   * Ensure that the files are saved with the appropriate names and encoding (UTF8).
 
 1. Follow the installation instructions for either standalone or SolrCloud mode.
 
@@ -190,7 +190,7 @@ The Standard MLS files are stored in the AEM repository.
 1. [Create a collection](#create-a-collection) specifying the necessary parameters, such as number of shards, number of replicas, and configuration name.
 1. If the configuration name was *not *provided during creation of the collection, [link this newly created collection](#link-a-collection-to-a-configuration-set) with the configuration uploaded to ZooKeeper.
 
-1. For MSRP, run [MSRP Reindex Tool](msrp.md#msrp-reindex-tool), unless this is a new installation.
+1. For MSRP, run [MSRP Reindex Tool](msrp.md#msrp-reindex-tool), unless this installation is new.
 
 #### Standalone Mode - Standard MLS {#standalone-mode-standard-mls}
 
@@ -208,7 +208,7 @@ The Standard MLS files are stored in the AEM repository.
 1. Copy the downloaded **schema.xml** and **solrconfig.xml** to that same directory.
 
 1. Restart Solr.
-1. For MSRP, run [MSRP Reindex Tool](#msrpreindextool), unless this is a new installation.
+1. For MSRP, run [MSRP Reindex Tool](#msrpreindextool), unless this installation is new.
 
 ### Installing Advanced MLS {#installing-advanced-mls}
 
@@ -273,13 +273,13 @@ Installation instructions - note the few differences for Solr4 and Solr5:
 1. [Create a collection](#create-a-collection) specifying the necessary parameters, such as number of shards, number of replicas, and configuration name.
 1. If the configuration name was *not* provided during creation of the collection, [link this newly created collection](#link-a-collection-to-a-configuration-set) with the configuration uploaded to ZooKeeper.
 
-1. For MSRP, run [MSRP Reindex Tool](#msrpreindextool), unless this is a new installation.
+1. For MSRP, run [MSRP Reindex Tool](#msrpreindextool), unless this installation is new.
 
 #### Standalone Mode - Advanced MLS {#standalone-mode-advanced-mls}
 
 An install script is included in the Advanced MLS package.
 
-After the contents of the package have been extracted to the server hosting the standalone Solr server, simply execute the install script in order to install the necessary resources and configuration files.
+After the contents of the package are extracted to the server hosting the standalone Solr server, run the install script to install the necessary resources and configuration files.
 
 * Install Solr in standalone mode.
 * If running Solr5, create a collection1 (similar to Solr4):
@@ -316,14 +316,14 @@ After the contents of the package have been extracted to the server hosting the 
 
 **Note**:
 
-* The install script will back-up schema.xml and solrconfig.xml before installing new versions by appending ".orig"
+* The install script backs up schema.xml and solrconfig.xml before installing new versions by appending ".orig"
 
 ### About solrconfig.xml {#about-solrconfig-xml}
 
-The **solrconfig.xml** file controls the auto commit interval and search visibility and will requiring testing and tuning.
+The **solrconfig.xml** file controls the auto commit interval and search visibility and requires testing and tuning.
 
 `<autoCommit>`: By default, the AutoCommit interval, which is a hard commit to stable storage, is set to 15 seconds. The search visibility defaults to using the pre-commit index.
 
 To change search to use an index updated to reflect changes due to the commit, change the contained `openSearcher` to true.
 
-`autoSoftCommit`: A 'soft' commit ensures that changes are visible (the index is updated), but does not ensure changes are synced to stable storage (hard commit). The result is an improvement in performance. By default, `autoSoftCommit` is disabled with the contained `maxTime` set to -1.
+`autoSoftCommit`: A 'soft' commit ensures that changes are visible (the index is updated), but does not ensure that changes are synced to stable storage (hard commit). The result is an improvement in performance. By default, `autoSoftCommit` is disabled with the contained `maxTime` set to -1.
