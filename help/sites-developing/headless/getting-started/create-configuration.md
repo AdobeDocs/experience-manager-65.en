@@ -28,7 +28,7 @@ An administrator would only need to create a configuration once, or very seldoml
    * **Content Fragment Models**
    * **GraphQL Persistent Queries**
 
-   ![Create Configuration](../assets/create-configuration.png)
+   ![Create Configuration](assets/create-configuration.png)
 
 1. Tap or click **Create**
 

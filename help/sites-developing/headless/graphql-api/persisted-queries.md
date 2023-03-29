@@ -12,11 +12,11 @@ Persisted queries are GraphQL queries that are created and stored on the Adobe E
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 -->
 
-The [GraphiQL IDE](/help/assets/content-fragments/graphiql-ide.md) is available in AEM for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/assets/content-fragments/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the cURL example provided in [How to persist a GraphQL query](#how-to-persist-query).
+The [GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md) is available in AEM for you to develop, test, and persist your GraphQL queries, before [transferring to your production environment](#transfer-persisted-query-production). For cases that need customization (for example, when [customizing the cache](/help/sites-developing/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) you can use the API; see the cURL example provided in [How to persist a GraphQL query](#how-to-persist-query).
 
 ## Persisted Queries and Endpoints {#persisted-queries-and-endpoints}
 
-Persisted queries must always use the endpoint related to the [appropriate Sites configuration](/help/assets/content-fragments/graphql-api-content-fragments.md#graphql-aem-endpoint); so they can use either, or both:
+Persisted queries must always use the endpoint related to the [appropriate Sites configuration](/help/sites-developing/headless/graphql-api/graphql-endpoint.md); so they can use either, or both:
 
 * The Global configuration and endpoint
   The query has access to all Content Fragment Models.
@@ -49,7 +49,7 @@ It is recommended to persist queries on an AEM author environment initially and 
 
 There are various methods of persisting queries, including:
 
-* GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#saving-persisted-queries) (preferred method)
+* GraphiQL IDE - see [Saving Persisted Queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (preferred method)
 * cURL - see the following example
 * Other tools, including [Postman](https://www.postman.com/)
 
@@ -312,7 +312,7 @@ These can be overwritten:
 <!--
 ### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
-The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
+The GraphiQL IDE - see [Saving Persisted Queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->
 
 ### Managing Cache at the Persisted Query Level {#cache-persisted-query-level}

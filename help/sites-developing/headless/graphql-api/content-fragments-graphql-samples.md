@@ -14,7 +14,7 @@ Learn to use GraphQL with AEM to serve content headlessly by exploring sample co
 >
 >* [Content Fragments](/help/assets/content-fragments/content-fragments.md)
 >* [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
->* [AEM GraphQL API for use with Content Fragments](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [AEM GraphQL API for use with Content Fragments](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 To get started with GraphQL queries and how they work with AEM Content Fragments it helps to see some practical examples. 
 
@@ -31,7 +31,7 @@ See these sample queries for illustrations of create queries, together with samp
 
 >[!NOTE]
 >
->Depending on your instance you can directly access the [GraphiQL interface included with AEM GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) for submitting and testing queries.
+>Depending on your instance you can directly access the [GraphiQL interface included with AEM GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) for submitting and testing queries.
 >
 >For example: `http://localhost:4502/content/graphiql.html`
 

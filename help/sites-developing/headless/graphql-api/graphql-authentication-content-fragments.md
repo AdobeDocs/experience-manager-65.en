@@ -6,11 +6,11 @@ exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
 ---
 # Authentication for Remote AEM GraphQL Queries on Content Fragments {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-A primary use case for The [Adobe Experience Manager (AEM) GraphQL API for Content Fragment Delivery](/help/assets/content-fragments/graphql-api-content-fragments.md) is to accept remote queries from third party applications or services. These remote queries may require authenticated API access in order to secure headless content delivery.
+A primary use case for The [Adobe Experience Manager (AEM) GraphQL API for Content Fragment Delivery](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) is to accept remote queries from third party applications or services. These remote queries may require authenticated API access in order to secure headless content delivery.
 
 >[!NOTE]
 >
->For testing and development you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) interface.
+>For testing and development you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) interface.
 
 For authentication the third party service needs to authenticate, using the AEM account username and password.
 
