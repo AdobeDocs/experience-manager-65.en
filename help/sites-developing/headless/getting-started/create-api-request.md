@@ -28,7 +28,7 @@ Information architects will need to design queries for their channel endpoints i
    * The left panel allows you to build your query.
    * The right panel displays the results.
    * The query editor features code completion and hotkeys to easily execute the query.
-   ![GraphiQL editor](../assets/graphiql.png)
+   ![GraphiQL editor](assets/graphiql.png)
 
 1. Assuming that the model we created was called `person` with fields `firstName`, `lastName`, and `position`, we can build a simple query to retrieve the content of our Content Fragment.
 
@@ -48,17 +48,17 @@ Information architects will need to design queries for their channel endpoints i
 
 1. Enter the query into the left panel.
 <!--
-   ![GraphiQL query](../assets/graphiql-query.png)
+   ![GraphiQL query](assets/graphiql-query.png)
 -->
 
 1. Click the **Execute Query** (right arrow) icon or use the `Ctrl-Enter` hotkey and the results are displayed as JSON in the right panel.
-   ![GraphiQL results](../assets/graphiql-results.png)
+   ![GraphiQL results](assets/graphiql-results.png)
 
 1. Click:
    * **Docs** at the top-right of the page to show in-context documentation to help you build your queries which adapts to your own models.
    * **History** in the top toolbar to show previous queries.
    * **Save As** and **Save** to save your queries, after which you can list and retrieve them from the **Persisted Queries** panel and **Publish**.
-   ![GraphiQL documentation](../assets/graphiql-documentation.png)
+   ![GraphiQL documentation](assets/graphiql-documentation.png)
 
 GraphQL enables structured queries that can target not only specific data sets or individual data objects, but also can deliver specific elements of the objects, nested results, offers support for query variables, and much more.
 
