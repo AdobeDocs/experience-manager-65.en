@@ -266,6 +266,8 @@ By default AEM will invalidate cache based on a Time To Live (TTL) definition. T
 |CDN |`stale-while-revalidate` |`surrogate-control : stale-while-revalidate `|`surrogateControlStaleWhileRevalidate` |
 |CDN |`stale-if-error` |`surrogate-control : stale-if-error` |`surrogateControlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### Author instances {#author-instances}
 
 For author instances the default values are:
