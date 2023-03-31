@@ -74,8 +74,7 @@ topic-tags: deploying
     * [Install and configure FFmpeg](/help/communities/ffmpeg.md)
     * [Install the JDBC driver for MySQL](#jdbc-driver-for-mysql)
     * [Install AEM Communities SCORM-Engine](#scorm-package)
-    * [Install and configure MySQL for enablement](/help/communities/mysql.md)
-
+    
 ## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA includes Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
@@ -92,9 +91,8 @@ As on AEM 6.4 and beyond, AEM Communities features and hotfixes are part of AEM 
 
 ### JDBC driver for MySQL {#jdbc-driver-for-mysql}
 
-Two Communities features use a MySQL database:
+One Communities feature use a MySQL database:
 
-* For [enablement](/help/communities/enablement.md): recording SCORM activities and learners
 * For [DSRP](/help/communities/dsrp.md): storing user generated content (UGC)
 
 The MySQL connector must be obtained and installed separately.

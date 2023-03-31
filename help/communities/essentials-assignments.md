@@ -41,11 +41,7 @@ The assignments feature is the ability to assign enablement resources and learni
   <tr>
    <td> <strong>css</strong></td>
    <td> /libs/social/enablement/components/hbs/myassigned/clientlibs/myassigned.css</td>
-  </tr>
-  <tr>
-   <td><strong> properties</strong></td>
-   <td>See <a href="/help/communities/assignments.md">Assignments Feature</a></td>
-  </tr>
+  </tr>  
  </tbody>
 </table>
 
@@ -76,10 +72,6 @@ The only possible Combinations of Completion and Success Status are:
 | Complete |Fail |
 
 ## Essentials for Server-Side {#essentials-for-server-side}
-
-### Assignments Function {#assignments-function}
-
-A community site structure that includes the [Assignments function](/help/communities/functions.md#assignments-function), includes a configured ` [assignments](/help/communities/assignments.md)` component.
 
 ### Reference APIs {#reference-apis}
 

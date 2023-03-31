@@ -57,10 +57,6 @@ To create a new community site, select the **Create** icon.
 
 To access an existing community site, for the purpose of authoring, modifying, publishing, exporting, or adding a nested group, select the site's folder icon.
 
-For example, the following image shows the main Communities Sites console displaying the folders for two community sites : [enable](/help/communities/getting-started-enablement.md) and [engage](/help/communities/getting-started.md):
-
-![site-console](assets/site-console.png)
-
 ## Site Creation {#site-creation}
 
 The site creation console provides a step-by-step approach to assemble features of the site based on a selected [community site template](/help/communities/sites.md) and settings.
@@ -159,7 +155,6 @@ The Settings panel contains several sub-panels presenting features to configure 
 * [MODERATION](#moderation)
 * [ANALYTICS](#analytics)
 * [TRANSLATION](#translation)
-* [ENABLEMENT](#enablement)
 
 >[!NOTE]
 >
@@ -225,7 +220,7 @@ The Settings panel contains several sub-panels presenting features to configure 
 
 The tags which may be applied to community content are controlled by selecting Tag Namespaces previously defined through the [Tagging Console](/help/sites-administering/tags.md#tagging-console).
 
-In addition, selecting tag namespaces for the community site limits the selection presented when defining catalogs and resources. See [Tagging Enablement Resources](/help/communities/tag-resources.md) for important information.
+In addition, selecting tag namespaces for the community site limits the selection presented when defining catalogs and resources.
 
 * text search box : Start typing to identify tags allowed to be used on the site.
 
@@ -344,21 +339,6 @@ The global setting for moderating user generated content (UGC) is controlled by 
   * `Always show contributions in the original language` (default)
   * `Always show contributions in user preferred language`
   * `Show contributions in user preferred language for only logged-in users`
-
-#### ENABLEMENT {#enablement}
-
-![site-enablement](assets/site-enablement.png)
-
-The `ENABLEMENT`settings are applicable when the chosen community site template includes the [assignments function](/help/communities/functions.md#assignments-function), which is available when the enablement features are licensed and [configured](/help/communities/enablement.md). The reference site template that includes the assignments function is `Reference Structured Learning Site Template.`
-
-* **Enablement Managers**
-  (Required) Only members of the `Community Enablementmanagers` group are available to be selected to manage this enablement community. Enablement managers are responsible for assigning members to resources. See also [Managing Users and User Groups](/help/communities/users.md).
-
-* **Marketing Cloud Org Id**
-  
-  (optional) The ID for a [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) license.
-
-* Select **Next**.
 
 ### Step 4 : Create Communities Site {#step-create-communities-site}
 

@@ -90,14 +90,6 @@ When added to a template, the following dialog opens:
   
   If selected, the Activities pages include a tab which filters activities based on those the current member is following. Default is selected.
 
-### Assignments Function {#assignments-function}
-
-The assignments function is the basic feature which defines a [community site for enablement](/help/communities/overview.md#enablement-community). It allows for the assignment of enablement resources to community members. See also [Assignments Essentials](/help/communities/essentials-assignments.md) for developers.
-
-This function is available as a feature of the [enablement add-on](/help/communities/enablement.md). The enablement add-on requires additional licensing for use in a production environment.
-
-When added to a template, the only configuration is for the [Title and URL Settings](#title-and-url-settings).
-
 ### Blog Function {#blog-function}
 
 The blog function is a page with a [Blog component](/help/communities/blog-feature.md) configured for tagging, file uploads, following, members to self-edit, voting, and moderation. See also [Blog Essentials](/help/communities/blog-developer-basics.md) for developers.
@@ -153,25 +145,6 @@ When added to a template, the following dialog opens:
 * **Allow Featured Content**
   
   If selected, its content is identified as [featured content](/help/communities/featured.md). Default is selected.
-
-### Catalog Function {#catalog-function}
-
-The catalog function provides the ability for [enablement community](/help/communities/overview.md#enablement-community) members to browse enablement resources which are not assigned to them. See [Tagging Enablement Resources](/help/communities/tag-resources.md) and [Catalog Essentials](/help/communities/catalog-developer-essentials.md) for developers.
-
-All enablement resources and learning paths for the community site shows in all catalogs if their property, ` [Show in Catalog](/help/communities/resources.md)`, is set to true. To explicitly include resources and learning paths, it is necessary to apply a [pre-filter](/help/communities/catalog-developer-essentials.md#pre-filters) to the catalog.
-
-When added to a template, the configuration allows specifying tag namespace(s) used to configure the tag filter presented to site visitors:
-
-![Catalog function](assets/catalog-function.png)
-
-* [Title and URL Settings](#title-and-url-settings)
-
-* **Select All Namespaces**
-  
-  The selected tag namespaces define which tags are selectable by visitors for filtering the list of enablement resources listed in the catalog.
-  If selected, all tag namespaces allowed for the community site are available.
-  If deselected, it is possible to select one or more namespaces allowed for the community site.
-  Default is selected.
 
 ### Featured Content Function {#featured-content-function}
 

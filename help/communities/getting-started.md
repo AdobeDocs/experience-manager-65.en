@@ -18,8 +18,6 @@ AEM Communities allows companies to create dedicated branded community experienc
 
 Following is a tutorial on quickly setting up an [engagement community](/help/communities/overview.md#engagement-community) for demonstration or development purposes.
 
-For a tutorial on quickly setting up an [enablement community](/help/communities/overview.md#enablement-community), visit [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md).
-
 * [Initial Setup](/help/communities/setup.md)
 
 * [Author a New Community Site](/help/communities/create-site.md)
