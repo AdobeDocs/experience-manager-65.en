@@ -68,11 +68,7 @@ topic-tags: deploying
             * UGC is only visible on AEM instance or cluster in which it was entered.
 
         * Default is JSRP
-
-  For the **[enablement feature](/help/communities/overview.md#enablement-community)**
-
-    * [Install and configure FFmpeg](/help/communities/ffmpeg.md)
-    * [Install the JDBC driver for MySQL](#jdbc-driver-for-mysql)    
+     
     
 ## Latest Releases {#latest-releases}
 

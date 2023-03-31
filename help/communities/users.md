@@ -190,7 +190,7 @@ There are four separate consoles available only in the author environment:
 
 As stated in the [Author Group Roles](#author-group-roles) chart, members of the Community Administrators group are able to create community sites, manage sites, manage members (they can ban members from the community), and moderate content.
 
-Follow the same steps as creating and assigning a user to the role of [enablement manager](#communitysiteenablementmanagerrole), but add c `ommunity-administrators` group under the user's Groups tab.
+Follow the same steps as creating and assigning a user to the role of enablement manager, but add c `ommunity-administrators` group under the user's Groups tab.
 
 ### LDAP Integration {#ldap-integration}
 

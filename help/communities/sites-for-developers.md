@@ -87,7 +87,6 @@ As of AEM Communities 6.3 Service Pack 1, Delete Site icon appears on hovering o
 
 * [UGC](#user-generated-content)
 * [User groups](#community-user-groups)
-* [Assets](#enablement-assets)
 * [Database records](#database-records)
 
 ### Community Unique Site ID {#community-unique-site-id}
@@ -128,7 +127,3 @@ On all author and publish instances, from the [security console](../../help/site
 * Followed by [unique site id](#community-unique-site-id)
 
 For example, `community-engage-x0e11-members`.
-
-### Database Records {#database-records}
-
-There is no tool for selectively deleting database entries for one specific enablement community site.
