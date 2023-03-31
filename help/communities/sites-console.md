@@ -172,12 +172,6 @@ The Settings panel contains several sub-panels presenting features to configure 
 
 ![createsitesettings](assets/createsitesettings.png)
 
->[!NOTE]
->
->It is recommended that [enablement community sites](/help/communities/overview.md#enablement-community) be private (contact your account representative for more information).
->
->A community site is private when anonymous site visitors are denied access, may not self-register, and may not use social login.
-
 * **Allow User Registration**
   
   If checked, site visitors may become community members by self-registration.
@@ -460,12 +454,6 @@ The SETTINGS panel allows access to most of the settings under the sub-panels of
 ### Modify Thumbnail {#modify-thumbnail}
 
 The THUMBNAIL panel allows for an image to be uploaded to represent the site in the Communities Sites console.
-
-### Modify Enablement {#modify-enablement}
-
-The ENABLEMENT panel allows access to the settings provided during community site creation.
-
-See the [ENABLEMENT](#enablement) description.
 
 ## Publishing the Site {#publishing-the-site}
 

@@ -124,28 +124,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 ![connector-bundle](assets/connector-bundle.png)
 
-### SCORM Package {#scorm-package}
 
-Shareable Content Object Reference Model (SCORM) is a collection of standards and specifications for e-learning. SCORM also defines how content may be packaged into a transferable ZIP file.
-
-The AEM Communities SCORM engine is required for the [enablement](/help/communities/overview.md#enablement-community) feature. Scorm packages supported on AEM 6.5 Communities:
-
-* [cq-social-scorm-package, version 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) which includes the [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
-
-**To install a SCORM package**
-
-1. Install the [cq-social-scorm-package, version 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)  from the Package Share.
-1. Download `/libs/social/config/scorm/database_scormengine_data.sql` from cq instance and execute it in mysql server to create an upgraded scormEngineDB schema.
-1. Add `/content/communities/scorm/RecordResults` in Excluded Paths property in CSRF filter from `https://<hostname>:<port>/system/console/configMgr` on publishers.
-
-
-#### SCORM Logging {#scorm-logging}
-
-As installed, all enablement activity is verbosely logged to the system console.
-
-If desired, the log level can be set to WARN for the `RusticiSoftware.*` package.
-
-For working with logs, see [Working with Audit Records and Log Files](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ### AEM Advanced MLS {#aem-advanced-mls}
 

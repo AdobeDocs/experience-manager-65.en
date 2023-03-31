@@ -16,10 +16,6 @@ exl-id: d6243dff-a067-455c-a326-5f451f225efd
 
 Adobe Experience Manager (AEM) Communities provides the ability to quickly create an on-premise community site that has improved performance, improved site management, and encourages the conversion of site visitors to valuable community members.
 
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
-
 ## Communities Features {#communities-features}
 
 AEM Communities enables the development of a relationship with site visitors, which:
@@ -34,7 +30,6 @@ AEM Communities enables the development of a relationship with site visitors, wh
 * **File sharing**,
 * **Notifications** and **activity streams**,
 * Allows **tagging** (@mention) other registered members in User Generated Content, to elicit their attention.
-* Supports **keyboard navigation** on enablement components (for example Catalog and Course Playing, Assignments, File Library) .
 
 Communities features can be demonstrated using the [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) available publicly on GitHub.com or with the new We.Retail reference implementation.
 
