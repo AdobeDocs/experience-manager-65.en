@@ -128,8 +128,7 @@ role: User
 + Authoring {#authoring}
   + [Communities Components](author-communities.md)
   + [Communities Components Basics](basics.md)
-  + [Activity Streams Feature](activities.md)
-  + [Assignments Feature](assignments.md)
+  + [Activity Streams Feature](activities.md)  
   + [Blog Feature](blog-feature.md)
   + [Calendar Feature](calendar.md)  
   + [Using Comments](comments.md)
