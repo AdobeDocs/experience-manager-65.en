@@ -132,5 +132,3 @@ For example, `community-engage-x0e11-members`.
 ### Database Records {#database-records}
 
 There is no tool for selectively deleting database entries for one specific enablement community site.
-
-When all community sites are being deleted, then drop the enablementdb and scormenginedb using MySQL Workbench.

@@ -30,8 +30,6 @@ In general, the various reports are:
 
   Provides a chart of various types of posts by community members to any community site.
 
-When [Adobe Analytics is enabled](/help/communities/sites-console.md#analytics), reports will include the number of views, plays, comments and ratings for each enablement resource over time.
-
 Tabular reports can be exported in .csv format for subsequent processing.
 
 ## Reporting Consoles {#reporting-consoles}
@@ -55,57 +53,6 @@ Tabular reports can be exported in .csv format for subsequent processing.
     * generate a report for selected Community Site, Content Type, and Time Period.
 
 ![reports](assets/reports1.png)
-
-### Reports for Enablement Resources and Learning Paths {#reports-for-enablement-resources-and-learning-paths}
-
-* From global navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Resources]**
-
-* Select an existing enablement community site:
-
-  * Select **Report** icon to generate reports which cover all enablement resources.
-  * Select an enablement learning path.
-  * Select **Report** icon to generate reports for:
-
-    * The included enablement resources.
-    * The learners assigned to the learning path.
-
-* These reports provide:
-
-  * Table data, downloadable as CSV:
-
-    * Identifying learner
-    * Their status
-    * Whether assigned or accessed through catalog
-    * Number of comments made
-    * Star rating given
-
-## Assignments Report {#assignments-report}
-
-The Assignments console allows reports to be filtered by enablement community site, users or groups, and assignment.
-
-The report provides information on their progress as well as any comments or ratings provided.
-
-![assignment-report](assets/assignment-report.png)
-
-Select the criteria for the report :
-
-* **Site**
-
-  Select an enablement community site.
-
-* **User or Group**
-  * Select User to generate a report for one learner.
-  * Select Group to generate a report for a group of learners.
-
-  The tunnel service will access members and member groups from the publish environment.
-
-* **Assignment**
-
-  Choose from among the enablement resources assigned to the selected learner(s).
-
-Select **Generate** to create the report:
-
-![generate-report](assets/generate-assignment-report.png)
 
 ## Views Report {#views-report}
 

@@ -33,7 +33,6 @@ Following are links to essential information for Communities components, functio
 ## Components with Functions {#components-with-functions}
 
 * [Activity Streams](essentials-activities.md)
-* [Assignments](essentials-assignments.md)
 * [Blog](blog-developer-basics.md) ( `Journal`)
 
 * [Calendar](calendar-basics-for-developers.md)

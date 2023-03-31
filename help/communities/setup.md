@@ -122,7 +122,7 @@ See [Social Login with Facebook and Twitter](social-login.md).
 
 ## Create Tutorial Tags {#create-tutorial-tags}
 
-Create tags to use for the engage and enablement tutorials, using the tag namespace of `Tutorial`.
+Create tags to use for the engage tutorials, using the tag namespace of `Tutorial`.
 
 Use the [Tagging console](../../help/sites-administering/tags.md#tagging-console) to create the following tags:
 
