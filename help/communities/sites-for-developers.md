@@ -129,15 +129,6 @@ On all author and publish instances, from the [security console](../../help/site
 
 For example, `community-engage-x0e11-members`.
 
-### Enablement Assets {#enablement-assets}
-
-From the main console:
-
-* Select **[!UICONTROL Assets]**.
-* Enter **[!UICONTROL Select]** mode.
-* Select folder named with the [unique site Id](#community-unique-site-id).
-* Select **[!UICONTROL Delete]** (may need to select from **[!UICONTROL More...]**).
-
 ### Database Records {#database-records}
 
 There is no tool for selectively deleting database entries for one specific enablement community site.

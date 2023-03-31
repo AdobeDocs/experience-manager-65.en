@@ -22,10 +22,6 @@ For AEM Communities, there are various reports that may be accessed in several w
 
 In general, the various reports are:
 
-* [Assignments Report](#assignments-report) 
-
-  For an [enablement community](/help/communities/overview.md#enablement-community), provides an overview of learners' progress on their assignments, including an associated score if implementing the SCORM standard.
-
 * [Views Report](#views-report) 
 
   Provides a chart of views of content by community members and site visitors for any community site.
