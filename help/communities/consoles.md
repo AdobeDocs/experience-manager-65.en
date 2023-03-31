@@ -61,10 +61,6 @@ To access the various Communities consoles, from global navigation select **navi
 
   The Reports console is where reports on assignments, page views, and posted content (UGC) may be generated when a community site has [enabled Adobe Analytics](sites-console.md#analytics). The console is only available in the author environment.
 
-* [Resources](resources.md)
-
-  The Resources console is where [enablement managers](enablement.md#communitymanagers) create, manage and assign resources to members of an [enablement community site](overview.md#enablement-community). The console is only available in the author environment.
-
 ## Tools Console {#tools-console}
 
 To access [Communities Tools](tools.md) (formerly the administration console), from global navigation: **[!UICONTROL Tools]** > **[!UICONTROL Communities]**

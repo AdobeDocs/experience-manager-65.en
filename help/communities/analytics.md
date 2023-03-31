@@ -39,7 +39,6 @@ Further, analytics is necessary for:
 
 Supported Communities features include:
 
-* [Enablement resources](/help/communities/resources.md)
 * [Forum](/help/communities/forum.md)
 * [QnA](/help/communities/working-with-qna.md)
 * [Blog](/help/communities/blog-feature.md)
@@ -386,7 +385,7 @@ Once the community site is saved with Analytics enabled and the cloud config fra
 
 If using an existing report suite that mapped any of the variables within evar1 through evar11 and event1 through event7, it will be necessary to [remap the AEM variables](#modifying-analytics-variable-mapping) and restore the original mapping.
 
-Following is an example of default mappings after following the [getting started tutorial](/help/communities/getting-started-enablement.md):
+Following is an example of default mappings:
 
 ![map-analytics](assets/map-analytics1.png)
 

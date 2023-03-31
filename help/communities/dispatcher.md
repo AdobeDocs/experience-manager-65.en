@@ -62,10 +62,6 @@ The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max
 * **Cache-Control Max Age**
   *(required)* The max age (in seconds) to add to the Cache Controll header. The value must be greater than zero (0).
 
-## Dispatcher Client Headers {#dispatcher-client-headers}
-
-In the /clientheaders section of `dispatcher.any`, if listing a specific set of headers, it is necessary to include `"CSRF-Token"` in order for the [Enablement feature](enablement.md) to work properly.
-
 ## Dispatcher Filters {#dispatcher-filters}
 
 The /filter section of the `dispatcher.any` file is documented in [Configuring Access to Content - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).

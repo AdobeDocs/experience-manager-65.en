@@ -72,9 +72,7 @@ Select **Next**.
 
 ### Step 3: Settings {#step-settings}
 
-On the Settings step, before selecting `Next`, note that there are seven sections providing access to configurations involving user management, tagging, moderation, group management, analytics, translation and enablement.
-
-Visit the [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md) tutorial to experience working with the enablement features.
+On the Settings step, before selecting `Next`, note that there are seven sections providing access to configurations involving user management, tagging, moderation, group management, analytics, and translation.
 
 #### User Management {#user-management}
 
@@ -112,7 +110,7 @@ To let a community member (or group of members) experience the site as the commu
 For example,
 
 * Type `q`
-* Select [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Select Quinn Harper
 
 >[!NOTE]
 >
@@ -146,16 +144,6 @@ The [Translation settings](/help/communities/sites-console.md#translation) speci
 * Leave default persistence option
 
 ![translation-settings](assets/translation-settings.png)
-
-#### ENABLEMENT {#enablement}
-
-Leave empty when creating an engagement community.
-
-For a similar tutorial to quickly create an [enablement community](/help/communities/overview.md#enablement-community), see [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md).
-
-Select **Next**.
-
-![enablement](assets/enablement.png)
 
 ### Step 4: Create Communities Site {#step-create-communities-site}
 

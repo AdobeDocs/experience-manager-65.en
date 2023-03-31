@@ -83,8 +83,6 @@ Tabular reports can be exported in .csv format for subsequent processing.
     * Number of comments made
     * Star rating given
 
-For more details, see [Reports section](/help/communities/resources.md#report) of the Resources console.
-
 ## Assignments Report {#assignments-report}
 
 The Assignments console allows reports to be filtered by enablement community site, users or groups, and assignment.

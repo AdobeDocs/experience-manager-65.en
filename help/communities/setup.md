@@ -46,8 +46,6 @@ To ensure the latest feature pack is installed, visit:
 
 * [Latest Releases](deploy-communities.md#latest-releases)
 
-For a tutorial that creates an [enablement community site](overview.md#enablement-community), visit [Getting Started with AEM Communities for Enablement](getting-started-enablement.md).
-
 ## Configure Analytics {#configure-analytics}
 
 When [Adobe Analytics is configured for the community site](analytics.md), information on community activity is available that enhances the community member's experience as well as provides feedback to administrators of the site.

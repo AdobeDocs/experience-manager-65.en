@@ -159,9 +159,7 @@ See also [Scoring and Badges](implementing-scoring.md).
 
 ## Groups Console {#groups-console}
 
-The Groups console, available from the author environment, allows for the creation and management of member groups registered in the publish environment. It is particularly useful for:
-* [Privileged member groups](users.md#privilegedmembersgroups)
-* Group-based assignment of [enablement resources](resources.md)
+The Groups console, available from the author environment, allows for the creation and management of member groups registered in the publish environment. It is particularly useful for [Privileged member groups](users.md#privilegedmembersgroups).
 
 To access the Groups console:
 * From global navigation, select **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** > **[!UICONTROL Groups]**.
