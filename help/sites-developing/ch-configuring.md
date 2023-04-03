@@ -23,7 +23,7 @@ By default, ContextHub is enabled in an AEM installation. ContextHub can be disa
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
     1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the default **Configuration Container**
+    1. Click or tap the appropriate **Configuration Container**
     1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
     1. Click or tap **Disable ContextHub** and click or tap **Save**
 
