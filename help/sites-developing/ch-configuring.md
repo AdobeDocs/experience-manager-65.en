@@ -18,7 +18,10 @@ Configure the [ContextHub](/help/sites-developing/contexthub.md) toolbar to cont
 
 ## Disabling ContextHub {#disabling-contexthub}
 
-By default, ContextHub is enabled in an AEM installation. ContextHub can be disabled to prevent it from loading js/css and initializing. There are two options to disable ContextHub:
+By default, ContextHub is enabled in an AEM installation. ContextHub can be disabled to prevent it from loading js/css and initializing. 
+
+<!--
+There are two options to disable ContextHub:
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
@@ -28,8 +31,9 @@ By default, ContextHub is enabled in an AEM installation. ContextHub can be disa
     1. Click or tap **Disable ContextHub** and click or tap **Save**
 
 or
+-->
 
-* Use CRXDE Lite to set the property `disabled` to **true** under `/libs/settings/cloudsettings`
+* Use CRXDE Lite to set the property `disabled` to **true** under `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
