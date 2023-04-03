@@ -68,14 +68,8 @@ topic-tags: deploying
             * UGC is only visible on AEM instance or cluster in which it was entered.
 
         * Default is JSRP
-
-  For the **[enablement feature](/help/communities/overview.md#enablement-community)**
-
-    * [Install and configure FFmpeg](/help/communities/ffmpeg.md)
-    * [Install the JDBC driver for MySQL](#jdbc-driver-for-mysql)
-    * [Install AEM Communities SCORM-Engine](#scorm-package)
-    * [Install and configure MySQL for enablement](/help/communities/mysql.md)
-
+     
+    
 ## Latest Releases {#latest-releases}
 
 AEM 6.5 Communities GA includes Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
@@ -92,9 +86,8 @@ As on AEM 6.4 and beyond, AEM Communities features and hotfixes are part of AEM 
 
 ### JDBC driver for MySQL {#jdbc-driver-for-mysql}
 
-Two Communities features use a MySQL database:
+One Communities feature use a MySQL database:
 
-* For [enablement](/help/communities/enablement.md): recording SCORM activities and learners
 * For [DSRP](/help/communities/dsrp.md): storing user generated content (UGC)
 
 The MySQL connector must be obtained and installed separately.
@@ -126,28 +119,6 @@ Further information on installing bundles is found on the [Web Console](/help/si
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
 ![](../assets/mysql-connector.png)
-
-### SCORM Package {#scorm-package}
-
-Shareable Content Object Reference Model (SCORM) is a collection of standards and specifications for e-learning. SCORM also defines how content may be packaged into a transferable ZIP file.
-
-The AEM Communities SCORM engine is required for the [enablement](/help/communities/overview.md#enablement-community) feature. Scorm packages supported on AEM 6.5 Communities:
-
-* [cq-social-scorm-package, version 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) which includes the [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) engine.
-
-**To install a SCORM package**
-
-1. Install the [cq-social-scorm-package, version 2.3.7](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/social/scorm/cq-social-scorm-pkg) from the Package Share
-1. Download `/libs/social/config/scorm/database_scormengine_data.sql` from cq instance and execute it in mysql server to create an upgraded scormEngineDB schema.
-1. Add `/content/communities/scorm/RecordResults` in Excluded Paths property in CSRF filter from `https://<hostname>:<port>/system/console/configMgr` on publishers.
-
-#### SCORM Logging {#scorm-logging}
-
-As installed, all enablement activity is verbosely logged to the system console.
-
-If desired, the log level can be set to WARN for the `RusticiSoftware.*` package.
-
-For working with logs, see [Working with Audit Records and Log Files](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ### AEM Advanced MLS {#aem-advanced-mls}
 

@@ -13,6 +13,8 @@ exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 ---
 # Create and manage A/B test for adaptive forms{#create-and-manage-a-b-test-for-adaptive-forms}
 
+[!BADGE Discontinued]{type=negative tooltip="This feature is now end of life"}
+
 <div class="preview"> The A/B testing for adaptive forms feature has reached end-of-life and is no longer supported. </div>
 
 ## Overview {#overview-br}

@@ -134,9 +134,9 @@ Creating an individual Health Check involves two steps: implementing a Sling Hea
 
 ### Creating a Composite Health Check {#creating-a-composite-health-check}
 
-A Composite Health Check's role is to aggregate several individual Health Checks sharing a set of common features. For example, the Security Composite Health Check groups all the individual health checks performing security-related verifications. The first step to create a composite check is to add an OSGI configuration. For it to be displayed in the Operations Dashboard, a new configuration node must be added, the same way we did for a simple check.
+A Composite Health Check's role is to aggregate several individual Health Checks sharing a set of common features. For example, the Security Composite Health Check groups all the individual health checks performing security-related verifications. The first step to create a composite check is to add an OSGI configuration. For it to be displayed in the Operations Dashboard, a new configuration node must be added in the same way as a simple check.
 
-1. Go to the Web Configuration Manager in the OSGI Console. You can do this by accessing `https://serveraddress:port/system/console/configMgr`
+1. Go to the Web Configuration Manager in the OSGI Console. Access `https://serveraddress:port/system/console/configMgr`
 1. Search for the entry called **Apache Sling Composite Health Check**. After you find it, notice that there are two configurations already available: one for the System Checks and another one for the Security Checks.
 1. Create a configuration by pressing the "+" button on the right-hand side of the configuration. A new window appears, as shown below:
 
@@ -149,7 +149,7 @@ A Composite Health Check's role is to aggregate several individual Health Checks
     * **Name (hc.name):** The name of the Composite Health Check. A meaningful name is recommended.
     * **Tags (hc.tags):** The tags for this Health Check. If this composite health check is intended to be a part of another composite health check (such as in a hierarchy of health checks), add the tags this composite is related to.
     * **MBean Name (hc.mbean.name):** The name of the Mbean that is given to the JMX MBean of this composite health check.
-    * **Filter Tags (filter.tags):** The property that is specific to composite health checks. These are the tags which the composite should aggregate. The composite health check aggregates under its group all the health checks that have any tag matching any of the filter tags of this composite. For example, a composite health check having the filter tags **test** and **check**, aggregates all the individual and composite health checks that have any of the **test** and **check** tags in their tags property ( `hc.tags`).
+    * **Filter Tags (filter.tags):** The property that is specific to composite health checks. These tags are aggregated by the composite. The composite health check aggregates under its group all the health checks that have any tag matching any of the filter tags of this composite. For example, a composite health check having the filter tags **test** and **check**, aggregates all the individual and composite health checks that have any of the **test** and **check** tags in their tags property ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -177,7 +177,7 @@ A Composite Health Check's role is to aggregate several individual Health Checks
 
    >[!NOTE]
    >
-   >If you create individual health checks that logically belong under a composite check that is already present in the Dashboard by default, they are automatically captured and grouped under the respective composite check. Because of this, there is no need to create a configuration node for these checks.
+   >If you create individual health checks that logically belong under a composite check that is already present in the Dashboard by default, they are automatically captured and grouped under the respective composite check. As such, there is no need to create a configuration node for these checks.
    >
    >For example, if you create an individual security health check, assign it the "**security**" tag, and it is installed. It automatically appears under the Security Checks composite check in the Operations Dashboard.
 
@@ -306,11 +306,11 @@ A Composite Health Check's role is to aggregate several individual Health Checks
   </tr>
   <tr>
    <td>Code Cache Check</td>
-   <td><p>This is a Health Check that verifies several JVM conditions that can trigger a CodeCache bug present in Java 7:</p>
+   <td><p>A Health Check that verifies several JVM conditions that can trigger a CodeCache bug present in Java&trade; 7:</p>
     <ul>
-     <li>returns Warn if the instance is running on Java 7, with Code Cache flushing enabled</li>
-     <li>returns Warn if the instance is running on Java 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90 MB)</li>
-    </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check this page</a>.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>returns Warn if the instance is running on Java&trade; 7, with Code Cache flushing enabled</li>
+     <li>returns Warn if the instance is running on Java&trade; 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90 MB)</li>
+    </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, see <a href="https://bugs.java.com/bugdatabase/"> and then search on Bug ID 8012547</a>.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Resource Search Path Errors</td>
@@ -628,7 +628,7 @@ You can schedule the Version Purge maintenance task to delete old versions autom
 
 ## Custom Maintenance Tasks {#custom-maintenance-tasks}
 
-Custom maintenance tasks can be implemented as OSGi services. As the maintenance task infrastructure is based on Apache Sling's job handling, a maintenance task must implement the java interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. In addition, it must declare several service registration properties to be detected as a maintenance task, as listed below:
+Custom maintenance tasks can be implemented as OSGi services. As the maintenance task infrastructure is based on Apache Sling's job handling, a maintenance task must implement the Java&trade; interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. In addition, it must declare several service registration properties to be detected as a maintenance task, as listed below:
 
 <table>
  <tbody>
@@ -765,7 +765,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
    <td>System</td>
    <td>
     <ul>
-     <li>operating system and OS version (for example, Mac OS X)</li>
+     <li>operating system and OS version (for example, macOS X)</li>
      <li>system load average, as retrieved from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
      <li>disk space (on the partition where the home directory is located)</li>
      <li>maximum heap, as returned by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>

@@ -23,7 +23,6 @@ For an overview and getting started tutorials, visit:
 
 * [AEM Communities Overview](overview.md)
 * [Getting Started with AEM Communities](getting-started.md)
-* [Getting Started with AEM Communities for Enablement](getting-started-enablement.md)
 
 >[!NOTE]
 > 
