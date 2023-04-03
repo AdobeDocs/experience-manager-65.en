@@ -242,10 +242,6 @@ You can also update the metadata properties for an asset on remote DAM and the c
 
 [!DNL Experience Manager] displays an expired status visual indicator on assets in `Remote Assets Content Finder` to stop site authors from using the asset on a [!DNL Sites] page. If you use an asset with an expired status on a [!DNL Sites] page, the asset fails to display on the [!DNL Experience Manager] publish instance.
 
->[!NOTE]
->
->The updates to assets in remote DAM are made available to the [!DNL Sites] deployment only if remote DAM and [!DNL Sites] deployments are on [!DNL Experience Manager].
-
 ## Frequently Asked Questions {#frequently-asked-questions}
 
 +++**Should  you configure Connected Assets if you need to use assets available on your [!DNL Sites] deployment?**
