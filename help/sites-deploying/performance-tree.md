@@ -56,7 +56,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Step 0</strong></td>
    <td>Analyze Request Flow</td>
-   <td><p>You can use standard HTTP request analysis in the browser to analyze the request flow. For more info on how to do this analysis on Chrome, see:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>You can use standard HTTP request analysis in the browser to analyze the request flow. For more info on how to do this analysis on Chrome, see:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 2</strong></td>
@@ -91,7 +91,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Step 8</strong></td>
    <td>Is the slowness reproducible with a local instance?</td>
-   <td><br /> <p>Use <a href="/help/sites-developing/tough-day.md">Tough Day</a> to replicate "real world" conditions from the production instances. If this scenario is not realistic for the space of your development, make sure to test the production instance (or an identical staging one) in a different network context.<br /> </p> </td>
+   <td><br /> <p>Use <a href="/help/sites-developing/tough-day.md">Tough Day</a> to replicate "real-world" conditions from the production instances. If this scenario is not realistic for the space of your development, make sure to test the production instance (or an identical staging one) in a different network context.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 9</strong></td>
@@ -206,7 +206,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Assets Synchronization Service</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Multiple DAM Instances</a></li>
-     <li>Performance tuning tips articles <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a> and <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
+     <li>Performance tuning tips article <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -238,7 +238,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configuring the Dispatcher Cache</a></li>
     </ol> <p>How to improve cache ratio; make requests cache-able (Dispatcher best practices)</p> <p>Also, consider the below settings to optimize your caching configurations<br /> </p>
     <ol>
-     <li>Set a no-cache rule for HTTP request that are not GET</li>
+     <li>Set a no-cache rule for HTTP request that is not GET</li>
      <li>Configure query strings to not be cacheable</li>
      <li>Do not cache URLs with missing extensions</li>
      <li>Cache authentication headers (possible since Dispatcher version 4.1.10)</li>
@@ -271,7 +271,7 @@ The analysis starts at step 0. The goal is to determine which entity (Dispatcher
   <tr>
    <td><strong>Step 39</strong></td>
    <td>Use pre-connect to reduce connection overhead</td>
-   <td>See the Gem Session above. Also, additional documentation preconnect on W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>See the Gem Session above. Also, additional pre-connect documentation on W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Steps 40 and 41</strong><br /> </td>
