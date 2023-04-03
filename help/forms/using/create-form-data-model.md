@@ -51,7 +51,7 @@ Do the following to configure your [!DNL MySQL] database:
 
 1. Install JDBC driver for [!DNL MySQL] database as an OSGi bundle:
 
-    1. Download [[!DNL MySQL] JDBC Driver OSGi Bundle](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
+    1. Download [!DNL MySQL] JDBC Driver OSGi Bundle from `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
     1. Log in to AEM [!DNL Forms] Author Instance as an administrator and go to AEM web console bundles. The default URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
     1. Tap **[!UICONTROL Install/Update]**. An [!UICONTROL Upload / Install Bundles] dialog appears.

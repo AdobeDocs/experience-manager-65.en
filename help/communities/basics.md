@@ -67,7 +67,7 @@ If tagging is allowed, the community site's configuration may be set to limit th
 
 Features which allow tagging: [blog](blog-feature.md), [calendar](calendar.md), [file library](file-library.md), [forum](forum.md)
 
-Features which use tags: [catalog](catalog.md), [search](search.md), [social tag cloud](tagcloud.md)
+Features which use tags: [search](search.md), [social tag cloud](tagcloud.md)
 
 For authoring information:
 
@@ -78,7 +78,6 @@ For administrative information:
 * Creating tag namespaces (taxonomy): [Administering Tags](../../help/sites-administering/tags.md)
 * Community Site configuration: see [TAGGING](sites-console.md#tagging)
 * [Tagging User Generated Content](../../help/sites-authoring/tags.md)
-* [Tagging Enablement Resources](tag-resources.md)
 
 For developer information:
 

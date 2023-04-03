@@ -23,8 +23,6 @@ The underlying infrastructure for tags applied in the publish environment is the
 
 * See [Using Social Tag Cloud](tagcloud.md) for information for authors on how to add a `social tag cloud` component to a page to highlight the tags applied to UGC in the publish environment.
 
-* See [Tagging Enablement Resources](tag-resources.md) for information on tagging resources for catalogs.
-
 Tagging of UGC may be enabled when configuring a [community site](sites-console.md#tagging) or one of the following features:
 
 * [Blog](blog-feature.md)

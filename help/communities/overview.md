@@ -16,10 +16,6 @@ exl-id: d6243dff-a067-455c-a326-5f451f225efd
 
 Adobe Experience Manager (AEM) Communities provides the ability to quickly create an on-premise community site that has improved performance, improved site management, and encourages the conversion of site visitors to valuable community members.
 
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
-
 ## Communities Features {#communities-features}
 
 AEM Communities enables the development of a relationship with site visitors, which:
@@ -34,7 +30,6 @@ AEM Communities enables the development of a relationship with site visitors, wh
 * **File sharing**,
 * **Notifications** and **activity streams**,
 * Allows **tagging** (@mention) other registered members in User Generated Content, to elicit their attention.
-* Supports **keyboard navigation** on enablement components (for example Catalog and Course Playing, Assignments, File Library) .
 
 Communities features can be demonstrated using the [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) available publicly on GitHub.com or with the new We.Retail reference implementation.
 
@@ -115,11 +110,6 @@ In the author environment, the global navigation console provides access to the 
 
   * Provides the ability to generate reports on assignments, posts and views.
 
-* [Resources](/help/communities/resources.md) console
-
-  * Provides the ability to create enablement resources and learning paths.
-  * Provides access to reports on enablement resources and learning paths.
-
 The global tools console provides access to the following Communities tools:
 
 * [Site Templates](/help/communities/tools.md#sitetemplatesconsole) console
@@ -178,9 +168,7 @@ The [community components](/help/communities/author-communities.md) from which a
 
 The [community components guide](/help/communities/components-guide.md) is available for interactive exploration of the components.
 
-## Types of Communities {#types-of-communities}
-
-### Engagement Community {#engagement-community}
+## Engagement Community {#engagement-community}
 
 An engagement community is a community site focused on engaging customers to inform, solicit feedback, and allow customers to interact as community members.
 
@@ -203,23 +191,6 @@ Features of an engagement community may include:
 * Analytics reporting
 
 To experience the ease of quickly creating a new engagement community, visit [Getting Started with AEM Communities](/help/communities/getting-started.md).
-
-### Enablement Community {#enablement-community}
-
-An enablement community is a community site that includes features for online learning.
-
-Features of an enablement community may include:
-
-* All the features of an [engagement community](#engagement-community).
-* ability to assign content and learning. resources to members and member groups.
-* Supports SCORM content, like quizzes and tests.
-* Tracking of assignments completion.
-* Access to reporting and analytics.
-* The ability to have a conversation about a learning resource through forums, messaging, comments and ratings.
-
-An enablement community may be created when the [Enablement add-on is configured](/help/communities/enablement.md), which requires additional licensing for use in a production environment. An enablement community site will include the [assignments function](#community-functions).
-
-To experience the ease of creating a new enablement community, visit [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md).
 
 ## AEM Demo Machine {#aem-demo-machine}
 
