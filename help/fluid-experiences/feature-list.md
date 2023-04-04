@@ -43,7 +43,7 @@ The following tables define the features of AEM Fluid Experiences and link to th
 |---|
 |[HTTP API](/help/assets/mac-api-assets.md)|
 |[Structured content models](/help/assets/content-fragments/content-fragments.md)|
-|[Content services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)|
+|[Content services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en)|
 |[Experience fragments](/help/sites-authoring/experience-fragments.md)|
 |HTTP API for structured content (read)|
 |HTTP API for structured content (CRUD)|
@@ -76,10 +76,9 @@ The following tables define the features of AEM Fluid Experiences and link to th
 
 ## Learn More {#learn-more}
 
-* [Fluid Experiences for headless use cases](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
-* [AEM Content Service: What, Why, and How?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
-* [Using Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Developing mobile app](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
-* [FAQ for Third Party Access](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
-* [Fluid Experiences Everywhere](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
-* [Using Sling APIs](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
+* [Fluid Experiences for headless use cases](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
+* [AEM Content Service: What, Why, and How?](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
+* [Using Content Services](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
+* [Developing mobile app](https://experienceleague.adobe.com/docs/experience-manager-65/mobile/developing/developing-content-services.html?lang=en)
+* [FAQ for Third-Party Access](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
+* [Using Sling APIs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
