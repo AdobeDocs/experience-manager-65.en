@@ -276,6 +276,17 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
+* A GraphQL query may use the `damAssetLucene` index instead of the `fragments` index. This might result in GraphQL queries that fail, or take a very long time to execute.
+
+  To correct the problem, `damAssetLucene` has to be configured to include the following two properties:
+
+  * `contentFragment`
+  * `model`
+
+  After the index definition is changed, a reindexing is required (`reindex` = `true`).
+
+  After these steps, the GraphQL queries should perform faster.
+
 * As [!DNL Microsoft®&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss®&reg; EAP 7.1], [!DNL Microsoft®&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 

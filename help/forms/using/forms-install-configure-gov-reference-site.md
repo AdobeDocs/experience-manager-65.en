@@ -275,7 +275,7 @@ The steps detailed in this section are included to help you locate the Client Id
 1. To locate the Resource URL/Service Root URL, navigate to the MS Dynamics instance dashboard.
 1. In the top navigation bar, click "Sales" or your own instance type and "Select Settings".
 1. Click on "Customizations" and "Developer Resources" near the bottom right.
-1. There you’ll find the Service Root URL: e.g
+1. There you'll find the Service Root URL: e.g
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -737,7 +737,7 @@ This section contains information on demo features and design decisions that may
 ### Demo considerations {#demo-considerations}
 
 * As per AGRS-159, ensure that the name (first, middle, and last) of the contact used in the Enrollment Adaptive Form is unique.
-* The enrollment adaptive form will send the Adobe Sign email to the email specified in the form’s email field. That email address cannot be the same email address as the email used to configure the Adobe Sign cloud configuration.
+* The enrollment adaptive form will send the Adobe Sign email to the email specified in the form's email field. That email address cannot be the same email address as the email used to configure the Adobe Sign cloud configuration.
 
 ### Known issues {#known-issues}
 
@@ -748,12 +748,12 @@ This section contains information on demo features and design decisions that may
 
 ### Enabling Accessibility Testing Chrome Add On {#enable-chrome-add-on}
 
-In order to perform accessibility testing first you need to install the Chrome plugin, this can be found [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
+To perform accessibility testing, install the Chrome plugin found [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Once it is installed, load the page that you wish to test within the Chrome Browser (Note: Having multiple tabs open may affect your score, it is preferable to only have one tab open). Once the page is loaded
-**right click** on the page and select **Audits** tab . There developers can select the type of audit to be performed by the Accessibility plugin. Once all the desired options have been selected then the user can select the Generate Report button. This will generate a PDF document that shows the overall accessibility rating and what can be used to increase accessibility rating overall.
+After it is installed, load the page that you want to test within the Chrome Browser (Note: Having multiple tabs open may affect your score, it is preferable to only have one tab open). Once the page is loaded
+**right click** on the page and select **Audits** tab . There developers can select the type of audit to be performed by the Accessibility plugin. After all the desired options are selected, the user can click the Generate Report button. This will generate a PDF document that shows the overall accessibility rating and what can be used to increase accessibility rating overall.
 
-Once the report has been executed users can expect to see the following:
+After the report is run, users can expect to see the following:
 
 ![Accessibility report](assets/aftia-accessibility.jpg)
 

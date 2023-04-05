@@ -40,13 +40,13 @@ This topic discusses the following strategies to back up any AEM forms clustered
 
 1. Shut down the entire cluster and related services. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. On any node, back up the database, GDS, and Connectors. (see [Files to back up and recover](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Perform the following steps to back up AEM repository offline:
+1. To back up AEM repository offline, perform the following steps:
 
     1. For each cluster node, back up the file that contains the cluster node id.
     1. Back up all files of any secondary cluster node, including subdirectories.
     1. Back up repository/system id of each cluster node separately.
 
-   For detailed steps, see [Backup and Restore](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   For detailed steps, see [Backup and Restore](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Back up any other data, such as customer fonts.
 1. Start the cluster again.
@@ -55,17 +55,17 @@ This topic discusses the following strategies to back up any AEM forms clustered
 
 1. Enter the rolling backup mode. (see [Entering the backup modes](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
-   Note that we need to leave the rolling backup mode after a recovery.
+   Leave the rolling backup mode after a recovery.
 
-1. Shut down any of the secondary nodes of the cluster with respect to AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Shut down any of the secondary nodes of the cluster regarding AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. On any node, back up the database, GDS, and Connectors. (see [Files to back up and recover](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Perform the following steps to back up AEM repository offline:
+1. To back up AEM repository offline, perform the following steps:
 
     1. For each cluster node, back up the file that contains the cluster node id.
     1. Back up all files of any secondary cluster node, including subdirectories.
     1. Back up repository/system.id of each cluster node separately.
 
-   For detailed steps, see [Backup and Restore](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+   For detailed steps, see [Backup and Restore](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 1. Back up any other data, such as customer fonts.
 1. Start the cluster again.
@@ -74,11 +74,11 @@ This topic discusses the following strategies to back up any AEM forms clustered
 
 1. Enter the rolling backup mode. (see [Entering the backup modes](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
 
-   Note that you need to leave the rolling backup mode after a recovery.
+   Leave the rolling backup mode after a recovery.
 
-1. Shut down any of the secondary nodes of the cluster with respect to AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
+1. Shut down any of the secondary nodes of the cluster regarding AEM. (see [Starting and stopping services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
 1. On any node, back up the database, GDS, and Connectors. (see [Files to back up and recover](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
-1. Perform the following steps to back up AEM repository online:
+1. To back up AEM repository online, perform the following steps:
 
     1. For each cluster node, back up the file that contains the cluster_node.id.
     1. Back up repository/system.id of each cluster node separately.
@@ -91,19 +91,19 @@ This topic discusses the following strategies to back up any AEM forms clustered
 
 When we create an AEM cluster, a properties file is created in the application server for all secondary nodes. It is recommended to back up the Bootstrap properties file. You can find the file at the following location on your application server:
 
-* JBoss: in the BIN directory
+* JBoss&reg;: in the BIN directory
 * WebLogic: in the domain directory
-* WebSphere: in the profile directory
+* WebSphere&reg;: in the profile directory
 
-You need to back up the file for disaster recovery scenario of AEM secondary node and replace it at the specified location on the application server, if restored.
+Back up the file for disaster recovery scenario of AEM secondary node and replace it at the specified location on the application server, if restored.
 
 ## Recovery in a clustered environment {#recovery-in-a-clustered-environment}
 
-In case of any failure of the entire cluster or a single node, you need to restore it using the backup.
+If there is any failure of the entire cluster or a single node, restore it using the backup.
 
-For a single node recovery, you just need to shut down the single node and run the single node recovery procedure.
+For a single node recovery, shut down the single node and run the single node recovery procedure.
 
-In case the entire cluster fails due to failures like database crash, you need to perform the following steps. Restoration depends on the method of backup used.
+In case the entire cluster fails due to failures like database crash, perform the following steps. Restoration depends on the method of backup used.
 
 ### Restoring a single node {#restoring-a-single-node}
 
@@ -115,7 +115,7 @@ In case the entire cluster fails due to failures like database crash, you need t
 
 1. Re-create the physical system from a system image.
 1. Apply patches or updates to AEM forms that were applied since the image was made. This information was recorded during the backup procedure. AEM forms must be recovered to the same patch level as it was when the system was backed up.
-1. (*Optional*) If all other nodes are working fine, it is possible that the AEM repository is alsocorrupted. In this case, you will see a repository unsync message in the error.log file of the AEM repository.
+1. (*Optional*) If all other nodes are working fine, it is possible that the AEM repository is also corrupted. In this case, you will see a repository unsync message in the error.log file of the AEM repository.
 
    To restore the repository, perform the following steps.
 
@@ -137,7 +137,7 @@ In case the entire cluster fails due to failures like database crash, you need t
 
 * If the failed node was an AEM primary node, copy all the content from the secondary repository folder (crx-repository\crx.0000 where 0000 can be any digits) to the crx-repository\ repository folder and delete the secondary repository folder.
 * Before restarting any cluster node, ensure that you delete the repository /clustered.txt from the primary node.
-* Ensure that the primary node is started first and once it is completely up, start other nodes.
+* Ensure that the primary node is started first and after it is up, start other nodes.
 
 ### Restoring the entire cluster {#restoring-the-entire-cluster}
 
@@ -167,19 +167,19 @@ In case the entire cluster fails due to failures like database crash, you need t
 
 * If the failed node was an AEM primary node, copy all the content from the secondary repository folder (it looks like crx-repository\crx.0000 where 0000 can be any digits) to the crx-repository\ repository folder.
 * Before restarting any cluster node, ensure that you delete the repository /clustered.txt from the primary node.
-* Ensure that the primary node is started first and once it is completely up, start other nodes.
+* Ensure that the primary node is started first and after it is up, start other nodes.
 
 ## Back up and restore Correspondence Management Solution publish node {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-The publisher node does not have any primary-secondary relationship in a clustered environment. You can take backup of any Publisher node by following [Backup and Restore](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
+The publisher node does not have any primary-secondary relationship in a clustered environment. You can take backup of any Publisher node by following [Backup and Restore](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recover a single publisher node {#recover-a-single-publisher-node}
 
-1. Shutdown the node that needs to be recovered and do not do any publish activity until the node is up again.
-1. Restore the Publish node using [Restoring the Backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup).
+1. Shutdown the node that must be recovered and do not do any publish activity until the node is up again.
+1. Restore the Publish node using [Restoring the Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 
 ### Recover a cluster {#recover-a-cluster}
 
 1. Shutdown the cluster.
-1. Restore the Publish node using [Restoring the Backup](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html#Restoring the Backup).
+1. Restore the Publish node using [Restoring the Backup](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
 1. Start the primary node followed by the secondary node of the author cluster.

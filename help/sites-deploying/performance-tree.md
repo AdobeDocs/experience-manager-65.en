@@ -1,8 +1,7 @@
 ---
 title: Performance Tree
 seo-title: Performance Tree
-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
-seo-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
+description: Learn about the steps that to take to troubleshoot performance issues in AEM.
 uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -15,7 +14,7 @@ exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 
 ## Scope {#scope}
 
-The below diagram is meant to provide guidance on the steps that need to be taken in order to troubleshoot performance issues. It is split in 5 sections for easier reading.
+The following diagram is meant to provide guidance on the steps to take to troubleshoot performance issues. It is split in five sections for easier reading.
 
 Each step in the diagram is linked to a documentation resource or a recommendation.
 
@@ -23,7 +22,7 @@ Each step in the diagram is linked to a documentation resource or a recommendati
 
 The assumption is that a performance issue is observed on a given page (either an AEM console or a web page) and can be reproduced consistently. Having a way to test or monitor the performance is a pre-requisite before starting the investigation.
 
-The analysis starts at step 0. The goal is to determine which entity (dispatcher, external host or AEM) is responsible for the performance issue then determine which area (server or network) should be investigated.
+The analysis starts at step 0. The goal is to determine which entity (Dispatcher, external host, or AEM) is responsible for the performance issue then determine which area (server or network) should be investigated.
 
 ### Section 1 {#section}
 
@@ -57,12 +56,12 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 0</strong></td>
    <td>Analyze Request Flow</td>
-   <td><p>You can use standard HTTP request analysis in the browser to analyze the request flow. For more info on how to do this on Chrome, see:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
+   <td><p>You can use standard HTTP request analysis in the browser to analyze the request flow. For more info on how to do this analysis on Chrome, see:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 2</strong></td>
    <td>Are requests coming from external hosts?</td>
-   <td>You can use standard HTTP request analysis in the browser to analyze the request flow. See the above links on how to do this on Chrome.<br /> </td>
+   <td>You can use standard HTTP request analysis in the browser to analyze the request flow. See the above links on how to do this analysis on Chrome.<br /> </td>
   </tr>
   <tr>
    <td><strong>Step 3</strong></td>
@@ -72,12 +71,12 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 4</strong></td>
    <td>Are requests coming from the Dispatcher?</td>
-   <td><p>Check the <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Dispatcher debugging documentation</a> to see if the requests are cached properly.<br /> </p> </td>
+   <td><p>To see if the requests are cached properly, check the <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Dispatcher debugging documentation</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 5</strong></td>
    <td>Is the Dispatcher trying to authenticate each request via AEM?</td>
-   <td>Check if the dispatcher sends <code>HEAD</code> requests to AEM for authentication before delivering the cached resource. You can do this by looking for <code>HEAD</code> requests in the AEM <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td>
+   <td>Check if the Dispatcher sends <code>HEAD</code> requests to AEM for authentication before delivering the cached resource. Look for <code>HEAD</code> requests in the AEM <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Step 6</strong></td>
@@ -92,7 +91,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 8</strong></td>
    <td>Is the slowness reproducible with a local instance?</td>
-   <td><br /> <p>Use <a href="/help/sites-developing/tough-day.md">Tough Day</a> to replicate "real world" conditions from the production instances. If this is not realistic for the slace of your development, make sure to test the production instance (or an identical staging one) in a different network context.<br /> </p> </td>
+   <td><br /> <p>Use <a href="/help/sites-developing/tough-day.md">Tough Day</a> to replicate "real-world" conditions from the production instances. If this scenario is not realistic for the space of your development, make sure to test the production instance (or an identical staging one) in a different network context.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 9</strong></td>
@@ -102,7 +101,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Steps 10 and 29</strong></td>
    <td>Investigate network layer</td>
-   <td><p>Investigate the network layer for saturation and latency issues.</p> <p>For the author tier, it is recommended that the latency does not surpass 100 milliseconds.</p> <p>For more information on performance optimization tips, see <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">this page</a>.</p> </td>
+   <td><p>Investigate the network layer for saturation and latency issues.</p> <p>For the author tier, it is recommended that the latency does not surpass 100 milliseconds.</p> <p>For more information on performance optimization tips, see <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">this page</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Step 11</strong></td>
@@ -127,7 +126,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 15</strong></td>
    <td>Find slow requests</td>
-   <td><p>You can check for slow requests by analysing the <code>request.log</code> or by using <code>rlog.jar</code>.</p> <p>For more information about using rlog.jar, see this page.</p> <p>See <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Using rlog.jar to find requests with long duration times</a>.<br /> </p> <p> </p> </td>
+   <td><p>You can check for slow requests by analyzing the <code>request.log</code> or by using <code>rlog.jar</code>.</p> <p>For more information about using rlog.jar, see this page.</p> <p>See <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Find requests with long duration times using rlog.jar</a>.<br /> </p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 16</strong></td>
@@ -147,7 +146,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 19</strong></td>
    <td>100% CPU</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://helpx.adobe.com/experience-manager/6-3/sites-deploying/monitoring-and-maintaining.html#MonitoringPerformance</a></td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html</a></td>
   </tr>
   <tr>
    <td><strong>Step 20</strong></td>
@@ -156,7 +155,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Out Of Memory</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">My application throws out-of-memory errors</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html">Analyze Memory Problems on Helpx.</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">Analyze Memory Problems.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -179,7 +178,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
    <td>Repository tuning</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Performance Tuning Tips</a></li>
+     <li><a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">Performance Tuning Tips</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configuring for Performance</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Repository Performance Tuning</a></li>
     </ul> </td>
@@ -198,7 +197,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 26</strong></td>
    <td>MSM Infrastructure</td>
-   <td><p><a href="/help/sites-administering/msm-best-practices.md">Multi Site Manager Best Practices</a><br /> </p> </td>
+   <td><p><a href="/help/sites-administering/msm-best-practices.md">Multisite Manager Best Practices</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 27</strong></td>
@@ -207,7 +206,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Assets Synchronization Service</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Multiple DAM Instances</a></li>
-     <li>Performance tuning tips articles <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">here</a> and <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">here</a>.<br /> </li>
+     <li>Performance tuning tips article <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -217,29 +216,29 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   </tr>
   <tr>
    <td><strong>Step 30</strong></td>
-   <td>Move dispatcher closer (add one per "region"?)</td>
+   <td>Move Dispatcher closer (add one per "region"?)</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Step 31</strong></td>
-   <td>Use CDN in front of dispatcher</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Using Dispatcher with a CDN</a><br /> </td>
+   <td>Use CDN in front of Dispatcher</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Using Dispatcher with a CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Step 32</strong></td>
-   <td>Use session management at the dispatcher level to offload AEM server</td>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Enabling Secure Sessions</a></p> </td>
+   <td>To offload the AEM server, use session management at the Dispatcher level</td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement">Enabling Secure Sessions</a></p> </td>
   </tr>
   <tr>
    <td><strong>Step 33</strong></td>
    <td>Make requests cacheable</td>
    <td>
     <ol>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">General Dispatcher Configuration</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configuring the Dispatcher Cache</a></li>
-    </ol> <p>How to improve cache ratio; make requests cache-able (Dispatcher best practices)</p> <p>Also, take into consideration the below settings in order to optimize your caching configurations<br /> </p>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">General Dispatcher Configuration</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">Configuring the Dispatcher Cache</a></li>
+    </ol> <p>How to improve cache ratio; make requests cache-able (Dispatcher best practices)</p> <p>Also, consider the below settings to optimize your caching configurations<br /> </p>
     <ol>
-     <li>Set a no-cache rule for HTTP requesrst that are not GET</li>
+     <li>Set a no-cache rule for HTTP request that is not GET</li>
      <li>Configure query strings to not be cacheable</li>
      <li>Do not cache URLs with missing extensions</li>
      <li>Cache authentication headers (possible since Dispatcher version 4.1.10)</li>
@@ -247,32 +246,32 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   </tr>
   <tr>
    <td><strong>Step 34</strong></td>
-   <td>Upgrade dispatcher version</td>
-   <td><p>You can download the latest Dispatcher version at this location:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Follow link</a></p> </td>
+   <td>Upgrade Dispatcher version</td>
+   <td><p>You can download the latest Dispatcher version at this location:</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en">Follow link</a></p> </td>
   </tr>
   <tr>
    <td><strong>Step 35</strong></td>
-   <td>Configure dispatcher</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuring the Dispatcher</a><br /> </td>
+   <td>Configure Dispatcher</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en">Configuring the Dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Step 36</strong></td>
    <td>Check cache invalidation</td>
    <td><br />
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Cache Invalidation for the Author tier;</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Cache Invalidation for the Publish tier.</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment">Cache Invalidation for the Author tier;</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance">Cache Invalidation for the Publish tier.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Steps 37 and 38</strong></td>
    <td>Lazy-loading</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">See the Gem Session on AEM Web Performance.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">See the Gem Session on AEM Web Performance.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Step 39</strong></td>
    <td>Use pre-connect to reduce connection overhead</td>
-   <td>See the Gem Session indicated above. Also, additional documentation preconnect on W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
+   <td>See the Gem Session above. Also, additional pre-connect documentation on W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Steps 40 and 41</strong><br /> </td>
@@ -287,12 +286,12 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Step 49</strong></td>
    <td>Shrink payload size</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Enable Gzip</a> and <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">shrink the image size</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Enable Gzip</a> and <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">shrink the image size</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Steps 42 and 43</strong></td>
    <td>Keep-Alive</td>
-   <td><p>Is the <code>Keep-Alive</code> header present in the different requests to re-use connections? Otherwise, it would mean that each requests leads to another connection establishment, which introduces unnecessary overhead. (Standard HTTP request analysis in the browser)</p> <p>You can check the <a href="/help/sites-administering/proxy-jar.md">Proxy Server tool</a> to check for Keep-Alive connections.<br /> </p> </td>
+   <td><p>Is the <code>Keep-Alive</code> header present in the different requests to reuse connections? Otherwise, it would mean that each request leads to another connection establishment, which introduces unnecessary overhead. (Standard HTTP request analysis in the browser)</p> <p>You can check the <a href="/help/sites-administering/proxy-jar.md">Proxy Server tool</a> to check for Keep-Alive connections.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Step 44</strong></td>
@@ -304,7 +303,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
    <td>Reduce number of requests</td>
    <td>
     <ol>
-     <li>Concatenate resources (images, CSS sprites, JSON, etc.)<br /> </li>
+     <li>Concatenate resources (images, CSS sprites, JSON)<br /> </li>
      <li>Clientlibs embedding:
       <ol>
        <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Creating Client Library Folders</a> - see heading Using embedding to minimize requests</li>
@@ -319,7 +318,7 @@ The analysis starts at step 0. The goal is to determine which entity (dispatcher
   <tr>
    <td><strong>Steps 50 and 51</strong></td>
    <td>JS code blocking</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
   </tr>
  </tbody>
 </table>

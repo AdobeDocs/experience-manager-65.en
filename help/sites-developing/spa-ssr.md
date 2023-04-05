@@ -57,7 +57,7 @@ The following sections detail how Adobe I/O Runtime can be used to implement SSR
 
 >[!NOTE]
 >
->Adobe recommends a separate Adobe I/O Runtime workspace per environment (stage, prod, testing, etc.). This allows for typical systems development life cycle (SDLC) patterns with different versions of a single application deployed to different environments. See the document [CI/CD for Project Firefly Applications](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) for more information.
+>Adobe recommends a separate Adobe I/O Runtime workspace per environment (stage, prod, testing, etc.). This allows for typical systems development life cycle (SDLC) patterns with different versions of a single application deployed to different environments. See the document [CI/CD for Project App Builder Applications](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) for more information.
 >
 >A separate workspace is not needed per instance (author, publish) unless there are differences in the runtime implementation per instance type.
 

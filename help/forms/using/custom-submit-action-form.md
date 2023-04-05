@@ -47,11 +47,11 @@ The XML data is sent to the servlet using the **`jcr:data`** request parameter. 
 
 ### Action fields {#action-fields}
 
-A Submit action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. These hidden fields can contain values that it needs while processing form submission. When submitting the form, these field values are posted back as request parameters that the Submit action can use during submission handling. The input fields are called action fields.
+A Submit action can add hidden input fields (using the HTML [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input) tag) to the rendered form HTML. These hidden fields can contain values that it needs while processing form submission. When submitting the form, these field values are posted back as request parameters that the Submit action can use during submission handling. The input fields are called action fields.
 
 For example, a Submit action that also captures the time taken to fill a form can add the hidden input fields `startTime` and `endTime`.
 
-A script can supply the values of the `startTime` and `endTime` fields when the form renders and before form submission, respectively. The Submit action script `post.jsp` can then access these fields using request parameters and compute the total time required to fill the form.
+A script can supply the values of the `startTime` and `endTime` fields when the form renders and before form submission, respectively. The Submit ActionScript `post.jsp` can then access these fields using request parameters and compute the total time required to fill the form.
 
 ### File attachments {#file-attachments}
 
@@ -96,7 +96,7 @@ A Submit action is a sling:Folder that includes the following:
 
 ## Creating a custom Submit action {#creating-a-custom-submit-action}
 
-Perform the following steps to create a custom Submit action that saves the data in the CRX repository and then sends you an email. The adaptive form contains the OOTB Submit action Store Content (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/mailer/package-summary.html) API that can be used to send emails. Before using the Mail API, [configure](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring the Mail Service) the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
+Perform the following steps to create a custom Submit action that saves the data in the CRX repository and then sends you an email. The adaptive form contains the OOTB Submit action Store Content (deprecated) that saves the data in the CRX repository. In addition, CQ provides a [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) API that can be used to send emails. Before using the Mail API, [configure](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&wcmmode=disabled) the Day CQ Mail service through the system console. You can reuse the Store Content (deprecated) action to store the data in the repository. The Store Content (deprecated) action is available at the location /libs/fd/af/components/guidesubmittype/store in the CRX repository.
 
 1. Log in to CRXDE Lite at the URL https://&lt;server&gt;:&lt;port&gt;/crx/de/index.jsp. Create a node with the property sling:Folder and name store_and_mail in the /apps/custom_submit_action folder. Create the custom_submit_action folder if it doesn't exist already.
 
@@ -132,7 +132,7 @@ Perform the following steps to create a custom Submit action that saves the data
 
    Add the post.POST.jsp script to your action. (/apps/custom_submit_action/store_and_mail/).
 
-   Run the OOTB Store action (post.POST.jsp script). Use the [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)) API that CQ provides in your code to run the Store action. Add the following code in your JSP file:
+   Run the OOTB Store action (post.POST.jsp script). Use the [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API that CQ provides in your code to run the Store action. Add the following code in your JSP file:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

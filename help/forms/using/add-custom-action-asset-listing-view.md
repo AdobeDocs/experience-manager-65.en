@@ -32,7 +32,7 @@ To complete the following scenario or a similar one, you require knowledge of:
 
 * CRX
 * JavaScript
-* Java
+* Java&trade;
 
 ## Scenario: Add a command to the Letters list user interface to download flat PDF version of a letter {#addcommandtoletters}
 
@@ -50,7 +50,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
        >[!NOTE]
        >
-       >This path is specific to creating an action that works with selection of one of more assets/letters. If you want to create an action that works without selection, you need to create an overlay node for the following path instead and complete the remaining steps accordingly:
+       >This path is specific to creating an action that works with selection of one of more assets/letters. If you want to create an action that works without selection, create an overlay node for the following path instead and complete the remaining steps accordingly:
        >
        >
        >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -81,7 +81,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
        **Type:** nt:unstructured
 
-    1. Click the new node you have created (here downloadFlatPDF). CRX displays the node's properties.
+    1. Click the new node that you have created (here downloadFlatPDF). CRX displays the node's properties.
 
     1. Add the following properties to the node (here downloadFlatPDF) and click **Save All**:
 
@@ -105,7 +105,7 @@ To customize Correspondence Management to allow your users to download a flat PD
         <tr>
         <td>icon</td>
         <td>String</td>
-        <td>icon-download<br /> <br /> The icon that Correspondence Management displays to the left side of your command/menu. For different icons and settings available, see <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">CoralUI Icons documentation</a>.<br /> </td>
+        <td>icon-download<br /> <br /> The icon that Correspondence Management displays to the left side of your command/menu. For different icons and settings available, see <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI Icons documentation</a>.<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -274,7 +274,7 @@ To customize Correspondence Management to allow your users to download a flat PD
     1. Double-click the **POST.jsp** file to open it in CRX.
     1. Add the following code to POST.jsp file and click **Save All**:
 
-       This code is specific to the letter render service. For any other asset, add that asset's java libraries to this code. For more information on AEM Forms APIs, see [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en).
+       This code is specific to the letter render service. For any other asset, add that asset's Java&trade; libraries to this code. For more information on AEM Forms APIs, see [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
        For more information on AEM libraries, see AEM [Components](/help/sites-developing/components.md).
 

@@ -14,7 +14,7 @@ exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 ---
 # Storage Elements in AEM 6.5{#storage-elements-in-aem}
 
-In this article, we will cover:
+This article covers the following:
 
 * [Overview of Storage in AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Maintaining the Repository](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
@@ -31,9 +31,9 @@ Currently, there are two node storage implementations available in AEM6: Tar sto
 
 >[!CAUTION]
 >
->The PID for the Segment node store has changed from org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in previous versions of AEM 6 to org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Make sure you make the necessary configuration adjustments to reflect this change.
+>The PID for the Segment node store has changed from org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService in previous versions of AEM 6 to org.apache.jackrabbit.oak.segment.SegmentNodeStoreService in AEM 6.3. Make sure that the necessary configuration adjustments are made so that the changes are reflected.
 
-By default, AEM 6 uses the Tar storage to store nodes and binaries, using the default configuration options. To manually configured its storage settings, follow the below procedure:
+By default, AEM 6 uses the Tar storage to store nodes and binaries, using the default configuration options. You can manually configure its storage settings by doing the following:
 
 1. Download the AEM 6 quickstart jar and place it in a new folder.
 1. Unpack AEM by running:
@@ -46,8 +46,8 @@ By default, AEM 6 uses the Tar storage to store nodes and binaries, using the de
 
 1. Edit the file and set the configuration options. The following options are available for Segment Node Store, which is the basis of AEM's Tar storage implementation:
 
-    * `repository.home`: Path to repository home under which various repository related data is stored. By default segment files would be stored under the crx-quickstart/segmentstore directory.
-    * `tarmk.size`: Maximum size of a segment in MB. The default is 256MB.
+    * `repository.home`: Path to repository home under which various repository-related data is stored. By default segment files would be stored under the crx-quickstart/segmentstore directory.
+    * `tarmk.size`: Maximum size of a segment in MB. The default is 256 MB.
 
 1. Start AEM.
 
@@ -64,7 +64,7 @@ AEM 6 can be configured to run with MongoDB storage by following the below proce
 
 1. Make sure that MongoDB is installed and an instance of `mongod` is running. For more info, see [Installing MongoDB](https://docs.mongodb.org/manual/installation/).
 1. Create a folder named `crx-quickstart\install` in the installation directory.
-1. Configure the node store by creating a configuration file with the name of the configuration you want to use in the `crx-quickstart\install` directory.
+1. Configure the node store by creating a configuration file with the name of the configuration that you want to use in the `crx-quickstart\install` directory.
 
    The Document Node Store (which is the basis for AEM's MongoDB storage implementation) uses a file called `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
 
@@ -72,11 +72,11 @@ AEM 6 can be configured to run with MongoDB storage by following the below proce
 
     * `mongouri`: The [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) required to connect to Mongo Database. The default is `mongodb://localhost:27017`
     * `db`: Name of the Mongo database. By default new AEM 6 installations use **aem-author** as the database name.
-    * `cache`: The cache size in MB. This is distributed among various caches used in DocumentNodeStore. The default is 256.
+    * `cache`: The cache size in megabytes. This cache size is distributed among various caches used in DocumentNodeStore. The default is 256.
     * `changesSize`: Size in MB of capped collection used in Mongo for caching the diff output. The default is 256.
-    * `customBlobStore`: Boolean value indicating that a custom data store will be used. The default is false.
+    * `customBlobStore`: Boolean value indicating that a custom data store is used. The default is false.
 
-1. Create a configuration file with the PID of the data store you wish to use and edit the file in order to set the configuration options. For more info, please see [Configuring Node Stores and Data Stores](/help/sites-deploying/data-store-config.md).
+1. Create a configuration file with the PID of the data store you want to use and edit the file to set the configuration options. For more info, please see [Configuring Node Stores and Data Stores](/help/sites-deploying/data-store-config.md).
 
 1. Start the AEM 6 jar with a MongoDB storage backend by running:
 
@@ -84,11 +84,11 @@ AEM 6 can be configured to run with MongoDB storage by following the below proce
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Where **`-r`** is the backend runmode. In this example, it will start with MongoDB support.
+   Where the backend run mode is **`-r`**, the example starts with MongoDB support.
 
 #### Disabling Transparent Huge Pages {#disabling-transparent-huge-pages}
 
-Red Hat Linux uses a memory management algorithm called Transparent Huge Pages (THP). While AEM performs fine-grained reads and writes, THP is optimized for large operations. Because of this, it is recommended that you disable THP both on Tar and Mongo storage. To disable the algorithm, follow these steps:
+Red Hat&reg; Linux&reg; uses a memory management algorithm called Transparent Huge Pages (THP). While AEM performs fine-grained reads and writes, THP is optimized for large operations. Therefore, it is recommended that you disable THP both on Tar and Mongo storage. To disable the algorithm, follow these steps:
 
 1. Open the `/etc/grub.conf` file in the text editor of your choice.
 1. Add the following line to the **grub.conf** file:
@@ -111,12 +111,12 @@ Red Hat Linux uses a memory management algorithm called Transparent Huge Pages (
 
 >[!NOTE]
 >
->Addtionally, you can also consult the following resources:
+>Consult the following resources:
 >
->* For more information regarding Transparent Huge Pages on Red Hat Linux, see this [article](https://access.redhat.com/solutions/46111).
->* For Linux tuning tips, see this [article](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>* For more information regarding Transparent Huge Pages on Red Hat&reg; Linux&reg;, see this [article](https://access.redhat.com/solutions/46111).
+>* For Linux&reg; tuning tips, see this [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 >
 
 ## Maintaining the Repository {#maintaining-the-repository}
 
-Each update to the repository creates a new content revision. As a result, with each update the size of the repository grows. To avoid uncontrolled repository growth, old revisions need to be be cleaned up to free disk resources. This maintenance functionality is called Revision Cleanup. The Revision Cleanup mechanism will reclaim disk space by removing obsolete data from the repository. For further details about Revision Cleanup, read the [Revision Cleanup page](/help/sites-deploying/revision-cleanup.md).
+Each update to the repository creates a content revision. As a result, with each update the size of the repository grows. To avoid uncontrolled repository growth, old revisions must be cleaned up to free disk resources. This maintenance functionality is called Revision Cleanup. The Revision Cleanup mechanism reclaims disk space by removing obsolete data from the repository. For further details about Revision Cleanup, read the [Revision Cleanup page](/help/sites-deploying/revision-cleanup.md).

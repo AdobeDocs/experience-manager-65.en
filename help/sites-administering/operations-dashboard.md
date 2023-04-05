@@ -17,30 +17,30 @@ feature: Operations
 
 ## Introduction {#introduction}
 
-The Operations Dashboard in AEM 6 helps system operators to monitor AEM system health at a glance. It also provides auto-generated diagnosis informations on relevant aspects of AEM and allows to configure and run self-contained maintenance automation to reduce project operations and support cases significantly. The Operations Dashboard can be extended with custom health checks and maintenance tasks. Further, Operations Dashboard data can be accessed from external monitoring tools via JMX.
+The Operations Dashboard in AEM 6 helps system operators to monitor AEM system health at a glance. It also provides auto-generated diagnosis information on relevant aspects of AEM and lets you configure and run self-contained maintenance automation to reduce project operations and support cases significantly. The Operations Dashboard can be extended with custom health checks and maintenance tasks. Further, Operations Dashboard data can be accessed from external monitoring tools via JMX.
 
 **The Operations Dashboard:**
 
 * Is a one-click system status to help operations departments gain efficiency
 * Provides system health overview in a single, centralized place
-* Reduces time to find, analyze and fix issues
+* Reduces time to find, analyze, and fix issues
 * Provides self-contained maintenance automation that helps reduce project operations costs significantly
 
 It can be accessed by going to **Tools** - **Operations** from the AEM Welcome screen.
 
 >[!NOTE]
 >
->In order to be able to access the Operations Dashboard, the logged in user must be part of the "Operators" user group. For more info, see documentation on [User, Group and Access Right Administration](/help/sites-administering/user-group-ac-admin.md).
+>To be able to access the Operations Dashboard, the logged in user must be part of the "Operators" user group. For more info, see documentation on [User, Group, and Access Right Administration](/help/sites-administering/user-group-ac-admin.md).
 
 ## Health Reports {#health-reports}
 
-The Health Report system provides information on the health of an AEM instance through Sling Health Checks. This can be done via either OSGI, JMX, HTTP requests (via JSON) or through the Touch UI. It offers measurements and threshold of certain configurable counters and in some cases, will offer information on how to resolve the issue.
+The Health Report system provides information on the health of an AEM instance through Sling Health Checks. You accomplish this operation by way of either OSGI, JMX, HTTP requests (by way of JSON) or through the Touch UI. It offers measurements and threshold of certain configurable counters and sometimes, offers information on how to resolve the issue.
 
 It has several features, described below.
 
 ## Health Checks {#health-checks}
 
-The **Health Reports** are a system of cards indicating good or bad health with regard to a specific product area. These cards are visualizations of the Sling Health Checks, which aggregate data from JMX and other sources and expose processed information again as MBeans. These MBeans can also be inspected in the [JMX web console](/help/sites-administering/jmx-console.md), under the **org.apache.sling.healthcheck** domain.
+The **Health Reports** are a system of cards indicating good or bad health about a specific product area. These cards are visualizations of the Sling Health Checks, which aggregate data from JMX and other sources and expose processed information again as MBeans. These MBeans can also be inspected in the [JMX web console](/help/sites-administering/jmx-console.md), under the **org.apache.sling.healthcheck** domain.
 
 The Health Reports interface can be accessed through the **Tools** - **Operations** - **Health Reports** menu on the AEM Welcome screen, or directly through the following URL:
 
@@ -59,21 +59,21 @@ There are two types of health checks in AEM 6:
 1. Individual Health Checks
 1. Composite Health Checks
 
-An **Individual Health Check** is a single health check that corresponds to a status card. Individual Health Checks can be configured with rules or thresholds and they can provide one or more hints and links to solve identified health issues. Let's take the "Log Errors" check as an example: if there are ERROR entries in the instance logs, you will find them on the details page of the health check. At the top of the page you will see a link to the "Log Message" analyzer in the Diagnosis Tools section, which will enable you to analyze these errors in more detail and reconfigure the loggers.
+An **Individual Health Check** is a single health check that corresponds to a status card. Individual Health Checks can be configured with rules or thresholds and they can provide one or more hints and links to solve identified health issues. Let's take the "Log Errors" check as an example: if there are ERROR entries in the instance logs, find them on the details page of the health check. At the top of the page, you can see a link to the "Log Message" analyzer in the Diagnosis Tools section, which lets you analyze these errors in more detail and reconfigure the loggers.
 
 A **Composite Health Check** is a check that aggregates information from several individual checks.
 
-Composite health checks are configured with the aid of **filter tags**. In essence, all single checks that have the same filter tag will be grouped as a composite health check. A Composite Health Check will have an OK status only if all the single checks it aggregates have OK statuses as well.
+Composite health checks are configured with the aid of **filter tags**. In essence, all single checks that have the same filter tag are grouped as a composite health check. A Composite Health Check has an OK status only if all the single checks that it aggregates have OK statuses as well.
 
 ### How to create Health Checks {#how-to-create-health-checks}
 
-In the Operations Dashboard you can visualize the result of both individual and composite Health Checks.
+In the Operations Dashboard, you can visualize the result of both individual and composite Health Checks.
 
 ### Creating an individual Health Check {#creating-an-individual-health-check}
 
 Creating an individual Health Check involves two steps: implementing a Sling Health Check and adding an entry for the Health Check in the Dashboard's configuration nodes.
 
-1. In order to create a Sling Health Check, you need to create an OSGI component implementing the Sling HealthCheck interface. You will add this component inside a bundle. The properties of the component will fully identify the Health Check. Once the component is installed, a JMX MBean will automatically be created for the Health Check. See the [Sling Health Check Documentation](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) for more information.
+1. To create a Sling Health Check, create an OSGI component implementing the Sling HealthCheck interface. Add this component inside a bundle. The properties of the component fully identify the Health Check. After the component is installed, a JMX MBean is automatically created for the Health Check. See the [Sling Health Check Documentation](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) for more information.
 
    Example of a Sling Health Check component, written with OSGI service component annotations:
 
@@ -96,9 +96,9 @@ Creating an individual Health Check involves two steps: implementing a Sling Hea
 
    >[!NOTE]
    >
-   >The `MBEAN_NAME` property defines the name of the mbean that will be generated for this health check.
+   >The `MBEAN_NAME` property defines the name of the mbean that is generated for this health check.
 
-1. After creating a Health Check, a new configuration node needs to be created, in order to make it accessible in the Operations Dashboard interface. For this step, it is necessary to know the JMX Mbean name of the Health Check (the `MBEAN_NAME` property). To create a configuration for the Health Check, open CRXDE and add a new node (of type **nt:unstructured**) under the following path: `/apps/settings/granite/operations/hc`
+1. After creating a Health Check, a new configuration node must be created to make it accessible in the Operations Dashboard interface. For this step, it is necessary to know the JMX Mbean name of the Health Check (the `MBEAN_NAME` property). To create a configuration for the Health Check, open CRXDE and add a node (of type **nt:unstructured**) under the following path: `/apps/settings/granite/operations/hc`
 
    The following properties should be set on the new node:
 
@@ -116,7 +116,7 @@ Creating an individual Health Check involves two steps: implementing a Sling Hea
    >
    >The resource path above is created as follows: if the mbean name of your Health Check is "test", add "test" to the end of the path `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
-   >So the final path will be:
+   >So the final path is the following:
    >
    >`/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/test`
 
@@ -130,34 +130,34 @@ Creating an individual Health Check involves two steps: implementing a Sling Hea
    >`sling:configPropertyInherit`
    >
    >
-   >This will tell the configuration manager to merge the new configurations with the existing ones from `/libs`.
+   >This process tells the configuration manager to merge the new configurations with the existing ones from `/libs`.
 
 ### Creating a Composite Health Check {#creating-a-composite-health-check}
 
-A Composite Health Check's role is to aggregate a number of individual Health Checks sharing a set of common features. For instance, the Security Composite Health Check groups together all the individual health checks performing security-related verifications. The first step in order to create a composite check is to add a new OSGI configuration. For it to be displayed in the Operations Dashboard, a new configuration node needs to be added, the same way we did for a simple check.
+A Composite Health Check's role is to aggregate several individual Health Checks sharing a set of common features. For example, the Security Composite Health Check groups all the individual health checks performing security-related verifications. The first step to create a composite check is to add an OSGI configuration. For it to be displayed in the Operations Dashboard, a new configuration node must be added in the same way as a simple check.
 
-1. Go to the Web Configuration Manager in the OSGI Console. You can do this by accessing `https://serveraddress:port/system/console/configMgr`
+1. Go to the Web Configuration Manager in the OSGI Console. Access `https://serveraddress:port/system/console/configMgr`
 1. Search for the entry called **Apache Sling Composite Health Check**. After you find it, notice that there are two configurations already available: one for the System Checks and another one for the Security Checks.
-1. Create a new configuration by pressing the "+" button on the right hand side of the configuration. A new window will appear, as shown below:
+1. Create a configuration by pressing the "+" button on the right-hand side of the configuration. A new window appears, as shown below:
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
-1. Create a configuration and save it. A Mbean will be created with the new configuration.
+1. Create a configuration and save it. A Mbean is created with the new configuration.
 
    The purpose of each configuration property is as follows:
 
     * **Name (hc.name):** The name of the Composite Health Check. A meaningful name is recommended.
     * **Tags (hc.tags):** The tags for this Health Check. If this composite health check is intended to be a part of another composite health check (such as in a hierarchy of health checks), add the tags this composite is related to.
-    * **MBean Name (hc.mbean.name):** The name of the Mbean that will be given to the JMX MBean of this composite health check.
-    * **Filter Tags (filter.tags):** This is a property specific to composite health checks. These are the tags which the composite should aggregate. The composite health check will aggregate under its group all the health checks that have any tag matching any of the filter tags of this composite. For example, a composite health check having the filter tags **test** and **check** will aggregate all the individual and composite health checks that have any of the **test** and **check** tags in their tags property ( `hc.tags`).
+    * **MBean Name (hc.mbean.name):** The name of the Mbean that is given to the JMX MBean of this composite health check.
+    * **Filter Tags (filter.tags):** The property that is specific to composite health checks. These tags are aggregated by the composite. The composite health check aggregates under its group all the health checks that have any tag matching any of the filter tags of this composite. For example, a composite health check having the filter tags **test** and **check**, aggregates all the individual and composite health checks that have any of the **test** and **check** tags in their tags property ( `hc.tags`).
 
    >[!NOTE]
    >
    >A new JMX Mbean is created for each new configuration of the Apache Sling Composite Health Check.**
 
-1. Finally, the entry of the composite health check that has just been created needs to be added in the Operations Dashboard configuration nodes. The procedure for this is the same as with individual health checks: a node of type **nt:unstructured** needs to be created under `/apps/settings/granite/operations/hc`. The resource property of the node will be defined by the value of **hc.mean.name** in the OSGI configuration.
+1. Finally, the entry of the composite health check that has been created must be added in the Operations Dashboard configuration nodes. The procedure is the same as with individual health checks: a node of type **nt:unstructured** must be created under `/apps/settings/granite/operations/hc`. The resource property of the node is defined by the value of **hc.mean.name** in the OSGI configuration.
 
-   If, for example, you created a configuration and set the **hc.mbean.name** value to **diskusage**, the configuration nodes will look like this:
+   For example, if you created a configuration and set the **hc.mbean.name** value to **diskusage**, the configuration nodes look like the following:
 
     * **Name:** `Composite Health Check`
 
@@ -177,9 +177,9 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
 
    >[!NOTE]
    >
-   >If you create individual health checks that logically belong under a composite check that is already present in the Dashboard by default, they will be automatically captured and grouped under the respective composite check. Because of this, there is no need to create a new configuration node for these checks.
+   >If you create individual health checks that logically belong under a composite check that is already present in the Dashboard by default, they are automatically captured and grouped under the respective composite check. As such, there is no need to create a configuration node for these checks.
    >
-   >For example, if you create an individual security health check, all you need to do is assign it the "**security**" tag, and it is installed, it will automatically appear under the Security Checks composite check in the Operations Dashboard.
+   >For example, if you create an individual security health check, assign it the "**security**" tag, and it is installed. It automatically appears under the Security Checks composite check in the Operations Dashboard.
 
 ### Health Checks Provided with AEM {#health-checks-provided-with-aem}
 
@@ -191,7 +191,7 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
   </tr>
   <tr>
    <td>Query Performance</td>
-   <td><p>This health check was simplified <strong>in AEM 6.4</strong>, and now checks the recently-refactored <code>Oak QueryStats</code> MBean, more specifically the <code>SlowQueries </code>attribute. If the statistics contain any slow queries, then the health check returns a warning. Otherwise, it returns the OK status.<br /> </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
+   <td><p>This health check was simplified <strong>in AEM 6.4</strong>, and now checks the recently refactored <code>Oak QueryStats</code> MBean, more specifically the <code>SlowQueries </code>attribute. If the statistics contain any slow queries, then the health check returns a warning. Otherwise, it returns the OK status.<br /> </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Observation Queue Length</td>
@@ -245,10 +245,10 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
    <td><p>System Maintenance is a composite check that returns the OK if all maintenance tasks are running as configured. Keep in mind that:</p>
     <ul>
      <li>each maintenance task is accompanied by an associated health check</li>
-     <li>if a task is not added to a maintenance window, its health check will return Critical</li>
-     <li>you need to configure the Audit Log and Workflow Purge maintenance tasks or otherwise remove them from the maintenance windows. If left unconfigured, these tasks will fail on the first attempted run, so the System Maintenance check will return the Critical status.</li>
+     <li>if a task is not added to a maintenance window, its health check returns Critical</li>
+     <li>configure the Audit Log and Workflow Purge maintenance tasks or otherwise remove them from the maintenance windows. If left unconfigured, these tasks fail on the first attempted run, so the System Maintenance check returns the Critical status.</li>
      <li><strong>With AEM 6.4</strong>, there is also a check for the <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene Binaries Maintenance</a> task</li>
-     <li>on AEM 6.2 and lower, the system maintenance check returns a Warning status right after startup because the tasks never run. Starting with 6.3, they will return OK if the first maintenance window wasn't reached yet.</li>
+     <li>on AEM 6.2 and lower, the system maintenance check returns a Warning status right after startup because the tasks never run. Starting with 6.3, they return OK if the first maintenance window was not reached yet.</li>
     </ul> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -306,11 +306,11 @@ A Composite Health Check's role is to aggregate a number of individual Health Ch
   </tr>
   <tr>
    <td>Code Cache Check</td>
-   <td><p>This is a Health Check that verifies several JVM conditions that can trigger a CodeCache bug present in Java 7:</p>
+   <td><p>A Health Check that verifies several JVM conditions that can trigger a CodeCache bug present in Java&trade; 7:</p>
     <ul>
-     <li>returns Warn if the instance is running on Java 7, with Code Cache flushing enabled</li>
-     <li>returns Warn if the instance is running on Java 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90MB)</li>
-    </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">check</a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"></a><a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547"> this page</a>.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>returns Warn if the instance is running on Java&trade; 7, with Code Cache flushing enabled</li>
+     <li>returns Warn if the instance is running on Java&trade; 7, and the Reserved Code Cache size is less than a minimum threshold (the default value is 90 MB)</li>
+    </ul> <p>The <code>minimum.code.cache.size</code> threshold is configurable. For more information about the bug, see <a href="https://bugs.java.com/bugdatabase/"> and then search on Bug ID 8012547</a>.</p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Resource Search Path Errors</td>
@@ -332,14 +332,14 @@ You can configure the **Period** with the [OSGi configuration](/help/sites-deplo
 
 The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans. The below example illustrates how to add a check that shows used memory on the server running AEM.
 
-1. Setup and install Nagios on the monitoring server.
+1. Set up and install Nagios on the monitoring server.
 1. Next, install the Nagios Remote Plugin Executor (NRPE).
 
    >[!NOTE]
    >
-   >For more info on how to install Nagios and NRPE on your system, please consult the [Nagios Documentation](https://library.nagios.com/library/products/nagioscore/manuals/).
+   >For more info on how to install Nagios and NRPE on your system, consult the [Nagios Documentation](https://library.nagios.com/library/products/nagios-core/manuals//).
 
-1. Add a host definition for the AEM server. This can be done via the Nagios XI Web Interface, by using the Configuration Manager:
+1. Add a host definition for the AEM server. You can accomplish this task by way of the Nagios XI Web Interface, by using the Configuration Manager:
 
     1. Open a browser and point to the Nagios server.
     1. Press the **Configure** button in the top menu.
@@ -399,9 +399,9 @@ The Health Check Dashboard can integrate with Nagios via the Granite JMX Mbeans.
 
 ## Diagnosis tools {#diagnosis-tools}
 
-The Operation Dashboard also provides access to Diagnosis Tools that can help finding and troubleshooting root causes of the warnings coming from the Health Check Dashboard, as well as providing important debug information for system operators.
+The Operation Dashboard also provides access to Diagnosis Tools that can help finding and troubleshooting root causes of the warnings coming from the Health Check Dashboard, and providing important debug information for system operators.
 
-Amongst its most important features are:
+Among its most important features are:
 
 * A log message analyzer
 * The ability to access heap and thread dumps
@@ -413,38 +413,38 @@ You can reach the Diagnosis Tools screen by going to **Tools - Operations - Diag
 
 ### Log Messages {#log-messages}
 
-The log messages User Interface will display all ERROR messages by default. If you want to have more log messages displayed, you need to configure a logger with the appropriate log level.
+The log messages User Interface displays all ERROR messages by default. If you want to have more log messages displayed, configure a logger with the appropriate log level.
 
-The log messages use an in memory log appender and therefore, are not related to the log files. Another consequence is that changing the log levels in this UI will not change the information that gets logged in the traditional log files. Adding and removing loggers in this UI will only affect the in memory logger. Also, note that changing the logger configurations will be reflected in the future of the in memory logger - the entries that are already logged and are not relevant anymore are not deleted, but similar entries will not be logged in the future.
+The log messages use an in memory log appender and therefore, are not related to the log files. Another consequence is that changing the log levels in this UI does not change the information that gets logged in the traditional log files. Adding and removing loggers in this UI only affects the memory logger. Also, changing the logger configurations is reflected in the future of the in memory logger. The entries that are already logged and are not relevant anymore are not deleted, but similar entries are not logged in the future.
 
-You can configure what gets logged by providing logger configurations from the upper left gear button in the UI. There, you can add, remove or update logger configurations. A logger configuration is composed of a **log level** (WARN / INFO / DEBUG) and a **filter name**. The **filter name** has the role of filtering the source of the log messages that get logged. Alternatively, if a logger should capture all the log messages for the specified level, the filter name should be "**root**". Setting the level of a logger will trigger the capture of all the messages with a level equal or higher than the one specified.
+You can configure what gets logged by providing logger configurations from the upper left gear button in the UI. There, you can add, remove, or update logger configurations. A logger configuration is composed of a **log level** (WARN / INFO / DEBUG) and a **filter name**. The **filter name** has the role of filtering the source of the log messages that get logged. Alternatively, if a logger should capture all the log messages for the specified level, the filter name should be "**root**". Setting the level of a logger triggers the capture of all messages with a level equal or higher than the one specified.
 
 Examples:
 
 * If you plan on capturing all the **ERROR** messages - no configuration is required. All the ERROR messages are captured by default.
 * If you plan on capturing all the **ERROR**, **WARN** and **INFO** messages - the logger name should be set to: "**root**", and the logger level to: **INFO**.
 
-* If you plan on capturing all the messages coming from a certain package (for example com.adobe.granite) - the logger name should be set to: "com.adobe.granite", and the logger level to: **DEBUG** (this will capture all the **ERROR**, **WARN**, **INFO** and **DEBUG** messages), as shown in the image below.
+* If you plan on capturing all the messages coming from a certain package (for example com.adobe.granite) - the logger name should be set to: "com.adobe.granite". And, the logger level set to: **DEBUG** (doing so captures all the **ERROR**, **WARN**, **INFO**, and **DEBUG** messages), as shown in the image below.
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
 >[!NOTE]
 >
->You can not set a logger name to capture only ERROR messages via a specified filter. By default, all the ERROR messages are captured.
+>You cannot set a logger name to capture only ERROR messages via a specified filter. By default, all the ERROR messages are captured.
 
 >[!NOTE]
 >
->The log messages user interface does not reflect the actual error log. Unless you are configuring other types of log messages in the UI, you will see ERROR messages only. For how to display specific log messages, see instructions above.
+>The log messages user interface does not reflect the actual error log. Unless you are configuring other types of log messages in the UI, you see ERROR messages only. For how to display specific log messages, see instructions above.
 
 >[!NOTE]
 >
->The settings in the diagnosis page do not influence what is logged to the log files and vice-versa. So, while the error log might catch INFO messages, you might not see them in the log messages UI. Also, through the UI it's possible to catch DEBUG messages from certain packages without it affecting the error log. For more information on how to configure the log files, see [Logging](/help/sites-deploying/configure-logging.md).
+>The settings in the diagnosis page do not influence what is logged to the log files and conversely. So, while the error log might catch INFO messages, you might not see them in the log messages UI. Also, through the UI it's possible to catch DEBUG messages from certain packages without it affecting the error log. For more information on how to configure the log files, see [Logging](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >
->**With AEM 6.4**, maintenance tasks are logged out of the box in a more information rich format at the INFO level. This allows for better visiblity into the state of the maintenance tasks.
+>**With AEM 6.4**, maintenance tasks are logged out of the box in a more information rich format at the INFO level. This workflow allows for better visibility into the state of the maintenance tasks.
 >
->In case you are using third party tools (such as Splunk) to monitor and react to maintenance task activity you can make use of the following log statements:
+>In case you are using third-party tools (such as Splunk) to monitor and react to maintenance task activity you can use the following log statements:
 
 ```
 Log level: INFO
@@ -454,7 +454,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### Request performance {#request-performance}
 
-The Request Performance page allows the analysis of the slowest page requests processed. Only content requests will be registered on this page. More specifically, the following requests will be captured:
+The Request Performance page allows the analysis of the slowest page requests processed. Only content requests are registered on this page. More specifically, the following requests are captured:
 
 1. Requests accessing resources under `/content`
 1. Requests accessing resources under `/etc/design`
@@ -488,26 +488,26 @@ The page displays:
 
 For any given query, Oak attempts to figure out the best way to execute based on the Oak indexes defined in the repository under the **oak:index** node. Depending on the query, different indexes may be chosen by Oak. Understanding how Oak is executing a query is the first step to optimizing the query.
 
-The Explain Query is a tool that explains how Oak is executing a query. It can be accessed by going to **Tools - Operations - Diagnosis** from the AEM Welcome Screen, then clicking on **Query Performance** and switching over to the **Explain Query** tab.
+The Explain Query is a tool that explains how Oak is executing a query. It can be accessed by going to **Tools - Operations - Diagnosis** from the AEM Welcome Screen. Then, click **Query Performance** and switch over to the **Explain Query** tab.
 
 **Features**
 
-* Supports the Xpath, JCR-SQL and JCR-SQL2 query languages
+* Supports the Xpath, JCR-SQL, and JCR-SQL2 query languages
 * Reports the actual execution time of the provided query
 * Detects slow queries and warns about queries that could be potentially slow
 * Reports the Oak index used to execute the query
 * Displays the actual Oak Query engine explanation
 * Provides click-to-load list of Slow and Popular queries
 
-Once you are in the Explain Query UI, all you need to do in order to use it is enter the query and press the **Explain** button:
+After you are in the Explain Query UI, enter the query, and press the **Explain** button:
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-The first entry in the Query Explanation section is the actual explanation. The explanation will show the type of index that was used to execute the query.
+The first entry in the Query Explanation section is the actual explanation. The explanation shows the type of index that was used to execute the query.
 
 The second entry is the execution plan.
 
-Ticking the **Include execution time** box before running the query will also show the amount of time the query was executed in. The **Include Node Count** option will report the node count. These allow for more information, that can be used for optimizing the indexes for your application or deployment.
+Ticking the **Include execution time** box before running the query also shows the amount of time the query was run in. The **Include Node Count** option reports the node count. The report allows for more information that can be used for optimizing the indexes for your application or deployment.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
@@ -525,25 +525,25 @@ The UI can be used to filter indexes in the table by typing in the filter criter
 
 ### Download Status ZIP {#download-status-zip}
 
-This will trigger the download of a zip containing useful information about the system status and configuration. The archive contains contains instance configurations, a list of bundles, OSGI, Sling metrics and statistics and this can result in a large file. You can reduce the impact of large status files by using the **Download Status ZIP **window. The window can be accessed from:** AEM &gt; Tools &gt; Operations &gt; Diagnosis &gt; Download Status ZIP.**
+This action triggers the download of a zip containing useful information about the system status and configuration. The archive contains instance configurations, a list of bundles, OSGI, Sling metrics and statistics, which can result in a large file. You can reduce the impact of large status files by using the **Download Status ZIP **window. The window can be accessed from:** AEM &gt; Tools &gt; Operations &gt; Diagnosis &gt; Download Status ZIP.**
 
-From this window you can select what to export (log files and or thread dumps) and the number of days of logs included in the download relative to the current date.
+From this window, you can select what to export (log files and or thread dumps) and the number of days of logs included in the download relative to the current date.
 
 ![download_status_zip](assets/download_status_zip.png)
 
 ### Download Thread Dump {#download-thread-dump}
 
-This will trigger the download of a zip containing information about the threads present in the system. Information about each thread is provided, such as its status, the classloader and the stacktrace.
+This action triggers the download of a zip containing information about the threads present in the system. Information about each thread is provided, such as its status, the classloader, and the stacktrace.
 
 ### Download Heap Dump {#download-heap-dump}
 
-You also have the ability to download a snapshot of the heap, in order to analyze it at a later time. Take note that this will trigger the download of a large file, in the order of hundreds of megabytes.
+You can download a snapshot of the heap to analyze it later. This action triggers the download of a large (hundreds of megabytes) file.
 
 ## Automated Maintenance Tasks {#automated-maintenance-tasks}
 
 The Automated Maintenance Tasks page is a place where you can view and track recommended maintenance tasks scheduled for periodic execution. The tasks are integrated with the Health Check system. The tasks can also be manually executed from the interface.
 
-In order to get to the Maintenance page in the Operations Dashboard, you need to go to **Tools - Operations - Dashboard - Maintenance** from the AEM Welcome screen, or directly follow this link:
+To get to the Maintenance page in the Operations Dashboard, from the AEM Welcome screen, go to **Tools - Operations - Dashboard - Maintenance**, or directly follow this link:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -556,7 +556,7 @@ The following tasks are available in the Operations Dashboard:
 1. The **Audit Log Maintenance** task, located under the **Weekly Maintenance Window** menu.
 1. The **Version Purge Maintenance** task, located under the **Weekly Maintenance Window** menu.
 
-The default timing for the daily maintenance window is 2 to 5 AM. The tasks configured to run in the weekly maintenance window will execute between 1 and 2 AM on Saturdays.
+The default timing for the daily maintenance window is 2:00 A.M. through 5:00 A.M. The tasks configured to run in the weekly maintenance window run between 1:00 A.M and 2:00 A.M. on Saturdays.
 
 You can also configure the timings by pressing the gear icon on any of the two maintenance cards:
 
@@ -572,12 +572,12 @@ For more information on performing Revision Clean Up, [see this dedicated articl
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
-By using the Lucene Binaries Cleanup task, you can purge lucene binaries and reduce the running data store size requirement. This is because the lucene's binary churn will be re-claimed daily instead of the earlier dependency on a successful [data store garbage collection](/help/sites-administering/data-store-garbage-collection.md) run.
+By using the Lucene Binaries Cleanup task, you can purge lucene binaries and reduce the running data store size requirement. Lucene's binary churn is reclaimed daily instead of the earlier dependency on a successful [data store garbage collection](/help/sites-administering/data-store-garbage-collection.md) run.
 
 Though the maintenance task was developed to reduce Lucene related revision garbage, there are general efficiency gains when running the task:
 
-* The weekly execution of the data store garbage collection task will complete more quickly
-* It may also slightly improve the overall AEM performance
+* The weekly running of the data store garbage collection task can complete more quickly.
+* It may also slightly improve the overall AEM performance.
 
 You can access the Lucene Binaries Cleanup task from: **AEM &gt; Tools &gt; Operations &gt; Maintenance &gt; Daily Maintenance Window &gt; Lucene Binaries Cleanup**.
 
@@ -587,10 +587,10 @@ For details on Data Store Garbage Collection, see the dedicated [documentation p
 
 ### Workflow purge {#workflow-purge}
 
-Workflows can also be purged from the Maintenance Dashboard. In order to run the Workflow Purge task, you need to:
+Workflows can also be purged from the Maintenance Dashboard. To run the Workflow Purge task, do the following:
 
-1. Click on the **Weekly Maintenance Window** page.
-1. In the following page, click the **Play** button in the **Workflow purge** card.
+1. Click the **Weekly Maintenance Window** page.
+1. In the following page, click **Play** in the **Workflow purge** card.
 
 >[!NOTE]
 >
@@ -602,14 +602,14 @@ For Audit Log Maintenance, see the [separate documentation page.](/help/sites-ad
 
 ### Version Purge {#version-purge}
 
-You can schedule the Version Purge maintenance task to delete old versions automatically. As a result, this minimizes the need to manually use the [Version Purge tools](/help/sites-deploying/version-purging.md). You can schedule and configure the Version Purge task by accessing **Tools &gt; Operations &gt; Maintenance &gt; Weekly Maintenance Window** and following these steps:
+You can schedule the Version Purge maintenance task to delete old versions automatically. This action minimizes the need to manually use the [Version Purge tools](/help/sites-deploying/version-purging.md). You can schedule and configure the Version Purge task by accessing **Tools &gt; Operations &gt; Maintenance &gt; Weekly Maintenance Window** and following these steps:
 
-1. Click the **Add** button.
+1. Click **Add**.
 1. Choose **Version Purge** from the drop-down menu.
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
 
-1. To configure the Version Purge task, click on the **gears** icon on the newly created Version Purge maintenance card.
+1. To configure the Version Purge task, click the **gears** icon on the newly created Version Purge maintenance card.
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
@@ -620,15 +620,15 @@ You can schedule the Version Purge maintenance task to delete old versions autom
 
 >[!NOTE]
 >
->To stop the maintenance task means to suspend its execution without losing track of the job already in progress.
+>Stopping the maintenance task means to suspend its running without losing track of the job already in progress.
 
 >[!CAUTION]
 >
->In order to optimize the repository size you should run the version purge task frequently. The task should be scheduled outside of business hours when there is a limited amount of traffic.
+>To optimize the repository size that you should run the version purge task frequently. The task should be scheduled outside of business hours when there is a limited amount of traffic.
 
 ## Custom Maintenance Tasks {#custom-maintenance-tasks}
 
-Custom maintenance tasks can be implemented as OSGi services. As the maintenance task infrastructure is based on Apache Sling's job handling, a maintenance task must implement the java interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. In addition, it must declare several service registration properties to be detected as a maintenance task, as listed below:
+Custom maintenance tasks can be implemented as OSGi services. As the maintenance task infrastructure is based on Apache Sling's job handling, a maintenance task must implement the Java&trade; interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. In addition, it must declare several service registration properties to be detected as a maintenance task, as listed below:
 
 <table>
  <tbody>
@@ -640,19 +640,19 @@ Custom maintenance tasks can be implemented as OSGi services. As the maintenance
   </tr>
   <tr>
    <td>granite.maintenance.isStoppable</td>
-   <td>Boolean attribute defining whether the task can be stopped by the user. If a task declares that it is stoppable it must check during its execution whether it has been stopped and then act accordingly. The default is false.</td>
+   <td>Boolean attribute defining whether the task can be stopped by the user. If a task declares that it is stoppable, it must check during its running whether it is stopped, and then act accordingly. The default is false.</td>
    <td>true</td>
    <td>Optional</td>
   </tr>
   <tr>
    <td>granite.maintenance.mandatory</td>
-   <td>Boolean attribute defining whether a task is mandatory and must be run periodically. If a task is mandatory but currently not in any active schedule window, a Health Check will report this as an error. The default is false.</td>
+   <td>Boolean attribute defining whether a task is mandatory and must be run periodically. If a task is mandatory but currently not in any active schedule window, a Health Check report this error. The default is false.</td>
    <td>true</td>
    <td>Optional</td>
   </tr>
   <tr>
    <td>granite.maintenance.name</td>
-   <td>A unique name for the task - this is used to reference the task. This is usually a simple name.</td>
+   <td>A unique name for the task - the name is used to reference the task and is just a simple name.</td>
    <td>MyMaintenanceTask</td>
    <td>Required</td>
   </tr>
@@ -664,16 +664,16 @@ Custom maintenance tasks can be implemented as OSGi services. As the maintenance
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>This is a unique topic of the maintenance task.<br /> The Apache Sling job handling will start a job with exactly this topic to execute the maintenance task and as the task is registered for this topic it gets executed.<br /> The topic must start with <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>A unique topic of the maintenance task.<br /> The Apache Sling job handling starts a job with exactly this topic to run the maintenance task and as the task is registered for this topic it gets run.<br /> The topic must start with <i>com/adobe/granite/maintenance/job/</i></td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>Required</td>
   </tr>
  </tbody>
 </table>
 
-Apart from the above service properties, the `process()` method of the `JobConsumer` interface needs to be implemented by adding the code that should be executed for the maintance task. The provided `JobExecutionContext` can be used to output status information, check if the job is stopped by the user and create a result (success or failed).
+Apart from the above service properties, the `process()` method of the `JobConsumer` interface must be implemented by adding the code that should be executed for the maintenance task. The provided `JobExecutionContext` can be used to output status information, check if the job is stopped by the user and create a result (success or failed).
 
-For situations where a maintenance task should not be run on all installations (for example, run only on the publish instance), you can make the service require a configuration in order to be active by adding `@Component(policy=ConfigurationPolicy.REQUIRE)`. You can then mark the according configuration as being run mode dependent in the repository. For more information, see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
+For situations where a maintenance task should not be run on all installations (for example, run only on the publish instance), you can make the service require a configuration to be active by adding `@Component(policy=ConfigurationPolicy.REQUIRE)`. You can then mark the according configuration as being run mode dependent in the repository. For more information, see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
 
 Below is an example of a custom maintenance task that deletes files from a configurable temporary directory which have been modified in the last 24 hours:
 
@@ -693,11 +693,11 @@ After the service is deployed, it is exposed to the Operations Dashboard UI. You
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-This will add a corresponding resource at /apps/granite/operations/config/maintenance/`schedule`/`taskname`. If the task is run mode dependent, the property granite.operations.conditions.runmode needs to be set on that node with the values of the runmodes which need to be active for this maintenance task.
+This action adds a corresponding resource at /apps/granite/operations/config/maintenance/`schedule`/`taskname`. If the task is run mode dependent, the property granite.operations.conditions.runmode must be set on that node with the values of the run modes that must be active for this maintenance task.
 
 ## System Overview {#system-overview}
 
-The **System Overview Dashboard** displays a high-level overview of the configuration, hardware and health of the AEM instance. This means that system health status is transparent and all the information is aggregated in a single dashboard.
+The **System Overview Dashboard** displays a high-level overview of the configuration, hardware, and health of the AEM instance. System health status is transparent, and all the information is aggregated in a single dashboard.
 
 >[!NOTE]
 >
@@ -711,9 +711,9 @@ To access the System Overview Dashboard, navigate to **Tools &gt; Operations &gt
 
 ### System Overview Dashboard Explained {#system-overview-dashboard-explained}
 
-The table below, describes all the informations displayed in the System Overview Dashboard. Keep in mind that when there is no relevant information to show (for example, backup is not in progress, there are no health checks that are critical) the respective section will display the "No Entries" message.
+The table below, describes all the information displayed in the System Overview Dashboard. When there is no relevant information to show (for example, backup is not in progress, there are no health checks that are critical) the respective section displays the "No Entries" message.
 
-You can also download a `JSON` file summarizing the dashboard information by clicking the **Download** button in the upper right-hand corner of the dashboard.The `JSON` endpoint is `/libs/granite/operations/content/systemoverview/export.json` and it can be used in a `curl` script for external monitoring.
+You can also download a `JSON` file summarizing the dashboard information by clicking the **Download** button in the upper right-hand corner of the dashboard. The `JSON` endpoint is `/libs/granite/operations/content/systemoverview/export.json` and it can be used in a `curl` script for external monitoring.
 
 <table>
  <tbody>
@@ -754,7 +754,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
     <ul>
      <li>a red tag for failed tasks</li>
      <li>an orange tag for running tasks (as they might impact performance)</li>
-     <li>grey tags for every other status</li>
+     <li>gray tags for every other status</li>
     </ul> </td>
    <td>
     <ul>
@@ -765,7 +765,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
    <td>System</td>
    <td>
     <ul>
-     <li>operating system and OS version (for example, Mac OS X)</li>
+     <li>operating system and OS version (for example, macOS X)</li>
      <li>system load average, as retrieved from <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
      <li>disk space (on the partition where the home directory is located)</li>
      <li>maximum heap, as returned by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
@@ -819,7 +819,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
     <ul>
      <li>a red tag for blocked agents or configuration errors</li>
      <li>an orange tag for paused agents</li>
-     <li>a grey tag for paused, idle or running agents<br /> </li>
+     <li>a gray tag for paused, idle, or running agents<br /> </li>
     </ul> </td>
    <td>Distribution page<br /> </td>
   </tr>
@@ -834,7 +834,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
    <td><p>Indicated visually:<br /> </p>
     <ul>
      <li>a red tag for blocked agents</li>
-     <li>a grey tag for paused agents</li>
+     <li>a gray tag for paused agents</li>
     </ul> </td>
    <td>Replication page</td>
   </tr>
@@ -893,7 +893,7 @@ You can also download a `JSON` file summarizing the dashboard information by cli
   </tr>
   <tr>
    <td>Backup</td>
-   <td>Displays "Online Backup in Progress" if this is the case.</td>
+   <td>Displays "Online Backup in Progress" if so.</td>
    <td>N/A</td>
    <td>N/A</td>
   </tr>

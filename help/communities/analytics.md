@@ -22,7 +22,7 @@ Adobe Analytics and Adobe Experience Manager (AEM) are both solutions of Adobe M
 
 Adobe Analytics may be configured for AEM Communities so that, as a member interacts with supported Communities features, events are sent to Adobe Analytics from which reports are generated.
 
-For example, when a member of an enablement community site views a video resource assigned to them, the resource player will send events to Analytics, including video heartbeat data. From the community site, administrators are able to see various reports regarding the playing of the video.
+For example, from the community site, administrators are able to see various reports regarding the playing of the video.
 
 Further, analytics is necessary for:
 
@@ -39,7 +39,6 @@ Further, analytics is necessary for:
 
 Supported Communities features include:
 
-* [Enablement resources](/help/communities/resources.md)
 * [Forum](/help/communities/forum.md)
 * [QnA](/help/communities/working-with-qna.md)
 * [Blog](/help/communities/blog-feature.md)
@@ -147,7 +146,7 @@ To enable Video Heartbeat reporting after [configuring the Analytics report suit
 * Enable [Analytics for a community site](#enable-analytics-for-a-community-site)
 * Associate the `Marketing Cloud Org Id` with the community site
 
-The `Marketing Cloud Org Id` may be entered at the time of [community site creation](/help/communities/sites-console.md#enablement) or later by [modifying](/help/communities/sites-console.md#modifying-site-properties) the community site properties.
+The `Marketing Cloud Org Id` may be entered at the time of [community site creation](/help/communities/sites-console.md) or later by [modifying](/help/communities/sites-console.md#modifying-site-properties) the community site properties.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -176,7 +175,7 @@ On the Create Configuration dialog, the values to be entered identify the config
 * **Title**
   
   (Required) A display title for the configuration.
-  For example, enter *Enablement Community Analytics*
+  For example, enter *Community Analytics*
 
 * **Name**
   
@@ -240,7 +239,7 @@ To save the settings:
     
 * Select **OK**.
 
-  ![analytics-enablement-settings](assets/analytics-settings1.png)
+  ![analytics-settings](assets/analytics-settings1.png)
 
 ### Create Framework {#create-framework}
 
@@ -253,7 +252,7 @@ After successful configuration of the basic connection to Adobe Analytics, it is
 * **Title**
   
   (Required) A display title for the framework
-  For example, enter *Enablement Community Framework*.
+  For example, enter *Community Framework*.
 
 * **Name**
   
@@ -272,7 +271,7 @@ Creating the Analytics Framework opens the framework for configuration.
 
 The purpose of the framework is to map AEM variables to Analytics variables (eVars and events). The Analytics variables available for mapping are [defined in the report suite](#adobe-analytics-report-suite-for-video-reporting).
 
-![analytics-enablement-framework](assets/analytics-framework1.png)
+![analytics-framework](assets/analytics-framework1.png)
 
 ### Select Report Suite {#select-report-suite}
 
@@ -386,7 +385,7 @@ Once the community site is saved with Analytics enabled and the cloud config fra
 
 If using an existing report suite that mapped any of the variables within evar1 through evar11 and event1 through event7, it will be necessary to [remap the AEM variables](#modifying-analytics-variable-mapping) and restore the original mapping.
 
-Following is an example of default mappings after following the [getting started tutorial](/help/communities/getting-started-enablement.md):
+Following is an example of default mappings:
 
 ![map-analytics](assets/map-analytics1.png)
 

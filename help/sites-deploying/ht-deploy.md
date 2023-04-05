@@ -19,6 +19,6 @@ The following topics describe how to accomplish specific AEM deployment tasks:
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [How to Purge Workflows and the Audit Log](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [Performance Tuning Tips](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+* [Performance Tuning Tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 * [How to Remove Features From the Welcome Screen](/help/sites-developing/customizing-the-welcome-console.md)
 * [How to Turn Off the Location Tracker Feature](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

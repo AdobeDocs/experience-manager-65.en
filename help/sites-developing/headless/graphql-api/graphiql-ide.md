@@ -13,13 +13,13 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 >In previous releases, a package was needed to install the GraphiQL IDE. If you have this installed, it can now be removed.
 
 >[!NOTE]
->You must have [configured your endpoints](/help/assets/content-fragments/graphql-api-content-fragments.md#graphql-aem-endpoint) in the [configuration browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
+>You must have [configured your endpoints](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
 
 The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabling you to:
 
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries
 * directly input new queries 
-* create, and access, **[Persisted Queries](/help/assets/content-fragments/persisted-queries.md)**
+* create, and access, **[Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md)**
 * run your queries to immediately see the the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
@@ -34,11 +34,11 @@ You can access the query editor from either:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
-You can use GraphiQL on your system so that queries can be requested by your client application using GET requests, and for publishing queries. For production usage, you can then [move your queries to your production environment](/help/assets/content-fragments/persisted-queries.md#transfer-persisted-query-production). Initially to production author for validating newly authored content with the queries, and finally production publish for live consumption.
+You can use GraphiQL on your system so that queries can be requested by your client application using GET requests, and for publishing queries. For production usage, you can then [move your queries to your production environment](/help/sites-developing/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Initially to production author for validating newly authored content with the queries, and finally production publish for live consumption.
 
 ## Selecting your endpoint {#selecting-endpoint}
 
-As a first step you need to select the **[Endpoint](/help/assets/content-fragments/graphql-api-content-fragments.md#graphql-aem-endpoint)** that you want to use for the queries. The endpoint is appropriate to the Sites configuration that you want to use for your queries.
+As a first step you need to select the **[Endpoint](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)** that you want to use for the queries. The endpoint is appropriate to the Sites configuration that you want to use for your queries.
 
 This is available from the drop-down list at the top-right.
 
@@ -65,7 +65,7 @@ Use **Save As** to persist your new query.
 
 ## Updating your persisted query {#updating-persisted-query}
 
-Select the query you want to update from the list in the **[Persisted Queries](/help/assets/content-fragments/persisted-queries.md)** panel (far left).
+Select the query you want to update from the list in the **[Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md)** panel (far left).
 
 The query will be shown in the editor panel. Make any changes you need, then use **Save** to commit your updates to the persisted query.
 
@@ -82,7 +82,7 @@ In either case, the query showing in the editor panel is the query that will be 
 
 <!-- more details needed here? -->
 
-The GraphiQL IDE also allows you to manage your [Query Variables](/help/assets/content-fragments/graphql-api-content-fragments.md#graphql-variables).
+The GraphiQL IDE also allows you to manage your [Query Variables](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 For example:
 
@@ -125,7 +125,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publishing persisted queries {#publishing-persisted-queries}
 
-Once you have selected your [persisted query](/help/assets/content-fragments/persisted-queries.md) from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
+Once you have selected your [persisted query](/help/sites-developing/headless/graphql-api/persisted-queries.md) from the list (left panel) you can use the **Publish** and **Unpublish** actions. This will activate them to your publish environment (for example, `dev-publish`) for easy access by your applications when testing.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ The **Delete** option is also accessible via the three vertical dots to the righ
 
 ## Installing your Persisted Query on Production {#installing-persisted-query-production}
 
-After developing and testing your persisted query with GraphiQL, the final goal is to [transfer it to your production environment](/help/assets/content-fragments/persisted-queries.md#transfer-persisted-query-production) for use by your applications.
+After developing and testing your persisted query with GraphiQL, the final goal is to [transfer it to your production environment](/help/sites-developing/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) for use by your applications.
 
 ## Keyboard shortcuts {#keyboard-shortcuts}
 

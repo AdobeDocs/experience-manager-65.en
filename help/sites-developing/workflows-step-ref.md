@@ -20,7 +20,7 @@ Workflow models consist of a series of steps of various types. According to the 
 >
 >This section covers the standard Workflow steps.
 >
->For module specific steps see also:
+>For module-specific steps see the following:
 >
 >* [AEM Forms Workflow Step Reference](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Processing Assets Using Media Handlers and Workflows](/help/assets/media-handlers.md)
@@ -42,17 +42,16 @@ A combination of the following properties are available for most workflow step c
 
 * **Workflow Stage**
 
-  A drop down selector to apply a [Stage](/help/sites-developing/workflows.md#workflow-stages) to the step.
+  A drop-down selector to apply a [Stage](/help/sites-developing/workflows.md#workflow-stages) to the step.
 
 * **Timeout**
 
-  The period after which the step will be "timed out".
+  The period after which the step "times out".
   You can select between: **Off**, **Immediate**, **1h**, **6h**, **12h**, **24h**.
 
 * **Timeout Handler**
 
-  The handler which will control the workflow when the step times out; for example:
-  `Auto Advancer`
+  The handler that controls the workflow when the step times out. For example, `Auto Advancer`
 
 * **Handler Advance**
 
@@ -64,19 +63,19 @@ The following properties are available for many workflow step components, on the
 
 * **Notify user via email**
 
-    * You can notify participant(s) by sending them an email when the workflow reaches the step.
-    * If enabled, an email will be sent to the user defined by the property **User/Group** or to each member of the group if a group is defined.
+    * You can notify participants by sending them an email when the workflow reaches the step.
+    * If enabled, an email is sent to the user defined by the property **User/Group**, or to each member of the group if a group is defined.
 
 * **User/Group**
 
-    * A drop down selection box will allow you to navigate and select a user or group.
-    * If you assign the step to a specific user, then only this user can take action on the step.
-    * If you assign the step to an entire group, then when the workflow reaches this step all users in this group will have the action in their **Workflow Inbox**.
+    * A drop-down selection box lets you navigate to and select a user or group.
+    * If you assign the step to a specific user, then only this user can act on the step.
+    * If you assign the step to an entire group, then when the workflow reaches this step, all users in this group has the action in their **Workflow Inbox**.
     * See [Participating in Workflows](/help/sites-authoring/workflows-participating.md) for more information.
 
 ## AND Split {#and-split}
 
-The **AND Split** creates a split in the workflow, after which both branches will be active. You add workflow steps to each branch as required. This step enables you to introduce multiple processing paths into the workflow. For example, you can allow certain review steps to occur in parallel, so saving time.
+The **AND Split** creates a split in the workflow, after which both branches are active. You add workflow steps to each branch as required. This step lets you introduce multiple processing paths into the workflow. For example, you can allow certain review steps to occur in parallel, saving time.
 
 ![wf-26](assets/wf-26.png)
 
@@ -97,7 +96,7 @@ To configure the split:
 
 A container step starts another workflow model that executes as a child workflow.
 
-This container can allow you to reuse workflow models to implement common sequences of steps. For example a translation workflow model could be used in multiple editing workflows.
+This container can allow you to reuse workflow models to implement common sequences of steps. For example, a translation workflow model can be used in multiple editing workflows.
 
 ![wf-28](assets/wf-28.png)
 
@@ -135,12 +134,12 @@ To configure the step, edit and use the following tabs:
 
 #### Simulating a for Loop {#simulating-a-for-loop}
 
-Simulating a for loop requires that you maintain a count of the number of loop iterations that have occurred:
+Simulating a "for loop" requires that you maintain a count of the number of loop iterations that have occurred:
 
 * The count typically represents an index of items that are acted on in the workflow.
 * The count is evaluated as the exit criteria of the loop.
 
-For example, to implement a workflow that performs an action on several JCR nodes you can use a loop counter as an index for the nodes. To persist the count, store an `integer` value in the data map of the workflow instance. Use the script of the **Goto Step** to increment the count as well as to compare the count to the exit criteria.
+For example, to implement a workflow that performs an action on several JCR nodes you can use a loop counter as an index for the nodes. To persist the count, store an `integer` value in the data map of the workflow instance. To increment the count and to compare the count to the exit criteria, use the script of the **Goto Step**.
 
 ```
 function check(){
@@ -176,15 +175,15 @@ In the **Goto Step**, use **Set Variable** as the **Target Step** and **count &l
 
 ![Condition for simulating a for loop](assets/variable_use_case_count1_new.png)
 
-The **Set Variable** step executes repeatedly incrementing the value of **count** variable by 1 on each execution till the value reaches 5.
+The **Set Variable** step runs repeatedly, incrementing the value of **count** variable by 1 on each run until the value reaches 5.
 
 ## OR Split {#or-split}
 
-The **OR Split** creates a split in the workflow, after which only one branch will be active. This step enables you to introduce conditional processing paths into your workflow. You add workflow steps to each branch as required.
+The **OR Split** creates a split in the workflow, after which only one branch is active. This step enables you to introduce conditional processing paths into your workflow. You add workflow steps to each branch as required.
 
 >[!NOTE]
 >
->For additional information on creating an OR Split see: [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
+>See [OR Split step](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=en#use-a-variable)
 
 ![Branching using OR Split](assets/variables_orsplit_new.png)
 
@@ -201,11 +200,11 @@ To configure the split:
     * **Branches (*x)***
 
         * **Add Branch:** Add more branches to the step.
-        * **Select Routing Expression**: Select the routing expression to evaluate the active branch. Possible values include: Rule Definition, External Script, and ECMA script.
+        * **Select Routing Expression**: To evaluate the active branch, select the routing expression. Possible values include: Rule Definition, External Script, and ECMA script.
         * **Click to Add Expression**: Add expression to evaluate the active branch if you select **Rule Definition** as the routing expression.
         * **Script Path**: The path to a file that contains the script to evaluate the active branch if you select **External Script** as the routing expression.
         * **Script**: Add the script in the box to evaluate the active branch if you select **ECMA Script** as the routing expression.
-        * **Default Route**: The default branch is followed in case of multiple branches. You can specify only one branch as the default.
+        * **Default Route**: The default branch is followed if there are multiple branches. You can specify only one branch as the default.
 
   >[!NOTE]
   >
@@ -226,7 +225,7 @@ To configure the split:
 
 ### Participant Step {#participant-step}
 
-A **Participant Step** enables you to assign ownership for a particular action. The workflow will only proceed when the user has manually acknowledged the step. This is used when you want someone to take an action on the workflow; for example, a review step.
+A **Participant Step** enables you to assign ownership for a particular action. The workflow proceeds only when the user has manually acknowledged the step. This workflow is used when you want someone to act on the workflow. For example, a review step.
 
 Although not directly related, user authorization must be considered when assigning an action; the user must have access to the page that is the workflow payload.
 
@@ -247,7 +246,7 @@ To configure the step, edit and use the following tabs:
 
 >[!NOTE]
 >
->Some properties need to be configured to enable email notifications. You can also customize the email template or add an email template for a new language. See [Configuring Email Notification](/help/sites-administering/notification.md#configuringemailnotification) to configure email notifications in AEM.
+>Some properties must be configured to enable email notifications. You can also customize the email template or add an email template for a new language. To configure email notifications in AEM., see [Configuring Email Notification](/help/sites-administering/notification.md#configuringemailnotification).
 
 ### Dialog Participant Step {#dialog-participant-step}
 
@@ -269,10 +268,10 @@ To configure the step, edit and use the following tabs:
 
 #### Dialog Participant Step - Creating a dialog {#dialog-participant-step-creating-a-dialog}
 
-To create a dialog you need to create the dialog:
+To create a dialog, you must create the dialog:
 
-* Decide where the resulting data will be [stored in the payload](#dialog-participant-step-storing-data-in-the-payload).
-* [Define the dialog; this includes defining the fields used to collect (and save) the data](#dialog-participant-step-dialog-definition).
+* Decide where the resulting data is [stored in the payload](#dialog-participant-step-storing-data-in-the-payload).
+* [Define the dialog; includes defining the fields that are used to collect and save the data](#dialog-participant-step-dialog-definition).
 
 #### Dialog Participant Step - Storing Data in the Payload {#dialog-participant-step-storing-data-in-the-payload}
 
@@ -284,14 +283,14 @@ You can store widget data in the workflow payload or in the work item metadata. 
       `./jcr:content/nodename`
 
     * The data is stored in the `nodename` property of the payload node. If the node does not contain that property, the property is created.
-    * When stored with the payload, subsequent uses of the dialog with the same payload overwrites the value of the property.
+    * When stored with the payload, subsequent uses of the dialog with the same payload overwrite the value of the property.
 
 * **Store Data with the Work Item**
 
     * To store widget data as a property of the work item metadata, use the following format for the value of the name property:
       `nodename`
 
-    * The data is stored in the `nodename` property of the work item `metadata`. The data is preserved if the dialog subsequently used with the same payload.
+    * The data is stored in the `nodename` property of the work item `metadata`. The data is preserved if the dialog is later used with the same payload.
 
 #### Dialog Participant Step - Dialog Definition {#dialog-participant-step-dialog-definition}
 
@@ -318,7 +317,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
    >[!NOTE]
    >
-   >For further information see [Creating and Configuring a Dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
+   >See [Creating and Configuring a Dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
 
 1. **Dialog Path Property**
 
@@ -328,7 +327,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
    `/apps/myapp/workflows/dialogs`
 
-   For the touch-enabled UI the following value is used for the **Dialog Path** property:
+   For the touch-enabled UI, the following value is used for the **Dialog Path** property:
 
    `/apps/myapp/workflow/dialogs/EmailWatch/cq:dialog`
 
@@ -336,7 +335,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
 
 1. **Example Dialog Definition**
 
-   The following XML code snippet represents a dialog that stores a `String` value in the `watchEmail` node of the payload content. The title node represents the [TextField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
+   The following XML code snippet represents a dialog that stores a `String` value in the `watchEmail` node of the payload content. The title node represents the [TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) component:
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -364,7 +363,7 @@ You can store widget data in the workflow payload or in the work item metadata. 
    </cq:dialog>
    ```
 
-   This example will, in the case of the touch-enabled UI, result in a dialog such as:
+   In the touch-enabled UI, this example results in a dialog such as the following:
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -405,10 +404,10 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
   >[!CAUTION]
   >
-  >You ***must*** not change anything in the `/libs` path.
+  >Do not change anything in the `/libs` path.
   >
   >
-  >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
+  >The reason is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
   This script selects the workflow initiator as the participant:
 
@@ -424,7 +423,7 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
 * **OSGi service**
 
-  Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. The interface defines the following members:
+  Services must implement the [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface. The interface defines the following members:
 
     * `SERVICE_PROPERTY_LABEL` field: Use this field to specify the name of the participant chooser. The name appears in a list of available participant choosers in the **Dynamic Participant Step** properties.
 
@@ -432,12 +431,12 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
   >[!CAUTION]
   >
-  >The `getParticipant` method returns the dynamically resolved Principal id. This can be either a group id or user id.
+  >The `getParticipant` method returns the dynamically resolved Principal id. This id can be either a group id or user id.
   >
   >
-  >However, a group id can only be used for a **Participant Step**, when a list of participants is returned. For a **Dynamic Participant Step** an empty list is returned and this cannot be used for delegation.
+  >However, a group id can only be used for a **Participant Step**, when a list of participants is returned. For a **Dynamic Participant Step**, an empty list is returned and cannot be used for delegation.
 
-  To make your implementation available to **Dynamic Participant Step** components, add your Java class to an OSGi bundle that exports the service, and deploy the bundle to the AEM server.
+  To make your implementation available to **Dynamic Participant Step** components, add your Java&trade; class to an OSGi bundle that exports the service, and deploy the bundle to the AEM server.
 
   >[!NOTE]
   >
@@ -445,7 +444,7 @@ Create an OSGi service or an ECMAScript that selects a user to assign the work i
 
 #### Dynamic Participant Step - Example Participant Chooser Service {#dynamic-participant-step-example-participant-chooser-service}
 
-The following Java class implements the `ParticipantStepChooser` interface. The class returns the name of the participant who initiated the workflow. The code uses the same logic that the sample script (`initiator-participant-chooser.ecma`) uses.
+The following Java&trade; class implements the `ParticipantStepChooser` interface. The class returns the name of the participant who initiated the workflow. The code uses the same logic that the sample script (`initiator-participant-chooser.ecma`) uses.
 
 The `@Property` annotation sets the value of the `SERVICE_PROPERTY_LABEL` field to `Workflow Initiator Participant Chooser`.
 
@@ -522,7 +521,7 @@ Create a form for use with a **Form Participant Step** as normal. However, forms
 
   `./jcr:content/path_to_node`
 
-* The form must include a **Workflow Submit Button(s)** component. You do not configure any properties of the component.
+* The form must include a **Workflow Submit Button** component. You do not configure any properties of the component.
 
 The requirements of your workflow determine where you should store field data. For example, field data can be used to configure the properties of page content. The following value of an **Element Name** property stores field data as the value of the `redirectTarget` property of the `jcr:content` node:
 
@@ -578,14 +577,14 @@ To configure the step, edit and use the following tabs:
 
         * The standard ECMAScripts and OSGi services, see [Built-In Processes for Process Steps](/help/sites-developing/workflows-process-ref.md).
         * Creating ECMAScripts for a Process step, see [Implementing a Process Step with an ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-        * Creating OSGi services for a Process step, see [Implementing a Process Step with a Java Class](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+        * Creating OSGi services for a Process step, see [Implementing a Process Step with a Java&trade; Class](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
 
     * **Handler Advance**: Select this option to automatically advance the workflow to the next step after execution. If not selected, the implementation script must handle workflow advancement.
     * **Arguments**: Arguments to be passed to the process.
 
 ## Set Variable {#set-variable}
 
-The Set Variable step allows you to set value of a variable and define the order in which the values are set. The variable is set in the order the variable mappings are listed in the Set Variable step.
+The Set Variable step allows you to set value of a variable and define the order in which the values are set. The variable is set in the order that the variable mappings are listed in the Set Variable step.
 
 ![Add mapping to set a variable](assets/set_variable_addmappingnew.png)
 
@@ -597,7 +596,7 @@ To configure the step, edit and use the following tabs:
 * **Mapping**
 
     * **Select Variable:** Use this option to select a variable to set its value.
-    * **Select Mapping Mode:** Select a mapping mode to set the value for the variable. Depending on the data type of the variable, you can use the following options to set value of a variable:
+    * **Select Mapping Mode:**  To set the value for the variable, select a mapping mode. Depending on the data type of the variable, you can use the following options to set value of a variable:
 
         * **Literal:** Use the option when you know the exact value to specify.
         * **Expression:** Use the option when the value to use is calculated based on an expression. The expression is created in provided expression editor.
@@ -606,5 +605,5 @@ To configure the step, edit and use the following tabs:
         * **Relative to payload:** Use the option when the value to be saved to variable is available at a path relative to payload.
         * **Absolute path:** Use the option when the value to be saved to variable is available at an absolute path.
 
-    * **Specify Value:** Specify a value to map to the variable. The value that you specify in this field depends on the mapping mode.
+    * **Specify Value:** To map to the variable, specify a value. The value that you specify in this field depends on the mapping mode.
     * **Add Mapping:** Use this option to add more mappings to set a value for the variable.

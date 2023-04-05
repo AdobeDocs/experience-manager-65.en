@@ -78,10 +78,10 @@ GraphQL uses the following:
   
 * **[Fields](https://graphql.org/learn/queries/#fields)**
 
-* **[GraphQL Endpoint](#graphql-aem-endpoint)**
+* **[GraphQL Endpoint](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#graphql-aem-endpoint)**
   * The path in AEM that responds to GraphQL queries, and provides access to the GraphQL schemas. 
 
-  * See [Enabling your GraphQL Endpoint](#enabling-graphql-endpoint) for further details.
+  * See [Enabling your GraphQL Endpoint](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) for further details.
 
 See the [(GraphQL.org) Introduction to GraphQL](https://graphql.org/learn/) for comprehensive details, including the [Best Practices](https://graphql.org/learn/best-practices/).
 
@@ -93,18 +93,19 @@ With GraphQL you can perform queries to return either:
   
 * A **[list of entries](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM provides capabilities to convert queries (both types) to [Persisted Queries](/help/assets/content-fragments/persisted-queries.md), that can be cached by Dispatcher and the CDN.
+AEM provides capabilities to convert queries (both types) to [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md), that can be cached by Dispatcher and the CDN.
 
 ### GraphQL Query Best Practices (Dispatcher and CDN) {#graphql-query-best-practices}
 
-The [Persisted Queries](/help/assets/content-fragments/persisted-queries.md) are the recommended method to be used on publish instances as:
+The [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md) are the recommended method to be used on publish instances as:
 
 * they are cached
 * they are managed centrally by AEM 
 
+<!-- is this fully accurate? -->
 >[!NOTE]
 >
->Usually there is no dispatcher/CDN on author, so there is no gain in using persisted queries there; apart from testing them.
+>Usually there is no dispatcher/CDN on author, so there is no performance gain in using persisted queries there; apart from testing them.
 
 GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
 
@@ -113,89 +114,6 @@ While GraphQL also supports GET requests, these can hit limits (for example the 
 >[!NOTE]
 >
 >The ability to perform direct queries may be deprecated at some point in the future.
-
-## The GraphQL for AEM Endpoint {#graphql-aem-endpoint}
-
-The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
-
-* access the GraphQL schema,
-* send your GraphQL queries, 
-* receive the responses (to your GraphQL queries).
-
-There are two types of endpoints in AEM:
-
-* Global
-  * Available for use by all sites.
-  * This endpoint can use all Content Fragment Models from all Sites configurations (defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)).
-  * If there are any Content Fragment Models that should be shared among Sites configurations, then these should be created under the global Sites configurations.
-* Sites configurations:
-  * Corresponds to a Sites configuration, as defined in the [Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser).
-  * Specific to a specified site/project.
-  * A Sites configuration specific endpoint will use the Content Fragment Models from that specific Sites configuration together with those from the global Sites configuration.
-
->[!CAUTION]
->
->The Content Fragment Editor can allow a Content Fragment of one Sites configuration to reference a Content Fragment of another Sites configuration (via polices). 
->
->In such a case not all content will be retrievable using a Sites configuration specific endpoint. 
->
->The content author should control this scenario; for example, it may be useful to consider putting shared Content Fragment Models under the Global Sites configuration.
-
-The repository path of the GraphQL for AEM global endpoint is:
-
-`/content/cq:graphql/global/endpoint`
-
-For which your app can use the following path in the request URL:
-
-`/content/_cq_graphql/global/endpoint.json`
-
-To enable an endpoint for GraphQL for AEM you need to:
-
-* [Enable your GraphQL Endpoint](#enabling-graphql-endpoint)
-* [Publish your GraphQL Endpoint](#publishing-graphql-endpoint)
-
-### Enabling your GraphQL Endpoint {#enabling-graphql-endpoint}
-
-To enable a GraphQL Endpoint you first need to have an appropriate configuration. See [Content Fragments - Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-
->[!CAUTION]
->
->If the [use of content fragment models have not been enabled](/help/assets/content-fragments/content-fragments-configuration-browser.md), the **Create** option will not be available.
-
-To enable the corresponding endpoint:
-
-1. Navigate to **Tools**, **Assets**, then select **GraphQL**.
-1. Select **Create**.
-1. The **Create new GraphQL Endpoint** dialog will open. Here you can specify:
-   * **Name**: name of the endpoint; you can enter any text.
-   * **Use GraphQL schema provided by**: use the dropdown to select the required site/project.
-
-   >[!NOTE]
-   >
-   >The following warning is shown in the dialog:
-   >
-   >* *GraphQL endpoints may introduce data security and performance issues if not managed carefully. Please ensure to set appropriate permissions after creating an endpoint.*
-   
-1. Confirm with **Create**.
-1. The **Next steps** dialog will provide a direct link to the Security console so that you can ensure that newly created endpoint has suitable permissions.
-
-   >[!CAUTION]
-   >
-   >The endpoint is accessible to everyone. This can - especially on publish instances - pose a security concern, as GraphQL queries can impose a heavy load on the server.
-   >
-   >You can set up ACLs, appropriate to your use case, on the endpoint. 
-
-### Publishing your GraphQL Endpoint {#publishing-graphql-endpoint}
-
-Select the new endpoint and **Publish** to make it fully available in all environments.
-
->[!CAUTION]
->
->The endpoint is accessible to everyone. 
->
->On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
->
->You must set up ACLs appropriate to your use case on the endpoint. 
 
 ## GraphiQL Interface {#graphiql-interface}
 
@@ -219,7 +137,7 @@ This provides features such as syntax-highlighting, auto-complete, auto-suggest,
 
 >[!NOTE]
 >
->For further details see [Using the GraphiQL IDE](/help/assets/content-fragments/graphiql-ide.md).
+>For further details see [Using the GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
 
 ## Use Cases for Author and Publish Environments {#use-cases-author-publish-environments}
 
@@ -270,7 +188,7 @@ For example, if a user created a Content Fragment Model called `Article`, then A
 
    * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
 
-1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
+1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
 In GraphQL for AEM, the schema is flexible. This means that it is auto-generated each and every time a Content Fragment Model is created, updated or deleted. The data schema caches are also refreshed when you update a Content Fragment Model.
 
@@ -371,7 +289,7 @@ To retrieve a single Content Fragment of a specific type, you also need to deter
 }
 ```
 
-See [Sample Query - A Single Specific City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment).
+See [Sample Query - A Single Specific City Fragment](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment).
 
 #### Metadata {#metadata}
 
@@ -423,7 +341,7 @@ You can view all the metadata GraphQL types if you view the Generated GraphQL sc
 >
 >So for example, by calling the `stringMetadata` field, you would receive an array of all the metadata that was stored in the repository as a `String` , and if you call `stringArrayMetadata` you would receive an array of all the metadata that was stored in the repository as `String[]`.
 
-See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb).
+See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb).
 
 #### Variations {#variations}
 
@@ -439,7 +357,7 @@ The `_variations` field has been implemented to simplify querying the variations
 }
 ```
 
-See [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation).
+See [Sample Query - All Cities with a Named Variation](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
@@ -535,11 +453,11 @@ For further examples, see:
 
 * details of the [GraphQL for AEM extensions](#graphql-extensions)
 
-* [Sample Queries using this Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
+* [Sample Queries using this Sample Content and Structure](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries-sample-content-fragment-structure)
 
-  * And the [Sample Content and Structure](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
+  * And the [Sample Content and Structure](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
 
-* [Sample Queries based on the WKND Project](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+* [Sample Queries based on the WKND Project](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
@@ -559,31 +477,31 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 * If you want to use a logical OR:
   * use ` _logOp: OR`
-  * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
+  * See [Sample Query - All Persons that have a name of "Jobs" or "Smith"](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
 
 * Logical AND also exists, but is (often) implicit
 
 * You can query on field names that correspond to the fields within the Content Fragment Model
-  * See [Sample Query - Full Details of a Company's CEO and Employees](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-full-details-company-ceos-employees)
+  * See [Sample Query - Full Details of a Company's CEO and Employees](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-full-details-company-ceos-employees)
 
 * In addition to the fields from your model, there are some system-generated fields (preceded by underscore):
 
   * For content:
 
     * `_locale` : to reveal the language; based on Language Manager
-      * See [Sample Query for multiple Content Fragments of a given locale](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
+      * See [Sample Query for multiple Content Fragments of a given locale](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
 
     * `_metadata` : to reveal metadata for your fragment
-      * See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+      * See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
 
     * `_model` : allow querying for a Content Fragment Model (path and title)
-      * See [Sample Query for a Content Fragment Model from a Model](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
+      * See [Sample Query for a Content Fragment Model from a Model](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
   
     * `_path` : the path to your Content Fragment within the repository
-      * See [Sample Query - A Single Specific City Fragment](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+      * See [Sample Query - A Single Specific City Fragment](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
 
     * `_reference` : to reveal references; including inline references in the Rich Text Editor
-      * See [Sample Query for multiple Content Fragments with Prefetched References](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
+      * See [Sample Query for multiple Content Fragments with Prefetched References](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
 
     * `_variation` : to reveal specific Variations within your Content Fragment
 
@@ -594,12 +512,12 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
       >[!CAUTION]
       >The system-generated field `_variation` cannot be used together with the filter `includeVariations`.
 
-      * See [Sample Query - All Cities with a Named Variation](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+      * See [Sample Query - All Cities with a Named Variation](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 
     * `_tags` : to reveal the IDs of Content Fragments or Variations that contain tags; this is an array of `cq:tags` identifiers. 
 
-      * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-      * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+      * See [Sample Query - Names of All Cities Tagged as City Breaks](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+      * See [Sample Query for Content Fragment Variations of a given Model that have a specific tag attached](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
   
       >[!NOTE]
       >
@@ -608,248 +526,23 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * And operations:
   
     * `_operator` : apply specific operators; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH` 
-      * See [Sample Query - All Persons that do not have a name of "Jobs"](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
-      * See [Sample Query - All Adventures where the `_path` starts with a specific prefix](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
+      * See [Sample Query - All Persons that do not have a name of "Jobs"](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
+      * See [Sample Query - All Adventures where the `_path` starts with a specific prefix](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
   
     * `_apply` : to apply specific conditions; for example,  `AT_LEAST_ONCE`
-      * See [Sample Query - Filter on an array with an item that must occur at least once](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
+      * See [Sample Query - Filter on an array with an item that must occur at least once](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
 
     * `_ignoreCase` : to ignore the case when querying
-      * See [Sample Query - All cities with SAN in the name, irrespective of case](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
+      * See [Sample Query - All cities with SAN in the name, irrespective of case](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
 
 * GraphQL union types are supported:
 
   * use `... on` 
-    * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-specific-model-content-reference)
+    * See [Sample Query for a Content Fragment of a specific Model with a Content Reference](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-specific-model-content-reference)
 
 * Fallback when querying nested fragments:
 
   * If the requested variation does not exist in a nested fragment, then the **Master** variation will be returned.
-
-<!--
-## Persisted Queries (Caching) {#persisted-queries-caching}
-
-After preparing a query with a POST request, it can be executed with a GET request that can be cached by HTTP caches or a CDN.
-
-This is required as POST queries are usually not cached, and if using GET with the query as a parameter there is a significant risk of the parameter becoming too large for HTTP services and intermediates.
-
-Persisted queries must always use the endpoint related to the [appropriate Sites configuration](#graphql-aem-endpoint); so they can use either, or both:
-
-* The Global configuration and endpoint
-  The query has access to all Content Fragment Models.
-* Specific Sites configuration(s) and endpoint(s)
-  Creating a persisted query for a specific Sites configuration requires a corresponding Sites-configuration-specific endpoint (to provide access to the related Content Fragment Models). 
-  For example, to create a persisted query specifically for the WKND Sites configuration, a corresponding WKND-specific Sites configuration, and a WKND-specific endpoint must be created in advance.
-
->[!NOTE]
->
->See [Enable Content Fragment Functionality in Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) for more details.
->
->The **GraphQL Persistence Queries** need to be enabled, for the appropriate Sites configuration. 
-
-For example, if there is a particular query called `my-query`, which uses a model `my-model` from the Sites configuration `my-conf`:
-
-* You can create a query using the `my-conf` specific endpoint, and then the query will be saved as following: 
-`/conf/my-conf/settings/graphql/persistentQueries/my-query`
-* You can create the same query using `global` endpoint, but then the query will be saved as following:
-`/conf/global/settings/graphql/persistentQueries/my-query`
-
->[!NOTE]
->
->These are two different queries - saved under different paths. 
->
->They just happen to use the same model - but via different endpoints.
-
-
-Here are the steps required to persist a given query:
-
-1. Prepare the query by PUTing it to the new endpoint URL `/graphql/persist.json/<config>/<persisted-label>`.
-
-   For example, create a persisted query:
-
-   ```xml
-   $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
-       -d \
-   '{
-     articleList {
-       items{
-           _path
-           author
-           main {
-               json
-           }
-       }
-     }
-   }'
-   ```
-
-1. At this point, check the response.
-
-   For example, check for success:
-
-     ```xml
-     {
-       "action": "create",
-       "configurationName": "wknd",
-       "name": "plain-article-query",
-       "shortPath": "/wknd/plain-article-query",
-       "path": "/conf/wknd/settings/graphql/persistentQueries/plain-article-query"
-     }
-     ```
-
-1. You can then replay the persisted query by GETing the URL `/graphql/execute.json/<shortPath>`.
-
-   For example, use the persisted query:
-
-   ```xml
-   $ curl -X GET \
-       http://localhost:4502/graphql/execute.json/wknd/plain-article-query
-   ```
-
-1. Update a persisted query by POSTing to an already existing query path.
-
-   For example, use the persisted query:
-
-   ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query" \
-       -d \
-   '{
-     articleList {
-       items{
-           _path
-           author
-           main {
-               json
-           }
-         referencearticle {
-           _path
-         }
-       }
-     }
-   }'
-   ```
-
-1. Create a wrapped plain query.
-
-   For example:
-
-   ```xml
-   $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-wrapped" \
-       -d \
-   '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }"}'
-   ```
-
-1. Create a wrapped plain query with cache control.
-
-   For example:
-
-   ```xml
-   $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-       -d \
-   '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
-   ```
-
-1. Create a persisted query with parameters:
-
-   For example:
-
-   ```xml
-   $ curl -X PUT \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-parameters" \
-       -d \
-   'query GetAsGraphqlModelTestByPath($apath: String!, $withReference: Boolean = true) {
-     articleByPath(_path: $apath) {
-       item {
-         _path
-           author
-           main {
-           plaintext
-           }
-           referencearticle @include(if: $withReference) {
-           _path
-           }
-         }
-       }
-     }'
-   ```
-
-1. Executing a query with parameters.
-
-   For example:
-
-   ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-
-   $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   ```
-
-1. To execute the query on publish, the related persist tree need to replicated
-
-   * Using a POST for replication:
-
-     ```xml
-     $curl -X POST   http://localhost:4502/bin/replicate.json \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-       -F cmd=activate
-     ```
-
-   * Using a package:
-     1. Create a new package definition.
-     1. Include the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-     1. Build the package.
-     1. Replicate the package.
-
-   * Using replication/distribution tool.
-     1. Go to the Distribution tool.
-     1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
-
-   * Using a workflow (via workflow launcher configuration):
-     1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
-
-1. Once the query configuration is on publish, the same principles apply, just using the publish endpoint.
-
-   >[!NOTE]
-   >
-   >For anonymous access the system assumes that the ACL allows "everyone" to have access to the query configuration.
-   >
-   >If that is not the case it will not be able to execute.
-
-   >[!NOTE]
-   >
-   >Any semicolons (";") in the URLs need to be encoded.
-   >
-   >For example, as in the request to Execute a persisted query:
-   >
-   >```xml
-   >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   >```
-
-## Querying the GraphQL endpoint from an External Website {#query-graphql-endpoint-from-external-website}
-
-To access the GraphQL endpoint from an external website you need to configure the:
-
-* [CORS Filter](#cors-filter)
-* [Referrer Filter](#referrer-filter)
--->
 
 ### CORS Filter {#cors-filter}
 
@@ -947,19 +640,7 @@ For example, to grant access for requests with the Referrer `my.domain` you can:
 
 ## Authentication {#authentication}
 
-See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/assets/content-fragments/graphql-authentication-content-fragments.md).
-
-<!-- to be addressed later -->
-
-<!--
-## Sorting {#sorting}
--->
-
-<!-- to be addressed later -->
-
-<!--
-## Paging {#paging}
--->
+See [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md).
 
 ## FAQs {#faqs}
 
