@@ -220,6 +220,14 @@ To know the platforms that are certified to work with this release, see the [tec
 
 For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
+### Install GraphQL Index Package for Experience Manager Content Fragments {#install-aem-graphql-index-add-on-package}
+
+Customers using GraphQL should install the [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). This enables them to add the required index definition based on the features they actually use.
+
+>[!NOTE]
+>
+>This package must only be installed once per instance; it does not need to be re-installed with every Service Pack.
+
 ### UberJar {#uber-jar}
 
 The UberJar for [!DNL Experience Manager] 6.5.16.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
@@ -262,9 +270,6 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 <!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
-
-* [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-  This package is needed for customers using GraphQL; this enables them to add the required index definition based on the features they actually use.
 
 * Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
