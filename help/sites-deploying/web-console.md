@@ -1,5 +1,5 @@
 ---
-title: Web Console
+title: Web console in Adobe Experience Manager
 seo-title: Web Console
 description: Learn how to use the AEM web console.
 seo-description: Learn how to use the AEM web console.
