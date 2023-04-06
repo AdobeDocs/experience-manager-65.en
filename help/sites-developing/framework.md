@@ -226,8 +226,9 @@ The following is a description of the effects in the repository when moving or m
     >[!NOTE]
     >
     >The `cq:movedTo` property is only added to the moved or merged tag if either of these conditions are met:
-    > 1. Tag is used in content (meaning it has a reference) OR
-    > 1. Tag has children that have already been moved.
+    >
+    >1. Tag is used in content (meaning it has a reference) OR
+    >1. Tag has children that have already been moved.
 
 * `cq:backlinks` keeps the references in the other direction, i.e. it keeps a list of all the tags that have been moved to or merged with tag B. This is mostly required to keep `cq:movedTo`properties up to date when tag B is moved/merged/deleted as well or when tag B is activated, in which case all its backlinks tags must be activated as well.
 
@@ -235,8 +236,8 @@ The following is a description of the effects in the repository when moving or m
     >
     >The `cq:backlinks` property is only added to the moved or merged tag if either of these conditions are met:
     >
-    > 1. Tag is used in content (meaning it has a reference) OR    >
-    > 1. Tag has children that have already been moved.
+    >1. Tag is used in content (meaning it has a reference) OR
+    >1. Tag has children that have already been moved.
 
 * Reading a `cq:tags` property of a content node involves the following resolving:
 

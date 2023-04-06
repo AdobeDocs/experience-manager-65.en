@@ -281,7 +281,7 @@ While it is recommended that you move on to the next part of the headless develo
 * [Content Fragments](/help/assets/content-fragments/content-fragments.md) - Technical documentation for Content Fragments.
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Technical documentation for Content Fragment Models.
 * [GraphQL Technical Documentation](https://graphql.org) - The GraphQL definition (external link)
-* [GraphQL API](/help/assets/content-fragments/graphql-api-content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
+* [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
-* [Persisted Queries](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) - Technical documentation on persisted queries in AEM
+* [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Technical documentation on persisted queries in AEM
 * [Headful and Headless in AEM](/help/sites-developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM

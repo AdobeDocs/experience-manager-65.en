@@ -61,7 +61,7 @@ When the integration is complete, you can [author targeted content](/help/sites-
 
 Integrating AEM with Adobe Target requires knowlege of Adobe Target, AEM Activities management, and AEM Audiences management. You should be familiar with the following information:
 
-* Adobe Target (See the [Adobe Target documentation](https://docs.adobe.com/content/help/en/target/using/target-home.html)).
+* Adobe Target (See the [Adobe Target documentation](https://experienceleague.adobe.com/docs/target/using/target-home.html)).
 * AEM Activities console (See [Managing Activities](/help/sites-authoring/activitylib.md)).
 * AEM Audiences (See [Managing Audiences](/help/sites-authoring/managing-audiences.md)).
 

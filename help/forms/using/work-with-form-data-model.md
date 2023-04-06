@@ -46,6 +46,10 @@ To add data model objects and services:
 
    Selected data model objects and services
 
+   >[!NOTE]
+   >
+   > If your Forms Data Model contains an object that is a reserved keyword for your relational database, it can lead to data addition, updation, or retrieval issues. So, avoid using such objects in your Form Data Model.
+
    The Model tab displays a graphical representation of all data model objects and their properties added to the form data model. Each data model object is represented by a box in the form data model.
 
    ![model-tab](assets/model-tab.png)
@@ -194,10 +198,10 @@ Use the request attribute to retrieve the associated properties from the data so
 
    >[!NOTE]
    >
-   > * If you use a static template, overlay the head.jsp at:
-   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
-   > * If you use an editable template, overlay the aftemplatedpage.jsp at:
-   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >* If you use a static template, overlay the head.jsp at:
+   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >* If you use an editable template, overlay the aftemplatedpage.jsp at:
+   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Set [!DNL paramMap] for the request attribute. For example, include the following code in the .jsp file in the apps folder:
 

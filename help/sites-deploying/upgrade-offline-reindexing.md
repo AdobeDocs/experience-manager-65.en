@@ -121,7 +121,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> The above index definition creation process is supported only from the `oak-run-1.12.0` version onwards. Targeting is done using the Granite repository bundle `com.adobe.granite.repository-x.x.xx.jar`.
+>The above index definition creation process is supported only from the `oak-run-1.12.0` version onwards. Targeting is done using the Granite repository bundle `com.adobe.granite.repository-x.x.xx.jar`.
 
 The above steps create a JSON file called `merge-index-definitions_target.json` which is the index definition.
 
@@ -135,7 +135,7 @@ Once this is done, copy the newly created checkpoint id and validate the lifetim
 
 >[!NOTE]
 >
-> This checkpoint will be deleted when the index is imported later.
+>This checkpoint will be deleted when the index is imported later.
 
 For more details, consult [checkpoint creation](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) from the Oak documentation.
 
@@ -172,7 +172,7 @@ It is recommended to clone the production system and create the offline index us
 
 ### Prepare a Runbook and Trial Run {#prepare-a-runbook-and-trial-run}
 
-It is recommended to prepare a [runbook](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) and perform a few trials before running the upgrade in production.
+It is recommended to prepare a [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) and perform a few trials before running the upgrade in production.
 
 ### Doc Traversal Mode With Offline Indexing {#doc-traversal-mode-with-offline-indexing}
 

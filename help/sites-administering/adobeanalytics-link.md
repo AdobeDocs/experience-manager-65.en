@@ -135,7 +135,7 @@ s.linkTrackVars= 'prop4';
 
 ## Example Link Tracking Configuration {#example-link-tracking-configuration}
 
-Perform the following procedures to explore the link tracking behavior of the Adobe Analytics integration. The procedures show results from [Adobe Marketing Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+Perform the following procedures to explore the link tracking behavior of the Adobe Analytics integration. The procedures show results from [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 ### General configuration {#general-configuration}
 

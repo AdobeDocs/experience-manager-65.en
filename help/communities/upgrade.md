@@ -29,12 +29,6 @@ When installing a new Communities feature pack on a deployment configured with M
 1. Reindex MSRP
    see section [MSRP Reindex Tool](/help/communities/msrp.md#msrp-reindex-tool).
 
-### Enablement 2.0 {#enablement}
-
-As of AEM 6.3, the enablement features no longer store reporting information in MySQL. The MySQL dependency is only there for tracking SCORM content.
-
-Please contact [customer care](https://helpx.adobe.com/marketing-cloud/contact-support.html) for assistance in migrating content from Enablement 1.0.
-
 ## Upgrading from AEM 6.0 {#upgrading-from-aem}
 
 If pre-existing UGC needs to be retained, then the means to do so depends on whether the deployment stored UGC [on-premise](#on-premise-storage) or in the [Adobe cloud](#adobe-cloud-storage).

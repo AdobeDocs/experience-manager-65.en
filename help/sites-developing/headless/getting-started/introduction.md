@@ -1,7 +1,7 @@
 ---
 title: Headless Getting Started Guide
 description: With this quick start guide, learn the essentials of AEM 6.5's powerful headless capabilities like Content Models, Content Fragments, and the GraphQL API.
-exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
+exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
 ---
 # Headless Getting Started Guide {#introduction}
 

@@ -102,7 +102,7 @@ npm module: [@adobe/aem-react-editable-components](https://www.npmjs.com/package
 
 #### Angular {#angular}
 
-npm module: coming soon
+npm module: [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Main Services and Components {#main-services-and-components}
 
@@ -144,7 +144,7 @@ Each component must be extended with a functionality that will decorate the oute
 
 A container is a component meant to contain and render child components. To do so, the container iterates over the `:itemsOrder`, `:items` and `:children` properties of its model.
 
-The container dynamically gets the child components from the store of the ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)` library. The container then extends the child component with the Model Provider capabilities and finally instantiate it.
+The container dynamically gets the child components from the store of the [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) library. The container then extends the child component with the Model Provider capabilities and finally instantiate it.
 
 ### Page {#page}
 
@@ -160,8 +160,6 @@ The Responsive Grid component should come pre-mapped to its AEM counterpart as t
 
 * `gridClassNames:` Provided class names for the responsive grid
 * `columnClassNames:` Provided class names for the responsive column
-
-See also the npm resource [@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Placeholder of the Reponsive Grid {#placeholder-of-the-reponsive-grid}
 

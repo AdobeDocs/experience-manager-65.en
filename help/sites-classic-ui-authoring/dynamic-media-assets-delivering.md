@@ -1,5 +1,5 @@
 ---
-title: Deliver Dynamic Media assets
+title: Deliver Dynamic Media assets in Sites Classic Authoring
 description: With Dynamic Media, you have several options to deliver your Dynamic Media assets - both video and images - to your website.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

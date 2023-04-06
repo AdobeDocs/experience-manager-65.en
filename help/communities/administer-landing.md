@@ -22,7 +22,6 @@ For an overview and getting started tutorials, visit:
 
 * [AEM Communities Overview](overview.md)
 * [Getting Started with AEM Communities](getting-started.md)
-* [Getting Started with AEM Communities for Enablement](getting-started-enablement.md)
 
 ## Administration and Configuration Topics {#administration-and-configuration-topics}
 
@@ -36,7 +35,6 @@ For an overview and getting started tutorials, visit:
 
     * [Moderation](moderation.md)
     * [Members and Groups Management](members.md)
-    * [Enablement Resources](resources.md)
     * [Reports](reports.md)
 
 * Communities [*tools*](tools.md):
@@ -71,12 +69,6 @@ A major feature of AEM Communities is the generation of user generated content (
 * [Notifications](notifications.md): ability for members to be notified of activity they follow.
 * [Subscriptions](subscriptions.md): ability for members to interact with the community using external email.
 * [Messaging](messaging.md): ability for members to interact with the community using internal messages.
-
-### Enablement Features {#enablement-features}
-
-* [Configuring Enablement](enablement.md): necessary information to correctly setup the enablement features.
-* [Analytics Configuration](analytics.md): necessary information for enabling Adobe Analytics for Communities features.
-* [Tagging Enablement Resources](tag-resources.md): necessary for creating enablement catalogs.
 
 ### Deployment {#deployment}
 

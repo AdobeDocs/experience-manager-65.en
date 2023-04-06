@@ -45,7 +45,7 @@ For example, see the settings for fields grouped under the **More Titles and Des
 
 >[!TIP]
 >
->See the [Extending Page Properties tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) for a guide to customizing page properties.
+>See the [Extending Page Properties tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) for a guide to customizing page properties.
 
 ## Configuring your Page Properties {#configuring-your-page-properties}
 

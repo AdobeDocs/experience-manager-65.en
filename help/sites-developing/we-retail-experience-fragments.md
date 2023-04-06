@@ -4,7 +4,7 @@ seo-title: Trying out Experience Fragments in We.Retail
 description: Trying out Experience Fragments in We.Retail
 seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices

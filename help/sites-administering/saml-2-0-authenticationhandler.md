@@ -27,8 +27,6 @@ This handler stores the encrypted SAML response message in the user-node ( `user
 >[!NOTE]
 >
 >See [a demonstration of AEM and SAML integration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html).
->
->To read an end to end community article, click: [Integrating SAML with Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
 ## Configuring The SAML 2.0 Authentication Handler {#configuring-the-saml-authentication-handler}
 
@@ -112,7 +110,15 @@ SAML assertions are signed and may optionally be encrypted. In order for this to
 >
 >The below steps are required only if handler should be able to sign or decrypt messages.
 
-1. Upload the Private key file by clicking **Select Private Key File**. The key meeds to be in PKCS#8 format with DER encoding.
+1. Create the certificate/keypair for AEM. The command to generate it via openssl should resemble the example below:
+
+   `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
+
+1. Convert the key to PKCS#8 format with DER encoding. This is the format required by the AEM keystore.
+
+   `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
+
+1. Upload the Private key file by clicking **Select Private Key File**.
 1. Upload the certificate file by clicking **Select Certificate Chain Files**.
 1. Assign an Alias, as shown below:
 

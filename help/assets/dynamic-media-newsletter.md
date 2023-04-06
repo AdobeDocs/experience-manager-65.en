@@ -34,7 +34,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
     * Summit customer spotlight: Under Armour.
     * Never miss an Experience Insider webinar.
     * Public sector spotlight: The urgent need for digital enrollment.
-    * Look what’s new in Experience Manager Innovation.
+    * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
@@ -48,7 +48,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Watch the on-demand Skill Builder webinars for Dynamic Media Classic.
   * View the Dynamic Media sessions from Online Adobe Summit 2020.
   * Learn more about Adobe's free Dynamic Media Classic audits.
-  * Meet `John Monroe`, Senior Program Manager for Customer Success Services.
+  * Meet `Jon Monroe`, Senior Program Manager for Adobe Customer Solutions.
 
 * **[February 2020, Issue 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html)**
 
@@ -59,7 +59,7 @@ In this one-stop shop archived newsletter, you can find valuable knowledge-build
   * Explore how to use the cropping magic of Dynamic Media.
   * To help you get more value from Dynamic Media Classic, take advantage of a free audit from Adobe.
   * Learn about the new user interface for Dynamic Media Classic.
-  * Meet `Georgia Myers`, Manager of Customer Success for Adobe Experience Cloud.
+  * Meet `Georgia Myers` of the Adobe Account Team for Adobe Experience Cloud.
 
 * **[January 2020, Issue 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html)**
 

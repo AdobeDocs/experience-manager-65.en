@@ -483,6 +483,16 @@ Uploading a package only adds the package content to the repository, but it is n
 
 Prior to installation of your package, Package Manager automatically creates a snapshot package that contains the content that will be overwritten. This snapshot will be reinstalled if you uninstall your package.
 
+>[!CAUTION]
+>
+>* If you are installing digital assets, you must:
+>  First, deactivate the WorkflowLauncher.
+>  Use the Components menu option of the OSGi console to deactivate 
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Next, when installation is complete, reactivate the WorkflowLauncher.
+>
+>Deactivating the WorkflowLauncher ensures that the Assets importer framework does not (unintentionally) manipulate the assets upon installation.
+
 1. [Access Package Manager.](#accessing)
 
 1. Open the package details of the package you wish to install from the package list by clicking the package name.

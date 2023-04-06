@@ -15,7 +15,7 @@ AEM can also be used to simply manage content, allowing presentation and deliver
 
 But this need not be a binary choice. AEM offers unprecedented flexibility, allowing you to exploit the advantages of both models for your project.
 
-![AEM Implementation Models](headless/assets/aem-implementation-models.png)
+![AEM Implementation Models](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 In a headful or full-stack model, the content is managed in the AEM repository and AEM components based on Java, HTL, etc. are used to render the content for the user experience. In this model, creating the content, styling it, presenting it, and delivering it all happen in AEM.
 
@@ -48,18 +48,18 @@ SPA integration falls on a spectrum of four levels in AEM.
   * Content is created, managed, and delivered independently in two separate systems.
 * **Level 1: Content fragment integration**
   * [Content Fragments](/help/assets/content-fragments/content-fragments.md) are used in AEM to create and manage limited content for the SPA.
-  * The SPA retrieves this content via AEM's [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+  * The SPA retrieves this content via AEM's [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
   * Some content is managed in AEM and some in an external system.
   * Content can only be viewed in the SPA.
 * **Level 2: Embed the SPA in AEM**
   * [Content Fragments](/help/assets/content-fragments/content-fragments.md) are used in AEM to create and manage content for the SPA.
-  * The SPA retrieves this content via AEM's [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+  * The SPA retrieves this content via AEM's [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
   * Some content is managed in AEM and some in an external system.
   * Content can be viewed in-context within AEM.
   * Limited content can be edited within AEM.
 * **Level 3: Embed and fully enable SPA in AEM**
   * [Content Fragments](/help/assets/content-fragments/content-fragments.md) are used in AEM to create and manage content for the SPA.
-  * The SPA retrieves this content via AEM's [GraphQL API.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+  * The SPA retrieves this content via AEM's [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
   * Content can be viewed in-context within AEM.
   * Most content can be edited within AEM.
 

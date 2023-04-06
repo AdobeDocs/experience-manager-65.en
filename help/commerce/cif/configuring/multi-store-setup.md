@@ -40,7 +40,7 @@ To connect an AEM site and AEM CIF Core Components so too to a dedicated store v
 
    >[!TIP]
    >
-   > Commerce catalogs can be addressed by using IDs or UIDs. UIDs got introduced in Adobe Commerce 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
+   >Commerce catalogs can be addressed by using IDs or UIDs. UIDs got introduced in Adobe Commerce 2.4.2. Only enable this if your commerce backend supports a GraphQL schema of version 2.4.2 or later.
 
 4. Assign the child configuration to an AEM site
 

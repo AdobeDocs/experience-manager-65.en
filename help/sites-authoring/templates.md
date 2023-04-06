@@ -599,7 +599,7 @@ Although all content created in **Structure** mode is visible in **Initial Conte
 >
 >Initial content is intended for preparing components and the page layout that serve as a starting point for creating the content. It is not intended to be the actual content that would remain as is. For this reason, initial content can not be translated.
 >
->If you need to include translatable text in your template such as in headers or footers, you can use the [localization features of the core components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/get-started/localization.html).
+>If you need to include translatable text in your template such as in headers or footers, you can use the [localization features of the core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Editing a Template - Layout - Template Author {#editing-a-template-layout-template-author}
 

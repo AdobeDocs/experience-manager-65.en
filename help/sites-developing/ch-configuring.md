@@ -18,26 +18,30 @@ Configure the [ContextHub](/help/sites-developing/contexthub.md) toolbar to cont
 
 ## Disabling ContextHub {#disabling-contexthub}
 
-By default, ContextHub is enabled in an AEM installation. ContextHub can be disabled to prevent it from loading js/css and initializing. There are two options to disable ContextHub:
+By default, ContextHub is enabled in an AEM installation. ContextHub can be disabled to prevent it from loading js/css and initializing. 
+
+<!--
+There are two options to disable ContextHub:
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
     1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the default **Configuration Container**
+    1. Click or tap the appropriate **Configuration Container**
     1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
     1. Click or tap **Disable ContextHub** and click or tap **Save**
 
 or
+-->
 
-* Use CRXDE Lite to set the property `disabled` to **true** under `/libs/settings/cloudsettings`
+* Use CRXDE Lite to set the property `disabled` to **true** under `/libs/settings/cloudsettings/legacy/contexthub`
 
 >[!NOTE]
 >
 >[Due to repository restructuring in AEM 6.4,](/help/sites-deploying/repository-restructuring.md) the location of ContextHub configurations changed from `/etc/cloudsettings` to:
 >
-> * `/libs/settings/cloudsettings`
-> * `/conf/global/settings/cloudsettings`
-> * `/conf/<tenant>/settings/cloudsettings`
+>* `/libs/settings/cloudsettings`
+>* `/conf/global/settings/cloudsettings`
+>* `/conf/<tenant>/settings/cloudsettings`
 
 ## Showing and Hiding the ContextHub UI {#showing-and-hiding-the-contexthub-ui}
 

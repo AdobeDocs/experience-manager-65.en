@@ -15,30 +15,30 @@ exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
 
 ## Overview {#overview}
 
-The AEM team at Adobe has been working closely with the open source project [NotSoSerial](https://github.com/kantega/notsoserial) to assist in mitigating the vulnerabilities described in **CVE-2015-7501**. NotSoSerial is licensed under the [Apache 2 license](https://www.apache.org/licenses/LICENSE-2.0) and includes ASM code licensed under its own [BSD-like license](https://asm.ow2.org/license.html).
+The AEM team at Adobe worked closely with the open-source project [NotSoSerial](https://github.com/kantega/notsoserial) to help in mitigating the vulnerabilities described in **CVE-2015-7501**. NotSoSerial is licensed under the [Apache 2 license](https://www.apache.org/licenses/LICENSE-2.0) and includes ASM code licensed under its own [BSD-like license](https://asm.ow2.io/).
 
 The agent jar included with this package is Adobe's modified distribution of NotSoSerial.
 
-NotSoSerial is a Java level solution to a Java level problem and is not AEM specific. It adds a preflight check to an attempt to deserialize an object. This check will test a class name against a firewall-style allow list and/or block list. Due to the limited number of classes in the default block list, this is unlikely to have an impact on your systems or code.
+NotSoSerial is a Java&trade; level solution to a Java&trade; level problem and is not AEM-specific. It adds a preflight check to an attempt to deserialize an object. This check tests a class name against a firewall-style allowlist, or blocklist, or both. Due to the limited number of classes in the default blocklist, this test is unlikely to have an impact on your systems or code.
 
-By default, the agent will perform a block list check against current known vulnerable classes. This block list is intended to protect you from the current list of exploits that use this type of vulnerability.
+By default, the agent performs a blocklist check against current known vulnerable classes. This blocklist is intended to protect you from the current list of exploits that use this type of vulnerability.
 
-The block list and allow list can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
+The blocklist and allowlist can be configured by following the instructions in the [Configuring the Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) section of this article.
 
 The agent is intended to help mitigate the latest known vulnerable classes. If your project is deserializing untrusted data, it may still be vulnerable to denial of service attacks, out of memory attacks, and unknown future deserialization exploits.
 
-Adobe officially supports Java 6, 7, and 8, however our understanding is that NotSoSerial supports Java 5 as well.
+Adobe officially supports Java&trade; 6, 7, and 8. However, Adobe's understanding is that NotSoSerial supports Java&trade; 5 as well.
 
 ## Installing the Agent {#installing-the-agent}
 
 >[!NOTE]
 >
->If you have previously installed the serialization hotfix for AEM 6.1, please remove the agent start commands from your java execution line.
+>If you have previously installed the serialization hotfix for AEM 6.1, remove the agent start commands from your Java&trade; run line.
 
 1. Install the **com.adobe.cq.cq-serialization-tester** bundle.
 
 1. Go to the Bundle Web Console at `https://server:port/system/console/bundles`
-1. Look for the serialization bundle and start it. This should dynamically autoload the NotSoSerial agent.
+1. Look for the serialization bundle and start it. Doing so dynamically autoloads the NotSoSerial agent.
 
 ## Installing the Agent on Application Servers {#installing-the-agent-on-application-servers}
 
@@ -62,7 +62,7 @@ The NotSoSerial agent is not included in the standard distribution of AEM for ap
 
 ## Configuring the agent {#configuring-the-agent}
 
-The default configuration is adequate for most installs. This includes a block list of known remote execution vulnerable classes and a allow list of packages where deserialization of trusted data should be relatively safe.
+The default configuration is adequate for most installs. This configuration includes a blocklist of known remote run vulnerable classes and an allowlist of packages where deserialization of trusted data is safe.
 
 The firewall configuration is dynamic, and can be changed at any time by:
 
@@ -75,23 +75,23 @@ The firewall configuration is dynamic, and can be changed at any time by:
    >
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
-This configuration contains the allow list, block list, and deserialization logging.
+This configuration contains the allowlist, blocklist, and deserialization logging.
 
 **Allow Listing**
 
-In the allow listing section, these are classes or package prefixes that will be allowed for deserialization. It is important to be aware that if you are deserializing classes of your own, you will need to add either the classes or packages to this allow list.
+In the allow listing section, these listings are classes, or package prefixes that are allowed for deserialization. If you are deserializing classes of your own, add either the classes or packages to this allowlist.
 
 **Block Listing**
 
-In the block listing section are classes that are never allowed for deserializaiton. The initial set of these classes is limited to classes that have been found vulnerable to remote execution attacks. The block list is applied before any allow listed entries.
+In the block listing section are classes that are never allowed for deserialization. The initial set of these classes is limited to classes that have been found vulnerable to remote execution attacks. The blocklist is applied before any allow listed entries.
 
-**Diagnostinc Logging**
+**Diagnostic Logging**
 
-In the section for diagnostic logging, you can chose several options to log when deserialization is taking place. These are only logged on first use, and are not logged again on subsequent uses.
+In the section for diagnostic logging, you can choose several options to log when deserialization is taking place. These options are only logged on first use, and are not logged again on subsequent uses.
 
-The default of **class-name-only** will inform you of the classes that are being deserialized.
+The default of **class-name-only** informs you of the classes that are being deserialized.
 
-You can also set the **full-stack** option which will log a java stack of the first deserialization attempt to inform you where your deserialization is taking place. This can be useful for finding and removing deserialization from your usage.
+You can also set the **full-stack** option which logs a Java&trade; stack of the first deserialization attempt to inform you where your deserialization is taking place. This option is useful for finding and removing deserialization from your usage.
 
 ## Verifying the Agent's Activation {#verifying-the-agent-s-activation}
 
@@ -99,21 +99,21 @@ You can verify the deserialization agent's configuration by browsing to the URL 
 
 * `https://server:port/system/console/healthcheck?tags=deserialization`
 
-Once you access the URL, a list of health checks related to the agent will be displayed. You can determine if the agent is properly activated by verifying that the health checks are passing. If they are failing, you may need to load the agent manually.
+After you access the URL, a list of health checks related to the agent is displayed. You can determine if the agent is properly activated by verifying that the health checks are passing. If they are failing, you must load the agent manually.
 
 For more information on troubleshooting issues with the agent, see [Handling Errors With Dynamic Agent Loading](#handling-errors-with-dynamic-agent-loading) below.
 
 >[!NOTE]
 >
->If you add `org.apache.commons.collections.functors` to the allow list, the health check will always fail.
+>If you add `org.apache.commons.collections.functors` to the allowlist, the health check always fails.
 
 ## Handling errors with dynamic agent loading {#handling-errors-with-dynamic-agent-loading}
 
-If errors are exposed in the log, or the verification steps detect a problem loading the agent, you might need to load the agent manually. This is also recommended in case you are using a JRE (Java Runtime Environment) instead of a JDK (Java Development Toolkit), since the tools for dynamic loading are not available.
+If errors are exposed in the log, or the verification steps detect a problem loading the agent, load the agent manually. This workflow is also recommended if you use a JRE (Java&trade; Runtime Environment) instead of a JDK (Java&trade; Development Toolkit), because the tools for dynamic loading are not available.
 
-In order to load the agent manually, follow the below instructions:
+To load the agent manually, do the following:
 
-1. Modify the JVM startup parameters of the CQ jar, adding the following option:
+1. Edit the JVM startup parameters of the CQ jar, adding the following option:
 
    ```shell
    -javaagent:<aem-installation-folder>/crx-quickstart/opt/notsoserial/notsoserial.jar
@@ -121,7 +121,7 @@ In order to load the agent manually, follow the below instructions:
 
    >[!NOTE]
    >
-   >This requires using the -nofork CQ/AEM option as well, along with the appropriate JVM memory settings, as the agent won't be enabled on a forked JVM.
+   >Requires that you use the -nofork CQ/AEM option as well, along with the appropriate JVM memory settings, as the agent is not enabled on a forked JVM.
 
    >[!NOTE]
    >
@@ -133,4 +133,4 @@ In order to load the agent manually, follow the below instructions:
 
 ## Other Considerations {#other-considerations}
 
-If you are running on an IBM JVM, please review the documentation on support for the Java Attach API at [this location](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
+If you are running on an IBM&reg; JVM, review the documentation on support for the Java&trade; Attach API at [this location](https://www.ibm.com/docs/en/sdk-java-technology/8?topic=documentation-java-attach-api).

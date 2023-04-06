@@ -22,8 +22,6 @@ In AEM Communities, in the publish environment, users can self-register and edit
 
 * [Moderate](moderation.md) user generated content (UGC).
 
-* Be [enablement resource](resources.md) contacts.
-
 * Be [privileged](#privileged-members-group) to create entries for blogs, calendars, QnA, and forums.
 
 Users registered in the publish environment are generally referred to as *community members (members)* to distinguish them from *users* in the author environment.
@@ -73,8 +71,6 @@ To manage users and user groups registered in the author environment, use the [S
 | administrators |The administrators group consists of system administrators who have all the abilities of a Community Administrator as well as the ability to manage the Community Administrators group. |
 | Community Administrators |The Community Administrators group automatically becomes a member of all community sites and any community groups created on the site. An initial member of the Community Administrators group is the administrators group. In the author environment, Community Administrators are able to create community sites, manage sites, manage members (they can ban members from the community), and moderate content. |
 | Community &lt;*site name*&gt; Sitecontentmanager |The Community Site Content Manager is able to perform traditional AEM authoring, content creation, and modifying pages for a community site. |
-| Community Enablement Managers |The Community Enablement Managers group consists of users who are available for assignment to manage a community site's Enablement Managers group. |
-| Community &lt;*site name* &gt; Siteenablementmanagers |The Community Site Enablement Managers group consists of users who have been assigned to manage a community site's enablement [resources](resources.md). |
 | None |An anonymous site visitor may not access the author environment. |
 
 ### System Administrators {#system-administrators}
@@ -190,43 +186,11 @@ There are four separate consoles available only in the author environment:
 | manages  | users on author       | user groups on author  | members on publish                                         | member groups on publish                                   |
 | requires | admin permission      | admin permission       | admin permission, tunnel service, user sync for publish farm | admin permission, tunnel service, user sync for publish farm |
 
-### Community Enablement Manager Role {#community-enablement-manager-role}
-
-The ability for a site visitor to self register is typically not allowed for an [enablement community](overview.md#enablement-community) as there are costs associated with each member. Enablement learners and resources are managed by a user assigned the [role](#author-group-roles) of `enablement manager` [during site creation](sites-console.md#enablement) on author (added as member of group `Community <site-name> Siteenablementmanagers`). The `enablement manager` is also responsible for [assigning learning resources](resources.md) to community members on author.
-
-Only users who are members of the global `Community Enablement Managers` group may be selected as an `enablement manager` for a specific community site.
-
-To create a user who may be assigned the role of `Community Site Enablement Manager`, use the classic UI security console in order to specify the path:
-
-On an author instance:
-
-1. Signed in with administrator privileges, browse to the classic UI security console.
-   
-   For example, [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-
-2. From the Edit menu, select **[!UICONTROL Create User]**.
-3. Fill in the `Create User` dialog.
-   * Path must be `/home/users/community`.
-4. Select **[!UICONTROL Create]**.
-
-   ![create-community-user](assets/create-community-user.png)
-
-* In the left pane, search for the newly created user and select to display in the right pane.
-
-  ![community-user](assets/view-community-user.png)
-
-In the left pane:
-
-1. Clear the search box and select **[!UICONTROL Hide Users]**.
-2. Locate and drag `community-enablementmanagers` to the **[!UICONTROL Groups]** tab of the new user displayed in the right pane.
-
-   ![assign-group](assets/assign-group.png)
-
 ### Community Administrators Role {#community-administrators-role}
 
 As stated in the [Author Group Roles](#author-group-roles) chart, members of the Community Administrators group are able to create community sites, manage sites, manage members (they can ban members from the community), and moderate content.
 
-Follow the same steps as creating and assigning a user to the role of [enablement manager](#communitysiteenablementmanagerrole), but add c `ommunity-administrators` group under the user's Groups tab.
+Follow the same steps as creating and assigning a user to the role of enablement manager, but add c `ommunity-administrators` group under the user's Groups tab.
 
 ### LDAP Integration {#ldap-integration}
 

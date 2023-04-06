@@ -116,10 +116,9 @@ These folders are of type `nt:folder` and should contain the appropriate bundle.
 
 If you have defined configurations for multiple run modes then you need to define which is to be used upon startup. There are several methods for specifying which run mode to use; the order of resolution is:
 
+1. [system properties (`-D`)](#using-a-system-property-in-the-start-script)
 1. [ `sling.properties` file](#using-the-sling-properties-file)
 1. [ `-r` option](#using-the-r-option)
-1. [system properties (`-D`)](#using-a-system-property-in-the-start-script)
-
 1. [Filename detection](#filename-detection-renaming-the-jar-file)
 
 When you are using an application server you can also [define the run mode in web.xml](#defining-the-run-mode-in-web-xml-with-application-server).

@@ -90,9 +90,11 @@ user-guide-description: Create, manage, process, and distribute digital assets.
   + [Extend Asset Editor](asseteditorx.md)
   + [[!DNL Assets] HTTP API](mac-api-assets.md)
   + [Content Fragments support in [!DNL Assets] HTTP API](assets-api-content-fragments.md)
-  + [GraphQL API for Content Fragments](content-fragments/graphql-api-content-fragments.md)
-  + [Authentication for Remote GraphQL Queries on Content Fragments](content-fragments/graphql-authentication-content-fragments.md)
-  + [GraphQL API with Content Fragments - Sample Content and Queries](/help/assets/content-fragments/content-fragments-graphql-samples.md)
+  + [GraphQL API for Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
+  + [Using the GraphiQL IDE](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
+  + [Persisted Queries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
+  + [Authentication for Remote GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
+  + [GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
   + [[!DNL Assets] proxy development](proxy.md)
 + Administer Assets {#administer}
   + [Supported file formats](assets-formats.md)
@@ -150,6 +152,7 @@ user-guide-description: Create, manage, process, and distribute digital assets.
 + Manage Assets {#managing}
   + [Manage digital assets](manage-assets.md)
   + [Manage collections](manage-collections.md)
+  + [Asset Selector](asset-selector.md)
   + [Enable duplicate detection](duplicate-detection.md)
   + [Organize digital assets](organize-assets.md)
   + [Manage video assets](managing-video-assets.md)

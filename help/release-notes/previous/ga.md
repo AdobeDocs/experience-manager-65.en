@@ -30,17 +30,17 @@ The list below provides an overview - while the subsequent pages list the full d
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
-The platform of [!DNL Adobe Experience Manager] 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java™ Content Repository: Apache Jackrabbit Oak 1.10.2.
+The platform of [!DNL Adobe Experience Manager] 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java&trade; Content Repository: Apache Jackrabbit Oak 1.10.2.
 
 The Quickstart uses Eclipse Jetty 9.4.15 as servlet engine.
 
-#### Java™ Support  {#java-support}
+#### Java&trade; Support  {#java-support}
 
-* New support for Java™ 11, and the already supported Java™ 8.
+* New support for Java&trade; 11, and the already supported Java&trade; 8.
 * For optimal performance, override default GC values with other values. For more information, see the [install and update](/help/sites-deploying/custom-standalone-install.md) section.
-* Java™ 11 and Java™ 8 maintenance updates are distributed by Adobe for customer usage in AEM-related projects, when not publicly available from Oracle.
+* Java&trade; 11 and Java&trade; 8 maintenance updates are distributed by Adobe for customer usage in AEM-related projects, when not publicly available from Oracle.
 
-#### Java™ Development {#java-development}
+#### Java&trade; Development {#java-development}
 
 * There are now [two versions of the Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), a recommended version with public interfaces that are not marked for deprecation, and a version that includes interfaces marked for deprecation.
 
@@ -77,7 +77,7 @@ Various enhancements have been made to the UI to make it more productive and eas
 
 #### Repository {#repository}
 
-* The foundation of Adobe Experience Manager 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java™ Content Repository: Apache Jackrabbit Oak 1.10.2.
+* The foundation of Adobe Experience Manager 6.5 build on top of updated versions of the OSGi-based framework (Apache Sling and Apache Felix) and the Java&trade; Content Repository: Apache Jackrabbit Oak 1.10.2.
 * For an overview of fixed issues, see [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) and [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
@@ -142,7 +142,7 @@ For more details on changes to AEM Screens - see the Release Notes in the [AEM S
   * "in" operator for strings, arrays, and objects:
 
     ```html
-    ${'a' in 'abc’}
+    ${'a' in 'abc'}
     ${100 in myArray}
     ${'a' in myObject}
     ```
@@ -208,7 +208,7 @@ For more details on changes to AEM Screens - see the Release Notes in the [AEM S
 * Simplify executing Translation Projects by setting translation jobs to approved status by default.
 * Allow updating translated pages with changes in 3rd-party Translation Memory.
 * Allow exporting translation jobs in JSON format.
-* Update Microsoft® Translation integration to use V3 API.
+* Update Microsoft&reg; Translation integration to use V3 API.
 
 #### Multi-Site Management (MSM) {#multi-site-management-msm}
 
@@ -365,7 +365,7 @@ In large enterprises the infrastructure required to create websites can be distr
 
 #### Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] provides enhanced rich-media authoring and delivery in [!DNL Experience Manager Assets] to drive cutting-edge experiences that are immersive and personalized. By uploading a single high-quality primary asset and using Adobe's advanced cloud rendering and viewers, you can deliver any combination of renditions on-the-fly to support your organization’s media strategy.
+[!DNL Dynamic Media] provides enhanced rich-media authoring and delivery in [!DNL Experience Manager Assets] to drive cutting-edge experiences that are immersive and personalized. By uploading a single high-quality primary asset and using Adobe's advanced cloud rendering and viewers, you can deliver any combination of renditions on-the-fly to support your organization's media strategy.
 
 For more details on new [!DNL Dynamic Media] features, see [Dynamic Media Release Notes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
@@ -421,10 +421,6 @@ AEM 6.5 Forms bring in several new features and enhancements. The highlights inc
 * Automated validation of input data in form data models
 
 See the [Summary of new features and enhancements in AEM 6.5 Forms](/help/forms/using/whats-new.md) for information about new and improved features and documentation resources.
-
-### [!DNL Experience Manager Livefyre] {#experience-manager-livefyre}
-
-You can integrate Livefyre with your AEM 6.5 instance. See [how to integrate Livefyre with AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/livefyre.html).
 
 ### Use Customer-focused Development {#leverage-customer-focused-development}
 
@@ -505,7 +501,7 @@ Find the complete matrix of supported platforms including support-level on [AEM 
 
 >[!NOTE]
 >
->Oracle has moved to a Long Term Support (LTS) model for Oracle Java™ SE products. Java™ 9 and 10 are non-LTS releases by Oracle. See [Oracle Java™ SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe supports LTS releases of Java™ to only run AEM in production. Java™ 11 is the recommended version to use with AEM 6.5.
+>Oracle has moved to a Long Term Support (LTS) model for Oracle Java&trade; SE products. Java&trade; 9 and 10 are non-LTS releases by Oracle. See [Oracle Java&trade; SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe supports LTS releases of Java&trade; to only run AEM in production. Java&trade; 11 is the recommended version to use with AEM 6.5.
 
 ## Deprecated and Removed Features {#deprecated-and-removed-features}
 
@@ -558,13 +554,13 @@ To resolve this error:
 
 ### Forms {#forms}
 
-* When AEM Forms is installed on Linux® operating system, Digital Signature with Hardware Security Module do not work. (CQ-4266721)  
-* (AEM Forms on WebSphere® only) The **Forms Workflow** &gt; **Task Search** option does not return any result if you search for an **Administrator** with **Username** as the search criteria. (CQ-4266457)  
+* When AEM Forms is installed on Linux&reg; operating system, Digital Signature with Hardware Security Module do not work. (CQ-4266721)  
+* (AEM Forms on WebSphere&reg; only) The **Forms Workflow** &gt; **Task Search** option does not return any result if you search for an **Administrator** with **Username** as the search criteria. (CQ-4266457)  
 
 * AEM Forms fail to convert TIF and TIFF files with JPEG compression to PDF Documents. (CQ-4265972)
 * The **AEM Forms Assets Scanner** and **Letter to Interactive Communication Migration** options do not work on the **AEM Forms Migration** page. (CQ-4266572)  
 
-* (JBoss® 7 only) When you upgrade from a previous version to AEM 6.5 Forms and the previous version had processes (.lca) that created and used a copy of the default submit or default render process, HTML5 Forms using such processes (.lca) fails to perform the required actions. (CQ-4243928)
+* (JBoss&reg; 7 only) When you upgrade from a previous version to AEM 6.5 Forms and the previous version had processes (.lca) that created and used a copy of the default submit or default render process, HTML5 Forms using such processes (.lca) fails to perform the required actions. (CQ-4243928)
 * In an adaptive from, when a form data model service is invoked from the rule editor to dynamically update values of the image choice component, values of the image choice component are not updated. (CQ-4254754)
 * AEM Forms Designer installer requires the 32-bit version of [Visual C++ redistributable runtime package 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) and [Visual C++ redistributable runtime packages 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Ensure that the previously mentioned redistributable runtime packages are installed before starting the installation. (CQ-4265668)
 
