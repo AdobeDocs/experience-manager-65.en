@@ -14,7 +14,7 @@ exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 ---
 # Components for Page Authoring{#components-for-page-authoring}
 
-The following components are intended for use when authoring content for a standard web page. They form a subset of the components available out-of-the-box for a standard installation of AEM.
+The following components are intended for use when authoring content for a standard web page. The components form a subset of the components available out-of-the-box for a standard installation of AEM.
 
 Some are immediately available through the sidekick, various others are also available by using [Design mode](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md) to enable/disable them.
 
@@ -22,7 +22,7 @@ Some are immediately available through the sidekick, various others are also ava
 >
 >This section only discusses components that are available out-of-the-box in a standard AEM installation.
 >
->Depending on your instance you may have customized components developed explicitly for your requirements. These may even have the same name as some of the components discussed here.
+>Depending on your instance, you may have customized components developed explicitly for your requirements. These custom components may even have the same name as some of the components discussed here.
 
 The components are available when [editing a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) from the **Components** tab of the sidekick and the **Insert New Component** selector (when you double-click in the **Drag components or assets here** area).
 
@@ -32,7 +32,7 @@ Components are sorted according to various categories (component groups) includi
 
 * [General](#general): Includes basic components, including text, images, tables, charts, and so on.
 * [Columns](#columns): Includes components necessary for organizing the layout of the content.
-* [Form](#formgroup): Includes all the components needed to create a form.
+* [Form](#formgroup): Includes all the components necessary to create a form.
 
 ## General {#general}
 
@@ -53,7 +53,7 @@ The following characteristics can determine the size of the window:
 * Device screen: Mobile devices typically display web pages so that they extend across the entire screen.
 * Web browser window size: Users of laptop and desktop computers can resize web browser windows.
 
-For example, the component generates a small image when the web page is opened on a cell phone, and a medium-sized image when opened on a tablet. On a laptop, the component creates an delivers a large image when the page is opened in a maximized web browser. When the web browser is resized to fit a portion of the screen, the component adapts by delivering a smaller image and refreshes the view.
+For example, the component generates a small image when the web page is opened on a cell phone, and a medium-sized image when opened on a tablet. On a laptop, the component creates and delivers a large image when the page is opened in a maximized web browser. When the web browser is resized to fit a portion of the screen, the component adapts by delivering a smaller image and refreshes the view.
 
 #### Supported Image Formats {#supported-image-formats}
 
@@ -97,7 +97,7 @@ The dialog allows you to edit properties for your instance of the Adaptive Image
       Drag an image from the content finder or click to open a browse window where you can load an image. After the image is loaded, you can crop the image, rotate it, or delete it. To zoom in and out of the image, use the slide bar beneath the image (above the OK and Cancel buttons)
 
     * **Crop**
-      Crop an image. Drag the border to crop the image.
+      Lets you clip out parts of an image. Drag the border to crop the image.
 
     * **Rotate**
       Click Rotate repeatedly until the image is rotated as desired.
@@ -132,11 +132,11 @@ The Carousel Component allows you to display images associated with individual p
 * in an order you specify
 * with a time delay that you specify
 
-Clickable controls also let the user cycle through the displayed pages in real time, on demand. Clicking on the currently visible page image takes you to that page. In other words, the Carousel acts as a navigation control.
+Clickable controls also let the user cycle through the displayed pages in real time, on demand. Selecting the currently visible page image takes you to that page. In other words, the Carousel acts as a navigation control.
 
 #### Properties {#properties-1}
 
-These are available in two tabs:
+Properties are available in two tabs:
 
 * **Carousel**
   Here you specify how the carousel operates:
@@ -144,7 +144,7 @@ These are available in two tabs:
     * Play Speed
       The time in milliseconds before the next slide is shown.
     * Transition Time
-      Time in milliseconds for the transition between two slides.
+      The time in milliseconds for the transition between two slides.
     * Controls Style
       Various options are available from a pulldown menu; for example, Prev / Next Buttons, Top-Right Switches.
 
@@ -153,8 +153,8 @@ These are available in two tabs:
 
     * **Build list using**
       There are several ways to build a page list - Child Pages, Fixed List, Search, or Advanced Search (all described below).
-      Note that no matter which method you choose, the pages you include in your list should each already have an image associated with the page, it is this image that will be displayed in the Carousel. If there is no image for a given page under that page's Page Properties, you should associate an image with the page before beginning, as otherwise the Carousel will display a blank (or mostly blank) page. See [Editing Page Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
-      Depending on the item you choose a new panel will appear:
+      No matter which method you choose, the pages you include in your list should each already have an image associated with the page. It is this image that is displayed in the Carousel. If there is no image for a page under that page's Page Properties, you should associate an image with the page before beginning. Otherwise, the Carousel displays a blank page. See [Editing Page Properties](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
+      Depending on the item you choose, a new panel appears:
 
         * **Options for Child Pages**
 
@@ -184,15 +184,15 @@ These are available in two tabs:
       Select `jcr:title`, `jcr:created`, `cq:lastModified`, or `cq:template` from the dropdown menu.
 
     * **Limit**
-      The maximum number of items you would like to use in the Carousel; this is optional.
+      Optional. The maximum number of items that you want to use in the Carousel.
 
 >[!NOTE]
 >
->You can create a custom carousel component for Adobe Experience Manager that displays digital assets located in the AEM DAM. For information, see [Creating Custom Carousel components for Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
+>You can create a custom carousel component for Adobe Experience Manager that displays digital assets in the AEM DAM. 
 
 ### Chart {#chart}
 
-The Chart component lets you add a bar, line, or pie chart. AEM creates a chart from the data you provide. You provide data by typing directly into the Data tab or by copying and pasting a spreadsheet.
+The Chart component lets you add a bar, line, or pie chart. AEM creates a chart from the data that you provide. You provide data by typing directly into the Data tab or by copying and pasting a spreadsheet.
 
 * **Data**
 
@@ -205,21 +205,19 @@ The Chart component lets you add a bar, line, or pie chart. AEM creates a chart 
       Select from Pie Chart, Line Chart, and Bar Chart.
 
     * **Alternative text**
-      Alternative text that displays instead of the chart.
+      Text that displays instead of the chart.
 
     * **Width**
-      Width of the chart in pixels.
+      The width of the chart in pixels.
 
     * **Height**
-      Height of the chart in pixels.
+      The height of the chart in pixels.
 
 The following show an example of chart data followed by the resulting Bar chart:
 
 ![chlimage_1-6](assets/chlimage_1-6.png) ![dc_chart_use](assets/dc_chart_use.png)
 
->[!NOTE]
->
->You can create a custom AEM chart control that displays data located in the AEM JCR. For information, see [Displaying Adobe Experience Manager Data in a Chart](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
+
 
 ### Content Fragment {#content-fragment}
 
@@ -233,7 +231,7 @@ The following show an example of chart data followed by the resulting Bar chart:
 
 ### Design Importer {#design-importer}
 
-This allows you to upload a zip file holding a design package.
+Lets you upload a zip file holding a design package.
 
 ### Download {#download}
 
@@ -245,7 +243,7 @@ The Download component creates a link on the selected web-page to download a spe
       A short description displayed with the download link.
 
     * **File**
-      File available for download on the resulting web-page. Drag an asset from the content finder or click the area to upload the file to be available for download.
+      The file that is available for download on the resulting web-page. Drag an asset from the content finder, or select the area so you can upload the file that you want to make available for download.
 
 The following example shows the Download component in Geometrixx:
 
@@ -280,7 +278,7 @@ The external application is integrated into the paragraph system of the AEM page
 
 >[!NOTE]
 >
->Depending on your use case, other options are available for integration of external applications, for example. the [Integration of Portlets](/help/sites-administering/aem-as-portal.md).
+>Depending on your use case, other options are available for integration of external applications, for example, the [Integration of Portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Flash {#flash}
 
@@ -326,7 +324,7 @@ The Flash component lets you load a Flash movie. You can drag a flash asset from
 
 The image component displays an image and accompanying text according to the specified parameters.
 
-You can upload an image, then edit and manipulate it (e.g. crop, rotate, add link/title/text).
+You can upload an image, then edit and manipulate it (for example, crop, rotate, add link/title/text).
 
 You can either drag and drop an image from the [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) directly onto the component or its Edit dialog. You can also double-click in the central area of the Edit dialog to browse your local file system and upload an image. The two tabs of the Edit dialog also control all definitions and manipulation of the image:
 
@@ -336,7 +334,7 @@ You can either drag and drop an image from the [Content Finder](/help/sites-clas
 >
 >The progress of the upload cannot be monitored with Internet Explorer.
 >
->Internet Explorer users need to upload the image and click **Ok** then re-open the image to see the uploaded file in the preview and to be able to perform modifications (i.e. crop).
+>Internet Explorer users must upload the image and click **Ok**, then reopen the image to see the uploaded file in the preview and to be able to perform modifications (that is, crop).
 >
 >See the [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) section for more information about HTML5 features used by AEM.
 
@@ -348,7 +346,7 @@ When an image is loaded, you can configure the following:
 
 * **Crop**
 
-  Select Crop to crop an image. Use your mouse to crop the image.
+  Select Crop so you can clip off a part of an image. Use your mouse to crop the image.
 
 * **Rotate**
 
@@ -400,9 +398,9 @@ The List component allows you to configure search criteria for displaying a list
 
     * **Build list using**
 
-      Here you specify where the list will retrieve its content. There are several methods:
+      Here you specify where the list retrieves its content. There are several methods:
 
-    * Depending on the item you choose a new panel will appear:
+    * Depending on the item you choose, a new panel appears:
 
         * **Options for Child Pages**
 
@@ -435,7 +433,7 @@ The List component allows you to configure search criteria for displaying a list
 
         * **Tags**
 
-          Specify the **Parent page**, **Tags/Keywords** and your required match criteria.
+          Specify the **Parent page**, **Tags/Keywords**, and your required match criteria.
 
     * **Display as**
 
@@ -443,7 +441,7 @@ The List component allows you to configure search criteria for displaying a list
 
     * **Order by**
 
-      Whether the list is to be ordered, and if so, the criteria to use for sorting. You can enter a criteria or select one from the drop down list provided.
+      Whether the list is to be ordered, and if so, the criteria to use for sorting. You can enter a criteria or select one from the drop-down list provided.
 
     * **Limit**
 
@@ -455,15 +453,15 @@ The List component allows you to configure search criteria for displaying a list
 
     * **Paginate after**
 
-      Here you can specify the number of list items to display at once. A list with more items than specified will use pagination to display the list in several portions.
+      Here you can specify the number of list items to display at once. A list with more items than specified uses pagination to display the list in several portions.
 
-The following example shows a **List** component the way it may display a list of child pages (the design is controlled by a site design's custom CSS definitions).
+The following example shows a **List** component in the way that it may display a list of child pages (the design is controlled by a site design's custom CSS definitions).
 
 ![dc_list_use](assets/dc_list_use.png)
 
 ### Login {#login}
 
-These provides the Username and Password fields.
+Provides the Username and Password fields.
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -495,7 +493,7 @@ You can configure:
 
     * Continue Button Label
 
-      Text to indicate the user is already logged in.
+      Text to indicate that the user is already logged on.
 
 ### Order Status {#order-status}
 
@@ -503,7 +501,7 @@ You can configure:
 
     * **Title**
 
-      Specify the title text you want displayed.
+      Specify the title text that you want displayed.
 
     * **Link**
 
@@ -517,7 +515,7 @@ You can configure:
 
 ### Reference {#reference}
 
-The **Reference** component lets you reference text from another page of your AEM website (within the current instance). The content of the referenced paragraph then appears as if it was on the current page. The content will be updated when the source paragraph changes (might need a page refresh).
+The **Reference** component lets you reference text from another page of your AEM website (within the current instance). The content of the referenced paragraph then appears as if it was on the current page. The content is updated when the source paragraph changes (might need a page refresh).
 
 * **Paragraph Reference**
 
@@ -525,7 +523,7 @@ The **Reference** component lets you reference text from another page of your AE
 
       Specify the path to the page and paragraph that you want to reference (include content).
 
-To specify the path to a paragraph you need to suffix the path (to the page) with:
+To specify the path to a paragraph, you must suffix the path (to the page) with the following:
 
 `.../jcr:content/par/<paragraph-ID>`
 
@@ -533,7 +531,7 @@ For example:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par/similar-products`
 
-As well as referencing a specific paragraph, the path can also be modified to specify an entire par-system. You can do this by suffixing the path with:
+Besides referencing a specific paragraph, the path can also be modified to specify an entire par-system. Suffix the path with the following:
 
 `/jcr:content/par`
 
@@ -541,7 +539,7 @@ For example:
 
 `/content/geometrixx-outdoors/en/equipment/biking/cajamara/jcr:content/par`
 
-Once configured the content will appear exactly as on the source page. The fact that it is a reference is only seen when you open the component for editing:
+After configuration, the content appears exactly as on the source page. The fact that it is a reference is only seen when you open the component for editing:
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -559,7 +557,7 @@ You can configure:
 
     * **Path to search in**
 
-      Specify the root page of the branch you want to search.
+      Specify the root page of the branch that you want to search.
 
     * **Search Button Text**
 
@@ -576,11 +574,11 @@ You can configure:
     * **Spellcheck Text**
 
       If someone enters a similar term, this text is displayed before the term.
-      For example, if you type geometrixxe, the system displays "Did you mean? geometrixx".
+      For example, if you type `Geometrixxe`, the system displays "Did you mean? Geometrixx".
 
     * **Similar Pages Text**
 
-      The text that is displayed next to a result for similar pages. Click this link to see pages that have similar content.
+      The text that is displayed next to a result for similar pages. To clip out part of an image, click this link.
 
     * **Related Searches Text**
 
@@ -588,7 +586,7 @@ You can configure:
 
     * **Search Trends Text**
 
-      The title above the search terms users enter.
+      The title above the search terms that a user enters.
 
     * **Result Pages Label**
 
@@ -602,7 +600,7 @@ You can configure:
 
       The name that appears on the link to subsequent search pages.
 
-The following example shows the Search component after a search for the word *geometrixx* from the root directory of a standard installation. This also illustrates the pagination of results:
+The following example shows the Search component after a search for the word *`geometrixx`* from the root directory of a standard installation. It also illustrates the pagination of results:
 
 ![dc_search_use](assets/dc_search_use.png)
 
@@ -616,7 +614,7 @@ An automatic sitemap listing, which (with the default settings) lists all pages 
 
 ![dc_sitemap_use](assets/dc_sitemap_use.png)
 
-If required you can configure:
+If necessary, you can configure:
 
 * **Sitemap**
 
@@ -626,7 +624,7 @@ If required you can configure:
 
 ### Slideshow {#slideshow}
 
-This component allows you to load a series of images to be displayed as a slideshow on your page.You can add or remove images and assign each a title. Under Advanced you can also specify the size of the display area.
+This component lets you load a series of images to be displayed as a slideshow on your page. You can add or remove images and assign each a title. Under Advanced, you can also specify the size of the display area.
 
 You can configure:
 
@@ -638,7 +636,7 @@ You can configure:
 
     * **Title**
 
-      Specify a title if required. This is overlaid on the appropriate slide.
+      Specify a title, if necessary. This title is overlaid on the appropriate slide.
 
 * **Advanced**
 
@@ -646,7 +644,7 @@ You can configure:
 
       Specify the width and height in pixels.
 
-The slideshow component then repeatedly displays each in sequence, for a short period of time, before fading through to the next slide:
+The slideshow component then repeatedly displays each in sequence, for a short time, before fading into the next slide:
 
 ![dc_slideshow_use](assets/dc_slideshow_use.png)
 
@@ -656,12 +654,9 @@ The slideshow component then repeatedly displays each in sequence, for a short p
 >
 >The **Table** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Text](#text)** component.
 >
->It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
+>Adobe recommends that you use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
-The **Table** component is preconfigured to let you construct, fill and format a table. Using the dialog you can configure your table and create the contents by either:
-
-* from scratch
-* copying and pasting a spreadsheet or a table from an external editor (such as Excel, OpenOffice, Notepad, etc).
+The **Table** component is preconfigured to let you construct, fill, and format a table. Using the dialog, you can configure your table and create the contents from scratch, or by copying and pasting a spreadsheet or a table from an external editor, such as Excel, OpenOffice, or Notepad.
 
 ![dc_table](assets/dc_table.png)
 
@@ -694,18 +689,18 @@ For more information about applying tags, visit [Using Tags](/help/sites-classic
 >
 >The **Text** component is based on the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md), as is the **[Table](#table)** component.
 >
->It is recommended to use the **Table** component for tables, although they can also be constructed with the **Text** component.
+>Adobe recommends that you use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
-The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). A selection of icons allow you to format your text, including font characteristics, alignment, links, lists and indentation.
+The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). A selection of icons allow you to format your text, including font characteristics, alignment, links, lists, and indentation.
 
 ![dc_text](assets/dc_text.png)
 
-When you open the **Styles** tab of the **Edit** dialog you can also set:
+When you open the **Styles** tab of the **Edit** dialog, you can also set the following:
 
 * **Spacer**
 * **Text Style**
 
-The formatted text will then be shown on the page; the actual design will depend on the site CSS:
+The formatted text is then shown on the page. The actual design depends on the site CSS:
 
 ![dc_text_use](assets/dc_text_use.png)
 
@@ -713,7 +708,7 @@ For more detailed information about the Text component and the functionality pro
 
 #### Inplace Editing {#inplace-editing}
 
-In addition to the dialog based Rich Text editing mode, AEM also provides [Inplace Editing](/help/sites-authoring/editing-content.md), which allows direct editing of the text as it is displayed in the layout of the page.
+In addition to the dialog-based Rich Text editing mode, AEM also provides [Inplace Editing](/help/sites-authoring/editing-content.md), which allows direct editing of the text as it is displayed in the layout of the page.
 
 ### Text & Image {#text-image}
 
@@ -737,11 +732,11 @@ You can configure:
 
     * **Title**
 
-      The title for the block; will be shown by mouseover.
+      The title for the block. It is shown by mouseover.
 
     * **Alt Text**
 
-      Alternative text to be shown if the image cannot be displayed. If left empty the title will be used.
+      Alternative text to be shown if the image cannot be displayed. If left empty, the title is used.
 
     * **Link to**
 
@@ -755,7 +750,7 @@ You can configure:
 
       Sets the height and width of the image.
 
-The following example shows a Text Image Component displaying the image left-aligned:
+The following example shows a Text Image Component that displays the image left-aligned:
 
 ![dc_textimage_use](assets/dc_textimage_use.png)
 
@@ -763,10 +758,10 @@ The following example shows a Text Image Component displaying the image left-ali
 
 The title component can either:
 
-* display the name of the current page; this is done by leaving the Title field blank
-* display a text you specify in the Title field.
+* Display the name of the current page by leaving the Title field blank.
+* Display a text that you specify in the Title field.
 
-You can configure:
+You can configure the following:
 
 * **Title**
 
@@ -786,11 +781,11 @@ The following example shows a **Title** component being displayed; the design is
 
 ### Video {#video}
 
-The **Video** component allows you to place a predefined, out-of-the-box video element on a page.
+The **Video** component lets you place a predefined, out-of-the-box video element on a page.
 
 See also [Configure your Video Profiles](/help/sites-administering/config-video.md#configuringvideoprofiles) for use with HTML5 elements.
 
-After placing an instance of the component on your page you can configure:
+After placing an instance of the component on your page, you can configure the following:
 
 * Video
 
@@ -800,7 +795,7 @@ After placing an instance of the component on your page you can configure:
 
     * **Size**
 
-      The video's native size (width x height in pixels) will appear in the boxes next to Size (see above). Manually enter width and height dimensions here if you wish to override the video's native dimensions. Click **OK** to dismiss the dialog.
+      The video's native size (width x height in pixels) appears in the boxes next to Size (see above). Manually enter width and height dimensions here if you wish to override the video's native dimensions. Selecting **OK** dismisses the dialog.
 
 >[!NOTE]
 >
@@ -813,19 +808,19 @@ After placing an instance of the component on your page you can configure:
 
 ## Columns {#columns}
 
-Columns are a mechanism to control the layout of content in AEM. In a standard installation components for creating two and/or 3 columns are provided.
+Columns are a mechanism to control the layout of content in AEM. In a standard installation, components for creating two and/or three columns are provided.
 
-The following example shows the 2 Columns and 3 Columns components in use. You can use the placeholders for new components:
+The following example shows the two Columns and three Columns components in use. You can use the placeholders for new components:
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
 ### 2 Columns {#columns-1}
 
-A Column Control component that defaults to 2 equal columns.
+A Column Control component that defaults to two equal columns.
 
 ### 3 Columns {#columns-2}
 
-A Column Control component that defaults to 3 equal columns.
+A Column Control component that defaults to three equal columns.
 
 ### Column Control {#column-control}
 
@@ -835,7 +830,7 @@ The Column Control component lets users select how they want to split the conten
 
     * **Column Layout**
 
-      Select the number of columns you want rendered. Once created, each column has its own link for dragging components or assets when adding content.
+      Select the number of columns that you want rendered. Once created, each column has its own link for dragging components or assets when adding content.
 
 ## Form {#form}
 
@@ -849,33 +844,33 @@ Forms are built up from several different components:
 
 * **Form**
 
-  The form component defines the beginning and end of a new form on a page. Other components can then be placed in between these elements, such as tables, downloads, and so on.
+  The form component defines the beginning and end of a new form on a page. Other components can then be placed in between these elements, such as tables and downloads.
 
 * **Form fields and elements**
 
-  Form fields and elements can include text boxes, radio buttons, images, and so on. The user often completes an action in a form field, such as typing text. See individual form elements for more information.
+  Form fields and elements can include text boxes, radio buttons, and images. The user often completes an action in a form field, such as typing text. See individual form elements for more information.
 
 * **Profile Components**
 
   Profile components relate to visitor profiles used for social collaboration and other areas where visitor personalization is required.
 
-The following shows an example form; it is comprised of the **Form** component (start and end), with two **Form** **Text** fields used for input, a **General** **Text** field used for the lead-in text and a **Submit** button.
+The following shows an example form. It is composed of the **Form** component (start and end), with two **Form** **Text** fields used for input, a **General** **Text** field used for the lead-in text and a **Submit** button.
 
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
 >
->Information about developing and customizing your forms further is available on the [Developing Forms page](/help/sites-developing/developing-forms.md). This includes adding actions, constraints, preloading fields and using scripts to call a service to take action, amongst others.
+>Information about developing and customizing your forms is available on the [Developing Forms page](/help/sites-developing/developing-forms.md). This form customizing includes adding actions, constraints, preloading fields and using scripts to call a service to action, among others.
 
 ### Settings Common to (Many) Form Components {#settings-common-to-many-form-components}
 
 Although each of the form components has a different purpose, many are composed of similar options and parameters.
 
-When configuring any of the form components the following tabs are available in the dialog:
+When configuring any of the form components, the following tabs are available in the dialog:
 
 * **Title and Text**
 
-  Here you need to specify the basic information, such as the title of the form and any accompanying text. Where appropriate it also allows you to define other key information such as whether the field is multi-selectable and items available for selection.
+  Here you must specify the basic information, such as the title of the form and any accompanying text. Where appropriate it also allows you to define other key information such as whether the field is multi-selectable and items available for selection.
 
 * **Initial Values**
 
@@ -883,7 +878,7 @@ When configuring any of the form components the following tabs are available in 
 
 * **Constraints**
 
-  Here you can specify whether a field is required and place constraints are on that field (for example, must be numeric, and so on).
+  Here you can specify whether a field is required and place constraints are on that field, such as being numeric.
 
 * **Styling**
 
@@ -893,25 +888,25 @@ When configuring any of the form components the following tabs are available in 
 >
 >The fields you see vary significantly depending on the individual component.
 
-These tabs provide you with the necessary parameters; these can depend on the individual component type, but can include:
+These tabs provide you with the necessary parameters. The tabs depend on the individual component type, but can include the following:
 
 * **Title and Text**
 
     * **Element Name**
 
-      Name of the form element. This indicates where in the repository the data is stored.
-      This is a required field and should only contain the following characters:
+      Name of the form element. It indicates where in the repository that the data is stored.
+      This field is required and should only contain the following characters:
 
         * alphanumeric characters
         * `_ . / : -`
 
     * **Title**
 
-      The title displayed with the field. If left blank, the default title will be shown.
+      The title displayed with the field. If left blank, the default title is shown.
 
     * **Description**
 
-      Allows you to provide additional information for the user, if necessary. On the form this is shown below the field, in a smaller font than the title.
+      Lets you provide additional information for the user, if necessary. On the form, this description is shown below the field, in a smaller font than the title.
 
     * **Show/Hide**
 
@@ -921,21 +916,21 @@ These tabs provide you with the necessary parameters; these can depend on the in
 
     * **Default Value**
 
-      The value displayed in the field when the form is opened; ie before the user has made any input.
+      The value displayed in the field when the form is opened. That is, before the user has made any input.
 
 * **Constraints**
 
     * **Required**
 
-      This is dependent on the form component type, but provides one or more click boxes to indicate that this field, or certain parts of this field, is/are required.
+      This constraint depends on the form component type, but provides one or more click boxes to indicate that this field is required, or certain parts of this field are required.
 
     * **Required Message**
 
-      A message to inform users that this field is required; a required field will also be flagged with and asterisk.
+      A message to inform users that this field is required. A required field is flagged with an asterisk.
 
     * **Constraint**
 
-      The constraints available for selection are dependent on the form component type.
+      The constraints available for selection depend on the form component type.
 
     * **Constraint Message**
 
@@ -955,7 +950,7 @@ These tabs provide you with the necessary parameters; these can depend on the in
 
 ### Form (component) {#form-component}
 
-The Form component defines both the start and end of a form using the **Form Start** and **Form End** elements. These are always paired to ensure that the form is correctly defined.
+The Form component defines both the start and end of a form using the **Form Start** and **Form End** elements. The start and end elements are always paired to ensure that the form is correctly defined.
 
 ![dc_form-1](assets/dc_form-1.png)
 
@@ -963,13 +958,13 @@ In between the start and end of a form, you can add form components that define 
 
 #### Start of Form {#start-of-form}
 
-This component is needed to define the start of a new form on a page. You can configure:
+This needed component defines the start of a new form on a page. You can configure the following:
 
 * **Form**
 
     * **Thank You Page**
 
-      The page to be referenced to thank visitors for providing their input. If left blank, the form re-displays after submission.
+      The page to be referenced to thank visitors for providing their input. If left blank, the form redisplays after submission.
 
     * **Start Workflow**
 
@@ -991,8 +986,8 @@ This component is needed to define the start of a new form on a page. You can co
         * **E-Mail Service: Send auto-responder email**
         * **E-Mail Service: Unsubscribe user from list**
         * **Edit Community**
-        * **Edit Resource(s)**
-        * **Edit Workflow Controlled Resource(s)**
+        * **Edit Resources**
+        * **Edit Workflow Controlled Resources**
         * **Mail**
         * **Placed Order Details**
         * **Profile Update**
@@ -1000,7 +995,7 @@ This component is needed to define the start of a new form on a page. You can co
         * **Set Password**
         * **Store Content**
 
-          This is the default action type.
+          The default action type.
 
         * **Store Content with Uploads**
         * **Submit Order**
@@ -1014,12 +1009,12 @@ This component is needed to define the start of a new form on a page. You can co
     * **Load Path**
 
       The path to node properties used to load predefined values into the form fields.
-      This is an optional field that specifies the path to a node in the repository. When this node has properties that match the field names, then the appropriate fields on the form are preloaded with the value of those properties. If no match exists, then the field contains the default value.
+      This field is optional and specifies the path to a node in the repository. When this node has properties that match the field names, then the appropriate fields on the form are preloaded with the value of those properties. If no match exists, then the field contains the default value.
       Using **Load Path** you can preload the form with values in the required fields. See [Preloading Form Values](/help/sites-developing/developing-forms.md#preloading-form-values).
 
     * **Client Validation**
 
-      Indicates whether client validation is required for this form (server validation *always* occurs.). This can be achieved in conjunction with the **Forms Captcha** component.
+      Indicates whether client validation is required for this form (server validation *always* occurs.). Validation is achieved with the **Forms Captcha** component.
 
     * **Validation Resource Type**
 
@@ -1035,12 +1030,12 @@ This component is needed to define the start of a new form on a page. You can co
 
     * **Action Configuration**
 
-      The options available in **Action Configuration** are dependent on the **Action Type** selected:
+      The options available in **Action Configuration** depend on the selected **Action Type**:
 
         * **Account Request**
 
           * **Create Account Page**
-              The page used when creating a new account.
+              The page used when creating an account.
 
         * **Create Content**
 
@@ -1062,7 +1057,7 @@ This component is needed to define the start of a new form on a page. You can co
 
             * **Resource Type**
 
-              If set, this is added to each comment as `sling:resourceType`
+              If set, it is added to each comment as `sling:resourceType`
 
             * **View Selector**
 
@@ -1087,7 +1082,7 @@ This component is needed to define the start of a new form on a page. You can co
 
             * **View Data...**
 
-              Click this button to access the information about form results in the bulk editor. From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
+              Select button so you can access the information about form results in the Bulk Editor. From here, you can export the information to a `.tsv` (tab-separated) file (for use, for example, in an Excel spreadsheet).
 
         * **Mail**
 
@@ -1097,15 +1092,15 @@ This component is needed to define the start of a new form on a page. You can co
 
             * **Mailto**
 
-              Enter the email address(es) that the form is to sent to.
+              Enter one or more email addresses that the form is sent to.
 
             * **CC**
 
-              Enter the CC email address(es).
+              Enter one or more CC email addresses.
 
             * **BCC**
 
-              Enter the BCC email address(es).
+              Enter one or more BCC email addresses.
 
             * **Subject**
 
@@ -1126,11 +1121,11 @@ This component is needed to define the start of a new form on a page. You can co
 
             * **View Data...**
 
-              Click this button to access the information about form results in the bulk editor. From here, you can export the information to a .tsv (tab-separated) file (for use, for example, in an Excel spreadsheet).
+              Select button so you can access the information about form results in the Bulk Editor. From here, you can export the information to a .tsv (tab-separated) file (for use, for example, in an Excel spreadsheet).
 
         * **Store Content With Uploads**
 
-          This has the same options as **Store Content**.
+          Has the same options as **Store Content**.
 
         * **Unsubscribe Subscriber**
 
@@ -1140,7 +1135,7 @@ This component is needed to define the start of a new form on a page. You can co
 
 #### End of Form {#end-of-form}
 
-This marks the end of the form. You can configure:
+Marks the end of the form. You can configure the following:
 
 * **Form End**
 
@@ -1158,7 +1153,7 @@ This marks the end of the form. You can configure:
 
     * **Show Reset Button**
 
-      Select check box to make the Reset button visible.
+      Selecting the check box makes the Reset button visible.
 
     * **Reset Title**
 
@@ -1170,17 +1165,17 @@ This marks the end of the form. You can configure:
 
 ### Account Name {#account-name}
 
-This allows the user to input an account name:
+Lets the user input an account name:
 
 ![dc_form_accountname](assets/dc_form_accountname.png)
 
 ### Address {#address}
 
-This allows you to add an international address field with the following format:
+Lets you add an international address field with the following format:
 
 ![dc_form_addressfield](assets/dc_form_addressfield.png)
 
-The component is configured for immediate use, but you can change the configuration if required. For example, constraints can be added for the individual elements of the address. Leaving fields empty will use default settings.
+The component is configured for immediate use, but you can change the configuration, if necessary. For example, constraints can be added for the individual elements of the address. Leaving fields empty means that default settings are used.
 
 ### Captcha {#captcha}
 
@@ -1196,7 +1191,7 @@ A checkbox allows you to build a list of one of more checkboxes, several of whic
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
-You can specify various parameters including a title, description and element name. Using the + and - buttons you can add or remove items, then position them with the up and down arrows.
+You can specify various parameters including a title, description, and element name. Using the + and - buttons you can add or remove items, then position them with the up and down arrows.
 
 >[!NOTE]
 >
@@ -1206,13 +1201,13 @@ You can specify various parameters including a title, description and element na
 
 ### Credit Card Details {#credit-card-details}
 
-This allows you to provide the fields needed for entering credit card details. You can configure it to specify the types of card accepted and the information required (for example, security code).
+Lets you provide the fields needed for entering credit card details. You can configure it to specify the types of card accepted and the information required (for example, security code).
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
 ### Dropdown List {#dropdown-list}
 
-A drop down list can be configured to provide your use with a range of values for selection:
+A drop-down list can be configured to provide your use with a range of values for selection:
 
 ![dc_form_dropdownlistuse](assets/dc_form_dropdownlistuse.png)
 
@@ -1220,7 +1215,7 @@ You can specify a title and items to appear in the list. Using the + and - butto
 
 >[!NOTE]
 >
->Using **Items Load Path** you can preload the drop down list with values.
+>Using **Items Load Path** you can preload the drop-down list with values.
 >
 >See [Preloading Form Fields with Multiple Values](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
@@ -1230,13 +1225,11 @@ The file upload component provides the user with a mechanism for selecting and u
 
 ![dc_form_fileupload](assets/dc_form_fileupload.png)
 
->[!NOTE]
->
->You can create a custom upload component to upload files to a Sling Servlet. For information, see [Uploading files to Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
+
 
 ### Hidden Field {#hidden-field}
 
-This component allows you to create a hidden field. These can be used for various purposes; for example, when you need to perform an action after submitting the form, or when hidden data is required in post processing.
+This component lets you create a hidden field. These hidden fields can be used for various purposes such as when you must perform an action after submitting the form, or when hidden data is required in post processing.
 
 ![dc_form_hiddenfield](assets/dc_form_hiddenfield.png)
 
@@ -1248,7 +1241,7 @@ This component allows you to create a hidden field. These can be used for variou
 
 ### Image Button {#image-button}
 
-An image button allows you to create a button with your own image and text:
+An image button lets you create a button with your own image and text:
 
 ![dc_form_imagebutton](assets/dc_form_imagebutton.png)
 
@@ -1260,7 +1253,7 @@ The image upload component provides the user with a mechanism for selecting and 
 
 ### Link Field {#link-field}
 
-The link field allows the user to specify a URL:
+The link field lets a user specify a URL:
 
 ![dc_form_link](assets/dc_form_link.png)
 
@@ -1268,7 +1261,7 @@ Most commonly used for the calendar event form, where it is used for the URL/lin
 
 ### Password Field {#password-field}
 
-This is used to allow the user to input their password:
+Lets a user input their password:
 
 ![dc_form_password](assets/dc_form_password.png)
 
@@ -1279,7 +1272,7 @@ This component provides your user with two fields for:
 * the input of a password
 * repeated input of the password to check to confirm that input is correct.
 
-With default settings the component will appear as:
+With default settings, the component appears as the following:
 
 ![dc_password_reset](assets/dc_password_reset.png)
 
@@ -1287,7 +1280,7 @@ With default settings the component will appear as:
 
 A radio group provides you with a list of one of more radio checkboxes, only one of which may be selected at any particular time.
 
-You can specify the element name together with a title and description Using the + and - buttons you can add or remove items, position them with the up and down arrows and specify a default value if required:
+You can specify the element name together with a title and description. Using the + and - buttons, you can add or remove items, position them with the up and down arrows and specify a default value, if necessary:
 
 ![dc_form_radiogroupuse](assets/dc_form_radiogroupuse.png)
 
@@ -1313,7 +1306,7 @@ This field allows you to select tags:
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 
-You can specify various parameters, including the namespaces can be used using the specialized tab:
+You can specify various parameters, including the namespaces that can be used, using the specialized tab:
 
 * **Tag Field**
 
@@ -1333,12 +1326,12 @@ You can specify various parameters, including the namespaces can be used using t
 
 ### Text Field {#text-field}
 
-The standard text field can be configured to your required size and with with your own lead in message:
+The standard text field can be configured to your required size and with your own lead in message:
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Workflow Submit Button(s) {#workflow-submit-button-s}
+### Workflow Submit Buttons {#workflow-submit-button-s}
 
-This allows you to create a Submit button for use in a workflow.
+Lets create a Submit button for use in a workflow.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)

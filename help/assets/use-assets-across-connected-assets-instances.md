@@ -358,5 +358,5 @@ To troubleshoot common errors, follow these steps:
 
   ![failure to retrieve asset remote references](assets/reference-report-failure.png)
 
-
+* If the cookies are not sent from the Sites server to the Assets server in Google Chrome, this is because the Assets connection is not over HTTPS. If you do not use HTTPS on the Assets instance then the `SameSite=None` header cannot be added to the response after you authenticate with the Assets server. 
 
