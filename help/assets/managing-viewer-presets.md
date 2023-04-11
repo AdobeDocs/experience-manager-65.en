@@ -458,7 +458,7 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
 
    * **[!UICONTROL dash]** - Videos stream as dash only. However, on Safari/iOS devices, you must select **[!UICONTROL hls]** as the type, instead.
    * **[!UICONTROL hls]** - Videos stream as hls only.
-   * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage optimized. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive, as in the following: 
+   * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage optimized. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive, as in the following playback order: 
      * If the browser supports DASH, then DASH streaming is used, first. 
      * If the browser does not support DASH, then HLS streaming is used, second.
      * If the browser does not support either DASH or HLS, then progressive playback is used, lastly.
@@ -487,7 +487,7 @@ For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!
 
    >[!IMPORTANT]
    >
-   >For old videos that use an adaptive bitrate streaming profile, the URL continues to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/processing-profiles.md#reprocessing-assets). After reprocessing, the same URL will continue to work but now with *both* DASH and HLS streaming enabled.
+   >For old videos that use an adaptive bitrate streaming profile, the URL continues to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/processing-profiles.md#reprocessing-assets). After reprocessing, the same URL continues to work, but now with *both* DASH and HLS streaming enabled.
 
 ### Special considerations for creating an Interactive Viewer preset {#special-considerations-for-creating-an-interactive-viewer-preset}
 
