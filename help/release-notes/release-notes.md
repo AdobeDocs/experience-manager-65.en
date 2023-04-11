@@ -76,7 +76,7 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Key Features {#forms-features-6516}
 
-* [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. 
+* [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) enable your developers to create, publish, and manage interactive forms that can be accessed and interacted with through APIs, rather than through a traditional graphical user interface. 
 
 *  [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) are a set of 24 open-source, BEM-compliant components that are built on the foundation of the Adobe Experience Manager WCM Core Components. These components are open-source and provide developers the ability to easily customize and extend these components to match the specific needs of their organization. Anyone with existing skills to customize [WCM Core components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) can easily customize and style these components.
 
@@ -93,10 +93,10 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * After upgrading to AEM 6.5.15.0 Service Pack on Windows server, the user encounters multiple error messages, and the email service is not working.(NPR-39919)
 * When you upgrade to AEM 6.5.14.0 and use importData service to merge PDFs with XML, the following error occurs: `Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
 * When user installs **Document Security Office** extension, following issues occur:
-  * Microsoft® Excel crashes frequently.
+  * Microsoft&reg; Excel crashes frequently.
   * While opening a secured document, the **Document security office** extension is not detected as installed on a machine. Instructs the user to download and install the security extension. (NPR-39768)
 * After a user upgrades to AEM 6.5.15.0 Service Pack, the PostScript-to-Pdf conversion is not working. (NPR-39765), (NPR-39764)
-* When user tries to open the tour screen after opening an Adaptive Form, it fails with a NullPointer exception:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* When user tries to open the tour screen after opening an Adaptive Form, it fails with a NullPointer exception:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * In Windows, when user enables high contrast black settings, the HTML5 Forms content become unclear when rendered as an HTML preview in the browser. (NPR-39018)
 * When the user attempts to add metadata, the Save button becomes non-functional for both the Draft and Submission components.(CQ-4349601)
 * After upgrading to AEM 6.5.15.0 Service Pack, the redirection of relative URLs no longer works in the Visual Editor. (NPR-39947)
@@ -230,6 +230,18 @@ To know the platforms that are certified to work with this release, see the [tec
 
 For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
+### Install GraphQL Index Package for Experience Manager Content Fragments {#install-aem-graphql-index-add-on-package}
+
+Customers using GraphQL should install the [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). 
+
+This enables you to add the required index definition based on the features they actually use.
+
+Failure to install this package may result in slow or failed GraphQL queries.
+
+>[!NOTE]
+>
+>This package must only be installed once per instance; it does not need to be re-installed with every Service Pack.
+
 ### UberJar {#uber-jar}
 
 The UberJar for [!DNL Experience Manager] 6.5.16.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
@@ -273,9 +285,6 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-  This package is needed for customers using GraphQL; this enables them to add the required index definition based on the features they actually use.
-
 * Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
 * A GraphQL query may use the `damAssetLucene` index instead of the `fragments` index. This might result in GraphQL queries that fail, or take a very long time to execute.
@@ -289,7 +298,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
   After these steps, the GraphQL queries should perform faster.
 
-* As [!DNL Microsoft®&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss®&reg; EAP 7.1], [!DNL Microsoft®&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft&reg;&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg;&reg; EAP 7.1], [!DNL Microsoft&reg;&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
@@ -315,8 +324,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    "refresh": true
    ```
 
-* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft® Office 365.
-* On JBoss® 7.1.4 platform, when user install AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
+* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft&reg; Office 365.
+* On JBoss&reg; 7.1.4 platform, when user install AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
