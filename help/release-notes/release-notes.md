@@ -106,8 +106,14 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * When a user previews a Document of Record using the **Send Email** submit action, it is not displayed correctly. The mail template embeds in the preview of the Document of Record. (CQ-4352155)
 * When a user previews an Adaptive Form as an HTML on Microsoft Edge browser with IE compatibility mode, it is not displayed correctly.(CQ-4352216)
 * The dictionary needs to include new locales with special characters, such as underscores or hyphens, to enable translation. (NPR-40088)
-* AEM Forms service pack 6.5.16 instance crashes when the user in the forms-users group tries to create a new form.(FORMS-7629)
-* After installing the AEM 6.5.16.0 Forms add-on service pack, the changes made in the code editor rules are not getting saved.(FORMS-7532)
+
+After installing the AEM 6.5.16.0 Forms add-on service pack, customers were facing the following issue. So, an updated version of AEM 6.5.16.0 Forms add-on service pack is released: 
+* When a user tries to create Adaptive form with a user in the forms-users group, the option to select any template is not present and the error similar to the following occurs:
+internal server error: java.lang.NullPointerException
+at com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76)
+at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176)
+at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) (FORMS-7629)
+* The changes made in the code editor rules are not getting saved.(FORMS-7532)
 
 ## Integrations {#integrations-6516}
 
