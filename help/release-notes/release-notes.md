@@ -107,7 +107,7 @@ See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 * When a user previews an Adaptive Form as an HTML on Microsoft Edge browser with IE compatibility mode, it is not displayed correctly.(CQ-4352216)
 * The dictionary needs to include new locales with special characters, such as underscores or hyphens, to enable translation. (NPR-40088)
 
-After installing the AEM 6.5.16.0 Forms add-on service pack, customers were facing the following issue. So, an updated version of AEM 6.5.16.0 Forms add-on service pack is released: 
+After installing the AEM 6.5.16.0 Forms add-on service pack, customers were facing the below listed issues. So, an updated version of [AEM 6.5.16.0 Forms add-on service pack - 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) is released. Adobe recommends to use the updated service pack: 
 * When a user tries to create Adaptive form with a user in the forms-users group, the option to select any template is not present and the error similar to the following occurs:
 internal server error: java.lang.NullPointerException
 at com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76)
