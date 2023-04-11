@@ -271,7 +271,7 @@ The following table describes the device, browser, and playback method of videos
 
 >[!IMPORTANT]
 >
->*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
 
 ## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
@@ -438,7 +438,7 @@ Some key benefits from enabling DASH on your account include the following:
 
    >[!IMPORTANT]
    >
-   >Enabling DASH on your account currently is available only in North America.
+   >Enabling DASH on your account currently is available only in Asia-Pacific and North America; coming soon in Europe-Middle East-Africa.
 
 Enabling DASH on your account requires two steps: 
 
@@ -469,7 +469,7 @@ Enabling DASH on your account requires two steps:
 >
 >Video reports are only available when you run Dynamic Media - Hybrid mode.
 
-Video Reports display several aggregate metrics across a specified time to help you monitor that *published *individual and aggregate videos are performing as expected. The following top metrics data are aggregated for all published videos across your entire website:
+Video Reports display several aggregate metrics across a specified time to help you monitor that *published* individual and aggregate videos are performing as expected. The following top metrics data are aggregated for all published videos across your entire website:
 
 * Video Starts
 * Completion Rate
