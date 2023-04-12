@@ -18,7 +18,7 @@ exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 
 OSGi "*provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed*".
 
-Doing so allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://www.osgi.org/Specifications/HomePage)) is contained in one of the various bundles.
+Doing so allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://docs.osgi.org/specification/)) is contained in one of the various bundles.
 
 You can manage the configuration settings for such bundles by either:
 

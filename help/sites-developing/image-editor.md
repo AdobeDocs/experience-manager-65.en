@@ -1,8 +1,6 @@
 ---
 title: Image Editor
-seo-title: Image Editor
-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
-seo-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
+description: The Image Editor is a core piece of AEM and can be used by components to facilitate the manipulation of images by content authors.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,11 +11,11 @@ exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
 ---
 # Image Editor{#image-editor}
 
-The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
+The Image Editor is a core piece of AEM and can be used by components to facilitate the manipulation of images by content authors.
 
 >[!CAUTION]
 >
->To use the features of the Image Editor described in this article, [feature pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) must be installed.
+>To use the features of the Image Editor described in this article, [feature pack 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) must be installed.
 
 ## Relative Units for Image Map {#relative-units-for-image-map}
 
