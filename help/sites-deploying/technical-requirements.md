@@ -220,7 +220,7 @@ For recommendations on how to deploy AEM on Azure or AWS, outside of Adobe Manag
 
 ### Dispatcher Platforms (Web Servers) {#dispatcher-platforms-web-servers}
 
-The Dispatcher is the caching and load balancing component. [Download the latest Dispatcher version](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 requires Dispatcher version 4.3.2 or higher.
+The Dispatcher is the caching and load-balancing component. [Download the latest Dispatcher version](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 requires Dispatcher version 4.3.2 or higher.
 
 The following web servers are supported for use with Dispatcher version 4.3.2:
 
