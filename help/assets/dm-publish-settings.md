@@ -130,7 +130,7 @@ See also [IccRenderIntent](https://experienceleague.adobe.com/docs/dynamic-media
 | **[!UICONTROL CMYK default color space]** | Specifies the name of the ICC color profile to use as a working profile for CMYK data. If **[!UICONTROL None Specified]** is chosen, color management is disabled for this image catalog when CMYK source images are involved. All CMYK working spaces are device-dependent, meaning that they are based on actual ink and paper combinations. The CMYK working spaces Adobe supplies are based on standard commercial print conditions.<br> See also [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Gray-Scale default color space]** | Specifies the name of the ICC color profile to use as a working profile for gray-scale data. If **[!UICONTROL None Specified]** is chosen, color management is disabled for this image catalog when gray-scale source images are involved.<br>See also [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) parameter in the Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL RGB default color space]** | Specifies the name of the ICC color profile to use as a working profile for RGB data. If **[!UICONTROL None Specified]** is chosen, color management is disabled for this image catalog when RGB sources images are involved. In general, it is best to choose **[!UICONTROL Adobe RGB]** or **[!UICONTROL sRGB]**, rather than the profile for a specific device (such as a monitor profile). **[!UICONTROL sRGB]** is recommended when you prepare images for the web or mobile devices, because it defines the color space of the standard monitor used to view images on the web. **[!UICONTROL sRGB]** is also a good choice when you work with images from consumer-level digital cameras, because most of these cameras use sRGB as their default color space.<br>See also [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) parameter in the Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Color conversion rendering intent]** | **[!UICONTROL Perceptual]** &ndash; Aims to preserve the visual relationship between colors so it’s perceived as natural to the human eye, even though the color values themselves may change. This intent is suitable for photographic images with lots of out-of-gamut colors. This setting is the standard rendering intent for the Japanese printing industry. |
+| **[!UICONTROL Color conversion rendering intent]** | **[!UICONTROL Perceptual]** &ndash; Aims to preserve the visual relationship between colors so it's perceived as natural to the human eye, even though the color values themselves may change. This intent is suitable for photographic images with lots of out-of-gamut colors. This setting is the standard rendering intent for the Japanese printing industry. |
 |  | **[!UICONTROL Relative Colorimetric]** - Compares the extreme highlight of the source color space to that of the destination color space and shifts all colors accordingly. Out-of-gamut colors are shifted to the closest reproducible color in the destination color space. Relative Colorimetric preserves more of the original colors in an image than Perceptual. This setting is the standard rendering intent for printing in North America and Europe. |
 |  | **[!UICONTROL Saturation]** &ndash; Tries to produce vivid colors in an image at the expense of color accuracy. This rendering intent is suitable for business graphics like graphs or charts, where bright saturated colors are more important than the exact relationship between colors. |
 |  | **[!UICONTROL Absolute Colorimetric]** &ndash; Leaves colors that fall inside the destination gamut unchanged. Out-of-gamut colors are clipped. No scaling of colors to destination white point is performed. This intent aims to maintain color accuracy at the expense of preserving relationships between colors and is suitable for proofing to simulate the output of a particular device. This intent is useful for previewing how paper color affects printed colors.|
@@ -157,7 +157,7 @@ Most corporations run their Internet behind a firewall. Access to the Internet i
 
 From your corporate network, you can figure out your public IP address using websites like [https://www.whatismyip.com](https://www.whatismyip.com/) or request this information from your corporate IT organization.
 
-With Secure Testing, Adobe Dynamic Media establishes a dedicated Image Server for staging environments or internal applications. Any request to this server checks the origin IP address. If the incoming request is not within the approved list of IP addresses, a failure response is returned. The Adobe Dynamic Media Company Administrator configures the approved list of IP addresses for their company’s Secure Testing environment.
+With Secure Testing, Adobe Dynamic Media establishes a dedicated Image Server for staging environments or internal applications. Any request to this server checks the origin IP address. If the incoming request is not within the approved list of IP addresses, a failure response is returned. The Adobe Dynamic Media Company Administrator configures the approved list of IP addresses for their company's Secure Testing environment.
 
 Because the location of the original request must be confirmed, the traffic of the Secure Testing service is not routed through a content distribution network like public Dynamic Media Image Server traffic. Requests to the Secure Testing service have a slightly higher latency compared to the public Dynamic Media Image Servers.
 
@@ -186,9 +186,13 @@ The following asset types and functionalities are currently not supported:
 * Web-to-print
 * UGC (User-Generated Content) services
 
->[!IMPORTANT]
->
->Support for new or existing UGC vector image assets in Adobe Dynamic Media ended on September 30, 2021.
+  >[!IMPORTANT]
+  >
+  >Starting May 1, 2023, UGC assets in Dynamic Media will be available for use up to 60 days from the date of upload. After 60 days, the assets will be removed.
+
+  >[!NOTE]
+  >
+  >Support for new or existing UGC vector image assets in Adobe Dynamic Media ended on September 30, 2021.
 
 ### Test the Secure Testing service {#test-secure-testing-service}
 

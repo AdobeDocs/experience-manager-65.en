@@ -1,8 +1,8 @@
 ---
-title: Web Console
-seo-title: Web Console
+title: Web console in AEM
+
 description: Learn how to use the web console in AEM.
-seo-description: Learn how to use the web console in AEM.
+
 uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
 ---
 # Web Console{#web-console}
 
-The Web console in AEM is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
+The Web console in AEM (Adobe Experience Manager) is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
 
 >[!NOTE]
 >
