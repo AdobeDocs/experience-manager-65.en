@@ -385,7 +385,7 @@ Although not recommended, you can disable it in case you need the old implementa
 >
 >For more information, see the Oak documentation on [Authorizable Node Name Generation](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-**Anonymous Permission Hardening Package**
+### Anonymous Permission Hardening Package {#anonymous-permission-hardening-package}
 
 By default, AEM stores system metadata, such as `jcr:createdBy` or `jcr:lastModifiedBy` as node properties, next to regular content, in the repository. Depending on the configuration and the access control setup, in some cases this could lead to exposure of personally identifiable information (PII), for example when such nodes are rendered as raw JSON or XML. 
 
