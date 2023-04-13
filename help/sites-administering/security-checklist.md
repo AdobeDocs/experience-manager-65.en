@@ -395,11 +395,11 @@ To support this, Adobe provides a permission hardening package as a basis for cu
 
 To illustrate the changes, we can compare the node properties that can be viewed anonymously before installing the package:
 
-![Before Installing Package](/help/sites-administering/assets/before.png)
+![Before Installing Package](/help/sites-administering/assets/before_resized.png)
 
 with the ones viewable after installing the package, where `jcr:createdBy` and `jcr:lastModifiedBy` are not visible:
 
-![After Installing Package](/help/sites-administering/assets/after.png)
+![After Installing Package](/help/sites-administering/assets/after_resized.png)
 
 For more information please see the package release notes.
 
