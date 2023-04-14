@@ -21,7 +21,7 @@ Ater installing the patch, open the AEM Forms workspace. If you encounter the No
 
 While installling the package, if you encounter an error `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, perform the following steps:
 
-1. Log in to CRX DE lite. The default url is `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Log in to CRXDE Lite. The default url is `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Delete the following node:
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -149,9 +149,9 @@ In AEM Forms workspace:
 
 Scripts and styles can be debugged in different browsers.
 
-* **Debugging in IE**: To debug AEM Forms workspace in IE, see: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Debugging in IE**: To debug AEM Forms workspace in IE, see: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Debugging in Chrome**: To open debugger in Chrome, use the shortcut: Ctrl+Shift+I. For more information, see: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Debugging in Chrome**: To open debugger in Chrome, use the shortcut: Ctrl+Shift+I. For more information, see: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Debugging in Firefox**: Several Add-ons are available to debug scripts and styles in Firefox. For example, Firebug is one such debugging utility ([https://getfirebug.com](https://getfirebug.com)).
 
@@ -159,14 +159,14 @@ Scripts and styles can be debugged in different browsers.
 
 1. PDF form is not getting rendered or submitted in Google Chrome.
 
-    1. Install the Adobe® Reader® plug-in.
+    1. Install the Adobe&reg; Reader&reg; plug-in.
     1. In Chrome, open chrome://plugins, to view available plug-ins.
     1. Disable the Chrome PDF Viewer plug-in, and enable the Adobe Reader plug-in.
 
 1. SWF form or Guide is not rendering in Google Chrome.
 
     1. In Chrome, open chrome://plugins, to view available plug-ins.
-    1. See details for Adobe Flash® Player plug-in.
+    1. See details for Adobe Flash&reg; Player plug-in.
     1. Disable PepperFlash under Adobe Flash Player plug-in.
 
 1. I have customized AEM Forms workspace but I am unable to see the changes.
