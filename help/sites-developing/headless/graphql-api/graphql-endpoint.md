@@ -1,8 +1,8 @@
 ---
 title: Manage GraphQL endpoints in AEM
 description: Learn how to manage GraphQL endpoints in Adobe Experience Manager as a Cloud Service for headless content delivery.
+exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
 ---
-
 # Manage GraphQL endpoints in AEM {#graphql-aem-endpoint}
 
 The endpoint is the path used to access GraphQL for AEM. Using this path you (or your app) can:
@@ -84,4 +84,4 @@ Select the new endpoint and **Publish** to make it fully available in all enviro
 >
 >On publish instances this can pose a security concern, as GraphQL queries can impose a heavy load on the server.
 >
->You must set up ACLs appropriate to your use case on the endpoint. 
+>You must set up ACLs appropriate to your use case on the endpoint.

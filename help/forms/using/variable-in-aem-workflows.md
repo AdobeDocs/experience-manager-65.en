@@ -1,7 +1,7 @@
 ---
 title: Variables in AEM Forms workflows
 seo-title: Variables in AEM Forms Workflows
-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
+description: Create a variable, set a value for the variable, and use it in AEM Forms Workflow steps.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -19,9 +19,11 @@ In AEM workflow models, you can:
 
 * [Create a variable](../../forms/using/variable-in-aem-workflows.md#create-a-variable) of a data type based on the information type that you want to store in it.
 * [Set a value for the variable](../../forms/using/variable-in-aem-workflows.md#set-a-variable) using the Set Variable workflow step.
-* [Use the variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in all AEM Forms workflow steps to retrieve the stored value and in OR Split and Goto steps to define a routing expression.
+* [Use the variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in all AEM Forms Workflow steps to retrieve the stored value and in OR Split and Goto steps to define a routing expression.
 
 The following video demonstrates how you can create, set, and use variables in AEM workflow models:
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
@@ -109,6 +111,8 @@ Use an expression to calculate the sum of the variables and store the result in 
 
 In this example, use the expression editor to define an expression to calculate the sum of **assetscost** and **balanceamount** variables and store the result in **totalvalue** variable.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Use expression editor {#use-expression-editor}
@@ -144,7 +148,7 @@ You can use variables to retrieve inputs and output or save the result of a step
 
 ### Workflow steps with support for variables {#workflow-steps-with-support-for-variables}
 
-The Go To step, OR Split step, and all AEM Forms workflow steps support variables.
+The Go To step, OR Split step, and all AEM Forms Workflow steps support variables.
 
 #### OR Split step {#or-split-step}
 
@@ -155,6 +159,8 @@ You can define routing expression for a branch using a rule definition, ECMA scr
 You can use variables to define the routing expression using the expression editor. For more information on using routing expressions for the OR Split step, see [OR Split step](/help/sites-developing/workflows-step-ref.md#or-split).
 
 In this example, before defining the routing expression, use [example 2](../../forms/using/variable-in-aem-workflows.md#example2) to set the value for the **totalvalue** variable. Branch 1 is active if the value of the **totalvalue** variable is greater than 50000. Similarly, you can define a rule to make the Branch 2 active if the value of the **totalvalue** variable is less than 50000.
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -178,7 +184,7 @@ For more examples on using rule definition in the Goto step, see [Simulating a F
 
 #### Forms-workflow centric workflow steps {#forms-workflow-centric-workflow-steps}
 
-All AEM Forms workflow steps support variables. For more information, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
+All AEM Forms Workflow steps support variables. For more information, see [Forms-centric workflow on OSGi](../../forms/using/aem-forms-workflow-step-reference.md).
 
 ### Workflow steps without support for variables {#workflow-steps-without-support-for-variables}
 
@@ -265,7 +271,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Store sensitive user data outside JCR using workflow variables {#jcr-independent-persistance}
 
-Data processed using forms workflow can contain sensitive user data, such as Personally Identifiable Information and Sensitive Personal Information. Businesses can choose to store the data, that is processed by various workflow steps (and passed using workflow variables), out of JCR storage into an external data store owned and managed by them. To know more about persisting workflow data in an external storage, see [Using workflow variables for customer owned datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Data processed using Forms Workflow can contain sensitive user data, such as Personally Identifiable Information and Sensitive Personal Information. Businesses can choose to store the data, that is processed by various workflow steps (and passed using workflow variables), out of JCR storage into an external data store owned and managed by them. To know more about persisting workflow data in an external storage, see [Using workflow variables for customer owned datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] provides Workflow API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) to store workflow variables in external Azure blob storages. For details about using the API, see [Use workflow variables to parameterize sensitive data and store in external data stores](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Edit a variable {#edit-a-variable}
@@ -286,4 +292,4 @@ Execute the following steps to delete a variable:
 
 ## References {#references}
 
-For more examples on using variables in AEM Forms workflow steps, refer to [Variables in AEM workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).
+For more examples on using variables in AEM Forms Workflow steps, refer to [Variables in AEM workflows](https://helpx.adobe.com/experience-manager/kt/forms/using/authoring_variables_in_aem_forms-workflow1.html).

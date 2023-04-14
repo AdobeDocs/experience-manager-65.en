@@ -22,9 +22,9 @@ It is the successor to Jackrabbit 2 and is used by AEM 6 as the default backend 
 
 ## Design principles and goals {#design-principles-and-goals}
 
-Oak implements the [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0) spec. Its principal design objectives are:
+Oak implements the [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0) spec. Its principal design objectives are:
 
-* Better support for big repositories
+* Better support for large repositories
 * Multiple distributed cluster nodes for high availability
 * Better performance
 * Support for many child nodes and Access Control Levels
@@ -68,17 +68,17 @@ Currently, there are two storage implementations available in AEM6: **Tar Storag
 
 The Tar storage uses tar files. It stores the content as various types of records within larger segments. Journals are used to track the latest state of the repository.
 
-There are several key design principles it was build around:
+There are several key design principles that it was build around:
 
 * **Immutable Segments**
 
-The content is stored in segments that can be up to 256KiB in size. They are immutable, which makes it easy to cache frequently accessed segments and reduce system errors that may corrupt the repository.
+The content is stored in segments that can be up to 256 KB. They are immutable, which makes it easy to cache frequently accessed segments and reduce system errors that may corrupt the repository.
 
 Each segment is identified by a unique identifier (UUID) and contains a continuous subset of the content tree. In addition, segments can reference other content. Each segment keeps a list of UUIDs of other referenced segments.
 
 * **Locality**
 
-Related records like a node and its immediate children are usually stored in the same segment. This makes searching the repository very fast and avoids most cache misses for typical clients that access more than one related node per session.
+Related records like a node and its immediate children are stored in the same segment. Doing so makes searching the repository fast and avoids most cache misses for typical clients that access more than one related node per session.
 
 * **Compactness**
 
@@ -86,7 +86,7 @@ The formatting of records is optimized for size to reduce IO costs and to fit as
 
 ### Mongo Storage {#mongo-storage}
 
-The MongoDB storage leverages MongoDB for sharding and clustering. The repository tree is kept in one MongoDB database where each node is a separate document.
+The MongoDB storage uses MongoDB for sharding and clustering. The repository tree is kept in one MongoDB database where each node is a separate document.
 
 It has several particularities:
 
@@ -108,7 +108,7 @@ MongoDB storage adds data to a document with every modification. However, it onl
 
 * Cluster node metadata
 
-Data about active and inactive cluster nodes is kept in the database in order to facilitate cluster operations.
+Data about active and inactive cluster nodes is kept in the database to facilitate cluster operations.
 
 A typical AEM cluster setup with MongoDB storage:
 
@@ -116,10 +116,10 @@ A typical AEM cluster setup with MongoDB storage:
 
 ## What is different from Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Because Oak is designed to be backwards compatible with the JCR 1.0 standard, there will be almost no changes on the user level. However, there are some noticeable differences that you need to take into account when setting up an Oak based AEM installation:
+Because Oak is backwards compatible with the JCR 1.0 standard, there is almost no changes on the user level. However, there are some noticeable differences that you must account for when setting up an Oak based AEM installation:
 
-* Oak does not create indexes automatically. Because of this, custom indexes will need to be created when necessary.
-* Unlike Jackrabbit 2 where sessions always reflect the latest state of the repository, with Oak a session reflects a stable view of the repository from the time the session was acquired. This is due to the MVCC model on which Oak is based on.
+* Oak does not create indexes automatically. As such, custom indexes must be created when necessary.
+* Unlike Jackrabbit 2 where sessions always reflect the latest state of the repository, with Oak a session reflects a stable view of the repository from the time the session was acquired. The reason is due to the MVCC model on which Oak is based.
 * Same name siblings (SNS) are not supported in Oak.
 
 ## Other Platform Related Documentation {#other-platform-related-documentation}
