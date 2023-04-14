@@ -60,7 +60,7 @@ For security information about operating systems that AEM Forms on JEE supports,
   </tr>
   <tr>
    <td>Oracle Linux&reg; 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Security Guide for Release 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Security Guide for Release 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -207,7 +207,7 @@ JBoss&reg; Application Server uses 8080 as the default HTTP port. JBoss&reg; als
 
 1. Open the following file for editing:
 
-   Single Server installation: [JBoss&reg; root]/standalone/configuration/standalone.xml
+   Single-Server installation: [JBoss&reg; root]/standalone/configuration/standalone.xml
 
    Cluster installtions: [JBoss&reg; root]/domain/configuration/domain.xml
 
@@ -240,8 +240,8 @@ The lc_[database].xml file should not contain password in clear text format. Con
 >
 >The AEM Forms on JEE JBoss&reg; turnkey installer encrypts the database password.
 
-IBM&reg; WebSphere&reg; Application Server and Oracle WebLogic Server may encrypt data source passwords by default. However, confirm with your application server documentation to ensure that this is happening.
+IBM&reg; WebSphere&reg; Application Server and Oracle WebLogic Server may encrypt data source passwords by default. However, you should confirm with your application server documentation to ensure that it is happening.
 
 ### Protecting the private key stored in Trust Store {#protecting-the-private-key-stored-in-trust-store}
 
-The private keys or credentials imported in Trust Store are stored in AEM Forms on JEE database. Take appropriate precautions to secure the database and restrict the access only to designated administrators.
+The private keys or credentials imported in Trust Store are stored in AEM Forms on JEE database. To secure the database and restrict access to designated administrators only, take appropriate precautions.
