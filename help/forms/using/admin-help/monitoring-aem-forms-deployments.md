@@ -13,16 +13,16 @@ exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 ---
 # Monitoring AEM forms deployments {#monitoring-aem-forms-deployments}
 
-You can monitor AEM forms deployments from both a system level and an internal level. You can use specialist management tools such as HP OpenView, IBM Tivoli, and CA UniCenter and a third-party JMX monitor called *JConsole* to specifically monitor Java activity. Implementation of a monitoring strategy improves availability, reliability, and performance of your AEM forms deployments.
+You can monitor AEM forms deployments from both a system level and an internal level. You can use specialist management tools such as HP OpenView, IBM&reg; Tivoli, and CA UniCenter and a third-party JMX monitor called *JConsole* to specifically monitor Java&trade; activity. Implementation of a monitoring strategy improves availability, reliability, and performance of your AEM forms deployments.
 
-For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+<!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 ## Monitoring using MBeans {#monitoring-using-mbeans}
 
-AEM forms provides two registered MBeans that provide navigation and statistic information. These are the only MBeans that are supported for integration and inspection:
+AEM Forms provides two registered MBeans that provide navigation and statistic information. These parts are the only MBeans that are supported for integration and inspection:
 
 * **ServiceStatistic:** This MBean provides information about Service name and its version.
-* **OperationStatistic:** This MBean provides the statistic of every forms server’s service. This is where administrators can get information about a particular service such as invocation time, number of errors, and so on.
+* **OperationStatistic:** This MBean provides the statistic of every AEM Forms server's service. This MBean is where administrators can get information about a particular service such as invocation time, and number of errors.
 
 ### ServiceStatisticMbean public interfaces {#servicestatisticmbean-public-interfaces}
 
@@ -78,7 +78,7 @@ Using a JMX console (JConsole), statistics from OperationStatistic MBean are ava
 
 **Operation Statistics**
 
-**Invocation Time:** Time taken for the execution of the method. This does not include the time the request is serialized, transferred from client to server, and deserialized.
+**Invocation Time:** Time taken for the execution of the method. This invocaation does not include the time the request is serialized, transferred from client to server, and deserialized.
 
 **Invocation count:** The number of times the service is invoked.
 
@@ -100,9 +100,9 @@ To enable JMX monitoring, the application servers typically need some configurat
 
 ### Examples of how to set up open JMX access {#examples-of-how-to-set-up-open-jmx-access}
 
-**JBoss 4.0.3/4.2.0 - configure the JVM startup**
+**JBoss&reg; 4.0.3/4.2.0 - configure the JVM startup**
 
-To view MBeans from JConsole, configure the JBoss application server’s JVM startup parameters. Ensure JBoss is started from the run.bat/sh file.
+To view MBeans from JConsole, configure the JBoss application server's JVM startup parameters. Ensure JBoss is started from the run.bat/sh file.
 
 1. Edit the run.bat file that is located under InstallJBoss/bin.
 1. Find the JAVA_OPTS line and add the following:
@@ -131,9 +131,9 @@ To view MBeans from JConsole, configure the JBoss application server’s JVM sta
 1. Launch JConsole for new connection and click remote tab.
 1. Enter the hostname and port (9088, the number you specify during the start up options of JVM).
 
-**Websphere 6.1 - configure JVM startup**
+**WebSphere&reg; 6.1 - configure JVM startup**
 
-1. On the admin console (Application server &gt; server1 &gt; Process Definition &gt; JVM), add the following line into the field for Generic JVM Argument:
+1. On the Admin Console (Application server &gt; server1 &gt; Process Definition &gt; JVM), add the following line into the field for Generic JVM Argument:
 
    ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
