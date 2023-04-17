@@ -109,8 +109,7 @@ The following step-by-step workflow description is designed to help you get up a
 
         * Integrate video using embed code on web page:
           [Embed the video viewer on a web page](embed-code.md).
-
-    * [Publish videos to YouTube](#publishing-videos-to-youtube).
+    
     * [Generate video reports](#viewing-video-reports).
 
     * [Add captions to video](#adding-captions-to-video).
@@ -285,7 +284,7 @@ The following graphic shows the overall authoring workflow of videos that are up
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
-The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitor video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
