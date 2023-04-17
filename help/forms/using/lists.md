@@ -1,8 +1,8 @@
 ---
-title: Document Fragments
-seo-title: Document Fragments
+title: Document Fragments in AEM
+
 description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
-seo-description: Document Fragments, such as Text, lists, conditions, and layout fragments, in Correspondence Management let you form the static, dynamic, and repeatable components of customer correspondence.
+
 uuid: 4273323d-14f5-4b3b-8fed-80beef641efe
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -95,7 +95,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 
 1. If required, insert special characters in the document fragment. For example, you can use the Special Characters palette to insert:
 
-    * Currency symbols such as €,￥, and £
+    * Currency symbols such as &euro;,￥, and £
     * Mathematical symbols such as ∑, √, ∂, and ^
     * Punctuation symbols such as ‟ and "
 
@@ -238,7 +238,7 @@ A list is a group of related content that can be used in a letter template as a 
     * **Name:** The unique name for the list. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated with the value in the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)**: Type a description of the asset.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the list, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate list.
-    * **Tags (Optional)**: Select the tags to apply. You can also type in a new tag’s name and create it. (The new tag is created when you tap **Save**.)
+    * **Tags (Optional)**: Select the tags to apply. You can also type in a new tag's name and create it. (The new tag is created when you tap **Save**.)
 
 1. Tap **Next**.
 1. Tap **Add Asset**.
@@ -294,11 +294,11 @@ Based on the options you choose, either only the first expression that is found 
 The Condition Editor comes with an [Expression Builder](/help/forms/using/expression-builder.md) user interface that supports creating expressions using both multiple placeholders and Data Dictionary elements. You can use common operands and local / global functions in such expressions. Each expression can be associated with some content and optionally there could be a default section if none of the expressions evaluates to true. All expressions are evaluated in the sequence in which they are defined and the first expressions returning true is selected and its associated content is returned by that conditional module.
 
 For example, if the terms and conditions text in a letter differs depending which state the customer is in, and the data dictionary contains an element called "state", then you could add the condition as follows:
-• state = NY, select T&C_NY text paragraph
-• state = NC, select T&C_NC text paragraph
+* state = NY, select T&C_NY text paragraph
+* state = NC, select T&C_NC text paragraph
 
 The Condition editor enables you to specify a default condition. If the value of the control variables does not match any of the conditions, then the content associated with the default condition is used. Following the previous example, you could add this condition row:
-• Default, select T&C_Rest
+* Default, select T&C_Rest
 
 ### Create a condition {#create-a-condition}
 
@@ -310,7 +310,7 @@ The Condition editor enables you to specify a default condition. If the value of
     * **Name:** The unique name for the condition. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)** Type a description of the condition.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the condition, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate condition.
-    * **Tags (Optional)**: Optionally, select the tags to apply. You can also type in a new tag’s name and create it. (The new tag is created when you tap **Save**.)
+    * **Tags (Optional)**: Optionally, select the tags to apply. You can also type in a new tag's name and create it. (The new tag is created when you tap **Save**.)
 
 1. Tap **Next**.
 1. Tap **Add Asset**.
@@ -398,7 +398,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
     * **Title (Optional):** Enter the title for the layout fragment. Title needs not be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the layout fragment. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value. This name appears in the list in the Manage Assets user interface.
     * **Description (Optional)**: Description that appears in the list in the Manage Assets user interface.
-    * **Tags (Optional)**: Optionally, select the tags to apply to the condition. You can also type in a new tag’s name and create it.
+    * **Tags (Optional)**: Optionally, select the tags to apply to the condition. You can also type in a new tag's name and create it.
 
 1. Tap the **Table** tab and specify the following information for the layout:
 
@@ -441,7 +441,7 @@ This ensures that subforms inserted using the Insert &gt; Subform command or by 
 If the finished letter created in the Create Correspondence user interface is used for filling in a later workflow. Follow these recommendations related to Section 508 when creating the layout. Otherwise, the letter PDF is for display, and you can disregard these recommendations:
 
 * All target area subforms and all fields in a layout have a tab order.
-* Fields with captions are 508-compliant by default. The field’s /field/assist/speak@priority attribute is set to "custom" by default, which means that, unless custom screen reader text is supplied, the screen reader reads the field’s caption.
+* Fields with captions are 508-compliant by default. The field's /field/assist/speak@priority attribute is set to "custom" by default, which means that, unless custom screen reader text is supplied, the screen reader reads the field's caption.
 * Fields without captions specify a tool tip and indicate that screen readers read the tool tip by setting
 
 `/field/assist/speak@priority="toolTip"` and specifying tool tip text in `/field/assist/toolTip`.
@@ -500,8 +500,8 @@ This example shows how you can create a dynamic and a static table, bind the dyn
 
 1. In Designer, create two XDPs (layout fragments): a dynamic table and a static table. For both the layouts:
 
-    * Add subform to the table column. Ensure that you change the layout of table’s parent subform to flowed and remove the bindings of the subform in table.
-    * Add a subform to the table cell. Ensure that you change the layout of table’s parent subform to flowed and remove the bindings of the subform in table.
+    * Add subform to the table column. Ensure that you change the layout of table's parent subform to flowed and remove the bindings of the subform in table.
+    * Add a subform to the table cell. Ensure that you change the layout of table's parent subform to flowed and remove the bindings of the subform in table.
 
    Or, use the static and dynamic XDPs attached with this step.
 
