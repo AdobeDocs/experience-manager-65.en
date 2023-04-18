@@ -1,8 +1,8 @@
 ---
-title: Best Practices
-seo-title: Best Practices
-description: Follow this page to  learn best practices and guidelines that will help experienced AEM developers for sites, who want to build mobile app templates and components.
-seo-description: Follow this page to  learn best practices and guidelines that will help experienced AEM developers for sites, who want to build mobile app templates and components.
+title: Best Practices for AEM Mobile On-Demand Services
+
+description: Learn about best practices and guidelines that help experienced AEM developers for sites, who want to build mobile app templates and components.
+
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
 contentOwner: User
 content-type: reference

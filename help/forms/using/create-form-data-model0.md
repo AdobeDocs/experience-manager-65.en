@@ -1,8 +1,8 @@
 ---
-title: "Tutorial: Create form data model"
-seo-title: Create form data model for Interactive Communication
+title: "Tutorial: Create form data model in AEM Forms"
+
 description: Create form data model for Interactive Communication
-seo-description: Create form data model for Interactive Communication
+
 uuid: b56d3dac-be54-4812-b958-38a085686218
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,7 +12,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 ---
-# Tutorial: Create form data model{#tutorial-create-form-data-model}
+# Tutorial: Create form data model in AEM Forms{#tutorial-create-form-data-model}
 
  ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 

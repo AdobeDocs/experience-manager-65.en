@@ -1,5 +1,5 @@
 ---
-title: How to pass credentials using WS-security headers?
+title: Pass credentials using WS-security headers
 description: Learn how to pass credentials using WS-security headers
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 ---
