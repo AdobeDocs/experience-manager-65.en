@@ -1,8 +1,6 @@
 ---
-title: Applying Workflows to Pages
-seo-title: Applying Workflows to Pages
-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
-seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+title: Apply workflows to content pages
+description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow.
 uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES

@@ -1,8 +1,6 @@
 ---
-title: Working with Workflows
-seo-title: Working with Workflows
-description: Workflows in AEM allow you to automate a series of steps that are performed on a page or asset.
-seo-description: Workflows in AEM allow you to automate a series of steps that are performed on a page or asset.
+title: Work with Workflows
+description: Workflows in Adobe Experience Manager let you automate a series of steps that are performed on a page or asset.
 uuid: c4442d2a-c6b0-49d4-a1ce-384017c45bf0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
 ---
-# Working with Workflows{#working-with-workflows}
+# Work with Workflows{#working-with-workflows}
 
-AEM Workflows allows you to automate a series of steps that are performed on (one or more) pages and/or assets.
+AEM Workflows let you automate a series of steps that are performed on (one or more) pages and/or assets.
 
 For example, when publishing, an editor has to review the content - before a site administrator activates the page. A workflow that automates this example notifies each participant when it is time to perform their required work:
 

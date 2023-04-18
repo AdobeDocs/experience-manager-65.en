@@ -1,8 +1,6 @@
 ---
-title: Editing Page Content
-seo-title: Editing Page Content
+title: Editing page content
 description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
-seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

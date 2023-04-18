@@ -1,8 +1,6 @@
 ---
-title: Keyboard Shortcuts for Consoles
-seo-title: Keyboard Shortcuts for Consoles
-description: Save time when authoring by using these keyboard shortcuts
-seo-description: Save time when authoring by using these keyboard shortcuts
+title: Keyboard shortcuts for consoles in AEM
+description: Save time when authoring by using these keyboard shortcuts.
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

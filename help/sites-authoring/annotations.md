@@ -1,8 +1,6 @@
 ---
-title: Annotations when Editing a Page
-seo-title: Annotations when Editing a Page
-description: Many components directly related to content allow you to add an annotation
-seo-description: Many components directly related to content allow you to add an annotation
+title: Annotations when editing a content page
+description: Many components directly related to content let you add an annotation.
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
