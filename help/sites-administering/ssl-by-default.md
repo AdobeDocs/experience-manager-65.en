@@ -234,3 +234,15 @@ You can send the servlet a chain of certificates by repeating the certificateFil
 
 Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:
 [http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+
+### Enabling a TLS 1.3 Connection {#enabling-tls-connection}
+
+1. Go to the Web Console
+1. Then, navigate to **OSGi** - **Configuration** - **Adobe Granite SSL Connector Factory**
+1. Go to the **Included cipher suites** field and add the following entries. You can confirm each addition by pressing the "**+**" button to the left of the field, after adding each in:
+
+   * `TLS_AES_256_GCM_SHA384`
+   * `TLS_AES_128_GCM_SHA256`
+   * `TLS_CHACHA20_POLY1305_SHA256`
+   * `TLS_AES_128_CCM_SHA256`
+   * `TLS_AES_128_CCM_8_SHA256`
