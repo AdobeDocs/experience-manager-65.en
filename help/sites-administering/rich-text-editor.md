@@ -252,7 +252,7 @@ The available options in the RTE flow downstream from the user interface configu
 * If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
-As an example, you can see the [Text Core Component documentation](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
 
 ## Customize mapping between toolbar icons and commands {#iconstoolbar}
 
@@ -370,7 +370,7 @@ Do not add a XSS-prone HTML. AEM, and not RTE, may remove some HTML content to a
 
 To verify that the pasted HTML is saved, check the saved content in CRXDE (in the content node).
 
-If not saved, the HTML must have been removed by RTE as it did not adhere to the RTE’s rules.
+If not saved, the HTML must have been removed by RTE as it did not adhere to the RTE's rules.
 
 If saved in CRXDE but not rendered on the Page (to check rendering, see page's [preview](/help/sites-authoring/editing-content.md#preview-mode), it is removed by AEM XSS rules.
 
