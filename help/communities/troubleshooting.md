@@ -1,8 +1,8 @@
 ---
-title: Troubleshooting
-seo-title: Troubleshooting
+title: Troubleshooting Community
+
 description: Troubleshooting Community including Known Issues
-seo-description: Troubleshooting Community including Known Issues
+
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 ---
-# Troubleshooting {#troubleshooting}
+# Troubleshooting Community {#troubleshooting}
 
-This section contains common concerns and known issues.
+This section contains common concerns and known issues when troubleshooting Community.
 
 ## Known Issues {#known-issues}
 
