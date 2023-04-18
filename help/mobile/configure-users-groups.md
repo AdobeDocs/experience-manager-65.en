@@ -1,8 +1,6 @@
 ---
-title: Configure Your Users and User Groups
-seo-title: Configure Your Users and User Groups
+title: Configure users and user groups
 description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile apps.
-seo-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile apps.
 uuid: 55cea2b3-d7e6-4174-92b3-ee97e46b59c4
 contentOwner: User
 content-type: reference
