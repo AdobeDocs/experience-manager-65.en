@@ -1,8 +1,6 @@
 ---
-title: Editing Page Content
-seo-title: Editing Page Content
-description: Once your page is created you can edit the content to make the updates you require
-seo-description: Once your page is created you can edit the content to make the updates you require
+title: Editing the content of pages
+description: After your page is created, you can edit the content to make the updates you require.
 uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

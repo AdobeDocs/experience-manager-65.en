@@ -1,8 +1,6 @@
 ---
-title: Page Authoring with Content Fragments
-seo-title: Page Authoring with Content Fragments
-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
-seo-description: AEM Content Fragments allow you to design, create, curate, and use page-independent content
+title: Content page authoring with Content Fragments
+description: AEM Content Fragments let you design, create, curate, and use page-independent content.
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

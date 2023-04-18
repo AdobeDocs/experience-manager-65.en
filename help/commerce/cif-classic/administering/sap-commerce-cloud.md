@@ -1,8 +1,8 @@
 ---
-title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
+title: Use AEM with SAP Commerce Cloud
+
 description: Learn how to use AEM with SAP Commerce Cloud.
-seo-description: Learn how to use AEM with SAP Commerce Cloud.
+
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce

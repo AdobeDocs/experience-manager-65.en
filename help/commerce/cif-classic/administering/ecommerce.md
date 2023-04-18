@@ -1,5 +1,5 @@
 ---
-title: eCommerce
+title: eCommerce integration framework
 description: AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints.
 topic-tags: e-commerce
 content-type: reference

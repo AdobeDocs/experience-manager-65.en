@@ -1,8 +1,6 @@
 ---
-title: Working with Page Versions
-seo-title: Working with Page Versions
+title: Work with content page versions
 description: Create, compare, and restore versions of a page
-seo-description: Create, compare, and restore versions of a page
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
