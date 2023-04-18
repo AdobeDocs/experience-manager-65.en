@@ -34,7 +34,7 @@ A service user called **ssl-service** has been created for this feature. Once yo
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Once you enter the credentials, click **Next** in the upper right corner of the page. Then, upload the associated private key and certificate for the SSL connection.
+1. Once you enter the credentials, click **Next** in the upper right corner of the page. Then, upload the associated private key and certificate for the SSL/TLS connection.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -147,7 +147,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### Via Package {#via-package}
 
-Alternatively, you can automate the SSL setup by uploading a package that already contains these required items:
+Alternatively, you can automate the SSL/TLS setup by uploading a package that already contains these required items:
 
 * The ssl-service user's keystore. This is located under */home/users/system/security/ssl-service/keystore* in the repository.
 * The `GraniteSslConnectorFactory` configuration
@@ -173,7 +173,7 @@ Below you will find an example for creating a self-signed certificate in DER for
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Generate the SSL certificate and sign it with the private key. In this example, will expire one year from now:
+1. Generate the SSL/TLS certificate and sign it with the private key. In this example, will expire one year from now:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
