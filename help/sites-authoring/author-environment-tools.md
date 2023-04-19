@@ -258,7 +258,7 @@ Open the required console, then navigate to the required resource and open **Tim
 
 ## Page Information {#page-information}
 
-The Page Information (equalizer icon) opens a menu that also provides details about the last edit and the last publication. Depending on the characteristics of the page, its site, and your instance, more or fewer options might be available:
+The Page Information button (equalizer icon) opens a menu that also provides details about the last edit and the last publication. Depending on the characteristics of the page, its site, and your instance, more or fewer options might be available:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -271,7 +271,7 @@ The Page Information (equalizer icon) opens a menu that also provides details ab
 * [Edit Template](/help/sites-authoring/templates.md); when the page is based on an [editable template](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [View as Published](/help/sites-authoring/editing-content.md#view-as-published)
-* [View in Admin](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* View in Admin; opens the page in the [sites console](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-authoring/basic-handling.md#accessing-help)
 
 For example, when appropriate, **Page Information** also has the options:
