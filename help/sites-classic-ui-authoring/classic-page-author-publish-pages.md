@@ -1,8 +1,6 @@
 ---
-title: Publishing Pages
-seo-title: Publishing Pages
-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
-seo-description: Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website.
+title: Publishing pages
+description: After you have created and reviewed your content on the author environment, make it available on your public website.
 uuid: ab5ffc59-1c41-46fe-904e-9fc67d7ead04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +12,7 @@ exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 ---
 # Publishing Pages{#publishing-pages}
 
-Once you have created and reviewed your content on the author environment, the goal is to make it available on your public website (your publish environment).
+After you have created and reviewed your content on the author environment, make it available on your public website (your publish environment).
 
 This is referred to as publishing a page. When you want to remove a page from the publish environment is referred to as unpublishing. When publishing and unpublishing the page remains available on the author environment for further changes until you delete it.
 

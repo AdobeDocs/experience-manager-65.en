@@ -1,8 +1,6 @@
 ---
-title: Editing Page Properties
-seo-title: Editing Page Properties
-description: Define the required properties for a page
-seo-description: Define the required properties for a page
+title: Editing content page properties
+description: Define the required properties for a page.
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
