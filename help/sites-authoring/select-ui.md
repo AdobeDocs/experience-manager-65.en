@@ -1,8 +1,6 @@
 ---
-title: Selecting your UI
-seo-title: Selecting your UI
-description: Configure which interface you will use to work in AEM
-seo-description: Configure which interface you will use to work in AEM
+title: Selecting your user interface in AEM
+description: Configure which interface you use to work in AEM.
 uuid: ab127f2f-2f8a-4398-90dd-c5d48eed9e53
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

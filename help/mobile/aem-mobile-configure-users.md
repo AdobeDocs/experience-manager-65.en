@@ -1,8 +1,6 @@
 ---
-title: Configure Your Users and User Groups
-seo-title: Configure Your Users and User Groups
+title: Configure your users and user groups
 description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile On-Demand services app.
-seo-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile On-Demand services app.
 uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference

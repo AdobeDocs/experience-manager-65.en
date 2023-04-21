@@ -1,8 +1,6 @@
 ---
 title: Components
-seo-title: Components
 description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
-seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 page-status-flag: de-activated
 uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
