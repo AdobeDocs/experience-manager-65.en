@@ -424,34 +424,95 @@ query GetAdventureByType($includePrice: Boolean!) {
 
 ## Filtering {#filtering}
 
-You can also use filtering in your GraphQL queries to return specific data. 
+You can also use filtering in your GraphQL queries to return specific data.
 
 Filtering uses a syntax based on logical operators and expressions. 
 
-For example, the following (basic) query filters all persons that have a name of `Jobs` or `Smith`:
+The most atomic part is a single expression that can be applied to the content of a certain field. It compares the content of the field with a given constant value.
 
-```xml
-query {
-  personList(filter: {
-    name: {
+For example, the expression
+
+```graphql
+{
+  value: "some text"
+  _op: EQUALS
+}
+```
+
+would compare the content of the field with the value `some text` and succeeds if the content equals the value. Otherwise, the expression will fail.
+
+The following operators can be used to compare fields to a certain value:
+
+| Operator | Type(s) | The expression succeeds if ... |
+|--- |--- |--- |
+| `EQUALS` | `String`, `ID`, `Boolean` | ... the value is exactly the same as the content of the field |
+| `EQUALS_NOT` | `String`, `ID` | ... the value is *not* the same as the content of the field |
+| `CONTAINS` | `String` | ... the content of the field contains the value (`{ value: "mas", _op: CONTAINS }` will match `Christmas`, `Xmas`, `master`, ...) |
+| `CONTAINS_NOT` | `String` | ... the content of the field does *not* contain the value |
+| `STARTS_WITH` | `ID` | ... the ID starts with a certain value (`{ value: "/content/dam/", _op: STARTS_WITH` will match `/content/dam/path/to/fragment`, but not `/namespace/content/dam/something` |
+| `EQUAL` | `Int`, `Float` | ... the value is exactly the same as the content of the field |
+| `UNEQUAL` | `Int`, `Float` | ... the value is *not* the same as the content of the field |
+| `GREATER` | `Int`, `Float` | ... the content of the field is greater than the value |
+| `GREATER_EQUAL` | `Int`, `Float` | ... the content of the field is greater than or equal to the value |
+| `LOWER` | `Int`, `Float` | ... the content of the field is lower than the value |
+| `LOWER_EQUAL` | `Int`, `Float` | ... the content of the field is lower than or equal to the value |
+| `AT` | `Calendar`, `Date`, `Time` | ... the content of the field is exactly the same as the value (including timezone setting) |
+| `NOT_AT` | `Calendar`, `Date`, `Time` | ... the content of the field is *not* the same as the value |
+| `BEFORE` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is before the point in time denoted by the content of the field |
+| `AT_OR_BEFORE` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is before or at the same point in time denoted by the content of the field |
+| `AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after the point in time denoted by the content of the field |
+| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... the point in time denoted by the value is after or at the same point in time denoted by the content of the field |
+
+Some types also allow to specify additional options that modify how an expression is evaluated:
+
+| Option | Type(s) | Description |
+|--- |--- |--- |
+| `_ignoreCase` | `String` | Ignores the case of a string, e.g. a value of `time` will match `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | Allows a certain margin for `float` values to be considered the same (to work around technical limitations due to the internal representation of `float` values; should be avoided, as this option might have a negative impact on performance |
+
+Expressions can be combined to a set with the help of a logical operator (`_logOp`):
+
+* `OR` - the set of expressions will succeed if at least one expression succeeds
+* `AND` - the set of expressions will succeed if all expressions succeed (default)
+
+Each field can be filtered by its own set of expressions. The expression sets of all fields mentioned in the filter argument will eventually be combined by its own logical operator.
+
+A filter definition (passed as the `filter` argument to a query) contains:
+
+* A sub-definition for each field (the field can be accessed through its name, e.g. there's a `lastName` field in the filter for the `lastName` field in the Data (field) Type)
+* Each sub-definition contains the `_expressions` array, providing the expression set, and the `_logOp` field that defines the logical operator the expressions should be combined with
+* Each expression is defined by the value (`value` field) and the operator (`_operator` field) the content of a field should be compared to
+
+Note that you can omit `_logOp` if you want to combine items with `AND` and `_operator` if you want to check for equality, as these are the default values.
+
+The following example demonstrates a full query that filters all persons that have a `lastName` of `Provo` or containing `sjö`, independent of the case:
+
+```graphql
+{
+  authorList(filter: {
+    lastname: {
       _logOp: OR
       _expressions: [
         {
-          value: "Jobs"
+          value: "sjö",
+          _operator: CONTAINS,
+          _ignoreCase: true
         },
         {
-          value: "Smith"
+          value: "Provo"
         }
       ]
     }
   }) {
     items {
-      name
+      lastName
       firstName
     }
   }
 }
 ```
+
+While you can also filter on nested fields, it is not recommended, as it might lead to performance issues.
 
 For further examples, see:
 
@@ -462,6 +523,153 @@ For further examples, see:
   * And the [Sample Content and Structure](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql) prepared for use in sample queries
 
 * [Sample Queries based on the WKND Project](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
+
+## Sorting {#sorting}
+
+>[!NOTE]
+>
+>For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+
+This feature allows you to sort the query results according to a specified field.
+
+The sorting criteria:
+
+* is a comma separated list of values representing the field path
+  * the first field in the list will define the primary sort order, the second field will be used if two values of the primary sort criterion are equal, the third one if the first two criteria are equal, etc.
+  * dotted notation, i.e field1.subfield.subfield etc...
+* with an optional order direction
+  * ASC (ascending) or DESC (descending); as default ASC is applied
+  * the direction can be specified per field; this means that you can sort one field in ascending order, another one in descending order (name, firstName DESC)
+
+For example:
+
+```graphql
+query {
+  authorList(sort: "lastName, firstName") {
+    items {
+      firstName
+      lastName
+    }
+  }
+}
+```
+
+And also:
+
+```graphql
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
+    items {
+        lastName
+        firstName
+    }
+  }
+}
+```
+
+You can also sort on a field within a nested fragment, using the format of `nestedFragmentname.fieldname`.
+
+>[!NOTE]
+>
+>This might have a negative impact on performance.
+
+For example:
+
+```graphql
+query {
+  articleList(sort: "authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+    }
+  }
+}
+```
+
+## Paging {#paging}
+
+>[!NOTE]
+>
+>For best performance consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+
+This feature allows you to perform paging on query types that returns a list. Two methods are provided:
+
+* `offset` and `limit` in a `List` query
+* `first` and `after` in a `Paginated` query
+
+### List query - offset and limit {#list-offset-limit}
+
+In a `...List`query you can use `offset` and `limit` to return a specific subset of results:
+
+* `offset`: Specifies the first data set to return
+* `limit`: Specifies the maximum number of data sets to be returned
+
+For example, to output the page of results containing up to five articles, starting from the fifth article from the *complete* results list:
+
+```graphql
+query {
+   articleList(offset: 5, limit: 5) {
+    items {
+      authorFragment {
+        lastName
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
+
+>[!NOTE]
+>
+>* Paging requires a stable sort order to work correctly across multiple queries requesting different pages of the same result set. By default it uses the repository path of each item of the result set to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at JCR query level, then there will be a negative performance impact as the entire result set must be loaded into memory before the pages can be determined.
+>
+>* The higher the offset, the more time it will take to skip the items from the complete JCR query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+
+### Paginated query - first and after {#paginated-first-after}
+
+The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the `first`/`after` arguments as defined by [the GraphQL Cursor Connections Specification](https://relay.dev/graphql/connections.htm). You can find a less formal introduction in the [GraphQL introduction](https://graphql.org/learn/pagination/#pagination-and-edges).
+
+* `first`: The `n` first items to return. 
+  The default is `50`. 
+  The maximum is `100`.
+* `after`: The cursor that determines the beginning of the requested page; note that the item represented by the cursor is not included in the result set; the cursor of an item is determined by the `cursor` field of the `edges` structure.
+
+For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
+
+```graphql
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            title
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
+
+>[!NOTE]
+>
+>* By default paging use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
+>
+>* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
 ## GraphQL for AEM - Summary of Extensions {#graphql-extensions}
 
