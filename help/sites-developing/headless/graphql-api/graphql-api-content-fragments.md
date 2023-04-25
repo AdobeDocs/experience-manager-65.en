@@ -177,7 +177,7 @@ For Content Fragments, the GraphQL schemas (structure and types) are based on **
 >
 >This means that you need to ensure that no sensitive data is available, as it could be leaked this way; for example, this includes information that could be present as field names in the model definition.
 
-For example, if a user created a Content Fragment Model called `Article`, then AEM generates the object `article` that is of a type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model.
+For example, if a user created a Content Fragment Model called `Article`, then AEM generates a GraphQL type `ArticleModel`. The fields within this type correspond to the fields and data types defined in the model. In addition, it creates some entrypoints for the queries that operate on this type, such as `articleByPath` or `articleList`.
 
 1. A Content Fragment Model:
 
@@ -190,7 +190,7 @@ For example, if a user created a Content Fragment Model called `Article`, then A
    
    * Three of them have been controlled by the user: `author`, `main` and `referencearticle`.
 
-   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, `_path`, `_metadata`, `_variations`. These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
+   * The other fields were added automatically by AEM, and represent helpful methods to provide information about a certain Content Fragment; in this example, (the [helper fields](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. After a user creates a Content Fragment based on the Article model, it can then be interrogated through GraphQL. For examples, see the [Sample Queries](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (based on a [sample Content Fragment structure for use with GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
@@ -234,7 +234,7 @@ Within the schema there are individual fields, of two basic categories:
 
   A selection of [Field Types](#field-types) are used to create fields based on how you configure your Content Fragment Model. The field names are taken from the **Property Name** field of the **Data Type**.
   
-  * There is also the **Render As** property to take into consideration, because users can configure certain data types; for example, as either a single line text or a multifield. 
+  * There is also the **Render As** setting to take into consideration, as users can configure certain data types. For example, a single line text field can be configured to contain multiple single line texts by choosing `multifield` from the dropdown.
 
 * GraphQL for AEM also generates a number of [helper fields](#helper-fields).
 
@@ -247,29 +247,31 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Content Fragment Model - Data Type | GraphQL Type | Description |
 |--- |--- |--- |
 | Single line Text | String, [String] | Used for simple strings such as author names, location names, etc. |
-| Multi line Text | String | Used for outputting text such as the body of an article |
+| Multi line Text | String, [String] | Used for outputting text such as the body of an article |
 | Number | Float, [Float] | Used to display floating point number and regular numbers |
 | Boolean | Boolean | Used to display checkboxes → simple true/false statements |
 | Date And Time | Calendar | Used to display date and time in an ISO 8086 format. Depending on the type selected, there are three flavors available for use in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
 | Enumeration | String | Used to display an option from a list of options defined at model creation |
 | Tags | [String] | Used to display a list of Strings representing Tags used in AEM |
-| Content Reference | String | Used to display the path towards another asset in AEM |
+| Content Reference | String, [String] | Used to display the path towards another asset in AEM |
 | Fragment Reference | *A model type* | Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
 
 ### Helper Fields {#helper-fields}
 
 In addition to the data types for user generated fields, GraphQL for AEM also generates a number of *helper* fields in order to help identify a Content Fragment, or to provide additional information about a Content Fragment.
 
+These [helper fields](#helper-fields) are marked with a preceding `_` to distinguish between what has been defined by the user and what has been auto-generated.
+
 #### Path {#path}
 
-The path field is used as an identifier in GraphQL. It represents the path of the Content Fragment asset inside the AEM repository. We have chosen this as the identifier of a content fragment, because it:
+The path field is used as an identifier in AEM GraphQL. It represents the path of the Content Fragment asset inside the AEM repository. We have chosen this as the identifier of a content fragment, because it:
 
 * is unique within AEM,
 * can be easily fetched.
 
-The following code will display the paths of all Content Fragments that were created based on the Content Fragment Model `Person`. 
+The following code will display the paths of all Content Fragments that were created based on the Content Fragment Model `Person`.
 
-```xml
+```graphql
 {
   personList {
     items {
@@ -279,11 +281,11 @@ The following code will display the paths of all Content Fragments that were cre
 }
 ```
 
-To retrieve a single Content Fragment of a specific type, you also need to determine its path first. for example:
+To retrieve a single Content Fragment of a specific type, you also need to determine its path first. For example:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
       _path
       firstName
@@ -320,7 +322,7 @@ For example, if you want to retrieve the title of a Content Fragment, we know th
 
 To query for metadata:
 
-```xml
+```graphql
 {
   personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
@@ -351,7 +353,7 @@ See [Sample Query for Metadata - List the Metadata for Awards titled GB](/help/s
 
 The `_variations` field has been implemented to simplify querying the variations that a Content Fragment has. For example:
 
-```xml
+```graphql
 {
   personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
@@ -361,11 +363,15 @@ The `_variations` field has been implemented to simplify querying the variations
 }
 ```
 
+>[!NOTE]
+>
+>Note that the `_variations` field does not contain a `master` variation, as technically the original data (referenced as *Master* in the UI) is not considered an explicit variation.
+
 See [Sample Query - All Cities with a Named Variation](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
->If the given variation does not exist for a Content Fragment, then the master variation will be returned as a (fallback) default.
+>If the given variation does not exist for a Content Fragment, then the original data (also known as the master variation) will be returned as a (fallback) default.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -379,7 +385,7 @@ For example, to get all Content Fragments of type `Article` that have a specific
 
 ![GraphQL Variables](assets/cfm-graphqlapi-03.png "GraphQL Variables")
 
-```xml
+```graphql
 ### query
 query GetArticlesByVariation($variation: String!) {
     articleList(variation: $variation) {
@@ -405,7 +411,7 @@ For example there you can include the `adventurePrice` field in a query for all 
 
 ![GraphQL Directives](assets/cfm-graphqlapi-04.png "GraphQL Directives")
 
-```xml
+```graphql
 ### query
 query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
@@ -430,7 +436,7 @@ Filtering uses a syntax based on logical operators and expressions.
 
 The most atomic part is a single expression that can be applied to the content of a certain field. It compares the content of the field with a given constant value.
 
-For example, the expression
+For example, the following expression would compare the content of the field with the value `some text`, and succeed if the content equals the value. Otherwise, the expression will fail.:
 
 ```graphql
 {
@@ -438,8 +444,6 @@ For example, the expression
   _op: EQUALS
 }
 ```
-
-would compare the content of the field with the value `some text` and succeeds if the content equals the value. Otherwise, the expression will fail.
 
 The following operators can be used to compare fields to a certain value:
 
@@ -667,7 +671,7 @@ query {
 
 >[!NOTE]
 >
->* By default paging use the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
+>* By default, paging uses the UUID of the repository node representing the fragment for ordering to ensure the order of results is always the same. When `sort` is used, the UUID is implicitly used to ensure a unique sort; even for two items with identical sort keys.
 >
 >* Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. This is also the recommended way if you want to query large paginated result sets.
 
@@ -680,7 +684,20 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
 
 * If you expect a list of results:
   * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](#sample-all-information-all-cities)
+  * See [Sample Query - All Information about All Cities](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
+  
+  You can then:
+  
+  * [Sort the results](#sorting)
+
+    * `ASC` : ascending
+    * `DESC` : descending
+
+  * Return a page of results using either:
+
+    * [A List query with offset and limit](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#list-offset-limit)
+    * [A Paginated query with first and after](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#paginated-first-after)
+  * See [Sample Query - All Information about All Cities](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
 
 * The filter `includeVariations` is included in the `List` query type.  To retrieve Content Fragment Variations in the query results, then the `includeVariations` filter must be set to `true`.
 
