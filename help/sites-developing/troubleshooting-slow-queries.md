@@ -15,7 +15,7 @@ exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
 
 ## Slow Query Classifications {#slow-query-classifications}
 
-There are 3 main classifications of slow queries in AEM, listed by severity:
+There are three main classifications of slow queries in AEM, listed by severity:
 
 1. **Index-less queries**
 
@@ -27,9 +27,9 @@ There are 3 main classifications of slow queries in AEM, listed by severity:
 
 1. **Large result set queries**
 
-    * Queries that return very large numbers of results
+    * Queries that return large numbers of results
 
-The first 2 classifications of queries (index-less and poorly restricted) are slow, because they force the Oak query engine to inspect each **potential** result (content node or index entry) to identify which belong in the **actual** result set.
+The first two classifications of queries (index-less and poorly restricted) are slow. They are slow because they force the Oak query engine to inspect each **potential** result (content node or index entry) to identify which belong in the **actual** result set.
 
 The act of inspecting each potential result is what is referred to as Traversing.
 
@@ -37,13 +37,13 @@ Since each potential result must be inspected, the cost to determine the actual 
 
 Adding query restrictions and tuning indexes allows the index data to be stored in an optimized format affording fast result retrieval and, reduces or eliminates the need for the linear inspection of potential result sets.
 
-In AEM 6.3, by default, when a traversal of 100,000 is reached, the query fails and throws an exception. This limit does not exist by default in AEM versions prior to AEM 6.3, but can be set via the Apache Jackrabbit Query Engine Settings OSGi configuration and QueryEngineSettings JMX bean (property LimitReads).
+In AEM 6.3, by default, when a traversal of 100,000 is reached, the query fails and throws an exception. This limit does not exist by default in AEM versions before AEM 6.3, but can be set via the Apache Jackrabbit Query Engine Settings OSGi configuration and QueryEngineSettings JMX bean (property LimitReads).
 
 ### Detecting Index-less Queries {#detecting-index-less-queries}
 
 #### During Development {#during-development}
 
-Explain **all** queries and ensure their query plans do not contain the **/&ast; traverse** explanation in them. Example traversing query plan:
+Explain **all** queries and ensure that their query plans do not contain the **/&ast; traverse** explanation in them. Example traversing query plan:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -85,7 +85,7 @@ Before adding the cq:tags index rule
 
   `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-This query resolves to the `cqPageLucene` index, but because no property index rule exists for `jcr:content` or `cq:tags`, when this restriction is evaluated, every record in the `cqPageLucene` index is checked to determine a match. This means that if the index contains 1 million `cq:Page` nodes, then 1 million records are checked to determine the result set.
+This query resolves to the `cqPageLucene` index, but because no property index rule exists for `jcr:content` or `cq:tags`, when this restriction is evaluated, every record in the `cqPageLucene` index is checked to determine a match. As such, if the index contains 1 million `cq:Page` nodes, then 1 million records are checked to determine the result set.
 
 After adding the cq:tags index rule
 
@@ -113,13 +113,13 @@ The addition of the indexRule for `jcr:content/cq:tags` in the `cqPageLucene` in
 
 When a query with the `jcr:content/cq:tags` restriction is performed, the index can look up results by value. That means that if 100 `cq:Page` nodes have `myTagNamespace:myTag` as a value, only those 100 results are returned, and the other 999,000 are excluded from the restriction checks, improving performance by a factor of 10,000.
 
-Of course, further query restrictions reduce the eligible result sets and further optimize the query optimization.
+More query restrictions reduce the eligible result sets and further optimize the query optimization.
 
-Similarly, without an additional index rule for the `cq:tags` property, even a fulltext query with a restriction on `cq:tags` would perform poorly as results from the index would return all fulltext matches. The restriction on cq:tags would be filtered after it.
+Similarly, without an extra index rule for the `cq:tags` property, even a fulltext query with a restriction on `cq:tags` would perform poorly as results from the index would return all fulltext matches. The restriction on cq:tags would be filtered after it.
 
-Another cause of post-index-filtering is Access Control Lists which often gets missed during development. Try to make sure that the query does not return paths that might be inaccessible to the user. This usually can be done by better content structure along with providing relevant path restriction on the query.
+Another cause of post-index-filtering is Access Control Lists which often gets missed during development. Try to make sure that the query does not return paths that might be inaccessible to the user. Doing so can be done by better content structure along with providing relevant path restriction on the query.
 
-A useful way to identify if the Lucene index is returning a lot of results to return a very small subset as query result is to enable DEBUG logs for `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` and see how many documents are being loaded from the index. Number of eventual results versus the number of loaded documents shouldn't be disproportionate. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
+A useful way to identify if the Lucene index is returning many results to return a small subset as query result, is to enable DEBUG logs for `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Doing so lets you see how many documents are being loaded from the index. Number of eventual results versus the number of loaded documents shouldn't be disproportionate. For more information, see [Logging](/help/sites-deploying/configure-logging.md).
 
 #### Post-Deployment {#post-deployment-1}
 
@@ -133,28 +133,28 @@ A useful way to identify if the Lucene index is returning a lot of results to re
 
 #### During Development {#during-development-2}
 
-Set low threshholds for oak.queryLimitInMemory (eg. 10000) and oak.queryLimitReads (eg. 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying "The query read more than x nodes..."
+Set low thresholds for oak.queryLimitInMemory (for example, 10000) and oak.queryLimitReads (for example, 5000) and optimize the expensive query when hitting an UnsupportedOperationException saying "The query read more than x nodes..."
 
-This helps avoiding resource intensive queries (ie. not backed by any index or backed by less covering index). For example, a query that reads 1M nodes would lead to lots of IO, and negatively impact the overall application performance. So any query which fails due to above limits should be analyzed and optimized.
+Setting low thresholds helps avoid resource-intensive queries (that is, not backed by any index or backed by less covering index). For example, a query that reads one million nodes would lead to lots of IO, and negatively impact the overall application performance. So any query which fails due to above limits should be analyzed and optimized.
 
 #### Post-Deployment {#post-deployment-2}
 
 * Monitor the logs for queries triggering large node traversal or large heap memory consumption : ``
 
   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-  * Optimize the query to reduce the number of traversed nodes
+  * Optimize the query so you reduce the number of traversed nodes.
 
-* Monitor the logs for queries triggering large heap memory consumption :
+* Monitor the logs for queries triggering large heap memory consumption:
 
   * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-  * Optimize the query to reduce the heap memory consumption
+  * Optimize the query so you reduce the heap memory consumption.
 
 For AEM 6.0 - 6.2 versions, you can tune the threshold for node traversal via JVM parameters in the AEM start script to prevent large queries from overloading the environment. The recommended values are :
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3, the above 2 parameters are preconfigured by default, and can be modified via the OSGi QueryEngineSettings.
+In AEM 6.3, the above two parameters are preconfigured by default, and can be modified via the OSGi QueryEngineSettings.
 
 More information available under : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -215,14 +215,14 @@ The following example uses Query Builder as it's the most common query language 
   property.value=article-page
   ```
 
-   `nt:hierarchyNode` is the parent nodetype of `cq:Page`, and assuming `jcr:content/contentType=article-page` is only applied to `cq:Page` nodes via our custom application, this query will only return `cq:Page` nodes where `jcr:content/contentType=article-page`. This is a suboptimal restriction though, because:
+   `nt:hierarchyNode` is the parent nodetype of `cq:Page`. Assuming `jcr:content/contentType=article-page` is only applied to `cq:Page` nodes by way of Adobe's custom application, this query only returns `cq:Page` nodes where `jcr:content/contentType=article-page`. This flow is a suboptimal restriction though, because:
 
-  * Other node inherit from `nt:hierarchyNode` (eg. `dam:Asset`) adding unnecessarily to the set of potential results.
+  * Other node inherit from `nt:hierarchyNode` (for example, `dam:Asset`) adding unnecessarily to the set of potential results.
   * No AEM-provided index exists for `nt:hierarchyNode`, however as there a provided index for `cq:Page`.
 
    Setting `type=cq:Page` restricts this query to only `cq:Page` nodes, and resolves the query to AEM's cqPageLucene, limiting the results to a subset of nodes (only cq:Page nodes) in AEM.
 
-1. Or, adjust the property restriction(s) so the query resolves to an existing Property Index.
+1. Or, adjust the property restrictions so the query resolves to an existing Property Index.
 
 * **Unoptimized query**
 
@@ -238,7 +238,7 @@ The following example uses Query Builder as it's the most common query language 
   property.value=my-site/components/structure/article-page
   ```
 
-   Changing the property restriction from `jcr:content/contentType` (a custom value) to the well known property `sling:resourceType` lets the query to resolve to the property index `slingResourceType` which indexes all content by `sling:resourceType`.
+   Changing the property restriction from `jcr:content/contentType` (a custom value) to the well-known property `sling:resourceType` lets the query resolve to the property index `slingResourceType` which indexes all content by `sling:resourceType`.
 
    Property indexes (opposed to Lucene Property Indexes) are best used when the query does not discern by nodetype, and a single property restriction dominates the result set.
 
@@ -262,11 +262,11 @@ The following example uses Query Builder as it's the most common query language 
   property.value=article-page
   ```
 
-  Scoping the path restriction from `path=/content`to `path=/content/my-site/us/en` allows the indexes to reduce the number of index entries that need to be inspected. When the query can restrict the path very well, beyond just `/content` or `/content/dam`, ensure the index has `evaluatePathRestrictions=true`.
+  Scoping the path restriction from `path=/content`to `path=/content/my-site/us/en` allows the indexes to reduce the number of index entries that must be inspected. When the query can restrict the path well, beyond just `/content` or `/content/dam`, ensure that the index has `evaluatePathRestrictions=true`.
 
   Note using `evaluatePathRestrictions` increases the index size.
 
-1. When possible, avoid query functions/operations suchs as: `LIKE` and `fn:XXXX` as their costs scales with the number of restriction-based results.
+1. When possible, avoid query functions and query operations such as: `LIKE` and `fn:XXXX` as their costs scales with the number of restriction-based results.
 
 * **Unoptimized query**
 
@@ -285,9 +285,9 @@ The following example uses Query Builder as it's the most common query language 
   fulltext.relPath=jcr:content/contentType
   ```
 
-   The LIKE condition is slow to evaluate because no index can be used if the text starts with a wildcard ("%...'). The jcr:contains condition allows using a fulltext index, and is therefore preferred. This requires the resolved Lucene Property Index to have indexRule for `jcr:content/contentType` with `analayzed=true`.
+   The LIKE condition is slow to evaluate because no index can be used if the text starts with a wildcard ("%...'). The jcr:contains condition allows using a fulltext index, and is therefore preferred. It requires the resolved Lucene Property Index to have indexRule for `jcr:content/contentType` with `analayzed=true`.
 
-   Using query functions like `fn:lowercase(..)` may be harder to optimize as there are not faster equivalents (outside more complex and obtrusive index analyzer configurations). It is best to identify other scoping restrictions to improve improve the overal query performance, requiring the functions to operate on the smallest set of potential results possible.
+   Using query functions like `fn:lowercase(..)` may be harder to optimize as there are not faster equivalents (outside more complex and obtrusive index analyzer configurations). It is best to identify other scoping restrictions to improve the overall query performance, requiring the functions to operate on the smallest set of potential results possible.
 
 1. ***This adjustment is Query Builder specific, and does not apply to JCR-SQL2 or XPath.***
 
@@ -310,7 +310,7 @@ The following example uses Query Builder as it's the most common query language 
 
    For cases where query execution is fast but the number of results are large, p. `guessTotal` is a critical optimization for Query Builder queries.
 
-   `p.guessTotal=100` tells Query Builder to only collect only the first 100 results, and set a boolean flag indicating if at least one more results exist (but not how many more, as counting this number would be be result in slowness). This optimization excels for pagination or infinite loading use cases, where only a subset of results are incrementally displayed.
+   `p.guessTotal=100` tells Query Builder to only collect the first 100 results. And, to set a boolean flag indicating if at least one more result exists (but not how many more, as counting this number results in slowness). This optimization excels for pagination or infinite loading use cases, where only a result subset is incrementally displayed.
 
 ## Existing Index Tuning {#existing-index-tuning}
 
@@ -335,7 +335,7 @@ The following example uses Query Builder as it's the most common query language 
       /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
       ```
 
-1. Provide the XPath (or JCR-SQL2) to [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) to generate the optimized Lucene Property Index definition.
+1. Provide the XPath (or JCR-SQL2) to Oak Index Definition Generator at `https://oakutils.appspot.com/generate/index` so you can generate the optimized Lucene Property Index definition. <!-- The above URL is 404 as of April 24, 2023 -->
 
    **Generated Lucene Property Index definition**
 
@@ -360,11 +360,11 @@ The following example uses Query Builder as it's the most common query language 
 
     1. Locate the existing Lucene Property Index that covers cq:Page (using Index Manager). In this case, `/oak:index/cqPageLucene`.
     1. Identify the configuration delta between the optimized index definition (Step #4) and the existing index (/oak:index/cqPageLucene), and add the missing configurations from the optimized Index to the existing index definition.
-    1. Per AEM's Re-indexing Best Practices, either a refresh or re-index is in order, based on if existing content will be effected by this index configuration change.
+    1. Per AEM's Reindexing Best Practices, either a refresh or reindex is in order, based on if existing content might be affected by this index configuration change.
 
 ## Create a New Index {#create-a-new-index}
 
-1. Verify the query does not resolve to an existing Lucene Property Index. If it does, see the above section on tuning and existing index.
+1. Verify that the query does not resolve to an existing Lucene Property Index. If it does, see the above section on tuning and existing index.
 1. As needed, convert the query to XPath or JCR-SQL2.
 
    * **Query Builder query**
@@ -381,7 +381,7 @@ The following example uses Query Builder as it's the most common query language 
      //element(*, myApp:Page)[@firstName = 'ira']
      ```
 
-1. Provide the XPath (or JCR-SQL2) to [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) to generate the optimized Lucene Property Index definition.
+1. Provide the XPath (or JCR-SQL2) to Oak Index Definition Generator at `https://oakutils.appspot.com/generate/index` so you can generate the optimized Lucene Property Index definition. <!-- The above URL is 404 as of April 24, 2023 -->
 
     **Generated Lucene Property Index definition**
 
@@ -402,15 +402,15 @@ The following example uses Query Builder as it's the most common query language 
 
    Add the XML definition provided by Oak Index Definition Generator for the new index to the AEM project that manages Oak index definitions (remember, treat Oak index definitions as code, since code depends on them).
 
-   Deploy and test the new index following the usual AEM software development lifecycle and verify the query resolves to the index and the query is performant.
+   Deploy and test the new index following the usual AEM software development lifecycle and verify that the query resolves to the index and the query is performant.
 
-   Upon the initial deployment of this index, AEM will populate the index with the requisite data.
+   On the initial deployment of this index, AEM populates the index with the requisite data.
 
 ## When are index-less and traversal queries OK? {#when-index-less-and-traversal-queries-are-ok}
 
-Due to AEM's flexible content architecture, it's difficult to predict and ensure traversals of content structures will not evolve over time to be unacceptably large.
+Due to AEM's flexible content architecture, it is difficult to predict and ensure that traversals of content structures do not evolve over time to be unacceptably large.
 
-Therefore, ensure an indexes satisfy queries, except if the combination of path restriction and nodetype restriction guarantees that **less than 20 nodes are ever traversed.**
+Therefore, ensure that indexes satisfy queries, except if the combination of path restriction and nodetype restriction guarantees that **fewer than 20 nodes are ever traversed.**
 
 ## Query Development Tools {#query-development-tools}
 
@@ -419,12 +419,12 @@ Therefore, ensure an indexes satisfy queries, except if the combination of path 
 * **Query Builder Debugger**
 
   * A WebUI for executing Query Builder queries and generate the supporting XPath (for use in Explain Query or Oak Index Definition Generator).
-  * Located on AEM at [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+  * On AEM at [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE Lite - Query Tool**
 
   * A WebUI for executing XPath and JCR-SQL2 queries.
-  * Located on AEM at [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) &gt; Tools &gt; Query...
+  * On AEM at [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) &gt; Tools &gt; Query...
 
 * **[Explain Query](/help/sites-administering/operations-dashboard.md#explain-query)**
 
@@ -436,7 +436,7 @@ Therefore, ensure an indexes satisfy queries, except if the combination of path 
 
 * **[Index Manager](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-  * An AEM Operations WebUI displaying the indexes on the AEM instance; facilitates understanding what indexes already exist, can be targeted or augmented.
+  * An AEM Operations WebUI displaying the indexes on the AEM instance; facilitates understanding what indexes exist; can be targeted or augmented.
 
 * **[Logging](/help/sites-administering/operations-dashboard.md#log-messages)**
 
@@ -451,16 +451,16 @@ Therefore, ensure an indexes satisfy queries, except if the combination of path 
 * **Apache Jackrabbit Query Engine Settings OSGi Config**
 
   * OSGi configuration that configures failure behavior for traversing queries.
-  * Located on AEM at [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+  * On AEM at [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **NodeCounter JMX Mbean**
 
   * JMX MBean used to estimate the number of nodes in content trees in AEM.
-  * Located on AEM at [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+  * On AEM at [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Community Supported {#community-supported}
 
-* **[Oak Index Definition Generator](https://oakutils.appspot.com/generate/index)**
+* **Oak Index Definition Generator at `https://oakutils.appspot.com/generate/index`** <!-- The above URL is 404 as of April 24, 2023 -->
 
   * Generate optimal Lucence Property Index from XPath or JCR-SQL2 query statements.
 
