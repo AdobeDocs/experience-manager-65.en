@@ -7,7 +7,12 @@ mini-toc-levels: 3
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
-<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/Documents/issue_tracker_sp_cfp_updates.xlsx?d=w3ea81ae4e6054153b132f2698c86f84e&csf=1&web=1&e=WRAZ43&nav=MTVfezk2OTJDQTNFLUI4QTQtNDY2RS05NEVCLUQ5QjcyNEVENkJDNn0 -->
+<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/Documents/issue_tracker_sp_cfp_updates.xlsx?d=w3ea81ae4e6054153b132f2698c86f84e&csf=1&web=1&e=7yhrWb&nav=MTVfe0U0RjdDQUM3LTZCQ0EtNDk1Qy04Mjc1LTM2MUJEMzE1OEVGN30 -->
+
+<!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
+>[!NOTE]
+>
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section. -->
 
 ## Release information {#release-information}
 
@@ -18,99 +23,95 @@ mini-toc-levels: 3
 | Date     | Thursday, May 25, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[…]be/packages/cq650/servicepack/aem-service-pkg-6.5.16.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
-## What is included in [!DNL Experience Manager] 6.5.16.0 {#what-is-included-in-aem-6516}
+## What is included in [!DNL Experience Manager] 6.5.17.0 {#what-is-included-in-aem-6517}
 
-[!DNL Experience Manager] 6.5.16.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-A key improvement in Dynamic Media is the following:
-
-New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for adaptive bitrate streaming in Dynamic Media video delivery (with CMAF [Common Media Application Format] enabled).
-
-* Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
-* DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
-* Available now in Asia-Pacific and North America (to be enabled by way of a support ticket); coming soon in Europe-Middle East-Africa.
-
-See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets] {#assets-6516}
+## [!DNL Assets] {#assets-6517}
 
-* A
-
-
-## [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516}
-
-* A-DM
-
-## [!DNL Forms] {#forms-6516}
-
-### [!DNL Forms] Key Features {#forms-features-6516}
-
-* F-KF
-
-### [!DNL Forms] Fixes {#forms-fixes-6516}
-
-* F
-
-## Integrations {#integrations-6516}
-
-* I
-
-## [!DNL Sites] {#sites-6516}
-
-* S
-
-### [!DNL Sites] - Core Components {#sites-core-components-6516}
-
-* S-CC
-
-### [!DNL Sites] - Admin User Interface {#sites-adminui-6516}
-
-* S-AUI
-
-### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6516}
-
-* S-CF
-
-### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6516}
-
-* S-EF
+* TEXT
 
 
-### [!DNL Sites] - Page Editor {#sites-pageeditor-6516}
+## [!DNL Assets] - [!DNL Dynamic Media] {#dm-6517}
 
-* S-PE
+* TEXT
+
+## [!DNL Forms] {#forms-6517}
+
+>[!NOTE]
+>
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
+
+<!-- ### [!DNL Forms] Key Features {#forms-features-6517}
+
+* TEXT
+
+### [!DNL Forms] Fixes {#forms-fixes-6517}
+
+* TEXT
+
+## Integrations {#integrations-6517}
+
+* TEXT
+
+## [!DNL Sites] {#sites-6517}
+
+* TEXT
+-->
+
+### [!DNL Sites] - Core Components {#sites-core-components-6517}
+
+* TEXT
+
+### [!DNL Sites] - Admin User Interface {#sites-adminui-6517}
+
+* TEXT
+
+### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6517}
+
+* TEXT
+
+### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6517}
+
+* TEXT
 
 
-## Sling {#sling-6516}
+### [!DNL Sites] - Page Editor {#sites-pageeditor-6517}
 
-* Sling
-
-
-## Translation projects {#translation-6516}
-
-* Tp
-
-## User interface {#ui-6516}
-
-* Ui
+* TEXT
 
 
-## WCM {#wcm-6516}
+## Sling {#sling-6517}
 
-* WCM
-
-## Workflow {#workflow-6516}
-
-* W
+* TEXT
 
 
-## Install [!DNL Experience Manager] 6.5.16.0 {#install}
+## Translation projects {#translation-6517}
+
+* TEXT
+
+## User interface {#ui-6517}
+
+* TEXT
+
+
+## WCM {#wcm-6517}
+
+* TEXT
+
+## Workflow {#workflow-6517}
+
+* TEXT
+
+
+## Install [!DNL Experience Manager] 6.5.17.0 {#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
