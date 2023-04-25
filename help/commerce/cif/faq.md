@@ -11,7 +11,7 @@ Adobe has adopted Adobe Commerce's GraphQL APIs as its official commerce API for
 
 ## 2. Can Product assets (images) be stored and referenced from AEM via Adobe Commerce admin? How can assets from Dynamic Media be consumed?
 
-No official AEM Assets – Adobe Commerce integration is available. There is a partner connector available on the [marketplace](https://marketplace.magento.com/partner/bounteous_ecomm).
+No official AEM Assets &ndash; Adobe Commerce integration is available. There is a partner connector available on the [marketplace](https://marketplace.magento.com/partner/bounteous_ecomm).
 
 Or, as a workaround, you can store product assets (images) in AEM Assets, but you have to manually store the asset URLs in Adobe Commerce. Dynamic Media is part of AEM Assets and works the same way.
 
