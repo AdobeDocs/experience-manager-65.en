@@ -25,7 +25,7 @@ mini-toc-levels: 3
 
 ## What is included in [!DNL Experience Manager] 6.5.17.0 {#what-is-included-in-aem-6517}
 
-[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements, that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -56,6 +56,7 @@ mini-toc-levels: 3
 ### [!DNL Forms] Fixes {#forms-fixes-6517}
 
 * TEXT
+-->
 
 ## Integrations {#integrations-6517}
 
@@ -63,8 +64,11 @@ mini-toc-levels: 3
 
 ## [!DNL Sites] {#sites-6517}
 
-* TEXT
--->
+* Performance drop in LinkCheckerTransformer. (SITES-11661)
+* Language copies of a page were not getting updated as expected. (SITES-11191)
+* Opening non-campaign pages call `targeteditor.html` unnecessarily. Remove the `targeteditor` call when not needed. (SITES-12469)
+* Live copies cannot be created for pages with annotations. (SITES-12154)
+
 
 ### [!DNL Sites] - Core Components {#sites-core-components-6517}
 
@@ -76,11 +80,13 @@ mini-toc-levels: 3
 
 ### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6517}
 
-* TEXT
+* Configuration for connecting to Polaris service object (URL, credentials, callback, and so on). (SITES-12149)
+* Usage of `SemanticDataType.REFERENCE` should support "Remote-Asset-IDs". (SITES-12127)
+* Integrate Polaris Asset Selector into Content Fragment editor. (SITES-12125)
 
 ### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6517}
 
-* TEXT
+* Selecting an Externalizer configuration in an Experience Fragment when you export to Adobe Target causes the incorrect externalized URL to be sent. (SITES-12402)
 
 
 ### [!DNL Sites] - Page Editor {#sites-pageeditor-6517}
@@ -121,7 +127,7 @@ mini-toc-levels: 3
 
 >[!IMPORTANT]
 >
-> Adobe does not recommend that you remove or uninstall the [!DNL Experience Manager] 6.5.17.0 package. As such, before you install the pack, you should create a backup of the `crx-repository` in case you need to roll it back. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe does not recommend that you remove or uninstall the [!DNL Experience Manager] 6.5.17.0 package. As such, before you install the pack, you should create a backup of the `crx-repository` in case you must roll it back. <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -172,13 +178,13 @@ For instructions to install the service pack on AEM Forms, see [AEM Forms Servic
 
 Customers using GraphQL should install the [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). 
 
-This enables you to add the required index definition based on the features they actually use.
+Doing so lets you add the required index definition based on the features they actually use.
 
 Failure to install this package may result in slow or failed GraphQL queries.
 
 >[!NOTE]
 >
->This package must only be installed once per instance; it does not need to be re-installed with every Service Pack.
+>Only install this package once per instance; it does not need to be reinstalled with every Service Pack.
 
 ### UberJar {#uber-jar}
 
@@ -212,7 +218,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 
 | Area | Feature | Replacement |
 |---|---|---|
-| Integrations | The **[!UICONTROL AEM Cloud Services Opt-In]** screen is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O Runtime]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O Runtime] integrations via the respective [!DNL Experience Manager] cloud services. |
+| Integrations | The screen **[!UICONTROL AEM Cloud Services Opt-In]** is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O Runtime]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O Runtime] integrations via the respective [!DNL Experience Manager] cloud services. |
 | Connectors | The Adobe JCR Connector for Microsoft&reg; SharePoint 2010 and Microsoft&reg; SharePoint 2013 is deprecated for [!DNL Experience Manager] 6.5. | N/A |
 
 ## Known issues {#known-issues}
@@ -223,9 +229,9 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* Please update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
+* Update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
-* A GraphQL query may use the `damAssetLucene` index instead of the `fragments` index. This might result in GraphQL queries that fail, or take a very long time to execute.
+* A GraphQL query may use the `damAssetLucene` index instead of the `fragments` index. This action might result in GraphQL queries that fail, or take a long time to run.
 
   To correct the problem, `damAssetLucene` has to be configured to include the following two properties:
 
@@ -236,7 +242,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
   After these steps, the GraphQL queries should perform faster.
 
-* As [!DNL Microsoft&reg;&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg;&reg; EAP 7.1], [!DNL Microsoft&reg;&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
+* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL AEM Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
@@ -252,7 +258,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for register change to complete unregistered.
 
-* When trying to move/delete/publish either Content Fragments or Sites/Pages, there is an issue when Content Fragment references are fetched, as the background query fails; i.e. the functionality does not work.
+* When trying to move, delete, or publish either Content Fragments, Sites, or Pages, there is an issue when Content Fragment references are fetched, as the background query fails. That is, the functionality does not work.
   To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no reindexing is required):
 
    ```xml
@@ -263,7 +269,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    ```
 
 * In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft&reg; Office 365.
-* On JBoss&reg; 7.1.4 platform, when user install AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
+* On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
 
 ## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
 
