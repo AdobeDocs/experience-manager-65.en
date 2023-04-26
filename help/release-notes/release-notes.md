@@ -41,22 +41,15 @@ mini-toc-levels: 3
 
 ## [!DNL Assets] - [!DNL Dynamic Media] {#dm-6517}
 
-* TEXT
+* Hotspot images disappear in the Carousel Set viewer. (ASSETS-20855)
+* Card view of assets folders render in minutes when using Dynamic Media renditions of video assets. (ASSETS-21153)
+* Connection to Dynamic Media is broken when a Dynamic Media Cloud Configuration exists already. (ASSETS-23057)
 
 ## [!DNL Forms] {#forms-6517}
 
 >[!NOTE]
 >
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
-
-<!-- ### [!DNL Forms] Key Features {#forms-features-6517}
-
-* TEXT
-
-### [!DNL Forms] Fixes {#forms-fixes-6517}
-
-* TEXT
--->
 
 ## Integrations {#integrations-6517}
 
@@ -68,15 +61,23 @@ mini-toc-levels: 3
 * Language copies of a page were not getting updated as expected. (SITES-11191)
 * Opening non-campaign pages call `targeteditor.html` unnecessarily. Remove the `targeteditor` call when not needed. (SITES-12469)
 * Live copies cannot be created for pages with annotations. (SITES-12154)
+* Rollout of pages is working on Experience Manager 6.5.16. (SITES-12008)
+* Out of memory; high garbage collection activity due to `NotificationManagerImpl`. `NotificationManager` bundle upgrade to AEM 6.5. (SITES-11440)
+* Retrieving Sites references fails on servlet. (SITES-10901)
+
+
+
+* . (NPR-40320)
+
 
 
 ### [!DNL Sites] - Core Components {#sites-core-components-6517}
 
-* TEXT
+* The property `cq-msm-lockable` has the wrong redirect value in the Foundation page component. (SITES-10904)
 
 ### [!DNL Sites] - Admin User Interface {#sites-adminui-6517}
 
-* TEXT
+* The preview window for the thumbnail image selector cannot be closed. (SITES-10459)
 
 ### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6517}
 
@@ -87,25 +88,26 @@ mini-toc-levels: 3
 ### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6517}
 
 * Selecting an Externalizer configuration in an Experience Fragment when you export to Adobe Target causes the incorrect externalized URL to be sent. (SITES-12402)
+* Remove non-inclusive terms; apply inclusive terms guidelines. (SITES-11244)
 
 
 ### [!DNL Sites] - Page Editor {#sites-pageeditor-6517}
 
-* TEXT
+* No thumbnail is displayed for a carousel set in the Experience Manager content finder side rail. (SITES-8593)
 
 
 ## Sling {#sling-6517}
 
-* TEXT
+* Sling `ResourceMerger` consumes a high amount of CPU when provided with a fictitious path, causing a denial of service. (NPR-40338)
 
 
 ## Translation projects {#translation-6517}
 
-* TEXT
+* The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431)
 
 ## User interface {#ui-6517}
 
-* TEXT
+* Cancel button in Page properties is inactive; it should take you to the Site Admin user interface. (NPR-40501)
 
 
 ## WCM {#wcm-6517}
@@ -114,7 +116,10 @@ mini-toc-levels: 3
 
 ## Workflow {#workflow-6517}
 
-* TEXT
+* Workflow Console changes. (NPR-40502)
+* `SegmentNotfound errors` in the logs on a production author instance, caused by unclosed Resource resolver in class `com.day.cq.workflow.impl.email.EMailNotificationServic`. (NPR-40187)
+* A closed unclosed `ResourceResolver` exception is getting logged. (ASSETS-22495)
+* Experience Manager author crashes when PSD/PDF with huge `DocumentAncestors` metadata attributes is uploaded. (ASSETS-22966)
 
 
 ## Install [!DNL Experience Manager] 6.5.17.0 {#install}
