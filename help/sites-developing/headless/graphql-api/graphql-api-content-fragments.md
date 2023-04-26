@@ -254,7 +254,7 @@ GraphQL for AEM supports a list of types. All the supported Content Fragment Mod
 | Enumeration | `String` | Used to display an option from a list of options defined at model creation |
 | Tags | `[String]` | Used to display a list of Strings representing Tags used in AEM |
 | Content Reference | `String` | Used to display the path towards another asset in AEM |
-| Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type; `[Model]` - Array of type `Model`, referenced directly from array| Used to reference another Content Fragment of a certain Model Type, defined when the model was created |
+| Fragment Reference | *A model type* <br><br>Single field: `Model` - Model type, referenced directly <br><br>Multifield, with one referenced type; `[Model]` - Array of type `Model`, referenced directly from array| Used to reference one, or more, Content Fragments of certain Model Types, defined when the model was created |
 
 {style="table-layout:auto"}
 
