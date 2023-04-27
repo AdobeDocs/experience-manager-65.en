@@ -57,12 +57,14 @@ mini-toc-levels: 3
 
 ## Integrations{#integrations-6517}
 
-* When converting an Adobe Target IMS configuration to a User credential one in legacy cloud configurations, the `connectedWhen` property does not change. This issue makes all the calls go as if the configuration was still IMS based. (CQ-4352810)
+* When converting an Adobe Target IMS configuration to a User credential one in legacy cloud configurations, the `connectedWhen` property does not change. This issue makes all the calls go as if the configuration was still IMS-based. (CQ-4352810)
 * Adding `modifyProperties` permission to `fd-cloudservice` system user for Adobe Sign configuration. (FORMS-6164)
+* With Experience Manager integrated with Adobe Target, when you create an AB test activity, it does not synch up the audiences associated with it, to Target. (NPR-40085)
 
 ## Platform{#platform-6517}
 
-* In the Experience Manager Tag Management user interface (/aem/tags/), the namespaces and tags appear in the order they are created. However, when there are a large number of namespaces and tags, the ability to view and manage them is difficult. This issue is because they cannot be sorted in any other way. (NPR-39620)
+* In the Experience Manager Tag Management user interface (/aem/tags/), the namespaces, and tags appear in the order they are created. However, when there are many namespaces and tags, the ability to view and manage them is difficult. This issue is because they cannot be sorted in any other way. (NPR-39620)
+* Google closure version update needed because Minification js is not working for some client libraries. (NPR-40043)
 
 ## [!DNL Sites]{#sites-6517}
 
@@ -107,6 +109,7 @@ mini-toc-levels: 3
 ## Translation projects{#translation-6517}
 
 * The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431)
+* Language Copy is not created when the user is not configuring non-mandatory fields. (NPR-40036)
 
 ## User interface{#ui-6517}
 
@@ -124,7 +127,7 @@ mini-toc-levels: 3
 * A closed unclosed `ResourceResolver` exception is getting logged. (ASSETS-22495)
 * Experience Manager author crashes when PSD/PDF with huge `DocumentAncestors` metadata attributes is uploaded. (ASSETS-22966)
 * Session leak in class `InboxSharingCache` with `user-reader-service`. (CQ-4352513)
-
+* Incomplete user and group list is displayed when "Workflow Initiator Participant Chooser" step lists the users & groups for the Participant step. This issue occurred when one group was also a member of another group. (NPR-40055)
 
 ## Install [!DNL Experience Manager] 6.5.17.0{#install}
 
