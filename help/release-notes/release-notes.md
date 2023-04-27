@@ -76,10 +76,6 @@ mini-toc-levels: 3
 * Out of memory; high garbage collection activity due to `NotificationManagerImpl`. `NotificationManager` bundle upgrade to AEM 6.5. (SITES-11440)
 * Retrieving Sites references fails on servlet. (SITES-10901)
 
-### [!DNL Sites] - Core Components{#sites-core-components-6517}
-
-* The property `cq-msm-lockable` has the wrong redirect value in the Foundation page component. (SITES-10904)
-
 ### [!DNL Sites] - Admin User Interface{#sites-adminui-6517}
 
 * The preview window for the thumbnail image selector cannot be closed. (SITES-10459)
@@ -89,6 +85,11 @@ mini-toc-levels: 3
 * Configuration for connecting to Polaris service object (URL, credentials, callback, and so on). (SITES-12149)
 * Usage of `SemanticDataType.REFERENCE` should support "Remote-Asset-IDs". (SITES-12127)
 * Integrate Polaris Asset Selector into Content Fragment editor. (SITES-12125)
+* A mandatory http header was necessary to access the metadata service endpoint. (SITES-13068)
+
+### [!DNL Sites] - Core Components{#sites-core-components-6517}
+
+* The property `cq-msm-lockable` has the wrong redirect value in the Foundation page component. (SITES-10904)
 
 ### [!DNL Sites] - [!DNL Experience Fragments]{#sites-experiencefragments-6517}
 
