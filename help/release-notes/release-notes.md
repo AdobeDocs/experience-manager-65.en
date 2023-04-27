@@ -34,90 +34,99 @@ mini-toc-levels: 3
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets] {#assets-6517}
+## [!DNL Assets]{#assets-6517}
 
 * TEXT
 
 
-## [!DNL Assets] - [!DNL Dynamic Media] {#dm-6517}
+## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
-* TEXT
+* Hotspot images disappear in the Carousel Set viewer. (ASSETS-20855)
+* Card view of assets folders render in minutes when using Dynamic Media renditions of video assets. (ASSETS-21153)
+* Connection to Dynamic Media is broken when a Dynamic Media Cloud Configuration exists already. (ASSETS-23057)
 
-## [!DNL Forms] {#forms-6517}
+## [!DNL Commerce]{#commerce-6517}
+
+* Moved tags are garbage collected but are still referenced by products under `/var`. (CQ-4351337)
+
+## [!DNL Forms]{#forms-6517}
 
 >[!NOTE]
 >
 >Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
 
-<!-- ### [!DNL Forms] Key Features {#forms-features-6517}
+## Integrations{#integrations-6517}
 
-* TEXT
+* When converting an Adobe Target IMS configuration to a User credential one in legacy cloud configurations, the `connectedWhen` property does not change. This issue makes all the calls go as if the configuration was still IMS based. (CQ-4352810)
+* Adding `modifyProperties` permission to `fd-cloudservice` system user for Adobe Sign configuration. (FORMS-6164)
 
-### [!DNL Forms] Fixes {#forms-fixes-6517}
+## Platform{#platform-6517}
 
-* TEXT
--->
+* In the Experience Manager Tag Management user interface (/aem/tags/), the namespaces and tags appear in the order they are created. However, when there are a large number of namespaces and tags, the ability to view and manage them is difficult. This issue is because they cannot be sorted in any other way. (NPR-39620)
 
-## Integrations {#integrations-6517}
-
-* TEXT
-
-## [!DNL Sites] {#sites-6517}
+## [!DNL Sites]{#sites-6517}
 
 * Performance drop in LinkCheckerTransformer. (SITES-11661)
 * Language copies of a page were not getting updated as expected. (SITES-11191)
 * Opening non-campaign pages call `targeteditor.html` unnecessarily. Remove the `targeteditor` call when not needed. (SITES-12469)
 * Live copies cannot be created for pages with annotations. (SITES-12154)
+* Rollout of pages is working on Experience Manager 6.5.16. (SITES-12008)
+* Out of memory; high garbage collection activity due to `NotificationManagerImpl`. `NotificationManager` bundle upgrade to AEM 6.5. (SITES-11440)
+* Retrieving Sites references fails on servlet. (SITES-10901)
 
+### [!DNL Sites] - Core Components{#sites-core-components-6517}
 
-### [!DNL Sites] - Core Components {#sites-core-components-6517}
+* The property `cq-msm-lockable` has the wrong redirect value in the Foundation page component. (SITES-10904)
 
-* TEXT
+### [!DNL Sites] - Admin User Interface{#sites-adminui-6517}
 
-### [!DNL Sites] - Admin User Interface {#sites-adminui-6517}
+* The preview window for the thumbnail image selector cannot be closed. (SITES-10459)
 
-* TEXT
-
-### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6517}
+### [!DNL Sites] - [!DNL Content Fragments]{#sites-contentfragments-6517}
 
 * Configuration for connecting to Polaris service object (URL, credentials, callback, and so on). (SITES-12149)
 * Usage of `SemanticDataType.REFERENCE` should support "Remote-Asset-IDs". (SITES-12127)
 * Integrate Polaris Asset Selector into Content Fragment editor. (SITES-12125)
 
-### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6517}
+### [!DNL Sites] - [!DNL Experience Fragments]{#sites-experiencefragments-6517}
 
 * Selecting an Externalizer configuration in an Experience Fragment when you export to Adobe Target causes the incorrect externalized URL to be sent. (SITES-12402)
+* Remove non-inclusive terms; apply inclusive terms guidelines. (SITES-11244)
 
 
-### [!DNL Sites] - Page Editor {#sites-pageeditor-6517}
+### [!DNL Sites] - Page Editor{#sites-pageeditor-6517}
 
-* TEXT
-
-
-## Sling {#sling-6517}
-
-* TEXT
+* No thumbnail is displayed for a carousel set in the Experience Manager content finder side rail. (SITES-8593)
 
 
-## Translation projects {#translation-6517}
+## Sling{#sling-6517}
 
-* TEXT
-
-## User interface {#ui-6517}
-
-* TEXT
+* Sling `ResourceMerger` consumes a high amount of CPU when provided with a fictitious path, causing a denial of service. (NPR-40338)
 
 
-## WCM {#wcm-6517}
+## Translation projects{#translation-6517}
 
-* TEXT
+* The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431)
 
-## Workflow {#workflow-6517}
+## User interface{#ui-6517}
+
+* Cancel button in Page properties is inactive; it should take you to the Site Admin user interface. (NPR-40501)
+
+
+## WCM{#wcm-6517}
 
 * TEXT
 
+## Workflow{#workflow-6517}
 
-## Install [!DNL Experience Manager] 6.5.17.0 {#install}
+* Workflow Console changes. (NPR-40502)
+* `SegmentNotfound errors` in the logs on a production author instance, caused by unclosed Resource resolver in class `com.day.cq.workflow.impl.email.EMailNotificationServic`. (NPR-40187)
+* A closed unclosed `ResourceResolver` exception is getting logged. (ASSETS-22495)
+* Experience Manager author crashes when PSD/PDF with huge `DocumentAncestors` metadata attributes is uploaded. (ASSETS-22966)
+* Session leak in class `InboxSharingCache` with `user-reader-service`. (CQ-4352513)
+
+
+## Install [!DNL Experience Manager] 6.5.17.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
@@ -131,7 +140,7 @@ mini-toc-levels: 3
 <!-- For instructions to install Service Pack for AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
-### Install the service pack on [!DNL Experience Manager] 6.5 {#install-service-pack}
+### Install the service pack on [!DNL Experience Manager] 6.5{#install-service-pack}
 
 1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
 
@@ -170,11 +179,11 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1.  The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.14 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39939 for 6.5.16.0 --> <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
-### Install Service Pack for [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
+### Install Service Pack for [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
 For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
-### Install GraphQL Index Package for Experience Manager Content Fragments {#install-aem-graphql-index-add-on-package}
+### Install GraphQL Index Package for Experience Manager Content Fragments{#install-aem-graphql-index-add-on-package}
 
 Customers using GraphQL should install the [AEM Content Fragment with GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip). 
 
@@ -186,7 +195,7 @@ Failure to install this package may result in slow or failed GraphQL queries.
 >
 >Only install this package once per instance; it does not need to be reinstalled with every Service Pack.
 
-### UberJar {#uber-jar}
+### UberJar{#uber-jar}
 
 The UberJar for [!DNL Experience Manager] 6.5.17.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -210,7 +219,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 >
 >UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. So, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
 
-## Deprecated features {#removed-deprecated-features}
+## Deprecated features{#removed-deprecated-features}
 
 Below is a list of features and capabilities that are marked as deprecated with [!DNL Experience Manager] 6.5.7.0. Features are marked deprecated initially and later removed in a future release. An alternate option is provided.
 
@@ -221,7 +230,7 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 | Integrations | The screen **[!UICONTROL AEM Cloud Services Opt-In]** is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O Runtime]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O Runtime] integrations via the respective [!DNL Experience Manager] cloud services. |
 | Connectors | The Adobe JCR Connector for Microsoft&reg; SharePoint 2010 and Microsoft&reg; SharePoint 2013 is deprecated for [!DNL Experience Manager] 6.5. | N/A |
 
-## Known issues {#known-issues}
+## Known issues{#known-issues}
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
@@ -271,14 +280,14 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft&reg; Office 365.
 * On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
 
-## OSGi bundles and content packages included {#osgi-bundles-and-content-packages-included}
+## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.17.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
 * [List of OSGi bundles included in Experience Manager 6.5.16.0](/help/release-notes/assets/65160_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [List of Content Packages included in Experience Manager 6.5.16.0](/help/release-notes/assets/65160_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
-## Restricted websites {#restricted-sites}
+## Restricted websites{#restricted-sites}
 
 These websites are only available to customers. If you are a customer and need access, contact your Adobe account manager.
 
