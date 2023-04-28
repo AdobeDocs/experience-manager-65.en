@@ -1,6 +1,6 @@
 ---
-title: Multilingual assets and asset translation
-description: Learn how to automate workflows to translate assets, including binaries, metadata, and tags into multiple languages.
+title: Multilingual asset
+description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 feature: Asset Management
 role: Admin
