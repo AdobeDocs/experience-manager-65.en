@@ -1,8 +1,6 @@
 ---
-title: AEM Mobile On-Demand
-seo-title: AEM Mobile On-Demand
+title: Adobe Experience Manager Mobile On-Demand
 description: Starting a new AEM Mobile app experience requires a cohesion of roles before it is ready for content editing. Follow this page to get started with AEM mobile On-Demand services.
-seo-description: Starting a new AEM Mobile app experience requires a cohesion of roles before it is ready for content editing. Follow this page to get started with AEM mobile On-Demand services.
 uuid: 175c609d-3cb8-4a1b-bfea-278df272e500
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

@@ -1,8 +1,6 @@
 ---
-title: Launches
-seo-title: Launches
-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
-seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
+title: Using Launches to develop content for a future release
+description: Launches lets you efficiently develop content for a future release. They let you make changes ready for future publication, while maintaining your current pages.
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

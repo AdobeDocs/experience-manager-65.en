@@ -1,8 +1,8 @@
 ---
-title: Troubleshooting AEM
-seo-title: Troubleshooting AEM
+title: Troubleshooting Adobe Experience Manager
+
 description: Learn about troubleshooting issues with AEM.
-seo-description: Learn about troubleshooting issues with AEM.
+
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +12,9 @@ discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 ---
-# Troubleshooting AEM {#troubleshooting-aem}
+# Troubleshooting Adobe Experience Manager {#troubleshooting-aem}
 
-The following section covers some issues that you may encounter when using AEM, together with suggestions on how to troubleshoot them.
+The following section covers some issues that you may encounter when using AEM (Adobe Experience Manager), together with suggestions on how to troubleshoot them.
 
 >[!NOTE]
 >
