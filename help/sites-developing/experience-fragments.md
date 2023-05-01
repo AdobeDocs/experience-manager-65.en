@@ -1,8 +1,8 @@
 ---
-title: Experience Fragments
-seo-title: Experience Fragments
+title: Experience Fragments in AEM Sites development
+
 description: Learn about customizing Experience Fragments.
-seo-description: Learn about customizing Experience Fragments.
+
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -86,7 +86,7 @@ For this, the following properties must be used:
 
     * `text`
 
-Components that do not use this convention, will not be taken into consideration.
+Components that do not use this convention are not taken into consideration.
 
 ## Templates for Experience Fragments {#templates-for-experience-fragments}
 

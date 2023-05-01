@@ -1,5 +1,5 @@
 ---
-title: Seeing Page Analytics Data
+title: Seeing page analytics data to gauge the effectiveness of page content
 seo-title: Seeing Page Analytics Data
 description: Use page analytics data to gauge the effectiveness of their page content
 seo-description: Use page analytics data to gauge the effectiveness of their page content

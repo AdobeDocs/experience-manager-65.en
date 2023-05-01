@@ -1,8 +1,6 @@
 ---
-title: Understanding Segmentation
-seo-title: Understanding Segmentation
-description: Segmentation is a key consideration when creating a campaign
-seo-description: Segmentation is a key consideration when creating a campaign
+title: Understanding Segmentation when creating a campaign
+description: Segmentation is a key consideration when creating a campaign.
 uuid: 900da068-5dda-4b6b-8be3-4b7ad614126d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES

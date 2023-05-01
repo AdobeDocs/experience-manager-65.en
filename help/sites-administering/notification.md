@@ -459,6 +459,6 @@ Now, activate the OAuth components. You can do this by:
 Finally, confirm the configuration by:
 
 1. Going to the address of the Publish instance, and logging in as admin.
-1. Open a new tab in the browser and go to `http://serveraddress:serverport/services/mailer/oauth2/authorize`. This will redirect you to the page of your SMTP provider, in this case Gmail.
+1. Open a new tab in the browser and go to `http://serveraddress:serverport/services/mailer/oauth2/authorize`. This will redirect you to the page of your SMTP provider, in this case Outlook.
 1. Login and consent to giving required permissions
 1. After consenting, the token will be stored in the repository. You can access it under `accessToken` by directly accessing this URL on your publish instance: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`

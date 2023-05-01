@@ -107,7 +107,7 @@ Once you are logged in to the JMX console, perform a search for **Lucene Index S
 
 For query statistics, take a look at the MBean named **Oak Query Statistics**.
 
-If you would like to dig into your indexes using a tool like [Luke](https://code.google.com/p/luke/), you will need to use the Oak console to dump the index from the `NodeStore` to a filesystem directory. For instructions on how to do this, please read the [Lucene documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+If you would like to dig into your indexes using a tool like [Luke](https://code.google.com/archive/p/luke/), you must use the Oak console to dump the index from the `NodeStore` to a filesystem directory. For instructions on how to do this, please read the [Lucene documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 You can also extract the indexes in your system in JSON format. In order to do this, you need to access `https://server:port/oak:index.tidy.-1.json`
 

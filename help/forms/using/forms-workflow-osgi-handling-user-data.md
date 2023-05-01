@@ -152,5 +152,5 @@ You must be an AEM administrator to delete user data from workflow instances by 
 You can also use APIs to access and remove nodes and properties. See the following docs for more information.
 
 * [How to programmatically access the AEM JCR](/help/sites-developing/access-jcr.md)
-* [Removing Nodes and Properties](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [Removing Nodes and Properties](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API reference](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

@@ -1,8 +1,6 @@
 ---
 title: Page Templates for Mobile Apps
-seo-title: Page Templates for Mobile Apps
 description: Follow this page to learn more about page templates. Page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component.
-seo-description: Follow this page to learn more about page templates. Page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component.
 uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
