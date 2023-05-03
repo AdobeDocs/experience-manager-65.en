@@ -1290,8 +1290,38 @@ This sample query interrogates:
 
 This query interrogates:
 
+* for a single Content Fragment of type `article` at a specific path
+  * within that, the path and author of the referenced (nested) fragment
+
+>[!NOTE]
+>
+>The field `referencearticle` has the Data type `fragment-reference`.
+
+**Sample Query**
+
+```graphql
+{
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
+    item {
+      _path
+      title
+      _model {
+        _path
+        title
+      }
+    }
+  }
+}
+```
+
+### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
+
+#### Single referenced model type
+
+This query interrogates:
+
 * for multiple Content Fragments of type `bookmark`
-  * with Fragment References to other fragments of the specific model type `Article`
+  * with Fragment References to other fragments of the specific model type `article`
 
 >[!NOTE]
 >
@@ -1310,7 +1340,7 @@ This query interrogates:
 }
 ```
 
-### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
+#### Multiple referenced model types
 
 This query interrogates:
 
