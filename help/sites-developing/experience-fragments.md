@@ -63,7 +63,7 @@ The HTML rendition is generated using the Sling Rewriter Pipelines. The pipeline
   * A list of HTML tags to to be allowed in the final rendition. 
   * By default the following tags are allowed (no configuration needed): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link, and script
 
-It is recommended to configure the rewriter using an overlay. See [Overlays in AEM as a Cloud Service](/help/sites-developing/overlays.md)
+It is recommended to configure the rewriter using an overlay. See [Overlays](/help/sites-developing/overlays.md)
 
 ## Social Variations {#social-variations}
 
