@@ -84,7 +84,7 @@ If too many changes and commits are made to the repository in a short amount of 
 1. To avoid exceeding acceptable observation queue limits, it is recommended to:
 
     * Lower the constant rate of commits. Short spikes in commits are acceptable, but the constant rate should be reduced.
-    * Increase the size of the `DiffCache` as described in [Performance tuning tips > Mongo Storage Tuning > Document cache size](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/configuring-performance.html?lang=en).
+    * Increase the size of the `DiffCache` as described in [Performance tuning tips > Mongo Storage Tuning > Document cache size](/help/sites-deploying/configuring-performance.md).
 
 ## Identifying and remediating a stuck reindexing process {#identifying-and-remediating-a-stuck-re-indexing-process}
 

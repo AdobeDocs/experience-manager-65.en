@@ -286,7 +286,7 @@ To check whether the Smart Content Service is trained on your tags in the traini
 
   * Inability to recognize subtle differences in images. For example, slim versus regular fitted shirts.
   * Inability to identify tags based on tiny patterns/parts of an image. For example, logos on T-shirts.
-  * Tagging is supported in the locales that [!DNL Experience Manager] is supported in. For a list of languages, see [Smart Content Services release notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html).
+  * Tagging is supported in the locales that [!DNL Experience Manager] is supported in.
 
 * To search for assets with smart tags (regular or enhanced), use the [!DNL Assets] Omnisearch (full-text search). There is no separate search predicate for smart tags.
 
