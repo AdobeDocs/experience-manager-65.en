@@ -219,8 +219,8 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 
 **References:**
 
-1. [Microsoft Dynamics OData configuration](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
-1. [Configuring Microsoft Dynamics for AEM Forms](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
+1. [Microsoft Dynamics OData configuration](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Configuring Microsoft Dynamics for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
 #### MS Dynamics OData cloud service {#ms-dynamics-odata-cloud-service}
 

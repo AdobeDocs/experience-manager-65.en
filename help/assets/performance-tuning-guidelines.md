@@ -216,7 +216,7 @@ XMP writeback updates the original asset whenever metadata is modified in [!DNL 
 * A version of the asset is created
 * [!UICONTROL DAM Update Asset] is run against the asset
 
-The outcomes listed consume considerable resources. Therefore, Adobe recommends disabling XMP writeback if it is not required. For more information, see [XMP writeback](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html).
+The outcomes listed consume considerable resources. Therefore, Adobe recommends disabling XMP writeback if it is not required. For more information, see [XMP writeback](/help/assets/xmp-writeback.md).
 
 Importing a large amount of metadata can result in resource-intensive XMP writeback activity if run workflows flag is checked. Plan such an import during lean server usage so that performance for other users is not impacted.
 

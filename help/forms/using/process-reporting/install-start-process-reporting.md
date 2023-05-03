@@ -25,11 +25,11 @@ If you are currently using Forms Workflow, the AEM Forms database can potentiall
 
 The Process Reporting publishing services publishes all AEM Forms data currently available in the database. It implies that if the database contains legacy data on which you do not want to run reports and queries, all of that data would also be published to the repository even though it is not required for reporting. You are recommended to purge this data before you run the services to publish the data to the Process Reporting repository. Doing so improves the performance of both the publisher service and the service that queries the data for reporting.
 
-For details on purging AEM Forms process data, see [Purging Process Data](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+For details on purging AEM Forms process data, see [Purging Process Data](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->For the tips and tricks of Purge Utility, see Adobe Developer Connection article on [Purging processes and jobs](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>For the tips and tricks of Purge Utility, see Adobe Developer Connection article on [Purging processes and jobs](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Configuring Process Reporting services {#configuring-process-reporting-services}
 
