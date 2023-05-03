@@ -1290,26 +1290,22 @@ This sample query interrogates:
 
 This query interrogates:
 
-* for a single Content Fragment of type `article` at a specific path
-  * within that, the path and author of the referenced (nested) fragment
+* for multiple Content Fragments of type `bookmark`
+  * with Fragment References to other fragments of the specific model type `Article`
 
 >[!NOTE]
 >
->The field `referencearticle` has the Data type `fragment-reference`.
+>The field `fragments` has the Data type `fragment-reference`, with the model `Article` selected. Query delivers `fragments` as an array of `[Article]`.
 
-**Sample Query**
-
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
-    item {
-        _path
-        author
-        referencearticle {
+  bookmarkList {
+    items {
+        fragments {
           _path
           author
-      }
-    }
+        }
+     }
   }
 }
 ```
@@ -1319,13 +1315,13 @@ This query interrogates:
 This query interrogates:
 
 * for multiple Content Fragments of type `bookmark`
-  * with Fragment References to other fragments of the specific model types `article` and `adventure`
+  * with Fragment References to other fragments of the specific model types `Article` and `Adventure`
 
 >[!NOTE]
 >
->The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
+>The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected. Query delivers `fragments` as an array of `[AllFragmentModels]`, which is dereferenced with union type.
 
-```xml
+```graphql
 {
   bookmarkList {
     items {
