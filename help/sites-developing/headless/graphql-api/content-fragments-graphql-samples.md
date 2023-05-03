@@ -1301,13 +1301,13 @@ This query interrogates:
 
 ```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1316,14 +1316,40 @@ This query interrogates:
 
 ### Sample Query for a Nested Content Fragment - Multiple Model Type{#sample-wknd-nested-fragment-multiple-model}
 
+#### Single referenced model type
+
 This query interrogates:
 
 * for multiple Content Fragments of type `bookmark`
-  * with Fragment References to other fragments of the specific model types `article` and `adventure`
+  * with Fragment References to other fragments of the specific model type `article`
 
 >[!NOTE]
 >
->The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected.
+>The field `fragments` has the Data type `fragment-reference`, with the model `Article` selected. Query delivers `fragments` as an array of `[Article]`.
+
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Multiple referenced model types
+
+This query interrogates:
+
+* for multiple Content Fragments of type `bookmark`
+  * with Fragment References to other fragments of the specific model types `Article` and `Adventure`
+
+>[!NOTE]
+>
+>The field `fragments` has the Data type `fragment-reference`, with the models `Article`, `Adventure` selected. Query delivers `fragments` as an array of `[AllFragmentModels]`, which is dereferenced with union type.
 
 ```graphql
 {
