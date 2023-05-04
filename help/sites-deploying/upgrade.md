@@ -63,7 +63,6 @@ AEM recently introduces the [Pattern Detector](/help/sites-deploying/pattern-det
 
 For more details about what else has changed in recent AEM versions, see the complete release notes:
 
-* [General Release Notes for Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html)
 * [Adobe Experience Manager 6.5 Latest Service Pack Release Notes](/help/release-notes/release-notes.md)
 
 ## Upgrade Overview {#upgrade-overview}

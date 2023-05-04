@@ -51,10 +51,10 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
 1. (WebSphere&reg; Application Server) If you are recovering to a new instance of WebSphere&reg; Application Server, run the restoreConfig.bat/sh command.
 1. Recover the AEM forms database by first running a database restore operation using the database backup files and then applying the transaction redo logs to the recovered database. (See [AEM forms database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) For more information, see one of these knowledge base articles:
 
-    * [DB2&reg; Backup and Recovery for AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
-    * [Oracle Backup and Recovery for AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
-    * [Microsoft&reg; SQL Server Backup and Recovery for AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
-    * [MySQL Backup and Recovery for AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
+    * [DB2&reg; Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#db2)
+    * [Oracle Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
+    * [Microsoft&reg; SQL Server Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+    * [MySQL Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Recover the GDS directory by first deleting the contents of the GDS directory on the existing installation of AEM forms and then copying the contents of the GDS directory from the backed-up GDS. If you changed the GDS directory location, see [Changing the GDS location during recovery](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Rename the GDS backup directory to be restored as shown in these examples:

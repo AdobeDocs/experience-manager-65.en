@@ -75,7 +75,7 @@ You combine a record with an interactive communication template to produce an in
 
 To create interactive communication from records saved in a JSON file:
 
-1. Create a [Watched folder](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) and configure it to use the Batch API:
+1. Create a [Watched folder](/help/forms/using/creating-configure-watched-folder.md) and configure it to use the Batch API:
     1. Log in to AEM Forms author instance.
     1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tap **[!UICONTROL New]**.
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.
@@ -105,7 +105,7 @@ To create interactive communication from records saved in a JSON file:
 
 #### Use input data saved in an external data source and accessed via form data model to produce an interactive communication {#use-fdm-as-data-source}
 
-You combine data (records) saved in an external data source with an interactive communication template to produce an interactive communication. When you create an interactive communication, you connect it to an external data source via a Form Data Model (FDM) to access data. You can configure Watched Folders batch process service to fetch data using the same Form Data Model from an external data source. To [create an interactive communication from records saved in an external data source](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+You combine data (records) saved in an external data source with an interactive communication template to produce an interactive communication. When you create an interactive communication, you connect it to an external data source via a Form Data Model (FDM) to access data. You can configure Watched Folders batch process service to fetch data using the same Form Data Model from an external data source. To [create an interactive communication from records saved in an external data source](/help/forms/using/work-with-form-data-model.md):
 
 1. Configure the Form Data Model of the template:
     1. Open the Form Data Model associated to interactive communication template.
@@ -137,7 +137,7 @@ You combine data (records) saved in an external data source with an interactive 
 
     1. Save and close the file.
 
-1. Create a [Watched folder](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) and configure it to use the Batch API service:
+1. Create a [Watched folder](/help/forms/using/creating-configure-watched-folder.md) and configure it to use the Batch API service:
     1. Log in to AEM Forms author instance.
     1. Navigate to **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tap **[!UICONTROL New]**.
     1. Specify the **[!UICONTROL Name]** and physical **[!UICONTROL Path]** of the folder. For example, `c:\batchprocessing`.

@@ -13,7 +13,6 @@ exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en)|
 
 In [!DNL Adobe Experience Manager Assets], you can do more than store and govern your assets. [!DNL Experience Manager] offers enterprise-grade asset management capabilities. You can edit and share assets, run advanced searches, and create multiple renditions of dozens of supported file formats. You can also manage versions and digital rights, automate processing of assets, manage and govern metadata, collaborate using annotations, and much more.
 
