@@ -1321,7 +1321,7 @@ This query interrogates:
 This query interrogates:
 
 * for multiple Content Fragments of type `bookmark`
-  * with Fragment References to other fragments of the specific model type `article`
+  * with Fragment References to other fragments of the specific model type `Article`
 
 >[!NOTE]
 >
