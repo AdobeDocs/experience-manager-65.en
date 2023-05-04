@@ -56,7 +56,7 @@ To keep Smart Crop usage under control, and to optimize for processing time and 
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
-You have two image crop options from which to choose. You can also choose to automate the creation of color and image swatches or preserve crop content across target resolutions.
+You have two image crop options from which to choose: Pixel Crop or Smart Crop. You can also choose to automate the creation of color and image swatches.
 
 >[!IMPORTANT]
 >
