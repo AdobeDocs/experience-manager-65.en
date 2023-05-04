@@ -30,10 +30,14 @@ To run the procedure use the following steps:
 
 1. **Save** the specifications - the update procedure will start.
 
-1. The procedure will be complete when the property `cfGlobalVersion` appears on `/content/dam` and is set to `1`.
+1. Wait until the procedure is completed. The procedure will be complete when the property `cfGlobalVersion` appears on `/content/dam` and is set to `1`.
 
-   <!-- CHECK: does the procedure need to be deactivated? See limitations. -->
+1. Return to the OSGi configuration to deactivate the procedure.
 
+   In the dialog for the **Content Fragment Migration Job Configuration** set these two parameters as follows:
+
+   * **ContentFragmentMigration:Enabled** : `0`
+   * **ContentFragmentMigration:Enforce** : `0`
 
 ## Limitations {#limitations}
 
