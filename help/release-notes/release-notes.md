@@ -41,8 +41,6 @@ mini-toc-levels: 3
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
-* Hotspot images disappear in the Carousel Set viewer. (ASSETS-20855)
-* Card view of assets folders render in minutes when using Dynamic Media renditions of video assets. (ASSETS-21153)
 * Connection to Dynamic Media is broken when a Dynamic Media Cloud Configuration exists already. (ASSETS-23057)
 * Increased performance while browsing folders with lot of DM videos and resolved fail to load issue on folder card view. (ASSETS-23016)
 * Updated Spring framework to 5.3.26  to resolve CVE-2016-1000027  vulnerability in  Spring Framework. (ASSETS-22795)
