@@ -44,6 +44,16 @@ mini-toc-levels: 3
 * Hotspot images disappear in the Carousel Set viewer. (ASSETS-20855)
 * Card view of assets folders render in minutes when using Dynamic Media renditions of video assets. (ASSETS-21153)
 * Connection to Dynamic Media is broken when a Dynamic Media Cloud Configuration exists already. (ASSETS-23057)
+* Increased performance while browsing folders with lot of DM videos and resolved fail to load issue on folder card view. (ASSETS-23016)
+* Updated Spring framework to 5.3.26  to resolve CVE-2016-1000027  vulnerability in  Spring Framework. (ASSETS-22795)
+* Preview tokens are removed from error.log that can be used to request secure content from the secure test servers. (ASSETS-22685)
+* PDF Thumbnail render adding shadow. (ASSETS-22585) . Upgraded Gibson lib version 4.0.1680232194 for solving PDF thumbnail rendering issue.
+* Dynamic Media Hybrid mode is now compatible with the NewRelic Agent version 8.0.1 (ASSETS-22578).
+* AEM ACLs will now be respected when previewing DM files on AEM. (ASSETS-21628)
+* Screen readers are not navigating to hidden element when user try to navigate using down arrow key or tab key. (ASSETS-5617)
+* Image Profile UI restricted for smart crops with same name/dimension. (ASSETS-16997)
+* Default width and height set to 50px for Smart Crops on Image Profile UI. (ASSETS-16997)
+
 
 ## [!DNL Commerce]{#commerce-6517}
 
