@@ -1,8 +1,6 @@
 ---
 title: Push Notifications
-seo-title: Push Notifications
-description: Follow this page to learn about how to use push notifications in an AEM Mobile app.
-seo-description: Follow this page to learn about how to use push notifications in an AEM Mobile app.
+description: Follow this page to learn about how to use push notifications in an Adobe Experience Manager Mobile app.
 uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
@@ -38,14 +36,14 @@ This release of AEM supports iOS and Android mobile devices.
 
 To use push notifications in an AEM Mobile app, the following high-level steps must be taken.
 
-Typically, an AEM Developer will:
+Typically, an Experience Manager Developer does the following:
 
 1. Register with Apple and Google messaging services
 1. Register with a push messaging service and configure it
 1. Add push support to the app
 1. Prepare a phone for testing
 
-While an AEM Administrator will:
+While an Experience Manager Administrator does the following:
 
 1. Configure push on AEM apps
 1. Build and deploy the app
@@ -56,9 +54,9 @@ While an AEM Administrator will:
 
 #### Using the Apple Push Notification Service (APNS) {#using-the-apple-push-notification-service-apns}
 
-Go to the Apple page [here](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html) to become familiar with the Apple Push Notification Service.
+Go to the Apple page [here](https://developer.apple.com/documentation/usernotifications#//apple_ref/doc/uid/TP40008194-CH8-SW1) to become familiar with the Apple Push Notification Service.
 
-To use APNS you will need a **Certificate** file (a .cer file), a push **Private Key** (a .p12 file) and a **Private Key Password** from Apple. Instructions on how to do that can be found [here](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html).
+To use APNs you need a **Certificate** file (a .cer file), a push **Private Key** (a .p12 file), and a **Private Key Password** from Apple. Instructions on how to do that can be found [here](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
 #### Using the Google Cloud Messaging (GCM) service {#using-the-google-cloud-messaging-gcm-service}
 
@@ -209,7 +207,7 @@ Create two content nodes (one in app-config and one in app-config-dev) called no
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
 With these properties (.content.xml files) :
-&lt;jcr:root xmlns:jcr=" [https://www.jcp.org/jcr/1.0](https://www.jcp.org/jcr/1.0)" xmlns:nt=" [https://www.jcp.org/jcr/nt/1.0](https://www.jcp.org/jcr/nt/1.0)"
+&lt;jcr:root xmlns:jcr=" [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)" xmlns:nt=" [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)"
 jcr:primaryType="nt:unstructured"
 excludeProperties="[appAPIAccessToken]"
 path="../../../.."

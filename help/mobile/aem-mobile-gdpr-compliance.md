@@ -1,8 +1,6 @@
 ---
-title: AEM Mobile - GDPR Readiness
-seo-title: AEM Mobile - GDPR Readiness
-description: "AEM Mobile - GDPR Readiness"
-seo-description: null
+title: Adobe Experience Manager Mobile - GDPR Readiness
+description: Adobe Experience Manager Mobile - GDPR Readiness
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
@@ -16,17 +14,17 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 
 ## AEM Mobile GDPR Support {#aem-mobile-gdpr-support}
 
-AEM Mobile is ready to assist customers with their GDPR compliance obligations. No personal data is stored in AEM Mobile. If you are provisioned, you can login to Adobe Experience Mobile with your Adobe ID.
+AEM Mobile is ready to assist customers with their GDPR compliance obligations. No personal data is stored in AEM Mobile. If you are provisioned, you can log on to Adobe Experience Mobile with your Adobe ID.
 
-[https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html)
+<!-- [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html) -->
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe’s digital publishing product (which precedes AEM Mobile) supports Adobe’s GDPR readiness initiatives. Please see [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). The following will provide specifics on support for GDPR relevant functions in the Digital Publishing Suite product including how to work with Adobe to initiate GDPR requests.
+Adobe's digital publishing product (which precedes AEM Mobile) supports Adobe's GDPR readiness initiatives. Please see [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). The following will provide specifics on support for GDPR relevant functions in the Digital Publishing Suite product including how to work with Adobe to initiate GDPR requests.
 
 To ensure you are not confusing AEM Mobile with the older Digital Publishing Suite product, you can login to the Digital Publishing Suite product here:
 
-[https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
+[https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Initiating a GDPR request {#initiating-a-gdpr-request}
 
@@ -36,7 +34,7 @@ The following IDs are required to locate customer data. Any subset received will
 
 Mandatory:
 
-* Customer’s contract ID: *dpsc-contractId*
+* Customer's contract ID: *dpsc-contractId*
 
 Provide at least 1 of the following:
 
@@ -74,7 +72,7 @@ As the Digital Publishing Suite product evolved, service implementations were ch
 
 Please contact Adobe Customer Care to initiate a GDPR request.
 
-Here’s an example of the inputs and resulting outputs of a Digital Publishing Suite GDPR request:
+Here's an example of the inputs and resulting outputs of a Digital Publishing Suite GDPR request:
 
 #### Inputs: {#inputs}
 
