@@ -302,7 +302,7 @@ This is a hidden directory which you may not see depending on your current OS se
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-This directory contains the [CLI hooks](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). The folders in the hooks directory contain node.js scripts that are executed at exact points during the build.
+This directory contains the [CLI hooks](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). The folders in the hooks directory contain node.js scripts that are run at exact points during the build.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 

@@ -61,7 +61,7 @@ Each platform requires the ADBMobileConfig to be copied to a specific location.
 
 If building with the PhoneGap CLI this can be done with an cordova build hook scripts. This can be seen intheGeometrixx Outdoors App at:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-For iOS the file will need to be copied to the XCode project's **Resources** directory (eg. "platforms/ios/Geometrixx/Resources/ADBMobileConfig.json"). If the App is targeted for Android then the path to copy to is "platforms/android/assets/ADBMobileConfig.json". For further details on using hooks during the PhoneGap CLI build refer to [Three hooks your Cordova/PhoneGap project needs](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
+For iOS the file will need to be copied to the XCode project's **Resources** directory (eg. "platforms/ios/Geometrixx/Resources/ADBMobileConfig.json"). If the App is targeted for Android then the path to copy to is "platforms/android/assets/ADBMobileConfig.json". For further details on using hooks during the PhoneGap CLI build refer to [Three hooks your Cordova/PhoneGap project needs](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

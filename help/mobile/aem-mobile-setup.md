@@ -19,7 +19,7 @@ exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
 
 >[!CAUTION]
 >
->Existing AEM Mobile Apps customers migrating from AEM 6.2 or 6.3 to AEM 6.5 can continue to use AEM Mobile Apps by downloading a [package from PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). However, new installs of AEM 6.5 will not support AEM Mobile Apps functionality.
+>Existing AEM Mobile Apps customers migrating from AEM 6.2 or 6.3 to AEM 6.5 can continue to use AEM Mobile Apps by downloading a package from PackageShare. However, new installs of AEM 6.5 will not support AEM Mobile Apps functionality.
 
 In order to use AEM to produce content for AEM Mobile apps, you must integrate the AEM instance with the cloud-based AEM Mobile On-Demand Services account and project(s).
 
@@ -29,9 +29,9 @@ Follow these steps for setting up AEM Mobile and thus allowing the user to creat
 
 To get started with AEM Mobile set up, you need to:
 
-* **Request an API key**: To access the On-Demand Services API, you need to request an API key. To request the API key, complete the [PDF form](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). Send the completed form to Adobe Developer Support: [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Request an API key**: To access the On-Demand Services API, you need to request an API key. To request the API key, complete the [PDF form](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Send the completed form to Adobe Developer Support: [wwds@adobe.com](mailto:wwds@adobe.com)
 
-* **Generate the Device ID and Device Token**: Once you have received your API key, you can generate the device id and device token. Go to [https://aex.aemmobile.adobe.com](https://aex.aemmobile.adobe.com/) and do the following:
+* **Generate the Device ID and Device Token**: Once you have received your API key, you can generate the device id and device token. Go to `https://aex.aemmobile.adobe.com` and do the following:
 
   * Provide the API Key
   * Login with an Adobe ID that you have added to an AEM Mobile project with following permissions (see below steps to create project)
@@ -43,7 +43,7 @@ If all conditions are met, a Device ID and Device Token will be generated.
 
 >[!NOTE]
 >
->The Adobe ID needed should be granted access on a AEM Mobile Project. See [Account Administration for AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) in Online Help.
+>The Adobe ID needed should be granted access on a AEM Mobile Project. See [Account Administration for AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Help.
 
 ## Creating Projects for AEM Mobile {#creating-projects-for-aem-mobile}
 
@@ -59,7 +59,7 @@ Creating a project requires signing in to the On-Demand Services portal using an
 
 AEM set up involves the following steps for connector configuration. Once the AEM Mobile connector configuration is complete, the user can set up user groups and permissions.
 
-The AEM Mobile On-Demand connector is used to bind AEM Mobile managed content with Adobe Experience Manager Mobile’s On-Demand services. This enables content authors to create and manage material for mobile applications using AEM’s tools while using AEM Mobile’s On-Demand services for easy distribution of mobile content.
+The AEM Mobile On-Demand connector is used to bind AEM Mobile managed content with Adobe Experience Manager Mobile's On-Demand services. This enables content authors to create and manage material for mobile applications using AEM's tools while using AEM Mobile's On-Demand services for easy distribution of mobile content.
 
 >[!NOTE]
 >
