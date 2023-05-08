@@ -122,10 +122,9 @@ mini-toc-levels: 3
 
 * Cancel button in Page properties is inactive; it should take you to the Site Admin user interface. (NPR-40501)
 
+<!-- ## WCM{#wcm-6517}
 
-## WCM{#wcm-6517}
-
-* TEXT
+* TEXT -->
 
 ## Workflow{#workflow-6517}
 
