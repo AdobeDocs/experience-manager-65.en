@@ -54,9 +54,15 @@ mini-toc-levels: 3
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
-* Hotspot images disappear in the Carousel Set viewer. (ASSETS-20855)
-* Card view of assets folders render in minutes when using Dynamic Media renditions of video assets. (ASSETS-21153)
 * Connection to Dynamic Media is broken when a Dynamic Media Cloud Configuration exists already. (ASSETS-23057)
+* Increased performance while browsing folders with lot of Dynamic Media videos and resolved fail to load issue on folder card view. (ASSETS-23016)
+* Preview tokens are removed from `error.log` that can be used to request secure content from the secure test servers. (ASSETS-22685)
+* PDF thumbnail render adding a shadow. Upgraded Gibson lib version 4.0.1680232194 for solving PDF thumbnail rendering issue. (ASSETS-22585) 
+* Dynamic Media Hybrid mode is now compatible with the New Relic Agent version 8.0.1 (ASSETS-22578).
+* Experience Manager ACLs (Access Control Lists) are now respected when previewing Dynamic Media files on Experience Manager. (ASSETS-21628)
+* Screen readers are not navigating to hidden element when user tries to navigate using the Down arrow key or Tab key. (ASSETS-5617)
+* Image Profile user interface restricted for smart crops with the same name, or same dimension, or both. (ASSETS-16997)
+* Default width and height now set to 50 pixels for Smart Crops on Image Profile user interface. (ASSETS-16997)
 
 ## [!DNL Commerce]{#commerce-6517}
 
@@ -129,10 +135,9 @@ mini-toc-levels: 3
 
 * Cancel button in Page properties is inactive; it should take you to the Site Admin user interface. (NPR-40501)
 
+<!-- ## WCM{#wcm-6517}
 
-## WCM{#wcm-6517}
-
-* TEXT
+* TEXT -->
 
 ## Workflow{#workflow-6517}
 

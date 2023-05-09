@@ -23,8 +23,6 @@ It can be used to migrate data from older CQ versions based on Apache Jackrabbit
 You can download the newest version of crx2oak from the public Adobe repository at this location:
 [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
-The list of changes and fixes for the newest version can be found in the [CRX2Oak Release Notes](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/crx2oak.html).
-
 >[!NOTE]
 >
 >For more information on Apache Oak and key concepts of AEM persistance, see [Introduction to the AEM Platform](/help/sites-deploying/platform.md).
