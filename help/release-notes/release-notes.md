@@ -36,8 +36,21 @@ mini-toc-levels: 3
 
 ## [!DNL Assets]{#assets-6517}
 
-* TEXT
-
+* When you publish more than 40 PDFs simultaneously, [!DNL Experience Manager] stops responding and becomes unavailable for some time. (ASSETS-21789)
+* If you are logged in as a test user, you cannot see the Assets related to a particular Asset when you click properties of an Asset. (ASSETS-21648)
+* While editing Assets using `Desktop Actions`, if you try to check in more than five Assets at once, `Limit Reached` error is displayed and the selected Assets are checked out. (ASSETS-21121)
+* Unable to sort Assets by name in a Collection. (ASSETS-20924)
+* Unable to set dimensions on Assets of an image format type. (ASSETS-20835)
+* When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349)
+* The tooltip text and its background on the Search/Add Email Address field does not display appropriate contrast ratio while sharing a link. (ASSETS-17347)
+* When you expand `Notifications`, the text does not display properly due to paragraph spacing. (ASSETS-17345)
+* When you copy an Asset in Collection, `Public Collection` checkbox does not display appropriately. (ASSETS-17343)
+* Elements use ARIA attributes without a role. (ASSETS-17325)
+* The link is not descriptive when you expand `Notifications`. (ASSETS-17283)
+* When you navigate and expand the [!DNL Smart Crop] button, the content appears like a list but not marked up as an unordered list. As a result, the screen reader does not recognize the unordered list and read it as plain text. (ASSETS-17247)
+* The `Sort By` label is not associated to its respective drop-down. As a result, the screen reader does not recognize the drop-down options. (ASSETS-17239)
+* Unable to move forward or backward using the tab or arrow keys from keyboard when you are trying to add a new user using `Add user` combo-box. (ASSETS-17233)
+* Screen reader does not correctly convey the information for the Workflows step (ASSETS-17285).
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
