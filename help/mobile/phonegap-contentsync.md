@@ -257,7 +257,7 @@ For each configuration type, there is a *Content Update Handler*, which is an OS
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface that all update handlers need to implement
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - An abstract class that simplifies the rendering of resources using Sling
 
-Register your class as OSGi component factory and deploy it in the OSGi container in a bundle. This can be done using the [Maven SCR plugin](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) either using JavaDoc tags or annotations. The following example shows the JavaDoc version:
+Register your class as OSGi component factory and deploy it in the OSGi container in a bundle. This can be done using the [Maven SCR plugin](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) either using JavaDoc tags or annotations. The following example shows the JavaDoc version:
 
 ```java
 /*

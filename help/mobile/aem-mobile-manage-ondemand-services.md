@@ -39,9 +39,8 @@ With the Mobile On Demand Preflight app, you can view all projects to which you 
 
 >[!NOTE]
 >
->The AEM Preflight app is used for previewing content and browse pages. To learn in-depth about Preflight App, click [here](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
+>The AEM Preflight app is used for previewing content and browse pages. To learn in-depth about Preflight App, click [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 >
->The AEM Preflight app is available in [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&hl=en), and [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
 
 ### Getting Ahead {#getting-ahead}
 
