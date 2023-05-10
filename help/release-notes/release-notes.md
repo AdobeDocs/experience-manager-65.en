@@ -48,8 +48,8 @@ mini-toc-levels: 3
 * Elements use ARIA attributes without a role. (ASSETS-17325)
 * The link is not descriptive when you expand `Notifications`. (ASSETS-17283)
 * When you navigate and expand the [!DNL Smart Crop] button, the content appears like a list but not marked up as an unordered list. As a result, the screen reader does not recognize the unordered list and read it as plain text. (ASSETS-17247)
-* The `Sort By` label is not associated to its respective drop-down. As a result, the screen reader does not recognize the drop-down options. (ASSETS-17239)
-* Unable to move forward or backward using the tab or arrow keys from keyboard when you are trying to add a new user using `Add user` combo-box. (ASSETS-17233)
+* The `Sort By` label is not associated with its respective drop-down. As a result, the screen reader does not recognize the drop-down options. (ASSETS-17239)
+* Unable to move forward or backward using the keyboard Tab or Arrow keys when you are trying to add a user using the `Add user` combo-box. (ASSETS-17233)
 * Screen reader does not correctly convey the information for the Workflows step (ASSETS-17285).
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
@@ -115,16 +115,13 @@ mini-toc-levels: 3
 * Selecting an Externalizer configuration in an Experience Fragment when you export to Adobe Target causes the incorrect externalized URL to be sent. (SITES-12402)
 * Remove non-inclusive terms; apply inclusive terms guidelines. (SITES-11244)
 
-
 ### [!DNL Sites] - Page Editor{#sites-pageeditor-6517}
 
 * No thumbnail is displayed for a carousel set in the Experience Manager content finder side rail. (SITES-8593)
 
-
 ## Sling{#sling-6517}
 
 * Sling `ResourceMerger` consumes a high amount of CPU when provided with a fictitious path, causing a denial of service. (NPR-40338)
-
 
 ## Translation projects{#translation-6517}
 
