@@ -136,6 +136,8 @@ role: Developer
         + [Managing GraphQL Endpoints](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
         + [Using the GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
         + [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+        + [Optimizing GraphQL Queries](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+        + [Updating your Content Fragments for optimized GraphQL Filtering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
         + [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
         + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Hybrid and SPA AEM Development{#spas}
