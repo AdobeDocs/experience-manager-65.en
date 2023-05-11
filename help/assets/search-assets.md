@@ -412,6 +412,10 @@ You can do the following with the assets you've searched in [!DNL Experience Man
 * Download one or more assets.
 * Use Desktop Actions to open these assets in the desktop app.
 * Create smart collections.
+* Create a version
+* Start a workflow
+* Relate or unrelate assets
+* Apply filters, using the Filters panel that displays automatically after performing the search, to narrow the search results.
 
 ### Sort search results {#sort}
 
@@ -451,6 +455,18 @@ A collection is an ordered set of assets that can include assets from different 
 * A dynamic list (smart collection) that populates assets in the collection based on a search criteria.
 
 You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
+
+### Create a version {#create-version}
+
+Create a version for the assets that display in the search results. Select the asset and click **[!UICONTROL Create]** > **[!UICONTROL Version]**. Add an optional label or a comment and click **[!UICONTROL Create]**. You can also select multiple assets and create versions for them simultaneosuly.
+
+### Create a workflow {#create-workflow}
+
+Similar to the create version capability, you can also create a workflow for the assets that display in the search results. Select the asset(s) and click **[!UICONTROL Create]** > **[!UICONTROL Workflow]**. Select the workflow model, specify a title for the workflow, and click **[!UICONTROL Start]**.
+
+### Relate and Unrelate assets {#relate-unrelate-assets}
+
+Relate and unrelate assets that display in the search results. Select the asset(s) and click **[!UICONTROL Relate]** or **[!UICONTROL Unrelate]**.
 
 ## Unexpected search results and issues {#unexpected-results}
 
