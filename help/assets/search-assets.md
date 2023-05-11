@@ -6,6 +6,7 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
+hide: yes
 ---
 # Search digital assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
