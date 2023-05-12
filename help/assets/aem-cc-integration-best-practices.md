@@ -6,6 +6,7 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
+hide: yes
 ---
 # [!DNL Adobe Experience Manager] and [!DNL Creative Cloud] integration best practices {#aem-and-creative-cloud-integration-best-practices}
 

@@ -5,6 +5,7 @@ contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
+hide: yes
 ---
 # Use [!DNL Adobe Stock] assets in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 

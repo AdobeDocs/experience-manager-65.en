@@ -5,6 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
+hide: yes
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 

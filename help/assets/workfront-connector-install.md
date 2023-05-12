@@ -4,6 +4,7 @@ description: Install [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
+hide: yes
 ---
 # Install [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 

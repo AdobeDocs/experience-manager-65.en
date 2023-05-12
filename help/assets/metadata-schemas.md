@@ -6,6 +6,7 @@ mini-toc-levels: 1
 role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
+hide: yes
 ---
 # Metadata schemas {#metadata-schemas}
 

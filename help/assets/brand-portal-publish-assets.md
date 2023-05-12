@@ -10,10 +10,10 @@ topic-tags: brand-portal
 content-type: reference
 discoiquuid: 39b8cf9b-afec-4c9a-8a5d-7fc87e643f26
 docset: aem65
-
 feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
+hide: yes
 ---
 # Publish assets to Brand Portal {#publish-assets-to-brand-portal}
 
