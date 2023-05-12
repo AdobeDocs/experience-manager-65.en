@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
+hide: yes
 ---
 # Assets Insights {#asset-insights}
 

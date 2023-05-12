@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
+hide: yes
 ---
 # Asset reports {#asset-reports}
 
@@ -13,7 +14,7 @@ exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en)                  |
 | AEM 6.5     | This article         |
 
-Asset reporting lets you assess the utility of your [!DNL Adobe Experience Manager Assets] deployment. With [!DNL Assets], you can generate various reports for your digital assets. The reports provide useful information about your system’s usage, how users interact with assets, and which assets are downloaded and shared.
+Asset reporting lets you assess the utility of your [!DNL Adobe Experience Manager Assets] deployment. With [!DNL Assets], you can generate various reports for your digital assets. The reports provide useful information about your system's usage, how users interact with assets, and which assets are downloaded and shared.
 
 Use the information in the reports to derive key success metrics to measure the adoption of [!DNL Assets] within your enterprise and by customers.
 

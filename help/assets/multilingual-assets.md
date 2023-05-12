@@ -5,6 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
+hide: yes
 ---
 # Multilingual assets {#multilingual-assets}
 
