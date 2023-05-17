@@ -61,6 +61,8 @@ You can create a launch from either the Sites or Launches console:
    >To add pages and/or branches to a launch they must be within a site; i.e. below a common top-level root.
    >
    >If a site contains language roots below the top level, the pages and branches for a launch must be below a common language root.
+   >
+   >If you try to create a launch with a parent or child page in the source path, it will fail and return the error “Destination already exists at :path to the page.”.
 
 1. For each entry you can specify whether to:
 
