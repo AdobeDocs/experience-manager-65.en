@@ -93,6 +93,7 @@ mini-toc-levels: 3
 * Live copies cannot be created for pages with annotations. (SITES-12154)
 * Rollout of pages is working on Experience Manager 6.5.16. (SITES-12008)
 * Out of memory; high garbage collection activity due to `NotificationManagerImpl`. `NotificationManager` bundle upgrade to AEM 6.5. (SITES-11440)
+* Fixed WCM IT tests that were blocking service pack 17. (SITES-13089)
 * Retrieving Sites references fails on servlet. (SITES-10901)
 
 ### [!DNL Sites] - Admin User Interface{#sites-adminui-6517}
@@ -105,10 +106,13 @@ mini-toc-levels: 3
 * Usage of `SemanticDataType.REFERENCE` should support "Remote-Asset-IDs". (SITES-12127)
 * Integrate Polaris Asset Selector into Content Fragment editor. (SITES-12125)
 * A mandatory http header was necessary to access the metadata service endpoint. (SITES-13068)
+* The GraphQL implementation of 6.5 was not on par with Cloud Service (master); identified issues were fixed. (SITES-13096)
+* GraphQL paging/sorting and hybrid filtering should be available on AEM 6.5/AMS. (SITES-9154)
 
 ### [!DNL Sites] - Core Components{#sites-core-components-6517}
 
 * The property `cq-msm-lockable` has the wrong redirect value in the Foundation page component. (SITES-10904)
+* Remote Asset Picker always redirects to IMS stage environment. (SITES-13433)
 
 ### [!DNL Sites] - [!DNL Experience Fragments]{#sites-experiencefragments-6517}
 
@@ -125,7 +129,7 @@ mini-toc-levels: 3
 
 ## Translation projects{#translation-6517}
 
-* The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431)
+<!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST * The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431) -->
 * Language Copy is not created when the user is not configuring non-mandatory fields. (NPR-40036)
 
 ## User interface{#ui-6517}
@@ -144,6 +148,7 @@ mini-toc-levels: 3
 * Experience Manager author crashes when PSD/PDF with huge `DocumentAncestors` metadata attributes is uploaded. (ASSETS-22966)
 * Session leak in class `InboxSharingCache` with `user-reader-service`. (CQ-4352513)
 * Incomplete user and group list is displayed when "Workflow Initiator Participant Chooser" step lists the users & groups for the Participant step. This issue occurred when one group was also a member of another group. (NPR-40055)
+* Enhanced purge of workflows. (NPR-40459)
 
 ## Install [!DNL Experience Manager] 6.5.17.0{#install}
 
