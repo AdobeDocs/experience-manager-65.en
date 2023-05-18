@@ -45,12 +45,15 @@ mini-toc-levels: 3
 * The tooltip text and its background on the Search/Add Email Address field does not display appropriate contrast ratio while sharing a link. (ASSETS-17347)
 * When you expand `Notifications`, the text does not display properly due to paragraph spacing. (ASSETS-17345)
 * When you copy an Asset in Collection, `Public Collection` checkbox does not display appropriately. (ASSETS-17343)
-* Elements use ARIA attributes without a role. (ASSETS-17325)
+* Elements use ARIA attributes without a role. (ASSETS-17325,ASSETS-17323)
 * The link is not descriptive when you expand `Notifications`. (ASSETS-17283)
 * When you navigate and expand the [!DNL Smart Crop] button, the content appears like a list but not marked up as an unordered list. As a result, the screen reader does not recognize the unordered list and read it as plain text. (ASSETS-17247)
 * The `Sort By` label is not associated with its respective drop-down. As a result, the screen reader does not recognize the drop-down options. (ASSETS-17239)
 * Unable to move forward or backward using the keyboard Tab or Arrow keys when you are trying to add a user using the `Add user` combo-box. (ASSETS-17233)
 * Screen reader does not correctly convey the information for the Workflows step (ASSETS-17285).
+* When you navigate to `Smart Crop` option, the screen reader does not announce expand or collapse state of the button. (ASSETS-17335)
+* When you navigate to `Saved Searches` combo-box, both name and role do not have any assigned labels. (ASSETS-17329)
+* When you navigate `Collection` and hover to the text *Members*, the text does not appear as marked up. As a result, the screen reader does not recognize the heading text and read it as plain text. (ASSETS-17245)
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
