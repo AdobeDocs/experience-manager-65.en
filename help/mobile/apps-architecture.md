@@ -1,8 +1,6 @@
 ---
 title: Page Templates for Mobile Apps
-seo-title: Page Templates for Mobile Apps
 description: Follow this page to learn more about page templates. Page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component.
-seo-description: Follow this page to learn more about page templates. Page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component.
 uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
@@ -304,7 +302,7 @@ This is a hidden directory which you may not see depending on your current OS se
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-This directory contains the [CLI hooks](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). The folders in the hooks directory contain node.js scripts that are executed at exact points during the build.
+This directory contains the [CLI hooks](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). The folders in the hooks directory contain node.js scripts that are run at exact points during the build.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 

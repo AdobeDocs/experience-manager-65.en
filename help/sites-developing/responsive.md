@@ -21,7 +21,7 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 
 >[!NOTE]
 >
->Various examples are based on the Geometrixx sample content, which is no longer shipped with AEM, having been replaced by We.Retail. See the document [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx) for how to download and install Geometrixx.
+>Various examples are based on the Geometrixx sample content, which is no longer shipped with AEM (Adobe Experience Manager), having been replaced by We.Retail. See the document [We.Retail Reference Implementation](/help/sites-developing/we-retail.md#we-retail-geometrixx) for how to download and install Geometrixx.
 
 Design your web pages so that they adapt to the client viewport in which they are displayed. With responsive design, the same pages can be effectively displayed on multiple devices in both orientations. The following image demonstrates some ways in which a page can respond to changes in viewport size:
 
@@ -39,7 +39,7 @@ Develop Adobe Experience Manager (AEM) applications that generate HTML5 pages th
 * Maximum width of 767 pixels (phone, landscape)
 * Width between 768 pixels and 979 pixels (tablet, portrait)
 * Width between 980 pixels and 1199 pixels (tablet, landscape)
-* Width of 1200px or greater (desktop)
+* Width of 1200 pixels or greater (desktop)
 
 See the following topics for information about implementing responsive design behavior:
 
@@ -51,7 +51,7 @@ As you design, use **[!UICONTROL Sidekick]** to preview your pages for various s
 
 ## Before you develop {#before-you-develop}
 
-Before you develop the AEM application that supports your web pages, several design decisions should be made. For example, you need to have the following information:
+Before you develop the AEM application that supports your web pages, several design decisions should be made. For example, you must have the following information:
 
 * The devices you are targeting.
 * The target viewport sizes.
@@ -69,7 +69,7 @@ The typical AEM application structure supports all responsive design implementat
 
 Media queries enable the selective use of CSS styles for page rendering. AEM development tools and features enable you to effectively and efficiently implement media queries in your applications.
 
-The W3C group provides the [Media Queries](https://www.w3.org/TR/css3-mediaqueries/) recommendation that describes this CSS3 feature and the syntax.
+The W3C group provides the [Media Queries](https://www.w3.org/TR/mediaqueries-3/) recommendation that describes this CSS3 feature and the syntax.
 
 ### Creating the CSS file {#creating-the-css-file}
 
@@ -80,7 +80,7 @@ In your CSS file, define media queries based on the properties of the devices th
 * Define styles that are common to all devices in a separate CSS file.
 * In the css.txt file of the ClientLibraryFolder, order the list CSS files as is required in the assembled CSS file.
 
-The We.Retail Media sample uses this strategy to define styles in the site design. The CSS file used by We.Retail is located at `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
+The `We.Retail` Media sample uses this strategy to define styles in the site design. The CSS file used by `We.Retail` is at `*/apps/weretail/clientlibs/clientlib-site/less/grid.less`.
 
 The following table lists the files in the css child folder.
 
@@ -104,27 +104,27 @@ The following table lists the files in the css child folder.
   <tr>
    <td>responsive-1200px.css</td>
    <td>Styles for all media that are 1200 pixels wide or wider.</td>
-   <td><p>@media (min-width: 1200px) {<br /> ...<br /> }</p> </td>
+   <td><p>@media (min-width: 1200 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-980px-1199px.css</td>
    <td>Styles for media that are between 980 pixels and 1199 pixels wide.</td>
-   <td><p>@media (min-width: 980px) and (max-width: 1199px) {<br /> ...<br /> }</p> </td>
+   <td><p>@media (min-width: 980 px) and (max-width: 1199 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-768px-979px.css</td>
    <td>Styles for media that are between 768 pixels and 979 pixels wide. </td>
-   <td><p>@media (min-width: 768px) and (max-width: 979px) {<br /> ...<br /> }</p> </td>
+   <td><p>@media (min-width: 768 px) and (max-width: 979 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-767px-max.css</td>
-   <td>Styles for all media that are less than 768 pixels wide.</td>
-   <td><p>@media (max-width: 767px) {<br /> ...<br /> }</p> </td>
+   <td>Styles for all media that are fewer than 768 pixels wide.</td>
+   <td><p>@media (max-width: 767 px) {<br /> ...<br /> }</p> </td>
   </tr>
   <tr>
    <td>responsive-480px.css</td>
-   <td>Styles for all media that are less than 481 pixels wide.</td>
-   <td>@media (max-width: 480) {<br /> ...<br /> }</td>
+   <td>Styles for all media that are fewer than 481 pixels wide.</td>
+   <td>@media (max-width: 480 px) {<br /> ...<br /> }</td>
   </tr>
  </tbody>
 </table>
@@ -150,7 +150,7 @@ responsive-1200px.css
 
 ### Using Media Queries with AEM Pages {#using-media-queries-with-aem-pages}
 
-Include the client library folder in the JSP script of your page component to generate the CSS file that includes the media queries, and to reference the file.
+Include the client library folder in the JSP script of your page component. Doing so helps generate the CSS file that includes the media queries, and references the file.
 
 ```xml
 <ui:includeClientLib categories="apps.weretail.all"/>
@@ -169,7 +169,7 @@ The JSP script generates the following HTML code that references the style sheet
 
 ## Previewing for specific devices {#previewing-for-specific-devices}
 
-See previews of your pages in different viewport sizes to test the behavior of your responsive design. In **[!UICONTROL Preview]** mode, **[!UICONTROL Sidekick]** includes a **[!UICONTROL Devices]** drop-down menu that you use to select a device. When you select a device, the page changes to adapt to the viewport size.
+See previews of your pages in different viewport sizes so you can test the behavior of your responsive design. In **[!UICONTROL Preview]** mode, **[!UICONTROL Sidekick]** includes a **[!UICONTROL Devices]** drop-down menu that you use to select a device. When you select a device, the page changes to adapt to the viewport size.
 
 ![chlimage_1-5](assets/chlimage_1-5a.png)
 
@@ -189,7 +189,7 @@ To see an example, open the `/apps/weretail/components/page/head.jsp` file in CR
 
 To enable the device simulator to support your pages, register your page components with the MobileEmulatorProvider factory service and define the `mobile.resourceTypes` property.
 
-When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 For example, to create a ` [sling:OsgiConfig](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)` node in your application:
 
@@ -217,7 +217,7 @@ Add the following node property:
 
 To specify the device groups that appear in the Devices list, add a `cq:deviceGroups` property to the `jcr:content` node of the root page of your site. The value of the property is an array of paths to the device group nodes.
 
-Device group nodes are located in the `/etc/mobile/groups` folder.
+Device group nodes are in the `/etc/mobile/groups` folder.
 
 For example, the root page of the Geometrixx Media site is `/content/geometrixx-media`. The `/content/geometrixx-media/jcr:content` node includes the following property:
 
@@ -225,40 +225,40 @@ For example, the root page of the Geometrixx Media site is `/content/geometrixx-
 * Type: `String[]`
 * Value: `/etc/mobile/groups/responsive`
 
-Use the Tools conosole to [create and edit device groups](/help/sites-developing/groupfilters.md).
+Use the Tools console to [create and edit device groups](/help/sites-developing/groupfilters.md).
 
 >[!NOTE]
 >
->For device groups that you use for responsive design, edit the device group and on the General tab select Disable Emulator. This option prevents the emulator carousel from appearing, which is not relevent to responsive design.
+>For device groups that you use for responsive design, edit the device group and on the General tab select Disable Emulator. This option prevents the emulator carousel from appearing, which is not relevant to responsive design.
 >
 
 ## Using adaptive images {#using-adaptive-images}
 
 You can use media queries to select an image resource to display in the page. However, every resource that uses a media query to conditionalize its use is downloaded to the client. The media query merely determines whether the downloaded resource is displayed.
 
-For large resources such as images, downloading all resources is not an efficient use of the client's data pipeline. To selectively download resources, use javascript to initiate the resource request after the media queries perform the selection.
+For large resources such as images, downloading all resources is not an efficient use of the client's data pipeline. To selectively download resources, use JavaScript to initiate the resource request after the media queries perform the selection.
 
 The following strategy loads a single resource that is chosen using media queries:
 
 1. Add a DIV element for each version of the resource. Include the URI of the resource as the value of an attribute value. The browser does not interpret the attribute as a resource.
 1. Add a media query to each DIV element that is appropriate for the resource.
-1. When the document loads or the window is resized, javascript code tests the media query of each DIV element.
+1. When the document loads or the window is resized, JavaScript code tests the media query of each DIV element.
 1. Based on the results of the queries, determine which resource to include.
 1. Insert an HTML element in the DOM that references the resource.
 
-### Evaluating media queries using Javascript {#evaluating-media-queries-using-javascript}
+### Evaluating media queries using JavaScript {#evaluating-media-queries-using-javascript}
 
-Implementations of the [MediaQueryList interface](https://dev.w3.org/csswg/cssom-view/#the-mediaquerylist-interface) that the W3C defines enable you to evaluate media queries using javascript. You can apply logic to the media query results and execute scripts that are targeted for the current window:
+Implementations of the [MediaQueryList interface](https://drafts.csswg.org/cssom-view/#the-mediaquerylist-interface) that the W3C defines enable you to evaluate media queries using JavaScript. You can apply logic to the media query results and execute scripts that are targeted for the current window:
 
 * Browsers that implement the MediaQueryList interface support the `window.matchMedia()` function. This function tests media queries against a given string. The function returns a `MediaQueryList` object that provides access to the query results.
 
-* For browsers that do not implement the interface, you can use a `matchMedia()` polyfill, such as [matchMedia.js](https://github.com/paulirish/matchMedia.js), a freely-available javascript library.
+* For browsers that do not implement the interface, you can use a `matchMedia()` poly fill, such as [matchMedia.js](https://github.com/paulirish/matchMedia.js), a freely available JavaScript library.
 
 #### Selecting media-specific resources {#selecting-media-specific-resources}
 
-The W3C-proposed [picture element](https://picture.responsiveimages.org/) uses media queries to determine the source to use for image elements. The picture element uses element attributes to assocate media queries with image paths.
+The W3C [picture element](https://html.spec.whatwg.org/multipage/embedded-content.html#the-picture-element) uses media queries to determine the source to use for image elements. The picture element uses element attributes to associate media queries with image paths.
 
-The freely-available [picturefill.js library](https://github.com/scottjehl/picturefill) provides similar functionality as the proposed `picture` element, and uses a similar strategy. The picturefill.js library calls `window.matchMedia` to evaluate the media queries that are defined for a set of `div` elements. Each `div` element also specifies an image source. The source is used when the media query of the `div` element returns `true`.
+The freely available [picturefill.js library](https://github.com/scottjehl/picturefill) provides similar functionality as the proposed `picture` element, and uses a similar strategy. The picturefill.js library calls `window.matchMedia` to evaluate the media queries that are defined for a set of `div` elements. Each `div` element also specifies an image source. The source is used when the media query of the `div` element returns `true`.
 
 The `picturefill.js` library requires HTML code that is similar to the following example:
 
@@ -287,11 +287,11 @@ In an AEM page, the value of the `data-src` attribute is the path to a resource 
 
 ### Implementing adaptive images in AEM {#implementing-adaptive-images-in-aem}
 
-To implement adaptive images in your AEM application, you need to add the required javascript libraries, and include the required HTML markup in your pages.
+To implement adaptive images in your AEM application, you must add the required JavaScript libraries, and include the required HTML markup in your pages.
 
 **Libraries**
 
-Obtain the following javascript libraries and include them in a client library folder:
+Obtain the following JavaScript libraries and include them in a client library folder:
 
 * [matchMedia.js](https://github.com/paulirish/matchMedia.js) (for browsers that do not implement the MediaQueryList interface)
 * [picturefill.js](https://github.com/scottjehl/picturefill)
@@ -304,7 +304,7 @@ Obtain the following javascript libraries and include them in a client library f
 
 Create a component that generates the required div elements that the picturefill.js code expects. In an AEM page, the value of the data-src attribute is the path to a resource in the repository. For example, a page component can hard-code the media queries and the associated paths for image renditions in DAM. Or, create a custom Image component that enables authors to select image renditions or specify runtime rendering options.
 
-The following example HTML selects from 2 DAM renditions of the same image.
+The following example HTML selects from two DAM renditions of the same image.
 
 ```xml
 <div data-picture>
@@ -326,7 +326,7 @@ The following example HTML selects from 2 DAM renditions of the same image.
 
 ### Understanding image rendering in AEM {#understanding-image-rendering-in-aem}
 
-To customize image rendering, you should understand the default AEM static image rendering implementation. AEM provides the Image component and an image-rendering servlet that work together to render images for web page. The following sequence of events occur when the Image component is included inthepage's paragraph system:
+To customize image rendering, you should understand the default AEM static image rendering implementation. AEM provides the Image component and an image-rendering servlet that work together to render images for web page. The following sequences of events occur when the Image component is included inthepage's paragraph system:
 
 1. Authoring: Authors edit the Image component to specify the image file to include in an HTML page. The file path is stored as a property value of the Image component node.
 1. Page request: The JSP of the page component generates the HTML code. The JSP of the Image component generates and adds an img element to the page.
@@ -355,17 +355,17 @@ file.
 
 Scale images at runtime according to the characteristics of the client viewport to provide images that conform to the principles of responsive design. Use the same design pattern as static image rendering, using a servlet and an authoring component.
 
-The component needs to perform the following tasks:
+The component must perform the following tasks:
 
 * Store the path and desired dimensions of the image resource as property values.
 * Generate `div` elements that contain media selectors and service calls for rendering the image.
 
 >[!NOTE]
 >
->The web client uses the matchMedia and Picturefill javascript libraries (or similar libraries) to evaluate the media selectors.
+>The web client uses the matchMedia and Picturefill JavaScript libraries (or similar libraries) to evaluate the media selectors.
 >
 
-The servlet that processes the image request needs to perform the following tasks:
+The servlet that processes the image request must perform the following tasks:
 
 * Retrieve the path and dimensions of the image from the component properties.
 * Scale the image according to the properties and return the image.
@@ -375,14 +375,14 @@ The servlet that processes the image request needs to perform the following task
 AEM installs the following implementations that you can use or extend.
 
 * The Adaptive Image foundation component that generates media queries, and HTTP requests to the Adaptive Image Component Servlet that scales the images.
-* The Geometrixx Commons package installs the Image Reference Modification Servlet sample servlets that alters image resolution.
+* The Geometrixx Commons package installs the Image Reference Modification Servlet sample servlets that alter image resolution.
 
 ### Understanding the Adaptive Image component {#understanding-the-adaptive-image-component}
 
 The Adaptive Image component generates calls to the Adaptive Image Component Servlet to render an image that is sized according to the device screen. The component includes the following resources:
 
 * JSP: Adds div elements that associate media queries with calls to Adaptive Image Component Servlet.
-* Client libraries: The clientlibs folder is a `cq:ClientLibraryFolder` that assembles the matchMedia polyfill javascript library and a modified Picturefill javascript library.
+* Client libraries: The clientlibs folder is a `cq:ClientLibraryFolder` that assembles the matchMedia polyfill JavaScript library and a modified Picturefill JavaScript library.
 * Edit dialog box: The `cq:editConfig` node overrides the CQ foundation image component so that the drop target creates an adaptive-image component rather than a foundation image component.
 
 #### Adding the DIV elements {#adding-the-div-elements}
@@ -504,7 +504,7 @@ For information about how to configure AEM services, see [Configuring OSGi](/hel
 
 #### Implementation details {#implementation-details}
 
-The `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` class extends the [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. The AdaptiveImageComponentServlet source code is located in the `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` folder.
+The `com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet` class extends the [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. The AdaptiveImageComponentServlet source code is in the `/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl` folder.
 
 The class uses Felix SCR annotations to configure the resource type and file extension that the servlet is associated with, and the name of the first selector.
 
@@ -537,11 +537,11 @@ The servlet uses the Property SCR annotation to set the default supported image 
             description = "List of widths this component is permitted to generate.")
 ```
 
-The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the request, retrieves resource properties from the repository, and returns them in an [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
+The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the request, retrieves resource properties from the repository, and returns them in an [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
 
 >[!NOTE]
 >
->The [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) class provides the `getFileReference method`, which retrieves the value of the resource's `fileReference` property.
+>The [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) class provides the `getFileReference method`, which retrieves the value of the resource's `fileReference` property.
 
 The `AdaptiveImageComponentServlet` class overrides the `createLayer` method. The method obtains the path of the image resource and the requested image width from the `ImageContext` object. It then calls the methods of the `info.geometrixx.commons.impl.AdaptiveImageHelper` class, which performs the actual image scaling.
 
@@ -590,7 +590,7 @@ The following values for image quality are supported:
 * medium
 * high
 
-When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 #### Specifying the image resource {#specifying-the-image-resource}
 
@@ -609,7 +609,7 @@ When authoring a page, use **Sidekick** to specify the image and add the `image`
 
 #### Implementation details {#implementation-details-1}
 
-The info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet class extends the [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. If you have the cq-geometrixx-commons-pkg package installed, the ImageReferenceModificationServlet source code is located in the `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` folder.
+The info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet class extends the [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) class. If you have the cq-geometrixx-commons-pkg package installed, the ImageReferenceModificationServlet source code is in the `/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets` folder.
 
 The class uses Felix SCR annotations to configure the resource type and file extension that the servlet is associated with, and the name of the first selector.
 
@@ -649,17 +649,17 @@ The servlet uses the Property SCR annotation to set the default supported image 
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the call, retrieves resource properties from the repository, and saves them in an [ImageContext](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
+The `AbstractImageServlet` class provides the `doGet` method that processes the HTTP request. This method determines the resource that is associated with the call, retrieves resource properties from the repository, and saves them in an [ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html) object.
 
-The `ImageReferenceModificationServlet` class overrides the `createLayer` method and implements the logic that determines the image resource to render. The method retrieves a child node of the page's `jcr:content` node named `image`. An [Image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) object is created from this `image` node, and the `getFileReference` method returns the path to the image file from the `fileReference` property of the image node.
+The `ImageReferenceModificationServlet` class overrides the `createLayer` method and implements the logic that determines the image resource to render. The method retrieves a child node of the page's `jcr:content` node named `image`. An [Image](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html) object is created from this `image` node, and the `getFileReference` method returns the path to the image file from the `fileReference` property of the image node.
 
 >[!NOTE]
->The [com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) class provides the getFileReferencemethod.
+>The [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) class provides the getFileReferencemethod.
 >
 
 ## Developing a fluid grid {#developing-a-fluid-grid}
 
-AEM enables you to efficiently and effectively implement fluid grids. This page explains how you can integrate your fluid grid or an existing grid implementation (such as [Bootstrap](https://twitter.github.com/bootstrap/)) into your AEM application.
+AEM enables you to efficiently and effectively implement fluid grids. This page explains how you can integrate your fluid grid or an existing grid implementation (such as [Bootstrap](https://github.com/topics/twitter-bootstrap?l=css)) into your AEM application.
 
 If you are not familiar with fluid grids, see the [Introduction to Fluid Grids](/help/sites-developing/responsive.md#developing-a-fluid-grid) section at the bottom of this page. This introduction provides an overview of fluid grids and guidance for designing them.
 
@@ -706,12 +706,12 @@ The design that is associated with the geometrixx-media page component (`/etc/de
 The following example CSS is a subset of those styles. This subset focuses on `span12`, `span8`, and `span4` classes, and media queries for two viewport sizes. Notice the following characteristics of the CSS:
 
 * The `.span` styles define element widths using absolute numbers.
-* The `.row-fluid .span*` styles define element widths as percenteages of the parent. Percentages are calculated from the absolute widths.
+* The `.row-fluid .span*` styles define element widths as percentages of the parent. Percentages are calculated from the absolute widths.
 * Media queries for larger viewports assign larger absolute widths.
 
 >[!NOTE]
 >
->The Geometrixx Media sample integrates the [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) javascript framework into its fluid grid implementation. The Bootstrap framework provides the bootstrap.css file.
+>The Geometrixx Media sample integrates the [Bootstrap](https://getbootstrap.com/2.0.2/) JavaScript framework into its fluid grid implementation. The Bootstrap framework provides the bootstrap.css file.
 
 ```xml
 /* default styles (no media queries) */
@@ -766,7 +766,7 @@ The pages of the sample Geometrixx Media application distribute rows of content 
 
 #### Modularize your Page components {#tip-modularize-your-page-components}
 
-Modularize your components to make efficient use of the code. Your site likely uses several different types of pages, such as a welcome page, an article page, or a product page. Each type of page contains different types of content and likely use different layouts. However, when certain elements of each layout are common across multiple pages, you can re-use the code that implements that part of the layout.
+Modularize your components so you can make efficient use of the code. Your site likely uses several different types of pages, such as a welcome page, an article page, or a product page. Each type of page contains different types of content and likely use different layouts. However, when certain elements of each layout are common across multiple pages, you can reuse the code that implements that part of the layout.
 
 **Use page component overlays**
 
@@ -776,9 +776,9 @@ Create other page components that use the main page component as the `cq:resourc
 
 For example, the goemetrixx-media application includes the page component (the `sling:resourceSuperType` is the foundation page component). Several child components (such as article, category, and media-home) use this page component as the `sling:resourceSuperType`. Each child component includes a content.jsp file that overrides the content.jsp file of the page component.
 
-**Re-use scripts**
+**Reuse scripts**
 
-Create multiple JSP scripts that generate row and column combinations that are common for mulitple page components. For example, the `content.jsp` script of the article and media-home components both reference the `8x4col.jsp` script.
+Create multiple JSP scripts that generate row and column combinations that are common for multiple page components. For example, the `content.jsp` script of the article and media-home components both reference the `8x4col.jsp` script.
 
 **Organize CSS styles by targeted viewport size**
 
@@ -788,15 +788,15 @@ Include CSS styles and media queries for different viewport sizes in separate fi
 
 When components generate a single block of content, generally the grid that the page component establishes controls the placement of the content.
 
-Authors should be aware that the content block can be rendered in various sizes and relative positions. Content text should not use relative directions to refer to other content blocks.
+As an author, the content block can be rendered in various sizes and relative positions. Content text should not use relative directions to refer to other content blocks.
 
-If necessary, the component should provide any CSS or javascript libraries that are required for the HTML code that it generates. Use a client library folder inside the component to generate the CSS and JS files. To expose the files, [create a dependency or embed the library](/help/sites-developing/clientlibs.md#creating-client-library-folders) in another client library folder below the /etc folder.
+If necessary, the component should provide any CSS or JavaScript libraries that are required for the HTML code that it generates. Use a client library folder inside the component so the CSS and JS files are generated. To expose the files, [create a dependency or embed the library](/help/sites-developing/clientlibs.md#creating-client-library-folders) in another client library folder below the /etc folder.
 
 **Sub-grids**
 
 If the component contains multiple blocks of content, add the content blocks inside a row to establish a sub-grid on the page:
 
-* Use the same class names as the containing page component to express div elements as rows and content blocks.
+* Use the same class names as the containing page component so you can express div elements as rows and content blocks.
 * To override the behavior that the page design's CSS implements, use a second class name for the row div element and provide the associated CSS in a client library folder.
 
 For example, the `/apps/geometrixx-media/components/2-col-article-summary` component generates two columns of content. The HTML that it generates has the following structure:
@@ -851,16 +851,16 @@ Fluid grids enable page layouts to adapt to the dimensions of the client viewpor
 
 Using HTML5 technology you can implement the grid and manipulate it to adapt page layouts to different viewport sizes:
 
-* HTML `div` elements contain blocks of content that span a certain number of columns.
-* One or more of these div elements comprise a row when they share a common parent divelement.
+* HTML `div` elements contain blocks of content that span some columns.
+* One or more of these div elements comprise a row when they share a common parent div element.
 
 ### Using discrete widths {#using-discrete-widths}
 
-For each range of viewport widths that you are targeting, use a static page width and content blocks of constant width. When manually resizing a browser window, changes to content size occur at discrete window widths (also known as breakpoints). Consequently, page designs are more closely adhered to, maximizing the user experience.
+For each range of viewport widths that you are targeting, use a static page width and content blocks of constant width. When manually resizing a browser window, changes to content size occur at discrete window widths (also known as breakpoints). Therefore, page designs are more closely adhered to, maximizing the user experience.
 
 #### Scaling the grid {#scaling-the-grid}
 
-Use grids to scale content blocks to adapt to different viewport sizes. Content blocks span a specific number of columns. As column widths increase or decrease to fit different viewport sizes, the width of the content blocks increase or decrease accordingly. Scaling can support both large- and medium-sized viewports that are wide enough to accommodate the side-by-side placement of content blocks.
+Use grids to scale content blocks to adapt to different viewport sizes. Content blocks span a specific number of columns. As column widths increase or decrease to fit different viewport sizes, the widths of the content blocks increase or decrease accordingly. Scaling can support both large- and medium-sized viewports that are wide enough to accommodate the side-by-side placement of content blocks.
 
 ![](do-not-localize/chlimage_1-1a.png)
 
@@ -872,11 +872,11 @@ The size of content blocks can be constrained by a minimum width, beyond which s
 
 ### Designing the grid {#designing-the-grid}
 
-Determine the columns and rows that you need to position the blocks of content on your pages. Your page layouts determine the number of columns and rows that span your grid.
+Determine the columns and rows that you must position the blocks of content on your pages. Your page layouts determine the number of columns and rows that span your grid.
 
 **Number of columns**
 
-Include enough columns to horizontally position the content blocks in all of your layouts, for all viewport sizes. You should use more columns than are currently needed to accommodate future page designs.
+Include enough columns to horizontally position the content blocks in all of your layouts, for all viewport sizes. Use more columns than are currently needed so you can accommodate future page designs.
 
 **Row contents**
 
@@ -887,7 +887,7 @@ Use rows to control the vertical positioning of content blocks. Determine the co
 
 ### Grid implementations {#grid-implementations}
 
-Create CSS classes and styles to control the layout of the content blocks on a page. Page designs are often based on the relative size and position of content blocks within the viewport. The viewport determines the actual size of the content blocks. Your CSS needs to account for the relative and the absolute sizes. You can implement a fluid grid using three types of CSS classes:
+Create CSS classes and styles so you can control the layout of the content blocks on a page. Page designs are often based on the relative size and position of content blocks within the viewport. The viewport determines the actual size of the content blocks. Your CSS must account for the relative and the absolute sizes. You can implement a fluid grid using three types of CSS classes:
 
 * A class for a `div` element that is a container for all rows. This class sets the absolute width of the grid.
 * A class for `div` elements that represent a row. This class controls the horizontal or vertical positioning of the content blocks that it contains.
@@ -897,9 +897,9 @@ Targeted viewport widths (and their associated media queries) demarcate discrete
 
 #### Widths of content blocks {#widths-of-content-blocks}
 
-Generally, the `width` style of content block classes are based on the following characteristics of your page and grid:
+Generally, the `width` styles of content block classes are based on the following characteristics of your page and grid:
 
-* The absolute page width that you are using for each targeted viewport size. These are known values.
+* The absolute page width that you are using for each targeted viewport size. Known values.
 * The absolute width of the grid columns for each page width. You determine these values.
 * The relative width of each column as a percentage of the total page width. You calculate these values.
 
@@ -927,7 +927,7 @@ Use the following algorithm as a starting point for developing the element class
 
 1. Define a class name for the div element that contains all rows, for example `content.`
 1. Define a CSS class for div elements that represent rows, such as `row-fluid`.
-1. Define class names for content block elements. A class is required for all possible widths, in terms of column spans. For example, use the `span3` class for `div` elements that span 3 columns, use `span4` classes for spans of 4 columns. Define as many classes as there are columns in your grid.
+1. Define class names for content block elements. A class is required for all possible widths, in terms of column spans. For example, use the `span3` class for `div` elements that span three columns, use `span4` classes for spans of four columns. Define as many classes as there are columns in your grid.
 
 1. For each viewport size that you are targeting, add the corresponding media query to your CSS file. Add the following items in each media query:
 
@@ -940,12 +940,12 @@ Use the following algorithm as a starting point for developing the element class
 
     1. Set the width of `content` selectors to the absolute size of the page, for example `width:480px`.
     1. Set the width of all row-fluid selectors to 100%.
-    1. Set the width of all span selectors to the absolute width of the content block. A trivial grid uses evenly-distributed columns of the same width: `(absolute width of page)/(number of columns)`.
+    1. Set the width of all span selectors to the absolute width of the content block. A trivial grid uses evenly distributed columns of the same width: `(absolute width of page)/(number of columns)`.
     1. Set the width of the `.row-fluid .span` selectors as a percentage of the total width. Calculate this width using the `(absolute span width)/(absolute page width)*100` formula.
 
 #### Positioning Content Blocks in Rows {#positioning-content-blocks-in-rows}
 
-Use the float style of the `.row-fluid` class to control whether the content blocks in a row are arranged horizontally or vertically.
+Use the float style of the `.row-fluid` class so you can control whether the content blocks in a row are arranged horizontally or vertically.
 
 * The `float:left` or `float:right` style causes the horizontal distribution of child elements (content blocks).
 

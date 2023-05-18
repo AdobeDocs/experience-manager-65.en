@@ -1,8 +1,6 @@
 ---
-title: Creating Launches
-seo-title: Creating Launches
+title: Create Launches
 description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
-seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +10,7 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 ---
-# Creating Launches{#creating-launches}
+# Create Launches{#creating-launches}
 
 Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page:
 
@@ -63,6 +61,8 @@ You can create a launch from either the Sites or Launches console:
    >To add pages and/or branches to a launch they must be within a site; i.e. below a common top-level root.
    >
    >If a site contains language roots below the top level, the pages and branches for a launch must be below a common language root.
+   >
+   >If you try to create a launch with a parent or child page in the source path, it will fail and return the error “Destination already exists at :path to the page.”.
 
 1. For each entry you can specify whether to:
 

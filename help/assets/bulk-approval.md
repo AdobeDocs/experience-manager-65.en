@@ -5,6 +5,7 @@ contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
+hide: yes
 ---
 # Review folder assets and collections {#review-folder-assets-and-collections}
 
@@ -12,7 +13,6 @@ exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/bulk-approval.html?lang=en)           |
 
 Set up review workflows for assets within a folder or a collection and share it with reviewers or creative partners to seek feedback.
 

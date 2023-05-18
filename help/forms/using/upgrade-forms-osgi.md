@@ -1,8 +1,8 @@
 ---
-title: Upgrade to AEM 6.5 Forms
-seo-title: Upgrade to AEM 6.5 Forms
+title: Upgrade to AEM 6.5 Forms on OSGi
+
 description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
-seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
+
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS

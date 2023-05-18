@@ -19,23 +19,23 @@ exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 Document security ensures that only authorized users can use your documents. Using document security, you can safely distribute any information that you have saved in a supported format. Supported file formats include:
 
 * Adobe PDF files
-* Microsoft® Word, Excel, and PowerPoint files
+* Microsoft&reg; Word, Excel, and PowerPoint files
 
-For more information about how policies protect supported file types, see [more document security information](https://www.adobe.com/go/learn_aemforms_doc_security_65).
+For more information about how policies protect supported file types, see [more document security information](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en).
 
 Using document security, you can easily create, store, and apply predefined confidentiality settings to your documents. To prevent information from spreading beyond your reach, you can also monitor and control how recipients use your documents after you distribute them.
 
-You can protect documents by using policies. A *policy* is a collection of information that includes confidentiality settings and a list of authorized users. The confidentiality settings you specify in a policy determine how a recipient can use a document to which you apply the policy. For example, you can specify whether recipients can print or copy text, edit text, or add signatures and comments to protected documents.
+You can protect documents by using policies. A *policy* is a collection of information that includes confidentiality settings and a list of authorized users. The confidentiality settings that you specify in a policy determine how a recipient can use a document to which you apply the policy. For example, you can specify whether recipients can print or copy text, edit text, or add signatures and comments to protected documents.
 
 Document security users create policies through the end-user web pages. Administrators use the document security web pages to create policy sets that contain shared policies that are available to all authorized users.
 
-Although policies are stored in document security, you apply them to documents through your client application. How to apply policies to PDF documents is described in detail in *Acrobat Help*. Applying policies by using other applications, such as Microsoft® Office, is documented in the *Acrobat Reader DC Extensions Help* for the application.
+Although policies are stored in document security, you apply them to documents through your client application. How to apply policies to PDF documents is described in detail in *Acrobat Help*. Applying policies by using other applications, such as Microsoft&reg; Office, is documented in the *Acrobat Reader DC Extensions Help* for the application.
 
 When you apply a policy to a document, the confidentiality settings specified in the policy protect the information that the document contains. The confidentiality settings also protect any files (text, audio, or video) within a PDF document. You can distribute the policy-protected document to recipients who are authorized by the policy.
 
 **Document access control and auditing**
 
-Using a policy to protect a document gives you ongoing control over that document, even after you distribute it. You can monitor the document, make changes to the policy, prevent users from continuing to access the document, and switch the policy that is applied to the document.
+Using a policy to protect a document gives you ongoing control over that document, even after you distribute it. You can monitor the document, change the policy, prevent users from continuing to access the document, and switch the policy that is applied to the document.
 
 Through document security, you can monitor policy-protected documents and track events, such as when an authorized or unauthorized user attempts to open the document.
 
@@ -64,13 +64,13 @@ Various types of users work with document security to accomplish different tasks
 
   These settings may include, for example, a base document security URL, auditing and privacy notifications, invited user registration notices, and default offline lease periods. 
 
-* Document security administrators create policies and policy sets, and manage policy-protected documents for users as required. They also create invited user accounts, and monitor system, document, user, policy, policy set, and custom events. They may also be responsible for configuring the global server, and web page and policy settings in conjunction with a system administrator.
+* Document security administrators create policies and policy sets, and manage policy-protected documents for users as required. They also create invited user accounts, and monitor system, document, user, policy, policy set, and custom events. They may also be responsible for configuring the global server, and web page and policy settings with a system administrator.
 
   Administrators can assign users the following roles in the User Management area of administration console. Users who are assigned these roles perform their tasks in the document security user interface area of administration console.
 
   **Document security super administrator**
 
-  Users with this role have access to all of the document security settings in administration console. These permissions are associated with the role:
+  Users with this role have access to all document security settings in administration console. These permissions are associated with the role:
 
     * Manage configuration
     * Manage policy
@@ -92,7 +92,7 @@ Various types of users work with document security to accomplish different tasks
 
   **Document security policy set administrator**
 
-  Users with this role can use the document security section of administration console to edit other users’ polices and to create, edit, and delete policy sets. When a policy set administrator creates a policy set, they can assign a policy set coordinator to that policy set. These permissions are associated with the role:
+  Users with this role can use the document security section of administration console to edit other users' policies and to create, edit, and delete policy sets. When a policy set administrator creates a policy set, they can assign a policy set coordinator to that policy set. These permissions are associated with the role:
 
     * Manage policy
     * Manage policy sets
@@ -130,7 +130,7 @@ Various types of users work with document security to accomplish different tasks
 
 * Users within the organization who have valid document security accounts create their own policies, use policies to protect documents, track and manage their policy-protected documents, and monitor events that are related to their documents. 
 * Policy set coordinators manage documents, view events, and manage other policy set coordinators (based on their permissions). Administrators designate users as policy set coordinators for particular policy sets.
-* Users who are external to your organization (for example, a business partner) can use policy-protected documents if they are in the document security document security directory, if the administrator creates an account for them, or if they register with document security through an automated email invitation process. Depending on how the administrator enables the access settings, the invited users may also have permission to apply policies to documents, to create, modify and delete their policies, and to invite other external users to use their policy-protected documents. 
+* Users who are external to your organization (for example, a business partner) can use policy-protected documents if they are in the document security directory, if the administrator creates an account for them, or if they register with document security through an automated email invitation process. Depending on how the administrator enables the access settings, the invited users may also have permission to apply policies to documents, to create, modify, and delete their policies, and invite other external users to use their policy-protected documents. 
 * Developers use the AEM Forms SDK to integrate custom applications with document security.
 
 Document security administrators can create custom roles by using the following permissions in User Management:
@@ -146,11 +146,11 @@ Document security administrators can create custom roles by using the following 
 
 A *policy* defines a set of confidentiality settings and users who can access a document to which the policy is applied. A policy also enables the permissions on a document to be changed dynamically. It gives the person who secures the document permission to change the confidentiality settings to revoke access to the document or to switch the policy.
 
-Policy protection can be applied to a PDF document by using Adobe Acrobat® Pro and Acrobat Standard. Policy protection can be applied to other file types, such as Microsoft® Word, Excel, and PowerPoint files, by using the client application with the appropriate Acrobat Reader DC Extensions installed.
+Policy protection can be applied to a PDF document by using Adobe Acrobat&reg; Pro and Acrobat Standard. Policy protection can be applied to other file types, such as Microsoft&reg; Word, Excel, and PowerPoint files, by using the client application with the appropriate Acrobat Reader DC Extensions installed.
 
 ### How policies work {#how-policies-work}
 
-Policies contain information about the authorized users and the confidentiality settings to apply to documents. Users can be any one in your organization, as well as people who are external to your organization who have an account. If the administrator enables the user invitation feature, it is even possible to add new users to policies, therefore initiating a registration invitation email process.
+Policies contain information about the authorized users and the confidentiality settings to apply to documents. Users can be any one in your organization, and people who are external to your organization who have an account. If the administrator enables the user invitation feature, it is even possible to add new users to policies, therefore initiating a registration invitation email process.
 
 The confidentiality settings in a policy determine how the recipients can use the document. For example, you can specify whether recipients can print or copy text, make changes, or add signatures and comments to protected documents. The same policy can also specify different confidentiality settings for specific users.
 
@@ -161,7 +161,7 @@ The confidentiality settings in a policy determine how the recipients can use th
 Users and administrators create policies through the document security web pages. Only one policy at a time can be applied to a document. You can apply a policy by using one of these methods:
 
 * Open the document in Acrobat or another client application and select a policy to secure the document.
-* Send a document as an email attachment in Microsoft® Outlook. In this case, you can select a policy from a list of policies or select an auto-generated policy that Acrobat creates with a default set of confidentiality settings to protect the document only for the email message recipients.
+* Send a document as an email attachment in Microsoft&reg; Outlook. In this case, you can select a policy from a list of policies. Or, you can select an auto-generated policy that Acrobat creates with a default set of confidentiality settings to protect the document only for the email message recipients.
 
 A policy can be removed from a document by using the client application.
 
@@ -173,15 +173,15 @@ The steps in the diagram are as follows:
 1. Document security creates a document license and document keys, and encrypts the policy. The document license, encrypted policy, and document key are returned to the client application.
 1. The document is encrypted with the document key, and the document key is discarded. The document now embeds the license and policy. These tasks are performed in the supported client application.
 
-When you apply a policy to a document, the information that the document contains, including any contained files (text, audio, or video) in PDF documents, is protected by the confidentiality settings that are specified in the policy. Document security generates a license and encryption information that is then embedded in the document. When you distribute the document, document security can authenticate the recipients who attempt to open the document and authorize access according to the privileges specified in the policy.
+When you apply a policy to a document, the information contained in it, including any contained files (text, audio, or video) in PDF documents, is protected by the confidentiality settings specified in the policy. Document security generates a license and encryption information that is then embedded in the document. When you distribute the document, document security can authenticate the recipients who attempt to open the document and authorize access according to the privileges specified in the policy.
 
 If offline usage is enabled, recipients can also use policy-protected documents offline (without an active Internet or network connection) for the time period specified in the policy.
 
 ### How policy-protected documents work {#how-policy-protected-documents-work}
 
-To open and use policy-protected documents, the policy must include your name as a recipient, and you must have a valid document security account. For PDF documents, you need Acrobat or Adobe Reader®. For other file types, you need the appropriate application for the file with the Acrobat Reader DC Extensions installed.
+To open and use policy-protected documents, the policy must include your name as a recipient, and you must have a valid document security account. For PDF documents, you need Acrobat or Adobe Reader&reg;. For other file types, you need the appropriate application for the file with the Acrobat Reader DC Extensions installed.
 
-When you attempt to open a policy-protected document, Acrobat, Adobe Reader, or the Acrobat Reader DC Extensions connects to document security to authenticate you. Then, you can proceed to log on. If the document usage is being audited, a notification message appears. After document security determines which document permissions to grant, it manages the decryption of the document. You can then use the document according to the policy confidentiality settings. 
+When you open a policy-protected document, Acrobat, Adobe Reader, or the Acrobat Reader DC Extensions connects to document security to authenticate you. Then, you can proceed to log on. If the document usage is being audited, a notification message appears. After document security determines which document permissions to grant, it manages the decryption of the document. You can then use the document according to the policy confidentiality settings. 
 
 ![rm_psopen_online](assets/rm_psopen_online.png)
 
@@ -196,9 +196,9 @@ You can continue to use a document under these conditions:
 * Indefinitely or for the validity period that is specified in the policy
 * Until the administrator or the person who applied the policy revokes access to the document or changes the policy
 
-You can also use policy-protected documents offline (without an Internet or network connection) if the policy permits offline access. You must first log in to document security to synchronize the document. You can then use the document for the duration of the offline lease period that is specified in the policy.
+You can also use policy-protected documents offline (without an Internet or network connection) if the policy permits offline access. First log on to document security to synchronize the document. You can then use the document during the offline lease period that is specified in the policy.
 
-When the offline lease period ends, you must synchronize the document with document security again, either by going online and opening a policy-protected document or by using a command in the client application. (See *Acrobat Help* or the appropriate *Acrobat Reader DC Extensions Help* for details.)
+When the offline lease period ends, synchronize the document with document security again, either by going online and opening a policy-protected document or by using a command in the client application. See *Acrobat Help* or the appropriate *Acrobat Reader DC Extensions Help* for details.
 
 If you save a copy of a policy-protected document by using the Save or Save As menu command, the policy is automatically applied and enforced for the new document. Events such as attempts to open the new document are also audited and recorded for the original document.
 
@@ -210,7 +210,7 @@ Each policy set can have one or more associated policy set coordinators. The pol
 
 Policy set coordinators can perform these tasks:
 
-* Create new policies
+* Create policies
 * Edit and delete any policy in the policy set
 * Edit policy set settings
 * Add and remove policy set coordinators
@@ -224,13 +224,13 @@ Policy set coordinators can perform these tasks:
 
 Policy sets are created and deleted in the document security administration web pages by administrators and policy set coordinators who have permission to do so.
 
-Policy sets are generally made available to a limited number of users by specifying which users or groups within a domain can use the policies from the policy set to protect documents.
+Policy sets are made available to a limited number of users by specifying which users or groups within a domain can use the policies from the policy set to protect documents.
 
 When document security is installed, a default policy set is created called *Global Policy Set*. The administrator who installed the software manages this policy set.
 
 ## Best practices {#best-practices}
 
-Policies are reusable sets of permissions and user groups that can be applied to various documents. For the protected documents. These policies ensure that only authorized users can use allowed features. The number of policies and policy sets are expected to grow with an increase in different user roles and documents within a department. Here are some considerations and best practices to create and manage policies:
+Policies are reusable sets of permissions and user groups that can be applied to various documents. For the protected documents. These policies ensure that only authorized users can use allowed features. The number of policies and policy sets are expected to grow with an increase in different user roles and documents within a department. To create and manage policies, here are some considerations and best practices:
 
 * **Create reusable policies:** Adobe recommends reusing policies across various documents. It helps keep the number of policies to a minimum, provide optimum performance, and makes it easier to manage the policies. To create a reusable policy:
 
@@ -242,7 +242,7 @@ Policies are reusable sets of permissions and user groups that can be applied to
 
 1. Open the policy set and create a policy. Add user groups and set confidentiality (access-control) settings for the policy.
 
-  Add user groups to policies instead of individual users. It makes it easier to manage and apply policies to a large number of users.
+  Add user groups to policies instead of individual users. It makes it easier to manage and apply policies to many users.
 
 * **Create Custom Policy sets:** A policy set combines multiple policies into a manageable entity. Create custom policy sets for your organization or department, use them to group related policies, and make them available to a subset of users in the system. 
 
@@ -254,9 +254,9 @@ Policies are reusable sets of permissions and user groups that can be applied to
 
   * Control access to policy-protected documents by dynamically determining whether a user can access a policy-protected document. For example, dynamically decides whether a user can print a policy-protected document.
 
-  * Use an access control mechanism that your content management system uses, in addition to the standard policy evaluation process. For example, when the service determines whether a user can print a policy-protected document, it can use the standard policy evaluation process and the access control mechanism that your content management system uses.
+  * Use an access control mechanism that your content management system uses, in addition to the standard policy evaluation process. For example, when the service determines whether a user can print a policy-protected document, it can use the standard policy evaluation process. And, it can also use the access control mechanism that your content management system uses.
 
-  Although it is possible to completely replace the Document Security policy evaluation process with an external authorization handler, it is recommended that you use an external authorization handler in conjunction with the policy evaluation process. As a result, document access can be controlled by the same control mechanism that your content management system uses. For example, when the Document Security service determines whether a user can print a policy-protected document, it uses the standard policy evaluation process and the access control mechanism that your content management system uses. For more information, see [Creating External Authorization Handlers](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+  Although it is possible to completely replace the Document Security policy evaluation process with an external authorization handler, it is recommended that you use an external authorization handler with the policy evaluation process. As a result, document access can be controlled by the same control mechanism that your content management system uses. For example, when the Document Security service determines whether a user can print a policy-protected document, it uses the standard policy evaluation process. It also uses the access control mechanism that your content management system uses. For more information, see [Creating External Authorization Handlers](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Keep the policy sets to a limited number:** Several factors lead to the constant growth of policies and policy sets. Some common factors are:
 
@@ -265,11 +265,11 @@ Policies are reusable sets of permissions and user groups that can be applied to
 
   Adobe recommends keeping the number of policies and policy sets to a minimum. It helps easily manage policies and policy sets and provide better performance. To keep the number to a minimum:
 
-  * Create reusable policies. These can be shared across multiple departments.
+  * Create reusable policies. These policies can be shared across multiple departments.
   * Consider creating organization-wide policy sets, if some policies apply to multiple departments instead of an individual policy set for each department.
-  * Group related policies in a policy set. Do not create a separate policy set for each policy.
+  * Group-related policies in a policy set. Do not create a separate policy set for each policy.
   * Use an external authorizer to dynamically  control user permissions.
 
   >[!NOTE]
   >
-  >You can use the [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API to retrieve a maximum of1000 policy set names. Internally, the API retrieves a maximum of 1000 policies for which the API invoker has document publisher permission and then creates and returns a list of unique policy set names associated with retrieved policies to you. For example, when the API retrieves 1000 policies and the retrieved policies are associated with 200 policy sets in total, the API returns only 200 policy set names.
+  >You can use the [getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API to retrieve a maximum of 1000 policy set names. Internally, the API retrieves a maximum of 1000 policies for which the API invoker has document publisher permission and then creates and returns a list of unique policy set names associated with retrieved policies to you. For example, when the API retrieves 1000 policies and the retrieved policies are associated with 200 policy sets in total, the API returns only 200 policy set names.

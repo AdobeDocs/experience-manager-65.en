@@ -1,8 +1,8 @@
 ---
-title: Experience Fragments
-seo-title: Experience Fragments
+title: Experience Fragments in AEM Sites authoring
+
 description: Experience Fragments
-seo-description: null
+
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES

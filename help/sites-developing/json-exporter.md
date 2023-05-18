@@ -91,7 +91,7 @@ See also:
 
 For further details, see:
 
-* The [Content Fragments topic in the Assets user guide](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=en&topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* The [Content Fragments topic in the Assets user guide](/help/assets/content-fragments/content-fragments.md)
 
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)

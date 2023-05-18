@@ -1,8 +1,8 @@
 ---
-title: Seeing Page Analytics Data
-seo-title: Seeing Page Analytics Data
+title: Seeing page analytics data to gauge effectiveness of page content
+
 description: Use page analytics data to gauge the effectiveness of their page content
-seo-description: Use page analytics data to gauge the effectiveness of their page content
+
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES

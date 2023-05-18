@@ -627,7 +627,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Integrating report UI in existing Process Reporting UI&nbsp; {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-The prerequisites to creating a separate UI for displaying results are [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) and providing appropriate [access privileges](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
+The prerequisites to creating a separate UI for displaying results are [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Creating a CRX Node](/help/sites-developing/developing-with-crxde-lite.md#creating-a-node) and providing appropriate [access privileges](/help/sites-developing/developing-with-crxde-lite.md#access-control).
 
 1. Create a separate UI.
 1. Create a child `nt:unstructured` node at the `/content/process-reporting-runtime/custom-reports` node for every pluggable report.

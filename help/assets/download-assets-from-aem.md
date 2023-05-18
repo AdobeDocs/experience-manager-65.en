@@ -5,6 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
+hide: yes
 ---
 # Download assets from [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
@@ -12,7 +13,6 @@ exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/download-assets-from-aem.html?lang=en)           |
 
 You can download assets including static and dynamic renditions. Alternatively, you can send emails with links to assets directly from [!DNL Adobe Experience Manager Assets]. Downloaded assets are bundled in a ZIP file. The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. 
 

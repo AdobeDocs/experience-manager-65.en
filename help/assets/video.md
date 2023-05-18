@@ -109,8 +109,7 @@ The following step-by-step workflow description is designed to help you get up a
 
         * Integrate video using embed code on web page:
           [Embed the video viewer on a web page](embed-code.md).
-
-    * [Publish videos to YouTube](#publishing-videos-to-youtube).
+    
     * [Generate video reports](#viewing-video-reports).
 
     * [Add captions to video](#adding-captions-to-video).
@@ -149,8 +148,6 @@ Adaptive video streaming is supported on various iOS platforms. See [Dynamic Med
 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
-
-
 
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
@@ -271,7 +268,7 @@ The following table describes the device, browser, and playback method of videos
 
 >[!IMPORTANT]
 >
->*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).)
+>*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
 
 ## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
@@ -285,7 +282,7 @@ The following graphic shows the overall authoring workflow of videos that are up
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
-The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitor video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -436,10 +433,6 @@ Some key benefits from enabling DASH on your account include the following:
 * Helps make video delivery more accessible for your customers.
 * Get the streaming URL by way of APIs, too.
 
-   >[!IMPORTANT]
-   >
-   >Enabling DASH on your account currently is available only in North America.
-
 Enabling DASH on your account requires two steps: 
 
 * Configuring Dynamic Media to use DASH which you can easily do yourself.
@@ -449,10 +442,10 @@ Enabling DASH on your account requires two steps:
 
 1. **Configure Dynamic Media** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. Select the checkbox to enable (turn on) DASH.
+1. To enable (turn on) DASH, select the checkbox.
 1. Select **[!UICONTROL Save]**.
 1. **Configure Experience Manager 6.5** - [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Follow the instructions to create a support case while ensuring you provide the following information:
+1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
     * Name of your Dynamic Media account.
@@ -469,7 +462,7 @@ Enabling DASH on your account requires two steps:
 >
 >Video reports are only available when you run Dynamic Media - Hybrid mode.
 
-Video Reports display several aggregate metrics across a specified time to help you monitor that *published *individual and aggregate videos are performing as expected. The following top metrics data are aggregated for all published videos across your entire website:
+Video Reports display several aggregate metrics across a specified time to help you monitor that *published* individual and aggregate videos are performing as expected. The following top metrics data are aggregated for all published videos across your entire website:
 
 * Video Starts
 * Completion Rate
@@ -716,7 +709,7 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
 
 ## About video thumbnails in Dynamic Media - Scene7 mode {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail serves to encourage a customer to click on the video.
+A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail serves to encourage a customer to select the video.
 
 All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can play the video and pause on the frame you want to use. Or, you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 

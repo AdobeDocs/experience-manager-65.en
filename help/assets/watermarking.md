@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
+hide: yes
 ---
 # Watermark your digital assets {#watermarking}
 
@@ -12,7 +13,6 @@ exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/watermarking.html?lang=en)           |
 
 [!DNL Adobe Experience Manager Assets] allows you to add a digital watermark to assets that helps users verify the authenticity and copyright ownership of the assets. [!DNL Experience Manager Assets] supports text to be used as a watermark on PNG and JPEG files.
 

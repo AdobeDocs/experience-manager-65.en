@@ -1,8 +1,6 @@
 ---
-title: Working with Page Versions
-seo-title: Working with Page Versions
+title: Working with page versions
 description: Versioning creates a "snapshot" of a page at a specific point in time.
-seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

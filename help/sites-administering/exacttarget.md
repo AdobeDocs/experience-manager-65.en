@@ -49,7 +49,7 @@ To create an ExactTarget configuration in Cloud Services:
 
    ExactTarget has been configured. You can edit the configuration by clicking **Edit**. You can go to ExactTarget by clicking **Go to ExactTarget**.
 
-1. AEM now provides a Data Extension feature. You can import ExactTarget data extension columns. This can be configured by clicking "+" sign appearing besides successfully created ExactTarget configuration. Any of the existing data extension can be selected from the drop-down list. For more information on how to configure data extensions, refer [ExactTarget documentation](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
+1. AEM now provides a Data Extension feature. You can import ExactTarget data extension columns. It can be configured by clicking "+" sign appearing besides successfully created ExactTarget configuration. Any of the existing data extension can be selected from the drop-down list. For more information on how to configure data extensions, see [ExactTarget documentation](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5).
 
    Imported data extension columns can later be used through the **Text and Personalization** component.
 

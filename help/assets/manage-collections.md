@@ -6,6 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
+hide: yes
 ---
 # Manage collections {#managing-collections}
 
@@ -13,7 +14,6 @@ exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-collections-touch-ui.html?lang=en)           |
 
 A collection is a set of assets within [!DNL Adobe Experience Manager Assets]. Use collections to share assets between users. The set can be static collection or a dynamic collection that is based on search results.
 

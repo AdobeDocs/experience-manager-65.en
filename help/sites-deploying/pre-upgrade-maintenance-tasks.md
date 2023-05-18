@@ -37,7 +37,7 @@ Before beginning your upgrade, it is important to follow these maintenance tasks
 
 ## Ensure Sufficient Disk Space {#ensure-sufficient-disk-space}
 
-When executing the upgrade, in addition to the content and code upgrade activities, a repository migration will need to be performed. The migration will create a copy of the repository in the new Segment Tar format. As a result, you will need enough disk space to retain a second, potentially larger, version of your repository.
+When executing the upgrade, in addition to the content and code upgrade activities, a repository migration must be performed. The migration creates a copy of the repository in the new Segment Tar format. As a result, you need enough disk space to retain a second, potentially larger, version of your repository.
 
 ## Fully Back Up AEM {#fully-back-up-aem}
 
@@ -45,33 +45,37 @@ AEM should be fully backed up before beginning the upgrade. Make sure to back up
 
 ## Back Up Changes to /etc {#backup-changes-etc}
 
-The upgrade process does a good job of maintaining and merging existing content and configurations from under the `/apps` and `/libs` paths in the repository. For changes made to the `/etc` path, including Context Hub configurations, it is often necessary to re-apply these changes after the upgrade. While the upgrade will make a backup copy of any changes that it cannot merge under `/var`, we recommend backing up these changes manually before beginning the upgrade.
+The upgrade process does a good job of maintaining and merging existing content and configurations from under the `/apps` and `/libs` paths in the repository. For changes made to the `/etc` path, including Context Hub configurations, it is often necessary to reapply these changes after the upgrade. While the upgrade makes a backup copy of any changes that it cannot merge under `/var`, Adobe recommends that you back up these changes manually before beginning the upgrade.
 
 ## Generate The quickstart.properties File {#generate-quickstart-properties}
 
-When starting AEM from the jar file, a `quickstart.properties` file will be generated under `crx-quickstart/conf`. If AEM has only been started with the start script in the past, this file will not be present and the upgrade will fail. Make sure to check for the existence of this file and restart AEM from the jar file if it is not present.
+When starting AEM from the jar file, a `quickstart.properties` file is generated under `crx-quickstart/conf`. If AEM has only been started with the start script in the past, this file is not present and the upgrade fails. Make sure to check for the existence of this file and restart AEM from the jar file if it is not present.
 
 ## Configure Workflow and Audit Log Purging {#configure-wf-audit-purging}
 
-The `WorkflowPurgeTask` and `com.day.cq.audit.impl.AuditLogMaintenanceTask` tasks require separate OSGi configurations and will not work without them. If they fail during pre-upgrade task execution, missing configurations is the most likely reason. Therefore, make sure to add OSGi configurations for these tasks or remove them altogether from the pre-upgrade optimization tasks list if you do not wish to run them. Documentation for configuring workflow purging tasks can be found at [Administering Workflow Instances](/help/sites-administering/workflows-administering.md) and audit log maintenance task configuration can be found at [Audit Log Maintenance in AEM 6](/help/sites-administering/operations-audit-log.md).
+The `WorkflowPurgeTask` and `com.day.cq.audit.impl.AuditLogMaintenanceTask` tasks require separate OSGi configurations and cannot work without them. If they fail during pre-upgrade task execution, missing configurations is the most likely reason. Therefore, make sure to add OSGi configurations for these tasks or remove them altogether from the pre-upgrade optimization tasks list if you do not wish to run them. Documentation for configuring workflow purging tasks can be found at [Administering Workflow Instances](/help/sites-administering/workflows-administering.md) and audit log maintenance task configuration can be found at [Audit Log Maintenance in AEM 6](/help/sites-administering/operations-audit-log.md).
 
 For workflow and audit log purging on CQ 5.6 as well as audit log purging on AEM 6.0, see [Purge workflow and audit nodes](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## Install, Configure, and Run The Pre-Upgrade Tasks {#install-configure-run-pre-upgrade-tasks}
 
-Because of the level of customization AEM allows, environments usually do not adhere to a uniform way of performing upgrades. This makes creating a standardized procedure for upgrades a difficult process.
+Because of the level of customization AEM allows, environments usually do not adhere to a uniform way of performing upgrades. As such, it makes creating a standardized procedure for upgrades a difficult process.
 
-In previous versions, it was also difficult for AEM upgrades that were stopped or that have failed to be safely resumed. This led to situations where restarting the full upgrade procedure was necessary or where defective upgrades were carried out without triggering any warnings.
+In previous versions, it was also difficult for AEM upgrades that were stopped or that have failed to safely resume. This issue led to situations in which restarting the full upgrade procedure was necessary or where defective upgrades were carried out without triggering any warnings.
 
-In order to address these issues, Adobe has added several enhancements to the upgrade process, making it more resilient and user friendly. Pre-upgrade maintenance tasks that before had to be performed manually are being optimized and automated. Also, post-upgrade reports have been added so that the process can be fully scrutinized in the hope that any issues are found more easily.
+To address these issues, Adobe has added several enhancements to the upgrade process, making it more resilient and user-friendly. Pre-upgrade maintenance tasks that before had to be performed manually are being optimized and automated. Also, post-upgrade reports have been added so that the process can be fully scrutinized in the hope that any issues are found more easily.
 
-Pre-upgrade maintenance tasks are currently spread over various interfaces which are partially or completely performed manually. The pre-upgrade maintenance optimization introduced in AEM 6.3 enables a unified way to trigger these tasks and be able to inspect their result on demand.
+Pre-upgrade maintenance tasks are currently spread over various interfaces which are partially or entirely performed manually. The pre-upgrade maintenance optimization introduced in AEM 6.3 enables a unified way to trigger these tasks and be able to inspect their result on demand.
 
 All tasks included in the pre-upgrade optimization step are compatible with all versions from AEM 6.0 onwards.
 
 ### How to Set It Up {#how-to-set-it-up}
 
-In AEM 6.3 and later, the pre-upgrade maintenance optimization tasks come included in the quickstart jar. If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
+In AEM 6.3 and later, the pre-upgrade maintenance optimization tasks come included in the quickstart jar. 
+
+<!-- URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
+
+If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
 
 You can find the packages at these locations:
 
@@ -79,7 +83,7 @@ You can find the packages at these locations:
 
 * [For upgrading from AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
 
-* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62) -->
 
 ### How to Use It {#how-to-use-it}
 
@@ -87,13 +91,13 @@ The `PreUpgradeTasksMBean` OSGI component comes preconfigured with a list of pre
 
 1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
 
-1. Search for "**preupgradetasks**", then click on the first matching component. The full name of the component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
+1. Search for "**preupgradetasks**", then click the first matching component. The full name of the component is `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
-1. Modify the list of maintenance tasks that need to run as shown below:
+1. Modify the list of maintenance tasks that must be run as shown below:
 
    ![1487758925984](assets/1487758925984.png)
 
-The task list differs depending on the run mode that is being used to start the instance. Below is a description of the run mode each maintenance task is designed for.
+The task list differs depending on the run mode that is being used to start the instance. Below is a description of the run mode that each maintenance task is designed for.
 
 <table>
  <tbody>
@@ -110,7 +114,7 @@ The task list differs depending on the run mode that is being used to start the 
   <tr>
    <td><code>DataStoreGarbageCollectionTask</code></td>
    <td>crx2</td>
-   <td>Will run mark and sweep. For shared datastores, remove this step and run<br /> manually or properly prepare instances before executing.</td>
+   <td>Runs mark and sweep. For shared datastores, remove this step and run<br /> manually or properly prepare instances before executing.</td>
   </tr>
   <tr>
    <td><code>ConsistencyCheckTask</code></td>
@@ -142,7 +146,7 @@ The task list differs depending on the run mode that is being used to start the 
 
 >[!CAUTION]
 >
->`DataStoreGarbageCollectionTask` is calling a Datastore Garbage Collection operation with the mark and sweep phase if used. For deployments that use a shared datastore make sure to either reconfigure it or properly or prepare the instance to avoid deletion of items referenced by another instance. This might require running the mark phase manually on all instances before triggering this pre-upgrade task.
+>The `DataStoreGarbageCollectionTask` calls a Datastore Garbage Collection operation with the mark and sweep phase if used. For deployments that use a shared datastore, make sure to either reconfigure it properly or prepare the instance to avoid deletion of items referenced by another instance. This process might require running the mark phase manually on all instances before triggering this pre-upgrade task.
 
 ### Default Configuration of the Pre-Upgrade Health Checks {#default-configuration-of-the-pre-upgrade-health-checks}
 
@@ -150,7 +154,7 @@ The `PreUpgradeTasksMBeanImpl` OSGI component comes pre-configured with a list o
 
 * **system** - the tag used by the granite maintenance health checks
 
-* **pre-upgrade** - this is a custom tag that could be added to all the health checks that you can set to run before an upgrade
+* **pre-upgrade** - a custom tag that could be added to all the health checks that you can set to run before an upgrade
 
 The list is editable. You can use the plus **(+)** and minus **(-)** buttons besides the tags to add more custom tags, or remove the default ones.
 
@@ -197,12 +201,12 @@ Below is a list of all the available methods that the `PreUpgradeTasksMBeanImpl`
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>Checks if the <code>runAllPreUpgradeTasksmaintenance</code> task is currently running.</td>
+   <td>Checks if the <code>runAllPreUpgradeTasksmaintenance</code> task is running.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>Checks if any pre-upgrade maintenance task is currently running and<br /> returns an array containing the names of currently running tasks.</td>
+   <td>Checks if any pre-upgrade maintenance task is running and<br /> returns an array containing the names of currently running tasks.</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
@@ -217,12 +221,12 @@ Below is a list of all the available methods that the `PreUpgradeTasksMBeanImpl`
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>ACTION</td>
-   <td><p>Runs all the pre-upgrade health checks and saves their status in a file named <code>preUpgradeHCStatus.properties</code> that is located in the sling home path. If the <code>shutDownOnSuccess</code> parameter is set to <code>true</code>, the AEM instance will be shut down, but only if all the pre-upgrade health checks have an OK status.</p> <p>The properties file will be used as a precondition for any future upgrade<br /> and the upgrade process will be stopped if the pre-upgrade health check<br /> execution failed. If you want to ignore the result of the pre-upgrade<br /> health checks and launch the upgrade anyway, you can delete the file.</p> </td>
+   <td><p>Runs all the pre-upgrade health checks and saves their status in a file named <code>preUpgradeHCStatus.properties</code> that is in the sling home path. If the <code>shutDownOnSuccess</code> parameter is set to <code>true</code>, the AEM instance is shut down, but only if all the pre-upgrade health checks have an OK status.</p> <p>The properties file is used as a precondition for any future upgrade<br /> and the upgrade process is stopped if the pre-upgrade health check<br /> execution failed. If you want to ignore the result of the pre-upgrade<br /> health checks and launch the upgrade anyway, you can delete the file.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
    <td>ACTION</td>
-   <td>Lists all the imported packages that will no longer be satisfied when<br /> upgrading to the specified AEM version. The target AEM version must be<br /> given as parameter.</td>
+   <td>Lists all the imported packages that are no longer satisfied when<br /> upgrading to the specified AEM version. The target AEM version must be<br /> given as parameter.</td>
   </tr>
  </tbody>
 </table>
@@ -248,7 +252,7 @@ In AEM versions that used CRX2 configuration was placed in the `repository.xml` 
 
 Therefore, any existing configurations will have to be disabled and re-created for Apache Oak after the upgrade.
 
-To disable the custom modules defined in the JAAS configuration of `repository.xml`, you need to modify the configuration to make use of default `LoginModule`, as in this example:
+To disable the custom modules defined in the JAAS configuration of `repository.xml`, you must edit the configuration to use the default `LoginModule`, as in the following example:
 
 ```xml
 <Security >
@@ -277,13 +281,13 @@ To disable the custom modules defined in the JAAS configuration of `repository.x
 
 >[!NOTE]
 >
->Only remove packages from the crx-quickstart/install directory AFTER shutting down the AEM instance. This will be one of the last steps before starting the in-place upgrade procedure.
+>Only remove packages from the crx-quickstart/install directory AFTER shutting down the AEM instance. This step is one of the last before starting the in-place upgrade procedure.
 
-Remove any service packs, feature packs or hotfixes that have been deployed through the `crx-quickstart/install` directory on the local file system. This will prevent the inadvertent installation of old hotfixes and service packs on top of the new AEM version after the update has completed.
+Remove any service packs, feature packs, or hotfixes that were deployed through the `crx-quickstart/install` directory on the local file system. Doing so prevents the inadvertent installation of old hotfixes and service packs on top of the new AEM version after the update has completed.
 
 ## Stop Any Cold Standby Instances {#stop-tarmk-coldstandby-instance}
 
-If using TarMK cold standby, stop any cold standby instances. These will guarantee an efficient way to come back online in case of issues in the upgrade. After the upgrade has completed successfully, the cold standby instances will need to be rebuilt from the upgraded primary instances.
+If using TarMK cold standby, stop any cold standby instances. Doing so guarantees an efficient way to come back online if there are issues in the upgrade. After the upgrade has completed successfully, the cold standby instances must be rebuilt from the upgraded primary instances.
 
 ## Disable Custom Scheduled Jobs {#disable-custom-scheduled-jobs}
 
@@ -295,7 +299,7 @@ Disable any OSGi scheduled jobs that are included in your application code.
 >
 >This step is only necessary for TarMK installations
 
-If using TarMK, you should execute Offline Revision Cleanup before upgrading. This will make the repository migration step and subsequent upgrade tasks execute much faster and will help to ensure that Online Revision Cleanup can execute successfully after the upgrade has completed. For information on running Offline Revision Cleanup, see [Performing Offline Revision Cleanup](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+If using TarMK, you should run Offline Revision Cleanup before upgrading. Doing so makes the repository migration step and subsequent upgrade tasks execute much faster and helps to ensure that Online Revision Cleanup can execute successfully after the upgrade has completed. For information on running Offline Revision Cleanup, see [Performing Offline Revision Cleanup](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
 ## Execute Datastore Garbage Collection {#execute-datastore-garbage-collection}
 
@@ -307,14 +311,14 @@ After running revision cleanup on CRX3 instances, you should run Datastore Garba
 
 ## Upgrade the Database Schema If Needed {#upgrade-the-database-schema-if-needed}
 
-Usually, the underlying Apache Oak stack AEM uses for persistence will take care of upgrading the database schema if needed.
+Usually, the underlying Apache Oak stack that AEM uses for persistence takes care of upgrading the database schema, if needed.
 
-However, cases might arise when the schema cannot be upgraded automatically. These are mostly high security environments where the database is running under a user with very limited priviledges. If this happens, AEM will continue to use the old schema.
+However, cases might arise when the schema cannot be upgraded automatically. Such cases are mostly high security environments where the database is running under a user with limited privileges. If such a situation occurs, AEM continues to use the old schema.
 
-In order to prevent this from happening, you need to upgrade the schema by following the below procedure:
+To prevent such a scenario from happening, upgrade the schema by doing the following:
 
-1. Shut down the AEM instance that needs to be upgraded.
-1. Upgrade the database schema. Please consult the documentation for your database type in order to see what is the tooling you need to use in order to achieve this.
+1. Shut down the AEM instance that must be upgraded.
+1. Upgrade the database schema. Consult the documentation for your database type to see what tooling is necessary to achieve the result.
 
    For more information on how Oak handles schema upgrades, see [this page on the Apache website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
@@ -330,20 +334,20 @@ In order to prevent this from happening, you need to upgrade the schema by follo
 >* You encounter any of the errors mentioned below during the upgrade.
 >
 
-There are exceptional cases when service users might end up in an older AEM versions being improperly tagged as regular users.
+There are exceptional cases when service users might end up in an older AEM version being improperly tagged as regular users.
 
-If this happens, the upgrade will fail with a message like this one:
+If such a situation happens, the upgrade fails with a message like the following:
 
 ```
 ERROR [Apache Sling Repository Startup Thread] com.adobe.granite.repository.impl.SlingRepositoryManager Exception in a SlingRepositoryInitializer, SlingRepository service registration aborted
 java.lang.RuntimeException: Unable to create service user [communities-utility-reader]:java.lang.RuntimeException: Existing user communities-utility-reader is not a service user.
 ```
 
-In order to work around this issue, make sure you do the following:
+To work around this issue, make sure you do the following:
 
 1. Detach the instance from production traffic
-1. Create a backup of the user(s) causing the problem. You can do this via Package Manager. For more information, see [How to Work with Packages.](/help/sites-administering/package-manager.md)
-1. Delete the user(s) causing the problem. Below is a list of users that might fall under this category:
+1. Create a backup of one or more users causing the problem. You can do this task by way of Package Manager. For more information, see [How to Work with Packages.](/help/sites-administering/package-manager.md)
+1. Delete one or more users causing the problem. Below is a list of users that might fall under this category:
 
     1. `dynamic-media-replication`
     1. `communities-ugc-writer`
@@ -354,4 +358,4 @@ In order to work around this issue, make sure you do the following:
 
 ## Rotate Log Files {#rotate-log-files}
 
-We recommend archiving your current log files before beginning your upgrade. This will make it easier to monitor and scan your log files during and after the upgrade to identify and resolve any issues that may occur.
+Adobe recommends archiving your current log files before beginning your upgrade. Doing so makes it easier to monitor and scan your log files during and after the upgrade to identify and resolve any issues that may occur.

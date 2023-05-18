@@ -5,6 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
+hide: yes
 ---
 # Organize your digital assets {#organize-digital-assets}
 
@@ -12,7 +13,6 @@ exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/organize-assets.html?lang=en)           |
 
 All digital assets, metadata and content of Microsoft Office and PDF documents are extracted and made searchable. Search allows sophisticated filtering on assets and fully respects the proper permissions. Metadata is covered in detail in metadata in Digital Asset Management.
 

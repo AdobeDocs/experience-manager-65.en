@@ -1,8 +1,7 @@
 ---
-title: Basic Handling
-seo-title: Basic Handling
+title: Basic handling when using the AEM author environment
 description: Get comfortable with navigating AEM and its basic usage
-seo-description: Get comfortable with navigating AEM and its basic usage
+
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

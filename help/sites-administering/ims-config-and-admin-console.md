@@ -26,7 +26,7 @@ feature: Security
 
 AEM 6.4.3.0 introduces [!DNL Admin Console] support for AEM instances and Adobe IMS(Identity Management System) based authentication for **AEM Managed Services** customers.
 
-AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services customers to manage all Experience Cloud users in one console. Users and Groups can be assigned to product profiles associated with AEM instances, allowing them to log in to a specific instance.
+AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services customers to manage all Experience Cloud users in one console. Users can be assigned to product profiles associated with AEM instances, allowing them to log in to a specific instance.
 
 ## Key Highlights {#key-highlights}
 
@@ -34,7 +34,7 @@ AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services custo
 * The [!DNL Admin Console] will represent AEM Managed Services customers as IMS Organizations and their Instances as Product Contexts. Customer System and Product Admins will be able to manage access to instances
 * AEM Managed Services will sync customer topologies with the [!DNL Admin Console]. There will be one instance of AEM Managed Services Product Context per Instance in the [!DNL Admin Console].
 * Product Profiles in [!DNL Admin Console] will determine which instances a user can access
-* Federated authentication using customers’ own SAML 2 compliant Identity Providers is supported
+* Federated authentication using customers' own SAML 2 compliant Identity Providers is supported
 * Only Enterprise or Federated IDs(for customer Single Sign-On) will be supported, not personal Adobe IDs.
 * [!DNL User Management] (in Adobe [!DNL Admin Console]) will continue to be owned by the customer admins.
 
@@ -100,9 +100,9 @@ For easy handling of user creation, a CSV file can be uploaded for adding users 
 
 The User Sync Tool (UST in short) enables enterprise customers to create or manage Adobe users utilizing Active Directory or other tested OpenLDAP directory services. The target users are IT Identity Administrators (Enterprise Directory and System Admins) who will be able to install and configure the tool. The open source tool is customizable so that customers can have a developer modify it to suit their own particular requirements.
 
-When User Sync runs, it fetches a list of users from the organization’s Active Directory (or any other compatible data source) and compares it with the list of users within the [!DNL Admin Console]. It then calls the Adobe [!DNL User Management] API so that the [!DNL Admin Console] is synchronized with the organization’s directory. The change flow is entirely one-way; any edits made in the [!DNL Admin Console] do not get pushed out to the directory.
+When User Sync runs, it fetches a list of users from the organization's Active Directory (or any other compatible data source) and compares it with the list of users within the [!DNL Admin Console]. It then calls the Adobe [!DNL User Management] API so that the [!DNL Admin Console] is synchronized with the organization's directory. The change flow is entirely one-way; any edits made in the [!DNL Admin Console] do not get pushed out to the directory.
 
-The tool allows the system admin to map user groups in the customer’s directory with product configuration and user groups in the [!DNL Admin Console], the new UST version also allows dynamic creation of user groups in the [!DNL Admin Console].
+The tool allows the system admin to map user groups in the customer's directory with product configuration and user groups in the [!DNL Admin Console], the new UST version also allows dynamic creation of user groups in the [!DNL Admin Console].
 
 To set up User Sync, the organization needs to create a set of credentials in the same way they would use the [[!DNL User Management] API](https://www.adobe.io/apis/cloudplatform/usermanagement/docs/setup.html).
 
@@ -127,10 +127,10 @@ More information about the new group features can be found here:
 >
 >The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->The Adobe I/O Console Documentation can be found [here](https://www.adobe.io/apis/cloudplatform/console.html).
+>The Adobe I/O Console Documentation can be found [here](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
->The [!DNL User Management] API that is used by the User Sync Tool is covered at this [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>The [!DNL User Management] API that is used by the User Sync Tool is covered at this [location](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >
@@ -152,11 +152,11 @@ The instance details can be checked to identify the instance:
 
 ![screen_shot_2018-09-17at105601pm](assets/screen_shot_2018-09-17at105601pm.png)
 
-Under each Product Context instance, there will be an associated Product Profile. This product profile is used for assigning access to users and groups.
+Under each Product Context instance, there will be an associated Product Profile. This product profile is used for assigning access to users.
 
 ![image2018-9-18_7-48-50](assets/image2018-9-18_7-48-50.png)
 
-Any users and groups added under this product profile will be able to login to that instance as shown in the example below:
+Any users added under this product profile will be able to login to that instance as shown in the example below:
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 

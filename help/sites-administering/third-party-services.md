@@ -1,7 +1,7 @@
 ---
 title: Integrating with Third-Party Services
 seo-title: Integrating with Third-Party Services
-description: Learn how to integrate AEM with third party services.
+description: Learn how to integrate AEM with third-party services.
 seo-description: Learn how to integrate AEM with third party services.
 uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
@@ -20,12 +20,12 @@ With AEM, you can integrate with the following non-Adobe products out of the box
 * ExactTarget - email marketing
 * Facebook Connect - social networking
 * Generic Analytics Snippet - analytics
-* Microsoft Translator or other machine translation providers
+* Microsoft&reg; Translator or other machine translation providers
 * Pushwoosh Connection - Apps - push notifications
 * Salesforce - sales and CRM software
-* Silverpop Engage - marketing automation, email, mobile, and social
 * Twitter - social networking
 * YouTube - video sharing
+<!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
 In addition, you can integrate AEM with the [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
@@ -35,6 +35,7 @@ Salesforce.com is the enterprise cloud computing company that is leading the shi
 
 For information about integrating your AEM site and Salesforce, see [Integrating with Salesforce](/help/sites-administering/salesforce.md).
 
+<!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
 
 >[!NOTE]
@@ -43,11 +44,11 @@ For information about integrating your AEM site and Salesforce, see [Integrating
 
 Silverpop Engage provides marketing automation, email, mobile, and social.
 
-For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md).
+For information about integrating your AEM site and ExactTarget, see [Integrating with Silverpop Engage](/help/sites-administering/silverpop.md). -->
 
 ## Integrating with ExactTarget {#integrating-with-exacttarget}
 
-ExactTarget's email marketing solutions enable organizations of all sizes to design and deliver highly-targeted, mission-critical, and fully-integrated email campaigns.
+ExactTarget's email marketing solutions enable organizations of all sizes to design and deliver highly targeted, mission-critical, and fully integrated email campaigns.
 
 For information about integrating your AEM site and ExactTarget, see [Configuring ExactTarget](/help/sites-administering/exacttarget.md).
 

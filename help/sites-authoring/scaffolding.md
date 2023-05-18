@@ -1,8 +1,6 @@
 ---
-title: Scaffolding
-seo-title: Scaffolding
-description: With scaffolding you can create a scaffold with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure
-seo-description: With scaffolding you can create a scaffold with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure
+title: Scaffolding in Adobe Experience Manager authoring
+description: With scaffolding you can create a scaffold with fields that reflect the structure you want for your pages and then use this form to create pages based on this structure.
 uuid: f2542fe2-598f-4631-ae64-a6ee14cd7748
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

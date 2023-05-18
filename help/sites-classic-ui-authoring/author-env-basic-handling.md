@@ -1,8 +1,6 @@
 ---
-title: Basic Handling
-seo-title: Basic Handling
+title: Basic handling
 description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
-seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

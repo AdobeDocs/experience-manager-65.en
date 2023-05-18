@@ -1,10 +1,11 @@
 ---
-title: Multilingual assets and asset translation
-description: Learn how to automate workflows to translate assets, including binaries, metadata, and tags into multiple languages.
+title: Multilingual asset
+description: Learn how to automate workflows for translating assets, including binaries, metadata, and tags into multiple languages.
 contentOwner: AG
 feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
+hide: yes
 ---
 # Multilingual assets {#multilingual-assets}
 
@@ -12,7 +13,6 @@ exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/multilingual-assets.html?lang=en)           |
 
 [!DNL Adobe Experience Manager Assets] lets you automate translation workflows on assets (including binaries, metadata, and tags) to generate assets in other languages for use in multilingual projects.
 

@@ -1,8 +1,8 @@
 ---
 title: Performance Optimization
-seo-title: Performance Optimization
+
 description: Learn how to configure certain aspects of AEM to optimize performance.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
+
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -95,12 +95,12 @@ This focus means that the developer implementing the optimization should have a 
 
 ## Basic Performance Guidelines {#basic-performance-guidelines}
 
-Generally speaking, keep your uncached html requests to less than 100ms. More specifically, the following may serve as a guideline:
+Generally speaking, keep your uncached html requests to less than 100 milliseconds. More specifically, the following may serve as a guideline:
 
-* 70% of the requests for pages should be responded to in less than 100ms.
-* 25% of the requests for pages should get a response within 100ms - 300ms.
-* 4% of the requests for pages should get a response within 300ms - 500ms.
-* 1% of the requests for pages should get a response within 500ms - 1000ms.
+* 70% of the requests for pages should be responded to in less than 100 milliseconds.
+* 25% of the requests for pages should get a response within 100 milliseconds - 300 milliseconds.
+* 4% of the requests for pages should get a response within 300 milliseconds - 500 milliseconds.
+* 1% of the requests for pages should get a response within 500 milliseconds - 1000 milliseconds.
 * No pages should respond slower than 1 second.
 
 The above numbers assume the following conditions:
@@ -452,14 +452,12 @@ Any optimizations made must be tested to ensure they have:
 * Not affected the functionality
 * Been verified with the load tests before being released
 
-A selection of tools is available to help you with load-generation, performance monitoring and/or results analysis:
+A selection of tools is available to help you with load-generation, performance monitoring, and results analysis. Some of these tools include the following:
 
 * [JMeter](https://jmeter.apache.org/)
 * [Load Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Java&trade; Interactive Profile](https://jiprof.sourceforge.net/)
-* many more...
 
 After optimization, test again to confirm the impact.
 
@@ -686,7 +684,7 @@ Load consists of pages created, pages deleted, traversals, and queries with most
 
 Impact of load on backup performance can be estimated by the difference between performance with and without this application load. Impact of the backup on application throughput is found by comparing the scenario throughput in transactions per hour with and without a concurrent backup ongoing, and with backups operating with different "backup delay" settings.
 
-* **Delay Setting** - For several of the scenarios, the backup delay setting was also varied, using values of 10 ms (default), 1 ms, and 0 ms, to explore how this setting affected the performance of backups.
+* **Delay Setting** - For several of the scenarios, the backup delay setting was also varied, using values of 10 milliseconds (default), 1 milliseconds, and 0 milliseconds, to explore how this setting affected the performance of backups.
 * **Backup Type** - All backups were external backups of the repository made to a backup directory without creating a zip, except in one case for comparison where the tar command was used directly. Since incremental backups cannot be created to a zip file, or when the prior full backup is a zip file, the backup directory method is the most often used in production situations.
 
 ### Summary of Results {#summary-of-results}
@@ -715,7 +713,7 @@ The backup delay parameter is provided to limit the extent to which backups may 
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-For comparison, the throughput obtained using a file system backup ('tar') to back up the same repository files. The performance of the tar is comparable, but slightly higher than the backup with delay set to zero. Setting even a small delay greatly reduces the backup throughput and the default delay of 10ms results in vastly reduced throughput. In situations where backups may be scheduled when overall application usage is low, or the application can be idle, reduce the delay below the default value to permit the backup to proceed more quickly.
+For comparison, the throughput obtained using a file system backup ('tar') to back up the same repository files. The performance of the tar is comparable, but slightly higher than the backup with delay set to zero. Setting even a small delay greatly reduces the backup throughput and the default delay of 10-milliseconds results in vastly reduced throughput. In situations where backups may be scheduled when overall application usage is low, or the application can be idle, reduce the delay below the default value to permit the backup to proceed more quickly.
 
 The actual impact of application throughput of an ongoing backup does depend on the application and infrastructure details. The choice of delay value should be made by empirical analysis of the application, but should be chosen as small as possible, so that backups can complete as quickly as possible. Because there is only a weak correlation between the choice of delay value and the impact on application throughput, the choice of delay should favor shorter overall backup times to minimize the overall impact of backups. A backup that takes eight hours to complete, but affects throughput by -20% is likely to have a greater overall impact than one which takes two hours to complete but affects throughput by -30%.
 

@@ -5,6 +5,7 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
+hide: yes
 ---
 # Search facets {#search-facets}
 
@@ -12,7 +13,6 @@ exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en)           |
 
 An enterprise-wide deployment of [!DNL Adobe Experience Manager Assets] has the capacity to store many assets. Sometimes, finding the right asset can be arduous and time-consuming if you only use the generic search capabilities of [!DNL Experience Manager].
 

@@ -1,8 +1,6 @@
 ---
 title: Launches
-seo-title: Launches
 description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
-seo-description: Create a launch to enable the updating of a new version of existing web pages for future activation. When you create a Launch, you specify a title and the source page.
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES

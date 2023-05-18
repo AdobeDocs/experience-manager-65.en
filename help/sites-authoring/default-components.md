@@ -1,8 +1,6 @@
 ---
-title: Components
-seo-title: Components
-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
-seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
+title: Default components
+description: Adobe Experience Manager comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

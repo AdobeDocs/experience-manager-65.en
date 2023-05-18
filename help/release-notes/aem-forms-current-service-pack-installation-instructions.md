@@ -65,10 +65,10 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
           * (Windows 32-bit) `Windows\Disk1\InstData\VM`
           * (Windows 64-bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-      * **Linux®** 
+      * **Linux&reg;** 
           Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_install.bin`.
 
-          * (Linux®) `Linux/Disk1/InstData/NoVM` 
+          * (Linux&reg;) `Linux/Disk1/InstData/NoVM` 
 
       This launches an install wizard that guides you through the installation.
 
@@ -91,11 +91,11 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
   
    1. Depending on your application server, choose one of the following documents and follow the instructions in the *Configuring and Deploying AEM forms* section.
 
-      * [Installing and Deploying AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-      * [Installing and Deploying AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+      * [Installing and Deploying AEM forms for JBoss&reg;](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+      * [Installing and Deploying AEM forms for WebSphere&reg;](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
       * [Installing and Deploying AEM Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-      * [Installing and Deploying AEM forms for JBoss® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
-      * [Installing and Deploying AEM forms for WebSphere® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
+      * [Installing and Deploying AEM forms for JBoss&reg; Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
+      * [Installing and Deploying AEM forms for WebSphere&reg; Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
       * [Installing and Deploying AEM Forms for WebLogic Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
  
@@ -110,7 +110,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
    >[!NOTE]
    >
    > * In case, you are upgrading from **AEM Service Pack 6.5.15.0**, it is not necessary to install the **servlet fragment**. If you are upgrading from a version earlier than **AEM Service Pack 6.5.15.0**, it is mandatory to install the **servlet fragment**.
-   > * It is mandatory to install the **servlet fragment** for all application servers except those running on **JBoss® EAP 7.4.0**.
+   > * It is mandatory to install the **servlet fragment** for all application servers except those running on **JBoss&reg; EAP 7.4.0**.
 
 
  To download and install the servlet fragment: 
@@ -139,14 +139,14 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
    
    There are two different methods that you can use to automatically install [!DNL ExperienceManager] service pack.<!--       UPDATE FOR EACH NEW RELEASE -->
    
-   * Place the package into `../crx-quickstart/install` folder when the server is available online. 
+* Place the package into `../crx-quickstart/install` folder when the server is available online. 
    The package is      automatically installed.
    
-   * Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use  `cmd=install&recursive=true` so that the nested packages are installed.
+* Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use  `cmd=install&recursive=true` so that the nested packages are installed.
    
-      >[!NOTE]
-      >
-      >Experience Manager service pack does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+   >[!NOTE]
+   >
+   >Experience Manager service pack does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
    
    **Validate the installation**
    
@@ -201,12 +201,12 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
    There are two different methods that you can use to automatically install [!DNL Experience Manager] service pack.<!--  UPDATE FOR EACH NEW RELEASE -->
 
-   * Place the package into `../crx-quickstart/install` folder when the server is available online. The package is      automatically installed.
-   * Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use `cmd=install&recursive=true` so that the nested packages are installed.
+* Place the package into `../crx-quickstart/install` folder when the server is available online. The package is      automatically installed.
+* Use the [HTTP API from Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html). Use `cmd=install&recursive=true` so that the nested packages are installed.
 
-      >[!NOTE]
-      >
-      >Experience Manager service pack does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+   >[!NOTE]
+   >
+   >Experience Manager service pack does not support Bootstrap installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
    **Validate the installation**
 

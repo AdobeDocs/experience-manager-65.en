@@ -13,7 +13,7 @@ This document provides instructions for installing and configuring AEM Forms Wor
 
 ## Who should read this document? {#who-should-read-this-doc}
 
-This document is intended for administrators or developers who are responsible for installing, configuring, administering, or deploying Workbench. Also included is information needed to configure your system to support your upgraded AEM Forms processes. The information provided is based on the assumption that anyone reading this document is familiar with Microsoft® Windows® operating system.
+This document is intended for administrators or developers who are responsible for installing, configuring, administering, or deploying Workbench. Also included is information to configure your system to support your upgraded AEM Forms processes. The information provided is based on the assumption that anyone reading this document is familiar with Microsoft&reg; Windows&reg; operating system.
 
 ## Additional information {#additional-information}
 
@@ -30,11 +30,11 @@ The resources in this table can help you learn more about and get started using 
   </tr>
   <tr>
    <td><p>General information about AEM Forms and how it integrates with other Adobe products</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms Overview</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms Overview</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>All the documentation available for AEM Forms</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms documentation</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms documentation</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Patch updates, technical notes, and additional information on this product version</p> </td>
@@ -45,7 +45,7 @@ The resources in this table can help you learn more about and get started using 
 
 >[!NOTE]
 >
->The Flex Worksapce is deprecated for AEM Forms. It is available for the AEM Forms release.
+>The Flex Workspace is deprecated for AEM Forms. It is available for the AEM Forms release.
 
 ## Before You Install {#before-you-install}
 
@@ -59,7 +59,7 @@ The following illustration depicts the Workbench installation including:
 
 >[!NOTE]
 >
->The AEM Forms server requires a separate installation program. For more information refer to the AEM Forms on JEE installation documentation.
+>The AEM Forms Server requires a separate installation program. For more information, see the AEM Forms on JEE installation documentation.
 
 ![default-render-form](assets/installing-workbench.png)
 
@@ -80,25 +80,25 @@ Disk space for installation:
 >
 >If all these locations reside on a single drive, there must be 1.5 GB of space available during installation. The files copied to the temporary directories are deleted when installation is complete.
 
-* Hardware requirement: Intel® Pentium® 4 or AMD equivalent, 1 GHz processor.
-* Java™ Runtime Environment (JRE) 7.0 update 51 or later updates to 7.0.
+* Hardware requirement: Intel&reg; Pentium&reg; 4 or AMD&reg; equivalent, 1 GHz processor.
+* Java&trade; Runtime Environment (JRE) 7.0 update 51 or later updates to 7.0.
 * Minimum1024 X 768 pixels or greater monitor resolution with 16-bit color or higher.
-* TCP/IPv4 or TCP/IPv6 network connection to the AEM Forms server.
+* TCP/IPv4 or TCP/IPv6 network connection to the AEM Forms Server.
 * Install Visual C++ Redistributable runtime Packages 2012 32-bit.
 * Install Visual C++ Redistributable runtime Packages 2013 32-bit.
 
 >[!NOTE]
 >
->You must have Administrative privileges to install Workbench. If you are installing using a non-administrator account, the installer will prompt you for the credentials for an appropriate account.
+>You must have Administrative privileges to install Workbench. If you are installing using a non-administrator account, the installer prompts you for the credentials for an appropriate account.
 
 ### Supported Platforms {#supported-platforms}
 
-See the complete list of supported platforms for Workbench at [AEM Forms Supported Platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_65).
+See the complete list of supported platforms for Workbench at [AEM Forms Supported Platforms](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Designer installation considerations {#designer-installation-considerations}
 
-By default, the Workbench installation includes a corresponding English-only version of Designer. If the Workbench installation application detects an existing version of Designer on your computer, the installation may terminate, and you will be required to remove the current version of Designer before you can continue.
-The table below has a complete list of possible Designer installation scenarios that you may encounter, as well as any actions you must take, when installing Workbench.
+By default, the Workbench installation includes a corresponding English-only version of Designer. If the Workbench installation application detects an existing version of Designer on your computer, the installation may terminate, and you are required to remove the current version of Designer before you can continue.
+The table below has a complete list of possible Designer installation scenarios that you may encounter, and any actions you must take, when installing Workbench.
 
 <table>
  <tbody>
@@ -137,8 +137,8 @@ Before you install Workbench, you must ensure that your environment includes the
 **To install and run Workbench:**
 
 1. Do one of these tasks:
-   * Navigate to the \workbench directory on the install media and double click the run_windows_installer.bat file.
-   * Download and decompress the Workbench to your file system. After it is downloaded, navigate to the \workbench directory and double click the run_windows_installer.bat file.
+   * Navigate to the \workbench directory on the install media and double-click the run_windows_installer.bat file.
+   * Download and decompress the Workbench to your file system. After it is downloaded, navigate to the \workbench directory and double-click the run_windows_installer.bat file.
 
    >[!IMPORTANT]
    >
@@ -146,7 +146,7 @@ Before you install Workbench, you must ensure that your environment includes the
 
    >[!NOTE]
    >
-   >If you encounter an error "Could not create the Java Virtual Machine", then create an environment variable named _JAVA_OPTIONS with value -Xmx512M and run the installer.
+   >If you encounter an error "Could not create the Java&trade; Virtual Machine", then create an environment variable named _JAVA_OPTIONS with value -Xmx512M and run the installer.
 
 1. On the Introduction screen, click Next.
 1. Read the Product License Agreement, select I accept the terms of the License Agreement, and then click Next.
@@ -156,7 +156,7 @@ Before you install Workbench, you must ensure that your environment includes the
    >
    >You can continue to use Designer installed with Acrobat 10 by leaving this option deselected.
 
-1. Accept the default directory as listed or   click Choose and navigate to the directory where you will install Workbench, and then click Next.
+1. Accept the default directory as listed or click Choose and navigate to the directory where you want to install Workbench, and then click Next.
 
    >[!NOTE]
    >
@@ -168,7 +168,7 @@ Before you install Workbench, you must ensure that your environment includes the
 1. The following items are now installed on your computer:
    * **Workbench**: To run Workbench from the Start menu, select All Programs > AEM Forms > Workbench, if you chose to store the shortcut folder there. For  information,   see the <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Using Workbench</a> documentation.
    * **Designer**: You can access Designer from inside Workbench. For information, see Getting Started topic in <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer Help</a>.
-   * **AEM Forms SDK**: For more information on using the SDK, see <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programming with AEM Forms</a>.
+   * **AEM Forms SDK**: For more information on using the SDK, see <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">Programming with AEM Forms</a>.
 
 ## Upgrading processes {#upgrading-processes}
 
@@ -176,11 +176,11 @@ AEM Forms on JEE processes can be upgraded to AEM Forms applications using the U
 
 ### Configuring and logging in to a server {#configuring-and-logging-server}
 
-To use Workbench, you must have an instance of AEM Forms running, typically on a separate computer. You must have a user name and password to log in to AEM Forms, as well as details about the location of the server.
+To use Workbench, you must have an instance of AEM Forms running, typically on a separate computer. You must have a user name and password to log on to AEM Forms, and details about the location of the server.
 
 >[!NOTE]
 >
->If you configured AEM Forms to use the EMC Documentum or IBM FileNet repository provider and you want to log in to a repository other than the repository that is configured as the default in AEM forms administration console, provide the user name as username@Repository.
+>If you configured AEM Forms to use the EMC Documentum&reg; or IBM&reg; FileNet repository provider and you want to log in to a repository other than the repository that is configured as the default in AEM forms administration console, provide the user name as username@Repository.
 
 ### Configuring time-out settings {#configuring-timeout-settings}
 
@@ -188,7 +188,7 @@ By default, Workbench times out after two hours, regardless of activity or inact
 
 ### Configuring Workbench to connect over HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
-To connect Workbench to an AEM Forms server over HTTPS, you must ensure that the certificate authority (CA) that issued the public key will be recognized as being trusted by Workbench. If the certificate is not recognized as coming from a trusted source, you must update the cacert file located in the [Workbench_HOME]/workbench/jre/lib/security directory.
+To connect Workbench to an AEM Forms Server over HTTPS, you must ensure that the certificate authority (CA) that issued the public key will be recognized as being trusted by Workbench. If the certificate is not recognized as coming from a trusted source, you must update the cacert file in the [Workbench_HOME]/workbench/jre/lib/security directory.
 
 >[!NOTE]
 >
@@ -208,11 +208,11 @@ Ensure that you connect to HTTPS by using the name that is specified in the cert
 1. Open a command prompt window, navigate to [Workbench_HOME]/workbench/jre/bin, and then type the following command:
   `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
   Where:
-    * changeit is the default password to the cacerts keystore.
-    * certname is the certificate you selected in step 1.
-    * example is the alias you choose for the certificate. This value can be changed
+    * `changeit` is the default password to the cacerts keystore.
+    * certname is the certificate that you selected in step 1.
+    * example is the alias that you choose for the certificate. This value can be changed.
 
-1. When prompted to trust the certificate, type Yes and hit the Enter key. The keytool proceeds to import the cacerts file in to the [Workbench_HOME]/workbench/jre/lib/security directory.
+1. When prompted to trust the certificate, type Yes and hit the Enter key. The keytool proceeds to import the cacerts file into the [Workbench_HOME]/workbench/jre/lib/security directory.
 
 1. Close and restart Workbench to apply changes.
 
@@ -232,11 +232,11 @@ When forms generator or output searches for, or updates, entries in the cache fo
 * **Render options**: Within the rendered form cache, the cache contents are stored separately for each set of unique render options.
 
 
-The Forms service receives templates by reference to filename or repository location, or by value as a XML object in memory.
-* **Templates passed by reference**: Uses the content root and the form name. If unique templates with different filenames are passed in every request using this method, the disk cache will grow endlessly and will never be reused. To prevent this, unique templates should be passed with same filename to ensure that same cache is updated for all requests.
-* **Templates passed by value**: Uses template bytes passed along with the data using theinDataDoc parameter. If unique templates with different UUID are passed using this method, the disk cache will grow endlessly and will never be reused. To prevent this, the UUID attribute should be stripped from all templates to ensure that no cache is created for the template. Alternatively, passing the same non-null UUID allows the cache objects to be created, but ensures that the same cache is updated with each request.
+The Forms service receives templates by reference to filename or repository location, or by value as an XML object in memory.
+* **Templates passed by reference**: Uses the content root and the form name. If unique templates with different filenames are passed in every request using this method, the disk cache grows endlessly and is never reused. To prevent this, unique templates should be passed with same filename to ensure that same cache is updated for all requests.
+* **Templates passed by value**: Uses template bytes passed along with the data using theinDataDoc parameter. If unique templates with different UUID are passed using this method, the disk cache grows endlessly and will never be reused. To prevent this, the UUID attribute should be stripped from all templates to ensure that no cache is created for the template. Alternatively, passing the same non-null UUID allows the cache objects to be created, but ensures that the same cache is updated with each request.
 
-To prevent the cache from growing endlessly, consider the following factors for rendering dynamically generated templates using the new AEM Forms APIs, those being renderHTMLForm2 and renderPDFForm2.
+To prevent the cache from growing endlessly, consider the following factors for rendering dynamically generated templates using the new AEM Forms APIs, those being renderHTMLForm2, and renderPDFForm2.
 
 When using the new APIs, the template is passed as a document object, which is handled in the Forms service based on whether it is passivated or not.
 
@@ -246,8 +246,8 @@ For passivated documents in which the UUID and content root serve as the cache k
 
 For non-passivated documents in which the filename and content root serve as the cache key, consider the following aspect:
 * For non-passivated input templates, caching depends on the content root and filename from which the document was generated.
-The same cache will be used only for requests with the same content root and template filename.
-The following best practices will ensure that the cache does not grow endlessly when dynamically generated templates are passed to the Forms service:
+The same cache is used only for requests with the same content root and template filename.
+The following best practices ensure that the cache does not grow endlessly when dynamically generated templates are passed to the Forms service:
   * Strip the UUID or pass the same UUID in all dynamically generated templates.
   * Generate the document either from template bytes or from the same filename on disk.
 
@@ -262,7 +262,7 @@ Using the XDC Editor, network printer administrators can create and modify XML F
 Before your network printer administrator uses the XDC Editor, relocate the sample XDC files and see Creating device profiles using XDC Editor.
 
 **To obtain the sample XDC files**:
-1. On the AEM Forms server, locate the XDC folder in [AEM Forms root]\sdk\samples\Output\IVS.
+1. On the AEM Forms Server, locate the XDC folder in [AEM Forms root]\sdk\samples\Output\IVS.
 1. Copy the contents of this folder into a directory that is accessible from the Workbench or Eclipse system.
 
 **To obtain the XDC Editor Help**:
