@@ -5,7 +5,7 @@ description: Steps for OAuth 2.0 Client Credentials Flow for Server-to-Server In
 seo-description: Steps for OAuth 2.0 Client Credentials Flow for Server-to-Server Integration (Salesforce with AEM instance)
 ---
 
-# OAuth 2.0 Client Credentials Flow Authorization {#ouath-2.0-client-credential}
+# Configuring Salesforce with OAuth 2.0 Client Credentials Flow  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 OAuth 2.0 client credentials flow is a standardized and secure method for application authentication and authorization, designed for scenarios where direct communication between applications is required without user involvement. In this flow, the client application (Salesforce) exchanges the client credentials, which are defined in the connected application, to obtain an access token. The required client credentials include the consumer key and consumer secret.
 
@@ -38,7 +38,7 @@ Swagger is an open-source set of rules, specifications, and tools to develop and
 
 +++
 
-## Steps to create an AEM datasource configuration {#steps-to-create-aem-datasource-configuration}
+## Steps to configure Salesforce with Client Credentials flow {#steps-to-create-aem-datasource-configuration}
 
 1. Log in to your Author instance.
 1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**.
