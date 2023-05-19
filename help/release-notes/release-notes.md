@@ -50,7 +50,6 @@ Some of the key features and improvements in this release are the following:
 * While editing Assets using `Desktop Actions`, if you try to check in more than five Assets at once, `Limit Reached` error is displayed and the selected Assets are checked out. (ASSETS-21121)
 * Unable to sort Assets by name in a Collection. (ASSETS-20924)
 * Unable to set dimensions on Assets of an image format type. (ASSETS-20835)
-* When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349)
 * The tooltip text and its background on the Search/Add Email Address field does not display appropriate contrast ratio while sharing a link. (ASSETS-17347)
 * When you expand `Notifications`, the text does not display properly due to paragraph spacing. (ASSETS-17345)
 * When you copy an Asset in Collection, `Public Collection` checkbox does not display appropriately. (ASSETS-17343)
@@ -60,10 +59,13 @@ Some of the key features and improvements in this release are the following:
 * The `Sort By` label is not associated with its respective drop-down. As a result, the screen reader does not recognize the drop-down options. (ASSETS-17239)
 * Unable to move forward or backward using the keyboard Tab or Arrow keys when you are trying to add a user using the `Add user` combo-box. (ASSETS-17233)
 * Screen reader does not correctly convey the information for the Workflows step (ASSETS-17285).
-* When you navigate to `Smart Crop` option, the screen reader does not announce the expand or collapse state of the button. (ASSETS-17335)
 * When you navigate to `Saved Searches` combo-box, both name and role do not have any assigned labels. (ASSETS-17329)
 * When you navigate `Collection` and hover to the text *Members*, the text does not appear as marked up. As a result, the screen reader does not recognize the heading text and read it as plain text. (ASSETS-17245)
 * Unable to access `View Settings` option using scroll down or up key from the keyboard. (ASSETS-17257)
+
+<!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
+* When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
+* When you navigate to `Smart Crop` option, the screen reader does not announce the expand or collapse state of the button. (ASSETS-17335)-->
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
