@@ -54,6 +54,7 @@ mini-toc-levels: 3
 * When you navigate to `Smart Crop` option, the screen reader does not announce expand or collapse state of the button. (ASSETS-17335)
 * When you navigate to `Saved Searches` combo-box, both name and role do not have any assigned labels. (ASSETS-17329)
 * When you navigate `Collection` and hover to the text *Members*, the text does not appear as marked up. As a result, the screen reader does not recognize the heading text and read it as plain text. (ASSETS-17245)
+* Unable to access `View Settings` option using scroll down or up key from the keyboard. (ASSETS-17257)
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
