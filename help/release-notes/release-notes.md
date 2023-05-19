@@ -25,11 +25,21 @@ mini-toc-levels: 3
 
 ## What is included in [!DNL Experience Manager] 6.5.17.0 {#what-is-included-in-aem-6517}
 
-[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that are released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+
+Some of the key features and improvements in this release are the following:
+
+* **Dynamic Media _Snapshot_** - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
+* **Search experience enhancements** - You can now quickly perform the following operations on the assets that display in the search results:
+  * Create a workflow
+  * Create a version
+  * Relate or Unrelate assets
+
+  You do not need to navigate to the asset location and view its properties to perform these operations.
 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
@@ -51,7 +61,7 @@ mini-toc-levels: 3
 * The `Sort By` label is not associated with its respective drop-down. As a result, the screen reader does not recognize the drop-down options. (ASSETS-17239)
 * Unable to move forward or backward using the keyboard Tab or Arrow keys when you are trying to add a user using the `Add user` combo-box. (ASSETS-17233)
 * Screen reader does not correctly convey the information for the Workflows step (ASSETS-17285).
-* When you navigate to `Smart Crop` option, the screen reader does not announce expand or collapse state of the button. (ASSETS-17335)
+* When you navigate to `Smart Crop` option, the screen reader does not announce the expand or collapse state of the button. (ASSETS-17335)
 * When you navigate to `Saved Searches` combo-box, both name and role do not have any assigned labels. (ASSETS-17329)
 * When you navigate `Collection` and hover to the text *Members*, the text does not appear as marked up. As a result, the screen reader does not recognize the heading text and read it as plain text. (ASSETS-17245)
 * Unable to access `View Settings` option using scroll down or up key from the keyboard. (ASSETS-17257)
