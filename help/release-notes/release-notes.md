@@ -41,7 +41,6 @@ Some of the key features and improvements in this release are the following:
 
   You do not need to navigate to the asset location and view its properties to perform these operations.
 
-
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ## [!DNL Assets]{#assets-6517}

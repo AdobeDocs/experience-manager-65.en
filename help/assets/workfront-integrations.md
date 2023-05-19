@@ -4,6 +4,7 @@ description: Introduction to integration between [!DNL Assets] and [!DNL Workfro
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
+hide: yes
 ---
 # [!DNL Adobe Experience Manager Assets] integration with [!DNL Adobe Workfront] {#assets-integration-overview}
 

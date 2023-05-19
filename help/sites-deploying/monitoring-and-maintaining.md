@@ -241,9 +241,9 @@ Various log files are held on the file server where you installed AEM:
     * `upgrade.log`
       Provides a log of all upgrade operations that runs from the `com.day.compat.codeupgrade` and `com.adobe.cq.upgradesexecutor` packages.
 
-* `<cq-installation-dir>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-    * `revision.log`
+    * `journal.log`
       Revision journaling information.
 
 >[!NOTE]
