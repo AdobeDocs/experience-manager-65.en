@@ -24,7 +24,7 @@ Integration between Salesforce and AEM environments requires certain prerequisit
 
 +++ **Set up a connected app with client credentials flow and an API-only user**
 
-It is mandatory to create a connected app with OAuth 2.0 client credentials flow and an API-only user for your organization. For detailed steps, refer to the article [OAuth 2.0 Client Credentials Flow for Server-to-Server Integration](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_client_credentials_flow.htm&type=5).
+It is mandatory to create a connected app with OAuth 2.0 client credentials flow and an API-only user for your organization. For detailed steps, refer to the article [OAuth 2.0 Client Credentials Flow for Server-to-Server Integration](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_client_credentials_flow.htm&type=5). These steps help you obtain the consumer key and consumer secret.
 
 >[!NOTE]
 >
@@ -34,15 +34,16 @@ It is mandatory to create a connected app with OAuth 2.0 client credentials flow
 
 +++ **Create a Swagger file**
 
-Swagger is an open source set of rules, specifications and tools to develop and describe RESTful APIs. [Create a swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) before integarting Salesforce with your AEM instance.   
+Swagger is an open source set of rules, specifications and tools to develop and describe RESTful APIs. [Create a swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) before integrating Salesforce with your AEM instance.   
 
 +++
 
 ## Steps to create an AEM cloud service datasource configuration {steps-to-create-aem-cloud-service-datasource-configuration}
 
 1. Login to your Author instance.
-1. go to tools -> cloud service -> data sources
-create
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Data Sources]**
+1. Click **[!UICONTROL Create] and the 
+1. 
 enter title and select restful service
 next
 upload swagger file,
