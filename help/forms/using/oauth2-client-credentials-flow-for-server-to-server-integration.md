@@ -30,5 +30,29 @@ It is mandatory to create a connected app with OAuth 2.0 client credentials flow
 >
 > Make sure to note down the consumer key and consumer secret as they are required while creating an AEM cloud service data source configuration.
 
++++
+
 +++ **Create a Swagger file**
 
+Swagger is an open source set of rules, specifications and tools to develop and describe RESTful APIs. [Create a swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) before integarting Salesforce with your AEM instance.   
+
++++
+
+## Steps to create an AEM cloud service datasource configuration {steps-to-create-aem-cloud-service-datasource-configuration}
+
+1. Login to your Author instance.
+1. go to tools -> cloud service -> data sources
+create
+enter title and select restful service
+next
+upload swagger file,
+select OAuth 2.0
+select grant type client credentials.
+
+enter Client Id and Client Secret from the App.
+enter token URL in format 
+https://MyDomainName.my.salesforce.com/services/oauth2/token
+
+click test connection.
+
+click create
