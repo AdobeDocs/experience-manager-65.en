@@ -65,4 +65,4 @@ Now, you can [create the Form Data Model](https://experienceleague.adobe.com/doc
 
 To integrate Salesforce connected app and your AEM instance to fetch and retrieve data using an OAuth 2.0 Client Credentials Flow, follow the video:
 
->[VIDEO](/help/forms/using/assets/integratingsalesforceandaem.mp4)
+>[!VIDEO](/help/forms/using/assets/integratingsalesforceandaem.mp4)
