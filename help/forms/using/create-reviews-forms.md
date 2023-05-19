@@ -68,13 +68,7 @@ This section describes what happens when a review is created or set up.
     * **Review deadline**: Available for editing. One can modify the deadline to any date and time beyond the current date and time.  
     
     * **Reviewers**: Available for editing. You can add or remove reviewers. If a task is overdue, you can add reviewers only after extending the deadline beyond the current date.
-
-1. Edit the necessary fields, and then click Update.
-
-   ![Review updated state in Task Manager](assets/tskmgr.png)
-
-   Review updated state in Task Manager
-
+       
 1. To end the review, click End.
 
 ### Actions that occur when a review is modified {#actions-that-occur-when-a-review-is-modified}

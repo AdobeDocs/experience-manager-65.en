@@ -31,7 +31,7 @@ New protocol DASH (Dynamic Adaptive Streaming over HTTP) support launched for ad
 
 * Adaptive streaming (DASH/HLS) ensures better end user viewing experience for videos.
 * DASH is the international standard protocol for adaptive video streaming and is widely adopted in the industry.
-* Available now in Asia-Pacific and North America (to be enabled by way of a support ticket); coming soon in Europe-Middle East-Africa.
+* Available now by submitting a support ticket.
 
 See [Enable DASH on your account](/help/assets/video.md#enable-dash).
 

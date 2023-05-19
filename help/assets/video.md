@@ -149,8 +149,6 @@ Dynamic Media supports mobile video playback for MP4 H.264 video. You can find B
 
 You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
-
-
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
   * Single video viewers.
@@ -435,10 +433,6 @@ Some key benefits from enabling DASH on your account include the following:
 * Helps make video delivery more accessible for your customers.
 * Get the streaming URL by way of APIs, too.
 
-   >[!IMPORTANT]
-   >
-   >Enabling DASH on your account currently is available only in Asia-Pacific and North America; coming soon in Europe-Middle East-Africa.
-
 Enabling DASH on your account requires two steps: 
 
 * Configuring Dynamic Media to use DASH which you can easily do yourself.
@@ -448,10 +442,10 @@ Enabling DASH on your account requires two steps:
 
 1. **Configure Dynamic Media** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
-1. Select the checkbox to enable (turn on) DASH.
+1. To enable (turn on) DASH, select the checkbox.
 1. Select **[!UICONTROL Save]**.
 1. **Configure Experience Manager 6.5** - [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
-1. Follow the instructions to create a support case while ensuring you provide the following information:
+1. To create a support case, follow the instructions while ensuring you provide the following information:
 
     * Primary contact name, email, phone.
     * Name of your Dynamic Media account.
@@ -715,7 +709,7 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
 
 ## About video thumbnails in Dynamic Media - Scene7 mode {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail serves to encourage a customer to click on the video.
+A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail serves to encourage a customer to select the video.
 
 All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can play the video and pause on the frame you want to use. Or, you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
