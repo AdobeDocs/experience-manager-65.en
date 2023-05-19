@@ -38,22 +38,27 @@ Swagger is an open source set of rules, specifications and tools to develop and 
 
 +++
 
-## Steps to create an AEM cloud service datasource configuration {steps-to-create-aem-cloud-service-datasource-configuration}
+## Steps to create an AEM cloud service datasource configuration {#steps-to-create-aem-cloud-service-datasource-configuration}
 
 1. Login to your Author instance.
-1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Data Sources]**
-1. Click **[!UICONTROL Create] and the 
-1. 
-enter title and select restful service
-next
-upload swagger file,
-select OAuth 2.0
-select grant type client credentials.
+1. Go to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Data Sources]**.
+1. Select the configuration.
+1. Click **[!UICONTROL Create]** and the **[!UICONTROL Create Data Source Configuration]** appears.
+1. Specify the **[!UICONTROL Title]** and select the **[!UICONTROL Service Type]** as **[!UICONTROL RESTful Service]**.
+1. Click **[!UICONTROL Next]**.
+1. Select the **[!UICONTROL Swagger Source]** as **[!UICONTROL File]** 
+1. Upload the created swagger file from your local machine by clicking **[!UICONTROL Browse]**.
+1. Select the **[!UICONTROL Authentication Type]** as **[!UICONTROL OAuth 2.0]** and the **[!UICONTROL Authentication Settings]** panel appears.
+1. Select the **[!UICONTROL Grant Type]** as **[!UICONTROL Client Credentials]**.
+1. Specify the **[!UICONTROL Client Id]** and **[!UICONTROL Client Secret]** obtained from the Salesforce connected app.
+1. Specify the **[!UICONTROL Access Token URL]** in format 
+`https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
 
-enter Client Id and Client Secret from the App.
-enter token URL in format 
-https://MyDomainName.my.salesforce.com/services/oauth2/token
+    >[!NOTE]
+    >
+    > Each organization has its own specific domain name. 
 
-click test connection.
+1. Click **[!UICONTROL Test Connection]**.
+1. If the connection succeeds, click the **[!UICONTROL Create]** button.
 
-click create
+Now, you can [create the Form Data Model](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) to integrate the configured datasource with your Adaptive Form. 
