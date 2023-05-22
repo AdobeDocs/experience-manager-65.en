@@ -55,6 +55,9 @@ mini-toc-levels: 3
 * When you navigate to `Saved Searches` combo-box, both name and role do not have any assigned labels. (ASSETS-17329)
 * When you navigate `Collection` and hover to the text *Members*, the text does not appear as marked up. As a result, the screen reader does not recognize the heading text and read it as plain text. (ASSETS-17245)
 * Unable to access `View Settings` option using scroll down or up key from the keyboard. (ASSETS-17257)
+* Unable to trigger a workflow for multiple selected Assets that are found using search filters. (ASSETS-7689)
+* When you select an Asset (or multiple Assets) from the search results, the relate or unrelate option is not visible. But the option is available, otherwise. (ASSETS-7679)
+* Search filters panel opens only once after login and does not open if you exit the search page and rerun search. (ASSETS-7671)
 
 ## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
