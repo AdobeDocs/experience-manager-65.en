@@ -38,7 +38,7 @@ Some of the key features and improvements in this release are the following:
   * Create a workflow
   * Create a version
   * Relate or Unrelate assets
-* **DASH streaming with Dynamic Media** -New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled), Available now for all regions, enabled via support ticket.
+* **DASH streaming with Dynamic Media** - New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled). Available now for all regions, enabled via support ticket.
 
   You do not need to navigate to the asset location and view its properties to perform these operations.
 
