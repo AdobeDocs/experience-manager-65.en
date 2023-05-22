@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
+hide: yes
 ---
 # Digital Rights Management for assets {#digital-rights-management-in-assets}
 

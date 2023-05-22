@@ -127,10 +127,10 @@ More information about the new group features can be found here:
 >
 >The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->The Adobe I/O Console Documentation can be found [here](https://www.adobe.io/apis/cloudplatform/console.html).
+>The Adobe I/O Console Documentation can be found [here](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
->The [!DNL User Management] API that is used by the User Sync Tool is covered at this [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>The [!DNL User Management] API that is used by the User Sync Tool is covered at this [location](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >

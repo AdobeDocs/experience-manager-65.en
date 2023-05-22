@@ -22,7 +22,18 @@ And now, get a better Google Core Web Vital score for LCP (Largest Contentful Pa
 >
 >Smart Imaging requires that you use the out-of-the-box CDN (Content Delivery Network) that is bundled with Adobe Experience Manager - Dynamic Media. Any other custom CDN is not supported with this feature.
 
-Smart Imaging benefits from the added performance boost of being fully integrated with Adobe’s best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
+>[!TIP]
+>
+>Try out and discover the benefits of Dynamic Media image modifiers and Smart Imaging, using Dynamic Media [_Snapshot_](https://snapshot.scene7.com/).
+>
+> Snapshot is a visual demonstration tool, designed to illustrate the power of Dynamic Media for optimized and dynamic image delivery. Experiment with test images or Dynamic Media URLs, to visually observe the output of various Dynamic Media image modifiers, and Smart Imaging optimizations for the following:
+>* File size (with WebP and AVIF delivery)
+>* Network bandwidth
+>* DPR (Device Pixel Ratio) 
+>
+>To learn how easy it is to use Snapshot, play the [Snapshot training video](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 minutes and 17 seconds).
+
+Smart Imaging benefits from the added performance boost of being fully integrated with Adobe's best-in-class premium CDN (Content Delivery Network) service. This service finds the optimal Internet route between servers, networks, and peering points. It finds a route that has the lowest latency and lowest packet loss rate instead of using the default route on the Internet.
 
 The following image asset examples depict the added Smart Imaging optimization:
 
@@ -37,7 +48,7 @@ Similar to above, Adobe also ran a test with a larger sample set. The format AVI
 
 Compare WebP and AVIF to PNG, you can see an 84% size reduction with WebP and 87% with AVIF. And, because both WebP and AVIF formats support transparency and multiple image animations, it is a good replacement for transparent PNG and GIF files.
 
-See also [Image Optimization with Next-gen Image Formats (WebP and AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+See also [Image Optimization with Next-gen Image Formats (WebP and AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -60,7 +71,7 @@ The newest key benefits of the latest Smart Imaging include the following:
 
 ### About Browser Format Conversion (bfc) {#bfc} 
 
-Turning on Browser Format Conversion by appending `bfc=on` to the image URL automatically converts JPEG and PNG to lossy AVIF, lossy WebP, lossy JPEGXR, lossy JPEG2000 for different browsers. For browsers that do not support those formats, Smart Imaging continues to serve the JPEG or PNG. Along with the format, the quality of the new format is re-calculated by Smart Imaging.
+Turning on Browser Format Conversion by appending `bfc=on` to the image URL automatically converts JPEG and PNG to lossy AVIF, lossy WebP, lossy JPEGXR, lossy JPEG2000 for different browsers. For browsers that do not support those formats, Smart Imaging continues to serve the JPEG or PNG. Along with the format, the quality of the new format is recalculated by Smart Imaging.
 
 Smart Imaging can also be turned off by appending `bfc=off` to the image's URL.
 
@@ -68,9 +79,9 @@ See also [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-r
 
 ### About Device Pixel Ratio (dpr) optimization {#dpr}
 
-Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device’s physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
+Device Pixel Ratio (DPR) &ndash; also known as CSS pixel ratio &ndash; is the relation between a device's physical pixels and logical pixels. Especially with the advent of retina screens, the pixel resolution of modern mobile devices is growing at a fast rate.
 
-Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it appear crisp.
+Enabling Device Pixel Ratio optimization renders the image at the native resolution of the screen which makes it sharp.
 
 Currently, the pixel density of the display comes from Akamai CDN header values.
 
@@ -145,7 +156,7 @@ The following image formats are supported for Smart Imaging:
 * JPEG
 * PNG
 
-For JPEG image file format, the quality of the new format is re-calculated by Smart Imaging.
+For JPEG image file format, the quality of the new format is recalculated by Smart Imaging.
 
 For image file formats that support transparency like PNG, you can configure Smart Imaging to deliver lossy AVIF and WebP. For the lossy format conversion, Smart Imaging uses the quality mentioned in the image's URL, or else the quality configured in the Dynamic Media company account.
 
@@ -153,7 +164,7 @@ For image file formats that support transparency like PNG, you can configure Sma
 
 Smart Imaging works with your existing image presets and observes all your image settings. What changes is the image format, or the quality setting, or both. For format conversion, Smart Imaging maintains full visual fidelity as defined by your image preset settings, but at a smaller file size.
 
-For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500, and unsharp mask=0.1,1,5 at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned.
+For example, suppose that an image preset is defined with JPEG format, size 500 x 500, quality=85, and unsharp mask=0.1,1,5. When Smart Imaging detects that a user is on a Chrome browser, the image is converted to WebP format, with size 500 x 500. And, unsharp mask=0.1,1,5 is at a WebP quality that matches a JPEG quality of 85 as close as possible. The footprint of that WebP conversion is compared with the JPEG, and the smaller of the two is returned.
 
 ## Do I have to change any URLs, image presets, or deploy any new code on my site for Smart Imaging? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
@@ -260,7 +271,7 @@ During the initial transition, the non-cached images directly hit Adobe's origin
 
 1. Ensure that cache is disabled when developer tools are open.
 
-    * On Windows®, navigate to settings in the developer tool pane, then select **[!UICONTROL Disable cache (while devtools is open)]** check box.
+    * On Windows&reg;, navigate to settings in the developer tool pane, then select **[!UICONTROL Disable cache (while devtools is open)]** check box.
     * On macOS, in the developer pane, under the **[!UICONTROL Network]** tab, select **[!UICONTROL disable cache]**.
 
 1. Observe the Content Type is transformed to the appropriate format. The following screenshot shows a PNG image being converted dynamically to WebP on Chrome. If your domain has AVIF enabled, you can also expect to see AVIF in the Content Type.
@@ -297,7 +308,7 @@ This header tells you the following:
 
 ## How can I disable AVIF optimization in Smart Imaging?{#disable-avif}
 
-If you want to switch back to serving WebP by default, create a support case for the same. As usual, you can turn off Smart Imaging by adding the parameter `bfc=off` to the image's URL. However, you cannot select WebP or AVIF in the URL modifier for Smart Imaging. This ability is maintained at your company account level.
+If you want to switch back to serving WebP by default, create a support case for the same. As usual, you can turn off Smart Imaging by adding the parameter `bfc=off` to the image's URL. However, you cannot select WebP or AVIF in the URL modifier for Smart Imaging. This ability is maintained at your company account-level.
 
 ## Can Smart Imaging be turned off for any request?{#turning-off-smart-imaging}
 
