@@ -27,7 +27,7 @@ role: Developer
     + [Contributing to AEM](contributing-to-cq.md)
     + [Security](security.md)
     + [Reference Materials](reference-materials.md)
-    + [Create a Fully-Featured Website (Classic UI)](website.md)
+    + [Create a Fully Featured Website (Classic UI)](website.md)
     + [Designs and the Designer (Classic UI)](designer.md)
     + [Migration to the Touch UI](/help/sites-developing/touch-ui-migration.md)
 + Platform{#platform}
@@ -185,10 +185,10 @@ role: Developer
     + [Sample ContextHub UI Module Types](ch-samplemodules.md)
     + [ContextHub Diagnostics](ch-diagnostics.md)
     + [Developing for Targeted Content](target.md)
-    + [ContextHub Javascript API Reference](contexthub-api.md)
+    + [ContextHub JavaScript API Reference](contexthub-api.md)
     + Client Context{#client-context}
       + [Client Context in Detail](client-context.md)
-      + [Client Context Javascript API](ccjsapi.md)
+      + [Client Context JavaScript API](ccjsapi.md)
 + Extending AEM{#extending-aem}
     + [Extending AEM using Adobe Developer App Builder](app-builder.md)
     + [Customizing Page Authoring](customizing-page-authoring-touch.md)
@@ -229,7 +229,7 @@ role: Developer
       + [Developing Reports](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Testing{#testing}
     + [Planning](planning.md)
-    + [Which Test Environments will be needed?](test-environments.md)
+    + [Which Test Environments are needed?](test-environments.md)
     + [Defining your Test Cases](test-cases.md)
     + [Testing - when and with whom?](when-who.md)
     + [Compiling your Test Plan](test-plan.md)
