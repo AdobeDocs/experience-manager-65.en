@@ -28,7 +28,7 @@ It is mandatory to create a connected app with OAuth 2.0 client credentials flow
 
 >[!NOTE]
 >
-> Make sure to note down a consumer key and consumer secret as they are required while creating an AEM data source configuration.
+> Make sure to note down consumer key and consumer secret as they are required while creating an AEM data source configuration.
 
 +++
 
