@@ -11,7 +11,7 @@ seo-description: Steps to resolve EAR Deployment failing on JEE Weblogic Server
 
 When a user attempts to deploy the `adobe-livecycle-weblogic.ear`, the `Null Pointer` exception is encountered .
 
-## Applies to {#applies to}
+## Applies to {#applies-to}
 
 This solution applies to:
 
