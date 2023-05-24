@@ -414,16 +414,12 @@ If an already translated source page needs to be [renamed or moved](/help/sites-
 1. Select **Languages Copies**.
 1. Select the target languages you want to update.
 1. Select **Update language copies**.
-1. Click **Update**. A Launch will be created.
+1. Click **Update**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) will be created.
 1. Navigate to the required language root and select it.
 1. Using the **References** panel, select **Launches**.
 1. Click on the Launch that was just created and click **Promote launch**.
 
 Now the source page was moved, as well as the associated language copy.
-
->[!NOTE]
->
->If the language copy was published already before the move, you should unpublish it before the previous procedure. Otherwise, after you publish your language copy in the new location, the page is available at 2 URLs.
 
 ## Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 
