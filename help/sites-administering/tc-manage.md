@@ -409,7 +409,7 @@ Populate your language copy so that it contains content from the master language
 If an already translated source page needs to be [renamed or moved](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move will create a new language copy based on the new page name/location. The old language copy based on the previous name/location will still be there. To prevent this, you can use the update language copy functionality after the move:
 
 1. Move a page which has a language copy.
-1. Once done, select the language copy root.
+1. Select the language copy root.
 1. Open the **References** panel.
 1. Select **Languages Copies**.
 1. Select the target languages you want to update.
@@ -423,7 +423,7 @@ Now the source page was moved, as well as the associated language copy.
 
 >[!NOTE]
 >
->If the language copy was published already before the move, you should unpublish it before the previous procedure. Otherwise, after you publish your language copy in the new location, the page will be published at 2 URLs.
+>If the language copy was published already before the move, you should unpublish it before the previous procedure. Otherwise, after you publish your language copy in the new location, the page is available at 2 URLs.
 
 ## Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 
