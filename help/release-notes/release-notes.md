@@ -21,7 +21,7 @@ mini-toc-levels: 3
 | Version  | 6.5.17.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
 | Date     | Thursday, May 25, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[…]be/packages/cq650/servicepack/aem-service-pkg-6.5.16.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[…]be/packages/cq650/servicepack/aem-service-pkg-6.5.17.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.17.0 {#what-is-included-in-aem-6517}
 
@@ -125,7 +125,7 @@ Some of the key features and improvements in this release are the following:
 * Usage of `SemanticDataType.REFERENCE` should support "Remote-Asset-IDs". (SITES-12127)
 * Integrate Polaris Asset Selector into Content Fragment editor. (SITES-12125)
 * A mandatory http header was necessary to access the metadata service endpoint. (SITES-13068)
-* The GraphQL implementation of 6.5 was not on par with Cloud Service (master); identified issues were fixed. (SITES-13096)
+* The GraphQL implementation of 6.5 was not on par with Cloud Service (primary)); identified issues were fixed. (SITES-13096)
 * GraphQL paging/sorting and hybrid filtering should be available on AEM 6.5/AMS. (SITES-9154)
 
 ### [!DNL Sites] - Core Components{#sites-core-components-6517}
@@ -220,7 +220,7 @@ To know the platforms that are certified to work with this release, see the [tec
 
 1.  All OSGi bundles are either **[!UICONTROL ACTIVE]** or **[!UICONTROL FRAGMENT]** in the OSGi Console (Use Web Console: `/system/console/bundles`).
 
-1.  The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.14 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-39939 for 6.5.16.0 --> <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1.  The OSGi bundle `org.apache.jackrabbit.oak-core` is version 1.22.15 or later (Use Web Console: `/system/console/bundles`). <!-- NPR-40398 for 6.5.17.0 --> <!-- OAK Oak oak VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Install Service Pack for [!DNL Experience Manager] Forms{#install-aem-forms-add-on-package}
 
@@ -240,12 +240,7 @@ Failure to install this package may result in slow or failed GraphQL queries.
 
 ### UberJar{#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.17.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
-
->[!NOTE]
->
->In Experience Manager 6.5.16.0, the UberJar version (6.5.15.0) remains the same as the previous release.
-
+The UberJar for [!DNL Experience Manager] 6.5.17.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.17/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -253,7 +248,7 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.15</version>
+     <version>6.5.17</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -327,8 +322,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.17.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [List of OSGi bundles included in Experience Manager 6.5.16.0](/help/release-notes/assets/65160_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.16.0](/help/release-notes/assets/65160_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.17.0](/help/release-notes/assets/65170_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.17.0](/help/release-notes/assets/65170_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 
