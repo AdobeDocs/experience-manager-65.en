@@ -1,0 +1,90 @@
+SYMBOLIC NAME                                     BUNDLE NAME                                               VERSION
+org.apache.commons.io                             Apache Commons IO                                         2.11.0
+org.apache.logging.log4j.api                      Apache Log4j API                                          2.20.0
+org.apache.logging.log4j.to-slf4j                 Apache Log4j to SLF4J Adapter                             2.20.0
+com.adobe.cq.cq-experience-fragments              AEM - Experience Fragments                                1.2.86
+com.adobe.cq.inbox.cq-inbox                       AEM - Inbox Core                                          1.2.28
+com.adobe.cq.cq-target-integration                AEM 6 - Adobe Target integration                          1.3.56
+com.adobe.cq.social.cq-social-commons             AEM Communities Commons - Bundle                          1.10.87
+com.adobe.cq.social.cq-social-handlebars          AEM Communities Handlebars Scripting Engine - Bundle      1.10.21
+com.adobe.cq.social.cq-social-scf-impl            AEM Communities SCF - Impl Bundle                         2.2.12
+com.adobe.cq.social.cq-social-graph-impl          AEM Communities SocialGraph Impl - Bundle                 1.4.4
+com.adobe.cq.dam.cq-dynamicmedia-core             AEM Dynamic Media Integration                             1.0.164
+com.adobe.cq.com.adobe.cq.ui.commons              AEM UI WCM Commons Bundle                                 1.3.34
+com.adobe.cq.dtm-reactor.core                     Adobe CQ Activation DTM Core Bundle                       1.1.24
+com.adobe.cq.dam.cq-dam-svg-handler               Adobe CQ Creative Cloud APIs - DAM SVG Asset Handler      0.4.14
+com.adobe.cq.dam.cq-scene7-imaging                Adobe CQ DAM Scene7 Dynamic Imaging                       1.6.66.CQ650-B0060
+com.day.cq.cq-search                              Adobe CQ Search QueryBuilder                              5.12.24
+com.day.cq.wcm.cq-wcm-translation                 Adobe CQ Translation Workflow                             1.5.138
+com.day.cq.wcm.cq-wcm-foundation                  Adobe CQ WCM Foundation Components                        5.12.64
+com.day.cq.dam.adobe-dam-idsprint                 Adobe DAM InDesign Print                                  0.4.10
+com.adobe.aem.com.adobe.aem.graphql-java-wrapper  Adobe Experience Manager GraphQL Java Wrapper             0.0.1.CQ650-B0006
+com.adobe.aem.graphql.sling-adapter               Adobe Experience Manager GraphQL Sling Adapter            0.0.1.CQ650-B0006
+cq-dam-cfm-graphql                                Adobe Experience Manager GraphQL for Content Fragments    0.0.1.CQ650-B0026
+com.adobe.aem.graphql.sites-api                   Adobe Experience Manager GraphQL for Sites - API          0.0.1.CQ650-B0006
+com.adobe.aem.graphql.sites-base                  Adobe Experience Manager GraphQL for Sites - Base Module  0.0.1.CQ650-B0014
+com.adobe.granite.asset.api                       Adobe Granite Asset API                                   2.0.12
+com.adobe.granite.asset.core                      Adobe Granite Asset API Implementation                    2.2.64.CQ650-B0003
+com.adobe.granite.ui.clientlibs.processor.gcc     Adobe Granite UI Clientlibs - Google Closure Compiler     1.0.24
+com.adobe.granite.workflow.console                Adobe Granite Workflow Console                            1.0.118.CQ652-B0005
+com.adobe.granite.workflow.core                   Adobe Granite Workflow Core                               2.0.240.CQ672-B0017
+pdfcore                                           Adobe PDF Core                                            4.0.1680232194
+pdfencryption                                     Adobe PDF Encryption                                      4.0.1680232194
+PDFServices.extraction                            Adobe PDF Extraction services                             4.0.1680232194
+PDFServices.manipulations                         Adobe PDF Manipulation services                           4.0.1680232194
+PDFServices.security                              Adobe PDF Security services                               4.0.1680232194
+com.adobe.xmp.xmpcore                             Adobe XMPCore                                             6.2.9.B001
+org.apache.commons.commons-compress               Apache Commons Compress                                   1.22.0
+org.apache.commons.commons-io                     Apache Commons IO                                         2.11.0
+org.apache.commons.commons-imaging                Apache Commons Imaging                                    1.0.0.alpha3
+org.apache.felix.webconsole                       Apache Felix Web Management Console                       4.8.4
+org.apache.sling.resourcemerger                   Apache Sling Resource Merger                              1.4.2
+org.apache.sling.xss                              Apache Sling XSS Protection API                           2.2.16
+com.adobe.cq.cq-product-info-provider             CQ ProductInfo Provider                                   6.5.36
+com.adobe.dam.cq-dam-cfm-extensions               ContentFragmentManagement - Extensions                    0.0.6
+com.adobe.dam.cq-dam-cfm-impl                     ContentFragmentManagement - Implementation                0.11.120
+com.day.cq.dam.adobe-xmp                          Day Communique 5 DAM Adobe extension                      5.12.8
+com.day.cq.dam.cq-dam-handler                     Day Communique 5 DAM Asset Handler Implementation         5.12.20
+com.day.cq.dam.cq-dam-commons                     Day Communique 5 DAM Commons                              5.12.158
+com.day.cq.dam.cq-dam-core                        Day Communique 5 DAM Core Implementation                  5.12.366
+com.day.cq.dam.cq-dam-indesign                    Day Communique 5 DAM InDesign Integration                 5.12.24
+com.day.cq.dam.cq-dam-pim                         Day Communique 5 DAM PIM Integration Implementation       0.5.10
+com.day.cq.dam.cq-scene7-api                      Day Communique 5 DAM Scene7 Integration                   5.12.66
+com.day.cq.dam.cq-scene7-core                     Day Communique 5 DAM Scene7 Integration                   5.12.250
+com.day.cq.dam.cq-dam-video                       Day Communique 5 DAM Video Extensions                     5.12.16
+com.day.cq.dam.cq-dam-word                        Day Communique 5 DAM Word Integration                     5.12.10
+com.day.cq.cq-rewriter                            Day Communique 5 Rewriter                                 5.12.24
+com.day.cq.wcm.cq-wcm-core                        Day Communique 5 WCM Core Implementation                  5.12.230
+com.day.cq.wcm.cq-msm-api                         Day Communique 5 WCM Multi Site Management API            5.11.10
+com.day.cq.wcm.cq-msm-core                        Day Communique 5 WCM Multi Site Management Core           5.12.90
+com.day.cq.wcm.cq-wcm-notification                Day Communique 5 WCM Notification Bundle                  5.11.14
+com.day.cq.workflow.cq-workflow-impl              Day Communique 5 Workflow Implementation                  6.3.8.CQ654-B0003
+com.day.cq.wcm.cq-wcm-resource-details            Day Communique WCM Resource Details                       0.4.12
+com.github.jknack.handlebars                      Handlebars                                                4.3.1
+org.apache.jackrabbit.oak-jackrabbit-api          Jackrabbit API                                            1.22.15
+org.apache.jackrabbit.jackrabbit-data             Jackrabbit Data                                           2.20.9
+org.apache.jackrabbit.jackrabbit-jcr-commons      Jackrabbit JCR Commons                                    2.20.9
+org.apache.jackrabbit.jackrabbit-spi              Jackrabbit SPI                                            2.20.9
+org.apache.jackrabbit.jackrabbit-spi-commons      Jackrabbit SPI Commons                                    2.20.9
+org.apache.jackrabbit.jackrabbit-webdav           Jackrabbit WebDAV Library                                 2.20.9
+com.adobe.granite.poi                             OSGi bundle wrapper for the Apache POI library            2.1.0
+org.apache.jackrabbit.oak-api                     Oak API                                                   1.22.15
+org.apache.jackrabbit.oak-blob-cloud-azure        Oak Azure Cloud Blob Store                                1.22.15
+org.apache.jackrabbit.oak-blob-plugins            Oak Blob Plugins                                          1.22.15
+org.apache.jackrabbit.oak-blob                    Oak Blob Store                                            1.22.15
+org.apache.jackrabbit.oak-authorization-cug       Oak CUG Authorization                                     1.22.15
+org.apache.jackrabbit.oak-commons                 Oak Commons                                               1.22.15
+org.apache.jackrabbit.oak-store-composite         Oak Composite Store                                       1.22.15
+org.apache.jackrabbit.oak-core                    Oak Core                                                  1.22.15
+org.apache.jackrabbit.oak-core-spi                Oak Core SPI                                              1.22.15
+org.apache.jackrabbit.oak-store-document          Oak DocumentNodeStore                                     1.22.15
+org.apache.jackrabbit.oak-auth-external           Oak External Authentication Support                       1.22.15
+org.apache.jackrabbit.oak-jcr                     Oak JCR Binding                                           1.22.15
+org.apache.jackrabbit.oak-auth-ldap               Oak LDAP Authentication Support                           1.22.15
+org.apache.jackrabbit.oak-lucene                  Oak Lucene                                                1.22.15
+org.apache.jackrabbit.oak-store-spi               Oak NodeStore and Commit SPI                              1.22.15
+org.apache.jackrabbit.oak-query-spi               Oak Query SPI                                             1.22.15
+org.apache.jackrabbit.oak-security-spi            Oak Security SPI                                          1.22.15
+org.apache.jackrabbit.oak-segment-azure           Oak Segment Azure                                         1.22.15
+org.apache.jackrabbit.oak-segment-tar             Oak Segment Tar                                           1.22.15
+org.apache.jackrabbit.oak-solr-osgi               Oak Solr OSGi                                             1.22.15
