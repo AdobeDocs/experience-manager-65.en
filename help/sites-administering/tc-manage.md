@@ -414,7 +414,7 @@ If an already translated source page needs to be [renamed or moved](/help/sites-
 1. Select **Languages Copies**.
 1. Select the target languages you want to update.
 1. Select **Update language copies**.
-1. Click **Update**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) will be created.
+1. Click **Update**. A [Launch](help/sites-authoring/launches-promoting.md) will be created.
 1. Navigate to the required language root and select it.
 1. Using the **References** panel, select **Launches**.
 1. Click on the Launch that was just created and click **Promote launch**.
