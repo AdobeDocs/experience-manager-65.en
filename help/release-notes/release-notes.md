@@ -66,6 +66,7 @@ Some of the key features and improvements in this release are the following:
 * Unable to trigger a workflow for multiple selected Assets that are found using search filters. (ASSETS-7689)
 * When you select an Asset (or multiple Assets) from the search results, the relate or unrelate option is not visible. But the option is available, otherwise. (ASSETS-7679)
 * Search filters panel opens only once after login and does not open if you exit the search page and rerun search. (ASSETS-7671)
+* The email combo-box does not display appropriate contrast ratio while sharing a link. (ASSETS-17349)
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
