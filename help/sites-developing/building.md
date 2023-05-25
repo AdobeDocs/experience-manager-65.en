@@ -193,3 +193,7 @@ The new language (Finnish) is now available in the tag dialog of the page proper
 >[!NOTE]
 >
 >The new language needs to be one of the AEM recognized languages, i.e. it needs to be available as a node below `/libs/wcm/core/resources/languages`.
+
+>[!CAUTION]
+>
+>Installing a service pack resets the languages property of the /content/cq:tags node to default. Therefore, it is necessary to add it from the properties before installation.
