@@ -6,6 +6,7 @@ mini-toc-levels: 1
 role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
+hide: yes
 ---
 # Manage collections {#managing-collections}
 

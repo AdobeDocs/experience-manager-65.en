@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
+hide: yes
 ---
 # Watermark your digital assets {#watermarking}
 

@@ -5,6 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
+hide: yes
 ---
 # Configuration and administration of metadata functionality in [!DNL Assets] {#config-metadata}
 
