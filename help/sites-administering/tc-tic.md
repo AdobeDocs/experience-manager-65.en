@@ -102,6 +102,10 @@ The Sites properties control how the translation of page content is performed.
    <td>(Machine Translation Only) A category that describes the content that you are translating. The category can affect the choice of terminology and phrasing when translating content.</td>
   </tr>
   <tr>
+   <td>Translate Component Strings</td>
+   <td>Select to translate component strings of components that are associated with the page.</td>
+  </tr>
+  <tr>
    <td>Translate Tags</td>
    <td>Select to translate tags that are associated with the page.</td>
   </tr>
