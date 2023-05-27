@@ -2,8 +2,7 @@
 title: Release Notes for [!DNL Adobe Experience Manager] 6.5
 description: Find release information, what's new, install how-tos, and a detailed change list for [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-
-
+exl-id: fed4e110-9415-4740-aba1-75da522039a9
 ---
 # [!DNL Adobe Experience Manager] 6.5 Latest Service Pack Release Notes {#aem-service-pack-release-notes}
 
