@@ -11,7 +11,7 @@ To integrate AEM Forms with the Salesforce application, the OAuth 2.0 client cre
  
 ## Advantages of integrating Salesforce with  AEM Forms {#advantages-of-integrating-saleforce-aemforms}
 
-AEM Forms supports the integration of Salesforce with the Authorization Code Flow, in addition to the OAuth 2.0 client credentials flow. In the OAuth 2.0 client credentials flow, the Client Application (AEM Forms) obtains resource access on behalf of a Salesforce user, which has some limitations:
+AEM Forms support the integration of Salesforce with the Authorization Code Flow, in addition to the OAuth 2.0 client credentials flow. In the OAuth 2.0 client credentials flow, the Client Application (AEM Forms) obtains resource access on behalf of a Salesforce user, which has some limitations:
 
 * Maximum five connections per user are allowed. Further connections automatically revoke older connections.
 * If a user is deactivated, loses access, or updates a password, the AEM data source configuration stops working.
@@ -49,6 +49,10 @@ Swagger is an open-source set of rules, specifications, and tools to develop and
 1. Specify the **[!UICONTROL Title]** and select the **[!UICONTROL Service Type]** as **[!UICONTROL RESTful Service]**.
 1. Click **[!UICONTROL Next]**.
 1. Select the **[!UICONTROL Swagger Source]** as **[!UICONTROL File].** 
+    >[!NOTE]
+    >
+    > As soon as the swagger file is selected, to validate the scheme, the Host and Base path are populated automatically.
+
 1. Upload the created swagger file from your local machine by clicking **[!UICONTROL Browse]**.
 1. Select the **[!UICONTROL Authentication Type]** as **[!UICONTROL OAuth 2.0]** and the **[!UICONTROL Authentication Settings]** panel appears.
 1. Select the **[!UICONTROL Grant Type]** as **[!UICONTROL Client Credentials]**.
@@ -65,6 +69,4 @@ Swagger is an open-source set of rules, specifications, and tools to develop and
 
 Now, you can [create the Form Data Model](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) to integrate the configured datasource with your Adaptive Form.
 
-To integrate Salesforce connected app and your AEM instance to fetch and retrieve data using an OAuth 2.0 Client Credentials Flow, follow the video:
 
->[!VIDEO](/help/forms/using/assets/integratingsalesforceandaem.mp4)
