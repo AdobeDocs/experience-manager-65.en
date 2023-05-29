@@ -230,7 +230,7 @@ For example, to disable targeting for the title components of the Geometrixx Dem
 >
 >If you are not using DTM, you send order confirmation to Adobe Target.
 
-For tracking the performance of your website, send purchase information from your order confirmation page to Adobe Target. (See [Create an orderConfirmPage Mbox](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) in the Adobe Target documentation.) Adobe Target recognizes mbox data as order confirmation data when your MBox name is `orderConfirmPage` and uses the following specific parameter names:
+For tracking the performance of your website, send purchase information from your order confirmation page to Adobe Target. (See [Create an orderConfirmPage Mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en) and [Order Confirmation Mbox - Add custom parameters.](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)) Adobe Target recognizes mbox data as order confirmation data when your MBox name is `orderConfirmPage` and uses the following specific parameter names:
 
 * productPurchasedId: A list of IDs that identify the purchased products.
 * orderId: The ID of the order.

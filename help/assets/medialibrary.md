@@ -5,6 +5,7 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
+hide: yes
 ---
 
 # Use Media Library for basic asset management {#manage-assets-using-media-library}
@@ -13,7 +14,6 @@ exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=en)           |
 
 [!DNL Adobe Experience Manager] platform provides different capabilities to manage assets. Media Library allows the users to upload a small number of assets to the repository, search and use those in the webpages, and accomplish simple asset management tasks on the assets.
 

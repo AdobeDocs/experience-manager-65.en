@@ -1,8 +1,8 @@
 ---
-title: Troubleshooting
-seo-title: Troubleshooting
+title: Troubleshooting installation issues with AEM
+
 description: This article covers some of the installation issues that you might encounter with AEM.
-seo-description: This article covers some of the installation issues you might encounter with AEM.
+
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 ---
-# Troubleshooting{#troubleshooting}
+# Troubleshooting installation issues with AEM{#troubleshooting}
 
 This section includes detailed information on logs available to help you troubleshoot and also includes information on some of the problems you might encounter with AEM.
 

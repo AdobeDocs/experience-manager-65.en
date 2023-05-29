@@ -5,6 +5,7 @@ contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
+hide: yes
 ---
 # Share asset as a link {#asset-link-sharing}
 
@@ -12,7 +13,6 @@ exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/link-sharing.html?lang=en)           |
 
 [!DNL Adobe Experience Manager Assets] lets you share assets, folders, and collections as a URL with members of your organization and external entities, including partners and vendors. Sharing assets through a link is a convenient way of making resources available to external parties without them having to first login to [!DNL Assets].
 

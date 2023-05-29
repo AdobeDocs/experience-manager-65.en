@@ -20,7 +20,7 @@ exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 
 OSGi "*provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed*".
 
-This functionality allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://www.osgi.org/Specifications/HomePage)) is contained in one of the various bundles. When working with AEM, there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+This functionality allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://docs.osgi.org/specification/)) is contained in one of the various bundles. When working with AEM, there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following OSGi configuration settings (listed according to bundle) are relevant to project implementation. Not all the listed settings need adjusting, some are mentioned to help you understand how AEM operates.
 
@@ -264,7 +264,7 @@ When creating a configuration, do not change the factory configuration. Instead,
 * For JS development (especially when firebugging/debugging):
 
     * disable **Minify**
-    * enable **Debug** to separate the files for debugging and use with firebug.
+    * enable **Debug** to separate the files for debugging and use with fire bug.
     * enable **Timing** if interested in timing.
     * enable **Debug** console to see JS console log messages.
 
@@ -374,7 +374,7 @@ Various configuration properties are available:
 
 **Day CQ WCM Link Checker Configurator** Configure:
 
-* **List of rewrite configurations** to specify a list of locations for content-based linkchecker configurations. The configurations can be based on run mode. This fact is important to distinguish between author and publish environments, as linkchecker settings can differ.
+* **List of rewrite configurations** to specify a list of locations for content-based link checker configurations. The configurations can be based on run mode. This fact is important to distinguish between author and publish environments, as link checker settings can differ.
 
 **Day CQ WCM Page Manager Factory** Configure:
 
@@ -436,7 +436,7 @@ A Factory Configuration, so multiple instances can be configured.
 **CDN Rewriter** Communication between AEM and a CDN must be ensured so that assets/binaries are delivered to an end user in a secure way. This process involves the following two tasks:
 
 * Accessing the resource from AEM by way of the CDN the first time (or after it expired in cache).
-* Accessing the resource cached in CDN securely because after the resource is cached in CDN, the request does not go to AEM, and all the users who have access to that resource on should be served from CDN.
+* Accessing the resource cached in CDN securely. After the resource is cached in CDN, the request does not go to AEM, and all the users who have access to that resource on should be served from CDN.
 
 AEM provides a rewriter for rewriting internal assets URLs to external CDN URLs. It rewrites links to be passed on to the CDN including a JWS signature and expire time to allow the asset to be accessed securely. This feature is to be used on author instances.
 

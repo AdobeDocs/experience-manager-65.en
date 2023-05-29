@@ -1,8 +1,6 @@
 ---
-title: Authoring Pages
-seo-title: Authoring Pages
-description: The tasks involved when authoring a content page
-seo-description: The tasks involved when authoring a content page
+title: Authoring content pages in AEM
+description: The tasks involved when authoring a content page.
 uuid: 454d94aa-da27-45cb-bbb2-7bfcef103806
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

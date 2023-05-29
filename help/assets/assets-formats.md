@@ -6,6 +6,7 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
+hide: yes
 ---
 # Formats supported in [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
 
@@ -230,7 +231,7 @@ A list of supported MIME types is available in CRXDE Lite at `/conf/global/setti
 
 | Video file extension | Container | Recommended video codecs | Unsupported video codecs |
 |---|---|---|---|
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft&reg; Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (vector animation files) |
 | M4V | Apple iTunes | H264/AVC | &minus; |
 | MKV | Matroska | H264/AVC | &minus; |
@@ -240,7 +241,7 @@ A list of supported MIME types is available in CRXDE Lite at `/conf/global/setti
 | MXF &Dagger; | MXF  | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | &minus; |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | &minus; |
 | WebM | WebM | Google VP8 | &minus; |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft&reg; Screen (MSS2), Microsoft&reg; Photo Story (WVP2) |
 
 &Dagger; This video format is not yet supported for use with Interactive Videos in Dynamic Media or for use with Annotation in Experience Manager Assets.
 

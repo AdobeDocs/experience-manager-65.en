@@ -1,8 +1,6 @@
 ---
-title: Publishing Pages
-seo-title: Publishing Pages
-description: Publishing Pages
-seo-description: null
+title: Publishing content pages
+description: Learn how to publish content pages.
 uuid: 57795e4a-e528-4e74-ad9c-e13f868daebb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +12,7 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 ---
 # Publishing Pages {#publishing-pages}
 
-Once you have created and reviewed your content on the author environment, the goal is to [make it available on your public website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (your publish environment).
+After you have created and reviewed your content on the author environment, [make it available on your public website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (your publish environment).
 
 This is referred to as publishing a page. When you want to remove a page from the publish environment is referred to as unpublishing. When publishing and unpublishing the page remains available on the author environment for further changes until you delete it.
 

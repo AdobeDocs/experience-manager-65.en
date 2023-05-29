@@ -102,14 +102,14 @@ The following table lists the current plug-ins, showing:
 |Plug-in ID|features|Description|
 |--- |--- |--- |
 |edit|cut copy paste-default paste-plaintext paste-wordhtml| [Cut, copy and, the three paste modes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles).|
-|[findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin)|find replace| Find and replace.|
-|[format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin)|bold italic underline| [Basic text formatting](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles).|
-|[image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin)|image|Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors|
-|[keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin)||To define this value, see [tab size](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize).|
-|[justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin)|justifyleft justifycenter justifyright|Paragraph alignment.|
-|[links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin)|modifylink unlink anchor|[Hyperlinks and anchors](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles).|
-|[lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin)|ordered unordered indent outdent|This plug-in controls both [indentation and lists](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists.|
-|[misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin)|specialchars sourceedit|Miscellaneous tools allow authors to enter [special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list.|
+|findreplace|find replace| Find and replace.|
+|format|bold italic underline| [Basic text formatting](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles).|
+|image|image|Basic image support (drag from content or Content Finder). Depending on the browser, the support has different behaviors for authors|
+|keys||To define this value, see [tab size](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize).|
+|justify|justifyleft justifycenter justifyright|Paragraph alignment.|
+|links|modifylink unlink anchor|[Hyperlinks and anchors](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles).|
+|lists|ordered unordered indent outdent|This plug-in controls both [indentation and lists](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); including nested lists.|
+|misctools|specialchars sourceedit|Miscellaneous tools allow authors to enter [special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) or edit the HTML source. Also, you can add a whole [range of special characters](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) if you want to define your own list.|
 |Paraformat|paraformat|The default paragraph formats are Paragraph, Heading 1, Heading 2, and Heading 3 (`<p>`, `<h1>`, `<h2>`, and `<h3>`). You can [add more paragraph formats](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) or extend the list.|
 |spellcheck|checktext|[Language aware spell checker](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict).|
 |styles|styles|Support for styling using a CSS class. [Add new text styles](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) if you want to add (or extend) your own range of styles for use with text.|
@@ -252,7 +252,7 @@ The available options in the RTE flow downstream from the user interface configu
 * If the user interface configuration of the RTE removed or doesn't enable an item, the content policy cannot configure it.
 * An author has access to only such functionality as is made available by the user interface configurations and the content policies.
 
-As an example, you can see the [Text Core Component documentation](https://docs.adobe.com/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+As an example, you can see the [Text Core Component documentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
 
 ## Customize mapping between toolbar icons and commands {#iconstoolbar}
 
@@ -316,12 +316,12 @@ On a page, you can either include CoralUI 2 RTE clientlib or the CoralUI 3 RTE c
 
 ## Further Information {#further-information}
 
-For more information about configuring the RTE, see the [AEM Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) reference.
+For more information about configuring the RTE, see the [AEM Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) reference.
 
 In particular, to see the plug-ins and related options available:
 
-* The [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) component provides a form field for editing styled text information (rich text). To know all the parameters available for the rich text form, see the Config Options.
-* The RichText component provides a wide range of functionality using plug-ins listed under [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). For each plug-in:
+* The [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) component provides a form field for editing styled text information (rich text). To know all the parameters available for the rich text form, see the Config Options.
+* The RichText component provides a wide range of functionality using plug-ins listed under [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). For each plug-in:
 
     * see the Features for details of functionality that can be enabled (or disabled)
     * See the Config Options for all parameters available for detailed configuration of the appropriate plug-in
@@ -370,7 +370,7 @@ Do not add a XSS-prone HTML. AEM, and not RTE, may remove some HTML content to a
 
 To verify that the pasted HTML is saved, check the saved content in CRXDE (in the content node).
 
-If not saved, the HTML must have been removed by RTE as it did not adhere to the RTE’s rules.
+If not saved, the HTML must have been removed by RTE as it did not adhere to the RTE's rules.
 
 If saved in CRXDE but not rendered on the Page (to check rendering, see page's [preview](/help/sites-authoring/editing-content.md#preview-mode), it is removed by AEM XSS rules.
 

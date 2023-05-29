@@ -1,8 +1,6 @@
 ---
-title: First Steps for Authors
-seo-title: First Steps for Authors
-description: This section gives you an overview of the main tasks that you will be using when starting to author content with Adobe Experience Manager (AEM).
-seo-description: This section gives you an overview of the main tasks that you will be using when starting to author content with Adobe Experience Manager (AEM).
+title: First steps for authors
+description: This section gives you an overview of the main tasks that you use when authoring content with Adobe Experience Manager (AEM).
 uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

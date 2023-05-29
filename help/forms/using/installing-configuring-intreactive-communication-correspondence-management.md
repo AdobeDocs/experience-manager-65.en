@@ -47,7 +47,7 @@ Before you begin to install and configure interactive communication and correspo
 
 * Memory requirements are met. AEM Forms add-on package requires:
 
-    * 15 GB of temporary space for Microsoft Windows-based installations.
+    * 15 GB of temporary space for Microsoft&reg; Windows-based installations.
     * 6 GB of temporary space for UNIX-based installations.
 
 * Extra requirements for UNIX-based systems: If you are using the UNIX-based operating system, install the following packages from the installation media of the respective operating system.
@@ -94,14 +94,14 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
 1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
-   You can also download the package via the direct link listed in the [AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) article.
+   You can also download the package via the direct link listed in the [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) article.
 
-1. After the package is installed, you are prompted to restart the AEM instance. **Do not immediately restart the server.** Before stopping the AEM Forms server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the [AEM-Installation-Directory]/crx-quickstart/logs/error.log file and the log is stable.
+1. After the package is installed, you are prompted to restart the AEM instance. **Do not immediately restart the server.** Before stopping the AEM Forms Server, wait until the ServiceEvent REGISTERED and ServiceEvent UNREGISTERED messages stop appearing in the [AEM-Installation-Directory]/crx-quickstart/logs/error.log file and the log is stable.
 1. Repeat steps 1-7 on all the Author and Publish instances.
 
 ## Post-installation configurations {#post-installation-configurations}
 
-AEM Forms has a few mandatory and optional configurations. The mandatory configurations include configuring BouncyCastle libraries and serialization agent. The optional configurations include configuring dispatcher and Adobe Target.
+AEM Forms has a few mandatory and optional configurations. The mandatory configurations include configuring BouncyCastle libraries and serialization agent. The optional configurations include configuring Dispatcher and Adobe Target.
 
 ### Mandatory post-installation configurations {#mandatory-post-installation-configurations}
 
@@ -112,7 +112,7 @@ Perform the following steps on all the Author and Publish instances to boot dele
 1. Stop the underlying AEM instance.
 1. Open the [AEM installation directory]\crx-quickstart\conf\sling.properties file for editing.
 
-   If you used [AEM installation directory]\crx-quickstart\bin\start.bat to start AEM, then edit the sling.properties located at [AEM_root]\crx-quickstart\.
+   If you used [AEM installation directory]\crx-quickstart\bin\start.bat to start AEM, then edit the sling.properties at [AEM_root]\crx-quickstart\.
 
 1. Add the following properties to the sling.properties file:
 
@@ -136,7 +136,7 @@ Perform the following steps on all the Author and Publish instances to add the p
 
 #### Install Compatibility Package {#install-compatibility-package}
 
-Interactive communication is the default and recommended approach to create customer communications in AEM 6.5 Forms. If you have upgraded or migrated from a previous version, and plan to continue using letters (Correspondence Management), install the [AEMFD Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
+Interactive communication is the default and recommended approach to create customer communications in AEM 6.5 Forms. If you have upgraded or migrated from a previous version, and plan to continue using letters (Correspondence Management), install the [AEMFD Compatibility package](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
 The AEMFD Compatibility package allows you to use the following assets from AEM 6.4 Forms, AEM 6.3 Forms, and AEM 6.2 Forms on AEM 6.5 Forms:
 
@@ -147,7 +147,7 @@ The AEMFD Compatibility package allows you to use the following assets from AEM 
 
 #### Configure Dispatcher {#configure-dispatcher}
 
-Dispatcher is Adobe Experience Manager's caching and/or load balancing tool that can be used in conjunction with an enterprise-class web server. If you use [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), then perform the following configurations for AEM Forms:
+Dispatcher is Adobe Experience Manager's caching and load balancing tool that is used with an enterprise-class web server. If you use [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en), then perform the following configurations for AEM Forms:
 
 1. Configure access for AEM Forms:
 
@@ -155,21 +155,21 @@ Dispatcher is Adobe Experience Manager's caching and/or load balancing tool that
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Save and Close the file. For detailed information about filters, see [Dispatcher documentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Save and Close the file. For detailed information about filters, see [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
 
 1. Configure the referrer filter service:
 
-   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://'server':[port_number]/system/console/configMgr. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://'[server]:[port]'.
+   Log in to the Apache Felix configuration manager as an administrator. The Default URL of the configuration manager is https://'server':[port_number]/system/console/configMgr. In the **Configurations** menu, select the **Apache Sling Referrer Filter** option. In the Allow Hosts field, enter host name of the Dispatcher to allow it as a referrer and click **Save**. The format of the entry is https://'[server]:[port]'.
 
 #### Integrate Adobe Target {#integrate-adobe-target}
 
-Your customers are likely to abandon an interactive communication if the experience it delivers is not engaging. While it is frustrating for the customers, it can also upturn the support volume and cost for your organization. It is critical and challenging to identify and provide the right customer experience that increases the conversion rate. AEM forms holds the key to this problem.
+Your customers are likely to abandon an interactive communication if the experience it delivers is not engaging. While it is frustrating for the customers, it also upturns the support volume and cost for your organization. It is critical and challenging to identify and provide the right customer experience that increases the conversion rate. AEM forms holds the key to this problem.
 
-AEM forms integrates with Adobe Target, an Adobe Marketing Cloud solution, to deliver personalized and engaging customer experiences across multiple digital channels. To use Adobe Target to personalize an interactive communication, [Integrate Adobe Target with AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM forms integrates with Adobe Target, an Adobe Experience Cloud solution, to deliver personalized and engaging customer experiences across multiple digital channels. To use Adobe Target to personalize an interactive communication, [Integrate Adobe Target with AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
-#### Configure SSL communcation for Form Data Model  {#configure-ssl-communcation-for-form-data-model}
+#### Configure SSL communication for Form Data Model  {#configure-ssl-communcation-for-form-data-model}
 
-You can enable SSL communication for Form Data Model. To enable SSL communication for Form data model, before starting any AEM Forms instance, add certificates to Java Trust Store of all the instances. You can run the below command to add the certificates:
+You can enable SSL communication for Form Data Model. To enable SSL communication for Form data model, before starting any AEM Forms instance, add certificates to Java&trade; Trust Store of all the instances. You can run the below command to add the certificates:
 
 `keytool -import -alias <alias-name> -file <pathTo .cer certificate file> -keystore <<pathToJRE>\lib\security\cacerts>`
 

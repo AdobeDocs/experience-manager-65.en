@@ -1,5 +1,5 @@
 ---
-title: Creating and Organizing Pages
+title: Creating and organizing pages with AEM
 description: How to create and manage pages with AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 ---

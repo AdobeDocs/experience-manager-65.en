@@ -43,24 +43,24 @@ For security information about operating systems that AEM Forms on JEE supports,
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM AIX Security Benefits</a></p> </td>
+   <td><p>IBM&reg; AIX&reg; 7.2</p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM&reg; AIX&reg; Security Benefits</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft Windows Server® 2016 </p> </td>
+   <td><p>Microsoft&reg; Windows Server&reg; 2016 </p> </td>
    <td><p><a href="https://cloudblogs.microsoft.com/windowsserver/2017/08/22/now-available-windows-server-2016-security-guide/">Windows Server 2016 Security Guide</a></p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® Linux® AP or ES</p> </td>
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat Enterprise Linux Security Guide</a></p> </td>
+   <td><p>Red Hat&reg; Linux&reg; AP or ES</p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat&reg; Enterprise Linux&reg; Security Guide</a></p> </td>
   </tr>
   <tr>
-   <td><p>Sun Solaris 11</p> </td>
+   <td><p>Sun Solaris&trade; 11</p> </td>
    <td><p><a href="https://docs.oracle.com/cd/E53394_01/html/E54807/index.html" target="_blank">Security and Hardening Guidelines</a></p> </td>
   </tr>
   <tr>
-   <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Security Guide for Release 7</a><br /> </td>
+   <td>Oracle Linux&reg; 7 Update 3</td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Security Guide for Release 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -79,7 +79,7 @@ When securing your application server, carefully consider implementing the measu
 * Enabling secure cookies
 * Closing unneeded ports
 * Limiting clients by IP addresses or domains
-* Using the Java™ Security Manager to programmatically restrict privileges
+* Using the Java&trade; Security Manager to programmatically restrict privileges
 
 For security information about application servers that AEM Forms on JEE supports, see the resources in this table.
 
@@ -92,16 +92,16 @@ For security information about application servers that AEM Forms on JEE support
  </thead>
  <tbody>
   <tr>
-   <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Search for Understanding WebLogic Security at <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td>
+   <td><p>Oracle WebLogic&reg;</p> </td>
+   <td><p>Search for Understanding WebLogic Security at <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
   </tr>
   <tr>
-   <td><p>IBM WebSphere®</p> </td>
+   <td><p>IBM&reg; WebSphere&reg;</p> </td>
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">Securing applications and their environment</a></p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat® JBoss®</p> </td>
-   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security+subsystem+configuration">Security subsystem configuration</a></p> </td>
+   <td><p>Red Hat&reg; JBoss&reg;</p> </td>
+   <td><p><a href="https://docs.jboss.org/author/display/AS7/Security%20subsystem%20configuration.html">Security subsystem configuration</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -113,7 +113,7 @@ When securing your database, consider implementing the measures described by you
 * Restricting operations with access control lists (ACLs)
 * Using non-standard ports
 * Hiding the database behind a firewall
-* Encrypting sensitive data before writing it to the database (see the database manufacturer’s documentation)
+* Encrypting sensitive data before writing it to the database (see the database manufacturer's documentation)
 
 For security information about databases that AEM Forms on JEE supports, see the resources in this table.
 
@@ -126,11 +126,11 @@ For security information about databases that AEM Forms on JEE supports, see the
  </thead>
  <tbody>
   <tr>
-   <td><p>IBM DB2® 11.1</p> </td>
-   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2 Product Family Library</a></p> </td>
+   <td><p>IBM&reg; DB2&reg; 11.1</p> </td>
+   <td><p><a href="https://www-01.ibm.com/software/data/db2/library/">DB2&reg; Product Family Library</a></p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft SQL Server 2016</p> </td>
+   <td><p>Microsoft&reg; SQL Server 2016</p> </td>
    <td>Search the Web for "SQL Server 2016: Security"</td>
   </tr>
   <tr>
@@ -138,7 +138,7 @@ For security information about databases that AEM Forms on JEE supports, see the
    <td><p><a href="https://dev.mysql.com/doc/refman/5.0/en/security.html">MySQL 5.0 General Security Issues</a></p> <p><a href="https://dev.mysql.com/doc/refman/5.1/en/security.html">MySQL 5.1 General Security Issues</a></p> </td>
   </tr>
   <tr>
-   <td><p>Oracle® 12c</p> </td>
+   <td><p>Oracle&reg; 12c</p> </td>
    <td><p>See the Security chapter in the <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g documentation</a></p> </td>
   </tr>
  </tbody>
@@ -155,7 +155,7 @@ This table describes the default ports that are required to be open during your 
  </thead>
  <tbody>
   <tr>
-   <td><p>JBoss</p> </td>
+   <td><p>JBoss&reg;</p> </td>
    <td><p>8080</p> </td>
   </tr>
   <tr>
@@ -167,7 +167,7 @@ This table describes the default ports that are required to be open during your 
    <td><p>Set by administrator during configuration</p> </td>
   </tr>
   <tr>
-   <td>><p>WebSphere</p> </td>
+   <td>><p>WebSphere&reg;</p> </td>
    <td><p>9060, if Global Security is enabled the default SSL port value is 9043.</p> <p>9080</p> </td>
   </tr>
   <tr>
@@ -187,7 +187,7 @@ This table describes the default ports that are required to be open during your 
    <td><p>1521</p> </td>
   </tr>
   <tr>
-   <td>><p>DB2</p> </td>
+   <td>><p>DB2&reg;</p> </td>
    <td><p>50000</p> </td>
   </tr>
   <tr>
@@ -201,22 +201,22 @@ This table describes the default ports that are required to be open during your 
  </tbody>
 </table>
 
-### Configuring JBoss to use a non-default HTTP port {#configuring-jboss-to-use-a-non-default-http-port}
+### Configuring JBoss&reg; to use a non-default HTTP port {#configuring-jboss-to-use-a-non-default-http-port}
 
-JBoss Application Server uses 8080 as the default HTTP port. JBoss also has pre-configured ports 8180, 8280, and 8380, which are commented out in the jboss-service.xml file. If you have an application on your computer that already uses this port, change the port that AEM Forms on JEE uses by following these steps:
+JBoss&reg; Application Server uses 8080 as the default HTTP port. JBoss&reg; also has pre-configured ports 8180, 8280, and 8380, which are commented out in the jboss-service.xml file. If you have an application on your computer that already uses this port, change the port that AEM Forms on JEE uses by following these steps:
 
 1. Open the following file for editing:
 
-   Single Server installation: [JBoss root]/standalone/configuration/standalone.xml
+   Single-Server installation: [JBoss&reg; root]/standalone/configuration/standalone.xml
 
-   Cluster installtions: [JBoss root]/domain/configuration/domain.xml
+   Cluster installtions: [JBoss&reg; root]/domain/configuration/domain.xml
 
-1. Chnage the value of **port** attribute in the **&lt;socket-binding&gt;** tag to a custom port number. For example, the following uses port 8090:
+1. Change the value of **port** attribute in the **&lt;socket-binding&gt;** tag to a custom port number. For example, the following uses port 8090:
 
    &lt;socket-binding name="http" port="8090"/&gt;
 
 1. Save and close the file.
-1. Restart the JBoss application server.
+1. Restart the JBoss&reg; application server.
 
 ## AEM Forms on JEE security considerations {#aem-forms-on-jee-security-considerations}
 
@@ -238,10 +238,10 @@ The lc_[database].xml file should not contain password in clear text format. Con
 
 >[!NOTE]
 >
->The AEM Forms on JEE JBoss turnkey installer encrypts the database password.
+>The AEM Forms on JEE JBoss&reg; turnkey installer encrypts the database password.
 
-IBM WebSphere Application Server and Oracle WebLogic Server may encrypt data source passwords by default. However, confirm with your application server documentation to ensure that this is happening.
+IBM&reg; WebSphere&reg; Application Server and Oracle WebLogic Server may encrypt data source passwords by default. However, you should confirm with your application server documentation to ensure that it is happening.
 
 ### Protecting the private key stored in Trust Store {#protecting-the-private-key-stored-in-trust-store}
 
-The private keys or credentials imported in Trust Store are stored in AEM Forms on JEE database. Take appropriate precautions to secure the database and restrict the access only to designated administrators.
+The private keys or credentials imported in Trust Store are stored in AEM Forms on JEE database. To secure the database and restrict access to designated administrators only, take appropriate precautions.

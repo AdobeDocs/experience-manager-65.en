@@ -54,7 +54,7 @@ Select the letter to preview using the following steps:
 
    >[!NOTE]
    >
-   >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >For more information on switching between HTML or PDF rendition mode of letter preview, see [Change rendition mode of letter](#changerenditionmode). For more information on PDF support in Correspondence Management and AEM, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Enter data {#enterdata}
 
@@ -122,7 +122,7 @@ In the content tab, manage the content such as document fragments and content va
 
 1. If required, insert special characters in the correspondence. For example, you can use the Special Characters palette to insert:
 
-    * Currency symbols such as €,￥, and £
+    * Currency symbols such as &euro;,￥, and £
     * Mathematical symbols such as ∑, √, ∂, and ^
     * Punctuation symbols such as ‟ and "
 
@@ -372,7 +372,7 @@ For more information on scripting support in HTML5 forms, see [Scripting support
 
 By default, the Create Correspondence UI uses the HTML or mobile forms to render the letter preview. The mobile forms preview has no issues rendering in any browser, as it uses the browser's native plug-in and requires no additional plug-ins. You can change the letter preview mode to PDF. However, browser constraints may create issues for different features of the interactive PDF preview of the letter.
 
-For more information on browser compatibility with letter preview, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+For more information on browser compatibility with letter preview, see [Discontinuation of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 To change the preview mode of the letter, complete the following steps:
 

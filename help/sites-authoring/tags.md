@@ -1,8 +1,6 @@
 ---
-title: Using Tags
-seo-title: Using Tags
-description: Tags are a quick and easy method of classifying content within a website
-seo-description: Tags are a quick and easy method of classifying content within a website
+title: Using tags to classify content in a website
+description: Tags are a quick and easy method of classifying content within a website.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

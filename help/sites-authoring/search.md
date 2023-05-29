@@ -1,8 +1,6 @@
 ---
-title: Search
-seo-title: Search
-description: Find your content faster with comprehensive search
-seo-description: Find your content faster with comprehensive search
+title: Comprehensive search
+description: Find your content faster with comprehensive search.
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

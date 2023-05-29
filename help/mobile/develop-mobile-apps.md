@@ -1,8 +1,6 @@
 ---
-title: Mobile Apps
-seo-title: Mobile Apps
+title: Mobile Apps administration
 description: This page serves as a landing page to get started with authoring, developing, and administering mobile apps.
-seo-description: This page serves as a landing page to get started with authoring, developing, and administering mobile apps.
 uuid: 0cc9e6d6-c6ea-48f9-9b7f-9ead0f2d199e
 contentOwner: msm-service
 content-type: reference
