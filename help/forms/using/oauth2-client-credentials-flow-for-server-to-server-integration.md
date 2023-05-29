@@ -51,7 +51,7 @@ Swagger is an open-source set of rules, specifications, and tools to develop and
 1. Select the **[!UICONTROL Swagger Source]** as **[!UICONTROL File].** 
     >[!NOTE]
     >
-    > As soon as the swagger file is selected, to validate the scheme, the Host and Base path are populated automatically.
+    > As soon as the swagger file is selected, the Scheme, the Host name and Base path are populated automatically.
 
 1. Upload the created swagger file from your local machine by clicking **[!UICONTROL Browse]**.
 1. Select the **[!UICONTROL Authentication Type]** as **[!UICONTROL OAuth 2.0]** and the **[!UICONTROL Authentication Settings]** panel appears.
