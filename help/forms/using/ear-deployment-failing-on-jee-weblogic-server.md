@@ -23,7 +23,7 @@ To resolve the issue, follow these steps:
 
 1. Go to the `<domain_home>\bin` directory of installed WebLogic JEE server.
 
-1. Edit the `setDomainEnv.cmd` or `setDomainEnv.sh` file, as applicable.
+1. Edit the `setDomainEnv.cmd` or `setDomainEnv.sh` file, as `applicable`.
 
 1. Search for the last occurrence of `JAVA_OPTS` and add `-DANTLR_USE_DIRECT_CLASS_LOADING=true` to it. For example, the updated string appears as:
 
