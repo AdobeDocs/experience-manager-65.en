@@ -21,11 +21,11 @@ Access an external SQL database to so that your CQ applications can interact wit
 
 ## Bundling the JDBC Database Driver {#bundling-the-jdbc-database-driver}
 
-Some database vendors provide JDBC drivers in an OSGi bundle, for example [MySQL](https://www.mysql.com/downloads/connector/j/). If the JDBC driver for your database is not available as an OSGi bundle, obtain the driver JAR and wrap it in an OSGi bundle. The bundle must export the packages that are required for interacting with the database server. The bundle must also import the packages that it references.
+Some database vendors provide JDBC drivers in an OSGi bundle, for example [MySQL](https://dev.mysql.com/downloads/connector/j/). If the JDBC driver for your database is not available as an OSGi bundle, obtain the driver JAR and wrap it in an OSGi bundle. The bundle must export the packages that are required for interacting with the database server. The bundle must also import the packages that it references.
 
-The following example uses the [Bundle plugin for Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) to wrap the HSQLDB driver in an OSGi bundle. The POM instructs the plugin to embed the hsqldb.jar file that is identified as a dependency. All org.hsqldb packages are exported.
+The following example uses the [Bundle plug-in for Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) to wrap the HSQLDB driver in an OSGi bundle. The POM instructs the plugin to embed the hsqldb.jar file that is identified as a dependency. All org.hsqldb packages are exported.
 
-The plugin automatically determines which packages to import and lists them in the MANIFEST.MF file of the bundle. If any of the packages are not available on the CQ server, the bundle will not start upon installing. Two possible solutions are as follows:
+The plugin automatically determines which packages to import and lists them in the MANIFEST.MF file of the bundle. If any of the packages are not available on the CQ server, the bundle does not start on installation. Two possible solutions are as follows:
 
 * Indicate in the POM that the packages are optional. Use this solution when the JDBC connection does not actually require the package members. Use the Import-Package element to indicate optional packages as in the following example:
 
@@ -80,9 +80,9 @@ Knowledge of the source code enables you to decide which solution to use. You ca
 
 The following links open the download pages for some popular database products:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
-* [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
-* [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
+* [Microsoft&reg; SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
+* [IBM&reg; DB2&reg;](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
 ### Configuring the JDBC Connection Pool Service {#configuring-the-jdbc-connection-pool-service}
 
@@ -90,11 +90,11 @@ Add a configuration for the JDBC Connections Pool service that uses the JDBC dri
 
 JDBC Connections Pool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) is a factory service. If you require connections that use different properties, for example read-only or read/write access, create multiple configurations.
 
-When working with CQ there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
+When working with CQ, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details.
 
 The following properties are available to configure a pooled connection service. The property names are listed as they appear in the Web Console. The corresponding name for a `sling:OsgiConfig` node appears in parentheses. Example values are shown for an HSQLDB server and a database that has an alias of `mydb`:
 
-* JDBC Driver Class ( `jdbc.driver.class`): The Java class to use that implements the java.sql.Driver interface, for example `org.hsqldb.jdbc.JDBCDriver`. The data type is `String`.
+* JDBC Driver Class ( `jdbc.driver.class`): The Java&trade; class to use that implements the java.sql.Driver interface, for example `org.hsqldb.jdbc.JDBCDriver`. The data type is `String`.
 
 * JDBC Connection URI ( `jdbc.connection.uri`): The URL of the database to use to create the connection, for example `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. The format of the URL must be valid for use with the getConnection method of the java.sql.DriverManager class. The data type is `String`.
 
@@ -115,13 +115,13 @@ The following properties are available to configure a pooled connection service.
 
 * Additional Service Properties ( `datasource.svc.properties`): A set of name/value pairs that you want to append to the connection URL. The data type is `String[]`.
 
-The JDBC Connections Pool service is a factory. Therefore, if you use a `sling:OsgiConfig` node to configure the connection service, the name of the node must include the factory service PID followed by *`-alias`*. The alias that you use must be unique for all configuration nodess for that PID. An example node name is `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+The JDBC Connections Pool service is a factory. Therefore, if you use a `sling:OsgiConfig` node to configure the connection service, the name of the node must include the factory service PID followed by *`-alias`*. The alias that you use must be unique for all configuration nodes for that PID. An example node name is `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### Connecting to the Database {#connecting-to-the-database}
 
-In your Java code, use the DataSourcePool service to obtain a `javax.sql.DataSource` object for the configuration that you created. The DataSourcePool service provides the `getDataSource` method that returns a `DataSource` object for a given data source name. As the method argument, use the value of the Datasource Name (or `datasource.name`) property that you specified for the JDBC Connections Pool configuration.
+In your Java&trade; code, use the DataSourcePool service to obtain a `javax.sql.DataSource` object for the configuration that you created. The DataSourcePool service provides the `getDataSource` method that returns a `DataSource` object for a given data source name. As the method argument, use the value of the Datasource Name (or `datasource.name`) property that you specified for the JDBC Connections Pool configuration.
 
 The following example JSP code obtains an instance of the hsqldbds data source, executes a simple SQL query, and displays the number of results that are returned.
 
@@ -163,9 +163,10 @@ The following example JSP code obtains an instance of the hsqldbds data source, 
 
 >[!NOTE]
 >
->If the getDataSource method throws an exception becuase the datasource is not found, make sure the Connections Pool service configuration is correct. Verify the property names, values, and data types.
+>If the getDataSource method throws an exception because the datasource is not found, make sure that the Connections Pool service configuration is correct. Verify the property names, values, and data types.
 >
 
+<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->

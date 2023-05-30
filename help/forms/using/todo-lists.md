@@ -34,16 +34,16 @@ You can perform some actions without opening the task by clicking the icons that
 
 When opening and working on a task, the tools that are available to you depend on the task. Different tasks require you to perform different actions and, for this reason, some tools may or may not be available to you. The typical tasks that you may receive are described below.
 
-**Provide information**: You receive a task that requires you to complete and submit a form.
+* **Provide information**: You receive a task that requires you to complete and submit a form.
 
-**Review information**: You receive a task that requires you to review the information and sign off on the content.
+* **Review information**: You receive a task that requires you to review the information and sign off on the content.
 
-**Multiuser review**: You receive a task at the same time other users receive the task. You and the other users must either provide information or review the content, or both. The following tools may be available with this type of task:
+* **Multiuser review**: You receive a task at the same time other users receive the task. You and the other users must either provide information or review the content, or both. The following tools may be available with this type of task:
 
-* Viewing the instructions for the task
-* Viewing the completion status of all users who are assigned the task
-* Viewing the comments of all users who are assigned the task
-* Adding comments to the task yourself
+   * Viewing the instructions for the task
+   * Viewing the completion status of all users who are assigned the task
+   * Viewing the comments of all users who are assigned the task
+   * Adding comments to the task yourself
 
 Additional tools that may be available with any of the above tasks include the following:
 
@@ -100,17 +100,17 @@ When you open and claim a task from a group or shared list, the task is moved fr
 
 After opening a task, the tabs that are displayed in the main pane and the tools that are available to you depend on the task. The tabs that you may see are described below:
 
-**Task Summary**: When a task opens, the Task Summary pane allows you to show information about the task, if it exists, using a URL specified in the process at Assign Task step. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end-user of AEM Forms workspace. This tab is not available, if the Task Summary URL does not exist.
+* **Task Summary**: When a task opens, the Task Summary pane allows you to show information about the task, if it exists, using a URL specified in the process at Assign Task step. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end-user of AEM Forms workspace. This tab is not available, if the Task Summary URL does not exist.
 
-**Details**: Provides some information about the current task and process that it belongs to.
+* **Details**: Provides some information about the current task and process that it belongs to.
 
-**Form**: Displays the form that is associated with the task. The form can be of many file types, including PDF, HTML, Guide, and SWF file. The form can look like a regular printable or web-based form or guide you through a series of wizard-style panels to gather information.
+* **Form**: Displays the form that is associated with the task. The form can be of many file types, including PDF, HTML, Guide, and SWF file. The form can look like a regular printable or web-based form or guide you through a series of wizard-style panels to gather information.
 
-**History**: Lists the tasks that are part of the process instance and the associated form, task assignments, and attachments for each task.
+* **History**: Lists the tasks that are part of the process instance and the associated form, task assignments, and attachments for each task.
 
-**Attachments**: Displays existing attachments that are associated with the task and add attachments, if necessary.
+* **Attachments**: Displays existing attachments that are associated with the task and add attachments, if necessary.
 
-**Notes**: Displays the existing notes associated with the task and add notes, if necessary.
+* **Notes**: Displays the existing notes associated with the task and add notes, if necessary.
 
 When working on a task, the tools you may see and actions you can take are described below.
 
@@ -275,7 +275,9 @@ The email messages may contain a link that opens the task in AEM Forms workspace
 
 >[!NOTE]
 >
->To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>* To configure the workspace to use the appropriate email templates, see the [AEM Forms JEE Administrator Guide](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/).
+>
+>* If drafts are forwarded after submitting the task in the AEM Forms workspace, email notifications are sent. If drafts are forwarded from the startpoint of the AEM Forms workspace, no email notifications are sent.
 
 When you complete a task through email, the task is removed from your To-do list in AEM Forms workspace.
 

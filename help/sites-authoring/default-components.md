@@ -1,8 +1,6 @@
 ---
-title: Components
-seo-title: Components
-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
-seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
+title: Default components
+description: Adobe Experience Manager comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors.
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -51,7 +49,7 @@ The [Components Console](/help/sites-authoring/default-components-console.md) gi
 
 The following pages provide links to some of additional, important information about components:
 
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) - The Core Components offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) - The Core Components offer flexible and feature-rich authoring functionality, which provide essential content types to create pages.
 
 * [Communities](/help/communities/author-communities.md) - Components provide interactive features for a website, such as forums and comments. Many of these components are included when a [Community Site](/help/communities/overview.md) is created.
 

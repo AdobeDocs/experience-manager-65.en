@@ -1,8 +1,8 @@
 ---
 title: Performance Optimization
-seo-title: Performance Optimization
+
 description: Learn how to configure certain aspects of AEM to optimize performance.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
+
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,28 +20,28 @@ exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 >
 >For more information about troubleshooting and fixing performance issues, also see the [Performance tree](/help/sites-deploying/performance-tree.md).
 >
->Additionally, you can review a Knowledge Base article on [Performance Tuning Tips.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>Also, you can review a Knowledge Base article on [Performance Tuning Tips](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
-A key issue is the time your website takes to respond to visitor requests. Although this value will vary for each request, an average target value can be defined. Once this value is proven to be both achievable and maintainable, it can be used to monitor the performance of the website and indicate the development of potential problems.
+A key issue is the time that your website takes to respond to visitor requests. Although this value varies for each request, an average target value can be defined. Once this value is proven to be both achievable and maintainable, it can be used to monitor the performance of the website and indicate the development of potential problems.
 
-The response times you will be aiming for will be different on the author and publish environments, reflecting the different characteristics of the target audience:
+The response times that you are aiming for are different on the author and publish environments, reflecting the different characteristics of the target audience:
 
 ## Author Environment {#author-environment}
 
-This environment is used by authors entering, and updating content. It must cater for a small number of users who each generate a high number of performance intensive requests when updating content pages and the individual elements on those pages.
+This environment is used by authors entering and updating content. It must cater for a few users who each generate a high number of performance intensive requests when updating content pages and the individual elements on those pages.
 
 ## Publish Environment {#publish-environment}
 
-This environment contains content which you make available to your users. Here the number of requests is even greater and the speed is just as vital, but since the nature of the requests is less dynamic, additional performance enhancing mechanisms can be applied; such as caching the content or load-balancing.
+This environment contains content which you make available to your users. Here the number of requests is even greater and the speed is as vital. But because the nature of the requests is less dynamic, additional performance enhancing mechanisms can be applied; such as caching the content or load-balancing.
 
 >[!NOTE]
 >
 >* After configuring for performance optimization, follow the procedures in [Tough Day](/help/sites-developing/tough-day.md) to test the environment under heavy load.
->* See also [Performance tuning tips.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>* See also [Performance tuning tips.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
 
 ## Performance Optimization Methodology {#performance-optimization-methodology}
 
-A performance optimization methodology for AEM projects can be summed up in five very simple rules that can be followed to avoid performance issues from the start:
+A performance optimization methodology for AEM Projects can be summed up in five simple rules that can be followed to avoid performance issues from the start:
 
 1. [Planning for Optimization](#planning-for-optimization)
 1. [Simulate Reality](#simulate-reality)
@@ -49,17 +49,17 @@ A performance optimization methodology for AEM projects can be summed up in five
 1. [Stay Relevant](#stay-relevant)
 1. [Agile Iteration Cycles](#agile-iteration-cycles)
 
-These rules, to a large degree, apply to web projects in general, and are relevant to project managers and system administrators to ensure that their projects will not face performance challenges when launch time comes.
+These rules apply to web projects in general, and are relevant to project managers and system administrators to ensure that their projects do not face performance challenges when launch time comes.
 
 ### Planning for Optimization {#planning-for-optimization}
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
-Around 10% of the project effort should be planned for the performance optimization phase. Of course, the actual performance optimization requirements will depend on the level of complexity of a project and the experience of the development team. While your project may (ultimately) not require all of the allocated time, it is good practice to always plan for performance optimization in the suggested region.
+Plan about 10% of the project effort for the performance optimization phase. The actual performance optimization requirements depend on the level of complexity of a project and the experience of the development team. While your project may (ultimately) not require the allocated time, it is good practice to always plan for performance optimization in the suggested region.
 
-Whenever possible, a project should first be soft-launched to a limited audience in order to gather real-life experience and perform further optimizations, without the additional pressure that follows a full announcement.
+Whenever possible, a project should first be soft-launched to a limited audience to gather real-life experience and perform further optimizations, without the additional pressure that follows a full announcement.
 
-Once you are "live", performance optimization is not over. This is the point in time when you experience the "real" load on your system. It is important to plan for additional adjustments after the launch.
+After you are "live", performance optimization is not over. It is now when you experience the "real" load on your system. It is important to plan for additional adjustments after the launch.
 
 Since your system load changes and the performance profiles of your system shifts over time, a performance "tune-up" or "health-check" should be scheduled at 6-12 months intervals.
 
@@ -67,15 +67,15 @@ Since your system load changes and the performance profiles of your system shift
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-If you go live with a website and find out after the launch that you run into performance issues there is only one reason for that: Your load and performance tests did not simulate reality closely enough.
+If you go live with a website, then find out after the launch that you run into performance issues, it is likely because your load and performance tests did not simulate reality closely enough.
 
-Simulating reality is difficult and how much effort you will reasonably want to invest into getting "real" depends on the nature of your project. "Real" means not just "real code" and "real traffic", but also "real content", especially regarding content size and structure. Keep in mind that your templates may behave completely different depending on the size and structure of the repository.
+Simulating reality is difficult and how much effort that you want to invest into getting "real" depends on the nature of your project. "Real" means not just "real code" and "real traffic", but also "real content", especially regarding content size and structure. Your templates may behave differently depending on the size and structure of the repository.
 
 ### Establish Solid Goals {#establish-solid-goals}
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-The importance of properly establishing performance goals is not to be underestimated. Often, once people become focused on specific performance goals it is very hard to change these goals afterwards, even if they are based on wild assumptions.
+The importance of properly establishing performance goals is not to be underestimated. Often, after people become focused on specific performance goals it is hard to change these goals afterwards, even if they are based on assumptions.
 
 Establishing good, solid performance goals is really one of the trickiest areas. It is often best to collect real life logs and benchmarks from a comparable website (for example the new website's predecessor).
 
@@ -83,24 +83,24 @@ Establishing good, solid performance goals is really one of the trickiest areas.
 
 ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-It is important to optimize one bottleneck at a time. If you try to do things in parallel without validating the impact of the one optimization, you will lose track of which optimization measure actually helped.
+It is important to optimize one bottleneck at a time. If you try to do things in parallel without validating the impact of the one optimization, you can lose track of which optimization measure helped.
 
 ### Agile Iteration Cycles {#agile-iteration-cycles}
 
 ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
-Performance tuning is an iterative process that involves, measuring, analysis, optimization and validation until the goal is reached. In order to properly take this aspect into account, implement an agile validation process in the optimization phase rather than a more heavy-weight testing process after each iteration.
+Performance tuning is an iterative process that involves, measuring, analysis, optimization, and validation until the goal is reached. To account for this aspect, implement an agile validation process in the optimization phase rather than a more heavy-weight testing process after each iteration.
 
-This largely means that the developer implementing the optimization should have a quick way to tell if the optimization has already reached the goal. This is valuable information, because when the goal is reached, optimization is over.
+This focus means that the developer implementing the optimization should have a quick way to tell if the optimization has already reached the goal. This information is valuable, because when the goal is reached, optimization is over.
 
 ## Basic Performance Guidelines {#basic-performance-guidelines}
 
-Generally speaking, keep your uncached html requests to less than 100ms. More specifically, the following may serve as a guideline:
+Generally speaking, keep your uncached html requests to less than 100 milliseconds. More specifically, the following may serve as a guideline:
 
-* 70% of the requests for pages should be responded to in less than 100ms.
-* 25% of the requests for pages should get a response within 100ms-300ms.
-* 4% of the requests for pages should get a response within 300ms-500ms.
-* 1% of the requests for pages should get a response within 500ms-1000ms.
+* 70% of the requests for pages should be responded to in less than 100 milliseconds.
+* 25% of the requests for pages should get a response within 100 milliseconds - 300 milliseconds.
+* 4% of the requests for pages should get a response within 300 milliseconds - 500 milliseconds.
+* 1% of the requests for pages should get a response within 500 milliseconds - 1000 milliseconds.
 * No pages should respond slower than 1 second.
 
 The above numbers assume the following conditions:
@@ -111,20 +111,20 @@ The above numbers assume the following conditions:
 * Only for complex items with many dependencies (HTML, JS, PDF, ...)
 * No other load on the system
 
-There are a certain number of issues that frequently contribute to performance problems. These mainly revolve around:
+There are some issues that frequently contribute to performance problems, including the following:
 
 * Dispatcher caching inefficiency
 * The use of queries in normal display templates.
 
-JVM and OS level tuning do not usually lead to big leaps in performance and should therefore be performed at the very end of the optimization cycle.
+JVM and OS level tuning do not usually lead to significant leaps in performance and should therefore be performed at the very end of the optimization cycle.
 
-The way a content repository is structured can impact performance as well. For best performance, the number of child nodes attached to individual nodes in a content repository should not exceed 1,000 (as a general rule).
+The way a content repository is structured can impact performance as well. For best performance, the number of child nodes attached to individual nodes in a content repository should not exceed 1,000 (as a rule).
 
 Your best friends during a usual performance optimization exercise are:
 
 * The `request.log`
-* Component based timing
-* Last but not least a java profiler.
+* Component-based timing
+* A Java&trade; profiler.
 
 ### Performance when loading and editing Digital Assets {#performance-when-loading-and-editing-digital-assets}
 
@@ -135,29 +135,29 @@ Two things affect performance here:
 * CPU - multiple cores allow for smoother work when transcoding
 * Hard disk - parallel RAID disks achieve the same
 
-To improve performance you can consider the following:
+To improve performance, consider the following:
 
 * How many assets are going to be uploaded per day? A good estimate can be based on:
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-* The time frame in which edits will be made (typically the length of the working day, more for international operations).
+* The time frame in which edits are made (typically the length of the working day, more for international operations).
 * The average size of images uploaded (and the size of renditions generated per image) in megabytes.
 * Determine the average data rate:
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
-* 80% of all edits will be made in 20% of the time, so in peak time you will have 4 times the average data rate. This is your performance goal.
+* 80% of all edits are made in 20% of the time, so in peak time you have four times the average data rate. Such performance is your goal.
 
 ## Performance Monitoring {#performance-monitoring}
 
-Performance (or the lack of it) is one of the first things that your users notice, so as with any application with a user interface, performance is of key importance. To optimize the performance of your AEM installation you need to monitor various attributes of the instance and its behavior.
+Performance (or the lack of it) is one of the first things that your users notice, so as with any application with a user interface, performance is of key importance. To optimize the performance of your AEM installation, monitor various attributes of the instance and its behavior.
 
 For information about how to perform performance monitoring, see [Monitoring Performance](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
 
 The problems that cause performance issues are often difficult to track down, even when their effects are easy to see.
 
-A basic starting point is a good knowledge of your system when it is operating as normal. Unless you know how your environment "looks" and "behaves" when it is performing properly, it can be difficult to locate the problem when performance deteriorates. This means that you should spend some time investigating your system when it is running smoothly and ensure that collecting performance information is an ongoing task. This will provide you with a basis for comparison should the performance suffer.
+A basic starting point is a good knowledge of your system when it is operating as normal. Unless you know how your environment "looks" and "behaves" when it performs properly, it is difficult to locate the problem when performance deteriorates. Spend time investigating your system when it is running smoothly and ensure that collecting performance information is an ongoing task. Doing so provides you with a basis for comparison should the performance suffer.
 
 The following diagram illustrates the path that a request for AEM content can take, and therefore the number of different elements which can impact the performance.
 
@@ -166,9 +166,9 @@ The following diagram illustrates the path that a request for AEM content can ta
 Performance is also a balance between volume and capacity:
 
 * **Volume** - The amount of output that is processed and delivered by the system.
-* **Capacity** - The system’s ability to deliver the volume.
+* **Capacity** - The system's ability to deliver the volume.
 
-This can be illustrated in various locations throughout the web-chain.
+Performance can be illustrated in various locations throughout the web-chain.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -191,15 +191,15 @@ Certain rules should be kept in mind when optimizing performance:
 
 >[!NOTE]
 >
->Bear in mind that the mechanism you use to measure performance will often affect exactly what you are trying to measure. You should always try to account for these discrepancies, and eliminate as much of their effect as possible; in particular browser plug-ins should be de-activated wherever possible.
+>Bear in mind that the mechanism you use to measure performance often affects exactly what you are trying to measure. Try to account for these discrepancies, and eliminate as much of their effect as possible; in particular browser plug-ins should be de-activated wherever possible.
 
 ## Configuring for Performance {#configuring-for-performance}
 
-Certain aspects of AEM (and/or the underlying repository) can be configured to optimize performance. The following are possibilities and suggestions, you must sure of whether, or how, you use the functionality in question before making changes.
+Certain aspects of AEM (and/or the underlying repository) can be configured to optimize performance. The following are possibilities and suggestions, you must be sure of whether, or how, you use the functionality in question before making changes.
 
 >[!NOTE]
 >
->For additional information please see the [KB article](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>See [Performance Optimization](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 
 ### Search Indexing {#search-indexing}
 
@@ -212,14 +212,14 @@ You can find the updated indexing information here:
 
 ### Concurrent Workflow Processing {#concurrent-workflow-processing}
 
-Limit the number of concurrently running workflow processes to improve performance. By default, the workflow engine processes as many workflows in parallel as there are processors available to the Java VM. When workflow steps require large amounts of processing resources (RAM or CPU), running several of these workflows in parallel can place high demands on available server resources.
+To improve performance, limit the number of concurrently running workflow processes. By default, the workflow engine processes as many workflows in parallel as there are processors available to the Java&trade; VM. When workflow steps require large amounts of processing resources (RAM or CPU), running several of these workflows in parallel can place high demands on available server resources.
 
-For example, when images (or DAM assets in general) are uploaded, workflows automatically import the images into DAM. Images are often high-resolution and that can easily consume hundreds of MB of heap for processing. Handling these images in parallel places a high load on the memory subsystem and the garbage collector.
+For example, when images (or DAM assets in general) are uploaded, workflows automatically import the images into DAM. Images are often high resolution and that can easily consume hundreds of MB of heap for processing. Handling these images in parallel places a high load on the memory subsystem and the garbage collector.
 
 The workflow engine uses Apache Sling job queues for handling and scheduling work item processing. The following job queue services have been created by default from the Apache Sling Job Queue Configuration service factory for processing workflow jobs:
 
 * Granite Workflow Queue: Most workflow steps, such as the ones that process DAM assets, use the Granite Workflow Queue service.
-* Granite Workflow External Process Job Queue: This service is used for special external workflow steps that are typically used for contacting an external system and polling for results. For example the InDesign Media Extraction Process step is implemented as an external process. The workflow engine uses the external queue for processing the polling. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Granite Workflow External Process Job Queue: This service is used for special external workflow steps that are typically used for contacting an external system and polling for results. For example, the InDesign Media Extraction Process step is implemented as an external process. The workflow engine uses the external queue for processing the polling. (See [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Configure these services to limit the maximum number of concurrently running workflow processes.
 
@@ -229,15 +229,15 @@ Configure these services to limit the maximum number of concurrently running wor
 
 #### Configuration in the Repository {#configuration-in-the-repo}
 
-If you are configuring the services [using a sling:OsgiConfig node](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), you need to find the PID of the existing services, for example: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. You can discover the PID using the Web Console.
+If you are configuring the services [using a sling:OsgiConfig node](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository), you must find the PID of the existing services, for example: org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705. You can discover the PID using the Web Console.
 
-You need to configure the property named `queue.maxparallel`.
+Configure the property named `queue.maxparallel`.
 
 #### Configuration in the Web Console {#configuration-in-the-web-console}
 
 To configure these services [using the Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), locate the existing configuration items below the Apache Sling Job Queue Configuration service factory.
 
-You need to configure the property named Maximum Parallel Jobs.
+Configure the property named Maximum Parallel Jobs.
 
 ### Configure the Queue for a Specific Workflow {#configure-the-queue-for-a-specific-workflow}
 
@@ -270,29 +270,29 @@ The following procedure creates a job queue for a workflow, using the **DAM Upda
 
 ### AEM DAM Asset Synchronization Service {#cq-dam-asset-synchronization-service}
 
-The `AssetSynchronizationService` is used to synchronize assets from mounted repositories (including LiveLink, Documentum, amongst others). By default this makes a regular check every 300 seconds (5 minutes), so if you do not use mounted repositories, you can disable this service.
+The `AssetSynchronizationService` is used to synchronize assets from mounted repositories (including LiveLink, Documentum&reg;, among others). By default, this synchronization makes a regular check every 300 seconds (5 minutes), so if you do not use mounted repositories, you can disable this service.
 
-This is done by [configuring the OSGi service](/help/sites-deploying/configuring-osgi.md) **CQ DAM Asset Synchronization Service** to set the **Synchronization period** ( `scheduler.period`) to (a minimum of) 1 year (defined in seconds).
+Disabling the service is done by [configuring the OSGi service](/help/sites-deploying/configuring-osgi.md) **CQ DAM Asset Synchronization Service** to set the **Synchronization period** ( `scheduler.period`) to (a minimum of) one year (defined in seconds).
 
 ### Multiple DAM instances {#multiple-dam-instances}
 
 Deploying multiple DAM instances can help performance when, for example:
 
-* You have a high load due to regular uploading of a large number of assets for the author environment; here a separate DAM instance can be dedicated to servicing author.
-* You have multiple teams in world-wide locations (e.g. USA, Europe, Asia).
+* You have a high load due to regular uploading of many assets for the author environment; here a separate DAM instance can be dedicated to servicing author.
+* You have multiple teams in worldwide locations (for example, USA, Europe, Asia).
 
 Additional considerations are:
 
 * Separating "work in progress" on author from "final" on publish
-* Separating internal users on author from external visitors/users on publish (e.g. agents, press representatives, customers, students, etc).
+* Separating internal users on author from external visitors/users on publish (for example, agents, press representatives, customers, and students).
 
 ## Best Practices for Quality Assurance {#best-practices-for-quality-assurance}
 
-Performance is of prime importance to your publish environment. Therefore, you need to carefully plan and analyze the performance tests you will make for the publish environment while implementing your project.
+Performance is of prime importance to your publish environment. Therefore, you must carefully plan and analyze the performance tests you make for the publish environment while implementing your project.
 
-This section aims to give a standardized overview of the issues involved with defining a test concept specifically for performance tests on your *publish* environment. This is primarily of interest to QA engineers, project managers and system administrators.
+This section aims to give a standardized overview of the issues involved with defining a test concept specifically for performance tests on your *publish* environment. This information is primarily of interest to QA engineers, project managers, and system administrators.
 
-The following covers a standardized approach to performance tests for an AEM application on the *Publish* environment. This involves the following 5 phases:
+The following covers a standardized approach to performance tests for an AEM application on the *Publish* environment. This performance test involves the following five phases:
 
 * [Verification of Knowledge](#verification-of-knowledge)
 * [Definition of Scope](#scope-definition)
@@ -300,37 +300,37 @@ The following covers a standardized approach to performance tests for an AEM app
 * [Definition of Performance Goals](#defining-the-performance-goals)
 * [Optimization](#optimization)
 
-Controlling is an additional, all-encompassing process - necessary but not limited to testing.
+Controlling is an extra, all-encompassing process - necessary but not limited to testing.
 
 ### Verification of Knowledge {#verification-of-knowledge}
 
-A first step is to document the basis information which you need to know before you can start testing:
+A first step is to document the basis information which you must know before you can start testing:
 
 * The architecture of your test environment
-* An application map detailing the internal elements which will need testing (both in isolation and combination)
+* An application map detailing the internal elements which need testing (both in isolation and combination)
 
 #### Test Architecture {#test-architecture}
 
-You should clearly document the architecture of the test environment being used for your performance testing.
+Document the architecture of the test environment being used for your performance testing.
 
-You will need a reproduction of your planned production Publish environment, together with Dispatcher and Load Balancer.
+You need a reproduction of your planned production Publish environment, together with Dispatcher, and Load Balancer.
 
 #### Application Map {#application-map}
 
-To get a clear overview you can create a map of the entire application (you may well have this from tests on the Author environment).
+Get a clear overview from which you can create a map of the entire application (you may already have this map from tests on the Author environment).
 
 A diagram representation of the internal elements of the application, can give an overview of the testing requirements; with color-coding it can also act as a basis for reporting.
 
 ### Scope Definition {#scope-definition}
 
-An application will usually have a selection of use cases. Some will be very important, others less so.
+An application usually has a selection of use cases. Some use cases are important, others less so.
 
-To focus the scope of the performance testing on publish, we recommend that you define the:
+To focus the scope of the performance testing on publish, Adobe recommends that you define the following:
 
 * Most important business use cases
 * Most critical technical use cases
 
-The number of use cases is up to you, but it should be limited to an easily manageable number (e.g. between 5 to 10).
+The number of use cases is up to you, but it should be limited to an easily manageable number (for example, between 5 to 10).
 
 Once the key use cases have been selected, then the key performance indicators (KPI) and the tools used to measure them can be defined for each case. Examples of common KPIs include:
 
@@ -344,7 +344,7 @@ Once the key use cases have been selected, then the key performance indicators (
 
 ### Test Methodologies {#test-methodologies}
 
-This concept has 4 scenarios used for defining and testing the performance goals:
+This concept has four scenarios used for defining and testing the performance goals:
 
 * Single component tests
 * Combined component tests
@@ -355,27 +355,27 @@ Based on the following principles.
 
 #### Component Breakpoints {#component-breakpoints}
 
-* Each component has a specific breaking point when related to performance. This means that a component can show good performance until a specific point is reached, after which performance will degrade rapidly.
+* Each component has a specific breaking point when related to performance. That is, a component can show that good performance until a specific point is reached, after which performance degrades rapidly.
 * To get a full overview of the application, you must first verify your components to determine when the breakpoint of each is reached.
-* To find the breakpoint you can perform a load test where, over a period of time, you increase the number of users to create an increasing load. By monitoring this load, and the response of the components, you will encounter specific performance behavior when the breaking point of the component is reached. The point can be qualified by the number of concurrent transactions per second, together with the number of concurrent users (if the component is sensitive to this KPI).
+* To find the breakpoint that you can perform a load test where, over a time period, you increase the number of users to create an increasing load. By monitoring this load, and the response of the components, you encounter specific performance behavior when the breaking point of the component is reached. The point can be qualified by the number of concurrent transactions per second, together with the number of concurrent users (if the component is sensitive to this KPI).
 * This information can then act as a benchmark for improvements, indicate the efficiency of the measures being used, and help define test scenarios.
 
 #### Transactions {#transactions}
 
-* The term transaction is used to represent the request of a complete web page, including the page itself and all subsequent calls; i.e. the page request, any AJAX calls, images and other objects.**Request Drill Down**
-* To fully analyze each request you can represent each element of the call stack, then total the average processing time for each.
+* The term transaction is used to represent the request of a complete web page, including the page itself and all subsequent calls. That is, the page request, any AJAX calls, images, and other objects **Request Drill Down**.
+* To fully analyze each request, you can represent each element of the call stack, then total the average processing time for each.
 
 ### Defining the Performance Goals {#defining-the-performance-goals}
 
-Once the scope, and related KPIs have been defined, the specific performance goals can be set. This involves devising test scenarios, together with target values.
+After the scope and related KPIs are defined, the specific performance goals are set. This process involves devising test scenarios, together with target values.
 
-You will need to test performance under both average and peak conditions. In addition, you will need Going Live scenario tests to ensure that you can cater for increased interest in your website when it is first made available.
+Test performance under both average and peak conditions. In addition, you need Going Live scenario tests to ensure that you can cater for increased interest in your website when it is first made available.
 
-Any experience, or statistics which you may have collected from an existing website can also be useful in determining future goals; for example top traffic from your live website.
+Any experience, or statistics which you may have collected from an existing website can also be useful in determining future goals. For example, top traffic from your live website.
 
 #### Single Component Tests {#single-component-tests}
 
-Critical components will need to be tested - under both average and peak conditions.
+Critical components must be tested - under both average and peak conditions.
 
 In both cases, you can define the expected number of transactions per second when a predefined number of users are using the system.
 
@@ -405,7 +405,7 @@ Testing the components in combination gives a closer reflection of the applicati
 
 #### Going Live Tests {#going-live-tests}
 
-During the first few days after your website is made available, you can expect an increased level of interest. This will probably be even greater than the peak values you have been testing for. It is strongly recommended to test Going Live scenarios to ensure that the system can cater for this situation.
+During the first few days after your website is made available, you can expect an increased level of interest. This scenario is even greater than the peak values that you are testing for. Adobe recommends you test Going Live scenarios to ensure that the system can cater for this situation.
 
 | Scenario |Test Type |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
@@ -417,12 +417,12 @@ During the first few days after your website is made available, you can expect a
 
 #### Error Scenario Tests {#error-scenario-tests}
 
-Error scenarios must also be tested to ensure that the system reacts correctly and appropriately. Not only in how the error itself is handled, but the impact it may have on performance. For example:
+Test error scenarios to ensure that the system reacts correctly and appropriately. Not only in how the error itself is handled, but the impact it may have on performance. For example:
 
 * What happens when the user tries to input an invalid search term in the search box
 * What happens when the search term is so general that it returns an excessive number of results
 
-When devising these tests it should be remembered that not all scenarios will occur regularly. However, their impact on the entire system is important.
+When devising these tests, it should be remembered that not all scenarios occur regularly. However, their impact on the entire system is important.
 
 |  Error Scenario |Error Type |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
@@ -433,7 +433,7 @@ When devising these tests it should be remembered that not all scenarios will oc
 
 #### Endurance Tests {#endurance-tests}
 
-Certain issues will only be encountered after the system has been running for a continuous period of time; be that either hours or even days. An endurance test is used to test an constant average load over a required period of time. Any performance degradation can then be analyzed.
+Certain issues are only encountered after the system has been running for a continuous time period, either hours or days. An endurance test is used to test a constant average load over a required time period. Any performance degradation can then be analyzed.
 
 | Scenario |Test Type |No. of Users |Tx/sec (Expected) |Tx/sec (Tested) |Description  |
 |---|---|---|---|---|---|
@@ -445,38 +445,36 @@ Certain issues will only be encountered after the system has been running for a 
 
 ### Optimization {#optimization}
 
-In the later stages of implementation you will need to optimize the application to fulfill/maximize the performance goals.
+In the later stages of implementation, optimize the application to fulfill and maximize the performance goals.
 
 Any optimizations made must be tested to ensure they have:
 
 * Not affected the functionality
 * Been verified with the load tests before being released
 
-A selection of tools is available to help you with load-generation, performance monitoring and/or results analysis:
+A selection of tools is available to help you with load-generation, performance monitoring, and results analysis. Some of these tools include the following:
 
-* [JMeter](https://jakarta.apache.org/jmeter/)
-* [Load Runner](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
+* [JMeter](https://jmeter.apache.org/)
+* [Load Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 * [InfraRED](https://www.infraredsoftware.com/)
-* [Java Interactive Profile](https://jiprof.sourceforge.net/)
-* many more...
+* [Java&trade; Interactive Profile](https://jiprof.sourceforge.net/)
 
-After optimization, you will need to test again to confirm the impact.
+After optimization, test again to confirm the impact.
 
 ### Reporting {#reporting}
 
-Ongoing reporting will be needed to keep everyone informed of the status, as mentioned previously with color-coding the architecture map can be used for this.
+Ongoing reporting keeps everyone informed of the status. As mentioned previously with color-coding, the architecture map can be used for this status.
 
-After all tests have been completed you will want to report on:
+After all tests are completed, report on the following:
 
 * Any critical errors encountered
-* Non-critical issues which will still need further investigation
+* Non-critical issues that still need more investigation
 * Any assumptions made during testing
 * Any recommendations to arise from the testing
 
 ## Optimizing Performance when using the Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-The [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) is Adobe's caching and/or load balancing tool. When using the Dispatcher you should consider optimizing your website for cache performance.
+The [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) is Adobe's caching and/or load-balancing tool. When using the Dispatcher, consider optimizing your website for cache performance.
 
 >[!NOTE]
 >
@@ -484,23 +482,20 @@ The [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dis
 >
 >You may have been redirected to this page if you followed a link to the Dispatcher documentation that is embedded in the documentation for a previous version of AEM.
 
-The Dispatcher offers a number of built-in mechanisms that you can use to optimize performance if your website takes advantage of them. This section tells you how to design your web site to maximize the benefits of caching.
+The Dispatcher offers several built-in mechanisms that you can use to optimize performance if your website takes advantage of them. This section tells you how to design your web site to maximize the benefits of caching.
 
 >[!NOTE]
 >
->It may help you to remember that the Dispatcher stores the cache on a standard web server. This means that you:
+>It may help you to remember that the Dispatcher stores the cache on a standard web server. Knowing this information means that you can cache everything that you can store as a page and request using a URL. And, you cannot store other things, such as cookies, session data, and form data.
 >
->* Can cache everything that you can store as a page and request using an URL
->* Cannot store other things, such as cookies, session data and form data.
+>In general, numerous caching strategies involve selecting good URLs and not relying on this additional data.
 >
->In general, a lot of caching strategies involve selecting good URLs and not relying on this additional data.
->
->With Dispatcher version 4.1.11 you can also cache response headers, see [Caching HTTP Response Headers](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>With Dispatcher version 4.1.11 you can also cache response headers, see [Caching HTTP Response Headers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
 >
 
 ### Calculating the Dispatcher Cache Ratio {#calculating-the-dispatcher-cache-ratio}
 
-The cache ratio formula estimates the percentage of requests handled by the cache out of the total number of requests coming into the system. To calculate the cache ratio you need the following:
+The cache ratio formula estimates the percentage of requests handled by the cache out of the total number of requests coming into the system. To calculate the cache ratio, you need the following:
 
 * The total number of requests. This information is available in the Apache `access.log`. For more details, see the [official Apache documentation](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
 
@@ -512,7 +507,7 @@ The formula to calculate the cache ratio is:
 
 For example, if the total number of requests is 129491 and the number of requests served by the Publish instance is 58959 the cache ratio is: **(129491 - 58959)/129491= 54.5%**.
 
-If you don't have a one to one publisher/dispatcher pairing, you will need to add requests from all dispatchers and publishers together to get an accurate measurement. See also [Recommended Deployments](/help/sites-deploying/recommended-deploys.md).
+If you don't have a one-to-one publisher/dispatcher pairing, add requests from all dispatchers and publishers together to get an accurate measurement. See also [Recommended Deployments](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
@@ -520,10 +515,10 @@ If you don't have a one to one publisher/dispatcher pairing, you will need to ad
 
 #### Using Consistent Page Encoding {#using-consistent-page-encoding}
 
-With Dispatcher version 4.1.11 you can cache response headers. If you are not caching response headers on Dispatcher then problems can occur if you store page encoding information in the header. In this situation, when Dispatcher serves a page from the cache the default encoding of the web server is used for the page. There are two ways to avoid this problem:
+With Dispatcher version 4.1.11, you can cache response headers. If you are not caching response headers on Dispatcher, problems can occur if you store page encoding information in the header. In this situation, when Dispatcher serves a page from the cache the default encoding of the web server is used for the page. There are two ways to avoid this problem:
 
 * If you use only one encoding, make sure that the encoding used on the web server is the same as the default encoding of the AEM website.
-* Use a `<META>` tag in the HTML `head` section to set the encoding, as in the following example:
+* To set the encoding, use a `<META>` tag in the HTML `head` section, as in the following example:
 
 ```xml
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
@@ -531,7 +526,7 @@ With Dispatcher version 4.1.11 you can cache response headers. If you are not ca
 
 #### Avoid URL Parameters {#avoid-url-parameters}
 
-If possible, avoid URL parameters for pages that you want to cache. For example, if you have a picture gallery, the following URL is never cached (unless Dispatcher is [configured accordingly](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)):
+If possible, avoid URL parameters for pages that you want to cache. For example, if you have a picture gallery, the following URL is never cached (unless Dispatcher is [configured accordingly](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)):
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -562,9 +557,9 @@ www.myCompany.com/news/main.large.html
 
 >[!NOTE]
 >
->For most layout aspects, it is also possible to use style sheets and/or client side scripts. These will usually work very well with caching.
+>For most layout aspects, it is also possible to use style sheets, or client-side scripts, or both. These instruments work well with caching.
 >
->This is also useful for a print version, where you can use an URL such as:
+>This strategy is also useful for a print version, where you can use a URL such as:
 >
 >`www.myCompany.com/news/main.print.html`
 >
@@ -587,32 +582,32 @@ For example, you can store the title of the page `myPage.html` in the `file myPa
 
 #### Invalidating Image Files Used For Navigation {#invalidating-image-files-used-for-navigation}
 
-If you use pictures for the navigation entries, the method is basically the same as with titles, just slightly more complex. Store all the navigation images with the target pages. If you use two pictures for normal and active, you can use the following scripts:
+If you use pictures for the navigation entries, the method is basically the same as with titles, but slightly more complex. Store all the navigation images with the target pages. If you use two pictures for normal and active, you can use the following scripts:
 
 * A script that displays the page, as normal.
 * A script that processes ".normal" requests and returns the normal picture.
 * A script that processes ".active" requests and returns the activated picture.
 
-It is important that you create these pictures with the same naming handle as the page, to ensure that a content update deletes these pictures as well as the page.
+It is important that you create these pictures with the same naming handle as the page, to ensure that a content update deletes these pictures and the page.
 
-For pages that are not modified, the pictures still remain in the cache, although the pages themselves are usually auto-invalidated.
+For pages that are not modified, the pictures remain in the cache, although the pages themselves are auto-invalidated.
 
 #### Personalization {#personalization}
 
 It is recommended that you limit personalization to where it is necessary. To illustrate why:
 
 * If you use a freely customizable start page, that page has to be composed every time a user requests it.
-* If, in contrast, you offer a choice of 10 different start pages, you can cache each one of them, thus improving performance.
+* If, in contrast, you offer a choice of ten different start pages, you can cache each one of them, thus improving performance.
 
 >[!TIP]
 >For further details on configuring the Dispatcher cache, see the [AEM Dispatcher Cache Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) and its section on [Caching Protected Content.](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
 
- If you personalize each page (for example by putting the user's name into the title bar) it can have a performance impact.
+ If you personalize each page by putting the user's name into the title bar (for example), it has a performance impact.
 
  >[!TIP]
- >For caching secured content see [Caching Secured Content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) in the Dispatcher guide.
+ >For caching secured content, see [Caching Secured Content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html) in the Dispatcher guide.
 
- With regards to mixing restricted and public content on one page, you might want to consider a strategy that leverages server side includes in the Dispatcher, or client side includes via Ajax in the browser.
+ Regarding mixing restricted and public content on one page, consider a strategy that uses server side includes in the Dispatcher, or client side includes by way of Ajax in the browser.
 
  >[!TIP]
  >
@@ -620,53 +615,53 @@ It is recommended that you limit personalization to where it is necessary. To il
 
 #### Sticky Connections {#sticky-connections}
 
-[Sticky connections](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#the-benefits-of-load-balancing) ensure that the documents for one user are all composed on the same server. If a user leaves this folder and later returns to it, the connection still sticks. Define one folder to hold all documents that require sticky connections for the website. Try not to have other documents in it. This impacts load-balancing if you use personalized pages and session data.
+[Sticky connections](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#the-benefits-of-load-balancing) ensure that the documents for one user are all composed on the same server. If a user leaves this folder and later returns to it, the connection still sticks. To hold all documents that require sticky connections for the website, define one folder. Try not to have other documents in it. This scenario impacts load-balancing if you use personalized pages and session data.
 
 #### MIME Types {#mime-types}
 
 There are two ways in which a browser can determine the type of a file:
 
-1. By its extension (e.g. `.html`, `.gif`, `.jpg`, etc.)
+1. By its extension (for example, `.html`, `.gif`, and `.jpg`).
 1. By the MIME-type that the server sends with the file.
 
-For most files, the MIME-type is implied in the file extension. i.e.:
+For most files, the MIME-type is implied in the file extension. That is,
 
-1. By its extension (e.g. `.html`, `.gif`, `.jpg`, etc.)
+1. By its extension (for example, `.html`, `.gif`, and `.jpg`).
 1. By the MIME-type that the server sends with the file.
 
 If the file name has no extension, it is displayed as plain text.
 
-With Dispatcher version 4.1.11 you can cache response headers. If you do not cache response headers on Dispatcher be aware that the MIME-type is part of the HTTP header. As such, if your AEM application returns files that do not have a recognized file ending, and rely on the MIME-type instead, these files may be incorrectly displayed.
+With Dispatcher version 4.1.11, you can cache response headers. If you do not cache response headers on Dispatcher, the MIME-type is part of the HTTP header. As such, if your AEM application returns files that do not have a recognized file ending, and rely on the MIME-type instead, these files may be incorrectly displayed.
 
 To make sure that files are cached properly, follow these guidelines:
 
 * Make sure that files always have the proper extension.
-* Avoid generic file serve scripts, which have URLs such as `download.jsp?file=2214`. Re-write the script to use URLs containing the file specification. For the previous example this would be `download.2214.pdf`.
+* Avoid generic file serve scripts, which have URLs such as `download.jsp?file=2214`. To use URLs containing the file specification, rewrite the script. For the previous example, this rewrite is `download.2214.pdf`.
 
 ## Backup Performance {#backup-performance}
 
-This section presents a series of benchmarks used to assess the performance of AEM backups and effects of backup activity on application performance. AEM backups present a significant load on the system while it runs, and we measure this, as well as the effects of the backup delay settings that attempt to modulate these effects. The objective is to offer some reference data about the expected performance of backups in realistic configurations and quantities of production data, and to provide guidance about how to estimate backup times for planned systems.
+This section presents a series of benchmarks used to assess the performance of AEM backups and effects of backup activity on application performance. AEM backups present a significant load on the system while it runs, and Adobe measures this impact, and the effects of the backup delay settings that attempt to modulate these effects. The objective is to offer some reference data about the expected performance of backups in realistic configurations and quantities of production data, and to provide guidance about how to estimate backup times for planned systems.
 
 ### Reference Environment {#reference-environment}
 
 #### Physical System {#physical-system}
 
-The results reported in this document were obtained from benchmarks run in a reference environment with the following configuration. This configuration is designed to be similar to a typical production environment in a data center:
+The results reported in this document were obtained from benchmarks run in a reference environment with the following configuration. This configuration is similar to a typical production environment in a data center:
 
-* H-P ProLiant DL380 G6, 8 CPUs x 2.533 GHz
-* Serial attached SCSI 300GB 10,000RPM drives
-* Hardware RAID controller; 8 drives in a RAID0+5 array
-* VMware image CPU x 2 Intel Xeon E5540 @ 2.53GHz
-* RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
+* HP ProLiant DL380 G6, 8 CPUs x 2.533 GHz
+* Serial attached SCSI 300 GB, 10,000-RPM drives
+* Hardware RAID controller; eight drives in a RAID0+5 array
+* VMware image CPU x 2 Intel Xeon&reg; E5540 @ 2.53 GHz
+* Red Hat&reg; Linux&reg; 2.6.18-194.el5; Java&trade; 1.6.0_29
 * Single Author instance
 
-The disk subsystem on this server is quite fast, representative of a high performance RAID configuration that might be used in a production server. Backup performance can be sensitive to disk performance, and the results in this environment reflect performance on a very fast RAID configuration. The VMWare image is configured to have a single large disk volume which physically resides in local disk storage, on the RAID array.
+The disk subsystem on this server is fast, representative of a high-performance RAID configuration that might be used in a production server. Backup performance can be sensitive to disk performance, and the results in this environment reflect performance on a fast RAID configuration. The VMWare image is configured to have a single large disk volume which physically resides in local disk storage, on the RAID array.
 
-The AEM configuration places the repository and datastore on the same logical volume, alongside all of the operating system and AEM software. The target directory for backups also resides on this logical filesystem.
+The AEM configuration places the repository and datastore on the same logical volume, alongside the operating system and AEM software. The target directory for backups also resides on this logical filesystem.
 
 #### Data Volumes {#data-volumes}
 
-The following table illustrates the size of data volumes that are used in the backup benchmarks. The initial baseline content is first installed, then additional known amounts of data are added to increase the size of the content backed up. Back-ups will be created at specific increments to represent a large increase in content and what may be produced in a day. The distribution of content (pages, images, tags) will be roughly based on realistic production asset composition. Pages, images, and tags will be limited to a maximum of 800 child pages. Each page will include title, Flash, text/image, video, slideshow, form, table, cloud, and carousel components. Images will be uploaded from a pool of 400 unique files ranging in size from 37 kB to 594 kB.
+The following table illustrates the size of data volumes that are used in the backup benchmarks. The initial baseline content is first installed, then additional known amounts of data are added to increase the size of the content backed up. Backups are created at specific increments to represent a large increase in content and what may be produced in a day. The distribution of content (pages, images, tags) is roughly based on realistic production asset composition. Pages, images, and tags are limited to a maximum of 800 child pages. Each page includes title, Flash, text/image, video, slideshow, form, table, cloud, and carousel components. Images are uploaded from a pool of 400 unique files size from 37 KB to 594 KB.
 
 |Content|Nodes|Pages|Images|Tags|
 |---|---|---|---|---|
@@ -685,44 +680,44 @@ The backup benchmarks cover two main scenarios: backups when the system is under
 
 Backup times and size of resulting backup are obtained from the AEM server logs. It is normally recommended that backups be scheduled for off-times when AEM is idle, such as in the middle of the night. This scenario is representative of the recommended approach.
 
-Load will consist of page creates/deletes, traversals, and queries with the majority of load coming from page traversals and queries. Adding and removing too many pages continually increase the workspace size and prevent the back-ups from completing. The distribution of load the script will use is 75% page traversals, 24% queries and 1% page creations (single level with no nested sub-pages). Peak average transactions per second on an idle system is achieved with 4 concurrent threads, which is what will be used when testing back-ups under load.
+Load consists of pages created, pages deleted, traversals, and queries with most load coming from page traversals and queries. Adding and removing too many pages continually increase the workspace size and prevent the back-ups from completing. The distribution of load the script uses is 75% page traversals, 24% queries, and 1% page creations (single level with no nested subpages). Peak average transactions per second on an idle system is achieved with four concurrent threads, which is used when testing back-ups under load.
 
 Impact of load on backup performance can be estimated by the difference between performance with and without this application load. Impact of the backup on application throughput is found by comparing the scenario throughput in transactions per hour with and without a concurrent backup ongoing, and with backups operating with different "backup delay" settings.
 
-* **Delay Setting** - For several of the scenarios we also varied the backup delay setting, using values of 10 ms (default), 1 ms and 0 ms, to explore how this setting affected the performance of backups.
-* **Backup Type** - All of the backups were external backups of the repository made to a backup directory without creating a zip, except in once case for comparison where the tar command was used directly. Since incremental backups cannot be created to a zip file, or when the prior full backup is a zip file, the backup directory method is the most often used in production situations.
+* **Delay Setting** - For several of the scenarios, the backup delay setting was also varied, using values of 10 milliseconds (default), 1 milliseconds, and 0 milliseconds, to explore how this setting affected the performance of backups.
+* **Backup Type** - All backups were external backups of the repository made to a backup directory without creating a zip, except in one case for comparison where the tar command was used directly. Since incremental backups cannot be created to a zip file, or when the prior full backup is a zip file, the backup directory method is the most often used in production situations.
 
 ### Summary of Results {#summary-of-results}
 
 #### Backup Time and Throughput {#backup-time-and-throughput}
 
-The main result of these benchmarks is to show how backup times vary as a function of the backup type and overall quantity of data. The following chart shows the backup time obtained using the default backup configuration, as a function of the number of total number of pages.
+The main result of these benchmarks is to show how backup times vary as a function of the backup type and overall quantity of data. The following chart shows the obtained backup time using the default backup configuration, as a function of the number of total number of pages.
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-Backup times on an idle instance are fairly consistent, averaging 0.608 MB/s regardless of full or incremental backups (see chart below). The backup time is simply a function of the amount of data that is being backed up. The time to complete a full backup clearly increases with the total number of pages. The time to complete an incremental backup also climbs with the total number of pages, but at a much lower rate. The time taken to complete the incremental backup is much shorter owing to the relatively small amount of data being backed up.
+Backup times on an idle instance are fairly consistent, averaging 0.608 MB per second, regardless of full, or incremental backups (see chart below). The backup time is simply a function of the amount of data that is being backed up. The time to complete a full backup clearly increases with the total number of pages. The time to complete an incremental backup also climbs with the total number of pages, but at a much lower rate. The time taken to complete the incremental backup is much shorter owing to the relatively small amount of data being backed up.
 
 The size of the backup produced is the main determinant of the time taken to complete a backup. The following chart shows time taken as a function of final backup size.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-This chart illustrates that both incremental and full backups follow a simple size versus time pattern that we can measure as throughput. Backup times on an idle instance are fairly consistent, averaging 0.61 MB/sec regardless of full or incremental backups on the benchmark environment.
+This chart illustrates that both incremental and full backups follow a simple size versus time pattern that Adobe can measure as throughput. Backup times on an idle instance are fairly consistent, averaging 0.61 MB per second regardless of full or incremental backups on the benchmark environment.
 
 #### Backup Delay {#backup-delay}
 
 The backup delay parameter is provided to limit the extent to which backups may interfere with production workloads. The parameter specifies a wait time in milliseconds, which is interspersed into the backup operation on a file-by-file basis. The overall effect depends partly on the size of files affected. Measuring backup performance in MB/sec gives a reasonable way to compare the effects of delay on the backup.
 
-* Running a backup concurrently with regular application load will have a negative impact on the throughput of the regular load.
-* The impact may be slight (as little as 5%) or could be very significant, causing as much as 75% drop in throughput, and this likely depends on the application more than anything.
+* Running a backup concurrently with regular application load has a negative impact on the throughput of the regular load.
+* The impact may be slight (as little as 5%) or significant, causing as much as 75% drop in throughput. It likely depends most on the application.
 * Backup is not a heavy load on the CPU, and so CPU-intensive production workloads would be less affected by backup than I/O intensive ones.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-For comparison the throughput obtained using a filesystem backup (using 'tar') to backup the same repository files. The performance of the tar is comparable, but slightly higher than the backup with delay set to zero. Setting even a small delay greatly reduces the backup throughput and the default delay of 10ms results in vastly reduced throughput. In situations where backups may be scheduled when overall application usage is very low or the application can be completely idle, it is probably desirable to reduce the delay below the default value in order to permit the backup to proceed more quickly.
+For comparison, the throughput obtained using a file system backup ('tar') to back up the same repository files. The performance of the tar is comparable, but slightly higher than the backup with delay set to zero. Setting even a small delay greatly reduces the backup throughput and the default delay of 10-milliseconds results in vastly reduced throughput. In situations where backups may be scheduled when overall application usage is low, or the application can be idle, reduce the delay below the default value to permit the backup to proceed more quickly.
 
-The actual impact of application throughput of an ongoing backup does depend on the application and infrastructure details. The choice of delay value should be made by empirical analysis of the application, but should be chosen as small as possible, so that backups can complete as quickly as possible. Since there is only a weak correlation between the choice of delay value and the impact on application throughput, the choice of delay should favour shorter overall backup times, in order to minimize the overall impact of backups. A backup that takes 8 hours to complete, but affects throughput by -20% is likely to have a greater overall impact than one which takes 2 hours to complete but affects throughput by -30%.
+The actual impact of application throughput of an ongoing backup does depend on the application and infrastructure details. The choice of delay value should be made by empirical analysis of the application, but should be chosen as small as possible, so that backups can complete as quickly as possible. Because there is only a weak correlation between the choice of delay value and the impact on application throughput, the choice of delay should favor shorter overall backup times to minimize the overall impact of backups. A backup that takes eight hours to complete, but affects throughput by -20% is likely to have a greater overall impact than one which takes two hours to complete but affects throughput by -30%.
 
 ### References {#references}
 
-* [Administering - Backup and Restore](/help/sites-administering/backup-and-restore.md)
+* [Administering - Back up and Restore](/help/sites-administering/backup-and-restore.md)
 * [Managing - Capacity and Volume](/help/managing/best-practices-further-reference.md#capacity-and-volume)

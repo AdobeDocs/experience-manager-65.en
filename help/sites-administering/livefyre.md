@@ -13,7 +13,11 @@ exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
 ---
 # Integrating with Livefyre{#integrating-with-livefyre}
 
-Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
+>[!IMPORTANT]
+>
+>[Adobe Livefyre is officially end-of-service as of November 30, 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+
+<!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
 ## Getting Started {#getting-started}
 
@@ -91,8 +95,6 @@ The default authentication integration may not be perfect for every site. To bes
 1. Using CRXDE Lite, copy */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* to */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
 1. Edit and save */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* to implement a Livefyre Auth Delegate that meets your needs.
 
-   For more information on customizing an Auth Delegate, see [Identity Integration](https://answers.livefyre.com/developers/identity-integration/).
-
    For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
 
 ## Use Livefyre with AEM Sites {#use-livefyre-with-aem-sites}
@@ -135,7 +137,7 @@ You can import Twitter and Instagram user-generated content (UGC) from Livefyre 
 
 >[!NOTE]
 >
->Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
+>Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
 To import UGC into AEM Assets:
 
@@ -223,4 +225,4 @@ After you import the product catalog, the products show up in real time in your 
 | Single Card |X |X |X |X |
 | Storify 2 |  |X |X |X |
 | Trending |  |X |X |X |
-| Upload Button |  |X |X |X |
+| Upload Button |  |X |X |X | -->

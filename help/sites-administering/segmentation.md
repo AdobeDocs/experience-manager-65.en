@@ -30,9 +30,13 @@ AEM allows you to easily personalize your users' experience. It also allows you 
 
 The [Audiences](/help/sites-authoring/managing-audiences.md) console is used to manage segments for ContextHub or Client Context as well as audiences for your Adobe Target account. This documentation covers managing segments for ContextHub. For [Client Context segments](/help/sites-administering/campaign-segmentation.md) and Adobe Target segments, please see the relevant documentation.
 
-To access your segments, in global navigation select **Navigation &gt; Personalization &gt; Audiences**.
+To access your segments you need to select your configuration. In global navigation select **Navigation &gt; Personalization &gt; Audiences**. You will see the available configurations:
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![Audiences - Configurations](assets/segmentation-access-confs.png)
+
+Select your configuration to see the segments, for example WKND Site:
+
+![Audiences - Segments](assets/segmentation-access-segments.png)
 
 ## Segment Editor {#segment-editor}
 
@@ -125,7 +129,7 @@ The following references are available out-of-the-box to link directly to a scri
 
 To define your new segment:
 
-1. After [accessing the segments](/help/sites-administering/segmentation.md#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment, or leave it in the root.
+1. After [accessing the segments](/help/sites-administering/segmentation.md#accessing-segments), [navigate to the folder](#organizing-segments) where you would like to create the segment.
 
 1. click or tap the Create button and select **Create ContextHub Segment**.
 
@@ -288,7 +292,7 @@ If you have many segments, they can become hard to manage as a flat list. In suc
 
 >[!NOTE]
 >
-> It is not possible to move a segment from one folder to another.
+>It is not possible to move a segment from one folder to another.
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 

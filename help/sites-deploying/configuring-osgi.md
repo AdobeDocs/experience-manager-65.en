@@ -16,9 +16,9 @@ exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and their configuration.
 
-OSGi "*provides the standardized primitives that allow applications to be constructed from small, reusable and collaborative components. These components can be composed into an application and deployed*".
+OSGi "*provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed*".
 
-This allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://www.osgi.org/Specifications/HomePage)) is contained in one of the various bundles.
+Doing so allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://docs.osgi.org/specification/)) is contained in one of the various bundles.
 
 You can manage the configuration settings for such bundles by either:
 
@@ -43,7 +43,7 @@ Either method can be used though there are subtle differences, primarily in rela
 
 * [content-nodes (sling:osgiConfig) in the repository](#osgi-configuration-in-the-repository)
 
-    * This requires manual configuration using CRXDE Lite.
+    * Requires manual configuration using CRXDE Lite.
     * Due to the naming conventions of the `sling:OsgiConfig` nodes, you can tie the configuration to a specific [run mode](/help/sites-deploying/configure-runmodes.md). You can even save configurations for more than one run mode in the same repository.
     * Any appropriate configurations are applied immediately (dependent on the run mode).
 
@@ -52,7 +52,7 @@ Whichever method you use, all of these configuration methods:
 * Ensure that copying or replicating the repository contents recreates identical configurations.
 * Allow you to check configurations out to FileVault or Subversion; either for security or further updates.
 * Can be saved in packages for use when setting up other instances.
-* Allow you to perform configuration rollouts using scripts to propogate the configuration details.
+* Allow you to perform configuration rollouts using scripts to propagate the configuration details.
 
 >[!NOTE]
 >
@@ -66,19 +66,19 @@ Any changes made are immediately applied to the relevant OSGi configuration, no 
 
 >[!NOTE]
 >
->Changes made in the web console are saved in the repository as [configuration files](#osgi-configuration-with-configuration-files). These can be included in content packages for re-use in further installations.
+>Changes made in the web console are saved in the repository as [configuration files](#osgi-configuration-with-configuration-files). These files can be included in content packages for reuse in further installations.
 
 >[!NOTE]
 >
->On the Web console any descriptions that mention default settings relate to Sling defaults.
+>On the Web console, any descriptions that mention default settings relate to Sling defaults.
 >
->Adobe Experience Manager has its own defaults and so the defaults set might differ from those documented on the console.
+>Adobe Experience Manager has its own defaults and so the defaults that are set might differ from the defaults documented on the console.
 
 To update a configuration with the web console:
 
 1. Access the **Configuration** tab of the Web Console by either:
 
-    * Opening the web console from the link on the **Tool -&gt; Operations** menu. After logging into the console you can use the drop-down menu of:
+    * Opening the web console from the link on the **Tool -&gt; Operations** menu. After logging into the console, you can use the drop-down menu of:
 
       **OSGi &gt;**
 
@@ -86,20 +86,20 @@ To update a configuration with the web console:
 
       `http://localhost:4502/system/console/configMgr`
 
-   A list will be shown.
+   A list is shown.
 
 1. Select the bundle that you want to configure by either:
 
-    * clicking on the **Edit** icon for that bundle
-    * clicking on the **Name** of the bundle
+    * clicking the **Edit** icon for that bundle
+    * clicking the **Name** of the bundle
 
-1. A dialog will open. Here you can edit as required; for example, set the **Log Level** to `INFO`:
+1. A dialog box opens. Here you can edit as required. For example, set the **Log Level** to `INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    >[!NOTE]
    >
-   >Updates are saved in the repository as [configuration files](#osgi-configuration-with-configuration-files). To locate these afterwards, (e.g. to include in a content package for use on another instance) you should make a note of the persistent identity ( `PID`).
+   >Updates are saved in the repository as [configuration files](#osgi-configuration-with-configuration-files). To locate these files afterwards to include in a content package for use on another instance, for example, make a note of the persistent identity ( `PID`).
 
 1. Click **Save**.
 
@@ -107,7 +107,7 @@ To update a configuration with the web console:
 
    >[!NOTE]
    >
-   >You can now locate the related [configuration file(s)](#osgi-configuration-with-configuration-files); for example, to include in a content package for use on another instance.
+   >You can now locate the related [configuration files](#osgi-configuration-with-configuration-files). For example, to include in a content package for use on another instance.
 
 ## OSGi Configuration with configuration files {#osgi-configuration-with-configuration-files}
 
@@ -115,20 +115,20 @@ Configuration changes made using the Web Console are persisted in the repository
 
 `/apps`
 
-These can be included in content packages and re-used on other instances.
+These files can be included in content packages and reused on other instances.
 
 >[!NOTE]
 >
->The format of the configuration files are very specific - see the [Sling Apache documentation](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) for full details.
+>The format of the configuration files is specific - see the [Sling Apache documentation](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) for full details.
 >
->For this reason it is recommended to create and maintain the configuration file by making actual changes in the web console.
+>For this reason, it is recommended to create and maintain the configuration file by making actual changes in the web console.
 
-The Web Console shows no indication of where in the repository your changes have been saved, but they can be easily located:
+The Web Console shows no indication of where in the repository that your changes have been saved, but they can be easily located:
 
 1. Create the configuration file by [making an initial change in the web console](#osgi-configuration-with-the-web-console).
 1. Open CRXDE Lite.
-1. In the **Tools** menu select **Query ...** .
-1. Submit a query of **Type** `SQL` to search for the PID of the configuration that you have updated.
+1. In the **Tools** menu, select **Query ...** .
+1. To search for the PID of the configuration that you have updated, submit a query of **Type** `SQL`.
 
    For example, **Apache Felix OSGi Management Console** has the persistent identity (PID) of:
 
@@ -140,7 +140,7 @@ The Web Console shows no indication of where in the repository your changes have
    select * from nt:base where jcr:path like '/apps/%' and contains(*, 'org.apache.felix.webconsole.internal.servlet.OsgiManager')
    ```
 
-1. The configuration file node will be shown.
+1. The configuration file node is shown.
 
    For the above example:
 
@@ -154,13 +154,13 @@ The Web Console shows no indication of where in the repository your changes have
 
 ## OSGi Configuration in the Repository {#osgi-configuration-in-the-repository}
 
-In addition to using the web console, you can also define configuration details in the repository. This allows you to easily configure your differing run modes.
+In addition to using the web console, you can also define configuration details in the repository. Doing so lets you easily configure your differing run modes.
 
-These configurations are made by creating `sling:OsgiConfig` nodes in the repository for the system to reference. These nodes mirror the OSGi configurations, and form a user interface to them. To update the configuration data you update the node properties.
+These configurations are made by creating `sling:OsgiConfig` nodes in the repository for the system to reference. These nodes mirror the OSGi configurations, and a user interface is formed to them. To update the configuration data, you update the node properties.
 
-If you modify the configuration data in the repository the changes are immediately applied to the relevant OSGi configuration as if the changes had been made using the Web console, with the appropriate validation and consistency checks. This also applies to the action of copying a configuration from `/libs/` to `/apps/`.
+If you modify the configuration data in the repository, the changes are immediately applied to the relevant OSGi configuration. It is as if the changes had been made using the Web console, with the appropriate validation and consistency checks. This workflow also applies to the action of copying a configuration from `/libs/` to `/apps/`.
 
-As the same configuration parameter can be located in several places, the system:
+As the same configuration parameter is in several places, the system:
 
 * searches for all nodes of type `sling:OsgiConfig`
 * filters according to service name
@@ -168,13 +168,13 @@ As the same configuration parameter can be located in several places, the system
 
 >[!NOTE]
 >
->Read also [how to define a repository based confinguration for a specific instance only](https://helpx.adobe.com/experience-manager/kb/RunModeDependentConfigAndInstall.html).
+>Read also [how to define a repository-based configuration for a specific instance only](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=en).
 
 ### Adding a New Configuration to the Repository {#adding-a-new-configuration-to-the-repository}
 
 #### What You Need to Know {#what-you-need-to-know}
 
-To add a new configuration to the repository you need to know the following:
+To add a configuration to the repository, you must know the following:
 
 1. The **Persistent Identity** (PID) of the service.
 
@@ -184,15 +184,15 @@ To add a new configuration to the repository you need to know the following:
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Whether a specific [run mode](/help/sites-deploying/configure-runmodes.md) is required. Create the folder:
+1. Is a specific [run mode](/help/sites-deploying/configure-runmodes.md) required? Create the folder:
 
     * `config` - for all run modes
     * `config.author` - for the author environment
     * `config.publish` - for the publish environment
     * `config.<run-mode>` - as appropriate
 
-1. Whether a **Configuration** or **Factory Configuration** is necessary.
-1. The individual parameters to be configured; including any existing parameter definitions that will need to be recreated.
+1. Is a **Configuration** or **Factory Configuration** necessary?
+1. The individual parameters to be configured, including any existing parameter definitions that must be recreated.
 
    Reference the individual parameter field in the Web console. The name is shown in brackets for each parameter.
 
@@ -201,7 +201,7 @@ To add a new configuration to the repository you need to know the following:
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Does a configuration already exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
+1. Does a configuration exist in `/libs`? To list all configurations in your instance, use the **Query** tool in CRXDE Lite to submit the following SQL query:
 
    `select * from sling:OsgiConfig`
 
@@ -215,12 +215,12 @@ To actually add the new configuration to the repository:
 
    ` /apps/<yourProject>`
 
-1. If not already existing, create the `config` folder ( `sling:Folder`):
+1. If not existing, create the `config` folder ( `sling:Folder`):
 
     * `config` - applicable to all run modes
     * `config.<run-mode>` - specific to a particular run mode
 
-1. Under this folder create a node:
+1. Under this folder, create a node:
 
     * Type: `sling:OsgiConfig`
     * Name: the persistent identity (PID);
@@ -243,15 +243,15 @@ To actually add the new configuration to the repository:
     * Type: as appropriate.
     * Value: as required.
 
-   You only need to create properties for the parameters that you want to configure, others will still take the default values as set by AEM.
+   You only must create properties for the parameters that you want to configure, others still take the default values as set by AEM.
 
 1. Save all changes.
 
-   Changes are applied as soon as the node is updated by restarting the service (as with changes made in the Web console).
+   Changes are applied when the node is updated by restarting the service (as with changes made in the Web console).
 
 >[!CAUTION]
 >
->You must not change anything in the `/libs` path.
+>Do not change anything in the `/libs` path.
 
 >[!CAUTION]
 >
@@ -269,36 +269,36 @@ The following order of precedence is used:
 
 1. Any `.config` files from `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. on the local file system.
 
-This means that a generic configuration in `/libs` can be masked by a project specific configuration in `/apps`.
+A generic configuration in `/libs` can be masked by a project-specific configuration in `/apps`.
 
 ### Resolution Order at Runtime {#resolution-order-at-runtime}
 
-Configuration changes made while the system is running trigger a reload with the modified configuration.
+Configuration changes made while the system is running triggers a reload with the modified configuration.
 
 Then the following order of precedence applies:
 
-1. Modifying a configuration in the Web console will take immediate effect as it takes precedence at runtime.
-1. Modifying a configuration in `/apps` will take immediate effect.
-1. Modifying a configuration in `/libs` will take immediate effect, unless it is masked by a configuration in `/apps`.
+1. Modifying a configuration in the Web console takes immediate effect as it takes precedence at runtime.
+1. Modifying a configuration in `/apps` takes immediate effect.
+1. Modifying a configuration in `/libs` takes immediate effect, unless it is masked by a configuration in `/apps`.
 
 ### Resolution of multiple Run Modes {#resolution-of-multiple-run-modes}
 
-For run mode specific configurations, multiple run modes can be combined. For example, you can create configuration folders in the following style:
+For run mode-specific configurations, multiple run modes can be combined. For example, you can create configuration folders in the following style:
 
 `/apps/*/config.<runmode1>.<runmode2>/`
 
-Configurations in such folders will be applied if all run modes match a run mode defined at startup.
+Configurations in such folders are applied if all run modes match a run mode defined at startup.
 
-For example, if an instance was started with the run modes `author,dev,emea`, configuration nodes in `/apps/*/config.emea`, `/apps/*/config.author.dev/` and `/apps/*/config.author.emea.dev/` will be applied, while configuration nodes in `/apps/*/config.author.asean/` and `/config/author.dev.emea.noldap/` will not be applied.
+For example, if an instance was started with the run modes `author,dev,emea`, configuration nodes in `/apps/*/config.emea`, `/apps/*/config.author.dev/`, and `/apps/*/config.author.emea.dev/` is applied, while configuration nodes in `/apps/*/config.author.asean/` and `/config/author.dev.emea.noldap/` are not applied.
 
 If multiple configurations for the same PID are applicable, the configuration with the highest number of matching run modes is applied.
 
 For example, if an instance was started with the run modes `author,dev,emea`, and both `/apps/*/config.author/` and `/apps/*/config.emea.author/` define a configuration for
-`com.day.cq.wcm.core.impl.VersionManagerImpl`, the configuration in `/apps/*/config.emea.author/` will be applied.
+`com.day.cq.wcm.core.impl.VersionManagerImpl`, the configuration in `/apps/*/config.emea.author/` is applied.
 
 This rule's granularity is at a PID level.
 You cannot define some properties for the same PID in `/apps/*/config.author/` and more specific ones in `/apps/*/config.emea.author/` for the same PID.
-The configuration with the highest number of matching run modes will be effective for the entier PID.
+The configuration with the highest number of matching run modes is effective for the entire PID.
 
 ### Standard Configurations {#standard-configurations}
 
@@ -348,9 +348,9 @@ To list all configuration nodes in your instance, use the **Query** functionalit
      /crx-quickstart/launchpad/config
   ```
 
-    * This is the private data area of the OSGi configuration admin and holds all configuration details specified by `admin`, regardless how they entered the system.
-    * This is an implementation detail and you must never edit this directory directly.
-    * However, it is useful to know the location of these configuration files so that copies can be taken for backup and/or multiple installation:
+    * This area is the private data of the OSGi configuration admin and holds all configuration details specified by `admin`, regardless how they entered the system.
+    * This area is an implementation detail and you must never edit this directory directly.
+    * However, it is useful to know the location of these configuration files so that copies can be taken for backup, or multiple installations, or both:
 
         * Apache Felix OSGi Management Console
 
@@ -362,6 +362,6 @@ To list all configuration nodes in your instance, use the **Query** functionalit
 
 >[!CAUTION]
 >
->You must ***never*** edit the folders or files under:
+>Never edit the folders or files under:
 >
 >`/crx-quickstart/launchpad/config`

@@ -22,7 +22,6 @@ To learn more about creating a community site visit:
 
 * [AEM Communities Overview](/help/communities/overview.md)
 * [Getting Started with AEM Communities](/help/communities/getting-started.md)
-* [Getting Started with AEM Communities for Enablement](/help/communities/getting-started-enablement.md)
 
 >[!NOTE]
 >
@@ -48,8 +47,6 @@ See also the interactive [Community Components guide](/help/communities/componen
 | Community Activity List | [Activity Trends](/help/communities/trends.md) |
 | Community Group Member List | [Community Groups](/help/communities/creating-groups.md) |
 | Compose Message | [Messaging](/help/communities/configure-messaging.md) |
-| Enablement Assignments | [Assignments](/help/communities/assignments.md) |
-| Enablement Catalog | [Catalog](/help/communities/catalog.md) |
 | Featured Content | [Featured Content](/help/communities/featured.md) |
 | File Library | [File Library](/help/communities/file-library.md) |
 | Follow | [Social Graph](/help/communities/socialgraph.md) |

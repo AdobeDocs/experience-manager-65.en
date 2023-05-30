@@ -82,7 +82,7 @@ This section contains information on installing the demo package.
    1. Select **[!UICONTROL Forms]** from the **[!UICONTROL Solution]** drop-down list.
    2. Select the version and type for the package. You can also use the **[!UICONTROL Search Downloads]** option to filter the results.
 1. Tap the **we-gov-forms.pkg.all-&lt;version&gt;.zip** package name, select **[!UICONTROL Accept EULA Terms]**, and tap **[!UICONTROL Download]**.
-1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
+1. Open [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  and click **[!UICONTROL Upload Package]** to upload the package.
 1. Select the package and click **[!UICONTROL Install]**.
 
    ![we gov forms package](assets/wegov_forms_package.jpg)
@@ -219,8 +219,8 @@ This section contains details and instructions on the MS Dynamics Cloud Configur
 
 **References:**
 
-1. [Microsoft Dynamics OData configuration](https://docs.adobe.com/content/help/en/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
-1. [Configuring Microsoft Dynamics for AEM Forms](https://helpx.adobe.com/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
+1. [Microsoft Dynamics OData configuration](/help/forms/using/ms-dynamics-odata-configuration.md)
+1. [Configuring Microsoft Dynamics for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
 #### MS Dynamics OData cloud service {#ms-dynamics-odata-cloud-service}
 
@@ -275,7 +275,7 @@ The steps detailed in this section are included to help you locate the Client Id
 1. To locate the Resource URL/Service Root URL, navigate to the MS Dynamics instance dashboard.
 1. In the top navigation bar, click "Sales" or your own instance type and "Select Settings".
 1. Click on "Customizations" and "Developer Resources" near the bottom right.
-1. There you’ll find the Service Root URL: e.g
+1. There you'll find the Service Root URL: e.g
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -470,7 +470,7 @@ In order to install and configure AEM Forms with the Adobe Forms, Conversion too
 
 Please review the following prior to reading further instructions:
 
-* [Configure the Automated Forms Conversion service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html)
+* [Configure the Automated Forms Conversion service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### Creating an IMS Configuration Part 1 {#creating-ims-config}
 
@@ -569,7 +569,7 @@ Once the IMS configuration is complete then we can proceed to review the cloud c
 
 1. For this configuration, we left the two checkbox values empty.
 
-   * To understand more about these options, see [Configure the cloud service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * To understand more about these options, see [Configure the cloud service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Configure Cloud Configuration (We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -599,7 +599,7 @@ Once the IMS configuration is complete then we can proceed to create the cloud c
 
 1. For this configuration, we left the two checkbox values empty.
 
-   * To understand more about these options, see [Configure the cloud service](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * To understand more about these options, see [Configure the cloud service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Testing the forms Conversion (We.Gov Enrollment Application) {#test-forms-conversion}
 
@@ -639,7 +639,7 @@ Once the configuration is set up users can test it by uploading a PDF document.
 
 #### Known Issues & Notes {#known-issues-notes}
 
-The Automated Forms Conversion service includes certain [best practices, known complex patterns](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), and [known issues](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/known-issues.html). Review these before you begin using AEM Forms Automated Forms Conversion service.
+The Automated Forms Conversion service includes certain [best practices, known complex patterns](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html), and [known issues](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Review these before you begin using AEM Forms Automated Forms Conversion service.
 
 1. Generate the Form with Generate adaptive form(s) without data bindings enabled if you would like to bind the form to an FDM after conversion.
 
@@ -737,7 +737,7 @@ This section contains information on demo features and design decisions that may
 ### Demo considerations {#demo-considerations}
 
 * As per AGRS-159, ensure that the name (first, middle, and last) of the contact used in the Enrollment Adaptive Form is unique.
-* The enrollment adaptive form will send the Adobe Sign email to the email specified in the form’s email field. That email address cannot be the same email address as the email used to configure the Adobe Sign cloud configuration.
+* The enrollment adaptive form will send the Adobe Sign email to the email specified in the form's email field. That email address cannot be the same email address as the email used to configure the Adobe Sign cloud configuration.
 
 ### Known issues {#known-issues}
 
@@ -748,12 +748,12 @@ This section contains information on demo features and design decisions that may
 
 ### Enabling Accessibility Testing Chrome Add On {#enable-chrome-add-on}
 
-In order to perform accessibility testing first you need to install the Chrome plugin, this can be found [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en).
+To perform accessibility testing, install the Chrome plugin found here at `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Once it is installed, load the page that you wish to test within the Chrome Browser (Note: Having multiple tabs open may affect your score, it is preferable to only have one tab open). Once the page is loaded
-**right click** on the page and select **Audits** tab . There developers can select the type of audit to be performed by the Accessibility plugin. Once all the desired options have been selected then the user can select the Generate Report button. This will generate a PDF document that shows the overall accessibility rating and what can be used to increase accessibility rating overall.
+After it is installed, load the page that you want to test within the Chrome Browser (Note: Having multiple tabs open may affect your score, it is preferable to only have one tab open). Once the page is loaded
+**right click** on the page and select **Audits** tab . There developers can select the type of audit to be performed by the Accessibility plugin. After all the desired options are selected, the user can click the Generate Report button. This will generate a PDF document that shows the overall accessibility rating and what can be used to increase accessibility rating overall.
 
-Once the report has been executed users can expect to see the following:
+After the report is run, users can expect to see the following:
 
 ![Accessibility report](assets/aftia-accessibility.jpg)
 

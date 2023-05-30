@@ -35,7 +35,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 
    ![wf-96](assets/wf-96.png)
 
-
+<!--
 ## Search Workflow Instances {#search-workflow-instances}
 
 1. Using Navigation select **Tools**, then **Workflow**.
@@ -55,6 +55,7 @@ A range of consoles are available for administering your workflows. Use the [glo
    * End Date: End date before or after a specified date
    * Due Date: Due date before or after a specified date
    * Updated Date: Updated date before or after a specified date
+-->
 
 ## Suspending, Resuming, and Terminating a Workflow Instance {#suspending-resuming-and-terminating-a-workflow-instance}
 

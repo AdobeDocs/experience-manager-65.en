@@ -6,14 +6,14 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
+hide: yes
 ---
-# Search assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Search digital assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/search-assets.html?lang=en)           |
 
 [!DNL Adobe Experience Manager Assets] provides robust asset discovery methods that help you achieve higher content velocity. Your teams can reduce time to market with seamless, intelligent search experience using out-of-the-box functionality and custom methods. Searching assets is central to the usage of a digital asset management system -- be it for further use by creatives, for robust management of assets by the business users and marketers, or for administration by DAM administrators. Simple, advanced, and custom searches that you can perform via [!DNL Assets] user interface or other apps and surfaces help fulfill these use cases.
 
@@ -32,7 +32,7 @@ exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 | [Limitations](#limitations) and [Tips](#tips) | | |
 | [Illustrated examples](#samples)| | |
 
-Search assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and select `Return`. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
+Search digital assets using the Omnisearch field at the top of the [!DNL Experience Manager] web interface. Go to **[!UICONTROL Assets]** > **[!UICONTROL Files]** in [!DNL Experience Manager], click ![search_icon](assets/do-not-localize/search_icon.png) in top bar, enter search keyword, and select `Return`. Alternatively, use the keyword shortcut `/` (forward slash) to open the Omnisearch field. `Location:Assets` is pre-selected to limit the searches to DAM assets. [!DNL Experience Manager] provides suggestions as your start typing a search keyword.
 
 Use the **[!UICONTROL Filters]** panel to search for assets, folders, tags, and metadata. You can filter search results based on the various options (predicates), such as, file type, file size, last modified date, status of asset, insights data, and Adobe Stock licensing. You can customize the Filters panel and add or remove search predicates using [search facets](/help/assets/search-facets.md). The [!UICONTROL File Type] filter in the [!UICONTROL Filters] panel has mixed-state checkboxes. Therefore, unless you select all the nested predicates (or formats) the first-level checkboxes are partially checked.
 
@@ -153,7 +153,7 @@ You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media
 
 ### GQL search using specific values in metadata fields {#gql-search}
 
-You can search assets based on exact values of metadata fields, such as, title, description, and creator. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (Creator, Title, and so on) and the values are case-sensitive.
+You can search digital assets based on exact values of metadata fields, such as, title, description, and creator. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (Creator, Title, and so on) and the values are case-sensitive.
 
 | Metadata field | Facet value and usage |
 |---|---|
@@ -196,19 +196,19 @@ Here are some examples of search formats for complex queries:
 * To display assets with a property value that contains a specific string (for example: title = Basel Meeting Room): `title:*Meeting*`
 * To display assets that contain a particular string and have a specific property value (for example: search for string Adobe in assets having title=John Doe): `*Adobe* title:"John Doe"`
 
-## Search assets from other [!DNL Experience Manager] offerings or interfaces {#search-assets-other-surfaces}
+## Search digital assets from other [!DNL Experience Manager] offerings or interfaces {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] connects DAM repository to various other [!DNL Experience Manager] solutions to provide faster access to digital assets and streamline the creative workflows. Any asset discovery starts with browse or search. The search behavior largely remains the same across the various surfaces and solutions. Some search methods change as the target audience, the use cases, and the user interface vary across the [!DNL Experience Manager] solutions. The specific methods are documented for the individual solutions at the links below. The universally applicable tips and behaviors are documented in this article.
 
-### Search assets from Adobe Asset Link panel {#aal}
+### Search digital assets from Adobe Asset Link panel {#aal}
 
 Using Adobe Asset Link, the creative professionals can now access content stored in [!DNL Experience Manager Assets], without leaving the supported Adobe Creative Cloud apps. Creatives can seamlessly browse, search, check out, and check in assets using the in-app panel in the [!DNL Adobe Creative Cloud] apps: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], and [!DNL Adobe InDesign]. Asset Link also allows users to search visually similar results. The visual search display results are powered by Adobe Sensei's machine learning algorithms and help users find aesthetically similar images. See [search and browse assets](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) using Adobe Asset Link.
 
-### Search assets in [!DNL Experience Manager] desktop app {#desktop-app}
+### Search digital assets in [!DNL Experience Manager] desktop app {#desktop-app}
 
 Creative professionals use the desktop app to make the [!DNL Experience Manager Assets] easily searchable and available on their local desktop (Win or Mac). Creatives can easily reveal the desired assets in Mac Finder or Windows Explorer, opened in desktop applications, and changed locally - the changes are saved back to [!DNL Experience Manager] with a new version created in the repository. The application supports basic searches using one or more keywords, `*` and `?` wildcards, and `AND` operator. See [browse, search, and preview assets](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) in desktop app.
 
-### Search assets in [!DNL Brand Portal] {#brand-portal}
+### Search digital assets in [!DNL Brand Portal] {#brand-portal}
 
 Line-of-business users and marketers use Brand Portal to efficiently and securely share the approved digital assets with their extended internal teams, partners, and resellers. See [search assets on Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching.html).
 
@@ -220,7 +220,7 @@ From within the [!DNL Experience Manager] user interface, users can search Adobe
 
 You can filter for Dynamic Media images by selecting **[!UICONTROL Dynamic Media]** > **[!UICONTROL Sets]** from the **[!UICONTROL Filters]** panel. It filters and displays assets such as image sets, carousels, mixed media sets, and spin sets. While authoring web pages, the authors can search for sets from within the Content Finder. A filter for sets is available in a pop-up menu.
 
-### Search assets in Content Finder when authoring web pages {#content-finder}
+### Search digital assets in Content Finder when authoring web pages {#content-finder}
 
 Authors can use Content Finder to search the DAM repository for the relevant assets and use the assets in the web pages they create. Authors can also use the Connected Assets functionality to search for assets that are available on a remote [!DNL Experience Manager] deployment. Authors can then use these assets in web pages on a local [!DNL Experience Manager] deployment. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
@@ -413,6 +413,10 @@ You can do the following with the assets you've searched in [!DNL Experience Man
 * Download one or more assets.
 * Use Desktop Actions to open these assets in the desktop app.
 * Create smart collections.
+* Create a version
+* Start a workflow
+* Relate or unrelate assets
+* Apply filters, using the Filters panel that displays automatically after performing the search, to narrow the search results.
 
 ### Sort search results {#sort}
 
@@ -452,6 +456,18 @@ A collection is an ordered set of assets that can include assets from different 
 * A dynamic list (smart collection) that populates assets in the collection based on a search criteria.
 
 You can create smart collections based on the search criteria. From the **[!UICONTROL Filters]** panel, select **[!UICONTROL Files]** and click **[!UICONTROL Save Smart Collection]**. See [manage collections](/help/assets/manage-collections.md).
+
+### Create a version {#create-version}
+
+Create a version for the assets that display in the search results. Select the asset and click **[!UICONTROL Create]** > **[!UICONTROL Version]**. Add an optional label or a comment and click **[!UICONTROL Create]**. You can also select multiple assets and create versions for them simultaneosuly.
+
+### Create a workflow {#create-workflow}
+
+Similar to the create version capability, you can also create a workflow for the assets that display in the search results. Select the asset(s) and click **[!UICONTROL Create]** > **[!UICONTROL Workflow]**. Select the workflow model, specify a title for the workflow, and click **[!UICONTROL Start]**.
+
+### Relate and Unrelate assets {#relate-unrelate-assets}
+
+Relate and unrelate assets that display in the search results. Select the asset(s) and click **[!UICONTROL Relate]** or **[!UICONTROL Unrelate]**.
 
 ## Unexpected search results and issues {#unexpected-results}
 

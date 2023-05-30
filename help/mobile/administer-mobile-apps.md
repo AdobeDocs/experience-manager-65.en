@@ -1,8 +1,6 @@
 ---
-title: Mobile Apps
-seo-title: Mobile Apps
+title: Administering Mobile Apps
 description: Follow this page to get started with administering content for mobile apps.
-seo-description: Follow this page to get started with administering content for mobile apps.
 uuid: 0ef31513-b720-46cb-b162-35883ae48912
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

@@ -48,13 +48,13 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
 1. Stop the AEM forms services and application server if running.
 1. If necessary, re-create the physical system from a system image. For example, this step may not be necessary if the reason for recovery is a faulty database server.
 1. Apply patches or updates to AEM forms that were applied since the image was made. This information was recorded in the backup procedure. AEM forms must be patched to the same patch level as it was when the system was backed up.
-1. (WebSphere Application Server) If you are recovering to a new instance of WebSphere Application Server, run the restoreConfig.bat/sh command.
+1. (WebSphere&reg; Application Server) If you are recovering to a new instance of WebSphere&reg; Application Server, run the restoreConfig.bat/sh command.
 1. Recover the AEM forms database by first running a database restore operation using the database backup files and then applying the transaction redo logs to the recovered database. (See [AEM forms database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) For more information, see one of these knowledge base articles:
 
-    * [Oracle Backup and Recovery for AEM forms](https://www.adobe.com/go/kb403624)
-    * [MySQL Backup and Recovery for AEM forms](https://www.adobe.com/go/kb403625)
-    * [Microsoft SQL Server Backup and Recovery for AEM forms](https://www.adobe.com/go/kb403623)
-    * [DB2 Backup and Recovery for AEM forms](https://www.adobe.com/go/kb403626)
+    * [DB2&reg; Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#db2)
+    * [Oracle Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
+    * [Microsoft&reg; SQL Server Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+    * [MySQL Backup and Recovery for AEM forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Recover the GDS directory by first deleting the contents of the GDS directory on the existing installation of AEM forms and then copying the contents of the GDS directory from the backed-up GDS. If you changed the GDS directory location, see [Changing the GDS location during recovery](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Rename the GDS backup directory to be restored as shown in these examples:
@@ -63,7 +63,7 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
    >
    >If the /restore directory already exists, back it up and then delete it before you rename the /backup directory that contains the latest data.
 
-    * (JBoss) Rename `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` to:
+    * (JBoss&reg;) Rename `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` to:
 
       `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
@@ -71,7 +71,7 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
 
       `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-    * (WebSphere) Rename `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` to:
+    * (WebSphere&reg;) Rename `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` to:
 
       `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
@@ -93,7 +93,7 @@ If a single node of a multinode cluster failed and the remaining nodes of the cl
 
     * **Standalone**
 
-      *Restore author and publish instances*: If a disaster occurs, you can restore the repository to the last backed up state by performing the steps described in [Backup and Restore.](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html)
+      *Restore author and publish instances*: If a disaster occurs, you can restore the repository to the last backed up state by performing the steps described in [Backup and Restore.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
       The complete restoration of Author node ascertains the restoration of Forms Manager and AEM Forms Workspace data as well.
 
@@ -110,7 +110,7 @@ If your GDS is restored to a location other than where it was originally, run th
 
 >[!NOTE]
 >
->If you had enabled document storage in database, you don’t need to change the GDS location.
+>If you had enabled document storage in database, you don't need to change the GDS location.
 
 >[!NOTE]
 >

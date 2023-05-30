@@ -16,9 +16,7 @@ exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
 
 ## Overview {#overview}
 
-FFmpeg is a solution for converting and streaming audio and video and, when installed, is used for proper transcoding of [video assets](../../help/sites-authoring/default-components-foundation.md#video) as well as for AEM Communities' enablement feature.
-
-FFmpeg is used in the author environment to obtain metadata for uploaded enablement resources as well as generate a thumbnail to display when listing the enablement resource.
+FFmpeg is a solution for converting and streaming audio and video and, when installed, is used for proper transcoding of [video assets](../../help/sites-authoring/default-components-foundation.md#video).
 
 ## Installing FFmpeg {#installing-ffmpeg}
 

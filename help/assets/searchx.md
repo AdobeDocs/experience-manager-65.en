@@ -16,7 +16,7 @@ You can also add additional tabs to the [!DNL Assets] admin panel.
 
 >[!CAUTION]
 >
->As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. For announcement, see [deprecated and removed features](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommends using Touch-enabled UI. For customization, see [search facets](/help/assets/search-facets.md).
+>As of [!DNL Experience Manager] 6.4, Classic UI is deprecated. Adobe recommends using Touch-enabled UI. For customization, see [search facets](/help/assets/search-facets.md).
 
 ## Overlay {#overlaying}
 

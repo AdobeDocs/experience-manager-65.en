@@ -144,58 +144,6 @@ Where &lt;text_x&gt; can be a mix of static text and dynamic string variables. T
 
   PageModified =&gt; /content/geometrixx/en/products
 
-### Email Templates for Forum Notification {#email-templates-for-forum-notification}
-
-Email templates for forum notifications are located under:
-
-`/etc/notification/email/default/com.day.cq.collab.forum`
-
-The default English template ( `en.txt`) is defined as follows:
-
-```xml
-subject=[CQ Forum Notification]
-
-header=-------------------------------------------------------------------------------------\n \
-Time: Time: ${time}\n \
-Forum Page Path: ${forum.path}\n \
--------------------------------------------------------------------------------------\n\n
-
-message=Page: ${host.prefix}${forum.path}.html\n
-
-footer=\n \
--------------------------------------------------------------------------------------\n \
-This is an automatically generated message. Please do not reply.
-
-```
-
-#### Customizing Email Templates for Forum Notification {#customizing-email-templates-for-forum-notification}
-
-To customize the English email template for forum notification:
-
-1. In CRXDE, open the file:
-
-   `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
-
-1. Modify the file to your needs.
-1. Save the changes.
-
-The template needs to have the following format:
-
-```
- subject=<text_1>
- header=<text_2>
- message=<text_3>
- footer=<text_4>
-```
-
-Where `<text_x>` can be a mix of static text and dynamic string variables.
-
-The following variables can be used within the email template for forum notifications:
-
-* `${time}`, the event date and time.
-
-* `${forum.path}`, the path to the forum page.
-
 ### Email Templates for Workflow Notification {#email-templates-for-workflow-notification}
 
 The email template for workflow notifications (English) is located at:
@@ -288,7 +236,6 @@ To add a template for a new language:
 1. In CRXDE, add a file `<language-code>.txt` below:
 
     * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` : for page notifications
-    * `/etc/notification/email/default/com.day.cq.collab.forum` : for forum notifications
     * `/libs/settings/workflow/notification/email/default` : for workflow notifications
 
 1. Adapt the file to the language.
@@ -459,6 +406,6 @@ Now, activate the OAuth components. You can do this by:
 Finally, confirm the configuration by:
 
 1. Going to the address of the Publish instance, and logging in as admin.
-1. Open a new tab in the browser and go to `http://serveraddress:serverport/services/mailer/oauth2/authorize`. This will redirect you to the page of your SMTP provider, in this case Gmail.
+1. Open a new tab in the browser and go to `http://serveraddress:serverport/services/mailer/oauth2/authorize`. This will redirect you to the page of your SMTP provider, in this case Outlook.
 1. Login and consent to giving required permissions
 1. After consenting, the token will be stored in the repository. You can access it under `accessToken` by directly accessing this URL on your publish instance: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`

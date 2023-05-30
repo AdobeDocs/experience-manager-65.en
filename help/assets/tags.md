@@ -30,7 +30,7 @@ To learn more about Adobe extensions or third-party extensions, see [Adobe exten
 * Experience Platform Tags integration for Dynamic Media viewers does not work in the Experience Manager author node. You cannot see any tracking from a WCM page until it is published.
 * Experience Platform Tags integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on Asset Details page.
 * Experience Platform Tags integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
-* Support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
+* Support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
 * Storage Duration configuration for Data Elements is not supported for Data Elements using the *Dynamic Media Viewers* extension. Storage Duration must be set to **[!UICONTROL None]**.
 
 ### Use cases for the integration {#use-cases-for-the-integration}
@@ -127,7 +127,7 @@ When an Experience Cloud account is subscribed to use Adobe Analytics for Audio 
 
 See [Installation and setup of extensions](#installing-and-setup-of-extensions).
 
-Currently, the support for video tracking is limited to "core playback" tracking only, as described in [Tracking overview](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-av-playback/track-core-overview.html#player-events). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
+Currently, the support for video tracking is limited to "core playback" tracking only, as described in [Tracking overview](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
 
 ## Use the Dynamic Media Viewers extension {#using-the-dynamic-media-viewers-extension}
 
@@ -151,7 +151,7 @@ Complete the configuration steps from the [Configure Adobe Analytics](#configuri
 
 Following proper configuration, you can add Experience Platform Tags support to a web page with a Dynamic Media viewer.
 
-See [Add the Experience Platform Tags Embed Code](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-add-embed.html#configure-launch) to learn more about how to use Experience Platform Tags library embed code.
+See [Add the Experience Platform Tags Embed Code](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html) to learn more about how to use Experience Platform Tags library embed code.
 
 <!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
@@ -416,7 +416,7 @@ You are going to use the following Adobe products to configure your integration:
 
 Also, if this integration solution is used with Experience Manager Sites, the following configuration must also be done:
 
-* [!DNL Adobe I/O] Console - integration is created for Experience Platform Tags.
+* [!DNL Adobe Developer Console] - integration is created for Experience Platform Tags.
 * Experience Manager author node - IMS configuration and Experience Platform Tags cloud configuration.
 
 As part of the configuration, be sure you have access to a company in Adobe Experience Cloud that has Adobe Analytics and Experience Platform Tags already enabled.
@@ -447,7 +447,7 @@ See also [Analytics Implementation Guide](https://experienceleague.adobe.com/doc
 
    If no report suite is available, you or your Adobe Analytics administrator must create one before you can proceed any further with the configuration.
 
-   See [Reports and Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html#manage-report-suites) and [Create a report suite](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+   See [Reports and Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html) and [Create a report suite](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html).
 
    In Adobe Analytics, report suites are managed under **[!UICONTROL Admin]** > **[!UICONTROL Report Suites]**.
 
@@ -509,7 +509,7 @@ After you configure Experience Platform Tags, the following will be set up for t
 
 A property in Experience Platform Tags is a named configuration that keeps all your settings together. A library of the configuration settings is generated and published to different environment levels (development, staging, and production).
 
-See also [Create a Tags property](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-create-a-property.html#configure-launch).
+See also [Create a Tags property](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html).
 
 1. In Experience Platform Tags, select **[!UICONTROL New Property]**.
 1. In the **[!UICONTROL Create Property]** dialog box, in the **[!UICONTROL Name]** field, type a descriptive name, such as the title of your website. For example, `DynamicMediaViewersProp.`
@@ -534,7 +534,7 @@ Where required, the following extensions must be installed and configured:
 
 No additional configuration is needed, accept for any proposed values. When you are done, be sure you select **[!UICONTROL Save]**.
 
-See [Adobe Experience Cloud Identity Service extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html).
+See [Adobe Experience Cloud Identity Service extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html).
 
 * (Required) *Adobe Analytics* extension
 
@@ -554,7 +554,7 @@ On the **[!UICONTROL Install Extension]** page, expand **[!UICONTROL General]**,
 
 Select **[!UICONTROL Save]**.
 
-See [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html).
+See [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html).
 
 * (Optional; required only if video tracking is needed) *Adobe Media Analytics for Audio and Video* extension
 
@@ -562,7 +562,7 @@ Fill in the tracking server field. The tracking server for *Adobe Media Analytic
 
 All other fields are optional.
 
-See [Adobe Media Analytics for Audio and Video extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html).
+See [Adobe Media Analytics for Audio and Video extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 
 * (Required) *Dynamic Media Viewers* extension
 
@@ -677,7 +677,7 @@ The Experience Manager configuration consists of the following two major steps:
 
    The following Info message is displayed:
 
-   *To retrieve a valid access token, the new certificate's public key is added to the technical account on Adobe I/O!*
+   *To retrieve a valid access token, the new certificate's public key is added to the technical account on Adobe Developer Console!*
 
    To dismiss the Info dialog box, select **[!UICONTROL OK]**.
 
@@ -691,9 +691,9 @@ The Experience Manager configuration consists of the following two major steps:
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. In a new browser tab, navigate to the [[!DNL Adobe I/O] Console](https://console.adobe.io/integrations).
+1. In a new browser tab, navigate to [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/integrations).
 
-1. From the **[!UICONTROL Adobe I/O Console Integrations]** page, near the upper-right corner, select **[!UICONTROL New integration]**.
+1. From the **[!UICONTROL Adobe Developer Console Integrations]** page, near the upper-right corner, select **[!UICONTROL New integration]**.
 1. In the **[!UICONTROL Create a new integration]** dialog box, ensure that **[!UICONTROL Access an API]** radio button is selected, then select **[!UICONTROL Continue]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -849,4 +849,4 @@ It is, however, supported in the Experience Manager publish node. Using the defa
 
 It is possible to work around this limitation. Specify the Development or Staging URL of the Platform Tags library in the Experience Platform Tags Cloud configuration for the Experience Manager publish node above. Doing so makes the Experience Manager publish node use the Development or Staging version of Experience Platform Tags library.
 
-See [Integrate Experience Manager with Experience Platform Tags by way of [!DNL Adobe I/O]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html) for more information about setting up Experience Platform Tags Cloud Configuration.
+See [Integrate Experience Manager with Experience Platform Tags by way of [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) for more information about setting up Experience Platform Tags Cloud Configuration.

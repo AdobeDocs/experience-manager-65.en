@@ -107,7 +107,7 @@ Once you are logged in to the JMX console, perform a search for **Lucene Index S
 
 For query statistics, take a look at the MBean named **Oak Query Statistics**.
 
-If you would like to dig into your indexes using a tool like [Luke](https://code.google.com/p/luke/), you will need to use the Oak console to dump the index from the `NodeStore` to a filesystem directory. For instructions on how to do this, please read the [Lucene documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+If you would like to dig into your indexes using a tool like [Luke](https://code.google.com/archive/p/luke/), you must use the Oak console to dump the index from the `NodeStore` to a filesystem directory. For instructions on how to do this, please read the [Lucene documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 You can also extract the indexes in your system in JSON format. In order to do this, you need to access `https://server:port/oak:index.tidy.-1.json`
 
@@ -170,7 +170,7 @@ Solr indexes can be configured to run embedded on the AEM server for development
 
 >[!NOTE]
 >
->While taking the integrated Solr search approach would allow for offloading of indexing to a Solr server. If the more advanced features of the Solr server are used through a crawler based approach, additional configuration work will be required. Headwire has created an [open source connector](https://www.aemsolrsearch.com/#/) to accelerate these types of implementations.
+>While taking the integrated Solr search approach would allow for offloading of indexing to a Solr server. If the more advanced features of the Solr server are used through a crawler based approach, additional configuration work will be required.
 
 The downside to taking this approach is that while by default, AEM queries will respect ACLs and thus hide results that a user does not have access to, externalizing search to a Solr server will not support this feature. If search is to be externalized in this way, extra care must be taken to ensure that users are not presented with results that they should not see.
 

@@ -1,8 +1,6 @@
 ---
-title: Your Inbox
-seo-title: Your Inbox
-description: Managing your tasks with the inbox
-seo-description: Managing your tasks with the inbox
+title: Your Inbox to manage tasks
+description: Managing your tasks with the inbox.
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

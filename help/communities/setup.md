@@ -46,8 +46,6 @@ To ensure the latest feature pack is installed, visit:
 
 * [Latest Releases](deploy-communities.md#latest-releases)
 
-For a tutorial that creates an [enablement community site](overview.md#enablement-community), visit [Getting Started with AEM Communities for Enablement](getting-started-enablement.md).
-
 ## Configure Analytics {#configure-analytics}
 
 When [Adobe Analytics is configured for the community site](analytics.md), information on community activity is available that enhances the community member's experience as well as provides feedback to administrators of the site.
@@ -124,7 +122,7 @@ See [Social Login with Facebook and Twitter](social-login.md).
 
 ## Create Tutorial Tags {#create-tutorial-tags}
 
-Create tags to use for the engage and enablement tutorials, using the tag namespace of `Tutorial`.
+Create tags to use for the engage tutorials, using the tag namespace of `Tutorial`.
 
 Use the [Tagging console](../../help/sites-administering/tags.md#tagging-console) to create the following tags:
 

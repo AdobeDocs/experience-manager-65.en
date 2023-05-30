@@ -6,6 +6,7 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
+hide: yes
 ---
 # [!DNL Adobe Experience Manager] and [!DNL Creative Cloud] integration best practices {#aem-and-creative-cloud-integration-best-practices}
 
@@ -13,7 +14,6 @@ exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 | -------- | ---------------------------- |
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices.html?lang=en)                  |
 | AEM 6.5     | This article         |
-| AEM 6.4     |     [Click here](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html?lang=en)           |
 
 [!DNL Adobe Experience Manager Assets] is a digital asset management (DAM) solution that can integrate with [!DNL Adobe Creative Cloud] to help DAM users work together with creative teams, streamlining collaboration in the content creation process.
 

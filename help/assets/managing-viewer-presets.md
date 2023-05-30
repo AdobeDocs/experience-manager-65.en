@@ -54,7 +54,7 @@ See [Responsive Image library](https://experienceleague.adobe.com/docs/dynamic-m
 
 >[!NOTE]
 >
->Please note that you must publish all out-of-the-box viewers before you first use them.
+>Publish all out-of-the-box viewers before you first use them.
 >See [Publishing Viewer Presets].(#publishing-viewer-presets)
 
 ### Viewer Preset system compatibility {#viewer-preset-system-compatibility}
@@ -64,9 +64,9 @@ All out-of-the-box Viewer Presets that come with Dynamic Media are fully compati
 * Desktops
 * Apple iPhone
 * Apple iPad
-* Android™ Smartphone
-* Android™ Tablet
-* For video, additional support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
+* Android&trade; Smartphone
+* Android&trade; Tablet
+* For video, additional support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows Phone](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Rich media types for Viewer Presets {#rich-media-types-for-viewer-presets}
 
@@ -134,7 +134,7 @@ Administrators can add and customize the following rich media types when creatin
    <td><strong>Vertical Zoom</strong></td>
    <td><p>The Vertical Zoom viewer lets you maximize a product imagery viewing experience to give your users the best representation of a product. The vertical location of swatches does the following:</p>
     <ul>
-     <li>Ensures that swatches are "above the fold".<br/> With horizontal swatches, depending on the user’s desktop screen size, they are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
+     <li>Ensures that swatches are "above the fold".<br/> With horizontal swatches, depending on the user's desktop screen size, they are not visible until the user scrolled down the page. By placing the swatches vertically in the viewer, it ensures that they are visible no matter the user's screen size.</li>
      <li>Maximizes main image size.<br /> With horizontal swatches, it is necessary to reserve space on the page to ensure that they are visible. This positioning decreased the size of the main image. With a vertical swatch layout, however, you do not need to allocate this space. As such, you can maximize the main image size.</li>
     </ul> </td>
   </tr>
@@ -325,7 +325,7 @@ See "Viewers release notes" in the table of contents of the [Viewers Reference G
 
 ### Supported mobile viewers gestures matrix {#supported-mobile-viewers-gestures-matrix}
 
-The following table identifies the mobile viewer gestures that are supported on iOS, Android™ 2.x, and Android™ 3.x devices.
+The following table identifies the mobile viewer gestures that are supported on iOS, Android&trade; 2.x, and Android&trade; 3.x devices.
 
 <table>
  <tbody>
@@ -356,14 +356,14 @@ The following table identifies the mobile viewer gestures that are supported on 
   <tr>
    <td><p><strong>Pinch open</strong></p> </td>
    <td><p>Does not apply</p> </td>
-   <td><p>Zooms in (iOS and Android™ 3x only)</p> </td>
-   <td><p>Zooms in (iOS and Android™ 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android&trade; 3x only)</p> </td>
+   <td><p>Zooms in (iOS and Android&trade; 3x only)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Pinch close</strong></p> </td>
    <td><p>Does not apply</p> </td>
-   <td><p>Zooms out (iOS and Android™ 3x only)</p> </td>
-   <td><p>Zooms out (iOS and Android™ 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android&trade; 3x only)</p> </td>
+   <td><p>Zooms out (iOS and Android&trade; 3x only)</p> </td>
   </tr>
   <tr>
    <td><p><strong>Swipe</strong></p> </td>
@@ -454,6 +454,19 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
 1. (Optional) Near the top of the Edit Viewer Preset page, select **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]**, or **[!UICONTROL Phone]** to uniquely define visual styles for different device and screen types.
 1. On the Viewer Preset Editor page, select the **[!UICONTROL Behavior]** tab. Alternatively, you can select any visual element in the viewer to select it for configuration.
+For example, for the *VideoPlayer* type, under **[!UICONTROL Modifiers]** > **[!UICONTROL Playback]**, you can select from one of three adaptive bitrate streaming options:
+
+   * **[!UICONTROL dash]** - Videos stream as dash only. However, on Safari/iOS devices, you must select **[!UICONTROL hls]** as the type, instead.
+   * **[!UICONTROL hls]** - Videos stream as hls only.
+   * **[!UICONTROL auto]** - Best practice. The creation of DASH and HLS streams is storage optimized. Therefore, Adobe recommends that you always select **[!UICONTROL auto]** as the playback type. Videos stream as dash, hls, or progressive, as in the following playback order: 
+     * If the browser supports DASH, then DASH streaming is used, first. 
+     * If the browser does not support DASH, then HLS streaming is used, second.
+     * If the browser does not support either DASH or HLS, then progressive playback is used, lastly.
+
+   >[!NOTE]
+   >
+   >To see and use the **[!UICONTROL dash]** option, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](/help/assets/video.md#enable-dash).
+
 1. From the **[!UICONTROL Selected Type]** pull-down menu, select a component whose behaviors you want to change.
 
    Many components in the visual editor have a detailed description associated with it. These descriptions appear within blue boxes when you expand a component to reveal its associated parameters.
@@ -472,11 +485,15 @@ See [Special considerations for creating a Carousel Banner Viewer preset](#speci
 
    See [Publishing Viewer Presets](#publishing-viewer-presets).
 
+   >[!IMPORTANT]
+   >
+   >For old videos that use an adaptive bitrate streaming profile, the URL continues to play as usual -- with HLS streaming -- until you [reprocess the video assets](/help/assets/processing-profiles.md#reprocessing-assets). After reprocessing, the same URL continues to work, but now with *both* DASH and HLS streaming enabled.
+
 ### Special considerations for creating an Interactive Viewer preset {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **About Display Modes for image thumbnails in the panel**
 
-When you create or edit an Interactive Video viewer preset, you have the choice of which Display Mode setting to use when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** menu under the **[!UICONTROL Behavior]** tab. The display mode you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`display mode (default) or a `continuous` display mode.
+When you create or edit an Interactive Video viewer preset, you have the choice of which Display Mode setting to use when you select `InteractiveSwatches` from the **[!UICONTROL Selected Component]** menu under the **[!UICONTROL Behavior]** tab. The display mode that you choose affects how and when thumbnails appear while the video is playing. You can choose either a `segment`display mode (default) or a `continuous` display mode.
 
 <table>
  <tbody>
@@ -543,7 +560,7 @@ The Viewer Presets that are available in the user interface depends on which one
 1. In the upper-left corner of Experience Manager, select the Experience Manager logo, then in the left rail, select **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Viewer Presets]**.
 1. On the Viewer Preset page, under the **[!UICONTROL State]** column header, select the toggle to activate or deactivate a viewer preset.
 
-   Viewer presets that are activated have the toggle appear on the right, inside a blue box; deactivated viewer presets have the toggle appear on the left, inside a light grey box.
+   Viewer presets that are activated have the toggle appear on the right, inside a blue box; deactivated viewer presets have the toggle appear on the left, inside a light gray box.
 
 ## Publish Viewer Presets {#publishing-viewer-presets}
 

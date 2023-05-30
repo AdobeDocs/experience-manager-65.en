@@ -1,6 +1,5 @@
 ---
-title: Video
-seo-title: Video
+title: Video in Sites Classic Authoring
 description: Assets provide for centralized video asset management where you can upload videos directly to Assets for auto-encoding to Dynamic Media Classic and access Dy videos directly from Assets for page authoring.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -16,7 +15,7 @@ Assets provide for centralized video asset management where you can upload video
 Dynamic Media Classic video integration extends the reach of optimized video to all screens (auto device and bandwidth detection).
 
 * The Dynamic Media Classic video component automatically performs device and bandwidth detection to play the right format and right quality video across desktop, tablets and mobile.
-* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set is a container for all video renditions that are required to play back video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android™, BlackBerry®, and Windows mobile devices. See [Dynamic Media Classic documentation about adaptive video sets for more information](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
+* Assets - You can include adaptive video sets rather than only single video assets. An adaptive video set is a container for all video renditions that are required to play back video seamlessly across multiple screens. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. You use an Adaptive Video Set, along with S7 video component, for adaptive video streaming across multiple screens including desktop, iOS, Android&trade;, BlackBerry&reg;, and Windows mobile devices. See [Dynamic Media Classic documentation about adaptive video sets for more information](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
 
 ## About FFMPEG and Dynamic Media Classic {#about-ffmpeg-and-scene}
 

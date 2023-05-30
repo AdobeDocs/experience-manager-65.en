@@ -61,7 +61,7 @@ Each platform requires the ADBMobileConfig to be copied to a specific location.
 
 If building with the PhoneGap CLI this can be done with an cordova build hook scripts. This can be seen intheGeometrixx Outdoors App at:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-For iOS the file will need to be copied to the XCode project's **Resources** directory (eg. "platforms/ios/Geometrixx/Resources/ADBMobileConfig.json"). If the App is targeted for Android then the path to copy to is "platforms/android/assets/ADBMobileConfig.json". For further details on using hooks during the PhoneGap CLI build refer to [Three hooks your Cordova/PhoneGap project needs](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
+For iOS the file will need to be copied to the XCode project's **Resources** directory (eg. "platforms/ios/Geometrixx/Resources/ADBMobileConfig.json"). If the App is targeted for Android then the path to copy to is "platforms/android/assets/ADBMobileConfig.json". For further details on using hooks during the PhoneGap CLI build refer to [Three hooks your Cordova/PhoneGap project needs](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////
@@ -98,7 +98,7 @@ After performing these steps your app will be enabled to report all the lifecycl
 
 ### Instrument your code for full App tracking {#instrument-your-code-for-full-app-tracking}
 
-There are several tracking APIs provided in the [AMS Phonegap Plugin API.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+There are several tracking APIs provided in the [AMS Phonegap Plugin API.](https://experienceleague.adobe.com/docs/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 These will allow you to track states and actions such as where pages your users are navigating to in your app, which controls are being used the most. The easiest way to instrument you app for tracking is to make use of the Analytics APIs provided by the AMS plugin.
 

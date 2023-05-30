@@ -4,7 +4,7 @@ seo-title: Live Copy Overview Console
 description: Learn about the basics of the Live Copy Overview Console.
 seo-description: Learn about the basics of the Live Copy Overview Console.
 uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference

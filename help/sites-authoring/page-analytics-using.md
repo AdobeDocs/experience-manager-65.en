@@ -1,5 +1,5 @@
 ---
-title: Seeing Page Analytics Data
+title: Seeing page analytics data to gauge the effectiveness of page content
 seo-title: Seeing Page Analytics Data
 description: Use page analytics data to gauge the effectiveness of their page content
 seo-description: Use page analytics data to gauge the effectiveness of their page content
@@ -85,4 +85,4 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 >
 >Due to security changes within the Adobe Analytics API, it is no longer possible to use the version of Activity Map that is included within AEM.
 >
->The [ActivityMap plugin provided by Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.
+>The [ActivityMap plugin provided by Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) should now be used.

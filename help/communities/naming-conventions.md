@@ -1,8 +1,8 @@
 ---
-title: Naming Conventions
-seo-title: Naming Conventions
+title: Naming conventions in the Java package name
+
 description: Hyphens in Java Package Name
-seo-description: Hyphens in Java Package Name
+
 uuid: 48086e6c-c35b-4ffc-b216-d01feca7bf9a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES

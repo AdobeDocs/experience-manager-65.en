@@ -1,8 +1,6 @@
 ---
-title: Responsive Layout
-seo-title: Responsive Layout
-description: AEM allows you to realize a responsive layout for your pages
-seo-description: AEM allows you to realize a responsive layout for your pages
+title: Responsive layout for your content pages
+description: Adobe Experience Manager lets you realize a responsive layout for your pages.
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

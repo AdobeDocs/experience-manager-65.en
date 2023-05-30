@@ -1,8 +1,8 @@
 ---
-title: Troubleshooting AEM
-seo-title: Troubleshooting AEM
+title: Troubleshooting Adobe Experience Manager
+
 description: Learn about troubleshooting issues with AEM.
-seo-description: Learn about troubleshooting issues with AEM.
+
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +12,9 @@ discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 ---
-# Troubleshooting AEM {#troubleshooting-aem}
+# Troubleshooting Adobe Experience Manager {#troubleshooting-aem}
 
-The following section covers some issues that you may encounter when using AEM, together with suggestions on how to troubleshoot them.
+The following section covers some issues that you may encounter when using AEM (Adobe Experience Manager), together with suggestions on how to troubleshoot them.
 
 >[!NOTE]
 >
@@ -22,21 +22,21 @@ The following section covers some issues that you may encounter when using AEM, 
 
 >[!NOTE]
 >
->When experiencing problems it is also worthwhile checking the list of [Known Issues](/help/release-notes/release-notes.md) for your instance (release and service packs).
+>When experiencing problems, it is also worthwhile checking the list of [Known Issues](/help/release-notes/release-notes.md) for your instance (release and service packs).
 
 ## Troubleshooting scenarios for Administrators {#troubleshooting-scenarios-for-administrators}
 
-The following table provides an overview of problems administrators may need to troubleshoot:
+The following table provides an overview of problems that administrators can troubleshoot:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Role(s)</strong></td>
+   <td><strong>Role</strong></td>
    <td><strong>Problem </strong></td>
   </tr>
   <tr>
    <td>System Administrator</td>
-   <td><p>Double-clicking the Quickstart jar does not have any effect or opens the jar file with another program (for example, archive manager)</p> </td>
+   <td><p>Double-clicking the Quickstart jar does has no effect or opens the jar file with another program (for example, archive manager)</p> </td>
   </tr>
   <tr>
    <td><p>System Administrator</p> </td>
@@ -69,18 +69,18 @@ See [Common Installation Issues](/help/sites-deploying/troubleshooting.md#common
 
 ### Making a Thread Dump {#making-a-thread-dump}
 
-The thread dump is a list of all the Java threads that are currently active. If AEM does not respond properly, the thread dump can help you identify deadlocks or other problems.
+The thread dump is a list of all the Java&trade; threads that are currently active. If AEM does not respond properly, the thread dump can help you identify deadlocks or other problems.
 
 ### Using Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
+1. Open the **AEM Web Console**; for example, at `https://localhost:4502/system/console/`.
 1. Select the **Threads **under** Status** tab.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### Using jstack (command line) {#using-jstack-command-line}
 
-1. Find the PID (process id) of the AEM Java instance.
+1. Find the PID (process id) of the AEM Java&trade; instance.
 
    For example, you can use `ps -ef` or `jps`.
 
@@ -88,7 +88,7 @@ The thread dump is a list of all the Java threads that are currently active. If 
 
    `jstack <pid>`
 
-1. This will show the thread dump.
+1. Shows the thread dump.
 
 >[!NOTE]
 >
@@ -96,27 +96,27 @@ The thread dump is a list of all the Java threads that are currently active. If 
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-See the [How to take Thread Dumps from a JVM](https://helpx.adobe.com/cq/kb/TakeThreadDump.html) documentation for more information
+See the [How to take Thread Dumps from a JVM](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en) documentation for more information
 
 ### Checking for unclosed JCR sessions {#checking-for-unclosed-jcr-sessions}
 
 When functionality is developed for AEM WCM, JCR Sessions may be opened (comparable to opening a database connection). If the opened sessions are never closed, your system may experience following symptoms:
 
 * The system becomes slower.
-* You can see a lot of CacheManager: resizeAll entries in the log file; the following number (size=&lt;x&gt;) shows the number of caches, each sessions opens several caches.
+* You can see much of CacheManager: resizeAll entries in the log file; the following number (size=&lt;x&gt;) shows the number of caches, each session opens several caches.
 * From time to time the system runs out of memory (after a few hours, days, or weeks - depending on the severity).
 
-To analyze unclosed sessions and find out which code is not closing a session, refer to the Knowledge Base article [Analyze Unclosed Sessions](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html).
+To analyze unclosed sessions and find out which code is not closing a session, refer to the Knowledge Base article [Analyze Unclosed Sessions](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
 ### Using the Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 
 The status of the OSGi bundles can also give an early indication of possible issues.
 
-1. Open the **AEM Web Console**; for example at `https://localhost:4502/system/console/`.
+1. Open the **AEM Web Console**; for example, at `https://localhost:4502/system/console/`.
 1. Select **Bundles** under **OSGI** tab.
 1. Check:
 
-    * the Status of the bundles. If any are Inactive or Unsatisfied, then try to stop and restart the bundle. If the issue persists then you may need to investigate further using other methods.
-    * whether any of the bundles have missing dependencies. Such details can be seen by clicking on the individual bundle Name, which is a link (the following example does not have any issues):
+    * the Status of the bundles. If any are Inactive or Unsatisfied, try to stop and restart the bundle. If the issue persists, investigate further using other methods.
+    * whether any of the bundles have missing dependencies. Such details can be seen by clicking the individual bundle Name, which is a link (the following example does not have any issues):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)

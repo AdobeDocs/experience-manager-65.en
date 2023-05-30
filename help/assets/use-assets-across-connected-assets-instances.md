@@ -6,6 +6,7 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
+hide: yes
 ---
 # Use Connected Assets to share DAM assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
@@ -64,7 +65,9 @@ The various roles that are involved to configure and use the capability and thei
 
 ### Connected Assets architecture {#connected-assets-architecture}
 
-Experience Manager allows you to connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. You can connect a maximum of four [!DNL Sites] deployments to a source remote DAM. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
+Experience Manager allows you to connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
+
+Evaluate the optimal number of Sites instances to connect to a remote DAM deployment. Adobe recommends to incrementally connect Sites instances to the deployment and test that there is no performance impact at the remote DAM, as each connected Sites instance contributes to the data traffic on the remote DAM.
 
 The following diagrams illustrate the supported scenarios:
 
@@ -240,10 +243,6 @@ You can also update the metadata properties for an asset on remote DAM and the c
 
 [!DNL Experience Manager] displays an expired status visual indicator on assets in `Remote Assets Content Finder` to stop site authors from using the asset on a [!DNL Sites] page. If you use an asset with an expired status on a [!DNL Sites] page, the asset fails to display on the [!DNL Experience Manager] publish instance.
 
->[!NOTE]
->
->The updates to assets in remote DAM are made available to the [!DNL Sites] deployment only if remote DAM and [!DNL Sites] deployments are on [!DNL Experience Manager].
-
 ## Frequently Asked Questions {#frequently-asked-questions}
 
 +++**Should  you configure Connected Assets if you need to use assets available on your [!DNL Sites] deployment?**
@@ -258,9 +257,9 @@ Configure the Connected Assets feature only when you need to use the assets avai
 
 +++
 
-+++**How many [!DNL Sites] deployments can you connect to a remote DAM deployment after configuring Connected Assets?**
++++**Can you connect multiple [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets?**
 
-You can connect a maximum of four [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
+Yes, you can connect multiple [!DNL Sites] deployments to a remote DAM deployment after configuring Connected Assets. For more information, see [Connected Assets architecture](#connected-assets-architecture).
 
 +++
 
@@ -349,9 +348,16 @@ To troubleshoot common errors, follow these steps:
 
   ![Cookie error in Chrome browser in Incognito mode](assets/chrome-cookies-incognito-dialog.png)
 
+* If you are unable to access the Adobe Managed Services remote DAM deployment from Experience Manager Sites as a Cloud Service Sites deployment, update the `aem_author.vhost` file, available at `"/etc/httpd/conf.d/available_vhosts`, for remote DAM to include the following headers in the Dispatcher configuration:
+
+   ```xml   
+   Header Set Access-Control-Allow-Origin <Local Sites instance host>
+   Header Set Access-Control-Allow-Credentials true
+   ```
+
 * If remote references are not retrieved and results in an error message, check if [!DNL Sites] deployment is available and check for network connectivity issues. Retry later to check. [!DNL Assets] deployment attempts twice to establish connection with [!DNL Sites] deployment and then reports a failure.
 
   ![failure to retrieve asset remote references](assets/reference-report-failure.png)
 
-
+* If the cookies are not sent from the Sites server to the Assets server in Google Chrome, this is because the Assets connection is not over HTTPS. If you do not use HTTPS on the Assets instance then the `SameSite=None` header cannot be added to the response after you authenticate with the Assets server. 
 

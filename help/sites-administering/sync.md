@@ -41,13 +41,13 @@ The benefits of user sync using Sling distribution, compared to traditional repl
 
 >[!NOTE]
 >
->If sessions are required, it is recommended to either use an SSO solution or use sticky session and have customers log in if they get switched to another publisher.
+>If sessions are required, it is recommended to either use an SSO solution or use sticky session and have customers log in if they get switched to another publish instance.
 
 >[!CAUTION]
 >
->Synchronization of the ***administrators*** group is not supported, even when user sync is enabled. Instead, a failure to 'import the diff' will be logged in the error log.
+>Synchronization of the **administrators** group is not supported, even when user sync is enabled. Instead, a failure to 'import the diff' will be logged in the error log.
 >
->Therefore, when the deployment is a publish farm, if a user is added to or removed from the ***administrators** group, the modification must be manually made on each publish instance.
+>Therefore, when the deployment is a publish farm, if a user is added to or removed from the **administrators** group, the modification must be manually made on each publish instance.
 
 ## Enable User Sync {#enable-user-sync}
 
@@ -65,9 +65,9 @@ Following are the steps necessary to enable user synchronization, followed by a 
 
 ### Prerequisites {#prerequisites}
 
-1. If users and user groups have already been created on one publisher, it is recommended to [manually sync](#manually-syncing-users-and-user-groups) the user data to all publishers prior to configuring and enabling user sync.
+1. If users and user groups have already been created on one publish instance, it is recommended to [manually sync](#manually-syncing-users-and-user-groups) the user data to all publish instances prior to configuring and enabling user sync.
 
-Once user sync is enabled, only newly created users and groups are syncrhonized.
+Once user sync is enabled, only newly created users and groups are synchronized.
 
 1. Ensure the latest code has been installed:
 
@@ -153,7 +153,7 @@ See also
 
 **Configure permissions**
 
-Once an authorized user, a member of the **`administrators`**user group, has been created on all publish instances, that authorized user must be identified on author as having permission to sync user data from author to publish.
+Once an authorized user, a member of the **`administrators`** user group, has been created on all publish instances, that authorized user must be identified on author as having permission to sync user data from author to publish.
 
 * **on author**
 
@@ -176,7 +176,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
 
 **Enable user sync**
 
-* **on publish**:
+* **on each publish instance**:
 
     * sign in with administrator privileges
     * access the [Web Console](/help/sites-deploying/configuring-osgi.md)
@@ -191,7 +191,7 @@ Once an authorized user, a member of the **`administrators`**user group, has bee
         * select the `Enabled` checkbox
         * select `Save`
 
-    * **repeat **for each publish instance
+    * **repeat** for each publish instance
 
 ![](assets/chlimage_1-23.png)
 
@@ -264,13 +264,13 @@ The default configuration is for a single publish instance. As the reason for en
 ![](assets/chlimage_1-25.png)
 
 * **Exporter Endpoints**
-  There should be an exporter endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
+  There should be an exporter endpoint for each publish instance. For example, if there are 2 publish instances, localhost:4503 and 4504, there should be 2 entries:
 
     * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
     * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Importer Endpoints**
-  There should be an importer endpoint for each publisher. For example, if there are 2 publishers, localhost:4503 and 4504, there should be 2 entries:
+  There should be an importer endpoint for each publish instance. For example, if there are 2 publish instances, localhost:4503 and 4504, there should be 2 entries:
 
     * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
     * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -398,7 +398,7 @@ In order for updates to sync properly, it is necessary to modify the vault packa
 
 By design, users and profiles created in the publish environment (self-registration) do not appear in the author environment.
 
-When the topology is a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) and user sync has been correctly configured, the *user *and *user profile* is synchronized across the publish farm using Sling distribution.
+When the topology is a [publish farm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) and user sync has been correctly configured, the *user* and *user profile* is synchronized across the publish farm using Sling distribution.
 
 ### Users or User Groups are Created Using Security Console {#users-or-user-groups-are-created-using-security-console}
 
@@ -410,7 +410,7 @@ When the [User Administration and Security](/help/sites-administering/security.m
 
 ### How to Take User Sync Offline {#how-to-take-user-sync-offline}
 
-To take user sync offine, in order to [remove a publisher](#how-to-remove-a-publisher) or [manually sync data](#manually-syncing-users-and-user-groups), the distribution queue must be empty and quiet.
+To take user sync offline, in order to [remove a publish instance](#how-to-remove-a-publish-instance) or [manually sync data](#manually-syncing-users-and-user-groups), the distribution queue must be empty and quiet.
 
 To check the state of the distribution queue:
 
@@ -453,7 +453,7 @@ This is what is displayed when User Synchronization has not been enabled:
 
 ![](assets/chlimage_1-28.png)
 
-#### How To Run Diagnostics for Publishers {#how-to-run-diagnostics-for-publishers}
+#### How To Run Diagnostics for Publish Instances {#how-to-run-diagnostics-for-publish-instances}
 
 When the diagnostic is run from the author environment, the pass/fail results will include an [INFO] section displaying the list of configured publish instances for confirmation.
 
@@ -529,7 +529,7 @@ See section [9. Unique Sling ID](#unique-sling-id)
 
 ### Manually Syncing Users and User Groups {#manually-syncing-users-and-user-groups}
 
-* on publisher on which users and user groups exist:
+* on publish instances on which users and user groups exist:
 
     * [if enabled, disable user sync](#how-to-take-user-sync-offline)
     * [create a package](/help/sites-administering/package-manager.md#creating-a-new-package) of `/home`
@@ -547,13 +547,13 @@ See section [9. Unique Sling ID](#unique-sling-id)
 
 To configure or enable user sync, go to step 1: [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
-### When a Publisher Becomes Unavailable {#when-a-publisher-becomes-unavailable}
+### When a Publish Instance Becomes Unavailable {#when-a-publish-instance-becomes-unavailable}
 
-When a publish instance becomes unavailable, it should not be removed if it will be back online in the future. Changes will queue up for the publisher, and once it is back online, the changes will be processed.
+When a publish instance becomes unavailable, it should not be removed if it will be back online in the future. Changes will queue up for the publish instance, and once it is back online, the changes will be processed.
 
 If the publish instance will never be back online, if it is offline permanently, then it must be removed because the queue buildup will result in noticeable disk space usage in the author environment.
 
-When a publisher is down, the author log will have exceptions similar to:
+When a publish instance is down, the author log will have exceptions similar to:
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -563,14 +563,14 @@ When a publisher is down, the author log will have exceptions similar to:
  org.apache.sling.distribution.packaging.DistributionPackageImportException: failed in importing package ...
 ```
 
-### How To Remove a Publisher {#how-to-remove-a-publisher}
+### How To Remove a Publish Instance {#how-to-remove-a-publish-instance}
 
-To remove a publisher from the [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory), the distribution queue must be empty and quiet.
+To remove a publish instance from the [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory), the distribution queue must be empty and quiet.
 
 * on author:
 
     * [Take user sync offline](#how-to-take-user-sync-offline)
-    * follow [step 7](#apache-sling-distribution-agent-sync-agents-factory) to remove the publisher from both server lists:
+    * follow [step 7](#apache-sling-distribution-agent-sync-agents-factory) to remove the publish instance from both server lists:
 
         * `Exporter Endpoints`
         * `Importer Endpoints`

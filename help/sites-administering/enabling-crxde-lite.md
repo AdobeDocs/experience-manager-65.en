@@ -25,6 +25,16 @@ When this happens, browsing to `https://serveraddress:4502/crx/de/index.jsp` wil
 
 While this recommendation is intended to reduce attack surfaces as much as possible, system administrators might sometimes need access to CRXDE Lite in order to browse content or debug issues on production instances.
 
+You can enable CRXDE Lite with either [OSGi settings](#enabling-crxde-lite-osgi) or with a [cURL command](#enabling-crxde-lite-curl).
+
+>[!WARNING]
+>
+>Due to slight differences in how these methods operate you should use ***either*** OSGI ***or*** cURL. 
+>
+>The two methods are ***not*** interchangeable.
+
+## Enabling CRXDE Lite with OSGI {#enabling-crxde-lite-osgi}
+
 If disabled, you can turn CRXDE Lite on by following the below procedure:
 
 1. Go to the OSGi Components console at `http://localhost:4502/system/console/components`
@@ -42,6 +52,8 @@ If disabled, you can turn CRXDE Lite on by following the below procedure:
     * Tick the box under **Use absolute URIs**.
 
 1. When finished using CRXDE Lite, make sure you disable WebDAV again.
+
+## Enabling CRXDE Lite with cURL {#enabling-crxde-lite-curl}
 
 You can also enable CRXDE Lite via cURL, by running this command:
 

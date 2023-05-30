@@ -21,17 +21,17 @@ They provide the delivery of content to channels that are not traditional AEM we
 * Native Mobile Applications
 * other channels and touch-points external to AEM
 
-With content fragments that use structured content, you can provide content services by using the JSON exporter to deliver the contents of an(y) AEM page in JSON data model format. This can then be consumed by your own applications.
+With content fragments that use structured content, you can provide content services by using the JSON exporter to deliver the contents of any AEM page in JSON data model format. This method can then be consumed by your own applications.
 
 >[!NOTE]
 >
->The functionality described here is available for all Core Components since [release 1.1.0 of the Core Components](https://docs.adobe.com/content/docs/en/core-components/v1.html).
+>The functionality described here is available for all Core Components since [release 1.1.0 of the Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
 
 ## JSON Exporter with Content Fragment Core Components {#json-exporter-with-content-fragment-core-components}
 
-Using the AEM JSON exporter you can deliver the contents of an(y) AEM page in JSON data model format. This can then be consumed by your own applications.
+Using the AEM JSON exporter, you can deliver the contents of any AEM page in JSON data model format. This method can then be consumed by your own applications.
 
-Within AEM the delivery is achieved using the selector `model` and `.json` extension.
+Within AEM, the delivery is achieved using the selector `model` and `.json` extension.
 
 `.model.json`
 
@@ -41,13 +41,13 @@ Within AEM the delivery is achieved using the selector `model` and `.json` exten
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. Will deliver content such as:
+1. Delivers content such as:
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 You can alternatively deliver the contents of a structured content fragment by targeting it specifically.
 
-This is done using the entire path to the fragment (via the `jcr:content`); for example with a suffix such as.
+Use the entire path to the fragment (by way of the `jcr:content`); for example, with a suffix such as.
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
@@ -59,7 +59,7 @@ Your page can contain either a single content fragment or multiple components of
   http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
   ```
 
-* Will deliver content such as:
+* Delivers content such as:
 
   ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -89,12 +89,12 @@ See also:
 
 ## Related Documentation {#related-documentation}
 
-For further details see:
+For further details, see:
 
-* The [Content Fragments topic in the Assets user guide](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* The [Content Fragments topic in the Assets user guide](/help/assets/content-fragments/content-fragments.md)
 
 * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
 * [Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
 * [Enabling JSON Export for a Component](/help/sites-developing/json-exporter-components.md)
 
-* [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) and the [Content Fragment component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

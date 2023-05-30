@@ -17,38 +17,38 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 
 ## Overview {#overview}
 
-The AEM Developer Tools for Eclipse is a Eclipse plugin based on the [Eclipse plugin for Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) released under the Apache License 2.
+"AEM Developer Tools" is an Eclipse plug-in based on the [Eclipse plugin for Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) released under the Apache License 2.
 
 It offers several features that make AEM development easier:
 
 * Seamless integration with AEM instances through Eclipse Server Connector.
 * Synchronization for both content and OSGI bundles.
 * Debugging support with code hot-swapping capability.
-* Simple bootstrap of AEM projects via a specific Project Creation Wizard.
+* Simple Bootstrap of AEM Projects by way of a specific Project Creation Wizard.
 * Easy editing of JCR properties.
 
 ## Requirements {#requirements}
 
-Before using the AEM Developer Tools, you need to:
+Before using the AEM Developer Tools, do the following:
 
-* Download and install [Eclipse IDE for Java EE Developers](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM Developer Tools currently support Eclipse Kepler or newer
+* Download and install [Eclipse IDE for Java&trade; EE Developers](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM Developer Tools currently support Eclipse Kepler or newer
 
 * Can be used with AEM version 5.6.1 or newer
-* Configure your eclipse installation to ensure that you have at least 1 gigabyte of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Configure your eclipse installation to ensure that you have at least 1 GB of heap memory by editing your `eclipse.ini` configuration file as described in the [Eclipse FAQ](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
->On macOS, you need to right-click on **Eclipse.app** and then select **Show Package Contents** in order to find your `eclipse.ini`**.**
+>On macOS, right-click **Eclipse.app**, and then select **Show Package Contents** to find your `eclipse.ini`.
 
 ## How to install the AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Once you have fulfilled the [requirements](#requirements) above, you can install the plugin as follows:
 
-1. Browse the [**AEM** Developer Tools Web Site](https://eclipse.adobe.com/aem/dev-tools/).
+1. Browse the **AEM Developer Tools** website at `https://eclipse.adobe.com/aem/dev-tools/`.
 
 1. Copy the **Installation Link**.
 
-   Note that alternatively you can download an archive instead of using the installation link. This allows offline installation but you will miss automatic update notifications this way.
+   Alternatively, you can download an archive instead of using the installation link. Doing so allows offline installation but you miss automatic update notifications.
 
 1. In Eclipse, open the **Help** menu.
 1. Click **Install New Software**.
@@ -60,7 +60,7 @@ Once you have fulfilled the [requirements](#requirements) above, you can install
 1. Click **Next**.
 1. Click **Next**.
 1. Accept the lincese agreements and click **Finish**.
-1. Click **Yes** in order to restart Eclipse.
+1. Click **Yes** to restart Eclipse.
 
 ## How To Import Existing Projects {#how-to-import-existing-projects}
 
@@ -70,15 +70,15 @@ Once you have fulfilled the [requirements](#requirements) above, you can install
 
 ## The AEM Perspective {#the-aem-perspective}
 
-The AEM Development Tools for Eclipse ships with a Perspective that offers you full control over your AEM projects and instances.
+The AEM Development Tools for Eclipse ships with a Perspective that offers you full control over your AEM Projects and instances.
 
 ![chlimage_1-2](assets/chlimage_1-2a.jpeg)
 
 ## Sample Multi-Module Project {#sample-multi-module-project}
 
-The AEM Developer Tools for Eclipse comes with a sample, multi-module project that helps you quickly get up to speed with a project setup in Eclipse, as well as serving as a best-practice guide to several AEM features. [Learn more about the Project Archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+"AEM Developer Tools" include a sample, multi-module project that helps you quickly get up to speed with a project setup in Eclipse. It also serves as a best-practice guide to several AEM features. [Learn more about the Project Archetype](https://github.com/adobe/aem-project-archetype).
 
-Follow these steps to create the sample project:
+To create the sample project, complete the following steps:
 
 1. In the **File** &gt; **New** &gt; **Project** menu, browse to the **AEM** section and select **AEM Sample Multi-Module Project**.
 
@@ -88,7 +88,7 @@ Follow these steps to create the sample project:
 
    >[!NOTE]
    >
-   >This step might take a while since m2eclipse needs to scan the archetype catalogs.
+   >This step might take a while because m2eclipse must scan the archetype catalogs.
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
@@ -96,13 +96,13 @@ Follow these steps to create the sample project:
 
    ![chlimage_1-71](assets/chlimage_1-71a.png)
 
-1. Fill in a **Name**, **Group id** and an **Artifact id** for the sample project. You can also opt to set some advanced properties.
+1. Fill in a **Name**, **Group id**, and an **Artifact id** for the sample project. You can also opt to set some advanced properties.
 
    ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-1. You should then configure an AEM server to which Eclipse will connect.
+1. Now configure an AEM server to which Eclipse can connect.
 
-   In order to use the debugger featue, you need to have started AEM in debug mode - which can be achieved eg by adding the following to the command line:
+   To use the debugger feature, be sure you started AEM in debug mode, which can be achieved by adding the following to the command line:
 
    ```
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -114,7 +114,7 @@ Follow these steps to create the sample project:
 
    >[!NOTE]
    >
-   >On a fresh installation (more specifically: when maven dependencies have never been downloaded) you might get the project created with errors. In this case please follow the procedure describe in [Resolving Invalid Project Definition](#resolving-invalid-project-definition).
+   >On a fresh installation (more specifically: when maven dependencies have never been downloaded) you might get the project created with errors. In this case, follow the procedure describe in [Resolving Invalid Project Definition](#resolving-invalid-project-definition).
 
 ## Troubleshooting {#troubleshooting}
 
@@ -123,7 +123,7 @@ Follow these steps to create the sample project:
 To resolve invalid dependencies and project definition proceed as follows:
 
 1. Select all created projects.
-1. Right-click. In menu **Maven** select **Update Projects**.
+1. Right-click. In menu **Maven**, select **Update Projects**.
 1. Check **Force Updates of Snapshot/Releases**.
 1. Click **OK**. Eclipse tries to download the required dependencies.
 
@@ -131,7 +131,7 @@ To resolve invalid dependencies and project definition proceed as follows:
 
 Tag library autocompletion works out of the box, given that the proper dependencies are added to the project. There is one known issue when using the AEM Uber Jar, which does not include the needed tld and TagExtraInfo files.
 
-To work around it, ensure that the org.apache.sling.scripting.jsp.taglib artifact is located in the classpath before the AEM Uber Jar. For Maven projects, place the following dependency in the pom.xml before the Uber Jar.
+To work around it, ensure that the org.apache.sling.scripting.jsp.taglib artifact is in the classpath before the AEM Uber Jar. For Maven projects, place the following dependency in the pom.xml before the Uber Jar.
 
 ```xml
 <dependency>
@@ -148,12 +148,12 @@ Make sure to add the proper version for your deployment of AEM.
 
 The official Apache Sling IDE tooling for Eclipse website provides you with useful information:
 
-* The [**Apache Sling IDE tooling for Eclipse** User Guide](https://sling.apache.org/documentation/development/ide-tooling.html), this documentation will guide you through the overall concepts, server integration and deployement capabilities supported by the AEM Development Tools.
+* The [**Apache Sling IDE tooling for Eclipse** User Guide](https://sling.apache.org/documentation/development/ide-tooling.html), this documentation guides you through the overall concepts, server integration, and deployment capabilities supported by the AEM Development Tools.
 * The [Troubleshooting section](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * The [Known issues list](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
-The following official [Eclipse](https://eclipse.org/) documentation can help to set up your environment:
+The following official [Eclipse](https://www.eclipse.org/) documentation can help to set up your environment:
 
-* [Getting Started with Eclipse](https://eclipse.org/users/)
-* [Eclipse Luna Help System](https://help.eclipse.org/luna/index.jsp)
+* [Getting Started with Eclipse](https://www.eclipse.org/getting-started/)
+* [Eclipse Luna Help System](https://help.eclipse.org/latest/index.jsp)
 * [Maven Integration (m2eclipse)](https://www.eclipse.org/m2e/)

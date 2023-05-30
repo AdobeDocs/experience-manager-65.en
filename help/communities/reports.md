@@ -22,10 +22,6 @@ For AEM Communities, there are various reports that may be accessed in several w
 
 In general, the various reports are:
 
-* [Assignments Report](#assignments-report) 
-
-  For an [enablement community](/help/communities/overview.md#enablement-community), provides an overview of learners' progress on their assignments, including an associated score if implementing the SCORM standard.
-
 * [Views Report](#views-report) 
 
   Provides a chart of views of content by community members and site visitors for any community site.
@@ -33,8 +29,6 @@ In general, the various reports are:
 * [Posts Report](#posts-report) 
 
   Provides a chart of various types of posts by community members to any community site.
-
-When [Adobe Analytics is enabled](/help/communities/sites-console.md#analytics), reports will include the number of views, plays, comments and ratings for each enablement resource over time.
 
 Tabular reports can be exported in .csv format for subsequent processing.
 
@@ -59,59 +53,6 @@ Tabular reports can be exported in .csv format for subsequent processing.
     * generate a report for selected Community Site, Content Type, and Time Period.
 
 ![reports](assets/reports1.png)
-
-### Reports for Enablement Resources and Learning Paths {#reports-for-enablement-resources-and-learning-paths}
-
-* From global navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Resources]**
-
-* Select an existing enablement community site:
-
-  * Select **Report** icon to generate reports which cover all enablement resources.
-  * Select an enablement learning path.
-  * Select **Report** icon to generate reports for:
-
-    * The included enablement resources.
-    * The learners assigned to the learning path.
-
-* These reports provide:
-
-  * Table data, downloadable as CSV:
-
-    * Identifying learner
-    * Their status
-    * Whether assigned or accessed through catalog
-    * Number of comments made
-    * Star rating given
-
-For more details, see [Reports section](/help/communities/resources.md#report) of the Resources console.
-
-## Assignments Report {#assignments-report}
-
-The Assignments console allows reports to be filtered by enablement community site, users or groups, and assignment.
-
-The report provides information on their progress as well as any comments or ratings provided.
-
-![assignment-report](assets/assignment-report.png)
-
-Select the criteria for the report :
-
-* **Site**
-
-  Select an enablement community site.
-
-* **User or Group**
-  * Select User to generate a report for one learner.
-  * Select Group to generate a report for a group of learners.
-
-  The tunnel service will access members and member groups from the publish environment.
-
-* **Assignment**
-
-  Choose from among the enablement resources assigned to the selected learner(s).
-
-Select **Generate** to create the report:
-
-![generate-report](assets/generate-assignment-report.png)
 
 ## Views Report {#views-report}
 

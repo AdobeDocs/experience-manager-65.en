@@ -18,9 +18,9 @@ exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 
 [OSGi](https://www.osgi.org/) is a fundamental element in the technology stack of AEM. It is used to control the composite bundles of AEM and their configuration.
 
-OSGi "*provides the standardized primitives that allow applications to be constructed from small, reusable and collaborative components. These components can be composed into an application and deployed*".
+OSGi "*provides the standardized primitives that allow applications to be constructed from small, reusable, and collaborative components. These components can be composed into an application and deployed*".
 
-This allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://www.osgi.org/Specifications/HomePage)) is contained in one of the various bundles. When working with AEM there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+This functionality allows easy management of bundles as they can be stopped, installed, started individually. The interdependencies are handled automatically. Each OSGi Component (see the [OSGi Specification](https://docs.osgi.org/specification/)) is contained in one of the various bundles. When working with AEM, there are several methods of managing the configuration settings for such bundles; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 The following OSGi configuration settings (listed according to bundle) are relevant to project implementation. Not all the listed settings need adjusting, some are mentioned to help you understand how AEM operates.
 
@@ -28,13 +28,13 @@ The following OSGi configuration settings (listed according to bundle) are relev
 >
 >The list is intended to act as a guideline and is not exhaustive. Not all bundles are listed, nor all parameters for some of the bundles that are.
 >
->The configuration necessary will vary from project to project.
+>The configuration necessary varies from project to project.
 >
->Please see the Web console for values used and detailed information about parameters.
+>See the Web console for values used and detailed information about parameters.
 
 >[!NOTE]
 >
->The OSGi Configuration Diff tool, part of the [AEM Tools](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html), can be used to list the default OSGi configurations.
+>The OSGi Configuration Diff tool, part of the [AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en), can be used to list the default OSGi configurations.
 
 >[!NOTE]
 >
@@ -42,9 +42,9 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 **AEM Replication Event Listener** Configure:
 
-* The **Run Modes**, in which replication events will be distributed to listeners. For example, if defined as author, then this is the system that will "initiate" the replication.
+* The **Run Modes**, in which replication events are distributed to listeners. For example, if defined as author, it is the system that "initiates" the replication.
 
-* The run mode **publish** needs to be added if the project code processes replication events (reverse replication) in a publish environment. For example, when the dispatcher is used to flush from the publish environment or when standard replication to other publish instances occurs.
+* Add the run mode **publish** if the project code processes replication events (reverse replication) in a publish environment. For example, when the Dispatcher is used to flush from the publish environment or when standard replication to other publish instances occurs.
 
 **AEM Repository change listener** Configure:
 
@@ -57,7 +57,7 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 **Apache Felix OSGi Management Console** Configure:
 
-* **Plugins**, the main navigation items (console plugins) to be available in the **Apache Felix Web Management Console** as top level menu items. Disable any you do not need as each requires space and resources.
+* **Plugins**, the main navigation items (console plugins) to be available in the **Apache Felix Web Management Console** as top-level menu items. Disable any you do not need as each requires space and resources.
 
 >[!CAUTION]
 >
@@ -72,62 +72,61 @@ The following OSGi configuration settings (listed according to bundle) are relev
 
 **Apache Sling Customizable Request Data Logger** Configure:
 
-* **Logger Name** and **Log Format** to configure the location and format of request and access logging (default: `request.log`). This log file is essential when analyzing performance or debugging functionality related to the web chain.
-  This is paired with the [Apache Sling Request Logger](#apacheslingrequestlogger).
+* **Logger Name** and **Log Format** to configure the location and format of request and access logging (default: `request.log`). This log file is essential when analyzing performance or debugging functionality related to the web chain. It is paired with the [Apache Sling Request Logger](#apacheslingrequestlogger).
 
-For further information see [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
+See [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache Sling Eventing Thread Pool** Configure:
 
 * **Min Pool Size** and **Max Pool Size**, the size of the pool used to hold event threads.
 
 * **Queue Size**, the maximum size of the thread queue if the pool is exhausted.
-  The recommended value is `-1` as this sets the queue to unlimited; if a limit is set then losses might occur when it is exceeded.
+  The recommended value is `-1` because it sets the queue to unlimited. If a limit is set, losses might occur when it is exceeded.
 
-* Changing these settings can help performance in scenarios with a high number of events; for example, heavy AEM DAM or Workflow usage.
+* Changing these settings can help performance in scenarios with a high number of events. For example, heavy AEM DAM or Workflow usage.
 * Values specific to your scenario should be established using tests.
 * These settings can affect the performance of your instance, so do not change them without reason and due consideration.
 
 **Apache Sling GET Servlet** Configure some aspects of rendering:
 
 * **Auto Index** to enable/disable directory rendering for browsing.
-* **Enable** (or disable) default renditions, such as **HTML**, **Plain Text**, **JSON** or **XML**.
-  You should not disable JSON.
+* **Enable** (or disable) default renditions, such as **HTML**, **Plain Text**, **JSON**, or **XML**.
+  Do not disable JSON.
 
 >[!NOTE]
 >
 >This setting is automatically configured for production instances if you run AEM in [Production Ready Mode](/help/sites-administering/production-ready.md).
 
-**Apache Sling Java Script Handler** Configure settings for the compilation of .java files as scripts (servlets).
+**Apache Sling JavaScript Handler** Configure settings for the compilation of .java files as scripts (servlets).
 
-Certain settings can affect performance, these should be disabled where possible, in particular for a production instance.
+Certain settings can affect performance. Disable these settings where possible, especially for a production instance.
 
-* **Source VM** and **Target VM**, define the JDK version as that used as the runtime JVM
+* **Source VM** and **Target VM**, define the JDK version that is used as the runtime JVM
 
 * for production instances:
 
     * disable **Generate Debug Info**
 
-**Apache Sling JCR Installer** These parameters probably do not need configuration, but can be useful to know when developing or debugging. For example the installation folder(s) can be useful for checking in/out or creating a package.
+**Apache Sling JCR Installer** These parameters probably do not need configuration, but can be useful to know when developing or debugging. For example, the installation folders can be useful for checking in or out, or creating a package.
 
-* **Installation folders name regexp** and **Max hierarchy depth of install folders** - specify where, and to which depth, repository folders are searched for resources to be installed. When a wildcard is used (as in .&#42;/install) all appropriate matches will be searched, for example, `/libs/sling/install` and `/libs/cq/core/install`.
+* **Installation folders name regexp** and **Max hierarchy depth of install folders** - specify where, and to which depth, repository folders are searched for resources to be installed. When a wildcard is used (as in .&#42;/install) all appropriate matches are searched, for example, `/libs/sling/install` and `/libs/cq/core/install`.
 
 * **Search Path**, list of paths that jcrinstall searches for resources to be installed, together with a number indicating the weighting factor for that path.
 
 **Apache Sling Job Event Handler** Configure parameters that manage job scheduling:
 
-* **Retry interval**, **Maximum Retries**, **Maximum Parallel Jobs**, **Acknowledge Wait Time**, amongst others.
+* **Retry interval**, **Maximum Retries**, **Maximum Parallel Jobs**, **Acknowledge Wait Time**, among others.
 
 * Changing these settings can improve performance in scenarios with a high number of jobs; for example, heavy usage of AEM DAM and Workflows.
 * Values specific to your scenario should be established using tests.
 * Do not change these settings without reason, only change after due consideration.
 
-**Apache Sling JSP Script Handler** Configure performance relevant settings for the JSP script handler. To improve performance you should disable as much as possible.
+**Apache Sling JSP Script Handler** Configure performance relevant settings for the JSP script handler. To improve performance, you should disable as much as possible.
 
 In particular for production instances:
 
 * disable **Generate Debug Info**
-* disable **Keep Generated Java**
+* disable **Keep Generated Java&trade;**
 * disable **Mapped Content**
 * disable **Display Source Fragments**
 
@@ -137,13 +136,13 @@ In particular for production instances:
 
 **Apache Sling Logging Configuration** Configure:
 
-* **Log Level** and **Log File**, to define the location and log level of the central logging configuration (error.log). The level can be set to one of `DEBUG`, `INFO`, `WARN`, `ERROR` and `FATAL`.
+* **Log Level** and **Log File**, to define the location and log level of the central logging configuration (error.log). The level can be set to one of `DEBUG`, `INFO`, `WARN`, `ERROR`, and `FATAL`.
 
 * **Number of Log Files** and **Log File Threshold** to define the size and version rotation of the log file.
 
 * **Message Pattern** defines the format of the log messages.
 
-For further information see [AEM Logging](/help/sites-deploying/configure-logging.md#global-logging) and [Sling Logging](https://sling.apache.org/site/logging.html).
+See [AEM Logging](/help/sites-deploying/configure-logging.md#global-logging) and [Sling Logging](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache Sling Logging Logger Configuration (Factory Configuration)** Configure:
 
@@ -155,19 +154,19 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 * Such configurations are helpful during development; for example, to log TRACE messages for a specific service in a specific log file.
 * Such configurations are helpful in a production environment; for example, to have messages about a specific service logged to an individual log file for easier monitoring.
 
-For further information see [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
+See [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache Sling Logging Writer Configuration (Factory Configuration)** Configure:
 
 * **Log File** to define the existence of a log file.
 * **Number of Log Files** to define the version rotation.
 
-* The writer can be used by a **Apache Sling Logging Logger Configuration** configuration.
+* The writer can be used by an **Apache Sling Logging Logger Configuration** configuration.
 
 * Such configurations are helpful during development; for example, to log TRACE messages for a specific service in a specific log file.
 * Such configurations are helpful in a production environment; for example, to have messages about a specific service logged to an individual log file for easier monitoring.
 
-For further information see [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
+See [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache Sling Main Servlet** Configure:
 
@@ -175,9 +174,9 @@ For further information see [AEM Logging](/help/sites-deploying/configure-loggin
 
 **Apache Sling MIME Type Service** Configure:
 
-* **MIME Types** to add those required by your project to the system. This allows a `GET` request on a file to set the correct content-type header for linking the file type and application.
+* **MIME Types** to add types that are required by your project to the system. Doing so allows a `GET` request on a file to set the correct content-type header for linking the file type and application.
 
-**Apache Sling Referrer Filter** To address known security issues with Cross-Site Request Forgery (CSRF) in CRX WebDAV and Apache Sling you need to configure the Referrer filter.
+**Apache Sling Referrer Filter** To address known security issues with Cross-Site Request Forgery (CSRF) in CRX WebDAV and Apache Sling you must configure the Referrer filter.
 
 The referrer filter service is an OSGi service that allows you to configure:
 
@@ -189,38 +188,38 @@ See the [Security Checklist - Issues with Cross-Site Request Forgery](/help/site
 
 >[!NOTE]
 >
->The Apache Sling Referrer Filter is dependent on the installation of a quick fix package.
+>The Apache Sling Referrer Filter depends on the installation of a quick fix package.
 
 **Apache Sling Request Logger** Configure:
 
 * various parameters to define how requests are logged.
-* **Enable Request Log**, to enable or disable.
+* **Enable Request Log**, to enable, or disable.
 
-* **Enable Access Log**, to enable or disable.
+* **Enable Access Log**, to enable, or disable.
 
-This is paired with the [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
+Paired with the [Apache Sling Customizable Request Data Logger](#apacheslingcustomizablerequestdatalogger).
 
-For further information see [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/site/logging.html).
+See [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging](https://sling.apache.org/documentation/development/logging.html).
 
 **Apache Sling Resource Resolver Factory** Configure central aspects of Sling resource resolution:
 
-* **Resource Search Path**(s), add any project specific paths (but do not remove `/libs` or `/apps`).
+* **Resource Search Paths**, add any project-specific paths (but do not remove `/libs` or `/apps`).
 
 * **Virtual URLs** to define your vanity URL mappings.
 
-* **URL Mappings** to define any aliases; for example from `/content` to `/`.
+* **URL Mappings** to define any aliases. For example, from `/content` to `/`.
 
 * **Mapping Location**, the mapper configuration externalized in `/etc/map`.
 
 * Use your local installation (for example, use `https://localhost:4502/system/console/jcrresolver`) to determine which Resource Resolver is active.
 
-For further information see: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
+See: [https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution](https://cwiki.apache.org/confluence/display/SLING/Flexible+Resource+Resolution).
 
 >[!CAUTION]
 >
->In particular these options must be configured in the repository.
+>Configure these options in the repository.
 >
->Otherwise changes made to **URL Mappings** using the Felix console might be overwritten by AEM upon the next startup.
+>Otherwise, changes made to **URL Mappings** using the Felix console might be overwritten by AEM on the next startup.
 
 **Apache Sling Servlet/Script Resolver and Error Handler** The Sling Servlet and Script Resolver has multiple tasks:
 
@@ -232,28 +231,28 @@ For further information see: [https://cwiki.apache.org/confluence/display/SLING/
 
 Various parameters can be set, including:
 
-* **Execution Paths** lists the paths to search for executable scripts; by configuring specific paths you can limit which scripts can be executed. If no path is configured then the default is used ( `/` = root), this allows the execution of all scripts.
-  If a configured path value ends with a slash, the whole sub tree is searched. Without such a trailing slash the script will only be executed if it is an exact match.
+* **Execution Paths** - Lists the paths to search for executable scripts. By configuring specific paths, you can limit which scripts can be run. If no path is configured, then the default is used ( `/` = root), allowing the running of all scripts.
+  If a configured path value ends with a slash, the whole subtree is searched. Without such a trailing slash, the script is only run if it is an exact match.
 
-* **Script User** - this optional property can specify the repository user account used for reading the scripts. If no account is specified the `admin` user is used by default.
+* **Script User** - This optional property can specify the repository user account used for reading the scripts. If no account is specified, the `admin` user is used by default.
 
-* **Default Extensions** The list of extensions for which the default behavior will be used. This means that the last path segment of the resource type can be used as the script name.
+* **Default Extensions** - The list of extensions for which the default behavior is used. The last path segment of the resource type can be used as the script name.
 
-**Apache HTTP Components Proxy Configuration** Proxy configuration for all code using the Apache HTTP client, used when a HTTP is made; for example upon replication.
+**Apache HTTP Components Proxy Configuration** - The proxy configuration for all code using the Apache HTTP client, used when an HTTP is made. For example, on replication.
 
-When creating a new configuration, do not make changes to the factory configuration but instead create a new factory configuration for this component using the configuration manager available here: **https://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
+When creating a configuration, do not change the factory configuration. Instead, create a factory configuration for this component using the configuration manager available here: **https://localhost:4502/system/console/configMgr/**. The proxy configuration is available in **org.apache.http.proxyconfigurator.**
 
 >[!NOTE]
 >
->In AEM 6.0 and earlier releases proxy was configured in Day Commons HTTP Client. As of AEM 6.1 and later releases the proxy configuration has moved to the "Apache HTTP Components Proxy Configuration" instead of the 'Day Commons HTTP Client' config.
+>In AEM 6.0 and earlier releases, proxy was configured in Day Commons HTTP Client. As of AEM 6.1 and later releases, the proxy configuration has moved to the "Apache HTTP Components Proxy Configuration" instead of the 'Day Commons HTTP Client' config.
 
-**Day CQ Antispam** Configure the anti-spam service (Akismet) used. This requires you to register the:
+**Day CQ Antispam** Configure the anti-spam service (Akismet) used. This feature requires you to register the following:
 
 * **Provider**
 * **API key**
 * **Registered URL**
 
-**Adobe Granite HTML Library Manager** Configure this to control the handling of client libraries (css or js); including, for example, how the underlying structure is seen.
+**Adobe Granite HTML Library Manager** Configure to control the handling of client libraries (css or js) including, for example, how the underlying structure is seen.
 
 * For production instances:
 
@@ -265,13 +264,13 @@ When creating a new configuration, do not make changes to the factory configurat
 * For JS development (especially when firebugging/debugging):
 
     * disable **Minify**
-    * enable **Debug** to separate the files for debugging and use with firebug.
-    * enable **Timing** in the case of interest in timing.
+    * enable **Debug** to separate the files for debugging and use with fire bug.
+    * enable **Timing** if interested in timing.
     * enable **Debug** console to see JS console log messages.
 
 >[!CAUTION]
 >
->When changing the setting for either **Minify** or **Gzip** you will also need to delete the contents of clientlibs cache. Refer to this [Knowledge Base article](https://helpx.adobe.com/ca/experience-manager/kb/How-to-force-a-recompilation-of-all-Sling-scripts-jsps-java-sightly-on-AEM-6-4.html) for details.
+>When changing the setting for either **Minify** or **Gzip**, delete the contents of clientlibs cache. See [Knowledge Base article](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) for details.
 
 >[!NOTE]
 >
@@ -279,7 +278,7 @@ When creating a new configuration, do not make changes to the factory configurat
 
 **Day CQ HTTP Header Authentication Handler** System wide settings for the basic authentication method of the HTTP request.
 
-When using [closed user groups](/help/sites-administering/cug.md) you can configure (amongst others):
+When using [closed user groups](/help/sites-administering/cug.md), you can configure, among others, the following:
 
 * **HTTP Realm**
 * The **Default Login Page**
@@ -297,13 +296,13 @@ When using [closed user groups](/help/sites-administering/cug.md) you can config
 
 * The various parameters related to proxies for internet access and NTLM that are needed for external access when checking a link.
 
-**Day CQ Mail Service** Configure hostname and access details for the mail server. Please refer to the Configuring the Mail Service section.
+**Day CQ Mail Service** Configure hostname and access details for the mail server. See the Configuring the Mail Service section.
 
 **Day CQ MCM Newsletter** Configure the various settings used with the newsletter.
 
 **Day CQ Root Mapping** Configure:
 
-* **Target Path** to define where a request to " `/`" will be redirected to.
+* **Target Path** to define where a request to " `/`" is redirected to.
 
 There are two UIs available in AEM:
 
@@ -312,13 +311,13 @@ There are two UIs available in AEM:
 
 Using AEM Root Mapping you can configure the UI that you want to have as the default for your instance:
 
-* To have the touch-enabled UI as the default UI the **Target Path** should point to:
+* To have the touch-enabled UI as the default UI, the **Target Path** should point to the following:
 
   ```shell
      /projects.html
   ```
 
-* To have the classic UI as the default UI the **Target Path** should point to:
+* To have the classic UI as the default UI, the **Target Path** should point to the following:
 
   ```shell
      /welcome.html
@@ -326,30 +325,30 @@ Using AEM Root Mapping you can configure the UI that you want to have as the def
 
 >[!NOTE]
 >
->Upon a standard installation the touch-optimized UI is the default UI.
+>On a standard installation, the touch-optimized UI is the default UI.
 
-**Adobe Granite SSO Authentication Handler** Configure Single Sign On (SSO) details; these are often needed in enterprise author setups, often in conjunction with LDAP.
+**Adobe Granite SSO Authentication Handler** - Configure SSO (Single Sign On) details. These details are often needed in enterprise author setups, often with LDAP.
 
 Various configuration properties are available:
 
 * **Path**
-  Path for which this authentication handler is active. If this parameter is left empty the authentication handler is disabled. For example, the path / causes the authentication handler to be used for the entire repository.
+  The path for which this authentication handler is active. If this parameter is left empty, the authentication handler is disabled. For example, the path / causes the authentication handler to be used for the entire repository.
 
 * **Service Ranking**
-  OSGi Framework Service Ranking value is used to indicate the order used for calling this service. This is an `int` value where higher values designate higher precedence.
+  OSGi Framework Service Ranking value is used to indicate the order used for calling this service. This value is an `int` value where higher values designate higher precedence.
   Default value is `0`.
 
 * **Header Names**
-  The name(s) of headers that might contain a user ID.
+  The names of headers that might contain a user ID.
 
 * **Cookie Names**
-  The name(s) of cookies that might contain a user ID.
+  The names of cookies that might contain a user ID.
 
 * **Parameter Names**
-  The name(s) of request parameters that might provide the user ID.
+  The names of request parameters that might provide the user ID.
 
 * **User Map**
-  For selected users, the user name extracted from the HTTP request can be replaced with a different one in the credentials object. The mapping is defined here. If the user name `admin` appears on either side of the map, the mapping will be ignored. Please be aware that the character "=" has to be escaped with a leading "\".
+  For selected users, the user name extracted from the HTTP request can be replaced with a different one in the credentials object. The mapping is defined here. If the user name `admin` appears on either side of the map, the mapping is ignored. The character "=" must be escaped with a leading "\".
 
 * **Format**
   Indicates the format in which the user ID is provided. Use:
@@ -357,17 +356,17 @@ Various configuration properties are available:
     * `Basic` if the user ID is encoded in the HTTP Basic Authentication format
     * `AsIs` if the user ID is provided in plain text or any regular expression applied value should be used as is or any regular expression
 
-**Day CQ WCM Debug Filter** This is useful when developing as it allows the use of suffixes such as ?debug=layout when accessing a page. For example, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout will provide layout information that may be of interest to the developer.
+**Day CQ WCM Debug Filter** This is useful when developing as it allows the use of suffixes such as ?debug=layout when accessing a page. For example, https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout provides layout information that may be of interest to the developer.
 
-* Disable this on production instances to ensure performance and security.
+* To ensure performance and security, disable on production instances.
 
 **Day CQ WCM Filter** Configure:
 
-* **WCM Mode **to define the default mode.
-* On an author instance this might be `edit`, `disable,preview` or `analytics`.
+* **WCM Mode** to define the default mode.
+* On an author instance, this mode might be `edit`, `disable,preview`, or `analytics`.
   The other modes can be accessed from the sidekick, or the suffix `?wcmmode=disabled` can be used to emulate a production environment.
 
-* On a publish instance this must be set to `disabled` to ensure that no other mode is accessible.
+* On a publish instance, this mode must be set to `disabled` to ensure that no other mode is accessible.
 
 >[!NOTE]
 >
@@ -375,7 +374,7 @@ Various configuration properties are available:
 
 **Day CQ WCM Link Checker Configurator** Configure:
 
-* **List of rewrite configurations** to specify a list of locations for content-based linkchecker configurations. The configurations can be based on run mode; this is important to distinguish between author and publish environments, as linkchecker settings may differ.
+* **List of rewrite configurations** to specify a list of locations for content-based link checker configurations. The configurations can be based on run mode. This fact is important to distinguish between author and publish environments, as link checker settings can differ.
 
 **Day CQ WCM Page Manager Factory** Configure:
 
@@ -385,13 +384,13 @@ Various configuration properties are available:
 
 * **Paths**, a list of locations where the system listens for page modifications before triggering a `jcr:Event`.
 
-**Adobe Page Impressions Tracker** For an author instance configure:
+**Adobe Page Impressions Tracker** For an author instance, configure as the following:
 
 * **sling.auth.requirements**: set the value of this property to `-/libs/wcm/stats/tracker`
 
 >[!CAUTION]
 >
->This configuration will allow anonymous requests to the tracking service.
+>This configuration allows anonymous requests to the tracking service.
 
 >[!NOTE]
 >
@@ -399,7 +398,7 @@ Various configuration properties are available:
 
 **Day CQ WCM Page Statistics** For a publish instance configure:
 
-* **URL to send data** to configure the URL used to track page statistics (is vital if a tracker request goes through the dispatcher); for example, the default is `https://localhost:4502/libs/wcm/stats/tracker`.
+* **URL to send data** to configure the URL used to track page statistics (is vital if a tracker request goes through the Dispatcher); for example, the default is `https://localhost:4502/libs/wcm/stats/tracker`.
 
 * **Tracking script enabled** to enable ( `true`) or disable ( `false`) the inclusion of the tracking script on the pages. The default value is `false`.
 
@@ -412,7 +411,7 @@ Various configuration properties are available:
 * **Create Version on Activation**, enabled in a standard installation
 * **Enable Purging**
 
-* **Purge Paths**, the paths that a search action will search
+* **Purge Paths**, the paths that a search action searches.
 * **Implicit Versioning Paths**, the paths where implicit versioning is active.
 
 * **Max Version Age**, the maximum age (in days) of a version
@@ -428,16 +427,16 @@ See [Version Purging](/help/sites-deploying/version-purging.md) for more informa
 Controls the HTML Parser for the CQ rewriter.
 
 * **Additional Tags to Process** - You can add or remove HTML tags to be processed by the parser. By default, the following tags are processed: A,IMG,AREA,FORM,BASE,LINK,SCRIPT,BODY,HEAD.
-* **Preserve Camel Case** - By default, the HTML parser converts attributes in camel case (e.g. eBay) to lower case (e.g. ebay). You can turn this off to preserve the camel case attributes. This is useful when using frontend frameworks such as Angular 2.
+* **Preserve Camel Case** - By default, the HTML parser converts attributes in camel case (for example, `eBay`) to lower case (for example, `ebay`). You can turn this setting off to preserve the camel case attributes. This setting is useful when using frontend frameworks such as Angular 2.
 
 **Day Commons JDBC Connections Pool** Configure access to an external database being used as a source for content.
 
-This is a Factory Configuration, so multiple instances can be configured.
+A Factory Configuration, so multiple instances can be configured.
 
-**CDN Rewriter** Communication between AEM and a CDN must be ensured so that assets/binaries are delivered to end user in a secure way. This involves two tasks:
+**CDN Rewriter** Communication between AEM and a CDN must be ensured so that assets/binaries are delivered to an end user in a secure way. This process involves the following two tasks:
 
-* Accessing the resource from AEM via the CDN the very first time (or after it expired in cache).
-* Accessing the resource cached in CDN securely since once the resource is cached in CDN, the request won't go to AEM and all the users who have access to that resource on should be served from CDN.
+* Accessing the resource from AEM by way of the CDN the first time (or after it expired in cache).
+* Accessing the resource cached in CDN securely. After the resource is cached in CDN, the request does not go to AEM, and all the users who have access to that resource on should be served from CDN.
 
 AEM provides a rewriter for rewriting internal assets URLs to external CDN URLs. It rewrites links to be passed on to the CDN including a JWS signature and expire time to allow the asset to be accessed securely. This feature is to be used on author instances.
 
@@ -458,7 +457,7 @@ The flow between the user's browser, the CDN, and AEM can be visualized as follo
 
 >[!NOTE]
 >
->This feature is currently only enabled for AEM author instances.
+>This feature is only enabled for AEM author instances.
 
 **CDNConfigServiceImpl** Provides CDN configurations
 

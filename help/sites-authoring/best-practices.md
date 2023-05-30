@@ -1,8 +1,8 @@
 ---
-title: Best Practices
-seo-title: Best Practices
-description: How to use AEM in the most efficient and most effective way possible
-seo-description: How to use AEM in the most efficient and most effective way possible
+title: Best practices for using AEM Authoring
+
+description: How to use AEM in the most efficient and most effective way possible.
+
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

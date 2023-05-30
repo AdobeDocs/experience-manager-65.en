@@ -3,12 +3,6 @@ title: Security
 seo-title: Security
 description: Application Security starts during the development phase
 seo-description: Application Security starts during the development phase
-uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
 ---
 # Security{#security}
@@ -17,7 +11,7 @@ Application Security starts during the development phase. Adobe recommends to ap
 
 ## Use Request Session {#use-request-session}
 
-Following the principle of least privileges, Adobe recommends that every repository access is done by using the session bound to the user request and proper access control.
+Following the principle of least privilege, Adobe recommends that every repository access is done by using the session bound to the user request and proper access control.
 
 ## Protect against Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -57,4 +51,4 @@ With the default permissions:
 
 ## Protect against Cross-Site Request Forgery Attacks {#protect-against-cross-site-request-forgery-attacks}
 
-For more information on the security mechanisms AEM employs to mitigate CSRF attacks, see the [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) section of the Security Checklist and the [CSRF Protection Framwork documentation](/help/sites-developing/csrf-protection.md).
+For more information on the security mechanisms AEM employs to mitigate CSRF attacks, see the [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) section of the Security Checklist and the [CSRF Protection Framework documentation](/help/sites-developing/csrf-protection.md).

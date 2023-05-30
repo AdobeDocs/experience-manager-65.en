@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 
-feature: Adaptive Forms, Adobe Sign
+feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 ---
 # Integrate [!DNL Adobe Sign] with AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
@@ -70,7 +70,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
    
       >[!NOTE]
       >
-      > Keep the **Create Adobe Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Sign] application as described in upcoming steps.
+      >Keep the **Create Adobe Sign Configuration** page open. Do not close it. You can retrieve **Client Id** and **Client Secret** after configuring OAuth settings for the [!DNL Adobe Sign] application as described in upcoming steps.
 
 
 1. Configure OAuth settings for the [!DNL Adobe Sign] application:
@@ -106,7 +106,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 
    >[!NOTE]
    >
-   > Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard.
+   >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard.
 
 1. Go back to the **[!UICONTROL Create Adobe Sign Configuration]** page. In the **[!UICONTROL Settings]** tab, specify the **Client ID** (also referred to as Application ID) and **Client Secret**. Use the [Client ID and Client Secret of Adobe Sign application](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) created for AEM Forms.
 
@@ -120,7 +120,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 1. Open **[!UICONTROL Forms Common Configuration Service].**
 1. In the **[!UICONTROL Allow]** field, **select** All users - All the users, anonymous or logged in, can preview attachments, verify and sign forms, and click **[!UICONTROL Save].** Author instance is configured to use [!DNL Adobe Sign].
 1. Publish the configuration. 
-1. Use [replication](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/configuring/replication.html) to create identical configuration on corresponding publish instances. 
+1. Use [replication](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) to create identical configuration on corresponding publish instances. 
 
 Now, [!DNL Adobe Sign] is integrated with AEM [!DNL Forms] and ready for use in adaptive forms. To [use Adobe Sign service in an adaptive form](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), specify the configuration container created above in adaptive form properties.
 

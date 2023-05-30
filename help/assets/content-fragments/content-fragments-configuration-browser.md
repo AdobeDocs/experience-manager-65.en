@@ -21,7 +21,7 @@ Before using Content Fragments you need to use the **Configuration Browser** to 
 >If you do not enable **Content Fragment Models**:
 >
 >* the **Create** option will not be available for creating new models.
->* you will not be able to [select the Sites configuration to create the related end-point](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* you will not be able to [select the Sites configuration to create the related end-point](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 To enable content fragment functionality you need to:
 
@@ -35,10 +35,6 @@ To [use certain Content Fragment functionality](#creating-a-content-fragment-mod
 >[!NOTE]
 >
 >For further details see also [Configuration Browser:](/help/sites-administering/configurations.md#using-configuration-browser).
-
->[!CAUTION]
->
->Sub-configurations (a configuration nested within a configuration) are supported for use with Content Fragments, but cannot be used for GraphQL queries.
 
 1. Navigate to **Tools**, **General**, then open the **Configuration Browser**.
 

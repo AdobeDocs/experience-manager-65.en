@@ -109,19 +109,18 @@ The following step-by-step workflow description is designed to help you get up a
 
         * Integrate video using embed code on web page:
           [Embed the video viewer on a web page](embed-code.md).
-
-    * [Publish videos to YouTube](#publishing-videos-to-youtube).
+    
     * [Generate video reports](#viewing-video-reports).
 
     * [Add captions to video](#adding-captions-to-video).
 
 ## Work with video in Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktop, iOS, Android™, BlackBerry®, and Windows mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
+Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktop, iOS, Android&trade;, BlackBerry&reg;, and Windows mobile devices. An Adaptive Video Set groups versions of the same video that are encoded at different bit rates and formats such as 400 kbps, 800 kbps, and 1000 kbps. The desktop computer or mobile device detects the available bandwidth.
 
 For example, on an iOS mobile device, it detects a bandwidth such as 3G, 4G, or Wi-Fi. Then, it automatically selects the right encoded video from among the various video bit rates within the Adaptive Video Set. The video is streamed to desktops, mobile devices, or tablets.
 
-In addition, video quality is dynamically switched automatically if network conditions change on the desktop or on the mobile device. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer’s viewing experience. Using Adaptive Video Sets provides you with the best possible playback for customers playing Dynamic Media video on multiple screens and devices.
+In addition, video quality is dynamically switched automatically if network conditions change on the desktop or on the mobile device. Also, if a customer enters full-screen mode on a desktop, the Adaptive Video Set responds by using a better resolution, improving the customer's viewing experience. Using Adaptive Video Sets provides you with the best possible playback for customers playing Dynamic Media video on multiple screens and devices.
 
 The logic that a video player uses to determine which encoded video to play or to select during playback is based on the following algorithm:
 
@@ -135,20 +134,20 @@ For detailed technical information about the algorithm, see [https://android.goo
 
 For managing single video and Adaptive Video Sets, the following is supported:
 
-* Uploading video from numerous supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
+* Uploading video from numerous-supported video formats and audio formats and encoding video to MP4 H.264 format for playback across multiple screens. You can use predefined adaptive video presets, single video encoding presets, or customize your own encoding to control the quality and size of the video.
 
   * When an adaptive video set is generated, it includes MP4 videos.
   * **Note**: Master/source videos are not added to an Adaptive Video Set.
 
 * Video captioning in all HTML5 video viewers.
 * Organize, browse, and search video with full metadata support for efficient management of video assets.
-* Deliver Adaptive Video Sets to the web and to desktops, and mobile devices, including the iPhone, iPad, Android™, BlackBerry®, and Windows phone.
+* Deliver Adaptive Video Sets to the web and to desktops, and mobile devices, including the iPhone, iPad, Android&trade;, BlackBerry&reg;, and Windows phone.
 
 Adaptive video streaming is supported on various iOS platforms. See [Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html#video).
 
-Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
+You can find Windows devices that support this video format at the following: [Supported media codecs for Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
 
 * Play back the video using Dynamic Media Video Viewer Presets, including the following:
 
@@ -164,17 +163,17 @@ See also [Viewers for Experience Manager Assets and Dynamic Media Classic](https
 
 ## Best practice: Using the HTML5 video viewer {#best-practice-using-the-html-video-viewer}
 
-The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback. And, issues associated with mobile devices such as lack of adaptive streaming delivery and limited desktop browser reach.
+The Dynamic Media HTML5 Video viewer presets are robust video players. You can use them to avoid many common issues that are associated with HTML5 video playback. And, issues associated with mobile devices such as lack of adaptive bitrate streaming delivery and limited desktop browser reach.
 
-On the design side of the player, you can design the video player’s functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
+On the design side of the player, you can design the video player's functionality using standard web development tools. For example, you can design the buttons, controls, and custom poster image background using HTML5 and CSS to help you reach your customers with a customized appearance.
 
-On the playback side of the viewer, it automatically detects the browser’s video capability. It then serves the video using HLS (HTTP Live Streaming), also known as adaptive video streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
+On the playback side of the viewer, it automatically detects the browser's video capability. It then serves the video using HLS (HTTP Live Streaming) or DASH (Dynamic Adaptive Streaming over HTTP) , also known as adaptive bitrate streaming. Or, if those delivery methods are not present then HTML5 progressive is used instead.
 
 By combining into a single player the following:
 
 * The ability to design the playback components using HTML5 and CSS
 * Have embedded playback
-* Use adaptive and progressive streaming depending on the browser’s capability
+* Use adaptive and progressive streaming depending on the browser's capability
 
 You extend the reach of your rich media content to both desktop and mobile users and ensure a streamlined video experience.
 
@@ -184,16 +183,16 @@ See also [About HTML5 Viewers](https://experienceleague.adobe.com/docs/dynamic-m
 
 For desktop and mobile adaptive video streaming, the videos used for bit rate switching are based on all MP4 videos in the Adaptive Video Set.
 
-Video playback occurs using either HLS or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP.
+Video playback occurs using either DASH or HLS, or progressive video download. In prior versions of Experience Manager, such as 6.0, 6.1, and 6.2, videos were streamed over HTTP. 
 
-However, in Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, HLS) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming will always occur over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
+In Experience Manager 6.3 and on, videos are now streamed over HTTPS (that is, DASH or HLS) because the DM gateway service URL always uses HTTPS as well. There is no customer impact in this default behavior. That is, video streaming always occurs over HTTPS unless it is not supported by the browser. (see the following table). Therefore,
 
 * If you have an HTTPS website with HTTPS video streaming, streaming is fine.
 * If you have an HTTP website with HTTPS video streaming, streaming is fine and there are no mixed content issues from the web browser.
 
-HLS is an Apple standard for adaptive video streaming that automatically adjusts playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
+DASH is the international standard and HLS is an Apple standard. Both are used for adaptive video streaming. And, both technologies automatically adjust playback based on network bandwidth capacity. It also lets the customer "seek" to any point in the video without the need to wait for the rest of the video to download.
 
-Progressive video is delivered by downloading and storing the video locally on a user’s desktop system or mobile device.
+Progressive video is delivered by downloading and storing the video locally on a user's desktop system or mobile device.
 
 The following table describes the device, browser, and playback method of videos on desktop computers and mobile devices using the Dynamic Media Video Viewer.
 
@@ -212,7 +211,7 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>On Windows 8 and Windows 10 - Force use of HTTPS whenever HLS is requested. Known limitation: HTTP on HLS does not work in this browser/operating system combination<br /> <br /> On Windows 7 - Progressive download. Uses standard logic for selecting HTTP versus HTTPS protocol.</td>
+   <td>On Windows 8 and Windows 10 - Force use of HTTPS whenever DASH* or HLS is requested. Known limitation: HTTP on DASH* or HLS does not work in this browser/operating system combination<br /> <br /> On Windows 7 - Progressive download. Uses standard logic for selecting HTTP versus HTTPS protocol.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -222,50 +221,54 @@ The following table describes the device, browser, and playback method of videos
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 or later</td>
-   <td>HLS</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>HLS</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android™ 6 or earlier)</td>
+   <td>Chrome (Android&trade; 6 or earlier)</td>
    <td>Progressive download.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Chrome (Android™ 7 or later)</td>
-   <td>HLS</td>
+   <td>Chrome (Android&trade; 7 or later)</td>
+   <td>DASH* or HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>Android™ (default browser)</td>
+   <td>Android&trade; (default browser)</td>
    <td>Progressive download.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS</td>
+   <td>HLS adaptive bitrate streaming.</td>
   </tr>
   <tr>
    <td>Mobile</td>
-   <td>BlackBerry®</td>
-   <td>HLS</td>
+   <td>BlackBerry&reg;</td>
+   <td>DASH* or HLS adaptive bitrate streaming./td>
   </tr>
  </tbody>
 </table>
+
+>[!IMPORTANT]
+>
+>*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
 
 ## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
@@ -279,7 +282,7 @@ The following graphic shows the overall authoring workflow of videos that are up
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
-The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. See [Monitor video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress). If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
+The **Dynamic Media Encode Video** workflow encodes video if you have enabled Dynamic Media and set up video cloud services. This workflow captures workflow process history and failure information. If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (If you are not using Dynamic Media, the **[!UICONTROL DAM Update Asset]** workflow takes effect.)
 
 <!-- DEAD The following are best-practice tips for encoding source video files.
 
@@ -304,7 +307,7 @@ The following table describes the recommended size, aspect ratio, and minimum bi
 
 ### Obtain a file's metadata {#obtaining-a-file-s-metadata}
 
-You can obtain a file’s metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file’s metadata:
+You can obtain a file's metadata by viewing its metadata using a video editing tool, or using an application designed for obtaining metadata. Following are instructions for using MediaInfo, a third-party application, to obtain a video file's metadata:
 
 1. Go to [MediaInfo Download](https://mediaarea.net/en/MediaInfo/Download).
 1. Select and download the installer for the GUI version, and follow the installation instructions.
@@ -314,7 +317,7 @@ You can obtain a file’s metadata by viewing its metadata using a video editing
 
 When you choose or create a video encoding preset for your primary source video file, make sure that the preset has the same aspect ratio as the primary source video file. The aspect ratio is the ratio of the width to the height of the video.
 
-To determine the aspect ratio of a video file, obtain the file’s metadata and note the file’s width and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
+To determine the aspect ratio of a video file, obtain the file's metadata and note the file's width and height (see Obtaining a file's metadata above). Then use this formula to determine the aspect ratio:
 
 width/height = aspect ratio
 
@@ -342,13 +345,13 @@ When selecting a bitrate encoding, there are two types you can choose:
 * **[!UICONTROL Constant Bitrate Encoding]** (CBR) - During CBR encoding, the bitrate, or the number of bits per second is kept the same throughout the encoding process. CBR encoding persists the set data rate to your setting over the entire video. Also, CBR encoding does not optimize media files for quality but does save on storage space.
   Use CBR if your video contains a similar motion level throughout the entire video. CBR is most commonly used for streaming video content. See also [Use custom-added video encoding parameters](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
+* **[!UICONTROL Variable Bitrate Encoding]** (VBR) - VBR encoding adjusts the data rate down and to the upper limit that you set, based on the data required by the compressor. This functionality means that during a VBR encoding process the bitrate of the media file dynamically increases or decreases depending on the media files bitrate needs.
   VBR takes longer to encode but produces the most favorable results; the quality of the media file is superior. VBR is most commonly used for http progressive delivery of video content.
 
 When do you use VBR versus CRB?
 When selecting VBR versus CBR, it is almost always recommended that you use VBR for your media files. VBR provides higher-quality files at competitive bitrates. When you use VBR, be sure you use with two-pass encoding, and set the maximum bitrate to be 1.5x the target video bitrate.
 
-When you choose a video encoding preset, remember the target end user’s connection speed. Choose a preset with a data rate that is 80 percent of that speed. For example, if the target end user’s connection speed is 1000 Kbps, the best preset is one with a video data rate of 800 Kbps.
+When you choose a video encoding preset, remember the target end user's connection speed. Choose a preset with a data rate that is 80 percent of that speed. For example, if the target end user's connection speed is 1000 Kbps, the best preset is one with a video data rate of 800 Kbps.
 
 This table describes the data rate of typical connection speeds.
 
@@ -361,7 +364,7 @@ This table describes the data rate of typical connection speeds.
 
 ### Resolution {#resolution}
 
-**Resolution** describes a video file’s height and width in pixels. Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
+**Resolution** describes a video file's height and width in pixels. Most source video is stored at a high resolution (for example, 1920 x 1080). For streaming purposes, source video is compressed to a smaller resolution (640 x 480 or smaller).
 
 Resolution and data rate are two integrally linked factors that determine video quality. To maintain the same video quality, the higher the number of pixels in a video file (the higher the resolution), the higher the data rate must be. For example, consider the number of pixels per frame in a 320 x 240 resolution and a 640 x 480 resolution video file:
 
@@ -394,7 +397,7 @@ When you choose (or create) a video encoding preset for your primary source vide
 
 In the United States and Japan, most video is shot at 29.97 frames per second (fps); in Europe, most video is shot at 25 fps. Film is shot at 24 fps.
 
-Choose a video encoding preset that matches the fps rate of your primary source video file. For example, if your primary source video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the primary source video file’s fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
+Choose a video encoding preset that matches the fps rate of your primary source video file. For example, if your primary source video is 25 fps, choose an encoding preset with 25 fps. By default, all custom encoding uses the primary source video file's fps. For this reason, you do not need to explicitly specify the fps setting when you create a video encoding preset.
 
 ### Video encoding dimensions {#video-encoding-dimensions}
 
@@ -417,546 +420,41 @@ As an example, suppose that your source video is 1920 x 1080. In the following t
 
 Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 files use the H.264 video codec, it provides high-quality video but in a compressed file size.
 
-## Publish videos to YouTube {#publishing-videos-to-youtube}
-
-You can publish on-premise Experience Manager video assets directly to a YouTube channel that you have previously created.
-
-To publish video assets to YouTube, you set up Experience Manager Assets with tags. You associate these tags with a YouTube channel. If a video asset's tag matches the tag of a YouTube channel, then the video is published to YouTube. Publish to YouTube occurs along with a normal publish of the video as long as an associated tag is used.
-
-YouTube does its own encoding. As such, the original video file that was uploaded into Experience Manager is published to YouTube instead of any video rendition that Dynamic Media’s encoding has created. While it is not required to process videos using Dynamic Media, it is expected that they do so in case a viewer preset is needed for playback.
-
-When you bypass the video processing profile and publish directly to YouTube, it simply means that your video asset in Experience Manager Asset does not get a viewable thumbnail. It also means that if you run in `dynamicmedia` or `dynamicmedia_scene7` run modes, videos that are not encoded do not work with any of the Dynamic Media asset types.
-
-Publishing video assets to YouTube servers involves completing the following tasks to ensure safe and secure server-to-server authentication with YouTube:
-
-1. [Configure Google Cloud settings](#configuring-google-cloud-settings)
-1. [Create a YouTube channel](#creating-a-youtube-channel)
-1. [Add tags for publishing](#adding-tags-for-publishing)
-1. [Enable the YouTube Publish Replication agent](#enabling-the-youtube-publish-replication-agent)
-1. [Set up YouTube in Experience Manager](#setting-up-youtube-in-aem)
-1. [(Optional) Automate the setting of default YouTube properties for your uploaded videos](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publish videos to your YouTube channel](#publishing-videos-to-your-youtube-channel)
-1. [(Optional) Verify the published video on YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
-1. [Link YouTube URLs to your Web Application](#linking-youtube-urls-to-your-web-application)
-
-You can also [unpublish videos to remove them from YouTube](#unpublishing-videos-to-remove-them-from-youtube).
-
-### Configure Google Cloud settings {#configuring-google-cloud-settings}
-
-To publish to YouTube, you need a Google account. If you have a GMAIL account, then you already have a Google account; if you do not have a Google account, you can easily create one. You need the account because you need credentials to publish video assets to YouTube. If you have an account already created, then skip this task and proceed directly to [Create a YouTube channel](#creating-a-youtube-channel).
-
-The account used with Google Cloud and the Google account used for YouTube do not need to be the same.
-
-Google periodically changes their user interface. As such, the steps to publish videos to YouTube can vary slightly from what is documented below. This caveat also applies to YouTube when you try to check if videos are uploaded to it.
-
->[!NOTE]
->
->The following steps were accurate at the time of this writing. However, Google periodically updates their websites without notice. As such, these steps can be slightly different.
-
-To configure Google Cloud settings:
-
-1. Create a Google account.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   If you already have a Google account, skip to the next step.
-
-1. Go to [https://cloud.google.com/](https://cloud.google.com/).
-1. On the Google Cloud page, near the upper-right corner, click **[!UICONTROL Console]**.
-
-   If necessary, **[!UICONTROL Sign in]** using your Google account credentials to see the **[!UICONTROL Console]** option.
-
-1. On the Dashboard page, to the right of **[!UICONTROL Google Cloud Platform]**, click the Project drop-down list to open the Select a Project dialog box.
-1. In the Select a project dialog box, tap **[!UICONTROL New Project]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
-1. In the New Project dialog box, in the Project Name field, type the name of your new project.
-
-   Your Project ID is based on your project name. As such, choose the project name carefully; it cannot be changed after it is created. Also, you must enter the same Project ID again when you set up YouTube in Experience Manager later on; consider writing it down.
-
-1. Click **[!UICONTROL Create]**.
-
-1. Do either one of the following:
-
-    * On your project’s Dashboard, in the Getting Started card, tap **[!UICONTROL Explore and enable APIs]**.
-    * On your project's Dashboard, in the APIs card, tap **[!UICONTROL Go to APIs overview]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
-
-1. Near the top of the APIs & Services page, tap **[!UICONTROL Enable APIs and Services]**.
-1. On the API Library page, on the left side, under **[!UICONTROL Category]**, tap **[!UICONTROL YouTube]**. On the right side of the page, tap **[!UICONTROL YouTube Data API]**.
-1. On the YouTube Data API v3 page, tap **[!UICONTROL Enable]**.
-
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
-
-1. To use the API, you need credentials. If necessary, click **[!UICONTROL Create Credentials]**.
-
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
-
-1. On the **[!UICONTROL Add credentials to your project]** page, step 1, do the following:
-
-    * From the **[!UICONTROL Which API are you using?]** drop-down list, select **[!UICONTROL YouTube Data API v3]**.
-
-    * From the **[!UICONTROL Where are you calling the API from?]** drop-down list, select **[!UICONTROL Web Server (for example, node.js, Tomcat)]**
-
-    * From the **[!UICONTROL What data are you accessing?]** drop-down list, tap **[!UICONTROL User data]**.
-
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
-
-1. Tap **[!UICONTROL What credentials do I need?]**
-1. On the **[!UICONTROL Add credentials to your project]** page, step 2, under the **[!UICONTROL Create an OAuth 2.0 client ID]** heading, in the Name field, enter a unique name if desired. Or, you can use the default name specified by Google.
-1. Under the **[!UICONTROL Authorized JavaScript origins]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
-
-   `https://<servername.domain>:<port_number>`
-
-   For example, `https://1a2b3c.mycompany.com:4321`
-
-   **Note**: The path example above is intended for demonstration purposes only.
-
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
-
-1. Under the **[!UICONTROL Authorized redirect URIs]** heading, in the text field, enter the following path, substituting your own domain and port number in the path, then press **[!UICONTROL Enter]** to add the path to the list:
-
-   `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
-
-   For example, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
-
-   **Note**: The path example above is intended for demonstration purposes only.
-
-1. Click **[!UICONTROL Create OAuth client ID]**.
-1. On the **[!UICONTROL Add credentials to your project]** page, step 3, under the **[!UICONTROL Set up the OAuth 2.0 consent screen]** heading, select the Gmail email address that you are currently using.
-
-   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
-
-1. Under the **[!UICONTROL Product name shown to users]** heading, in the text field, enter what you want to show on the consent screen.
-
-   The consent screen is displayed to the Experience Manager administrator when they authenticate to YouTube; Experience Manager contacts YouTube for permission.
-
-1. Click **[!UICONTROL Continue]**.
-1. On the Add credentials to your project page, step 4, under the **[!UICONTROL Download credentials]** heading, tap **[!UICONTROL Download]**.
-
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
-
-1. Save the `client_id.json` file.
-
-   You need this downloaded json file when you set up YouTube in Adobe Experience Manager later on.
-
-1. Click **[!UICONTROL Done]**.
-
-   Log out of your Google account. Now create a YouTube channel.
-
-### Create a YouTube channel {#creating-a-youtube-channel}
-
-Publishing videos to YouTube requires that you have one or more channels. If you have already created a YouTube channel, you can skip this task and go to [Add tags for publishing](/help/assets/video.md#adding-tags-for-publishing).
-
->[!WARNING]
->
->Be sure you have already set up one or more channels in YouTube *before* you add channels under YouTube Settings in Experience Manager (see [Set up YouTube in Experience Manager](#setting-up-youtube-in-aem) below). If you fail to set up one or more channels, you are not warned of non-existent channels. However, Google authentication still occurs when you add a channel, but there is not an option to choose which channel the video is sent.
-
-**To create a YouTube channel:**
-
-1. Go to [https://www.youtube.com](https://www.youtube.com/) and sign in using your Google account credentials.
-1. In the upper-right corner of the YouTube page, click your profile picture (can also appear as a letter within a solid colored circle), then click **[!UICONTROL YouTube settings]** (round gear icon).
-1. On the Overview page, under the Additional Features heading, click **[!UICONTROL See all my channels or create a channel]**.
-1. On the Channels page, click **[!UICONTROL Create a new channel]**.
-1. On the Brand Account page, in the Brand Account Name field, enter a business name or any other channel name you choose where you want to publish your video assets, then click **[!UICONTROL Create]**.
-
-   Remember the name that you enter here because you must enter it again when you set up YouTube in Experience Manager.
-
-1. (Optional) If necessary, add more channels.
-
-   Now add tags for publishing.
-
-### Add tags for publishing {#adding-tags-for-publishing}
-
-To publish to your videos to YouTube, Experience Manager associates tags to one or more YouTube channels. To add tags for publishing, see [Administer tags](/help/sites-administering/tags.md).
-
-Or, if you intend to use the default tags in Experience Manager, you can skip this task and go to [Enable the YouTube Publish replication agent](#enabling-the-youtube-publish-replication-agent).
-
-### Enable the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
-
-After you enable the YouTube Publish replication agent, if you want to test the connection to the Google Cloud account, tap **[!UICONTROL Test Connection]**. A browser tab displays the connection results. If you have added YouTube Channels, a listing of them is displayed as part of the test.
-
-1. In the upper-left corner of Experience Manager, click the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on Author]**.
-1. On the Agents of Author page, click **[!UICONTROL YouTube Publish]**.
-1. On the toolbar, to the right of Settings, click **[!UICONTROL Edit]**.
-1. Select the **[!UICONTROL Enabled]** checkbox so you can turn on the replication agent.
-1. Click **[!UICONTROL OK]**.
-
-   Now set up YouTube in Experience Manager.
-
-### Set up YouTube in Experience Manager {#setting-up-youtube-in-aem}
-
-Starting with Experience Manager 6.4, a new touch user interface method was introduced to set up YouTube publishing in Experience Manager. Based on the installed instance of Experience Manager that you are using, do one of the following:
-
-* To configure YouTube in Experience Manager before 6.4, see [Set up YouTube in Experience Manager before 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
-* To configure YouTube in Experience Manager 6.4 or later, see [Set up YouTube in Experience Manager 6.4 and later](#setting-up-youtube-in-aem-and-later).
-
-#### Set up YouTube in Experience Manager 6.4 and later {#setting-up-youtube-in-aem-and-later}
-
-1. Be sure you log in to your instance of Dynamic Media as an Administrator.
-1. In the upper-left corner, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]**(hammer icon) > **[!UICONTROL Cloud Services]** > **[!UICONTROL YouTube Publishing Configuration]**.
-1. Tap **[!UICONTROL global]** (do not select it).
-
-1. Near the upper-right corner of the global page, tap **[!UICONTROL Create]**.
-1. On the Create YouTube Configuration page, under Google Cloud Platform Settings, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
-
-   You specified the project ID when you initially configured Google Cloud settings earlier.
-   Leave the Create YouTube Configuration page open; in a moment, you are going to return to it.
-
-   ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
-
-1. Using a plain text editor, open the JSON file that you downloaded and saved earlier in the task [Configure Google Cloud settings](/help/assets/video.md#configuring-google-cloud-settings).
-1. Select and copy the entire JSON text.
-1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
-
-   Now set up YouTube channels in Experience Manager.
-
-1. Tap **[!UICONTROL Add Channel]**.
-1. In the Channel Name field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
-
-   You can optionally add a description, if desired.
-
-1. Tap **[!UICONTROL Add]**.
-1. YouTube/Google authentication is displayed. If you are not already logged into the Google Cloud account, then skip this step.
-
-    * Enter the Google username and password associated with the Google Project ID and the JSON text above.
-    * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
-    * On the next page, tap **[!UICONTROL Accept]** to allow access to this channel.
-
-1. Tap **[!UICONTROL Allow]**.
-
-   Now set up tags for publishing.
-
-1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, tap the pencil icon to edit the list of tags that you want to use.
-1. Tap the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
-1. Tap one or more tags so you can add them.
-
-   To delete a tag you have added, select the tag, and tap **[!UICONTROL X]**.
-
-1. When you are finished adding the tags you want, tap **[!UICONTROL Save]**.
-
-   Now you publish videos to your YouTube channel.
-
-#### Set up YouTube in Experience Manager before 6.4 {#setting-up-youtube-in-aem-before}
-
-1. Be sure you log in to your instance of Dynamic Media as an Administrator.
-
-1. In the upper-left corner, tap the Experience Manager logo, then in the left rail, tap **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
-1. Under the Third-Party Services heading, under YouTube, tap **[!UICONTROL Configure now]**.
-1. In the Create Configuration dialog box, enter a title (mandatory) and name (optional) in the respective fields.
-1. Tap **[!UICONTROL Create]**.
-1. In the YouTube Account Settings dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
-
-   You specified the project ID when you initially [configured Google Cloud settings](/help/assets/video.md#configuring-google-cloud-settings) earlier.
-   Leave the YouTube Account Setting dialog box open; you are going to return to it in a moment.
-
-1. Using a plain text editor, open the JSON file that you downloaded and saved earlier in the task Configuring Google Cloud settings.
-1. Select and copy the entire JSON text.
-1. Return to the YouTube Account Settings dialog box. In the **[!UICONTROL JSON Config]** field, paste the JSON text.
-1. Tap **[!UICONTROL OK]**.
-
-   Now set up YouTube channels in Experience Manager.
-
-1. To the right of **[!UICONTROL Available Channels]**, tap **+** (plus sign icon).
-1. In the YouTube Channel Settings dialog box, in the Title field, enter the name of the channel that you created in the task **[!UICONTROL Adding one or more channels to YouTube]** earlier.
-
-   You can optionally add a description, if desired.
-
-1. Tap **[!UICONTROL OK]**.
-1. YouTube/Google authentication is displayed. If you are not already logged into the Google Cloud account, then skip this step.
-
-    * Enter the Google username and password associated with the Google Project ID and the JSON text above.
-    * Depending on how many channels your account has you see two or more items. Select a channel. Do not select the e-mail address; it is not a channel.
-    * On the next page, tap **[!UICONTROL Accept]** to allow access to this channel.
-
-1. Tap **[!UICONTROL Allow]**.
-
-   Now set up tags for publishing.
-
-1. **[!UICONTROL Setting up tags for publishing]** - On the Cloud Services &gt; YouTube page, tap the pencil icon to edit the list of tags that you want to use.
-1. Tap the drop-down list icon (upside-down caret) so you can display the list of available tags in Experience Manager.
-1. Tap one or more tags so you can add them.
-
-   To delete a tag you have added, select the tag, and tap **X**.
-
-1. When you are finished adding the tags you want, tap **[!UICONTROL OK]**.
-
-   Now you publish videos to your YouTube channel.
-
-### (Optional) Automate the setting of default YouTube properties for your uploaded videos {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
-
-You can optionally automate the setting of YouTube properties on upload of your videos by creating a metadata processing profile in Experience Manager.
-
-To create the metadata processing profile, you are first going to copy values from the **[!UICONTROL Field Label]**, **[!UICONTROL Map to property]**, and **[!UICONTROL Choices]** fields, all found in Metadata Schemas for video. Then, you build your YouTube video metadata processing profile by adding those values to it.
-
-To automate the setting of default YouTube properties for your uploaded videos:
-
-1. In the upper-left corner, tap the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Schemas]**.
-1. Click **[!UICONTROL default]**. (Do not add a checkmark to the selection box to the left of "default".)
-1. On the **[!UICONTROL default]** page, check the box to the left of **[!UICONTROL video]**, then tap **[!UICONTROL Edit]**.
-1. On the Metadata Schema Editor page, tap the **[!UICONTROL Advanced]** tab.
-1. Under the YouTube Publishing heading, click **[!UICONTROL YouTube Category]**.
-1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
-
-    * In the **[!UICONTROL Map to property]** text field, select and copy the value.
-      Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
-
-    * Under **[!UICONTROL Choices]**, select and copy the default value that you want to use (such as People & Blogs or Science & Technology).
-      Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
-
-1. Under the YouTube Publishing heading, tap **[!UICONTROL YouTube Privacy]**.
-1. On the right side of the page, under the **[!UICONTROL Settings]** tab, do the following:
-
-    * In the **[!UICONTROL Map to property]** text field, select and copy the value.
-      Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
-
-    * Under **[!UICONTROL Choices]**, select and copy the default value that you want to use. Notice that the Choices are grouped in pairs of two. The bottom field in the pair is the default value that you want to copy, such as public, unlisted, or private.
-      Paste the copied value into the open text editor. You are going to need this value later when you create your metadata processing profile. Leave the text editor open.
-
-1. Near the upper-right corner of the Metadata Schema Editor page, click **[!UICONTROL Cancel]**.
-1. In the upper-left corner of Experience Manager, tap the Experience Manager logo, then in the left rail, click **[!UICONTROL Tools]** (hammer icon) > **[!UICONTROL Assets]** > **[!UICONTROL Metadata Profiles]**.
-
-1. On the Metadata Profiles page, near the upper-right corner of the page, click **[!UICONTROL Create]**.
-1. In the Add Metadata Profile dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video` then click **[!UICONTROL Create]**.
-1. On the Metadata Profile Editor page, click the **[!UICONTROL Advance]** tab.
-1. Add the copied YouTube Publishing values to the profile by doing the following:
-
-    * On the right side of the page, click the **[!UICONTROL Build Form]** tab.
-    * (Optional) Drag the component labeled **[!UICONTROL Section Header]** to the left and drop it in the form area.
-    * (Optional) Click **[!UICONTROL Field Label]** to select the component.
-    * (Optional) On the right side of the page, under the Settings tab, in the Field Label text field, enter `YouTube Publishing`.
-    * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Publishing]** heading that you created.
-
-    * Click **[!UICONTROL Field Label]** so the component is selected.
-    * On the right side of the page, under the Settings tab, paste the YouTube Publishing values (Field Label value and Map to property value) that you copied earlier, into their respective fields on the form. Paste the Choices value into the Default Value field.
-
-1. Add the copied YouTube Privacy values to the profile by doing the following:
-
-    * On the right side of the page, click the **[!UICONTROL Build Form]** tab.
-    * (Optional) Drag the component labeled **[!UICONTROL Section Header]** to the left and drop it in the form area.
-    * (Optional) Click **[!UICONTROL Field Label]** to select the component.
-    * (Optional) On the right side of the page, under the Settings tab, in the Field Label text field, enter `YouTube Privacy`.
-    * Click the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Multi Value Text]** and drop it below the **[!UICONTROL YouTube Privacy]** heading you created.
-
-    * Click **[!UICONTROL Field Label]** so the component is selected.
-    * On the right side of the page, under the Settings tab, paste the YouTube Publishing values (Field Label value and Map to property value) that you copied earlier, into their respective fields on the form. Paste the Choices value into the Default Value field.
-
-1. Near the upper-right corner of the page, click **[!UICONTROL Save]**.
-1. Apply the YouTube Publishing metadata profile to the folders where you are going to upload videos. You must have both the Metadata Profile and the Video Profile set.
-
-   See [Metadata Profiles](/help/assets/metadata-config.md#metadata-profiles) and [Video Profiles](/help/assets/video-profiles.md).
-
-### Publish videos to your YouTube channel {#publishing-videos-to-your-youtube-channel}
-
-Now you associate the tags that you added earlier to video assets. This process lets Experience Manager know which assets to publish to your YouTube channel.
-
->[!NOTE]
->
->When running in Dynamic Media - Scene7 mode, publish immediately does not automatically publish to YouTube. When Dynamic Media - Scene7 mode is set up, there are two publish options to choose from: **[!UICONTROL Immediately]** or **[!UICONTROL Upon Activation]**.
->
->**[!UICONTROL Publish Immediately]** means that the uploaded asset--after it is synched with IPS--is published automatically to the delivery system. While that is true for Dynamic Media, it is not true for YouTube. To publish to YouTube, you must publish by way of Experience Manager Author.
-
->[!NOTE]
->
->To publish content from YouTube, Experience Manager uses the **[!UICONTROL Publish to YouTube]** workflow, which lets you monitor progress and view any failure information.
->
->See [Monitor video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
->
->For more detailed progress information, you can monitor the YouTube log under replication. Be aware, however, that such monitoring requires administrator access.
-
-**To publish videos to your YouTube channel:**
-
-1. In Experience Manager, navigate to a video asset that you want to publish to your YouTube channel.
-1. Select the video asset (the adaptive video set).
-1. On the toolbar, click **[!UICONTROL Properties]**.
-1. In the Basic tab, under the Metadata heading, click **[!UICONTROL Open Selection Dialog]** to the right of the Tags field.
-1. On the Select Tags page, navigate to the tags you want to use, and then select one or more tags.
-
-   Remember that the tags must be associated with the YouTube channel.
-
-1. In the upper-right corner of the page, click **[!UICONTROL Select]**.
-1. In the upper-right corner of the video's properties page, click **[!UICONTROL Save and Close]**.
-1. On the toolbar, click **[!UICONTROL Quick Publish]**.
-
-   See also [Using Publication Management with Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html).
-
-   You can optionally verify the published video on your YouTube channel.
-
-### (Optional) Verify the published video on YouTube {#optional-verifying-the-published-video-on-youtube}
-
-You can optionally monitor progress of your YouTube publishing (or unpublishing).
-
-See [Monitor video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
-
-Publishing times can vary greatly depending on numerous factors that include the format of your primary source video, file size, and upload traffic. The publishing process can take anywhere from a few minutes to several hours. Also, higher resolution formats are rendered much more slowly. For example, 720p and 1080p take longer to appear than 480p.
-
-After eight hours if you still see a status message that says **[!UICONTROL Uploaded (processing, please wait)]**, try removing the video from Adobe's site and uploading it again.
-
-### Link YouTube URLs to your web application {#linking-youtube-urls-to-your-web-application}
-
-You can obtain a YouTube URL string that is generated by Dynamic Media after you publish the video. When you copy the YouTube URL, it lands on the Clipboard so you can paste it as necessary to pages in your website or application.
-
->[!NOTE]
->
->The YouTube URL is not available to copy until you have published the video asset to YouTube.
-
-**To link YouTube URLs to your web application:**
-
-1. Navigate to the *YouTube published* video asset whose URL you want to copy, then select it.
-
-   Remember that YouTube URLs are only available to copy *after* you have first *published* the video assets to YouTube.
-
-1. On the toolbar, click **[!UICONTROL Properties]**.
-1. Click the **[!UICONTROL Advanced]** tab.
-1. Under the YouTube Publishing heading, in the YouTube URL List, select, and copy the URL text to your web browser to preview the asset or to add to your web content page.
-
-### Unpublish videos so you can remove them from YouTube {#unpublishing-videos-to-remove-them-from-youtube}
-
-When you unpublish a video asset in Experience Manager, the video is removed from YouTube.
-
->[!CAUTION]
->
->If you remove a video directly from within YouTube, Experience Manager is unaware and continues to behave as if the video is still published to YouTube. Always unpublish a video asset from YouTube by way of Experience Manager.
-
->[!NOTE]
->
->To remove content from YouTube, Experience Manager uses the **[!UICONTROL Unpublish from YouTube]** workflow, which lets you monitor progress and view any failure information.
->
->See [Monitor video encoding and YouTube publishing progress](#monitoring-video-encoding-and-youtube-publishing-progress).
-
-**To unpublish videos to remove them from YouTube:**
-
-1. Navigate to the video assets that you want to unpublish from your YouTube channel.
-1. In an asset selection mode, select one or more published video assets.
-1. On the toolbar, click **[!UICONTROL Manage Publication]**. Tap the three dots icon (. . .) on the toolbar so **[!UICONTROL Manage Publication]** opens.
-1. On the Manage Publication page, tap **[!UICONTROL Unpublish]**.
-1. In the upper-right corner of the page, tap **[!UICONTROL Next]**.
-1. In the upper-right corner of the page, tap **[!UICONTROL Unpublish]**.
-
-## Monitor video encoding and YouTube publishing progress {#monitoring-video-encoding-and-youtube-publishing-progress}
-
-When you upload a new video to a folder that has video encoding applied, or you publish your video to YouTube, you can monitor how your video encoding/Youtube publishing is progressing. Actual YouTube publishing progress is only available by way of the logs. However, its failure or success is listed in additional ways described in the following procedure. In addition, you receive email notifications when a YouTube publish workflow or video encoding completes or is interrupted.
-
-### Monitor progress {#monitoring-progress}
-
-1. View video encoding progress in your assets folder:
-
-    * In card view, video encoding progress displays on the asset by percent. If there is an error, this information also displays on the asset.
-
-   ![chlimage_1-429](assets/chlimage_1-429.png)
-
-    * In list view, video encoding progress displays in the **[!UICONTROL Processing Status]** column. If there is an error, this message displays in that same column.
-
-   ![chlimage_1-430](assets/chlimage_1-430.png)
-
-   This column does not display by default. To enable the column, select **[!UICONTROL View Settings]** from the views drop-down menu, and add the **[!UICONTROL Processing Status]** column and tap or click **[!UICONTROL Update]**.
-
-   ![chlimage_1-431](assets/chlimage_1-431.png)
-
-1. View progress in the asset details. When you tap or click an asset, open the drop-down menu and select **[!UICONTROL Timeline]**. To narrow it down to workflow activities like encoding or YouTube publishing, select **[!UICONTROL Workflows]**.
-
-   ![chlimage_1-432](assets/chlimage_1-432.png)
-
-   Any workflow information &ndash; such as encoding &ndash; displays in the timeline. For YouTube publish, the Workflow timeline also includes the name of the YouTube channel and the YouTube video URL. In addition, you see any failure notifications in the Workflow timeline after the publish is complete.
-
-   >[!NOTE]
-   >
-   >It can take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
-   >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
-   >
-   >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
-
-1. For workflows in progress, see Workflow Instances available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Instances]**.
-
-   >[!NOTE]
-   >
-   >You need administrative rights to access the **[!UICONTROL Tools]** menu.
-
-   ![chlimage_1-433](assets/chlimage_1-433.png)
-
-   Select the instance and tap **[!UICONTROL Open History]**.
-
-   ![chlimage_1-434](assets/chlimage_1-434.png)
-
-   From the Workflow Instances area, you can also suspend, terminate, or rename workflows. See [Administering workflows](/help/sites-administering/workflows-administering.md) for more information.
-
-1. For failed jobs, see Workflow Failures available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Failures]**. The **[!UICONTROL Workflow Failure]** lists all failed workflow activities.
-
-   >[!NOTE]
-   >
-   >You need administrative rights to access the **[!UICONTROL Tools]** menu.
-
-   ![chlimage_1-435](assets/chlimage_1-435.png)
-
-   >[!NOTE]
-   >
-   >It can take a long time for the error message to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
-   >
-   >
-   >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
-   >
-   >
-   >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
-
-1. For completed workflows, see Workflow Archive available from **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Archive]**. The **[!UICONTROL Workflow Archive]** lists all completed workflow activities.
-
-   >[!NOTE]
-   >
-   >You need administrative rights to access the **[!UICONTROL Tools]** menu.
-
-   ![chlimage_1-436](assets/chlimage_1-436.png)
-
-1. You receive email notifications about aborted or failed workflow jobs. These email notifications are configurable by an administrator. See [Configure email notifications](#configuring-e-mail-notifications).
-
-#### Configure e-mail notifications {#configuring-e-mail-notifications}
-
->[!NOTE]
->
->You need administrative rights to access the **[!UICONTROL Tools]** menu.
-
-How you configure notification depends on whether you want notifications for encoding jobs or YouTube publishing jobs:
-
-* For encoding jobs, you can access the configuration page for all Experience Manager workflow email notifications at **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]** and by searching for **[!UICONTROL Day CQ Workflow Email Notification Service]**. See [Configure email notification in Experience Manager](/help/sites-administering/notification.md). You can select or clear the check boxes for **[!UICONTROL Notify on Abort]** or **[!UICONTROL Notify on Complete]** accordingly.
-
-* For YouTube publishing jobs, do the following:
-
-1. In Experience Manager, tap **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
-1. On the Workflow Models page, select **[!UICONTROL Publish to YouTube]**, then tap **[!UICONTROL Edit]** on the toolbar.
-1. Near the upper-right corner of the Publish to YouTube workflow page, tap **[!UICONTROL Edit]**.
-1. Hover the mouse pointer on the YouTube Upload component, then tap once to display the inline toolbar.
-
-   ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
-
-1. On the inline toolbar, tap the Configuration icon (wrench). Click the **[!UICONTROL Arguments]** tab.
-
-   ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
-
-1. In the YouTube Upload Process - Step Properties dialog box, tap the **[!UICONTROL Arguments]** tab.
-
-   ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
-
-1. You can select or clear the following check boxes:
-
-    * Publish Start
-    * Publish Failure
-    * Publish Completion - includes information on channels and URLs
-
-   Clearing a check box means that you do not receive the specified email notification from the YouTube Publish workflow.
-
-   >[!NOTE]
-   >
-   >These emails are specific to YouTube and are in addition to the generic workflow email notifications. As a result, you can receive two sets of email notification - the generic notification available in the **[!UICONTROL Day CQ Workflow Email Notification Service]** and one specific to YouTube depending on your configuration settings.
-
-1. When you are finished, near the upper-right corner of the dialog box, tap the **[!UICONTROL Done]** icon (check mark).
-1. On the Publish to YouTube workflow page, near the upper-right corner, tap **[!UICONTROL Sync]**.
+### Enable DASH on your account {#enable-dash}
+
+DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
+
+Some key benefits from enabling DASH on your account include the following:
+     
+* Package DASH stream video for adaptive bitrate streaming. This method leads to higher efficiency of delivery. Adaptive streaming ensures the best viewing experience for your customers.
+* Browser optimized streaming with Dynamic Media players switches between HLS and DASH streaming to ensure the best quality of service. The video player auto-switches to HLS when a Safari browser is used.
+* You can configure your preferred streaming method (HLS or DASH) by editing the video viewer preset.
+* Optimized video encoding ensures that no additional storage is used while enabling DASH capability. A single set of video encodes are created for both HLS and DASH to optimize video storage costs.
+* Helps make video delivery more accessible for your customers.
+* Get the streaming URL by way of APIs, too.
+
+Enabling DASH on your account requires two steps: 
+
+* Configuring Dynamic Media to use DASH which you can easily do yourself.
+* Configuring Experience Manager 6.5 to use DASH which is done by way of an Adobe Customer Support case that you create and submit. 
+
+**To enable DASH on your account:**
+
+1. **Configure Dynamic Media** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Search for **AEM Assets Dynamic Media Video Advanced Streaming** feature flag.
+1. To enable (turn on) DASH, select the checkbox.
+1. Select **[!UICONTROL Save]**.
+1. **Configure Experience Manager 6.5** - [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. To create a support case, follow the instructions while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want DASH enabled on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the DASH customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for DASH enablement.
+1. You are notified after completion by Customer Support.
+1. Create your [video viewer preset](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) as usual.
 
 ## View video reports {#viewing-video-reports}
 
@@ -964,7 +462,7 @@ How you configure notification depends on whether you want notifications for enc
 >
 >Video reports are only available when you run Dynamic Media - Hybrid mode.
 
-Video Reports display several aggregate metrics across a specified time to help you monitor that *published *individual and aggregate videos are performing as expected. The following top metrics data are aggregated for all published videos across your entire website:
+Video Reports display several aggregate metrics across a specified time to help you monitor that *published* individual and aggregate videos are performing as expected. The following top metrics data are aggregated for all published videos across your entire website:
 
 * Video Starts
 * Completion Rate
@@ -974,7 +472,7 @@ Video Reports display several aggregate metrics across a specified time to help 
 
 A table of all *published* videos is also listed so you can track the top viewed videos on your website based on total video starts.
 
-When you tap a video name in the list, it shows you the video’s audience retention (drop-off) report in the form of a line chart. The chart displays the number of views for any given moment of time during video playback. When you play the video, the vertical bar tracks in synchronization with the time indicator in the player. Drops in the line chart data indicate where your audience drops off from disinterest.
+When you tap a video name in the list, it shows you the video's audience retention (drop-off) report in the form of a line chart. The chart displays the number of views for any given moment of time during video playback. When you play the video, the vertical bar tracks in synchronization with the time indicator in the player. Drops in the line chart data indicate where your audience drops off from disinterest.
 
 If the video was encoded outside of Adobe Experience Manager Dynamic Media, the audience retention (drop-off) chart and the Play Percentage data in the table are not available.
 
@@ -982,7 +480,7 @@ See also [Configure Dynamic Media Cloud Services](/help/assets/config-dynamic.md
 
 >[!NOTE]
 >
->Tracking and reporting data is based exclusively on the use of Dynamic Media’s own video player and associated video player preset. As such, you cannot track and report on videos that are played by way of other video players.
+>Tracking and reporting data is based exclusively on the use of Dynamic Media's own video player and associated video player preset. As such, you cannot track and report on videos that are played by way of other video players.
 
 By default, the first time you enter Video Reports, the report displays video data starting at the first of the current month and ends with the current month's date. However, you can override the default date range by specifying your own date range. The next time you enter Video Reports, the date range you specified is used.
 
@@ -1001,7 +499,7 @@ For video reports to work correctly, a Report Suite ID is automatically created 
 
    The Top Metrics group box identifies various aggregate measurements for all *published* videos across your site.
 
-1. In the table that lists the top published videos, tap a video name to play the video and also see the video’s audience retention (drop-off) report.
+1. In the table that lists the top published videos, tap a video name to play the video and also see the video's audience retention (drop-off) report.
 
 ### View video reports based on a video viewer that you created using the Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
@@ -1070,7 +568,7 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 ## Add closed captions or subtitles to video {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
+You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
 Closed captioning also allows for greater accessibility by people who are deaf or hard of hearing.
 
@@ -1088,7 +586,7 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/
 
 1. Use a third-party application or service to create your video caption/subtitle file.
 
-   Ensure that the file you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
+   Ensure the file that you create follows the WebVTT (Web Video Text Tracks) standard. The captioning filename extension is .vtt. You can learn more information about the WebVTT captioning standard.
 
    See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
@@ -1163,7 +661,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter’s contents. The cue identifier, the starting cue time, and the chapter title all appear in a video player pop-up when a user hovers their mouse pointer over a visual cue point in the video’s timeline.
+In the example above, `Chapter 1` is the cue identifier and is optional. The cue time of `00:00:000 --> 01:04:364` specifies the start time and end time of the chapter, in `00:00:000` format. That last three digits are milliseconds and can be left as `000`, if preferred. The chapter title of `The bicycle store behind it all` is the actual description of the chapter's contents. The cue identifier, the starting cue time, and the chapter title all appear in a video player pop-up when a user hovers their mouse pointer over a visual cue point in the video's timeline.
 
 Because you are using an HTML5 video viewer, ensure that the chapter file you create follows the WebVTT (Web Video Text Tracks) standard. The chapter filename extension is `.vtt`. You can learn more information about the WebVTT captioning standard.
 
@@ -1211,7 +709,7 @@ See [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/)
 
 ## About video thumbnails in Dynamic Media - Scene7 mode {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail serves to encourage a customer to click on the video.
+A video thumbnail is a reduced-size version of a video frame or an image asset representing the video to the customer. The thumbnail serves to encourage a customer to select the video.
 
 All videos in Experience Manager must have an associated thumbnail; you cannot delete a thumbnail without replacing it. By default, when you upload a video to Experience Manager, the first frame is used as the thumbnail. However, you can customize the thumbnail for branding purposes or visual search, for example. When you customize a video thumbnail, you can play the video and pause on the frame you want to use. Or, you can select an image asset that you have already uploaded and *published* in your digital asset manager.
 
@@ -1251,7 +749,7 @@ These steps apply only to Dynamic Media running in "Dynamicmedia_Scene7" mode.
 
         * On the toolbar, tap **[!UICONTROL Select Thumbnail from Assets]**.
         * Tap **[!UICONTROL Select Thumbnail]**.
-        * Navigate to a previously uploaded and published image asset you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
+        * Navigate to a previously uploaded and published image asset that you want to use. The asset is automatically resized to serve as a thumbnail image for the video.
         * Select the image asset, then tap **[!UICONTROL Select]**.
 
 1. On the Change Thumbnail page, tap **[!UICONTROL Save Change]**.
@@ -1329,7 +827,342 @@ These steps apply only to Dynamic Media running in Hybrid mode.
 1. On the toolbar, tap the **[!UICONTROL View Properties]** icon (a circle with an "i" in it).
 1. On the video's Properties page, tap **[!UICONTROL Change Thumbnail]**.
 1. On the Change Thumbnail page, on the toolbar, tap **[!UICONTROL Upload New Thumbnail]**.
-1. Navigate to a thumbnail image you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
+1. Navigate to a thumbnail image that you want to use, select it, then tap **[!UICONTROL Open]** to begin uploading the image into Experience Manager. Following the upload, be sure you publish the image.
 1. After you have successfully uploaded and published the image, in the Change Thumbnail page, tap **[!UICONTROL Save Changes]**.
 
    The custom thumbnail is added to your video.
+
+## Change the Dynamic Media URL for Dynamic Media assets {#manifest-urls}
+
+Videos processed into Dynamic Media can be used by way of out-of-the-box viewers and also by directly accessing the manifest URLs and playing them through your own custom viewers. The following is the API for fetching manifest URLs for a video. 
+
+### About the getVideoManifestURI API
+
+The `getVideoManifestURI`API is exposed through c`q-scene7-api:com.day.cq.dam.scene7.api` and can be used to generate the following manifest URLs: 
+ 
+``` java
+/**   
+* Returns the manifest url for videos 
+* @param resource video resource 
+* @param manifestType type of video streaming manifest being requested 
+* @param onlyIfPublished return a manifest only if the video is published 
+* @return the manifest url for videos 
+* 
+* @throws Exception 
+*/
+@Nullable 
+String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean onlyIfPublished) throws Exception;
+```
+
+#### getVideoManifestURI API parameters 
+
+This API takes in the following three parameters:
+
+| Parameter | Description |
+| --- | --- |
+| `resource` | The resource corresponding to the video that Dynamic Media has ingested.|
+| `manifestType` | Can be either `ManifestType.DASH` or `ManifestType.HLS`|
+| `onlyIfPublished` | Set to true in case the manifest uri is generated only if it is published and available on the delivery tier.|
+
+To fetch the manifest URLs for videos using the method above, add a [video encoding profile](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) to an "upload videos" folder. Dynamic Media processes these videos based on the encodings found in the video encoding file that was assigned to the folder. Now you can invoke the above API for fetching manifest URLs for the uploaded videos. 
+
+### Error scenarios 
+
+The API returns null if there are errors. Exceptions are logged in Experience Manager error logs. All such logged errors start with `Could not generate Video Manifest URI`. The following scenarios can make such errors occur: 
+
+*   An `IllegalArgumentException` gets logged for any of the following: 
+
+    * The `resource` parameter passed is null.
+    * The `resource` parameter passed is not a video.
+    * The `manifestType` parameter passed is null.
+    * The `onlyIfPublished` parameter is passed as true, but the video is not published. 
+    * The video was not ingested using an adaptive video set from Dynamic Media.
+
+*   `IOException` gets logged when there is an issue connecting to Dynamic Media. 
+*   `UnsupportedOperationException` gets logged when a `manifestType` parameter passed is `ManifestType.DASH`, while the video has not been processed using DASH format. 
+
+The following is an example of the above API using servlets written in *HTTPWhiteBoard* specification. Select each tab for the code syntax.
+
+>[!BEGINTABS]
+
+>[!TAB Add dependency in pom.xml]
+
++++**Add dependency in pom.xml** 
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
+
+>[!TAB Sample servlet]
+
++++**Sample servlet** 
+
+```java
+@Component
+        service = Servlet.class 
+) 
+@HttpWhiteboardServletPattern(value = ManifestServlet.SERVLET_PATTERN) 
+@HttpWhiteboardContextSelect(value = Constants.SERVLET_CONTEXT_SELECTOR) 
+public class ManifestServlet extends HttpServlet { 
+
+   private static final Logger LOGGER = LoggerFactory.getLogger(ManifestServlet.class); 
+
+   private final ObjectMapper objectMapper; 
+
+    @Reference 
+    private Scene7Service scene7Service; 
+
+   public static final String SERVLET_PATTERN = Constants.VIDEO_API_PREFIX + "/manifestUrl"; 
+
+   public ManifestServlet() {
+         this.objectMapper = new ObjectMapper(); 
+         objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL); 
+   }
+
+   @Override 
+
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        final ResourceResolver resolver = getResourceResolver(request); 
+        String assetPath = request.getParameter("assetPath"); 
+        String manifest = request.getParameter("manifestType"); 
+        String onlyIfPublished = request.getParameter("onlyIfPublished"); 
+        Resource resource = resolver.getResource(assetPath); 
+        response.setCharacterEncoding(StandardCharsets.UTF_8.toString()); 
+        response.setContentType("application/json"); 
+        if(resource == null) { 
+            LOGGER.info("could not retrieve the resource from JCR"); 
+            error("could not retrieve the resource from JCR", response); 
+            return; 
+        }
+
+        String manifestUri = null; 
+
+        try{ 
+            ManifestType manifestType =  ManifestType.DASH; 
+            if(manifest != null) { 
+                manifestType = ManifestType.valueOf(manifest); 
+            } 
+            manifestUri = scene7Service.getVideoManifestURI(resource, manifestType, onlyIfPublished != null); 
+            objectMapper.writeValue(response.getWriter(), new ManifestUrl(manifestUri)); 
+            response.setContentType("application/json"); 
+        } catch (Exception e) { 
+            LOGGER.error(e.getMessage(), e); 
+            error(String.format("Unable to get the manifest url for %s. %s", assetPath, e.getMessage()), response); 
+        } 
+    } 
+
+    private ResourceResolver getResourceResolver(HttpServletRequest request) { 
+        Object rr = request.getAttribute(AuthenticationSupport.REQUEST_ATTRIBUTE_RESOLVER); 
+        if (!(rr instanceof ResourceResolver)) { 
+            throw new IllegalStateException( 
+                    "The request does not seem to have been created via Apache Sling's authentication mechanism."); 
+        } else { 
+            return (ResourceResolver) rr; 
+        } 
+    } 
+
+    private void error(String errorMessage, HttpServletResponse response) throws IOException { 
+        ManifestUrl errorManifest = new ManifestUrl(null); 
+        errorManifest.setErrorMessage(errorMessage); 
+        response.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); 
+        objectMapper.writeValue(response.getWriter(), errorManifest); 
+    } 
+} 
+```
+
++++
+
+>[!TAB Response Class for servlet]
+
++++**Response Class for servlet** 
+
+```java
+public class ManifestUrl extends VideoResponse { 
+     String manifestUrl; 
+     public ManifestUrl(String manifestUrl) { 
+         this.manifestUrl = manifestUrl; 
+     } 
+     public String getManifestUrl() { 
+         return manifestUrl; 
+     } 
+} 
+
+public abstract class VideoResponse { 
+     String errorString; 
+
+     public String getErrorString() { 
+         return errorString; 
+     } 
+
+     public void setErrorMessage(String errorString) { 
+         this.errorString = errorString; 
+     } 
+} 
+```
+
++++
+
+>[!TAB Constants file referenced in servlet]
+
++++**Constants file referenced in servlet** 
+
+```java
+public final class Constants { 
+
+     private Constants() { 
+     } 
+
+     public static final String VIDEO_API_PREFIX = "/dynamicmedia/video"; 
+     public static final String SERVLET_CONTEXT_SELECTOR = "(" + HttpWhiteboardConstants.HTTP_WHITEBOARD_CONTEXT_NAME + "=" + 
+             DMSampleApiHttpContext.CONTEXT_NAME + ")"; 
+
+ } 
+```
+
++++
+
+>[!TAB ServletContext]
+
++++**ServletContext** 
+
+Mount the above servlet using a `servletContext`. The following is an example of `servletContext`. 
+
+```java
+public class DMSampleApiHttpContext extends ServletContextHelper { 
+
+ public static final String CONTEXT_NAME = "com.adobe.dmSample"; 
+ public static final String CONTEXT_PATH = "/dmSample"; 
+
+ private final MimeTypeService mimeTypeService; 
+
+ private final AuthenticationSupport authenticationSupport; 
+
+ /** 
+  * Constructs a new context that will use the given dependencies. 
+  * 
+  * @param mimeTypeService Used when providing mime type of requests. 
+  * @param authenticationSupport Used to authenticate requests with sling. 
+  */ 
+ @Activate 
+ public DMSampleApiHttpContext(@Reference final MimeTypeService mimeTypeService, 
+                               @Reference final AuthenticationSupport authenticationSupport) { 
+     this.mimeTypeService = mimeTypeService; 
+     this.authenticationSupport = authenticationSupport; 
+ } 
+
+ // ---------- HttpContext interface ---------------------------------------- 
+ /** 
+  * Returns the MIME type as resolved by the <code>MimeTypeService</code> or 
+  * <code>null</code> if the service is not available. 
+  */ 
+ @Override 
+ public String getMimeType(String name) { 
+     MimeTypeService mtservice = mimeTypeService; 
+     if (mtservice != null) { 
+         return mtservice.getMimeType(name); 
+     } 
+     return null; 
+ } 
+
+ /** 
+  * Returns the real context path that is used to mount this context. 
+  * @param req servlet request 
+  * @return the context path 
+  */ 
+ public static String getRealContextPath(HttpServletRequest req) { 
+     final String path = req.getContextPath(); 
+     if (path.equals(CONTEXT_PATH)) { 
+         return ""; 
+     } 
+     return path.substring(CONTEXT_PATH.length()); 
+ } 
+
+ /** 
+  * Returns a request wrapper that transforms the context path back to the original one 
+  * @param req request 
+  * @return the request wrapper 
+  */ 
+ public static HttpServletRequest createContextPathAdapterRequest(HttpServletRequest req) { 
+     return new HttpServletRequestWrapper(req) { 
+
+         @Override 
+         public String getContextPath() { 
+             return getRealContextPath((HttpServletRequest) getRequest()); 
+         } 
+
+     }; 
+
+ } 
+
+ /** 
+  * Always returns <code>null</code> because resources are all provided 
+  * through individual endpoint implementations. 
+  */ 
+ @Override 
+ public URL getResource(String name) { 
+     return null; 
+ } 
+
+ /** 
+  * Tries to authenticate the request using the 
+  * <code>SlingAuthenticator</code>. If the authenticator or the Repository 
+  * is missing this method returns <code>false</code> and sends a 503/SERVICE 
+  * UNAVAILABLE status back to the client. 
+  */ 
+ @Override 
+ public boolean handleSecurity(HttpServletRequest request, 
+                               HttpServletResponse response) throws IOException { 
+
+     final AuthenticationSupport authenticator = this.authenticationSupport; 
+     if (authenticator != null) { 
+         return authenticator.handleSecurity(createContextPathAdapterRequest(request), response); 
+     } 
+
+     // send 503/SERVICE UNAVAILABLE, flush to ensure delivery 
+     response.sendError(HttpServletResponse.SC_SERVICE_UNAVAILABLE, 
+             "AuthenticationSupport service missing. Cannot authenticate request."); 
+     response.flushBuffer(); 
+
+     // terminate this request now 
+     return false; 
+ } 
+}
+```
+
++++
+
+>[!ENDTABS]
+
+### Use the sample servlet
+
+You invoke the servlet by performing a `GET` operation at `/dmSample/dynamicmedia/video/manifestUrl`. The following query parameters are passed: 
+
+| Query parameter | Description |
+| --- | --- |
+| `assetPath` | Mandatory. The path to the video for which `manifestUrl` is generated. |
+| `manifestType` | Optional. Parameter can be DASH or HLS. If it is not passed, it defaults to DASH. |
+| `onlyIfPublished` | Optional. If passed, the `manifestUrl` is returned only if the video is published.  |
+
+In this example, let us assume the following setup: 
+
+* The company is `samplecompany`.
+* The authoring instance is `http://sample-aem-author.com`.
+* The folder `/content/dam/video-example` has a video encoding profile applied to it. 
+* The video `scenery.mp4` is uploaded to the folder `/content/dam/video-example`.
+
+You can invoke the servlet in following ways: 
+     
+| Type | Description |
+| :--- | --- |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>In case DASH delivery is disabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>In case DASH delivery is enabled:<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>In case DASH delivery is disabled:<br>`{}` |
+| Error: asset path is wrong | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+
+

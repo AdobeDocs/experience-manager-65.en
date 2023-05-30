@@ -27,7 +27,7 @@ role: Developer
     + [Contributing to AEM](contributing-to-cq.md)
     + [Security](security.md)
     + [Reference Materials](reference-materials.md)
-    + [Create a Fully-Featured Website (Classic UI)](website.md)
+    + [Create a Fully Featured Website (Classic UI)](website.md)
     + [Designs and the Designer (Classic UI)](designer.md)
     + [Migration to the Touch UI](/help/sites-developing/touch-ui-migration.md)
 + Platform{#platform}
@@ -64,7 +64,7 @@ role: Developer
     + [Developing the Bulk Editor](dev-bulk-editor.md)
     + [Developing Reports](dev-reports.md)
 + Components{#components}
-    + [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+    + [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
     + [Style System](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)
     + [Components Overview](components.md)
     + [AEM Components - The Basics](components-basics.md)
@@ -132,9 +132,14 @@ role: Developer
     + Delivery API{#delivery-api}
         + [Assets HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html)
         + [Content Fragments REST API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html)
-        + [Content Fragments GraphQL API](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html)
-        + [AEM GraphQL API with Content Fragments - Sample Content and Queries](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html)
-        + [Authentication for Remote AEM GraphQL Queries on Content Fragments](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html)    
+        + [Content Fragments GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+        + [Managing GraphQL Endpoints](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
+        + [Using the GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
+        + [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+        + [Optimizing GraphQL Queries](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+        + [Updating your Content Fragments for optimized GraphQL Filtering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+        + [Authentication for Remote AEM GraphQL Queries on Content Fragments](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
+        + [AEM GraphQL API with Content Fragments - Sample Content and Queries](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Hybrid and SPA AEM Development{#spas}
     + [Hybrid and SPA with AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
     + [SPA Introduction and Walkthrough](spa-walkthrough.md)
@@ -180,10 +185,10 @@ role: Developer
     + [Sample ContextHub UI Module Types](ch-samplemodules.md)
     + [ContextHub Diagnostics](ch-diagnostics.md)
     + [Developing for Targeted Content](target.md)
-    + [ContextHub Javascript API Reference](contexthub-api.md)
+    + [ContextHub JavaScript API Reference](contexthub-api.md)
     + Client Context{#client-context}
       + [Client Context in Detail](client-context.md)
-      + [Client Context Javascript API](ccjsapi.md)
+      + [Client Context JavaScript API](ccjsapi.md)
 + Extending AEM{#extending-aem}
     + [Extending AEM using Adobe Developer App Builder](app-builder.md)
     + [Customizing Page Authoring](customizing-page-authoring-touch.md)
@@ -224,7 +229,7 @@ role: Developer
       + [Developing Reports](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/dev-reports.html)
 + Testing{#testing}
     + [Planning](planning.md)
-    + [Which Test Environments will be needed?](test-environments.md)
+    + [Which Test Environments are needed?](test-environments.md)
     + [Defining your Test Cases](test-cases.md)
     + [Testing - when and with whom?](when-who.md)
     + [Compiling your Test Plan](test-plan.md)

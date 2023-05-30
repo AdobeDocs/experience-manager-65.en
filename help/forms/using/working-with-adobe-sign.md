@@ -10,7 +10,7 @@ topic-tags: develop
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 
-feature: Adaptive Forms, Adobe Sign
+feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 ---
 # Using [!DNL Adobe Sign] in an adaptive form{#using-adobe-sign-in-an-adaptive-form}
@@ -292,15 +292,16 @@ Perform the following steps to configure the Signature Step component:
 
    >[!NOTE]
    >
-   > * When you drag-and-drop the **[!UICONTROL Signature Step]** component to the form, the **[!UICONTROL Is the signer and the person filling the form same?]** option is automatically set to **Yes**. It is required to keep the form working.
+   >* When you drag-and-drop the **[!UICONTROL Signature Step]** component to the form, the **[!UICONTROL Is the signer and the person filling the form same?]** option is automatically set to **Yes**. It is required to keep the form working.
+   >* Use Summary Step component after Signature Step component for best experience. The Summary step automatically and immediately submits the form after you complete signing a form in the Signature Step component. If you do not use the summary step, an automatic submission is triggered only after the interval set using the [Adobe Sign Configuration Service](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
    >
-   > * Use Summary Step component after Signature Step component for best experience. The Summary step automatically and immediately submits the form after you complete signing a form in the Signature Step component. If you do not use the summary step, an automatic submission is triggered only after the interval set using the [Adobe Sign Configuration Service](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-   > A few best practices are:
-   > * Adaptive form panel containing the Signature step is always in the last or second last panel of an adaptive form. It can be second last panel only when the last panel contains the Summary step.
-   > * The panel containing the Signature or Summary step component cannot contain any other component.
-   > * Adaptive forms containing Signature Step cannot have submit button.  
-   > * The submission for the adaptive forms containing Signature step is handled via a background service or the Summary step. If there is one configured signer who is also filling the form, the advantage of handling the adaptive form submission using the Summary step is that it immediately evaluates that the signer has signed the form and invokes the submit action. A background service takes more time to evaluate if all configured signers have signed the form and delays the submission of the adaptive form.
-   > * Design the form to not allow a user to navigate back from a panel containing the Signature or Summary step. 
+   >A few best practices are:
+   >
+   >* Adaptive form panel containing the Signature step is always in the last or second last panel of an adaptive form. It can be second last panel only when the last panel contains the Summary step.
+   >* The panel containing the Signature or Summary step component cannot contain any other component.
+   >* Adaptive forms containing Signature Step cannot have submit button.  
+   >* The submission for the adaptive forms containing Signature step is handled via a background service or the Summary step. If there is one configured signer who is also filling the form, the advantage of handling the adaptive form submission using the Summary step is that it immediately evaluates that the signer has signed the form and invokes the submit action. A background service takes more time to evaluate if all configured signers have signed the form and delays the submission of the adaptive form.
+   >* Design the form to not allow a user to navigate back from a panel containing the Signature or Summary step. 
 
 
 ### Configure the thank you page or summary step component {#configure-the-thank-you-page-or-summary-step-component}

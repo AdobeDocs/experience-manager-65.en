@@ -1,8 +1,6 @@
 ---
-title: Configuring Components in Design Mode
-seo-title: Configuring Components in Design Mode
+title: Configuring default components in Design Mode
 description: Configuring Components in Design Mode
-seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 ---
-# Configuring Components in Design Mode{#configuring-components-in-design-mode}
+# Configuring default components in Design Mode{#configuring-components-in-design-mode}
 
 When AEM instance is installed out-of-the-box, a selection of components are immediately available in the components browser.
 

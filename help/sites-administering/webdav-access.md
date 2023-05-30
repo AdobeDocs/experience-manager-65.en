@@ -15,7 +15,7 @@ exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 
 To connect to AEM via WebDAV with KDE:
 
-AEM offers WebDAV support that lets you display and edit repository content. Connecting via WebDAV gives you direct access to the content repository through your desktop. Text and PDF files that are added to the repository through the WebDAV connection are automatically full-text indexed and can be searched with the standard search interfaces and through the standard Java APIs.
+AEM offers WebDAV support that lets you display and edit repository content. Connecting via WebDAV gives you direct access to the content repository through your desktop. Text and PDF files that are added to the repository through the WebDAV connection are automatically full-text indexed and can be searched with the standard search interfaces and through the standard Java&trade; APIs.
 
 ## General {#general}
 
@@ -39,7 +39,7 @@ When you use WebDAV to create and edit folders and files, AEM creates and edits 
 
 >[!NOTE]
 >
->Before setting up WebDAV, please check the [Technical Requirements](/help/sites-deploying/technical-requirements.md#webdav-clients).
+>Before setting up WebDAV, check the [Technical Requirements](/help/sites-deploying/technical-requirements.md#webdav-clients).
 
 ## WebDAV URLs {#webdav-urls}
 
@@ -92,17 +92,17 @@ http://localhost:4502/crx/repository/staging
 
 ## Connecting via WebDAV {#connecting-via-webdav}
 
-[As mentioned above](/help/sites-administering/webdav-access.md#general), to connect to your repository using the WebDAV protocol, you point your WebDAV client to your repository location. However depending on your OS, the steps involved to connect your client differ and there may be configuration of the OS required.
+[As mentioned above](/help/sites-administering/webdav-access.md#general), to connect to your repository using the WebDAV protocol, you point your WebDAV client to your repository location. However, depending on your OS, the steps involved connecting your client differ and there may be required configuration of the OS.
 
-Instructions on how to connect the following opererating systems are provided:
+Instructions on how to connect the following operating systems are provided:
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
-* [Linux](/help/sites-administering/webdav-access.md#linux)
+* [Linux&reg;](/help/sites-administering/webdav-access.md#linux)
 
 ### Windows {#windows}
 
-To successfully connect a Microsoft Windows 7 (and greater) system to an AEM instance that is not secured with SSL, the option to establish basic authentication over an unsecured network must be explicitly enabled in Windows. This requires a change in the Windows Registry of the WebClient.
+To successfully connect a Microsoft&reg; Windows 7 (and greater) system to an AEM instance that is not secured with SSL, the option to establish basic authentication over an unsecured network must be explicitly enabled in Windows. This ability requires a change in the Windows Registry of the WebClient.
 
 Once the registry is updated, then the AEM instance can be mapped as a drive.
 
@@ -120,11 +120,7 @@ To update the registry to allow basic authentication over an unsecured network:
 
    If it is not present, add the subkey.
 
-1. You must restart the system for the registry change to take effect.
-
-See [Microsoft Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215) for more information on this registry change.
-
-See [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) for information about improving the responsivness of the WebDav Client under Windows.
+1. Restart the system for the registry change to take effect.
 
 >[!NOTE]
 >
@@ -132,21 +128,21 @@ See [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) for
 
 #### Windows 8 Configuration {#windows-configuration}
 
-For Windows 8 you also need to change the registry entry [as described for Windows 7 and greater](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). However, before you can do this, the Desktop Experience must be enabled in order to see the registry entry.
+For Windows 8, change the registry entry [as described for Windows 7 and greater](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). However, before you do this task, the Desktop Experience must be enabled to see the registry entry.
 
 To enable the Desktop Experience, open **Server Manager**, then **Features**, then **Add Features**, then **Desktop Experience**.
 
-After rebooting the registry entry described for Windows 7 and greater is available. Modify it as described for Windows 7 and greater.
+After rebooting, the registry entry described for Windows 7 and greater is available. Modify it as described for Windows 7 and greater.
 
 #### Connecting in Windows {#connecting-in-windows}
 
 To connect to AEM via WebDAV in a Windows environment:
 
-1. Open **Windows Explorer** or **File Explorer** and click on **Computer** or **This PC**.
+1. Open **Windows Explorer** or **File Explorer** and click **Computer** or **This PC**.
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
-1. Click **Map network drive** to start the wizard.
+1. To start the wizard, click **Map network drive**.
 1. Enter the mapping details:
 
     * **Drive**: Choose any available letter
@@ -159,13 +155,13 @@ To connect to AEM via WebDAV in a Windows environment:
 
    >[!NOTE]
    >
-   >If AEM is located on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address.
+   >If AEM is on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address.
 
 1. Enter username `admin` and password `admin`. Adobe recommends that you use the pre-configured admin account for testing.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 
-1. The wizard closes and the newly-mapped drive is opened in a Windows Explorer or File Explorer window.
+1. The wizard closes and the newly mapped drive is opened in a Windows Explorer or File Explorer window.
 
    ![chlimage_1-115](assets/chlimage_1-115a.png)
 
@@ -173,7 +169,7 @@ Windows has now mapped AEM as a drive via WebDAV and you can use it as any other
 
 ### macOS {#macos}
 
-There are no configuration steps required to connect via WebDAV on macOS. You simply need to connect to the WebDAV server.
+There are no configuration steps required to connect by way of WebDAV on macOS. You can connect to the WebDAV server.
 
 1. Navigate to any **Finder** window and click **Go** and **Connect to Server**, or press **Command+k**.
 1. In the **Connect to Server** window, enter the AEM location:
@@ -182,15 +178,15 @@ There are no configuration steps required to connect via WebDAV on macOS. You si
 
    >[!NOTE]
    >
-   >If AEM is located on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address.
+   >If AEM is on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address.
 
 1. When you are prompted for authentication, enter username `admin` and password `admin`. Adobe recommends that you use the pre-configured admin account for testing.
 
 macOS has now connected to AEM via WebDAV and you can use it as any other folder on your Mac.
 
-### Linux {#linux}
+### Linux&reg; {#linux}
 
-Connecting via WebDAV on Linux doesn't require any configuration, but does involve a few steps to make the connection which vary depending on your desktop environment.
+Connecting via WebDAV on Linux&reg; doesn't require any configuration, but does involve a few steps to make the connection which vary depending on your desktop environment.
 
 #### GNOME {#gnome}
 
@@ -203,7 +199,7 @@ To connect to AEM via WebDAV with GNOME:
 
    >[!NOTE]
    >
-   >If AEM is located on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address.
+   >If AEM is on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address.
 
 1. In **Folder**, enter `/dav`
 1. Enter the username `admin`. Adobe recommends that you use the pre-configured admin account for testing.
@@ -223,7 +219,7 @@ GNOME has now mounted AEM as a volume and you can use it like any other volume.
 
    >[!NOTE]
    >
-   >If AEM is located on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address
+   >If AEM is on another port, use that port number instead of 4502. Also, if you are not running the content repository on your local machine, replace `localhost` with the respective server name or IP address
 
 1. In **Folder**, enter `dav`
 

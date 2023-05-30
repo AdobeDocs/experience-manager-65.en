@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
-
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 ---
+
 # Frequently asked questions (FAQ) for HTML5 forms{#frequently-asked-questions-faq-for-html-forms}
 
 There are some frequently asked questions (FAQ) about layout, scripting support, and scope of HTML5 forms.

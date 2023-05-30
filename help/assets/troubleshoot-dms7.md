@@ -42,7 +42,7 @@ The following asset properties can be reviewed in CRXDE Lite to confirm the succ
 
 | **Property** |**Example** |**Description** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` |**`a|364266`** |General indicator that node is linked to Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` |**`a\|364266`** |General indicator that node is linked to Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` |**PublishComplete** or error text |Status of upload of asset to Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File`  |**myCompany/myAssetID** |Must be populated in order to generate URLs to remote asset of Dynamic Media. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` |**success** or **failed: `<error text>`** |Synchronization status of sets (spin sets, image sets, and so on), image presets, viewer presets, image map updates for an asset, or images that were edited. |

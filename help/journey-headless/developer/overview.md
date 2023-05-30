@@ -27,7 +27,7 @@ If you want to know how Adobe recommends how to solve headless business cases wi
 
 >[!TIP]
 >
-> If you prefer to **learn by doing** and are technically inclined, visit the AEM Headless tutorials, which are organized by API and framework and are available in the [Additional Resources section](#additional-resources) at the end of this document.
+>If you prefer to **learn by doing** and are technically inclined, visit the AEM Headless tutorials, which are organized by API and framework and are available in the [Additional Resources section](#additional-resources) at the end of this document.
 
 ## Audience {#audience}
 

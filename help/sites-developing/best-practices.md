@@ -1,8 +1,8 @@
 ---
-title: Best Practices
-seo-title: Best Practices
-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
-seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
+title: Best Practices for AEM developers
+
+description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers.
+
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -26,7 +26,7 @@ Before you start your AEM development project, first review these best practices
 * [Code Pitfalls](/help/sites-developing/code-pitfalls.md)
 * [JCR Interaction](/help/sites-developing/jcr-integration.md)
 * [OSGi Bundles](/help/sites-developing/osgi-bundles.md)
-* [Java API Best Practices](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Java API Best Practices](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Additional Best Practices Information {#additional-best-practices-information}
 
@@ -90,7 +90,7 @@ HTML Template Language (HTL) is a new HTML templating system, introduced with AE
 
 ||||
 |---|---|---|
-| HTL overview | [HTL overview and syntax](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) |This document describes what HTL is, how to move to HTL, a sample project, syntax, expressions, and statements |
+| HTL overview | [HTL overview and syntax](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) |This document describes what HTL is, how to move to HTL, a sample project, syntax, expressions, and statements |
 | Using API in java | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) |The HTL Java Use-API enables a HTL file to access helper methods in a custom Java class.  |
 
 >[!NOTE]

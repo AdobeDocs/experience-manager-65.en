@@ -1,8 +1,6 @@
 ---
-title: Responsive Layout
-seo-title: Responsive Layout
+title: Responsive layout
 description: Although the Layout container component is available in the classic UI, its full functionality is only available and supported in the touch-enabled UI.
-seo-description: Although the Layout container component is available in the classic UI, its full functionality is only available and supported in the touch-enabled UI.
 uuid: 203c7491-ce0e-49fc-ad81-1697325b3d8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES

@@ -1,7 +1,7 @@
 ---
 title: Creating Content Fragments Headless Quick Start Guide
 description: Learn how to use AEM's Content Fragments to design, create, curate, and use page-independent content for headless delivery.
-exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
+exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
 ---
 # Creating Content Fragments Headless Quick Start Guide {#creating-content-fragments}
 
@@ -26,16 +26,16 @@ Content authors will create any number of Content Fragments to represent the con
    * The models available depend on the [**Cloud Configuration** you defined for the assets folder](create-assets-folder.md) in which you are creating the Content Fragment.
    * If you receive the message `We could not find any models`, check the configuration of your assets folder.
 
-   ![Select Content Fragment Model](../assets/content-fragment-model-select.png)
+   ![Select Content Fragment Model](assets/content-fragment-model-select.png)
 1. Provide a **Title**, **Description**, and **Tags** as necessary and tap or click **Create**.
 
-   ![Create Content Fragment](../assets/content-fragment-create.png)
+   ![Create Content Fragment](assets/content-fragment-create.png)
 1. Tap or click **Open** in the confirmation window.
 
-   ![Content Fragment created confirmation](../assets/content-fragment-confirmation.png)
+   ![Content Fragment created confirmation](assets/content-fragment-confirmation.png)
 1. Provide the details of the Content Fragment in the Content Fragment Editor.
 
-   ![Content Fragment Editor](../assets/content-fragment-edit.png)
+   ![Content Fragment Editor](assets/content-fragment-edit.png)
 1. Tap or click **Save** or  **Save & close**.
 
 Content Fragments can reference other Content Fragments, allowing for a nested content structure if necessary.

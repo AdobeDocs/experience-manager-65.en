@@ -295,10 +295,10 @@ While generating a document of record, you can change branding information for t
 To localize the branding information that you enter in the Document of Record tab, you need to ensure the locale of the browser is set appropriately. To customize the branding information of document of record, complete the following steps:
 
 1. Select a panel (root panel) in the document of record and then tap ![configure](assets/configure.png).
-1. Tap ![dortab](assets/dortab.png). The Document of Record tab appears.
+1. Tap ![dortab](/help/forms/using/assets/dortab.png). The Document of Record tab appears.
 1. Select either the default template or a custom template for rendering the document of record. If you select the default template, a thumbnail preview of the document of record appears below the Template drop-down.
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
 
    If you choose to select a custom template, browse a select an XDP on your AEM Forms server. If you want to use a template that is not already on your AEM Forms server, you need to first upload the XDP to your AEM Forms server.
 
@@ -393,7 +393,7 @@ For information on how to apply page breaks and apply multiple master pages in a
 **Form level settings**
 
 * **Include unbound fields in DoR:** Setting the property includes unbound fields from Schema based adaptive form in document of record. By default it is true.
-* **Exclude fields from DoR if hidden:** Setting the property overrides the behavior of “Exclude From Document of Record” field level property when it’s not true. If fields are hidden at the time of form submission, they will be excluded from document of record if the property is set true, provided “Exclude From Document of Record” property is not set.
+* **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from [!UICONTROL Document of Record] at form submission. When you enable [Revalidate on server](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the [!UICONTROL Document of Record].
 
 ## Apply a page break in a Document of Record {#apply-page-breaks-in-dor}
 
@@ -401,13 +401,12 @@ You can apply page breaks in a Document of Record using multiple methods.
 
 To apply a page break to a Document of Record:
 
-1. Tap the panel and select ![Configure](assets/configure-icon.svg).
-
+1. Tap the panel and select ![Configure](/help/forms/using/assets/configure.png)
 1. Expand **[!UICONTROL Document of Record]** to view the properties.
 
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](assets/folder-icon.svg) in the **[!UICONTROL Place]** field.
+1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
 1. Tap **[!UICONTROL Top of Next page]** and tap **[!UICONTROL Select]**. You can also tap **[!UICONTROL Top of Page]**, select the master page, and tap **[!UICONTROL Select]** to apply the page break.
-1. Tap ![Save](assets/save_icon.svg) to save the properties.
+1. Tap ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
 
 The selected panel moves to the next page.
 
@@ -422,13 +421,13 @@ You upload an XDP template that includes four master pages to the [!DNL AEM Form
 
 To apply the second master page properties to a panel and the third master page properties to the panels that follow, execute the following steps:
 
-1. Tap the panel to apply the second master page and select ![Configure](assets/configure-icon.svg).
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](assets/folder-icon.svg) in the **[!UICONTROL Place]** field.
+1. Tap the panel to apply the second master page and select ![Configure](assets/cmppr.png). 
+1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL Place]** field.
 1. Tap **[!UICONTROL On page]**, select the second master page and tap **[!UICONTROL Select]**.
    AEM Forms applies second master page to the panel and all subsequent panels in the adaptive form.
-1. In the **[!UICONTROL Pagination]** section, tap ![Folder](assets/folder-icon.svg) in the **[!UICONTROL After]** field.
+1. In the **[!UICONTROL Pagination]** section, tap ![Folder](/help/forms/using/assets/folder-icon.png) in the **[!UICONTROL After]** field.
 1. Tap **[!UICONTROL Go To page]**, select the third master page and tap **[!UICONTROL Select]**.
-1. Tap ![Save](assets/save_icon.svg) to save the properties.
+1. Tap ![Save](/help/forms/using/assets/save_icon.png) to save the properties.
    AEM Forms applies third master page to the panel and all subsequent panels in the adaptive form.
 
 

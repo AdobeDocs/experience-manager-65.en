@@ -1,15 +1,6 @@
 ---
 title: Managing Translation Projects
-seo-title: Managing Translation Projects
 description: Learn how to manage translation projects in AEM.
-seo-description: Learn how to manage translation projects in AEM.
-uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Language Copy
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 ---
 # Managing Translation Projects{#managing-translation-projects}
@@ -412,6 +403,23 @@ Populate your language copy so that it contains content from the master language
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Click or tap Start.
+
+## Moving or Renaming a Source Page {#move-source}
+
+If an already translated source page needs to be [renamed or moved](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), translating the page again after the move will create a new language copy based on the new page name/location. The old language copy based on the previous name/location will still be there. To prevent this, you can use the update language copy functionality after the move:
+
+1. Move a page which has a language copy.
+1. Select the language copy root.
+1. Open the **References** panel.
+1. Select **Languages Copies**.
+1. Select the target languages you want to update.
+1. Select **Update language copies**.
+1. Click **Update**. A [Launch](/help/sites-authoring/launches-promoting.md) will be created.
+1. Navigate to the required language root and select it.
+1. Using the **References** panel, select **Launches**.
+1. Click on the Launch that was just created and click **Promote launch**.
+
+Now the source page was moved, as well as the associated language copy.
 
 ## Creating a Translation Project Using the Projects Console {#creating-a-translation-project-using-the-projects-console}
 

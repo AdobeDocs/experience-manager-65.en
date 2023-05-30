@@ -1,7 +1,7 @@
 ---
 title: Creating an Assets Folder Headless Quick Start Guide
 description: Use AEM Content Fragment Models to define the structure of Content Fragments, the basis of your headless content.
-exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
+exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 ---
 # Creating an Assets Folder Headless Quick Start Guide {#creating-an-assets-folder}
 
@@ -27,15 +27,15 @@ An administrator would only need to create folders occasionally to organize cont
       * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md)
       * It can be adjusted if necessary.
 
-   ![Create folder](../assets/assets-folder-create.png)
+   ![Create folder](assets/assets-folder-create.png)
 1. Select the folder you just created and then select **Properties** from the toolbar (or use the `p` [keyboard shortcut.](/help/sites-authoring/keyboard-shortcuts.md))
 1. In the **Properties** window, select the **Cloud Services** tab.
 1. For the **Cloud Configuration** Select the [configuration you created previously.](create-configuration.md)
-   ![Configure assets folder](../assets/assets-folder-configure.png)
+   ![Configure assets folder](assets/assets-folder-configure.png)
 1. Tap or click **Save &amp; Close**.
 1. Tap or click **OK** in the confirmation window.
 
-   ![Confirmation window](../assets/assets-folder-confirmation.png)
+   ![Confirmation window](assets/assets-folder-confirmation.png)
 
 You can create additional subfolders within the folder you just created. The subfolders will inherit the **Cloud Configuration** of the parent folder. This can be overridden however if you wish to use models from another configuration.
 

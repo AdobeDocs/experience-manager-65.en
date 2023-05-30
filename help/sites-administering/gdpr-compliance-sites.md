@@ -4,7 +4,7 @@ seo-title: AEM Sites - GDPR Readiness
 description: Learn about the details of GDPR Readiness for AEM Sites.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
-contentOwner: aheimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
@@ -45,13 +45,13 @@ AEM has a [cookie opt-out service](/help/sites-developing/cookie-optout.md ) tha
 
 AEM Sites includes an optional integration with Enhanced Insights by Analytics which uses functionality within the Adobe Analytics On-demand Service.
 
-For further information on managing GDPR data subject requests related to Adobe Analytics see [Adobe Analytics and GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html).
+For further information on managing GDPR data subject requests related to Adobe Analytics see [Adobe Analytics and GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Enhanced Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites includes an optional integration with Enhanced Personalization by Target which uses functionality within the Adobe Target On-demand Service.
 
-For further information on managing GDPR data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+For further information on managing GDPR data subject requests related to Adobe Target see [Adobe Target - Privacy and General Data Protection Regulation](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
 
 ## ContextHub {#contexthub}
 

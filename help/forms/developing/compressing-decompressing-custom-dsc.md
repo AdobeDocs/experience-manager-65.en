@@ -1,6 +1,6 @@
 ---
-title: How to pass credentials using WS-security headers?
-description: Learn how to pass credentials using WS-security headers
+title: Compress and decompress files using a AEM Forms on JEE Custom DSC
+description: Learn how to compress and decompress files using a AEM Forms on JEE Custom DSC
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 ---
 # Compressing and decompressing files using a AEM Forms on JEE Custom DSC {#compressing-decompressing-files}
