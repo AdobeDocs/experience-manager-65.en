@@ -394,7 +394,7 @@ To preview an asset using keyboard, follow these steps:
 
    *Figure: Use the date picker to schedule asset activation.*
 
-1. Check **[!UICONTROL On/Off Time Reached]** option if you want to update the replication agent triggers in Metadata properties.
+1. You need to check **[!UICONTROL On/Off Time Reached]** option if you want to update the replication agent triggers in Metadata properties.
    ![Agent Settings](assets-dm/Agent-settings.png)
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the [!DNL Assets] web interface or through the HTTP API.
