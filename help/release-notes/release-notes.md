@@ -112,10 +112,13 @@ at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
     at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
     at org.h2.mvstore.db.Store.<init>(Store.java:129)
 ```
+
 Or
+
 ```shell
 org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.1.214/5].
 ```
+
 To resolve this exception, do the following:
 
 1. Delete the following two folders from `crx-quickstart/repository/`
@@ -125,7 +128,6 @@ To resolve this exception, do the following:
 
 1. Install the Service Pack, or restart Experience Manager as a Cloud Service. 
 New folders of `cache` and `diff-cache` are automatically created and you no longer experience an exception related to `mvstore` in the `error.log`.
-
 
 ## Platform{#platform-6517}
 
