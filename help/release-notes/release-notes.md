@@ -24,7 +24,9 @@ exl-id: fed4e110-9415-4740-aba1-75da522039a9
 
 ## What is included in [!DNL Experience Manager] 6.5.17.0 {#what-is-included-in-aem-6517}
 
-[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. 
+
+<!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -46,9 +48,9 @@ Some of the key features and improvements in this release are the following:
 * **Integration of Adaptive Forms on AEM Site pages**:  Seamlessly create digital enrollment experiences by leveraging Adaptive Forms components within the AEM Sites editor using: - Adaptive Forms Container and Adaptive Forms - Embed(v2) components.
 * **Support of reCAPTCHA Enterprise in Adaptive  Forms**: Added support for reCAPTCHA Enterprise in AEM Forms, providing enhanced protection against fraudulent activity and spam, in addition to existing Google reCAPTCHA v2 support. 
 * **Support for Adobe Acrobat Sign for Government with AEM Adaptive Forms**: Integrated Adobe Acrobat Sign for Government with AEM Adaptive Forms, enabling secure and compliant integration of AEM Forms with Adobe Sign for Government/Gov cloud (FedRAMP compliant).
-*  **Enable Salesforce integration with Adaptive Forms for data exchange**: OAuth 2.0 client credentials flow for secure and direct application authentication and authorization in Salesforce application to enable seamless communication between applications without user involvement.
+* **Enable Salesforce integration with Adaptive Forms for data exchange**: OAuth 2.0 client credentials flow for secure and direct application authentication and authorization in Salesforce application to enable seamless communication between applications without user involvement.
+* **Optimization and Enhanced Functionality of Workflow Engine**: Minimizing the number of workflow instances increases the performance of the workflow engine. The Workflow Status is an array and supports three new workflow status values: ABORTED, SUSPENDED, and FAILED.
 * The ZPL output format supports different paper sizes, such as letter, A4, and A5.
-* 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
