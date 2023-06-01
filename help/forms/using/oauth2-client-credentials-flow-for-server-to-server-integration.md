@@ -34,9 +34,9 @@ It is mandatory to create a Salesforce connected app with OAuth 2.0 client crede
 
 Swagger is an open-source set of rules, specifications, and tools to develop and describe RESTful APIs. [Create a swagger file](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) before integrating Salesforce with AEM Forms.   
 
-    >[!NOTE]
-    >
-    > AEM 6.5 only supports Swagger 2.0 file specifications.
+>[!NOTE]
+>
+> AEM 6.5 only supports Swagger 2.0 file specifications.
 
 +++
 
