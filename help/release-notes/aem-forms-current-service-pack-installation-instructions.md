@@ -10,9 +10,9 @@ exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 
 | Product   | Adobe Experience Manager 6.5 Forms  |
 |---|---|
-| Version  |  6.5.17.0 |
+| Version  |  6.5.16.0 |
 | Type  |  Service Pack release |
-| Date  |  1 June, 2023 |
+| Date  |  2 March, 2023 |
 | Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -24,7 +24,6 @@ exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 Adobe Experience Manager (AEM) Forms service pack includes new and upgraded features, such as key customer-requested enhancements, performance, stability, and security improvements. AEM Forms release service packs at a regular interval to provide latest features and improvements. Depending on your stack, choose one of the following paths to download and install service pack on your environment: 
 
 * [Download and install Service Pack on an AEM Form on JEE environment](#download-and-install-for-jee-service-pack) 
-
 * [Download and install Service Pack on an AEM Form on OSGi environment](#download-and-install-for-osgi-service-pack) 
 
 >[!NOTE]
@@ -51,6 +50,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms add-on package](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [Fragment Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
 +++
 
@@ -101,22 +101,39 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
  
 >[!NOTE]
 >
-> After installing AEM Forms on JEE service pack, remove the Forms add-on package from `crx-repository\install` folder before restarting the appserver. Download the latest Forms add-on package from the [Software Distribution portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-
-   >[!NOTE]
-   >
-   > * In case, you are upgrading from **AEM Service Pack 6.5.15.0**, it is not necessary to install the **servlet fragment**. If you are upgrading from a version earlier than **AEM Service Pack 6.5.15.0**, it is mandatory to [install the servlet fragment](help/forms/using/aem-service-pack-installation-solution.md).
-   > * It is mandatory to install the **servlet fragment** for all application servers except those running on **JBoss&reg; EAP 7.4.0**.
+> After installing AEM Forms on JEE service pack, you need to remove the Forms add-on package from `crx-repository\install` folder before restarting the appserver. Download the latest Forms add-on package from the [Software Distribution portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
 +++
 
-+++4. Install AEM Service Pack
++++4. Install the servlet fragment
 
-   1. Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
-   1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
-   1. Download the service pack from [Software Distribution](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
-   1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
-   1. Select the package, then select **[!UICONTROL Install]**.
+   >[!NOTE]
+   >
+   > * In case, you are upgrading from **AEM Service Pack 6.5.15.0**, it is not necessary to install the **servlet fragment**. If you are upgrading from a version earlier than **AEM Service Pack 6.5.15.0**, it is mandatory to install the **servlet fragment**.
+   > * It is mandatory to install the **servlet fragment** for all application servers except those running on **JBoss&reg; EAP 7.4.0**.
+
+
+ To download and install the servlet fragment: 
+
+1. If you have not downloaded the fragment, download it from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
+
+1. Start the application server, wait for logs to stabilize and check the bundle state.
+
+1. Open Web Console Bundles. The default URL is `http://[Server]:[Port]/system/console/bundles`.
+
+1. Click Install/Update. Choose the downloaded fragment, `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. Click **Install** or **Update**. Wait for the application server to stabilize
+
+1. Stop the application server.
+
++++
+
++++5. Install AEM Service Pack
+
+   1.  Restart the instance before installation if the instance is in update mode (when the instance was updated from an earlier version). Adobe recommends a restart if the current uptime for an instance is high.
+   1.  Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
+   1.  Download the service pack from [Software Distribution](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). <!-- UPDATE FOR EACH NEW RELEASE -->
+   1.  Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
+   1.  Select the package, then select **[!UICONTROL Install]**.
 
    **Automatic installation**
    
@@ -141,7 +158,7 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 +++
 
-+++5. Install AEM Experience Manager Forms add-on package
++++6. Install AEM Experience Manager Forms add-on package
       
    1. Ensure that you have installed the [!DNL Experience Manager] service pack.
    1. Download the corresponding Forms add-on package listed at [AEM Forms releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) for your operating system.
@@ -216,6 +233,6 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 * If **Dialog on Package Manager UI** exits during the installation of the service pack, wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations are successful. Typically, this issue occurs in Safari browser but can intermittently occur on any browser.
 
-* Check the monitor logs (error.log) once the installation is complete for any activity. Wait for few minutes until there is no activity in the logs and restart the AEM instance.
+* Check the monitor logs (error.log) once the installation is complete for any activity. Wait for few minutes until there is no activity in the logs. Restart the AEM instance.
 
 * In case you get a **service-unavailable error** after installing the AEM Forms 6.5.15.0 service pack, [install the servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md) to fix the error.
