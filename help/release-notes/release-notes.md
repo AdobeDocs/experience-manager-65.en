@@ -43,13 +43,13 @@ Some of the key features and improvements in this release are the following:
 * **Dynamic Media _Snapshot_** - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **DASH streaming with Dynamic Media** - New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled). Available now for all regions, [enabled by way of a support ticket](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
 
-### [!DNL Forms]{#forms}
+**Forms**
 
 * **Integration of Adaptive Forms on AEM Site pages**:  Seamlessly create digital enrollment experiences by leveraging Adaptive Forms components within the AEM Sites editor using: - Adaptive Forms Container and Adaptive Forms - Embed(v2) components.
-* **Support of reCAPTCHA Enterprise in Adaptive  Forms**: Added support for reCAPTCHA Enterprise in AEM Forms, providing enhanced protection against fraudulent activity and spam, in addition to existing Google reCAPTCHA v2 support. 
-* **Support for Adobe Acrobat Sign for Government with AEM Adaptive Forms**: Integrated Adobe Acrobat Sign for Government with AEM Adaptive Forms, enabling secure and compliant integration of AEM Forms with Adobe Sign for Government/Gov cloud (FedRAMP compliant).
-* **Enable Salesforce integration with Adaptive Forms for data exchange**: OAuth 2.0 client credentials flow for secure and direct application authentication and authorization in Salesforce application to enable seamless communication between applications without user involvement.
-* **Optimization and Enhanced Functionality of Workflow Engine**: Minimizing the number of workflow instances increases the performance of the workflow engine. The Workflow Status is an array and supports three new workflow status values: ABORTED, SUSPENDED, and FAILED.
+* **Support of reCAPTCHA Enterprise in AEM  Forms**: Added support for reCAPTCHA Enterprise in AEM Forms, providing enhanced protection against fraudulent activity and spam, in addition to existing Google reCAPTCHA v2 support. 
+* **Support for Adobe Acrobat Sign for Government with AEM Forms**: Allow secure and compliant integration of AEM Forms with Adobe Sign for Government(FedRAMP compliant).
+* **Enable Salesforce integration with AEM Forms for data exchange**: OAuth 2.0 client credentials flow for secure and direct application authentication and authorization in Salesforce application to enable seamless communication between applications without user involvement.
+* **Optimization and Enhanced Functionality of Workflow Engine**: Minimizing the number of workflow instances increases the performance of the workflow engines. In addition to `COMPLETED` and `RUNNING` status values, the workflow also supports three new status values: `ABORTED`, `SUSPENDED`, and `FAILED`.
 * The ZPL output format supports different paper sizes, such as letter, A4, and A5.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
