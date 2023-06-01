@@ -386,8 +386,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    "refresh": true
    ```
 
-* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft&reg; Office 365.
-* On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
+* On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
