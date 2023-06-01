@@ -5,7 +5,7 @@ description: Steps to integrate Salesforce integration with AEM Forms using OAut
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 ---
 
-# Integration of Salesforce with AEM Forms using OAuth 2.0 client credentials flow  {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integration of Salesforce using OAuth 2.0 client credentials flow  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 To integrate AEM Forms with the Salesforce application, the OAuth 2.0 client credentials flow is used. It is a standardized and secure method for direct communication without user involvement. In this flow, the client application (AEM Form) exchanges the client credentials, defined in the Salesforce connected application, to obtain an access token. The required client credentials include the consumer key and consumer secret.
  
