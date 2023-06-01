@@ -24,7 +24,9 @@ exl-id: fed4e110-9415-4740-aba1-75da522039a9
 
 ## What is included in [!DNL Experience Manager] 6.5.17.0 {#what-is-included-in-aem-6517}
 
-[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.17.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have released since the initial availability of 6.5 in April 2019. [Install this service pack](#install) on [!DNL Experience Manager] 6.5. 
+
+<!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -40,6 +42,13 @@ Some of the key features and improvements in this release are the following:
   You do not need to navigate to the asset location and view its properties to perform these operations.
 * **Dynamic Media _Snapshot_** - Experiment with test images or Dynamic Media URLs, to see the output of different image modifiers, and Smart Imaging optimizations for file size (with WebP and AVIF delivery), network bandwidth, and Device Pixel Ratio. See [Dynamic Media Snapshot](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **DASH streaming with Dynamic Media** - New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled). Available now for all regions, [enabled by way of a support ticket](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
+
+* **Integration of Adaptive Forms on AEM Site pages**:  Seamlessly create digital enrollment experiences by leveraging Adaptive Forms components within the AEM Sites editor using: - Adaptive Forms Container and Adaptive Forms - Embed(v2) components.
+* **Support of reCAPTCHA Enterprise in AEM  Forms**: Added support for reCAPTCHA Enterprise in AEM Forms, providing enhanced protection against fraudulent activity and spam, in addition to existing Google reCAPTCHA v2 support. 
+* **Support for Adobe Acrobat Sign for Government with AEM Forms**: Allow secure and compliant integration of AEM Forms with Adobe Sign for Government(FedRAMP compliant).
+* **Enable Salesforce integration with AEM Forms for data exchange**: OAuth 2.0 client credentials flow for secure and direct application authentication and authorization in Salesforce application to enable seamless communication between applications without user involvement.
+* **Optimization and Enhanced Functionality of Workflow Engine**: Minimizing the number of workflow instances increases the performance of the workflow engines. In addition to `COMPLETED` and `RUNNING` status values, the workflow also supports three new status values: `ABORTED`, `SUSPENDED`, and `FAILED`.
+* The ZPL output format supports different paper sizes, such as letter, A4, and A5.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -89,9 +98,41 @@ Some of the key features and improvements in this release are the following:
 
 ## [!DNL Forms]{#forms-6517}
 
->[!NOTE]
->
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section.
+* When a user upgrades to AEM 6.5.16.0 Service Pack, the attached file is not retrieved properly. (FORMS-8906)
+* After updating to AEM 6.5.15.0 Service Pack, the HTML5 forms are not functioning or loading properly in Edge browser with IE compatibility mode. (FORMS-8526, FORMS-8523)
+* When a user applies AEM 6.5.16.0 Service Pack, the rule editor fails to open. (FORMS-8290)
+* When the maximum number of digits validation is applied to a Numeric Box component, it fails. (FORMS-7938)
+* While creating interactive communication statements, the chart component in the PDF is not generated properly. (FORMS-7827, FORMS-8297)
+* Java garbage collection is unable to clear old gen heap on an AEM Forms OSGi server. (FORMS-8207)
+* When a user upgrades to AEM 6.5.16.0 Service Pack, the CRX Metadata properties are missing after submission. (FORMS-8205)
+* When a user disables the Date picker component in an Adaptive Form, it is still editable. (FORMS-7804)
+* In AEM 6.5.16.0 Forms Service Pack, when a user tries to edit the Policy Set Coordinators, the Manager Document Publisher always remains unchecked. (FORMS-7775, FORMS-8599)
+* When a user upgrades to AEM 6.5.16.0 Service Pack, the "GuideNode.externalize" method which handles strings that have to be translated, stops working. (FORMS-7709)
+* In the `Assign task` step, when a user selects the "Send Notification Email" and invokes the workflow, the text is not displayed properly in the received email. The question marks are received instead of the text in the received email. (FORMS-7675)
+* The Document of Record is getting localized partially. (FORMS-7674, FORMS-7573)
+* A user is unable to edit policy sets, even when allotted specific permissions. (FORMS-7665)
+* When a user in the `forms-users` group tries to create new form, AEM Forms instance crashes. (FORMS-7629)
+* When the user clicks the Reset, Save, or Submit buttons on an Adaptive Form, no message is displayed on the screen. (FORMS-7524)
+* To improve the performance of PDFG conversion on an AEM 6.5.16.0 Service Pack, the sleep interval is made configurable. (FORMS-6752)
+* The toggle option remains the same, but the field's visibility changes even when a user drags the cursor slightly. (FORMS-6728)
+* When the user upgrades to AEM 6.5.15.0 Service Pack, the redirection stops working when an Adaptive Form is rendered in Internet Explorer. (FORMS-6725)
+* The PAC 2021 tool for all background objects in a PDF form created by an AEM Designer returns an error as `Path object not tagged`. (FORMS-6707)
+* When a user applies a filter in the inbox, it throws a `NullPointerException` error. (FORMS-6706)
+* When a user imports a template (.tds) file with referenced fragments, an AEM Designer crashes.  (FORMS-6702)
+* In case, the user creates a static PDF using the Output Service in an AEM Forms Designer 6.5, an error occurs as `OCCD (optional content configuration dictionary) contains AS key`. (FORMS-6691)
+* When the user creates a simple workflow and adds a simple variable, a `set variable mapping` error occurs. (FORMS-5819)
+* When a user tries to generate a PDF using the Output Service, even though it is marked as `PDF/A-1a`, a compliance check using the`Preflight` service fails. (LC-3920837)
+* After installing an AEM 6.5.16.0 Service Pack, an AEM designer fails to open. (LC-3921000)
+* When a user adds a checkbox and radio Button, the structure of a Tag tree is not generated as per PDF standards. (LC-3920838)
+* In case, a user generates a static PDF by using the embedding and subsetting of fonts through the output service, the resulting PDF contains only the embedded fonts. (LC-3920963)
+* The Hebrew text is displayed incorrectly in the RTL format. (LC-3919632)
+* When a user upgrades to AEM 6.5.16.0 Service Pack on a JBoss Turnkey server, the Signature Service fails to invoke. The encountered error is: `java.lang.ClassCastException: com.adobe.xfa.TextNode cannot be cast to com.adobe.xfa.Element`. (FORMS-7833)
+* After upgrading to AEM 6.5.14.0 Service Pack, the workbench processes to move a CRX node from one location to another are not working. The error occurs as `ALC-CRX-30000-000: com.adobe.ep.crx.client.exceptions.CRCException: ALC-CRX-030-000-[Internal Server Error]`.(FORMS-7713)
+* When a user updates to AEM 6.5.16.0 Service Pack, the `Usage Rights` fails to apply. (FORMS-7892)
+* When a user tries to generate a PDF document, the PDF/A-1b validation fails. (FORMS-7615)
+* When a user clicks the `Configure` option for the `Form Container` component, the browser becomes unresponsive (FORMS-7605).
+* When a user updates to AEM Forms 6.5.16.0 Service Pack and tries to change the `LicenseType` to `Production`, the changes are not reflected. (FORMS-7594)
+* When a user tries to invoke an LCA Process with a PDF that comprises the `Chinese Full Width Characters`, an issue occurs with the `ValidateForm` process. (FORMS-7464)
 
 ## Integrations{#integrations-6517}
 
@@ -345,8 +386,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    "refresh": true
    ```
 
-* In AEM Forms, POP3 protocol does not work with email endpoints for Microsoft&reg; Office 365.
-* On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 service pack, `adobe-livecycle-jboss.ear` deployment fails. 
+* On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 

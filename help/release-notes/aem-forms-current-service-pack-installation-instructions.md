@@ -10,9 +10,9 @@ exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
 
 | Product   | Adobe Experience Manager 6.5 Forms  |
 |---|---|
-| Version  |  6.5.16.0 |
+| Version  |  6.5.17.0 |
 | Type  |  Service Pack release |
-| Date  |  2 March, 2023 |
+| Date  |  1 June, 2023 |
 | Download URL | [Latest AEM Forms Releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -235,4 +235,4 @@ Adobe Experience Manager (AEM) Forms service pack includes new and upgraded feat
 
 * Check the monitor logs (error.log) once the installation is complete for any activity. Wait for few minutes until there is no activity in the logs. Restart the AEM instance.
 
-* In case you get a **service-unavailable error** after installing the AEM Forms 6.5.15.0 service pack, [install the servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md) to fix the error.
+* In case you get a **service-unavailable error** after installing the AEM Forms 6.5.15.0 or later service pack, [install the servlet fragment and bundle](/help/forms/using/aem-service-pack-installation-solution.md) to fix the error.
