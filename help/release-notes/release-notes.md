@@ -46,9 +46,9 @@ Some of the key features and improvements in this release are the following:
 * **Integration of Adaptive Forms on AEM Site pages**:  Seamlessly create digital enrollment experiences by leveraging Adaptive Forms components within the AEM Sites editor using: - Adaptive Forms Container and Adaptive Forms - Embed(v2) components.
 * **Support of reCAPTCHA Enterprise in AEM  Forms**: Added support for reCAPTCHA Enterprise in AEM Forms, providing enhanced protection against fraudulent activity and spam, in addition to existing Google reCAPTCHA v2 support. 
 * **Support for Adobe Acrobat Sign for Government with AEM Forms**: Allow secure and compliant integration of AEM Forms with Adobe Sign for Government(FedRAMP compliant).
-* **Enable Salesforce integration with AEM Forms for data exchange**: OAuth 2.0 client credentials flow for secure and direct application authentication and authorization in Salesforce application to enable seamless communication between applications without user involvement.
-* **Optimization and Enhanced Functionality of Workflow Engine**: Minimizing the number of workflow instances increases the performance of the workflow engines. In addition to `COMPLETED` and `RUNNING` status values, the workflow also supports three new status values: `ABORTED`, `SUSPENDED`, and `FAILED`.
-* The ZPL output format supports different paper sizes, such as letter, A4, and A5.
+* **Enable Salesforce integration with AEM Forms for data exchange**: Configure the integration between AEM forms and the Salesforce application using the OAuth 2.0 client credentials flow. This enables secure and direct authentication and authorization of the application and allows seamless communication without user involvement.
+* **Optimization and enhanced functionality of workflow engine**: Increase the performance of the workflow engines by minimizing the number of workflow instances. In addition to `COMPLETED` and `RUNNING` status values, the workflow also supports three new status values: `ABORTED`, `SUSPENDED`, and `FAILED`.
+* **Paper size support for ZPL output**: In AEM Forms Designer, XMLFM generates ZPL output with different paper sizes, such as letter, A4, and A5, for XDP-based templates.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
