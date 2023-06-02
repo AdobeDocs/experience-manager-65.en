@@ -518,9 +518,9 @@ When you upload a new video to a folder that has video encoding applied, or you 
    >
    >It can take a long time for failure/error messages to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
+   >* Apache Sling Job Queue Configuration
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Granite Workflow Timeout Queue
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
@@ -550,12 +550,9 @@ When you upload a new video to a folder that has video encoding applied, or you 
    >
    >It can take a long time for the error message to finally be recorded due to multiple workflow configurations on **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** from [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), for example:
    >
-   >
-   >
-   >    * Apache Sling Job Queue Configuration
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * Granite Workflow Timeout Queue
-   >
+   >* Apache Sling Job Queue Configuration
+   >* Adobe Granite Workflow External Process Job Handler
+   >* Granite Workflow Timeout Queue
    >
    >You can adjust the **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, and **[!UICONTROL timeout]** properties in these configurations.
 
