@@ -133,7 +133,7 @@ Some of the key features and improvements in this release are the following:
 * When a user clicks the `Configure` option for the `Form Container` component, the browser becomes unresponsive (FORMS-7605).
 * When a user updates to AEM Forms 6.5.16.0 Service Pack and tries to change the `LicenseType` to `Production`, the changes are not reflected. (FORMS-7594)
 * When a user tries to invoke an LCA Process with a PDF that comprises the `Chinese Full Width Characters`, an issue occurs with the `ValidateForm` process. (FORMS-7464)
-* In AEM Forms Designer, XMLFM generates ZPL output with different paper sizes, such as letter, A4, and A5, for XDP-based templates.
+* In AEM Forms Designer, XMLFM generates ZPL output with different paper sizes, such as letter, A4, and A5, for XDP-based templates.(FORMS-7898)
 
 ## Integrations{#integrations-6517}
 
