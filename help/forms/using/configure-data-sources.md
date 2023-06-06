@@ -24,7 +24,7 @@ AEM Forms Data Integration allows you to configure and connect to disparate data
 * SOAP-based web services
 * OData services
 
-Data integration supports OAuth2.0, Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in AEM Cloud Services, JDBC for relational databases and connector for AEM user profile are configured in AEM web console.
+Data integration supports OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, and API Key authentication types out-of-the-box, and allows implementing custom authentication for accessing web services. While RESTful, SOAP-based, and OData services are configured in AEM Cloud Services, JDBC for relational databases and connector for AEM user profile are configured in AEM web console.
 
 ## Configure relational database {#configure-relational-database}
 
@@ -127,7 +127,7 @@ Do the following to configure RESTful services:
         * Base Path: The URL prefix for all API paths. It is an optional field.  
           If necessary, edit the pre-populated values for these fields.
 
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, API Key, Custom Authentication, or Mutual Authentication — to access the RESTful service, and accordingly provide details for authentication.
+    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, Custom Authentication, or Mutual Authentication — to access the RESTful service, and accordingly provide details for authentication.
 
     If you select **[!UICONTROL API Key]** as the authentication type, specify the value for the API key. The API key can be sent as a request header or as a query parameter. Select one of these options from the **[!UICONTROL Location]** drop-down list and specify the name of the header or the query parameter in the **[!UICONTROL Parameter Name]** field accordingly.
 
@@ -169,7 +169,7 @@ SOAP-based web services are described using [Web Services Description Language (
 
     * WSDL URL for the web service.
     * Service Endpoint. Specify a value in this field to override the service endpoint mentioned in WSDL.
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, Custom Authentication, X509 Token, or Mutual Authentication — to access the SOAP service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, Custom Authentication, X509 Token, or Mutual Authentication — to access the SOAP service, and accordingly provide the details for authentication.
 
       If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
       Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.
@@ -195,7 +195,7 @@ An OData service is identified by its service root URL. To configure an OData se
 1. Specify the following details for the OData service:
 
     * Service Root URL for the OData service to be configured.
-    * Select the authentication type — None, OAuth2.0, Basic Authentication, or Custom Authentication — to access the OData service, and accordingly provide the details for authentication.
+    * Select the authentication type — None, OAuth2.0([Authorization Code](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, or Custom Authentication — to access the OData service, and accordingly provide the details for authentication.
 
    >[!NOTE]
    >
@@ -205,7 +205,7 @@ An OData service is identified by its service root URL. To configure an OData se
 
 ## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and AEM Server running form data model authenticate each other’s identity before sharing any data. You can use mutual authentication for REST and SOAP based connections (data sources). To configure mutual authentication for a form data model on your AEM Forms environment:
+When you enable mutual authentication for form data model, both the data source and AEM Server running form data model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP based connections (data sources). To configure mutual authentication for a form data model on your AEM Forms environment:
 
 1. Upload the private key (certificate) to [!DNL AEM Forms] server. To upload the private key:
    1. Login to your [!DNL AEM Forms] server as an administrator.
