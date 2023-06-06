@@ -387,7 +387,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    "refresh": true
    ```
 
-* On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. 
+* On JBoss&reg; 7.1.4 platform, when user installs AEM 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails.
+* JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.  
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
