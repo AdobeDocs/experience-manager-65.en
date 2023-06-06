@@ -282,21 +282,6 @@ If you have multiple assets in a live copy folder, initiating actions on each as
 
    *Figure: Easily update many assets in live copy folders from the [!UICONTROL Live Copy Overview] console.*
 
-## Extend MSM for [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] allows you to extend the functionality using the MSM Java APIs. For [!DNL Assets], the extending works just the same as it works with MSM for [!DNL Sites]. For details, see [Extending the MSM](/help/sites-developing/extending-msm.md) and the following for information about specific tasks:
-
-* [Overview of APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Create a synchronization action](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Create a rollout configuration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Create and use a simple LiveActionFactory class](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* Blueprint in MSM for [!DNL Sites] is called Live Copy source in MSM for [!DNL Assets].
->* Removing the chapters step in the create site wizard is not supported in MSM for [!DNL Assets].
->* Configuring MSM locks, on the page properties (Touch-enabled UI), is not supported in MSM for [!DNL Assets].
-
 ## Impact of asset management tasks on live copies {#manage-assets}
 
 Live copies and sources are assets or folders that can be managed, to a certain extent, as digital assets. Some asset management tasks in [!DNL Experience Manager] have a specific impact on the live copies.
