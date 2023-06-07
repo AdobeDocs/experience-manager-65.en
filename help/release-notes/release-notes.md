@@ -98,9 +98,8 @@ Some of the key features and improvements in this release are the following:
 
 ## [!DNL Forms]{#forms-6517}
 
-* When a user upgrades to Experience Manager 6.5.16.0 Service Pack, the attached file is not retrieved properly. (FORMS-8906)
-* After updating to Experience Manager 6.5.15.0 Service Pack, the HTML5 forms are not functioning or loading properly in Edge browser with IE compatibility mode. (FORMS-8526, FORMS-8523)
-* When a user applies Experience Manager 6.5.16.0 Service Pack, the rule editor fails to open. (FORMS-8290)
+* After updating to AEM 6.5.15.0 Service Pack, the HTML5 forms are not functioning or loading properly in Edge browser with IE compatibility mode. (FORMS-8526, FORMS-8523)
+* When a user applies AEM 6.5.16.0 Service Pack, the rule editor fails to open. (FORMS-8290)
 * When the maximum number of digits validation is applied to a Numeric Box component, it fails. (FORMS-7938)
 * While creating interactive communication statements, the chart component in the PDF is not generated properly. (FORMS-7827, FORMS-8297)
 * Java&trade; garbage collection is unable to clear old gen heap on an Experience Manager Forms OSGi server. (FORMS-8207)
