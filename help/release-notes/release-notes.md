@@ -181,7 +181,7 @@ New folders of `cache` and `diff-cache` are automatically created and you no lon
 * Language copies of a page were not getting updated as expected. (SITES-11191)
 * Opening non-campaign pages call `targeteditor.html` unnecessarily. Remove the `targeteditor` call when not needed. (SITES-12469)
 * Live copies cannot be created for pages with annotations. (SITES-12154)
-* Rollout of pages is working on Experience Manager 6.5.16. (SITES-12008)
+* Rollout of pages is not working on Experience Manager 6.5.16. (SITES-12008)
 * Out of memory; high garbage collection activity due to `NotificationManagerImpl`. `NotificationManager` bundle upgrade to Experience Manager 6.5. (SITES-11440)
 * Fixed WCM IT tests that were blocking service pack 17. (SITES-13089)
 * Retrieving Sites references fails on servlet. (SITES-10901)
