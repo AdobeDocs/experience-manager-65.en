@@ -52,6 +52,12 @@ You can upload various types of assets (including images, PDF files, RAW files, 
 >
 >In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
+>[!IMPORTANT]
+>
+>Assets that you upload into Experience Manager that have a file name greater than 100 characters, have a shortened name when they are used in Dynamic Media.
+>
+>The first 100 characters in the file name are used as is; any remaining characters are replaced by an alphanumeric string. This renaming method ensures a unique name when the asset is used in Dynamic Media. It is also meant to accommodate the maximum asset file name length allowed in Dynamic Media.
+
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column. See [Processing Profiles](/help/assets/processing-profiles.md).
