@@ -38,7 +38,7 @@ The following documentation describes how to integrate AEM with Adobe Campaign C
 
 Integration of Adobe Campaign Standard (ACS) with AEM depends on if AEM is installed on-premises on in Adobe Manage Services (AMS).
 
-Integration with AEM 6.5 <br>On Premises|Integration with AEM 6.5<br>AMS|
+|Integration with AEM 6.5 <br>On Premises|Integration with AEM 6.5<br>AMS|
 |---|---|
 |Supported|Supported|
 |Supported|Supported|
