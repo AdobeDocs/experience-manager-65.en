@@ -22,13 +22,15 @@ There are a number of Adobe Campaign Classic (ACC) versions. The support for int
 
 |ACC Version|Integration with AEM 6.5 <br>On Premises|Integration with AEM 6.5<br>AMS|
 |---|---|---|
-|v7|Supported|Supported|
-|v8|Supported|Supported|
+|[v7](https://experienceleague.adobe.com/docs/campaign-classic.html)|Supported|Supported|
+|[v8](https://experienceleague.adobe.com/docs/campaign-v8.html)|Supported|Supported|
 |Web UI*|Supported|Supported|
 
 The following documentation describes how to integrate AEM with Adobe Campaign Classic.
 
 * [Integrating with Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
+* [Email Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+* [Troubleshooting Your Adobe Campaign Classic Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
 
 ## Integrating with Adobe Campaign Standard {#acs}
 
@@ -42,6 +44,4 @@ Integration with AEM 6.5 <br>On Premises|Integration with AEM 6.5<br>AMS|
 The following documentation describes how to integrate AEM with Adobe Campaign Standard.
 
 * [Integrating with Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
-
-* [Best Practices for Email Templates](/help/sites-administering/best-practices-for-email-templates.md)
-* [Troubleshooting your Adobe Campaign Integration](/help/sites-administering/troubleshooting-campaignintegration.md)
+* [Email Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
