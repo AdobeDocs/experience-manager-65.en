@@ -16,10 +16,9 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 
 >[!CAUTION]
 >
->The AEM email components have been deprecated. Due to the nature of email, which merges content and style, the email components provided out-of-the-box by AEM become of limited reuse for customers because of the need to implement custom styles into whatever components are required for projects.
+>This article applies to the deprecated Foundation Components based AEM email components.
 >
->Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However these deprecated components should not be used on projects.
-
+>Users are encouraged to leverage the modern [Core Components Email Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 This document describes some of the best practices around email design resulting in a well-developed email campaign template.
 
 The demo campaign available in AEM follows all of these best practices. How the best practices are implemented in the demo campaign is described for each best practice.
