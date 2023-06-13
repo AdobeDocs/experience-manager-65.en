@@ -19,6 +19,7 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 >This article applies to the deprecated Foundation Components based AEM email components.
 >
 >Users are encouraged to leverage the modern [Core Components Email Components.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+
 This document describes some of the best practices around email design resulting in a well-developed email campaign template.
 
 The demo campaign available in AEM follows all of these best practices. How the best practices are implemented in the demo campaign is described for each best practice.
