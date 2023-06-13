@@ -453,7 +453,7 @@ NOTE: this may return an empty string
 * The context may be a String, number, boolean, or a JSON data object.
 * It is possible to pass an object nested within the current context as the context, such as `this.url` or `this.id` (see following examples of simple and block helpers).
 
-* Block helpers are functions that can be called from anywhere in the template. They can invoke a block of the template zero or more times with a different context each time. They contain a context between {{#*name*}} and {{/*name*}}.
+* Block helpers are functions that can be called from anywhere in the template. They can invoke a block of the template zero or more times with a different context each time. They contain a context between `{{#*name*}}` and `{{/*name*}}`.
 
 * Handlebars provides a final parameter to helpers named 'options'. The special object 'options' includes
 

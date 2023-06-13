@@ -187,7 +187,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **UI Mention Pattern**
   
-  Specify the alowed pattern string to tag (@mention) the registered user in a post. For example ~{{familyName}}{{givenName}}.
+  Specify the allowed pattern string to tag (@mention) the registered user in a post. For example `~{{familyName}}{{givenName}}`.
 
 #### User Moderation tab {#user-moderation-tab}
 
