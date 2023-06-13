@@ -99,7 +99,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Enable Mention**
   
-  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users recieve notifications about their mentions.
+  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users receive notifications about their mentions.
 
 * **Max Mentions**
   
@@ -107,7 +107,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **UI Mention Pattern**
   
-  Specify the alowed pattern string to tag (@mention) the registered user in a post. For example ~{{familyName}}{{givenName}}.
+  Specify the alowed pattern string to tag (@mention) the registered user in a post. For example `~{{familyName}}{{givenName}}`.
 
 * **Allow Threaded Replies**
   
