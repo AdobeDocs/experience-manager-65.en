@@ -196,8 +196,7 @@ To perform the following procedure, you must be logged in as an adminstrator of 
 ### Install the Author Certificate {#install-the-author-certificate}
 
 1. Open the User Management page for the publish instance. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Locate the user account that you use to execute replication requests, and click or tap the user name.
-1. If the Create TrustStore link appears in the Account Settings area, click the link, create a password for the TrustStore and click OK.
+1. If the Create TrustStore link appears in the Global Trust Store area, click the link, create a password for the TrustStore and click OK.
 1. In the Account Settings area, click Manage TrustStore.
 1. Click Add Certificate From CER File.
 1. Make sure the Map Certificate to User option is selected. Click Select Certificate File, select author.cer, and click Open.
