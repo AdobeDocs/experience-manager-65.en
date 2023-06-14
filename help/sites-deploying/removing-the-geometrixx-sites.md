@@ -1,8 +1,6 @@
 ---
 title: Removing the Geometrixx Sites
-seo-title: Removing the Geometrixx Sites
 description: Learn how to remove the sample Geometrixx content.
-seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -32,11 +30,11 @@ There is also a super-package:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-This package includes all the above individual packages. To remove all the geometrixx-related content at once, click **Uninstall** on this package. The super-package will go into the uninstalled state, and all the individual packages will disappear from the package manager view.
+This package includes all the above individual packages. To remove all the geometrixx-related content at once, click **Uninstall** on this package. The super-package goes into the uninstalled state, and all the individual packages disappear from the Package Manager view.
 
 You have now an "empty" AEM instance without any demonstration sites.
 
 >[!NOTE]
 >
->When upgrading, geometrixx sites are automatically re-installed. You may need to remove geometrixx web sites after upgrading if you do not want these samples.
+>When upgrading, Geometrixx sites are automatically reinstalled. Remove Geometrixx web sites after upgrading if you do not want these samples.
 
