@@ -1,6 +1,5 @@
 ---
 title: Backup and Restore Service APIQuick Starts
-seo-title: Backup and Restore Service APIQuick Starts
 description: Backup and Restore Service APIQuick Starts
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
@@ -15,21 +14,21 @@ exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 
 **Samples and examples in this document are only for AEM Forms on JEE environment.**
 
-Java API Quick Start(SOAP) are available for the Backup and Restore Service API.
+Java&trade; API Quick Start(SOAP) is available for the Backup and Restore Service API.
 
-[Quick Start: Entering backup mode using the Java API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Quick Start: Entering backup mode using the Java&trade; API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Quick Start: Leaving backup mode using the Java API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Quick Start: Leaving backup mode using the Java&trade; API(SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms operations can be performed using the AEM Forms strongly-typed API and the connection mode should be set to SOAP.
+AEM Forms operations can be performed using the AEM Forms strongly typed API and the connection mode should be set to SOAP.
 
 >[!NOTE]
 >
->Quick Starts located in Programming with AEM Forms are based on the Forms operating system. However, if you are using another operating system, such as UNIX, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts in Programming with AEM Forms are based on the Forms operating system. However, if you are using another operating system, such as UNIX&reg;, replace Windows-specific paths with paths that are supported by the applicable operating system. Likewise, if you are using another J2EE application server, ensure that you specify valid connection properties. See [Setting connection properties](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Quick Start (SOAP mode): Entering backup mode using the Java API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Quick Start (SOAP mode): Entering backup mode using the Java&trade; API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-The following Java code example enters into backup mode with a unique label for two hours. After the backup time expires or if backup mode is explicitly exited, the forms server returns to purging files from the Global Document Storage. (See [Entering Backup Mode on the forms server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+The following Java&trade; code example enters into backup mode with a unique label for two hours. After the backup time expires or if backup mode is explicitly exited, the Forms Server returns to purging files from the Global Document Storage. (See [Entering Backup Mode on the Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -117,7 +116,7 @@ The following Java code example enters into backup mode with a unique label for 
              // Enter backup mode on the forms server server
              BackupModeEntryResult backupResult = backup.enterBackupMode(backUpLabel,minsInBackupMode, continousCoverage);
  
-             // Get information from entering backup mode ontheforms server server.
+             // Get information from entering backup mode on the forms server server.
              if (backupResult != null)
              {
                  System.out.println("Start time is: " + backupResult.getStartTime());
@@ -142,9 +141,9 @@ The following Java code example enters into backup mode with a unique label for 
  
 ```
 
-## Quick Start (SOAP mode): Leaving backup mode using the Java API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Quick Start (SOAP mode): Leaving backup mode using the Java&trade; API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-The following Java code example explicitly causes a Forms Server to leave backup mode and return to purging files from the Global Document Storage. (See [Leaving Backup Mode on the forms server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+The following Java&trade; code example explicitly causes a Forms Server to leave backup mode and return to purging files from the Global Document Storage. (See [Leaving Backup Mode on the Forms Server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
