@@ -6,10 +6,6 @@ feature: Adaptive Forms
 
 # Create or add an Adaptive Form to AEM Sites page {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
-[!BADGE pre-release documentation]{type=Caution tooltip="Yellow status"}
-
-<span class="preview"> This is pre-release documentation and subject to change.</span>
-
 With AEM Forms, you can seamlessly incorporate adaptive forms into your web pages. This allows your visitors to conveniently fill and submit forms without ever leaving the page they are on. By doing so, they can effortlessly stay engaged with other elements of the website while actively interacting with the form. 
 
 You can use AEM Page Editor to quickly create and add multiple forms to your AEM Sites pages. Using AEM Page Editor allows content authors to create seamless data capture experiences within a Sites page using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. It also allows you to use various features of AEM Sites pages like, versioning, targeting, translation, and multi-site manager.
@@ -230,8 +226,6 @@ You can use the Form Data Model Prefill service to prepopulate fields of a form 
 1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure Data Models opens. 
 ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Select a form data model. Open the **[!UICONTROL Basic]** tab. In the prefill service, select **[!UICONTROL Forms Portal Draft Prefill Service]**. 
-
-
 1. Click **[!UICONTROL Done]**.
 
 ## Redirect the user to a new user on form submission or show a thank you message

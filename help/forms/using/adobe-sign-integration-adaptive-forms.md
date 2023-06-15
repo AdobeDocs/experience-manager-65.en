@@ -86,9 +86,9 @@ After prerequisites are in place, perform the following steps to configure [!DNL
     1. In the **[!UICONTROL Redirect URL]** box, add the HTTPS URL copied in the previous step.
     1. Enable the following OAuth settings for the [!DNL Adobe Sign] application and click **[!UICONTROL Save]**.
 
-    * aggrement_read
-    * aggrement_write
-    * aggrement_send
+    * agreement_read
+    * agreement_write
+    * agreement_send
     * widget_write
     * workflow_read
 
@@ -131,9 +131,6 @@ Now, [!DNL Adobe Sign] is integrated with AEM [!DNL Forms] and ready for use in 
 
 ## Connect AEM Forms with Adobe Acrobat Sign Solutions for Government {#adobe-acrobat-sign-for-government}
 
-[!BADGE beta documentation]{type=Caution tooltip="Yellow status"} 
-<span class="preview"> This section contains beta documentation and subject to change.</span>
-
 Connecting AEM Forms with Adobe Acrobat Sign Solutions for Government is a multi-step process. It involves: 
 
 * Creating redirect URL for your AEM instances
@@ -163,25 +160,24 @@ Before you start connecting AEM Forms with Adobe Acrobat Sign Solution,
 1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Adobe Acrobat Sign] configuration in AEM Forms.
 1. Copy the URL of your current browser window to a notepad from the URL. This URL is referred as `re-direct URL`. In the next section, you share the `re-direct URL` and `Scopes` with Adobe Sign team and request credentials (Client Id and Client Secret).  
 
->![NOTE]
+>[!NOTE]
 >
 >
-> * Use a [Top-level](https://en.wikipedia.org/wiki/Top-level_domain) domain as `re-direct URL`. For example, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global` 
-> * Do not use a local URL as a `re-direct URL`. For example, `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/SignConfig`.  
-> 
+> * A `re-direct URL` should contain a [Top-level](https://en.wikipedia.org/wiki/Top-level_domain) domain. For example, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global` 
+> * Do not use a local URL as a `re-direct URL`. For example, `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
 
 
 #### Share the redirect URL and scopes with Adobe Sign team and receive credentials
 
 Adobe Acrobat Sign for Government Solutions team requires the `re-direct URL` and the certain scopes to be enabled for your Adobe Acrobat Sign application (listed below) to generate credentials (Client Id and Client Secret) that allow you to connect AEM Forms with Adobe Acrobat Sign Solutions for Government.
 
-Share the `scopes` (listed below) and the `re-direct URL` created and noted down the last step of previous section with your Adobe Acrobat Sign for Government Solution representative ([Adobe Professional Services team member](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)).
+Share the `scopes` (listed below) and the `re-direct URL` created and noted down the last step of previous section with your Adobe Acrobat Sign for Government Solution representative [Adobe Professional Services team member](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password).
 
 **_Scopes_**
 
-* [!DNL aggrement_read]
-* [!DNL aggrement_write]
-* [!DNL aggrement_send]
+* [!DNL agreement_read]
+* [!DNL agreement_write]
+* [!DNL agreement_send]
 * [!DNL widget_read]
 * [!DNL widget_write]
 * [!DNL workflow_read]
@@ -207,11 +203,11 @@ The representative generates and shares credentials with you. In the next sectio
 
 1. Select the **[!UICONTROL Enable Adobe Acrobat Sign for attachments]** option to append files attached to an Adaptive Form to the corresponding [!DNL Adobe Acrobat Sign] document sent for signing.
 
-1. Tap **[!UICONTROL Connect to Adobe Sign]**. When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. If the credentials are correct and you allow [!DNL AEM Forms] to access your [!DNL Adobe Acrobat Sign] developer account, a success message similar to the following appears.
+1. Tap **[!UICONTROL Connect to Adobe Sign]**. When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `Adobe Acrobat Sign for Government Solutions` and , click **[!UICONTROL Allow Access]**. If the credentials are correct and you allow [!DNL AEM Forms] to access your [!DNL Adobe Acrobat Sign] developer account, a success message similar to the following appears.
      
       ![Adobe Acrobat Sign Cloud Configuration Success](/help/forms/using/assets/adobe-sign-cloud-configuration-success.png)
 
-      <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. --> 
+      When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your account`, and click **[!UICONTROL Allow Access]**.
 
 1. Tap **[!UICONTROL Create]** to create the configuration.
 1. Open AEM Web Console. The URL is `https://'[server]:[port]'/system/console/configMgr`
@@ -240,4 +236,5 @@ Default interval to sync status of [!DNL Adobe Sign] is now changed.
 ## Related Articles {#related-articles}
 
 * [Using Adobe Sign in an adaptive form](../../forms/using/working-with-adobe-sign.md)
+* [Adobe Sign with Form-Centric workflows](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
 * [Using Adobe Sign with AEM Forms (Video)](https://helpx.adobe.com/experience-manager/kt/forms/using/adobe-sign-integration-feature-video.html)
