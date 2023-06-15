@@ -128,6 +128,7 @@ role: User
 + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
   + [Best practices for working with adaptive forms](using/adaptive-forms-best-practices.md)
   + [Creating an adaptive form](using/creating-adaptive-form.md)
+  + [Create or add an Adaptive Form to AEM Sites page](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
   + [Adaptive form fragments](using/adaptive-form-fragments.md)
   + [Configuring the Submit action](using/configuring-submit-actions.md)
   + [Using CAPTCHA in adaptive forms](using/captcha-adaptive-forms.md)

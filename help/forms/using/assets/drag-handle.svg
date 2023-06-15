@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff13dc;
+        fill-opacity: 0;
+      }
+
+      .fill {
+        fill: #6e6e6e;
+      }
+    </style>
+  </defs>
+  <rect id="Canvas" class="cls-1" width="18" height="18"/>
+  <circle class="fill" cx="7" cy="13" r="1"/>
+  <circle class="fill" cx="7" cy="10" r="1"/>
+  <circle class="fill" cx="7" cy="7" r="1"/>
+  <circle class="fill" cx="7" cy="4" r="1"/>
+  <circle class="fill" cx="10" cy="13" r="1"/>
+  <circle class="fill" cx="10" cy="10" r="1"/>
+  <circle class="fill" cx="10" cy="7" r="1"/>
+  <circle class="fill" cx="10" cy="4" r="1"/>
+</svg>
