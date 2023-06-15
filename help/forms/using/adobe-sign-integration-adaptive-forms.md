@@ -24,8 +24,7 @@ In a typical [!DNL Adobe Acrobat Sign] and Adaptive Forms scenario, a user fills
 
 ## Connect AEM Forms with Adobe Acrobat Sign {#adobe-sign}
 
-To connect **[!DNL AEM Forms]** with **[!DNL Adobe Acrobat Sign]**, set up the software and accounts listed in the prerequisites section, and configure the Adobe Sign Cloud Service in your AEM Forms Author and Publish instances:
-
+To connect **[!DNL AEM Forms]** with **[!DNL Adobe Acrobat Sign]**, set up the software and accounts listed in the prerequisites section, and connect Adobe Sign to your all the AEM Forms Author and Publish instances:
 
 ## Prerequisites {#prerequisites}
 
@@ -45,7 +44,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
 1. On AEM [!DNL Forms] author instance, navigate to **Tools** ![hammer](assets/hammer.png) &gt; **[!UICONTROL General]** &gt; **[!UICONTROL Configuration Browser]**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
    * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
-1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container for cloud services.
+1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container.
 1. Navigate to **Tools** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Adobe Sign]** and select the configuration container you created in the above step.
 
    >[!NOTE]
@@ -54,7 +53,7 @@ After prerequisites are in place, perform the following steps to configure [!DNL
    
    >[!NOTE]
    >
-   >Ensure that the URL of the cloud services configuration page starts with **HTTPS**. If not, [enable SSL](/help/sites-administering/ssl-by-default.md) for AEM [!DNL Forms] server.
+   >Ensure that the URL of the Cloud Services Configuration Page starts with **HTTPS**. If not, [enable SSL](/help/sites-administering/ssl-by-default.md) for AEM [!DNL Forms] server.
 
 1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Adobe Sign] configuration in AEM [!DNL Forms].
 1. In the **[!UICONTROL General]** tab of the **[!UICONTROL Create Adobe Sign Configuration]** page, specify a **[!UICONTROL Name]** for the configuration and tap **[!UICONTROL Next]**. You can optionally specify a title and browse to select a thumbnail for the configuration.
@@ -144,8 +143,6 @@ Connecting AEM Forms with Adobe Acrobat Sign Solutions for Government is a multi
 
 ![](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
 
-AEM Forms as a Cloud Service provides development, stage, and production environments. You can start with connecting your development environment for with Adobe Acrobat Sign Solutions for Government and connect the stage and production environments later. 
-
 ### Before you start {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 
 Before you start connecting AEM Forms with Adobe Acrobat Sign Solution, 
@@ -154,13 +151,14 @@ Before you start connecting AEM Forms with Adobe Acrobat Sign Solution,
 * Your AEM [!DNL Forms] servers are [SSL enabled](/help/sites-administering/ssl-by-default.md) .
 * Your AEM [!DNL Forms] servers are using [identical crypto key](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) for author and publish instances.
 
-### Connect AEM Forms as a Cloud Service with Adobe Acrobat Sign Solutions for Government {#connect-adobe-acrobat-sign-for-government}
+### Connect AEM Forms to Adobe Acrobat Sign Solutions for Government {#connect-adobe-acrobat-sign-for-government}
 
 #### Create a redirect URL for your AEM instance
 
-1. On the Forms as a Cloud Service author instance, navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL General]** &gt; **[!UICONTROL Configuration Browser]**.
+1. On your AEM Forms instance, navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL General]** &gt; **[!UICONTROL Configuration Browser]**.
 1. On the **[!UICONTROL Configuration Browser]** page, tap **[!UICONTROL Create]**.
-1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container to store Cloud Services. Ensure that the folder name does not contain any space.
+1. In the **[!UICONTROL Create Configuration]** dialog, specify a **[!UICONTROL Title]** for the configuration, enable **[!UICONTROL Cloud Configurations]**, and tap **[!UICONTROL Create]**. It creates a configuration container. Ensure that the container/folder name does not contain any space.
+
 1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Cloud Services]** &gt; **[!UICONTROL Adobe Acrobat Sign]** and open the configuration container you created in the previous step. When you create an Adaptive Form, specify the container name in the **[!UICONTROL Configuration Container]** field.  
 1. On the configuration page, tap **[!UICONTROL Create]** to create [!DNL Adobe Acrobat Sign] configuration in AEM Forms.
 1. Copy the URL of your current browser window to a notepad from the URL. This URL is referred as `re-direct URL`. In the next section, you share the `re-direct URL` and `Scopes` with Adobe Sign team and request credentials (Client Id and Client Secret).  
@@ -223,7 +221,7 @@ The representative generates and shares credentials with you. In the next sectio
 1. Publish the configuration. 
 1. Use [replication](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) to create identical configuration on corresponding publish instances. 
 
-Now, you can [use add Adobe Acrobat Sign fields in an Adaptive Form](working-with-adobe-sign.md) or [AEM Workflow](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Ensure that you add the configuration container used for the Cloud Service configuration to all the Adaptive Forms being enabled for [!DNL Adobe Acrobat Sign]. You can specify a configuration container from the  properties of an Adaptive Form.
+Now, you can [use add Adobe Acrobat Sign fields in an Adaptive Form](working-with-adobe-sign.md) or [AEM Workflow](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). Ensure that you add the configuration container used for the Cloud Service configuration to all the Adaptive Forms being enabled for [!DNL Adobe Acrobat Sign]. You can specify a configuration container from the properties of an Adaptive Form.
 
 
 ## Configure [!DNL Adobe Sign] scheduler to sync the signing status {#configure-adobe-sign-scheduler-to-sync-the-signing-status}

@@ -190,7 +190,7 @@ You can have only one signer or multiple signers for an adaptive form. When you 
 
     * **[!UICONTROL Signer Email address]:** Specify email address of the signer. Signer receives to be signed documents/form on the specified email address. You can choose to use an email address provided in a form field, in AEM user profile of the logged-in user, or manually enter an email address. It is a mandatory step. Ensure that the email address of the first signer or the only signer (in case of single signer) is not identical to [!DNL Adobe Sign] account used to configure AEM cloud services.
 
-    * **[!UICONTROL Signer Authentication Method]:** Specify the method to authenticate a user before opening a form for signing. You can choose between phone, knowledge base, and social identity-based authentication.
+    * **[!UICONTROL Signer Authentication Method]:** Specify the method to authenticate a user before opening a form for signing. You can choose between phone, knowledge base, and social identity-based authentication. For Adobe Acrobat Sign Solutions for Government only phone and knowledge-based authentication options are available.
 
    >[!NOTE]
    >
@@ -246,7 +246,8 @@ After [editing adaptive form properties for Adobe sign](../../forms/using/workin
 
    Apply digital signatures to the adaptive form using:
 
-    * Cloud signatures: Sign with a [digital ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hosted by a trust service provider.
+    * Cloud signatures: Sign with a [digital ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hosted by a trust service provider. The Cloud Signature option is not available for Adobe Acrobat Sign Solutions for Government.
+
     * Adobe Acrobat or Reader: Download and open the document with Adobe Acrobat or Reader to sign using a smart card, USB token, or file-based digital ID.
 
    After adding the cloud signature field to the adaptive form, perform the following steps to complete the configuration process:
