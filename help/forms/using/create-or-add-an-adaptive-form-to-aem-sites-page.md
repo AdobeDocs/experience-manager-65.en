@@ -2,8 +2,8 @@
 title: Create or add an Adaptive Form to AEM Sites page
 description: Discover how to effortlessly create or seamlessly add an Adaptive Form to your AEM Sites page. Learn step-by-step techniques and best practices for integrating dynamic and customizable forms into your website, optimizing your digital experiences for maximum impact.
 feature: Adaptive Forms
+exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
 ---
-
 # Create or add an Adaptive Form to AEM Sites page {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 With AEM Forms, you can seamlessly incorporate adaptive forms into your web pages. This allows your visitors to conveniently fill and submit forms without ever leaving the page they are on. By doing so, they can effortlessly stay engaged with other elements of the website while actively interacting with the form. 
@@ -239,8 +239,4 @@ On submission of a form, you can redirect the user to another webpage or a messa
 
     * To configure a Redirect URL, for on Submit option, select the Redirect to URL option, and provide an absolute address or a Redirect URL or relative path of an AEM Sites page.  
   
-    * To configure a custom or thank you message, for on Submit option, select the Show Message option, and provide a message in the Message content box. It is a rich text box, you can use the full screen option to view all the available rich text items. 
-
-
-
-
+    * To configure a custom or thank you message, for on Submit option, select the Show Message option, and provide a message in the Message content box. It is a rich text box, you can use the full screen option to view all the available rich text items.
