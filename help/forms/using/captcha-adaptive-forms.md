@@ -35,9 +35,9 @@ AEM Forms users can use the reCAPTCHA service by Google to implement CAPTCHA in 
 
 ### Configure reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. Create a [reCAPTCHA Enterprise project](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) enabled with [reCAPTCHA Enterprise API](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-reCAPTCHA-enterprise-api). 
+1. Create a [reCAPTCHA Enterprise project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) enabled with [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api). 
 1. [Obtain](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) the Project ID.
-1. Create an [API key](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) and a [site key for websites](https://cloud.google.com/reCAPTCHA-enterprise/docs/create-key#create-key).
+1. Create an [API key](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) and a [site key for websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Create configuration container for cloud services.
 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
@@ -55,7 +55,7 @@ AEM Forms users can use the reCAPTCHA service by Google to implement CAPTCHA in 
     1. Tap **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and tap **[!UICONTROL Create]**.
     1. Select version as reCAPTCHA Enterprise and specify Name; Project ID, Site Key, and API key(Obtained in Step 2 and 3) for reCAPTCHA Enterprise service.
     1. Select key type, the key type should be same as the site key configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
-    1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/reCAPTCHA-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+    1. Specify a threshold score in the range 0 to 1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
     
         > Note:
         >
@@ -72,7 +72,7 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
 
 ## Configure Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
-1. Obtain [reCAPTCHA API key pair](https://www.google.com/reCAPTCHA/admin) from Google. It includes a **site key** and a **secret key**.
+1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
 1. Create configuration container for cloud services. 
     1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
     1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
