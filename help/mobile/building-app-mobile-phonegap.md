@@ -106,7 +106,7 @@ Move the content of your mobile application to your file system.
 
 ### Using the PhoneGap CLI to Build {#using-the-phonegap-cli-to-build}
 
-Use the PhoneGap CLI to compile and install the application. For information about how to use the PhoneGap CLI, see the PhoneGap [Command-line Interface](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html) documentation.
+Use the PhoneGap CLI to compile and install the application. For information about how to use the PhoneGap CLI, see the PhoneGap Command-line Interface (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`) documentation.
 
 1. Open a terminal or command prompt and change the current directory to the downloaded application ZIP file. For example, the following changes the directory to the ng-app-cli.1392137825303.zip file:
 
@@ -156,7 +156,7 @@ Send your application resources to PhoneGap Build for compiling for the various 
 
    **Note:** The Beta version of AEM Beta does not create an Inbox notification when the build successfuly completes.
 
-1. In the Success dialog box, click PhoneGap Build to open the Adobe PhoneGap Build page at [https://build.phonegap.com/apps](https://build.phonegap.com/apps). If you are waiting for your app to appear, you can check the [PhoneGap Build Status](https://status.build.phonegap.com/) page.
+1. In the Success dialog box, click PhoneGap Build to open the Adobe PhoneGap Build page at `https://build.phonegap.com/apps`. If you are waiting for your app to appear, you can check the PhoneGap Build Status at `https://status.build.phonegap.com/`.
 
    For information about installing the build, see the [PhoneGap Build Documentation](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 

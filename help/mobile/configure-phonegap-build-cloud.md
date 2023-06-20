@@ -21,7 +21,7 @@ The **PhoneGap Build Tile** on the application dashboard provides the ability to
 
 All supported platforms defined within the **Manage App** tile will be built with PhoneGap Build when pushing a remote build with the **PhoneGap Build** Tile.
 
-You can push a remote build to [https://build.phonegap.com](https://build.phonegap.com) or download the source to build locally with [PhoneGap CLI](https://docs.phonegap.com/references/phonegap-cli/).
+You can push a remote build to `https://build.phonegap.com` or download the source to build locally with PhoneGap CLI at `https://docs.phonegap.com/references/phonegap-cli/`.
 
 ![PhoneGap Build Tile](assets/chlimage_1-60.png)
 
@@ -29,7 +29,7 @@ You can push a remote build to [https://build.phonegap.com](https://build.phoneg
 
 In order to take advantage of PhoneGap Build you need to configure the AEM PhoneGap Build Cloud Service with your PhoneGap Build account information.
 
-If you don't currently have an account, navigate to [https://build.phonegap.com](https://build.phonegap.com) and sign up! If you have an Adobe Creative Cloud membership, you may have support for up to 25 private apps (non-open source apps).
+If you don't currently have an account, navigate to `https://build.phonegap.com` and sign up! If you have an Adobe Creative Cloud membership, you may have support for up to 25 private apps (non-open source apps).
 
 Once you have verified your PhoneGap Build account is active, navigate to your AEM Cloud Management Console, specifically the [PhoneGap Build Cloud Service](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
@@ -67,7 +67,7 @@ To invoke a remote build with Adobe PhoneGap Build, click **Build Remote**.
 
 >[!NOTE]
 >
->If the build fails for any reason (red iOS icon below indicates that platform failed), you can hover over the icon to get the error message. Alternatively, you can click the triple dot, '...' at the bottom of the tile to navigate directly to https://build.phonegap.com (you must authenticate) and watch and manage your build directly.
+>If the build fails for any reason (red iOS icon below indicates that platform failed), you can hover over the icon to get the error message. Alternatively, you can click the triple dot, '...' at the bottom of the tile to navigate directly to `https://build.phonegap.com` (you must authenticate) and watch and manage your build directly.
 
 ### Building your application with PhoneGap CLI {#building-your-application-with-phonegap-cli}
 
@@ -80,7 +80,7 @@ In order to take advantage of PhoneGap's command line interface, you will need t
 1. Platform SDK (iOS, Android, WindowsPhone, ...) and,
 1. PhoneGap CLI
 
-You can read more [here](https://docs.phonegap.com/references/phonegap-cli/).
+You can read more here at `https://docs.phonegap.com/references/phonegap-cli/`.
 
 Once you have installed the pre-requisites, give it a simple test by creating a simple app and getting it running either in your simulator or better yet on your device, from a terminal try:
 

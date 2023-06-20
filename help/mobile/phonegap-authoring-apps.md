@@ -87,9 +87,9 @@ These icons represent a Content Release package for app content
 
 ### The PhoneGap Build Tile {#the-phonegap-build-tile}
 
-The **PhoneGap Build Tile** connects with [https://build.phonegap.com](https://build.phonegap.com) to build and host remote builds. Once built, the build is made available either as a download or directly to your device via a QR code.
+The **PhoneGap Build Tile** connects with `https://build.phonegap.com` to build and host remote builds. Once built, the build is made available either as a download or directly to your device via a QR code.
 
-Alternatively, you can download the device source to build locally through the [PhoneGap CLI](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
+Alternatively, you can download the device source to build locally through the PhoneGap CLI (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
 ![PhoneGap Build Tile](assets/chlimage_1-140.png)
 

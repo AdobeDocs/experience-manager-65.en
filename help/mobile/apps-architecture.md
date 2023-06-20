@@ -363,7 +363,7 @@ The www directory contains all of the web content (HTML, JS, and CSS files) that
 
 #### www/config.xml {#www-config-xml}
 
-The [PhoneGap documentation](https://docs.phonegap.com) refers to this file as a 'global configuration file'. The config.xml contains many app properties, such as the name of the app, the app 'preferences' (for example whether or not an iOS webview allows overscroll), and plugin dependencies that are *only* consumed by PhoneGap build.
+The PhoneGap documentation (`https://docs.phonegap.com`) refers to this file as a 'global configuration file'. The config.xml contains many app properties, such as the name of the app, the app 'preferences' (for example whether or not an iOS webview allows overscroll), and plugin dependencies that are *only* consumed by PhoneGap build.
 
 The config.xml file is a static file in AEM and is exported as-is via Content Sync.
 
@@ -375,7 +375,7 @@ The config.xml file contains the `content` element:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-In [the PhoneGap documentation](https://docs.phonegap.com), this element is described as "The optional &lt;content&gt; element defines the app's starting page in the top-level web assets directory. The default value is index.html, which customarily appears in a project's top-level www directory."
+In the PhoneGap documentation (`https://docs.phonegap.com`), this element is described as "The optional &lt;content&gt; element defines the app's starting page in the top-level web assets directory. The default value is index.html, which customarily appears in a project's top-level www directory."
 
 PhoneGap build fails if an index.html file is not present. Therefore, this file is included.
 

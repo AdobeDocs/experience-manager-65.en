@@ -25,7 +25,7 @@ The [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitche
 
 The source code for each of these device API components is [available on Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-For more detail on the usage of each API, I recommend taking a look at the [Cordova plugin documentation](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
+For more detail on the usage of each API, I recommend taking a look at the Cordova plugin documentation (`https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html`).
 
 ## The Next Steps {#the-next-steps}
 
