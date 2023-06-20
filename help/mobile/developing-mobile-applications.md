@@ -26,7 +26,7 @@ AEM leverages Adobe PhoneGap and Adobe Publishing Solutions, allowing you to cre
 * Introduce HTML5 Webviews to new or pre-existing **native** applications through Cordova WebViews.
 * Create, curate and share rich multimedia content across all delivery channels including, web, mobile-web, mobile-app and print.
 
-AEM integrates with the Adobe **[PhoneGap Build service](https://build.phonegap.com/)** to simplify the application build and deploy process.
+AEM integrates with the Adobe PhoneGap Build service (`https://build.phonegap.com/`) to simplify the application build and deploy process.
 
 **Adobe ContentSync** enables users to easily download page and content updates Over-the-Air (OTA) to their devices without having to re-install the application or download from the appStore, Google Play, or other app sources.
 
@@ -67,7 +67,7 @@ IOS developers should be aware of an open issue with Cordova apps running on iOS
 
 >[!NOTE]
 >
->For more detail on "App Transport Security", see the following section of [Apple’s iOS9 prerelease docs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) and this [Stack Overflow discussion](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>For more detail on "App Transport Security", see the following section of [Apple's iOS9 prerelease docs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) and this [Stack Overflow discussion](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Developing Mobile Applications in AEM {#developing-mobile-applications-in-aem-1}
 

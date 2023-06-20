@@ -23,7 +23,7 @@ When developing a mobile app, there are many new concerns specific to devices th
 
 * Functional - Are all requirements met by your app?
 * Usability - Is the app easy to use and understand by your customer?
-* Performance - What happens during a spike in usage? Are the app elements, like swipes and carousels, quick and don’t detract away from the experience?
+* Performance - What happens during a spike in usage? Are the app elements, like swipes and carousels, quick and don't detract away from the experience?
 * Failure or Interrupts - What happens when there is an incoming call or notification while your app is running? What happens if there is a network outage or power off?
 * Installation and Updates - How is the install experience? How are updates pushed out?
 * Technical - Is your app consuming too much power from a device?
@@ -40,7 +40,7 @@ Some degree of automated testing should be performed to cover the variety of scr
 
 ## Manual testing {#manual-testing}
 
-In addition to automated testing, your app should go through a cycle of manual testing. Customers running the app on a real device cannot be duplicated by a script. Here too, you have many options. You can use a platform, such as HockeyApp, to define who has access and gather feedback. Or, you can outsource the whole process to a service like UTest, ElusiveStars, or Testin. If you have a group of internal testers, but lack variation of devices, there are cloud services where you can perform manual testing on their pool of devices. One such service that provides this is SauceLabs. You can also build apps remotely to PhoneGap Enterprise and install on local devices as a level of acceptance testing or demoing. See the [PhoneGap](https://phonegap.com/) website for their latest features and documentation. Whatever the approach, manual testing should;
+In addition to automated testing, your app should go through a cycle of manual testing. Customers running the app on a real device cannot be duplicated by a script. Here too, you have many options. You can use a platform, such as HockeyApp, to define who has access and gather feedback. Or, you can outsource the whole process to a service like UTest, ElusiveStars, or Testin. If you have a group of internal testers, but lack variation of devices, there are cloud services where you can perform manual testing on their pool of devices. One such service that provides this is SauceLabs. You can also build apps remotely to PhoneGap Enterprise and install on local devices as a level of acceptance testing or demoing. See the PhoneGap (`https://phonegap.com/`) website for their latest features and documentation. Whatever the approach, manual testing should;
 
 * hit a large target of testers,
 * test against a large pool of devices (ideally real devices, but simulators/emulators if real devices are not available),

@@ -21,17 +21,17 @@ To run the following examples, you need a system that runs OS X (Mac) with Xcode
 
 ## Bootstrap your development environment {#bootstrap-your-development-environment}
 
-[Setup PhoneGap CLI](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+Setup PhoneGap CLI (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
 For iOS: To develop for iPhones and iPads, you need Apple's Xcode IDE.
 
 * Download it for free [here](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2Fdownload%2F&rv=1).
-* [PhoneGap iOS platform guide](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
+* PhoneGap iOS platform guide (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 For Android&trade;: To develop for iPhones and iPads, you need Google's Android&trade; Stuido IDE.
 
 * Download it for free [here](https://developer.android.com/studio).
-* [PhoneGap Android&trade; platform guide](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* PhoneGap Android&trade; platform guide (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## Download the Source {#download-the-source}
 
@@ -61,7 +61,7 @@ PhoneGap CLI can create a platform project, compile the source, and deploy the a
 
 >[!NOTE]
 >
->You can do all these steps separately, see [PhoneGap CLI docs](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>You can do all these steps separately, see PhoneGap CLI docs (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. Make sure you've Installed PhoneGap CLI, see above.
 1. In a console (or terminal) window, navigate to the root directory of your extracted source.
