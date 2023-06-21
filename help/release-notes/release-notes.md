@@ -393,7 +393,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    ```
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails.
-* JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.  
+* JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.   
+* From AEM 6.5.15 onwards, org.apache.servicemix.bundles.rhino was updated. It could break components if they have strict mode set in the javascript, such as ```use strict```. If that happens, the javascript code needs to be updated to use the correct hoisting behaviour. This is an issue with HTL and server side javascript rendering with a component.
+
+
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
@@ -401,6 +404,7 @@ The following text documents list the OSGi bundles and Content Packages included
 
 * [List of OSGi bundles included in Experience Manager 6.5.17.0](/help/release-notes/assets/65170_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [List of Content Packages included in Experience Manager 6.5.17.0](/help/release-notes/assets/65170_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+*  In this case it seems that the affected customer needs to update their JS code to use the correct hoisting behaviour. 
 
 ## Restricted websites{#restricted-sites}
 
