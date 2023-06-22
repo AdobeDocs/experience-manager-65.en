@@ -402,7 +402,6 @@ The following text documents list the OSGi bundles and Content Packages included
 
 * [List of OSGi bundles included in Experience Manager 6.5.17.0](/help/release-notes/assets/65170_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 * [List of Content Packages included in Experience Manager 6.5.17.0](/help/release-notes/assets/65170_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-*  In this case it seems that the affected customer needs to update their JS code to use the correct hoisting behaviour. 
 
 ## Restricted websites{#restricted-sites}
 
