@@ -139,7 +139,7 @@ Some of the key features and improvements in this release are the following:
 * When a user updates to Experience Manager Forms 6.5.16.0 Service Pack and tries to change the `LicenseType` to `Production`, the changes are not reflected. (FORMS-7594)
 * When a user tries to invoke an LCA Process with a PDF that comprises the `Chinese Full Width Characters`, an issue occurs with the `ValidateForm` process. (FORMS-7464)
 * In Experience Manager Forms Designer, XMLFM generates ZPL output with different paper sizes, such as letter, A4, and A5, for XDP-based templates. (FORMS-7898)
-* As a browser's limitation, the autofill option in the form does not work after 194 form fields, in Experience Manager Forms 6.5.14.0. (FORMS-)
+* As a browser's limitation, the autofill option in the form does not work after 194 form fields, in Experience Manager Forms 6.5.14.0. (FORMS-9426)
 
 ## Integrations{#integrations-6517}
 
