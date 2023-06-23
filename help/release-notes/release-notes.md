@@ -394,7 +394,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    ```
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails.
-* JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.  
+* JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.   
+* Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they will not get executed, instead throwing a runtime error.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
