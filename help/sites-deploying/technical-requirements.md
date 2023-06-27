@@ -201,7 +201,9 @@ Adobe Experience Manager works with the following server platforms for productio
 >* Microsoft&reg; Visual C++ 2008 redistributable
 >* Microsoft&reg; Visual C++ 2010 redistributable
 >* Microsoft&reg; Visual C++ 2012 redistributable
->* Microsoft&reg; Visual C++ 2013 redistributable (as of 6.5)
+>* Microsoft&reg; Visual C++ 2013 redistributable 
+>* Microsoft&reg; Visual C++ 2019(VC14.28 or greater) redistributable
+ 
 
 
 ### Virtual & Cloud Computing Environments {#virtual-cloud-computing-environments}
@@ -504,8 +506,9 @@ For Windows x86:
 * 2.35 GB of available hard-disk space
 * 1024 X 768 pixels or greater monitor resolution
 * Video hardware acceleration (optional)
-* Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC.
-* Administrative privileges to install Designer.
+* Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
+* Administrative privileges to install Designer
+* Microsoft Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
 
 ### Requirements for AEM Assets XMP metadata write-back {#requirements-for-aem-assets-xmp-metadata-write-back}
 
