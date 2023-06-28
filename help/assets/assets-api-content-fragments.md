@@ -2,6 +2,7 @@
 title: Adobe Experience Manager Content Fragments Support in Assets HTTP API
 description: Learn about support for Content Fragments in the Assets HTTP API, an important piece of AEM's headless delivery feature.
 feature: Content Fragments,Assets HTTP API
+role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: yes
 ---
