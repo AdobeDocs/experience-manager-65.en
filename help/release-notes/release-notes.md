@@ -367,6 +367,16 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
   After these steps, the GraphQL queries should perform faster.
 
+* When trying to move, delete, or publish either Content Fragments, Sites, or Pages, there is an issue when Content Fragment references are fetched, as the background query fails. That is, the functionality does not work.
+  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no reindexing is required):
+
+   ```xml
+   "tags": [
+       "visualSimilaritySearch"
+     ]
+   "refresh": true
+   ```
+
 * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0].
 
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
@@ -382,16 +392,6 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * `com.adobe.granite.maintenance.impl.TaskScheduler` - No maintenance windows found at granite/operations/maintenance.
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for register change to complete unregistered.
-
-* When trying to move, delete, or publish either Content Fragments, Sites, or Pages, there is an issue when Content Fragment references are fetched, as the background query fails. That is, the functionality does not work.
-  To ensure correct operation, you must add the following properties to the index definition node `/oak:index/damAssetLucene` (no reindexing is required):
-
-   ```xml
-   "tags": [
-       "visualSimilaritySearch"
-     ]
-   "refresh": true
-   ```
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails.
 * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.   
