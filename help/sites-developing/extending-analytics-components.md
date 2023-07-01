@@ -1,8 +1,6 @@
 ---
 title: Adding Adobe Analytics Tracking to Components
-seo-title: Adding Adobe Analytics Tracking to Components
 description: Adding Adobe Analytics Tracking to Components
-seo-description: null
 uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -15,7 +13,7 @@ exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 
 ## Including the Adobe Analytics Module in a Page Component {#including-the-adobe-analytics-module-in-a-page-component}
 
-Page template components (e.g. `head.jsp, body.jsp`) need JSP includes in order to load the ContextHub and the Adobe Analytics integration (which is a part of Cloud Services). All includes load JavaScript files.
+Page template components (for example, `head.jsp, body.jsp`) need JSP includes to load the ContextHub and the Adobe Analytics integration (which is a part of Cloud Services). All includes load JavaScript files.
 
 The ContextHub entry should be included immediately below the `<head>` tag, while Cloud Services should be included in the `<head>` and before the `</body>` section; for example:
 
@@ -36,7 +34,7 @@ The `contexthub` script that you insert after the `<head>` element adds the Cont
 
 The `cloudservices` scripts that you add in the `<head>` and the `<body>` sections apply to the cloud services configurations that are added to the page. (If the page uses more than one Cloud Services configuration, you need to include the ContextHub jsp and the Cloud Services jsp only once.)
 
-When a Adobe Analytics framework is added to the page, the `cloudservices` scripts generate Adobe Analytics-related javascript and references to client-side librarires, similar to the following example:
+When an Adobe Analytics framework is added to the page, the `cloudservices` scripts generate Adobe Analytics-related JavaScript and references to client-side libraries, similar to the following example:
 
 ```xml
 <div class="sitecatalyst cloudservice">
@@ -133,7 +131,7 @@ Components can interact with the Adobe Analytics framework when the component ha
 * `cq:componentName`: The name for the component that appears in Sidekick.
 * `cq:componentGroup`: The group in Sidekick that includes the component.
 
-The code in the component JSP adds the javascript to the page that triggers the tracking, and defines the data that is tracked. The event name and data names used in the javascript must match the corresponding values of the `analytics` node properties.
+The code in the component JSP adds the JavaScript to the page that triggers the tracking, and defines the data that is tracked. The event name and data names used in the JavaScript must match the corresponding values of the `analytics` node properties.
 
 * Use the data-tracking attribute to track event data when a page loads. (See [Tracking Custom Events on Page Load](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
 * Use the CQ_Analytics.record function to track event data when users interact with page features. (See [Tracking Custom Events After Page Load](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
@@ -147,7 +145,7 @@ Extend the foundation topnav component so that Adobe Analytics tracks clicks on 
 The following procedures require that you have already performed the following tasks:
 
 * Created a CQ application.
-* Created a Adobe Analytics Configuration and a Adobe Analytics Framework.
+* Created an Adobe Analytics Configuration and an Adobe Analytics Framework.
 
 #### Copy the topnav component {#copy-the-topnav-component}
 
@@ -198,7 +196,7 @@ Configure the topnav component and edit the JSP file to define the tracking even
    onclick = "tracknav('<%= child.getPath() %>.html')"
    ```
 
-1. At the bottom of the page, add the following javascript code:
+1. At the bottom of the page, add the following JavaScript code:
 
    ```xml
    <script type="text/javascript">
@@ -283,7 +281,7 @@ The content of the `topnav.jsp` file should appear as follows:
 
 >[!NOTE]
 >
->It is often desirable to track data from the ContextHub. For information about using javascript to obtain this information, see [Accessing Values in the ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+>It is often desirable to track data from the ContextHub. For information about using JavaScript to obtain this information, see [Accessing Values in the ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 
 #### Adding the Tracking Component to Sidekick {#adding-the-tracking-component-to-sidekick}
 
@@ -292,7 +290,7 @@ Add components that are enabled for tracking with the Adobe Analytics to Sidekic
 1. Open your Adobe Analytics framework from your Adobe Analytics Configuration. ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. On Sidekick, click the Design button.
 
-   ![](assets/chlimage_1a.png)
+   ![The Design button featuring a right-angle square.](assets/chlimage_1a.png)
 
 1. In the Link Tracking Configuration area, click Configure Inheritance.
 
@@ -322,7 +320,7 @@ The Adobe Analytics s.products variable uses the following syntax:
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-The Adobe Analytics integration module constructs the `s.products` variable using the `product` values that AEM components generate. The `product` value in the javascript that AEM components generate is an array of values that have the following structure:
+The Adobe Analytics integration module constructs the `s.products` variable using the `product` values that AEM components generate. The `product` value in the JavaScript that AEM components generate is an array of values that have the following structure:
 
 ```
 "product": [{
@@ -358,7 +356,7 @@ The `analytics` node of the component must expose the variable names using the `
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-The eCommerce module provides several components that generate s.products variable data. For example, the submitorder component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) generates javascript that is similar to the following example:
+The eCommerce module provides several components that generate s.products variable data. For example, the submitorder component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) generates JavaScript that is similar to the following example:
 
 ```
 <script type="text/javascript">

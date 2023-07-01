@@ -1,8 +1,6 @@
 ---
 title: Responsive design for web pages
-seo-title: Responsive design for web pages
-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -862,13 +860,13 @@ For each range of viewport widths that you are targeting, use a static page widt
 
 Use grids to scale content blocks to adapt to different viewport sizes. Content blocks span a specific number of columns. As column widths increase or decrease to fit different viewport sizes, the widths of the content blocks increase or decrease accordingly. Scaling can support both large- and medium-sized viewports that are wide enough to accommodate the side-by-side placement of content blocks.
 
-![](do-not-localize/chlimage_1-1a.png)
+![Image of two grids, one that is scaled smaller than the other.](do-not-localize/chlimage_1-1a.png)
 
 #### Repositioning content in the grid {#repositioning-content-in-the-grid}
 
 The size of content blocks can be constrained by a minimum width, beyond which scaling is no longer effective. For smaller viewports, the grid can be used to vertically distribute blocks of content rather than horizontally.
 
-![](do-not-localize/chlimage_1-2a.png)
+![Image of two grids, one that is repositioned smaller than the other.](do-not-localize/chlimage_1-2a.png)
 
 ### Designing the grid {#designing-the-grid}
 
@@ -953,7 +951,7 @@ Use the float style of the `.row-fluid` class so you can control whether the con
 
 Add the style to the `.row-fluid` selector inside each media query. Set the value according to the page layout that you are using for that media query. For example, the following diagram illustrates a row that distributes content horizontally for wide viewports, and vertically for narrow viewports.
 
-![](do-not-localize/chlimage_1-3a.png)
+![Two images of content blocks in a row, the second image showing the row repositioned.](do-not-localize/chlimage_1-3a.png)
 
 The following CSS could implement this behavior:
 

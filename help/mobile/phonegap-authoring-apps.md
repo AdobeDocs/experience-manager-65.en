@@ -1,8 +1,6 @@
 ---
 title: Authoring Mobile Applications
-seo-title: Authoring Mobile Applications
 description: he AEM Mobile Dashboard allows you to create, build and deploy your mobile application, create, delete, and edit application metadata. Follow this page to learn more.
-seo-description: he AEM Mobile Dashboard allows you to create, build and deploy your mobile application, create, delete and edit application metadata. Follow this page to learn more.
 uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
@@ -81,7 +79,7 @@ The **Published** column shows when the last content update was published and ma
 
 This icon represents a Content Release package for the app shell
 
-![](do-not-localize/chlimage_1-6.png)
+![Content Release package icon indicated by two square, overlapping package symbols.](do-not-localize/chlimage_1-6.png)
 
 These icons represent a Content Release package for app content
 
