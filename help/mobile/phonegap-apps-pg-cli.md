@@ -83,7 +83,7 @@ phonegap run ios
 >1. Navigate into this new folder (cd test)
 >1. Run `phonegap create helloWorld`
 >1. Navigate into helloWorld (cd helloWorld)
->1. Run `phonegap run android` (or replace android with iOS as above).
+>1. Run `phonegap run android` (or replace Android&trade; with iOS as above).
 >1. Emulator opens running your newly created PhoneGap App, saying 'Device Ready' if the JavaScript Bridge to native is operational.
 >
 >This troubleshooting verifies that your PhoneGap CLI development environment is running correctly.
@@ -141,9 +141,9 @@ You can set breakpoints anywhere in your source. When you interact with your emu
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-* Use the control buttons to continue execution, step over, step into and step out of methods:
+* Use the control buttons to continue execution, step over, step into, and step out of methods:
 
-![](do-not-localize/chlimage_1-4.png)
+![Five different functioning control buttons aligned in a horizontal row.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >

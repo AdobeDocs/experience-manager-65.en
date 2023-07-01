@@ -1,8 +1,6 @@
 ---
 title: Client Context in Detail
-seo-title: Client Context in Detail
 description: The Client Context represents a dynamically assembled collection of user data
-seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,13 +18,13 @@ exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 >
 >Client Context has been superseded by ContextHub. Please see the [related documentation](/help/sites-developing/contexthub.md) for details.
 
-The Client Context represents a dynamically assembled collection of user data. You can use the data to determine the content to show on a web page in a given situation (content targeting). The data is also available for web site analytics, and to any javascript on the page.
+The Client Context represents a dynamically assembled collection of user data. You can use the data to determine the content to show on a web page in a given situation (content targeting). The data is also available for web site analytics, and to any JavaScript on the page.
 
 Client Context consists mainly of the following aspects:
 
-* The session store, that contains the user data.
+* The session store that contains the user data.
 * The UI that displays the user data and provides tools for simulating the user experience.
-* A [javascript API](/help/sites-developing/ccjsapi.md) for interacting with session stores.
+* A [JavaScript API](/help/sites-developing/ccjsapi.md) for interacting with session stores.
 
 To create a standalone session store and add it to Client Context, or create a session store that is tied to a Context Store component. AEM installs several Context Store components that you can use right away. You can use these components as a basis for your components.
 
@@ -39,11 +37,11 @@ The Client Context includes various session stores that contain user data. Store
 * The client web browser.
 * The server (see [JSONP Store](/help/sites-administering/client-context.md#main-pars-variable-8) for storing information from 3rd-party sources)
 
-The Client Context framework provides a [javascript API](/help/sites-developing/ccjsapi.md) that you can use to interact with session stores to read and write user data, and listen and react to store events. You can also create session stores for user data that you use for content targeting or other purposes.
+The Client Context framework provides a [JavaScript API](/help/sites-developing/ccjsapi.md) that you can use to interact with session stores to read and write user data, and listen and react to store events. You can also create session stores for user data that you use for content targeting or other purposes.
 
-Session store data remains on the client. The Client Context does not write data back to the server. To send data to the server, use a form or develop custom javascript.
+Session store data remains on the client. The Client Context does not write data back to the server. To send data to the server, use a form or develop custom JavaScript.
 
-Each session store is a collection of property-value pairs. The session store represents a collection of data (of any kind), the conceptual meaning of which can be decided by the designer and/or developer. The following example javascript code defines an object that represents the profile data that session store might contain:
+Each session store is a collection of property-value pairs. The session store represents a collection of data (of any kind), the conceptual meaning of which can be decided by the designer and/or developer. The following example JavaScript code defines an object that represents the profile data that session store might contain:
 
 ```
 {
@@ -74,7 +72,7 @@ Context store components can include the following items:
 * JSP scripts that define the appearance in Client Context.
 * Properties for listing the component in Sidekick.
 * Edit dialogs for configuring component instances.
-* Javascript that initializes the session store.
+* JavaScript that initializes the session store.
 
 For a description of the installed Context Store Components that you can add to Context Store, see [Available Client Context Components](/help/sites-administering/client-context.md#available-client-context-components).
 
@@ -98,7 +96,7 @@ Include the Client Context component to the body section of your web pages to en
 
 The clientcontext component causes the page to load the client libraries that implement Client Context.
 
-* The Client Context javascript API.
+* The Client Context JavaScript API.
 * The Client Context framework that supports session stores, event management, etc.
 * Segments that are defined.
 * The init.js scripts that are generated for each context store component that has been added to Client Context.
@@ -123,19 +121,19 @@ Create a session store for the data that you need to add to and retrieve from Cl
 
 1. Create a client library folder that has a `categories` property value of `personalization.stores.kernel`. Client Context automatically loads the client libraries of this category.
 
-1. Configure the client library folder so that it has a dependency on the `personalization.core.kernel` client library folder. The `personalization.core.kernel` client library provides the Client Context javascript API.
+1. Configure the client library folder so that it has a dependency on the `personalization.core.kernel` client library folder. The `personalization.core.kernel` client library provides the Client Context JavaScript API.
 
-1. Add the javascript that creates and initializes the session store.
+1. Add the JavaScript that creates and initializes the session store.
 
-Including the javascript in the personalization.stores.kernel client library causes the store to be created when the Client Context framework is loaded.
+Including the JavaScript in the personalization.stores.kernel client library causes the store to be created when the Client Context framework is loaded.
 
 >[!NOTE]
 >
->If you are creating a session store as part of a context store component, you can alternatively place the javascript in the init.js.jsp file of the component. In this case, the session store is created only if the component is added to Client Context.
+>If you are creating a session store as part of a context store component, you can alternatively place the JavaScript in the init.js.jsp file of the component. In this case, the session store is created only if the component is added to Client Context.
 
 #### Types of Session Stores {#types-of-session-stores}
 
-Session stores are either created and available during a browser session, or are persisted in browser storage or cookies. The Client Context javascript API defines several classes that represent both types of data stores:
+Session stores are either created and available during a browser session, or are persisted in browser storage or cookies. The Client Context JavaScript API defines several classes that represent both types of data stores:
 
 * ` [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)`: These objects reside only in the page DOM. The data is created and persisted during the lifetime of the page.
 * ` [CQ_Analytics.PerstistedSessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-persistedsessionstore)`: These objects reside in the page DOM and are persisted either in browser storage or cookies. The data is available across pages and across user sessions.
@@ -148,7 +146,7 @@ The API also provides extensions of these classes that are specialized for stori
 
 #### Creating the Session Store Object {#creating-the-session-store-object}
 
-The javascript of your client library folder creates and initializes the session store. The session store must then be registered using Context Store Manager. The following example creates and registers a [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) object.
+The JavaScript of your client library folder creates and initializes the session store. The session store must then be registered using Context Store Manager. The following example creates and registers a [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) object.
 
 ```
 //Create the session store
@@ -215,15 +213,15 @@ When Client Context is initialized, these nodes are processed.
 
 #### Initializing the Associated Session Store {#initializing-the-associated-session-store}
 
-Add an init.js.jsp file to your component to generate javascript code that initializes the session store that your context store component uses. For example, use the intialization script to retrieve configuration properties for the component and use them to populate the session store.
+Add an init.js.jsp file to your component to generate JavaScript code that initializes the session store that your context store component uses. For example, use the initialization script to retrieve configuration properties for the component and use them to populate the session store.
 
-The javascript that is generated is added to the page when Client Context is initialized on page load on both the author and publish instances. This JSP is executed before the context store component instance is loaded and rendered.
+The JavaScript that is generated is added to the page when Client Context is initialized on page load on both the author and publish instances. This JSP is executed before the context store component instance is loaded and rendered.
 
 The code must set the mime type of the file to `text/javascript`, or it is not executed.
 
 >[!CAUTION]
 >
->The init.js.jsp script is executed on the author and publish instance, but only if the context store component is added to Client Context.
+>The init.js.jsp script is run on the author and publish instance, but only if the context store component is added to Client Context.
 
 The following procedure creates the init.js.jsp script file and adds the code that sets the correct mime type. The code that performs the store initialization would follow.
 
@@ -327,7 +325,7 @@ Your session store will then need a "renderer" method that will be called every 
 
 ## Interacting with Session Stores {#interacting-with-session-stores}
 
-Use javascript to interact with session stores.
+Use JavaScript to interact with session stores.
 
 ### Accessing Session Stores {#accessing-session-stores}
 
@@ -479,7 +477,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
 In this example, you create a context store component that retrieves data from an external service and stores it in the session store:
 
 * Extends the genericstoreproperties component.
-* Initializes a store using a CQ_Analytics.JSONPStore javascript object.
+* Initializes a store using a CQ_Analytics.JSONPStore JavaScript object.
 * Calls a JSONP service to retrieve data and add it to the store.
 * Renders the data in Client Context.
 
@@ -533,7 +531,7 @@ The context store component requires an edit dialog. The geoloc edit dialog will
 
 Add an init.js.jsp file to the geoloc component and use it to create the session store, retrieve the location data, and add it to the store.
 
-The init.js.jsp file is executed when the Client Context is loaded by the page. By this time, the Client Context javascript API is loaded and available to your script.
+The init.js.jsp file is executed when the Client Context is loaded by the page. By this time, the Client Context JavaScript API is loaded and available to your script.
 
 1. Right-click the /apps/myapp/contextstores/geoloc node and click Create &gt; Create File. Specify a Name of init.js.jsp and click OK.
 1. Add the following code to the top of the page and then click Save All.
@@ -596,7 +594,7 @@ Add the Location Store component to Client Context so that it is initialized whe
 1. Click Ctrl-Alt-c (windows) or control-option-c (Mac) to open Client Context.
 1. Click the edit icon at the top of Client Context to open Client Context Designer.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Edit icon indicated by a pencil inside a square.](do-not-localize/chlimage_1.png)
 
 1. Drag the Location Store component to Client Context.
 

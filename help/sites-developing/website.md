@@ -1,8 +1,6 @@
 ---
 title: Create a Fully-Featured Website (JSP)
-seo-title: Create a Fully-Featured Website (JSP)
 description: This tutorial enables you to create a fully featured website with AEM
-seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -18,7 +16,7 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 >
 >This article describes how to create a website using JSP and based on the classic UI. Adobe recommends leveraging the latest AEM technologies for your websites as described in detail in the article [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
-This tutorial enables you to create a fully featured website with Adobe Experience Manager (AEM). The website will be based on a generic website and is targeted primarily at web developers. All development will take place within an author environment.
+This tutorial enables you to create a fully featured website with Adobe Experience Manager (AEM). The website will be based on a generic website and is targeted primarily at web developers. All development takes place within an author environment.
 
 This tutorial describes how to:
 
@@ -518,9 +516,9 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
 
 1. Copy the following code into `navimage.png.java.`The code extends the AbstractImageServlet class:
 
-    * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
+    * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
     * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained.
-    * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
+    * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -650,7 +648,7 @@ Create the listchildren component that generates a list of page links that inclu
 
 #### Creating Product Pages {#creating-product-pages}
 
-Create two pages located below the Products page. For each page, which describe two specific products, you set a title, a description, and a date.
+Create two pages located below the Products page. For each page that describes two specific products, you set a title, a description, and a date.
 
 1. In the folder tree of the Websites page, select the Websites/My Website/English/Products item and click New &gt; New Page.
 1. In the dialog enter the following property values and then click Create:
@@ -933,7 +931,7 @@ Create the dialog for configuring your logo component in Design mode. Design-mod
 
 Create the script that retrieves the logo image and writes it to the page.
 
-1. Right-clck the logo component node and click Create &gt; Create File to create the script file named img.GET.java.
+1. Right-click the logo component node and click Create &gt; Create File to create the script file named img.GET.java.
 1. Open the file, copy the following code into the file, and then click Save All:
 
 ```java
@@ -1027,7 +1025,7 @@ This section describes how to set an image as your logo using the design mode di
 
 1. With the Products page open in your browser, click the Design button at the bottom of Sidekick to enter design mode.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![The Design button indicated by a right square.](do-not-localize/chlimage_1-1.png)
 
 1. In the Design of logo bar, click Edit to use the dialog to edit the settings for the logo component.
 1. In the dialog, click in the panel of the Image tab, browse for the logo.png image that you extracted from the mywebsite.zip file, and click OK.
@@ -1118,7 +1116,7 @@ Create a component that displays an image in the paragraph system. To save time,
 
 #### Creating the Image Component {#creating-the-image-component-1}
 
-1. Right click the `/apps/mywebsite/components/logo` node and click Copy.
+1. Right-click the `/apps/mywebsite/components/logo` node and click Copy.
 1. Right-click the `/apps/mywebsite/components` node and click Paste.
 1. Right-click the `Copy of logo` node, click Rename, delete the existing text and type `image`.
 

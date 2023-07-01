@@ -1,8 +1,6 @@
 ---
 title: Variables in AEM workflows
-
 description: Create a variable, set a value for the variable, and use it in OR Split and  Goto AEM workflow steps.
-
 uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -58,7 +56,7 @@ To create a variable,
     * Form Data Model - Specify a Form Data Model path.
     * ArrayList - Specify a subtype for the collection.
 
-1. Specify an optional description for the variable and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes. The variable displays in the list available in the left pane.
+1. Specify an optional description for the variable and tap ![Save icon indicated by a check mark inside a box.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes. The variable displays in the list available in the left pane.
 
 When you create variables, consider the following practices:
 
@@ -88,10 +86,10 @@ You can also update specific elements of a JSON or XML type variable using JSON 
 To add mapping between variable, do the following:
 
 1. On the workflow edit page, tap the Steps icon available in the sidekick of the workflow model.
-1. Drag-and-drop the **Set Variable** step to the workflow editor, tap the step, and select ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
+1. Drag-and-drop the **Set Variable** step to the workflow editor, tap the step, and select ![Configure icon indicated by a wrench.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Configure).
 1. On the Set Variable dialog, select **[!UICONTROL Mapping]** > **[!UICONTROL Add Mapping]**.
 1. In the **Map Variable** section, select the variable to store data, select the mapping mode, and specify a value to store in the variable. The mapping modes vary based on the type of variable.
-1. Map more variables so you can make a meaningful expression. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes.
+1. Map more variables so you can make a meaningful expression. Tap ![Save icon indicated by a check mark inside a box.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes.
 
 ### Example 1: Query an XML variable to set value for a string variable {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -246,8 +244,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## Edit a variable {#edit-a-variable}
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
-1. Tap the ![](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to the variable name that you want to edit.
-1. Edit the variable information and tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
+1. Tap the ![Edit icon indicated by a pencil symbol.](https://helpx.adobe.com/content/dam/help/images/en/edit.png) (Edit) icon next to the variable name that you want to edit.
+1. Edit the variable information and tap ![Save icon indicated by a check mark.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to save the changes. You cannot edit the **[!UICONTROL Name]** and **[!UICONTROL Type]** fields for a variable.
 
 ## Delete a variable {#delete-a-variable}
 
@@ -257,4 +255,4 @@ To delete a variable,
 
 1. On the edit workflow page, tap the Variables icon available in the sidekick of the workflow model. The Variables section in the left pane displays all existing variables.
 1. Tap the Delete icon next to the variable name that you want to delete.
-1. Tap ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to confirm and delete the variable.
+1. Tap ![Done icon indicated by a check mark symbol.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) to confirm and delete the variable.

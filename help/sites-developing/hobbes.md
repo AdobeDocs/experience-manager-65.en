@@ -1,8 +1,6 @@
 ---
 title: Testing Your UI
-seo-title: Testing Your UI
 description: AEM provides a framework for automating tests for your AEM UI
-seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -20,13 +18,13 @@ exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 >
 >See [Deprecated and Removed Features](/help/release-notes/deprecated-removed-features.md).
 
-AEM provides a framework for automating tests for your AEM UI. Using the framework, you write and run UI tests directly in a web browser. The framework provides a javascript API for creating tests.
+AEM provides a framework for automating tests for your AEM UI. Using the framework, you write and run UI tests directly in a web browser. The framework provides a JavaScript API for creating tests.
 
-The AEM test framework uses Hobbes.js, a testing library written in Javascript. The Hobbes.js framework was developed for testing AEM as part of the development process. The framework is now available for public use for testing your AEM applications.
+The AEM test framework uses Hobbes.js, a testing library written in JavaScript. The Hobbes.js framework was developed for testing AEM as part of the development process. The framework is now available for public use for testing your AEM applications.
 
 >[!NOTE]
 >
->Refer to the Hobbes.js [documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) for full details of the API.
+>Refer to the Hobbes.js [documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) for full details of the API.
 
 ## Structure of Tests {#structure-of-tests}
 
@@ -47,7 +45,7 @@ Navigate to the Tools console via **Global Navigation -&gt; Tools &gt; Operation
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-When opening the console, the Test Suites are listed to the left along with an option to run all of them sequentially. The space to the right shown with a checkered background, is a placeholder for showing page content as the tests run.
+When opening the console, the Test Suites are listed to the left along with an option to run all of them sequentially. The space to the right shown with a checkered background is a placeholder for showing page content as the tests run.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -57,21 +55,21 @@ Tests Suites can be run individually. When you run a Test Suite, the page change
 
 A checkmark icon indicates a passed test:
 
-![](do-not-localize/chlimage_1-2.png)
+![Checkmark icon.](do-not-localize/chlimage_1-2.png)
 
 An "X" icon indicates a failed test:
 
-![](do-not-localize/chlimage_1-3.png)
+![Failed test icon indicated by an X inside a cirle.](do-not-localize/chlimage_1-3.png)
 
 To run a Test Suite:
 
-1. In the Tests panel, click or tap the name of the Test Case that you want to run to expand the deatils of the Actions.
+1. In the Tests panel, click or tap the name of the Test Case that you want to run to expand the details of the Actions.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Click or tap the **Run test** button.
+1. Click **Run test**.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![An image of the Run tests button, indicated by a right-facing pointer inside a circle.](do-not-localize/chlimage_1-4.png)
 
 1. The placeholder is replaced with page content as the test executes.
 
@@ -89,9 +87,9 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 
 1. On the Tests panel, tap or click either the **Run all tests** button or the **Run tests** button below the title of the Test Suite that you want to run.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![An image of the Run all tests button and the Run tests button, indicated by a right-facing pointer inside a circle.](do-not-localize/chlimage_1-5.png)
 
-1. To view the results of each Test Case, tap or click the title of the Test Case. Tapping or clicking the name of your test in the **Result** panel shows all details.
+1. To view the results of each Test Case, click the title of the Test Case. Clicking the name of your test in the **Result** panel shows all details.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -99,7 +97,7 @@ Test Suites execute sequentially in the order that they appear in the console. Y
 
 The following procedure steps you through the creation and execution of a Test Suite using [We.Retail content](/help/sites-developing/we-retail.md), but you can easily modify the test to use a different web page.
 
-For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+For full details about creating your own Test Suites, see the [Hobbes.js API documentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Right-click the `/etc/clientlibs` folder and click **Create > Create Folder**. Type `myTests` for the name and click **OK**.

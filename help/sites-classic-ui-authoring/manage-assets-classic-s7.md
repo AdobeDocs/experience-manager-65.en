@@ -34,7 +34,7 @@ For more information on using video components with Experience Manager, see the 
 
 >[!NOTE]
 >
->If Dynamic Media Classic (Scene7) assets do not display properly, please make sure that Dynamic Media is [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
+>If Dynamic Media Classic (Scene7) assets do not display properly, make sure that Dynamic Media is [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) and then refresh the page.
 
 ## Manually publishing to Dynamic Media Classic (Scene7) from Assets {#manually-publishing-to-scene-from-assets}
 
@@ -51,7 +51,7 @@ You can publish to Dynamic Media Classic (Scene7) from the Assets console if the
 
 1. In the Experience Manager classic UI, select **[!UICONTROL Digital Assets]** to access the digital asset manager.
 
-1. Select the asset (or assets) or folder from within the target folder you want to publish to Dynamic Media Classic (Scene7) and right-click and select **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]**. Alternatively, you can select **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]** from the **[!UICONTROL Tools]** menu.
+1. Select the asset (or assets) or folder from within the target folder that you want to publish to Dynamic Media Classic (Scene7) and right-click and select **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]**. Alternatively, you can select **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]** from the **[!UICONTROL Tools]** menu.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -198,9 +198,9 @@ You set these configuration options by opening (double-clicking) a Dynamic Media
 
 The HTML5 Zoom component displays a larger image when you press the + button.
 
-The asset has zoom tools at the bottom. Select **[!UICONTROL +]** to enlarge. Select **[!UICONTROL -]** to reduce. Selecting the **[!UICONTROL x]** or the reset zoom arrow brings the image back to the original size it was imported as. Select the diagonal arrows so you can make it full screen. Select **[!UICONTROL Edit]** so you can configure the component. With this component, you can configure [settings common to all Dynamic Media Classic (Scene7) components](#settings-common-to-all-scene-components).
+The asset has zoom tools at the bottom. Select **[!UICONTROL +]** to enlarge. Select **[!UICONTROL -]** to reduce. Selecting the **[!UICONTROL x]** or the reset zoom arrow brings the image back to the original size that it was imported as. Select the diagonal arrows so you can make it full screen. Select **[!UICONTROL Edit]** so you can configure the component. With this component, you can configure [settings common to all Dynamic Media Classic (Scene7) components](#settings-common-to-all-scene-components).
 
-![](do-not-localize/chlimage_1-3.png)
+![Image of tulip flowers inside the HTML5 Zoom component.](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
 
@@ -218,7 +218,7 @@ In the HTML5 Flyout component, the asset is shown as split screen; left the asse
 
 The Dynamic Media Classic (Scene7) Image component lets you add Dynamic Media Classic (Scene7) functionality to your images, such as Dynamic Media Classic (Scene7) modifiers, image or viewer presets, and sharpening. The Dynamic Media Classic (Scene7) image component is similar to other image components in Experience Manager with special Dynamic Media Classic (Scene7) functionality. In this example, the image has the Dynamic Media Classic (Scene7) URL modifier, `&op_invert=1` applied.
 
-![](do-not-localize/chlimage_1-4.png)
+![Image of a sphere inside the Dynamic Media Classic (Scene 7) image component](do-not-localize/chlimage_1-4.png)
 
 **Title, Alt Text** - In the Advanced tab, add a title to the image and alt text for those users who have graphics turned off.
 
@@ -228,7 +228,7 @@ The Dynamic Media Classic (Scene7) Image component lets you add Dynamic Media Cl
 
 **Viewer preset** - Select an existing viewer preset from the drop-down menu. If the viewer preset you are looking for is not visible, you must make it visible. See Managing Viewer Presets. You cannot select a viewer preset if you are using an image preset and conversely.
 
-**Dynamic Media Classic (Scene7) Configuration** - Select the Dynamic Media Classic (Scene7) configuration you want to use to fetch active image presets from the SPS.
+**Dynamic Media Classic (Scene7) Configuration** - Select the Dynamic Media Classic (Scene7) configuration that you want to use to fetch active image presets from the SPS.
 
 **Image preset** - Select an existing image preset from the drop-down menu. If the image preset you are looking for is not visible, you must make it visible. See Managing Image Presets. You cannot select a viewer preset if you are using an image preset and conversely.
 
@@ -307,7 +307,7 @@ See [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) 
 
 ### Known limitations for the video component {#known-limitations-for-the-video-component}
 
-Adobe DAM and WCM shows if a primary source video is uploaded. They do not show these proxy assets:
+Adobe DAM and WCM show if a primary source video is uploaded. They do not show these proxy assets:
 
 * Dynamic Media Classic (Scene7) encoded renditions
 * Dynamic Media Classic (Scene7) adaptive video sets
@@ -334,7 +334,7 @@ If you have multiple configurations, Experience Manager by default displays the 
 
 Browse content in Dynamic Media Classic (Scene7) by selecting the **[!UICONTROL S7]** tab.
 
-You can change the configuration you are accessing by selecting the configuration. The folders change depending on which configuration you select.
+You can change the configuration you are accessing by selecting the configuration. The folders change depending on the selected configuration.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -359,11 +359,11 @@ You can use either the classic UI or the touch-optimized UI to both view and sea
 
 When searching in either UI, you can filter by the following criteria (shown here in the touch-optimized UI):
 
-**Enter keywords** - You can search assets by name. When searching the keywords, you enter is what the file name starts with. For example, typing the word "swimming" would look for any asset file names that start with those letters in that order. Be sure to select enter after you type the term to find the asset.
+**Enter keywords** - You can search assets by name. When searching the keywords, you enter is what the file name starts with. For example, typing the word "swimming" would look for any asset file names that start with those letters in that order. Be sure to select `Enter` after you type the term to find the asset.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-**Folder/path** - The name of the folder is based on the configuration you have selected. You can drill down to lower levels by selecting the folder icon and selecting a subfolder, then selecting the checkmark to select it.
+**Folder/path** - The name of the folder is based on the configuration that you selected. You can drill down to lower levels by selecting the folder icon and selecting a subfolder, then selecting the checkmark to select it.
 
 If you enter a keyword and select a folder, Experience Manager searches that folder and any subfolders. However, if you do not enter any keywords when searching, selecting the folder only shows the assets in that folder and does not include any subfolders.
 

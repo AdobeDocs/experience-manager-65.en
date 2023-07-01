@@ -1,8 +1,6 @@
 ---
 title: Members & Groups Management Consoles
-seo-title: Members & Groups Management Consoles
 description: How to access Members and Groups Management consoles
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -49,7 +47,7 @@ In the author environment, to reach the Members console for managing members reg
 
 Select the side panel icon on the left side of the `Members` header to toggle open the search side panel.
 
-![](assets/leftpanel-icon.png) 
+![Search side panel icon.](assets/leftpanel-icon.png) 
 
 
 ![member-console2](assets/member-console2.png)
@@ -70,7 +68,7 @@ The column headers are
 
 ## Create New Member {#create-new-member}
 
-Select `Create Member` in order to create a user in the publish environment.
+Select `Create Member` to create a user in the publish environment.
 
 ![create-member1](assets/create-member1.png)
 
@@ -100,11 +98,11 @@ If the ID defaulted to the email address, the ID will *not* change when the emai
 
 * **[!UICONTROL Add Member to Sites]**
 
-  (*Optional*) Select from existing community sites in order to add the member to the community site's members group.
+  (*Optional*) Select from existing community sites to add the member to the community site's members group.
 
 * **[!UICONTROL Add Member to Groups]**
  
-  (*Optional*) Select from existing member groups in order to add the member to that group.
+  (*Optional*) Select from existing member groups to add the member to that group.
 
 * Select **[!UICONTROL Save]**
 
@@ -170,7 +168,7 @@ To access the Groups console:
 
 ### Create New Group {#create-new-group}
 
-Select `Add Group` in order to create a group in the publish environment.
+Select `Add Group` to create a group in the publish environment.
 
 ![group-console1](assets/group-console1.png)
 
