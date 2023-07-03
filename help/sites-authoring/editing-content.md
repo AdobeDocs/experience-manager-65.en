@@ -42,19 +42,19 @@ The toolbar offers access to numerous options. Depending on your current context
 
   This opens/closes the side panel, which holds the [Asset Browser](/help/sites-authoring/author-environment-tools.md#assets-browser), [Component Browser](/help/sites-authoring/author-environment-tools.md#components-browser), and [Content Tree](/help/sites-authoring/author-environment-tools.md#content-tree).
 
-  ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![Toggle Side Panel](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Page Information**
 
   Provides access to the [Page Information](/help/sites-authoring/author-environment-tools.md#page-information) menu including page details and actions that can be taken on the page including viewing and editing page information, viewing page properties, and publishing/unpublishing the page.
 
-  ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![Page Information](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulator**
 
   Toggles the [emulator toolbar](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), which is used to emulate the look-and-feel of the page on another device. This is automatically toggled in layout mode.
 
-  ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Emulator](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
@@ -84,7 +84,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
   Allows you to add [annotations](/help/sites-authoring/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
 
-  ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![Annotate](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### Status Notification {#status-notification}
 
@@ -226,19 +226,19 @@ The actual actions available to the user will be shown as appropriate and not al
 
   [Dependent on the component type](/help/sites-authoring/default-components.md) this will allow you to [edit the content of the component](#edit-content). Often a toolbar will be provided.
 
-  ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![Edit](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configure**
 
   [Dependent on the component type](/help/sites-authoring/default-components.md) this will allow you to edit and configure the properties of the component. Often a dialog will be opened.
 
-  ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configure](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copy**
 
   This will copy the component to the clipboard. After the paste action, the original component will remain.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![Copy](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Cut**
 
@@ -250,13 +250,13 @@ The actual actions available to the user will be shown as appropriate and not al
 
   This will delete the component from the page with your confirmation.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![Delete](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Insert component**
 
   This opens the dialog to [add a new component](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-  ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![Insert Component](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Paste**
 
@@ -276,7 +276,7 @@ The actual actions available to the user will be shown as appropriate and not al
 
   This allows you to select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![Group](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Parent**
 
@@ -288,13 +288,13 @@ The actual actions available to the user will be shown as appropriate and not al
 
   This allows you to modify the [layout](/help/sites-authoring/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-authoring/author-environment-tools.md#page-modes) for the entire page.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Convert to an experience fragment variation**
 
   This allows you to create a new [experience fragment](/help/sites-authoring/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![Convert to Experience Fragment Variation](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Edit (Content) {#edit-content}
 
@@ -350,7 +350,7 @@ For specific component types you can drag and drop assets from the asset browser
 
 For all components the full screen mode can be accessed with (and exited from):
 
-![](do-not-localize/chlimage_1-20.png)
+![Edit Full Screen Mode](do-not-localize/chlimage_1-20.png)
 
 For example, the **Text** component:
 
@@ -385,7 +385,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-authoring
 
    Click or tap the **Layout** action to adjust the layout of the component.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![Component toolbar](do-not-localize/chlimage_1-21.png)
 
 1. Once the Layout action is selected:
 
@@ -399,7 +399,7 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-authoring
 
 1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. The component's toolbar returns to its normal edit state.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![Close](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -425,15 +425,15 @@ You can cancel (then re-enable) the inheritance. Depending on the component, thi
 
   The Cancel Inheritance option is available:
 
-  ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![Cancel Inheritance](do-not-localize/screen_shot_2018-03-22at134406.png)
 
   Or re-enable inheritance if already cancelled:
 
-  ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Reenable inheritance](do-not-localize/screen_shot_2018-03-22at134417.png)
 
   The Rollout action is also available in the blueprint or Live Copy source:
 
-  ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![Rollout](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **An Inherited Paragraph System**
 
@@ -545,7 +545,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 
 The following icons allow you to undo or redo an action. These are shown in the toolbar when appropriate:
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Undo and Redo](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
