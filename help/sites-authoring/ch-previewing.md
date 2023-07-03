@@ -36,7 +36,7 @@ The ContextHub toolbar is available in Preview mode. The toolbar is available on
 
 1. To reveal the toolbar, click or tap the ContextHub icon.
 
-   ![](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## UI Module Features {#ui-module-features}
 
@@ -62,4 +62,4 @@ The popup overlay of a module can include form elements that enable you to chang
 
 Popup overlays can include an icon that you click or tap to expand the popup content to cover the entire browser window or screen.
 
-![](do-not-localize/chlimage_1-18.png)
+![Full screen](do-not-localize/chlimage_1-18.png)
