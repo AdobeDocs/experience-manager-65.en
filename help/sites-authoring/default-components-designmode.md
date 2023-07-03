@@ -62,13 +62,13 @@ To either enable or disable a component:
 
 1. Click or tap the **Parent** icon.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![Parent](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    This will select the paragraph system containing the current component.
 
 1. The **Configure** icon for the paragraph system will be shown in the parent's action bar.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configure](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Select this to show the dialog.
 
@@ -115,7 +115,7 @@ To either enable or disable a component:
 
 1. Use the **Configure** icon to open the dialogue.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Configure icon](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    In the design dialogue, you can configure the component according to the design parameters available.
 
@@ -145,12 +145,12 @@ To either enable or disable a component:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Use the** Delete **icon to remove an entry from a multiple-entry dialogue list.
+   Use the **Delete** icon to remove an entry from a multiple-entry dialogue list.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Delete](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Use the **Move** icon to rearrange the order of entries in a multiple-entry dialogue list.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![Move](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Click or tap the **Done** icon to save and close the dialogue.
