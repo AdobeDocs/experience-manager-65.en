@@ -150,7 +150,7 @@ To edit your page:
 
       The side panel can be opened (and closed) with:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+      ![Open side panel](do-not-localize/screen_shot_2018-03-21at160738.png)
 
     * [Edit the content of an existing component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) on the page:
 
@@ -158,7 +158,7 @@ To edit your page:
         * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions will be shown (for some components, this will be a limited selection).
         * To see all actions available enter full-screen mode using:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+      ![Full screen mode](do-not-localize/screen_shot_2018-03-21at160706.png)
 
     * [Configure the properties of an existing component](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -185,7 +185,7 @@ To edit your page:
 
         * Select the **Annotate** mode (speech bubble icon). Add annotations using the **Add annotation** (plus) icon. Exit annotation mode using the X at top right.
 
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+      ![Annotate](do-not-localize/screen_shot_2018-03-21at160813.png)
 
     * [Preview a page](/help/sites-authoring/editing-content.md#preview-mode) (to see how it will appear in the publish environment)
 
