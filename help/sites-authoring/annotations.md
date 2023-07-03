@@ -53,7 +53,7 @@ The Annotate mode allows you to create, edit, move or delete annotations on your
 
 1. You can enter Annotate mode using the icon in the toolbar (top right) when editing a page:
 
-   ![](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![Annotate](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    You can now view any existing annotations.
 
@@ -78,15 +78,15 @@ The Annotate mode allows you to create, edit, move or delete annotations on your
 
       The cursor will change to a crosswire when you are creating a sketch. You can draw multiple distinct lines. The sketch line reflects the annotation color and can be either an arrow, circle, or oval.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110640.png)
+      ![Sketch](do-not-localize/screen_shot_2018-03-22at110640.png)
 
     * Choose/change the color:
 
-   ![](do-not-localize/chlimage_1-19.png)
+      ![Choose/change color](do-not-localize/chlimage_1-19.png)
 
     * Delete the annotation.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110647.png)
+      ![Delete annotation](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. You can close the annotation dialog by clicking/tapping outside the dialog. A truncated view (the first word) of the annotation, together with any sketches, is shown:
 

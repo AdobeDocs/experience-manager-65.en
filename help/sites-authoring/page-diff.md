@@ -68,7 +68,7 @@ The diff detects changes at the component and HTML level. Items that have been c
 
 In order to focus on particular content, you can click on the full screen icon for either "side" of the side-by-side diff to enlarge it to the full browser window.
 
-![](do-not-localize/chlimage_1-18.png)
+![Full screen mode icon](do-not-localize/chlimage_1-18.png)
 
 The selected side will fill the entire window, but the bar will remain at the top allowing you to switch between the two pages.
 
@@ -76,7 +76,7 @@ The selected side will fill the entire window, but the bar will remain at the to
 
 You can also choose to close the full screen view by clicking the exit full screen icon.
 
-![](do-not-localize/chlimage_1-19.png)
+![Close full screen](do-not-localize/chlimage_1-19.png)
 
 You can exit the side-by-side diff at any time by clicking the Close button in the header.
 

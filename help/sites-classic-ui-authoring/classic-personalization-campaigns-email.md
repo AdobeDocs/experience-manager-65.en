@@ -50,7 +50,7 @@ This document describes the basics of creating newsletters in AEM. For more deta
 
 1. Select the list view, using the icon:
 
-   ![](do-not-localize/mcm_icon_listview-1.png)
+   ![List view](do-not-localize/mcm_icon_listview-1.png)
 
 1. Click **New...**
 

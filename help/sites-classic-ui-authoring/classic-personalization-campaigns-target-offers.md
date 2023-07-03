@@ -18,7 +18,7 @@ exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 1. Select your new campaign in the left pane, or double-click it in the right pane.
 1. Select the list view using the icon:
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![List view](do-not-localize/chlimage_1-11.png)
 
 1. Click **New ...**
 1. You can specify the **Title**, **Name** and type of experience to be created; in this case, Test&Target Offer.

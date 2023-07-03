@@ -39,7 +39,7 @@ In Design mode, the sidekick is minimized and you have the possibility to config
 
 1. To enter Design mode, open a page for editing and use the Sidekick icon:
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Design mode](do-not-localize/chlimage_1.png)
 
 1. Click **Edit** on the Paragraph system (**Design of par**).
 
@@ -53,7 +53,7 @@ In Design mode, the sidekick is minimized and you have the possibility to config
 
 1. The Sidekick minimizes in Design mode. By clicking on the arrow you can maximize the Sidekick and return to Edit Mode:
 
-   ![](do-not-localize/sidekick-collapsed.png)
+   ![Sidekick minimized](do-not-localize/sidekick-collapsed.png)
 
 ## Configuring the Design of a Component {#configuring-the-design-of-a-component}
 
@@ -61,7 +61,7 @@ In Design mode, you can also configure attributes for the individual components.
 
 1. To enter Design mode, open a page for editing and use the Sidekick icon:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Design mode - Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. You can configure the design of components.
 
@@ -73,4 +73,4 @@ In Design mode, you can also configure attributes for the individual components.
 
 1. The Sidekick minimizes in Design mode. By clicking on the arrow you can maximize the Sidekick and return to Edit Mode:
 
-   ![](do-not-localize/sidekick-collapsed-1.png)
+   ![Sidekick minimized](do-not-localize/sidekick-collapsed-1.png)

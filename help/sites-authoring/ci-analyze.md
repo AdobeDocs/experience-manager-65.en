@@ -48,7 +48,7 @@ To change the reporting period of a Content Insight page:
 
 1. If the timeframe does not appear at the top of the page, click or tap the Toggle Timeframe icon.
 
-   ![](do-not-localize/chlimage_1-22.png)
+   ![Toggle Timeframe](do-not-localize/chlimage_1-22.png)
 
 1. To change the start date of the reporting period, drag the circle that appears at the left side of the shaded area to the desired start date.
 
@@ -86,7 +86,7 @@ Use the following procedure to create a task for an SEO recommendation.
 
 1. Click or tap the information icon for the SEO recommendation.
 
-   ![](do-not-localize/chlimage_1-23.png)
+   ![Onformation icon](do-not-localize/chlimage_1-23.png)
 
 1. Click the encircled triangle icon that appears next to the information icon.
 
