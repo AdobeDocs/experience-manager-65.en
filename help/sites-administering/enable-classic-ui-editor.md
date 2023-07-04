@@ -38,4 +38,4 @@ To re-enable the option **Open in Classic UI** in the **Page Information** menu,
 
 1. The **Open in Classic UI** option is again available in the **Page Information** menu when editing pages.
 
-   ![](assets/syui-03-2019-02-27-15-19-48.png)
+   ![open in classic UI option from page information](assets/syui-03-2019-02-27-15-19-48.png)
