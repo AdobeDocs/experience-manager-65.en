@@ -93,7 +93,7 @@ Once user sync is enabled, only newly created users and groups are synchronized.
         * select the `Enabled` checkbox
         * select `Save`
 
-![](assets/chlimage_1-20.png)
+![Apache Sling Distribution Agent](assets/chlimage_1-20.png)
 
 ### 2. Create Authorized User {#createauthuser}
 
@@ -142,7 +142,7 @@ This authorized user will be used in step 3 to configure Sling distribution on a
 
 * select **Save All**
 
-![](assets/chlimage_1-21.png)
+![Add ACL Window](assets/chlimage_1-21.png)
 
 See also
 
@@ -170,7 +170,7 @@ Once an authorized user, a member of the **`administrators`** user group, has be
 
         * for example, `usersync-admin`
 
-![](assets/chlimage_1-22.png)
+![ncrypted Password Transport Secret Provider](assets/chlimage_1-22.png)
 
 ### 4. Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
@@ -193,7 +193,7 @@ Once an authorized user, a member of the **`administrators`** user group, has be
 
     * **repeat** for each publish instance
 
-![](assets/chlimage_1-23.png)
+![Queue Agents Factory](assets/chlimage_1-23.png)
 
 ### 5. Adobe Social Sync - Diff Observer Factory {#diffobserver}
 
@@ -215,7 +215,7 @@ Once an authorized user, a member of the **`administrators`** user group, has be
         * select the `Enabled` checkbox
         * select `Save`
 
-![](assets/screen-shot_2019-05-24at090809.png)
+![Diff Observer Factory](assets/screen-shot_2019-05-24at090809.png)
 
 ### 6. Apache Sling Distribution Trigger - Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
@@ -239,7 +239,7 @@ By default, author will poll for changes every 30 seconds. To alter this interva
         * set the `Interval in Seconds` to the desired interval
         * select `Save`
 
-![](assets/chlimage_1-24.png)
+![Scheduled Triggers Factory](assets/chlimage_1-24.png)
 
 ## Configure for Multiple Publish Instances {#configure-for-multiple-publish-instances}
 
@@ -261,7 +261,7 @@ The default configuration is for a single publish instance. As the reason for en
         * select the existing configuration to open for edit (pencil icon)
           Verify `Name`: `socialpubsync`
 
-![](assets/chlimage_1-25.png)
+![Sync Agents Factory](assets/chlimage_1-25.png)
 
 * **Exporter Endpoints**
   There should be an exporter endpoint for each publish instance. For example, if there are 2 publish instances, localhost:4503 and 4504, there should be 2 entries:
@@ -294,7 +294,7 @@ If there is custom data that is desired to be synchronized across multiple publi
     * select the existing configuration to open for edit (pencil icon)
       Verify `Name`: `socialpubsync-scheduled-trigger`
 
-![](assets/chlimage_1-26.png)
+![AEM Communities User Sync Listener](assets/chlimage_1-26.png)
 
 * **Node Types**
   This is the list of node types that will synchronize. Any node type other than sling:Folder needs to be listed here (sling:folder is handled separately).
@@ -338,7 +338,7 @@ To validate that all Sling ID values differ, on each publish instance:
 1. browse to `http://<host>:<port>/system/console/status-slingsettings`
 1. check the value of **Sling ID**
 
-![](assets/chlimage_1-27.png)
+![Checking the value of Sling ID](assets/chlimage_1-27.png)
 
 If the Sling ID of a publish instance matches the Sling ID of any other publish instance, then:
 
@@ -451,7 +451,7 @@ Simply entering the User Sync Diagnostics console will display the results.
 
 This is what is displayed when User Synchronization has not been enabled:
 
-![](assets/chlimage_1-28.png)
+![Warning that User Sync Diagnostics is not enabled](assets/chlimage_1-28.png)
 
 #### How To Run Diagnostics for Publish Instances {#how-to-run-diagnostics-for-publish-instances}
 
@@ -461,7 +461,7 @@ Included in the list is an URL for each publish instance that will run the diagn
 
 **Note**: before launching the URL, the *authorized sync user* must already be signed into that publish instance.
 
-![](assets/chlimage_1-29.png)
+![Diagnostics for Publish Instances](assets/chlimage_1-29.png)
 
 ### Configuration Improperly Added {#configuration-improperly-added}
 
@@ -471,23 +471,23 @@ Following are views of how the edited, default configurations should appear in t
 
 #### (author) One Apache Sling Distribution Agent - Sync Agents Factory {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
-![](assets/chlimage_1-30.png)
+![Edited, default configurations view in Web Console](assets/chlimage_1-30.png)
 
 #### (author) One Apache Sling Distribution Transport Credentials - User Credentials based DistributionTransportSecretProvider {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
 
-![](assets/chlimage_1-31.png)
+![Edited, default configurations view in Web Console](assets/chlimage_1-31.png)
 
 #### (publish) One Apache Sling Distribution Agent - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![](assets/chlimage_1-32.png)
+![Edited, default configurations view in Web Console](assets/chlimage_1-32.png)
 
 #### (publish) One Adobe Social Sync - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
 
-![](assets/chlimage_1-33.png)
+![Edited, default configurations view in Web Console](assets/chlimage_1-33.png)
 
 #### (author) One Apache Sling Distribution Trigger - Scheduled Triggers Factory {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-![](assets/chlimage_1-34.png)
+![Edited, default configurations view in Web Console](assets/chlimage_1-34.png)
 
 ### Modify Operation Exception During Response Processing {#modify-operation-exception-during-response-processing}
 
