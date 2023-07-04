@@ -196,18 +196,18 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
     * Navigate to Product Page
     * Edit Product Page
 
-   ![chlimage_1-89](/help/sites-administering/assets/chlimage_1-89.png)
+   ![Products Console reference panel](/help/sites-administering/assets/chlimage_1-89.png)
 
 ### Search for Products {#search-for-products}
 
 1. Navigate to the **Products** console, via **Commerce**.
 1. Open the secondary rail for Search with the icon:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-17.png)
+   ![magnifying glass icon](/help/sites-administering/do-not-localize/chlimage_1-17.png)
 
 1. Several facets are available for you to search for products. You can use only one or several facets for a search. The products found will appear:
 
-   ![chlimage_1-90](/help/sites-administering/assets/chlimage_1-90.png)
+   ![Product data in products console](/help/sites-administering/assets/chlimage_1-90.png)
 
 1. Clicking/tapping a product opens it. You can also publish it or view the product data.
 
@@ -245,7 +245,7 @@ You can add multiple assets in the product component, then specify the asset tha
 1. Tap/click Edit icon.
 1. Scroll to **Add**.
 
-   ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
+   ![Adding product data screenshot](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Tap/click **Add**. A new asset placeholder appears.
 1. Tapping/clicking **Change **opens a dialog which allows you to choose an asset.
@@ -332,7 +332,7 @@ The mechanism to select the image to be displayed is as follows:
 
    Select the **Publish** or **Unpublish** icon as required:
 
-   ![chlimage_1-6](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![chlimage_1-7](/help/sites-administering/do-not-localize/chlimage_1-19.png)
+   ![world icon](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![world icon with a cross - no sign](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
    The product information will be published or unpublished as appropriate.
 
@@ -362,7 +362,7 @@ For the `PRODUCT_*` events, the path points to the base product in `/etc/commerc
 
 You can look at them in the Web Console in OSGI events ( `/system/console/events`), for example:
 
-![](/help/sites-administering/do-not-localize/chlimage_1-20.png)
+![OSGI events examples](/help/sites-administering/do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
@@ -384,15 +384,15 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 
 1. Click the fullscreen icon.
 
-   ![chlimage_1-92](/help/sites-administering/assets/chlimage_1-92.png)
+   ![fullscreen icon](/help/sites-administering/assets/chlimage_1-92.png)
 
 1. Click the Launch Map icon.
 
-   ![chlimage_1-93](/help/sites-administering/assets/chlimage_1-93.png)
+   ![launch map icon](/help/sites-administering/assets/chlimage_1-93.png)
 
 1. Click one of the shape icons.
 
-   ![chlimage_1-21](/help/sites-administering/do-not-localize/chlimage_1-21.png)
+   ![shape icons](/help/sites-administering/do-not-localize/chlimage_1-21.png)
 
 1. Modify and move the shape as required.
 1. Click the shape.
@@ -402,17 +402,17 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
    >
    >Alternatively, you can type directly the product path which has to be at the product level, not the variant level.
 
-   ![chlimage_1-94](/help/sites-administering/assets/chlimage_1-94.png)
+   ![type path](/help/sites-administering/assets/chlimage_1-94.png)
 
 1. Click the confirm icon twice then click exit fullscreen.
 1. Click somewhere on the page next to the component. The page should refresh and you should see the following symbol on your image:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
+   ![plus symbol](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. Switch to [preview](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) mode.
 1. Click the + hotspot. A dialog opens where you can choose the size and quantity of the product you entered in **Path**.
 
-   ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
+   ![product example: poncho](/help/sites-administering/assets/chlimage_1-95.png)
 
 1. Enter a size and a quantity.
 1. Click the Add to cart button. The dialog closes.
