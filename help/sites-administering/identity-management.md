@@ -101,7 +101,7 @@ You can view another profile using the [client context](/help/sites-administerin
 1. Press **control-alt-C** to open the client context.
 1. In top left corner of the client context, click the **Load a Profile** button.
 
-   ![](do-not-localize/loadprofile.png)
+   ![Load a Profile button](do-not-localize/loadprofile.png)
 
 1. Select another profile from the drop down list in the dialog window; for example, **Alison Parker**.
 1. Click **OK**.

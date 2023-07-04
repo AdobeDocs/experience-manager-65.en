@@ -50,7 +50,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. Use the **Add User** icon:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Add Useer](do-not-localize/chlimage_1-1.png)
 
 1. The **Create User** form will open:
 
@@ -139,7 +139,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag one or more users.
 1. Use the **Groups** icon:
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Using the Groups icon](do-not-localize/chlimage_1-2.png)
 
    To open the group selection drop down:
 
@@ -157,7 +157,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag one or more users.
 1. Use the **Delete** icon to delete the user details:
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Delete existing user details](do-not-localize/chlimage_1-3.png)
 
 1. You will be asked to confirm the deletion, then a message will confirm that the actual deletion has taken place.
 
@@ -167,7 +167,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. Use the Add Group icon:
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Add a new group](do-not-localize/chlimage_1-4.png)
 
 1. The **Create Group** form will open:
 
@@ -211,7 +211,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag a group.
 1. Use the **Copy** icon to copy the group details:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Copy an existing group](do-not-localize/chlimage_1-5.png)
 
 1. The **Edit Group Settings** form will be opened.
 
@@ -224,6 +224,6 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag one or more groups.
 1. Use the **Delete** icon to delete the group details:
 
-   ![](do-not-localize/chlimage_1-6.png)
+   ![Deleting an existing group](do-not-localize/chlimage_1-6.png)
 
 1. You will be asked to confirm the deletion, then a message will confirm that the actual deletion has taken place.
