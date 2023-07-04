@@ -60,7 +60,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console navigate to the required location.
 1. Use the **Import Products** icon to open the wizard.
 
-   ![chlimage_1-1](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![Import Products icon](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. Specify:
 
@@ -99,7 +99,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Tools** console open the **Commerce** folder.
 1. Double-click to open the **Product Importer**:
 
-   ![chlimage_1-22](/help/sites-administering/assets/chlimage_1-22.jpeg)
+   ![Product Importer Console](/help/sites-administering/assets/chlimage_1-22.jpeg)
 
 1. Specify:
 
@@ -137,7 +137,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
     * **Create Product**
     * **Create Product Variation**
 
-   ![chlimage_1-14](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![Plus-shaped create icon](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. The wizard will open. Use the **Basic** and **Product Tabs** to enter the [product attributes](/help/commerce/cif-classic/administering/concepts.md#product-attributes) for the new product or product variant.
 
@@ -173,7 +173,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
    Select the **View Product Data** icon:
 
-   ![chlimage_1-3](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![view product data icon - information icon](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. The [product attributes](/help/commerce/cif-classic/administering/concepts.md#product-attributes) will be shown. Use **Edit** and **Done** to make any changes.
 
@@ -184,11 +184,11 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 1. Using the **Products** console (via **Commerce**) navigate to your product information.
 1. Open the secondary rail for References with the icon:
 
-   ![chlimage_1-4](/help/sites-administering/do-not-localize/chlimage_1-16.png)
+   ![double arrow icon](/help/sites-administering/do-not-localize/chlimage_1-16.png)
 
 1. Select your required product - the secondary rail will update to show the reference types available:
 
-   ![chlimage_1-88](/help/sites-administering/assets/chlimage_1-88.png)
+   ![products console with references open](/help/sites-administering/assets/chlimage_1-88.png)
 
 1. Click/tap on the reference type (e.g. Product Pages) to expand the list.
 1. Select a specific reference to show the options:
@@ -424,15 +424,15 @@ You can configure how the dialog looks like when you click the hotspot:
 
 1. Click the component and click the configure icon.
 
-   ![chlimage_1-96](/help/sites-administering/assets/chlimage_1-96.png)
+   ![configure icon](/help/sites-administering/assets/chlimage_1-96.png)
 
 1. Scroll down. There is a **ADD TO CART** tab.
 
-   ![chlimage_1-97](/help/sites-administering/assets/chlimage_1-97.png)
+   ![add to cart tab](/help/sites-administering/assets/chlimage_1-97.png)
 
 1. Click **ADD TO CART**. There are 3 configuration options that you can use.
 
-   ![chlimage_1-98](/help/sites-administering/assets/chlimage_1-98.png)
+   ![configuration options](/help/sites-administering/assets/chlimage_1-98.png)
 
 1. Click the Done icon.
 
@@ -456,18 +456,18 @@ To generate a Catalog:
 
 1. From the list select **Create Catalog**, the Create Catalog wizard will open.
 
-   ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
+   ![create catalog wizard(/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigate to the required Catalog Blueprint.
 1. Tap/click **Select** button and tap/click the required Catalog Blueprint.
 1. Tap/click **Next**.
 
-   ![chlimage_1-100](/help/sites-administering/assets/chlimage_1-100.png)
+   ![catalog properties wizard](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Type a **Title** and a **Name**.
 1. Tap/click the **Create** button. The catalog is created and a dialog opens.
 
-   ![chlimage_1-101](/help/sites-administering/assets/chlimage_1-101.png)
+   ![catalog created dialog](/help/sites-administering/assets/chlimage_1-101.png)
 
 1. Tapping/clicking **Done** button brings you back to the Sites console where you'll be able to see you catalog.
 
@@ -543,11 +543,11 @@ To rollout a catalog:
 1. Navigate to the location where you want to import the catalog blueprint.
 1. Tap/click the **Import Blueprints** icon.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![Import blueprints icon](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. In the wizard, select the Source as required and tap/click **Next**.
 
-   ![chlimage_1-340](/help/sites-administering/assets/chlimage_1-102.png)
+   ![blueprint wizard(/help/sites-administering/assets/chlimage_1-102.png)
 
 1. Tap/click **Done** once the import is finished.
 
@@ -656,7 +656,7 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 1. Using the **Orders** console navigate to the required location.
 1. Use the **Create** icon to select **Create Order**.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![Plus-shaped create icon](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. The wizard will open. Use the **Basic**, **Content**, **Payment** and **Fulfillment** tabs to enter the [information about the new order](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
@@ -674,7 +674,7 @@ In the demo site (Geometrixx Outdoors - English) you can see the voucher form on
 
    Select the **View Order Data** icon:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![information icon](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. The [order information](/help/commerce/cif-classic/administering/concepts.md#order-information) will be shown. Use **Edit** and **Done** to make any changes.
 
