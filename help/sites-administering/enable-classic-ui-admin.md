@@ -44,6 +44,6 @@ In this example, we are re-enabling the Classic UI for the Sites console.
 
 1. The **Classic UI** option is again available as a popover option in the admin console.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![classic UI popover option](assets/syui-01-2019-02-27-15-16-55.png)
 
 Repeat these steps for every console for which you wish to re-enable access to the Classic UI version.
