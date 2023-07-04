@@ -336,7 +336,7 @@ Finally, confirm the configuration by:
 1. Search for **Azure Active Directory** in the search bar and click on the result. Alternatively, you can browse directly to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Click on **App Registration** - **New Registration**
 
-   ![](assets/oauth-outlook1.png)
+   ![Microsoft Outlook Configuration](assets/oauth-outlook1.png)
 
 1. Fill in the information according to your requirements, then click on **Register**
 1. Go to the newly created app, and select **API Permissions** 
@@ -391,7 +391,7 @@ Next, integrate your OAuth2 settings with AEM:
 
 Once configured, the settings should look like this:
 
-![](assets/oauth-outlook-smptconfig.png)
+![AEM side configurations view](assets/oauth-outlook-smptconfig.png)
 
 Now, activate the OAuth components. You can do this by:
 
