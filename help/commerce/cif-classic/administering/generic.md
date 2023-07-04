@@ -456,7 +456,7 @@ To generate a Catalog:
 
 1. From the list select **Create Catalog**, the Create Catalog wizard will open.
 
-   ![create catalog wizard(/help/sites-administering/assets/chlimage_1-99.png)
+   ![create catalog wizard](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigate to the required Catalog Blueprint.
 1. Tap/click **Select** button and tap/click the required Catalog Blueprint.
@@ -547,7 +547,7 @@ To rollout a catalog:
 
 1. In the wizard, select the Source as required and tap/click **Next**.
 
-   ![blueprint wizard(/help/sites-administering/assets/chlimage_1-102.png)
+   ![blueprint wizard](/help/sites-administering/assets/chlimage_1-102.png)
 
 1. Tap/click **Done** once the import is finished.
 
