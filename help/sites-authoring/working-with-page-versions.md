@@ -50,7 +50,7 @@ You can create a version of your resource from:
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Select the **Create** option from the toolbar to open the dialog.
-1. In the dialog you can enter a **Label** and a **Comment** if required:
+1. In the dialog, you can enter a **Label** and a **Comment** if required:
 
    ![Enter a label and comment](assets/screen_shot_2012-02-15at105050am.png)
 
@@ -92,10 +92,10 @@ Once you have created a version of your page, there are various methods of reins
 
 To **Revert** the selected page to a previous version:
 
-1. Navigate to show the page you want to revert to a previous version.
+1. Navigate to show the page that you want to revert to a previous version.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page are listed.
-1. Select the version you want to revert to. The possible options are shown:
+1. Select the version that you want to revert to. The possible options are shown:
 
    ![Revert to this Version](assets/screen-shot_2019-03-05at112505.png)
 
@@ -111,18 +111,18 @@ This method can be used to restore versions of specified pages within the curren
 
    >[!NOTE]
    >
-   >If, either:
+   >If either:
    >
-   >* you have selected a single page, that has never had any child pages,
+   >* you have selected a single page that has never had any child pages,
    >* or none of the pages in the folder have versions,
    >
-   >Then the display will be empty as there are no versions applicable.
+   >Then the display is empty as there are no versions applicable.
 
-1. The available versions will be listed:
+1. The available versions are listed:
 
    ![Restore Version - List of all pages in folder](/help/sites-authoring/assets/versions-restore-version-01.png)
 
-1. For a specific page, use the drop down selector under **RESTORE TO VERSION** to select the required version for that page.
+1. For a specific page, use the drop-down selector under **RESTORE TO VERSION** to select the required version for that page.
 
    ![Restore Version - Select Version](/help/sites-authoring/assets/versions-restore-version-02.png)
 
@@ -142,7 +142,7 @@ This method can be used to restore a version of a tree as at a specified date an
 
 1. Navigate to, and [select](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), the required folder.
 
-1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-authoring/basic-handling.md#actions-toolbar). The latest version of the tree will be shown:
+1. Select **Restore**, then **Restore Tree** from the top [actions toolbar](/help/sites-authoring/basic-handling.md#actions-toolbar). The latest version of the tree is shown:
 
    ![Restore Tree](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
@@ -150,9 +150,9 @@ This method can be used to restore a version of a tree as at a specified date an
 
 1. Set the flag **Preserved Non Versioned Pages** as required:
 
-   * If active (selected), then any non-versioned pages will be maintained and not impacted by the restore. 
+   * If active (selected), then any non-versioned pages are maintained and not impacted by the restore. 
 
-   * If inactive (unselected), then any non-versioned pages will be removed as they did not exist in the versioned tree.
+   * If inactive (unselected), then any non-versioned pages are removed as they did not exist in the versioned tree.
 
 1. Select **Restore** for the selected version of the tree to be restored as the *current* version.
 
@@ -160,14 +160,14 @@ This method can be used to restore a version of a tree as at a specified date an
 
 You can preview a specific version:
 
-1. Navigate to show the page you want to compare.
+1. Navigate to show the page that you want to compare.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
-1. The page versions will be listed. Select the version you want to preview:
+1. The page versions are listed. Select the version that you want to preview:
 
    ![Select the version to preview](assets/screen-shot_2019-03-05at112505-1.png)
 
-1. Select **Preview**. The page will be shown in a new tab.
+1. Select **Preview**. The page is shown in a new tab.
 
    >[!CAUTION]
    >
@@ -179,14 +179,14 @@ You can preview a specific version:
 
 To compare a previous version with the current page:
 
-1. Navigate to show the page you want to compare.
+1. Navigate to show the page that you want to compare.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
-1. The page versions will be listed. Select the version you want to compare:
+1. The page versions are listed. Select the version that you want to compare:
 
    ![Page versions listed - select version](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Select **Compare to Current**. The [page diff](/help/sites-authoring/page-diff.md) will open and display the differences.
+1. Select **Compare to Current**. The [page diff](/help/sites-authoring/page-diff.md) opens to display the differences.
 
 ## Timewarp {#timewarp}
 
@@ -196,14 +196,12 @@ Timewarp is a feature designed to simulate the *published* state of a page at sp
 >
 >[Timewarp can also be used with Launches to preview the future](/help/sites-authoring/launches.md) when running AEM 6.5.10.0 or later.
 
-Because content creation is an ongoing and collaborative process, the purpose of Timewarp is to allow authors to track the published website over time in order to understand how the content has changed. This feature uses the page versions to determine the state of the publish environment.
-
-To do this:
+Content creation is an ongoing and collaborative process. The purpose of Timewarp is to allow authors to track the published website over time, to help them understand how the content has changed. This feature uses the page versions to determine the state of the publish environment:
 
 * The system looks for the page version that was active at the selected time.
-* This means the version shown was created/activated *before* the point in time selected in Timewarp.
-* When navigating to a page that has been deleted, it will also be rendered - as long as the old versions of the page are still available in the repository.
-* If no published version is found, then Timewarp will revert to the current state of the page on the author environment (this is to prevent an error/404 page, which would prevent browsing).
+  * This page version was created/activated *before* the point in time selected in Timewarp.
+* When navigating to a page that has been deleted, it is also rendered - as long as the old versions of the page are still available in the repository.
+* If no published version is found, then Timewarp reverts to the current state of the page on the author environment (to prevent an error/404 page, which would prevent browsing).
 
 ### Using Timewarp {#using-timewarp}
 
@@ -213,7 +211,7 @@ Timewarp is a [mode](/help/sites-authoring/author-environment-tools.md#page-mode
 
    ![Select Timewarp in the mode selection](assets/wwpv-01.png)
 
-1. In the dialogue set a target date and time and click or tap **Set Date**. If you do not select a time, the current time will default.
+1. In the dialog, set a target date and time and click or tap **Set Date**. If you do not select a time, the current time is taken as the default.
 
    ![Set Date](assets/wwpv-02.png)
 
@@ -223,16 +221,16 @@ Timewarp is a [mode](/help/sites-authoring/author-environment-tools.md#page-mode
 
 ### Timewarp Limitations {#timewarp-limitations}
 
-Timewarp makes a best effort to reproduce a page at a selected point in time. However because of the complexities of the continuous authoring of content in AEM, this is not always possible. These limitations should be kept in mind as you use Timewarp.
+Timewarp makes a best effort to reproduce a page at a selected point in time. However, because of the complexities of the continuous authoring of content in AEM, this is not always possible. These limitations should be kept in mind as you use Timewarp.
 
-* **Timewarp works based on published pages** - Timewarp will only work fully if you have previously published the page. If not, timewarp will show the current page on the author environment.
-* **Timewarp uses page versions** - If you navigate to a page that has been removed/deleted from the repository it will be rendered properly if old versions of the page are still available in the repository.
+* **Timewarp works based on published pages** - Timewarp only works fully if you have previously published the page. If not, timewarp shows the current page on the author environment.
+* **Timewarp uses page versions** - If you navigate to a page that has been removed/deleted from the repository it is rendered properly if old versions of the page are still available in the repository.
 * **Removed versions affect Timewarp** - If versions are removed from the repository then Timewarp cannot show the correct view.  
 
-* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](#reverting-to-a-page-version).
+* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version, you have to do that manually using [restore](#reverting-to-a-page-version).
 
-* **Timewarp is only based on page content** - If elements (such as code, css, assets/images, etc) for rendering the website have changed, the view will differ from what it originally was, as those items are not versioned in the repository.
+* **Timewarp is only based on page content** - If elements for rendering the website have changed, the view differs from what it originally was, as those items are not versioned in the repository. Such elements include code, css, assets/images, among others.
 
 >[!CAUTION]
 >
->Timewarp is designed as a tool to assit authors with understanding and creating their content. It is not intended as an audit log or for legal purposes.
+>Timewarp is designed as a tool to assist authors with understanding and creating their content. It is not intended as an audit log or for legal purposes.
