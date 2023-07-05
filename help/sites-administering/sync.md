@@ -13,6 +13,7 @@ docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
 ---
+
 # User Synchronization{#user-synchronization}
 
 ## Introduction {#introduction}
@@ -170,7 +171,7 @@ Once an authorized user, a member of the **`administrators`** user group, has be
 
         * for example, `usersync-admin`
 
-![ncrypted Password Transport Secret Provider](assets/chlimage_1-22.png)
+![Encrypted Password Transport Secret Provider](assets/chlimage_1-22.png)
 
 ### 4. Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
