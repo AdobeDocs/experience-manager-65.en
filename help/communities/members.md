@@ -10,6 +10,7 @@ discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 ---
+
 # Members & Groups Management Consoles {#members-groups-management-consoles}
 
 ## Overview {#overview}
@@ -41,7 +42,7 @@ In the author environment, to reach the Members console for managing members reg
 >
 >It will not be possible to use the Members console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
 
-![member-console1](assets/member-console1.png)
+![The member console](assets/member-console1.png)
 
 ### Search {#search-features}
 
@@ -50,7 +51,7 @@ Select the side panel icon on the left side of the `Members` header to toggle op
 ![Search side panel icon.](assets/leftpanel-icon.png) 
 
 
-![member-console2](assets/member-console2.png)
+![Filter options for the member console](assets/member-console2.png)
 
 Select the search icon on the left side of the `Members` header to toggle the search side panel closed.
 
@@ -70,7 +71,7 @@ The column headers are
 
 Select `Create Member` to create a user in the publish environment.
 
-![create-member1](assets/create-member1.png)
+![The Create New Member window](assets/create-member1.png)
 
 ### GENERAL - Member Details {#general-member-details}
 
@@ -147,7 +148,7 @@ The `BADGES` panel provides the ability to manually assign badges as well as rev
 
 See also [Scoring and Badges](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![The Edit Membership Settings window](assets/create-member2.png)
 
 * **[!UICONTROL Add badges]**
   * Begin typing to select from [available badges](badges.md). Once a badge is selected, choose each site, or all sites, on which the badge should be displayed along with the member's avatar.
@@ -170,7 +171,7 @@ To access the Groups console:
 
 Select `Add Group` to create a group in the publish environment.
 
-![group-console1](assets/group-console1.png)
+![The Create New Group window](assets/group-console1.png)
 
 The required fields for creating a new publish-side member group are:
 

@@ -12,6 +12,7 @@ discoiquuid: 54903f3a-1e7e-4083-a2c9-b2ea4555d7fc
 docset: aem65
 exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
 ---
+
 # Editor{#editor}
 
 By default, the ability to switch to the classic UI from the editor has been disabled.

@@ -3,6 +3,7 @@ title: Integration with Adobe Analytics using IMS
 description: Learn about integrating AEM with Adobe Analytics using IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
 ---
+
 # Integration with Adobe Analytics using IMS {#integration-with-adobe-analytics-using-ims}
 
 The integration of AEM with Adobe Analytics via the Analytics Standard API requires the configuration of Adobe IMS (Identity Management System) using the Adobe Developer Console.
@@ -45,7 +46,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 1. Activate **Create new certificate** and enter a new alias.
 1. Confirm with **Create certificate**.
 
-   ![](assets/integrate-analytics-io-01.png)
+   ![Adobe IMS Technical Account Configuration wizard](assets/integrate-analytics-io-01.png)
 
 1. Select **Download** (or **Download Public Key**) to download the file to your local drive, so that it is ready for use when [configuring IMS for Adobe Analytics integration with AEM](#configuring-ims-for-adobe-analytics-integration-with-aem).
 
@@ -53,7 +54,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
    >
    >Keep this configuration open, it will be needed again when [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-analytics-io-02.png)
+   ![Info dialog to add the key to Adobe I/O](assets/integrate-analytics-io-02.png)
 
 ## Configuring IMS for Adobe Analytics integration with AEM {#configuring-ims-for-adobe-analytics-integration-with-aem}
 

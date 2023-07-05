@@ -7,6 +7,7 @@ topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 ---
+
 # Configuring Search Forms{#configuring-search-forms}
 
 Use **Search Forms** to customize the selection of search predicates used in the search panels available in various AEM consoles and/or panels of the author environment. Customizing these panels makes the search functionality versatile according your specific needs.
@@ -23,7 +24,7 @@ You can [configure the search forms](#configuring-your-search-forms) used within
 
 When you first access this console you can see that all the configurations have a padlock symbol. This indicates that the appropriate configuration is the default (out-of-the-box) configuration - and cannot be deleted. Once you have customized the configuration the lock will disappear - unless you [delete your customized configuration](#deleting-a-configuration-to-reinstate-the-default), in which case the default (and the padlock indicator) will be reinstated.
 
-![Search Forms console](assets/chlimage_1-374.png)
+![Search forms window](assets/chlimage_1-374.png)
 
 ## Configurations {#configurations}
 
@@ -411,7 +412,7 @@ You can add or edit fields and define/update their settings:
 1. [Open the customized configuration](#creating-opening-a-customized-configuration) for updating.
 1. If you want to add a new field, open the **Select Predicate** tab and drag the required predicate to the required location. For example, the **Date Range Predicate**:
 
-   ![Select Date Range Predicate](assets/chlimage_1-375.png)
+   ![Editing a search form](assets/chlimage_1-375.png)
 
 1. Depending on whether:
 
@@ -437,7 +438,7 @@ You can add or edit fields and define/update their settings:
 
 1. This will display the search forms as they will be shown (fully expanded) in the Search column of the appropriate console.
 
-   ![Preview Search Form](assets/chlimage_1-377.png)
+   ![Previewing the search form](assets/chlimage_1-377.png)
 
 1. **Close** the preview to return and finish the configuration.
 
@@ -464,7 +465,7 @@ Deleting a customized configuration is done from the console:
 
 1. Select the required configuration (for example, **Page Editor (Paragraphs search)**) and then the **Delete** icon in the toolbar:
 
-   ![Select Configuration to delete](assets/chlimage_1-378.png)
+   ![Deleting a form](assets/chlimage_1-378.png)
 
 1. The customized configuration will be deleted and the default reinstated (this is indicated by the reappearance of the padlock symbol in the console).
 
@@ -483,7 +484,7 @@ The following example (to search according to the template used to create a page
     * `jcr:title` - the field label to be shown in the search rail
     * `value` - the property value to be searched on
 
-   ![Create node defining property to be searched on](assets/chlimage_1-379.png)
+   ![Adding options in CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -516,12 +517,12 @@ The following example (to search according to the template used to create a page
 
       `/apps/cq/gui/content/common/options/predicates/templatetype`
 
-   ![Edit Search Form](assets/chlimage_1-380.png)
+   ![Adding property path](assets/chlimage_1-380.png)
 
 1. Select **Done** to save your configuration.
 1. Navigate to the appropriate console (in this example, **Sites**) and open the **Search** rail. The newly defined search forms, together with the various options will be visible. Select the required option to see the search results:
 
-   ![Open Search rail](assets/chlimage_1-381.png)
+   ![The final results](assets/chlimage_1-381.png)
 
 ## User Permissions {#user-permissions}
 

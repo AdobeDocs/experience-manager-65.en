@@ -10,6 +10,7 @@ discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 ---
+
 # Best Practices for Email Templates {#best-practices-for-email-templates}
 
 >[!CAUTION]
@@ -135,7 +136,7 @@ To offer a solid base and to broaden the variety of content flow possibilities, 
 
 All have a **header**, a **footer**, and a **body** section. Below the body section, each template differs in **column design** (one, two, or three columns).
 
-![](assets/chlimage_1-69.png)
+![Variants of possible newsletters](assets/chlimage_1-69.png)
 
 ### Components {#components}
 

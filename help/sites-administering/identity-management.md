@@ -12,6 +12,7 @@ discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 ---
+
 # Identity Management{#identity-management}
 
 Individual visitors to your website can only be identified when you provide the ability for them to log in. There are various reasons why you may want to provide a login capability:
@@ -55,11 +56,11 @@ A [form](/help/sites-authoring/default-components.md#form-component) can be used
 For example, users can request a new profile, using the Geometrixx page
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![registerform](assets/registerform.png)
+![Sample registration form](assets/registerform.png)
 
 Upon submitting the request, the profile page opens where the user can provide personal details.
 
-![profilepage](assets/profilepage.png)
+![Sample profile page](assets/profilepage.png)
 
 The new account is also visible in the [Users console](/help/sites-administering/security.md).
 
@@ -73,7 +74,7 @@ For example, users can either log in, or create a new account, using the **Sign 
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![login](assets/login.png)
+![Sample log in page](assets/login.png)
 
 ## Logging Out {#logging-out}
 
@@ -101,13 +102,13 @@ You can view another profile using the [client context](/help/sites-administerin
 1. Press **control-alt-C** to open the client context.
 1. In top left corner of the client context, click the **Load a Profile** button.
 
-   ![Load a Profile button](do-not-localize/loadprofile.png)
+   ![Load a Profile icon](do-not-localize/loadprofile.png)
 
 1. Select another profile from the drop down list in the dialog window; for example, **Alison Parker**.
 1. Click **OK**.
 1. Click again on **My Profile**. The form will be updated with Alison's details.
 
-   ![profilealison](assets/profilealison.png)
+   ![Sample profile of Alison](assets/profilealison.png)
 
 1. You can now use **Edit Profile** or **Change Password** to update the details.
 
@@ -131,11 +132,11 @@ You can add fields to the profile definition. For example to add a "Favorite Col
 
    Next time you view a profile you can select a favorite color:
 
-   ![aparkerfavcolour](assets/aparkerfavcolour.png)
+   ![Alison Parker's favorite color sample field](assets/aparkerfavcolour.png)
 
    The field will be saved under the **profile** section of the relevant user account:
 
-   ![aparkercrxdelite](assets/aparkercrxdelite.png)
+   ![Alison Parker's data in CRXDE](assets/aparkercrxdelite.png)
 
 ## Profile States {#profile-states}
 
@@ -183,7 +184,7 @@ Profiles are stored in the Content Repository as part of the[user account](/help
 
 The profile can be found under `/home/users/geometrixx`:
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![Profiles as seen in CRXDE](assets/chlimage_1-138.png)
 
 On a standard installation (author or publish) everyone has read access to the entire profile information of all users. everyone is a "*Built-in group automatically containing all existing users and groups. The list of members cannot be edited*".
 
@@ -200,7 +201,7 @@ If such access is not appropriate for your installation you can change these def
 
 This can be done using the **[Access Control](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
 
-![aclmanager](assets/aclmanager.png)
+![Managing ACLs in CRXDE](assets/aclmanager.png)
 
 ## Profile Components {#profile-components}
 
@@ -215,22 +216,22 @@ This component gives you two fields for:
 
 With default settings the component will appear as follows:
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![Check password dialog](assets/dc_profiles_checkedpassword.png)
 
 ### Profile Avatar Photo {#profile-avatar-photo}
 
 This component provides the user with a mechanism for selecting and uploading an Avatar Photo file.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![Avatar selector](assets/dc_profiles_avatarphoto.png)
 
 ### Profile Detailed Name {#profile-detailed-name}
 
 This component allows the user to input a detailed name.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![Detailed name dialog](assets/dc_profiles_detailedname.png)
 
 ### Profile Gender {#profile-gender}
 
 This component allows the user to input their gender.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![Gender selector](assets/dc_profiles_gender.png)
