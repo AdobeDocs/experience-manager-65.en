@@ -15,8 +15,10 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 Versioning creates a "snapshot" of a page at a specific point in time. With versioning, you can perform the following actions:
 
 * Create a version of a page.
-* Restore a page to a previous version in order to undo a change that you made to a page, for example.
-* Compare the current version of a page with a previous version with differences in the text and images highlighted.
+* Restore a page to a previous version; for example:
+  * to undo a change that you made to the page.
+* Compare the current version of a page with a previous version:
+  * to highlight differences in the text and images.
 
 ## Creating a New Version {#creating-a-new-version}
 
@@ -32,7 +34,7 @@ You can create a version of your resource from:
 1. Open the **Timeline** column.
 1. Click/tap on the arrowhead by the comment field to reveal the options:
 
-   ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
+   ![Timeline - Save as Version](assets/screen-shot_2019-03-05at112335.png)
 
 1. Select **Save as Version**.
 1. Enter a **Label** and **Comment** if required.
@@ -41,20 +43,20 @@ You can create a version of your resource from:
 
 1. Confirm the new version with **Create**.
 
-   The information in the timeline will be updated to indicate the new version.
+   The information in the timeline is updated to indicate the new version.
 
 ### Creating a New Version - Create with a Selected Resource {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Select the **Create** option from the toolbar.
-1. The dialog will open. You can enter a **Label** and a **Comment** if required:
+1. Select the **Create** option from the toolbar to open the dialog.
+1. In the dialog you can enter a **Label** and a **Comment** if required:
 
-   ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
+   ![Enter a label and comment](assets/screen_shot_2012-02-15at105050am.png)
 
 1. Confirm the new version with **Create**.
 
-   The timeline will be opened with the information updated to indicate the new version.
+   The timeline is opened with the information updated to indicate the new version.
 
 ## Reinstating Versions {#reinstating-versions}
 
@@ -82,9 +84,9 @@ Once you have created a version of your page, there are various methods of reins
 >
 >1. Create versions of any page.
 >1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
->1. Reinstate the first version; i.e. 1.0.
->1. Create new versions again.
->1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, etc.
+>1. Reinstate the first version; in this case, 1.0.
+>1. Create versions again.
+>1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, and so on.
 
 ### Revert to a Version {#revert-to-a-version}
 
@@ -92,12 +94,12 @@ To **Revert** the selected page to a previous version:
 
 1. Navigate to show the page you want to revert to a previous version.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page will be listed.
-1. Select the version you want to revert to. The possible options will be shown:
+1. Open the **Timeline** column and select either **Show All** or **Versions**. The page versions for the selected page are listed.
+1. Select the version you want to revert to. The possible options are shown:
 
    ![Revert to this Version](assets/screen-shot_2019-03-05at112505.png)
 
-1. Select **Revert to this Version**. The selected version will be restored and the information in timeline will be updated.
+1. Select **Revert to this Version**. The selected version is restored and the information in timeline updated.
 
 ### Restore Version {#restore-version}
 
@@ -163,7 +165,7 @@ You can preview a specific version:
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to preview:
 
-   ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
+   ![Select the version to preview](assets/screen-shot_2019-03-05at112505-1.png)
 
 1. Select **Preview**. The page will be shown in a new tab.
 
@@ -182,7 +184,7 @@ To compare a previous version with the current page:
 1. Open the **Timeline** column and select either **Show All** or **Versions**.
 1. The page versions will be listed. Select the version you want to compare:
 
-   ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
+   ![Page versions listed - select version](assets/screen-shot_2019-03-05at112505-2.png)
 
 1. Select **Compare to Current**. The [page diff](/help/sites-authoring/page-diff.md) will open and display the differences.
 
@@ -209,15 +211,15 @@ Timewarp is a [mode](/help/sites-authoring/author-environment-tools.md#page-mode
 
 1. Start the editor for the page where you wish to start Timewarp and then select **Timewarp** in the mode selection.
 
-   ![wwpv-01](assets/wwpv-01.png)
+   ![Select Timewarp in the mode selection](assets/wwpv-01.png)
 
 1. In the dialogue set a target date and time and click or tap **Set Date**. If you do not select a time, the current time will default.
 
-   ![wwpv-02](assets/wwpv-02.png)
+   ![Set Date](assets/wwpv-02.png)
 
 1. The page is displayed based on the date set. Timewarp mode is indicated via the blue status bar at the top of the window. Use the links in the status bar to select a new target date or exit Timewarp mode.
 
-   ![wwpv-03](assets/wwpv-03.png)
+   ![Timewarp indicator](assets/wwpv-03.png)
 
 ### Timewarp Limitations {#timewarp-limitations}
 
