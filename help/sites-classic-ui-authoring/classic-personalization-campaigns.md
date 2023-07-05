@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
 ---
+
 # Campaign Management{#campaign-management}
 
 Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors.
@@ -54,7 +55,7 @@ Campaign management is made up of various elements:
 
     * **Adobe Target**
 
-      This allows integration with Adobe Target (formerly Test&Target) which gives marketers a conversion website optimization tool with the necessary capabilities to continually make their online content and offers more relevant to their customers—yielding greater conversion. Adobe Target provides an intuitive interface for designing and executing tests, creating audience segments and targeting content—all from a single application.
+      This allows integration with Adobe Target (formerly Test&Target) which gives marketers a conversion website optimization tool with the necessary capabilities to continually make their online content and offers more relevant to their customers-yielding greater conversion. Adobe Target provides an intuitive interface for designing and executing tests, creating audience segments and targeting content all from a single application.
 
 * **Touchpoints**
 
