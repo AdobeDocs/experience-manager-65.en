@@ -12,6 +12,7 @@ discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 ---
+
 # Classic UI Tagging Console{#classic-ui-tagging-console}
 
 This section is for the Classic UI Tagging Console.
@@ -25,7 +26,7 @@ To access the Classic UI Tagging console :
 * browse to the console
   for example, [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-![](assets/managing_tags_usingthetagasministrationconsole.png)
+![Classic console window](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Creating Tags and Namespaces {#creating-tags-and-namespaces}
 
@@ -33,11 +34,11 @@ To access the Classic UI Tagging console :
 
    If you select **Tags** you can create a namespace:
 
-   ![](assets/creating_tags_andnamespaces.png)
+   ![Creating a name space dialog](assets/creating_tags_andnamespaces.png)
 
    If you select a namespace (for example **Demo**) you can create a tag within that namespace:
 
-   ![](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![Creating a tag dialog](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. In both cases enter
 
@@ -82,7 +83,7 @@ To access the Classic UI Tagging console :
 
 **List** opens a new window showing the paths of all pages using the highlighted tag:
 
-![](assets/list_showing_wheretagsarereferenced.png)
+![Finding where tags are referenced](assets/list_showing_wheretagsarereferenced.png)
 
 ## Moving Tags {#moving-tags}
 
@@ -99,7 +100,7 @@ To help tags administrators and developers clean up the taxonomy or rename a tag
 
 The **Move Tag** dialog looks as follows:
 
-![](assets/move_tag.png)
+![Moving a tag](assets/move_tag.png)
 
 >[!NOTE]
 >
@@ -121,7 +122,7 @@ To merge a tag into another one:
 
 The **Merge Tag** dialog looks as follows:
 
-![](assets/mergetag.png)
+![Merging a tag](assets/mergetag.png)
 
 ## Counting Usage of Tags {#counting-usage-of-tags}
 
@@ -150,7 +151,7 @@ The following procedure shows how to translate the `title`of the tag **Animals**
 
 The dialog looks as follows:
 
-![](assets/edit_tag.png)
+![Editing a tag](assets/edit_tag.png)
 
 The Tagging console uses the user language setting, so for the Animal tag, 'Animaux' is displayed for a user who sets the language to French in user properties.
 
@@ -167,7 +168,7 @@ By default the tag `titles`in the page properties are displayed in the page lang
 
    Select the **Animals** (**Animaux**) tag and select outside the dialog to close it and add the tag to the page properties.
 
-   ![](assets/french_tag.png)
+   ![Editing another tag](assets/french_tag.png)
 
 By default, the Page Properties dialog displays the tag `titles`according to the page language.
 
