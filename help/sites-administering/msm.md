@@ -298,7 +298,7 @@ The basic form of live copy has:
 
 * Changes can be [synchronized](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) according to requirements.
 
-![chlimage_1-367](assets/chlimage_1-367.png)
+![Synchronize](assets/chlimage_1-367.png)
 
 #### Live Copy with non-Live-Copy pages {#live-copy-with-non-live-copy-pages}
 
@@ -307,7 +307,7 @@ When you create a live copy in AEM you can see and navigate through the live cop
 * Such resources have no live relationship to the source/blueprint pages and are not synchronized.
 * Scenarios can occur that MSM handles as special cases. For example, when you (or a process) create a page with the same position and name in both the source/blueprint and live copy branches. For such situations see [MSM Rollout Conflicts](/help/sites-administering/msm-rollout-conflicts.md) for more information.
 
-![chlimage_1-368](assets/chlimage_1-368.png)
+![Rollout Conflicts](assets/chlimage_1-368.png)
 
 #### Nested Live Copies {#nested-live-copies}
 
@@ -318,7 +318,7 @@ When you (or a process) create a [new page within an existing live copy](#live-c
 
   For example, links from the second to the first blueprint will be rewritten as links from the nested/second live copy to the first live copy.
 
-![chlimage_1-369](assets/chlimage_1-369.png)
+![Links between sources](assets/chlimage_1-369.png)
 
 >[!NOTE]
 >
@@ -361,13 +361,13 @@ A rollout is the central MSM action that synchronizes live copies with their sou
 
   **The Rollout** command is available on a blueprint page that is referenced by a blueprint configuration.
 
-  ![chlimage_1-370](assets/chlimage_1-370.png)
+  ![Rollout](assets/chlimage_1-370.png)
 
 * When authoring a live copy page you can use the [Synchronize](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) command to pull changes from the source to the live copy.
 
   The **Synchronize** command is always available on the live copy page (regardless of whether the source/blueprint page is encompassed by a blueprint configuration).
 
-  ![chlimage_1-371](assets/chlimage_1-371.png)
+  ![Synchronize](assets/chlimage_1-371.png)
 
 ### Rollout Configurations {#rollout-configurations}
 
