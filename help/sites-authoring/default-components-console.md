@@ -55,11 +55,11 @@ To view details about a specific component tap/click on the required resource. T
 
 * **Policies**
 
-  ![chlimage_1-169](assets/chlimage_1-169.png)
+  ![Policies](assets/chlimage_1-169.png)
 
 * **Live Usage**
 
-  ![chlimage_1-170](assets/chlimage_1-170.png)
+  ![Live Usage](assets/chlimage_1-170.png)
 
   >[!CAUTION]
   >
@@ -69,4 +69,4 @@ To view details about a specific component tap/click on the required resource. T
 
   If the developer has provided [documentation for the component](/help/sites-developing/developing-components.md#documenting-your-component), it will appear on the **Documentation** tab. If there is no documentation available, the **Documentation** tab will not be shown.
 
-  ![chlimage_1-171](assets/chlimage_1-171.png)
+  ![Documentation](assets/chlimage_1-171.png)

@@ -143,7 +143,7 @@ To either enable or disable a component:
 
    Use the **Add** button to add additional entries to a multiple-entry dialogue list.
 
-   ![chlimage_1-94](assets/chlimage_1-94.png)
+   ![Add additional entry](assets/chlimage_1-94.png)
 
    Use the **Delete** icon to remove an entry from a multiple-entry dialogue list.
 

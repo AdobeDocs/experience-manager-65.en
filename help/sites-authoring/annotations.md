@@ -114,4 +114,4 @@ The Annotate mode allows you to create, edit, move or delete annotations on your
 
 Annotations do not appear in Edit mode, but the badge at the top right of the toolbar shows how many annotations exist for the current page. The badge replaces the default Annotations icon, but still functions as a quick link that toggles to/from the Annotate mode:
 
-![chlimage_1-242](assets/chlimage_1-242.png)
+![Annotations Indicator](assets/chlimage_1-242.png)
