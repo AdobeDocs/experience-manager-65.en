@@ -12,6 +12,7 @@ discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 ---
+
 # Principal View for Permissions Management{#principal-view-for-permissions-management}
 
 ## Overview {#overview}
