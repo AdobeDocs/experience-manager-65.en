@@ -3,6 +3,7 @@ title: Integration with Adobe Target using IMS
 description: Learn about integrating AEM with Adobe Target using IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 ---
+
 # Integration with Adobe Target using IMS{#integration-with-adobe-target-using-ims}
 
 The integration of AEM with Adobe Target via the Target Standard API requires the configuration of Adobe IMS (Identity Management System) using the Adobe Developer Console.
@@ -44,7 +45,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 1. Activate **Create new certificate** and enter a new alias.
 1. Confirm with **Create certificate**.
 
-   ![](assets/integrate-target-io-01.png)
+   ![Adobe IMS Technical Account Configuration wizard](assets/integrate-target-io-01.png)
 
 1. Select **Download** (or **Download Public Key**) to download the file to your local drive, so that it is ready for use when [configuring IMS for Adobe Target integration with AEM](#configuring-ims-for-adobe-target-integration-with-aem).
 
@@ -52,7 +53,7 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
    >
    >Keep this configuration open, it will be needed again when [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-io-02.png)
+   ![Information message to add certificate on Adobe I/O](assets/integrate-target-io-02.png)
 
 ## Configuring IMS for Adobe Target integration with AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
@@ -76,7 +77,7 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
 
 1. Select **Add to Project** followed by **API**:
 
-   ![](assets/integration-target-io-10.png)
+   ![Adobe Developer Console](assets/integration-target-io-10.png)
 
 1. Select **Adobe Target**, then **Next**:
 
@@ -84,15 +85,15 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
    >
    >If you are subscribed to Adobe Target, but do not see it listed then you should check the [Prerequistes](#prerequisites).
 
-   ![](assets/integration-target-io-12.png)
+   ![Clicking next](assets/integration-target-io-12.png)
 
 1. **Upload your public key**, and when complete, continue with **Next**:
 
-   ![](assets/integration-target-io-13.png)
+   ![Adding integrations using Developer Console](assets/integration-target-io-13.png)
 
 1. Review the credentials, and continue with **Next**:
 
-   ![](assets/integration-target-io-15.png)
+   ![Creating a new project](assets/integration-target-io-15.png)
 
 1. Select the required product profiles, and continue with **Save configured API**:
 
@@ -103,7 +104,7 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
    >* Adobe Target Standard - only **Default Workspace** is available
    >* Adobe Target Premium - all available workspaces are listed, as shown below
 
-   ![](assets/integration-target-io-16.png)
+   ![Selecting an API to add](assets/integration-target-io-16.png)
 
 1. The creation will be confirmed.
 
@@ -166,7 +167,7 @@ Returning to AEM you can complete the IMS configuration by adding required value
 
 1. Your Adobe Target configuration will be shown in the AEM console.
 
-   ![](assets/integrate-target-io-11.png)
+   ![Adobe IMS Technical Account Configuration](assets/integrate-target-io-11.png)
 
 ## Confirming the IMS Configuration {#confirming-the-ims-configuration}
 
@@ -183,11 +184,11 @@ To confirm that the configuration is operating as expected:
 1. Select your configuration.
 1. Select **Check Health** from the toolbar, followed by **Check**.
 
-   ![](assets/integrate-target-io-12.png)
+   ![Adobe IMS Configurations](assets/integrate-target-io-12.png)
 
 1. If successful, you will see the message:
 
-   ![](assets/integrate-target-io-13.png)
+   ![Checking a configuration](assets/integrate-target-io-13.png)
 
 ## Configuring the Adobe Target Cloud Service {#configuring-the-adobe-target-cloud-service}
 
