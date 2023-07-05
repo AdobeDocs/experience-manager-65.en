@@ -426,7 +426,7 @@ You can add or edit fields and define/update their settings:
 
    For example, the settings for the **Date Range Predicate**:
 
-   ![Editing the properties of a search form](assets/chlimage_1-376.png)
+   ![Properties for Date Range Predicate](assets/chlimage_1-376.png)
 
 1. Make your changes as required and confirm with **Done**.
 

@@ -28,7 +28,7 @@ The author environment provides the mechanisms for creating, updating and review
 * An author creates and reviews the content (this can be of several types; for example, pages, assets, publications, etc)
 * which will, at some point, be published to your website.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![Overview of Environments](assets/chlimage_1-132.png)
 
 On the author environment the functionality of AEM is made available through two UIs. For the publish environment you design the entire look-and-feel of the interface made available to your users.
 

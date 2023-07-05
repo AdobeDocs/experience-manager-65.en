@@ -47,7 +47,7 @@ Launches allow you to:
 
         * The source pages can be taken from multiple (separate) branches.
 
-  ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![Overview of launch actions](assets/chlimage_1-111.png)
 
 * Edit the launch configuration:
 
@@ -75,14 +75,14 @@ Launches allow you to:
     * Changes to the source pages are automatically implemented in the launch copy (if set up as with inheritance; i.e. as a live copy).  
     * Changes to your launch copy can be made without disrupting these automatic updates or the source pages.
 
-  ![chlimage_1-112](assets/chlimage_1-112.png)
+  ![Overview of updates](assets/chlimage_1-112.png)
 
 * [Create a nested launch](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - a launch within a launch:
 
     * The source is an existing launch.
     * You can [promote a nested launch](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) to any target; this can be a parent launch or the top-level source pages (Production).
 
-  ![chlimage_1-113](assets/chlimage_1-113.png)
+  ![Overview of nested launch](assets/chlimage_1-113.png)
 
   >[!CAUTION]
   >
@@ -115,8 +115,8 @@ The Launches console provides an overview of your launches and allows you to tak
 1. Open the **References** rail and select the source page.
 1. Select **Launches**, the existing launch(es) will be listed:
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Reference tab - Launches](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Tap/click on the appropriate launch, the list of possible actions will be displayed:
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Select launch to show possible actions](assets/screen-shot_2019-03-05at121952-1.png)
