@@ -39,7 +39,7 @@ You can efficiently create content for multinational and multilingual sites thro
 
 The following diagram illustrates how the main concepts intersect (but does not show all levels/elements involved):
 
-![chlimage_1-71](assets/chlimage_1-71a.png)
+![Diagram showing main concepts of MSM and Translation](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
