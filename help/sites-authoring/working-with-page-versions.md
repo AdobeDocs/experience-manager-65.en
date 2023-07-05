@@ -37,7 +37,7 @@ You can create a version of your resource from:
 1. Select **Save as Version**.
 1. Enter a **Label** and **Comment** if required.
 
-   ![chlimage_1-42](assets/chlimage_1-42.png)
+   ![Create Version - add label and comment](assets/chlimage_1-42.png)
 
 1. Confirm the new version with **Create**.
 
