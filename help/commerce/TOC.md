@@ -2,6 +2,7 @@
 sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Commerce Guide
+feature: Commerce Integration Framework
 user-guide-description: Understand how to use and administer AEM Content and Commerce.
 ---
 
