@@ -69,7 +69,7 @@ Privileges can be added by searching using the text field and then selecting fro
 >
 >For a complete list of privileges and descriptions, please see [this page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Search permission for a given path](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Search permission for a given path.](assets/image2019-3-21_0-5-47.png) ![Add New Entry for 'dam-users' as shown by a path selected in vertical columns.](assets/image2019-3-21_0-6-53.png)
 
 After the list of privileges has been selected, the user can choose the Permission Type : Deny or Allow, as shown below.
 
