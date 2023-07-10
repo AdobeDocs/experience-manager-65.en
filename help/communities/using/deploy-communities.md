@@ -118,7 +118,7 @@ Further information on installing bundles is found on the [Web Console](/help/si
 
 #### Example : Installed MySQL Connector Bundle {#example-installed-mysql-connector-bundle}
 
-![](../assets/mysql-connector.png)
+![Adobe Experience Manager Web Console MySQL Connector Bundle](../assets/mysql-connector.png)
 
 ### AEM Advanced MLS {#aem-advanced-mls}
 
@@ -180,7 +180,7 @@ By default, the `AEM Communities Publisher Configuration` OSGi configuration is 
 
 Therefore, it is necessary to **edit the configuration on all secondary publish instances** to uncheck the **`Primary Publisher`** check box.
 
-![](../assets/primary-publisher.png)
+![AEM Communities Publisher Configuration dialog box showing the Primary Publisher check box](../assets/primary-publisher.png)
 
 For all other (secondary) publish instances in a publish farm :
 
@@ -228,7 +228,7 @@ The following images show the results of changing the port from 4503 to 6103 by 
 
 #### Reverse Replication Agent (publish reverse) {#reverse-replication-agent-publish-reverse}
 
-![](../assets/reverse-replication-agent.png)
+![Reverse Replication Agent (publish revers) showing that it is turned on or enabled.](../assets/reverse-replication-agent.png)
 
 ### Tunnel Service on Author {#tunnel-service-on-author}
 
@@ -251,7 +251,7 @@ To enable the tunnel service :
 * Select the **enable** check box
 * select **Save**
 
-![](../assets/tunnel-service.png)
+![AEM Communities Publish Tunnel Service showing the "enable" check box, selected or checked.](../assets/tunnel-service.png)
 
 ### Replicate the Crypto Key {#replicate-the-crypto-key}
 
@@ -312,7 +312,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle)
 
-![](../assets/replicare-repository.png)
+![CRXDE Lite showing the path /etc/key on the left panel and the Replication tab selected in the lower-right panel.](../assets/replicare-repository.png)
 
 #### Refresh the Granite Crypto Bundle {#refresh-the-granite-crypto-bundle}
 
@@ -323,7 +323,7 @@ Using [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Locate `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Select **Refresh**
 
-![](../assets/refresh-granite-bundle.png)
+![Refreshing the Adobe Granite Crypto Support bundle.](../assets/refresh-granite-bundle.png)
 
 * After a moment, a **Success** dialog should appear:
   `Operation completed successfully.`

@@ -173,7 +173,7 @@ The header is always present at the top of the screen. While most options in the
 
 * [Rail selector](/help/sites-authoring/basic-handling.md#rail-selector)
 
-  ![](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![Rail selector list shown on left side of the Adobe Experience Manager screen.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
   The options presented depend on your current console. For example, in **Sites** you can select content only (the default), the timeline, references or filter side panel.
 

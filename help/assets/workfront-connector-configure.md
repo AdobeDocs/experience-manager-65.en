@@ -10,7 +10,7 @@ hide: yes
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-configure.html?lang=en)                  |
+| AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en)                  |
 | AEM 6.5     | This article         |
 
 A user with administrator access in [!DNL Adobe Experience Manager] configures the enhanced connector after installing it. For instructions to install, see [Install the connector](/help/assets/workfront-integrations.md).

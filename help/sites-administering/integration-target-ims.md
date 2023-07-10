@@ -111,7 +111,7 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
 <!--
 1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-io-07.png)
+   ![integrate-target-io-07](assets/integrate-target-io-07.png)
 -->
 
 ### Assigning privileges to the Integration {#assigning-privileges-to-the-integration}
