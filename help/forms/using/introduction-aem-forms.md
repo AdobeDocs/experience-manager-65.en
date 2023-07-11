@@ -26,7 +26,7 @@ In large enterprises, forms are often created once and reused by copying to a co
 
 AEM Forms provides forms management tools that not only lets you manage adaptive form, but XFA forms, PDF forms, and related assets as well. For more information, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).
 
-![](do-not-localize/4th-draft.gif)
+![AEM forms capabilities](do-not-localize/4th-draft.gif)
 
 ### Key capabilities {#key-capabilities}
 

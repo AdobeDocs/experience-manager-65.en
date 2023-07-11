@@ -14,7 +14,7 @@ exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 
 Learn to create a custom theme, style individual components, and use web fonts in a theme 
 
- ![](do-not-localize/08-style_your_adaptiveformmain.png) 
+ ![hero-image](do-not-localize/08-style_your_adaptiveformmain.png)
 
 This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
