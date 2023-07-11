@@ -1,14 +1,10 @@
 ---
 title: Clientlibs for Communities Components
-seo-title: Clientlibs for Communities Components
 description: Client-side libraries for Communities
-seo-description: Client-side libraries for Communities
-uuid: d2a9f986-96cf-4ee8-81e6-36a96f45ddcb
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
 ---
@@ -20,7 +16,7 @@ This section of the documentation describes how to add client-side libraries (cl
 
 For basic information, visit :
 
-* [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) which provides usage details as well as debugging tools
+* [Using Client-Side Libraries](/help/sites-developing/clientlibs.md) which provides usage details and debugging tools
 * [Clientlibs for SCF](/help/communities/client-customize.md#clientlibs) which provides useful information when customizing SCF components
 
 
@@ -28,9 +24,9 @@ For basic information, visit :
 
 Clientlibs are required for the proper functioning (JavaScript) and styling (CSS) of a component.
 
-When there exists a [community function](/help/communities/functions.md) for a feature, all necessary components and configurations, including the required clientlibs, will be present in the community site. Only if additional components are to be available to authors would additonal clientlibs need to be added.
+When there exists a [community function](/help/communities/functions.md) for a feature, all necessary components and configurations, including the required clientlibs, are present in the community site. Only if additional components are to be available to authors would additional clientlibs need to be added.
 
-When the required clientlibs are missing, [adding a Communities component to a page](/help/communities/author-communities.md) could result in javascript errors as well as an unexpected appearance.
+When the required clientlibs are missing, [adding a Communities component to a page](/help/communities/author-communities.md) could result in JavaScript errors and an unexpected appearance.
 
 ### Example : Placed Reviews without Clientlibs {#example-placed-reviews-without-clientlibs}
 
@@ -46,7 +42,7 @@ The essential feature information for developers identifies the required clientl
 
 In addition, from an AEM instance, browsing to the [Community Components Guide](/help/communities/components-guide.md) provides access to a listing of clientlib categories required for a component.
 
-For example, at the very top of the [Reviews page](https://localhost:4502/content/community-components/en/reviews.html) the required clientlibs listed are
+For example, at the top of the [Reviews page](https://localhost:4502/content/community-components/en/reviews.html) the required clientlibs listed are
 
 * cq.ckeditor
 * cq.social.hbs.reviews
@@ -55,7 +51,7 @@ For example, at the very top of the [Reviews page](https://localhost:4502/conten
 
 ## Adding Required Clientlibs {#adding-required-clientlibs}
 
-When it is desired to add a Communities component to a page, it will be necessary to add the required clientlibs for the component if not already present.
+When it is desired to add a Communities component to a page, it is necessary to add the required clientlibs for the component if not already present.
 
 Use [CRXDE|Lite](#using-crxde-lite) to modify an existing clientlibslist for a community site page.
 
@@ -82,7 +78,7 @@ To add a clientlib for a community site using [CRXDE Lite](/help/sites-developin
 
 >[!NOTE]
 >
->If the site is not a community site, the existance or location of the client libraries in use for the site would need to be discovered.
+>If the site is not a community site, the existence or location of the client libraries in use for the site must be discovered.
 
 Using the [Getting Started with AEM Communities](/help/communities/getting-started.md) example, where `site-name` is *engage*, this is how the clientliblist would appear if adding the reviews component:
 

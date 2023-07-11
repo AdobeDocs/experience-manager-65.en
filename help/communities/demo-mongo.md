@@ -1,9 +1,6 @@
 ---
-title: How to Setup MongoDB for Demo
-seo-title: How to Setup MongoDB for Demo
-description: How to setup MSRP for one author instance and one publish instance
-seo-description: How to setup MSRP for one author instance and one publish instance
-uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
+title: How to set up MongoDB for Demo
+description: How to set up MSRP for one author instance and one publish instance
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -12,13 +9,13 @@ discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 ---
-# How to Setup MongoDB for Demo {#how-to-setup-mongodb-for-demo}
+# How to set up MongoDB for Demo {#how-to-setup-mongodb-for-demo}
 
 ## Introduction {#introduction}
 
-This tutorial describes how to setup [MSRP](msrp.md) for *one author* instance and *one publish* instance.
+This tutorial describes how to set up [MSRP](msrp.md) for *one author* instance and *one publish* instance.
 
-With this setup, the community content is accessible from both author and publish environments without needing to forward or reverse replicate user generated content (UGC).
+With this setup, the community content is accessible from both author and publish environments without needing to forward or reverse replicate user-generated content (UGC).
 
 This configuration is suitable for *non-production* environments such as for development and/or demonstration.
 
@@ -32,11 +29,11 @@ This configuration is suitable for *non-production* environments such as for dev
 
 ### Install MongoDB {#install-mongodb}
 
-* Download MongoDB from [https://www.mongodb.org/](https://www.mongodb.org/)
+* Download MongoDB from [https://www.mongodb.com/](https://www.mongodb.com/)
 
   * Choice of OS:
 
-    * Linux
+    * Linux&reg;
     * Mac 10.8
     * Windows 7
 
@@ -51,8 +48,8 @@ This configuration is suitable for *non-production* environments such as for dev
 
     * No need to configure mongos or sharding.
 
-  * The installed MongoDB folder will be referred to as &lt;mongo-install&gt;.
-  * The defined data directory path will be referred to as &lt;mongo-dbpath&gt;.
+  * The installed MongoDB folder is called &lt;mongo-install&gt;.
+  * The defined data directory path is called &lt;mongo-dbpath&gt;.
 
 * MongoDB may run on same host as AEM or run remotely.
 
@@ -60,7 +57,7 @@ This configuration is suitable for *non-production* environments such as for dev
 
 * &lt;mongo-install&gt;/bin/mongod --dbpath &lt;mongo-dbpath&gt;
 
-This will start a MongoDB server using default port 27017.
+This starts a MongoDB server using default port 27017.
 
 * For Mac, increase ulimit with start arg 'ulimit -n 2048'
 
@@ -94,13 +91,13 @@ The following commands are an example of setting up a replica set with 3 nodes o
 
   * Suitable for any OS.
   * Solr version 7.0.
-  * Solr requires Java 1.7 or greater.
+  * Solr requires Java&trade; 1.7 or greater.
 
 * Basic configuration
 
   * Follow 'example' Solr setup.
   * No service is needed.
-  * The installed Solr folder will be referred to as &lt;solr-install&gt;.
+  * The installed Solr folder is called &lt;solr-install&gt;.
 
 ### Configure Solr for AEM Communities {#configure-solr-for-aem-communities}
 
@@ -116,21 +113,21 @@ The method for running Solr may differ depending on the version and manner of in
 For simplicity, using version 4.10 as an example, start Solr in standalone mode:
 
 * cd to &lt;solrinstall&gt;/example
-* java -jar start.jar
+* Java&trade; -jar start.jar
 
-This will start a Solr HTTP server using default port 8983. You can browse to the Solr Console to get a Solr console for testing.
+This process starts a Solr HTTP server using default port 8983. You can browse to the Solr Console to get a Solr console for testing.
 
 * default Solr console: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
->If Solr Console is not available, check the logs under &lt;solrinstall&gt;/example/logs. Look to see if SOLR is trying to bind to a specific hostname that cannot be resolved (e.g. "user-macbook-pro").
+>If Solr Console is not available, check the logs under &lt;solrinstall&gt;/example/logs. Look to see if SOLR is trying to bind to a specific hostname that cannot be resolved (for example, "user-macbook-pro").
 >
->If so, update etc/hosts file with a new entry for this hostname (e.g 127.0.0.1 user-macbook-pro) and Solr will start properly.
+>If so, update `etc/hosts` file with a new entry for this hostname (for example, 127.0.0.1 user-macbook-pro) to star Solr properly.
 
 ### SolrCloud {#solrcloud}
 
-To run a very basic (not production) solrCloud setup, start solr with:
+To run a basic (not production) solrCloud setup, start solr with:
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
@@ -138,7 +135,7 @@ To run a very basic (not production) solrCloud setup, start solr with:
 
 Launch the author and publish AEM instances, if necessary.
 
-If AEM was running before MongoDB was started, then the AEM instances will need to be restarted.
+If AEM was running before MongoDB was started, then the AEM instances must be restarted.
 
 Follow the instructions on the main documentation page: [MSRP - MongoDB Common Store](msrp.md)
 
@@ -156,7 +153,7 @@ To test and verify the MongoDB common store, post a comment on the publish insta
 
    ![view-comment](assets/view-comment.png)
 
-   Note: While there are JCR nodes under the *asipath* on author, these are for the SCF framework. The actual UGC is not in JCR, it is in the MongoDB.
+   Note: While there are JCR nodes under the *asipath* on author, these nodes are for the SCF framework. The actual UGC is not in JCR, it is in the MongoDB.
 
 1. View the UGC in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 
@@ -177,11 +174,11 @@ To test and verify the MongoDB common store, post a comment on the publish insta
 
 1. Make sure MongoDB is installed and running properly.
 
-1. Make sure MSRP has been configured to be the default provider:
+1. Make sure that MSRP has been configured to be the default provider:
 
-   * On all author and publish AEM instances, revisit the [Storage Configuration console](srp-config.md) or check the AEM repository:
+   * On all author and publish AEM instances, revisit the [Storage Configuration console](srp-config.md), or check the AEM repository:
 
-   * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means the storage provider is JSRP.
+   * In JCR, if [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) node, it means that the storage provider is JSRP.
    * If the srpc node exists and contains node [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), the defaultconfiguration's properties should define MSRP to be the default provider.
 
-1. Make sure AEM was restarted after MSRP selected.
+1. Make sure that AEM was restarted after MSRP selected.
