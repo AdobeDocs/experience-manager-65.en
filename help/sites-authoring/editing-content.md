@@ -264,7 +264,7 @@ The actual actions available to the user will be shown as appropriate and not al
 
     * You can paste to the same page or to a different page.
     * The pasted item will be pasted above the item where you select the paste action.
-    * The Pate action will only be shown if there is content on the clipboard.
+    * The Paste action will only be shown if there is content on the clipboard.
 
   ![Paste](assets/screen_shot_2018-03-22at113553.png)
 
