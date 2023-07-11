@@ -1,24 +1,20 @@
 ---
 title: The Bulk Editor
-seo-title: The Bulk Editor
 description: Learn how to use the Bulk Editor.
-seo-description: Learn how to use the Bulk Editor.
-uuid: 5f5e4190-d9b2-40a6-8cf4-4b7aebe35ad3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
 ---
 
 # The Bulk Editor{#the-bulk-editor}
 
-The Bulk Editor allows for very efficient editing when the visual page context is not needed as it lets you:
+The Bulk Editor allows for efficient editing when the visual page context is not needed as it lets you:
 
 * search for (and display) content from multiple pages; this is done using GQL (Google Query Language)
-* edit this content directly in the bulk editor
+* edit this content directly in the Bulk Editor
 * save the changes (to the originating pages)
 * export this content to a tab-separated (.tsv) spreadsheet file
 
@@ -26,7 +22,7 @@ The Bulk Editor allows for very efficient editing when the visual page context i
 >
 >You can also import content into the repository, but by default this is disabled for the Bulk Editor as available in the **Tools** console.
 
-This section describes how to work with the bulk editor in the **Tools** console. Typically, administrators use the bulk editor to search and edit multiple items. This is done by populating the table using a GQL query and then by selecting the content items to work on. Authors generally use the bulk editor as part of a customized bulk editor application accessible through the [product listing](/help/sites-authoring/default-components.md#productlist) component.
+This section describes how to work with the Bulk Editor in the **Tools** console. Typically, administrators use the Bulk Editor to search and edit multiple items. This is done by populating the table using a GQL query and then by selecting the content items to work on. Authors generally use the Bulk Editor as part of a customized Bulk Editor application accessible through the [product listing](/help/sites-authoring/default-components.md#productlist) component.
 
 >[!CAUTION]
 >
@@ -43,13 +39,13 @@ An example to illustrate such a use case is included in the Geometrixx web site:
 
    ![Customer satisfaction survey example](assets/custsatsurvey.png)
 
-1. The Bulk Editor is fully customizable., though in this example the bulk editor does not allow users to edit the content, but only lets them export the information to a spreadsheet.
+1. The Bulk Editor is fully customizable, though in this example the Bulk Editor does not allow users to edit the content, but only lets them export the information to a spreadsheet.
 
    ![Bulk editor console](assets/bulkeditor.png)
 
 ## How to Use the Bulk Editor {#how-to-use-the-bulk-editor}
 
-The bulk editor allows you to:
+The Bulk Editor allows you to:
 
 * [search for content based on query parameters, to display specified properties of the results in columns, to edit this content and save the changes](#searching-and-editing-content)
 * [to export this content to a tab-separated spreadsheet](#exporting-content)
@@ -58,7 +54,7 @@ The bulk editor allows you to:
 
 ### Searching and Editing Content {#searching-and-editing-content}
 
-To use the bulk editor to edit multiple items simultaneously:
+To use the Bulk Editor to edit multiple items simultaneously:
 
 1. In the **Tools** console, click the **Importers** folder to expand it.
 1. Double-click the **Bulk Editor** to open it.
@@ -72,11 +68,11 @@ To use the bulk editor to edit multiple items simultaneously:
   </tr>
   <tr>
    <td>Root Path</td>
-   <td>Indicates the root path the bulk editor searches.<br /> For example, <code>/content/geometrixx/en</code>. The bulk editor searches over all child nodes.</td>
+   <td>Indicates the root path the Bulk Editor searches.<br /> For example, <code>/content/geometrixx/en</code>. The Bulk Editor searches over all child nodes.</td>
   </tr>
   <tr>
    <td>Query Parameters</td>
-   <td>Using GQL parameters, enter the search string you want the bulk editor to look for in the repository; for example, <code>type:Page</code> looks for all pages in the root path, <code>text:professional</code> looks for all pages that have the word "professional" in them, and <code>"jcr:title":English</code> looks for all pages that have "English" as the title. You can only search for strings.</td>
+   <td>Using GQL parameters, enter the search string you want the Bulk Editor to look for in the repository; for example, <code>type:Page</code> looks for all pages in the root path, <code>text:professional</code> looks for all pages that have the word "professional" in them, and <code>"jcr:title":English</code> looks for all pages that have "English" as the title. You can only search for strings.</td>
   </tr>
   <tr>
    <td>Content Mode check box</td>
@@ -84,7 +80,7 @@ To use the bulk editor to edit multiple items simultaneously:
   </tr>
   <tr>
    <td>Properties/Columns</td>
-   <td>Select the check boxes for the properties that you want the bulk editor to return. The properties you select are the column heads in the results pane. By default, the node path is displayed in the results.</td>
+   <td>Select the check boxes for the properties that you want the Bulk Editor to return. The properties you select are the column heads in the results pane. By default, the node path is displayed in the results.</td>
   </tr>
   <tr>
    <td>Custom Properties/Columns</td>
@@ -102,7 +98,7 @@ To use the bulk editor to edit multiple items simultaneously:
 
    ![Bulk editor results](assets/chlimage_1-39.png)
 
-1. Make any changes you need by double-clicking in a cell.
+1. Make any changes that you need by double-clicking in a cell.
 
    ![Editing in bulk](assets/srchresultedit.png)
 
@@ -114,14 +110,14 @@ To use the bulk editor to edit multiple items simultaneously:
 
 #### Additional GQL Query Parameters {#additional-gql-query-parameters}
 
-* **path:** only search nodes below this path. If you specify more than one term with a path prefix, only the last one will be considered.
-* **type:** only return nodes of the given node types. This includes primary as well as mixin types. You may specify multiple comma separated node types. GQL will return nodes that are of any of the specified types.
-* **order:** order the result by the given properties. You may specify multiple comma separated property names. To order the result in descending order simply prefix the property name with a minus. E.g.: order:-name. Using a plus sign will return the result in ascending order, which is also the default.
-* **limit:** limits the number of results using an interval. E.g.: limit:10..20 Please note that the interval is zero based, start is inclusive and end is exclusive. You may also specify an open interval:limit:10.. or limit:..20 If the dots are omitted and only one value is specified GQL will return at most this number of results. E.g. limit:10 (will return the first 10 results)
+* **path:** only search nodes below this path. If you specify more than one term with a path prefix, only the last one is considered.
+* **type:** only return nodes of the given node types. This includes primary and mixin types. You may specify multiple comma-separated node types. GQL returns nodes that are of any of the specified types.
+* **order:** order the result by the given properties. You may specify multiple comma-separated property names. To order the result in descending order simply prefix the property name with a minus. For example, order:-name. Using a plus sign returns the result in ascending order, which is also the default.
+* **limit:** limits the number of results using an interval. For example, limit:10..20 The interval is zero based, start is inclusive, and end is exclusive. You may also specify an open interval:limit:10.. or limit:..20 If the dots are omitted and only one value is specified GQL will return at most this number of results. For example, limit:10 (returns the first ten results).
 
 ### Exporting Content {#exporting-content}
 
-You may need to export content and make changes to it in an Excel spreadsheet. For example, you may want to export a mailing list and change the area code of all the listed phone numbers directly in Excel, add additional lines, and so on.
+You may need to export content and make changes to it in an Excel spreadsheet. For example, you may want to export a mailing list and change the area code of all the listed phone numbers directly in Excel, or add additional lines, and so on.
 
 To export content:
 
@@ -135,22 +131,22 @@ To export content:
    ![Exporting results](assets/srchrsesultexport.png)
 
 1. Select the location and confirm that you want to download the file.
-1. After you download the file, you can open it from your spreadsheet program, for example, Microsoft Excel. The spreadsheet program imports the file and converts it to a spreadsheet format.
+1. After you download the file, you can open it from your spreadsheet program, for example, Microsoft&reg; Excel. The spreadsheet program imports the file and converts it to a spreadsheet format.
 
    ![Exported results in a spreadsheet](assets/exportinexcel.png)
 
 ### Importing Content {#importing-content}
 
-By default the import functionality is hidden when you open the Bulk Editor. Simply adding the parameter `hib=false` to the URL will display the **Import** button on the Bulk Editor page. You can import content from any tab-separated ( `.tsv`) file. In order for importing to work properly, the column headings (first row of cells) must match the column headings of the table you are importing to.
+By default the import functionality is hidden when you open the Bulk Editor. Simply adding the parameter `hib=false` to the URL displays the **Import** button on the Bulk Editor page. You can import content from any tab-separated ( `.tsv`) file. For importing to work properly, the column headings (first row of cells) must match the column headings of the table you are importing to.
 
 >[!NOTE]
 >
->When you re-import content, you erase any previous content for those nodes. Be careful not to overwrite important information.
+>When you reimport content, you erase any previous content for those nodes. Be careful not to overwrite important information.
 
 To import content:
 
 1. Open the Bulk Editor.
-1. Add `?hib=false` to the URL, e.g.:
+1. Add `?hib=false` to the URL, for example:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Click **Import**.
 1. Select the `.tsv` file. The data are imported into the repository.

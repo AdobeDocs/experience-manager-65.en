@@ -1,14 +1,10 @@
 ---
 title: Configuring Dispatcher for Communities
-seo-title: Configuring Dispatcher for Communities
-description: Configure the dispatcher for AEM Communities
-seo-description: Configure the dispatcher for AEM Communities
-uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
+description: Configure the Dispatcher for AEM Communities
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 ---
 # Configuring Dispatcher for Communities {#configuring-dispatcher-for-communities}
@@ -19,25 +15,25 @@ For AEM Communities, it is necessary to configure the Dispatcher to ensure prope
 
 To learn what is necessary for your particular deployment and site design
 
-* Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+* Contact [Customer Care](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
 
-See also the main [Dispatcher documentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+See also the main [Dispatcher documentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
 ## Dispatcher Caching {#dispatcher-caching}
 
 ### Overview {#overview}
 
-Dispatcher caching for AEM Communities is the ability for the dispatcher to serve fully cached versions of a community site's pages.
+Dispatcher caching for AEM Communities is the ability for the Dispatcher to serve fully cached versions of a community site's pages.
 
-Currently, it is only supported for anonymous site visitors, such as users who browse the community site, or land on a community page as a result of a search, as well as for search engines which index pages. The benefit is that anonymous users and search engines will experience improved performance.
+Currently, it is only supported for anonymous site visitors, such as users who browse the community site, or land on a community page as a result of a search, and for search engines which index pages. The benefit is that anonymous users and search engines experience improved performance.
 
-For signed in members, the dispatcher bypasses the cache, relaying requests directly to the publisher, such that all pages are generated and delivered dynamically.
+For signed in members, the Dispatcher bypasses the cache, relaying requests directly to the publisher, such that all pages are generated and delivered dynamically.
 
-When configured to support dispatcher caching, a TTL-based "max age" expiration is added to the header to ensure the dispatcher cached pages are current.
+When configured to support Dispatcher caching, a TTL-based "max age" expiration is added to the header to ensure that the Dispatcher cached pages are current.
 
 ### Requirements {#requirements}
 
-* Dispatcher version 4.1.2 or later (see [Installing Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) for the latest version)
+* Dispatcher version 4.1.2 or later (see [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) for the latest version)
 * [ACS AEM Commons package](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
   * Version 3.3.2 or later
@@ -45,14 +41,14 @@ When configured to support dispatcher caching, a TTL-based "max age" expiration 
 
 ### Configuration {#configuration}
 
-The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** sets the expiraton of cached pages that appear under a specified path.
+The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** sets the expiration of cached pages that appear under a specified path.
 
-* From the [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* From the [Web Console](../../help/sites-deploying/configuring-osgi.md).
 
   * For example, [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Locate `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
-* Select the '+' icon to create a new connection configuration
+* Select the '+' icon so you can create a connection configuration.
 
   ![dispatcher](assets/dispatcher.png)
 
@@ -60,31 +56,31 @@ The OSGi configuration **ACS AEM Commons - Dispatcher Cache Control Header - Max
   *(required)* One or more paths to community pages. For example, `/content/sites/engage/(.*)`.
 
 * **Cache-Control Max Age**
-  *(required)* The max age (in seconds) to add to the Cache Controll header. The value must be greater than zero (0).
+  *(required)* The max age (in seconds) to add to the Cache Control header. The value must be greater than zero (0).
 
 ## Dispatcher Filters {#dispatcher-filters}
 
-The /filter section of the `dispatcher.any` file is documented in [Configuring Access to Content - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+The /filter section of the `dispatcher.any` file is documented in [Configuring Access to Content - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
 
 This section describes entries that are likely necessary for proper functioning of Communities features.
 
-The filter property names follow the convention of using a four-digit number to indicate the order in which to apply filter patterns. When multiple filters patterns apply to a request, the last filter pattern that applies is effective. Thus, the very first filter pattern is often used to deny everything, such that the following patterns serve to restore access in a controlled manner.
+The filter property names follow the convention of using a four-digit number to indicate the order in which to apply filter patterns. When multiple filters patterns apply to a request, the last filter pattern that is applied, is effective. Therefore, the first filter pattern is often used to deny everything, such that the following patterns serve to restore access in a controlled manner.
 
-The following samples use property names that will likely need to be modified to fit into any particluar dispatcher.any file.
+The following samples use property names that likely must be modified to fit into any particular `dispatcher.any` file.
 
 See also:
 
-* [Dispatcher Security Checklist](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Dispatcher Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
 
 >[!NOTE]
 >
 >**Property Name Examples**
->All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing dispatcher.any configuration file.
+>All property names shown, such as **/0050** and **/0170**, should be adjusted to fit within an existing `dispatcher.any` configuration file.
 >
 
 >[!CAUTION]
 >
->See the [Dispatcher Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) for further considerations when restricting access using Dispatcher. Also, read the [AEM Security Cheklist](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) for additional security details regarding your AEM installation.
+>See the [Dispatcher Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) for further considerations when restricting access using Dispatcher. Also, read the [AEM Security Checklist](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) for additional security details regarding your AEM installation.
 >
 
 The following entries should be added to the end of the /filter section, especially after all deny entries.
@@ -268,9 +264,9 @@ The rules section of `dispatcher.any` defines what responses should be cached ba
 
 ## Troubleshooting {#troubleshooting}
 
-A major source of problems is inserting filter rules without paying attention to the affect on earlier rules, especially when adding a rule to deny access.
+A major source of problems is inserting filter rules without paying attention to the effect on earlier rules, especially when adding a rule to deny access.
 
-The very first filter pattern is often used to deny everything so that following filters restore access in a controlled manner. When multiple filters apply to a request, the last filter that applies is the one in effect.
+The first filter pattern is often used to deny everything so that following filters restore access in a controlled manner. When multiple filters apply to a request, the last filter that is applied, is the one in effect.
 
 ## Sample dispatcher.any {#sample-dispatcher-any}
 
