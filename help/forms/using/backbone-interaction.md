@@ -41,7 +41,7 @@ In Backbone view, there is an event map which maps the various events that can a
 
 When a view is initialized, the view calls its corresponding model to fetch data from server. Once all data required by a view is available, the view renders the data in the format specified by the HTML template. Multiple views may share same model for communication.
 
-![](do-not-localize/aem_forms_workflow.png)
+![AEM forms backbone view](do-not-localize/aem_forms_workflow.png)
 
 An example:
 

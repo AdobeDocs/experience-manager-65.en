@@ -15,7 +15,7 @@ exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 
 This article includes overview, sample use cases, creation workflow, and differences between Interactive Communication and letter.
 
-![](do-not-localize/correspondence-management.png)
+![hero-image](do-not-localize/correspondence-management.png)
 
 Interactive Communications centralizes and manages the creation, assembly, and delivery of secure, personalized, and interactive correspondences such as business correspondence, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 

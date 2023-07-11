@@ -14,7 +14,7 @@ exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
 ---
 # Create form data model{#create-form-data-model}
 
- ![](do-not-localize/data-integeration.png)
+ ![hero-image](do-not-localize/data-integration.png)
 
 AEM Forms data integration provides an intuitive user interface to create and work with form data models. A form data model relies on data sources for exchange of data; however, you can create a form data model with or without a data source. There are two approaches to create a from data model depending on whether you have configured data sources:
 

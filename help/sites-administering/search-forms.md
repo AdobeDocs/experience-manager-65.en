@@ -391,7 +391,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 ### Creating/Opening a Customized Configuration {#creating-opening-a-customized-configuration}
 
-1. Navigate to **Tools**, **General**, **Search Forms**.
+1. Navigate to **Tools** >>  **General** >> **Search Forms**.
 
 1. Select the configuration that you want to customize.
 1. Use the **Edit** icon to open the configuration for updating.
@@ -434,7 +434,7 @@ You can add or edit fields and define/update their settings:
 
 1. Select the Preview icon:
 
-   ![Preview icon](do-not-localize/chlimage_1-31.png)
+   ![Preview search forms](do-not-localize/chlimage_1-31.png)
 
 1. This will display the search forms as they will be shown (fully expanded) in the Search column of the appropriate console.
 

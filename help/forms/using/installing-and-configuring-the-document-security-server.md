@@ -27,7 +27,7 @@ The document security capability is available only in AEM Forms on JEE. You requ
 
 <!--fix above link-->
 
-![](do-not-localize/document-security-server_topology.png)
+![Document security server topology](do-not-localize/document-security-server_topology.png)
 
 The following diagram shows the typical architecture for AEM Forms Document Security:
 

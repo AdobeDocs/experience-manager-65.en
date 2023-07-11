@@ -90,7 +90,7 @@ Goals:
 
 ## Step 4: Style your adaptive form {#step-style-your-adaptive-form}
 
-![](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![adapative-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
 Adaptive forms provide themes and an [editor](../../forms/using/themes.md) to create themes for the adaptive forms. A theme contains styling details for components and panels, and you can reuse a theme in different forms. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply the theme to your form, the specified style reflects on corresponding components of your form. Adaptive forms also support in-line styling for styles specific to a form.
 
