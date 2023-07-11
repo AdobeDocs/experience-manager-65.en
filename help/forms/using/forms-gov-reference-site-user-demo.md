@@ -1,11 +1,7 @@
 ---
 title: We.Gov and We.Finance reference site walkthrough
-seo-title: We.Gov and We.Finance reference site walkthrough
 description: Use fictitious users and groups to perform AEM Forms tasks using We.Gov and We.Finance demo package.
-seo-description: Use fictitious users and groups to perform AEM Forms tasks using We.Gov and We.Finance demo package.
-uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
-discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
 ---
@@ -26,7 +22,7 @@ Set up the reference site as described in [Set up and configure We.Gov and We.Fi
 * AEM Forms
 
   * Data Capture
-  * (Optional) Data Integration (MS Dynamics)
+  * (Optional) Data Integration (MS&reg; Dynamics)
   * (Optional) Adobe Sign
 
 * Workflow
@@ -72,11 +68,11 @@ The following groups are also included:
 
 1. **Impersonate**: Defined Users & Groups in AEM demo.
 1. **Button**: Colored rectangle or circled arrow for navigating.
-1. **Click**: To execute an action in the user story.
-1. **Links**: Located at the top of the main menu in We.Gov site.
+1. **Click**: To run an action in the user story.
+1. **Links**: At the top of the main menu in We.Gov site.
 1. **User Instructions**: A set of numerical steps to follow when navigating through the user's story.
 1. **Forms Portal**: *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/formsportal.html*
-1. **Mobile View**:We.Gov user to replicate a mobile view with a re-sized browser.
+1. **Mobile View**:We.Gov user to replicate a mobile view with a resized browser.
 1. **Desktop View**: We.gov user to view demo on a laptop or desktop.
 1. **Pre-screener Form**: Form on the Home page of the We.Gov site.
 1. **Adaptive Form**: Enrollment application form for We.gov demo.
@@ -95,7 +91,7 @@ The following groups are also included:
 
 ## Automated Forms Conversion (Camila) {#automated-forms-conversion}
 
-**This section**: Camila the CX Lead has an existing PDF based form that was used as part of a paper-based process. As part of a modernization effort she wants to use this PDF form to automatically create a new modern Adaptive Forms.
+**This section**: Camila the CX Lead has an existing PDF based form that was used as part of a paper-based process. As part of a modernization effort Camila wants to use this PDF form to automatically create a new modern Adaptive Forms.
 
 ### Automated Forms Conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -104,7 +100,7 @@ The following groups are also included:
 1. Login with:
    * **User**: camila.santos
    * **Password**: password
-1. From the main page select Forms > Forms & Documents > AEM Forms We.gov Forms > AFC.
+1. From the main page, select Forms > Forms & Documents > AEM Forms We.gov Forms > AFC.
 1. Camila uploads the PDF to AEM Forms.
 
     ![Upload form](assets/aftia-upload-form.jpg)
@@ -113,9 +109,9 @@ The following groups are also included:
 
    >[!NOTE]
    >
-   >Note that the settings in AFC are preconfigured for the end user which means that they should not be altered.
+   >The settings in AFC are preconfigured for the end user which means that they should not be altered.
 
-   * **Optional**: If you wish to use the Accessible Ultramarine theme, simply click on the Specify an adaptive form theme and select the Accessible-Ultramarine theme that appears in the list of options.
+   * **Optional**: If you wish to use the Accessible Ultramarine theme, simply click the Specify an adaptive form theme and select the Accessible-Ultramarine theme that appears in the list of options.
 
    ![Start conversion](assets/aftia-start-conversion.jpg)
 
@@ -127,7 +123,7 @@ The following groups are also included:
 
     ![Review conversion](assets/aftia-review-conversion.jpg)
 
-1. Camilla then starts to edit the form. She selects Root Panel > Edit (the wrench) > selects Tabs on Top from the Panel Layout dropdown menu > selects the Check box.
+1. Camilla then starts to edit the form and selects Root Panel > Edit (the wrench) > selects Tabs on Top from the Panel Layout dropdown menu > selects the Check box.
 
    ![Review properties](assets/aftia-review-properties.jpg)
 
@@ -137,28 +133,28 @@ The following groups are also included:
 
 ### Form Data Model & Data Sources (Camila) {#data-sources}
 
-**This section**: Once the document has been converted and produced an Adaptive Form, Camila then needs to connect the Adaptive Form to a datasource.
+**This section**: After the document is converted and produces an Adaptive Form, Camila must connect the Adaptive Form to a datasource.
 
 1. Camila opens the Properties on the form that was converted in [Automated Forms Conversion - We.Gov](#automated-forms-conversion-wegov).
 
 1. Camila then selects Form Model > Selects Form Data Model from Select From dropdown > Selects We.gov Enrollment FDM from the list of option.
 
-1. Clicks on the Save & Close button.
+1. Click Save & Close.
 
     ![FDM selection](assets/aftia-select-fdm.jpg)
 
-1. Camila clicks the **output** folder, selects the adaptive form and clicks **Edit** to open the completed We.Gov form.
-1. Camila selects an adaptive form field and clicks ![Configure icon](assets/configure-icon.svg). She creates binding with the form data model entities using the **Bind Reference** field. She repeats this step for all fields in the adaptive form.
+1. Camila clicks the **output** folder, selects the adaptive form, and clicks **Edit** to open the completed We.Gov form.
+1. Camila selects an adaptive form field and clicks ![Configure icon](assets/configure-icon.svg) and creates binding with the form data model entities using the **Bind Reference** field. Camila repeats this step for all fields in the adaptive form.
 
 ### Form Accessibility Testing (Camila) {#form-accessibility-testing}
 
 Camila also validates that the created content is built correctly and fully accessible according to corporate standards.
 
-1. Camila clicks the **output** folder, selects the adaptive form and clicks **Preview** to open the completed We.Gov form.
+1. Camila clicks the **output** folder, selects the adaptive form, and clicks **Preview** to open the completed We.Gov form.
 
 1. Opens the Audit tab within the Chrome Developer Tool.
 
-1. Performs an Accessibility check in order to validate the adaptive form.
+1. Performs an Accessibility check to validate the adaptive form.
 
     ![Accessibility check](assets/aftia-accessibility.jpg)
 
@@ -174,13 +170,13 @@ Camila also validates that the created content is built correctly and fully acce
     1. **User**: aya.tan
     1. **Password**: password
 
-1. Re-size the browser window or use the browser’s emulator to replicate a mobile device size.
+1. Resize the browser window or use the browser's emulator to replicate a mobile device size.
 
 ### We.Gov Website (Aya) {#aya-user-story-we-gov-website}
 
 ![Fictitious user](/help/forms/using/assets/aya_tan_new-1.png)
 
-**This section**: Aya is a citizen. She hears from a friend that she may be eligible to receive a Service from a government agency. Aya navigates to the We.Gov website from her mobile phone to learn more about services she is eligible for.
+**This section**: Aya is a citizen and hears from a friend that she may be eligible to receive a Service from a government agency. Aya navigates to the We.Gov website from her mobile phone to learn more about services she is eligible for.
 
 ### We.Gov Pre-Screener (Aya) {#aya-user-story-we-gov-pre-screener}
 
@@ -192,10 +188,10 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
 
    >[!NOTE]
    >
-   >If the user earns more than $200,000/yr, they aren’t eligible.  
+   >If the user earns more than $200,000/yr, they aren't eligible.  
 
-1. Click the "**Am I Eligible?**" button.
-1. Click the "**Apply Now**" button to proceed.
+1. Click **Am I Eligible?**.
+1. Click **Apply Now** to proceed.
 
    ![Apply Now link](/help/forms/using/assets/apply_now_link.png)
 
@@ -203,7 +199,7 @@ Aya answers a few questions to confirm her eligibility by filling out a short ad
 
 Aya finds out she is eligible and begins filling her application to request service on her mobile device.
 
-Aya needs to review some documents at home before she can complete the service request application. She saves and exits the application from her mobile device.
+Aya must review some documents at home before she can complete the service request application. She saves and exits the application from her mobile device.
 
 **User Instructions:**
 
@@ -233,51 +229,51 @@ Aya needs to review some documents at home before she can complete the service r
 
 ## Desktop demo {#desktop-demo}
 
-**This section:** Back at home, Aya has found the information she needed and resumes the application from her desktop. Aya navigates to the online forms portal to resume her application. With some simple customization, agencies can also automatically generate and email a link to resume the application.
+**This section:** Back at home, Aya has found the information she needed and resumes the application from her desktop. Aya navigates to the online Forms Portal to resume her application. With some simple customization, agencies can also automatically generate and email a link to resume the application.
 
 ### Continued Adaptive Form (Aya) {#aya-user-story-continued-adaptive-form}
 
 **User Instructions:**
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/content/we-gov/home.html*
-1. From the navigation bar, select click on "**Online Services**".
+1. From the navigation bar, select **Online Services**.
 1. From the "Draft Forms" panel, select the existing "Enrollment Application For Health Benefits".
 
    ![Enrollment Application for Health Benefits](/help/forms/using/assets/enrollment_application.png)
 
-   The look and feel are the same, and she does not need to re-enter any data.
+   The look and feel are the same, and she does not need to reenter any data.
 
    **User Instructions:**
 
-1. Click right Circle CTA to move to the next section.
+1. Right-click Circle CTA to move to the next section.
 
    ![RIght circle CTA](/help/forms/using/assets/right_circle_cta_new.png)
 
-   The form is populated up to the point of Aya’s last entry. Aya has entered all her information and is ready to submit.
+   The form is populated up to the point of Aya's last entry. Aya has entered all her information and is ready to submit.
 
    ![Submit the adaptive form](/help/forms/using/assets/submit_adaptive_form.png)
 
    >[!NOTE]
    >
-   >When Aya fills out the phone number field she must fill it as a continuous 11 digit number with no dashes, spaces or hyphens.
+   >When Aya fills out the phone number field, she must fill it as a continuous 11-digit number with no dashes, spaces, or hyphens.
 
-   After submitting Aya receives a Thank You page. Optionally she will also receive an email that she can open to sign the document of record electronically with Adobe Sign.
+   After submitting, Aya receives a Thank You page. Optionally, Aya also receives an email that she can open to sign the document of record electronically with Adobe Sign.
 
 ### Optional: Adobe Sign (Aya) {#adobe-sign}
 
 **User Instructions:**
 
 1. Navigate to your Email Client and find the Adobe Sign email.
-1. Click on the link to Adobe Sign.
+1. Click the link to Adobe Sign.
 
    ![Adobe sign link](/help/forms/using/assets/adobe_sign_link.png)
 
 **User Instructions:**
 
-1. Check the "**I agree**" box.
-1. Click "**Accept**".
+1. Check **I agree**.
+1. Click **Accept**.
 1. Scroll to the bottom of the reviewed document.
-1. Click on the highlighted yellow tab to sign the document.
+1. Click the highlighted yellow tab so you can sign the document.
 
    ![Sign the document](/help/forms/using/assets/sign_document_new.png) ![Sign the test document](/help/forms/using/assets/sign_test_document.png)
 
@@ -292,7 +288,7 @@ Aya needs to review some documents at home before she can complete the service r
 **User Instructions:**
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
-1. Click on the user icon (top right-hand corner) and use the "**Sign Out**", or the "**Impersonate as**" menu option if you are currently logged in with an administrative user.
+1. Click the user icon (top right-hand corner) and use the **Sign Out**, or the **Impersonate as** menu option if you are currently logged in with an administrative user.
 
     1. Login with:
 
@@ -301,25 +297,25 @@ Aya needs to review some documents at home before she can complete the service r
 
     1. Or Impersonate:
 
-        1. Type "**George**" in the "**Impersonate as**" field.
+        1. Type `George` in the **Impersonate as** field.
 
         1. Click okay to impersonate.
 
-1. From the top right corner, click the Notification (bell) Icon.
-1. Click "**View All**" to navigate to the Inbox.
-1. From the Inbox, open the latest "**Health Benefits Application Review**" task.
+1. From the top-right corner, click the Notification (bell) Icon.
+1. Click **View All** to navigate to the Inbox.
+1. From the Inbox, open the latest **Health Benefits Application Review** task.
 
    ![Health Benefits Application Review](/help/forms/using/assets/health_benefits.png)
 
-### Optional: AEM Inbox & MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Optional: AEM Inbox & MS&reg; Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
-Thanks to data integrations and automated workflows, Aya’s application appears, along with a CRM record that has automatically been generated when the data was submitted.
+Thanks to data integrations and automated workflows, Aya's application appears, along with a CRM record that has automatically been generated when the data was submitted.
 
 **User Instructions:**
 
 1. Open and inspect the read-only adaptive form.
-1. Click on the "**Open MS Dynamics**" button to open the MS Dynamics record in a new window.
-1. In the CRM you can see all information can be updated
+1. Click **Open MS&reg; Dynamics** to open the MS&reg; Dynamics record in a new window.
+1. In the CRM, you see all information that can be updated.
 
     1. Optionally, add some review notes directly in Dynamics.
 
@@ -329,11 +325,11 @@ Thanks to data integrations and automated workflows, Aya’s application appears
 
 ### Back to AEM Inbox (George) {#george-user-story-back-to-aem-inbox}
 
-George approves Aya’s application, and thanks to an existing automated workflow a confirmation email is also sent to Aya.
+George approves Aya's application, and thanks to an existing automated workflow a confirmation email is also sent to Aya.
 
 **User Instructions:**
 
-1. Navigate to the top left corner and click "**Approve**" to approve the application.
+1. Navigate to the top-left corner and click **Approve** to approve the application.
 1. In the modal, you can leave a message for the CX lead.
 1. Click Done.
 1. (Citizen role) Open up your email client to view the email sent to Aya.
@@ -344,14 +340,14 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 ![Camila (CX lead)](/help/forms/using/assets/camila_santos-1.png)
 
-**This section:** Camila the CX Lead sets up a welcome phone call with Aya to explain how to make use of the government services she has been approved for.
+**This section:** Camila the CX Lead sets up a welcome phone call with Aya to explain how to use government services that she is approved for.
 
-### (Optional) AEM Inbox & MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Optional) AEM Inbox & MS&reg; Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **User Instructions:**
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/aem/start.html*
-1. Click on the user icon (top right-hand corner) and use the "**Sign Out**", or the "**Impersonate as**" menu option if you are currently logged in with an administrative user.
+1. Click the user icon (top right-hand corner) and use the **Sign Out**, or the **Impersonate as** menu option if you are currently logged in with an administrative user.
 
     1. Login with:
 
@@ -360,29 +356,29 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
     1. Or Impersonate:
 
-        1. Type "**Camila**" in the "**Impersonate as**" field.
+        1. Type `Camila` in the **Impersonate as** field.
 
         1. Click okay to impersonate.
 
-1. From the top right corner, click the Notification (bell) icon.
-1. Click "**View All**" to navigate to the Inbox.
-1. From the Inbox, open the latest "**New Contact Approval**" task.
+1. From the top-right corner, click the Notification (bell) icon.
+1. Click **View All** to navigate to the Inbox.
+1. From the Inbox, open the latest **New Contact Approval** task.
 
 ![New Contact Approval](/help/forms/using/assets/new_contact_approval.png)
 
    **(Optional) User Instructions:**
 
 1. Open and inspect the read-only adaptive form.
-1. Click on the "**Open MS Dynamics**" button to open the MS Dynamics record in a new window.
-1. In the CRM you can see all information can be updated
+1. Click **Open MS&reg; Dynamics** to open the MS&reg; Dynamics record in a new window.
+1. In the CRM you can see all information that can be updated.
 
-    1. Optionally, add a new call activity directly in Dynamics.
-    1. Open the "**Activities**" section.
-    1. Click on the "**New Phone Call**" option.
+    1. Optionally, add a call activity directly in Dynamics.
+    1. Open the **Activities** section.
+    1. Click **New Phone Call**.
     1. Add phone call details.
     1. Save and close the window.
 
-1. Back in AEM, navigate to the top left corner and click "**Submit**" to submit the application.
+1. Back in AEM, navigate to the top-left corner and click **Submit** to submit the application.
 1. In the modal, you can leave a message.
 1. Click Done.
 
@@ -399,9 +395,9 @@ George approves Aya’s application, and thanks to an existing automated workflo
 1. Locate and open the Welcome Kit email.
 1. Scroll to PDF attachment at the bottom of the page.
 1. Click to open the PDF attachment.
-1. Scroll back up in your email client and click on "**View welcome kit online**".
+1. Scroll back up in your email client and click **View welcome kit online**.
 
-    1. This will open the web channel version of the same document.
+    1. This opens the web channel version of the same document.
 
 1. For a quick reference to PDF directly:
 
@@ -423,7 +419,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 1. Navigate to your email client.
 1. Locate and open the Renewal Reminder email.
-1. Click on the "**Submit a new application**" button to open the adaptive form.
+1. Click **Submit a new application** so you can open the adaptive form.
 
     1. This section is intentionally left empty to support data pre-fill in phase 2.
 
@@ -437,15 +433,15 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 **This section**: Camila navigates to the Data Sources page to validate the data that the server has replicated within the Derby database.
 
-1. Once the user experience is complete and the user submission has been completed Camila navigates to the Data Sources tab within AEM Forms (**Forms** > **Data Integrations**)
+1. After the user experience is complete and the user submission is completed, Camila navigates to the Data Sources tab within AEM Forms (**Forms** > **Data Integrations**)
 
-1. Camila then selects AEM Forms **We.gov FDM** and then edit the **We.gov Enrollment FDM**.
+1. Camila then selects AEM Forms We.gov FDM and then edits the **We.gov Enrollment FDM**.
 
 1. Camila then selects the **Contact** > **Read Service** to be tested.
 
    ![Contact read service](assets/aftia-contact-read-service.jpg)
 
-1. Camila then provides the test service with a contact id and then clicks on Test button. For example, 1 or 2, if you submitted the form. If you have not submitted the form, no data is returned.
+1. Camila then provides the test service with a contact id and then clicks **Test**. For example, 1 or 2, if you submitted the form. If you have not submitted the form, no data is returned.
 
    ![Contact read service](assets/aftia-test-service.jpg)
 
@@ -475,30 +471,30 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
 ## (Optional) Analytics (Camila) {#analytics-cx-lead-camila}
 
-**This section:** Camila navigates to a dashboard where she can see across the agency KPI’s such as % of citizens who start filling a service request form and abandon, the average length of time from request submission to approval/denial response, and engagement statistics for the benefits handbooks she has sent to citizens.
+**This section:** Camila navigates to a dashboard where she can see across the agency KPIs such as % of citizens who start filling a service request form and abandon, the average length of time from request submission to approval/denial response, and engagement statistics for the benefits handbooks she has sent to citizens.
 
 ### Adobe Analytics Sites Reporting (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Navigate to *https://&lt;aemserver&gt;:&lt;port&gt;/sites.html/content*
-1. Select the "**AEM Forms We.Gov Site**" to view the site pages.
-1. Select one of the site page (e.g. Home), and choose "**Analytics & Recommendations**".
+1. Select **AEM Forms We.Gov Site** to view the site pages.
+1. Select one of the site pages (for example, Home), and choose **Analytics & Recommendations**.
 
    ![Analytics and Recommendation](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. On this page, you will see fetched information from Adobe Analytics which pertains to the AEM Sites page (NOTE: by design this information is periodically refreshed from Adobe Analytics and is not displayed in real-time).
+1. On this page, you see fetched information from Adobe Analytics which pertains to the AEM Sites page (NOTE: by design this information is periodically refreshed from Adobe Analytics and is not displayed in real time).
 
    ![Adobe Analytics key metrics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. Back on the page view page (accessed in step 3.), you can also view the page view information by changing the display setting to view items in the "**List View**".
-1. Locate the "**View**" dropdown menu and select "**List View**".
+1. Back on the page view page (accessed in step 3.), you can also view the page view information by changing the display setting to view items in **List View**.
+1. Locate the **View** drop-down menu and select **List View**.
 
    ![List view in View drop-down menu](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. From the same menu, select "**View Setting**" and select the columns you wish to display from the "**Analytics**" section.
+1. From the same menu, select **View Setting** and select the columns you wish to display from the **Analytics** section.
 
    ![Configure the display of columns](/help/forms/using/assets/view_setting_analytics.jpg)
 
-1. Click "**Update**" to make the new columns available.
+1. Click **Update** to make the new columns available.
 
    ![Make new columns available](/help/forms/using/assets/new_columns_available.jpg)
 
@@ -508,7 +504,7 @@ George approves Aya’s application, and thanks to an existing automated workflo
 
    *https://&lt;aemserver&gt;:&lt;port&gt;/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Select the "**Enrollment Application For Health Benefits**" adaptive form and select the "**Analytics Report**" option.
+1. Select the **Enrollment Application For Health Benefits** adaptive form and select the **Analytics Report** option.
 
    ![Enrollment Application for Health Benefits](/help/forms/using/assets/analytics_report_benefits.jpg)
 
