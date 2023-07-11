@@ -35,7 +35,7 @@ The /apps directory is the first place searched to resolve requests, and if not 
 
 The default component in the /libs directory must never be modified as future patches and upgrades are free to alter the /libs directory in any manner necessary while maintaining public interfaces.
 
-This is different from [extending](#extensions) a default component where the desire is to make modifications for a specific use, creating an unique path to the component and relying on referencing the original default component in the /libs directory as the super resource type.
+This is different from [extending](#extensions) a default component where the desire is to make modifications for a specific use, creating a unique path to the component and relying on referencing the original default component in the /libs directory as the super resource type.
 
 For a quick example of overlaying the comments component, try the [Overlay Comments Component tutorial](overlay-comments.md).
 
@@ -47,9 +47,9 @@ This is different from [overlaying](#overlays) the default component where the n
 
 For a quick example of extending the comments component, try the [Extend Comments Component tutorial](extend-comments.md).
 
-## Javascript Binding {#javascript-binding}
+## JavaScript Binding {#javascript-binding}
 
-The HBS script for the component must be bound to the JavaScript objects, models and views, which implement this feature.
+The HBS script for the component must be bound to the JavaScript objects, models, and views, which implement this feature.
 
 The value of the `data-scf-component` attribute may be the default, such as **`social/tally/components/hbs/rating`**, or an extended (customized) component for customized functionality, such as **weretail/components/hbs/rating**.
 
@@ -81,16 +81,16 @@ All properties set on a component/resource can be accessed by referencing the pr
 
 ## Skinning CSS {#skinning-css}
 
-Customizing components to match the overall theme of the website can be achieved by 'skinning' - changing colors, fonts, images, buttons, links, spacing and even positioning to a certain extent.
+Customizing components to match the overall theme of the website can be achieved by 'skinning' - changing colors, fonts, images, buttons, links, spacing, and even positioning to a certain extent.
 
-Skinning can be achieved by selectively overriding the framework styles or by writing entirely new style sheets. The SCF components define namespaced, modular and semantic CSS classes that affect the various elements that make up a component.
+Skinning can be achieved by selectively overriding the framework styles or by writing entirely new style sheets. The SCF components define namespaced, modular, and semantic CSS classes that affect the various elements that make up a component.
 
 To skin a component:
 
-1. Identify the elements that you want to change (example - composer area, toolbar buttons, message font, etc).
+1. Identify the elements that you want to change (example - composer area, toolbar buttons, message font, and so on).
 1. Identify the CSS class/rules that affect these elements.
-1. Create a stylesheet file (.css).
-1. Include the stylesheet in a client library folder ([clientlibs](#clientlibs-for-scf)) for your site and make sure it is included from your templates and pages with [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Create a style sheet file (.css).
+1. Include the style sheet in a client library folder ([clientlibs](#clientlibs-for-scf)) for your site and make sure it is included from your templates and pages with [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Redefine the CSS classes and rules that you have identified (#2) in your style sheet and add styles.
 
@@ -98,17 +98,17 @@ The custom styles will now override the default framework styles and the compone
 
 >[!CAUTION]
 >
->Any CSS class name that is prefixed with `scf-js` has a specific use in javascript code. These classes affect the state of a component (for example, toggle from hidden to visible) and should neither be overriden nor removed.
+>Any CSS class name that is prefixed with `scf-js` has a specific use in JavaScript code. These classes affect the state of a component (for example, toggle from hidden to visible) and should neither be overridden nor removed.
 >
->While the `scf-js` classes do not affect styles, the class names may be used in stylesheets with the caveat that, as they control the states of elements, there may be side effects.
+>While the `scf-js` classes do not affect styles, the class names may be used in style sheets with the caveat that, as they control the states of elements, there may be side effects.
 
-## Extending Javascript {#extending-javascript}
+## Extending JavaScript {#extending-javascript}
 
-To extend a components Javascript implementation, you need to:
+To extend a components JavaScript implementation, you need to:
 
-1. Create a component for you app with a jcr:resourceSuperType set to the value of the extended component's jcr:resourceType, e.g. social/forum/components/hbs/forum.
-1. Examine the default SCF component's Javascript to determine what methods need to be registered using SCF.registerComponent().
-1. Either copy the extended component's Javascript or start from scratch.
+1. Create a component for your app with a jcr:resourceSuperType set to the value of the extended component's jcr:resourceType, e.g. social/forum/components/hbs/forum.
+1. Examine the default SCF component's JavaScript to determine what methods need to be registered using SCF.registerComponent().
+1. Either copy the extended component's JavaScript or start from scratch.
 1. Extend the method.
 1. Use SCF.registerComponent() to register all methods with either the defaults or the customized objects and views.
 
@@ -139,13 +139,13 @@ To extend a components Javascript implementation, you need to:
 
 ## Script Tags {#script-tags}
 
-Script tags are an inherent part of the client side framework. They are the glue that helps bind the markup generated on the server side with the models and views on the client side.
+Script tags are an inherent part of the client-side framework. They are the glue that helps bind the markup generated on the server side with the models and views on the client side.
 
 Script tags in SCF scripts should not be removed when overlaying or overriding components. SCF script tags auto created for injecting JSON in the HTML are identified with the attribute `data-scf-json=true`.
 
 ## Clientlibs for SCF {#clientlibs-for-scf}
 
-The use of [client-side libraries](../../help/sites-developing/clientlibs.md) (clientlibs), provides a means of organizing and optimizing the Javascript and CSS used to render content on the client.
+The use of [client-side libraries](../../help/sites-developing/clientlibs.md) (clientlibs), provides a means of organizing and optimizing the JavaScript and CSS used to render content on the client.
 
 The clientlibs for SCF follow a very specific naming pattern for two variants, which vary only by the presence of 'author' in the category name:
 
@@ -173,7 +173,7 @@ The [Community Components guide](components-guide.md) lists the complete clientl
 
 ### Author Clientlibs {#author-clientlibs}
 
-The author version clientlibs are stripped down to the minimal Javascript necessary to implement the component.
+The author version clientlibs are stripped down to the minimal JavaScript necessary to implement the component.
 
 These clientlibs should never be directly included, but instead are available to embed into other clientlibs, which are handcrafted for a site.
 
@@ -194,8 +194,8 @@ The required author clientlibs can be identified by inserting "author" into the 
 
 Every site is different in how they manage client libraries. Various factors include:
 
-* Overall Speed: Maybe the desire is for the site to be responsive, but it is acceptable for the first page to be a little slow to load. If many of the pages use the same Javascript, then the various Javascripts can be embeded into one clientlib and referenced from the first page to load. The Javascript in this single download remains cached, minimizing the amount of data to download for subsequent pages.
-* Short Time to First Page: Maybe the desire is for the first page to load quickly. In this case, the Javascript is in multiple small files to be referenced only where needed.
+* Overall Speed: Maybe the desire is for the site to be responsive, but it is acceptable for the first page to be a little slow to load. If many of the pages use the same JavaScript, then the various JavaScript can be embedded into one clientlib and referenced from the first page to load. The JavaScript in this single download remains cached, minimizing the amount of data to download for subsequent pages.
+* Short Time to First Page: Maybe the desire is for the first page to load quickly. In this case, the JavaScript is in multiple small files to be referenced only where needed.
 * A balance between first page load and subsequent downloads.
 
 | **[⇐ Feature Essentials](essentials.md)** |**[Server-side Customization ⇒](server-customize.md)** |
