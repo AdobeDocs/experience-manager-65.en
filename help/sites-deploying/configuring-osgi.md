@@ -119,7 +119,9 @@ These files can be included in content packages and reused on other instances.
 
 >[!NOTE]
 >
->The format of the configuration files is specific - see the [Sling Apache documentation](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) for full details.
+>The format of the configuration files is specific - see the Sling Apache documentation for:
+>* full details of [the Apache Sling Provisioning Model and Apache SlingStart](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* tutorials and examples of [Getting Resources and Properties in Sling](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >For this reason, it is recommended to create and maintain the configuration file by making actual changes in the web console.
 
