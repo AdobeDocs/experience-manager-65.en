@@ -1,35 +1,31 @@
 ---
 title: Creating a Custom Cloud Service
-seo-title: Creating a Custom Cloud Service
 description: The default set of Cloud Services can be extended with custom Cloud Service types
-seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
-uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 ---
 # Creating a Custom Cloud Service{#creating-a-custom-cloud-service}
 
-The default set of Cloud Services can be extended with custom Cloud Service types. This allows you to inject custom markup into the page in a structured fashion. This will be primarily of use for 3rd party analytics providers, for example Google Analytics, Chartbeat, etc. Cloud Services are inherited from parent pages to child pages with the ability to break the inheritance at any level.
+The default set of Cloud Services can be extended with custom Cloud Service types. This allows you to inject custom markup into the page in a structured fashion. This is primarily of use for third party analytics providers, for example Google Analytics, Chartbeat, and so on. Cloud Services are inherited from parent pages to child pages with the ability to break the inheritance at any level.
 
 >[!NOTE]
 >
->This step-by-step guide for creating a new Cloud Service is an example using Google Analytics. Everything might not apply to your use case.
+>This step-by-step guide for creating a Cloud Service is an example using Google Analytics. Everything might not apply to your use case.
 
-1. In CRXDE Lite, ceate a new node under `/apps`:
+1. In CRXDE Lite, create a node under `/apps`:
 
     * **Name**: `acs`
     * **Type**: `nt:folder`
 
-1. Create a new node under `/apps/acs`:
+1. Create a node under `/apps/acs`:
 
     * **Name**: `analytics`
     * **Type**: `sling:Folder`
 
-1. Create 2 new nodes under `/apps/acs/analytics`:
+1. Create two nodes under `/apps/acs/analytics`:
 
     * **Name**: components
     * **Type**: `sling:Folder`
@@ -39,7 +35,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
     * **Name**: templates
     * **Type**: `sling:Folder`
 
-1. Right click on `/apps/acs/analytics/components`. Select **Create...** followed by **Create Component...** The dialog that opens allows you to specify:
+1. Right-click on `/apps/acs/analytics/components`. Select **Create...** followed by **Create Component...** The dialog that opens allows you to specify:
 
     * **Label**: `googleanalyticspage`
     * **Title**: `Google Analytics Page`
@@ -57,7 +53,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
     * **Name:** `cq:defaultView`
     * **Value:** `html`
 
-1. Create a new file named `content.jsp` under `/apps/acs/analytics/components/googleanalyticspage`, with the following content:
+1. Create a file named `content.jsp` under `/apps/acs/analytics/components/googleanalyticspage`, with the following content:
 
    ```xml
    <%@page contentType="text/html"
@@ -72,7 +68,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
    </div>
    ```
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Create a node under `/apps/acs/analytics/components/googleanalyticspage/`:
 
     * **Name**: `dialog`
     * **Type**: `cq:Dialog`
@@ -85,7 +81,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
         * **Type**: `String`
         * **Value**: `dialog`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Create a node under `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
     * **Name**: `items`
     * **Type**: `cq:Widget`
@@ -95,12 +91,12 @@ The default set of Cloud Services can be extended with custom Cloud Service type
         * **Type**: `String`
         * **Value**: `tabpanel`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Create a node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
     * **Name**: `items`
     * **Type**: `cq:WidgetCollection`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Create a node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
     * **Name**: tab1
     * **Type**: `cq:Panel`
@@ -110,7 +106,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
         * **Type**: `String`
         * **Value**: `Config`
 
-1. Create a new node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Create a node under `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
     * **Name**: items
     * **Type**: `nt:unstructured`
@@ -135,7 +131,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
         * **Value**: `textfield`
 
 1. Copy `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` to `/apps/acs/analytics/components/googleanalyticspage/body.jsp` and change `libs` to `apps` on line 34 and make the script reference on line 79 a fully qualified path.
-1. Create a new template under `/apps/acs/analytics/templates/`:
+1. Create a template under `/apps/acs/analytics/templates/`:
 
     * with **Resource Type** = `acs/analytics/components/googleanalyticspage`
     * with **Label** = `googleanalytics`
@@ -145,7 +141,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
     * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (on template node, not the jcr:content node)
     * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (on jcr:content)
 
-1. Create new component: `/apps/acs/analytics/components/googleanalytics`.
+1. Create a component: `/apps/acs/analytics/components/googleanalytics`.
 
    Add the following content to `googleanalytics.jsp`:
 
@@ -188,7 +184,7 @@ The default set of Cloud Services can be extended with custom Cloud Service type
 
    This should output the custom markup based on the configuration properties.
 
-1. Navigate to `http://localhost:4502/miscadmin#/etc/cloudservices` and create a new page:
+1. Navigate to `http://localhost:4502/miscadmin#/etc/cloudservices` and create a page:
 
     * **Title**: `Google Analytics`
     * **Name**: `googleanalytics`
@@ -199,13 +195,13 @@ The default set of Cloud Services can be extended with custom Cloud Service type
     * **Type**: `String`
     * **Value**: `acs/analytics/components/googleanalytics`
 
-1. Navigate to the newly created Service page ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) and click the **+** to create a new config:
+1. Navigate to the newly created Service page ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) and click the **+** to create a config:
 
     * **Parent Configuration**: `/etc/cloudservices/googleanalytics`
     * **Title:**  `My First GA Config`
 
    Choose **Google Analytics Configuration** and click **Create**.
 
-1. Enter a **Account ID**, for example `AA-11111111-1`. Click **OK**.
+1. Enter an **Account ID**, for example `AA-11111111-1`. Click **OK**.
 1. Navigate to a page and add the newly created configuration in the page properties, under the **Cloud Services** tab.
 1. The page will have the custom markup added to it.
