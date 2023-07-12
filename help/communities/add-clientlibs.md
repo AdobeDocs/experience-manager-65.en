@@ -1,14 +1,10 @@
 ---
 title: Add Clientlibs
-seo-title: Add Clientlibs
 description: Add a ClientLibraryFolder
-seo-description: Add a ClientLibraryFolder
-uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 ---
@@ -39,7 +35,7 @@ In the **Properties** tab for the new `clientlibs` node, enter the **categories*
 * Click **Add**
 * Click **Save All**
 
-Note : prefacing the categories value with 'apps.' is a convention to identify the 'owning application' as being in the /apps folder, not /libs.  IMPORTANT : Add placeholder `js.tx`t and **`css.txt`** files. (It's not officially a cq:ClientLibraryFolder without them.)
+Note: prefacing the categories value with 'apps.' is a convention to identify the 'owning application' as being in the /apps folder, not /libs. IMPORTANT: Add placeholder `js.tx`t and **`css.txt`** files. (It's not officially a cq:ClientLibraryFolder without them.)
 
 1. Right-click **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Select **Create File...**
@@ -69,15 +65,15 @@ Then create a file under clientlibs named style.css, and set the content to
 
 ### Embed SCF Clientlibs {#embed-scf-clientlibs}
 
-In the **Properties** tab for the `clientlibs` node, enter the multi-value String property **embed**. This embeds the necessary [client-side libraries (clientlibs) for SCF components](/help/communities/client-customize.md#clientlibs-for-scf). For this tutorial many of the clientlibs necessary for the Communities components are added.
+In the **Properties** tab for the `clientlibs` node, enter the multi-value String property **embed**. This embeds the necessary [client-side libraries (clientlibs) for SCF components](/help/communities/client-customize.md#clientlibs-for-scf). For this tutorial, many of the clientlibs necessary for the Communities components are added.
 
-**Note** that this may or may not be the desired approach to use for a production site as there are considerations of convenience versus size/speed of the clientlibs downloaded for every page.
+This may or may not be the desired approach to use for a production site as there are considerations of convenience versus size/speed of the clientlibs downloaded for every page.
 
-If only using one feature on one page, you could include that feature's complete clientlib directly on the page, e.g., 
+If only using one feature on one page, you could include that feature's complete clientlib directly on the page, for example, 
 
 `% ui:includeClientLib categories=cq.social.hbs.forum" %`
 
-In this case, including them all and so the more basic SCF clientlibs which are the author clientlibs are prefered:
+In this case, including them all and so the more basic SCF clientlibs which are the author clientlibs are preferred:
 
 * Name : **`embed`**
 * Type : **`String`**
@@ -105,7 +101,7 @@ This is how `/etc/designs/an-scf-sandbox/clientlibs` should now appear in the re
 
 ### Include Clientlibs in PlayPage Template {#include-clientlibs-in-playpage-template}
 
-Without including the `apps.an-scf-sandbox` ClientLibraryFolder category on the page, the SCF components will not be functional nor styled as the necessary Javascript(s) and style(s) will not be available.
+Without including the `apps.an-scf-sandbox` ClientLibraryFolder category on the page, the SCF components are not functional nor styled as the necessary JavaScript and styles are not available.
 
 For example, without including the clientlibs, the SCF comments component appears unstyled :
 
@@ -149,9 +145,9 @@ Load your website in the browser and see if the background is not a shade of blu
 
 ### Saving Your Work So Far {#saving-your-work-so-far}
 
-At this point, there exists a minimalist sandbox, and it might be worth saving as a package so that, while playing, if your repository becomes corrupt and you desire to start over, you can turn your server off, rename or delete the folder crx-quickstart/, turn your server on, upload and install this saved package, and not have to repeat these most basic of steps.
+At this point, there exists a minimalist sandbox, and it might be worth saving as a package so that, while playing, if your repository becomes corrupt and you desire to start over, you can turn off your server, rename or delete the folder crx-quickstart/, turn on your server, upload and install this saved package, and not have to repeat these most basic of steps.
 
-This package exists on the [Create a Sample Page](/help/communities/create-sample-page.md) tutorial for those who can't wait to just jump in and start playing!...
+This package exists on the [Create a Sample Page](/help/communities/create-sample-page.md) tutorial for those who can't wait to jump in and start playing!...
 
 To create a package:
 
@@ -181,4 +177,4 @@ To create a package:
 
 * Click **Build**
 
-Now you can select **Download** to save it to disk and **Upload Package** elsewhere, as well as select **More > Replicate** in order to push the sandbox to a localhost publish instance to expand the realm of your sandbox.
+Now you can select **Download** to save it to disk and **Upload Package** elsewhere, and select **More > Replicate** to push the sandbox to a localhost publish instance to expand the realm of your sandbox.
