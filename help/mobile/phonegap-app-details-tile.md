@@ -1,29 +1,25 @@
 ---
 title: Manage App Tile
-seo-title: Manage App Tile
 description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
-seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
-uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 ---
 # Manage App Tile{#manage-app-tile}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
-The **Manage App** Tile on the App Dashboard provides the ability to modify details about the Application. To open the Details page click on the Manage App tile's details link. From within the Manage App page you can edit the PhoneGap Application Configuration (config.xml) settings and prepare your application for submission to the various application stores.
+The **Manage App** Tile on the App Dashboard provides the ability to modify details about the Application. To open the Details page, click the Manage App tile's details link. From within the Manage App page, you can edit the PhoneGap Application Configuration (config.xml) settings and prepare your application for submission to the various application stores.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
 ## Understanding the Manage App Tile {#understanding-the-manage-app-tile}
 
-You can drill into each tile in the **Manage App** tile to view or edit details by clicking the '...' in the bottom right corner.
+You can drill into each tile in the **Manage App** tile to view or edit details by clicking the '...' in the bottom-right corner.
 
 ### The Basic tab {#the-basic-tab}
 
@@ -35,7 +31,7 @@ You can edit the **Name**, **Author**, **Short Description**, and the **Descript
 
 Each mobile application platform describes what data is collected, targeting each application store specifically.
 
-Platforms displayed is driven by the PhoneGap config.xml content:
+Platforms displayed are driven by the PhoneGap config.xml content:
 
 ```xml
 <widget>
@@ -44,7 +40,7 @@ Platforms displayed is driven by the PhoneGap config.xml content:
 </widget>
 ```
 
-Each vendor application store, such as Apple App Store or Google Play Store, for example, requires one or more screenshots of your mobile application in order to display your application details to customers. These screenshots can have strict requirements around dimensions and content (basically they must truly represent the application). AEM Apps provides support for selecting and managing these screenshots for the supported platforms and view port dimensions as required by each vendor's application store.
+Each vendor application store&mdash;for example, Apple App Store or Google Play Store&mdash;requires one or more screenshots of your mobile application to display your application details to customers. These screenshots can have strict requirements around dimensions and content (basically they must truly represent the application). AEM Apps provides support for selecting and managing these screenshots for the supported platforms and view port dimensions as required by each vendor's application store.
 
 >[!NOTE]
 >
@@ -72,7 +68,7 @@ Within this section you define the Content Update Server URL, landing page for y
 
 **PhoneGap Version** is the version in which you wish to compile your application with PhoneGap. Best practice is to keep up with the current version in order to ensure you get the latest and greatest features and bug fixes.
 
-**Content Update Server URL** is the URL which your application will use to call for ContentSync updates. It must be set to your dispatcher URL or, if not using a dispatcher, to one of your publish instances that will be used to serve ContentSync updates to your application.
+**Content Update Server URL** is the URL which your application will use to call for ContentSync updates. It must be set to your Dispatcher URL or, if not using a Dispatcher, to one of your publish instances that will be used to serve ContentSync updates to your application.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -106,9 +102,9 @@ The export functionality is used to provide a convenient way of collecting the s
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Android Metadata {#android-metadata}
+#### Android&trade; Metadata {#android-metadata}
 
-When selecting the Android platform, there is no custom metadata at this point that can be set. When clicking on the download button as zip file will be generated with a properties file that contains all the metadata and associated screenshots.
+When selecting the Android&trade; platform, there is no custom metadata at this point that can be set. When clicking the download button, a zip file is generated with a properties file that contains all the metadata and associated screenshots.
 
 The export functionality is used to provide a convenient way of collecting the screenshots and metadata that can be passed along to the application publisher for input into the vendor specific application store.
 
@@ -118,7 +114,7 @@ The export functionality is used to provide a convenient way of collecting the s
 
 One of the key features of AEM Apps is the ability to have a mobile application request new content through ContentSync, where content can be html resources, pages, video, images, text and more. Once a content author has updated content and then publishes that content the server makes the content update available for the mobile application to download.
 
-The Content Update Server URL property is the URL that must point to a publish instance; either directly or through the dispatcher or CDN. The format of the URL is simply:
+The Content Update Server URL property is the URL that must point to a publish instance; either directly or through the Dispatcher or CDN. The format of the URL is simply:
 
 `https://[hostname]:[port]`
 
@@ -144,13 +140,13 @@ The **Screenshots** tab displays the supported screenshot resolutions on differe
 
 ### The Authentication tab {#the-authentication-tab}
 
-The **Authentication** tab allows you to select an OAuth client to be assoicated with your application and enables a developer to utilize Adobe Experience Manager's OAuth authentication.
+The **Authentication** tab lets you select an OAuth client to associate with your application and enables a developer to use Adobe Experience Manager's OAuth authentication.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ### The Next Steps {#the-next-steps}
 
-Once you have learnt about Managing App Tile in the application dashboard, see the following resources for other authoring roles:
+Once you have learned about Managing App Tile in the application dashboard, see the following resources for other authoring roles:
 
 * [Editing App Metadata](/help/mobile/phonegap-editmetadata.md)
 * [App Definitions](/help/mobile/phonegap-app-definitions.md)

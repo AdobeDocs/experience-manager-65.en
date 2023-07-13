@@ -1,14 +1,10 @@
 ---
 title: Teasers and Strategies
-seo-title: Teasers and Strategies
 description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
-seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
-uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 ---
@@ -18,25 +14,25 @@ Campaigns often use teasers as a mechanism to entice a specific segment of the v
 
 >[!NOTE]
 >
->The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-authoring/content-targeting-touch.md) instead.
+>The Teaser component is now deprecated in AEM 6.2. Instead, use the [Target component](/help/sites-authoring/content-targeting-touch.md).
 
 * **Brand pages** are stored within the Campaigns section of the website. A brand contains the individual campaigns.
 * **Campaign pages** are stored within the Campaigns section of the website. Each campaign has an individual page, under which the teaser definitions are held. The container, or overview, page also holds certain information and statistics concerning the individual teaser pages.
 
-Teasers within AEM are comprised of several parts:
+Teasers within AEM are composed of several parts:
 
 * **Teaser pages** are stored under the appropriate campaign page and hold the definitions of the teaser paragraphs available for each specific campaign. These definitions are used when displaying the teaser paragraphs; including content variations, the segment to be used for selecting a variation and boost factor.
-* The **Teaser component** is available out of the box and allows you to create an instance of your specific teaser paragraph in a content page. You can drag the teaser component from the sidekick, then specify your teaser definition to create your own teaser paragraph. **Note:** The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-authoring/content-targeting-touch.md) instead.
+* The **Teaser component** is available out of the box and allows you to create an instance of your specific teaser paragraph in a content page. You can drag the teaser component from the sidekick, then specify your teaser definition to create your own teaser paragraph. **Note:** The Teaser component is now deprecated in AEM 6.2. Instead, use the [Target component](/help/sites-authoring/content-targeting-touch.md).
 * **Teaser paragraphs** are actual instances of your teaser within a content page. These entice a segment of visitors through to content focused on their interests.
-* Pages that hold the campaign content focused on a specific visitor segment. Usually the teaser paragraphs will lead the visitor to such pages.
+* Pages that hold the campaign content focused on a specific visitor segment. Usually, the teaser paragraphs lead the visitor to such pages.
 
 ## Strategies {#strategies}
 
-When adding a teaser paragraph to a page you need to define the **Strategy**.
+When adding a teaser paragraph to a page, you must define the **Strategy**.
 
 This is for the case that several teasers are available for selection as their assigned segments all resolve successfully. The **Strategy** then specifies an extra criteria used to select the teaser shown:
 
-* **Clickstream Score**, is based on the tags and related tag hits held within the visitor's client context (show how often a visitor has clicked on pages containing the respective tag). The hit rates for tags defined on the teaser page are compared.
+* **Clickstream Score**, is based on the tags and related tag hits held within the visitor's client context (show how often a visitor has clicked pages that contain the respective tag). The hit rates for tags defined on the teaser page are compared.
 * **Random**, for "random" selection; uses the random factor generated for a page, this can be seen with the [client context](/help/sites-administering/client-context.md).
 * **First** in the list of resolved segments. The order is that of the teasers within the campaign container page.
 
@@ -62,7 +58,7 @@ And we use the following teaser definitions:
   <tr>
    <td>Campaign</td>
    <td>Teaser</td>
-   <td>Assigned Segment(s)</td>
+   <td>Assigned Segments</td>
    <td>Assigned Tags </td>
   </tr>
   <tr>
@@ -106,10 +102,10 @@ And we use the following teaser definitions:
 
 Then if we apply this to a visitor where:
 
-* **S1**, **S2** and **S6** resolve successfully
+* **S1**, **S2, and **S6** resolve successfully
 
-* the tag **marketing** has 3 hits
-* the tag **business** has 6 hits
+* the tag **marketing** has three hits
+* the tag **business** has six hits
 
 We can see the resulting:
 
@@ -124,7 +120,7 @@ that are calculated before applying the appropriate strategy:
   <tr>
    <td>Campaign</td>
    <td>Teaser</td>
-   <td>Assigned Segment(s)</td>
+   <td>Assigned Segments</td>
    <td>Tags </td>
    <td>Successful Match?</td>
    <td>Resulting Boost Factor</td>
@@ -187,7 +183,7 @@ that are calculated before applying the appropriate strategy:
  </tbody>
 </table>
 
-These values are used to determined the teaser(s) that the visitor will see, depending on the **Strategy** applied to the teaser paragraph:
+These values are used to determine the teasers that the visitor will see, depending on the **Strategy** applied to the teaser paragraph:
 
 <table>
  <tbody>
@@ -218,22 +214,22 @@ These values are used to determined the teaser(s) that the visitor will see, dep
 >
 >If, after the above resolution techniques, multiple teasers are available for selection, then an internal selection (random) will select a single teaser for display.
 >
->For example, if the strategy was Clickstream Score and T5 had the same Clickstream Score as T6 (i.e. 6 instead of 3) then the internal selection (random) would be used to select one of these two.
+>For example, if the strategy was Clickstream Score and T5 had the same Clickstream Score as T6 (that is, six instead of three) then the internal selection (random) would be used to select one of these two.
 
-Teaser Pages / Paragraphs are used to steer specific visitor segments to content that is focused on their interests. They can present a range of options for the visitor to choose from, or show only one teaser paragraph that is based on the specific visitor segment; for example, the teaser paragraph shown may be dependent on the age of the visitor.
+Teaser Pages / Paragraphs are used to steer specific visitor segments to content that is focused on their interests. They can present a range of options for the visitor to choose from, or show only one teaser paragraph that is based on the specific visitor segment. For example, the teaser paragraph shown may be dependent on the age of the visitor.
 
-Typically a teaser page is a temporary action that will last for a specific period of time, until it is replaced by the next teaser page.
+Typically a teaser page is a temporary action that will last for a specific amount of time, until it is replaced by the next teaser page.
 
-After creating your brand and campaign you can create and set up your teaser experience.
+After creating your brand and campaign, you can create and set up your teaser experience.
 
 ### Creating a Touchpoint for your Teaser {#creating-a-touchpoint-for-your-teaser}
 
 >[!NOTE]
 >
->The Teaser component has been deprecated in AEM 6.2. Please use the [Target component](/help/sites-authoring/content-targeting-touch.md) instead.
+>The Teaser component is now deprecated in AEM 6.2. Instead, use the [Target component](/help/sites-authoring/content-targeting-touch.md).
 
 1. Navigate to the content page where you want to place the teaser paragraph that will lead to your campaign page.
-1. Add a **Teaser** component (available in the **Personalization** section of sidekick) in the required position. When first created it will show that the campaign path is not yet configured:
+1. Add a **Teaser** component (available in the **Personalization** section of sidekick) in the required position. When first created, it will show that the campaign path is not yet configured:
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -251,7 +247,7 @@ After creating your brand and campaign you can create and set up your teaser exp
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
-1. Mouse over the teaser paragraph to reveal the question mark icon (bottom right corner of the component). Click this to view the segments applied and whether they currently resolve.
+1. Mouse over the teaser paragraph to reveal the question mark icon (bottom-right corner of the component). Click this to view the segments applied and whether they currently resolve.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 

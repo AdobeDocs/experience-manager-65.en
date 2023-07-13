@@ -1,14 +1,10 @@
 ---
 title: Cloud Service Configurations
-seo-title: Cloud Service Configurations
 description: You can extend the existing instances to create your own configurations
-seo-description: You can extend the existing instances to create your own configurations
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
 ---
 # Cloud Service Configurations{#cloud-service-configurations}
@@ -21,12 +17,12 @@ You can extend the existing instances to create your own configurations.
 
 The principles used in developing the configurations have been based on the following concepts:
 
-* Services/Adapters are used to retrieve the configuration(s).
-* Configurations (e.g. properties/paragraphs) are inherited from the parent(s).
-* Referenced from analytics node(s) by path.
+* Services/Adapters are used to retrieve the configurations.
+* Configurations (for example, properties/paragraphs) are inherited from the parents.
+* Referenced from analytics nodes by path.
 * Easily extensible.
 * Has the flexibility to cater for more complex configurations, such as [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Support for dependencies (e.g. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) plugins need a [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuration).
+* Support for dependencies (for example, [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) plugins need an [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) configuration).
 
 ## Structure {#structure}
 
@@ -34,15 +30,15 @@ The base path of the configurations is:
 
 `/etc/cloudservices`.
 
-For each type of configuration a template and a component will be provided.This makes it possible to have configuration templates that can fulfil most needs after being customized.
+For each type of configuration, a template and a component is provided. This makes it possible to have configuration templates that can fulfill most needs after being customized.
 
-To provide a configuration for a new services you need to:
+To provide a configuration for new services, do the following:
 
-* create a servicepage in
+* Create a servicepage in
 
   `/etc/cloudservices`
 
-* under this:
+* Under this:
 
   * a configuration template
   * a configuration component
@@ -51,7 +47,7 @@ The template and component must inherit the `sling:resourceSuperType` from the b
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-or base component respectively
+Or base component respectively
 
 `cq/cloudserviceconfigs/components/configpage`
 
@@ -61,11 +57,11 @@ The service provider should also provide the service page:
 
 ### Template {#template}
 
-Your template will extend the base template:
+Your template extends the base template:
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-and define a `resourceType` that points to the custom component.
+And define a `resourceType` that points to the custom component.
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -100,7 +96,7 @@ Your component should extend the base component:
 
 ```
 
-After setting up your template and component you can add your configuration by adding subpages under:
+After setting up your template and component, you can add your configuration by adding subpages under:
 
 `/etc/cloudservices/<service-name>`
 
@@ -133,7 +129,7 @@ propertyname
 
 ### API {#api}
 
-For reference documentation on the API see [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+For reference documentation on the API, see [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
 ### AEM Integration {#aem-integration}
 
@@ -148,7 +144,7 @@ The tab also provides:
 
 When storing user credentials for the service, all passwords should be encrypted.
 
-You can achieve this by adding a hidden form field. This field should have the annotation `@Encrypted` in the property name; i.e. for the `password` field the name would be written as:
+You can achieve this by adding a hidden form field. This field should have the annotation `@Encrypted` in the property name; that is, for the `password` field the name would be written as:
 
 `password@Encrypted`
 
@@ -172,7 +168,7 @@ The property will then be automatically encrypted (using the `CryptoSupport` ser
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Reference path to a component to be automatically included in the page.<br /> This is used for additional functionality and JS inclusions.<br /> This includes the component on the page where<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> is included (normally before the <code>body</code> tag).<br /> In case the of Analytics and Target we use this to include additional functionality, such as JavaScript calls to track visitor behavior.</td>
+   <td>Reference path to a component to be automatically included in the page.<br /> This is used for additional functionality and JS inclusions.<br /> This includes the component on the page where<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> is included (normally before the <code>body</code> tag).<br /> In case the of Adobe Analytics and Adobe Target, we use this to include additional functionality, such as JavaScript calls to track visitor behavior.</td>
   </tr>
   <tr>
    <td>description</td>
@@ -213,7 +209,7 @@ The property will then be automatically encrypted (using the `CryptoSupport` ser
 
 These services are provided by default:
 
-* [Tracker Snippets](/help/sites-administering/external-providers.md) (Google, WebTrends etc.)
+* [Tracker Snippets](/help/sites-administering/external-providers.md) (Google, WebTrends, and so on)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->

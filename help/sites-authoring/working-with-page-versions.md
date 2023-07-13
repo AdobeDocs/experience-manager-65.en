@@ -1,12 +1,10 @@
 ---
 title: Work with content page versions
 description: Create, compare, and restore versions of a page
-uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 ---
@@ -50,7 +48,7 @@ You can create a version of your resource from:
 1. Navigate to show the page for which you want to create a version.
 1. Select the page in [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Select the **Create** option from the toolbar to open the dialog.
-1. In the dialog, you can enter a **Label** and a **Comment** if required:
+1. In the dialog box, you can enter a **Label** and a **Comment**, if required:
 
    ![Enter a label and comment](assets/screen_shot_2012-02-15at105050am.png)
 
@@ -83,7 +81,7 @@ Once you have created a version of your page, there are various methods of reins
 >To illustrate:  
 >
 >1. Create versions of any page.
->1. The initial labels and version node names will be 1.0, 1.1, 1.2 and so forth.  
+>1. The initial labels and version node names will be 1.0, 1.1, 1.2, and so forth.  
 >1. Reinstate the first version; in this case, 1.0.
 >1. Create versions again.
 >1. The generated labels and node names will now be 1.0.0, 1.0.1, 1.0.2, and so on.
