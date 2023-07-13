@@ -98,7 +98,7 @@ AEM provides capabilities to convert queries (both types) to [Persisted Queries]
 
 ### GraphQL Query Best Practices (Dispatcher and CDN) {#graphql-query-best-practices}
 
-The [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md) are the recommended method to be used on publish instances as:
+[Persisted queries](/help/sites-developing/headless/graphql-api/persisted-queries.md) are the recommended method to be used on publish instances as:
 
 * they are cached
 * they are managed centrally by AEM 
@@ -110,7 +110,9 @@ The [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-qu
 
 GraphQL queries using POST requests are not recommended as they are not cached, so on a default instance the Dispatcher is configured to block such queries.
 
-While GraphQL also supports GET requests, these requests can hit limits (for example the length of the URL) that can be avoided using Persisted Queries.
+While GraphQL also supports GET requests, these requests can hit limits (for example the length of the URL) that can be avoided using persisted queries.
+
+See [Enable caching of persisted queries](#enable-caching-persisted-queries) for further details.
 
 >[!NOTE]
 >
