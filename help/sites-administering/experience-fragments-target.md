@@ -56,7 +56,7 @@ AEM Experience Fragments can be exported to the default workspace in Adobe Targe
 >
 >For further information see also:
 >
->* [Adobe Target development](http://developers.adobetarget.com/)
+>* [Adobe Target development](https://developers.adobetarget.com/)
 >* [Core Components - Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
