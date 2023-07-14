@@ -1,12 +1,10 @@
 ---
 title: Adding Adobe Analytics Tracking to Components
 description: Adding Adobe Analytics Tracking to Components
-uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
 ---
 # Adding Adobe Analytics Tracking to Components{#adding-adobe-analytics-tracking-to-components}
@@ -32,7 +30,7 @@ The ContextHub entry should be included immediately below the `<head>` tag, whil
 
 The `contexthub` script that you insert after the `<head>` element adds the ContextHub features to the page.
 
-The `cloudservices` scripts that you add in the `<head>` and the `<body>` sections apply to the cloud services configurations that are added to the page. (If the page uses more than one Cloud Services configuration, you need to include the ContextHub jsp and the Cloud Services jsp only once.)
+The `cloudservices` scripts that you add in the `<head>` and the `<body>` sections apply to the cloud services configurations that are added to the page. (If the page uses more than one Cloud Services configuration, you must include the ContextHub jsp and the Cloud Services jsp only once.)
 
 When an Adobe Analytics framework is added to the page, the `cloudservices` scripts generate Adobe Analytics-related JavaScript and references to client-side libraries, similar to the following example:
 
@@ -164,13 +162,13 @@ Configure the topnav component and edit the JSP file to define the tracking even
     * Name: `analytics`
     * Type: `nt:unstructured`
 
-1. Add the following property to the analytics node to name the tracking event:
+1. Add the following property to the analytics node so you can name the tracking event:
 
     * Name: cq:trackevents
     * Type: String
     * Value: topnavClick
 
-1. Add the following property to the analytics node to name the data variables:
+1. Add the following property to the analytics node so you can name the data variables:
 
     * Name: cq:trackvars
     * Type: String
@@ -190,7 +188,7 @@ Configure the topnav component and edit the JSP file to define the tracking even
 
 1. Click Save All.
 1. Open the `topnav.jsp` file.
-1. In the a element, add the following attribute:
+1. In the element, add the following attribute:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -356,7 +354,7 @@ The `analytics` node of the component must expose the variable names using the `
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-The eCommerce module provides several components that generate s.products variable data. For example, the submitorder component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) generates JavaScript that is similar to the following example:
+The eCommerce module provides several components that generate s.products variable data. For example, the `submitorder` component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) generates JavaScript that is similar to the following example:
 
 ```
 <script type="text/javascript">
@@ -432,6 +430,6 @@ The eCommerce module provides several components that generate s.products variab
 
 #### Limiting the Size of Tracking Calls {#limiting-the-size-of-tracking-calls}
 
-Generally, web browsers limit the size of GET requests. Because CQ product and SKU values are repository paths, product arrays that include multiple values can exceed the request size limit. Therefore, your components should limit the number of items in the `product` array of each `CQ_Analytics.record function`. Create multiple functions if the number of items that you need to track can exceed the limit.
+Generally, web browsers limit the size of GET requests. Because CQ product and SKU values are repository paths, product arrays that include multiple values can exceed the request size limit. Therefore, your components should limit the number of items in the `product` array of each `CQ_Analytics.record function`. Create multiple functions if the number of items that you must track can exceed the limit.
 
-For example, the eCommerce submitorder component limits the number of `product` items in a call to four. When the cart contains more than four products, it generates multiple `CQ_Analytics.record` functions.
+For example, the eCommerce `submitorder` component limits the number of `product` items in a call to four. When the cart contains more than four products, it generates multiple `CQ_Analytics.record` functions.

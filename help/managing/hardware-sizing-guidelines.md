@@ -1,20 +1,16 @@
 ---
 title: Hardware Sizing Guidelines
-seo-title: Hardware Sizing Guidelines
 description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
-seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
-uuid: 395f9869-17c4-4b9b-99f8-d35a44dd6256
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
-discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 ---
 # Hardware Sizing Guidelines{#hardware-sizing-guidelines}
 
-These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project. Sizing estimates depend on the architecture of the project, the complexity of the solution, expected traffic and the project requirements. This guide helps you to determine the hardware needs for a specific solution, or to find an upper and lower estimate for the hardware requirements.
+These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project. Sizing estimates depend on the architecture of the project, the complexity of the solution, expected traffic, and the project requirements. This guide helps you to determine the hardware needs for a specific solution, or to find an upper and lower estimate for the hardware requirements.
 
 Basic factors to consider are (in this order):
 
@@ -27,9 +23,9 @@ Basic factors to consider are (in this order):
 
     * Caching efficiency
     * Expected traffic
-    * Complexity of templates, applications and components
+    * Complexity of templates, applications, and components
     * Concurrent authors
-    * Complexity of the authoring operation (simple content editing, MSM rollout, etc)
+    * Complexity of the authoring operation (simple content editing, MSM rollout, and so on)
 
 * **I/O performance**
 
@@ -51,7 +47,7 @@ A typical AEM setup consists of an author and a publish environment. These envir
 In a typical project setup, you have several environments on which to stage project phases:
 
 * **Development environment**
-  To develop new features or make significant changes. Best practice is to work using a development environment per developer (usually local installations on their personal systems).
+  To develop new features or make significant changes. Best practice is to work using a development environment per developer (local installations on their personal systems).
 
 * **Author test environment**
   To verify changes. The number of test environments can vary depending on the project requirements (for example, separate for QA, integration testing, or user acceptance testing).
@@ -65,32 +61,32 @@ In a typical project setup, you have several environments on which to stage proj
 * **Publish production environment**
   To serve published content.
 
-Additionally the environments may vary, ranging from a single-server system running AEM and an application server, through to a highly scaled set of multi-server, multi-CPU clustered instances. We recommend that you use a separate computer for each production system and that you do not run other applications on these computers.
+Also, the environments may vary, ranging from a single-server system running AEM and an application server, through to a highly scaled set of multi-server, multi-CPU clustered instances. Adobe recommends that you use a separate computer for each production system and that you do not run other applications on these computers.
 
 ## Generic hardware sizing considerations {#generic-hardware-sizing-considerations}
 
-The sections below provide guidance on how to calculate hardware requirements, taking various considerations into account. For large systems we suggest that you perform a simple set of in-house benchmark tests on a reference configuration.
+The sections below provide guidance on how to calculate hardware requirements, taking various considerations into account. For large systems, Adobe suggests that you perform a simple set of in-house benchmark tests on a reference configuration.
 
-Performance optimization is a fundamental task that needs to be performed before any benchmarking for a specific project can be done. Please make sure to apply the advice provided in the [Performance Optimization documentation](/help/sites-deploying/configuring-performance.md) before performing any benchmark tests and using their results for any hardware sizing calculations.
+Performance optimization is a fundamental task that needs to be performed before any benchmarking for a specific project can be done. Make sure to apply the advice provided in the [Performance Optimization documentation](/help/sites-deploying/configuring-performance.md) before performing any benchmark tests and using their results for any hardware sizing calculations.
 
 Hardware sizing requirements for advanced use cases need to be based on a detailed performance assessment of the project. Characteristics of advanced use cases requiring exceptional hardware resources include combinations of:
 
 * high content payload / throughput
-* extensive use of customized code, custom workflows or 3rd party software libraries
+* extensive use of customized code, custom workflows or third-party software libraries
 * integration with unsupported external systems
 
 ### Disk Space/ Hard Drive {#disk-space-hard-drive}
 
-The disk space required depends heavily on both the volume and type of your web application. The calculations should take into account:
+The disk space required depends heavily on both the volume and type of your web application. The calculations should account for the following:
 
-* the quantity and size of pages, assets and other repository-stored entities such as workflows, profiles etc.
+* the quantity and size of pages, assets, and other repository-stored entities such as workflows, profiles etc.
 * the estimated frequency of content changes and therefore the creation of content versions
 * the volume of DAM asset renditions that will be generated
 * the overall growth of content over time
 
-Disk space is continuously monitored during Online, and Offline, Revision Cleanup. Should the available disk space drop below a critical value, the process will be cancelled. The critical value is 25% of the current disk footprint of the repository and it is not configurable. It is recommended to size the disk at least two or three times larger than the repository size including the estimated growth.
+Disk space is continuously monitored during Online, and Offline, Revision Cleanup. Should the available disk space drop below a critical value, the process is cancelled. The critical value is 25% of the current disk footprint of the repository and it is not configurable. Adobe recommends sizing the disk at least two or three times larger than the repository size including the estimated growth.
 
-Consider a setup of redundant arrays of independent disks (RAID, e.g. RAID10) for data redundancy.
+Consider a setup of redundant arrays of independent disks (RAID, for example, RAID10) for data redundancy.
 
 >[!NOTE]
 >
@@ -98,24 +94,24 @@ Consider a setup of redundant arrays of independent disks (RAID, e.g. RAID10) fo
 
 #### Virtualization {#virtualization}
 
-AEM runs well in virtualized environments, but there can be factors such as CPU or I/O that cannot be directly equated to physical hardware. A recommendation is to choose a higher I/O speed (in general) as this is a critical factor in most cases. Benchmarking your environment is necessary to get a precise understanding of what resources will be required.
+AEM runs well in virtualized environments, but there can be factors such as CPU or I/O that cannot be directly equated to physical hardware. A recommendation is to choose a higher I/O speed (in general) as this is a critical factor, usually. Benchmarking your environment is necessary to get a precise understanding of what resources are required.
 
 #### Parallelization of AEM Instances {#parallelization-of-aem-instances}
 
 **Fail Safeness**
 
-A fail-safe website is deployed on at least two separate systems. If one system breaks down, an other system can take over and thus compensate the system failure.
+A fail-safe website is deployed on at least two separate systems. If one system breaks down, another system can take over and thus compensate the system failure.
 
 **System resources scalability**
 
-While all systems are running, an increased computational performance is available. That additional performance is not necessarily linear with the number of cluster nodes as the relationship is highly dependent on the technical environment; please see the [Cluster documentation](/help/sites-deploying/recommended-deploys.md) for more information.
+While all systems are running, an increased computational performance is available. That additional performance is not necessarily linear with the number of cluster nodes as the relationship is highly dependent on the technical environment. See [Cluster documentation](/help/sites-deploying/recommended-deploys.md) for more information.
 
 The estimation of how many cluster nodes are necessary is based on the basic requirements and specific use-cases of the particular web project:
 
-* From the perspective of fail-safeness it is necessary to determine, for all environments, how critical failure is and the failure compensation time based on how long it takes for a cluster node to recover.
-* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) for details.
+* From the perspective of fail-safeness, it is necessary to determine, for all environments, how critical failure is and the failure compensation time based on how long it takes for a cluster node to recover.
+* For the aspect of scalability, the number of write operations is basically the most important factor; see [Authors Working in Parallel](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) for the author environment and [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) for the publish environment. Load balancing can be established for operations that access the system solely to process read operations; see [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) for details.
 
-## Author environment specific calculations {#author-environment-specific-calculations}
+## Author environment-specific calculations {#author-environment-specific-calculations}
 
 For benchmarking purposes, Adobe has developed some benchmark tests for standalone author instances.
 
@@ -139,13 +135,13 @@ The above two tests clearly highlight that the throughput varies according to th
 
 ### Caching {#caching}
 
-In the author environment the caching efficiency is typically much lower, because changes to the website are more frequent and also the content is highly interactive and personalized. Using the dispatcher, you can cache AEM libraries, JavaScripts, CSS files and layout images. This speeds up some aspects of the authoring process. Configuring the webserver to additionally set headers for browser caching on these resources, will reduce the number of HTTP requests and so improve the system responsiveness as experienced by the authors.
+In the author environment the caching efficiency is typically much lower, because changes to the website are more frequent and also the content is highly interactive and personalized. Using the Dispatcher, you can cache AEM libraries, JavaScript, CSS files, and layout images. This speeds up some aspects of the authoring process. Configuring the webserver to also set headers for browser caching on these resources, reduces the number of HTTP requests and so improve the system responsiveness as experienced by the authors.
 
 ### Authors Working in Parallel {#authors-working-in-parallel}
 
-In the author environment the number of authors that work in parallel and the load their interactions add to the system are the main limiting factors. Therefore we recommend that you scale your system based on the shared throughput of data.
+In the author environment the number of authors that work in parallel and the load their interactions add to the system are the main limiting factors. Therefore, Adobe recommends that you scale your system based on the shared throughput of data.
 
-For such scenarios Adobe executed benchmark tests on a two node shared-nothing cluster of author instances.
+For such scenarios, Adobe run benchmark tests on a two node shared-nothing cluster of author instances.
 
 * **Benchmark test 1a**
   With an active-active shared-nothing cluster of 2 author instances, calculate the maximum throughput with a load profile where users perform a simple create page exercise on top of a base load of 300 existing pages, all of a similar nature.
@@ -173,28 +169,28 @@ You can calculate the number of computers (or CPUs) required for the author envi
 
 This formula can serve as a general guideline for scaling CPUs when authors are performing basic operations with AEM. It assumes that the system and the application are optimized. However, the formula will not hold true for advanced features such as MSM or Assets (see the sections below).
 
-Please also see the additional comments on [Parallelization](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) and [Performance Optimization](/help/sites-deploying/configuring-performance.md).
+Also see [Parallelization](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) and [Performance Optimization](/help/sites-deploying/configuring-performance.md).
 
 ### Hardware Recommendations {#hardware-recommendations}
 
-Usually you can use the same hardware for your author environment as is recommended for your publishing environment. Typically, website traffic is much lower on authoring systems, but cache efficiency is lower too. However, the fundamental factor here is the number of authors working in parallel, together with the type of actions being made to the system. In general AEM clustering (of the author environment) is most effective at scaling read operations; in other words, a AEM cluster scales well with authors who are performing basic edit operations.
+Usually you can use the same hardware for your author environment as is recommended for your publishing environment. Typically, website traffic is much lower on authoring systems, but cache efficiency is lower too. However, the fundamental factor here is the number of authors working in parallel, together with the type of actions being made to the system. In general, AEM clustering (of the author environment) is most effective at scaling read operations; in other words, a AEM cluster scales well with authors who are performing basic edit operations.
 
-The benchmark tests at Adobe were performed using the RedHat 5.5 operating system, running on a Hewlett-Packard ProLiant DL380 G5 hardware platform with the following configuration:
+The benchmark tests at Adobe were performed using the Red Hat&reg; 5.5 operating system, running on a Hewlett-Packard ProLiant DL380 G5 hardware platform with the following configuration:
 
-* Two Quad Core Intel Xeon X5450 CPUs at 3.00GHz
-* 8 GB RAM
+* Two Quad Core Intel Xeon&reg; X5450 CPUs at 3.00 GHz
+* 8-GB RAM
 * Broadcom NetXtreme II BCM5708 Gigabit Ethernet
-* HP Smart Array RAID Controller, 256 MB cache
-* Two 146 GB 10,000 RPM SAS disks configured as a RAID0 stripe set
+* HP Smart Array RAID Controller, 256-MB cache
+* Two 146 GB 10,000-RPM SAS disks configured as a RAID0 stripe set
 * SPEC CINT2006 Rate benchmark score is 110
 
 AEM instances were running with a minimum heap size of 256M, a maximum heap size of 1024M.
 
-## Publish environment specific calculations {#publish-environment-specific-calculations}
+## Publish environment-specific calculations {#publish-environment-specific-calculations}
 
 ### Caching efficiency and traffic {#caching-efficiency-and-traffic}
 
-Cache efficiency is crucial for the website speed. The following table shows how many pages per second an optimized AEM system can handle using a reverse proxy, such as the dispatcher:
+Cache efficiency is crucial for the website speed. The following table shows how many pages per second an optimized AEM system can handle using a reverse proxy, such as the Dispatcher:
 
 | Cache ratio |Pages/s (peak) |Million pages/day (average) |
 |---|---|---|
@@ -209,7 +205,7 @@ Cache efficiency is crucial for the website speed. The following table shows how
 >
 >Disclaimer: The numbers are based on a default hardware configuration and may vary depending on the specific hardware used.
 
-The cache ratio is the percentage of pages that the dispatcher can return without having to access AEM. 100% indicates that the dispatcher answers all requests, 0% means that AEM computes every single page.
+The cache ratio is the percentage of pages that the Dispatcher can return without having to access AEM. 100% indicates that the Dispatcher answers all requests, 0% means that AEM computes every page.
 
 ### Complexity of templates and applications {#complexity-of-templates-and-applications}
 
@@ -231,7 +227,7 @@ The variables in the equation are as follows:
  <tbody>
   <tr>
    <td>traffic</td>
-   <td>The expected peak traffic per second. You can estimate this as the number of page hits per day, divided by 35’000.</td>
+   <td>The expected peak traffic per second. You can estimate this as the number of page hits per day, divided by 35'000.</td>
   </tr>
   <tr>
    <td>applicationComplexity</td>
@@ -241,16 +237,16 @@ The variables in the equation are as follows:
      <li>1.1 - a fully anonymous, content orientated site with client-side/Target personalization</li>
      <li>1.5 - a content-orientated site with both anonymous and logged in sections, client-side/Target personalization</li>
      <li>1.7 - for a content-orientated site with both anonymous and logged in sections, client-side/Target personalization and some user-generated content</li>
-     <li>2 - where the entire site requires log in, with extensive use of user-generated content and a variety of personalization techniques</li>
+     <li>2 - where the entire site requires login, with extensive use of user-generated content and various personalization techniques</li>
     </ul> </td>
   </tr>
   <tr>
    <td>cacheRatio</td>
-   <td>The percentage of pages that come out of the dispatcher cache. Use 1 if all pages come from the cache, or 0 if every page is computed by AEM.</td>
+   <td>The percentage of pages that come out of the Dispatcher cache. Use 1 if all pages come from the cache, or 0 if every page is computed by AEM.</td>
   </tr>
   <tr>
    <td>templateComplexity</td>
-   <td>Use a value between 1 and 10 to indicate the complexity of your templates. Higher numbers indicate more complex templates, using the value 1 for sites with an average of 10 components per page, the value 5 for a page average of 40 components and 10 for an average of over 100 components.</td>
+   <td>Use a value from 1 through 10 to indicate the complexity of your templates. Higher numbers indicate more complex templates, using the value 1 for sites with an average of 10 components per page, the value 5 for a page average of 40 components and 10 for an average of over 100 components.</td>
   </tr>
   <tr>
    <td>activations</td>
@@ -262,16 +258,16 @@ The variables in the equation are as follows:
 If you have a more complex website, you also need more powerful web servers so that AEM can answer a request in an acceptable time.
 
 * Complexity below 4:
-  • 1024 MB JVM RAM&#42;
-  • Low to mid-performance CPU
+  * 1024 MB JVM RAM&#42;
+  * Low to mid-performance CPU
 
-* Complexity between 4 and 8:
-  • 2048 MB JVM RAM&#42;
-  • Mid to high-performance CPU
+* Complexity from 4 through 8:
+  * 2048 MB JVM RAM&#42;
+  * Mid to high-performance CPU
 
 * Complexity above 8:
-  • 4096 MB JVM RAM&#42;
-  • High to high-end-performance CPU
+  * 4096 MB JVM RAM&#42;
+  * High to high-end-performance CPU
 
 >[!NOTE]
 >
@@ -289,9 +285,9 @@ Allocate at least 16GB of heap and configure the [!UICONTROL DAM Update Asset] w
 
 >[!NOTE]
 >
->A higher throughput of images means that the computing resources need to be able to keep pace with system I/O and vice versa. For example, if workflows are launched by the import of images, then uploading many images via WebDAV could cause a backlog of workflows.
+>A higher throughput of images means that the computing resources need to be able to keep pace with system I/O and conversely. For example, if workflows are launched by the import of images, then uploading many images via WebDAV could cause a backlog of workflows.
 >
->The use of separate disks for TarPM, data store and search index can help to optimize the system I/O behavior (however, usually it makes sense to keep the search index locally).
+>The use of separate disks for TarPM, data store, and search index can help to optimize the system I/O behavior (however, usually it makes sense to keep the search index locally).
 
 >[!NOTE]
 >
@@ -308,15 +304,15 @@ The resource consumption when using AEM MSM on an authoring environment depends 
 
 Testing the planned use case with a representative content excerpt can help you improve your understanding of the resource consumption. If you extrapolate the results with the planned throughput, you can assess the additional resources required for the AEM MSM.
 
-Please also take into account, that authors working in parallel will perceive performance side effects if AEM MSM use cases consume more resources than planned.
+Also, account for authors working in parallel. They will perceive performance side effects if AEM MSM use cases consume more resources than planned.
 
 ### AEM Communities sizing considerations {#aem-communities-sizing-considerations}
 
 AEM sites that include AEM Communities features (community sites) experience a high level of interaction from site visitors (members) in the publish environment.
 
-The sizing considerations for a community site depends on the anticipated interaction by community members and whether optimal performance for page content is of higher importance.
+The sizing considerations for a community site depend on the anticipated interaction by community members and whether optimal performance for page content is of higher importance.
 
-User generated content (UGC) submitted members is stored separately from page content. While the AEM platform uses a node store that replicates site content from author to publish, AEM Communities uses a single, common store for UGC that is never replicated.
+User-generated content (UGC) submitted members is stored separately from page content. While the AEM platform uses a node store that replicates site content from author to publish, AEM Communities uses a single, common store for UGC that is never replicated.
 
 For the UGC store, it is necessary to choose a storage resource provider (SRP), which influences the chosen deployment.
 See
