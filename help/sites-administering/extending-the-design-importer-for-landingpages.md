@@ -1,14 +1,10 @@
 ---
 title: Extending and Configuring the Design Importer for Landing Pages
-seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Learn how to configure the Design Importer for landing pages.
-seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 ---
@@ -22,12 +18,12 @@ Here are the logical steps to make design importer recognize your custom compone
 
 1. Create a TagHandler
 
-    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory’s OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it’s up to you how you wish to take care of it.
+    * A tag handler is a POJO that handles HTML tags of a specific kind. The "kind" of HTML tags your TagHandler can handle is defined via the TagHandlerFactory's OSGi property "tagpattern.name". This OSGi property is essentially a regex that should match the input html tag you wish to handle. All the nested tags would be thrown to your tag handler for handling. For example if you register for a div that contains a nested &lt;p&gt; tag, the &lt;p&gt; tag would also be thrown to your TagHandler and it's up to you how you wish to take care of it.
     * The tag handler interface is similar to a SAX content handler interface. It receives SAX events for each html tag. As a tag handler provider, you need to implement certain lifecycle methods which are automatically called by the design importer framework.
 
 1. Create its corresponding TagHandlerFactory.
 
-    * The tag handler factory is an OSGi component(singleton) that’s responsible for spawning instances of your tag handler.
+    * The tag handler factory is an OSGi component(singleton) that's responsible for spawning instances of your tag handler.
     * your tag handler factory must expose an OSGi property called "tagpattern.name" the value of which is matched against the input html tag.
     * If there are multiple tag handlers matching the input html tag, the one with a higher ranking is picked. The ranking itself is exposed as an OSGi property **service.ranking**.
     * The TagHandlerFactory is an OSGi component. Any references that you wish to provide to your TagHandler must be via this factory.
@@ -121,15 +117,15 @@ The browsers that support "drag and drop" of the design zip are Chrome, Safari5.
 
 ### Modernizr is not supported {#modernizr-is-not-supported}
 
-`Modernizr.js` is a javascript based tool that detects native capabilities of browsers and detects if they are suited for html5 elements or not. Designs that use Modernizr for enhancing support in older versions of different browsers can cause import issues in the landing page solution. `Modernizr.js` scripts are not supported with the Design importer.
+`Modernizr.js` is a JavaScript based tool that detects native capabilities of browsers and detects if they are suited for html5 elements or not. Designs that use Modernizr for enhancing support in older versions of different browsers can cause import issues in the landing page solution. `Modernizr.js` scripts are not supported with the Design importer.
 
 ### Page properties are not preserved at the time of importing design package {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-Any page property (e.g. Custom Domain, Enforcing HTTPS, etc.) set for a page (that uses Blank Landing Page template) prior to importing the design package are lost after the design has been imported. Therefore, the recommended practice is to set the page properties after importing the design package.
+Any page property (for example, Custom Domain, Enforcing HTTPS, and so on) set for a page (that uses Blank Landing Page template) before importing the design package are lost after the design has been imported. Therefore, the recommended practice is to set the page properties after importing the design package.
 
 ### HTML only markup assumed {#html-only-markup-assumed}
 
-Upon import the markup is sanitized for security reasons and in order to avoid importing and publishing invalid markup. This assumes HTML-only markup and all other form of elements such as inline SVG or Web Components will be filtered out.
+On import, the markup is sanitized for security reasons and to avoid importing and publishing invalid markup. This assumes HTML-only markup and all other form of elements such as inline SVG or Web Components will be filtered out.
 
 ### Text {#text}
 
@@ -185,7 +181,7 @@ Including the above markup in the HTML, does the following:
 * Sets the `jcr:title` property of the created title component to the text within heading tag wrapped within div.
 * Sets the `type` property to the heading tag, in this case `h1`.
 
-The title component supports 7 types - `h1, h2, h3, h4, h5, h6` and `default`.
+The title component supports seven types - `h1, h2, h3, h4, h5, h6` and `default`.
 
 **Shorthand component tag declaration**:
 
@@ -243,9 +239,9 @@ This CTA component can be used to add a text link on the landing page.
 
 Supported properties
 
-* Label, with bold, italics and underline options
+* Label, with bold, italics, and underline options
 * Target URL, supports third party and AEM url
-* Page rendering options (same window, new window etc..)
+* Page rendering options (same window, new window, and so on)
 
 HTML tag to include click through component in the imported zip. Here href maps to target url, "View Product Details" maps to label and so on.
 
@@ -271,16 +267,16 @@ This component can be used in any standalone application or can be imported from
 
 #### Graphical Link {#graphical-link}
 
-This CTA component can be used to add any graphical image with link on the landing page. The image can be a simple button or any graphical image as background. When the image is clicked, the user will be taken to the target URL specified in the component properties. It is a part of "Call to Action" group.
+This CTA component can be used to add any graphical image with link on the landing page. The image can be a simple button or any graphical image as background. When the image is clicked, the user is taken to the target URL specified in the component properties. It is a part of "Call to Action" group.
 
 Supported properties
 
 * Image cropping, rotation
 * Hover text, description, size in px
 * Target URL, supports third party and AEM url
-* Page rendering options (same window, new window etc..)
+* Page rendering options (same window, new window, and so on)
 
-HTML tag to include graphical link component in the imported zip. Here href will map to target url, img src will be the rendering image, "title" will be taken as hover text and so on.
+HTML tag to include graphical link component in the imported zip. Here href maps to target url, img src is the rendering image, "title" is taken as hover text and so on.
 
 ```xml
 <div id="cqcanvas">
@@ -298,9 +294,9 @@ HTML tag to include graphical link component in the imported zip. Here href will
 >
 >To create a clickthroughgraphical link, you need to wrap an anchor tag and the image tag inside a div with `data-cq-component="clickthroughgraphicallink"` attribute.
 >
->eg. `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>For example, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
->Other ways to associate an image with an anchor tag using CSS are not supported for example the following markup will not work:
+>Other ways to associate an image with an anchor tag using CSS are not supported. For example, the following markup does not work:
 >
 >`<div data-cq-component="clickthroughgraphicallink">`
 >
@@ -313,14 +309,14 @@ HTML tag to include graphical link component in the imported zip. Here href will
 
 ### Lead Form {#lead-form}
 
-A lead form is a form that is used to collect a visitor/lead's profile information. This information can be stored and used later to do an effective marketing based on the information. This information generally include title, name, email, date of birth, address, interest, and so on. It is a part of "CTA Lead form" group.
+A lead form is a form that is used to collect a visitor/lead's profile information. This information can be stored and used later to do an effective marketing based on the information. This information generally includes title, name, email, date of birth, address, interest, and so on. It is a part of "CTA Lead form" group.
 
 **Supported features**
 
 * Pre-defined lead fields - first-name, last-name, address, dob, gender, about, userId, emailId, submit button are available in the sidekick. Simply drag/drop required component in your lead form.
-* With the help of these components author can design a standalone lead form, these fields corresponds to lead form fields. In standalone or imported zip application user can add extra fields using cq:form or cta lead form fields, name and design them according to the requirements.
+* With the help of these components author can design a standalone lead form, these fields corresponds to lead form fields. In standalone or imported zip application user can add extra fields using cq:form or cta lead form fields, name, and design them according to the requirements.
 * Map lead form fields using specific pre-defined names of CTA lead form, for example - firstName for first-name in lead form, and so on.
-* Fields that are not mapped to lead form will map to cq:form components - text, radio, checkbox, dropdown, hidden, password.
+* Fields that are not mapped to lead form maps to cq:form components - text, radio, checkbox, dropdown, hidden, password.
 * User can provide the title using "label" tag and can provide styling by using style attribute "class" (only available for CTA lead form components).
 * Thank You page and subscription list can be provided as a hidden parameter of the form (present in the index.htm) or can be added/edited from edit bar of "Start of lead form"
 
@@ -330,7 +326,7 @@ A lead form is a form that is used to collect a visitor/lead's profile informati
 
 * Constraints like - required can be provided from edit configuration of each of the component.
 
-HTML tag to include graphical link component in the imported zip. Here "firstName" is mapped to lead form firstName and so on, except for checkboxes - these two check boxes map to cq:form dropdown component.
+HTML tag to include graphical link component in the imported zip. Here "firstName" is mapped to lead form firstName, and so on, except for checkboxes - these two check boxes map to cq:form dropdown component.
 
 ```xml
 <div id="cqcanvas">
@@ -443,7 +439,7 @@ Steps for creating a new template in AEM are explained [here](/help/sites-develo
 
 ### Referring a component from Landing page {#referring-a-component-from-landing-page}
 
-Suppose you have a component which you want to reference in your HTML using data-cq-component attribute such that the design importer renders a component include at this place. e.g., you want to reference the table component ( `resourceType = /libs/foundation/components/table`). Following needs to be added in the HTML:
+Suppose you have a component which you want to reference in your HTML using data-cq-component attribute such that the design importer renders a component include at this place. For example, you want to reference the table component ( `resourceType = /libs/foundation/components/table`). Following needs to be added in the HTML:
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
@@ -463,7 +459,7 @@ Use of CSS selectors similar to following ones is not recommended for use with e
 | E:nth-of-type(n) |an E element, the n-th sibling of its type | [Structural pseudo-classes](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nth-last-of-type(n) |an E element, the n-th sibling of its type, counting from the last one | [Structural pseudo-classes](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-This is due to the fact that additional html elements like &lt;div&gt; tag are added to the generated Html after the import.
+This is because additional html elements like &lt;div&gt; tag are added to the generated Html after the import.
 
 * Scripts relying on the structure similar to above also are not recommended for use with elements marked for conversion to AEM components.
 * Use of styles on the markup tags for component conversion like &lt;div data-cq-component="&ast;"&gt; is not recommended.
@@ -515,7 +511,7 @@ The below table briefly describes the properties:
   <tr>
    <td> </td>
    <td>Replace Pattern</td>
-   <td>The pattern that replaces the matches found. You may use regex group references like $1, $2. Additionally, this pattern supports keywords like {designPath} that get resolved with the actual value during import.</td>
+   <td>The pattern that replaces the matches found. You may use regex group references like $1, $2. Also, this pattern supports keywords like {designPath} that get resolved with the actual value during import.</td>
   </tr>
  </tbody>
 </table>
@@ -543,14 +539,14 @@ If the design package contains a parsys component markup, then after importing, 
 
 ### Error messages displayed during import {#error-messages-displayed-during-import}
 
-In case of any errors (e.g. the imported package is not a valid zip), the design import will not import the package and instead display an error message on top of the page just above the drag and drop box. Examples of error scenarios are stated here. After correcting the error, you can re-import the updated zip onto the same blank landing page. Different scenarios where errors are thrown are as follows:
+If there was any errors (for example, the imported package is not a valid zip), the design import does not import the package. Instead, an error message is displayed on top of the page just above the drag and drop box. Examples of error scenarios are stated here. After correcting the error, you can reimport the updated zip onto the same blank landing page. Different scenarios where errors are thrown are as follows:
 
 * Imported design package is not a valid zip archive.
 * Imported design package does not contain an index.html at the top level.
 
 ### Warnings displayed after import {#warnings-displayed-after-import}
 
-In case of any warnings (e.g. HTML refers to images that do not exist within the package), the design importer will import the zip but at the same time display a list of issues/warnings on the Result Pane, Clicking on the issues link, will display a list of warnings which point out any issues within the design package. Different scenarios where warnings are caught and displayed by design importer are as follows:
+If there are any warnings (for example, HTML refers to images that do not exist within the package), the design importer imports the zip but at the same time display a list of issues/warnings on the Result Pane, Clicking on the issues link, will display a list of warnings which point out any issues within the design package. Different scenarios where warnings are caught and displayed by design importer are as follows:
 
 * HTML refers to images that do not exist within the package.
 * HTML refers to scripts that do not exist within the package.
@@ -558,17 +554,17 @@ In case of any warnings (e.g. HTML refers to images that do not exist within the
 
 ### Where are the files of the ZIP file being stored in AEM? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-After the landing page has been imported, the files (images, css, js, etc.) within the design package are stored in the following location in AEM:
+After the landing page has been imported, the files (images, css, js, and so on) within the design package are stored in the following location in AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Suppose the landing page is created under the campaign We.Retail and the name of the landing page is **myBlankLandingPage** then the location were Zip files are stored is as follows:
+Suppose that the landing page is created under the campaign We.Retail and the name of the landing page is **myBlankLandingPage** then the location were Zip files are stored is as follows:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
 ### Formatting not preserved {#formatting-not-preserved}
 
-When creating your CSS, please be aware of the following limitations:
+When creating your CSS, be aware of the following limitations:
 
 If a text and (editable) image are like the following:
 
@@ -587,7 +583,7 @@ with a CSS applied on the class `box` as follows:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Then `box img` is used in the design importer, the resulting landing page appears not have preserved the formatting. To work around this, be aware that AEM adds div tags in the CSS and rewrite code accordingly. Otherwise, some CSS rules will be invalid.
+Then `box img` is used in the design importer, the resulting landing page appears not to have preserved the formatting. To work around this, AEM adds div tags in the CSS and rewrite code accordingly. Otherwise, some CSS rules will be invalid.
 
 ```xml
 .box img

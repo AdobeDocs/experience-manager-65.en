@@ -1,14 +1,10 @@
 ---
 title: Tag Libraries
-seo-title: Tag Libraries
 description: The Granite, CQ, and Sling tag libraries give you access to specific functions for use in the JSP script of your templates and components
-seo-description: The Granite, CQ, and Sling tag libraries give you access to specific functions for use in the JSP script of your templates and components
-uuid: e622d47b-cfb3-4b4a-b8e3-e1adee294219
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 ---
 # Tag Libraries{#tag-libraries}
@@ -33,23 +29,23 @@ The global also declares the [Sling library](/help/sites-developing/taglib.md#sl
 
 ### &lt;ui:includeClientLib&gt; {#ui-includeclientlib}
 
-The `<ui:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css, or a theme library. For multiple inclusions of different types, for example js and css, this tag needs to be used multiple times in the jsp. This tag is a convenience wrapper around the ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` service interface.
+The `<ui:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css, or a theme library. For multiple inclusions of different types, for example js and css, this tag must be used multiple times in the jsp. This tag is a convenience wrapper around the ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` service interface.
 
 It has the following attributes:
 
-**categories** - A list of comma-separated client lib categories. This will include all Javascript and CSS libraries for the given categories. The theme name is extracted from the request.
+**categories** - A list of comma-separated client lib categories. This includes all JavaScript and CSS libraries for the given categories. The theme name is extracted from the request.
 
 Equivalent to: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**theme** - A list of comma-separated client lib categories. This will include all theme related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
+**theme** - A list of comma-separated client lib categories. This includes all theme-related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
 
 Equivalent to: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** - A list of comma-separated client lib categories. This will include all Javascript libraries for the given categories.
+**js** - A list of comma-separated client lib categories. This includes all JavaScript libraries for the given categories.
 
 Equivalent to: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** - A list of comma-separated client lib categories. This will include all CSS libraries for the given categories.
+**css** - A list of comma-separated client lib categories. This includes all CSS libraries for the given categories.
 
 Equivalent to: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
@@ -105,7 +101,7 @@ It has the following optional attributes:
 
 **oldValue** - Value to use for diff output. If this attribute is present, it overwrites the use of the property attribute.
 
-**escapeXml** - Defines whether the characters <, >, &, ' and " in the resulting string should be converted to their corresponding character entity codes. Default value is false. Note that the escaping is applied after the optional formatting.
+**escapeXml** - Defines whether the characters <, >, &, ' and " in the resulting string should be converted to their corresponding character entity codes. Default value is false. The escaping is applied after the optional formatting.
 
 **format** - Optional java.text.Format to use for formatting the text.
 
@@ -115,11 +111,11 @@ It has the following optional attributes:
 
 **tagName** - Name of the element that will surround a non-empty output. It defaults to DIV.
 
-**placeholder** - Default value to use for null or empty text in edit mode, i.e. the placeholder. Please note that the default check is performed after the optional formatting and escaping, i.e. it is written as-is to the output. It defaults to:
+**placeholder** - Default value to use for null or empty text in edit mode, that is, the placeholder. Note that the default check is performed after the optional formatting and escaping, that is, it is written as-is to the output. It defaults to:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
-**default** - Default value to use for null or empty text. Note that the default check is performed after the optional formatting and escaping i.e. it is written as-is to the output.
+**default** - Default value to use for null or empty text. The default check is performed after the optional formatting and escaping that is, it is written as-is to the output.
 
 Some examples how the `<cq:text>` tag can be used in a JSP:
 
@@ -175,9 +171,9 @@ If the `source` attribute is not set:
 
 * If the `language` attribute is not set, the `source` attribute defaults to `auto`.
 
-The "content bundle" can be simply used by standard JSTL `<fmt:message>` tags. The lookup of messages by keys is two-fold:
+The "content bundle" can be used by standard JSTL `<fmt:message>` tags. The lookup of messages by keys is two-fold:
 
-1. First, the JCR properties of the underlying resource that is currently rendered are searched for translations. This allows you to define a simple component dialog to edit those values.
+1. First, the JCR properties of the underlying resource that is rendered are searched for translations. This lets you define a simple component dialog box to edit those values.
 1. If the node does not contain a property named exactly like the key, the fallback is to load a resource bundle from the sling request ( `SlingHttpServletRequest.getResourceBundle(Locale)`). The language or locale for this bundle is defined by the language and source attributes of the `<cq:setContentBundle>` tag.
 
 The `<cq:setContentBundle>` tag can be used as follows in a jsp.
@@ -210,11 +206,11 @@ It has the following attributes:
 
 **path**
 
-* The path to the resource object to be included in the current request processing. If this path is relative it is appended to the path of the current resource whose script is including the given resource. Either path and resourceType, or script must be specified.
+* The path to the resource object to be included in the current request processing. If this path is relative, it is appended to the path of the current resource whose script is including the given resource. Either path and resourceType, or script must be specified.
 
 **resourceType**
 
-* The resource type of the resource to be included. If the resource type is set, the path must be the exact path to a resource object: in this case, adding parameters, selectors and extensions to the path is not supported.
+* The resource type of the resource to be included. If the resource type is set, the path must be the exact path to a resource object: in this case, adding parameters, selectors, and extensions to the path is not supported.
 * If the resource to be included is specified with the path attribute that cannot be resolved to a resource, the tag may create a synthetic resource object out of the path and this resource type.
 * Either path and resourceType, or script must be specified.
 
@@ -252,25 +248,25 @@ Should you use `<cq:include>` or `<sling:include>`?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` has been deprecated since AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) should be used instead.
+>`<cq:includeClientLib>` Deprecated since AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) should be used instead.
 
-The `<cq:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example js and css, this tag needs to be used multiple times in the jsp. This tag is a convenience wrapper around the `com.day.cq.widget.HtmlLibraryManager` service interface.
+The `<cq:includeClientLib>` tag Includes a AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example js and css, this tag must be used multiple times in the jsp. This tag is a convenience wrapper around the `com.day.cq.widget.HtmlLibraryManager` service interface.
 
 It has the following attributes:
 
-**categories** - A list of comma-separated client lib categories. This will include all Javascript and CSS libraries for the given categories. The theme name is extracted from the request.
+**categories** - A list of comma-separated client lib categories. This includes all JavaScript and CSS libraries for the given categories. The theme name is extracted from the request.
 
 Equivalent to: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**theme** - A list of comma-separated client lib categories. This will include all theme related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
+**theme** - A list of comma-separated client lib categories. This includes all theme-related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
 
 Equivalent to: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** - A list of comma-separated client lib categories. This will include all Javascript libraries for the given categories.
+**js** - A list of comma-separated client lib categories. This includes all JavaScript libraries for the given categories.
 
 Equivalent to: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** - A list of comma-separated client lib categories. This will include all CSS libraries for the given categories.
+**css** - A list of comma-separated client lib categories. This includes all CSS libraries for the given categories.
 
 Equivalent to: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
@@ -478,7 +474,7 @@ It has the following attributes:
 
 ### &lt;cq:removeParam&gt; {#cq-removeparam}
 
-The `<cq:removeParam>` tag removes a request parameter with the given name and value from the enclosing [ `<cq:requestURL>`](#amp-lt-cq-requesturl) tag. If no value is provided all parameters with the given name are removed.
+The `<cq:removeParam>` tag removes a request parameter with the given name and value from the enclosing [ `<cq:requestURL>`](#amp-lt-cq-requesturl) tag. If no value is provided, all parameters with the given name are removed.
 
 It has the following attributes:
 
@@ -522,11 +518,11 @@ It has the following attributes:
 
 **path**
 
-* The path to the resource object to be included in the current request processing. If this path is relative it is appended to the path of the current resource whose script is including the given resource. Either resource or path must be specified. If both are specified, the resource takes precedence.
+* The path to the resource object to be included in the current request processing. If this path is relative, it is appended to the path of the current resource whose script is including the given resource. Either resource or path must be specified. If both are specified, the resource takes precedence.
 
 **resourceType**
 
-* The resource type of the resource to be included. If the resource type is set, the path must be the exact path to a resource object: in this case, adding parameters, selectors and extensions to the path is not supported.
+* The resource type of the resource to be included. If the resource type is set, the path must be the exact path to a resource object: in this case, adding parameters, selectors, and extensions to the path is not supported.
 * If the resource to be included is specified with the path attribute that cannot be resolved to a resource, the tag may create a synthetic resource object out of the path and this resource type.
 
 **replaceSelectors**
@@ -543,7 +539,7 @@ It has the following attributes:
 
 >[!NOTE]
 >
->The resolution of the resource and the script that are included with the `<sling:include>` tag is the same as for a normal sling URL resolution. By default, the selectors, extension, etc. from the current request are used for the included script as well. They can be modified through the tag attributes: for example `replaceSelectors="foo.bar"` allows you to overwrite the selectors.
+>The resolution of the resource and the script that are included with the `<sling:include>` tag is the same as for a normal sling URL resolution. By default, the selectors, extension, and so on, from the current request are used for the included script as well. They can be modified through the tag attributes: for example `replaceSelectors="foo.bar"` allows you to overwrite the selectors.
 
 Examples:
 
@@ -577,11 +573,11 @@ The `<sling:defineObjects>` tag exposes the following, regularly used, scripting
 
 **slingRequest**
 
-* SlingHttpServletRequest object, providing access to the HTTP request header information - extends the standard HttpServletRequest - and provides access to Sling-specific things like resource, path info, selector, etc.
+* SlingHttpServletRequest object, providing access to the HTTP request header information - extends the standard HttpServletRequest - and provides access to Sling-specific things like resource, path info, and selector.
 
 **slingResponse**
 
-* SlingHttpServletResponse object, providing access for the HTTP response that is created by the server. This is currently the same as the HttpServletResponse from which it extends.**request**
+* SlingHttpServletResponse object, providing access for the HTTP response that is created by the server. This is the same as the HttpServletResponse from which it extends.**request**
 * The standard JSP request object which is a pure HttpServletRequest.**response**
 * The standard JSP response object which is a pure HttpServletResponse.
 
@@ -591,7 +587,7 @@ The `<sling:defineObjects>` tag exposes the following, regularly used, scripting
 
 .**sling**
 
-* A SlingScriptHelper object, containing convenience methods for scripts, mainly sling.include('/some/other/resource') for including the responses of other resources inside this response (eg. embedding header html snippets) and sling.getService(foo.bar.Service.class) to retrieve OSGi services available in Sling (Class notation depending on scripting language).
+* A SlingScriptHelper object, containing convenience methods for scripts, mainly sling.include('/some/other/resource') for including the responses of other resources inside this response (for example, embedding header html snippets) and sling.getService(foo.bar.Service.class) to retrieve OSGi services available in Sling (Class notation depending on scripting language).
 
 **resource**
 
@@ -603,7 +599,7 @@ The `<sling:defineObjects>` tag exposes the following, regularly used, scripting
 
 **log**
 
-* Provides an SLF4J Logger for logging to the Sling log system from within scripts, eg. log.info("Executing my script").
+* Provides an SLF4J Logger for logging to the Sling log system from within scripts, for example, log.info("Executing my script").
 
 * It has the following attributes:
 
@@ -628,7 +624,7 @@ l**ogName resourceResolverName**
 
 ## JSTL Tag library {#jstl-tag-library}
 
-The [JavaServer Pages Standard Tag Library](https://www.oracle.com/technetwork/java/index-jsp-135995.html) contains a lot of useful and standard tags. The core, formatting and functions taglibs are defined by the `/libs/foundation/global.jsp` as shown in the following snippet.
+The [JavaServer Pages Standard Tag Library](https://www.oracle.com/java/technologies/java-server-tag-library.html) contains many useful and standard tags. The core, formatting, and functions taglibs are defined by the `/libs/foundation/global.jsp` as shown in the following snippet.
 
 ### Extract of /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp}
 
@@ -638,4 +634,4 @@ The [JavaServer Pages Standard Tag Library](https://www.oracle.com/technetwork/j
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-After importing the `/libs/foundation/global.jsp` file as described before, you can use the `c`, `fmt` and `fn` prefixes to access to those taglibs. The official documentation of the JSTL is available at [The Java EE 5 Tutorial - JavaServer Pages Standard Tag Library](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
+After importing the `/libs/foundation/global.jsp` file as described before, you can use the `c`, `fmt` and `fn` prefixes to access to those taglibs. The official documentation of the JSTL is available at [The Java&trade; EE 5 Tutorial - JavaServer Pages Standard Tag Library](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
