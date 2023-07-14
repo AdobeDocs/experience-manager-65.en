@@ -7,7 +7,7 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 
 Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
 
-To communicate the impending removal or replacement of AEM capabilities, the following rules apply:
+To communicate the impending removal or replacement of Adobe Experience Manager (AEM) capabilities, the following rules apply:
 
 1. Announcement of deprecation comes first. While deprecated, capabilities are still available but are not further enhanced.
 1. Removal of deprecated capabilities occurs in the following major release at the earliest. Actual target date for removal will be announced.
