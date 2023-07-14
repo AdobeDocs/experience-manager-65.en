@@ -1,31 +1,27 @@
 ---
 title: Publish UnPublish Content
-seo-title: Publish UnPublish Content
 description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
-seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
-uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 ---
 # Publish UnPublish Content{#publish-unpublish-content}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Once you are familiar with content management actions on articles, banners, and collections you can publish your content. Also you can unpublish your content.
 
 >[!NOTE]
 >
->To learn more on design considerations for AEM Mobile apps, see [Design considerations for AEM Mobile apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Help.
+>To learn more on design considerations for AEM Mobile apps, see [Design considerations for AEM Mobile apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in Online Help.
 
 ## Publishing/Unpublishing the Content {#publishing-unpublishing-the-content}
 
-This differs from an "AEM Publish". We are not pushing content to an AEM Publish server instance to make it publicly viewable. Here, we are informing Mobile On-Demand that the selected content should be made public within the live Mobile On-Demand app.
+This differs from an "AEM Publish". You are not pushing content to an AEM Publish server instance to make it publicly viewable. Here, you are informing Mobile On-Demand that the selected content should be made public within the live Mobile On-Demand app.
 
 >[!NOTE]
 >
@@ -47,11 +43,9 @@ The general workflow to publish/unpublish an article:
 
 ### The Next Steps {#the-next-steps}
 
-Once you have learned about creating and publishing content, See
+Once you have learned about creating and publishing content, see the following:
 
 * [Developing AEM Content for AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Administering Content to Use AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
 
-Or still need to learn about the authoring topics, See
-
-[Authoring AEM Content for AEM Mobile On-Demand Services Apps](/help/mobile/mobile-apps-ondemand.md)
+Or, if you still want to learn more about the authoring topics, see [Authoring AEM Content for AEM Mobile On-Demand Services Apps](/help/mobile/mobile-apps-ondemand.md).
