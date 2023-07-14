@@ -12,6 +12,15 @@ exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 
 # AEM Tagging Framework {#aem-tagging-framework}
 
+Tagging allows content to be categorized and organized. Tags can be classified by a namespace and a taxonomy. For detailed information about using tags:
+
+* See the document [Using Tags](/help/sites-authoring/tags.md) for information about tagging content as a content author.
+* See the document [Administering Tags](/help/sites-administering/tags.md) for an administrator's perspective about creating and managing tags, and to which content tags have been applied.
+
+This article focuses on the underlying framework which supports tagging in AEM and how to use it as a developer.
+
+## Introduction {#introduction}
+
 To tag content and use the AEM Tagging infrastructure:
 
 * The tag must exist as a node of type `[cq:Tag](#tags-cq-tag-node-type)` under the [taxonomy root node.](#taxonomy-root-node)
