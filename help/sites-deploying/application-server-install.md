@@ -1,29 +1,25 @@
 ---
 title: Application Server Install
-seo-title: Application Server Install
-description: Learn how to install AEM with an application server.
-seo-description: Learn how to install AEM with an application server.
-uuid: c9571f80-6ed1-46fe-b7c3-946658dfc3f4
+description: Learn how to install Adobe Experience Manager with an application server.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 ---
 # Application Server Install{#application-server-install}
 
 >[!NOTE]
 >
->`JAR` and `WAR` are the file types AEM is released in. These formats are undergoing quality assurance to accomodate the support levels Adobe has committed to.
+>`JAR` and `WAR` are the file types Adobe Experience Manager (AEM) is released in. These formats are undergoing quality assurance to accommodate the support levels Adobe has committed to.
 >
 
-This section tells you how to install Adobe Experience Manager (AEM) with an application server. Consult the [Supported Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) section to see the specific support levels provided for the individual application servers.
+This section tells you how to install Adobe Experience Manager (AEM) with an application server. Consult the [Supported Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) section to read about the specific support levels provided for the individual application servers.
 
 The installation steps of the following Application Servers are described:
 
-* [WebSphere 8.5](#websphere)
-* [JBoss EAP 6.3.0/6.4.0](#jboss-eap)
+* [WebSphere&reg; 8.5](#websphere)
+* [JBoss&reg; EAP 6.3.0/6.4.0](#jboss-eap)
 * [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
 * [Tomcat 8/8.5](#tomcat)
 
@@ -31,7 +27,7 @@ Consult the appropriate application server documentation for more information on
 
 >[!NOTE]
 >
->If you are using Dynamic Media in a WAR deployment, please see the [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>If you are using Dynamic Media in a WAR deployment, see [Dynamic Media documentation](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## General Description {#general-description}
 
@@ -39,16 +35,16 @@ Consult the appropriate application server documentation for more information on
 
 AEM comes as a single war file to deploy.
 
-If deployed the following will happen by default:
+If deployed, the following happens by default:
 
 * the run mode is `author`
-* the instance (Repository, Felix OSGI environment, bundles etc.) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`
+* the instance (Repository, Felix OSGI environment, bundles and so on) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`
 
 * the context root is the war file name e.g : `aem-6`
 
 #### Configuration {#configuration}
 
-You can change the default behaviour in the following way:
+You can change the default behavior in the following way:
 
 * run mode : configure the `sling.run.modes` parameter in the `WEB-INF/web.xml` file of the AEM war file before deployment
 
@@ -58,7 +54,7 @@ You can change the default behaviour in the following way:
 
 #### Publish installation {#publish-installation}
 
-To get a publish instance deployed you need to set the run mode to publish:
+To get a publish instance deployed, you need to set the run mode to publish:
 
 * Unpack the WEB-INF/web.xml from the AEM war file
 * Change sling.run.modes parameter to publish
@@ -67,22 +63,22 @@ To get a publish instance deployed you need to set the run mode to publish:
 
 #### Installation check {#installation-check}
 
-To check if all is installed you can:
+To check if all is installed, you can:
 
 * tail the `error.log`file to see that all content is installed
 * look in `/system/console` that all bundles are installed
 
 #### Two Instances on the same Application Server {#two-instances-on-the-same-application-server}
 
-For demonstration purposes it can be appropriate to install author and publish instance in one application server. For that do the following:
+For demonstration purposes, it can be appropriate to install author and publish instance in one application server. For that do the following:
 
 1. Change sling.home variable and sling.run.modes variables of the publish instance.
 1. Unpack WEB-INF/web.xml file from the AEM war file.
-1. Change sling.home parameter to a different path, (absolute and relative paths are possible).
+1. Change sling.home parameter to a different path (absolute and relative paths are possible).
 1. Change sling.run.modes to publish for the publish instance.
 1. Repack the web.xml file.
-1. Rename the war files, so they have different names: e.g. one rename to aemauthor.war and the other to aempublish.war.
-1. Use higher memory settings, e.g. for default AEM instances use e.g.: -Xmx3072m
+1. Rename the war files, so they have different names. For example, one rename to aemauthor.war and the other to aempublish.war.
+1. Use higher memory settings. For example, default AEM instances use `-Xmx3072m`
 1. Deploy the two web applications.
 1. After Deployment stop the two web applications.
 1. In both author and publish instances assure that in the sling.properties files the property felix.service.urlhandlers=false is set to false (default is that it is set to true).
@@ -90,7 +86,7 @@ For demonstration purposes it can be appropriate to install author and publish i
 
 ## Application Servers Installation Procedures {#application-servers-installation-procedures}
 
-### WebSphere 8.5 {#websphere}
+### WebSphere&reg; 8.5 {#websphere}
 
 Before a deployment read the [General Description](#general-description) above.
 
@@ -98,10 +94,10 @@ Before a deployment read the [General Description](#general-description) above.
 
 * Let Basic Auth Headers pass through:
 
-  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save and restart the server.
+  * One way to let AEM to authenticate a user is to disable the global administrative security of the WebSphere&reg; server, to do so: go to Security -&gt; Global Security and uncheck the Enable administrative security checkbox, save, and restart the server.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
-* If you want to install AEM using context root = / then you have first to change the context root of the existing Default web application
+* If you want to install AEM using context root = /, change the context root of the existing Default web application.
 
 **Deploy AEM web application**
 
@@ -119,17 +115,17 @@ Before a deployment read the [General Description](#general-description) above.
 
 * Start AEM web application
 
-#### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
+#### JBoss&reg; EAP 6.3.0/6.4.0 {#jboss-eap}
 
 Before a deployment read the [General Description](#general-description) above.
 
-**Prepare JBoss server**
+**Prepare JBoss&reg; server**
 
-Set Memory arguments in your conf file(e.g. `standalone.conf`)
+Set Memory arguments in your conf file (for example, `standalone.conf`)
 
 * JAVA_OPTS="-Xms64m -Xmx2048m"
 
-if you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (e.g `configuration/standalone.xml)`:
+If you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (e.g `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -139,7 +135,7 @@ if you use the deployment-scanner for to install the AEM web application it migh
 
 **Deploy AEM web application**
 
-* Upload the AEM web application in your JBoss Administration Console.
+* Upload the AEM web application in your JBoss&reg; Administration Console.
 
 * Enable the AEM web application.
 
@@ -157,7 +153,7 @@ This uses a simple Server Layout with only an Admin Server.
 
 * Increase VM Memory settings:
 
-  * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh)search for WLS_MEM_ARGS, set e.g set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+  * open `${myDomain}/bin/setDomainEnv.cmd` (resp .sh) search for WLS_MEM_ARGS, set, for example, set `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
   * restart WebLogic Server
 
 * Create in `${myDomain}` a packages folder and inside a cq folder and in it a Plan folder
@@ -175,7 +171,7 @@ This uses a simple Server Layout with only an Admin Server.
 
 * Deploy AEM war file as an Application, (for the other settings use the default settings)
 * The installation can take time...
-* Check that the installation has finished as mentioned above in the General Description (e.g. tailing the error.log)
+* Check that the installation has finished as mentioned above in the General Description (for example, tailing the error.log)
 * You can change the context root in the Configuration tab of the web application in the WebLogic `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
@@ -186,10 +182,10 @@ Before a deployment read the [General Description](#general-description) above.
 
   * Increase VM memory settings:
 
-    * In `bin/catalina.bat` (resp `catalina.sh` on unix) add the following setting:
+    * In `bin/catalina.bat` (resp `catalina.sh` on UNIX&reg;) add the following setting:
     * `set "JAVA_OPTS= -Xmx2048m`
 
-  * Tomcat enables neither admin nor manager access at installation. Therefore you have to manually edit `tomcat-users.xml` to allow access for these accounts:
+  * Tomcat enables not admin or manager access at installation. Therefore, you have to manually edit `tomcat-users.xml` to allow access for these accounts:
 
     * Edit `tomcat-users.xml` to include access for admin and manager. The configuration should look similar to the following example:
 
@@ -208,7 +204,7 @@ Before a deployment read the [General Description](#general-description) above.
       </tomcat-users>
       ```
 
-  * If you like to deploy AEM with context root "/" then you have to change context root of the existing ROOT webapp:
+  * If you like to deploy AEM with context root "/", then you have to change context root of the existing ROOT webapp:
 
     * Stop and undeploy ROOT webapp
     * Rename ROOT.war folder in tomcat's webapps folder
@@ -218,7 +214,7 @@ Before a deployment read the [General Description](#general-description) above.
 
       `webapps/manager/WEB-INF/web.xml`
 
-      and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a a `web.xml` file.
+      and increase the max-file-size and max-request-size to at least 500MB, see the following `multipart-config` example of such a `web.xml` file.
 
       ```xml
       <multipart-config>
