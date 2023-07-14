@@ -1,28 +1,24 @@
 ---
 title: Trying out the Globalized Site Structure in We.Retail
-seo-title: Trying out the Globalized Site Structure in We.Retail
 description: Trying out the Globalized Site Structure in We.Retail
-seo-description: null
-uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 ---
 # Trying out the Globalized Site Structure in We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
-We.Retail has been built with a globalized site structure offering a language masters that can be live-copied to country-specific web sites. Everything is set up out-of-the-box to allow you to experiment with this structure and the built-in translation capabilities.
+We.Retail has been built with a globalized site structure offering a language master that can be live-copied to country-specific web sites. Everything is set up out-of-the-box to allow you to experiment with this structure and the built-in translation capabilities.
 
 ## Trying it out {#trying-it-out}
 
 1. Open the sites console from **Global Navigation -&gt; Sites**.
-1. Switch to column view (if not already active) and select We.Retail. Note the example country structure with Switzerland, the United States, France, etc., along side the Language Masters.
+1. Switch to column view (if not already active) and select We.Retail. Note the example country structure with Switzerland, the United States, France, and so on, along side the Language Master.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
-1. Select Switzerland and see the language roots for the languages of that country. Note that there is not yet any content below these roots.
+1. Select Switzerland and see the language roots for the languages of that country. There is not yet any content below these roots.
 
    ![chlimage_1-88](assets/chlimage_1-88a.png)
 
@@ -30,7 +26,7 @@ We.Retail has been built with a globalized site structure offering a language ma
 
    ![chlimage_1-89](assets/chlimage_1-89a.png)
 
-1. Return to column view and click on the Language Master and see the language master roots with content. Note that only English has content.
+1. Return to column view and click the Language Master and see the language master roots with content. Only English has content.
 
    We.Retail does not come with any translated content, but the structure and configuration is in place to allow you to demonstrate the translation services.
 
@@ -48,11 +44,11 @@ We.Retail has been built with a globalized site structure offering a language ma
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. Click on German to see the details of the translation project. Note that the status is in **Draft**. To start the translation with Microsoft's translation service, click the chevron next to the **Translation Job** heading and select **Start**.
+1. Click German to see the details of the translation project. The status is in **Draft**. To start the translation with Microsoft&reg;'s translation service, click the chevron next to the **Translation Job** heading and select **Start**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. The translation project starts. Click on the ellipsis at the bottom of the card labeled Translation Job to see the details. Pages with the state **Ready for review** have already been translated by the translation service.
+1. The translation project starts. Click the ellipsis at the bottom of the card labeled Translation Job to see the details. Pages with the state **Ready for review** have already been translated by the translation service.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -62,7 +58,7 @@ We.Retail has been built with a globalized site structure offering a language ma
 
 >[!NOTE]
 >
->This procedure demonstrated the built-in integration with Microsoft machine translation. Using the [AEM Translation Integration Framework](/help/sites-administering/translation.md), you can integrate with many standard translation services to orchestrate the translation of AEM.
+>This procedure demonstrated the built-in integration with Microsoft&reg; machine translation. Using the [AEM Translation Integration Framework](/help/sites-administering/translation.md), you can integrate with many standard translation services to orchestrate the translation of AEM.
 
 ## Further Information {#further-information}
 
