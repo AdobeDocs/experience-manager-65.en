@@ -685,19 +685,19 @@ query {
 
 ## GraphQL Persisted Queries - enabling caching in the Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
-Caching of persisted queries is not enabled by default in the Dispatcher. Default enablement is not possible as customers using CORS (Cross-Origin Resource Sharing) with multiple origins need to review and update their Dispatcher configuration.
+Caching of persisted queries is not enabled by default in the Dispatcher. Default enablement is not possible as customers using CORS (Cross-Origin Resource Sharing) with multiple origins need to review, and possibly update, their Dispatcher configuration.
 
 >[!NOTE]
 >
 >The Dispatcher does not cache the `Vary` header. 
 >
->Caching of other CORS related headers can be enabled in the Dispatcher, but might be insufficient when there are multiple CORS origins.
+>Caching of other CORS-related headers can be enabled in the Dispatcher, but might be insufficient when there are multiple CORS origins.
 
 ### Enable caching of persisted queries {#enable-caching-persisted-queries}
 
 To enable the caching of persisted queries, define the Dispatcher variable `CACHE_GRAPHQL_PERSISTED_QUERIES`:
 
-1. Add the variable to the Dipatcher file `global.vars`:
+1. Add the variable to the Dispatcher file `global.vars`:
 
    ```xml
    Define CACHE_GRAPHQL_PERSISTED_QUERIES
@@ -705,18 +705,18 @@ To enable the caching of persisted queries, define the Dispatcher variable `CACH
 
 >[!NOTE]
 >
->To conform to the [Dispatcher's requirements for cachable documents](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), the Dispatcher adds the `.json` suffix to all persisted query URLS, so that the result can be cached. 
+>To conform to the [Dispatcher's requirements for documents that can be cached](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), the Dispatcher adds the suffix `.json` to all persisted query URLS, so that the result can be cached. 
 >
 >This suffix is added by a rewrite rule, once persisted query caching is enabled.
 
 ### CORS configuration in the Dispatcher {#cors-configuration-in-dispatcher}
 
-Customers using CORS requests, might need to review and update their CORS configuration in dispatcher.
+Customers using CORS requests, might need to review and update their CORS configuration in the Dispatcher.
 
 * The `Origin` header must not be passed to AEM publish via the Dispatcher:
   * Check the `clientheaders.any` file.
-* Instead, CORS requests must be evaluated for allowed origins at the dispatcher level. This approach also ensures that CORS related headers are set correctly, in one place, in all cases.
-  * Such a configuration should be added to a customer the `vhost` file. An example configuration is given below; for simplicity, only the CORS related part has been provided. You can adapt it for your specific use cases.  
+* Instead, CORS requests must be evaluated for allowed origins at the Dispatcher level. This approach also ensures that CORS related headers are set correctly, in one place, in all cases.
+  * Such a configuration should be added to the `vhost` file. An example configuration is given below; for simplicity, only the CORS-related part has been provided. You can adapt it for your specific use cases.  
 
   ```xml
   <VirtualHost *:80>
