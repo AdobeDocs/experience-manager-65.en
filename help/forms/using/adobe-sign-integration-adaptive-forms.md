@@ -138,7 +138,7 @@ Connecting AEM Forms with Adobe Acrobat Sign Solutions for Government is a multi
 * Receiving credentials from Adobe Sign team
 * Using the received credentials to connect AEM Forms with Adobe Acrobat Sign Solutions for Government
 
-![](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
+![adobe-acrobat-sign-govt-workflow](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
 
 ### Before you start {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 

@@ -90,7 +90,7 @@ Capturing data offline and synchronizing it the next time you return online is e
 * Customizable dashboards for real-time insight into business operations
 * API for connecting with third-party reporting tools
 
-![](do-not-localize/3rd-draft.gif)
+![Third draft](do-not-localize/3rd-draft.gif)
 
 ## Personalized communication {#personalized-communication}
 
@@ -106,9 +106,9 @@ Personalized documents, like, receipts, welcome kits, and statements can easily 
 * Document conversion and assembly
 * Support for on-demand or batch document delivery through multiple channels, including web, email, and paper
 * Audit trails with change history
-* Support for digital signatures to validate content integrity and the signer’s identity
+* Support for digital signatures to validate content integrity and the signer's identity
 * Document security add-on for AEM Forms including encryption, usage policies, tracking, and auditing
 
-![](do-not-localize/layout-02.png)
+![Layout two](do-not-localize/layout-02.png)
 
 Streamlined personalized communication workflow
