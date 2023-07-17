@@ -121,10 +121,13 @@ role: User
   + [Introduction to AEM Forms Data Integration](using/data-integration.md)
   + [Configure data sources](using/configure-data-sources.md)
   + [Microsoft Dynamics Odata configuration](using/ms-dynamics-odata-configuration.md)
-  + [Salesforce integration using OAuth 2.0 client credentials flow](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
   + [Create form data model](using/create-form-data-models.md)
   + [Work with form data model](using/work-with-form-data-model.md)
   + [Use form data model](using/using-form-data-model.md)
++ Adaptive Forms - Core Components {#adaptive-forms-core-components}
+  + [Enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md)
+  + [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
+  + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
   + [Best practices for working with adaptive forms](using/adaptive-forms-best-practices.md)
   + [Creating an adaptive form](using/creating-adaptive-form.md)
@@ -686,7 +689,6 @@ role: User
   + [Unable to restore CRX Repository](/help/forms/using/restore-crx-repository.md)
   + [Service unavailable errors after installing AEM 6.5.15.0 service pack](/help/forms/using/aem-service-pack-installation-solution.md)
   + [AEM Forms JEE 6.5.15.0 service pack installation issue on JBoss Linux environment](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-  + [EAR Deployment Failing on JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Legacy documentation {#legacy-documentation}
   + [Using the execute script service in AEM Forms on JEE Workbench to build XML data](developing/building-xml.md)
   + [Compressing and decompressing files using a AEM Forms on JEE Custom DSC](developing/compressing-decompressing-custom-dsc.md)

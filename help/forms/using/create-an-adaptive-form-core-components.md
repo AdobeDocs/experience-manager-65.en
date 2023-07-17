@@ -24,13 +24,13 @@ Before you start, learn about the type of Forms components available to you:
 
 * [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
 
-* [Adaptive Forms Foundation Components](creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating forms, Adobe recommends using  [Adaptive Forms Core Components](creating-adaptive-form-core-components.md) to create an Adaptive Forms. 
+* [Adaptive Forms Foundation Components](creating-adaptive-form.md): These are classic (old) data capture components. You can continue to use these to edit your existing foundation components based Adaptive Form. If you are creating forms, Adobe recommends using  [Adaptive Forms Core Components](/help/forms/using/create-adaptive-form.md) to create an Adaptive Forms. 
 
 ## Pre-requisites
 
 You require the following to create an Adaptive Form:
 
-* **Enable Adaptive Forms Core Components for your environment**: AEM Archetype project version 41 or later is required to [enable Core Components for your environment](/help/forms/using/installing-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and Canvas theme are added to your environment.     
+* **Enable Adaptive Forms Core Components for your environment**: AEM Archetype project version 41 or later is required to [enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and Canvas theme are added to your environment.     
 
 * **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The template named `blank` is supported OOTB:
 
@@ -40,7 +40,7 @@ You require the following to create an Adaptive Form:
 
     >[!NOTE]
     >
-    > If you do not have, **Adaptive Forms (Core Component)** template on your environment, [Enable Adaptive Forms Core Components for your environment](/help/forms/using/installing-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template is added to your environment.  
+    > If you do not have, **Adaptive Forms (Core Component)** template on your environment, [Enable Adaptive Forms Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template is added to your environment.  
 
 * **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` theme is added by default, when you enable core components for your environment. You can also [download and customize the reference themes](create-or-customize-themes-for-adaptive-forms-core-components.md).  
 
@@ -85,7 +85,7 @@ A Submit Action allows you to choose the destination of data captured via an Ada
 
     ![Click the Wrench icon to open Adaptive Form Container dialog box to configure a submit action](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](/help/forms/configuring-submit-actions.md)
+1. Select and configure a **[!UICONTROL Submit action]**, based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -111,8 +111,8 @@ On submission of a form, you can redirect the user to another webpage or a messa
 
 You can use the Form Data Model to connect a form to a Data Source to send and receive data based on user actions. You can also connect a form to a JSON schema to receive the submitted data in a pre-defined format. Based on the requirement, connect your form to a JSON schema or Form data model:
 
-* [Create a JSON Schema and upload to your environment](/help/forms/adaptive-form-json-schema-form-model.md)  
-* [Create a Form Data Model](/help/forms/create-form-data-models.md) 
+* [Create a JSON Schema and upload to your environment](/help/forms/using/adaptive-form-json-schema-form-model.md)  
+* [Create a Form Data Model](/help/forms/using/create-form-data-models.md) 
 
 ### Configure a JSON Schema or Form Data Model for your form
 
@@ -135,7 +135,7 @@ To configure a JSON Schema or Form Data Model for your form:
 
 You can use the prefill service to auto fill fields of an Adaptive Form using existing data. When a user opens a form, the values for those fields are prefilled. You can:
 
-* [Create a custom pre-fill service](/help/forms/prepopulate-adaptive-form-fields.md)
+* [Create a custom pre-fill service](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Use Form Data Model Prefill service](#fdm-prefill-service)
 
 ### Use Form Data Model Prefill service to prepopulate fields of an Adaptive Form {#fdm-prefill-service}
@@ -165,6 +165,6 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 
 ## See also
 
-* [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create a Core Components based Adaptive Form](create-an-adaptive-form-core-components.md)
+* [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

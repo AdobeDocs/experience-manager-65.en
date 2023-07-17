@@ -153,6 +153,6 @@ When the  Adaptive Forms Core Components are enabled for your environment, a bla
 ## What's Next
 
 * [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Create themes for Core Components based Adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Create a template for Core Components based Adaptive Forms](template-editor.md)
