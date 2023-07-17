@@ -7,7 +7,7 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 
 Adobe constantly evaluates product capabilities, to over time reinvent or replace older features with more modern alternatives to improve overall customer value, always under careful consideration of backward compatibility.
 
-To communicate the impending removal or replacement of AEM capabilities, the following rules apply:
+To communicate the impending removal or replacement of Adobe Experience Manager (AEM) capabilities, the following rules apply:
 
 1. Announcement of deprecation comes first. While deprecated, capabilities are still available but are not further enhanced.
 1. Removal of deprecated capabilities occurs in the following major release at the earliest. Actual target date for removal will be announced.
@@ -45,6 +45,7 @@ Customers are advised to review if they use the feature/capability in their curr
 |Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. ||Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Developers|Lodash/underscore client library. Adobe does not plan to further maintain and update the Lodash/underscore client library that is shipped as part of the distribution (Quickstart) | Adobe recommends customers that still require Lodash/underscore for their code to add it into their project code base. ||
+|Screens|Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations that is used for 2Publishers setup.| Adobe recommends customers that still require 2Publishers setup can use [load-balancer](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=screens&title=AEM+Screens+publish+environment+horizontal+scaling+through+Load+Balancer+session+stickiness) approach. ||
 
 ## Removed features {#removed-features}
 

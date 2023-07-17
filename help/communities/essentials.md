@@ -1,23 +1,19 @@
 ---
 title: Component, Function and Feature Essentials
-seo-title: Component, Function and Feature Essentials
 description: How community sites, templates, and groups function
-seo-description: How community sites, templates, and groups function
-uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
 ---
 # Component, Function and Feature Essentials  {#component-function-and-feature-essentials}
 
-AEM Communities features require site visitors to become members and login to the [community site](overview.md#communitiessites) before being able to post content. Thus, [community site templates](sites.md), from which a community site is [created](sites-console.md), are designed to include a login feature as well as user profiles, messaging, search, moderation, and translation.
+Adobe Experience Manager (AEM) Communities features require site visitors to become members and login to the [community site](overview.md#communitiessites) before being able to post content. Thus, [community site templates](sites.md), from which a community site is [created](sites-console.md), are designed to include a login feature and user profiles, messaging, search, moderation, and translation.
 
-A community site will support members creating community groups when the [community groups function](functions.md#groups-function) is included in the selected community site template.
+A community site supports members creating community groups when the [community groups function](functions.md#groups-function) is included in the selected community site template.
 
-Following are links to essential information for Communities components, functions and features.
+Following are links to essential information for Communities components, functions, and features.
 
 ## Base Components {#base-components}
 

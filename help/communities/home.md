@@ -1,19 +1,17 @@
 ---
 title: Adobe Experience Manager 6.5 Communities Guide
-seo-title: Adobe Experience Manager 6.5 Communities Guide
-description: Create online experiences such as forums, user groups, learning resources, and other social features. Browse our guide that explains how to deploy, administer, develop and author Communities.
-seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
+description: Create online experiences such as forums, user groups, learning resources, and other social features. Browse this guide that explains how to deploy, administer, develop, and author Communities.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
 ---
-# Adobe Experience Manager 6.5 Communities Guide
+# Adobe Experience Manager (AEM) 6.5 Communities Guide
 
-Create online experiences such as forums, user groups, learning resources, and other social features. Browse our guide that explains how to deploy, administer, develop and author Communities.
+Create online experiences such as forums, user groups, learning resources, and other social features. Browse this guide that explains how to deploy, administer, develop, and author Communities.
 
 ## Key AEM articles
 
 * [Getting Started with AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Release Notes](/help/release-notes/home.md)
-* [Recent Documentation Updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Recent Documentation Updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
 * [AEM Security Checklist](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5 user guides
@@ -36,11 +34,11 @@ Create online experiences such as forums, user groups, learning resources, and o
 
 ## Key AEM resources
 
-* [AEM tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM tutorials](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Dispatcher User Guide](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
 * [HTL User Guide](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Core Components User Guide](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=en)
 * [GDPR Readiness](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
-* [AEM Community Forum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/#home)
+* [AEM Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

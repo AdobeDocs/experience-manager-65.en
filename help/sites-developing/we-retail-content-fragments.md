@@ -1,21 +1,17 @@
 ---
 title: Trying out Content Fragments in We.Retail
-seo-title: Trying out Content Fragments in We.Retail
 description: Trying out Content Fragments in We.Retail
-seo-description: null
-uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 ---
 # Trying out Content Fragments in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Content Fragments allow you to create channel-neutral content, together with (possibly channel-specific) variations. **We.Retail** (as available in an out-of-the-box instance of AEM) provides the fragment **Arctic Surfing in Lofoten** as a basic sample. This illustrates that:
+Content Fragments allow you to create channel-neutral content, together with (possibly channel-specific) variations. **We.Retail** (as available in an out-of-the-box instance of Adobe Experience Manager) provides the fragment **Arctic Surfing in Lofoten** as a basic sample. This illustrates that:
 
-* Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). They allow you to create channel-neutral content, together with (possibly channel-specific) variations.
+* Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md). They let you create channel-neutral content, together with (possibly channel-specific) variations.
 
     * See [Where to Find Content Fragment assets in We.Retail](#where-to-find-content-fragments-in-we-retail)
 
@@ -23,7 +19,7 @@ Content Fragments allow you to create channel-neutral content, together with (po
 
     * See [Where Content Fragments are Used in We.Retail](#where-content-fragments-are-used-in-we-retail)
 
-For the full documentation on creating, managing, using and developing content fragments:
+For the full documentation on creating, managing, using, and developing content fragments:
 
 * See [Further Information](#further-information)
 
@@ -31,7 +27,7 @@ For the full documentation on creating, managing, using and developing content f
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >
->* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
+>* **Content Fragments** are editorial content, primarily text, and related images. They are pure content, without design and layout.
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
@@ -42,7 +38,7 @@ There are several sample content fragments in We.Retail; navigate via **Assets**
 
 These include **Arctic Surfing in Lofoten**, a fragment together with related visual assets:
 
-* Navigate via **Assets**, **Files**, **We.Retail**, **English**, **Experiences**, **Artic Surfing in Lofoten**:
+* Navigate by way of **Assets**, **Files**, **We.Retail**, **English**, **Experiences**, **Arctic Surfing in Lofoten**:
 
     * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
@@ -78,11 +74,11 @@ For example, the **Arctic Surfing in Lofoten** content fragment is referenced in
 
 ## Further Information {#further-information}
 
-For more details see:
+For more details, see:
 
 * [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md)
 
-    * Learn how to create, edit and manage your Content Fragment assets.
+    * Learn how to create, edit, and manage your Content Fragment assets.
 
 * [Page Authoring with Content Fragments](/help/sites-authoring/content-fragments.md)
 

@@ -1,14 +1,10 @@
 ---
 title: Social Component Framework
-seo-title: Social Component Framework
 description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
-seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
-uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
 ---
 # Social Component Framework {#social-component-framework}
@@ -20,7 +16,7 @@ The benefits of the framework:
 * **Functional**: Out-of-the-box ease of integration with little or no customization for 80% of use cases.
 * **Skinnable**: Consistent use of HTML attributes for CSS styling.
 * **Extensible**: Component implementation is object-oriented and light on business logic - easy to add incremental business login on server.
-* **Flexible**: Simple logic-less javascript templates that are easily overlayed and customized.
+* **Flexible**: Simple logic-less JavaScript templates that are easily overlaid and customized.
 * **Accessible**: The HTTP API supports posting from any client, including mobile apps.
 * **Portable**: Integrate/embed into any webpage built on any technology.
 
@@ -28,11 +24,11 @@ Explore on an author or publish instance using the interactive [Community Compon
 
 ## Overview {#overview}
 
-In SCF, a component is comprised of a SocialComponent POJO, a Handlebars JS Template (to render the component), and CSS (to style the component).
+In SCF, a component is composed of a SocialComponent POJO, a Handlebars JS Template (to render the component), and CSS (to style the component).
 
 A Handlebars JS Template may extend the model/view JS components to handle user interaction with the component on the client.
 
-If a component needs to support modification of data, the implementation of the SocialComponent API can be written to support edit/save of data similar to model/data objects in traditional web applications. In addition, operations (controllers) and an operation service may be added to handle operation requests, perform business logic, and invoke the APIs on the model/data objects.
+If a component must support modification of data, the implementation of the SocialComponent API can be written to support edit/save of data similar to model/data objects in traditional web applications. In addition, operations (controllers) and an operation service may be added to handle operation requests, perform business logic, and invoke the APIs on the model/data objects.
 
 The SocialComponent API may be extended to provide data required by a client for a view layer or an HTTP client.
 
@@ -49,23 +45,23 @@ To customize or extend the components, you write only the overlays and extension
 * For Look and Feel:
   * Change the JS Template and CSS.
 * For Look, Feel and UX:
-  * Change the JS Template, CSS and [extend/override Javascript](client-customize.md#extending-javascript).
-* To modify the information availble to the JS Template or to the GET endpoint:
+  * Change the JS Template, CSS, and [extend/override JavaScript](client-customize.md#extending-javascript).
+* To modify the information available to the JS Template or to the GET endpoint:
   * Extend the [SocialComponent](server-customize.md#socialcomponent-interface).
 * To add custom processing during operations:
   * Write an [OperationExtension](server-customize.md#operationextension-class).
-* To add a new custom operation:
+* To add a custom operation:
   * Create a new [Sling Post Operation](server-customize.md#postoperation-class).
   * Use existing [OperationServices](server-customize.md#operationservice-class) as needed.
-  * Add Javascript code to invoke your operation from the client side as needed.
+  * Add JavaScript code to invoke your operation from the client side as needed.
 
 ## Server-Side Framework {#server-side-framework}
 
 The framework provides APIs to access functionality on the server and support interaction between the client and server.
 
-### Java APIs {#java-apis}
+### Java&trade; APIs {#java-apis}
 
-The Java APIs provide abstract classes and interfaces which are easily inherited or subclassed.
+The Java&trade; APIs provide abstract classes and interfaces which are easily inherited or subclassed.
 
 The main classes are described on the [Server-side Customization](server-customize.md) page.
 
@@ -81,7 +77,7 @@ For every SocialComponent, the framework provides an HTTP-based API endpoint. Th
 
 **`DefaultSocialGetServlet`** 
 
-1. Passes the resource (resourceType) to the `SocialComponentFactoryManager` and receives a SocialComponentFactory capable of selecting a `SocialComponent` representing the resousrce.
+1. Passes the resource (resourceType) to the `SocialComponentFactoryManager` and receives a SocialComponentFactory capable of selecting a `SocialComponent` representing the resource.
 
 1. Invokes the factory and receives a `SocialComponent` capable of handling the resource and request.
 1. Invokes the `SocialComponent`, which process the request and returns a JSON representation of the results.
@@ -95,9 +91,9 @@ A default GET servlet listens to .social.json requests to which the SocialCompon
 
 ### HTTP API - POST Requests {#http-api-post-requests}
 
-In addition to the GET (Read) operations, the framework defines an endpoint pattern to enable other operations on a component, including Create, Update and Delete. These endpoints are HTTP APIs that accept input and respond with either an HTTP status codes or with a JSON response object.
+In addition to the GET (Read) operations, the framework defines an endpoint pattern to enable other operations on a component, including Create, Update, and Delete. These endpoints are HTTP APIs that accept input and respond with either an HTTP status code or with a JSON response object.
 
-This framework endpoint pattern makes CUD operations extensible, reusable and testable.
+This framework endpoint pattern makes CUD operations extensible, reusable, and testable.
 
 **`POST Request`**
 
@@ -121,15 +117,15 @@ Visit [Server-Side Customizations](server-customize.md) for information on custo
 
 One of the more noticeable changes in the new framework is the use of the `Handlebars JS` (HBS)templating language, a popular open-source technology for server-client rendering.
 
-HBS scripts are simple, logic-less, compile on both server and client, are easy to overlay and customize, and naturally bind with the client UX because HBS supports client side rendering.
+HBS scripts are simple, logic-less, compile on both server and client, are easy to overlay and customize, and naturally bind with the client UX because HBS supports client-side rendering.
 
 The framework provides several [Handlebars helpers](handlebars-helpers.md) that are useful when developing SocialComponents.
 
-On the server, when Sling resolves a GET request, it identifies the script that will be used to respond to the request. If the script is an HBS template (.hbs), Sling will delegate the request to the Handlebars Engine. The Handlebars Engine will then get the SocialComponent from the appropriate SocialComponentFactory, build a context, and render the HTML.
+On the server, when Sling resolves a GET request, it identifies the script that is used to respond to the request. If the script is an HBS template (.hbs), Sling will delegate the request to the Handlebars Engine. The Handlebars Engine will then get the SocialComponent from the appropriate SocialComponentFactory, build a context, and render the HTML.
 
 ### No Access Restriction {#no-access-restriction}
 
-Handlebars (HBS) template files (.hbs) are analogous to .jsp and .html template files, except they may be used for rendering both in the client browser and on the server. Therefore, a client browser requesting a client-side template will receive an .hbs file from the server.
+Handlebars (HBS) template files (.hbs) are analogous to .jsp and .html template files, except they may be used for rendering both in the client browser and on the server. Therefore, a client browser requesting a client-side template receives an .hbs file from the server.
 
 This requires that all HBS templates in the sling search path (any .hbs files under /libs/ or /apps) can be fetched by any user from author or publish.
 
@@ -137,7 +133,7 @@ HTTP access to .hbs files may not be prohibited.
 
 ### Add or Include a Communities Component {#add-or-include-a-communities-component}
 
-Most Communities components must be *added* as a Sling addressable resource. A select few of the Communities components may be *included* in a template as a non-existing resource to allow for dynamic inclusion and customization of the location at which to write user generated content (UGC).
+Most Communities components must be *added* as a Sling addressable resource. A select few of the Communities components may be *included* in a template as a non-existing resource to allow for dynamic inclusion and customization of the location at which to write user-generated content (UGC).
 
 In either case, the component's [required client libraries](clientlibs.md) must also be present.
 
@@ -151,7 +147,7 @@ The result is a JCR child node under a par node, which is Sling addressable.
 
 Including a component refers to the process of adding a reference to a ["non-existing" resource](srp.md#for-non-existing-resources-ners) (no JCR node) within the template, such as using a scripting language.
 
-As of AEM 6.1, when a component is dynamically included instead of added, it is possible to edit the component's properties in author *design *mode.
+As of Adobe Experience Manager (AEM) 6.1, when a component is dynamically included instead of added, it is possible to edit the component's properties in author *design* mode.
 
 Only a select few of the AEM Communities components may be dynamically included. They are:
 
@@ -160,7 +156,7 @@ Only a select few of the AEM Communities components may be dynamically included.
 * [Reviews](reviews-basics.md)
 * [Voting](essentials-voting.md)
 
-The [Community Components Guide](components-guide.md) allows includable components to be toggled from being added to being included.
+The [Community Components Guide](components-guide.md) allows includible components to be toggled from being added to being included.
 
 **When using Handlebars** templating language, the non-existing resource is included using the [include helper](handlebars-helpers.md#include) by specifying its resourceType:
 
@@ -184,18 +180,18 @@ See [SCF Handlebars Helpers](handlebars-helpers.md) for a list and description o
 
 ## Client-Side Framework {#client-side-framework}
 
-### Model-View Javascript Framework {#model-view-javascript-framework}
+### Model-View JavaScript Framework {#model-view-javascript-framework}
 
-The framework includes an extension of [Backbone.js](https://www.backbonejs.org/), a model-view JavaScript framework, to facilitate development of rich, interactive components. The object-oriented nature supports an extensible/reusable framework. Communitication between client and server is simplified by means of the HTTP API.
+The framework includes an extension of [Backbone.js](https://backbonejs.org/), a model-view JavaScript framework, to facilitate development of rich, interactive components. The object-oriented nature supports an extensible/reusable framework. Communication between client and server is simplified with the HTTP API.
 
-The framework leverages server side Handlebars templates to render the components for the client. The models are based on the JSON responses generated by the HTTP API. The views bind themselves to HTML generated by the Handlebars templates and provide interactivity.
+The framework uses server-side Handlebars templates to render the components for the client. The models are based on the JSON responses generated by the HTTP API. The views bind themselves to HTML generated by the Handlebars templates and provide interactivity.
 
 ### CSS Conventions {#css-conventions}
 
 The following are recommended conventions for defining and using CSS classes:
 
-* Use clearly namespaced CSS class selector names and avoid generic names such as 'heading', 'image', etc.
-* Define specific class selector styles so the CSS stylesheets work well with other elements and styles on the page. For example: `.social-forum .topic-list .li { color: blue; }`
+* Use clearly namespaced CSS class selector names and avoid generic names such as 'heading', and 'image'.
+* Define specific class selector styles so the CSS style sheets work well with other elements and styles on the page. For example: `.social-forum .topic-list .li { color: blue; }`
 * Keep CSS classes for styling separate from CSS classes for UX driven by JavaScript.
 
 ### Client-Side Customizations {#client-side-customizations}
@@ -206,7 +202,7 @@ For customizing the appearance and behavior of a Communities component on the cl
 * [Extensions](client-customize.md#extensions)
 * [HTML Markup](client-customize.md#htmlmarkup)
 * [Skinning CSS](client-customize.md#skinning-css)
-* [Extending Javascript](client-customize.md#extending-javascript)
+* [Extending JavaScript](client-customize.md#extending-javascript)
 * [Clientlibs for SCF](client-customize.md#clientlibs-for-scf)
 
 ## Feature and Component Essentials {#feature-and-component-essentials}
