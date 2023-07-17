@@ -1,20 +1,16 @@
 ---
 title: Glossary
-seo-title: Glossary
 description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
-seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
-uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 ---
 # Glossary{#glossary}
 
-This glossary lists (alpabetically) details of all Deliverable documents from the [Project Checklist](/help/managing/best-practices-checklist.md).
+This glossary lists (alphabetically) details of all Deliverable documents from the [Project Checklist](/help/managing/best-practices-checklist.md).
 
 ## Acceptance from Business Stakeholders {#acceptance-from-business-stakeholders}
 
@@ -31,7 +27,7 @@ Acceptance tests are used to confirm that the:
 * Users accept the solution and can envisage working with it.
 * Customer accepts the project.
 
-The earlier you plan and design your acceptance tests, the easier the final deployment will be. They should be defined together with the customer and your Quality Assurance team.
+The earlier you plan and design your acceptance tests, the easier the final deployment. They should be defined together with the customer and your Quality Assurance team.
 
 Although you might not be able to define all details at the very start of the project, initial definitions should be discussed and agreed on. The acceptance tests will probably be based on the fundamental requirements (functional and performance).
 
@@ -41,7 +37,7 @@ Ensure that the required levels of system access have been granted to all roles.
 
 ### Adobe Security Checklist {#adobe-security-checklist}
 
-The [Adobe Security Checklist](/help/sites-administering/security-checklist.md) is the official checklist provided to ensure that AEM is secure at installation. It contains the security measures and verification steps you need to perform to ensure the integrity of your instance.
+The [Adobe Security Checklist](/help/sites-administering/security-checklist.md) is the official checklist provided to ensure that Adobe Experience Manager (AEM) is secure at installation. It contains the security measures and verification steps that you must perform to ensure the integrity of your instance.
 
 ### Adobe Support Portal Project Set Up {#adobe-support-portal-project-set-up}
 
@@ -59,7 +55,7 @@ Training for staff who will be producing (authoring) content for the solution. S
 
 ### AEM Certification Exam {#aem-certification-exam}
 
-Ensure that the appropriate persona are registered to take the relevant [certification exams](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager).
+Ensure that the appropriate personas are registered to take the relevant [certification exams](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager).
 
 ### AEM Certified {#aem-certified}
 
@@ -67,11 +63,11 @@ Ensure that the appropriate persona have passed the relevant [certification exam
 
 ### AEM Technical Training {#aem-technical-training}
 
-Provide technical training for the appropriate persona; for example, developers, architects, engineers and business practitioners.
+Provide technical training for the appropriate persona; for example, developers, architects, engineers, and business practitioners.
 
 ### Agreement on KPIs Defined as Goals for the Project {#agreement-on-kpis-defined-as-goals-for-the-project}
 
-Key Performance Indicators (KPIs) help an organization to define and measure progress toward organizational goals and objectives. Once an organization has analysed its mission and defined its goals, it needs to measure progress towards those goals. KPIs provide a mechanism for measurement.
+Key Performance Indicators (KPIs) help an organization to define and measure progress toward organizational goals. Once an organization has analyzed its mission and defined its goals, it must measure progress toward those goals. KPIs provide a mechanism for measurement.
 
 ### Align Business and Performance KPIs {#align-business-and-performance-kpis}
 
@@ -83,7 +79,7 @@ Ensure that the proposed content architecture is aligned with the relevant Key P
 
 ### Alignment of the Customer Roadmap with Project Timeline {#alignment-of-the-customer-roadmap-with-project-timeline}
 
-The Customer Roadmap is comprised of high level milestones and business goals. The Project Timeline must adhere to and align with this strategy, so any potential risks and/or possible deviations must be highlighted and tracked.
+The Customer Roadmap is composed of high-level milestones and business goals. The Project Timeline must adhere to and align with this strategy, so any potential risks and/or possible deviations must be highlighted and tracked.
 
 ### Application Architecture Definition {#application-architecture-definition}
 
@@ -91,12 +87,12 @@ The [application architecture](/help/managing/best-practices.md#development-prep
 
 It is focused on:
 
-* How they will interact with each other and with users.
+* How they interact with each other and with users.
 * The data to be consumed and produced by applications, rather than their internal structure.
 
 ### Application Specific Maintenance Tasks Defined {#application-specific-maintenance-tasks-defined}
 
-Apart from standard Adobe Experience Manager (AEM) maintenance tasks, you need to define any other operational tasks that need to be executed for the ongoing maintenance of the solution.
+Apart from standard Adobe Experience Manager (AEM) maintenance tasks, you must define any other operational tasks that must be run for the ongoing maintenance of the solution.
 
 ### Appropriately Trained Staff {#appropriately-trained-staff}
 
@@ -117,7 +113,7 @@ The architecture diagram is a graphical representation of the architecture. It i
 
 ### Architecture Draft {#architecture-draft}
 
-This provides a high level view of the system and solution architecture. At this stage it is a draft that will be reviewed and refined at later stages.
+This provides a high-level view of the system and solution architecture. At this stage it is a draft that will be reviewed and refined at later stages.
 
 ### Architecture Review Board Sign Off {#architecture-review-board-sign-off}
 
@@ -126,7 +122,7 @@ The Architecture Review Board is a cross-organizational body that:
 * oversees the implementation of a coherent strategy
 * ensures compliance in systems
 
-The review board should be representative of all key stakeholders involved with the architecture. Typically they will comprise of a group of executives responsible for the review and maintenance of the overall architecture.
+The review board should be representative of all key stakeholders involved with the architecture. Typically they are composed of a group of executives responsible for the review and maintenance of the overall architecture.
 
 ### Automated Test Suite Adapted for Real Content and Results Compared to KPIs {#automated-test-suite-adapted-for-real-content-and-results-compared-to-kpis}
 
@@ -149,7 +145,7 @@ The Automated Testing Strategy must be validated and adjusted according to the c
 
 ### Automation Strategy {#automation-strategy}
 
-The automation of deployments ensures faster and consisent deployments. The Automation Strategy outlines the configuration of any such automation mechanisms; including:
+The automation of deployments ensures faster and consistent deployments. The Automation Strategy outlines the configuration of any such automation mechanisms; including:
 
 * frequency
 * tooling to be used
@@ -178,7 +174,7 @@ The Backup and Restore Concept outlines the technical functionality that will be
 
 A full end-to-end test based on the Backup and Restore Concept.
 
-### Business Case(s) {#business-case-s}
+### Business Cases {#business-case-s}
 
 A business case document presents the arguments related to taking the action, taking alternative action (if available), or not taking any action. The arguments should be balanced, based on concrete facts (wherever possible/relevant) and highlight both the benefits and risks for all cases.
 
@@ -196,7 +192,7 @@ The Business Analyst should confirm that they fully understand:
 
 Organizations use Key Performance Indicators (KPIs) to evaluate their success at reaching targets.
 
-Business KPIs define measurable values that demonstrate how effectively a company is achieving key business objectives. It is important to choose KPIs appropriate to your business/scenario with clear definitions of what they are, how they will be measured, how they will be used and by whom.
+Business KPIs define measurable values that demonstrate how effectively a company is achieving key business objectives. It is important to choose KPIs appropriate to your business/scenario with clear definitions of what they are, how they are measured, how they are used, and by whom.
 
 ### Business Requirements Documentation {#business-requirements-documentation}
 
@@ -207,19 +203,19 @@ When examining the business solution the BRD should answer the question:
 
 ### Business Sign Off on any Required Adjustments to the Solution or Architecture Identified and Aligned Against ROI and KPI Expectations {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
-The processes of risk assessment and penetration testing may produce issues and outcomes that need to be addressed in the architecture or development of the solution.
+The processes of risk assessment and penetration testing may produce issues and outcomes that must be addressed in the architecture or development of the solution.
 
-Any adjustments resulting from these processes need to be reviewed and approved by the business and gauged against the overall goals.
+Any adjustments resulting from these processes must be reviewed and approved by the business and gauged against the overall goals.
 
 ### Caching Strategy {#caching-strategy}
 
 The Caching Strategy outlines what will be cached for the end user. It must be compliant with the Performance KPIs.
 
-For examples, elements such as images, javascript and other server files can be cached to improve the performance of a solution.
+For examples, elements such as images, JavaScript, and other server files can be cached to improve the performance of a solution.
 
 ### Coding Guidelines {#coding-guidelines}
 
-The Coding Guidelines define basic principles that the developers should adhere to when developing the solution. These can include, amongst others:
+The Coding Guidelines define basic principles that the developers should adhere to when developing the solution. These can include, among others:
 
 * naming conventions
 * service usage
@@ -255,7 +251,7 @@ Ensure that the Security Concept is in place.
 
 ### Components and Templates Relationship Concept {#components-and-templates-relationship-concept}
 
-The outline of the templates and components that will be used in the new application. Includes details such as inheritance rules, permissions and relationships, amongst others.
+The outline of the templates and components that are used in the new application. Includes details such as inheritance rules, permissions, and relationships, among others.
 
 ### Components and Templates Relationship Specification {#components-and-templates-relationship-specification}
 
@@ -269,11 +265,11 @@ Specification details for each of the components to be implemented.
 
 The concept of how to develop against and test any external interfaces that may not be open/available to the development or test environments.
 
-Plan/implement mock-ups of these interfaces to ensure testing is as close to production-like behavior as possible.
+Plan/implement mock-ups of these interfaces to ensure that testing is as close to production-like behavior as possible.
 
 ### Content Architecture Document {#content-architecture-document}
 
-Documentation of the proposed architecture of the content. The details should include, (amongst others):
+Documentation of the proposed architecture of the content. The details should include, among others:
 
 * content tree
 * tagging concepts
@@ -295,10 +291,10 @@ Documentation of the current content architecture and format. This will be used 
 
 Policies from the customer concerning:
 
-* backup processes for both data and the solution
+* back up processes for both data and the solution
 * storage of the backup
 * confirmation that the backup is operating as expected
-* restoration, in case of failure
+* restoration, if there is a failure
 
 ### Customer Coding Guidelines {#customer-coding-guidelines}
 
@@ -308,7 +304,7 @@ Any guidelines/requirements from the customer on how development should be done.
 
 Policies from the customer that define how and when deployments/releases can be made.
 
-These often include timelines, scheduling and sign-off requirements.
+These often include timelines, scheduling, and sign-off requirements.
 
 ### Customer Monitoring Policies or Requirements {#customer-monitoring-policies-or-requirements}
 
@@ -320,7 +316,7 @@ The schedule that is defined by the customer for releases to the production envi
 
 ### Customer Reporting Policies and Requirements {#customer-reporting-policies-and-requirements}
 
-Any policies and/or requirements that the customer has in regard to reporting. These can include:
+Any policies, or requirements, or both, that the customer has in regard to reporting. These can include:
 
 * how often specific reports should be delivered
 * the format for specific reports
@@ -340,7 +336,7 @@ The customer (business and IT) will have policies that define the required secur
 
 ### Customer Specification Guidelines {#customer-specification-guidelines}
 
-Any guidelines the customer has relating to the format, delivery and sign-off of specifications.
+Any guidelines the customer has that relate to the format, delivery, and sign-off of specifications.
 
 ### Customer Test Reports {#customer-test-reports}
 
@@ -371,7 +367,7 @@ Ensure that the default security settings for AEM have been enabled/implemented.
 
 ### Deployment/Release Policies and Processes {#deployment-release-policies-and-processes}
 
-Formalized policies covering both the deployment and release(s) of your project. These can include:
+Formalized policies covering both the deployment and releases of your project. These can include:
 
 * time for releases
 * holiday planning
@@ -386,7 +382,7 @@ Define the required frequency of deployments across environments.
 
 A software development methodology involves breaking the entire process of software development work into distinct phases (or stages), each with distinct activities. The aim is to improve planning and management.
 
-When defining the methodology you should pre-define specific deliverables and artifacts that are created and completed by the project team to develop or maintain your application.
+When defining the methodology, you should pre-define specific deliverables and artifacts that are created and completed by the project team to develop or maintain your application.
 
 ### Development Role Definition {#development-role-definition}
 
@@ -402,7 +398,7 @@ The Development Team should confirm that they fully understand:
 
 * the scope of the project
 * all customer expectations
-* that this is the basis for all decisions made per persona, per phase in the project
+* the basis for all decisions made per persona, per phase in the project
 
 ### Dialogs Specification {#dialogs-specification}
 
@@ -426,7 +422,7 @@ The Durability Test shows the performance of the solution under a specific load.
 
 ### Durability Test Executed {#durability-test-executed}
 
-Execution of the durability test(s).
+Execution of the durability tests.
 
 ### Error Handling Concept {#error-handling-concept}
 
@@ -460,15 +456,15 @@ A diagram (or set of diagrams) of the existing systems and dependencies.
 
 The Project Sponsor collects the business expectations related to the success of the project. It is important to have the full set of expectations available at the start of a project as these should influence all decisions made throughout the implementation.
 
-Expections can include:
+Expectations can include:
 
 * specific KPIs, such as the percentage increase in pages served
 * lower time for publishing content
-* higher level goals, such as an easy-to-use interface
+* higher-level goals, such as an easy-to-use interface
 
 ### Experience Designs Requirements {#experience-designs-requirements}
 
-Requirements for the entire experience of the solution. This covers factors such as personalization, cross device persistence and user experience, amongst others.
+Requirements for the entire experience of the solution. This covers factors such as personalization, cross device persistence, and user experience, among others.
 
 ### Experience Specifications {#experience-specifications}
 
@@ -476,14 +472,14 @@ Details of the Experience Design Requirements.
 
 ### External System and User Dependencies/System Context {#external-system-and-user-dependencies-system-context}
 
-A diagram (or set of diagrams) outlining the full ecosystem of the solution. This should include elements such as the external integrations, interfaces, dependencies and networks.
+A diagram (or set of diagrams) outlining the full ecosystem of the solution. This should include elements such as the external integrations, interfaces, dependencies, and networks.
 
 ### Fallback System and Procedure {#fallback-system-and-procedure}
 
 The definition of the fallback system:
 
-* the business critical functionalities that must keep operating in the case of a critical failure
-* the processes required in the case of fallback
+* the business critical functionalities that must keep operating if there is a critical failure
+* the processes required if there is fallback
 
 ### Fallback System and Procedure Tested {#fallback-system-and-procedure-tested}
 
@@ -491,11 +487,11 @@ End-to-end test of the fallback system.
 
 ### Fallback System Sign Off from Business Stakeholders {#fallback-system-sign-off-from-business-stakeholders}
 
-Sign off, from the business stakeholders, that the fallback system and related procedures will ensure the critical business functionalities.
+Sign off, from the business stakeholders, that the fallback system and related procedures ensure the critical business functionalities.
 
 ### Feasibility Confirmation on KPIs {#feasibility-confirmation-on-kpis}
 
-Results of a feasibility study for both AEM and the high level solution design. These should be measured against the KPIs to ensure that these can be met.
+Results of a feasibility study for both AEM and the high-level solution design. These should be measured against the KPIs to ensure that these can be met.
 
 ### Finalized Contract {#finalized-contract}
 
@@ -510,42 +506,42 @@ Confirmation that the stakeholders fully accept the:
 
 ### Go Live Schedule {#go-live-schedule}
 
-Timeline and schedule for the activites required for:
+Timeline and schedule for the activities required for:
 
 * preparation for go live
 * the actual go live
 
 ### Happy Paths Defined {#happy-paths-defined}
 
-A happy path is a default scenario featuring no exceptional or error conditions. It is comprised of the sequence of activities executed when everything goes as expected.
+A happy path is a default scenario featuring no exceptional or error conditions. It is composed of the sequence of activities executed when everything goes as expected.
 
 ### Hardware Estimates {#hardware-estimates}
 
 Initial estimates of:
 
 * the hardware needed for basic AEM installation
-* any additional requirements, based on the high level solution design
+* any additional requirements, based on the high-level solution design
 
 ### Hardware will be Available to Fulfill Requirements {#hardware-will-be-available-to-fulfill-requirements}
 
 Confirmation that all environments will have the minimum required hardware in place.
 
-### High Level Requirements {#high-level-requirements}
+### High-Level Requirements {#high-level-requirements}
 
-Definition of the high level requirements provides a generalized breakdown of requirements for the system, covering aspects such as:
+Definition of the high-level requirements provides a generalized breakdown of requirements for the system, covering aspects such as:
 
 * Business processes
 * Major system functions
 
-Basic details about these functions are usually known, so this document should not be an estimate.
+Basic details about these functions are typically known, so this document should not be an estimate.
 
-### High Level Solution Design {#high-level-solution-design}
+### High-Level Solution Design {#high-level-solution-design}
 
-The high-level solution design explains the architecture that will be used for developing the solution. The architecture diagram provides an overview of the entire system, identifying the main components that will be developed for the product and their interfaces.
+The high-level solution design explains the architecture that is used for developing the solution. The architecture diagram provides an overview of the entire system, identifying the main components that are developed for the product and their interfaces.
 
-### High Level System Map {#high-level-system-map}
+### High-Level System Map {#high-level-system-map}
 
-This system map should provide a very high level diagram of the system. It differs from the Solution Context in that is it a generalized map of all systems involved, there are no interfaces on this diagram.
+This system map should provide a high-level diagram of the system. It differs from the Solution Context in that is it a generalized map of all systems involved, there are no interfaces on this diagram.
 
 ### Historical Content Structure {#historical-content-structure}
 
@@ -553,7 +549,7 @@ Definition of the content structure of the legacy system. This is used for refer
 
 ### Historical Performance and Historical Performance KPIs {#historical-performance-and-historical-performance-kpis}
 
-You need to collect and document performance statistics and performance KPIs from the legacy system. These are then used as a reference point and for benchmarking the new solution.
+You must collect and document performance statistics and performance KPIs from the legacy system. These are then used as a reference point and for benchmarking the new solution.
 
 ### Identify Critical Key Solutions/Functionalities {#identify-critical-key-solutions-functionalities}
 
@@ -589,11 +585,11 @@ Implementation of integrations with all required external systems.
 
 ### Implementation - Migration Strategy {#implementation-migration-strategy}
 
-Migration together with the validation of content and other artefacts for the new solution.
+Migration together with the validation of content and other artifacts for the new solution.
 
 ### Implementation - Roles and Rights {#implementation-roles-and-rights}
 
-Implementation of roles and rights, users and groups.
+Implementation of roles and rights, users, and groups.
 
 ### Implementation - Security Concept {#implementation-security-concept}
 
@@ -617,16 +613,16 @@ Implementation of the designed workflows.
 
 ### Implementation Concept {#implementation-concept}
 
-The implementation concept provides the guiding principles for the entire implementation. It should take into consideration:
+The implementation concept provides the guiding principles for the entire implementation. It should consider:
 
 * Operations
 * Maintenance
-* Compatability
+* Compatibility
 * Reusability
 * Security
 * Scalability
 
-This concept can also outine the frameworks, libraries and other artifacts used in the solution.
+This concept also outlines the frameworks, libraries, and other artifacts used in the solution.
 
 ### Inform Adobe Support About the Go Live Schedule {#inform-adobe-support-about-the-go-live-schedule}
 
@@ -650,9 +646,9 @@ Clear processes record all issues encountered and track ongoing activities with 
 
 A tracking system, together with the required processes, to record all issues encountered and track ongoing activities with the aim of ensuring that all issues are addressed.
 
-All project stakeholders should have access in order to facilitate transparency of the project status.
+All project stakeholders should have access to facilitate transparency of the project status.
 
-Examples includes Atlassian JIRA and HP Quality Center.
+Examples include Atlassian JIRA and HP Quality Center.
 
 ### Issue Tracking System Process is Set Up and Integrated {#issue-tracking-system-process-is-set-up-and-integrated}
 
@@ -675,13 +671,13 @@ An outline of tools that will be used in the implementation; the tools should in
 
 ### List of Users that Require Access to Adobe Support Portal {#list-of-users-that-require-access-to-adobe-support-portal}
 
-A list of all users and roles that will need access to the Adobe Support Portal.
+A list of all users and roles that need access to the Adobe Support Portal.
 
 The list is normally comprised of the Solution Architect and/or customer IT staff.
 
 ### Log File Analysis {#log-file-analysis}
 
-An analysis, together with the resulting recommendations, defining what needs to be logged in order to monitor the solution:
+An analysis, together with the resulting recommendations, defining what must be logged to monitor the solution:
 
 * activities to be logged
 * level of granularity
@@ -737,7 +733,7 @@ You should monitor use by:
 * the repository
 * log files
 
-### Monitoring - External System(s) {#monitoring-external-system-s}
+### Monitoring - External Systems {#monitoring-external-system-s}
 
 Monitor any connections between the solution and external systems:
 
@@ -780,13 +776,13 @@ The monitoring concepts to be applied to your solution; incorporating:
 
 * AEM standard monitoring
 * system monitoring
-* customer specific monitoring requirements
+* customer-specific monitoring requirements
 
 ### Monitoring Potential Weak Points {#monitoring-potential-weak-points}
 
 Specific points that could be susceptible to failure, should be identified and defined. Any monitoring tasks related to these should also be defined.
 
-Examples include (amongst others):
+Examples include (among others):
 
 * key workflows
 * transactions processing
@@ -819,7 +815,7 @@ Manual providing all the information required for the successful operations and 
 
 Should also detail the implementation concepts for:
 
-* meeting the perfornance KPIs
+* meeting the performance KPIs
 * scaling the solution to continue to meet those KPIs
 
 ### Package Prepared {#package-prepared}
@@ -840,15 +836,15 @@ Reports created for the business explaining the penetration test results.
 
 ### Performance and Scalability Concept {#performance-and-scalability-concept}
 
-Conceptual document about how to ensure that your implementation meets the perfornance KPIs, and how to scale the solution so that it continues to meet those KPIs.
+Conceptual document about how to ensure that your implementation meets the performance KPIs, and how to scale the solution so that it continues to meet those KPIs.
 
 ### Performance Benchmark {#performance-benchmark}
 
-The Performance Benchmark is used to define performance testing, durability testing and monitoring. It does this by assessing the performance characteristics of the solution and system hardware.
+The Performance Benchmark is used to define performance testing, durability testing, and monitoring. It does this by assessing the performance characteristics of the solution and system hardware.
 
 ### Performance KPIs {#performance-kpis}
 
-These define the Key Performance Indicators (KPIs) required to measure performance of the system. Some examples include page load time, server response time and database query performance.
+These define the Key Performance Indicators (KPIs) required to measure performance of the system. Some examples include page load time, server response time, and database query performance.
 
 ### Performance Tests - Report {#performance-tests-report}
 
@@ -858,9 +854,9 @@ Reports created for the business, detailing the results of the performance tests
 
 The results must match the defined KPIs and expectations for performance.
 
-### Persona Based Testing Concept {#persona-based-testing-concept}
+### Persona-Based Testing Concept {#persona-based-testing-concept}
 
-Persona based testing is a method based on the different personas outlined in the Experience Designs. It also tests the accounts and their related permissions levels.
+Persona-based testing is a method based on the different personas outlined in the Experience Designs. It also tests the accounts and their related permissions levels.
 
 This is often used in User Acceptance Testing (UAT).
 
@@ -886,7 +882,7 @@ Confirm that the production environment is ready, with automated deployments in 
 
 ### Production Sign Off from Business Stakeholders {#production-sign-off-from-business-stakeholders}
 
-Before Go Live onto the production environment, Production Sign off (PSO) must be granted. This is the result of a review of the release that will go into production, together with any known issues. Sign off is given as part of the Go Live schedule.
+Before Go Live onto the production environment, Production Sign-off (PSO) must be granted. This is the result of a review of the release that will go into production, together with any known issues. Sign-off is given as part of the Go Live schedule.
 
 ### Production Sign Off Process and Policy {#production-sign-off-process-and-policy}
 
@@ -894,19 +890,19 @@ The policy and process required to obtain the Production Sign off before moving 
 
 ### Project Communication Plan {#project-communication-plan}
 
-Define the communication plan for both businesss stakeholders and the project team.
+Define the communication plan for both business stakeholders and the project team.
 
 ### Project Efforts - Final Estimates {#project-efforts-final-estimates}
 
-The [initial estimates](#project-efforts-initial-estimates) were high level and made according to the high level requirements for the implementation.
+The [initial estimates](#project-efforts-initial-estimates) were high level and made according to the high-level requirements for the implementation.
 
-These are now reviewed, refined and expanded to provide the final estimates. Estimates should be delivered by each appropriate project lead, including project management, consulting, architecture, testing and development.
+These are now reviewed, refined, and expanded to provide the final estimates. Estimates should be delivered by each appropriate project lead, including project management, consulting, architecture, testing, and development.
 
 These estimates are used for resourcing and budgeting.
 
 ### Project Efforts - Initial Estimates {#project-efforts-initial-estimates}
 
-Initial estimates are high level and made according to the high level requirements for the implementation. This will be reviewed and refined at later stages.
+Initial estimates are high level and made according to the high-level requirements for the implementation. This will be reviewed and refined at later stages.
 
 ### Project Organization {#project-organization}
 
@@ -936,11 +932,11 @@ Project status reports delivered according to the agreed schedule and with the r
 
 The Proof of Concept (POC) implements a limited range of functions for the solution.
 
-It should aim to demonstrate the feasibility of the solution, verify that it can fulfil the required purpose and prove that there is the potential of it being used.
+It should aim to demonstrate the feasibility of the solution, verify that it can fulfill the required purpose and prove that there is the potential of it being used.
 
 ### Purge Rules {#purge-rules}
 
-AEM maintains multiple versions of assets and content. Purge rules are designed and configured to periodically remove the older versions in order to maintain repository health and size.
+AEM maintains multiple versions of assets and content. Purge rules are designed and configured to periodically remove the older versions to maintain repository health and size.
 
 ### Quality Report Format and Cadence {#quality-report-format-and-cadence}
 
@@ -971,7 +967,7 @@ Final release running and active in production.
 
 ### Relevant Contract Terms {#relevant-contract-terms}
 
-You should highlight specific contract terms that are relevant to the implementation of the project; such as contractual milestones, invoice periods or staff requirements.
+Highlight specific contract terms that are relevant to the implementation of the project; such as contractual milestones, invoice periods, or staff requirements.
 
 ### Reporting Cadence {#reporting-cadence}
 
@@ -997,9 +993,9 @@ Ensure that all the roles required for go live are staffed and available.
 
 ### Risk Assessment {#risk-assessment}
 
-The Risk Assesment is executed by the customer's IT and/or Security department(s).
+The Risk Assessment is run by the customer's IT department, or Security department, or both.
 
-It assesses the technical and business risks of the project. The assessment is required for the solution to ensure compliance to security policies.
+It assesses the technical and business risks of the project. The assessment is required for the solution to ensure compliance with security policies.
 
 ### Risk Mitigation Plan {#risk-mitigation-plan}
 
@@ -1016,13 +1012,13 @@ They aim to indicate the efficiency of the solution in economic terms by definin
 
 ### Roles and Rights Concept {#roles-and-rights-concept}
 
-Detailed specification of the concepts relating to roles and access rights required for the new application, including a high level outline of:
+Detailed specification of the concepts relating to roles and access rights required for the new application, including a high-level outline of:
 
 * roles
 * groups
 * users
 * permissions
-* as well as user management and provisioning
+* and user management and provisioning
 
 ### Roles and Rights Concept Meets Security Guidelines {#roles-and-rights-concept-meets-security-guidelines}
 
@@ -1036,7 +1032,7 @@ A detailed specification based on the Roles and Rights Concept.
 
 Recommendations related to security for the software and hardware architecture.
 
-### Security Based Coding Guidelines {#security-based-coding-guidelines}
+### Security-Based Coding Guidelines {#security-based-coding-guidelines}
 
 These guidelines define how the development coding should be done, based on security requirements such as:
 
@@ -1047,17 +1043,17 @@ These guidelines define how the development coding should be done, based on secu
 
 ### Security Checklist {#security-checklist}
 
-Project specific checklist of items, based on the Security Concept together with any additional policies required to ensure compliance of the solution.
+Project-specific checklist of items, based on the Security Concept together with any additional policies required to ensure compliance of the solution.
 
 Often this is also included as part of the post-deployment steps in the runbook.
 
 ### Security Concept {#security-concept}
 
-Define and document details of the security configuration required for the application, architecture and infrastructure.
+Define and document details of the security configuration required for the application, architecture, and infrastructure.
 
 ### Security Concept Draft {#security-concept-draft}
 
-A high level outline covering the security setup of the:
+A high-level outline covering the security setup of the:
 
 * application
 * architecture
@@ -1075,7 +1071,7 @@ Sign off from the stakeholders to ensure that the security implementation is com
 
 Set the required support processes in place.
 
-### SLAs for Third Party Systems {#slas-for-third-party-systems}
+### SLAs for Third-Party Systems {#slas-for-third-party-systems}
 
 Ensure that Service Level Agreements (SLAs) are available and communicated to both the development and operations teams for use during implementation and support.
 
@@ -1091,11 +1087,11 @@ Smoke Tests should be run on all systems to ensure correct operation of the solu
 
 ### Software Architecture Strategy {#software-architecture-strategy}
 
-The high level strategy for the software architecture; including services, servlets, frameworks and other implementation decisions.
+The high-level strategy for the software architecture; including services, servlets, frameworks, and other implementation decisions.
 
 ### Solution Review Board Established and Meeting Cadence Set {#solution-review-board-established-and-meeting-cadence-set}
 
-The Solution Review Board is usually comprised of customer stakeholders.
+The Solution Review Board is comprised of customer stakeholders.
 
 The board holds regular meetings to review the currently scoped requirements and relevant specifications on an ongoing basis. The aim is to ensure alignment with the success definition and criteria and also provide input into the development of the requirements.
 
@@ -1105,7 +1101,7 @@ Installation instructions for the solution, together with basic operational task
 
 ### Solution Sign Off and Acceptance Process {#solution-sign-off-and-acceptance-process}
 
-The sign off and acceptance process outlines the criteria that must be fulfilled before the solution can be released into a productive environment.
+The sign-off and acceptance process outlines the criteria that must be fulfilled before the solution can be released into a productive environment.
 
 It can also serve as a contractual milestone.
 
@@ -1123,15 +1119,15 @@ Any guidelines from the customer on how the specification should be done.
 
 ### Specification Review and Approval Process Defined and Communicated {#specification-review-and-approval-process-defined-and-communicated}
 
-A clear process for the customer sign off of specifications should be put in place. This process ensures clarity and firmness of scope for the requirements.
+A clear process for the customer sign-off of specifications should be put in place. This process ensures clarity and firmness of scope for the requirements.
 
 ### Staff Selected for AEM Administrator Training {#staff-selected-for-aem-administrator-training}
 
-Internal staff that will need training to administer the solution.
+Internal staff that needs training to administer the solution.
 
 ### Staff Selected for Author and End User Training {#staff-selected-for-author-and-end-user-training}
 
-Internal staff that will need training to author on the solution.
+Internal staff that needs training to author on the solution.
 
 ### Stakeholders {#stakeholders}
 
@@ -1156,9 +1152,9 @@ Status reports are a key tool of communication. The format should be aligned wit
 
 ### Success Criteria and Definition {#success-criteria-and-definition}
 
-The customer, project sponsor and project manager or consultant should specify:
+The customer, project sponsor, and project manager or consultant should specify:
 
-* What defines a successful outcome for the project.
+* What defines a successful outcome for the project?
 * The specific criteria required to meet that definition of success.
 
 These are used to ensure that the criteria for success are met:
@@ -1168,11 +1164,11 @@ These are used to ensure that the criteria for success are met:
 
 ### Support in Validation of Reported Issues {#support-in-validation-of-reported-issues}
 
-Part of the Quality Lead's responsibilities are to ensure that there are resources available to support any user when testing. For example, to help the user when testing, when reporting issues and to help validate the issues against the test environment.
+Part of the Quality Lead's responsibilities is to ensure that there are resources available to support any user when testing. For example, to help the user when testing, when reporting issues and to help validate the issues against the test environment.
 
 ### Support Processes and Access to Adobe Support Portal {#support-processes-and-access-to-adobe-support-portal}
 
-Access to the Adobe Support Portal is crucial for submitting tickets about any product based issues that may arise during implementation.
+Access to the Adobe Support Portal is crucial for submitting tickets about any product-based issues that may arise during implementation.
 
 Access should be allocated to key members of the team.
 
@@ -1182,11 +1178,11 @@ An initial proposal and definition of the architecture for all environments of t
 
 ### System Architecture Documentation {#system-architecture-documentation}
 
-A document detailing the system architecture; including interfaces, network location and integrations for all environments, amongst other information.
+A document detailing the system architecture; including interfaces, network location, and integrations for all environments, among other information.
 
 ### System Architecture Security Concept {#system-architecture-security-concept}
 
-A high level outline of how to make the system architecture compliant with any security policies. This can cover:
+A high-level outline of how to make the system architecture compliant with any security policies. This can cover:
 
 * firewalls and firewall rules
 * security zones
@@ -1196,7 +1192,7 @@ A high level outline of how to make the system architecture compliant with any s
 
 ### System Risk Factors Identified and Verified {#system-risk-factors-identified-and-verified}
 
-Any risk factors found in the risk assesment (or other reviews) are identified and assessed:
+Any risk factors found in the risk assessment (or other reviews) are identified and assessed:
 
 * the level of risk implied in each one
 * together with the estimated effort for any changes to the implementation that are required to address them.
@@ -1230,7 +1226,7 @@ Identify and verify potential technical risks. Technical risks can include:
 
 ### Technical Specification {#technical-specification}
 
-The Technical Specification covers (amongst other information):
+The Technical Specification covers (among other information):
 
 * interfaces
 * configurations
@@ -1239,7 +1235,7 @@ The Technical Specification covers (amongst other information):
 
 ### Template Specification {#template-specification}
 
-The specifications for the required templates. These should cover details including parsys, blueprint and inheritance mapping, amongst others.
+The specifications for the required templates. These should cover details including parsys, blueprint and inheritance mapping, among others.
 
 The specifications are based on the Business Requirements and Experience Requirements.
 
@@ -1261,7 +1257,7 @@ Reports detailing the results of testing; including:
 
 * defects raised
 * status of test cases executed
-* other quality related topics
+* other quality-related topics
 
 It should be noted that:
 
@@ -1270,7 +1266,7 @@ It should be noted that:
 
 ### Test Suite {#test-suite}
 
-Selection of the automation suite and tooling. These will be used to automate tests, including those for use cases.
+Selection of the automation suite and tooling. These are used to automate tests, including those for use cases.
 
 ### Test Tooling Suite Selected {#test-tooling-suite-selected}
 
@@ -1278,7 +1274,7 @@ Automation suite and tooling selected for use case automation and other test exe
 
 ### Testing Concept {#testing-concept}
 
-The Testing Concept is the very high-level outline of testing for the project; including, QA, UAT, performance, security, and integration testing.
+The Testing Concept is the high-level outline of testing for the project; including, QA, UAT, performance, security, and integration testing.
 
 ### Testing Plans {#testing-plans}
 
@@ -1290,34 +1286,34 @@ These requirements are specific to the technical implementation of services that
 
 ### Testing Strategy {#testing-strategy}
 
-The testing strategy outlines the high level strategy for quality assurance and user acceptance testing. This includes timelines, reporting cadence, and execution.
+The testing strategy outlines the high-level strategy for quality assurance and user acceptance testing. This includes timelines, reporting cadence, and execution.
 
-### Third Party Integration Concept {#third-party-integration-concept}
+### Third-Party Integration Concept {#third-party-integration-concept}
 
-Architectural and system level concept for the integration with third party systems.
+Architectural and system level concept for the integration with third-party systems.
 
-### Third Party Integration Specification {#third-party-integration-specification}
+### Third-Party Integration Specification {#third-party-integration-specification}
 
-Details of the requirements (both functional and non-functional) for the supported functionality and integration of the third party systems.
+Details of the requirements (both functional and non-functional) for the supported functionality and integration of the third-party systems.
 
-### Third Party Security Concept {#third-party-security-concept}
+### Third-Party Security Concept {#third-party-security-concept}
 
-Concept for ensuring the security of any third party integrations. Must be compliant with the appropriate security policies.
+Concept for ensuring the security of any third-party integrations. Must be compliant with the appropriate security policies.
 
-### Third Party System for Integration {#third-party-system-for-integration}
+### Third-Party System for Integration {#third-party-system-for-integration}
 
-Ensure that all third party systems are available, with appropriate documentation, for integration implementation.
+Ensure that all third-party systems are available, with appropriate documentation, for integration implementation.
 
-### Third Party Systems Access Enabled {#third-party-systems-access-enabled}
+### Third-Party Systems Access Enabled {#third-party-systems-access-enabled}
 
-Required access rights granted to the respective roles used in conjunction with third party systems.
+Required access rights granted to the respective roles used with third-party systems.
 
-### Third Party Testing Concept {#third-party-testing-concept}
+### Third-Party Testing Concept {#third-party-testing-concept}
 
 Defines:
 
 * use cases for testing the integrations
-* functionality related to any third party application
+* functionality related to any third-party application
 
 ### Threshold Definition {#threshold-definition}
 
@@ -1337,13 +1333,13 @@ This should define the project timelines and contractual milestones to be used f
 
 ### Total Project Efforts {#total-project-efforts}
 
-All effort estimates, from each of the leads on the project, should be consolidated; including, overhead, development, system engineering, architectural and testing efforts.
+All effort estimates, from each of the leads on the project, should be consolidated; including, overhead, development, system engineering, architectural, and testing efforts.
 
 If there is a support level included in the agreement, support and operations efforts should also be included.
 
 ### Training Materials {#training-materials}
 
-Materials to be used in training sessions. The materials should be created specifically for the solution and designed to be used in conjunction with the User Guides.
+Materials to be used in training sessions. The materials should be created specifically for the solution and designed to be used with the User Guides.
 
 ### Understands Scope of Project and Expectations {#understands-scope-of-project-and-expectations}
 
@@ -1355,7 +1351,7 @@ The appropriate persona should confirm that they fully understand:
 
 ### URL Handling Concept {#url-handling-concept}
 
-Your URL handling concept should cover AEM specific URL functionalities including:
+Your URL handling concept should cover AEM-specific URL functionalities including:
 
 * vanity URLs
 * link externalizing
@@ -1387,15 +1383,15 @@ User Guides provide information and assistance for the users of the solution:
 
 ### Validated Budget Plan {#validated-budget-plan}
 
-The budget plan must be reviewed and validated by all stakeholders. They need to check details such as invoicing, amounts and methods/timing of budget reporting.
+The budget plan must be reviewed and validated by all stakeholders. They must check details such as invoicing, amounts, and methods/timing of budget reporting.
 
 ### White Box Test Results {#white-box-test-results}
 
-White box testing is a method that tests the internal structures or workings of an application, as opposed to its functionality. White box testing can be applied at the unit, integration and system levels of the software testing process.
+White box testing is a method that tests the internal structures or workings of an application, as opposed to its functionality. White box testing can be applied at the unit, integration, and system levels of the software testing process.
 
 ### Workflow Specifications {#workflow-specifications}
 
-Based on the Workflows Concept, these specifications should define, in detail, the steps that will create the full workflow.
+Based on the Workflows Concept, these specifications should define, in detail, the steps that create the full workflow.
 
 The specification of each workflow should include (at a minimum):
 
@@ -1409,5 +1405,5 @@ The specification of each workflow should include (at a minimum):
 
 Workflows allow you to automate AEM activities. The Workflows Concept outlines:
 
-* the processes that will need automation
+* the processes that need automation
 * the services and roles in AEM that will be affected
