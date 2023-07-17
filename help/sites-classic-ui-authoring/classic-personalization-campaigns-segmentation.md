@@ -71,4 +71,4 @@ For example, combining the referring URL (as a behavioral trait) with demographi
 
 >[!NOTE]
 >
->See [Segmentation](/help/sitessadministering/campaign-segmentation.md) for further information on segments in Adobe Experience Manager.
+>See [Segmentation](/help/sites-administering/campaign-segmentation.md) for further information on segments in Adobe Experience Manager.
