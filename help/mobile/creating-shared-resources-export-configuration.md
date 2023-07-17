@@ -1,35 +1,31 @@
 ---
 title: Creating Shared Resources Export Configuration
-seo-title: Creating Shared Resources Export Configuration
 description: Follow this page to learn about exporting shared resources from Adobe Experience Manager (AEM) for upload to AEM Mobile.
-seo-description: Follow this page to learn about exporting shared resources from Adobe Experience Manager (AEM) for upload to AEM Mobile.
-uuid: 99b8ff94-8135-4643-a15b-aa6fb91f5401
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
 exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 ---
 # Creating Shared Resources Export Configuration{#creating-shared-resources-export-configuration}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
 >**Prerequisite**:
 >
->Prior to learn about creating and modifying shared resources, see [Content Sync](/help/mobile/mobile-ondemand-contentsync.md) to understand the basic concepts.
+>Before learning about creating and modifying shared resources, see [Content Sync](/help/mobile/mobile-ondemand-contentsync.md) to understand the basic concepts.
 
-AEM Mobile users use Content Sync to export live content to static content for use in Mobile Apps and this export occurs when content is uploaded to Mobile On-Demand Services from AEM Mobile.
+Adobe Experience Manager (AEM) Mobile users use Content Sync to export live content to static content for use in Mobile Apps and this export occurs when content is uploaded to Mobile On-Demand Services from AEM Mobile.
 
 The property ***dps-exportTemplate*** mentioned in table above, defines the path to the app's export configs. Set this property to create and modify shared resources.
 
-The following resources describes exporting shared resources from Adobe Experience Manager (AEM) for upload to AEM Mobile.
+The following resources describe exporting shared resources from AEM for upload to AEM Mobile.
 
-Shared HTML Resources allows articles to share HTML resources that would otherwise need to be duplicated for all articles and can include icons, fonts, javascript, and css.
+Shared HTML Resources let articles share HTML resources that would otherwise be duplicated for all articles, and can include icons, fonts, JavaScript, and css.
 
 The Content Sync configuration found at **&lt;dps-exportTemplate&gt;/dps-HTMLResources&gt;** should be configured to export all the content an article required for property static rendering on device.
 
