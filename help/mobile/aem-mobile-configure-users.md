@@ -1,19 +1,17 @@
 ---
 title: Configure your users and user groups
-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile On-Demand services app.
-uuid: 461e1725-41dd-4883-92b9-a7e175660401
+description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and management of your mobile On-Demand services app.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
 ---
 # Configure Your Users and User Groups {#configure-your-users-and-user-groups}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 This chapter describes the user roles and how to configure your users and groups to support the authoring and management of your mobile apps.
 
@@ -21,15 +19,15 @@ This chapter describes the user roles and how to configure your users and groups
 
 ### AEM Mobile Application Content Authors (app-author group) {#aem-mobile-application-content-authors-app-author-group}
 
-Members of the app-author group are responsible for authoring AEM mobile application content including, pages, text, images and videos.
+Members of the app-author group are responsible for authoring AEM mobile application content including, pages, text, images, and videos.
 
 #### Group configuration - app-authors {#group-configuration-app-authors}
 
-1. Create a new user group called, 'app-authors':
+1. Create a user group called, 'app-authors':
 
    Navigate to the User Admin Console: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
-   From within the user group console, select the '+' button to create a the group.
+   From within the user group console, select the '+' button to create a group.
 
    Set the ID of this group to 'app-authors' to denote that it is a specific type of author user group specific to authoring mobile applications within AEM.
 
@@ -37,7 +35,7 @@ Members of the app-author group are responsible for authoring AEM mobile applica
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Now that you have created the app-authors User Group, you can add individual team members to this new group through the [User Admin console](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Now that you have created the app-authors User Group, you can add individual team members to this new group through the [User Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -60,11 +58,11 @@ Members of the app-admins group can author application content with the same per
 >
 >Permissions determine availability of some user actions in the AEM App Command Center.
 >
->You'll notice some options are not available for app-authors that are available for app-admins.
+>Notice that some options are not available for app-authors that are available for app-admins.
 
 ### Group configuration - app-admins {#group-configuration-app-admins}
 
-1. Create a new group called app-admins.
+1. Create a group called app-admins.
 1. Add the following groups to your new app-admins group:
 
     * content-authors
@@ -80,7 +78,7 @@ Members of the app-admins group can author application content with the same per
 
     * (Read, Modify, Create, Delete, Replicate) on /etc/cloudservices/mobileservices
 
-1. On the same Permissions console, add permissions to stage, publish and clear app content updates;
+1. On the same Permissions console, add permissions to stage, publish, and clear app content updates;
 
     * (Read, Modify, Create, Delete, Replicate) on /etc/packages/mobileapp
     * (Read) on /var/contentsync
@@ -98,9 +96,9 @@ Members of the app-admins group can author application content with the same per
 1. Add members to this group as needed
 1. To Export Content or Upload
 
-    * (Read) on /etc/contentsync to to access export templates
-    * (Read) on /var to for path traversal on reads
-    * (Read, Write, Modify, Delete) on /var/contentsync to write, read, and cleanup ContentSync cached export content
+    * (Read) on /etc/contentsync to access export templates
+    * (Read) on /var to path traversal on reads
+    * (Read, Write, Modify, Delete) on /var/contentsync to write, read, and clean up ContentSync cached export content
 
 ### Additional Resources {#additional-resources}
 
