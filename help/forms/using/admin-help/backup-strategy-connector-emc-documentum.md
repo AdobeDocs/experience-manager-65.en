@@ -9,7 +9,7 @@ exl-id: b759b936-5907-4311-a5cc-60f321476368
 ---
 # Backup strategy for Connector for EMC Documentum&reg; users {#backup-strategy-for-connector-for-emc-documentum-users}
 
-If you have Connector for EMC Documentum&reg; installed, in addition to the instructions in this chapter, your backup and recovery strategy must include backing up (or recovering) the computer that the respective ECM system is installed on. (See the ECM Documentum&reg; documentation).
+If you have Connector for EMC Documentum&reg; installed, besides the instructions in this chapter, your backup and recovery strategy must include backing up (or recovering) the computer that the ECM system is installed on. (See the ECM Documentum&reg; documentation).
 
 Back up your AEM forms environment by using ECM repository and performing the following tasks:
 
