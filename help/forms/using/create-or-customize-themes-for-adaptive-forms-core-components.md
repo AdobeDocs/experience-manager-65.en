@@ -62,7 +62,7 @@ Customizing a theme refers to the process of modifying and personalizing the app
 
 ### Prerequisites to customize a theme {#prerequisites}
 
-* [Enable Adaptive Forms Core Components](/help/forms/using/installing-core-components.md) for your environment.
+* [Enable Adaptive Forms Core Components](/help/forms/using/enable-adaptive-forms-core-components.md) for your environment.
 
 * Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is a build automation tool commonly used for Java&trade; projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
 
@@ -139,20 +139,17 @@ The `variable.scss` file contains the global variables of the theme. By updating
 
 1. Open the `<your-theme-sources>/src/site/_variables.scss` file  for editing.
 1. Change the value of any property. For example, the default error color is red. To change the error color from red to blue, change the color hex code of the `$error`variable. For example, `$error: #196ee5`.
+
+    ![Example: Error color set to blue](/help/forms/using/assets/theme-level-changes.png)
+
 1. Save and close the file.
 
-<!--
-
-![Example: Error color set to blue](/help/forms/using/assets/variable-customization.png)
-
--->
 
 Similarly, you can use the `variable.scss` file to set font family and type, theme and font colors, font size, theme spacing, error icon, theme border styles, and more variable that impact multiple Adaptive Form components.  
 
 ##### Set component level styles {#component-based-customization}
 
 You also have the option to customize the font, color, size, and other CSS properties of specific Adaptive Form core components, such as buttons, checkboxes, containers, footers, and more. By editing the CSS file associated with the specific component, you can align its style with your organization's branding. To customize the style of a component, follow these steps:
-
 
 1. Open the file `<your-theme-sources>/src/components/<component>/<component.scss>` for editing. For example, to change the font color of the button component, open the `<your-theme-sources>/src/components/button/button.scss`, file .
 1. Change the value of any as per your requirements. For example, to change the color of the button component on mouse hover to Green, change the value of the `color: $white` property in the `cmp-adaptiveform-button__widget:hover` class to hex code #12b453 or any other shade of green. The final code looks like the following:
@@ -325,9 +322,9 @@ To remove unused or unwanted themes:
 
 ## See also
 
-* [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Create a Core Components based Adaptive Form](create-an-adaptive-form-core-components.md)
 * [Use rule editor to add dynamic behaviour to form](rule-editor.md)
 * [Create or customize themes for Core Components based Adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Create a template for Core Components based Adaptive Forms](template-editor.md)
-* [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 
