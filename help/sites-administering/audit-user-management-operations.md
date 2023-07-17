@@ -1,38 +1,34 @@
 ---
-title: How to Audit User Management Operations in AEM
-seo-title: How to Audit User Management Operations in AEM
-description: Learn how to audit User Management Operations in AEM.
-seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+title: How to Audit User Management Operations in Adobe Experience Manager
+description: Learn how to audit User Management Operations in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
 ---
-# How to Audit User Management Operations in AEM{#how-to-audit-user-management-operations-in-aem}
+# How to Audit User Management Operations in Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Introduction {#introduction}
 
-AEM has introduced the ability to log permission changes so they can be audited at a later time.
+AEM has introduced the ability to log permission changes so that you can audit them later.
 
-The enhancement allows for the auditing CRUD (Create, Read, Update, Delete) actions on permissions and group assignments of users. More specifically, it will log:
+The enhancement allows for the auditing CRUD (Create, Read, Update, Delete) actions on permissions and group assignments of users. More specifically, it logs:
 
 * A new user getting created
 * A user being added to a group
 * Permission changes of an existing user or group
 
-By default, the entries will be written to the `error.log` file. To make monitoring easier, it is recommended that they be redirected to a separate log file. More info on how to do this in the paragraph below.
+By default, the entries are written to the `error.log` file. To make monitoring easier, it is recommended that they be redirected to a separate log file. More info on how to do this in the paragraph below.
 
 ## Redirecting the output to a separate log file {#redirecting-the-output-to-a-separate-log-file}
 
-In order to redirect the logging output to a separate log file, you'll need to create a new **Apache Sling Logging Logger** configuration. We'll use `useraudit.log` as the name of the separate file in the example below.
+To redirect the logging output to a separate log file, create an **Apache Sling Logging Logger** configuration. Let's use `useraudit.log` as the name of the separate file in the example below.
 
 1. Go to the Web Console by browsing to *https://serveraddress:serverport/system/console/configMgr*
-1. Search for **Apache Sling Logging Logger Configuration**. Then, press the "+" in the right hand side of the entry to create a new factory configuration.
+1. Search for **Apache Sling Logging Logger Configuration**. Then, press the "+" in the right-hand side of the entry to create a factory configuration.
 1. Create the following configuration:
 
     * **Log Level:** Information
@@ -40,7 +36,7 @@ In order to redirect the logging output to a separate log file, you'll need to c
     * **Message Pattern:** level default
     * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   In order to enter both loggers into the **Logger** field, you need to enter the name of the first, then create another field by pressing the "+" button and entering the name of the second logger.
+   To enter both loggers into the **Logger** field, you must enter the name of the first, then create another field by pressing the "+" button and entering the name of the second logger.
 
 ## Example output {#example-output}
 

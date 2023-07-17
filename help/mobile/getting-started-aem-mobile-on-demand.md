@@ -1,29 +1,27 @@
 ---
 title: Adobe Experience Manager Mobile On-Demand
-description: Starting a new AEM Mobile app experience requires a cohesion of roles before it is ready for content editing. Follow this page to get started with AEM mobile On-Demand services.
-uuid: 175c609d-3cb8-4a1b-bfea-278df272e500
+description: Starting a new Adobe Experience Manager (AEM) Mobile app experience requires a cohesion of roles before it is ready for content editing. Follow this page to get started with AEM mobile On-Demand services.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
 ---
 # AEM Mobile On-Demand{#aem-mobile-on-demand}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->If you are not using AEM as your content managment source, see [AEM Mobile On-Demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>If you are not using Adobe Experience Manager (AEM) as your content management source, see [AEM Mobile On-Demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 AEM provides several tools that enable you to integrate your content into mobile applications.
 
 The following diagram illustrates how the various components of AEM Mobile and On-Demand Services fit together to deliver content to mobile apps.
 
-AEM Preflight app can be considered a testing environment to preview the app and content prior to publishing; whereas the AEM Mobile App is the final app that is built for distribution.
+AEM Preflight app can be considered a testing environment to preview the app and content before publishing; whereas the AEM Mobile App is the final app that is built for distribution.
 
 >[!NOTE]
 >
@@ -39,7 +37,7 @@ AEM Preflight app can be considered a testing environment to preview the app and
 
 AEM Mobile is just one pillar that makes up the complete AEM platform.
 
-Starting a new AEM Mobile app experience requires a cohesion of roles before it is ready for content editing. The following roles provide a a starting point for creating a new AEM Mobile application:
+Starting a new AEM Mobile app experience requires a cohesion of roles before it is ready for content editing. The following roles provide a starting point for creating an AEM Mobile application:
 
 * **Administrator**
 * **Developer**
@@ -51,11 +49,11 @@ Starting a new AEM Mobile app experience requires a cohesion of roles before it 
 
 ### Understanding the AEM Mobile Application Dashboard {#understanding-the-aem-mobile-application-dashboard}
 
-Before understanding the roles and responsibilities, the user should have throrough knowledge of **AEM Mobile Control Center** or the **Application Dashboard**. Click [here](/help/mobile/mobile-apps-ondemand-application-dashboard.md) for an in-depth understanding.
+Before understanding the roles and responsibilities, the user should have thorough knowledge of **AEM Mobile Control Center** or the **Application Dashboard**. Click [here](/help/mobile/mobile-apps-ondemand-application-dashboard.md) for an in-depth understanding.
 
 ### AEM Administrator {#aem-administrator}
 
-An ***AEM administrator*** is responsible for adding a new application to the AEM Mobile catalog, either by creating a new app using the creation wizard, or by importing an existing application. AEM administrators who create a new app using AEM Mobile's *creation wizard* typically select one of the desired app templates either from our out-of-the-box reference samples or (in most cases) a custom app template created by *AEM developers.*
+An ***AEM administrator*** is responsible for adding an application to the AEM Mobile catalog, either by creating an app using the creation wizard, or by importing an existing application. AEM administrators who create an app using AEM Mobile's *creation wizard* typically select one of the desired app templates either from Adobe's out-of-the-box reference samples or (usually) a custom app template created by *AEM developers.*
 
 An AEM administrator is responsible for the following tasks while creating an app using AEM Mobile On-Demand Services:
 
@@ -68,7 +66,7 @@ To get started with an Administrator's roles and responsibilities, See [Administ
 
 ## AEM Developer {#aem-developer}
 
-An **AEM developer** extends and creates custom web templates and components to enable the *AEM Author *to create beautiful and engaging mobile experiences. These templates and components are not only optimized for the mobile app world; but communicate both to the device and to the AEM server (any remote server) to omni-channel service end-points. AEM's built-in content editor is used by *AEM Authors* to create rich and relevent experiences within the app, including integration with the rest of the Adobe Marketing Cloud.
+An **AEM developer** extends and creates custom web templates and components to enable the *AEM Author *to create beautiful and engaging mobile experiences. These templates and components are not only optimized for the mobile app world; but communicate both to the device and to the AEM server (any remote server) to omni-channel service end-points. AEM's built-in content editor is used by *AEM Authors* to create rich and relevant experiences within the app, including integration with the rest of the Adobe Experience Cloud.
 
 An AEM developer is responsible for the following tasks while creating an app using AEM Mobile On-Demand Services:
 
@@ -85,7 +83,7 @@ To get started with Developer's roles and responsibilities, See [Developing AEM 
 
 ## AEM Author {#aem-author}
 
-An ***AEM Author* (or *Marketer*)** uses the custom developed or out-of-the-box templates and components to add and edit pages, drag and drop components and add media of all types from the DAM including images, videos and text fragments (content fragments). AEM's built-in content editor is then used by *AEM Authors* to create rich and relevent experiences within the app, including integration with the rest of the Adobe Marketing Cloud.
+An ***AEM Author* (or *Marketer*)** uses the custom developed or out-of-the-box templates and components to add and edit pages, drag and drop components and add media of all types from the DAM including images, videos, and text fragments (content fragments). AEM's built-in content editor is then used by *AEM Authors* to create rich and relevant experiences within the app, including integration with the rest of the Adobe Experience Cloud.
 
 An AEM author must understand the following topics, while creating an app using AEM Mobile On-Demand Services:
 
