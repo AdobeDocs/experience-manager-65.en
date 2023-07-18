@@ -271,9 +271,9 @@ There are two ways to build and deploy your app using PhoneGap.
 
 **Note:** For push notification testing, emulators will not suffice because push notifications use a distinct protocol between the push provider (Apple or Google) and the device. Current Mac/PC hardware and emulators do not support this.
 
-1. *PhoneGap Build* is a service offered by PhoneGap that will build your app for you on their servers, and allow you to download it to your device directly. Refer to the [PhoneGap Build documentation](https://build.phonegap.com/) to learn how to set up and use PhoneGap Build.
+1. *PhoneGap Build* is a service offered by PhoneGap that will build your app for you on their servers, and allow you to download it to your device directly. See PhoneGap Build documentation at `https://build.phonegap.com/` to learn how to set up and use PhoneGap Build.
 
-1. *PhoneGap Command Line Interface* (CLI) lets you use a rich set of PhoneGap commands on your command line to build, debug, and deploy your app. Refer to the [PhoneGap developer documentation](https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface) to learn how to set up and use PhoneGap CLI.
+1. *PhoneGap Command Line Interface* (CLI) lets you use a rich set of PhoneGap commands on your command line to build, debug, and deploy your app. Refer to the PhoneGap developer documentation (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) to learn how to set up and use PhoneGap CLI.
 
 ### Step 7: Send a Push Notification {#step-send-a-push-notification}
 

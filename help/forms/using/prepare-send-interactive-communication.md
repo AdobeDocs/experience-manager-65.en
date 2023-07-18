@@ -142,7 +142,7 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 
 ### Document fragments {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **Up/Down arrows**: Arrows to move document fragments up or down in the Interactive Communication.
 * **Delete**: If allowed, delete the document fragment from the Interactive Communication.

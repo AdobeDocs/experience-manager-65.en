@@ -1,14 +1,10 @@
 ---
 title: Mapping Component Data with Adobe Analytics Properties
-seo-title: Mapping Component Data with Adobe Analytics Properties
 description: Learn how to map component data with SiteCatalyst properties.
-seo-description: Learn how to map component data with SiteCatalyst properties.
-uuid: b08ab37f-ad58-4c04-978f-8e21a3823ae8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 ---
@@ -33,7 +29,7 @@ The mapped data is sent to Adobe Analytics when the page loads and the following
 
 Use the following procedure to map CQ component variables with Adobe Analytics report properties.
 
-1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component component from the **General** category. 
+1. In the **AEM view**, drag a tracking component from sidekick onto the framework. For example, drag the **Page** component from the **General** category. 
 
    ![aa-13](assets/aa-13.png)
 
@@ -51,7 +47,7 @@ Use the following procedure to map CQ component variables with Adobe Analytics r
 
    >[!NOTE]
    >
-   >You can map multiple Analytics variables (e.g. `props`, `eVars`, `events`) to the same CQ variable (e.g. `pagedata.title`)
+   >You can map multiple Analytics variables (for example, `props`, `eVars`, `events`) to the same CQ variable (for example, `pagedata.title`)
 
    >[!CAUTION]
    >
@@ -87,7 +83,7 @@ Several AEM Commerce components use these variable names.
 1. Make sure the RSID selected is the one used in the previous steps.
 1. In **Reports** (on the left side of the page) select **Custom Conversion**, then **Custom Conversion 1-10** and select the variable coresponding to `eVar7`
 
-1. Depending on the version of Adobe Analytics that you are using, you need to wait on average 45 minutes for the report to be updated with the search term used; e.g. aubergine in the example
+1. Depending on the version of Adobe Analytics that you are using, you need to wait on average 45 minutes for the report to be updated with the search term used; for example, aubergine in the example
 
 ## Using the Content Finder (cf#) with Adobe Analytics frameworks {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -98,13 +94,13 @@ Initially, when you open an Adobe Analytics framework the content finder contain
 * Events
 
 When an RSID is selected all the variables belonging to that RSID get added to the list.  
-The `cf#` is needed in order to map Analytics variables to the CQ variables present on the different tracking components. See Setting Up a Framework for Basic Tracking.
+The `cf#` is needed to map Analytics variables to the CQ variables present on the different tracking components. See Setting Up a Framework for Basic Tracking.
 
 Depending on the view selected for the framework, the content finder will be populated by either Analytics variables (in AEM view) or CQ variables (in Analytics view).
 
 The list can be manipulated in the following ways:
 
-1. When in **AEM view**, the list can be filtered depending on what variable type is selected using the 3 filter buttons:
+1. When in **AEM view**, the list can be filtered depending on what variable type is selected using the three filter buttons:
 
    * If *no button* is selected, the list shows the full list.
    * If the **Traffic** button is selected, the list will only show the variables belonging to the Traffic section.
@@ -122,21 +118,21 @@ The list can be manipulated in the following ways:
 
 1. When in Adobe Analytics view, the Content Finder displays all CQ variables belonging to the tracking components dragged in CQ view.
 
-   * e.g. in case the **Download component** is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder wil look like this when switching to Adobe Analytics view:
+   * For example, in case the **Download component** is the *only one dragged* in CQ view (which has two mappable variables *eventdata.downloadLink* and *eventdata.events.startDownload*), the Content Finder will look like this when switching to Adobe Analytics view:
 
    ![aa-22](assets/aa-22.png)
 
-   * The variables can be dragged&dropped onto any Adobe Analytics variable belonging to either one of the 3 variable sections (**Traffic**, **Conversion** and **Events**).
+   * The variables can be dragged&dropped onto any Adobe Analytics variable belonging to either one of the three variable sections (**Traffic**, **Conversion** and **Events**).
 
    * When dragging a new tracking component onto the framework in CQ view, the CQ variables belonging to the component get automatically added to the Content Finder(cf#) in Adobe Analytics view.
 
    >[!NOTE]
    >
-   >Only one CQ variable can be mapped to a Adobe Analytics variable at any given time.
+   >Only one CQ variable can be mapped to an Adobe Analytics variable at any given time.
 
 ## Using AEM view and Analytics view {#using-aem-view-and-analytics-view}
 
-At any given time, users have the option to switch between 2 ways of viewing the Adobe Analytics mappings when on a framework page. The 2 views provide a better overview of the mappings within the framework, from 2 distinct perspectives.
+At any given time, users can switch between two ways of viewing the Adobe Analytics mappings when on a framework page. The two views provide a better overview of the mappings within the framework, from two distinct perspectives.
 
 ### AEM View {#aem-view}
 
@@ -153,8 +149,8 @@ Taking the above image as an example, the **AEM view** has the following propert
    1. If the framework has components that are inherited from its parent, they will be listed here, along with the variables mapped to the components.
 
       1. Inherited components are locked.
-      1. To unlock an inherited component, just double-click on the padlock next to the component's name
-      1. In order to revert the inheritance you must delete the unlocked component; after which it will regain its locked status.
+      1. To unlock an inherited component, double-click the padlock next to the component's name
+      1. To revert the inheritance, delete the unlocked component; after which it will regain its locked status.
 
    1. **Drag components here to include them in the analytics framework**: Components can be dragged from the Sidekick and dropped here.
    1. You can find all of the components that are currently included in the analytics framework:
@@ -183,7 +179,7 @@ Taking the above image as an example, the **AEM view** has the following propert
 
      * Conversion variable ( `eVar1`) mapped to a CQ variable ( `pagedata.title`)
  
-     * Conversion variable ( `eVar3`) mapped to a javascript expression added inline by double-clicking on the CQ variable field and entering the code manually
+     * Conversion variable ( `eVar3`) mapped to a JavaScript expression added inline by double-clicking the CQ variable field and entering the code manually
 
    * **Event**:
 
@@ -191,7 +187,7 @@ Taking the above image as an example, the **AEM view** has the following propert
 
 >[!NOTE]
 >
->The CQ variable column of any table can be filled inline as well, by double-clicking on the field and adding text to it. These fields accept javascript as an input.
+>The CQ variable column of any table can be filled inline as well, by double-clicking the field and adding text to it. These fields accept JavaScript as an input.
 >
 >For example, next to `prop3` you can add:
 >&nbsp;&nbsp;&nbsp;&nbsp; `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`  
@@ -200,4 +196,4 @@ Taking the above image as an example, the **AEM view** has the following propert
 
 >[!CAUTION]
 >
->Only one CQ variable can be mapped to a Adobe Analytics variable at any given time.
+>Only one CQ variable can be mapped to an Adobe Analytics variable at any given time.

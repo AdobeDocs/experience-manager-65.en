@@ -27,7 +27,7 @@ When you are assigned a work item (for example, **Approve Content**) various ale
 
 * Your [notification](/help/sites-authoring/inbox.md) indicator (toolbar) will be incremented:
 
-  ![](do-not-localize/wf-57.png)
+  ![Notification indicator](do-not-localize/wf-57.png)
 
 * The item will be listed in your notification [Inbox](/help/sites-authoring/inbox.md):
 

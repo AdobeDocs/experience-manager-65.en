@@ -1,6 +1,6 @@
 ---
 title: Concepts
-description: General Concepts of eCommerce with AEM.
+description: General Concepts of eCommerce with Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
@@ -12,7 +12,7 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 The integration framework provides the mechanisms and components for:
 
 * connection to an eCommerce engine
-* pulling data into AEM
+* pulling data into Adobe Experience Manager (AEM)
 * displaying that data and collecting the shopper's responses
 * returning transaction details
 * search over the data from both systems
@@ -20,7 +20,7 @@ The integration framework provides the mechanisms and components for:
 This means that:
 
 * Shoppers can register and shop without waiting.
-* Price changes will be seen by shoppers without delay.
+* Price changes are seen by shoppers without delay.
 * Products can be added as required.
 
 >[!NOTE]
@@ -34,9 +34,9 @@ This means that:
 
 >[!CAUTION]
 >
->The [eCommerce integration framework](https://www.adobe.com/solutions/web-experience-management/commerce.html) is an AEM Add-On.
+>The [eCommerce integration framework](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html) is an AEM Add-On.
 >
->Your Sales representative will be able to give full details, according to the appropriate engine.
+>Your Sales representative is able to give full details, according to the appropriate engine.
 
 >[!CAUTION]
 >
@@ -48,7 +48,7 @@ This means that:
 >
 >The standard AEM installation includes the generic AEM (JCR) eCommerce implementation.
 >
->This is currently intended for demonstration purposes, or as the basic foundation for a custom implementation according to your requirements.
+>This is intended for demonstration purposes, or as the basic foundation for a custom implementation according to your requirements.
 
 To optimize operation, both AEM and the eCommerce engine concentrate on their own area of expertise. Information is transferred between the two in real time; for example:
 
@@ -60,7 +60,7 @@ To optimize operation, both AEM and the eCommerce engine concentrate on their ow
 
     * Provide:
 
-        * User views for product information, shopping cart and checkout.
+        * User views for product information, shopping cart, and checkout.
         * Shopping cart and checkout information to the eCommerce engine.
         * Search Engine Optimization (SEO).
         * Community functionality.
@@ -72,7 +72,7 @@ To optimize operation, both AEM and the eCommerce engine concentrate on their ow
 
         * Product information from the database.
         * Product variant management.
-        * Order management.
+        * Order Management.
         * ERP (Enterprise Resource Planning).
         * Search within the product information.
 
@@ -84,9 +84,9 @@ To optimize operation, both AEM and the eCommerce engine concentrate on their ow
 
 >[!NOTE]
 >
->The exact details will depend on the eCommerce engine and the project implementation.
+>The exact details depend on the eCommerce engine and the project implementation.
 
-A number of out-of-the-box AEM components are provided to use the integration layer. Currently these include:
+Several out-of-the-box AEM components are provided to use the integration layer. Currently, these include:
 
 * Product information
 * Shopping cart
@@ -116,13 +116,13 @@ AEM eCommerce is implemented with an eCommerce engine:
 >
 >The standard AEM installation includes the generic AEM (JCR) eCommerce implementation.
 >
->This is currently intended for demonstration purposes, or as the basic foundation for a custom implementation according to your requirements.
+>This is intended for demonstration purposes, or as the basic foundation for a custom implementation according to your requirements.
 >
 >AEM eCommerce implemented within AEM using generic development based on JCR is:
 >
->* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout in conjunction with the existing data display and marketing campaigns. In this case the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
+>* A standalone, AEM-native eCommerce example to illustrate use of the API. This can be used to control product data, shopping carts and checkout with the existing data display and marketing campaigns. In this case, the product database is stored in the repository native to AEM (Adobe's implementation of [JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)).
 >
->  The standard AEM installation contains the basics of the [generic eCommerce implemention](/help/commerce/cif-classic/administering/generic.md).
+>  The standard AEM installation contains the basics of the [generic eCommerce implementation](/help/commerce/cif-classic/administering/generic.md).
 
 ### Commerce Providers {#commerce-providers}
 
@@ -138,13 +138,13 @@ Two example commerce providers are currently available for AEM:
 * one for geometrixx-hybris
 * another for geometrixx-generic (JCR)
 
-Though usually a project will need to develop their own, customized, commerce provider specific to their PIM and product data schema.
+Though usually a project needs to develop their own, customized, commerce provider specific to their PIM and product data schema.
 
 >[!NOTE]
 >
->The geometrixx importers use CSV files; there is a description of the schema accepted (with custom properties allowed) in the comments above their implementation.
+>The Geometrixx importers use CSV files; there is a description of the schema accepted (with custom properties allowed) in the comments above their implementation.
 
-The [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) maintains (through [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings))a list of implementations of the  [ProductImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) and [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. These are listed in the **Importer/Commerce Provider** dropdown field of the importer wizard (using the `commerceProvider` property as a name).
+The [ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) maintains (through [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) a list of implementations of the [ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) and [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) interfaces. These are listed in the **Importer/Commerce Provider** dropdown field of the importer wizard (using the `commerceProvider` property as a name).
 
 When a specific importer/commerce provider is available from the dropdown, any supplemental data it needs must be defined (depending on the importer type) in either:
 
@@ -202,20 +202,20 @@ If the following two categories can be differentiated, then this allows you to m
 
 * *Marketing* categories
 
-  All other categories a *product can belong to*; for example:
+  All other categories that a *product can belong to*; for example:
 
   `/special-offers/christmas/shoes`)
 
 ### Product Data {#product-data}
 
-To portray and manage your product you will want to hold a range of information about them.
+To portray and manage your product, you will want to hold a range of information about them.
 
 Product data can be:
 
 * maintained directly in AEM (generic).
 * maintained in the eCommerce engine and made available in AEM.
 
-  Depending on the data type it is [synchronized](#catalog-maintenance-data-synchronization) as necessary, or accessed directly; for example, highly volatile and critial data such as product prices are retrieved from the ecommerce engine on every page request to ensure they are always up-to-date.
+  Depending on the data type it is [synchronized](#catalog-maintenance-data-synchronization) as necessary, or accessed directly; for example, highly volatile and critical data such as product prices are retrieved from the ecommerce engine on every page request to ensure they are always up-to-date.
 
 In either case, when the product data has been entered/imported into AEM it can be seen from the **Products** console. Here the card and list views of a product show information such as:
 
@@ -227,7 +227,7 @@ In either case, when the product data has been entered/imported into AEM it can 
 
 ### Product Variants {#product-variants}
 
-For appropriate products information about variants can also be held. For example, for items of clothing the different colors available are held as variants:
+For appropriate products, information about variants can also be held. For example, for items of clothing the different colors available are held as variants:
 
 ![ecommerceproductvariants](/help/sites-administering/assets/ecommerceproductvariants.png)
 
@@ -283,7 +283,7 @@ A selection of assets can be held for individual products. Commonly these includ
 
 ## Catalogs {#catalogs}
 
-A catalog groups product data together for both ease of management and representation to the shopper. Often a catalog is structured according to attributes such as language, geographical area, brand, season, hobby, sport, amongst many others.
+A catalog groups product data together for both ease of management and representation to the shopper. Often a catalog is structured according to attributes such as language, geographical area, brand, season, hobby, sport, among many others.
 
 ### Catalog Structure {#catalog-structure}
 
@@ -291,11 +291,11 @@ A catalog groups product data together for both ease of management and represent
 
 AEM supports product content in multiple languages. When requesting data, the integration framework retrieves the language from the current tree (for example, `en_US` for pages under `/content/geometrixx-outdoors/en_US`).
 
-For a multi-lingual store, you can import your catalog for each language tree individually (or copy it by means of [MSM](/help/sites-administering/msm.md)).
+For a multi-lingual store, you can import your catalog for each language tree individually (or copy it with [MSM](/help/sites-administering/msm.md)).
 
 #### Catalogs for Multiple Brands {#catalogs-for-multiple-brands}
 
-As with languages, large multi-national companies can need to cater for multiple brands.
+As with languages, large multi-national companies must cater for multiple brands.
 
 #### Catalogs by Tags {#catalogs-by-tags}
 
@@ -310,16 +310,16 @@ Depending on your implementation, you can import the product data required for y
 
 ### Catalog Maintenance (Data Synchronization) {#catalog-maintenance-data-synchronization}
 
-Further changes to the product data will be inevitable:
+Further changes to the product data are inevitable:
 
-* for the generic implementation these can be managed with the [product editor](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
+* for the generic implementation, these can be managed with the [product editor](/help/commerce/cif-classic/administering/generic.md#editing-product-information)
 * when using an [eCommerce engine the changes must be synchronized](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
 #### Data Synchronization with an eCommerce Engine (Ongoing) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
-After the intial import, changes to your product data are inevitable.
+After the initial import, changes to your product data are inevitable.
 
-When using an eCommerce engine the product data is maintained there and needs to be available in AEM. This product data needs to be synchronized when updates are made.
+When using an eCommerce engine, the product data is maintained there and must be available in AEM. This product data must be synchronized when updates are made.
 
 This can depend on the type of data:
 
@@ -331,9 +331,9 @@ This can depend on the type of data:
 
 ### Catalogs - Performance and Scaling {#catalogs-performance-and-scaling}
 
-Importing a large catalog with a high number of products (usually more than 100,000) from an eCommerce engine (PIM) can impact the system due to the large number of nodes. It can also slow down the authoring instance if the products have associated assets (eg product images). This is due to the fact that the post-processing of these assets is CPU and memory intensive.
+Importing a large catalog with a high number of products (more than 100,000) from an eCommerce engine (PIM) can impact the system due to the large number of nodes. It can also slow down the authoring instance if the products have associated assets (for example, product images). This is because the post-processing of these assets is CPU and memory intensive.
 
-There are various strategies you can choose to work around these issues:
+There are various strategies that you can choose to work around these issues:
 
 * [Bucketing](#bucketing) - to cater for the large number of nodes
 * [Offload asset post processing to a dedicated instance](#offload-asset-post-processing-to-a-dedicated-instance)
@@ -344,7 +344,7 @@ There are various strategies you can choose to work around these issues:
 
 #### Bucketing {#bucketing}
 
-If a JCR node has a lot of direct child nodes (e.g. 1000 and more), buckets (phantom folders) are required to ensure that performance is not affected. These are generated according to an algorithm when importing.
+If a JCR node has many direct child nodes (for example, 1000 and more), buckets (phantom folders) are required to ensure that performance is not affected. These are generated according to an algorithm when importing.
 
 These buckets take the form of phantom folders that are introduced to your catalog structure, but can be configured so they are not apparent in public URLs.
 
@@ -370,11 +370,11 @@ For cases when products do not contain assets (images) to be imported, you can i
 
 #### Performance Testing {#performance-testing}
 
-Performance testing must be taken into consideration on AEM eCommerce implementations:
+Performance testing must be considered on AEM eCommerce implementations:
 
 * Author environment:
 
-  Background (e.g. import) activity can occur at the same time as normal user activity (e.g. page editing) and even if front-end performance is (in general) given a higher priority, bad performance seen by online authors can lead to frustration capable of blocking a go-live decision.
+  Background (for example, import) activity can occur at the same time as normal user activity (for example, page editing) and even if front-end performance is (in general) given a higher priority, bad performance seen by online authors can lead to frustration capable of blocking a go-live decision.
 
 * Publication environment:
 
@@ -384,7 +384,7 @@ Performance testing must be taken into consideration on AEM eCommerce implementa
 
   The mixture of front-end and cache invalidations can potentially lead to performance surprises. Testing helps avoid these.
 
-Please note that this performance testing requires knowledge and analysis of your target:
+Note that this performance testing requires knowledge and analysis of your target:
 
 * Content volumes
 
@@ -400,40 +400,40 @@ Please note that this performance testing requires knowledge and analysis of you
 * Background processes
 
     * Imports
-    * Synchronization updates (e.g. pricing)
+    * Synchronization updates (for example, pricing)
 
-* Maintenance requirements (backup, Tar PM optimization, datastore garbage collection, etc)
+* Maintenance requirements (backup, Tar PM optimization, datastore garbage collection, and so on)
 
 #### Performance - Miscellaneous {#performance-miscellaneous}
 
-For all implementations the following points can be kept in mind:
+For all implementations, the following points can be kept in mind:
 
 * As product, stock-keeping units and categories can be numerous, try to use the least number of nodes possible to model the content.
 
-  The more nodes you have, the more flexible your content is (e.g. parsys). However, everything is a trade-off and do you need individual flexibility (by default) when manipulating (for example) 30K products?
+  The more nodes that you have, the more flexible your content is (for example, parsys). However, everything is a trade-off and do you need individual flexibility (by default) when manipulating (for example) 30K products?
 
-* Avoid duplication as much as you can (see localization), or when you do, think about how many nodes your duplication will lead to.
-* Try to tag your content as much as you can in order to prepare the query optimization.
+* Avoid duplication as much as you can (see localization), or when you do, think about how many nodes your duplication leads to.
+* Try to tag your content as much as you can to prepare the query optimization.
 
   For example:
 
    `/content/products/france/fr/shoe/reebok/pump/46 SKU`
 
-  should have one tag per content level (i.e. country, language, category, brand, product). Searching for
+  should have one tag per content level (that is, country, language, category, brand, product). Searching for
 
-   `//element(*,my:Sku)[@country=’france’ and @language=’fr’`
+   `//element(*,my:Sku)[@country='france' and @language='fr'`
 
   and
 
-  `@category=’shoe’ and @brand=’reebok’ and @product=’pump’]`
+  `@category='shoe' and @brand='reebok' and @product='pump']`
 
   will be drastically quicker than searching for
 
   `/jcr:root/content/france/fr/shoe/reebok/pump/element(*,my:Sku)`
 
-* In your technical stack, plan very factorized content access model and services. This is a general best practice, but is even more crucial her, as you can, in optimization phases, add application caches for data that is read very often (and that you do not want to fill the bundle cache with).
+* In your technical stack, plan factorized content access model and services. This is a general best practice, but is even more crucial here, as you can, in optimization phases, add application caches for data that is read often (and that you do not want to fill the bundle cache with).
 
-  For example, attributes management is very frequently a good candidate for caching as it concerns data that is updated through products import.
+  For example, attributes management is frequently a good candidate for caching as it concerns data that is updated through products import.
 * Consider use of [proxy pages](#proxy-pages).
 
 ### Catalog Section Pages {#catalog-section-pages}
@@ -457,7 +457,7 @@ Product pages are AEM pages that use the **Product** component; for example, wit
 The Product component provides:
 
 * General product information; including text and images.
-* Pricing; this is usually retrieved from the eCommerce engine every time the page is shown/refreshed.
+* Pricing; this is retrieved from the eCommerce engine every time the page is shown/refreshed.
 * Product variant information; for example, color and size.
 
 This information allows the shopper to select the following when adding an item to their basket:
@@ -471,7 +471,7 @@ These are AEM pages that provide primarily static information; for example, an i
 
 ### Product Component {#product-component}
 
-The **Product** component can be added to any page with a parent page that delivers the required metadata (i.e. the paths to `cartPage` and `cartObject`). In the demonstration site, Geometrixx Outdoors, this is supplied by `UserInfo.jsp`.
+The **Product** component can be added to any page with a parent page that delivers the required metadata (that is, the paths to `cartPage` and `cartObject`). In the demonstration site, Geometrixx Outdoors, this is supplied by `UserInfo.jsp`.
 
 The **Product** component can also be customized according to your individual requirements.
 
@@ -479,7 +479,7 @@ The **Product** component can also be customized according to your individual re
 
 Proxy pages are used to simplify the structure of the repository and optimize storage for large catalogs.
 
-Creating a catalog will use ten nodes per product as it provides individual components for each product that you can update and customise within AEM. This large number of nodes can become an issue if your catalog contains hundreds or even thousands of products. To avert any issues you can create your catalog using proxy pages.
+Creating a catalog uses ten nodes per product as it provides individual components for each product that you can update and customize within AEM. This large number of nodes can become an issue if your catalog contains hundreds or even thousands of products. To avert any issues, you can create your catalog using proxy pages.
 
 Proxy pages use a two-node structure ( `cq:Page` and `jcr:content`) that does not contain any of the actual product content. The content is generated, at request time, by referencing the product data and the template page.
 
@@ -489,7 +489,7 @@ However, there is a trade-off. You will not be able to customize your product in
 >
 >You will not experience any problems if you import a large catalog without proxy pages.
 >
->You can convert from one methodology to the other at any time. You can also convert a sub-section of your catalog.
+>You can convert from one methodology to the other at any time. You can also convert a subsection of your catalog.
 
 ## Promotions and Vouchers {#promotions-and-vouchers}
 
@@ -501,7 +501,7 @@ Vouchers are a tried and tested method of offering discounts to either attract s
 
     * A voucher code (to be typed into the cart by the shopper).
     * A voucher label (to be displayed after the shopper has entered it into the cart).
-    * A promotion path (which defines the action the voucher applies).
+    * A promotion path (which defines the action that the voucher applies).
 
 * External commerce engines can also supply vouchers.
 
@@ -530,7 +530,7 @@ Promotions, together with vouchers, allow you to realize scenarios such as:
 * A customer receives a voucher when their previous order exceeded a specific amount.
 * A customer who buys *product-X* is offered a discount on *product-Y* (pair products).
 
-Promotions are not usually maintained by product information managers, but by marketing managers:
+Promotions are not maintained by product information managers, but by marketing managers:
 
 * A Promotion is a page-based component that is created / edited with the Websites console. ``
 * Promotions supply:
@@ -544,12 +544,12 @@ Promotions are not usually maintained by product information managers, but by ma
 * The Promotion component contains:
 
     * renderers and dialogs for promotion administration
-    * sub-components for rendering and editing configuration parameters specific to the promotion handlers
+    * subcomponents for rendering and editing configuration parameters specific to the promotion handlers
 
 In AEM the promotions are also integrated into the [Campaign Management](/help/sites-authoring/personalization.md):
 
 * a [campaign](/help/sites-authoring/personalization.md) specifies the on/off times
-* [experiences](/help/sites-authoring/personalization.md) *within* the campaign are used to group assets (teaserpages, promotions, etc) according to the audience segment they correspond to
+* [experiences](/help/sites-authoring/personalization.md) *within* the campaign are used to group assets (teaser pages, promotions, and so on) according to the audience segment they correspond to
 
 A promotion can be held either in an experience or directly in the campaign:
 
@@ -567,42 +567,42 @@ A promotion can be held either in an experience or directly in the campaign:
 
   `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-  is outside an experience and so never fires automatically (ie: based on segmentation). It is, however, referenced by the vouchers which can be found in several of the experiences within the article campaign. Entering those voucher codes into the cart will result in the promotion firing.
+  is outside an experience and so never fires automatically (that is: based on segmentation). It is, however, referenced by the vouchers which can be found in several of the experiences within the article campaign. Entering those voucher codes into the cart result in the promotion firing.
 
 >[!NOTE]
 >
->[hybris promotions](https://www.hybris.com/modules/promotion) and [hybris vouchers](https://www.hybris.com/en/modules/voucher) cover everything that influences the shopping cart and is related to pricing. Promotion specific marketing content (such as banners, etc) is not part of the hybris promotion.
+>[hybris promotions](https://www.hybris.com/modules/promotion) and [hybris vouchers](https://www.hybris.com/en/modules/voucher) cover everything that influences the shopping cart and is related to pricing. Promotion-specific marketing content (such as banners, etc.) is not part of the hybris promotion.
 
 ## Personalization {#personalization}
 
 ### Customer Registration and Accounts {#customer-registration-and-accounts}
 
-When a shopper registers, the account details need to be synchronized between AEM and the eCommerce engine. Sensitive data is held independently, but profiles are shared:
+When a shopper registers, the account details must be synchronized between AEM and the eCommerce engine. Sensitive data is held independently, but profiles are shared:
 
 ![chlimage_1-10](/help/sites-administering/assets/chlimage_1-10.png)
 
 The exact mechanism can depend on the scenario:
 
-1. The user accounts exists in both systems:
+1. The user accounts exist in both systems:
 
     1. No action required.
 
 1. The user account exists only in AEM:
 
-    1. User will be created in the eCommerce engine with same account ID and a random password which will be stored in AEM.
+    1. User is created in the eCommerce engine with same account ID and a random password which will be stored in AEM.
     1. The random password is necessary, as AEM tries to log into the eCommerce engine on the first call (for example, when a product page is requested and the eCommerce engine is referenced for the price). Because this happens after the AEM login, the password is not available.
 
 1. The user account only exists in the eCommerce engine:
 
-    1. The account will be created in AEM with same account ID and password.
+    1. The account is created in AEM with same account ID and password.
 
 When using an eCommerce engine, AEM only stores the account ID and password (optionally a user group). All other information is stored in the eCommerce engine.
 
 >[!NOTE]
 >
->When using an eCommerce engine, you need to ensure that accounts created for users who log into an AEM instance are replicated (e.g. via workflows) to any other AEM instances that communicate with that engine.
+>When using an eCommerce engine, you must ensure that accounts created for users who log into an AEM instance are replicated (for example, by way of workflows) to any other AEM instances that communicate with that engine.
 >
->Otherwise, these other AEM instances will also try to create accounts for the same users in the engine. These actions will fail with a `DuplicateUidException` coming from the engine.
+>Otherwise, these other AEM instances will also try to create accounts for the same users in the engine. These actions fail with a `DuplicateUidException` coming from the engine.
 
 ### Customer Sign-Up {#customer-sign-up}
 
@@ -616,25 +616,25 @@ Often sign-up is required for the shopper to have access to the shopping cart. T
 
 ### Customer Sign-In {#customer-sign-in}
 
-After sign-up the shopper can login with their account so that their actions can be tracked and their orders fulfilled.
+After sign-up the shopper can log in with their account so that their actions can be tracked and their orders fulfilled.
 
 ![chlimage_1-12](/help/sites-administering/assets/chlimage_1-12.png)
 
-### Single Sign-On {#single-sign-on}
+### Single Sign-on {#single-sign-on}
 
-Single-sign-on (SSO) is provided, so that authors are known in both AEM and the eCommerce system without having to login twice.
+Single Sign-on (SSO) is provided, so that authors are known in both AEM and the eCommerce system without having to log in twice.
 
 ### myAccount {#myaccount}
 
 Transaction data from the eCommerce engine is combined with personal information about the shopper. AEM uses some of this data as profile data. A form's action in AEM writes information back to the eCommerce engine.
 
-There is a page which allows you to easily manage your account information. You can access it by clicking **My Account** at the top of a geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
+There is a page which allows you to easily manage your account information. You can access it by clicking **My Account** at the top of a Geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
 ### Address Book {#address-book}
 
-Your site will need to store a selection of addresses; including delivery, billing and alternative addresses. This can be implemented using forms based on your default address format or you can use the Address Book component provided by AEM.
+Your site needs to store a selection of addresses; including delivery, billing, and alternative addresses. This can be implemented using forms based on your default address format or you can use the Address Book component provided by AEM.
 
 This Address Book component allows you to:
 
@@ -648,13 +648,13 @@ The address book component is reachable from the **My Account** page by clicking
 
 ![chlimage_1-14](/help/sites-administering/assets/chlimage_1-14.png)
 
-You can click **Add new address...** to add a new address in your address book. It opens a form that you can fill out and then click **Add address**.
+You can click **Add new address...** to add an address in your address book. It opens a form that you can fill out and then click **Add address**.
 
 >[!NOTE]
 >
 >You can enter several addresses in your Address Book.
 
-The Address Book is used when you checkout your cart:
+The Address Book is used when you "checkout" your cart:
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
@@ -669,7 +669,7 @@ The eCommerce engine uses the context (essentially the shopper information) to d
 
 ## Shopping Cart and Orders {#shopping-cart-and-orders}
 
-When shopping the shopper will browse the product pages and select items to place them in their shopping cart. When they proceed to checkout an order can be placed.
+When shopping, the shopper browses the product pages and select items to place them in their shopping cart. When they proceed to checkout, an order can be placed.
 
 ### Anonymous Shoppers {#anonymous-shoppers}
 
@@ -687,7 +687,7 @@ An anonymous customer can:
 
 A registered customer can:
 
-* Login to their account
+* Log in to their account
 * View products
 * Add products to their cart
 * Perform checkout to place their order
@@ -714,11 +714,11 @@ The shopping cart is saved according to the engine being used:
 In either case, items stay in the cart (and can be restored) across log-in/log-out (but only on the same machine/browser). For example:
 
 * browse as `anonymous` and add products to the cart
-* sign in as `Allison Parker` - her cart is empty
-* add products to her cart
-* sign out - the cart will show the products for `anonymous`
+* sign in as `Allison Parker` - Allison's cart is empty
+* add products to Allison's cart
+* sign out - the cart shows the products for `anonymous`
 
-* sign in again as `Allison Parker` - her products are restored
+* sign in again as `Allison Parker` - Allison's products are restored
 
 >[!NOTE]
 >
@@ -726,19 +726,19 @@ In either case, items stay in the cart (and can be restored) across log-in/log-o
 
 >[!NOTE]
 >
->It is not recommended to test restoring the cart contents with the `admin` account, as this can conflict with the `admin` account of the eCommerce engine (e.g. hybris).
+>It is not recommended to test restoring the cart contents with the `admin` account, as this can conflict with the `admin` account of the eCommerce engine (for example, hybris).
 
 >[!NOTE]
 >
->hybris can be configured to remove pending carts after a defined period of time.
+>hybris can be configured to remove pending carts after a defined time period.
 
-Prior to the checkout, price changes are reflected (in both systems) as they occur.
+Before checkout, price changes are reflected (in both systems) as they occur.
 
 ### Order Information {#order-information}
 
 Depending on your implementation information about an order is held either in the eCommerce engine or AEM, this information is rendered by AEM.
 
-A variety of information is stored, which can include:
+Various information is stored, which can include:
 
 * **Order ID**
 
@@ -774,7 +774,7 @@ A variety of information is stored, which can include:
 
 * **Total**
 
-  The total value of the order; items ordered, taxes and shpping.
+  The total value of the order; items ordered, taxes, and shipping.
 
 * **Billing Address**
 
@@ -806,7 +806,7 @@ A variety of information is stored, which can include:
 
 >[!NOTE]
 >
->The fields used in the create order wizard are dependent on there being a touch-optimized scaffolding defined for the location. In the generic example, this can be found at:
+>The fields used in the create order wizard depend on there being a touch-optimized scaffolding defined for the location. In the generic example, this can be found at:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 When the order is held within AEM the Order console shows the following for each order:
@@ -826,9 +826,9 @@ After placing an order, shoppers will often return to:
 * Remove products from the order
 * Add products to the order
 
-After receiving the order delivery, shoppers may also want to view the history of orders made over a period of time.
+After receiving the order delivery, shoppers may also want to view the history of orders made over a time period.
 
-Order fulfillment and tracking is usually managed by the eCommerce engine. Information can be displayed by AEM using the Order History component, which shows all relevant details, including the vouchers and promotions applied. For example:
+Order fulfillment and tracking are managed by the eCommerce engine. Information can be displayed by AEM using the Order History component, which shows all relevant details, including the vouchers and promotions applied. For example:
 
 ![chlimage_1-17](/help/sites-administering/assets/chlimage_1-17.png)
 
@@ -856,7 +856,7 @@ Since AEM uses standard pages for products, you can use the standard search comp
 
 If you require a more thorough implementation, you can either:
 
-* Extend the default search component with the functionality you need.
+* Extend the default search component with the functionality that you need.
 * Implement the search method in your `CommerceService` and then use the eCommerce search component on your search page.
 
 When using an eCommerce engine, the eCommerce search API can be fully implemented in the eCommerce engine solution, so you can use the eCommerce search component that is provided out-of-the-box. The faceted search allows you to search either JCR and/or the engine:

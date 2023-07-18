@@ -1,8 +1,6 @@
 ---
-title: Integrating with Adobe Campaign Classic
-seo-title: Integrating with Adobe Campaign Classic
-description: Learn how to integrate AEM with Adobe Campaign Classic
-seo-description: Learn how to integrate AEM with Adobe Campaign Classic
+title: Integrating AEM 6.5 with Adobe Campaign Classic
+description: Learn how to integrate AEM 6.5 with Adobe Campaign Classic
 uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,11 +10,15 @@ discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
 ---
 
-# Integrating with Adobe Campaign Classic {#integrating-campaign-classic}
+# Integrating AEM 6.5 with Adobe Campaign Classic {#integrating-campaign-classic}
 
-By integrating AEM with Adobe Campaign, you can manage email delivery, content, and forms directly in AEM. Configuration steps in both Adobe Campaign Classic and AEM are needed to enable bidirectional communication between solutions.
+By integrating AEM with Adobe Campaign Classic (ACC), you can manage email delivery, content, and forms directly in AEM. Configuration steps in both Adobe Campaign Classic and AEM are needed to enable bidirectional communication between solutions.
 
 This integration allows AEM and Adobe Campaign Classic to be used independently. Marketers can create campaigns and use targeting in Adobe Campaign, while content creators in parallel can work on content design in AEM. Using the integration, the content and design of the campaign created in AEM can be targeted and delivered by Adobe Campaign.
+
+>[!INFO]
+>
+>This document details how to integrate Adobe Campaign Classic with AEM 6.5. For other Campaign integrations see the document [Integrating AEM 6.5 with Adobe Campaign.](campaign.md)
 
 ## Integration Steps {#integration-steps}
 

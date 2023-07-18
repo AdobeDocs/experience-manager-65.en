@@ -15,7 +15,7 @@ exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
 ---
 # [!DNL AEM Forms] Data Integration {#aem-forms-data-integration}
 
- ![](do-not-localize/data-integeration.png)
+ ![hero-image](do-not-localize/data-integration.png)
 
 Enterprise infrastructures include disparate back-end systems or data sources like databases, web services, REST services, OData services, and CRM solutions. Put together, they make an information system that serves data to enterprise applications to perform day-to-day business. On the other hand, applications capture data and send it back to update data sources.
 

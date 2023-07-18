@@ -9,11 +9,11 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 
 ## What is Tough Day 2 {#what-is-tough-day}
 
-"Tough Day 2" is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) for a presentation of the application.
+"Tough Day 2" is a an application that allows you to stress test the limits of your AEM instance. It can be run out of the box with the default test suite or it can be configured to fit your testing needs. You can watch [this recording](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) for a presentation of the application.
 
 >[!CAUTION]
 >
->Tough Day 2 requires Java 8.
+>Tough Day 2 requires Java&trade; 8.
 
 ## How to Run Tough Day 2 {#how-to-run-tough-day}
 
@@ -35,7 +35,7 @@ The suite contains 15% write actions and 85% read actions.
 
 To run the suite tests, Tough Day 2 will install its default content package. This can be avoided by setting the `installsamplecontent`parameter to `false`, but remember that you should also change the default paths for the tests that you intend to run. If the jar is run without parameters, Tough Day 2 displays the [help information](/help/sites-developing/tough-day.md#getting-help).
 
-As a general rule, you can use the application by following this pattern:
+As a rule, you can use the application by following this pattern:
 
 ```xml
 java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  [<global arguments> | <actions> | --runmode | --publishmode]
@@ -43,7 +43,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
->Tough Day 2 does not have a clean up step. As a result, it is recommended to run Tough Day 2 on a cloned staging instance and not on the main production instance. The staging instance should be dropped after the tests.
+>Tough Day 2 does not have a clean-up step. As a result, it is recommended to run Tough Day 2 on a cloned staging instance and not on the main production instance. The staging instance should be dropped after the tests.
 >
 
 ### Getting Help {#getting-help}
@@ -86,22 +86,22 @@ In the table below, you can find the relevant help parameters.
   <tr>
    <td> --help --runmode/publishmode type=&lt;Mode&gt;</td>
    <td>Lists information about the specified run or publish mode.</td>
-   <td><p>java -jar toughday2.jar --help --runmode type=constantload</p> <p>java -jar toughday2.jar --help --publishmode type=intervals</p> </td>
+   <td><p>Java&trade; -jar toughday2.jar --help --runmode type=constantload</p> <p>Java&trade; -jar toughday2.jar --help --publishmode type=intervals</p> </td>
   </tr>
   <tr>
    <td>--help --suite=&lt;SuiteName&gt;</td>
    <td>Lists all the tests of a given suite and their respective configurable properties.</td>
-   <td><br /> java -jar toughday2.jar --help --suite=get_tests</td>
+   <td><br /> Java&trade; -jar toughday2.jar --help --suite=get_tests</td>
   </tr>
   <tr>
    <td> --help --tag=&lt;Tag&gt;</td>
    <td><br /> Lists all the items that have the specified tag.</td>
-   <td>java -jar toughday2.jar --help --tag=publish</td>
+   <td>Java&trade; -jar toughday2.jar --help --tag=publish</td>
   </tr>
   <tr>
    <td>--help &lt;TestClass/PublisherClass&gt;</td>
    <td><br /> Lists all the configurable properties for the given test or publisher.</td>
-   <td><p>java -jar toughday2.jar --help UploadPDFTest</p> <p>java -jar toughday2.jar --help CSVPublisher</p> </td>
+   <td><p>Java&trade; -jar toughday2.jar --help UploadPDFTest</p> <p>Java&trade; -jar toughday2.jar --help CSVPublisher</p> </td>
   </tr>
  </tbody>
 </table>
@@ -134,15 +134,15 @@ You can find the relevant parameters in the list bellow:
 
 ## Customizing {#customizing}
 
-Customization can be achieved in two ways: command line parameters or yaml configuration files. **Configuration files are generally used for large custom suites and they will override the Tough Day 2 default parameters. Command line parameters override both configuration files and the default parameters.**
+Customization can be achieved in two ways: command-line parameters or yaml configuration files. **Configuration files are used for large custom suites and they override the Tough Day 2 default parameters. Command-line parameters override both configuration files and the default parameters.**
 
 The only way to save a test configuration is to copy it in yaml format.
 
 ### Adding a New Test {#adding-a-new-test}
 
-If you do not want to use the default `toughday` suite you can add a test of your choosing by using the `add` parameter. The examples below show how to add the `CreateAssetTreeTest` test either by using command line parameters or a yaml configuration file.
+If you do not want to use the default `toughday` suite you can add a test of your choosing by using the `add` parameter. The examples below show how to add the `CreateAssetTreeTest` test either by using command-line parameters or a yaml configuration file.
 
-By using command line parameters:
+By using command-line parameters:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest
@@ -159,9 +159,9 @@ tests:
 
 ### Adding Multiple Instances of the Same Test  {#adding-multiple-instances-of-the-same-test}
 
-You can also add and run multiple instances of the same test, but each instance must have an unique name. The examples below show how to add two instances of the same test either by using command line parameters or a yaml configuration file.
+You can also add and run multiple instances of the same test, but each instance must have a unique name. The examples below show how to add two instances of the same test either by using command-line parameters or a yaml configuration file.
 
-By using command line parameters:
+By using command-line parameters:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest name=FirstAssetTree --add CreateAssetTreeTest name=SecondAssetTree
@@ -189,11 +189,11 @@ In case you need to change one or more of the test properties, you can add that 
 java -jar toughday2.jar --help CreatePageTreeTest
 ```
 
-Please keep in mind that yaml configuration files will overwrite the Tough Day 2 default parameters and command line parameters will override both the configuration files and the defaults.
+Keep in mind that yaml configuration files will overwrite the Tough Day 2 default parameters and command-line parameters will override both the configuration files and the defaults.
 
-The examples below show how to change the `template` property for the `CreatePageTreeTest` test either by using either command line parameters or a yaml configuration file.
+The examples below show how to change the `template` property for the `CreatePageTreeTest` test either by using either command-line parameters or a yaml configuration file.
 
-By using command line parameters:
+By using command-line parameters:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreatePageTreeTest template=/conf/toughday-templates/settings/wcm/templates/toughday-template
@@ -216,7 +216,7 @@ The examples below show how to add a test to a predefined suite and how to recon
 
 You can add a new test to a predefined suite using the `add` parameter and specifying the targeted predefined suite.
 
-By using command line parameters:
+By using command-line parameters:
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTest
@@ -232,11 +232,11 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Existing tests in a given suite can also be reconfigured using the `config`* *parameter. Please note that you must also specify the suite name and the actual name of the test (not the Test Class name). You can find the test name in the `name` property of the Test Class. For further details on how to find test properties, read the [Changing Test Properties](/help/sites-developing/tough-day.md#changing-the-test-properties) section.
+Existing tests in a given suite can also be reconfigured using the `config`* *parameter. You must also specify the suite name and the actual name of the test (not the Test Class name). You can find the test name in the `name` property of the Test Class. For further details on how to find test properties, read the [Changing Test Properties](/help/sites-developing/tough-day.md#changing-the-test-properties) section.
 
 In the example below the default asset title for the `CreatePageTreeTest` (named `UploadAsset`) is changed to "NewAsset".
 
-By using command line parameters:
+By using command-line parameters:
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --config UploadAsset title=NewAsset
@@ -254,9 +254,9 @@ tests:
       title : NewAsset
 ```
 
-Aditionally, you can also remove tests from predefined suites or publishers from the default configuration with the use of the `exclude` parameter. Please note that you must also specify the suite name and the actual name of the test (not the Test C `lass` name). You can find the test name in the `name` property of the test class. In the example below, the `CreatePageTreeTest` (named `UploadAsset`) test is removed from the toughday suite.
+Also, you can also remove tests from predefined suites or publishers from the default configuration with the use of the `exclude` parameter. You must also specify the suite name and the actual name of the test (not the Test C `lass` name). You can find the test name in the `name` property of the test class. In the example below, the `CreatePageTreeTest` (named `UploadAsset`) test is removed from the toughday suite.
 
-By using command line parameters:
+By using command-line parameters:
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --exclude UploadAsset
@@ -301,7 +301,7 @@ The **constant load** run mode differs from the normal run mode by generating a 
 
 ### Test Selection {#test-selection}
 
-The test selection process is the same for both run modes and it goes as follows: all tests have a `weight` property, which determines the likelihood of execution in a thread. For example, if we have two tests, one with a weight of 5 and the other with a weight of 10, the latter is two times more likely to be executed than the former.
+The test selection process is the same for both run modes and it goes as follows: all tests have a `weight` property, which determines the likelihood of execution in a thread. For example, if you have two tests, one with a weight of 5 and the other with a weight of 10, the latter is two times more likely to be executed than the former.
 
 Furthermore, tests can have a `count` property, which limits the number of executions to a given number. After this number is passed, no further executions of the test will occur. All test instances that are already running will finish the run as configured. The following example shows how to add these parameters either at the command line or by using a yaml configuration file.
 
@@ -329,7 +329,7 @@ or
 
 ### Dry Run {#dry-run}
 
-A dry run parses all the given input (command line parameters or config files), merging it with the defaults and then outputs the results. It does not execute any of the tests.
+A dry run parses all the given input (command-line parameters or config files), merging it with the defaults and then outputs the results. It does not execute any of the tests.
 
 ```xml
 java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTest --dryrun=true
@@ -341,7 +341,7 @@ Tough Day 2 outputs both test metrics and logs. For further details, read the fo
 
 ### Test Metrics {#test-metrics}
 
-Tough Day 2 currently reports 9 test metrics that you can evaluate. Metrics with the **&#42;** symbol are reported only after successful runs:
+Tough Day 2 currently reports nine test metrics that you can evaluate. Metrics with the **&#42;** symbol are reported only after successful runs:
 
 | **Name** |**Description** |
 |---|---|
@@ -365,14 +365,14 @@ These metrics are written with the help of publishers that can be added with the
 
 By default, both publishers are enabled.
 
-Additionally, there are two modes in which the metrics are reported:
+Also, there are two modes in which the metrics are reported:
 
 * The **simple** publish mode - reports the results from the beginning of the execution up to the point of publishing.
 * The **intervals** publish mode - reports the results in a given time frame. You can set the time frame with the **interval** publish mode parameter.
 
 The following example shows how to configure the `intervals` parameter either at the command line or by using a yaml configuration file.
 
-By using command line parameters:
+By using command-line parameters:
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreatePageTreeTest --publishmode type=intervals interval=10s
@@ -396,7 +396,7 @@ Tough Day 2 creates a logs folder in the same directory where you ran Tough Day 
 * **toughday.log**: contains messages related to the application state, debugging information and global messages.
 * **toughday_&lt;testname&gt;.log**: messages related to the specified test.
 
-The logs are not overwritten, subsequent runs will append messages to the existing logs. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+The logs are not overwritten, subsequent runs append messages to the existing logs. The logs have several levels, for more information see the ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
 
 <!--
 #### Example Usage {#example-usage}

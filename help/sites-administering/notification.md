@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 ---
+
 # Configuring Email Notification{#configuring-email-notification}
 
 AEM sends email notifications to users who:
@@ -48,7 +49,7 @@ To help you debug an issue with the **Day CQ Mail Service**, you can watch the l
 
 The configuration looks as follows in the Web console:
 
-![chlimage_1-276](assets/chlimage_1-276.png)
+![The Day CQ Mail Service OSGi configuration window](assets/chlimage_1-276.png)
 
 ## Configuring the Email Notification Channel {#configuring-the-email-notification-channel}
 
@@ -82,7 +83,7 @@ When you receive workflow email notifications, both the from-email address and t
 
 The default configuration looks as follows in the Web Console:
 
-![chlimage_1-277](assets/chlimage_1-277.png)
+![The Day CQ Workflow Email Notification Service configuration window](assets/chlimage_1-277.png)
 
 ### Email Templates for Page Notification {#email-templates-for-page-notification}
 
@@ -227,7 +228,7 @@ The following variables can be used within the email template:
 
 * `${payload.type}`, the payload type
 * `${payload.path}`, path of the payload
-* `${host.prefix}`, host prefix, e.g.: http://localhost:4502
+* `${host.prefix}`, host prefix, e.g.: `http://localhost:4502`
 
 ### Adding an Email Template for a New Language {#adding-an-email-template-for-a-new-language}
 
@@ -291,7 +292,7 @@ First, configure the Mail Service:
    * Check the tickboxes for **SMPT use StarTLS** and **SMTP requires StarTLS**
    * Check **OAuth flow** and click **Save**.
 
-Next, configure your SMTP OAuth provder by following the procedure below:
+Next, configure your SMTP OAuth provider by following the procedure below:
 
 1. Open the AEM Web Console by going to `http://serveraddress:serverport/system/console/configMgr`
 1. Look for, then click on **CQ Mailer SMTP OAuth2 Provider**
@@ -304,11 +305,11 @@ Next, configure your SMTP OAuth provder by following the procedure below:
    * Refresh Token Expiry: never
 1. Click **Save**.
 
-<!-- clarify refresh token expiry, currrently not present in the UI -->
+<!-- clarify refresh token expiry, currently not present in the UI -->
 
 Once configured, the settings should look like this:
 
-![oauth smtp provider](assets/oauth-smtpprov2.png)
+![The CQ Mailer SMTP Oauth2 Provider configuration window](assets/oauth-smtpprov2.png)
 
 Now, activate the OAuth components. You can do this by:
 
@@ -318,7 +319,7 @@ Now, activate the OAuth components. You can do this by:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Press the Play icon to the left of the components
    
-   ![components](assets/oauth-components-play.png)
+   ![List of components showing the OAuthCodeGenerateServlet and OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
 
 Finally, confirm the configuration by:
 
@@ -336,7 +337,7 @@ Finally, confirm the configuration by:
 1. Search for **Azure Active Directory** in the search bar and click on the result. Alternatively, you can browse directly to [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Click on **App Registration** - **New Registration**
 
-   ![](assets/oauth-outlook1.png)
+   ![The new registration button when configuring Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Fill in the information according to your requirements, then click on **Register**
 1. Go to the newly created app, and select **API Permissions** 
@@ -391,7 +392,7 @@ Next, integrate your OAuth2 settings with AEM:
 
 Once configured, the settings should look like this:
 
-![](assets/oauth-outlook-smptconfig.png)
+![The completed CQ Mailer SMTP OAuth2 configuration](assets/oauth-outlook-smptconfig.png)
 
 Now, activate the OAuth components. You can do this by:
 
@@ -401,7 +402,7 @@ Now, activate the OAuth components. You can do this by:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Press the Play icon to the left of the components
 
-![components2](assets/oauth-components-play.png)
+![A snippet of the component list containing OAuthCodeGenerateServlet and OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
 
 Finally, confirm the configuration by:
 

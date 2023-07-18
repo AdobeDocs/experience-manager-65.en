@@ -1,8 +1,6 @@
 ---
 title: Blog Feature
-seo-title: Blog Feature
 description: Community information in a journaling format
-seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -28,7 +26,7 @@ The blog feature provides :
 * Embedded social networking content ([oEmbed support](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Draft mode
 * Scheduled publishing
-* Compose on-behalf (a [privileged member](/help/communities/users.md#privileged-members-group) can create content on behalf of a different communty member)
+* Compose on-behalf (a [privileged member](/help/communities/users.md#privileged-members-group) can create content on behalf of a different community member)
 * [In-context and bulk moderation](/help/communities/moderate-ugc.md) of blog articles and comments
 
 This section of the documentation describes:
@@ -49,17 +47,17 @@ If it is desired to add a blog to a page in author mode, use the component brows
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
-and drag them into place on a page where the blog should appear.
+And drag them into place on a page where the blog should appear.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, this is how the `Blog` component will appear:
+When the [required client-side libraries](/help/communities/blog-developer-basics.md#essentials-for-client-side) are included, the `Blog` component appears follows:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Configuring Blog {#configuring-blog}
 
-Select the placed `Blog` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Blog` component so you can access and select the `Configure` icon which opens the edit dialog box.
 
 ![configure](assets/configure-new.png) 
 
@@ -79,7 +77,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Min Image Size for Thumbnail**
   
-  Minimum size (in bytes) of image for generating thumbnail for inline images. The default value is 100000bytes (100kb).
+  Minimum size (in bytes) of image for generating thumbnail for inline images. The default value is 100000bytes (100 kb).
 
 * **Max Thumbnail Size**
   
@@ -93,9 +91,9 @@ Under the **Settings** tab, specify the basic features of the blog :
   
   Add the privileged members allowed to create content.
 
-* **Block User Generated Content in Author Edit Mode**
+* **Block User-Generated Content in Author Edit Mode**
   
-  If enabled, blocks User Generated Content while editing in Author Mode.
+  If enabled, blocks User-Generated Content while editing in Author Mode.
 
 * **Journal Title**
   
@@ -117,7 +115,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Moderated**
   
-  If checked, posting of blog entries and comments must be approved before they will appear on a published site. The default is unchecked.
+  If checked, posting of blog entries and comments must be approved before they appear on a published site. The default is unchecked.
 
 * **Closed**
   
@@ -137,11 +135,11 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Max File Size**
   
-  Relevant only if `Allow File Uploads` is checked. This field will limit the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
+  Relevant only if `Allow File Uploads` is checked. This field limits the size (in bytes) of an uploaded file. Default is 104857600 (10 Mb).
 
 * **Allowed File Types**
   
-  Relevant only if `Allow File Uploads` is checked. A comma separated list of file extensions with the "dot" separater. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed to be uploaded. Default is none specified such that all file types are allowed.
+  Relevant only if `Allow File Uploads` is checked. A comma-separated list of file extensions with the "dot" separator. For example: .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then those file types that are not specified, cannot be uploaded. Default is none specified such that all file types are allowed.
 
 * **Max Attach Image File Size**
   
@@ -175,11 +173,11 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **Allow Featured Content**
   
-  If checked, the idea is able to be identified as [featured content](/help/communities/featured.md). Default is unchecked.
+  If checked, the idea is identified as [featured content](/help/communities/featured.md). Default is unchecked.
 
 * **Enable Mention**
   
-  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users recieve notifications about their mentions.
+  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users receive notifications about their own mentions.
 
 * **Max Mentions**
   
@@ -187,7 +185,7 @@ Under the **Settings** tab, specify the basic features of the blog :
 
 * **UI Mention Pattern**
   
-  Specify the alowed pattern string to tag (@mention) the registered user in a post. For example ~{{familyName}}{{givenName}}.
+  Specify the allowed pattern string to tag (@mention) the registered user in a post. For example, `~{{familyName}}{{givenName}}`.
 
 #### User Moderation tab {#user-moderation-tab}
 
@@ -195,7 +193,7 @@ Under the **User Moderation** tab, specify the moderation settings :
 
 * **Deny Posts**
   
-  If checked, trusted member moderators will be allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.
+  If checked, trusted member moderators are allowed to deny posts and prevent the post from appearing on the public forum. Default is unchecked.
 
 * **Close / Reopen Topics**
   
@@ -223,11 +221,11 @@ Under the **User Moderation** tab, specify the moderation settings :
 
 #### Tag field tab {#tag-field-tab}
 
-Under the **Tag field** tab, specify the which tags may be applied if **Allow Tagging** is check on the **Settings** tab :
+Under the **Tag field** tab, specify which tags can be applied if **Allow Tagging** is check on the **Settings** tab :
 
 * **Allowed Namespaces**
   
-  Relevant if `Allow Tagging` is checked under the **Settings** tab. The tags which may be applied are limited to those within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) as well as "Include All Tags". Default is none checked, which means all namespaces are allowed.
+  Relevant if `Allow Tagging` is checked under the **Settings** tab. The tags which may be applied are limited to those tags within the namespace categories checked. The list of namespaces includes "Standard Tags" (the default namespace) and "Include All Tags". Default is none checked, which means all namespaces are allowed.
 
 * **Suggestion Limit**
   
@@ -243,7 +241,7 @@ Under the **Journal Sidebar Settings** tab, specify the date format for archives
 
 * **Date format**
   
-  The format used to display for archives of blog entries. The format uses placeholders following the Java convention.
+  The format used to display for archives of blog entries. The format uses placeholders following the Java&trade; convention.
 
     * yyyy : full year, like '2015'
     * yy : short year, like '15'
@@ -261,9 +259,9 @@ Under the **Journal Sidebar Settings** tab, specify the date format for archives
     * Categories
     * Archives
 
-* **Blopg Component Path**
+* **Blog Component Path**
   
-  *(Optional)* The location of the blog resource from which blog articles are to be listed. If left blank, will use the component of resourceType `social/journal/components/hbs/journal` that appears on the same page.
+  *(Optional)* The location of the blog resource from which blog articles are to be listed. If left blank, it uses the component of resourceType `social/journal/components/hbs/journal` that appears on the same page.
 
     * For example, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -273,7 +271,7 @@ Under the **Journal Sidebar Settings** tab, specify the date format for archives
 
 ## Site Visitor Experience {#site-visitor-experience}
 
-In the publish environment, the blog feature will display the most recent blog article followed by older blog articles in descending order of creation. Blog sidebars allow site visitors to apply filters to limit the selection of blog articles shown.
+In the publish environment, the blog feature displays the most recent blog article followed by older blog articles in descending order of creation. Blog sidebars allow site visitors to apply filters to limit the selection of blog articles shown.
 
 The blog article is followed by a link to post or view comments.
 
@@ -283,13 +281,13 @@ Other abilities depend on whether the site visitor is a moderator, administrator
 
 ### Working with Articles {#working-with-articles}
 
-When creating a new blog article, there is the choice to:
+When creating a blog article, there is the choice to do the following:
 
 1. Publish Immediately
 1. Publish a Draft
 1. Publish at a Scheduled date and time
 
-The blog articles will appear under the appropriate tab (Published, Drafts or Scheduled) to members able to author on publish.
+The blog articles appear under the appropriate tab (Published, Drafts, or Scheduled) to members able to author on publish.
 
 #### Moderators and Administrators {#moderators-and-administrators}
 
@@ -303,7 +301,7 @@ When the signed in user is a community member or [privileged member](/help/commu
 
 Specifically, they may:
 
-* Create a new blog article
+* Create a blog article
 * Post a new blog article on behalf of another member
 * Post a comment to a blog article
 * Edit their own blog article or comment
@@ -324,8 +322,8 @@ Site visitors who are not signed in may only read posted blog articles and comme
 
 More information may be found on the [Blog Essentials](/help/communities/blog-developer-basics.md) page for developers.
 
-For moderation of blog entries and comments, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+For moderation of blog entries and comments, see [Moderating User-Generated Content](/help/communities/moderate-ugc.md).
 
-For tagging blog entries and comments, see [Tagging User Generated Content](/help/communities/tag-ugc.md).
+For tagging blog entries and comments, see [Tagging User-Generated Content](/help/communities/tag-ugc.md).
 
-For translation of blog entries and comments, see [Translating User Generated Content](/help/communities/translate-ugc.md).
+For translation of blog entries and comments, see [Translating User-Generated Content](/help/communities/translate-ugc.md).

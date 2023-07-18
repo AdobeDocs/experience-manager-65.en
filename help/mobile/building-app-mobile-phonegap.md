@@ -1,8 +1,6 @@
 ---
 title: Building Mobile Applications
-seo-title: Building Mobile Applications
-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
-seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
+description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here. Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
@@ -15,7 +13,7 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
 
@@ -53,16 +51,16 @@ Compile the PhoneGap application on your computer using the PhoneGap Command-lin
 
 To build using the PhoneGap CLI, you need to install Node.js and the PhoneGap client utility. You require an internet connection to perform the following procedure.
 
-1. Download and install [Node.js](https://nodejs.org/).
+1. Download and install [Node.js](https://nodejs.org/en).
 1. Open a terminal or command prompt and enter the following node command to install the PhoneGap utility:
 
    ```shell
    npm install -g phonegap
    ```
 
-   On a Unix or Linux system, you may need to prefix the command with `sudo`.
+   On a UNIX&reg; or Linux&reg; system, you may need to prefix the command with `sudo`.
 
-   The terminal shows the results of a series of HTTP GET commands. When the installation is succesful, the terminal shows where the libraries are installed similar to the following example:
+   The terminal shows the results of a series of HTTP GET commands. When the installation is successful, the terminal shows where the libraries are installed similar to the following example:
 
    ```xml
    /usr/local/bin/phonegap -> /usr/local/lib/node_modules/phonegap/bin/phonegap.js
@@ -82,16 +80,16 @@ To build using the PhoneGap CLI, you need to install Node.js and the PhoneGap cl
 1. (Optional) Obtain the SDK for the mobile platform that you are targeting:
 
     * To build apps for the iOS platform, install the latest version of [Xcode](https://developer.apple.com/xcode/).
-    * To build Android apps, install the [Android SDK](https://developer.android.com/).
+    * To build Android&trade; apps, install the [Android&trade; SDK](https://developer.android.com/).
 
 ### Downloading the Content ZIP File {#downloading-the-content-zip-file}
 
 Move the content of your mobile application to your file system.
 
 1. On the Mobile Applications page, select your application.
-1. (Optional) To build the application for complete installations, on the toolbar, click or tap the Clear Cache icon.
+1. (Optional) To build the application for complete installations, on the toolbar, click Clear Cache icon.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Clear cache icon indicated by a broken link symbol.](do-not-localize/chlimage_1.png)
 
    >[!NOTE]
    >
@@ -99,14 +97,14 @@ Move the content of your mobile application to your file system.
 
 1. On the toolbar, click or tap the Download CLI Assets icon.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Download CLI Assets icon indicated by overlapping tablet symbol.](do-not-localize/chlimage_1-1.png)
 
 1. After you have saved the ZIP file, click Close on the Success dialog.
 1. Extract the contents of the ZIP file.
 
 ### Using the PhoneGap CLI to Build {#using-the-phonegap-cli-to-build}
 
-Use the PhoneGap CLI to compile and install the application. For information about how to use the PhoneGap CLI, see the PhoneGap [Command-line Interface](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html) documentation.
+Use the PhoneGap CLI to compile and install the application. For information about how to use the PhoneGap CLI, see the PhoneGap Command-line Interface (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`) documentation.
 
 1. Open a terminal or command prompt and change the current directory to the downloaded application ZIP file. For example, the following changes the directory to the ng-app-cli.1392137825303.zip file:
 
@@ -114,7 +112,7 @@ Use the PhoneGap CLI to compile and install the application. For information abo
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. Enter the phonegap command for the platform that you are targeting. For example, the following command builds the app for Android:
+1. Enter the phonegap command for the platform that you are targeting. For example, the following command builds the app for Android&trade;:
 
    ```shell
    phonegap build android
@@ -134,7 +132,7 @@ Create a PhoneGap Build configuration so that you can use the PhoneGap Build ser
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. In the Create Configuration dialog, type a value for the Title property. By default, the value of the Name property is derived from the title, however you can enter a name. Click Create.
+1. In the Create Configuration dialog box, type a value for the Title property. By default, the value of the Name property is derived from the title, however you can enter a name. Click Create.
 1. In the PhoneGap Build Configuration dialog, type your PhoneGap Build user name and password, and then click OK.
 
 ### Using PhoneGap Build {#using-phonegap-build}
@@ -144,7 +142,7 @@ Send your application resources to PhoneGap Build for compiling for the various 
 1. On the Mobile Applications page, open your mobile application. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (Optional) To build the application for complete installations, select the application and click the Clear Cache icon.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Clear cache icon indicated by a broken link symbol.](do-not-localize/chlimage_1-2.png)
 
    >[!NOTE]
    >
@@ -152,11 +150,11 @@ Send your application resources to PhoneGap Build for compiling for the various 
 
 1. Select the splash page, and then click the Build Remote icon.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Build Remote icon indicated by two round gears.](do-not-localize/chlimage_1-3.png)
 
    **Note:** The Beta version of AEM Beta does not create an Inbox notification when the build successfuly completes.
 
-1. In the Success dialog box, click PhoneGap Build to open the Adobe PhoneGap Build page at [https://build.phonegap.com/apps](https://build.phonegap.com/apps). If you are waiting for your app to appear, you can check the [PhoneGap Build Status](https://status.build.phonegap.com/) page.
+1. In the Success dialog box, click PhoneGap Build to open the Adobe PhoneGap Build page at `https://build.phonegap.com/apps`. If you are waiting for your app to appear, you can check the PhoneGap Build Status at `https://status.build.phonegap.com/`.
 
    For information about installing the build, see the [PhoneGap Build Documentation](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 

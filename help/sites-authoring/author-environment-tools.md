@@ -160,7 +160,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Assets Browser Desktop device](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Content Tree {#content-tree}
 
@@ -168,7 +168,7 @@ The **Content Tree** gives an overview of all of the components on the page in a
 
 The Content Tree is a tab within the side panel (together with the components and assets browser). To open (or close) the side panel use the icon at the top left of the toolbar:
 
-![](do-not-localize/screen_shot_2018-03-22at142042.png)
+![Content tree](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Additionally on a complex page, it makes it easier to jump between components of the page.
 
@@ -196,7 +196,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon will directly start the edit dialogue for the component.
 
-  ![](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Wrench icon - Edit](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Or a page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page; for example:
 
@@ -326,7 +326,7 @@ Path fields have auto-complete and look-ahead funtionality now to make locating 
 
 Clicking the **Open Selection Dialog** button in the path field opens the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) dialog to allow for more detailed selection options.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Open Selection Dialog](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Alternatively you can start typing in the path field and AEM will offer matching paths as you type.
 

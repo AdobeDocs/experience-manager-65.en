@@ -41,7 +41,7 @@ To create a blueprint configuration:
 1. [Navigate](/help/sites-authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
-   ![chlimage_1-209](assets/blueprint-configurations.png)
+   ![Blueprint configurations](assets/blueprint-configurations.png)
 
 1. Select **Create**.
 1. Select the blueprint template, then **Next** to continue.
@@ -60,7 +60,7 @@ You can edit or delete an existing blueprint configuration:
 1. [Navigate](/help/sites-authoring/basic-handling.md#global-navigation) to the **Tools** menu, then select the **Sites** menu.
 1. Select **Blueprints** to open the **Blueprint Configurations** console:
 
-   ![chlimage_1-210](assets/blueprint-configurations.png)
+   ![Blueprint configurations](assets/blueprint-configurations.png)
 
 1. Select the required blueprint configuration - the appropriate actions will become available in the toolbar:
 
@@ -91,15 +91,15 @@ To create a live copy:
 
 1. In the **Sites** console select **Create**, then **Live Copy**.
 
-   ![chlimage_1-212](assets/chlimage_1-212.png)
+   ![Create Live Copy](assets/chlimage_1-212.png)
 
 1. Select the source page then click or tap **Next**. For example:
 
-   ![chlimage_1-213](assets/chlimage_1-213.png)
+   ![Select source page](assets/chlimage_1-213.png)
 
 1. Specify the destination path of the live copy (open the parent folder/page of the live copy) and then click or tap **Next**.
 
-   ![chlimage_1-214](assets/chlimage_1-214.png)
+   ![Specify destination](assets/chlimage_1-214.png)
 
    >[!NOTE]
    >
@@ -110,7 +110,7 @@ To create a live copy:
     * a **Title** for the page.
     * a **Name**, that is used in the URL.
 
-   ![chlimage_1-215](assets/chlimage_1-215.png)
+   ![Enter title and name](assets/chlimage_1-215.png)
 
 1. Use the **Exclude sub pages** checkbox:
 
@@ -146,7 +146,7 @@ To create a live copy of a site from a blueprint configuration:
 1. In the **Sites** console, select **Create**, then **Site** from the drop down selector.
 1. Select the blueprint configuration to use as the source of the live copy and proceed with **Next**:
 
-   ![chlimage_1-216](assets/blueprint-configuration-select.png)
+   ![Select blueprint configuration as source of live copy](assets/blueprint-configuration-select.png)
 
 1. Use the **Initial Languages** selector to specify the language(s) of the blueprint site to use for the live copy.
 
@@ -154,7 +154,7 @@ To create a live copy of a site from a blueprint configuration:
 
    For example:
 
-   ![chlimage_1-217](assets/chlimage_1-217.png)
+   ![Select Initial Languages](assets/chlimage_1-217.png)
 
 1. Use the **Initial Chapters** drop-down to select the sections of the blueprint to include in the live copy. Again all available chapters are included by default, but can be removed.
 1. Provide values for the remaining properties and then select **Create**. In the confirmation dialog box, select **Done** to return to the **Sites** console, or **Open Site** to open the root page of the site.
@@ -184,7 +184,7 @@ To view the properties:
 
    For example:
 
-   ![chlimage_1-218](assets/chlimage_1-218.png)
+   ![Select Live Copy](assets/chlimage_1-218.png)
 
    >[!NOTE]
    >
@@ -194,7 +194,7 @@ To view the properties:
 
 Blueprint pages (that are referenced in a blueprint configuration) provide you with a list of the live copy pages that use the current (blueprint) page as the source. Use this list to keep track of the live copies. The list appears on the **Blueprint** tab of the [page properties](/help/sites-authoring/editing-page-properties.md).
 
-![chlimage_1-219](assets/chlimage_1-219.png)
+![Blueprint tab](assets/chlimage_1-219.png)
 
 ## Synchronizing your Live Copy {#synchronizing-your-live-copy}
 
@@ -215,11 +215,11 @@ Roll out a blueprint page to push content changes to live copies. A **Rollout** 
 1. Open the **Blueprint** tab.
 1. Select **Rollout**.
 
-   ![chlimage_1-220](assets/chlimage_1-220.png)
+   ![Select Rollout](assets/chlimage_1-220.png)
 
 1. Specify the pages and any sub-pages, then confirm with the check mark:
 
-   ![chlimage_1-221](assets/chlimage_1-221.png)
+   ![Specify pages and sub-pages](assets/chlimage_1-221.png)
 
 1. Specify if the rollout job should be executed immediately (**Now**) or at another date/time (**Later**).
 
@@ -247,7 +247,7 @@ Rollouts are processed as asynchronous jobs and can be checked in the [**Async J
 
       Specify if the rollout job should be executed immediately (**Now**) or at a later date/time (**Later**).
 
-      ![chlimage_1-222](assets/rollout-live-copy.png)
+      ![Specify the schedule](assets/rollout-live-copy.png)
 
 1. After confirming these details, select **Rollout** to perform the action.
 
@@ -265,7 +265,7 @@ The [Rollout action is also available from the Live Copy Overview](/help/sites-a
 1. Select **Rollout** from the toolbar.
 1. Specify the pages and any sub-pages, then confirm with the check mark:
 
-   ![chlimage_1-223](assets/chlimage_1-223.png)
+   ![Select the pages and sub-pages](assets/chlimage_1-223.png)
 
 1. Specify if the rollout job should be executed immediately (**Now**) or at another date/time (**Later**).
 
@@ -293,7 +293,7 @@ Synchronize a live copy to pull changes from the source to the livecopy.
 1. Open the **Live Copy** tab.
 1. Click or tap **Synchronize**.
 
-   ![chlimage_1-224](assets/chlimage_1-224.png)
+   ![Synchronize](assets/chlimage_1-224.png)
 
    Confirmation will be requested, use **Sync** to proceed.
 
@@ -308,7 +308,7 @@ The [Synchronize action is also available from the Live Copy Overview](/help/sit
     * **Page and Sub Pages**
     * **Page Only**
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Confirm Rollout](assets/chlimage_1-225.png)
 
 ## Changing Live Copy Content {#changing-live-copy-content}
 
@@ -378,11 +378,11 @@ The [Suspend action is also available from the Live Copy Overview](/help/sites-a
     * **Suspend**
     * **Suspend with children**
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Select appropriate Suspend option](assets/chlimage_1-226.png)
 
 1. Confirm the **Suspend** action in the **Suspend Live Copy** dialog:
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Suspend action](assets/chlimage_1-227.png)
 
 ### Resuming Inheritance for a Page {#resuming-inheritance-for-a-page}
 
@@ -392,7 +392,7 @@ When you re-enable inheritance, the page is not automatically synchronized with 
 
 * In the **Resume**/**Revert** dialog; for example:
 
-  ![chlimage_1-228](assets/chlimage_1-228.png)
+  ![Resume or Revert](assets/chlimage_1-228.png)
 
 * At a later stage, by manually selecting the synchronize action.
 
@@ -404,7 +404,7 @@ When you re-enable inheritance, the page is not automatically synchronized with 
 
 Once [suspended](#suspending-inheritance-from-page-properties) the **Resume** action becomes in the toolbar of the page properties:
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Resume](assets/chlimage_1-229.png)
 
 When selected, the dialog will be shown. You can select a synchronization, if required, then confirm the action.
 
@@ -470,11 +470,11 @@ Cancel inheritance to change the component content or delete the component:
 
 1. Click or tap the component for which you want to cancel inheritance.
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Select component for cancel inheritance action](assets/chlimage_1-230.png)
 
 1. On the component toolbar, click or tap the **Cancel Inheritance** icon.
 
-   ![Image](do-not-localize/chlimage_1-8.png)
+   ![Cancel Inheritance](do-not-localize/chlimage_1-8.png)
 
 1. In the Cancel Inheritance dialog box, confirm the action with **Yes**.
 
@@ -484,7 +484,7 @@ Cancel inheritance to change the component content or delete the component:
 
 To enable inheritance for a component, click or tap the **Re-enable Inheritance** icon on the component toolbar.
 
-![image](do-not-localize/chlimage_1-9.png)
+![Re-enable inheritance](do-not-localize/chlimage_1-9.png)
 
 ### Changing the Order of Components on a Live Copy Page {#changing-the-order-of-components-on-a-live-copy-page}
 
@@ -510,11 +510,11 @@ The page properties of a Live Copy page are inherited (and not editable) from th
 
 You can cancel inheritance for a property when you need to change the property value for the live copy. A link icon indicates that inheritance is enabled for the property.
 
-![chlimage_1-231](assets/chlimage_1-231.png)
+![Cancel inheritance of property](assets/chlimage_1-231.png)
 
 When you cancel inheritance, you can change the property value. A broken-link icon indicates that inheritance is cancelled.
 
-![chlimage_1-232](assets/chlimage_1-232.png)
+![Change property when inheritance broken](assets/chlimage_1-232.png)
 
 You can later re-enable inheritance for a property if required.
 
@@ -525,7 +525,7 @@ You can later re-enable inheritance for a property if required.
 1. Open the properties of the live copy page using either the **View Properties** option of the **Sites** console or **Page Information** icon on the page toolbar.
 1. To cancel inheritance of a property, click or tap the link icon that appears to the right of the property.
 
-   ![image](do-not-localize/chlimage_1-10.png)
+   ![Cancel inheritance of property](do-not-localize/chlimage_1-10.png)
 
 1. In the **Cancel Inheritance** confirmation dialog, click or tap **Yes**.
 
@@ -533,7 +533,7 @@ You can later re-enable inheritance for a property if required.
 
 To enable inheritance for a property, click or tap the **Revert Inheritance** icon that appears next to the property.
 
-![image](do-not-localize/chlimage_1-11.png)
+![Revert Inheritance](do-not-localize/chlimage_1-11.png)
 
 ### Resetting a Live Copy Page {#resetting-a-live-copy-page}
 
@@ -550,7 +550,7 @@ Resetting affects changes that you have made to page properties, the paragraph s
 1. Open the **Live Copy** tab.
 1. Select **Reset** from the toolbar.
 
-   ![chlimage_1-233](assets/chlimage_1-233.png)
+   ![Reset](assets/chlimage_1-233.png)
 
 1. In the **Reset Live Copy** dialog box, confirm with **Reset**.
 
@@ -562,7 +562,7 @@ The [Reset action is also available from the Live Copy Overview](/help/sites-adm
 1. Select **Reset** from the toolbar.
 1. Confirm the **Reset** action in the **Reset Live Copy** dialog:
 
-   ![chlimage_1-234](assets/chlimage_1-234.png)
+   ![Confirm Reset](assets/chlimage_1-234.png)
 
 ## Comparing a Live Copy Page with a Blueprint Page {#comparing-a-live-copy-page-with-a-blueprint-page}
 
@@ -581,7 +581,7 @@ To track the changes you have made, you can view the blueprint page in **Referen
 
    For example:
 
-   ![chlimage_1-235](assets/chlimage_1-235.png)
+   ![Compare](assets/chlimage_1-235.png)
 
 1. The two pages (live copy and blueprint) will be opened side-by-side.
 
@@ -632,7 +632,7 @@ To detach a live copy:
 1. Open the **Live Copy** tab.
 1. On the toolbar, select **Detach**.
 
-   ![chlimage_1-236](assets/chlimage_1-236.png)
+   ![Detach](assets/chlimage_1-236.png)
 
 1. A confirmation dialog will be shown, select **Detach** to complete the action.
 
@@ -644,4 +644,4 @@ The [Detach action is also available from the Live Copy Overview](/help/sites-ad
 1. Select **Detach** from the toolbar.
 1. Confirm the **Detach** action in the **Detach Live Copy** dialog:
 
-   ![chlimage_1-237](assets/chlimage_1-237.png)
+   ![Confirm Detach](assets/chlimage_1-237.png)

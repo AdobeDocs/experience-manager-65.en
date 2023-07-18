@@ -12,6 +12,7 @@ discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 ---
+
 # Configuring Segmentation {#configuring-segmentation}
 
 >[!NOTE]
@@ -28,7 +29,7 @@ AEM allows you to easily create and update segments, teasers, and campaigns. It 
 
 The **Segment Editor** allows you to easily define a segment:
 
-![](assets/segmenteditor.png)
+![The Segment Editor window](assets/segmenteditor.png)
 
 You can **Edit** each segment to specify a **Title**, **Description** and **Boost** factor. Using the sidekick you can add **AND** and **OR** containers to define the **Segment Logic**, then add the required **Segment Traits** to define the selection criteria.
 
@@ -124,17 +125,17 @@ To define your new segment:
 1. Create a [new page](/help/sites-authoring/editing-content.md#creatinganewpage) using the **Segment** template.
 1. Open the new page to see the segment editor:
 
-   ![](assets/screen_shot_2012-02-02at101726am.png)
+   ![The first step of creating a new segment in the Segment Editor](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Use either the sidekick or the context menu (usually right mouse button click, then select **New...** to open the Insert New Component window) to find the segment trait you need. Then drag it to the **Segment Editor** it will appear in the default **AND** container.
 1. Double-click on the new trait to edit the specific parameters; for example the mouse position:
 
-   ![](assets/screen_shot_2012-02-02at103135am.png)
+   ![Editing a component in the Segment Editor](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Click **OK** to save your definition:
 1. You can **Edit** the segment definition to give it a **Title**, **Description** and **[Boost](#boost-factor)** factor:
 
-   ![](assets/screen_shot_2012-02-02at103547am.png)
+   ![Editing the segment settings in the Segment Editor](assets/screen_shot_2012-02-02at103547am.png)
 
 1. Add more traits if required. You can formulate boolean expressions using the **AND Container** and **OR Container** components found under **Segment Logic**. With the segment editor you can delete traits or containers not needed anymore, or drag them to new positions within the statement.
 
@@ -155,7 +156,7 @@ Female and between the ages of 16 and 62
 
 As the main operator is OR you need to start with an **OR Container**. Within this you have 2 AND statements, for each of these you need an **AND Container**, into which you can add the individual traits.
 
-![](assets/screen_shot_2012-02-02at105145am.png)
+![An example of AND and OR operators in the Segment Editor](assets/screen_shot_2012-02-02at105145am.png)
 
 ## Testing the Application of a Segment {#testing-the-application-of-a-segment}
 
@@ -168,11 +169,11 @@ Once the segment has been defined, potential results can be tested with the help
 
 For example, a simple segment definition can be based on the age and gender of the user. Loading a specific profile shows that the segment is successfully resolved:
 
-![](assets/screen_shot_2012-02-02at105926am.png)
+![Using the Client Context window to test an AND segmentation operation](assets/screen_shot_2012-02-02at105926am.png)
 
 Or not:
 
-![](assets/screen_shot_2012-02-02at110019am.png)
+![Using the Client Context window to test a NOT segmentation operation](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
@@ -182,7 +183,7 @@ Such tests can also be performed on content pages and in combination with **Teas
 
 Mouseover on a teaser paragraph will show the segments applied, whether they currently resolve and therefore, why the current teaser instance has been selected:
 
-![](assets/chlimage_1-47.png)
+![An example mouseover of a segment](assets/chlimage_1-47.png)
 
 ### Using Your Segment {#using-your-segment}
 

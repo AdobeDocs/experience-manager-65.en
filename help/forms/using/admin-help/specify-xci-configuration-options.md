@@ -1,8 +1,6 @@
 ---
 title: Specify XCI configuration options
-seo-title: Specify XCI configuration options
 description: Learn how to specify XCI configuration options.
-seo-description: Learn how to specify XCI configuration options.
 uuid: cf9e544d-63cd-4fad-8f89-bdb46eeef409
 contentOwner: admin
 content-type: reference

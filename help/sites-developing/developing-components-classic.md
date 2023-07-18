@@ -87,7 +87,7 @@ There are three methods to access content in AEM WCM:
 
 * Via the `currentPage` object introduced in `global.jsp`:
 
-  The `currentPage` object is an instance of a page (see [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). The page class provides some methods to access content.
+  The `currentPage` object is an instance of a page (see [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). The page class provides some methods to access content.
 
   Example: `String pageTitle = currentPage.getTitle();`
 

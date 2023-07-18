@@ -57,7 +57,7 @@ The following property values are used in the Provisioned Target Configuration c
 
 The Provisioned Target Framework that the Opt-in wizard creates is configured to send context data from the Profile Data store. The age and the gender data items of the store is sent to Target by default. Your solution likely requires additional parameters to be sent.
 
-![chlimage_1-158](assets/chlimage_1-158.png)
+![Provisioned Target Framework](assets/chlimage_1-158.png)
 
 You can configure the framework to send additional context information to Target as described in [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework).
 
@@ -189,11 +189,11 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 1. On your Target configuration page, click the **+** (plus sign) next to Available Frameworks.
 1. In the Create Framework dialog, specify a **Title**, select the **Adobe Target Framework**, and click **Create**.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+   ![Create Framework dialog](assets/chlimage_1-161.png)
 
    The framework page opens. Sidekick provides components that represent information from the [Client Context](/help/sites-administering/client-context.md) or [ContextHub](/help/sites-developing/ch-configuring.md) that you can map.
 
-   ![chlimage_1-162](assets/chlimage_1-162.png)
+   ![Components for framework](assets/chlimage_1-162.png)
 
 1. Drag the Client Context component that represents the data that you want to use for mapping to the drop target. Alternatively, drag the**ContextHub Store** component to the framework.
 
@@ -203,11 +203,11 @@ You can create multiple frameworks for a single Target configuration. Multiple f
 
    For example, to use **Profile Data** about your site visitors to control your Target campaign, drag the **Profile Data** component to the page. The profile data variables that are available for mapping to Target parameters appear.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   ![profile Data](assets/chlimage_1-163.png)
 
 1. Select the variables that you want to make visible to the Adobe Target system by selecting the **Share** checkbox in the appropriate columns.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+   ![Share](assets/chlimage_1-164.png)
 
    >[!NOTE]
    >
@@ -242,7 +242,7 @@ When you associate a page with the framework, the child pages inherit the associ
 1. Tap/click **Edit**.
 1. Tap/click **Add Configuration** under **Cloud Service Configurations** and select **Adobe Target**.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+   ![Add Configuration](assets/chlimage_1-165.png)
 
 1. Select the framework that you want under **Configuration Reference**.
 

@@ -1,8 +1,6 @@
 ---
 title: File Library Feature
-seo-title: File Library Feature
 description: The File Library feature lets signed-in site visitors upload, manage, and download files
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -16,7 +14,7 @@ exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
 
 ## Introduction {#introduction}
 
-The file library feature provides a place for signed-in site visitors (community members) to upload, manage and download files within the community site.
+The file library feature provides a place for signed-in site visitors (community members) to upload, manage, and download files within the community site.
 
 This section of the documentation describes:
 
@@ -29,17 +27,17 @@ To add a `File Library` component to a page in author mode, locate the component
 
 * `Communities / File Library`
 
-and drag it into place on a page.
+And drag it into place on a page.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
-When the [required client-side libraries](/help/communities/essentials-file-library.md#essentials-for-client-side) are included, this is how the `File Library` component will appear:
+When the [required client-side libraries](/help/communities/essentials-file-library.md#essentials-for-client-side) are included, it is how the `File Library` component appears:
 
 ![file-library1](assets/file-library1.png)
 
 ### Configuring File Library {#configuring-file-library}
 
-Select the placed `File Library` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `File Library` component so you can access and select the `Configure` icon which opens the edit dialog box.
 
 ![configure-new](assets/configure-new.png) 
 
@@ -55,11 +53,11 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Comments Per Page**
   
-  Limits the number of comments shown per page as well as the number of replies shown. Default is **10**.
+  Limits the number of comments shown per page and the number of replies shown. Default is **10**.
 
 * **Max File Size**
   
-  This value will limit the uploaded file size. Default limit is 104857600 (10 Mb).
+  This value limits the uploaded file size. Default limit is 104857600 (10 MB).
 
 * **Max Message Length**
   
@@ -67,7 +65,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Allowed File Types**
   
-  A comma separated list of file extensions with the "dot" separater. For example : .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specifed, then those not specified will not be allowed. Default is not specified such that all file types are allowed.
+  A comma-separated list of file extensions with the "dot" separator. For example, .jpg, .jpeg, .png, .doc, .docx, .pdf. If any file types are specified, then any file types that are not specified are not allowed. Default is not specified such that all file types are allowed.
 
 * **Rich Text Editor**
   
@@ -79,11 +77,11 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Allow Tagging**
   
-  If checked, the ability to add a tag to the file will be enabled. Default is unchecked.
+  If checked, the ability to add a tag to the file is enabled. Default is unchecked.
 
 * **Allowed Namespaces**
   
-  If Allow Tagging is checked, the tags available will be limited to the namespaces checked. If none are checked, then all are allowed. Default is all namespaces.
+  If Allow Tagging is checked, the tags available are limited to the namespaces that are checked. If no namespaces are checked, then all are allowed. Default is all namespaces.
 
 * **Suggestion Limit**
   
@@ -91,7 +89,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Allow Voting**
   
-  If checked, the ability to voter for a file will be enabled. Default is unchecked.
+  If checked, the ability to vote for a file is enabled. Default is unchecked.
 
 * **Allow Following**
   
@@ -99,7 +97,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Enable Mention**
   
-  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users recieve notifications about their mentions.
+  If enabled, allows registered community users to identify other registered members (using first name, last name, user name) and tag them using the common @user-name syntax. The tagged users receive notifications about their mentions.
 
 * **Max Mentions**
   
@@ -107,7 +105,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **UI Mention Pattern**
   
-  Specify the alowed pattern string to tag (@mention) the registered user in a post. For example ~{{familyName}}{{givenName}}.
+  Specify the allowed pattern string so that you tag (@mention) the registered user in a post. For example, `~{{familyName}}{{givenName}}`.
 
 * **Allow Threaded Replies**
   
@@ -119,11 +117,11 @@ Under the **User Moderation** tab, configure moderation of comments, if comments
 
 * **Pre-Moderation**
   
-  If checked, comments must be approved before they will appear on a publish site. Default is unchecked.
+  If checked, comments must be approved before they appear on a publish site. Default is unchecked.
 
 * **Delete Comments**
   
-  If checked, the visitor who posted the comment is provided the ability to delete it. Default is checked.
+  If checked, the visitor who posted the comment can delete it, if desired. Default is checked.
 
 * **Deny Comments**
   
@@ -163,6 +161,6 @@ Set as Default
 
 More information may be found on the [File Library Essentials](/help/communities/essentials-file-library.md) page for developers.
 
-For moderation of posted topics and comments, see [Moderating User Generated Content](/help/communities/moderate-ugc.md).
+For moderation of posted topics and comments, see [Moderating User-Generated Content](/help/communities/moderate-ugc.md).
 
-For tagging posted topics and comments, see [Tagging User Generated Content](/help/communities/tag-ugc.md).
+For tagging posted topics and comments, see [Tagging User-Generated Content](/help/communities/tag-ugc.md).

@@ -38,7 +38,7 @@ The **Live Copy Overview** can be opened from the **References** side panel of t
 1. In the **Sites** console, [navigate to your blueprint page and select it](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open the **[References](/help/sites-authoring/basic-handling.md#references)** panel and select **Live Copies**.
 
-   ![chlimage_1-359](assets/chlimage_1-359.png)
+   ![References panel - Live copies](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
@@ -54,7 +54,7 @@ The **Live Copy Overview** can be opened when viewing properties of a blueprint 
 1. Open **Properties** for the appropriate blueprint page.
 1. Open the **Blueprint** tab - the **Live Copy Overview** option will be shown in the top toolbar:
 
-   ![chlimage_1-360](assets/chlimage_1-360.png)
+   ![Blueprint tab - Live Copy Overview](assets/chlimage_1-360.png)
 
 1. Select **Live Copy Overview** to show and use the overview of all live copies related to the current blueprint.
 
@@ -75,7 +75,7 @@ The **Live Copy Overview** can also be used to peform actions on the live copy:
 
 When you select a blueprint page, the following actions are available:
 
-![chlimage_1-361](assets/chlimage_1-361.png)
+![Blueprint selected - available actions](assets/chlimage_1-361.png)
 
 * Edit
 
@@ -89,7 +89,7 @@ When you select a blueprint page, the following actions are available:
 
 When you select a live copy page, the following actions are available:
 
-![chlimage_1-362](assets/chlimage_1-362.png)
+![Live copy page selected - actions available](assets/chlimage_1-362.png)
 
 * Edit
 
@@ -130,10 +130,10 @@ The **Relationship Status** console has two tabs providing a range of functional
 
 This tab provides detailed information about the status of the relationship between the blueprint and live copy:
 
-![chlimage_1-363](assets/chlimage_1-363.png)
+![Relationship status information](assets/chlimage_1-363.png)
 
 ### Live Copy Information {#live-copy-information}
 
 This tab allows you to view and edit the live copy configuration:
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![Live copy information](assets/chlimage_1-364.png)

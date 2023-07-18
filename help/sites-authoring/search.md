@@ -22,7 +22,7 @@ The author environment of AEM provides various mechanisms for searching for cont
 
 Search is available from the top toolbar:
 
-![](do-not-localize/chlimage_1-17.png)
+![Search](do-not-localize/chlimage_1-17.png)
 
 With the search rail you can:
 
@@ -55,7 +55,7 @@ To search and filter your resources:
 
 1. If you want to drill down further, select the Rail symbol (top left) to open the side panel **Filters & Options**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![Filters & Options](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    According to the resource type Search will show a predefined selection of search/filter critera.
 

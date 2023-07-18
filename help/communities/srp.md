@@ -1,21 +1,17 @@
 ---
 title: Storage Resource Provider Overview
-seo-title: Storage Resource Provider Overview
 description: Common storage for Communities
-seo-description: Common storage for Communities
-uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
 ---
 # Storage Resource Provider Overview {#storage-resource-provider-overview}
 
 ## Introduction {#introduction}
 
-As of AEM Communities 6.1, community content, commonly referred to as user generated content (UGC), is stored in a single, common store provided by a [storage resource provider](working-with-srp.md) (SRP).
+As of Adobe Experience Manager (AEM) Communities 6.1, community content, commonly referred to as user-generated content (UGC), is stored in a single, common store provided by a [storage resource provider](working-with-srp.md) (SRP).
 
 There are several SRP options, all of which access UGC through a new AEM Communities interface, the [SocialResourceProvider API](srp-and-ugc.md) (SRP API), which includes all create, read, update, and delete (CRUD) operations.
 
@@ -25,7 +21,7 @@ All SCF components are implemented using the SRP API, allowing code to be develo
 
 >[!NOTE]
 >
->**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for the purpose of accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
+>**Custom Components**: For licensed customers of AEM Communities, the SRP API is available to developers of custom components for accessing UGC without regard to the underlying topology. See [SRP and UGC Essentials](srp-and-ugc.md).
 
 See also:
 
@@ -35,19 +31,19 @@ See also:
 
 ## About the Repository {#about-the-repository}
 
-To understand SRP, it is helpful to understand the role of the AEM repository (OAK) in an AEM community site.
+To understand SRP, it is helpful to understand the role of the AEM repository (Oak) in an AEM community site.
 
-**Java Content Repository (JCR)**
-This standard defines a data model and application programming interface ([JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html)) for content repositories. It combines characteristics of conventional file systems with those of relational databases, and adds a number of additional features that content applications often need.
+**Java&trade; Content Repository (JCR)**
+This standard defines a data model and application programming interface ([JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html)) for content repositories. It combines characteristics of conventional file systems with those of relational databases, and adds several additional features that content applications often need.
 
-One implementation of JCR is the AEM repository, OAK.
+One implementation of JCR is the AEM repository, Oak.
 
-**Apache Jackrabbit Oak (OAK)**
-[OAK](../../help/sites-deploying/platform.md) is an implementation of JCR 2.0 that is a data storage system specifically designed for content-centric applications. It is a type of hierarchical database designed for unstructured and semi-structured data. The repository stores not only the user-facing content but also all code, templates and internal data used by the application. The UI for accessing content is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+**Apache Jackrabbit Oak**
+[Oak](../../help/sites-deploying/platform.md) is an implementation of JCR 2.0 that is a data storage system designed for content-centric applications. It is a type of hierarchical database designed for unstructured and semi-structured data. The repository stores not only the user-facing content but also all code, templates, and internal data used by the application. The UI for accessing content is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Both JCR and OAK are typically used to refer to the AEM repository.
+Both JCR and Oak are typically used to refer to the AEM repository.
 
-After developing site content in the private author environment, it must by copied to the public publish environment. This is often done through an operation called *[replication](deploy-communities.md#replication-agents-on-author)*. This happens under control of the author/developer/administrator.
+After developing site content in the private author environment, it must be copied to the public publish environment. This is often done through an operation called *[replication](deploy-communities.md#replication-agents-on-author)*. This happens under control of the author/developer/administrator.
 
 For UGC, the content is entered by registered site visitors (community members) in the public publish environment. This happens randomly.
 
@@ -65,7 +61,7 @@ When UGC is saved to shared storage, there is a single instance of member conten
 
 ### ASRP {#asrp}
 
-In the case of ASRP, UGC is not stored in JCR, it is stored in a cloud service hosted and managed by Adobe. UGC stored in ASRP may neither be viewed with CRXDE Lite nor accessed using the JCR API.
+If there is ASRP, UGC is not stored in JCR, it is stored in a cloud service hosted and managed by Adobe. UGC stored in ASRP may not be viewed with CRXDE Lite or accessed using the JCR API.
 
 See [ASRP - Adobe Storage Resource Provider](asrp.md).
 
@@ -75,7 +71,7 @@ ASRP uses Adobe cloud for queries.
 
 ### MSRP {#msrp}
 
-In the case of MSRP, UGC is not stored in JCR, it is stored in MongoDB. UGC stored in MSRP may neither be viewed with CRXDE Lite nor accessed using the JCR API.
+If there is, MSRP, UGC is not stored in JCR, it is stored in MongoDB. UGC stored in MSRP may not be viewed with CRXDE Lite or accessed using the JCR API.
 
 See [MSRP - MongoDB Storage Resource Provider](msrp.md).
 
@@ -85,11 +81,11 @@ MSRP uses Solr for queries.
 
 ### JSRP {#jsrp}
 
-JSRP is the default provider for accessing all UGC on a single AEM instance. It provides the ability to quickly experience AEM Communities 6.1 without the need for setting up MSRP or ASRP.
+JSRP is the default provider for accessing all UGC on a single AEM instance. It lets you quickly experience AEM Communities 6.1 without the need for setting up MSRP or ASRP.
 
 See [JSRP - JCR Storage Resource Provider](jsrp.md).
 
-In the case of JSRP, while UGC is stored in JCR, and accessible via both CRXDE Lite and JCR API, it is strongly recommended that JCR API never be used to do so, else future changes may affect custom code.
+If there is JSRP, while UGC is stored in JCR, and accessible by way of both CRXDE Lite and JCR API, it is recommended that you never use JCR API to do so, or else future changes may affect custom code.
 
 Further, the repository for the author and publish environments is not shared. While a cluster of publish instances results in a shared publish repository, UGC entered on publish will not be visible on author, hence no ability to manage UGC from author. UGC is only persisted in the AEM repository (JCR) of the instance on which it was entered.
 
@@ -110,13 +106,13 @@ Some SRP implementations, such as ASRP and MSRP, store community content in data
 
 Using the SRP API, all SRP options perform the same check of the shadow location prior to all CRUD operations.
 
-The ACL check uses an utility method that returns a path suitable for checking the permissions applied to the resource's UGC.
+The ACL check uses a utility method that returns a path suitable for checking the permissions applied to the resource's UGC.
 
 See [SRP and UGC Essentials](srp-and-ugc.md) for sample code.
 
 ### For Non-Existing Resources (NERs) {#for-non-existing-resources-ners}
 
-Some Communities components are includable within a script and thus require a Sling addressable node to support Communities features. [Included components](scf.md#add-or-include-a-communities-component) are referred to as non-existing resources (NERs).
+Some Communities components are includible within a script and thus require a Sling addressable node to support Communities features. [Included components](scf.md#add-or-include-a-communities-component) are referred to as non-existing resources (NERs).
 
 Shadow nodes provide a Sling addressable location in the repository.
 
@@ -136,11 +132,11 @@ Following is an example of a shadow node, using the [Comments component](http://
 
   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-No UGC will be found under the shadow node.
+No UGC is found under the shadow node.
 
 The default behavior is to set up shadow nodes on a publish instance whenever the relevant subtree is referenced for a read or write.
 
-As an example, suppose the deployment is [MSRP](msrp.md) with a TarMK publish farm.
+As an example, suppose that the deployment is [MSRP](msrp.md) with a TarMK publish farm.
 
 When a [member](users.md) posts UGC on pub1 (stored in MongoDB), shadow nodes are created in JCR on pub1.
 

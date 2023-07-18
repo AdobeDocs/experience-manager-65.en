@@ -21,7 +21,7 @@ You can upgrade your existing LiveCycle or AEM Forms installation to obtain new 
 
 The following diagram displays the available upgrade paths for AEM Forms on OSGi:
 
-![](do-not-localize/osgi-upgrade-path.png)
+![OSGi upgrade flow](do-not-localize/osgi-upgrade-path.png)
 
 You can perform a direct upgrade from:
 
@@ -36,7 +36,7 @@ You can also perform a multi-hop upgrade from
 
 The following diagram displays the available upgrade paths for AEM Forms on JEE:
 
-![](do-not-localize/jee-upgrade-6-5.png)
+![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png)
 
 You can perform a direct upgrade from:
 

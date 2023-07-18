@@ -124,9 +124,14 @@ role: User
   + [Create form data model](using/create-form-data-models.md)
   + [Work with form data model](using/work-with-form-data-model.md)
   + [Use form data model](using/using-form-data-model.md)
++ Adaptive Forms - Core Components {#adaptive-forms-core-components}
+  + [Enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md)
+  + [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
+  + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
   + [Best practices for working with adaptive forms](using/adaptive-forms-best-practices.md)
   + [Creating an adaptive form](using/creating-adaptive-form.md)
+  + [Create or add an Adaptive Form to AEM Sites page](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
   + [Adaptive form fragments](using/adaptive-form-fragments.md)
   + [Configuring the Submit action](using/configuring-submit-actions.md)
   + [Using CAPTCHA in adaptive forms](using/captcha-adaptive-forms.md)

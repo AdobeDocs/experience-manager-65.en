@@ -12,7 +12,7 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 ---
 # Forms-centric workflow on OSGi{#forms-centric-workflow-on-osgi}
 
- ![](do-not-localize/header.png)
+ ![hero-image](do-not-localize/header.png)
 
 Enterprises collect data from hundreds and thousands of forms, various back-end systems, and online or offline data sources. They also have a dynamic set of users to take decisions on the data, which involves iterative review and approval processes.
 

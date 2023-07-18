@@ -1,9 +1,6 @@
 ---
 title: Developing with SAP Commerce Cloud
-seo-title: Developing with SAP Commerce Cloud
 description: The SAP Commerce Cloud integration framework includes an integration layer with an API
-seo-description: The SAP Commerce Cloud integration framework includes an integration layer with an API
-uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -14,7 +11,7 @@ exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 
 >[!NOTE]
 >
->The eCommerce framework can be used with any eCommerce solution. Certain specifics and examples dealt with here will refer to the [hybris](https://www.hybris.com/) solution.
+>The eCommerce framework can be used with any eCommerce solution. Certain specifics and examples dealt with here refer to the [hybris](https://www.sap.com/products/crm.html) solution.
 
 The integration framework includes an integration layer with an API. This allows you to:
 
@@ -28,17 +25,17 @@ The integration framework includes an integration layer with an API. This allows
 >
 >[API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available.
 
-A number of out-of-the-box AEM components are provided to use the integration layer. Currently these are:
+Several out-of-the-box AEM components are provided to use the integration layer. Currently these are:
 
 * a product display component
 * a shopping cart
 * check-out
 
-For search an integration hook is provided that allows you to use the AEM search, the search of the eCommerce system, a third party search or a combination thereof.
+For search, an integration hook is provided that lets you use the AEM search, the search of the eCommerce system, a third-party search, or a combination thereof.
 
 ## eCommerce Engine Selection {#ecommerce-engine-selection}
 
-The eCommerce framework can be used with any eCommerce solution, the engine being used needs to be identifiable by AEM:
+The eCommerce framework can be used with any eCommerce solution, the engine being used must be identifiable by AEM:
 
 * eCommerce Engines are OSGi services supporting the `CommerceService` interface
 
@@ -52,17 +49,17 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
 
     * If not found, the highest-ranked commerce service is used.
 
-  * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly-typed resources.
+  * A `cq:Commerce` mixin is used so the `cq:commerceProvider` can be added to strongly typed resources.
 
 * The `cq:commerceProvider` property is also used to reference the appropriate commerce factory definition.
 
-  * For example, a `cq:commerceProvider` property with the value `hybris` will correlate to the OSGi configuration for **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - where the parameter `commerceProvider` also has the value `hybris`.
+  * For example, a `cq:commerceProvider` property with the value `hybris` correlates to the OSGi configuration for **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - where the parameter `commerceProvider` also has the value `hybris`.
 
   * Here further properties, such as **Catalog version** can be configured (when appropriate and available).
 
 See the following examples below:
 
-| `cq:commerceProvider = geometrixx` | in a standard AEM installation a specific implementation is required; for example, the geometrixx example, which includes minimal extensions to the generic API |
+| `cq:commerceProvider = geometrixx` | in a standard AEM installation a specific implementation is required. For example, the Geometrixx example, which includes minimal extensions to the generic API |
 |--- |--- |
 | `cq:commerceProvider = hybris` | hybris implementation |
 
@@ -90,7 +87,7 @@ See the following examples below:
 
 >[!NOTE]
 >
->Using CRXDE Lite you can see how this is handled in the product component for the hybris implementation:
+>Using CRXDE Lite, you can see how this is handled in the product component for the hybris implementation:
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
@@ -102,7 +99,7 @@ The default settings in the code are tuned for Hybris 5.
 
 To develop for Hybris 4 the following is required:
 
-* When invoking maven add the following command line argument to the command
+* When invoking maven add the following command-line argument to the command
 
   `-P hybris4`
 
@@ -116,9 +113,9 @@ To develop for Hybris 4 the following is required:
 
 ### Session Handling {#session-handling}
 
-hybris uses a user session to store information such as the customer's shopping cart. The session id is returned from hybris in a `JSESSIONID` cookie that needs to be sent on subsequent requests to hybris. To avoid storing the session id in the repository it is encoded in another cookie that is stored in the shopper's browser. The following steps are performed:
+hybris uses a user session to store information such as the customer's shopping cart. The session id is returned from hybris in a `JSESSIONID` cookie that must be sent on subsequent requests to hybris. To avoid storing the session id in the repository, it is encoded in another cookie that is stored in the shopper's browser. The following steps are performed:
 
-* On the first request no cookie is set on the shopper's request; so a request is sent to the hybris instance to create a session.
+* On the first request, no cookie is set on the shopper's request; so a request is sent to the hybris instance to create a session.
 
 * The session cookies are extracted from the response, encoded in a new cookie (for example, `hybris-session-rest`) and set on the response to the shopper. The encoding in a new cookie is required, because the original cookie is only valid for a certain path and would otherwise not be sent back from the browser in subsequent requests. The path information must also be added to the cookie's value.
 
@@ -148,12 +145,12 @@ hybris uses a user session to store information such as the customer's shopping 
 
 ### Product Synchronization and Publishing {#product-synchronization-and-publishing}
 
-Product data that is maintained in hybris needs to be available in AEM. The following mechanism has been implemented:
+Product data that is maintained in hybris must be available in AEM. The following mechanism has been implemented:
 
 * An initial load of IDs is provided by hybris as a feed. There can be updates to this feed.
 * hybris will supply update information via a feed (which AEM polls).
-* When AEM is using product data it will send requests back to hybris for the current data (conditional get request using last modified date).
-* On hybris it is possible to specify feed contents in a declarative way.
+* When AEM is using product data, it sends requests back to hybris for the current data (conditional get request using last modified date).
+* On Hybris, it is possible to specify feed contents in a declarative way.
 * Mapping the feed structure to the AEM content model happens in the feed adapter on the AEM side.
 
 ![chlimage_1-12](/help/sites-developing/assets/chlimage_1-12a.png)
@@ -161,7 +158,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 * The importer (b) is used for the initial setup of the page tree structure in AEM for catalogs.
 * Catalog changes in hybris are indicated to AEM via a feed, these then propagate to AEM (b)
 
-  * Product added/deleted/changed with respect to catalog version.
+  * Product added/deleted/changed regarding catalog version.
 
   * Product approved.
 
@@ -180,7 +177,7 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 
 * The catalog configuration in AEM recognizes **Staged** and **Online** catalog versions.
 
-* Syncing products between catalog versions will require a (de-)activation of the corresponding AEM page (a, c)
+* Syncing products between catalog versions require an activation or deactivation of the corresponding AEM page (a, c)
 
   * Adding a product to an **Online** catalog version requires activation of the product's page.
 
@@ -190,9 +187,9 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 
   * The product is in an **Online** catalog version for product pages.
 
-  * The referenced products are available in an **Online** catalog version for other pages (e.g. campaign pages).
+  * The referenced products are available in an **Online** catalog version for other pages (for example, campaign pages).
 
-* Activated product pages need to access the product data's **Online** version (d).
+* Activated product pages must access the product data's **Online** version (d).
 
 * The AEM publish instance requires access to hybris for the retrieval of product and personalized data (d).
 
@@ -200,19 +197,19 @@ Product data that is maintained in hybris needs to be available in AEM. The foll
 
 #### Architecture of Product and Variants {#architecture-of-product-and-variants}
 
-A single product can have multiple variations; for instance, it might vary by color and/or size. A product must define which properties drive variation; we term these *variant axes*.
+A single product can have multiple variations; for instance, it might vary by color and/or size. A product must define which properties drive variation; Adobe terms these *variant axes*.
 
-However, not all properties are variant axes. Variations can also affect other properties; for example, the price might be dependant on size. These properties cannot be selected by the shopper and therefore are not considered variant axes.
+However, not all properties are variant axes. Variations can also affect other properties; for example, the price might depend on size. These properties cannot be selected by the shopper and therefore are not considered variant axes.
 
 Each product and/or variant is represented by a resource, and therefore maps 1:1 to a repository node. It is a corollary that a specific product and/or variant can be uniquely identified by its path.
 
-The product/variant resource does not always hold the actual product dataIt might be a representation of data actually held on another system (such as hybris). For example, product descriptions, pricing, etc, are not stored in AEM, but retrieved in real-time from the eCommerce engine.
+The product/variant resource does not always hold the actual product data. It might be a representation of data held on another system (such as hybris). For example, product descriptions, pricing, and so on, are not stored in AEM, but retrieved in real time from the eCommerce engine.
 
-Any product resource can be represented by a `Product API`. Most calls in the product API are variation specific (although variations might inherit shared values from an ancestor), but there are also calls which list the set of variations ( `getVariantAxes()`, `getVariants()`, etc.).
+Any product resource can be represented by a `Product API`. Most calls in the product API are variation-specific (although variations might inherit shared values from an ancestor), but there are also calls which list the set of variations ( `getVariantAxes()`, `getVariants()`, and so on).
 
 >[!NOTE]
 >
->In effect a variant axes is determined by whatever `Product.getVariantAxes()` returns:
+>In effect, a variant axes is determined by whatever `Product.getVariantAxes()` returns:
 >* hybris defines it for the hybris implementation
 >
 >While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
@@ -225,11 +222,7 @@ Any product resource can be represented by a `Product API`. Most calls in the pr
 
 #### Product References and Product Data {#product-references-and-product-data}
 
-In general:
-
-* product data is located under `/etc`
-
-* and product references under `/content`.
+In general, product data is located under `/etc`, and product references under `/content`.
 
 There must be a 1:1 map between product variations and product data nodes.
 
@@ -417,7 +410,7 @@ public class AxisFilter implements VariantFilter {
         * Different currencies.
         * VAT-liable and VAT-free.
 
-    * The modifiers are completely open-ended with the following interface:
+    * The modifiers are open-ended with the following interface:
 
         * `int CommerceSession.getQuantityBreakpoints(Product product)`
         * `String CommerceSession.getProductPrice(Product product)`
@@ -431,7 +424,7 @@ public class AxisFilter implements VariantFilter {
 
 **Personalization**
 
-* Personalization should always be driven through the [ClientContext](/help/sites-administering/client-context.md).
+* Always drive personalization through the [ClientContext](/help/sites-administering/client-context.md).
 * A ClientContext `/version/` of the cart is created in all cases:
 
     * Products should be added by using the `CommerceSession.addCartEntry()` method.
@@ -485,7 +478,7 @@ The `CommerceSession` owns the three elements:
 
 **Shipping Calculations**
 
-* Order forms often need to present multiple shipping options (and prices).
+* Order forms often must present multiple shipping options (and prices).
 * The prices might be based on items and details of the order, such as weight and/or delivery address.
 * The `CommerceSession` has access to all the dependencies, so it can be treated in a similar manner as product pricing:
 
@@ -539,17 +532,17 @@ There are several generic / helper classes provided by the core project:
 
 1. `CommerceQuery`
 
-   Is used to describe a search query (contains information about the query text, current page, page size, sort and selected facets). All eCommerce services that implement the search API will receive instances of this class in order to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
+   Is used to describe a search query (contains information about the query text, current page, page size, sort, and selected facets). All eCommerce services that implement the search API receives instances of this class to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you need to display a hyperlink for each value of each facet, such that when the user clicks on the hyperlink the respective value is toggled (i.e. if it was selected it is removed from the query, otherwise added). This takes care of all the logic of handling multiple/single-valued facets, overriding values, etc.
+   Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you need to display a hyperlink for each value of each facet, such that when the user clicks the hyperlink the respective value is toggled (that is, if it was selected it is removed from the query, otherwise added). This takes care of all the logic of handling multiple/single-valued facets, overriding values, and so on.
 
 The entry point for the search API is the `CommerceService#search` method which returns a `CommerceResult` object. See the [API Documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) for more information on this topic.
 
 ### User Integration {#user-integration}
 
-Integration is provided between AEM and various eCommerce systems. This requires a strategy for synchronizing shoppers between the various systems so that AEM-specific code only has to know about AEM and vice-versa:
+Integration is provided between AEM and various eCommerce systems. This requires a strategy for synchronizing shoppers between the various systems so that AEM-specific code only has to know about AEM and vice versa:
 
 * Authentication
 
@@ -557,15 +550,15 @@ Integration is provided between AEM and various eCommerce systems. This requires
 
 * Accounts in Hybris
 
-  AEM creates a corresponding (subordinate) account in hybris for each shopper. The username of this account is the same as the AEM username. A cryptographically-random password is auto-generated and stored (encrypted) in AEM.
+  AEM creates a corresponding (subordinate) account in hybris for each shopper. The username of this account is the same as the AEM username. A cryptographically random password is auto-generated and stored (encrypted) in AEM.
 
 #### Pre-existing Users {#pre-existing-users}
 
-A AEM front-end can be positioned in front of an existing hybris implementation. Also a hybris engine can be added to an existing AEM installation. To do this, the systems must be able to gracefully handle existing users in either system:
+A AEM front end can be positioned in front of an existing hybris implementation. Also a hybris engine can be added to an existing AEM installation. To do this, the systems must be able to gracefully handle existing users in either system:
 
 * AEM -&gt; hybris
 
-    * When logging in to hybris, if the AEM user does not already exist:
+    * When logging in to hybris, if the AEM user does not exist:
 
         * create a new hybris user with a cryptographically random password
         * store the hybris username in the user directory of the AEM user
@@ -651,7 +644,7 @@ public interface ImportHandler {
 }
 ```
 
-For your custom handler to be recognized by the importer, it must specify the `service.ranking`property with a value higher than 0; for example.
+For your custom handler to be recognized by the importer, it must specify the `service.ranking`property with a value higher than 0, for example.
 
 ```java
 @Component

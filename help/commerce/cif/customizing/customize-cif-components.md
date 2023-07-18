@@ -1,6 +1,6 @@
 ---
 title: Customize CIF Core Components
-description: Learn how to customize AEM CIF Core Components. The tutorial covers how to safely extend a CIF Core Component to meet business specific requirements. Learn how to extend a GraphQL query to return a custom attribute and display the new attribute in a CIF Core Component.
+description: Learn how to customize Adobe Experience Manager CIF Core Components. The tutorial covers how to safely extend a CIF Core Component to meet business-specific requirements. Learn how to extend a GraphQL query to return a custom attribute and display the new attribute in a CIF Core Component.
 sub-product: Commerce
 topics: Development
 version: Cloud Service
@@ -12,9 +12,9 @@ kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 ---
-# Customize AEM CIF Core Components {#customize-cif-components}
+# Customize Adobe Experience Manager CIF Core Components {#customize-cif-components}
 
-The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial you will further extend the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to display a custom attribute from Adobe Commerce. You will also learn more about the GraphQL integration between AEM and Adobe Commerce and the extension hooks provided by the CIF Core Components.
+The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a reference code base for using [CIF Core Components](https://github.com/adobe/aem-core-cif-components). In this tutorial, you further extend the [Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) component to display a custom attribute from Adobe Commerce. You will also learn more about the GraphQL integration between Adobe Experience Manager (AEM) and Adobe Commerce and the extension hooks provided by the CIF Core Components.
 
 >[!TIP]
 >
@@ -30,11 +30,11 @@ The Venia brand recently started manufacturing some products using sustainable m
 
 A local development environment is required to complete this tutorial. This includes a running instance of AEM that is configured and connected to an Adobe Commerce instance. Review the requirements and steps for [setting up a local development with AEM](../develop.md). To follow the tutorial completely, you need permissions to add [Attributes to a Product](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) in Adobe Commerce.
 
-You will also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it has the ability to set request headers. On Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is one extension that can do the job.
+You also need GraphQL IDE such as [GraphiQL](https://github.com/graphql/graphiql) or a browser extension to run the code samples and tutorials. If you install a browser extension, make sure it is able to set request headers. On Google Chrome, [Altair GraphQL Client](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) is one extension that can do the job.
 
 ## Clone the Venia Project {#clone-venia-project}
 
-We will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia) and then override the default styles.
+You will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia) and then override the default styles.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ The products and product data displayed in AEM are stored in Adobe Commerce. Nex
 >
 >Already have a custom **Yes/No** attribute as part of your product attribute set? Feel free to use it and skip this section.
 
-1. Login to your Adobe Commerce instance.
+1. Log in to your Adobe Commerce instance.
 1. Navigate to **Catalog** > **Products**.
 1. Update the search filter to find the **Configurable Product** used when added to the Teaser component in the previous exercise. Open the product in edit mode.
 
@@ -120,7 +120,7 @@ The products and product data displayed in AEM are stored in Adobe Commerce. Nex
    >
    >More details about managing [Product Attributes can be found in the Adobe Commerce user guide](https://docs.magento.com/user-guide/catalog/attribute-best-practices.html).
 
-1. Navigate to **System** > **Tools** > **Cache Management**. Because an update was made to the data schema, we must invalidate some of the Cache Types in Adobe Commerce.
+1. Navigate to **System** > **Tools** > **Cache Management**. Because an update was made to the data schema, you must invalidate some of the Cache Types in Adobe Commerce.
 1. Check the box next to **Configuration** and submit the cache type for **Refresh**
 
    ![Refresh Configuration Cache Type](../assets/customize-cif-components/refresh-configuration-cache-type.png)
@@ -172,7 +172,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    ![Sample GraphQL response](../assets/customize-cif-components/sample-graphql-query.png)
 
-   The value of **Yes** is an integer of **1**. This information is useful when we write the GraphQL query in Java&trade;.
+The value of **Yes** is an integer of **1**. This will be useful when you write the GraphQL query in Java&trade;.
 
    >[!TIP]
    >
@@ -180,7 +180,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
 ## Update the Sling Model for the Product Teaser {#updating-sling-model-product-teaser}
 
-Next, we will extend the business logic of the Product Teaser by implementing a Sling Model. [Sling Models](https://sling.apache.org/documentation/bundles/models.html), are annotation driven "POJOs" (Plain Old Java&trade; Objects) that implement any of the business logic needed by the component. Sling Models are used in conjunction with the HTL scripts as part of the component. We will follow the [delegation pattern for Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) so that we can just extend parts of the existing Product Teaser model.
+Next, you will extend the business logic of the Product Teaser by implementing a Sling Model. [Sling Models](https://sling.apache.org/documentation/bundles/models.html), are annotation driven "POJOs" (Plain Old Java&trade; Objects) that implement any of the business logic that is needed by the component. Sling Models are used with the HTL scripts as part of the component. You will follow the [delegation pattern for Sling Models](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) so that you can extend parts of the existing Product Teaser model.
 
 Sling Models are implemented as Java&trade; and can be found in the **core** module of the generated project.
 
@@ -207,7 +207,7 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
    }
    ```
 
-   This method is new that we want introduce to encapsulate the logic to indicate if the product has the `eco_friendly` attribute set to **Yes** or **No**.
+This is a new method to encapsulate the logic to indicate if the product has the `eco_friendly` attribute set to **Yes** or **No**.
 
 1. Next, inspect the `MyProductTeaserImpl.java` at `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 
@@ -219,7 +219,7 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
    private ProductTeaser productTeaser;
    ```
 
-   For all of the methods that we don't want to override or change, we can simply return the value that the `ProductTeaser` returns. For example:
+   For all of the methods that are not overridden or changed, you can return the value that the `ProductTeaser` returns. For example:
 
    ```java
    @Override
@@ -227,7 +227,7 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
        return productTeaser.getImage();
    }
    ```
-
+   
    This minimizes the amount of Java&trade; code that an implementation must write.
 
 1. One of the extra extension points provided by AEM CIF Core Components is the `AbstractProductRetriever` which provides access to specific product attributes. Inspect the `initModel()` method:
@@ -278,13 +278,13 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
    }
    ```
 
-   Adding to the `extendProductQueryWith` method is a powerful way to ensure additional product attributes are available to the rest of the model. It also minimizes the number of queries executed.
+   Adding to the `extendProductQueryWith` method is a powerful way to ensure that additional product attributes are available to the rest of the model. It also minimizes the number of queries executed.
 
    In the above code, the`addCustomSimpleField` is used to retrieve the `eco_friendly` attribute. This illustrates how you can query for any custom attributes that are part of the Adobe Commerce schema.
 
    >[!NOTE]
    >
-   >The `createdAt()` method has actually been implemented as part of the [Product Interface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). Most of the commonly found schema attributes have been implemented, so only use the `addCustomSimpleField` for truly custom attributes.
+   >The `createdAt()` method has been implemented as part of the [Product Interface](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). Most of the commonly found schema attributes have been implemented, so only use the `addCustomSimpleField` for truly custom attributes.
 
 1. Add a logger to help debug the Java&trade; code:
 
@@ -319,15 +319,15 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
    }
    ```
 
-   In the above method, the `productRetriever` is used to fetch the product and the `getAsInteger()` method is used to get the value of the `eco_friendly` attribute. Based on the GraphQL queries we ran earlier we know that the expected value when the `eco_friendly` attribute is set to "**Yes**" is actually an integer of **1**.
+   In the above method, the `productRetriever` is used to fetch the product and the `getAsInteger()` method is used to get the value of the `eco_friendly` attribute. Based on the GraphQL queries you ran earlier, you know that the expected value when the `eco_friendly` attribute is set to "**Yes**" is actually an integer of **1**.
 
    Now that the Sling Model has been updated, the Component markup needs to be updated to actually display an indicator of **Eco Friendly** based on the Sling Model.
 
 ## Customizing the Markup of the Product Teaser {#customize-markup-product-teaser}
 
-A common extension of AEM components is to modify the markup generated by the component. This is done by overriding the [HTL script](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) that the component uses to render its markup. HTML Template Language (HTL), is a lightweight templating language that AEM components use to dynamically render markup based on authored content, allowing the components to be re-used. The Product Teaser, for example, can be re-used over and over again to display different products.
+A common extension of AEM components is to modify the markup generated by the component. This is done by overriding the [HTL script](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) that the component uses to render its markup. HTML Template Language (HTL), is a lightweight templating language that AEM components use to dynamically render markup based on authored content, allowing the components to be reused. The Product Teaser, for example, can be reused over and over again to display different products.
 
-In our case we want to render a banner on top of the teaser to indicate that the product is "Eco Friendly" based on a custom attribute. The design pattern for [customizing the markup](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) of a component is actually standard for all AEM Components, not just for the AEM CIF Core Components.
+In this case, you want to render a banner on top of the teaser to indicate that the product is "Eco Friendly" based on a custom attribute. The design pattern for [customizing the markup](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) of a component is actually standard for all AEM Components, not just for the AEM CIF Core Components.
 
 >[!NOTE]
 >
@@ -347,7 +347,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
        componentGroup="Venia - Commerce"/>
    ```
 
-   Above is the Component definition for the Product Teaser Component in our project. Notice the property `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. This is an example of creating a [Proxy component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Instead of copying and pasting all of the Product Teaser HTL scripts from the AEM CIF Core Components, we can use the `sling:resourceSuperType` to inherit all of the functionality.
+   The Component definition for the Product Teaser Component in this project is above. Notice the property `sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`. This is an example of creating a [Proxy component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components). Instead of copying and pasting all of the Product Teaser HTL scripts from the AEM CIF Core Components, you can use the `sling:resourceSuperType` to inherit all of the functionality.
 
 1. Open the file `productteaser.html`. This is a copy of the `productteaser.html` file from the [CIF Product Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)
 
@@ -389,7 +389,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
    More information about `data-sly-test` and other [HTL block statements can be found here](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html).
 
-1. Save the changes and deploy the updates to AEM using your Maven skills, from a command line terminal:
+1. Save the changes and deploy the updates to AEM using your Maven skills, from a command-line terminal:
 
    ```shell
    $ cd aem-cif-guides-venia/
@@ -412,9 +412,9 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
    If the product has the `eco_friendly` attribute set to **Yes**, you should see the text "Eco Friendly" on the page. Try switching to different products to see the behavior change.
 
-1. Next open up the AEM `error.log` to see the log statements we added. The `error.log` is located at `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
+1. Next, open up the AEM `error.log` to see the log statements that were added. The `error.log` is at `<AEM SDK Install Location>/crx-quickstart/logs/error.log`.
 
-   Search the AEM logs to see the log statements added in the Sling Model:
+   Search the AEM logs to see the log statements that were added in the Sling Model:
 
    ```plain
    2020-08-28 12:57:03.114 INFO [com.venia.core.models.commerce.MyProductTeaserImpl] *** Product is Eco Friendly**
@@ -431,7 +431,7 @@ In our case we want to render a banner on top of the teaser to indicate that the
 
 At this point the logic for when to display the **Eco Friendly** badge is working, however the plain text could use some styles. Next add an icon and styles to the `ui.frontend` module to complete the implementation.
 
-1. Download the [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) file. This will be used as the **Eco Friendly** badge.
+1. Download the [eco_friendly.svg](../assets/customize-cif-components/eco_friendly.svg) file. This is used as the **Eco Friendly** badge.
 1. Return to the IDE and navigate to the `ui.frontend` folder.
 1. Add the `eco_friendly.svg` file to the `ui.frontend/src/main/resources/images` folder:
 
@@ -468,7 +468,7 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
    >
    >Check out [Styling CIF Core Components](./style-cif-component.md) for more details around front-end workflows.
 
-1. Save the changes and deploy the updates to AEM using your Maven skills, from a command line terminal:
+1. Save the changes and deploy the updates to AEM using your Maven skills, from a command-line terminal:
 
    ```shell
    $ cd aem-cif-guides-venia/
