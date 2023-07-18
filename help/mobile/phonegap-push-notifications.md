@@ -1,12 +1,10 @@
 ---
 title: Push Notifications
 description: Follow this page to learn about how to use push notifications in an Adobe Experience Manager Mobile app.
-uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 ---
 # Push Notifications{#push-notifications}

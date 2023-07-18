@@ -14,7 +14,7 @@ Because Adobe Experience Manager (AEM) is based on Sling and uses a JCR reposito
 * [JCR Node Types](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-In addition to these. AEM provides a range of custom node types.
+In addition to these node types, AEM provides a range of custom node types.
 
 ## Audit {#audit}
 
@@ -139,7 +139,7 @@ Defines the default CQ page.
 
 **Description**
 
-Defines a mixin type that marks nodes as pseudo pages. This means they can be adapted for Page and WCM editing support.
+Defines a mixin type that marks nodes as pseudo pages. In other words, it means that they can be adapted for Page and WCM editing support.
 
 **Definition**
 
@@ -226,7 +226,7 @@ Defines a CQ component.
 * `@prop dialogPath` -  Primary dialog path (alternative to dialog).
 * `@node design_dialog` - Design dialog.
 * `@prop cq:cellName` - Name of the design cell.
-* `@prop cq:isContainer` - Indicates whether this is a container component. This forces the cell names of child components to be used instead of path names. For example, the `parsys` is a container component. If this value is not defined, the check is made based on the existence of a `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indicates whether it is a container component. Forces the cell names of child components to be used instead of path names. For example, the `parsys` is a container component. If this value is not defined, the check is made based on the existence of a `cq:childEditConfig`.
 * `@prop cq:noDecoration` - If true, no decoration `div` tags are drawn when including this component.
 * `@node cq:editConfig` - The configuration that defines the parameters for the edit bar.
 * `@node cq:childEditConfig` - The edit configuration that is inherited by child components.
@@ -326,7 +326,7 @@ Configures one drop target of a component. The name of this node is used as an I
 
 **Description**
 
-Defines a virtual CQ component. These are currently used only for the new component drag and drop wizard.
+Defines a virtual CQ component. Currently used only for the new component drag and drop wizard.
 
 * `@prop jcr:title` - Title of this component.
 * `@prop jcr:description` - Description of this component.
@@ -479,9 +479,9 @@ The items in a `cq:Cq4ContentPage` are:
 
 Poll configuration.
 
-* `@prop source (String) mandatory` - Data source URI, this is required and must not be empty
-* `@prop target (String)` - The target location where data retrieved from the data source is stored. This is optional and defaults to the cq:PollConfig node.
-* `@prop interval (Long)` - The interval in seconds at which to poll for new or updated data from the data source. This is optional and defaults to 30 Minutes (1800 seconds).
+* `@prop source (String) mandatory` - Data source URI. Required and must not be empty.
+* `@prop target (String)` - The target location where data retrieved from the data source is stored. Optional and defaults to the cq:PollConfig node.
+* `@prop interval (Long)` - The interval in seconds at which to poll for new or updated data from the data source. Optional and defaults to 30 Minutes (1800 seconds).
 * [Creating Custom Data Importer Services for Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definition**
