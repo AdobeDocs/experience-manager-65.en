@@ -1,14 +1,11 @@
 ---
 title: Client Context in Detail
-description: The Client Context represents a dynamically assembled collection of user data
-uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
+description: The Client Context represents a dynamically assembled collection of user data.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
-
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 ---
@@ -16,7 +13,7 @@ exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 
 >[!NOTE]
 >
->Client Context has been superseded by ContextHub. Please see the [related documentation](/help/sites-developing/contexthub.md) for details.
+>Client Context has been superseded by ContextHub. See the [related documentation](/help/sites-developing/contexthub.md) for details.
 
 The Client Context represents a dynamically assembled collection of user data. You can use the data to determine the content to show on a web page in a given situation (content targeting). The data is also available for web site analytics, and to any JavaScript on the page.
 
@@ -26,7 +23,7 @@ Client Context consists mainly of the following aspects:
 * The UI that displays the user data and provides tools for simulating the user experience.
 * A [JavaScript API](/help/sites-developing/ccjsapi.md) for interacting with session stores.
 
-To create a standalone session store and add it to Client Context, or create a session store that is tied to a Context Store component. AEM installs several Context Store components that you can use right away. You can use these components as a basis for your components.
+To create a standalone session store and add it to Client Context, or create a session store that is tied to a Context Store component. Adobe Experience Manager (AEM) installs several Context Store components that you can use right away. You can use these components as a basis for your components.
 
 For information about opening Client Context, configuring the information that it displays, and simulating the user experience, see [Client Context](/help/sites-administering/client-context.md).
 
@@ -41,7 +38,7 @@ The Client Context framework provides a [JavaScript API](/help/sites-developing/
 
 Session store data remains on the client. The Client Context does not write data back to the server. To send data to the server, use a form or develop custom JavaScript.
 
-Each session store is a collection of property-value pairs. The session store represents a collection of data (of any kind), the conceptual meaning of which can be decided by the designer and/or developer. The following example JavaScript code defines an object that represents the profile data that session store might contain:
+Each session store is a collection of property-value pairs. The session store represents a collection of data (of any kind), the conceptual meaning of which can be decided by the designer, or developer, or both. The following example JavaScript code defines an object that represents the profile data that session store might contain:
 
 ```
 {
@@ -61,7 +58,7 @@ A session store can be persisted across browser sessions, or can last only for t
 >
 >Store persistence uses either browser storage or cookies (the `SessionPersistence` cookie). Browser storage is more common.
 >
->When the browser is closed and reopened, a session store can be loaded with the values from a persisted store. Clearing the browser cache is then needed to remove the old values.
+>When the browser is closed and reopened, a session store can be loaded with the values from a persisted store. Clearing the browser cache is necessary to remove the old values.
 
 ### Context Store Components {#context-store-components}
 
@@ -97,7 +94,7 @@ Include the Client Context component to the body section of your web pages to en
 The clientcontext component causes the page to load the client libraries that implement Client Context.
 
 * The Client Context JavaScript API.
-* The Client Context framework that supports session stores, event management, etc.
+* The Client Context framework that supports session stores, event management, and so on.
 * Segments that are defined.
 * The init.js scripts that are generated for each context store component that has been added to Client Context.
 * (Author instance only) The Client Context UI.
@@ -113,11 +110,11 @@ To extend Client Context, create a session store and optionally display the stor
 
 >[!NOTE]
 >
->If you have (or create) a `JSONP` service that can provide the data, you can simply use the `JSONP` context store component and map it to the JSONP service. This will handle the session store.
+>If you have (or create) a `JSONP` service that can provide the data, you can simply use the `JSONP` context store component and map it to the JSONP service. This handles the session store.
 
 ### Creating a Session Store {#creating-a-session-store}
 
-Create a session store for the data that you need to add to and retrieve from Client Context. Generally, you use the following procedure to create a session store:
+Create a session store for the data that you must add to and retrieve from Client Context. Generally, you use the following procedure to create a session store:
 
 1. Create a client library folder that has a `categories` property value of `personalization.stores.kernel`. Client Context automatically loads the client libraries of this category.
 
@@ -146,7 +143,7 @@ The API also provides extensions of these classes that are specialized for stori
 
 #### Creating the Session Store Object {#creating-the-session-store-object}
 
-The JavaScript of your client library folder creates and initializes the session store. The session store must then be registered using Context Store Manager. The following example creates and registers a [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) object.
+The JavaScript of your client library folder creates and initializes the session store. The session store must be registered using Context Store Manager. The following example creates and registers a [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore) object.
 
 ```
 //Create the session store
@@ -185,9 +182,9 @@ AEM provides the genericstore and the genericstoreproperties context store compo
 
 * Property-value pairs: Extend the `GenericStoreProperties` component. This component automatically renders stores of property-value pairs. Several interaction points are supplied:
 
-    * `prolog.jsp` and `epilog.jsp`: component interaction that allows you to add server side logic before or after the component rendering.
+    * `prolog.jsp` and `epilog.jsp`: component interaction that lets you add server-side logic before or after the component rendering.
 
-* Complex data: Extend the `GenericStore` component. Your session store will then need a "renderer" method that will be called every time the component needs to be rendered. The renderer function is called with two parameters:
+* Complex data: Extend the `GenericStore` component. Your session store needs a "renderer" method that is called every time the component must be rendered. The renderer function is called with two parameters:
 
     * `@param {String} store`
       The store to render
@@ -295,7 +292,7 @@ The `/libs/cq/personalization/components/contextstores/profiledata` context stor
 
 ### Rendering Session Store Data for genericstore Components {#rendering-session-store-data-for-genericstore-components}
 
-To render store data using a genericstore component, you need to:
+To render store data using a genericstore component, you must do the following:
 
 * Add the personalization:storeRendererTag tag to the component JSP script to identify the name of the session store.
 * Implement a renderer method on the session store class.
@@ -316,7 +313,7 @@ The tag has the following format:
 
 #### Implementing the Session Store renderer Method {#implementing-the-session-store-renderer-method}
 
-Your session store will then need a "renderer" method that will be called every time the component needs to be rendered. The renderer function is called with two parameters:
+Your session store needs a "renderer" method that is called every time the component must be rendered. The renderer function is called with two parameters:
 
 * @param {String} store
   The store to render
@@ -380,7 +377,7 @@ Use the [CQ_Analytics.ClientContextUtils](/help/sites-developing/ccjsapi.md#cq-a
 
 >[!CAUTION]
 >
->If you depend on another store, you need to cater for the case of when the store is never registered.
+>If you depend on another store, you must cater for the case of when the store is never registered.
 
 The following example uses the `onStoreRegistered` event of the `profile` session store. When the store is registered, a listener is added to the `update` event of the session store. When the store is updated, the content of the `<div class="welcome">` element on the page is updated with the name from the `profile` store.
 
@@ -412,7 +409,7 @@ function getName(){
 
 ### Excluding a Property from the sessionpersistence Cookie {#excluding-a-property-from-the-sessionpersistence-cookie}
 
-To prevent a property of a `PersistedSessionStore` from being persisted (i.e. exclude it from the `sessionpersistence` cookie), add the property to the non-persisted property list of the persisted session store.
+To prevent a property of a `PersistedSessionStore` from being persisted (that is, exclude it from the `sessionpersistence` cookie), add the property to the non-persisted property list of the persisted session store.
 
 See ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
@@ -438,7 +435,7 @@ When switching from the desktop page to its mobile equivalent:
 * The DOM of the mobile page is loaded.
 * The main `div` (required) that contains the content, is extracted and injected into the current desktop page.
 
-* The CSS and body classes that need to be loaded need to be manually configured.
+* The CSS and body classes that get loaded must be manually configured.
 
 For example:
 
@@ -500,7 +497,7 @@ Create a CQ application and add the geoloc component.
 
 ### Create the geoloc Edit Dialog {#create-the-geoloc-edit-dialog}
 
-The context store component requires an edit dialog. The geoloc edit dialog will contain a static message that indicates that there are no properties to configure.
+The context store component requires an edit dialog. The geoloc edit dialog contains a static message that indicates that there are no properties to configure.
 
 1. Right-click the `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` node and click Copy.
 1. Right-click the `/apps/myapp/contextstores/geoloc` node and click paste.
@@ -607,17 +604,17 @@ Open the Geometrixx Outdoors home page in edit mode and then open Client Context
 
 ## Creating a Customized Client Context {#creating-a-customized-client-context}
 
-To create a second client context you need to duplicate the branch:
+To create a second client context, duplicate the branch:
 
 `/etc/clientcontext/default`
 
 * The subfolder:
   `/content`
-  will contain the content of the customized client context.
+  contains the content of the customized client context.
 
 * The folder:
   `/contextstores`
-  allows you to define different configurations for the context stores.
+  lets you define different configurations for the context stores.
 
 To use your customized client context, edit the property
 `path`

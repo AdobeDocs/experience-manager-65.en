@@ -1,31 +1,27 @@
 ---
 title: Developing the Bulk Editor
-seo-title: Developing the Bulk Editor
 description: Tagging allows content to be categorized and organized
-seo-description: Tagging allows content to be categorized and organized
-uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 ---
 # Developing the Bulk Editor{#developing-the-bulk-editor}
 
-This section describes how to develop the bulk editor tool and how to extend the Product List component, which is based on the bulk editor.
+This section describes how to develop the Bulk Editor tool and how to extend the Product List component, which is based on the Bulk Editor.
 
 ## Bulk Editor Query Parameters {#bulk-editor-query-parameters}
 
-When working with the bulk editor, there are several query parameters that you can add to the URL to call the bulk editor with a specific configuration. If you want the bulk editor to always be used with a certain configuration, for example, as in the Product List component, then you need to modify bulkeditor.jsp (located in /libs/wcm/core/components/bulkeditor) or create a component with the specific configuration. Changes made using query parameters are not permanent.
+When working with the Bulk Editor, there are several query parameters that you can add to the URL to call the Bulk Editor with a specific configuration. If you want the Bulk Editor to always be used with a certain configuration, for example, as in the Product List component, then you must edit `bulkeditor.jsp` (in /libs/wcm/core/components/bulkeditor) or create a component with the specific configuration. Changes made using query parameters are not permanent.
 
-For example if you type the following in your browser's URL:
+For example, if you type the following in your browser's URL:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-the bulk editor displays without the **Root Path** field as hrp=true hides the field. With the parameter hrp=false, the field is displayed (the default value).
+The Bulk Editor displays without the **Root Path** field as hrp=true hides the field. With the parameter hrp=false, the field is displayed (the default value).
 
-The following is a list of the bulk editor query parameters:
+The following is a list of the Bulk Editor query parameters:
 
 >[!NOTE]
 >
@@ -158,16 +154,16 @@ The following is a list of the bulk editor query parameters:
 
 ### Developing a Bulk Editor based Component: the Product List Component {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-This section provides an overview of how to use the bulk editor and gives a description of the existing Geometrixx component based on the bulk editor: the Product List component.
+This section provides an overview of how to use the Bulk Editor and gives a description of the existing Geometrixx component based on the Bulk Editor: the Product List component.
 
-The Product List component lets users display and edit a table of data. For example, you can use the Product List component to represent products in a catalog. The information is presented in a standard HTML table and any editing is performed in the **Edit** dialog, which contains a BulkEditor widget. (This Bulk Editor is exactly the same as the one accessible at /etc/importers/bulkeditor.html or through the Tools menu). The Product List component has been configured for specific, limited bulk editor functionality. Every part of the bulk editor (or components derived from the bulk editor) can be configured.
+The Product List component lets users display and edit a table of data. For example, you can use the Product List component to represent products in a catalog. The information is presented in a standard HTML table and any editing is performed in the **Edit** dialog box, which contains a BulkEditor widget. (This Bulk Editor is the same as the one accessible at /etc/importers/bulkeditor.html or through the Tools menu). The Product List component has been configured for specific, limited Bulk Editor functionality. Every part of the Bulk Editor (or components derived from the Bulk Editor) can be configured.
 
-With the bulk editor, you can add, modify, delete, filter, and export the rows, save modifications, and import a set of rows. Every row is stored as a node under the Product List component instance itself. Every cell is a property of each node. This is a design choice and it can easily be changed, for example, you could store nodes somewhere else in the repository. The query servlet's role is to return the list of the nodes to display; the search path is defined as a Product List instance.
+With the Bulk Editor, you can add, modify, delete, filter, and export the rows, save modifications, and import a set of rows. Every row is stored as a node under the Product List component instance itself. Every cell is a property of each node. This is a design choice and it can easily be changed, for example, you could store nodes somewhere else in the repository. The query servlet's role is to return the list of the nodes to display; the search path is defined as a Product List instance.
 
-The source code of the Product List component is available in the repository at /apps/geometrixx/components/productlist and is composed of several parts like all AEM components:
+The source code of the Product List component is available in the repository at /apps/geometrixx/components/productlist and is composed of several parts like all Adobe Experience Manager (AEM) components:
 
 * HTML rendering: the rendering is done in a JSP file (/apps/geometrixx/components/productlist/productlist.jsp). The JSP reads the subnodes of the current Product List component and displays each of them as a row of an HTML table.
-* Edit dialog, which is where you define the Bulk Editor configuration. Configure the dialog to match the needs of the component: columns available and possible actions performed on the grid or on the search. See [bulk editor configuration properties](#bulk-editor-configuration-properties) for information on all of the configuration properties.
+* Edit dialog, which is where you define the Bulk Editor configuration. Configure the dialog to match the needs of the component: columns available and possible actions performed on the grid or on the search. See [Bulk Editor configuration properties](#bulk-editor-configuration-properties) for information on all of the configuration properties.
 
 Here is an XML representation of the dialog sub nodes:
 
@@ -262,7 +258,7 @@ Here is an XML representation of the dialog sub nodes:
 
 ### Bulk Editor Configuration Properties {#bulk-editor-configuration-properties}
 
-Every part of the bulk editor can be configured. The following table lists all the configuration properties for the bulk editor.
+Every part of the Bulk Editor can be configured. The following table lists all the configuration properties for the Bulk Editor.
 
 <table>
  <tbody>
@@ -288,7 +284,7 @@ Every part of the bulk editor can be configured. The following table lists all t
   </tr>
   <tr>
    <td>extraCols</td>
-   <td>Extra searched properties (displayed in a textfield comma separated)</td>
+   <td>Extra searched properties (displayed in a textfield comma-separated)</td>
   </tr>
   <tr>
    <td>initialSearch</td>
@@ -451,7 +447,7 @@ You can configure for each column:
 
 CSS and read-only columns
 
-The bulk editor has three column configurations:
+The Bulk Editor has three column configurations:
 
 * Cell CSS class name (cellCls): a CSS class name that is added to each cell of the configured column.
 * Cell style (cellStyle): an HTML style that is added to each cell of the configured column.
@@ -509,26 +505,26 @@ The following example can be found in the productlist component (/apps/geometrix
 
 If the checkbox configuration property is set to true, all the cells of the column are rendered as checkboxes. A checked box sends **true** to the server Save servlet, **false** otherwise. In the header menu, you can also **select all** or **select none**. These options are enabled if the selected header is the header of a checkbox column.
 
-In the former example the selection column contains only checkboxes as checkbox="true".
+In the former example, the selection column contains only checkboxes as checkbox="true".
 
 **Forced position**
 
 The forced position metadata forcedPosition lets you specify where the column is placed within the grid: 0 is the first place and &lt;number of columns&gt;-1 is the last position. Any other value is ignored.
 
-In the former example the selection column is the first column as forcedPosition="0".
+In the former example, the selection column is the first column as forcedPosition="0".
 
 ### Query Servlet {#query-servlet}
 
 By default, the Query servlet can be found at `/libs/wcm/core/components/bulkeditor/json.java`. You can configure another path to retrieve the data.
 
-The Query servlet works as follows: it receives a GQL query and the columns to return, computes the results, and sends the results back to the bulk editor as a JSON stream.
+The Query servlet works as follows: it receives a GQL query and the columns to return, computes the results, and sends the results back to the Bulk Editor as a JSON stream.
 
 In the Product List component case, the two parameters sent to the Query servlet are as follows:
 
 * query: "path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube"
 * cols: "Selection,ProductId,ProductName,Color,CatalogCode,SellingSku"
 
-and the JSON stream returned is as follows:
+And the JSON stream is returned as follows:
 
 ```
 {
@@ -551,7 +547,7 @@ You can extend the Query servlet to return a complex inheritance model or return
 
 ### Save Servlet {#save-servlet}
 
-In the default configuration of the bulk editor each row is a node and the path of this node is stored in the row record. The bulk editor keeps the link between the row and the node through the jcr path. When a user edits the grid, a list of all of the modifications is built. When a user clicks **Save**, a POST query is sent to each path with the updated properties values. This is the basis of the Sling concept and it works well if each cell is a property of the node. But if the Query servlet is implemented to do inheritance computation, this model cannot work as a property returned by the Query servlet can be inherited from another node.
+In the default configuration of the Bulk Editor each row is a node and the path of this node is stored in the row record. The Bulk Editor keeps the link between the row and the node through the jcr path. When a user edits the grid, a list of all of the modifications is built. When a user clicks **Save**, a POST query is sent to each path with the updated properties values. This is the basis of the Sling concept and it works well if each cell is a property of the node. But if the Query servlet is implemented to do inheritance computation, this model cannot work as a property returned by the Query servlet can be inherited from another node.
 
 The Save servlet concept is that the modifications are not directly posted to each node but that they are posted to one servlet that does the saving job. This gives this servlet the possibility to analyze the modifications and save the properties on the right node.
 
@@ -569,4 +565,4 @@ The servlet needs to know where the catalogCode property is stored.
 
 A default Save servlet implementation is available at /libs/wcm/bulkeditor/save/POST.jsp and is used in the Product List component. It takes all the parameters from the request (with a &lt;jcr path&gt;/&lt;property name&gt; format) and writes properties on nodes using the JCR API. It also creates node if they do not exist (grid inserted rows).
 
-The default code should not be used as is as it re-implements what the server natively does (a POST on &lt;jcr path&gt;/&lt;property name&gt;) and is therefore only a good starting point for building a Save servlet that will manage a property inheritance model.
+The default code should not be used as is because it reimplements what the server natively does (a POST on &lt;jcr path&gt;/&lt;property name&gt;) and is therefore only a good starting point for building a Save servlet that can manage a property inheritance model.
