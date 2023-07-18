@@ -15,6 +15,12 @@ exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 ---
 # Using [!DNL Adobe Sign] in an adaptive form{#using-adobe-sign-in-an-adaptive-form}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html)                  |
+| AEM 6.5     | This article         |
+
+
 [!DNL Adobe Sign] enables e-signature workflows for adaptive forms. E-Signatures improve workflows to process documents for legal, sales, payroll, human resource management, and more areas.
 
 In a typical [!DNL Adobe Sign] and adaptive forms scenario, a user fills an adaptive form to apply for a service. For example, a mortgage and credit-card application requires legal Signatures from all the borrowers and co-applicants. To enable electronic-signature workflows for similar scenarios, you can integrate [!DNL Adobe Sign] with AEM [!DNL Forms]. A few more examples are, you can use [!DNL Adobe Sign] to:

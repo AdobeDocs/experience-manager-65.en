@@ -14,6 +14,11 @@ exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
 ---
 # Microsoft Dynamics OData configuration{#microsoft-dynamics-odata-configuration}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html)                  |
+| AEM 6.5     | This article         |
+
  ![data-integeration](assets/data-integeration.png)
 
 Microsoft Dynamics is a Customer Relationship Management (CRM) and Enterprise Resource Planning (ERP) software that provides enterprise solutions for creating and managing customer accounts, contacts, leads, opportunities, and cases. [AEM Forms Data Integration](../../forms/using/data-integration.md) provides an OData cloud service configuration to integrate Forms with both online and on-premises Microsoft Dynamics server. It enables you to create form data model based on the entities, attributes, and services defined in Microsoft Dynamics service. The form data model can be used to create adaptive forms that interact with Microsoft Dynamics server to enable business workflows. For example:
