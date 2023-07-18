@@ -84,7 +84,7 @@ orderby=path
 
 ### Using p.guessTotal to return the results {#using-p-guesstotal-to-return-the-results}
 
-The purpose of the `p.guessTotal` parameter is to return the appropiate number of results that can be shown by combining the minimum viable p.offset and p.limit values. The advantage of using this parameter is improved performance with large result sets. This avoids calculating the full total (e.g calling result.getSize()) and reading the entire result set, optimized all the way down to the OAK engine & index. This can be a significant difference when there are 100 thousands of results, both in execution time and memory usage.
+The purpose of the `p.guessTotal` parameter is to return the appropiate number of results that can be shown by combining the minimum viable p.offset and p.limit values. The advantage of using this parameter is improved performance with large result sets. This avoids calculating the full total (for example, calling result.getSize()) and reading the entire result set, optimized all the way down to the OAK engine & index. This can be a significant difference when there are 100 thousands of results, both in execution time and memory usage.
 
 The disadvantage to the parameter is users do not see the exact total. But you can set a minimum number like p.guessTotal=1000 so it will always read up to 1000, so you get exact totals for smaller result sets, but if it's more than that, you can only show "and more".
 
@@ -285,7 +285,7 @@ property.3_value=bar
 
 ## Refining What Is Returned {#refining-what-is-returned}
 
-By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (e.g. path, name, title, etc.). In order to gain control over which properties are returned, you can do one of the following:
+By default, the QueryBuilder JSON Servlet will return a default set of properties for each node in the search result (for example, path, name, title, etc.). In order to gain control over which properties are returned, you can do one of the following:
 
 Specify
 

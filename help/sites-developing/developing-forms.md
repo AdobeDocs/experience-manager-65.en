@@ -124,11 +124,11 @@ You can add your own action under `/apps` as follows:
 1. In the folder create either:
 
    1. A post script.
-      The name of the script is `post.POST.<extension>`, e.g. `post.POST.jsp`
+      The name of the script is `post.POST.<extension>`, for example, `post.POST.jsp`
       The post script is invoked when a form is submitted to process the form, it contains the code that handles the data arriving from the form `POST`.
 
    1. Add a forward script which is invoked when the form is submitted.
-      The name of the script is `forward.<extension`>, e.g. `forward.jsp`
+      The name of the script is `forward.<extension`>, for example, `forward.jsp`
       This script can define a path. The current request is then forwarded to the specified path.
 
    The necessary call is `FormsHelper#setForwardPath` (2 variants). A typical case is to perform some validation, or logic, to find the target path and then forward to that path, letting the default Sling POST servlet do the actual storage in JCR.
@@ -163,15 +163,15 @@ You can add your own action under `/apps` as follows:
 1. Again in the folder optionally add:
 
    1. A script for adding fields.
-      The name of the script is `addfields.<extension>`, e.g. `addfields.jsp`
+      The name of the script is `addfields.<extension>`, for example, `addfields.jsp`
       An `addfields` script is invoked immediately after the HTML for the form start is written. This allows the action to add custom input fields or other such HTML inside the form.
 
    1. An initialization script.
-      The name of the script is `init.<extension>`, e.g. `init.jsp`
+      The name of the script is `init.<extension>`, for example, `init.jsp`
       This script is invoked when the form is rendered. It can be used to initialize action specifics.
 
    1. A cleanup script.
-      The name of the script is `cleanup.<extension>`, e.g. `cleanup.jsp`
+      The name of the script is `cleanup.<extension>`, for example, `cleanup.jsp`
       This script can be used to perform cleanup.
 
 1. Use the **Forms** component in a parsys. The **Action Type** drop down will now include your new action.
@@ -214,11 +214,11 @@ You can add your own constraints for an individual field (under `/apps`) as foll
 1. Inside this folder, you can need the following scripts:
 
    * A client validation script:
-     The name of the script is `clientvalidation.<extension>`, e.g. `clientvalidation.jsp`
+     The name of the script is `clientvalidation.<extension>`, for example, `clientvalidation.jsp`
      This is invoked when the form field is rendered. It can be used to create client javascript to validate the field on the client.
 
    * A server validation script:
-     The name of the script is `servervalidation.<extension>`, e.g. `servervalidation.jsp`
+     The name of the script is `servervalidation.<extension>`, for example, `servervalidation.jsp`
      This is invoked when the form is submitted. It can be used to validate the field on the server after it is submitted.
 
 >[!NOTE]
@@ -263,7 +263,7 @@ For example, a Radio Group component with the title `Receive email notifications
 
 ![showhidecondition](assets/showhidecondition.png)
 
-In Javascript, conditions use the value of the Element Name property to refer to fields. In the previous example, the Element Name property of the Radio Group component is `contact`. The following code is the equivalent Javascript code for that example:
+In JavaScript, conditions use the value of the Element Name property to refer to fields. In the previous example, the Element Name property of the Radio Group component is `contact`. The following code is the equivalent JavaScript code for that example:
 
 `((contact == "Yes"))`
 

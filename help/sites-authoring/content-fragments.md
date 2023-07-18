@@ -118,7 +118,7 @@ In the appropriate configuration dialog you can select the available parameters,
     * The default **Master** will always be available.
     * A selection will be available if variations were created for the fragment.
 
-* **Paragraphs**: specify the range of paragraph(s) to include:
+* **Paragraphs**: specify the range of paragraphs to include:
 
     * **All**
     * **Range**: for example, `1`, `3-5`, `9-*`
@@ -177,7 +177,7 @@ If you have [associated content](/help/assets/content-fragments/content-fragment
 
 >[!NOTE]
 >
->There are various methods of adding [visual assets (e.g. images)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
+>There are various methods of adding [visual assets (for example, images)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ From here you can drag the assets to the required location (either to an existin
 
 ### Assets Inserted into the Fragment {#assets-inserted-into-the-fragment}
 
-If assets (e.g. images) have been inserted into the fragment itself, then the options for editing these assets in the page editor is limited. <!-- Removed link as it was a 404 on helpx -->
+If assets (for example, images) have been inserted into the fragment itself, then the options for editing these assets in the page editor is limited. <!-- Removed link as it was a 404 on helpx -->
 
 For example, for an image you can
 

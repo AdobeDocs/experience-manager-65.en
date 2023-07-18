@@ -49,8 +49,8 @@ The following procedure uses the classic UI to create a language root of a site.
    |---|---|
    | auto |Uses the behavior from parent pages |
    | ignore |Does not create a copy of this page and its children |
-   | `<language>+` (e.g. French+) |Copies the page and all its children from that language |
-   | `<language>` (e.g. French) |Copies only the page from that language |
+   | `<language>+` (for example, French+) |Copies the page and all its children from that language |
+   | `<language>` (for example, French) |Copies only the page from that language |
 
 1. Click OK to close the dialog.
 1. In the next dialog, click Yes to confirm the copy.

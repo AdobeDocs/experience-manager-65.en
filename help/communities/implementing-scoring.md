@@ -118,7 +118,7 @@ See the [Quick Test](#quick-test) section to enable scoring for a community site
 
 ### Apply Rules to Content {#apply-rules-to-content}
 
-To enable scoring and badges, add the properties `scoringRules` and `badgingRules` to to any node in the content tree for the site.
+To enable scoring and badges, add the properties `scoringRules` and `badgingRules` to any node in the content tree for the site.
 
 If the site is already published, after applying all rules and enabling components, re-publish the site.
 

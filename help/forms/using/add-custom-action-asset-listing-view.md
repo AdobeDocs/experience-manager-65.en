@@ -245,7 +245,7 @@ To customize Correspondence Management to allow your users to download a flat PD
 
 1. Under the newly created items node, add a node for the custom button/action in a particular asset (Example: letterpdfdownloader) using the following steps:
 
-    1. Right click the items folder and select **Create &gt; Create Node**.
+    1. Right-click the items folder and select **Create &gt; Create Node**.
 
     1. Ensure that the Create Node dialog has the following values and click **OK**:
 

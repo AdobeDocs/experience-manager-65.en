@@ -74,6 +74,6 @@ There are two cases while updating the latest version of AEM Forms Designer 6.5.
 
    If you are using a stand-alone installer for AEM Forms Designer, perform the following steps:
    1. Download latest version of AEM Forms Designer from the [Software distribution portal](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
-   1. Install the latest version of AEM Forms Designer by double clicking on the downloaded installer file.
+   1. Install the latest version of AEM Forms Designer by double-clicking on the downloaded installer file.
 
 +++

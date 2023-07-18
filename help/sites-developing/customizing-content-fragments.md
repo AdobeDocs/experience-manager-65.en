@@ -57,7 +57,7 @@ Depending on the type of fragment, either models or templates are also used:
   * Templates define the (basic, text-only) structure of a content fragment when it is created.
   * The template is copied to the fragment when it is created; so further changes to the template will not be reflected in existing fragments.
   * Functions to add new variations, etc., have to update the fragment accordingly.
-  * [Content fragment templates](/help/sites-developing/content-fragment-templates.md) operate in a different manner to that of other templating mechanisms within the AEM ecosystem (e.g. page templates, etc.). Therefore they should be considered separately.
+  * [Content fragment templates](/help/sites-developing/content-fragment-templates.md) operate in a different manner to that of other templating mechanisms within the AEM ecosystem (for example, page templates, etc.). Therefore they should be considered separately.
   * When based on a template the MIME type of the content is managed on the actual content; this means that each element and variation can have a different MIME type.
 
 ### Integration with Assets {#integration-with-assets}
@@ -80,10 +80,10 @@ Content fragments with structured content (i.e. based on a content fragment mode
     `jcr:content/data/master`
 
   * Variations are stored under a sub-node that carries the name of the variation:
-    e.g. `jcr:content/data/myvariation`
+    for example, `jcr:content/data/myvariation`
 
   * The data of each element is stored in the respective sub-node as a property with the element name:
-    e.g. the content of element `text` is stored as property `text` on `jcr:content/data/master`
+    for example, the content of element `text` is stored as property `text` on `jcr:content/data/master`
 
 * Metadata and associated content is stored below `jcr:content/metadata`
   Except for the title and description, which are not considered traditional metadata and stored on `jcr:content`
@@ -302,7 +302,7 @@ The following three interfaces can serve as entry points:
 
   The interface provides you with the means to:
 
-  * Manage basic data (e.g. get name; get/set title/description)
+  * Manage basic data (for example, get name; get/set title/description)
   * Access meta data
   * Access elements:
 

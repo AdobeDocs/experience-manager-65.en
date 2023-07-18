@@ -65,7 +65,7 @@ This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/ex
 
 ### HTL vs JSP {#htl-vs-jsp}
 
-HTL is a HTML templating language introduced with AEM 6.0.
+HTL is an HTML templating language introduced with AEM 6.0.
 
 The discussion of whether to use [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) or JSP (Java Server Pages) when developing your own components should be straightforward as HTL is now the recommended scripting language for AEM.
 
@@ -97,7 +97,7 @@ Use the following tools to move your components to the publish instance:
 
 >[!NOTE]
 >
->These mechanisms can also be used for transferring your component between other instances e.g. from your development to your test instance.
+>These mechanisms can also be used for transferring your component between other instances for example, from your development to your test instance.
 
 ### Components to be Aware of from the Start {#components-to-be-aware-of-from-the-start}
 
@@ -468,9 +468,9 @@ Dialog definitions are specific to the UI:
 
 Design dialogs are very similar to the dialogs used to edit and configure content, but they provide the interface for authors to configure and provide design details for that component.
 
-[Design dialogs are available in Design Mode](/help/sites-authoring/default-components-designmode.md), though they are not needed for all components e.g. **Title** and **Image** both have design dialogs, whereas **Text** does not.
+[Design dialogs are available in Design Mode](/help/sites-authoring/default-components-designmode.md), though they are not needed for all components for example, **Title** and **Image** both have design dialogs, whereas **Text** does not.
 
-The design dialog for the paragraph system (e.g. parsys) is a special case as it allows the user to specific other components to be available for selection (from the components browser or sidekick) on the page.
+The design dialog for the paragraph system (for example, parsys) is a special case as it allows the user to specific other components to be available for selection (from the components browser or sidekick) on the page.
 
 ### Adding your Component to the Paragraph System {#adding-your-component-to-the-paragraph-system}
 
@@ -590,11 +590,11 @@ The edit behavior of a component is configured by adding a `cq:editConfig` node 
 
 There are many existing configurations in the repository. You can easily search for specific properties or child nodes:
 
-* To look for a property of the `cq:editConfig` node, e.g. `cq:actions`, you can use the Query tool in **CRXDE Lite** and search with the following XPath query string:
+* To look for a property of the `cq:editConfig` node, for example, `cq:actions`, you can use the Query tool in **CRXDE Lite** and search with the following XPath query string:
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* To look for a child node of `cq:editConfig`, e.g. you can search for `cq:dropTargets`, which is of type `cq:DropTargetConfig`; you can use the Query tool in** CRXDE Lite** and search with the following XPath query string:
+* To look for a child node of `cq:editConfig`, for example, you can search for `cq:dropTargets`, which is of type `cq:DropTargetConfig`; you can use the Query tool in** CRXDE Lite** and search with the following XPath query string:
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

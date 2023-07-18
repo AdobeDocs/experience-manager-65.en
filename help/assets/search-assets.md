@@ -463,11 +463,11 @@ Create a version for the assets that display in the search results. Select the a
 
 ### Create a workflow {#create-workflow}
 
-Similar to the create version capability, you can also create a workflow for the assets that display in the search results. Select the asset(s) and click **[!UICONTROL Create]** > **[!UICONTROL Workflow]**. Select the workflow model, specify a title for the workflow, and click **[!UICONTROL Start]**.
+Similar to the create version capability, you can also create a workflow for the assets that display in the search results. Select the assets and click **[!UICONTROL Create]** > **[!UICONTROL Workflow]**. Select the workflow model, specify a title for the workflow, and click **[!UICONTROL Start]**.
 
 ### Relate and Unrelate assets {#relate-unrelate-assets}
 
-Relate and unrelate assets that display in the search results. Select the asset(s) and click **[!UICONTROL Relate]** or **[!UICONTROL Unrelate]**.
+Relate and unrelate assets that display in the search results. Select the assets and click **[!UICONTROL Relate]** or **[!UICONTROL Unrelate]**.
 
 ## Unexpected search results and issues {#unexpected-results}
 

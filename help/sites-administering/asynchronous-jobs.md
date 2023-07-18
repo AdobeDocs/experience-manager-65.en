@@ -95,7 +95,7 @@ If the number of assets or folders to be deleted exceeds the threshold number, t
 
    ![Asset delete threshold](assets/async-delete-threshold.png)
 
-1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
+1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
 1. Save the changes.
 
 ### Configure Asynchronous Asset Move Operations {#configuring-asynchronous-move-operations}
@@ -108,7 +108,7 @@ If the number of assets/folders or references to be moved exceeds the threshold 
 
    ![Asset move threshold](assets/async-move-threshold.png)
 
-1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
+1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
 1. Save the changes.
 
 ### Configure Asynchronous Page Move Operations {#configuring-asynchronous-page-move-operations}
@@ -121,14 +121,14 @@ If the number of references to the page(s) to be moved exceeds the threshold num
 
    ![Page move threshold](assets/async-page-move.png)
 
-1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
+1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
 1. Save the changes.
 
 ### Configure Asynchronous MSM Operations {#configuring-asynchronous-msm-operations}
 
 1. From the Global Navigation click **[!UICONTROL Tools]** &gt; **[!UICONTROL Operations]** &gt; **[!UICONTROL Web Console]**.
 1. From the web console, open the **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. Check the option **Enable email notification** to receive email notifications for this job status. e.g. success, failed.
+1. Check the option **Enable email notification** to receive email notifications for this job status. for example, success, failed.
 
    ![MSM config](assets/async-msm.png)
 

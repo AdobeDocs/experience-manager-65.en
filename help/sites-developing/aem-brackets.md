@@ -63,9 +63,9 @@ After the extension has been installed, you can start developing AEM components 
 
 The project has to contain at least:
 
-1. a `jcr_root` folder (e.g. `myproject/jcr_root`)
+1. a `jcr_root` folder (for example, `myproject/jcr_root`)
 
-1. a `filter.xml` file (e.g. `myproject/META-INF/vault/filter.xml`); for more details about the structure of the `filter.xml` file please see the [Workspace Filter definition](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` file (for example, `myproject/META-INF/vault/filter.xml`); for more details about the structure of the `filter.xml` file please see the [Workspace Filter definition](https://jackrabbit.apache.org/filevault/filter.html).
 
 In Brackets' **File** menu, choose **Open Folder…** and pick either the `jcr_root` folder, or the parent project folder.
 
@@ -83,10 +83,10 @@ In order to synchronize your content to and from an AEM development instance, yo
 
 The Project Settings allow to define:
 
-1. The server URL (e.g. `http://localhost:4502`)
+1. The server URL (for example, `http://localhost:4502`)
 1. Wether to tolerate servers that don't have a valid HTTPS certificate (keep unchecked, unless required)
-1. The username used for synchronizing content (e.g. `admin`)
-1. The user's password (e.g. `admin`)
+1. The username used for synchronizing content (for example, `admin`)
+1. The user's password (for example, `admin`)
 
 ## Synchronizing Content {#synchronizing-content}
 

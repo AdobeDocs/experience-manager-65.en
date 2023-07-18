@@ -64,7 +64,7 @@ Adding a button with an action (here send letter for review) to the Create Corre
 
     1. Go to "/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml"
 
-    1. Right click the acmExtensionsConfig.xml file and select **Copy**.
+    1. Right-click the acmExtensionsConfig.xml file and select **Copy**.
 
        ![Copy acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 

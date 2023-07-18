@@ -495,7 +495,7 @@ Access to the pages used to configure the replication agents can be controlled b
 
 >[!NOTE]
 >
->Setting such permissions will not affect users replicating content (e.g. from the Websites console or sidekick option). The replication framework does not use the "user session" of the current user to access replication agents when replicating pages.
+>Setting such permissions will not affect users replicating content (for example, from the Websites console or sidekick option). The replication framework does not use the "user session" of the current user to access replication agents when replicating pages.
 
 ### Configuring your Replication Agents from CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}
 
@@ -566,7 +566,7 @@ The publisher will unpack all the items, save them and report back to the author
 
 1. Go to `http://serveraddress:serverport/siteadmin`
 1. Press the **[!UICONTROL Tools]** icon in the uppper side of the screen
-1. From the left hand side navigation rail, go to **[!UICONTROL Replication - Agents on Author]** and double click **[!UICONTROL Default Agent]**.
+1. From the left hand side navigation rail, go to **[!UICONTROL Replication - Agents on Author]** and double-click **[!UICONTROL Default Agent]**.
    * You can also reach the default publish replication agent by going directly to `http://serveraddress:serverport/etc/replication/agents.author/publish.html`
 1. Press the **[!UICONTROL Edit]** button above the replication queue.
 1. In the following window, go to the **[!UICONTROL Batch]** tab:

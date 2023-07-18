@@ -149,8 +149,8 @@ This section contains details and instructions on the post-deployment configurat
 
 1. Configure the service to connect to the SMTP server of your choice:
 
-    1. **SMTP Server hostname**: e.g (smtp.gmail.com)
-    1. **Server Port**: e.g (465) for gmail using SSL
+    1. **SMTP Server hostname**: for example, (smtp.gmail.com)
+    1. **Server Port**: for example, (465) for gmail using SSL
     1. **SMTP User:** demo@ &lt;companyname&gt; .com
     1. **"From" Address**: aemformsdemo@adobe.com
 
@@ -234,7 +234,7 @@ This section contains details and instructions on the MS&reg; Dynamics Cloud Con
 1. Navigate to the "Authentication Settings" tab.
 1. Enter the following details:
 
-    1. **Service Root:** e.g `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
+    1. **Service Root:** for example, `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
     1. **Authentication Type:** OAuth 2.0
     1. **Authentication Settings** (see [MS&reg; Dynamics cloud configuration settings](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) to collect this information):
 
@@ -245,7 +245,7 @@ This section contains details and instructions on the MS&reg; Dynamics Cloud Con
         1. Access Token URL - for example, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
         1. Authorization Scope - **openid**
         1. Authentication Header - **Authorization Bearer**
-        1. Resource - e.g `https://msdynamicsserver.api.crm3.dynamics.com`
+        1. Resource - for example, `https://msdynamicsserver.api.crm3.dynamics.com`
 
     1. Click "Connect to OAuth".
 
@@ -271,7 +271,7 @@ The steps detailed in this section are included to help you locate the Client Id
 1. To locate the Resource URL/Service Root URL, navigate to the MS&reg; Dynamics instance dashboard.
 1. In the top navigation bar, click "Sales" or your own instance type and "Select Settings".
 1. Click "Customizations" and "Developer Resources" near the bottom right.
-1. There you find the Service Root URL: e.g
+1. There you find the Service Root URL: for example,
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -746,7 +746,7 @@ This section contains information on demo features and design decisions that may
 
 To perform accessibility testing, install the Chrome plugin found here at `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-After it is installed, load the page that you want to test within the Chrome Browser (Note: Having multiple tabs open may affect your score, it is preferable to only have one tab open). Once the page is loaded, **right click** on the page and select **Audits** tab. There developers can select the type of audit to be performed by the Accessibility plugin. After all the desired options are selected, the user can click the Generate Report button. This generates a PDF document that shows the overall accessibility rating and what can be used to increase accessibility rating overall.
+After it is installed, load the page that you want to test within the Chrome Browser (Note: Having multiple tabs open may affect your score, it is preferable to only have one tab open). Once the page is loaded, **right-click** on the page and select **Audits** tab. There developers can select the type of audit to be performed by the Accessibility plugin. After all the desired options are selected, the user can click the Generate Report button. This generates a PDF document that shows the overall accessibility rating and what can be used to increase accessibility rating overall.
 
 After the report is run, users can expect to see the following:
 

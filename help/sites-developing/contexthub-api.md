@@ -1,8 +1,8 @@
 ---
-title: ContextHub Javascript API Reference
-seo-title: ContextHub Javascript API Reference
-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
-seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
+title: ContextHub JavaScript API Reference
+seo-title: ContextHub JavaScript API Reference
+description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
+seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,13 @@ discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 ---
-# ContextHub Javascript API Reference{#contexthub-javascript-api-reference}
+# ContextHub JavaScript API Reference{#contexthub-javascript-api-reference}
 
-The ContextHub Javascript API is available to your scripts when the [ContextHub component has been added to the page](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
+The ContextHub JavaScript API is available to your scripts when the [ContextHub component has been added to the page](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
 ## ContextHub Constants {#contexthub-constants}
 
-Constant values that the ContextHub Javascript API defines.
+Constant values that the ContextHub JavaScript API defines.
 
 ### Event Constants {#event-constants}
 
@@ -61,11 +61,11 @@ The following table lists the names of events that occur for the ContextHub UI.
 | ContextHub.Constants.EVENT_UI_CONTAINER_OPENED |Fired when the ContextHub UI is opened |ui-container-opened |
 | ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED |Fired when the ContextHub UI is collapsed |ui-container-closed |
 | ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED |Fired when a property is modified |ui-property-modified |
-| ContextHub.Constants.EVENT_UI_RENDERED |Fired every time the ContextHub UI is rendered (e.g. after a property change) |ui-rendered |
+| ContextHub.Constants.EVENT_UI_RENDERED |Fired every time the ContextHub UI is rendered (for example, after a property change) |ui-rendered |
 | ContextHub.Constants.EVENT_UI_INITIALIZED |Fired when UI container gets initialized |ui-initialized |
 | ContextHub.Constants.ACTIVE_UI_MODE |Indicates active UI mode |/_/active-ui-mode |
 
-## ContextHub Javascript API Reference {#contexthub-javascript-api-reference-2}
+## ContextHub JavaScript API Reference {#contexthub-javascript-api-reference-2}
 
 The ContextHub object provides access to all stores.
 
@@ -92,7 +92,7 @@ var geoloc = allStores.geolocation
 
 #### getStore(name) {#getstore-name}
 
-Retrieves a store as a Javascript object.
+Retrieves a store as a JavaScript object.
 
 **Parameters**
 
@@ -387,7 +387,7 @@ A `boolean` value:
 
 A store that contains JSON data. The data is retrieved from an external JSONP service, or optionally from a service that returns JSON data. Specify the service details using the [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) function when you create an instance of this class.
 
-The store uses in-memory persistance (Javascript variable). Store data is available only during the lifetime of the page.
+The store uses in-memory persistance (JavaScript variable). Store data is available only during the lifetime of the page.
 
 ContextHub.Store.JSONPStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) and inherits the functions of that class.
 
@@ -465,7 +465,7 @@ initializes the ContextHub.Store.JSONPStore object.
 
     * eventDeferring: 32.
     * eventing: The ContextHub.Utils.Eventing object for this store. The default value is the `ContextHub.eventing` object.
-    * persistence: The ContextHub.Utils.Persistence object for this store. By default, memory persistence is used (Javascript object).
+    * persistence: The ContextHub.Utils.Persistence object for this store. By default, memory persistence is used (JavaScript object).
     * service: (Object)
 
         * host: (String) The server name or IP address.
@@ -516,7 +516,7 @@ ContextHub.Store.PersistedStore extends [ContextHub.Store.Core](/help/sites-deve
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted using in-memory persistance (Javascript object).
+ContextHub.Store.SessionStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) so it inherits all of the functions of that class. The data in this store is persisted using in-memory persistance (JavaScript object).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -810,7 +810,7 @@ Parses a string value as JSON and converts it into a javascript object.
 
 **Returns**
 
-A Javascript object.
+A JavaScript object.
 
 **Example**
 
@@ -826,7 +826,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializes Javascript values and objects into string values of JSON format.
+Serializes JavaScript values and objects into string values of JSON format.
 
 **Parameters**
 
@@ -894,7 +894,7 @@ The value that corresonds with the key. When the key has child keys, this functi
 
 **Example**
 
-Consider the following Javascript object:
+Consider the following JavaScript object:
 
 ```
 myObject {
@@ -1068,7 +1068,7 @@ A copy of the `tree` object that includes the `key`/ `value` pair.
 
 **Example**
 
-Consider the following Javascript code:
+Consider the following JavaScript code:
 
 ```
 var myObject = {

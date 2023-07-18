@@ -15,7 +15,7 @@ exl-id: 4c1c44fd-e685-462c-83a0-3cd2f74ab5c7
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 App definitions are a way to identify what spaces and other configurations are appropriate for the app. App definitions allows the user to add space, without having to recompile the app. The app definition is updated and that will include the information for any new spaces.
 

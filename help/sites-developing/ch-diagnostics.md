@@ -57,8 +57,8 @@ The URLs section contains links to ContextHub features:
 
 * **Configuration editor:** Opens the [ContextHub Configuration page](ch-configuring.md) where you can configure stores, UI modes, and UI modules.
 
-* **Configuration of ContextHub modules:** Opens the /etc/cloudsettings/default/contexthub.config.kernel.js file, which contains the Javascript object representation of the ContextHub store configurations.
-* **Configuration of ContextHub UI:** Opens the /etc/cloudsettings/default/contexthub.config.ui.js file, which contains the Javascript object representation of the ContextHub UI mode configurations.
+* **Configuration of ContextHub modules:** Opens the /etc/cloudsettings/default/contexthub.config.kernel.js file, which contains the JavaScript object representation of the ContextHub store configurations.
+* **Configuration of ContextHub UI:** Opens the /etc/cloudsettings/default/contexthub.config.ui.js file, which contains the JavaScript object representation of the ContextHub UI mode configurations.
 * **kernel.js:** Opens the /etc/cloudsettings/default/contexthub.kernel.js file, which contains the source code of the client libraries that implement the ContextHub framework, the segment engine, and store types.
 * **ui.js:** Opens the /etc/cloudsettings/default/contexthub.ui.js file, which contains the source code of the client libraries that implement the ContextHub UI and UI module types.
 * **style.css:** Opens the /etc/cloudsettings/default/contexthub.styles.css file, which contains the CSS styles for the ContextHub UI and UI modules.

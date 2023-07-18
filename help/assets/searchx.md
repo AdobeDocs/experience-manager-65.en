@@ -190,7 +190,7 @@ To build a group predicate:
            // Get the page wide available QueryBuilder.
            var qb = CQ.search.Util.getQueryBuilder();
 
-           // Create a unique group ID; will return e.g. "1_group".
+           // Create a unique group ID; will return for example, "1_group".
            var groupId = qb.createGroupId();
 
            // Hidden field that defines the property to search for  - in our case "dc:format" -

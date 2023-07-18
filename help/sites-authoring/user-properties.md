@@ -77,7 +77,7 @@ Each user can set certain properties for himself or herself.
 
 * **Relative Date Presentation**
 
-  To improve readability, AEM will render dates within the last seven days as relative dates (e.g. Three days ago) and older dates as exact dates (e.g. 20 March 2017).
+  To improve readability, AEM will render dates within the last seven days as relative dates (for example, Three days ago) and older dates as exact dates (for example, 20 March 2017).
 
   This option defines how dates in the system are displayed. The following options are available:
 

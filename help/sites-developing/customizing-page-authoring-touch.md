@@ -85,7 +85,7 @@ You can find the code of this page on GitHub
 
 ## Add New Selection Category to Asset Browser {#add-new-selection-category-to-asset-browser}
 
-The asset browser shows assets of various types/categories (e.g. image, documents, etc). The assets can also be filtered by these asset categories.
+The asset browser shows assets of various types/categories (for example, image, documents, etc). The assets can also be filtered by these asset categories.
 
 ### Code Sample {#code-sample-1}
 
@@ -100,7 +100,7 @@ You can find the code of this page on GitHub
 
 ## Filtering Resources {#filtering-resources}
 
-When authoring pages, the user must often select from resources (e.g. pages, components, assets, etc.). This can take the form of a list for example from which the author must choose an item.
+When authoring pages, the user must often select from resources (for example, pages, components, assets, etc.). This can take the form of a list for example from which the author must choose an item.
 
 In order to keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
 
@@ -151,7 +151,7 @@ In a standard AEM installation:
 
             * property: `editorType`
 
-              Defines the type of inline editor that will be used when the in-place editing is triggered for that component; e.g. `text`, `textimage`, `image`, `title`.
+              Defines the type of inline editor that will be used when the in-place editing is triggered for that component; for example, `text`, `textimage`, `image`, `title`.
 
 1. Additional configuration details of the editor can be configured using a `config` node containing configurations as well as a further `plugin` node to contain necessary plugin configuraiton details.
 

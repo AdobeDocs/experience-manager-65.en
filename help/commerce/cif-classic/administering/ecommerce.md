@@ -36,7 +36,7 @@ Adobe provides two versions of the Commerce Integration Framework:
    <td>
     <ul>
      <li>Adobe Commerce</li>
-     <li>Java &amp; Javascript</li>
+     <li>Java &amp; JavaScript</li>
      <li>No commerce data stored in JCR repository</li>
     </ul> </td>
   </tr>
@@ -84,7 +84,7 @@ Adobe provides two versions of the Commerce Integration Framework:
   </tr>
   <tr>
    <td>When to use</td>
-   <td>Limited use-cases: For e.g. scenarios where small, static catalogs may need to be imported</td>
+   <td>Limited use-cases: For for example, scenarios where small, static catalogs may need to be imported</td>
    <td>Preferred solution in most use-cases</td>
   </tr>
  </tbody>
@@ -157,7 +157,7 @@ AEM eCommerce provides:
 * The possibility to develop **experience-driven commerce based on shopper data and activity**. This allows you to realize many scenarios:
 
     * One example might be providing reductions in shipping costs when the total order exceeds a specific amount.
-    * Another might allow you to provide seasonal offers that use profile data (e.g. location). These can then be highlighted, again depending on other factors when necessary.
+    * Another might allow you to provide seasonal offers that use profile data (for example, location). These can then be highlighted, again depending on other factors when necessary.
 
   In the example below one teaser is shown as the contents of the cart are less than $75:
 

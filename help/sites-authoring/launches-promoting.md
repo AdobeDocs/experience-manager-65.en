@@ -50,7 +50,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
         1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
         
-        1. Select **Launches** (e.g. Launches (1)) to show a list of the specific launches.
+        1. Select **Launches** (for example, Launches (1)) to show a list of the specific launches.
         1. Select the specific launch to show the actions available.
         1. Select **Promote launch** to open the wizard.
 

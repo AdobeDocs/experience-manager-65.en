@@ -67,7 +67,7 @@ Under the **[!UICONTROL Social Tag Cloud]** tab, specify which tags to display a
 
 ## Change Display of Social Tag Cloud {#change-display-of-social-tag-cloud}
 
-To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
+To edit the display of the **Social Tag Cloud**, enter [Design Mode](../../help/sites-authoring/default-components-designmode.md) and double-click on the placed `Social Tag Cloud` component to open a dialog with an additional tab.
 
 Using the **[!UICONTROL Social Tag Cloud (Design)]** tab, specify how tags are displayed. A tag may be a simple tag, a single word in the default namespace, or a hierarchical taxonomy:
 
