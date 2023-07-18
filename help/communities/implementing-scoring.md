@@ -1,17 +1,12 @@
 ---
 title: Communities Scoring and Badges
-seo-title: Communities Scoring and Badges
 description: AEM Communities scoring and badges lets you identify and reward community members
-seo-description: AEM Communities scoring and badges lets you identify and reward community members
-uuid: d73683df-a413-4b3c-869c-67568bfdfcf6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ea033bb9-cb92-4c93-855f-8c902999378c
 docset: aem65
 tagskeywords: scoring, badging, badges, gamification
-
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 ---
@@ -39,23 +34,23 @@ The main aspects of scoring and badges are:
 
 Badges are placed under a member's name to indicate either their role or their standing in the community. Badges may either be displayed as an image or as a name. When displayed as an image, the name is included as alternate text for accessibility.
 
-By default, badges are located in the repository at
+By default, badges are in the repository at the following:
 
 * `/libs/settings/community/badging/images`
 
 If stored in a different location, they should be read accessible by everyone.
 
-Badges are differentiated in UGC as to whether they were assigned or were earned according to the rules. Presently, assigned badges appear as text and earned badges appear as an image.
+Badges are differentiated in UGC whether they were assigned or were earned according to the rules. Presently, assigned badges appear as text and earned badges appear as an image.
 
 ### Badge Management UI {#badge-management-ui}
 
-The Communities [Badges console](/help/communities/badges.md) provides the ability to add custom badges which can be displayed for a member when earned (awarded) or when they take on a specific role in the community (assigned).
+The Communities [Badges console](/help/communities/badges.md) lets you to add custom badges which can be displayed for a member when earned (awarded) or when they take on a specific role in the community (assigned).
 
 ### Assigned Badges {#assigned-badges}
 
 Role-based badges are assigned by an administrator to community members based on their role in the community.
 
-Assigned (and awared) badges are stored in the selected [SRP](/help/communities/srp.md) and are not directly accessible. Until a GUI is available, the only means for assigning role-based badges is to do so with code or cURL. For cURL instructions, see the section titled [Assign and Revoke Badges](#assign-and-revoke-badges).
+Assigned (and awarded) badges are stored in the selected [SRP](/help/communities/srp.md) and are not directly accessible. Until a GUI is available, the only means for assigning role-based badges is to do so with code or cURL. For cURL instructions, see the section titled [Assign and Revoke Badges](#assign-and-revoke-badges).
 
 Included in the release are three role-based badges:
 
@@ -74,7 +69,7 @@ Included in the release are three role-based badges:
 
 Reward-based badges are awarded by the scoring service to community members based on rules applied to their activity in the community.
 
-In order for badges to appear as a reward for activity, there are two things that must happen:
+For badges to appear as a reward for activity, there are two things that must happen:
 
 * Badging must be [enabled](#enableforcomponent) for the feature component.
 * Scoring and badging rules must be [applied](#applytopage) to the page (or ancestor) on which the component is placed.
@@ -96,7 +91,7 @@ Included in the release are three reward-based badges:
 >
 >Scoring rules may be configured to assign negative points for posts flagged as inappropriate and thus affect the score value. However, once a badge is earned, it will not be automatically removed due to scoring point reduction or scoring rule changes.
 >
->Awarded badges may be revoked in the same manner as assigned badges. See the [Assign and Revoke Badges](#assign-and-revoke-badges) section. Future improvements will include an UI to manage members’ badges.
+>Awarded badges may be revoked in the same manner as assigned badges. See the [Assign and Revoke Badges](#assign-and-revoke-badges) section. Future improvements will include an UI to manage members' badges.
 
 ### Custom Badges {#custom-badges}
 
@@ -118,13 +113,13 @@ See the [Quick Test](#quick-test) section to enable scoring for a community site
 
 ### Apply Rules to Content {#apply-rules-to-content}
 
-To enable scoring and badges, add the properties `scoringRules` and `badgingRules` to to any node in the content tree for the site.
+To enable scoring and badges, add the properties `scoringRules` and `badgingRules` to any node in the content tree for the site.
 
-If the site is already published, after applying all rules and enabling components, re-publish the site.
+If the site is already published, after applying all rules and enabling components, republish the site.
 
 The rules that apply to a badging-enabled component are those for the current node or its ancestor.
 
-If the node is of type `cq:Page` (recommended), then, using CRXDE|Lite, add the properties to its `jcr:content` node.
+If the node is of type `cq:Page` (recommended), then using CRXDE|Lite, add the properties to its `jcr:content` node.
 
 | **Property** |**Type** |**Description** |
 |---|---|---|
@@ -139,7 +134,7 @@ If the node is of type `cq:Page` (recommended), then, using CRXDE|Lite, add the 
 
 The scoring and bading rules are in effect only for instances of components that have enabled badging by editing the component configuration in [authoring mode](/help/communities/author-communities.md).
 
-A boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It is configurable in the [component edit dialog](/help/communities/author-communities.md) for forum, QnA and comment components through a checkbox labeled **Display Badges**.
+A boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It is configurable in the [component edit dialog](/help/communities/author-communities.md) for forum, QnA, and comment components through a checkbox labeled **Display Badges**.
 
 #### Example : allowBadges for Forum component instance {#example-allowbadges-for-forum-component-instance}
 
@@ -151,22 +146,22 @@ A boolean property, `allowBadges`, enables/disables the display of badges for a 
 
 ## Scoring Rules {#scoring-rules}
 
-Scoring rules are the foundation of scoring for the purpose of awarding badges.
+Scoring rules are the foundation of scoring for awarding badges.
 
-Very simply, each scoring rule is a list of one or more sub-rules. Scoring rules are applied to the community site content to identify the rules to apply when badges are enabled.
+Each scoring rule is a list of one or more subrules. Scoring rules are applied to the community site content to identify the rules to apply when badges are enabled.
 
 Scoring rules are inherited but not additive. For example:
 
 * If page2 contains scoring rule2 and its ancestor page1 contains scoring rule1.
-* An action on a page2 component will invoke both rule1 and rule2.
-* If both rules contain applicable sub-rules for the same `topic/verb`:
+* An action on a page2 component invokes both rule1 and rule2.
+* If both rules contain applicable subrules for the same `topic/verb`:
 
-  * Only the sub-rule from rule2 will affect the score.
-  * The scores from both sub-rules are not added together.
+  * Only the subrule from rule2 affects the score.
+  * The scores from both subrules are not added.
 
 When there is more than one scoring rule, the scores are maintained separately for each rule.
 
-Scoring rules are nodes of type `cq:Page` with properties on its `jcr:content` node that specify the list of sub-rules that define it.
+Scoring rules are nodes of type `cq:Page` with properties on its `jcr:content` node that specify the list of subrules that define it.
 
 Scores are stored in SRP.
 
@@ -183,24 +178,24 @@ Scores are stored in SRP.
 
 ### Scoring Sub-Rules {#scoring-sub-rules}
 
-The scoring sub-rules contain the properties which detail the values for participating in the community.
+The scoring subrules contain the properties which detail the values for participating in the community.
 
-Each scoring sub-rule identifies:
+Each scoring subrule identifies:
 
 * What activities are being tracked?
 * Which specific community function is involved?
 * How many points are awarded?
 
-By default, points are awarded to the member taking action unless the sub-rule specifies the owner of the content as receiving the points ( `forOwner`).
+By default, points are awarded to the member taking action unless the subrule specifies the owner of the content as receiving the points ( `forOwner`).
 
-Each sub-rule may be included in one or more scoring rules.
+Each subrule may be included in one or more scoring rules.
 
-The name of the sub-rule typically follows the pattern of using a *subject* , *object* and *verb*. For example:
+The name of the subrule typically follows the pattern of using a *subject*, *object*, and *verb*. For example:
 
 * member-comment-create
 * member-receive-vote
 
-Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node that specify the [verbs and topics](#topics-and-verbs) .
+Subrules are nodes of type `cq:Page` with properties on its `jcr:content`node that specify the [verbs and topics](#topics-and-verbs) .
 
 <table>
  <tbody>
@@ -228,10 +223,10 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
    <td>String</td>
    <td>
     <ul>
-     <li>optional; restricts sub-rule to community components identified by event topics</li>
+     <li>optional; restricts subrule to community components identified by event topics</li>
      <li>if specified : value is multi-value string of event topics</li>
      <li>a list of topics in the release is in the <a href="#topics-and-verbs">Topics and Verbs</a> section</li>
-     <li>default is to apply to all topics associated with the verb(s)</li>
+     <li>default is to apply to all topics associated with the verbs</li>
     </ul> </td>
   </tr>
   <tr>
@@ -257,7 +252,7 @@ Sub-rules are nodes of type `cq:Page` with properties on its `jcr:content`node t
       </ul> </li>
      <li>if "advanced", specifies the scoring engine based on quality and quantity
       <ul>
-       <li>requires an <a href="/help/communities/advanced.md">additional package</a></li>
+       <li>requires an <a href="/help/communities/advanced.md">extra package</a></li>
       </ul> </li>
      <li>default is "basic"</li>
     </ul> </td>
@@ -298,14 +293,14 @@ Included in the release are two scoring rules for the [Forum Function](/help/com
 
 ### Activating Custom Scoring Rules {#activating-custom-scoring-rules}
 
-Any changes or additions made to scoring rules or sub-rules made in the author environment need to be installed on publish.
+Any changes or additions made to scoring rules or subrules made in the author environment must be installed on publish.
 
 ## Badging Rules {#badging-rules}
 
 Badging rules link scoring rules to badges by specifying:
 
 * Scoring rule
-* Score necessary to be awared a specific badge
+* Score necessary to be awarded a specific badge
 
 Badging rules are nodes of type `cq:Page` with properties on its `jcr:content` node that correlate scoring rules to scores and badges.
 
@@ -313,7 +308,7 @@ The rules for badging consist of a mandatory `thresholds` property that is an or
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-  * A bronze badge is awared for earning 1 point.
+  * A bronze badge is awarded for earning one point.
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
@@ -321,7 +316,7 @@ The rules for badging consist of a mandatory `thresholds` property that is an or
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-  * A gold badge is awared when 80 points have been accumulated.
+  * A gold badge is awarded when 80 points have been accumulated.
 
 Badging rules are paired with scoring rules, which determine how points accumulate. See the section titled [Apply Rules to Content](#apply-rules-to-content).
 
@@ -374,13 +369,13 @@ Included in the release are two Badging Rules that correspond to the [Forums and
 **Notes:**
 
 * `rules` nodes are of type cq:Page.
-* `rules` should be located in a repository location with read permission for everyone.
+* `rules` should be in a repository location with read permission for everyone.
 
   * Rule names must be unique regardless of location.
 
 ### Activating Custom Badging Rules {#activating-custom-badging-rules}
 
-Any changes or additions made to badging rules or images made in the author environment need to be installed on publish.
+Any changes or additions made to badging rules or images made in the author environment must be installed on publish.
 
 ## Assign and Revoke Badges {#assign-and-revoke-badges}
 
@@ -441,11 +436,11 @@ When members interact with communities features, events are sent that can trigge
 
 A component's SocialEvent instance records the events as `actions` that occur for a `topic`. The SocialEvent includes a method to return a `verb` associated with the action. There is an *n-1* relationship between `actions` and `verbs`.
 
-For the communities components delivered, the following tables describe the `verbs` defined for each `topic` available for use in [scoring sub-rules](#scoring-sub-rules).
+For the communities components delivered, the following tables describe the `verbs` defined for each `topic` available for use in [scoring subrules](#scoring-sub-rules).
 
 >[!NOTE]
 >
->A new boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It will be configurable in updated [component edit dialogs](/help/communities/author-communities.md) through a checkbox labeled **Display Badges**.
+>A new boolean property, `allowBadges`, enables/disables the display of badges for a component instance. It is configurable in updated [component edit dialogs](/help/communities/author-communities.md) through a checkbox labeled **Display Badges**.
 
 **[Calendar Component](/help/communities/calendar.md)**
 SocialEvent `topic`= com/adobe/cq/social/calendar
@@ -544,19 +539,19 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 | UNFLAG-AS-INAPPROPRIATE |member's content is unflagged |
 | ACCEPT |member's content is approved by moderator |
 | CLOSE |member closes comment to edits and replies |
-| OPEN |member re-opens comment |
+| OPEN |member reopens comment |
 
 ### Custom Component Events {#custom-component-events}
 
 For a custom component, a SocialEvent is instantiated to record the component's events as `actions` that occur for a `topic`.
 
-To support scoring, the SocialEvent would need to override the method `getVerb()` so that an appropriate `verb` is returned for each `action`. The `verb` returned for an action may be one commonly used (such as `POST`) or one specialized for the component (such as `ADD RATING`). There is an *n-1* relationship between `actions` and `verbs`.
+To support scoring, the SocialEvent needs to override the method `getVerb()` so that an appropriate `verb` is returned for each `action`. The `verb` returned for an action may be one commonly used (such as `POST`) or one specialized for the component (such as `ADD RATING`). There is an *n-1* relationship between `actions` and `verbs`.
 
 ## Troubleshooting {#troubleshooting}
 
 ### Badges are not appearing {#badges-are-not-appearing}
 
-If scoring and badging rules have been applied to the web site's content, but badges are not being awared for any activity, ensure badges have been enabled for that component's instance.
+If scoring and badging rules have been applied to the web site's content, but badges are not being awarded for any activity, ensure that badges have been enabled for that component's instance.
 
 See [Enable Badges for Component](#enable-badges-for-component).
 
@@ -568,9 +563,9 @@ See the `scoringRules` property of [Badging Rules](#badging-rules).
 
 ### Case Sensitive Typo {#case-sensitive-typo}
 
-Most of the properties and values, especially the verbs, are case-sensitive. Verbs must be all UPPERCASE when used in a scoring sub-rule.
+Most of the properties and values, especially the verbs, are case-sensitive. Verbs must be all UPPERCASE when used in a scoring subrule.
 
-If the feature is not working as expected, ensure the data has been correctly entered.
+If the feature is not working as expected, ensure that the data has been correctly entered.
 
 ## Quick Test {#quick-test}
 
@@ -607,7 +602,7 @@ It is possible to quickly try scoring and badging using the [Getting Started Tut
 
 ![test-scoring-badging](assets/test-scoring-badging.png)
 
-Next ensure the forum and comments components allow badges to be displayed:
+Next, ensure that the forum and comments components allow badges to be displayed:
 
 * Again using CRXDE Lite.
 * Browse to the forum component

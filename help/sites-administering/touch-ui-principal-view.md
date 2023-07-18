@@ -43,7 +43,7 @@ The frame on the left allows users to scroll down to find any principal or searc
 
 ![View Permissions for a Principal](assets/doi-1.png)
 
-Clicking on the name shows the assigned permissions on the right. The permissions pane shows the the list of Access Control Entries on specific paths along with configured restrictions.
+Clicking on the name shows the assigned permissions on the right. The permissions pane shows the list of Access Control Entries on specific paths along with configured restrictions.
 
 ![View ACL List](assets/trei-1.png)
 

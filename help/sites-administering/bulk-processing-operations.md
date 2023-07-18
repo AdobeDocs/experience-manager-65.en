@@ -1,12 +1,8 @@
 ---
 title: Bulk Processing Operations
-seo-title: Bulk Processing Operations
-description: null
-seo-description: null
+description: Null
 page-status-flag: never-activated
-uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
-discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
 
 ---
@@ -15,15 +11,15 @@ docset: aem65
 
 ## Introduction {#introduction}
 
-With the newest version of AEM, the select all button has been extended to all views: List, Column and Card view. The select all button now selects all content in a given folder or collection and not just the Assets and Pages that are loaded and visible in the client browser.
+With the newest version of Adobe Experience Manager (AEM), the select all button has been extended to all views: List, Column, and Card view. The select all button now selects all content in a given folder or collection and not just the Assets and Pages that are loaded and visible in the client browser.
 
-Key actions have been enabled for the bulk operation: **Move**, **Delete** and **Copy**. A new dialog will let customers know what are the actions that bulk processing is unavailable for.
+Key actions have been enabled for the bulk operation: **Move**, **Delete**, and **Copy**. A new dialog box lets customers know what are the actions that bulk processing is unavailable for.
 
 ## How To Use {#how-to-use}
 
-A new button called **Select All** has been added to the Card, List or Column views. This button can be used in any of the views to select all the elements in the data set.
+A new button called **Select All** has been added to the Card, List, or Column views. This button can be used in any of the views to select all the elements in the data set.
 
-In previous versions of AEM, the selection was limited what was loaded in the client browser. This new changes has been introduced to avoid confusion regarding the number of elements a bulk operation is being performed on.
+In previous versions of AEM, the selection was limited what was loaded in the client browser. This new change was introduced to avoid confusion regarding the number of elements a bulk operation is being performed on.
 
 For now, three operations have been added to bulk processing:
 
@@ -32,7 +28,7 @@ For now, three operations have been added to bulk processing:
 * Delete
 
 Support for more operations will be added in the future.
-In order to use this feature, you need to navigate to the folder or collection where you want to perform bulk operation on Pages or on Assets.
+To use this feature, navigate to the folder or collection where you want to perform bulk operation on Pages or on Assets.
 
 Then, choose one of the views, as shown below:
 
@@ -70,10 +66,10 @@ In List View, use either the **Select All** button, or use the checkbox on the l
 
 After selection, one of the three bulk-enabled actions can be performed: **Move**, **Copy** or **Delete**.
 
-Here, **Move** operation is performed on the Assets selected above. In any of the views, this will result in all Assets being moved to the chosen location and not just the ones that are loaded on the screen.
+Here, **Move** operation is performed on the Assets selected above. In any of the views, this results in all Assets being moved to the chosen location and not just the ones that are loaded on the screen.
 
 ![Move assets showing a selected folder in Column View.](assets/noua.png)
 
-For other operations that are not bulk enabled, like **Download,** a warning will be shown that only stating that only elements that are loaded in the browser will be included in the operation.
+For other operations that are not bulk enabled, like **Download,** a warning is shown stating that only elements that are loaded in the browser is included in the operation.
 
 ![Assets View showing selected image assets and the pop-up dialog box "Bulk Action Not Supported".](assets/zece.png)

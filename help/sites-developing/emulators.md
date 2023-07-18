@@ -16,13 +16,13 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page, as for example on a mobile device or in an email client.
 
 The AEM emulator framework:
 
-* Provides content authoring within a simulated User Interface (UI), e.g. a mobile device or an email client (used to author newsletters).
+* Provides content authoring within a simulated User Interface (UI), for example, a mobile device or an email client (used to author newsletters).
 * Adapts the page content according to the simulated UI.
 * Allows the creation of custom emulators.
 
@@ -37,7 +37,7 @@ An emulator:
 * Is based on ExtJS.
 * Operates on the page DOM.
 * Its appearance is regulated via CSS.
-* Supports plugins (e.g. the mobile device rotation plugin).
+* Supports plugins (for example, the mobile device rotation plugin).
 * Is only active on author.
 * Its base component is at `/libs/wcm/emulator/components/base`.
 
@@ -114,7 +114,7 @@ When the page component relies on the mobile page component ( `/libs/wcm/mobile/
 
 * The method `DeviceGroup.drawHead(pageContext)` includes the emulator's init component, i.e. calls the `init.html.jsp` of the emulator component. If the emulator component does not have its own `init.html.jsp` and relies on the mobile base emulator ( `wcm/mobile/components/emulators/base)`, the init script of the mobile base emulator is called ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* The init script of the mobile base emulator defines through Javascript:
+* The init script of the mobile base emulator defines through JavaScript:
 
     * The configuration for all the emulators that are defined for the page (emulatorConfigs)
     * The emulator manager which integrates the emulator's functionality in the page through:

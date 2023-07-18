@@ -20,11 +20,11 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
-Thanks to the simple and lightweight contract that is required by AEM and established between the SPA and the SPA Editor, taking an existing Javascript application and adapting it for use with an SPA in AEM is a straightforward matter.
+Thanks to the simple and lightweight contract that is required by AEM and established between the SPA and the SPA Editor, taking an existing JavaScript application and adapting it for use with an SPA in AEM is a straightforward matter.
 
 This article illustrates the example of the weather component on the We.Retail Journal sample SPA.
 

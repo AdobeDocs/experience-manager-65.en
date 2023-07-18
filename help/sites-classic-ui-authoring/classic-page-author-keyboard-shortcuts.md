@@ -57,17 +57,17 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Copy selected paragraph(s).</td>
+   <td>Copy selected paragraphs.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Cut selected paragraph(s).<strong><br /> Note:</strong> The cut paragraph will not disappear until it has been pasted to the new location.</td>
+   <td>Cut selected paragraphs.<strong><br /> Note:</strong> The cut paragraph will not disappear until it has been pasted to the new location.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Paste paragraph(s) from clipboard.</td>
+   <td>Paste paragraphs from clipboard.</td>
   </tr>
   <tr>
    <td> </td>
@@ -77,12 +77,12 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Delete selected paragraph(s).</td>
+   <td>Delete selected paragraphs.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Delete selected paragraph(s).</td>
+   <td>Delete selected paragraphs.</td>
   </tr>
   <tr>
    <td> </td>

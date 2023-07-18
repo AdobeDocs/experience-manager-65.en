@@ -49,7 +49,7 @@ For the standard reports delivered with AEM:
 >  `P:<name> = <value>` : Describes a property `<name>` that must be set to the value of `<value>`.
 >
 >* Indentation shows the hierarchical dependencies between the nodes.
->* Items separated by | denotes a list of possible items; for example, types or names; e.g. `String|String[]` means that the property can be either String or String[].
+>* Items separated by | denotes a list of possible items; for example, types or names; for example, `String|String[]` means that the property can be either String or String[].
 >
 >* `[]` depicts an array; such as String[] or an array of nodes as in the [Query Definition](#query-definition).
 >
@@ -802,7 +802,7 @@ An example replacement can be broken down as:
 
 These formatters convert a numeric value into a relative string.
 
-For example, this can be used for a time column that allows `min`, `avg` and `max` aggregates. As `min`/ `avg`/ `max` aggregates are displayed as a *time difference* (e.g. `10 days ago`), they require a data formatter. For this, a `datedelta` formatter is applied to the `min`/ `avg`/ `max` aggregated values. If a `count` aggregate is also available then this does not need a formatter, neither does the original value.
+For example, this can be used for a time column that allows `min`, `avg` and `max` aggregates. As `min`/ `avg`/ `max` aggregates are displayed as a *time difference* (for example, `10 days ago`), they require a data formatter. For this, a `datedelta` formatter is applied to the `min`/ `avg`/ `max` aggregated values. If a `count` aggregate is also available then this does not need a formatter, neither does the original value.
 
 Currently the available data type formatters are:
 
@@ -1386,7 +1386,7 @@ These can be viewed using the Configuration menu of the web console (available f
 ### Basic Service (Day CQ Reporting Configuration) {#basic-service-day-cq-reporting-configuration}
 
 * **Timezone** defines the timezone historic data is created for. This is to ensure that the historic chart displays the same data for each user around the globe.
-* **Locale** defines the locale to be used in conjunction with the **Timezone** for historic data. The locale is used to determine some locale-specific calendar settings (e.g. whether the first day of a week is Sunday or Monday).
+* **Locale** defines the locale to be used in conjunction with the **Timezone** for historic data. The locale is used to determine some locale-specific calendar settings (for example, whether the first day of a week is Sunday or Monday).
 
 * **Snapshot path** defines the root path where snapshots for historic charts are stored.
 * **Path to reports** defines the path where reports are located. This is used by the snapshot service to determine the reports to actually take snapshots for.

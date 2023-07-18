@@ -58,7 +58,7 @@ function writeCookie(value){
 }
 ```
 
-## The Granite.OptOutUtil Javascript Object {#the-granite-optoututil-javascript-object}
+## The Granite.OptOutUtil JavaScript Object {#the-granite-optoututil-javascript-object}
 
 Granite.OptOutUtil enables you to determine whether cookie usage is allowed.
 

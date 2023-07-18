@@ -12,7 +12,7 @@ exl-id: e632dcdb-b2b9-45bc-89e7-337b44b6fc61
 
 For efficient management of assets to ensure that different translated versions stay synchronized, create [language copies](preparing-assets-for-translation.md) of assets before running translation workflows.
 
-A language copy of an asset or a group of assets is a language sibling (or a version of the asset(s) in a cognate language) with a similar content hierarchy.
+A language copy of an asset or a group of assets is a language sibling (or a version of the assets in a cognate language) with a similar content hierarchy.
 
 Each language copy is an independent asset. Therefore, translating assets into multiple locales can drastically increase the size of the CRX repository. For example, translating assets with a combined size of 10 GB into two languages can increase the repository size by approximately 20 GB (10 GB for each language).
 

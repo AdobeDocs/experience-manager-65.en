@@ -8,7 +8,7 @@ exl-id: d167cf97-6829-45a7-ba46-2239d530b060
 ---
 # Configure AEM Assets integration with Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-If you are an Adobe Experience Cloud customer, you can synchronize your assets within Adobe Experience Manager Assets with Adobe Creative Cloud, and vice versa. You can also synchronize your assets with Experience Cloud and vice versa. You can set up this synchronization through [!DNL Adobe I/O]. The updated name of [!DNL Adobe Marketing Cloud] is [!DNL Adobe Experience Cloud].
+If you are an Adobe Experience Cloud customer, you can synchronize your assets within Adobe Experience Manager Assets with Adobe Creative Cloud, and conversely. You can also synchronize your assets with Experience Cloud and conversely. You can set up this synchronization through [!DNL Adobe I/O]. The updated name of [!DNL Adobe Marketing Cloud] is [!DNL Adobe Experience Cloud].
 
 The workflow to set up this integration is:
 
@@ -159,7 +159,7 @@ AEM Assets lets you share folders containing assets with Adobe Creative Cloud us
 
 The AEM Assets-Marketing Cloud synchronization is designed in a way that the user machine instance from where the asset is uploaded retains the right to modify the asset. Only these changes are propagated to the other instance.
 
-For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and vice versa for asset uploaded from Marketing Cloud.
+For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and conversely for asset uploaded from Marketing Cloud.
 -->
 
 >[!MORELIKETHIS]

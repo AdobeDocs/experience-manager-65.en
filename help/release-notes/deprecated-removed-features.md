@@ -45,7 +45,7 @@ Customers are advised to review if they use the feature/capability in their curr
 |Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Forms|AEM Forms integration with AEM Mobile is deprecated. | No Replacement is available. ||Developers|Classic UI Dialog Editor in CRXDE Lite. Adobe does not plan to further enhance the Classic UI Dialog Editor that is shipped as part of the distribution (Quickstart)| No replacement is available. ||
 |Developers|Lodash/underscore client library. Adobe does not plan to further maintain and update the Lodash/underscore client library that is shipped as part of the distribution (Quickstart) | Adobe recommends customers that still require Lodash/underscore for their code to add it into their project code base. ||
-|Screens|Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations that is used for 2Publishers setup.| Adobe recommends customers that still require 2Publishers setup can use [load-balancer](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=screens&title=AEM+Screens+publish+environment+horizontal+scaling+through+Load+Balancer+session+stickiness) approach. ||
+|Screens|Adobe does not plan to further maintain and update the com.adobe.cq.screens.mq.activemq bundle and related configurations that is used for 2Publishers setup.| Adobe recommends customers that still require 2Publishers setup can use load-balancer approach. ||
 
 ## Removed features {#removed-features}
 

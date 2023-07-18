@@ -87,7 +87,7 @@ To access the Groups console:
 
 * **Additional Available Community Group Languages(s)** menu
 
-  Use the drop-down to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
+  Use the drop-down to select the available community group language(s). The menu displays all the languages in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
 
 * **Community Group Name** 
 

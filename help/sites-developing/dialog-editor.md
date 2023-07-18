@@ -15,7 +15,7 @@ exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
 
 The dialog editor provides a graphical interface for easily creating and editing dialog boxes and scaffolds.
 
-To see how it works, go to CRXDE Lite, open the explorer tree to `/libs/foundation/components/chart` and double click on the node `dialog`:
+To see how it works, go to CRXDE Lite, open the explorer tree to `/libs/foundation/components/chart` and double-click on the node `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 

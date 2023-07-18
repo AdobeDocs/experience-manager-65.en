@@ -36,7 +36,7 @@ The UI presented to the moderator on the publish instance is contained within th
 
 Using the [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) site created when [Getting Started with AEM Communities](getting-started.md), it is possible to quickly setup a thread in a forum on which to experience various moderation activites in the publish environment, as seen below.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) was identified as a a trusted community member by adding him to the community-engage-moderators group when creating the site.
+Aaron McDonald (aaron.mcdonald@mailinator.com) was identified as a trusted community member by adding him to the community-engage-moderators group when creating the site.
 
 Rebekah Larsen (rebekah.larsen@trashymail.com) can be added as a member of community-engage-members group using the [Members console](members.md).
 

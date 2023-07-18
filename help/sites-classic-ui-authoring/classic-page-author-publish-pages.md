@@ -29,7 +29,7 @@ You can also publish/unpublish a page immediately or at a predefined date/time i
 >  These terms are synonymous with publish/unpublish.
 >
 >* **Replicate / Replication**
->  These are the technical terms describing the movement of data (e.g. page content, files, code, user comments) from one environment to another such as when publishing or reverse-replicating user comments.
+>  These are the technical terms describing the movement of data (for example, page content, files, code, user comments) from one environment to another such as when publishing or reverse-replicating user comments.
 >
 
 >[!NOTE]

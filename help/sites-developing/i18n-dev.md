@@ -1,8 +1,8 @@
 ---
 title: Internationalizing UI Strings
 seo-title: Internationalizing UI Strings
-description: Java and Javascript APIs enable you to internationalize strings
-seo-description: Java and Javascript APIs enable you to internationalize strings
+description: Java and JavaScript APIs enable you to internationalize strings
+seo-description: Java and JavaScript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,11 +13,11 @@ exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
 ---
 # Internationalizing UI Strings {#internationalizing-ui-strings}
 
-Java and Javascript APIs enable you to internationalize strings in the following types of resources:
+Java and JavaScript APIs enable you to internationalize strings in the following types of resources:
 
 * Java source files.
 * JSP scripts.
-* Javascript in client-side libraries or in page source.
+* JavaScript in client-side libraries or in page source.
 * JCR node property values used in dialogs and component configuration properties.
 
 For an overview of the internationalization and localization process, see [Internationalizing Components](/help/sites-developing/i18n.md).
@@ -109,11 +109,11 @@ The `I18N` class defines a static `get` method that is useful when you need to l
 
   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
-### Internationalizing Strings in Javascript Code {#internationalizing-strings-in-javascript-code}
+### Internationalizing Strings in JavaScript Code {#internationalizing-strings-in-javascript-code}
 
-The Javascript API enables you to localize strings on the client. As with [Java and JSP](#internationalizing-strings-in-java-and-jsp-code) code, the Javascript API enables you to identify strings to localize, provide localization hints, and include variables in the localized strings.
+The JavaScript API enables you to localize strings on the client. As with [Java and JSP](#internationalizing-strings-in-java-and-jsp-code) code, the JavaScript API enables you to identify strings to localize, provide localization hints, and include variables in the localized strings.
 
-The `granite.utils` [client library folder](/help/sites-developing/clientlibs.md) provides the Javascript API. To use the API, include this client library folder on your page. Localization functions use the `Granite.I18n` namespace.
+The `granite.utils` [client library folder](/help/sites-developing/clientlibs.md) provides the JavaScript API. To use the API, include this client library folder on your page. Localization functions use the `Granite.I18n` namespace.
 
 Before you present localized strings, you need to set the locale using the `Granite.I18n.setLocale` function. The function requires the language code of the locale as an argument:
 
@@ -140,7 +140,7 @@ The function parameters are different than the Java I18n.get method:
 * The second parameter is an array of values to inject into the string literal.
 * The third parameter is the localization hint.
 
-The following example uses Javascript to localize the "Welcome back Administrator. You have 2 messages in your inbox." sentence:
+The following example uses JavaScript to localize the "Welcome back Administrator. You have 2 messages in your inbox." sentence:
 
 ```
 Granite.I18n.setLocale("fr");

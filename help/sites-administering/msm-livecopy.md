@@ -148,7 +148,7 @@ To create a live copy of a site from a blueprint configuration:
 
    ![Select blueprint configuration as source of live copy](assets/blueprint-configuration-select.png)
 
-1. Use the **Initial Languages** selector to specify the language(s) of the blueprint site to use for the live copy.
+1. Use the **Initial Languages** selector to specify the languages of the blueprint site to use for the live copy.
 
    All available languages are selected by default. To remove a language, click or tap the **X** that appears next to the language.
 

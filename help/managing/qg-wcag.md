@@ -97,7 +97,7 @@ Techniques for WCAG 2.1 are available on the [Techniques for WCAG 2.1](https://w
 
 **Techniques** form the level below success criteria in the WCAG 2.1 hierarchy. They are classed by WAI as informative, not normative. In other words, a specific technique does not have to be followed in order for a resource to conform with WCAG 2.1.
 
-Because techniques are much more specific than success criteria, they usually refer to a particular technology or content type (e.g. HTML, or video), or situation (e.g. e-commerce or e-learning application). You can think of techniques as proven examples of how specific guidelines and success criteria can be met, so they are helpful aids to authors and developers working in particular contexts.
+Because techniques are much more specific than success criteria, they usually refer to a particular technology or content type (for example, HTML, or video), or situation (for example, e-commerce or e-learning application). You can think of techniques as proven examples of how specific guidelines and success criteria can be met, so they are helpful aids to authors and developers working in particular contexts.
 
 Techniques can be accessed:
 

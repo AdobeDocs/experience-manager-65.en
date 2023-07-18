@@ -80,7 +80,7 @@ This shows a component tree that:
     * Repository path
     * Links to scripts (accessed in CRXDE Lite)
 
-* Selected components (in the content flow, indicated by a blue border) will be highlighted in the content tree (and vice versa).
+* Selected components (in the content flow, indicated by a blue border) will be highlighted in the content tree (and conversely).
 
 This can help to:
 

@@ -95,7 +95,7 @@ You can edit email content in either the classic user interface or the touch-opt
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
-1. Edit email content by adding the elements you would like from those available in the sidekick. To do this, drag and drop them. Then double click the element you want to edit.
+1. Edit email content by adding the elements you would like from those available in the sidekick. To do this, drag and drop them. Then double-click the element you want to edit.
 
    For example, you can add text containing personalization fields.
 

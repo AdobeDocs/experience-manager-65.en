@@ -19,7 +19,7 @@ Adobe Analytics uses the `s.pageName` property to uniquely identify pages and to
 
 * Design the page component so that it includes the CQ variable that you map to the `s.pageName` property. (See [Implementing Adobe Analytics Tracking for Custom Components](/help/sites-developing/extending-analytics-components.md).)
 
-To expose Analytics report data in the Sites console and in Content Insight, AEM requires the value of the `s.pageName` property for each page. The AEM Analytics Java API defines the `AnalyticsPageNameProvider` interface that you implement to provide the Sites console and Content Insights with the value of the `s.pageName` property. Your `AnaltyicsPageNameProvider` service resolves the pageName property on the server for reporting purposes, as it can be dynamically set using Javascript on the client for tracking purposes.
+To expose Analytics report data in the Sites console and in Content Insight, AEM requires the value of the `s.pageName` property for each page. The AEM Analytics Java API defines the `AnalyticsPageNameProvider` interface that you implement to provide the Sites console and Content Insights with the value of the `s.pageName` property. Your `AnaltyicsPageNameProvider` service resolves the pageName property on the server for reporting purposes, as it can be dynamically set using JavaScript on the client for tracking purposes.
 
 ## The Default Analytics Page Name Provider Service {#the-default-analytics-page-name-provider-service}
 

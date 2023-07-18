@@ -217,7 +217,7 @@ Go to: [http://localhost:4502/system/console/bundles](http://localhost:4502/syst
 
 Only a user who is authenticated on both AEM and SharePoint can access the SharePoint content through the connector.
 
-You can also use the connector extension for authentication to create a custom authentication module, which, e.g., maps access by AEM users to specific SharePoint users. Create AEM users corresponding to SharePoint users (user name and password should match) to be able to see SharePoint content mapped to the connector instance.
+You can also use the connector extension for authentication to create a custom authentication module, which, for example,, maps access by AEM users to specific SharePoint users. Create AEM users corresponding to SharePoint users (user name and password should match) to be able to see SharePoint content mapped to the connector instance.
 
 To create a user in AEM:
 

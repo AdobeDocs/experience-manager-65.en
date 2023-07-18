@@ -16,7 +16,7 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 
 ## Browse to New Site on Publish {#browse-to-new-site-on-publish}
 
-Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, e.g:
+Now that the newly created communities site has been published, browse to the URL displayed when creating the site, but on the publish server, for example,:
 
 * Author URL = https://localhost:4502/content/sites/engage/en.html
 * Publish URL = https://localhost:4503/content/sites/engage/en.html

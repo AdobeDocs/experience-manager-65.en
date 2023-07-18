@@ -33,7 +33,7 @@ The following two images show the difference between the default and customized 
 
    Navigate to the folder in which you have created the profile renderer and create a CSS style sheet file. The steps to follow are
 
-    1. Right click the folder and select **create** &gt; **create File** from the menu
+    1. Right-click the folder and select **create** &gt; **create File** from the menu
 
     1. In the create file dialog, enter the name of the style sheet. Make sure that you use the extension .css (for example stylesheet.css)
     1. From the navigation pane, open the CSS file that you have created.

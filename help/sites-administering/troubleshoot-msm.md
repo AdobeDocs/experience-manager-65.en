@@ -58,7 +58,7 @@ Knowing those properties can be also useful in order to query your repository an
 
 Here are some frequently-asked questions related to MSM and Live Copy.
 
-### Why are some properties (e.g. title, annotations) are not updated during an MSM rollout? {#missing-properties}
+### Why are some properties (for example, title, annotations) are not updated during an MSM rollout? {#missing-properties}
 
 MSM sync actions are highly configurable. Which properties or components are modified during rollouts directly depends on properties of those configurations.
 
@@ -75,7 +75,7 @@ As an alternative you can either:
 
 ### Why do I see Live Copy pages with the suffix "_msm_moved"? {#moved-pages}
 
-If a blueprint page is rolled out, it will either update its Live Copy page or create a new Live Copy page if it didn't exist yet (e.g. when it is rolled out for the first time or the Live Copy page was manually deleted).
+If a blueprint page is rolled out, it will either update its Live Copy page or create a new Live Copy page if it didn't exist yet (for example, when it is rolled out for the first time or the Live Copy page was manually deleted).
 
 In this latter case however, if a page without a `cq:LiveRelationship` property exists with the same name, this page will be renamed accordingly, before the Live Copy page is created.
 

@@ -40,7 +40,7 @@ If deployed, the following happens by default:
 * the run mode is `author`
 * the instance (Repository, Felix OSGI environment, bundles and so on) is installed in `${user.dir}/crx-quickstart`where `${user.dir}` is the current working directory, this path to crx-quickstart is called `sling.home`
 
-* the context root is the war file name e.g : `aem-6`
+* the context root is the war file name for example, : `aem-6`
 
 #### Configuration {#configuration}
 
@@ -125,7 +125,7 @@ Set Memory arguments in your conf file (for example, `standalone.conf`)
 
 * JAVA_OPTS="-Xms64m -Xmx2048m"
 
-If you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (e.g `configuration/standalone.xml)`:
+If you use the deployment-scanner for to install the AEM web application it might be good to increase the `deployment-timeout,` for that set a `deployment-timeout` attribute in the xml file of your instance (for example, `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -235,7 +235,7 @@ Before a deployment read the [General Description](#general-description) above.
     * uncomment sling.home initial parameter and set this path as you need
     * Repack web.xml file
 
-  * Rename AEM war file to ROOT.war if you like to deploy it as root webapp, rename it to e.g aemauthor.war if you like to have aemauthor as context root
+  * Rename AEM war file to ROOT.war if you like to deploy it as root webapp, rename it to for example, aemauthor.war if you like to have aemauthor as context root
   * copy it into tomcat's webapps folder
   * wait until AEM is installed
 

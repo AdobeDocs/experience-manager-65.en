@@ -138,7 +138,7 @@ Accessibility design involves considering additional guidelines for color usage.
 
 Users with vision impairment rely on a high contrast between text and the background to read digital content. Without sufficient contrast, a form can become difficult, if not impossible, to read for some users.
 
-It is recommended that you use the default font and background colors--content in black color on a white background. If you change the default colors, choose either a dark foreground color on a light background color, or vice versa.
+It is recommended that you use the default font and background colors--content in black color on a white background. If you change the default colors, choose either a dark foreground color on a light background color, or conversely.
 
 See [Creating custom themes for adaptive forms](/help/forms/using/creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the adaptive forms.
 

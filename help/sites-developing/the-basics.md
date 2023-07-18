@@ -131,8 +131,8 @@ With Sling, you specify which script renders a certain entity (by setting the `s
 
 The request is broken down and the necessary information extracted. The repository is searched for the requested resource (content node):
 
-* first Sling checks whether a node exists at the location specified in the request; e.g. `../content/corporate/jobs/developer.html`
-* if no node is found, the extension is dropped and the search repeated; e.g. `../content/corporate/jobs/developer`
+* first Sling checks whether a node exists at the location specified in the request; for example, `../content/corporate/jobs/developer.html`
+* if no node is found, the extension is dropped and the search repeated; for example, `../content/corporate/jobs/developer`
 * if no node is found then Sling will return the http code 404 (Not Found).
 
 Sling also allows things other than JCR nodes to be resources, but this is an advanced feature.
@@ -321,7 +321,7 @@ This enables you to perform the following actions on any of the packages within 
 * update
 * uninstall
 * see the current status
-* access more detailed information (e.g. symbolic name, version, location, etc) about the specific bundles
+* access more detailed information (for example, symbolic name, version, location, etc) about the specific bundles
 
 See [the Web Console](/help/sites-deploying/web-console.md), [OSGI Configuration](/help/sites-deploying/configuring-osgi.md) and [OSGi Configuration Settings](/help/sites-deploying/osgi-configuration-settings.md) for more information.
 

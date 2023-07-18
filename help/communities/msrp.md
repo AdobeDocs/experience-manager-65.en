@@ -170,7 +170,7 @@ When reindexing, there is a tradeoff between memory and performance controlled b
 
 A reasonable default is 5000:
 
-* If memory is an issue, specify a a smaller number
+* If memory is an issue, specify a smaller number
 * If speed is an issue, specify a larger number to increase speed
 
 ### Running MSRP Reindex Tool Using cURL Command {#running-msrp-reindex-tool-using-curl-command}

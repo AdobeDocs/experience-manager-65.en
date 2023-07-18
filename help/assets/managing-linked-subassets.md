@@ -65,7 +65,7 @@ This procedure is similar to [add digital assets as references in Adobe Illustra
 
 ## [!DNL Adobe Photoshop]: Add digital assets as references {#refps}
 
-1. Use [!DNL Experience Manager] desktop app to access [!DNL Experience Manager Assets]. Download and reveal the assets on local file system. Use the the [!UICONTROL Place Linked] functionality in [!DNL Adobe Photoshop]. See [place assets in desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Use [!DNL Experience Manager] desktop app to access [!DNL Experience Manager Assets]. Download and reveal the assets on local file system. Use the [!UICONTROL Place Linked] functionality in [!DNL Adobe Photoshop]. See [place assets in desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
 1. Save in [!DNL Photoshop] file to the mounted drive or [upload](/help/assets/manage-assets.md#uploading-assets) to the [!DNL Experience Manager] repository.
 1. After the workflow completes, the references to existing [!DNL Experience Manager] assets are listed in the asset details page.
