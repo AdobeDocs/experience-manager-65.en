@@ -259,7 +259,7 @@ A template can be made available or unavailable for certain page branches.
 
 1. Open the **Advanced** tab.
 
-1. Under **Template Settings** use **Add field** to specify the path(s) to your template(s).
+1. Under **Template Settings** use **Add field** to specify the paths to your template(s).
 
    The path can be explicit or use patterns. For example:
 

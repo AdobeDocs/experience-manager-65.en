@@ -403,7 +403,7 @@ When the topology is a [publish farm](/help/sites-deploying/recommended-deploys.
 
 ### Users or User Groups are Created Using Security Console {#users-or-user-groups-are-created-using-security-console}
 
-By design, user data created in the publish environment does not appear in the author environment and vice versa.
+By design, user data created in the publish environment does not appear in the author environment and conversely.
 
 When the [User Administration and Security](/help/sites-administering/security.md) console is used to add new users in the publish environment, user sync will synchronize the new users and their group membership to other publish instances, if necessary. User sync will also synchronize user groups created through the security console.
 

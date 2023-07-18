@@ -21,7 +21,7 @@ The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabl
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries
 * directly input new queries 
 * create, and access, **[Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md)**
-* run your queries to immediately see the the results
+* run your queries to immediately see the results
 * manage **Query Variables** 
 * save, and manage **Persisted Queries**
 * publish, or unpublish, **Persisted Queries** (for example, to/from `dev-publish`)

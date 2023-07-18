@@ -1,14 +1,10 @@
 ---
 title: Opting Into Aggregated Usage Statistics Collection
-seo-title: Opting Into Aggregated Usage Statistics Collection
 description: Learn how to opt into aggregated usage statistics.
-seo-description: Learn how to opt into aggregated usage statistics.
-uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
 ---
@@ -16,7 +12,7 @@ exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
 
 ## Introduction {#introduction}
 
-You can help improve Adobe Marketing Cloud by sending Adobe statistics about how you interact with AEM. This information does not contain any data about your company's site visitors and will only be used to help Adobe deliver, support and improve your user experience.
+You can help improve Adobe Experience Cloud by sending Adobe statistics about how you interact with Adobe Experience Manager (AEM). This information does not contain any data about your company's site visitors and is only used to help Adobe deliver, support, and improve your user experience.
 
 You can opt into usage statistics collection by using either the Touch UI or the Web Console.
 
@@ -28,7 +24,7 @@ You can opt into usage statistics collection by using either the Touch UI or the
 
 >[!NOTE]
 >
->You can also opt-out at anytime by either using the [Web Console](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) or by not selecting the opt-in option on the AEM opt-in screen.
+>You can opt-out at any time by either using the [Web Console](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) or by not selecting the opt-in option on the AEM opt-in screen.
 
 ## Opt-in by using the Touch UI {#opt-in-by-using-the-touch-ui}
 

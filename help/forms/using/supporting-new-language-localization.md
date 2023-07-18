@@ -94,7 +94,7 @@ I18N.js
 
 ### Add adaptive form client library for a locale {#add-adaptive-form-client-library-for-a-locale-br}
 
-Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, with category as `guides.I18N.<locale>` and and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`. ``
+Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, with category as `guides.I18N.<locale>` and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`. ``
 
 Add the following files to the client library:
 

@@ -1,17 +1,17 @@
 ---
 title: Adding ContextHub to Pages and Accessing Stores
-description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries
+description: Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub JavaScript libraries
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 ---
 # Adding ContextHub to Pages and Accessing Stores {#adding-contexthub-to-pages-and-accessing-stores}
 
-Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub Javascript libraries.
+Add ContextHub to your pages to enable the ContextHub features and to link to the ContextHub JavaScript libraries.
 
-The ContextHub Javascript API provides access to the context data that ContextHub manages. This page briefly describes the main features of the API for accessing and manipulating context data. Follow links to the API reference documentation to see detailed information and code examples.
+The ContextHub JavaScript API provides access to the context data that ContextHub manages. This page briefly describes the main features of the API for accessing and manipulating context data. Follow links to the API reference documentation to see detailed information and code examples.
 
 ## Adding ContextHub to a Page Component {#adding-contexthub-to-a-page-component}
 
-To enable the ContextHub features and to link to the ContextHub Javascript libraries, include the `contexthub` component in the `head` section of your page. The HTL code for your page component should resemble the following example:
+To enable the ContextHub features and to link to the ContextHub JavaScript libraries, include the `contexthub` component in the `head` section of your page. The HTL code for your page component should resemble the following example:
 
 ```xml
 <sly data-sly-resource="${'contexthub' @ resourceType='granite/contexthub/components/contexthub'}"/>
@@ -38,7 +38,7 @@ Context Hub stores use one of the following persistence modes:
 * **Session:** Uses HTML5 sessionStorage to persist data. Session storage is persisted for the duration of the browser session and is available to all browser windows.
 * **Cookie:** Uses the browser's native support of cookies for data storage. Cookie data is sent to and from the server in HTTP requests.
 * **Window.name:** Uses the window.name property to persist data.
-* **Memory:** Uses a Javascript object to persist data.
+* **Memory:** Uses a JavaScript object to persist data.
 
 By default, Context Hub uses the Local persistence mode. If the browser does not support or allow HTML5 localStorage, Session persistence is used. If the browser does not support or allow HTML5 sessionStorage, Window.name persistence is used.
 
@@ -77,17 +77,17 @@ The tree structure defines data items in the store as key/value pairs. In the ab
 
 ### Manipulating Objects {#manipulating-objects}
 
-ContextHub provides the [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) class for manipulating Javascript objects. Use the functions of this class for manipulating Javascript objects before you add them to a store, or after you obtain them from a store.
+ContextHub provides the [`ContextHub.Utils.JSON.tree`](contexthub-api.md#contexthub-utils-json-tree) class for manipulating JavaScript objects. Use the functions of this class for manipulating JavaScript objects before you add them to a store, or after you obtain them from a store.
 
 Additionally, the [`ContextHub.Utils.JSON`](contexthub-api.md#contexthub-utils-json) class provides functions for serializing objects to stings, and deserializing strings to objects. Use this class for handling JSON data to support browsers that do not natively include the `JSON.parse` and `JSON.stringify` functions.
 
 ## Interacting with ContextHub Stores {#interacting-with-contexthub-stores}
 
-Use the [`ContextHub`](contexthub-api.md#ui-event-constants) Javascript object to obtain a store as a Javascript object. Once you obtain the store object you can manipulate the data that it contains. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
+Use the [`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript object to obtain a store as a JavaScript object. Once you obtain the store object you can manipulate the data that it contains. Use the [`getAllStores`](contexthub-api.md#getallstores) or the [`getStore`](contexthub-api.md#getstore-name) function to obtain the store.
 
 ### Accessing Store Data {#accessing-store-data}
 
-The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) Javascript class defines several functions for interacting with store data. The following functions store and retrieve multiple data items that are contained in objects:
+The [`ContexHub.Store.Core`](contexthub-api.md#contexthub-store-core) JavaScript class defines several functions for interacting with store data. The following functions store and retrieve multiple data items that are contained in objects:
 
 * [addAllItems](contexthub-api.md#addallitems-tree-options)
 * [getTree](contexthub-api.md#gettree-includeinternals)
@@ -107,11 +107,11 @@ Note that custom store candidates can define additional functions that provide a
 
 ### ContextHub Eventing {#contexthub-eventing}
 
-ContextHub includes an event framework that enables you to automatically react to store events. Each store object contains a [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object that is available as the store's [`eventing`](contexthub-api.md#eventing) property. Use the [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) or [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) function to bind a Javascript function to a store event.
+ContextHub includes an event framework that enables you to automatically react to store events. Each store object contains a [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object that is available as the store's [`eventing`](contexthub-api.md#eventing) property. Use the [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) or [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) function to bind a JavaScript function to a store event.
 
 ## Using Context Hub to Manipulate Cookies {#using-context-hub-to-manipulate-cookies}
 
-The Context Hub Javascript API provides cross-browser support for handling browser cookies. The [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
+The Context Hub JavaScript API provides cross-browser support for handling browser cookies. The [`ContextHub.Utils.Cookie`](contexthub-api.md#contexthub-utils-cookie) namespace defines several functions for creating, manipulating, and deleting cookies.
 
 ## Determining Resolved ContextHub Segments {#determining-resolved-contexthub-segments}
 

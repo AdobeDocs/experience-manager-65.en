@@ -20,7 +20,7 @@ Due to the possibility of different values, page properties are not enabled for 
 * Certain fields are usually unique; for example a page title. You must decide whether it is meaningful to enable such fields for bulk editing, when one value will be applied.
 * Certain fields might have multiple values - this needs meaningful representation when rendering.
 
-  For example, a check-box indicating "Ready for Publication". This might have several values before bulk-editing (e.g. ready, in-review, in-progress).
+  For example, a check-box indicating "Ready for Publication". This might have several values before bulk-editing (for example, ready, in-review, in-progress).
 
 >[!CAUTION]
 >

@@ -18,7 +18,7 @@ This provides a paragraph system that allows you to position components within a
 The layout container:
 
 * Provides horizontal snap to grid, together with the ability to place components into the grid side-by-side and define when they should collapse/reflow.
-* Uses pre-defined breakpoints (e.g. for phone, tablet, etc.) to allow you to define the required behavior of content for related devices/orientation.
+* Uses pre-defined breakpoints (for example, for phone, tablet, etc.) to allow you to define the required behavior of content for related devices/orientation.
 
     * For example, you can customize the component size or whether the component can be seen on specific devices.
 

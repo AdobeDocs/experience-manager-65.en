@@ -1,19 +1,17 @@
 ---
 title: Push Notifications
 description: Follow this page to learn about how to use push notifications in an Adobe Experience Manager Mobile app.
-uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 ---
 # Push Notifications{#push-notifications}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Being able to instantly alert your AEM Mobile app users with important notifications is crucial to the value of a mobile app and its marketing campaigns. Here, we describe the steps that need to be taken to allow your app to receive push notifications, and how to configure and send pushes from AEM Mobile to the app installed on the phone. Additionally, this section describes how to configure the [Deep Linking](#deeplinking) feature to your push notifications.
 
@@ -225,7 +223,7 @@ The push notification client libraries must be added to the app by following the
 In CRXDE Lite:
 
 1. Navigate to */etc/designs/phonegap/&lt;app name&gt;/clientlibsall.*
-1. Double click on the embed section in the properties pane.
+1. Double-click on the embed section in the properties pane.
 1. In the dialog that appears, add a new client lib by clicking the + button.
 1. In the new text field, add "cq.mobile.push", and click OK.
 1. Add one more called cq.mobile.push.amazon, and click OK.

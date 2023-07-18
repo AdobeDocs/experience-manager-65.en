@@ -170,7 +170,7 @@ Configure WebLogic so that it uses the Custom Identity keystore and Custom Trust
 1. Under Environment, in Domain Configurations, click **Servers &gt; [*Managed Server*] &gt; Configuration &gt; General**.
 1. Under General, in Configuration, select **Keystores**.
 1. Under the Change Center, click **Lock & Edit** to modify selections and values.
-1. Click **Change** to to get the keystore list as drop-down list and select **Custom Identity And Custom Trust**.
+1. Click **Change** to get the keystore list as drop-down list and select **Custom Identity And Custom Trust**.
 1. Under Identity, specify the following values:
 
    **Custom Identity Keystore**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, where *[appserverdomain] *is the actual path and *[server name]* is the name of the application server.

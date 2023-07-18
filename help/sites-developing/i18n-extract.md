@@ -16,7 +16,7 @@ exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 Use xgettext-maven-plugin to extract strings from your source code that need translating. The Maven plugin extracts strings to an XLIFF file that you send for translating. Strings are extracted from the following locations:
 
 * Java source files
-* Javascript source files
+* JavaScript source files
 * XML representations of SVN resources (JCR Nodes)
 
 ## Configuring String Extraction {#configuring-string-extraction}
@@ -43,7 +43,7 @@ Configure how the xgettext-maven-plugin tool extracts strings for your project.
 |---|---|
 | /filter |Identifies the files that are parsed. |
 | /parsers/vaultxml  |Configures the parsing of Vault files. Identifies the JCR nodes that contain externalized strings and localization hints. Also identifies JCR nodes to ignore. |
-| /parsers/javascript |Identifies the Javascript functions that externalize strings. You do not need to change this section. |
+| /parsers/javascript |Identifies the JavaScript functions that externalize strings. You do not need to change this section. |
 | /parsers/regexp |Configures the parsing of Java, JSP, and ExtJS Template files. You do not need to change this section. |
 | /potentials |The formula for detecting strings to internationalize. |
 
@@ -132,7 +132,7 @@ mvn xgettext:extract
 * `raw.xliff`: extracted strings
 * `warn.log`: warnings (if any), if `CQ.I18n.getMessage()` API is used incorrectly. These always need a fix and then a re-run.
 
-* `parserwarn.log`: parser warnings (if any), e.g. js parser issues
+* `parserwarn.log`: parser warnings (if any), for example, js parser issues
 * `potentials.xliff`: "potential" candidates that are not extracted, but might be human readable strings that need translation (can be ignored, still produces a huge amount of false positives)
 * `strings.xliff`: flattened xliff file, to be imported into ALF
 * `backrefs.txt`: allows for quick lookup of source code locations for a given string

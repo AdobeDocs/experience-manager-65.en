@@ -133,7 +133,7 @@ You can also use the component to control the behavior of the task. For example,
 
 ## Send Email Step {#send-email-step}
 
-Use the email step to send an email, for example an email with a document of record, link of an adaptive form, link of an interactive communication, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define appearance, color-scheme, and behavior of the of the email.
+Use the email step to send an email, for example an email with a document of record, link of an adaptive form, link of an interactive communication, or with an attached PDF document. Send Email step supports [HTML email](https://en.wikipedia.org/wiki/HTML_email). HTML emails are responsive and adapt to the recipients' email client and screen size. You can use an HTML email template to define appearance, color-scheme, and behavior of the email.
 
 The email step uses Day CQ Mail Service to send emails. Before using the email step, ensure that the [email service](../../forms/using/aem-forms-workflow.md) is configured. The email step has the following properties:
 
@@ -157,7 +157,7 @@ The email step uses Day CQ Mail Service to send emails. Before using the email s
 * **Asset URL:** Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server.
 * **Image:** Use the option to embed an image to the email. After selecting the option, browse and choose the image. The image option is available only for the image tags (&lt;img src="&#42;"/&gt;) available in the email template.
 
-**Sender’s / Recipient's Email Address:** Select the **Literal** option to manually specify an email address or select the **Retrieve from Workflow metadata** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the **Retrieve from Workflow metadata** option. Select the **Variable** option to retrieve the e-mail address from the value stored in a variable of string data type.
+**Sender's / Recipient's Email Address:** Select the **Literal** option to manually specify an email address or select the **Retrieve from Workflow metadata** option to retrieve the email address from a metadata property. You can also specify a list of metadata property arrays for the **Retrieve from Workflow metadata** option. Select the **Variable** option to retrieve the e-mail address from the value stored in a variable of string data type.
 
 **File Attachment:** The asset available at the specified location is attached to the email. The path of the asset can be relative to the payload or absolute path. An example path is [Payload_Directory]/attachments/.
 
@@ -393,7 +393,7 @@ Encrypt, Sign, and certify a document. AEM Forms supports both password based an
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **Direct accessible printer**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **Indirect accessible printer**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **Indirect accessible printer**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
 
 ### Generate Printed Output Step {#generatePrintedOutput}
 

@@ -613,11 +613,11 @@ You can use administration console to specify whether documents are secure when 
 1. Click **Settings**.
 1. Click **Core System Settings.**
 1. Click Configurations.
-1. Ensure that the Allow non secured document upload from Flex applications option is unselected.
+1. Ensure that the Allow non-secured document upload from Flex applications option is unselected.
 
 >[!NOTE]
 >
->To configure AEM Forms to accept unsecure documents, select the Allow non secured document upload from Flex applications option. Then restart an application or service to ensure that the setting takes effect.
+>To configure AEM Forms to accept unsecure documents, select the Allow non-secured document upload from Flex applications option. Then restart an application or service to ensure that the setting takes effect.
 
 ### Quick Start: Invoking a short-lived process by passing a secure document using Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

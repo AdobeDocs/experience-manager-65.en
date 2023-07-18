@@ -190,7 +190,7 @@ A scaffold is needed for each distinct product type. The appropriate scaffold is
 
    ![products console with references open](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Click/tap on the reference type (e.g. Product Pages) to expand the list.
+1. Click/tap on the reference type (for example, Product Pages) to expand the list.
 1. Select a specific reference to show the options:
 
     * Navigate to Product Page
@@ -380,7 +380,7 @@ Clicking the hotspot opens a dialog which let you choose the size and quantity o
 1. You can either:
 
     * click the component and then click Edit icon
-    * make a slow double click
+    * make a slow double-click
 
 1. Click the fullscreen icon.
 

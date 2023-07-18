@@ -264,7 +264,7 @@ There are various help resources available:
 
 ## Actions Toolbar {#actions-toolbar}
 
-Whenever a resource is selected (e.g. a page or an asset), various actions are indicated by icons with explanatory text in the toolbar. These actions are dependent on:
+Whenever a resource is selected (for example, a page or an asset), various actions are indicated by icons with explanatory text in the toolbar. These actions are dependent on:
 
 * The current console.
 * The current context.

@@ -88,7 +88,7 @@ The following is a list of recommendations from Product Management for Adobe Exp
     </ol> </td>
   </tr>
   <tr>
-   <td><p>Has used CQ/AEM for many years.</p> <p>Has extended the product UI (e.g Site Admin) and built components with extensive edit dialogs.</p> </td>
+   <td><p>Has used CQ/AEM for many years.</p> <p>Has extended the product UI (for example, Site Admin) and built components with extensive edit dialogs.</p> </td>
    <td><p>Update to 6.5 and configure the classic UI as the default for page authoring for all users. See <a href="#selecting-your-ui">Selecting Your UI</a>.</p> <p>Then start a project to apply customization and optimize component dialogs in Coral 3 format. See <a href="#resources-to-help">Resources to Help</a>.<br /> </p> </td>
   </tr>
  </tbody>

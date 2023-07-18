@@ -214,7 +214,7 @@ You set HTML run-time options when rendering an HTML form. For example, you can 
 * `Upload`: Provides a user interface to select files to attach to the current form.
 * `Download`: Provides a user interface to display the attached files.
 
-When a HTML toolbar appears on a HTML form, a user can select a maximum of ten files to submit along with form data. Once the files are submitted, the Forms service can retrieve the files.
+When an HTML toolbar appears on an HTML form, a user can select a maximum of ten files to submit along with form data. Once the files are submitted, the Forms service can retrieve the files.
 
 When rendering a form as HTML, you can specify a user-agent value. A user-agent value provides browser and system information. This is an optional value, and you can pass an empty string value. The Rendering an HTML form using the Java API quick start shows how to obtain a user agent value and use it to render a form as HTML.
 

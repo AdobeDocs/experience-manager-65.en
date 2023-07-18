@@ -96,7 +96,7 @@ The page **Title** and **Name** can be created separately but are related:
 >
 >When defining a page name, a good rule-of-thumb is to keep the page name as brief but as expressive and memorable as possible to make it easy to understand for the reader. See the [W3C style guide](https://www.w3.org/Provider/Style/TITLE.html) for the `title` element for more information.
 >
->Also keep in mind that some browsers (e.g. older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
+>Also keep in mind that some browsers (for example, older versions of IE) can only accept URLs up to a certain length, so there is also technical reason to keep page names short.
 
 When creating a new page, AEM will [validate the page name according to the conventions](/help/sites-developing/naming-conventions.md) imposed by AEM and the JCR.
 

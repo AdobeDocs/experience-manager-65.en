@@ -59,7 +59,7 @@ To enable or disable viewer presets in the user interface, see [Manage Viewer Pr
       <p><strong>Navigating the 3D scene</strong></p>
       <ul>
       <li><p><strong>Turn your 3D camera</strong> - Orbit your view around the 3D scene and objects.</p> Mouse: Left click + Drag </p> Touch-screen: Press + Drag</p></li>
-      <li><p><strong>Pan your camera</strong> - Pan your view left, right, up, and down.</p> Mouse: Right click + Drag </p> Touch-screen: Two-finger press + Drag</p></li>
+      <li><p><strong>Pan your camera</strong> - Pan your view left, right, up, and down.</p> Mouse: Right-click + Drag </p> Touch-screen: Two-finger press + Drag</p></li>
       <li><p><strong>Zoom your camera</strong> - Zoom your camera so you can move in and out of areas in the 3D scene.</p> Mouse: Scroll wheel </p> Touch-screen: Finger pinch</p></li>
       <li><p><strong>Recenter your camera</strong> - Orbit your view around the 3D scene and objects.</p> Mouse: Double-click </p> Touch-screen: Double-tap</li></ul></td>
       </tr>

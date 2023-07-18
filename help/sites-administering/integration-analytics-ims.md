@@ -148,7 +148,7 @@ Returning to AEM you can complete the IMS configuration by adding required value
 1. Here you can use the [Details stored for the Adobe Developer Console Integration Project](#details-stored-for-the-ims-integration-project):
 
     * **Title**: Your text.
-    * **Authorization Server**: Copy/paste this from the `aud` line of the **Payload** section below, e.g. `https://ims-na1.adobelogin.com` in the example below
+    * **Authorization Server**: Copy/paste this from the `aud` line of the **Payload** section below, for example, `https://ims-na1.adobelogin.com` in the example below
     * **API Key**: Copy this from the **Credentials** section of the [Project overview](#details-stored-for-the-ims-integration-project) 
     * **Client Secret**: Generate this in the [Client Secret tab of the Service Account (JWT) section](#details-stored-for-the-ims-integration-project), and copy
     * **Payload**: Copy this from the [Generate JWT tab of the Service Account (JWT) section](#details-stored-for-the-ims-integration-project) 

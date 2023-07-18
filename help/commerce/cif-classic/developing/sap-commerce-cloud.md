@@ -280,7 +280,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -542,7 +542,7 @@ The entry point for the search API is the `CommerceService#search` method which 
 
 ### User Integration {#user-integration}
 
-Integration is provided between AEM and various eCommerce systems. This requires a strategy for synchronizing shoppers between the various systems so that AEM-specific code only has to know about AEM and vice versa:
+Integration is provided between AEM and various eCommerce systems. This requires a strategy for synchronizing shoppers between the various systems so that AEM-specific code only has to know about AEM and conversely:
 
 * Authentication
 

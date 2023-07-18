@@ -15,7 +15,7 @@ exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 AEM integrates with PhoneGap so that you can easily create apps using AEM pages. PhoneGap allows the user to create utility apps that lets user to work with the content. Content Sync enables you to create versioned archives of pages for bundling with apps.
 

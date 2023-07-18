@@ -25,7 +25,7 @@ An annotation places a colored marker/sticky-note on the page. The annotation al
 
 >[!CAUTION]
 >
->Deleting a resource (e.g. paragraph) deletes all the annotations and sketches attached to that resource irrespective of their position on the page as a whole.
+>Deleting a resource (for example, paragraph) deletes all the annotations and sketches attached to that resource irrespective of their position on the page as a whole.
 
 >[!NOTE]
 >

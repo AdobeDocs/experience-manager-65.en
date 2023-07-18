@@ -25,7 +25,7 @@ Microsoft Dynamics is a Customer Relationship Management (CRM) and Enterprise Re
 
 * Query Microsoft Dynamics server for data and prepopulate adaptive forms
 * Write data into Microsoft Dynamics on adaptive form submission
-* Write data in Microsoft Dynamics through custom entities defined in form data model and vice versa
+* Write data in Microsoft Dynamics through custom entities defined in form data model and conversely
 
 AEM Forms add-on package also includes reference OData configuration that you can leverage to quickly integrate Microsoft Dynamics with AEM Forms.
 

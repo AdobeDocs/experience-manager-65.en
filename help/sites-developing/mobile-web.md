@@ -16,7 +16,7 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 AEM provides several tools that enable you to develop sites for mobile devices and to integrate your content into mobile applications.
 

@@ -84,10 +84,10 @@ Perform these steps to enable Assets Insights through DTM.
              "",  /** RSID to send tracking-call to */
              "",  /** Tracking Server to send tracking-call to */
              "",  /** Visitor Namespace to send tracking-call to */
-             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, e.g. 'listVar1' */
-             "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
-             "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
-             "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
+             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, for example, 'listVar1' */
+             "",  /** eVar to put Asset ID for Asset Click Events in, for example, 'eVar3' */
+             "",  /** event to include in tracking-calls for Asset Impression Events, for example, 'event8' */
+             "",  /** event to include in tracking-calls for Asset Click Events, for example, 'event7' */
              sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;

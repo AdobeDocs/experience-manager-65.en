@@ -14,7 +14,7 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 A Space is a convenient location to store entities that are exposed through the Content Services REST API. This is especially useful because an app (or any channel) can be associated with many entities. Forcing Entities to be within a Space forces the best practice of grouping an App's requirements. Optionally, you can associate an app in AEM with a small number of Spaces.
 
