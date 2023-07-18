@@ -57,7 +57,7 @@ As described on the parent [Repository Restructuring in AEM 6.5](/help/sites-dep
 
 Additionally on the ContextHub configuration, the `sling:resourceType` needs to be updated to be relative and not absolute.
 
-1. Open the properties of ContextHub configuration node in CRX DE Lite, e.g. `/apps/settings/cloudsettings/legacy/contexthub`
+1. Open the properties of ContextHub configuration node in CRX DE Lite, for example, `/apps/settings/cloudsettings/legacy/contexthub`
 1. Change `sling:resourceType` from `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` to `granite/contexthub/cloudsettings/components/baseconfiguration`
 
 I.e. the `sling:resourceType` of the ContextHub configuration must be relative rather than absolute.

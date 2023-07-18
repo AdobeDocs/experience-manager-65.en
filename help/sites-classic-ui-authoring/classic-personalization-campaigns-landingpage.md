@@ -280,9 +280,9 @@ Two tabs are available for configuration **Form** and **Advanced**:
 **Post Options** The following post options are available:
 
 * Create Lead
-* Email Service: Create Subscriber and add to list - Use if you are using a email service provider like ExactTarget.
-* Email Service: Send auto-responder email - Use if you are using a email service provider like ExactTarget.
-* Email Service: Unsubscribe user from list - Use if you are using a email service provider like ExactTarget.
+* Email Service: Create Subscriber and add to list - Use if you are using an email service provider like ExactTarget.
+* Email Service: Send auto-responder email - Use if you are using an email service provider like ExactTarget.
+* Email Service: Unsubscribe user from list - Use if you are using an email service provider like ExactTarget.
 * Unsubscribe user
 
 **Form Identifier** The form identifier uniquely identifies the lead form. Use the form identifier if you have several forms on a single page; make sure they have different identifiers.

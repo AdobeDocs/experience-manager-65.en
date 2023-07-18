@@ -163,7 +163,7 @@ You can:
 
 * Type in a URI directly
 * Use the site map to select a page within your website
-* Enter the URI, then append the target anchor; e.g. `www.TargetUri.org#AnchorName`
+* Enter the URI, then append the target anchor; for example, `www.TargetUri.org#AnchorName`
 * Enter an anchor only (to reference "the current page"); For example, `#anchor`
 * Search for a page in the content finder, then drag and drop the page icon into the Hyperlink dialog
 
@@ -326,7 +326,7 @@ The current column can also be deleted.
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-Selects the entire current row or column. Specific actions (e.g. merge) are then available.
+Selects the entire current row or column. Specific actions (for example, merge) are then available.
 
 #### Merge Cells {#merge-cells}
 

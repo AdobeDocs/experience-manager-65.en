@@ -33,7 +33,7 @@ Web standards are constantly evolving and DHTML is an older web development tech
 * Complete font support
 * Plugin-less video playback
 
-Specific to the Scene7 DHTML viewer platform, both the JSP-based solution and the Javascript APIs were not optimized for mobile devices to take advantage of multi-touch and gesture capabilities. And even though DHTML viewers which were released in 2011/early 2012 are optimized for mobile, they were difficult to customize and maintain due to the lack of a flexible SDK component-based development framework.
+Specific to the Scene7 DHTML viewer platform, both the JSP-based solution and the JavaScript APIs were not optimized for mobile devices to take advantage of multi-touch and gesture capabilities. And even though DHTML viewers which were released in 2011/early 2012 are optimized for mobile, they were difficult to customize and maintain due to the lack of a flexible SDK component-based development framework.
 
 Driven by these limitations on DHTML and rapid industry traction with HTML5 as an emerging standard across both desktop and mobile, Scene7 has decided to invest in an HTML5-based viewer platform. This investment will offer our customers a robust platform against which they can build richer, more engaging interactive viewers that can reach users on multiple screens including desktop, iOS and Android devices.
 
@@ -53,7 +53,7 @@ To determine if the viewer your company is using is DHTML and hence affected by 
 
     [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#JSP_Reference)
 
-1. Your company is using a custom viewer created from the Javascript API:
+1. Your company is using a custom viewer created from the JavaScript API:
 
     [https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference](https://microsite.omniture.com/t2/help/en_US/s7/viewers_ref/index.html#API_Reference)
 

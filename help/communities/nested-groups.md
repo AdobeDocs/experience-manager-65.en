@@ -46,7 +46,7 @@ These consoles are similar to the Communities Sites console.
   * **[!UICONTROL Community Group Title]**: Arts
   * **[!UICONTROL Community Group Description]**: A parent group for various arts groups
   * **[!UICONTROL Community Group Root]**: *leave as default*
-  * **[!UICONTROL Additional Available Community Group Language(s)]**: use the drop-down menu to select the available community group language(s). The menu displays all the language(s) in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
+  * **[!UICONTROL Additional Available Community Group Language(s)]**: use the drop-down menu to select the available community group language(s). The menu displays all the languages in which the parent community site is created. Users can select among these languages to create groups in multiple locales in this single step. Same group gets created in multiple specified languages in the Groups console of the respective community sites.
   * **[!UICONTROL Community Group Name]**: arts
   * **[!UICONTROL Template]**: drop down to select `Reference Group`
   * Select **[!UICONTROL Next]**

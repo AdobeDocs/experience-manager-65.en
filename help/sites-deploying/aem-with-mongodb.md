@@ -161,7 +161,7 @@ mongodburi=mongodb://aem:aempassword@mongodbserver1.customer.com:27000,mongodbse
 #Name of MongoDB database to use
 db=aem
 
-#Store binaries in custom BlobStore e.g. FileDataStore
+#Store binaries in custom BlobStore for example, FileDataStore
 customBlobStore=true
 
 cache=2048

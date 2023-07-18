@@ -79,11 +79,11 @@ Create a dictionary for managing your localized UI strings. After you create a d
    >
    >This is the structure from the [Sling i18n module](https://sling.apache.org/site/internationalization-support.html).
 
-1. Reload the translator and the dictionary path (e.g. `/apps/myProject/i18n`) will be available in the drop-down selector in the toolbar. Select this to start adding strings and their translations.
+1. Reload the translator and the dictionary path (for example, `/apps/myProject/i18n`) will be available in the drop-down selector in the toolbar. Select this to start adding strings and their translations.
 
    >[!NOTE]
    >
-   >The translator will only save translations for languages that are actually present underneath the path (e.g. `/apps/myProject/i18n`).
+   >The translator will only save translations for languages that are actually present underneath the path (for example, `/apps/myProject/i18n`).
    >
    >Make sure that these correspond to the languages shown in the grid.
 
@@ -204,11 +204,11 @@ After you add the English string to a dictionary, you can add translations of th
 
 1. To edit the translated texts for one of the strings you can either:
 
-    * Double click on the appropriate language for the required string to edit that single text:
+    * Double-click on the appropriate language for the required string to edit that single text:
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-    * Double click on the **String** or **Comment** fields for the required string to open the **Edit string** dialog, edit the translation(s) as required, then click **OK** to close the dialog:
+    * Double-click on the **String** or **Comment** fields for the required string to open the **Edit string** dialog, edit the translation(s) as required, then click **OK** to close the dialog:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -331,7 +331,7 @@ After defing a dictionary for a language new to your AEM instance you need to ma
 
 Various countries use the same language, for example, the US, the UK and Australia all use English. This is indicated by a code indicating both language and country such as `en_US`, `en_GB` and `en_AU`.
 
-The default countries are used when displaying flags (e.g. in the language copy dialog), they are used to resolve the country for a language code.
+The default countries are used when displaying flags (for example, in the language copy dialog), they are used to resolve the country for a language code.
 
 >[!NOTE]
 >
@@ -347,7 +347,7 @@ To change the default definitions:
 
    `/apps/wcm/core/resources/languages`
 
-   Then changing or extending the list there. The property `defaultCountry` on a language node (e.g. `ja`) must contain the full code, such as `ja_jp`, which would define `jp` as the default country for the language `ja`.
+   Then changing or extending the list there. The property `defaultCountry` on a language node (for example, `ja`) must contain the full code, such as `ja_jp`, which would define `jp` as the default country for the language `ja`.
 
 1. Update the **CQ WCM Language Manager**.
 

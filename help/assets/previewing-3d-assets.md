@@ -74,7 +74,7 @@ In addition, the capabilities of the client computer &ndash; such as a workstati
     | View | Description | Mouse action | Touch screen action |
     | --- | --- | --- | --- |
     | **Turn your camera** | Orbit your view around the 3D scene and objects. | Left click + drag. | Single-finger press + drag. |
-    | **Pan your camera**  | Pan your view left, right, up, or down. | Right click + drag. | Two-finger press + drag. |
+    | **Pan your camera**  | Pan your view left, right, up, or down. | Right-click + drag. | Two-finger press + drag. |
     | **Zoom your camera**  | Move in and out of areas in the 3D scene. | Scroll wheel. | Two-finger pinch. |
     | **Recenter your camera**  | Recenter your camera to a point on an object in the 3D scene. | Double-click. | Double-tap. |
     | **Reset**  | Near the lower-right corner of the page, select the Reset icon to restore the view target point to the center of the 3D asset. Reset also moves the camera closer or further away to show the asset in its entirety and at a reasonable viewing size.  |   |   |

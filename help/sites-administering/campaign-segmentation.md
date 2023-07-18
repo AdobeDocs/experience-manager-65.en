@@ -81,7 +81,7 @@ The following segment traits are available out-of-the-box; they can be dragged f
   </tr>
   <tr>
    <td> Script</td>
-   <td>Javascript expression to be evaluated.<br /> </td>
+   <td>JavaScript expression to be evaluated.<br /> </td>
   </tr>
   <tr>
    <td> Segment Reference <br /> </td>

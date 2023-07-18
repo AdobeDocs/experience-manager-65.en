@@ -690,11 +690,11 @@ When `cq-msm-lockable` has been defined, breaking/closing the chain will interac
 
 * if the value of `cq-msm-lockable` is:
 
-  * **Relative** (e.g. `myProperty` or `./myProperty`)
+  * **Relative** (for example, `myProperty` or `./myProperty`)
 
     * it will add and remove the property from `cq:propertyInheritanceCancelled`.
 
-  * **Absolute** (e.g. `/image`)
+  * **Absolute** (for example, `/image`)
 
     * breaking the chain will cancel inheritance by adding the `cq:LiveSyncCancelled` mixin to `./image` and setting `cq:isCancelledForChildren` to `true`.
 

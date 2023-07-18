@@ -66,7 +66,7 @@ Complete the following steps to add a custom property to all the asset types and
 
 1. Under the newly created items folder, add a node for the custom property in all the asset (Example: GeoLocation) using the following steps:
 
-    1. Right click the items folder and select **Create** &gt; **Create Node**.
+    1. Right-click the items folder and select **Create** &gt; **Create Node**.
 
        ![Create node in CRX](assets/itemscreatenode.png)
 
@@ -209,7 +209,7 @@ Using the following procedure, you can add a tab with a field to all your assets
 
 1. Under the cmmetadataproperties folder, add a node for creating a custom tab for all the assets (Example: commontab) using the following steps:
 
-    1. Right click the cmmetadataproperties folder and select **Create** &gt; **Create Node**.
+    1. Right-click the cmmetadataproperties folder and select **Create** &gt; **Create Node**.
 
        ![Create node](assets/cmmetadatapropertiescreatenode.png)
 
@@ -334,7 +334,7 @@ Using the following procedure, you can add a tab with a field to all your assets
 
 1. In the newly created items folder, add a node for the custom tab in the asset (here mytab - this name does not show up in the User Interface) using the following steps:
 
-    1. Right click the items folder and select **Create** &gt; **Create Node**.
+    1. Right-click the items folder and select **Create** &gt; **Create Node**.
     1. Ensure that the Create Node dialog has the following values and click **OK**:
 
        **Name:** mytab (or the name you want to give to this property)
@@ -422,7 +422,7 @@ To add a property to an asset type, complete the following steps:
 
 1. In the newly created items folder, add a node for the custom tab in the asset (Example: customtab) using the following steps:
 
-    1. Right click the items folder and select **Create** &gt; **Create Node**.
+    1. Right-click the items folder and select **Create** &gt; **Create Node**.
     1. Ensure that the Create Node dialog has the following values and click **OK**:
 
        **Name:** customtab (or the name you want to give to this property)
@@ -765,7 +765,7 @@ To allow indexing of custom properties, complete the following steps:
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
 1. Go to `/oak:index/cmLucene`and add a node named **aggregates** under it.
 
-    1. Right click the cmLucene folder and select **Create** &gt; **Create Node**.
+    1. Right-click the cmLucene folder and select **Create** &gt; **Create Node**.
     1. Ensure that the Create Node dialog has the following values and click **OK**:
 
        **Name:** aggregates
@@ -776,13 +776,13 @@ To allow indexing of custom properties, complete the following steps:
 
 1. Under the newly created aggregates folder, add a node cm:resource. And under cm:resource, add a node named include0.
 
-    1. Right click the aggregates folder and select **Create** &gt; **Create Node**. Ensure that the Create Node dialog has the following values and click **OK**:
+    1. Right-click the aggregates folder and select **Create** &gt; **Create Node**. Ensure that the Create Node dialog has the following values and click **OK**:
 
        **Name:** cm:resource
 
        **Type:** nt:unstructured
 
-    1. Right click the cm:resource folder and select **Create** &gt; **Create Node**. Ensure that the Create Node dialog has the following values and click **OK**:
+    1. Right-click the cm:resource folder and select **Create** &gt; **Create Node**. Ensure that the Create Node dialog has the following values and click **OK**:
 
        **Name:** include0
 
@@ -812,7 +812,7 @@ To allow indexing of custom properties, complete the following steps:
 
    Repeat this step for each of the custom properties you want to add to the search.
 
-    1. Right click the properties folder and select **Create** &gt; **Create Node**.
+    1. Right-click the properties folder and select **Create** &gt; **Create Node**.
     1. Ensure that the Create Node dialog has the following values and click **OK**:
 
        **Name:** location (or the name of the custom property you want to add to search)

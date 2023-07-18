@@ -223,7 +223,7 @@ while (it.hasNext()) {
 }
 
 if (cugPolicy == null) {
-   log.debug("no applicable policy"); // path not supported or no applicable policy (e.g.
+   log.debug("no applicable policy"); // path not supported or no applicable policy (for example,
                                                    // the policy was set before)
    return;
 }

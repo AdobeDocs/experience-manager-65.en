@@ -52,7 +52,7 @@ There are a number of requirements before you begin working with SPAs in AEM.
 
 ## What is a SPA? {#what-is-a-spa}
 
-A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
+A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily JavaScript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
 
 This reduces the need for page refreshes and presents an experience to the user that is seamless, fast, and feels more like a native app experience.
 

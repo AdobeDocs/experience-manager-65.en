@@ -2340,7 +2340,7 @@ The following code example processes a form that contains a calculation script a
              if (processState == 1)
              {
  
-                 //Write the data back to to the client web browser
+                 //Write the data back to the client web browser
                  ServletOutputStream oOutput = resp.getOutputStream();
                  Document calData = formOut.getOutputContent();
  

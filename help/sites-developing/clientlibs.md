@@ -394,7 +394,7 @@ YUI is set as the default minifier in AEM. To change this to GCC, follow these s
 1. Enable the **Minify** option (if not already enabled).
 1. Set the value **JS Processor Default Configs** to `min:gcc`.
 
-   Options can be passed if separated with a semicolon e.g. `min:gcc;obfuscate=true`.
+   Options can be passed if separated with a semicolon for example, `min:gcc;obfuscate=true`.
 
 1. Click **Save** to save the changes.
 

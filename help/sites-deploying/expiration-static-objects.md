@@ -47,7 +47,7 @@ All files, which are not dynamic and which do not change over time, can and shou
    </Location>
    ```
 
-   This allows the intermediate cache (e.g. the browser cache) to store CSS, Javascript, PNG and GIF files for up to one month, until they expire. This means they do not need to be requested from AEM or the webserver, but can remain in the browser cache.
+   This allows the intermediate cache (for example, the browser cache) to store CSS, JavaScript, PNG and GIF files for up to one month, until they expire. This means they do not need to be requested from AEM or the webserver, but can remain in the browser cache.
 
    Other sections of the site should not be cached on an author instance, as they are subject to change at any time.
 
@@ -70,7 +70,7 @@ All files, which are not dynamic and which do not change over time, can and shou
 
    ```
 
-   This allows the intermediate cache (e.g. the browser cache) to store CSS, Javascript, PNG and GIF files for up to one day in client caches. Although this example illustrates global settings for everything below `/content` and `/etc/designs`, you should make it more granular.
+   This allows the intermediate cache (for example, the browser cache) to store CSS, JavaScript, PNG and GIF files for up to one day in client caches. Although this example illustrates global settings for everything below `/content` and `/etc/designs`, you should make it more granular.
 
    Depending on how often your site is updated, you can also consider caching HTML pages. A reasonable time period would be 1 hour:
 

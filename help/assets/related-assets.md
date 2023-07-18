@@ -50,7 +50,7 @@ Using this feature, you have the flexibility to share a low resolution PDF file 
 
 1. To un-relate an asset, click **[!UICONTROL Unrelate]** ![unrelate assets](assets/do-not-localize/link-unrelate-icon.png) from the toolbar.
 
-1. Select the asset(s) you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
+1. Select the assets you want to un-relate from the **[!UICONTROL Remove Relations]** dialog, and the click **[!UICONTROL Unrelate]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 

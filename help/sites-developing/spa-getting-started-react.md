@@ -24,7 +24,7 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
@@ -151,7 +151,7 @@ This is a standard use of this function, not unique to this example app.
 
 #### Static Instantiation {#static-instantiation}
 
-When the component is instantiated statically using the component template (e.g. JSX), the value must be passed from the model to the properties of the component.
+When the component is instantiated statically using the component template (for example, JSX), the value must be passed from the model to the properties of the component.
 
 ### App.js {#app-js}
 
@@ -221,7 +221,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and vice versa). See the document [SPA Editor Overview](/help/sites-developing/spa-overview.md) for an summary of this communication model.
+The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and conversely). See the document [SPA Editor Overview](/help/sites-developing/spa-overview.md) for an summary of this communication model.
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 

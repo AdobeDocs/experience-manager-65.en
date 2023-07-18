@@ -186,7 +186,7 @@ To develop new components for AEM based on existing component you can copy the c
 
     * `cq:dialog` - dialog for the touch-enabled UI
     * `dialog` - dialog for the classic UI
-    * `cq:editConfig` - how components behave in the edit environment (e.g drag and drop)
+    * `cq:editConfig` - how components behave in the edit environment (for example, drag and drop)
     * `design_dialog` - dialog for design mode (classic UI only)
 
 1. Activate the new component in your paragraph system by either:

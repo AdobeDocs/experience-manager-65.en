@@ -323,14 +323,14 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
     #
     # Entries can be either specified using urls, or elements of the request line:
     #
-    # (1) urls will be compared against the entire request line, e.g.:
+    # (1) urls will be compared against the entire request line, for example,:
     #
     #     /0001 { /type "deny" /url "* /index.html *" }
     #
     #   matches request "GET /index.html HTTP/1.1" but not "GET /index.html?a=b HTTP/1.1".
     #
     # (2) method/url/query/protocol will be compared againts the respective elements of
-    #   the request line, e.g.:
+    #   the request line, for example,:
     #
     #     /0001 { /type "deny" /method "GET" /url "/index.html" }
     #
@@ -637,14 +637,14 @@ Following is a sample `dispatcher.any` file that includes the Communities /filte
     #
     # Entries can be either specified using globs, or elements of the request line:
     #
-    # (1) globs will be compared against the entire request line, e.g.:
+    # (1) globs will be compared against the entire request line, for example,:
     #
     #     /0001 { /type "deny" /glob "* /index.html *" }
     #
     #   matches request "GET /index.html HTTP/1.1" but not "GET /index.html?a=b HTTP/1.1".
     #
     # (2) method/url/query/protocol will be compared againts the respective elements of
-    #   the request line, e.g.:
+    #   the request line, for example,:
     #
     #     /0001 { /type "deny" /method "GET" /url "/index.html" }
     #

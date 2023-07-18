@@ -155,7 +155,7 @@ The folder under the appropriate `importers` folder must match the importer name
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
-The format of the source import file is defined by the importer. Or the importer may establish a connection (e.g WebDAV or http) to the commerce engine.
+The format of the source import file is defined by the importer. Or the importer may establish a connection (for example, WebDAV or http) to the commerce engine.
 
 ## Roles {#roles}
 

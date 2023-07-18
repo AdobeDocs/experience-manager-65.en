@@ -41,7 +41,7 @@ In the AEM Forms app, the left swipe opens up a new task or Startpoint while rig
 
    `"EventName Selector": "Function"`
 
-   When you trigger a Javascript event named `EventName`on an HTML element specified by `Selector`, the `Function`is called.
+   When you trigger a JavaScript event named `EventName`on an HTML element specified by `Selector`, the `Function`is called.
 
 1. Find
 

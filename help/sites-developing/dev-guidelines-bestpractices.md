@@ -92,7 +92,7 @@ JCR Queries are a powerful tool when employed correctly. They are appropriate fo
 * real end-user queries, such as fulltext searches on content.
 * occasions where structured content needs to be found across the entire repository.
 
-  In such cases, make sure that queries only run when absolutely required, e.g. on component activation or cache invalidation (as opposed to e.g. Workflows Steps, Event Handlers that trigger on content modifications, Filters, etc).
+  In such cases, make sure that queries only run when absolutely required, for example, on component activation or cache invalidation (as opposed to for example, Workflows Steps, Event Handlers that trigger on content modifications, Filters, etc).
 
 JCR Queries should never be used for pure rendering requests. For example, JCR Queries are not appropriate for
 

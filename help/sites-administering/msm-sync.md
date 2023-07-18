@@ -82,7 +82,7 @@ The following table lists the rollout configurations that are installed with AEM
   </tr>
   <tr>
    <td>Push on modify (shallow)</td>
-   <td><p>Pushes content to the live copy when the blueprint page is modified, without updating references (e.g. for shallow copies).</p> <p>Use this rollout configuration sparingly as it uses the On Modification trigger.</p> </td>
+   <td><p>Pushes content to the live copy when the blueprint page is modified, without updating references (for example, for shallow copies).</p> <p>Use this rollout configuration sparingly as it uses the On Modification trigger.</p> </td>
    <td>On Modification</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> orderChildren</td>
   </tr>
@@ -239,7 +239,7 @@ The following table lists the synchronization actions that are installed with AE
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>Executes catalog-generation-specific rollout hooks. Calls the executePageRolloutHooks and executeProductRolloutHooks methods of the of the CatalogGenerator.<br /> See com.adobe.cq.commerce.pim.api.CatalogGenerator in the AEM Javadocs.</td>
+   <td>Executes catalog-generation-specific rollout hooks. Calls the executePageRolloutHooks and executeProductRolloutHooks methods of the CatalogGenerator.<br /> See com.adobe.cq.commerce.pim.api.CatalogGenerator in the AEM Javadocs.</td>
    <td> </td>
   </tr>
   <tr>
