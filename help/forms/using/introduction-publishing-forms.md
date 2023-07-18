@@ -9,7 +9,13 @@ exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 ---
 # Introduction to publishing forms on a portal{#introduction-to-publishing-forms-on-a-portal}
 
-## AEM Forms Portal components overview {#aem-forms-portal-components-overview}
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)                  |
+| AEM 6.5     | This article         |
+
+
+## AEM Forms portal components overview {#aem-forms-portal-components-overview}
 
 In a typical forms-centric portal deployment scenario, forms development and portal development are two disjoint activities. While Form Designers design and store forms in a repository, Web Developers create a web application to list forms and handle submission of forms. Forms are copied over to the web tier as there is no communication between the forms repository and the web application.
 

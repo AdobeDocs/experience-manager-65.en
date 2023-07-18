@@ -14,6 +14,11 @@ exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 ---
 # Architecture and deployment topologies for AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html)                  |
+| AEM 6.5     | This article         |
+
 ## Architecture {#architecture}
 
 AEM Forms is an application deployed into AEM as an AEM package. The package is known as AEM Forms add-on package. The AEM Forms add-on package contains both services (API providers), which are deployed into the AEM OSGi container, and servlets or JSPs (providing both front-end and REST API functionality) managed by the AEM Sling framework. The following diagram depicts this set-up:

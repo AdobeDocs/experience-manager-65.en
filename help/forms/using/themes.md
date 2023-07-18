@@ -15,6 +15,11 @@ exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 ---
 # Creating and using themes {#creating-and-using-themes}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html)                  |
+| AEM 6.5     | This article         |
+
 ## Introduction {#introduction}
 
 You can create and apply themes to stylize an adaptive form or an interactive communication. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme the specified style reflects on the corresponding components. Theme are managed independently without a reference to an adaptive form or intreactive comunication.
