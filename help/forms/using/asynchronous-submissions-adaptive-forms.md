@@ -15,6 +15,11 @@ exl-id: bd0589e2-b15a-4f0e-869c-2da4760b1ff4
 ---
 # Asynchronous submission of adaptive forms{#asynchronous-submission-of-adaptive-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/asynchronous-submissions-adaptive-forms.html)                  |
+| AEM 6.5     | This article         |
+
 Traditionally, web forms are configured to submit synchronously. In synchronous submission, when users submit a form, they are redirected to an acknowledgement page, a thank you page, or in case of submission failure, an error page. However, modern web experiences like single page applications are gaining popularity where the web page remains static while client-server interaction happens in the background. You can now provide this experience with adaptive forms by configuring asynchronous submission.
 
 In asynchronous submission, when a user submits a form the form developer plugs-in a separate experience like redirecting to other form or a separate section of the website. The author can also plug-in separate services like sending data to a different data store or adds a custom analytics engine.In case of asynchronous submission, an adaptive form behaves like a single page application as the form does not reload or its URL does not change when the submitted form data is validated on the server.

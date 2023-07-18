@@ -15,6 +15,12 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 ---
 # Generate Document of Record for adaptive forms{#generate-document-of-record-for-adaptive-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)                  |
+| AEM 6.5     | This article         |
+
+
 ## Overview {#overview}
 
 After submitting a form, your customers generally want to keep a record, in print or in document format, of the information they have filled in the form for their future reference. This is referred to as a document of record.

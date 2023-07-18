@@ -13,6 +13,12 @@ exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 ---
 # Overview of AEM Document Services{#overview-of-aem-document-services}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications-introduction.html)                  |
+| AEM 6.5     | This article         |
+
+
 AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents. Document Services contain following services:
 
 ## Output Service {#output-service}

@@ -13,6 +13,12 @@ exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 ---
 # Configuring the Submit action{#configuring-the-submit-action}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html)                  |
+| AEM 6.5     | This article         |
+
+
 ## Introduction to submit actions {#introduction-to-submit-actions}
 
 A submit action is triggered when a user clicks the Submit button on an adaptive form. You can configure the submit action on adaptive form. Adaptive forms provide a few out of the box submit actions. You can copy and extend the default submit actions to create your own submit action. However, based on your requirements, you can write and register your own submit action to process data in the submitted form. The submit action can use [synchronous or asynchronous submission](../../forms/using/asynchronous-submissions-adaptive-forms.md).

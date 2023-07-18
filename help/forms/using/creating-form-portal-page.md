@@ -14,6 +14,11 @@ exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
 ---
 # Creating a forms portal page{#creating-a-forms-portal-page}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)                  |
+| AEM 6.5     | This article         |
+
 Forms portal components equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM). For a quick overview of forms portal, see [Introduction to publishing forms on a portal](../../forms/using/introduction-publishing-forms.md).
 
 ## Prerequisites {#prerequisites}

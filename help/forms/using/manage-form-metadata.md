@@ -15,6 +15,11 @@ exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 ---
 # Manage form metadata{#manage-form-metadata}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html)                  |
+| AEM 6.5     | This article         |
+
 ## Overview&nbsp; {#overview-nbsp}
 
 Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
