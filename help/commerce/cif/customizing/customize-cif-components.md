@@ -22,7 +22,7 @@ The [CIF Venia Project](https://github.com/adobe/aem-cif-guides-venia) is a refe
 
 ## What You Will Build
 
-The Venia brand recently started manufacturing some products using sustainable materials and the business would like to display an **Eco Friendly** badge as part of the Product Teaser. A new custom attribute will be created in Adobe Commerce to indicate if a product uses the **Eco friendly** material. This custom attribute will then be added as part of the GraphQL query and displayed on the Product Teaser for specified products.
+The Venia brand recently started manufacturing some products using sustainable materials and the business would like to display an **Eco Friendly** badge as part of the Product Teaser. A new custom attribute is created in Adobe Commerce to indicate if a product uses the **Eco friendly** material. This custom attribute is added as part of the GraphQL query and displayed on the Product Teaser for specified products.
 
 ![Eco Friendly Badge Final Implementation](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -63,7 +63,7 @@ You will clone the [Venia Project](https://github.com/adobe/aem-cif-guides-venia
 
 ## Author the Product Teaser {#author-product-teaser}
 
-The Product Teaser Component is extended throughout this tutorial. As a first step, add a new instance of the Product Teaser to the Home page to understand the baseline functionality.
+The Product Teaser Component is extended throughout this tutorial. As a first step, add an instance of the Product Teaser to the Home page to understand the baseline functionality.
 
 1. Navigate to the **Home Page** of the site: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -172,7 +172,7 @@ Next, use a GraphQL IDE to verify that the `eco_friendly` attribute has been add
 
    ![Sample GraphQL response](../assets/customize-cif-components/sample-graphql-query.png)
 
-   The value of **Yes** is an integer of **1**. This will be useful when you write the GraphQL query in Java&trade;.
+The value of **Yes** is an integer of **1**. This will be useful when you write the GraphQL query in Java&trade;.
 
    >[!TIP]
    >
@@ -207,7 +207,7 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
    }
    ```
 
-   This is a new method to encapsulate the logic to indicate if the product has the `eco_friendly` attribute set to **Yes** or **No**.
+This is a new method to encapsulate the logic to indicate if the product has the `eco_friendly` attribute set to **Yes** or **No**.
 
 1. Next, inspect the `MyProductTeaserImpl.java` at `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 
@@ -227,8 +227,8 @@ Use [the IDE of your choice](https://experienceleague.adobe.com/docs/experience-
        return productTeaser.getImage();
    }
    ```
-
-   This minimizes the amount of Java&trade; code that an implementation needs to write.
+   
+   This minimizes the amount of Java&trade; code that an implementation must write.
 
 1. One of the extra extension points provided by AEM CIF Core Components is the `AbstractProductRetriever` which provides access to specific product attributes. Inspect the `initModel()` method:
 
@@ -481,11 +481,11 @@ At this point the logic for when to display the **Eco Friendly** badge is workin
 
 ## Congratulations {#congratulations}
 
-You finished customizing your first AEM CIF component! Download the [finished solution files here](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
+You customized your first AEM CIF component! Download the [finished solution files here](../assets/customize-cif-components/customize-cif-component-SOLUTION_FILES.zip).
 
 ## Bonus Challenge {#bonus-challenge}
 
-Review the functionality of the **New** badge that has already been implemented in the Product Teaser. Try to add an extra checkbox for authors to control when the **Eco Friendly** badge should be displayed. You will need to update the component dialog at `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
+Review the functionality of the **New** badge that has already been implemented in the Product Teaser. Try to add an extra checkbox for authors to control when the **Eco Friendly** badge should be displayed. You must update the component dialog at `ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/productteaser/_cq_dialog/.content.xml`.
 
 ![New Badge Implementation challenge](../assets/customize-cif-components/new-badge-implementation-challenge.png)
 
