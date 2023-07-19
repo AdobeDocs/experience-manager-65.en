@@ -21,7 +21,7 @@ role: Admin, Developer
 
 In AEM Forms 6.5, a theme is an AEM client library that you use to define the styles (look and feel) for an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms.
  
-## Available  themes {#available-standard-theme}
+## Available  themes {#available-theme}
 
 AEM 6.5 environment provides the below listed themes for Core Components based Adaptive Forms:  
 
@@ -45,13 +45,13 @@ A theme is a package that encompasses the CSS file, JavaScript files, and resour
 
 ## Create a theme 
 
-AEM Forms 6.5 provides, the below listed standard themes for Core Components based Adaptive Forms.  
+AEM Forms 6.5 provides, the below listed themes for Core Components based Adaptive Forms.  
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
 
-You can [customize any of these standard themes to create a theme](#customize-a-theme-core-components).
+You can [customize any of these themes to create a theme](#customize-a-theme-core-components).
 
 ## Customize a theme {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -86,7 +86,7 @@ Customizing a theme refers to the process of modifying and personalizing the app
 
  Creating or customizing a theme is a multi-step process. Perform the steps in listed order to create/customize the theme:
 
- 1. [Clone a standard theme](#clone-git-repo-of-theme)
+ 1. [Clone a theme](#clone-git-repo-of-theme)
  1. [Customize the appearance of the theme](#customize-the-theme) 
  1. [Ready the theme for local deployment](#generate-the-clientlib) 
  1. [Deploy the theme on a local environment](#deploy-the-theme-on-a-local-environment) 
@@ -96,17 +96,17 @@ Customizing a theme refers to the process of modifying and personalizing the app
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-The examples provided in the document are based on the **Canvas** theme, but you can clone any standard theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
+The examples provided in the document are based on the **Canvas** theme, but you can clone any theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
  
 #### 1. Clone the Git repository of theme {#clone-git-repo-of-theme}
 
-To clone a standard theme for Core Components based Adaptive Forms, choose one of the following standard themes:
+To clone a theme for Core Components based Adaptive Forms, choose one of the following themes:
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
 
-Perform the following instructions to clone a standard theme: 
+Perform the following instructions to clone a theme: 
 
 1. Open the command prompt or terminal window on your local development environment.
 
