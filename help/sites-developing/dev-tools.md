@@ -1,27 +1,29 @@
 ---
 title: Development Tools
-seo-title: Development Tools
-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
-seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
-uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
+description: To develop your JCR, Apache Sling, or Adobe Experience Manager applications, several tool sets are available.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
 ---
 # Development Tools{#development-tools}
 
-To develop your JCR, Apache Sling or AEM applications, the following tool sets are available:
+To develop your JCR, Apache Sling or Adobe Experience Manager (AEM) applications, the following tool sets are available:
 
-* one set consisting of [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) and WebDAV. CRXDE Lite is embedded into CRX/AEM and enables you to perform standard development tasks in the browser. With CRXDE Lite, you can create and edit files (like .jsp and .java), folders, templates, components, dialogs, nodes, properties and bundles while logging and integrating with SVN.
+* one set consisting of [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) and WebDAV. CRXDE Lite is embedded into CRX/AEM and enables you to perform standard development tasks in the browser. With CRXDE Lite, you can create and edit files (like .jsp and .java), folders, templates, components, dialogs, nodes, properties, and bundles while logging and integrating with SVN.
 
-  CRXDE Lite is recommended when you do not have direct access to the CRX/AEM server, when you develop an application by extending or modifying the out-of-the-box components and Java bundles or when you do not need a dedicated debugger, code completion and syntax highlighting.
+  CRXDE Lite is recommended when you do not have direct access to the CRX/AEM server, when you develop an application by extending or modifying the out-of-the-box components and Java&trade; bundles or when you do not need a dedicated debugger, code completion and syntax highlighting.
 
-* one set consisting of an Integrated Development Environment (for example: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) or [IntelliJ](/help/sites-developing/ht-intellij.md)), a build tool (for example: [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault which has been developed by Adobe to map a repository to a file system, a version control system (for example: Subversion), a bug tracker system (for example: Jira), a central dependency management system (for example: Apache Archiva) and a build automation system (for example: Apache Continuum).
+* one set consisting of the following:
+  * An Integrated Development Environment. For example, [Eclipse](/help/sites-developing/howto-projects-eclipse.md) or [IntelliJ](/help/sites-developing/ht-intellij.md).
+  * A build tool. For example, [Apache Maven](/help/sites-developing/ht-projects-maven.md).
+  * FileVault which has been developed by Adobe to map a repository to a file system, a version control system. For example, Subversion.
+  * A bug tracker system. For example, Jira.
+  * A central dependency management system. For example, Apache Archiva.
+  * And a build automation system. For example, Apache Continuum.
 
-  This setup allows you to fully integrate your application (content, code, configuration) into any development environment and process.The link between the different elements is the file system representation of the repository through FileVault, as all of the aforementioned development tools can work with files.
+  This setup lets you fully integrate your application (content, code, configuration) into any development environment and process. The link between the different elements is the file system representation of the repository through FileVault, as all of the previously mentioned development tools can work with files.
 
 ## Extensions for Integrated Development Environments {#extensions-for-integrated-development-environments}
 
@@ -47,7 +49,7 @@ AEM ships with other tools that facilitate development:
 
 Tools that facilitate creation of new projects:
 
-* [AEM Project Archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
+* [AEM Project Archetype](https://github.com/adobe/aem-project-archetype)
 * [AEM Lazybones Templates](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]

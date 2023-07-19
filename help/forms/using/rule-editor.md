@@ -14,6 +14,11 @@ exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 ---
 # Adaptive forms rule editor{#adaptive-forms-rule-editor}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html)                  |
+| AEM 6.5     | This article         |
+
 ## Overview {#overview}
 
 The rule editor feature in Adobe Experience Manager Forms empowers forms business users and developers to write rules on adaptive form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.

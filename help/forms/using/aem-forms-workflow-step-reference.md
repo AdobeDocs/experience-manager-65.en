@@ -12,6 +12,11 @@ exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 ---
 # Forms-centric workflow on OSGi - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html)                  |
+| AEM 6.5     | This article         |
+
 You use workflow models to convert a business logic to automated repetitive process. A model helps you define and execute a series of steps. You can also define model properties, such as whether the workflow is transient or uses multiple resources. You can [include various AEM Workflow steps in a model to achieve the business logic](/help/sites-developing/workflows-models.md#extending-aem).
 
 ## Forms Workflow Steps {#forms-workflow-steps}

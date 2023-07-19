@@ -14,6 +14,11 @@ exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
 ---
 # Work with form data model{#work-with-form-data-model}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html)                  |
+| AEM 6.5     | This article         |
+
  ![data-integration](do-not-localize/data-integeration.png)
 
 Form data model editor provides an intuitive user interface and tools for editing and configuring a form data model. Using the editor, you can add and configure data model objects, properties, and services from associated data sources in the form data model. In addition, it allows you to create data model objects and properties without data sources and bind them with respective data model objects and properties later. You can also generate and edit sample data for data model object properties that you can use to prefill adaptive forms and interactive communications while previewing. You can test data model objects and services configured in a form data model to ensure it is properly integrated with data sources.

@@ -12,6 +12,11 @@ exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
 ---
 # Creating and managing reviews to forms{#creating-and-managing-reviews-to-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html)                  |
+| AEM 6.5     | This article         |
+
 ## Review {#review}
 
 A review is a mechanism that allows one or more reviewers to comment on forms.
