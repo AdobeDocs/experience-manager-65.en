@@ -12,8 +12,6 @@ role: Admin, Developer
 
 # Enable Adaptive Forms Core Components on AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
-<span class="preview"> Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
-
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    This Article                  |

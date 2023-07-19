@@ -12,8 +12,6 @@ role: Admin, Developer
 
 # Create or customize an Adaptive Form theme {#introduction-to-theme}
 
-<span class="preview"> Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
-
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    This Article                  |
@@ -287,6 +285,7 @@ Steps to apply a theme to an Adaptive Form are:
 1. Click **Create** > **Adaptive Forms**. 
 1. Select an Adaptive Forms Core Components template and click **Next**. The **Add Properties** appears
 1. Specify the **Name** for your Adaptive Form.
+
 
     >[!NOTE]
     >
