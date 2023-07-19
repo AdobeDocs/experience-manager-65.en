@@ -685,6 +685,10 @@ query {
 
 ## GraphQL Persisted Queries - enabling caching in the Dispatcher {#graphql-persisted-queries-enabling-caching-dispatcher}
 
+>[!CAUTION]
+>
+>If caching in the Dispatcher is enabled then the [CORS Filter](#cors-filter) is not needed, and so that section can be ignored.
+
 Caching of persisted queries is not enabled by default in the Dispatcher. Default enablement is not possible as customers using CORS (Cross-Origin Resource Sharing) with multiple origins need to review, and possibly update, their Dispatcher configuration.
 
 >[!NOTE]
@@ -883,6 +887,10 @@ The basic operation of queries with GraphQL for AEM adhere to the standard Graph
   * If the requested variation does not exist in a nested fragment, then the **Master** variation is returned.
 
 ### CORS Filter {#cors-filter}
+
+>[!CAUTION]
+>
+>If [caching in the Dispatcher has been enabled](#graphql-persisted-queries-enabling-caching-dispatcher) then the CORS Filter is not needed, and so this section can be ignored.
 
 >[!NOTE]
 >
