@@ -174,10 +174,9 @@ You also have the option to customize the font, color, size, and other CSS prope
 
 -->
 
->![NOTE]
+>[!NOTE]
 >
 > When a style is defined both at theme and component level, the style defined at the component level takes priority. 
-
 
 #### 3. Ready the theme for deployment {#generate-the-clientlib}
 
@@ -272,9 +271,10 @@ After the package is installed the theme is available for selection.
 
 ![Theme Client Library](/help/forms/using/assets/themeclientlibrary.png)
 
->![NOTE]
+>[!NOTE]
 >
->In case you encounter difficulty accessing the login dialog on a publish instance to install the package through the Package Manager, try logging in through the following URL: `http://[Publish Server URL]:[PORT]/system/console`. This allows access to log in to Publish instance, allowing you to proceed with the installation process.
+>
+> In case you encounter difficulty accessing the login dialog on a publish instance to install the package through the Package Manager, try logging in through the following URL: `http://[Publish Server URL]:[PORT]/system/console`. This allows access to log in to Publish instance, allowing you to proceed with the installation process.
 
 ## Apply a theme to an Adaptive Form {#using-theme-in-adaptive-form}
 
