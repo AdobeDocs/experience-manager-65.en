@@ -50,7 +50,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
         1. Open the [references rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) and select the required source page using [selection mode](/help/sites-authoring/basic-handling.md) (or select and open the references rail, the order is not important). All references will be shown.
         
-        1. Select **Launches** (e.g. Launches (1)) to show a list of the specific launches.
+        1. Select **Launches** (for example, Launches (1)) to show a list of the specific launches.
         1. Select the specific launch to show the actions available.
         1. Select **Promote launch** to open the wizard.
 
@@ -83,7 +83,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 1. Select **Next** to proceed.
 1. You can review the pages to be promoted, these will depend on the range of pages you have chosen:
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![Review pages to be promoted](assets/chlimage_1-102.png)
 
 1. Select **Promote**.
 
@@ -91,7 +91,7 @@ You can promote launches from either the **Sites** console or the **Launches** c
 
 When you are editing a launch page, the **Promote Launch** action is also available from **Page Information**. This will open the wizard to collect the information needed.
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![Promote Launch](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ When you are editing a launch page, the **Promote Launch** action is also availa
 
 After creating a nested launch you can promote it back to any of the sources, including the root source (production).
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![Overview of promoting a nested launch](assets/chlimage_1-104.png)
 
 1. As with [Creating a Nested Launch](#creatinganestedlaunchlaunchwithinalaunch), navigate to and select the required launch in either the **Launches** console or the **References** rail.
 1. Select **Promote launch** to open the wizard.  
@@ -124,12 +124,12 @@ After creating a nested launch you can promote it back to any of the sources, in
         * **Promote current page**
         * **Promote current page and sub pages**
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![Settings for promoting a launch](assets/chlimage_1-105.png)
 
 1. Select **Next**.
 1. Review the promotion details before selecting **Promote**:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![Review details and Promote](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
@@ -137,7 +137,7 @@ After creating a nested launch you can promote it back to any of the sources, in
 
 1. Your changes will be promoted and reflected in the **Launches** console:
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![Launches console](assets/chlimage_1-107.png)
 
 ## Processing Promoted Pages Using AEM Workflow {#processing-promoted-pages-using-aem-workflow}
 
@@ -151,4 +151,4 @@ To start a workflow automatically when pages are promoted, [configure a workflow
 
 For example, you can automatically generate page activation requests when authors promote Launches pages. Configure a workflow launcher to start the Request Activation workflow when the package node is modified. 
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![Workflow launcher](assets/chlimage_1-108.png)

@@ -17,7 +17,7 @@ You can use AEM Page Editor to quickly create and add multiple forms to your AEM
 
 AEM Forms provide Adaptive Form Container and Adaptive Forms – Embed components. You can use Adaptive Form Container to create a new form in an Experience Fragment or AEM Sites page, while Adaptive Forms – Embed component allows you to add an existing Adaptive Form or create a new form using Adaptive Forms Editor. 
 
-![](/help/forms/using/assets/adaptive-form-in-sites-page.png)
+![Adaptive form in sites page](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
 ## Benefits of using Adaptive Form Container component in AEM Page Editor or Experience Fragment
 
@@ -171,7 +171,7 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
 1. Open the AEM Sites page containing the Adaptive Form (in Adaptive Forms Container component) in edit mode.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 
 1. On the menu bar, select the ![Convert to experience fragment variation icon](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Convert to Experience Fragment variation icon. 
-    ![](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+    ![Convert form in sites page to an experience fragment](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
     
     A dialog box to convert the Adaptive Form container to a new Experience Fragment or add to an existing Experience Fragment appears 
 1. On the Convert to Experience Fragment variation dialog box, set values for the following options:
@@ -189,7 +189,7 @@ A Submit Action allows you to choose the destination of data captured via an Ada
 1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 
 1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure submit actions opens. 
-![](/help/forms/using/assets/adaptive-forms-container.png)
+![Adaptive forms container](/help/forms/using/assets/adaptive-forms-container.png)
 1. Select and configure a Submit action, based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](configuring-submit-actions.md)
 
 
@@ -207,7 +207,7 @@ To configure a JSON Schema or Form Data Model for your form:
 1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 
 1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure Data Models opens. 
-![](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
+![Form data model adaptive forms container](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
 1. Select and configure a JSON Schema or Form Data Model, based on your requirements. For detailed information about Submit Actions, see [Adaptive Form Submit Action](configuring-submit-actions.md). 
 
     * When you select the **[!UICONTROL Form Model]** option, use the **[!UICONTROL Select Form Data Model]** option to select a pre-configured Form Data Model.
@@ -229,7 +229,7 @@ You can use the Form Data Model Prefill service to prepopulate fields of a form 
 1. Open the AEM Page Editor or Experience Fragment that contains the Adaptive Form.
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 
 1. Click the Adaptive Form Container properties ![Adaptive Form Container properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box to configure Data Models opens. 
-![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+![Prefill service fdm aem sites page editor](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Select a form data model. Open the **[!UICONTROL Basic]** tab. In the prefill service, select **[!UICONTROL Forms Portal Draft Prefill Service]**. 
 1. Click **[!UICONTROL Done]**.
 

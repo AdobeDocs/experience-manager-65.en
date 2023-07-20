@@ -15,7 +15,7 @@ exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 The **Manage App** tile and "Manage App" page provides a means to view and edit application metadata. App metadata is required details for releasing an application to a vendor's store. This may include common metadata, iOS metadata and screenshots. See the [Manage App Tile](/help/mobile/phonegap-app-details-tile.md) for further details on common and iOS metadata.
 

@@ -1,21 +1,21 @@
 ---
-title: AEM Content and Commerce Release Notes 2021
-description: AEM Content and Commerce Release Notes 2021
+title: Adobe Experience Manager Content and Commerce Release Notes 2021
+description: Adobe Experience Manager Content and Commerce Release Notes 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 ---
 # Commerce Integration Framework GitHub Release Overview
 
 ## Overview of System Requirements
 
-Review the minimum system requirements in the table below for the CIF version you are currently using or plan to use in the future.
+Review the minimum system requirements in the table below for the CIF version that you are currently using or plan to use in the future.
 
 |Component| System Requirements|
 |:-------|:-----:|
-|CIF add-on |Minimum: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL schemas|
+|CIF add-on |Minimum: Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL schemas|
 |CIF Core Components |[System Requirements](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md)|
 |AEM Project Archetype |[System Requirements](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md)|
 
-## Release Date: November, 2021
+## Release Date: November  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -33,7 +33,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Support for gift cards in AEM Storefront
 
-## Release Date: October, 2021
+## Release Date: October  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -45,7 +45,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * The CIF add-on supports latest Commerce v2.4.3 with new GraphQL APIs and schemas
 
-* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that will open up the pickers to quickly search and select the product or category without leaving the context.
+* Authors can add links to product and catalog pages in text fields using the rich text editor (RTE). A CIF icon has been added to the RTE toolbar that opens the pickers to quickly search and select the product or category without leaving the context.
 
 * Existing pop-up shopping cart and checkout have been replaced with dedicated AEM shopping cart and checkout pages. The components on these pages are built using Adobe Commerce's extensible Peregrine components
 
@@ -53,7 +53,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * AEM Storefront Venia returns HTTP 404 error if category or product page is not found
 
-## Release Date: September, 2021
+## Release Date: September  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -67,7 +67,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
   ![Associated commerce content](/help/assets/CIF/associated-commerce-content.png)
 
-* Improved product picker UI for better user experience, increased efficiency and support for complex product catalog
+* Improved product picker UI for better user experience, increased efficiency, and support for complex product catalog
 
   ![New Product Picker](/help/assets/CIF/product-picker.png)
 
@@ -77,11 +77,11 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Menu cache flush is not working as expected
 
-* JS errors during AEM CS deployment step and when not using clientside components
+* JS errors during AEM CS deployment step and when not using client-side components
 
 * Cannot create CIF cloud config in folders that have a sling:configs node
 
-## Release Date: August, 2021
+## Release Date: August  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -91,7 +91,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 ### What's New {#what-is-new-august}
 
-* New Category Picker UI for improved user experience, increased efficiency and better support for complex product catalog
+* New Category Picker UI for improved user experience, increased efficiency, and better support for complex product catalog
 
   ![New Category Picker](/help/assets/CIF/category-picker.png)
 
@@ -105,9 +105,9 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * CIF JS errors during AEM CS deployment step
 
-* Fix raw product access for mapped product product list items
+* Fix raw product access for mapped product list items
 
-## Release Date: July, 2021
+## Release Date: July  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -124,7 +124,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Support for [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront using pre-defined or on-the-fly created recommendations
 
-## Release Date: June, 2021
+## Release Date: June  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -141,7 +141,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 * Improved SEO-friendly URLs for category pages
 * Support for custom HTTP headers per site/config
 
-## Release Date: May, 2021
+## Release Date: May  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -159,7 +159,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Breadcrumb resets preview data in product console
 
-## Release Date: April, 2021
+## Release Date: April  2021
 
 |Component| Version| Details|
 |:-------|:-----:|---------------------:|
@@ -169,7 +169,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 ### What's New {#what-is-new-april}
 
-* Support for category UID - This unlocks third party commerce integrations for systems that use Strings for category ids
+* Support for category UID - This unlocks third-party commerce integrations for systems that use Strings for category ids
 
 * AEM extension for PWA Studio incl. example integration
 
@@ -179,7 +179,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * The root category field was not displayed under the commerce tab in the page properties of category pages
 
-## Release Date: March, 2021 {#what-is-new-march}
+## Release Date: March  2021 {#what-is-new-march}
 
 |GitHub| Version| Detailed Release Notes|
 |:-------|:-----:|---------------------:|
@@ -199,7 +199,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Multiple bug fixes.
 
-## Release Date: February, 2021
+## Release Date: February  2021
 
 |GitHub| Version| Detailed Release Notes|
 |:-------|:-----:|---------------------:|
@@ -219,7 +219,7 @@ Review the minimum system requirements in the table below for the CIF version yo
 
 * Multiple bug fixes.
 
-## Release Date: January, 2021
+## Release Date: January  2021
 
 |GitHub| Version| Detailed Release Notes|
 |:-------|:-----:|---------------------:|

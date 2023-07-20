@@ -13,6 +13,11 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 ---
 # Variables in AEM Forms workflows{#variables-in-aem-forms-workflows}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html)                  |
+| AEM 6.5     | This article         |
+
 A variable in a workflow model is a way to store a value based on its data type. You can then use the name of the variable in any workflow step to retrieve the value stored in the variable. You can also use variable names to define expressions for taking routing decisions.
 
 In AEM workflow models, you can:
@@ -44,7 +49,7 @@ You require [AEM Forms add-on package](https://helpx.adobe.com/aem-forms/kb/aem-
 
 Execute the following steps to create a variable:
 
-1. On an AEM instance, navigate to Tools ![](/help/forms/using/assets/hammer.png) &gt; Workflow &gt; Models.
+1. On an AEM instance, navigate to Tools ![Tools](/help/forms/using/assets/hammer.png) &gt; Workflow &gt; Models.
 1. Tap **[!UICONTROL Create]** and specify the title and an optional name for the workflow model. Select the model and tap **[!UICONTROL Edit]**.
 1. Tap the variables icon available in the sidekick of the workflow model and tap **[!UICONTROL Add Variable]**.
 

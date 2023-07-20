@@ -247,7 +247,7 @@ Perform the following procedure after [starting the targeting process](/help/sit
 
 1. Click or tap the Target icon.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Target](do-not-localize/chlimage_1.png)
 
    The component content is the offer for the Default experience. When a component is targeted, its default node will be replicated for each experience. This is needed for editing the correct content node during experience specific authoring. For these non-default experiences, either [add a custom offer](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) or [add a library offer](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
@@ -269,7 +269,7 @@ In Target mode, the Target component has a blue border, and the drop-target mess
 
 In Edit mode, the Target component has a bullseye icon.
 
-![](do-not-localize/chlimage_1-1.png)
+![Target component in Edit mode](do-not-localize/chlimage_1-1.png)
 
 When you drag components into the Target component, they are targeted components.
 
@@ -317,7 +317,7 @@ If you decide that the offer can be used for other experiences, you can create a
 
 1. Click or tap the offer to reveal the offer menu, then click or tap the edit icon.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Offer menu](do-not-localize/chlimage_1-2.png)
 
 1. Edit the content of the component.
 
@@ -334,7 +334,7 @@ You cannot add library offers to the Default experience.
 
 1. Click or tap the folder icon.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Folder icon](do-not-localize/chlimage_1-3.png)
 
 1. Select the offer from the library and then click or tap the checkmark icon.
 
@@ -367,7 +367,7 @@ For information about using the Offers console to create a reusable offer, see [
 1. Select the experience to reveal the custom offer.
 1. Click or tap the custom offer to reveal the offer menu, then click or tap the **Save Offer To Offer Library** icon.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Save offer to Offer Library](do-not-localize/chlimage_1-4.png)
 
 1. Type a name for the offer, and select the library to which you are adding the offer, then click or tap the checkmark icon.
 
@@ -378,7 +378,7 @@ Convert a library offer to a custom offer to change the offer for current experi
 1. Select the experience to reveal the library offer.
 1. Click or tap the library offer to reveal the offer menu, then click or tap the Convert to Inline Offer icon.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Convert to Inline Offer](do-not-localize/chlimage_1-5.png)
 
 #### Editing a Library Offer {#editing-a-library-offer}
 
@@ -406,7 +406,7 @@ For information targeting engines, see [Targeting Engine](/help/sites-authoring/
 
 An audience must not be used by more than one experience. A warning symbol appears next to an experience when it is mapped to an audience that is mapped to another experience.
 
-![](do-not-localize/chlimage_1-6.png)
+![Warning symbol when mapped to an audience that is mapped to another experience](do-not-localize/chlimage_1-6.png)
 
 ### Associating experiences with audiences (AEM or Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -621,7 +621,7 @@ To simulate the visitor's experience, use the following tools:
 1. To switch to Preview mode, on the toolbar click or tap **Preview**.
 1. On the tool bar, click or tap the Context Hub icon.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![Context Hub](do-not-localize/chlimage_1-7.png)
 
 1. Use Context Hub to change context properties. For example, click or tap the Persona property to select a different user.
 
@@ -637,7 +637,7 @@ You can customize the Target component by accessing the component's options in o
 
 1. After you have targeted the component, in the Target component, click or tap the component and then the settings icon (cog).
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Target component menu](do-not-localize/chlimage_1-8.png)
 
    AEM displays the Target component options window.
 
@@ -645,7 +645,7 @@ You can customize the Target component by accessing the component's options in o
 
 1. Alternatively to access these settings in full screen mode, in the Target component options window, click or tap the full screen icon.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![Target component options window](do-not-localize/chlimage_1-9.png)
 
    AEM displays the full-screen Target component options window.
 

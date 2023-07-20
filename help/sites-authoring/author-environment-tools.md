@@ -61,7 +61,7 @@ The actual appearance and handling is dependent on the device type you are using
 >
 >A mobile device is detected when the width is less than 1024px. This can also be the case for a small desktop window.
 
-* **Mobile device (e.g. iPad)**
+* **Mobile device (for example, iPad)**
 
   The component browser completely covers the page being edited.
 
@@ -160,7 +160,7 @@ The actual appearance and handling is dependent on the device type you are using
 
 If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Assets Browser Desktop device](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Content Tree {#content-tree}
 
@@ -168,7 +168,7 @@ The **Content Tree** gives an overview of all of the components on the page in a
 
 The Content Tree is a tab within the side panel (together with the components and assets browser). To open (or close) the side panel use the icon at the top left of the toolbar:
 
-![](do-not-localize/screen_shot_2018-03-22at142042.png)
+![Content tree](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Additionally on a complex page, it makes it easier to jump between components of the page.
 
@@ -196,7 +196,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon will directly start the edit dialogue for the component.
 
-  ![](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Wrench icon - Edit](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Or a page that is part of a [livecopy](/help/sites-administering/msm.md), where components are inherited from another page; for example:
 
@@ -246,7 +246,7 @@ For example, you can fix a broken reference within a Reference component:
 
 ## Events - Timeline {#events-timeline}
 
-For appropriate resources (e.g. pages from the **Sites** console, or assets from the **Assets** console) the [timeline can be used to show the recent activity on any selected items](/help/sites-authoring/basic-handling.md#timeline).
+For appropriate resources (for example, pages from the **Sites** console, or assets from the **Assets** console) the [timeline can be used to show the recent activity on any selected items](/help/sites-authoring/basic-handling.md#timeline).
 
 Open the required console, then navigate to the required resource and open **Timeline**, using:
 
@@ -311,7 +311,7 @@ You can access these using the icons in the top right corner. The actual icon wi
 >* Depending on the characteristics of the page, some modes my not be available.
 >* Access to some modes require the appropriate permissions/privileges.
 >* Developer mode is not available on mobile devices due to space restrictions.
->* There is a [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (e.g. **Edit**, **Layout**, etc).
+>* There is a [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, etc).
 >
 
 ## Path Selection {#path-selection}
@@ -326,7 +326,7 @@ Path fields have auto-complete and look-ahead funtionality now to make locating 
 
 Clicking the **Open Selection Dialog** button in the path field opens the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) dialog to allow for more detailed selection options.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Open Selection Dialog](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Alternatively you can start typing in the path field and AEM will offer matching paths as you type.
 

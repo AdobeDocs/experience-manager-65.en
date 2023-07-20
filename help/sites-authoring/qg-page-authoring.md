@@ -34,17 +34,17 @@ Before giving the overview of specifics, here is a small collection of general t
 
 * **Create**
 
-    * This button is available in many consoles - the options presented are context sensitive so can vary according to the scenario.
+    * This button is available in many consoles - the options presented are context-sensitive so can vary according to the scenario.
 
-* Re-ordering pages in a folder
+* Reordering pages in a folder
 
-    * This can be done in [List View](/help/sites-authoring/basic-handling.md#list-view). The changes will be applied and be visible in other views.
+    * This can be done in [List View](/help/sites-authoring/basic-handling.md#list-view). The changes are applied and visible in other views.
 
 #### Page Authoring {#page-authoring}
 
 * Navigating Links
 
-    * ***Links are not available for navigation*** when you are in **Edit** mode. To navigate with links you need to [preview the page](/help/sites-authoring/editing-content.md#previewing-pages) using either:
+    * ***Links are not available for navigation*** when you are in **Edit** mode. To navigate with links, you need to [preview the page](/help/sites-authoring/editing-content.md#previewing-pages) using either:
 
         * [Preview Mode](/help/sites-authoring/editing-content.md#preview-mode)
         * [View as Published](/help/sites-authoring/editing-content.md#view-as-published)
@@ -53,7 +53,7 @@ Before giving the overview of specifics, here is a small collection of general t
 
 >[!NOTE]
 >
->There are a number of keyboard shortcuts that can make the authoring experience easier.
+>There are several keyboard shortcuts that can make the authoring experience easier.
 >
 >* [Keyboard Shortcuts When Editing Pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Keyboard Shortcuts for Consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -63,7 +63,7 @@ Before giving the overview of specifics, here is a small collection of general t
 
 There are various aspects to finding a page; you can navigate and/or search:
 
-1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).
+1. Open the **Sites** console (using the **Sites** option in the [Global Navigation](/help/sites-authoring/basic-handling.md#global-navigation)) - this is triggered (drop down) when you select the Adobe Experience Manager link (top left).
 
 1. Navigate down the tree by tapping/clicking on the appropriate page. How the page resources are represented depends on the view you are using - [Card, List, or Column](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -79,14 +79,14 @@ There are various aspects to finding a page; you can navigate and/or search:
 
 ### Creating a New Page {#creating-a-new-page}
 
-To [create a new page](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+To [create a page](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Navigate to the location](#finding-your-page) where you want to create the new page.
+1. [Navigate to the location](#finding-your-page) where you want to create the page.
 1. Use the **Create** icon and then select **Page** from the list:
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. This opens the wizard that will guide you through collecting the information needed when [creating your new page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Follow the on screen instructions.
+1. This opens the wizard that will guide you through collecting the information needed when [creating your new page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Follow the on-screen instructions.
 
 ### Selecting Your Page for Further Action {#selecting-your-page-for-further-action}
 
@@ -128,8 +128,6 @@ How to select a page depends on which view you are using in the console:
 
 ### Editing Your Page Content {#editing-your-page-content}
 
-To edit your page:
-
 1. [Navigate to the page](#finding-your-page) you want to edit.
 1. [Open your page for editing](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) using the Edit (pencil) icon:
 
@@ -137,12 +135,12 @@ To edit your page:
 
    This can be accessed from either:
 
-    * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
+    * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the appropriate resource.
     * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction).
 
-1. When the editor opens you can:
+1. When the editor opens, you can:
 
-    * [Add a new compenent to your page](/help/sites-authoring/editing-content.md#inserting-a-component) by:
+    * [Add a new component to your page](/help/sites-authoring/editing-content.md#inserting-a-component) by:
 
         * opening the side panel
         * selecting the components tab (the [components browser](/help/sites-authoring/author-environment-tools.md#components-browser))
@@ -150,15 +148,15 @@ To edit your page:
 
       The side panel can be opened (and closed) with:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+      ![Open side panel](do-not-localize/screen_shot_2018-03-21at160738.png)
 
     * [Edit the content of an existing component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) on the page:
 
         * Open the component toolbar with either tap or click. Use the **Edit** (pencil) icon to open the dialog.
-        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions will be shown (for some components, this will be a limited selection).
+        * Open the in place editor for the component with either tap-and-hold or a double-slow-click. The available actions are shown (for some components, it is a limited selection).
         * To see all actions available enter full-screen mode using:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+      ![Full screen mode](do-not-localize/screen_shot_2018-03-21at160706.png)
 
     * [Configure the properties of an existing component](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -185,7 +183,7 @@ To edit your page:
 
         * Select the **Annotate** mode (speech bubble icon). Add annotations using the **Add annotation** (plus) icon. Exit annotation mode using the X at top right.
 
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+      ![Annotate](do-not-localize/screen_shot_2018-03-21at160813.png)
 
     * [Preview a page](/help/sites-authoring/editing-content.md#preview-mode) (to see how it will appear in the publish environment)
 
@@ -195,7 +193,7 @@ To edit your page:
 
    >[!NOTE]
    >
-   >To navigate using links in the content you must use [Preview mode](/help/sites-authoring/editing-content.md#preview-mode).
+   >To navigate using links in the content, you must use [Preview mode](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Editing the Page Properties {#editing-the-page-properties}
 
@@ -206,7 +204,7 @@ There are two (main) methods of [editing page properties](/help/sites-authoring/
     1. [Navigate to the page](#finding-your-page) you want to publish.
     1. Select the **Properties** icon from either:
 
-        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
+        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the appropriate resource.
         * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction).
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
@@ -229,7 +227,7 @@ There are two main methods of [publishing your page](/help/sites-authoring/publi
     1. [Navigate to the page](#finding-your-page) you want to publish.
     1. Select the **Quick Publish** icon from either:
 
-        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the approprate resource.
+        * [Quick Actions (Card View/Desktop Only)](#quick-actions-card-view-desktop-only) for the appropriate resource.
         * The toolbar when your [page has been selected](#selectiingyourpageforfurtheraction) (also gives access to [Publish Later](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
@@ -263,15 +261,15 @@ These actions can all be triggered by:
 
     * Copy:
 
-        * You will then need to navigate to the new location and paste.
+        * Navigate to the new location and paste.
 
     * Move:
 
-        * The wizard will open to collect the information needed to move the page. Follow the on-screen instructions.
+        * The wizard opens to collect the information needed to move the page. Follow the on-screen instructions.
 
     * Delete:
 
-        * You will be asked to confirm the action.
+        * You are asked to confirm the action.
 
    >[!NOTE]
    >
@@ -282,7 +280,7 @@ These actions can all be triggered by:
 [Locking a page](/help/sites-authoring/editing-content.md#locking-a-page) prevents other authors from working on it while you are. The Lock (and Unlock) icon/button can be found:
 
 * The toolbar when your [page has been selected](#selecting-your-page-for-further-action).
-* The [Page Information drop down menu](#editing-the-page-properties) when editing a page.
+* The [Page Information drop-down menu](#editing-the-page-properties) when editing a page.
 * The page toolbar when editing a page (when the page is locked)
 
 For example, the lock icon looks like this:
@@ -291,7 +289,7 @@ For example, the lock icon looks like this:
 
 ### Accessing Page References {#accessing-page-references}
 
-[Quick access to references](/help/sites-authoring/author-environment-tools.md#references) to/from a page are available in the References Rail.
+[Quick access to references](/help/sites-authoring/author-environment-tools.md#references) to a page or from a page are available in the References Rail.
 
 1. Select **References** using the toolbar icon (either before or after [selecting your page](#selecting-your-page-for-further-action)):
 
@@ -325,14 +323,14 @@ The same basic mechanism is used when restoring and/or comparing versions of you
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   If a version of your page has already been saved, this will be listed in the Timeline.
+   If a version of your page has already been saved, it is listed in the Timeline.
 
 1. Tap/click on the version you want to restore - this will reveal additional action buttons:
 
     * **Revert to this Version**
 
-        * The version will be restored.
+        * The version is restored.
 
     * **Show Differences**
 
-        * The page will be opened with differences (between the two versions) highlighted.
+        * The page is opened with differences (between the two versions) highlighted.

@@ -14,7 +14,7 @@ exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
 ---
 # Tutorial: Publish your adaptive form {#tutorial-publish-your-adaptive-form}
 
- ![](do-not-localize/13-publish-your-adaptive-form-small.png)
+ ![Hero-image](do-not-localize/13-publish-your-adaptive-form-small.png)
 
 This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 

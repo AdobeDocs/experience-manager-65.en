@@ -1,12 +1,10 @@
 ---
 title: Working with page versions
 description: Versioning creates a "snapshot" of a page at a specific point in time.
-uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 ---
@@ -15,7 +13,7 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 Versioning creates a "snapshot" of a page at a specific point in time. With versioning, you can perform the following actions:
 
 * Create a version of a page.
-* Restore a page to a previous version in order to undo a change that you made to a page, for example.
+* Restore a page to a previous version to undo a change that you made to a page, for example.
 * Compare the current version of a page with a previous version with differences in the text and images highlighted.
 
 ## Creating a New Version {#creating-a-new-version}
@@ -29,7 +27,7 @@ To create a new version of a page:
 
 1. Enter a **Comment** (optional).
 1. To set a label to the version (optional), click the **More &gt;&gt;** button and set the **Label** to name the version. If the label is not set, the version is an automatically incremented number.
-1. Click **Create Version**. A greyed message is displayed on the page; for example:
+1. Click **Create Version**. A grayed message is displayed on the page; for example:
    Version 1.2 created for: Shirts.
 
 >[!NOTE]
@@ -41,11 +39,11 @@ To create a new version of a page:
 To restore the page to a previous version:
 
 1. Open the page for which you want to restore a previous version.
-1. In the sidekick, select the **Versioning** tab, then the **Restore Version** sub-tab.
+1. In the sidekick, select the **Versioning** tab, then the **Restore Version** subtab.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Select the version you want to restore and select **Restore**.
+1. Select the version that you want to restore and select **Restore**.
 
 ## Restoring a Page Version from the Console {#restoring-a-page-version-from-the-console}
 
@@ -56,11 +54,11 @@ This method can be used to restore a page version. It can also be used to restor
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
-1. Selecting **Restore Version...** lists versions of documents in the current folder. Even if a page has been deleted, the last version will be listed:
+1. Selecting **Restore Version...** lists versions of documents in the current folder. Even if a page has been deleted, the last version is listed:
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Select the version you want to restore and click **Restore**. AEM restores the version(s) (or trees) that you select.
+1. Select the version that you want to restore and click **Restore**. AEM restores the versions (or trees) that you select.
 
 ### Restoring a Tree from the Console {#restoring-a-tree-from-the-console}
 
@@ -72,7 +70,7 @@ This method can be used to restore a page version. It can also be used to restor
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Click **Restore**. AEM restores the tree you have selected.
+1. Click **Restore**. AEM restores the tree that you have selected.
 
 ## Comparing with a Previous Version {#comparing-with-a-previous-version}
 
@@ -83,7 +81,7 @@ To compare the current version of the page with a previous version:
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Select the version you want to compare and click the **Diff** button.
+1. Select the version that you want to compare and click the **Diff** button.
 1. The differences between the current version and the selected version are displayed as follows:
 
     * Text that has been deleted is red and struck through.
@@ -109,7 +107,7 @@ To do this:
 
 >[!NOTE]
 >
->If versions are removed from the repository then Timewarp cannot show the correct view. Also, if elements (such as code, css, images, etc) for rendering the website have changed, the view will differ from what it originally was, as those items are not versioned in the repository.
+>If versions are removed from the repository, then Timewarp cannot show the correct view. Also, if elements (such as code, css, and images) for rendering the website have changed, the view differs from what it originally was, as those items are not versioned in the repository.
 
 ### Using the Timewarp Calendar {#using-the-timewarp-calendar}
 
@@ -117,7 +115,7 @@ Timewarp is available from the sidekick.
 
 The calendar version is used if you have a specific day to be viewed:
 
-1. Open the **Versioning** tab and then click **Timewarp** (near the bottom of the sidekick). The following dialog will be shown:
+1. Open the **Versioning** tab and then click **Timewarp** (near the bottom of the sidekick). The following dialog box is shown:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -131,11 +129,11 @@ The calendar version is used if you have a specific day to be viewed:
 
    >[!NOTE]
    >
-   >If you navigate to a page that has been removed/deleted from the repository it will be rendered properly if old versions of the page are still available in the repository.
+   >If you navigate to a page that has been removed or deleted from the repository, it will be rendered properly if old versions of the page are still available in the repository.
 
    >[!NOTE]
    >
-   >You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version, you do that manually using [restore](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. When you have finished viewing the page, click:
 
@@ -150,13 +148,13 @@ The timeline version is used if you want to see an overview of the publishing ac
 
 If you want to view the timeline of the document:
 
-1. To show the Timeline you can either:
+1. To show the Timeline, do one of the following:
 
-    1. Open the **Versioning** tab and then click **Timewarp** (near the bottom of the sidekick).
+    1. Open the **Versioning** tab, and then click **Timewarp** (near the bottom of the sidekick).
 
-    1. Use the sidekick dialog shown after [using the Timewarp Calendar](#using-the-timewarp-calendar).
+    1. Use the sidekick dialog box shown after [using the Timewarp Calendar](#using-the-timewarp-calendar).
 
-1. Click on **Show Timeline** - the document's timeline will appear; for example:
+1. Click **Show Timeline** - the document's timeline appears; for example:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -164,13 +162,13 @@ If you want to view the timeline of the document:
 
     * All lines indicate published versions.
       When a page is activated, a new line starts. Every time the document is edited a new color appears.
-      In the example below, the red line indicates that the page was edited during the timeframe of the initial green version and the yellow line indicates that the page was edited sometime during the red version etc.
+      In the example below, the red line indicates that the page was edited during the timeframe of the initial green version and the yellow line indicates that the page was edited sometime during the red version and so on.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Click:
 
-    1. **Go** to show the content of the published page at the selected point of time.
+    1. **Go** to show the content of the published page at the selected time.
     1. When showing that content then use **Exit Timewarp** to exit and return to the current author page.
 
 ### Timewarp Limitations {#timewarp-limitations}
@@ -181,10 +179,10 @@ Timewarp makes a best effort to reproduce a page at a selected point in time. Ho
 * **Timewarp uses page versions** - If you navigate to a page that has been removed/deleted from the repository it will be rendered properly if old versions of the page are still available in the repository.
 * **Removed versions affect Timewarp** - If versions are removed from the repository then Timewarp cannot show the correct view.
 
-* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version you will have to do that manually using [restore](#main-pars-title-1).
+* **Timewarp is read-only** - You cannot edit the old version of the page. It is only available for viewing. If you want to restore the older version, you do that manually using [restore](#main-pars-title-1).
 
-* **Timewarp is only based on page content** - If elements (such as code, css, assets/images, etc) for rendering the website have changed, the view will differ from what it originally was, as those items are not versioned in the repository.
+* **Timewarp is only based on page content** - If elements (such as code, css, and image assets) for rendering the website have changed, the view differs from what it originally was, as those items are not versioned in the repository.
 
 >[!CAUTION]
 >
->Timewarp is designed as a tool to assit authors with understanding and creating their content. It is not intended as an audit log or for legal purposes.
+>Timewarp is designed to assist authors with understanding and creating their content. It is not intended as an audit log or for legal purposes.

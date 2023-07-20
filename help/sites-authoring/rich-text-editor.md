@@ -40,7 +40,7 @@ This toolbar provides the following options:
 
 ## Full-Screen Editing {#full-screen-editing}
 
-For text-based components, tapping the full-screen mode from the toolbar ![](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
+For text-based components, tapping the full-screen mode from the toolbar ![Full screen editing mode](do-not-localize/screen_shot_2018-03-21at163236.png) opens the rich text editor and hides the rest of the page content.
 
 Fullscreen mode displays all the configured options that you can use for authoring. The availability is options [depends on the configuration](/help/sites-administering/rich-text-editor.md).
 

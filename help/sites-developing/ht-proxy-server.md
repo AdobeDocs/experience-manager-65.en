@@ -1,19 +1,15 @@
 ---
 title: How to use the Proxy Server Tool
-seo-title: How to use the Proxy Server Tool
 description: The proxy server acts as an intermediate server that relays requests between a client and a server
-seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
-uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 ---
 # How to use the Proxy Server Tool{#how-to-use-the-proxy-server-tool}
 
-The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server keeps track of all the client-server interactions and outputs a log of the entire TCP communication. This allows you to monitor exactly what is going on, without having to access the main server.
+The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server tracks all the client-server interactions and outputs a log of the entire TCP communication. This lets you monitor exactly what is going on, without having to access the main server.
 
 You can find the proxy server in your AEM installation here:
 
@@ -26,7 +22,7 @@ You can use the proxy server to monitor all client-server interaction, regardles
 * SMTP for email messages
 * LDAP for user management
 
-For example, you can position the proxy server between any two applications that communicate via a TCP/IP network; e.g. a web browser and AEM. This allows you to monitor exactly what happens when you request a CQ page.
+For example, you can position the proxy server between any two applications that communicate via a TCP/IP network; for example, a web browser and AEM. This allows you to monitor exactly what happens when you request a CQ page.
 
 ## Starting the Proxy Server Tool {#starting-the-proxy-server-tool}
 
@@ -38,7 +34,7 @@ Start the server on the command line:
 
 `<host>`
 
-This is the host address of the CRX instance that you want to connect to. If the instance is on your local machine, then this will be `localhost`.
+This is the host address of the CRX instance that you want to connect to. If the instance is on your local computer, then this is `localhost`.
 
 `<remoteport>`
 
@@ -46,7 +42,7 @@ This is the host port of the target CRX instance. For example, the default of a 
 
 `<localport>`
 
-This is the port on your local machine that you wish to connect to to access the CRX instance through the proxy.
+This is the port on your local machine that you wish to connect to access the CRX instance through the proxy.
 
 **Options**
 
@@ -92,7 +88,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-This shows the number of bytes that passed between client ( `C`) and the server ( `S`) on the 6th connection and at the average speed.
+This shows the number of bytes that passed between client ( `C`) and the server ( `S`) on the sixth connection and at the average speed.
 
 **An Example of Log Output**
 
@@ -100,11 +96,11 @@ As an example, consider a page that produces the following code when requested:
 
 ### Example {#example}
 
-As an example, consider a very simple html document located in the repository at
+As an example, consider a simple html document in the repository at
 
 `/content/test.html`
 
-alongside an image file located at
+Alongside an image file at
 
 `/content/test.jpg`
 
@@ -122,26 +118,26 @@ The content of `test.html` is:
 </html>
 ```
 
-Assuming the AEM instance is running on `localhost:4502` we start the proxy like this:
+Assuming the AEM instance is running on `localhost:4502`, the proxy is started like this:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-The CQ/CRX instance can now be accessed though the proxy at `localhost:4444` and all communication via this port is logged to `test.log`.
+The CQ/CRX instance can now be accessed though the proxy at `localhost:4444` and all communication by way of this port is logged to `test.log`.
 
-If we now watch the output of the proxy we will see the interaction between the browser and the AEM instance.
+If you now watch the output of the proxy, you see the interaction between the browser and the AEM instance.
 
-On startup the proxy outputs the following:
+On startup, the proxy outputs the following:
 
 ```xml
 starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-We then open a browser and access the test page:
+Now open a browser and access the test page:
 
 `http://localhost:4444/content/test.html`
 
-and we see the browser make a `GET` request for the page:
+And you see that the browser makes a `GET` request for the page:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -202,7 +198,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Checking if Keep-Alive works**
 
-Keep-alive is a feature of HTTP that allows a client to re-use the TCP connection to the server to make multiple requests (for the page code, pictures, style sheets and so on). Without keep-alive, the client has to establish a new connection for each request.
+Keep-alive is a feature of HTTP that allows a client to reuse the TCP connection to the server to make multiple requests (for the page code, pictures, style sheets, and so on). Without keep-alive, the client has to establish a new connection for each request.
 
 To check if keep-alive works:
 
@@ -213,7 +209,7 @@ To check if keep-alive works:
 
 **Finding Lost Requests**
 
-If you lose requests in a complex server setting, for example with a firewall and a dispatcher, you can use the proxy server to find out where the request was lost. In case of a firewall:
+If you lose requests in a complex server setting, for example with a firewall and a Dispatcher, you can use the proxy server to find out where the request was lost. If there is a firewall:
 
 * Start a proxy before a firewall
 * Start another proxy after a firewall
@@ -225,4 +221,4 @@ If you experience hanging requests from time to time:
 
 * Start the proxy.
 * Wait or write the access log into a file with each entry having a timestamp.
-* When the request start hanging you can see how many connections were open and which request is causing trouble.
+* When the request start hanging, you can see how many connections were open and which request is causing trouble.

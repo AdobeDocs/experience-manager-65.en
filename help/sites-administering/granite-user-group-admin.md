@@ -12,15 +12,16 @@ discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 ---
+
 # Granite Operations - User and Group Administration{#granite-operations-user-and-group-administration}
 
 As Granite incorporates the CRX Repository implementation of the JCR API Specification it has its own user and group administration.
 
-These accounts are the underlying basis of the [AEM accounts](/help/sites-administering/security.md) and any account changes made with the Granite administration will be reflected if/when the accounts are accessed from the [AEM Users console](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (e.g. `http://localhost:4502/useradmin`). From the AEM Users console you can also manage the privileges and other AEM specifics.
+These accounts are the underlying basis of the [AEM accounts](/help/sites-administering/security.md) and any account changes made with the Granite administration will be reflected if/when the accounts are accessed from the [AEM Users console](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (for example, `http://localhost:4502/useradmin`). From the AEM Users console you can also manage the privileges and other AEM specifics.
 
 Granite user and group administration consoles are both available from the **[Tools](/help/sites-administering/tools-consoles.md)** console of the touch-optimized UI:
 
-![chlimage_1-72](assets/chlimage_1-72a.png)
+![Tools console](assets/chlimage_1-72a.png)
 
 Choosing either **Users** or **Groups** from the Tools console will open the appropriate console. In both you can take action either by using the clickbox and then actions from the toolbar, or by opening the account details via the link under **Name**.
 
@@ -36,7 +37,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 * [Group Administration](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![User management console](assets/chlimage_1-74a.png)
 
   The **Groups** console lists:
 
@@ -50,11 +51,11 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. Use the **Add User** icon:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Add Useer icon](do-not-localize/chlimage_1-1.png)
 
 1. The **Create User** form will open:
 
-   ![chlimage_1-75](assets/chlimage_1-75a.png)
+   ![User Details form](assets/chlimage_1-75a.png)
 
    Here you can enter the user details for the account (most are standard and self-explanatory):
 
@@ -126,11 +127,11 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. You can now edit the details as in [Adding a New User](#adding-a-new-user). Under **Account Settings** there is a link for **Change Password**.
 
-   ![chlimage_1-76](assets/chlimage_1-76a.png)
+   ![Account Settings dialog](assets/chlimage_1-76a.png)
 
 1. The **Change Password** dialog will open. Enter and retype the new password, together with your password. Use **OK** to confirm the changes.
 
-   ![chlimage_1-77](assets/chlimage_1-77a.png)
+   ![Change password dialog](assets/chlimage_1-77a.png)
 
    An message will confirm that the password has been changed.
 
@@ -139,11 +140,11 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag one or more users.
 1. Use the **Groups** icon:
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Using the Groups icon](do-not-localize/chlimage_1-2.png)
 
    To open the group selection drop down:
 
-   ![chlimage_1-78](assets/chlimage_1-78a.png)
+   ![Groups selector](assets/chlimage_1-78a.png)
 
 1. In the selection box you can select or deselect groups to which the user account should belong.
 
@@ -157,7 +158,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag one or more users.
 1. Use the **Delete** icon to delete the user details:
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Delete existing user details](do-not-localize/chlimage_1-3.png)
 
 1. You will be asked to confirm the deletion, then a message will confirm that the actual deletion has taken place.
 
@@ -167,11 +168,11 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 
 1. Use the Add Group icon:
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Add a new group](do-not-localize/chlimage_1-4.png)
 
 1. The **Create Group** form will open:
 
-   ![chlimage_1-79](assets/chlimage_1-79a.png)
+   ![Group Details form](assets/chlimage_1-79a.png)
 
    Here you can enter the group details:
 
@@ -211,7 +212,7 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag a group.
 1. Use the **Copy** icon to copy the group details:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Copy an existing group](do-not-localize/chlimage_1-5.png)
 
 1. The **Edit Group Settings** form will be opened.
 
@@ -224,6 +225,6 @@ Choosing either **Users** or **Groups** from the Tools console will open the app
 1. Use the clickbox to flag one or more groups.
 1. Use the **Delete** icon to delete the group details:
 
-   ![](do-not-localize/chlimage_1-6.png)
+   ![Deleting an existing group](do-not-localize/chlimage_1-6.png)
 
 1. You will be asked to confirm the deletion, then a message will confirm that the actual deletion has taken place.

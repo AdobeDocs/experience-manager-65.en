@@ -1,14 +1,10 @@
 ---
 title: Using Comments
-seo-title: Using Comments
 description: Comments feature lets signed-in site visitors share their opinions and knowledge
-seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
-uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
 ---
@@ -153,7 +149,7 @@ Under the **Sort Settings** tab, specify how the posted comments are sorted when
 
 By changing the Comment Resource Type, the comment system no longer generates an instance of a comment using the default, but rather one that has been customized (extended) by developers.
 
-Once the custom resource types are known, enter [Design Mode](/help/sites-authoring/default-components-designmode.md) and double click the placed `Comments` component to open a dialog with an extra tab.
+Once the custom resource types are known, enter [Design Mode](/help/sites-authoring/default-components-designmode.md) and double-click the placed `Comments` component to open a dialog with an extra tab.
 
 Under the **Resource Types** tab, specify the custom resourceType for new instances of the `Comments or Voting` components:
 

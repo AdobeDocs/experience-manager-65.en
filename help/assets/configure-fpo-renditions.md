@@ -121,7 +121,7 @@ To use ImageMagick processing capabilities to generate FPO rendition of the exis
 
 You can check the generated FPO renditions after the workflow completes. In Experience Manager Assets user interface, click the asset to open a large preview. Open the left rail and select Renditions. Alternatively, use the keyboard shortcut `Alt + 3` when the preview is open.
 
-Click **[!UICONTROL FPO rendition]** to load its preview. Optionally, you can right click the rendition and save it to your file system.
+Click **[!UICONTROL FPO rendition]** to load its preview. Optionally, you can right-click the rendition and save it to your file system.
 
 ![rendition_list](assets/rendition_list.png)
 

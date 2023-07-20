@@ -14,6 +14,11 @@ exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
 ---
 # Introduction to AEM Forms{#introduction-to-aem-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html)                  |
+| AEM 6.5     | This article         |
+
 For information about latest features and enhancements in AEM Forms, see [What's new in AEM Forms](../../forms/using/whats-new.md).
 
 ## About AEM Forms {#about-aem-forms}
@@ -26,7 +31,7 @@ In large enterprises, forms are often created once and reused by copying to a co
 
 AEM Forms provides forms management tools that not only lets you manage adaptive form, but XFA forms, PDF forms, and related assets as well. For more information, see [Introduction to managing forms](../../forms/using/introduction-managing-forms.md).
 
-![](do-not-localize/4th-draft.gif)
+![AEM forms capabilities](do-not-localize/4th-draft.gif)
 
 ### Key capabilities {#key-capabilities}
 
@@ -90,7 +95,7 @@ Capturing data offline and synchronizing it the next time you return online is e
 * Customizable dashboards for real-time insight into business operations
 * API for connecting with third-party reporting tools
 
-![](do-not-localize/3rd-draft.gif)
+![Third draft](do-not-localize/3rd-draft.gif)
 
 ## Personalized communication {#personalized-communication}
 
@@ -106,9 +111,9 @@ Personalized documents, like, receipts, welcome kits, and statements can easily 
 * Document conversion and assembly
 * Support for on-demand or batch document delivery through multiple channels, including web, email, and paper
 * Audit trails with change history
-* Support for digital signatures to validate content integrity and the signer’s identity
+* Support for digital signatures to validate content integrity and the signer's identity
 * Document security add-on for AEM Forms including encryption, usage policies, tracking, and auditing
 
-![](do-not-localize/layout-02.png)
+![Layout two](do-not-localize/layout-02.png)
 
 Streamlined personalized communication workflow

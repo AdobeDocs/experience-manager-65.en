@@ -37,7 +37,7 @@ If you are using MySQL as your AEM forms database, Administration Console cannot
 ## Edit a category {#edit-a-category}
 
 1. In administration console, click Services &gt; Applications and Services &gt; Category Management.
-1. Select the category you wish to edit and click Edit. Alternatively, you can double click a category to edit.
+1. Select the category you wish to edit and click Edit. Alternatively, you can double-click a category to edit.
 1. Edit the name of the category in the Name box.
 
 ## Remove a category {#remove-a-category}

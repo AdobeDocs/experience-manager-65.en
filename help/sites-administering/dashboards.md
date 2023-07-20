@@ -13,7 +13,7 @@ exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 ---
 # Dashboards{#dashboards}
 
-When using AEM you are able of managing a lot of content of different types (e.g. pages, assets). AEM Dashboards provide an easy to use and customizable way to define pages that displays consolidated data.
+When using AEM you are able of managing a lot of content of different types (for example, pages, assets). AEM Dashboards provide an easy to use and customizable way to define pages that displays consolidated data.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ To create a new Dashboard, proceed as follows:
 1. In the **Tools** section, click **Configuration Console**.
 1. In the tree, Double-Click **Dashboard**.
 1. Click **New Dashboard**.
-1. Type the **Title** (e.g. My Dashboard) and the **Name**.
+1. Type the **Title** (for example, My Dashboard) and the **Name**.
 1. Click **Create**.
 
 ### Cloning A Dashboard {#cloning-a-dashboard}
@@ -108,7 +108,7 @@ Each component also defines specific settings.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Date Granularity** Time unit of the X axis (e.g. day, hour).
+**Date Granularity** Time unit of the X axis (for example, day, hour).
 
 **Metrics** The list of events you want to display.
 
@@ -144,7 +144,7 @@ This component displays a graph showing the more visited section of a website ac
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Date Granularity** Time unit of the X axis (e.g. day, hour).
+**Date Granularity** Time unit of the X axis (for example, day, hour).
 
 **Metrics** The event you want to display.
 
@@ -182,7 +182,7 @@ The top author components is stored in the repository at `/apps/geometrixx-outdo
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-The following Javascript file is defined in the `geout.reporting.topauthors` [Client Library](/help/sites-developing/clientlibs.md) as a child of the component itself.
+The following JavaScript file is defined in the `geout.reporting.topauthors` [Client Library](/help/sites-developing/clientlibs.md) as a child of the component itself.
 
 The [QueryBuilder](/help/sites-developing/querybuilder-api.md) is used to query the repository to read `cq:AuditEvent` nodes. The query result is a JSON object from which author contributions are extracted.
 

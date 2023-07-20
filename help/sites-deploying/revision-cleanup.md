@@ -176,7 +176,7 @@ In some cases, alternating between the tail and full compaction modes delays the
   </tr>
   <tr>
    <td><strong>What happens if I accidentally run against the wrong repository format?</strong></td>
-   <td>If you try to run the oak-segment module against an oak-segment-tar repository (or vice versa), startup will fail with an <em>IllegalStateException</em> with the message "Invalid segment format". No data corruption will occur.</td>
+   <td>If you try to run the oak-segment module against an oak-segment-tar repository (or conversely), startup will fail with an <em>IllegalStateException</em> with the message "Invalid segment format". No data corruption will occur.</td>
    <td> </td>
   </tr>
   <tr>

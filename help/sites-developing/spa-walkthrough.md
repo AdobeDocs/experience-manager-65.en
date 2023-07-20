@@ -14,7 +14,7 @@ The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. T
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
@@ -44,7 +44,7 @@ The walkthrough is based on standard AEM functionality and the sample WKND SPA P
 
 ### What is a SPA? {#what-is-a-spa}
 
-A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily Javascript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
+A single-page application (SPA) differs from a conventional page in that it is rendered client-side and is primarily JavaScript-driven, relying on Ajax calls to load data and dynamically update the page. Most or all content is retrieved once in a single page load with additional resources loaded asynchronously as needed based on user interaction with the page.
 
 This reduces the need for page refreshes and presents an experience to the user that is seamless, fast, and feels more like a native app experience.
 
@@ -177,7 +177,7 @@ The next section, [Loading an SPA Application,](#loading-an-spa-application) dig
 
 1. Switch to the **Network** tab of the developer tools and reload the page.
 
-   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React Javascript, its dependencies, as well as JSON data for the page.
+   Ignoring image requests, note that the primary resources loaded for the page are the page itself, CSS, the React JavaScript, its dependencies, as well as JSON data for the page.
 
    ![Step 5](assets/spa-walkthrough-step-1-5.png)
 

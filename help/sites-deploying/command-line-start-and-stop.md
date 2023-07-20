@@ -1,23 +1,19 @@
 ---
 title: Command Line Start and Stop
-seo-title: Command Line Start and Stop
-description: Learn how to start and stop AEM from the command line.
-seo-description: Learn how to start and stop AEM from the command line.
-uuid: 585f071c-2286-4a2c-af07-404bf298cba8
+description: Learn how to start and stop Adobe Experience Manager from the command line.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 ---
 # Command Line Start and Stop{#command-line-start-and-stop}
 
 ## Starting Adobe Experience Manager from the Command Line {#starting-adobe-experience-manager-from-the-command-line}
 
-The `start` script is available under *the &lt;cq-installation&gt;/bin* directory. Both Unix and Windows versions are provided. The script starts the instance installed in *&lt;cq-installation&gt;* directory.
+The `start` script is available under *the &lt;cq-installation&gt;/bin* directory. Both UNIX&reg; and Windows versions are provided. The script starts the instance installed in *&lt;cq-installation&gt;* directory.
 
-Those two versions support a list of environment variables that could be used to start and tune the AEM instance.
+Those two versions support a list of environment variables that could be used to start and tune the Adobe Experience Manager (AEM) instance.
 
 <table>
  <tbody>
@@ -39,7 +35,7 @@ Those two versions support a list of environment variables that could be used to
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
-   <td>Runmode(s) separated by comma<br /> </td>
+   <td>Run modes separated by comma<br /> </td>
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
@@ -62,7 +58,7 @@ Those two versions support a list of environment variables that could be used to
 
 >[!CAUTION]
 >
->Note that some run modes, among them author and publish, need to be set before first starting AEM and can not be changed afterwards. Before setting up an AEM instance that is supposed to be used in production, please see the [run modes documentation](/help/sites-deploying/configure-runmodes.md) for details.
+>Some run modes, among them author and publish, must be set before first starting AEM and cannot be changed afterwards. Before setting up an AEM instance that is used in production, see [run modes documentation](/help/sites-deploying/configure-runmodes.md) for details.
 
 ### Windows platform start.bat script example {#windows-platform-start-bat-script-example}
 
@@ -70,7 +66,7 @@ Those two versions support a list of environment variables that could be used to
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Unix platform start script example {#unix-platform-start-script-example}
+### UNIX&reg; platform start script example {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -84,10 +80,10 @@ CQ_PORT=1234 ./start
 
 To stop AEM, do one of the following:
 
-* Depending on the platform you are using:
+* Depending on the platform that you use:
 
     * If you started AEM from either a script or the command line, press **Ctrl+C** to shut down the server.
-    * If you have used the start script on UNIX, you must use the stop script to stop AEM.
+    * If you have used the start script on UNIX&reg;, you must use the stop script to stop AEM.
 
 * If you started AEM by double-clicking the jar file, click the **On** button on the startup window (the button then changes to **Off**) to shut down the server.
 
@@ -95,9 +91,9 @@ To stop AEM, do one of the following:
 
 ## Stopping Adobe Experience Manager from the Command Line {#stopping-adobe-experience-manager-from-the-command-line}
 
-The `stop` script is available under *the &lt;cq-installation&gt;/bin* directory. Both Unix and Windows versions are provided. The script stops the running instance installed in *&lt;cq-installation&gt;* directory.
+The `stop` script is available under *the &lt;cq-installation&gt;/bin* directory. Both UNIX&reg; and Windows versions are provided. The script stops the running instance installed in *&lt;cq-installation&gt;* directory.
 
-### Unix platform stop script example {#unix-platform-stop-script-example}
+### UNIX&reg; platform stop script example {#unix-platform-stop-script-example}
 
 ```shell
 ./stop
@@ -109,9 +105,9 @@ The `stop` script is available under *the &lt;cq-installation&gt;/bin* directory
 ./stop.bat
 ```
 
-If you just want to preconfigure the repository (without relocating it) you only have to:
+If you only want to preconfigure the repository (without relocating it), you only have to:
 
-* extract `repository.xml` to the required location
+* Extract `repository.xml` to the required location
 
 * update `repository.xml` as required
 

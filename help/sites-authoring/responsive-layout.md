@@ -18,7 +18,7 @@ This provides a paragraph system that allows you to position components within a
 The layout container:
 
 * Provides horizontal snap to grid, together with the ability to place components into the grid side-by-side and define when they should collapse/reflow.
-* Uses pre-defined breakpoints (e.g. for phone, tablet, etc.) to allow you to define the required behavior of content for related devices/orientation.
+* Uses pre-defined breakpoints (for example, for phone, tablet, etc.) to allow you to define the required behavior of content for related devices/orientation.
 
     * For example, you can customize the component size or whether the component can be seen on specific devices.
 
@@ -95,7 +95,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
 1. Select the **Emulator** icon from the top toolbar:
 
-   ![](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Emulator](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. The emulator toolbar will open.
 
@@ -103,13 +103,13 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    The emulator toolbar displays additional layout options:
 
-    * **Rotate device** - Allows you to rotate a deivce from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
+    * **Rotate device** - Allows you to rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
 
-   ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
+      ![Rotate device](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotate device](do-not-localize/screen_shot_2018-03-23at084637.png)
 
     * **Select Device** - Define a specific device to emulate from a list (see next step for details)
 
-   ![](do-not-localize/screen_shot_2018-03-23at084743.png)
+      ![Select device](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. To select a specific device to emulate you can either:
 
@@ -164,7 +164,7 @@ As with other components, you can select and then take action on (cut, copy, del
 
    You need to select the **Parent** option.
 
-   ![](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Parent option](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. If the layout component is nested, selecting the **Parent** option presents a drop-down selection, allowing you to select the nested layout container or its parent(s).
 
@@ -232,32 +232,32 @@ When in layout mode you can perform various actions on a grid:
 
     * **Parent** - Select the parent component.
 
-  ![](do-not-localize/screen_shot_2018-03-23at090823.png)
+      ![Parent](do-not-localize/screen_shot_2018-03-23at090823.png)
 
     * **Show hidden components** - Reveal all or individual components. The number indicates how many hidden components there currently are.thecounter shows how many components are hidden.
 
-  ![](do-not-localize/screen_shot_2018-03-23at091007.png)
+      ![Show hidden components](do-not-localize/screen_shot_2018-03-23at091007.png)
 
     * **Revert breakpoint layout** - Revert to the default layout. This means that no customized layout will be imposed.
 
-  ![](do-not-localize/screen_shot_2018-03-23at091013.png)
+      ![Rever breakpoint layout](do-not-localize/screen_shot_2018-03-23at091013.png)
 
     * **Float to new line** - Move the component up a position if spacing allows.
 
-  ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+      ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
     * **Hide component** - Hide the current component.
 
-  ![](do-not-localize/screen_shot_2018-03-23at090834.png)
+      ![Hide component](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-  >[!NOTE]
-  >
-  >In the above example the float and hide actions are available because this Layout Container is nested within a parent Layout Container.
+      >[!NOTE]
+      >
+      >In the above example the float and hide actions are available because this Layout Container is nested within a parent Layout Container.
 
     * **Unhide components**
       Select the parent components to show the action toolbar with the **Show hidden components** option. In this example, two components are hidden.
 
-  ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+      ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
   Selecting the **Show hidden components** option will display in blue the components that are currently hidden in their original positions.
 

@@ -35,7 +35,7 @@ The source code is located at /libs/granite/contexthub/code/ui/container/js/Cont
 
 ### Configuration {#configuration}
 
-Configure the contexthub.base UI module using a Javascript object in JSON format. Include any of the following properties to configure the UI module features:
+Configure the contexthub.base UI module using a JavaScript object in JSON format. Include any of the following properties to configure the UI module features:
 
 * **image:** A URL to an image to display as the icon.
 * **icon:** The name of a [Coral UI icon](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) class. If you specify a value for both the icon and image properties, the image is used.

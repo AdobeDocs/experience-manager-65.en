@@ -387,7 +387,7 @@ To access AEM WCM security, do one of the following:
 
 * From the Welcome screen or various locations in AEM, click the security icon:
 
-![](do-not-localize/wcmtoolbar.png)
+![AEM WCM Security tab](do-not-localize/wcmtoolbar.png)
 
 * Navigate directly to `https://<server>:<port>/useradmin`. Be sure you log into AEM as an administrator.
 

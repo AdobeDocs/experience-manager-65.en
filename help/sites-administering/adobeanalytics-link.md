@@ -11,6 +11,7 @@ content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 ---
+
 # Configuring Link Tracking for Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 When users click links on pages of your website you can capture related information in Adobe Analytics. For example, use link tracking to learn how users interact with your site, track file downloads, and track exit links.
@@ -22,7 +23,7 @@ When users click links on pages of your website you can capture related informat
 1. Using **Show Configurations**, open the required Adobe Analytics framework.
 1. Expand the **Link Tracking Configuration** section and configure as required (this page provides further details):
 
-   ![aa-08](assets/aa-08.png)
+   ![Analytics framework](assets/aa-08.png)
 
 ## Tracking File Downloads {#tracking-file-downloads}
 
@@ -42,7 +43,7 @@ Downloads of the following file types are tracked by default:
 * pdf
 * xls
 
-So for example, with download trackng enabled for PDF files, whenever users click links to PDF files, the download of the PDF is tracked.
+So for example, with download tracking enabled for PDF files, whenever users click links to PDF files, the download of the PDF is tracked.
 
 The download tracking properties of the framework are implemented as code in the `analytics.sitecatalyst.js` file that is generated for a page. The following code sample represents the default download tracking configuration:
 
@@ -230,7 +231,7 @@ This example illustrates how the mapping works in the context of tracking and th
 
 The call made will look like this when viewed with the Adobe Marketing Cloud Debugger:
 
-![aa-leavequerysearch-blank](assets/aa-leavequerysearch-blank.png)
+![Adobe Marketing Cloud Debugger](assets/aa-leavequerysearch-blank.png)
 
 >[!NOTE]
 >
@@ -244,7 +245,7 @@ The call made will look like this when viewed with the Adobe Marketing Cloud Deb
 
 The call details that appear in Adobe Marketing Cloud Debugger are similar to the following example:
 
-![aa-leavequerysearch-active](assets/aa-leavequerysearch-active.png)
+![Adobe Marketing Cloud Debugger again](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -317,7 +318,7 @@ Use the following procedure to configure link tracking for a **Text** component:
 
 1. Select the text that you want to use as hypertext and click the Hyperlink button.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Link icon](do-not-localize/chlimage_1.png)
 
 1. Add the target URL in the Link To box, then expand the Link Tracking area.
 
@@ -327,7 +328,7 @@ Use the following procedure to configure link tracking for a **Text** component:
    >
    >It will only be enabled when you have selected a valid Link in the RTE.
 
-   ![aa-17](assets/aa-17.png)
+   ![Enabling link tracking](assets/aa-17.png)
 
 1. Enable **Custom Link Tracking** to override the link tracking configuration of the Adobe Analytics framework and to enable link tracking for the current link.
 

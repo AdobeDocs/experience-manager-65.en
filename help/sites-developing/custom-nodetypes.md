@@ -1,24 +1,20 @@
 ---
 title: Custom Node Types
-seo-title: Custom Node Types
-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
-seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
-uuid: f2022504-e433-4b42-9cc1-eef41086483a
+description: Adobe Experience Manager (AEM) is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
 ---
 # Custom Node Types{#custom-node-types}
 
-Because AEM is based on Sling and uses a JCR repository, node types offered by both of these are available for use:
+Because Adobe Experience Manager (AEM) is based on Sling and uses a JCR repository, node types offered by both of these are available for use:
 
-* [JCR Node Types](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [JCR Node Types](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-In addition to these. AEM provides a range of custom node types.
+In addition to these node types, AEM provides a range of custom node types.
 
 ## Audit {#audit}
 
@@ -143,7 +139,7 @@ Defines the default CQ page.
 
 **Description**
 
-Defines a mixin type that marks nodes as pseudo pages. This means they can be adapted for Page and WCM editing support.
+Defines a mixin type that marks nodes as pseudo pages. In other words, it means that they can be adapted for Page and WCM editing support.
 
 **Definition**
 
@@ -158,9 +154,9 @@ Defines the default node for page content, with the minimum properties as used b
 * `@prop jcr:title` - Title for the page.
 * `@prop jcr:description` - Description of this page.
 * `@prop cq:template` - Path to the template used to create the page.
-* `@prop cq:allowedTemplates` - List of regular expressions used to determine the path(s) to allowed template.
-* `@prop pageTitle` - Title usually displayed in the `<title>` tag.
-* `@prop navTitle` - Title usually used in navigation.
+* `@prop cq:allowedTemplates` - List of regular expressions used to determine the paths to allowed template.
+* `@prop pageTitle` - Title displayed in the `<title>` tag.
+* `@prop navTitle` - Title used in navigation.
 * `@prop hideInNav` - Specifies whether the page should be hidden in the navigation.
 * `@prop onTime` - Time when this page becomes valid.
 * `@prop offTime` - Time when this page becomes invalid.
@@ -195,13 +191,13 @@ Defines a CQ template.
 * `@node jcr:content` - Default content for new pages.
 * `@node icon.png` - A file that holds a characteristic icon.
 * `@node thumbnail.png` - A file that holds a characteristic thumbnail image.
-* `@node workflows` - Auto assign workflow configuration. The configuration will follow the structure below:
+* `@node workflows` - Auto assign workflow configuration. The configuration follows the structure below:
     *  `+ workflows`
         *  `+ name1`
             * `- cq:path`
                 * `- cq:workflowName`
-* `@prop allowedParents` - Regular expression patterns to determine the path(s) to templates allowed as parent templates.
-* `@prop allowedChildren` - Regular expression patterns to determine the path(s) to templates allowed as child templates.
+* `@prop allowedParents` - Regular expression patterns to determine the paths to templates allowed as parent templates.
+* `@prop allowedChildren` - Regular expression patterns to determine the paths to templates allowed as child templates.
 * `@prop ranking` - Position within the list of templates in the create page dialog.
 
 **Definition**
@@ -230,15 +226,15 @@ Defines a CQ component.
 * `@prop dialogPath` -  Primary dialog path (alternative to dialog).
 * `@node design_dialog` - Design dialog.
 * `@prop cq:cellName` - Name of the design cell.
-* `@prop cq:isContainer` - Indicates whether this is a container component. This forces the cell names of child components to be used instead of path names. For example, the `parsys` is a container component. If this value is not defined, the check is made based on the existence of a `cq:childEditConfig`.
+* `@prop cq:isContainer` - Indicates whether it is a container component. Forces the cell names of child components to be used instead of path names. For example, the `parsys` is a container component. If this value is not defined, the check is made based on the existence of a `cq:childEditConfig`.
 * `@prop cq:noDecoration` - If true, no decoration `div` tags are drawn when including this component.
 * `@node cq:editConfig` - The configuration that defines the parameters for the edit bar.
 * `@node cq:childEditConfig` - The edit configuration that is inherited by child components.
 * `@node cq:htmlTag` - Defines additional tag attributes that are added to the "surrounding" `div` tag when the component is included.
 * `@node icon.png`- A file that holds a characteristic icon.
 * `@node thumbnail.png` - A file that holds a characteristic thumbnail image.
-* `@prop allowedParents` - Regular expression patterns to determine the path(s) of components that are allowed as parent components.
-* `@prop allowedChildren` - Regular expression patterns to determine the path(s) of components that are allowed as child components.
+* `@prop allowedParents` - Regular expression patterns to determine the paths of components that are allowed as parent components.
+* `@prop allowedChildren` - Regular expression patterns to determine the paths of components that are allowed as child components.
 * `@node virtual` - Contains subnodes that reflect virtual components used for the component drag and drop.
 * `@prop componentGroup` - Name of the component group, used for the component drag and drop.
 * `@node cq:infoProviders` - Contains subnodes, each of which has a property `className` that refers to a `PageInfoProvider`.
@@ -312,9 +308,9 @@ Defines the configuration for the "editbar".
 
 **Description**
 
-Configures one drop target of a component. The name of the this node will be used as an ID for drag and drop.
+Configures one drop target of a component. The name of this node is used as an ID for drag and drop.
 
-* `@prop accept` - List of mime types accepted by this drop target; e.g. `["image/*"]`
+* `@prop accept` - List of mime types accepted by this drop target; for example, `["image/*"]`
 * `@prop groups` - List of drag and drop groups that accept a source.
 * `@prop propertyName` - Name of the property used to store the reference.
 
@@ -330,7 +326,7 @@ Configures one drop target of a component. The name of the this node will be use
 
 **Description**
 
-Defines a virtual CQ component. These are currently used only for the new component drag and drop wizard.
+Defines a virtual CQ component. Currently used only for the new component drag and drop wizard.
 
 * `@prop jcr:title` - Title of this component.
 * `@prop jcr:description` - Description of this component.
@@ -338,8 +334,8 @@ Defines a virtual CQ component. These are currently used only for the new compon
 * `@node cq:childEditConfig`- Edit configuration that is inherited by child components.
 * `@node icon.png` - A file that holds a characteristic icon.
 * `@node thumbnail.png` - A file that holds a characteristic thumbnail image.
-* `@prop allowedParents` -  Regular expression patterns to determine path(s) of components that are allowed as parent components.
-* `@prop allowedChildren` - Regular expression patterns to determine path(s) of components that are allowed as child components.
+* `@prop allowedParents` -  Regular expression patterns to determine paths of components that are allowed as parent components.
+* `@prop allowedChildren` - Regular expression patterns to determine paths of components that are allowed as child components.
 * `@prop componentGroup` - Name of the component group for the component drag and drop.
 
 **Definition**
@@ -359,7 +355,7 @@ Defines a virtual CQ component. These are currently used only for the new compon
 
 **Description**
 
-Defines the (client side) listeners to be executed on an edit event. The values must either reference a valid client side listener function or contain a predefined shortcut:
+Defines the (client side) listeners to be executed on an edit event. The values must either reference a valid client-side listener function or contain a predefined shortcut:
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -442,7 +438,7 @@ Container List.
 
 **Description**
 
-`cq:attributes` is the node type for the ContentBus version tags. This node only has a series of properties; of which three are predefined "created", "csd", and "timestampe".
+The node type `cq:attributes` is for the ContentBus version tags. This node only has a series of properties; of which three are predefined "created", "csd", and "timestamp".
 
 * `@prop created (long) mandatory copy` - Timestamp of creation of the version information, generally the time of checkin of the previous version or time of page creation.
 * `@prop csd (string) mandatory copy` - csd standard attribute, copy of the cq:csd property of the page node
@@ -483,9 +479,9 @@ The items in a `cq:Cq4ContentPage` are:
 
 Poll configuration.
 
-* `@prop source (String) mandatory` - Data source URI, this is required and must not be empty
-* `@prop target (String)` - The target location where data retrieved from the data source is stored. This is optional and defaults to the cq:PollConfig node.
-* `@prop interval (Long)` - The interval in seconds at which to poll for new or updated data from the data source. This is optional and defaults to 30 Minutes (1800 seconds).
+* `@prop source (String) mandatory` - Data source URI. Required and must not be empty.
+* `@prop target (String)` - The target location where data retrieved from the data source is stored. Optional and defaults to the cq:PollConfig node.
+* `@prop interval (Long)` - The interval in seconds at which to poll for new or updated data from the data source. Optional and defaults to 30 Minutes (1800 seconds).
 * [Creating Custom Data Importer Services for Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definition**
@@ -576,9 +572,9 @@ Defines a LiveSync mixin. If a node is involved in a LiveRelationship with a pri
 
 **Description**
 
-Defines a LiveSyncCancelled mixin. Cancel the LiveSync behavior of a live copy (controlled) node which may be involded in a LiveRelationship owing to one of its parents.
+Defines a LiveSyncCancelled mixin. Cancel the LiveSync behavior of a live copy (controlled) node which may be involved in a LiveRelationship owing to one of its parents.
 
-* `@prop cq:isCancelledForChildren` - Defines whether a LiveSync is cancelled; also for children.
+* `@prop cq:isCancelledForChildren` - Defines whether a LiveSync is canceled; also for children.
 
 **Definition**
 
@@ -812,7 +808,7 @@ Any user/public website can tag the content (Web2.0 style), used inside cq:userC
 
 **Description**
 
-Adds a `cq:userContent` subnode that can be modified by users. Each user will have its own `cq:userContent/<userid>` subnode, that typically has the mixin `cq:UserTaggable`.
+Adds a `cq:userContent` subnode that can be modified by users. Each user has its own `cq:userContent/<userid>` subnode, that typically has the mixin `cq:UserTaggable`.
 
 **Definition**
 
@@ -1060,7 +1056,7 @@ Workflow data
 
 **Description**
 
-Auto assign workflow configuration. The configuration will follow this structure below:
+Auto assign workflow configuration. The configuration follows this structure below:
 * `workflows`
     * `+ name1`
         * `- cq:path`

@@ -14,7 +14,7 @@ exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-Demand provides a fully configured app template, an article template, and article components.
 

@@ -87,7 +87,7 @@ For translation project managers, it is often necessary to manually select speci
 
    ![Project basic tab](assets/project-basic-tab.png)
 
-1. On the **Advanced** tab, use the **Target Language** dropdown to select the language(s) into which your content should be translated. Tap or click **Create**.
+1. On the **Advanced** tab, use the **Target Language** dropdown to select the languages into which your content should be translated. Tap or click **Create**.
 
    ![Project advanced tab](assets/project-advanced-tab.png)
 

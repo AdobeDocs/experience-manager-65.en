@@ -17,7 +17,7 @@ For single page applications in AEM, the app is responsible for the routing. Thi
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## Project Routing {#project-routing}
 
@@ -57,7 +57,7 @@ By default, this behavior is automatically enabled. To disable it, the SPA shoul
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Note that every route of the SPA should correspond to an accessible resource in AEM (e.g., " `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a "block list" of routes that should be ignored by the `PageModelManager`:
+Note that every route of the SPA should correspond to an accessible resource in AEM (for example,, " `/content/mysite/mypage"`) since the `PageModelManager` will automatically try to load the corresponding page model once the route is selected. Though, if needed, the SPA can also define a "block list" of routes that should be ignored by the `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

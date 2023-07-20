@@ -47,7 +47,7 @@ Using the Style System generally takes the following form.
 
 1. The AEM page author can then choose the designed styles in the page editor via the style menu of the component's toolbar.
 
-Note that only the last three steps are actually carried out in AEM. This means all development of the necessary CSS and Javascript can be done without AEM.
+Note that only the last three steps are actually carried out in AEM. This means all development of the necessary CSS and JavaScript can be done without AEM.
 
 Actually implementing the styles only requires deployment on AEM and selection within the components of the desired templates.
 
@@ -105,7 +105,7 @@ If you wish to use the Style System for your own components do the following:
 
 >[!CAUTION]
 >
->The CSS classes (as well as any necessary Javascript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
+>The CSS classes (as well as any necessary JavaScript) configured as style properties of a component's policy must be deployed as [Client Libraries](/help/sites-developing/clientlibs.md) in order to work.
 
 ## Setup {#setup}
 

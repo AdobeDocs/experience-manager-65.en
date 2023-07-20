@@ -1,41 +1,37 @@
 ---
 title: Single Page Applications
-seo-title: Single Page Applications
 description: Follow this page to learn about single page applications, that is, you can create an application that performs identically to a desktop or mobile application.
-seo-description: Follow this page to learn about single page applications, that is, you can create an application that performs identically to a desktop or mobile application.
-uuid: d1865e79-6e7c-4149-95c0-556e61478b01
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: a5b5e40e-2457-45fe-9632-baf5008fe8bf
 exl-id: daf7bf39-a105-46eb-ab7b-1c59484949e2
 ---
 # Single Page Applications{#single-page-applications}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 [Single-Page Applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA) have reached critical mass, widely regarded as the most effective pattern for building seamless experiences with web technology. By following a SPA pattern, you can create an application that performs identically to a desktop or mobile application, but reaches a multitude of device platforms and form factors due to its foundation in open web standards.
 
-Generally speaking, SPAs appear more performant than traditional page-based web sites because they typically load a complete HTML page **only once** (including CSS, JS, and supporting font content), and then load only exactly what is necessary each time a change of state occurs in the app. What's necessary for this change of state can vary based on the set of technologies chosen, but typically includes a single HTML fragment to replace the existing 'view', and the execution of a block of JS code to wire up the new view and perform any client side template rendering that may be necessary. The speed of this state change can be improved even further by supporting template caching mechanisms, or even offline access to template content if Adobe PhoneGap is used.
+Generally speaking, SPAs appear more performant than traditional page-based web sites because they typically load a complete HTML page **only once** (including CSS, JS, and supporting font content), and then load only exactly what is necessary each time a change of state occurs in the app. What's necessary for this change of state can vary based on the set of technologies chosen, but typically includes a single HTML fragment to replace the existing 'view', and the execution of a block of JS code to wire up the new view and perform any client-side template rendering that may be necessary. The speed of this state change can be improved even further by supporting template caching mechanisms, or even offline access to template content if Adobe PhoneGap is used.
 
-AEM 6.1 supports the building and management of SPAs via AEM Apps. This article will provide an introduction to the concepts behind the SPA and how they leverage [AngularJS](https://angularjs.org/) to bring your brand to the App Store and Google Play.
+AEM 6.1 supports the building and management of SPAs via AEM Apps. This article provides an introduction to the concepts behind the SPA and how they use [AngularJS](https://angularjs.org/) to bring your brand to the App Store and Google Play.
 
 ## SPA in AEM Apps {#spa-in-aem-apps}
 
-The Single-Page Application framework in AEM Apps enables the high performance of an AngularJS app, while empowering authors (or other non-technical personnel) to create and manage the app's content via the touch-optimized, drag-and-drop editor environment that has traditionally been reserved for managing web sites. Already have a site built with AEM? You'll find that reusing your content, components, workflows, assets, and permissions is easy with AEM Apps.
+The Single-Page Application framework in AEM Apps enables the high performance of an AngularJS app, while empowering authors (or other non-technical personnel) to create and manage the app's content via the touch-optimized, drag-and-drop editor environment that has traditionally been reserved for managing web sites. Already have a site built with AEM? You find that reusing your content, components, workflows, assets, and permissions is easy with AEM Apps.
 
 ## AngularJS Application Module {#angularjs-application-module}
 
-AEM Apps handles much of the AngularJS configuration for you, including putting together your app's top-level module. By default this module is named 'AEMAngularApp' and the script responsible for it's generation can be found (and overlaid) at /libs/mobileapps/components/angular/ng-page/angular-app-module.js.jsp.
+AEM Apps handles much of the AngularJS configuration for you, including putting together your app's top-level module. By default this module is named 'AEMAngularApp' and the script responsible for its generation can be found (and overlaid) at /libs/mobileapps/components/angular/ng-page/angular-app-module.js.jsp.
 
-Part of the initialization of your app involves specifying which AngularJS modules the app depends upon. The list of modules used by your app is specified by a script located at /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp, and can be overlaid by your own apps' page component to pull in any additional AngularJS modules that your app requires. As an example, compare the above script with the Geometrixx implementation (located at /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
+Part of the initialization of your app involves specifying which AngularJS modules that the app depends upon. The list of modules used by your app is specified by a script located at /libs/mobileapps/components/angular/ng-page/angular-module-list.js.jsp, and can be overlaid by your own apps' page component to pull in any additional AngularJS modules that your app requires. As an example, compare the above script with the Geometrixx implementation (located at /apps/geometrixx-outdoors-app/components/angular/ng-geometrixx-page/angular-module-list.js.jsp).
 
-To support navigation between the distinct states in your app, the angular-app-module script iterates through all the descendant pages of your top level app page to generate a set of 'routes' and configures each path on Angular's $routeProvider service. For an example of how this looks in practice, take a look at the angular-app-module script generated by the Geometrixx Outdoors app sample: (link requires a local instance) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
+To support navigation between the distinct states in your app, the angular-app-module script iterates through all the descendant pages of your top-level app page to generate a set of 'routes' and configures each path on Angular's $routeProvider service. For an example of how this looks in practice, look at the angular-app-module script generated by the Geometrixx Outdoors app sample: (link requires a local instance) [http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js](http://localhost:4502/content/phonegap/conference-app/en/home.angular-app-module.js)
 
-Digging in to the generated AEMAngularApp, you will find a series of routes specified as follows:
+Digging in to the generated AEMAngularApp, you find a series of routes specified as follows:
 
 ```xml
 $routeProvider
@@ -45,15 +41,15 @@ $routeProvider
 })
 ```
 
-The above sample in particular illustrates an example of passing a parameter as part of the path. In this example we are indicating that when a path that meets the pattern specified (/content/phonegap/geometrixx-outdoors/en/home/products/:id) is requested, it should be handled by the home/products.template.html template and use the 'contentphonegapgeometrixxoutdoorsenhomeproducts' controller.
+The above sample in particular illustrates an example of passing a parameter as part of the path. In this example, it is indicating that when a path that meets the pattern specified (/content/phonegap/geometrixx-outdoors/en/home/products/:id) is requested, it should be handled by the home/products.template.html template and use the 'contentphonegapgeometrixxoutdoorsenhomeproducts' controller.
 
-The template to load when this route is requested is specified by the templateUrl property. This template will contain the HTML from AEM components that have been included on the page, as well as any AngularJS directives necessary for wiring up the client side of the application. For an example of a AngularJS directive in a Geometrixx component, take a look at line 45 of the swipe-carousel's template.jsp (/apps/geometrixx-outdoors-app/components/swipe-carousel/template.jsp).
+The template to load when this route is requested is specified by the templateUrl property. This template contains the HTML from AEM components that have been included on the page, and any AngularJS directives necessary for wiring up the client side of the application. For an example of a AngularJS directive in a Geometrixx component, look at line 45 of the swipe-carousel's template.jsp (/apps/geometrixx-outdoors-app/components/swipe-carousel/template.jsp).
 
 ## Page Controllers {#page-controllers}
 
-In Angular's own words, "a Controller is a JavaScript constructor function that is used to augment the Angular Scope." ([source](https://docs.angularjs.org/guide/controller)) Each page in an AEM App is automatically wired up to a controller that can be augmented by any controller which specifies a `frameworkType` of `angular`. Take a look at the ng-text component as an example (/libs/mobileapps/components/angular/ng-text), including the cq:template node which makes sure each time this component is added to a page it includes this important property.
+In Angular's own words, "a Controller is a JavaScript constructor function that is used to augment the Angular Scope." ([source](https://docs.angularjs.org/guide/controller)) Each page in an AEM App is automatically wired up to a controller that can be augmented by any controller which specifies a `frameworkType` of `angular`. Look at the ng-text component as an example (/libs/mobileapps/components/angular/ng-text), including the cq:template node which makes sure each time this component is added to a page it includes this important property.
 
-For a more complex controller example, open up the ng-template-page controller.jsp script (located at /apps/geometrixx-outdoors-app/components/angular/ng-template-page). Of particular interest is the javascript code it generates when executed, which renders as follows:
+For a more complex controller example, open up the ng-template-page controller.jsp script (at /apps/geometrixx-outdoors-app/components/angular/ng-template-page). Of particular interest is the JavaScript code that it generates when run, which renders as follows:
 
 ```xml
 // Controller for page 'products'
@@ -76,10 +72,10 @@ For a more complex controller example, open up the ng-template-page controller.j
 ])
 ```
 
-In the above example, you will note that we are taking a parameter from the `$routeParams` service and then massaging it into the directory structure that our JSON data is stored in. By dealing with the sku `id` in this manner, we are able to deliver a single Product template that can render the product data for potentially thousands of distinct products. This is a far more scalable model that requiring an individual route for each item in a (potentially) massive product database.
+In the above example, the parameter from the `$routeParams` service is taken, and then massaged into the directory structure in which the JSON data is stored. By dealing with the SKU `id` in this manner, you are able to deliver a single Product template that can render the product data for potentially thousands of distinct products. This is a far more scalable model that requiring an individual route for each item in a (potentially) massive product database.
 
-There are also two components at work here: ng-product augments the scope with the data it extracts from the above `$http` call. There is also an ng-image on this page which in turn also augments the scope with the value it retrieves from the response. By virtue of Angular's `$http` service, each component will wait patiently until the request is finished and the promise it created is fulfilled.
+There are also two components at work here: ng-product augments the scope with the data it extracts from the above `$http` call. There is also an ng-image on this page which in turn also augments the scope with the value it retrieves from the response. By virtue of Angular's `$http` service, each component waits patiently until the request is finished and the promise it created is fulfilled.
 
 ## The Next Steps {#the-next-steps}
 
-Once you have learnt about the Single Page Applications, see [Developing Apps with PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md).
+Once you have learned about the Single Page Applications, see [Developing Apps with PhoneGap CLI](/help/mobile/phonegap-apps-pg-cli.md).

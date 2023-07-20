@@ -79,7 +79,7 @@ You can either drag and drop an image from the [Asset Browser](/help/sites-autho
 
 After the image is uploaded (and not before) you can use [inplace editing](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) to crop/rotate the image as required:
 
-![](do-not-localize/chlimage_1-10.png)
+![Inplace editing toolbar](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ After the image is uploaded (and not before) you can use [inplace editing](/help
 
 Several additional options are available in the full-screen editing mode; for example, map and zoom:
 
-![](do-not-localize/chlimage_1-11.png)
+![Full screen editing mode](do-not-localize/chlimage_1-11.png)
 
 When an image is loaded, you can configure the following:
 
@@ -192,11 +192,11 @@ When you click to configure the component, you select Text or Image.
 
 Selecting **Text** displays an in-line editor:
 
-![](do-not-localize/chlimage_1-12.png)
+![Text toolbar](do-not-localize/chlimage_1-12.png)
 
 Selecting **Image** displays the in-place editor for images:
 
-![](do-not-localize/chlimage_1-13.png)
+![Image toolbar](do-not-localize/chlimage_1-13.png)
 
 See [Image (Campaign) component](#image-campaign) for more information on working with images. See [Text & Personalization (Campaign) component](#text-personalization-campaign) for more information on working with text.
 

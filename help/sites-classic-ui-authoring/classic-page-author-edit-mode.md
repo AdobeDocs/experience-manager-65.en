@@ -42,7 +42,7 @@ The General components are the basic components that you use to create content.
 
 You can define a link with title and description.
 
-![](do-not-localize/chlimage_1-2.png)
+![Link](do-not-localize/chlimage_1-2.png)
 
 ### Adaptive Image {#adaptive-image}
 

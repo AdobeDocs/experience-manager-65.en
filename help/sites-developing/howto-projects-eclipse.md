@@ -46,7 +46,7 @@ Next, set up your project using Maven as described in [How-To Build AEM Projects
 
 ## Prepare JSP Support for Eclipse {#prepare-jsp-support-for-eclipse}
 
-Eclipse can also provide support in working with JSP, e.g.
+Eclipse can also provide support in working with JSP, for example,
 
 * auto-completion of tag libraries
 * Eclipse-awareness of objects defined by &lt;cq:defineObjects /&gt; and &lt;sling:defineObjects /&gt;

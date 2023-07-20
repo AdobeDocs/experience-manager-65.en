@@ -36,7 +36,7 @@ In this example, a new custom JSSP file was created and calls that from the AEM 
 
 1. In Adobe Campaign, to create a JSSP file, click the **New** icon.
 
-   ![](do-not-localize/chlimage_1-4a.png)
+   ![The New icon as indicated by a page with a star near the upper-left corner.](do-not-localize/chlimage_1-4a.png)
 
 1. Enter the name of this JSSP file. In this example, **cus:custom.jssp** is used (meaning it is in the **cus** namespace).
 

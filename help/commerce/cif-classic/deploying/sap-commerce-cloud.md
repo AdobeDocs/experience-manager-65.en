@@ -1,8 +1,6 @@
 ---
 title: Deploy eCommerce with SAP Commerce Cloud
-
 description: Learn how to deploy eCommerce with SAP Commerce Cloud.
-
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
@@ -12,7 +10,7 @@ exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
 
 >[!NOTE]
 >
->This page contains links to the hybris website. For certain pages you will need an account to login.
+>This page contains links to the hybris website. For certain pages, you need an account to log in.
 
 ## Deploying eCommerce with SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
@@ -22,7 +20,7 @@ exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
 >
 >`Geometrixx Outdoors Site English (US)`
 
-Deploying the [necessary eCommerce packages](#packages-needed-for-ecommerce-with-hybris) will provide the full functionality of the eCommerce framework, together with a reference implementation of eCommerce functionality as provided with a hybris implementation (including a demonstration catalog)
+Deploying the [necessary eCommerce packages](#packages-needed-for-ecommerce-with-hybris) provides the full functionality of the eCommerce framework, together with a reference implementation of eCommerce functionality as provided with a hybris implementation (including a demonstration catalog)
 
 This is available under the English (US) branch ( `/content/geometrixx-outdoors/en_US`) of the Geometrixx Outdoors site:
 
@@ -40,13 +38,13 @@ The hybris extension of the eCommerce Integration Framework has been updated to 
 >[!NOTE]
 >
 >* Supports versions 18.11 and above.
->* You will need Java 7 to run the [hybris 5 server.](https://www.hybris.com/en/architecture-technology)
->* The hybris add-on, the [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), is not supported by the AEM extension.
+>* You need Java&trade; 7 to run the [hybris 5 server.](https://www.sap.com/products/crm.html)
+>* The hybris add-on, the [Telco Accelerator](https://www.sap.com/products/crm.html), is not supported by the AEM extension.
 >
 
 ### Packages Needed for eCommerce with hybris {#packages-needed-for-ecommerce-with-hybris}
 
-To install eCommerce functionality you need:
+To install eCommerce functionality, you need:
 
 * Your hybris server
 * AEM eCommerce framework:
@@ -66,14 +64,14 @@ To install eCommerce functionality you need:
 
 ### Installation of eCommerce with hybris {#installation-of-ecommerce-with-hybris}
 
-To install a fully-fledged configuration (using the demonstration catalog, Geometrixx Outdoors) the basic steps are:
+To install a fully fledged configuration (using the demonstration catalog, Geometrixx Outdoors) the basic steps are:
 
 1. [Install AEM](/help/sites-deploying/deploy.md).
 1. Install the Geometrixx-all package
 
     1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Install the demonstration content packages using the [package manager](/help/sites-administering/package-manager.md):
+1. Install the demonstration content packages using the [Package Manager](/help/sites-administering/package-manager.md):
 
     1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
     1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
@@ -81,7 +79,7 @@ To install a fully-fledged configuration (using the demonstration catalog, Geome
 1. [Download and build your hybris Server](#download-and-build-your-hybris-server).
 1. Construct your catalog in your eCommerce engine:
 
-    1. [Setup the Geometrixx Outdoor Store](#setup-the-geometrixx-outdoors-store).
+    1. [Set up the Geometrixx Outdoor Store](#setup-the-geometrixx-outdoors-store).
 
 1. [Author](/help/sites-authoring/qg-page-authoring.md) any supplementary pages that you need in AEM.
 
@@ -95,7 +93,7 @@ To install a fully-fledged configuration (using the demonstration catalog, Geome
 
 ### Download and Build your hybris Server {#download-and-build-your-hybris-server}
 
-The steps in this procedure will download and build the hybris server. It will also make the initial configurations required for the connections between hybris and cq. The extension will then be usable with the default settings.
+The steps in this procedure download and build the hybris server. It also makes the initial configurations that are required for the connections between hybris and cq. The extension is then usable with the default settings.
 
 >[!CAUTION]
 >
@@ -103,13 +101,13 @@ The steps in this procedure will download and build the hybris server. It will a
 
 >[!NOTE]
 >
->To complete this, you will need [Groovy](https://groovy-lang.org/) installed on your system.
+>To complete this, you need [Groovy](https://groovy-lang.org/) installed on your system.
 
 1. Download the **hybris Commerce Suite** distribution from the hybris download site.
 
    >[!CAUTION]
    >
-   >You will need an account (from hybris) to access this.
+   >You need an account (from hybris) to access this.
 
 1. Unzip the distribution file to the required location (referred as &lt;hybris-root-directory&gt;).
 1. From the command line, execute the following:
@@ -123,7 +121,7 @@ The steps in this procedure will download and build the hybris server. It will a
 
    >[!NOTE]
    >
-   >When executing:
+   >When running:
    >
    >`ant clean all`
    >
@@ -140,7 +138,7 @@ The steps in this procedure will download and build the hybris server. It will a
 
    >[!NOTE]
    >
-   >For hybris 5.6.0 and later, please use the following setup.groovy.
+   >For hybris 5.6.0 and later, use the following setup.groovy.
 
    5.6.0 and later
 
@@ -167,17 +165,17 @@ The steps in this procedure will download and build the hybris server. It will a
 
    [http://localhost:9002](http://localhost:9002)
 
-1. Click **Initialize** and then confirm the initialization action (as it will delete existing data).
+1. Click **Initialize** and then confirm the initialization action (as it deletes existing data).
 
-   The progress will be shown on the console, with `FINISHED` indicating completion.
+   The progress is shown on the console, with `FINISHED` indicating completion.
 
    >[!NOTE]
    >
    >Dependent on your system, this might take several minutes to complete.
 
-### Setup the Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
+### Set up the Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
 
-This procedure will upload and configure the demonstration store - Geometrixx Online.
+This procedure uploads and configures the demonstration store - Geometrixx Online.
 
 1. Start your hybris instance. From the command line, execute the following:
 
@@ -208,7 +206,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
    [Get File](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
-1. Click **Start** to import the specified files. The **Result** tab will show any log entries.
+1. Click **Start** to import the specified files. The **Result** tab shows any log entries.
 
 1. Click **Done** to close the import window.
 
@@ -218,7 +216,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
    [Get File](/help/sites-deploying/assets/base-store.csv)
 
-   For hybris 5.7, please use the following:
+   For hybris 5.7, use the following:
 
    [Get File](/help/sites-deploying/assets/base-store-5_7.csv)
 
@@ -226,7 +224,7 @@ This procedure will upload and configure the demonstration store - Geometrixx On
 
    `en_US - English (United States)`
 
-1. Click **Start** to import the specified files. The **Result** tab will show any log entries.
+1. Click **Start** to import the specified files. The **Result** tab shows any log entries.
 
 1. Click **Done** to close the import window.
 

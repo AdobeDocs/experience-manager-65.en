@@ -18,7 +18,7 @@ HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) softwa
 
 HTML5 forms generates documents based on standard HTML5 constructs. You can view HTML5 forms in all modern browsers that support HTML5. It does not require installing any additional browser plug-ins for the browsers. For more information about supported browsers, see [Supported client platforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
-![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![HTML5 form preview](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Key capabilities of HTML5 forms {#key-capabilities-of-html-forms-br}
 

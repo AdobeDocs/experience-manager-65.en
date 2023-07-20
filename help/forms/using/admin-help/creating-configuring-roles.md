@@ -285,7 +285,7 @@ You can change the permissions for any of the roles that you created. You cannot
 
 **Rights Management Policy Set Add Coordinator:** Add, remove, and change permissions for policy set coordinators
 
-**Rights Management Policy Set Create Policy:** Create a a new policy for a policy set
+**Rights Management Policy Set Create Policy:** Create a new policy for a policy set
 
 **Rights Management Policy Set Delete Policy:** Remove a policy from a policy set
 

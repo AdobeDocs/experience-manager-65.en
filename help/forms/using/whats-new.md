@@ -14,6 +14,12 @@ exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 
 ## Transaction Reports {#transaction-reports}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html)                  |
+| AEM 6.5     | This article         |
+
+
 Transaction reports allows you to capture and track the number of submitted forms, processed documents, and rendered documents. The objective behind tracking these transactions is to make an informed decision about the product usage and rebalancing investments in hardware and software. Some examples of transactions include:
 
 * Submission of an Adaptive Form, an HTML5 Form, or a Form Set

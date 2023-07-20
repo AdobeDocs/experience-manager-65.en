@@ -17,7 +17,7 @@ The following APIs are used in AEM Forms workspace.
 <table>
  <tbody>
   <tr>
-   <td><strong>Javascript Method</strong></td>
+   <td><strong>JavaScript Method</strong></td>
    <td><strong>Service Name</strong></td>
    <td><strong>API Name</strong></td>
    <td><strong>Comments</strong></td>
@@ -302,7 +302,7 @@ The following APIs are used in AEM Forms workspace.
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>It gets all assignments for a task. For e.g :- If user forwards or consults a task with another user then it is an assignment for a task.</td>
+   <td>It gets all assignments for a task. For for example, :- If user forwards or consults a task with another user then it is an assignment for a task.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>

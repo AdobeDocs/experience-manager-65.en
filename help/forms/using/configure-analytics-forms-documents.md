@@ -106,7 +106,7 @@ Perform the following steps to create a report suite.
 Cloud Service configuration is information about your Adobe Analytics account. The configuration enables Adobe Experience Manager (AEM) to connect to Adobe Analytics. Create a separate configuration for each Analytics account that you use.
 
 1. Log in to your AEM author instance as an administrator.
-1. In the top-left corner, click **Adobe Experience Manager** &gt; **Tools** ![](/help/forms/using/assets/tools.png) &gt; **Cloud Services** &gt; **Legacy Cloud Services**.
+1. In the top-left corner, click **Adobe Experience Manager** &gt; **Tools** ![hammer icon](/help/forms/using/assets/tools.png) &gt; **Cloud Services** &gt; **Legacy Cloud Services**.
 1. Locate **Adobe Analytics** icon. Click **Show Configurations** and then proceed to click **[+]** to add new configuration.
 
    If you are a first-time user, click **Configure now**.

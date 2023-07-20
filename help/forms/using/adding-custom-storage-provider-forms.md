@@ -1,13 +1,9 @@
 ---
 title: Custom storage for drafts and submissions component
-seo-title: Custom storage for drafts and submissions component
 description: See how to customize the storage of user data for drafts and submissions.
-seo-description: See how to customize the storage of user data for drafts and submissions.
-uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 ---
@@ -15,20 +11,20 @@ exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 
 ## Overview {#overview}
 
-AEM Forms allows you to save a form as a draft. The draft functionality lets you maintain a work-in-progress form, which you can complete and submit later from any device.
+AEM Forms let you save a form as a draft. The draft functionality lets you maintain a work-in-progress form, which you can complete and submit later from any device.
 
-By default, AEM Forms stores the user data associated with the draft and submission of a form in the `/content/forms/fp` node on the Publish instance. In addition, the AEM Forms portal components provide data services, which you can use to customize the implementation of storing user data for drafts and submissions. For example, you can store user data in a data store.
+By default, AEM Forms store the user data associated with the draft and submission of a form in the `/content/forms/fp` node on the Publish instance. In addition, the AEM Forms Portal components provide data services, which you can use to customize the implementation of storing user data for drafts and submissions. For example, you can store user data in a data store.
 
 ## Prerequisites  {#prerequisites}
 
-* Enable [forms portal components](/help/forms/using/enabling-forms-portal-components.md)
-* Create a [forms portal page](/help/forms/using/creating-form-portal-page.md)
-* Enable [adaptive forms for forms portal](/help/forms/using/draft-submission-component.md)
+* Enable [Forms Portal components](/help/forms/using/enabling-forms-portal-components.md)
+* Create a [Forms Portal page](/help/forms/using/creating-form-portal-page.md)
+* Enable [adaptive forms for Forms Portal](/help/forms/using/draft-submission-component.md)
 * Learn [implementation details of custom storage](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Draft data service {#draft-data-service}
 
-To customize the storage of user data for drafts, you need to implement all the methods of the `DraftDataService` interface. The following sample code describes the methods and arguments.
+To customize the storage of user data for drafts, you must implement all the methods of the `DraftDataService` interface. The following sample code describes the methods and arguments.
 
 ```java
 /**
@@ -97,7 +93,7 @@ public interface DraftDataService {
 
 ## Submission data service {#submission-data-service}
 
-To customize the storage of user data for submissions, you need to implement all the methods of the `SubmitDataService` interface. The following sample code describes the methods and arguments.
+To customize the storage of user data for submissions, you must implement all the methods of the `SubmitDataService` interface. The following sample code describes the methods and arguments.
 
 ```java
 /**
@@ -182,7 +178,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms portal uses Universally unique identifier (UUID) concept to generate a unique ID for every draft and submitted form. You can also generate a unique ID of your own. You can implement the interface FPKeyGeneratorService, override its methods, and develop a custom logic to generate a custom unique ID for every draft and submitted form. Also, set service rank of custom ID generation implementation higher than 0. It ensures that the custom implementation is used instead of the default implementation.
+Forms Portal uses Universally Unique IDentifier (UUID) concept to generate a unique ID for every draft and submitted form. You can also generate a unique ID of your own. You can implement the interface FPKeyGeneratorService, override its methods, and develop a custom logic to generate a custom unique ID for every draft and submitted form. Also, set service rank of custom ID generation implementation higher than 0. It ensures that the custom implementation is used instead of the default implementation.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -201,7 +197,7 @@ You can use the below annotation to increase the service ranking for custom ID g
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-To use the above annotation, imports the following to your project:
+To use the above annotation, import the following to your project:
 
 ```java
 import org.apache.felix.scr.annotations.Properties;

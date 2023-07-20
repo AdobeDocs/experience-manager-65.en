@@ -105,7 +105,7 @@ The portlet can be configured with the following preferences:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>This is the start path of the portlet: it defines the content that is initially displayed.</p> <p><strong>Important</strong>: If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than<strong> /</strong>, you need to enable the force <strong>CQUrlInfo</strong> in the Html Library Manager configuration of these AEM instances (e.g. via Felix Webconsole) or editing will not work and the preferences dialog will not appear.</p> </td>
+   <td><p>This is the start path of the portlet: it defines the content that is initially displayed.</p> <p><strong>Important</strong>: If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than<strong> /</strong>, you need to enable the force <strong>CQUrlInfo</strong> in the Html Library Manager configuration of these AEM instances (for example, via Felix Webconsole) or editing will not work and the preferences dialog will not appear.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -504,7 +504,7 @@ In the HTML, you can use the following placeholders, which are replaced by the p
 | {id} |CSS id of the button. |
 | {url} |URL for the button's target. |
 | {text} |Label of the button. |
-| {onclick} |Javascript **onclick** function (contains {url}). |
+| {onclick} |JavaScript **onclick** function (contains {url}). |
 
 Example of a button.html file:
 
@@ -585,7 +585,7 @@ Optional OSGi services can be implemented to customize various parts of the port
   </tr>
   <tr>
    <td>TextMapper</td>
-   <td>Allows you to post process HTML, CSS and Javascript files.</td>
+   <td>Allows you to post process HTML, CSS and JavaScript files.</td>
   </tr>
   <tr>
    <td>ToolbarButton</td>
@@ -761,7 +761,7 @@ To configure the portlet:
 
    >[!NOTE]
    >
-   >If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than** /**, you need to enable the force **CQUrlInfo** in the Html Library Manager configuration of these AEM instances (e.g. via Felix Webconsole) or editing will not work and the preferences dialog will not appear.
+   >If the portlet is configured to connect to AEM author and publish instances that are running on a context path different than** /**, you need to enable the force **CQUrlInfo** in the Html Library Manager configuration of these AEM instances (for example, via Felix Webconsole) or editing will not work and the preferences dialog will not appear.
 
 1. Save the configuration changes in the app server.
 

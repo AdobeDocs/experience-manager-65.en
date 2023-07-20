@@ -1,26 +1,23 @@
 ---
 title: Admin Consoles
-seo-title: Admin Consoles
 description: Lear how to use the Admin Consoles available in AEM.
-seo-description: Lear how to use the Admin Consoles available in AEM.
-uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 ---
+
 # Admin Consoles{#admin-consoles}
 
-By default, the ability to switch to the classic UI via the admin consoles has been disabled. Therefore the pop-up icons that was seen when mousing over certain console icons, allowing access to classic UI, are no longer displayed.
+By default, the ability to switch to the classic UI via the admin consoles has been disabled. Therefore, the pop-up icons that were seen when mousing over certain console icons, allowing access to classic UI, are no longer displayed.
 
 Every console that has a Classic UI version in `/libs/cq/core/content/nav` can be re-enabled individually so that the **Classic UI** option once again pops up over the console icon when it is moused over.
 
 In this example, we are re-enabling the Classic UI for the Sites console.
 
-1. Using CRXDE Lite, find the node corresponding to the admin console for which you want to re-enable Classic UI. They are found under:
+1. Using CRXDE Lite, find the node corresponding to the Admin Console for which you want to re-enable Classic UI. They are found under:
 
    `/libs/cq/core/content/nav`
 
@@ -42,8 +39,8 @@ In this example, we are re-enabling the Classic UI for the Sites console.
 
    `enableDesktopOnly = {Boolean}true`
 
-1. The **Classic UI** option is again available as a popover option in the admin console.
+1. The **Classic UI** option is again available as a popover option in the Admin Console.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![classic UI popover option](assets/syui-01-2019-02-27-15-16-55.png)
 
 Repeat these steps for every console for which you wish to re-enable access to the Classic UI version.

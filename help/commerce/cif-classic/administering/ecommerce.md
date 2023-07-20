@@ -36,7 +36,7 @@ Adobe provides two versions of the Commerce Integration Framework:
    <td>
     <ul>
      <li>Adobe Commerce</li>
-     <li>Java &amp; Javascript</li>
+     <li>Java &amp; JavaScript</li>
      <li>No commerce data stored in JCR repository</li>
     </ul> </td>
   </tr>
@@ -84,7 +84,7 @@ Adobe provides two versions of the Commerce Integration Framework:
   </tr>
   <tr>
    <td>When to use</td>
-   <td>Limited use-cases: For e.g. scenarios where small, static catalogs may need to be imported</td>
+   <td>Limited use-cases: For for example, scenarios where small, static catalogs may need to be imported</td>
    <td>Preferred solution in most use-cases</td>
   </tr>
  </tbody>
@@ -131,7 +131,7 @@ AEM eCommerce provides:
     * Vouchers
     * and others
 
-  ![](/help/sites-administering/assets/chlimage_1-130.png)
+  ![geometrixx components example](/help/sites-administering/assets/chlimage_1-130.png)
 
   >[!NOTE]
   >
@@ -144,11 +144,11 @@ AEM eCommerce provides:
     * a third party search
     * or a combination thereof.
 
-  ![](/help/sites-administering/assets/chlimage_1-131.png)
+  ![search example](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Uses the AEM ability to **present your content on multiple channels**, be that full browser window or mobile device. This delivers your content in the format needed by your visitors.
 
-  ![](/help/sites-administering/assets/chlimage_1-132.png)
+  ![mobile view example](/help/sites-administering/assets/chlimage_1-132.png)
 
 * The ability to **develop your own integration implementation based on the [AEM eCommerce framework](#the-framework)**.
 
@@ -157,15 +157,15 @@ AEM eCommerce provides:
 * The possibility to develop **experience-driven commerce based on shopper data and activity**. This allows you to realize many scenarios:
 
     * One example might be providing reductions in shipping costs when the total order exceeds a specific amount.
-    * Another might allow you to provide seasonal offers that use profile data (e.g. location). These can then be highlighted, again depending on other factors when necessary.
+    * Another might allow you to provide seasonal offers that use profile data (for example, location). These can then be highlighted, again depending on other factors when necessary.
 
   In the example below one teaser is shown as the contents of the cart are less than $75:
 
-  ![](/help/sites-administering/assets/chlimage_1-133.png)
+  ![shopping cart with client context](/help/sites-administering/assets/chlimage_1-133.png)
 
   This can be changed when the contents of the cart exceed $75:
 
-  ![](/help/sites-administering/assets/chlimage_1-134.png)
+  ![shopping cart with client context after change](/help/sites-administering/assets/chlimage_1-134.png)
 
 * And other features including:
 

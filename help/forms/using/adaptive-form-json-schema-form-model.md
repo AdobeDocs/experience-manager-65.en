@@ -8,6 +8,12 @@ exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 ---
 # Creating adaptive forms using JSON Schema {#creating-adaptive-forms-using-json-schema}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html)                  |
+| AEM 6.5     | This article         |
+
+
 ## Prerequisites {#prerequisites}
 
 Authoring an adaptive form using a JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.
@@ -389,163 +395,163 @@ You should be a member of the [forms-power-user group](forms-groups-privileges-t
   </tr>
   <tr>
    <td>Text Field</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Numeric Field</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Numeric Stepper</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Radio Button</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Telephone</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Switch</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Button</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
   </tr>
   <tr>
    <td>Check Box</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Drop-down</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Image Choice</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Date Input Field</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Date Picker</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Email</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>File Attachment</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Image</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -554,9 +560,9 @@ You should be a member of the [forms-power-user group](forms-groups-privileges-t
   </tr>
   <tr>
    <td>Draw</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -565,9 +571,9 @@ You should be a member of the [forms-power-user group](forms-groups-privileges-t
   </tr>
   <tr>
    <td>Panel</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Yes tick icon" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>

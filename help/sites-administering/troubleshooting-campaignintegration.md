@@ -51,7 +51,7 @@ To fix this issue, change the following in `$CAMPAIGN_HOME/conf/config-<instance
 
 In Adobe Campaign Classic, ensure that you have no trailing slash (`/`) after the port number.
 
-![chlimage_1-149](assets/chlimage_1-149.png)
+![Adobe Campaign Classic - ensure no trailing slash after port number](assets/chlimage_1-149.png)
 
 ## If You Receive a Warning About setlocale {#if-you-get-a-warning-about-your-setlocale}
 

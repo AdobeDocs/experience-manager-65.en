@@ -28,7 +28,7 @@ You can use the proxy server to monitor all client-server interaction, regardles
 * SMTP for email messages
 * LDAP for user management
 
-For example, you can position the proxy server between any two applications that communicate via a TCP/IP network; e.g. a web browser and AEM. This allows you to monitor exactly what happens when you request a AEM page.
+For example, you can position the proxy server between any two applications that communicate via a TCP/IP network; for example, a web browser and AEM. This allows you to monitor exactly what happens when you request a AEM page.
 
 ## Starting the Proxy Server Tool {#starting-the-proxy-server-tool}
 

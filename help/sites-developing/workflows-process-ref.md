@@ -1,14 +1,10 @@
 ---
 title: Workflow Process Reference
-seo-title: Workflow Process Reference
 description: Workflow Process Reference
-seo-description: null
-uuid: de367aa8-4580-4810-b665-2a7b521e36ca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 ---
 # Workflow Process Reference{#workflow-process-reference}
@@ -19,12 +15,12 @@ AEM provides several process steps that can be used for creating workflow models
 
 For each process step, the following characteristics are described.
 
-### Java Class or ECMA Path {#java-class-or-ecma-path}
+### Java&trade; Class or ECMA Path {#java-class-or-ecma-path}
 
-Process steps are defined either by a Java class or an ECMAScript.
+Process steps are defined either by a Java&trade; class or an ECMAScript.
 
-* For the Java class processes, the fully qualified class name is provided.
-* For the ECMAScript processes the path to the script is provided.
+* For the Java&trade; class processes, the fully qualified class name is provided.
+* For the ECMAScript processes, the path to the script is provided.
 
 ### Payload {#payload}
 
@@ -32,13 +28,13 @@ The payload is the entity upon which a workflow instance acts. The payload is se
 
 For example, if a workflow is applied to an AEM page *P* then *P* is passed from step to step as the workflow advances, with each step optionally acting upon *P* in some way.
 
-In the most common case the payload is a JCR node in the repository (for example, an AEM Page or Asset). A JCR Node payload is passed as a string that is either a JCR path or a JCR identifier (UUID). In some cases the payload may be a JCR property (passed as a JCR path), a URL, a binary object or a generic Java object. Individual process steps that do act on the payload will usually expect a payload of a certain type, or act differently depending on the payload type. For each process described below, the expected payload type, if any, is described.
+In the most common case, the payload is a JCR node in the repository (for example, an AEM Page or Asset). A JCR Node payload is passed as a string that is either a JCR path or a JCR identifier (UUID). Sometimes the payload may be a JCR property (passed as a JCR path), a URL, a binary object, or a generic Java&trade; object. Individual process steps that do act on the payload will usually expect a payload of a certain type, or act differently depending on the payload type. For each process described below, the expected payload type, if any, is described.
 
 ### Arguments {#arguments}
 
 Some workflow processes accept arguments that the administrator specifies when setting up the workflow step.
 
-Arguments are entered as a single string in the **Process Arguments** property in the **Properties** pane of the workflow editor. For each process described below, the format of the argument string is described in a simple EBNF grammar. For example, the following indicates that the argument string consists of one or more comma-delimited pairs, where each pair consists of a name (which is a string) and a value, seperated by a double colon:
+Arguments are entered as a single string in the **Process Arguments** property in the **Properties** pane of the workflow editor. For each process described below, the format of the argument string is described in a simple EBNF grammar. For example, the following indicates that the argument string consists of one or more comma-delimited pairs, where each pair consists of a name (which is a string) and a value, separated by a double colon:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -49,7 +45,7 @@ Arguments are entered as a single string in the **Process Arguments** property i
 
 ### Timeout {#timeout}
 
-After this timeout period the workflow step is no longer operational. Some workflow processes respect the timeout, while for others it does not apply and is ignored.
+After this timeout period, the workflow step is no longer operational. Some workflow processes respect the timeout, while for others it does not apply and is ignored.
 
 ### Permissions {#permissions}
 
@@ -67,19 +63,19 @@ The recommended way to do this is to use a service user created with the necessa
 
 >[!CAUTION]
 >
->If you are upgrading from a version prior to AEM 6.2 you might need to update your implementation.
+>If you are upgrading from a version before AEM 6.2, you might need to update your implementation.
 >
->In previous versions, the admin session was passed to the `WorkflowProcess` implementations and could then had full access to the repository without having to define specific ACLs.
+>In previous versions, the admin session was passed to the `WorkflowProcess` implementations and could then have full access to the repository without having to define specific ACLs.
 >
 >The permissions are now defined as above ([Permissions](#permissions)). As is the recommended method for updating your implementation.
 >
->A short term solution is also available for backward-compatibility purposes when code changes are not feasible:
+>A short-term solution is also available for backward-compatibility purposes when code changes are not feasible:
 >
 >* Using the Web Console ( `/system/console/configMgr` locate the **Adobe Granite Workflow Configuration Service**
 >
 >* enable the **Workflow Process Legacy Mode**
 >
->This will revert to the old behaviour of providing an admin session to the `WorkflowProcess` implementation and provide unrestricted access to the entirety of the repository once again.
+>This reverts to the old behavior of providing an admin session to the `WorkflowProcess` implementation and provide unrestricted access to the entirety of the repository once again.
 
 ## Workflow Control Processes {#workflow-control-processes}
 
@@ -89,7 +85,7 @@ The following processes do not perform any actions on content. They serve to con
 
 The `AbsoluteTimeAutoAdvancer` (Absolute Time Auto Advancer) process behaves identically to **AutoAdvancer**, except that it times out at a given time and date, instead of after a given length of time.
 
-* **Java Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Java&trade; Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Payload**: None.
 * **Arguments**: None.
 * **Timeout**: Process times out when the set time and date is reached.
@@ -98,7 +94,7 @@ The `AbsoluteTimeAutoAdvancer` (Absolute Time Auto Advancer) process behaves ide
 
 The `AutoAdvancer` process automatically advances the workflow to the next step. If there is more than one possible next step (for example, if there is an OR split) then this process will advance the workflow along the *default route*, if one has been specified, otherwise the workflow will not be advanced.
 
-* **Java Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Java&trade; Class**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Payload**: None.
 * **Arguments**: None.
@@ -106,11 +102,11 @@ The `AutoAdvancer` process automatically advances the workflow to the next step.
 
 ### ProcessAssembler (Process Assembler) {#processassembler-process-assembler}
 
-The `ProcessAssembler` process executes multiple sub-processes sequentially in a single workflow step. To use the `ProcessAssembler`, create a single step of this type in your workflow and set its arguments to indicate the names and arguments of the sub-processes you wish to execute.
+The `ProcessAssembler` process executes multiple subprocesses sequentially in a single workflow step. To use the `ProcessAssembler`, create a single step of this type in your workflow and set its arguments to indicate the names and arguments of the subprocesses you wish to execute.
 
-* **Java Class**: `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Java&trade; Class**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Payload**: A DAM Asset, AEM Page or no payload (depends on requirements of subprocesses).
+* **Payload**: A DAM Asset, AEM Page, or no payload (depends on requirements of subprocesses).
 * **Arguments**:
 
 ```
@@ -130,7 +126,7 @@ For example:
 
 * Extract the metadata from the asset.
 * Create three thumbnails of the three specified sizes.
-* Create an JPEG image from the asset, assuming the asset is originally neither a GIF nor a PNG (in which case no JPEG is created).
+* Create a JPEG image from the asset, assuming the asset is originally not a GIF or a PNG (in which case no JPEG is created).
 * Set the last-modified date on the asset.
 
 ```shell
@@ -146,7 +142,7 @@ The following processes perform simple tasks or serve as examples.
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>Do not change anything in the `/libs` path.
 >
 >This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may be overwritten when you apply either a hotfix or feature pack).
 
@@ -194,7 +190,7 @@ This is a sample ECMAScript process.
 
 Locks the payload of the workflow.
 
-* **Java class:** `com.day.cq.workflow.impl.process.LockProcess`
+* **Java&trade; class:** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Payload:** JCR_PATH and JCR_UUID
 * **Arguments:** None
@@ -209,7 +205,7 @@ The step has no effect under the following circumstances:
 
 Unlocks the payload of the workflow.
 
-* **Java class:** `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Java&trade; class:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Payload:** JCR_PATH and JCR_UUID
 * **Arguments:** None
@@ -226,9 +222,9 @@ The following process performs a version-related task.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Creates a new version of the workflow payload (AEM page or DAM asset).
+Creates a version of the workflow payload (AEM page or DAM asset).
 
-* **Java class**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* **Java&trade; class**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
 * **Payload**: A JCR path or UUID that refers to a page or DAM asset
 * **Arguments**: None

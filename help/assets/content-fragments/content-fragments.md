@@ -51,8 +51,8 @@ This and the following pages cover the tasks for creating, configuring, maintain
 
 The number of communication channels is increasing annually. Typically channels refer to the delivery mechanism, either as the:
 
-* Physical channel; e.g. desktop, mobile.
-* Form of delivery in a physical channel; e.g. the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
+* Physical channel; for example, desktop, mobile.
+* Form of delivery in a physical channel; for example, the "product detail page", "product category page" for desktop, or "mobile web", "mobile app" for mobile.
 
 However, you (probably) do not want to use exactly the same content for all channels - you need to optimize your content according to the specific channel.
 

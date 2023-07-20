@@ -54,7 +54,7 @@ You can create a launch from either the Sites or Launches console:
 
    Repeat as required.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Select source and add pages](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -72,7 +72,7 @@ You can create a launch from either the Sites or Launches console:
 
    Proceed with **Next**.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Specify whether to include pages](assets/chlimage_1-226.png)
 
 1. In the **Properties** step of the wizard you can specify:
 
@@ -85,7 +85,7 @@ You can create a launch from either the Sites or Launches console:
 
     * **Launch Date**: The date and time when the launch copy is to be activated (dependent on the **Production Ready** flag; see [Launches - the Order of Events](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Specify properties](assets/chlimage_1-227.png)
 
 1. Use **Create** to complete the process and create your new launch. The confirmation dialog will ask whether you want to open the launch immediately.
 
@@ -96,22 +96,20 @@ You can create a launch from either the Sites or Launches console:
 
 ### Create Launch with New Template {#create-launch-with-new-template}
 
-When [creating a launch](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) you can select whether to use a new template:
-
-**using a new template to replace the page**
+When [creating a launch](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) you can select whether to use a new template with the option: **using a new template to replace the page**
 
 >[!CAUTION]
 >
 >This option is only available when creating a launch from the **Sites** console. It is not available when creating a launch from the **Launches** console.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![Use a new template to replace the page](assets/chlimage_1-228.png)
 
 Selecting this will:
 
 * update the other options available,
 * include a new step where you can select the required template.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Select template](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -134,11 +132,11 @@ Creating a nested launch from the **Launches** console is basically the same as 
 1. In the **Launches** console select **Create**.
 1. Select **Add Pages**, then navigate to the launches branch by specifying `/content/launches` in the filter. Select the required launch and confirm with **Select**:
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Select launch](assets/chlimage_1-230.png)
 
 1. Proceed with **Next** and complete the **Properties** as with any other launch.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![Specify properties](assets/chlimage_1-231.png)
 
 #### Creating a Nested Launch - Sites Console {#creating-a-nested-launch-sites-console}
 

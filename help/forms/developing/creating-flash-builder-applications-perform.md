@@ -404,7 +404,7 @@ The following code represents the SSOManager.as file.
          /**
           * Constructs an SSOManager with the given server url.
           *
-          * @param serverUrl - The uri of the server to connect to. it must be without any context path e.g
+          * @param serverUrl - The uri of the server to connect to. it must be without any context path for example,
           * http://localhost:8080/. The SSOManager would directly append the path of UM exposed SSO url to it
           * for its operations
           */

@@ -1,14 +1,10 @@
 ---
-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
-seo-title: Adobe IMS Authentication and [!DNL Admin Console] Support for AEM Managed Services
-description: Learn how to use the [!DNL Admin Console] in AEM.
-seo-description: Learn how to use the [!DNL Admin Console] in AEM.
-uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
+title: Adobe IMS Authentication and [!DNL Admin Console] Support for Adobe Experience Manager Managed Services
+description: Learn how to use the [!DNL Admin Console] in Adobe Experience Manager.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 ---
@@ -16,11 +12,11 @@ feature: Security
 
 >[!NOTE]
 >
->Please note that this feature is available to Adobe Managed Services customers only.
+>This feature is available to Adobe Managed Services customers only.
 
 >[!NOTE]
 >
->AEM currently does not support assigning groups to profiles.  Users should be added individually instead.
+>Adobe Experience Manager (AEM) currently does not support assigning groups to profiles. Users should be added individually instead.
 
 ## Introduction {#introduction}
 
@@ -30,12 +26,12 @@ AEM onboarding to the [!DNL Admin Console] will allow AEM Managed Services custo
 
 ## Key Highlights {#key-highlights}
 
-* AEM IMS authentication support is only for AEM Authors, Admins or Developers, not for external end users of customer site like site visitors
+* AEM IMS authentication support is only for AEM Authors, Admins, or Developers, not for external end users of customer site like site visitors
 * The [!DNL Admin Console] will represent AEM Managed Services customers as IMS Organizations and their Instances as Product Contexts. Customer System and Product Admins will be able to manage access to instances
 * AEM Managed Services will sync customer topologies with the [!DNL Admin Console]. There will be one instance of AEM Managed Services Product Context per Instance in the [!DNL Admin Console].
 * Product Profiles in [!DNL Admin Console] will determine which instances a user can access
 * Federated authentication using customers' own SAML 2 compliant Identity Providers is supported
-* Only Enterprise or Federated IDs(for customer Single Sign-On) will be supported, not personal Adobe IDs.
+* Only Enterprise or Federated IDs(for customer Single Sign-on) will be supported, not personal Adobe IDs.
 * [!DNL User Management] (in Adobe [!DNL Admin Console]) will continue to be owned by the customer admins.
 
 ## Architecture {#architecture}
@@ -66,7 +62,7 @@ Once a customer exists as an IMS Organization and AMS is done with provisioning 
 1. The System Admin Claims Domain to confirm the ownership of the domain (in this example acme.com)
 1. The System Admin sets up User Directories
 1. The System Admin configures the Identity Provider (IDP) in the [!DNL Admin Console] for SSO setup.
-1. The AEM Admin manages the local groups, permissions and privileges as usual. See User and Group Sync
+1. The AEM Admin manages the local groups, permissions, and privileges as usual. See User and Group Sync
 
 >[!NOTE]
 >
@@ -84,9 +80,9 @@ There are three ways to onboard users depending on the size of the customer and 
 
 #### Manual Addition through [!DNL Admin Console] UI {#manual-addition-through-admin-console-ui}
 
-Users and Groups can be manually created in the [!DNL Admin Console] UI. This method can be used if they do not have a large number of users to manage. For example, a number of less than 50 AEM users.
+Users and Groups can be manually created in the [!DNL Admin Console] UI. This method can be used if they do not have many users to manage. For example, fewer than 50 AEM users.
 
-Users can also be manually created if the customer is already using this method for administering other Adobe products like Analytics, Target or Creative Cloud applications.
+Users can also be manually created if the customer is already using this method for administering other Adobe products like Adobe Analytics, Adobe Target, or Adobe Creative Cloud applications.
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
@@ -98,9 +94,9 @@ For easy handling of user creation, a CSV file can be uploaded for adding users 
 
 #### User Sync Tool {#user-sync-tool}
 
-The User Sync Tool (UST in short) enables enterprise customers to create or manage Adobe users utilizing Active Directory or other tested OpenLDAP directory services. The target users are IT Identity Administrators (Enterprise Directory and System Admins) who will be able to install and configure the tool. The open source tool is customizable so that customers can have a developer modify it to suit their own particular requirements.
+The User Sync Tool (UST in short) enables enterprise customers to create or manage Adobe users that use Active Directory or other tested OpenLDAP directory services. The target users are IT Identity Administrators (Enterprise Directory and System Admins) who will be able to install and configure the tool. The open-source tool is customizable so that customers can have a developer modify it to suit their own particular requirements.
 
-When User Sync runs, it fetches a list of users from the organization's Active Directory (or any other compatible data source) and compares it with the list of users within the [!DNL Admin Console]. It then calls the Adobe [!DNL User Management] API so that the [!DNL Admin Console] is synchronized with the organization's directory. The change flow is entirely one-way; any edits made in the [!DNL Admin Console] do not get pushed out to the directory.
+When User Sync runs, it fetches a list of users from the organization's Active Directory (or any other compatible data source) and compares it with the list of users within the [!DNL Admin Console]. It then calls the Adobe [!DNL User Management] API so that the [!DNL Admin Console] is synchronized with the organization's directory. The change flow is entirely one way; any edits made in the [!DNL Admin Console] do not get pushed out to the directory.
 
 The tool allows the system admin to map user groups in the customer's directory with product configuration and user groups in the [!DNL Admin Console], the new UST version also allows dynamic creation of user groups in the [!DNL Admin Console].
 
@@ -170,7 +166,7 @@ AEM can continue to support local logins for Admin users, as the login screen ha
 
 #### IMS Based Login {#ims-based-login}
 
-For other users, the IMS based login can be used once IMS is configured on the instance. The user will first click on the **Sign in with Adobe** button as shown below:
+For other users, the IMS based login can be used once IMS is configured on the instance. The user first clicks **Sign in with Adobe** as shown below:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -198,11 +194,11 @@ This utility will be run by your AMS team as part of IMS provisioning.
 
 ### Managing Permissions and ACLs in AEM {#managing-permissions-and-acls-in-aem}
 
-Access control and permissions will continue to be managed in AEM, this can be achieved using separation of User Groups coming from IMS( e.g. AEM-GRP-008 in the example below) and local groups where the permissions and access control is defined. The user groups that are synced from IMS can be assigned to local groups and inherit the permissions.
+Access control and permissions will continue to be managed in AEM, this can be achieved using separation of User Groups coming from IMS( for example, AEM-GRP-008 in the example below) and local groups where the permissions and access control is defined. The user groups that are synced from IMS can be assigned to local groups and inherit the permissions.
 
 In the example below, we are adding synced groups to the local *Dam_Users* group as an example.
 
-Here, a user has also been assigned to a few groups in the [!DNL Admin Console]. ( Please note that the users and groups can be synced from LDAP using the user sync tool or created locally, please see the section **Onboarding Users to the [!DNL Admin Console]** above).
+Here, a user has also been assigned to a few groups in the [!DNL Admin Console]. (The users and groups can be synced from LDAP using the user sync tool or created locally. See **Onboarding Users to the [!DNL Admin Console]** earlier).
 
 >[!NOTE]
 >
@@ -218,10 +214,10 @@ When the user logs in, their Group Memberships are synced, as shown below:
 
 ![screen_shot_2018-09-17at94033pm](assets/screen_shot_2018-09-17at94033pm.png)
 
-In AEM, the user groups synced from IMS can be added as members to existing local groups, e.g. DAM Users.
+In AEM, the user groups synced from IMS can be added as members to existing local groups, for example, DAM Users.
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png) 
 
-As shown below, the group *AEM-GRP_008* inherits the Permissions and Privileges of DAM Users. This is an effective way of managing permissions for synced groups and is commonly used in LDAP based Authentication methods as well.
+As shown below, the group *AEM-GRP_008* inherits the Permissions and Privileges of DAM Users. This is an effective way of managing permissions for synced groups and is commonly used in LDAP-based Authentication methods as well.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)

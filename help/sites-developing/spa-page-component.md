@@ -18,7 +18,7 @@ In an SPA the page component doesn't provide the HTML elements of its child comp
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
@@ -76,7 +76,7 @@ The meta resource properties that describe the SPA content:
 
 ## Meta Properties {#meta-properties}
 
-* `cq:wcmmode`: WCM mode of the editors (e.g. page, template)
+* `cq:wcmmode`: WCM mode of the editors (for example, page, template)
 * `cq:pagemodel_root_url`: URL of the root model of the App. Crucial when directly accessing a child page since the child page model is a fragment of the app root model. The ` [PageModelManager](/help/sites-developing/spa-page-component.md)` then systematically recomposes the application initial model as entering the application from its root entry point.
 
 * `cq:pagemodel_router`: Enable or disable the ` [ModelRouter](/help/sites-developing/spa-routing.md)` of the `PageModelManager` library
