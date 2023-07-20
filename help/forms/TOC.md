@@ -8,6 +8,7 @@ user-guide-title: Adobe Experience Manager 6.5 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 role: User
+feature: Forms Service
 ---
 # Adobe Experience Manager 6.5 Forms Guide {#forms}
 
@@ -121,6 +122,7 @@ role: User
   + [Introduction to AEM Forms Data Integration](using/data-integration.md)
   + [Configure data sources](using/configure-data-sources.md)
   + [Microsoft Dynamics Odata configuration](using/ms-dynamics-odata-configuration.md)
+  + [Salesforce integration using OAuth 2.0 client credentials flow authorization](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
   + [Create form data model](using/create-form-data-models.md)
   + [Work with form data model](using/work-with-form-data-model.md)
   + [Use form data model](using/using-form-data-model.md)
