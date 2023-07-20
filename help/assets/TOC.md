@@ -6,6 +6,8 @@ audience: end-user
 user-guide-title: Assets Guide
 breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, process, and distribute digital assets.
+role: User
+feature: Asset Management
 ---
 
 # Assets Guide {#assets}
