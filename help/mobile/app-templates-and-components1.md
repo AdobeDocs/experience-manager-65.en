@@ -1,14 +1,10 @@
 ---
 title: App Templates and Components
-seo-title: App Templates and Components
 description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
 ---
 # App Templates and Components{#app-templates-and-components}
@@ -19,14 +15,14 @@ exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
 
 A Template is used to create a Page and defines which components can be used within the selected scope. A template is a hierarchy of nodes that has the same structure as the page to be created, but without any actual content.
 
-Each Template will present you with a selection of components available for use.
+Each Template presents you with a selection of components available for use.
 
 * Templates are built up of [Components](/help/sites-developing/components.md);
 * Components use, and allow access to, Widgets and these are used to render the Content.
 
 >[!NOTE]
 >
->To learn how to develop your AEM application using CRXDE Lite, see [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>To learn how to develop your Adobe Experience Manager (AEM) application using CRXDE Lite, see [Developing with CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 A template is the basis of a page.
 
@@ -48,7 +44,7 @@ Various properties can be set, in particular:
 * **jcr:title** - title for the template; appears in the dialog when creating a page.
 * **jcr:description** - description for the template; appears in the dialog when creating a page.
 
-This node contains *a jcr:content (cq:PageContent)* node which be used as the basis for the content node of resulting pages; this references, using *sling:resourceType*, the component to be used for rendering the actual content of a new page.
+This node contains *a jcr:content (cq:PageContent)* node which is used as the basis for the content node of resulting pages. This references, using *sling:resourceType*, the component to be used for rendering the actual content of a new page.
 
 >[!NOTE]
 >

@@ -1,29 +1,27 @@
 ---
 title: Basic handling
-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
-uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
+description: An overview of basic handling when using the Adobe Experience Manager author environment. It uses the Sites console as a basis.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 ---
 # Basic Handling{#basic-handling}
 
 >[!NOTE]
 >
->* This page is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
+>* This page is designed to give an overview of basic handling when using the Adobe Experience Manager (AEM) author environment. It uses the **Sites** console as a basis.
 >
->* Some functionality is not available in all consoles and/or additional functionality is available in some consoles. Specific information about the individual consoles and their related functionality will be covered in more detail on other pages.
+>* Some functionality is not available in all consoles and additional functionality is available in some consoles. Specific information about the individual consoles and their related functionality is covered in more detail on other pages.
 >* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) and [editing pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## The Welcome Screen {#the-welcome-screen}
 
-The classic UI provides a selection of consoles, using well-known mechanisms for navigating and initiating actions, including click, double-click and [context menus](#context-menus).
+The classic UI provides a selection of consoles, using well-known mechanisms for navigating and initiating actions, including click, double-click, and [context menus](#context-menus).
 
-Upon login the Welcome screen will be shown, this provides a list of links to consoles and services:
+Following login, the Welcome screen is shown. It provides a list of links to consoles and services:
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -43,35 +41,35 @@ The main consoles are:
   </tr>
   <tr>
    <td><strong>Digital Assets</strong><br /> </td>
-   <td>These consoles let you import and <a href="/help/sites-classic-ui-authoring/classicui-assets.md">manage digital assets</a> such as images, videos, documents and audio files. These assets can then be used by any website running on the same AEM instance. </td>
+   <td>These consoles let you import and <a href="/help/sites-classic-ui-authoring/classicui-assets.md">manage digital assets</a> such as images, videos, documents, and audio files. These assets can then be used by any website running on the same AEM instance. </td>
   </tr>
   <tr>
    <td><strong>Launches</strong></td>
-   <td>This helps you manage your <a href="/help/sites-classic-ui-authoring/classic-launches.md">launches</a>; these enable you to develop the content for a future release of one or more activated web pages.<br /> <i>Note: In the touch-enabled UI much of the same functionality is available in the Sites console, together with the References rail.</i> <i>If required, this console is available from the Tools console; select Operations, then Launches.</i></td>
+   <td>This helps you manage your <a href="/help/sites-classic-ui-authoring/classic-launches.md">launches</a>; these enable you to develop the content for a future release of one or more activated web pages.<br /> <i>Note: In the touch-enabled UI much of the same functionality is available in the Sites console, together with the References rail.</i> <i>If necessary, this console is available from the Tools console; select Operations, then Launches.</i></td>
   </tr>
   <tr>
    <td><strong>Inbox </strong></td>
-   <td>In many cases a number of people are involved in the sub-tasks of a workflow and each person must complete their step before handing off the work to the next person. The Inbox allows you to see notifications related to such tasks. See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>. <br /> </td>
+   <td>Often, various people are involved in the subtasks of a workflow and each person must complete their step before handing off the work to the next person. The Inbox allows you to see notifications related to such tasks. See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Tagging</strong></td>
-   <td>The Tagging consoles let you administer tags. Tags are short names or phrases that you can use to classify and annotate pieces of content making it easier to find and organize them. For further information see <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Using and Managing Tags</a>.</td>
+   <td>The Tagging consoles let you administer tags. Tags are short names or phrases that you can use to classify and annotate pieces of content making it easier to find and organize them. For more information, see <a href="/help/sites-classic-ui-authoring/classic-feature-tags.md">Using and Managing Tags</a>.</td>
   </tr>
   <tr>
    <td><strong>Tools</strong></td>
-   <td>The <a href="/help/sites-administering/tools-consoles.md">Tools consoles</a> provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.</td>
+   <td>The <a href="/help/sites-administering/tools-consoles.md">Tools consoles</a> provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.</td>
   </tr>
   <tr>
    <td><strong>Users</strong></td>
-   <td>These consoles let you manage access rights for users and groups. For full details see <a href="/help/sites-administering/security.md">User Administration and Security</a>.<br /> </td>
+   <td>These consoles let you manage access rights for users and groups. For full details, see <a href="/help/sites-administering/security.md">User Administration and Security</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Websites</strong></td>
-   <td>The Sites/Websites consoles let you <a href="/help/sites-classic-ui-authoring/classic-page-author.md">create, view and manage websites</a> running on your AEM instance. Through these consoles you can create, copy, move and delete website pages, start workflows, and activate (publish) pages. You can also open a page for editing.<br /> </td>
+   <td>The Sites/Websites consoles let you <a href="/help/sites-classic-ui-authoring/classic-page-author.md">create, view, and manage websites</a> running on your AEM instance. Through these consoles you can create, copy, move and delete website pages, start workflows, and activate (publish) pages. You can also open a page for editing.<br /> </td>
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
-   <td>A workflow is a defined series of steps that describes the process of completing some task. In many cases a number of people are involved in a task and each person must complete their step before handing off the work to the next person. The Workflow console lets you build workflow models and managing running workflow instances. See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>.<br /> </td>
+   <td>A workflow is a defined series of steps that describes the process of completing some task. Often, several people are involved in a task and each person must complete their step before handing off the work to the next person. The Workflow console lets you build workflow models and managing running workflow instances. See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -82,11 +80,11 @@ The **Websites** console provides two panes for you to navigate and manage your 
 
   This shows the tree structure of your websites and the pages within those websites.
 
-  It also shows information about other aspects or AEM, including projects, blueprints and assets.
+  It also shows information about other aspects or AEM, including projects, blueprints, and assets.
 
 * Right pane
 
-  This shows the pages (at the location selected in the left pane) and can be used for taking actions.
+  This shows the pages (at the location selected in the left pane) and can be used to take action.
 
 From here you can [manage your pages](/help/sites-authoring/managing-pages.md) using either the toolbar, a context menu or by opening a page for further actions.
 
@@ -98,28 +96,28 @@ From here you can [manage your pages](/help/sites-authoring/managing-pages.md) u
 
 ## Accessing Help {#accessing-help}
 
-On various consoles (for example, Websites) there is also **Help** button is available, this will open either Package Share or the documentation site.
+On various consoles (for example, Websites), a **Help** button is available. Clicking **Help** opens either Package Share or the documentation site.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-When editing a page the [sidekick also has a button for accessing help](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+When editing a page, the [sidekick also has a button for accessing help](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navigating with the Websites Console {#navigating-with-the-websites-console}
 
-The **Websites** console lists your pages of content in a tree structure (left hand pane). For ease of navigation, sections of the tree structure can be expanded (+) or collapsed (-) as required:
+The **Websites** console lists your pages of content in a tree structure (left-hand pane). For ease of navigation, sections of the tree structure can be expanded (+) or collapsed (-) as required:
 
-* A single click on the page name (in the left pane) will:
+* Clicking the page name in the left pane does the following:
 
-    * List the child pages in the right pane
-    * Also expand the structure in the left pane.
+    * Lists the child pages in the right pane
+    * Expands the structure in the left pane.
 
-      For performance reasons this action is dependent on the number of children nodes. With a standard installation this method of expansion works when there are `30` or less child nodes.
+      For performance reasons, this action depends on the number of children nodes. With a standard installation, this method of expansion works when there are `30` or fewer child nodes.
 
-* A double-click on the page name (left pane) will also expand the tree, though as the page is opened at the same time this effect is not so obvious.
+* Double-clicking the page name (left pane) expands the tree, though as the page is opened at the same time this effect is not so obvious.
 
 >[!NOTE]
 >
->This default value ( `30`) can be changed per console in your application specific configurations of the siteadmin widget:
+>This default value ( `30`) can be changed per console in your application-specific configurations of the siteadmin widget:
 >
 >On the siteadmin node:
 >
@@ -134,7 +132,7 @@ The **Websites** console lists your pages of content in a tree structure (left h
 >in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->See [SiteAdmin in the CQ Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) for more details.
+>See [SiteAdmin in the CQ Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) for more details.
 
 ## Page Information on the Websites Console {#page-information-on-the-websites-console}
 
@@ -168,7 +166,7 @@ The following are available; a subset of these fields is shown as default:
   </tr>
   <tr>
    <td>Modified</td>
-   <td>Indicates whether the page has been modified and provides the modification date and time. In order to save any modification, you must activate the page.</td>
+   <td>Indicates whether the page has been modified and provides the modification date and time. To save any modification, you must activate the page.</td>
   </tr>
   <tr>
    <td>Scene7 Publish</td>
@@ -176,7 +174,7 @@ The following are available; a subset of these fields is shown as default:
   </tr>
   <tr>
    <td>Status</td>
-   <td>Indicates the current status of the page, such as whether the page is part of a workflow or livecopy, or whether a page is currently locked.</td>
+   <td>Indicates the status of the page, such as whether the page is part of a workflow or livecopy, or whether a page is locked.</td>
   </tr>
   <tr>
    <td>Impressions</td>
@@ -203,7 +201,7 @@ The following are available; a subset of these fields is shown as default:
 
 >[!NOTE]
 >
->To select the columns visible hover your mouse over a column title. A drop-down menu will be shown, from here you can use the **Columns** option.
+>To select the columns visible, hover your mouse over a column title. A drop-down menu is shown, and from here you can use the **Columns** option.
 
 The colors next to pages in the **Published** and **Modified** columns indicate publication status:
 
@@ -218,6 +216,6 @@ The colors next to pages in the **Published** and **Modified** columns indicate 
 
 ## Context Menus {#context-menus}
 
-The classic UI uses well-known mechanisms for navigating and initiating actions, including click and double-click. Depending on the current situation, a range of context menus (usually opened with the right-mouse-button) are also available:
+The classic UI uses well-known mechanisms for navigating and initiating actions, including click and double-click. Depending on the current situation, a range of context menus (opened with the right-mouse-button) are also available:
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
