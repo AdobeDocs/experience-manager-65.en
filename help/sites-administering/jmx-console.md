@@ -466,7 +466,7 @@ Information about the CRX repository
   </tr>
   <tr>
    <td>option.activities.supported</td>
-   <td>true indicates the repository supports activities. Activities are a a set of changes that are performed in a workspace that are merged into another workspace.</td>
+   <td>true indicates the repository supports activities. Activities are a set of changes that are performed in a workspace that are merged into another workspace.</td>
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>

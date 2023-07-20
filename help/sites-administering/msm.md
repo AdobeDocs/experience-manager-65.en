@@ -302,7 +302,7 @@ The basic form of live copy has:
 
 #### Live Copy with non-Live-Copy pages {#live-copy-with-non-live-copy-pages}
 
-When you create a live copy in AEM you can see and navigate through the live copy branch - and use normal AEM functionality on the live copy branch. This means that you (or a process) can create new resources (pages and/or paragraphs) inside the live copy branch (e.g. `myCanadaOnlyProduct`).
+When you create a live copy in AEM you can see and navigate through the live copy branch - and use normal AEM functionality on the live copy branch. This means that you (or a process) can create new resources (pages and/or paragraphs) inside the live copy branch (for example, `myCanadaOnlyProduct`).
 
 * Such resources have no live relationship to the source/blueprint pages and are not synchronized.
 * Scenarios can occur that MSM handles as special cases. For example, when you (or a process) create a page with the same position and name in both the source/blueprint and live copy branches. For such situations see [MSM Rollout Conflicts](/help/sites-administering/msm-rollout-conflicts.md) for more information.

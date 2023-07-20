@@ -85,7 +85,7 @@ You can use workflow metadata to persist information that is required during the
 
 There are three types of MetaDataMap objects - for `Workflow`, `WorkflowData` and `WorkItem` objects. They all have the same intended purpose - to store metadata.
 
-A WorkItem has its own MetaDataMap that can be only used while that workitem (e.g. step) is running.
+A WorkItem has its own MetaDataMap that can be only used while that workitem (for example, step) is running.
 
 Both `Workflow` and `WorkflowData` metadatamaps are shared over the entire workflow. For these cases it is recommended to only use the `WorkflowData` metadata map.
 

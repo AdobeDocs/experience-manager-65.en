@@ -98,7 +98,7 @@ From here you can [manage your pages](/help/sites-authoring/managing-pages.md) u
 
 ## Accessing Help {#accessing-help}
 
-On various consoles (e.g. Websites) there is also **Help** button is available, this will open either Package Share or the documentation site.
+On various consoles (for example, Websites) there is also **Help** button is available, this will open either Package Share or the documentation site.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -115,7 +115,7 @@ The **Websites** console lists your pages of content in a tree structure (left h
 
       For performance reasons this action is dependent on the number of children nodes. With a standard installation this method of expansion works when there are `30` or less child nodes.
 
-* A double click on the page name (left pane) will also expand the tree, though as the page is opened at the same time this effect is not so obvious.
+* A double-click on the page name (left pane) will also expand the tree, though as the page is opened at the same time this effect is not so obvious.
 
 >[!NOTE]
 >

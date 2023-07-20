@@ -125,7 +125,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 **client_pollingInterval:** Sets the polling interval (in seconds) used on the (Deprecated for AEM forms on JEE) Flex Workspace to detect new and modified tasks. The default is 3 seconds. This does not work for AEM Forms Workspace.
 
-**client_systemContext_name:** Specify a custom name (e.g. Citizen) to display in the Added By field (in the Attachments tab) for the attachments of a task in AEM Forms Workspace.
+**client_systemContext_name:** Specify a custom name (for example, Citizen) to display in the Added By field (in the Attachments tab) for the attachments of a task in AEM Forms Workspace.
 
 To define the custom name:
 

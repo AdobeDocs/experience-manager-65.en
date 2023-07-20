@@ -224,7 +224,7 @@ Usage:
   Options for executing Quickstart extensions:
                                                                                 
     -xargs <arg> [<arg> ...]
-         Construct an arguments list for a Quickstart extension (e.g. -xargs -- 
+         Construct an arguments list for a Quickstart extension (for example, -xargs -- 
          -arg1 val1 -arg2 val2).                                                
 --------------------------------------------------------------------------------
 Quickstart filename options                                                     

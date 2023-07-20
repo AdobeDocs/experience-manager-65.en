@@ -91,7 +91,7 @@ The following table describes the default CQ variables that are provided for the
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Sent every time a milestone is triggered, the number of seconds the user spent watching the given segment is also sent along with this event. e.g. eventX=21<br /> </td>
+   <td>Sent every time a milestone is triggered, the number of seconds the user spent watching the given segment is also sent along with this event. for example, eventX=21<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
@@ -115,7 +115,7 @@ The following table describes the default CQ variables that are provided for the
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Contains information on the segment that has been viewed e.g. 2:O:4-8 </td>
+   <td>Contains information on the segment that has been viewed for example, 2:O:4-8 </td>
   </tr>
  </tbody>
 </table>
@@ -284,7 +284,7 @@ This method is similar to the Milestones method with the difference that the mil
 
 1. Set the Track offset.
 
-    * e.g.10,50,75,100
+    * for example,10,50,75,100
 
    Also, the information sent to Adobe Analytics is less customizable; there are only 3 variables available for mapping:
 
@@ -337,7 +337,7 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
 
 1. Set the Track offset to any number of seconds,
 
-    * e.g. 6
+    * for example, 6
 
    >[!NOTE]
    >

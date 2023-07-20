@@ -23,7 +23,7 @@ The SPA authoring feature offers a comprehensive solution for supporting SPAs wi
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
@@ -250,7 +250,7 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and vice versa). See the document [SPA Editor Overview](/help/sites-developing/spa-overview.md) for an summary of this communication model.
+The central idea of SPAs in AEM is the idea of mapping SPA components to AEM components and updating the component when the content is modified (and conversely). See the document [SPA Editor Overview](/help/sites-developing/spa-overview.md) for an summary of this communication model.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 

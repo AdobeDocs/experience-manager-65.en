@@ -15,7 +15,7 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Given the wide range of devices on the market and devices being released, testing your Apps has become extremely important. This is an area where functionality and usability may garner low reviews on an app store, but a single defect can result in your app being uninstalled. Careful attention has to be made in your testing plans and quality assurance. The following link covers many of the topics that need to be addressed in general, such as, identify your environment, define test cases, types of testing, assumptions, customer involvement, etc. Also discussed are tools to help in the testing effort. Internal tools, like [Hobbes](/help/sites-developing/hobbes.md), can help with web-based UI testing. [Tough Day](/help/sites-developing/tough-day.md) can stress your instances with a simulated load. If your testing environment already has experience with 3rd-party tools, like Selenium, these too can be used.
 

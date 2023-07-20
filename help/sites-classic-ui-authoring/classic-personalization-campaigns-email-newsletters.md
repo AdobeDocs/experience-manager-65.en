@@ -137,9 +137,9 @@ To apply your E-mail service configuration to a newsletter:
 Emails/Newsletters can be published to your E-mail Service by following these steps:
 
 1. Open the email.
-1. Before publishing a email, make sure you have applied the correct configuration to your email.
+1. Before publishing an email, make sure you have applied the correct configuration to your email.
 1. Click **Publish**. This opens the **Publish Newsletter To E-mail Service Provider** window.
-1. Fill in the **Newsletter Name** field. The email/newsletter is published to E-mail Service Provider with this name. In case a email name is not provided, then the email is published using the page name of the newsletter in AEM.
+1. Fill in the **Newsletter Name** field. The email/newsletter is published to E-mail Service Provider with this name. In case an email name is not provided, then the email is published using the page name of the newsletter in AEM.
 1. Click **Publish**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
@@ -150,7 +150,7 @@ Emails/Newsletters can be published to your E-mail Service by following these st
 
 >[!NOTE]
 >
->If a email/newsletter is published with the same name as that of a email/newsletter already published, then the earlier email/newsletter is not replaced. Instead, a new email/newsletter is created with same name (the IDs of two newsletters are, however, different).
+>If an email/newsletter is published with the same name as that of an email/newsletter already published, then the earlier email/newsletter is not replaced. Instead, a new email/newsletter is created with same name (the IDs of two newsletters are, however, different).
 >
 >Publishing the email/newsletter to E-mail Service Provider also publishes the email/newsletter to the AEM publish instance.
 >

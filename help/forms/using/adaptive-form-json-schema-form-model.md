@@ -8,6 +8,12 @@ exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 ---
 # Creating adaptive forms using JSON Schema {#creating-adaptive-forms-using-json-schema}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html)                  |
+| AEM 6.5     | This article         |
+
+
 ## Prerequisites {#prerequisites}
 
 Authoring an adaptive form using a JSON Schema as its form model requires basic understanding of JSON Schema. It is recommended to read through the following content before this article.

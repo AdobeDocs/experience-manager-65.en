@@ -190,7 +190,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -515,7 +515,7 @@ The `AbstractJcrCommerceSession` provided can apply vouchers. The vouchers retur
 
 * `jcr:title` (String) - for the voucher's description
 * `code` (String) - the code the user has to enter to apply this voucher
-* `promotion` (String) - the promotion to be applied; e.g. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) - the promotion to be applied; for example, `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Promotion handlers are OSGi services which modify the shopping cart. The cart will support several hooks that will be defined in the `PromotionHandler` interface.
 

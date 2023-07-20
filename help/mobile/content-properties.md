@@ -15,7 +15,7 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Articles, Banners, and Collections are represented as cq:Pages in AEM.
 

@@ -1,14 +1,10 @@
 ---
 title: Campaign Management
-seo-title: Campaign Management
-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
-seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
-uuid: 202d614b-a607-45de-8c24-1ee66b230315
+description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email, and mobile services and so engage your visitors.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
 ---
 
@@ -16,7 +12,7 @@ exl-id: d1741525-a475-4a76-bd16-55318023495e
 
 Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors.
 
-It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors. You can create content, segment visitors, push and promote targeted content for specific user profiles and manage campaigns across multiple channels.
+It allows you to orchestrate your marketing campaigns across the web, email, and mobile services and so engage your visitors. You can create content, segment visitors, push, and promote targeted content for specific user profiles and manage campaigns across multiple channels.
 
 This document describes the various elements that make up campaigns. More detailed information is available in the following documents:
 
@@ -31,7 +27,7 @@ This document describes the various elements that make up campaigns. More detail
 Campaign management is made up of various elements:
 
 * **Brands**
-  In AEM, brands are the top level unit and form a collection of **Campaigns**.
+  In Adobe Experience Manager (AEM), brands are the top-level unit and form a collection of **Campaigns**.
 
 * **Campaigns**
   A campaign is a collection of individual **Experiences**.
@@ -45,13 +41,13 @@ Campaign management is made up of various elements:
       Teaser pages can:
 
         * present a range of options for the visitor to choose from
-        * show only one teaser paragraph that is based on the specific visitor segment; for example, the teaser paragraph shown may be dependent on the age of the visitor.
+        * show only one teaser paragraph that is based on the specific visitor segment. For example, the teaser paragraph shown may depend on the age of the visitor.
 
-      Typically a teaser page is a temporary action that will last for a specific period of time, until it is replaced by the next teaser page.
+      Typically, a teaser page is a temporary action that lasts for a specific time period, until it is replaced by the next teaser page.
 
     * **Newsletters**
 
-      [E-mail Communications](#emailmarketing) are used to engage users and encourage them to visit your web site. These usually take the form of a newsletter, sent to your **Leads** (which are usually grouped into **Lists**). **Note:** Adobe is not planning to further enhance this capability. Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+      [E-mail Communications](#emailmarketing) are used to engage users and encourage them to visit your web site. These usually take the form of a newsletter, sent to your **Leads** (which are grouped into **Lists**). **Note:** Adobe is not planning to further enhance this capability. Recommendation is to [use Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
     * **Adobe Target**
 
@@ -67,22 +63,22 @@ Campaign management is made up of various elements:
 
   The information that you have collected about your visitors and how to contact them forms the basis for your leads. **Note:** Adobe is not planning to further enhance this capability.
 
-  Recommendation is to [leverage Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
+  Recommendation is to [use Adobe Campaign and the integration to AEM](/help/sites-administering/campaign.md).
 
 * **Lists**
 
-  Leads are usually grouped into lists so that you can take collective action on them. Note: **Note:** Adobe is not planning to further enhance this capability.
+  Leads are grouped into lists so that you can take collective action on them. Note: **Note:** Adobe is not planning to further enhance this capability.
 
-  Recommendation is to [leverage Adobe Campaign and the integration to AEM.](/help/sites-administering/campaign.md)
+  Recommendation is to [use Adobe Campaign and the integration to AEM.](/help/sites-administering/campaign.md)
 
 * **Segments**
 
-  Site visitors have different interests and objectives when they come to a site. Analyzing this according to factors such as activity on the website, profile information registered and activity on other websites, helps you to define segments. Content can then be specifically targeted to the visitor's needs and interests according to the segment(s) they match.
+  Site visitors have different interests and objectives when they come to a site. Analyzing this according to factors such as activity on the website, profile information registered, and activity on other websites, helps you to define segments. Content can then be targeted to the visitor's needs and interests according to the segments they match.
 
 * **MCM**
 
-  The Marketing Campaign Manager (MCM) is a console that allows you to access all the functionality you need to create and control your campaigns, brands, experiences, touchpoints, leads, lists, segments and reports.
+  The Marketing Campaign Manager (MCM) is a console that lets you access all the functionality you need to create and control your campaigns, brands, experiences, touchpoints, leads, lists, segments, and reports.
 
-  It can be accessed from various locations (labelled as **Campaigns**), or with, for example, the URL:
+  It can be accessed from various locations (labeled as **Campaigns**), or with, for example, the URL:
 
   `http://localhost:4502/libs/mcm/content/admin.html`

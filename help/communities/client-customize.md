@@ -106,7 +106,7 @@ The custom styles will now override the default framework styles and the compone
 
 To extend a components JavaScript implementation, you need to:
 
-1. Create a component for your app with a jcr:resourceSuperType set to the value of the extended component's jcr:resourceType, e.g. social/forum/components/hbs/forum.
+1. Create a component for your app with a jcr:resourceSuperType set to the value of the extended component's jcr:resourceType, for example, social/forum/components/hbs/forum.
 1. Examine the default SCF component's JavaScript to determine what methods need to be registered using SCF.registerComponent().
 1. Either copy the extended component's JavaScript or start from scratch.
 1. Extend the method.

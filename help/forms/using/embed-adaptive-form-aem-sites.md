@@ -13,6 +13,12 @@ exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
 ---
 # Embed an adaptive form or interactive communication in AEM sites page {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html)                  |
+| AEM 6.5     | This article         |
+
+
 ## Overview {#overview}
 
 AEM Forms allows form developers to seamlessly embed adaptive forms and interactive communications in an AEM Sites page or a web page hosted outside AEM. The embedded adaptive form and interactive communication is fully functional and users can fill and submit the form without leaving the page. It helps user remain in context of other elements on the web page and simultaneously interact with the form or interactive communication.

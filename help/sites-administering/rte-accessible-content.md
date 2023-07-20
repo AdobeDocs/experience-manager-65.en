@@ -77,7 +77,7 @@ In **Table**, set explicitly set or remove the attribute to/from the DOM element
 
 ### Example - create accessible HTML when using emphasis in text {#create-accessible-html-for-text}
 
-RTE can use `strong` and `em` tags in place of `b` and `i`. Add the the following node as a sibling to the `uiSettings` and `rtePlugins` nodes in the dialog.
+RTE can use `strong` and `em` tags in place of `b` and `i`. Add the following node as a sibling to the `uiSettings` and `rtePlugins` nodes in the dialog.
 
 ```HTML
 <htmlRules jcr:primaryType="nt:unstructured">

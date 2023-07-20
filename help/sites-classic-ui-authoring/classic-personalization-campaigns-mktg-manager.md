@@ -164,7 +164,7 @@ For the individual campaigns there are two views available:
 
    ![List view](do-not-localize/mcm_icon_listview.png)
 
-   This lists all experiences (e.g. teasers and newsletters) for the selected campaign:
+   This lists all experiences (for example, teasers and newsletters) for the selected campaign:
 
    ![mcm_banner_listview](assets/mcm_banner_listview.png)
 

@@ -12,6 +12,11 @@ exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
 ---
 # Reusing adaptive forms {#reusing-adaptive-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/reusing-adaptive-forms.html)                  |
+| AEM 6.5     | This article         |
+
 ## Introduction {#introduction}
 
 If you want to use some of the properties of an existing adaptive form to generate a new one, you can simply use the copy-paste functionality. In addition, you can paste the new adaptive form at the desired folder path. All metadata properties are replicated and the XFA and XSDs for XFA- and XSD-based adaptive forms are also copied.

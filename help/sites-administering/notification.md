@@ -228,7 +228,7 @@ The following variables can be used within the email template:
 
 * `${payload.type}`, the payload type
 * `${payload.path}`, path of the payload
-* `${host.prefix}`, host prefix, e.g.: `http://localhost:4502`
+* `${host.prefix}`, host prefix, for example,: `http://localhost:4502`
 
 ### Adding an Email Template for a New Language {#adding-an-email-template-for-a-new-language}
 

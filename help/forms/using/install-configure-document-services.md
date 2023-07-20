@@ -601,7 +601,7 @@ You can use the srt_config.yaml file to configure various settings for the SRT t
       # SRT Configuration
       # =================================================================
       #Note - follow correct format to avoid parsing failures
-      #e.g. <param name>:<space><param value> 
+      #for example, <param name>:<space><param value> 
       #locale: (mandatory field)Locale to be used for SRT. Supported locales [en/fr/de/ja].
       locale: en
       

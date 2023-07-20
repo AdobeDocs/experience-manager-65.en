@@ -14,6 +14,11 @@ exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
 ---
 # Prefill adaptive form fields{#prefill-adaptive-form-fields}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html)                  |
+| AEM 6.5     | This article         |
+
 ## Introduction {#introduction}
 
 You can prefill the fields of an adaptive form using existing data. When a user opens a form, the values for those fields are prefilled. To prefill data in an adaptive form, make the user data available as a prefill XML / JSON in the format that adheres to prefill data structure of adaptive forms.

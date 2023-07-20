@@ -95,7 +95,7 @@ This section only details specific links to Adobe Campaign. For more information
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Configure the added fields by double clicking them. The **Adobe Campaign** tab lets you link the field to a field in the Adobe Campaign recipient table. You can also specify whether the field is part of the reconciliation key which allows recipients that are already present in the Adobe Campaign database to be recognized.
+1. Configure the added fields by double-clicking them. The **Adobe Campaign** tab lets you link the field to a field in the Adobe Campaign recipient table. You can also specify whether the field is part of the reconciliation key which allows recipients that are already present in the Adobe Campaign database to be recognized.
 
    >[!CAUTION]
    >

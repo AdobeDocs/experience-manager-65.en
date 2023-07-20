@@ -14,6 +14,11 @@ exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 ---
 # Inline styling of adaptive form components {#inline-styling-of-adaptive-form-components}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html)                  |
+| AEM 6.5     | This article         |
+
 You can define the overall appearance and style of an adaptive form by specifying styles using [theme editor](../../forms/using/themes.md). Also, you can apply inline CSS styles to individual adaptive form components and preview the changes on the fly. Inline styles override styling provided in the theme.
 
 ## Apply inline CSS properties {#apply-inline-css-properties}

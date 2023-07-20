@@ -21,14 +21,14 @@ Various keyboard shortcuts are available throughout AEM. Some apply when editing
 
 |Location|Shortcut|Description|
 |---|---|---|
-|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (e.g. **Edit**, **Layout**, etc)*|
+|Any edit window mode|`Ctrl-Shift-m`|Toggle between **Preview** and the currently selected [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (for example, **Edit**, **Layout**, etc)*|
 |**Edit** mode|`Ctrl-z`|[Undo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-y`|[Redo last change](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)|
 ||`Ctrl-Click`|Select multiple paragraphs|
-||`Ctrl-c`|Copy selected paragraph(s)|
-||`Ctrl-x`|Cut selected paragraph(s), (cut paragraphs will not disappear in the UI until it is pasted)|
-||`Ctrl-v`|Paste paragraph(s) previously cut or copied|
-||`Ctrl-Backspace`|Delete selected paragraph(s)|
+||`Ctrl-c`|Copy selected paragraphs|
+||`Ctrl-x`|Cut selected paragraphs, (cut paragraphs will not disappear in the UI until it is pasted)|
+||`Ctrl-v`|Paste paragraphs previously cut or copied|
+||`Ctrl-Backspace`|Delete selected paragraphs|
 |**Edit** mode - Rich Text Editor|`Ctrl-b`|Bold|
 ||`Ctrl-I`|Italic|
 ||`Ctrl-u`|Underline|

@@ -14,6 +14,13 @@ exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 ---
 # Layout capabilities of adaptive forms{#layout-capabilities-of-adaptive-forms}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms.html)                  |
+| AEM 6.5     | This article         |
+
+
+
 Adobe Experience Manager (AEM) lets you create easy-to-use adaptive forms that offer dynamic experiences to end users. The form layout controls how items or components are displayed in an adaptive form.
 
 ## Prerequisite knowledge {#prerequisite-knowledge}
