@@ -67,4 +67,4 @@ Swagger is an open-source set of rules, specifications, and tools to develop and
 1. Click **[!UICONTROL Test Connection]**.
 1. If the connection succeeds, click the **[!UICONTROL Create]** button.
 
-Now, you can [create the Form Data Model](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) to integrate the configured datasource with your Adaptive Form.
+Now, you can [create the Form Data Model](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) to integrate the configured datasource with your Adaptive Forms.
