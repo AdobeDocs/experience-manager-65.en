@@ -10,6 +10,7 @@ exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 
 <span class="preview"> Adobe recommends using the more modern and extensible [Core Components](/help/forms/using/create-an-adaptive-form-core-components.md) for [creating new Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) or [adding Adaptive Forms to AEM Sites pages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html). These components can be installed separately by your administrator. </span>
 
+
 ## Create an adaptive form {#strong-create-an-adaptive-form-strong}
 
 Follow these steps to create an adaptive form.

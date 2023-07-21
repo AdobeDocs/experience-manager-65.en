@@ -18,9 +18,9 @@ At this point, you should have completed the entire [AEM Headless Developer Jour
 * How to retrieve and update headless content in AEM.
 * How to go live with an AEM Headless project.
 
-So you have now either gone live with your first AEM Headless project or have all of the knowledge that is needed to do so. Congratulations!
+So you have now either gone live with your first AEM Headless project, or have the knowledge to do so. Congratulations!
 
-So why are you reading this additional, optional continuation of the journey? Likely you recall that in the [Getting Started](getting-started.md#integration-levels) we discussed briefly how AEM not only supports headless delivery and traditional full-stack models, but can also support hybrid models that combine the advantages of both. Although not the traditional headless model, such hybrid models can offer unprecedented flexibility to certain projects.
+So why are you reading this additional, optional continuation of the journey? Likely, you recall that in the [Getting Started](getting-started.md#integration-levels), there was a brief discussion about how AEM not only supports headless delivery and traditional full-stack models, but can also support hybrid models that combine the advantages of both. Although not the traditional headless model, such hybrid models can offer unprecedented flexibility to certain projects.
 
 This article builds on your knowledge of AEM Headless by exploring in-depth how you can create your own single-page applications (SPAs) that are editable in AEM. In this way, you can create content and delivery it headlessly to a SPA, but that SPA remains editable in AEM.
 
@@ -66,7 +66,7 @@ For a full description of SPAs and why you would use them, see the [additional r
 
 ## How AEM Handles SPAs
 
-Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. If, as a front-end developer, you follow these general best practices and a few AEM-specific principles, your SPA will be functional with AEM and its content-authoring capabilities.
+Developing single page applications on AEM assumes that the front-end developer observes standard best practices when creating an SPA. As a front-end developer, if you follow these general best practices and a few AEM-specific principles, your SPA will be functional with AEM and its content-authoring capabilities.
 
 * **Portability** - As with any components, the SPA components should be built to be as portable as possible. The SPA should be built with portably and reusable components.
 * **AEM Drives Site Structure** - The front-end developer creates components and owns their internal structure, but relies on AEM to define the content structure of the site.
@@ -119,6 +119,6 @@ The following are some additional resources that do a deeper dive on some concep
 * [Developing SPAs for AEM](/help/sites-developing/spa-architecture.md) - Guidelines on how to develop SPAs for AEM
 * [SPA Editor Overview](/help/sites-developing/spa-overview.md) - Details of how the SPA Editor works
 * [Server-Side Rendering](/help/sites-developing/spa-ssr.md) - How to configure SSR for AEM SPAs
-* [SPA Reference Documents](/help/sites-developing/spa-reference-materials.md) - JavaScript API references and links to the open source AEM SPA GitHub projects
+* [SPA Reference Documents](/help/sites-developing/spa-reference-materials.md) - JavaScript API references and links to the open-source AEM SPA GitHub projects
 * [Content Fragments](/help/assets/content-fragments/content-fragments.md) - How to create Content Fragments
 * [AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) - Maven template that creates a minimal, best-practices-based Adobe Experience Manager (AEM) project as a starting point for your website
