@@ -1,14 +1,10 @@
 ---
 title: Adding domains
-seo-title: Adding domains
 description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.
-seo-description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.
-uuid: 3ae1e5d4-ea5b-4e0b-be97-3957c3702d5f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 ---
 # Adding domains {#adding-domains}

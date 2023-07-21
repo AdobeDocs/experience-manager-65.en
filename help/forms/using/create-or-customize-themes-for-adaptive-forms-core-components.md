@@ -10,18 +10,20 @@ docset: aem65
 role: Admin, Developer
 ---
 
-# Introduction to Theme {#introduction-to-theme}
+# Create or customize an Adaptive Form theme {#introduction-to-theme}
 
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    This Article                  |
 | AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)| 
 
+**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/themes.md).
+
 In AEM Forms 6.5, a theme is an AEM client library that you use to define the styles (look and feel) for an Adaptive Form. A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components. A theme is managed independently without a reference to an Adaptive Form and can be reused across multiple Adaptive Forms.
  
-## Available reference themes {#available-reference-theme}
+## Available  themes {#available-theme}
 
-AEM 6.5 environment provides the below listed reference themes for Core Components based Adaptive Forms:  
+AEM 6.5 environment provides the below listed themes for Core Components based Adaptive Forms:  
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
@@ -43,13 +45,13 @@ A theme is a package that encompasses the CSS file, JavaScript files, and resour
 
 ## Create a theme 
 
-AEM Forms 6.5 provides, the below listed reference themes for Core Components based Adaptive Forms.  
+AEM Forms 6.5 provides, the below listed themes for Core Components based Adaptive Forms.  
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
 
-You can [customize any of these reference themes to create a theme](#customize-a-theme-core-components).
+You can [customize any of these themes to create a theme](#customize-a-theme-core-components).
 
 ## Customize a theme {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -84,26 +86,27 @@ Customizing a theme refers to the process of modifying and personalizing the app
 
  Creating or customizing a theme is a multi-step process. Perform the steps in listed order to create/customize the theme:
 
- 1. [Clone a reference theme](#clone-git-repo-of-theme)
+ 1. [Clone a theme](#clone-git-repo-of-theme)
  1. [Customize the appearance of the theme](#customize-the-theme) 
  1. [Ready the theme for local deployment](#generate-the-clientlib) 
- 1. [Deploy the theme on a local testing environment](#deploy-the-theme-on-a-local-testing-environment) 
- 1. [Test the theme with a local Adaptive Form](#test-the-theme-with-a-local-adaptive-form)
- 1. Deploy the theme on production environment
+ 1. [Deploy the theme on a local environment](#deploy-the-theme-on-a-local-environment) 
+ 1. [Deploy the theme on production environment](#5-deploy-a-theme-on-your-production-environment)
 
+<!--
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
+-->
 
-The examples provided in the document are based on the **Canvas** theme, but you can clone any reference theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
+The examples provided in the document are based on the **Canvas** theme, but you can clone any theme and customize it using the same instructions. These instructions are applicable to any theme, allowing you to modify themes according to your specific needs.
  
 #### 1. Clone the Git repository of theme {#clone-git-repo-of-theme}
 
-To clone a reference theme for Core Components based Adaptive Forms, choose one of the following reference themes:
+To clone a theme for Core Components based Adaptive Forms, choose one of the following themes:
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL theme](https://github.com/adobe/aem-forms-theme-easel)
 
-Perform the following instructions to clone a reference theme: 
+Perform the following instructions to clone a theme: 
 
 1. Open the command prompt or terminal window on your local development environment.
 
@@ -171,10 +174,9 @@ You also have the option to customize the font, color, size, and other CSS prope
 
 -->
 
->![NOTE]
+>[!NOTE]
 >
 > When a style is defined both at theme and component level, the style defined at the component level takes priority. 
-
 
 #### 3. Ready the theme for deployment {#generate-the-clientlib}
 
@@ -203,7 +205,7 @@ To deploy a theme to an AEM instance, it needs to be converted into a Client Lib
 
     ![Client Libary location](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Deploy the theme on a local testing environment {#deploy-the-theme-on-a-local-testing-environment}
+#### 4. Deploy the theme on a local environment {#deploy-the-theme-on-a-local-environment}
 
 To deploy the theme to your local development or testing environment, follow these steps:
 
@@ -218,6 +220,8 @@ To deploy the theme to your local development or testing environment, follow the
     `mvn clean install`
 
     ![Client Libary Build](/help/forms/using/assets/mvndeploy.png)
+
+<!--
 
 #### 5. Test the theme with a local Adaptive Form {#test-the-theme-with-a-local-adaptive-form}
 
@@ -250,7 +254,7 @@ An Adaptive Form with the selected theme is created.
 1. Click **Save & Close**.
 
 The selected theme is applied to the Adaptive Form. 
-
+-->
 
 #### 5. Deploy a theme on your production environment {#deploy-theme}
 
@@ -267,22 +271,27 @@ After the package is installed the theme is available for selection.
 
 ![Theme Client Library](/help/forms/using/assets/themeclientlibrary.png)
 
->![NOTE]
+>[!NOTE]
 >
->In case you encounter difficulty accessing the login dialog on a publish instance to install the package through the Package Manager, try logging in through the following URL: `http://[Publish Server URL]:[PORT]/system/console`. This allows access to log in to Publish instance, allowing you to proceed with the installation process.
+>
+> In case you encounter difficulty accessing the login dialog on a publish instance to install the package through the Package Manager, try logging in through the following URL: `http://[Publish Server URL]:[PORT]/system/console`. This allows access to log in to Publish instance, allowing you to proceed with the installation process.
 
 ## Apply a theme to an Adaptive Form {#using-theme-in-adaptive-form}
 
 Steps to apply a theme to an Adaptive Form are:
 
-1. Log in to your AEM Forms author instance. 
+1. Log in to your local AEM author instance.
+1. Enter your credentials on the Experience Manager login page. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
+1. Click **Create** > **Adaptive Forms**. 
+1. Select an Adaptive Forms Core Components template and click **Next**. The **Add Properties** appears
+1. Specify the **Name** for your Adaptive Form.
 
-1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
+    >[!NOTE]
+    >
+    > * By default, the `adaptiveform.theme.canvas3` theme is selected.
+    > * You can choose a different theme from the **Theme Client Library** drop-down menu. 
 
-1. Select the core component template in the **Source** tab.
-1. Select the theme in the **Style** tab.
 1. Click **Create**.
 
 Adaptive Form themes are used as part of an Adaptive Form template to define styling while creating an Adaptive Form.
@@ -323,7 +332,7 @@ To remove unused or unwanted themes:
 ## See also
 
 * [Create a Core Components based Adaptive Form](create-an-adaptive-form-core-components.md)
-* [Use rule editor to add dynamic behaviour to form](rule-editor.md)
+* [Use rule editor to add dynamic behavior to form](rule-editor.md)
 * [Create or customize themes for Core Components based Adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Create a template for Core Components based Adaptive Forms](template-editor.md)
 * [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)

@@ -13,10 +13,16 @@ role: Admin, Developer
 
 # Create Core Components based Adaptive Forms {#creating-an-adaptive-form-core-components}
 
+
+<span class="preview"> Adobe recommends using Core Components to [add Adaptive Forms to an AEM Sites Page](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) or to [create standalone Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
 | Version | Article link |
 | -------- | ---------------------------- |
 | AEM 6.5  |    This Article                  |
 | AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)|   
+
+**Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).
+
 
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provide business user-friendly UI to quickly create Adaptive Forms. The UI offers quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
@@ -32,17 +38,13 @@ You require the following to create an Adaptive Form:
 
 * **Enable Adaptive Forms Core Components for your environment**: AEM Archetype project version 41 or later is required to [enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and Canvas theme are added to your environment.     
 
-* **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. For example, sending the collected data to a data source. The template named `blank` is supported OOTB:
-
-    * The `blank` template is included with every fresh AEM Forms on-premise and AMS environment.
-    * You can install the reference package, via Package Manager, to add the `blank` template to your AEM Forms on-premise and AMS environment. 
-    * You can also [create a new Adaptive Forms template (Core Components)](template-editor.md) from scratch.
+* **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. 
 
     >[!NOTE]
     >
     > If you do not have, **Adaptive Forms (Core Component)** template on your environment, [Enable Adaptive Forms Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template is added to your environment.  
 
-* **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` theme is added by default, when you enable core components for your environment. You can also [download and customize the reference themes](create-or-customize-themes-for-adaptive-forms-core-components.md).  
+* **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` theme is added by default, when you enable core components for your environment. You can also [download and customize the standard themes](create-or-customize-themes-for-adaptive-forms-core-components.md).  
 
 * **Permissions**: Add your users to [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. For detailed list of forms-specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
 
@@ -131,6 +133,10 @@ To configure a JSON Schema or Form Data Model for your form:
 
 1. Click **[!UICONTROL Done]**.
 
+>[!NOTE]
+>
+> You can edit the JSON Schema or Form Data Model for an Adaptive Form using the Guide Container properties.  
+
 ## Configure a pre-fill service  {#configure-prefill-service-for-form}
 
 You can use the prefill service to auto fill fields of an Adaptive Form using existing data. When a user opens a form, the values for those fields are prefilled. You can:
@@ -149,6 +155,7 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 1. Select a form data model. Open the **[!UICONTROL Basic]** tab. In the prefill service, select **[!UICONTROL Form Data Model Prefill Service]**. 
 1. Click **[!UICONTROL Done]**. Your Adaptive form is now configured to use Form Data Model Prefill. You can now, use the [rule editor](rule-editor.md) to create rules to prepopulate fields of the form.
 
+<!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
 1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
@@ -156,6 +163,7 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
 1. Tap **[!UICONTROL Save]** to save the properties.
+-->
 
 ## What's Next
 

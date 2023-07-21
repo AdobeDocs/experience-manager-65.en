@@ -1,14 +1,10 @@
 ---
 title: Page Templates - Static
-seo-title: Page Templates - Static
 description: A Template is used to create a Page and defines which components can be used within the selected scope
-seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
-uuid: 7a473c19-9565-476e-9e54-ab179da04d71
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
 ---
@@ -16,7 +12,7 @@ exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
 
 A Template is used to create a Page and defines which components can be used within the selected scope. A template is a hierarchy of nodes that has the same structure as the page to be created, but without any actual content.
 
-Each Template will present you with a selection of components available for use.
+Each Template presents you with a selection of components available for use.
 
 * Templates are built up of [Components](/help/sites-developing/components.md);
 * Components use, and allow access to, Widgets and these are used to render the Content.
@@ -118,7 +114,7 @@ Various properties can be set, in particular:
 * **jcr:title** - title for the template; appears in the dialog when creating a page.
 * **jcr:description** - description for the template; appears in the dialog when creating a page.
 
-This node contains a jcr:content (cq:PageContent) node which be used as the basis for the content node of resulting pages; this references, using sling:resourceType, the component to be used for rendering the actual content of a new page.
+This node contains a jcr:content (cq:PageContent) node which is used as the basis for the content node of resulting pages; this references, using sling:resourceType, the component to be used for rendering the actual content of a new page.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -136,7 +132,7 @@ Templates are used to create pages of type `cq:Page` (as mentioned earlier, a pa
 
 ### Default Templates {#default-templates}
 
-AEM comes with a number of default templates available out of the box. In some cases, you may want to use the templates as is. In that case, you need to ensure that the template is available for your web site.
+AEM comes with various default templates available out of the box. Sometimes, you may want to use the templates as is. In that case, you must ensure that the template is available for your web site.
 
 For example, AEM comes with several templates including a contentpage and home page.
 
@@ -159,7 +155,7 @@ To see a list of all templates in the repository, proceed as follows:
 
 1. Click **Execute**. The list is displayed in the result box.
 
-In most cases, you will take an existing template and develop a new one for your own use. See [Developing Page Templates](#developing-page-templates) for more information.
+Usually, you take an existing template and develop a new one for your own use. See [Developing Page Templates](#developing-page-templates) for more information.
 
 To enable an existing template for your website and you want it to be displayed in the **Create Page** dialog when creating a page right under **Websites** from the **Websites** console, set the allowedPaths property of the template node to: **/content(/.&#42;)?**
 
@@ -171,13 +167,13 @@ When styles are defined in the UI using [Design Mode](/help/sites-authoring/defa
 >
 >Adobe recommends only applying designs through [Design Mode](/help/sites-authoring/default-components-designmode.md).
 >
->Modifying designs in CRX DE for example is not best practice and the application of such designs can vary from expected behavior.
+>Modifying designs in CRXDE Lite, for example, is not best practice and the application of such designs can vary from expected behavior.
 
 If designs are only applied using Design Mode, then the following sections, [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution), [Decision Tree](/help/sites-developing/page-templates-static.md#decision-tree), and the [Example](/help/sites-developing/page-templates-static.md#example) are not applicable.
 
 ### Design Path Resolution {#design-path-resolution}
 
-When rendering content based on a static template, AEM will attempt to apply the most relevant design and styles to the content based on a traversal of the content hierarchy.
+When rendering content based on a static template, AEM attempts to apply the most relevant design and styles to the content based on a traversal of the content hierarchy.
 
 AEM determines the most relevant style for a content node in the following order:
 
@@ -199,7 +195,7 @@ Consider a simple content structure as follows, where a design could apply to an
 
 `/root/branch/leaf`
 
-The following table describes how AEM will choose a design.
+The following table describes how AEM chooses a design.
 
 <table>
  <tbody>
@@ -260,17 +256,17 @@ The following table describes how AEM will choose a design.
 
 ## Developing Page Templates {#developing-page-templates}
 
-AEM page templates are simply models used to create new pages. They can contain as little, or as much, initial content as needed, their role being to create the correct initial node structures, with the required properties (primarily sling:resourceType) set to allow editing and rendering.
+AEM page templates are simply models used to create pages. They can contain as little, or as much, initial content as needed, their role being to create the correct initial node structures, with the required properties (primarily sling:resourceType) set to allow editing and rendering.
 
-### Creating a new Template (based on an existing template) {#creating-a-new-template-based-on-an-existing-template}
+### Creating a Template (based on an existing template) {#creating-a-new-template-based-on-an-existing-template}
 
-Needless to say a new template can be created completely from scratch, but often an existing template will be copied and updated to save you time and effort. For example, the templates within Geometrixx can be used to get you started.
+A new template can be created completely from scratch, but often an existing template is copied instead, and updated to save you time and effort. For example, the templates within Geometrixx can be used to get you started.
 
-To create a new template based on an existing template:
+To create a template based on an existing template:
 
 1. Copy an existing template (preferably with a definition as close as possible to what you want to achieve) to a new node.
 
-   Templates are usually stored in **/apps/&lt;website-name&gt;/templates/&lt;template-name&gt;**.
+   Templates are stored in **/apps/&lt;website-name&gt;/templates/&lt;template-name&gt;**.
 
    >[!NOTE]
    >
@@ -284,27 +280,27 @@ To create a new template based on an existing template:
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Copy the component on which the template is based (this is indicated by the **sling:resourceType** property of the **jcr:content** node within the template) to create a new instance.
+1. Copy the component on which the template is based (this is indicated by the **sling:resourceType** property of the **jcr:content** node within the template) to create an instance.
 
-   Components are usually stored in **/apps/&lt;website-name&gt;/components/&lt;component-name&gt;**.
+   Components are stored in **/apps/&lt;website-name&gt;/components/&lt;component-name&gt;**.
 
 1. Update the **jcr:title** and **jcr:description** of the new component.
 1. Replace the thumbnail.png if you want a new thumbnail picture to be shown in the template selection list (size 128 x 98 px).
 1. Update the **sling:resourceType** of the template's **jcr:content** node to reference the new component.
-1. Make any further changes to the functionality or design of the template and/or its underlying component.
+1. Make additional changes to the functionality or design of the template, or its underlying component, or both.
 
    >[!NOTE]
    >
-   >Changes made to the **/apps/&lt;website&gt;/templates/&lt;template-name&gt;** node will affect the template instance (as in the selection list).
+   >Changes made to the **/apps/&lt;website&gt;/templates/&lt;template-name&gt;** node affect the template instance (as in the selection list).
    >
    >
-   >Changes made to the **/apps/&lt;website&gt;/components/&lt;component-name&gt;** node will affect the content page created when the template is used.
+   >Changes made to the **/apps/&lt;website&gt;/components/&lt;component-name&gt;** node affect the content page created when the template is used.
 
    You can now create a page within your website using the new template.
 
 >[!NOTE]
 >
->The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` will result.
+>The editor client library assumes the presence of the `cq.shared` namespace in content pages, and if it is absent, the JavaScript error `Uncaught TypeError: Cannot read property 'shared' of undefined` results.
 >
 >All sample content pages contain `cq.shared`, so any content based on them automatically includes `cq.shared`. However, if you decide to create your own content pages from scratch without basing them on sample content, you must make sure to include the `cq.shared` namespace.
 >
@@ -312,9 +308,9 @@ To create a new template based on an existing template:
 
 ## Making an Existing Template Available {#making-an-existing-template-available}
 
-This example illustrates how to allow a template to be used for certain content paths. The templates that are available to the page author when creating new pages are determined by the logic defined in [Template Availability](/help/sites-developing/templates.md#template-availability).
+This example illustrates how to allow a template to be used for certain content paths. The templates that are available to the page author when creating pages are determined by the logic defined in [Template Availability](/help/sites-developing/templates.md#template-availability).
 
 1. In CRXDE Lite, navigate to the template you want to use for your page, for example, the Newsletter template.
-1. Change the `allowedPaths` property and other properties used for [template availabillity](/help/sites-developing/templates.md#template-availability). For example, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` means that this template is allowed in any path under `/content/geometrixx-outdoors`.
+1. Change the `allowedPaths` property and other properties used for [template availability](/help/sites-developing/templates.md#template-availability). For example, `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` means that this template is allowed in any path under `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
