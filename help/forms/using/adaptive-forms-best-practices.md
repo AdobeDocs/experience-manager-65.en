@@ -12,6 +12,8 @@ exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 ---
 # Best practices for working with adaptive forms {#best-practices-for-working-with-adaptive-forms}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
 ## Overview {#overview}
 
 Adobe Experience Manager (AEM) forms can help you transform complex transactions into simple, delightful digital experiences. However, it requires concerted effort to implement, build, execute, and maintain an efficient and productive AEM Forms ecosystem.
