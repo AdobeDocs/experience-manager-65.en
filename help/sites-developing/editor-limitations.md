@@ -1,19 +1,15 @@
 ---
 title: Editor Limitations
-seo-title: Editor Limitations
-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
-seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
-uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
+description: The editor in the touch-enabled UI uses overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
 ---
 # Editor Limitations{#editor-limitations}
 
-The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers. This page summarizes these limitations and provides solutions or work-arounds where possible.
+The editor in the touch-enabled UI uses overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers. This page summarizes these limitations and provides solutions or work-arounds where possible.
 
 ## Functional Limitations {#functional-limitations}
 
@@ -27,7 +23,7 @@ When [editing a page](/help/sites-authoring/editing-content.md), links are not a
 
 ### Structure Pages {#structure-pages}
 
-Pages can not be named `structure`. Pages that are named `structure` will not be editable in the page editor.
+Pages cannot be named `structure`. Pages that are named `structure` are not editable in the page editor.
 
 ## CSS Limitations {#css-limitations}
 
@@ -37,15 +33,15 @@ A developer may encounter the following limitations with the editor's interactio
 
 Absolutely positioned elements can cause issues in the position of their overlay.
 
-* If this happens, make sure that the dimensions of the absolutely positioned element are correct because the editor will create an overlay with the exact same dimensions.
+* If this happens, make sure that the dimensions of the absolutely positioned element are correct because the editor creates an overlay with the exact same dimensions.
 
 ### vh Units {#vh-units}
 
-`vh` units are not supported because the iframe height must be automatically adjusted by AEM.
+`vh` units are not supported because the iframe height must be automatically adjusted by Adobe Experience Manager (AEM).
 
 ### Fixed Background Images {#fixed-background-images}
 
-Fixed background images may not be displayed as fixed when scrolling due to the fact that it is embeded within an iframe.
+Fixed background images may not be displayed as fixed when scrolling because it is embedded within an iframe.
 
 * Selecting **View Page as Published** in the header bar actions displays the page properly.
 
@@ -53,7 +49,7 @@ Fixed background images may not be displayed as fixed when scrolling due to the 
 
 100% height is not supported on a page's body element.
 
-* A work-around is possible in order to implement a fullscreen body by "stretching" the body element as follows:
+* A work-around is possible to implement a fullscreen body by "stretching" the body element as follows:
 
 ```xml
 body {

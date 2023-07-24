@@ -1,20 +1,16 @@
 ---
-title: AEM Components - The Basics
-seo-title: AEM Components - The Basics
-description: When you start to develop new components you need to understand the basics of their structure and configuration
-seo-description: When you start to develop new components you need to understand the basics of their structure and configuration
-uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
+title: Adobe Experience Manager Components - The Basics
+description: When you start to develop new components, you need to understand the basics of their structure and configuration.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 ---
-# AEM Components - The Basics{#aem-components-the-basics}
+# Adobe Experience Manager (AEM) Components - The Basics{#aem-components-the-basics}
 
-When you start to develop new components you need to understand the basics of their structure and configuration.
+When you start to develop new components, you need to understand the basics of their structure and configuration.
 
 This process involves reading the theory and looking at the wide range of component implementations in a standard AEM instance. This latter approach is slightly complicated by the fact that although AEM has shifted to a new standard, modern, touch-enabled UI, it continues to support the classic UI.
 
@@ -24,26 +20,26 @@ This section covers key concepts and issues as an introduction to the details ne
 
 ### Planning {#planning}
 
-Before starting to actually configure or code your component you should ask:
+Before starting to actually configure or code your component, you should ask:
 
 * What exactly do you need the new component to do?
-  * A clear specification helps at all stages of development, testing and handover. Details may change over time, but the specification can be updated (though changes should be documented too).
+  * A clear specification helps at all stages of development, testing, and handover. Details may change over time, but the specification can be updated (though changes should be documented too).
 * Do you need to create your component from scratch, or can you inherit the basics from an existing component?
   * There is no need to reinvent the wheel.
-  * There are several mechanisms provided by AEM to allow you to inherit and extend details from another component definition including override, overlay, and the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
-* Will your component require logic to select/manipulate the content?
+  * There are several mechanisms provided by AEM that lets you inherit and extend details from another component definition including override, overlay, and the [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md).
+* Does your component require logic to select or manipulate the content?
   * Logic should be kept separate from the user interface layer. HTL is designed to help ensure this happens.
-* Will your component need CSS formatting?
+* Does your component need CSS formatting?
   * CSS formatting should be kept separate from the component definitions. Define conventions for naming your HTML elements so that you can modify them through external CSS files.
-* What security aspects should I take into consideration?
-  * See [Security Checklist - Development Best Practices](/help/sites-administering/security-checklist.md#development-best-practices) for further details.
+* What security aspects should I consider?
+  * See [Security Checklist - Development Best Practices](/help/sites-administering/security-checklist.md#development-best-practices) for more details.
 
 ### Touch-Enabled vs Classic UI {#touch-enabled-vs-classic-ui}
 
-Before any serious discussion starts about developing components you need to know which UI your authors will be using:
+Before any serious discussion starts about developing components, you must know which UI your authors are using:
 
 * **Touch-Enabled UI**
-  [The standard user interface](/help/sites-developing/touch-ui-concepts.md) is based on the unified user experience for the Adobe Marketing Cloud, using the underlying technologies of [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) and [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+  [The standard user interface](/help/sites-developing/touch-ui-concepts.md) is based on the unified user experience for the Adobe Experience Cloud, using the underlying technologies of [Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) and [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **Classic UI**
   User interface based on ExtJS technology that was deprecated with AEM 6.4.
 
@@ -51,23 +47,23 @@ See [UI Interface Recommendations for Customers](/help/sites-deploying/ui-recomm
 
 Components can be implemented to support the touch-enabled UI, the classic UI or both. When looking at a standard instance you will also see out-of-the-box components that were originally designed for the classic UI, or the touch-enabled UI, or both.
 
-For this reason we will cover the basics of both, and how to recognize them, on this page.
+The basics of both are covered on this page, and how to recognize them.
 
 >[!NOTE]
 >
->Adobe recommends leveraging the touch-enabled UI to benefit from the latest technology. [AEM Modernization Tools](modernization-tools.md) can make a migration easier.
+>Adobe recommends using the touch-enabled UI to benefit from the latest technology. [AEM Modernization Tools](modernization-tools.md) can make a migration easier.
 
 ### Content Logic and Rendering Markup  {#content-logic-and-rendering-markup}
 
-It is recommended to keep the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
+Adobe recommends keeping the code responsible for markup and rendering separate from the code that controls the logic used to select the component's content.
 
-This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure a real programming language is used to define the underlying business logic. This (optional) logic is invoked from HTL with a specific command. This mechanism highlights the code that is called for a given view and, if required, allows specific logic for different views of the same component.
+This philosophy is supported by [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), a templating language that is purposely limited to ensure that a real programming language is used to define the underlying business logic. This (optional) logic is invoked from HTL with a specific command. This mechanism highlights the code that is called for a given view and, if necessary, allows specific logic for different views of the same component.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTL is an HTML templating language introduced with AEM 6.0.
 
-The discussion of whether to use [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) or JSP (Java Server Pages) when developing your own components should be straightforward as HTL is now the recommended scripting language for AEM.
+The discussion of whether to use [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) or JSP (Java&trade; Server Pages) when developing your own components should be straightforward as HTL is now the recommended scripting language for AEM.
 
 Both HTL and JSP can be used for developing components for both the classic and the touch-enabled UI. Although there can be a tendency to assume that HTL is only for the touch-enabled UI and JSP for the classic UI, this is a misconception and more due to timing. The touch-enabled UI and HTL were incorporated into AEM over approximately the same period. Since HTL is now the recommended language, it is being used for new components, which tend to be for the touch-enabled UI.
 
@@ -77,7 +73,7 @@ Both HTL and JSP can be used for developing components for both the classic and 
 
 ### Developing Your Own Components {#developing-your-own-components}
 
-To create your own components for the appropriate UI see (after reading this page):
+To create your own components for the appropriate UI, see (after reading this page):
 
 * [AEM Components for the Touch-Enabled UI](/help/sites-developing/developing-components.md)
 * [AEM Components for the Classic UI](/help/sites-developing/developing-components-classic.md)
@@ -97,7 +93,7 @@ Use the following tools to move your components to the publish instance:
 
 >[!NOTE]
 >
->These mechanisms can also be used for transferring your component between other instances for example, from your development to your test instance.
+>These mechanisms can also be used for transferring your component between other instances, for example, from your development to your test instance.
 
 ### Components to be Aware of from the Start {#components-to-be-aware-of-from-the-start}
 
@@ -131,7 +127,7 @@ The structure of an AEM component is powerful and flexible, the main considerati
 A key element of the structure is the resource type.
 
 * Content structure declares intentions.
-* Resource type implement them.
+* Resource type implements them.
 
 This is an abstraction that helps ensure that even when the look and feel changes over time, the intention stays the time.
 
@@ -155,7 +151,7 @@ The definition of a component can be broken down as follows:
 
   * jcr properties:
 
-    A list of jcr properties; these are variable and some may be optional though the basic structure of a component node, its properties and subnodes are defined by the `cq:Component` definition
+    A list of jcr properties; these are variable and some may be optional though the basic structure of a component node, its properties, and subnodes are defined by the `cq:Component` definition
 
   * Resources:
 
@@ -196,36 +192,36 @@ The definition of a component can be broken down as follows:
 
   * Classic UI:
 
-      * `dialog` ( `cq:Dialog`) - Dialog for this component. Defines the interface allowing the user to configure the component and/or edit content.
+      * `dialog` ( `cq:Dialog`) - Dialog for this component. Defines the interface that lets the user configure the component, or edit content, or both.
       * `design_dialog` ( `cq:Dialog`) - Design editing for this component.
 
 #### Component Icon in Touch UI {#component-icon-in-touch-ui}
 
 The icon or abbreviation for the component is defined via JCR properties of the component when the component is created by the developer. These properties are evaluated in the following order and the first valid property found is used.
 
-1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) to display in the component browser
+1. `cq:icon` - String property pointing to a standard icon in the [Coral UI library](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/Coral.Icon.html) to display in the component browser
     * Use the value of the HTML attribute of the Coral icon.
 1. `abbreviation` - String property to customize the abbreviation of the component name in the component browser
     * The abbreviation should be limited to two characters.
-    * Providing an empty string will build the abbreviation from first two characters of the `jcr:title` property.
+    * Providing an empty string builds the abbreviation from first two characters of the `jcr:title` property.
         * For example "Im" for "Image"
-        * The localized title will be used to build the abbreviation.
+        * The localized title is used to build the abbreviation.
     * The abbreviation is only translated if the component has an `abbreviation_commentI18n` property, which is then used as translation hint.
 1. `cq:icon.png` or `cq:icon.svg` - Icon for this component, which is shown in the component browser
     * 20 x 20 pixels is the size of icons of standard components.
-        * Larger icons will be downsized (client-side).
+        * Larger icons are downsized (client-side).
     * The recommended color is rgb(112, 112, 112) &gt; #707070
     * The background of standard component icons is transparent.
     * Only `.png` and `.svg` files are supported.
-    * If importing from the file system via Eclipse plugin, filenames need to be escaped as `_cq_icon.png` or `_cq_icon.svg` for example.
+    * If importing from the file system by way of the Eclipse plugin, filenames must be escaped as `_cq_icon.png` or `_cq_icon.svg` for example.
     * `.png` takes precedent over `.svg` if both are present
 
-If none of the above properties ( `cq:icon`, `abbreviation`, `cq:icon.png` or `cq:icon.svg`) are found on the component:
+If none of the above properties ( `cq:icon`, `abbreviation`, `cq:icon.png`, or `cq:icon.svg`) are found on the component:
 
-* The system will search for the same properties on the super components following the `sling:resourceSuperType` property.
-* If nothing or an empty abbreviation is found at the super component level, the system will build the abbreviation from the first letters of the `jcr:title` property of the current component.
+* The system searchs for the same properties on the super components following the `sling:resourceSuperType` property.
+* If nothing or an empty abbreviation is found at the super component level, the system builds the abbreviation from the first letters of the `jcr:title` property of the current component.
 
-To cancel the inheritance of icons from super components, setting an empty `abbreviation` property on the component will revert to the default behavior.
+To cancel the inheritance of icons from super components, setting an empty `abbreviation` property on the component reverts to the default behavior.
 
 The [Component Console](/help/sites-authoring/default-components-console.md#component-details) displays how the icon for a particular component is defined.
 
@@ -245,7 +241,7 @@ The [Component Console](/help/sites-authoring/default-components-console.md#comp
 
 ### Properties and Child Nodes of a Component {#properties-and-child-nodes-of-a-component}
 
-Many of the nodes/properties needed to define a component are common to both UIs, with differences remaining independent so that your component can work in both environments.
+Many of the nodes/properties that are needed to define a component are common to both UIs, with differences remaining independent so that your component can work in both environments.
 
 A component is a node of type `cq:Component` and has the following properties and child nodes:
 
@@ -314,7 +310,7 @@ A component is a node of type `cq:Component` and has the following properties an
   <tr>
    <td><code>cq:childEditConfig</code></td>
    <td><code>cq:EditConfig</code></td>
-   <td>When the component is a container, as for example a paragraph system, this drives the edit configuration of the child nodes.<br /> </td>
+   <td>When the component is a container&mdash;for example a paragraph system&mdash;it drives the edit configuration of the child nodes.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:editConfig</code></td>
@@ -334,7 +330,7 @@ A component is a node of type `cq:Component` and has the following properties an
   <tr>
    <td><code>cq:template</code></td>
    <td><code>nt:unstructured</code></td>
-   <td>If found, this node will be used as a content template when the component is added from the Components Browser or Sidekick.</td>
+   <td>If found, this node is used as a content template when the component is added from the Components Browser or Sidekick.</td>
   </tr>
   <tr>
    <td><code>cq:templatePath</code></td>
@@ -384,7 +380,7 @@ A component is a node of type `cq:Component` and has the following properties an
  </tbody>
 </table>
 
-If we look at the **Text** component (either version), we can see these elements:
+If you look at the **Text** component (either version), you can see these elements:
 
 * HTL ( `/libs/wcm/foundation/components/text`)
 
@@ -417,7 +413,7 @@ Child nodes of particular interest include:
 
 Dialogs are a key element of your component as they provide an interface for authors to configure and provide input to that component.
 
-Depending on the complexity of the component your dialog may need one or more tabs - to keep the dialog short and to sort the input fields.
+Depending on the complexity of the component, your dialog may need one or more tabs - to keep the dialog short and to sort the input fields.
 
 Dialog definitions are specific to the UI:
 
@@ -433,8 +429,8 @@ Dialog definitions are specific to the UI:
         * specific to the touch-enabled UI
         * are defined using Granite UI components
         * have a property `sling:resourceType`, as standard Sling content structure
-        * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the Help icon (the ? icon) is selected.
-            * For out-of-the box components this often references a page in the documentation.
+        * can have a property `helpPath` to define the context-sensitive help resource (absolute or relative path) that is accessed when the Help icon (the `?` icon) is selected.
+            * For out-of-the box components, this often references a page in the documentation.
             * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
 
   ![chlimage_1-242](assets/chlimage_1-242.png)
@@ -449,8 +445,8 @@ Dialog definitions are specific to the UI:
         * specific to the classic UI
         * are defined using ExtJS widgets
         * have a property `xtype`, which refers to ExtJS
-        * can have a property `helpPath` to define the context sensitive help resource (absolute or relative path) that is accessed when the **Help** button is selected.
-            * For out-of-the box components this often references a page in the documentation.
+        * can have a property `helpPath` to define the context-sensitive help resource (absolute or relative path) that is accessed when the **Help** button is selected.
+            * For out-of-the box components, this often references a page in the documentation.
             * If no `helpPath` is specified, the default URL (documentation overview page) is shown.
 
   ![chlimage_1-243](assets/chlimage_1-243.png)
@@ -466,18 +462,18 @@ Dialog definitions are specific to the UI:
 
 ### Design Dialogs {#design-dialogs}
 
-Design dialogs are very similar to the dialogs used to edit and configure content, but they provide the interface for authors to configure and provide design details for that component.
+Design dialogs are similar to the dialogs used to edit and configure content, but they provide the interface for authors to configure and provide design details for that component.
 
-[Design dialogs are available in Design Mode](/help/sites-authoring/default-components-designmode.md), though they are not needed for all components for example, **Title** and **Image** both have design dialogs, whereas **Text** does not.
+[Design dialogs are available in Design Mode](/help/sites-authoring/default-components-designmode.md), though they are not needed for all components, for example, **Title** and **Image** both have design dialogs, whereas **Text** does not.
 
 The design dialog for the paragraph system (for example, parsys) is a special case as it allows the user to specific other components to be available for selection (from the components browser or sidekick) on the page.
 
 ### Adding your Component to the Paragraph System {#adding-your-component-to-the-paragraph-system}
 
-Once a component has been defined it must be made available for use. To make a component available for use in a paragraph system you can either:
+After a component is defined, it must be made available for use. To make a component available for use in a paragraph system, you can either:
 
 1. Open [Design Mode](/help/sites-authoring/default-components-designmode.md) for a page and enable the required component.
-1. Add the required component(s) to the `components` property of your template definition under:
+1. Add the required components to the `components` property of your template definition under:
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
 
@@ -489,7 +485,7 @@ Once a component has been defined it must be made available for use. To make a c
 
 ### Components and the Content They Create {#components-and-the-content-they-create}
 
-If we create and configure an instance of the **Title** component on the page: `<content-path>/Prototype.html`
+If you create and configure an instance of the **Title** component on the page: `<content-path>/Prototype.html`
 
 * Touch-Enabled UI
 
@@ -499,32 +495,32 @@ If we create and configure an instance of the **Title** component on the page: `
 
   ![screen_shot_2012-02-01at34257pm](assets/screen_shot_2012-02-01at34257pm.png)
 
-Then we can see the structure of the content created within the repository:
+Then you can see the structure of the content created within the repository:
 
 ![screen_shot_2012-02-13at61405pm](assets/screen_shot_2012-02-13at61405pm.png)
 
 In particular, if you look at the actual text for a **Title**:
 
-* the definition (for both UIs) have the property `name`= `./jcr:title`
+* the definition (for both UIs) has the property `name`= `./jcr:title`
 
     * `/libs/foundation/components/title/cq:dialog/content/items/column/items/title`
     * `/libs/foundation/components/title/dialog/items/title`
 
 * within the content, this generates the property `jcr:title` holding the author's content.
 
-The properties defined are dependent on the individual definitions. Although they can be more complex than above they still follow the same basic principles.
+The properties defined depend on the individual definitions. Although they can be more complex than above, they still follow the same basic principles.
 
 ## Component Hierarchy and Inheritance {#component-hierarchy-and-inheritance}
 
-Components within AEM are subject to 3 different hierarchies:
+Components within AEM are subject to three different hierarchies:
 
 * **Resource Type Hierarchy**
 
-  This is used to extend components using the property `sling:resourceSuperType`. This enables the component to inherit. For example a text component will inherit various attributes from the standard component.
+  This is used to extend components using the property `sling:resourceSuperType`. This enables the component to inherit. For example, a text component inherits various attributes from the standard component.
 
     * scripts (resolved by Sling)
     * dialogs
-    * descriptions (including thumbnail images, icons, etc)
+    * descriptions (including thumbnail images, and icons)
 
 * **Container Hierarchy**
 
@@ -542,7 +538,7 @@ Components within AEM are subject to 3 different hierarchies:
 
 ## Edit Behavior {#edit-behavior}
 
-This section explains how to configure the edit behavior of a component. This includes attributes such as actions available for the component, characteristics of the inplace editor and the listeners related to events on the component.
+This section explains how to configure the edit behavior of a component. This includes attributes such as actions available for the component, characteristics of the inplace editor, and the listeners related to events on the component.
 
 The configuration is common to both the touch-enabled and classic UI, albeit with certain, specific differences.
 
@@ -551,7 +547,7 @@ The edit behavior of a component is configured by adding a `cq:editConfig` node 
 * [ `cq:editConfig` node properties](#configuring-with-cq-editconfig-properties):
 
     * `cq:actions` ( `String array`): defines the actions that can be performed on the component.
-    * `cq:layout` ( `String`): : defines how the component is edited in the classic UI.
+    * `cq:layout` ( `String`): defines how the component is edited in the classic UI.
     * `cq:dialogMode` ( `String`): defines how the component dialog is opened in the classic UI
 
         * In the touch-enabled UI, dialogs are always floating in desktop mode, and automatically opened as fullscreen in mobile.
@@ -565,7 +561,7 @@ The edit behavior of a component is configured by adding a `cq:editConfig` node 
     * `cq:dropTargets` (node type `nt:unstructured`): defines a list of drop targets that can accept a drop from an asset of the content finder
 
         * Multiple drop targets are only available in the classic UI.
-        * In the touch-enabled UI a single drop target is allowed.
+        * In the touch-enabled UI, a single drop target is allowed.
 
     * `cq:actionConfigs` (node type `nt:unstructured`): defines a list of new actions that are appended to the cq:actions list.
     * `cq:formParameters` (node type `nt:unstructured`): defines additional parameters that are added to the dialog form.
@@ -600,7 +596,7 @@ There are many existing configurations in the repository. You can easily search 
 
 ### Component Placeholders {#component-placeholders}
 
-Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case the authors won't be able to select and interact with the empty component.
+Components must always render some HTML that is visible to the author, even when the component has no content. Otherwise, it might visually disappear from the editor's interface, making it technically present but invisible on the page and in the editor. In such a case, the authors won't be able to select and interact with the empty component.
 
 For this reason, components should render a placeholder as long as they don't render any visible output when the page is rendered in the page editor (when the WCM mode is `edit` or `preview`).
 The typical HTML markup for a placeholder is the following:
@@ -657,15 +653,15 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
   </tr>
       <tr>
     <td><code>editannotate</code></td>
-    <td>Adds a button to edit the component as well as allowing <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
+    <td>Adds a button to edit the component and allowing <a href="/help/sites-authoring/annotations.md">annotations</a>.</td>
    </tr>
   <tr>
    <td><code>delete</code></td>
-   <td>Adds a button to delete the component</td>
+   <td>Adds a button to delete the component.</td>
   </tr>
   <tr>
    <td><code>insert</code></td>
-   <td>Adds a button to insert a new component before the current one</td>
+   <td>Adds a button to insert a new component before the current one.</td>
   </tr>
   <tr>
    <td><code>copymove</code></td>
@@ -674,7 +670,7 @@ The `cq:actions` property ( `String array`) defines one or several actions that 
  </tbody>
 </table>
 
-The following configuration adds an edit button, a spacer, a delete and an insert button to the component edit bar:
+The following configuration adds an edit button, a spacer, a delete, and an insert button to the component edit bar:
 
 ```
 <jcr:root xmlns:cq="https://www.day.com/jcr/cq/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0"
@@ -704,15 +700,15 @@ The `cq:layout` property ( `String`) defines how the component can be edited in 
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>Default value. The component edition is accessible "on mouse over" through clicks and/or context menu.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditRollover</code>.</td>
+   <td>Default value. The component edition is accessible "on mouse over" through clicks and/or context menu.<br /> For advanced use, the corresponding client-side object is: <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>The component edition is accessible through a toolbar.<br /> For advanced use, note that the corresponding client side object is: <code>CQ.wcm.EditBar</code>.</td>
+   <td>The component edition is accessible through a toolbar.<br /> For advanced use, note that the corresponding client-side object is: <code>CQ.wcm.EditBar</code>.</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
-   <td>The choice is left to the client side code.</td>
+   <td>The choice is left to the client-side code.</td>
   </tr>
  </tbody>
 </table>
@@ -733,7 +729,7 @@ The following configuration adds an edit button to the component edit bar:
 
 ### cq:dialogMode (Classic UI Only) {#cq-dialogmode-classic-ui-only}
 
-The component can be linked to an edit dialog. The `cq:dialogMode` property ( `String`) defines how the component dialog will be opened in the classic UI. The following values are available:
+The component can be linked to an edit dialog. The `cq:dialogMode` property ( `String`) defines how the component dialog is opened in the classic UI. The following values are available:
 
 <table>
  <tbody>
@@ -751,7 +747,7 @@ The component can be linked to an edit dialog. The `cq:dialogMode` property ( `S
   </tr>
   <tr>
    <td><code>auto</code></td>
-   <td>If the component width is smaller than the client side <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> value, the dialog is floating, otherwise it is inline.</td>
+   <td>If the component width is smaller than the client-side <code>CQ.themes.wcm.EditBase.INLINE_MINIMUM_WIDTH</code> value, the dialog is floating, otherwise it is inline.</td>
   </tr>
  </tbody>
 </table>
@@ -785,7 +781,7 @@ The `dialogLayout` property defines how a dialog should open by default.
 
 * A value of `fullscreen` opens the dialog in full screen.
 * An empty value or absence of the property defaults to opening the dialog normally.
-* Note that the user can always toggle the fullscreen mode within the dialog.
+* The user can always toggle the fullscreen mode within the dialog.
 * Does not apply to the classic UI.
 
 ### Configuring with cq:EditConfig Child Nodes {#configuring-with-cq-editconfig-child-nodes}
@@ -798,7 +794,7 @@ The `cq:dropTargets` node (node type `nt:unstructured`) defines a list of drop t
 >
 >Multiple drop targets are only available in the classic UI.
 >
->In the touch-enabled UI only the first target will be used.
+>In the touch-enabled UI, only the first target is used.
 
 Each child node of type `cq:DropTargetConfig` defines a drop target in the component. The node name is important because it must be used in the JSP, as follows, to generate the CSS class name assigned to the DOM element that is the effective drop target:
 
@@ -807,7 +803,7 @@ Each child node of type `cq:DropTargetConfig` defines a drop target in the compo
  <node name of the drop target in the edit configuration>
 ```
 
-The `<drag and drop prefix>` is defined by the Java property:
+The `<drag and drop prefix>` is defined by the Java&trade; property:
 
 `com.day.cq.wcm.api.components.DropTarget.CSS_CLASS_PREFIX`.
 
@@ -816,7 +812,7 @@ For example, the class name is defined as follows in the JSP of the Download com
 
 `String ddClassName = DropTarget.CSS_CLASS_PREFIX + "file";`
 
-The node of type `cq:DropTargetConfig` needs to have the following properties:
+The node of type `cq:DropTargetConfig` must have the following properties:
 
 <table>
  <tbody>
@@ -918,7 +914,7 @@ The `cq:inplaceEditing` node (node type `cq:InplaceEditingConfig`) defines an in
    <td><code>editorType</code></td>
    <td><p>(<code>String</code>) Editor type. The available types are:</p>
     <ul>
-     <li>plaintext: to be used for non HTML content.<br /> </li>
+     <li>plaintext: to be used for non-HTML content.<br /> </li>
      <li>title: is an enhanced plaintext editor that converts graphical titles into a plaintext before editing begins. Used by the Geometrixx title component.<br /> </li>
      <li>text: to be used for HTML content (uses the Rich Text Editor).<br /> </li>
     </ul> </td>
@@ -1019,7 +1015,7 @@ The `cq:listeners` node (node type `cq:EditListenersConfig`) defines what happen
 
 >[!NOTE]
 >
->In the case of nested components there are certain restrictions on actions defined as properties on the `cq:listeners` node:
+>If there are nested components, there are certain restrictions on actions defined as properties on the `cq:listeners` node:
 >
 >* For nested components, the values of the following properties *must* be `REFRESH_PAGE`: >
 >  * `aftermove`
@@ -1035,9 +1031,9 @@ The following example is equivalent to the `REFRESH_INSERTED` configuration:
 
 >[!NOTE]
 >
->For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
+>For the classic UI, to see which parameters can be used in the handlers, refer to the `before<action>` and `after<action>` events section of the [ `CQ.wcm.EditBar`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditBar) and [ `CQ.wcm.EditRollover`](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.EditRollover) widget documentation.
 
-With the following configuration the page is refreshed after the component has been deleted, edited, inserted or moved:
+With the following configuration, the page is refreshed after the component is deleted, edited, inserted, or moved:
 
 ```
     <cq:listeners

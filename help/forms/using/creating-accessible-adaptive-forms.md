@@ -14,6 +14,8 @@ exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 ---
 # Creating accessible adaptive forms{#creating-accessible-adaptive-forms}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
 ## Introduction {#introduction}
 
 An accessible form is a form that everyone can use, including users with special needs. Adaptive Forms include a number of features and capabilities that enhance the usability for users with different abilities. Building accessibility into adaptive forms not only allows the widest possible audience for content, but also it is a requirement when supplying documents in geographies where compliance with accessibility standards is mandated. AEM Forms help form developers comply with the accessibility standards.

@@ -232,8 +232,8 @@ You can send the servlet a chain of certificates by repeating the certificateFil
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Once you have executed the command, verify that all the certificates made it to the keystore. Check the keystore from:
-[http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+Once you have executed the command, verify that all the certificates made it to the keystore. Check the **Keystore** entries from:
+[http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Enabling a TLS 1.3 Connection {#enabling-tls-connection}
 
