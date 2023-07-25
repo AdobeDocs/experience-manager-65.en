@@ -20,7 +20,6 @@ exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 | AEM 6.5     | This article         |
 
 
-
 Adobe Experience Manager (AEM) lets you create easy-to-use adaptive forms that offer dynamic experiences to end users. The form layout controls how items or components are displayed in an adaptive form.
 
 ## Prerequisite knowledge {#prerequisite-knowledge}
