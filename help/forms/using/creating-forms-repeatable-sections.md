@@ -12,6 +12,8 @@ exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
 ---
 # Creating forms with repeatable sections {#creating-forms-with-repeatable-sections}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
 Repeatable sections are panels that can be added or removed to a form dynamically.
 
 For example, while applying for a job, the job seeker provides previous employment details such as company name, role, project, and other information. Information of all the employers requires different but similar looking sections. In such a scenario, the employment form provides an employer section and also provides an option to dynamically add more such sections. These sections, which are added dynamically, are known as Repeatable sections.

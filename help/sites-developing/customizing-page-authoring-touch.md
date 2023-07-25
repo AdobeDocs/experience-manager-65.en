@@ -1,14 +1,10 @@
 ---
 title: Customizing Page Authoring
-seo-title: Customizing Page Authoring
-description: AEM provides various mechanisms to enable you to customize page authoring functionality
-seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
-uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
+description: Adobe Experience Manager (AEM) provides various mechanisms to let you customize page authoring functionality.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 ---
 # Customizing Page Authoring{#customizing-page-authoring}
@@ -17,11 +13,11 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 >
 >This document describes how to customize page authoring in the modern, touch-enabled UI and does not apply to the classic UI.
 
-AEM provides various mechanisms to enable you to customize the page authoring functionality (and the [consoles](/help/sites-developing/customizing-consoles-touch.md)) of your authoring instance.
+Adobe Experience Manager (AEM) provides various mechanisms to let you customize the page authoring functionality (and the [consoles](/help/sites-developing/customizing-consoles-touch.md)) of your authoring instance.
 
 * Clientlibs
 
-  Clientlibs allow you to extend the default implementation to realize new functionality, while reusing the standard functions, objects, and methods. When customizing, you can create your own clientlib under `/apps.` The new clientlib must:
+  Clientlibs let you extend the default implementation to realize new functionality, while reusing the standard functions, objects, and methods. When customizing, you can create your own clientlib under `/apps.` The new clientlib must:
 
     * depend on the authoring clientlib `cq.authoring.editor.sites.page`
     * be part of the appropriate `cq.authoring.editor.sites.page.hook` category
@@ -32,30 +28,30 @@ AEM provides various mechanisms to enable you to customize the page authoring fu
 
 >[!NOTE]
 >
->For further information see the [JS documentation set](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>For more information, see [JS documentation set](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-These can be used in many ways to extend the page authoring functionality in your AEM instance. A selection are covered below (at a high level).
+These can be used in many ways to extend the page authoring functionality in your AEM instance. A selection is covered below (at a high level).
 
 >[!NOTE]
 >
->For further information see:
+>For more information see the following:
 >
 >* Using and creating [clientlibs](/help/sites-developing/clientlibs.md).
 >* Using and creating [overlays](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-structure.md) for details of the structural areas used for page authoring.
 >
 
 
 >[!CAUTION]
 >
->You ***must*** not change anything in the `/libs` path.
+>***Do not*** change anything in the `/libs` path.
 >
->This is because the content of `/libs` is overwritten the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
+>The reason is because the content of `/libs` is overwritten, the next time you upgrade your instance (and may well be overwritten when you apply either a hotfix or feature pack).
 >
 >The recommended method for configuration and other changes is:
 >
->1. Recreate the required item (i.e. as it exists in `/libs`) under `/apps`
+>1. Recreate the required item (that is, as it exists in `/libs`) under `/apps`
 >1. Make any changes within `/apps`
 
 ## Add New Layer (Mode) {#add-new-layer-mode}
@@ -64,9 +60,9 @@ When you are editing a page, there are various [modes](/help/sites-authoring/aut
 
 ### Layer Example: Live Copy Status {#layer-example-live-copy-status}
 
-A standard AEM instance provides the MSM layer. This accesses data related to [multi site management](/help/sites-administering/msm.md) and highlights it in the layer.
+A standard AEM instance provides the MSM layer. This accesses data related to [multisite management](/help/sites-administering/msm.md) and highlights it in the layer.
 
-To see it in action you may edit any [We.Retail language copy](/help/sites-developing/we-retail-globalized-site-structure.md) page (or any other live copy page) and select the **Live Copy Status** mode.
+To see it in action, you may edit any [We.Retail language copy](/help/sites-developing/we-retail-globalized-site-structure.md) page (or any other live copy page) and select the **Live Copy Status** mode.
 
 You can find the MSM layer definition (for reference) in:
 
@@ -74,7 +70,7 @@ You can find the MSM layer definition (for reference) in:
 
 ### Code Sample {#code-sample}
 
-This is a sample package showing how to create a new layer (mode), which is a new layer for MSM view.
+This is a sample package showing how to create a layer (mode), which is a new layer for MSM view.
 
 CODE ON GITHUB
 
@@ -85,11 +81,11 @@ You can find the code of this page on GitHub
 
 ## Add New Selection Category to Asset Browser {#add-new-selection-category-to-asset-browser}
 
-The asset browser shows assets of various types/categories (for example, image, documents, etc). The assets can also be filtered by these asset categories.
+The asset browser shows assets of various types/categories (for example, images and documents). The assets can also be filtered by these asset categories.
 
 ### Code Sample {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` is a sample package showing how to add a new group to the asset finder. This example connects to [Flickr](https://www.flickr.com)'s public stream and shows them in the sidepanel.
+`aem-authoring-extension-assetfinder-flickr` is a sample package showing how to add a group to the asset finder. This example connects to [Flickr](https://www.flickr.com)'s public stream and shows them in the side panel.
 
 CODE ON GITHUB
 
@@ -100,11 +96,11 @@ You can find the code of this page on GitHub
 
 ## Filtering Resources {#filtering-resources}
 
-When authoring pages, the user must often select from resources (for example, pages, components, assets, etc.). This can take the form of a list for example from which the author must choose an item.
+When authoring pages, the user must often select from resources (for example, pages, components, and assets). This can take the form of a list, for example,  from which the author must choose an item.
 
-In order to keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
+To keep the list to a reasonable size and also relevant to the use case, a filter can be implemented in the form of a custom predicate. For example, if the [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) component is used to allow the user to select the path to a particular resource, the paths presented can be filtered in the following way:
 
-* Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
+* Implement the custom predicate by implementing [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Specify a name for the predicate, and refer that name when using the `pathbrowser`.
 
 For further detail on creating a custom predicate, see [this article](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -117,7 +113,7 @@ For further detail on creating a custom predicate, see [this article](/help/site
 
 ## Add New Action to a Component Toolbar {#add-new-action-to-a-component-toolbar}
 
-Each components (usually) has a toolbar that provides access to a range of actions that can be taken on that component.
+Each component (usually) has a toolbar that provides access to a range of actions that can be taken on that component.
 
 ### Code Sample {#code-sample-2}
 
@@ -151,11 +147,11 @@ In a standard AEM installation:
 
             * property: `editorType`
 
-              Defines the type of inline editor that will be used when the in-place editing is triggered for that component; for example, `text`, `textimage`, `image`, `title`.
+              Defines the type of inline editor that is used when the in-place editing is triggered for that component; for example, `text`, `textimage`, `image`, `title`.
 
-1. Additional configuration details of the editor can be configured using a `config` node containing configurations as well as a further `plugin` node to contain necessary plugin configuraiton details.
+1. Additional configuration details of the editor can be configured using a `config` node containing configurations and a `plugin` node to contain necessary plugin configuraiton details.
 
-   The following is an example of defining aspect ratios for the image cropping plugin of the image component. Note that because of the potential of very limited screen size, the crop apect ratios were moved to full screen editor and can only be seen there.
+   The following is an example of defining aspect ratios for the image cropping plugin of the image component. Because of the potential of limited screen size, the crop aspect ratios were moved to full screen editor and can only be seen there.
 
    ```xml
    <cq:inplaceEditing
@@ -179,7 +175,7 @@ In a standard AEM installation:
 
    >[!CAUTION]
    >
-   >Note that in AEM crop ratios, as set by the `ratio` property, are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatability reasons. The authoring users will not be aware of any difference provided you define the `name` property clearly since this is what is displayed in the UI.
+   >AEM crop ratios, as set by the `ratio` property, are defined as **height/width**. This differs from the conventional definition of width/height and is done for legacy compatibility reasons. The authoring users will not be aware of any difference provided you define the `name` property clearly since this is what is displayed in the UI.
 
 #### Creating a New In-Place Editor {#creating-a-new-in-place-editor}
 
@@ -203,7 +199,7 @@ To implement a new in-place editor (within your clientlib):
 
 #### Code Sample for Creating a New In-Place Editor {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` is a sample package showing how to create new in-place editor in AEM.
+`aem-authoring-extension-inplace-editor` is a sample package showing how to create an in-place editor in AEM.
 
 CODE ON GITHUB
 
@@ -237,9 +233,9 @@ The out-of-the-box workflow, **Request for Activation**:
 
 * Will automatically appear on the appropriate menu when a content author **does not have** the appropriate replication rights, but **does have** membership of DAM-Users and Authors. 
 
-* Otherwise nothing will be displayed, as replication rights have been removed.
+* Otherwise, nothing is displayed, as replication rights have been removed.
 
-To have customized behavior upon such activation you can overlay the **Request for Activation** workflow:
+To have customized behavior on such activation, you can overlay the **Request for Activation** workflow:
 
 1. In `/apps` overlay the **Sites** wizard:
 
