@@ -47,6 +47,7 @@ Some of the key features and improvements in this release are the following:
 ## Enhancements in Service Pack 17 {#enhancements-sp17}
 
 ### Forms{#aem-forms-6517} 
+
 * **[Adaptive Forms within AEM Page Editor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: You can now use AEM Page Editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can:
     * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor or Experience Fragments.
     * Use the Adaptive Forms Wizard within AEM Sites editor so you can create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
