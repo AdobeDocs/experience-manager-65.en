@@ -44,8 +44,9 @@ Some of the key features and improvements in this release are the following:
 * **DASH streaming with Dynamic Media** - New protocol (DASH - Dynamic Adaptive Streaming over HTTP) support launched for Adaptive streaming in Dynamic Media video delivery (with CMAF enabled). Available now for all regions, [enabled by way of a support ticket](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
 * **Integration of Experience Manager Sites and Content Fragments with Assets Next-Generation Dynamic Media** - Users of Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media can now use those cloud-hosted assets for authoring and delivery with on-premise or Managed Services instances of Experience Manager Sites 6.5. 
 
-**AEM Forms**
+## Enhancements in Service Pack 17 {#enhancements-sp17}
 
+### Forms{#aem-forms-6517} 
 * **[Adaptive Forms within AEM Page Editor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: You can now use AEM Page Editor to quickly create and add multiple forms to your sites pages. This capability allows content authors to create seamless data capture experiences within Sites pages using the power of adaptive forms components including dynamic behavior, validations, data integration, generate document of record and business process automation. You can:
     * Create an Adaptive Form by dragging and dropping form components to Adaptive Forms Container Component in AEM Sites editor or Experience Fragments.
     * Use the Adaptive Forms Wizard within AEM Sites editor so you can create forms independent of any Sites page, providing you the freedom to reuse such forms across multiple pages.
@@ -58,7 +59,47 @@ Some of the key features and improvements in this release are the following:
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets]{#assets-6517}
+## Fixed issues in Service Pack 17 {#fixed-issues}
+
+### [!DNL Sites]{#sites-6517}
+
+* Performance drop in LinkCheckerTransformer. (SITES-11661)
+* Language copies of a page were not getting updated as expected. (SITES-11191)
+* Opening non-campaign pages call `targeteditor.html` unnecessarily. Remove the `targeteditor` call when not needed. (SITES-12469)
+* Live copies cannot be created for pages with annotations. (SITES-12154)
+* Rollout of pages is not working on Experience Manager 6.5.16. (SITES-12008)
+* Out of memory; high garbage collection activity due to `NotificationManagerImpl`. `NotificationManager` bundle upgrade to Experience Manager 6.5. (SITES-11440)
+* Fixed WCM IT tests that were blocking service pack 17. (SITES-13089)
+* Retrieving Sites references fails on servlet. (SITES-10901)
+
+#### Admin User Interface{#sites-adminui-6517}
+
+* The preview window for the thumbnail image selector cannot be closed. (SITES-10459)
+
+#### [!DNL Content Fragments]{#sites-contentfragments-6517}
+
+* Configuration for connecting to Polaris service object (URL, credentials, callback, and so on). (SITES-12149)
+* Usage of `SemanticDataType.REFERENCE` should support "Remote-Asset-IDs". (SITES-12127)
+* Integrate Polaris Asset Selector into Content Fragment editor. (SITES-12125)
+* A mandatory http header was necessary to access the metadata service endpoint. (SITES-13068)
+* The GraphQL implementation of 6.5 was not on par with Cloud Service (primary)); identified issues were fixed. (SITES-13096)
+* GraphQL paging/sorting and hybrid filtering should be available on Experience Manager 6.5/AMS. (SITES-9154)
+
+#### Core Components{#sites-core-components-6517}
+
+* The property `cq-msm-lockable` has the wrong redirect value in the Foundation page component. (SITES-10904)
+* Remote Asset Picker always redirects to IMS stage environment. (SITES-13433)
+
+#### [!DNL Experience Fragments]{#sites-experiencefragments-6517}
+
+* Selecting an Externalizer configuration in an Experience Fragment when you export to Adobe Target causes the incorrect externalized URL to be sent. (SITES-12402)
+* Remove non-inclusive terms; apply inclusive terms guidelines. (SITES-11244)
+
+#### Page Editor{#sites-pageeditor-6517}
+
+* No thumbnail is displayed for a carousel set in the Experience Manager content finder side rail. (SITES-8593)
+
+### [!DNL Assets]{#assets-6517}
 
 * When you publish more than 40 PDFs simultaneously, [!DNL Experience Manager] stops responding and becomes unavailable for some time. (ASSETS-21789)
 * If you are logged in as a test user, you cannot see the Assets related to a particular Asset when you click properties of an Asset. (ASSETS-21648)
@@ -86,7 +127,7 @@ Some of the key features and improvements in this release are the following:
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
 * When you navigate to `Smart Crop` option, the screen reader does not announce the expand or collapse state of the button. (ASSETS-17335)-->
 
-## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
+#### [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
 * Connection to Dynamic Media is broken when a Dynamic Media Cloud Configuration exists already. (ASSETS-23057)
 * Increased performance while browsing folders with lot of Dynamic Media videos and resolved fail to load issue on folder card view. (ASSETS-23016)
@@ -98,11 +139,7 @@ Some of the key features and improvements in this release are the following:
 * Image Profile user interface restricted for smart crops with the same name, or same dimension, or both. (ASSETS-16997)
 * Default width and height now set to 50 pixels for Smart Crops on Image Profile user interface. (ASSETS-16997)
 
-## [!DNL Commerce]{#commerce-6517}
-
-* Moved tags are garbage collected but are still referenced by products under `/var`. (CQ-4351337)
-
-## [!DNL Forms]{#forms-6517}
+### [!DNL Forms]{#forms-6517}
 
 * After updating to AEM 6.5.15.0 Service Pack, the HTML5 forms are not functioning or loading properly in Edge browser with IE compatibility mode. (FORMS-8526, FORMS-8523)
 * When a user applies AEM 6.5.16.0 Service Pack, the rule editor fails to open. (FORMS-8290)
@@ -140,14 +177,19 @@ Some of the key features and improvements in this release are the following:
 * When a user tries to invoke an LCA Process with a PDF that comprises the `Chinese Full Width Characters`, an issue occurs with the `ValidateForm` process. (FORMS-7464)
 * In Experience Manager Forms Designer, XMLFM generates ZPL output with different paper sizes, such as letter, A4, and A5, for XDP-based templates. (FORMS-7898)
 
+### [!DNL Commerce]{#commerce-6517}
 
-## Integrations{#integrations-6517}
+* Moved tags are garbage collected but are still referenced by products under `/var`. (CQ-4351337)
+
+### Foundation{#foundation-6517}
+
+#### Integrations{#integrations-6517}
 
 * When converting an Adobe Target IMS configuration to a User credential one in legacy cloud configurations, the `connectedWhen` property does not change. This issue makes all the calls go as if the configuration was still IMS-based. (CQ-4352810)
 * Adding `modifyProperties` permission to `fd-cloudservice` system user for Adobe Sign configuration. (FORMS-6164)
 * With Experience Manager integrated with Adobe Target, when you create an AB test activity, it does not synch up the audiences associated with it, to Target. (NPR-40085)
 
-## Oak{#oak-6517}
+#### Oak{#oak-6517}
 
 From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
 
@@ -177,59 +219,21 @@ To resolve this exception, do the following:
 1. Install the Service Pack, or restart Experience Manager as a Cloud Service. 
 New folders of `cache` and `diff-cache` are automatically created and you no longer experience an exception related to `mvstore` in the `error.log`.
 
-## Platform{#platform-6517}
+#### Platform{#platform-6517}
 
 * In the Experience Manager Tag Management user interface (/aem/tags/), the namespaces, and tags appear in the order they are created. However, when there are many namespaces and tags, the ability to view and manage them is difficult. This issue is because they cannot be sorted in any other way. (NPR-39620)
 * Google closure version update needed because Minification js is not working for some client libraries. (NPR-40043)
 
-## [!DNL Sites]{#sites-6517}
-
-* Performance drop in LinkCheckerTransformer. (SITES-11661)
-* Language copies of a page were not getting updated as expected. (SITES-11191)
-* Opening non-campaign pages call `targeteditor.html` unnecessarily. Remove the `targeteditor` call when not needed. (SITES-12469)
-* Live copies cannot be created for pages with annotations. (SITES-12154)
-* Rollout of pages is not working on Experience Manager 6.5.16. (SITES-12008)
-* Out of memory; high garbage collection activity due to `NotificationManagerImpl`. `NotificationManager` bundle upgrade to Experience Manager 6.5. (SITES-11440)
-* Fixed WCM IT tests that were blocking service pack 17. (SITES-13089)
-* Retrieving Sites references fails on servlet. (SITES-10901)
-
-### [!DNL Sites] - Admin User Interface{#sites-adminui-6517}
-
-* The preview window for the thumbnail image selector cannot be closed. (SITES-10459)
-
-### [!DNL Sites] - [!DNL Content Fragments]{#sites-contentfragments-6517}
-
-* Configuration for connecting to Polaris service object (URL, credentials, callback, and so on). (SITES-12149)
-* Usage of `SemanticDataType.REFERENCE` should support "Remote-Asset-IDs". (SITES-12127)
-* Integrate Polaris Asset Selector into Content Fragment editor. (SITES-12125)
-* A mandatory http header was necessary to access the metadata service endpoint. (SITES-13068)
-* The GraphQL implementation of 6.5 was not on par with Cloud Service (primary)); identified issues were fixed. (SITES-13096)
-* GraphQL paging/sorting and hybrid filtering should be available on Experience Manager 6.5/AMS. (SITES-9154)
-
-### [!DNL Sites] - Core Components{#sites-core-components-6517}
-
-* The property `cq-msm-lockable` has the wrong redirect value in the Foundation page component. (SITES-10904)
-* Remote Asset Picker always redirects to IMS stage environment. (SITES-13433)
-
-### [!DNL Sites] - [!DNL Experience Fragments]{#sites-experiencefragments-6517}
-
-* Selecting an Externalizer configuration in an Experience Fragment when you export to Adobe Target causes the incorrect externalized URL to be sent. (SITES-12402)
-* Remove non-inclusive terms; apply inclusive terms guidelines. (SITES-11244)
-
-### [!DNL Sites] - Page Editor{#sites-pageeditor-6517}
-
-* No thumbnail is displayed for a carousel set in the Experience Manager content finder side rail. (SITES-8593)
-
-## Sling{#sling-6517}
+#### Sling{#sling-6517}
 
 * Sling `ResourceMerger` consumes a high amount of CPU when provided with a fictitious path, causing a denial of service. (NPR-40338)
 
-## Translation projects{#translation-6517}
+#### Translation projects{#translation-6517}
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST * The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431) -->
 * Language Copy is not created when the user is not configuring non-mandatory fields. (NPR-40036)
 
-## User interface{#ui-6517}
+#### User interface{#ui-6517}
 
 * Cancel button in Page properties is inactive; it should take you to the Site Admin user interface. (NPR-40501)
 
@@ -237,7 +241,7 @@ New folders of `cache` and `diff-cache` are automatically created and you no lon
 
 * TEXT -->
 
-## Workflow{#workflow-6517}
+#### Workflow{#workflow-6517}
 
 * Workflow Console changes. (NPR-40502)
 * `SegmentNotfound errors` in the logs on a production author instance, caused by unclosed Resource resolver in class `com.day.cq.workflow.impl.email.EMailNotificationServic`. (NPR-40187)
@@ -395,7 +399,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails.
 * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.   
-* Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they will not get executed, instead throwing a runtime error.
+* Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they do not get run, instead throwing a runtime error.
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
