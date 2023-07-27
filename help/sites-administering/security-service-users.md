@@ -73,7 +73,7 @@ Whether you apply access control while restructuring content or when you do it f
 
 ## Service Users and Mappings {#service-users-and-mappings}
 
-If the above fails, Sling 7 offers a Service User Mapping service, which allows to configure a bundle-to-user mapping and two corresponding API methods: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` and ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` which return a session/resource resolver with the privileges of a configured user only. These methods have the following characteristics:
+If the above fails, Sling 7 offers a Service User Mapping service, which allows to configure a bundle-to-user mapping and two corresponding API methods: [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-) and [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-) which return a session/resource resolver with the privileges of a configured user only. These methods have the following characteristics:
 
 * They allow mapping services to users
 * They make it possible to define subservice users
@@ -139,7 +139,7 @@ When adding the corresponding .content.xml to the content of your bundle, make s
 
 ## Adding a configuration amendment to the ServiceUserMapper configuration {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-To add a mapping from your service to the corresponding System Users, create a factory configuration for the ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` service. To keep this modular, such configuration can be provided using the [Sling amend mechanism](https://issues.apache.org/jira/browse/SLING-3578). The recommended way to install such configurations with your bundle is by using [Sling Initial Content Loading](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+To add a mapping from your service to the corresponding System Users, create a factory configuration for the [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) service. To keep this modular, such configuration can be provided using the [Sling amend mechanism](https://issues.apache.org/jira/browse/SLING-3578). The recommended way to install such configurations with your bundle is by using [Sling Initial Content Loading](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Create a subfolder SLING-INF/content below the src/main/resources folder of your bundle
 1. In this folder, create a file named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-&lt;some unique name for your factory configuration&gt;.xml with the content of your factory configuration (including all subservice user mappings). Example:
