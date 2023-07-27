@@ -38,17 +38,17 @@ Using Adaptive Form Container in AEM Page Editor allows you to create seamless d
 
 You can take full advantage of this feature by utilizing the following options:
 
-* **Add a custom Adaptive Form to an AEM Sites page:** Build a brand-new form from scratch, tailoring it specifically to your requirements and design preferences.
+* **[Add a custom Adaptive Form to an AEM Sites page:](#create-an-adaptive-form-in-sites-editor)** Build a brand-new form from scratch, tailoring it specifically to your requirements and design preferences.
 
-* **Add a custom Adaptive Form to an Experience Fragments:** Extend the reach of your forms by adding them to AEM Experience Fragments, allowing for seamless reuse across multiple pages or sites.
+* **[Add a custom Adaptive Form to an Experience Fragments:](#create-an-adaptive-form-in-experience-fragment)** Extend the reach of your forms by adding them to AEM Experience Fragments, allowing for seamless reuse across multiple pages or sites.
 
-* **Add multiple forms to an AEM Sites page or Experience Fragment:**  Add multiple forms to a page to provide multiple choices to users based on their preferences and requirements. These can a combination of brand-new form from scratch and existing forms.
-
-* **Convert an Adaptive Form to Experience Fragment:** Convert an Adaptive Form added to an AEM Sites page to an Experience Fragment for reusing the form across multiple AEM Sites pages.
+* **[Convert an Adaptive Form to Experience Fragment:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Convert an Adaptive Form added to an AEM Sites page to an Experience Fragment for reusing the form across multiple AEM Sites pages.
 
 * **Create and add forms based on approved templates to an AEM Sites page:** Leverage pre-approved templates to quickly create forms that align with your organization's branding guidelines and design standards. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
 
 * **Add existing forms to an AEM Sites page:** Easily integrate forms that you have already created into your websites, enabling visitors to interact with them directly. The option is available only for Adaptive Forms created with Adaptive Forms Editor or Adaptive Forms - Embed component. 
+
+* **Add multiple forms to an AEM Sites page or Experience Fragment:**  Add multiple forms to a page to provide multiple choices to users based on their preferences and requirements. These can a combination of brand-new form from scratch and existing forms.
 
 ## Considerations {#consideration}
 
