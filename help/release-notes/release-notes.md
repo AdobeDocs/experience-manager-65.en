@@ -147,6 +147,7 @@ Some of the key features and improvements in this release are the following:
 
 * Translation `rules.xml` sorted in a poor way when rules are added from the translation configuration user interface. (NPR-40431) MAJOR
 * Support links with query parameters during translation. (NPR-40339) NORMAL
+* Dictionary user interface is not loading for the customer after updating additional context root. (NPR-40650) MAJOR
 
 #### User interface{#ui-6518}
 
