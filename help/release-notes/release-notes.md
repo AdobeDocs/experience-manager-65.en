@@ -49,30 +49,42 @@ Some of the key features and improvements in this release are the following:
 
 ### [!DNL Sites]{#sites-6518}
 
-* Used the Bulk editor to update the properties of multiple pages by downloading the `tsv` Export, made changes offline, and then uploaded the `tsv` back to Experience Manager. Even though the pages were updated, the JCR Property `cq:lastModified` was not updated and in the timeline. (SITES-14072) CRITICAL
+* Used the Bulk Editor to update the properties of multiple pages by downloading the `tsv` Export, made changes offline, and then uploaded the `tsv` back to Experience Manager. Even though the pages were updated, the JCR Property `cq:lastModified` was not updated and in the timeline. (SITES-14072) CRITICAL
+* Link reference does not get updated inside an Experience Fragment when creating a live copy or rollout of an Experience Fragment. (SITES-14759) CRITICAL
+* A workflow synchronization action was added to the out-of-the-box Experience Manager standard rollout configuration, the "Rollout page and subpages", from the parent page, and async job fails with NullPointer exception. The source location page (en-us) does not exist in the parent, but exists in the target location (Live copy) (en). (SITES-12207) MAJOR
+* You have 'en' page which contains `jcr:description` and sent the page for translation. The `jcr:description` is getting translated and the property is present under launch. However, when the launch is promoted, `jcr:description` is not getting updated in the page. (SITES-13146) MAJOR
+* WCM (Web Content Management) IT tests were blocking the release of Service Pack 17. (SITES-13089) BLOCKER
+* Localized content on Live Copy is lost after blueprint rollout. (SITES-12602) CRITICAL
+
 
 #### Admin User Interface{#sites-adminui-6518}
 
 * If a user's delete permission is removed by way of the useradmin console, the user no longer sees the 'Properties' button in the sites.html console (when selecting the page). However, this option is present if the user opens the page editor. (SITES-14341) MAJOR
+* When a folder has many pages, each having many versions, when using the compare version feature, the load on the instance becomes high. When several users are using the feature at the same time, the instance can go down. (SITES-13026) MAJOR
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6518}
 
 * A problem was discovered with the exception handling in the `RemoteAssetClientImpl`. When an IOException or RuntimeException occurs while querying the metadata, the current thread attempts to close and recreate the shared httpClient which could result in a cascade of other errors in the threads. (SITES-14092) MAJOR
-* When authors fill out the rich text editor field in a content fragment, and insert an image inside of a link, when the content fragment is queried through the GraphQL API, the error message `Exception while fetching data (/genericContentByPath) : null` is returned. This error only occurred if there was a link with an image inside of it. Removing the image from the link made the error message go away. (SITES-13988) CRITICAL
+* When authors fill out the rich text editor field in a content fragment, and insert an image inside a link, when the content fragment is queried through the GraphQL API, the error message `Exception while fetching data (/genericContentByPath) : null` is returned. This error only occurred if there was a link with an image inside it. Removing the image from the link made the error message go away. (SITES-13988) CRITICAL
+* The GraphQL implementation of Experience Manager 6.5 was not on par with master and several important fixes were missing. (SITES-13096) BLOCKER
+* A mandatory HTTP header is needed when accessing the metadata service endpoint. (SITES-13068) BLOCKER
 
 #### Core Components{#sites-core-components-6518}
 
-* Asset selector does not fetch updated list of assets when it is closed and reopened. If new assets are uploaded in the repository then they are not shown in asset selector until the page containing asset selector is refreshed. (SITES-14828) CRITICAL
+* Asset selector does not fetch updated list of assets when it is closed and reopened. If new assets are uploaded in the repository, then they are not shown in asset selector until the page containing asset selector is refreshed. (SITES-14828) CRITICAL
 * Asset selector user interface, integrated in Sites editor (CS), is not responsive when window is reduced. (SITES-14127) CRITICAL
-* The IMS props config for Asset selector integration was accepting incorrect values. (SITES-13962) NORMAL
+* The Adobe IMS (Identity Management System) Configuration for Asset selector integration was accepting incorrect values. (SITES-13962) NORMAL
+* Asset selector, when integrated in Sites Image component, should not allow the selecting of non-image assets. (SITES-13879) MAJOR
+* After successful sign-in, user is redirected to Page Editor. User has to reopen the Asset selector to pick Remote Assets. (SITES-13851) CRITICAL
+* Remote Asset Picker always redirects to the Adobe IMS (Identity Management System) Stage environment. (SITES-13448, SITES-13433) BLOCKER
 
 #### [!DNL Experience Fragments]{#sites-experiencefragments-6518}
 
-* Link reference does not get updated inside an experience fragment when creating a live copy or rollout of an experience fragment. (SITES-14759) CRITICAL
+
 
 #### Page Editor{#sites-pageeditor-6518}
 
-* When the author opens Page properties, the dialog box has an incorrect view. That is, an additional horizontal scrollbar and additional margins are visible. (SITES-14502) MINOR
+* When the author opens Page properties, the dialog box has an incorrect view. That is, an extra horizontal scrollbar and additional margins are visible. (SITES-14502) MINOR
 * Styles added in Experience Manager 6.5, Service Pack 17, for anchor and body tag was causing CSS issues. Anchor tags were not showing underlined in Author. (SITES-14261) MAJOR
 
 
@@ -86,17 +98,26 @@ Some of the key features and improvements in this release are the following:
 
 #### [!DNL Dynamic Media]{#dm-6518}
 
-* C
+* When VTT fails to download, the video is not visible. It shows a blank screen, while the video scrubber is seen progressing forward. (ASSETS-21909) NORMAL
+* Focus is not moving to multiple controls present below the video when navigating using Tab on keyboard. As such, they are not accessible. (ASSETS-25749) NORMAL
+
 
 ### [!DNL Forms]{#forms-6518}
 
-* A
+* After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) NORMAL
+
 
 ### [!DNL Commerce]{#commerce-6518}
 
 * M
 
+
 ### Foundation{#foundation-6518}
+
+#### Content distribution{#content-distribution-6518}
+
+* The asset delete queue should not be blocked and no error should occur in the log file. (NPR-40570) NORMAL
+
 
 #### Integrations{#integrations-6518}
 
@@ -108,19 +129,28 @@ Some of the key features and improvements in this release are the following:
 
 #### Platform{#platform-6518}
 
-* I
+* After a vanilla Experience Manager, Service Pack 17 install, you see errors in the `stderr.log`. Vanilla installs should not get errors. (CQ-4353637) MINOR
+* Create button in Tagging screen not respecting ACL (Access Control List). (NPR-40973) MAJOR
+* Unable to create, or access, or both, cache node of ContextHub on Experience Manager. (NPR-40515) CRITICAL
+
+#### Replication{#replication-6518}
+
+* Replication flush deletes all descendants of the requested path. (NPR-40569) NORMAL
 
 #### Sling{#sling-6518}
 
-* S
+* When a Link Share Report is generate, the column Link does not contain the correct values. (NPR-40798) NORMAL
+* With AEM 6.5.15.0, all vanity URLs, sling aliases, and sling mapping are broken after an AEM restart. (NPR-40420) NORMAL
+
 
 #### Translation projects{#translation-6518}
 
-* L
+* Translation `rules.xml` sorted in a poor way when rules are added from the translation configuration user interface. (NPR-40431) MAJOR
+* Support links with query parameters during translation. (NPR-40339) NORMAL
 
 #### User interface{#ui-6518}
 
-* C
+* As described in the [Configuration Browser documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _The Name will become the node name in the repository_. However, in Configuration Browser, Configuration Title is used for Path in CRXDE Lite, and the Name of the Configuration is ignored. (NPR-40607) MINOR
 
 #### WCM{#wcm-6518}
 
@@ -128,7 +158,10 @@ Some of the key features and improvements in this release are the following:
 
 #### Workflow{#workflow-6518}
 
-* W
+* Reverting an asset version keeps the asset status in processing mode. (NPR-41029) NORMAL
+* Sorting issue on Assets and Projects user interface. Some have overlaid the custom columns on Assets and Projects user interface as per business requirements. They have implemented a sort using the out-of-the-box property `sortable=true`. However, they are seeing inconsistencies in sorting when there are many entries under Projects or Assets user interface. (NPR-41027) NORMAL
+* Logs are getting filled up with `NullPointerException` in the `EMailNotificationService`, and emails, which workflows should send, are not getting sent. (NPR-40898) NORMAL
+* The timeline is not providing references to the selected content. (NPR-40806) MAJOR
 
 ## Install [!DNL Experience Manager] 6.5.18.0{#install}
 
