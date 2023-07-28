@@ -61,11 +61,11 @@ Upgrading Experience Manager Dynamic Media from 6.3 to 6.4 or 6.5 now includes t
 >
 >If you run your Experience Manager instance in compatibility mode &ndash; that is, you have the compatibility packaged installed &ndash; you do not need to run these commands.
 
-For all upgrades, either with or without the compatibility package, you can copy the default, out-of-the-box viewer presets that originally came with Dynamic Media by running the following Linux® curl command:
+For all upgrades, either with or without the compatibility package, you can copy the default, out-of-the-box viewer presets that originally came with Dynamic Media by running the following Linux&reg; curl command:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets/viewer.pushviewerpresets.json`
 
-To migrate any custom viewer presets and configurations that you have created from `/etc` to `/conf`, run the following Linux® curl command:
+To migrate any custom viewer presets and configurations that you have created from `/etc` to `/conf`, run the following Linux&reg; curl command:
 
 `curl -u admin:admin -X POST https://<server_address>:<server_port>/libs/settings/dam/dm/presets.migratedmcontent.json`
 
@@ -230,7 +230,7 @@ When you run Dynamic Media - Scene7 mode on AEM, it currently forwards `/is/imag
 
 1. On the **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** page, select the check box for the following two settings:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for two minutes (default) to save.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for 120 seconds or two minutes (default) to save.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` &ndash; When enabled, this setting validates a user's access while they preview assets by way of Dynamic Media Image Server.
 
    ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/assets-dm/acl.png)
@@ -245,7 +245,7 @@ If you intend to use this feature, be aware of the following prerequisites and p
 
 * You must be running Experience Manager 6.5 with Service Pack 6.5.4.0 or later in Dynamic Media - Scene7 mode.
 * This large upload feature is only supported for [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html) customers.
-* Be sure that your Experience Manager instance is configured with Amazon S3 or Microsoft® Azure Blob storage.
+* Be sure that your Experience Manager instance is configured with Amazon S3 or Microsoft&reg; Azure Blob storage.
 
    >[!NOTE]
    >
@@ -306,7 +306,7 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 
    * Copy and paste the path above into the URL field of your browser. Be sure you replace `localhost:4502` with your own Experience Manager instance.
 
-1. In the **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** dialog box, in the **[!UICONTROL Max Timeout]** field, set the value to `18000` minutes (five hours). Default is 10800 minutes (three hours).
+1. In the **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** dialog box, in the **[!UICONTROL Max Timeout]** field, set the value to `18000` seconds (five hours). Default is 10800 seconds (three hours).
 
    ![Max timeout value](/help/assets/assets-dm/uploadassets15gb_d.png)
 
@@ -319,7 +319,7 @@ You can enter a value up to 15 GB (`2013265920` bytes). In this case, uploaded a
 1. On the Workflow Models page, select **[!UICONTROL Dynamic Media Encode Video]**.
 1. On the toolbar, select **[!UICONTROL Edit]**.
 1. On the workflow page, double-click the **[!UICONTROL Scene7 Direct Binary Upload]** process step.
-1. In the **[!UICONTROL Step Properties]** dialog box, under the **[!UICONTROL Common]** tab, under the **[!UICONTROL Advanced Settings]** heading, in the **[!UICONTROL Timeout]** field, enter a value of `18000` minutes (five hours). The default is `3600` minutes (one hour).
+1. In the **[!UICONTROL Step Properties]** dialog box, under the **[!UICONTROL Common]** tab, under the **[!UICONTROL Advanced Settings]** heading, in the **[!UICONTROL Timeout]** field, enter a value of `18000` seconds (five hours). The default is `3600` seconds (one hour).
 1. Select **[!UICONTROL OK]**.
 1. Select **[!UICONTROL Sync]**.
 1. Repeat steps 14-21 for the **[!UICONTROL DAM Update Asset]** workflow model and the **[!UICONTROL Dynamic Media Reprocess]** workflow model.
@@ -363,7 +363,7 @@ You can define which asset types are processed by Dynamic Media and customize ad
 
 * Convert an Adobe PDF to an eCatalog asset.
 * Convert an Adobe Photoshop Document (.PSD) to a banner template asset for personalization.
-* Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated PostScript® file (.EPS).
+* Rasterize an Adobe Illustrator file (.AI) or an Adobe Photoshop Encapsulated PostScript&reg; file (.EPS).
 * [Video profiles](/help/assets/video-profiles.md) and [Imaging profiles](/help/assets/image-profiles.md) can be used to define processing of videos and images, respectively.
 
 See [Uploading Assets](/help/assets/manage-assets.md#uploading-assets).
@@ -459,7 +459,7 @@ While setting up a default naming convention is not required to use batch set pr
 
 As an alternative, you can use **[!UICONTROL View Code]** with no form fields available. In this view, you create your naming convention definitions entirely using regular expressions.
 
-Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company’s individual naming convention often uses one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
+Two elements are available for definition, Match and Base Name. These fields let you define all elements of a naming convention and identify the part of the convention used to name the set in which they are contained. A company's individual naming convention often uses one or more lines of definition for each of these elements. You can use as many lines for your unique definition and group them into distinct elements, such as for Main Image, Color element, Alternate View element, and Swatch element.
 
 **To configure default naming:**
 
@@ -626,7 +626,7 @@ In case you do want to turn on template creation, use the following parameters: 
 
 <!-- THIS PARAGRAPH WAS REPLACED WITH THE TWO PARAGRAPHS DIRECTLY ABOVE BASED ON CQDOC-17657 You can tune job parameters for faster processing when you upload files. For example, if you are uploading PSD files, but do not want to process them as templates, you can set layer extraction to false (off). In such case, the tuned job parameter would appear as `process=None&createTemplate=false`. -->
 
-Adobe recommends using the following "tuned" job parameters for PDF, PostScript®, and PSD files:
+Adobe recommends using the following "tuned" job parameters for PDF, PostScript&reg;, and PSD files:
 
 <!-- OLD PDF JOB PARAMETERS `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` -->
 
@@ -635,7 +635,7 @@ Adobe recommends using the following "tuned" job parameters for PDF, PostScript�
 | File type | Recommended job parameters |
 | ---| ---|
 | PDF | `pdfprocess=Thumbnail&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
-| PostScript® | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Thumbnail&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PostScript&reg; | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Thumbnail&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=AppendName&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
 <!-- CQDOC-17657 for PSD entry in table above -->
