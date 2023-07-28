@@ -240,4 +240,4 @@ To fix these issues, it is recommended that the same approaches mentioned in [Pr
 
 ## Sling POST Processors and Deleted Pages {#sling-post-processors-and-deleted-pages}
 
-There are a couple of administrative sessions used in sling POST processor implementations. Usually, administrative sessions are used to access nodes that are pending deletion within the POST being processed. In consequence, they are no longer available via the request session. A node pending deletion may be accessed to disclose metada that otherwise should not be accessible.
+There are a couple of administrative sessions used in sling POST processor implementations. Usually, administrative sessions are used to access nodes that are pending deletion within the POST being processed. In consequence, they are no longer available via the request session. A node pending deletion may be accessed to disclose metadata that otherwise should not be accessible.
