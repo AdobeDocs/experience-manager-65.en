@@ -230,7 +230,7 @@ When you run Dynamic Media - Scene7 mode on AEM, it currently forwards `/is/imag
 
 1. On the **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** page, select the check box for the following two settings:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for 120 seconds or two minutes (default) to save.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` &ndash; When enabled, this setting caches permission results for 120 seconds (two minutes) (default) to save.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` &ndash; When enabled, this setting validates a user's access while they preview assets by way of Dynamic Media Image Server.
 
    ![Enable Access Control List settings in Dynamic Media - Scene7 mode](/help/assets/assets-dm/acl.png)
@@ -697,7 +697,7 @@ The Scene7 Upload Connection setting synchronizes Experience Manager assets to D
 
    The **[!UICONTROL Number of connections]** setting controls the maximum number of HTTP connections allowed for Experience Manager to Dynamic Media upload; typically, the predefined value of ten connections is sufficient.
 
-   The **[!UICONTROL Active job timeout]** setting determines the wait time for uploaded Dynamic Media assets to be published in delivery server. This value is 2100 seconds or 35 minutes by default.
+   The **[!UICONTROL Active job timeout]** setting determines the wait time for uploaded Dynamic Media assets to be published in delivery server. This value is 2100 seconds (35 minutes) by default.
 
    For most use cases, the setting of 2100 is sufficient.
 
