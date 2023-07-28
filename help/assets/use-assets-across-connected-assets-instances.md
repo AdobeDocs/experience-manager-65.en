@@ -309,6 +309,8 @@ You can add assets to the [!DNL Sites] deployment, however, those assets cannot 
 
 * To get insights about asset usage, configure the [Assets Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
 
+* You cannot drag the remote asset onto the [Image Component Configure dialog](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). However, you can drag the remote asset directly to the image component on the Sites page without clicking **[!UICONTROL Configure]**.
+
 ### Permissions and asset management {#permissions-and-managing-assets}
 
 * Local assets are read-only copies. [!DNL Experience Manager] components do non-destructive edits to assets. No other edits are allowed.
