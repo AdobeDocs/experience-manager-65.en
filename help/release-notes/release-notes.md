@@ -19,7 +19,7 @@ mini-toc-levels: 4
 | -------- | ---------------------------- |
 | Version  | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
-| Date     | Thursday, May 25, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
+| Date     | Thursday, August 24, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
 | Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.17.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6518}
@@ -56,7 +56,6 @@ Some of the key features and improvements in this release are the following:
 * WCM (Web Content Management) IT tests were blocking the release of Service Pack 17. (SITES-13089) BLOCKER
 * Localized content on Live Copy is lost after blueprint rollout. (SITES-12602) CRITICAL
 
-
 #### Admin User Interface{#sites-adminui-6518}
 
 * If a user's delete permission is removed by way of the useradmin console, the user no longer sees the 'Properties' button in the sites.html console (when selecting the page). However, this option is present if the user opens the page editor. (SITES-14341) MAJOR
@@ -81,16 +80,10 @@ Some of the key features and improvements in this release are the following:
 #### [!DNL Experience Fragments]{#sites-experiencefragments-6518}
 
 
-
 #### Page Editor{#sites-pageeditor-6518}
 
 * When the author opens Page properties, the dialog box has an incorrect view. That is, an extra horizontal scrollbar and additional margins are visible. (SITES-14502) MINOR
 * Styles added in Experience Manager 6.5, Service Pack 17, for anchor and body tag was causing CSS issues. Anchor tags were not showing underlined in Author. (SITES-14261) MAJOR
-
-
-
-
-
 
 ### [!DNL Assets]{#assets-6518}
 
@@ -101,23 +94,19 @@ Some of the key features and improvements in this release are the following:
 * When VTT fails to download, the video is not visible. It shows a blank screen, while the video scrubber is seen progressing forward. (ASSETS-21909) NORMAL
 * Focus is not moving to multiple controls present below the video when navigating using Tab on keyboard. As such, they are not accessible. (ASSETS-25749) NORMAL
 
-
 ### [!DNL Forms]{#forms-6518}
 
 * After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) NORMAL
 
-
 ### [!DNL Commerce]{#commerce-6518}
 
 * M
-
 
 ### Foundation{#foundation-6518}
 
 #### Content distribution{#content-distribution-6518}
 
 * The asset delete queue should not be blocked and no error should occur in the log file. (NPR-40570) NORMAL
-
 
 #### Integrations{#integrations-6518}
 
@@ -141,7 +130,6 @@ Some of the key features and improvements in this release are the following:
 
 * When a Link Share Report is generate, the column Link does not contain the correct values. (NPR-40798) NORMAL
 * With AEM 6.5.15.0, all vanity URLs, sling aliases, and sling mapping are broken after an AEM restart. (NPR-40420) NORMAL
-
 
 #### Translation projects{#translation-6518}
 
