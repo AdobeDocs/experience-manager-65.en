@@ -12,7 +12,7 @@ exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html)                  |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html)               |
 | AEM 6.5     | This article         |
 
 
@@ -725,6 +725,20 @@ You can add the following restrictions to JSON Schema elements to limit the valu
   </tr>
  </tbody>
 </table>
+
+
+
+## Enable schema compliant data {#enablig-schema-compliant-data}
+
+To enable the Adaptive Form to generate the schema-compliant data on form submission, perform the following steps:
+
+1. Go to Experience Manager web console at `https://server:host/system/console/configMgr`.
+1. Locate **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**. 
+1. Tap to open the configuration in edit mode.
+1. Select the **[!UICONTROL Generate Schema Compliant Data]** checkbox.
+1. Save the settings.
+
+  ![adaptive form and interactive communication web channel configuration](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Non-supported constructs  {#non-supported-constructs}
 
