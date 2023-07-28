@@ -1,8 +1,6 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
-seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +11,7 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 ---
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
- ![](do-not-localize/chlimage_1-9.png)
+ ![Circular image motif for AEM Developer Tools for Eclipse.](do-not-localize/chlimage_1-9.png)
 
 ## Overview {#overview}
 
@@ -154,6 +152,6 @@ The official Apache Sling IDE tooling for Eclipse website provides you with usef
 
 The following official [Eclipse](https://www.eclipse.org/) documentation can help to set up your environment:
 
-* [Getting Started with Eclipse](https://www.eclipse.org/getting-started/)
+* [Getting Started with Eclipse](https://eclipseide.org/getting-started/)
 * [Eclipse Luna Help System](https://help.eclipse.org/latest/index.jsp)
 * [Maven Integration (m2eclipse)](https://www.eclipse.org/m2e/)

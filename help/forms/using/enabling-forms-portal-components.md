@@ -13,6 +13,11 @@ exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
 ---
 # Enabling forms portal components {#enabling-forms-portal-components}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)                  |
+| AEM 6.5     | This article         |
+
 Out of the box, forms portal components are not available for use. To make the components appear in the list of available components in AEM sidekick, perform the following steps:
 
 1. Log in to the author instance of your website and open an AEM Sites page.

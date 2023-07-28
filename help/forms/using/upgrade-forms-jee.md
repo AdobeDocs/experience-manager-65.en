@@ -22,7 +22,7 @@ AEM 6.5.12.0 Forms on JEE provides provides two types of installers: Full instal
 
 The following table depicts senarios for using full and patch installer.
 
-![](assets/full-and-patch-installer.png)
+![Full and Patch installer scenario](assets/full-and-patch-installer.png)
 
 Perform the following procedure to use the full installer to upgrade existing AEM 6.3 Forms on JEE or AEM 6.4 Forms on JEE to AEM 6.5.12.0 Forms on JEE:
 

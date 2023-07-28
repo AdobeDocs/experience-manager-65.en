@@ -1,14 +1,10 @@
 ---
 title: Create a Fully-Featured Website (JSP)
-seo-title: Create a Fully-Featured Website (JSP)
-description: This tutorial enables you to create a fully featured website with AEM
-seo-description: This tutorial enables you to create a fully featured website with AEM
-uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
+description: This tutorial teaches you how to create a fully featured website with Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 ---
@@ -16,9 +12,9 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 
 >[!NOTE]
 >
->This article describes how to create a website using JSP and based on the classic UI. Adobe recommends leveraging the latest AEM technologies for your websites as described in detail in the article [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
+>This article describes how to create a website using JSP and based on the classic UI. Adobe recommends using the latest Adobe Experience Manager (AEM) technologies for your websites as described in detail in the article [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
-This tutorial enables you to create a fully featured website with Adobe Experience Manager (AEM). The website will be based on a generic website and is targeted primarily at web developers. All development will take place within an author environment.
+This tutorial enables you to create a fully featured website with AEM. The website will be based on a generic website and is targeted primarily at web developers. All development takes place within an author environment.
 
 This tutorial describes how to:
 
@@ -38,7 +34,7 @@ This tutorial describes how to:
 
 1. Include various foundation components.
 
-After performing all the steps, your pages will look as follows:
+After performing all the steps, your pages should look as follows:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -46,7 +42,7 @@ After performing all the steps, your pages will look as follows:
 
 To follow along with the tutorial rather than performing the exercises, download website-1.0.zip. This file is an AEM content package that contains the results of this tutorial. Use [Package Manager](/help/sites-administering/package-manager.md) to install the package to your author instance.
 
-**NOTE:** Installing this package will overwrite any resources on your authoring instance that you have created using this tutorial.
+**NOTE:** Installing this package overwrites any resources on your authoring instance that you have created using this tutorial.
 
 Website content package
 
@@ -106,9 +102,9 @@ Sample static.css file and images
 
 In this section, you create the following:
 
-* The contentpage template that will be used to create content pages in the example website
-* The contentpage component that will be used to render pages of content
-* The contentpage script
+* The contentpage template that is used to create content pages in the example website.
+* The contentpage component that is used to render pages of content.
+* The contentpage script.
 
 #### Creating the Contentpage Template {#creating-the-contentpage-template}
 
@@ -135,7 +131,7 @@ A template defines the default content of a new page. Complex websites may use s
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   The value of the allowed path property is a *regular expression.* Pages that have a path that matches the expression can use the template. In this is case the regular expression matches the path of the **/content** folder and all subpages.
+   The value of the allowed path property is a *regular expression.* Pages that have a path that matches the expression can use the template. In this is case, the regular expression matches the path of the **/content** folder and all subpages.
 
    When an author creates a page below /content, the **contentpage** template appears in a list of available templates to use.
 
@@ -225,26 +221,26 @@ In this section, you create the following pages which all use the contentpage te
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
 1. Click **Create**. In the folder tree, select the **/Websites/My Website** page and click **New** &gt; **New Page**.
-1. In the Create Page dialog, enter the following property values and then click Create:
+1. In the Create Page dialog, enter the following property values, and then click Create:
 
     * Title: English
     * Name: en
     * Select the My Website Content Page Template
 
 1. In the folder tree, select the **/Websites/My Website/English** page and click **New**&gt; **New Page**.
-1. In the **Create Page** dialog, enter the following property values and then click **Create**:
+1. In the **Create Page** dialog, enter the following property values, and then click **Create**:
 
     * Title: Products
     * Select the My Website Content Page Template
 
 1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt; **New Page**.
-1. In the **Create Page** dialog, enter the following property values and then click **Create**:
+1. In the **Create Page** dialog, enter the following property values, and then click **Create**:
 
     * Title: Services
     * Select the My Website Content Page Template
 
 1. In the folder tree, select the **/Websites/My Website/English** page and click **New** &gt; **New Page**.
-1. In the **Create Page** dialog, enter the following property values and then click **Create**:
+1. In the **Create Page** dialog, enter the following property values, and then click **Create**:
 
     * Title: Customers
     * Select the My Website Content Page Template
@@ -269,7 +265,7 @@ In this section, you create the following pages which all use the contentpage te
 
 This section describes how to enhance the contentpage script using the AEM foundation component scripts and by writing your own scripts.
 
-The **Products** page will look as follows:
+When you are finished, the **Products** page should look as follows:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -307,7 +303,7 @@ For example, in your component JSP code, you can reference the scripts that the 
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Open the page source to see the javascript and HTML elements that the head.jsp and body.jsp scripts generated. The following script snippet opens Sidekick when you open the page:
+   Open the page source to see the JavaScript and HTML elements that the head.jsp and body.jsp scripts generated. The following script snippet opens Sidekick when you open the page:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -401,11 +397,11 @@ In this section you create several scripts that each generate a part of the page
 
 ### Creating the Top Navigation Component {#creating-the-top-navigation-component}
 
-In this section, you create a component that displays links to all top level pages of the website as to ease navigation. This component content appears at the top of all pages that are created using the contentpage template.
+In this section, you create a component that displays links to all top-level pages of the website as to ease navigation. This component content appears at the top of all pages that are created using the contentpage template.
 
-In the first version of the top navigation component (topnav) the navigation items are text links only. In the second version you implement topnav with image navigation links.
+In the first version of the top navigation component (topnav) the navigation items are text links only. In the second version, you implement topnav with image navigation links.
 
-Your top navigation will look as follows:
+When you are finished, your top navigation should look as follows:
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -514,13 +510,13 @@ In this exercise, Sling matches these URLs to the /apps/mywebsite/components/con
 1. Right-click the `/apps/mywebsite/components/contentpage` node and click **Create** &gt; **Create File**.
 1. In the **Create File** window, as **Name**, type `navimage.png.java`.
 
-   The .java file name extension indicates to Sling that the Apache Sling Scripting Java Support should be used to compile the script and create a servlet.
+   The .java file name extension indicates to Sling that the Apache Sling Scripting Java&trade; Support should be used to compile the script and create a servlet.
 
 1. Copy the following code into `navimage.png.java.`The code extends the AbstractImageServlet class:
 
-    * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
+    * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) creates an ImageContext object that stores the properties of the current resource.
     * The parent page of the resource is extracted from the ImageContext object. The page title and subtitle are then obtained.
-    * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
+    * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) is used to generate the image from the navimage_bg.jpg file of the site design, the page title, and the page subtitle.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -650,10 +646,10 @@ Create the listchildren component that generates a list of page links that inclu
 
 #### Creating Product Pages {#creating-product-pages}
 
-Create two pages located below the Products page. For each page, which describe two specific products, you set a title, a description, and a date.
+Create two pages located below the Products page. For each page that describes two specific products, you set a title, a description, and a date.
 
 1. In the folder tree of the Websites page, select the Websites/My Website/English/Products item and click New &gt; New Page.
-1. In the dialog enter the following property values and then click Create:
+1. In the dialog, enter the following property values and then click Create:
 
     * Title: Product 1.
     * Name: product1.
@@ -708,7 +704,7 @@ Create two pages located below the Products page. For each page, which describe 
 To create the listchildren component:
 
 1. In CRXDE Lite, right-click `/apps/mywebsite/components`, select **Create**, then **Create Component**.
-1. In the dialog enter the following property values and then click Next:
+1. In the dialog, enter the following property values and then click Next:
 
     * Label: listchildren.
     * Title: My Listchildren Component.
@@ -800,7 +796,7 @@ Create the dialog that is used to configure the listchildren component propertie
 
 #### Including List Children in the Contentpage Component {#including-list-children-in-the-contentpage-component}
 
-In order to include the listchildren component in your contentpage component, proceed as follows:
+To include the listchildren component in your contentpage component, proceed as follows:
 
 1. In CRXDE Lite, open the file `left.jsp` under `/apps/mywebsite/components/contentpage` and locate the following code (line 4):
 
@@ -818,7 +814,7 @@ In order to include the listchildren component in your contentpage component, pr
 
 #### Viewing List Children in a Page {#viewing-list-children-in-a-page}
 
-To see the full operation of this component you can view the Products page:
+To see the full operation of this component, you can view the Products page:
 
 * when the parent page ("Path of list root") is not defined.
 * when the parent page ("Path of list root") is defined.
@@ -840,9 +836,9 @@ Create a component that displays the company logo and provides a link to the hom
 * The property values apply to all instances of the component that are added to pages that use the design.
 * The properties can be configured using any instance of the component that is on a page that uses the design.
 
-Your design-mode dialog contains properties for setting the image and the link path. The logo component will be placed on the upper left side of all pages in the website.
+Your design-mode dialog contains properties for setting the image and the link path. The logo component is placed on the upper left side of all pages in the website.
 
-It will look as follows:
+When you are finished, it should look as follows:
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -917,7 +913,7 @@ Create the dialog for configuring your logo component in Design mode. Design-mod
         * **Title:** `Logo (Design)`
 
 1. Right-click the tab1 node in the design_dialog branch and click Delete. Click Save All.
-1. Under the `design_dialog/items/items`node, create a new node named `img` of type `cq:Widget`. Add the following properties and then click Save All:
+1. Under the `design_dialog/items/items`node, create a node named `img` of type `cq:Widget`. Add the following properties and then click Save All:
 
    | Name |Type |Value |
    |---|---|---|
@@ -933,7 +929,7 @@ Create the dialog for configuring your logo component in Design mode. Design-mod
 
 Create the script that retrieves the logo image and writes it to the page.
 
-1. Right-clck the logo component node and click Create &gt; Create File to create the script file named img.GET.java.
+1. Right-click the logo component node and click Create &gt; Create File to create the script file named img.GET.java.
 1. Open the file, copy the following code into the file, and then click Save All:
 
 ```java
@@ -1027,7 +1023,7 @@ This section describes how to set an image as your logo using the design mode di
 
 1. With the Products page open in your browser, click the Design button at the bottom of Sidekick to enter design mode.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![The Design button indicated by a right square.](do-not-localize/chlimage_1-1.png)
 
 1. In the Design of logo bar, click Edit to use the dialog to edit the settings for the logo component.
 1. In the dialog, click in the panel of the Image tab, browse for the logo.png image that you extracted from the mywebsite.zip file, and click OK.
@@ -1046,7 +1042,7 @@ This section describes how to set an image as your logo using the design mode di
 
 In this section, you include the breadcrumb (trail) component, which is one of the foundation components.
 
-1. In CRXDE Lite, browse to `/apps/mywebsite/components/contentpage`, open the file `center.jsp` and replace:
+1. In CRXDE Lite, browse to `/apps/mywebsite/components/contentpage`, open the file `center.jsp`, and replace:
 
    ```java
    <div>trail</div>
@@ -1067,7 +1063,7 @@ In this section, you include the breadcrumb (trail) component, which is one of t
 
 In this section, you include the title component, which is one of the foundation components.
 
-1. In CRXDE Lite, browse to `/apps/mywebsite/components/contentpage`, open the file `center.jsp` and replace:
+1. In CRXDE Lite, browse to `/apps/mywebsite/components/contentpage`, open the file `center.jsp`, and replace:
 
    ```xml
    <div>title</div>
@@ -1092,7 +1088,7 @@ The paragraph system (parsys) is a significant part of a website as it manages a
 
 Add the parsys component (one of the foundation components) to your contentpage component.
 
-1. In CRXDE Lite, browse to `/apps/mywebsite/components/contentpage`, open the file `center.jsp` and locate the following line of code:
+1. In CRXDE Lite, browse to `/apps/mywebsite/components/contentpage`, open the file `center.jsp`, and locate the following line of code:
 
    ```xml
    <div>parsys</div>
@@ -1118,7 +1114,7 @@ Create a component that displays an image in the paragraph system. To save time,
 
 #### Creating the Image Component {#creating-the-image-component-1}
 
-1. Right click the `/apps/mywebsite/components/logo` node and click Copy.
+1. Right-click the `/apps/mywebsite/components/logo` node and click Copy.
 1. Right-click the `/apps/mywebsite/components` node and click Paste.
 1. Right-click the `Copy of logo` node, click Rename, delete the existing text and type `image`.
 
@@ -1173,17 +1169,17 @@ The `cq:editConfig` node type enables you to configure certain behaviors of comp
 
 In this section, you use a cq:editConfig node to enable you to drag assets from Content Finder into your image component.
 
-1. In CRXDE Lite, under the node /apps/mywebsite/components/image, create a new node as follows:
+1. In CRXDE Lite, under the node /apps/mywebsite/components/image, create a node as follows:
 
     * Name: cq:editConfig.
     * Type: cq:EditConfig.
 
-1. Under the node cq:editConfig, create a new node as follows:
+1. Under the node cq:editConfig, create a node as follows:
 
     * Name: cq:dropTargets.
     * Type: cq:DropTargetConfig.
 
-1. Under the node cq:dropTargets, create a new node as follows:
+1. Under the node cq:dropTargets, create a node as follows:
 
     * Name: image.
     * Type: nt:unstructured.
@@ -1207,12 +1203,12 @@ In this section, you add the icon to appear beside the image component when it i
 
 #### Using the Image Component {#using-the-image-component}
 
-In this section, you will view the **Products** page and add your image component to the paragraph system.
+In this section, you view the **Products** page and add your image component to the paragraph system.
 
 1. In your browser, reload the **Products** page.
 1. In the Sidekick, click the **design mode** icon.
 1. Click the Edit button to edit the design dialog of par.
-1. In the dialog, a list of **Allowed Components** is shown; navigate to **MyWebsite**, select the **My Image Component** and click **OK.**
+1. In the dialog, a list of **Allowed Components** is shown; navigate to **MyWebsite**, select the **My Image Component**, and click **OK.**
 1. Return to **edit mode.**
 1. Double-click the parsys frame (on **Drag components or assets here**). The **Insert New Component** and **Sidekick** selectors look as follows:
 
@@ -1222,9 +1218,9 @@ In this section, you will view the **Products** page and add your image componen
 
 In this section, you include the toolbar component, which is one of the foundation components.
 
-You have several options, in edit mode as well as design mode.
+You have several options, in edit mode and design mode.
 
-1. In CRXDE Lite, navigate to `/apps/mywebsite/components/contentpage`, open the `body.jsp` file and locate the following code:
+1. In CRXDE Lite, navigate to `/apps/mywebsite/components/contentpage`, open the `body.jsp` file, and locate the following code:
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1260,7 +1256,7 @@ You have several options, in edit mode as well as design mode.
 
 In this section, you create the component to search for content on the website. This search component can be placed in the paragraph system of any page (for example, on a specialized search result page).
 
-Your search input box will look as follows on the **English** page:
+When you are finished, your search input box should look as follows on the **English** page:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -1496,7 +1492,7 @@ In this section, you add your search component to the paragraph system.
 1. In your browser, open the Search page.
 1. In the Sidekick, click the design mode icon.
 1. In the Design of par block (below the Search title), click Edit.
-1. In the dialog, scroll down to the  **My Websites** group, select **My Search Component** and click **OK**.
+1. In the dialog, scroll down to the  **My Websites** group, select **My Search Component**, and click **OK**.
 1. On Sidekick, click the triangle to return to edit mode.
 1. Drag the My Search Component from the Sidekick into the parsys frame. It looks as follows:
 
@@ -1510,9 +1506,9 @@ In this section, you add your search component to the paragraph system.
 
 In this section, you include the Inheritance Paragraph System (iparsys) component, which is one of the foundation components. This component enables you to create a structure of paragraphs on a parent page, and have child pages inherit the paragraphs.
 
-For this component you can set several parameters in both edit mode and design mode.
+For this component, you can set several parameters in both edit mode and design mode.
 
-1. In CRXDE Lite, navigate to `/apps/mywebsite/components/contentpage`, open the file `right.jsp` and replace:
+1. In CRXDE Lite, navigate to `/apps/mywebsite/components/contentpage`, open the file `right.jsp`, and replace:
 
    ```java
    <div>iparsys</div>

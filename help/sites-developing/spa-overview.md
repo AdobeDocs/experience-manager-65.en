@@ -20,7 +20,7 @@ The SPA Editor offers a comprehensive solution for supporting SPAs within AEM. T
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## Introduction {#introduction}
 
@@ -177,7 +177,7 @@ Additional custom selectors can be defined and used as part of an SPA developed 
 If you want to use the in place editor of a text component created in SPA there is additional configuration required.
 
 1. Set an attribute (it can be any) on the container wrapper element containing the text HTML. In case of the WKND Journal sample content, it's a `<div>` element and the selector that has been used is `data-rte-editelement`.
-1. Set the configuration `editElementQuery` on the corresponding AEM text component's `cq:InplaceEditingConfig` that points to that selector e.g. `data-rte-editelement`. This lets the editor know which HTML element wraps the HTML text.
+1. Set the configuration `editElementQuery` on the corresponding AEM text component's `cq:InplaceEditingConfig` that points to that selector for example, `data-rte-editelement`. This lets the editor know which HTML element wraps the HTML text.
 
 For an example of how this is done, see the [WKND Journal sample content.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 

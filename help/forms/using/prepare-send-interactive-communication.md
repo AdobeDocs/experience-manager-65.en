@@ -45,7 +45,7 @@ While preparing the Interactive Communication using the Agent UI, the agent mana
 
 1. In the Data tab, enter the data for variables, form data model properties, and print template (XDP) fields, as required. Fill up all the mandatory fields marked with an asterisk (&ast;) to enable the **Submit** button.
 
-   Tap a data field value in the Interactive Communication preview to highlight the corresponding data field in the Data tab or vice versa.
+   Tap a data field value in the Interactive Communication preview to highlight the corresponding data field in the Data tab or conversely.
 
 ### Manage Content {#manage-content}
 
@@ -142,7 +142,7 @@ The Agent UI has built in support for 210 special characters. The admin can [add
 
 ### Document fragments {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **Up/Down arrows**: Arrows to move document fragments up or down in the Interactive Communication.
 * **Delete**: If allowed, delete the document fragment from the Interactive Communication.

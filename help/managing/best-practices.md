@@ -1,29 +1,25 @@
 ---
 title: Managing Projects - Best Practices Checklist
-seo-title: Managing Projects - Best Practices Checklist
-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
-seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
-uuid: 859f73f4-535a-49a1-9ae4-a4aacd7f36dd
+description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high-level monitoring of your current status.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
-discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 ---
 # Managing Projects - Best Practices Checklist{#managing-projects-best-practices-checklist}
 
-Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding to ensure you are aware of the issues and (related) decisions that you need to make (both before and while implementing your project).
+Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding to ensure you are aware of the issues and (related) decisions that you must make, before and while implementing your project.
 
 To help you, the best practices consist of:
 
 * An [interactive checklist](/help/managing/best-practices-checklist.md) that allows you to track and monitor your progress with these best practices.
 
-    * Defines inputs and deliverables according to phase, milestone and persona.
-    * Provides automated overviews (quality, health and completeness) to indicate progress and project-health.
+    * Defines inputs and deliverables according to phase, milestone, and persona.
+    * Provides automated overviews (quality, health, and completeness) to indicate progress and project-health.
 
-* Documentation, based directly on the [checklist](/help/managing/best-practices-checklist.md), that details the:
+* Documentation, based on the [checklist](/help/managing/best-practices-checklist.md), that details the:
 
     * [Project Heartbeat](#projectheartbeat) analysis.
     * [Status by Role](#status-by-role) overview.
@@ -43,7 +39,7 @@ The **Project Heartbeat** worksheet provides a graphical overview of critical me
 
 * **Phase Health**
 
-    * A high level status indicator for your project; useful to highlight areas that may be at risk.
+    * A high-level status indicator for your project; useful to highlight areas that may be at risk.
 
 * **Phase Completeness**
 
@@ -51,7 +47,7 @@ The **Project Heartbeat** worksheet provides a graphical overview of critical me
 
 ## Status by Role {#status-by-role}
 
-The **Status by Role** worksheet shows detailed breakdown of [**Health**, **Quality** and **Completeness**](#projectheartbeat) by **[Phase](#phases-and-milestones)** and **[Persona](#persona)**.
+The **Status by Role** worksheet shows detailed breakdown of [**Health**, **Quality, and **Completeness**](#projectheartbeat) by **[Phase](#phases-and-milestones)** and **[Persona](#persona)**.
 
 ## Phases and Milestones {#phases-and-milestones}
 
@@ -65,7 +61,7 @@ Each phase contains its own milestones. For each [persona](#persona) (or role), 
 
 ### Preparation {#preparation}
 
-Preparation of your project forms the basis of the entire project. You need to define key requirements together with clear goals and expectations for the:
+Preparation of your project forms the basis of the entire project. Define key requirements together with clear goals and expectations for the:
 
 * **Business Rationale**
 
@@ -75,9 +71,9 @@ Preparation of your project forms the basis of the entire project. You need to d
 
     * A basic scope, and rough schedule should be made available to define what is required, and within which time frame; if it helps clarify the situation, you can also define what lies outside the scope.
 
-How you prepare, plan and run your project and implement your solution will be affected by the restrictions you are operating under e.g. fixed budget, fixed timeline, quantity of content, quality required.
+How you prepare, plan, and run your project and implement your solution is affected by the restrictions you are operating under. For example, fixed budget, fixed timeline, quantity of content, quality required.
 
-As always, adjusting any of the factors will impact the others. For example reducing the time, but requiring the same level of quality will probably increase the price while reducing the quantity of content you can cater for. Budget is often a key factor so such relationships cannot be forgotten.
+As always, adjusting any of the factors impacts the others. For example, reducing the time, but requiring the same quality level will probably increase the price while reducing the quantity of content you can cater for. Budget is often a key factor so such relationships cannot be forgotten.
 
 The Four Factors:
 
@@ -87,31 +83,31 @@ The Four Factors:
 
 * **Validation**
 
-  In this phase you need to validate and confirm the goals for the project; for example:
+  In this phase, you must validate and confirm the goals for the project; for example:
 
     * What do you want to achieve/provide?
-    * Who will benefit?
+    * Who benefits?
     * What is the scope?
 
         * If it helps clarify the situation, you can also define what lies outside the scope.
 
-    * How will you define success?
-    * How will you measure success?
+    * How do you define success?
+    * How do you measure success?
     * What are the requirements, business and technical?
     * Are there legacy systems to be replaced and if so, is there data to be migrated?
-    * Who will be involved?
-    * How will you measure progress?
-    * How often will you review progress during the life of the project?
+    * Who is involved?
+    * How do you measure progress?
+    * How often do you review progress during the life of the project?
 
 * **Budget**
 
-  Before you start any project you need a reliable, realistic estimation of what it will cost to implement:
+  Before you start any project you need a reliable, realistic estimation of what it costs to implement:
 
     * Use information from the validation milestone as a basis for the estimates.
     * Be realistic in your estimates.
-    * Consider and respect any client guidelines, processes or restrictions that the client may be subject to.
-    * Consider contingency and review processes should a review, or refinement, of the budget is required at a later stage.
-    * Remember that costs come in many forms; purchases, use of resources and fees amongst others.
+    * Consider and respect any client guidelines, processes, or restrictions that the client is subject to.
+    * Consider contingency and review processes if a review or refinement of the budget is required later on.
+    * Remember that costs come in many forms such as purchases, use of resources, and fees, among others.
 
 ### Planning {#planning}
 
@@ -121,15 +117,15 @@ Planning your project consolidates the preparation. Here you need to start conve
 
 * **Handover**
 
-  A clean handover ensures that the appropriate persona/groups are aware of their responsibilites within the project.
+  A clean handover ensures that the appropriate persona/groups are aware of their responsibilities within the project.
 
-  Full details should be provided/generated to ensure they have a full understanding of all relevant aspects, including the roadmap, scope, goals, requirements and KPIs.
+  Full details should be provided/generated to ensure they have a full understanding of all relevant aspects, including the roadmap, scope, goals, requirements, and KPIs.
 
 * **Risk Assessment**
 
   To avoid unpleasant surprises, use risk assessment to identify and quantify any potential risks together with their impact and probability.
 
-  This should be done early in the project life cycle to ensure that any vunerabilities are identified and evaluated. Based on the findings you can report to your stakeholders on whether the full requirements can be implemented and, if necessary, whether it is possible to plan for appropriate actions to be taken and tracked.
+  This should be done early in the project life cycle to ensure that any vulnerabilities are identified and evaluated. Based on the findings you can report to your stakeholders on whether the full requirements can be implemented and, if necessary, whether it is possible to plan for appropriate actions to be taken and tracked.
 
 * **Communication**
 
@@ -159,31 +155,31 @@ Planning the development is key to ensure that your project is built on a solid 
 
 * **Development Team Staffed and Trained**
 
-  Before starting on any project you should ensure that your development team is appropriately staffed and that all team members are trained for the task in hand.
+  Before starting on any project, you should ensure that your development team is appropriately staffed and that all team members are trained for the task in hand.
 
 * **Content Architecture**
 
   The content architecture defines and describes the future architecture of the content; including:
 
     * The content tree; including assets
-    * Basic structures; including campaigns, etc.
-    * Multi site and multi language structures (MSM, Translation, etc.)
+    * Basic structures; including campaigns, and so on.
+    * Multisite and multi language structures (MSM, Translation, and so on)
     * Supportive content (including tags and tagging concepts)
     * Caching and content reuse strategies
 
 * **System Architecture**
 
-  The system architecture defines the conceptual view of your system; including (amongst other information):
+  The system architecture defines the conceptual view of your system; including (among other information):
 
     * [System structure](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) for all required environments
-    * Sub-systems
-    * Third party systems
-    * Interfaces; hardware, software and human interaction
+    * Subsystems
+    * Third-party systems
+    * Interfaces; hardware, software, and human interaction
     * Servers for each environment; see the [Technical Requirements](/help/sites-deploying/technical-requirements.md) and [Hardware Sizing Guidelines](/help/managing/hardware-sizing-guidelines.md)
 
     * Processes for each environment; for example, deployment and maintenance requirements
-    * Maintenance activities (Datastore GC, TarPM optimization, etc.)
-    * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) caching
+    * Maintenance activities (Datastore GC, TarPM optimization, and so on)
+    * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) caching
     * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
     * Performance for the client-side (JS minify, concat, css sprites, total number of http requests, and others)
 
@@ -199,46 +195,46 @@ Planning the development is key to ensure that your project is built on a solid 
   The definitions should cover:
 
     * Basic code structure for the project
-    * Code artifacts (bundles, packages, etc.)
+    * Code artifacts (bundles, packages, and so on)
     * Breakdowns of the templates/components and their relationships
-    * High level details of required customizations (specific overlays will follow later)
-    * Design of workflows required by the solution (for example, content creation, approval, publishing, transformations, imports, exports, etc.)
-    * Special consideration for any complex modules, such as MSM, Commerce, third party integration
+    * High-level details of required customizations (specific overlays will follow later)
+    * Design of workflows required by the solution (for example, content creation, approval, publishing, transformations, imports, and exports)
+    * Special consideration for any complex modules, such as MSM, Commerce, third-party integration
 
 * **System Integration**
 
   System integration requires you to plan (then implement):
 
-    * How all the sub-systems and [solution integrations](/help/sites-administering/integration.md) will be brought together to operate as one coherent system
-    * How any third party systems will be integrated; together with any special considerations, such as offline/online, client-side/browser-side or fallover handling when a third party system is down
+    * How all the subsystems and [solution integrations](/help/sites-administering/integration.md) will be brought together to operate as one coherent system
+    * How any third-party systems will be integrated; together with any special considerations, such as offline/online, client-side/browser-side, or fallover handling when a third-party system is down
 
 * **Test Concept**
 
-  Before starting development you should draw up an in-depth and comprehensive concept of all [testing](/help/sites-developing/planning.md) requirements for your project.
+  Before starting development, you should draw up an in-depth and comprehensive concept of all [testing](/help/sites-developing/planning.md) requirements for your project.
 
-  This should include (amongst others):
+  This should include (among others):
 
     * Details of all tests to be performed
     * Preparation of any content required for those tests
     * Information of any test tools to be used
-    * High level indication of who will be involved in testing; especially groups outside the QA team
+    * High-level indication of who will be involved in testing; especially groups outside the QA team
     * Details of test automation; for example, with Selenium or AEM Developer mode
 
 * **Experience Design**
 
-  Exoerience Design (XD) involves designing the user experience for your solution.
+  Experience Design (XD) involves designing the user experience for your solution.
 
   The user experience should be analyzed and developed for both your authors and the final users of your website.
 
 * **Support Setup**
 
-  Prior to development all support processes, required to deploy, release, test and report issues, should be set in place.
+  Before development, all support processes required to deploy, release, test, and report issues, should be set in place.
 
-  See also the [Adobe Support Portal](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+  See also the [Adobe Support Portal](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
 
 ### Operations Planning and Operations {#operations-planning-and-operations}
 
-On a similar basis the operations must be properly planned to ensure you have the environments that you require - for all stages of the project life cycle. You also need the appropriate processes for maintaining them.
+On a similar basis, the operations must be properly planned to ensure you have the environments that you require - for all stages of the project life cycle. You also need the appropriate processes for maintaining them.
 
 #### Milestones {#milestones-3}
 
@@ -248,7 +244,7 @@ On a similar basis the operations must be properly planned to ensure you have th
 
   For example:
 
-    * A list of roles (i.e. groups) with `read`/ `write` access definitions for each
+    * A list of roles (that is, groups) with `read`/ `write` access definitions for each
 
     * Definition of the use of privileges that impact the publish environment; for example, `replicate`
     * For users with minimal privileges, workflows should be defined
@@ -271,7 +267,7 @@ On a similar basis the operations must be properly planned to ensure you have th
 
 * **Recovery Plan**
 
-  Ensure that you have a recovery plan in place. In an emergency situation this must be available to secure the production use of AEM.. This should cover situations such as backup, restore, fallover and others.
+  Ensure that you have a recovery plan in place. In an emergency situation, this must be available to secure the production use of AEM.. This should cover situations such as backup, restore, fallover, and others.
 
 ### Development {#development}
 
@@ -295,7 +291,7 @@ Development is a crucial phase that requires more than just coding.
             * a tool for version control; such as GIT/SVN
             * a build artifact repository manager; such as Archiva/Nexus
 
-    * Third party software integration/dependencies
+    * Third-party software integration/dependencies
     * [Solution integration/dependencies](/help/sites-administering/integration.md)
     * Deployment cadence
 
@@ -305,7 +301,7 @@ Development is a crucial phase that requires more than just coding.
 
     * Architecture
     * Dependencies on development builds; including nightly builds
-    * The possibilities for, or limitations of, testing third party software integration/dependencies
+    * The possibilities for, or limitations of, testing third-party software integration/dependencies
     * Testing tools
     * Automated testing strategy
 
@@ -315,14 +311,14 @@ Development is a crucial phase that requires more than just coding.
 
     * Architecture
     * Deployment cadence
-    * Third party software integration/dependencies
+    * Third-party software integration/dependencies
     * Security setup
     * Baseline performance verified by running the [Tough Day tests](/help/sites-developing/tough-day.md) on the production setup
     * Requirements for performance tests; see [Best Practices for Quality Assurance](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integration**
 
-  Plan, document and test all aspects of the system and [solution integration](/help/sites-administering/integration.md), including:
+  Plan, document, and test all aspects of the system and [solution integration](/help/sites-administering/integration.md), including:
 
     * An automated testing strategy
     * Automated processes to [move applications from development to test, then production](/help/managing/enterprise-devops.md#code-movement)
@@ -330,14 +326,14 @@ Development is a crucial phase that requires more than just coding.
 
 * **Migration**
 
-  Plan, document and test all aspects of the content migration; including:
+  Plan, document, and test all aspects of the content migration; including:
 
     * Content architecture
     * Migration strategy
 
 * **Communication**
 
-  Ensure that all team members and project persona are kept up-to-date as necessary.
+  Ensure that all team members and project persona are kept up-to-date, as necessary.
 
 * **Documentation**
 
@@ -364,7 +360,7 @@ Once the new application is available it will need to undergo stringent testing,
   [User acceptance testing](/help/sites-developing/acceptance-signoff.md) (UAT) is crucial to ensure that:
 
     * The solution fulfills the user/customer requirements
-    * The customer/users accept the solution (function, design and performance)
+    * The customer/users accept the solution (function, design, and performance)
 
   There should be a formalized checklist for customer handover; ideally automated and run on a nightly basis against a snapshot. The results should be sent to the project manager and development team
 
@@ -381,7 +377,7 @@ Once the new application is available it will need to undergo stringent testing,
 
   >[!NOTE]
   >
-  >This process will have to be continued during normal use of AEM, but these initial stages are the most crucial.
+  >This process has to be continued during normal use of AEM, but these initial stages are the most crucial.
 
 ### Rollout {#rollout}
 
@@ -427,7 +423,7 @@ Rollout of your new application needs careful planning to ensure a smooth Go Liv
 
 ### Go Live {#go-live}
 
-You want your Go Live to be as smooth as possible. Again the final steps need planning for clean execution.
+You want your Go Live to be as smooth as possible. Again, the final steps need to plan for clean execution.
 
 #### Milestones {#milestones-7}
 
@@ -441,7 +437,7 @@ You want your Go Live to be as smooth as possible. Again the final steps need pl
 
 * **Fallback**
 
-  Ensure that all systems, procedures and mechanisms required for fallback are in place before going live.
+  Ensure that all systems, procedures, and mechanisms required for fallback are in place before going live.
 
 * **Support**
 
@@ -459,7 +455,7 @@ You want your Go Live to be as smooth as possible. Again the final steps need pl
 
 The checklists are designed by persona. These are the roles with significant involved in the project life cycle.
 
-There are also some [other persona](#other-persona) that are involved in specific tasks.
+There is also some [other persona](#other-persona) that are involved in specific tasks.
 
 ### Project Sponsor {#project-sponsor}
 
@@ -477,7 +473,7 @@ The project sponsor is:
 
 The project manager is:
 
-* Responsible for the overall delivery of the project based on the requirements (e.g. scope, KPIs, success criteria and definition) provided by the project sponsor.
+* Responsible for the overall delivery of the project based on the requirements (for example, scope, KPIs, success criteria and definition) provided by the project sponsor.
 * Responsible for defining the budget and resourcing the project based on that budget.
 * The main point of communication for all persona involved in the project.
 
@@ -487,7 +483,7 @@ The solution architect:
 
 * Is responsible for the high-level design of the solution and system.
 * Helps define the implementation strategy for AEM. For example, whether to implement a clustered installation, or a cold standby, or when a content delivery network (CDN) is needed.
-* Also define the AEM solution architecture based on the client requirements. This can include the concept for user roles (with related rights), the relationship between templates and components, or when to use multi site management.
+* Also define the AEM solution architecture based on the client requirements. This can include the concept for user roles (with related rights), the relationship between templates and components, or when to use multisite management.
 
 ### Business Analyst {#business-analyst}
 
@@ -498,7 +494,7 @@ The business analyst:
     * for the project manager to use when planning the development
     * for the development team to work from during design and development.
 
-* Works closely with the client to analyse the requirements. They match these against:
+* Works closely with the client to analyze the requirements. They match these against:
 
     * The definition of success.
     * The criteria for success.
@@ -515,7 +511,7 @@ The development lead:
     * ensuring that it is aligned with the business and performance KPIs
     * taking into account the success criteria and definition
 
-* Works closely with the architect (especially when drawing up the development strategy for AEM) to define aspects such as the relationship between templates and components, the integration strategy for third party applications and any specialized functionality.
+* Works closely with the architect (especially when drawing up the development strategy for AEM) to define aspects such as the relationship between templates and components, the integration strategy for third-party applications and any specialized functionality.
 
 ### Quality Lead {#quality-lead}
 
@@ -542,7 +538,7 @@ The system engineer:
 The security lead:
 
 * Is responsible for the overall security concept of the solution, ensuring that it is aligned with any requirements and policies from the client.
-* Delivers a security concept, security operations and recommendations for any hardware based security concepts; such as zones and firewalls.
+* Delivers a security concept, security operations and recommendations for any hardware-based security concepts; such as zones and firewalls.
 
 ### Other Persona {#other-persona}
 
@@ -560,7 +556,7 @@ The security lead:
 
 * Technical Writers
 
-    * Depending on the scale and nature of the project, specialized technical writers can be used to write guidelines and manuals for specific groups; e.g. a Maintenance manual for system administrators or a User Guide for the authors.
+    * Depending on the scale and nature of the project, specialized technical writers can be used to write guidelines and manuals for specific groups. For example, a Maintenance manual for system administrators or a User Guide for the authors.
 
 * System Administrators
 
@@ -581,16 +577,16 @@ The checklists cover the **Required Documents** and **Deliverables** for each mi
 
 The **Required Documents** are needed by the appropriate persona when producing their deliverables.
 
-For each **Required Document** the persona should indicate:
+For each **Required Document**, the persona should indicate:
 
 * **Y/N**: whether it has been received.
 * **1-3**: an indication of the quality of the received document.
 
 ### Deliverables {#deliverables}
 
-For each milestone the appropriate persona are responsible for delivering specific documents and therefore realizing their responsibilities for a specific milestone.
+For each milestone, the appropriate persona are responsible for delivering specific documents and therefore realizing their responsibilities for a specific milestone.
 
-For each **Deliverable** the persona must indicate:
+For each **Deliverable**, the persona must indicate:
 
 * **Y/N**: whether it has been completed.
 
@@ -627,4 +623,4 @@ For best practices on deploying, administering, developing, or authoring, see th
 
 * Related Documentation
 
-    * Adobe Experience Cloud - [Planning for the Adobe Experience Cloud](https://helpx.adobe.com/marketing-cloud/how-to/planning.html)
+    * Adobe Experience Cloud - [Planning for the Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

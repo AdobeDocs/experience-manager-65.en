@@ -776,7 +776,7 @@ The status codes used by VLT are:
 
 ## Setting Up FileVault Sync {#setting-up-filevault-sync}
 
-The vault sync service is used to synchronize repository content with a local filesystem representation and vice versa. This is achieved by installing an OSGi service that will listen for repository changes and will scan the filesystem content periodically. It uses the same serialization format as vault for mapping the repository content to disk.
+The vault sync service is used to synchronize repository content with a local filesystem representation and conversely. This is achieved by installing an OSGi service that will listen for repository changes and will scan the filesystem content periodically. It uses the same serialization format as vault for mapping the repository content to disk.
 
 >[!NOTE]
 >
@@ -940,7 +940,7 @@ To setup a development environment based on a sync folder proceed as follows:
    ***
    ```
 
-Your local folder is now synchronized with the repository. The synchronization is bi-directionnal so modification from the repository will be applied to you local sync folder and vice versa.
+Your local folder is now synchronized with the repository. The synchronization is bi-directionnal so modification from the repository will be applied to you local sync folder and conversely.
 
 >[!NOTE]
 >

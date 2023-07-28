@@ -12,6 +12,7 @@ discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 ---
+
 # Principal View for Permissions Management{#principal-view-for-permissions-management}
 
 ## Overview {#overview}
@@ -24,41 +25,41 @@ AEM 6.5 introduces Permissions Management for Users and Groups. The main functio
 
 The new UI based permissions management is accessed through the Permissions card under Security as shown below:
 
-![](assets/screen_shot_2019-03-17at63333pm.png)
+![Permissions Management UI](assets/screen_shot_2019-03-17at63333pm.png)
 
 The new view makes it easier to look at the whole set of privileges and restrictions for a given principal at all paths where Permissions have been granted explicitly. This removes the need to go to
 
 CRXDE to manage advanced privileges and restrictions. It has been consolidated in the same view. The view defaults to the Group "everyone".
 
-![](assets/unu-1.png)
+![View of "everyone" group](assets/unu-1.png)
 
 There is a filter that allows the user to select the type of principals to look at **Users**, **Groups**, or **All **and search for any principal**.**
 
-![](assets/image2019-3-20_23-52-51.png)
+![Search for types of Principals](assets/image2019-3-20_23-52-51.png)
 
 ### Viewing Permissions for a Principal {#viewing-permissions-for-a-principal}
 
 The frame on the left allows users to scroll down to find any principal or search for a Group or a User based on the selected filter, as shown below:
 
-![](assets/doi-1.png)
+![View Permissions for a Principal](assets/doi-1.png)
 
-Clicking on the name shows the assigned permissions on the right. The permissions pane shows the the list of Access Control Entries on specific paths along with configured restrictions.
+Clicking on the name shows the assigned permissions on the right. The permissions pane shows the list of Access Control Entries on specific paths along with configured restrictions.
 
-![](assets/trei-1.png)
+![View ACL List](assets/trei-1.png)
 
 ### Adding new Access Control Entry for a Principal {#adding-new-access-control-entry-for-a-principal}
 
 New permissions can be added by adding a new Access Controlling Entry by clicking the Add ACE button.
 
-![](assets/patru.png)
+![Add new ACL for a Principal](assets/patru.png)
 
 This brings up the window shown below, the next step is to choose a path where the permission needs to be configured.
 
-![](assets/cinci-1.png)
+![Configure permissions path](assets/cinci-1.png)
 
 Here we select a path where we want to configure a permission for **dam-users**:
 
-![](assets/sase-1.png)
+![Example configuration for dam-users](assets/sase-1.png)
 
 After the path is selected, the workflow goes back to this screen, where the user can then select one or more of the privileges from the available namespaces (like `jcr`, `rep` or `crx`) as shown i below.
 
@@ -68,17 +69,17 @@ Privileges can be added by searching using the text field and then selecting fro
 >
 >For a complete list of privileges and descriptions, please see [this page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Search permission for a given path.](assets/image2019-3-21_0-5-47.png) ![Add New Entry for 'dam-users' as shown by a path selected in vertical columns.](assets/image2019-3-21_0-6-53.png)
 
 After the list of privileges has been selected, the user can choose the Permission Type : Deny or Allow, as shown below.
 
-![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
+![Select permission](assets/screen_shot_2019-03-17at63938pm.png) ![Select permission](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Using Restrictions {#using-restrictions}
 
 In addition to list of privileges and the Permission Type on a given path, this screen also allows to add restrictions for fine grained access control as shown below:
 
-![](assets/image2019-3-21_1-4-14.png)
+![Add restrictions](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
@@ -86,7 +87,7 @@ In addition to list of privileges and the Permission Type on a given path, this 
 
 Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon. 
 
-![](assets/sapte-1.png) ![](assets/opt-1.png)
+![Add the restriction type](assets/sapte-1.png) ![Add the restriction type](assets/opt-1.png)
 
 The new ACE is reflected in the Access Control List as shown below. Note that `jcr:write` is an aggregate privilege that includes `jcr:removeNode` that was added above, but is not shown below as its covered under `jcr:write`.
 
@@ -104,17 +105,17 @@ The edit screen is shown with configured ACEs preselected, these can be deleted 
 
 Here we are adding the `addChildNodes` privilege for **dam-users** on the given path.
 
-![](assets/image2019-3-21_0-45-35.png)
+![Add privilege](assets/image2019-3-21_0-45-35.png)
 
-Changes can be saved by clicking the **Save** button on top right, and the changes will reflect in the new permissions for **dam-users **as shown below:
+Changes can be saved by clicking the **Save** button on top right, and the changes will reflect in the new permissions for **dam-users** as shown below:
 
-![](assets/zece-1.png)
+![Save changes](assets/zece-1.png)
 
 ### Deleting ACEs {#deleting-aces}
 
 Access Control Entries can be deleted to remove all permissions given to a principal on a specific path. The X icon on next to ACE can be used to delete it as shown below:
 
-![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
+![Delete ACEs](assets/image2019-3-21_0-53-19.png) ![Delete ACEs](assets/unspe.png)
 
 ### Classic UI Privilege Combinations {#classic-ui-privilege-combinations}
 

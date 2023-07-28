@@ -14,6 +14,12 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 ---
 # Integrating with Adobe Analytics{#integrating-with-adobe-analytics}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html)                  |
+| AEM 6.5     | This article         |
+
+
 Integrating Adobe Analytics and AEM allows you to track your web page activity:
 
 * An Adobe Analytics configuration enables AEM to authenticate with Adobe Analytics.

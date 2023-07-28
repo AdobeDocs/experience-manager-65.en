@@ -59,7 +59,7 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Node path widget</td>
-   <td><p>Displays the path to the currently selected node.</p> <p>You can also use it to jump to a node, by entering the path by hand, or pasting it from somewhere else, and hitting Enter.</p> <p>It also provides support for looking for nodes with specific node name. Enter the name of the node you would like to find, and wait (or hit the search symbol on the right-hand side). You can try entering, e.g., the string <em>oak</em> into the widget to see how it works. If a given node or nodes is loaded into the explorer pane, the list will be displayed, and you can select the path and hit Enter to navigate to it. Note that it only works for the nodes currently loaded into the CRXDE client application in browser. If you want to search the whole repository, use Tools, then Query.</p> </td>
+   <td><p>Displays the path to the currently selected node.</p> <p>You can also use it to jump to a node, by entering the path by hand, or pasting it from somewhere else, and hitting Enter.</p> <p>It also provides support for looking for nodes with specific node name. Enter the name of the node you would like to find, and wait (or hit the search symbol on the right-hand side). You can try entering, for example,, the string <em>oak</em> into the widget to see how it works. If a given node or nodes is loaded into the explorer pane, the list will be displayed, and you can select the path and hit Enter to navigate to it. Note that it only works for the nodes currently loaded into the CRXDE client application in browser. If you want to search the whole repository, use Tools, then Query.</p> </td>
   </tr>
   <tr>
    <td>Explorer pane</td>
@@ -75,7 +75,7 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Access Control tab</td>
-   <td><p>Display permissions based on current path, repository-level or principal.</p> <p>The permissions are broken down into</p> <p>- <strong>Applicable Access Control Policy</strong>: The policies that can be applied to the current selection.</p> <p>- <strong>Local Access Control Policies</strong>: The current policies applied locally to the current selection.</p> <p>- <strong>Effective Access Control Policies</strong>: The current policies applied for the current selection, might be set locally or inherited from parent nodes.</p> <p>Note. To be able to see the Access Control information at all, the user logged in to CRXDE Lite must have rights to read ACL entries. The anonymous user cannot see this information by default - please log in as, e.g., admin to see the information.</p> </td>
+   <td><p>Display permissions based on current path, repository-level or principal.</p> <p>The permissions are broken down into</p> <p>- <strong>Applicable Access Control Policy</strong>: The policies that can be applied to the current selection.</p> <p>- <strong>Local Access Control Policies</strong>: The current policies applied locally to the current selection.</p> <p>- <strong>Effective Access Control Policies</strong>: The current policies applied for the current selection, might be set locally or inherited from parent nodes.</p> <p>Note. To be able to see the Access Control information at all, the user logged in to CRXDE Lite must have rights to read ACL entries. The anonymous user cannot see this information by default - please log in as, for example,, admin to see the information.</p> </td>
   </tr>
   <tr>
    <td>Replication tab</td>
@@ -131,7 +131,7 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Login widget<br /> </td>
-   <td><p>Displays the currently logged-in users and the workspace they are logged into, e.g., admin@crx.default.</p> <p>Click it to log in or re-login as a specific user. If you don't specify a workspace to log in to, you will be logged into the default workspace, crx.default.</p> <p>If you want to browse the repository as Anonymous user, use <strong>anonymous</strong> as the login name, and any password (e.g., a space or a dot).<br /> </p> <p>If your authorization is no longer valid (e.g., it is expired), the login widget displays "<strong>Unauthorized - Login...</strong>". Click it to log in again.</p> </td>
+   <td><p>Displays the currently logged-in users and the workspace they are logged into, for example,, admin@crx.default.</p> <p>Click it to log in or re-login as a specific user. If you don't specify a workspace to log in to, you will be logged into the default workspace, crx.default.</p> <p>If you want to browse the repository as Anonymous user, use <strong>anonymous</strong> as the login name, and any password (for example,, a space or a dot).<br /> </p> <p>If your authorization is no longer valid (for example,, it is expired), the login widget displays "<strong>Unauthorized - Login...</strong>". Click it to log in again.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -214,7 +214,7 @@ It creates a dialog with the following structure:
 
 You can now adapt the dialog to your needs by modifying properties or creating new nodes.
 
-You can also use the Dialog Editor to edit a dialog. Double clicking the dialog node in CRXDE Lite will bring up the editor. More information about the Dialog Editor can be found [here](/help/sites-developing/dialog-editor.md).
+You can also use the Dialog Editor to edit a dialog. Double-clicking the dialog node in CRXDE Lite will bring up the editor. More information about the Dialog Editor can be found [here](/help/sites-developing/dialog-editor.md).
 
 ## Creating a Node {#creating-a-node}
 
@@ -231,7 +231,7 @@ You can now adapt the node to your needs by modifying properties or creating new
 >
 >Most of the edit operations, including Create Node, keeps all the changes in memory, and only stores them into the repository upon saving (via the "Save All" button). However some operations such as move are automatically persisted.
 >
->The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the JCR repository first when saving changes. If you receive an error message while saving a node, please check, whether the content structure is valid (e.g., you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+>The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the JCR repository first when saving changes. If you receive an error message while saving a node, please check, whether the content structure is valid (for example,, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
 ## Creating a Property {#creating-a-property}
 

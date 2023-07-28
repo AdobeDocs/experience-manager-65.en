@@ -74,7 +74,7 @@ Open [Content Insight](/help/sites-authoring/content-insights.md) from the Sites
 1. In the Sites console, select the page for which you want to see Content Insights.
 1. On the tool bar, click the Analytics and Recommendations icon.
 
-   ![](do-not-localize/chlimage_1-16a.png)
+   ![Analytics and Recommendations icon](do-not-localize/chlimage_1-16a.png)
 
 ## Analytics visible from the Page Editor (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

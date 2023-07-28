@@ -1,21 +1,17 @@
 ---
 title: Mobile On-Demand
-seo-title: Mobile On-Demand
-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
-seo-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
-uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
+description: Follow this page to learn about the roles and responsibilities for Adobe Experience Manager mobile On-Demand services author.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
 ---
 # Mobile On-Demand{#mobile-on-demand}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -29,9 +25,9 @@ exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-An ***AEM Author* (or *Marketer*)** uses custom-developed or out-of-the-box templates and components to add and edit pages, drag and drop components and add media of all types from the DAM including images, videos and text fragments (content fragments). AEM's built-in content editor is then used by *AEM Authors* to create rich and relevent experiences within the app, including integration with the rest of the Adobe Marketing Cloud.
+An ***AEM Author* (or *Marketer*)** uses custom-developed or out-of-the-box templates and components to add and edit pages, drag and drop components and add media of all types from the DAM including images, videos, and text fragments (content fragments). AEM's built-in content editor is then used by *AEM Authors* to create rich and relevant experiences within the app, including integration with the rest of the Adobe Experience Cloud.
 
-An AEM author is responsible for the following tasks while creating an app using AEM Mobile On Demand Services.
+An AEM author is responsible for the following tasks while creating an app using AEM Mobile On-Demand Services.
 
 **Authoring AEM Content for AEM Mobile On-Demand Services App** involves following actions:
 

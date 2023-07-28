@@ -101,7 +101,7 @@ See [OSGi Configuration in the Repository](/help/sites-deploying/configuring-osg
 
 >[!NOTE]
 >
->For [Installation Run Modes](#installation-run-modes) (e.g. author) the run mode cannot be changed after installation. However, changes to the individual configuration properties will take effect upon restart.
+>For [Installation Run Modes](#installation-run-modes) (for example, author) the run mode cannot be changed after installation. However, changes to the individual configuration properties will take effect upon restart.
 
 ## Defining additional bundles to be installed for a run mode {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 

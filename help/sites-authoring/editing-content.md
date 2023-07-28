@@ -34,7 +34,7 @@ Content is added using [components](/help/sites-authoring/default-components-con
 
 The page toolbar offers access to the appropriate functionality, dependent on the page configuration.
 
-![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
+![Page Toolbar](assets/screen_shot_2018-03-22at111338.png)
 
 The toolbar offers access to numerous options. Depending on your current context and configuration, some options may not be available.
 
@@ -42,55 +42,55 @@ The toolbar offers access to numerous options. Depending on your current context
 
   This opens/closes the side panel, which holds the [Asset Browser](/help/sites-authoring/author-environment-tools.md#assets-browser), [Component Browser](/help/sites-authoring/author-environment-tools.md#components-browser), and [Content Tree](/help/sites-authoring/author-environment-tools.md#content-tree).
 
-  ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![Toggle Side Panel](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Page Information**
 
   Provides access to the [Page Information](/help/sites-authoring/author-environment-tools.md#page-information) menu including page details and actions that can be taken on the page including viewing and editing page information, viewing page properties, and publishing/unpublishing the page.
 
-  ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![Page Information](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulator**
 
   Toggles the [emulator toolbar](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), which is used to emulate the look-and-feel of the page on another device. This is automatically toggled in layout mode.
 
-  ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Emulator](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
   Opens the [context hub](/help/sites-authoring/ch-previewing.md). Only available in Preview mode.
 
-  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![Context Hub](assets/screen_shot_2018-03-22at111543.png)
 
 * **Page Title**
 
   This is purely informational.
 
-  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![Page Title](assets/screen_shot_2018-03-22at111554.png)
 
 * **Mode Selector**
 
   Displays the current [mode](/help/sites-authoring/author-environment-tools.md#page-modes) and allows you to select another mode such as edit, layout, timewarp, or targeting.
 
-  ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![Mode Selector](assets/chlimage_1-120.png)
 
 * **Preview**
 
   Enables [preview mode](/help/sites-authoring/editing-content.md#preview-mode). This displays the page as it will appear when published.
 
-  ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![Preview mode](assets/chlimage_1-121.png)
 
 * **Annotate**
 
   Allows you to add [annotations](/help/sites-authoring/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
 
-  ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![Annotate](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### Status Notification {#status-notification}
 
 If a page is part of a [workflow](/help/sites-authoring/workflows.md) or multiple workflows, this information is shown in a notification bar at the top of the screen when editing the page.
 
-![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
+![workflows notification](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Completing and delegating workflow steps via the notification bar works as it do
 
 If the page is subject to multiple workflows, the number of workflows is displayed at the right end of the notification along with arrow buttons to allow you to scroll through the workflows.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![Notification for number of workflows](assets/chlimage_1-122.png)
 
 ## Component Placeholder {#component-placeholder}
 
@@ -116,11 +116,11 @@ The component placeholder is an indicator to show where a component will be posi
 
 * When adding a new component to the page (dragging from the component browser):
 
-  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![adding a new component](assets/screen_shot_2018-03-22at111928.png)
 
 * When moving an existing component:
 
-  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![moving an existing component](assets/screen_shot_2018-03-22at112445.png)
 
 ## Inserting a Component {#inserting-a-component}
 
@@ -147,13 +147,13 @@ You can add a new component by using the **Drag components here** box of the par
 
     * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
 
-   ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
+   ![Insert component selection](assets/screen_shot_2018-03-22at112536.png)
 
     * If you are on a desktop device you can double-click on the **Drag components here** box.
 
    The **Insert New Component** dialog will open to allow you to select your required component:
 
-   ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
+   ![Insert New Component](assets/screen_shot_2018-03-22at112650.png)
 
 1. The selected component will be added to the bottom of the page. [Edit](#editmovecopypastedelete) the component as required.
 
@@ -212,7 +212,7 @@ To create a component by dragging one of the above asset types:
 
 If when browsing the assets you find that you need to make a quick change to an asset, you can start the [asset editor](/help/assets/manage-assets.md) directly from the browser by clicking the edit icon next to the asset's name.
 
-![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
+![edit icon](assets/screen_shot_2018-03-22at112735.png)
 
 ## Edit/Configure/Copy/Cut/Delete/Paste {#edit-configure-copy-cut-delete-paste}
 
@@ -220,43 +220,43 @@ Selecting a component will open the toolbar. This provides access to various act
 
 The actual actions available to the user will be shown as appropriate and not all actions may be described here.
 
-![screen_shot_2018-03-22at112909](assets/screen_shot_2018-03-22at112909.png)
+![component toolbar options](assets/screen_shot_2018-03-22at112909.png)
 
 * **Edit**
 
   [Dependent on the component type](/help/sites-authoring/default-components.md) this will allow you to [edit the content of the component](#edit-content). Often a toolbar will be provided.
 
-  ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![Edit](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configure**
 
   [Dependent on the component type](/help/sites-authoring/default-components.md) this will allow you to edit and configure the properties of the component. Often a dialog will be opened.
 
-  ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configure](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copy**
 
   This will copy the component to the clipboard. After the paste action, the original component will remain.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![Copy](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Cut**
 
   This will copy the component to the clipboard. After the paste action, the original component will be removed.
 
-  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![Cut](assets/screen_shot_2018-03-22at113007.png)
 
 * **Delete**
 
   This will delete the component from the page with your confirmation.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![Delete](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Insert component**
 
   This opens the dialog to [add a new component](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-  ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![Insert Component](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Paste**
 
@@ -264,9 +264,9 @@ The actual actions available to the user will be shown as appropriate and not al
 
     * You can paste to the same page or to a different page.
     * The pasted item will be pasted above the item where you select the paste action.
-    * The Pate action will only be shown if there is content on the clipboard.
+    * The Paste action will only be shown if there is content on the clipboard.
 
-  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![Paste](assets/screen_shot_2018-03-22at113553.png)
 
   >[!NOTE]
   >
@@ -276,25 +276,25 @@ The actual actions available to the user will be shown as appropriate and not al
 
   This allows you to select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![Group](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Parent**
 
   Allows you to select the parent component of the selected component.
 
-  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![Parent](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
   This allows you to modify the [layout](/help/sites-authoring/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-authoring/author-environment-tools.md#page-modes) for the entire page.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Convert to an experience fragment variation**
 
   This allows you to create a new [experience fragment](/help/sites-authoring/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
-  ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![Convert to Experience Fragment Variation](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Edit (Content) {#edit-content}
 
@@ -311,11 +311,11 @@ The exact edit options will depend on the component. For some components [all ac
 
 * [Text component](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![Text component](assets/screen_shot_2018-03-22at120215.png)
 
 * Image component
 
-  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![Image component](assets/screen_shot_2018-03-22at120252.png)
 
   >[!NOTE]
   >
@@ -328,11 +328,11 @@ The exact edit options will depend on the component. For some components [all ac
 
   [Entering full screen mode](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) for the image component allows for more space to edit the image as well as showing extra editing options such as **Launch Map** and **Reset Zoom**. In addition, full screen allows for crop presets to be selected.
 
-  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![Image component full screen](assets/screen_shot_2018-03-22at120529.png)
 
 * Components constructed from more than one basic component, such as the [Text & Image foundation component](/help/sites-authoring/default-components-foundation.md#text-image), first ask you to confirm which set of edit options you want:
 
-  ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![Components edit options](assets/chlimage_1-123.png)
 
 ### Drag and Drop Assets into Component {#drag-and-drop-assets-into-component}
 
@@ -350,11 +350,11 @@ For specific component types you can drag and drop assets from the asset browser
 
 For all components the full screen mode can be accessed with (and exited from):
 
-![](do-not-localize/chlimage_1-20.png)
+![Edit Full Screen Mode](do-not-localize/chlimage_1-20.png)
 
 For example, the **Text** component:
 
-![screen_shot_2018-03-22at121616](assets/screen_shot_2018-03-22at121616.png)
+![Text editor](assets/screen_shot_2018-03-22at121616.png)
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ To move a paragraph component:
 1. Select the paragraph to be moved with either tap-and-hold or click-and-hold.
 1. Drag the paragraph to the new location. AEM indicates where the paragraph can be deposited. Drop it in your desired location.
 
-   ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
+   ![moving paragraph component](assets/screen_shot_2018-03-22at121821.png)
 
 1. Your paragraph is moved.
 
@@ -381,11 +381,11 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-authoring
 
 1. When in **Edit** mode of the sites console, selecting a component reveals the component's toolbar.
 
-   ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
+   ![Edit mode in form](assets/screen_shot_2018-03-22at133756.png)
 
    Click or tap the **Layout** action to adjust the layout of the component.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![Component toolbar](do-not-localize/chlimage_1-21.png)
 
 1. Once the Layout action is selected:
 
@@ -393,13 +393,13 @@ Instead of repeatedly switching from edit to [layout mode](/help/sites-authoring
     * The emulator toolbar is shown at the top of the screen.
     * Layout actions instead of the standard edit actions show on the component toolbar.
 
-   ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
+   ![Form preview on multiple devices](assets/screen_shot_2018-03-22at133843.png)
 
    You can now modify the layout of the component as you would in [layout mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
 1. After making the necessary layout changes, click the **Close** button in the component action menu to stop modifying the layout of the component. The component's toolbar returns to its normal edit state.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![Close](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -421,25 +421,25 @@ You can cancel (then re-enable) the inheritance. Depending on the component, thi
 
   The component toolbar, if the component is on a page that is part of a live copy or launch (based on a live copy). For example:
 
-  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 
   The Cancel Inheritance option is available:
 
-  ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![Cancel Inheritance](do-not-localize/screen_shot_2018-03-22at134406.png)
 
   Or re-enable inheritance if already cancelled:
 
-  ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Reenable inheritance](do-not-localize/screen_shot_2018-03-22at134417.png)
 
   The Rollout action is also available in the blueprint or Live Copy source:
 
-  ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![Rollout](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **An Inherited Paragraph System**
 
   The configuration dialog. For example, as with the Inherited Paragraph System:
 
-  ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![Inherited Paragraph System](assets/chlimage_1-124.png)
 
 ## Editing the Page Template {#editing-the-page-template}
 
@@ -458,7 +458,7 @@ The [Live Copy Status page mode](/help/sites-authoring/author-environment-tools.
 
 For example:
 
-![screen_shot_2018-03-22at134820](assets/screen_shot_2018-03-22at134820.png)
+![Live copy inheritance status](assets/screen_shot_2018-03-22at134820.png)
 
 ## Adding Annotations {#adding-annotations}
 
@@ -493,7 +493,7 @@ When editing content you can preview the page using the preview [mode](/help/sit
 
 When authoring, the preview mode is available using the icon at the top right of the page editor:
 
-![chlimage_1-125](assets/chlimage_1-125.png)
+![Preview](assets/chlimage_1-125.png)
 
 ### View as Published {#view-as-published}
 
@@ -510,7 +510,7 @@ A page can be locked from either:
     1. Select the page with [selection mode](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
     1. Select the lock icon.
 
-  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![Lock icon](assets/screen_shot_2018-03-22at134928.png)
 
 * **Page Editor**
 
@@ -519,7 +519,7 @@ A page can be locked from either:
 
 Once locked the console view information is updated and when editing a lock symbol is shown in the toolbar.
 
-![screen_shot_2018-03-22at135010](assets/screen_shot_2018-03-22at135010.png)
+![Lock symbol](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
@@ -533,7 +533,7 @@ Unlocking a page is very similar to [locking the page](#locking-a-page). Once th
 
 The Page Information menu lists **Unlock** as an option and the Lock icon in the sites console is replaced by an **Unlock** icon.
 
-![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
+![Unlock](assets/screen_shot_2018-03-22at134942.png)
 
 >[!CAUTION]
 >
@@ -545,7 +545,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 
 The following icons allow you to undo or redo an action. These are shown in the toolbar when appropriate:
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Undo and Redo](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >

@@ -14,7 +14,7 @@ exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 
 Learn to create a custom theme, style individual components, and use web fonts in a theme 
 
- ![](do-not-localize/08-style_your_adaptiveformmain.png) 
+ ![hero-image](do-not-localize/08-style_your_adaptiveformmain.png)
 
 This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
@@ -91,7 +91,7 @@ You can use [theme editor](/help/forms/using/themes.md) to create custom themes.
 
 A theme is a separate entity like adaptive forms. It contains styles (CSS) for the components and panels of an adaptive form. Styles include CSS properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style is applied to the corresponding components of an adaptive form.
 
-In this tutorial, you will style header and footer, text and numeric components, attachment component, and buttons. Let’s start with creating a theme:
+In this tutorial, you will style header and footer, text and numeric components, attachment component, and buttons. Let's start with creating a theme:
 
 ### Create a theme {#create-a-theme}
 
@@ -228,7 +228,7 @@ You can use multiple components in an adaptive form to capture data. For example
 
 1. Tap on the empty area above the **[!UICONTROL Customer ID]** field and tap **[!UICONTROL Responsive Panel Container]**. Set the **[!UICONTROL Background]** &gt; **[!UICONTROL Background Color]** to F1F2F2. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   ![](do-not-localize/responsive-panel-container.png)
+   ![Responsive panel container](do-not-localize/responsive-panel-container.png)
 
 ### Style the buttons {#style-the-buttons}
 

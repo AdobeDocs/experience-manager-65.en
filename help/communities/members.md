@@ -1,8 +1,6 @@
 ---
 title: Members & Groups Management Consoles
-seo-title: Members & Groups Management Consoles
 description: How to access Members and Groups Management consoles
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,6 +10,7 @@ discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 ---
+
 # Members & Groups Management Consoles {#members-groups-management-consoles}
 
 ## Overview {#overview}
@@ -43,16 +42,16 @@ In the author environment, to reach the Members console for managing members reg
 >
 >It will not be possible to use the Members console if the [tunnel service](deploy-communities.md#tunnel-service-on-author) is not enabled.
 
-![member-console1](assets/member-console1.png)
+![The member console](assets/member-console1.png)
 
 ### Search {#search-features}
 
 Select the side panel icon on the left side of the `Members` header to toggle open the search side panel.
 
-![](assets/leftpanel-icon.png) 
+![Search side panel icon.](assets/leftpanel-icon.png) 
 
 
-![member-console2](assets/member-console2.png)
+![Filter options for the member console](assets/member-console2.png)
 
 Select the search icon on the left side of the `Members` header to toggle the search side panel closed.
 
@@ -70,9 +69,9 @@ The column headers are
 
 ## Create New Member {#create-new-member}
 
-Select `Create Member` in order to create a user in the publish environment.
+Select `Create Member` to create a user in the publish environment.
 
-![create-member1](assets/create-member1.png)
+![The Create New Member window](assets/create-member1.png)
 
 ### GENERAL - Member Details {#general-member-details}
 
@@ -100,11 +99,11 @@ If the ID defaulted to the email address, the ID will *not* change when the emai
 
 * **[!UICONTROL Add Member to Sites]**
 
-  (*Optional*) Select from existing community sites in order to add the member to the community site's members group.
+  (*Optional*) Select from existing community sites to add the member to the community site's members group.
 
 * **[!UICONTROL Add Member to Groups]**
  
-  (*Optional*) Select from existing member groups in order to add the member to that group.
+  (*Optional*) Select from existing member groups to add the member to that group.
 
 * Select **[!UICONTROL Save]**
 
@@ -149,7 +148,7 @@ The `BADGES` panel provides the ability to manually assign badges as well as rev
 
 See also [Scoring and Badges](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![The Edit Membership Settings window](assets/create-member2.png)
 
 * **[!UICONTROL Add badges]**
   * Begin typing to select from [available badges](badges.md). Once a badge is selected, choose each site, or all sites, on which the badge should be displayed along with the member's avatar.
@@ -170,9 +169,9 @@ To access the Groups console:
 
 ### Create New Group {#create-new-group}
 
-Select `Add Group` in order to create a group in the publish environment.
+Select `Add Group` to create a group in the publish environment.
 
-![group-console1](assets/group-console1.png)
+![The Create New Group window](assets/group-console1.png)
 
 The required fields for creating a new publish-side member group are:
 

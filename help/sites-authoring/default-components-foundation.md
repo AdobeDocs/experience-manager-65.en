@@ -387,7 +387,7 @@ You can either drag and drop an image from the [Assets Browser](/help/sites-auth
 
 After the image is uploaded (and not before), you can use [inplace editing](/help/sites-authoring/editing-content.md#edit-content) to crop/rotate the image as required:
 
-![](do-not-localize/chlimage_1-15.png)
+![Inplace editing toolbar](do-not-localize/chlimage_1-15.png)
 
 >[!NOTE]
 >
@@ -397,7 +397,7 @@ After the image is uploaded (and not before), you can use [inplace editing](/hel
 
 Several additional options are available in the full-screen editing mode; for example, map and zoom:
 
-![](do-not-localize/chlimage_1-16.png)
+![Full screen editing mode - map and zoom](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
 >

@@ -14,6 +14,8 @@ exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
 ---
 # Create an adaptive form using a set of adaptive forms{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
 ## Overview {#overview}
 
 In a workflow, such as an application for opening a bank account, your users fill multiple forms. Instead of asking them to fill a set of forms, you can stack the forms together and build a large form (parent form). When you add an adaptive form to the larger form, it is added as a panel (child form). You add a set of child forms to create a parent form. You can show or hide panels based on user input. Buttons of the parent form, such as submit and reset, overwrite the buttons of the child form. To add an adaptive form in the parent form, you can drag-drop the adaptive form from the asset browser (like adaptive form fragments).

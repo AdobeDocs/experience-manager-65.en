@@ -12,6 +12,7 @@ discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 ---
+
 # E-mail Marketing{#e-mail-marketing}
 
 >[!NOTE]
@@ -50,13 +51,13 @@ This document describes the basics of creating newsletters in AEM. For more deta
 
 1. Select the list view, using the icon:
 
-   ![](do-not-localize/mcm_icon_listview-1.png)
+   ![List view icon](do-not-localize/mcm_icon_listview-1.png)
 
 1. Click **New...**
 
    You can specify the **Title**, **Name** and type of experience to be created; in this case, Newsletter.
 
-   ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
+   ![Create Experience dialog](assets/mcm_createnewsletter.png)
 
 1. Click **Create**.
 
@@ -64,7 +65,7 @@ This document describes the basics of creating newsletters in AEM. For more deta
 
    The **Default Recipients List** is a mandatory field as this forms the touchpoint for the newsletter (see [Working with Lists](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) for more information about lists).
 
-   ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
+   ![Page properties dialog](assets/mcm_newnewsletterdialog.png)
 
     * **From Name**
       Name that should appear as the sender of the newsletter.
@@ -104,7 +105,7 @@ You can add content, including dynamic content, into your newsletter as you woul
    >
    >You personalize newsletters by using variables. In the Geometrixx newsletter, variables are available in the Text component. Values for the variables are inherited from the information in the user profile.
 
-   ![mcm_newsletter_content](assets/mcm_newsletter_content.png)
+   ![Editing newsletter content](assets/mcm_newsletter_content.png)
 
 1. To insert variables, select the variable from the list and click **Insert**. Variables are populated from the Profile.
 
@@ -122,13 +123,13 @@ To personalize a newsletter and simulate how it will look:
 
 1. Place the cursor where you want the variable to appear and select a variable from the drop-down list and click **Insert**. Do this for as many variables as required and click **OK**.
 
-   ![mcm_newsletter_variables](assets/mcm_newsletter_variables.png)
+   ![Adding variables](assets/mcm_newsletter_variables.png)
 
 1. To simulate how the variable will look when sent, press CTRL+ALT+c to open the client context and select **Load**. Select the user from the list whose profile you would like to load and click **OK**.
 
    The information from the profile you loaded has populated the variables.
 
-   ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
+   ![Testing variables](assets/mc_newsletter_testvariables.png)
 
 ## Testing Newsletters in Different E-mail Clients {#testing-newsletters-in-different-e-mail-clients}
 
@@ -155,11 +156,11 @@ To switch between clients, click the corresponding icon to view the newsletter i
 
 1. Click an e-mail client in the top bar to see what the newsletter would look like in that client.
 
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+   ![Switching email clients](assets/chlimage_1-119.png)
 
 1. Repeat this step for any additional e-mail clients you want to see.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+   ![Changing email clients](assets/chlimage_1-120.png)
 
 ## Customizing Newsletter Settings {#customizing-newsletter-settings}
 
@@ -172,11 +173,11 @@ To customize newsletter settings:
 
 1. From the MCM, open the newsletter you want to customize settings for.
 
-   ![mcm_newsletter_open](assets/mcm_newsletter_open.png)
+   ![Opening a newsletter](assets/mcm_newsletter_open.png)
 
 1. At the top of the newsletter, click **Settings**.
 
-   ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
+   ![Editing newsletter settings](assets/mcm_newsletter_settings.png)
 1. Enter the **From** e-mail address
 
 1. Modify the **Subject** of the e-mail, if necessary.
@@ -207,7 +208,7 @@ To flight test newsletters:
 
 1. At the top of the newsletter, click **Test** to test before sending.
 
-   ![mcm_newsletter_testsettings](assets/mcm_newsletter_testsettings.png)
+   ![Settings to test a newsletter](assets/mcm_newsletter_testsettings.png)
 
 1. Enter the test mail address where you want the newsletter sent and click **Send**. If you want to change the profile, you load another profile in the client context. You do this by pressing CTRL+ALT+c and selecting Load and loading a profile.
 
@@ -247,11 +248,11 @@ To send out a newsletter from within the campaign:
 
 1. In the recipient's list, select the list you want to receive the newsletter and click **Next**.
 
-   ![mcm_newslettersend](assets/mcm_newslettersend.png)
+   ![Sending a newsletter](assets/mcm_newslettersend.png)
 
 1. Setup completion is confirmed. Click **Send** to actually send the newsletter.
 
-   ![mcm_newslettersendconfirm](assets/mcm_newslettersendconfirm.png)
+   ![Newsletter sent confirmation](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
@@ -271,15 +272,15 @@ To send out a newsletter from a list:
 
 1. In the **Tools** menu, select **Send Newsletter**. The **Send Newsletter** window opens.
 
-   ![mcm_newslettersendfromlist](assets/mcm_newslettersendfromlist.png)
+   ![Newletter console](assets/mcm_newslettersendfromlist.png)
 
 1. In the **Newsletter** field, select the newsletter you want to send and click **Next**.
 
-   ![mcm_newslettersenddialog](assets/mcm_newslettersenddialog.png)
+   ![Send newsletter dialog](assets/mcm_newslettersenddialog.png)
 
 1. Setup completion is confirmed. Click **Send** to send the selected newsletter to the specified list of leads.
 
-   ![mcm_newslettersenddialog_confirmation](assets/mcm_newslettersenddialog_confirmation.png)
+   ![Send confirmation](assets/mcm_newslettersenddialog_confirmation.png)
 
    Your newsletter is sent to the selected recipients.
 
@@ -293,6 +294,6 @@ To subscribe to a newsletter (using the Geometrixx web site as an example):
 
 1. Click **Websites** and navigate to the Geometrixx **Toolbar** and open it.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+   ![Subscription sample](assets/chlimage_1-121.png)
 
 1. In the Geometrixx Newsletter **Sign Up** field, enter your e-mail address and click **Sign Up**. You are now subscribed to the newsletter.

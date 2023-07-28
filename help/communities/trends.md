@@ -56,7 +56,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Type**
 
-  Specify whether to to display data regarding community members or user generated content (UGC).
+  Specify whether to display data regarding community members or user generated content (UGC).
 
   Select from:
 

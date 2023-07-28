@@ -1,18 +1,18 @@
 ---
-title: Authentication for Remote AEM GraphQL Queries on Content Fragments
-description: Understand the authentication required for Remote AEM GraphQL queries in order to secure your headless content delivery.
+title: Authentication for Remote Adobe Experience Manager GraphQL Queries on Content Fragments
+description: Understand the authentication required for Remote Adobe Experience Manager GraphQL queries to secure your headless content delivery.
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
 ---
-# Authentication for Remote AEM GraphQL Queries on Content Fragments {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
+# Authentication for Remote Adobe Experience Manager GraphQL Queries on Content Fragments {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-A primary use case for The [Adobe Experience Manager (AEM) GraphQL API for Content Fragment Delivery](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) is to accept remote queries from third party applications or services. These remote queries may require authenticated API access in order to secure headless content delivery.
+A primary use case for The [Adobe Experience Manager (AEM) GraphQL API for Content Fragment Delivery](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) is to accept remote queries from third-party applications or services. These remote queries may require authenticated API access to secure headless content delivery.
 
 >[!NOTE]
 >
->For testing and development you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) interface.
+>For testing and development, you can also access the AEM GraphQL API directly using the [GraphiQL interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
-For authentication the third party service needs to authenticate, using the AEM account username and password.
+For authentication, the third-party service needs to authenticate, using the AEM account username and password.
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 

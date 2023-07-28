@@ -1,14 +1,10 @@
 ---
 title: Enabling JSON Export for a Component
-seo-title: Enabling JSON Export for a Component
 description: Components can be adapted to generate JSON export of their content based on a modeler framework.
-seo-description: Components can be adapted to generate JSON export of their content based on a modeler framework.
-uuid: d7cc3347-2adb-4ea5-94a4-a847a2e66d28
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
 ---
 # Enabling JSON Export for a Component{#enabling-json-export-for-a-component}
@@ -19,7 +15,7 @@ Components can be adapted to generate JSON export of their content based on a mo
 
 The JSON Export is based on [Sling Models](https://sling.apache.org/documentation/bundles/models.html), and on the [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) framework (which itself relies on [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-This means that the component must have a Sling Model if it needs to export JSON. Therefore you will need to follow these two steps to enable JSON export on any component.
+This means that the component must have a Sling Model if it must export JSON. Therefore, follow these two steps to enable JSON export on any component.
 
 * [Define a Sling Model for the component](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Annotate the Sling Model interface](#annotate-the-sling-model-interface)
@@ -30,7 +26,7 @@ First a Sling Model must be defined for the component.
 
 >[!NOTE]
 >
->For an example of using Sling Models see the article [Developing Sling Model Exporters in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
+>For an example of using Sling Models, see [Developing Sling Model Exporters in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en).
 
 The Sling Model implementation class must be annotated with the following:
 
@@ -46,7 +42,7 @@ In addition, this specifies that the Sling Model class can be adapted into the `
 
 >[!NOTE]
 >
->Jackson annotations are not usually specified at the Sling Model class level, but rather at the Model interface level. This is to ensure that the JSON Export is considered as part of the component API.
+>Jackson annotations are not specified at the Sling Model class level, but rather at the Model interface level. This is to ensure that the JSON Export is considered as part of the component API.
 
 >[!NOTE]
 >
@@ -64,11 +60,11 @@ However in such a case the `model` selector must be the first selector and the e
 
 ## Annotate the Sling Model Interface {#annotate-the-sling-model-interface}
 
-To be taken into account by the JSON Exporter framework, the Model interface should implement the `ComponentExporter` interface (or `ContainerExporter`, in the case of a container component).
+To be taken into account by the JSON Exporter framework, the Model interface should implement the `ComponentExporter` interface (or `ContainerExporter`, if there is a container component).
 
 The corresponding Sling Model interface ( `MyComponent`) would be then annotated using [Jackson annotations](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) to define how it should be exported (serialized).
 
-The Model interface needs to be properly annotated to define which methods should be serialized. By default, all methods that respect the usual naming convention for getters will be serialized and will derive their JSON property names naturally from the getter names. This can be prevented or overridden using `@JsonIgnore` or `@JsonProperty` to rename the JSON property.
+The Model interface must be properly annotated to define which methods should be serialized. By default, all methods that respect the usual naming convention for getters is serialized and derives their JSON property names naturally from the getter names. This can be prevented or overridden using `@JsonIgnore` or `@JsonProperty` to rename the JSON property.
 
 ## Example {#example}
 
@@ -85,7 +81,7 @@ You can find the code of this page on GitHub
 
 ## Related Documentation {#related-documentation}
 
-For further details see:
+For more details, see the following:
 
 * The [Content Fragments topic in the Assets user guide](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 

@@ -1,8 +1,6 @@
 ---
 title: SCF Handlebars Helpers
-seo-title: SCF Handlebars Helpers
 description: Handlebars Helper methods to facilitate work with SCF
-seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -21,7 +19,7 @@ Handlebars Helpers (helpers) are methods callable from Handlebars scripts to fac
 
 The implementation includes a client-side and a server-side definition. It is also possible for developers to create custom helpers.
 
-The custom SCF helpers delivered with AEM Communities are defined in the [client libarry](../../help/sites-developing/clientlibs.md):
+The custom SCF helpers delivered with AEM Communities are defined in the [client library](../../help/sites-developing/clientlibs.md):
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
@@ -107,7 +105,7 @@ A helper to add two spans under a div, one for the full text and the other for t
 
 * **safeString**: Boolean
 
-  (Optional) Boolean value indicating whether or not to apply Handlebars.SafeString() before returning the result. Default is false.
+  (Optional) Boolean value indicating whether to apply Handlebars.SafeString() before returning the result. Default is false.
 
 ### Example {#example}
 
@@ -178,7 +176,7 @@ A helper to return content depending on an equality conditional.
 
 ## If-wcm-mode {#if-wcm-mode}
 
-A block helper that tests the current value of [WCM mode](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
+A block helper that tests the current value of [WCM mode](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) against a string separated list of modes.
 
 ### Parameters {#parameters-4}
 
@@ -188,7 +186,7 @@ A block helper that tests the current value of [WCM mode](https://helpx.adobe.co
 
 * **mode**: String
 
-  (Optional) A comma separated list of [WCM modes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
+  (Optional) A comma-separated list of [WCM modes](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) to test if set.
 
 ### Example {#example-2}
 
@@ -232,9 +230,9 @@ See also [Internationalizing Strings in JavaScript Code](../../help/sites-develo
 
 A helper to include a component as a non-existing resource in a template.
 
-This allows the resource to be programmatically customized more easily than is possible for a resource added as a JCR node. See [Add or Include a Communities Component](scf.md#add-or-include-a-communities-component).
+This method lets the resource be programmatically customized more easily than is possible for a resource added as a JCR node. See [Add or Include a Communities Component](scf.md#add-or-include-a-communities-component).
 
-Only a select few of Communities components are includable. For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md).
+Only a select few of Communities components are available to include. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
 This helper, appropriate only on the server-side, provides functionality similar to [cq:include](../../help/sites-developing/taglib.md) for JSP scripts.
 
@@ -250,7 +248,7 @@ This helper, appropriate only on the server-side, provides functionality similar
 
 * **resourceType**: String
 
-  (Optional) resource type will default to resource type from context.
+  (Optional) resource type defaults to resource type from context.
 
 * **template**: String
 
@@ -270,11 +268,11 @@ This helper, appropriate only on the server-side, provides functionality similar
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-This will include a new comments component at `this.id` + /comments.
+Includes a new comments component at `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-A helper that includes an AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example js and css, this tag needs to be used multiple times in the Handlebars script.
+A helper that includes an AEM html client library, which can be a js, a css or a theme library. For multiple inclusions of different types, for example js and css, this tag must be used multiple times in the Handlebars script.
 
 This helper, appropriate only on the server-side, provides functionality similar to [ui:includeClientLib](../../help/sites-developing/taglib.md) for JSP scripts.
 
@@ -282,19 +280,19 @@ This helper, appropriate only on the server-side, provides functionality similar
 
 * **categories**: String
 
-  (Optional) A list of comma-separated client lib categories. This will include all Javascript and CSS libraries for the given categories. The theme name is extracted from the request.
+  (Optional) A list of comma-separated client lib categories. Include all JavaScript and CSS libraries for the given categories. The theme name is extracted from the request.
 
 * **theme**: String
 
-  (Optional) A list of comma-separated client lib categories. This will include all theme related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
+  (Optional) A list of comma-separated client lib categories. Include all theme-related libraries (both CSS and JS) for the given categories. The theme name is extracted from the request.
 
 * **js**: String
 
-  (Optional) A list of comma-separated client lib categories. This will include all Javascript libraries for the given categories.
+  (Optional) A list of comma-separated client lib categories. Includes all JavaScript libraries for the given categories.
 
 * **css**: String
 
-  (Optional) A list of comma-separated client lib categories. This will include all CSS libraries for the given categories.
+  (Optional) A list of comma-separated client lib categories. Includes all CSS libraries for the given categories.
 
 ### Examples {#examples-2}
 
@@ -375,7 +373,7 @@ Depending on how long in the past, may return
 
 A helper that encodes a source string for HTML element content to help guard against XSS.
 
-NOTE: this is not a validator and is not to be used for writing attribute values.
+NOTE: This helper is not a validator and is not to be used for writing attribute values.
 
 ### Parameters {#parameters-9}
 
@@ -393,7 +391,7 @@ NOTE: this is not a validator and is not to be used for writing attribute values
 
 A helper that encodes a source string for writing to an HTML attribute value to help guard against XSS.
 
-NOTE: this is not a validator and is not to be used for writing actionalable attributes (href, src, event handlers).
+NOTE: This helper is not a validator and is not to be used for writing actionable attributes (href, src, event handlers).
 
 ### Parameters {#parameters-10}
 
@@ -411,7 +409,7 @@ NOTE: this is not a validator and is not to be used for writing actionalable att
 
 A helper that encodes a source string for writing to JavaScript string content to help guard against XSS.
 
-NOTE: this is not a validator and is not to be used for writing to arbitrary JavaScript.
+NOTE: This helper is not a validator and is not to be used for writing to arbitrary JavaScript.
 
 ### Parameters {#parameters-11}
 
@@ -427,9 +425,9 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-A helper that sanitizes an URL for writing as an HTML href or srce attribute value to help guard against XSS.
+A helper that sanitizes a URL for writing as an HTML href or srce attribute value to help guard against XSS.
 
-NOTE: this may return an empty string
+NOTE: This helper may return an empty string.
 
 ### Parameters {#parameters-12}
 
@@ -446,16 +444,16 @@ NOTE: this may return an empty string
 ## Handlebars.js Basic Overview {#handlebars-js-basic-overview}
 
 * A Handlebars helper call is a simple identifier (the *name* of the helper), followed by zero or more space-separated parameters.
-* Parameters may be a simple String, number, boolean, or JSON object, as well as an optional sequence of key-value pairs (hash arguments) as the last parameter(s).
+* Parameters may be a simple String, number, boolean, or JSON object, and an optional sequence of key-value pairs (hash arguments) as the last parameters.
 * The keys in hash arguments must be simple identifiers.
 * The values in hash arguments are Handlebars expressions: simple identifiers, paths, or Strings.
 * The current context, `this`, is always available to Handlebars helpers.
 * The context may be a String, number, boolean, or a JSON data object.
 * It is possible to pass an object nested within the current context as the context, such as `this.url` or `this.id` (see following examples of simple and block helpers).
 
-* Block helpers are functions that can be called from anywhere in the template. They can invoke a block of the template zero or more times with a different context each time. They contain a context between {{#*name*}} and {{/*name*}}.
+* Block helpers are functions that can be called from anywhere in the template. They can invoke a block of the template zero or more times with a different context each time. They contain a context between `{{#*name*}}` and `{{/*name*}}`.
 
-* Handlebars provides a final parameter to helpers named 'options'. The special object 'options' includes
+* Handlebars provide a final parameter to helpers named 'options'. The special object 'options' includes
 
     * Optional private data (options.data)
     * Optional key-value properties from the call (options.hash)
@@ -518,11 +516,11 @@ Would render:
 
 ## Custom SCF Helpers {#custom-scf-helpers}
 
-Custom helpers must be implemented on the server-side as well as the client-side, especially when passing data. For SCF, most templates are compiled and rendered on the server-side as the server generates the HTML for a given component when the page is requested.
+Custom helpers must be implemented on the server-side and the client-side, especially when passing data. For SCF, most templates are compiled and rendered on the server-side as the server generates the HTML for a given component when the page is requested.
 
 ### Server-side Custom Helpers {#server-side-custom-helpers}
 
-To implement and register a custom SCF helper on the server-side, simply implement the Java interface [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
+To implement and register a custom SCF helper on the server-side, simply implement the Java&trade; interface [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), make it an [OSGi Service](../../help/sites-developing/the-basics.md#osgi) and install it as part of an OSGi bundle.
 
 For example:
 

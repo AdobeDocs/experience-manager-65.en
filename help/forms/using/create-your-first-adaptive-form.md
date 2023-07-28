@@ -13,6 +13,12 @@ exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 ---
 # Tutorial: Create your first adaptive form {#tutorial-create-your-first-adaptive-form}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html)                  |
+| AEM 6.5     | This article         |
+
+
  ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## Introduction {#introduction}
@@ -90,7 +96,7 @@ Goals:
 
 ## Step 4: Style your adaptive form {#step-style-your-adaptive-form}
 
-![](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![adapative-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
 Adaptive forms provide themes and an [editor](../../forms/using/themes.md) to create themes for the adaptive forms. A theme contains styling details for components and panels, and you can reuse a theme in different forms. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply the theme to your form, the specified style reflects on corresponding components of your form. Adaptive forms also support in-line styling for styles specific to a form.
 

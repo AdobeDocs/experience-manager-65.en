@@ -16,6 +16,11 @@ exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 ---
 # Supporting new locales for adaptive forms localization{#supporting-new-locales-for-adaptive-forms-localization}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html)                  |
+| AEM 6.5     | This article         |
+
 ## About locale dictionaries {#about-locale-dictionaries}
 
 The localization of adaptive forms relies on two types of locale dictionaries:
@@ -89,7 +94,7 @@ I18N.js
 
 ### Add adaptive form client library for a locale {#add-adaptive-form-client-library-for-a-locale-br}
 
-Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, with category as `guides.I18N.<locale>` and and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`. ``
+Create a node of type `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, with category as `guides.I18N.<locale>` and dependencies as `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` and `guide.common`. ``
 
 Add the following files to the client library:
 

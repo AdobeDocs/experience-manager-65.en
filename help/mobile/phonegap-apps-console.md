@@ -1,8 +1,6 @@
 ---
 title: Creating and Editing Apps Using the Apps Console
-seo-title: Creating and Editing Apps Using the Apps Console
 description: Follow this page to learn about creating and editing apps using apps console.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -15,7 +13,7 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 The AEM mobile application development process recognizes that users of different expertise contribute to the development of mobile applications. The following process map illustrates the general order in which content authors and application developers perform tasks.
 
@@ -56,7 +54,7 @@ The language page serves two purposes:
 
 ### The Home Page {#the-home-page}
 
-The Home page, or index.html page of a language variation of an application appears when the application is opened.The home page provides users with a menu of links to various pages in the application. The paragraph system enables you to add components to the page for creating content.
+The Home page, or index.html page of a language variation of an application appears when the application is opened. The home page provides users with a menu of links to various pages in the application. The paragraph system enables you to add components to the page for creating content.
 
 ## Creating a Mobile Application {#creating-a-mobile-application}
 
@@ -83,9 +81,9 @@ Additional (and optional) tabs exist for build cloud service and integrating the
 The following procedure uses the Touch UI to create a mobile application.
 
 1. On the rail, click Apps.
-1. Click or tap the Create icon.
+1. Click the Create icon.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![The Create icon indicated by a plus sign inside a square.](do-not-localize/chlimage_1-7.png)
 
 1. (Optional) On the Advanced tab, provide a description for the application, and change the server URL if required.
 1. (Optional) If you are using PhoneGap Build to compile the application, on the Build tab, select the Configuration to use.
@@ -108,30 +106,30 @@ After you create a mobile application, you can change the properties.
 1. On the rail, click or tap Apps.
 1. Select the application to configure and click the View Page Properties icon.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![The View Page Properties icon indicated by the letter I inside a circle.](do-not-localize/chlimage_1-8.png)
 
 1. To change property values, click or tap the Edit icon.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![The Edit icon indicated by a pencil.](do-not-localize/chlimage_1-9.png)
 
 1. Configure the Basic and Advanced properties, and then click or tap the Done icon.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![The Done icon indicated by a check mark symbol.](do-not-localize/chlimage_1-10.png)
 
 #### Configure a Language Variation of the Application {#configure-a-language-variation-of-the-application}
 
-1. On the rail, click or tap Apps.
-1. Click to drill-into the mobile application you wish to edit within the apps admin console. Select the language version of the application to configure and click the View Application Properties icon.
+1. On the rail, click Apps.
+1. Click to drill-into the mobile application you wish to edit within the apps Admin Console. Select the language version of the application to configure and click the View Application Properties icon.
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![The View Application Properties icon indicated by the letter I inside a circle.](do-not-localize/chlimage_1-11.png)
 
 1. To change property values, click or tap the Edit icon.
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![The Edit icon indicated by a pencil.](do-not-localize/chlimage_1-12.png)
 
 1. Configure the properties on the Basic, Advanced, Build, and Analytics tabs, and then click or tap the Done icon.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![The Done icon indicated by a check mark symbol.](do-not-localize/chlimage_1-13.png)
 
 ### Authoring the Content of a Mobile Application {#authoring-the-content-of-a-mobile-application}
 
@@ -161,7 +159,7 @@ Perform the following procedure on the instance where you want to update the cac
 1. On the rail, click or tap Apps, then click or tap your application.
 1. Select the splash page, and then click or tap the Update Cache icon.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![The Update Cache icon indicated by a striped barrell with a recycle symbol over it.](do-not-localize/chlimage_1-14.png)
 
 ### Using App Templates {#using-app-templates}
 
@@ -177,11 +175,11 @@ The latest AEM Apps 6.1 samples package includes an updated version of the Geome
 Steps to creating a new app based on an app template:
 
 1. Ensure you have the latest AEM Apps 6.1 feature pack and reference samples packages installed
-1. Click on Apps from the left rail.
+1. Click Apps from the left rail.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. Click on the + Create button at the top and select Create App.
+1. Click the + Create button at the top and select Create App.
 1. Once you are presented with the list of App Templates, select one:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
@@ -189,7 +187,7 @@ Steps to creating a new app based on an app template:
 1. Click Next.
 1. Provide an App Id and Title, however you might want to also include a Name and a Description.
 
-    1. Additionally, you can provide a PNG (supported PhoneGap icon format) as an icon by browsing AEM assets.
+    1. Also, you can provide a PNG (supported PhoneGap icon format) as an icon by browsing AEM assets.
     1. Recall that you can edit all these fields after the app has been created in the Manage App tile. With the exception of the App Id, once the App Id has been set you are unable to change it.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -216,7 +214,7 @@ To open the application, from the rail click Mobile Applications and then select
 Each page of the mobile app includes the following features:
 
 * A back button for returning to the parent page. Note that the back button does not appear on the Home page.
-* An expandible rail that offers a menu of commands and links:
+* An expendable rail that offers a menu of commands and links:
 
   * Open the Locations page.
   * Open the Cart.
@@ -245,7 +243,7 @@ Each category page uses the same content structure as the Gear page. The carouse
 
 ### The Products Page - Geometrixx Mobile App {#the-products-page-geometrixx-mobile-app}
 
-The Products page and its heirarchy of child pages implement a classification system for product pages. The lowest pages in each branch of the heirarchy is a product page that contains an ng Product component.
+The Products page and its hierarchy of child pages implement a classification system for product pages. The lowest pages in each branch of the hierarchy is a product page that contains an ng Product component.
 
 The Products page is not available to application users. The Gear page provides access to each product page.
 
@@ -263,7 +261,7 @@ When using the application, the News page is available from the carousel on the 
 
 ### The About Us Page - Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
 
-The About us page contains serveral Two Column Row components. Each column contains either an Image or a Text component. The components are editable, and the paragraph system allows you to add components.
+The About us page contains several Two Column Row components. Each column contains either an Image or a Text component. The components are editable, and the paragraph system allows you to add components.
 
 When using the application, the About Us page is available from the carousel on the English page.
 
@@ -298,7 +296,7 @@ Configure the behavior of the carousel:
 Specify how the page list is generated:
 
 * Build List Using: The method to use for specifying the pages to include in the carousel. See Building the Page List.
-* Order By: Select a page property to use for sorting the page list. For example, select jcr:title to sort pages alphabetially by title.
+* Order By: Select a page property to use for sorting the page list. For example, select jcr:title to sort pages alphabetically by title.
 * Limit: The maximum number of pages to include. This property is appropriate for search-based methods of building the page list.
 
 #### Building the Page List {#building-the-page-list}

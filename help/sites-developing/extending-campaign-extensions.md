@@ -1,8 +1,6 @@
 ---
 title: Creating Custom Extensions
-seo-title: Creating Custom Extensions
-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
-seo-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
+description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign.
 uuid: 8392aa0d-06cd-4b37-bb20-f67e6a0550b1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,7 +15,7 @@ Generally when you implement a project, you have custom code in both AEM and Ado
 
 ## Prerequisites {#prerequisites}
 
-You need to have the following installed:
+You must have the following installed:
 
 * Adobe Experience Manager
 * Adobe Campaign 6.1
@@ -26,21 +24,21 @@ See [Integrating AEM with Adobe Campaign 6.1](/help/sites-administering/campaign
 
 ## Example 1: AEM to Adobe Campaign {#example-aem-to-adobe-campaign}
 
-The standard integration between AEM and Campaign is based on JSON and JSSP (JavaScript Server Page). These JSSP files can be found in the Campaign console, and all start with **amc** (Adobe Marketing Cloud).
+The standard integration between AEM and Campaign is based on JSON and JSSP (JavaScript Server Page). These JSSP files can be found in the Campaign console, and all start with **aec** (Adobe Experience Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[For this example, please see Geometrixx](/help/sites-developing/we-retail.md), which is available from Package Share.
+>[For this example, see Geometrixx](/help/sites-developing/we-retail.md), which is available from Package Share.
 
-In this example, we create a new custom JSSP file and call that from the AEM side to retrieve the result. This can be used, for example, to retrieve data from Adobe Campaign or to save data into Adobe Campaign.
+In this example, a new custom JSSP file was created and calls that from the AEM side to retrieve the result. It can be used, for example, to retrieve data from Adobe Campaign or to save data into Adobe Campaign.
 
-1. In Adobe Campaign, to create a new JSSP file, click the **New** icon.
+1. In Adobe Campaign, to create a JSSP file, click the **New** icon.
 
-   ![](do-not-localize/chlimage_1-4a.png)
+   ![The New icon as indicated by a page with a star near the upper-left corner.](do-not-localize/chlimage_1-4a.png)
 
-1. Enter the name of this JSSP file. In this example, we use **cus:custom.jssp** (meaning it will be in the **cus** namespace).
+1. Enter the name of this JSSP file. In this example, **cus:custom.jssp** is used (meaning it is in the **cus** namespace).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -54,10 +52,10 @@ In this example, we create a new custom JSSP file and call that from the AEM sid
    ```
 
 1. Save your work. The remaining work is in AEM.
-1. Create a simple servlet on the AEM side to call this JSSP. In this example, we assume the following:
+1. Create a simple servlet on the AEM side so you can call this JSSP. In this example, you can assume the following:
 
     * You have the connection working between AEM and Campaign
-    * The campaign cloudservice is configured on **/content/geometrixx-outdoors**
+    * The campaign cloud service is configured on **/content/geometrixx-outdoors**
 
    The most important object in this example is the **GenericCampaignConnector**, which allows you to call (get and post) jssp files on the Adobe Campaign side.
 
@@ -73,7 +71,7 @@ In this example, we create a new custom JSSP file and call that from the AEM sid
    return results.bodyAsString();
    ```
 
-1. As you see in this example, you need to pass in the credentials into the call. You can get this via the getCredentials() method where you pass in a page that has the Campaign cloud service configured.
+1. In this example, you must pass the credentials into the call. You can get them by way of the getCredentials() method where you pass in a page that has the Campaign cloud service configured.
 
    ```xml
    // page containing the cloudservice for Adobe Campaign
@@ -164,21 +162,21 @@ AEM offers out of the box APIs to retrieve the objects available anywhere in the
 
 >[!NOTE]
 >
->[For this example, please see Geometrixx](/help/sites-developing/we-retail.md), which is available from Package Share.
+>[For this example, see Geometrixx](/help/sites-developing/we-retail.md), which is available from Package Share.
 
-For each node in the explorer there is an API that is linked to it. For example for the node :
+For each node in the explorer, there is an API that is linked to it. For example, for the node :
 
 * [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
-the API is:
+The API is:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-The end of the URL **.1.json** can be replaced by **.2.json**, **.3.json**, according to the number of sub-levels you interested in getting To obtain all of them the keyword **infinity** can be used:
+The end of the URL **.1.json** can be replaced by **.2.json**, **.3.json**, according to the number of sublevels you are interested in getting. To obtain all of them the keyword, **infinity** can be used:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Now to consume the API we must know that AEM, by default, uses basic authentification.
+To consume the API, AEM, by default, uses basic authentication.
 
 A JS library that is named **amcIntegration.js** is available in 6.1.1 (build 8624 and higher) that implements that logic among several other ones.
 

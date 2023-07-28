@@ -1,5 +1,5 @@
 ---
-title: Using tags to classify content in a website
+title: Using Tags
 description: Tags are a quick and easy method of classifying content within a website.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
@@ -10,7 +10,8 @@ discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
 ---
-# Using Tags{#using-tags}
+
+# Using Tags {#using-tags}
 
 Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 

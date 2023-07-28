@@ -666,7 +666,7 @@ You can invoke an AEM Forms service using Java proxy classes and Base64. To invo
    >
    >Replace `hiro-xp` *with the IP address of the J2EE application servier hosting AEM Forms.*
 
-1. Package the Java proxy classes created using using JAX-WS into a JAR file.
+1. Package the Java proxy classes created using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
 
    &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
@@ -861,7 +861,7 @@ To invoke the `MyApplication/EncryptDocument` process by using Java proxy files 
    >
    >Replace `hiro-xp` *with the IP address of the J2EE application server hosting AEM Forms.*
 
-1. Package the Java proxy classes created using using JAX-WS into a JAR file.
+1. Package the Java proxy classes created using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
 
    &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
@@ -984,7 +984,7 @@ You can invoke an AEM Forms service using Java proxy classes and BLOB data over 
    >
    >Replace `hiro-xp` *with the IP address of the J2EE application server hosting AEM Forms.*
 
-1. Package the Java proxy classes created using using JAX-WS into a JAR file.
+1. Package the Java proxy classes created using JAX-WS into a JAR file.
 1. Include the Java proxy JAR file and the JAR files located in the following path:
 
    &lt;Install Directory&gt;\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty

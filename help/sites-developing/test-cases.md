@@ -1,20 +1,16 @@
 ---
 title: Defining your Test Cases
-seo-title: Defining your Test Cases
-description: Your test cases should be based upon the use cases and the detailed requirements specification
-seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
-uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
+description: Your test cases should be based on the use cases and the detailed requirements specification
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 ---
 # Defining your Test Cases{#defining-your-test-cases}
 
-Your test cases should be based upon the:
+Your test cases should be based on the:
 
 **Use Cases**
 
@@ -27,31 +23,31 @@ Your test cases should be based upon the:
 
 The tests should clearly define:
 
-* Prerequisites; these may cover specific systems, configurations or tester experience.
+* Prerequisites; these may cover specific systems, configurations, or tester experience.
 * Steps to be followed; at an appropriate level of detail.
 * Expected results.
 * Clear criteria for pass or fail.
 
-The prospect of automating test cases is obviously attractive as it can eliminate repetitive tasks.
+The prospect of automating test cases is attractive because it eliminates repetitive tasks.
 
 ## Manual versus Automated Tests {#manual-versus-automated-tests}
 
 However, automating test cases is a significant investment, so certain aspects should be considered:
 
-* Require time, effort and experience to setup and configure.
+* Require time, effort, and experience to set up and configure.
 * If browser based, there is an increased risk of problems when browser updates are installed; requiring further time to correct.
-* Only really feasible for big projects.
-* Good when multiple releases are being generated either for testing or in the long term release plan.
+* Only feasible for large projects.
+* Good when multiple releases are being generated either for testing or in the long-term release plan.
 
 ## Testing specific aspects {#testing-specific-aspects}
 
-When testing AEM a few specific details are of particular interest:
+When testing AEM, a few specific details are of particular interest:
 
 **Author and Publish Environments**
 
-Although, covered in [Environments](/help/sites-developing/the-basics.md#environments) it is worth highlighting a deciding factor of AEM with regard to testing.
+Although covered in [Environments](/help/sites-developing/the-basics.md#environments), it is worth highlighting a deciding factor of AEM regarding testing.
 
-You must consider AEM as two applications:
+Consider AEM as two applications:
 
 * the *Author* environment
   This instance allows authors to input, and publish, content.
@@ -59,38 +55,38 @@ You must consider AEM as two applications:
 
 * the *Publish* environment
   This instance presents the website in its published form for access from visitors.
-  This usually has a larger set of users, where the volume of traffic is not always 100% predictable. Performance is still crucial - when responding to requests. Caching and load-balancing must also be considered.
+  This usually has a larger set of users, where the volume of traffic is not always 100% predictable. Performance is still crucial - when responding to requests. Consider also caching and load-balancing.
 
 Although the same software as such, they:
 
 * serve different purposes
-* have different requirements with regard to functionality and performance
+* have different requirements regarding functionality and performance
 * are configured differently
 * are tuned separately
-* will each have their own set of acceptance tests
+* each has their own set of acceptance tests
 
-In other words they must be tested separately and with different test cases.
+In other words, they must be tested separately and with different test cases.
 
 **Personalization**
 
 When testing personalization each individual use case should be repeated using multiple user accounts to prove behavior.
 
-Caching must also be checked for correct behavior.
+Check caching also for correct behavior.
 
 **The Dispatcher**
 
-Most projects will install the Dispatcher for caching and load balancing.
+Most projects install the Dispatcher for caching and load balancing.
 
 Testing is difficult (caching occurs at various levels and in various locations) and must be made on a black-box basis. Key aspects to test for are:
 
 * **Accuracy**
-  ensure that content updates are seen by the website visitor.
+  Ensures that content updates are seen by the website visitor.
 
 * **Continuity**
-  ensure that the website is still available when one server is shut down.
+  Ensure that the website is still available when one server is shut down.
 
 * **Clusters**
-  Clusters are used to provide:
+  Used to provide the following:
 
     * **Failover**
       If one server fails, then other servers in the cluster will take over processing.

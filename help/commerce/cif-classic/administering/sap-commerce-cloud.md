@@ -1,9 +1,6 @@
 ---
 title: Use AEM with SAP Commerce Cloud
-
 description: Learn how to use AEM with SAP Commerce Cloud.
-
-uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
@@ -13,7 +10,7 @@ exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 
 After installation you can configure your instance:
 
-1. [Configure the Facetted Search for Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors).
+1. [Configure the Faceted Search for Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors).
 1. [Configure the Catalog Version](#configure-the-catalog-version).
 1. [Configure the Import Structure](#configure-the-import-structure).
 1. [Configure the Product Attributes to Load](#configure-the-product-attributes-to-load).
@@ -21,7 +18,7 @@ After installation you can configure your instance:
 1. [Configure the Catalog Importer](#configure-the-catalog-importer).
 1. Use the [importer to import the catalog](#catalog-import) into a specific location in AEM.
 
-## Configure the Facetted Search for Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## Configure the Faceted Search for Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -48,27 +45,27 @@ After installation you can configure your instance:
    >
    >Use the context menu (usually right-button click) to select `Create Solr sort`.
    >
-   >For Hybris 5.0.0 open the `Indexed Types` tab, double-click on `ClothesVariantProduct`, then the tab `SOLR Sort`.
+   >For Hybris 5.0.0 open the `Indexed Types` tab, double-click `ClothesVariantProduct`, then the tab `SOLR Sort`.
 
    ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
-1. In the **Indexed Types** tab set the **Composed Type** to:
+1. In the **Indexed Types** tab, set the **Composed Type** to:
 
    `Product - Product`
 
-1. In the **Indexed Types** tab adjust the **Indexer queries** for `full`:
+1. In the **Indexed Types** tab, adjust the **Indexer queries** for `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. In the **Indexed Types** tab adjust the **Indexer queries** for `incremental`:
+1. In the **Indexed Types** tab, adjust the **Indexer queries** for `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. In the **Indexed Types** tab adjust the `category` facet. Double-click on the last entry in the category list to open the **Indexed property** tab:
+1. In the **Indexed Types** tab, adjust the `category` facet. Double-click the last entry in the category list to open the **Indexed property** tab:
 
    >[!NOTE]
    >
@@ -81,7 +78,7 @@ After installation you can configure your instance:
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
 1. **Save** the changes.
-1. Again from **SOLR Item types**, adjust the `price` facet according to the following screenshots. As with `category`, double-click on `price` to open the **Indexed property** tab:
+1. Again from **SOLR Item types**, adjust the `price` facet according to the following screenshots. As with `category`, double-click `price` to open the **Indexed property** tab:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
 
@@ -102,11 +99,11 @@ The **Catalog version** ( `hybris.catalog.version`) that is imported can be conf
 **Day CQ Commerce Hybris Configuration**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Catalog version** is usually set to either `Online` or `Staged` (the default).
+**Catalog version** is set to either `Online` or `Staged` (the default).
 
 >[!NOTE]
 >
->When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
+>When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
 
 The log output provides feedback on the created pages and components and reports potential errors.
 
@@ -147,7 +144,7 @@ The following listing shows a sample structure (of assets, pages and components)
               + ...
 ```
 
-Such a structure is created by the OSGi service `DefaultImportHandler` that implements the `ImportHandler` interface. An import handler is called by the actual importer to create products, product variations, categories, asset, etc.
+Such a structure is created by the OSGi service `DefaultImportHandler` that implements the `ImportHandler` interface. An import handler is called by the actual importer to create products, product variations, categories, asset, and so on.
 
 >[!NOTE]
 >
@@ -158,7 +155,7 @@ The structure to be generated when importing can be configured for:
 ``**Day CQ Commerce Hybris Default Import Handler**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
-When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
+When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
 
 ## Configure the Product Attributes to Load {#configure-the-product-attributes-to-load}
 
@@ -173,11 +170,11 @@ The response parser can be configured to define the properties and attributes to
 
    >[!NOTE]
    >
-   >When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
+   >When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
 
 ## Importing the Product Data {#importing-the-product-data}
 
-There are a variety of ways to import the product data. The product data can be imported when initially setting up the environment, or after changes have been made in the hybris data:
+There are various ways to import the product data. The product data can be imported when initially setting up the environment, or after changes have been made in the hybris data:
 
 * [Full Import](#full-import)
 * [Incremental Import](#incremental-import)
@@ -195,15 +192,15 @@ The following properties indicate the link with hybris:
 
 >[!NOTE]
 >
->The hybris implementation (i.e. `geometrixx-outdoors/en_US`) only stores product IDs and other basic information under `/etc/commerce`.
+>The hybris implementation (that is, `geometrixx-outdoors/en_US`) only stores product IDs and other basic information under `/etc/commerce`.
 >
 >The hybris server is referenced every time information about a product is requested.
 
 ### Full Import {#full-import}
 
-1. If required, delete all existing product data using CRXDE Lite.
+1. If necessary, delete all existing product data using CRXDE Lite.
 
-    1. Navigate to the sub-tree holding the product data:
+    1. Navigate to the subtree holding the product data:
 
        `/etc/commerce/products`
 
@@ -240,7 +237,7 @@ The following properties indicate the link with hybris:
 
 ### Incremental Import {#incremental-import}
 
-1. Check the information held in AEM for the relevant product(s), in the appropriate sub-tree under:
+1. Check the information held in AEM for the relevant products, in the appropriate subtree under:
 
    `/etc/commerce/products`
 
@@ -248,7 +245,7 @@ The following properties indicate the link with hybris:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. In hybris, update the information held on the revelant product(s).
+1. In hybris, update the information held on the relevant products.
 
 1. Open the hybris importer in AEM:
 
@@ -258,7 +255,7 @@ The following properties indicate the link with hybris:
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Select the clickbox **Incremental Import**.
+1. Select the checkbox **Incremental Import**.
 1. Click **Import Catalog** to start the import.
 
    When complete, you can verify the data updated in AEM under:
@@ -272,7 +269,7 @@ The following properties indicate the link with hybris:
 
 The import process can take a long time, so as an extension to the Product Synchronization you can select specific areas of the catalog for an express update that is triggered manually. This uses the export feed together with the standard attributes configuration.
 
-1. Check the information held in AEM for the relevant product(s), in the appropriate sub-tree under:
+1. Check the information held in AEM for the relevant products, in the appropriate subtree under:
 
    `/etc/commerce/products`
 
@@ -280,9 +277,9 @@ The import process can take a long time, so as an extension to the Product Synch
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. In hybris, update the information held on the revelant product(s).
+1. In hybris, update the information held on the relevant products.
 
-1. In hybris, add the product(s) to the Express Queue; for example:
+1. In hybris, add one or more products to the Express Queue; for example:
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -294,7 +291,7 @@ The import process can take a long time, so as an extension to the Product Synch
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Select the clickbox **Express Update**.
+1. Select the checkbox **Express Update**.
 1. Click **Import Catalog** to start the import.
 
    When complete, you can verify the data updated in AEM under:
@@ -305,14 +302,14 @@ The import process can take a long time, so as an extension to the Product Synch
 
 ## Configure the Catalog Importer {#configure-the-catalog-importer}
 
-The hybris catalog can be imported into AEM, using the batch importer for hybris catalogs, categories and products.
+The hybris catalog can be imported into AEM, using the batch importer for hybris catalogs, categories, and products.
 
 The parameters used by the importer can be configured for:
 
 **Day CQ Commerce Hybris Catalog Importer**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
-When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
+When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
 
 ## Catalog Import {#catalog-import}
 
@@ -324,7 +321,7 @@ This is available from:
 
 ![ecommerceimportconsole](/help/sites-administering/assets/ecommerceimportconsole.png)
 
-The following information has to be provided:
+The following information must be provided:
 
 * **Base store**
   The identifier of the base store configured in hybris.
@@ -348,12 +345,12 @@ To remove one, or more, products from the catalog:
 
    >[!NOTE]
    >
-   >When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
+   >When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for full details. Also see the console for a full list of configurable parameters and their defaults.
 
 1. Initialize the importer by performing two incremental updates (see [Catalog Import](#catalog-import)):
 
-    * The first time run result in a set of changed products - indicated in the log list.
-    * For the second time no products should be updated.
+    * The first-time run result in a set of changed products - indicated in the log list.
+    * For the second time, no products should be updated.
 
    >[!NOTE]
    >
@@ -365,7 +362,7 @@ To remove one, or more, products from the catalog:
 
    [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-1. Remove the product in the hybris console. Use the option **Change approval status** to set the status to `unapproved`. The product will be removed from the live-feed.
+1. Remove the product in the hybris console. Use the option **Change approval status** to set the status to `unapproved`. The product is removed from the live-feed.
 
    For example:
 
@@ -374,8 +371,8 @@ To remove one, or more, products from the catalog:
     * Search for `Cajamara`
     * Select this product and change the approval status to `unapproved`
 
-1. Perform another incremental update (see [Catalog Import](#catalog-import)). The log will list the deleted product.
-1. [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) the appropriate catalog. The product and product page will have been removed from within AEM.
+1. Perform another incremental update (see [Catalog Import](#catalog-import)). The log lists the deleted product.
+1. [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) the appropriate catalog. The product and product page have been removed from within AEM.
 
    For example:
 
@@ -388,9 +385,9 @@ To remove one, or more, products from the catalog:
 
       [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-    * The `Cajamara` product will have been removed from the `Bike` category
+    * The `Cajamara` product is removed from the `Bike` category
 
-1. To re-instate the product:
+1. To reinstate the product:
 
     1. In hybris, set the approval status back to **approved**
     1. In AEM:
@@ -405,7 +402,7 @@ To add order history to the [client context](/help/sites-developing/client-conte
 
 1. Open the [client context design page](/help/sites-administering/client-context.md), by either:
 
-    * Open a page for editing, then open the client context using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac). Use the pencil icon in the top left corner of the client context to **Open the ClientContext design page**.
+    * Open a page for editing, then open the client context using **Ctrl-Alt-c** (windows) or **control-option-c** (Mac). Use the pencil icon in the top-left corner of the client context to **Open the ClientContext design page**.
     * Navigate directly to [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [Add the **Order History** component](/help/sites-administering/client-context.md#adding-a-property-component) to the **Shopping Car**t component of the client context.
@@ -429,6 +426,6 @@ To add order history to the [client context](/help/sites-developing/client-conte
    >
    >  The campaign consists of one experience.
    >
-   >* Click on the segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
+   >* Click the segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
    >
    >* The segment is built using the **Order History Property** trait.

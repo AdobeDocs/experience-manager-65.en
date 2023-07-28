@@ -1,14 +1,10 @@
 ---
-title: Experience Fragments in AEM Sites development
-
+title: Experience Fragments in Adobe Experience Manager Sites development
 description: Learn about customizing Experience Fragments.
-
-uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 ---
@@ -30,9 +26,9 @@ As there is no `/libs/cq/experience-fragments/components/xfpage/xfpage.html` it 
 
 Using the `.plain.` selector in the URL, you can access the plain HTML rendition.
 
-This is available from the browser, but its primary purpose is to allow other applications (for example, third party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL.
+This is available from the browser, but its primary purpose is to allow other applications (for example, third-party web apps, custom mobile implementations) to access the content of the Experience Fragment directly, using only the URL.
 
-The plain HTML rendition adds the protocol, host and context path to paths that are:
+The plain HTML rendition adds the protocol, host, and context path to paths that are:
 
 * of the type: `src`, `href`, or `action`
 
@@ -60,14 +56,14 @@ The HTML rendition is generated using the Sling Rewriter Pipelines. The pipeline
   * A RegEx expression which matches the CSS classes that should be left in the final rendition. 
   * This is useful if the customer wants to strip away some specific CSS classes
 * `allowedTags` 
-  * A list of HTML tags to to be allowed in the final rendition. 
+  * A list of HTML tags to be allowed in the final rendition. 
   * By default the following tags are allowed (no configuration needed): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link, and script
 
 It is recommended to configure the rewriter using an overlay. See [Overlays](/help/sites-developing/overlays.md)
 
 ## Social Variations {#social-variations}
 
-Social variants can be posted on social media (text and image). In AEM these social variants can contain components; for example, text components, image components.
+Social variants can be posted on social media (text and image). In Adobe Experience Manager (AEM) these social variants can contain components; for example, text components, image components.
 
 The image and text for the social post can be taken from any image resource type or text resource type at any level of depth (in either the building block or layout container).
 
@@ -94,7 +90,7 @@ Components that do not use this convention are not taken into consideration.
 >
 >***Only*** [editable templates](/help/sites-developing/page-templates-editable.md) are supported for Experience Fragments.
 
-When developing a new template for Experience Fragments you can follow follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
+When developing a new template for Experience Fragments, you can follow the standard practices for an [editable template](/help/sites-developing/page-templates-editable.md).
 
 To create an experience fragment template that is detected by the **Create Experience Fragment** wizard, you must follow one of these rule sets:
 
@@ -130,7 +126,7 @@ In AEM you have the possibility to create Experience Fragments. An Experience Fr
 * consists of a group of components together with a layout,
 * can exist independently of an AEM page.
 
-One of the use cases for such groups is for embedding content in third party touchpoints, such as Adobe Target.
+One of the use cases for such groups is for embedding content in third-party touchpoints, such as Adobe Target.
 
 ### Default Link Rewriting {#default-link-rewriting}
 
@@ -142,7 +138,7 @@ Using the [Export to Target](/help/sites-administering/experience-fragments-targ
 
 This feature can be [enabled on an author instance of AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). It requires a valid Adobe Target Configuration, and configurations for the Link Externalizer.
 
-The Link Externalizer is used to determine the correct URLs needed when creating the HTML version of the Target Offer, which is subsequently sent to Adobe Target. This is necessary as Adobe Target requires that all links inside the Target HTML Offer can be publicly accessed; this means that any resources the links reference, and the Experience Fragment itself, must be published before they can be used.
+The Link Externalizer is used to determine the correct URLs needed when creating the HTML version of the Target Offer, which is then sent to Adobe Target. This is necessary as Adobe Target requires that all links inside the Target HTML Offer can be publicly accessed; this means that any resources the links reference, and the Experience Fragment itself, must be published before they can be used.
 
 By default, when you construct a Target HTML Offer, a request is sent to a custom Sling selector in AEM. This selector is called `.nocloudconfigs.html`. As its name implies, it creates a plain HTML rendering of an Experience Fragment, but does not include cloud configurations (which would be superfluous information).
 
@@ -158,14 +154,14 @@ After you generate the HTML page, the Sling Rewriter pipeline makes modification
 
     1. `src` attributes
     1. `href` attributes
-    1. `*-src` attributes (like data-src, custom-src, etc)
-    1. `*-href` attributes (like `data-href`, `custom-href`, `img-href`, etc)
+    1. `*-src` attributes (like data-src, custom-src, and so on)
+    1. `*-href` attributes (like `data-href`, `custom-href`, `img-href`, and so on)
 
    >[!NOTE]
    >
-   >In most cases, the internal links in the HTML are relative links, but there may be cases when custom components provide full URLs in the HTML. By default, AEM ignores these fully fledged URLs and makes no modifications.
+   >Usually, the internal links in the HTML are relative links, but there may be cases when custom components provide full URLs in the HTML. By default, AEM ignores these fully fledged URLs and makes no modifications.
 
-   The links in these attributes are run through the AEM Link Externalizer `publishLink()` in order to recreate the URL as if it was on a published instance, and as such, publicly available.
+   The links in these attributes are run through the AEM Link Externalizer `publishLink()` to recreate the URL as if it was on a published instance, and as such, publicly available.
 
 When using an out-of-the-box implementation, the process described above should be sufficient to generate the Target Offer from the Experience Fragment and then export it to Adobe Target. However, there are some use cases that are not accounted for in this process; these include:
 
@@ -208,9 +204,9 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 ### How to use the Link Rewriter Provider Interface {#how-to-use-the-link-rewriter-provider-interface}
 
-To use the interface you first need to create a bundle containing a new service component that implements the Link Rewriter Provider interface.
+To use the interface, you first need to create a bundle containing a new service component that implements the Link Rewriter Provider interface.
 
-This service will be used to plug into the Experience Fragment Export to Target rewriting in order to have access to the various links.
+This service is used to plug into the Experience Fragment Export to Target rewriting in order to have access to the various links.
 
 For example, `ComponentService`:
 
@@ -288,15 +284,15 @@ For the Experience Fragment variation impacted by the rewriting process, it will
 As input, the method receives the parameters:
 
 * `link`
-  The `String` representation of the link that is currently being processed. This is usually a relative URL pointing to the resource on the author instance.
+  The `String` representation of the link that is being processed. This is usually a relative URL pointing to the resource on the author instance.
 
 * `tag`
-  The name of the HTML element that is currently being processed.
+  The name of the HTML element that is being processed.
 
 * `attribute`
   The exact attribute name.
 
-If, for example, the Export to Target system is currently processing this element, you can define `CSSInclude` as:
+For example, if the Export to Target system is processing this element, you can define `CSSInclude` as:
 
 ```java
 <link rel="stylesheet" href="/etc.clientlibs/foundation/clientlibs/main.css" type="text/css">
@@ -308,7 +304,7 @@ The call to the `rewriteLink()` method is done using these parameters:
 rewriteLink(link="/etc.clientlibs/foundation/clientlibs/main.css", tag="link", attribute="href" )
 ```
 
-When you create the service you can make decisions based on the given input, and then rewrite the link accordingly.
+When you create the service, you can make decisions based on the given input, and then rewrite the link accordingly.
 
 For our example, we would like to remove the `/etc.clientlibs` part of the URL and add the appropriate external domain. To keep things simple, we will consider that we have access to a Resource Resolver for your service, as in `rewriteLinkExample2`:
 
@@ -343,7 +339,7 @@ public String rewriteLink(String link, String tag, String attribute) {
 
 >[!NOTE]
 >
->If the above method returns `null`, then the Export to Target system will leave the link as it is, a relative link to a resource.
+>If the above method returns `null`, then the Export to Target system leaves the link as it is, a relative link to a resource.
 
 #### Priorities - getPriority {#priorities-getpriority}
 

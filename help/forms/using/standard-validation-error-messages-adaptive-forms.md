@@ -13,6 +13,14 @@ exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
 ---
 # Standard validation error messages for adaptive forms {#standard-validation-error-messages}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html)                  |
+| AEM 6.5     | This article         |
+
+
 Adaptive forms validate the inputs that you provide in fields based on a pre-set validation criteria. The validation criteria refers to the acceptable input values for fields in an adaptive form. You can set the validation criteria based on the data source that you use with the adaptive form. For example, if you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file.
 
 If the input values meet the validation criteria, the values are submitted to the data source. Else, the adaptive form displays an error message.

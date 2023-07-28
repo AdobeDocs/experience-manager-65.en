@@ -16,6 +16,13 @@ exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 
 This section includes detailed information on logs available to help you troubleshoot.
 
+>[!NOTE]
+>
+>For further information about logs see:
+>
+>* [Audit Log Maintenance in AEM](/help/sites-administering/operations-audit-log.md)
+>* [Working with Audit Records and Log Files](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
+
 CRX records detailed logs. After you unpack and start Quickstart, you can find logs in the following locations:
 
 * crx-quickstart/launchpad/logs

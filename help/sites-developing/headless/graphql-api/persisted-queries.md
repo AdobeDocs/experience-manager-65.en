@@ -1,6 +1,6 @@
 ---
 title: Persisted GraphQL queries
-description: Learn how to to persist GraphQL queries in Adobe Experience Manager to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the Dispatcher and CDN layers, ultimately improving the performance of the client applications.
+description: Learn how to persist GraphQL queries in Adobe Experience Manager to optimize performance. Persisted queries can be requested by client applications using HTTP GET method and the response can be cached at the Dispatcher and CDN layers, ultimately improving the performance of the client applications.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 ---
 # Persisted GraphQL queries {#persisted-queries-caching}

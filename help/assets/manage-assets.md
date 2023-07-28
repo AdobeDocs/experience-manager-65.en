@@ -52,6 +52,12 @@ You can upload various types of assets (including images, PDF files, RAW files, 
 >
 >In Dynamic Media - Scene7 mode, the default asset upload file size is 2 GB or less. To configure upload of assets larger than 2 GB up to 15 GB, see [(Optional) Configure Dynamic Media - Scene7 mode for upload of assets larger than 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
 
+>[!IMPORTANT]
+>
+>Assets that you upload into Experience Manager that have a file name greater than 100 characters, have a shortened name when they are used in Dynamic Media.
+>
+>The first 100 characters in the file name are used as is; any remaining characters are replaced by an alphanumeric string. This renaming method ensures a unique name when the asset is used in Dynamic Media. It is also meant to accommodate the maximum asset file name length allowed in Dynamic Media.
+
 You can choose to upload assets to folders with or without a processing profile assigned to them.
 
 For folders that have a processing profile assigned, the profile name appears on the thumbnail in the card view. In the list view, the profile name appears in the **Processing Profile** column. See [Processing Profiles](/help/assets/processing-profiles.md).
@@ -196,7 +202,7 @@ Dynamic Media enables batch uploading of assets via FTP server. If you intend to
 | Uncompress Zip or Tar Files on Upload | | |
 | Job Options | | Click **[!UICONTROL Job Options]** so you can open the [!UICONTROL Upload Job Options] dialog box and choose options that affect the entire upload job. These options are the same for all file types.<br>You can choose default options for uploading files starting on the Application General Settings page. To open this page, choose **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Select the **[!UICONTROL Default Upload Options]** option to open the [!UICONTROL Upload Job Options] dialog box. |
 | | When | Select One-Time or Recurring. To set a recurring job, choose a Repeat option—Daily, Weekly, Monthly, or Custom—to specify when you want the FTP upload job to recur. Then specify the scheduling options as necessary. |
-| | Include subfolders | Upload all subfolders within the folder you intend to upload. The names of the folder and its subfolders you upload are entered automatically in [!DNL Experience Manager Assets]. |
+| | Include subfolders | Upload all subfolders within the folder that you intend to upload. The names of the folder and its subfolders you upload are entered automatically in [!DNL Experience Manager Assets]. |
 | | Crop Options | To manually crop from the sides of an image, select the Crop menu and choose Manual. Then enter the number of pixels to crop from any side or each side of the image. How much of the image is cropped depends on the ppi (pixels per inch) setting in the image file. For example, if the image displays 150 ppi and you enter 75 in the Top, Right, Bottom, and Left text boxes, a half-inch is cropped from each side.<br> To automatically crop white-space pixels from an image, open the Crop menu, choose Manual, and enter pixel measurements in the Top, Right, Bottom, and Left fields to crop from the sides. You can also choose Trim on the Crop menu and choose these options:<br> **Trim Away Based On** <ul><li>**Color** - Choose the Color option. Then select the Corner menu and choose the corner of the image with the color that best represents the white-space color you want to crop.</li><li>**Transparency** - Choose the Transparency option.<br> **Tolerance** - Drag the slider to specify a tolerance from 0 through 1.For trimming based on color, specify 0 to crop pixels only if they exactly match the color you selected in the corner of the image. Numbers closer to 1 allow for more color difference.<br>For trimming based on transparency, specify 0 to crop pixels only if they are transparent. Numbers closer to 1 allow for more transparency.</li></ul><br>These crop options are non-destructive. |
 | | Color Profile Options | Choose a color conversion when you create optimized files that are used for delivery:<ul><li>Default Color Preservation: Maintains the source image colors whenever the images contain color space information; there is no color conversion. Nearly all images today have the appropriate color profile already embedded. However, if a CMYK source image does not contain an embedded color profile, the colors are converted to sRGB (standard Red Green Blue) color space. sRGB is the recommended color space for displaying images on web pages.</li><li>Keep Original Color Space: Retains the original colors without any color conversion at the point. For images without an embedded color profile, any color conversion is done using the default color profiles configured in the Publish settings. The color profiles may not align with the color in the files created with this option. Therefore, you are encouraged to use the option Default Color Preservation.</li><li>Custom From > To<br> Opens menus so you can choose a Convert From and Convert To color space. This advanced option overrides any color information that is embedded in the source file. Select this option when all the images that you are submitting contain incorrect or missing color profile data.</li></ul> |
 | | Image-Editing Options | You can preserve the clipping masks in images, and choose a color profile.<br> See [Setting options for image edits at upload](#setting-image-editing-options-at-upload). |
@@ -305,9 +311,9 @@ To transcode a video file by choosing from various video presets.
 |---|---|---|
 | Adaptive Video | | A single encoding preset that works with any aspect ratio to create videos for delivery to mobile, tablet, and desktop. Uploaded source videos that are encoded with this preset are set with a fixed height. However, the width automatically scales to preserve the video's aspect ratio. <br>Best practice is to use Adaptive Video encoding. |
 | Single Encoding Presets | Sort Encoding Presets | Select **[!UICONTROL Name]** or **[!UICONTROL Size]** if you want to sort the encoding presets listed under Desktop, Mobile, and Tablet by name or by resolution size. |
-| | Desktop | Create an MP4 file for delivering a streaming or progressive video experience to desktop computers. Select one or more aspect ratios with the resolution size and target data rate you desire. |
-| | Mobile | Create an MP4 file for delivery on iPhone or Android&trade; mobile devices. Select one or more aspect ratios with the resolution size and target data rate you desire. |
-| | Tablet | Create an MP4 file for delivery on iPad or Android&trade; tablet devices. Select one or more aspect ratios with the resolution size and target data rate you desire. |
+| | Desktop | Create an MP4 file for delivering a streaming or progressive video experience to desktop computers. Select one or more aspect ratios with the resolution size and target data rate that you desire. |
+| | Mobile | Create an MP4 file for delivery on iPhone or Android&trade; mobile devices. Select one or more aspect ratios with the resolution size and target data rate that you desire. |
+| | Tablet | Create an MP4 file for delivery on iPad or Android&trade; tablet devices. Select one or more aspect ratios with the resolution size and target data rate that you desire. |
 
 #### Set Batch Set Presets at upload {#setting-batch-set-presets-at-upload}
 
@@ -376,7 +382,7 @@ To preview an asset using keyboard, follow these steps:
 
 ## Edit properties and metadata {#editing-properties}
 
-1. Navigate to the location of the asset whose metadata you want to edit.
+1. Navigate to the location of the asset whose metadata that you want to edit.
 
 1. Select the asset, then from the toolbar, select **[!UICONTROL Properties]** so you can view the asset's properties. Alternatively, choose the **[!UICONTROL Properties]** quick action on the asset card.
 
@@ -394,7 +400,7 @@ To preview an asset using keyboard, follow these steps:
 
    *Figure: Use the date picker to schedule asset activation.*
 
-1. You need to check **[!UICONTROL On/Off Time Reached]** option if you want to update the replication agent triggers in Metadata properties.
+1. Check **[!UICONTROL On/Off Time Reached]** option if you want to update the replication agent triggers in Metadata properties.
    ![Agent Settings](assets-dm/Agent-settings.png)
 
 1. To deactivate the asset after a particular duration, choose the deactivation date/time from the date picker beside the **[!UICONTROL Off Time]** field. The deactivation date should be later than the activation date for an asset. After the [!UICONTROL Off Time], an asset and its renditions are not available either via the [!DNL Assets] web interface or through the HTTP API.
@@ -463,7 +469,7 @@ If you are moving a published asset to a different location, then you can option
 
 To move assets or folders:
 
-1. Navigate to the location of the asset you want to move.
+1. Navigate to the location of the asset that you want to move.
 
 1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
 ![Move option in Assets toolbar](assets/do-not-localize/move.png)
@@ -548,7 +554,7 @@ Moving assets by dragging them does not open [!UICONTROL Move Asset] wizard, the
    >
    >Video annotations are supported only on browsers with HTML5 compatible video formats. In addition, depending on the browser, different video formats are supported. However, MXF video format is not yet supported with video annotations.
 
-For more information about generating and viewing subassets, see [manage subassets](managing-linked-subassets.md#generate-subassets).
+For more information about generating and viewing subassets, see [Manage subassets](managing-linked-subassets.md#generate-subassets).
 
 ## Delete assets {#deleting-assets}
 
@@ -558,7 +564,7 @@ To resolve or remove the incoming references from other pages, update the releva
 
 To delete an asset or a folder containing asset:
 
-1. Navigate to the location of the asset or the folder you want to delete.
+1. Navigate to the location of the asset or the folder that you want to delete.
 
 1. Select the asset or folder, and click **[!UICONTROL Delete]** ![Delete option](assets/do-not-localize/deleteoutline.png) from the toolbar.
 
@@ -674,7 +680,7 @@ The editing tools in the [!DNL Assets] interface let you perform small editing j
 
 1. To crop the image, click **[!UICONTROL Crop]** ![Option to crop an image](assets/do-not-localize/crop.png).
 
-1. Select the desired option from the list. The crop area appears on the image based on the option you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
+1. Select the desired option from the list. The crop area appears on the image based on the option that you choose. The **Free Hand** option lets you crop the image without any aspect ratio restrictions.
 
 1. Select the area to be cropped, and resize or reposition it on the image.
 
@@ -831,7 +837,7 @@ To print the annotations and review status, click **[!UICONTROL Print]** and fol
 
    ![Configuration to print asset annotation on PDF document](assets/annotation-print-pdf-config.png)
 
-   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes you made.
+   Return to the rendered PDF file and refresh it. The refreshed PDF reflects the changes that you made.
 
 If an asset includes annotations in foreign languages (especially non-latin languages), you must first configure CQ-DAM-Handler-Gibson Font Manager Service on the [!DNL Experience Manager] server to be able to print these annotations. When configuring CQ-DAM-Handler-Gibson Font Manager Service, provide the path where fonts for the desired languages are located.
 
@@ -854,12 +860,12 @@ Here is an example of how you can configure [!DNL Experience Manager] to print a
 
 1. Download Google Noto CJK fonts from the following links, and store them in the font directory configured in Font Manager Service.
 
-    * All In One Super CJK font: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-    * Noto Sans (for European languages): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-    * Noto fonts for a language of your choice: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
+    * All In One Super CJK font: [https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
+    * Noto Sans (for European languages): [https://fonts.google.com/noto](https://fonts.google.com/noto)
+    * Noto fonts for a language of your choice: [https://fonts.google.com/noto](https://fonts.google.com/noto)
 
 1. Configure the annotation PDF file by setting the font-family parameter to `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. This configuration is available by default and works for all European and CJK languages.
-1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma separated) entry to the default font-family.
+1. If the language of your choice is different from the languages mentioned in step 2, append an appropriate (comma-separated) entry to the default font-family.
 
 ## Create, manage, preview, and revert asset versions {#asset-versioning}
 
@@ -870,7 +876,7 @@ You can create versions in [!DNL Experience Manager] in the following scenarios:
 * Upload an asset with the same filename that exists at the same location. It can be a new asset or a modified version of the same asset.
 * Edit an image in [!DNL Experience Manager] and save the changes.
 * Edit the metadata of an asset.
-* Use [!DNL Experience Manager] desktop app to check-out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
+* Use [!DNL Experience Manager] desktop app to check out an existing asset, edit it, and [upload your changes](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets).
 
 You can also enable automatic versioning through a workflow. When you create a version for an asset, the metadata and renditions are saved along with the version. Renditions are rendered alternatives of the same images, for example, a PNG rendition of an uploaded JPEG file.
 
@@ -925,7 +931,7 @@ A collection is an ordered set of assets. Use collections to share related asset
 * A collection can include assets from different locations because they only contain references to these assets. Each collection maintains the referential integrity of assets.
 * You can share collections with multiple users with different privilege levels, including editing, viewing, and so on.
 
-To know details of Collection management, see [manage Collections](/help/assets/manage-collections.md).
+To know details of Collection management, see [Manage digital assets collections](/help/assets/manage-collections.md).
 
 ## Hide expired assets when viewing assets in desktop app or Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -945,4 +951,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+To know more, see how to [browse DAM assets using desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) and [how to use Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html).

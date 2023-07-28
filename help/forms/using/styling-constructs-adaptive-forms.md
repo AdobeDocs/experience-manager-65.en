@@ -14,6 +14,8 @@ exl-id: 691608a6-be82-4d81-b876-427de997e5be
 ---
 # Styling constructs for adaptive forms{#styling-constructs-for-adaptive-forms}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
 ## Prerequisites {#prerequisites}
 
 Knowledge of CSS and the LESS framework.

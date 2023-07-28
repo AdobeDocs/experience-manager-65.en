@@ -1,18 +1,13 @@
 ---
 title: Create An SCF Sandbox
-seo-title: Create An SCF Sandbox
-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
+description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components. It walks through the creation of An SCF Sandbox site
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
 ---
 # Create An SCF Sandbox  {#create-an-scf-sandbox}
-
 
 As of AEM 6.1 Communities, the easiest way to quickly create a sandbox is to create a community site. See [Getting Started with AEM Communities](getting-started.md).
 
@@ -20,7 +15,7 @@ Another useful tool for developers is the [Community Components guide](component
 
 The exercise of creating a website can be useful for understanding the structure of an AEM website which may include Communities features, while also providing simple pages on which to explore working with the [social component framework (SCF)](scf.md).
 
-This tutorial is primarily for developers, new to AEM, who are interested in using SCF components. It walks through the creation of An SCF Sandbox site, similar to the tutorial for [How to Create a Fully Featured Internet Website](../../help/sites-developing/website.md) which focuses on site structures, such as navigation, logo, search, toolbar, and listing child pages.
+This tutorial is primarily for developers, new to AEM, who are interested in using SCF components. It walks through the creation of An SCF Sandbox site, similar to the tutorial for [How to Create a Fully Featured Internet Website](../../help/sites-developing/website.md) which focuses on-site structures, such as navigation, logo, search, toolbar, and listing child pages.
 
 Development takes place on an author instance, while experimenting with the site is best on a publish instance.
 
@@ -35,7 +30,7 @@ The steps in this tutorial are:
 
 >[!CAUTION]
 >
->This tutorial does not create a community site with the functionality created using the [Communities Sites console](sites-console.md). For example, this tutorial does not describe how to setup login, self-registration, [social login](social-login.md), messaging, profiles, and so on.
+>This tutorial does not create a community site with the functionality created using the [Communities Sites console](sites-console.md). For example, this tutorial does not describe how to set up login, self-registration, [social login](social-login.md), messaging, profiles, and so on.
 >
 >If a simple community site is preferred, follow the [Create a Sample Page](create-sample-page.md) tutorial.
 
@@ -68,16 +63,16 @@ After signing in with administrative privileges, there are various ways to acces
 
    For example, on a local author instance: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-To work with CRXDE Lite, you must sign in with developer or administrator priveleges. For the default localhost instance, you can login with
+To work with CRXDE Lite, you must sign in with developer or administrator privileges. For the default localhost instance, you can log in with
 
 * `username: admin`
 * `password: admin`
 
 
-**Be aware** that this login will timeout and you will need to re-login periodically using the pull down on the right end of the CRXDe Lite tool bar.
+This login times out and you must relogin periodically using the pull-down on the right end of the CRXDE Lite tool bar.
 
 If not logged in, you will be unable to navigate the JCR repository or perform any edit/save operations.
 
-***When in doubt, re-login!***
+***When in doubt, relogin!***
 
 ![relogin](assets/relogin.png)

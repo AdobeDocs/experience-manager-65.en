@@ -14,6 +14,8 @@ exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 ---
 # Embed adaptive form in external web page{#embed-adaptive-form-in-external-web-page}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
 You can [embed adaptive forms in an AEM Sites page](/help/forms/using/embed-adaptive-form-aem-sites.md) or a web page hosted outside AEM. The embedded adaptive form is fully functional and users can fill and submit the form without leaving the page. It helps the user remain in the context of other elements on the web page and simultaneously interact with the form..
 
 ## Prerequisites {#prerequisites}
@@ -49,8 +51,8 @@ To embed the adaptive form:
     var loadAdaptiveForm = function(options){
     //alert(options.path);
        if(options.path) {
-           // options.path refers to the publish URL of the adaptive form
-           // For Example: https:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+           // options.path refers to the path of the adaptive form
+           // For Example: /content/forms/af/ABC, where ABC is the adaptive form
            // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path
            var path = options.path;
            path += "/jcr:content/guideContainer.html";

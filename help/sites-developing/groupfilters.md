@@ -17,7 +17,7 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Create a device group filter to define a set of device capability requirements. Create as many filters as you require to target the needed groups of device capabilities.
 

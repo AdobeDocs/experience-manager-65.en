@@ -136,7 +136,7 @@ Use the following steps to upload the custom logo file to CRX:
 
    The Edit jcr:data dialog appears.
 
-   Now click on newlogo.png folder, double click on jcr:content (dim option) and set type nt:resource. If not present create a property with name jcr:content.  
+   Now click on newlogo.png folder, double-click on jcr:content (dim option) and set type nt:resource. If not present create a property with name jcr:content.  
 
 1. In the Edit jcr:data dialog, click **Browse** and select the image file you want to use as a logo (here CustomLogo.png).   
   

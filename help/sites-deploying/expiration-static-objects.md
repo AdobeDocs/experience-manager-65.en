@@ -1,33 +1,29 @@
 ---
 title: Expiration of Static Objects
-seo-title: Expiration of Static Objects
-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
-seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
-uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
+description: Learn how to configure Adobe Experience Manager so that static objects do not expire (for a reasonable time period).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
 ---
 # Expiration of Static Objects{#expiration-of-static-objects}
 
-Static objects (for example, icons) do not change. Therefore the system should be configured so that they do not expire (for a reasonable period of time) and so reduce unnecessary traffic.
+Static objects (for example, icons) do not change. Therefore the system should be configured so that they do not expire (for a reasonable time period) and so reduce unnecessary traffic.
 
 This has the following impact:
 
 * Offloads requests from the server infrastructure.
 * Increases performance of page loading, as the browser caches objects in the browser cache.
 
-Expirations are specified by the HTTP standard regarding "expiration" of files (see, for example, chapter 14.21 of [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) " Hypertext Transfer Protocol -- HTTP 1.1"). This standard uses the header to allow clients to cache objects until they are considered stale; such objects are cached for the specified amount of time without any status check being made to the originating server.
+Expirations are specified by the HTTP standard regarding "expiration" of files (for example, see chapter 14.21 of [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) " Hypertext Transfer Protocol -- HTTP 1.1"). This standard uses the header to allow clients to cache objects until they are considered stale; such objects are cached for the specified amount of time without any status check being made to the originating server.
 
 >[!NOTE]
 >
->This configuration is completely separate from (and will not work for) the Dispatcher.
+>This configuration is separate from (and will not work for) the Dispatcher.
 >
->The purpose of the Dispatcher is to cache data in front of AEM.
+>The purpose of the Dispatcher is to cache data in front of Adobe Experience Manager (AEM).
 
 All files, which are not dynamic and which do not change over time, can and should be cached. The configuration for the Apache HTTPD server could look like one of the following - dependent on the environment:
 
@@ -47,7 +43,7 @@ All files, which are not dynamic and which do not change over time, can and shou
    </Location>
    ```
 
-   This allows the intermediate cache (e.g. the browser cache) to store CSS, Javascript, PNG and GIF files for up to one month, until they expire. This means they do not need to be requested from AEM or the webserver, but can remain in the browser cache.
+   This allows the intermediate cache (for example, the browser cache) to store CSS, JavaScript, PNG and GIF files for up to one month, until they expire. This means they do not need to be requested from AEM or the webserver, but can remain in the browser cache.
 
    Other sections of the site should not be cached on an author instance, as they are subject to change at any time.
 
@@ -70,9 +66,9 @@ All files, which are not dynamic and which do not change over time, can and shou
 
    ```
 
-   This allows the intermediate cache (e.g. the browser cache) to store CSS, Javascript, PNG and GIF files for up to one day in client caches. Although this example illustrates global settings for everything below `/content` and `/etc/designs`, you should make it more granular.
+   This allows the intermediate cache (for example, the browser cache) to store CSS, JavaScript, PNG and GIF files for up to one day in client caches. Although this example illustrates global settings for everything below `/content` and `/etc/designs`, you should make it more granular.
 
-   Depending on how often your site is updated, you can also consider caching HTML pages. A reasonable time period would be 1 hour:
+   Depending on how often your site is updated, you can also consider caching HTML pages. A reasonable time period would be one hour:
 
    ```xml
    <Location /content>

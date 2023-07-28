@@ -3,14 +3,13 @@ title: Adobe Experience Manager Mobile - GDPR Readiness
 description: Adobe Experience Manager Mobile - GDPR Readiness
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
-discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 ---
 # AEM Mobile - GDPR Readiness {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, CCPA etc.
+>GDPR is used as an example in the sections below, but the details covered are applicable to all data protection and privacy regulations; such as GDPR, and CCPA.
 
 ## AEM Mobile GDPR Support {#aem-mobile-gdpr-support}
 
@@ -20,15 +19,15 @@ AEM Mobile is ready to assist customers with their GDPR compliance obligations. 
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe's digital publishing product (which precedes AEM Mobile) supports Adobe's GDPR readiness initiatives. Please see [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). The following will provide specifics on support for GDPR relevant functions in the Digital Publishing Suite product including how to work with Adobe to initiate GDPR requests.
+Adobe's digital publishing product (which precedes AEM Mobile) supports Adobe's GDPR readiness initiatives. See [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). The following provides specifics on support for GDPR relevant functions in the Digital Publishing Suite product including how to work with Adobe to initiate GDPR requests.
 
-To ensure you are not confusing AEM Mobile with the older Digital Publishing Suite product, you can login to the Digital Publishing Suite product here:
+To ensure you are not confusing AEM Mobile with the older Digital Publishing Suite product, you can log in to the Digital Publishing Suite product here:
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Initiating a GDPR request {#initiating-a-gdpr-request}
 
-Please contact Adobe Customer Care to initiate a GDPR request for the Digital Publishing Suite.
+Contact Adobe Customer Care so you can initiate a GDPR request for the Digital Publishing Suite.
 
 The following IDs are required to locate customer data. Any subset received will imply the other IDs were not applicable to this user.
 
@@ -46,23 +45,23 @@ Provide at least 1 of the following:
 
 **Will Adobe delete my App Store purchases when initiating a DELETE request?**
 
-Adobe will delete information it has of App store purchases (subscriptions, etc.) but purchases will still be on record in the App stores. If the App (end-user) is logged into the App store, those receipts will be picked up again and sent to Adobe and subsequently, those will be considered as new purchases and will be restored by the App to have access again.
+Adobe deletes information that it has of App store purchases (subscriptions, and so on), but purchases are still on record in the App stores. If the App (end-user) is logged into the App store, those receipts are picked up again and sent to Adobe and later, those are considered as new purchases and are restored by the App to have access again.
 
 **Will Adobe delete customer provided entitlements when initiating a DELETE request?**
 
-Adobe will delete information it has of the customer's additional direct entitlement allowances. If the App (end-user) logs in to the OAuth mechanism that the customer has used, it will send information to Adobe and the services will pick up the extra entitlements again.
+Adobe deletes information that it has of the customer's additional direct entitlement allowances. If the App (end-user) logs in to the OAuth mechanism that the customer has used, it sends information to Adobe and the services pick up the extra entitlements again.
 
-**What is expected of the end-user?**
+**What is expected of the end user?**
 
-Since the key of assigning entitlements to the App resides on the device as part of the viewer software, the end-user should uninstall the App. The end-user should realize that if they reinstall the App, then existing purchases (associated with the App store user) and direct entitlement allowances (associated with the OAuth user of the customer) will still be restored.
+Since the key of assigning entitlements to the App resides on the device as part of the viewer software, the end user should uninstall the App. The end user should realize that if they reinstall the App, then existing purchases (associated with the App store user) and direct entitlement allowances (associated with the OAuth user of the customer) will still be restored.
 
 **What happens when an app is shared between people on a device?**
 
-Adobe has very little information that associates directly back to a specific user. It associates the data using a randomly created UUID that is held in the App's data and is passed in every request the App initiates. This means that end-users sharing the App on the same device will use the same UUID and all the data will be considered owned by the person making the GDPR request. For both Access and Delete requests, DPSC will consider people that share an App as one person.
+Adobe has minimal information that associates directly back to a specific user. It associates the data using a randomly created UUID that is held in the App's data and is passed in every request the App initiates. This means that end users sharing the App on the same device use the same UUID and all the data is considered owned by the person making the GDPR request. For both Access and Delete requests, DPSC considers people that share an App as one person.
 
 **What Personal Data is tracked with Analytics?**
 
-None. There is data being tracked, but it is at the App level (not personal). This includes events like launches, crashes, close, activities, purchases or folio overlays. Geographical locations, names, device IDs or IP addresses are not tracked.
+None. There is data being tracked, but it is at the App level (not personal). This includes events like launches, crashes, close, activities, purchases, or folio overlays. Geographical locations, names, device IDs, or IP addresses are not tracked.
 
 **The end user provided their information but nothing was found. Why not?**
 
@@ -70,7 +69,7 @@ As the Digital Publishing Suite product evolved, service implementations were ch
 
 ### Example {#example}
 
-Please contact Adobe Customer Care to initiate a GDPR request.
+Contact Adobe Customer Care so you can initiate a GDPR request.
 
 Here's an example of the inputs and resulting outputs of a Digital Publishing Suite GDPR request:
 

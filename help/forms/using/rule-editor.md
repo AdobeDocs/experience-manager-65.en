@@ -14,6 +14,13 @@ exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 ---
 # Adaptive forms rule editor{#adaptive-forms-rule-editor}
 
+<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
+
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html)                  |
+| AEM 6.5     | This article         |
+
 ## Overview {#overview}
 
 The rule editor feature in Adobe Experience Manager Forms empowers forms business users and developers to write rules on adaptive form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
@@ -46,7 +53,7 @@ In rule editor, the **When** rule type enforces the condition-action construct.
 
 **Action-Condition** In this construct, a rule first defines an action to trigger followed by conditions for evaluation. Another variation of this construct is action-condition-alternate action, which also defines an alternate action to trigger if the condition returns False.
 
-The Show, Hide, Enable, Disable, Set Value Of, and Validate rule types in rule editor enforce the action-condition rule construct. By default, the alternate action for Show is Hide and for Enable is Disable, and vice versa. You cannot change the default alternate action.
+The Show, Hide, Enable, Disable, Set Value Of, and Validate rule types in rule editor enforce the action-condition rule construct. By default, the alternate action for Show is Hide and for Enable is Disable, and conversely. You cannot change the default alternate action.
 
 >[!NOTE]
 >
@@ -373,7 +380,7 @@ For more information about using visual rule editor, see [Write rules](#write-ru
 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
-Users in the forms-power-users group can access code editor. For other users, code editor is not available. If you have the rights, you can switch from visual editor mode to code editor mode of the rule editor, and vice versa, using the switcher right above the rule editor. When you launch rule editor the first time, it opens in the visual editor mode. You can write rules in the visual editor mode or switch to the code editor mode to write a rule script. However, note that if you modify a rule or write a rule in code editor, you cannot switch back to the visual editor for that rule unless you clear the code editor.
+Users in the forms-power-users group can access code editor. For other users, code editor is not available. If you have the rights, you can switch from visual editor mode to code editor mode of the rule editor, and conversely, using the switcher right above the rule editor. When you launch rule editor the first time, it opens in the visual editor mode. You can write rules in the visual editor mode or switch to the code editor mode to write a rule script. However, note that if you modify a rule or write a rule in code editor, you cannot switch back to the visual editor for that rule unless you clear the code editor.
 
 AEM Forms tracks the rule editor mode you used last to write a rule. When you launch the rule editor next time, it opens in that mode. However, you can also configure a default mode to open the rule editor in the specified mode. To do so:
 

@@ -1,26 +1,22 @@
 ---
 title: Rendering and Delivery
-seo-title: Rendering and Delivery
 description: Rendering and Delivery
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 ---
 # Rendering and Delivery{#rendering-and-delivery}
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
-AEM content can easily be rendered via [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) to render [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) and other formats.
+Adobe Experience Manager (AEM) content can easily be rendered by way of [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) to render [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) and other formats.
 
 Those out-of-the-box renders typically walk the repository and return content as is.
 
-AEM, via Sling, also supports developing and deploying custom sling renderers to take full control of the rendered schema and content.
+AEM, by way of Sling, also supports developing and deploying custom sling renderers to take full control of the rendered schema and content.
 
 Content Services Default Renderers fill the gap between out-of-the-box Sling Defaults and Custom Development allowing customization and control of many aspects of the rendered content without development.
 
@@ -137,7 +133,7 @@ Create a configuration node under */apps/mobileapps/caas/exportConfigs.*
 |---|---|
 | jcr:primaryType |nt:unstructured |
 
-The following table show the properties:
+The following table shows the properties:
 
 <table>
  <tbody>
@@ -153,7 +149,7 @@ The following table show the properties:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>For the following sling resource types, don't return the deafult CaaS json export.<br /> Return a customer json export by rendering the resource as;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>For the following sling resource types, don't return the default CaaS json export.<br /> Return a customer json export by rendering the resource as;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -167,7 +163,7 @@ Content Services include two export configurations:
 
 #### Default Export Configuration {#default-export-configuration}
 
-Content Services default export configuration will be applied if a config is specified in the requested URI.
+Content Services default export configuration is applied if a config is specified in the requested URI.
 
 &lt;RESOURCE&gt;.caas[.&lt;DEPTH-INT&gt;].json
 
@@ -214,7 +210,7 @@ Content Services default export configuration will be applied if a config is spe
 
 #### Page Export Configuration {#page-export-configuration}
 
-This configuration extend the default to include grouping children under a child node.
+This configuration extends the default to include grouping children under a child node.
 
 &lt;SITE_PAGE&gt;.caas.page[.&lt;DEPTH-INT&gt;].json
 

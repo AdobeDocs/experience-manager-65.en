@@ -1,10 +1,10 @@
 ---
-title: EAR Deployment Failing on JEE WebLogic Server 
+title: EAR Deployment Failing on JEE WebLogic Server
 seo-title: EAR Deployment failing on JEE Weblogic Server
 description: Steps to resolve EAR Deployment failing on JEE WebLogic Server
 seo-description: Steps to resolve EAR Deployment failing on JEE Weblogic Server
+exl-id: b87a9eee-ee56-4dca-b4a3-a42c91db0b4f
 ---
-
 # EAR Deployment failing on JEE WebLogic Server {#ear-deployment-failing-on-jee-weblogic-server}
 
 ## Issue {#issue}
@@ -30,5 +30,3 @@ To resolve the issue, follow these steps:
         set `JAVA_OPTIONS=%JAVA_OPTIONS% -DANTLR_USE_DIRECT_CLASS_LOADING=true`
 
 1. Save the changes.
-
-

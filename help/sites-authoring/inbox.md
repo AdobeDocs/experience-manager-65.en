@@ -197,7 +197,7 @@ The Admin Control option is visible only to the members of the `administrators` 
 
    Depending on whether a dialog, wizard, documentation page has been opened you can:
 
-    * Confirm the appropriate action; e.g Re-assign.
+    * Confirm the appropriate action; for example, Re-assign.
     * Cancel the action.
     * Back arrow; for example, if an action wizard or documentation page has been opened, you can return to the Inbox.
 

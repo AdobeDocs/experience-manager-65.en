@@ -1,19 +1,15 @@
 ---
 title: Community Components Guide
-seo-title: Community Components Guide
 description: An interactive development tool to get started with the social component framework (SCF)
-seo-description: An interactive development tool to get started with the social component framework (SCF)
-uuid: 120e56d1-b93c-4f92-bab4-6bb5e40e0ddf
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
 ---
 # Community Components Guide  {#community-components-guide}
 
-The Community Components guide is an interactive development tool for the [social component framework (SCF)](scf.md). It provides a list of available AEM Communities components or the more complex features built of multiple components.
+The Community Components guide is an interactive development tool for the [social component framework (SCF)](scf.md). It provides a list of available Adobe Experience Manager (AEM) Communities components or the more complex features built of multiple components.
 
 Along with basic information for each component, the guide allows for experimentation with how the SCF components/features work and how they can be configured or customized.
 
@@ -21,18 +17,18 @@ For information regarding development essentials related to each component, see 
 
 ## Getting Started {#getting-started}
 
-The guide is intended for use on development installations of author (localhost:4502) and publish (localhost:4503) instances.
+The guide is intended for use on development installations of author instances (localhost:4502), and publish instances (localhost:4503).
 
 The Community Components site is accessed by browsing to
 
 * [https://&lt;server&gt;:&lt;port&gt;/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
-Interactions with the Communities components will vary depending on:
+Interactions with the Communities components vary depending on:
 
 * The server (author or publish).
-* Whether or not the site visitor is signed in.
+* Whether the site visitor is signed in or not.
 * If signed in, the privileges assigned to the member.
-* Whether or not the default SRP, [JSRP](jsrp.md), is in use.
+* Whether the default SRP, [JSRP](jsrp.md), is in use.
 
 On author, to enter edit mode, insert either `editor.html` or `cf#` as the first path segment after the server name:
 
@@ -50,7 +46,7 @@ On author, to enter edit mode, insert either `editor.html` or `cf#` as the first
 >
 >To navigate to a component page, first select Preview mode to activate the links.
 >
->With the component page displayed in the browser, return to Edit mode in order to open the component's edit dialog.
+>With the component page displayed in the browser, return to Edit mode to open the component's edit dialog.
 >
 >For general authoring information, view the [quick guide to authoring pages](../../help/sites-authoring/qg-page-authoring.md).
 >
@@ -78,9 +74,9 @@ The main body of the guide displays:
 
     * If added, text displayed is: "This component is included via its par node."
     * If included, text displayed is: "This component is included dynamically."
-    * If not includable, then no text is displayed
+    * If not includible, then no text is displayed
 
-1. Sample Component or Feature: an active instance of the component or feature. If a component, it may be altered with changes made to the templates, CSS and data provided in the tab section.
+1. Sample Component or Feature: an active instance of the component or feature. If a component, it may be altered with changes made to the templates, CSS, and data provided in the tab section.
 
 >[!NOTE]
 >
@@ -90,7 +86,7 @@ The main body of the guide displays:
 
 When using the guide on an author instance, it is possible to experience configuring a component by opening its dialog. Information for developers is provided in the [Component and Feature Essentials](essentials.md) section of the documentation, while the dialog settings are described in [Communities Components](author-communities.md) section for authors.
 
-For the Community Components guide, some component dialog settings are overlayed with the [Includable](scf.md#add-or-include-a-communities-component) toggle state. To toggle between using the existing resource or a dynamically included resource, in edit mode select both the component and includable text and double-click to open the edit dialog:
+For the Community Components guide, some component dialog settings are overlaid with the [Includable](scf.md#add-or-include-a-communities-component) toggle state. To toggle between using the existing resource or a dynamically included resource, in edit mode select both the component and includable text and double-click to open the edit dialog:
 
 ![community-component3](assets/community-component3.png)
 
@@ -100,11 +96,11 @@ Under the **Templates** tab:
 
 * **Include the child component with sling:include**
 
-  If unchecked, the Component Guide will use the existing resource in the repository (a jcr node which is a child of a par node).
+  If unchecked, the Component Guide uses the existing resource in the repository (a jcr node which is a child of a par node).
 
     * text displayed is: "This component is included via its par node."
 
-  If checked, the Component Guide will use sling to dynamically include a component of the child node's resourceType (non-existing resource).
+  If checked, the Component Guide uses sling to dynamically include a component of the child node's resourceType (non-existing resource).
 
     * text displayed is: "This component is included dynamically."
 
@@ -120,19 +116,19 @@ When using the guide on a publish instance, it is possible to experience the com
 
 ## Client-Side Libraries {#client-side-libraries}
 
-The client-side libraries (clientlibs) listed for each component are those *required* to be referenced when the component is placed on a page. The clientlibs provide a means of managing and optimizing the download of the Javascript and CSS used to render the component in the browser.
+The client-side libraries (clientlibs) listed for each component are those *required* to be referenced when the component is placed on a page. The clientlibs provide a means of managing and optimizing the download of the JavaScript and CSS used to render the component in the browser.
 
 For more information, visit [Clientlibs for Communities Components](clientlibs.md).
 
 ## Impersonation {#impersonation}
 
-On the author instance, where one is often signed in as an administrator or developer, in order to experience the component logged in as another user, use the text box to the left of the **[!UICONTROL Impersonate]** button to either type in the username or select from the pull down list, and then click the button. Click Revert to signout and end the impersonation.
+On the author instance, where one is often signed in as an administrator or developer, to experience the component logged in as another user, use the text box to the left of the **[!UICONTROL Impersonate]** button to either type in the username or select from the pull-down list, and then click the button. Click Revert to sign out and end the impersonation.
 
 The publish instance does not need to impersonate. Simply use the Login/Logout link to impersonate various users, such as the [demo users](tutorials.md#demo-users).
 
 ## Customization {#customization}
 
-When enabled, each SCF component is available for prototyping of possible customizations by temporarily modifying the component's template, CSS and data.
+When enabled, each SCF component is available for prototyping of possible customizations by temporarily modifying the component's template, CSS, and data.
 
 ### Enabling Customization {#enabling-customization}
 
@@ -163,7 +159,7 @@ Using the comments component as an example, on either the author or publish inst
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
-1. Notice there are now 3 tabs for Templates, CSS, and Data.
+1. Notice there are now three tabs for Templates, CSS, and Data.
 
 ![community-component5](assets/community-component5.png) 
 
@@ -191,4 +187,4 @@ A rule may be selected to highlight the parts of the DOM using that rule by clic
 
 Select the Data tab to show the .social.json endpoint data. This data is editable and is applied to the sample component instance.
 
-Syntax errors may be marked in the gutter as well as highlighted in the editor.
+Syntax errors may be marked in the gutter and highlighted in the editor.

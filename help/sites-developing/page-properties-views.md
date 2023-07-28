@@ -21,18 +21,18 @@ Every page has a set of [properties](/help/sites-authoring/editing-page-properti
 
 The default state for every page property is:
 
-* hidden in the create view (e.g. **Create Page** wizard)
+* hidden in the create view (for example, **Create Page** wizard)
 
-* available in the edit view (e.g. **View Properties**)
+* available in the edit view (for example, **View Properties**)
 
 Fields must be specifically configured if any change is required. This is done using the appropriate node properties:
 
-* Page property to be available in the create view (e.g. **Create Page** wizard):
+* Page property to be available in the create view (for example, **Create Page** wizard):
 
     * Name: `cq:showOnCreate`
     * Type: `Boolean`
 
-* Page property to be available in the edit view (e.g. **View**/**Edit**) **Properties** option):
+* Page property to be available in the edit view (for example, **View**/**Edit**) **Properties** option):
 
     * Name: `cq:hideOnEdit`
     * Type: `Boolean`

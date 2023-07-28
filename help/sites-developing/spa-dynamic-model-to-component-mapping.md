@@ -1,23 +1,19 @@
 ---
 title: Dynamic Model to Component Mapping for SPAs
-seo-title: Dynamic Model to Component Mapping for SPAs
-description: This article describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
-seo-description: This article describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
-uuid: 337b8d90-efd7-442e-9fac-66c33cc26212
+description: Learn how the dynamic model to component mapping occurs in the JavaScript SPA SDK for Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 ---
 # Dynamic Model to Component Mapping for SPAs{#dynamic-model-to-component-mapping-for-spas}
 
-This document describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
+This document describes how the dynamic model to component mapping occurs in the JavaScript SPA SDK for Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
->The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (e.g. React or Angular).
+>The SPA Editor is the recommended solution for projects that require SPA framework based client-side rendering (for example, React or Angular).
 
 ## ComponentMapping Module {#componentmapping-module}
 
@@ -25,13 +21,13 @@ The `ComponentMapping` module is provided as an NPM package to the front-end pro
 
 Each items present in the model contains a `:type` field that exposes an AEM resource type. When mounted, the front-end component can render itself using the fragment of model it has received from the underlying libraries.
 
-Please refer to the [SPA Blueprint](/help/sites-developing/spa-blueprint.md) document for more information about model parsing and the front-end component access to the model.
+See [SPA Blueprint](/help/sites-developing/spa-blueprint.md) for more information about model parsing and the front-end component access to the model.
 
 Also see the npm package: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Model-Driven Single Page Application {#model-driven-single-page-application}
 
-Single Page Applications leveraging the Javascript SPA SDK for AEM are model-driven:
+Single Page Applications using the JavaScript SPA SDK for AEM are model-driven:
 
 1. Front-end components register themselves to the [Component Mapping Store](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Then the [Container](/help/sites-developing/spa-blueprint.md#container), once provided with a model by the [Model Provider](/help/sites-developing/spa-blueprint.md#the-model-provider), iterates over its model content ( `:items`).
@@ -40,7 +36,7 @@ Single Page Applications leveraging the Javascript SPA SDK for AEM are model-dri
 
 ## App Initialization {#app-initialization}
 
-Each component is extended with the capabilities of the [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). Initialization therefore take the following general form:
+Each component is extended with the capabilities of the [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). Initialization therefore takes the following general form:
 
 1. Each model provider initializes itself and listens for changes made to the piece of model that corresponds to its inner component.
 1. The [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) must be initialized as represented by the [initialization flow](/help/sites-developing/spa-blueprint.md).

@@ -1,14 +1,10 @@
 ---
 title: We.Retail Reference Implementation
-seo-title: We.Retail Reference Implementation
 description: We.Retail is a technology preview of a reference implementation that illustrates the recommended way of setting up an online presence with AEM
-seo-description: We.Retail is a technology preview of a reference implementation that illustrates the recommended way of setting up an online presence with AEM
-uuid: d8833192-b592-4812-bf9b-bd882e8ee7f0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 ---
 # We.Retail Reference Implementation{#we-retail-reference-implementation}
@@ -17,7 +13,7 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 
 We.Retail is a reference implementation and sample content that illustrates the recommended way of setting up an online presence with Adobe Experience Manager.
 
-We.Retail makes use of the latest AEM technologies such as HTL, responsive layouts, editable templates, core components, and much more.
+We.Retail uses the latest AEM technologies such as HTL, responsive layouts, editable templates, core components, and much more.
 
 While it illustrates a retail vertical, the way the site is setup can be applied to any vertical, and only the product catalog and cart features are retail-specific.
 
@@ -39,11 +35,11 @@ As AEM's standard reference implementation, We.Retail showcases some of the most
 
 ## Getting Started {#getting-started}
 
-We.Retail is delivered as AEM's sample content. In order to use, simply [start AEM as you normally would](/help/sites-deploying/deploy.md#getting-started), making sure that sample content is not disabled.
+We.Retail is delivered as AEM's sample content. To use, simply [start AEM as you normally would](/help/sites-deploying/deploy.md#getting-started), making sure that sample content is not disabled.
 
 >[!CAUTION]
 >
->We.Retail should not be installed on production instances. Production instances should be started in `nosamplecontent` [runmode](/help/sites-deploying/configure-runmodes.md).
+>Do not install We.Retail on production instances. Production instances should be started in `nosamplecontent` [run mode](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
@@ -56,7 +52,7 @@ Although We.Retail is distributed with the AEM release, updates to the content a
 ### First Steps {#first-steps}
 
 1. Once AEM is started (and/or We.Retail is installed), the site **We.Retail** is available in the [sites console](/help/sites-authoring/basic-handling.md#global-navigation).
-1. For example the following page can be opened and it should look as displayed in the [appendix](#appendix) below:
+1. For example, the following page can be opened and it should look as displayed in the [appendix](#appendix) below:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
@@ -103,11 +99,11 @@ CODE ON GITHUB
 You can find the code of this page on GitHub
 
 * [Open aem-sample-we-retail project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Download the project as [a ZIP file](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip)
+* Download the project as [a ZIP file](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
-The latest release can also be [downloaded directly](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) as an installable package.
+The latest release can also be [downloaded directly](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) as an installable package.
 
-If you encounter problems, please file [GitHub issues](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+If you encounter problems, file a [GitHub issue](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 Feel free to fork or to contribute with [pull requests](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 

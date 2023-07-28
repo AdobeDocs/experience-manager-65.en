@@ -34,7 +34,7 @@ Various **Help** resources can be directly accessed from within AEM:
 
 As well as accessing [help from the console toolbars](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), you can also access the help from the sidekick (using the ? icon) when editing a page:
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick Collapsed](do-not-localize/sidekick-collapsed-2.png)
 
 Or by using the **Help** button in the edit dialog of specific components; this will show context sensitive help.
 
@@ -182,7 +182,7 @@ The Website console also [provides information about the current status of the p
 
 When editing a page with the classic UI there are various modes that can be accessed using the icons at the bottom of the sidekick:
 
-![](do-not-localize/chlimage_1-12.png)
+![Page Modes](do-not-localize/chlimage_1-12.png)
 
 The row of icons at the bottom of the Sidekick are used to switch modes for working with the pages:
 

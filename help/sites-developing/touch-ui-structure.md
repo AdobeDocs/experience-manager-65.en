@@ -1,19 +1,15 @@
 ---
-title: Structure of the AEM Touch-Enabled UI
-seo-title: Structure of the AEM Touch-Enabled UI
-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
-seo-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
-uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
+title: Structure of the Adobe Experience Manager Touch-Enabled UI
+description: The touch-optimized UI, as implemented in Adobe Experience Manager, has several underlying principles and is made up of several key elements
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
 ---
-# Structure of the AEM Touch-Enabled UI{#structure-of-the-aem-touch-enabled-ui}
+# Structure of the Adobe Experience Manager Touch-Enabled UI{#structure-of-the-aem-touch-enabled-ui}
 
-The AEM touch-enabled UI has several underlying principles and is made up of several key elements:
+The Adobe Experience Manager (AEM) touch-enabled UI has several underlying principles and is made up of several key elements:
 
 ## Consoles {#consoles}
 
@@ -27,7 +23,7 @@ All modules use the same basic layout, in AEM this can be seen as:
 
 The layout adheres to a responsive design style and will accommodate itself to the size of the device/window you are using.
 
-For example, when the resolution goes below 1024px (as on a mobile device) the display will be adjusted accordingly:
+For example, when the resolution goes below 1024 px (as on a mobile device) the display will be adjusted accordingly:
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -41,18 +37,18 @@ The header bar shows global elements including:
 * Search
 * icon for accessing the help resources
 * icon for accessing other Solutions
-* a indicator of (and access to) any alerts or Inbox items that are waiting for you
+* an indicator of (and access to) any alerts or Inbox items that are waiting for you
 * the user icon, together with a link to your profile management
 
 ### Toolbar {#toolbar}
 
-This is contextual to your location and surfaces tools relevant to controlling the view or assets in the page below. The toolbar is product specific, but there is some commonality to the elements.
+This is contextual to your location and surfaces tools relevant to controlling the view or assets in the page below. The toolbar is product-specific, but there is some commonality to the elements.
 
 In any location the toolbar shows the actions currently available:
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-Also dependent on whether a resource is currently selected:
+Also dependent on whether a resource is selected:
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -70,11 +66,11 @@ The default is **Content Only** (rail hidden).
 
 ## Page Authoring {#page-authoring}
 
-When authoring pages the structural areas are as follows.
+When authoring pages, the structural areas are as follows.
 
 ### Content Frame {#content-frame}
 
-The page content is rendered in the content frame. The content frame is completely independent of the editor - to ensure that there are no conflicts due to CSS or javascript.
+The page content is rendered in the content frame. The content frame is independent of the editor&mdash;to ensure that there are no conflicts due to CSS or JavaScript.
 
 The content frame is on the right-hand section of the window, under the toolbar.
 
@@ -82,7 +78,7 @@ The content frame is on the right-hand section of the window, under the toolbar.
 
 ### Editor Frame {#editor-frame}
 
-The editor frame realises the editing features.
+The editor frame realizes the editing features.
 
 The editor frame is a container (abstract) for all the *page authoring elements*. It lives on top of the content frame, and includes:
 
@@ -95,9 +91,9 @@ The editor frame is a container (abstract) for all the *page authoring elements*
 
 ### Side Panel {#side-panel}
 
-This contains two default tabs to allow you to select assets and components; they can be dragged from here and dropped onto the page.
+This contains two default tabs that let you select assets and components. They can be dragged from here and dropped onto the page.
 
-The side panel is hidden by default. When selected it will either be shown at the left side, or will slide across to cover the entire window (when the window size is below a width of 1024px; as, for example, on a mobile device).
+The side panel is hidden by default. When selected it will either be shown at the left side, or will slide across to cover the entire window (when the window size is below a width of 1024 px; as, for example, on a mobile device).
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -109,19 +105,19 @@ In the Assets tab you can select from the range of assets. You can also filter o
 
 ### Side Panel - Asset Groups {#side-panel-asset-groups}
 
-In the Asset tab there is a drop down that you can use to select the specific asset groups.
+In the Asset tab, there is a drop-down that you can use to select the specific asset groups.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 ### Side Panel - Components {#side-panel-components}
 
-In the Components tab you can select from the range of components. You can also filter on a specific term, or select a group.
+In the Components tab, you can select from the range of components. You can also filter on a specific term, or select a group.
 
 ![chlimage_1-153](assets/chlimage_1-153.png)
 
 ### Overlays {#overlays}
 
-These overlay the content frame and are used by the [layers](#layer) to realize the mechanics of how you can interact (completely transparently) with the components and their content.
+These overlay the content frame and are used by the [layers](#layer) to realize the mechanics of how you can interact (transparently) with the components and their content.
 
 The overlays live in the editor frame (with all other page authoring elements), though they actually overlay the appropriate components in the content frame.
 
@@ -140,19 +136,19 @@ AEM comes with several layers already implemented for page authoring; including 
 
 >[!NOTE]
 >
->Layers are a powerful concept that affect the user's view of and interaction with the page content. When developing your own layers you need to ensure that the layer cleans up when it is exited.
+>Layers are a powerful concept that affects the user's view of and interaction with the page content. When developing your own layers, you must ensure that the layer cleans up when it is exited.
 
 ### Layer Switcher {#layer-switcher}
 
 The layer switcher allows you to choose the layer you want to use. When closed, it indicates the layer currently in use.
 
-The layer switcher is available as a drop down from the toolbar (at the top of the window, within the editor frame).
+The layer switcher is available as a drop-down from the toolbar (at the top of the window, within the editor frame).
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
 ### Component Toolbar {#component-toolbar}
 
-Each instance of a component will reveal its toolbar when clicked (either once or with a slow double-click). The toolbar contains the specific actions (e.g. copy, paste, open-editor) that are available for the component instance (Editable) on the page.
+Each instance of a component reveals its toolbar when clicked (either once or with a slow double-click). The toolbar contains the specific actions (for example, copy, paste, open-editor) that are available for the component instance (Editable) on the page.
 
 Depending on the space available, the component toolbars are positioned at the top-, or bottom-, right corner of the appropriate component.
 
@@ -160,6 +156,6 @@ Depending on the space available, the component toolbars are positioned at the t
 
 ## Further Information {#further-information}
 
-For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).
+For more details about the concepts around the touch-enabled UI, read [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).
 
-For further technical information see the [JS documentation set](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) for the touch-enabled page editor.
+For more technical information, see [JS documentation set](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) for the touch-enabled page editor.

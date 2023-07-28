@@ -82,7 +82,7 @@ The following table lists the rollout configurations that are installed with AEM
   </tr>
   <tr>
    <td>Push on modify (shallow)</td>
-   <td><p>Pushes content to the live copy when the blueprint page is modified, without updating references (e.g. for shallow copies).</p> <p>Use this rollout configuration sparingly as it uses the On Modification trigger.</p> </td>
+   <td><p>Pushes content to the live copy when the blueprint page is modified, without updating references (for example, for shallow copies).</p> <p>Use this rollout configuration sparingly as it uses the On Modification trigger.</p> </td>
    <td>On Modification</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> orderChildren</td>
   </tr>
@@ -239,7 +239,7 @@ The following table lists the synchronization actions that are installed with AE
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>Executes catalog-generation-specific rollout hooks. Calls the executePageRolloutHooks and executeProductRolloutHooks methods of the of the CatalogGenerator.<br /> See com.adobe.cq.commerce.pim.api.CatalogGenerator in the AEM Javadocs.</td>
+   <td>Executes catalog-generation-specific rollout hooks. Calls the executePageRolloutHooks and executeProductRolloutHooks methods of the CatalogGenerator.<br /> See com.adobe.cq.commerce.pim.api.CatalogGenerator in the AEM Javadocs.</td>
    <td> </td>
   </tr>
   <tr>
@@ -316,7 +316,7 @@ Several properties and node types are excluded by default, these are defined in 
 
 By default properties matching the following regular expressions are excluded (i.e. not updated) on rollout:
 
-![chlimage_1](assets/chlimage_1.png)
+![CQ MSM Content Update Action](assets/chlimage_1.png)
 
 You can change the expressions defining the exclusion list as required.
 
@@ -378,7 +378,7 @@ You can also configure the rollout configurations for a live copy page when you 
 
    The **Configuration** section shows the rollout configurations that the page inherits.
 
-   ![chlimage_1-1](assets/chlimage_1-1.png)
+   ![Configuration](assets/chlimage_1-1.png)
 
 1. If required, adjust the **Live Copy Inheritance** flag. If checked the live copy configuration is effective on all children.
 
@@ -386,7 +386,7 @@ You can also configure the rollout configurations for a live copy page when you 
 
    The selected rollout configurations appear below the drop-down list.
 
-   ![chlimage_1-2](assets/chlimage_1-2.png)
+   ![Selected Rollout Configurations](assets/chlimage_1-2.png)
 
 1. Click or tap **Save**.
 

@@ -14,6 +14,12 @@ exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 ---
 # Configure data sources{#configure-data-sources}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html)                  |
+| AEM 6.5     | This article         |
+
+
  ![Data Integration](do-not-localize/data-integeration.png)
 
 AEM Forms Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box. However, with little customization, you can integrate other data sources as well.

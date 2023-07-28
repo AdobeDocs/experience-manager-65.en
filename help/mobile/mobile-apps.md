@@ -14,7 +14,7 @@ exl-id: 0a98881d-08f3-47e7-bae1-5500d1fe6514
 
 >[!NOTE]
 >
->Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (e.g. React). [Learn more](/help/sites-developing/spa-overview.md).
+>Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile is part of the Adobe Experience Manager multi-channel digital platform that also leverages AEM Assets, Sites, Screens, Workflow, User Manager, Commerce and Forms. AEM Mobile offers remarkable deployment flexibility, enabling enterprises to use a variety of content sources.
 

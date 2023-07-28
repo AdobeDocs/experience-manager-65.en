@@ -60,7 +60,7 @@ If you use this option, assets to be translated are copied to the language root 
 
 1. Click **[!UICONTROL Create & Translate]** at the bottom.
 
-1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
+1. From the **[!UICONTROL Target Languages]** list, select the languages for which you want to create a folder structure.
 
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Create a new translation project]**.
 
@@ -111,7 +111,7 @@ If you use this option, the translation workflow runs for assets that you add to
 1. Click **[!UICONTROL Language Copies]** under **[!UICONTROL Copies]**. A list of available translation copies is displayed.
 1. Click **[!UICONTROL Create & Translate]** at the bottom.
 
-1. From the **[!UICONTROL Target Languages]** list, select the language(s) for which you want to create a folder structure.
+1. From the **[!UICONTROL Target Languages]** list, select the languages for which you want to create a folder structure.
 
 1. From the **[!UICONTROL Project]** list, select **[!UICONTROL Add to existing translation project]** to run the translation workflow on the folder.
 
@@ -228,7 +228,7 @@ If you use this option, the set of assets are added to an existing translation p
 
 ## Create temporary language copies {#creating-temporary-language-copies}
 
-When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Adobe Experience Manager Assets] stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the asset(s). If you reject the asset(s), the language copy remains unchanged.
+When you run a translation workflow to update a language copy with edited versions of original assets, the existing language copy is preserved until you approve the translated asset(s). [!DNL Adobe Experience Manager Assets] stores the newly-translated asset(s) at a temporary location and updates the existing language copy after you explicitly approve the assets. If you reject the assets, the language copy remains unchanged.
 
 1. Click the source root folder under **[!UICONTROL Language Copies]** for which you already created a language copy, and then click **[!UICONTROL Reveal in Assets]** to open the folder in [!DNL Experience Manager Assets].
 

@@ -144,7 +144,7 @@ For the individual campaigns there are two views available:
 
    Use the icon:
 
-   ![](do-not-localize/mcm_iconcalendarview.png)
+   ![Calendar view](do-not-localize/mcm_iconcalendarview.png)
 
    This presents a list of all touchpoints (grey) with a horizontal timeframe of the experiences (green) connected to that touchpoint:
 
@@ -162,9 +162,9 @@ For the individual campaigns there are two views available:
 
    Use the icon:
 
-   ![](do-not-localize/mcm_icon_listview.png)
+   ![List view](do-not-localize/mcm_icon_listview.png)
 
-   This lists all experiences (e.g. teasers and newsletters) for the selected campaign:
+   This lists all experiences (for example, teasers and newsletters) for the selected campaign:
 
    ![mcm_banner_listview](assets/mcm_banner_listview.png)
 

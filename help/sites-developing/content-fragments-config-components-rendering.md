@@ -70,27 +70,27 @@ The OSGi configuration is:
   <tr>
    <td><strong>Resource type</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>The resource type to register; e.g. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>The resource type to register; for example, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Reference property</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>The name of the property that contains the reference to the fragment; e.g. <code>fragmentPath</code> or <code>fileReference</code></td>
+   <td>The name of the property that contains the reference to the fragment; for example, <code>fragmentPath</code> or <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Element(s) property</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>The name of the property that contains the name(s) of the element(s) to render; e.g.<code>elementName</code></td>
+   <td>The name of the property that contains the name(s) of the element(s) to render; for example,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Variation property</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>The name of the property that contains the name of the variation to render; e.g.<code>variationName</code></td>
+   <td>The name of the property that contains the name of the variation to render; for example,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
 
-For some functionality (e.g. to render only a paragraph range) you will have to adhere to some conventions:
+For some functionality (for example, to render only a paragraph range) you will have to adhere to some conventions:
 
 <table>
  <tbody>

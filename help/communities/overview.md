@@ -1,27 +1,23 @@
 ---
 title: AEM Communities Overview
-seo-title: AEM Communities Overview
 description: An overview of AEM Communities features and setup
-seo-description: An overview of AEM Communities features and setup
-uuid: 14405847-36ae-4958-bdc6-d799ecd05f06
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
 ---
 # AEM Communities Overview {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Communities provides the ability to quickly create an on-premise community site that has improved performance, improved site management, and encourages the conversion of site visitors to valuable community members.
+Adobe Experience Manager (AEM) Communities provide the ability to quickly create an on-premise community site that has improved performance, improved site management, and encourages the conversion of site visitors to valuable community members.
 
 ## Communities Features {#communities-features}
 
 AEM Communities enables the development of a relationship with site visitors, which:
 
 * **Informs** through blogs, Q&A, and event calendars,
-* While **gaining insights** through forums, comments, and other community content, often referred to as user generated content (UGC).
+* While **gaining insights** through forums, comments, and other community content, often referred to as user-generated content (UGC).
 * It allows **moderation** by trusted members in the publish environment,
 * **Social login** with Twitter and Facebook,
 * **Inline translation** of community content,
@@ -29,7 +25,7 @@ AEM Communities enables the development of a relationship with site visitors, wh
 * **Scoring** to award badges,
 * **File sharing**,
 * **Notifications** and **activity streams**,
-* Allows **tagging** (@mention) other registered members in User Generated Content, to elicit their attention.
+* Allows **tagging** (@mention) other registered members in User-Generated Content, to elicit their attention.
 
 Communities features can be demonstrated using the [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) available publicly on GitHub.com or with the new We.Retail reference implementation.
 
@@ -54,10 +50,10 @@ The [site creation wizard](/help/communities/sites-console.md):
 
   * Responsive design: uses [Twitter Bootstrap themes](https://getbootstrap.com)
 
-  * Login : self-registration, [social login](/help/communities/social-login.md), user profiles
+  * Log in : self-registration, [social login](/help/communities/social-login.md), user profiles
 
     * Notifications:
-      members see events of relevance to them, and user generated content where they are [@mentioned](/help/communities/overview.md#mentionssupport).
+      members see events of relevance to them, and user-generated content where they are [@mentioned](/help/communities/overview.md#mentionssupport).
 
     * Messaging: members may send or receive messages within the community site.
     * Search: ability to search within the community site.
@@ -70,19 +66,19 @@ The [site creation wizard](/help/communities/sites-console.md):
   * Branding: optional upload of a banner image for display on all pages of the community site
   * Navigation menu: navigation links are provided for the features included in the community site template.
 
-To experience the ease of quickly creating a new community site, visit [Getting Started with AEM Communities](/help/communities/getting-started.md).
+To experience the ease of quickly creating a community site, visit [Getting Started with AEM Communities](/help/communities/getting-started.md).
 
 ## Community Content Persistence {#community-content-persistence}
 
-To improve the performance and synchronization of community content, AEM Communities requires a common store specifically for user generated content (UGC) shared between all AEM (author and publish) instances.
+To improve the performance and synchronization of community content, AEM Communities requires a common store specifically for user-generated content (UGC) shared between all AEM (author and publish) instances.
 
 Community content is easily accessed through the storage resource provider (SRP), which provides a layer to separate access from the underlying topology and supports a common store for UGC.
 
 To learn more about community content persistence and recommended deployments see:
 
-* [Community Content Storage](/help/communities/working-with-srp.md), which discusses the available SRP storage options for UGC.
-* [Recommended Topologies](/help/communities/topologies.md), which discusses topologies based on use case and SRP choice.
-* [Upgrading to AEM 6.5 Communities](/help/communities/upgrade.md), which provides useful information regarding UGC when moving to AEM 6.5.
+* [Community Content Storage](/help/communities/working-with-srp.md)&mdash;discusses the available SRP storage options for UGC.
+* [Recommended Topologies](/help/communities/topologies.md)&mdash;discusses topologies based on use case and SRP choice.
+* [Upgrading to AEM 6.5 Communities](/help/communities/upgrade.md)&mdash;provides useful information regarding UGC when moving to AEM 6.5.
 
 ## Communities Consoles {#communities-consoles}
 
@@ -130,11 +126,11 @@ The global tools console provides access to the following Communities tools:
 
 * [Component Guide](/help/communities/components-guide.md)
 
-  * A sample site, [Community Components](https://localhost:4502/editor.html/content/community-components/en.html), that provides a sample of all Communities components with their default configuration and the ability to experiment with them.
+  * A sample site, [Community Components](https://localhost:4502/editor.html/content/community-components/en.html) provides a sample of all Communities components with their default configuration and the ability to experiment with them.
 
 ## Community Site Templates {#community-site-templates}
 
-Community site creation is based on selection of a community site template to quickly setup a community site that is independent of any sample site.
+Community site creation is based on selection of a community site template to quickly set up a community site that is independent of any sample site.
 
 A community site template, composed of community functions and community group templates, provides the structure for a community site including login, user profiles, messaging, site menu, search, theming, and branding features.
 
@@ -150,15 +146,15 @@ See the [Community Functions console](/help/communities/functions.md).
 
 ## Community Groups and Group Templates {#community-groups-and-group-templates}
 
-The community groups feature is the ability for a sub-community to be dynamically created within a community site by authorized users and community members from both the author and publish environments.
+The community groups feature is the ability for a subcommunity to be dynamically created within a community site by authorized users and community members from both the author and publish environments.
 
-From the author environment, community groups (sub-communities) may be created within an existing community site or nested within an existing group, when the structure of the template contains the [Groups function](/help/communities/functions.md#groups-function).
+From the author environment, community groups (subcommunities) may be created within an existing community site or nested within an existing group, when the structure of the template contains the [Groups function](/help/communities/functions.md#groups-function).
 
-Creating a community group requires the selection of a community group template that provides the design of the community group page(s). When a Groups function is added to a template structure, it is configured to either specify one group template or to provide a choice of templates at the time a new community group is created.
+Creating a community group requires the selection of a community group template that provides the design of the community group pages. When a Groups function is added to a template structure, it is configured to either specify one group template or to provide a choice of templates at the time a new community group is created.
 
 See also:
 
-* [Site Groups console](/help/communities/groups.md) for creating sub-communities in the author environment.
+* [Site Groups console](/help/communities/groups.md) for creating subcommunities in the author environment.
 * [Group Templates console](/help/communities/tools-groups.md) for creating site structure for groups.
 * [Getting Started with AEM Communities](/help/communities/getting-started.md) for tutorial for quickly creating a community site including nested groups.
 
@@ -190,11 +186,11 @@ Features of an engagement community may include:
 * Scoring and badges
 * Analytics reporting
 
-To experience the ease of quickly creating a new engagement community, visit [Getting Started with AEM Communities](/help/communities/getting-started.md).
+To experience the ease of quickly creating an engagement community, visit [Getting Started with AEM Communities](/help/communities/getting-started.md).
 
 ## AEM Demo Machine {#aem-demo-machine}
 
-The [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) manages and runs demos for AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) and [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), which often require more setup than simply launching a QuickStart instance. The AEM Demo Machine will setup additional [infrastructure](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) such as MongoDB, Solr, MySQL, FFmpeg and email servers.
+The [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) manages and runs demos for AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) and [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), which often require more setup than simply launching a QuickStart instance. The AEM Demo Machine will set up additional [infrastructure](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) such as MongoDB, Solr, MySQL, FFmpeg, and email servers.
 
 The AEM Demo Machine includes:
 
@@ -203,7 +199,7 @@ The AEM Demo Machine includes:
 
 * Packages to install.
 
-The AEM Demo Machine was tested successfully with CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3, and AEM 6.4 on Windows, MacOS and Linux.
+The AEM Demo Machine was tested successfully with CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3, and AEM 6.4 on Windows, MacOS, and Linux&reg;.
 
 The AEM Demo Machine requires a valid AEM license.
 
