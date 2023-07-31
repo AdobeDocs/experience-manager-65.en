@@ -30,7 +30,7 @@ To learn more about Adobe extensions or third-party extensions, see [Adobe exten
 * Experience Platform Tags integration for Dynamic Media viewers does not work in the Experience Manager author node. You cannot see any tracking from a WCM page until it is published.
 * Experience Platform Tags integration for Dynamic Media viewers is not supported for "pop-up" operation mode, where the viewer URL is obtained using the "URL" button on Asset Details page.
 * Experience Platform Tags integration cannot be used simultaneously with legacy viewers Analytics integration (by way of the `config2=` parameter).
-* Support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
+* Support for video tracking is limited to "core playback" tracking only, as described in [Tracking Overview](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
 * Storage Duration configuration for Data Elements is not supported for Data Elements using the *Dynamic Media Viewers* extension. Storage Duration must be set to **[!UICONTROL None]**.
 
 ### Use cases for the integration {#use-cases-for-the-integration}
@@ -127,7 +127,7 @@ When an Experience Cloud account is subscribed to use Adobe Analytics for Audio 
 
 See [Installation and setup of extensions](#installing-and-setup-of-extensions).
 
-Currently, the support for video tracking is limited to "core playback" tracking only, as described in [Tracking overview](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
+Currently, the support for video tracking is limited to "core playback" tracking only, as described in [Tracking overview](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en). In particular, QoS, Ads, Chapter/Segments, or Errors tracking is not supported.
 
 ## Use the Dynamic Media Viewers extension {#using-the-dynamic-media-viewers-extension}
 
