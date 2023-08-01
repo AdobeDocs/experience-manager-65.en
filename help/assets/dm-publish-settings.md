@@ -1,6 +1,6 @@
 ---
 title: Configure Dynamic Media Publish Setup for Image Server
-description: Learn how to set up Publishing in Dynamic Media.
+description: Learn how to configure Dynamic Media Publish Setup for Image Server so you can publish assets. You can also test your assets before making them public.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
