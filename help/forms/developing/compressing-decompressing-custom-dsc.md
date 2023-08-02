@@ -7,11 +7,11 @@ exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 
 ## Prerequisite knowledge {#prerequisites}
 
-Experience with AEM Forms on JEE Process Management, basic Java programming, and creating custom Component.
+Experience with AEM Forms on JEE Process Management, basic Java&trade; programming, and creating custom Component.
 
 **Additional required other products**
 
-Java editor such as [Eclipse](https://www.eclipse.org/) or [Netbeans IDE](https://netbeans.apache.org/)
+Java&trade; editor such as [Eclipse](https://www.eclipse.org/) or [Netbeans IDE](https://netbeans.apache.org/)
 
 ## User level {#user-level}
 
@@ -183,7 +183,7 @@ The component.xml file is shown here:
 
 ## Packaging and deploying the component {#packaging-deploying-component}
 
-1. Compile the java project and create a .JAR file.
+1. Compile the Java&trade; project and create a .JAR file.
 1. Deploy the component (.JAR file) to the AEM Forms on JEE runtime through Workbench.
 1. Start the service from Workbench (see Figure below).
 
@@ -209,7 +209,7 @@ You can use this ZIP Service for the following use cases:
 
 * Find all files in a given folder and return the files as a compressed document.
 
-* Supply a ZIP file containing a number of PDF documents which can be reader extended after decompressing them. This requires AEM Forms on JEE Reader Extensions module.
+* Supply a ZIP file containing several PDF documents which can be reader extended after decompressing them. This requires AEM Forms on JEE Reader Extensions module.
 
 * Supply a ZIP file containing heterogeneous type of document which can be decompressed and converted as PDF document using Generate PDF service.
 
