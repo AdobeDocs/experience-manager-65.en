@@ -169,7 +169,7 @@ Under the **Resource Types** tab, specify the custom resourceType for new instan
 
 * **Comment System Resource Type**
 
-  Navigate to the resourceType of an extended `comments`component (Comment System) in /apps. Leave blank unless the page template [dynamically includes](/help/communities/scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [{{include}} helper](/help/communities/handlebars-helpers.md#include).
+  Navigate to the resourceType of an extended `comments`component (Comment System) in /apps. Leave blank unless the page template [dynamically includes](/help/communities/scf.md#add-or-include-a-communities-component) the Comment System in the underlying script instead of being added to the page as a resource (comments node). Learn more by reading about the [`{{include}}` helper](/help/communities/handlebars-helpers.md#include).
 
 ### Site Visitor Experience {#site-visitor-experience}
 

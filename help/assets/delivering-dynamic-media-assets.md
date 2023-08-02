@@ -1,6 +1,6 @@
 ---
 title: Deliver Dynamic Media assets
-description: Learn how to deliver Dynamic Media assets
+description: Learn how to deliver Dynamic Media assets, such as video and images, to your web pages.
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

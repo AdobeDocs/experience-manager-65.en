@@ -1,14 +1,10 @@
 ---
 title: DSRP - Relational Database Storage Resource Provider
-seo-title: DSRP - Relational Database Storage Resource Provider
 description: Set up AEM Communities to use a relational database as its common store
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 ---
@@ -16,7 +12,7 @@ exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 
 ## About DSRP {#about-dsrp}
 
-When AEM Communities is configured to use a relational database as its common store, user generated content (UGC) is accessible from all author and publish instances without the need for synchronization nor replication.
+When AEM Communities is configured to use a relational database as its common store, user-generated content (UGC) is accessible from all author and publish instances without the need for synchronization nor replication.
 
 See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of-srp-options) and [Recommended Topologies](topologies.md).
 
@@ -27,7 +23,7 @@ See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of
 
 >[!NOTE]
 >
->The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
+>The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) instead of `etc` path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
 
 ## Relational Database Configuration {#relational-database-configuration}
 
@@ -56,7 +52,7 @@ On author, to access the Storage Configuration console
 * Sign in with administrator privileges
 * From the **main menu**
 
-  * Select **[!UICONTROL Tools]** (from the left hand pane)
+  * Select **[!UICONTROL Tools]** (from the left-hand pane)
   * Select **[!UICONTROL Communities]**
   * Select **[!UICONTROL Storage Configuration]**
 
@@ -64,7 +60,7 @@ On author, to access the Storage Configuration console
     
     >[!NOTE]
     >
-    >The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`)      instead of etc path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
+    >The default storage configuration is now stored in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`)      instead of `etc` path (`/etc/socialconfig/srpc/defaultconfiguration`). You are advised to follow the [migration steps](#zerodt-migration-steps) to make defaultsrp work as expected.
 
    ![dsrp-config](assets/dsrp-config.png)
 
@@ -85,7 +81,7 @@ On author, to access the Storage Configuration console
 
 * **SolrConfiguration**
 
-  * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+  * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
     Leave this value blank if running Solr using the internal ZooKeeper. Else, when running in [SolrCloud mode](solr.md#solrcloud-mode) with an external ZooKeeper, set this value to the URI for the ZooKeeper, such as *my.server.com:80*
 
@@ -103,13 +99,13 @@ On author, to access the Storage Configuration console
 
 ### Zero downtime migration steps for defaultsrp {#zerodt-migration-steps}
 
-Follow these steps to ensure that the defaultsrp page [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) works as expected:
+To ensure that the defaultsrp page [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) works as expected, follow these steps:
 
 1. Rename the path at `/etc/socialconfig` to `/etc/socialconfig_old`, so that system configuration falls back to jsrp(default).
 1. Go to defaultsrp page [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), where jsrp is configured. Click the **[!UICONTROL submit]** button so that new default configuration node is created at `/conf/global/settings/community/srpc`.
 1. Delete the created default configuration `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. Copy the old configuration `/etc/socialconfig_old/srpc/defaultconfiguration` in place of the deleted node (`/conf/global/settings/community/srpc/defaultconfiguration`) in the previous step.
-1. Delete the old etc node `/etc/socialconfig_old`.
+1. Delete the old `etc` node `/etc/socialconfig_old`.
 
 ## Publishing the Configuration {#publishing-the-configuration}
 
@@ -139,7 +135,7 @@ For information regarding *users*, *user profiles* and *user groups*, often ente
 
 To reindex DSRP Solr, follow the documentation for [reindexing MSRP](msrp.md#msrp-reindex-tool), however when reindexing for DSRP, use this URL instead: **/services/social/datastore/rdb/reindex**
 
-For example, a curl command to re-index DSRP would look like this:
+For example, a curl command to reindex DSRP would look like this:
 
 ```shell
 curl -u admin:password -X POST -F path=/ https://host:port/services/social/datastore/rdb/reindex
