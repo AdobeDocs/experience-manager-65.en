@@ -1,6 +1,6 @@
 ---
 title: About managing Dynamic Media assets
-description: Learn how to work with Dynamic Media assets
+description: Learn how to work with Dynamic Media assets, such as videos and images, after they are uploaded. You can preview, download, or publish assets.
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
