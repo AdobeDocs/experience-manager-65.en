@@ -552,17 +552,17 @@ For additional requirements see:
 
 ### Designer {#designer}
 
-* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft® Windows® 10
-* 1 GHz or faster processor with support for PAE, NX, and SSE2.
-* 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
-* 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS
-* Graphics memory - 128 MB of GPU (256 MB recommended)
-* 2.35 GB of available hard-disk space
-* 1024 X 768 pixels or greater monitor resolution
-* Video hardware acceleration (optional)
-* Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
-* Administrative privileges to install Designer
-* Microsoft® Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
+- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft® Windows® 10
+- 1 GHz or faster processor with support for PAE, NX, and SSE2.
+- 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
+- 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS
+- Graphics memory - 128 MB of GPU (256 MB recommended)
+- 2.35 GB of available hard-disk space
+- 1024 X 768 pixels or greater monitor resolution
+- Video hardware acceleration (optional)
+- Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
+- Administrative privileges to install Designer
+- Microsoft® Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
 
 ### Adobe Acrobat and Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -704,11 +704,10 @@ Additional information for third-party patches can also be found by searching th
 
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on August 31, 2023:
 
-	
-* Microsoft® Windows Server 2019 (64-bit)
-* Oracle WebLogic Server 12.2.1 (12c R2)
-* Microsoft® Active Directory 2016
-* MongoDB Enterprise 4.2
+- Microsoft® Windows Server 2019 (64-bit)
+- Oracle WebLogic Server 12.2.1 (12c R2)
+- Microsoft® Active Directory 2016
+- MongoDB Enterprise 4.2
 
 The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 
@@ -742,8 +741,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 ## Revision History {#revision-history}
 
-* Aug 31, 2023
-  - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+- Aug 31, 2023
+  - **Platform Updates**:**[!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
     - Windows Server 2022 (64-bit)
     - MongoDB Enterprise 4.4
     - Oracle WebLogic Server 14c
