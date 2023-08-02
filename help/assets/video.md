@@ -634,7 +634,7 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
    >[!TIP]
    >If you do not see the **[!UICONTROL Subtitles & Audio Tracks]** tab, it means the folder in which the selected video resides, does not have a video profile assigned to it. [Apply a video profile to the folder](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
 
-![Subtitles and Audio Tracks tab on the Properties page.](assets-dm/msma-audio-tracks.png)*Subtitles and Audio Tracks tab on the video's Properties page. Notice that there is no original audio track associated with the video as indicated by an empty Audio Tracks list box.*
+   ![Subtitles and Audio Tracks tab on the Properties page.](assets-dm/msma-audiotracks.png)*Subtitles and Audio Tracks tab on the video's Properties page. Notice that there is no original audio track associated with the video as indicated by an empty Audio Tracks list box.*
 
 
 
