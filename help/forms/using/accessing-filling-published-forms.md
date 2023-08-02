@@ -1,13 +1,9 @@
 ---
 title: Accessing and filling published forms
-seo-title: Accessing and filling published forms
 description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-seo-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
-uuid: 44731604-5d97-46fa-baa9-0c020c634fa7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 ---
@@ -54,7 +50,7 @@ Full text search allows you to find and list forms based on the specified keywor
 
 An advanced search dialog
 
-Advance Search allows you to search forms based on specified form properties. This provides a more specific results than full-text search. Advance search includes search based on tags, properties (such as Author, Description, and Title), modification date, and full text.
+Advance Search allows you to search forms based on specified form properties. This provides a more specific result than full-text search. Advance search includes search based on tags, properties (such as Author, Description, and Title), modification date, and full text.
 
 Lister displays forms based on the search parameters. Each form in the search result is displayed with an icon, which is hyperlinked to the associated form. You can click the icon to open and work with the associated form.
 
@@ -70,7 +66,7 @@ Each form contains help information that enables a user to fill the form.
 
 #### Drafts and Submission {#drafts-and-submission}
 
-A user has the option to save a draft of a form by clicking the Save button. This allows the user to work on a form over a period of time before submitting the form.
+A user can optionally save a draft of a form by clicking **Save**. This allows the user to work on a form over a time period before submitting the form.
 
 The data filled in the form (including attachments) is saved as a draft on the server. The draft of a form can be saved any number of times. The saved form appears in the Drafts tab of Draft & Submission component of the page.
 
@@ -86,9 +82,9 @@ Drafts & submissions component
 
 ## Start a new form using submitted form data {#start-a-new-form-using-submitted-form-data}
 
-There are certain forms that you need to fill and submit quite often. For example, the form for filing individual tax return is submitted every year. In such cases, while some bit of the information changes every time you fill the form, most of it like the personal and family details do not change. However, you are still required to fill the entire form again, from scratch.
+There are certain forms that you must fill and submit often. For example, the form for filing individual tax return is submitted every year. In such cases, while some bit of the information changes every time you fill the form, most of it like the personal and family details do not change. However, you are still required to fill the entire form again, from scratch.
 
-AEM Forms can help optimize the form filling experience and significantly reduce the time to fill and submit a form again. End-users can start a new form using data from a submitted form. This functionality is built-in in the [Drafts and Submissions component](../../forms/using/draft-submission-component.md). When you add Drafts and Submission component to your forms portal page and publish it, end-users will find an option in Submitted Forms and Draft Forms tabs to start a new form using data from a submitted form. The following image highlights that option.
+AEM Forms can help optimize the form filling experience and significantly reduce the time to fill and submit a form again. End-users can start a new form using data from a submitted form. This functionality is built-in in the [Drafts and Submissions component](../../forms/using/draft-submission-component.md). When you add Drafts and Submission component to your forms portal page and publish it, end-users see an option in Submitted Forms and Draft Forms tabs to start a new form using data from a submitted form. The following image highlights that option.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 
