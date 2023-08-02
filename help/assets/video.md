@@ -1,13 +1,11 @@
 ---
 title: Video in Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, and viewing video reports. Also learn how to add closed captioning, subtitles, or chapter markers to videos.
+description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, adding multi-audio and multi-caption to videos, and video thumbnails.
 mini-toc-levels: 3
-uuid: 97f311a3-a227-479a-91bf-fb54ecd1a55d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 1103b849-0042-4e11-b170-38ee81dd0157
 docset: aem65
 feature: Asset Management
 role: User, Admin
@@ -268,17 +266,17 @@ The following table describes the device, browser, and playback method of videos
 
 >[!IMPORTANT]
 >
->*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your account](#enable-dash).
+>*To use DASH for your videos, it must first be enabled by Adobe Technical Support on your account. See [Enable DASH on your Dynamic Media account](#enable-dash).
 
 ## Architecture of Dynamic Media video solution {#architecture-of-dynamic-media-video-solution}
 
 The following graphic shows the overall authoring workflow of videos that are uploaded and encoded by way of DMGateway (in Dynamic Media Hybrid mode) and made available for public consumption.
 
-![chlimage_1-427](assets/chlimage_1-427.png)
+![Architecture of Dynamic Media video solution.](assets/chlimage_1-427.png)
 
 ## Hybrid publishing architecture for videos {#hybrid-publishing-architecture-for-videos}
 
-![chlimage_1-428](assets/chlimage_1-428.png)
+![Hybrid publishing architecture for videos.](assets/chlimage_1-428.png)
 
 ## Best practices for encoding videos {#best-practices-for-encoding-videos}
 
@@ -420,7 +418,7 @@ As an example, suppose that your source video is 1920 x 1080. In the following t
 
 Dynamic Media recommends using MP4 H.264 video encoding presets. Because MP4 files use the H.264 video codec, it provides high-quality video but in a compressed file size.
 
-### Enable DASH on your account {#enable-dash}
+### Enable DASH on your Dynamic Media account {#enable-dash}
 
 DASH (Digital Adaptive Streaming over HTTP) is the international standard for video streaming and is widely adopted across different video viewers. When DASH is enabled on your account, you get the option to choose from either DASH or HLS for adaptive video streaming. Or, you can opt for both with automatic switching between players when **[!UICONTROL auto]** is selected as the playback type in the Viewer preset.
 
@@ -565,6 +563,96 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
    The appMeasurementBridge object has a built-in track function. However, you can provide your own to support multiple tracking systems or other functionality.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
+
+## About multi-subtitle and multi-audio track support for videos in Dynamic Media
+
+With multi-subtitle and multi-audio track capability in Dynamic Media, you easily add and manage multiple subtitles and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can now customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
+
+![Subtitles and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT subtitle files and a table showing uploaded .MP3 audio track files.](assets-dm/msma-subtitle-audiotracks-tab.png)
+
+Some of the use cases to consider for adding multi-subtitles and multi-audio tracks to your primary video include the following:
+
+| Type | Use case |
+|--- |--- |
+| **Subtitles** | Multiple language support |
+|  | Descriptive text for accessibility |
+| **Audio tracks** | Multiple language support  |
+|  | Stereo versus multi-channel (surround sound) |
+|  | Commentary tracks |
+|  | Descriptive audio |
+
+All [video formats supported in Dynamic Media](/help/assets/assets-formats.md) are supported for use with multi-subtitles and multi-audio tracks.
+
+>[!NOTE]
+>
+>Multi-subtitle and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Technical Support. 
+>
+>After it is enabled, all subsequent videos that you upload are processed with the new backend architecture that includes support for multi-subtitle and multi-audio tracks. However, any old videos that you uploaded *before* enabling the new backend architecture [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets). This reprocessing step is necessary to have the multi-subtitle and multi-audio track capabilities enabled on them. The old video URLs will continue to work and play as usual, after reprocessing.
+
+### Enable multi-subtitle and multi-audio track support on your Dynamic Media account {#enable-multi-caption-audio}
+
+Enabling (turning on) multi-subtitle and multi-audio track support on your Dynamic Media account is done by way of an Adobe Customer Support case that you create and submit. 
+
+After it is enabled, all newly uploaded videos are processed with a new backend architecture that includes support for multi-subtitle and multi-audio tracks. However, any old videos that you uploaded *before* enabling multi-subtitle and multi-audio track capability feature [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets). This step is necessary to have the multi-subtitle and multi-audio track capabilities enabled on them. The old video URLs will continue to work and play as usual, after reprocessing.
+
+**To enable multi-subtitle and muti-audio track support on your Dynamic Media account:**
+
+1. [Use the Admin Console to start the creation of a new support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+1. To create a support case, follow the instructions while ensuring you provide the following information:
+
+    * Primary contact name, email, phone.
+    * Name of your Dynamic Media account.
+    * Specify that you want multi-subtitle and multi-audio tracks enabled on Experience Manager 6.5.
+   
+1. Adobe Customer Support adds you to the customer Wait List based on the order in which requests are submitted.
+1. When Adobe is ready to handle your request, Customer Support contacts you to coordinate and set a target date for enablement.
+1. You are notified after completion by Customer Support.
+1. Add your multi-subtitle and multi-audio tracks [Add multi-subtitles and multi-audio tracks to your video](#add-msma) to your primary video as usual.
+
+Text displayed with the video that translates or transcribes the dialogue.
+
+Text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making content more accessible for individuals who are deaf or hard of hearing.
+
+### Add multi-subtitles and multi-audio tracks to your video {#add-msma}
+
+Before you add multi-subtitle and multi-audio tracks to your video, be sure you already have the following in-place.
+
+* Dynamic Media is setup in an AEM environment.
+* [DASH is enabled on your Dynamic Media account](#enable-dash).
+* [Multi-subtitle and multi-audio track is enable on your Dynamic Media account](#enable-multi-caption-audio).
+* Any old videos that you uploaded *before* enabling multi-subtitle and multi-audio track capability [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets). This step is necessary if you intend to add multi-subtitle and multi-audio track capabilities to them. After reprocessing, the old video URLs will continue to work and play as usual, and you can now add multi-subtitles and multi-audio tracks.
+
+**To add multi-subtitles and multi-audio tracks to your video:**
+
+1. [Upload your primary video to a folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+1. Navigate to the uploaded video asset that you want to add multi-subtitle and multi-audio tracks.
+1. In asset selection mode, either from the List View or the Card View, tap the video asset.
+1. On the toolbar, tap the Properties icon (a circle with an "i" in it).
+![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](assets-dm/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card view.*
+1. On the video's Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+
+   >[!TIP]
+   >If you do not see the **[!UICONTROL Subtitles & Audio Tracks]** tab, it means the folder in which the selected video resides, does not have a video profile assigned to it. [Apply a video profile to the folder](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
+
+![Subtitles and Audio Tracks tab on the Properties page.](assets-dm/msma-audio-tracks.png)*Subtitles and Audio Tracks tab on the video's Properties page. Notice that there is no original audio track associated with the video as indicated by an empty Audio Tracks list box.*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Add closed captions or subtitles to video {#adding-captions-to-video}
 
