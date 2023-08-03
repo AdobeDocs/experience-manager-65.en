@@ -626,8 +626,8 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
 
 1. [Upload your primary video to a folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 1. Navigate to the uploaded video asset that you want to add multi-subtitle and multi-audio tracks.
-1. In asset selection mode, either from the List View or the Card View, tap the video asset.
-1. On the toolbar, tap the Properties icon (a circle with an "i" in it).
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
 ![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](assets-dm/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card view.*
 1. On the video's Properties page, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
 
@@ -636,6 +636,47 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
 
    ![Subtitles and Audio Tracks tab on the Properties page.](assets-dm/msma-audiotracks.png)*Subtitles and Audio Tracks tab on the video's Properties page. Notice that there is no original audio track associated with the video as indicated by an empty Audio Tracks list box.*
 
+1. (Optional) To add one or more closed captions or subtitles to a video, do the following:
+    * Select **[!UICONTROL Upload Subtitles]**.
+    * Navigate to, and select, one or more .vtt (Video Text Tracks) files and open them.
+    * For subtitles to be visible on the media player, you *must* add required details about *each* subtitle file that you added. Select the pencil icon to the right of a subtitle file name. In the **Edit Subtitle** dialog box, enter the following required details about the file, then select **[!UICONTROL Save]**. Repeat this process for each subtitle file you uploaded:
+    
+      | Subtitle Detail | Description |
+      |--- |--- |
+      | Language | Select the language of the subtitle. |
+      | Type | Select the type of subtitle you are using.<br>**Subtitle** &ndash; Text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; Text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making content more accessible for individuals who are deaf or hard of hearing.  |
+      | Label | Text that is displayed as the subtitle's name on the media player. For example, `English (CC)`. |
+
+ 1. (Optional) To add one or more audio tracks to a video, do the following:
+    * Select **[!UICONTROL Upload Audio Tracks]**.
+    * Navigate to, and select, one or more .mp3 (Video Text Tracks) files and open them.
+    * For audio tracks to be visible on the media player, you *must* add required details about *each* audio track file that you added. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details, then select **[!UICONTROL Save]**. Repeat this process for each audio track file that you uploaded.
+    
+      | Audio Track Detail | Description |
+      |--- |--- |
+      | Language | Select the language of the audio track. |
+      | Type | Select the type of audio track you are using.<br>**Original** &ndash; The audio track originally attached to the video.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; Audio track also includes descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+      | Label | Text that is displayed as the audio track's name on the media player. For example, `English [Original]`. |
+
+    * Under the Audio Tracks heading, set the default audio track you want to assigned to the video. Select the audio track file, then select **[!UICONTROL Set as default]**.
+
+      ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
+
+  
+
+
+
+
+
+
+| Subtitle or Audio Track Status | Description |
+| --- | --- |
+| Processing | Processing is ongoing. |
+| Processed | Processing is completed. |
+| Published | Published to Dynamic Media. |
+| Failed | Processing did not complete. |
+| Unpublished | Processing but not yet published to Dynamic Media.|
+     
 
 
 
@@ -654,7 +695,8 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
 
 
 
-## Add closed captions or subtitles to video {#adding-captions-to-video}
+
+## Add closed captions or subtitles to a video {#adding-captions-to-video}
 
 You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
@@ -670,7 +712,7 @@ Dynamic Media converts caption files to JSON (JavaScript Object Notation) format
 
 See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in the *Dynamic Media Image Serving and Rendering API Help* for more information about using the JSON function in a URL.
 
-**To add captions or subtitles to video:**
+**To add closed captions or subtitles to a video:**
 
 1. Use a third-party application or service to create your video caption/subtitle file.
 
