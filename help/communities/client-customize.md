@@ -55,7 +55,7 @@ The value of the `data-scf-component` attribute may be the default, such as **`s
 
 To bind a component, the entire component script must be enclosed within a &lt;div&gt; element with the following attributes:
 
-* `data-component-id`="{{id}}"
+* `data-component-id`="`{{id}}`"
 
   resolves to the id property from the context
 
@@ -64,7 +64,7 @@ To bind a component, the entire component script must be enclosed within a &lt;d
 For example, from `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
-<div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
+<div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
 
      <!-- HTML with HBS accessing the rating component -->
 
