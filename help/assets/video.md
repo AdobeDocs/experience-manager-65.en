@@ -658,9 +658,11 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
       | Type | Select the type of audio track you are using.<br>**Original** &ndash; The audio track originally attached to the video.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; Audio track also includes descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
       | Label | Text that is displayed as the audio track's name on the media player. For example, `English [Original]`. |
 
-    * Under the Audio Tracks heading, set the default audio track you want to assigned to the video. Select the audio track file, then select **[!UICONTROL Set as default]**.
+    * Under the Audio Tracks heading, set the default audio track you want to assigned to the video. Select the audio track file, then select **[!UICONTROL Set as default]**. In the Set as default dialog box, select **[!UICONTROL Replace]**.
 
       ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
+
+1. In the upper-right corner of the page, select **[!UICONTROL Save & Close]**.
 
   
 
