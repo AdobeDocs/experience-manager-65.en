@@ -136,6 +136,7 @@ Some of the key features and improvements in this release are the following:
 * Translation `rules.xml` sorted in a poor way when rules are added from the translation configuration user interface. (NPR-40431) MAJOR
 * Support links with query parameters during translation. (NPR-40339) NORMAL
 * Dictionary user interface is not loading for the customer after updating additional context root. (NPR-40650) MAJOR
+* Error creating language copies when one of the assets is a Content Fragment that contains a multi-field with ReferenceFragment or ContentFragment types. (NPR-40892) MAJOR
 
 #### User interface{#ui-6518}
 
@@ -150,7 +151,7 @@ Some of the key features and improvements in this release are the following:
 * Reverting an asset version keeps the asset status in processing mode. (NPR-41029) NORMAL
 * Sorting issue on Assets and Projects user interface. Some have overlaid the custom columns on Assets and Projects user interface as per business requirements. They have implemented a sort using the out-of-the-box property `sortable=true`. However, they are seeing inconsistencies in sorting when there are many entries under Projects or Assets user interface. (NPR-41027) NORMAL
 * Logs are getting filled up with `NullPointerException` in the `EMailNotificationService`, and emails, which workflows should send, are not getting sent. (NPR-40898) NORMAL
-* The timeline is not providing references to the selected content. (NPR-40806) MAJOR
+<!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST  * The timeline is not providing references to the selected content. (NPR-40806) MAJOR-->
 
 ## Install [!DNL Experience Manager] 6.5.18.0{#install}
 
