@@ -97,6 +97,7 @@ For more information, see [Create an adaptive form](/help/forms/using/creating-a
 You can create an adaptive form using the form templates enabled in **Configuration Browser**. To enable the form templates, see [Creating Adaptive Form Template](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
 The form templates can also be uploaded from Adaptive Form packages that are created on another author machine. Form templates are  made available by installing [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Some of the best practices recommended are:
+
 * The **nosamplecontent** runmode is recommended only for author and not for the publish nodes.
 * Authoring of assets such as adaptive form, themes, templates, or cloud configurations are performed over Author nodes only, which can be published at the configured Publish nodes.
 For more information, see [Publishing and unpublishing forms and documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
@@ -148,6 +149,42 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
 
 * Adaptive form authors may need to write JavaScript code to build business logic in a form. While JavaScript is powerful and effective, it is likely that it could compromise on security expectations. Therefore, you must ensure that the form author is a trusted persona and there are processes to review and approve the JavaScript code before a form is put into production. Administrator can restrict the access to rule editor access to user groups based on their role or function. See [Grant rule editor access to select user groups](/help/forms/using/rule-editor-access-user-groups.md).
 * You can use expressions in rules to make adaptive forms dynamic. All the expressions are valid JavaScript expressions and use adaptive forms scripting model APIs. These expressions return values of certain types. For more information about expressions and best practices around them, see [Adaptive form expressions](/help/forms/using/adaptive-form-expressions.md).
+
+* Adobe recommends using JavaScript synchronous operations over asynchronous ones when creating rules with the Rule editor. Use of asynchronous operations is strongly discouraged. However, if you find yourself in a situation where asynchronous operations are unavoidable, it is essential to implement JavaScript Closure functions. By doing so, you can effectively safeguard against any potential race conditions, ensuring your rule implementations deliver optimal performance and maintain stability throughout. 
+
+     For example, let's assume we need to fetch data from an external API and then apply some rules based on that data. We use a closure to handle the asynchronous API call and ensure that the rules are applied after the data is fetched. Here is the sample code: 
+
+    ```JavaScript 
+
+         function fetchDataFromAPI(apiEndpoint, callback) {
+          // Simulate asynchronous API call with setTimeout
+          setTimeout(() => {
+            // Assuming the API call is successful, we receive some data
+            const data = {
+              someValue: 42,
+            };
+            // Invoke the callback with the fetched data
+            callback(data);
+          }, 2000); // Simulate a 2-second delay for the API call
+        }
+        // Rule implementation using Closure
+        function ruleImplementation(apiEndpoint) {
+          // Using a closure to handle the asynchronous API call and rule application
+          // say you have set this value in street field inside address panel
+          var streetField = address.street;
+          fetchDataFromAPI(apiEndpoint, (data) => {
+            streetField.value = data.someValue;
+          });
+        }
+        // Example usage of the rule implementation
+        const apiEndpoint = "https://example-api.com/data";
+        ruleImplementation(apiEndpoint);
+
+
+    ```
+
+    In this example, `fetchDataFromAPI` simulates an asynchronous API call using `setTimeout`. Once the data is fetched, it invokes the provided callback function, which is the closure to handle the subsequent rule application. The `ruleImplementation` function contains the rule logic.
+
 
 ### Working with themes {#working-with-themes}
 
