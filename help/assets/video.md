@@ -593,7 +593,7 @@ All [video formats supported in Dynamic Media](/help/assets/assets-formats.md) a
 
 Enabling (turning on) multi-subtitle and multi-audio track support on your Dynamic Media account is done by way of an Adobe Customer Support case that you create and submit. 
 
-After it is enabled, all newly uploaded videos are processed with a new backend architecture that includes support for multi-subtitle and multi-audio tracks. However, any old videos that you uploaded *before* enabling multi-subtitle and multi-audio track capability feature [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets). This step is necessary to have the multi-subtitle and multi-audio track capabilities enabled on them. The old video URLs will continue to work and play as usual, after reprocessing.
+After it is enabled, all newly uploaded videos are processed with a new backend architecture that includes support for multi-subtitle and multi-audio tracks. However, any old videos that you uploaded *before* enabling multi-subtitle and multi-audio track capability feature [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets) *after* enablement. This step is necessary to have multi-subtitle and multi-audio track capabilities enabled on them. The old video URLs will continue to work and play as usual, after the reprocessing.
 
 **To enable multi-subtitle and muti-audio track support on your Dynamic Media account:**
 
@@ -609,22 +609,23 @@ After it is enabled, all newly uploaded videos are processed with a new backend 
 1. You are notified after completion by Customer Support.
 1. Add your multi-subtitle and multi-audio tracks [Add multi-subtitles and multi-audio tracks to your video](#add-msma) to your primary video as usual.
 
-Text displayed with the video that translates or transcribes the dialogue.
-
-Text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making content more accessible for individuals who are deaf or hard of hearing.
-
 ### Add multi-subtitles and multi-audio tracks to your video {#add-msma}
 
-Before you add multi-subtitle and multi-audio tracks to your video, be sure you already have the following in-place.
+Before you add multi-subtitle and multi-audio tracks to your video, be sure you have the following already in-place.
 
 * Dynamic Media is setup in an AEM environment.
+* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
 * [DASH is enabled on your Dynamic Media account](#enable-dash).
-* [Multi-subtitle and multi-audio track is enable on your Dynamic Media account](#enable-multi-caption-audio).
-* Any old videos that you uploaded *before* enabling multi-subtitle and multi-audio track capability [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets). This step is necessary if you intend to add multi-subtitle and multi-audio track capabilities to them. After reprocessing, the old video URLs will continue to work and play as usual, and you can now add multi-subtitles and multi-audio tracks.
+* [Multi-subtitle and multi-audio track is enabled on your Dynamic Media account](#enable-multi-caption-audio). 
+  Any old videos that you uploaded *before* enabling multi-subtitle and multi-audio track capability [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets) *after* enablement. This step is necessary if you intend to add multi-subtitle and multi-audio track capabilities to them. After reprocessing, the old video URLs will continue to work and play as usual, and you can now add multi-subtitles and multi-audio tracks.
+
+Additional captions are supported with WebVTT and Adobe VTT formats. And, additional audios are supported with MP3 format.
+
+All multi-subtitles and multi-audio tracks are supported with all [supported video file formats in Dynamic Media](/help/assets/assets-formats.md).
 
 **To add multi-subtitles and multi-audio tracks to your video:**
 
-1. [Upload your primary video to a folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+1. [Upload your primary video to a folder](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
 1. Navigate to the uploaded video asset that you want to add multi-subtitle and multi-audio tracks.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
 1. On the toolbar, select the Properties icon (a circle with an "i" in it).
@@ -643,9 +644,12 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
     
       | Subtitle Detail | Description |
       |--- |--- |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or subtitle files. A single additional audio track file and subtitle file cannot have the same file name. |
       | Language | Select the language of the subtitle. |
       | Type | Select the type of subtitle you are using.<br>**Subtitle** &ndash; Text displayed with the video that translates or transcribes the dialogue.<br>**Caption** &ndash; Text also includes background noises, speaker differentiation, and other relevant information, along with the translation or transcription of the dialogue, making content more accessible for individuals who are deaf or hard of hearing.  |
       | Label | Text that is displayed as the subtitle's name on the media player. For example, `English (CC)`. |
+
+      You can change or edit these subtitle details later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
  1. (Optional) To add one or more audio tracks to a video, do the following:
     * Select **[!UICONTROL Upload Audio Tracks]**.
@@ -654,22 +658,60 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
     
       | Audio Track Detail | Description |
       |--- |--- |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or subtitle files. A single additional audio track file and subtitle file cannot have the same file name. |
       | Language | Select the language of the audio track. |
-      | Type | Select the type of audio track you are using.<br>**Original** &ndash; The audio track originally attached to the video.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; Audio track also includes descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
-      | Label | Text that is displayed as the audio track's name on the media player. For example, `English [Original]`. |
+      | Type | Select the type of audio track you are using.<br>**Original** &ndash; The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. Both **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, but defaults to the original values if the primary video is reprocessed.<br>**Standard** &ndash; An add-on audio track for a language other than the original.<br>**Audio description** &ndash; Audio track also includes descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+      | Label | The text that you want displayed in the selection button for the video viewer. The label is what a customer sees that corresponds to a subtitle or audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original|` by default. |
 
-    * Under the Audio Tracks heading, set the default audio track you want to assigned to the video. Select the audio track file, then select **[!UICONTROL Set as default]**. In the Set as default dialog box, select **[!UICONTROL Replace]**.
-
-      ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
+      You can change or edit these audio track details later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
 1. In the upper-right corner of the page, select **[!UICONTROL Save & Close]**.
+1. (Optional) Preview the video before publishing to ensure the subtitles and audio work as expected. See [Preview videos](managing-video-assets.md#upload-and-preview-video-assets) or [Preview assets](previewing-assets.md).
+1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-  
+### Set the default audio for a video that has multiple audio tracks
+
+By default, a video's original audio is set as the default audio to be played.
+
+However, any uploaded audio track files can be set as the default audio to play after a video is loaded into the viewer. In the Properties user interface, under the Subtitles & Audio Tracks tab, the `Default` label is applied to the right of the audio track file for video playback.
+
+>[!NOTE]
+>
+>The playback of default audio also depends on the following browser's setting:
+>
+>* Chrome&mdash;The default audio that is set in the video, is played.
+>* Safari&mdash;If the default language is set in Safari, audio is played with the set default language, if available with the video's manifest. Otherwise, the default audio that is set as part of a video's properties is played.
+
+**To set the default audio track for a video:**
+
+1. Navigate to the video asset whose default audio track you want to set.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the Properties pages, select the **[!UICONTROL Subtitles & Audio Tracks]** tab. 
+1. Under the **Audio Tracks** heading, select the audio track file that you want to set as the video's default.
+1. Select **[!UICONTROL Set as default]**.
+In the **Set as default** dialog box, select **[!UICONTROL Replace]**.
+
+   ![The Audio Tracks heading with a selected audio track file name and highlighted "Set as default" button.](assets-dm/msma-defaultaudiotrack.png)*Setting the default audio track for a video.*
+
+1. In the upper-right corner, select **[!UICONTROL Save & Close]**.
+1. Publish the video.
+
+### Preview a video that has multiple subtitles and audio tracks
 
 
 
 
+### View the lifecycle status of a video{#lifecycle-status-video}
 
+You can observe the lifecycle status of any subtitle or audio track file added to your primary video from the **Subtitles & Audio Tracks** tab of **Properties**.
+
+**To view the lifecycle status of a video:**
+
+1. Navigate to the video asset whose lifecycle status you want to view.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the Properties pages, select the **[!UICONTROL Subtitles & Audio Tracks]** tab. In the Status column, note the state of each subtitle or audio file.
 
 | Subtitle or Audio Track Status | Description |
 | --- | --- |
@@ -677,7 +719,51 @@ Before you add multi-subtitle and multi-audio tracks to your video, be sure you 
 | Processed | Processing is completed. |
 | Published | Published to Dynamic Media. |
 | Failed | Processing did not complete. |
-| Unpublished | Processing but not yet published to Dynamic Media.|
+| Unpublished | Processing but not yet published to Dynamic Media.|      
+
+![Status column highlighted for Subtitles and Audio Tracks fields.](assets-dm/msma-lifecycle-status.png)*Lifecycle status of each uploaded subtitle and audio track file.*
+
+#### Subtitle or Audio Track files added after a video is published
+
+The uploading of additional subtitle files or audio track files to a video that is already published means that those files will have a `Processed` status after they are prepared, following their upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
+
+Following preview, you must republish the video for the newly added subtitle or audio track files to be published, too. After republishing, the subtitles or audio becomes available with the public Dynamic Media URL. 
+
+In the scenario where you have configured Dynamic Media for immediate publish, the uploading of additional subtitle or audio files will immediately trigger a publish of the video following upload of subtitle or audio files.
+
+>[!CAUTION]
+>
+>When you upload subtitle or audio files to an already published video, these files are deleted if you decide later to [*reprocess*](/help/assets/processing-profiles.md##reprocessing-assets) the video. Only the video's original audio, remains intact. In such cases, you must reupload the subtitle files and audio track files again.
+
+### Delete a subtitle or audio track file from a video
+
+You can delete subtitle or audio track files from a video. Deletion of published subtitle or audio track files is automatically reflected in the video's published URL.
+
+The original audio track extracted from a primary video cannot be deleted.
+
+**To delete a subtitle or audio track file from a video:**
+
+1. Navigate to the video asset whose default audio track you want to set.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, select the Properties icon (a circle with an "i" in it).
+1. On the Properties pages, select the **[!UICONTROL Subtitles & Audio Tracks]** tab.
+1. Do either one of the following:
+
+   * Subtitles&mdash;Under the **Subtitles** heading, select one or more subtitle files that you want to delete from the video, then select **[!UICONTROL Delete]**.
+   * Audio Tracks&mdash;Under the **Audio Tracks** heading, select one or more audio track files that you want to delete from the video, then select **[!UICONTROL Delete]**.
+
+1. In the Delete dialog box, select **[!UICONTROL OK]**.
+1. Publish the video.
+
+1. Select **[!UICONTROL Set as default]**.
+
+### Download subtitle or audio track files that were uploaded to a video
+
+You can download one or more subtitle or audio track files that you uploaded for use with a video.
+
+The original audio track extracted from a primary file cannot be downloaded. 
+
+
      
 
 
