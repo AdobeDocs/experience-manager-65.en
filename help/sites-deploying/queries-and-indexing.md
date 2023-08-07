@@ -202,8 +202,6 @@ The only document found that contains both terms is 200, as in the example below
 | 200 | /content/rubiksCube | "The Rubik's Cube was invented in 1974." |
 | --- | --- | --- |
 
-**Resolution**
-
 When multiple entries are found, they are then sorted by score.
 
 ### The Lucene Property Index {#the-lucene-property-index}
