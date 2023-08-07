@@ -723,25 +723,25 @@ You can observe the lifecycle status of any subtitle or audio track file added t
 
 ![Status column highlighted for Subtitles and Audio Tracks fields.](assets-dm/msma-lifecycle-status.png)*Lifecycle status of each uploaded subtitle and audio track file.*
 
-#### Subtitle or Audio Track files added after a video is published
+#### About subtitle and audio track files added to a video *after* the video is published
 
-The uploading of additional subtitle files or audio track files to a video that is already published means that those files will have a `Processed` status after they are prepared, following their upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
+When you upload additional subtitle files or audio track files to a video that is already published, it means that those files will have a `Processed` status after they are prepared, following upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
 
-Following preview, you must republish the video for the newly added subtitle or audio track files to be published, too. After republishing, the subtitles or audio becomes available with the public Dynamic Media URL. 
+Following preview, however, you must *publish* the video again for the newly added subtitle or audio track files to be published, too. After publishing, the subtitles or audio becomes available with the public Dynamic Media URL. 
 
-In the scenario where you have configured Dynamic Media for immediate publish, the uploading of additional subtitle or audio files will immediately trigger a publish of the video following upload of subtitle or audio files.
+In the scenario where you have configured Dynamic Media for immediate publish, the uploading of additional subtitle or audio files immediately triggers a publish of the video following the upload of subtitle or audio files.
 
 >[!CAUTION]
 >
->When you upload subtitle or audio files to an already published video, these files are deleted if you decide later to [*reprocess*](/help/assets/processing-profiles.md##reprocessing-assets) the video. Only the video's original audio, remains intact. In such cases, you must reupload the subtitle files and audio track files again.
+>When you upload subtitle files or audio files to a video that is already published, these files are deleted if you [*reprocess*](/help/assets/processing-profiles.md##reprocessing-assets) the video. Only the video's original audio, remains intact. In such cases, you must reupload the subtitle files and audio track files to the video, again.
 
-### Delete a subtitle or audio track file from a video
+### Delete subtitle or audio track files from a video
 
 You can delete subtitle or audio track files from a video. Deletion of published subtitle or audio track files is automatically reflected in the video's published URL.
 
 The original audio track extracted from a primary video cannot be deleted.
 
-**To delete a subtitle or audio track file from a video:**
+**To delete subtitle or audio track files from a video:**
 
 1. Navigate to the video asset whose default audio track you want to set.
 1. In asset selection mode, either from the List View or the Card View, select the video asset.
@@ -754,8 +754,6 @@ The original audio track extracted from a primary video cannot be deleted.
 
 1. In the Delete dialog box, select **[!UICONTROL OK]**.
 1. Publish the video.
-
-1. Select **[!UICONTROL Set as default]**.
 
 ### Download subtitle or audio track files that were uploaded to a video
 
