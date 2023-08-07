@@ -9,7 +9,7 @@ exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 
 | Version | Article link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html)                  |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html)                  |
 | AEM 6.5     | This article         |
 
 
