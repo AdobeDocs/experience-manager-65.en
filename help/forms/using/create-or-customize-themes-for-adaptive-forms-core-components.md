@@ -14,8 +14,9 @@ role: Admin, Developer
 
 | Version | Article link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)|
 | AEM 6.5  |    This Article                  |
-| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)| 
+ 
 
 **Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/themes.md).
 
@@ -45,7 +46,7 @@ A theme is a package that encompasses the CSS file, JavaScript files, and resour
 
 ## Create a theme 
 
-AEM Forms 6.5 provides, the below listed themes for Core Components based Adaptive Forms.  
+AEM Forms 6.5 provides the below listed themes for Core Components based Adaptive Forms.
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
@@ -336,4 +337,5 @@ To remove unused or unwanted themes:
 * [Create or customize themes for Core Components based Adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Create a template for Core Components based Adaptive Forms](template-editor.md)
 * [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Sample themes templates and form data models](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 

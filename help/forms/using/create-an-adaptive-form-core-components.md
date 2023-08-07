@@ -168,10 +168,10 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 
 * [Use rule editor to add dynamic behaviour to form](rule-editor.md)
 * [Create or customize themes for Core Components based Adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* Create a template for Core Components based Adaptive Forms
+
 
 ## See also
 
 * [Create a Core Components based Adaptive Form](create-an-adaptive-form-core-components.md)
 * [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
+* [Sample themes templates and form data models](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
