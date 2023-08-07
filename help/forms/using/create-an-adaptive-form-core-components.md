@@ -18,15 +18,14 @@ role: Admin, Developer
 
 | Version | Article link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)|
 | AEM 6.5  |    This Article                  |
-| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)|   
 
 **Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).
 
-
 Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provide business user-friendly UI to quickly create Adaptive Forms. The UI offers quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
-Before you start, learn about the type of Forms components available to you: 
+Before you start, learn about the type of Forms components available to you:
 
 * [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
 
