@@ -567,7 +567,7 @@ Use the [Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.a
 
 
 
-## About multi-subtitle and multi-audio track support for videos in Dynamic Media
+## About multi-subtitle and multi-audio track support for videos in Dynamic Media{#about-msma}
 
 With multi-subtitle and multi-audio track capability in Dynamic Media, you can easily add multiple subtitles and audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 
