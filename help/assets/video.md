@@ -919,7 +919,7 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/
 
 >[!IMPORTANT]
 >
->The following steps in this topic are for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](#enable-multi-caption-audio) on your Dynamic Media account. Doing so lets you take advantage of the latest backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
+>This topic is for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](#enable-multi-caption-audio) on your Dynamic Media account. Doing so lets you take advantage of the latest backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
 
 You can make your long form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. When a user plays the video, they can click the chapter markers on the video timeline (also known as the video scrubber) to easily navigate to their point of interest. Or, they can immediately jump to new content, demonstrations, and tutorials.
 
