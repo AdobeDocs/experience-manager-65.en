@@ -38,9 +38,9 @@ Some of the key features and improvements in this release are the following:
 
 ## Enhancements in Service Pack 18 {#enhancements-sp18}
 
-### Forms{#aem-forms-6518} 
+<!-- ### Forms{#aem-forms-6518} 
 
-* A
+* A -->
 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
@@ -77,8 +77,9 @@ Some of the key features and improvements in this release are the following:
 * After successful sign-in, user is redirected to Page Editor. User has to reopen the Asset selector to pick Remote Assets. (SITES-13851) CRITICAL
 * Remote Asset Picker always redirects to the Adobe IMS (Identity Management System) Stage environment. (SITES-13448, SITES-13433) BLOCKER
 
-#### [!DNL Experience Fragments]{#sites-experiencefragments-6518}
+<!-- #### [!DNL Experience Fragments]{#sites-experiencefragments-6518}
 
+* A -->
 
 #### Page Editor{#sites-pageeditor-6518}
 
@@ -87,7 +88,7 @@ Some of the key features and improvements in this release are the following:
 
 ### [!DNL Assets]{#assets-6518}
 
-* W
+* A
 
 #### [!DNL Dynamic Media]{#dm-6518}
 
@@ -98,9 +99,9 @@ Some of the key features and improvements in this release are the following:
 
 * After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) NORMAL
 
-### [!DNL Commerce]{#commerce-6518}
+<!-- ### [!DNL Commerce]{#commerce-6518}
 
-* M
+* A -->
 
 ### Foundation{#foundation-6518}
 
@@ -108,13 +109,13 @@ Some of the key features and improvements in this release are the following:
 
 * The asset delete queue should not be blocked and no error should occur in the log file. (NPR-40570) NORMAL
 
-#### Integrations{#integrations-6518}
+<!-- #### Integrations{#integrations-6518}
 
-* W
+* A -->
 
-#### Oak{#oak-6518}
+<!-- #### Oak{#oak-6518}
 
-* F
+* A -->
 
 #### Platform{#platform-6518}
 
@@ -142,9 +143,9 @@ Some of the key features and improvements in this release are the following:
 
 * As described in the [Configuration Browser documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _The Name will become the node name in the repository_. However, in Configuration Browser, Configuration Title is used for Path in CRXDE Lite, and the Name of the Configuration is ignored. (NPR-40607) MINOR
 
-#### WCM{#wcm-6518}
+<!-- #### WCM{#wcm-6518}
 
-* T
+* A -->
 
 #### Workflow{#workflow-6518}
 
