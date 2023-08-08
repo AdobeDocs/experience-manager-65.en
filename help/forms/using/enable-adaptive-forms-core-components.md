@@ -14,8 +14,8 @@ role: Admin, Developer
 
 | Version | Article link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)|
 | AEM 6.5  |    This Article                  |
-| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)| 
 
 **Applies to:** ✅ Adaptive Form Core Components ❎ Adaptive Form Foundation Components.
 
