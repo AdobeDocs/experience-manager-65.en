@@ -35,12 +35,9 @@ mini-toc-levels: 4
 Some of the key features and improvements in this release are the following:
 
 * You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface. See [About multi-subtitle and multi-audio track support for videos in Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/video.html?lang=en#about-msma).
+* Ability to navigate to the folder location for assets displayed in the search results.
 
 ## Enhancements in Service Pack 18 {#enhancements-sp18}
-
-### Assets{#aem-assets-6518}
-
-* Ability to navigate to the folder location for assets displayed in the search results. 
 
 <!-- ### Forms{#aem-forms-6518} 
 
@@ -93,14 +90,14 @@ Some of the key features and improvements in this release are the following:
 ### [!DNL Assets]{#assets-6518}
 
 * The screen reader does not announce the expand or collapse state of the [!UICONTROL Start Crop] option while editing an asset. (NPR-40593)
-* Experience Manager displays error and warning messages while uploading an Asset on AEM 6.5.17.0 instance. (ASSETS-26232)
+* Experience Manager displays error and warning messages while uploading an asset on AEM 6.5.17.0 instance. (ASSETS-26232)
 * When you relate an asset from a folder with full access to an asset from a folder with read-only access, Experience Manager displays an error message, but still creates a partial relation between the two assets. (ASSETS-25832)
 * Connected Assets do not work between an AMS instance and a Cloud Service instance. (ASSETS-24930)
-* While editing Metadata Schema Forms, the values of [!UICONTROL On time] and [!UICONTROL Off time] values are not getting saved correctly. (ASSETS-24871)
+* While editing Metadata Schema Forms, the values of [!UICONTROL On time] and [!UICONTROL Off time] fields are not getting saved correctly. (ASSETS-24871)
 * While generating the Smart Tags report for the trained tags, the tags with low confidence scores are not getting listed. (ASSETS-24109)
 * Experience Manager displays a blank screen while editing and annotating an image in Column view. (ASSETS-24108)
 * Screen readers do not announce the purpose of the Add User field while creating a new collection. (ASSETS-21736)
-* The label *Collections* is not localized on the Collections properties page. (ASSETS-21102)
+* The **Collections** label is not localized on the Collections properties page. (ASSETS-21102)
 * When you add a rule or edit an existing rule using the default Metadata Schema form, the languages in the drop-down list are not localized. (ASSETS-21026)
 * Experience Manager displays an unlocalized error message on adding JSON path in metadata schema. (ASSETS-21025)
 * The timeline option on the left navigation does not display the appropriate contrast ratio. (ASSETS-17348)
@@ -108,7 +105,7 @@ Some of the key features and improvements in this release are the following:
 * The left navigation text does not display the appropriate contrast ratio. (ASSETS-17268)
 * The Lightbox image is not hidden from the screen reader users. (ASSETS-17263, ASSETS-17242)
 * The state of an Active user interface does not provide a suitable contrast ratio with respect to the background. (ASSETS-17260)
-* While annotating an Asset, the screen reader does not recognize the [!UICONTROL Save as version] or [!UICONTROL Start workflow] buttons while navigating them using the keyboard's arrow keys. (ASSETS-17253)
+* While annotating an Asset, the screen reader does not recognize the [!UICONTROL Save as version] or [!UICONTROL Start workflow] buttons while navigating them using the keyboard arrow keys. (ASSETS-17253)
 * Certain ARIA roles do not contain the appropriate child roles on the Assets home page. (ASSETS-17248)
 * When you navigate to the editing options for an asset of image type using the keyboard, the [!UICONTROL Launch Map] option is not recognized and the keyboard focus goes to the Cancel button instead. (ASSETS-17238)
 
