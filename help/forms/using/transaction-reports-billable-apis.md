@@ -102,6 +102,32 @@ Billing APIs does not account for the number of pages, the length of a document 
  </tbody>
 </table>
 
+###  DocAssurance Service {#DocAssurance-Service}
+
+<table>
+ <tbody>
+  <tr>
+   <td><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
+  </tr>
+  <tr>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/aem-document-services-programmatically.html?lang=en#adding-a-signature-field-nbsp" target="_blank">Adding a Signature field</a><br /> </td>
+   <td>Add a signature field by using the Signature service. You can add multiple signature fields to a PDF document. However, each signature field name must be unique.</td>
+   <td>Documents Processed</td>
+   <td> </td>
+  </tr>
+  <tr>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/aem-document-services-programmatically.html?lang=en#certifying-pdf-documents-nbsp" target="_blank">Certifying PDF documents</a></td>
+   <td>Secure a PDF document by certifying it with a particular type of signature called a certified signature. A certified signature is distinguished from a digital signature.</td>
+   <td>Documents Processed</td>
+   <td> </td>
+  </tr>
+ </tbody>
+</table>
+
+
 ### Distiller Service {#distiller-service}
 
 <table>
@@ -303,7 +329,13 @@ Billing APIs does not account for the number of pages, the length of a document 
 >
 >* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked.
 >* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied DDX code.
->
+>* Invoke is a transaction depends on the operation being performed. It is considered as a transaction if the following operations are performed:
+    1. XDP to PDF conversion (interactive as well as non-interactive communication)
+    2. PDF to PDF/A
+    3. PDF to Word text
+    4. Non-PDF to PDF conversion
+
+
 
 ### PDF Utility Service  {#pdf-utility-service}
 
