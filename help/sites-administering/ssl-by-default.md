@@ -182,7 +182,7 @@ Below you will find an example for creating a self-signed certificate in DER for
 Convert the Private Key to DER format. This is because the SSL wizard requires key to be in DER format:
 
 ```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+openssl rsa -inform PEM -in localhostprivate.key -outform DER -out localhostprivate.der 
 ```
 
 Finally, upload the **localhostprivate.der** as the Private Key and **localhost.crt** as the SSL/TLS Certificate in step 2 of the graphical SSL/TLS Wizard described at the beginning of this page.
