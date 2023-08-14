@@ -329,7 +329,7 @@ Billing APIs does not account for the number of pages, the length of a document 
 >
 >* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked. It is considered as a transaction, when the XDP to PDF conversion (interactive and non-interactive communication), PDF to PDF/A, PDF to Word text and non-PDF to PDF conversion are done.
 >* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied DDX code.
->* The Invoke API is a transaction that depends on the operation being performed.
+>* The invoke API is a transaction that depends on the operation being performed.
 
 ### PDF Utility Service  {#pdf-utility-service}
 
