@@ -27,7 +27,7 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 * **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an adaptive form, HTML5 Form, PDF Forms, and form set are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
 
-* **Documents Rendered:** Generating a document by combining a template and data, digitally signing or certifying a document, using a billable document services APIs for document services, or converting a document from one format to another are accounted as documents rendered.
+* **Documents Rendered:** Generating a document by combining a template and data, digitally signing or certifying a document, using a billable document services API for document services, or converting a document from one format to another are accounted as documents rendered.
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ Billing APIs does not account for the number of pages, the length of a document 
  </tbody>
 </table>
 
-###  DocAssurance Service {#DocAssurance-Service}
+### DocAssurance Service {#DocAssurance-Service}
 
 <table>
  <tbody>
@@ -327,15 +327,9 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 >[!NOTE]
 >
->* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked.
+>* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked. It is considered as a transaction, when the XDP to PDF conversion (interactive and non-interactive communication), PDF to PDF/A, PDF to Word text and non-PDF to PDF conversion are done.
 >* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied DDX code.
->* Invoke is a transaction depends on the operation being performed. It is considered as a transaction if the following operations are performed:
-    1. XDP to PDF conversion (interactive as well as non-interactive communication)
-    2. PDF to PDF/A
-    3. PDF to Word text
-    4. Non-PDF to PDF conversion
-
-
+>* The Invoke API is a transaction that depends on the operation being performed.
 
 ### PDF Utility Service  {#pdf-utility-service}
 
@@ -349,7 +343,7 @@ Billing APIs does not account for the number of pages, the length of a document 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
-   <td>Converts a PDF document into an XDP file. In order for a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the AcroForm dictionary.</td>
+   <td>Converts a PDF document into an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the AcroForm dictionary.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
