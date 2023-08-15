@@ -7,7 +7,7 @@ exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 ---
 # Variations - Authoring Fragment Content{#variations-authoring-fragment-content}
 
-[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments, as they allow you to create and edit copies of the master content for use on specific channels, and/or scenarios, making headless content delivery even more flexible.
+[Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments, as they let you create and edit copies of the master content for use on specific channels, and/or scenarios, making headless content delivery even more flexible.
 
 From the **Variations** tab you can:
 
@@ -108,7 +108,7 @@ The format can be selected when the full-screen editor.
 
 ### Rich Text {#rich-text}
 
-Rich text editing allows you to format:
+Rich text editing lets you format:
 
 * Bold
 * Italic
@@ -145,7 +145,7 @@ Plain Text allows for rapid entry of content without formatting or markdown info
 >
 >For full information see the [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
 
-This allows you to format your text using markdown. You can define:
+This lets you format your text using markdown. You can define:
 
 * Headings
 * Paragraphs and Line Breaks
@@ -186,7 +186,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### New Content Fragment {#fragment-references-new-content-fragment}
 
-The option **New Content Fragment** will allow you to create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
+The option **New Content Fragment** will let you create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
 
 You will then be able to create a new fragment by:
 
@@ -394,7 +394,7 @@ They will be added as a reference, in your current location in your fragment.
 
 ### Creating a Variation {#creating-a-variation}
 
-Variations allow you to take the **Master** content and vary it according to purpose (if required).
+Variations let you take the **Master** content and vary it according to purpose (if required).
 
 To create a new variation:
 
@@ -455,7 +455,7 @@ To delete an existing variation:
 
 **Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevant to the variations and, therefore, need to be propagated to them..
 
-When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This allows you to automatically copy changes made to Master to the required variation.
+When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This lets you automatically copy changes made to Master to the required variation.
 
 >[!CAUTION]
 >

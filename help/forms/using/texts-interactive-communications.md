@@ -180,7 +180,7 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 
    Rule to display the selected text if the location of the recipient is US according to the source data of FDM
 
-    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to drag-and-drop form data model properties and variables to construct rules. Tap Resize again to go back to the Create Rule dialog. 
+    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog lets you drag-and-drop form data model properties and variables to construct rules. Tap Resize again to go back to the Create Rule dialog. 
     * You can also create multiple conditions in a rule. 
     * You can also create overlapping rules, in which a rule is applied to a part of a content that already has a rule applied.
 
@@ -256,7 +256,7 @@ Text editor has built in support for 210 special characters. The admin can [add 
 
 When working with text document fragments containing a large amount of text, you need to search for a specific text string. You may also need to replace a specific string of text with an alternative string.
 
-The Find and Replace feature allows you to search for (and replace) any string of text in a text document fragment. The feature also includes a powerful regular expression search.
+The Find and Replace feature lets you search for (and replace) any string of text in a text document fragment. The feature also includes a powerful regular expression search.
 
 1. Open a text document fragment for [editing](#edittext). 
 1. Tap **[!UICONTROL Find & Replace]**.  

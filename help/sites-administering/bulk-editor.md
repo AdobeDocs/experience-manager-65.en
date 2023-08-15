@@ -45,7 +45,7 @@ An example to illustrate such a use case is included in the Geometrixx web site:
 
 ## How to Use the Bulk Editor {#how-to-use-the-bulk-editor}
 
-The Bulk Editor allows you to:
+The Bulk Editor lets you:
 
 * [search for content based on query parameters, to display specified properties of the results in columns, to edit this content and save the changes](#searching-and-editing-content)
 * [to export this content to a tab-separated spreadsheet](#exporting-content)

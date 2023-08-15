@@ -1,8 +1,8 @@
 ---
 title: Working with the Author Environment
 seo-title: Working with the Author Environment
-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
-seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
+description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
+seo-description: The author environment lets you perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
 uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,7 +17,7 @@ exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 >
 >The following documentation focuses on the classic UI. For information about authoring in the modern, touch-enabled UI, see the [standard Authoring documentation](/help/assets/assets.md).
 
-The author environment allows you to perform tasks related to:
+The author environment lets you perform tasks related to:
 
 * [Authoring](/help/sites-authoring/author.md) (including [page authoring](/help/sites-authoring/qg-page-authoring.md) and [managing assets](/help/assets/assets.md))
 

@@ -21,7 +21,7 @@ exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 
 Your customers are likely to abandon a form if the experience it delivers is not engaging. While it is frustrating for the customers, it can also upturn the support volume and cost for your organization. It is critical as well as challenging to identify and provide the right customer experience that increases the conversion rate. Adobe Experience Manager Forms holds the key to this problem.
 
-AEM Forms integrates with Adobe Target, an Adobe Marketing Cloud solution, to deliver personalized and engaging customer experiences across multiple digital channels. One of the key capabilities of Target is A/B testing that allows you to quickly set up concurrent A/B tests, present relevant content to targeted users, and identify the experience that drives better conversion rate.
+AEM Forms integrates with Adobe Target, an Adobe Marketing Cloud solution, to deliver personalized and engaging customer experiences across multiple digital channels. One of the key capabilities of Target is A/B testing that lets you quickly set up concurrent A/B tests, present relevant content to targeted users, and identify the experience that drives better conversion rate.
 
 With AEM Forms, you can set up and run A/B tests on adaptive forms in real time. It also provides out-of-the-box and customizable reporting capabilities to visualize real-time performance of your form experiences and identify the one that maximizes user engagement and conversion.
 

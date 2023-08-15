@@ -149,7 +149,7 @@ Various components are provided with AEM for personalization. Some allow users t
 | Forms Radio Group |Multiple items organized into a list preceded by a radio button. Users must select only one radio button. |
 | Forms Submit Button |An additional submit button for the form where the title is displayed as text on the button. |
 | Forms Text Field |Text field that allows users to enter information. |
-| My Gadgets |Allows you to include one of a selection of gadgets available. |
+| My Gadgets |Lets you include one of a selection of gadgets available. |
 | Profile Avatar Photo |Allows input of an Avatar Photo. |
 | Profile Detailed Name |Input of name details, including elements such as title, middle name and suffix if required. |
 | Profile Display Name |Name to be displayed. |
@@ -158,7 +158,7 @@ Various components are provided with AEM for personalization. Some allow users t
 | Profile Primary Phone Number |Allows input of a telephone number. |
 | Profile Primary URL |Allows input of a URL. |
 | Profile General Text property |Profile properties. |
-| Sign-in |Allows you to submit a username and password when logging in. |
+| Sign-in |Lets you submit a username and password when logging in. |
 | Sign out |Indicates the user currently logged in, and gives you a link to log out. |
 | Tag Cloud |A tag cloud to show a graphically presented selection of tags within your website |
 | Teaser |A piece of content (usually an image) displayed on a main page to "tease" users into accessing the underlying content. |

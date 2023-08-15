@@ -9,7 +9,7 @@ exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 ---
 # Trying out the Globalized Site Structure in We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
-We.Retail has been built with a globalized site structure offering a language master that can be live-copied to country-specific web sites. Everything is set up out-of-the-box to allow you to experiment with this structure and the built-in translation capabilities.
+We.Retail has been built with a globalized site structure offering a language master that can be live-copied to country-specific web sites. Everything is set up out-of-the-box to let you experiment with this structure and the built-in translation capabilities.
 
 ## Trying it out {#trying-it-out}
 
@@ -28,7 +28,7 @@ We.Retail has been built with a globalized site structure offering a language ma
 
 1. Return to column view and click the Language Master and see the language master roots with content. Only English has content.
 
-   We.Retail does not come with any translated content, but the structure and configuration is in place to allow you to demonstrate the translation services.
+   We.Retail does not come with any translated content, but the structure and configuration is in place to let you demonstrate the translation services.
 
    ![chlimage_1-90](assets/chlimage_1-90a.png)
 

@@ -64,7 +64,7 @@ Content Fragment Models define the structure of the data and content that you cr
 
 ### Content Fragments {#content-fragments}
 
-Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations and over multiple channels.
+Content Fragments let you design, create, curate, and publish page-independent content. They let you prepare content ready for use in multiple locations and over multiple channels.
 
 Content fragments contain structured content and can be delivered in JSON format.
 
@@ -72,8 +72,8 @@ Content fragments contain structured content and can be delivered in JSON format
 
 To modify your content headlessly, AEM offers two robust APIs.
 
-* The GraphQL API allows you to create requests to access and deliver Content Fragments.
-* The Assets REST API allows you to create and modify Content Fragments (and other assets).
+* The GraphQL API lets you create requests to access and deliver Content Fragments.
+* The Assets REST API lets you create and modify Content Fragments (and other assets).
 
 You will learn about these APIs and how to use them in a later part of the AEM headless journey. Or refer to the [additional resources](#additional-resources) section below for additional documentation.
 
@@ -133,7 +133,7 @@ For any successful project, it is important to clearly define not only the requi
 
 ### Scope {#scope}
 
-It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and allows you to establish a definition of done.
+It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and lets you establish a definition of done.
 
 The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you've built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) and find the section that better suits what you want to accomplish.
 

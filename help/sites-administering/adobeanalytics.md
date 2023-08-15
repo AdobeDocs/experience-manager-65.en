@@ -20,7 +20,7 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 | AEM 6.5     | This article         |
 
 
-Integrating Adobe Analytics and AEM allows you to track your web page activity:
+Integrating Adobe Analytics and AEM lets you track your web page activity:
 
 * An Adobe Analytics configuration enables AEM to authenticate with Adobe Analytics.
 * A framework identifies the data that is sent to your Adobe Analytics report suite.

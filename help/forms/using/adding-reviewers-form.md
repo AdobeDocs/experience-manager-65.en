@@ -18,7 +18,7 @@ exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
 
 When you create a form, you can specify users who review the submissions of the form via forms portal and provide feedback. Your organization can collect feedback and rework on the submitted forms.
 
-AEM Forms allows you to associate a reviewer group with a form. Users added to a review group of a form see submissions of this form, and provide feedback.
+AEM Forms lets you associate a reviewer group with a form. Users added to a review group of a form see submissions of this form, and provide feedback.
 
 Reviewer groups assigned to a form can only review the submissions of the specified form.
 

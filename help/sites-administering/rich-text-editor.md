@@ -189,7 +189,7 @@ For detailed configurations of the RTE plug-ins, see [how to activate and config
 
 ## Configure RTE toolbar {#dialogfullscreen}
 
-AEM allows you to configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
+AEM lets you configure the interface for the Rich Text Editor differently for the different editing modes. The default settings are provided below. You can override these defaults based on your requirements. You customize only the toolbar features that you want to provide to your authors. You need not specify all the toolbar configurations.
 
 To configure the toolbar for `dialogFullScreen`, use the following sample configuration.
 

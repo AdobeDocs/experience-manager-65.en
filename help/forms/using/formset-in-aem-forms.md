@@ -83,7 +83,7 @@ Once a form set is created, you can perform following actions on that form set:
 
 * Single-click: When form set is created and listed on main asset page, you can single-click the form set to view it. A form set opens and displays all form templates (XDPs) in that form set.
 * Edit: On clicking Edit after selecting a form set, the Configure Form (s) screen that is shown above in Steps to create a Form set opens. You can carry out all the functionalities that are described in point there.
-* Copy + Paste: This allows you to copy the entire form set from one location and paste it at same or any other location or folder.
+* Copy + Paste: This lets you copy the entire form set from one location and paste it at same or any other location or folder.
 * Download: You can download the form set with all its dependencies.
 * Start/Manage Review: Once form set is created, you can set up its review by clicking Start Review. Once review has been started for a form set, Manage Review option is displayed to user. On Manage review screen, you can update/end the review. For the reviews you added, you can check the review and add comments, if necessary.
 * Delete: Deletes the complete form set. The forms in the deleted form set remain in the repository.

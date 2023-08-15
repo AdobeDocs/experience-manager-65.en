@@ -89,7 +89,7 @@ When the image is a JPEG image, the viewport size can also influence the JPEG qu
 
 #### Properties {#properties}
 
-The dialog allows you to edit properties for your instance of the Adaptive Image component, many of which are common with the Image component on which it is based. The properties are available in two tabs:
+The dialog lets you edit properties for your instance of the Adaptive Image component, many of which are common with the Image component on which it is based. The properties are available in two tabs:
 
 * **Image**
 
@@ -125,7 +125,7 @@ For information about customizing the Adaptive Image component, see [Understandi
 
 ### Carousel {#carousel}
 
-The Carousel Component allows you to display images associated with individual pages:
+The Carousel Component lets you display images associated with individual pages:
 
 * one at a time
 * for a short time
@@ -392,7 +392,7 @@ The final image (with **Title** and **Description**) may be shown as:
 
 ### List {#list}
 
-The List component allows you to configure search criteria for displaying a list:
+The List component lets you configure search criteria for displaying a list:
 
 * **List**
 
@@ -691,7 +691,7 @@ For more information about applying tags, visit [Using Tags](/help/sites-classic
 >
 >Adobe recommends that you use the **Table** component for tables, although they can also be constructed with the **Text** component.
 
-The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). A selection of icons allow you to format your text, including font characteristics, alignment, links, lists, and indentation.
+The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). A selection of icons let you format your text, including font characteristics, alignment, links, lists, and indentation.
 
 ![dc_text](assets/dc_text.png)
 
@@ -724,7 +724,7 @@ You can configure:
 
 * **Image Properties** (**Advanced Image Properties**)
 
-  Allows you to specify the following:
+  Lets you specify the following:
 
     * **Image asset**
 
@@ -870,11 +870,11 @@ When configuring any of the form components, the following tabs are available in
 
 * **Title and Text**
 
-  Here you must specify the basic information, such as the title of the form and any accompanying text. Where appropriate it also allows you to define other key information such as whether the field is multi-selectable and items available for selection.
+  Here you must specify the basic information, such as the title of the form and any accompanying text. Where appropriate it also lets you define other key information such as whether the field is multi-selectable and items available for selection.
 
 * **Initial Values**
 
-  Allows you to specify a default value.
+  Lets you specify a default value.
 
 * **Constraints**
 
@@ -1187,7 +1187,7 @@ You can configure various parameters for this component, including a message to 
 
 ### Checkbox Group {#checkbox-group}
 
-A checkbox allows you to build a list of one of more checkboxes, several of which may be selected at the same time.
+A checkbox lets you build a list of one of more checkboxes, several of which may be selected at the same time.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1292,7 +1292,7 @@ You can specify the element name together with a title and description. Using th
 
 ### Submit Button {#submit-button}
 
-This component allows you to create a submit button, with either the default text:
+This component lets you create a submit button, with either the default text:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1302,7 +1302,7 @@ Or with your own text:
 
 ### Tags Field {#tags-field}
 
-This field allows you to select tags:
+This field lets you select tags:
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

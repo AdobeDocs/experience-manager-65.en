@@ -272,7 +272,7 @@ When after creating a correspondence, you tap Open, Correspondence Management di
 
    ![Insert data modules and layout fragments](assets/insertdmandlf.png)
 
-1. Select Data Module or Layout Fragment for these options for each of the subforms and then choose the Data Modules or the Layout Fragments to insert. A layout fragment allows you to further insert data modules or layout fragments in it according to its design (up to four levels). 
+1. Select Data Module or Layout Fragment for these options for each of the subforms and then choose the Data Modules or the Layout Fragments to insert. A layout fragment lets you further insert data modules or layout fragments in it according to its design (up to four levels). 
 
    ![nestedlf](assets/nestedlf.png)
 

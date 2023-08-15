@@ -225,7 +225,7 @@ The transmission protocol for returned `BLOB` objects depends on several factors
 
     * Service's SOAP endpoint parameter Default Protocol For Output Blob Objects is set to Smart.
 
-      For each service with a SOAP endpoint, the administration console allows you to specify the transmission protocol for any returned blobs. (See [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+      For each service with a SOAP endpoint, the administration console lets you specify the transmission protocol for any returned blobs. (See [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
     * AEM Forms service takes one or more documents as input.
 

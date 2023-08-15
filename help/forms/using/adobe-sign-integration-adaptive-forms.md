@@ -176,7 +176,7 @@ Before you start connecting AEM Forms with Adobe Acrobat Sign Solution,
 
 #### Share the redirect URL and scopes with Adobe Sign team and receive credentials
 
-Adobe Acrobat Sign for Government Solutions team requires the `re-direct URL` and the certain scopes to be enabled for your Adobe Acrobat Sign application (listed below) to generate credentials (Client Id and Client Secret) that allow you to connect AEM Forms with Adobe Acrobat Sign Solutions for Government.
+Adobe Acrobat Sign for Government Solutions team requires the `re-direct URL` and the certain scopes to be enabled for your Adobe Acrobat Sign application (listed below) to generate credentials (Client Id and Client Secret) that let you connect AEM Forms with Adobe Acrobat Sign Solutions for Government.
 
 Share the `scopes` (listed below) and the `re-direct URL` created and noted down the last step of previous section with your Adobe Acrobat Sign for Government Solution representative [Adobe Professional Services team member](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password).
 

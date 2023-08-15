@@ -30,7 +30,7 @@ Tapping/clicking agin or initially selecting the component with a slow double-ta
 
 This toolbar provides the following options:
 
-* **Format**: This allows you to set Bold, Italic and Underline.
+* **Format**: This lets you set Bold, Italic and Underline.
 * **Lists**: With this you can create bulleted or numbered lists, or set the indentation.
 * **Hyperlink**
 * **Unlink**
