@@ -135,7 +135,7 @@ For any successful project, it is important to clearly define not only the requi
 
 It is important to have a clearly defined scope for the project. Scope informs acceptance criteria and allows you to establish a definition of done.
 
-The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you’ve built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) and find the section that better suits what you want to accomplish.
+The first question you must ask is "What am I trying to achieve with AEM Headless?" The answer should in general be that you have or will have in the future an experience application that you've built with your own development tools not with AEM. This experience application could be a mobile app, a web site, or any other end-user customer facing experience application. The goal for using AEM Headless is to feed your experience application with content that is created, stored, and managed in AEM with state-of-the-art APIs that would call AEM Headless to fetch content or even fully CRUD content directly from your experience application. If this is not what you are looking to do, you probably want to [go back to the AEM documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) and find the section that better suits what you want to accomplish.
 
 ### Roles and Responsibilities {#roles-responsibilities}
 
@@ -150,7 +150,7 @@ The roles for any individual project vary, but important ones to consider in the
 
 The administrator is responsible for the base setup and configuration of your system. For example, the administrator sets up your organization within the Adobe user management system, referred to Identity Management System (IMS). The administrator is the first user from the organization to receive an email invitation from Adobe once your organization has been created by Adobe within IMS. The administrator has the ability to login to IMS and add users of other personas.
 
-Once the users are configured by the administrator, they are be granted the permissions to access all the AEM resources to accomplish their work as contributors to delivering the experience application using AEM Headless.
+Once the users are configured by the administrator, they are granted the permissions to access all the AEM resources to accomplish their work as contributors to delivering the experience application using AEM Headless.
 
 The administrator should be the user who sets up AEM and prepares the runtime environment to enable [content authors](#content-author) to create and update content and [developers](#developer) to use APIs that fetch or modify content for their experience applications.
 

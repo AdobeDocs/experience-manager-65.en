@@ -228,7 +228,7 @@ context. The ProcessorContext has the following APIs:
   the configuration parameters of a Watched Folder.
 
 * **setResult**: The ContentProcessor implementation
-  uses the API to write the output document to the result folder. You can provide a name for the output file to the setResult API. The API might chooses to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
+  uses the API to write the output document to the result folder. You can provide a name for the output file to the setResult API. The API might choose to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
 For example, the following code is a custom implementation of the ContentProcessor interface with a custom foo=bar property.
 
@@ -268,7 +268,7 @@ Scripts are the ECMAScript complaint custom code written to processes documents 
 * **getWatchFolderId**: Returns the ID of the Watched Folder.
 * **getInputMap**: Returns a map of type Map. The keys of the map are the filename of input file and a document object containing the contents of the file. Use the getinputMap API to read the input files.
 * **getConfigParameters**: Returns an immutable map of type Map. The map contains the configuration parameters of a Watched Folder.
-* **setResult**: The ContentProcessor implementation uses the API to write the output document to the result folder. You can provide a name for the output file to the setResult API. The API might chooses to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
+* **setResult**: The ContentProcessor implementation uses the API to write the output document to the result folder. You can provide a name for the output file to the setResult API. The API might choose to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern.
 
 The following code is an example ECMAScript. It accepts input files, copies the files to a temporary location, and returns a document object with the content of the file. The contents of the document object are saved to the result folder. The physical path of the result folder is configured in the [Watched Folder configuration node](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
@@ -341,7 +341,7 @@ The following ProcessorContext APIs are also available:
 * getWatchFolderId: Returns the ID of the Watched Folder.
 * getInputMap: Returns a map of type Map&lt;String, Document&gt;. The keys of the map are the filename of input file and a document object containing the contents of the file. Use the getinputMap API to read the input files.
 * getConfigParameters: Returns an immutable map of type Map&lt;String, Object&gt;. The map contains the configuration parameters of a Watched Folder.
-* setResult: The ContentProcessor implementation uses the API to write the output document the result folder. You can provide a name for the output file to the setResult API. The API might chooses to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern
+* setResult: The ContentProcessor implementation uses the API to write the output document the result folder. You can provide a name for the output file to the setResult API. The API might choose to use or ignore the provided file depending upon the output folder/file pattern specified. If a folder pattern is specified, then the output files have names as described in workflows. If a file pattern is specified, the output files have names as described in file pattern
 
 Consideration for the setResult API, when used in workflows:
 
@@ -491,7 +491,7 @@ For a Watched Folder endpoint, users can start file processing operations by cop
 
 For Watched Folder endpoints, if a job requires only one input file, the user can copy that file to the root of the Watched Folder.
 
-If the job contains more than one input file, the user must create a folder outside the Watched Folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if required by the process). After the job folder has been constructed, the user copies it into the Watched Folder’s input folder.
+If the job contains more than one input file, the user must create a folder outside the Watched Folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if required by the process). After the job folder has been constructed, the user copies it into the Watched Folder's input folder.
 
 >[!NOTE]
 >
@@ -555,7 +555,7 @@ When Watched Folder cannot process the source files in the stage folder, you can
 
 ### Chain Watched Folders together {#chain-watched-folders-together}
 
-Watched Folders can be chained together so that a result document of one Watched Folder is the input document of the next Watched Folder. Each Watched Folder can invoke a different service. By configuring Watched Folders in this manner, multiple services can be invoked. For example, one Watched Folder could convert PDF files to Adobe PostScript® and a second Watched Folder could convert the PostScript files to PDF/A format. To do this, simply set the result folder of the Watched Folder defined by your first endpoint to point to the input folder of the Watched Folder defined by your second endpoint.
+Watched Folders can be chained together so that a result document of one Watched Folder is the input document of the next Watched Folder. Each Watched Folder can invoke a different service. By configuring Watched Folders in this manner, multiple services can be invoked. For example, one Watched Folder could convert PDF files to Adobe PostScript&reg; and a second Watched Folder could convert the PostScript files to PDF/A format. To do this, simply set the result folder of the Watched Folder defined by your first endpoint to point to the input folder of the Watched Folder defined by your second endpoint.
 
 Output from the first conversion would go to \path\result. Input for the second conversion would be \path\result, and output from the second conversion would go to \path\result\result (or the directory you define in the Result Folder box for the second conversion).
 
@@ -604,7 +604,7 @@ Perform the following steps to configure a Watched Folder with PDF Generator:
 
 ### Create an ECMAScript {#create-an-ecmascript}
 
-The ECMAScript would use PDF Generator’s createPDF API to convert Microsoft Word (.docx) documents to PDF documents. Perform the following steps to create the script:
+The ECMAScript would use PDF Generator's createPDF API to convert Microsoft Word (.docx) documents to PDF documents. Perform the following steps to create the script:
 
 1. Open CRXDE lite in a browser window. The URL is https://'[server]:[port]'/crx/de.
 
