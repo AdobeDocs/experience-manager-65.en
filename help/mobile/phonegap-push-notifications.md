@@ -60,7 +60,7 @@ To use APNs, you need a **Certificate** file (a .cer file), a push **Private Key
 
 >[!NOTE]
 >
->Google is replacing GCM with a similar service called Firebase Cloud Messaging (FCM). For more information on FCM, click [here](https://developers.google.com/cloud-messaging/faq).
+>Google is replacing GCM with a similar service called Firebase Cloud Messaging (FCM). For more information on FCM, click [here](https://firebase.google.com/docs/cloud-messaging/).
 
 Go to the Google page [here](https://developer.android.com/google/gcm/index.html) to become familiar with Google Cloud Messaging for Android&trade;.
 
