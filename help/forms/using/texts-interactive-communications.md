@@ -31,7 +31,7 @@ The text document fragment in Interactive Communication supports the following t
 1. Select **[!UICONTROL Create]** > **[!UICONTROL Text]**. 
 1. Specify the following information:
 
-    * **[!UICONTROL Title]**: (Optional) Enter the title for the text document fragment. Titles need not be unique and can have special characters and non-English characters. Texts are referred by their titles (when available) such as in thumbnails and properties. 
+    * **[!UICONTROL Title]**: (Optional) Enter the title for the text document fragment. Titles do not need to be unique and can have special characters and non-English characters. Texts are referred by their titles (when available) such as in thumbnails and properties. 
     * **[!UICONTROL Name]**: The unique name for the text, within a folder. No two document fragments (text, condition, or list) in any state can exist with the same name in a folder. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.  
     
     * **[!UICONTROL Description]**: Type a description of the text.

@@ -50,7 +50,7 @@ The example data populated in the tool demonstrates how important it is to perfo
 
 ### Shared datastores {#shared-datastores}
 
-For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an Amazon S3 datastore. In this case, individual instances need not maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments.
+For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an Amazon S3 datastore. In this case, individual instances do not need to maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments.
 
 #### Use cases {#use-cases}
 

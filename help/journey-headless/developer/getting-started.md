@@ -249,7 +249,7 @@ To understand traffic and traffic patterns start with gathering what you know fr
 
 #### Update Frequency {#update-frequency}
 
-Often different sections of experiences have different frequencies of content updates. Understanding this is important to be able to fine tune CDN and cache configurations. This is also important input for the [Content Architects](#content-architects) as they design models to represent your content. Consider:
+Often different sections of experiences have different frequencies of content updates. Understanding this is important to be able to fine-tune CDN and cache configurations. This is also important input for the [Content Architects](#content-architects) as they design models to represent your content. Consider:
 
 * Must some types of content expire after a certain period?
 * Are there elements that are user-specific and thus can't be cached?

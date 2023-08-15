@@ -245,7 +245,7 @@ You need the following in place first to create a correspondence:
 
 1. Enter the properties for the Correspondence and tap **Save:**
 
-    * **Title (Optional):** Enter the title for the letter. Title need not be unique and can have special characters and non-english characters. 
+    * **Title (Optional):** Enter the title for the letter. Title do not need to be unique and can have special characters and non-english characters. 
     * **Name:** The unique name for the letter. No two letters in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional):** Describe the letter for your reference.
     * **Data Dictionary (Optional)**: The Data Dictionary can be associated to the correspondence. The assets that you later insert in this correspondence should either have the same data dictionary as the one you choose for the correspondence here or no data dictionary. 

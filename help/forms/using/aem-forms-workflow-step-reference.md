@@ -1,12 +1,8 @@
 ---
 title: Forms-centric workflow on OSGi - Step Reference
-seo-title: Forms-centric workflow on OSGi - Step Reference
-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
+description: Forms-centric workflow on OSGi steps let you rapidly build adaptive forms based workflows.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 ---
@@ -21,7 +17,7 @@ You use workflow models to convert a business logic to automated repetitive proc
 
 ## Forms Workflow Steps {#forms-workflow-steps}
 
-Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps allow you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
+Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps let you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
 
 Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Workflow. These steps let you rapidly build Adaptive Forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal and across- the-firewall business processes.
 

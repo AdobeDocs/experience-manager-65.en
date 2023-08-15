@@ -51,7 +51,7 @@ Use the archives tab to import and manage LCAs that were created in workbench.
 
       If *Callers are currently required to authenticate* is displayed, the caller of the service must be authenticated and the user principal for that caller must be authorized to invoke the service; otherwise, the invocation attempt will be refused. To remove the need to authenticate, click Allow Unauthenticated Callers.
 
-      If *Callers are not required to authenticate* is displayed, the caller of the service need not be authenticated. The invocation of the service will always succeed because there is no authorization check. To require authentication, click Require Callers to Authenticate.
+      If *Callers are not required to authenticate* is displayed, the caller of the service does not need to be authenticated. The invocation of the service will always succeed because there is no authorization check. To require authentication, click Require Callers to Authenticate.
 
     * **Run As:** Specifies run-time identity used by a service after it has been invoked. To change this option, click Change. Choose from the following options:
 

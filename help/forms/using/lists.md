@@ -42,7 +42,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 1. Tap **Create** &gt; **Text** Or select a text asset and tap **Edit**.
 1. Specify the following information for the text:
 
-    * **Title: (Optional)** Enter the title for the text asset. Titles need not be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title: (Optional)** Enter the title for the text asset. Titles do not need to be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the text asset. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description**: Type a description of the asset.
     * **Data Dictionary**: Optionally, select the data dictionary in which to map. This attribute enables you to add references to data dictionary elements in the text asset.
@@ -234,7 +234,7 @@ A list is a group of related content that can be used in a letter template as a 
 
 1. Specify the following information for the list:
 
-    * **Title (Optional): Enter** the title for the list. Title needs not be unique and can have special characters and non-english characters. Lists are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title (Optional): Enter** the title for the list. Title does not need to be unique and can have special characters and non-english characters. Lists are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the list. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated with the value in the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)**: Type a description of the asset.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the list, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate list.
@@ -306,7 +306,7 @@ The Condition editor enables you to specify a default condition. If the value of
 1. Select **Create &gt; Condition**.
 1. Specify the following information for the list:
 
-    * **Title (Optional):** Enter the title for the condition. Title needs not be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title (Optional):** Enter the title for the condition. Title does not need to be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the condition. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)** Type a description of the condition.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the condition, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate condition.
@@ -395,7 +395,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 1. Correspondence Management displays the available XDPs. Select the XDP on which you want to base your layout fragment and tap **Next**.
 1. Specify the following information for the layout:
 
-    * **Title (Optional):** Enter the title for the layout fragment. Title needs not be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title (Optional):** Enter the title for the layout fragment. Title does not need to be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the layout fragment. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value. This name appears in the list in the Manage Assets user interface.
     * **Description (Optional)**: Description that appears in the list in the Manage Assets user interface.
     * **Tags (Optional)**: Optionally, select the tags to apply to the condition. You can also type in a new tag's name and create it.

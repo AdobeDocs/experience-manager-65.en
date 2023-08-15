@@ -129,7 +129,7 @@ Perform the following steps to create an A/B test for an adaptive form.
 
 1. Go to the Forms and Documents UI, select the adaptive form, click **More**, and select **Start A/B Testing**.
 
-You A/B test is now running and the specified audience will be randomly served the experiences based on the specified distribution.
+Your A/B test is now running and the specified audience will be randomly served the experiences based on the specified distribution.
 
 ## Update A/B test {#update-a-b-test}
 
