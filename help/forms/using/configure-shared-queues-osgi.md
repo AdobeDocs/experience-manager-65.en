@@ -20,7 +20,7 @@ The logged-in user must be a member of the `workflow-users` group. The user can 
 
 ## Share a single or all the items of your inbox with another user
 
-AEM Inbox allows you to share a single or all the items in your inbox with another user.
+AEM Inbox lets you share a single or all the items in your inbox with another user.
 
 ### Share all the inbox items
 

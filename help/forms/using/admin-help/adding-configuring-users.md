@@ -1,12 +1,8 @@
 ---
 title: Adding and configuring users 
-seo-title: Adding and configuring users 
-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
+description: The User Management settings in the administration console let you create or delete users  and configure other user settings.
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 ---
 # Adding and configuring users {#adding-and-configuring-users}
@@ -69,7 +65,7 @@ Avoid using underscore characters (_) in canonical names, for example, `sample_u
 
 If you are using a local or hybrid domain, information about users is stored only in the User Management database. For these users, set the Business Calendar Key to a string. Then map the business calendar key (the string) to a business calendar in forms workflow.
 
-If you are using an enterprise domain, information about users resides in a third-party storage system, such as an LDAP directory. User Management synchronizes user information from the directory with the User Management database. This feature allows you to map a business calendar key to a field in the LDAP directory. For example, consider a scenario where each user record in your directory contains a country field, and you want to assign business calendars based on the country where the user is located. In this case, you specify the country field name as the value for the Business Calendar Key setting. You can then map the business calendar keys (the values defined for the country field in the LDAP directory) to business calendars in forms workflow.
+If you are using an enterprise domain, information about users resides in a third-party storage system, such as an LDAP directory. User Management synchronizes user information from the directory with the User Management database. This feature lets you map a business calendar key to a field in the LDAP directory. For example, consider a scenario where each user record in your directory contains a country field, and you want to assign business calendars based on the country where the user is located. In this case, you specify the country field name as the value for the Business Calendar Key setting. You can then map the business calendar keys (the values defined for the country field in the LDAP directory) to business calendars in forms workflow.
 
 For additional information on business calendars, including how to map business calendar keys to business calendars, see [Configuring Business Calendars](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 

@@ -28,7 +28,7 @@ Workflow models consist of a series of steps of various types. According to the 
 
 ## Step Properties {#step-properties}
 
-Each step component has a **Step Properties** dialog that allows you to define and edit the required properties.
+Each step component has a **Step Properties** dialog that lets you define and edit the required properties.
 
 ### Step Properties - Common tab {#step-properties-common-tab}
 
@@ -96,7 +96,7 @@ To configure the split:
 
 A container step starts another workflow model that executes as a child workflow.
 
-This container can allow you to reuse workflow models to implement common sequences of steps. For example, a translation workflow model can be used in multiple editing workflows.
+This container can let you reuse workflow models to implement common sequences of steps. For example, a translation workflow model can be used in multiple editing workflows.
 
 ![wf-28](assets/wf-28.png)
 
@@ -111,7 +111,7 @@ To configure the step, edit and use the following tabs:
 
 ## Goto Step {#goto-step}
 
-The **Goto Step** allows you to specify the next step to execute in the workflow model. You can specify a rule definition, external script, or an ECMA script as the routing expression to evaluate the next step for the workflow model.
+The **Goto Step** lets you specify the next step to execute in the workflow model. You can specify a rule definition, external script, or an ECMA script as the routing expression to evaluate the next step for the workflow model.
 
 * If the condition that you specify holds true, the **Goto Step** completes and the workflow engine executes the specified step.
 * If the condition that you specify does not hold true, the **Goto Step** completes and the normal routing logic determines the next step to execute.
@@ -584,7 +584,7 @@ To configure the step, edit and use the following tabs:
 
 ## Set Variable {#set-variable}
 
-The Set Variable step allows you to set value of a variable and define the order in which the values are set. The variable is set in the order that the variable mappings are listed in the Set Variable step.
+The Set Variable step lets you set value of a variable and define the order in which the values are set. The variable is set in the order that the variable mappings are listed in the Set Variable step.
 
 ![Add mapping to set a variable](assets/set_variable_addmappingnew.png)
 

@@ -56,7 +56,7 @@ You can [customize any of these themes to create a theme](#customize-a-theme-cor
 
 ## Customize a theme {#customize-a-theme-core-components-based-adaptive-forms}
 
-Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you make changes to its design elements, layout, colors, typography, and sometimes the underlying code. This allows you to create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
+Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you make changes to its design elements, layout, colors, typography, and sometimes the underlying code. This lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Customizing a theme refers to the process of modifying and personalizing the app
 
 * Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is a build automation tool commonly used for Java&trade; projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
 
-* Learn how to create a [client library in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM provides client libraries, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client.
+* Learn how to create a [client library in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM provides client libraries, which let you store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client.
 
 * Install a plain text editor. For example, Microsoft&reg; Visual Studio Code. Using a plain text editor such as Microsoft&reg; Visual Studio Code provides a user-friendly environment for editing and modifying theme files.
 

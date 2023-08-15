@@ -14,7 +14,7 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 ---
 # Data Store Garbage Collection {#data-store-garbage-collection}
 
-When a conventional WCM asset is removed, the reference to the underlying data store record may be removed from the node hierarchy, but the data store record itself remains. This unreferenced data store record then becomes "garbage" that need not be retained. In instances where a number of garbage assets exist, it is beneficial to get rid of them to preserve space and to optimize backup and filesystem maintenance performance.
+When a conventional WCM asset is removed, the reference to the underlying data store record may be removed from the node hierarchy, but the data store record itself remains. This unreferenced data store record then becomes "garbage" that does not need to be retained. In instances where a number of garbage assets exist, it is beneficial to get rid of them to preserve space and to optimize backup and filesystem maintenance performance.
 
 For the most part, a WCM application tends to collect information but not delete information nearly as often. Although new images are added, even superseding old versions, the version control system still retains the old one and supports reverting to it if needed. Thus the majority of the content we think of as adding to the system is effectively permanently stored. So what is the typical source of "garbage" in the repository that we might want to clean up?
 

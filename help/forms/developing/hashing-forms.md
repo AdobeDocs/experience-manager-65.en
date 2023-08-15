@@ -63,7 +63,7 @@ Depending on the hash function you choose, the length of the hash varies:
 
 ## Trying the sample PDF forms {#try-sample-pdf-forms}
 
-The sample files for this article include two PDF forms. The first sample allows you to type in a string and then generate MD4, MD5, SHA-1, and SHA-256 hash values for the string. The second sample is a simple form that unlocks text fields if a correct password is entered.
+The sample files for this article include two PDF forms. The first sample lets you type in a string and then generate MD4, MD5, SHA-1, and SHA-256 hash values for the string. The second sample is a simple form that unlocks text fields if a correct password is entered.
 
 ### Sample 1:  generating hashes {#generating-dashes}
 

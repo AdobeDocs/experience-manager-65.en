@@ -6,7 +6,7 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 ---
 # Analytics using [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
-AEM Forms integrates with [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) to allow you to capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to enable business users to gain insights into end user behavior and optimize the data capture experience. You can capture and track behavior of both logged-in and not logged-in (Anonymous) users via Adobe Analytics for Adaptive Forms.
+AEM Forms integrates with [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=en) to let you capture and track performance metrics for your published forms. The objective behind analyzing these metrics is to enable business users to gain insights into end user behavior and optimize the data capture experience. You can capture and track behavior of both logged-in and not logged-in (Anonymous) users via Adobe Analytics for Adaptive Forms.
 
 You can also perform analytics using Cloud Service Framework. For more information on how to integrate AEM Forms with Cloud Service Framework, see [Analytics using Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md). The main advantage of using Adobe Launch over Analytics using Cloud Service Framework is that you can also define custom events, in addition to these out of the box events. The customized events are defined using rule editor or customer clientlibs and are mapped to events in [!DNL Adobe Analytics].
 

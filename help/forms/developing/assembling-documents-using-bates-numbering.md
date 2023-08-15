@@ -19,11 +19,11 @@ exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
 
 You can assemble PDF documents that contain unique page identifiers by using Bates numbering. *Bates numbering* is a method of applying unique identifies to a batch of related documents. Each page in the document (or set of documents) is assigned a Bates number that uniquely identifies the page. For example, manufacturing documents that contain bill of material information and are associated with the production of an assembly can contain an identifier. A Bates number contains a sequentially incremented numeric value and an optional prefix and suffix. The prefix + numeric + suffix is referred to as a *bates pattern*.
 
-The following illustration shows a PDF document that contains a unique identifier located in the document’s header.
+The following illustration shows a PDF document that contains a unique identifier located in the document's header.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 
-For the purpose of this discussion, the unique page identifier is placed in a document’s header. Assume that the following DDX document is used.
+For the purpose of this discussion, the unique page identifier is placed in a document's header. Assume that the following DDX document is used.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -46,7 +46,7 @@ This DDX document merges two PDF documents named *map.pdf* and *directions.pdf* 
 
 >[!NOTE]
 >
->Before reading this section, it is recommended that you be familiar with assembling PDF documents using the Assembler service. This section does not discuss the concepts, such as creating a collection object that contains input documents, or extracting the results from the returned collection object. (See [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Before reading this section, it is recommended that you are familiar with assembling PDF documents using the Assembler service. This section does not discuss the concepts, such as creating a collection object that contains input documents, or extracting the results from the returned collection object. (See [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ To assemble a PDF document that contains a unique page identifier (Bates numberi
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -124,7 +124,7 @@ Assemble a PDF document that uses unique page identifiers (Bates numbering) by u
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-assembler-client.jar, in your Java project's class path.
 
 1. Create a PDF Assembler client.
 
@@ -149,11 +149,11 @@ Assemble a PDF document that uses unique page identifiers (Bates numbering) by u
 1. Set the initial Bates number value.
 
     * Create an `AssemblerOptionSpec` object that stores run-time options by using its constructor.
-    * Set the initial Bates number by invoking the `AssemblerOptionSpec` object’s `setFirstBatesNumber` and passing a numeric value that specifies the initial value.
+    * Set the initial Bates number by invoking the `AssemblerOptionSpec` object's `setFirstBatesNumber` and passing a numeric value that specifies the initial value.
 
 1. Assemble the input PDF documents.
 
-   Invoke the `AssemblerServiceClient` object’s `invokeDDX` method and pass the following required values:
+   Invoke the `AssemblerServiceClient` object's `invokeDDX` method and pass the following required values:
 
     * A `com.adobe.idp.Document` object that represents the DDX document.
     * A `java.util.Map` object that contains the input unsecured PDF file.
@@ -165,9 +165,9 @@ Assemble a PDF document that uses unique page identifiers (Bates numbering) by u
 
    To obtain the newly created PDF document, perform the following actions:
 
-    * Invoke the `AssemblerResult` object’s `getDocuments` method. This action returns a `java.util.Map` object.
+    * Invoke the `AssemblerResult` object's `getDocuments` method. This action returns a `java.util.Map` object.
     * Iterate through the `java.util.Map` object until you find the `com.adobe.idp.Document` object.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to extract the PDF document.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method to extract the PDF document.
 
 **See also**
 
@@ -194,7 +194,7 @@ Assemble a PDF document that uses unique page identifiers (Bates numbering) by u
     * Create an `AssemblerServiceClient` object by using its default constructor.
     * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -206,16 +206,16 @@ Assemble a PDF document that uses unique page identifiers (Bates numbering) by u
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Reference input PDF documents.
 
     * For each input PDF document, create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the input PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` property with the contents of the byte array.
     * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. This collection object is used to store the input PDF documents.
     * For each input PDF document, create a `MyMapOf_xsd_string_To_xsd_anyType_Item` object. For example, if two input PDF documents are used, create two `MyMapOf_xsd_string_To_xsd_anyType_Item` objects.
@@ -230,7 +230,7 @@ Assemble a PDF document that uses unique page identifiers (Bates numbering) by u
 
 1. Assemble the input PDF documents.
 
-   Invoke the `AssemblerServiceClient` object’s `invoke` method and pass the following values:
+   Invoke the `AssemblerServiceClient` object's `invoke` method and pass the following values:
 
     * A `BLOB` object that represents the DDX document.
     * The `MyMapOf_xsd_string_To_xsd_anyType` object that contains the input PDF documents. Its keys must match the names of the PDF source files, and its values must be the `BLOB` objects that corresponds to those files.
@@ -242,9 +242,9 @@ Assemble a PDF document that uses unique page identifiers (Bates numbering) by u
 
    To obtain the newly created PDF document, perform the following actions:
 
-    * Access the `AssemblerResult` object’s `documents` field, which is a `Map` object that contains the result PDF documents.
-    * Iterate through the `Map` object until you find the key that matches the name of the resultant document. Then cast that array member’s `value` to a `BLOB`.
-    * Extract the binary data that represents the PDF document by accessing its `BLOB` object’s `MTOM` property. This returns an array of bytes that you can write out to a PDF file.
+    * Access the `AssemblerResult` object's `documents` field, which is a `Map` object that contains the result PDF documents.
+    * Iterate through the `Map` object until you find the key that matches the name of the resultant document. Then cast that array member's `value` to a `BLOB`.
+    * Extract the binary data that represents the PDF document by accessing its `BLOB` object's `MTOM` property. This returns an array of bytes that you can write out to a PDF file.
 
 **See also**
 

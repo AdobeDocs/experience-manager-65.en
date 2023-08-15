@@ -242,7 +242,7 @@ Should you use `<%@ include file="myScript.jsp" %>` or `<cq:include script="mySc
 Should you use `<cq:include>` or `<sling:include>`?
 
 * When developing AEM components, Adobe recommends that you use `<cq:include>`.
-* `<cq:include>` allows you to directly include script files by their name when using the script attribute. This takes component and resource type inheritance into account, and is often simpler than strict adherence to Sling's script resolution using selectors and extensions.
+* `<cq:include>` lets you directly include script files by their name when using the script attribute. This takes component and resource type inheritance into account, and is often simpler than strict adherence to Sling's script resolution using selectors and extensions.
 
 ### &lt;cq:includeClientLib&gt; {#cq-includeclientlib}
 
@@ -434,7 +434,7 @@ The `<cq:defineObjects>` tag exposes the following, regularly used, scripting ob
 
 The `<cq:requestURL>` tag writes the current request URL to the JspWriter. The two tags [ `<cq:addParam>`](#amp-lt-cq-addparam) and [ `<cq:removeParam>`](#amp-lt-cq-removeparam) and may be used inside the body of this tag to modify the current request URL before it is written.
 
-It allows you to create links to the current page with varying parameters. For example, it enables you to transform the request:
+It lets you create links to the current page with varying parameters. For example, it enables you to transform the request:
 
 `mypage.html?mode=view&query=something` into `mypage.html?query=something`.
 
@@ -539,7 +539,7 @@ It has the following attributes:
 
 >[!NOTE]
 >
->The resolution of the resource and the script that are included with the `<sling:include>` tag is the same as for a normal sling URL resolution. By default, the selectors, extension, and so on, from the current request are used for the included script as well. They can be modified through the tag attributes: for example `replaceSelectors="foo.bar"` allows you to overwrite the selectors.
+>The resolution of the resource and the script that are included with the `<sling:include>` tag is the same as for a normal sling URL resolution. By default, the selectors, extension, and so on, from the current request are used for the included script as well. They can be modified through the tag attributes: for example `replaceSelectors="foo.bar"` lets you overwrite the selectors.
 
 Examples:
 

@@ -55,7 +55,7 @@ CRXDE Lite offers the following functionality:
  <tbody>
   <tr>
    <td>Top switcher bar</td>
-   <td>Allows you to quickly switch between CRXDE Lite, Package Manager, and Package Share.</td>
+   <td>Lets you quickly switch between CRXDE Lite, Package Manager, and Package Share.</td>
   </tr>
   <tr>
    <td>Node path widget</td>
@@ -123,7 +123,7 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Mixins ...<br /> </td>
-   <td>Allows you to add mixin types to the node type. The mixin types are mostly used to add advanced features such as versioning, access control, referencing, and locking to the node.</td>
+   <td>Lets you add mixin types to the node type. The mixin types are mostly used to add advanced features such as versioning, access control, referencing, and locking to the node.</td>
   </tr>
   <tr>
    <td>Tools<br /> </td>

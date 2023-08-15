@@ -72,7 +72,7 @@ Create or edit a file type setting to specify how the application handles the co
 
    [OpenOffice settings](/help/forms/using/admin-help/configuring-file-type-settings.md#openoffice-settings)
 
-   [Other applications’ settings (Windows only)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
+   [Other applications' settings (Windows only)](/help/forms/using/admin-help/configuring-file-type-settings.md#other-applications-settings-windows-only)
 
    To go to another section, click its link on the web page or use the **[!UICONTROL Next]** or **[!UICONTROL Previous]** buttons.
 
@@ -110,7 +110,7 @@ The following options determine how image files are converted to PDF. For instru
 
 **Filename Extensions:** Comma-separated list of filename extensions that can be converted.
 
-**Try Fallback Converter:** PDF Generator can use either Java™ or Acrobat to convert image files to PDF. When this option is selected and a conversion fails or reaches the specified time-out limit, PDF Generator attempts the conversion by using the alternate method. If alternate method fails or reaches the specified time-out limit, an exception is written to the log file.
+**Try Fallback Converter:** PDF Generator can use either Java&trade; or Acrobat to convert image files to PDF. When this option is selected and a conversion fails or reaches the specified time-out limit, PDF Generator attempts the conversion by using the alternate method. If alternate method fails or reaches the specified time-out limit, an exception is written to the log file.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ For instructions about accessing this setting, see [Create or edit file type set
 
 The following options determine how HTML files are converted to PDF. For instructions about accessing these options, see [Create or edit file type settings](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
-**Try Fallback Converter:** PDF Generator can use either Java™ or Acrobat to convert HTML files to PDF. When this option is selected and a conversion fails or reaches the specified time-out limit, PDF Generator attempts the conversion by using the alternate method. If alternate method fails or reaches the specified time-out limit, an exception is written to the log file.
+**Try Fallback Converter:** PDF Generator can use either Java&trade; or Acrobat to convert HTML files to PDF. When this option is selected and a conversion fails or reaches the specified time-out limit, PDF Generator attempts the conversion by using the alternate method. If alternate method fails or reaches the specified time-out limit, an exception is written to the log file.
 
 **Default Encoding:** Sets the input encoding of the file text from a menu of operating systems and alphabets. Uses the selection shown in the Default Encoding option only if the HTML source file does not specify a type of encoding.
 
@@ -247,7 +247,7 @@ For instructions about accessing this setting, see [Create or edit file type set
 
     * If necessary, select a different fonts directory from the **Font source** drop-down menu. This drop-down menu lists fonts directories specified in **Home &gt; Settings &gt; Core System &gt; Core Configurations**.
     * Select one or more fonts from the **Available Fonts** list and click **Add**. These fonts are added to the **Fonts to Unembed** list.
-    * If you want to unembed some fonts that don’t exist on the forms server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
+    * If you want to unembed some fonts that don't exist on the forms server, enter the names of those fonts in the **Add fonts to unembed** box. Click **Add**.
 
    >[!NOTE]
    >
@@ -257,7 +257,7 @@ For instructions about accessing this setting, see [Create or edit file type set
 
    >[!NOTE]
    >
-   >*If you’re using this option in combination with **Unembed some fonts**, fonts in the **Add fonts to unembed** list are still completely unembedded.*
+   >*If you're using this option in combination with **Unembed some fonts**, fonts in the **Add fonts to unembed** list are still completely unembedded.*
 
    >[!NOTE]
    >
@@ -277,7 +277,7 @@ Select **Transparency** to configure the transparency settings while optimizing 
 
 >[!NOTE]
 >
->The amount of rasterization that occurs depends on the complexity of the page and the types of overlapping objects.
+>The amount of rasterization that occurs, depends on the complexity of the page and the types of overlapping objects.
 
 **Line Art and Text** Resolution to which all objects, including images, vector artwork, text, and gradients, are rasterized. The supported values are 1 pixels per inch (ppi) to 9600 ppi.
 
@@ -291,7 +291,7 @@ Select **Transparency** to configure the transparency settings while optimizing 
 >
 >Gradient and mesh resolution should generally be set to 150-300 ppi because the quality of the gradients, drop shadows, and feathers do not improve with higher resolutions, but printing time and file size increase.
 
-**Convert All Text to Outlines** Converts all type objects (point type, area type, and path type) to outlines and discards all type glyph information on pages containing transparency. This option ensures that the width of text stays consistent during flattening. Note that enabling this option will cause small fonts to appear slightly thicker when viewed in Acrobat or printed on low-resolution desktop printers. It doesn’t affect the quality of the type printed on high-resolution printers or imagesetters.
+**Convert All Text to Outlines** Converts all type objects (point type, area type, and path type) to outlines and discards all type glyph information on pages containing transparency. This option ensures that the width of text stays consistent during flattening. Note that enabling this option will cause small fonts to appear slightly thicker when viewed in Acrobat or printed on low-resolution desktop printers. It doesn't affect the quality of the type printed on high-resolution printers or imagesetters.
 
 **Convert All Strokes to Outlines** Converts all strokes to simple filled paths on pages containing transparency. This option ensures that the width of strokes stays consistent during flattening. Note that enabling this option causes thin strokes to appear slightly thicker and may degrade flattening performance.
 

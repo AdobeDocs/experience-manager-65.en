@@ -40,7 +40,7 @@ The command line arguments for Imaging Transcoding Library can include the follo
 
 ```shell
  -destMime PNG/JPEG: Mime type of output rendition
- -BitDepth 8/16: Preserves Bit Depth. Bitdepth ‘4’ is automatically converted to ‘8’
+ -BitDepth 8/16: Preserves Bit Depth. Bitdepth '4' is automatically converted to '8'
  -preserveBitDepth: Downscales Bit Depth (No upscaling)
  -preserveCMYK: Preserves CMYK color space
  -jpegQuality: Provides jpeg quality parameter (0-12 , corresponding to Photoshop qualities)
@@ -132,7 +132,7 @@ For example, if you want to create thumbnails for a TIFF image using Imaging Tra
 
 1. Sync the updated [!UICONTROL DAM Update Asset] workflow model. Save the workflow.
 
-The verify the configuration, upload a TIFF image and monitor the error.log file. You will notice `INFO` messages with mentions of `SwitchEngineHandlingProcess execute: executing command line`. The logs mention the renditions generated. Once the workflow completes, you can view the new renditions in [!DNL Experience Manager].
+To verify the configuration, upload a TIFF image and monitor the error.log file. You will notice `INFO` messages with mentions of `SwitchEngineHandlingProcess execute: executing command line`. The logs mention the renditions generated. Once the workflow completes, you can view the new renditions in [!DNL Experience Manager].
 
 >[!MORELIKETHIS]
 >

@@ -8,7 +8,7 @@ exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
 ---
 # Process digital assets {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] allows you to work on your digital assets in many ways to allow for robust asset processing. You can use the default or customized processing methods to ensure end-to-end business process completion, audits and compliance, discovery and distribution, and basic sanity of your digital assets. You can do the asset management tasks while achieving the required scale and customization.
+[!DNL Adobe Experience Manager Assets] lets you work on your digital assets in many ways to allow for robust asset processing. You can use the default or customized processing methods to ensure end-to-end business process completion, audits and compliance, discovery and distribution, and basic sanity of your digital assets. You can do the asset management tasks while achieving the required scale and customization.
 
 ## Understand workflows {#understand-workflows}
 

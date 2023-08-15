@@ -267,7 +267,7 @@ There are several properties that control the behavior of the undo and redo comm
 
 ### Configuring the Video Component {#configuring-the-video-component}
 
-The [Video component](/help/sites-authoring/default-components-foundation.md#video) allows you to place a predefined, out-of-the-box video element on your page.
+The [Video component](/help/sites-authoring/default-components-foundation.md#video) lets you place a predefined, out-of-the-box video element on your page.
 
 For proper transcoding to occur, your administrator must [Install FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) separately. They can also [Configure your Video Profiles](/help/sites-administering/config-video.md#configure-video-profiles) for use with html5 elements.
 

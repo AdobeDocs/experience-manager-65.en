@@ -166,7 +166,7 @@ You can also use timeline to delegate and/or assign a step:
 
 ### Performing Step Back on a Participant Step {#performing-step-back-on-a-participant-step}
 
-If you discover that a step, or series of steps, needs to be repeated you can step back. This allows you to select a step, that occurred earlier in the workflow, for reprocessing. The workflow returns to the step you specify, then proceeds from there.
+If you discover that a step, or series of steps, needs to be repeated you can step back. This lets you select a step, that occurred earlier in the workflow, for reprocessing. The workflow returns to the step you specify, then proceeds from there.
 
 On this action you can indicate:
 

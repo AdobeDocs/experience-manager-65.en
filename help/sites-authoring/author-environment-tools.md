@@ -16,7 +16,7 @@ The authoring environment of AEM provides various mechanisms for organizing and 
 
 ## Managing your Site {#managing-your-site}
 
-The **Sites** console allows you to navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs and when selected, secondary rails (for example, timeline and references).
+The **Sites** console lets you navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs and when selected, secondary rails (for example, timeline and references).
 
 For example, column view:
 
@@ -286,17 +286,17 @@ In addition, **Page Information** can provide access to analytics and recommenda
 There are various modes when editing a page allowing for different actions:
 
 * [Edit](/help/sites-authoring/editing-content.md) - the mode to use when editing the page content.
-* [Layout](/help/sites-authoring/responsive-layout.md) - allows you to create and edit your responsive layout dependent on device (if the page is based on a layout container)
+* [Layout](/help/sites-authoring/responsive-layout.md) - lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
 
 * [Scaffolding](/help/sites-authoring/scaffolding.md) - help you to create a large set of pages that share the same structure but have differing content.
-* [Developer](/help/sites-developing/developer-mode.md) - allows you to perform various actions (requires privileges). These include inspecting the technical details of a page and its components.
+* [Developer](/help/sites-developing/developer-mode.md) - lets you perform various actions (requires privileges). These include inspecting the technical details of a page and its components.
 
-* [Design](/help/sites-authoring/default-components-designmode.md) - allows you to enable/disable components for use on a page and to configure the design of the component (if the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates)).
+* [Design](/help/sites-authoring/default-components-designmode.md) - lets you enable/disable components for use on a page and to configure the design of the component (if the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Targeting](/help/sites-authoring/content-targeting-touch.md) - increase content relevance through targeting and measuring across all channels.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - shows Analytics data for the page.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - allows you to view a pages state at a particular point in time.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - lets you view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-authoring/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
 * [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.
 

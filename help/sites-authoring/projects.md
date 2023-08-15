@@ -50,7 +50,7 @@ Content Only is the default mode when opening the console. It will show all of y
 
 #### Timeline {#timeline}
 
-The timeline view allow you to select an individual project and view activity on it. Use the rail selector or the hotkey `alt+1` to change to this view.
+The timeline view let you select an individual project and view activity on it. Use the rail selector or the hotkey `alt+1` to change to this view.
 
 ![Timeline mode](assets/project-timeline.png)
 

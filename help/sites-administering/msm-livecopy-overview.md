@@ -113,7 +113,7 @@ When you select a live copy page, the following actions are available:
 
 * [Resume](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-    * Resume allows you to reinstate a suspended relationship.
+    * Resume lets you reinstate a suspended relationship.
 
 * [Detach](/help/sites-administering/msm.md#detaching-a-live-copy)
 
@@ -134,6 +134,6 @@ This tab provides detailed information about the status of the relationship betw
 
 ### Live Copy Information {#live-copy-information}
 
-This tab allows you to view and edit the live copy configuration:
+This tab lets you view and edit the live copy configuration:
 
 ![Live copy information](assets/chlimage_1-364.png)

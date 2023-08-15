@@ -36,4 +36,4 @@ Before you can programmatically perform a User Management PreferencesManagerServ
 
 **Invoke the appropriate role or permission operations**
 
-Once you have created the service client, you can then invoke the Preferences Manager operations. The service client allows you to read and set permissions.
+Once you have created the service client, you can then invoke the Preferences Manager operations. The service client lets you read and set permissions.

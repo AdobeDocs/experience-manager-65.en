@@ -9,7 +9,7 @@ exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 ---
 # Overlays{#overlays}
 
-Adobe Experience Manager (AEM)&mdash;and before that, CQ&mdash;has long used the principle of overlays to allow you to extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
+Adobe Experience Manager (AEM)&mdash;and before that, CQ&mdash;has long used the principle of overlays to let you extend and customize the [consoles](/help/sites-developing/customizing-consoles-touch.md) and other functionality (for example, [page authoring](/help/sites-developing/customizing-page-authoring-touch.md)).
 
 Overlay is a term that is used in many contexts. In this context (extending AEM), an overlay means to take the predefined functionality and impose your own definitions over that (to customize the standard functionality).
 

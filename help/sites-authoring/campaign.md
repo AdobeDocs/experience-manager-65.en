@@ -36,7 +36,7 @@ When you create Adobe Campaign content in AEM, you must link to an Adobe Campaig
 
 There are two possible cases:
 
-* Content can be synched with a delivery from Adobe Campaign. This allows you to use AEM content in a delivery.
+* Content can be synched with a delivery from Adobe Campaign. This lets you use AEM content in a delivery.
 * (Adobe Campaign Classic only) The content can be sent directly to Adobe Campaign, which automatically generates a new email delivery. This mode has limitations.
 
 Detailed instructions are described in this document.
@@ -240,7 +240,7 @@ See the following sections for instructions based on your Adobe Campaign solutio
 
 ### Linking an AEM page to an Adobe Campaign email (Adobe Campaign Standard) {#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard}
 
-Adobe Campaign Standard allows you to recover and link content created in AEM with:
+Adobe Campaign Standard lets you recover and link content created in AEM with:
 
 * An email.
 * An email template.
@@ -299,7 +299,7 @@ To link a page created in AEM with an email from Adobe Campaign:
 
 ### Synchronizing content created in AEM with a delivery from Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
-Adobe Campaign allows you to recover and synchronize content created in AEM with:
+Adobe Campaign lets you recover and synchronize content created in AEM with:
 
 * A campaign delivery
 * A delivery activity in a campaign workflow

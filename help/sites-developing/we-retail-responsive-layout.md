@@ -13,7 +13,7 @@ exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 ---
 # Trying out Responsive Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-All We.Retail pages use the Layout Container component to implement responsive design. The layout container provides a paragraph system that allows you to position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the **Layout** mode in the page editor, which allows you to create and edit your responsive layout dependent on device.
+All We.Retail pages use the Layout Container component to implement responsive design. The layout container provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the **Layout** mode in the page editor, which lets you create and edit your responsive layout dependent on device.
 
 ## Trying it out {#trying-it-out}
 

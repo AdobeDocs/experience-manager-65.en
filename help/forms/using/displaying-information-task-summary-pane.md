@@ -15,7 +15,7 @@ exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
 
 When you open a task in AEM Forms workspace, a Task Summary pane can display a summary of the task. This additional and relevant information for a task adds more value for the end-user of AEM Forms workspace.
 
-AEM Forms workspace allows you to display a web page of your choice in the Task Summary pane. A process can be created to display a Task Summary pane using Workbench.
+AEM Forms workspace lets you display a web page of your choice in the Task Summary pane. A process can be created to display a Task Summary pane using Workbench.
 
 1. Create an Assign Task process in Workbench. For more details about Assign Task operation, see Service Reference topic in [Workbench Help](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 

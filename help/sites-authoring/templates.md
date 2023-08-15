@@ -300,7 +300,7 @@ The following aspects of a template can be edited:
 
   Components added here cannot be moved/removed from resultant pages by the page authors. If you want page authors to be able to add and remove components to resultant pages, then you need to add a paragraph system to the template.
 
-  When components are locked you can add content, which cannot be edited by page authors. You can unlock components to allow you to define [Initial Content](#editingatemplateinitialcontent).
+  When components are locked you can add content, which cannot be edited by page authors. You can unlock components to let you define [Initial Content](#editingatemplateinitialcontent).
 
   >[!NOTE]
   >
@@ -328,7 +328,7 @@ The following aspects of a template can be edited:
 
   See the [Style System documentation](/help/sites-authoring/style-system.md) for more information.
 
-The **Mode** selector in the toolbar allows you to select and edit the appropriate aspect of the template:
+The **Mode** selector in the toolbar lets you select and edit the appropriate aspect of the template:
 
 * [Structure](#editingatemplatestructure)
 * [Initial Content](#editingatemplateinitialcontent)
@@ -336,7 +336,7 @@ The **Mode** selector in the toolbar allows you to select and edit the appropria
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-While the **Page Policy** option on the **Page Information** menu allows you to [select the required page policies](#editingatemplatepagepolicies):
+While the **Page Policy** option on the **Page Information** menu lets you [select the required page policies](#editingatemplatepagepolicies):
 
 ![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
@@ -350,7 +350,7 @@ In **Structure** mode you define components and content for your template and de
 
 * Components defined in the template structure cannot be moved on a resulting page nor deleted from any resulting pages.
 * If you want page authors to be able to add and remove components, add a paragraph system to the template.
-* Components can be unlocked and locked again to allow you to define [initial content](#editingatemplateinitialcontent).
+* Components can be unlocked and locked again to let you define [initial content](#editingatemplateinitialcontent).
 
 * The design policies for the components and page are defined.
 
@@ -389,7 +389,7 @@ In **Structure** mode of the template editor:
 
 * **Component Actions**
 
-  Take actions on the components once they have been added to the template. Each individual instance has a toolbar that allows you to access the available actions, the toolbar is dependent on the component type.
+  Take actions on the components once they have been added to the template. Each individual instance has a toolbar that lets you access the available actions, the toolbar is dependent on the component type.
 
   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
@@ -411,7 +411,7 @@ In **Structure** mode of the template editor:
 
   The content (or design) policies define the design properties of a component. For example, the components available or minimum/maximum dimensions. These are applicable to the template (and pages created with the template).
 
-  Create a content policy, or select an existing one, for a component. This allows you to define the design details.
+  Create a content policy, or select an existing one, for a component. This lets you define the design details.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -473,7 +473,7 @@ In **Structure** mode of the template editor:
 
   *Features*
 
-  The **Features** tab allows you to enable or disable additional features of the component.
+  The **Features** tab lets you enable or disable additional features of the component.
 
   For example for an image component you can define the cropping proportions, allowed image orientations, and if uploads are allowed.
 

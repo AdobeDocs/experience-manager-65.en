@@ -25,7 +25,7 @@ Translation projects and jobs are created with translation preparation workflows
 
 >[!NOTE]
 >
->Option 3 is unrelated from translation job/project. It allows you to copy content and structural changes in the language master to (untranslated) language copies. You can use this to keep your language masters in sync, even without translation.
+>Option 3 is unrelated from translation job/project. It lets you copy content and structural changes in the language master to (untranslated) language copies. You can use this to keep your language masters in sync, even without translation.
 
 ## Performing Initial Translations and Updating Existing Translations {#performing-initial-translations-and-updating-existing-translations}
 

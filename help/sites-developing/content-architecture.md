@@ -29,7 +29,7 @@ Everything should be stored in the repository rather than relying on separate th
 
 ### Use the "content model first" design principle {#use-the-content-model-first-design-principle}
 
-When building a new feature, always start by designing the JCR content structure first, and then look into reading and writing your content using the default Sling servlets. This lets you ensure that your implementation works well with out of the box access control mechanisms and allow you to avoid generating unnecessary CRUD-style servlets.
+When building a new feature, always start by designing the JCR content structure first, and then look into reading and writing your content using the default Sling servlets. This lets you ensure that your implementation works well with out of the box access control mechanisms and let you avoid generating unnecessary CRUD-style servlets.
 
 ### Be RESTful {#be-restful}
 
