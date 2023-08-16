@@ -11,7 +11,6 @@ feature: Adaptive Forms
 
 # Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -52,7 +51,6 @@ The below code illustrates the existing failure response structure:
     errorCausedBy : "SERVER_SIDE_VALIDATION/SERVICE_INVOCATION_FAILURE"
     errors : [
         {
-             somExpression  : <somexpr>
              errorMessage / errorMessages : <validationMsg> / [<validationMsg>, <validationMsg>]
         }
     ]
@@ -65,7 +63,7 @@ The below code illustrates the existing failure response structure:
 Where:
 
 * `errorCausedBy` describes the reason for failure.
-* `errors` mention the SOM expression of the fields that failed the validation criteria along with the validation error message.
+* `errors` mention the qualified fieldname of the fields that failed the validation criteria along with the validation error message.
 * `originCode` field added by AEM and contains the http status code returned by the external service.
 * `originMessage` field added by AEM and contains the raw error data returned by the external service.
 
@@ -79,7 +77,7 @@ With the improvements in features and subsequent updates in the versions of AEM 
         "instance": "", (optional)
         "validationErrors" : [ (required)
             {
-                "fieldName":"<SOM expression of the field whose data sent is invalid>",
+                "fieldName":"<qualified fieldname of the field whose data sent is invalid>",
                 "dataRef":<JSONPath (or XPath) of the data element which is invalid>
                 "details": ["Error Message(s) for the field"] (required)
     
@@ -108,7 +106,7 @@ Where:
 * `detail (optional)` provides additional details about the failure if necessary. 
 * `instance (optional)` represents an instance or identifier associated with the failure and helps in tracking or identifying the specific occurrence of the failure.
 * `validationErrors (required)` contains information about validation errors. It includes the following fields:
-    * `fieldname` mentions the SOM expression of the fields that failed the validation criteria.
+    * `fieldname` mentions the qualified fieldname of the fields that failed the validation criteria.
     * `dataRef` represents the JSON path or XPath of the fields that failed the validation.
     * `details` contain the validation error message with the erroneous field. 
 * `originCode (optional)` field added by AEM and contains the http status code returned by the external service
@@ -129,7 +127,7 @@ Some of the options to display the error responses are:
                 "type": "VALIDATION_ERROR",
                 "validationErrors": [
                 {
-                "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+                "fieldName": "$form.PetId",
                 "dataRef": "",
                 "details": [
                 "Invalid ID supplied. Provided value is not correct!"
@@ -138,10 +136,7 @@ Some of the options to display the error responses are:
             ]}
     ```
 
-    You can view the SOM expression of any field in an Adaptive Form by tapping the field and selecting the **[!UICONTROL View SOM Expression]**.
-
-    ![Som Expression of an adaptive form field to display error reponse in custom error handler](/help/forms/using/assets/custom-error-handler-somexpression.png)
-       
+    
 +++
 
 
@@ -156,17 +151,13 @@ Some of the options to display the error responses are:
             "validationErrors": [
             {
                 "fieldName": "",
-                "dataRef": "/Pet/id",
+                "dataRef": "$.Pet.id",
                 "details": [
                 "Invalid ID supplied. Provided value is not correct!"
                 ]
                 }
         ]}
     ```
-
-    ![Data Ref of an adaptive form field to display error reponse in custom error handler](/help/forms/using/assets/custom-errorhandler-dataref-core-component.PNG)
-
-You can view the value of dataRef in the **[!UICONTROL Properties]** window of a form component.
 
 +++
 
@@ -185,7 +176,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 >[!NOTE]
 >
 > * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model. 
-> * A default error handler is provided by default to display error messages on fields if the error response is in the standard schema. The default error handler can also call the custom error handler if the error response doen not comply with the standard schema.
+> * A default error handler is provided to display error messages on fields if the error response is in the standard schema. You can also call the default error handler from the custom error handler function. 
 
 Using Rule Editor, you can:
 
@@ -195,7 +186,7 @@ Using Rule Editor, you can:
 
 ### Add default error handler function {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
+A default error handler is supported to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
 To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
 
 1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
@@ -277,6 +268,9 @@ Let's add the following code to the JavaScript file to display the response and 
         }
     ```
 
+     To call the default error handler from your custom error handler, the following line of the sample code is used:
+        `globals.invoke('defaultErrorHandler',response, headers) `
+        
 1. Save `function.js`.
 1. Navigate to `js.txt` and add the following code:
   

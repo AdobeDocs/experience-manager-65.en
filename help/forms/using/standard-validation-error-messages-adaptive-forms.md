@@ -186,7 +186,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 >[!NOTE]
 >
 > * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model. 
-> * A default error handler is provided by default to display error messages on fields if the error response is in the standard schema. The default error handler can also call the custom error handler if the error response doen not comply with the standard schema.
+> * A default error handler is provided to display error messages on fields if the error response is in the standard schema. The default error handler can also call the custom error handler if the error response doen not comply with the standard schema.
 
 Using Rule Editor, you can:
 
@@ -196,7 +196,7 @@ Using Rule Editor, you can:
 
 ### Add default error handler function {#add-default-errror-handler}
 
-A default error handler is supported by default to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
+A default error handler is supported to display error messages on fields if the error response is in standard schema or in server-side validation failure. 
 To understand how to use a default error handler using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, take an example of a simple Adaptive Form with two fields, **Pet ID** and **Pet Name** and use a default error handler at the **Pet ID** field to check for various errors returned by the REST endpoint configured to invoke an external service, for example, `200 - OK`,`404 - Not Found`, `400 - Bad Request`. To add a default error handler using the Rule Editor's Invoke Service action, execute the following steps:
 
 1. Open an Adaptive Form in authoring mode, select a form component and tap **[!UICONTROL Rule Editor]** to open the rule editor.
@@ -272,9 +272,14 @@ Let's add the following code to the JavaScript file to display the response and 
             console.log("Custom Error Handler processing start...");
             console.log("response:"+JSON.stringify(response));
             console.log("headers:"+JSON.stringify(headers));
+            guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
             console.log("Custom Error Handler processing end...");
         }
     ```
+
+     To call the default error handler from your custom error handler, the following line of the sample code is used:
+        `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+
 
 1. Save `function.js`.
 1. Navigate to `js.txt` and add the following code:

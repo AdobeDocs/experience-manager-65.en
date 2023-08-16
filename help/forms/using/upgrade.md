@@ -13,7 +13,7 @@ docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 ---
-# Upgrade to AEM 6.5 Forms{#upgrade-to-aem-forms}
+# Upgrade to AEM 6.5 Forms {#upgrade-to-aem-forms}
 
 | Version | Article link |
 | -------- | ---------------------------- |
