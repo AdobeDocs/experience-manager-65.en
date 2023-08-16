@@ -11,7 +11,7 @@ Learn how to use AEM's Content Fragments to design, create, curate, and use page
 
 [Now that you have created an assets folder](create-assets-folder.md) where you can store your Content Fragments, you can now create the fragments!
 
-Content Fragments allow you to design, create, curate, and publish page-independent content. They allow you to prepare content ready for use in multiple locations and over multiple channels.
+Content Fragments let you design, create, curate, and publish page-independent content. They let you prepare content ready for use in multiple locations and over multiple channels.
 
 Content fragments contain structured content and can be delivered in JSON format.
 

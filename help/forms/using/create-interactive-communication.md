@@ -84,8 +84,8 @@ For more information on the Interactive Communication authoring interface, see [
    | **Component** |**Functionality** |
    |---|---|
    | Chart |Adds a chart that you can use in Interactive Communication for visual representation of two-dimensional data retrieved from an form data model collection. For more information, see [Using charts in Interactive Communications](/help/forms/using/chart-component-interactive-communications.md). |
-   | Document Fragment |Allows you to add a reusable component, such as text, list, or condition, to an Interactive Communication. The added component could be either form data model-based or without a form data model. |
-   | Image |Allows you to insert an image. |
+   | Document Fragment |Lets you add a reusable component, such as text, list, or condition, to an Interactive Communication. The added component could be either form data model-based or without a form data model. |
+   | Image |Lets you insert an image. |
 
    Drag-and-drop the components into your Interactive Communication and configure them as required.
 
@@ -189,14 +189,14 @@ For more information on the Interactive Communication authoring interface, see [
    | Components |Functionality |
    |---|---|
    | Chart |Adds a chart that you can use in Interactive Communication for visual representation of two-dimensional data retrieved from a form data model collection. For more information, see [Using chart component](../../forms/using/chart-component-interactive-communications.md). |
-   | Document Fragment |Allows you to add a reusable component, text, list, or condition, to an Interactive Communication. The reusable component you add to an Interactive Communication could be either form data model-based or without a form data model. |
-   | Image |Allows you to insert an image. |
-   | Panel |Allows you to add a [Panel](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) to the Interactive Communication. |
+   | Document Fragment |Lets you add a reusable component, text, list, or condition, to an Interactive Communication. The reusable component you add to an Interactive Communication could be either form data model-based or without a form data model. |
+   | Image |Lets you insert an image. |
+   | Panel |Lets you add a [Panel](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) to the Interactive Communication. |
    | Table |Adds a table that lets you organize data in rows and columns.  |
-   | Target Area |Inserts a target area in a web channel to organize the web-channel-specific components. Target area is a plain container that allows you to group web-channel specific components.  |
+   | Target Area |Inserts a target area in a web channel to organize the web-channel-specific components. Target area is a plain container that lets you group web-channel specific components.  |
    | Text |Adds rich text to the web channel of an Interactive Communication. Text can also make use of form data model objects to make the content dynamic. |
-   | Button |Allows you to add a [Button](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) to the Interactive Communication. You can use the Button component to navigate to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL. |
-   | Separator |Allows you to insert a horizontal line within an Interactive Communication. Use this component to distinguish between sections in a correspondence. For example, you can use the Separator component to distinguish between Customer Details and Credit Card Details sections in a credit card statement. |
+   | Button |Lets you add a [Button](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) to the Interactive Communication. You can use the Button component to navigate to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL. |
+   | Separator |Lets you insert a horizontal line within an Interactive Communication. Use this component to distinguish between sections in a correspondence. For example, you can use the Separator component to distinguish between Customer Details and Credit Card Details sections in a credit card statement. |
 
 1. As required, insert assets in your web channel.
 
@@ -490,7 +490,7 @@ To add button and define rules on it:
 
 ## Add Panel component to the web channel {#add-panel-component-to-the-web-channel}
 
-The Panel component is a placeholder for grouping other components together and controls how a group of components, such as accordion and tabs, are laid out in the Interactive Communication. A panel component also allows you to make a group of components repeatable for the end user, such as in multiple entries required for filling in educational credentials.
+The Panel component is a placeholder for grouping other components together and controls how a group of components, such as accordion and tabs, are laid out in the Interactive Communication. A panel component also lets you make a group of components repeatable for the end user, such as in multiple entries required for filling in educational credentials.
 
 Perform the following steps to add a Panel component to the web channel:
 

@@ -42,7 +42,7 @@ These are all [OSGi configurations](/help/sites-deploying/configuring-osgi.md).
 
 ## Loggers and Writers for Individual Services {#loggers-and-writers-for-individual-services}
 
-In addition to the global logging settings, AEM allows you to configure specific settings for an individual service:
+In addition to the global logging settings, AEM lets you configure specific settings for an individual service:
 
 * the specific logging level
 * the location of the individual log file
@@ -51,7 +51,7 @@ In addition to the global logging settings, AEM allows you to configure specific
 * the format to be used when writing the log messages
 * the logger (the OSGi service supplying the log messages)
 
-This allows you to channel log messages for a single service into a separate file. This can be particularly useful during development or testing; for example, when you need an increased log level for a specific service.
+This lets you channel log messages for a single service into a separate file. This can be particularly useful during development or testing; for example, when you need an increased log level for a specific service.
 
 AEM uses the following to write log messages to file:
 

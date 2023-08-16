@@ -23,7 +23,7 @@ role: Admin, Developer
 
 **Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).
 
-Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provide business user-friendly UI to quickly create Adaptive Forms. The UI offers quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
+Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provide business user-friendly UI to quickly create Adaptive Forms. The UI offers quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
 Before you start, learn about the type of Forms components available to you:
 
@@ -84,7 +84,7 @@ After opening the form for editing, you can use available Adaptive Forms Core Co
 
 ## Configure Submit Action for an Adaptive Form {#configure-submit-action-for-form}
 
-A Submit Action allows you to choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
+A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 

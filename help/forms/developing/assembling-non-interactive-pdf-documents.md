@@ -39,7 +39,7 @@ The Assembler service can assemble non-interactive PDF documents without the Out
 
 >[!NOTE]
 >
->Before reading this section, it is recommended that you be familiar with assembling PDF documents using the Assembler service. This section does not discuss concepts, such as creating a collection object that contains input documents or learning how to extract the results from the returned collection object. (See [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Before reading this section, it is recommended that you are familiar with assembling PDF documents using the Assembler service. This section does not discuss concepts, such as creating a collection object that contains input documents or learning how to extract the results from the returned collection object. (See [Programmatically Assembling PDF Documents](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -65,7 +65,7 @@ To assemble a non-interactive PDF document, perform the following tasks:
 
 Include the necessary files in your development project. If you are creating a client application by using Java, include the necessary JAR files. If you are using web services, ensure that you include the proxy files.
 
-The following JAR files must be added to your project’s class path:
+The following JAR files must be added to your project's class path:
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
@@ -113,7 +113,7 @@ Assemble a non-interactive PDF document by using the Assembler Service API (Java
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-assembler-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-assembler-client.jar, in your Java project's class path.
 
 1. Create an Assembler client.
 
@@ -133,11 +133,11 @@ Assemble a non-interactive PDF document by using the Assembler Service API (Java
 1. Set run-time options.
 
     * Create an `AssemblerOptionSpec` object that stores run-time options by using its constructor.
-    * Set run-time options to meet your business requirements by invoking a method that belongs to the `AssemblerOptionSpec` object. For example, to instruct the Assembler service to continue processing a job when an error occurs, invoke the `AssemblerOptionSpec` object’s `setFailOnError` method and pass `false`.
+    * Set run-time options to meet your business requirements by invoking a method that belongs to the `AssemblerOptionSpec` object. For example, to instruct the Assembler service to continue processing a job when an error occurs, invoke the `AssemblerOptionSpec` object's `setFailOnError` method and pass `false`.
 
 1. Assemble the PDF document.
 
-   Invoke the `AssemblerServiceClient` object’s `invokeOneDocument` method and pass the following values:
+   Invoke the `AssemblerServiceClient` object's `invokeOneDocument` method and pass the following values:
 
     * A `com.adobe.idp.Document` object that represents the DDX document. Ensure that this DDX document contains the value `inDoc` for the PDF source element.
     * A `com.adobe.idp.Document` object that contains the interactive PDF document.
@@ -148,7 +148,7 @@ Assemble a non-interactive PDF document by using the Assembler Service API (Java
 1. Save the non-interactive PDF document.
 
     * Create a `java.io.File` object and ensure that the file name extension is .pdf.
-    * Invoke the `Document` object’s `copyToFile` method to copy the contents of the `Document` object to the file. Ensure that you use the `Document` object that the `invokeOneDocument` method returned.
+    * Invoke the `Document` object's `copyToFile` method to copy the contents of the `Document` object to the file. Ensure that you use the `Document` object that the `invokeOneDocument` method returned.
 
 * "Quick Start (SOAP mode): Assembling a non-interactive PDF document using the Java API"
 
@@ -169,7 +169,7 @@ Assemble a non-interactive PDF document by using the Assembler Service API (web 
     * Create an `AssemblerServiceClient` object by using its default constructor.
     * Create an `AssemblerServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). You do not need to use the `lc_version` attribute. This attribute is used when you create a service reference.
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `AssemblerServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
@@ -181,26 +181,26 @@ Assemble a non-interactive PDF document by using the Assembler Service API (web 
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the DDX document.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the DDX document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Reference an interactive PDF document.
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the input PDF document. This `BLOB` object is passed to the `invokeOneDocument` as an argument.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the input PDF document and the mode to open the file in.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method. Pass the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method. Pass the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning its `MTOM` field with the contents of the byte array.
 
 1. Set run-time options.
 
     * Create an `AssemblerOptionSpec` object that stores run-time options by using its constructor.
-    * Set run-time options to meet your business requirements by assigning a value to a data member that belongs to the `AssemblerOptionSpec` object. For example, to instruct the Assembler service to continue processing a job when an error occurs, assign `false` to the `AssemblerOptionSpec` object’s `failOnError` data member.
+    * Set run-time options to meet your business requirements by assigning a value to a data member that belongs to the `AssemblerOptionSpec` object. For example, to instruct the Assembler service to continue processing a job when an error occurs, assign `false` to the `AssemblerOptionSpec` object's `failOnError` data member.
 
 1. Assemble the PDF document.
 
-   Invoke the `AssemblerServiceClient` object’s `invokeOneDocument` method and pass the following values:
+   Invoke the `AssemblerServiceClient` object's `invokeOneDocument` method and pass the following values:
 
     * A `BLOB` object that represents the DDX document
     * A `BLOB` object that represents the interactive PDF document
@@ -211,9 +211,9 @@ Assemble a non-interactive PDF document by using the Assembler Service API (web 
 1. Save the non-interactive PDF document.
 
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the non-interactive PDF document and the mode to open the file in.
-    * Create a byte array that stores the content of the `BLOB` object that the `invokeOneDocument` method returned. Populate the byte array by getting the value of the `BLOB` object’s `MTOM` field.
+    * Create a byte array that stores the content of the `BLOB` object that the `invokeOneDocument` method returned. Populate the byte array by getting the value of the `BLOB` object's `MTOM` field.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 * "Quick Start (MTOM): Assembling a non-interactive PDF document using the web service API".
 

@@ -167,7 +167,7 @@ As with the Text & Personalization (Campaign) and Image (Campaign) components, y
   Drag an image from the content finder, or click to browse to an image. Crop or rotate as required.
 
 * **Image Properties** (**Advanced Image Properties**)
-  Allows you to specify the following:
+  Lets you specify the following:
 
     * **Title**
       The title for the block; will be shown by mouseover.
@@ -199,7 +199,7 @@ The following example shows a Text & Image (Campaign) component being displayed.
 
 The Text & Personalization (Campaign) component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). In addition, this component lets you use context fields and personalization blocks available from Adobe Campaign; also see [Inserting Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
-The selection of icons allow you to format your text, including font characteristics, alignment, links, lists and indentation.
+The selection of icons let you format your text, including font characteristics, alignment, links, lists and indentation.
 
 Add text as you normally would in the rich text editor. Add personalization by selecting the Adobe Campaign dropdown and selecting the fields as appropriate.
 
@@ -360,7 +360,7 @@ The following example shows an Error Display (Campaign) component being displaye
 
 ### Hidden Reconciliation Key (Campaign) {#hidden-reconciliation-key-campaign}
 
-The Hidden Reconciliation Key (Campaign) component allows you to add hidden fields as part of the reconciliation key to a form.
+The Hidden Reconciliation Key (Campaign) component lets you add hidden fields as part of the reconciliation key to a form.
 
 You can configure the following in the Hidden Reconciliation Key (Campaign) component:
 

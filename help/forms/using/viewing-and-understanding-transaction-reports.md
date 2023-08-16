@@ -12,7 +12,7 @@ exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 ---
 # Viewing and Understanding Transaction Reports{#viewing-and-understanding-transaction-reports}
 
-Transaction reports allows you to capture and track the number of submitted forms, processed documents, and rendered documents. The objective behind tracking these transactions is to make an informed decision about the product usage and rebalancing investments in hardware and software. For more information, see [AEM Forms Transaction Reports Overview](../../forms/using/transaction-reports-overview.md).
+Transaction reports lets you capture and track the number of submitted forms, processed documents, and rendered documents. The objective behind tracking these transactions is to make an informed decision about the product usage and rebalancing investments in hardware and software. For more information, see [AEM Forms Transaction Reports Overview](../../forms/using/transaction-reports-overview.md).
 
 ## Setting up transaction reports  {#setting-up-transaction-reports}
 

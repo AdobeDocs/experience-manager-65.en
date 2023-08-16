@@ -82,7 +82,7 @@ Using CRXDE Lite:
    </html>
    ```
 
-1. The foundation script `head.jsp` need not be overlaid, but the foundation script `body.jsp` is empty.
+1. The foundation script `head.jsp` does not need to be overlaid, but the foundation script `body.jsp` is empty.
 
    To setup for authoring, overlay `body.jsp` with a local script and include a paragraph system (parsys) in the body:
 

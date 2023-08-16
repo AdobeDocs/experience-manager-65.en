@@ -33,7 +33,7 @@ AEM is shipped with various mechanisms to help you manage your repository:
 
 * the [Purge Versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) tool
   This is used as part of monitoring and maintaining your repository.
-  It allows you to intervene to remove old versions of a node, or a hierarchy of nodes, according to these parameters:
+  It lets you intervene to remove old versions of a node, or a hierarchy of nodes, according to these parameters:
 
     * The maximum number of versions to be kept in the repository.
       When this number is exceeded, the oldest version is removed.

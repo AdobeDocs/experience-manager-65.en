@@ -168,7 +168,7 @@ The following diagram and steps detail how to proceed:
 
    As an example, see `IDSJobProcessor.java` for the IDS proxy worker.
 
-1. Make use of `ProxyUtil.java` in dam-commons. This allows you to dispatch jobs to workers using the dam proxy.
+1. Make use of `ProxyUtil.java` in dam-commons. This lets you dispatch jobs to workers using the dam proxy.
 
 >[!NOTE]
 >

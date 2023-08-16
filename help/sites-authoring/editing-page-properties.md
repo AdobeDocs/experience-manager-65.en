@@ -83,7 +83,7 @@ The properties are distributed across several tabs.
 
 * **Vanity URL**
 
-  Allows you to enter a vanity URL for this page, which can allow you to have a shorter and/or more expressive URL.
+  Lets you enter a vanity URL for this page, which can let you have a shorter and/or more expressive URL.
 
   For example, if the Vanity URL is set to `welcome`to the page identified by the path `/v1.0/startpage`for the website `http://example.com,` then `http://example.com/welcome`would be the vanity URL of `http://example.com/content/v1.0/startpage`
 
@@ -311,7 +311,7 @@ From the **Sites** console you can select several pages then use **View Properti
 >
 >Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/metadata.md) for details.
 >
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
+>There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which lets you search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 
 You can select multiple pages for bulk editing by various methods, including:
 

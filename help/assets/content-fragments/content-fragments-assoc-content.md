@@ -24,7 +24,7 @@ To make the association you first need to [add your media asset(s) to a collecti
 1. Depending on whether any collections have already been associated, or not - select either:
 
    * **Associate Content** - this will be the first associated collection
-   * **Associate Collection** - associated collections already are already configured
+   * **Associate Collection** - associated collections that are already configured
 
 1. Select the required collection.
 

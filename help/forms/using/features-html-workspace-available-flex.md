@@ -19,7 +19,7 @@ Following is a quick overview of these capabilities. For more details, see the r
 
 ## Support for a summary pane for tasks {#support-for-a-summary-pane-for-tasks}
 
-When you open a task, before the form opens, a pane allows you to show information about the task, using an external URL. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end user of AEM Forms workspace. See [Display Summary Page](/help/forms/using/displaying-information-task-summary-pane.md) for the implementation details.
+When you open a task, before the form opens, a pane lets you show information about the task, using an external URL. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end user of AEM Forms workspace. See [Display Summary Page](/help/forms/using/displaying-information-task-summary-pane.md) for the implementation details.
 
 ## Support for Manager View {#support-for-manager-view}
 

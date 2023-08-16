@@ -57,7 +57,7 @@ In this example, a new custom JSSP file was created and calls that from the AEM 
     * You have the connection working between AEM and Campaign
     * The campaign cloud service is configured on **/content/geometrixx-outdoors**
 
-   The most important object in this example is the **GenericCampaignConnector**, which allows you to call (get and post) jssp files on the Adobe Campaign side.
+   The most important object in this example is the **GenericCampaignConnector**, which lets you call (get and post) jssp files on the Adobe Campaign side.
 
    Here is a small code snippet:
 

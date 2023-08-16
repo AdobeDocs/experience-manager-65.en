@@ -57,7 +57,7 @@ You can access Package Manager in three ways:
 
 Package Manager is divided into four main functional areas:
 
-* **Left Navigation Panel** - This panel allows you to filter and sort the list of packages.
+* **Left Navigation Panel** - This panel lets you filter and sort the list of packages.
 * **Package List** - This is the list of packages on your instance filtered and sorted per selections in the Left Navigation Panel.
 * **Activity Log** - This panel is minimized at first and expands to detail the activity of Package Manager such as when a package is built or installed. There are additional buttons in the Activity Log tab to:
   * **Clear Log**

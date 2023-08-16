@@ -65,7 +65,7 @@ First of all, check the connection between the author and publish instances and 
 
 ## Editing Form Content {#editing-form-content}
 
-Forms dedicated to Adobe Campaign have specific components. These components have an option to allow you to link each field of the form to a field in the Adobe Campaign database.
+Forms dedicated to Adobe Campaign have specific components. These components have an option to let you link each field of the form to a field in the Adobe Campaign database.
 
 >[!NOTE]
 >
@@ -81,9 +81,9 @@ This section only details specific links to Adobe Campaign. For more information
    >
    >If necessary, unlock the configuration by clicking the padlock icon to be able to add the Adobe Campaign service.
 
-1. Access the form's general parameters using the **Edit** button found at the start of the form. The **Form** tab allows you to select a thank you page to which the user will be redirected after having validated the form.
+1. Access the form's general parameters using the **Edit** button found at the start of the form. The **Form** tab lets you select a thank you page to which the user will be redirected after having validated the form.
 
-   The **Advanced** form allows you to select the type of form. The **Post Options** field gives you the choice between three types of Adobe Campaign forms:
+   The **Advanced** form lets you select the type of form. The **Post Options** field gives you the choice between three types of Adobe Campaign forms:
 
     * **Adobe Campaign: Save profile**: lets you create or update a recipient in Adobe Campaign (default value).
     * **Adobe Campaign: Subscribe to Services**: lets you manage the subscriptions of a recipient in Adobe Campaign.

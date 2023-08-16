@@ -1,6 +1,6 @@
 ---
 title: Campaign Management
-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email, and mobile services and so engage your visitors.
+description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It lets you orchestrate your marketing campaigns across the web, email, and mobile services and so engage your visitors.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -12,7 +12,7 @@ exl-id: d1741525-a475-4a76-bd16-55318023495e
 
 Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors.
 
-It allows you to orchestrate your marketing campaigns across the web, email, and mobile services and so engage your visitors. You can create content, segment visitors, push, and promote targeted content for specific user profiles and manage campaigns across multiple channels.
+It lets you orchestrate your marketing campaigns across the web, email, and mobile services and so engage your visitors. You can create content, segment visitors, push, and promote targeted content for specific user profiles and manage campaigns across multiple channels.
 
 This document describes the various elements that make up campaigns. More detailed information is available in the following documents:
 

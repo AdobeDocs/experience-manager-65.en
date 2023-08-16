@@ -388,7 +388,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Dashboards</td>
-   <td>Allows you to create reporting dashboards; these provide a customizable way to define pages that display consolidated data.</td>
+   <td>Lets you create reporting dashboards; these provide a customizable way to define pages that display consolidated data.</td>
   </tr>
   <tr>
    <td>Custom Documentation</td>
@@ -424,7 +424,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Reports</td>
-   <td>AEM provides a range of customized reports, allows you to create customized reports and/or develop your own.</td>
+   <td>AEM provides a range of customized reports, lets you create customized reports and/or develop your own.</td>
   </tr>
   <tr>
    <td>Default Page Scaffolding</td>
@@ -448,7 +448,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Versioning - Purge Versions</td>
-   <td>Allows you to purge page versions as required.</td>
+   <td>Lets you purge page versions as required.</td>
   </tr>
   <tr>
    <td>Workflow</td>

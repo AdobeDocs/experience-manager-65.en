@@ -67,7 +67,7 @@ To subscribe to the events, follow these steps:
 
 ### Configure folder metadata mapping {#folder-metadata-mapping}
 
-Metadata mapping between Workfront Projects and AEM Folders is defined within AEM Folder Metadata Schemas. Folder Metadata Schemas should be created and configured as usual in AEM. Workfront Tools adds an autocomplete dropdown to the Settings configuration tab of each folder metadata schema form field. This autocomplete drop- down menu will allow you to specify to which Workfront field each AEM folder property should be mapped to.
+Metadata mapping between Workfront Projects and AEM Folders is defined within AEM Folder Metadata Schemas. Folder Metadata Schemas should be created and configured as usual in AEM. Workfront Tools adds an autocomplete dropdown to the Settings configuration tab of each folder metadata schema form field. This autocomplete drop- down menu will let you specify to which Workfront field each AEM folder property should be mapped to.
 
 To configure the mappings, follow these steps:
 
@@ -83,7 +83,7 @@ To configure the mappings, follow these steps:
 
 ### Configure asset metadata mapping {#asset-metadata-mapping}
 
-Metadata mapping between Adobe Workfront Documents and Assets is defined within AEM Metadata Schemas. Metadata Schemas should be created and configured as usual in AEM. Workfront Tools adds configuration options to the Settings configuration tab of each metadata schema form field. These options will allow you to specify to which Workfront field each AEM property should be mapped to.
+Metadata mapping between Adobe Workfront Documents and Assets is defined within AEM Metadata Schemas. Metadata Schemas should be created and configured as usual in AEM. Workfront Tools adds configuration options to the Settings configuration tab of each metadata schema form field. These options will let you specify to which Workfront field each AEM property should be mapped to.
 
 To configure the mappings, follow these steps:
 

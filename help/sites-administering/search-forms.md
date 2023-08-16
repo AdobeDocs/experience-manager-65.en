@@ -471,7 +471,7 @@ Deleting a customized configuration is done from the console:
 
 ### Adding Options Predicates {#adding-options-predicates}
 
-Option predicates (Options, Options Property) allow you to configure an item to be searched for. They are usually used to search for something directly under the page; for example, a property on the page node.
+Option predicates (Options, Options Property) let you configure an item to be searched for. They are usually used to search for something directly under the page; for example, a property on the page node.
 
 The following example (to search according to the template used to create a page), illustrates the steps involved:
 

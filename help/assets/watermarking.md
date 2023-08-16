@@ -14,7 +14,7 @@ hide: yes
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en)                  |
 | AEM 6.5     | This article         |
 
-[!DNL Adobe Experience Manager Assets] allows you to add a digital watermark to assets that helps users verify the authenticity and copyright ownership of the assets. [!DNL Experience Manager Assets] supports text to be used as a watermark on PNG and JPEG files.
+[!DNL Adobe Experience Manager Assets] lets you add a digital watermark to assets that helps users verify the authenticity and copyright ownership of the assets. [!DNL Experience Manager Assets] supports text to be used as a watermark on PNG and JPEG files.
 
 To be able to apply watermark on assets, add the watermarking step in the [!UICONTROL DAM Update Asset] workflow.
 

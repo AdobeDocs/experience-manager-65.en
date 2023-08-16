@@ -42,7 +42,7 @@ The Work Manager tab displays statistics that relate to Work Manager items. Thes
 
 **Complete:** Displays all work items that executed successfully. Persistent work items stay in this state and non-persistent items are deleted upon completion of callbacks to the callback handlers. You can delete these items by using the Delete Items operation. (See Manage the work items or jobs.)
 
-**Failed:** Displays all work items that did not complete successfully due to an error condition. These work items can be retried a few times by using the Retry Items operation. (See Manage the work items or jobs.) A Failure link in the Status column allows you to access details about the failure.
+**Failed:** Displays all work items that did not complete successfully due to an error condition. These work items can be retried a few times by using the Retry Items operation. (See Manage the work items or jobs.) A Failure link in the Status column lets you access details about the failure.
 
 **Unknown:** Displays all work items whose status is unknown.
 
@@ -54,7 +54,7 @@ The Work Manager tab displays statistics that relate to Work Manager items. Thes
 
 **Fail Requested:** Displays jobs for which a fail request was made.
 
-**Failed:** Displays jobs that did not complete successfully due to an error condition. A Failure link in the Status column allows you to access details about the failure.
+**Failed:** Displays jobs that did not complete successfully due to an error condition. A Failure link in the Status column lets you access details about the failure.
 
 **Terminate Requested:** Displays jobs for which a terminate request was made.
 

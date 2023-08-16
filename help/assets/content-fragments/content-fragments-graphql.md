@@ -7,7 +7,7 @@ exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 ---
 # Headless Content Delivery using Content Fragments with GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-With Adobe Experience Manager (AEM), you can use Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query allows you to retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
+With Adobe Experience Manager (AEM), you can use Content Fragments, together with the AEM GraphQL API (a customized implementation, based on standard GraphQL), to headlessly deliver structured content for use in your applications. The ability to customize a single API query lets you retrieve and deliver the specific content that you want/need to render (as the response to the single API query).
 
 <!--
 >[!NOTE]
@@ -44,7 +44,7 @@ GraphQL is:
 
   See [GraphQL.org](https://graphql.org)
 
-The [AEM GraphQL API](#aem-graphql-api) allows you to perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
+The [AEM GraphQL API](#aem-graphql-api) lets you perform (complex) queries on your [Content Fragments](/help/assets/content-fragments/content-fragments.md); with each query being according to a specific model type. The content returned can then be used by your applications. 
 
 ## AEM GraphQL API {#aem-graphql-api}
 
@@ -90,7 +90,7 @@ The **[Fragment Reference](/help/assets/content-fragments/content-fragments-mode
 
 * References another fragment, dependent on a specific Content Fragment Model.
 
-* Allows you to retrieve structured data.
+* Lets you retrieve structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 

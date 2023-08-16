@@ -48,7 +48,7 @@ Information in this journey can of course be useful to all personas, but some in
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of headless in AEM and link out to detailed technical documentation.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, we recommend that you start at the beginning and progress sequentially.
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, Adobe recommends that you start at the beginning and progress sequentially.
 
 |#|Article|Description|
 |---|---|---|

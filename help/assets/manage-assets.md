@@ -331,7 +331,7 @@ If you upload many assets to Adobe Experience Manager, the I/O requests to serve
 
 ### Extract ZIP archive containing assets {#extractzip}
 
-You can upload ZIP archives just like any other supported asset. The same file name rules apply to ZIP files. [!DNL Experience Manager] allows you to extract a ZIP archive to a DAM location. If the archive files do not contain ZIP as extension, enable file type detection using content.
+You can upload ZIP archives just like any other supported asset. The same file name rules apply to ZIP files. [!DNL Experience Manager] lets you extract a ZIP archive to a DAM location. If the archive files do not contain ZIP as extension, enable file type detection using content.
 
 Select one ZIP archive at a time, click **[!UICONTROL Extract Archive]**, and select a destination folder. Select an option that you want to handle conflicts, if any. If the assets in the ZIP file exist in the destination folder, you can select one of these options: skip extraction, replace existing files, keep both assets by renaming, or create a version.
 

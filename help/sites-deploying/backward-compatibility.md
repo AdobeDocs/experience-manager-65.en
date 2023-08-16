@@ -28,7 +28,7 @@ In most cases, customers running AEM 6.3 should not have to change the code or c
 
 For exceptions where features could not be kept backward compatible, backward incompatibility issues for bundles and content can be mitigated by installing a Compatibility Package for 6.4 (please see how to setup below for details on where to download). This compat package will help restore compatibility in most cases for applications compliant with AEM 6.4.
 
-The Compatibility Package allows you to run AEM in compatibility mode and defer custom development against new AEM features:
+The Compatibility Package lets you run AEM in compatibility mode and defer custom development against new AEM features:
 
 >[!NOTE]
 >
