@@ -34,7 +34,7 @@ mini-toc-levels: 4
 
 Some of the key features and improvements in this release are the following:
 
-* You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface. See [About multi-subtitle and multi-audio track support for videos in Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/video.html?lang=en#about-msma).
+* [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 * Ability to navigate to the folder location for assets displayed in the search results.
 
 ## Enhancements in Service Pack 18 {#enhancements-sp18}
