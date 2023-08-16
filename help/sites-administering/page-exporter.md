@@ -5,7 +5,7 @@ exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 ---
 # The Page Exporter{#the-page-exporter}
 
-AEM allows you to export a page as a complete web page including images, `.js` and `.css` files.
+AEM lets you export a page as a complete web page including images, `.js` and `.css` files.
 
 Once configured, you request a page export from your browser by replacing `html` with `export.zip` in the URL. This generates an archive (zip) file, containing the rendered page in html format, together with the referenced assets. All the paths in the page (for example, paths to images) are rewritten to point to either the files included in the archive, or to the resources on the server. The archive (zip) file can then be downloaded from your browser.
 
@@ -175,7 +175,7 @@ To meet some specific requirements, you may need to implement a [custom update h
 
 ## Programmatically Exporting a Page {#programmatically-exporting-a-page}
 
-To programmatically export a page, you can use the [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI service. This service allows you to:
+To programmatically export a page, you can use the [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI service. This service lets you:
 
 * Export a page and write to the HTTP servlet response.
 * Export a page and save the zip file at a specific location.

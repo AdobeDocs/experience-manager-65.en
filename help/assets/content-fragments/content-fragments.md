@@ -1,13 +1,13 @@
 ---
 title: Working with Content Fragments
-description: Learn how Content Fragments in Adobe Experience Manager (AEM) allow you to design, create, curate, and use page-independent content, ideal for headless delivery.
+description: Learn how Content Fragments in Adobe Experience Manager (AEM) let you design, create, curate, and use page-independent content, ideal for headless delivery.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 ---
 # Working with Content Fragments {#working-with-content-fragments}
 
-With Adobe Experience Manager (AEM), Content Fragments allow you to design, create, curate and [publish page-independent content](/help/sites-authoring/content-fragments.md) They allow you to prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery.
+With Adobe Experience Manager (AEM), Content Fragments let you design, create, curate and [publish page-independent content](/help/sites-authoring/content-fragments.md) They let you prepare content ready for use in multiple locations/over multiple channels, ideal for headless delivery.
 
 Content fragments contain structured content:
 
@@ -20,7 +20,7 @@ Content fragments contain structured content:
     * A combination of many fields of varying data types, including text, number, boolean, data and time, amongst others.
     * Can be used either for preparing more structured content for page authoring, or for delivery to your application.
   * Nested
-    * The reference data types available allow you to nest your content.
+    * The reference data types available let you nest your content.
     * Tends to be used for delivery to your application.
 
 Content fragments can also be delivered in JSON format, using the Sling Model (JSON) export capabilities of AEM core components. This form of delivery:
@@ -56,7 +56,7 @@ The number of communication channels is increasing annually. Typically channels 
 
 However, you (probably) do not want to use exactly the same content for all channels - you need to optimize your content according to the specific channel.
 
-Content fragments allow you to:
+Content fragments let you:
 
 * Consider how to reach target audiences efficiently across channels.
 * Create and manage channel-neutral editorial content.

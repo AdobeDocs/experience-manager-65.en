@@ -107,7 +107,7 @@ On appropriate columns you can also configure **Filter Settings** and/or **Aggre
 
 #### Filters {#filters}
 
-Filter Settings allow you to specify the criteria for entries to be displayed. The operators available are:
+Filter Settings let you specify the criteria for entries to be displayed. The operators available are:
 
 * `contains`
 * `equals`
@@ -404,7 +404,7 @@ This report provides information about user generated content; be that comments,
 * Type
 * User Identifier
 
-Allow you to:
+Lets you:
 
 * See which pages are receiving the most comments.
 * Get an overview of all comments that specific site visitors are leaving, maybe the issues are related.
@@ -432,7 +432,7 @@ This report gives information about all users that have registered an account an
 * NTLM Hashcode
 * User ID
 
-Allow you to:
+Lets you:
 
 * See the demographic spread of your users.
 * Report on customized fields you have added to the profiles.
@@ -528,7 +528,7 @@ As no report configuration is allowed in the publish environment, the **Edit** a
 
 >[!CAUTION]
 >
->Access to these reports may be a security issue; therefore we recommend you configure the Dispatcher so that `/etc/reports` is not available to external visitors. See the [Security Checklist](security-checklist.md) for more details.
+>Access to these reports may be a security issue; therefore Adobe recommends that you configure the Dispatcher so that `/etc/reports` is not available to external visitors. See the [Security Checklist](security-checklist.md) for more details.
 
 ## Permissions Needed for Running Reports {#permissions-needed-for-running-reports}
 

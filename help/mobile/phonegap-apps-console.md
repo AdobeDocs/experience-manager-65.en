@@ -249,19 +249,19 @@ The Products page is not available to application users. The Gear page provides 
 
 ### The Reviews Page - Geometrixx Mobile App {#the-reviews-page-geometrixx-mobile-app}
 
-Contains a back button. The paragraph system allows you to add components.
+Contains a back button. The paragraph system lets you add components.
 
 When using the application, the Reviews page is available from the carousel on the English page.
 
 ### The News Page - Geometrixx Mobile App {#the-news-page-geometrixx-mobile-app}
 
-Contains a back button. The paragraph system allows you to add components.
+Contains a back button. The paragraph system lets you add components.
 
 When using the application, the News page is available from the carousel on the English page.
 
 ### The About Us Page - Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
 
-The About us page contains several Two Column Row components. Each column contains either an Image or a Text component. The components are editable, and the paragraph system allows you to add components.
+The About us page contains several Two Column Row components. Each column contains either an Image or a Text component. The components are editable, and the paragraph system lets you add components.
 
 When using the application, the About Us page is available from the carousel on the English page.
 

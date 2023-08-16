@@ -40,7 +40,7 @@ The assets in the conditions that are rendered based on the applied rules and th
 1. Select **[!UICONTROL Create]** > **[!UICONTROL Condition]**.
 1. Specify the following information:
 
-    * **[!UICONTROL Title]**: (Optional) Enter the title for the condition. Titles need not be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and properties.
+    * **[!UICONTROL Title]**: (Optional) Enter the title for the condition. Titles do not need to be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and properties.
     * **[!UICONTROL Name]**: The unique name for the condition, within a folder. No two document fragments (text, condition, or list) in any state can exist with the same name within a folder. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
 
     * **[!UICONTROL Description]**: Type a description of the document fragment.
@@ -147,7 +147,7 @@ Using rule editor in a condition, you can create rules to display or hide assets
 
    Rule to show an asset when policy type is standard
 
-    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to create [variables](#variables) to construct rules. Tap Resize again to go back to the regular Create Rule dialog.
+    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog lets you create [variables](#variables) to construct rules. Tap Resize again to go back to the regular Create Rule dialog.
 
     * You can also create multiple conditions in a rule.
 
@@ -157,7 +157,7 @@ Using rule editor in a condition, you can create rules to display or hide assets
 
 ## Creating and using variables in a condition {#variables}
 
-While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog. The expanded, full-window dialog allows you to:
+While creating or editing a rule in a condition, you can tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule\Edit Rule dialog. The expanded, full-window dialog lets you:
 
 * Create and use variables in the rule
 * Drag-and-drop form data model's properties and variables in the rule

@@ -392,7 +392,7 @@ To illustrate some of the possibilities for creating a workflow, the following e
 
 ### Example: Defining a Rule for an OR Split using ECMA script {#defineruleecmascript}
 
-**OR Split** steps allow you to introduce conditional processing paths into your workflow.
+**OR Split** steps let you introduce conditional processing paths into your workflow.
 
 To define an OR rule, proceed as follows:
 

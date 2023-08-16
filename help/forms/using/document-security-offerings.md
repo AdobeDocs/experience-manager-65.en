@@ -56,7 +56,7 @@ You can use Document Security SDK, Adobe Acrobat, Document Security Extension fo
   
   The Document Security extension is available as a Microsoft Office plug-in. You can contact [AEM support team](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) to procure the extension. Later on, you can visit [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html) help to learn about installing, configuring, and using the extension.
 
-* **Portable Protection Library:** Portable Protection Library (PPL) protects a document locally, without sending the document to AEM Forms server. Only security credentials and policy details travel over the network. PPL also allows you to limit policy retrieval access to only logged-in users. You can fetch policies with the context of the user logged in AEM user.  
+* **Portable Protection Library:** Portable Protection Library (PPL) protects a document locally, without sending the document to AEM Forms server. Only security credentials and policy details travel over the network. PPL also lets you limit policy retrieval access to only logged-in users. You can fetch policies with the context of the user logged in AEM user.  
   
   Along with above, the Prortable Protection Library has all the features of Document Security SDK. You can use Document Security SDK to access document server functionality, open policy-protected documents, and develop custom extensions, plug-ins or applications. Also note, portable protection library (PPL) cannot unprotect the documents protected using AEM Forms document security client SDK (CSDK) and vice-versa.  
   

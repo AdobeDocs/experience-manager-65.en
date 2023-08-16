@@ -296,7 +296,7 @@ To do this you can use the sling:include("/&lt;path&gt;/&lt;resource&gt;") comma
 
 ## OSGI {#osgi}
 
-OSGi defines an architecture for developing and deploying modular applications and libraries (it is also known as the Dynamic Module System for Java). OSGi containers allow you to break your application into individual modules (are jar files with additional meta information and called bundles in OSGi terminology) and manage the cross-dependencies between them with:
+OSGi defines an architecture for developing and deploying modular applications and libraries (it is also known as the Dynamic Module System for Java). OSGi containers let you break your application into individual modules (are jar files with additional meta information and called bundles in OSGi terminology) and manage the cross-dependencies between them with:
 
 * services implemented within the container
 * a contract between the container and your application
@@ -311,7 +311,7 @@ An OSGi framework then offers you dynamic loading/unloading, configuration and c
 >
 >In particular, their Basic Education page holds a collection of presentations and tutorials.
 
-This architecture allows you to extend Sling with application specific modules. Sling, and therefore CQ5, uses the [Apache Felix](https://felix.apache.org/documentation/index.html) implementation of OSGI (Open Services Gateway initiative) and is based on the OSGi Service Platform Release 4 Version 4.2 Specifications. They are both collections of OSGi bundles running within an OSGi framework.
+This architecture lets you extend Sling with application specific modules. Sling, and therefore CQ5, uses the [Apache Felix](https://felix.apache.org/documentation/index.html) implementation of OSGI (Open Services Gateway initiative) and is based on the OSGi Service Platform Release 4 Version 4.2 Specifications. They are both collections of OSGi bundles running within an OSGi framework.
 
 This enables you to perform the following actions on any of the packages within your installation:
 

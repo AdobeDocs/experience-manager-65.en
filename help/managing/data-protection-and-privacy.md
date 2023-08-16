@@ -22,7 +22,7 @@ exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 >
 >For more information about Adobe's response to privacy issues, and what it means for you as an Adobe customer, see [Adobe's Privacy Center](https://www.adobe.com/privacy.html). 
 
-Adobe is providing documentation and procedures (with APIs when available), for the customer privacy administrator or AEM administrator to handle data protection and data privacy requests. It can help you be compliant with these regulations. The procedures documented let customers run the regulatory requests manually or by calling into APIs, where available, from an external portal or service. 
+Adobe is providing documentation and procedures (with APIs when available), for the customer privacy administrator or AEM administrator to handle data protection and data privacy requests. It can help you become compliant with these regulations. The procedures documented let customers run the regulatory requests manually or by calling into APIs, where available, from an external portal or service. 
 
 >[!CAUTION]
 >

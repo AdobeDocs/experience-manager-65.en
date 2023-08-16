@@ -41,7 +41,7 @@ As with most systems you will need to login. As an author you will be provided w
 * Password
 * Link to access the login screen
 
-Your account will have been configured with any privileges that you need. If you have any issues, we recommend that you contact your in-house project support team.
+Your account will have been configured with any privileges that you need. If you have any issues, Adobe recommends that you contact your in-house project support team.
 
 ### Navigation {#navigation}
 
@@ -162,7 +162,7 @@ As examples:
   
   ![Content Fragment Editor - My Fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* A fragment that allows you to write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
+* A fragment that lets you write a long section of text. Here there are additional options for managing, and formatting the text. You can even open the individual text fields in a full screen editor (using the small screen-like icon at the right)
   
   ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 

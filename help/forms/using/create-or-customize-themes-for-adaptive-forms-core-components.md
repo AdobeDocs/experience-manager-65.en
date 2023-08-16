@@ -14,8 +14,9 @@ role: Admin, Developer
 
 | Version | Article link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)|
 | AEM 6.5  |    This Article                  |
-| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)| 
+ 
 
 **Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/themes.md).
 
@@ -45,7 +46,7 @@ A theme is a package that encompasses the CSS file, JavaScript files, and resour
 
 ## Create a theme 
 
-AEM Forms 6.5 provides, the below listed themes for Core Components based Adaptive Forms.  
+AEM Forms 6.5 provides the below listed themes for Core Components based Adaptive Forms.
 
 * [Canvas theme](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND theme](https://github.com/adobe/aem-forms-theme-wknd)
@@ -55,7 +56,7 @@ You can [customize any of these themes to create a theme](#customize-a-theme-cor
 
 ## Customize a theme {#customize-a-theme-core-components-based-adaptive-forms}
 
-Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you make changes to its design elements, layout, colors, typography, and sometimes the underlying code. This allows you to create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
+Customizing a theme refers to the process of modifying and personalizing the appearance of a theme. When you customize a theme, you make changes to its design elements, layout, colors, typography, and sometimes the underlying code. This lets you create a unique and tailored look for your website or application while maintaining the basic structure and functionality provided by the theme.
 
 >[!NOTE]
 >
@@ -68,7 +69,7 @@ Customizing a theme refers to the process of modifying and personalizing the app
 
 * Install the latest release of [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is a build automation tool commonly used for Java&trade; projects. Installing the latest release ensures you have the necessary dependencies for theme customization.
 
-* Learn how to create a [client library in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM provides client libraries, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client.
+* Learn how to create a [client library in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM provides client libraries, which let you store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client.
 
 * Install a plain text editor. For example, Microsoft&reg; Visual Studio Code. Using a plain text editor such as Microsoft&reg; Visual Studio Code provides a user-friendly environment for editing and modifying theme files.
 
@@ -336,4 +337,5 @@ To remove unused or unwanted themes:
 * [Create or customize themes for Core Components based Adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Create a template for Core Components based Adaptive Forms](template-editor.md)
 * [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 

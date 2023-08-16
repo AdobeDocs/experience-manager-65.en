@@ -11,14 +11,14 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 ---
 # Responsive Layout{#responsive-layout}
 
-AEM allows you to have a responsive layout for your pages by using the **Layout Container** component.
+AEM lets you have a responsive layout for your pages by using the **Layout Container** component.
 
-This provides a paragraph system that allows you to position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), which allows you to create and edit your responsive layout dependent on device.
+This provides a paragraph system that lets you position components within a responsive grid. This grid can rearrange the layout according to the device/window size and format. The component is used in conjunction with the [**Layout** mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), which lets you create and edit your responsive layout dependent on device.
 
 The layout container:
 
 * Provides horizontal snap to grid, together with the ability to place components into the grid side-by-side and define when they should collapse/reflow.
-* Uses pre-defined breakpoints (for example, for phone, tablet, etc.) to allow you to define the required behavior of content for related devices/orientation.
+* Uses pre-defined breakpoints (for example, for phone, tablet, etc.) to let you define the required behavior of content for related devices/orientation.
 
     * For example, you can customize the component size or whether the component can be seen on specific devices.
 
@@ -34,14 +34,14 @@ AEM realizes responsive layout for your pages using a combination of mechanisms:
 
 * [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) component
 
-  This component is available in the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser) and provides a grid-paragraph system to allow you to add and position components within a responsive grid. It can also be set as the default paragraph system on your page.
+  This component is available in the [component browser](/help/sites-authoring/author-environment-tools.md#components-browser) and provides a grid-paragraph system to let you add and position components within a responsive grid. It can also be set as the default paragraph system on your page.
 
 * [**Layout Mode**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
   Once the layout container is positioned on your page you can use the **Layout** mode to position content within the responsive grid.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
-  This allows you to create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content will be rendered using the emulator.
+  This lets you create and edit responsive websites that rearrange the layout according to device/window size by resizing components interactively. The user can then see how the content will be rendered using the emulator.
 
 With these responsive grid mechanisms you can:
 
@@ -65,7 +65,7 @@ Depending on your project, the Layout Container might be used as the default par
 
 When you are creating your website content you want to ensure that your content is displayed appropriate to the device being used to view it.
 
-AEM allows you to define layouts dependent on the width of the device:
+AEM lets you define layouts dependent on the width of the device:
 
 * The emulator enables you to emulate these layouts on a range of devices. In addition to the device type, the orientation, selected by the **Rotate device** option, can impact the breakpoint selected as the width changes.
 * Breakpoints are the points which separate the layout definitions.
@@ -103,7 +103,7 @@ For example, when you select the device **iPhone 6 Plus** (defined with a width 
 
    The emulator toolbar displays additional layout options:
 
-    * **Rotate device** - Allows you to rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
+    * **Rotate device** - Lets you rotate a device from vertical (portrait) orientation to horizontal (landscape) orientation and vice-versa.
 
       ![Rotate device](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotate device](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -210,11 +210,11 @@ When in layout mode you can perform various actions on a grid:
   >
   >Proportions and ratios will be maintained when components such as **Images** are resized.
 
-* Click/tap on a content component, the toolbar allows you to:
+* Click/tap on a content component, the toolbar lets you:
 
     * **Parent**
 
-      Allows you to select the entire layout container component for taking action on the whole.
+      Lets you select the entire layout container component for taking action on the whole.
 
     * **Float to new line**
 

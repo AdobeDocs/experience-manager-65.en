@@ -29,7 +29,7 @@ Learn about support for Content Fragments in the Assets HTTP API, an important p
 
 The [Assets REST API](/help/assets/mac-api-assets.md) allows developers for Adobe Experience Manager to access content (stored in AEM) directly over the HTTP API, via CRUD operations (Create, Read, Update, Delete).
 
-The API allows you to operate Adobe Experience Manager as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses.
+The API lets you operate Adobe Experience Manager as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses.
 
 For example, Single Page Applications (SPA), framework-based or custom, require content provided over the HTTP API, often in JSON format.
 

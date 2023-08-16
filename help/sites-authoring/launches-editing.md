@@ -37,7 +37,7 @@ A livecopy is used to synchronize content *from* the source branch *to* your lau
 
 You can make changes in the same way as you can edit a standard live copy; for example:
 
-* Clicking on a closed padlock will break this synchronization and allow you to make new updates to the content in your launch. Once unlocked (open padlock) your changes will not be overwritten by any changes made at the same location within the source branch.
+* Clicking on a closed padlock will break this synchronization and let you make new updates to the content in your launch. Once unlocked (open padlock) your changes will not be overwritten by any changes made at the same location within the source branch.
 * **Suspend** (and **Resume**) inheritance for a specific page.
 
 See [Changing Live Copy Content](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) for further information.

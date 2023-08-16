@@ -71,7 +71,7 @@ When creating a new editable template you:
         * If you are creating a template in a custom folder outside of the `We.Retail` sample content, you can choose Foundation Components or use [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
 
     * If you want page authors to be able to add and remove components, add a paragraph system to the template.
-    * Components can be unlocked and locked again to allow you to define initial content.
+    * Components can be unlocked and locked again to let you define initial content.
 
    For details on how a template author defines the structure, see [Creating Page Templates](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
@@ -372,7 +372,7 @@ When creating a template, specify a template type:
     * The template type is copied to create the template.
     * Once the copy has occurred, the only connection between the template and the template type is a static reference for information purposes.
 
-* Template types allow you to define:
+* Template types let you define:
 
     * The resource type of the page component.
     * The policy of the root node, which defines the components allowed in the template editor.
@@ -563,7 +563,7 @@ The content (or design) policies define the design properties of a component, su
 
 ### Page Policies {#page-policies}
 
-Page policies allow you to define the [content policy](#content-policies) for the page (main parsys), in either the template or resultant pages.
+Page policies let you define the [content policy](#content-policies) for the page (main parsys), in either the template or resultant pages.
 
 ### Enabling and Allowing a Template for Use {#enabling-and-allowing-a-template-for-use}
 

@@ -120,14 +120,14 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **Create Site** (**Sites**)
 
-    * MSM helps you to manage multiple websites that share common content; for example, websites are often provided for international audiences such that most of the content is common across all countries, with a subset of the content specfic to each individual country. MSM allows you to [create live copies that automatically update one or more sites based on your source site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). This also helps you to enforce a common base structure, use the common content across the multiple sites, maintain a common look and feel and focus efforts on managing the content that actually differs between the sites.
+    * MSM helps you to manage multiple websites that share common content; for example, websites are often provided for international audiences such that most of the content is common across all countries, with a subset of the content specfic to each individual country. MSM lets you [create live copies that automatically update one or more sites based on your source site](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). This also helps you to enforce a common base structure, use the common content across the multiple sites, maintain a common look and feel and focus efforts on managing the content that actually differs between the sites.
     * Requires a predefined blueprint configuration to specify the source.
     * Creates a live copy of the (predefined) source.
     * Provides the user with the **Rollout** button.
 
 * **Create Live Copy** (**Sites**)
 
-    * MSM allows you to [create an ad-hoc (one-off) live copy of an individual page or sub-branch of a website](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); for example, duplicating a sub-branch to provide information about a new/updated version of a product.
+    * MSM lets you [create an ad-hoc (one-off) live copy of an individual page or sub-branch of a website](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); for example, duplicating a sub-branch to provide information about a new/updated version of a product.
     * Creates an ad-hoc live copy (no blueprint configuration required).
     * Can be used to (immediately) create a live copy of any page/branch.
     * Requires **Synchronize** (does not provide the **Rollout** button).
@@ -142,11 +142,11 @@ MSM is directly accessible in the UI using various options from the appropriate 
 
 * **Live Copy Overview** (**Sites**)
 
-    * This console allows you to [view and manage your blueprint and its live copies](/help/sites-administering/msm-livecopy-overview.md).
+    * This console lets you [view and manage your blueprint and its live copies](/help/sites-administering/msm-livecopy-overview.md).
 
 * **Blueprints** (**Tools** - **Sites**)
 
-    * This console allows you to [create and manage your blueprint configurations](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+    * This console lets you [create and manage your blueprint configurations](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -332,7 +332,7 @@ A live copy is known as a Stacked Live Copy when it is created as the child of a
 
 Any page or branch of pages can be used as the source of a live copy.
 
-However, MSM also allows you to define a blueprint configuration that specifies a source path. The benefits of using a blueprint configuration are that they:
+However, MSM also lets you define a blueprint configuration that specifies a source path. The benefits of using a blueprint configuration are that they:
 
 * Allow the author to use the **Rollout** option on a blueprint - to (explicitly) push modifications to live copies that inherit from this blueprint.
 * Allow the author to use **Create Site**; this allows the user to easily select languages and configure the structure of the live copy.

@@ -72,7 +72,7 @@ It is recommended to:
 
 * [configure the allowed templates on these folders](#configure-allowed-templates-folder).
 
-Creating folders allows you to:
+Creating folders lets you:
 
 * create a meaningful structure for your Experience Fragments; for example, according to classification
 
@@ -222,7 +222,7 @@ You can create variations of your Experience Fragment, depending on your needs:
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Create** allows you to create:
+1. **Create** lets you create:
 
     * **Variation**
     * **Variation as [live-copy](/help/sites-administering/msm.md#live-copies)**.

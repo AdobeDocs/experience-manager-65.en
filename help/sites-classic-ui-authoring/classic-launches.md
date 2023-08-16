@@ -13,7 +13,7 @@ exl-id: e64a66cb-d56a-4504-8883-609143d0daf8
 
 Launches enable you to efficiently develop content for a future release.
 
-A launch is created to allow you to make changes ready for future publication (while maintaining your current pages). After editing and updating your launch pages you promote them back to the source, then activate the source pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
+A launch is created to let you make changes ready for future publication (while maintaining your current pages). After editing and updating your launch pages you promote them back to the source, then activate the source pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
 >[!NOTE]
 >

@@ -71,7 +71,7 @@ The properties are distributed across several tabs:
 
 * **Vanity URL**
 
-  Allows you to enter a vanity URL for this page. That allows you to have a shorter and more expressive URL.
+  Lets you enter a vanity URL for this page. That lets you have a shorter and more expressive URL.
 
   For example, if the Vanity URL is set to w `elcome`to the page identified by the path / `v1.0/startpage`for the website h `ttp://example.com,` then h `ttp://example.com/welcome`would be the vanity URL of h `ttp://example.com/content/v1.0/startpage`
 

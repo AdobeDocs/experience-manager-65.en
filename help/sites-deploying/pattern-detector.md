@@ -17,7 +17,7 @@ exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 
 ## Overview {#overview}
 
-This feature allows you to check existing AEM instances for their upgradability by detecting patterns in use that:
+This feature lets you check existing AEM instances for their upgradability by detecting patterns in use that:
 
 1. Violate certain rules and are done in areas that will be affected or overwritten by the upgrade
 1. Use an AEM 6.x feature or an API that is not backwards compatible on AEM 6.5 and can potentially break after upgrade.

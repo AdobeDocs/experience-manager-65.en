@@ -86,7 +86,7 @@ The **Email Tools** component for ExactTarget can add more email functionality t
   </tr>
   <tr>
    <td>Track Email Opens</td>
-   <td>A hidden component that allows you to use ExactTarget tracking feature.<br /> </td>
+   <td>A hidden component that lets you use ExactTarget tracking feature.<br /> </td>
   </tr>
  </tbody>
 </table>

@@ -55,7 +55,7 @@ There is a **Translation Configuration** console available for configuring trans
 
 In the **Translation Configuration** UI, there are a number of options available for your translation rules. Here we highlight the most necessary and typical steps required for a basic headless localization configuration.
 
-1. Tap or click **Add Context**, which allows you to add a path. This is the path of the content that is be affected by the rule.
+1. Tap or click **Add Context**, which lets you add a path. This is the path of the content that is be affected by the rule.
 ![Add context](assets/add-translation-context.png)
 1. Use the path browser to select the required path and tap or click the **Confirm** button to save. Remember, Content Fragments, which hold headless content, are generally located under `/content/dam/<your-project>`.
 ![Select the path](assets/select-context.png)

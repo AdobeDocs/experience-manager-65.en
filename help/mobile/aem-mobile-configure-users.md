@@ -39,7 +39,7 @@ Members of the app-author group are responsible for authoring AEM mobile applica
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. The following allows you to add to AEM's Content Authors Group:
+1. The following lets you add to AEM's Content Authors Group:
 
    (Read) on
 

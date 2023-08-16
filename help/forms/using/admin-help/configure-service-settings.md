@@ -63,7 +63,7 @@ The following settings are available for the barcoded forms service.
 
 ## Central Migration Bridge service (Deprecated) settings {#central-migration-bridge-service-settings}
 
-The Central Migration Bridge service ( `CentralMigrationBridge`) invokes a subset of Adobe Central Pro Output Server (Central) functionality, which includes the JFMERGE, JFTRANS, and XMLIMPORT commands. Central Migration Bridge service operations allow you to reuse the following Central assets in AEM forms:
+The Central Migration Bridge service ( `CentralMigrationBridge`) invokes a subset of Adobe Central Pro Output Server (Central) functionality, which includes the JFMERGE, JFTRANS, and XMLIMPORT commands. Central Migration Bridge service operations let you reuse the following Central assets in AEM forms:
 
 * template design (&ast;.ifd) 
 * output templates (&ast;.mdf) 
@@ -283,9 +283,9 @@ Retry PDF conversion if the time consumed for the first conversion attempt was l
 
 When you create a Guide, some resources, such as the Guide definition, are embedded in the Guide. Resources can also exist as references to application assets stored locally or on the AEM forms server. The Guide does not contain data, and the values for the submit location and inputs are not suitable for all external environments.
 
-In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) The Guide Utilities service ( `GuidesUtility`) allows you to create a customized process for rendering a Guide, if necessary.
+In most cases, the default Guides render services is sufficient to prepare a Guide for use in Workspace or other external environments. (In the Services view, in Workbench, the default service is Guides (system)/Processes/Render Guide - 1.0.) The Guide Utilities service ( `GuidesUtility`) lets you create a customized process for rendering a Guide, if necessary.
 
-The Guide Utilities operations allow you to add the following Guide rendering tasks to a process:
+The Guide Utilities operations let you add the following Guide rendering tasks to a process:
 
 * Determine whether data is available to populate the Guide with 
 * Embed the Guide data or convert it to a link 
@@ -524,7 +524,7 @@ The Repository service ( `RepositoryService`) provides resource storage and mana
 
 You can use the default repository included with AEM forms, or use a third-party repository (EMC Documentum Content Server, IBM FileNet Content Manager, or IBM Content Manager).
 
-Repository Provider service is a service delegate that acts as the interface to a provider service. This allows you to connect to a common API and not have to be aware of which provider service is implementing the storage capabilities. Repository Provider service provides database storage for the Repository service resources.
+Repository Provider service is a service delegate that acts as the interface to a provider service. This lets you connect to a common API and not have to be aware of which provider service is implementing the storage capabilities. Repository Provider service provides database storage for the Repository service resources.
 
 The following setting is available for the Repository service.
 
@@ -781,7 +781,7 @@ The following setting is available for the XSLT Transformation service.
 
 ## Modifying security settings for a service {#modifying-security-settings-for-a-service}
 
-forms server enables you to configure security settings for each service, which allows you to configure fine-grained access control on a service-by-service level.
+forms server enables you to configure security settings for each service, which lets you configure fine-grained access control on a service-by-service level.
 
 Default security profiles are installed, which can then be configured to meet your system needs. Each security profile has an associated domain and is created at either the user level or the group level.
 

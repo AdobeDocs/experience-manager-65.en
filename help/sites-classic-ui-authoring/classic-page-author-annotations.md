@@ -1,6 +1,6 @@
 ---
 title: Annotations when editing a page
-description: Adding content to the pages of your website is often subject to discussions before actually being published. To aid this, many components directly related to content allow you to add an annotation.
+description: Adding content to the pages of your website is often subject to discussions before actually being published. To aid this, many components directly related to content let you add an annotation.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -48,7 +48,7 @@ For tracking purposes, the footer line indicates the user who created the annota
 
 Confirmation is requested when you select to delete the annotation (deleting an annotation also deletes any sketches attached to that annotation).
 
-The three icons at top left allow you to minimize the annotation (together with any related sketches), change the color and add sketches.
+The three icons at top left let you minimize the annotation (together with any related sketches), change the color and add sketches.
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ The three icons at top left allow you to minimize the annotation (together with 
 >* existing sketches, created in another browser, will not be shown.
 >
 
-Sketches are a feature of annotations that allow you to create simple line graphics anywhere on the browser window (visible portion):
+Sketches are a feature of annotations that let you create simple line graphics anywhere on the browser window (visible portion):
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 

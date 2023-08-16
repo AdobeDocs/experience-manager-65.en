@@ -14,7 +14,7 @@ discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 
 Process Reporting is the reporting module of the AEM Forms on JEE.
 
-Process Reporting allows you to run reports on AEM Forms processes and tasks.
+Process Reporting lets you run reports on AEM Forms processes and tasks.
 
 Process Reporting uses the embedded Process Reporting repository to publish Forms data. It then uses that data to run reports.
 

@@ -346,7 +346,7 @@ To create the component, you use the standard textimage component as a basis and
 
 #### Checking the New Component {#checking-the-new-component}
 
-After the component has been developed, you can add it to the paragraph system, which enables authors to select and use the component when editing a page. These steps allow you to test the component.
+After the component has been developed, you can add it to the paragraph system, which enables authors to select and use the component when editing a page. These steps let you test the component.
 
 1. Open a page in Geometrixx such as English / Company.
 1. Switch to design mode by clicking Design in Sidekick.
