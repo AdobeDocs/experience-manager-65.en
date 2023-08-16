@@ -254,7 +254,7 @@ Experience Manager contains indexes that are used for querying. Create the follo
 
 ## Configure visual or similarity search {#configure-visual-similarity-search}
 
-Visual Search capability allows you to search for visually similar assets in the AEM Assets repository, using the Adobe Asset Link panel. The functionality is available in 6.5.0 or later versions and only the indexed assets are searched. For more information, see [how to configure visual search](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
+Visual Search capability lets you search for visually similar assets in the AEM Assets repository, using the Adobe Asset Link panel. The functionality is available in 6.5.0 or later versions and only the indexed assets are searched. For more information, see [how to configure visual search](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html#configvisualsearch).
 
 ## Generate For Placement Only renditions for Adobe InDesign {#fpo-renditions}
 

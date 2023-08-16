@@ -64,9 +64,9 @@ The Channel browser helps you switch between the print and web channels of the I
 | **Component** |**Print Channel** |**Web Channel** |**Functionality** |
 |---|---|---|---|
 | Chart |✓ |✓ |Adds a chart that you can use in an Interactive Communication for visual representation of two-dimensional data retrieved from an form data model collection item. |
-| Document Fragment |✓ |✓ |Allows you to add a reusable component, text, list, or condition, to an Interactive Communication. The reusable component you add to an Interactive Communication could be either form data model-based or without a form data model. |
-| Image |✓ |✓ |Allows you to insert an image. |
-| Panel |-  |✓ |The Panel component is a placeholder for grouping other components together and controls how a group of components are laid out in an Interactive Communication. A panel component also allows you to make a group of components repeatable for the end user, such as in multiple entries required for filling in educational credentials. It is also a good practice to use a panel each for a tab of an Interactive Communication with multiple tabs. |
+| Document Fragment |✓ |✓ |Lets you add a reusable component, text, list, or condition, to an Interactive Communication. The reusable component you add to an Interactive Communication could be either form data model-based or without a form data model. |
+| Image |✓ |✓ |Lets you insert an image. |
+| Panel |-  |✓ |The Panel component is a placeholder for grouping other components together and controls how a group of components are laid out in an Interactive Communication. A panel component also lets you make a group of components repeatable for the end user, such as in multiple entries required for filling in educational credentials. It is also a good practice to use a panel each for a tab of an Interactive Communication with multiple tabs. |
 | Table  |&#42; |✓ |Adds a table that lets you organize data in rows and columns.  |
 | Target Area |&#42;&#42; |✓ |Inserts a target area in a web channel to organize the web-channel-specific components. |
 | Text  |- |✓ |Adds text to the web channel of an Interactive Communication. Text can make use of form data model objects to make the content dynamic. |

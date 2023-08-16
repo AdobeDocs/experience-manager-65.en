@@ -1,8 +1,8 @@
 ---
 title: User Management
 seo-title: User Management
-description: User Management allows you to enable SSO between AEM forms modules and Netegrity SiteMinder-protected applications by using SAML. This document provides more information about User Management.
-seo-description: User Management allows you to enable SSO between AEM forms modules and Netegrity SiteMinder-protected applications by using SAML. This document provides more information about User Management.
+description: User Management lets you enable SSO between AEM forms modules and Netegrity SiteMinder-protected applications by using SAML. This document provides more information about User Management.
+seo-description: User Management lets you enable SSO between AEM forms modules and Netegrity SiteMinder-protected applications by using SAML. This document provides more information about User Management.
 uuid: f0c8331a-d995-483d-97b7-259df53b1a1a
 contentOwner: admin
 content-type: reference
@@ -13,7 +13,7 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 ---
 # User Management {#user-management}
 
-User Management allows you to enable single sign-on (SSO) between AEM forms modules and Netegrity SiteMinder-protected applications by using Security Assertion Markup Language (SAML). When SSO is implemented, the AEM forms user login pages are not required and are not displayed if the user is already authenticated through the company portal.
+User Management lets you enable single sign-on (SSO) between AEM forms modules and Netegrity SiteMinder-protected applications by using Security Assertion Markup Language (SAML). When SSO is implemented, the AEM forms user login pages are not required and are not displayed if the user is already authenticated through the company portal.
 
 For information about improving the database and directory sync performance for DB2, see [IBM DB2 database: Running commands for regular maintenance](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 

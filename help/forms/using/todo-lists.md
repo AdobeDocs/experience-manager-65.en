@@ -100,7 +100,7 @@ When you open and claim a task from a group or shared list, the task is moved fr
 
 After opening a task, the tabs that are displayed in the main pane and the tools that are available to you depend on the task. The tabs that you may see are described below:
 
-* **Task Summary**: When a task opens, the Task Summary pane allows you to show information about the task, if it exists, using a URL specified in the process at Assign Task step. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end-user of AEM Forms workspace. This tab is not available, if the Task Summary URL does not exist.
+* **Task Summary**: When a task opens, the Task Summary pane lets you show information about the task, if it exists, using a URL specified in the process at Assign Task step. Using Task Summary Pane additional and relevant information for a task can be displayed to add more value for the end-user of AEM Forms workspace. This tab is not available, if the Task Summary URL does not exist.
 
 * **Details**: Provides some information about the current task and process that it belongs to.
 

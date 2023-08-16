@@ -17,7 +17,7 @@ exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
 
 ## Overview {#overview}
 
-Correspondence Management allows you to rebrand its solution template for better brand value and to adhere to your organization's branding standards. Rebranding the user interface includes changing the organization logo, which is displayed at the upper-left corner of Create Correspondence UI.
+Correspondence Management lets you rebrand its solution template for better brand value and to adhere to your organization's branding standards. Rebranding the user interface includes changing the organization logo, which is displayed at the upper-left corner of Create Correspondence UI.
 
 You can change the logo in the Create Correspondence UI with your organization's logo.
 

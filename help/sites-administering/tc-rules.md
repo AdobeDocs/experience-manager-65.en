@@ -157,7 +157,7 @@ To access it:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-From here, you can **Add Context**. This allows you to add a path.
+From here, you can **Add Context**. This lets you add a path.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 

@@ -199,7 +199,7 @@ The workflow application you created is available as an application in Inbox. Us
 
 ### Submitting an application from AEM Forms App {#afa}
 
-The AEM Forms app syncs with an AEM Forms server and allows you to make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [AEM Forms app](/help/forms/using/aem-forms-app.md) and related articles.
+The AEM Forms app syncs with an AEM Forms server and lets you make changes to the form data, tasks, workflow applications, and saved information (drafts/templates) in your account. For more information, see [AEM Forms app](/help/forms/using/aem-forms-app.md) and related articles.
 
 ### Submitting an adaptive form {#af}
 

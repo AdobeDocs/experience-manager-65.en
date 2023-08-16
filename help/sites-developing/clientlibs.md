@@ -1,14 +1,10 @@
 ---
 title: Using Client-Side Libraries
-seo-title: Using Client-Side Libraries
-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
+description: AEM provides Client-side Library Folders, which let you store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 ---
@@ -16,7 +12,7 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 
 Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. Organizing and optimizing the serving of this code can be a complicated issue.
 
-To help deal with this issue, AEM provides **Client-side Library Folders**, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client. The client-side library system then takes care of producing the correct links in your final webpage to load the correct code.
+To help deal with this issue, AEM provides **Client-side Library Folders**, which let you store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client. The client-side library system then takes care of producing the correct links in your final webpage to load the correct code.
 
 ## How Client-Side Libraries Work in AEM {#how-client-side-libraries-work-in-aem}
 

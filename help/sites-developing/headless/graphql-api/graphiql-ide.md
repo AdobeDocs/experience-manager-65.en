@@ -16,7 +16,7 @@ An implementation of the standard [GraphiQL](https://graphql.org/learn/serving-o
 >[!NOTE]
 >You must have [configured your endpoints](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) in the [configuration browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) before using the GraphiQL IDE.
 
-The **GraphiQL** tool allows you to test and debug your GraphQL queries by enabling you to:
+The **GraphiQL** tool lets you test and debug your GraphQL queries by enabling you to:
 
 * select the **Endpoint** appropriate to the Sites configuration that you want to use for your queries
 * directly input new queries 
@@ -83,7 +83,7 @@ In either case, the query showing in the editor panel is the query that will be 
 
 <!-- more details needed here? -->
 
-The GraphiQL IDE also allows you to manage your [Query Variables](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
+The GraphiQL IDE also lets you manage your [Query Variables](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphql-variables).
 
 For example:
 
@@ -134,7 +134,7 @@ Once you have selected your [persisted query](/help/sites-developing/headless/gr
 
 ## Copy URL to directly access the query {#copy-url}
 
-The **Copy URL** option allows you to simulate a query, by copying the URL used to directly access the persisted query and see the results. This can then be used for testing; for example, by accessing in a browser:
+The **Copy URL** option lets you simulate a query, by copying the URL used to directly access the persisted query and see the results. This can then be used for testing; for example, by accessing in a browser:
 
 <!--
   >[!NOTE]

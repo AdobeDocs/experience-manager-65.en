@@ -88,7 +88,7 @@ A range of consoles are available for administering your workflows. Use the [glo
 
 ## Fixing Workflow Instance Failures {#fixing-workflow-instance-failures}
 
-When a workflow fails, AEM provides the **Failures** console to allow you to investigate and take appropriate action once the original cause has been handled:
+When a workflow fails, AEM provides the **Failures** console to let you investigate and take appropriate action once the original cause has been handled:
 
 * **Failure Details**
   Opens a window to show the **Failure Message**, **Step**, and **Failure Stack**.

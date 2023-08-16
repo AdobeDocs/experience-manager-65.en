@@ -103,7 +103,7 @@ The content area contains information for posted UGC:
 
 >[!NOTE]
 > 
->The content area features an *infinite scroll*, which means that it will allow you to continue scrolling until you have reached the end of the content. The toolbar remains in a fixed, visible position above the content area even while scrolling.
+>The content area features an *infinite scroll*, which means that it will let you continue scrolling until you have reached the end of the content. The toolbar remains in a fixed, visible position above the content area even while scrolling.
 
 ### Filter Rail {#ootbfilters}
 

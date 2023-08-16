@@ -145,7 +145,7 @@ The **Edit** dialog includes several tabs that provide configuration options des
   <tr>
    <td><span class="uicontrol"><strong>Style</strong></code></td>
    <td>Style Type</td>
-   <td>Allows you to specify <strong>No Style, Default Style</strong>, or <strong>Custom Style </strong>for listing the forms.</td>
+   <td>Lets you specify <strong>No Style, Default Style</strong>, or <strong>Custom Style </strong>for listing the forms.</td>
   </tr>
   <tr>
    <td> </td>
@@ -245,7 +245,7 @@ Search & Lister component
 
 You can customize a forms portal page to provide a distinct appearance to the page. You can also add metadata to improve search experience, change layout of the page, and add custom CSS styles. For more information, see [Customizing templates for Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md).
 
-AEM Forms UI allows you to add custom metadata to forms. Custom metadata is useful in providing a listing and searching forms experience to the end users. For more information about Custom metadata, see [Customizing templates for Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md).
+AEM Forms UI lets you add custom metadata to forms. Custom metadata is useful in providing a listing and searching forms experience to the end users. For more information about Custom metadata, see [Customizing templates for Forms Portal Components](../../forms/using/customizing-templates-forms-portal-components.md).
 
 Out of the box, forms portal provides rendering actions. You can customize forms portal to add more actions. For detailed information, see [Adding custom action on form lister items.](../../forms/using/add-custom-action-form-lister.md)
 

@@ -28,7 +28,7 @@ In addition, you can [integrate AEM with Creative Cloud](/help/assets/aem-cc-int
 
 You can use Adobe Analytics to analyze data from your sites.
 
-Integrating with Adobe Analytics allows you to do the following:
+Integrating with Adobe Analytics lets you do the following:
 
 * Enable Analytics user tracking.
 * Map your run modes (for example author, publish) to different report suites.

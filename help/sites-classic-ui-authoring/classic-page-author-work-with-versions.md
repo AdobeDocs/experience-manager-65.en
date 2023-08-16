@@ -96,7 +96,7 @@ To compare the current version of the page with a previous version:
 
 Timewarp is a feature designed to simulate the ***published*** state of a page at specific times in the past.
 
-The purpose is to allow you to track the published website at the selected point in time. This uses the page activations to determine the state of the publish environment.
+The purpose is to let you track the published website at the selected point in time. This uses the page activations to determine the state of the publish environment.
 
 To do this:
 

@@ -12,7 +12,7 @@ exl-id: 8d2b07f5-5c4e-4111-8f78-eb1b156221bc
 ---
 # Customizing error dialogs {#customizing-error-dialogs}
 
-AEM Forms workspace allows you to customize error dialogs. Perform the [Generic steps for AEM Forms workspace customization](/help/forms/using/generic-steps-html-workspace-customization.md) followed by the steps below to customize error dialogs.
+AEM Forms workspace lets you customize error dialogs. Perform the [Generic steps for AEM Forms workspace customization](/help/forms/using/generic-steps-html-workspace-customization.md) followed by the steps below to customize error dialogs.
 
 ## Customizing Text {#customizing-text}
 

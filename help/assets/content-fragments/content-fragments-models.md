@@ -143,7 +143,7 @@ Many properties are self-explanatory, for certain properties additional details 
   >If models created in earlier versions of AEM contain illegal characters, please remove or update those characters.
 
 * **Render As**
-  The various options for realizing/rendering the field in a fragment. Often this allows you to define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
+  The various options for realizing/rendering the field in a fragment. Often this lets you define whether the author will see a single instance of the field, or will be allowed to create multiple instances.
 
 * **Field Label**
   Entering a **Field Label** will autogenerate a **Property Name**, which can then be manually updated if required.
@@ -213,7 +213,7 @@ Content Fragments can form nested content, using either of the following data ty
 
 * **[Fragment Reference](#fragment-reference-nested-fragments)** (Nested Fragments)
   * References other fragments, dependent on the specific models specified.
-  * Allows you to include/retrieve structured data.
+  * Lets you include/retrieve structured data.
     >[!NOTE]
     >
     >This method is of particular interest in conjunction with [Headless Content Delivery using Content Fragments with GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -231,7 +231,7 @@ Content Fragments can form nested content, using either of the following data ty
 
 ### Content Reference {#content-reference}
 
-The Content Reference allows you to render content from another source; for example, image or content fragment.
+The Content Reference lets you render content from another source; for example, image or content fragment.
 
 In addition to standard properties you can specify:
 
@@ -246,7 +246,7 @@ In addition to standard properties you can specify:
 
 ### Fragment Reference (Nested Fragments) {#fragment-reference-nested-fragments}
 
-The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it allows you to retrieve structured data with multiple layers.
+The Fragment Reference references one, or more, content fragments. This feature of particular interest when retrieving content for use in your app, as it lets you retrieve structured data with multiple layers.
 
 For example:
 

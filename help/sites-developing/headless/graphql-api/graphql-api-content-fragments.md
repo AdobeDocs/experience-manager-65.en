@@ -540,7 +540,7 @@ For further examples, see:
 >
 >For best performance, consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-This feature allows you to sort the query results according to a specified field.
+This feature lets you sort the query results according to a specified field.
 
 The sorting criteria:
 
@@ -609,7 +609,7 @@ query {
 >
 >For best performance, consider [Updating your Content Fragments for Paging and Sorting in GraphQL Filtering](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
-This feature allows you to perform paging on query types that returns a list. Two methods are provided:
+This feature lets you perform paging on query types that returns a list. Two methods are provided:
 
 * `offset` and `limit` in a `List` query
 * `first` and `after` in a `Paginated` query

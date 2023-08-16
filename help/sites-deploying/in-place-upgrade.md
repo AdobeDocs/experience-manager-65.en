@@ -117,7 +117,7 @@ Check the configuration files beneath `crx-quickstart/install` folder. If a migr
 
 **A note on datastores:**
 
-While `FileDataStore` is the new default for AEM 6.3 installations, using an external datastore is not required. While using an external datastore is recommended as a best practice for production deployments, it is not a prerequisite to upgrade. Due to the complexity already present in upgrading AEM, we recommend performing the upgrade without doing a datastore migration. If desired, a datastore migration can be executed afterwards as a separate effort.
+While `FileDataStore` is the new default for AEM 6.3 installations, using an external datastore is not required. While using an external datastore is recommended as a best practice for production deployments, it is not a prerequisite to upgrade. Due to the complexity already present in upgrading AEM, Adobe recommends performing the upgrade without doing a datastore migration. If desired, a datastore migration can be executed afterwards as a separate effort.
 
 ## Troubleshooting Migration Issues {#troubleshooting-migration-issues}
 
@@ -161,7 +161,7 @@ To execute the upgrade, it is important to start AEM using the jar file to bring
 >
 >If you are running Oracle Java 11 (or generally versions of Java newer than 8), additional switches will need to be added to your command line when starting AEM. For more information, see [Java 11 Considerations](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Note that starting AEM from the start script will not start the upgrade. Most customers start AEM using the start script and have customized this start script to include switches for environment configurations such as memory settings, security certificates, etc. For this reason, we recommend following this procedure to determine the proper upgrade command:
+Note that starting AEM from the start script will not start the upgrade. Most customers start AEM using the start script and have customized this start script to include switches for environment configurations such as memory settings, security certificates, etc. For this reason, Adobe recommends following this procedure to determine the proper upgrade command:
 
 1. On a running AEM instance, execute the following from the command line:
 

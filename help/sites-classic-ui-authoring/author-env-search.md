@@ -53,7 +53,7 @@ At various locations a filter can be set (and cleared) to drill down and refine 
 
 ## Find and Replace {#find-and-replace}
 
-In the **Websites** console a **Find & Replace** menu option allows you to search for, and replace multiple instances of a string, within a section of the website.
+In the **Websites** console a **Find & Replace** menu option lets you search for, and replace multiple instances of a string, within a section of the website.
 
 1. Select the root page, or folder, where you want the find and replace action to take place.
 1. Select **Tools** then **Find & Replace**:

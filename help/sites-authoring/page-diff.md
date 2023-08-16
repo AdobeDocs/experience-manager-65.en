@@ -72,7 +72,7 @@ In order to focus on particular content, you can click on the full screen icon f
 
 The selected side will fill the entire window, but the bar will remain at the top allowing you to switch between the two pages.
 
-![Bar at top allows you to switch between pages](assets/chlimage_1-110.png)
+![Bar at top lets you switch between pages](assets/chlimage_1-110.png)
 
 You can also choose to close the full screen view by clicking the exit full screen icon.
 

@@ -146,7 +146,7 @@ These show that the component cannot be edited - until inheritance is canceled.
 >
 >This is comparable to [inherited components when editing page content](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
 
-Clicking either the lock symbol or the image icon allows you to break inheritance:
+Clicking either the lock symbol or the image icon lets you break inheritance:
 
 * the symbol changes to an open padlock.
 * once unlocked, you can edit the content.

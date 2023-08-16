@@ -45,7 +45,7 @@ To aid you when authoring pages the author environment provides features such as
   Both a single or a slow double-click/tap will reveal the appropriate toolbar (single for the inplace editing toolbar, then slow double for full toolbar).
 
 * **[Responsive Layout](/help/sites-authoring/responsive-layout.md)**
-  This provides a paragraph system that allows you to position components within a responsive grid.
+  This provides a paragraph system that lets you position components within a responsive grid.
 
 * **Search as you type**
   In certain scenarios (for example, path selection in edit dialogs) searching for content through the AEM interface presents dynamic matches as you type the query.

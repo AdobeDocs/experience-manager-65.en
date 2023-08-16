@@ -14,7 +14,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 
 Launches enable you to efficiently develop content for a future release.
 
-A launch is created to allow you to make changes ready for future publication (while maintaining your current pages). After editing and updating your launch pages you promote them back to the source, then activate the source pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
+A launch is created to let you make changes ready for future publication (while maintaining your current pages). After editing and updating your launch pages you promote them back to the source, then activate the source pages (top-level). Promoting duplicates the launch content back to the source pages and can be done either manually or automatically (dependent on fields set when creating and editing the launch).
 
 For example, the seasonal product pages of your online store are updated quarterly so that the featured products align with the current season. To prepare for the next quarterly update, you can create a launch of the appropriate web pages. Throughout the quarter, the following changes are accumulated in the launch copy:
 
@@ -38,7 +38,7 @@ This section descibes how to create, edit and promote (and if necessary [delete]
 
 Launches enable you to efficiently develop content for a future release of one or more activated web pages.
 
-Launches allow you to:
+Launches let you:
 
 * Create a copy of your source pages:
 
@@ -103,7 +103,7 @@ Launches allow you to:
 
 ### The Launches Console {#the-launches-console}
 
-The Launches console provides an overview of your launches and allows you to take actions on those listed. The console can be accessed by:
+The Launches console provides an overview of your launches and lets you take actions on those listed. The console can be accessed by:
 
 * The **Tools** Console: **Tools**, **Sites**, **Launches**.
 

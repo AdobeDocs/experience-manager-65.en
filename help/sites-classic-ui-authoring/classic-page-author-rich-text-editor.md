@@ -155,7 +155,7 @@ A link to an URL (either within your website or an external location) is generat
 
 ![Hyperlink icon](do-not-localize/chlimage_1-9.png)
 
-A dialog will allow you to specify the target URL; also whether it should be opened in a new window.
+A dialog will let you specify the target URL; also whether it should be opened in a new window.
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
@@ -201,7 +201,7 @@ The search will always start from the current cursor position within the text. W
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-The **Replace** option allows you to **Find**, then **Replace** an individual instance with the specified text, or to **Replace all** instances in the current component.
+The **Replace** option lets you **Find**, then **Replace** an individual instance with the specified text, or to **Replace all** instances in the current component.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -377,7 +377,7 @@ Use mouseover to see a magnified version of the character, then click for it to 
 
 ![Source editing mode toolbar](do-not-localize/cq55_rte_sourceedit.png)
 
-The source editing mode allows you to see and edit the underlying HTML of the component.
+The source editing mode lets you see and edit the underlying HTML of the component.
 
 So the text:
 

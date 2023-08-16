@@ -51,7 +51,7 @@ The CIF add-on can be downloaded from the [Software Distribution portal](https:/
 
 For local CIF project development using the AEM and the CIF add-on following steps:
 
-1. Get the AEM 6.5 release and install the AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 is required, however we recommend installing the last available service pack.
+1. Get the AEM 6.5 release and install the AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 is required, however Adobe recommends installing the last available service pack.
 
 1. Unpack the AEM .jar to create the `crx-quickstart` folder, run:
 

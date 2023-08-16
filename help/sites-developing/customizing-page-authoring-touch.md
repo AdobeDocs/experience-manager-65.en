@@ -24,7 +24,7 @@ Adobe Experience Manager (AEM) provides various mechanisms to let you customize 
 
 * Overlays
 
-  Overlays are based on node definitions and allow you to overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). When creating an overlay a 1:1 copy of the original is not required, as the [sling resource merger](/help/sites-developing/sling-resource-merger.md) allows for inheritance.
+  Overlays are based on node definitions and let you overlay the standard functionality (in `/libs`) with your own customized functionality (in `/apps`). When creating an overlay a 1:1 copy of the original is not required, as the [sling resource merger](/help/sites-developing/sling-resource-merger.md) allows for inheritance.
 
 >[!NOTE]
 >

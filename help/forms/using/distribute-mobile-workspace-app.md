@@ -25,7 +25,7 @@ Mobile Device Management (MDM) enables the large-scale deployment of apps on mob
 * Enforce security compliance.
 * Secure mobile access to corporate resources
 
-An MDM solution along with Mobile Application Management, allows you to manage internal, public, and purchased apps across the mobile devices in your enterprise.
+An MDM solution along with Mobile Application Management, lets you manage internal, public, and purchased apps across the mobile devices in your enterprise.
 
 The MDM administrator can upload both ipa and apk files to the MDM server and control the users who can access the ipa or apk files. The administrator can also control the profile setting corresponding to each application.
 
