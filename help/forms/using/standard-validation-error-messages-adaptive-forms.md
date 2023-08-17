@@ -25,9 +25,9 @@ AEM Forms provides out-of-the-box success and error handlers for form submission
 
 ![error handler workflow to understand how to add custom error handler in forms](/help/forms/using/assets/error-handler-workflow.png)
 
-The Adaptive Form validates the inputs you provide in fields based on pre-set validation criteria and checks for various errors returned by the REST endpoint configured to invoke an external service. You can set the validation criteria based on the data source that you use with the Adaptive Form. For example, if you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file.
+The Adaptive Form validates the inputs that you provide in fields based on pre-set validation criteria and checks for various errors returned by the REST endpoint configured to invoke an external service. You can set the validation criteria based on the data source that you use with the Adaptive Form. For example, if you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file.
 
-If the input values meet the validation criteria, the values are submitted to the data source else, the Adaptive Form displays an error message using an error handler. Similar to this approach, Adaptive Forms integrates with custom error handlers to perform data validations. If the input values do not meet the validation criteria, the error messages display at a field level in the Adaptive Form. This occurs when the validation error message returned by the server is in the standard message format.
+If the input values meet the validation criteria, the values are submitted to the data source else, the Adaptive Form displays an error message using an error handler. Similar to this approach, Adaptive Forms integrate with custom error handlers to perform data validations. If the input values do not meet the validation criteria, the error messages display at a field level in the Adaptive Form. This occurs when the validation error message returned by the server is in the standard message format.
 
 
 ## Uses of error handlers {#uses-of-error-handler}
@@ -181,7 +181,7 @@ Before using custom error handler in an Adaptive Forms:
 
 ## Add error handler using Rule Editor {#add-error-handler-using-rule-editor}
 
-Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, you define the validation criteria based on the data source that you use with the Adaptive Form. In case, you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file. By utilizing the error handler functions and Rule Editor in Adaptive Forms, you can effectively manage and customize error handling. You define the conditions using Rule Editor and configure the desired actions to be performed when the rule is triggered. Adaptive Form validates the inputs that you enter in fields based on pre-set validation criteria. In case, the input values do not meet the validation criteria, the error messages are displayed at the field level in an Adaptive Form. 
+Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) action, you define the validation criteria based on the data source that you use with the Adaptive Form. In case, you use RESTful web services as the data source, you can define the validation criteria in a Swagger definition file. By using the error handler functions and Rule Editor in Adaptive Forms, you can effectively manage and customize error handling. You define the conditions using Rule Editor and configure the desired actions to be performed when the rule is triggered. Adaptive Form validates the inputs that you enter in fields based on pre-set validation criteria. In case, the input values do not meet the validation criteria, the error messages are displayed at the field level in an Adaptive Form. 
 
 >[!NOTE]
 >
@@ -222,7 +222,7 @@ You can add a custom error handler function to perform some of the actions like:
 * send analytics events to any analytics platforms. For example, Adobe Analytics.
 * display modal dialog with error messages.
 
-In addition to the mentioned actions, the custom error handlers can be utilized to execute customized functions that meet specific user requirements.
+In addition to the mentioned actions, the custom error handlers can be used to execute customized functions that meet specific user requirements.
 
 The custom error handler is a function (Client Library) designed to respond to errors returned by an external service and deliver a customized response to end users. Any Client Library with annotation `@errorHandler` is considered as a custom error handler function. This annotation helps to identify the error handler function specified in the `.js` file. 
 
@@ -238,9 +238,9 @@ To add and use a custom error handler in an Adaptive Form, perform the following
 To create a custom error function, perform the following steps:
 
 1. Log into `http://server:port/crx/de/index.jsp#`. 
-1. Create a new folder under the `/apps` folder. For example, create a folder named as `experience-league`.
+1. Create a folder under the `/apps` folder. For example, create a folder named as `experience-league`.
 1. Save your changes.
-1. Navigate to the created folder and create a new node of type `cq:ClientLibraryFolder` as `clientlibs`.
+1. Navigate to the created folder and create a node of type `cq:ClientLibraryFolder` as `clientlibs`.
 1. Navigate to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties:
     
     ![Custom Library node properties](/help/forms/using/assets/customlibrary-properties.png)
@@ -255,10 +255,10 @@ To create a custom error function, perform the following steps:
 1. Create a JavaScript file called `functions.js` under the `js` folder
 1. Create a file called `js.txt` under the `clientlibs` folder. 
 1. Save your changes.
-The created folder structure will look like:
+The created folder structure looks like:
 
     ![Created Client Library Folder Structure](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. Double click the `functions.js` file to open the editor. The file comprises the code for custom error handler.
+1. Double-click the `functions.js` file to open the editor. The file comprises the code for custom error handler.
 Let's add the following code to the JavaScript file to display the response and headers, received from the REST service endpoint, in the browser console.
 
     ```javascript
