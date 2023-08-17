@@ -113,16 +113,10 @@ Billing APIs does not account for the number of pages, the length of a document 
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/aem-document-services-programmatically.html?lang=en#adding-a-signature-field-nbsp" target="_blank">Adding a Signature field</a><br /> </td>
-   <td>Add a signature field by using the Signature service. You can add multiple signature fields to a PDF document. However, each signature field name must be unique.</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
+   <td>This API enables you to secure your document. You can use the API to sign, certify, reader extend, or encrypt a PDF document.</td>
    <td>Documents Processed</td>
-   <td> </td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/aem-document-services-programmatically.html?lang=en#certifying-pdf-documents-nbsp" target="_blank">Certifying PDF documents</a></td>
-   <td>Secure a PDF document by certifying it with a particular type of signature called a certified signature. A certified signature is distinguished from a digital signature.</td>
-   <td>Documents Processed</td>
-   <td> </td>
+   <td>Only sign and certify operation of the secureDocument are billed.</td>
   </tr>
  </tbody>
 </table>
@@ -325,11 +319,16 @@ Billing APIs does not account for the number of pages, the length of a document 
  </tbody>
 </table>
 
+Invoke is considered a transaction that depends on the operation being performed. It is considered a transaction when you perform the following operations:
+1. Non-PDF to PDF conversion. For example, XDP to PDF conversion, Word to PDF conversion.
+1. PDF to PDF/A conversion.
+1. PDF to Non-PDF conversion. For example, PDF to Image conversion, PDF to Text conversion.
+
+
 >[!NOTE]
 >
->* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked. It is considered as a transaction, when the XDP to PDF conversion (interactive and non-interactive communication), PDF to PDF/A, PDF to Word text and non-PDF to PDF conversion are done.
+>* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked.
 >* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied DDX code.
->* The invoke API is a transaction that depends on the operation being performed.
 
 ### PDF Utility Service  {#pdf-utility-service}
 
