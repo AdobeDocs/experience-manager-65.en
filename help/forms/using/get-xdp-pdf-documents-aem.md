@@ -1,8 +1,8 @@
 ---
 title: Getting XDP and PDF documents in AEM Forms
 seo-title: Getting XDP and PDF documents in AEM Forms
-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
-seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
+description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
+seo-description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -59,7 +59,7 @@ Once the upload is complete, a background workflow generates thumbnails for each
 
 ### Protected Mode {#protected-mode}
 
-AEM Forms server allows you to run JavaScript code. A malicious JavaScript code can harm an AEM Forms environment. Protected mode restricts AEM Forms to run XDP files only from trusted assets and locations. All the XDP available in AEM Forms UI are considered trusted assets.
+AEM Forms server lets you run JavaScript code. A malicious JavaScript code can harm an AEM Forms environment. Protected mode restricts AEM Forms to run XDP files only from trusted assets and locations. All the XDP available in AEM Forms UI are considered trusted assets.
 
 The protected mode is on, by default. If necessary, you can disable the protected mode:
 

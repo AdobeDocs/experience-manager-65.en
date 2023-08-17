@@ -13,7 +13,7 @@ exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 >
 >The eCommerce framework can be used with any eCommerce solution. Certain specifics and examples dealt with here refer to the [hybris](https://www.sap.com/products/crm.html) solution.
 
-The integration framework includes an integration layer with an API. This allows you to:
+The integration framework includes an integration layer with an API. This lets you:
 
 * plug in an eCommerce system and pull product data into AEM
 

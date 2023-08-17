@@ -22,7 +22,7 @@ hide: yes
 | AEM as a Cloud Service  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en)                  |
 | AEM 6.5     | This article         |
 
-Adobe Experience Manager Assets Brand Portal allows you to publish approved brand assets from Adobe Experience Manager Assets to Brand Portal and distribute them to the Brand Portal users.
+Adobe Experience Manager Assets Brand Portal lets you publish approved brand assets from Adobe Experience Manager Assets to Brand Portal and distribute them to the Brand Portal users.
 
 AEM Assets is configured with Brand Portal via Adobe Developer Console, which procures an Adobe Identity Management Services (IMS) account token for authorization of the Brand Portal tenant.
 

@@ -11,7 +11,7 @@ exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 ---
 # Document Security | Handling user data {#document-security-handling-user-data}
 
-AEM Forms document security allows you to create, store, and apply predefined security settings to your documents. It ensures that only authorized users can use the documents. You can protect documents by using policies. A policy is a collection of information that includes security settings and a list of authorized users. You can apply a policy to one or more documents and authorizes users who are added in AEM Forms JEE user management.
+AEM Forms document security lets you create, store, and apply predefined security settings to your documents. It ensures that only authorized users can use the documents. You can protect documents by using policies. A policy is a collection of information that includes security settings and a list of authorized users. You can apply a policy to one or more documents and authorizes users who are added in AEM Forms JEE user management.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 

@@ -14,7 +14,7 @@ exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 ---
 # Proxy Server Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
-The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server keeps track of all the client-server interactions and outputs a log of the entire TCP communication. This allows you to monitor exactly what is going on, without having to access the main server.
+The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server keeps track of all the client-server interactions and outputs a log of the entire TCP communication. This lets you monitor exactly what is going on, without having to access the main server.
 
 You can find the proxy server in the appropriate installation folder:
 
@@ -28,7 +28,7 @@ You can use the proxy server to monitor all client-server interaction, regardles
 * SMTP for email messages
 * LDAP for user management
 
-For example, you can position the proxy server between any two applications that communicate via a TCP/IP network; for example, a web browser and AEM. This allows you to monitor exactly what happens when you request a AEM page.
+For example, you can position the proxy server between any two applications that communicate via a TCP/IP network; for example, a web browser and AEM. This lets you monitor exactly what happens when you request a AEM page.
 
 ## Starting the Proxy Server Tool {#starting-the-proxy-server-tool}
 

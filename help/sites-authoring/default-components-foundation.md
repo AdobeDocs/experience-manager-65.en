@@ -114,7 +114,7 @@ When the image is a JPEG image, the viewport size can also influence the JPEG qu
 
 #### Properties {#properties}
 
-The dialog allows you to edit properties for your instance of the Adaptive Image component, many of which are common with the Image component on which it is based. The properties are available in two tabs:
+The dialog lets you edit properties for your instance of the Adaptive Image component, many of which are common with the Image component on which it is based. The properties are available in two tabs:
 
 * **Image**
 
@@ -154,7 +154,7 @@ For information about customizing the Adaptive Image component, see [Understandi
 >
 >This Foundation Component is deprecated. Adobe recommends using the [Carousel Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) instead.
 
-The Carousel Component allows you to display images associated with individual pages:
+The Carousel Component lets you display images associated with individual pages:
 
 * one at a time
 * for a short time
@@ -469,7 +469,7 @@ This component provides a grid-paragraph system to let you add and position comp
 >
 >This Foundation Component is deprecated. Adobe recommends using the [List Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) instead.
 
-The List component allows you to configure search criteria for displaying a list:
+The List component lets you configure search criteria for displaying a list:
 
 * **List**
 
@@ -734,7 +734,7 @@ If necessary, you can configure the following:
 >
 >This component is no longer expected to function out-of-the-box without extensive project-level customization.
 
-This component allows you to load a series of images to be displayed as a slideshow on your page. You can add or remove images and assign each a title. Under Advanced, you can also specify the size of the display area.
+This component lets you load a series of images to be displayed as a slideshow on your page. You can add or remove images and assign each a title. Under Advanced, you can also specify the size of the display area.
 
 You can configure:
 
@@ -817,7 +817,7 @@ For more information about applying tags, visit [Using Tags](/help/sites-authori
 >
 >The **Text** Foundation Component is based on the [Rich Text editor](/help/sites-authoring/rich-text-editor.md), as is the **Table** Foundation Component.
 
-The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). A selection of icons allow you to format your text, including font characteristics, alignment, links, lists, and indentation.
+The Text component lets you enter a text block using a WYSIWYG editor, with functionality provided by the [Rich Text editor](/help/sites-authoring/rich-text-editor.md). A selection of icons let you format your text, including font characteristics, alignment, links, lists, and indentation.
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -854,7 +854,7 @@ You can configure:
 
 * **Image Properties** (**Advanced Image Properties**)
 
-  Allows you to specify the following:
+  Lets you specify the following:
 
     * **Image asset**
 
@@ -1015,11 +1015,11 @@ When configuring any of the form components, the following tabs are available in
 
 * **Title and Text**
 
-  Here you must specify the basic information, such as the title of the form and any accompanying text. Where appropriate it also allows you to define other key information such as whether the field is multi-selectable and items available for selection.
+  Here you must specify the basic information, such as the title of the form and any accompanying text. Where appropriate it also lets you define other key information such as whether the field is multi-selectable and items available for selection.
 
 * **Initial Values**
 
-  Allows you to specify a default value.
+  Lets you specify a default value.
 
 * **Constraints**
 
@@ -1365,7 +1365,7 @@ You can configure various parameters for this component, including a message to 
 >
 >This Foundation Component is deprecated. Adobe recommends using the [Form Options Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) instead.
 
-A checkbox allows you to build a list of one of more checkboxes, several of which may be selected at the same time.
+A checkbox lets you build a list of one of more checkboxes, several of which may be selected at the same time.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1441,7 +1441,7 @@ Lets you create a hidden field. These hidden fields can be used for various purp
 >
 >This Foundation Component is deprecated. Adobe recommends using the [Form Button Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) instead.
 
-An image button allows you to create a button with your own image and text:
+An image button lets you create a button with your own image and text:
 
 ![dc_form_imagebutton](assets/dc_form_imagebutton.png)
 
@@ -1516,7 +1516,7 @@ You can specify the element name together with a title and description. Using th
 >
 >This Foundation Component is deprecated. Adobe recommends using the [Form Button Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) instead.
 
-This component allows you to create a submit button, with either the default text:
+This component lets you create a submit button, with either the default text:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1530,7 +1530,7 @@ Or with your own text:
 >
 >This Foundation Component is deprecated. Adobe recommends using the [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) instead.
 
-This field allows you to select tags:
+This field lets you select tags:
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

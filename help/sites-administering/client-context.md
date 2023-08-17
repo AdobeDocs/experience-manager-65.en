@@ -31,7 +31,7 @@ In both the publish and author environment it shows information about:
 * Information about the technical environment; such as the IP address, browser and screen resolution.
 * Any segments that are currently resolved.
 
-The icons (only available in the author environment) allow you to configure the details of the client context:
+The icons (only available in the author environment) let you configure the details of the client context:
 
 ![The Edit, Load, and Reset icons of the Client Context window](do-not-localize/clientcontext_icons.png)
 
@@ -128,9 +128,9 @@ For additional information, see [Client Context in Detail](/help/sites-developin
 
 ## Changing the Client Context Profile {#changing-the-client-context-profile}
 
-The Client Context allows you to interactively change details:
+The Client Context lets you interactively change details:
 
-* Changing the profile being used in the Client Context allows you to see the differing experiences that the various user will see for the current page.
+* Changing the profile being used in the Client Context lets you see the differing experiences that the various user will see for the current page.
 * As well as changing the user profile you can change some profile details to see how the page experience differs under various conditions.
 
 ### Loading a New User Profile {#loading-a-new-user-profile}
@@ -200,7 +200,7 @@ Editing a client context can be used to set (or reset) the values of certain pro
 
 ### Editing Property Details {#editing-property-details}
 
-Editing a client context can be used to set (or reset) the values of certain properties. This allows you to test specific scenarios (particularly useful for [segmentation](/help/sites-administering/campaign-segmentation.md) and [campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+Editing a client context can be used to set (or reset) the values of certain properties. This lets you test specific scenarios (particularly useful for [segmentation](/help/sites-administering/campaign-segmentation.md) and [campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![Editing the Client Context](assets/clientcontext_alisonparker_edit.png)
 

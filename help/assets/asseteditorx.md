@@ -58,7 +58,7 @@ The sample page components require that all selectors start with `.asseteditor` 
 
 ### FormChooser: Adjustments for eventually loaded Resources {#formchooser-adjustments-for-eventually-loaded-resources}
 
-The Asset Editor uses the Form Chooser, which allows you to edit resources - in this case assets - on the same form page by simply adding a form selector and the path of the form to the URL of the asset.
+The Asset Editor uses the Form Chooser, which lets you edit resources - in this case assets - on the same form page by simply adding a form selector and the path of the form to the URL of the asset.
 
 For example:
 

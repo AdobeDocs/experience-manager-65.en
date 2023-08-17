@@ -31,7 +31,7 @@ The text document fragment in Interactive Communication supports the following t
 1. Select **[!UICONTROL Create]** > **[!UICONTROL Text]**. 
 1. Specify the following information:
 
-    * **[!UICONTROL Title]**: (Optional) Enter the title for the text document fragment. Titles need not be unique and can have special characters and non-English characters. Texts are referred by their titles (when available) such as in thumbnails and properties. 
+    * **[!UICONTROL Title]**: (Optional) Enter the title for the text document fragment. Titles do not need to be unique and can have special characters and non-English characters. Texts are referred by their titles (when available) such as in thumbnails and properties. 
     * **[!UICONTROL Name]**: The unique name for the text, within a folder. No two document fragments (text, condition, or list) in any state can exist with the same name in a folder. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.  
     
     * **[!UICONTROL Description]**: Type a description of the text.
@@ -180,7 +180,7 @@ Using rule editor in a text, you can create rules to display or hide strings of 
 
    Rule to display the selected text if the location of the recipient is US according to the source data of FDM
 
-    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog allows you to drag-and-drop form data model properties and variables to construct rules. Tap Resize again to go back to the Create Rule dialog. 
+    * While creating or editing a rule, you can also tap ![icon_resize](assets/icon_resize.png) (Resize) to expand the Create Rule/Edit Rule dialog. The expanded, full-window dialog lets you drag-and-drop form data model properties and variables to construct rules. Tap Resize again to go back to the Create Rule dialog. 
     * You can also create multiple conditions in a rule. 
     * You can also create overlapping rules, in which a rule is applied to a part of a content that already has a rule applied.
 
@@ -256,7 +256,7 @@ Text editor has built in support for 210 special characters. The admin can [add 
 
 When working with text document fragments containing a large amount of text, you need to search for a specific text string. You may also need to replace a specific string of text with an alternative string.
 
-The Find and Replace feature allows you to search for (and replace) any string of text in a text document fragment. The feature also includes a powerful regular expression search.
+The Find and Replace feature lets you search for (and replace) any string of text in a text document fragment. The feature also includes a powerful regular expression search.
 
 1. Open a text document fragment for [editing](#edittext). 
 1. Tap **[!UICONTROL Find & Replace]**.  

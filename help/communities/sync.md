@@ -200,7 +200,7 @@ To ensure member synchronization:
 
 ### Apache Sling Distribution Trigger - Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-This configuration allows you to configure the polling interval (after which publishers are pinged and changes are pulled by author) to sync the changes across publishers.
+This configuration lets you configure the polling interval (after which publishers are pinged and changes are pulled by author) to sync the changes across publishers.
 
 The author polls publishers every 30 seconds (default). If any packages are present at the folder `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`, then it will fetch those packages and install them on other publishers.
 

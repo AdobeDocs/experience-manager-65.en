@@ -14,7 +14,7 @@ Managing a project to implement Adobe Experience Manager (AEM) requires planning
 
 To help you, the best practices consist of:
 
-* An [interactive checklist](/help/managing/best-practices-checklist.md) that allows you to track and monitor your progress with these best practices.
+* An [interactive checklist](/help/managing/best-practices-checklist.md) that lets you track and monitor your progress with these best practices.
 
     * Defines inputs and deliverables according to phase, milestone, and persona.
     * Provides automated overviews (quality, health, and completeness) to indicate progress and project-health.

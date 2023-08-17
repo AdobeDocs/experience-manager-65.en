@@ -1,15 +1,10 @@
 ---
 title: Add custom action to the Asset Listing view
-seo-title: Add custom action to the Asset Listing view
 description: This article teaches how to add custom action to the Asset Listing view
-seo-description: This article teaches how to add custom action to the Asset Listing view
-uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
-
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 ---
@@ -17,7 +12,7 @@ exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 
 ## Overview {#overview}
 
-The Correspondence Management solution allows you add custom actions to the Manage Assets user interface.
+The Correspondence Management solution lets you add custom actions to the Manage Assets user interface.
 
 You can add a custom action to the Asset Listing view for:
 

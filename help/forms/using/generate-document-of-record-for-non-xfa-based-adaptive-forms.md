@@ -212,7 +212,7 @@ The adaptive forms table components such as header, footer, and row map to corre
 
 ## Base template of a document of record {#base-template-of-a-document-of-record}
 
-Base template provides styling and appearance information to document of record. It allows you to customize default appearance of auto generated document of record. For example, you want to add your company logo in the header, and copyright information in the footer of the document of record. The master page from base template is used as a master page for document of record template. The master page can have information such as page header, page footer, and page number that you can apply to document of record. You can apply such information to document of record using base template for auto generation of document of record. Using base template enables you to change default properties of fields.
+Base template provides styling and appearance information to document of record. It lets you customize default appearance of auto generated document of record. For example, you want to add your company logo in the header, and copyright information in the footer of the document of record. The master page from base template is used as a master page for document of record template. The master page can have information such as page header, page footer, and page number that you can apply to document of record. You can apply such information to document of record using base template for auto generation of document of record. Using base template enables you to change default properties of fields.
 
 Please follow [Base template conventions](#base-template-conventions) when you design base template.
 

@@ -27,7 +27,7 @@ Considering these factors, you require a methodology to calculate an acceptably 
 1. Define the renditions to be used.
 1. Create the renditions in [!DNL Experience Manager] using [!DNL ImageMagick] or [!DNL Adobe Creative Cloud] applications. In addition to the renditions that the users specify, create out-of-the-box renditions. For users who implement Dynamic Media, you can use the IC binary to generate the PTIFF renditions to be stored in Experience Manager.
 1. If you plan to use subassets, generate them for the appropriate file types.
-1. Compare the size of the output images, renditions, and subassets with the original images. It allows you to generate an expected growth factor when the system is loaded. For example, if you generate renditions and subassets with a combined size of 3 GB after processing 1 GB of assets, the rendition growth factor is 3.
+1. Compare the size of the output images, renditions, and subassets with the original images. It lets you generate an expected growth factor when the system is loaded. For example, if you generate renditions and subassets with a combined size of 3 GB after processing 1 GB of assets, the rendition growth factor is 3.
 1. Determine the maximum time for which asset versions are to be maintained in the system.
 1. Determine how often existing assets are modified in the system. If [!DNL Experience Manager] is used as a collaboration hub in creative workflows, the amount of changes are high. If only finished assets are uploaded to the system, this number is much lower.
 1. Determine how many assets are loaded into the system each month. If you are unsure, ascertain the number of assets that are currently available, and divide the number by the age of the oldest asset to calculate an approximate number.
@@ -50,7 +50,7 @@ The example data populated in the tool demonstrates how important it is to perfo
 
 ### Shared datastores {#shared-datastores}
 
-For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an Amazon S3 datastore. In this case, individual instances need not maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments.
+For large datastores, you can implement a shared datastore either through a shared file datastore on a network attached drive or through an Amazon S3 datastore. In this case, individual instances do not need to maintain a copy of the binaries. In addition, a shared datastore facilitates binary-less replication and helps reduce the bandwidth used to replicate assets to publish environments.
 
 #### Use cases {#use-cases}
 
@@ -89,7 +89,7 @@ It is difficult to arrive at precise sizing figures for a NodeStore or DocumentS
 * Audit logs
 * Archived and active workflows
 
-Because the binaries are be stored in the datastore, each binary occupies some space. Most repositories are below 100GB in size. However, there may be larger repositories up to 1 TB in size. Additionally, to perform offline compaction, you require enough free space on the volume to rewrite the compacted repository alongside the pre-compacted version. A good rule-of-thumb is to size the disk to 1.5 times the size expected for the repository.
+Because the binaries are stored in the datastore, each binary occupies some space. Most repositories are below 100GB in size. However, there may be larger repositories up to 1 TB in size. Additionally, to perform offline compaction, you require enough free space on the volume to rewrite the compacted repository alongside the pre-compacted version. A good rule-of-thumb is to size the disk to 1.5 times the size expected for the repository.
 
 For the repository, use SSDs or disks with an IOPS level greater than 3000. To eliminate chances of IOPS introducing performance bottlenecks, monitor CPU IO Wait levels for early signs of issues.
 
@@ -117,4 +117,4 @@ It is difficult to accurately estimate the size of the TIFF file supported out-o
 
 ## Size of assets {#size-of-assets}
 
-By default, [!DNL Experience Manager] allows you to upload assets of file size up to 2 GB. To upload very large assets in [!DNL Experience Manager], see [Configuration to upload very large assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+By default, [!DNL Experience Manager] lets you upload assets of file size up to 2 GB. To upload very large assets in [!DNL Experience Manager], see [Configuration to upload very large assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

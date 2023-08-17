@@ -161,7 +161,7 @@ Unless all pages have been created for you in advance, before you can start crea
 
    Clicking **New...** itself also acts as a shortcut to the **New Page...** option.
 
-1. The **Create Page** dialog allows you to:
+1. The **Create Page** dialog lets you:
 
     * Provide a **Title**; this is displayed to the user.
     * Provide a **Name**; this is used to generate the URI. If not specified, the name will be derived from the title.

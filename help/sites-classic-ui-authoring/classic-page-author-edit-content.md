@@ -77,7 +77,7 @@ To insert a new component:
 
    Depending on your production environment, these choices may differ. For complete details on components, see [Default Components](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
-1. Insert the component that you want on the page. Then double-click the paragraph, a window opens that allows you to configure your paragraph and add content.
+1. Insert the component that you want on the page. Then double-click the paragraph, a window opens that lets you configure your paragraph and add content.
 
 ### Inserting a Component using the Content Finder {#inserting-a-component-using-the-content-finder}
 
@@ -207,7 +207,7 @@ There are two icons in the bottom border of the sidekick that are important to p
 
   ![Edit icon indicated by a pencil symbol.](do-not-localize/chlimage_1-6.png)
 
-* The magnifying glass icon allows you to select preview mode where the page is displayed as it will be seen in the publish environment (a page refresh is sometimes also needed):
+* The magnifying glass icon lets you select preview mode where the page is displayed as it will be seen in the publish environment (a page refresh is sometimes also needed):
 
   ![Preview mode icon indicated by a magnifying glass symbol.](do-not-localize/chlimage_1-7.png)
 
@@ -217,11 +217,11 @@ There are two icons in the bottom border of the sidekick that are important to p
 
 ## Find & Replace {#find-replace}
 
-For larger scale edits of the same phrase a **[Find & Replace](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** menu option allows you to search for, and replace multiple instances of a string, within a section of the website.
+For larger scale edits of the same phrase a **[Find & Replace](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** menu option lets you search for, and replace multiple instances of a string, within a section of the website.
 
 ## Locking a Page {#locking-a-page}
 
-AEM allows you to lock a page, so that no-one else can modify the contents. This is useful when you are making a lot of edits to one specific page, or when you need to freeze a page for a short while.
+AEM lets you lock a page, so that no-one else can modify the contents. This is useful when you are making a lot of edits to one specific page, or when you need to freeze a page for a short while.
 
 >[!CAUTION]
 >

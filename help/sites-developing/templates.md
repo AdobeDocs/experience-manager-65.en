@@ -43,7 +43,7 @@ The advantages of Editable Templates:
 
 * Can be [created](/help/sites-authoring/templates.md#creating-a-new-template-template-author) and [edited](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) by your authors.
 
-* Have been introduced to allow you to define the following for any pages created with the template:
+* Have been introduced to let you define the following for any pages created with the template:
 
     * the structure
     * the initial content

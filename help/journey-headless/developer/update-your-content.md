@@ -35,7 +35,7 @@ In the previous stage of the Headless Journey, you learned about using the AEM G
 
 So why is another API needed?
 
-The Assets HTTP API does allow you to **Read** your content, but it also allows you to **Create**, **Update** and **Delete** content - actions that are not possible with the GraphQL API.
+The Assets HTTP API does let you **Read** your content, but it also lets you **Create**, **Update** and **Delete** content - actions that are not possible with the GraphQL API.
 
 The Assets REST API is available on each out-of-the-box install of a recent Adobe Experience Manager version.
 
@@ -48,7 +48,7 @@ The Assets HTTP API encompasses the:
 
 The current implementation of the Assets HTTP API is based on the **REST** architectural style and enables you to access content (stored in AEM) via **CRUD** operations (Create, Read, Update, Delete).
 
-With these operation the API allows you to operate Adobe Experience Manager as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses. For example, Single Page Applications (SPA), framework-based or custom, require content provided over an API, often in JSON format.
+With these operation the API lets you operate Adobe Experience Manager as a headless CMS (Content Management System) by providing Content Services to a JavaScript front end application. Or any other application that can execute HTTP requests and handle JSON responses. For example, Single Page Applications (SPA), framework-based or custom, require content provided over an API, often in JSON format.
 
 <!--
 >[!NOTE]

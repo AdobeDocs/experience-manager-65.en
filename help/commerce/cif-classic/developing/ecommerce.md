@@ -13,7 +13,7 @@ exl-id: da63c576-34cd-40ce-81de-d7391a331364
 ---
 # eCommerce{#ecommerce}
 
-The integration framework includes an integration layer with an API. This allows you to:
+The integration framework includes an integration layer with an API. This lets you:
 
 * plug in an eCommerce system and pull product data into AEM
 * build AEM components for commerce capabilities independent of the specific eCommerce engine

@@ -17,7 +17,7 @@ exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 
 Process Reporting is a browser-based tool that you use to create and view reports on AEM Forms processes and tasks.
 
-Process Reporting provides a set of out-of-the-box reports that allow you to filter, view information on long running processes, process duration, and workflow volume.
+Process Reporting provides a set of out-of-the-box reports that let you filter, view information on long running processes, process duration, and workflow volume.
 
 Additionally Process Reporting provides an interface to run adhoc queries and to integrate custom report views into the Process Reporting user interface.
 

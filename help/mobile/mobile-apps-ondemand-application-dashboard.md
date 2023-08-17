@@ -71,7 +71,7 @@ Each tile can be expanded to provide a more detailed list view by clicking on th
 
 ### The Manage Banners Tile {#the-manage-banners-tile}
 
-The **Manage Banners** tile allows you to manage the content for a banner. The following information is displayed for a banner:
+The **Manage Banners** tile lets you manage the content for a banner. The following information is displayed for a banner:
 
 * image
 * **TITLE**: name of the banner
@@ -90,7 +90,7 @@ The following image shows the **Manage Banners** tile in AEM Mobile Application 
 
 ### The Manage Articles Tile {#the-manage-articles-tile}
 
-The **Manage Articles** tile allows you to manage the content for an article. The following information is displayed for an article:
+The **Manage Articles** tile lets you manage the content for an article. The following information is displayed for an article:
 
 * image
 * **TITLE**: name of the article
@@ -109,7 +109,7 @@ The following image shows the **Manage Articles** tile in AEM Mobile Application
 
 ### The Manage Collections Tile {#the-manage-collections-tile}
 
-The **Manage Collections** tile allows you to manage the content for a collection. The following information is displayed for a collection:
+The **Manage Collections** tile lets you manage the content for a collection. The following information is displayed for a collection:
 
 * image
 * **TITLE**: name of the collection

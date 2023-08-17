@@ -99,7 +99,7 @@ eCommerce, together with Product Information Management (PIM), handles the activ
 * Live and centralized storage records
 * Web interfaces
 
-AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints. The AEM authoring environment allows you to customize pages and components based on target visitor context and merchandising strategies; for example:
+AEM eCommerce helps marketers deliver branded, personalized shopping experiences across web, mobile, and social touchpoints. The AEM authoring environment lets you customize pages and components based on target visitor context and merchandising strategies; for example:
 
 * Product pages
 * Shopping cart components
@@ -135,7 +135,7 @@ AEM eCommerce provides:
 
   >[!NOTE]
   >
-  >The integration framework provided by AEM also allows you to build additional AEM components for commerce capabilities independent of your specific eCommerce engine.
+  >The integration framework provided by AEM also lets you build additional AEM components for commerce capabilities independent of your specific eCommerce engine.
 
 * **Search** - using either:
 
@@ -154,10 +154,10 @@ AEM eCommerce provides:
 
   The two implementations currently available are both built on the same basis - on top of the general API (the framework). Implementing a new integration only involves implementing the feature(s) that your integration needs. Front end components can be used by any new implementation as they use interfaces (so are independent from the implementation).
 
-* The possibility to develop **experience-driven commerce based on shopper data and activity**. This allows you to realize many scenarios:
+* The possibility to develop **experience-driven commerce based on shopper data and activity**. This lets you realize many scenarios:
 
     * One example might be providing reductions in shipping costs when the total order exceeds a specific amount.
-    * Another might allow you to provide seasonal offers that use profile data (for example, location). These can then be highlighted, again depending on other factors when necessary.
+    * Another might let you provide seasonal offers that use profile data (for example, location). These can then be highlighted, again depending on other factors when necessary.
 
   In the example below one teaser is shown as the contents of the cart are less than $75:
 

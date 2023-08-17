@@ -472,10 +472,10 @@ You can retrieve resources from a given location in the repository in order to r
 
 The repository has the following four permission types:
 
-* **traverse**: allows you to list resources; that is, to read resource metadata, but not resource content
-* **read**: allows you to read resource content
-* **write**: allows you to write resource content
-* **managing access control lists (ACLs)**: allows you to manipulate ACLs on resources
+* **traverse**: lets you list resources; that is, to read resource metadata, but not resource content
+* **read**: lets you read resource content
+* **write**: lets you write resource content
+* **managing access control lists (ACLs)**: lets you manipulate ACLs on resources
 
 Users can only run processes when they have permission to run the process. IDE users need traverse and read permissions to synchronize with the repository. ACLs apply only at design time because runtime occurs within the system context.
 
