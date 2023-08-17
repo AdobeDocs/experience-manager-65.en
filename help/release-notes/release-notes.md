@@ -96,7 +96,7 @@ Some of the key features and improvements in this release are the following:
 * While editing Metadata Schema Forms, the values of [!UICONTROL On time] and [!UICONTROL Off time] fields are not getting saved correctly. (ASSETS-24871)
 * While generating the Smart Tags report for the trained tags, the tags with low confidence scores are not getting listed. (ASSETS-24109)
 * Experience Manager displays a blank screen while editing and annotating an image in Column view. (ASSETS-24108)
-* Screen readers do not announce the purpose of the Add User field while creating a new collection. (ASSETS-21736)
+* Screen readers do not announce the purpose of the Add User field while creating a collection. (ASSETS-21736)
 * The **Collections** label is not localized on the Collections properties page. (ASSETS-21102)
 * When you add a rule or edit an existing rule using the default Metadata Schema form, the languages in the drop-down list are not localized. (ASSETS-21026)
 * Experience Manager displays an unlocalized error message on adding JSON path in metadata schema. (ASSETS-21025)
@@ -104,15 +104,21 @@ Some of the key features and improvements in this release are the following:
 * Calendar elements do not use the required ARIA attributes. (ASSETS-17282)
 * The left navigation text does not display the appropriate contrast ratio. (ASSETS-17268)
 * The Lightbox image is not hidden from the screen reader users. (ASSETS-17263, ASSETS-17242)
-* The state of an Active user interface does not provide a suitable contrast ratio with respect to the background. (ASSETS-17260)
+* The state of an Active user interface does not provide a suitable contrast ratio regarding the background. (ASSETS-17260)
 * While annotating an Asset, the screen reader does not recognize the [!UICONTROL Save as version] or [!UICONTROL Start workflow] buttons while navigating them using the keyboard arrow keys. (ASSETS-17253)
 * Certain ARIA roles do not contain the appropriate child roles on the Assets home page. (ASSETS-17248)
 * When you navigate to the editing options for an asset of image type using the keyboard, the [!UICONTROL Launch Map] option is not recognized and the keyboard focus goes to the Cancel button instead. (ASSETS-17238)
 
-#### [!DNL Dynamic Media]{#dm-6518}
+#### [!DNL Dynamic Media]{#assets-dm-6518}
 
 * When VTT fails to download, the video is not visible. It shows a blank screen, while the video scrubber is seen progressing forward. (ASSETS-21909) NORMAL
-* Focus is not moving to multiple controls present below the video when navigating using Tab on keyboard. As such, they are not accessible. (ASSETS-25749) NORMAL
+* Focus is not moving to multiple controls present below the video when navigating using Tab on keyboard. As such, they are not accessible. Improved keyboard navigation for interactive videos. (ASSETS-25749) NORMAL
+* Fixed disabled Viewer presets showing in Dynamic Media component. (ASSETS-22922) MINOR
+* Removed "Image Serving" from General Settings Security tab. (ASSETS-24618) NORMAL
+* Fixed assets failing to upload to Dynamic Media and StringIndexOutOfBoundsException. (ASSETS-25787) CRITICAL
+* Added visual asterisk for mandatory 'width' edit field in 'Basic' tab. (ASSETS-25741) NORMAL
+* Fixed download of Watermark Dynamic Media Rendition. (ASSETS-26173) NORMAL
+* Reinstated the 127-character limit for non-video asset names. (ASSETS-26074) MAJOR
 
 ### [!DNL Forms]{#forms-6518}
 
@@ -124,7 +130,7 @@ Some of the key features and improvements in this release are the following:
 
 ### Foundation{#foundation-6518}
 
-#### Content distribution{#content-distribution-6518}
+#### Content distribution{#foundation-content-distribution-6518}
 
 * The asset delete queue should not be blocked and no error should occur in the log file. (NPR-40570) NORMAL
 
@@ -136,37 +142,37 @@ Some of the key features and improvements in this release are the following:
 
 * A -->
 
-#### Platform{#platform-6518}
+#### Platform{#foundation-platform-6518}
 
 * After a vanilla Experience Manager, Service Pack 17 install, you see errors in the `stderr.log`. Vanilla installs should not get errors. (CQ-4353637) MINOR
 * Create button in Tagging screen not respecting ACL (Access Control List). (NPR-40973) MAJOR
 * Unable to create, or access, or both, cache node of ContextHub on Experience Manager. (NPR-40515) CRITICAL
 
-#### Replication{#replication-6518}
+#### Replication{#foundation-replication-6518}
 
 * Replication flush deletes all descendants of the requested path. (NPR-40569) NORMAL
 
-#### Sling{#sling-6518}
+#### Sling{#foundation-sling-6518}
 
-* When a Link Share Report is generate, the column Link does not contain the correct values. (NPR-40798) NORMAL
+* When a Link Share Report is generated, the column Link does not contain the correct values. (NPR-40798) NORMAL
 * With AEM 6.5.15.0, all vanity URLs, sling aliases, and sling mapping are broken after an AEM restart. (NPR-40420) NORMAL
 
-#### Translation projects{#translation-6518}
+#### Translation projects{#foundation-translation-6518}
 
 * Translation `rules.xml` sorted in a poor way when rules are added from the translation configuration user interface. (NPR-40431) MAJOR
 * Support links with query parameters during translation. (NPR-40339) NORMAL
 * Dictionary user interface is not loading for the customer after updating additional context root. (NPR-40650) MAJOR
 * Error creating language copies when one of the assets is a Content Fragment that contains a multi-field with ReferenceFragment or ContentFragment types. (NPR-40892) MAJOR
 
-#### User interface{#ui-6518}
+#### User interface{#foundation-ui-6518}
 
-* As described in the [Configuration Browser documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _The Name will become the node name in the repository_. However, in Configuration Browser, Configuration Title is used for Path in CRXDE Lite, and the Name of the Configuration is ignored. (NPR-40607) MINOR
+* As described in the [Configuration Browser documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _The Name becomes the node name in the repository_. However, in Configuration Browser, Configuration Title is used for Path in CRXDE Lite, and the Name of the Configuration is ignored. (NPR-40607) MINOR
 
 <!-- #### WCM{#wcm-6518}
 
 * A -->
 
-#### Workflow{#workflow-6518}
+#### Workflow{#foundation-workflow-6518}
 
 * Reverting an asset version keeps the asset status in processing mode. (NPR-41029) NORMAL
 * Sorting issue on Assets and Projects user interface. Some have overlaid the custom columns on Assets and Projects user interface as per business requirements. They have implemented a sort using the out-of-the-box property `sortable=true`. However, they are seeing inconsistencies in sorting when there are many entries under Projects or Assets user interface. (NPR-41027) NORMAL
@@ -203,7 +209,7 @@ Some of the key features and improvements in this release are the following:
 
 >[!NOTE]
 >
->Dialog on Package Manager UI sometimes exits during the installation of the service pack. Adobe recommends that you wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installations is successful. Typically, this issue occurs in [!DNL Safari] browser but can intermittently occur on any browser.
+>Dialog on Package Manager UI sometimes exits during the installation of the service pack. Adobe recommends that you wait for error logs to stabilize before accessing the deployment. Wait for the specific logs related to the uninstall of the updater bundle before being assured that the installation is successful. Typically, this issue occurs in [!DNL Safari] browser but can intermittently occur on any browser.
 
 **Automatic installation**
 
