@@ -67,7 +67,7 @@ First of all, check the connection between the author and publish instances and 
 
 ## Editing Form Content {#editing-form-content}
 
-Forms dedicated to Adobe Campaign have specific components. These components have an option to allow you to link each field of the form to a field in the Adobe Campaign database.
+Forms dedicated to Adobe Campaign have specific components. These components have an option to let you link each field of the form to a field in the Adobe Campaign database.
 
 >[!NOTE]
 >

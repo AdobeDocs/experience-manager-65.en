@@ -20,7 +20,7 @@ This tutorial is a step in the [Create your first Interactive Communication](/he
 
 ## About the tutorial {#about-the-tutorial}
 
-AEM Forms data integration module allows you to create a form data model from disparate backend data sources such as AEM user profile, RESTful web services, SOAP-based web services, OData services, and relational databases. You can configure data model objects and services in a form data model and associate it with an adaptive form. Adaptive form fields are bound to data model object properties. The services enable you to prefill the adaptive form and write submitted form data back to the data model object.
+AEM Forms data integration module lets you create a form data model from disparate backend data sources such as AEM user profile, RESTful web services, SOAP-based web services, OData services, and relational databases. You can configure data model objects and services in a form data model and associate it with an adaptive form. Adaptive form fields are bound to data model object properties. The services enable you to prefill the adaptive form and write submitted form data back to the data model object.
 
 For more information about form data integration and form data model, see [AEM Forms Data Integration](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -392,7 +392,7 @@ Do the following to run the test:
 
 ### Edit and save sample data {#edit-and-save-sample-data}
 
-Form data model editor allows you to generate sample data for all data model object properties, including computed properties, in a form data model. It is a set of random values that comply with the data type configured for each property. You can also edit and save data, which is retained even if you regenerate the sample data.
+Form data model editor lets you generate sample data for all data model object properties, including computed properties, in a form data model. It is a set of random values that comply with the data type configured for each property. You can also edit and save data, which is retained even if you regenerate the sample data.
 
 Do the following to generate, edit, and save sample data:
 

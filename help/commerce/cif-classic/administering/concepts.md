@@ -109,7 +109,7 @@ The framework gives you access to functionality such as:
 
 AEM eCommerce is implemented with an eCommerce engine:
 
-* The eCommerce integration framework has been built to allow you to easily integrate an eCommerce engine with AEM. The purpose built eCommerce engine controls product data, shopping carts, checkout and order fulfillment, while AEM controls the data display and marketing campaigns.
+* The eCommerce integration framework has been built to let you easily integrate an eCommerce engine with AEM. The purpose built eCommerce engine controls product data, shopping carts, checkout and order fulfillment, while AEM controls the data display and marketing campaigns.
 
 
 >[!NOTE]
@@ -192,7 +192,7 @@ Though the actual location can depend on your implementation; for example, gener
 
 #### Structural versus Marketing Categories {#structural-versus-marketing-categories}
 
-If the following two categories can be differentiated, then this allows you to make clear URLs with a meaningful structure (trees of `cq:Page` nodes) and therefore, very close to classical AEM content management):
+If the following two categories can be differentiated, then this lets you make clear URLs with a meaningful structure (trees of `cq:Page` nodes) and therefore, very close to classical AEM content management):
 
 * *Structural *categories
 
@@ -522,7 +522,7 @@ In AEM:
 
 ### Promotions {#promotions}
 
-Promotions, together with vouchers, allow you to realize scenarios such as:
+Promotions, together with vouchers, let you realize scenarios such as:
 
 * A company provides custom prices for employees, which is a handcrafted list of users.
 * Long-term customers receive discounts on all orders.
@@ -628,7 +628,7 @@ Single Sign-on (SSO) is provided, so that authors are known in both AEM and the 
 
 Transaction data from the eCommerce engine is combined with personal information about the shopper. AEM uses some of this data as profile data. A form's action in AEM writes information back to the eCommerce engine.
 
-There is a page which allows you to easily manage your account information. You can access it by clicking **My Account** at the top of a Geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
+There is a page which lets you easily manage your account information. You can access it by clicking **My Account** at the top of a Geometrixx page, or by navigating to `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
@@ -636,7 +636,7 @@ There is a page which allows you to easily manage your account information. You 
 
 Your site needs to store a selection of addresses; including delivery, billing, and alternative addresses. This can be implemented using forms based on your default address format or you can use the Address Book component provided by AEM.
 
-This Address Book component allows you to:
+This Address Book component lets you:
 
 * edit addresses in the book
 * select an address from the book for shipping address
@@ -859,4 +859,4 @@ If you require a more thorough implementation, you can either:
 * Extend the default search component with the functionality that you need.
 * Implement the search method in your `CommerceService` and then use the eCommerce search component on your search page.
 
-When using an eCommerce engine, the eCommerce search API can be fully implemented in the eCommerce engine solution, so you can use the eCommerce search component that is provided out-of-the-box. The faceted search allows you to search either JCR and/or the engine:
+When using an eCommerce engine, the eCommerce search API can be fully implemented in the eCommerce engine solution, so you can use the eCommerce search component that is provided out-of-the-box. The faceted search lets you search either JCR and/or the engine:

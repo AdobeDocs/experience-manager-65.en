@@ -96,7 +96,7 @@ After performing these steps, your app will be enabled to report all the lifecyc
 
 There are several tracking APIs provided in the [AMS Phonegap Plugin API.](https://github.com/Adobe-Marketing-Cloud/mobile-services/blob/master/docs/ios/phonegap/phonegap-methods.md)
 
-These will allow you to track states and actions such as where pages your users are navigating to in your app, which controls are being used the most. The easiest way to instrument your app for tracking is to use the Analytics APIs provided by the AMS plugin.
+These will let you track states and actions such as where pages your users are navigating to in your app, which controls are being used the most. The easiest way to instrument your app for tracking is to use the Analytics APIs provided by the AMS plugin.
 
 * ADB.trackState()
 * ADB.trackAction()

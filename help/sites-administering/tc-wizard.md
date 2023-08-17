@@ -31,7 +31,7 @@ To access this wizard:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. The **Select Source** step of the wizard allows you to add/remove pages. You also have the option of including or excluding the subpages.
+1. The **Select Source** step of the wizard lets you add/remove pages. You also have the option of including or excluding the subpages.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 

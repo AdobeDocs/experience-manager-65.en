@@ -122,7 +122,7 @@ The following options are available in the toolbar, in the left rail, and in the
 
 * **[!UICONTROL Properties]** option opens the [!UICONTROL Properties] page of the specific subasset.
 
-* **[!UICONTROL Annotate]** option allows you to annotate the specific subasset. The annotations you use on separate subassets are collected and displayed together when the parent asset is opened for viewing.
+* **[!UICONTROL Annotate]** option lets you annotate the specific subasset. The annotations you use on separate subassets are collected and displayed together when the parent asset is opened for viewing.
 
 * **[!UICONTROL Page Overview]** option displays all the subassets simultaneously.
 
@@ -130,7 +130,7 @@ The following options are available in the toolbar, in the left rail, and in the
 
 ## Best practices and limitation {#best-practice-limitation-tips}
 
-* Subasset generation can be very resource intensive on any [!DNL Experience Manager] deployment. If you are generating subassets when complex assets are uploaded, then add the step in the DAM Update Asset workflow. If you are generating subassets on-demand then create a separate workflow to generate subassets. A dedicated workflow allows you to skip the other steps in DAM Update Asset workflow and save computational resources.
+* Subasset generation can be very resource intensive on any [!DNL Experience Manager] deployment. If you are generating subassets when complex assets are uploaded, then add the step in the DAM Update Asset workflow. If you are generating subassets on-demand then create a separate workflow to generate subassets. A dedicated workflow lets you skip the other steps in DAM Update Asset workflow and save computational resources.
 
 >[!MORELIKETHIS]
 >

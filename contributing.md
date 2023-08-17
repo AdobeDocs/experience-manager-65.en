@@ -29,11 +29,11 @@ Which method you choose depends on how comfortable you are editing the documenta
 
 Do you have a suggestion, observation about the current docs, or question the way something is described? Then create an issue. Issues are also excellent if you have something to contribute, but don't feel comfortable editing the docs or making a pull request yourself.
 
-Issues allow you to easily describe your idea for improvement to the docs and an AEM Docs Team member can review it. Simply click on the **Log an issue** link at the top of the right navigation panel on any page to create an issue.
+Issues let you easily describe your idea for improvement to the docs and an AEM Docs Team member can review it. Simply click on the **Log an issue** link at the top of the right navigation panel on any page to create an issue.
 
 ### Create a Pull Request {#create-a-pull-request}
 
-If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests allow you to make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
+If you see a problem and know exactly how to fix it, consider creating a pull request. Pull requests let you make your own edits to the documentation, which are then reviewed for inclusion by an AEM Docs Team member. Simply click the **Edit this page** link at the top of the right navigation panel on any page to make your suggested changes and create the pull request.
 
 All pull requests must be accompanied by a signed [contributor license agreement or CLA](https://opensource.adobe.com/cla.html). This gives Adobe permission to redistribute your contributions as part of the project. You only need to submit an Adobe CLA one time, so if you have submitted one previously, you are good to go!
 

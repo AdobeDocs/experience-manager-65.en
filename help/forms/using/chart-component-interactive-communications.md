@@ -17,7 +17,7 @@ exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
 
 A chart or a graph is a visual representation of data. It condenses large amounts of information into easy-to-understand visual format, enabling the recipients of the Interactive Communication to better visualize, interpret, and analyze complex data.
 
-While creating an Interactive Communication, you can add charts to visually represent two-dimensional data from the Interactive Communication's form data model. The Chart component allows you to add and configure the following types of charts: Pie, Column, Donut, Bar, Line, Line and Point, Point, Area, and Quadrant.
+While creating an Interactive Communication, you can add charts to visually represent two-dimensional data from the Interactive Communication's form data model. The Chart component lets you add and configure the following types of charts: Pie, Column, Donut, Bar, Line, Line and Point, Point, Area, and Quadrant.
 
 ## Add and configure chart in an Interactive Communication {#add-and-configure-chart-in-an-interactive-communication}
 

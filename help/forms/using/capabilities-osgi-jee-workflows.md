@@ -8,7 +8,7 @@ exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 
 ## AEM Inbox and HTML Workspace {#aem-inbox-and-html-workspace}
 
-You can use AEM Inbox to run and monitor Forms-centric AEM Workflows on OSGi. Whereas, HTML Workspace allows you to run and monitor AEM Forms JEE Workflows. The following table helps you understand various important actions available in AEM Inbox for Forms-centric AEM Workflows on OSGi and in HTML Workspace for AEM Forms JEE Workflows.
+You can use AEM Inbox to run and monitor Forms-centric AEM Workflows on OSGi. Whereas, HTML Workspace lets you run and monitor AEM Forms JEE Workflows. The following table helps you understand various important actions available in AEM Inbox for Forms-centric AEM Workflows on OSGi and in HTML Workspace for AEM Forms JEE Workflows.
 
 <table>
  <tbody>

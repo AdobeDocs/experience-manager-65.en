@@ -41,7 +41,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### Obtain public certificate by creating Smart Content Service configuration {#obtain-public-certificate}
 
-A public certificate allows you to authenticate your profile on Adobe Developer Console.
+A public certificate lets you authenticate your profile on Adobe Developer Console.
 
 1. In the [!DNL Experience Manager] user interface, access **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
 

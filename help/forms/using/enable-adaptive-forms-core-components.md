@@ -19,7 +19,7 @@ role: Admin, Developer
 
 **Applies to:** ✅ Adaptive Form Core Components ❎ Adaptive Form Foundation Components.
 
-Enabling Adaptive Forms Core Components allows you to start creating, publishing, and delivering [Core Components based Adaptive Forms](create-an-adaptive-form-core-components.md) and [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) from your AEM 6.5 Forms environment. 
+Enabling Adaptive Forms Core Components lets you start creating, publishing, and delivering [Core Components based Adaptive Forms](create-an-adaptive-form-core-components.md) and [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) from your AEM 6.5 Forms environment. 
 
 To enable HAdaptive Forms Core Components on your AEM 6.5 Forms environment, setup and deploy an [AEM Archetype 41 or later](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) based project (with forms options enabled) on all of your Author and Publish instances. 
 

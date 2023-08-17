@@ -557,7 +557,7 @@ Optional OSGi services can be implemented to customize various parts of the port
  <tbody>
   <tr>
    <td>RequestTracker</td>
-   <td>The request tracker gets notified whenever content is displayed by the portlet. This allows you to keep track of the invocations of the portlet.</td>
+   <td>The request tracker gets notified whenever content is displayed by the portlet. This lets you keep track of the invocations of the portlet.</td>
   </tr>
   <tr>
    <td>InvocationContextListener</td>
@@ -585,7 +585,7 @@ Optional OSGi services can be implemented to customize various parts of the port
   </tr>
   <tr>
    <td>TextMapper</td>
-   <td>Allows you to post process HTML, CSS and JavaScript files.</td>
+   <td>Lets you post process HTML, CSS and JavaScript files.</td>
   </tr>
   <tr>
    <td>ToolbarButton</td>

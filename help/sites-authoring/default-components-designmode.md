@@ -129,15 +129,15 @@ To either enable or disable a component:
 
    **Properties**
 
-   The **Properties** tab allows you to configure the important design parameters of the component. For example for an image component you can define the maximum and minimum size of the image allowed.
+   The **Properties** tab lets you configure the important design parameters of the component. For example for an image component you can define the maximum and minimum size of the image allowed.
 
    **Features**
 
-   The **Features** tab allows you to enable or disable additional features of the component. For example, for an image component you can define the orientation of the image, the cropping options available, and if an image can be uploaded.
+   The **Features** tab lets you enable or disable additional features of the component. For example, for an image component you can define the orientation of the image, the cropping options available, and if an image can be uploaded.
 
    **Styles**
 
-   The **Styles** tab allows you to define the CSS classes and styles to be used with the compoent.
+   The **Styles** tab lets you define the CSS classes and styles to be used with the compoent.
 
    ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
 

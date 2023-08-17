@@ -11,9 +11,9 @@ Learn how to use AEM's Assets REST API to manage Content Fragments and the Graph
 
 [Now that you have created some content fragments,](create-content-fragment.md) you can use AEM's APIs to deliver them headlessly.
 
-* [The GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) allows you to create requests to access and deliver Content Fragments. 
+* [The GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) lets you create requests to access and deliver Content Fragments. 
    * To use this, [endpoints must be defined and enabled in AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), and if necessary, the [GraphiQL interface installed](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
-* [The Assets REST API](/help/assets/assets-api-content-fragments.md) allows you to create and modify Content Fragments (and other assets).
+* [The Assets REST API](/help/assets/assets-api-content-fragments.md) lets you create and modify Content Fragments (and other assets).
 
 The remainder of this guide focuses on GraphQL access and Content Fragment delivery.
 
@@ -25,7 +25,7 @@ Information architects must design queries for their channel endpoints to delive
    * For example: `http://<host>:<port>/aem/graphiql.html`.
 
 1. The GraphiQL is an in-browser query editor for GraphQL. You can use it to build queries to retrieve Content Fragments to deliver them heedlessly as JSON.
-   * The left panel allows you to build your query.
+   * The left panel lets you build your query.
    * The right panel displays the results.
    * The query editor features code completion and hotkeys to easily execute the query.
    ![GraphiQL editor](assets/graphiql.png)

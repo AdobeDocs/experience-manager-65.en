@@ -16,7 +16,7 @@ exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 >
 >[API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available.
 
-The integration framework includes an integration layer with an API. This allows you to build AEM components for eCommerce capabilities (independent of your specific eCommerce engine). It also allows you to use the internal CRX database or to plug in an eCommerce system and pull product data into AEM.
+The integration framework includes an integration layer with an API. This lets you build AEM components for eCommerce capabilities (independent of your specific eCommerce engine). It also lets you use the internal CRX database or to plug in an eCommerce system and pull product data into AEM.
 
 A number of out-of-the-box AEM components are provided to use the integration layer. Currently these are:
 
@@ -27,7 +27,7 @@ A number of out-of-the-box AEM components are provided to use the integration la
 * Check-out
 * Search
 
-For search an integration hook is provided that allows you to use the AEM search, a third party search or a combination thereof.
+For search an integration hook is provided that lets you use the AEM search, a third party search or a combination thereof.
 
 ## eCommerce Engine Selection {#ecommerce-engine-selection}
 

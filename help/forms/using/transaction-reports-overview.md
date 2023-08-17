@@ -14,7 +14,7 @@ exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 
 ## Introduction {#introduction}
 
-Transaction reports in AEM Forms allow you to keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
+Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
 * Submission of an adaptive form, an HTML5 Form, or a form set
 * Rendition of a print or a web version of an interactive communication

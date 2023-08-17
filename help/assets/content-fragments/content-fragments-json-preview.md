@@ -18,5 +18,5 @@ You can view the JSON representation of the current fragment. For example:
 ![Content Fragment Editor - Preview of a Fragment](assets/cfm-preview-02.png)
 
 <!--
-**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+**Copy URL** lets you copy to clipboard the URL for either author or publish.
 -->

@@ -1,8 +1,8 @@
 ---
 title: Connecting AEM Forms with Adobe LiveCycle
 seo-title: Connecting AEM Forms with Adobe LiveCycle
-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
-seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
+description: AEM LiveCycle connector lets you start LiveCycle ES4 Document Services from within AEM apps and workflows.
+seo-description: AEM LiveCycle connector lets you start LiveCycle ES4 Document Services from within AEM apps and workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -159,7 +159,7 @@ LiveCycle Client SDK configuration contains a setting about service names. This 
 
 ### RunAsManager {#runasmanager}
 
-As part of the integration, a new service RunAsManager is provided. It allows you to programmatically control credential to be used when making call to LiveCycle server.
+As part of the integration, a new service RunAsManager is provided. It lets you programmatically control credential to be used when making call to LiveCycle server.
 
 ```java
 import com.adobe.livecycle.dsc.clientsdk.security.PasswordCredential;

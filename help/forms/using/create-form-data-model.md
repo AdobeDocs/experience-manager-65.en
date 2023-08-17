@@ -18,7 +18,7 @@ This tutorial is a step in the [Create Your First Adaptive Form](../../forms/usi
 
 ## About the tutorial {#about-the-tutorial}
 
-AEM [!DNL Forms] data integration module allows you to create a form data model from disparate backend data sources such as AEM user profile, RESTful web services, SOAP-based web services, OData services, and relational databases. You can configure data model objects and services in a form data model and associate it with an adaptive form. Adaptive form fields are bound to data model object properties. The services enable you to prefill the adaptive form and write submitted form data back to the data model object.
+AEM [!DNL Forms] data integration module lets you create a form data model from disparate backend data sources such as AEM user profile, RESTful web services, SOAP-based web services, OData services, and relational databases. You can configure data model objects and services in a form data model and associate it with an adaptive form. Adaptive form fields are bound to data model object properties. The services enable you to prefill the adaptive form and write submitted form data back to the data model object.
 
 For more information about form data integration and form data model, see [AEM Forms Data Integration](../../forms/using/data-integration.md).
 

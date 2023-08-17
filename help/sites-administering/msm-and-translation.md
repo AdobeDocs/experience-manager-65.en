@@ -19,7 +19,7 @@ The following administration tools are available for managing websites and pages
 
     * [Reusing Content: Multi Site Manager and Live Copy](/help/sites-administering/msm.md)
 
-* Translation allows you to automate the translation of page content, assets, and user-generated content to create and maintain multilingual websites:
+* Translation lets you automate the translation of page content, assets, and user-generated content to create and maintain multilingual websites:
 
     * [Translating Content for Multilingual Sites](/help/sites-administering/translation.md)
 

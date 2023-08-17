@@ -29,7 +29,7 @@ A sample forms portal page
 
 ### Search and Lister {#search-and-lister}
 
-The Search and Lister component allow you to add the following functionality to your forms portal:
+The Search and Lister component let you add the following functionality to your forms portal:
 
 * List forms in panel, card, or grid view that are available out of the box. It also supports custom templatesList forms from specific folders in Forms Manager.
 * Specify how forms are rendered - HTML5, PDF, or both.
@@ -44,13 +44,13 @@ You can search for forms in the Forms Portal page by using the following options
 * Full Text Search
 * Advanced Search
 
-Full text search allows you to find and list forms based on the specified keywords.
+Full text search lets you find and list forms based on the specified keywords.
 
 ![An advanced search dialog](assets/search-panel.png)
 
 An advanced search dialog
 
-Advance Search allows you to search forms based on specified form properties. This provides a more specific result than full-text search. Advance search includes search based on tags, properties (such as Author, Description, and Title), modification date, and full text.
+Advance Search lets you search forms based on specified form properties. This provides a more specific result than full-text search. Advance search includes search based on tags, properties (such as Author, Description, and Title), modification date, and full text.
 
 Lister displays forms based on the search parameters. Each form in the search result is displayed with an icon, which is hyperlinked to the associated form. You can click the icon to open and work with the associated form.
 

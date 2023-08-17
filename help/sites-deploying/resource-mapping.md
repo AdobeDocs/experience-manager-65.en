@@ -46,7 +46,7 @@ These lists can be viewed (together with configuration information) under the **
   Shows the current configuration (as defined for the [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)).
 
 * Configuration Test
-  This allows you to enter a URL or resource path. Click **Resolve** or **Map** to confirm how the system will transform the entry.
+  This lets you enter a URL or resource path. Click **Resolve** or **Map** to confirm how the system will transform the entry.
 
 * **Resolver Map Entries**
   The list of entries used by the ResourceResolver.resolve methods to map URLs to Resources.
