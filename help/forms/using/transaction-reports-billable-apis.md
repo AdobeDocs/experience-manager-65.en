@@ -320,7 +320,7 @@ Billing APIs does not account for the number of pages, the length of a document 
 </table>
 
 Invoke is considered a transaction that depends on the operation being performed. It is considered a transaction when you perform the following operations:
-1. Non-PDF to PDF conversion. For example, XDP to PDF conversion, Word to PDF conversion.
+1. Non-PDF to PDF conversion. For example, XDP to PDF conversion (For interactive as well as non-interactive communication), Word to PDF conversion.
 1. PDF to PDF/A conversion.
 1. PDF to Non-PDF conversion. For example, PDF to Image conversion, PDF to Text conversion.
 
