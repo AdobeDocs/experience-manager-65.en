@@ -17,13 +17,13 @@ You use workflow models to convert a business logic to automated repetitive proc
 
 ## Forms Workflow Steps {#forms-workflow-steps}
 
-Forms workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps let you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
+Forms Workflow steps perform AEM Forms-specific operations in an AEM workflow. These steps let you rapidly build adaptive forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal- and across- the-firewall business processes. You can also use Forms Workflow steps to start document services, integrate with Adobe Sign signature workflow, and perform other AEM Forms operations. You require [AEM Forms add-on](https://www.adobe.com/go/learn_aemforms_documentation_63) to use these steps in a workflow.
 
 Forms-centric workflow steps perform AEM Forms-specific operations in an AEM Workflow. These steps let you rapidly build Adaptive Forms based Forms-centric workflow on OSGi. These workflows can be used for developing basic review- and approval-workflows, internal and across- the-firewall business processes.
 
 >[!NOTE]
 >
->If the workflow model is marked for an external storage, then for all the Forms workflow steps, you can select only the variable option to store or retrieve data files and attachments.
+>If the workflow model is marked for an external storage, then for all the Forms Workflow steps, you can select only the variable option to store or retrieve data files and attachments.
 
 ## Assign task step {#assign-task-step}
 
@@ -52,7 +52,7 @@ You can also use the component to control the behavior of the task. For example,
 
 >[!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM Inbox.  
 
 * **Adaptive Form or Interactive Communication Path**: Specify the path of the adaptive form or Interactive Communication. You can use the adaptive form or interactive communication that is submitted to the workflow, available at an absolute path, or retrieve the adaptive form from a path stored in a variable of string data type.
 * **Select input PDF using:** Specify the path of a non-interactive PDF document. The field is available when you choose a non-interactive PDF document in the Type field. You can select the input PDF using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/PDF/credit-card.pdf. The path does not exist in crx-repository. An administrator creates the path before using it. You require a Document of Record option enabled or form template based adaptive forms for using the PDF Path option.
@@ -263,7 +263,7 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
 * **Select Input JSON document using**: The JSON file containing values for all the service arguments. Path of the JSON file can be **relative to the payload** or an **absolute path.** You can also retrieve the input JSON document using a variable of JSON or Form Data Model data type.
 
 * **JSON Dot Notation:** Leave the field blank to use all the objects of the specified JSON file as input for service arguments. To read a specific JSON object from the specified JSON file as input for service arguments, specify dot notation for the JSON object, for example, If you have a JSON similar to the one listed at the start of the section, specify insurance.customerDetails to provide all the details of a customer as input to the service.
-* **Output of service &gt; Map and write output values to variable or metadata:** Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Specify the name of the metadata property and select the corresponding service output attribute to be mapped with metadata property, for example, map the phone_number returned by output service with the phone_number property of workflow metadata. Similarly, you can store the output in a variable of Long data type.When you select a property for the **[!UICONTROL Service output attribute to be mapped]** option, only variables capable of storing data of the selected property are populated for the **[!UICONTROL Save the output to]** option.
+* **Output of service &gt; Map and write output values to variable or metadata:** Select the option to save the output values as properties of the workflow instance metadata node in crx-repository. Specify the name of the metadata property and select the corresponding service output attribute to be mapped with metadata property, for example, map the phone_number returned by output service with the phone_number property of workflow metadata. Similarly, you can store the output in a variable of Long data type. When you select a property for the **[!UICONTROL Service output attribute to be mapped]** option, only variables capable of storing data of the selected property are populated for the **[!UICONTROL Save the output to]** option.
 
 * **Output of service &gt; Save output to variable or a JSON file:** Select the option to save the output values in a JSON file at an absolute path, at a path relative to payload, or in a variable . 
 * **Save Output JSON document using below options:** Save the output JSON file. The path of the output JSON file can be relative to the payload or an absolute path. You can also save the output JSON file using a variable of JSON or Form Data Model data type.
@@ -272,7 +272,7 @@ The Invoke Form Data Model Service step has the below listed fields to facilitat
 
 The Sign Document step enables you to use Adobe Sign to sign documents. The Sign Document step has the following properties:
 
-* **Agreement Name:** Specify the title of the agreement. The agreement name becomes part of the subject and body text of the email sent to the signers. You can either store the name in a variable of String data type or select **Literal** to add the name manually.
+* **Agreement Name:** Specify the title of the agreement. The agreement name becomes part of the subject and body text of the email sent to the recipients. You can either store the name in a variable of String data type or select **Literal** to add the name manually.
 
 * **Locale:** Specify the language for the email and verification options. You can either store the locale in a variable of String data type or select **Literal** to choose the locale from the list of available options. You must define the locale code while storing the value for the locale in a variable. For example, specify **en_US** for English and **fr_FR** for French.
 
@@ -287,21 +287,33 @@ The Sign Document step enables you to use Adobe Sign to sign documents. The Sign
   If you specify the path of a folder, for example, attachments, all the files directly available in the folder are attached to Signing Document. If any files are available in the folders directly available in the specified attachment path, the files are included in Signing Document as attachments. If there are any folders in directly available folders, those are skipped.
 
 * **Days Until Deadline:** A document is marked due (passed deadline) after there is no activity on the task for the number of days specifies in the **Days Until Deadline** field. The number of days are counted after the documented is assigned to a user for signing.
-* **Reminder Email Frequency:** You can send a reminder email at daily or weekly interval. The week is counted from the day the documented is assigned to a user for signing.
-* **Signature Process:** You can choose to sign a document in a sequential or a parallel order. In sequential order, one signer receives the document at a time for signing. After the first signer completes signing the document, then the document is sent to the second signer, and so on. In parallel order, multiple signers can sign a document at a time.  
+* **Reminder Email Frequency:** You can send a reminder email at daily or weekly interval. The week is counted from the day the document is assigned to a user for signing.
+* **Signature Process:** You can choose to sign a document in a sequential or a parallel order. In sequential order, one recipient receives the document at a time for signing. After the first recipient completes signing the document, the document is sent to the second recipient, and so on. In parallel order, multiple recipients can sign a document at a time.
 * **Redirection URL:** Specify a redirection URL. After the document is signed, you can redirect the assignee to a URL. Usually, this URL contains a thank you message or further instructions.
 * **Workflow Stage:** A workflow can have multiple stages. These stages are displayed in the AEM Inbox. You can define these stages in the properties of the model (Sidekick &gt; Page &gt; Page Properties &gt; Stages).
-* **Select Signers:** Specify the method to choose signers for the document. You can dynamically assign the workflow to a user or a group or manually add details of a signer.
-* **Script or service to select signers:** The option is available only if the Dynamically option is selected in the Select Signers field. You can specify an ECMAScript or a service to choose signers and verification options for a document.  
-* **Signer Details:** The option is available only if the Manually option is selected in the Select Signers field. Specify email address and choose an optional verification mechanism. Before selecting a 2-step verification mechanism, ensure that the corresponding verification option is enabled for the configured Adobe Sign account. You can use a variable of String data type to define values for **[!UICONTROL Email]**, **[!UICONTROL Country Code]**, and **[!UICONTROL Phone Number]** fields. The **[!UICONTROL Country Code]** and **[!UICONTROL Phone Number]** fields display only if you select **[!UICONTROL Phone Verification]** from the **[!UICONTROL 2-step verification]** drop-down list. 
+* **Select Recipients:** Specify the method to choose recipient for the document. You can dynamically assign the workflow to a user or a group or manually add details of a recipient. When you select Manually in the dropdown, you add recipient details such as Email, Role, and Authentication method.
+
+    >[!NOTE]
+    >
+    >* In the Role section, you can specify the recipient role as Signer, Approver, Acceptor, Certified Recipient, Form Filler, and Delegator.
+    >* If you select Delegator in the Role option, the Delegator can assign the sign task to another recipients.
+    >* If you have configured an authentication method for [!DNL Adobe Sign], based on your configuration you select an authentication method such as Phone based authentication, Social Identity based authentication, Knowledge based authentication, Government Identity based authentication.
+* **Script or service to select recipients:** The option is available only if you select Dynamically option in the Select Recipients field. You can specify an ECMAScript or a service to choose recipients and verification options for a document.
+* **Recipient Details:** The option is available only if the Manually option is selected in the Select Recipients field. Specify email address and choose an optional verification mechanism. Before selecting a 2-step verification mechanism, ensure that the corresponding verification option is enabled for the configured Adobe Sign account. You can use a variable of String data type to define values for **[!UICONTROL Email]**, **[!UICONTROL Country Code]**, and **[!UICONTROL Phone Number]** fields. The **[!UICONTROL Country Code]** and **[!UICONTROL Phone Number]** fields display only if you select **[!UICONTROL Phone Verification]** from the **[!UICONTROL 2-step verification]** drop-down list.
 * **Status Variable:** An Adobe Sign enabled document stores signing status of the document in a variable of String data type. Specify the name of the status variable (adobeSignStatus). A status variable of an instance is available in CRXDE at /etc/workflow/instances/&lt;server&gt;/&lt;date-time&gt;/&lt;instance of workflow model&gt;/workItems/&lt;node&gt;/metaData contains status of a variable.
+* **[!UICONTROL Signed Document]**: You can save the Signed Document status to Variable. To add electronic signature audit trail for greater security and legality to your Signed Document, you can Include Audit Report. You can save the Signed Document using Variable or Payload folder.
+    >[!NOTE]
+    >
+    > The Audit Report is appended to the last page of the signed document.
+<!--
 * **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
+-->
 
 ## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. AEM Forms provides a separate AEM Workflow step for each document service.
 
-Similar to other AEM Forms workflow steps, such as Assign Task, Send Email, and Sign Document, you can use variables in all AEM Document services steps. For more information on creating and managing variables, see [Variables in AEM workflows](../../forms/using/variable-in-aem-workflows.md).
+Similar to other AEM Forms Workflow steps, such as Assign Task, Send Email, and Sign Document, you can use variables in all AEM Document services steps. For more information on creating and managing variables, see [Variables in AEM workflows](../../forms/using/variable-in-aem-workflows.md).
 
 ### Apply Document Time Stamp step {#apply-document-time-stamp-step}
 
@@ -332,7 +344,7 @@ Generates a PDF document from supplied URL, HTML, and ZIP file.
 
 ### Export Data step {#export-data-step}
 
-Exports data from a PDF forms or XDP file. It requires you to enter the file path of Input Document and the Export Data Format. The options for Export Data Format are Auto, XDP and XmlData.
+Exports data from a PDF forms or XDP file. It requires you to enter the file path of Input Document and the Export Data Format. The options for Export Data Format are Auto, XDP, and XmlData.
 
 ### Export PDF to specified type step {#export-pdf-to-specified-type-step}
 
@@ -393,7 +405,7 @@ Send a document directly to a printer. It supports the following printing access
 
 ### Generate Printed Output Step {#generatePrintedOutput}
 
-The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs or form designs are located on the network, local file system, or HTTP location, use the generatePrintedOutput operation operation.
+The step generates a PCL, PostScript, ZPL, IPL, TPCL, or DPL output given a form design and data file. The data file is merged with the form design and formatted for printing. The output generated by this step can be sent directly to a printer or saved as file. It is recommended that you use this step when you want to use form designs or data from an application. If your form designs or form designs are located on the network, local file system, or HTTP location, use the generatePrintedOutput operation.
 
 For example, your application requires that you merge a form design with a data file. The data contains hundreds of records. In addition, it requires the output is sent to a printer that supports ZPL. The form design and your input data are located in an application. Use the generatePrintedOutput operation to merge each record with a form design and send the output to a printer that supports ZPL.
 
@@ -403,13 +415,13 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Select template file using]**: Specify the path of the template file. You can select the template file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it. Moreover, you can also accept payload as the input data file.
 
-* **[!UICONTROL Select data document using]**: Specify the path of a input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
+* **[!UICONTROL Select data document using]**: Specify the path of an input data file. You can select the input data file using the path that is relative to the payload, saved at an absolute path, or using a variable of Document data type. For example, [Payload_Directory]/Workflow/data.xml. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
 * **[!UICONTROL Printer Format]**: A Print Format value that specifies the page description language to use, when an XDC file is not provided, to generate the output stream. If you provide a literal value, select one of these values:
 
   * **[!UICONTROL Custom PCL]**: Use the option to specify a custom XDC file for PCL.
   * **[!UICONTROL Custom PostScript]**: Use the option to specify a custom XDC file for PostScript.
-  * **[!UICONTROL Custom ZPL]**: Use the option to specify a custom XDC file file for ZPL.
+  * **[!UICONTROL Custom ZPL]**: Use the option to specify a custom XDC file for ZPL.
   * **[!UICONTROL Generic Color PCL (5c)]**: Use a generic color PCL (5c).
   * **[!UICONTROL Generic PostScript Level3]**: Use generic PostScript Level 3.
   * **[!UICONTROL ZPL 300 DPI]**: Use ZPL 300 DPI. The zpl300.xdc is used.
@@ -427,7 +439,7 @@ The Generate Printed Output step has the following properties:
 
 **Output Properties**
 
-* **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at an location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
+* **[!UICONTROL Save output document using]**: Specify the location to save the output file. You can save the output file at a location  which is relative to the payload, in a variable, or specify an absolute location to save the output file. If the path does not exist in crx-repository, an administrator can create the path before using it.
 
 **Advanced Properties**
 
@@ -446,7 +458,7 @@ The Generate Printed Output step has the following properties:
 
 * **[!UICONTROL Copies]**: An integer value that specifies the number of copies to generate for the output. The default value is 1.
 
-* **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
+* **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value. If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
     * **[!UICONTROL Simplex]**: Use single-sided printing.
