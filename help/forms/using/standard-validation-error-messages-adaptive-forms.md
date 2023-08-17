@@ -186,7 +186,7 @@ Using the [Rule Editor's Invoke Service](https://experienceleague.adobe.com/docs
 >[!NOTE]
 >
 > * To use error handlers with the Rule Editor's Invoke service action, configure Adaptive Forms with a form data model. 
-> * A default error handler is provided to display error messages on fields if the error response is in the standard schema. The default error handler can also call the custom error handler if the error response doen not comply with the standard schema.
+> * A default error handler is provided to display error messages on fields if the error response is in the standard schema. You can also call the default error handler from the custom error handler function.
 
 Using Rule Editor, you can:
 
