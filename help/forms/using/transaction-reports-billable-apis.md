@@ -319,11 +319,10 @@ Billing APIs does not account for the number of pages, the length of a document 
  </tbody>
 </table>
 
-Invoke is considered a transaction that depends on the operation being performed. It is considered a transaction when you perform one or more of the following operations:
-1. Non-PDF format to PDF format conversion. For example, XDP format to PDF format conversion (For interactive as well as non-interactive communication), Word to PDF conversion.
-1. PDF format to PDF/A format conversion.
-1. PDF format to Non-PDF format conversion. For example, PDF format to Image format conversion, PDF format to Text format conversion.
-
+The invoke API's usage is counted as a transaction, when you perform one or more of the following operations:
+1. Conversion from non-PDF formats to PDF formats. For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.
+1. Conversion from PDF format to PDF/A format.
+1. Conversion from PDF format to non-PDF formats. Examples encompass the transformation from PDF to Image format or the conversion from PDF to Text format.
 
 >[!NOTE]
 >
