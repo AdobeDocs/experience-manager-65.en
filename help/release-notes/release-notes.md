@@ -32,12 +32,12 @@ mini-toc-levels: 4
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-Some of the key features and improvements in this release are the following:
+Some of the key features and enhancements in this release include the following:
 
-* [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
-* Ability to navigate to the folder location for assets displayed in the search results.
+* Assets, Dynamic Media - [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
+* Assets - Ability to navigate to the folder location for assets displayed in the search results.
 
-## Enhancements in Service Pack 18 {#enhancements-sp18}
+## Forms enhancements in Service Pack 18 {#forms-enhancements-sp18}
 
 <!-- ### Forms{#aem-forms-6518} 
 
