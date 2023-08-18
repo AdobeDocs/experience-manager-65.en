@@ -179,6 +179,10 @@ Some of the key features and improvements in this release are the following:
 * Logs are getting filled up with `NullPointerException` in the `EMailNotificationService`, and emails, which workflows should send, are not getting sent. (NPR-40898) NORMAL
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST  * The timeline is not providing references to the selected content. (NPR-40806) MAJOR-->
 
+### Screens{#screens-6518}
+
+* ActiveMQ is being deprecated in AEM within the next three months. 
+
 ## Install [!DNL Experience Manager] 6.5.18.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
