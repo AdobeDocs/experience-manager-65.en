@@ -69,7 +69,7 @@ There are various aspects to finding a page; you can navigate and/or search:
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
-1. Navigate up the tree using [the breadcrumb in the header](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), which allows you to return to the selected location:
+1. Navigate up the tree using [the breadcrumb in the header](/help/sites-authoring/basic-handling.md#theheaderwithbreadcrumbs), which lets you return to the selected location:
 
    ![qgtap-01](assets/qgtap-01.png)
 

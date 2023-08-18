@@ -14,7 +14,7 @@ exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
 
 Adobe Experience Manager (AEM) content fragments are [created and managed as page-independent assets](/help/assets/content-fragments/content-fragments.md).
 
-They allow you to create channel-neutral content, together with (possibly channel-specific) variations. You can then use these fragments, and their variations, when authoring your content pages.
+They let you create channel-neutral content, together with (possibly channel-specific) variations. You can then use these fragments, and their variations, when authoring your content pages.
 
 >[!CAUTION]
 >

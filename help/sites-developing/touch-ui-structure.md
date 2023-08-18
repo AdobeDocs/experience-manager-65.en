@@ -128,7 +128,7 @@ The overlays live in the editor frame (with all other page authoring elements), 
 A layer is an independent bundle of functionality that can be activated to:
 
 * provide a different view of the page
-* allow you to manipulate and/or interact with a page
+* let you manipulate and/or interact with a page
 
 The layers provide sophisticated functionality for the entire page, as opposed to specific actions on an individual component.
 
@@ -140,7 +140,7 @@ AEM comes with several layers already implemented for page authoring; including 
 
 ### Layer Switcher {#layer-switcher}
 
-The layer switcher allows you to choose the layer you want to use. When closed, it indicates the layer currently in use.
+The layer switcher lets you choose the layer you want to use. When closed, it indicates the layer currently in use.
 
 The layer switcher is available as a drop-down from the toolbar (at the top of the window, within the editor frame).
 

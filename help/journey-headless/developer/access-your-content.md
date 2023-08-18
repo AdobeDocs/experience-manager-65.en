@@ -73,7 +73,7 @@ GraphQL is used in various locations in AEM; for example:
 
 ## AEM GraphQL API {#aem-graphql-api}
 
-The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to allow you to perform (complex) queries on your Content Fragments.
+The AEM GraphQL API is a customized version based on the standard GraphQL API specification, specially configured to let you perform (complex) queries on your Content Fragments.
 
 Content Fragments are used, as the content is structured according to Content Fragment Models. This fulfills a basic requirement of GraphQL.
 
@@ -127,7 +127,7 @@ The **Fragment Reference**:
 
 * Is a specific data type available when defining a Content Fragment Model.
 * References another fragment, dependent on a specific Content Fragment Model.
-* Allows you to create, and then retrieve, structured data.
+* Lets you create, and then retrieve, structured data.
 
   * When defined as a **multifeed**, multiple sub-fragments can be referenced (retrieved) by the prime fragment.
 

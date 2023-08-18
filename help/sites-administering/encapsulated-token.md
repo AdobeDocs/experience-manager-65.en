@@ -33,7 +33,7 @@ In case a publish instance becomes unavailable, all the users authenticated on t
 
 The solution for horizontal scalability is stateless authentication with the use of the new Encapsulated Token support in AEM.
 
-The Encapsulated Token is a piece of cryptography that allows AEM to securely create and validate authentication information offline, without accessing the repository. This way, an authentication request can happen on all the publish instances and with no need for sticky connections. It also has the advantage of improving authentication performance since the repository does not need to be accessed for every authentication request.
+The Encapsulated Token is a piece of cryptography that allows AEM to securely create and validate authentication information offline, without accessing the repository. This way, an authentication request can happen on all the publish instances and with no need for sticky connections. It also has the advantage of improving authentication performance because the repository does not need to be accessed for every authentication request.
 
 You can see how this works in a geographically distributed deployment with MongoMK authors and TarMK publish instances below:
 

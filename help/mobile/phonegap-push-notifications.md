@@ -89,7 +89,7 @@ AEM is configured to use one of three services for push notifications:
 
 *Amazon SNS* and *Pushwoosh* configurations let you send pushed from inside AEM screens.
 
-*Adobe Mobile Services* configuration allows you to configure and send push notifications from within Adobe Mobile Services using an Adobe Analytics account (but the app must be built with this config set to enable AMS push notifications).
+*Adobe Mobile Services* configuration lets you configure and send push notifications from within Adobe Mobile Services using an Adobe Analytics account (but the app must be built with this config set to enable AMS push notifications).
 
 #### Using the Amazon SNS messaging service {#using-the-amazon-sns-messaging-service}
 
@@ -269,7 +269,7 @@ There are two ways to build and deploy your app using PhoneGap.
 
 **Note:** For push notification testing, emulators will not suffice because push notifications use a distinct protocol between the push provider (Apple or Google) and the device. Current Mac/PC hardware and emulators do not support this.
 
-1. *PhoneGap Build* is a service offered by PhoneGap that will build your app for you on their servers, and allow you to download it to your device directly. See PhoneGap Build documentation at `https://build.phonegap.com/` to learn how to set up and use PhoneGap Build.
+1. *PhoneGap Build* is a service offered by PhoneGap that will build your app for you on their servers, and let you download it to your device directly. See PhoneGap Build documentation at `https://build.phonegap.com/` to learn how to set up and use PhoneGap Build.
 
 1. *PhoneGap Command Line Interface* (CLI) lets you use a rich set of PhoneGap commands on your command line to build, debug, and deploy your app. Refer to the PhoneGap developer documentation (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) to learn how to set up and use PhoneGap CLI.
 

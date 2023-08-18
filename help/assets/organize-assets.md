@@ -42,7 +42,7 @@ The most basic way to organize assets is to save these in folders. It is analogo
 
 Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and use artificial intelligence algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, Adobe's artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that let you find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, Adobe's artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
 
 For more information, see the following articles:
 

@@ -11,7 +11,7 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 ---
 # Annotations when Editing a Page{#annotations-when-editing-a-page}
 
-Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content (as opposed, for example, to layout) allow you to add an annotation.
+Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content (as opposed, for example, to layout) let you add an annotation.
 
 An annotation places a colored marker/sticky-note on the page. The annotation allows you (or other users) to leave comments and/or questions for other authors/reviewers.
 
@@ -49,7 +49,7 @@ A special [mode](/help/sites-authoring/author-environment-tools.md#page-modes) i
 
 ### Annotating a Component {#annotating-a-component}
 
-The Annotate mode allows you to create, edit, move or delete annotations on your content:
+The Annotate mode lets you create, edit, move or delete annotations on your content:
 
 1. You can enter Annotate mode using the icon in the toolbar (top right) when editing a page:
 

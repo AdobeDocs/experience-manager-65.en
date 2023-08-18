@@ -513,7 +513,7 @@ Before you can programmatically perform a Directory Manager service operation, y
 
 **Invoke the appropriate user or group operations**
 
-Once you have created the service client, you can then invoke the user or group management operations. The service client allows you to assign, remove, and query domains, user, and groups. Note that it is possible to add either a directory principal or a local principal to a local group, but it is not possible to add a local principal to a directory group.
+Once you have created the service client, you can then invoke the user or group management operations. The service client lets you assign, remove, and query domains, user, and groups. Note that it is possible to add either a directory principal or a local principal to a local group, but it is not possible to add a local principal to a directory group.
 
 **See also**
 
@@ -622,7 +622,7 @@ Before you can programmatically perform a User Management AuthorizationManagerSe
 
 **Invoke the appropriate role or permission operations**
 
-Once you have created the service client, you can then invoke the role or permission operations. The service client allows you to assign, remove, and determine roles and permissions.
+Once you have created the service client, you can then invoke the role or permission operations. The service client lets you assign, remove, and determine roles and permissions.
 
 **See also**
 

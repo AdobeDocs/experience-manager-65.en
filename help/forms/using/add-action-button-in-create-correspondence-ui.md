@@ -1,15 +1,10 @@
 ---
 title: Add custom action/button in Create Correspondence UI
-seo-title: Add custom action/button in Create Correspondence UI
 description: Learn how to add custom action/button in Create Correspondence UI
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
-
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
 ---
@@ -17,7 +12,7 @@ exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
 
 ## Overview {#overview}
 
-The Correspondence Management solution allows you add custom actions to the Create Correspondence user interface.
+The Correspondence Management solution lets you add custom actions to the Create Correspondence user interface.
 
 The scenario in this document explains how you can create a button in the Create Correspondence User Interface to share a letter as a review PDF attached to an email.
 
@@ -355,7 +350,7 @@ The required LiveCycle process that enables email service process.
 >
 >To view what this process does or to create a similar process of your own, you need Workbench.
 
-1. Log in as Administrator to LiveCycle® Server adminui at `https:/[lc server]/:[lc port]/adminui`.
+1. Log in as Administrator to LiveCycle&reg; Server adminui at `https:/[lc server]/:[lc port]/adminui`.
 
 1. Navigate to **Home &gt; Services &gt; Applications and Services &gt; Application Management**.
 

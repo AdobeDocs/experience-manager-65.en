@@ -43,14 +43,14 @@ Information in this journey can of course be useful to other personas, but some 
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of headless in AEM and link out to detailed technical documentation.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, we recommend that you start at the beginning and progress sequentially.
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, Adobe recommends that you start at the beginning and progress sequentially.
 
 |#|Article|Description|
 |---|---|---|
 |0|AEM Headless Content Author Journey|This document|
 |1|[Authoring for AEM Headless - An Introduction](introduction.md)|An introduction to the headless features of Adobe Experience Manager, and how to author content for your project.|
 |2|[Authoring Basics for Headless with AEM](basics.md)|Learn about the concepts and mechanics of authoring content for your Headless CMS using Content Fragments.|
-|3|[Learn about using references in Content Fragments](references.md)|Learn about how to use references in Content Fragments. These also allow you to create and manage multiple levels of structure for your Headless CMS using Nested Fragments.|
+|3|[Learn about using references in Content Fragments](references.md)|Learn about how to use references in Content Fragments. These also let you create and manage multiple levels of structure for your Headless CMS using Nested Fragments.|
 |4|[Learn about defining Metadata and Tagging for Content Fragments](metadata-tagging.md)|Learn about defining Metadata and Tagging for Content Fragments.|
 
 ## What's Next {#what-is-next}

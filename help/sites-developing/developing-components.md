@@ -93,13 +93,13 @@ The mechanism to separate logic from appearance helps clarify what is called for
 
 ### Using JavaScript {#using-javascript}
 
-[The HTL JavaScript Use-API enables a HTL file to access helper code written in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). This allows you to use JavaScript code to implement the logic for selecting and configuring the component content.
+[The HTL JavaScript Use-API enables a HTL file to access helper code written in JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). This lets you use JavaScript code to implement the logic for selecting and configuring the component content.
 
 ### Using Client-Side HTML Libraries {#using-client-side-html-libraries}
 
 Modern websites rely heavily on client-side processing driven by complex JavaScript and CSS code. Organizing and optimizing the serving of this code can be a complicated issue.
 
-To help deal with this issue, AEM provides **Client-side Library Folders**, which allow you to store your client-side code in the repository, organize it into categories and define when and how each category of code is to be served to the client. The client-side library system then takes care of producing the correct links in your final web page to load the correct code.
+To help deal with this issue, AEM provides **Client-side Library Folders**, which let you store your client-side code in the repository, organize it into categories and define when and how each category of code is to be served to the client. The client-side library system then takes care of producing the correct links in your final web page to load the correct code.
 
 Read [Using Client-Side HTML Libraries](/help/sites-developing/clientlibs.md) for more information.
 

@@ -100,11 +100,11 @@ Select the fragment to reveal the toolbar with applicable actions:
 * **Checkout**
 * **Properties**
 
-  * Allows you to view and/or edit the fragment's metadata.
+  * Lets you view and/or edit the fragment's metadata.
 
 * **Edit**
 
-  * Allows you to [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
+  * Lets you [open the fragment for editing content](/help/assets/content-fragments/content-fragments-variations.md) together with its elements, variations, associated content and metadata.
 
 * **Manage Tags**
 * **To Collection**
@@ -327,7 +327,7 @@ They will be shown side by side, where:
   * Inserted text - green
   * Replaced text - blue
 
-* The full-screen icon allows you to open either version on its own; then toggle back to the parallel view
+* The full-screen icon lets you open either version on its own; then toggle back to the parallel view
 * You can **Revert** to the specific version
 * **Done** will return you to the console
 

@@ -34,7 +34,7 @@ When you create Adobe Campaign content in AEM, you must link to an Adobe Campaig
 
 There are two possible cases:
 
-* Content can be synched with a delivery from Adobe Campaign. This allows you to use AEM content in a delivery.
+* Content can be synched with a delivery from Adobe Campaign. This lets you use AEM content in a delivery.
 * (Adobe Campaign on premise only) The content can be sent directly to Adobe Campaign, which automatically generates a new email delivery. This mode has limitations.
 
 Detailed instructions are described in this document.

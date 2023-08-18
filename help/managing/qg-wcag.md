@@ -62,7 +62,7 @@ To elaborate:
 * Guidelines are numbered 1.1 to 4.1, where the first number corresponds to the parent principle.
 * Each guideline consists of one or more **success criteria**.
 * Success criteria are written as statements, which are either `True` or `False` for any given web page.
-* Success sriteria may include either/or choices, or may include exceptions; situations where the success criteria need not be met.
+* Success sriteria may include either/or choices, or may include exceptions; situations where the success criteria does not need to be met.
 * Success criteria are numbered according to the parent guideline and principle, from 1.1.1 to 4.1.1. They also have a short name summarizing the intent of the criterion, for easier reference. For example, success criterion [1.1.1 is Non-text Content](https://www.w3.org/TR/WCAG/#non-text-content).
 * Success criteria include a list of related **techniques** (described in more detail below).
 

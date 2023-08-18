@@ -865,7 +865,7 @@ Each sync folder stores configuration and status in three files:
 * `.vlt-sync.log`: log file that contains information about the operations performed during syncing.
 * `.vlt-sync-filter.xml`: filters that define what portions of the repository are synced. The format of this file is decribed by the [Performing a filtered checkout](#performing-a-filtered-checkout) section.
 
-The `.vlt-sync-config.properties` file allows you to configure the following properties:
+The `.vlt-sync-config.properties` file lets you configure the following properties:
 
 **disabled** Turns the synchronization on or off. By default this parameter is set to false to allow the synchronization.
 
