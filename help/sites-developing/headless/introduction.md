@@ -17,7 +17,7 @@ Headless implementation forgoes page and component management as is traditional 
 
 ## Comparing Headful and Headless {#headful-headless}
 
-This document focuses on the full headless implementation model of AEM. However headful versus headless need not be a binary choice in AEM. Headless features can be used to manage and deliver your content to a variety of endpoints while also enabling your content authors to edit single page applications. All in AEM.
+This document focuses on the full headless implementation model of AEM. However, headful versus headless does not need to be a binary choice in AEM. Headless features can be used to manage and deliver your content to a variety of endpoints while also enabling your content authors to edit single page applications. All in AEM.
 
 >[!TIP]
 >

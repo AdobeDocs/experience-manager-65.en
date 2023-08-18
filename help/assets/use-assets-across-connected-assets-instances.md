@@ -65,7 +65,7 @@ The various roles that are involved to configure and use the capability and thei
 
 ### Connected Assets architecture {#connected-assets-architecture}
 
-Experience Manager allows you to connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
+Experience Manager lets you connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
 
 Evaluate the optimal number of Sites instances to connect to a remote DAM deployment. Adobe recommends to incrementally connect Sites instances to the deployment and test that there is no performance impact at the remote DAM, as each connected Sites instance contributes to the data traffic on the remote DAM.
 
@@ -308,6 +308,8 @@ You can add assets to the [!DNL Sites] deployment, however, those assets cannot 
 ## Limitations and best practices {#tip-and-limitations}
 
 * To get insights about asset usage, configure the [Assets Insight](/help/assets/asset-insights.md) functionality on the [!DNL Sites] instance.
+
+* You cannot drag the remote asset onto the [Image Component Configure dialog](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog). However, you can drag the remote asset directly to the image component on the Sites page without clicking **[!UICONTROL Configure]**.
 
 ### Permissions and asset management {#permissions-and-managing-assets}
 

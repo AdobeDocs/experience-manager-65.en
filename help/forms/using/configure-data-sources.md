@@ -22,7 +22,7 @@ exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 
  ![Data Integration](do-not-localize/data-integeration.png)
 
-AEM Forms Data Integration allows you to configure and connect to disparate data sources. The following types are supported out-of-the-box. However, with little customization, you can integrate other data sources as well.
+AEM Forms Data Integration lets you configure and connect to disparate data sources. The following types are supported out-of-the-box. However, with little customization, you can integrate other data sources as well.
 
 * Relational databases - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS, and Sybase  
 * AEM user profile  

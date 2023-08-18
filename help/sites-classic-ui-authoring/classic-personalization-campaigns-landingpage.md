@@ -208,10 +208,10 @@ Although each of the lead form components has a different purpose, many are comp
 When configuring any of the form components the following tabs are available in the dialog:
 
 * **Title and Text**
-  Here you need to specify the basic information, such as the title of the component and any accompanying text. Where appropriate, it also allows you to define other key information such as whether the field is multi-selectable and items available for selection.
+  Here you need to specify the basic information, such as the title of the component and any accompanying text. Where appropriate, it also lets you define other key information such as whether the field is multi-selectable and items available for selection.
 
 * **Initial Values**
-  Allows you to specify a default value.
+  Lets you specify a default value.
 
 * **Constraints**
   Here you can specify whether a field is required and place constraints are on that field (for example, must be numeric, and so on).

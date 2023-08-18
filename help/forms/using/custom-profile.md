@@ -45,7 +45,7 @@ At first, the HTML5 form renders only the first page of the form. When a user sc
 
 ## footer.jsp {#footer-jsp}
 
-The footer.jsp module is an empty. It allows you to add scripts that are used only for user interaction.
+The footer.jsp module is an empty. It lets you add scripts that are used only for user interaction.
 
 ## Creating Custom Profiles {#creating-custom-profiles}
 

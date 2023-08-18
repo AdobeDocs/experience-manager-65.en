@@ -24,7 +24,7 @@ Depending on the information you have already collected about your site visitors
 
 These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Personalization](/help/sites-authoring/personalization.md) section of the website. [Activities](/help/sites-authoring/activitylib.md) defined here can be included on any page and define which visitor segment the specialized content is applicable for.
 
-AEM allows you to easily personalize your users' experience. It also allows you to verify the results of your segment definitions.
+AEM lets you easily personalize your users' experience. It also lets you verify the results of your segment definitions.
 
 ## Accessing Segments {#accessing-segments}
 
@@ -40,7 +40,7 @@ Select your configuration to see the segments, for example WKND Site:
 
 ## Segment Editor {#segment-editor}
 
-The **Segment Editor** allows you to easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.
+The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.
 
 ![segmenteditor](assets/segmenteditor.png)
 
@@ -54,7 +54,7 @@ When the entire statement evaluates to true then the segment has resolved. In th
 
 ### Containers {#containers}
 
-The following containers are available out-of-the-box and allow you to group comparisons and references together for boolean evaluation. They can be dragged from the components browser to the editor. See the following section [Using AND and OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers) for more information.
+The following containers are available out-of-the-box and let you group comparisons and references together for boolean evaluation. They can be dragged from the components browser to the editor. See the following section [Using AND and OR Containers](/help/sites-administering/segmentation.md#using-and-and-or-containers) for more information.
 
 <table>
  <tbody>

@@ -22,7 +22,7 @@ exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 
 ## Overview {#overview}
 
-Adaptive forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides an intuitive user interface and out-of-the-box components for creating and working with adaptive forms. You can choose to create an adaptive form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an adaptive form:
+Adaptive forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provides an intuitive user interface and out-of-the-box components for creating and working with adaptive forms. You can choose to create an adaptive form based on a form model or schema or without a form model. It is important to carefully choose the form model that not only suits your requirements but extends your existing infrastructural investments and assets. You get to choose from the following options to create an adaptive form:
 
 * **Using a form data model**
   [Data integration](../../forms/using/data-integration.md) lets you integrate entities and services from disparate data sources in to a form data model that you can use to create adaptive forms. Choose form data model if the adaptive form you are creating involves fetching and write data from and to multiple data source.
@@ -59,7 +59,7 @@ When you create a new or edit an existing adaptive form, you use the following U
 
 ### Sidebar {#sidebar}
 
-The Sidebar allows you to
+The Sidebar lets you
 
 * See form content such as panels, components, fields, and layout.
 * Edit component properties.
@@ -84,7 +84,7 @@ The sidebar comprises the following browsers:
 
     * **Data Model Objects**
       Lets you see the form model hierarchy.
-      It allows you to drag and drop form-model elements on the adaptive form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
+      It lets you drag and drop form-model elements on the adaptive form. The added elements automatically get converted into form components while retaining their original properties. You can see data model objects when your form uses XML schema, JSON schema, or XDP template.
 
 * **Properties browser**
 
@@ -168,7 +168,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Image</td>
-   <td>Allows you to insert an image.</td>
+   <td>Lets you insert an image.</td>
   </tr>
   <tr>
    <td>Image Choice</td>
@@ -224,7 +224,7 @@ The sidebar comprises the following browsers:
   </tr>
   <tr>
    <td>Text</td>
-   <td>Allows you to specify static text.</td>
+   <td>Lets you specify static text.</td>
   </tr>
   <tr>
    <td>Submit Button</td>

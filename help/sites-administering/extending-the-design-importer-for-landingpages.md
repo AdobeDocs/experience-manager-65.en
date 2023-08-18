@@ -91,7 +91,7 @@ A sample snippet of the landing page HTML after addition of the canvas div is as
 
 When you import a landing page, you have the choice to import the page as-is, which means that after the landing page is imported you cannot edit any of the imported items in AEM (you can still add additional AEM components on the page).
 
-Before you import the landing page, you may want to convert some of the parts of the landing page so that they are editable AEM components. This allows you to quickly edit parts of the landing page even after the landing page design has been imported.
+Before you import the landing page, you may want to convert some of the parts of the landing page so that they are editable AEM components. This lets you quickly edit parts of the landing page even after the landing page design has been imported.
 
 You do this by adding the `data-cq-component` to the appropriate component in the HTML file that you import.
 

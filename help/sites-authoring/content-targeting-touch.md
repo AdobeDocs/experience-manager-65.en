@@ -392,7 +392,7 @@ Open a library offer from an experience in Targeted mode to edit the offer. The 
 
 ## Target: Configuring the Audiences {#target-configuring-the-audiences}
 
-The Target step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves mapping audiences with the experiences that you worked with in the Create step. The Target page shows the audiences that each experience is targeting. You can specify or change the audience for each experience. If you are using Adobe Target, you can also create A/B tests that allow you to target percentage of traffic for an audience to a particular experience.
+The Target step of [the targeting process](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) involves mapping audiences with the experiences that you worked with in the Create step. The Target page shows the audiences that each experience is targeting. You can specify or change the audience for each experience. If you are using Adobe Target, you can also create A/B tests that let you target percentage of traffic for an audience to a particular experience.
 
 ### If you are using AEM targeting or Adobe Target (experience targeting) ... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -686,7 +686,7 @@ You can customize the Target component by accessing the component's options in o
   </tr>
   <tr>
    <td><strong>Include resolved segments</strong></td>
-   <td><p>Selecting this check box includes all resolved segments in the mbox call and any parameters configured in the page and in the framework.</p> <p>This only works in situations with XML API where you are synchronizing AEM segments. If you have segments in AEM that are not handled by Adobe Target (like script segments), then this option allows you to resolve the segment in AEM and send information to Adobe Target that the segment is active.</p> </td>
+   <td><p>Selecting this check box includes all resolved segments in the mbox call and any parameters configured in the page and in the framework.</p> <p>This only works in situations with XML API where you are synchronizing AEM segments. If you have segments in AEM that are not handled by Adobe Target (like script segments), then this option lets you resolve the segment in AEM and send information to Adobe Target that the segment is active.</p> </td>
   </tr>
   <tr>
    <td><strong>Inherited context parameters</strong></td>

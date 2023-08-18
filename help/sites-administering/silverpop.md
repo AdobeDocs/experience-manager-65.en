@@ -19,7 +19,7 @@ exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
 >
 >Silverpop integration is **not** available out of the box. You must download the Silverpop integration package `https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content` from Package Share and install it on your instance. After you have installed the package, you can configure it as described in this document. -->
 
-Integrating AEM with Silverpop Engage lets you manage and send emails created in AEM via Silverpop. It also allows you to use the lead management features of Silverpop via AEM forms on AEM pages.
+Integrating AEM with Silverpop Engage lets you manage and send emails created in AEM via Silverpop. It also lets you use the lead management features of Silverpop via AEM forms on AEM pages.
 
 The integration provides you with the following features:
 

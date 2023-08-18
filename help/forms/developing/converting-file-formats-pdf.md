@@ -20,13 +20,13 @@ exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 
 The Generate PDF service converts native file formats to PDF. It also converts PDF to other file formats and optimizes the size of PDF documents.
 
-The Generate PDF service uses native applications to convert the following file formats to PDF. Unless otherwise indicated, only the German, French, English, and Japanese versions of these applications are supported. *Windows only* indicates support for only Windows Server® 2003 and Windows Server 2008.
+The Generate PDF service uses native applications to convert the following file formats to PDF. Unless otherwise indicated, only the German, French, English, and Japanese versions of these applications are supported. *Windows only* indicates support for only Windows Server&reg; 2003 and Windows Server 2008.
 
 * Microsoft Office 2003 and 2007 to convert DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS, and PUB (Windows only)
 
 >[!NOTE]
 >
->Acrobat® 9.2 or later is required to convert Microsoft XPS format to PDF.
+>Acrobat&reg; 9.2 or later is required to convert Microsoft XPS format to PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008, and 2009 to convert DWF, DWG, and DXW (English only)
 * Corel WordPerfect 12 and X4 to convert WPD, QPW, SHW (English only)
@@ -36,21 +36,21 @@ The Generate PDF service uses native applications to convert the following file 
 >
 >The Generate PDF service does not support the 64-bit versions of OpenOffice.
 
-* Adobe Photoshop® CS2 to convert PSD (Windows only)
+* Adobe Photoshop&reg; CS2 to convert PSD (Windows only)
 
 >[!NOTE]
 >
 >Photoshop CS3 and CS4 are not supported because they do not support Windows Server 2003 or Windows Server 2008.
 
-* Adobe FrameMaker® 7.2 and 8 to convert FM (Windows only)
-* Adobe PageMaker® 7.0 to convert PMD, PM6, P65, and PM (Windows only)
+* Adobe FrameMaker&reg; 7.2 and 8 to convert FM (Windows only)
+* Adobe PageMaker&reg; 7.0 to convert PMD, PM6, P65, and PM (Windows only)
 * Native formats supported by third-party applications (requires development of setup files specific for the application) (Windows only)
 
 The Generate PDF service converts the following standards-based file formats to PDF.
 
 * Video formats: SWF, FLV (Windows only)
 * Image formats: JPEG, JPG, JP2, J2Kí, JPC, J2C, GIF, BMP, TIFF, TIF, PNG, JPF
-* HTML (Windows, Sun™ Solaris™, and Linux®)
+* HTML (Windows, Sun&trade; Solaris&trade;, and Linux&reg;)
 
 The Generate PDF service converts PDF to the following file formats (Windows only):
 
@@ -142,7 +142,7 @@ Convert a Microsoft Word document to a PDF document by using the Generate PDF AP
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-generatepdf-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-generatepdf-client.jar, in your Java project's class path.
 
 1. Create a Generate PDF client.
 
@@ -156,7 +156,7 @@ Convert a Microsoft Word document to a PDF document by using the Generate PDF AP
 
 1. Convert the file to a PDF document.
 
-   Convert the file to a PDF document by invoking the `GeneratePdfServiceClient` object’s `createPDF2` method and passing the following values:
+   Convert the file to a PDF document by invoking the `GeneratePdfServiceClient` object's `createPDF2` method and passing the following values:
 
     * A `com.adobe.idp.Document` object that represents the file to convert.
     * A `java.lang.String` object that contains the file extension.
@@ -172,13 +172,13 @@ Convert a Microsoft Word document to a PDF document by using the Generate PDF AP
 
    To obtain the PDF document, perform the following actions:
 
-    * Invoke the `CreatePDFResult` object’s `getCreatedDocument` method, which returns a `com.adobe.idp.Document` object.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to extract the PDF document from the object created in the previous step.
+    * Invoke the `CreatePDFResult` object's `getCreatedDocument` method, which returns a `com.adobe.idp.Document` object.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method to extract the PDF document from the object created in the previous step.
 
    If you used the `createPDF2` method to obtain the log document (not applicable to HTML conversions), perform the following actions:
 
-    * Invoke the `CreatePDFResult` object’s `getLogDocument` method. This returns a `com.adobe.idp.Document` object.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to extract the log document.
+    * Invoke the `CreatePDFResult` object's `getLogDocument` method. This returns a `com.adobe.idp.Document` object.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method to extract the log document.
 
 **See also**
 
@@ -207,7 +207,7 @@ Convert a Microsoft Word document to a PDF document by using the Generate PDF AP
     * Create a `GeneratePDFServiceClient` object by using its default constructor.
     * Create a `GeneratePDFServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) You do not need to use the `lc_version` attribute. However, specify `?blob=mtom`.
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `GeneratePDFServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
@@ -219,13 +219,13 @@ Convert a Microsoft Word document to a PDF document by using the Generate PDF AP
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store the file that you want to convert to a PDF document.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the file location of the file to convert and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning to its `MTOM` property the contents of the byte array.
 
 1. Convert the file to a PDF document.
 
-   Convert the file to a PDF document by invoking the `GeneratePDFServiceService` object’s `CreatePDF2` method and passing the following values:
+   Convert the file to a PDF document by invoking the `GeneratePDFServiceService` object's `CreatePDF2` method and passing the following values:
 
     * A `BLOB` object that represents the file to be converted.
     * A string that contains the file extension.
@@ -239,10 +239,10 @@ Convert a Microsoft Word document to a PDF document by using the Generate PDF AP
 
 1. Retrieve the results.
 
-    * Retrieve the converted PDF document by assigning the `BLOB` object’s `MTOM` field to a byte array. The byte array represents the converted PDF document. Ensure you use the `BLOB` object that is used as the output parameter for the `createPDF2` method.
+    * Retrieve the converted PDF document by assigning the `BLOB` object's `MTOM` field to a byte array. The byte array represents the converted PDF document. Ensure you use the `BLOB` object that is used as the output parameter for the `createPDF2` method.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the converted PDF document.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -308,7 +308,7 @@ Convert an HTML document to a PDF document using the Generate PDF API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-generatepdf-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-generatepdf-client.jar, in your Java project's class path.
 
 1. Create a Generate PDF client.
 
@@ -320,7 +320,7 @@ Convert an HTML document to a PDF document using the Generate PDF API (Java):
 
 1. Convert the HTML content to a PDF document.
 
-   Invoke the `GeneratePdfServiceClient` object’s `htmlToPDF2` method and pass the following values:
+   Invoke the `GeneratePdfServiceClient` object's `htmlToPDF2` method and pass the following values:
 
     * A `java.lang.String` object that contains the URL of the HTML file to be converted.
     * A `java.lang.String` object that contains the file type settings to be used in the conversion. File type settings can include spidering levels.
@@ -332,8 +332,8 @@ Convert an HTML document to a PDF document using the Generate PDF API (Java):
 
    The `htmlToPDF2` method returns an `HtmlToPdfResult` object that contains the new PDF document that was generated. To obtain the newly created PDF document, perform the following actions:
 
-    * Invoke the `HtmlToPdfResult` object’s `getCreatedDocument` method. This returns a `com.adobe.idp.Document` object.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to extract the PDF document from the object created in the previous step.
+    * Invoke the `HtmlToPdfResult` object's `getCreatedDocument` method. This returns a `com.adobe.idp.Document` object.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method to extract the PDF document from the object created in the previous step.
 
 **See also**
 
@@ -364,7 +364,7 @@ Convert HTML content to a PDF document by using the Generate PDF API (web servic
     * Create a `GeneratePDFServiceClient` object by using its default constructor.
     * Create a `GeneratePDFServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) You do not need to use the `lc_version` attribute. However, specify `?blob=mtom`.
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `GeneratePDFServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
@@ -378,7 +378,7 @@ Convert HTML content to a PDF document by using the Generate PDF API (web servic
 
 1. Convert the HTML content to a PDF document.
 
-   Convert the HTML content to a PDF document by invoking the `GeneratePDFServiceService` object’s `HtmlToPDF2` method and pass the following values:
+   Convert the HTML content to a PDF document by invoking the `GeneratePDFServiceService` object's `HtmlToPDF2` method and pass the following values:
 
     * A string that contains the HTML content to convert.
     * A `java.lang.String` object that contains the file type settings to be used in the conversion.
@@ -389,10 +389,10 @@ Convert HTML content to a PDF document by using the Generate PDF API (web servic
 
 1. Retrieve the results.
 
-    * Retrieve the converted PDF document by assigning the `BLOB` object’s `MTOM` field to a byte array. The byte array represents the converted PDF document. Ensure you use the `BLOB` object that is used as the output parameter for the `HtmlToPDF2` method.
+    * Retrieve the converted PDF document by assigning the `BLOB` object's `MTOM` field to a byte array. The byte array represents the converted PDF document. Ensure you use the `BLOB` object that is used as the output parameter for the `HtmlToPDF2` method.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the converted PDF document.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a PDF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -458,7 +458,7 @@ Convert a PDF document to an RTF file by using the Generate PDF API (Java):
 
 1. Include project files.
 
-   Include client JAR files, such as adobe-generatepdf-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-generatepdf-client.jar, in your Java project's class path.
 
 1. Create a Generate PDF client.
 
@@ -471,7 +471,7 @@ Convert a PDF document to an RTF file by using the Generate PDF API (Java):
 
 1. Convert the PDF document.
 
-   Invoke the `GeneratePdfServiceClient` object’s `exportPDF2` method and pass the following values:
+   Invoke the `GeneratePdfServiceClient` object's `exportPDF2` method and pass the following values:
 
     * A `com.adobe.idp.Document` object that represents the PDF file to convert.
     * A `java.lang.String` object that contains the name of the file to convert.
@@ -485,8 +485,8 @@ Convert a PDF document to an RTF file by using the Generate PDF API (Java):
 
    To obtain the newly created file, perform the following actions:
 
-    * Invoke the `ExportPDFResult` object’s `getConvertedDocument` method. This returns a `com.adobe.idp.Document` object.
-    * Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to extract the new document.
+    * Invoke the `ExportPDFResult` object's `getConvertedDocument` method. This returns a `com.adobe.idp.Document` object.
+    * Invoke the `com.adobe.idp.Document` object's `copyToFile` method to extract the new document.
 
 **See also**
 
@@ -515,7 +515,7 @@ Convert a PDF document to an RTF file by using the Generate PDF API (web service
     * Create a `GeneratePDFServiceClient` object by using its default constructor.
     * Create a `GeneratePDFServiceClient.Endpoint.Address` object by using the `System.ServiceModel.EndpointAddress` constructor. Pass a string value that specifies the WSDL to the AEM Forms service (for example, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) You do not need to use the `lc_version` attribute. However, specify `?blob=mtom`.
     * Create a `System.ServiceModel.BasicHttpBinding` object by getting the value of the `GeneratePDFServiceClient.Endpoint.Binding` field. Cast the return value to `BasicHttpBinding`.
-    * Set the `System.ServiceModel.BasicHttpBinding` object’s `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
+    * Set the `System.ServiceModel.BasicHttpBinding` object's `MessageEncoding` field to `WSMessageEncoding.Mtom`. This value ensures that MTOM is used.
     * Enable basic HTTP authentication by performing the following tasks:
 
         * Assign the AEM forms user name to the field `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
@@ -527,13 +527,13 @@ Convert a PDF document to an RTF file by using the Generate PDF API (web service
 
     * Create a `BLOB` object by using its constructor. The `BLOB` object is used to store a PDF document that is converted.
     * Create a `System.IO.FileStream` object by invoking its constructor and passing a string value that represents the file location of the PDF document and the mode in which to open the file.
-    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object’s `Length` property.
-    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object’s `Read` method and passing the byte array, the starting position, and the stream length to read.
+    * Create a byte array that stores the content of the `System.IO.FileStream` object. You can determine the size of the byte array by getting the `System.IO.FileStream` object's `Length` property.
+    * Populate the byte array with stream data by invoking the `System.IO.FileStream` object's `Read` method and passing the byte array, the starting position, and the stream length to read.
     * Populate the `BLOB` object by assigning to its `MTOM` property the contents of the byte array.
 
 1. Convert the PDF document.
 
-   Invoke the `GeneratePDFServiceServiceWse` object’s `ExportPDF2` method and pass the following values:
+   Invoke the `GeneratePDFServiceServiceWse` object's `ExportPDF2` method and pass the following values:
 
     * A `BLOB` object that represents the PDF file to convert.
     * A string that contains the path name of the file to convert.
@@ -544,10 +544,10 @@ Convert a PDF document to an RTF file by using the Generate PDF API (web service
 
 1. Save the converted file.
 
-    * Retrieve the converted RTF document by assigning the `BLOB` object’s `MTOM` field to a byte array. The byte array represents the converted RTF document. Ensure you use the `BLOB` object that is used as the output parameter for the `ExportPDF2` method.
+    * Retrieve the converted RTF document by assigning the `BLOB` object's `MTOM` field to a byte array. The byte array represents the converted RTF document. Ensure you use the `BLOB` object that is used as the output parameter for the `ExportPDF2` method.
     * Create a `System.IO.FileStream` object by invoking its constructor. Pass a string value that represents the location of the RTF file.
     * Create a `System.IO.BinaryWriter` object by invoking its constructor and passing the `System.IO.FileStream` object.
-    * Write the contents of the byte array to a RTF file by invoking the `System.IO.BinaryWriter` object’s `Write` method and passing the byte array.
+    * Write the contents of the byte array to a RTF file by invoking the `System.IO.BinaryWriter` object's `Write` method and passing the byte array.
 
 **See also**
 
@@ -647,7 +647,7 @@ When this section and the next section describe dialog boxes and their component
 
 When this section and the next section describe dialog boxes and their components from the perspective of their internal representation, the term *window element* is used. The internal representation of window elements is a hierarchy, where each window element instance is identified by labels. The window element instance also describes its physical characteristics and behavior.
 
-From a user’s perspective, the dialog boxes and their components show different behaviors, where some dialog box elements are hidden until activated. From an internal representation perspective, no such issue of behavior exists. For example, the internal representation of a dialog box looks similar to that of the components it contains, with the exception that the components are nested within the dialog box.
+From a user's perspective, the dialog boxes and their components show different behaviors, where some dialog box elements are hidden until activated. From an internal representation perspective, no such issue of behavior exists. For example, the internal representation of a dialog box looks similar to that of the components it contains, with the exception that the components are nested within the dialog box.
 
 This section describes XML elements that provide AppMon with instructions. These elements have names such as the `dialog` element and the `window` element. This document uses a monospaced font to distinguish XML elements. The `dialog` element identifies a dialog box that an XML script file can cause to be displayed, either intentionally or unintentionally. The `window` element identifies a window element (dialog box or the components of a dialog box).
 
@@ -663,13 +663,13 @@ Hierarchy of script and dialog XML
 
 A *script XML file* specifies a series of steps that direct the native application to navigate to certain window elements and then supply responses to those elements. Most responses are text or keystrokes that correspond to the input a user would provide to a field, combo box, or button in the corresponding dialog box.
 
-The intent of the Generate PDF service’s support for script XML files is to direct a native application to print a native file. However, script XML files can be used to accomplish any task that a user can perform when interacting with the native application’s dialog boxes.
+The intent of the Generate PDF service's support for script XML files is to direct a native application to print a native file. However, script XML files can be used to accomplish any task that a user can perform when interacting with the native application's dialog boxes.
 
 The steps in a script XML file are executed in order, without any opportunity for branching. The only conditional test supported is for time-out/retry, which causes a script to terminate if a step does not complete successfully within a specific period of time and after a specific number of retries.
 
 In addition to steps being sequential, the instructions within a step are also executed in order. You must ensure that the steps and instructions reflect the order in which a user would perform those same steps.
 
-Each step in a script XML file identifies the window element that is expected to appear if the step’s instructions are successfully performed. If an unexpected dialog box appears while executing a script step, the Generate PDF service searches the dialog XML files as described in the next section.
+Each step in a script XML file identifies the window element that is expected to appear if the step's instructions are successfully performed. If an unexpected dialog box appears while executing a script step, the Generate PDF service searches the dialog XML files as described in the next section.
 
 #### Dialog XML files {#dialog-xml-files}
 
@@ -685,7 +685,7 @@ When the system or native application displays a dialog box that is not handled 
 
 If the Generate PDF service finds a match for the dialog box, it dismisses it by sending it the keystroke or other action specified for the dialog box. If the instructions for the dialog box specify an abort message, the Generate PDF service terminates the currently executing job and generates an error message. Such an abort message would be specified in the `abortMessage` element in the script XML grammar.
 
-If the Generate PDF service encounters a dialog box that is not described in any of the previously-listed files, the Generate PDF service incorporates the dialog box’s caption into the log file entry. The currently executing job eventually times out. You can then use the information in the log file to compose new instructions in the additional dialog XML file for the native application.
+If the Generate PDF service encounters a dialog box that is not described in any of the previously-listed files, the Generate PDF service incorporates the dialog box's caption into the log file entry. The currently executing job eventually times out. You can then use the information in the log file to compose new instructions in the additional dialog XML file for the native application.
 
 ### Adding or modifying support for a native file format {#adding-or-modifying-support-for-a-native-file-format}
 
@@ -709,7 +709,7 @@ If the attributes fail to identify a caption, you can instead identify a window 
 
 Be aware of these issues:
 
-* Microsoft Spy++ displays captions by using an ampersand (&) to identify the caption’s hot key. For example, Spy++ shows the caption for one Print dialog box as `Pri&nt`, which indicates that the hotkey is *n*. Caption titles in script and dialog XML files must omit ampersands.
+* Microsoft Spy++ displays captions by using an ampersand (&) to identify the caption's hot key. For example, Spy++ shows the caption for one Print dialog box as `Pri&nt`, which indicates that the hotkey is *n*. Caption titles in script and dialog XML files must omit ampersands.
 * Some captions include line breaks. the Generate PDF service cannot identify line breaks. If a caption includes a line break, include enough of the caption to differentiate it from the other menu items and then use regular expressions for the omitted part. An example is ( `^Long caption title$`). (See [Using regular expressions in caption attributes](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Use character entities (also called escape sequences) for reserved XML characters. For example, use `&` for ampersands, `<` and `>` for less than and greater than symbols, `&apos;` for apostrophes, and `&quot;` for quotation marks.
 
@@ -748,7 +748,7 @@ After you add these XML files to the adobe-appmondata.jar file, you must redeplo
 
 If you want to direct files to a new native application, you must create a script XML file for that application. If you want to modify how the Generate PDF service interacts with a native application that is already supported, you must modify the script for that application.
 
-The script contains instructions that navigate through the native application’s window elements and that supply specific responses to those elements. The file that contains this information is `appmon.`[appname]`` `.script.`[locale]`.xml`. An example is appmon.notepad.script.en_US.xml.
+The script contains instructions that navigate through the native application's window elements and that supply specific responses to those elements. The file that contains this information is `appmon.`[appname]`` `.script.`[locale]`.xml`. An example is appmon.notepad.script.en_US.xml.
 
 #### Identifying steps the script must execute {#identifying-steps-the-script-must-execute}
 
@@ -876,7 +876,7 @@ This procedure explains how to update the Generate PDF service configuration fil
 
 >[!NOTE]
 >
->The name of the application is specified as the value of the `GenericApp` element’s `name` attribute. This value must exactly match the corresponding name specified in the script that you develop for that application. Likewise, the `GenericApp` element’s `displayName` attribute should exactly match the corresponding script’s `expectedWindow` window caption. Such equivalency is evaluated after resolving any regular expressions that appear in the `displayName` or `caption` attributes.
+>The name of the application is specified as the value of the `GenericApp` element's `name` attribute. This value must exactly match the corresponding name specified in the script that you develop for that application. Likewise, the `GenericApp` element's `displayName` attribute should exactly match the corresponding script's `expectedWindow` window caption. Such equivalency is evaluated after resolving any regular expressions that appear in the `displayName` or `caption` attributes.
 
 In this example, the default configuration data supplied with the Generate PDF service was modified to specify that Notepad (not Microsoft Word) should be used to process files with the file name extension .txt. Before this modification, Microsoft Word was specified as the native application that should process such files.
 
@@ -976,7 +976,7 @@ This example specifies how the Generate PDF service should interact with Notepad
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy we recommend using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

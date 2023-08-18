@@ -61,7 +61,7 @@ Finally, if you are running an instance upgraded from AEM 6.3, make sure the fol
 
 ## Run Modes {#run-modes}
 
-**Run modes** allow you to tune your AEM instance for a specific purpose; for example, author or publish, test, development, intranet etc. These modes also allow you to control the use of sample content. This sample content is defined before the quickstart is built and can include packages, configurations, etc. This can be particularly useful for production-ready installations when you want to keep your installation lean and without sample content. For more information see:
+**Run modes** let you tune your AEM instance for a specific purpose; for example, author or publish, test, development, intranet etc. These modes also let you control the use of sample content. This sample content is defined before the quickstart is built and can include packages, configurations, etc. This can be particularly useful for production-ready installations when you want to keep your installation lean and without sample content. For more information see:
 
 * [Run Modes](/help/sites-deploying/configure-runmodes.md)
 

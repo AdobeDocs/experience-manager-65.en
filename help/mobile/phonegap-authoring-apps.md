@@ -1,6 +1,6 @@
 ---
 title: Authoring Mobile Applications
-description: he AEM Mobile Dashboard allows you to create, build and deploy your mobile application, create, delete, and edit application metadata. Follow this page to learn more.
+description: he AEM Mobile Dashboard lets you create, build and deploy your mobile application, create, delete, and edit application metadata. Follow this page to learn more.
 uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
@@ -15,7 +15,7 @@ exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 >
 >Adobe recommends using the SPA Editor for projects that require single page application framework-based client-side rendering (for example, React). [Learn more](/help/sites-developing/spa-overview.md).
 
-The AEM Mobile Dashboard allows you to create, build and deploy your mobile application, create, delete, and edit application metadata. Once your application is live, you can analyze application analytics including life cycle and usage metrics to improve customer conversion and brand loyalty.
+The AEM Mobile Dashboard lets you create, build and deploy your mobile application, create, delete, and edit application metadata. Once your application is live, you can analyze application analytics including life cycle and usage metrics to improve customer conversion and brand loyalty.
 
 To build your AEM Mobile Application, see the [Building Mobile Applications](/help/mobile/building-app-mobile-phonegap.md) page.
 
@@ -107,7 +107,7 @@ The Control Center **Metrics Tile** displays summary analytics pulled from AMS f
 
 ### The Manage Entity Content Tile {#the-manage-entity-content-tile}
 
-The Manage Entity Content Tile allows you to add and manage app definitions. App definitions are a way to identify what spaces (and other configurations) are appropriate for the app. This way a new space can be added, without having to recompile the app. The app definition is updated and that includes the information for any new spaces.
+The Manage Entity Content Tile lets you add and manage app definitions. App definitions are a way to identify what spaces (and other configurations) are appropriate for the app. This way a new space can be added, without having to recompile the app. The app definition is updated and that includes the information for any new spaces.
 
 Click [here](/help/mobile/phonegap-app-definitions.md) to create and manage your app definitions.
 

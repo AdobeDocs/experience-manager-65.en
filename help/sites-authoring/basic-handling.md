@@ -25,7 +25,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 
 ### A Touch-Enabled UI {#a-touch-enabled-ui}
 
-AEM's user interface has been enabled for touch. A touch-enabled interface allows you to use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. This is in contrast to how a traditional desktop interface operates with mouse actions such as click, double-click, right-click, and mouseover.
+AEM's user interface has been enabled for touch. A touch-enabled interface lets you use touch to interact with the software through gestures such as tap, touch-and-hold, and swipe. This is in contrast to how a traditional desktop interface operates with mouse actions such as click, double-click, right-click, and mouseover.
 
 As the AEM UI is touch-enabled, you can use the touch gestures on your touch devices (for example, mobile or tablet) and the mouse actions on a traditional desktop device.
 
@@ -92,11 +92,11 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Communities</td>
-   <td>This console allows you to create and manage <a href="/help/communities/sites-console.md">community sites</a> for <a href="/help/communities/overview.md#engagement-community">engagement</a> and <a href="/help/communities/overview.md#enablement-community">enablement</a>.</td>
+   <td>This console lets you create and manage <a href="/help/communities/sites-console.md">community sites</a> for <a href="/help/communities/overview.md#engagement-community">engagement</a> and <a href="/help/communities/overview.md#enablement-community">enablement</a>.</td>
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>This allows you to manage products, product catalogs and orders related to your <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> sites.</td>
+   <td>This lets you manage products, product catalogs and orders related to your <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> sites.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>
@@ -104,7 +104,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Forms</td>
-   <td>This console allows you to create, manage, and process your <a href="/help/forms/home.md">forms and documents</a>.</td>
+   <td>This console lets you create, manage, and process your <a href="/help/forms/home.md">forms and documents</a>.</td>
   </tr>
   <tr>
    <td>Personalization</td>
@@ -116,7 +116,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> will allow you to manage all your customer-facing screens, of any size and in any location.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> will let you manage all your customer-facing screens, of any size and in any location.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -183,7 +183,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Breadcrumbs](assets/bh-05.png)
 
-  Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs allow you to navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
+  Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs let you navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
 
   Simply click on the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click on an entry to jump to that location.
 
@@ -396,7 +396,7 @@ In all views, all items can be deslected by tapping escape on the keyboard if yo
 
 ![Column View](assets/bh-16.png)
 
-The column view allows for a visual navigation of a content tree through a series of cascading columns. This view allows you to visualize and traverse the tree structure of your website.
+The column view allows for a visual navigation of a content tree through a series of cascading columns. This view lets you visualize and traverse the tree structure of your website.
 
 Selecting a resource in the leftmost column will display the child resources in a column to the right. Selecting a resource in the right column will then display the child resources in another column to the right and so on.
 
@@ -532,7 +532,7 @@ Using the content tree side panel in conjunction with a list view or cards view,
 
 The timeline can be used to view and/or initiate events that have occured on the selected resource. To open the timeline column use the rail selector:
 
-The timeline column allows you to:
+The timeline column lets you:
 
 * [View various events](#timelineviewevents) related to a selected item.
 

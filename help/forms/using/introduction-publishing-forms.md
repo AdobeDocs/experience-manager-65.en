@@ -25,7 +25,7 @@ AEM Forms provide portal components that reduce management overheads and product
 
 ![AEM Forms portal](assets/aem-forms-portal.png)
 
-The form portal components allow you to add the following functionality:
+The form portal components let you add the following functionality:
 
 * List forms in customized layouts. Out of the box, List view, Card view, and Panel view layouts are provided. You can create your own custom layouts.
 * Lets you display custom metadata and custom actions while listing them.
@@ -44,7 +44,7 @@ AEM Forms provide the following portal components out of the box, grouped under 
 
 ### Search &amp; Lister {#search-amp-lister}
 
-The Search & Lister component allows you to list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria. It also allows you to specify search criteria to enable your portal users to search across the list of forms.
+The Search & Lister component lets you list forms from the forms repository onto your portal page and provides configuration options to list forms based on specified criteria. It also lets you specify search criteria to enable your portal users to search across the list of forms.
 
 ### Drafts &amp; Submissions {#drafts-amp-submissions}
 
@@ -52,7 +52,7 @@ While Search & Lister component displays forms which are made public by Forms au
 
 ### Link {#link}
 
-The Link component allows you to create a link to a form anywhere on the page. Consider a scenario where you are offering a training program, and you want your users to submit a form to register for the training. On your website, you have posted the program details. Below the details, you want to provide a link to the registration form. The Link component can help you create that link.
+The Link component lets you create a link to a form anywhere on the page. Consider a scenario where you are offering a training program, and you want your users to submit a form to register for the training. On your website, you have posted the program details. Below the details, you want to provide a link to the registration form. The Link component can help you create that link.
 
 ## Forms Portal Workflow {#forms-portal-workflow}
 

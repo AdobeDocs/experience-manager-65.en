@@ -58,7 +58,7 @@ You can merge two or more body cells by selecting the cells you want to merge, r
 
 You can add and delete a row or column, and move a row up and down in a table.
 
-To add or delete a row or column or move a row, click any cell in the row or column. A drop-down menu appears at the top of the column and on the left of the row. The menu at the top provides options to add or delete the column, whereas the menu on the left allows you to add, delete, or move the row.
+To add or delete a row or column or move a row, click any cell in the row or column. A drop-down menu appears at the top of the column and on the left of the row. The menu at the top provides options to add or delete the column, whereas the menu on the left lets you add, delete, or move the row.
 
 * The Add operation adds a row below or a column to the right of the selected row or column.
 * The Delete operation deletes the selected row or column.
@@ -152,7 +152,7 @@ At runtime, you will see **+** and *-* buttons to add or delete a row.
 
 ## Expressions in a table {#expressions-in-a-table}
 
-Tables in adaptive forms allow you to write expressions in JavaScript to induce behaviors, such as show or hide a table or a row, add up all the numbers and show the total in a cell, enable or disable a cell, validate user input, and so on. These expressions use adaptive forms scripting model APIs.
+Tables in adaptive forms let you write expressions in JavaScript to induce behaviors, such as show or hide a table or a row, add up all the numbers and show the total in a cell, enable or disable a cell, validate user input, and so on. These expressions use adaptive forms scripting model APIs.
 
 While tables and rows support only visibility expressions to control their visibility based on the value returned by an expression, cells support the following expressions:
 
@@ -210,7 +210,7 @@ Expanded column of a table on a mobile device
 
 ## Merge data in a table {#merge-data-in-a-table}
 
-Tables in adaptive forms allow you to populate the table at runtime using data from an XML file. The data XML file can reside in the local file system of the machine where AEM Forms server is running or in the CRX repository.
+Tables in adaptive forms let you populate the table at runtime using data from an XML file. The data XML file can reside in the local file system of the machine where AEM Forms server is running or in the CRX repository.
 
 Let’s take example of the following bank transaction summary table that we want to populate with data from an XML file.
 

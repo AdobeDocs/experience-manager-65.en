@@ -887,7 +887,7 @@ After [Creating the Basic Step](#creating-the-basic-step), define the step **Con
 
 1. Configure the properties on the node `cq:listeners`.
 
-   The `cq:listener` node and its properties allows you to set event handlers that react to events in the touch-enabled UI model editor; such as dragging a step onto a model page or editing a step properties.
+   The `cq:listener` node and its properties lets you set event handlers that react to events in the touch-enabled UI model editor; such as dragging a step onto a model page or editing a step properties.
 
    **Properties of Interest:**
 
@@ -898,7 +898,7 @@ After [Creating the Basic Step](#creating-the-basic-step), define the step **Con
 
    This configuration, is essential for the proper functioning of the editor. In the most cases this configuration must not be changed.
 
-   However, setting `cq:inherit` to true (on the `cq:editConfig` node, see above) allows you to inherit this configuration, without needing to explicitly include it in your step definition. If no inheritance is in place, then you do need to add this node with the following properties and values.
+   However, setting `cq:inherit` to true (on the `cq:editConfig` node, see above) lets you inherit this configuration, without needing to explicitly include it in your step definition. If no inheritance is in place, then you do need to add this node with the following properties and values.
 
    In this example, inheritance has been activated so we could remove the `cq:listeners` node and the step will still function correctly.
 

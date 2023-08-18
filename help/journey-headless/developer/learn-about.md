@@ -70,7 +70,7 @@ This decoupling means that each consuming service (the front end) can build its 
 
 ## Technological Underpinnings {#technology}
 
-A headless approach allows you to build a technology stack that can easily and quickly adapt to future digital experience demands.
+A headless approach lets you build a technology stack that can easily and quickly adapt to future digital experience demands.
 
 APIs for CMSes in the past were usually REST-based. Representational state transfer (REST) provides resources as text in a stateless fashion. This allows the resources to be read and modified with a predefined set of operations. REST allowed for great interoperability between services on the web by ensuring stateless representation of the content.
 

@@ -34,7 +34,7 @@ In CRX every user account is a node in the workspace. A CRX user account has the
 
 * You can specify access rights for the user account.
 
-  However, to simplify management we recommend that (in the majority of cases) you assign access rights to group accounts. Assigning access rights for each individual user quickly becomes very difficult to manage (the exceptions are certain system users when only one or two instances exist).
+  However, to simplify management Adobe recommends that (in the majority of cases) you assign access rights to group accounts. Assigning access rights for each individual user quickly becomes very difficult to manage (the exceptions are certain system users when only one or two instances exist).
 
 **Group Accounts** Group accounts are collections of users and/or other groups. These are used to simplify management as a change in the access rights assigned to a group is automatically applied to all users in that group. A user does not have to belong to any group, but often belongs to several.
 
@@ -50,7 +50,7 @@ In CRX a group has the following properties:
 
 This is done by assigning privileges to either allow or deny access to a resource (node or path) in the repository. As various privileges can be assigned, they must be evaluated to determine which combination is applicable for the current request.
 
-CRX allows you to configure the access rights for both user and groups accounts. The same basic principles of evaluation are then applied to both.
+CRX lets you configure the access rights for both user and groups accounts. The same basic principles of evaluation are then applied to both.
 
 ## How Access Rights are Evaluated {#how-access-rights-are-evaluated}
 
@@ -476,13 +476,13 @@ The policies can be selected for:
 
   You can either type in the **Principal** name or click the icon to the right of the field to open the **Select Principal** dialog.
 
-  This allows you to **Search** for a **User** or **Group**. Select the required principal from the resulting list, then click **OK** to carry the value back to the previous dialog.
+  This lets you **Search** for a **User** or **Group**. Select the required principal from the resulting list, then click **OK** to carry the value back to the previous dialog.
 
 ![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
->To simplify management we recommend that you assign access rights to group accounts, not individual user accounts.
+>To simplify management Adobe recommends that you assign access rights to group accounts, not individual user accounts.
 >
 >It is easier to manage a few groups, rather than many user accounts.
 

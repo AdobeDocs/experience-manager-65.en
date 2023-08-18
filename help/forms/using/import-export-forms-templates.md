@@ -24,7 +24,7 @@ You can move forms and related assets, themes, data dictionaries, document fragm
 
 ## Download or upload Forms &amp; Documents assets {#download-or-upload-forms-amp-documents-assets}
 
-AEM Forms user interface allows you to export assets from an AEM instance by downloading them as an AEM CRX-package or binary files. You can then import the downloaded AEM CRX-package or the binary file into another AEM instance.
+AEM Forms user interface lets you export assets from an AEM instance by downloading them as an AEM CRX-package or binary files. You can then import the downloaded AEM CRX-package or the binary file into another AEM instance.
 
 Export and import via AEM Forms user interface is supported for all assets except for Adaptive Form templates and Adaptive Form content policies. Therefore, on exporting an adaptive form from AEM Forms UI, the related adaptive form template and content policies are not automatically exported like other related assets.
 
@@ -189,7 +189,7 @@ You can use AEM package manger to export workflow applications. The procedure is
 
 ## Folders and organizing assets {#folders-and-organizing-assets}
 
-AEM Forms user interface uses folders to arrange assets. These folders are used for arranging assets created within AEM Forms user interface. You can rename, create subfolders, and store assets and documents in these folders. Organizing documents and assets in a folder allow you to group the files together for easy management. You can select a folder and choose to download or delete it.
+AEM Forms user interface uses folders to arrange assets. These folders are used for arranging assets created within AEM Forms user interface. You can rename, create subfolders, and store assets and documents in these folders. Organizing documents and assets in a folder let you group the files together for easy management. You can select a folder and choose to download or delete it.
 
 To create a folder, complete the following steps:
 
@@ -232,9 +232,9 @@ Complete the following steps to create copies of assets and letters:
 
 ## Search {#search-forms}
 
-AEM Forms UI allows you to search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
+AEM Forms UI lets you search your content. Using the top bar, you can tap Search **[A]** to search your content for resources such as assets and documents.
 
-When you search for assets, AEM Forms displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also allows you to save your searches.
+When you search for assets, AEM Forms displays the side panel. You can also tap ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
 
 ![search_topbar](assets/search_topbar.png)
 
@@ -250,6 +250,6 @@ On the side panel, you can use the following to narrow down your search results:
 * Tags
 * Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
 
-The side panel also allows you to save your search settings with names of your choice.
+The side panel also lets you save your search settings with names of your choice.
 
 For more information and instructions on using search, filters, saved search, and side panel, see [Search](/help/sites-authoring/search.md).

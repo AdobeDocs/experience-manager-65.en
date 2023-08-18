@@ -178,7 +178,7 @@ See [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging
 
 **Apache Sling Referrer Filter** To address known security issues with Cross-Site Request Forgery (CSRF) in CRX WebDAV and Apache Sling you must configure the Referrer filter.
 
-The referrer filter service is an OSGi service that allows you to configure:
+The referrer filter service is an OSGi service that lets you configure:
 
 * which http methods should be filtered
 * whether an empty referrer header is allowed

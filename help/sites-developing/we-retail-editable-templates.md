@@ -27,7 +27,7 @@ All pages in We.Retail are based on editable templates, allowing non-developers 
 1. From the **Page information** menu select **Edit Template**.
 1. You are now editing the Hero Page template.
 
-   The structure mode of the page allows you to modify the structure of the template. This includes for example the components that are allowed in the layout container.
+   The structure mode of the page lets you modify the structure of the template. This includes for example the components that are allowed in the layout container.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -47,7 +47,7 @@ All pages in We.Retail are based on editable templates, allowing non-developers 
 
 1. Back in the template editor, you can edit the policy of the text component within the layout container.
 
-   This allows you to:
+   This lets you:
 
     * Select an existing policy or create a new policy for the container
     * Define the features available to the page author when using this component such as

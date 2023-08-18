@@ -49,7 +49,7 @@ The main consoles are:
   </tr>
   <tr>
    <td><strong>Inbox </strong></td>
-   <td>Often, various people are involved in the subtasks of a workflow and each person must complete their step before handing off the work to the next person. The Inbox allows you to see notifications related to such tasks. See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>. <br /> </td>
+   <td>Often, various people are involved in the subtasks of a workflow and each person must complete their step before handing off the work to the next person. The Inbox lets you see notifications related to such tasks. See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Tagging</strong></td>
