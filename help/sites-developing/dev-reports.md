@@ -130,7 +130,7 @@ This allows:
 
 * Extracting and deriving values from the underlying result set.
 
-  For example, it allows you to process two property values as a single value by calculating the difference between the two.
+  For example, it lets you process two property values as a single value by calculating the difference between the two.
 
 * Resolving extracted values; this can be done in a variety of ways.
 
@@ -1409,7 +1409,7 @@ These can be viewed using the Configuration menu of the web console (available f
 
 ### Cache Settings (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
 
-* **Enable** allows you to enable or disable the caching of report data. Enabling the report cache will keep report data in memory during several requests. This may boost performance, but will lead to higher memory consumption and may, in extreme circumstances, lead to out of memory situations.
+* **Enable** lets you enable or disable the caching of report data. Enabling the report cache will keep report data in memory during several requests. This may boost performance, but will lead to higher memory consumption and may, in extreme circumstances, lead to out of memory situations.
 * **TTL** defines the time (in seconds) for which report data is cached. A higher number will boost performance, but may also return inaccurate data if the data changes within the time period.
 * **Max entries** defines the maximum number of reports to be cached at any one time.
 

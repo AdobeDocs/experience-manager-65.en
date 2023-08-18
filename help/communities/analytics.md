@@ -652,7 +652,7 @@ The forum topic is presently the only example of this customization:
 
 ## Manage user data in Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics provides APIs that allow you to access, export, and delete user data. For more information, see [Submit Access and Delete Requests](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+Adobe Analytics provides APIs that let you access, export, and delete user data. For more information, see [Submit Access and Delete Requests](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 ## Resources {#resources}
 

@@ -126,15 +126,15 @@ For further details see [Content Fragment - Delete Considerations](/help/assets/
 >
 >The [Content Fragment Core Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) is now recommended. See [Developing Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) for more details.
 
-Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the [**Content Fragment** core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [component that allows you to include content fragments on your pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this **Content Fragment** core component.
+Content fragments can be referenced from AEM pages, just as any other asset type. AEM provides the [**Content Fragment** core component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) - a [component that lets you include content fragments on your pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). You can also extend, this **Content Fragment** core component.
 
 * The component uses the `fragmentPath` property to reference the actual content fragment. The `fragmentPath` property is handled in the same manner as similar properties of other asset types; for example, when the content fragment is moved to another location.
 
-* The component allows you to select the variation to be displayed.
+* The component lets you select the variation to be displayed.
 * Additionally, a range of paragraphs can be selected to restrict the output; for example, this can be used for multi-column output.
 * The component allows [in-between content](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-  * Here the component allows you to place other assets (images, etc.) in between the paragraphs of the referenced fragment.
+  * Here the component lets you place other assets (images, etc.) in between the paragraphs of the referenced fragment.
   * For in-between content you need to:
 
     * be aware of the possibility of unstable references; in-between content (added when authoring a page) has no fixed relationship to the paragraph it is positioned next to, inserting a new paragraph (in the content fragment editor) before the position of the in-between content can lose the relative position
@@ -294,7 +294,7 @@ The following three interfaces can serve as entry points:
 
 * **Content Fragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  This interface allows you to work with a content fragment in an abstract way.
+  This interface lets you work with a content fragment in an abstract way.
 
   >[!CAUTION]
   >

@@ -23,7 +23,7 @@ exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 
 ## Introduction to lazy loading {#introduction-to-lazy-loading}
 
-When form become large and complex with hundreds and thousands of fields, end users experience long response time when rendering forms at runtime. To minimize the response time, adaptive forms allows you to break forms into logical fragments and configure to defer initialization or loading of fragments until the fragment needs to be visible. It is referred to as lazy loading. In addition, the fragments configured for lazy loading are unloaded once user navigates to other sections in the form and the fragments are no longer visible.
+When form become large and complex with hundreds and thousands of fields, end users experience long response time when rendering forms at runtime. To minimize the response time, adaptive forms lets you break forms into logical fragments and configure to defer initialization or loading of fragments until the fragment needs to be visible. It is referred to as lazy loading. In addition, the fragments configured for lazy loading are unloaded once user navigates to other sections in the form and the fragments are no longer visible.
 
 Let's first understand the requirements and preparatory steps before you configure lazy loading.
 

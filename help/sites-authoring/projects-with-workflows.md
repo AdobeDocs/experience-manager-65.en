@@ -16,7 +16,7 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 
 The project workflows available out of the box include the following:
 
-* **Project Approval Workflow** - This workflow allows you to assign content to a user, review, then approve.
+* **Project Approval Workflow** - This workflow lets you assign content to a user, review, then approve.
 * **Request Launch** - A workflow the requests a launch.
 * **Request Landing Page** - This workflow requests a landing page.
 * **Request Email** - Workflow for requesting an email.

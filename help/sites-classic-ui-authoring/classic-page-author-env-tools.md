@@ -16,7 +16,7 @@ The authoring environment of AEM provides various mechanisms for organizing and 
 
 ## Site Administration {#site-administration}
 
-The **Websites** console allows you to manage and navigate your website. Using the two panes the structure of your website can be expanded and actions taken on the required element:
+The **Websites** console lets you manage and navigate your website. Using the two panes the structure of your website can be expanded and actions taken on the required element:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -40,7 +40,7 @@ Or by using the **Help** button in the edit dialog of specific components; this 
 
 ## Sidekick {#sidekick}
 
-The **Components** tab of the sidekick allows you to browse the components available to be added to the current page. The required group can be expanded, then a component dragged to the required location on the page.
+The **Components** tab of the sidekick lets you browse the components available to be added to the current page. The required group can be expanded, then a component dragged to the required location on the page.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -100,7 +100,7 @@ This tab shows all pages. Double-click any page to open it for editing.
 
 ### Referencing Paragraphs from other Pages {#referencing-paragraphs-from-other-pages}
 
-This tab allows you to search for another page. All paragraphs from that page will be listed. You can then drag a paragraph to your current page, this will create a reference to the original paragraph.
+This tab lets you search for another page. All paragraphs from that page will be listed. You can then drag a paragraph to your current page, this will create a reference to the original paragraph.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -187,10 +187,10 @@ When editing a page with the classic UI there are various modes that can be acce
 The row of icons at the bottom of the Sidekick are used to switch modes for working with the pages:
 
 * [Edit](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-  This is the default mode and allows you to edit the page, adding or deleting components and making other changes.
+  This is the default mode and lets you edit the page, adding or deleting components and making other changes.
 
 * [Preview](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-  This mode allows you to preview the page as if it were appearing on your website in its final form.
+  This mode lets you preview the page as if it were appearing on your website in its final form.
 
 * [Design](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
   In this mode, you have the possibility to edit the design of the page by configuring the components accessible.

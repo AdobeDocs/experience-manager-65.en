@@ -98,7 +98,7 @@ Render a rights-enabled form by using the Forms API (Java):
 
     * Create a `ReaderExtensionSpec` object by using its constructor.
     * Specify the alias of the credential by invoking the `ReaderExtensionSpec` object’s `setReCredentialAlias` method and specify a string value that represents the alias value.
-    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference allows you to do so. That is, you cannot set a usage right if the credential does not allow you to set it. For example. to set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object’s `setReFillIn` method and pass `true`.
+    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference lets you do so. That is, you cannot set a usage right if the credential does not let you set it. For example. to set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object’s `setReFillIn` method and pass `true`.
 
    >[!NOTE]
    >
@@ -151,7 +151,7 @@ Render a rights-enabled form by using the Forms API (web service):
 
     * Create a `ReaderExtensionSpec` object by using its constructor.
     * Specify the alias of the credential by invoking the `ReaderExtensionSpec` object’s `setReCredentialAlias` method and specify a string value that represents the alias value.
-    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference allows you to do so. That is, you cannot set a usage right if the credential does not allow you to set it. To set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object’s `setReFillIn` method and pass `true`.
+    * Set each usage right by invoking the corresponding method that belongs to the `ReaderExtensionSpec` object. However, you can only set a usage right if the credential that you reference lets you do so. That is, you cannot set a usage right if the credential does not let you set it. To set the usage right that enables a user to fill in form fields and save the form, invoke the `ReaderExtensionSpec` object’s `setReFillIn` method and pass `true`.
 
 1. Render a rights-enabled form
 

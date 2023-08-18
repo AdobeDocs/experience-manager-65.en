@@ -43,7 +43,7 @@ The Invoke DDX workflow requires the following input documents:
 
 #### Environment options {#environment-options}
 
-The Environment Options tab allows you to set various processing options for the invoke API.
+The Environment Options tab lets you set various processing options for the invoke API.
 
 * *Job Log Level*: Specifies the log level for the processing logs.
 * *Validate Only*: Checks the validity of the input DDX.
@@ -52,7 +52,7 @@ The Environment Options tab allows you to set various processing options for the
 
 #### Output documents {#output-documents}
 
-Depending on the input DDX, the invoke API can produce multiple output documents. The Output Documents tab allows you to select where output document will be saved.
+Depending on the input DDX, the invoke API can produce multiple output documents. The Output Documents tab lets you select where output document will be saved.
 
 1. *Save Output in Payload*: Saves output documents under the payload folder, or overwrites the payload, if payload is a file.
 1. *Output Document's Map*: Allows to explicitly specify where to save each output document by adding one entry per output document. Each entry specifies the document and where to save it. An output document can overwrite the payload or saved under the payload folder. It is useful when there are multiple output documents.
@@ -78,7 +78,7 @@ Specify the source of the document to convert to a PDF/A compliant document in o
 
 #### Conversion options {#conversion-options}
 
-Conversion Options allow you to specify options that alter the process of PDF/A conversion.
+Conversion Options let you specify options that alter the process of PDF/A conversion.
 
 * *Compliance* : Specifies the PDF/A standard to which the output PDF/A must comply.
 * *Result Level* : Specifies the log level to be used for PDF/A conversion logs.
@@ -91,7 +91,7 @@ Conversion Options allow you to specify options that alter the process of PDF/A 
 
 #### Output documents {#output-documents-1}
 
-The Output Documents tab allows you to specify the destination for the output documents
+The Output Documents tab lets you specify the destination for the output documents
 
 * *PDFA Document*: Specifies the location where the converted PDF/A document is saved. It can either overwrite the payload document or saved under the payload folder.
 * *Conversion Log*: Specifies the location where the conversion logs are saved. It can either overwrite the payload document or can be saved under the payload folder.

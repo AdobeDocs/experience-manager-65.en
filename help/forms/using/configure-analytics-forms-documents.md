@@ -13,7 +13,7 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 ---
 # Analytics using Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms integrates with Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
+AEM Forms integrates with Analytics that lets you capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
 
 >[!NOTE]
 >

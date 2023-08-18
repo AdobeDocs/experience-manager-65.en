@@ -220,7 +220,7 @@ To use Adobe Sign with AEM Forms, [Integrate Adobe Sign with AEM Forms](/help/fo
 
 #### Configure Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms integrates with Adobe Analytics that allows you to capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
+AEM Forms integrates with Adobe Analytics that lets you capture and track performance metrics for your published forms and documents. The objective behind analyzing these metrics is to make informed decisions based on data about the changes required to make forms or document more usable.
 
 To use Adobe Analytics with AEM Forms, see [Configuring analytics and reports](/help/forms/using/configure-analytics-forms-documents.md).
 

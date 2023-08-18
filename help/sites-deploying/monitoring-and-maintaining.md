@@ -677,7 +677,7 @@ Some of these tools depend on your operating system.
 
 This file registers basic information about every request made to AEM. From this, valuable conclusions can be extracted.
 
-The `request.log` offers a built-in way to get a look at how long requests take. For development purposes, it is useful to `tail -f` the `request.log` and watch for slow response times. To analyze a bigger `request.log`, Adobe recommends the [use of `rlog.jar` which allows you to sort and filter for response times](#using-rlog-jar-to-find-requests-with-long-duration-times).
+The `request.log` offers a built-in way to get a look at how long requests take. For development purposes, it is useful to `tail -f` the `request.log` and watch for slow response times. To analyze a bigger `request.log`, Adobe recommends the [use of `rlog.jar` which lets you sort and filter for response times](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
 Adobe recommends isolating the "slow" pages from the `request.log`, then individually tuning them for a better performance. Include performance metrics per component or using a performance profiling tool such as ` [yourkit](https://www.yourkit.com/)`.
 

@@ -115,7 +115,7 @@ Different versions of Designer can coexist on the same system, for example Desig
   </tr>
   <tr>
    <td><p>Designer (stand-alone)</p> </td>
-   <td><p>None. <br />The version of Designer included with Workbench is English-only. <br />The Workbench installer will not reinstall a new version of Designer. Instead an updated version, bundled with the Workbench installer, will be patched. This also allows you to use your localized version of Designer within Workbench.<br /> </p> </td>
+   <td><p>None. <br />The version of Designer included with Workbench is English-only. <br />The Workbench installer will not reinstall a new version of Designer. Instead an updated version, bundled with the Workbench installer, will be patched. This also lets you use your localized version of Designer within Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>

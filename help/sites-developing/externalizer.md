@@ -1,6 +1,6 @@
 ---
 title: Externalizing URLs
-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
+description: The Externalizer is an OSGI service that lets you programmatically transform a resource path into an external and absolute URL
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -10,7 +10,7 @@ exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
 ---
 # Externalizing URLs{#externalizing-urls}
 
-In Adobe Experience Manager (AEM), the **Externalizer** is an OSGI service that allows you to programmatically transform a resource path (for example, `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
+In Adobe Experience Manager (AEM), the **Externalizer** is an OSGI service that lets you programmatically transform a resource path (for example, `/path/to/my/page`) into an external and absolute URL (for example, `https://www.mycompany.com/path/to/my/page`) by prefixing the path with a pre-configured DNS.
 
 Because an instance cannot know its externally visible URL if it is running behind a web layer, and because sometimes a link has to be created outside of the request scope, this service provides a central place to configure those external URLs and build them.
 
@@ -18,7 +18,7 @@ This page explains how to configure the **Externalizer** service and how to use 
 
 ## Configuring the Externalizer service {#configuring-the-externalizer-service}
 
-The **Externalizer** service allows you to centrally define multiple domains that can be used to programmatically prefix resource paths. Each domain is identified by a unique name that is used to programmatically reference the domain.
+The **Externalizer** service lets you centrally define multiple domains that can be used to programmatically prefix resource paths. Each domain is identified by a unique name that is used to programmatically reference the domain.
 
 To define a domain mapping for the **Externalizer** service:
 

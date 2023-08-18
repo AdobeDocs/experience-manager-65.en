@@ -14,7 +14,7 @@ exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 ---
 # Run Modes{#run-modes}
 
-Run modes allow you to tune your AEM instance for a specific purpose; for example author or publish, test, development, intranet or others.
+Run modes let you tune your AEM instance for a specific purpose; for example author or publish, test, development, intranet or others.
 
 You can:
 
@@ -67,7 +67,7 @@ Customized run modes can also be selected at each startup.
 
 ## Using samplecontent and nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-These modes allow you to control the use of sample content. The sample content is defined before the quickstart is built and can include packages, configurations, etc:
+These modes let you control the use of sample content. The sample content is defined before the quickstart is built and can include packages, configurations, etc:
 
 * The `samplecontent` run mode will install this content (the default mode).
 
@@ -79,7 +79,7 @@ The nosamplecontent run mode is designed for production installations.
 
 A collection of values for configuration properties, used for a particular run mode, can be saved in the repository.
 
-The run mode is indicated by a suffix on the folder name. This allows you to store all configurations in one repository as. For example:
+The run mode is indicated by a suffix on the folder name. This lets you store all configurations in one repository as. For example:
 
 * `config`
 

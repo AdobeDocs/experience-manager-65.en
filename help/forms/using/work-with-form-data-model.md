@@ -21,7 +21,7 @@ exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
 
  ![data-integration](do-not-localize/data-integeration.png)
 
-Form data model editor provides an intuitive user interface and tools for editing and configuring a form data model. Using the editor, you can add and configure data model objects, properties, and services from associated data sources in the form data model. In addition, it allows you to create data model objects and properties without data sources and bind them with respective data model objects and properties later. You can also generate and edit sample data for data model object properties that you can use to prefill adaptive forms and interactive communications while previewing. You can test data model objects and services configured in a form data model to ensure it is properly integrated with data sources.
+Form data model editor provides an intuitive user interface and tools for editing and configuring a form data model. Using the editor, you can add and configure data model objects, properties, and services from associated data sources in the form data model. In addition, it lets you create data model objects and properties without data sources and bind them with respective data model objects and properties later. You can also generate and edit sample data for data model object properties that you can use to prefill adaptive forms and interactive communications while previewing. You can test data model objects and services configured in a form data model to ensure it is properly integrated with data sources.
 
 If you are new to Forms data integration and have not configured a data source or created a form data model, see the following topics:
 
@@ -99,7 +99,7 @@ Next, you can add child properties in unbound data model objects.
 
 ### Add child properties {#child-properties}
 
-Form data model editor allows you to create child properties in a data model object. The property when created is not bound to any property in a data source. You can later bind the child property with another property in the containing data model object.
+Form data model editor lets you create child properties in a data model object. The property when created is not bound to any property in a data source. You can later bind the child property with another property in the containing data model object.
 
 To create a child property:
 
@@ -394,7 +394,7 @@ Similarly, you can choose a `GET LINK` service and configure its navigation prop
 
 ## Generate and edit sample data {#sample}
 
-Form data model editor allows you to generate sample data for all data model object properties, including computed properties, in a form data model. It is a set of random values that comply with the data type configured for each property. You can also edit and save data, which is retained even if you regenerate the sample data.
+Form data model editor lets you generate sample data for all data model object properties, including computed properties, in a form data model. It is a set of random values that comply with the data type configured for each property. You can also edit and save data, which is retained even if you regenerate the sample data.
 
 Do the following to generate and edit sample data:
 

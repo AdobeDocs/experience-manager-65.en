@@ -85,7 +85,7 @@ You could also have **multiple** brands that are used in one site, which could b
 
 ## Example: Targeting content based on geography {#example-targeting-content-based-on-geography}
 
-Using multisite for targeted content allows you to share, roll out, or isolate personalization content. To better illustrate how this feature is used, consider a scenario where you want to control how targeted content is rolled out based on geography as in the following scenario:
+Using multisite for targeted content lets you share, roll out, or isolate personalization content. To better illustrate how this feature is used, consider a scenario where you want to control how targeted content is rolled out based on geography as in the following scenario:
 
 There are four versions of the same site based on geography:
 

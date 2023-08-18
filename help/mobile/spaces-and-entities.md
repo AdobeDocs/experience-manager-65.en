@@ -188,7 +188,7 @@ If entity children, which are other entities, are gathered for data modeling, th
    >
    >Depending on the template you choose to create your entity, the UI will be different for both, for editing and viewing properties of your entity. See the steps below for more details.
 
-   ***If you choose the template for creating the entity as Assets Models***, clicking on **Edit** allows you to add assets as shown in the figure below:
+   ***If you choose the template for creating the entity as Assets Models***, clicking on **Edit** lets you add assets as shown in the figure below:
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -196,7 +196,7 @@ If entity children, which are other entities, are gathered for data modeling, th
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***If you choose the template for creating the entity as Pages Models***, clicking on **Edit** allows you to add assets as shown in the figure below:
+   ***If you choose the template for creating the entity as Pages Models***, clicking on **Edit** lets you add assets as shown in the figure below:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 

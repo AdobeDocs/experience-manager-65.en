@@ -248,7 +248,7 @@ You can add multiple assets in the product component, then specify the asset tha
    ![Adding product data screenshot](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Tap/click **Add**. A new asset placeholder appears.
-1. Tapping/clicking **Change **opens a dialog which allows you to choose an asset.
+1. Tapping/clicking **Change **opens a dialog which lets you choose an asset.
 1. Select the asset you want to add.
 
    >[!NOTE]
@@ -338,7 +338,7 @@ The mechanism to select the image to be displayed is as follows:
 
 <!-- Search&Promote is end of life as of September 1, 2022 ### Product Feed {#product-feed} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration allows you to: -->
+<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration lets you: -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
 <!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
@@ -370,7 +370,7 @@ You can look at them in the Web Console in OSGI events ( `/system/console/events
 
 ### Image with Add to Cart Links {#image-with-add-to-cart-links}
 
-The Image with Add to Cart Links component allows you to quickly add a product to the cart by creating a hotspot linked with a product on an image.
+The Image with Add to Cart Links component lets you quickly add a product to the cart by creating a hotspot linked with a product on an image.
 
 Clicking the hotspot opens a dialog which let you choose the size and quantity of the product.
 

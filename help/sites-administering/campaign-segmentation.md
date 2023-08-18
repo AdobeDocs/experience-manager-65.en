@@ -25,9 +25,9 @@ Depending on the information you have already collected about your site visitors
 
 These segments are then used to provide a visitor with specifically targeted content. This content is maintained in the [Campaigns](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) section of the website. Teaser pages defined here can be included as teaser paragraphs on any page and define which visitor segment the specialized content is applicable for.
 
-AEM allows you to easily create and update segments, teasers, and campaigns. It also allows you to verify the results of your definitions.
+AEM lets you easily create and update segments, teasers, and campaigns. It also lets you verify the results of your definitions.
 
-The **Segment Editor** allows you to easily define a segment:
+The **Segment Editor** lets you easily define a segment:
 
 ![The Segment Editor window](assets/segmenteditor.png)
 
@@ -42,7 +42,7 @@ Each segment has a **Boost** parameter that is used as a weighting factor; a hig
 
 ## Segment Logic {#segment-logic}
 
-The following logic containers are available out-of-the-box and allow you to construct the logic of your segment selection. They can be dragged from the sidekick to the editor:
+The following logic containers are available out-of-the-box and let you construct the logic of your segment selection. They can be dragged from the sidekick to the editor:
 
 <table>
  <tbody>

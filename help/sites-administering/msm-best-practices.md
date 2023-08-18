@@ -99,7 +99,7 @@ MSM can assist in the creation of multilingual websites in two ways:
 
     * While MSM itself **does not provide content translation**, it can be integrated with third-party translation connectors that do. Please note that:
 
-        * MSM allows you to cancel inheritance at the page- and/or component- level. This helps prevent overwriting translated content (from a live copy, with not-yet-translated content from a blueprint) on the next rollout.
+        * MSM lets you cancel inheritance at the page- and/or component- level. This helps prevent overwriting translated content (from a live copy, with not-yet-translated content from a blueprint) on the next rollout.
         * Some third-party translation connectors automate this management of MSM inheritances.
 
           Please check with your translation service provider for more information.
@@ -180,7 +180,7 @@ Therefore, it is recommended that you *only* use `onModify` triggers if the bene
 
 Remember that:
 
-* In addition to customizing rollout actions, MSM also allows you to customize node properties that are being rolled out. The [MSM OSGi configuration allows you to exclude node types](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the live copy.
+* In addition to customizing rollout actions, MSM also lets you customize node properties that are being rolled out. The [MSM OSGi configuration lets you exclude node types](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) from being copied from the source to the live copy.
 
 ## Further Information {#further-information}
 
