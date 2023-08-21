@@ -34,15 +34,19 @@ mini-toc-levels: 4
 
 Some of the key features and enhancements in this release include the following:
 
+**Key features**
+
 * Assets, Dynamic Media - [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
-* Assets - Ability to navigate to the folder location for assets displayed in the search results.
 
-## Forms enhancements in Service Pack 18 {#forms-enhancements-sp18}
+* Assets - From Search results, you can now navigate to the folder location that contains an asset, thereby letting you perform various asset management tasks. (ASSETS-23182) NORMAL
 
-<!-- ### Forms{#aem-forms-6518} 
+**Enhancements**
 
-* A -->
+* Sites Polaris Picker in Content Fragments has improved performance. (SITES-14092) MAJOR
 
+* Enabled Sites Page Editor/Image Component user to reference assets from remote Assets Cloud Service. (SITES-13448, SITES-13433) BLOCKER
+
+* To quickly find a project in List view where you may have many projects in your system, Adobe now provides support for server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) NORMAL
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
