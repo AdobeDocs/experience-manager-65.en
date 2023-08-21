@@ -17,8 +17,8 @@ When uploading images, you can automatically crop the image upon upload by apply
 
 >[!IMPORTANT]
 >
->&bull; Smart Crop is available only in Dynamic Media - Scene7 mode.
->&bull; Image Profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
+>* Smart Crop is available only in Dynamic Media - Scene7 mode.
+>* Image Profiles are not applicable to PDF, animated GIF, or INDD (Adobe InDesign) files.
 
 ## Crop options {#crop-options}
 
@@ -51,8 +51,8 @@ You have two image crop options from which to choose: Pixel Crop or Smart Crop. 
 
 >[!IMPORTANT]
 >
->&bull; Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
->&bull; CMYK image format is not supported with smart crop.
+>* Adobe recommends that you review any generated crops and swatches to ensure that they are appropriate and relevant to your brand and values.
+>* CMYK image format is not supported with smart crop.
 
 | Option | When to use | Description |
 | --- | --- | --- |
@@ -172,7 +172,7 @@ You can reprocess assets in a folder that already has an existing video profile 
 
 >[!IMPORTANT]
 >
->&bull; Smart crop is available only in Dynamic Media - Scene7 mode.
+>* Smart crop is available only in Dynamic Media - Scene7 mode.
 
 You can manually realign or resize the smart crop window of an image to further refine its focal point.
 
@@ -203,7 +203,7 @@ See also [Edit the smart crop or smart swatch of multiple images](#editing-the-s
 
 >[!IMPORTANT]
 >
->&bull; Smart crop is available only in Dynamic Media - Scene7 mode.
+>* Smart crop is available only in Dynamic Media - Scene7 mode.
 
 After you apply an Image Profile &ndash; containing Smart Crop &ndash; to a folder, all images in that folder have a crop applied to them. If desired, you can *manually* realign or resize the smart crop window in multiple images to further refine their focal point.
 
