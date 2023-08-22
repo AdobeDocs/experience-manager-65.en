@@ -58,7 +58,6 @@ Some of the key features and enhancements in this release include the following:
 * Link reference does not get updated inside an Experience Fragment when creating a live copy or rollout of an Experience Fragment. (SITES-14759) CRITICAL
 * A workflow synchronization action was added to the out-of-the-box Experience Manager standard rollout configuration, the "Rollout page and subpages", from the parent page, and async job fails with NullPointer exception. The source location page (en-us) does not exist in the parent, but exists in the target location (Live copy) (en). (SITES-12207) MAJOR
 * You have 'en' page which contains `jcr:description` and sent the page for translation. The `jcr:description` is getting translated and the property is present under launch. However, when the launch is promoted, `jcr:description` is not getting updated in the page. (SITES-13146) MAJOR
-* WCM (Web Content Management) IT tests were blocking the release of Service Pack 17. (SITES-13089) BLOCKER
 * Localized content on Live Copy is lost after blueprint rollout. (SITES-12602) CRITICAL
 
 #### Admin User Interface{#sites-adminui-6518}
@@ -289,6 +288,35 @@ Review if you use a feature or a capability in a deployment. Also, plan to chang
 <!-- REMOVED AS PER CQDOC-20022, JANUARY 23, 2023 * If you install [!DNL Experience Manager] 6.5 Service Pack 10 or a previous service pack on [!DNL Experience Manager] 6.5, the runtime copy of your assets custom workflow model (created in `/var/workflow/models/dam`) is deleted.
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
+
+* Related to Oak
+  From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
+
+  ```shell
+  org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+  at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+      at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+      at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+      at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+      at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+      at org.h2.mvstore.db.Store.<init>(Store.java:129)
+  ```
+
+  Or
+
+  ```shell
+  org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.1.214/5].
+  ```
+
+  To resolve this exception, do the following:
+
+    1. Delete the following two folders from `crx-quickstart/repository/`
+
+        * `cache`
+        * `diff-cache`
+
+    1. Install the Service Pack, or restart Experience Manager as a Cloud Service. 
+      New folders of `cache` and `diff-cache` are automatically created and you no longer experience an exception related to `mvstore` in the `error.log`.
 
 * Update your GraphQL queries that may have used a custom API name for your content model to using the default name of the content model instead.
 
