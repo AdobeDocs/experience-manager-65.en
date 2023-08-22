@@ -48,6 +48,8 @@ Some of the key features and enhancements in this release include the following:
 
 * To quickly find a project in List view where you may have many projects in your system, Adobe now provides support for server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) NORMAL
 
+* AEM 6.5.18.0 supports MongoDB 5.0 to 6.0.
+
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
 ## Fixed issues in Service Pack 18 {#fixed-issues}
