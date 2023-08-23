@@ -40,7 +40,7 @@ Some of the key features and enhancements in this release include the following:
 
 * Assets - From Search results, you can now navigate to the folder location that contains an asset, thereby letting you perform various asset management tasks. (ASSETS-23182) NORMAL
 
-**Enhancements**
+**Key Enhancements**
 
 * Sites Polaris Picker in Content Fragments has improved performance. (SITES-14092) MAJOR
 
@@ -49,6 +49,31 @@ Some of the key features and enhancements in this release include the following:
 * To quickly find a project in List view where you may have many projects in your system, Adobe now provides support for server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) NORMAL
 
 * AEM 6.5.18.0 supports MongoDB 5.0 to 6.0.
+
+**Forms**
+
+* **Enhanced error handling with custom error handlers in the rule editor:** You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down 
+
+* **Enhanced Adobe Sign Workflow step:** Adobe Sign workflow step in AEM Workflows is available with the following enhancements.  
+
+   * **Enhanced Security with Government ID-Based Authentication for Adobe Sign:** Adobe Acrobat Sign's Government ID Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
+   
+   * **Enhanced Transparency with Audit Trail for Adobe Sign Documents:** Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements.  
+
+ 
+   **Expand the roles for Agreement recipients beyond just the Signer:** Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
+
+ 
+* **AEM Forms on JEE full installer**: The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
+  * Microsoft Windows Server 2022 
+  * Microsoft Active Directory 2022 
+  * Oracle WebLogic 14C and 12.2.1.4 on Windows Server 2022 
+  * RedHat JBoss 7.4.10 on Windows Server 2022 
+  * MongoDB 4.4 
+  * Microsoft JDBC Driver 12.2 for SQL Server 
+  * MySQL JDBC Connector 8 
+
+If you are performing a fresh installation or planning to use the latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer. To explore the complete list of newly added and deprecated software, refer to the documentation for AEM Forms on JEE or AEM Forms on OSGi. 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
