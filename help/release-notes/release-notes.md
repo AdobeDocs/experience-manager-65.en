@@ -20,7 +20,7 @@ mini-toc-levels: 4
 | Version  | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE -->                     |
 | Type     | Service Pack release         |
 | Date     | Thursday, August 24, 2023 <!-- UPDATE FOR EACH NEW RELEASE -->              |
-| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.17.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
+| Download URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE -->|
 
 ## What is included in [!DNL Experience Manager] 6.5.18.0 {#what-is-included-in-aem-6518}
 
@@ -38,15 +38,15 @@ Some of the key features and enhancements in this release include the following:
 
 * Assets, Dynamic Media - [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 
-* Assets - From Search results, you can now navigate to the folder location that contains an asset, thereby letting you perform various asset management tasks. (ASSETS-23182) NORMAL
+* Assets - From Search results, you can now navigate to the folder location that contains an asset, thereby letting you perform various asset management tasks. (ASSETS-23182) 
 
 **Key Enhancements**
 
-* Sites Polaris Picker in Content Fragments has improved performance. (SITES-14092) MAJOR
+* Sites Polaris Picker in Content Fragments has improved performance. (SITES-14092) 
 
-* Enabled Sites Page Editor/Image Component user to reference assets from remote Assets Cloud Service. (SITES-13448, SITES-13433) BLOCKER
+* Enabled Sites Page Editor/Image Component user to reference assets from remote Assets Cloud Service. (SITES-13448, SITES-13433) 
 
-* To quickly find a project in List view where you may have many projects in your system, Adobe now provides support for server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) NORMAL
+* To quickly find a project in List view where you may have many projects in your system, Adobe now provides support for server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) 
 
 * AEM 6.5.18.0 supports MongoDB 5.0 to 6.0.
 
@@ -56,12 +56,12 @@ Some of the key features and enhancements in this release include the following:
 
 * **Enhanced Adobe Sign Workflow step:** Adobe Sign workflow step in AEM Workflows is available with the following enhancements.  
 
-   * **Enhanced Security with Government ID-Based Authentication for Adobe Sign:** Adobe Acrobat Sign's Government ID Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
+   * **Enhanced Security with Government ID-Based Authentication for Adobe Sign:** Adobe Acrobat Sign's Government ID Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
    
    * **Enhanced Transparency with Audit Trail for Adobe Sign Documents:** Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements.  
 
  
-   **Expand the roles for Agreement recipients beyond just the Signer:** Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
+   **Expand the roles for Agreement recipients beyond just the Signer:** Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
 
  
 * **AEM Forms on JEE full installer**: The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
@@ -81,32 +81,32 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 ### [!DNL Sites]{#sites-6518}
 
-* Used the Bulk Editor to update the properties of multiple pages by downloading the `tsv` Export, made changes offline, and then uploaded the `tsv` back to Experience Manager. Even though the pages were updated, the JCR Property `cq:lastModified` was not updated and in the timeline. (SITES-14072) CRITICAL
-* Link reference does not get updated inside an Experience Fragment when creating a live copy or rollout of an Experience Fragment. (SITES-14759) CRITICAL
-* A workflow synchronization action was added to the out-of-the-box Experience Manager standard rollout configuration, the "Rollout page and subpages", from the parent page, and async job fails with NullPointer exception. The source location page (en-us) does not exist in the parent, but exists in the target location (Live copy) (en). (SITES-12207) MAJOR
-* You have 'en' page which contains `jcr:description` and sent the page for translation. The `jcr:description` is getting translated and the property is present under launch. However, when the launch is promoted, `jcr:description` is not getting updated in the page. (SITES-13146) MAJOR
-* Localized content on Live Copy is lost after blueprint rollout. (SITES-12602) CRITICAL
+* Used the Bulk Editor to update the properties of multiple pages by downloading the `tsv` Export, made changes offline, and then uploaded the `tsv` back to Experience Manager. Even though the pages were updated, the JCR Property `cq:lastModified` was not updated and in the timeline. (SITES-14072) 
+* Link reference does not get updated inside an Experience Fragment when creating a live copy or rollout of an Experience Fragment. (SITES-14759) 
+* A workflow synchronization action was added to the out-of-the-box Experience Manager standard rollout configuration, the "Rollout page and subpages", from the parent page, and async job fails with NullPointer exception. The source location page (en-us) does not exist in the parent, but exists in the target location (Live copy) (en). (SITES-12207) 
+* You have 'en' page which contains `jcr:description` and sent the page for translation. The `jcr:description` is getting translated and the property is present under launch. However, when the launch is promoted, `jcr:description` is not getting updated in the page. (SITES-13146) 
+* Localized content on Live Copy is lost after blueprint rollout. (SITES-12602) 
 
 #### Admin User Interface{#sites-adminui-6518}
 
-* If a user's delete permission is removed by way of the useradmin console, the user no longer sees the 'Properties' button in the sites.html console (when selecting the page). However, this option is present if the user opens the page editor. (SITES-14341) MAJOR
-* When a folder has many pages, each having many versions, when using the compare version feature, the load on the instance becomes high. When several users are using the feature at the same time, the instance can go down. (SITES-13026) MAJOR
+* If a user's delete permission is removed by way of the useradmin console, the user no longer sees the 'Properties' button in the sites.html console (when selecting the page). However, this option is present if the user opens the page editor. (SITES-14341) 
+* When a folder has many pages, each having many versions, when using the compare version feature, the load on the instance becomes high. When several users are using the feature at the same time, the instance can go down. (SITES-13026) 
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6518}
 
-* A problem was discovered with the exception handling in the `RemoteAssetClientImpl`. When an IOException or RuntimeException occurs while querying the metadata, the current thread attempts to close and recreate the shared httpClient which could result in a cascade of other errors in the threads. (SITES-14092) MAJOR
-* When authors fill out the rich text editor field in a content fragment, and insert an image inside a link, when the content fragment is queried through the GraphQL API, the error message `Exception while fetching data (/genericContentByPath) : null` is returned. This error only occurred if there was a link with an image inside it. Removing the image from the link made the error message go away. (SITES-13988) CRITICAL
-* The GraphQL implementation of Experience Manager 6.5 was not on par with master and several important fixes were missing. (SITES-13096) BLOCKER
-* A mandatory HTTP header is needed when accessing the metadata service endpoint. (SITES-13068) BLOCKER
+* A problem was discovered with the exception handling in the `RemoteAssetClientImpl`. When an IOException or RuntimeException occurs while querying the metadata, the current thread attempts to close and recreate the shared httpClient which could result in a cascade of other errors in the threads. (SITES-14092) 
+* When authors fill out the rich text editor field in a content fragment, and insert an image inside a link, when the content fragment is queried through the GraphQL API, the error message `Exception while fetching data (/genericContentByPath) : null` is returned. This error only occurred if there was a link with an image inside it. Removing the image from the link made the error message go away. (SITES-13988) 
+* The GraphQL implementation of Experience Manager 6.5 was not on par with master and several important fixes were missing. (SITES-13096) 
+* A mandatory HTTP header is needed when accessing the metadata service endpoint. (SITES-13068) 
 
 #### Core Components{#sites-core-components-6518}
 
-* Asset selector does not fetch updated list of assets when it is closed and reopened. If new assets are uploaded in the repository, then they are not shown in asset selector until the page containing asset selector is refreshed. (SITES-14828) CRITICAL
-* Asset selector user interface, integrated in Sites editor (CS), is not responsive when window is reduced. (SITES-14127) CRITICAL
-* The Adobe IMS (Identity Management System) Configuration for Asset selector integration was accepting incorrect values. (SITES-13962) NORMAL
-* Asset selector, when integrated in Sites Image component, should not allow the selecting of non-image assets. (SITES-13879) MAJOR
-* After successful sign-in, user is redirected to Page Editor. User has to reopen the Asset selector to pick Remote Assets. (SITES-13851) CRITICAL
-* Remote Asset Picker always redirects to the Adobe IMS (Identity Management System) Stage environment. (SITES-13448, SITES-13433) BLOCKER
+* Asset selector does not fetch updated list of assets when it is closed and reopened. If new assets are uploaded in the repository, then they are not shown in asset selector until the page containing asset selector is refreshed. (SITES-14828) 
+* Asset selector user interface, integrated in Sites editor (CS), is not responsive when window is reduced. (SITES-14127) 
+* The Adobe IMS (Identity Management System) Configuration for Asset selector integration was accepting incorrect values. (SITES-13962) 
+* Asset selector, when integrated in Sites Image component, should not allow the selecting of non-image assets. (SITES-13879) 
+* After successful sign-in, user is redirected to Page Editor. User has to reopen the Asset selector to pick Remote Assets. (SITES-13851) 
+* Remote Asset Picker always redirects to the Adobe IMS (Identity Management System) Stage environment. (SITES-13448, SITES-13433) 
 
 <!-- #### [!DNL Experience Fragments]{#sites-experiencefragments-6518}
 
@@ -114,8 +114,8 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 #### Page Editor{#sites-pageeditor-6518}
 
-* When the author opens Page properties, the dialog box has an incorrect view. That is, an extra horizontal scrollbar and additional margins are visible. (SITES-14502) MINOR
-* Styles added in Experience Manager 6.5, Service Pack 17, for anchor and body tag was causing CSS issues. Anchor tags were not showing underlined in Author. (SITES-14261) MAJOR
+* When the author opens Page properties, the dialog box has an incorrect view. That is, an extra horizontal scrollbar and additional margins are visible. (SITES-14502) 
+* Styles added in Experience Manager 6.5, Service Pack 17, for anchor and body tag was causing CSS issues. Anchor tags were not showing underlined in Author. (SITES-14261) 
 
 ### [!DNL Assets]{#assets-6518}
 
@@ -141,18 +141,18 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 #### [!DNL Dynamic Media]{#assets-dm-6518}
 
-* When VTT fails to download, the video is not visible. It shows a blank screen, while the video scrubber is seen progressing forward. (ASSETS-21909) NORMAL
-* Focus is not moving to multiple controls present below the video when navigating using Tab on keyboard. As such, they are not accessible. Improved keyboard navigation for interactive videos. (ASSETS-25749) NORMAL
-* Fixed disabled Viewer presets showing in Dynamic Media component. (ASSETS-22922) MINOR
-* Removed "Image Serving" from General Settings Security tab. (ASSETS-24618) NORMAL
-* Fixed assets failing to upload to Dynamic Media and StringIndexOutOfBoundsException. (ASSETS-25787) CRITICAL
-* Added visual asterisk for mandatory 'width' edit field in 'Basic' tab. (ASSETS-25741) NORMAL
-* Fixed download of Watermark Dynamic Media Rendition. (ASSETS-26173) NORMAL
-* Reinstated the 127-character limit for non-video asset names. (ASSETS-26074) MAJOR
+* When VTT fails to download, the video is not visible. It shows a blank screen, while the video scrubber is seen progressing forward. (ASSETS-21909) 
+* Focus is not moving to multiple controls present below the video when navigating using Tab on keyboard. As such, they are not accessible. Improved keyboard navigation for interactive videos. (ASSETS-25749) 
+* Fixed disabled Viewer presets showing in Dynamic Media component. (ASSETS-22922) 
+* Removed "Image Serving" from General Settings Security tab. (ASSETS-24618) 
+* Fixed assets failing to upload to Dynamic Media and StringIndexOutOfBoundsException. (ASSETS-25787) 
+* Added visual asterisk for mandatory 'width' edit field in 'Basic' tab. (ASSETS-25741) 
+* Fixed download of Watermark Dynamic Media Rendition. (ASSETS-26173) 
+* Reinstated the 127-character limit for non-video asset names. (ASSETS-26074) 
 
 ### [!DNL Forms]{#forms-6518}
 
-* After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) NORMAL
+* After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) 
 
 <!-- ### [!DNL Commerce]{#commerce-6518}
 
@@ -162,7 +162,7 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 #### Content distribution{#foundation-content-distribution-6518}
 
-* The asset delete queue should not be blocked and no error should occur in the log file. (NPR-40570) NORMAL
+* The asset delete queue should not be blocked and no error should occur in the log file. (NPR-40570) 
 
 <!-- #### Integrations{#integrations-6518}
 
@@ -174,29 +174,29 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 #### Platform{#foundation-platform-6518}
 
-* After a vanilla Experience Manager, Service Pack 17 install, you see errors in the `stderr.log`. Vanilla installs should not get errors. (CQ-4353637) MINOR
-* Create button in Tagging screen not respecting ACL (Access Control List). (NPR-40973) MAJOR
-* Unable to create, or access, or both, cache node of ContextHub on Experience Manager. (NPR-40515) CRITICAL
+* After a vanilla Experience Manager, Service Pack 17 install, you see errors in the `stderr.log`. Vanilla installs should not get errors. (CQ-4353637) 
+* Create button in Tagging screen not respecting ACL (Access Control List). (NPR-40973) 
+* Unable to create, or access, or both, cache node of ContextHub on Experience Manager. (NPR-40515) 
 
 #### Replication{#foundation-replication-6518}
 
-* Replication flush deletes all descendants of the requested path. (NPR-40569) NORMAL
+* Replication flush deletes all descendants of the requested path. (NPR-40569) 
 
 #### Sling{#foundation-sling-6518}
 
-* When a Link Share Report is generated, the column Link does not contain the correct values. (NPR-40798) NORMAL
-* With AEM 6.5.15.0, all vanity URLs, sling aliases, and sling mapping are broken after an AEM restart. (NPR-40420) NORMAL
+* When a Link Share Report is generated, the column Link does not contain the correct values. (NPR-40798) 
+* With AEM 6.5.15.0, all vanity URLs, sling aliases, and sling mapping are broken after an AEM restart. (NPR-40420) 
 
 #### Translation projects{#foundation-translation-6518}
 
-* Translation `rules.xml` sorted in a poor way when rules are added from the translation configuration user interface. (NPR-40431) MAJOR
-* Support links with query parameters during translation. (NPR-40339) NORMAL
-* Dictionary user interface is not loading for the customer after updating additional context root. (NPR-40650) MAJOR
-* Error creating language copies when one of the assets is a Content Fragment that contains a multi-field with ReferenceFragment or ContentFragment types. (NPR-40892) MAJOR
+* Translation `rules.xml` sorted in a poor way when rules are added from the translation configuration user interface. (NPR-40431) 
+* Support links with query parameters during translation. (NPR-40339) 
+* Dictionary user interface is not loading for the customer after updating additional context root. (NPR-40650) 
+* Error creating language copies when one of the assets is a Content Fragment that contains a multi-field with ReferenceFragment or ContentFragment types. (NPR-40892) 
 
 #### User interface{#foundation-ui-6518}
 
-* As described in the [Configuration Browser documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _The Name becomes the node name in the repository_. However, in Configuration Browser, Configuration Title is used for Path in CRXDE Lite, and the Name of the Configuration is ignored. (NPR-40607) MINOR
+* As described in the [Configuration Browser documentation](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _The Name becomes the node name in the repository_. However, in Configuration Browser, Configuration Title is used for Path in CRXDE Lite, and the Name of the Configuration is ignored. (NPR-40607) 
 
 <!-- #### WCM{#wcm-6518}
 
@@ -204,17 +204,17 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 #### Workflow{#foundation-workflow-6518}
 
-* Reverting an asset version keeps the asset status in processing mode. (NPR-41029) NORMAL
-* Sorting issue on Assets and Projects user interface. Some have overlaid the custom columns on Assets and Projects user interface as per business requirements. They have implemented a sort using the out-of-the-box property `sortable=true`. However, they are seeing inconsistencies in sorting when there are many entries under Projects or Assets user interface. (NPR-41027) NORMAL
-* Logs are getting filled up with `NullPointerException` in the `EMailNotificationService`, and emails, which workflows should send, are not getting sent. (NPR-40898) NORMAL
-<!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST  * The timeline is not providing references to the selected content. (NPR-40806) MAJOR-->
+* Reverting an asset version keeps the asset status in processing mode. (NPR-41029) 
+* Sorting issue on Assets and Projects user interface. Some have overlaid the custom columns on Assets and Projects user interface as per business requirements. They have implemented a sort using the out-of-the-box property `sortable=true`. However, they are seeing inconsistencies in sorting when there are many entries under Projects or Assets user interface. (NPR-41027) 
+* Logs are getting filled up with `NullPointerException` in the `EMailNotificationService`, and emails, which workflows should send, are not getting sent. (NPR-40898) 
+<!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST  * The timeline is not providing references to the selected content. (NPR-40806) -->
 
 ## Install [!DNL Experience Manager] 6.5.18.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.18.0 requires [!DNL Experience Manager] 6.5. See [upgrade documentation](/help/sites-deploying/upgrade.md) for detailed instructions. <!-- UPDATE FOR EACH NEW RELEASE -->
-* The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.17.0.zip).
+* The service pack download is available on Adobe [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip).
 * On a deployment with MongoDB and multiple instances, install [!DNL Experience Manager] 6.5.18.0 on one of the Author instances using the Package Manager.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -229,7 +229,7 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 1. Before installing, take a snapshot or a fresh backup of your [!DNL Experience Manager] instance.
 
-1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.17.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Download the service pack from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Open Package Manager, then select **[!UICONTROL Upload Package]** to upload the package. To know more, see [Package Manager](/help/sites-administering/package-manager.md).
 
@@ -280,7 +280,7 @@ Failure to install this package may result in slow or failed GraphQL queries.
 
 ### UberJar{#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.18.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.17/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+The UberJar for [!DNL Experience Manager] 6.5.18.0 is available in the [Maven Central repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developing/ht-projects-maven.md) and include the following dependency in your project POM: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -392,8 +392,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 The following text documents list the OSGi bundles and Content Packages included in [!DNL Experience Manager] 6.5.18.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [List of OSGi bundles included in Experience Manager 6.5.18.0](/help/release-notes/assets/65170_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [List of Content Packages included in Experience Manager 6.5.18.0](/help/release-notes/assets/65170_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of OSGi bundles included in Experience Manager 6.5.18.0](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [List of Content Packages included in Experience Manager 6.5.18.0](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Restricted websites{#restricted-sites}
 
