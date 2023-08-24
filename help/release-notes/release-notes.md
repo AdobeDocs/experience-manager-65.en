@@ -50,6 +50,10 @@ Some of the key features and enhancements in this release include the following:
 
 * AEM 6.5.18.0 supports MongoDB 5.0 to 6.0.
 
+**Deprecated feature**
+
+* ActiveMQ in AEM is deprecated. ActiveMQ was used for communication between two AEM Publish instances. Adobe recommends that customers now use load-balancer.
+
 **Forms**
 
 * **Enhanced error handling with custom error handlers in the rule editor:** You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down 

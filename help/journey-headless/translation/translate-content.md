@@ -18,10 +18,10 @@ Now that your connector and translations rules are set up, this article takes yo
 
 ## Objective {#objective}
 
-This document helps you understand how to use AEM's translation projects along with the connector and your translations rules to translate content. After reading this document you should:
+This document helps you understand how to use AEM's translation projects along with the connector and your translations rules to translate content. After reading this document, you should be to do the following:
 
 * Understand what a translation project is.
-* Be able to create new translation projects.
+* Create translation projects.
 * Use translation projects to translate your headless content.
 
 ## Creating a Translation Project {#creating-translation-project}
@@ -35,7 +35,7 @@ Translation projects can be created in two ways:
 1. Select the language root of the content and have AEM automatically create the translation project based on the content path.
 1. Create an empty project and manually select the content to add to the translation project
 
-Both are valid approaches usually only differing based on the persona performing the translation:
+Both are valid approaches only differing based on the persona performing the translation:
 
 * The translation project manager (TPM) often needs the flexibility of manually selecting the content to the translation project.
 * If the content owner is also responsible for translation, letting AEM automatically create the project based on the selected content path is often easier.
@@ -47,9 +47,9 @@ Both approaches are explored in the following sections.
 For content owners who are also responsible for translation, it is often easier to have AEM automatically create the translation project automatically. To have AEM automatically create a translation project based on your content path:
 
 1. Navigate to **Navigation** -&gt; **Assets** -&gt; **Files**. Remember that headless content in AEM is stored as assets known as Content Fragments.
-1. Select the language root of your project. In this case we have selected `/content/dam/wknd/en`.
+1. Select the language root of your project. In this case, `/content/dam/wknd/en` is selected.
 1. Tap or click the rail selector and show the **References** panel.
-1. Tap or click on **Language Copies**.
+1. Tap or click **Language Copies**.
 1. Check the **Language Copies** checkbox.
 1. Expand the section **Update Language Copies** at the bottom of the references panel.
 1. In the **Project** dropdown, select **Create Translation Project(s)**.
@@ -73,7 +73,7 @@ For translation project managers, it is often necessary to manually select speci
 1. Navigate to **Navigation** -&gt; **Projects**.
 1. Tap or click **Create** -&gt; **Folder** to create a folder for your projects.
    * This is optional, but helpful to organize your translation efforts.
-1. In the **Create Folder** window, add a **Title** for the folder and then tap or click **Create**.
+1. In the **Create Folder** window, add a **Title** for the folder, and then tap or click **Create**.
 
    ![Create project folder](assets/create-project-folder.png)
 
@@ -111,7 +111,7 @@ To view the translation project:
 The project is divided into multiple cards.
 
 * **Summary** - This card shows the basic header information of the project including the owner, language, and translation provider.
-* **Translation Job** - This card or these cards show(s) provide an overview of the actual translation job including the status, number of assets, etc. Generally there is one job per language with the ISO-2 language code appended to the job name.
+* **Translation Job** - This card or these cards show provide an overview of the actual translation job including the status, number of assets, and so on. Generally there is one job per language with the ISO-2 language code appended to the job name.
 * **Team** - This card shows the users who are collaborating on this translation project. This journey does not cover this topic.
 * **Tasks** - Additional tasks associated with translating the content such as to do items or workflow items. This journey does not cover this topic.
 
@@ -123,7 +123,7 @@ When automatically creating the translation project, AEM evaluates the headless 
 
 To see the detail of the headless content included in this project:
 
-1. Tap or click on the ellipsis button at the bottom of the **Translation Job** card.
+1. Tap or click the ellipsis button at the bottom of the **Translation Job** card.
 1. The **Translation Job** window lists all items in the job.
 ![Translation Job detail](assets/translation-job-detail.png)
 1. Tap or click a line to see the detail of that line, keeping in mind that one line may represent multiple content items to translate.
@@ -144,7 +144,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 
 ### Using a Manually Created Translation Project {#using-manual-project}
 
-When manually creating a translation project, AEM creates the necessary jobs, but does not automatically select any content to include. This allows the translation project manager the flexibility to pick-and-chose what content to translate.
+When manually creating a translation project, AEM creates the necessary jobs, but does not automatically select any content to include. Doing so allows the translation project manager the flexibility to pick-and-chose what content to translate.
 
 To add content to a translation job:
 
@@ -177,7 +177,7 @@ To add content to a translation job:
 >
 >You can learn more about the path browser in the [additional resources section.](#additional-resources)
 
-You can use the prior steps to add the necessary content to all of the languages (jobs) for the project. Once you have selected all of the content, you can start the translation.
+You can use the prior steps to add the necessary content to all languages (jobs) for the project. Once you have selected all content, you can start the translation.
 
 Typically the content for the translation job starts in the **Draft** state as indicated by the **State** column in the **Translation Job** window.
 
@@ -193,7 +193,7 @@ Machine translations automatically return with a state of **Approved**. Human tr
 
 ## Reviewing Translated Content {#reviewing}
 
-[As previously seen,](#using-translation-project) machine translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However it is of course still possible to review the translated content.
+[As previously seen,](#using-translation-project) machine-translated content flows back into AEM with the status of **Approved** since the assumption is that because machine translation is being used, no human intervention is required. However, it is still possible to review the translated content.
 
 Simply go to the completed translation job and select a line item by tapping or clicking the checkbox. The icon **Reveal in Content Fragment** is shown in the tool bar.
 
@@ -203,9 +203,9 @@ Tap or click that icon to open the translated content fragment in its editor con
 
 ![A translated content fragment](assets/translated-content-fragment.png)
 
-You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
+You can further modify the content fragment as necessary, providing you have the proper permission, but editing content fragments is beyond the scope of this journey. See the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic.
 
-The project's purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example the folder is
+The project's purpose is to collect all the resources related to a translation in one place for easy access and a clear overview. However as you can see by viewing the detail of a translated item, the translations themselves flow back into the asset folder of the translation language. In this example, the folder is:
 
 ```text
 /content/dam/wknd/es
@@ -217,27 +217,27 @@ If you navigate to this folder via **Navigation** -&gt; **Assets** -&gt; **Files
 
 AEM's translation framework receives the translations from the translation connector and then automatically creates the content structure based on the language root and using the translations provided by the connector.
 
-It is important to understand that this content is not published and therefore not available to your headless services. We will learn about this author-publish structure and see how to publish our translated content in the next step of the translation journey.
+It is important to understand that this content is not published and therefore not available to your headless services. You learn about this author-publish structure and see how to publish the translated content in the next step of the translation journey.
 
 ## Human Translation {#human-translation}
 
 If your translation service provides human translation, the review process offers more options. For example, translations arrive back in the project with the status **Draft** and must be reviewed and approved or rejected manually.
 
-Human translation is beyond the scope of this localization journey. Please see the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic. However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
+Human translation is beyond the scope of this localization journey. See the [Additional Resources](#additional-resources) section at the end of this document for more information on this topic. However beyond the additional approval options, the workflow for human translations is the same as machine translations as described in this journey.
 
 ## What's Next {#what-is-next}
 
-Now that you have completed this part of the headless translation journey you should:
+Now that you have completed this part of the headless translation journey you should be able to do the following:
 
 * Understand what a translation project is.
-* Be able to create new translation projects.
+* Create translation projects.
 * Use translation projects to translate your headless content.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Publish translated content](publish-content.md) where you will learn how to publish your translated content and how to update those translations as your language root content changes.
+Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Publish translated content](publish-content.md) where you learn how to publish your translated content and how to update those translations as your language root content changes.
 
 ## Additional Resources {#additional-resources}
 
 While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Publish translated content,](publish-content.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [Managing Translation Projects](/help/sites-administering/tc-manage.md) - Learn the details of translation projects and additional features such as human translation workflows and multi-language projects.
-* [Authoring Environment and Tools](/help/sites-authoring/author-environment-tools.md##path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.
+* [Authoring Environment and Tools](/help/sites-authoring/author-environment-tools.md#path-selection) - AEM provides various mechanisms for organizing and editing your content including a robust path browser.
