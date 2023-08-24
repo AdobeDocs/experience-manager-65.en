@@ -157,6 +157,7 @@ feature: Forms Service
   + [Associating submission reviewers with a form](using/adding-reviewers-form.md)
   + [Authoring in-context help for form fields](using/authoring-in-field-help.md)
   + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
+  + [Connect and submit Adaptive Form data to Microsoft&reg; Power Automate ](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Adaptive Forms - Advanced Authoring {#adaptive-forms-advanced-authoring}
   + [Creating adaptive forms using JSON Schema](using/adaptive-form-json-schema-form-model.md)
   + [Creating adaptive forms using XML Schema](using/adaptive-form-xml-schema-form-model.md)
