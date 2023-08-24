@@ -678,7 +678,7 @@ Added subtitles and captions are supported with WebVTT and Adobe VTT formats. An
 1. (Optional) Preview the video before publishing to ensure the subtitles and audio work as expected. See [Preview a video that has multiple subtitles and audio tracks](#preview-video-audio-subtitle)
 1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-#### About subtitle and audio track files added to a video *after* the video is published
+#### About adding subtitle and audio track files to a video that is already published
 
 When you upload additional subtitle files or audio track files to a video that is already published, it means that those files will have a `Processed` status after they are prepared, following upload. At that point, you can preview the video in Dynamic Media to see or hear the newly uploaded files. 
 
@@ -698,7 +698,9 @@ In the scenario where you have configured Dynamic Media for immediate publish, t
 
 Dynamic Media supports the addition of a single caption with video by way of a URL modifier (see [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)). 
 
-OR IS IT THIS LINK???? See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in the *Dynamic Media Image Serving and Rendering API Help* for more information about using the JSON function in a URL. 
+<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
+
+See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in the *Dynamic Media Image Serving and Rendering API Help* for more information about using the JSON function in a URL. 
 
 Multiple caption changes take precedence over a caption added by way of a URL modifier for published videos.
 
@@ -849,7 +851,7 @@ The original audio track extracted from a primary file cannot be downloaded.
 
 >[!IMPORTANT]
 >
->This topic is no longer actively maintained. It is provided as is for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](#enable-multi-caption-audio) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
+>This topic is no longer actively maintained. It is provided as-is for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](##enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
 
 You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
@@ -914,7 +916,7 @@ See [Serve static (non-image) contents](https://experienceleague.adobe.com/docs/
 
 >[!IMPORTANT]
 >
->This topic is no longer actively maintained. It is provided as is for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](#enable-multi-caption-audio) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
+>This topic is no longer actively maintained. It is provided as-is for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](#enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
 
 You can make your long form videos easier to watch and navigate by adding chapter markers to single videos or to Adaptive Video Sets. When a user plays the video, they can click the chapter markers on the video timeline (also known as the video scrubber) to easily navigate to their point of interest. Or, they can immediately jump to new content, demonstrations, and tutorials.
 
