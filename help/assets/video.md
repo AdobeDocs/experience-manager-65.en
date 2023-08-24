@@ -847,7 +847,7 @@ The original audio track extracted from a primary file cannot be downloaded.
 
 >[!IMPORTANT]
 >
->This topic is no longer actively maintained. It is provided as-is for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](##enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
+>This topic is no longer actively maintained. It is provided as-is for legacy users of Dynamic Media. Adobe recommends that you [enable multi-subtitle and multi-audio track capability](#enable-dash) on your Dynamic Media account. Doing so lets you take advantage of the latest Dynamic Media backend architecture and a simplified workflow for adding captions, subtitles, and audio tracks to your videos.
 
 You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning, you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. The video is played in the language that it was recorded. Foreign language subtitles appear so that people of different languages can still understand the audio portion.
 
