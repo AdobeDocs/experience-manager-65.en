@@ -443,7 +443,7 @@ At the same time you create an Adobe Support case to have DASH enable on your ac
 
 >[!IMPORTANT]
 >
->Any videos that you uploaded *prior* to enabling multi-subtitle and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets). This video reprocessing step is necessary so that multi-subtitle and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+>Any videos that you uploaded *prior* to enabling multi-subtitle and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multi-subtitle and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
 **To enable DASH, multi-subtitle, and multi-audio track support on your Dynamic Media account:** 
 
@@ -620,7 +620,7 @@ Added subtitles and captions are supported with WebVTT and Adobe VTT formats. An
 
 >[!IMPORTANT]
 >
->Any videos that you uploaded *prior* to enabling multi-subtitle and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md##reprocessing-assets). This video reprocessing step is necessary so that multi-subtitle and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
+>Any videos that you uploaded *prior* to enabling multi-subtitle and multi-audio track support on your Dynamic Media account, [must be reprocessed](/help/assets/processing-profiles.md#reprocessing-assets). This video reprocessing step is necessary so that multi-subtitle and multi-audio track capability is available to them. The video URLs continue to work and play as usual, after reprocessing.
 
 **To add multi-subtitles and multi-audio tracks to your video:**
 
@@ -688,7 +688,7 @@ In the scenario where you have configured Dynamic Media for immediate publish, t
 
 >[!CAUTION]
 >
->When you upload subtitle files or audio files to a video that is already published, these files are deleted if you [*reprocess*](/help/assets/processing-profiles.md##reprocessing-assets) the video. Only the video's original audio, remains intact. In such cases, you must reupload the subtitle files and audio track files to the video, again.
+>When you upload subtitle files or audio files to a video that is already published, these files are deleted if you [*reprocess*](/help/assets/processing-profiles.md#reprocessing-assets) the video. Only the video's original audio, remains intact. In such cases, you must reupload the subtitle files and audio track files to the video, again.
 
 #### Add multiple captions to a video that has an existing URL with caption modifier
 
