@@ -608,10 +608,6 @@ All [video formats supported in Dynamic Media](/help/assets/assets-formats.md) a
 
 Multi-subtitle and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
 
-### Enable multi-subtitle and multi-audio track support on your Dynamic Media account {#enable-multi-caption-audio}
-
-See [Enable DASH, multi-subtitle, and multi-audio track support on your Dynamic Media account](#enable-dash).
-
 ### Add multi-subtitles and multi-audio tracks to your video {#add-msma}
 
 Before you add multi-subtitle and multi-audio tracks to your video, be sure you already have the following in-place:
