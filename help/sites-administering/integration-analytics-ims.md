@@ -64,6 +64,12 @@ Using the Adobe Developer Console you need to create a Project (integration) wit
 
 Open the Adobe Developer Console to create a Project with Adobe Analytics that AEM will use:
 
+>[!CAUTION]
+>
+>Currently, we only support the Adobe Developer Console's **Service Account (JWT)** credential type. 
+>
+>Do not use the **OAuth Server-to-Server** credential type, which will be supported in the future.
+
 1. Open the Adobe Developer Console for Projects:
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
