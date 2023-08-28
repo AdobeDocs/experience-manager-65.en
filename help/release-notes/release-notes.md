@@ -168,7 +168,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * When you upgrade to AEM 6.5.15.0 Service Pack on OSGI and JEE environments, the Assembler service using a specific template stops working. (FORMS-9355, FORMS-9445, FORMS-9408) 
   * Java garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, as the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035) 
   * While rendering the PDF preview of an Adaptive Form, the unwanted Java stack dumps appear in the error logs. (FORMS-8865)
-  * When a user review the document status or event status for documents, it is not displayed correctly. (FORMS-8946)
+  * When a user review the document status or event status for documents, it is not displayed correctly. (FORMS-8946, FORMS-10424)
+  *  * When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152)
 
 * **Adaptive Forms** 
   * When a user tries to call a custom function without modifying a field, such as setting the value of another field, it fails. (FORMS-9921) 
@@ -176,6 +177,9 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
     * When a user tries to use @param{boolean} with a function, the rule editor does not allow Boolean values to pass to a function. 
     * When a user tries to use @param{string} with a function, the rule editor fails to pass the optional values and gives a warning of incomplete rules. (FORMS-9816, FORMS-9815) 
   * The forms-user group fails to call the Rule Editor twice in an Adaptive Form. (FORMS-9051) 
+  * In visual editor editor, when a user selects a Form object then whole field instance object is passed to the custom function instead of just value of the field. (FORMS-10015) 
+  * When a user creates a core component-based Adaptive Form and adds a text input component, `Is Empty` and `Is Not Empty` do not work in the Rule editor. (FORMS-10098)
+  * If a field is marked as invalid in an core component based Adaptive Form, it starts a change event on the field. (FORMS-10087)
   * When a user tries to create an Adaptive Form using a complex JSON schema, it fails. The error occurs as: 
   `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639) 
   * In an Adaptive Form, when a user disables the “I agree to the terms & conditions” checkbox, it gets enabled again as soon as the user scrolls down. (FORMS-9458) 
@@ -186,6 +190,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * In an Adaptive Form based on an XDP, if a checkbox component includes a text title assigned a numeric value, the text title gets truncated and does not match the assigned value. (FORMS-8743) 
   * If a user tries to implement lazy loading on a fragment embedded in an Adaptive Form for the author environment, the rules/logic defined for the fragment are not reflected in the form. (FORMS-8554, FORMS-9182) 
   * When you try to open any Coral dialog in AEM 6.5.16.0 Service Pack, it generates the `error.log: cannot render resource` exception. (FORMS-8942) 
+  * When a user tries to translate a checkbox with single option in an Adaptive Form, it fails. (FORMS-10181)
 * **Accessibility**
   * When using the Scribble Signature component in an Adaptive Form, the following errors occur: 
     * After the Scribble Signature component, when there are more components, pressing the Tab key does not traverse to the signature dialog box; instead, it moves to the next component. Only after traversing all components, it finally moves to the signature dialog box. 
@@ -196,6 +201,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * When a user submits an Adaptive Form, the screen reader fails to read error messages for the mandatory fields. (FORMS-9316) 
   * When a screen reader reads an HTML form, the issue occurs while reading the text with kerning (spacing). (FORMS-9258) 
   * In an Adaptive Form, the references/footnotes linked to the text are not called out using the screen reader. (FORMS-8920) 
+  *  Accessibility tags are not recognised properly in latest Designer. (FORMS-10139)
 * **Interactive Communications**
   * In Correspondence Management, the localization is not working. (FORMS-8926) 
   * The draft letter fails to open when the publishAll service is used. (FORMS-8589) 
@@ -432,9 +438,13 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * Hotspot in a Dynamic Media interactive image is not visible when previewing the asset through Shoppable Banner viewer.
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Timeout waiting for register change to complete unregistered.
 
-* On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails.
-* JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server.   
 * Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they do not get run, instead throwing a runtime error.
+
+* **Related to Forms**
+  * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (Adaptive Forms)
+  * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server. (Adaptive Forms)
+  * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (Adaptive Forms)
+  * After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (Adaptive Forms)
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
