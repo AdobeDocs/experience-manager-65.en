@@ -65,7 +65,7 @@ Some of the key features and enhancements in this release include the following:
    * **Enhanced Transparency with Audit Trail for Adobe Sign Documents:** Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements.  
 
  
-   **Expand the roles for Agreement recipients beyond just the Signer:** Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
+   * **Expanded the roles for Agreement recipients beyond just the Signer:** Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
 
  
 * **AEM Forms on JEE full installer**: The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
