@@ -156,10 +156,50 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 ### [!DNL Forms]{#forms-6518}
 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
 <!--
-* After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) 
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
+
 -->
+
+* **Document Services**
+  * When a user uses a transformPDF service, it fails with an exception: java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml (FORMS-9957) 
+  * If a user restarts the server while generating the PDF document, an error occurs in job processing. (FORMS-9836) 
+  * If a user tries to merge PDFs using the AssemblerService.Invoke method, the assembler fails to perform the task. (FORMS-9550) 
+  * When you upgrade to AEM 6.5.15.0 Service Pack on OSGI and JEE environments, the Assembler service using a specific template stops working. (FORMS-9355, FORMS-9445, FORMS-9408) 
+  * Java garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, as the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035) 
+  * While rendering the PDF preview of an Adaptive Form, the unwanted Java stack dumps appear in the error logs. (FORMS-8865)
+  * When a user review the document status or event status for documents, it is not displayed correctly. (FORMS-8946)
+
+* **Adaptive Forms** 
+  * When a user tries to call a custom function without modifying a field, such as setting the value of another field, it fails. (FORMS-9921) 
+  * While working with the custom error function for the Rule Editor in an Adaptive Form, the following errors occur: 
+    * When a user tries to use @param{boolean} with a function, the rule editor does not allow Boolean values to pass to a function. 
+    * When a user tries to use @param{string} with a function, the rule editor fails to pass the optional values and gives a warning of incomplete rules. (FORMS-9816, FORMS-9815) 
+  * The forms-user group fails to call the Rule Editor twice in an Adaptive Form. (FORMS-9051) 
+  * When a user tries to create an Adaptive Form using a complex JSON schema, it fails. The error occurs as: 
+  `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639) 
+  * In an Adaptive Form, when a user disables the “I agree to the terms & conditions” checkbox, it gets enabled again as soon as the user scrolls down. (FORMS-9458) 
+  * When a user opens an Adaptive Form on an Android Device using Google Chrome/Firefox and enters the maximum allowed characters in a Textbox, the value in the textbox fails to clear. (FORMS-9354) 
+  * When the label of the checkbox includes special characters like ',', '/', or '.', clicking on the text/label does not select the respective checkbox. (FORMS-9313) 
+  * When a user tries to validate the Terms and Conditions component, it fails to validate if the component is not in focus while the other component gets validated. (FORMS-8725, FORMS-8913) 
+  * If an Adaptive Form is reloaded after upgrading to AEM 6.5.16.0 Service Pack, the file attachment retrieval fails. (FORMS-8906) 
+  * In an Adaptive Form based on an XDP, if a checkbox component includes a text title assigned a numeric value, the text title gets truncated and does not match the assigned value. (FORMS-8743) 
+  * If a user tries to implement lazy loading on a fragment embedded in an Adaptive Form for the author environment, the rules/logic defined for the fragment are not reflected in the form. (FORMS-8554, FORMS-9182) 
+  * When you try to open any Coral dialog in AEM 6.5.16.0 Service Pack, it generates the `error.log: cannot render resource` exception. (FORMS-8942) 
+* **Accessibility**
+  * When using the Scribble Signature component in an Adaptive Form, the following errors occur: 
+    * After the Scribble Signature component, when there are more components, pressing the Tab key does not traverse to the signature dialog box; instead, it moves to the next component. Only after traversing all components, it finally moves to the signature dialog box. 
+    * When a user signs in the signature dialog box using a brush or keyboard, pressing the Enter key does not close the dialog box. 
+    * The clear signature confirmation dialog cannot be accessed using a keyboard. 
+    * The screen reader fails to read information entered in a dialog box.
+    * It is not possible to clear the signature without using a mouse.  (FORMS-9317) 
+  * When a user submits an Adaptive Form, the screen reader fails to read error messages for the mandatory fields. (FORMS-9316) 
+  * When a screen reader reads an HTML form, the issue occurs while reading the text with kerning (spacing). (FORMS-9258) 
+  * In an Adaptive Form, the references/footnotes linked to the text are not called out using the screen reader. (FORMS-8920) 
+* **Interactive Communications**
+  * In Correspondence Management, the localization is not working. (FORMS-8926) 
+  * The draft letter fails to open when the publishAll service is used. (FORMS-8589) 
+  * After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) 
 
 
 <!-- ### [!DNL Commerce]{#commerce-6518}
