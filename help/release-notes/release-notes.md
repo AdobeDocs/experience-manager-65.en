@@ -437,9 +437,10 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
   * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (JEE Platform)
   * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server. (JEE Platform)
   * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (JEE Platform)
+  * JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer. (JEE Platform)
   * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (Adaptive Form)
-  * After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (Adaptive Form)
   * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue. (Adaptive Form)
+  *  After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (Interactive Communications)
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
