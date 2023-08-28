@@ -27,7 +27,7 @@ Billing APIs does not account for the number of pages, the length of a document 
 
 * **Forms Submitted:** When data is submitted from any type of form created with AEM Forms and the data is submitted to any data storage repository or database is considered form submission. For example, submitting an adaptive form, HTML5 Form, PDF Forms, and form set are accounted as forms submitted. Each form in a form set is considered a submission. For example, if a form set has 5 forms, when the form set is submitted, transaction reporting service counts it as 5 submissions.
 
-* **Documents Rendered:** Generating a document by combining a template and data, digitally signing or certifying a document, using a billable document services APIs for document services, or converting a document from one format to another are accounted as documents rendered.
+* **Documents Rendered:** Generating a document by combining a template and data, digitally signing or certifying a document, using a billable document services API for document services, or converting a document from one format to another are accounted as documents rendered.
 
 >[!NOTE]
 >
@@ -101,6 +101,26 @@ Billing APIs does not account for the number of pages, the length of a document 
   </tr>
  </tbody>
 </table>
+
+### DocAssurance Service {#DocAssurance-Service}
+
+<table>
+ <tbody>
+  <tr>
+   <td><p>API</p> </td>
+   <td>Description</td>
+   <td>Transaction report category</td>
+   <td>Additional Information</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
+   <td>This API enables you to secure your document. You can use the API to sign, certify, reader extend, or encrypt a PDF document.</td>
+   <td>Documents Processed</td>
+   <td>Only sign and certify operation of the secureDocument are billed.</td>
+  </tr>
+ </tbody>
+</table>
+
 
 ### Distiller Service {#distiller-service}
 
@@ -299,11 +319,15 @@ Billing APIs does not account for the number of pages, the length of a document 
  </tbody>
 </table>
 
+The invoke API's usage is counted as a transaction, when you perform one or more of the following operations:
+1. Conversion from non-PDF formats to PDF formats. For instance, the conversion from XDP format to PDF format, catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.
+1. Conversion from PDF format to PDF/A format.
+1. Conversion from PDF format to non-PDF formats. Examples encompass the transformation from PDF to Image format or the conversion from PDF to Text format.
+
 >[!NOTE]
 >
 >* The invoke API of the assembler service can internally call a billable API of another service depending on the input. So, the invoke API can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the input and the internal APIs invoked.
 >* A single PDF document produced using assembler service can be accounted as none, single, or multiple transactions. The number of transactions counted depends upon the supplied DDX code.
->
 
 ### PDF Utility Service  {#pdf-utility-service}
 
@@ -317,7 +341,7 @@ Billing APIs does not account for the number of pages, the length of a document 
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/pdfutility/services/PDFUtilityService.html#convertPDFtoXDP-com.adobe.aemfd.docmanager.Document-" target="_blank">convertPDFtoXDP</a></td>
-   <td>Converts a PDF document into an XDP file. In order for a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the AcroForm dictionary.</td>
+   <td>Converts a PDF document into an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the AcroForm dictionary.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>

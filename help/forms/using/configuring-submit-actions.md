@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 ---
-# Configuring the Submit action{#configuring-the-submit-action}
+# Configuring the Submit action {#configuring-the-submit-action}
 
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
@@ -40,6 +40,7 @@ The default submit actions available with adaptive forms are:
 * Submit using Form Data Model
 * Forms Portal Submit Action
 * Invoke a AEM Workflow
+* Submit to Power Automate
 
 >[!NOTE]
 >
@@ -150,6 +151,19 @@ The Submit Action places the following at the payload location of the workflow. 
 * **Attachments**: You can use the **[!UICONTROL Attachment Path]** option to specify the folder name to store the attachments uploaded to the Adaptive Form. The folder is created relative to the payload. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
 
 * **Document of Record**: It contains the Document of Record generated for the Adaptive Form. You can use the **[!UICONTROL Document of Record Path]** option to specify the name of the Document of Record file and path of file relative to the payload. For example, the `/addresschange/DoR.pdf` path creates a folder named `addresschange` relative to the payload and places the `DoR.pdf` relative to payload. You can also specify only `DoR.pdf` to save only Document of Record without creating a folder hierarchy. If the workflow is marked for external data storage, use the variable option and select the variable from the list of variables available for the workflow model.
+
+## Submit to Power Automate {#microsoft-power-automate}
+
+You can configure an Adaptive Form to run a Microsoft&reg; Power Automate Cloud Flow on submission. The configured Adaptive Form sends captured data, attachments, and Document Of Record to Power Automate Cloud Flow for processing. It helps you build custom data capture experience while harnessing the power of Microsoft&reg; Power Automate to build business logics around captured data and automate customer workflows. Here are a few examples of what you can do after integrating an Adaptive Form with Microsoft&reg; Power Automate: 
+
+* Use Adaptive Forms data in a Power Automate business processes
+* Use Power Automate to send captured data to more than 500 data sources or any publicly available API  
+* Perform complex calculations on captured data
+* Save Adaptive Forms data to storage systems at a predefined schedule
+
+Adaptive Forms editor provides the **Invoke a Microsoft&reg; Power Automate flow** submit action to send adaptive forms data, attachments, and Document Of Record to Power Automate Cloud Flow. To use the Submit action to send captured data to Microsoft&reg; Power Automate, [Connect your AEM Forms instance with Microsoft&reg; Power Automate](/help/forms/using/forms-microsoft-power-automate-integration.md)  
+
+After a successful configuration, use the [Invoke a Microsoft&reg; Power Automate flow](/help/forms/using/forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) submit action to send data to a Power Automate Flow.  
 
 ## Server-Side Revalidation in Adaptive Form {#server-side-revalidation-in-adaptive-form}
 

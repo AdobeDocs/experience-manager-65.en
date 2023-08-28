@@ -74,43 +74,39 @@ To enable complete functionality of the Adaptive Forms Container component, add 
 
   1. Open the `/apps/[your-sites-project]/components/page/customheaderlibs.html` file and add the following code to the file:
 
-         ```
-             //Customheaderlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-             </sly> 
-
-         ```
+      ```
+          //Customheaderlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+          </sly> 
+      ```
 
   1. Open the `/apps/[your-sites-project]/components/page/customfooterlibs.html` file and add the following code to the file:
 
-         ```
-
-             //customfooterlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-             </sly> 
-         ```
+      ```
+          //customfooterlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+          </sly> 
+      ```
 
   1. Open the `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` file and add the following code to the file:
 
-         ```
-             //Customheaderlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
-             </sly> 
-
-         ```
+      ```
+          //Customheaderlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-call="${clientlib.css @ categories='core.forms.components.runtime.all'}"/>
+          </sly> 
+      ```
 
   1. Open the `/apps/[your-sites-project]/components/customfooterlibs.html` file and add the following code to the file:
 
-         ```
-
-             //customfooterlibs.html
-             <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-             <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
-             </sly> 
-         ```
+      ```
+          //customfooterlibs.html
+          <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+          <sly data-sly-test="${!wcmmode.edit}" data-sly-call="${clientlib.js @ categories='core.forms.components.runtime.all', async=true}"/>
+          </sly> 
+      ```
 
   1. Repeat the above steps all the Author and Publish instances in your environment. 
 
@@ -175,7 +171,7 @@ To convert an Adaptive Form in AEM Sites page to an Experience Fragment:
 1. Open the Content Tree, and select the **[!UICONTROL Adaptive Forms Container]** that hosts your Adaptive Form. An AEM Sites page can host multiple Adaptive Forms. So, carefully select the correct Adaptive Forms Container. 
 1. On the menu bar, select the ![Convert to experience fragment variation icon](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Convert to Experience Fragment variation icon. 
     ![Convert form in sites page to an experience fragment](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
-    
+
     A dialog box to convert the Adaptive Form container to a new Experience Fragment or add to an existing Experience Fragment appears 
 1. On the Convert to Experience Fragment variation dialog box, set values for the following options:
 
@@ -246,5 +242,5 @@ On submission of a form, you can redirect the user to another webpage or a messa
 1. Open the **[!UICONTROL Submission]** tab. 
 
     * To configure a Redirect URL, for on Submit option, select the Redirect to URL option, and provide an absolute address or a Redirect URL or relative path of an AEM Sites page.  
-  
+
     * To configure a custom or thank you message, for on Submit option, select the Show Message option, and provide a message in the Message content box. It is a rich text box, you can use the full screen option to view all the available rich text items.
