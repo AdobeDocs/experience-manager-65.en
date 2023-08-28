@@ -435,7 +435,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ### Known issues for AEM Forms
 
-### Suported platforms 
+#### Suported platforms 
 
   * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server. (JEE Platform) (FORMS-6617)
   * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (JEE Platform)
