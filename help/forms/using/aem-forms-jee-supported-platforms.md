@@ -547,7 +547,7 @@ For additional requirements see:
 
 ### Designer {#designer}
 
-- Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, or Microsoft® Windows® 10
+- Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, or Microsoft&reg; Windows&reg; 10
 - 1 GHz or faster processor with support for PAE, NX, and SSE2.
 - 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
 - 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS
@@ -557,7 +557,7 @@ For additional requirements see:
 - Video hardware acceleration (optional)
 - Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
 - Administrative privileges to install Designer
-- Microsoft® Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
+- Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
 
 ### Adobe Acrobat and Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -699,9 +699,9 @@ Additional information for third-party patches can also be found by searching th
 
 The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on August 31, 2023:
 
-- Microsoft® Windows Server 2019 (64-bit)
+- Microsoft&reg; Windows Server 2019 (64-bit)
 - Oracle WebLogic Server 12.2.1 (12c R2)
-- Microsoft® Active Directory 2016
+- Microsoft&reg; Active Directory 2016
 
 The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on June 2, 2022:
 
@@ -748,17 +748,17 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - MongoDB Enterprise 4.0
     - Oracle Database 12c Release 2 (12.2.0.1.0)
     - MySQL 5.7.35
-    - Microsoft® SQL Server 2016
-    - JBoss® EAP 7.1.4
+    - Microsoft&reg; SQL Server 2016
+    - JBoss&reg; EAP 7.1.4
     - My SQL JDBC connector 5.1.44
-    - Microsoft® SQL Server JDBC driver 6.2.1.0
-    - Microsoft® SQL Server JDBC driver 6.2.2.0
-    - Microsoft® JDBC Driver 8.x for SQL Server
-    - Microsoft® Sharepoint 2016
-    - Microsoft® Office 2016
-    - Microsoft® Office Visio 2016 
-    - Microsoft® Publisher 2016
-    - Microsoft® Project 2016
+    - Microsoft&reg; SQL Server JDBC driver 6.2.1.0
+    - Microsoft&reg; SQL Server JDBC driver 6.2.2.0
+    - Microsoft&reg; JDBC Driver 8.x for SQL Server
+    - Microsoft&reg; Sharepoint 2016
+    - Microsoft&reg; Office 2016
+    - Microsoft&reg; Office Visio 2016 
+    - Microsoft&reg; Publisher 2016
+    - Microsoft&reg; Project 2016
     - OpenOffice 4.1.2
     - Acrobat 2017 (Classic track) Version 17.011.30078 or later
 
@@ -786,13 +786,13 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - [!DNL Adobe Acrobat 2020]
     - [!DNL Ubuntu 20.04]
     - [!DNL Open Office 4.1.10]
-    - [!DNL Microsoft®&reg; Office 2016]
-    - [!DNL Microsoft®&reg; Windows Server 2016]
+    - [!DNL Microsoft&reg;&reg; Office 2016]
+    - [!DNL Microsoft&reg;&reg; Windows Server 2016]
     - [!DNL RHEL8]
 
 - Dec 03, 2020
   - Support added with AEM Forms 6.5.7.0 or later for the following platform:
-    - [!DNL Microsoft®&reg; SQL Server 2019]
+    - [!DNL Microsoft&reg;&reg; SQL Server 2019]
 
 - Sep 09, 2020
 

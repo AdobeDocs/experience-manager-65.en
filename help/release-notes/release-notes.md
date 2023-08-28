@@ -179,7 +179,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * If a field is marked as invalid in an core component based Adaptive Form, it starts a change event on the field. (FORMS-10087)
   * When a user tries to create an Adaptive Form using a complex JSON schema, it fails. The error occurs as: 
   `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639) 
-  * In an Adaptive Form, when a user disables the “I agree to the terms & conditions” checkbox, it gets enabled again as soon as the user scrolls down. (FORMS-9458) 
+  * In an Adaptive Form, when a user disables the "I agree to the terms & conditions" checkbox, it gets enabled again as soon as the user scrolls down. (FORMS-9458) 
   * When a user opens an Adaptive Form on an Android Device using Google Chrome/Firefox and enters the maximum allowed characters in a Textbox, the value in the textbox fails to clear. (FORMS-9354) 
   * When the label of the checkbox includes special characters like ',', '/', or '.', clicking on the text/label does not select the respective checkbox. (FORMS-9313) 
   * When a user tries to validate the Terms and Conditions component, it fails to validate if the component is not in focus while the other component gets validated. (FORMS-8725, FORMS-8913) 
@@ -433,14 +433,27 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they do not get run, instead throwing a runtime error.
 
-* **Related to Forms**
-  * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (JEE Platform)
+### Known issues for AEM Forms
+
+### Suported platforms 
+
   * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server. (JEE Platform)
   * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (JEE Platform)
   * JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer. (JEE Platform)
-  * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (Adaptive Form)
-  * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue. (Adaptive Form)
-  *  After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (Interactive Communications)
+
+#### Installation 
+
+  * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (JEE Platform)
+
+#### Adaptive Forms
+
+  * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
+  * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue. 
+  * When a redirect URL is set in the guide container of an Adaptive Form, the inline signing stops working. (FORMS-10493)
+
+#### Interactive Communications
+
+  * After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578)
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
