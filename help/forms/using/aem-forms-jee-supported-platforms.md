@@ -145,23 +145,17 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
-  <tr>
-   <td><p>MongoDB Enterprise 4.2 (Deprecated)</p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Supported</p> </td>
-  </tr>
    <tr>
    <td>Oracle Database 19c (Standard, Real Application Clusters (RAC) and Enterprise editions) </td>
    <td>Repository Microkernal </td>
    <td>Supported</td>
   </tr>
   <tr>
-   <td><p>Microsoft&reg; SQL Server 2022 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft&reg; SQL Server 2019 (Deprecated)</p> </td>
+   <td><p>Microsoft&reg; SQL Server 2019 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
@@ -336,7 +330,7 @@ Consider the following exceptions while choosing a platform to set up your AEM F
 1. AEM Forms on JEE do not support and JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
 1. AEM Forms on JEE don't support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
 1. AEM Forms on JEE don't support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
-1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Form on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
+1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
 1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
 1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
 1. AEM Forms on JEE support Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4 only.
@@ -464,8 +458,9 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >- A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"
->
 >- PDF Generator service does not support Microsoft&reg; Windows 10.
+>-PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
 >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. 
 >
@@ -514,8 +509,8 @@ The following subsystems of AEM Forms are not [508](https://www.section508.gov/)
 
 For additional requirements see:
 
-- [System requirements for a single-server AEM Form on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
-- [System requirements for a clustered AEM Form on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
+- [System requirements for a single-server AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- [System requirements for a clustered AEM Forms on JEE deployment](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ## Supported Clients for AEM Forms on JEE {#supported-clients-for-aem-forms-on-jee}
 
@@ -696,26 +691,26 @@ Sometimes, Adobe does not support third-party updates that change major function
 
 Under circumstances beyond Adobe's control, third-party patches that claim backward compatibility may have negative impact on the Adobe products or customer environments. In such cases, Adobe recommends that customers assess the impact of any urgent patch from a third party before applying them to critical systems. Adobe works with third parties using reasonable business efforts to resolve such issues, either through normal Adobe support programs or by third parties rectifying the issue in their patch. This does not guarantee that a newly released third-party patch that will be supported by Adobe works as documented by the vendor or with AEM Forms on JEE.
 
-Adobe reserves the right to change the third-party reference platforms supported by a AEM Form on JEE release and their supported patch definitions at any given point.
+Adobe reserves the right to change the third-party reference platforms supported by a AEM Forms on JEE release and their supported patch definitions at any given point.
 
 Additional information for third-party patches can also be found by searching the Adobe Enterprise Support site for knowledgebase articles related to your product.
 
 ## Platform updates {#platform-updates}
 
-The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on August 31, 2023:
+The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on August 31, 2023:
 
 - Microsoft® Windows Server 2019 (64-bit)
 - Oracle WebLogic Server 12.2.1 (12c R2)
 - Microsoft® Active Directory 2016
-- MongoDB Enterprise 4.2
 
-The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
+The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on June 2, 2022:
 
 - Microsoft&reg; SharePoint 2016
 
 The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release on March 3, 2022:
 
 - MongoDB Enterprise 4.0
+- MongoDB Enterprise 4.2
 - IBM&reg; DB2&reg; 11.1
 - Oracle Database 12c Release 2
 - MySQL 5.7.35
@@ -728,7 +723,6 @@ The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
-- Microsoft&reg; Windows Server 2022 (64-bit)
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Office 2016
 - OpenOffice 4.1.2
@@ -742,12 +736,12 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 ## Revision History {#revision-history}
 
 - Aug 31, 2023
-  - **Platform Updates**:**[!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
-    - Windows Server 2022 (64-bit)
+  - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
     - MongoDB Enterprise 4.4
     - Oracle WebLogic Server 14c
     - My SQL JDBC connector 8
-    - Microsoft®  JDBC Driver 12.2 for SQL Server
+    - Active Directory 2022
+    - Microsoft&reg; Windows Server 2022 (64-bit)
 
   - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has removed support for the following platforms:
     - Windows Server 2016 (64-bit)
@@ -778,7 +772,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - IBM&reg; J9 Virtual Machine (build 2.8, JRE 1.8.0)
     - Oracle Database 12c Release 1
     - Oracle Database 18c
-    - Oracle Unified Directory (OUD) 11-g Release 2
+    - Oracle Unified Directory (OUD) 11g Release 2
     - IBM&reg; Lotus Domino 9.0
     - IBM&reg; FileNet 5.2
     - Adobe Flash Player
@@ -792,8 +786,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - [!DNL Adobe Acrobat 2020]
     - [!DNL Ubuntu 20.04]
     - [!DNL Open Office 4.1.10]
-    - [!DNL Microsoft®&reg; Office 2019]
-    - [!DNL Microsoft®&reg; Windows Server 2019]
+    - [!DNL Microsoft®&reg; Office 2016]
+    - [!DNL Microsoft®&reg; Windows Server 2016]
     - [!DNL RHEL8]
 
 - Dec 03, 2020

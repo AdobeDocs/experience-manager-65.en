@@ -71,10 +71,9 @@ Some of the key features and enhancements in this release include the following:
 * **AEM Forms on JEE full installer**: The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
   * Microsoft Windows Server 2022 
   * Microsoft Active Directory 2022 
-  * Oracle WebLogic 14C and 12.2.1.4 on Windows Server 2022 
-  * RedHat JBoss 7.4.10 on Windows Server 2022 
+  * Oracle WebLogic 14C on Windows Server 2022
+  * RedHat JBoss 7.4.10 
   * MongoDB 4.4 
-  * Microsoft JDBC Driver 12.2 for SQL Server 
   * MySQL JDBC Connector 8 
 
 If you are performing a fresh installation or planning to use the latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer. To explore the complete list of newly added and deprecated software, refer to the documentation for AEM Forms on JEE or AEM Forms on OSGi. 
@@ -158,19 +157,17 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 <!--
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
-
 -->
 
 * **Document Services**
-  * When a user uses a transformPDF service, it fails with an exception: java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml (FORMS-9957) 
-  * If a user restarts the server while generating the PDF document, an error occurs in job processing. (FORMS-9836) 
+  * When a user uses a transformPDF service, it fails with an exception: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957) 
+  * If the server is shut down during PDF document generation, post server startup job processing errors are thrown. The argument -Dcom.adobe.livecycle.dsc.deferServiceStart=true needs to be added during server startup. (FORMS-9836)
   * If a user tries to merge PDFs using the AssemblerService.Invoke method, the assembler fails to perform the task. (FORMS-9550) 
   * When you upgrade to AEM 6.5.15.0 Service Pack on OSGI and JEE environments, the Assembler service using a specific template stops working. (FORMS-9355, FORMS-9445, FORMS-9408) 
   * Java garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, as the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035) 
   * While rendering the PDF preview of an Adaptive Form, the unwanted Java stack dumps appear in the error logs. (FORMS-8865)
   * When a user review the document status or event status for documents, it is not displayed correctly. (FORMS-8946, FORMS-10424)
-  *  * When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152)
-
+  <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
 * **Adaptive Forms** 
   * When a user tries to call a custom function without modifying a field, such as setting the value of another field, it fails. (FORMS-9921) 
   * While working with the custom error function for the Rule Editor in an Adaptive Form, the following errors occur: 
@@ -422,13 +419,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
    "refresh": true
    ```
 
-* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0].
-
 * If you upgrade your [!DNL Experience Manager] instance from 6.5.0 - 6.5.4 to the latest service pack on Java&trade; 11, you see `RRD4JReporter` exceptions in the `error.log` file. To stop the exceptions, restart your instance of [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 --> 
 
 * Users can rename a folder in a hierarchy in [!DNL Assets] and publish a nested folder to [!DNL Brand Portal]. However, the title of the folder is not updated in [!DNL Brand Portal] until the root folder is republished.
-
-* When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue.
 
 * The following errors and warning messages may display during installation of [!DNL Experience Manager] 6.5.x.x:
   * "When the Adobe Target integration is configured in [!DNL Experience Manager] using the Target Standard API (IMS authentication), then exporting Experience Fragments to Target results in wrong offer types getting created. Instead of type "Experience Fragment"/source "Adobe Experience Manager," Target creates several offers with type "HTML"/source "Adobe Target Classic."
@@ -441,10 +434,12 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * Starting with AEM 6.5.15, the Rhino JavaScript Engine provided by the ```org.apache.servicemix.bundles.rhino``` bundle has a new hoisting behavior. Scripts that use the strict mode (```use strict;```) have to correctly declare their variables, otherwise they do not get run, instead throwing a runtime error.
 
 * **Related to Forms**
-  * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (Adaptive Forms)
-  * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server. (Adaptive Forms)
-  * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (Adaptive Forms)
-  * After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (Adaptive Forms)
+  * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (JEE Platform)
+  * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server. (JEE Platform)
+  * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (JEE Platform)
+  * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (Adaptive Form)
+  * After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (Adaptive Form)
+  * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the adaptive form in the same editor resolves the issue. (Adaptive Form)
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
