@@ -11,13 +11,6 @@ feature: Adaptive Forms
 
 # Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
 
-
-| Version | Article link |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service |   Click here                |
-| AEM 6.5     | This article         |
-
-
 AEM Forms provides out-of-the-box success and error handlers for form submissions. It also provides feature to customize error handler functions. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. Handlers are client-side functions that execute based on the server response. When an external service is invoked using APIs, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function. An error handler helps to manage and display errors or validation issues encountered. 
 
 ![error handler workflow to understand how to add custom error handler in forms](/help/forms/using/assets/error-handler-workflow.png)

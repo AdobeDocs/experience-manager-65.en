@@ -166,7 +166,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * When you upgrade to AEM 6.5.15.0 Service Pack on OSGI and JEE environments, the Assembler service using a specific template stops working. (FORMS-9355, FORMS-9445, FORMS-9408) 
   * Java garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, as the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035) 
   * While rendering the PDF preview of an Adaptive Form, the unwanted Java stack dumps appear in the error logs. (FORMS-8865)
-  * When a user review the document status or event status for documents, it is not displayed correctly. (FORMS-8946, FORMS-10424)
+  * When a user review the document status for documents in the document details section, it is not displayed correctly. (FORMS-8946, FORMS-10424)
   <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
 * **Adaptive Forms** 
   * When a user tries to call a custom function without modifying a field, such as setting the value of another field, it fails. (FORMS-9921) 
@@ -435,7 +435,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 ### Known issues for AEM Forms
 
-#### Supported platforms 
+ #### Supported platforms 
 
   * JDK version higher than 1.8.0_281 are not supported for WebLogic JEE server. (FORMS-8498, CQDOC-20383)
   * As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
