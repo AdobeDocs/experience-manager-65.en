@@ -167,6 +167,10 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
   * Java garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, as the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035) 
   * While rendering the PDF preview of an Adaptive Form, the unwanted Java stack dumps appear in the error logs. (FORMS-8865)
   * When a user review the document status for documents in the document details section, it is not displayed correctly. (FORMS-8946, FORMS-10424)
+  * When a user upgrades to AEM Forms and uses the sendToPrinter service, there is a continuous increase in heap utilization. (FORMS-10148) 
+  * On JBoss 7.4 EAP server, the email functionality fails with `java.io.IOException`. (FORMS-10138)
+  * When a user uses the transformPDF service, it fails with an error: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
+  * After upgrading to AEM Service Pack 6.5.14.0, the issue arises in the assembler service when using a specific template. (FORMS-9445, FORMS-9408)
   <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
 * **Adaptive Forms** 
   * When a user tries to call a custom function without modifying a field, such as setting the value of another field, it fails. (FORMS-9921) 
