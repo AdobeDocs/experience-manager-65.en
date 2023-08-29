@@ -753,6 +753,8 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Microsoft&reg; SQL Server JDBC driver 6.2.1.0
     - Microsoft&reg; SQL Server JDBC driver 6.2.2.0
     - Microsoft&reg; JDBC Driver 8.x for SQL Server
+
+  - **Platform Updates for the PDF Generator service**: [!DNL Adobe Experience Manager Forms] on JEE has removed support for the following platforms for PDF Generator and in-general:
     - Microsoft&reg; Sharepoint 2016
     - Microsoft&reg; Office 2016
     - Microsoft&reg; Office Visio 2016 
