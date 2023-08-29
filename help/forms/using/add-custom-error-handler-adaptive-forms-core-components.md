@@ -7,6 +7,8 @@ keywords: Add a custom error handler, add a default error handler, add a error h
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
+hide: yes
+hidefromtoc: yes
 ---
 
 # Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
