@@ -25,9 +25,10 @@ AEM 6.5 Forms includes several new features and enhancements that streamline the
 
 You can upgrade your existing LiveCycle or AEM Forms installation to obtain new capabilities and enhancements offered in AEM 6.5 Forms while retaining existing data, processes, and assets intact. On upgrade, metadata and state of the processes are also preserved. You can choose an upgrade path to get started with upgrade.
 
+<!--
 The following diagram displays the available upgrade paths for AEM Forms on OSGi:
 
-![OSGi upgrade flow](do-not-localize/osgi-upgrade-path.png)
+![OSGi upgrade flow](do-not-localize/osgi-upgrade-path.png) -->
 
 You can perform a direct upgrade from:
 
@@ -58,15 +59,16 @@ You can also perform a multi-hop upgrade from
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
-AEM 6.5.18.0 Forms on JEE provides provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.12.0 Forms on JEE provides provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
+**Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.12.0 Forms on JEE.
 
 **Patch installer**: Patch installer is for customers already using AEM 6.5.x.x versions. You can use the patch installer to upgrade to the latest version of AEM Forms.
 
+<!--
 The following image depicts senarios for using full and patch installer.
 
-![Full Installer and Patch Installer](/help/forms/using/assets/full-and-patch-installer.png)
+![Full Installer and Patch Installer](/help/forms/using/assets/full-and-patch-installer.png) -->
 
 <!--
 [Work in Progress]
