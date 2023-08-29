@@ -41,9 +41,10 @@ You can also perform a multi-hop upgrade from
 * AEM 6.1 Forms on OSGi
 * AEM 6.2 Forms on OSGi
 
+<!--
 The following diagram displays the available upgrade paths for AEM Forms on JEE:
 
-![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png)
+![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png) -->
 
 
 You can perform a direct upgrade from:
