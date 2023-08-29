@@ -56,9 +56,9 @@ Some of the key features and enhancements in this release include the following:
 
 **Forms**
 
-* **Enhanced error handling with custom error handlers in the rule editor:** You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down 
+* **[Enhanced error handling with custom error handlers in the rule editor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down 
 
-* **Enhanced Adobe Sign Workflow step:** Adobe Sign workflow step in AEM Workflows is available with the following enhancements.  
+* **[Enhanced Adobe Sign Workflow step](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html):** Adobe Sign workflow step in AEM Workflows is available with the following enhancements.  
 
    * **Enhanced Security with Government ID-Based Authentication for Adobe Sign:** Adobe Acrobat Sign's Government ID Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
    
@@ -68,7 +68,7 @@ Some of the key features and enhancements in this release include the following:
    * **Expanded the roles for Agreement recipients beyond just the Signer:** Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
 
  
-* **AEM Forms on JEE full installer**: The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
+* **[AEM Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
   * Microsoft Windows Server 2022 
   * Microsoft Active Directory 2022 
   * Oracle WebLogic 14C on Windows Server 2022
