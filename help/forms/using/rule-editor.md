@@ -146,7 +146,19 @@ For more information about configuring services in form data model, see [AEM For
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-The **Set Property** rule type lets you set the value of a property of the specified object based on a condition action.
+The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
+* visible (Boolean)
+* dorExclusion (Boolean)
+* chartType (String)
+* title (String)
+* enabled (Boolean)
+* mandatory (Boolean)
+* validationsDisabled (Boolean)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (List)
+* valid (Boolean)
+* errorMessage (String)
 
 It enables you to define rules to add check boxes dynamically to the adaptive form. You can use custom function, a form object, or an object property to define a rule.
 
@@ -814,6 +826,10 @@ The following rule shows how you will configure the Invoke service action to acc
 ![example-invoke-services](assets/example-invoke-services.png)
 
 Invoke form data model service using adaptive form rule
+
+>[!NOTE]
+>
+>If the input is of array type, the fields that support arrays are visible under the Output drop-down section.
 
 ### Triggering multiple actions using the When rule {#triggering-multiple-actions-using-the-when-rule}
 
