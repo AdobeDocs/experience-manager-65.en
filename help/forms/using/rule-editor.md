@@ -148,6 +148,7 @@ For more information about configuring services in form data model, see [AEM For
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
 The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
+
 * visible (Boolean)
 * dorExclusion (Boolean)
 * chartType (String)
