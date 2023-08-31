@@ -86,7 +86,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 1. Access an existing [!DNL Sites] deployment or create a deployment using the following command:
 
     1. In the folder of the JAR file, execute the following command on a terminal to create each [!DNL Experience Manager] server.
-       `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
     1. After a few minutes, the [!DNL Experience Manager] server starts successfully. Consider this [!DNL Sites] deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
 
