@@ -72,3 +72,6 @@ Build on this knowledge and continue your AEM headless translation journey by ne
 While it is recommended that you move on to the next part of the headless translation journey by reviewing the document [Get started with AEM headless translation,](getting-started.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
 * [MSM and Translation](/help/sites-administering/msm-and-translation.md) - The details of AEM's Multi-Site Manager and how it works with its translation tools
+* An [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)
