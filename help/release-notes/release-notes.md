@@ -169,8 +169,10 @@ If you are performing a fresh installation or planning to use the latest softwar
   * On JBoss 7.4 EAP server, the email functionality fails with `java.io.IOException`. (FORMS-10138)
   * When a user uses the transformPDF service, it fails with an error: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
   * After upgrading to AEM Service Pack 6.5.14.0, the issue arises in the assembler service while using a specific template. (FORMS-9445, FORMS-9408)
-  <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152)
+  <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152)-->
+
 * **Adaptive Forms** 
+
   * When a user tries to call a custom function without modifying a field, such as setting the value of another field, it fails. (FORMS-9921) 
   * While working with the custom error function for the Rule Editor in an Adaptive Form, the following errors occur: 
     * When a user tries to use @param{boolean} with a function, the rule editor does not allow Boolean values to pass to a function. 
@@ -208,8 +210,7 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 
 <!-- ### [!DNL Commerce]{#commerce-6518}
-
-* A -->
+ -->
 
 ### Foundation{#foundation-6518}
 
