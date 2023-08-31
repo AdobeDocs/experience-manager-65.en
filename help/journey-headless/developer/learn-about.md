@@ -120,4 +120,6 @@ Build on this knowledge and continue your AEM headless journey by next reviewing
 
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Getting Started with AEM Headless](getting-started.md), the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
+* An [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
