@@ -75,3 +75,9 @@ Now that you have learned the concepts and terminology, the next step is to [Lea
 * [AEM Headless Content Architect Journey](/help/journey-headless/architect/overview.md)
 
 * [AEM Headless Content Translation Journey](/help/journey-headless/translation/overview.md)
+
+* [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

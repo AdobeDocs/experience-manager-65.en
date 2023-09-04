@@ -7,8 +7,6 @@ keywords: Add a custom error handler, add a default error handler, add a error h
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-hide: yes
-hidefromtoc: yes
 ---
 
 # Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
@@ -160,7 +158,7 @@ Some of the options to display the error responses are:
 
 Before using error handler in an Adaptive Forms: 
 
-* [Enable Adaptive Forms Core Components for your AEM Cloud Service environment](enable-adaptive-forms-core-components.md). 
+* [Enable Adaptive Forms Core Components for your environment](enable-adaptive-forms-core-components.md). 
 * Basic knowledge to [create a custom function](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Install the latest release of [Apache Maven](https://maven.apache.org/download.cgi).
 

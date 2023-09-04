@@ -184,3 +184,6 @@ While it is recommended that you move on to the next part of the headless transl
 * [Identifying Content to Translate](/help/sites-administering/tc-rules.md) - Learn how translation rules identify content that needs translating.
 * [Configuring the Translation Integration Framework](/help/sites-administering/tc-tic.md) - Learn how to configure the Translation Integration Framework to integrate with third-party translation services.
 * [Managing Translation Projects](/help/sites-administering/tc-manage.md) - Learn how to create and manage both machine and human translation projects in AEM.
+* An [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials for Headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

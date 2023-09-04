@@ -269,7 +269,12 @@ You should continue your AEM headless journey by next reviewing the document [Pa
 
 While it is recommended that you move on to the next part of the headless development journey by reviewing the document [Path to Your First Experience Using AEM Headless,](path-to-first-experience.md) the following are some additional, optional resources that do a deeper dive on some concepts mentioned in this document, but they are not required to continue on the headless journey.
 
+* [Headful and Headless in AEM](/help/sites-developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM
+
+* An [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+
 * [AEM Headless Translation Journey](/help/journey-headless/translation/overview.md) - This documentation journey gives you a broad understanding of headless technology, how AEM serves headless content, and how you can translate it.
+
 * [AEM Headless Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Use these hands-on tutorials to explore how to use the various options for delivering content to headless endpoints with AEM and chose what's right for you.
 * [Headless Content Management Using GraphQL APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Sites&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.headless#courses) - Follow this course for an overview of the GraphQL API implemented in AEM. Authentication via AdobeID is required.
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) -  This GitHub project includes example applications that highlight AEM's GraphQL APIs.
@@ -284,4 +289,4 @@ While it is recommended that you move on to the next part of the headless develo
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) - Technical documentation that explains how to create requests to access and deliver Content Fragments
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) - Technical documentation that explains how to create and modify Content Fragments (and other assets)
 * [Persisted Queries](/help/sites-developing/headless/graphql-api/persisted-queries.md) - Technical documentation on persisted queries in AEM
-* [Headful and Headless in AEM](/help/sites-developing/headful-headless.md) - A complete discussion of the headless integration levels available in AEM
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
