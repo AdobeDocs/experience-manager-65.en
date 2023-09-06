@@ -1,6 +1,6 @@
 ---
 title: Use HSM to digitally sign or certify documents
-description: Enhance security by employing HSM or eToken devices for certifying electronically signed documents.
+description: Use HSM server or eToken device to sign/certify PDF documents.
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -14,18 +14,13 @@ Adobe Experience Manager Forms can use credentials stored on an HSM or etoken to
 
 1. Enable the DocAssurance service.
 1. Set up certificates for Reader extension.
-1. Create an alias for the HSM or etoken device in AEM Web Console.
+1. Create an alias for the HSM or etoken device in the AEM Web Console.
 1. Use the DocAssurance Service APIs to sign or certify the documents with digital keys stored on the device.
 
 ## Before you configure the HSM or etoken devices with AEM Forms {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
-* Install and configure HSM or etoken client software on the same computer as AEM server. The client software is required to communicate with the HSM and etoken devices.
-
->[!NOTE]
->
->In a clustered environment, this path must be identical for all servers in the cluster.
-
+* Install the [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
+* Install and configure HSM or etoken client software on the same computer as the AEM server. The client software is required to communicate with the HSM and etoken devices.
 
 ## Enable the DocAssurance service {#configuredocassurance}
 
@@ -91,11 +86,11 @@ Perform the following steps to setup certificates:
 
 The alias contains all the parameters that an HSM or etoken requires. Perform the instructions listed below to create an alias for each HSM or etoken credential that eSign or Digital Signatures uses :
 
-1. Open AEM console. The default URL of AEM console is https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr
+1. Open the AEM console. The default URL of the AEM console is https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr
 1. Open the **HSM Credentials Configuration Service** and specify values for the following fields:
 
     * **Credential Alias**: Specify a string used to identify the alias. This value is used as a property for some Digital Signatures operations, such as the Sign Signature Field operation.
-    * **DLL Path**: Specify the fully qualified path of your HSM or etoken client library on the server. For example, C:\Program Files\LunaSA\cryptoki.dll. In a clustered environment, this path must be identical for all servers in the cluster.
+    * **DLL Path**: Specify the path of your HSM or etoken client library on the server. For example, `C:\Program Files\LunaSA\cryptoki.dll`. In a clustered environment, you must ensure that all servers in the cluster must use an identical path.
     * **HSM Pin**: Specify the password required to access the device key.
     * **HSM Slot Id**: Specify a slot identifier of type integer. The slot ID is set on a client-by-client basis. It is used to identify the slot on HSM which contains the private key for sign/certify.
 
@@ -103,7 +98,7 @@ The alias contains all the parameters that an HSM or etoken requires. Perform th
     >
     >While configuring Etoken, specify a numeric value for the HSM Slot Id field. A numeric value is required to get the Signatures operations working.
 
-    * **Certificate SHA1**: Specify SHA1 value (thumbprint) of the public key (.cer) file for the credential that you are using. Ensure that there are no spaces used in the SHA1 value.
+    * **Certificate SHA1**: Specify the SHA1 value (thumbprint) of the public key (.cer) file for the credential that you are using. Ensure that there are no spaces used in the SHA1 value.
     * **HSM Device Type**: Select the manufacturer of the HSM (Luna or other) or eToken device.
 
    Click **Save**. The hardware security module is configured for AEM Forms. Now, you can use the hardware security module with AEM Forms to sign or certify documents.
