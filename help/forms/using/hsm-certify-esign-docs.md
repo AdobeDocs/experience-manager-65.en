@@ -1,15 +1,10 @@
 ---
 title: Use HSM to digitally sign or certify documents
-seo-title: Use HSM to certify eSigned documents
-description: Use HSM or etoken devices to certify eSigned documents
-seo-description: Use HSM or etoken devices to certify eSigned documents
-uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
+description: Use HSM server or eToken device to sign/certify PDF documents.
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
-exl-id: 4d423881-18e0-430a-849d-e1762366a849
 ---
 # Use HSM to digitally sign or certify documents {#use-hsm-to-digitally-sign-or-certify-documents}
 
@@ -19,19 +14,13 @@ Adobe Experience Manager Forms can use credentials stored on an HSM or etoken to
 
 1. Enable the DocAssurance service.
 1. Set up certificates for Reader extension.
-1. Create an alias for the HSM or etoken device in AEM Web Console.
+1. Create an alias for the HSM or etoken device in the AEM Web Console.
 1. Use the DocAssurance Service APIs to sign or certify the documents with digital keys stored on the device.
 
 ## Before you configure the HSM or etoken devices with AEM Forms {#configurehsmetoken}
 
-* Install [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
-* Install and configure HSM or etoken client software on the same computer as AEM server. The client software is required to communicate with the HSM and etoken devices.
-* (Microsoft Windows only) Set the JAVA_HOME_32 environment variable to point to the directory where the 32-bit version of Java 8 Development Kit (JDK 8) is installed. The default path of the directory is C:\Program Files(x86)\Java\jdk&lt;version&gt;
-* (AEM Forms on OSGi only) Install the root certificate in the trust store. It is required to verify the signed PDF
-
->[!NOTE]
->
->On Microsoft Windows, only 32-bit LunaSA or EToken clients are supported.
+* Install the [AEM Forms add-on](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) package.
+* Install and configure HSM or etoken client software on the same computer as the AEM server. The client software is required to communicate with the HSM and etoken devices.
 
 ## Enable the DocAssurance service {#configuredocassurance}
 
@@ -56,13 +45,15 @@ By default, the DocAssurance service is not enabled. Perform the following steps
 1. Save and close the sling.properties file.
 1. Restart the AEM instance.
 
+<!--
+
 ## Set up certificates for Reader extensions {#set-up-certificates-for-reader-extensions}
 
 Perform the following steps to setup certificates:
 
 1. Log in to AEM Author instance as an administrator.
 
-1. Click**Adobe Experience Manager** on Global Navigation Bar. Go to **Tools** &gt;  **Security** &gt;  **Users**.
+1. Click **Adobe Experience Manager** on Global Navigation Bar. Go to **Tools** &gt;  **Security** &gt;  **Users**.
 1. Click the **name** field of the user account. The **Edit User Settings** page opens.
 1. On the AEM Author instance, certificates reside in a KeyStore. If you have not created a KeyStore earlier, click **Create KeyStore** and set a new password for the KeyStore. If the server already contains a KeyStore, skip this step.
 
@@ -74,7 +65,7 @@ Perform the following steps to setup certificates:
 
    >[!NOTE]
    >
-   >To determine the P**rivate Key Alias** of a certificate, you can use the Java keytool command: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >To determine the **Private Key Alias** of a certificate, you can use the Java keytool command: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -88,23 +79,26 @@ Perform the following steps to setup certificates:
 >
 >On moving to production environment, replace your evaluation credentials with production credentials. Ensure that you delete your old Reader Extensions credentials, before updating an expired or evaluations credential.
 
+-->
+
+
 ## Create an alias for the device {#configuredeviceinaemconsole}
 
 The alias contains all the parameters that an HSM or etoken requires. Perform the instructions listed below to create an alias for each HSM or etoken credential that eSign or Digital Signatures uses :
 
-1. Open AEM console. The default URL of AEM console is https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr
+1. Open the AEM console. The default URL of the AEM console is https://&lt;host&gt;:&lt;port&gt;/system/console/configMgr
 1. Open the **HSM Credentials Configuration Service** and specify values for the following fields:
 
     * **Credential Alias**: Specify a string used to identify the alias. This value is used as a property for some Digital Signatures operations, such as the Sign Signature Field operation.
-    * **DLL Path**: Specify the fully qualified path of your HSM or etoken client library on the server. For example, C:\Program Files\LunaSA\cryptoki.dll. In a clustered environment, this path must be identical for all servers in the cluster.
+    * **DLL Path**: Specify the path of your HSM or etoken client library on the server. For example, `C:\Program Files\LunaSA\cryptoki.dll`. In a clustered environment, you must ensure that all servers in the cluster must use an identical path.
     * **HSM Pin**: Specify the password required to access the device key.
-    * **HSM Slot Id**: Specify a slot identifier of type integer. The slot ID is set on a client-by-client basis. If you register a second machine to a different partition (for example, HSMPART2 on the same HSM device), then slot 1 is associated with the HSMPART2 partition for the client.
+    * **HSM Slot Id**: Specify a slot identifier of type integer. The slot ID is set on a client-by-client basis. It is used to identify the slot on HSM which contains the private key for sign/certify.
 
     >[!NOTE]
     >
     >While configuring Etoken, specify a numeric value for the HSM Slot Id field. A numeric value is required to get the Signatures operations working.
 
-    * **Certificate SHA1**: Specify SHA1 value (thumbprint) of the public key (.cer) file for the credential you are using. Ensure that there are no spaces used in the SHA1 value. If you are using a physical certificate, then it is not required.
+    * **Certificate SHA1**: Specify the SHA1 value (thumbprint) of the public key (.cer) file for the credential that you are using. Ensure that there are no spaces used in the SHA1 value.
     * **HSM Device Type**: Select the manufacturer of the HSM (Luna or other) or eToken device.
 
    Click **Save**. The hardware security module is configured for AEM Forms. Now, you can use the hardware security module with AEM Forms to sign or certify documents.
