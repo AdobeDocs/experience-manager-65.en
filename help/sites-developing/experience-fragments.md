@@ -41,6 +41,8 @@ For example:
 >[!NOTE]
 >
 >Links always reference the publish instance. They are intended to be consumed by third parties, so the link will always be called from the publish instance, not the author.
+>
+>For further information see [Externalizing URLs](/help/sites-developing/externalizer.md).
 
 ![xf-14](assets/xf-14.png)
 

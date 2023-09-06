@@ -25,7 +25,8 @@ exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 
 The rule editor feature in Adobe Experience Manager Forms empowers forms business users and developers to write rules on adaptive form objects. These rules define actions to trigger on form objects based on preset conditions, user inputs, and user actions on the form. It helps further streamline the form filling experience ensuring accuracy and speed.
 
-The rule editor provides an intuitive and simplified user interface to write rules. Rule editor offers a visual editor for all the users. In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. Some of the key actions that you can perform on adaptive form objects using rules are:
+The rule editor provides an intuitive and simplified user interface to write rules. Rule editor offers a visual editor for all the users. In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. 
+<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
 * Enable or disable an object
@@ -33,7 +34,7 @@ The rule editor provides an intuitive and simplified user interface to write rul
 * Validate the value of an object
 * Execute functions to compute the value of an object
 * Invoke a form data model service and perform an operation
-* Set property of an object
+* Set property of an object -->
 
 Rule editor replaces the scripting capabilities in AEM 6.1 Forms and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](#impact-of-rule-editor-on-existing-scripts).
 
@@ -146,7 +147,20 @@ For more information about configuring services in form data model, see [AEM For
 
 For more information about configuring services in form data model, see [AEM Forms Data Integration](/help/forms/using/data-integration.md).
 
-The **Set Property** rule type lets you set the value of a property of the specified object based on a condition action.
+The **[!UICONTROL Set Property]** rule type lets you set the value of a property of the specified object based on a condition action. You can set property to one of the following:
+
+* visible (Boolean)
+* dorExclusion (Boolean)
+* chartType (String)
+* title (String)
+* enabled (Boolean)
+* mandatory (Boolean)
+* validationsDisabled (Boolean)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (List)
+* valid (Boolean)
+* errorMessage (String)
 
 It enables you to define rules to add check boxes dynamically to the adaptive form. You can use custom function, a form object, or an object property to define a rule.
 
@@ -814,6 +828,10 @@ The following rule shows how you will configure the Invoke service action to acc
 ![example-invoke-services](assets/example-invoke-services.png)
 
 Invoke form data model service using adaptive form rule
+
+>[!NOTE]
+>
+>If the input is of array type, the fields that support arrays are visible under the Output drop-down section.
 
 ### Triggering multiple actions using the When rule {#triggering-multiple-actions-using-the-when-rule}
 
