@@ -12,10 +12,9 @@ Hardware security modules (HSM) and etokens are dedicated, hardened, and tamper-
 
 Adobe Experience Manager Forms can use credentials stored on an HSM or etoken to eSign or apply server-sided digital signatures to a document. To use an HSM or etoken device with AEM Forms:
 
-1. Enable the DocAssurance service.
-1. Set up certificates for Reader extension.
-1. Create an alias for the HSM or etoken device in the AEM Web Console.
-1. Use the DocAssurance Service APIs to sign or certify the documents with digital keys stored on the device.
+1. [Enable the DocAssurance service](#configuredocassurance).
+1. [Create an alias for the HSM or etoken device in the AEM Web Console](#configuredeviceinaemconsole).
+1. [Use the DocAssurance Service APIs to sign or certify the documents with digital keys stored on the device](#programatically).
 
 ## Before you configure the HSM or etoken devices with AEM Forms {#configurehsmetoken}
 
@@ -28,7 +27,7 @@ By default, the DocAssurance service is not enabled. Perform the following steps
 
 1. Stop the Author instance of your AEM Forms environment.
 
-1. Open the [AEM_root]\crx-quickstart\conf\sling.properties file for editing.
+1. Open the [AEM_root]\crx-quickstart\conf\sling.properties file to edit.
 
    >[!NOTE]
    >
