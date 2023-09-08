@@ -446,6 +446,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### Installation 
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
+* After installing AEM Service Pack 6.5.18.0 full installer, the EAR deployment fails on JEE using JBoss Turnkey (CQDOC-20803). 
+To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager.
 
 #### Adaptive Forms
 
@@ -455,7 +457,13 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 #### Interactive Communications
 
-* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578) 
+* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578)
+To resolve the issue, perform the following steps:
+
+  1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.
+  1. Extract the Hotfix archive file to obtain an Experience Manager package (.zip) and bundle (.jar) files.
+  1. Upload and install the package (.zip) via the Package Manager.
+  1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar). 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
