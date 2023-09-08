@@ -447,7 +447,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
 * After installing AEM Service Pack 6.5.18.0 full installer, the EAR deployment fails on JEE using JBoss Turnkey (CQDOC-20803). 
-To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_Java_Home` to `Adobe_Java_Home` for all occurrences before running the configuration manager.
+To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager.
 
 #### Adaptive Forms
 
