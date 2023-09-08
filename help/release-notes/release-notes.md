@@ -457,7 +457,13 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 
 #### Interactive Communications
 
-* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578) 
+* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578)
+To resolve the issue, perform the following steps:
+
+1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.
+1. Extract the Hotfix archive file to obtain an Experience Manager package (.zip) and bundle (.jar) files.
+1. Upload and install the package (.zip) via the Package Manager.
+1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar). 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
