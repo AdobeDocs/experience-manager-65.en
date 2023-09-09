@@ -163,7 +163,7 @@ Each property can have one of the following values:
 
 * `REWRITE_EXTERNAL`: rewrites the path by pointing to the resource on the server, using the AEM [Externalizer service](/help/sites-developing/externalizer.md).
 
-The AEM service called **PathRewriterTransformerFactory** allows you to configure the specific html attributes that will be rewritten. The service can be configured in the Web console and has a configuration for each property of the `rewrite` node: `clientlibs`, `images`, and `links`.
+The AEM service called **PathRewriterTransformerFactory** lets you configure the specific html attributes that will be rewritten. The service can be configured in the Web console and has a configuration for each property of the `rewrite` node: `clientlibs`, `images`, and `links`.
 
 This feature was added in AEM 5.5.
 
@@ -221,7 +221,7 @@ When the configuration is set up, the content can be downloaded with a browser o
 
 ### The Content Sync Console {#the-content-sync-console}
 
-The Content Sync console lists all the Content Sync configurations in the repository (all nodes of type `cq:ContentSyncConfig`) and for each configuration allows you to do the following:
+The Content Sync console lists all the Content Sync configurations in the repository (all nodes of type `cq:ContentSyncConfig`) and for each configuration lets you do the following:
 
 * Update the cache.
 * Clear the cache.

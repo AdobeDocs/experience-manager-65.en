@@ -59,13 +59,13 @@ A list of configurations will be shown:
 There are two types of configurations available from the drop down lists on this screen:
 
 * **Configurations**
-  Allows you to update the existing configurations. These have a Persistent Identity (PID) and can be either:
+  Lets you update the existing configurations. These have a Persistent Identity (PID) and can be either:
 
     * standard and integral to AEM; these are required, if deleted the values return to the default settings.
     * instances created from Factory Configurations; these instances are created by the user, deletion removes the instance.
 
 * **Factory Configurations**
-  Allows you to create an instance of the required functionality object.
+  Lets you create an instance of the required functionality object.
 
   This will be allocated a Persistent Identity and then listed in the Configurations drop down list.
 
@@ -151,7 +151,7 @@ Using this tab you can:
 
 ## Components {#components}
 
-The **Components** tab allows you to Enable and/or Disable the various components. It can be accessed by either:
+The **Components** tab lets you Enable and/or Disable the various components. It can be accessed by either:
 
 * The drop-down menu:
 

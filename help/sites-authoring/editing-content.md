@@ -70,7 +70,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
 * **Mode Selector**
 
-  Displays the current [mode](/help/sites-authoring/author-environment-tools.md#page-modes) and allows you to select another mode such as edit, layout, timewarp, or targeting.
+  Displays the current [mode](/help/sites-authoring/author-environment-tools.md#page-modes) and lets you select another mode such as edit, layout, timewarp, or targeting.
 
   ![Mode Selector](assets/chlimage_1-120.png)
 
@@ -82,7 +82,7 @@ The toolbar offers access to numerous options. Depending on your current context
 
 * **Annotate**
 
-  Allows you to add [annotations](/help/sites-authoring/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
+  Lets you add [annotations](/help/sites-authoring/annotations.md) to the page when reviewing a page. After the first annotation, the icon will switch to a number indicating the number of annotations on the page.
 
   ![Annotate](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -106,7 +106,7 @@ The notification lists the workflow that is running against the page. If the use
 
 Completing and delegating workflow steps via the notification bar works as it does when [participating in workflows](/help/sites-authoring/workflows-participating.md) from the Notification inbox.
 
-If the page is subject to multiple workflows, the number of workflows is displayed at the right end of the notification along with arrow buttons to allow you to scroll through the workflows.
+If the page is subject to multiple workflows, the number of workflows is displayed at the right end of the notification along with arrow buttons to let you scroll through the workflows.
 
 ![Notification for number of workflows](assets/chlimage_1-122.png)
 
@@ -151,7 +151,7 @@ You can add a new component by using the **Drag components here** box of the par
 
     * If you are on a desktop device you can double-click on the **Drag components here** box.
 
-   The **Insert New Component** dialog will open to allow you to select your required component:
+   The **Insert New Component** dialog will open to let you select your required component:
 
    ![Insert New Component](assets/screen_shot_2018-03-22at112650.png)
 
@@ -224,13 +224,13 @@ The actual actions available to the user will be shown as appropriate and not al
 
 * **Edit**
 
-  [Dependent on the component type](/help/sites-authoring/default-components.md) this will allow you to [edit the content of the component](#edit-content). Often a toolbar will be provided.
+  [Dependent on the component type](/help/sites-authoring/default-components.md) this will let you [edit the content of the component](#edit-content). Often a toolbar will be provided.
 
   ![Edit](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configure**
 
-  [Dependent on the component type](/help/sites-authoring/default-components.md) this will allow you to edit and configure the properties of the component. Often a dialog will be opened.
+  [Dependent on the component type](/help/sites-authoring/default-components.md) this will let you edit and configure the properties of the component. Often a dialog will be opened.
 
   ![Configure](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -274,25 +274,25 @@ The actual actions available to the user will be shown as appropriate and not al
 
 * **Group**
 
-  This allows you to select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
+  This lets you select multiple components at once. The same can be achieved on a desktop device by a **Control+Click** or **Command+Click**.
 
   ![Group](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Parent**
 
-  Allows you to select the parent component of the selected component.
+  Lets you select the parent component of the selected component.
 
   ![Parent](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
-  This allows you to modify the [layout](/help/sites-authoring/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-authoring/author-environment-tools.md#page-modes) for the entire page.
+  This lets you modify the [layout](/help/sites-authoring/editing-content.md#edit-component-layout) of the selected component. This only applies to the selected component and does not activate the [Layout mode](/help/sites-authoring/author-environment-tools.md#page-modes) for the entire page.
 
   ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Convert to an experience fragment variation**
 
-  This allows you to create a new [experience fragment](/help/sites-authoring/experience-fragments.md) from the selected component or add it to an existing experience fragment.
+  This lets you create a new [experience fragment](/help/sites-authoring/experience-fragments.md) from the selected component or add it to an existing experience fragment.
 
   ![Convert to Experience Fragment Variation](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -488,7 +488,7 @@ There are two options for previewing a page:
 When editing content you can preview the page using the preview [mode](/help/sites-authoring/author-environment-tools.md#page-modes). This mode:
 
 * Hides various edit mechanisms to give you a quick view of how the page will appear on publish.
-* Allows you to use links to navigate.
+* Lets you use links to navigate.
 * Does **not** refresh the page content.
 
 When authoring, the preview mode is available using the icon at the top right of the page editor:
@@ -501,7 +501,7 @@ The **View as Published** option is available from the [Page Information](/help/
 
 ## Locking a Page {#locking-a-page}
 
-AEM allows you to lock a page, so that no one else can modify the contents. This is useful when you are making a lot of edits to one specific page or when you need to freeze a page for a short while.
+AEM lets you lock a page, so that no one else can modify the contents. This is useful when you are making a lot of edits to one specific page or when you need to freeze a page for a short while.
 
 A page can be locked from either:
 
@@ -543,7 +543,7 @@ The Page Information menu lists **Unlock** as an option and the Lock icon in the
 
 ## Undoing and Redoing Page Edits {#undoing-and-redoing-page-edits}
 
-The following icons allow you to undo or redo an action. These are shown in the toolbar when appropriate:
+The following icons let you undo or redo an action. These are shown in the toolbar when appropriate:
 
 ![Undo and Redo](do-not-localize/screen_shot_2018-03-23at093614.png)
 

@@ -22,7 +22,7 @@ A data dictionary is an independent representation of metadata that describes un
 
 The data dictionary is made up of elements of three types: Simple, Composite, and Collection elements. Simple DDEs are primitive elements such as strings, numbers, dates, and Boolean values that hold information such as a city name. A Composite DDE contains other DDEs, which can be of type primitive, composite or collection. For example, an address, which consists of a street address, city, province, country, and postal code. A Collection is a list of similar Simple or Composite DDEs. For example, a customer with multiple locations, or different billing and shipping addresses.
 
-Correspondence Management uses the back end, customer, or recipient-specific data stored according to the data dictionary’s structure to create correspondence meant for different customers. For example, a document can be created with friendly names, such as "Dear {First Name}","Mr. {Last Name}".
+Correspondence Management uses the back end, customer, or recipient-specific data stored according to the data dictionary's structure to create correspondence meant for different customers. For example, a document can be created with friendly names, such as "Dear {First Name}","Mr. {Last Name}".
 
 Typically, business users do not require knowledge of metadata representations such as XSD (XML schema), and Java classes. However, they usually require access to these data structures and attributes to build solutions.
 
@@ -49,7 +49,7 @@ You use the Data Dictionary Editor to create a data dictionary or you can upload
 1. Tap **Create Data Dictionary**.
 1. In the Properties screen, add the following:
 
-    * **Title:** (Optional) Enter the title for the data dictionary. Title needs not be unique and can have special characters and non-english characters. Letters and other document fragments are referred with their title (when available), such as in thumbnails and asset properties. Data dictionaries are referenced with their names and not titles.
+    * **Title:** (Optional) Enter the title for the data dictionary. Title do not need to be unique and can have special characters and non-english characters. Letters and other document fragments are referred with their title (when available), such as in thumbnails and asset properties. Data dictionaries are referenced with their names and not titles.
     * **Name:** The unique name for the data dictionary. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field and the special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens. Although the value in the Title field is automatically copied to the Name, you can edit the value.
 
     * **Description**: (Optional) Description of the data dictionary.
@@ -414,7 +414,7 @@ Once you have created a data dictionary, you can download it as an XML sample da
 1. Select **Download Sample XML Data**.
 1. Tap **OK** in the alert message.
 
-   Correspondence Management creates an XML file based on the selected data dictionary’s structure and downloads it to your computer with the name &lt;data-dictionary-name&gt;-SampleData. Now you can edit this file in an XML or text editor to make data entries while [creating a letter](../../forms/using/create-letter.md).
+   Correspondence Management creates an XML file based on the selected data dictionary's structure and downloads it to your computer with the name &lt;data-dictionary-name&gt;-SampleData. Now you can edit this file in an XML or text editor to make data entries while [creating a letter](../../forms/using/create-letter.md).
 
 ## Internationalization of meta data {#internationalization-of-meta-data}
 

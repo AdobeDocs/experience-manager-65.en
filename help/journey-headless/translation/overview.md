@@ -53,7 +53,7 @@ Information in this journey can of course be useful to all personas, but some in
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of translating headless content in AEM and link out to detailed technical documentation.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless translation in AEM, we recommend that you start at the beginning and progress sequentially.
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless translation in AEM, Adobe recommends that you start at the beginning and progress sequentially.
 
 |#|Article|Description|
 |---|---|---|
@@ -79,4 +79,6 @@ As such journeys are designed to stand on their own. However a number of them ca
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager, and how to model content for your project.
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to leverage them on your first development project.
 * [AEM technical documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
+  * An [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
 * [AEM Headless tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - If you prefer to learn by doing and are technically inclined, take our hands-on tutorials organized by API and framework, that explore creating and using applications built on AEM Headless.
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

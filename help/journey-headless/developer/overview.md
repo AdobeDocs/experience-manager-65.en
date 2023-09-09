@@ -48,7 +48,7 @@ Information in this journey can of course be useful to all personas, but some in
 
 You will explore many topics in this journey. The following articles give you foundational knowledge of headless in AEM and link out to detailed technical documentation.
 
-Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, we recommend that you start at the beginning and progress sequentially.
+Although you can go directly to a particular part of the journey, many concepts build on ones in previous articles. Therefore if you are new to headless in AEM, Adobe recommends that you start at the beginning and progress sequentially.
 
 |#|Article|Description|
 |---|---|---|
@@ -85,3 +85,7 @@ As such journeys are designed to stand on their own. However a number of them ca
 * [Headless Authoring Journey](/help/journey-headless/author/overview.md) - Start here for a guided journey through the powerful and flexible headless features of AEM, their capabilities, and how to model your content on your first headless project.
 * [Headless Architect Journey](/help/journey-headless/architect/overview.md) - Start here for an introduction to the powerful, and flexible, headless features of Adobe Experience Manager, and how to model content for your project.
 * [AEM technical documentation](https://experienceleague.adobe.com/docs/experience-manager-65.html) - If you already have a firm understanding of AEM and headless technologies, you may want to directly consult our in-depth technical docs.
+
+  * An [Introduction to AEM as a Headless CMS](/help/sites-developing/headless/introduction.md)
+
+* The [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

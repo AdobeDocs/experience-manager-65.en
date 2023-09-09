@@ -1,13 +1,13 @@
 ---
 title: Markdown
-description: Understand how the Content Fragment editor uses markdown syntax to allow you to easily create headless content.
+description: Understand how the Content Fragment editor uses markdown syntax to let you easily create headless content.
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
 ---
 # Markdown {#markdown}
 
-When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to allow you to easily write headless content:
+When you are [authoring](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), the content fragment editor uses *markdown* syntax to let you easily write headless content:
 
 ![markdown editor](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Preview assets
-description: Learn how to preview assets in Dynamic Media.
+description: Learn how to preview assets, such as videos and images, in Dynamic Media, by applying image presets and viewer presets.
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

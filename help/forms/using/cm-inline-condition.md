@@ -17,7 +17,7 @@ exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
 
 ## Inline conditions {#inline-conditions}
 
-AEM Forms allows you to use inline conditions in text modules to automate rendering of text that depends on the context or data associated with the form data model (in Interactive Communication) or data dictionary (in letters). Inline condition displays specific content based on condition evaluation being true or false.
+AEM Forms lets you use inline conditions in text modules to automate rendering of text that depends on the context or data associated with the form data model (in Interactive Communication) or data dictionary (in letters). Inline condition displays specific content based on condition evaluation being true or false.
 
 Conditions perform computations on data values provided by the form data model/Data Dictionary or by end users. Using inline conditions, you can save time and reduce human errors, while creating highly contextual and personalized Interactive Communication/letters.
 
@@ -66,7 +66,7 @@ You can insert inline condition in a letter by inserting the inline condition in
 
    For more information on creating the expression, see **Creating expressions and remote functions with expression builder** in [Expression Builder](../../forms/using/expression-builder.md). The value specified in the expression must be supported for the element in the data dictionary. For more information, see [Data Dictionary](../../forms/using/data-dictionary.md).
 
-   Once the condition is inserted, you can hover over the handle on the left of the condition to view the condition. You can tap the handle to view the pop-up menu of the condition, which allows you to edit or remove the condition.
+   Once the condition is inserted, you can hover over the handle on the left of the condition to view the condition. You can tap the handle to view the pop-up menu of the condition, which lets you edit or remove the condition.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -191,7 +191,7 @@ The following example gives you the steps for using repeat to structure and rend
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   You can tap the handle to view the pop-up menu of the repeat, which allows you to edit or remove the repeat construct.
+   You can tap the handle to view the pop-up menu of the repeat, which lets you edit or remove the repeat construct.
 
    ![5_repeateditremove](assets/5_repeateditremove.png)
 
@@ -214,7 +214,7 @@ The following example gives you the steps for using repeat to structure and rend
 
 ### Repeat within condition {#repeat-within-condition}
 
-You may require to use repeat within a condition. Correspondence Management allows you to use repeat within an inline condition construct.
+You may require to use repeat within a condition. Correspondence Management lets you use repeat within an inline condition construct.
 
 For example, following is repeat (formatted in red) within a condition (formatted in green).
 
@@ -230,7 +230,7 @@ Similarly, according to your requirement, you can create:
 
 ### Empty inline condition {#empty-inline-condition}
 
-You may need to insert empty inline conditions and embed text and DD elements later. Correspondence Management allows you to do that.
+You may need to insert empty inline conditions and embed text and DD elements later. Correspondence Management lets you do that.
 
 ![emptycondition](assets/emptycondition.png)
 

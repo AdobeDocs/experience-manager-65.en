@@ -126,6 +126,84 @@ The Lucene Index has the following configuration options:
 * The **excludePropertyNames** property which defines a list of property names - properties that should be excluded from the index.
 * The **reindex** flag which when set to **true**, triggers a full content reindex.
 
+### Understanding Fulltext Search {#understanding-fulltext-search}
+
+The documentation in this section applies to Apache Lucene, ElasticSearch, as well as fulltext indexes of, for example, PostgreSQL, SQLite, MySQL. The following example is for AEM / Oak / Lucene.
+
+<b>Data to be indexed</b>
+
+The starting point is the data that needs to be indexed. Take the following documents, as an example:
+
+| <b>Document ID</b> | <b>Path</b> | <b>Fulltext</b> |
+| --- | --- | --- |
+| 100 | /content/rubik | "Rubik is a Finnish brand." |
+| 200 | /content/rubiksCube | "The Rubik's Cube was invented in 1974." |
+| 300 | /content/cube | "A cube is a 3-dimensional object." |
+
+
+<b>Inverted index</b>
+
+The indexing mechanism splits the fulltext into words called "tokens", and builds an index called "inverted index". This index contains, the list of documents where it appears for each word. 
+
+Very short, common words (also called "stopwords") are not indexed. All tokens are converted to lowercase, and stemming is applied.
+
+Notice special characters such as *"-"* are not indexed.
+
+| <b>Token</b> | <b>Document IDs</b> |
+| --- | --- |
+| 194 | ..., 200,... |
+| brand | ..., 100,... |
+| cube | ..., 200, 300,... |
+| dimension | 300 |
+| finnish | ..., 100,... |
+| invent | 200 |
+| object | ..., 300,... |
+| rubik | .., 100, 200,... |
+
+The list of documents is sorted. This will become handy when querying.
+
+<b>Searching</b>
+
+Below is an example of a query. Notice that all special characters (such as *'*) were replaced with a space:
+
+```
+/jcr:root/content//element(\*; cq:Page)`[` jcr:contains('Rubik s Cube')`]`
+```
+
+The words are tokenized and filtered in the same way as when indexing (single character words are removed, for example). So in this case, the search is for:
+
+```
++:fulltext:rubik +:fulltext:cube
+```
+
+The index will then consult the list of documents for those words. If there are many documents, the lists can be very large. As an example, let us presume they contain the following:
+
+
+| <b>Token</b> | <b>Document IDs</b> |
+| --- | --- |
+| rubik | 10, 100, 200, 1000 |
+| cube | 30, 200, 300, 2000 |
+
+
+Lucene will flip back-and-forth between the two lists (or round-robin `n` lists, when searching for `n` words):
+
+* Read in the "rubik" gets the first entry: it finds 10
+* Read in the "cube" gets the first entry `>` = 10. 10 is not found, then the next one is 30.
+* Read in the "rubik" gets the first entry `>` = 30: it finds 100.
+* Read in the "cube" gets the first entry `>` = 100: it finds 200.
+* Read in the "rubik" gets the first entry `>` = 200. 200 is found. So document 200 is a match for both terms. This is remembered.
+* Read in the "rubik" gets the next entry: 1000.
+* Read in the "cube" gets the first entry `>` = 1000: it finds 2000.
+* Read in the "rubik" gets the first entry `>` = 2000: end of the list.
+* Finally, we can stop searching.
+
+The only document found that contains both terms is 200, as in the example below:
+
+| 200 | /content/rubiksCube | "The Rubik's Cube was invented in 1974." |
+| --- | --- | --- |
+
+When multiple entries are found, they are then sorted by score.
+
 ### The Lucene Property Index {#the-lucene-property-index}
 
 Since **Oak 1.0.8**, Lucene can be used to create indexes which involve property constraints that are not full-text.

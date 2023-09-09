@@ -18,15 +18,14 @@ role: Admin, Developer
 
 | Version | Article link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)|
 | AEM 6.5  |    This Article                  |
-| AEM as a Cloud Service     | [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)|   
 
 **Applies to:** ✅ Adaptive Form Core Components ❎ [Adaptive Form Foundation Components](/help/forms/using/create-adaptive-form.md).
 
+Adaptive Forms let you create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provide business user-friendly UI to quickly create Adaptive Forms. The UI offers quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
 
-Adaptive Forms allow you to create forms that are engaging, responsive, dynamic, and adaptive. AEM Forms provide business user-friendly UI to quickly create Adaptive Forms. The UI offers quick tab navigation to easily select pre-configured template, styling, fields, and submission options to create an Adaptive Form. 
-
-Before you start, learn about the type of Forms components available to you: 
+Before you start, learn about the type of Forms components available to you:
 
 * [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): These are standardized data capture components. These components provide customization capabilities, reduced development time, and lower maintenance costs for your digital enrollment experiences. A developer can easily customize and style these components. Adobe recommends leveraging these modern and extensible components to develop Adaptive Forms.  
 
@@ -38,15 +37,22 @@ You require the following to create an Adaptive Form:
 
 * **Enable Adaptive Forms Core Components for your environment**: AEM Archetype project version 41 or later is required to [enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template and Canvas theme are added to your environment.     
 
-* **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. 
+* **An Adaptive Form template**: A template provides a basic structure and defines appearance (layouts and styles) of an Adaptive Form. It has pre-formatted components containing certain properties and content structure. It also provides the options to define a theme and a submit action. The theme defines the look and feel and submit action defines the action to take on submission of an Adaptive Form. You can also deploy [sample templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your environment. These help you start creating forms swiftly.
 
     >[!NOTE]
     >
-    > If you do not have, **Adaptive Forms (Core Component)** template on your environment, [Enable Adaptive Forms Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template is added to your environment.  
+    > If you do not have, **Adaptive Forms (Core Component)** template on your environment, [Enable Adaptive Forms Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md). On enabling the Core Components for your environment, the **Adaptive Forms (Core Component)** template is added to your environment.
 
-* **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` theme is added by default, when you enable core components for your environment. You can also [download and customize the standard themes](create-or-customize-themes-for-adaptive-forms-core-components.md).  
+* **An Adaptive Form theme**: A theme contains styling details for the components and panels. Styles include properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style reflects on the corresponding components.  The `Canvas` theme is added by default, when you enable core components for your environment. You can  [download and customize the standard themes](create-or-customize-themes-for-adaptive-forms-core-components.md). For **out of the box** themes you can deploy [sample themes](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your environment. These help you start styling your forms and provide a base structure to create or customize a theme as per your business requirements.
 
 * **Permissions**: Add your users to [!DNL forms-users] group. The members of the [!DNL forms-users] group have permissions to create an Adaptive Form. For detailed list of forms-specific user groups, see [Groups and permissions](forms-groups-privileges-tasks.md).
+
+<!--
+>[!NOTE]
+>
+>
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
+-->
 
 ## Create an Adaptive Form {#create-an-adaptive-form}
 
@@ -78,7 +84,7 @@ After opening the form for editing, you can use available Adaptive Forms Core Co
 
 ## Configure Submit Action for an Adaptive Form {#configure-submit-action-for-form}
 
-A Submit Action allows you to choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
+A Submit Action lets you choose the destination of data captured via an Adaptive Form. It is triggered when a user clicks the Submit button on an Adaptive Form. Adaptive forms include some out of the box submit actions. You can also extend a default submit actions to create your own custom submit action. To configure a Submit Action for your form:
 
 1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
 1. Click the Guide Container properties ![Guide properties](/help/forms/using/assets/configure-icon.svg) icon. The Adaptive Form Container dialog box opens. 
@@ -169,10 +175,10 @@ You can use the Form Data Model Prefill service to prepopulate fields of an Adap
 
 * [Use rule editor to add dynamic behaviour to form](rule-editor.md)
 * [Create or customize themes for Core Components based Adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* Create a template for Core Components based Adaptive Forms
+
 
 ## See also
 
 * [Create a Core Components based Adaptive Form](create-an-adaptive-form-core-components.md)
 * [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
+* [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

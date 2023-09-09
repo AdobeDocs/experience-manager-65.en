@@ -120,7 +120,7 @@ To publish or unpublish a page using Manage Publication:
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. The **Manage Publication** wizard starts. The first step, **Options**, allows you to:
+1. The **Manage Publication** wizard starts. The first step, **Options**, lets you:
 
     * Choose to publish or unpublish the selected pages.
     * Choose to take that action now or at a later date.

@@ -18,7 +18,7 @@ Page Zero content is displayed by default when a non-Adobe PDF viewer, such as t
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-[!DNL AEM Forms] version of Designer allows you to change the message that is displayed on Page Zero. To change the Page Zero message, perform the following steps:
+[!DNL AEM Forms] version of Designer lets you change the message that is displayed on Page Zero. To change the Page Zero message, perform the following steps:
 
 1. Ensure that you have the [!DNL AEM Forms] version of Designer installed. You can check the version from the About screen of designer.
 

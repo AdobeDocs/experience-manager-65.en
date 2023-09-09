@@ -71,7 +71,7 @@ The following are the details of the functionalities available through various t
 | Real-time push of updated Workfront metadata to AEM| Automatically update the mapped Workfront metadata to AEM without repushing an asset or a new version of an asset. | &#10003; | No  | &#10003; |
 | Map Workfront Metadata to AEM Assets Folders | Sync Workfront project metadata with linked AEM folders.| No  | &#10003;  | &#10003; |
 | AEM Metadata Updates with New Versions| A configuration in AEM can be made to determine whether a newly versioned asset in Workfront also pushes with any changes made to its metadata.  | No  | &#10003;  | No |
-| Automatically Update AEM Metadata on Changes to Custom Forms in Workfront| AEM allows you to subscribe to the updates to the document forms in Workfront. As a result, any updates to the Workfront document custom form metadata edits the values for the mapped AEM metadata fields.     | No  | &#10003;  | No |
+| Automatically Update AEM Metadata on Changes to Custom Forms in Workfront| AEM lets you subscribe to the updates to the document forms in Workfront. As a result, any updates to the Workfront document custom form metadata edits the values for the mapped AEM metadata fields.     | No  | &#10003;  | No |
 | **Workflows (Out-of-the-box)** |
 | Create New Proof Version on Linked Assets  | Upon linking an asset in Workfront a proof can be automatically generated.| No  | Custom| No |
 | Set Status on Workfront Objects  | Set Workfront object statuses based configurable conditions using AEM workflows| No  | &#10003;  | Upcoming |

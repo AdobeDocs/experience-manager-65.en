@@ -42,7 +42,7 @@ The Correspondence Management Solution supports two kinds to dynamic data items 
 1. Tap **Create** &gt; **Text** Or select a text asset and tap **Edit**.
 1. Specify the following information for the text:
 
-    * **Title: (Optional)** Enter the title for the text asset. Titles need not be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title: (Optional)** Enter the title for the text asset. Titles do not need to be unique and can have special characters and non-english characters. Texts are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the text asset. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description**: Type a description of the asset.
     * **Data Dictionary**: Optionally, select the data dictionary in which to map. This attribute enables you to add references to data dictionary elements in the text asset.
@@ -149,7 +149,7 @@ Execute the following steps to create a hyperlink in a text asset:
 
 When working with text elements containing a large body of text, you need to search for a specific text string. You may also need to replace a specific string of text with an alternative string.
 
-The Find and Replace feature allows you to search for (and replace) any string of text in a text element. The feature also includes a powerful regular expression search.
+The Find and Replace feature lets you search for (and replace) any string of text in a text element. The feature also includes a powerful regular expression search.
 
 #### To search text in a text module {#to-search-text-in-a-text-module}
 
@@ -234,7 +234,7 @@ A list is a group of related content that can be used in a letter template as a 
 
 1. Specify the following information for the list:
 
-    * **Title (Optional): Enter** the title for the list. Title needs not be unique and can have special characters and non-english characters. Lists are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title (Optional): Enter** the title for the list. Title does not need to be unique and can have special characters and non-english characters. Lists are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the list. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated with the value in the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)**: Type a description of the asset.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the list, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate list.
@@ -306,7 +306,7 @@ The Condition editor enables you to specify a default condition. If the value of
 1. Select **Create &gt; Condition**.
 1. Specify the following information for the list:
 
-    * **Title (Optional):** Enter the title for the condition. Title needs not be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title (Optional):** Enter the title for the condition. Title does not need to be unique and can have special characters and non-english characters. Conditions are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the condition. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value.
     * **Description (Optional)** Type a description of the condition.
     * **Data Dictionary (Optional)**: Optionally, select the data dictionary to which to connect. Only assets that use the same data dictionary as the condition, or assets that have no data dictionary assigned, can be added to the list. Assigning a data dictionary to a list makes it easier for the person creating a letter template to find the appropriate condition.
@@ -346,13 +346,13 @@ The Condition editor enables you to specify a default condition. If the value of
 
 A layout fragment is based on XDPs created in Designer. For creating layout fragments, you need to create the XDPs and [upload them to AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
-One or more layout fragments can form parts of a letter and define the graphical layout of those parts. A layout fragment can contain typical form fields, such as Address and Reference Number, and empty subforms that denote target areas. In addition, layout fragments allow you to create tables and insert them in letters.
+One or more layout fragments can form parts of a letter and define the graphical layout of those parts. A layout fragment can contain typical form fields, such as Address and Reference Number, and empty subforms that denote target areas. In addition, layout fragments let you create tables and insert them in letters.
 
 A common use case is to locate reusable layout patterns in Letters and create layout fragments for them. For example, the salutation, address, and subject part of the letter, which appears in the same order multiple letters. Another example could be a table similar number of rows and columns used in multiple letters.
 
 You can create a layout fragment based on an existing XDP. A layout fragment can either be made up of fields and target areas or one or more tables. The tables in a layout can be static or dynamic. An XDP is created in Designer and [uploaded to AEM Forms](/help/forms/using/import-export-forms-templates.md). An XDP can form the structure either of a layout fragment or of a letter. More information on [Layout Design](/help/forms/using/layout-design-details.md).
 
-Using fragments that are bound to target areas allows the letter to be changed at the time of authoring. Layout fragment with different dimensions can be created and the appropriate fragment can be bound to the target area. Layout fragments also allow you to customize some of the table properties:
+Using fragments that are bound to target areas allows the letter to be changed at the time of authoring. Layout fragment with different dimensions can be created and the appropriate fragment can be bound to the target area. Layout fragments also let you customize some of the table properties:
 
 1. You can increase the row and column count.
 1. You can specify the header and footer text for more rows and columns.
@@ -395,7 +395,7 @@ For a detailed example of using static and dynamic tables in layout fragments, s
 1. Correspondence Management displays the available XDPs. Select the XDP on which you want to base your layout fragment and tap **Next**.
 1. Specify the following information for the layout:
 
-    * **Title (Optional):** Enter the title for the layout fragment. Title needs not be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
+    * **Title (Optional):** Enter the title for the layout fragment. Title does not need to be unique and can have special characters and non-english characters. Layout fragments are referred by their titles (when available) such as in thumbnails and asset properties.
     * **Name:** The unique name for the layout fragment. No two assets (text, condition, or list) in any state can exist with the same name. In the Name field, you can enter only English language characters, numbers, and hyphens. The Name field is automatically populated based on the Title field. The special characters, spaces, numbers, and non-English characters entered in the Title field are replaced with hyphens in the Name field. Although the value in the Title field is automatically copied to the Name, you can edit the value. This name appears in the list in the Manage Assets user interface.
     * **Description (Optional)**: Description that appears in the list in the Manage Assets user interface.
     * **Tags (Optional)**: Optionally, select the tags to apply to the condition. You can also type in a new tag's name and create it.

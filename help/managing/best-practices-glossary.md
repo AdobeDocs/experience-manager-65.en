@@ -1403,7 +1403,7 @@ The specification of each workflow should include (at a minimum):
 
 ### Workflows Concept {#workflows-concept}
 
-Workflows allow you to automate AEM activities. The Workflows Concept outlines:
+Workflows let you automate AEM activities. The Workflows Concept outlines:
 
 * the processes that need automation
 * the services and roles in AEM that will be affected

@@ -27,7 +27,7 @@ While a distributed, modular system has its own benefits, the challenge lies in 
 
 ![aem-forms-data-integeration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] Data Integration allows configuring and connecting disparate data sources with [!DNL AEM Forms]. It provides an intuitive user interface to create a unified data representation schema of business entities and services across connected data sources. The unified representation is known as a form data model, an extension of JSON schema. The entities in a form data model are referred to as data model objects. A form data model allows you to:
+[!DNL AEM Forms] Data Integration allows configuring and connecting disparate data sources with [!DNL AEM Forms]. It provides an intuitive user interface to create a unified data representation schema of business entities and services across connected data sources. The unified representation is known as a form data model, an extension of JSON schema. The entities in a form data model are referred to as data model objects. A form data model lets you:
 
 * Access data model objects, properties, and services from connected data sources.
 * Create custom data model objects and properties
@@ -45,7 +45,7 @@ Once you have created a form data model, you can use it in various adaptive form
 
 The first step to implement data integration is to identify and configure data sources that store information you want to leverage in adaptive forms and interactive communications use cases. Next, you create a form data model that uses data model object, properties, and services from one or more data sources. You can create adaptive forms and interactive communications based on a form data model where adaptive form fields or placeholders in interactive communications are bound to respective data source properties.
 
-[!DNL AEM Forms] also allows you to create a form data model independent of data sources and associate or bind data model objects and properties in the form data model with data source later. It eliminates any dependencies on data sources while you work on a form data model.
+[!DNL AEM Forms] also lets you create a form data model independent of data sources and associate or bind data model objects and properties in the form data model with data source later. It eliminates any dependencies on data sources while you work on a form data model.
 
 Review the following to get started, understand, and implement data integration.
 

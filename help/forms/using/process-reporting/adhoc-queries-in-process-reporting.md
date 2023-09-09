@@ -15,7 +15,7 @@ exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 
 ## Ad-hoc queries in Process Reporting {#ad-hoc-queries-in-process-reporting-1}
 
-Ad-hoc queries in Process Reporting allow you to create custom queries that you can use to search for process and task details of the AEM Forms process instances defiend in your AEM Forms environment.
+Ad-hoc queries in Process Reporting let you create custom queries that you can use to search for process and task details of the AEM Forms process instances defiend in your AEM Forms environment.
 
 Also, ad hoc queries can be defined using process and task property filters. These filters can then be saved and used to run the reports later.
 

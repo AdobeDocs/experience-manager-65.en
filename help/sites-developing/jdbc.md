@@ -80,7 +80,7 @@ Knowledge of the source code enables you to decide which solution to use. You ca
 
 The following links open the download pages for some popular database products:
 
-* [Microsoft&reg; SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft&reg; SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM&reg; DB2&reg;](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 

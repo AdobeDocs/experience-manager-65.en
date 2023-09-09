@@ -130,6 +130,7 @@ feature: Forms Service
   + [Enable Core Components for your environment](/help/forms/using/enable-adaptive-forms-core-components.md)
   + [Create a Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
   + [Create themes for Core Components based Adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+  + [Create and use custom error handler for Core Components based Adaptive Forms](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Adaptive Forms - Basic Authoring {#adaptive-forms-basic-authoring}
   + [Best practices for working with adaptive forms](using/adaptive-forms-best-practices.md)
   + [Creating an adaptive form](using/creating-adaptive-form.md)
@@ -157,6 +158,7 @@ feature: Forms Service
   + [Associating submission reviewers with a form](using/adding-reviewers-form.md)
   + [Authoring in-context help for form fields](using/authoring-in-field-help.md)
   + [Use Layout mode to resize components](/help/forms/using/resize-using-layout-mode.md)
+  + [Connect and submit Adaptive Form data to Microsoft&reg; Power Automate ](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Adaptive Forms - Advanced Authoring {#adaptive-forms-advanced-authoring}
   + [Creating adaptive forms using JSON Schema](using/adaptive-form-json-schema-form-model.md)
   + [Creating adaptive forms using XML Schema](using/adaptive-form-xml-schema-form-model.md)
@@ -181,7 +183,7 @@ feature: Forms Service
   + [Integrate Adobe Sign with AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
   + [Creating and managing reviews for assets in forms](using/create-reviews-forms.md)
   + [Embed an adaptive form or Interactive Communication in AEM Sites Single Page Application](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-  + [Standard Validation Error Messages Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+  + [Create and use custom error handler for Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interactive Communications {#interactive-communications}
   + [Introduction to Interactive Communication authoring UI](using/introduction-interactive-communication-authoring.md)
   + [Create an Interactive Communication](using/create-interactive-communication.md)

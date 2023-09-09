@@ -1,6 +1,6 @@
 ---
 title: Publishing Dynamic Media Assets
-description: How to publish Dynamic Media assets
+description: Learn how to publish Dynamic Media assets, such as videos and images, including the HTTP/2 delivery of such assets. 
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -13,7 +13,7 @@ feature: Publishing
 ---
 # Publish Dynamic Media assets {#publishing-dynamic-media-assets}
 
-You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**. After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by embedding the code on the page.
+You publish your Dynamic Media assets by selecting the assets you have already uploaded and tapping **[!UICONTROL Publish]** or **[!UICONTROL Quick Publish]**. After your Dynamic Media assets are published, they are available to you for including in a web page by way of a URL or by embedding the code on the web page.
 
 You can also instantly publish assets that you upload &ndash; without any user intervention. See [Configure Dynamic Media - Scene7 mode](config-dms7.md).
 Or, you can selectively publish assets to either Dynamic Media or Adobe Experience Manager, mutually exclusive of each other, using **[!UICONTROL Selective Publish]** at the folder level. See [Work with Selective Publish in Dynamic Media](/help/assets/selective-publishing.md).

@@ -65,7 +65,7 @@ The various roles that are involved to configure and use the capability and thei
 
 ### Connected Assets architecture {#connected-assets-architecture}
 
-Experience Manager allows you to connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
+Experience Manager lets you connect a remote DAM deployment as a source to multiple Experience Manager [!DNL Sites] deployments. However, you can connect a [!DNL Sites] deployment with only one remote DAM deployment.
 
 Evaluate the optimal number of Sites instances to connect to a remote DAM deployment. Adobe recommends to incrementally connect Sites instances to the deployment and test that there is no performance impact at the remote DAM, as each connected Sites instance contributes to the data traffic on the remote DAM.
 
@@ -86,7 +86,7 @@ To configure Connected Assets and local [!DNL Sites] connectivity, follow these 
 1. Access an existing [!DNL Sites] deployment or create a deployment using the following command:
 
     1. In the folder of the JAR file, execute the following command on a terminal to create each [!DNL Experience Manager] server.
-       `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
     1. After a few minutes, the [!DNL Experience Manager] server starts successfully. Consider this [!DNL Sites] deployment as the local machine for web page authoring, say at `https://[local_sites]:4502`.
 

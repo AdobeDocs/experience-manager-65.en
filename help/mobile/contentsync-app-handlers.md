@@ -196,7 +196,7 @@ It is possible to have multiple mobileappconfig handlers configured each with a 
 * Export your config or review on device
 * If rendering fails check for missing *styles/assets/libs* or check for bad paths to *styles/assets/libs*
 
-**Logging** Enable ContentSync Debug logging via OSGI logger configurations on package `com.day.cq.contentsync` This will allow you to track what handlers ran and whether they updated the cache and reported updating the cache.
+**Logging** Enable ContentSync Debug logging via OSGI logger configurations on package `com.day.cq.contentsync` This will let you track what handlers ran and whether they updated the cache and reported updating the cache.
 
 ## Additional Resources {#additional-resources}
 

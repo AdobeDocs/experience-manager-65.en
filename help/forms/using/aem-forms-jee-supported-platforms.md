@@ -15,9 +15,8 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 
 <div class="preview">
 
-Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE along with the patch installers. The full installer provides support for new platforms while the patch installer includes only bug fixes.
-
-If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using [AEM 6.5.12.0 Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) released on 03 March 2022 instead of AEM 6.5 Forms installer released on 08 April 2019.
+Adobe has released a [full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) with AEM 6.5 Forms Service Pack 18 (6.5.18.0) on JEE along with the patch installers. The full installer provides support for new platforms while the patch installer includes only bug fixes.
+If you are performing a fresh installation or planning to use latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using [AEM 6.5.18.0 Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) released on 31 August 2023 instead of AEM 6.5 Forms installer released on 08 April 2019 or AEM 6.5.12 Forms Installer released on 03 March 2022.
 
 </div>
 
@@ -94,12 +93,12 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p>Minor releases and updates </p> </td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 11 - 64bit</td>
+   <td>Azul Zulu OpenJDK 11 - 64 bit</td>
    <td>Z: Not supported</td>
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td>Azul Zulu OpenJDK 8 - 64bit</td>
+   <td>Azul Zulu OpenJDK 8 - 64 bit</td>
    <td>Z: Not supported</td>
    <td><p> </p> </td>
   </tr>
@@ -141,17 +140,7 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p>Supported</p> </td>
   </tr>
   <tr>
-   <td><p> MongoDB Enterprise 4.0 (Deprecated) </p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Supported</p> </td>
-  </tr>
-  <tr>
-   <td><p>MongoDB Enterprise 4.2 </p> </td>
-   <td><p>Repository Microkernel</p> </td>
-   <td><p>Supported</p> </td>
-  </tr>
-  <tr>
-   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0) (Deprecated)</p> </td>
+   <td><p> MongoDB Enterprise 4.4 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
@@ -161,12 +150,11 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td>Supported</td>
   </tr>
   <tr>
-   <td><p>Microsoft&reg; SQL Server 2016 (Deprecated)</p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
   <tr>
-   <td><p>Microsoft&reg; SQL Server 2019</p> </td>
+   <td><p>Microsoft&reg; SQL Server 2019 </p> </td>
    <td><p>Repository Microkernel</p> </td>
    <td><p>Supported</p> </td>
   </tr>
@@ -176,10 +164,6 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td>R: Restricted Support</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 (Deprecated) </td>
-   <td>-</td>
-   <td>R: Restricted Support</td>
-  </tr>
   <tr>
    <td>MySQL 8.0.27</td>
    <td>-</td>
@@ -191,13 +175,13 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
 - IBM&reg; DB2&reg; is not supported for fresh installations. It is supported only for existing customers upgrading to AEM 6.5 Forms.
 - MongoDB is third-party software and is not included in the AEM licensing package. For more information, see [MongoDB licensing policy](https://www.mongodb.org/about/licensing/).
 - To get the most of your AEM deployment, Adobe recommends licensing the MongoDB Enterprise version to benefit from professional support.
-- Adobe Customer Care will assist qualifying issues related to the usage of MongoDB with AEM. For more information, see the [MongoDB for Adobe Experience Manager page](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+- Adobe Customer Care assists qualifying issues related to the usage of MongoDB with AEM. For more information, see the [MongoDB for Adobe Experience Manager page](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - 'File System' includes block storage that is POSIX-compliant. This includes network storage technology. Mind that file system performance might vary and influences the overall performance. It is recommended to load test AEM with the network/remote file system.
 - Only MongoDB Storage Engine WiredTiger is supported.
 - MongoDB Sharding is not supported in AEM.
-- AEM Forms on JEE does not support MySQL for RDBMK persistence.
+- AEM Forms on JEE do not support MySQL for RDBMK persistence.
 - The Document Security module does not use Content Repository. It implies, if you are using only Document Security and do not plan to use HTML Workspace, HTML5 forms, or adaptive forms, then do not install Content Repository.
-- AEM Forms on JEE does not support using MySQL for persisting AEM Repository (CRX-Repository).
+- AEM Forms on JEE do not support using MySQL for persisting AEM Repository (CRX-Repository).
 
 ### Database drivers {#database-drivers}
 
@@ -212,16 +196,6 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td>MySQL</td>
    <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar(version 5.1.44)</p> </td>
    <td><p>Supplied with AEM Forms on JEE installation</p> </td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; SQL Server<br /> </td>
-   <td><p>Microsoft&reg; SQL Server JDBC driver 6.2.1.0 (Deprecated) <br /> </p> <p>sqljdbc6.jar</p> </td>
-   <td><p>Supplied with AEM Forms on JEE installation.</p> </td>
-  </tr>
-    <tr>
-   <td>Microsoft&reg; SQL Server<br /> </td>
-   <td><p>Microsoft&reg; SQL Server JDBC driver 6.2.2.0 <br /> </p> <p>sqljdbc6.jar</p> </td>
-   <td><p>Supplied with AEM Forms on JEE installation.</p> </td>
   </tr>
   <tr>
    <td>Microsoft&reg; SQL Server<br /> </td>
@@ -246,7 +220,12 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td><p><strong>Supported Patch Definitions</strong></p> </td>
   </tr>
   <tr>
-   <td>Oracle WebLogic Server 12.2.1 (12c R2)</td>
+   <td>Oracle WebLogic Server 12.2.1 (12c R2) (Deprecated)</td>
+   <td>A: Supported</td>
+   <td>Service pack and critical updates</td>
+  </tr>
+  <tr>
+   <td>Oracle WebLogic Server 14c </td>
    <td>A: Supported</td>
    <td>Service pack and critical updates</td>
   </tr>
@@ -254,11 +233,6 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <td>IBM&reg; WebSphere&reg; Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
    <td>A: Supported</td>
    <td>Service pack and critical updates</td>
-  </tr>
-  <tr>
-   <td><p>JBoss&reg; Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (Deprecated) </p> </td>
-   <td><p>A: Supported</p> </td>
-   <td><p>Patches and cumulative patches for the supported EAP version</p> </td>
   </tr>
   <tr>
    <td><p>JBoss&reg; Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
@@ -284,17 +258,17 @@ Adobe Experience Manager Forms requires a Java&trade; Virtual Machine to run, wh
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
   </tr>
    <tr>
-   <td>Microsoft&reg; Windows Server 2019 (64-bit)</td>
+   <td>Microsoft&reg; Windows Server 2019 (64-bit)(Deprecated)</td>
+   <td>A: Supported</td>
+   <td>Service packs and critical updates</td>
+  </tr>
+     <tr>
+   <td>Microsoft&reg; Windows Server 2022 (64-bit)</td>
    <td>A: Supported</td>
    <td>Service packs and critical updates</td>
   </tr>
   <tr>
    <td>Ubuntu 20.04</td>
-   <td>A: Supported</td>
-   <td>Service packs and critical updates</td>
-  </tr>
-  <tr>
-   <td> Microsoft&reg; Windows Server 2016 (64-bit) (Deprecated)</td>
    <td>A: Supported</td>
    <td>Service packs and critical updates</td>
   </tr>
@@ -351,13 +325,13 @@ You can run AEM Forms on JEE on a physical machine or a virtual environment. How
 
 Consider the following exceptions while choosing a platform to set up your AEM Forms on JEE server.
 
-1. AEM Forms on JEE does not support IBM&reg; WebSphere&reg; with MySQL.
-1. AEM Forms on JEE does not support and JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
-1. AEM Forms on JEE doesn't support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
-1. AEM Forms on JEE doesn't support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
+1. AEM Forms on JEE do not support IBM&reg; WebSphere&reg; with MySQL.
+1. AEM Forms on JEE do not support and JBoss&reg; on SUSE&reg; Linux&reg; Enterprise Server 12. Only IBM&reg; WebSphere&reg; is supported on SUSE&reg; Linux&reg; Enterprise Server 12.
+1. AEM Forms on JEE don't support any JDK with JBoss&reg; other than Oracle Java&trade; SE.
+1. AEM Forms on JEE don't support any JDK with IBM&reg; WebSphere&reg; other than IBM&reg; JDK.
 1. CRX-repository supports persistence of type TarMK, MongoDB, and relational databases (RDBMK). You cannot have two different database systems between the application server and the CRX-repository. However, on an AEM Forms on JEE environment, you can use MongoMK with CRX-repository and a supported relational database with application server.
-1. AEM Forms on JEE does not support WebSphere&reg; application server on CentOS.
-1. AEM Forms on JEE does not support JBoss&reg; role-based access control (RBAC).
+1. AEM Forms on JEE do not support WebSphere&reg; application server on CentOS.
+1. AEM Forms on JEE do not support JBoss&reg; role-based access control (RBAC).
 1. AEM Forms on JEE support Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4 only.
 
 In addition, consider the following points while choosing software for Adobe AEM Forms on JEE deployments:
@@ -365,10 +339,10 @@ In addition, consider the following points while choosing software for Adobe AEM
 - AEM Forms on JEE support updates, patches, and fix packs on top of the specified major and minor version of supported software. However, update to the next major or minor version is not supported unless specified.
 - Cluster-based installations do not support TarMK persistence. For information about supported persistence, see [Choosing a persistence type for an AEM Forms installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 - AEM Forms on JEE support various third-party software as per Adobe's [Third-party software support Policy](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-- AEM Forms on JEE support platforms as per the support provided by third-party vendors. Some combinations may not be allowed by third-party vendors. For example, many vendors have not certified their application servers with Oracle. As a result, AEM Forms on JEE also does not support these combinations. To ensure that you choose the supported software versions, check the support matrix for the third-party vendors as well.
-- AEM Forms on JEE does not support TarMK Cold Standby.
-- AEM Forms on JEE does not support vertical clustering.
-- AEM Forms on JEE doesn't support MySQL database on a clustered environment.
+- AEM Forms on JEE support platforms as per the support provided by third-party vendors. Some combinations may not be allowed by third-party vendors. For example, many vendors have not certified their application servers with Oracle. As a result, AEM Forms on JEE also do not support these combinations. To ensure that you choose the supported software versions, check the support matrix for the third-party vendors as well.
+- AEM Forms on JEE do not support TarMK Cold Standby.
+- AEM Forms on JEE do not support vertical clustering.
+- AEM Forms on JEE don't support MySQL database on a clustered environment.
 - For the list of removed or updated platforms, see [AEM 6.5 Forms New Feature Summary](../../forms/using/whats-new.md) document.
 
 ### LDAP servers (optional) {#ldap-servers-optional}
@@ -380,7 +354,11 @@ In addition, consider the following points while choosing software for Adobe AEM
    <th><p><strong>Supported Patch Definitions</strong></p> </th>
   </tr>
   <tr>
-   <td>Microsoft&reg; Active Directory 2016</td>
+   <td>Microsoft&reg; Active Directory 2016 (Deprecated)</td>
+   <td>Maintenance release and fix packs</td>
+  </tr>
+  <tr>
+   <td>Microsoft&reg; Active Directory 2022</td>
    <td>Maintenance release and fix packs</td>
   </tr>
   <tr>
@@ -421,11 +399,6 @@ In addition, consider the following points while choosing software for Adobe AEM
    <td> IBM&reg; Content Manager Client (Deprecated)</td>
    <td>8.5 </td>
   </tr>
-  <tr>
-   <td>Microsoft&reg; Sharepoint </td>
-   <td>2016 (Deprecated)<br /> </td>
-  </tr>
-  <tr>
    <td>Microsoft&reg; Sharepoint </td>
    <td>2019<br /> </td>
   </tr>
@@ -454,15 +427,7 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
    <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 classic track</a> latest version (Deprecated)</td>
-   <td>XPS, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF, and DWF</td>
-  </tr>
-  <tr>
    <td>Microsoft&reg; Office 2019</td>
-   <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Office 2016 (Deprecated)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF, and TXT</td>
   </tr>
   <tr>
@@ -470,29 +435,13 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft&reg; Office Visio 2016 (Deprecated)<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft&reg; Publisher 2019<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Publisher 2016 (Deprecated)<br /> </td>
-   <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft&reg; Project 2016 (Deprecated)<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>OpenOffice 4.1.10</td>
    <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
   </tr>
-  <tr>
-   <td>OpenOffice 4.1.2 (Deprecated)</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, image formats (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF, and TXT</td>
-  </tr>  
  </tbody>
 </table>
 
@@ -500,18 +449,19 @@ AEM Forms App now supports the Apache Cordova. Following are the platform-specif
 >
 >PDF Generator supports only English, French, German, and Japanese versions of the supported operating systems and applications.
 >
->In addition:
+>In addition,:
 >
->- PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
+>- PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) to perform the conversion.
 >- PDF Generator supports only the 32-bit Retail version of Microsoft&reg; Office Professional Plus and other software required for conversion.
 >- PDF Generator does not support Microsoft&reg; Office 365.
 >- PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
 >- The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >- A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. The bundled version should only be accessed programmatically only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, refer to AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))"
->
 >- PDF Generator service does not support Microsoft&reg; Windows 10.
->- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
+>-PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.
+>- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. 
+>- PDF Generator fails to convert files using Microsoft&reg; Project 2019. 
 >
 
 ### Exceptions to accessibility support {#exceptions-to-accessibility-support}
@@ -535,15 +485,15 @@ The following subsystems of AEM Forms are not [508](https://www.section508.gov/)
   </tr>
   <tr>
    <td>Microsoft&reg; Windows Server</td>
-   <td>Intel Xeon&reg; E5-2680, 2.4 GHz processor or equivalent<br /> VMWare ESX 5.1 or later<br /> RAM: 6 GB (64-bit OS with 64-bit JVM)<br /> Free disk space: 15GB of temporary space plus 22GB<br /> for AEM Forms on JEE</td>
+   <td>Intel Xeon&reg; E5-2680, 2.4-GHz processor or equivalent<br /> VMWare ESX 5.1 or later<br /> RAM: 6 GB (64-bit OS with 64-bit JVM)<br /> Free disk space: 15 GB of temporary space plus 22 GB<br /> for AEM Forms on JEE</td>
   </tr>
   <tr>
    <td>SUSE&reg; Linux&reg; Enterprise Server</td>
-   <td>Intel Xeon&reg; E5-2670v2, 1 vCPU, 2.5 GHz processor<br /> AWS m3.medium (3 ECUs)<br /> RAM: 6 GB (64-bit OS with 64-bit JVM)<br /> Free disk space: 6 GB of temporary space plus 22GB<br /> for AEM Forms on JEE</td>
+   <td>Intel Xeon&reg; E5-2670v2, 1 vCPU, 2.5-GHz processor<br /> AWS m3.medium (3 ECUs)<br /> RAM: 6 GB (64-bit OS with 64-bit JVM)<br /> Free disk space: 6 GB of temporary space plus 22 GB<br /> for AEM Forms on JEE</td>
   </tr>
   <tr>
    <td>Red Hat&reg; Enterprise Linux&reg;</td>
-   <td>Intel Xeon&reg; E5-2670v2, 1 vCPU, 2.5 GHz processor<br /> AWS m3.medium (3 ECUs)<br /> RAM: 6 GB (64-bit OS with 64-bit JVM)<br /> Free disk space: 6 GB of temporary space plus 22GB<br /> for AEM Forms on JEE<br /> </td>
+   <td>Intel Xeon&reg; E5-2670v2, 1 vCPU, 2.5-GHz processor<br /> AWS m3.medium (3 ECUs)<br /> RAM: 6 GB (64-bit OS with 64-bit JVM)<br /> Free disk space: 6 GB of temporary space plus 22 GB<br /> for AEM Forms on JEE<br /> </td>
   </tr>
   <tr>
    <td>Hardware requirements for a small production environment</td>
@@ -576,7 +526,11 @@ For additional requirements see:
    <td>Service packs and critical updates</td>
   </tr>
   <tr>
-   <td>Microsoft&reg; Windows&reg; 2016 Server</td>
+   <td>Microsoft&reg; Windows&reg; 2019 Server (Deprecated)</td>
+   <td>Service packs and critical updates</td>
+  </tr>
+  <tr>
+   <td>Microsoft&reg; Windows&reg; 2022 Server</td>
    <td>Service packs and critical updates</td>
   </tr>
  </tbody>
@@ -585,7 +539,7 @@ For additional requirements see:
 - Disk space for installation: 1.7 GB for Workbench only, 2.7 GB on a single drive for a full installation of Workbench, Designer, and the samples assembly 400 MB for temporary install directories - 200 MB in the user temp directory and 200 MB in the Windows temporary directory. If all of these locations reside on a single drive, there must be 1.5 GB of space available during installation. The files copied to the temporary directories are deleted when installation is complete.
 
 - Memory for running Workbench: 2 GB of RAM
-- Hardware requirement: Intel&reg; Pentium&reg; 4 or AMD&reg; equivalent, 1 GHz processor
+- Hardware requirement: Intel&reg; Pentium&reg; 4 or AMD&reg; equivalent, 1-GHz processor
 - Minimum 1024 X 768 pixels or greater monitor resolution with 16-bit color or higher
 - TCP/IPv4 or TCP/IPv6 network connection to the AEM Forms on JEE server
 - You must have Administrative privileges to install Workbench on Windows. If you are installing using a non-administrator account, the installer prompts you for the credentials for an appropriate account.
@@ -595,13 +549,14 @@ For additional requirements see:
 - Microsoft&reg; Windows&reg; 2016 Server, Microsoft&reg; Windows&reg; 2019 Server, or Microsoft&reg; Windows&reg; 10
 - 1 GHz or faster processor with support for PAE, NX, and SSE2.
 - 1 GB of RAM for 32-bit or 2 GB of RAM for 64-bit OS
-- 16 GB disk space for 32-bit or 20 GB disk space for 64-bit OS
+- 16-GB disk space for 32-bit or 20-GB disk space for 64-bit OS
 - Graphics memory - 128 MB of GPU (256 MB recommended)
 - 2.35 GB of available hard-disk space
 - 1024 X 768 pixels or greater monitor resolution
 - Video hardware acceleration (optional)
-- Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC.
-- Administrative privileges to install Designer.
+- Acrobat Pro DC, Acrobat Standard DC, or Adobe Acrobat Reader DC
+- Administrative privileges to install Designer
+- Microsoft&reg; Visual C++ 2019 (VC 14.28 or greater) 32-bit runtime
 
 ### Adobe Acrobat and Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -614,10 +569,6 @@ For additional requirements see:
   <tr>
    <td>Acrobat 2020 (Classic track)</td>
    <td>Version 20.004.30006 or later<br /> </td>
-  </tr>
-  <tr>
-   <td>Acrobat 2017 (Classic track) (Deprecated)</td>
-   <td>Version 17.011.30078 or later<br /> </td>
   </tr>
   
  </tbody>
@@ -716,7 +667,7 @@ AEM Forms app is available on the following platforms:
 | **Platform**      | **Supported Devices**                                                                                               |
 | ----------------- | ------------------------------------------------------------------------------------------------------------------- |
 | Apple iOS         | Apple iPhone, iPad, iPad Air, and iPad mini running iOS 15.1 and above.                                               |
-| Google Android&trade;    | Android&trade; 5.1 and above. AEM Forms app is certified on 7- and 10-inch Samsung Galaxy tablets and popular smartphones. |
+| Google Android&trade;    | Android&trade; 5.1 and above. AEM Forms app is certified on 7-inch and 10-inch Samsung Galaxy tablets and popular smartphones. |
 | Microsoft&reg; Windows | Microsoft&reg; Surface devices, tablets, laptops, and desktops running Microsoft&reg; Windows 10 operating system.            |
 
 ### Adobe Document Security Extension for Microsoft&reg; Office {#adobe-rights-management-extension-for-microsoft-office}
@@ -745,13 +696,19 @@ Additional information for third-party patches can also be found by searching th
 
 ## Platform updates {#platform-updates}
 
-The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
+The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on August 31, 2023:
+
+- Microsoft&reg; Windows Server 2019 (64-bit)
+- Microsoft&reg; Active Directory 2016
+
+The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on June 2, 2022:
 
 - Microsoft&reg; SharePoint 2016
 
 The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release on March 3, 2022:
 
 - MongoDB Enterprise 4.0
+- MongoDB Enterprise 4.2
 - IBM&reg; DB2&reg; 11.1
 - Oracle Database 12c Release 2
 - MySQL 5.7.35
@@ -764,16 +721,46 @@ The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
 - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
-- Microsoft&reg; Windows Server 2016 (64-bit)
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Office 2016
 - OpenOffice 4.1.2
 
+<!--
 >[!NOTE]
 >
 >The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
+-->
 
 ## Revision History {#revision-history}
+
+- Aug 31, 2023
+  - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
+    - MongoDB Enterprise 4.4
+    - Oracle WebLogic Server 14c
+    - My SQL JDBC connector 8
+    - Active Directory 2022
+    - Microsoft&reg; Windows Server 2022 (64-bit)
+
+  - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has removed support for the following platforms:
+    - Windows Server 2016 (64-bit)
+    - MongoDB Enterprise 4.0
+    - Oracle Database 12c Release 2 (12.2.0.1.0)
+    - MySQL 5.7.35
+    - Microsoft&reg; SQL Server 2016
+    - JBoss&reg; EAP 7.1.4
+    - My SQL JDBC connector 5.1.44
+    - Microsoft&reg; SQL Server JDBC driver 6.2.1.0
+    - Microsoft&reg; SQL Server JDBC driver 6.2.2.0
+    - Microsoft&reg; JDBC Driver 8.x for SQL Server
+
+  - **Platform Updates for the PDF Generator service**: [!DNL Adobe Experience Manager Forms] on JEE has removed support for the following platforms for PDF Generator and in-general:
+    - Microsoft&reg; Sharepoint 2016
+    - Microsoft&reg; Office 2016
+    - Microsoft&reg; Office Visio 2016 
+    - Microsoft&reg; Publisher 2016
+    - Microsoft&reg; Project 2016
+    - OpenOffice 4.1.2
+    - Acrobat 2017 (Classic track) Version 17.011.30078 or later
 
 - Sep 01, 2022
   
@@ -799,15 +786,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - [!DNL Adobe Acrobat 2020]
     - [!DNL Ubuntu 20.04]
     - [!DNL Open Office 4.1.10]
-    - [!DNL Microsoft&reg; Office 2019]
-    - [!DNL Microsoft&reg; Windows Server 2019]
+    - [!DNL Microsoft&reg;&reg; Office 2016]
+    - [!DNL Microsoft&reg;&reg; Windows Server 2016]
     - [!DNL RHEL8]
 
 - Dec 03, 2020
   - Support added with AEM Forms 6.5.7.0 or later for the following platform:
-    - [!DNL Microsoft&reg; SQL Server 2019]
+    - [!DNL Microsoft&reg;&reg; SQL Server 2019]
 
 - Sep 09, 2020
 
     - Changed supported version of iOS for AEM Forms App to iOS 12. The previous version was iOS 11.
-

@@ -59,7 +59,7 @@ For more information, see [How to Build AEM Projects using Apache Maven](/help/s
 Once you have your AEM project set up, define strategy for authoring and customizing adaptive forms templates and components.
 
 * An adaptive form template is a specialized AEM page that defines structure and the header-footer information of an adaptive form. A template has preconfigured layouts, styles, and basic structure for an adaptive form. AEM Forms provides out-of-the-box templates and components that you can use to author adaptive forms. However, you can create custom templates and components as per your requirements. It is recommended to gather requirements for additional templates and components you will need in your adaptive forms. For details, see [Customizing adaptive forms and components](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
-* AEM Forms allows you to create adaptive forms based on the following form models. The form models act as interface for data exchange between a form and AEM system and provide an XML-based structure for data flow within and outside an adaptive form. Also, the form models impose rules and constraints on adaptive forms in the form of schema and XFA constraints.
+* AEM Forms lets you create adaptive forms based on the following form models. The form models act as interface for data exchange between a form and AEM system and provide an XML-based structure for data flow within and outside an adaptive form. Also, the form models impose rules and constraints on adaptive forms in the form of schema and XFA constraints.
 
     * **None**: Adaptive forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values.
     * **XML or JSON schema**: XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate a schema to an adaptive form and use its elements to add dynamic content to the adaptive form. The elements of the schema are available in the Data Model Object tab of the content browser for authoring adaptive forms. You can drag-drop the schema elements to build the form.
@@ -70,7 +70,7 @@ It is important to carefully choose the data model that not only suits your requ
 
 For more information, see [Create an adaptive form](/help/forms/using/creating-adaptive-form.md).
 
-* There are some common sections across adaptive forms. You can identify them and define a strategy to promote content reuse. Adaptive forms allow you to create stand-alone fragments and reuse them across forms. You can also save a panel in an adaptive form as a fragment. Any change in a fragment is reflected in all associated forms. It helps you reduce the authoring time and ensures consistency across forms. In addition, the use of fragments makes adaptive forms lightweight resulting in improved authoring experience, especially of large forms. For more information, see [Adaptive form fragments](/help/forms/using/adaptive-form-fragments.md).
+* There are some common sections across adaptive forms. You can identify them and define a strategy to promote content reuse. Adaptive forms let you create stand-alone fragments and reuse them across forms. You can also save a panel in an adaptive form as a fragment. Any change in a fragment is reflected in all associated forms. It helps you reduce the authoring time and ensures consistency across forms. In addition, the use of fragments makes adaptive forms lightweight resulting in improved authoring experience, especially of large forms. For more information, see [Adaptive form fragments](/help/forms/using/adaptive-form-fragments.md).
 
 ### Customizing adaptive forms and components {#customize-components}
 
@@ -97,6 +97,7 @@ For more information, see [Create an adaptive form](/help/forms/using/creating-a
 You can create an adaptive form using the form templates enabled in **Configuration Browser**. To enable the form templates, see [Creating Adaptive Form Template](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
 The form templates can also be uploaded from Adaptive Form packages that are created on another author machine. Form templates are  made available by installing [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Some of the best practices recommended are:
+
 * The **nosamplecontent** runmode is recommended only for author and not for the publish nodes.
 * Authoring of assets such as adaptive form, themes, templates, or cloud configurations are performed over Author nodes only, which can be published at the configured Publish nodes.
 For more information, see [Publishing and unpublishing forms and documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
@@ -119,7 +120,7 @@ Also, see component descriptions and best practices in [Introduction to authorin
 
 ### Using rules in adaptive forms {#using-rules-in-adaptive-forms}
 
-AEM Forms provides a [rule editor](/help/forms/using/rule-editor.md) that allows you to create rules to add dynamic behavior to adaptive form components. Using these rules, you can evaluate conditions and trigger actions on components, such as show or hide fields, calculate values, change drop-down list dynamically, and so on.
+AEM Forms provides a [rule editor](/help/forms/using/rule-editor.md) that lets you create rules to add dynamic behavior to adaptive form components. Using these rules, you can evaluate conditions and trigger actions on components, such as show or hide fields, calculate values, change drop-down list dynamically, and so on.
 
 Rule editor provides a visual editor and a code editor for writing rules. Consider the following when writing rules using the code editor mode:
 
@@ -149,9 +150,45 @@ Rule editor provides a visual editor and a code editor for writing rules. Consid
 * Adaptive form authors may need to write JavaScript code to build business logic in a form. While JavaScript is powerful and effective, it is likely that it could compromise on security expectations. Therefore, you must ensure that the form author is a trusted persona and there are processes to review and approve the JavaScript code before a form is put into production. Administrator can restrict the access to rule editor access to user groups based on their role or function. See [Grant rule editor access to select user groups](/help/forms/using/rule-editor-access-user-groups.md).
 * You can use expressions in rules to make adaptive forms dynamic. All the expressions are valid JavaScript expressions and use adaptive forms scripting model APIs. These expressions return values of certain types. For more information about expressions and best practices around them, see [Adaptive form expressions](/help/forms/using/adaptive-form-expressions.md).
 
+* Adobe recommends using JavaScript synchronous operations over asynchronous ones when creating rules with the Rule editor. Use of asynchronous operations is strongly discouraged. However, if you find yourself in a situation where asynchronous operations are unavoidable, it is essential to implement JavaScript Closure functions. By doing so, you can effectively safeguard against any potential race conditions, ensuring your rule implementations deliver optimal performance and maintain stability throughout. 
+
+     For example, let's assume we need to fetch data from an external API and then apply some rules based on that data. We use a closure to handle the asynchronous API call and ensure that the rules are applied after the data is fetched. Here is the sample code: 
+
+    ```JavaScript 
+
+         function fetchDataFromAPI(apiEndpoint, callback) {
+          // Simulate asynchronous API call with setTimeout
+          setTimeout(() => {
+            // Assuming the API call is successful, we receive some data
+            const data = {
+              someValue: 42,
+            };
+            // Invoke the callback with the fetched data
+            callback(data);
+          }, 2000); // Simulate a 2-second delay for the API call
+        }
+        // Rule implementation using Closure
+        function ruleImplementation(apiEndpoint) {
+          // Using a closure to handle the asynchronous API call and rule application
+          // say you have set this value in street field inside address panel
+          var streetField = address.street;
+          fetchDataFromAPI(apiEndpoint, (data) => {
+            streetField.value = data.someValue;
+          });
+        }
+        // Example usage of the rule implementation
+        const apiEndpoint = "https://example-api.com/data";
+        ruleImplementation(apiEndpoint);
+
+
+    ```
+
+    In this example, `fetchDataFromAPI` simulates an asynchronous API call using `setTimeout`. Once the data is fetched, it invokes the provided callback function, which is the closure to handle the subsequent rule application. The `ruleImplementation` function contains the rule logic.
+
+
 ### Working with themes {#working-with-themes}
 
-Adaptive for themes allow you to create reusable styles that can be applied across forms for consistent look and styling. It is recommended to use Themes to define styling for form components and panels. Some best practices around themes are as follows:
+Adaptive for themes let you create reusable styles that can be applied across forms for consistent look and styling. It is recommended to use Themes to define styling for form components and panels. Some best practices around themes are as follows:
 
 * Use asset library for quick application of text styles, background and images. When a style is added in the asset library, it is available for other themes and in the style mode of the form editor.
 * Apply global settings like font and page background using page-level selector.

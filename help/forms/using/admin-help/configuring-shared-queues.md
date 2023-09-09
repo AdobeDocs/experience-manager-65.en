@@ -21,7 +21,7 @@ You can manage shared queues assigned to a selected user using this option.
 
 ## Managing access to a selected user queue {#managing-access-to-a-selected-user-queue}
 
-Manage Access To A User functionality allows you to manage access to a selected user queue. You can grant or revoke access to a selected user queue to other users in your organization. For example, Kara Bowman is out of office. Using the Manage Access To A User functionality, Kara's queue can be shared with Akira Tanaka and John Jacobs for completion. At a later point, when Kara returns to the office, you can revoke access to her queue from Akira Tanaka and John Jacobs.
+Manage Access To A User functionality lets you manage access to a selected user queue. You can grant or revoke access to a selected user queue to other users in your organization. For example, Kara Bowman is out of office. Using the Manage Access To A User functionality, Kara's queue can be shared with Akira Tanaka and John Jacobs for completion. At a later point, when Kara returns to the office, you can revoke access to her queue from Akira Tanaka and John Jacobs.
 
 Once shared, these tasks can be completed by the user, with access to the queue, using Workspace.
 
@@ -49,7 +49,7 @@ Once shared, these tasks can be completed by the user, with access to the queue,
 
 ## Managing queues assigned to a user {#managing-queues-assigned-to-a-user}
 
-Manage Access By A User functionality allows you to manage queues assigned to a selected user. You can grant or revoke access to user queues to a selected user individually. For example, you wish to assign Akira Tanaka and John Jacobs user queues to Kara Bowman. Using the Manage Access By A User functionality, you can search for Kara Bowman and grant access to tasks assigned to Akira Tanaka and John Jacobs. At a later point, you can revoke Kara Bowman's access to these user queues.
+Manage Access By A User functionality lets you manage queues assigned to a selected user. You can grant or revoke access to user queues to a selected user individually. For example, you wish to assign Akira Tanaka and John Jacobs user queues to Kara Bowman. Using the Manage Access By A User functionality, you can search for Kara Bowman and grant access to tasks assigned to Akira Tanaka and John Jacobs. At a later point, you can revoke Kara Bowman's access to these user queues.
 
 Once assigned, these tasks can be completed by the user using Workspace.
 

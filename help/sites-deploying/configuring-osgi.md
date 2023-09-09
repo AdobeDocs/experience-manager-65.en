@@ -50,9 +50,9 @@ Either method can be used though there are subtle differences, primarily in rela
 Whichever method you use, all of these configuration methods:
 
 * Ensure that copying or replicating the repository contents recreates identical configurations.
-* Allow you to check configurations out to FileVault or Subversion; either for security or further updates.
+* Lets you check configurations out to FileVault or Subversion; either for security or further updates.
 * Can be saved in packages for use when setting up other instances.
-* Allow you to perform configuration rollouts using scripts to propagate the configuration details.
+* Lets you perform configuration rollouts using scripts to propagate the configuration details.
 
 >[!NOTE]
 >

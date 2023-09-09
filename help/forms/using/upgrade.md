@@ -13,7 +13,7 @@ docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 ---
-# Upgrade to AEM 6.5 Forms{#upgrade-to-aem-forms}
+# Upgrade to AEM 6.5 Forms {#upgrade-to-aem-forms}
 
 | Version | Article link |
 | -------- | ---------------------------- |
@@ -27,7 +27,7 @@ You can upgrade your existing LiveCycle or AEM Forms installation to obtain new 
 
 The following diagram displays the available upgrade paths for AEM Forms on OSGi:
 
-![OSGi upgrade flow](do-not-localize/osgi-upgrade-path.png)
+![OSGi upgrade flow](do-not-localize/osgi-upgrade-path.png) 
 
 You can perform a direct upgrade from:
 
@@ -42,7 +42,8 @@ You can also perform a multi-hop upgrade from
 
 The following diagram displays the available upgrade paths for AEM Forms on JEE:
 
-![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png)
+![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png) 
+
 
 You can perform a direct upgrade from:
 
@@ -52,22 +53,20 @@ You can perform a direct upgrade from:
 
 You can also perform a multi-hop upgrade from
 
-* LiveCycle ES2
-* LiveCycle ES3
 * LiveCycle ES4 SP1
 * AEM 6.0 Forms on JEE
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
-AEM 6.5.12.0 Forms on JEE provides provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.18.0 Forms on JEE provides provides two types of installers: [Full installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) and [Patch installer](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.3 Forms on JEE, AEM 6.4 on JEE, and out-of-the-place upgrade from AEM 6.5.x.x Forms on JEE to AEM 6.5.12.0 Forms on JEE.
+**Full installer**: You can use the full installer to set up fresh AEM Forms instances or perform upgrades from AEM 6.5.x.x Forms on JEE to AEM 6.5.18.0 Forms on JEE.
 
 **Patch installer**: Patch installer is for customers already using AEM 6.5.x.x versions. You can use the patch installer to upgrade to the latest version of AEM Forms.
 
 The following image depicts senarios for using full and patch installer.
 
-![Full Installer and Patch Installer](/help/forms/using/assets/full-and-patch-installer.png)
+![Full Installer and Patch Installer](/help/forms/using/assets/full-and-patch-installer.png) 
 
 <!--
 [Work in Progress]
