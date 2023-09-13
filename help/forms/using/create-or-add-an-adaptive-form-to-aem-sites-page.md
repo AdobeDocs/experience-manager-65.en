@@ -244,3 +244,8 @@ On submission of a form, you can redirect the user to another webpage or a messa
     * To configure a Redirect URL, for on Submit option, select the Redirect to URL option, and provide an absolute address or a Redirect URL or relative path of an AEM Sites page.  
 
     * To configure a custom or thank you message, for on Submit option, select the Show Message option, and provide a message in the Message content box. It is a rich text box, you can use the full screen option to view all the available rich text items.
+
+## See also {#see-also}
+
+* [Create a standalone Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Create style or themes for your forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
