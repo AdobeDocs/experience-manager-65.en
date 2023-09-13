@@ -350,16 +350,9 @@ To use UberJar in a Maven project, see [how to use UberJar](/help/sites-developi
 >
 >UberJar and the other related artifacts are available on Maven Central Repository instead of Adobe Public Maven repository (`repo.adobe.com`). The main UberJar file is renamed to `uber-jar-<version>.jar`. So, there is no `classifier`, with `apis` as the value, for the `dependency` tag.
 
-## Deprecated features{#removed-deprecated-features}
+## Deprecated and removed features{#removed-deprecated-features}
 
-Below is a list of features and capabilities that are marked as deprecated with [!DNL Experience Manager] 6.5.7.0. Features are marked deprecated initially and later removed in a future release. An alternate option is provided.
-
-Review if you use a feature or a capability in a deployment. Also, plan to change the implementation to use an alternate option.
-
-| Area | Feature | Replacement |
-|---|---|---|
-| Integrations | The screen **[!UICONTROL Experience Manager Cloud Services Opt-In]** is deprecated since the [!DNL Experience Manager] and [!DNL Adobe Target] integration is updated in [!DNL Experience Manager] 6.5. The integration supports the Adobe Target Standard API. The API uses authentication by way of Adobe IMS and [!DNL Adobe I/O Runtime]. It supports the growing role of Adobe Launch to instrument [!DNL Experience Manager] pages for analytics and personalization, the opt-in wizard is functionally irrelevant. | Configure system connections, Adobe IMS authentication, and [!DNL Adobe I/O Runtime] integrations via the respective [!DNL Experience Manager] cloud services. |
-| Connectors | The Adobe JCR Connector for Microsoft&reg; SharePoint 2010 and Microsoft&reg; SharePoint 2013 is deprecated for [!DNL Experience Manager] 6.5. | N/A |
+See [Deprecated and removed features](/help/release-notes/deprecated-removed-features.md/).
 
 ## Known issues{#known-issues}
 
@@ -446,6 +439,8 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### Installation 
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
+* After installing AEM Service Pack 6.5.18.0 full installer, the EAR deployment fails on JEE using JBoss Turnkey (CQDOC-20803). 
+To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager.
 
 #### Adaptive Forms
 
@@ -455,7 +450,13 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 #### Interactive Communications
 
-* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578) 
+* After upgrading to AEM Service Pack 18, it is not possible to edit interactive communication letters. (FORMS-10578)
+To resolve the issue, perform the following steps:
+
+  1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.
+  1. Extract the Hotfix archive file to obtain an Experience Manager package (.zip) and bundle (.jar) files.
+  1. Upload and install the package (.zip) via the Package Manager.
+  1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar). 
 
 ## OSGi bundles and content packages included{#osgi-bundles-and-content-packages-included}
 
