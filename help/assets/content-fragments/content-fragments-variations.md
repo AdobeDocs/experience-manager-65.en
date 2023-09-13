@@ -9,7 +9,7 @@ exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 
 [Variations](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) are a significant feature of AEM's content fragments, as they let you create and edit copies of the master content for use on specific channels, and/or scenarios, making headless content delivery even more flexible.
 
-From the **Variations** tab you can:
+From the **Variations** tab you can do the following:
 
 * [Enter the content](#authoring-your-content) for your fragment,
 * [Create and manage variations](#managing-variations) of the **Master** content,
@@ -18,7 +18,7 @@ Perform a range of other actions depending on the data type being edited; for ex
 
 * [Insert visual assets into your fragment](#inserting-assets-into-your-fragment) (images)
 
-* Select between [Rich Text](#rich-text), [Plain Text](#plain-text) and [Markdown](#markdown) for editing
+* Select between [Rich Text](#rich-text), [Plain Text](#plain-text), and [Markdown](#markdown) for editing
 
 * [Upload Content](#uploading-content)
 
@@ -30,11 +30,11 @@ Perform a range of other actions depending on the data type being edited; for ex
 
 >[!CAUTION]
 >
->After a fragment has been published and/or referenced, AEM will display a warning when an author opens the fragment for editing again. This is to warn that changes to the fragment will affect the referenced pages as well.
+>After a fragment has been published and/or referenced, AEM displays a warning when an author opens the fragment for editing again. This is to warn that changes to the fragment affect the referenced pages, too.
 
 ## Authoring your Content {#authoring-your-content}
 
-When you open your content fragment for editing, the **Variations** tab will be open by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields, of various data types, that were defined in the content model. 
+When you open your content fragment for editing, the **Variations** tab is opened by default. Here you can author the content, for Master or any variations you have. The structured fragment contains various fields of various data types that were defined in the content model. 
 
 For example:
 
@@ -44,19 +44,19 @@ You can:
 
 * Make edits to your content directly in the **Variations** tab; each data type provides different editing options, for example:
 
-  * for **Multi line text** fields you can also open the [full-screen editor](#full-screen-editor) to:
+  * for **Multi line text** fields, you can also open the [full-screen editor](#full-screen-editor) to:
 
     * select the [Format](#formats)
     * see more editing options (for [Rich Text](#rich-text) format)
     * access a range of [actions](#actions)
 
-  * For **Fragment Reference** fields the [Edit Content Fragment](#fragment-references-edit-content-fragment) option can be available, depending on the model definition.
+  * For **Fragment Reference** fields, the [Edit Content Fragment](#fragment-references-edit-content-fragment) option can be available, depending on the model definition.
 
-* Assign **Tags** to the current variation; the tags can be added, updated and removed
+* Assign **Tags** to the current variation; the tags can be added, updated, and removed
 
-  * [Tags](/help/sites-authoring/tags.md) are particularly powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for the purpose of finding content (by tags) and applying bulk operations. 
+  * [Tags](/help/sites-authoring/tags.md) are powerful when organizing your fragments as they can be used for content classification and taxonomy. Tags can be used for finding content (by tags) and applying bulk operations. 
 
-    * Searches for a tag will return the fragment, with the tagged variation highlighted. 
+    * Searches for a tag return the fragment, with the tag variation highlighted. 
     * Variation tags can also be used to group variations for a specific Content Delivery Network (CDN) profile (for CDN caching), instead of using the variation name. 
   
     For example, you can tag relevant fragments as "Christmas launch" to allow browsing only these as a subset, or to copy them for use with another future launch in a new folder.
@@ -73,18 +73,18 @@ When editing a multi-line text field you can open the full screen editor; tap or
 
 ![full screen editor icon](assets/cfm-variations-03.png)
 
-This will open the full screen text editor:
+This opens the full-screen text editor:
 
 ![full screen editor](assets/cfm-variations-fullscreentexteditor.png)
 
-The full screen text editor provides:
+The full-screen text editor provides:
 
 * Access to various [actions](#actions)
 * Depending on the [format](#formats), additional formatting options ([Rich Text](#rich-text))
 
 ### Actions {#actions}
 
-The following actions are also available (for all the [formats](#formats)) when the full-screen editor (i.e. multi-line text) is open:
+The following actions are also available (for all the [formats](#formats)) when the full-screen editor (that is, multi-line text) is open:
 
 * Select the [format](#formats) ([Rich Text](#rich-text), [Plain Text,](#plain-text) [Markdown](#markdown))
 
@@ -137,13 +137,13 @@ Plain Text allows for rapid entry of content without formatting or markdown info
 
 >[!CAUTION]
 >
->If you select **Plain Text** you might lose any formatting, markdown and/or assets that you have inserted in either **Rich Text** or **Markdown**.
+>If you select **Plain Text**, you might lose any formatting, markdown, and/or assets that you have inserted in either **Rich Text** or **Markdown**.
 
 ### Markdown {#markdown}
 
 >[!NOTE]
 >
->For full information see the [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
+>For full information, see the [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) documentation.
 
 This lets you format your text using markdown. You can define:
 
@@ -174,7 +174,7 @@ If the Content Fragment Model contains Fragment References, your fragment author
 
 #### Edit Content Fragment {#fragment-references-edit-content-fragment}
 
-The option **Edit Content Fragment** will open that fragment in a new window tab.
+The option **Edit Content Fragment** opens that fragment in a new window tab.
 
 <!--
 The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
@@ -186,21 +186,21 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### New Content Fragment {#fragment-references-new-content-fragment}
 
-The option **New Content Fragment** will let you create a completely new fragment. To achieve this a variation of the create content fragment wizard will open in the editor. 
+The option **New Content Fragment** lets you create a fragment. To achieve this, a variation of the create content fragment wizard opens in the editor. 
 
-You will then be able to create a new fragment by:
+You can then create a fragment by:
 
 1. Navigating to, and selecting the required folder.
 1. Selecting **Next**.
-1. Specifying properties; for example **Title**.
+1. Specifying properties; for example, **Title**.
 1. Selecting **Create**.
 1. Finally:
-   1. **Done** will return (to the original fragment) and reference the new fragment.
-   1. **Open** will reference the new fragment as well as opening the new fragment, for editing, in a new browser tab.
+   1. **Done** returns (to the original fragment) and references the new fragment.
+   1. **Open** references the new fragment and opens the new fragment for editing in a new browser tab.
 
 ### Viewing Key Statistics {#viewing-key-statistics}
 
-When the full-screen editor is open, the action **Text Statistics** will display a range of information about the text. 
+When the full-screen editor is open, the action **Text Statistics** displays a range of information about the text. 
 
 For example:
 
@@ -208,7 +208,7 @@ For example:
 
 ### Uploading Content {#uploading-content}
 
-To ease the process of authoring content fragments you can upload text, prepared in an external editor, and add it directly to the fragment.
+To ease the process of authoring content fragments, you can upload text, prepared in an external editor, and add it directly to the fragment.
 
 ### Summarizing Text {#summarizing-text}
 
@@ -216,7 +216,7 @@ Summarizing text is designed to help users reduce the length of their text to a 
 
 >[!NOTE]
 >
->On a more technical level the system keeps the sentences which it rates as providing the *best ratio of information density and uniqueness* according to specific algorithms.
+>On a more technical level, the system keeps the sentences which it rates as providing the *best ratio of information density and uniqueness* according to specific algorithms.
 
 >[!CAUTION]
 >
@@ -249,16 +249,16 @@ Summarizing text is designed to help users reduce the length of their text to a 
 1. The original text is displayed side-by-side with the proposed summarization:
 
     * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click on any highlighted sentence to keep it in the summarized content.
-    * Click on any non-highlighted sentence to have it eliminated.
+    * Click any highlighted sentence if you want to keep it in the summarized content.
+    * Click any non-highlighted sentence if you want to eliminate it.
 
 1. Select **Summarize** to confirm the changes.
 
 1. The original text is displayed side-by-side with the proposed summarization:
 
     * Any sentences to be eliminated are highlighted in red, with strike-through.
-    * Click on any highlighted sentence to keep it in the summarized content.
-    * Click on any non-highlighted sentence to have it eliminated.
+    * Click any highlighted sentence if you want to keep it in the summarized content.
+    * Click any non-highlighted sentence if you want to eliminate it.
     * The summarization statistics are shown: **Actual** and **Target**-
     * You can **Preview** the changes.
 
@@ -272,27 +272,27 @@ To annotate a fragment:
 
 1. Open the full-screen editor.
 
-1. The **Annotate** icon is available in the top toolbar. You can select some text if required.
+1. The **Annotate** icon is available in the top toolbar. You can select some text, if necessary.
 
    ![annotate](assets/cfm-variations-07.png)
 
-1. A dialog will open. Here you can enter your annotation.
+1. A dialog box opens. Here you can enter your annotation.
 
    ![annotate](assets/cfm-variations-07a.png)
 
-1. Select **Apply** on the dialog. 
+1. Select **Apply** on the dialog box. 
 
    ![annotate](assets/cfm-variations-annotations-apply-icon.png)
 
-   If the annotation was applied to selected text, then that text will remain highlighted.
+   If the annotation was applied to selected text, then that text remains highlighted.
 
    ![annotate](assets/cfm-variations-07b.png)
 
-1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
+1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog box opens so that you can edit the annotation further.
 
 1. Select **Save**.
 
-1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog will open so that you can edit the annotation further.
+1. Close the full-screen editor, annotations are still highlighted. If selected, a dialog box opens so that you can edit the annotation further.
 
    ![annotate](assets/cfm-variations-07c.png)
 
@@ -300,7 +300,7 @@ To annotate a fragment:
 
 Annotations:
 
-* Are indicated by the highlight on the text, in both full-screen and normal mode of the editor. Full details of an annotation can then be viewed, edited, and/or deleted, by clicking on the highlighted text, which will re-open the dialog.
+* Are indicated by the highlight on the text, in both full-screen and normal mode of the editor. Full details of an annotation can then be viewed, edited, and/or deleted, by clicking the highlighted text, which reopens the dialog box.
 
   >[!NOTE]
   >
@@ -312,13 +312,13 @@ Annotations:
 
   ![annotations](assets/cfm-variations-08.png)
 
-* Can be viewed, and deleted, in [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
+* Can be viewed, and deleted, in the [Timeline](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) for the selected fragment.
 
 ### Inserting Assets into your Fragment {#inserting-assets-into-your-fragment}
 
-To ease the process of authoring content fragments you can add [Assets](/help/assets/manage-assets.md) (images) directly to the fragment.
+To ease the process of authoring content fragments, you can add [Assets](/help/assets/manage-assets.md) (images) directly to the fragment.
 
-They will be added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-authoring/content-fragments.md).
+They are added to the paragraph sequence of the fragment without any formatting; formatting can be done when the [fragment is used/referenced on a page](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -330,31 +330,32 @@ They will be added to the paragraph sequence of the fragment without any formatt
 >
 >There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
-1. Position the cursor at the position you want to add the image.
+1. Position the cursor at the position that you want to add the image.
 1. Use the **Insert Asset** icon to open the search dialog.
 
    ![insert asset icon](assets/cfm-variations-09.png)
 
-1. In the dialog you can either:
+1. In the dialog box, you can either:
 
-   * navigate to the required asset in DAM
-   * search for the asset in DAM
+   * navigate to the required asset in the DAM
+   * search for the asset in the DAM
 
-   Once located, select the required asset by clicking on the thumbnail.
+   Once located, select the required asset by clicking the thumbnail.
 
 1. Use **Select** to add the asset to the paragraph system of your content fragment at the current location.
 
    >[!CAUTION]
    >
-   >If, after adding an asset, you change format to:
-   >* **Plain Text**: the asset will be completely lost from the fragment.
-   >* **Markdown**: the asset will not be visible, but will still be there when you return to **Rich Text**.
+   >If you change the format after adding as asset to:
+   >
+   >* **Plain Text**: the asset is lost from the fragment.
+   >* **Markdown**: the asset is not visible, but is still here when you return to **Rich Text**.
 
 ### Inserting a Content Fragment into your Fragment {#inserting-content-fragment-into-your-fragment}
 
-To ease the process of authoring content fragments you can also add another Content Fragment to your fragment.
+To ease the process of authoring content fragments, you can also add another Content Fragment to your fragment.
 
-They will be added as a reference, in your current location in your fragment.
+They are added as a reference, in your current location in your fragment.
 
 >[!NOTE]
 >
@@ -370,51 +371,52 @@ They will be added as a reference, in your current location in your fragment.
 >
 >There are various methods of adding [images](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) to the fragment and/or page.
 
-1. Position the cursor at the position you want to add the fragment.
+1. Position the cursor at the position that you want to add the fragment.
 1. Use the **Insert Content Fragment** icon to open the search dialog.
 
    ![insert Content Fragment icon](assets/cfm-variations-13.png)
 
-1. In the dialog you can either:
+1. In the dialog, you can either:
 
     * navigate to the required fragment in the Assets folder
     * search for the fragment
 
-   Once located, select the required fragment by clicking on the thumbnail.
+   Once located, select the required fragment by clicking the thumbnail.
 
 1. Use **Select** to add a reference to the selected Content Fragment to your current content fragment (at the current location).
 
    >[!CAUTION]
    >
-   >If, after adding a reference to another fragment, you change format to:
-   >* **Plain Text**: the reference will be completely lost from the fragment.
-   >* **Markdown**: the reference will remain.
+   >If you change the format, after adding a reference to another fragment, to:
+   >
+   >* **Plain Text**: the reference is lost from the fragment.
+   >* **Markdown**: the reference remains.
 
 ## Managing Variations {#managing-variations}
 
 ### Creating a Variation {#creating-a-variation}
 
-Variations let you take the **Master** content and vary it according to purpose (if required).
+Variations let you take the **Master** content and vary it according to purpose (if necessary).
 
-To create a new variation:
+To create a variation:
 
 1. Open your fragment and ensure that the side panel is visible.
 1. Select **Variations** from the icon bar in the side panel.
 1. Select **Create Variation**.
-1. A dialog will open, specify the **Title** and **Description** for the new variation.
-1. Select **Add**; the fragment **Master** will be copied to the new variation, which is now open for [editing](#editing-a-variation).
+1. A dialog box opens, specify the **Title** and **Description** for the new variation.
+1. Select **Add**; the fragment **Master** is copied to the new variation, which is now open for [editing](#editing-a-variation).
 
    >[!NOTE]
    >
-   >When creating a new variation it is always **Master** that is copied, not the variation that is currently open.
+   >When creating a variation, it is always the **Master** that is copied, not the variation that is open.
 
    >[!NOTE]
    >
-   >When you create a new variation, all **Tags** currently assigned to the **Master** variation are copied to your new variation. 
+   >When you create a variation, all **Tags** currently assigned to the **Master** variation are copied to your new variation. 
 
 ### Editing a Variation {#editing-a-variation}
 
-You can make changes to the variation content after either:
+Change the variation content after either:
 
 * [Creating your variation](#creating-a-variation).
 * Opening an existing fragment, then selecting the required variation from the side panel.
@@ -453,15 +455,15 @@ To delete an existing variation:
 
 ### Synchronizing with Master {#synchronizing-with-master}
 
-**Master** is an integral part of a content fragment and by definition it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When Master is updated it is possible that these changes are also relevant to the variations and, therefore, need to be propagated to them..
+**Master** is a part of a content fragment and, by definition, it holds the master copy of the content, whereas the variations hold the individual updated and tailored versions of that content. When the Master is updated, it is possible that these changes are also relevant to the variations and, therefore, must be propagated to them.
 
-When editing a variation you have access to the action for synchronizing the current element of the variation with Master. This lets you automatically copy changes made to Master to the required variation.
+When editing a variation, you have access to the action for synchronizing the current element of the variation with Master. This lets you automatically copy changes made to Master to the required variation.
 
 >[!CAUTION]
 >
 >Synchronization is only available to copy changes *from **Master** to the variation*.
 >
->Only the current element of the variation will be synchronized.
+>Only the current element of the variation is synchronized.
 >
 >Synchronization only works on the **Multi line text** data type.
 >
@@ -481,12 +483,12 @@ When editing a variation you have access to the action for synchronizing the cur
 
       ![synchronizing with master](assets/cfm-variations-11b.png)
 
-1. Master and the variation will be shown side-by-side:
+1. Master and the variation are shown side-by-side:
 
-   * green indicates content added (to the variation)
+   * green indicates that content added (to the variation)
    * red indicates content removed (from the variation)
    * blue indicates replaced text
 
    ![synchronizing with master](assets/cfm-variations-11c.png)
 
-1. Select **Synchronize**, the variation will be updated and shown.
+1. Select **Synchronize**, the variation is updated and shown.

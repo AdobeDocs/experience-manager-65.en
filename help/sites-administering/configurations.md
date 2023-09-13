@@ -23,7 +23,7 @@ Regardless from your perspective, configurations serve two main purposes in AEM:
 
 ## Configurations as an Administrator {#configurations-administrator}
 
-The AEM administrator as well as authors can consider configurations as workspaces. These workspaces can be used to gather groups of settings together as well as their associated content for organizational purposes by implementing access rights for those features.
+The AEM administrator and authors can consider configurations as workspaces. These workspaces can be used to gather groups of settings  and their associated content for organizational purposes by implementing access rights for those features.
 
 Configurations can be created for many different features within AEM.
 
@@ -34,7 +34,7 @@ Configurations can be created for many different features within AEM.
 
 ### Example {#administrator-example}
 
-For example an administrator may create two configurations for Editable Templates.
+For example, an administrator may create two configurations for Editable Templates.
 
 * WKND-General
 * WKND-Magazine
@@ -45,8 +45,8 @@ The admin can then associate the WKND-General with all content of the WKND site.
 
 By doing this:
 
-* When a content author creates a new page for the magazine, the author can choose from general templates (WKND-General) or magazine templates (WKND-Magazine).
-* When a content author creates a new page for another part of the site that is not the magazine, the author can only choose from the general templates (WKND-General).
+* When a content author creates a page for the magazine, the author can choose from general templates (WKND-General) or magazine templates (WKND-Magazine).
+* When a content author creates a page for another part of the site that is not the magazine, the author can only choose from the general templates (WKND-General).
 
 Similar setups are possible not only for Editable Templates but also for Cloud Configurations, ContextHub Segments, and Content Fragment Models.
 
@@ -56,11 +56,11 @@ The Configuration Browser allows an administrator to easily create, manage, and 
 
 >[!NOTE]
 >
->It is only possible to create configurations using the Configuration Browser if your user has `admin` rights. `admin` rights are also required in order to assign access rights to the configuration or otherwise modify a configuration.
+>It is only possible to create configurations using the Configuration Browser if your user has `admin` rights. Administrator rights are also required to assign access rights to the configuration or otherwise modify a configuration.
 
 #### Creating a Configuration {#creating-a-configuration}
 
-It is very simple to create a new configuration in AEM by using the Configuration Browser.
+It is simple to create a configuration in AEM by using the Configuration Browser.
 
 1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
 1. Tap or click **Create**.
@@ -69,10 +69,10 @@ It is very simple to create a new configuration in AEM by using the Configuratio
    ![Create configuration](assets/configuration-create.png)
 
    * The **Title** should be descriptive.
-   * The **Name** will become the node name in the repository.
-     * It will be automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md)
+   * The **Name** becomes the node name in the repository.
+     * It is automatically generated based on the title and adjusted according to [AEM naming conventions.](/help/sites-developing/naming-conventions.md)
      * It can be adjusted if necessary.
-1. Check the type of configurations you wish to allow.
+1. Check the type of configurations that you want to allow.
    * [Cloud Configurations](/help/sites-administering/configurations.md)
    * [Context Hub Segments](/help/sites-administering/segmentation.md)
    * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
@@ -85,24 +85,26 @@ It is very simple to create a new configuration in AEM by using the Configuratio
 
 #### Editing Configurations and Their Access Rights {#access-rights}
 
-If you think of configurations as workspaces, access rights can be set on those configurations in order to enforce who may and may not access those workspaces.
+If you think of configurations as workspaces, access rights can be set on those configurations to enforce who may and may not access those workspaces.
 
 1. Log into AEM as a Cloud Service and from the main menu select **Tools** -&gt; **General** -&gt; **Configuration Browser**.
-1. Select the configuration you wish to modify and then tap or click **Properties** in the tool bar.
-1. Select any additional features you wish to add to the configuration
+1. Select the configuration that you want to modify and then tap or click **Properties** in the tool bar.
+1. Select any additional features that you want to add to the configuration.
+
    >[!NOTE]
    >
    >It is not possible to unselect a feature once the configuration has been created.
+
 1. Use the **Effective Permissions** button to view a matrix of roles and what permissions they are currently granted to configurations.
    ![Effective permissions window](assets/configuration-effective-permissions.png)
 1. To assign new permissions, enter the user or group name in the **Select user or group** field in the **Add New Permissions** section.
    * The  **Select user or group** field offers auto-completion based on existing users and roles.
 1. Select the appropriate user or role from the auto-complete results.
    * You can select more than one user or role.
-1. Check the access options that the selected user(s) or role(s) should have and click **Add**.
+1. Check the access options that the selected users or roles should have and click **Add**.
    ![Add access rights to a configuration](assets/configuration-edit.png)
-1. Repeat the steps to select users or roles and assign additional access rights as necessary.
-1. Tap or click **Save &amp; Close** when finished.
+1. Repeat the steps so you can select users or roles and assign additional access rights as necessary.
+1. Select **Save &amp; Close** when you are finished.
 
 ## Configurations as a Developer {#configurations-developer}
 
@@ -115,7 +117,7 @@ Although the [administrator and users may think of configurations as workplaces]
 * `/content` is home to all content.
 * `/conf` is home to all configuration.
 
-Content references its associated configuration via a `cq:conf` property. AEM performs a lookup based on the content and it's contextual `cq:conf` property to find the appropriate configuration.
+Content references its associated configuration via a `cq:conf` property. AEM performs a lookup based on the content and its contextual `cq:conf` property to find the appropriate configuration.
 
 ### Example {#developer-example}
 
@@ -127,9 +129,9 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-The starting point of all configuration lookup is a content resource, usually somewhere under `/content`. This could be a page, a component inside a page, an asset, or DAM folder. This is the actual content for which we are looking for the right configuration that applies in this context.
+The starting point of all configuration lookup is a content resource, somewhere under `/content`. This could be a page, a component inside a page, an asset, or a DAM folder. This is the actual content for which you are looking for the right configuration that applies in this context.
 
-Now with the `Conf` object in hand, we can retrieve the specific configuration item we are interested in. In this case it is `dam/imageserver`, which is a collection of settings related to the `imageserver`. The `getItem` call returns a `ValueMap`. We then read a `bgkcolor` string property and provide a default value of "FFFFFF" in case the property (or entire config item) is not present.
+Now with the `Conf` object in hand, you can retrieve the specific configuration item that you are interested in. In this case, it is `dam/imageserver`, which is a collection of settings related to the `imageserver`. The `getItem` call returns a `ValueMap`. You then read a `bgkcolor` string property and provide a default value of "FFFFFF" in case the property (or entire config item) is not present.
 
 Now let's have a look at the corresponding JCR content:
 
@@ -147,19 +149,19 @@ Now let's have a look at the corresponding JCR content:
             - bgkcolor = "FF0000"
 ```
 
-In this example, we assume a WKND specific DAM folder here and a corresponding configuration. Starting at that folder `/content/dam/wknd`, we'll see that there is a string property named `cq:conf` that references the configuration that should apply for the subtree. The property will usually be set on the `jcr:content` of an asset folder or page. These `conf` links are explicit, so it is easy to follow them by just looking at the content in CRXDE.
+In this example, you can assume a WKND-specific DAM folder here and a corresponding configuration. Starting at that folder `/content/dam/wknd`, you can see that there is a string-property named `cq:conf` that references the configuration that should apply for the subtree. The property is set on the `jcr:content` of an asset folder or page. These `conf` links are explicit, so it is easy to follow them by just looking at the content in CRXDE.
 
-Jumping inside `/conf`, we follow the reference and see there is a `/conf/wknd` node. This is a configuration. Please note that its lookup is completely transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is completely controlled through the JCR content.
+Jumping inside `/conf`, you can follow the reference and see that there is a `/conf/wknd` node. This is a configuration. Its lookup is transparent to the application code. The example code never has a dedicated reference to it, it's hidden behind the `Conf` object. Which configuration applies is controlled through the JCR content.
 
-We see the configuration contains a fixed-named `settings` node that contains the actual items, including the `dam/imageserver` we need in our case. Such an item can be thought of as a "settings document" and is usually represented by a `cq:Page` including a `jcr:content` holding the actual content.
+You can see that the configuration contains a fixed-named `settings` node that contains the actual items, including the `dam/imageserver` that you need in this case. Such an item can be thought of as a "settings document" and is represented by a `cq:Page` including a `jcr:content` holding the actual content.
 
-Finally, we see the property `bgkcolor` that our sample code needs. The `ValueMap` we get back from `getItem` is based on the page's `jcr:content` node.
+Finally, you can see the property `bgkcolor` that sample code needs. The `ValueMap` you get back from `getItem` is based on the page's `jcr:content` node.
 
 ### Configuration Resolution {#configuration-resolution}
 
-The basic example above showed a single configuration. But there are many cases where you want to have different configurations such as a default global configuration, a different one for each brand and maybe a specific one for your sub projects.
+The basic example above showed a single configuration. But there are many cases where you want to have different configurations such as a default global configuration, a different one for each brand and maybe a specific one for your subprojects.
 
-To support this the configuration lookup in AEM has inheritance and fallback mechanism in the following order of preference:
+To support this, the configuration lookup in AEM has an inheritance and fallback mechanism in the following order of preference:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Specific config referenced from `cq:conf` somewhere in `/content`
@@ -173,7 +175,7 @@ To support this the configuration lookup in AEM has inheritance and fallback mec
    * Changeable at runtime by users with configuration privileges
 1. `/conf/global`
    * System global settings
-   * Usually global defaults for your installation
+   * Global defaults for your installation
    * Set by an `admin` role
    * Changeable at runtime by users with configuration privileges
 1. `/apps`
@@ -204,7 +206,7 @@ Simply provide:
 * **Item**
 * **User**
 
-Click **Resolve** to see which configurations are resolved and receive sample code which will resolve those configurations.
+To see which configurations are resolved and receive a sample code that resolves those configurations, select **Resolve**.
 
 ### Context-Aware Configuration Web Console {#context-aware-web-console}
 
@@ -217,4 +219,4 @@ Simply provide:
 * **Content Path**
 * **Config Name**
 
-Click **Resolve** to retrieve the associated context paths and properties for the selected configuration.
+To retrieve the associated context paths and properties for the selected configuration, select **Resolve**.

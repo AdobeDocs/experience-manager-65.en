@@ -1,28 +1,23 @@
 ---
 title: Configuring AEM DS settings
-seo-title: Configuring AEM DS settings
-description: You need to specify the processing server URL before you submit a form.
-seo-description: You need to specify the processing server URL before you submit a form.
-uuid: 55a6d434-7352-48a8-8387-8a5c1a48fafc
+description: Learn how to specify the processing server URL before you submit a form.
 contentOwner: amgoyal
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: a7387bd3-8b31-4bd0-a861-daa8f7cb2d05
 docset: aem65
-
 role: Admin
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
 ---
 # Configuring AEM DS settings{#configuring-aem-ds-settings}
 
-This article describes how to configure **AEM DS Settings Service**. This setting can be used in multiple scenarios, for example:
+This article describes how to configure the **AEM DS Settings Service**. This setting can be used in multiple scenarios, for example:
 
 * In Correspondence Management
 
     * For configuring AEM Forms Workflow
-    * While using forms portal for remote save of draft/submission
+    * While using the Forms Portal for remote save of draft/submission
 
-* In Adaptive forms for cases when Adaptive form is submitted from publish instance
+* In Adaptive forms, for cases when an Adaptive form is submitted from publish instance
 
 Following are the steps to configure the **[!UICONTROL AEM DS Settings]**:
 
@@ -41,7 +36,7 @@ Following are the steps to configure the **[!UICONTROL AEM DS Settings]**:
 
 1. Add the following information in the respective fields:
 
-   **[!UICONTROL Processing Server URL]**: The Processing Server is the server where the Forms or AEM workflow needs to be triggered. This can be same as the URL of the AEM author instance or the other Server URL (that is, https://localhost:port/).
+   **[!UICONTROL Processing Server URL]**: The Processing Server is the server where the Forms or AEM workflow must be triggered. This can be the same as the URL of the AEM author instance or the other Server URL (that is, https://localhost:port/).
 
    **[!UICONTROL Processing Server User Name]**: Workflow user's User Name [based on the server URL being used]
 

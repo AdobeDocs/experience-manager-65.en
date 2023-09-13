@@ -1,14 +1,10 @@
 ---
 title: Configuring Your Account Environment
-seo-title: Configuring Your Account Environment
 description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 ---
@@ -18,7 +14,7 @@ AEM provides you with the capability to configure your account and certain aspec
 
 Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#userpreferences) dialog, you can modify your user options such as.
 
-Begin by acessing the [User](/help/sites-authoring/user-properties.md#user-settings) option in the header.
+Begin by accessing the [User](/help/sites-authoring/user-properties.md#user-settings) option in the header.
 
 ## User Settings {#user-settings}
 
@@ -42,7 +38,7 @@ The **User** settings dialog gives you access to:
 
 The **My Preferences** dialog is access via the [User](/help/sites-authoring/user-properties.md#user-settings) option in the header.
 
-Each user can set certain properties for himself or herself.
+Each user can set certain properties for themselves.
 
 ![screen-shot_2019-03-05at100322](assets/screen-shot_2019-03-05at100322.png)
 
@@ -58,26 +54,26 @@ Each user can set certain properties for himself or herself.
 
     * **Multiple Windows** (Default)
 
-        * Pages will be opened in a new window.
+        * Pages are opened in a new window.
 
     * **Single Window**
 
-        * Pages will be opened in the current window.
+        * Pages are opened in the current window.
 
 * **Show desktop actions for Assets**
 
-  This option requires AEM desktop app to use.
+  This option requires an AEM desktop app to use.
 
 * **Annotation Color**
 
   This defines the default color used when making annotations.
 
-    * Click the color block to open the swatch selector to select a color.
+    * Click the color block so you can open the swatch selector and select a color.
     * Alternatively, enter the hex code for the desire color in the field.
 
 * **Relative Date Presentation**
 
-  To improve readability, AEM will render dates within the last seven days as relative dates (for example, Three days ago) and older dates as exact dates (for example, 20 March 2017).
+  To improve readability, AEM renders dates within the last seven days as relative dates (for example, Three days ago) and older dates as exact dates (for example, 20 March 2017).
 
   This option defines how dates in the system are displayed. The following options are available:
 
@@ -94,12 +90,12 @@ Each user can set certain properties for himself or herself.
 
 * **Enable Shortcuts**
 
-  AEM supports a number of keyboard shortcuts that make authoring more efficient.
+  AEM supports several keyboard shortcuts that make authoring more efficient.
 
     * [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
     * [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
-  This option enables keyboard shortcuts. By default they are enabled, but can be disabled for example if a user has certain accessibility requirements.
+  This option enables keyboard shortcuts. By default they are enabled, but can be disabled, for example,  if a user has certain accessibility requirements.
 
 * **Use Classic Authoring Experience**
 
@@ -107,8 +103,8 @@ Each user can set certain properties for himself or herself.
 
 * **Enable Assets Home Page**
 
-  This option will only be available if your system administrator has enabled Assets Home Page experience for the entire organization.
+  This option is only available if your system administrator has enabled the Assets Home Page experience for the entire organization.
 
 * **Stock Configuration**
 
-  This option allows to specify the preferred Adobe Stock configuration and is only be available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).
+  This option lets you specify the preferred Adobe Stock configuration and is only available if your system administrator has enabled [Adobe Stock integration](/help/assets/aem-assets-adobe-stock.md).
