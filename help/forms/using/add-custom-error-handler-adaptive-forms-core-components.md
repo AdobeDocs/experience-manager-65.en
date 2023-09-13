@@ -11,6 +11,11 @@ feature: Adaptive Forms
 
 # Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |   [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-custom-error-handler-adaptive-forms-core-components.html)                |
+| AEM 6.5     | This article         |
+
 AEM Forms provides out-of-the-box success and error handlers for form submissions. It also provides feature to customize error handler functions. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down. Handlers are client-side functions that execute based on the server response. When an external service is invoked using APIs, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function. An error handler helps to manage and display errors or validation issues encountered. 
 
 ![error handler workflow to understand how to add custom error handler in forms](/help/forms/using/assets/error-handler-workflow.png)
@@ -304,3 +309,9 @@ As a result of this rule, the values you enter for **Pet ID** checks validation 
 Open the browser console and check the response and header, received from the REST service endpoint, for the validation error message. 
 
 The custom error handler function is responsible for executing additional actions such as displaying a modal dialog or sending an analytics event, based on the error response. A custom error handler function provides the flexibility to tailor error handling to the specific user requirements. 
+
+## See Also {#see-also}
+
+* [Create a standalone Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Create style or themes for your forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+* [Create or add an Adaptive Form to AEM Sites page](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
