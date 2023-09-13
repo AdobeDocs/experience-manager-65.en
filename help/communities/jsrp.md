@@ -1,14 +1,10 @@
 ---
 title: JSRP - JCR Storage Resource Provider
-seo-title: JSRP - JCR Storage Resource Provider
-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
-seo-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
-uuid: 358a43c1-4137-4300-8443-c0d7166968ad
+description: JSRP is best suited for demonstration or development environments of one Publish instance and one Author instance
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
 ---
@@ -16,9 +12,9 @@ exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
 
 ## About JSRP {#about-jsrp}
 
-When AEM Communities uses JSRP as its storage option (the default), community content is stored in JCR and user generated content (UGC) is accessible only from the author or publish instance to which it was posted.
+When AEM Communities uses JSRP as its storage option (the default), community content is stored in the JCR, and user-generated content (UGC) is accessible only from the author or publish instance to which it was posted.
 
-Because of the simplicity of deployment, JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance.
+Because of the simplicity of deployment, JSRP is best suited for demonstration or development environments of one Publish instance and one Author instance.
 
 See also [Characteristics of SRP Options](working-with-srp.md#characteristics-of-srp-options) and [Recommended Topologies](topologies.md).
 
@@ -62,23 +58,23 @@ For information regarding *users*, *user profiles* and *user groups*, often ente
 
 ### UGC Not Visible in JCR {#ugc-not-visible-in-jcr}
 
-Make sure JSRP has been configured to be the default provider by checking the configuration of the storage option. By default, the storage resource provider is JSRP.
+Make sure that JSRP has been configured to be the default provider by checking the configuration of the storage option. By default, the storage resource provider is JSRP.
 
-On all author and publish AEM instances, revisit the Storage Configuration console or check the AEM repository:
+On all Author and Publish AEM instances, revisit the Storage Configuration console, or check the AEM repository:
 
 * In JCR, if [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-  * Does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) node, it means the storage provider is JSRP.
+  * It does not contain an [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) node, it means that the storage provider is JSRP.
   * If the srpc node exists and contains node [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), the defaultconfiguration's properties should define JSRP to be the default provider.
 
 ### UGC Not Visible on Author Instance {#ugc-not-visible-on-author-instance}
 
-This is not a bug. A characteristic of JSRP is that community content entered in the publish environment will only be visible in the publish environment.
+This is not a bug. A characteristic of JSRP is that community content entered in the publish environment is only visible in the Publish environment.
 
 ### UGC Not Visible on Publish Instance {#ugc-not-visible-on-publish-instance}
 
-If a single publish instance or if a publish cluster is deployed, then follow instructions for [UGC Not Visible in JCR](#ugc-not-visible-in-jcr).
+If a single Publish instance or if a publish cluster is deployed, then follow the instructions for [UGC Not Visible in JCR](#ugc-not-visible-in-jcr).
 
-If a publish farm is deployed, a characteristic of JSRP is that community content will only be visible on the publish instance to which it was posted.
+If a publish farm is deployed, a characteristic of JSRP is that community content is only visible on the Publish instance to which it was posted.
 
-For UGC to be visible from any publish instance, a publish cluster is required.
+For UGC to be visible from any Publish instance, a publish cluster is required.

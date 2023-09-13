@@ -1,27 +1,22 @@
 ---
 title: Configure adaptive forms cache
-seo-title: Configure adaptive forms cache
 description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client. 
-seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client. 
-uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
-
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 ---
 # Configure adaptive forms cache {#configure-adaptive-forms-cache}
 
-A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form on the client. It is designed specifically for adaptive forms. 
+A cache is a mechanism to shorten data access times, reduce latency, and improve input/output (I/O) speeds. Adaptive forms cache stores only the HTML content and JSON structure of an adaptive form without saving any pre-filled data. It helps in reducing the time required to render an adaptive form on the client. It is designed specifically for adaptive forms. 
 
 ## Configure adaptive forms cache at author and publish instances {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
 1. Go to AEM web console configuration manager at `https://[server]:[port]/system/console/configMgr`.
 1. Click **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** to edit its configuration values.
-1. In the [!UICONTROL edit configuration values] dialog, specify the maximum number of forms or documents an instance of the AEM [!DNL Forms] server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. The default value is 100.
+1. In the [!UICONTROL edit configuration values] dialog, specify the maximum number of forms, or documents, an instance of the AEM [!DNL Forms] server can cache in the **[!UICONTROL Number of Adaptive Forms]** field. The default value is 100.
 
    >[!NOTE]
    >
@@ -34,30 +29,30 @@ A cache is a mechanism to shorten data access times, reduce latency, and improve
 Your environment is configured to use cache adaptive forms and related assets.
 
 
-## (Optional) Configure adaptive form cache at dispatcher {#configure-the-cache}
+## (Optional) Configure adaptive form cache at Dispatcher {#configure-the-cache}
 
-You can also configure adaptive form caching at dispatcher for additional performance boost.
+You can also configure adaptive form caching at Dispatcher for an additional performance boost.
 
 ### Pre-requisites {#pre-requisites}
 
-* Enable the [merging or prefilling data at client](prepopulate-adaptive-form-fields.md#prefill-at-client) option. It helps merge unique data for each instance of a pre-filled form.
+* Enable the [merging or prefilling data at the client](prepopulate-adaptive-form-fields.md#prefill-at-client) option. It helps merge unique data for each instance of a pre-filled form.
 
-### Considerations for caching adaptive forms on a dispatcher {#considerations}
+### Considerations for caching adaptive forms on a Dispatcher {#considerations}
 
 * When using the adaptive forms cache, use the AEM [!DNL Dispatcher] to cache client libraries (CSS and JavaScript) of an adaptive form.
 * While developing custom components, on the server used for development, keep the adaptive forms cache disabled.
-* URLs without extension are not cached. For example, URL with pattern  pattern`/content/forms/[folder-structure]/[form-name].html` are cached and caching ignores URLs with pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. So, use URLs with extensions to take benefits of caching.
+* URLs without extension are not cached. For example, URL with pattern `/content/forms/[folder-structure]/[form-name].html` are cached and caching ignores URLs with pattern `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. So, use URLs with extensions to take the benefits of caching.
 * Considerations for localized adaptive forms:
   * Use URL format `http://host:port/content/forms/af/<afName>.<locale>.html` to request a localized version of an adaptive form instead of `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
   * [Disable using browser locale](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) for URLs with format `http://host:port/content/forms/af/<adaptivefName>.html`.
-  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The non-localized language is the language used while developing the adaptive form. The locale configured for your browser (browser locale) is not taken into consideration and a non-localized version of the adaptive form is served.
-  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale). It can lead to [caching only first instance of an adaptive form]. To prevent the issue from happening on your instance, see [troubleshooting](#only-first-insatnce-of-adptive-forms-is-cached).  
+  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is disabled, the non-localized version of the adaptive form is served. The non-localized language is the language used while developing the adaptive form. The locale configured for your browser (browser locale) is not considered and a non-localized version of the adaptive form is served.
+  * When you use URL Format `http://host:port/content/forms/af/<adaptivefName>.html`, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served, if available. The language of the localized adaptive form is based on the locale configured for your browser (browser locale). It can lead to [caching only the first instance of an adaptive form]. To prevent the issue from happening on your instance, see [troubleshooting](#only-first-insatnce-of-adptive-forms-is-cached).  
 
-### Enable the caching at dispatcher
+### Enable the caching at Dispatcher
 
-Perform the below listed steps to enable and configure caching  adaptive forms on dispatcher:
+To enable and configure caching adaptive forms on Dispatcher, perform the following steps:
 
-1. Open the following URL for every publish instance of you environment and [enable flush agent for publish instances of your environment](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Open the following URL for every publish instance of your environment and [enable flush agent for publish instances of your environment](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
 1. [Add the following to your dispatcher.any file](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
@@ -87,9 +82,9 @@ Perform the below listed steps to enable and configure caching  adaptive forms o
 
    When you add the above:
 
-   * An adaptive form remains in cache until an updated version of the form is not published.
+   * An adaptive form remains in the cache until an updated version of the form is not published.
 
-   * When a newer version of resource referenced in an adaptive form is published, the impacted adaptive forms is automatically invalidated. There are some exceptions to automatic invalidation of referenced resources. For workaround to exceptions, see [troubleshooting](#troubleshooting) section.
+   * When a newer version of a resource referenced in an adaptive form is published, the impacted adaptive forms is automatically invalidated. There are some exceptions to automatic invalidation of referenced resources. For workaround to exceptions, see the [troubleshooting](#troubleshooting) section.
 1. [Add the below rules dispatcher.any or custom rules file](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). It excludes the URLs that do not support caching. For example, Interactive Communication.
 
    ``` JSON
@@ -127,29 +122,29 @@ Perform the below listed steps to enable and configure caching  adaptive forms o
       }
    ```
 
-Your AEM environment is configured to cache adaptive forms. It caches all types of adaptive forms. If you have a requirement to check user access permissions for a page before delivering the cached page, see [caching secured content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+Your AEM environment is configured to cache adaptive forms. It caches all types of adaptive forms. If you require a check of user access permissions for a page before delivering the cached page, see [caching secured content](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Troubleshooting {#troubleshooting}
 
-### Some adaptive forms containing images or videos are not automatically invalidated from dispatcher cache {#videos-or-images-not-auto-invalidated}
+### Some adaptive forms containing images or videos are not automatically invalidated from Dispatcher cache {#videos-or-images-not-auto-invalidated}
 
 #### Issue {#issue1}
 
-When you select and add images or videos via asset browser to an adaptive form and these images and videos are edited in Assets editor, adaptive forms containing such images are not invalidated from dispatcher cache automatically.
+When you select and add images or videos by way of asset browser to an adaptive form and these images and videos are edited in Assets editor, adaptive forms containing such images are not invalidated from Dispatcher cache automatically.
 
 #### Solution {#Solution1}
 
 After publishing the images and video, explicitly unpublish and publish the adaptive forms that reference these assets. 
 
-### Only first instance of an adaptive form is cached {#only-first-instance-of-adaptive-forms-is-cached}
+### Only the first instance of an adaptive form is cached {#only-first-instance-of-adaptive-forms-is-cached}
 
 #### Issue {#issue3}
 
-When the adaptive form URL does not have any localization information, and **[!UICONTROL Use Browser Locale]** in configuration manager is enabled, a localized version of the adaptive form is served and only the first instance of the adaptive form is cached and delivered to every subsequent user.
+When the adaptive form URL does not have any localization information, and **[!UICONTROL Use Browser Locale]** in the configuration manager is enabled, a localized version of the adaptive form is served. Only the first instance of the adaptive form is cached and delivered to every subsequent user.
 
 #### Solution {#Solution3}
 
- Perform the following steps to resolve the issue:
+Resolve the issue by performing the following steps:
  
  1. Open the conf.d/httpd-dispatcher.conf or any other configuration file configured to load at runtime.
  
