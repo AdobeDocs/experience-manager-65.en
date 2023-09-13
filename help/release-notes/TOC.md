@@ -2,19 +2,18 @@
 cloud: Experience Cloud
 product: experience manager
 audience: end-user
-user-guide-title: Adobe Experience Manager 6.5 Release Notes
-breadcrumb-title: Release Notes
+user-guide-title: Adobe Experience Manager 6.5 release notes
+breadcrumb-title: Release notes
 user-guide-description: Learn about the latest new features in AEM 6.5 in the release notes.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 ---
 
-# Adobe Experience Manager 6.5 Release Notes {#release-notes}
+# Adobe Experience Manager 6.5 release notes {#release-notes}
 
-+ [AEM 6.5 Release Notes](home.md)
-+ [Current Release Notes](release-notes.md)
-+ [AEM Forms Service Pack installation instructions](aem-forms-current-service-pack-installation-instructions.md)
-+ [Previous Release Notes]{#service-pack}
++ [AEM 6.5 release notes](home.md)
++ [Current release notes](release-notes.md)
++ [Previous release notes]{#service-pack}
   + [6.5.17](previous/6.5.17.md)
   + [6.5.16](previous/6.5.16.md)
   + [6.5.15](previous/6.5.15.md)
@@ -33,6 +32,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
   + [6.5.2](previous/6.5.2.md)
   + [6.5.1](previous/6.5.1.md)
   + [6.5.0](previous/ga.md)
-+ [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
-+ [Deprecated and Removed Features](deprecated-removed-features.md)
-+ [Touch UI Feature Status](touch-ui-features-status.md)
++ [AEM Forms service pack installation instructions](aem-forms-current-service-pack-installation-instructions.md)
++ [AEM Forms JEE patch installer](jee-patch-installer-65.md)
++ [Deprecated and removed features](deprecated-removed-features.md)
++ [Touch UI feature status](touch-ui-features-status.md)

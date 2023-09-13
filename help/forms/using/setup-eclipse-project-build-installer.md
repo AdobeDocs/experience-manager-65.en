@@ -8,17 +8,17 @@ exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 ---
 # Build the AEM Forms Android app {#build-the-aem-forms-android-app}
 
-Perform the following steps in the recommended sequence to build the Android app for AEM Forms.
+To build the Android app for AEM Forms, perform the following steps in the recommended sequence.
 
 1. [Download the AEM Forms App Source Code Package](#download-android-zip)
 1. [Set the environment variables](#set-environment-variable-android)
-1. [Build standard AEM Forms app](#set-up-the-xcode-project)
+1. [Build a standard AEM Forms app](#set-up-the-xcode-project)
 
 ## Download the AEM Forms App Source Code Package {#download-android-zip}
 
 AEM Forms App Source Code Package refers to the `adobe-lc-mobileworkspace-src-<version>.zip` archive. This archive includes the source code required to build a custom AEM Forms app. The archive is included in the `adobe-aemfd-forms-app-src-pkg-<version>.zip`package available on the Software Distribution.
 
-Perform the following steps to download the `adobe-aemfd-forms-app-src-pkg-<version>.zip` file:
+To download the `adobe-aemfd-forms-app-src-pkg-<version>.zip` file, perform the following steps:
 
 1. Open [Software Distribution](https://experience.adobe.com/downloads). You require an Adobe ID to log in to the Software Distribution.
 1. Tap **[!UICONTROL Adobe Experience Manager]** available in the header menu.
@@ -43,16 +43,16 @@ Set the following environment variables before starting the build process for th
 * Set the `ANDROID_SDK_ROOT` system environment variable to the SDK location for Android. For example, C:\Users\&lt;username&gt;\AppData\Local\Android\Sdk
 * Set the `Path` system environment variable to include the platform-tools and tools folder locations for Android. For example, C:\Users\&lt;username&gt;\AppData\Local\Android\Sdk\platform-tools and C:\Users\&lt;username&gt;\AppData\Local\Android\Sdk\tools.
 
-## Build standard AEM Forms app {#set-up-the-xcode-project}
+## Build a standard AEM Forms app {#set-up-the-xcode-project}
 
-Once you have saved the adobe-lc-mobileworkspace-src-&lt;version&gt;.zip file on the local file system and set the environment variables, build standard AEM Forms Android app using any of the following options:
+After you have saved the adobe-lc-mobileworkspace-src-&lt;version&gt;.zip file on the local file system and set the environment variables, build a standard AEM Forms Android app using any of the following options:
 
 * [Build AEM Forms app using Android Studio](#using-android-studio)
 * [Generate .apk file using Android Studio](#generate-apk-android-studio)
 
 ### Build AEM Forms app using Android Studio {#using-android-studio}
 
-Perform the following steps to build AEM Forms app using Android Studio:
+To build an AEM Forms app using Android Studio, perform the following steps:
 
 1. Launch the Android Studio application on your machine.
 1. Click **Open an existing Android Studio project**. If the dialog box to open an existing project does not appear automatically, select **File** &gt; **Open**.
@@ -75,7 +75,7 @@ Perform the following steps to build AEM Forms app using Android Studio:
 
 ### Generate .apk file using Android Studio {#generate-apk-android-studio}
 
-Execute the following steps to generate the .apk file using Android Studio:
+To generate the .apk file using Android Studio, do the following:
 
 1. Launch the Android Studio application on your machine.
 1. Select **Open an existing Android Studio project**. If the dialog box to open an existing project does not appear automatically, select **File** &gt; **Open**.
@@ -83,7 +83,7 @@ Execute the following steps to generate the .apk file using Android Studio:
 
    The android option is displayed in the left pane.
 
-1. Select **Build** &gt; **Build APK** to generate the .apk file.
+1. To generate the .apk file, select **Build** &gt; **Build APK**.
 
    Optionally, Select **Build** &gt; **Generate Signed APK** to generate a [signed version](https://developer.android.com/studio/publish/app-signing) of the .apk file.
 
@@ -93,4 +93,4 @@ Once the .apk file has been generated, execute the following command to install 
 
 **Windows users:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**MAC users:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**Mac users:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`

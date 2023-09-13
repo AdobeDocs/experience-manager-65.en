@@ -1,30 +1,26 @@
 ---
-title: Integrating third-party applications in AEM Forms workspace
-seo-title: Integrating third-party applications in AEM Forms workspace
-description: Integrate third-party applications such as Correspondence Management in AEM Forms workspace.
-seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
-uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
+title: Integrating third-party applications in the AEM Forms workspace
+description: Integrate third-party applications such as Correspondence Management in the AEM Forms workspace.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 ---
 # Integrating third-party applications in AEM Forms workspace{#integrating-third-party-applications-in-aem-forms-workspace}
 
-AEM Forms workspace supports the management of task assignment and completion activities for forms and documents. These forms and documents can be XDP Forms, Flex® forms, or Guides (deprecated) that have been rendered in XDP, PDF, HTML, or Flex formats.
+AEM Forms workspace supports the management of task assignment and completion activities for forms and documents. These forms and documents can be XDP Forms, Flex&reg; forms, or Guides (deprecated) that have been rendered in XDP, PDF, HTML, or Flex formats.
 
-These capabilities are further enhanced. AEM Forms now supports collaboration with third-party applications that support functionality similar to the AEM Forms workspace. A common part of this functionality is the workflow of assignment and subsequent approval of a task. AEM Forms provides a single unified experience for AEM Forms enterprise users so that all such task assignments or approvals for the supported applications can be handled through AEM Forms workspace.
+These capabilities are further enhanced. AEM Forms now support collaboration with third-party applications that support functionality similar to the AEM Forms workspace. A common part of this functionality is the workflow of assignment and subsequent approval of a task. AEM Forms provides a single unified experience for AEM Forms enterprise users so that all such task assignments or approvals for the supported applications can be handled through the AEM Forms workspace.
 
 As an example, let us consider Correspondence Management as the sample candidate for integration with AEM Forms workspace. Correspondence Management has the concept of a 'Letter', which can be rendered and allows actions.
 
 ## Create Correspondence Management assets {#create-correspondence-management-assets}
 
-Start by creating a sample Correspondence Management template that is rendered in AEM Forms workspace. For more details, see [Create a letter template](../../forms/using/create-letter.md).
+Start by creating a sample Correspondence Management template that is rendered in the AEM Forms workspace. For more details, see [Create a letter template](../../forms/using/create-letter.md).
 
 Access the Correspondence Management template at its URL to verify if the Correspondence Management template can be rendered successfully. The URL has a pattern similar to `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-where `encodedLetterId` is the URL-encoded letter Id. Specify the same letter Id, when defining the render process for workspace task in Workbench.
+Where `encodedLetterId` is the URL-encoded letter Id. Specify the same letter Id, when defining the render process for workspace task in Workbench.
 
 ## Create a task to render and submit a letter in AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
@@ -55,7 +51,7 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
 1. Click Manage Action Profiles. The Manage Action Profile dialog appears. Ensure that the Render Process and Submit Process are appropriately selected.
 1. To open the letter with a data XML file, browse and select the appropriate data file in the Prepare Data Process.
 1. Click OK.
-1. Define the variables for Start Point Output and Task Attachments. The defined variables will contain Start Point Output and Task Attachments data.
+1. Define the variables for Start Point Output and Task Attachments. The defined variables contain Start Point Output and Task Attachments data.
 1. (Optional) To add another user in the workflow, drag an activity picker, configure it, and assign it to a user. Write a custom wrapper (sample given below) or download and install the DSC (given below) to extact Letter template, Start Point Output, and task Attachment.
 
    A sample custom wrapper is as listed below:
@@ -97,13 +93,13 @@ Use the following steps to create a task to render and submit a letter in AEM Wo
    ```
 
    [Get File](assets/dscsample.zip)
-   Download DSC: A sample DSC is available in the DSCSample.zip file attached above. Download and unzip the DSCSample.zip file. Before you use the DSC service, you need to configure it. For information, see [Configure the DSC Service](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+   Download DSC: A sample DSC is available in the DSCSample.zip file attached above. Download and unzip the DSCSample.zip file. Before you use the DSC service, you must configure it. See [Configure the DSC Service](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    In the Define Activity dialog, select the appropriate activity such as getLetterInstanceInfo and click **OK**.
 
 1. Deploy the application. If prompted check-in and save the assets.
 1. Log in to the AEM forms workspace at https://'[server]:[port]'/lc/content/ws.
-1. Open the task you had added, CMRenderer. The Correspondence Management letter appears.
+1. Open the task that you had added, CMRenderer. The Correspondence Management letter appears.
 
    ![cminworkspace](assets/cminworkspace.png)
 
