@@ -403,7 +403,7 @@ Using this custom error handler, the adaptive form converts the fields listed in
  -->
 
 
- ## Additional information {#additional-information}
+## Additional information {#additional-information}
 
 * [Create a standalone Core Components based Adaptive Form](/help/forms/using/create-an-adaptive-form-core-components.md)
 * [Create style or themes for your forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
