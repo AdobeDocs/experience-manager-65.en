@@ -18,15 +18,15 @@ This document describes the following:
 
 >[!NOTE]
 >
->Asset Share is available as an open source reference implementation. See [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/). It is not officially supported.
+>Asset Share is available as an open-source reference implementation. See [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/). It is not officially supported.
 
 ## Why create and configure Asset Editor pages? {#why-create-and-configure-asset-editor-pages}
 
-Digital Asset Management is being used in more and more scenarios. When moving from a small-scale solution for a small user group of professionally trained users - for example photographers or taxonomists - to larger and more diverse user groups - for example business users, WCM authors, journalists, and so on - the powerful user interface of [!DNL Adobe Experience Manager Assets] for professional users can provide too much information and stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
+Digital Asset Management is being used in more scenarios. When moving from a small-scale solution for a small user group of professionally trained users - for example, photographers or taxonomists - to larger and more diverse user groups - for example, business users, WCM authors, and journalists - the powerful user interface of [!DNL Adobe Experience Manager Assets] can provide too much information. Stakeholders start to request specific user interfaces or applications to access the digital assets that are of relevance to them.
 
 These asset-centric applications can be simple photo galleries in an intranet where employees can upload photos from trade show visits or a press center in a public-facing website. Asset-centric applications can also extend to complete solutions including shopping carts, checkout, and verification processes.
 
-Creating an asset-centric application becomes to a large extent a configuration process that does not require coding, only knowledge of user groups and their needs as well as knowledge of the metadata being used. Asset-centric applications created with [!DNL Assets] are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
+Creating an asset-centric application becomes a configuration process that does not require coding, only knowledge of user groups and their needs and knowledge of the metadata being used. Asset-centric applications created with [!DNL Assets] are extensible: with moderate coding effort reusable components for searching, viewing, and modifying assets can be created.
 
 An asset-centric application in [!DNL Experience Manager] consists of an Asset Editor page, which can be used to get a detailed view of a specific asset. An Asset Editor page also allows for the editing of metadata, provided the user accessing the asset has the necessary permissions.
 
@@ -186,11 +186,11 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 
 ## Create and configure an Asset Editor page {#creating-and-configuring-an-asset-editor-page}
 
-You customize the asset editor to determine how users can view and edit the digital assets. To do this, you create a new Asset Editor page and then customize the views and the actions users can perform on that page.
+You can customize the Asset Editor to determine how users can view and edit the digital assets. To do this, you create an Asset Editor page and then customize the views and the actions that users can perform on that page.
 
 >[!NOTE]
 >
->If you want to add custom fields to the DAM asset editor, add new `cq:Widget` nodes to `/apps/dam/content/asseteditors.`
+>If you want to add custom fields to the DAM Asset Editor, add new `cq:Widget` nodes to `/apps/dam/content/asseteditors.`
 
 ### Create an Asset Editor page {#creating-the-asset-editor-page}
 
@@ -198,7 +198,7 @@ When creating the Asset Editor page, a good practice is to create the page direc
 
 To create an Asset Editor page:
 
-1. In the **[!UICONTROL Websites]** tab, navigate to the place where you want to create an asset editor page and click **New**.
+1. In the **[!UICONTROL Websites]** tab, navigate to the place where you want to create an Asset Editor page and click **New**.
 1. Select **Geometrixx Asset Editor** and click **Create**. The new page is created and the page is listed in the **Websites** tab.
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
@@ -213,7 +213,7 @@ To customize your Asset Editor page, use elements from the sidekick. The Asset E
 
 #### Set an Asset Editor to open from an Asset Share page {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
-After you have created the customized Asset Editor page, you need to ensure that when you double-click assets that the customized Asset Share you created opens the assets in the customized Editor page.
+After you have created the customized Asset Editor page, ensure that when you double-click assets that the customized Asset Share you created opens the assets in the customized Editor page.
 
 To set the Asset Editor page:
 
@@ -223,34 +223,34 @@ To set the Asset Editor page:
 
 1. Click the **General** tab if it is not already selected.
 
-1. In the **Path of Asset Editor** field, enter the path to the asset editor you want the Asset Share page to open assets in and click **OK**.
+1. In the **Path of Asset Editor** field, enter the path to the Asset Editor you want the Asset Share page to open assets in and click **OK**.
 
 ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
 #### Add Asset Editor components {#adding-asset-editor-components}
 
-You determine what functionality an asset editor has by adding components to the page.
+You determine what functionality that an Asset Editor has by adding components to the page.
 
-To add asset editor components:
+To add Asset Editor components:
 
-1. In the Asset Editor page that you want to customize, select **Asset Editor** in the sidekick. All available asset editor components are displayed.
+1. In the Asset Editor page that you want to customize, select **Asset Editor** in the sidekick. All available Asset Editor components are displayed.
 
 >[!NOTE]
 >
 >What you can customize depends on what components are available. To enable components, go to Design mode and select the components you need enabled.
 
-1. Drag the components from the sidekick to the asset editor and make any modifications in the component dialogs. The components are described in the following table and described in the detailed instructions that follow.
+1. Drag the components from the sidekick to the Asset Editor and make any edits in the component dialog boxes. The components are described in the following table and described in the detailed instructions that follow.
 
 >[!NOTE]
 >
->When designing the asset editor page, you create components that are either read-only or editable. Users know a field can be edited if an image of a pencil appears in that component. By default, most components are set up as read-only.
+>When designing the Asset Editor page, you create components that are either read-only or editable. Users know that a field can be edited if an image of a pencil appears in that component. By default, most components are set up as read-only.
 
 | Component | Description |
 |---|---|
 | **[!UICONTROL Metadata Form] and [!UICONTROL Metadata Text Field]** | Lets you add additional metadata to an asset and perform an action, such as submitting, on that asset. |
 | **[!UICONTROL Sub Assets]** | Lets you customize sub-assets. |
 | **Tags** | Lets users select and add tags to an asset. |
-| **[!UICONTROL Thumbnail]** | Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add asset editor actions here as well. |
+| **[!UICONTROL Thumbnail]** | Shows a thumbnail of the asset, its filename, and lets you add an alternate text. You can add Asset Editor actions here as well. |
 | **[!UICONTROL Title]** | Displays the asset title, which can be customized. |
 
 ![screen_shot_2012-04-23at22743pm](assets/screen_shot_2012-04-23at22743pm.png)
@@ -259,7 +259,7 @@ To add asset editor components:
 
 The Metadata Form is a form that includes a start and end action. In between, you enter **Text** fields. See [Forms](/help/sites-authoring/default-components-foundation.md#form-component) for more information on working with forms.
 
-1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the java-script client code for validation generated.
+1. Create a start action by clicking **Edit** in the Start area of the form. You can enter a Box title, if desired. By default, the Box title is **Metadata**. Select the Client Validation check box if you want the JavaScript client code for validation generated.
 
 ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
@@ -269,7 +269,7 @@ The Metadata Form is a form that includes a start and end action. In between, yo
 
 1. In between the **Form Start** and the **Form End**, drag Metadata Text Fields to the form. Users populate metadata into these text fields, which they can submit or complete another action on.
 
-1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the **Edit Component** window, you define the namespace and the field label as well as type, for example, `dc:title`.
+1. Double-click the field name, for example, **Title** to open the metadata field and make changes. In the **General** tab of the **Edit Component** window, you define the namespace and the field label and type, for example, `dc:title`.
 
 ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
@@ -279,7 +279,7 @@ See [Customizing and Extending Assets](/help/assets/extending-assets.md) for inf
 
 ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Click the **Display** tab. Here, you can enter a new width and number of rows for the metadata field. Select the **Field is read only** checkbox to allow users to edit the metadata.
+1. Click the **Display** tab. Here, you can enter a new width and number of rows for the metadata field. Select the **Field is read only** checkbox to let users edit the metadata.
 
 ![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
@@ -293,7 +293,7 @@ On the Asset Editor page, users can then enter values into the metadata fields (
 
 The Sub Assets component is where you can view and select sub-assets. You can determine what names appear under the [main asset](/help/assets/assets.md#what-are-digital-assets) and sub-assets.
 
-Double-click the Sub Assets component to open the sub assets dialog where you can change the titles for the main asset and any sub assets. The default values appear below the corresponding field.
+Double-click the Sub Assets component so you can open the sub assets dialog box where you can change the titles for the main asset and any sub assets. The default values appear below the corresponding field.
 
 ![screen_shot_2012-04-23at23907pm](assets/screen_shot_2012-04-23at23907pm.png)
 
@@ -311,7 +311,7 @@ The Tags component is a component where users can assign existing tags to an ass
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Double-click the Tags component to open the tags dialog where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **[!UICONTROL Hide Edit]** check box. By default, tags are editable.
+Double-click the Tags component so you can open the tags dialog box where you can change the title from Tags, if desired, and where you can select the allocated namespaces. To make this field editable, clear the **[!UICONTROL Hide Edit]** check box. By default, tags are editable.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -329,7 +329,7 @@ The Thumbnail component is where the asset displays the selected thumbnail (for 
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Double-click the thumbnail component to open the thumbnail dialog where you can change the alt text. By default, the thumbnail alt text defaults to **Click to download** asset.
+Double-click the thumbnail component so you can open the thumbnail dialog where you can change the alt text. By default, the thumbnail alt text defaults to **Click to download** asset.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -369,23 +369,20 @@ The following actions are available:
 
  | Action | Description |
  |---|---|
- | [!UICONTROL Download] | Lets users download selected   assets to their computers. |
- | [!UICONTROL Editors] | Lets users edit an image   (interactive editing) |
- | [!UICONTROL Lightbox] | Saves assets to a   "lightbox" where you can perform other actions on them. This comes   in handy when working with assets across multiple pages. |
- | [!UICONTROL Locking] | Lets users lock an asset. This   functionality is not enabled by default and needs to be enabled in the list   of components. |
- | [!UICONTROL References] | Click this to show on what pages   the asset is being used. |
- | [!UICONTROL Versioning] | Lets you create and restore   versions of an asset. |
+ | [!UICONTROL Download] | Lets users download selected assets to their computers. |
+ | [!UICONTROL Editors] | Lets users edit an image (interactive editing) |
+ | [!UICONTROL Lightbox] | Saves assets to a "lightbox" where you can perform other actions on them. This comes in handy when working with assets across multiple pages. |
+ | [!UICONTROL Locking] | Lets users lock an asset. This functionality is not enabled by default and must be enabled in the list of components. |
+ | [!UICONTROL References] | Click this to show on what pages the asset is being used. |
+ | [!UICONTROL Versioning] | Lets you create and restore versions of an asset. |
 
-1. Drag the appropriate action to the **Actions** area on the page. It creates a option that is used to execute the action that is dragged on the page.
+1. Drag the appropriate action to the **Actions** area on the page. It creates an option that is used to execute the action that is dragged on the page.
 
 ![chlimage_1-165](assets/chlimage_1-393.png)
 
 ## Multi-edit assets with the Asset Editor page {#multi-editing-assets-with-the-asset-editor-page}
 
-With [!DNL Experience Manager Assets] you can make changes to several assets at once. After having selected assets, you can simultaneously change their:
-
-* Tags
-* Meta data
+With [!DNL Experience Manager Assets], you can change several assets at once. After having selected the assets, you can simultaneously change  tags and meta data.
 
 To multi-edit assets with the Asset Editor page:
 
@@ -402,14 +399,14 @@ To multi-edit assets with the Asset Editor page:
 1. Click **Edit Metadata** in the **Actions** field (left part of the page).
 1. The Geometrixx **Press Center Asset Editor** page opens in a new tab. The metadata of the assets are displayed as follows:
 
-    * A tag, that does not apply to all the assets but only to a few ones, is displayed in italics.
+    * A tag&ndash;that does not apply to all the assets but only to a few ones&ndash;is displayed in italics.
     * A tag that applies to all the assets is displayed with a normal font.
     * Metadata other than tags: the value of the field is only displayed if it is the same for all the selected assets.
 
 1. Click **Download** to download a ZIP file containing the assets original renditions.
 1. Click edit the tags option that is next to the **Tags** field.
 
-    * A tag that does not apply to all the assets, but only to a few ones has a grey background.
+    * A tag that does not apply to all the assets, but only to a few ones has a gray background.
     * A tag that applies to all the assets has a white background.
 
    You can:

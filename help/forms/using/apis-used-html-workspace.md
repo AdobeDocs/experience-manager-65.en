@@ -1,18 +1,14 @@
 ---
 title: APIs used in AEM Forms workspace
-seo-title: APIs used in AEM Forms workspace
-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
-seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
-uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
+description: Public Java&trade; and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 ---
 # APIs used in AEM Forms workspace {#apis-used-in-aem-forms-workspace}
 
-The following APIs are used in AEM Forms workspace.
+The following APIs are used in the AEM Forms workspace.
 
 <table>
  <tbody>
@@ -38,7 +34,7 @@ The following APIs are used in AEM Forms workspace.
    <td>prepareForSubmit</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>prepareForSubmit</td>
-   <td>It is called before submitting form via DocumentSubmitServlet. It sets the task ID in a session variable (along with expiry time) which is retrieved during actual submit.</td>
+   <td>It is called before submitting a form by way of DocumentSubmitServlet. It sets the task ID in a session variable (along with expiry time) which is retrieved during the actual submission.</td>
   </tr>
   <tr>
    <td>submitTask</td>
@@ -50,7 +46,7 @@ The following APIs are used in AEM Forms workspace.
    <td>getRootEndpointCategories</td>
    <td>ProcessManagementStartpointService</td>
    <td>getRootEndpointCategories</td>
-   <td>It fetches all root categories present on server.</td>
+   <td>It fetches all root categories present on the server.</td>
   </tr>
   <tr>
    <td>getDirectChildCategories</td>
@@ -68,13 +64,13 @@ The following APIs are used in AEM Forms workspace.
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartpointService</td>
    <td>invokeStartpoint</td>
-   <td>This invokes a Startpoint and creates a new task corresponding to a starpoint</td>
+   <td>This invokes a Startpoint and creates a task corresponding to a starpoint</td>
   </tr>
   <tr>
    <td>getAllTasks</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableTasks</td>
-   <td>It fetches all tasks which are created and forwarded or consulted, saved, assigned, assigned and saved for logged in user.</td>
+   <td>It fetches all tasks that are created and forwarded or consulted, saved, assigned, assigned, and saved for the logged in user.</td>
   </tr>
   <tr>
    <td>getTask</td>
@@ -86,37 +82,37 @@ The following APIs are used in AEM Forms workspace.
    <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>render</td>
-   <td>It renders a task and returns information needed to render form like form url, form type, data url if needed etc.</td>
+   <td>It renders a task and returns information needed to render the form like form url, form type, data url, if needed.</td>
   </tr>
   <tr>
    <td>submitWithPriorData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithPriorData</td>
-   <td>It returns result of TaskManager’s submit API using the result key.</td>
+   <td>It returns the result of TaskManager's submit API using the result key.</td>
   </tr>
   <tr>
    <td>submitWithData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithData</td>
-   <td>It submits the form data (passed as string) associated with task usingTaskManager’s submit API. It is used for flex forms which do not callTaskManager’s submit API.</td>
+   <td>It submits the form data (passed as string) associated with the task usingTaskManager's submit API. It is used for Flex forms which do not callTaskManager's submit API.</td>
   </tr>
   <tr>
    <td>save</td>
    <td>ProcessManagementTaskService</td>
    <td>save</td>
-   <td>It saves a task on server.</td>
+   <td>It saves a task on the server.</td>
   </tr>
   <tr>
    <td>complete</td>
    <td>ProcessManagementTaskService</td>
    <td>complete</td>
-   <td>It completes a task and task is passed to next step as per process design.</td>
+   <td>It completes a task and the task is passed to the next step as per process design.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>It returns url of a attachment where attachment is available.</td>
+   <td>It returns a URL of an attachment where the attachment is available.</td>
   </tr>
   <tr>
    <td>getAllAttachments</td>
@@ -146,7 +142,7 @@ The following APIs are used in AEM Forms workspace.
    <td>claim</td>
    <td>ProcessManagementTaskService</td>
    <td>claim</td>
-   <td>It claims a task available in shared queue.</td>
+   <td>It claims a task that is available in a shared queue.</td>
   </tr>
   <tr>
    <td>unlock</td>
@@ -158,13 +154,13 @@ The following APIs are used in AEM Forms workspace.
    <td>lock</td>
    <td>ProcessManagementTaskService</td>
    <td>lock</td>
-   <td>It locks a task and task can not be claimed by another user if shared.</td>
+   <td>It locks a task and the task cannot be claimed by another user if shared.</td>
   </tr>
   <tr>
    <td>reject</td>
    <td>ProcessManagementTaskService</td>
    <td>reject</td>
-   <td>It returns task to previous owner of task.</td>
+   <td>It returns a task to the previous owner of the task.</td>
   </tr>
   <tr>
    <td>abandon</td>
@@ -176,13 +172,13 @@ The following APIs are used in AEM Forms workspace.
    <td>setVisibility</td>
    <td>ProcessManagementTaskService</td>
    <td>setVisibility</td>
-   <td>It sets visibility of a task. If visibility is set to false then task will not be visible to user afterwards.</td>
+   <td>It sets visibility of a task. If visibility is set to false, the task is not visible to the user afterwards.</td>
   </tr>
   <tr>
    <td>getUsers</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsers</td>
-   <td>It is used for searching users. It returns all users if no name is specified else returns users with specified name.</td>
+   <td>It is used for searching users. It returns all users if no name is specified, or else it returns users with a specified name.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
@@ -194,19 +190,19 @@ The following APIs are used in AEM Forms workspace.
    <td>grantQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>grantQueueAccess</td>
-   <td>It grants access of logged in user's queue to specified user. It is basically sharing own queue with another user.</td>
+   <td>It grants access of the logged in user's queue to a specified user. It is basically sharing your own queue with another user.</td>
   </tr>
   <tr>
    <td>requestQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>requestQueueAccess</td>
-   <td>It makes access request of queue of specified user for logged in user. If user approves the request then user's queue is shared with logged in user.</td>
+   <td>It makes the access request of a queue of a specified user for the logged in user. If the user approves the request, the user's queue is shared with the logged in user.</td>
   </tr>
   <tr>
    <td>getGrantedUsers</td>
    <td>ProcessManagementQueueService</td>
    <td>getGrantedUsers</td>
-   <td>It returns all users who have access to queue of logged in user.</td>
+   <td>It returns all users who have access to the queue of the logged in user.</td>
   </tr>
   <tr>
    <td>getUsersForAccessibleQueues</td>
@@ -218,43 +214,43 @@ The following APIs are used in AEM Forms workspace.
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>revokeQueueAccess</td>
-   <td>It removes a user from the list of users who have access to queue of logged in user.</td>
+   <td>It removes a user from the list of users who have access to the queue of the logged in user.</td>
   </tr>
   <tr>
    <td>removeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>removeQueueAccess</td>
-   <td>It removes a user from the list of users whose queue is accessible to logged in user.</td>
+   <td>It removes a user from the list of users whose queue is accessible to the logged in user.</td>
   </tr>
   <tr>
    <td>getAllQueues<br /> </td>
    <td>ProcessManagementQueueService<br /> </td>
    <td>getAllQueues<br /> </td>
-   <td>It gets all queues (own, shared and group queues) accessible to logged in user.<br /> </td>
+   <td>It gets all queues (own, shared, and group queues) accessible to the logged in user.<br /> </td>
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>getOutOfOfficeSettings</td>
-   <td>It gets out of office settings of a user.</td>
+   <td>It gets the out-of-office settings of a user.</td>
   </tr>
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>saveOutOfOfficeSettingsJson</td>
-   <td>It saves out of office settings of a user.</td>
+   <td>It saves the out-of-office settings of a user.</td>
   </tr>
   <tr>
    <td>getAllProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getAllProcesses</td>
-   <td>It returns list of all processes.</td>
+   <td>It returns a list of all the processes.</td>
   </tr>
   <tr>
    <td>getParticipatedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipatedProcesses</td>
-   <td>It retuns list of all process names participated by logged in user.</td>
+   <td>It returns a list of all the process names participated by the logged in user.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -284,7 +280,7 @@ The following APIs are used in AEM Forms workspace.
    <td>getAllSearchTemplates</td>
    <td>ProcessManagementQueryService</td>
    <td>getAllSearchTemplates</td>
-   <td>It returns list of all search templates.</td>
+   <td>It returns a list of all the search templates.</td>
   </tr>
   <tr>
    <td>getTemplate</td>
@@ -296,13 +292,13 @@ The following APIs are used in AEM Forms workspace.
    <td>findTasksJson<br /> </td>
    <td>ProcessManagementQueryService</td>
    <td>findTasksJson</td>
-   <td>It searches and returns all tasks satisfying all condition of a search template.</td>
+   <td>It searches and returns all the tasks that satisfy all the conditions of a search template.</td>
   </tr>
   <tr>
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>It gets all assignments for a task. For for example, :- If user forwards or consults a task with another user then it is an assignment for a task.</td>
+   <td>It gets all assignments for a task. For example, if a user forwards or consults a task with another user, then it is an assignment for a task.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -314,19 +310,19 @@ The following APIs are used in AEM Forms workspace.
    <td>initialize</td>
    <td>ProcessManagementClientSessionService</td>
    <td>initialize</td>
-   <td>It renews assertion if necessary. Authenticates user. Sets session parameters for server / client information. Returns user information and polling interval.</td>
+   <td>It renews the assertion if necessary. Authenticates user. Sets session parameters for server / client information. Returns user information and polling interval.</td>
   </tr>
   <tr>
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>It returns all tasks of direct reports of logged in manager.</td>
+   <td>It returns all the tasks of direct reports of the logged in manager.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
-   <td>It returns task of specified direct report of logged in manager.</td>
+   <td>It returns a task of a specified direct report of the logged in manager.</td>
   </tr>
   <tr>
    <td>forwardTaskOfDirectReport</td>
@@ -338,7 +334,7 @@ The following APIs are used in AEM Forms workspace.
    <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>rejectTaskOfDirectReport</td>
-   <td>It returns a task of a direct report to previous user.</td>
+   <td>It returns a task of a direct report to the previous user.</td>
   </tr>
   <tr>
    <td>getProperty</td>
@@ -368,31 +364,31 @@ The following APIs are used in AEM Forms workspace.
    <td>getCurrentUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getCurrentUserImageUrl</td>
-   <td>It gets user's image url for logged in user.</td>
+   <td>It gets the user's image URL for the logged in user.</td>
   </tr>
   <tr>
    <td>getUserImageUrl</td>
    <td>ProcessManagementClientSessionService</td>
    <td>getUserImageUrl</td>
-   <td>It gets user's image url for specified user.</td>
+   <td>It gets the user's image URL for the specified user.</td>
   </tr>
   <tr>
    <td>uploadNote</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadNote</td>
-   <td>It uploads a note on server for a task.</td>
+   <td>It uploads a note on the server for a task.</td>
   </tr>
   <tr>
    <td>uploadRMAToServer (It's also called directly from html template)<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>uploadAttachment</td>
-   <td>It uploads an attachment on server for a task.</td>
+   <td>It uploads an attachment on the server for a task.</td>
   </tr>
   <tr>
-   <td>getImageURL (It's also called directly from html template)</td>
+   <td>getImageURL (Also called directly from the HTML template)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
-   <td>It gets image for a process.</td>
+   <td>It gets the image for a process.</td>
   </tr>
  </tbody>
 </table>
