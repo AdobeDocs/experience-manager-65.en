@@ -91,7 +91,7 @@ Adobe Experience Manager operates with the following versions of the Java&trade;
 | Azul Zulu OpenJDK 11 - 64-bit | A: Supported `[3]` | |
 | Azul Zulu OpenJDK 8 - 64-bit | A: Supported `[3]` | |
 
-1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java&trade; SE products. Java&trade; 9, Java&trade; 10, and Java&trade; 12 are non-LTS releases by Oracle (see [Oracle Java&trade; SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in production environment, Adobe provides support only for the LTS releases of Java&trade;. Support and distribution of the Oracle Java&trade; SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, is supported by Adobe directly for all AEM customers that use the Oracle Java&trade; SE technology. See the [Java&trade; support policy for Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf). 
+1. Oracle has moved to a "Long Term Support" (LTS) model for Oracle Java&trade; SE products. Java&trade; 9, Java&trade; 10, and Java&trade; 12 are non-LTS releases by Oracle (see [Oracle Java&trade; SE support roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). To deploy AEM in a production environment, Adobe provides support only for the LTS releases of Java&trade;. Support and distribution of the Oracle Java&trade; SE JDK, including all maintenance updates of LTS releases beyond the end of the public updates, is supported by Adobe directly for all AEM customers that use the Oracle Java&trade; SE technology. See the [Java&trade; support policy for Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf). 
 **Important: Oracle Java&trade; 11 is supported until September 2026 at a minimum. Support for Oracle Java&trade; 17 is in preparation.**
 
 1. The IBM&reg; JRE is only supported along with WebSphere&reg; Application Server.
@@ -122,7 +122,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 | Apache Solr |Search Service |A: Supported |
 
 1. 'File System' includes block storage that is POSIX-compliant. Includes network storage technology. Mind that file system performance might vary and influences the overall performance. Load test AEM with the network/remote file system.
-1. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as minimum.
+1. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as a minimum.
 1. MongoDB Sharding is not supported in AEM.
 1. MongoDB Storage Engine WiredTiger is supported only.
 1. Supported for AEM Forms upgrade customers. Not supported for new installations.
@@ -133,7 +133,7 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 
 >[!NOTE]
 >
->MongoDB is third-party software and is not included in the AEM licensing package. For more information, see the [MongoDB licensing policy](https://www.mongodb.com/community/licensing) page.
+>MongoDB is a third-party software program and is not included in the AEM licensing package. For more information, see the [MongoDB licensing policy](https://www.mongodb.com/licensing/server-side-public-license/faq) page.
 >
 >To get the most of your AEM deployment with MongoDB, Adobe recommends licensing the MongoDB Enterprise version to benefit from professional support. See [Recommended Deployments](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) for more information.
 >
@@ -155,9 +155,9 @@ Various options exist to deploy the repository of Adobe Experience Manager. See 
 
 ### Servlet Engines / Application Servers {#servlet-engines-application-servers}
 
-Adobe Experience Manager can run either as a stand-alone server (the quickstart JAR file) or as web application within a third-party application server (the WAR file).
+Adobe Experience Manager can run either as a stand-alone server (the quickstart JAR file) or as a web application within a third-party application server (the WAR file).
 
-Minimum Servlet API Version required is Servlet 3.1
+The minimum Servlet API Version required is Servlet 3.1
 
 | Platform |Support Level |
 |---|---|
@@ -179,7 +179,7 @@ Adobe Experience Manager works with the following server platforms for productio
 
 | **Platform** |**Support Level** |
 |---|---|
-| **Linux&reg;, based on Red Hat&reg; distribution** |A: Supported `[1]` `[3]` |
+| **Linux&reg;, based on the Red Hat&reg; distribution** |A: Supported `[1]` `[3]` |
 | Linux&reg;, based on Debian distribution incl. Ubuntu |A: Supported `[1]` `[2]` |
 | Linux&reg;, based on SUSE&reg; distribution |A: Supported `[1]`|
 | Microsoft&reg; Windows Server 2019 `[4]` |R: Restricted Support for new contracts `[5]` |
@@ -230,7 +230,7 @@ The following web servers are supported for use with Dispatcher version 4.3.2:
 | Microsoft&reg; IIS 10 (Internet Information Server) |A: Supported |
 | Microsoft&reg; IIS 8.5 (Internet Information Server) |Z: Not supported  |
 
-1. Web servers built based on Apache httpd source code have as much support as the version of httpd on which it is based. If in doubt, ask Adobe for confirmation of the support level related to the respective server product. Following cases:
+1. Web servers built based on the Apache httpd source code have as much support as the version of httpd on which it is based. If in doubt, ask Adobe for confirmation of the support level related to the respective server product. The following cases:
 
     1. The HTTP server was built using only official Apache source distributions, or
     1. The HTTP server was delivered as part of the operating system on which it is running. Examples: IBM&reg; HTTP Server, Oracle HTTP Server
@@ -311,13 +311,13 @@ The AEM user interface is optimized for larger screens (typically notebooks and 
 
 ### Supported Browsers for Websites {#supported-browsers-for-websites}
 
-Generally, browser support for websites rendered by AEM Sites depends on the implementation of AEM page templates, design and component output, and is therefore in control of the party implementing these parts.
+Generally, browser support for websites rendered by AEM Sites depends on the implementation of AEM page templates, design and component output, and is therefore in the control of the party implementing these parts.
 
 ### WebDAV Clients {#webdav-clients}
 
 **Microsoft&reg; Windows 7+**
 
-When connecting with Microsoft&reg; Windows 7+ to an AEM instance that is not secured with SSL, basic authentication over unsecured network must be enabled in Windows. It requires a change in the Windows Registry of the WebClient:
+When connecting with Microsoft&reg; Windows 7+ to an AEM instance that is not secured with SSL, basic authentication over an unsecured network must be enabled in Windows. It requires a change in the Windows Registry of the WebClient:
 
 1. Locate the registry subkey:
 
@@ -375,7 +375,7 @@ If you are using Dynamic Media on Linux&reg;, the following prerequisites must b
 
 >[!NOTE]
 >
->If the locale is set such that LC_CTYPE is not equal to `en_US.UTF-8`, it prevents Dynamic Media from working. To see what its value is, type "locale" at the command prompt. If it not set properly, then set the LC_CTYPE environment variable to the empty string by typing "export LC_CTYPE=" before running AEM.
+>If the locale is set such that LC_CTYPE is not equal to `en_US.UTF-8`, it prevents Dynamic Media from working. To see what its value is, type "locale" at the command prompt. If it is not set properly, then set the LC_CTYPE environment variable to the empty string by typing "export LC_CTYPE=" before running AEM.
 
 >[!NOTE]
 >
@@ -484,10 +484,10 @@ For Windows x86:
 >
 >In addition,
 >
->* PDF Generator requires 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
+>* PDF Generator requires a 32-bit version of [Acrobat 2020 classic track version 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) or Acrobat 2017 version 17.011.30078 to perform the conversion.
 >* PDF Generator conversions for OpenOffice are supported only on Windows and Linux&reg;.
->* PDF Generator supports only the 32-bit Retail version of Microsoft&reg; Office Professional Plus and other software required for conversion on Windows operating system.
->* PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on Linux&reg; operating system.
+>* PDF Generator supports only the 32-bit Retail version of Microsoft&reg; Office Professional Plus and other software required for conversion on the Windows operating system.
+>* PDF Generator supports the 32-bit and 64-bit versions of OpenOffice on the Linux&reg; operating system.
 >* PDF Generator does not support Microsoft&reg; Office 365.
 >* The OCR PDF, Optimize PDF, and Export PDF features are supported only on Windows.
 >* A version of Acrobat is bundled with AEM Forms to enable PDF Generator functionality. Programmatically access the bundled version only with AEM Forms, during the term of the AEM Forms license, for use with AEM Forms PDF Generator. For more information, see AEM Forms product description as per your deployment ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) or [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
@@ -525,4 +525,4 @@ XMP write-back is supported and enabled for the following platforms and file for
 
 ### Requirements for AEM Assets to process metadata-heavy assets on Linux&reg; {#assetsonlinux}
 
-XMPFilesProcessor process requires library GLIBC_2.14 to work. Use a Linux&reg; kernel that contains GLIBC_2.14, for example Linux&reg; kernel version 3.1.x. It improves performance for processing assets that contain a large amount of metadata, like PSD files. Using a previous version of GLIBC leads to error in logs starting with `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+The XMPFilesProcessor process requires the library GLIBC_2.14 to work. Use a Linux&reg; kernel that contains GLIBC_2.14, for example Linux&reg; kernel version 3.1.x. It improves performance for processing assets that contain a large amount of metadata, like PSD files. Using a previous version of GLIBC leads to error in logs starting with `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.

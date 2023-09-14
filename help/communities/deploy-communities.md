@@ -1,14 +1,10 @@
 ---
 title: Deploying Communities
-seo-title: Deploying Communities
 description: How to deploy AEM Communities
-seo-description: How to deploy AEM Communities
-uuid: 18d9b424-004d-43b2-968a-318e27a93759
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 ---
@@ -44,7 +40,7 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 * [Enable the tunnel service](#tunnel-service-on-author)
 * [Enable social login](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
 * [Configure Adobe Analytics](/help/communities/analytics.md)
-* Setup a [default email service](/help/communities/email.md)
+* Set up a [default email service](/help/communities/email.md)
 * Identify the choice for [shared UGC storage](/help/communities/working-with-srp.md) (**SRP**)
 
   * If MongoDB SRP [(MSRP)](/help/communities/msrp.md)
@@ -67,16 +63,16 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 
   * If JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-    * Not a shared UGC store :
+    * Not a shared UGC (User Generated Content) store :
 
       * UGC is never replicated
-      * UGC only visible on AEM instance or cluster in which it was entered
+      * UGC is only visible on the AEM instance or cluster in which it was entered
 
-      * Default is JSRP
+      * The default is JSRP
   
 ## Latest Releases {#latest-releases}
 
-AEM 6.5 Communities GA includes Communities package. To know about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), refer [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA includes Communities package. To know more about updates to AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), see the [AEM 6.5 Release Notes](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 Updates {#aem-updates}
 
@@ -92,7 +88,7 @@ As on AEM 6.4 and beyond, AEM Communities features and hotfixes are part of AEM 
 
 One Communities feature use a MySQL database:
 
-* For [DSRP](/help/communities/dsrp.md): storing user generated content (UGC)
+* For [DSRP](/help/communities/dsrp.md): storing UGC
 
 The MySQL connector must be obtained and installed separately.
 
@@ -145,7 +141,7 @@ For details and installation information, visit [Solr Configuration](/help/commu
 
 **Packages Visible in Adobe AEM Cloud**
 
-The links to packages on this page require no running instance of AEM as they are to package share on `adobeaemcloud.com`. While the packages are viewable, the `Install` button is for installing the packages into an Adobe hosted site. If intending to install on a local AEM instance, selecting `Install` will result in an error.
+The links to packages on this page require no running instance of AEM as they are to Package Share on `adobeaemcloud.com`. While the packages are viewable, the `Install` button is for installing the packages into an Adobe hosted site. If intending to install on a local AEM instance, selecting `Install` results in an error.
 
 **How to Install on Local AEM Instance**
 
@@ -154,21 +150,21 @@ To install the packages visible in `adobeaemcloud.com` on a local AEM instance, 
 * Select the **Assets** tab
 * Select **download to disk**
 
-On the local AEM instance, use package manager (for example [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), to upload to the local AEM's package repository.
+On the local AEM instance, use Package Manager (for example [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), to upload to the local AEM's package repository.
 
-Alternatively, accessing the package using package share from the local AEM instance (for example, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), the `Download` button will download to the local AEM instance's package repository.
+Alternatively, accessing the package using Package Share from the local AEM instance (for example, [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), the `Download` button downloads to the local AEM instance's package repository.
 
-Once in the local AEM instance's package repository, use package manager to install the package.
+Once in the local AEM instance's package repository, use Package Manager to install the package.
 
 For more information, visit [How to Work With Packages](/help/sites-administering/package-manager.md#package-share).
 
 ## Recommended Deployments {#recommended-deployments}
 
-In AEM Communities, a common store is used to store user generated content (UGC) and is often referred to as the [storage resource provider (SRP)](/help/communities/working-with-srp.md). The recommended deployment centers on choosing an SRP option for the common store.
+In AEM Communities, a common store is used to store UGC and is often referred to as the [storage resource provider (SRP)](/help/communities/working-with-srp.md). The recommended deployment centers on choosing an SRP option for the common store.
 
 The common store supports moderation of, and analytics on, UGC in the publish environment while eliminating the need for [replication](/help/communities/sync.md) of UGC.
 
-* [Community Content Store](/help/communities/working-with-srp.md) : discusses the SRP storage options for AEM communities
+* [Community Content Store](/help/communities/working-with-srp.md) : discusses the SRP storage options for AEM Communities
 
 * [Recommended Topologies](/help/communities/topologies.md) : discusses the topology to use depending on use case and SRP choice
 
@@ -182,7 +178,7 @@ In addition to upgrading the platform, read [Upgrading to AEM Communities 6.5](/
 
 ### Primary Publisher {#primary-publisher}
 
-When the deployment chosen is a [publish farm](/help/communities/topologies.md#tarmk-publish-farm), then one AEM publish instance must be identified as the **`primary publisher`** for activities which should not occur on all instances, such as features that rely on **notifications** or **Adobe Analytics**.
+When the deployment chosen is a [publish farm](/help/communities/topologies.md#tarmk-publish-farm), then one AEM publish instance must be identified as the **`primary publisher`** for activities which should not occur on all instances. For example, features that rely on **notifications** or **Adobe Analytics**.
 
 By default, the `AEM Communities Publisher Configuration` OSGi configuration is configured with the **`Primary Publisher`** checkbox checked, such that all publish instances in a publish farm would self-identify as the primary.
 
@@ -204,11 +200,11 @@ For all other (secondary) publish instances in a publish farm:
 
 ### Replication Agents on Author {#replication-agents-on-author}
 
-Replication is used for site content created in the publish environment, such as community groups, as well as managing members and member groups from the author environment using the [tunnel service](#tunnel-service-on-author).
+Replication is used for site content created in the publish environment, such as community groups, and managing members and member groups from the author environment using the [tunnel service](#tunnel-service-on-author).
 
 For the primary publisher, ensure the [Replication Agent Config](/help/sites-deploying/replication.md) correctly identifies the publish server and authorized user. The default authorized user, `admin,` already has the appropriate permissions (is a member of `Communities Administrators`).
 
-In order for some other user to have the appropriate permissions, they must be added as a member to the `administrators` user group (also a member of `Communities Administrators`).
+For some other user to have the appropriate permissions, they must be added as a member to the `administrators` user group (also a member of `Communities Administrators`).
 
 There are two replication agents in the author environment that need the transport configuration to be correctly configured.
 
@@ -216,7 +212,7 @@ There are two replication agents in the author environment that need the transpo
 
   * From global navigation, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Deployment]** > **[!UICONTROL Replication]** > **[!UICONTROL Agents on author]**
 
-* Follow the same procecure for both agents :
+* Follow the same procedure for both agents :
 
   * **Default Agent (publish)**
   * **Reverse Replication Agent (publish reverse)**
@@ -224,9 +220,9 @@ There are two replication agents in the author environment that need the transpo
     1. Select the agent
     1. Select **edit**
     1. Select the **Transport** tab
-    1. If not port `4503`, edit the **URI** to specify the correct port
+    1. If it is not port `4503`, edit the **URI** to specify the correct port
 
-    1. If not user `admin`, edit the **User** and **Password** to specify a member of the `administrators` user group
+    1. If it is not user `admin`, edit the **User** and **Password** to specify a member of the `administrators` user group
 
 The following images show the results of changing the port from 4503 to 6103 by:
 
@@ -267,15 +263,15 @@ There are two features of AEM Communities that require all AEM server instances 
 
 From AEM 6.3 onwards, the key material is stored in the file system and no longer in the repository.
 
-In order to copy the key material from author to all other instances, it is necessary to :
+To copy the key material from Author to all other instances, it is necessary to :
 
-* Access the AEM instance, typically an author instance, that contains the key material to copy
+* Access the AEM instance&ndash;typically an Author instance&ndash;that contains the key material to copy
 
   * Locate the `com.adobe.granite.crypto.file` bundle in the local file system,
       for example,
 
     * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-    * The `bundle.info` file will identify the bundle
+    * The `bundle.info` file identifies the bundle
 
   * Navigate into the data folder,
       for example,
@@ -291,22 +287,22 @@ In order to copy the key material from author to all other instances, it is nece
 
     * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-  * Paste the 2 files previously copied
-  * It is necessary to [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle) if the target AEM instance is currently running
+  * Paste the two files previously copied
+  * It is necessary to [refresh the Granite Crypto bundle](#refresh-the-granite-crypto-bundle) if the target AEM instance is running
 
 >[!CAUTION]
 >
->If another security feature has already been configured that is based on the crypto keys, then replicating the crypto keys could damage the configuration. For assistance, [contact customer care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>If another security feature has already been configured that is based on the crypto keys, then replicating the crypto keys could damage the configuration. For assistance, [contact customer care](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support).
 
 #### Repository Replication {#repository-replication}
 
-Having the key material stored in the repository, as was the case for AEM 6.2 and earlier, can be preserved by specifying the following system property on first startup of each AEM instance (which creates the initial repository) :
+Having the key material stored in the repository, as was the case for AEM 6.2 and earlier, can be preserved. Specify the following system property on the first startup of each AEM instance (which creates the initial repository) :
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
 >[!NOTE]
 >
->It is important to verify that the [replication agent on author](#replication-agents-on-author) is correctly configured.
+>It is important to verify that the [replication agent on Author](#replication-agents-on-author) is correctly configured.
 
 With the key material stored in the repository, the manner for replicating the crypto key from author to other instances is as follows:
 
@@ -362,8 +358,8 @@ In particular, be careful to use the correct server name, not `localhost`, in th
 
 If using a Dispatcher, see:
 
-* AEM's [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) documentation
-* [Installing Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
+* AEM's [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) documentation
+* [Installing Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
 * [Configuring Dispatcher for Communities](/help/communities/dispatcher.md)
 * [Known Issues](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
@@ -371,6 +367,6 @@ If using a Dispatcher, see:
 
 * Visit [Administering Communities Sites](/help/communities/administer-landing.md) to learn about creating a community site, configuring community site templates, moderating community content, managing members, and configuring messaging.
 
-* Visit [Developing Communities](/help/communities/communities.md) to learn about the social component framework (SCF) and customizing Communities components and features.
+* Visit [Developing Communities](/help/communities/communities.md) where you can learn about the social component framework (SCF) and customizing Communities components and features.
 
-* Visit [Authoring Communities Components](/help/communities/author-communities.md) to learn how to author with and configure Communities components.
+* Visit [Authoring Communities Components](/help/communities/author-communities.md) where you can learn how to author with and configure Communities components.

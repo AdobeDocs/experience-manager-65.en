@@ -1,6 +1,6 @@
 ---
 title: Accessing and filling published forms
-description: Forms Portal equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
+description: Forms Portal equips Web Developers with components to create and customize a Forms Portal on websites authored using Adobe Experience Manager (AEM).
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -11,25 +11,25 @@ exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 
 In a forms-centric portal deployment setup, forms development and portal development are two distinct activities. While form designers design and store forms in a repository, Web Developers create a web application to that list forms and handle submissions. Forms are then copied over to the web tier as there is no communication between the forms repository and the web application.
 
-This often results in issues with managing the setup and production delays. For example, if a newer version of a form is available in the repository, the form designer, replaces the form on the web tier, modifies the web application, and redeploys the form on the public site. Redeploying the web application can cause some server downtime. Since the server downtime is a planned activity, the changes cannot be pushed to the public site immediately.
+This often results in issues with managing the setup and production delays. For example, if a newer version of a form is available in the repository, the form Designer replaces the form on the web tier, modifies the web application, and redeploys the form on the public site. Redeploying the web application can cause some server downtime. Since the server downtime is a planned activity, the changes cannot be pushed to the public site immediately.
 
-Forms Portal reduces management overheads and production delays. It equips Web Developers with components to create and customize a forms portal on websites authored using Adobe Experience Manager (AEM).
+Forms Portal reduces management overheads and production delays. It equips Web Developers with components to create and customize a Forms Portal on websites authored using Adobe Experience Manager (AEM).
 
-For more information about forms portal and its features, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
+For more information about Forms Portal and its features, see [Introduction to publishing forms on a portal](/help/forms/using/introduction-publishing-forms.md).
 
-## Getting started with forms portal {#getting-started-with-forms-portal}
+## Getting started with Forms Portal {#getting-started-with-forms-portal}
 
-Navigate to the published forms portal page. For more information about creating a forms portal page, see [Creating a forms portal page](../../forms/using/creating-form-portal-page.md).
+Navigate to the published Forms Portal page. For more information about creating a Forms Portal page, see [Creating a Forms Portal page](../../forms/using/creating-form-portal-page.md).
 
-The Search and Lister component of roms portal displays the forms available on the Publish instance of the AEM server. This list includes all forms or the forms defined in the filter at the time of authoring the forms portal page. A forms portal page looks similar to as shown in the following image:
+The Search and Lister component of Forms Portal displays the forms available on the Publish instance of the AEM server. This list includes all forms or the forms defined in the filter at the time of authoring the Forms Portal page. A Forms Portal page looks similar to as shown in the following image:
 
 ![A sample forms portal page ](assets/forms-portal-page.png)
 
-A sample forms portal page
+A sample Forms Portal page
 
 ### Search and Lister {#search-and-lister}
 
-The Search and Lister component let you add the following functionality to your forms portal:
+The Search and Lister component let you add the following functionality to your Forms Portal:
 
 * List forms in panel, card, or grid view that are available out of the box. It also supports custom templatesList forms from specific folders in Forms Manager.
 * Specify how forms are rendered - HTML5, PDF, or both.
@@ -52,7 +52,7 @@ An advanced search dialog
 
 Advance Search lets you search forms based on specified form properties. This provides a more specific result than full-text search. Advance search includes search based on tags, properties (such as Author, Description, and Title), modification date, and full text.
 
-Lister displays forms based on the search parameters. Each form in the search result is displayed with an icon, which is hyperlinked to the associated form. You can click the icon to open and work with the associated form.
+The Lister displays forms based on the search parameters. Each form in the search result is displayed with an icon, which is hyperlinked to the associated form. You can click the icon to open and work with the associated form.
 
 ### Filling a form {#filling-a-form}
 
@@ -68,7 +68,7 @@ Each form contains help information that enables a user to fill the form.
 
 A user can optionally save a draft of a form by clicking **Save**. This allows the user to work on a form over a time period before submitting the form.
 
-The data filled in the form (including attachments) is saved as a draft on the server. The draft of a form can be saved any number of times. The saved form appears in the Drafts tab of Draft & Submission component of the page.
+The data filled in the form (including attachments) is saved as a draft on the server. The draft of a form can be saved any number of times. The saved form appears in the Drafts tab of the Draft & Submission component of the page.
 
 On completion of form filling, the user submits the forms by clicking the Submit button on the form. The submitted forms appear in the Submissions tab of the Draft & Submission component of the Page.
 
@@ -82,9 +82,9 @@ Drafts & submissions component
 
 ## Start a new form using submitted form data {#start-a-new-form-using-submitted-form-data}
 
-There are certain forms that you must fill and submit often. For example, the form for filing individual tax return is submitted every year. In such cases, while some bit of the information changes every time you fill the form, most of it like the personal and family details do not change. However, you are still required to fill the entire form again, from scratch.
+There are certain forms that you must fill out and submit often. For example, the form for filing an individual tax return is submitted every year. In such cases, while some bit of the information changes every time you fill the form, most of it like the personal and family details do not change. However, you are still required to fill the entire form again, from scratch.
 
-AEM Forms can help optimize the form filling experience and significantly reduce the time to fill and submit a form again. End-users can start a new form using data from a submitted form. This functionality is built-in in the [Drafts and Submissions component](../../forms/using/draft-submission-component.md). When you add Drafts and Submission component to your forms portal page and publish it, end-users see an option in Submitted Forms and Draft Forms tabs to start a new form using data from a submitted form. The following image highlights that option.
+AEM Forms can help optimize the form filling experience and significantly reduce the time to fill and submit a form again. End users can start a new form using data from a submitted form. This functionality is built into the [Drafts and Submissions component](../../forms/using/draft-submission-component.md). When you add the Drafts and Submission component to your Forms Portal page and publish it, end users see an option in the Submitted Forms and Draft Forms tabs. The option lets you start a new form using data from a submitted form. The following image highlights that option.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 
