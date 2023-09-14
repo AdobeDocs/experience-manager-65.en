@@ -1,24 +1,20 @@
 ---
 title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
-seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
-uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
+description: Learn about SharePoint Connector Licenses, Copyright Notices, and Disclaimers.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 ---
 # SharePoint Connector Licenses, Copyright Notices, and Disclaimers{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-This section lists all licenses, copyright notices and disclaimers which must be explicitly stated in connection with Day JCR Connector for MS SharePoint.
+This section lists all licenses, copyright notices, and disclaimers that must be explicitly stated with Day JCR Connector for MS&reg; SharePoint.
 
-## Overview of Connector 3rd Party Libraries {#overview-of-connector-rd-party-libraries}
+## Overview of Connector Third-Party Libraries {#overview-of-connector-rd-party-libraries}
 
-The following table lists 3rd party libraries used within the SharePoint Connector core libaries, together with the licenses, copyright notices or disclaimers by which they are covered:
+The following table lists third-party libraries used within the SharePoint Connector core libraries, together with the licenses, copyright notices, or disclaimers by which they are covered:
 
 | Library |License Type |
 |---|---|
@@ -57,9 +53,9 @@ The following table lists 3rd party libraries used within the SharePoint Connect
 | xml-apis | [Apache](#apache) (contains portions covered by Public Domain and W3C Software licenses) |
 | XmlSchema | [Apache](#apache) |
 
-## Overview of CRX 3rd Party Libraries {#overview-of-crx-rd-party-libraries}
+## Overview of CRX Third-Party Libraries {#overview-of-crx-rd-party-libraries}
 
-The following table lists 3rd party libraries used within CRX, together with the licenses, copyright notices or disclaimers by which they are covered:
+The following table lists third-party libraries used within CRX, together with the licenses, copyright notices, or disclaimers by which they are covered:
 
 <table>
  <colgroup>
@@ -149,9 +145,9 @@ The following table lists 3rd party libraries used within CRX, together with the
  </tbody>
 </table>
 
-## Overview of CQSE 3rd Party Libraries {#overview-of-cqse-rd-party-libraries}
+## Overview of CQSE Third-Party Libraries {#overview-of-cqse-rd-party-libraries}
 
-The following table lists 3rd party libraries used within the Communiqué Servlet Engine, together with the licenses, copyright notices or disclaimers by which they are covered:
+The following table lists third-party libraries used within the Communiqué Servlet Engine, together with the licenses, copyright notices, or disclaimers by which they are covered:
 
 <table>
  <colgroup>
@@ -1104,8 +1100,8 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      This license came from: https://www.w3.org/Consortium/Legal/
      copyright-documents-19990405
 
-     W3C® DOCUMENT NOTICE AND LICENSE
-     Copyright © 1994-2001 World
+     W3C&reg; DOCUMENT NOTICE AND LICENSE
+     Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
@@ -1129,7 +1125,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      A link or URL to the original W3C document.
 
      The pre-existing copyright notice of the original author, or if
-     it doesn't exist, a notice of the form: "Copyright © [$date-of-document]
+     it doesn't exist, a notice of the form: "Copyright &copy; [$date-of-document]
      World Wide Web Consortium, (Massachusetts
      Institute of Technology, Institut National de Recherche en Informatique
      et en Automatique, Keio
@@ -1191,8 +1187,8 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
      copyright-software-19980720
 
-     W3C® SOFTWARE NOTICE AND LICENSE
-     Copyright © 1994-2001 World
+     W3C&reg; SOFTWARE NOTICE AND LICENSE
+     Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
@@ -1218,7 +1214,7 @@ The following table lists 3rd party libraries used within the Communiqué Servle
      terms and conditions. If none exist, a short notice of the
      following form (hypertext is preferred, text is permitted) should
      be used within the body of any redistributed or derivative code:
-     "Copyright © [$date-of-software] World Wide Web Consortium,
+     "Copyright &copy; [$date-of-software] World Wide Web Consortium,
      (Massachusetts Institute of Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University).
      All Rights Reserved.
