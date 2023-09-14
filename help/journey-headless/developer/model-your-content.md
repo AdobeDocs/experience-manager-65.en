@@ -5,13 +5,13 @@ exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
 ---
 # How to Model Your Content {#model-your-content}
 
-In this part of the [AEM Headless Developer Journey](overview.md), you can learn how to model your content structure. Then realize that structure for Adobe Experience Manager (AEM) using Content Fragments Models and Content Fragments, for reuse across channels.
+In this part of the [AEM Headless Developer Journey](overview.md), you can learn how to model your content structure. Then realize that the structure for Adobe Experience Manager (AEM) using Content Fragments Models and Content Fragments, for reuse across channels.
 
 ## The Story So Far {#story-so-far}
 
-At the beginning [Learn About CMS Headless Development](learn-about.md) covered headless content delivery and why it should be used. Then [Getting Started with AEM Headless](getting-started.md) described AEM Headless in the context of your own project.
+At the beginning, [Learn About CMS Headless Development](learn-about.md) covered headless content delivery and why it should be used. Then [Getting Started with AEM Headless](getting-started.md) described AEM Headless in the context of your own project.
 
-In the previous document of the AEM headless journey, [Path to Your First Experience Using AEM Headless](path-to-first-experience.md), you then learned the steps needed to implement your first project. After reading it you should:
+In the previous document of the AEM headless journey, [Path to Your First Experience Using AEM Headless](path-to-first-experience.md), you then learned the steps needed to implement your first project. After reading it, you should:
 
 * Understand important planning considerations for designing your content
 * Understand the steps to implement headless depending on your integration level requirements.
@@ -31,19 +31,19 @@ This article builds on those fundamentals so you understand how to prepare your 
 
 >[!NOTE]
 >
->Data Modeling is a very large field, as it is used when developing Relational Databases. There are many books, and online sources of information, available.
+>Data Modeling is a large field, as it is used when developing Relational Databases. There are many books and online sources of information that are available.
 >
->We will only consider the aspects that are of interest when modeling data for use with AEM Headless.
+>The aspects that are of interest when modeling data for use with AEM Headless are only considered.
 
 ## Content Modeling {#content-modeling}
 
 *It's a big, bad world out there*.
 
-Maybe, maybe not, but it's certainly a big ***complicated*** world out there and data modeling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
+Maybe, maybe not, but it's certainly a big ***complicated*** world out there. Data modeling is used to define a simplified representation of a very (very) small sub-section, using the specific information that is needed for a certain purpose.
 
 >[!NOTE]
 >
->As AEM deals with content, we refer to Data Modeling as Content Modeling.
+>As AEM deals with content, Data Modeling is referred to as Content Modeling.
 
 For example:
 
@@ -62,7 +62,7 @@ There are many Schools, but they all have various things in common:
 * Many extra-curriculum activities
 * and so on....
 
-Even in such a small example the list can seem endless. But if you simply want your application to perform a simple task, you need to limit the information to the essentials.
+Even in such a small example, the list can seem endless. But if you simply want your application to perform a simple task, you can limit the information to the essentials.
 
 For example, advertising special events for all schools in the area:
 
@@ -75,9 +75,9 @@ For example, advertising special events for all schools in the area:
 
 ### Concepts {#concepts}
 
-What you want to describe are referred to as **Entities** - basically the "things" that we want to store information about.
+What you want to describe are referred to as **Entities** - basically the "things" that you want to store information about.
 
-The information that we want to store about them are the **Attributes** (properties), such as Name, and Qualifications for the teachers.
+The information that you want to store about them are the **Attributes** (properties), such as Name, and Qualifications for the teachers.
 
 Then there are various **Relationships** between the entities. For example, usually a school only has one head teacher, and many teachers (and usually the head teacher is also a teacher).
 
@@ -85,9 +85,9 @@ The process of analyzing and defining this information, together with the relati
 
 ### Basics {#basics}
 
-Often you need to start by drawing up a **Conceptual Schema** that describes the entities and their relationships. Usually this is high-level (conceptual).
+Often, you can start by drawing up a **Conceptual Schema** that describes the entities and their relationships. Usually this is high-level (conceptual).
 
-After this is stable you can translate the models into a **Logical Schema** that describes the entities, together with the attributes, and the relationships. At this level you should examine the definitions closely to eliminate duplication and optimize your design.
+After this is stable you can translate the models into a **Logical Schema** that describes the entities, together with the attributes, and the relationships. At this level, examine the definitions closely to eliminate duplication and optimize your design.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Data Modeling is a set of established techniques, often used when developed rela
 
 To ensure that your application can consistently and efficiently request and receive the required content from AEM, this content must be structured.
 
-This means that your application knows in advance the form of response and therefore, how to process it. This is much easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
+This means that your application knows in advance the form of response and therefore, how to process it. This is easier than receiving free-form content, which has to be parsed to determine what it contains and therefore, how it can be used.
 
 ### Introduction to How? {#how}
 
@@ -152,7 +152,7 @@ Content Fragment Models provide various mechanisms that let you define the struc
 A Content Fragment Model describes an entity.
 
 >[!NOTE]
->You must enable Content Fragment functionality in the Configuration Browser so that you can create new models.
+>You must enable Content Fragment functionality in the Configuration Browser so that you can create models.
 
 >[!TIP]
 >
@@ -172,8 +172,8 @@ For example:
 
 AEM provides the following data types for you to model your content:
 
-* Single line text
-* Multi line text
+* Single-line text
+* Multi-line text
 * Number
 * Boolean
 * Date and time
@@ -196,11 +196,11 @@ Two data types provide references to content outside a specific fragment:
   This type of reference is used to create nested content, introducing the relationships needed to model your content.
   The data type can be configured to allow fragment authors to:
   * Edit the referenced fragment directly.
-  * Create a new content fragment, based on the appropriate model
+  * Create a content fragment, based on the appropriate model.
 
 ### Creating Content Fragment Models {#creating-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
+At the start, you must enable Content Fragment Models for your site. This enablement is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](assets/cfm-configuration.png)
 
@@ -222,17 +222,17 @@ Content Fragments are always based on a Content Fragment Model. The model provid
 
 ### Selecting the appropriate model {#select-model}
 
-The first step to actually creating your content is to create a Content Fragment. This is done using Create -> Content Fragment in the required folder under Assets -> Files. The wizard will guide you through the steps.
+The first step to actually creating your content is to create a Content Fragment. This is done using Create -> Content Fragment in the required folder under Assets -> Files. The wizard guides you through the steps.
 
 A Content Fragment is based on a specific Content Fragment Model, that you select as the first step of the creation process.
 
 ### Creating, and editing, structured content {#create-edit-structured-content}
 
-Once your fragment has been created, you can open it in the Content Fragment Editor. Here you can:
+Once your fragment is created, you can open it in the Content Fragment Editor. Here you can do the following:
 
-* Edit your content in either normal, or full-screen mode.
-* Format your content as either Full Text, Plain Text or Markdown.
-* Create and manage Variations of you content.
+* Edit your content in either normal or full-screen mode.
+* Format your content as either Full Text, Plain Text, or Markdown.
+* Create and manage Variations of your content.
 * Associate Content.
 * Edit the Metadata.
 * Show the Tree Structure.
@@ -260,15 +260,15 @@ For a basic structure as sample, see The Sample Content Fragment Structure.
 
 ## What's Next {#whats-next}
 
-Now that you have learned how to model your structure, and create content dependent on that, the next step is to [Learn how to use GraphQL queries to access and retrieve your Content Fragments content](access-your-content.md). This will introduce and discuss GraphQL, then look at some sample queries to see how things work in practice.
+Now that you have learned how to model your structure, and create content dependent on that, the next step is to [Learn how to use GraphQL queries to access and retrieve your Content Fragments content](access-your-content.md). This introduces and discusses GraphQL, then look at some sample queries to see how things work in practice.
 
 ## Additional Resources {#additional-resources}
 
-* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) - the lead-in page for Content Fragments
-  * [Content Fragments in the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - enable Content Fragment functionality in the Configuration Browser
-  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - creating and editing Content Fragment Models
-  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - creating and authoring Content Fragments; this page will lead you to other detailed sections
-* [AEM GraphQL Schemas](access-your-content.md) - how GraphQL realizes models
+* [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) - The lead-in page for Content Fragments.
+  * [Content Fragments in the Configuration Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - Enable Content Fragment functionality in the Configuration Browser.
+  * [Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md) - Creating and editing Content Fragment Models.
+  * [Managing Content Fragments](/help/assets/content-fragments/content-fragments-managing.md) - Creating and authoring Content Fragments; this page leads you to other detailed sections.
+* [AEM GraphQL Schemas](access-your-content.md) - How GraphQL realizes models.
 * [The Sample Content Fragment Structure](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL
+* [Getting Started with AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - A short video tutorial series giving an overview of using AEM's headless features, including content modeling and GraphQL.
   * [GraphQL Modeling Basics](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html) - Learn how to define and use Content Fragments in Adobe Experience Manager (AEM) for use with GraphQL.

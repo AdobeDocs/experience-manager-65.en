@@ -1,14 +1,10 @@
 ---
 title: Changing the locale of AEM Forms workspace user interface
-seo-title: Changing the locale of AEM Forms workspace user interface
 description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
-seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
-uuid: c89ff150-a36e-45cc-99a6-8768dbe58eab
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 ---
@@ -16,37 +12,37 @@ exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 
 AEM Forms workspace provides out of the box support for English, French, German, and Japanese languages. It also provides capability to localize AEM Forms workspace user interface to any other language.
 
-To localize AEM Forms workspace user interface to language of your choice:
+To localize the AEM Forms workspace user interface to the language of your choice:
 
 * Localize text of the AEM Forms workspace.
 * Localize collapsed categories, queues, and processes.
 * Localize Date Picker
 
-Before performing above steps, ensure that you follow the steps listed at [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md).
+Before performing the above steps, ensure that you follow the steps listed at [Generic steps for AEM Forms workspace customization](../../forms/using/generic-steps-html-workspace-customization.md).
 
 >[!NOTE]
 >
->To change the language of the login screen of AEM Forms workspace, see [Creating a new login screen](../../forms/using/creating-new-login-screen.md).
+>To change the language of the login screen of the AEM Forms workspace, see [Creating a new login screen](../../forms/using/creating-new-login-screen.md).
 
 ## Localizing text {#localizing-text}
 
-Perform the following steps to add support for a language *New* and the browser locale code *nw*.
+Perform the following steps so you can add support for a language *New* and the browser locale code *nw*.
 
 1. Log in to CRXDE Lite.
    The default URL of CRXDE Lite is `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Navigate to the location `apps/ws/locales` and create a new folder `nw.`
+1. Navigate to the location `apps/ws/locales` and create a folder `nw.`
 1. Copy the file `translation.json`from the location `/apps/ws/locales/en-US` to location `/apps/ws/locales/nw` .
 1. Navigate to `/apps/ws/locales/nw` and open `translation.json` for editing. Make locale-specific changes to the translation.json file.
 
-   The following examples contain the translation.json file for English and French locales of AEM Forms workspace.
+   The following examples contain the translation.json file for English and French locales of the AEM Forms workspace.
 
    ![translation_json_in_en](assets/translation_json_in_en.png) ![translation_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Localizing collapsed categories, queues, and processes {#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms workspace uses images to display headers of categories, queues, and processes. You require development package to localize these headers. For detailed information about creating development package, see [Building AEM Forms workspace code.](introduction-customizing-html-workspace.md#building-html-workspace-code)
+AEM Forms workspace uses images to display headers of categories, queues, and processes. You require a development package to localize these headers. For detailed information about creating a development package, see [Building AEM Forms workspace code.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
-In the following steps, it is assumed that the new localized image files are *Categories_nw.png*, *Queue_nw.png*, and *Processes_nw.png*. The recommended width of the images is 19px.
+In the following steps, it is assumed that the new localized image files are *Categories_nw.png*, *Queue_nw.png*, and *Processes_nw.png*. The recommended width of the images should be set to 19 pixels.
 
 >[!NOTE]
 >
@@ -54,7 +50,7 @@ In the following steps, it is assumed that the new localized image files are *Ca
 
 ![collapsing_panels_image](assets/collapsing_panels_image.png)
 
-Perform the following steps to localize the images:
+To localize the images, perform the following steps:
 
 1. Using a WebDAV client, place the image files in the */apps/ws/images* folder.
 1. Navigate to */apps/ws/css*. Open *newStyle.css* for editing and add the following entries:
@@ -75,7 +71,7 @@ Perform the following steps to localize the images:
 
 1. Perform all the semantic changes listed in the [Workspace Customization](../../forms/using/introduction-customizing-html-workspace.md) article.
 1. Navigate to the *js/runtime/utility* folder and open the *usersession.js* file for editing.
-1. Locate the code listed in orignal code block and add condition *lang !== 'nw'* to the if statement:
+1. Locate the code listed in the original code block and add the condition *lang !== 'nw'* to the if statement:
 
    ```javascript
    // Orignal code
@@ -104,12 +100,12 @@ Perform the following steps to localize the images:
 
 ## Localizing Date Picker {#localizing-date-picker}
 
-You require development package to localize the *datepicker* API. For detailed information about creating development package, see [Building AEM Forms workspace code](introduction-customizing-html-workspace.md#building-html-workspace-code).
+You require a development package to localize the *datepicker* API. For detailed information about creating a development package, see [Building AEM Forms workspace code](introduction-customizing-html-workspace.md#building-html-workspace-code).
 
 1. Download and extract the [jQuery UI Package](https://jqueryui.com/download/all/), navigate to *&lt;extracted jquery UI package&gt;*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
-1. Copy the jquery.ui.datepicker-nw.js file for locale code nw to apps/ws/js/libs/jqueryui and make locale specific changes to the file.
+1. Copy the jquery.ui.datepicker-nw.js file for locale code nw to apps/ws/js/libs/jqueryui and make locale-specific changes to the file.
 1. Navigate to `apps/ws/js` and open the `jquery.ui.datepicker-nw.js` file for editing.
-1. In the main.js file create an alias for `jquery.ui.datepicker-nw.js.` The code to create an alias for the `jquery.ui.datepicker-nw.js` file is:
+1. In the main.js file, create an alias for `jquery.ui.datepicker-nw.js.` The code to create an alias for the `jquery.ui.datepicker-nw.js` file is:
 
    ```javascript
    jqueryuidatepickernw : pathprefix + 'libs/jqueryui/jquery.ui.datepicker-nw'

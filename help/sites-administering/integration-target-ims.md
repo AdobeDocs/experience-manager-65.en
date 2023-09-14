@@ -1,6 +1,6 @@
 ---
 title: Integration with Adobe Target using IMS
-description: Learn about integrating AEM with Adobe Target using IMS
+description: Learn about integrating AEM with Adobe Target using IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 ---
 
@@ -21,17 +21,17 @@ The integration of AEM with Adobe Target via the Target Standard API requires th
 
 Before starting this procedure:
 
-* [Adobe Support](https://helpx.adobe.com/contact/enterprise-support.ec.html) must provision your account for:
+* [Adobe Support](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) must provision your account for:
 
   * Adobe Console
   * Adobe Developer Console
   * Adobe Target and 
   * Adobe IMS (Identity Management System)
 
-* Your organization's System Admininstrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
+* Your organization's System Administrator should use the Admin Console to add the required developers in your organization to the relevant product profiles. 
 
   * This provides the specific developers with permissions to enable integrations within the Adobe Developer Console. 
-  * For further details see [Manage Developers](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+  * See [Manage Developers](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 
 ## Configuring an IMS Configuration - Generating a Public Key {#configuring-an-ims-configuration-generating-a-public-key}
@@ -39,9 +39,9 @@ Before starting this procedure:
 The first stage of the configuration is to create an IMS Configuration in AEM and generate the Public Key.
 
 1. In AEM open the **Tools** menu.
-1. In the **Security** section select **Adobe IMS Configurations**.
+1. In the **Security** section, select **Adobe IMS Configurations**.
 1. Select **Create** to open the **Adobe IMS Technical Account Configuration**.
-1. Using the drop down under **Cloud Configuration**, select **Adobe Target**.
+1. Using the drop-down under **Cloud Configuration**, select **Adobe Target**.
 1. Activate **Create new certificate** and enter a new alias.
 1. Confirm with **Create certificate**.
 
@@ -51,21 +51,21 @@ The first stage of the configuration is to create an IMS Configuration in AEM an
 
    >[!CAUTION]
    >
-   >Keep this configuration open, it will be needed again when [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+   >Keep this configuration open; it is needed again when [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![Information message to add certificate on Adobe I/O](assets/integrate-target-io-02.png)
 
 ## Configuring IMS for Adobe Target integration with AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
-Using the Adobe Developer Console you need to create a Project (integration) with Adobe Target that AEM will use, then assign the required privileges.
+Using the Adobe Developer Console, create a Project (integration) with Adobe Target that AEM can use, then assign the required privileges.
 
 ### Creating the Project {#creating-the-project}
 
-Open the Adobe Developer Console to create a Project with Adobe Target that AEM will use:
+To create a Project with Adobe Target that AEM can use, open the Adobe Developer Console:
 
 >[!CAUTION]
 >
->Currently, we only support the Adobe Developer Console's **Service Account (JWT)** credential type. 
+>Currently, Adobe only supports the Adobe Developer Console's **Service Account (JWT)** credential type. 
 >
 >Do not use the **OAuth Server-to-Server** credential type, which will be supported in the future.
 
@@ -73,11 +73,11 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Any projects that you have will be shown. Select **Create New Project** - the location and usage will depend on:
+1. Any projects that you have are shown. Select **Create New Project** - the location and usage depend on the following:
 
-   * If you do not have any project yet, **Create new project** will be center, bottom. 
+   * If you do not have any project yet, **Create new project** is center, bottom. 
      ![Create New Project - First Project](assets/integration-target-io-02.png)
-   * If you already have existing projects these will be listed and **Create new project** will be top right. 
+   * If you already have existing projects, these are listed and **Create new project** is on the upper right. 
      ![Create New Project - Multiple Projects](assets/integration-target-io-03.png)
 
 
@@ -89,7 +89,7 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
 
    >[!NOTE]
    >
-   >If you are subscribed to Adobe Target, but do not see it listed then you should check the [Prerequistes](#prerequisites).
+   >If you are subscribed to Adobe Target, but do not see it listed then you should check the [Prerequisites](#prerequisites).
 
    ![Clicking next](assets/integration-target-io-12.png)
 
@@ -112,17 +112,17 @@ Open the Adobe Developer Console to create a Project with Adobe Target that AEM 
 
    ![Selecting an API to add](assets/integration-target-io-16.png)
 
-1. The creation will be confirmed.
+1. The creation is confirmed.
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![integrate-target-io-07](assets/integrate-target-io-07.png)
 -->
 
 ### Assigning privileges to the Integration {#assigning-privileges-to-the-integration}
 
-You must now assign the required privileges to the integration:
+Now assign the required privileges to the integration:
 
 1. Open the Adobe **Admin Console**:
 
@@ -139,7 +139,7 @@ From the Adobe Developer Console - Projects you can see a list of all your integ
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-Select **View** (to the right of a specific project entry) to show further details about the configuration. These include:
+To show further details about the configuration, select **View** (to the right of a specific project entry). These include:
 
 * Project overview
 * Insights
@@ -150,11 +150,11 @@ Select **View** (to the right of a specific project entry) to show further detai
 * APIS
   * For example, Adobe Target
 
-Some of these you will need to complete the integration of Adobe Target in AEM based on IMS.
+Some of these you must complete the integration of Adobe Target in AEM based on IMS.
 
 ## Completing the IMS Configuration in AEM {#completing-the-ims-configuration-in-aem}
 
-Returning to AEM you can complete the IMS configuration by adding required values from the Adobe Developer Console integration for Target:
+Returning to AEM, you can complete the IMS configuration by adding the required values from the Adobe Developer Console integration for Target:
 
 1. Return to the [IMS Configuration open in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Select **Next**.
@@ -171,7 +171,7 @@ Returning to AEM you can complete the IMS configuration by adding required value
 
 1. Confirm with **Create**.
 
-1. Your Adobe Target configuration will be shown in the AEM console.
+1. Your Adobe Target configuration is shown in the AEM console.
 
    ![Adobe IMS Technical Account Configuration](assets/integrate-target-io-11.png)
 
@@ -192,7 +192,7 @@ To confirm that the configuration is operating as expected:
 
    ![Adobe IMS Configurations](assets/integrate-target-io-12.png)
 
-1. If successful, you will see the message:
+1. If successful, you see the message:
 
    ![Checking a configuration](assets/integrate-target-io-13.png)
 
@@ -203,15 +203,15 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 1. Open the **Tools** menu. Then, within the **Cloud Services** section, select **Legacy Cloud Services**.
 1. Scroll down to **Adobe Target** and select **Configure now**.
 
-   The **Create Configuration** dialog will open.
+   The **Create Configuration** dialog box opens.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 
 1. Confirm with **Create**.
 
-   The **Edit Component** dialog will open.
+   The **Edit Component** dialog box opens.
 
 1. Enter the details in the **Adobe Target Settings** tab:
 
@@ -221,7 +221,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
       >[!NOTE]
       >
-      >For IMS this value needs to be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
+      >For IMS, this value must be taken from Target itself. You can log into Target and extract the Tenant ID from the URL.
       >
       >For example, if the URL is:
       >
@@ -235,15 +235,15 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
     * **API Type**: REST
 
-    * **A4T Analytics Cloud Configuration**: Select the Analytics cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+    * **A4T Analytics Cloud Configuration**: Select the Analytics Cloud configuration that is used for target activity goals and metrics. You need this if you are using Adobe Analytics as the reporting source when targeting content. If you do not see your cloud configuration, see the note in [Configuring A4T Analytics Cloud Configuration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
-    * **Use accurate targeting**: By default this check box is selected. If selected, the cloud service configuration will wait for the context to load before loading content. See note that follows.
+    * **Use accurate targeting**: By default this check box is selected. If selected, the cloud service configuration waits for the context to load before loading content. See note that follows.
 
-    * **Synchronize segments from Adobe Target**: Select this option to download segments that are defined in Target to use them in AEM. You must select this option when the API Type property is REST, because inline segments are not supported and you always need to use segments from Target. (Note that the AEM term of 'segment' is equivalent to the Target 'audience'.)
+    * **Synchronize segments from Adobe Target**: Select this option so you can download segments that are defined in Target to use them in AEM. Select this option when the API Type property is REST, because inline segments are not supported and you must always use segments from Target. (The AEM term of 'segment' is equivalent to the Target 'audience'.)
 
     * **Client library**: Select whether you want the AT.js client library, or mbox.js (deprecated).
 
-    * **Use Tag Management System to deliver client library**: Use DTM (deprecated), Adobe Launch or any other tag management system.
+    * **Use Tag Management System to deliver client library**: Use DTM (deprecated), Adobe Launch, or any other tag management system.
 
     * **Custom AT.js**: Leave blank if you checked the Tag Management box or to use the default AT.js. Alternatively upload your custom AT.js. Only appears if you have selected AT.js.
 
@@ -255,26 +255,26 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
    If the connection is successful, the message **Connection successful** is displayed.
 
-1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
+1. Select **OK** on the message, followed by **OK** on the dialog box so you can confirm the configuration.
 
-1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
+1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that are sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
 ### Tenant ID and Client Code {#tenant-client}
 
 With [Adobe Experience Manager 6.5.8.0](/help/release-notes/release-notes.md), the Client Code field had been added to the Target configuration window.
 
-When configuring the Tenant ID and Client Code fields, please be aware of the following:
+When configuring the Tenant ID and Client Code fields, be aware of the following:
 
 1. For most customers, the Tenant ID and the Client Code are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
 2. For legacy purposes, you can also enter different values in the Tenant ID and the Client Code fields.
 
-In both cases, be aware that:
+In both cases, be aware of the following:
 
-* By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
-* You have the option to change the default Tenant ID set.
-* Accordingly, the backend calls to Target will be based on the Tenant ID and the client side calls to Target will be based on the Client Code.
+* By default, the Client Code (if added first) is also automatically copied into the Tenant ID field.
+* You can optionally change the default Tenant ID set.
+* So, the backend calls to Target are based on the Tenant ID and the client side calls to Target are based on the Client Code.
 
-As stated previously, the first case is the most common for AEM 6.5. Either way, make sure **both** fields contain the correct information depending on your requirements.
+As stated previously, the first case is the most common for AEM 6.5. Either way, make sure that **both** fields contain the correct information depending on your requirements.
 
 >[!NOTE]
 >
