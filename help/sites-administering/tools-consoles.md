@@ -1,20 +1,16 @@
 ---
 title: Tools Consoles
-seo-title: Tools Consoles
 description: Learn about the different tools consoles throughout AEM.
-seo-description: Learn about the different tools consoles throughout AEM.
-uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 ---
 # Tools Consoles{#tools-consoles}
 
-The **Tools** consoles provide access to a number of specialized tools that help you administer your websites, digital assets and other aspects of your content repository. There are currently two flavors of the **Tools** console dependent on the UI you are using:
+The **Tools** consoles provide access to several specialized tools that help you administer your websites, digital assets, and other aspects of your content repository. There are currently two flavors of the **Tools** console dependent on the UI you are using:
 
 * [Tools - Touch-Optimized UI](#tools-touch-optimized-ui)
 * [Tools - Classic UI](#tools-classic-ui)
@@ -41,7 +37,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -153,7 +149,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td> </td>
-   <td>External Link Checker<br /> </td>
+   <td>External Linkchecker<br /> </td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -368,11 +364,11 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Client Context Configurations<br /> </td>
-   <td>The Client Context represents a dynamically assembled collection of user data. The default and marketing cloud configurations are held here.<br /> </td>
+   <td>The Client Context represents a dynamically assembled collection of user data. The default and Experience Cloud configurations are held here.<br /> </td>
   </tr>
   <tr>
    <td>Cloud Services Configurations<br /> </td>
-   <td>Holds configurations related to Integrating with the Adobe Marketing Cloud.</td>
+   <td>Holds configurations related to Integrating with the Adobe Experience Cloud.</td>
   </tr>
   <tr>
    <td>Cloud Settings<br /> </td>
@@ -384,11 +380,11 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>DAM </td>
-   <td>Provides access to various options.</td>
+   <td>Access to various options.</td>
   </tr>
   <tr>
    <td>Dashboards</td>
-   <td>Lets you create reporting dashboards; these provide a customizable way to define pages that display consolidated data.</td>
+   <td>Create reporting dashboards; these provide a customizable way to define pages that display consolidated data.</td>
   </tr>
   <tr>
    <td>Custom Documentation</td>
@@ -400,15 +396,15 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Form Submissions</td>
-   <td>Holds the list of form submissions received.</td>
+   <td>The list of form submissions received.</td>
   </tr>
   <tr>
    <td>Importers </td>
-   <td>Provides access to various options.</td>
+   <td>Access to various options.</td>
   </tr>
   <tr>
    <td>External Linkchecker</td>
-   <td>External linkchecker.</td>
+   <td>External Linkchecker.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -420,19 +416,19 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Replication - Replication Agents</td>
-   <td>Used to replicate data from author to publish when publishing pages, or with reverse replication to return user comments from the publish environment to author.</td>
+   <td>Used to replicate data from the Author instance to Publish when publishing pages, or with reverse replication to return user comments from the publish environment to the Author.</td>
   </tr>
   <tr>
    <td>Reports</td>
-   <td>AEM provides a range of customized reports, lets you create customized reports and/or develop your own.</td>
+   <td>AEM provides a range of customized reports, lets you create customized reports or develop your own.</td>
   </tr>
   <tr>
    <td>Default Page Scaffolding</td>
-   <td>With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.</td>
+   <td>With scaffolding, you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.</td>
   </tr>
   <tr>
    <td>Security - Self-Service Configuration </td>
-   <td>Lets you configure the emails that users automatically receive when they create an account or reset a password and to confirm a password that has been reset.</td>
+   <td>Configure the emails that users automatically receive when they create an account or reset a password and to confirm a password that has been reset.</td>
   </tr>
   <tr>
    <td>Segmentation</td>
@@ -448,7 +444,7 @@ The **Tools** consoles provide access to a number of specialized tools that help
   </tr>
   <tr>
    <td>Versioning - Purge Versions</td>
-   <td>Lets you purge page versions as required.</td>
+   <td>Purge page versions as required.</td>
   </tr>
   <tr>
    <td>Workflow</td>

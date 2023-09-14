@@ -1,20 +1,16 @@
 ---
 title: Proxy Server Tool (proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: Learn about the Proxy Server Tool in AEM.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 ---
 # Proxy Server Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
-The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server keeps track of all the client-server interactions and outputs a log of the entire TCP communication. This lets you monitor exactly what is going on, without having to access the main server.
+The proxy server acts as an intermediate server that relays requests between a client and a server. The proxy server tracks all the client-server interactions and outputs a log of the entire TCP communication. This lets you monitor exactly what is going on, without having to access the main server.
 
 You can find the proxy server in the appropriate installation folder:
 
@@ -41,10 +37,10 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Options {#options}
 
 * **q (quiet Mode)** Does not write the requests to the console window. Use this if you do not want to slow down the connection, or if you log the output to a file (see -logfile option).
-* **b (binary Mode)** If you are looking for specific byte combinations in the traffic, enable binary mode. The output will then contain the hexadecimal and character output.
+* **b (binary Mode)** If you are looking for specific byte combinations in the traffic, enable binary mode. The output contains the hexadecimal and character output.
 * **t (time stamp log entries)** Adds a time stamp to each log output. The time stamp is in seconds, so it may not be suitable for checking single requests. Use it to locate events that occurred at a specific time if you use the proxy server over a longer time period.
-* **logfile &lt;filename&gt; (write to log file)** Writes the client-server conversation to a log file. This parameter works also in quiet mode.
-* **i &lt;numIndentions&gt; (add indention)** Each active connection is indented for better readability. Default is 16 levels. (New in proxy.jar version 1.16).
+* **logfile &lt;filename&gt; (write to log file)** Writes the client-server conversation to a log file. This parameter also works in quiet mode.
+* **i &lt;numIndentions&gt; (add indention)** Each active connection is indented for better readability. The default is 16 levels. (New in proxy.jar version 1.16).
 
 ## Uses of the Proxy Server Tool {#uses-of-the-proxy-server-tool}
 
@@ -52,7 +48,7 @@ The following scenarios illustrate a few of the purposes for which the Proxy Ser
 
 **Check for Cookies and their Values**
 
-The following log entry example shows all cookies and their values sent by the client on the 6th connection opened since proxy start:
+The following log entry example shows all cookies and their values sent by the client on the sixth connection opened since proxy start:
 
 ```xml
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
@@ -68,7 +64,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Checking if Keep-Alive works**
 
-**Keep-Alive** means that a client re-uses the connection to the server to transports multiple files (the page code, pictures, style sheets and so on). Without keep-alive, the client has to establish a new connection for each request.
+**Keep-Alive** means that a client reuses the connection to the server to transport multiple files (the page code, pictures, style sheets, and so on). Without keep-alive, the client has to establish a new connection for each request.
 
 To check if keep-alive works:
 
@@ -80,7 +76,7 @@ To check if keep-alive works:
 
 **Finding Lost Requests**
 
-If you lose requests in a complex server setting, for example with a firewall and a dispatcher, you can use the proxy server to find out where the request was lost. In case of a firewall:
+If you lose requests in a complex server setting, for example with a firewall and a Dispatcher, you can use the proxy server to find out where the request was lost. If there is a firewall:
 
 1. Start a proxy before a firewall
 1. Start another proxy after a firewall
@@ -92,7 +88,7 @@ If you experience hanging requests from time to time:
 
 1. Start a proxy.jar.
 1. Wait or write the access log into a file - with each entry having a timestamp.
-1. When the request start hanging you can see how many connections were open and which request is causing trouble.
+1. When the request starts hanging, you can see how many connections were open and which request is causing trouble.
 
 ## The format of Log Messages {#the-format-of-log-messages}
 
@@ -120,11 +116,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-This shows the number of bytes that passed between client and server on the 6th connection and at the average speed.
+This shows the number of bytes that passed between client and server on the sixth connection and at the average speed.
 
 ## An Example of Log Output {#an-example-of-log-output}
 
-We shall review a simple template which produces the following code when requested:
+Review a simple template which produces the following code when requested:
 
 ```xml
 <html>
@@ -138,13 +134,13 @@ We shall review a simple template which produces the following code when request
 </html>
 ```
 
-If AEM is running on localhost:4303, start the proxy server as following:
+If AEM is running on localhost:4303, start the proxy server as follows:
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-You can access the server (`localhost:4303`) without the proxy server, but if you access it via `localhost:4444`, the proxy server will log the communication. Open a browser and access a page created with the above template. After that, look at the log file.
+You can access the server (`localhost:4303`) without the proxy server, but if you access it via `localhost:4444`, the proxy server logs the communication. Open a browser and access a page created with the above template. After that, look at the log file.
 
 >[!NOTE]
 >
@@ -175,7 +171,7 @@ The Client requests a keep-alive connection, so the server can send multiple fil
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-The proxy server is a good tool to verify whether cookies are properly set or not. Here, we see the:
+The proxy server is a good tool to verify whether cookies are properly set or not. Here, you see the following:
 
 * cq3session cookie generated by AEM
 * the show mode switch cookie generated by the CFC
@@ -275,4 +271,4 @@ The above example is comparatively simple, because the two connections occur seq
 * first the server returns the HTML code
 * then the browser requests the image and opens a new connection
 
-In practice, a page may generate many parallel requests for images, style sheets, JavaScript files, etc. This means that the logs have overlapping entries of parallel open connections. In that case, we recommended to use option -i to improve readability.
+In practice, a page may generate many parallel requests for images, style sheets, JavaScript files, and so on. This means that the logs have overlapping entries of parallel open connections. In that case, Adobe recommends using option -i to improve readability.

@@ -1,14 +1,10 @@
 ---
 title: Principal View for Permissions Management
-seo-title: Principal View for Permissions Management
 description: Learn about the new Touch UI interface that facilitates permissions management.
-seo-description: Learn about the new Touch UI interface that facilitates permissions management.
-uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 ---
@@ -17,13 +13,13 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 
 ## Overview {#overview}
 
-AEM 6.5 introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user friendly and efficient.
+AEM 6.5 introduces Permissions Management for Users and Groups. The main functionality remains the same as the classic UI, but is more user-friendly and efficient.
 
 ## How to Use {#how-to-use}
 
 ### Accessing the UI {#accessing-the-ui}
 
-The new UI based permissions management is accessed through the Permissions card under Security as shown below:
+The new UI-based permissions management is accessed through the Permissions card under Security as shown below:
 
 ![Permissions Management UI](assets/screen_shot_2019-03-17at63333pm.png)
 
@@ -43,21 +39,21 @@ The frame on the left allows users to scroll down to find any principal or searc
 
 ![View Permissions for a Principal](assets/doi-1.png)
 
-Clicking on the name shows the assigned permissions on the right. The permissions pane shows the list of Access Control Entries on specific paths along with configured restrictions.
+Clicking the name shows the assigned permissions on the right. The permissions pane shows the list of Access Control Entries on specific paths along with configured restrictions.
 
 ![View ACL List](assets/trei-1.png)
 
 ### Adding new Access Control Entry for a Principal {#adding-new-access-control-entry-for-a-principal}
 
-New permissions can be added by adding a new Access Controlling Entry by clicking the Add ACE button.
+New permissions can be added by adding an Access Controlling Entry. Simply click the Add ACE button.
 
 ![Add new ACL for a Principal](assets/patru.png)
 
-This brings up the window shown below, the next step is to choose a path where the permission needs to be configured.
+This brings up the window shown below, the next step is to choose a path where the permission must be configured.
 
 ![Configure permissions path](assets/cinci-1.png)
 
-Here we select a path where we want to configure a permission for **dam-users**:
+Here, a path is selected where you can configure a permission for **dam-users**:
 
 ![Example configuration for dam-users](assets/sase-1.png)
 
@@ -67,7 +63,7 @@ Privileges can be added by searching using the text field and then selecting fro
 
 >[!NOTE]
 >
->For a complete list of privileges and descriptions, please see [this page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>For a complete list of privileges and descriptions, see [this page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![Search permission for a given path.](assets/image2019-3-21_0-5-47.png) ![Add New Entry for 'dam-users' as shown by a path selected in vertical columns.](assets/image2019-3-21_0-6-53.png)
 
@@ -77,13 +73,13 @@ After the list of privileges has been selected, the user can choose the Permissi
 
 ### Using Restrictions {#using-restrictions}
 
-In addition to list of privileges and the Permission Type on a given path, this screen also allows to add restrictions for fine grained access control as shown below:
+In addition to the list of privileges and the Permission Type on a given path, this screen also lets you add restrictions for fine grained access control as shown below:
 
 ![Add restrictions](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
->For more information on what each restriction means, please consult [the Jackrabbit Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>For more information on what each restriction means, see [the Jackrabbit Oak Documentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 Restrictions can be added as shown below by choosing the restriction type, entering the value and hitting the **+** icon. 
 
@@ -95,7 +91,7 @@ The new ACE is reflected in the Access Control List as shown below. Note that `j
 
 Access Control Entries can be edited by selecting a principal and choosing the ACE that you want to edit.
 
-For example here we can edit the below entry for **dam-users** by clicking the pencil icon on the right:
+For example,  here you can edit the below entry for **dam-users** by clicking the pencil icon on the right:
 
 ![Add restriction](assets/image2019-3-21_0-35-39.png)
 
@@ -103,11 +99,11 @@ The edit screen is shown with configured ACEs preselected, these can be deleted 
 
 ![Edit entry](assets/noua-1.png)
 
-Here we are adding the `addChildNodes` privilege for **dam-users** on the given path.
+Here the `addChildNodes` privilege is added for **dam-users** on the given path.
 
 ![Add privilege](assets/image2019-3-21_0-45-35.png)
 
-Changes can be saved by clicking the **Save** button on top right, and the changes will reflect in the new permissions for **dam-users** as shown below:
+Changes can be saved by clicking the **Save** button on top right, and the changes are reflected in the new permissions for **dam-users** as shown below:
 
 ![Save changes](assets/zece-1.png)
 
@@ -119,7 +115,7 @@ Access Control Entries can be deleted to remove all permissions given to a princ
 
 ### Classic UI Privilege Combinations {#classic-ui-privilege-combinations}
 
-Note that the new permissions UI explicitly uses the basic set of privileges instead of predefined combinations that did not truly reflect exact underlying privileges that were granted.
+The new permissions UI explicitly uses the basic set of privileges instead of predefined combinations that do not truly reflect the exact underlying privileges that were granted.
 
 It caused confusion as to what exactly is being configured. The following table lists the mapping between the privilege combinations from the Classic UI to the actual privileges that constitute them:
 

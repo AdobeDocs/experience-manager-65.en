@@ -1,12 +1,10 @@
 ---
 title: Content page authoring with Content Fragments
 description: AEM Content Fragments let you design, create, curate, and use page-independent content.
-uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 ---
@@ -22,14 +20,14 @@ Together with the updated JSON exporter, structured content fragments can also b
 >
 >**Content Fragments** and **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** are different features within AEM:
 >
->* **Content Fragments** are editorial content, primarily text and related images. They are pure content, without design and layout.
+>* **Content Fragments** are editorial content, primarily text, and related images. They are pure content, without design and layout.
 >* **Experience Fragments** are fully laid out content; a fragment of a web page.
 >
 >Experience Fragments can contain content in the form of Content Fragments, but not the other way around.
 
 >[!CAUTION]
 >
->This page must be read in conjunction with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) as it introduces basic terminology and concepts, together with creating and managing fragments.
+>This page must be read with [Working with Content Fragments](/help/assets/content-fragments/content-fragments.md) (and related pages) because it introduces basic terminology and concepts, together with creating and managing fragments.
 
 The content fragments enable:
 
@@ -67,19 +65,19 @@ The content fragments enable:
 
     * Open the **Assets** browser and filter for **Content Fragments** (the default is Images). Then drag the required fragment onto the component instance.
 
-    * Select the content fragment component, then **Configure** from the toolbar. In the dialog you can open the selection dialog to browse and select the required **Content Fragment**.
+    * Select the content fragment component, then **Configure** from the toolbar. In the dialog, you can open the selection dialog box to browse and select the required **Content Fragment**.
 
    >[!NOTE]
    >
-   >An alternative method is to drag a specific content fragment directly onto the page. This will automatically create the associated component (Content Fragment).
+   >An alternative method is to drag a specific content fragment directly onto the page. This automatically creates the associated component (Content Fragment).
 
-1. Initially the content from the **Main** Element and **Master** (variation) will be shown. You can [select other elements and/or variations](#selecting-the-element-or-variation) as required.
+1. Initially the content from the **Main** Element and **Master** (variation) is shown. You can [select other elements and/or variations](#selecting-the-element-or-variation) as required.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
    >[!NOTE]
    >
-   >For more information about further editing functionality see also:
+   >For more information about further editing functionality, see the following:
    >
    >
    >
@@ -90,9 +88,9 @@ The content fragments enable:
 
 ### Selecting the Element or Variation {#selecting-the-element-or-variation}
 
-Open the fragment's **Configuration** dialog to configure the fragment for use on the current page. The dialog can depend on the component used.
+Open the fragment's **Configuration** dialog box so you can configure the fragment for use on the current page. The dialog can depend on the component used.
 
-In the appropriate configuration dialog you can select the available parameters, including:
+In the appropriate configuration dialog box, you can select the available parameters, including:
 
 * **Content Fragment**
 
@@ -106,8 +104,8 @@ In the appropriate configuration dialog you can select the available parameters,
 
 * **Element**
 
-    * The default **Main** will always be available.
-    * A selection will be available if the fragment was created with an appropriate template.
+    * The default **Main** is always available.
+    * A selection is available if the fragment was created with an appropriate template.
 
   >[!NOTE]
   >
@@ -115,8 +113,8 @@ In the appropriate configuration dialog you can select the available parameters,
 
 * **Variation**
 
-    * The default **Master** will always be available.
-    * A selection will be available if variations were created for the fragment.
+    * The default **Master** is always available.
+    * A selection is available if variations were created for the fragment.
 
 * **Paragraphs**: specify the range of paragraphs to include:
 
@@ -129,17 +127,17 @@ In the appropriate configuration dialog you can select the available parameters,
 
 ### Quick Connection to Fragment Editor {#quick-connection-to-fragment-editor}
 
-You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This will let you [edit and manage the content fragment](/help/assets/content-fragments/content-fragments.md).
+You can open the fragment source for editing (the asset) using the **Edit** icon on the component toolbar. This lets you [edit and manage the content fragment](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
->As always, editing the fragment source will impact all pages that reference that content fragment.
+>As always, editing the fragment source can impact all pages that reference that content fragment.
 
 ### Adding In-Between Content {#adding-in-between-content}
 
 When a specific content fragment is added to the page, there is a **Drag components here** placeholder between each HTML paragraph (and at the top/bottom) of the fragment.
 
-This lets you add extra content [in-between (i.e. in-between content)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) the fragment content (at any of the available points), without having to change the root fragment.
+This lets you add extra content [in-between (that is, in-between content)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) the fragment content (at any of the available points), without having to change the root fragment.
 
 For in-between content you can:
 
@@ -161,9 +159,9 @@ For in-between content you can:
 
 >[!CAUTION]
 >
->After you have added in-between content to a content fragment on your page, then changing the structure of the underlying content fragment (i.e. in the content fragment editor) could lead to erroneous/unexpected results.
+>After you have added in-between content to a content fragment on your page, then changing the structure of the underlying content fragment (that is, in the content fragment editor) could lead to erroneous/unexpected results.
 >
->When this occurs the in-between content is kept as is:
+>When this occurs, the in-between content is kept as is:
 >
 >* In-between components have an absolute position within the sequence of components in the fragment flow. This position does not change, even when the content of paragraphs in the fragment changes.
 >
@@ -173,7 +171,7 @@ For in-between content you can:
 
 ### Using Associated Content {#using-associated-content}
 
-If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md) these assets will be available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
+If you have [associated content](/help/assets/content-fragments/content-fragments-assoc-content.md) with the [content fragment](/help/assets/content-fragments/content-fragments.md), these assets are available from the side panel (after you place your fragment on the content page). Associated content is effectively a special source of content for of [in-between content](#adding-in-between-content).
 
 >[!NOTE]
 >
@@ -181,11 +179,11 @@ If you have [associated content](/help/assets/content-fragments/content-fragment
 
 >[!NOTE]
 >
->If you have multiple content fragments on the one page, the **Associated Content** tab will show assets appropriate to all fragments.
+>If you have multiple content fragments on the one page, the **Associated Content** tab shows assets appropriate to all fragments.
 
-Once you have added a fragment with associated content to your page a new tab (**Associated Content**) is opened in the side panel.
+Once you have added a fragment with associated content to your page, a new tab (**Associated Content**) is opened in the side panel.
 
-From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component will be created):
+From here you can drag the assets to the required location (either to an existing component or to the required position where the appropriate component is created):
 
 ![cfm-6420-03](assets/cfm-6420-03.png)
 
@@ -195,7 +193,7 @@ If assets (for example, images) have been inserted into the fragment itself, the
 
 For example, for an image you can
 
-* Crop, rotate or flip the image.
+* Crop, rotate, or flip the image.
 * Add a title or alternative text.
 * Specify a size.
 * You can also configure the layout.
@@ -204,7 +202,7 @@ Other changes, such as move, copy, delete must be made in the fragment editor.
 
 ### Publishing {#publishing}
 
-Fragments need to be published so they can used used on your published web pages:
+Fragments must be published so that they can be used on your published web pages:
 
 * A fragment can be published after [creating the fragment in the Assets console](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
-* If an *unpublished fragment* is used on a page that is being published, the fragment can also be published at this time.
+* If an *unpublished fragment* is used on a page that is being published, the fragment can also be published now.

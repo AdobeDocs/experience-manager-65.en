@@ -1,15 +1,10 @@
 ---
 title: Customize create correspondence UI
-seo-title: Customize create correspondence UI
-description: Learn how to customize create correspondence UI.
-seo-description: Learn how to customize create correspondence UI.
-uuid: 9dee9b6f-4129-4560-9bf8-db48110b76f7
+description: Learn how to customize create correspondence user interface.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
-
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
 ---
@@ -30,27 +25,27 @@ The custom icon in the Create Correspondence UI
 To set up a logo image of your choice, do the following:
 
 1. Create the appropriate [folder structure in CRX](#creatingfolderstructure). 
-1. [Upload the new logo file](#uploadlogo) in the folder you have created in CRX.   
+1. [Upload the new logo file](#uploadlogo) in the folder that you have created in CRX.   
 
 1. [Set up the CSS](#createcss) on CRX to refer to the new logo.
 1. Clear the browser history and [refresh the Create Correspondence UI](#refreshccrui).
 
 ## Creating the required folder structure {#creatingfolderstructure}
 
-Create the folder structure, as explained below, for hosting the custom logo image and the stylesheet. The new folder structure with the root folder /apps is similar to the /libs folder's structure.
+Create the folder structure, as explained below, for hosting the custom logo image and the style sheet. The new folder structure with the root folder /apps is similar to the /libs folder's structure.
 
 For any customization, create a parallel folder structure, as explained below, in the /apps branch.
 
-The /apps branch (folder structure):
+The `/apps` branch (folder structure):
 
-* Ensures that your files are safe in case of an update to the system. In case of upgrade, feature pack, or a hot fix, the /libs branch gets updated and if you host your changes in the /libs branch, they are overwritten.
-* Helps you not to disturb the present system/branch, which you possibly can unsettle by mistake if you use the default locations for storing the custom files.
-* Helps your resources get higher priority when AEM searches for resources. AEM is configured to search the /apps branch first and then the /libs branch to find a resource. This mechanism means that the system uses your overlay (and the customizations defined there).
+* Ensures that your files are safe if there is an update to the system. If there is an upgrade, feature pack, or a hot fix, the `/libs` branch gets updated and if you host your changes in the `/libs` branch, they are overwritten.
+* Helps to not disturb the present system/branch, which you can possibly unsettle by mistake if you use the default locations for storing the custom files.
+* Helps your resources get a higher priority when AEM searches for resources. AEM is configured to search the `/apps` branch first and then the `/libs` branch to find a resource. This mechanism means that the system uses your overlay (and the customizations defined there).
 
-Use the following steps to create the required folder structure in the /apps branch:
+Use the following steps to create the required folder structure in the `/apps` branch:
 
 1. Go to `https://'[server]:[port]'/[ContextPath]/crx/de` and login as Administrator.
-1. In the apps folder, create a folder named `css` with path/structure similar to the css folder (located in ccrui folder).   
+1. In the apps folder, create a folder named `css` with path/structure similar to the css folder (in the ccrui folder).   
   
    Steps for creating the css folder:
 
@@ -60,9 +55,9 @@ Use the following steps to create the required folder structure in the /apps bra
 
     1. Ensure that the Overlay Node dialog has the following values:
 
-       **Path:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+       **Path:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-       **Overlay Location:** /apps/
+       **Overlay Location:** `/apps/`
 
        **Match Node Types:** Checked
 
@@ -70,7 +65,7 @@ Use the following steps to create the required folder structure in the /apps bra
 
        >[!NOTE]
        >
-       >Do not make changes in the /libs branch. Any changes you do make may be lost, because this branch is liable to changes whenever you:
+       >Do not change the `/libs` branch. Any changes you do make may be lost, because this branch is liable to changes whenever you:
        >
        >    
        >    
@@ -82,7 +77,7 @@ Use the following steps to create the required folder structure in the /apps bra
 
     1. Click **OK**. The css folder is created in the specified path.
 
-1. In the apps folder, create a folder named `imgs` with path/structure similar to the imgs folder (located in ccrui folder).
+1. In the apps folder, create a folder named `imgs` with path/structure similar to the imgs folder (in the ccrui folder).
 
     1. Right-click the **imgs** folder at the following path and select **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
     1. Ensure that the Overlay Node dialog has the following values:
@@ -103,10 +98,10 @@ Use the following steps to create the required folder structure in the /apps bra
 
 ## Upload the new logo to CRX {#uploadlogo}
 
-Upload your custom logo file to CRX. Standard HTML rules govern the rendering of the logo. The image file formats supported are according to the browser you are using to access AEM Forms. All the browsers support JPEG, GIF, and PNG. For more information, see the browser-specific documentation on the supported image formats.
+Upload your custom logo file to CRX. Standard HTML rules govern the rendering of the logo. The image file formats supported are according to the browser that you are using to access AEM Forms. All the browsers support JPEG, GIF, and PNG. For more information, see the browser-specific documentation on the supported image formats.
 
 * The default dimensions of the logo image are 48 px &#42; 48 px. Ensure that your image is similar to this size or bigger than 48 px &#42; 48 px.
-* If the height of your logo image is more than 50 px, Create Correspondence user interface scales down the image to a maximum height of 50 px as this is the height of the header. While scaling the image down, Create Correspondence user interface maintains the aspect ratio of your image. 
+* If the height of your logo image is more than 50 px, the Create Correspondence user interface scales down the image to a maximum height of 50 px as this is the height of the header. While scaling the image down, the Create Correspondence user interface maintains the aspect ratio of your image. 
 * The Create Correspondence User Interface does not scale up your image if it is small, so ensure you use a logo image at least 48 px in height and sufficient width for clarity.
 
 Use the following steps to upload the custom logo file to CRX:
@@ -124,7 +119,7 @@ Use the following steps to upload the custom logo file to CRX:
 
 1. Click **Save All**.
 
-   Under the new file you have created (here CustomLogo.png), jcr:content property appears.
+   Under the new file that you have created (here CustomLogo.png), jcr:content property appears.
 
 1. Click jcr:content in the folder structure.
 
@@ -136,11 +131,11 @@ Use the following steps to upload the custom logo file to CRX:
 
    The Edit jcr:data dialog appears.
 
-   Now click on newlogo.png folder, double-click on jcr:content (dim option) and set type nt:resource. If not present create a property with name jcr:content.  
+   Now click the newlogo.png folder, then double-click jcr:content (dim option) and set the type nt:resource. If it is not present, create a property with the name jcr:content.  
 
 1. In the Edit jcr:data dialog, click **Browse** and select the image file you want to use as a logo (here CustomLogo.png).   
   
-   The image file formats supported are according to the browser you are using to access AEM Forms. All the browsers support JPEG, GIF, and PNG. For more information, see the browser-specific documentation on the supported image formats. 
+   The image file formats supported are according to the browser that you are using to access AEM Forms. All the browsers support JPEG, GIF, and PNG. For more information, see the browser-specific documentation on the supported image formats. 
 
    ![Sample custom logo file](assets/geometrixx-outdoors.png)
 
@@ -148,11 +143,11 @@ Use the following steps to upload the custom logo file to CRX:
 
 1. Click **Save All**.
 
-## Create the CSS to integrate the logo with the UI {#createcss}
+## Create the CSS for rendering the logo with the UI {#createcss}
 
 The custom logo image requires an additional style sheet to be loaded in the content context.
 
-Use the following steps to set up the style sheet for rendering the logo:
+Use the following steps to create the style sheet for rendering the logo with the UI:
 
 1. Go to `https://'[server]:[port]'/[contextpath]/crx/de`. If necessary, log in as Administrator.
 1. Create a file named customcss.css (you cannot use a different filename) in the following location:
@@ -173,9 +168,9 @@ Use the following steps to set up the style sheet for rendering the logo:
 
     1. Click **Save All**.
 
-## Refresh the Create Correspondence UI to see the custom logo {#refreshccrui}
+## Refresh the Create Correspondence UI so you can see the custom logo {#refreshccrui}
 
-Clear the browser cache and then open the Create Correspondence UI instance in your browser. You should see your custom logo. 
+Clear the browser cache, and then open the Create Correspondence UI instance in your browser so you can see your custom logo. 
 
 ![Create correspondence user interface with custom logo](assets/0_1_introscreenshot-1.png)
 

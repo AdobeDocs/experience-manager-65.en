@@ -1,12 +1,10 @@
 ---
 title: Authoring - the Environment and Tools in AEM
 description: The authoring environment of AEM provides various mechanisms for organizing and editing your content.
-uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 ---
@@ -32,7 +30,7 @@ You can edit a page with the page editor. For example:
 
 >[!NOTE]
 >
->The first time you open a page for editing, a series of slides will provide you with a tour of the features.
+>The first time you open a page for editing, a series of slides provides you with a tour of the features.
 >
 >You can skip the tour if wanted and repeat it at any time by selecting from the **Page Information** menu.
 
@@ -40,8 +38,8 @@ You can edit a page with the page editor. For example:
 
 When editing a page, **Help** can be accessed from:
 
-* the [**Page Information**](/help/sites-authoring/editing-page-properties.md#page-properties) selector; this will show the introductory slides (as shown the first time you access the editor).
-* the [configuration](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) dialog for specific components (using the ? icon in the dialog toolbar); this will show context sensitive help.
+* the [**Page Information**](/help/sites-authoring/editing-page-properties.md#page-properties) selector; this shows the introductory slides (as shown the first time that you access the editor).
+* the [configuration](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) dialog for specific components (using the question mark (?) icon in the dialog box's toolbar); this shows context-sensitive Help.
 
 Further [help-related resources are available from consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -49,13 +47,13 @@ Further [help-related resources are available from consoles](/help/sites-authori
 
 The components browser shows all components that are available for use on your current page. These can be dragged to the appropriate location, then edited to add your content.
 
-The components browser is a tab within the side panel (together with the [assets browser](/help/sites-authoring/author-environment-tools.md#assets-browser) and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree)). To open (or close) the side panel use the icon at the top left of the toolbar:
+The components browser is a tab within the side panel (together with the [assets browser](/help/sites-authoring/author-environment-tools.md#assets-browser) and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree)). To open (or close) the side panel, use the icon at the top left of the toolbar:
 
 ![ateat-03](assets/ateat-03.png)
 
-When you open the side panel it will slide open from the left side (select the **Components** tab if necessary). When open you can browse through all the components available for your page.
+When you open the side panel, it slides open from the left side (select the **Components** tab if necessary). When open you can browse through all the components available for your page.
 
-The actual appearance and handling is dependent on the device type you are using:
+The actual appearance and handling depends on the device type that you are using:
 
 >[!NOTE]
 >
@@ -65,7 +63,7 @@ The actual appearance and handling is dependent on the device type you are using
 
   The component browser completely covers the page being edited.
 
-  To add a component to your page touch-and-hold the required component and move it towards the right - the component browser will close to show the page again - where you can position the component.
+  To add a component to your page, touch-and-hold the required component and move it towards the right - the component browser closes to show the page again - where you can position the component.
 
   ![ateat-04](assets/ateat-04.png)
 
@@ -73,43 +71,43 @@ The actual appearance and handling is dependent on the device type you are using
 
   The component browser is opened at the left side of the window.
 
-  To add a component to your page click on the required component and drag it to the required location.
+  To add a component to your page, click the required component and drag it to the location you want.
 
   ![ateat-05](assets/ateat-05.png)
 
   Components are represented by
 
     * Component name
-    * Component group (in grey)
+    * Component group (in gray)
     * Icon or abbreviation
 
         * Standard components' icons are monochrome.
-        * Abbreviations are always the first two charaters of the component name.
+        * Abbreviations are always the first two characters of the component name.
 
-  From the top toolbar in the **Components** browser you can:
+  From the top toolbar in the **Components** browser, you can do the following:
 
     * Filter components by name.
-    * Limit the display to a specific group using the drop down selection.
+    * Limit the display to a specific group using the drop-down selection.
 
   For a more detailed description of the component, you can click or tap the information icon next to the component in the **Components** browser (if available). For example, for the **Layout Container**:
 
   ![ateat-06](assets/ateat-06.png)
 
-  For even more information about the components available to you see the [Component Console](/help/sites-authoring/default-components-console.md).
+  For even more information about the components available to you, see [Component Console](/help/sites-authoring/default-components-console.md).
 
 ## Assets Browser {#assets-browser}
 
 The assets browser shows all [assets](/help/assets/home.md) that are available for direct use on your current page.
 
-The assets browser is a tab within the side panel along with the [components browse](/help/sites-authoring/author-environment-tools.md#components-browser)r and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree). To open or close the side panel use the icon at the top left of the toolbar:
+The assets browser is a tab within the side panel along with the [components browse](/help/sites-authoring/author-environment-tools.md#components-browser)r and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree). To open or close the side panel, use the icon at the top left of the toolbar:
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
-When you open the side panel it will slide open from the left side. Select the **Assets** tab if necessary.
+When you open the side panel, it slides open from the left side. Select the **Assets** tab if necessary.
 
 ![ateat-07](assets/ateat-07.png)
 
-When the assets browser is open you can browse through all the assets available for your page. Infinite scrolling is used to expand the list when required.
+When the assets browser is open, you can browse through all the assets available for your page. Infinite scrolling is used to expand the list when required.
 
 ![ateat-08](assets/ateat-08.png)
 
@@ -119,7 +117,7 @@ To add an asset to your page, select and drag to the required location. This can
 
     * For example, you can drag an asset of type image onto an Image component.
 
-* A [placeholder](/help/sites-authoring/editing-content.md#component-placeholder) in the paragraph system to create a new component of the appropriate type.
+* A [placeholder](/help/sites-authoring/editing-content.md#component-placeholder) in the paragraph system to create a component of the appropriate type.
 
     * For example, you can drag an asset of type image onto the paragraph system to create an Image component.
 
@@ -131,22 +129,22 @@ From the top toolbar of the assets browser you can filter the assets by:
 
 * Name
 * Path
-* Asset type such as images, manuscripts, documents, videos, pages, paragraphs, and products
+* Type of asset such as images, manuscripts, documents, videos, pages, paragraphs, and products
 * Asset characteristics such as Orientation (Portrait, Landscape, Square) and Style (Color, Monochrome, Grayscale)
 
     * Available only for certain asset types
 
-The actual appearance and handling is dependent on the device type you are using:
+The actual appearance and handling depends on the device type that you are using:
 
 >[!NOTE]
 >
->A mobile device is detected when the width is less than 1024px; i.e. also on a small desktop window.
+>A mobile device is detected when the width is less than 1024px; that is, also on a small desktop window.
 
 * **Mobile device such as iPad**
 
   The assets browser completely covers the page being edited.
 
-  To add an asset to your page touch-and-hold the required asset, then move it towards the right - the assets browser will close to show the page again, where you can add the asset to the required component.
+  To add an asset to your page touch-and-hold the required asset, then move it towards the right - the assets browser closes to show the page again, where you can add the asset to the required component.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -154,31 +152,31 @@ The actual appearance and handling is dependent on the device type you are using
 
   The assets browser is opened at the left side of the window.
 
-  To add an asset to your page click on the required asset and drag it to the required component or location.
+  To add an asset to your page, click the asset and drag it to the required component or location.
 
   ![ateat-10](assets/ateat-10.png)
 
-If you need to quickly make a change to an asset, you can start the [asset editor](/help/assets/manage-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
+If you must quickly change an asset, you can start the [Asset Editor](/help/assets/manage-assets.md) directly from the asset browser by clicking the edit icon shown next to the asset's name.
 
 ![Assets Browser Desktop device](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Content Tree {#content-tree}
 
-The **Content Tree** gives an overview of all of the components on the page in a hierarchy so you can see at a glance how the page is composed.
+The **Content Tree** gives an overview of all components on the page in a hierarchy so you can see at a glance how the page is composed.
 
-The Content Tree is a tab within the side panel (together with the components and assets browser). To open (or close) the side panel use the icon at the top left of the toolbar:
+The Content Tree is a tab within the side panel (together with the components and assets browser). To open or close the side panel, use the icon at the top left of the toolbar:
 
 ![Content tree](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-When you open the side panel it will slide open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Additionally on a complex page, it makes it easier to jump between components of the page.
+When you open the side panel, it slides open (from the left side). Select the **Content Tree** tab if necessary. When open you can see a tree view representation of your page or template, so that it's easier to understand how its content is structured hierarchically. Also, on a complex page, it makes it easier to jump between components of the page.
 
 ![ateat-11](assets/ateat-11.png)
 
-A page can easily be composed of many of the same type of components, so the content (component) tree displays descriptive text (in grey) after the name of the component type (in black). The descriptive text comes from common properties of the component such as title or text.
+A page can easily be composed of many of the same type of components, so the content (component) tree displays descriptive text (in gray) after the name of the component type (in black). The descriptive text comes from common properties of the component such as title or text.
 
-Component types will be shown in the user language, whereas the component description text comes from the page language.
+Component types are shown in the user language, whereas the component description text comes from the page language.
 
-Clicking the chevron next to a component will collapse or expand that level.
+Clicking the chevron next to a component collapses or expands that level.
 
 ![screen_shot_2018-03-22at142559](assets/screen_shot_2018-03-22at142559.png)
 
@@ -186,7 +184,7 @@ Clicking the chevron next to a component will collapse or expand that level.
 >
 >The Content Tree is not available if you are editing a page on a mobile device (if the browser width is less than 1024px).
 
-Clicking on the component will highlight the component in the page editor. The actions available will depend on the page state:
+Clicking the component highlights the component in the page editor. The actions available depend on the page state:
 
 * For example, a basic page:
 
@@ -194,7 +192,7 @@ Clicking on the component will highlight the component in the page editor. The a
 
   ![ateat-12](assets/ateat-12.png)
 
-  If the component you click in the tree is editable a wrench icon will appear to the right of the name. Clicking on this icon will directly start the edit dialogue for the component.
+  If the component you click in the tree is editable, a wrench icon appears to the right of the name. Clicking this icon opens the edit dialog box for the component.
 
   ![Wrench icon - Edit](do-not-localize/screen_shot_2018-03-22at142725.png)
 
@@ -206,11 +204,11 @@ Clicking on the component will highlight the component in the page editor. The a
 
 ## Fragments - Associated Content Browser {#fragments-associated-content-browser}
 
-If your page contains Content Fragments then you will also have access to the [browser for Associated Content](/help/sites-authoring/content-fragments.md#using-associated-content).
+If your page contains Content Fragments, then you have access to the [browser for Associated Content](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## References {#references}
 
-**References** shows connections to the selected page:
+**References** show connections to the selected page:
 
 * Blueprints
 * Launches
@@ -224,21 +222,21 @@ Open the required console, then navigate to the required resource and open **Ref
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
-[Select your required resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) to show a list of references types relevant to that resource:
+[Select your required resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) shows a list of references types relevant to that resource:
 
 ![ateat-22](assets/ateat-22.png)
 
-Select the appropriate reference type for more information. In certain situations further actions are available when you select a specific reference, including:
+Select the appropriate reference type for more information. In certain situations, further actions are available when you select a specific reference, including:
 
-* **Incoming Links**, provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link
+* **Incoming Links** provides a list of pages that reference the page, together with direct access to **Edit** one of those pages when you select a specific link
 
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 
 * [References to Product pages](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (available from the Commerce-Products console)
-* [Launches](/help/sites-authoring/launches.md), provides access to related launches
+* [Launches](/help/sites-authoring/launches.md) provides access to related launches.
 * [Live Copies](/help/sites-administering/msm.md) displays the paths of all live copies that are based on the selected resource.
-* [Blueprint](/help/sites-administering/msm-best-practices.md), provides details and various actions
-* [Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), provides details and various actions
+* [Blueprint](/help/sites-administering/msm-best-practices.md) provides details and various actions.
+* [Languages Copies](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) provides details and various actions.
 
 For example, you can fix a broken reference within a Reference component:
 
@@ -276,8 +274,8 @@ The Page Information button (equalizer icon) opens a menu that also provides det
 
 For example, when appropriate, **Page Information** also has the options:
 
-* [Promote Launch](/help/sites-authoring/launches-promoting.md) if the page is a launch.
-* [Open in Classic UI](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) if this options has been [enabled by an administrator](/help/sites-administering/enable-classic-ui-editor.md)
+* [Promote Launch](/help/sites-authoring/launches-promoting.md) if the page is a launch
+* [Open in Classic UI](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) if this option was [enabled by an administrator](/help/sites-administering/enable-classic-ui-editor.md)
 
 In addition, **Page Information** can provide access to analytics and recommendations, when appropriate.
 
@@ -285,10 +283,10 @@ In addition, **Page Information** can provide access to analytics and recommenda
 
 There are various modes when editing a page allowing for different actions:
 
-* [Edit](/help/sites-authoring/editing-content.md) - the mode to use when editing the page content.
-* [Layout](/help/sites-authoring/responsive-layout.md) - lets you create and edit your responsive layout dependent on device (if the page is based on a layout container)
+* [Edit](/help/sites-authoring/editing-content.md) - use this mode when editing the page content.
+* [Layout](/help/sites-authoring/responsive-layout.md) - lets you create and edit your responsive layout dependent on the device (if the page is based on a layout container)
 
-* [Scaffolding](/help/sites-authoring/scaffolding.md) - help you to create a large set of pages that share the same structure but have differing content.
+* [Scaffolding](/help/sites-authoring/scaffolding.md) - help you to create a large set of pages that share structure but have different content.
 * [Developer](/help/sites-developing/developer-mode.md) - lets you perform various actions (requires privileges). These include inspecting the technical details of a page and its components.
 
 * [Design](/help/sites-authoring/default-components-designmode.md) - lets you enable/disable components for use on a page and to configure the design of the component (if the page is based on a [static template](/help/sites-authoring/templates.md#editable-and-static-templates)).
@@ -298,20 +296,20 @@ There are various modes when editing a page allowing for different actions:
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - lets you view a pages state at a particular point in time.
 * [Live Copy Status](/help/sites-authoring/editing-content.md#live-copy-status) - allows a quick overview of the live copy status and which components are/are not inherited.
-* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it will be shown on the publish environment; or to navigate using links in the content.
+* [Preview](/help/sites-authoring/editing-content.md#previewing-pages) - used to view the page as it is shown on the publish environment; or to navigate using links in the content.
 
 * [Annotate](/help/sites-authoring/annotations.md) - used to add or view annotations on the page.
 
-You can access these using the icons in the top right corner. The actual icon will change to reflect the mode you are currently using:
+You can access these using the icons in the top-right corner. The actual icon changes to reflect the mode you are currently using:
 
 ![ateat-18](assets/ateat-18.png)
 
 >[!NOTE]
 >
->* Depending on the characteristics of the page, some modes my not be available.
->* Access to some modes require the appropriate permissions/privileges.
+>* Depending on the characteristics of the page, some modes may not be available.
+>* Access to some modes requires the appropriate permissions/privileges.
 >* Developer mode is not available on mobile devices due to space restrictions.
->* There is a [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, **Layout**, etc).
+>* There is a [keyboard shortcut](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) to toggle between **Preview** and the currently selected mode (for example, **Edit**, and **Layout**).
 >
 
 ## Path Selection {#path-selection}
@@ -320,15 +318,15 @@ Often when authoring it is necessary to select another resource such as when def
 
 ### Path Fields {#path-fields}
 
-The example used here to illustrate is the image component. For more information about using and editing components see [Components for Page Authoring](/help/sites-authoring/default-components.md).
+The example used here to illustrate is the image component. For more information about using and editing components, see [Components for Page Authoring](/help/sites-authoring/default-components.md).
 
-Path fields have auto-complete and look-ahead funtionality now to make locating a resource easier.
+Path fields have auto-complete and look-ahead functionality now to make locating a resource easier.
 
 Clicking the **Open Selection Dialog** button in the path field opens the [path browser](/help/sites-authoring/author-environment-tools.md#path-browser) dialog to allow for more detailed selection options.
 
 ![Open Selection Dialog](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-Alternatively you can start typing in the path field and AEM will offer matching paths as you type.
+Alternatively, you can start typing in the path field and AEM offers matching paths as you type.
 
 ![ateat-19](assets/ateat-19.png)
 
@@ -339,9 +337,9 @@ The path browser is organized like the [column view](/help/sites-authoring/basic
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
 * Once a resource is selected, the **Select** button at the upper-right of the dialogue becomes active. Click or tap to confirm the selection or **Cancel** to abort.
-* If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click the **X** next to the number to deselect all.
+* If the context allows for the selection of multiple resources, selecting a resource also activates the **Select** button, but also adds a count of the number of selected resources to the upper-right of the window. Click **X** next to the number to deselect all.
 * When you navigate through the tree, your location is reflected in the breadcrumbs at the top of the dialog. These breadcrumbs can also be used to quickly jump within the resource hierarchy.
-* At any time you can use the search field at the top of the dialogue. Click the **X** in the search field to clear the search.
+* At any time, you can use the search field at the top of the dialogue. Click the **X** in the search field to clear the search.
 * To narrow your search, you can reveal the filter options and filter your results based on a certain path.
 
   ![ateat-21](assets/ateat-21.png)
