@@ -82,7 +82,7 @@ Does not support facet extraction.
 
 ### dateComparison {#datecomparison}
 
-Compares two JCR DATE properties with each other. Can test if they are equal, unequal, greater than or greater-than-or-equal.
+Compares two JCR DATE properties with each other. You can test if they are equal, unequal, greater than or greater-than-or-equal.
 
 This is a filtering-only predicate and cannot use a search index.
 
@@ -103,7 +103,7 @@ This is a filtering-only predicate and cannot use a search index.
 ### daterange {#daterange}
 
 Matches JCR DATE properties against a date/time interval. This uses the ISO8601
-format for dates and times ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) and allows also partial representations, like `YYYY-MM-DD`. Alternatively, the timestamp can be provided as number of milliseconds since 1970 in the UTC timezone, the UNIX&reg; time format.
+format for dates and times ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) and allows also partial representations, like `YYYY-MM-DD`. Alternatively, the timestamp can be provided as the number of milliseconds since 1970 in the UTC timezone, the UNIX&reg; time format.
 
 You can look for anything between two timestamps, anything newer or older than a given date, and also chose between inclusive and open intervals.
 
@@ -246,17 +246,17 @@ Supports facet extraction. Provides buckets for each unique language code.
 
 ### mainasset {#mainasset}
 
-Checks if a node is a DAM main asset and not a sub asset. This is basically every node not inside a "subassets" node. This does not check for the `dam:Asset` node type. To use this predicate, set " `mainasset=true`" or " `mainasset=false`", there are no further properties.
+Checks if a node is a DAM main asset and not a subasset. This is basically every node not inside a "subassets" node. This does not check for the `dam:Asset` node type. To use this predicate, set " `mainasset=true`" or " `mainasset=false`", there are no further properties.
 
 This is a filtering-only predicate and cannot use a search index.
 
-Supports facet extraction. Provides two buckets for main and subassets.
+Supports facet extraction and provides two buckets for main and subassets.
 
 #### Properties {#properties-9}
 
 * **mainasset**
 
-  Boolean, " `true`" for main assets, " `false`" for sub assets.
+  Boolean, " `true`" for main assets, " `false`" for subassets.
 
 ### memberOf {#memberof}
 
@@ -302,7 +302,7 @@ Supports facet extraction in the same way as the daterange predicate.
 
 ### orderby {#orderby}
 
-Allows the result to sorted. If ordering by multiple properties is required, this predicate must be added multiple times using the number prefix, such as `1_orderby=first`, `2_oderby=second`.
+Allows the results to be sorted. If ordering by multiple properties is required, this predicate must be added multiple times using the number prefix, such as `1_orderby=first`, `2_oderby=second`.
 
 #### Properties {#properties-13}
 
@@ -328,7 +328,7 @@ Does not support facet extraction.
 
 * **path**
 
-  Path pattern; depending on exact, either the entire subtree matches (like appending `//*` in xpath, but note that this does not include the base path) (exact=false, default), or only an exact path match, which can include wildcards ( `*`); if self is set, the entire subtree including the base node is searched.
+  Path pattern. Depending on exact, either the entire subtree matches (like appending `//*` in xpath, but note that this does not include the base path) (exact=false, default), or only an exact path match, which can include wildcards ( `*`); if self is set, the entire subtree including the base node is searched.
 
 * **exact**
 
@@ -356,7 +356,7 @@ Supports facet extraction. Provides buckets for each unique property value in th
 
 * **value**
 
-  Value to check property for; follows the JCR property type to string conversions.
+  Value to check the property for; follows the JCR property type to string conversions.
 
 * **N_value**
 
@@ -378,7 +378,7 @@ Supports facet extraction. Provides buckets for each unique property value in th
 
 Matches a JCR property against an interval. This applies to properties with linear types such as `LONG`, `DOUBLE`, and `DECIMAL`. For `DATE`, see the daterange predicate that has optimized date format input.
 
-You can define a lower bound and an upper bound or only one of them. The operation (for example, "lesser than" or "lesser or equals") can also be specified for lower and upper bound individually.
+You can define a lower bound and an upper bound or only one of them. The operation (for example, "lesser than" or "lesser or equals") can also be specified for lower and upper bound, individually.
 
 Does not support facet extraction.
 
@@ -446,11 +446,11 @@ The name "root" is never used in a query, it's implicit.
 
 * **p.offset**
 
-  Number indicating the start of the result page, that is, how many items to skip.
+  The number indicating the start of the result page, that is, how many items to skip.
 
 * **p.limit**
 
-  Number indicating the page size.
+  The number indicating the page size.
 
 * **p.guessTotal**
 
@@ -478,7 +478,7 @@ The name "root" is never used in a query, it's implicit.
 
 ### savedquery {#savedquery}
 
-Includes all predicates of a persisted query builder query into the current query as a sub group predicate.
+Includes all predicates of a persisted query builder query into the current query as a subgroup predicate.
 
 This does not run an extra query but extend the current query.
 
@@ -548,7 +548,7 @@ Supports facet extraction. Provides buckets for each unique tag, using their cur
 
 ### tagsearch {#tagsearch}
 
-Searches for content tagged with one or more tags, by specifying keywords. This will first search for tags containing these keywords in their titles, then restricting the result to only items tagged with these.
+Searches for content tagged with one or more tags, by specifying keywords. This searches first for tags that contain these keywords in their titles, then restricts the result to only items tagged with these.
 
 Does not support facet extraction.
 
