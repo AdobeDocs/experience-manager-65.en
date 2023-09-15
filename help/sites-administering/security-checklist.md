@@ -445,12 +445,6 @@ More specifically, you must do the following:
 1. [Refresh the Crypto Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) if the target instance is already running.
 1. Repeat the above steps for all instances that you want to replicate the key to.
 
->[!NOTE]
->
->You can revert to the pre-6.3 method of storing keys by adding the below parameter when you first install AEM:
->
->`-Dcom.adobe.granite.crypto.file.disable=true`
-
 #### Replicating Keys for AEM 6.2 and Older Versions {#replicating-keys-for-aem-and-older-versions}
 
 In AEM 6.2 and older versions, the keys are stored in the repository under the `/etc/key` node.
