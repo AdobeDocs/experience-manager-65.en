@@ -8,15 +8,15 @@ exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 ---
 # About [!DNL Adobe Experience Manager Assets] as a DAM solution {#administering-assets}
 
-[!DNL Assets] is a Digital Asset Management (DAM) tool that is an integral part of the [!DNL Experience Manager] platform and enables your enterprise to manage and distribute digital assets. Users across an organization can manage, store, and access many types of digital assets such as images, videos, documents, audio clips, 3D files, and rich media for use on the web, in print, and for digital distribution.
+AEM [!DNL Assets] is a Digital Asset Management (DAM) tool that is a part of the [!DNL Experience Manager] platform and enables your enterprise to manage and distribute digital assets. Users across an organization can manage, store, and access many types of digital assets such as images, videos, documents, audio clips, 3D files, and rich media for use on the web, in print, and for digital distribution.
 
 ## What is Digital Asset Management? {#what-is-digital-asset-management}
 
-[!DNL Assets] provides enterprise-wide sharing and distribution of an organization’s key digital assets. Users across an organization can store, manage, and access digital assets such as images, graphics, audio, video, and documents through a Web interface (or a CIFS or WebDAV folder).
+[!DNL Assets] provides enterprise-wide sharing and distribution of an organization's key digital assets. Users across an organization can store, manage, and access digital assets such as images, graphics, audio, video, and documents through a Web interface (or a CIFS or WebDAV folder).
 
 [!DNL Assets] capability of [!DNL Experience Manager] lets you do the following:
 
-* Add and share images, documents, audio files, and video files in a variety of file formats.
+* Add and share images, documents, audio files, and video files in various file formats.
 * Manage assets by grouping them by tags, lightbox, or stars (your favorites). Add annotations to assets.
 * Find assets by searching file names, the full text of documents, and by searching dates, document type, and tags.
 * Add or edit metadata information for assets. Metadata is automatically versioned together with the corresponding asset. You can import or export asset metadata.
@@ -25,20 +25,20 @@ exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 
 ### [!DNL Experience Manager Assets] is integrated with [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
 
-[!DNL Assets] completely integrates with [!DNL Sites] and works seamlessly for all use cases. For example, when authoring web pages, the [!DNL Sites] authors can find and use the digital assets via the Content Finder. The user interface of [!DNL Assets] is the same as that of [!DNL Sites]. See [overview of Sites](/help/sites-authoring/page-authoring.md) for full details.
+[!DNL Assets] completely integrates with [!DNL Sites] and works seamlessly for all use cases. For example, when authoring web pages, the [!DNL Sites] authors can find and use the digital assets via the Content Finder. The user interface of [!DNL Assets] is the same as that of [!DNL Sites]. See an [overview of Sites](/help/sites-authoring/page-authoring.md) for full details.
 
 The basic user interface is the same as that of [!DNL Sites]. See [Overview of the Sites](/help/sites-authoring/page-authoring.md) for full details.
 
 ### Digital Asset Management versus image component {#digital-asset-management-versus-image-component}
 
-When determining whether to put an image into DAM repository or use image component, consider the image lifecycle:
+When determining whether to put an image into the DAM repository or use an image component, consider the image lifecycle:
 
 * If the image has the same lifecycle as the page, use the Image component.
 * If the image has a separate life cycle, for example, if you use the image twice or outside WCM, use [!DNL Assets].
 
 ## What are digital assets? {#what-are-digital-assets}
 
-An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions and can have sub-assets (for example, layers in a photoshop file, slides in a PowerPoint file, pages in a pdf, files in a ZIP).
+An asset is a digital document, image, video, or audio (or part thereof) that can have multiple renditions. It can also have sub-assets, for example, layers in a Photoshop file, slides in a PowerPoint file, pages in a pdf, files in a ZIP.
 
 An asset is essentially a binary plus metadata plus renditions plus sub-assets. See the [DAM Performance Guide](/help/sites-deploying/assets-performance-sizing.md) for detailed information.
 
@@ -48,11 +48,11 @@ An asset is essentially a binary plus metadata plus renditions plus sub-assets. 
 
 ### [!DNL Experience Manager Assets] terminology {#aem-assets-terminology}
 
-When working with digital assets in [!DNL Experience Manager], you need to understand the following terminology:
+When working with digital assets in [!DNL Experience Manager], it helps if you understand the following terminology:
 
 * **Collection**: A collection of assets, either based on physical location (folder), common properties (saved search folder), or user selection (lightbox folders).
 
-* **Metadata** [!DNL Assets] have metadata; for example, author, expiry date, DRM Information (Digital Rights Management), and so on. Metadata is under access control. [!DNL Assets] supports the following various common metadata schemata out of the box:
+* **Metadata** [!DNL Assets] have metadata; for example, author, expiry date, and DRM Information (Digital Rights Management). Metadata is under access control. [!DNL Assets] supports the following various common metadata schemata out of the box:
 
   * Dublin Core: including author, description, date, subject, and so on.
   * IPTC: including event, model, location, and so on.
@@ -77,7 +77,7 @@ The tasks you can perform with these pre-configured workflows:
 * Generate renditions and thumbnails for the asset; including automatic resizing and cropping where necessary.
 * Transcode the asset where necessary. For example, video for mobile and web usage is transcoded with 24 frames per second, download video with 30 frames per second. Audio for mobile and web usage is transcoded with 128 Kbps, audio for download with 192 Kbps.
 
-Of course, you can apply workflows manually as well. See [Assets Media Handlers](media-handlers.md)for a list of default workflows.
+You can apply workflows manually as well. See [Assets Media Handlers](media-handlers.md)for a list of default workflows.
 
 ## [!DNL Experience Manager Assets] and [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 

@@ -89,7 +89,7 @@ To install a fully fledged configuration (using the demonstration catalog, Geome
 
 >[!NOTE]
 >
->For developers [API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available for download.
+>For developers, [API documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is also available for download.
 
 ### Download and Build your hybris Server {#download-and-build-your-hybris-server}
 
