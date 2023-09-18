@@ -1,14 +1,10 @@
 ---
 title: Activity Trends
-seo-title: Activity Trends
 description: Adding a Community Activity List component to a page
-seo-description: Adding a Community Activity List component to a page
-uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 ---
@@ -16,7 +12,7 @@ exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 
 ## Introduction {#introduction}
 
-The `Community Activity List` component provides the ability to add trending information regarding posts and views by members as well as posts and views of content.
+The `Community Activity List` component lets you add trending information regarding posts and views by members as well as posts and views of content.
 
 The document describes:
 
@@ -32,11 +28,7 @@ See [Analytics Configuration for Communities Features](/help/communities/analyti
 
 ### Adding a Community Activity List to a Page {#adding-a-community-activity-list-to-a-page}
 
-To add a `Community Activity List` component to a page in author mode, locate the component
-
-* `Communities / Community Activity List`
-
-and drag it into place on a page.
+To add a `Community Activity List` component to a page in author mode, locate the component `Communities / Community Activity List` and drag it into place on a page.
 
 For necessary information, visit [Communities Components Basics](/help/communities/basics.md).
 
@@ -46,7 +38,7 @@ When first placed on a page of a community site, this is how the component appea
 
 ### Configuring Community Activity List  {#configuring-community-activity-list}
 
-Select the placed `Community Activity List` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Community Activity List` component, then select the `Configure` icon so you can open the edit dialog box.
 
 ![configure](assets/configure-new.png)
 
@@ -56,7 +48,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Type**
 
-  Specify whether to display data regarding community members or user generated content (UGC).
+  Specify whether to display data regarding community members or user-generated content (UGC).
 
   Select from:
 
@@ -73,7 +65,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 * **Display count**
 
   The number of items to list.
-  Default is 10.
+  The default is 10.
 
 * **Activity type**
 
@@ -84,7 +76,7 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
     * `Follows`
     * `Likes`
 
-  Default is Views.
+  The default is Views.
 
 * **Time period**
 
@@ -101,15 +93,15 @@ Under the **Comments** tab, specify if and how comments for uploaded files appea
 
 * **Context path**
 
-  Provides the ability to scope the activity to a subset of the site, such as a specific Blog.
+  This lets you scope the activity to a subset of the site, such as a specific Blog.
   Default is the entire community site.
 
 * **Member count aggregation**
 
-  When deselected (turned off), only top-level posts are counted. For example, if the context is the root page (the default), then an `Activity Type` of `Posts` will never show any activity as there is no ability to post content to the root page. When checked, the counts on all descendant pages are included.
+  When deselected (turned off), only top-level posts are counted. For example, if the context is the root page (the default), then an `Activity Type` of `Posts` never shows any activity as there is no ability to post content to the root page. When checked, the counts on all descendant pages are included.
   Default is checked.
 
-### Example Page with 4 Components {#example-page-with-components}
+### Example Page with four Components {#example-page-with-components}
 
 **Top Visitors** config: Type = Members, Activity type = Views
 

@@ -1,14 +1,10 @@
 ---
 title: Featured Content Feature
-seo-title: Featured Content Feature
 description: The Featured Content feature lets signed-in site visitors highlight content
-seo-description: The Featured Content feature lets signed-in site visitors highlight content
-uuid: 7a2ff570-01bb-46fb-8d66-3b47e2efa72e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
 ---
 # Featured Content Feature {#featured-content-feature}
@@ -23,7 +19,7 @@ The featured content feature provides an area for signed-in site visitors (commu
 * [Ideas](ideation-feature.md)
 * [QnA](working-with-qna.md)
 
-Once content is flagged as featured, it will be listed within this component, which may be placed in specific landing pages or areas that easily catches the attention of community members.
+Once content is flagged as featured, it is listed within this component, which may be placed in specific landing pages or areas that easily catch the attention of community members.
 
 The ability to feature content may be allowed or disallowed per component.
 
@@ -38,17 +34,17 @@ To add a `Featured Content` component to a page in author mode, use the componen
 
 * `Communities / Featured Content`
 
-and drag it into place on a page where the featured contentshould appear.
+And drag it into place on a page where the featured content should appear.
 
 For necessary information, visit [Communities Components Basics](basics.md).
 
-When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content` component will appear:
+When the [required client-side libraries](essentials-featured.md#essentials-for-client-side) are included, this is how the `Featured Content` component appears:
 
 ![featuredcontent](assets/featuredcontent.png)
 
 ## Configuring Featured Content {#configuring-featured-content}
 
-Select the placed `Featured Content` component to access and select the `Configure` icon which opens the edit dialog.
+Select the placed `Featured Content` component so you can access and select the `Configure` icon which opens the edit dialog.
 
 ![configure-new](assets/configure-new.png) 
 
@@ -60,15 +56,15 @@ Under the **[!UICONTROL Settings]** tab, identify the content to feature:
 
 * **[!UICONTROL Display Name]**
   
-  The title for the list of featured content. For example `Featured Questions` or `Featured Ideas`. Default is `Featured Content` if left empty.
+  The title for the list of featured content. For example, `Featured Questions` or `Featured Ideas`. Default is `Featured Content` if left empty.
 
 * **[!UICONTROL Location of the Featured Content]**
   
-  *(Required)* Browse to the page containing the content that may be feature (components of that page must be configured to Allow Featured Content). For example, `/content/sites/engage/en/forum`.
+  *(Required)* Browse to the page containing the content that may be featured (components of that page must be configured to Allow Featured Content). For example, `/content/sites/engage/en/forum`.
 
 * **[!UICONTROL Display Limit]**
   
-  The maximum number of featured content to display. Default is 5.
+  The maximum number of featured content to display. The default is 5.
 
 ## Site Visitor Experience {#site-visitor-experience}
 
@@ -78,16 +74,16 @@ When a moderator views posted content, they have access to the in-context modera
 
 ![site-visitor-experience](assets/site-visitor-experience.png)
 
-Once flagged as feature, the modeartion flag becomes `Unfeature`.
+After it is flagged as a feature, the moderation flag becomes `Unfeature`.
 
-The page containing the `Featured Content` component, will now include this post.
+The page containing the `Featured Content` component, now includes this post.
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-`Read More` is a link to the actual post.
+The `Read More` links to the actual post.
 
 ## Additional Information {#additional-information}
 
 More information may be found on the [Featured Content](essentials-featured.md) page for developers.
 
-For flagging content as featured, see [Moderating User Generated Content](moderate-ugc.md).
+For flagging content as featured, see [Moderating User-Generated Content](moderate-ugc.md).

@@ -1,30 +1,26 @@
 ---
-title: Setting timeout values for use with Acrobat Reader DC extensions
-seo-title: Setting timeout values for use with Acrobat Reader DC extensions
-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.
-seo-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.
-uuid: d6d072a0-0a30-417a-98b1-df8b4ff8f911
+title: Setting timeout values for use with Acrobat Reader DC Extensions
+description: Learn how to set timeout values for use with Acrobat Reader DC Extensions.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
 exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
 ---
-# Setting timeout values for use with Acrobat Reader DC extensions  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+# Setting timeout values for use with Acrobat Reader DC Extensions  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
-When working on many PDF files in Acrobat Reader DC extensions, ensure that the following time-out values are set appropriately to prevent jobs from timing out and failing:
+When working on many PDF files in Acrobat Reader DC Extensions, ensure that the following time-out values are set appropriately to prevent jobs from timing out and failing:
 
 **Document Disposal Timeout**
 
-This value can be set in administration console. Click Settings > Core System Settings > Configurations and specify a value for Default Document Disposal Timeout.
+This value can be set in the administration console. Click Settings > Core System Settings > Configurations and specify a value for Default Document Disposal Timeout.
 
-**User Manager AEM forms Timeout:** This value can be set by editing the config.xml file. In administration console, click Settings > User Management > Configuration > Import and export configuration files, and then click Export. Open the exported config.xml file and edit the following lines:
+**User Manager AEM forms Timeout:** This value can be set by editing the config.xml file. In the administration console, click Settings > User Management > Configuration > Import and export configuration files, and then click Export. Open the exported config.xml file and edit the following lines:
 
 &lt;entry key="assertionValidityInMinutes" value="600"/&gt;
 
 &lt;entry key="SessionTimeout" value="600"/&gt;
 
-Save and then import the config.xml file back into administration console.
+Save and then import the config.xml file back into the administration console.
 
 **Application Server Session Timeout:** This value can be set on the application server. For more information, see the documentation provided with your application server.

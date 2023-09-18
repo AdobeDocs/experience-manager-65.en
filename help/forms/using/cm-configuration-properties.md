@@ -1,13 +1,9 @@
 ---
 title: Correspondence Management Configuration Properties
-seo-title: Correspondence Management Configuration Properties
 description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
-seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
-uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
 ---
