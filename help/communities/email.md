@@ -1,14 +1,10 @@
 ---
 title: Configuring Email
-seo-title: Configuring Email
 description: Email configuration for Communities
-seo-description: Email configuration for Communities
-uuid: e8422cc2-1594-43b0-b587-82825636cec1
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
@@ -20,7 +16,7 @@ AEM Communities uses email for:
 * [Communities Notifications](notifications.md)
 * [Communities Subscriptions](subscriptions.md)
 
-By default, the email feature is not functional as it requires specification of an SMTP server and SMTP user.
+By default, the email feature is not functional as it requires the specification of an SMTP server and SMTP user.
 
 >[!CAUTION]
 >
@@ -64,16 +60,16 @@ For example (filled in with values for illustrative purposes only):
   Leave empty
 * **[!UICONTROL SMTP use SSL]** 
 
-  If checked, will send secure email. Ensure the port is set to 465 or as required for SMTP server.
+  If checked, it sends a secure email. Ensure that the port is set to 465 or as required for an SMTP server.
 * **[!UICONTROL Debug email]** 
 
-  If checked, enables logging of SMTP server interactions.
+  If checked, this enables logging of SMTP server interactions.
 
 ## AEM Communities Email Configuration {#aem-communities-email-configuration}
 
 Once the [default mail service](#default-mail-service-configuration) is configured, the two existing instances of the `AEM Communities Email Reply Configuration` OSGi config, included in the release, become functional.
 
-Only the instance for subscriptions needs to be further configured when allowing reply by email.
+Only the instance for subscriptions must be further configured when allowing reply by email.
 
 1. [Email](#configuration-for-notifications) instance:
 
@@ -97,13 +93,13 @@ To reach the Communities email configuration instances:
 
 The instance of `AEM Communities Email Reply Configuration` OSGi config with the Name email is forthenotifications feature. This feature does not include email reply.
 
-This configuration should not be altered.
+Do not alter this configuration.
 
 * Locate the `AEM Communities Email Reply Configuration`.
 * Select the edit icon.
-* Verify the **Name** is `email`.
+* Verify that the **Name** is `email`.
 
-* Verify **Create post from reply email** is `unchecked`.
+* Verify that **Create post from reply email** is `unchecked`.
 
 ![configure-email-reply](assets/configure-email-reply.png)
 
@@ -113,7 +109,7 @@ For Communities subscriptions, it is possible to enable or disable the ability f
 
 * Locate the `AEM Communities Email Reply Configuration`.
 * Select the edit icon.
-* Verify the **Name** is `subscriptions-email`.
+* Verify that the **Name** is `subscriptions-email`.
 
   ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
@@ -123,44 +119,44 @@ For Communities subscriptions, it is possible to enable or disable the ability f
 
 * **[!UICONTROL Create post from reply email]**
 
-  If checked, recipient of subscription email may post content by sending a reply. Default is checked.
+  If checked, the recipient of a subscription email may post content by sending a reply. Default is checked.
 * **[!UICONTROL Add tracked id to header]** 
 
   Default is `Reply-To`.
 
 * **[!UICONTROL Maximum length of Subject]**
 
-  If tracker id is added to subject line, this is the maximum length of subject, excluding tracked id, after which it will be trimmed. Note that this should be as small as possible to avoid tracked id information from being lost. Default is 200.
+  If tracker id is added to subject line, this is the maximum length of subject, excluding tracked id, after which it is trimmed. This should be as small as possible to avoid tracked id information from being lost. The default is 200.
 
 * **[!UICONTROL "Reply-To" email address]**
 
-  Address which is used as "Reply-To" email address. Default is `no-reply@example.com`.
+  Address that is used as a "Reply-To" email address. Default is `no-reply@example.com`.
 
 * **[!UICONTROL Reply-to-Delimiter]**
 
-  If tracker id is added to Reply-to header, this delimiter will be used. Default is `+` (plus sign).
+  If tracker id is added to Reply-to header, this delimiter is used. Default is `+` (plus sign).
 
 * **[!UICONTROL Tracker Id prefix in subject]**
 
-  If tracker id is added to subject line, this prefix will be used. Default is `post#`.
+  If tracker id is added to subject line, this prefix is used. Default is `post#`.
 
 * **[!UICONTROL Tracker id prefix in message body]**
 
-  If tracker id is added to message body, this prefix will be used. Default is `Please do not remove this:`.
+  If tracker id is added to message body, this prefix is used. Default is `Please do not remove this:`.
 
-* **[!UICONTROL Email as HTML]**: If checked, Content-Type of email will be set as `"text/html;charset=utf-8"`. Default is checked.
+* **[!UICONTROL Email as HTML]**: If checked, Content-Type of email is set as `"text/html;charset=utf-8"`. Default is checked.
 
 * **[!UICONTROL Default user name]**
 
-  This name will be used for no name users. Default is `no-reply@example.com`.
+  This name is used for no name users. Default is `no-reply@example.com`.
 
 * **[!UICONTROL Templates root path]**
 
-  The email is built using template stored at this root path. Default is `/etc/community/templates/subscriptions-email`.
+  The email is built using a template stored at this root path. Default is `/etc/community/templates/subscriptions-email`.
 
 ## Configure Polling Importer {#configure-polling-importer}
 
-In order for the email to be brought into the repository, it is necessary to configure a polling importer and configure its properties in the repository manually.
+For the email to be brought into the repository, it is necessary to configure a polling importer and configure its properties in the repository manually.
 
 ### Add New Polling Importer {#add-new-polling-importer}
 
@@ -201,7 +197,7 @@ In order for the email to be brought into the repository, it is necessary to con
 
 ### Adjust Protocol for New Polling Importer {#adjust-protocol-for-new-polling-importer}
 
-Once the new polling configuration is saved, it is necessary to further modify properties of the subscription email importer in order to change the protocol from `POP3` to `emailreply`.
+Once the new polling configuration is saved, it is necessary to further modify properties of the subscription email importer to change the protocol from `POP3` to `emailreply`.
 
 Using [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 

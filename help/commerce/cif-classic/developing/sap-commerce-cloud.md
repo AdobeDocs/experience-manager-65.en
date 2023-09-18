@@ -1,6 +1,6 @@
 ---
 title: Developing with SAP Commerce Cloud
-description: The SAP Commerce Cloud integration framework includes an integration layer with an API
+description: The SAP Commerce Cloud integration framework includes an integration layer with an API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -15,7 +15,7 @@ exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 
 The integration framework includes an integration layer with an API. This lets you:
 
-* plug in an eCommerce system and pull product data into AEM
+* plug in an eCommerce system and pull product data into Adobe Experience Manager (AEM)
 
 * build AEM components for commerce capabilities independent of the specific eCommerce engine
 
@@ -97,9 +97,9 @@ The hybris extension of the eCommerce Integration Framework has been updated to 
 
 The default settings in the code are tuned for Hybris 5.
 
-To develop for Hybris 4 the following is required:
+To develop for Hybris 4, the following is required:
 
-* When invoking maven add the following command-line argument to the command
+* When invoking maven, add the following command-line argument to the command
 
   `-P hybris4`
 
@@ -109,7 +109,7 @@ To develop for Hybris 4 the following is required:
 
   * Disable Hybris 5 support for the Default Response Parser service.
 
-  * Ensure that Hybris Basic Authentication Handler service has a lower service ranking than Hybris OAuth Handler service.
+  * Ensure that the Hybris Basic Authentication Handler service has a lower service ranking than the Hybris OAuth Handler service.
 
 ### Session Handling {#session-handling}
 
@@ -117,7 +117,7 @@ hybris uses a user session to store information such as the customer's shopping 
 
 * On the first request, no cookie is set on the shopper's request; so a request is sent to the hybris instance to create a session.
 
-* The session cookies are extracted from the response, encoded in a new cookie (for example, `hybris-session-rest`) and set on the response to the shopper. The encoding in a new cookie is required, because the original cookie is only valid for a certain path and would otherwise not be sent back from the browser in subsequent requests. The path information must also be added to the cookie's value.
+* The session cookies are extracted from the response, encoded in a new cookie (for example, `hybris-session-rest`) and set on the response to the shopper. The encoding in a new cookie is required, because the original cookie is only valid for a certain path and would otherwise not be sent back from the browser in subsequent requests. The path information must be added to the cookie's value.
 
 * On subsequent requests, the cookies are decoded from the `hybris-session-<*xxx*>` cookies and set on the HTTP client that is used to request data from hybris.
 
@@ -139,16 +139,16 @@ hybris uses a user session to store information such as the customer's shopping 
 
   `CommerceSession.getUserContext()`
 
-* Also owns the **payment** processing connection
+* Owns the **payment** processing connection
 
-* Also owns the **fulfillment** connection
+* Owns the **fulfillment** connection
 
 ### Product Synchronization and Publishing {#product-synchronization-and-publishing}
 
 Product data that is maintained in hybris must be available in AEM. The following mechanism has been implemented:
 
 * An initial load of IDs is provided by hybris as a feed. There can be updates to this feed.
-* hybris will supply update information via a feed (which AEM polls).
+* hybris supplies update information by way of a feed (which AEM polls).
 * When AEM is using product data, it sends requests back to hybris for the current data (conditional get request using last modified date).
 * On Hybris, it is possible to specify feed contents in a declarative way.
 * Mapping the feed structure to the AEM content model happens in the feed adapter on the AEM side.
@@ -191,7 +191,7 @@ Product data that is maintained in hybris must be available in AEM. The followin
 
 * Activated product pages must access the product data's **Online** version (d).
 
-* The AEM publish instance requires access to hybris for the retrieval of product and personalized data (d).
+* The AEM Publish instance requires access to hybris for the retrieval of product and personalized data (d).
 
 ### Architecture {#architecture}
 
@@ -203,7 +203,7 @@ However, not all properties are variant axes. Variations can also affect other p
 
 Each product and/or variant is represented by a resource, and therefore maps 1:1 to a repository node. It is a corollary that a specific product and/or variant can be uniquely identified by its path.
 
-The product/variant resource does not always hold the actual product data. It might be a representation of data held on another system (such as hybris). For example, product descriptions, pricing, and so on, are not stored in AEM, but retrieved in real time from the eCommerce engine.
+The product/variant resource does not always hold the actual product data. It might be a representation of data held on another system (such as hybris). For example, product descriptions and pricing are not stored in AEM, but retrieved in real time from the eCommerce engine.
 
 Any product resource can be represented by a `Product API`. Most calls in the product API are variation-specific (although variations might inherit shared values from an ancestor), but there are also calls which list the set of variations ( `getVariantAxes()`, `getVariants()`, and so on).
 
@@ -420,7 +420,7 @@ public class AxisFilter implements VariantFilter {
 * Storage
 
     * In the hybris case, the hybris server owns the cart.
-    * In the AEM-generic case carts of are stored in the [ClientContext](/help/sites-administering/client-context.md).
+    * In the AEM-generic case, carts of are stored in the [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalization**
 
@@ -478,7 +478,7 @@ The `CommerceSession` owns the three elements:
 
 **Shipping Calculations**
 
-* Order forms often must present multiple shipping options (and prices).
+* Order forms must often present multiple shipping options (and prices).
 * The prices might be based on items and details of the order, such as weight and/or delivery address.
 * The `CommerceSession` has access to all the dependencies, so it can be treated in a similar manner as product pricing:
 
@@ -501,12 +501,12 @@ The `CommerceSession` owns the three elements:
 
 * The `CommerceSession` also owns the payment processing connection.
 
-* Implementors need to add specific calls (to their chosen payment processing service) to the `CommerceSession` implementation.
+* Implementors should add specific calls (to their chosen payment processing service) to the `CommerceSession` implementation.
 
 **Order Fulfillment**
 
 * The `CommerceSession` also owns the fulfillment connection.
-* Implementors will need to add specific calls (to their chosen payment processing service) to the `CommerceSession` implementation.
+* Implementors must add specific calls (to their chosen payment processing service) to the `CommerceSession` implementation.
 
 ### Search Definition {#search-definition}
 
@@ -518,13 +518,13 @@ Following the standard service API model, the eCommerce project provides a set o
 >
 >However, the search API is generic and can be implemented by each CommerceService individually.
 
-The eCommerce project contains a default search component, located in:
+The eCommerce project contains a default search component in:
 
 `/libs/commerce/components/search`
 
 ![chlimage_1-14](/help/sites-developing/assets/chlimage_1-14a.png)
 
-This makes use of the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
+This uses the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
 
 #### Search API {#search-api}
 
@@ -532,11 +532,11 @@ There are several generic / helper classes provided by the core project:
 
 1. `CommerceQuery`
 
-   Is used to describe a search query (contains information about the query text, current page, page size, sort, and selected facets). All eCommerce services that implement the search API receives instances of this class to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
+   Describes a search query (contains information about the query text, current page, page size, sort, and selected facets). All eCommerce services that implement the search API receive instances of this class to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you need to display a hyperlink for each value of each facet, such that when the user clicks the hyperlink the respective value is toggled (that is, if it was selected it is removed from the query, otherwise added). This takes care of all the logic of handling multiple/single-valued facets, overriding values, and so on.
+   Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you must display a hyperlink for each value of each facet, such that when the user clicks the hyperlink the respective value is toggled. That is, if it was selected it is removed from the query, otherwise added. This takes care of all the logic of handling multiple/single-valued facets, overriding values, and so on.
 
 The entry point for the search API is the `CommerceService#search` method which returns a `CommerceResult` object. See the [API Documentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) for more information on this topic.
 
@@ -546,7 +546,7 @@ Integration is provided between AEM and various eCommerce systems. This requires
 
 * Authentication
 
-  AEM is presumed to be the *only* web front-end and therefore performs *all* authentication.
+  AEM is presumed to be the *only* web front end and therefore performs *all* authentication.
 
 * Accounts in Hybris
 
@@ -560,7 +560,7 @@ A AEM front end can be positioned in front of an existing hybris implementation.
 
     * When logging in to hybris, if the AEM user does not exist:
 
-        * create a new hybris user with a cryptographically random password
+        * create a hybris user with a cryptographically random password
         * store the hybris username in the user directory of the AEM user
 
     * See: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
@@ -569,8 +569,8 @@ A AEM front end can be positioned in front of an existing hybris implementation.
 
     * When logging in to AEM, if the system recognizes the user:
 
-        * attempt to log in to hybris with supplied username/pwd
-        * if successful, create the new user in AEM with the same password (AEM-specific salt will result in AEM-specific hash)
+        * attempt to log in to hybris with the supplied username/pwd
+        * if successful, create the user in AEM with the same password (AEM-specific salt results in AEM-specific hash)
 
     * The above algorithm is implemented in a Sling `AuthenticationInfoPostProcessor`
 

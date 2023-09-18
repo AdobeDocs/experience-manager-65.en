@@ -1,14 +1,9 @@
 ---
 title: "Tutorial: Create document fragments"
-seo-title: Create document fragments for Interactive Communication
 description: Create document fragments for Interactive Communication
-seo-description: Create document fragments for Interactive Communication
-uuid: 677d717e-e92e-434e-8266-6fbbf94f3867
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
-
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
 ---
@@ -16,7 +11,7 @@ exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
 
  ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
+This tutorial is a step in the [Create your first Interactive Communication](/help/forms/using/create-your-first-interactive-communication.md) series. Adobe recommends that you follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 Document fragments are reusable components of a correspondence that are used to compose an Interactive Communication. The document fragments are of the following types:
 
@@ -24,7 +19,7 @@ Document fragments are reusable components of a correspondence that are used to 
 * List - List is a group of document fragments, including text, lists, conditions, and images.
 * Condition - Conditions enable you to define what content gets included in the Interactive Communication based on the data received from the Form Data Model.
 
-This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section. At the end of this tutorial, you will be able to:
+This tutorial walks you through the steps to create multiple text document fragments based on the anatomy provided in [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section. At the end of this tutorial, you should be able to do the following:
 
 * Create document fragments
 * Create variables
@@ -39,15 +34,15 @@ The following is the list of document fragments that are created in this tutoria
 * [Bill summary](../../forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Summary of charges](../../forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Each document fragment includes fields with static text, data received from form data model, and data entered using the Agent UI. All these fields have been depicted in the [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section.
+Each Document Fragment includes fields with static text, data received from the form data model, and data entered using the Agent UI. All these fields have been depicted in the [Plan the Interactive Communication](/help/forms/using/planning-interactive-communications.md) section.
 
 While creating document fragments in this tutorial, variables are created for fields that receive data using the Agent UI.
 
 Use **FDM_Create_First_IC**, as described in the [Create form data model](../../forms/using/create-form-data-model0.md) section, as the form data model to create document fragments in this tutorial.
 
-## Step 1: Create Bill Details text document fragment {#step-create-bill-details-text-document-fragment}
+## Step 1: Create Bill Details text Document Fragment {#step-create-bill-details-text-document-fragment}
 
-The Bill Details document fragment includes the following fields:
+The Bill Details Document Fragment includes the following fields:
 
 | Field |Data Source |
 |---|---|
@@ -56,7 +51,7 @@ The Bill Details document fragment includes the following fields:
 | Bill Date |Agent UI |
 | Your Plan |Form data model |
 
-Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
+To create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the Document Fragment, do the following:
 
 1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 
@@ -75,12 +70,12 @@ Execute the following steps to create variables for fields with Agent UI as the 
 1. In the **Create Variable** section:
 
     1. Enter **Invoicenumber** as the name of the variable.
-    1. Select **String** as type.
+    1. Select **String** as the type.
     1. Tap **Create**.
 
    ![Create variable of String type](assets/variable_create_string_new.png)
 
-   Repeat step 4 and 5 to create the following variables:
+   Repeat steps 4 and 5 to create the following variables:
 
     * Billperiod: String type
     * BillDate: Date type
@@ -104,11 +99,11 @@ Execute the following steps to create variables for fields with Agent UI as the 
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Click **Save** to create the Bill Details text document fragment.
+1. Click **Save** to create the Bill Details text Document Fragment.
 
-## Step 2: Create Customer Details text document fragment {#step-create-customer-details-text-document-fragment}
+## Step 2: Create Customer Details text Document Fragment {#step-create-customer-details-text-document-fragment}
 
-The Customer Details document fragment includes the following fields:
+The Customer Details Document Fragment includes the following fields:
 
 | Field |Data Source |
 |---|---|
@@ -121,7 +116,7 @@ The Customer Details document fragment includes the following fields:
 | Relationship Number |Form data model |
 | Number of Connections |Agent UI |
 
-Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
+To create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the Document Fragment, do the following:
 
 1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Select **Create** &gt; **Text**.
@@ -139,10 +134,10 @@ Execute the following steps to create variables for fields with Agent UI as the 
 1. In the **Create Variable** section:
 
     1. Enter **Placesupply** as the name of the variable.
-    1. Select **String** as type.
+    1. Select **String** as the type.
     1. Tap **Create**.
 
-   Repeat step 4 and 5 to create the following variables:
+   Repeat steps 4 and 5 to create the following variables:
 
     * Statecode: Number type
     * Numberconnections: Number type
@@ -169,11 +164,11 @@ Execute the following steps to create variables for fields with Agent UI as the 
 
    ![Customer details](assets/customer_details_df2_new.png)
 
-1. Click **Save** to create the Customer Details text document fragment.
+1. Click **Save** to create the Customer Details text Document Fragment.
 
-## Step 3: Create Bill Summary text document fragment {#step-create-bill-summary-text-document-fragment}
+## Step 3: Create Bill Summary text Document Fragment {#step-create-bill-summary-text-document-fragment}
 
-The Bill Summary document fragment includes the following fields:
+The Bill Summary Document Fragment includes the following fields:
 
 | Field |Data Source |
 |---|---|
@@ -184,7 +179,7 @@ The Bill Summary document fragment includes the following fields:
 | Amount Due |Agent UI |
 | Due Date |Agent UI |
 
-Execute the following steps to create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the document fragment:
+To create variables for fields with Agent UI as the data source, create static text, and use form data model elements in the Document Fragment, do the following:
 
 1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Select **Create** &gt; **Text**.
@@ -205,7 +200,7 @@ Execute the following steps to create variables for fields with Agent UI as the 
     1. Select **Number** as type.
     1. Tap **Create**.
 
-   Repeat step 4 and 5 to create the following variables:
+   Repeat steps 4 and 5 to create the following variables:
 
     * Payments: Number type
     * Adjustments: Number type
@@ -220,7 +215,7 @@ Execute the following steps to create variables for fields with Agent UI as the 
     * Charges current bill period
     * Amount Due
     * Due Date
-    * Late payment charges after Due Date is $ 20
+    * Late payment charges after the Due Date is $ 20
 
    ![Bill Summary static text](assets/bill_summary_static_new.png)
 
@@ -233,11 +228,11 @@ Execute the following steps to create variables for fields with Agent UI as the 
 
    ![Bill summary](assets/bill_summary_static_variables_new.png)
 
-1. Click **Save** to create the Customer Details text document fragment.
+1. Click **Save** to create the Customer Details text Document Fragment.
 
-## Step 4: Create Summary of charges text document fragment {#step-create-summary-of-charges-text-document-fragment}
+## Step 4: Create Summary of charges text Document Fragment {#step-create-summary-of-charges-text-document-fragment}
 
-The Summary of charges document fragment includes the following fields:
+The Summary of charges Document Fragment includes the following fields:
 
 | Field |Data Source |
 |---|---|
@@ -251,7 +246,7 @@ The Summary of charges document fragment includes the following fields:
 | Total Charges |Form data model |
 | TOTAL PAYABLE |Form data model |
 
-Execute the following steps to create static text and use form data model elements in the document fragment:
+To create static text and use form data model elements in the Document Fragment, do the following:
 
 1. Select **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Select **Create** &gt; **Text**.
@@ -300,8 +295,8 @@ Execute the following steps to create static text and use form data model elemen
     1. Select **is less than** as the operator.
     1. Select **Number** and enter the value as **60**.
 
-   Based on this condition, Value Added Services Charges row is displayed only if the value for the Call Charges field is less than 60.
+   Based on this condition, the Value Added Services Charges row is displayed only if the value for the Call Charges field is less than 60.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Click **Save** to create the Summary of charges text document fragment.
+1. Click **Save** to create the Summary of charges text Document Fragment.

@@ -25,7 +25,7 @@ There is only one "uber" artifact that replaces individual artifacts:
 >
 >Keep up-to-date with the most recent Communities release.
 >
->See [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
+>See the [Latest Releases](deploy-communities.md#latest-releases) section where you can identify the most recent version.
 
 ## Maven Dependency Example {#maven-dependency-example}
 
@@ -40,7 +40,7 @@ There is only one "uber" artifact that replaces individual artifacts:
 
 >[!NOTE]
 >
->See [AEM Uber jar repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) to identify the latest Uber jar artifact. 
+>See the [AEM Uber jar repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) where you can identify the latest Uber jar artifact. 
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

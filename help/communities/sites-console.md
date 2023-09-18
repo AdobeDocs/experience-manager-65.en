@@ -1,14 +1,10 @@
 ---
 title: Communities Sites Console
-seo-title: Communities Sites Console
 description: How to access the Communities Sites console
-seo-description: How to access the Communities Sites console
-uuid: 74134281-244c-40da-a941-7f2f3e706d4b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
@@ -22,11 +18,11 @@ The Communities Sites console provides access to:
 * Site management
 * [Creating and editing nested groups](/help/communities/groups.md) (sub-communities)
 
-See [Getting Started with AEM Communities](/help/communities/getting-started.md) to experience how quickly a community site can be created in the author environment, as well as how to create community groups from the author and publish environments.
+See [Getting Started with AEM Communities](/help/communities/getting-started.md) where you can experience how quickly a community site can be created in the author environment, and how to create community groups from the author and publish environments.
 
 >[!NOTE]
 >
->The main Communities menus for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md) and [community functions](/help/communities/functions.md) are for use only in the author environment.
+>The main Communities menus for the creation of [community sites](/help/communities/sites-console.md), [community site templates](/help/communities/sites.md), [community group templates](/help/communities/tools-groups.md), and [community functions](/help/communities/functions.md) are for use only in the author environment.
 
 ## Prerequisites {#prerequisites}
 
@@ -35,7 +31,7 @@ Before creating a community site, it is *required* to:
 * Ensure one or more publish instances are running.
 * Enable the [tunnel service](/help/communities/deploy-communities.md#tunnel-service-on-author) to manage members and member groups.
 * Identify the [primary publisher](/help/communities/deploy-communities.md#primary-publisher).
-* [Configure replication](/help/communities/deploy-communities.md#replication-agents-on-author) when primary publisher port is not the default (4503).
+* [Configure replication](/help/communities/deploy-communities.md#replication-agents-on-author) when the primary publisher port is not the default (4503).
 
 Best practice, to ensure the site is prepared to support many features, is to take the following steps:
 
@@ -51,19 +47,19 @@ In the author environment, to reach the Communities Sites console:
 
 * From global navigation: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**
 
-The Communities Sites console displays any existing community sites. From this console, community sites may be created, edited, managed and deleted.
+The Communities Sites console displays any existing community sites. From this console, community sites may be created, edited, managed, and deleted.
 
-To create a new community site, select the **Create** icon.
+To create a community site, select the **Create** icon.
 
-To access an existing community site, for the purpose of authoring, modifying, publishing, exporting, or adding a nested group, select the site's folder icon.
+To access an existing community site for authoring, modifying, publishing, exporting, or adding a nested group, select the site's folder icon.
 
 ## Site Creation {#site-creation}
 
 The site creation console provides a step-by-step approach to assemble features of the site based on a selected [community site template](/help/communities/sites.md) and settings.
 
-Every site created includes a login feature as site visitors are required to sign in before being able to post content, send messages, or participate in a group. Other included features are user profiles, messaging, notifications, site menu, search, theming, and branding.
+Every site created includes a login feature as site visitors are required to sign in before being able to post content, send messages, or participate in a group. Other features included are user profiles, messaging, notifications, site menu, search, theming, and branding.
 
-The process is launched by selecting the `Create` button located at the top of the Communities Sites console.
+The process is launched by selecting the `Create` button at the top of the Communities Sites console.
 
 The creation process is a series of steps presented as panels containing a set of features to be configured (presented as sub-panels). It is possible to move forward to the **Next** step or **Back** to the previous step before committing the site in the final step.
 
@@ -71,13 +67,13 @@ The creation process is a series of steps presented as panels containing a set o
 
 ![newsitetemplate](assets/newsitetemplate.png)
 
-On the Site Template panel, the Title, Description, Site Root, Base Language, Name and Site Template are specified:
+On the Site Template panel, the Title, Description, Site Root, Base Language, Name, and Site Template are specified:
 
 * **Community Site Title** 
 
   A display title for the site.
   
-  The title appears on the published site as well as in the site admin UI.
+  The title appears on the published site and in the site admin UI.
 
 * **Community Site Description** 
   
@@ -93,14 +89,14 @@ On the Site Template panel, the Title, Description, Site Root, Base Language, Na
 
 * **Community Site Base Language** 
 
-  (Leave untouched for single language: English) Use the pull down menu to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site will be created for each language added, and will exist within the same site folder following the best practice described in [Translating Content for Multilingual Sites](/help/sites-administering/translation.md). The root page of each site will contain a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
+  (Leave untouched for single language: English) Use the pull down menu to choose one *or more* base languages from the available languages- German, Italian, French, Japanese, Spanish, Portuguese (Brazil), Chinese (Traditional), and Chinese (Simplified). One community site is created for each language added, and exists within the same site folder following the best practice described in [Translating Content for Multilingual Sites](/help/sites-administering/translation.md). The root page of each site contains a child page named by the language code of one of the languages selected, such as 'en' for English or 'fr' for French.
 
 * **Community Site Name**: 
 
   The name of the site's root page which appears in the URL.
 
     * Double-check the name as it is not easily changed after the site is created.
-    * The base URL ( `https://server:port/site root/site name)` will be displayed underneath the `Community Site Name`.
+    * The base URL ( `https://server:port/site root/site name)` is displayed underneath the `Community Site Name`.
 
     * For a valid URL, append a base language code + ".html"
       
@@ -114,7 +110,7 @@ On the Site Template panel, the Title, Description, Site Root, Base Language, Na
 
 ### Step 2 : Design {#step-design}
 
-The Design panel contains 2 sub-panels for selecing the theme and branding banner:
+The Design panel contains two sub-panels for selecting the theme and branding banner:
 
 #### COMMUNITY SITE THEME {#community-site-theme}
 
@@ -122,7 +118,7 @@ The Design panel contains 2 sub-panels for selecing the theme and branding banne
 
 The framework uses `Twitter Bootstrap` to bring a responsive, flexible design to the site. One of the many preloaded Bootstrap themes may be selected to style the selected community site template, or a Bootstrap theme may be uploaded.
 
-When selected, the theme will be overlayed with an opaque blue checkmark.
+When selected, the theme is overlaid with an opaque blue checkmark.
 
 After the community site is published, it is possible to [edit the properties](#modifying-site-properties) and select a different theme.
 
@@ -136,12 +132,12 @@ The image should be sized to be as wide as the expected display of the page in t
 
 When creating or selecting an image, keep in mind:
 
-* The image height will be cropped to 120 pixels measured from the top edge of the image.
+* The image height is cropped to 120 pixels measured from the top edge of the image.
 * The image is pinned to the left edge of the browser window.
 * There is no resizing of the image, such that when the image width is...
 
-  * Less than the browser's width, the image will repeat horizontally.
-  * Greater than the browser's width, the image will appear to be cropped.
+  * Less than the browser's width, the image repeats horizontally.
+  * Greater than the browser's width, the image appears to be cropped.
 
 * Select **Next**.
 
@@ -175,19 +171,19 @@ The Settings panel contains several sub-panels presenting features to configure 
 * **Allow User Registration**
   
   If checked, site visitors may become community members by self-registration.
-  If unchecked, the community site is *restricted* and site visitors must be assigned to the community site's members group, make a request or be sent an invitation by email. If unchecked, anonymous access should not be allowed.
+  If unchecked, the community site is *restricted* and site visitors must be assigned to the community site's members group, make a request, or be sent an invitation by email. If unchecked, anonymous access should not be allowed.
   Uncheck for a *private* community site. Default is checked.
 
 * **Allow Anonymous Access**
   
-  If checked, the community site is *open *and any site visitor may access the site.
+  If checked, the community site is *open* and any site visitor may access the site.
   If unchecked, only signed-in members may access the site.
-  Uncheck for a *private *community site. Default is checked.
+  Uncheck for a *private* community site. Default is checked.
 
 * **Allow Messaging**
   
   If checked, members may send messages to one another and to the group within the community site.
-  If unchecked, messaging is not setup for the community.
+  If unchecked, messaging is not set up for the community.
   Default is unchecked.
 
 * **Allow Social Logins: Facebook**
@@ -206,13 +202,13 @@ The Settings panel contains several sub-panels presenting features to configure 
 >
 >**Allowing Social Logins**
 >
->While sample Facebook and Twitter configurations may exist and be selectable, for a [production environment](/help/sites-administering/production-ready.md), it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
+>While sample Facebook and Twitter configurations may exist and be selectable for a [production environment](/help/sites-administering/production-ready.md), it is necessary to create custom Facebook and Twitter applications. See [Social Login with Facebook and Twitter](/help/communities/social-login.md).
 
 #### TAGGING {#tagging}
 
 ![site-tagging](assets/site-tagging.png)
 
-The tags which may be applied to community content are controlled by selecting Tag Namespaces previously defined through the [Tagging Console](/help/sites-administering/tags.md#tagging-console).
+The tags&ndash;which may be applied to community content&ndash;are controlled by selecting Tag Namespaces previously defined through the [Tagging Console](/help/sites-administering/tags.md#tagging-console).
 
 In addition, selecting tag namespaces for the community site limits the selection presented when defining catalogs and resources.
 
@@ -232,29 +228,29 @@ Finding community members is easy using type-ahead search.
 
 * **Community Moderators**
   
-  Start typing to select one or more community members or member groups who are to be trusted as moderators of user generated content.
+  Start typing to select one or more community members or member groups who are to be trusted as moderators of user-generated content.
 
 * **Community Privileged Members**
   
-  Start typing to select one or more community members or member groups to be given the ability to create new content when `Allow Privileged Member` has been selected for a [community function](/help/communities/functions.md).
+  Start typing to select one or more community members or member groups to be given the ability to create content when `Allow Privileged Member` has been selected for a [community function](/help/communities/functions.md).
 
 * **Community Admins**
   
-  Start typing to select one or more site administrators who can handle the site structure independent of other site administrators and default community administrator. They can create group at any level of the hierarchy, and become the default administrator of the nested groups (but they can later be removed from the admin role of nested groups).
+  Start typing to select one or more site administrators who can handle the site structure independent of other site administrators and the default community administrator. They can create groups at any level of the hierarchy, and become the default administrator of the nested groups (but they can later be removed from the admin role of nested groups).
 
 #### MODERATION {#moderation}
 
 ![site-moderation](assets/site-moderation.png)
 
-The global setting for moderating user generated content (UGC) is controlled by these settings. Individual components have additional settings to control moderation.
+The global setting for moderating user-generated content (UGC) is controlled by these settings. Individual components have additional settings to control moderation.
 
 * **Content is Premoderated**
   
-  If checked, posted community content will not appear until approved by a moderator. Default is unchecked. For more information, see [Moderating Community Content](/help/communities/moderate-ugc.md#premoderation).
+  If checked, posted community content does not appear until approved by a moderator. Default is unchecked. For more information, see [Moderating Community Content](/help/communities/moderate-ugc.md#premoderation).
 
 * **Flagging threshold before content is hidden**
   
-  If greater than 0, the number of times a topic or post has to be flagged before it is hidden from public view. If set to -1, the flagged topic or post is never hidden from public view. Default is 5.
+  If greater than 0, the number of times a topic or post has to be flagged before it is hidden from public view. If set to -1, the flagged topic or post is never hidden from public view. The default is 5.
 
 #### ANALYTICS {#analytics}
 
@@ -269,7 +265,7 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 * **Cloud Config Framework Reference**
   
-  From the pull-down menu, select the Analytics cloud service framework configured for this community site.
+  From the pull-down menu, select the Analytics Cloud service framework configured for this community site.
   `Communities` is the framework example from [Analytics Configuration for Communities Features](/help/communities/analytics.md#aem-analytics-framework-configuration) documentation.
 
 #### TRANSLATION {#translation}
@@ -278,7 +274,7 @@ The global setting for moderating user generated content (UGC) is controlled by 
 
 * **Allow Machine Translation**
   
-  When checked (default is unchecked), machine translation is enabled for UGC within the site. This does not affect any other content, such as page content, even if the site is setup as a multilingual site. See [Translating User Generated Content](/help/communities/translate-ugc.md) for information on configuring a licensed translation service for AEM Communities. See [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for a complete overview.
+  When checked (default is unchecked), machine translation is enabled for UGC within the site. This does not affect any other content, such as page content, even if the site is set up as a multilingual site. See [Translating User-Generated Content](/help/communities/translate-ugc.md) for information on configuring a licensed translation service for AEM Communities. See [Translating Content for Multilingual Sites](/help/sites-administering/translation.md) for a complete overview.
 
 ![allow-machine-translation](assets/allow-machine-translation.png)
 
@@ -286,13 +282,13 @@ The global setting for moderating user generated content (UGC) is controlled by 
   
   The languages enabled for machine translation default to the system setting specified by the [translation integration configuration](/help/communities/translate-ugc.md#translation-integration-configuration). These default settings may be overridden for this site by deleting defaults and/or selecting other languages from the pull-down menu.
 
-* **Choose translation provider**
+* **Choose a translation provider**
   
   By default, the service provider is a trial service using `microsoft` for demonstration only. If no translation service provider is licensed, **Allow Machine Translation** should be unchecked.
 
-* **Choose global shared store**
+* **Choose a global shared store**
   
-  For a website with multiple language copies, a global shared store provides a single thread of conversation, visible from each langauge copy. This is achieved by selecting one of the languages included as a language copy. Default is *No Global Shared Store*.
+  For a website with multiple language copies, a global shared store provides a single thread of conversation, visible from each language copy. This is achieved by selecting one of the languages included as a language copy. The default is *No Global Shared Store*.
 
 * **Choose translation provider config**
   
@@ -343,25 +339,31 @@ Once **Create** is selected and started, the process of creating the site cannot
 Once the site is created:
 
 * Changing the url (node name) is not supported.
-* Future changes to the community site template will not affect the created community site.
-* Disabling the community site template will not affect the created community site.
+* Future changes to the community site template do not affect the created community site.
+* Disabling the community site template does not affect the created community site.
 * It is possible to edit the [STRUCTURE](#modify-structure) of a community site by modifying its properties.
 
 ![create-site](assets/create-site1.png)
 
-When the process completes, the folder for the new site is displayed in the Communities Sites console, from where authors may add page content or administrators may modify the properties of the site.
+When the process completes, the folder for the new site is displayed in the Communities Sites console, from where authors may add page content, or administrators may modify the properties of the site.
 
 ![modify-site-property](assets/modify-site-property.png)
 
-In order to modify a community site, select its project folder to open it:
+To edit a community site, select its project folder to open it:
 
 ![site-project](assets/site-project.png)
 
-When hovering over a site with a mouse, or touching a site card, icons appear which allow for [editing the site in author mode](#authoring-site-content), [opening the site properties for modification](#modifying-site-properties), [publishing the site](#publishing-the-site), [exporting the site](#exporting-the-site), and [deleting the site](#deleting-the-site).
+When hovering over a site with a mouse, or touching a site card, icons appear that allow for the following:
+
+* [editing the site in author mode](#authoring-site-content)
+* [opening the site properties for modification](#modifying-site-properties)
+* [publishing the site](#publishing-the-site)
+* [exporting the site](#exporting-the-site)
+* [deleting the site](#deleting-the-site)
 
 ## Authoring Site Content {#authoring-site-content}
 
-The content of a site may be authored with the same tools as any other AEM website. To open the site for authoring, select the `Open Site` icon that appears on hovering the site with mouse. The site will open in a new tab such that the Communities Sites console remains accessible.
+The content of a site may be authored with the same tools as any other AEM website. To open the site for authoring, select the `Open Site` icon that appears on hovering the site with mouse. The site opens in a new tab such that the Communities Sites console remains accessible.
 
 ![site-content](assets/site-content.png)
 
@@ -373,7 +375,7 @@ The content of a site may be authored with the same tools as any other AEM websi
 
 ![edit-site](assets/edit-site.png)
 
-The properties of an exisitng site, specified during the site creation process, can be modified by selecting the `Edit Site`icon that appears on hovering the site with mouse.
+The properties of an existing site, specified during the site creation process, can be modified by selecting the `Edit Site`icon that appears on hovering the site with mouse.
 
 `Details of the following properties match the descriptions provided in the` [Site Creation](#site-creation) section.
 
@@ -388,7 +390,7 @@ The BASIC panel allows the modification of:
 
 The Community Site Name may not be modified.
 
-Choosing a different community site template would have no affect on an existing community site as no connection remains between templates and sites.
+Choosing a different community site template would have no effect on an existing community site as no connection remains between templates and sites.
 
 Instead, the [STRUCTURE](#modify-structure) of the community site may be modified.
 
@@ -401,7 +403,7 @@ The STRUCTURE panel allows the modification of the structure initially created f
 
   * **`gear icon`**
   
-    Edit settings, including the display title and URL name* as well as [privileged members groups](/help/communities/users.md#privilegedmembersgroups).
+    Edit settings, including the display title and URL name, and [privileged members groups](/help/communities/users.md#privilegedmembersgroups).
 
   * **`trashcan icon`**
     
@@ -409,17 +411,17 @@ The STRUCTURE panel allows the modification of the structure initially created f
 
   * **`grid icon`**
     
-    Modifiy the order of functions as displayed in the site's top level navigation bar.
+    Modify the order of functions as displayed in the site's top-level navigation bar.
 
 >[!NOTE]
 >
->You can change the order of all the functions in the Site Structure except for the function at the top. Therefore, the home page of communities site cannot be changed.
+>You can change the order of all the functions in the Site Structure except for the function at the top. Therefore, the home page of a community site cannot be changed.
 
 >[!CAUTION]
 >
 >* While the display title may be changed without side-effects, it is not recommended to edit the URL name of a community function belonging to a community site.
 >
->For example, renaming the URL will not move existing UGC, thus having the effect of 'losing' UGC.
+>For example, renaming the URL does not move existing UGC, thus 'losing' UGC.
 
 >[!CAUTION]
 >
@@ -438,7 +440,7 @@ The DESIGN panel allows a new theme to be applied:
 * [Community Site Theme](#community-site-theme)
 * [Community Site Branding](#community-site-branding)
 
-  * Scroll to the bottom of the panel to change the brand image.
+  * Scroll to the bottom of the panel so you can change the brand image.
 
 ### Modify Settings {#modify-settings}
 
@@ -457,11 +459,11 @@ The THUMBNAIL panel allows for an image to be uploaded to represent the site in 
 
 ## Publishing the Site {#publishing-the-site}
 
-After a community site has been newly created or modified, it is possible to publish (activate) the site by selecting the `Publish Site` icon, that appears on mouse hover over the site.
+After a community site has been newly created or modified, it is possible to publish (activate) the site by selecting the `Publish Site` icon that appears on mouse hover over the site.
 
 ![publish-site](assets/publish-site.png)
 
-There will be an indication after site is successfully published.
+There is an indication after the site is successfully published.
 
 ![site-published](assets/site-published.png)
 
@@ -473,42 +475,39 @@ After publishing a community site, it is necessary to individually publish each 
 
 ![export-site](assets/export-site.png)
 
-Select the export icon, on mouse hover over the site, to create a package of the community site that is both stored in [package manager](/help/sites-administering/package-manager.md) and downloaded.
+Select the export icon, on mouse hover over the site, so you can create a package of the community site that is both stored in the [Package Manager](/help/sites-administering/package-manager.md) and downloaded.
 
-Note that UGC is not included in the site package.
+UGC is not included in the site package.
 
 ## Deleting the Site {#deleting-the-site}
 
 ![deleteicon](assets/deleteicon.png)
 
-To delete the community site, select the Delete Site icon that appears on hovering the mouse over the site in Communities Site Console. This action removes all the items associated with the site, such as UGC, user groups, assets and database records.
+To delete the community site, select the Delete Site icon that appears on hovering the mouse over the site in the Communities Site Console. This action removes all the items associated with the site, such as UGC, user groups, assets, and database records.
 
 ## Created Community User Groups {#created-community-user-groups}
 
 Once the new community site is published, new member groups (user groups are created in the publish environment) which have the appropriate permissions set for various administrative and member roles.
 
-The name created for the member groups includes the *site-name* given the site in [Step 1](#step13asitetemplate) (the name which appears in the URL) as well as an unique ID to avoid conflicts with community sites and groups having the same site-name for different community site roots.
+The name created for the member groups includes the *site-name* given in [Step 1](#step13asitetemplate) (the name which appears in the URL). It also includes a unique ID to avoid conflicts with community sites and groups having the same site-name for different community site roots.
 
 For example, if the name were "engage" for a site titled "Getting Started Tutorial", then the user group for moderators would be :
 
 * title: Community Engage Moderators
 * name: community-*engage-uid*-moderators
 
-Notice that any members assigned roles as moderators or group administrators while creating the site, will be assigned to the appropriate group as well as assigned to the members group. These groups and member assignments are created on publish when the new site is published.
+Any members assigned roles as moderators or group administrators while creating the site, are assigned to the appropriate group and assigned to the members group. These groups and member assignments are created on publish when the new site is published.
 
 For details, see [Managing Users and User Groups](/help/communities/users.md).
 
 >[!NOTE]
 >
->If [Allow Social Login: Facebook](#user-management) is enabled, once the user group
->
->* `community-<site-name>-<uid>-members`
->
+>If [Allow Social Login: Facebook](#user-management) is enabled, once the user group `community-<site-name>-<uid>-members`
 >is created, the applied [Facebook cloud service](/help/communities/social-login.md#createafacebookcloudservice) should be configured to add users to this group.
 
 ## Configure for Authentication Error {#configure-for-authentication-error}
 
-By default, a community site will redirect to a sample login page when the user enters the wrong credentials and fails to login. This sample login will not be present on a [production server](/help/sites-administering/production-ready.md).
+By default, a community site redirects to a sample login page when the user enters the wrong credentials and fails to log in. This sample login is not present on a [production server](/help/sites-administering/production-ready.md).
 
 To correctly redirect, once a site has been configured and pushed to publish, complete these steps to get authentication failure to redirect to the community site:
 
@@ -519,7 +518,7 @@ To correctly redirect, once a site has been configured and pushed to publish, co
   * For example, [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 
 * Locate `Adobe Granite Login Selector Authentication Handler`.
-* Select the `pencil` icon to open the configuration for edit.
+* Select the `pencil` icon so you can open the configuration for edit.
 * Enter a **Login Page Mappings** as follows:
   
   `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
@@ -541,14 +540,14 @@ On the same AEM publish instance configured with a login page mapping for the co
 
 * Select Log Out.
 * Select Log In.
-* Enter obviously incorrect credentials, such as username "x" and password "x".
+* Enter incorrect credentials, such as username "x" and password "x".
 * The login page should be displayed with an "invalid login" error.
 
 ![test-authentication](assets/test-authentication.png)
 
 ## Accessing Community Sites from Main Sites Console {#accessing-community-sites-from-main-sites-console}
 
-From the global navigation Sites console, community sites are located in the `Community Sites` folder.
+From the global navigation Sites console, community sites are in the `Community Sites` folder.
 
 While it is possible to access a community site in this manner, for administrative tasks, the community site should be accessed from the Communities Sites console.
 

@@ -1,13 +1,9 @@
 ---
 title: APIs to access letter instances
-seo-title: APIs to access letter instances
 description: Learn how to use APIs to access letter instances.
-seo-description: Learn how to use APIs to access letter instances.
-uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 ---
@@ -17,7 +13,7 @@ exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 
 Using the Create Correspondence UI of Correspondence Management, you can save drafts of letter instances under progress and there are submitted letter instances.
 
-Correspondence Management provides you APIs using which you can build the listing interface to work with submitted letter instances or drafts. The APIs list and open submitted and draft letter instances of an agent, so that the agent could continue working on the draft or submitted letter instances.
+Correspondence Management provides you with APIs using which you can build the listing interface to work with submitted letter instances or drafts. The APIs list and open submitted and draft letter instances of an agent, so that the agent could continue working on the draft or submitted letter instances.
 
 ## Fetching letter instances {#fetching-letter-instances}
 
@@ -31,12 +27,12 @@ Correspondence Management exposes APIs to fetch letter instances through the Let
 
 >[!NOTE]
 >
->LetterInstanceService is OSGI service and its instance can be retrieved by using @Reference in Java
+>LetterInstanceService is an OSGI service and its instance can be retrieved by using @Reference in Java&trade;
 >Class or sling.getService(LetterInstanceService. Class ) in JSP.
 
 ### Using&nbsp;getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-The following API finds the letter instances based on the query object (both Submitted and Draft). If query object is null then, it returns all the letter instances. This API returns list of [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objects, which can be used for extracting additional information of letter instance
+The following API finds the letter instances based on the query object (both Submitted and Draft). If the query object is null, then it returns all the letter instances. This API returns a list of [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objects, which can be used for extracting additional information of the letter instance.
 
 **Syntax**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -48,7 +44,7 @@ The following API finds the letter instances based on the query object (both Sub
   </tr>
   <tr>
    <td>query</td>
-   <td>The query parameter is used to find/filter Letter instance. Here query supports only top-level attributes/properties of the object. Query consists of statements and the "attributeName" used in the Statement object should be the name of the property in the Letter instance object.<br /> </td>
+   <td>The query parameter is used to find/filter Letter instance. Here, the query supports only top-level attributes/properties of the object. Query consists of statements and the "attributeName" used in the Statement object should be the name of the property in the Letter instance object.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -132,23 +128,23 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 ## Opening letter instances {#opening-letter-instances}
 
-Letter Instance can be of type Submitted or Draft. Opening both the letter instance types show different behaviors:
+Letter Instance can be of the type Submitted or Draft. Opening both the letter instance types show different behaviors:
 
-* In case of Submitted letter instance a PDF representing the letter instance is opened. Submitted Letter instance persisted on the server also contains the dataXML & processed XDP, which can be used to accomplish and further custom use a case such as creating a PDF/A.
-* In case of Draft letter instance, the create correspondence UI is reloaded to exact previous state as it was during the time when draft was created
+* In the case of a Submitted letter instance, a PDF representing the letter instance is opened. The submitted Letter instance persisted on the server also contains the dataXML & processed XDP, which can be used to accomplish and further custom use a case such as creating a PDF/A.
+* In the case of a Draft letter instance, the create correspondence UI is reloaded to the exact previous state as it was during the time when the draft was created
 
 ### Opening Draft Letter Instance&nbsp; {#opening-draft-letter-instance-nbsp}
 
-CCR UI support the cmLetterInstanceId parameter, which can be used to reloaded letter.
+CCR UI supports the cmLetterInstanceId parameter, which can be used to reloaded letter.
 
 `https://[hostName]:[portNo]/[contextPath]//aem/forms/createcorrespondence.html?random=[randomNo]&cmLetterInstanceId=[letterInstanceId]`
 
 >[!NOTE]
 >
->You do not have to specify the cmLetterId or cmLetterName/State/Version when reloading a correspondence, as the submitted data already contains all the details about the correspondence that is reloaded. RandomNo is used to avoid browser cache issues, you can use timestamp as a random number.
+>You do not have to specify the cmLetterId or cmLetterName/State/Version when reloading a correspondence, as the submitted data already contains all the details about the correspondence that is reloaded. RandomNo is used to avoid browser cache issues, you can use a timestamp as a random number.
 
 ### Opening submitted letter instance {#opening-submitted-letter-instance}
 
-Submitted PDF can be directly opened using letter instance Id:
+Submitted PDF can be directly opened using the letter instance Id:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

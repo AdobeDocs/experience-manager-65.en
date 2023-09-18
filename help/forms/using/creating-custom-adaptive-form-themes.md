@@ -1,20 +1,16 @@
 ---
 title: Creating custom adaptive form themes
-seo-title: Creating custom adaptive form themes
-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
-seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
-uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
+description: An adaptive form theme is an Adobe Experience Manager client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
 content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 ---
 # Creating custom adaptive form themes {#creating-custom-adaptive-form-themes}
 
 >[!CAUTION]
 >
->AEM Forms provide the [Theme Editor](/help/forms/using/themes.md) capability to create and modify adaptive forms [themes](/help/forms/using/themes.md). Peform the steps listed in this article, only if you have upgraded from a version that does not have [Theme Editor](/help/forms/using/themes.md) and you have an existing investment in themes created using Less/CSS files (pre-theme editor method).
+>Adobe Experience Manager (AEM) Forms provide the [Theme Editor](/help/forms/using/themes.md) capability to create and modify adaptive forms [themes](/help/forms/using/themes.md). Perform the steps listed in this article only if you have upgraded from a version that does not have [Theme Editor](/help/forms/using/themes.md) and you have an existing investment in themes created using Less/CSS files (pre-theme editor method).
 
 ## Prerequisites {#prerequisites}
 
@@ -26,7 +22,7 @@ exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 
 An **adaptive form theme** is an AEM client library that you use to define the styles (look and feel) for an adaptive form.
 
-You create an **adaptive template** and apply the theme to the template. You then use this custom template to create an **adaptive form**.
+You create an **adaptive template** and apply the theme to the template. You can then use this custom template to create an **adaptive form**.
 
 ![Adaptive Form and Client Library](assets/hierarchy.png)
 
@@ -34,7 +30,7 @@ You create an **adaptive template** and apply the theme to the template. You the
 
 >[!NOTE]
 >
->The following procedure is described using sample names for AEM objects such as node, properties, and folders.
+>The following procedure is described using sample names for AEM objects such as nodes, properties, and folders.
 >
 >If you follow these steps using the names, the resultant template should appear similar to the following snapshot:
 
@@ -57,11 +53,11 @@ You create an **adaptive template** and apply the theme to the template. You the
 
     * `less` folder: Contains the `less` variable files in which you define the `less` variables and `less mixins` that are used to manage the .css styles.
 
-      This folder consists of `less` variable files, `less` mixin files, `less` files defining styles using mixins and variables. And all these less files are then imported in styles.less.
+      This folder consists of `less` variable files, `less` mixin files, `less` files defining styles using mixins, and variables. And all these less files are then imported in styles.less.
 
     * `css`folder: Contains the .css files in which you define the static styles to be used in the theme.
 
-   **Less variables files**: These are the files, where you define or override the variables that are used in defining CSS styles.
+   **Less variables files**: These are the files where you define or override the variables that are used in defining CSS styles.
 
    Adaptive forms provide OOTB variables defined in the following .less files:
 
@@ -103,7 +99,7 @@ You create an **adaptive template** and apply the theme to the template. You the
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Less mixin files:** You can define the functions that accept variables as arguments. The output of these functions are the resultant styles. Use these mixins within different styles, to avoid repeating CSS styles.
+   **Less mixin files:** You can define the functions that accept variables as arguments. The output of these functions is the resultant styles. Use these mixins within different styles so you can avoid repeating CSS styles.
 
    Adaptive forms provide OOTB mixins defined in:
 
@@ -129,7 +125,7 @@ You create an **adaptive template** and apply the theme to the template. You the
    }
    ```
 
-   **Styles.less File:** Use this file to include all the less files (variables, mixins, styles) that you need to use in the client library.
+   **Styles.less File:** Use this file to include all the less files (variables, mixins, styles) that you must use in the client library.
 
    In the following sample `styles.less` file, the import statement can be placed in any order.
 
@@ -190,7 +186,7 @@ You create an **adaptive template** and apply the theme to the template. You the
    >
    >The styles.less file is not mandatory. This means that you do not need to create this file, if you have not defined any custom styles, variables, or mixins.
    >
-   >However, if you do not create a style.less file, in the css.txt file, you need to uncomment the following line:
+   >However, if you do not create a style.less file, in the css.txt file, you must uncomment the following line:
    >
    >**`#base=less`**
    >
@@ -210,9 +206,9 @@ After you have created an adaptive form theme, perform the following steps to us
 
        ![CRX repository snapshot](assets/1-2.png)
 
-    1. To use a theme in the page, you need to add an overriding file library.jsp to the node.
+    1. To use a theme in the page, you must add an overriding file library.jsp to the node.
 
-       You then import the theme created in To create an adaptive form theme section of this article.
+       You can then import the theme created in To create an adaptive form theme section of this article.
 
        The following sample code snippet imports the `af.theme.forest` theme.
 
@@ -223,8 +219,8 @@ After you have created an adaptive form theme, perform the following steps to us
 
     1. **Optional**: In the custom page, override the header.jsp, footer.jsp, and the body.jsp, as required.
 
-1. Create a cutom template (for example: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) whose the jcr:content points to custom page created in the previous step (for example: `myAfCustomizations/myAfPages/forestPage)`.
+1. Create a custom template (for example: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) whose the jcr:content points to custom page created in the previous step (for example: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![CRX repository snapshot](assets/2-1.png)
 
-1. Create an Adaptive form using the template created in the previous step. The look and feel of the adaptive form is defined by the theme created in To create an adaptive form theme section of this article.
+1. Create an Adaptive form using the template created in the previous step. The look and feel of the adaptive form is defined by the theme created in the To create an adaptive form theme section of this article.

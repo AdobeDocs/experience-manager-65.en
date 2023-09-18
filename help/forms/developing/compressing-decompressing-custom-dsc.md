@@ -17,11 +17,13 @@ Java&trade; editor such as [Eclipse](https://www.eclipse.org/) or [Netbeans IDE]
 
 Intermediate
 
-AEM Forms on JEE enables developers to create custom DSC (Document Service Container) to create enriched out of the box features. Creating such components are pluggable to the AEM Forms on JEE runtime environment and serves the intended purpose. This article explains how to create a custom ZIP Service which can be used to compress a list of files into a .zip file and decompress a .zip to a list of documents.
+AEM Forms on JEE lets developers create custom ASC (Acrobat Services Container) to create enriched out of the box features. Creating such components are pluggable to the AEM Forms on JEE runtime environment and serves the intended purpose. This article explains how to create a custom ZIP Service which can be used to compress a list of files into a .zip file and decompress a .zip to a list of documents.
 
-## Creating a custom DSC component {#create-custom-dsc-component}
+## Creating a custom ASC component {#create-custom-dsc-component}
 
-Create a custom DSC component with two service operations to compress and decompress list of documents. This component uses java.util.zip package for compression and decompression. Follow the below steps to create a custom component:
+Create a custom ASC component with two service operations so you can compress and decompress a list of documents. This component uses the java.util.zip package for compression and decompression. 
+
+To create a custom ASC component:
 
 1. Add the adobe-livecycle-client.jar file to the library
 1. Add the required Icons
@@ -199,7 +201,7 @@ Similarly the ZipDocuments operation of the custom component can accept a list o
 
 ![Zip Document](assets/zip-doc.jpg)
 
-The following workflow orchestration shows how to decompress the given ZIP file, compress them back to another ZIP file, and returns output (see Figure below).
+The following workflow orchestration shows how to decompress the given ZIP file, compress it back to another ZIP file, and return output (see Figure below).
 
 ![Unzip Zip workflow](assets/unzip-zip-process.jpg)
 
@@ -211,8 +213,8 @@ You can use this ZIP Service for the following use cases:
 
 * Supply a ZIP file containing several PDF documents which can be reader extended after decompressing them. This requires AEM Forms on JEE Reader Extensions module.
 
-* Supply a ZIP file containing heterogeneous type of document which can be decompressed and converted as PDF document using Generate PDF service.
+* Supply a ZIP file containing a heterogeneous type of document that can be decompressed and converted as PDF document using the Generate PDF service.
 
 * Policy protect a list of documents and return as a ZIP file.
 
-* Allow users to download all the attachments of a process instance as a single ZIP file.
+* Let users download all the attachments of a process instance as a single ZIP file.

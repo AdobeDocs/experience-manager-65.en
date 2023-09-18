@@ -1,9 +1,6 @@
 ---
 title: Developing (generic)
-seo-title: Developing (generic)
 description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities
-seo-description: The integration framework includes an integration layer with an API, allowing you to build AEM components for eCommerce capabilities
-uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -18,7 +15,7 @@ exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 
 The integration framework includes an integration layer with an API. This lets you build AEM components for eCommerce capabilities (independent of your specific eCommerce engine). It also lets you use the internal CRX database or to plug in an eCommerce system and pull product data into AEM.
 
-A number of out-of-the-box AEM components are provided to use the integration layer. Currently these are:
+Several out-of-the-box AEM components are provided to use the integration layer. Currently these are:
 
 * A product display component
 * A shopping cart
@@ -27,11 +24,11 @@ A number of out-of-the-box AEM components are provided to use the integration la
 * Check-out
 * Search
 
-For search an integration hook is provided that lets you use the AEM search, a third party search or a combination thereof.
+For search, an integration hook is provided that lets you use the Adobe Experience Manager (AEM) search, a third-party search, or a combination thereof.
 
 ## eCommerce Engine Selection {#ecommerce-engine-selection}
 
-The eCommerce framework can be used with any eCommerce solution, the engine being used needs to be identified by AEM - even when using the AEM generic engine:
+The eCommerce framework can be used with any eCommerce solution, the engine being used must be identified by AEM - even when using the AEM generic engine:
 
 * eCommerce Engines are OSGi services supporting the `CommerceService` interface
 
@@ -48,7 +45,7 @@ The eCommerce framework can be used with any eCommerce solution, the engine bein
 
 * The `cq:commerceProvider` property is also used to reference the appropriate commerce factory definition.
 
-    * For example, a `cq:commerceProvider` property with the value geometrixx will correlate to the OSGi configuration for **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - where the parameter `commerceProvider` also has the value `geometrixx`.
+    * For example, a `cq:commerceProvider` property with the value Geometrixx correlates to the OSGi configuration for **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) - where the parameter `commerceProvider` also has the value `geometrixx`.
     * Here further properties can be configured (when appropriate and available).
 
 In a standard AEM installation a specific implementation is required, for example:
@@ -98,26 +95,26 @@ The **CommerceSession**:
   `CommerceSession.getUserContext()`
 
 * Can retrieve/update delivery details by using `updateOrder(Map<String, Object> delta)`
-* Also owns the **payment** processing connection
-* Also owns the **fulfillment** connection
+* Owns the **payment** processing connection
+* Owns the **fulfillment** connection
 
 ### Architecture {#architecture}
 
 #### Architecture of Product and Variants {#architecture-of-product-and-variants}
 
-A single product can have multiple variations; for instance, it might vary by color and/or size. A product must define which properties drive variation; we term these *variant axes*.
+A single product can have multiple variations; for instance, it might vary by color and/or size. A product must define which properties drive variation; Adobe terms these *variant axes*.
 
-However, not all properties are variant axes. Variations can also affect other properties; for example, the price might be dependant on size. These properties cannot be selected by the shopper and therefore are not considered variant axes.
+However, not all properties are variant axes. Variations can also affect other properties; for example, the price might depend on size. These properties cannot be selected by the shopper and therefore are not considered variant axes.
 
 Each product and/or variant is represented by a resource, and therefore maps 1:1 to a repository node. It is a corollary that a specific product and/or variant can be uniquely identified by its path.
 
-Any product resource can be represented by a `Product API`. Most calls in the product API are variation specific (although variations might inherit shared values from an ancestor), but there are also calls which list the set of variations ( `getVariantAxes()`, `getVariants()`, etc.).
+Any product resource can be represented by a `Product API`. Most calls in the product API are variation-specific (although variations might inherit shared values from an ancestor), but there are also calls which list the set of variations ( `getVariantAxes()`, `getVariants()`, and so on).
 
 >[!NOTE]
 >
->In effect a variant axes is determined by whatever `Product.getVariantAxes()` returns:
+>In effect, a variant axes is determined by whatever `Product.getVariantAxes()` returns:
 >
->* for the generic implementation AEM reads it from a property in the product data ( `cq:productVariantAxes`)
+>* for the generic implementation, AEM reads it from a property in the product data ( `cq:productVariantAxes`)
 >
 >While products (in general) can have many variant axes, the out-of-the-box product component only handles two:
 >
@@ -303,7 +300,7 @@ public class AxisFilter implements VariantFilter {
 
 * The shopping cart is owned by the `CommerceSession:`
 
-    * The `CommerceSession` performs add, remove, etc.
+    * The `CommerceSession` performs add, remove, and so on.
     * The `CommerceSession` also performs the various calculations on the cart.
     * The `CommerceSession` also applies vouchers and promotions that have fired to the cart.
 
@@ -315,7 +312,7 @@ public class AxisFilter implements VariantFilter {
         * Different currencies.
         * VAT-liable and VAT-free.
 
-    * The modifiers are completely open-ended with the following interface:
+    * The modifiers are open-ended with the following interface:
 
         * `int CommerceSession.getQuantityBreakpoints(Product product)`
         * `String CommerceSession.getProductPrice(Product product)`
@@ -324,11 +321,11 @@ public class AxisFilter implements VariantFilter {
 
 * Storage
 
-    * In the AEM-generic case carts of are stored in the [ClientContext](/help/sites-administering/client-context.md)
+    * In the AEM-generic case, carts are stored in the [ClientContext](/help/sites-administering/client-context.md)
 
 **Personalization**
 
-* Personalization should always be driven through the [ClientContext](/help/sites-administering/client-context.md).
+* Always drive personalization through the [ClientContext](/help/sites-administering/client-context.md).
 * A ClientContext `/version/` of the cart is created in all cases:
 
     * Products should be added by using the `CommerceSession.addCartEntry()` method.
@@ -378,7 +375,7 @@ The `CommerceSession` owns the three elements:
 
 **Shipping Calculations**
 
-* Order forms often need to present multiple shipping options (and prices).
+* Order forms must often present multiple shipping options (and prices).
 * The prices might be based on items and details of the order, such as weight and/or delivery address.
 * The `CommerceSession` has access to all the dependencies, so it can be treated in a similar manner as product pricing:
 
@@ -397,13 +394,13 @@ Following the standard service API model, the eCommerce project provides a set o
 >
 >So although the generic implementation provided out-of-the-box does not implement this API, you can extend it and add the search functionality.
 
-The eCommerce project contains a default search component, located in:
+The eCommerce project contains a default search component in:
 
 `/libs/commerce/components/search`
 
 ![chlimage_1-34](/help/sites-developing/assets/chlimage_1-34a.png)
 
-This makes use of the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
+This use the search API to query the selected commerce engine (see [eCommerce Engine Selection](#ecommerce-engine-selection)):
 
 #### Search API {#search-api}
 
@@ -411,11 +408,11 @@ There are several generic / helper classes provided by the core project:
 
 1. `CommerceQuery`
 
-   Is used to describe a search query (contains information about the query text, current page, page size, sort and selected facets). All eCommerce services that implement the search API will receive instances of this class in order to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
+   Used to describe a search query (contains information about the query text, current page, page size, sort, and selected facets). All eCommerce services that implement the search API receive instances of this class to perform their search. A `CommerceQuery` can be instantiated from a request object ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you need to display a hyperlink for each value of each facet, such that when the user clicks on the hyperlink the respective value is toggled (i.e. if it was selected it is removed from the query, otherwise added). This takes care of all the logic of handling multiple/single-valued facets, overriding values, etc.
+   Is a utility class that provides one static method - `toParams` - that is used for generating `GET` parameter strings from a list of facets and one toggled value. This is useful on the UI side, where you need to display a hyperlink for each value of each facet, such that when the user clicks the hyperlink, the respective value is toggled. That is, if it was selected, it is removed from the query, otherwise it is added. This takes care of all the logic of handling multiple/single-valued facets, overriding values, and so on.
 
 The entry point for the search API is the `CommerceService#search` method which returns a `CommerceResult` object. See the API Documentation for more information on this topic.
 
@@ -442,7 +439,7 @@ The entry point for the search API is the `CommerceService#search` method which 
     * The **Voucher** component ( `/libs/commerce/components/voucher`) provides:
 
         * A renderer for voucher administration; this shows any vouchers currently in the cart.
-        * The edit dialogs (form) for administrating (adding/removing) the vouchers.
+        * The edit dialog boxes (form) for administrating (adding/removing) the vouchers.
         * The actions required for adding/removing vouchers to/from the cart.
 
 * Promotions:
@@ -458,7 +455,7 @@ The entry point for the search API is the `CommerceService#search` method which 
 
     * You can connect promotions to a campaign to define their on/off date/times.
     * You can connect promotions to an experience to define their segments.
-    * Promotions not connected to an experience will not fire on its own, but can still be fired by a Voucher.
+    * Promotions not connected to an experience do not fire on its own, but can still be fired by a Voucher.
     * The Promotion component ( `/libs/commerce/components/promotion`) contains:
 
         * renderers and dialogs for promotion administration
@@ -469,9 +466,9 @@ The entry point for the search API is the `CommerceService#search` method which 
         * `DiscountPromotionHandler`, which applies a cart-wide absolute or percentage discount
         * `PerfectPartnerPromotionHandler`, which applies a product absolute or percentage discount if the partner product is also in the cart
 
-    * The ClientContext `SegmentMgr` resolves segments and the ClientContext `CartMgr` resolves promotions. Each promotion that is subject to at least one resolved segment will be fired.
+    * The ClientContext `SegmentMgr` resolves segments and the ClientContext `CartMgr` resolves promotions. Each promotion that is subject to at least one resolved segment is fired.
 
-        * Fired Promotions are sent back to the server via an AJAX call to re-calculate the cart.
+        * Fired Promotions are sent back to the server via an AJAX call to recalculate the cart.
         * Fired Promotions (and added Vouchers) are also shown in the ClientContext panel.
 
 Adding/Removing a voucher from a cart is accomplished via the `CommerceSession` API:
@@ -501,7 +498,7 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-This way, the `CommerceSession` is responsible for checking whether a voucher exists and if it can be applied or not. This might be for vouchers that can only be applied if a certain condition is met; for example, when the total cart price is greater than $100). If a voucher cannot be applied for any reason, the `addVoucher` method will throw an exception. Also, the `CommerceSession` is responsible for updating the cart's price(s) after a voucher is added / removed.
+This way, the `CommerceSession` is responsible for checking whether a voucher exists and if it can be applied or not. This might be for vouchers that can only be applied if a certain condition is met. For example, when the total cart price is greater than $100. If a voucher cannot be applied for any reason, the `addVoucher` method throws an exception. Also, the `CommerceSession` is responsible for updating the cart's prices after a voucher is added / removed.
 
 The `Voucher` is a bean-like class that contains fields for:
 
@@ -509,7 +506,7 @@ The `Voucher` is a bean-like class that contains fields for:
 * A short description
 * Referencing the related promotion that indicates the discount type and value
 
-The `AbstractJcrCommerceSession` provided can apply vouchers. The vouchers returned by the class `getVouchers()` are instances of `cq:Page` containing a jcr:content node with the following properties (amongst others):
+The `AbstractJcrCommerceSession` provided can apply vouchers. The vouchers returned by the class `getVouchers()` are instances of `cq:Page` containing a jcr:content node with the following properties (among others):
 
 * `sling:resourceType` (String) - this needs to be `commerce/components/voucher`
 
@@ -517,7 +514,7 @@ The `AbstractJcrCommerceSession` provided can apply vouchers. The vouchers retur
 * `code` (String) - the code the user has to enter to apply this voucher
 * `promotion` (String) - the promotion to be applied; for example, `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-Promotion handlers are OSGi services which modify the shopping cart. The cart will support several hooks that will be defined in the `PromotionHandler` interface.
+Promotion handlers are OSGi services that modify the shopping cart. The cart supports several hooks that are defined in the `PromotionHandler` interface.
 
 ```java
 /**
