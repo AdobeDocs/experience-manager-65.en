@@ -60,7 +60,7 @@ Some of the key features and enhancements in this release include the following:
 
 * **[Enhanced Adobe Sign Workflow step](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** Adobe Sign workflow step in AEM Workflows is available with the following enhancements.  
 
-   * **Enhanced Security with Government ID-Based Authentication for Adobe Sign:** Adobe Acrobat Sign's Government ID Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By leveraging trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
+   * **Enhanced Security with Government ID-Based Authentication for Adobe Sign:** Adobe Acrobat Sign's Government ID-Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By using trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
    
    * **Enhanced Transparency with Audit Trail for Adobe Sign Documents:** Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements.  
 
@@ -190,7 +190,8 @@ If you are performing a fresh installation or planning to use the latest softwar
   * If a user tries to implement lazy loading on a fragment embedded in an Adaptive Form for the author environment, the rules/logic defined for the fragment are not reflected in the form. (FORMS-8554, FORMS-9182) 
   * When you try to open any Coral dialog in AEM 6.5.16.0 Service Pack, it generates the `error.log: cannot render resource` exception. (FORMS-8942) 
   * When a user tries to translate a checkbox with a single option in an Adaptive Form, it fails. (FORMS-10181)
-  * When a user publishes DoR templates for localized forms and forms with its associated DOR templates, it fails. (FORMS-10535)
+  * All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates get published. (FORMS-10535)
+ 
 * **Accessibility**
   * When using the Scribble Signature component in an Adaptive Form, the following errors occur: 
     * After the Scribble Signature component, when there are more components, pressing the Tab key does not traverse to the signature dialog box; instead, it moves to the next component. Only after traversing all components, it finally moves to the signature dialog box. 
@@ -448,6 +449,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 * When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
 * When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
 * When a redirect URL is set in the guide container of an Adaptive Form, the inline signing stops working. (FORMS-10493)
+* All Document of Record (DoR) templates fail to publish. Only English locale-based DoR templates and their associated Forms-based DoR templates get published. (FORMS-10535)
 
 #### Interactive Communications
 
