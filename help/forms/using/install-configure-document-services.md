@@ -237,7 +237,7 @@ Set environment variables for 32-bit and 64-bit Java Development Kit, third-part
 >[!NOTE]
 >
 >* All environment variables and respective paths are case-sensitive.
->* JAVA_HOME, JAVA_HOME_32, and Acrobat_PATH (Windows only) are mandatory environment variables.  
+>* JAVA_HOME and Acrobat_PATH (Windows only) are mandatory environment variables.  
 >* The environment variable OpenOffice_PATH is set to the installation folder instead of the path to the executable.
 >* Do not set up environment variables for Microsoft® Office applications such as Word, PowerPoint, Excel, and Project, or for AutoCAD. If these applications are installed on the server, the Generate PDF service automatically starts these applications.
 >* On UNIX-based platforms, install OpenOffice as /root. If OpenOffice is not installed as root, the PDF Generator service fails to convert OpenOffice documents to PDF documents. If you are required to install and run OpenOffice as a non-root user, then provide sudo rights to the non-root user.  
@@ -475,7 +475,7 @@ On Microsoft® Windows, the PDF Generator service uses Adobe Acrobat to convert 
 
 ### (Windows only) Configure primary route for HTML to PDF conversion {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recommends using PhantomJS route because it has the capability to handle dynamic content and has no dependencies on 32-bit libraries, 32-bit JDK, or requires no extra fonts. Also, PhantomJS route does not require sudo or root access to run the conversion.
+The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recommends using PhantomJS route because it has the capability to handle dynamic content and has no dependencies on 32-bit libraries or requires no extra fonts. Also, PhantomJS route does not require sudo or root access to run the conversion.
 
 The default primary route for HTML to PDF conversion is Webkit. To change the conversion route:
 
@@ -684,8 +684,6 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
    ldd phantomjs | grep not
 
    ```
-
-* Ensure that JAVA_HOME_32 environment variable points to correct location.
 
 **Linux® and Solaris™ (WebKit conversion route)**
 
