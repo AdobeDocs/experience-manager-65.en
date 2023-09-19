@@ -1,35 +1,30 @@
 ---
 title: Style your adaptive form 
-seo-title: Style your adaptive form 
-description: Learn to create a custom theme, style individual components, and use web fonts in a theme 
-seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme 
-page-status-flag: de-activated
-uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
+description: Learn to create a custom theme, style individual components, and use Web Fonts in a theme. 
 topic-tags: introduction
-discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 ---
 # Style your adaptive form {#do-not-publish-style-your-adaptive-form}
 
-Learn to create a custom theme, style individual components, and use web fonts in a theme 
+Learn to create a custom theme, style individual components, and use Web Fonts in a theme. 
 
  ![hero-image](do-not-localize/08-style_your_adaptiveformmain.png)
 
-This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. It is recommended to follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
+This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. Adobe recommends that you follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
 
 ## About the tutorial  {#about-the-tutorial}
 
-You can use themes to provide a unique appearance and style to an adaptive form. You can apply out of the box themes provided with adaptive forms editor or create custom themes of your own. AEM [!DNL Forms] provide a [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) to create custom themes. A single theme can provide the different appearance to the same adaptive form opened on mobile, tablet, or desktop. Any prior knowledge of CSS or LESS is not required to use theme editor but it is desired.
+You can use themes to provide a unique appearance and style to an adaptive form. You can apply out-of-the-box themes provided with the adaptive forms editor or create custom themes of your own. AEM [!DNL Forms] provide a [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) to create custom themes. A single theme can provide the different appearance to the same adaptive form opened on mobile, tablet, or desktop. Any prior knowledge of CSS or LESS is not required to use the theme editor, but it is desired.
 
-By the end of the tutorial, you will learn to:
+By the end of the tutorial, you should be able to do the following:
 
 * Apply an out of the box theme to an adaptive form
 * Create a theme for adaptive form using the theme editor
 * Style individual components
-* Bonus Section: Use web fonts in a custom theme
+* Bonus Section: Use Web Fonts in a custom theme
 
-The form will look similar to the following after you complete the tutorial:
+Your form should look similar to the following after you complete the tutorial:
 
 ![Form with a custom theme](assets/styled-adaptive-form.png) 
 
@@ -43,14 +38,16 @@ Download the header-style and logo images, given below, on your local machine. T
 
 ## Step 1: Apply a theme to your adaptive form {#step-apply-a-theme-to-your-adaptive-form}
 
-Adaptive forms editor provides multiple out-of-the-box themes. If you plan not to use a custom style for your adaptive form, you can also publish your adaptive forms with an out-of-the-box theme. Themes are independent of adaptive forms. You can apply the same theme to multiple adaptive forms. To apply a theme to an adaptive form:
+Adaptive forms editor provides multiple out-of-the-box themes. If you plan not to use a custom style for your adaptive form, you can also publish your adaptive forms with an out-of-the-box theme. Themes are independent of adaptive forms. You can apply the same theme to multiple adaptive forms. 
+
+**To apply a theme to your adaptive form:**
 
 1. Open the adaptive form for editing.
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html) 
 
 1. Open properties of **[!UICONTROL Adaptive Form container]**. In the properties browser, navigate to **[!UICONTROL Basic]** &gt; **[!UICONTROL Adaptive Form Theme]**. The **[!UICONTROL Adaptive Form Theme]** field lists all the out-of-the-box and custom themes. By default, the Canvas theme is applied.
-1. Select a theme from the **[!UICONTROL Adaptive Form Theme]** field. For example, **Survey theme**. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) to apply the selected theme.
+1. Select a theme from the **[!UICONTROL Adaptive Form Theme]** field. For example, **Survey theme**. Tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) so you can apply the selected theme.
 
    ![Adaptive form with the default theme](assets/default-adaptive-form.png)
 
@@ -62,11 +59,13 @@ Adaptive forms editor provides multiple out-of-the-box themes. If you plan not t
 
 ## Step 2: Update your adaptive form {#step-update-your-adaptive-form}
 
-The design displayed above requires changes in placeholder text and logo of your existing adaptive form. Perform the following steps to make the required changes:
+The design displayed above requires changes in placeholder text and logo of your existing adaptive form. 
+
+**To update your adaptive form:**
 
 1. Change the existing logo and text of the header. To remove the logo:
 
-    1. Open the form in form editor.
+    1. Open the form in the form editor.
 
        [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
     
@@ -87,11 +86,11 @@ The design displayed above requires changes in placeholder text and logo of your
 
 ## Step 3: Create a custom theme for your adaptive form {#step-create-a-custom-theme-for-your-adaptive-form}
 
-You can use [theme editor](/help/forms/using/themes.md) to create custom themes. The theme editor is an all-powerful WYSIWYG editor. It is a visual method to apply CSS to various components of an adaptive form. It provides finer controls to style components and panels of an adaptive form.
+You can use the [theme editor](/help/forms/using/themes.md) to create custom themes. The theme editor is an all-powerful WYSIWYG editor. It is a visual method to apply CSS to various components of an adaptive form. It provides finer controls to style components and panels of an adaptive form.
 
 A theme is a separate entity like adaptive forms. It contains styles (CSS) for the components and panels of an adaptive form. Styles include CSS properties such as background colors, state colors, transparency, alignment, and size. When you apply a theme, the specified style is applied to the corresponding components of an adaptive form.
 
-In this tutorial, you will style header and footer, text and numeric components, attachment component, and buttons. Let's start with creating a theme:
+In this tutorial, you style header and footer, text and numeric components, attachment component, and buttons. Let's start with creating a theme:
 
 ### Create a theme {#create-a-theme}
 
@@ -99,11 +98,11 @@ In this tutorial, you will style header and footer, text and numeric components,
 1. Tap **[!UICONTROL Create]** and select **[!UICONTROL Theme]**. The [!UICONTROL Create Theme] page with the fields required to create a theme appears. The **[!UICONTROL Title]** and **[!UICONTROL Name]** fields are mandatory:
 
     * **Title:** Specify a title of the theme. For example, **Global Theme.** The title helps you identify the theme from the list of themes.
-    * **Name:** Specify the name of the theme. For example, **Global-Theme.** A node with the specified name is created in the repository. As you start typing a title, value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
+    * **Name:** Specify the name of the theme. For example, **Global-Theme.** A node with the specified name is created in the repository. As you start typing a title, the value for the name field is automatically generated. You can change the suggested value. The name field can include only alphanumeric characters, hyphens, and underscores. All the invalid inputs are replaced with a hyphen.
 
-1. Tap **[!UICONTROL Create]**. A theme is created and a dialog to open the form for editing appears. Tap **[!UICONTROL Open]** to open the newly created theme in a new tab. The theme opens in theme editor. For styling, the theme editor uses an out-of-the-box adaptive form shipped with AEM [!DNL Forms].
+1. Tap **[!UICONTROL Create]**. A theme is created and a dialog to open the form for editing appears. Tap **[!UICONTROL Open]** to open the newly created theme in a new tab. The theme opens in the theme editor. For styling, the theme editor uses an out-of-the-box adaptive form shipped with AEM [!DNL Forms].
 
-   For information about using theme editor UI, see [About the theme editor](/help/forms/using/themes.md#aboutthethemeeditor).
+   For information about using the theme editor UI, see [About the theme editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
 1. Tap **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In the **[!UICONTROL Preview Form]** field, select the **shipping-address-add-update-form** adaptive form, tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), tap **[!UICONTROL Save]**. Now, the theme editor is configured to use your own adaptive form instead of the default adaptive form. Tap **[!UICONTROL Cancel]** to return to the theme editor.
 
@@ -117,7 +116,7 @@ In this tutorial, you will style header and footer, text and numeric components,
 
 ### Style header and footer {#style-header-and-footer}
 
-Header and footer provide a consistent and distinctive look to an adaptive form. Generally, the header contains logo and name of the organization, the footer contains copyright information, and these remain identical across multiple forms of an organization. To style header and footer of the shipping-address-add-update-form adaptive form:
+Header and footer provide a consistent and distinctive look to an adaptive form. Generally, the header contains the logo and name of the organization, the footer contains copyright information, and these remain identical across multiple forms of an organization. To style the header and footer of the shipping-address-add-update-form adaptive form:
 
 1. Navigate the **[!UICONTROL Header]** &gt; **[!UICONTROL Text]** option in the Selectors panel. The Selectors panel is on the left of the theme editor. If the panel is not visible, tap ![toggle-side-panel](assets/toggle-side-panel.png) Toggle Side Panel.  
 
@@ -125,9 +124,9 @@ Header and footer provide a consistent and distinctive look to an adaptive form.
 
    | Property |Value |
    |---|---|
-   | Font Family |Arial |
+   | Font Family |Arial&reg; |
    | Font Color |FFFFFF |
-   | Font Size |54px |
+   | Font Size |54 px |
 
 1. Tap the [!UICONTROL header] widget and tap **[!UICONTROL Header]**. The options to style the Header widget appear on the left. Expand the **[!UICONTROL Dimensions & Position]** accordion, set the **[!UICONTROL Height]** to `120px`, and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Expand the **[!UICONTROL Background]** accordion of the header widget, set the **[!UICONTROL Background Color]** to `F6921E.`
@@ -155,7 +154,7 @@ Header and footer provide a consistent and distinctive look to an adaptive form.
         <li>Top: 1.5rem</li> 
         <li>Bottom: -35px</li> 
         <li>Left: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Tip:</strong> Tap the <img src="assets/link.png"> link icon to provide different value to each field.<br /> </p> </td> 
+       </ul> <p><strong>Tip:</strong> Tap the <img src="assets/link.png"> link icon to provide a different value to each field.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Height</td> 
@@ -168,7 +167,7 @@ Header and footer provide a consistent and distinctive look to an adaptive form.
 
 ### Style the data capture component and apply a background to the adaptive form {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-You can use multiple components in an adaptive form to capture data. For example, text box and numeric box. You can provide identical style to all the data capture components or separate style for each component. In this tutorial, an identical style is applied to numeric boxes (Customer ID, ZIP Code) and text boxes (Customer ID, Name, Shipping Address, State, Email). To style the data capture components:
+You can use multiple components in an adaptive form to capture data. For example, text box and numeric box. You can provide an identical style to all the data capture components or a separate style for each component. In this tutorial, an identical style is applied to numeric boxes (Customer ID, ZIP Code) and text boxes (Customer ID, Name, Shipping Address, State, Email). To style the data capture components:
 
 1. Tap the **[!UICONTROL Customer ID]** field and tap the **[!UICONTROL Field Widget]** option. Set the following properties and tap ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -189,16 +188,16 @@ You can use multiple components in an adaptive form to capture data. For example
       <td>Border Radius </td> 
       <td> 
        <ul> 
-        <li>Top: 7px<br /> </li> 
-        <li>Right: 7px<br /> </li> 
-        <li>Bottom: 7px<br /> </li> 
-        <li>Left: 7px<br /> </li> 
+        <li>Top: 7 px<br /> </li> 
+        <li>Right: 7 px<br /> </li> 
+        <li>Bottom: 7 px<br /> </li> 
+        <li>Left: 7 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Text</td> 
       <td>Font Family</td> 
-      <td>Arial</td> 
+      <td>Arial&reg;</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
@@ -208,7 +207,7 @@ You can use multiple components in an adaptive form to capture data. For example
      <tr> 
       <td>Text</td> 
       <td>Font Size</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Dimensions and Position</td> 
@@ -220,7 +219,7 @@ You can use multiple components in an adaptive form to capture data. For example
       <td>Margin</td> 
       <td> 
        <ul> 
-        <li>Left: 10rem</li> 
+        <li>Left: 10 rem</li> 
        </ul> </td> 
      </tr> 
     </tbody> 
@@ -258,16 +257,16 @@ You can use a custom theme to apply an identical style to all the buttons of the
       <td>Border Radius </td> 
       <td> 
        <ul> 
-        <li>Top: 7px<br /> </li> 
-        <li>Right: 7px<br /> </li> 
-        <li>Bottom: 7px<br /> </li> 
-        <li>Left: 7px</li> 
+        <li>Top: 7 px<br /> </li> 
+        <li>Right: 7 px<br /> </li> 
+        <li>Bottom: 7 px<br /> </li> 
+        <li>Left: 7 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Text<br /> </td> 
       <td>Font Family</td> 
-      <td>Arial</td> 
+      <td>Arial&reg;</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
@@ -277,7 +276,7 @@ You can use a custom theme to apply an identical style to all the buttons of the
      <tr> 
       <td>Text</td> 
       <td>Font Size</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
     </tbody> 
    </table>
@@ -326,21 +325,21 @@ Some styles apply to only a specific component. Such components are styled in ad
       <td>Padding</td> 
       <td> 
        <ul> 
-        <li>Left: 10px</li> 
+        <li>Left: 10 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Dimensions &amp; Position</td> 
       <td>Height</td> 
-      <td>40px</td> 
+      <td>40 px</td> 
      </tr> 
      <tr> 
       <td>Dimensions &amp; Position<br /> </td> 
       <td>Margin</td> 
       <td><br /> 
        <ul> 
-        <li>Right: 2rem</li> 
-        <li>Left: 10rem </li> 
+        <li>Right: 2 rem</li> 
+        <li>Left: 10 rem </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -351,7 +350,7 @@ Some styles apply to only a specific component. Such components are styled in ad
      <tr> 
       <td>Border</td> 
       <td>Border Width</td> 
-      <td>1px</td> 
+      <td>1 px</td> 
      </tr> 
      <tr> 
       <td>Border</td> 
@@ -366,12 +365,12 @@ Some styles apply to only a specific component. Such components are styled in ad
      <tr> 
       <td>Border</td> 
       <td>Border Radius</td> 
-      <td>7px</td> 
+      <td>7 px</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
       <td>Font Family</td> 
-      <td>Arial</td> 
+      <td>Arial&reg;</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
@@ -381,7 +380,7 @@ Some styles apply to only a specific component. Such components are styled in ad
      <tr> 
       <td>Text</td> 
       <td>Font Size</td> 
-      <td>18px</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
@@ -411,10 +410,10 @@ Some styles apply to only a specific component. Such components are styled in ad
       <td>Margin</td> 
       <td> 
        <ul> 
-        <li>Top: 5rem</li> 
-        <li>Right: 14rem</li> 
-        <li>Bottom: 20px</li> 
-        <li>Left: 20px<br /> </li> 
+        <li>Top: 5 rem</li> 
+        <li>Right: 14 rem</li> 
+        <li>Bottom: 20 px</li> 
+        <li>Left: 20 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -432,21 +431,21 @@ Some styles apply to only a specific component. Such components are styled in ad
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Step 5: Bonus Section: Using web fonts in a custom theme {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Step 5: Bonus Section: Using Web Fonts in a custom theme {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-You can use various fonts to design an adaptive form. All the devices that the adaptive form is viewed on may not have the fonts used to design the adaptive form. You can use a web font service to deliver required fonts to the target device.
+You can use various fonts to design an adaptive form. All the devices that the adaptive form is viewed on may not have the fonts used to design the adaptive form. You can use a web font service to deliver the required fonts to the target device.
 
-[!DNL Adobe Fonts] is a web fonts service. You can configure and use the service with adaptive forms. To use [!DNL Adobe Fonts] in an adaptive form:
+[!DNL Adobe Fonts] is a Web Fonts service. You can configure and use the service with adaptive forms. To use [!DNL Adobe Fonts] in an adaptive form:
 
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 
-1. Create an [Adobe Fonts](https://typekit.com/) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web fonts) in an adaptive form. 
-1. In the AEM [!DNL Forms] server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create a new instance.
+1. Create an [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com) account, create a kit, add font Myriad Pro to the kit, publish the kit, and obtain the Kit ID. It is required to use [!DNL Adobe Fonts] (Web Fonts) in an adaptive form. 
+1. In the AEM [!DNL Forms] Server, navigate to ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Now, open a configuration folder. If a configuration is already available, click the **[!UICONTROL Create]** button to create an instance.
 
    On the Create Configuration dialog, specify a **Title** for the configuration, and click **[!UICONTROL Create]**. You are redirected to the configuration page. In the [!UICONTROL Edit Component] dialog that appears, provide your **Kit ID** and click **[!UICONTROL OK]**.
 
-1. Configure your theme to use the [!DNL Adobe Fonts] configuration. On the author instance, open **[!UICONTROL Global Theme]** in the theme editor. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
+1. Configure your theme to use the [!DNL Adobe Fonts] configuration. On the author instance, open **[!UICONTROL Global Theme]** in the theme editor. In the theme editor, navigate to **[!UICONTROL Theme Options]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**. In the **[!UICONTROL Adobe Fonts Configuration]** field, select the kit, and click **[!UICONTROL Save]**.
 
    The fonts added to the **[!UICONTROL Adobe Fonts]** are available for selection in the **[!UICONTROL Text]** accordion of all the components.
