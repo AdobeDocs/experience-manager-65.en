@@ -475,7 +475,7 @@ On Microsoft® Windows, the PDF Generator service uses Adobe Acrobat to convert 
 
 ### (Windows only) Configure primary route for HTML to PDF conversion {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recommends using PhantomJS route because it has the capability to handle dynamic content and has no dependencies on 32-bit libraries, 32-bit JDK, or requires no extra fonts. Also, PhantomJS route does not require sudo or root access to run the conversion.
+The PDF Generator service provides multiple routes to convert HTML files to PDF documents: Webkit, Acrobat WebCapture (Windows only), and PhantomJS. Adobe recommends using PhantomJS route because it has the capability to handle dynamic content and has no dependencies on 32-bit libraries or requires no extra fonts. Also, PhantomJS route does not require sudo or root access to run the conversion.
 
 The default primary route for HTML to PDF conversion is Webkit. To change the conversion route:
 
