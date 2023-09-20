@@ -1,6 +1,6 @@
 ---
 title: Best Practices for AEM Mobile On-Demand Services
-description: Learn about best practices and guidelines that help experienced AEM developers for sites, who want to build mobile app templates and components.
+description: Learn about best practices and guidelines that help competent Adobe Experience Manager (AEM) developers for sites who want to build mobile app templates and components.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -15,7 +15,7 @@ exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
 
 Building an AEM Mobile On-Demand Services App is different from building an app that runs in the Cordova (or PhoneGap) shell directly. The developers should be familiar with the:
 
-* Plugins that are supported out of the box and the AEM Mobile specific plugins.
+* Plugins that are supported out of the box and the Adobe Experience Manager (AEM) Mobile specific plugins.
 
 >[!NOTE]
 >
@@ -25,13 +25,13 @@ Building an AEM Mobile On-Demand Services App is different from building an app 
 >* [Using AEM Mobile specific Cordova-enabled plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
-* Templates which use plugin functionality should be written in such a way that they are still authorable in the browser, without the plugin bridge being present.
+* Templates which use plugin functionality should be written in such a way that they are still authorable in the browser, without the plug-in bridge being present.
 
   * For example, make sure to wait for the *deviceready* function before attempting to access a plugin's API.
 
 ## Guidelines for AEM Developers {#guidelines-for-aem-developers}
 
-The following guidelines help experienced AEM developers for sites, who want to build mobile app templates and components:
+The following guidelines help competent AEM developers for sites who want to build mobile app templates and components:
 
 **Structure AEM sites templates to encourage reuse and extensibility**
 
@@ -42,7 +42,7 @@ The following guidelines help experienced AEM developers for sites, who want to 
 
 * Prefer Sightly/HTL over JSP as the templating language
 
-  * Using this encourages a separation of code from markup, offers built in XSS protection, and has a more familiar syntax
+  * Using this encourages a separation of code from markup, offers built-in XSS protection, and has a more familiar syntax
 
 **Optimize for on-device performance**
 
@@ -54,10 +54,10 @@ The following guidelines help experienced AEM developers for sites, who want to 
 >
 >You can learn more in detail about render-blocking external scripts [here](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Prefer app-specific clientside JS and CSS libraries over web-specific**
+**Prefer app-specific client-side JS and CSS libraries over web-specific**
 
 * To avoid overhead in libraries like jQuery Mobile to handle a huge breadth of devices and browsers
-* When a template is running in an app's webview, you have control over the platforms and versions that app is going to support, and the knowledge that JavaScript support will be present. For example, prefer Ionic (perhaps just the CSS) over jQuery Mobile and Onsen UI over Bootstrap.
+* When a template is running in an app's webview, you have control over the platforms and versions that the app is going to support, and the knowledge that JavaScript support will be present. For example, prefer Ionic (just the CSS) over jQuery Mobile and Onsen UI over Bootstrap.
 
 >[!NOTE]
 >
@@ -65,14 +65,14 @@ The following guidelines help experienced AEM developers for sites, who want to 
 
 **Prefer micro libraries over full-stack**
 
-* The time it takes to get your content onto the glass of the device will be slowed down by every library that your articles depend upon. This slowdown is compounded when a new webview is used to render every article, so each library must be initialized again from scratch
-* If your articles are not built as SPAs (single page apps), you probably do not need to include a full stack library like Angular
-* Prefer smaller, single purpose libraries to help add the interactivity your page requires, such as [Fastclick](https://github.com/ftlabs/fastclick) or [Velocity.js](https://velocityjs.org)
+* The time it takes to get your content onto the glass of the device is slowed down by every library that your articles depend on. This slowdown is compounded when a new webview is used to render every article, so each library must be initialized again from scratch
+* If your articles are not built as SPAs (single page apps), you probably do not need to include a full-stack library like Angular
+* Prefer smaller, single-purpose libraries that help add the interactivity your page requires, such as [Fastclick](https://github.com/ftlabs/fastclick) or [Velocity.js](https://velocityjs.org)
 
 **Minimize size of article payload**
 
 * Use the smallest assets possible that can effectively cover the largest viewport you are supporting, at a reasonable resolution
-* Use a tool like *ImageOptim* on your images to remove any excess metadata
+* Use a tool like *ImageOptim* on your images so you can remove any excess metadata
 
 ## Getting Ahead {#getting-ahead}
 

@@ -1,26 +1,21 @@
 ---
 title: Document security offerings
-seo-title: Document security offerings
-description: Learn about various tools and features of AEM Document Security
-seo-description: Learn about various tools and features of AEM Document Security
-uuid: 24e3275c-cd44-47c0-a6a0-e4cfb1bced8a
+description: Learn about various tools and features of AEM Document Security.
 contentOwner: khsingh
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 91e85e86-2361-4d1d-aa73-c3cce46ab1f1
 docset: aem65
-
 feature: Document Security
 exl-id: d00ae232-b018-44e5-b04b-376d4cd9c6eb
 ---
 # Document security offerings{#document-security-offerings}
 
-Adobe Experience Manager Forms document security ensures that only authorized users can use your documents. Using document security, you can safely distribute any information that you have saved in a supported format. Supported file formats include Adobe Portable Document Format (PDF) and Microsoft Word, Excel, and PowerPoint files.
+Adobe Experience Manager Forms document security ensures that only authorized users can use your documents. Using document security, you can safely distribute any information that you have saved in a supported format. Supported file formats include Adobe Portable Document Format (PDF) and Microsoft&reg; Word, Excel, and PowerPoint files.
 
-You can protect documents by using policies. The confidentiality settings you specify in a policy determine how a recipient can use a document to which you apply the policy. For example, you can specify whether recipients can print or copy text, edit text, or add signatures and comments to protected documents.
+You can protect documents by using policies. The confidentiality settings that you specify in a policy determine how a recipient can use a document to which you apply the policy. For example, you can specify whether recipients can print or copy text, edit text, or add signatures and comments to protected documents.
 
-The policies are stored on Document Security server; you apply the policies to documents through your client application. When you apply a policy to a document, the confidentiality settings specified in the policy protect the information that the document contains. You can distribute the policy-protected document to recipients who are authorized by the policy.
+The policies are stored on the Document Security server; you apply the policies to documents through your client application. When you apply a policy to a document, the confidentiality settings specified in the policy protect the information that the document contains. You can distribute the policy-protected document to recipients who are authorized by the policy.
 
 The following diagram shows the typical architecture for AEM Forms Document Security:
 
@@ -34,7 +29,7 @@ The Document Security Server is the central component through which Document Sec
 
 The Document Security server provides a web-based interface (web page) to create policies, manage policy-protected documents, and monitor events that are associated with policy-protected documents. Administrators can also configure global options such as user authentication, auditing, and messaging for invited users, and manage invited user accounts.
 
-The server is included in AEM Forms Document Security add-on offering. You can contact AEM Forms [sales team](https://www.adobe.com/products/request-consultation/marketing-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) to purchase the Document Security add-on.
+The server is included in the AEM Forms Document Security add-on offering. You can contact AEM Forms [sales team](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG) to purchase the Document Security add-on.
 
 ### Protect documents {#protect-documents}
 
@@ -42,36 +37,36 @@ AEM Forms Document Security provides various tools to apply security policies. Y
 
 ![document-security-offerings](assets/document-security-offerings.png)
 
-You can use Document Security SDK, Adobe Acrobat, Document Security Extension for Microsoft Office, or Portable Protection Library to apply and track the security policies:
+You can use Document Security SDK, Adobe Acrobat, Document Security Extension for Microsoft&reg; Office, or Portable Protection Library to apply and track the security policies:
 
-* **Document Security SDK:** The SDK is a feature-rich client. You can use Document Security SDK to access document server functionality, open policy-protected documents, and develop custom extensions, plug-ins or applications. For example, you can develop extensions to protect custom file formats or integrate SDK with Data Loss Prevention (DLP) solutions. Extensions, applications, and plug-ins developed usingDocument Security SDK send documents to designated AEM Forms server and the policies areapplied on the server. Also note, AEM Forms document security client SDK (CSDK) cannot unprotect the documents protected using portable protection library (PPL) and vice-versa.  
+* **Document Security SDK:** The SDK is a feature-rich client. You can use the Document Security SDK to access document server functionality, open policy-protected documents, and develop custom extensions, plug-ins, or applications. For example, you can develop extensions to protect custom file formats or integrate the SDK with Data Loss Prevention (DLP) solutions. Extensions, applications, and plug-ins developed using the Document Security SDK to send documents to the designated AEM Forms Server and the policies are applied on the server. The AEM Forms document security client SDK (CSDK) cannot unprotect the documents protected using the Portable Protection Library (PPL) and conversely.  
   
-  The Document Security SDK is available for both Java and C++. Java SDK is included in AEM Forms Document Security offering and it is installed on deploying AEM forms on JEE. You can contact [AEM support team](https://helpx.adobe.com/marketing-cloud/contact-support.html) to procure C++ SDK. The C++ SDK can be compiled with Microsoft Visual Studio 2013. You can visit [Document Security API documentation](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) site to learn and use features the SDK.
+  The Document Security SDK is available for both Java&trade; and C++. Java&trade; SDK is included in the AEM Forms Document Security offering and it is installed on deploying AEM forms on JEE. Contact [AEM Customer Support](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) to procure the C++ SDK. The C++ SDK can be compiled with Microsoft&reg; Visual Studio 2013. Visit the [Document Security API documentation](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) site where you can learn and use features of the SDK.
 
-* **Adobe Acrobat:** You can use Adobe Acrobat to apply security policy to PDF documents created using popular desktop applications, such as Microsoft Office, web browsers, or any application that supports printing in PDF format.  
+* **Adobe Acrobat:** You can use Adobe Acrobat to apply security policy to PDF documents created using popular desktop applications, such as Microsoft&reg; Office, web browsers, or any application that supports printing in PDF format.  
   
-  You can purchase and download Adobe Acrobat from [Adobe Website](https://acrobat.adobe.com/us/en/free-trial-download.html). Adobe Acrobat article [setting up security policies for PDFs](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html) provides detailed information about creating and applying policies in Adobe Acrobat.
+  You can purchase and download Adobe Acrobat from the [Adobe Website](https://www.adobe.com/acrobat/free-trial-download.html). Adobe Acrobat article [setting up security policies for PDFs](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html) provides detailed information about creating and applying policies in Adobe Acrobat.
 
-* **Document Security Extension for Microsoft Office**: You can use the Document Security Extension for Microsoft Office to apply predefined policies to your Microsoft Office files from within the Microsoft Office programs. The extension ensures that only authorized people can use policy protected Microsoft Word, Excel, and PowerPoint files. Only authorized users who have the plugin installed can use the policy-protected files.﻿  
+* **Document Security Extension for Microsoft&reg; Office**: You can use the Document Security Extension for Microsoft&reg; Office to apply predefined policies to your Microsoft&reg; Office files from within the Microsoft&reg; Office programs. The extension ensures that only authorized people can use policy-protected Microsoft&reg; Word, Excel, and PowerPoint files. Only authorized users who have the plugin installed can use the policy-protected files.
   
-  The Document Security extension is available as a Microsoft Office plug-in. You can contact [AEM support team](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) to procure the extension. Later on, you can visit [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html) help to learn about installing, configuring, and using the extension.
+  The Document Security extension is available as a Microsoft&reg; Office plug-in. Contact [AEM Customer Support](https://helpx.adobe.com/ca/marketing-cloud/contact-support.html) to procure the extension. Later on, you can visit [Document Security Extension for Microsoft&reg; Office](https://experienceleague.adobe.com/docs/experience-manager-document-security/using/download-installer.html?lang=en) help to learn about installing, configuring, and using the extension.
 
-* **Portable Protection Library:** Portable Protection Library (PPL) protects a document locally, without sending the document to AEM Forms server. Only security credentials and policy details travel over the network. PPL also lets you limit policy retrieval access to only logged-in users. You can fetch policies with the context of the user logged in AEM user.  
+* **Portable Protection Library:** The PPL protects a document locally, without sending the document to the AEM Forms Server. Only security credentials and policy details travel over the network. PPL also lets you limit policy retrieval access to only logged-in users. You can fetch policies with the context of the user logged in AEM user.  
   
-  Along with above, the Prortable Protection Library has all the features of Document Security SDK. You can use Document Security SDK to access document server functionality, open policy-protected documents, and develop custom extensions, plug-ins or applications. Also note, portable protection library (PPL) cannot unprotect the documents protected using AEM Forms document security client SDK (CSDK) and vice-versa.  
+  Along with the above, the PPL has all the features of Document Security SDK. You can use the Document Security SDK to access document server functionality, open policy-protected documents, and develop custom extensions, plug-ins, or applications. The PPL cannot unprotect the documents protected using AEM Forms document security client SDK (CSDK) and conversely.  
   
-  The Portable Protection Library is available for Java and C++ languages in 32-bit and 64-bit versions. It is also available as an OSGi bundle for AEM Forms on OSGi. The C++ PPL can be compiled with Microsoft Visual Studio 2013. If you have licensed AEM Forms Document Security add-on, you can contact [AEM Forms Document Security](https://helpx.adobe.com/marketing-cloud/contact-support.html) support team to procure Portable Protection Library. Later on, you can use Portable Protection Library Help (bundled with the library) to setup and use Portable Protection Library.
+  The PPL is available for Java&trade; and C++ languages in 32-bit and 64-bit versions. It is also available as an OSGi bundle for AEM Forms on OSGi. The C++ PPL can be compiled with Microsoft&reg; Visual Studio 2013. If you have licensed AEM Forms Document Security add-on, you can contact the [AEM Forms Document Security](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support) support team to procure the PPL. Later on, you can use PPL Help (bundled with the library) to set up and use the PPL.
 
 ### View or edit protected documents {#view-or-edit-protected-documents}
 
-* For **PDF documents**, you can use Adobe Acrobat DC, Acrobat Reader, and Acrobat Reader Mobile to view protected PDF documents. Most users already have Acrobat Reader installed on their devices, so they do not need to obtain or learn additional software to view protected documents. You can also download the Acrobat Reader from [Acrobat Reader download web site](https://get.adobe.com/reader/).
+* For **PDF documents**, you can use Adobe Acrobat DC, Acrobat Reader, and Acrobat Reader Mobile to view protected PDF documents. Most users already have Acrobat Reader installed on their devices, so they do not need to obtain or learn additional software to view protected documents. You can also download the Acrobat Reader from the [Acrobat Reader download web site](https://get.adobe.com/reader/).
 
-* For **Microsoft Office documents**, you require Microsoft Office and AEM Forms Document Security extension for Microsoft Office. The Document Security extension is available as a Microsoft Office plug-in. You can download the extension from Adobe website.
+* For **Microsoft&reg; Office documents**, you require Microsoft&reg; Office and AEM Forms Document Security extension for Microsoft&reg; Office. The Document Security extension is available as a Microsoft&reg; Office plug-in. You can download the extension from the Adobe website.
 
 ### Index protected documents {#index-protected-documents}
 
-Microsoft Windows full-text search engines (SharePoint Index server) and Adobe Experience Manager (AEM) can perform full-text search on commonly used document formats such as, plain-text files, Microsoft Office documents, and PDF documents. You can use Document Security indexers to enable fulltext search engines to search protected PDF documents:
+Microsoft&reg; Windows full-text search engines (SharePoint Index server) and Adobe Experience Manager (AEM) can perform full-text search on commonly used document formats such as, plain-text files, Microsoft&reg; Office documents, and PDF documents. You can use Document Security indexers to enable fulltext search engines to search protected PDF documents:
 
-* **iFilter indexer:** You can use the iFilter indexer to index protected PDF documents and enable Microsoft Windows full-text search engines (Desktop Indexing Service and SharePoint Indexserver) to search protected PDF documents. For detailed information see, [AEM SharePoint IFilter for Protected Documents](assets/sharepoint-ifilter-doc-security.pdf).  
+* **iFilter indexer:** You can use the iFilter indexer to index protected PDF documents and enable Microsoft&reg; Windows full-text search engines (Desktop Indexing Service and SharePoint Index server) to search protected PDF documents. For detailed information, see [AEM SharePoint IFilter for Protected Documents](assets/sharepoint-ifilter-doc-security.pdf).  
 
-* **AEM Forms Document Security Indexer:** You can use the AEM Forms Document Security indexer to index protected PDF documents and enable Adobe Experience Manager to search protected PDF documents. The indexers are part of AEM Forms Document Security offering. These are included in AEM Forms on JEE installers.
+* **AEM Forms Document Security Indexer:** You can use the AEM Forms Document Security indexer to index protected PDF documents and enable Adobe Experience Manager to search protected PDF documents. The indexers are part of the AEM Forms Document Security offering. These are included in AEM Forms on JEE installers.

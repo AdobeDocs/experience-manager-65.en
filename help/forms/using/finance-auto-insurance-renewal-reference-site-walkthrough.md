@@ -1,6 +1,6 @@
 ---
 title: We.Finance Auto Insurance Renewal reference site walkthrough
-description: We.Finance Auto Insurance Renewal reference site walkthrough
+description: Learn about the We.Finance Auto Insurance Renewal reference site by taking a walkthrough.
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -11,13 +11,13 @@ exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
 
 ## We.Finance Reference Site scenario  {#we-finance-reference-site-scenario}
 
-We.Finance site is a financial services site designed to help you learn interactive communications capabilities of AEM Forms.
+We.Finance site is a financial services site designed to help you learn the interactive communications capabilities of AEM Forms.
 
-Read on detailed walkthrough of We.Finance Auto Insurance use case which showcases how AEM forms and its integration with Microsoft&reg; Dynamics helps personalize customer experience in a financial service company. The interactive walkthrough is designed to ease implementation of complex digital transactions and customer communication in a financial company.
+Read a detailed walkthrough of a We.Finance Auto Insurance use case that showcases how AEM forms and its integration with Microsoft&reg; Dynamics helps personalize customer experience in a financial service company. The interactive walkthrough is designed to ease implementation of complex digital transactions and customer communication in a financial company.
 
 **The journey starts with the use case:**
 
-Sarah Rose is an existing We.Finance customer and has purchased an auto insurance policy. Now it's the time of the year for renewal of Sarah's insurance policy. Gloria Rios, Insurance Agent, We.Finance sends a reminder to Sarah about her policy renewal. Sarah follows the instructions provided in the email and successfully completes the process.
+Sarah Rose is an existing We.Finance customer and has purchased an auto insurance policy. It is that time of the year for Sarah to renew her insurance policy. Gloria Rios is her insurance agent. We.Finance sends a reminder to Sarah about her policy renewal. Sarah follows the instructions provided in the email and successfully completes the process.
 
 ## Auto-Insurance application walkthrough {#auto-insurance-application-walkthrough}
 
@@ -28,7 +28,7 @@ The We.Finance Auto-Insurance application scenario is a visual narration for the
 
 ### Gloria sends an Insurance policy renewal communication from We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria logs into AEM instance, clicks **Auto Insurance Renewal,** and then clicks **Open Agent UI. **The click prefills the insurance document with policy details of Sarah Rose. Gloria clicks** Submit** and a message is displayed on the screen "Submission Initiated" and then in few seconds "Submitted Successfully".
+Gloria logs into AEM instance, clicks **Auto Insurance Renewal,** and then clicks **Open Agent UI**. The click prefills the insurance document with policy details of Sarah Rose. Gloria clicks **Submit** and a message is displayed on the screen "Submission Initiated" and then in a few seconds "Submitted Successfully".
 
 Sarah receives an email with the subject "Your Auto Insurance Renewal".
 
@@ -36,7 +36,7 @@ Sarah receives an email with the subject "Your Auto Insurance Renewal".
 
 #### See it yourself {#see-it-yourself}
 
-Go to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents** &gt; **We.Finance** &gt; **Auto Insurance**. Select the Auto Insurance Renewal **interactive communication** and click **Open Agent UI**. The interactive communication opens up in the Agent UI. Enter a valid email address so they can receive the email with attached policy document and click Submit.
+Go to **Adobe Experience Manager** &gt; **Forms** &gt; **Forms & Documents** &gt; **We.Finance** &gt; **Auto Insurance**. Select the Auto Insurance Renewal **interactive communication** and click **Open Agent UI**. The interactive communication opens up in the Agent UI. Enter a valid email address so they can receive the email with the attached policy document and click Submit.
 
 You can access and review the Auto Insurance Renewal interactive communication directly from `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
@@ -66,7 +66,7 @@ You can check the detailed summary of your Auto Insurance Renewal and click **Re
 
 ### Sarah reaches the payment page {#sarah-reaches-the-payment-page}
 
-We.Finance takes Sarah to the Payment page. Sarah rechecks her Policy Number and Date of Expiration with her records. On the right side of the page, she checks the Payment Summary of her renewal with 10% premium discount on the total amount.
+We.Finance takes Sarah to the Payment page. Sarah rechecks her Policy Number and Date of Expiration with her records. On the right side of the page, Sarah checks the Payment Summary of the renewal with a 10% premium discount on the total amount.
 
 #### How it works {#how-it-works-1}
 
