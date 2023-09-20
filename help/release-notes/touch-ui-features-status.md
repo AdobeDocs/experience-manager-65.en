@@ -5,13 +5,13 @@ exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 ---
 # Touch UI Feature Status {#touch-ui-feature-status}
 
-AEM 6.4 onwards [Classic UI is deprecated](../release-notes/deprecated-removed-features.md). Adobe will not make further enhancements to the Classic UI and users are encouraged to leverage the powerful new features available in the touch-enabled UI.
+Adobe Experience Manager (AEM) 6.4 onwards [Classic UI is deprecated](../release-notes/deprecated-removed-features.md). Adobe is not making any more enhancements to the Classic UI and users are encouraged to use the powerful new features available in the touch-enabled UI.
 
-Starting with version 6.0, AEM introduced a new user interface referred as the "touch-enabled UI" (simply called "Touch UI") that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. With near feature parity reached, this has become the standard UI in AEM with the legacy, desktop-oriented interface referred to as "classic UI".
+Starting with version 6.0, AEM introduced a new user interface referred as the "touch-enabled UI" (called "Touch UI") that is aligned to the [!DNL Adobe Experience Cloud] and to the overall Adobe user interface guidelines. With near feature parity reached, this has become the standard UI in AEM with the legacy, desktop-oriented interface referred to as "classic UI".
 
 While most capabilities are present in the touch-enabled UI, there are features that are not yet complete and will be added in future releases.
 
-The following list shows the current status of the capabilities as implemented in AEM 6.5.
+The following list shows the status of the capabilities as implemented in AEM 6.5.
 
 For recommendations for customers that upgrade to AEM 6.5, see [User interface recommendations for customers](/help/sites-deploying/ui-recommendations.md).
 
@@ -42,31 +42,31 @@ This is a list of capabilities the classic UI Site Admin (`/siteadmin`) has and 
 |Create new page|Complete||
 |Create new site|Complete||
 |Create new launch|Complete||
-|Create new livecopy|Complete||
+|Create new live copy|Complete||
 |Create folder|Complete||
 |Show Publication Status|Complete|Starting AEM 6.5, the workflow status is shown in the list view.|
 |Search|Complete||
 |Copy and paste page (Duplicate)|Complete||
-|Move page(s)|Complete||
-|Publish page(s)|Complete||
-|Publish page(s) without replication rights|Complete||
+|Move pages|Complete||
+|Publish pages|Complete||
+|Publish pages without replication rights|Complete||
 |Publish later|Complete||
 |Publish tree|Complete||
-|Unpublish pages(s)|Complete||
-|Unpublish page(s) without replication rights|Complete||
+|Unpublish pages|Complete||
+|Unpublish pages without replication rights|Complete||
 |Unpublish later|Complete||
 |Delete|Complete||
 |Lock/Unlock|Complete||
 |View/Edit Properties|Complete||
-|Set Permissions on Page(s)|Complete||
+|Set Permissions on Pages|Complete||
 |Version history|Complete||
 |Restore version|Complete||
 |Restore tree and restore deleted pages|Missing|Use Classic UI.|
 |Show difference between old and current version|Complete||
-|Livecopy Actions (Roll-out)|Complete||
+|Live copy Actions (Roll-out)|Complete||
 |See language copies|Complete||
 |Find and replace|Missing|Use Classic UI.|
-|Notification inbox (JCR events)|Missing|Use Classic UI. Will be replaced with different implementation.|
+|Notification inbox (JCR events)|Missing|Use Classic UI. Replaced with a different implementation in the future.|
 |References|Complete|Display of incoming page links added to AEM 6.5.|
 
 ## Feature Status: Page Editor {#feature-status-page-editor}
@@ -92,7 +92,7 @@ This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the s
 |Edit properties|Complete||
 |Roll-out page|Complete||
 |Start and show workflow|Complete||
-|Workflow package handing|Mostly|Completely accessible in touch-enabled UI. Multiple workflow payload still presented in classic UI.|
+|Workflow package handing|Mostly|Accessible in the touch-enabled UI. Multiple workflow payload still presented in the classic UI.|
 |Lock/Unlock Page|Complete||
 |Publish Page|Complete||
 |Unpublish Page|Complete||
@@ -105,7 +105,7 @@ This is a list of capabilities the classic UI Page Editor (`/cf#`) has and the s
 |Restore Version|Removed|Use Site Admin to [restore versions](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version).|
 |Switch Launches|Removed|Use Site Admin to [switch between launches](/help/sites-authoring/launches-promoting.md).|
 |Translate Page|Removed|Use Site Admin to [add page to translation projects](/help/sites-administering/tc-manage.md).|
-|Timewarp (choose date/time and browse site as it then looked)|Complete||
+|Timewarp (choose the date/time and browse the site as it then looked)|Complete||
 |Set Permissions|Complete||
 |Client Context UI|Replaced|Use the [ContextHub](/help/sites-authoring/ch-previewing.md) UI going forward.|
 |Content Finder for the various media types|Complete||
@@ -123,17 +123,17 @@ This is a list of capabilities the classic UI Text, Table, and Image Editor have
 |Feature|Status|Comment|
 |--- |--- |--- |
 |Rich Text Editor|Complete|Usable in-place, in dialog, and in full screen.|
-|Enable/disable RTE Plug-ins|Complete|Can be done using the [Template Editor](/help/sites-authoring/templates.md).|
+|Enable/disable RTE Plug-ins|Complete|It can be done using the [Template Editor](/help/sites-authoring/templates.md).|
 |Use RTE for Plain-text|Complete||
 |RTE Plug-in: Links and anchor|Complete||
 |RTE Plug-in: Character Map|Complete||
 |RTE Plug-in: Copy/Paste|Complete||
-|RTE Plug-in: Paste from Microsoft Word|Complete||
+|RTE Plug-in: Paste from Microsoft&reg; Word|Complete||
 |RTE Plug-in: Find and replace|Complete||
 |RTE Plug-in: Text Formats (bold, ...)|Complete||
 |RTE Plug-in: Sub and superscript|Complete||
 |RTE Plug-in: Justify|Complete||
-|RTE Plug-in: Lists (bullet / numbers)|Complete||
+|RTE Plug-in: Lists (bullets / numbers)|Complete||
 |RTE Plug-in: Paragraph Format|Complete||
 |RTE Plug-in: Text Styles|Complete||
 |RTE Plug-in: Source Editor (Edit HTML)|Complete|Only available in dialog and full screen.|
@@ -154,7 +154,7 @@ This is a list of capabilities the classic UI Text, Table, and Image Editor have
 
 ## Feature Status: Tools {#feature-status-tools}
 
-This is a list of various tools the classic UI have and the status in the touch-enabled UI.
+This is a list of various tools that the classic UI has and the status in the touch-enabled UI.
 
 |Feature|Status|Comment|
 |--- |--- |--- |
@@ -165,8 +165,8 @@ This is a list of various tools the classic UI have and the status in the touch-
 |MSM/Blueprint Control Center|Complete||
 |Blueprint Manager UI|Complete||
 |Roll-out Configuration UI|Missing|Use Classic UI.|
-|User, Groups and permissions UI|Mostly Complete|For advanced permission editing use Classic UI.|
+|User, Groups, and permissions UI|Mostly Complete|For advanced permission editing use Classic UI.|
 |Purge Versions (`/etc/versioning/purge.html`)|Missing|Use Classic UI.|
-|External Link Checker (`/etc/linkchecker.html`)|Missing|Use Classic UI.|
+|External Linkchecker (`/etc/linkchecker.html`)|Missing|Use Classic UI.|
 |Bulk Editor (`/etc/importers/bulkeditor.html`)|Missing|Use Classic UI.|
 |Upload thumbnails to add or overwrite those|Missing|Use Classic UI.|

@@ -1,14 +1,10 @@
 ---
 title: MSM Rollout Conflicts
-seo-title: MSM Rollout Conflicts
 description: Learn how to deal with Multi Site Manager rollout conflicts.
-seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
-uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
-discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 ---
@@ -16,7 +12,7 @@ exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 
 Conflicts can occur if new pages with the same page name are created in both the blueprint branch and a dependent live copy branch.
 
-Such conflicts need to be handled and resolved upon rollout.
+Such conflicts must be handled and resolved upon rollout.
 
 ## Conflict Handling {#conflict-handling}
 
@@ -24,25 +20,25 @@ When conflicting pages do exist (in the blueprint and live copy branches), MSM l
 
 To ensure that the rollout is not blocked, possible definitions can include:
 
-* which page (blueprint or live copy) will have priority during rollout,
-* which pages will be renamed (and how),
-* how this will affect any published content.
+* which page (blueprint or live copy) has priority during rollout,
+* which pages are renamed (and how),
+* how this affects any published content.
 
-  The default behavior of AEM (out-of-the-box) is that published content will not be impacted. So if a page that was manually created in the live copy branch has been published, that content will still be published after the conflict handling and rollout.
+  The default behavior of Adobe Experience Manager (AEM) (out-of-the-box) is that published content is not impacted. So if a page that was manually created in the live copy branch has been published, that content is still published after the conflict handling and rollout.
 
 In addition to the standard functionality, customized conflict handlers can be added to implement different rules. These can also allow publishing actions as an individual process.
 
 ### Example Scenario {#example-scenario}
 
-In the following sections we use the example of a new page `b`, created in both the blueprint and the live copy branch (created manually), to illustrate the various methods of conflict resolution:
+In the following sections, you must use the example of a new page `b`, created in both the blueprint and the live copy branch (created manually), to illustrate the various methods of conflict resolution:
 
 * blueprint: `/b`
 
-  A master page; with 1 child page, bp-level-1.
+  A master page; with one child page, bp-level-1.
 
 * live copy: `/b`
 
-  A page manually created in the live copy branch; with 1 child page, `lc-level-1`.
+  A page manually created in the live copy branch; with one child page, `lc-level-1`.
 
     * Activated on publish as `/b`, together with the child page.
 
@@ -72,9 +68,9 @@ In the following sections we use the example of a new page `b`, created in both 
 
 The rollout manager lets you activate or deactivate conflict management.
 
-This is done using [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of **Day CQ WCM Rollout Manager**:
+This is done using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md) of **Day CQ WCM Rollout Manager**:
 
-* **Handle conflict with manually created Pages**:
+* **Handle conflicts with manually created Pages**:
 
   ( `rolloutmgr.conflicthandling.enabled`)
 
@@ -101,8 +97,8 @@ The default conflict handler:
 
 * Is called `ResourceNameRolloutConflictHandler`
 
-* With this handler the blueprint page is given precedence.
-* The service ranking for this handler is set low ( ``i.e. below the default value for the `service.ranking` property) as the assumption is that customized handlers will need a higher ranking. However, the ranking is not the absolute minimum to ensure flexibility when required.
+* With this handler, the blueprint page is given precedence.
+* The service ranking for this handler is set low (that is, below the default value for the `service.ranking` property) as the assumption is that customized handlers need a higher ranking. However, the ranking is not the absolute minimum to ensure flexibility when required.
 
 This conflict handler gives precedence to the blueprint. The live copy page `/b` is moved (within the live copy branch) to `/b_msm_moved`.
 
@@ -116,7 +112,7 @@ This conflict handler gives precedence to the blueprint. The live copy page `/b`
 
   Is rolled out to the live copy page `/b`.
 
-    * `bp-level-1` is rolled out to the livecopy.
+    * `bp-level-1` is rolled out to the live copy.
 
 **After Rollout**
 
@@ -150,11 +146,11 @@ This conflict handler gives precedence to the blueprint. The live copy page `/b`
 
 Customized conflict handlers let you implement your own rules. Using the service ranking mechanism you can also define how they interact with other handlers.
 
-Customized conflict handlers can:
+Customized conflict handlers can have the following:
 
-* Be named according to your requirements.
-* Be developed/configured according to your requirements; for example, you can develop a handler so that the live copy page is given precedence.
-* Can be designed to be configured using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md); in particular the:
+* Named according to your requirements.
+* Developed/configured according to your requirements; for example, you can develop a handler so that the live copy page is given precedence.
+* Designed to be configured using the [OSGi configuration](/help/sites-deploying/configuring-osgi.md); in particular the:
 
     * **Service Ranking**:
 
@@ -164,21 +160,21 @@ Customized conflict handlers can:
 
 ### Behavior When Conflict Handling Deactivated {#behavior-when-conflict-handling-deactivated}
 
-If you manually [deactivate conflict handling](#rollout-manager-and-conflict-handling) then AEM takes no action on any conflicting pages (non-conflicting pages are rolled out as expected).
+If you manually [deactivate conflict handling](#rollout-manager-and-conflict-handling), then AEM takes no action on any conflicting pages (non-conflicting pages are rolled out as expected).
 
 >[!CAUTION]
 >
 >AEM does not give any indication that conflicts are being ignored as this behavior must be explicitly configured, so it is assumed that it is the required behavior.
 
-In this case the live copy effectively takes precedence. The blueprint page `/b` is not copied and the live copy page `/b` is left untouched.
+In this case, the live copy effectively takes precedence. The blueprint page `/b` is not copied and the live copy page `/b` is left untouched.
 
 * blueprint: `/b`
 
-  Is not copied at all, but is ignored.
+  Not copied at all, but is ignored.
 
 * live copy: `/b`
 
-  Stays the same.
+  The same.
 
 <table>
  <caption>
