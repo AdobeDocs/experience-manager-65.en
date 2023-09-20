@@ -66,17 +66,17 @@ Before you begin to install and configure AEM Forms document services, ensure th
 
 * Memory requirements are met. AEM Forms add-on package requires:
 
-  * 15 GB of temporary space for Microsoft® Windows-based installations.
+  * 15 GB of temporary space for Microsoft&reg; Windows-based installations.
   * 6 GB of temporary space for UNIX-based installations.
 
-* Client software required for PDF generator to perform conversion on Microsoft® Windows and Linux® are installed:
+* Client software required for PDF generator to perform conversion on Microsoft&reg; Windows and Linux&reg; are installed:
 
-  * **Microsoft® Windows**: Install [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) or [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-  * **Linux®**: Install [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+  * **Microsoft&reg; Windows**: Install [Microsoft&reg; Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) or [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+  * **Linux&reg;**: Install [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
 
 >[!NOTE]
 >
->* On Microsoft® Windows, PDF Generator supports WebKit, Acrobat WebCapture, and PhantomJS conversion routes to convert HTML files to PDF documents.
+>* On Microsoft&reg; Windows, PDF Generator supports WebKit, Acrobat WebCapture, and PhantomJS conversion routes to convert HTML files to PDF documents.
 >* On UNIX-based operating systems, PDF Generator supports WebKit and PhantomJS conversion routes to convert HTML files to PDF documents.
 >
 
@@ -188,21 +188,21 @@ Configurations listed in the pre-installation configurations section are applica
 
 ### Install Adobe Acrobat and third-party applications {#install-adobe-acrobat-and-third-party-applications}
 
-If you are going use the PDF Generator service to convert native file formats such as Microsoft® Word, Microsoft® Excel, Microsoft® PowerPoint, OpenOffice, WordPerfect X7, and Adobe Acrobat to PDF Documents, ensure that these applications are installed on the AEM Forms Server.
+If you are going use the PDF Generator service to convert native file formats such as Microsoft&reg; Word, Microsoft&reg; Excel, Microsoft&reg; PowerPoint, OpenOffice, WordPerfect X7, and Adobe Acrobat to PDF Documents, ensure that these applications are installed on the AEM Forms Server.
 
 >[!NOTE]
 >
 >* If your AEM Forms Server is in an offline or secure environment and internet is not available to activate Adobe Acrobat, see [Offline Activation](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) for instructions to activate such instances of Adobe Acrobat.
->* Adobe Acrobat, Microsoft® Word, Excel, and Powerpoint are available only for Microsoft® Windows. If you are using the UNIX-based operating system, install OpenOffice to convert rich text files and supported Microsoft® Office files to PDF documents.
+>* Adobe Acrobat, Microsoft&reg; Word, Excel, and Powerpoint are available only for Microsoft&reg; Windows. If you are using the UNIX-based operating system, install OpenOffice to convert rich text files and supported Microsoft&reg; Office files to PDF documents.
 >* Dismiss all the dialog boxes that are displayed after installing Adobe Acrobat and third-party software for all the users configured to use the PDF Generator service.
 >* Start all the installed software at least once. Dismiss all the dialog boxes for all the users configured to use the PDF Generator service.
 >* [Check expiration date of your Adobe Acrobat serial numbers](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) and set a date to update license or [migrate your serial number](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) based on the expiry date.  
 
-After installing Acrobat, open Microsoft® Word. On the **Acrobat** tab, click **Create PDF** and convert a .doc or .docx file available on your machine to a PDF Document. If the conversion is successful, AEM Forms is ready to use Acrobat with PDF Generator service.
+After installing Acrobat, open Microsoft&reg; Word. On the **Acrobat** tab, click **Create PDF** and convert a .doc or .docx file available on your machine to a PDF Document. If the conversion is successful, AEM Forms is ready to use Acrobat with PDF Generator service.
 
 ### Setup environment variables {#setup-environment-variables}
 
-Set environment variables for 32-bit and 64-bit Java Development Kit, third-party applications, and Adobe Acrobat. The environment variables should contain the absolute path of the executable used to start the corresponding application, for example, the table below lists environment variables for a few applications:
+Set environment variables for 64-bit Java Development Kit, third-party applications, and Adobe Acrobat. The environment variables should contain the absolute path of the executable used to start the corresponding application, for example, the table below lists environment variables for a few applications:
 
 <table>
  <tbody>
@@ -239,19 +239,19 @@ Set environment variables for 32-bit and 64-bit Java Development Kit, third-part
 >* All environment variables and respective paths are case-sensitive.
 >* JAVA_HOME and Acrobat_PATH (Windows only) are mandatory environment variables.  
 >* The environment variable OpenOffice_PATH is set to the installation folder instead of the path to the executable.
->* Do not set up environment variables for Microsoft® Office applications such as Word, PowerPoint, Excel, and Project, or for AutoCAD. If these applications are installed on the server, the Generate PDF service automatically starts these applications.
+>* Do not set up environment variables for Microsoft&reg; Office applications such as Word, PowerPoint, Excel, and Project, or for AutoCAD. If these applications are installed on the server, the Generate PDF service automatically starts these applications.
 >* On UNIX-based platforms, install OpenOffice as /root. If OpenOffice is not installed as root, the PDF Generator service fails to convert OpenOffice documents to PDF documents. If you are required to install and run OpenOffice as a non-root user, then provide sudo rights to the non-root user.  
 >* If you are using OpenOffice on a UNIX-based platform, run the following command to set the path variable:  
 >
 >  `export OpenOffice_PATH=/opt/openoffice.org4`
 
-### (Only for IBM® WebSphere®) Configure IBM® SSL socket provider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
+### (Only for IBM&reg; WebSphere&reg;) Configure IBM&reg; SSL socket provider {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
-Perform the following steps to configure IBM® SSL socket provider:
+Perform the following steps to configure IBM&reg; SSL socket provider:
 
 1. Create a copy of the java.security file. The default location of the file is `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
 1. Open the copied java.security file for editing.
-1. Change the default SSL socket factories to use the JSSE2 factories instead of default IBM® WebSphere® factories:
+1. Change the default SSL socket factories to use the JSSE2 factories instead of default IBM&reg; WebSphere&reg; factories:
 
    **Default content:**
 
@@ -278,11 +278,11 @@ Perform the following steps to configure IBM® SSL socket provider:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Windows Only) Configure the file block settings for Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
+### (Windows Only) Configure the file block settings for Microsoft&reg; Office {#configure-the-file-block-settings-for-microsoft-office}
 
-Change the Microsoft® Office trust center settings to enable the PDF Generator service to convert files created with older versions of Microsoft® Office.
+Change the Microsoft&reg; Office trust center settings to enable the PDF Generator service to convert files created with older versions of Microsoft&reg; Office.
 
-1. Open a Microsoft® Office application. For example, Microsoft® Word. Navigate to **[!UICONTROL File]**> **[!UICONTROL Options]**. The options dialog box appears.  
+1. Open a Microsoft&reg; Office application. For example, Microsoft&reg; Word. Navigate to **[!UICONTROL File]**> **[!UICONTROL Options]**. The options dialog box appears.  
 
 1. Click **[!UICONTROL Trust Center]**, and click **[!UICONTROL Trust Center Settings]**.
 1. In the **[!UICONTROL Trust Center settings]**, click **[!UICONTROL File Block Settings]**.
@@ -292,7 +292,7 @@ Change the Microsoft® Office trust center settings to enable the PDF Generator 
 
 The user account used to start the application server requires the **Replace a process level token** privilege. The local system account has the **Replace a process level token** privilege by default. For the servers running with a user of the Local Administrators group, the privilege must be granted explicitly. Perform the following steps to grant the privilege:
 
-1. Open the Group Policy Editor for Microsoft® Windows. To open the Group Policy Editor, click **[!UICONTROL Start]**, type **gpedit.msc** in the Start Search box, and click **[!UICONTROL Group Policy Editor]**.
+1. Open the Group Policy Editor for Microsoft&reg; Windows. To open the Group Policy Editor, click **[!UICONTROL Start]**, type **gpedit.msc** in the Start Search box, and click **[!UICONTROL Group Policy Editor]**.
 1. Navigate to **[!UICONTROL Local Computer Policy]** &gt; **[!UICONTROL Computer Configuration]** &gt; **[!UICONTROL Windows Settings]** &gt; **[!UICONTROL Security Settings]** &gt; **[!UICONTROL Local Policies]** &gt; **[!UICONTROL User Rights Assignment]** and edit the **[!UICONTROL Replace a process level token]** policy and include the Administrators group.
 1. Add the user to the Replace a Process Level Token entry.
 
@@ -311,8 +311,8 @@ You can enable a non-administrator user to use the PDF Generator service. Normal
 1. Adjust the slider to the Never notify level. When finished, close the command window and close the System Configuration window.
 1. Verify that registry setting for UAC is set to 0 (zero). Perform the following steps to verify:
 
-    1. Microsoft® recommends backing up the registry before you modify it. For detailed steps, see [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/help/322756).
-    1. Open Microsoft® Windows Registry editor. To open registry editor, go to Start &gt; Run, type regedit, and click OK.
+    1. Microsoft&reg; recommends backing up the registry before you modify it. For detailed steps, see [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/help/322756).
+    1. Open Microsoft&reg; Windows Registry editor. To open registry editor, go to Start &gt; Run, type regedit, and click OK.
     1. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Ensure value of EnableLUA is set to 0 (zero).
     1. Ensure value of **EnableLUA** is set to 0 (zero). If the value is not 0, change the value to 0. Close the registry editor.
 
@@ -346,11 +346,11 @@ Copy the Unicode font to any of the following directories as appropriate for you
 * /usr/X11R6/lib/X11/fonts/truetype
 * /usr/X11R6/lib/X11/fonts/TrueType
 * /usr/X11R6/lib/X11/fonts/TTF
-* /usr/openwin/lib/X11/fonts/TrueType (Solaris™)
+* /usr/openwin/lib/X11/fonts/TrueType (Solaris&trade;)
 
 >[!NOTE]
 >
->* On Red Hat® Enterprise Linux® 6.x and later, the courier fonts are not available. To install the courier fonts, download the font-ibm-type1-1.0.3.zip archive. Extract the archive at /usr/share/fonts. Create a symbolic link from /usr/share/X11/fonts to /usr/share/fonts.  
+>* On Red Hat&reg; Enterprise Linux&reg; 6.x and later, the courier fonts are not available. To install the courier fonts, download the font-ibm-type1-1.0.3.zip archive. Extract the archive at /usr/share/fonts. Create a symbolic link from /usr/share/X11/fonts to /usr/share/fonts.  
 >* Delete all the .lst font cache files from the Html2PdfSvc/bin and /usr/share/fonts directories.
 >* Ensure that the directories /usr/lib/X11/fonts and /usr/share/fonts exist. If the directories do not exist, then use the ln command to create a symbolic link from /usr/share/X11/fonts to /usr/lib/X11/fonts and another symbolic link from /usr/share/fonts to /usr/share/X11/fonts. Also ensure that the courier fonts are available at /usr/lib/X11/fonts.
 >* Ensure that all the fonts (Unicode and non-unicode) are available in the /usr/share/fonts or /usr/share/X11/fonts directory.  
@@ -389,7 +389,7 @@ AEM Forms add-on package is an application deployed onto AEM. The package contai
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    ```
 
-1. (AIX® only) Add the following properties to the sling.properties file:
+1. (AIX&reg; only) Add the following properties to the sling.properties file:
 
     ```shell
     sling.bootdelegation.xerces=org.apache.xerces.*
@@ -414,7 +414,7 @@ A local user account is required to run the PDF Generator service. For steps to 
 
 1. Open the [AEM Forms PDF Generator Configuration](http://localhost:4502/libs/fd/pdfg/config/ui.html) page.
 
-1. In the **[!UICONTROL User Accounts]** tab, provide credentials of a local user account, and click **[!UICONTROL Submit]**. If Microsoft® Windows prompts, allow access to the user. When added successfully, the configured user is displayed under the **[!UICONTROL Your user accounts]** section in the **[!UICONTROL User Accounts]** tab.
+1. In the **[!UICONTROL User Accounts]** tab, provide credentials of a local user account, and click **[!UICONTROL Submit]**. If Microsoft&reg; Windows prompts, allow access to the user. When added successfully, the configured user is displayed under the **[!UICONTROL Your user accounts]** section in the **[!UICONTROL User Accounts]** tab.
 
 ### Configure the time-out settings {#configure-the-time-out-settings}
 
@@ -455,7 +455,7 @@ A local user account is required to run the PDF Generator service. For steps to 
 
 ### (Windows only) Configure Acrobat for the PDF Generator service {#configure-acrobat-for-the-pdf-generator-service}
 
-On Microsoft® Windows, the PDF Generator service uses Adobe Acrobat to convert supported file formats to a PDF document. Perform the following steps to configure Adobe Acrobat for the PDF Generator service:
+On Microsoft&reg; Windows, the PDF Generator service uses Adobe Acrobat to convert supported file formats to a PDF document. Perform the following steps to configure Adobe Acrobat for the PDF Generator service:
 
 1. Open Acrobat and select **[!UICONTROL Edit]**> **[!UICONTROL Preferences]**> **[!UICONTROL Updater]**. In Check for updates, deselect **[!UICONTROL Automatically install updates]**, and click **[!UICONTROL OK]**. Close Acrobat.
 1. Double-click a PDF document on your system. When Acrobat starts for the first time, the dialog boxes for Sign-in, Welcome screen, and EULA appear. Dismiss these dialog boxes for all the users configured to use PDF Generator.
@@ -635,7 +635,7 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 +++ Adobe Acrobat
 
-* Ensure only [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft® Office (32-bit) and Adobe Acrobat is installed and opening dialogs are cancelled.
+* Ensure only [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft&reg; Office (32-bit) and Adobe Acrobat is installed and opening dialogs are cancelled.
 * Ensure that Adobe Acrobat Update Service is disabled.
 * Ensure that the [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) batch file was run with administrator privileges.
 * Ensure a PDF Generator user is added in PDF configuration UI.
@@ -646,21 +646,21 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 +++OpenOffice
 
-**Microsoft® Windows**
+**Microsoft&reg; Windows**
 
 * Ensure that 32-bit [supported version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of Microsoft Office is installed and opening dialogs are cancelled for all applications.
 * Ensure a PDF Generator user is added in PDF configuration UI.
 * Ensure the PDF Generator user is a member of administrators group and the [Replace a process level token](#grant-the-replace-a-process-level-token-privilege) privilege is set for the user.
 * Ensure that the user is configured in PDF Generator UI and performs the following actions:
-   1. Log in to the Microsoft® Windows with PDF Generator user.
-   1. Open Microsoft® Office or OpenOffice applications and cancel all dialogs.
+   1. Log in to the Microsoft&reg; Windows with PDF Generator user.
+   1. Open Microsoft&reg; Office or OpenOffice applications and cancel all dialogs.
    1. Set AdobePDF as default printer.
    1. Set Acrobat as default program for PDF files.
    1. Perform manual conversion using options  File > Print and Acrobat ribbon in Microsoft Office applications and cancel all dialogs.
    1. End all the processes related to conversion such as winword.exe, powerpoint.exe, and excel.exe.
    1. Restart the AEM Forms Server.
 
-**Linux®**
+**Linux&reg;**
 
 * Install the [supported version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) of OpenOffice. AEM Forms supports both 32-bit and 64-bit versions. After installing, open all the OpenOffice applications, cancel all the dialog windows, and close the applications. Reopen the applications and ensure that no dialog box is displayed on opening an OpenOffice application.
 
@@ -685,7 +685,7 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
    ```
 
-**Linux® and Solaris™ (WebKit conversion route)**
+**Linux&reg; and Solaris&trade; (WebKit conversion route)**
 
 * Ensure that the directories `/usr/lib/X11/fonts` and `/usr/share/fonts` exist. If the directories do not exist, create a symbolic link from `/usr/share/X11/fonts` to `/usr/lib/X11/fonts` and another symbolic link from `/usr/share/fonts` to `/usr/share/X11/fonts`.
 
@@ -699,12 +699,12 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 * Ensure that IBM fonts are copied under usr/share/fonts.
 * Ensure that ghost vulnerability fix glibc is available on the machine. Use your default package manager to update to the latest version of glibc. It includes ghost vulnerability fix.
-* Ensure that the latest versions of 32-bit lib curl, libcrypto, and libssl libraries are installed on the system. Also create symlinks `/usr/lib/libcurl.so` (or libcurl.a for AIX®), `/usr/lib/libcrypto.so` (or libcrypto.a for AIX®) and `/usr/lib/libssl.so` (or libssl.a for AIX®) pointing to the latest versions (32-bit) of respective libraries.
+* Ensure that the latest versions of 32-bit lib curl, libcrypto, and libssl libraries are installed on the system. Also create symlinks `/usr/lib/libcurl.so` (or libcurl.a for AIX&reg;), `/usr/lib/libcrypto.so` (or libcrypto.a for AIX&reg;) and `/usr/lib/libssl.so` (or libssl.a for AIX&reg;) pointing to the latest versions (32-bit) of respective libraries.
 
-* Perform the following steps for IBM® SSL Socket provider:
+* Perform the following steps for IBM&reg; SSL Socket provider:
    1. Copy the java.security file from `<WAS_Installed_JAVA>\jre\lib\security` to any location on your AEM Forms Server. The default location is Default Location is = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
-   1. Edit the java.security file at the copied location and change the default SSL Socket factories with JSSE2 factories (Use JSSE2 factories instead of WebSphere®).
+   1. Edit the java.security file at the copied location and change the default SSL Socket factories with JSSE2 factories (Use JSSE2 factories instead of WebSphere&reg;).
 
       Change the following default JSSE socket factories:
 
@@ -733,13 +733,13 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 +++ Unable to add a PDF Generator (PDFG) user
 
-* Ensure Microsoft® Visual C++ 2012 x86 and Microsoft® Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
+* Ensure Microsoft&reg; Visual C++ 2012 x86 and Microsoft&reg; Visual C++ 2013 x86 (32-bit) redistributable are installed on Windows.
 
 +++
 
 +++Automation test failures
 
-* For Microsoft® Office and OpenOffice, perform at least one conversion manually (as each user) to ensure that no dialogue pops up during conversion. If any dialogue appears, dismissed it. No such dialogue should appear during automated conversion.
+* For Microsoft&reg; Office and OpenOffice, perform at least one conversion manually (as each user) to ensure that no dialogue pops up during conversion. If any dialogue appears, dismissed it. No such dialogue should appear during automated conversion.
 
 * Before running automation on an AEM Forms on OSGi environment, ensure that the test package is installed and active.
 
@@ -753,7 +753,7 @@ Before performing the following checks, ensure that [System Readiness Tool](#SRT
 
 * Ensure that PDF Generator user has read, write, and execute permissions on LC temp and PDFG temp users.
 
-* For Microsoft® Office and OpenOffice, perform at least one conversion manually (as each user) to ensure that no dialogue pops up during conversion. If any dialogue appears, dismissed it. No such dialogue should appear during automated conversion.
+* For Microsoft&reg; Office and OpenOffice, perform at least one conversion manually (as each user) to ensure that no dialogue pops up during conversion. If any dialogue appears, dismissed it. No such dialogue should appear during automated conversion.
 
 * Perform a sample conversion.
 
