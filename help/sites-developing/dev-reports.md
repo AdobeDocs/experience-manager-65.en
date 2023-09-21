@@ -1,22 +1,18 @@
 ---
 title: Developing Reports
-seo-title: Developing Reports
-description: AEM provides a selection of standard reports based on a reporting framework
-seo-description: AEM provides a selection of standard reports based on a reporting framework
-uuid: 1b406d15-bd77-4531-84c0-377dbff5cab2
+description: Adobe Experience Manager (AEM) provides a selection of standard reports based on a reporting framework
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 ---
 
 # Developing Reports {#developing-reports}
 
-AEM provides a selection of [standard reports](/help/sites-administering/reporting.md) most of which are based on a reporting framework.
+Adobe Experience Manager (AEM) provides a selection of [standard reports](/help/sites-administering/reporting.md) most of which are based on a reporting framework.
 
-Using the framework you can either extend these standard reports, or develop your own, completely new, report(s). The reporting framework integrates tightly with existing CQ5 concepts and principles so that developers can use their existing knowledge of CQ5 as a springboard for developing reports.
+Using the framework you can either extend these standard reports, or develop your own, new reports. The reporting framework integrates tightly with existing CQ5 concepts and principles so that developers can use their existing knowledge of CQ5 as a springboard for developing reports.
 
 For the standard reports delivered with AEM:
 
@@ -66,8 +62,8 @@ The reporting framework works on the following principles:
 * The result set defines the data displayed in the report. Each row in the result set corresponds to a row in the tabular view of the report.
 * The operations available for execution on the result set resemble RDBMS concepts; primarily *grouping* and *aggregation*.
 
-* Most data retrieval and processing is done serverside.
-* The client is solely responsible for displaying the pre-processed data. Only minor processing tasks (for example, creating links in cell content) are executed clientside.
+* Most data retrieval and processing is done server-side.
+* The client is solely responsible for displaying the pre-processed data. Only minor processing tasks (for example, creating links in cell content) are executed client-side.
 
 The reporting framework (illustrated by the structure of a standard report) uses the following building blocks, fed by the processing queue:
 
@@ -75,48 +71,48 @@ The reporting framework (illustrated by the structure of a standard report) uses
 
 ### Report Page {#report-page}
 
-The report page:
+The report page is:
 
-* Is a standard CQ5 page.
-* Is based on a [standard CQ5 template, configured for the report](#report-template).
+* A standard CQ5 page.
+* Based on a [standard CQ5 template, configured for the report](#report-template).
 
 ### Report Base {#report-base}
 
-The [ `reportbase` component](#report-base-component) forms the basis of any report as it:
+The [ `reportbase` component](#report-base-component) forms the basis of any report because it:
 
-* Holds the definition of the [query](#the-query-and-data-retrieval) that delivers the underlying result set of data.
+* Preserves the definition of the [query](#the-query-and-data-retrieval) that delivers the underlying result set of data.
 
-* Is an adapted paragraph system that will contain all columns ( `columnbase`) added to the report.
+* It is an adapted paragraph system that contains all columns ( `columnbase`) added to the report.
 * Defines which chart types are available and which are currently active.
-* Defines the Edit dialog, which allows the user to configure certain aspects of the report.
+* Defines the Edit dialog box, which allows the user to configure certain aspects of the report.
 
 ### Column Base {#column-base}
 
 Each column is an instance of the [ `columnbase` component](#column-base-component) that:
 
 * Is a paragraph, used by the parsys ( `reportbase`) of the respective report.
-* Defines the link to the [underlying result set](#the-query-and-data-retrieval); i.e. defines the specific data referenced within this result set, and how it is processed.
-* Holds additional definitions; such as the aggregates and filters available, together with any default values.
+* Defines the link to the [underlying result set](#the-query-and-data-retrieval). That is, it defines the specific data referenced within this result set, and how it is processed.
+* Retains additional definitions; such as the aggregates and filters available, together with any default values.
 
 ### The Query and Data Retrieval {#the-query-and-data-retrieval}
 
 The query:
 
 * Is defined as part of the [ `reportbase`](#report-base) component.
-* Is based on the [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
+* Is based on the [CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html).
 * Retrieves the data used as the basis of the report. Each row of the result set (table) is tied to a node as returned by the query. Specific information for [individual columns](#column-base-component) is then extracted from this data set.
 
 * Usually consists of:
 
     * A root path.
 
-      This specifies the sub-tree of the repository to be searched.
+      This specifies the subtree of the repository to be searched.
 
-      To help minimize the performance impact, it is advisable to (try to) restrict the query to a specific sub-tree of the repository. The root path can be either predefined in the [report template](#report-template) or set by the user in the [Configuration (Edit) dialog](#configuration-dialog).
+      To help minimize the performance impact, it is advisable to (try to) restrict the query to a specific subtree of the repository. The root path can be either predefined in the [report template](#report-template) or set by the user in the [Configuration (Edit) dialog](#configuration-dialog).
 
     * [One or more criteria](#query-definition).
 
-      These are imposed to produce the (initial) result set; they include for example, restrictions on the node type, or property constraints.
+      These are imposed to produce the (initial) result set; they include, for example, restrictions on the node type, or property constraints.
 
 **The key point here is that each single node returned in the result set of the query is used to generate a single row on the report (so a 1:1 relationship).**
 
@@ -132,7 +128,7 @@ This allows:
 
   For example, it lets you process two property values as a single value by calculating the difference between the two.
 
-* Resolving extracted values; this can be done in a variety of ways.
+* Resolving extracted values; this can be done in various ways.
 
   For example, paths can be mapped to a title (as in the more human-readable content of the respective *jcr:title* property).
 
@@ -186,7 +182,7 @@ The following are needed to construct and configure a report:
 
 * a [location for the definition of your report components](#location-of-report-components)
 * a [ `reportbase` component](#report-base-component)
-* one, or more, [ `columnbase` component(s)](#column-base-component)
+* one, or more, [ `columnbase` components](#column-base-component)
 * a [page component](#page-component)
 * a [report design](#report-design)
 * a [report template](#report-template)
@@ -195,7 +191,7 @@ The following are needed to construct and configure a report:
 
 The default reporting components are held under `/libs/cq/reporting/components`.
 
-However, it is strongly recommended that you do not update these nodes, but create your own component nodes under `/apps/cq/reporting/components` or if more appropriate `/apps/<yourProject>/reports/components`.
+However, it is recommended that you do not update these nodes, but create your own component nodes under `/apps/cq/reporting/components` or if more appropriate `/apps/<yourProject>/reports/components`.
 
 Where (as an example):
 
@@ -206,7 +202,7 @@ N:apps
             N:components [sling:Folder]
 ```
 
-Under this you create the root for your report and under this, the report base component and the column base components:
+Under this, you create the root for your report and under this, the report base component and the column base components:
 
 ```
 N:apps
@@ -222,7 +218,7 @@ N:apps
 
 A report page must use the `sling:resourceType` of `/libs/cq/reporting/components/reportpage`.
 
-A customized page component should not be necessary (in most cases).
+A customized page component should not be necessary (usually).
 
 ## Report Base Component {#report-base-component}
 
@@ -232,7 +228,7 @@ This component acts as a container for the report as a whole and provides inform
 
 * The [query definition](#query-definition).
 * An [(optional) dialog](#configuration-dialog) for configuring the report.
-* Any [Charts](#chart-definitions) integrated in the report.
+* Any [Charts](#chart-definitions) that are integrated with the report.
 
 ```
 N:<reportname> [cq:Component]
@@ -259,7 +255,7 @@ N:queryBuilder
 
 * `propertyConstraints`
 
-  Can be used to limit the result set to nodes that have specific properties with specific values. If multiple constraints are specified, the node must satisfy all of them (AND operation).
+  Limits the result set to nodes that have specific properties with specific values. If multiple constraints are specified, the node must satisfy all of them (AND operation).
 
   For example:
 
@@ -283,7 +279,7 @@ N:queryBuilder
 
 * `mandatoryProperties`
 
-  Can be used to limit the result set to nodes that have *all* of the specified properties. The value of the properties is not taken into account.
+  Limits the result set to nodes that have *all* the specified properties. The value of the properties is not account for.
 
 All are optional and can be combined as necessary, but you must define at least one of them.
 
@@ -320,13 +316,13 @@ N:charting
 
 * `definitions`
 
-  Defines the chart types that are potentially available for the report. The `definitions` to be used will be specified by the `active` settings.
+  Defines the chart types that are potentially available for the report. The `definitions` to be used is specified by the `active` settings.
 
   The definitions are specified using an array of nodes (again often named `0`, `1`.. `x`), each having the following properties:
 
     * `id`
 
-      The chart identification.
+      The chart's identification.
 
     * `type`
 
@@ -367,17 +363,17 @@ N:charting
 
             * `hoverLimit` ( `Long`)
 
-              Maximum number of aggregated snapshots (dots shown on each horizontal line, representing distinct values) for which popups are to be displayed i.e. when the user does mouse-over on a distinct value or corresponding label in the chart legend.
+              Maximum number of aggregated snapshots (dots shown on each horizontal line, representing distinct values) for which pop-ups are to be displayed. That is, when the user does mouse over on a distinct value or corresponding label in the chart legend.
 
-              default: `35` (i.e. no popups at all are shown if more than 35 distinct values are applicable for the current chart settings).
+              default: `35` (that is, no pop-ups at all are shown if more than 35 distinct values are applicable for the current chart settings).
 
-              There is an additional limit of 10 popups that can be shown in parallel (multiple popups can be shown when mouse-over is made over the legend texts).
+              There is an additional limit of ten pop-ups that can be shown in parallel (multiple pop-ups can be shown when mouse-over is made over the legend texts).
 
 ### Configuration Dialog {#configuration-dialog}
 
 Every report can have a configuration dialog, allowing the user to specify various parameters for the report. This dialog is accessible through the **Edit** button when the report page is open.
 
-This dialog is a standard CQ [dialog](/help/sites-developing/components-basics.md#dialogs) and can be configured as such (see [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog) for more information).
+This dialog is a standard CQ [dialog](/help/sites-developing/components-basics.md#dialogs) and can be configured as such (see [CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog) for more information).
 
 An example dialog can look as follows:
 
@@ -424,13 +420,13 @@ Several preconfigured components are provided; these can be referenced in the di
 
   `/libs/cq/reporting/components/commons/title`
 
-  Textfield to define the report title.
+  Text field to define the report title.
 
 * **`description`**
 
   `/libs/cq/reporting/components/commons/description`
 
-  Textarea to define the report description.
+  Text area to define the report description.
 
 * **`processing`**
 
@@ -450,7 +446,7 @@ Several preconfigured components are provided; these can be referenced in the di
 
 ### Root Path {#root-path}
 
-Additionally a root path can be defined for the report:
+Also, a root path can be defined for the report:
 
 * **`rootPath`**
 
@@ -471,8 +467,8 @@ A column component defines a combination of the following:
 * The [Resolvers and Preprocessing](#resolvers-and-preprocessing).
 * The [Column Specific Definitions](#column-specific-definitions) (such as filters and aggregates; `definitions` child node).
 * [Column Default Values](#column-default-values).
-* The [Client Filter](#client-filter) to extracts the information to be displayed from the data returned by the server.
-* Additionally, a column component must provide a suitable instance of `cq:editConfig`. to define the [Events and Actions](#events-and-actions) required.
+* The [Client Filter](#client-filter) to extract the information for display from the data returned by the server.
+* Also, a column component must provide a suitable instance of `cq:editConfig`. to define the [Events and Actions](#events-and-actions) required.
 * The configuration for [generic columns](#generic-columns).
 
 ```
@@ -501,7 +497,7 @@ N:<columnname> [cq:Component]
 
 See also [Defining Your New Report](#defining-your-new-report).
 
-### Column Specific Query {#column-specific-query}
+### Column-Specific Query {#column-specific-query}
 
 This defines the specific data extraction (from the [report data result set](#the-query-and-data-retrieval)) for use in the individual column.
 
@@ -518,40 +514,40 @@ N:definitions
 
   Defines the property to be used for calculating the actual cell value.
 
-  If property is defined as String[] multiple properties are scanned (in sequence) to find the actual value.
+  If a property is defined as String[], multiple properties are scanned (in sequence) to find the actual value.
 
-  For example, in the case of:
+  For example, if there is:
 
   `property = [ "jcr:lastModified", "jcr:created" ]`
 
-  The corresponding value extractor (which is in control here) will:
+  The corresponding value extractor (which is in control here):
 
-    * Check whether there is a jcr:lastModified property available and if so, use it.
-    * If no jcr:lastModified property is available, the contents of jcr:created will be used instead.
+    * Checks whether there is a jcr:lastModified property available and if so, use it.
+    * If no jcr:lastModified property is available, the contents of jcr:created are used instead.
 
 * `subPath`
 
-  If the result is not located on the node that is returned by the query, `subPath` defines where the property is actually located.
+  If the result is not on the node that is returned by the query, `subPath` defines where the property is located.
 
 * `secondaryProperty`
 
-  Defines a second property that must also be used for calculating the actual cell value; this will only be used for certain column types (diff and sortable).
+  A second property that must be used for calculating the actual cell value. This definition is only used for certain column types (diff and sortable).
 
-  For example, in the case of the Workflow Instances Report, the property specified is used to store the actual value of the time difference (in milliseconds) between start and end times.
+  For example, if there is the Workflow Instances Report, the property specified is used to store the actual value of the time difference (in milliseconds) between start and end times.
 
 * `secondarySubPath`
 
   Similar to subPath, when `secondaryProperty` is used.
 
-In most cases, only `property` will be used.
+Usually, only `property` is used.
 
 ### Client Filter {#client-filter}
 
-The client filter extracts the information to be displayed, from the data returned by the server.
+The client filter extracts the information to be displayed from the data returned by the server.
 
 >[!NOTE]
 >
->This filter is executed clientside, after the entire serverside processing has been applied.
+>This filter is run client-side, after the entire server-side processing has been applied.
 
 ```xml
 N:definitions
@@ -559,7 +555,7 @@ N:definitions
         P:clientFilter [String]
 ```
 
-`clientFilter` is defined as a JavaScript function that:
+The `clientFilter` is a JavaScript function that:
 
 * as input, receives one parameter; the data returned from the server (so fully preprocessed)
 * as output, returns the filtered (processed) value; the data extracted or derived from the input information
@@ -608,7 +604,7 @@ N:definitions
 
     * `path`
 
-      Resolves a path value by optionally appending a sub path and taking the actual value from a property of the node (as defined by `resolverConfig`) at the resolved path. For example, a `path` of `/content/.../page/jcr:content` can be resolved to the content of the `jcr:title` property, this would mean that a page path is resolved to the page title.
+      Resolves a path value by optionally appending a subpath and taking the actual value from a property of the node (as defined by `resolverConfig`) at the resolved path. For example, a `path` of `/content/.../page/jcr:content` can be resolved to the content of the `jcr:title` property, this would mean that a page path is resolved to the page title.
 
     * `pathextension`
 
@@ -616,13 +612,13 @@ N:definitions
 
 * `resolverConfig`
 
-  Provides definitions for the resolver; the options available are dependent on the `resolver` selected:
+  Provides definitions for the resolver. The options available depend on the `resolver` selected:
 
     * `const`
 
       Use properties to specify the constants for resolving. The name of the property defines the constant to be resolved; the value of the property defines the resolved value.
 
-      For example a property with **Name**= `1` and **Value** `=One` will resolve 1 to One.
+      For example, a property with **Name**= `1` and **Value** `=One` resolves 1 to One.
 
     * `default`
 
@@ -656,7 +652,7 @@ N:definitions
 
         * `i18n` (optional; type Boolean)
 
-          Determines whether the resolved value should be *internationalized* (i.e. using [CQ5's internationalization services](/help/sites-administering/tc-manage.md)).
+          Determines whether the resolved value should be *internationalized* (that is, using [CQ5's internationalization services](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
@@ -676,7 +672,7 @@ The resolvers are used to extract the information required. Examples of the vari
 
 **Const**
 
-The following will resolve a contant value of `VersionCreated` to the string `New version created`.
+The following resolves a constant value of `VersionCreated` to the string `New version created`.
 
 See `/libs/cq/reporting/components/auditreport/typecol/definitions/data`.
 
@@ -740,7 +736,7 @@ The `preprocessing` definition can be applied to either the:
 
   If necessary, a separate definition can be provided for each aggregation.
 
-  To specify explicit preprocessing for aggregated values, the preprocessing definitions have to reside on a respective `aggregated` child node ( `apply/aggregated`, `applyAfter/aggregated`). If explicit preprocessing for distinct aggregates is required, the preprocessing definition is located on a child node with the name of the respective aggregate (for example `apply/aggregated/min/max` or other aggregates).
+  To specify explicit preprocessing for aggregated values, the preprocessing definitions have to reside on a respective `aggregated` child node ( `apply/aggregated`, `applyAfter/aggregated`). If explicit preprocessing for distinct aggregates is required, the preprocessing definition is on a child node with the name of the respective aggregate (for example `apply/aggregated/min/max` or other aggregates).
 
 You can specify either of the following to be used during preprocessing:
 
@@ -749,7 +745,7 @@ You can specify either of the following to be used during preprocessing:
 
 * [data type formatters](#preprocessing-data-type-formatters)
 
-  Converts a numeric value into a relative string; for example, the value ``representing a time difference of 1 hour would be resolved to a string such as `1:24PM (1 hour ago)`.
+  Converts a numeric value into a relative string; for example, the value ``representing a time difference of one hour would be resolved to a string such as `1:24PM (1 hour ago)`.
 
 For example:
 
@@ -770,11 +766,11 @@ For preprocessing you can specify a `pattern` (defined as a [regular expression]
 
 * `pattern`
 
-  The regular expression used to locate a substring.
+  The regular expression that is used to locate a substring.
 
 * `replace`
 
-  The string, or representation of the string, that will be used as a replacement for the original string. Often this represents a substring of the string located by the regular expression `pattern`.
+  The string, or representation of the string, that is used as a replacement for the original string. Often this represents a substring of the string located by the regular expression `pattern`.
 
 An example replacement can be broken down as:
 
@@ -787,7 +783,7 @@ An example replacement can be broken down as:
 
     * `/content/geometrixx/en/services/jcr:content/par/text`
 
-* Will be broken into four sections:
+* Broken into four sections:
 
     * `$1` - `(.*)` - `/content/geometrixx/en/services`
     * `$2` - `(/jcr:content)` - `/jcr:content`
@@ -802,7 +798,7 @@ An example replacement can be broken down as:
 
 These formatters convert a numeric value into a relative string.
 
-For example, this can be used for a time column that allows `min`, `avg` and `max` aggregates. As `min`/ `avg`/ `max` aggregates are displayed as a *time difference* (for example, `10 days ago`), they require a data formatter. For this, a `datedelta` formatter is applied to the `min`/ `avg`/ `max` aggregated values. If a `count` aggregate is also available then this does not need a formatter, neither does the original value.
+For example, this can be used for a time column that allows `min`, `avg` and `max` aggregates. As `min`/ `avg`/ `max` aggregates are displayed as a *time difference* (for example, `10 days ago`), they require a data formatter. For this, a `datedelta` formatter is applied to the `min`/ `avg`/ `max` aggregated values. If a `count` aggregate is also available, this does not need a formatter, neither does the original value.
 
 Currently the available data type formatters are:
 
@@ -812,15 +808,15 @@ Currently the available data type formatters are:
 
     * `duration`
 
-      Duration is the time span between two defined dates. For example, the start and end of a workflow action that took 1 hour, starting at 2/13/11 11:23h and ending one hour later at 2/13/11 12:23h.
+      Duration is the time span between two defined dates. For example, the start and end of a workflow action that took one hour, starting at 2/13/11 11:23h and ending one hour later at 2/13/11 12:23h.
 
       It converts a numeric value (interpreted as milliseconds) into a duration string; for example, `30000` is formatted as * `30s`.*
 
     * `datedelta`
 
-      Datadelta is the time span between a date in the past until "now" (so it will have a different result if the report is viewed at a later point in time).
+      Datadelta is the time span between a date in the past until "now" (so it has a different result if the report is viewed at a later point in time).
 
-      It converts the numeric value (interpreted as a time difference in days) into a relative date string. For example, 1 is formatted as 1 day ago.
+      It converts the numeric value (interpreted as a time difference in days) into a relative date string. For example, 1 is formatted as one day ago.
 
 The following example defines `datedelta` formatting for `min` and `max` aggregates:
 
@@ -836,9 +832,9 @@ N:definitions
                         P:format = "datedelta"
 ```
 
-### Column Specific Definitions {#column-specific-definitions}
+### Column-Specific Definitions {#column-specific-definitions}
 
-The column specific definitions define the filters and aggregates available for that column.
+The column-specific definitions define the filters and aggregates available for that column.
 
 ```xml
 N:definitions
@@ -870,19 +866,19 @@ N:definitions
     * `diff`
     * `timeslot`
 
-      Is used for extracting parts of a date needed for aggregation (for example, group by year to get data aggregated for each year).
+      Used for extracting parts of a date needed for aggregation (for example, group by year to get data aggregated for each year).
 
     * `sortable`
 
-      Is used for values that use different values (as taken from different properties) for sorting and displaying.
+      Used for values that use different values (as taken from different properties) for sorting and displaying.
 
-  In addition. any of the above can be defined as multi value; for example, `string[]` defines an array of strings.
+  In addition, any of the above can be defined as multi value; for example, `string[]` defines an array of strings.
 
   The value extractor is chosen by the column type. If a value extractor is available for a column type, then this extractor is used. Otherwise, the default value extractor is used.
 
   A type may (optionally) take a parameter. For example, `timeslot:year` extracts the year from a date field. Types with their parameters:
 
-    * `timeslot` - The values are comparible to the corresponding constants of `java.utils.Calendar`.
+    * `timeslot` - The values are comparable to the corresponding constants of `java.utils.Calendar`.
 
         * `timeslot:year` - `Calendar.YEAR`
         * `timeslot:month-of-year` - `Calendar.MONTH`
@@ -907,7 +903,7 @@ N:definitions
 
         * `string`
 
-          A string based filter.
+          A string-based filter.
 
     * `id`
 
@@ -919,15 +915,15 @@ N:definitions
 
         * `raw`
 
-          Filter is applied on raw data.
+          The filter is applied on raw data.
 
         * `preprocessed`
 
-          Filter is applied on preprocessed data.
+          The filter is applied on preprocessed data.
 
         * `resolved`
 
-          Filter is applied on resolved data.
+          The filter is applied on resolved data.
 
 * `aggregates`
 
@@ -935,7 +931,7 @@ N:definitions
 
     * `text`
 
-      Textual name of the aggregate. If `text` is not specified, then it will take the default description of the aggregate; for example, `minimum` will be used for the `min` aggregate.
+      Textual name of the aggregate. If `text` is not specified, then it takes the default description of the aggregate. For example, `minimum` is used for the `min` aggregate.
 
     * `type`
 
@@ -951,31 +947,31 @@ N:definitions
 
         * `min`
 
-          Provides the minimum value.
+          It provides the minimum value.
 
         * `max`
 
-          Provides the maximum value.
+          It provides the maximum value.
 
         * `average`
 
-          Provides the average value.
+          It provides the average value.
 
         * `sum`
 
-          Provides the sum of all values.
+          It provides the sum of all values.
 
         * `median`
 
-          Provides the median value.
+          It provides the median value.
 
         * `percentile95`
 
-          Takes the 95th percentile of all values.
+          Uses the 95th percentile of all values.
 
 ### Column Default Values {#column-default-values}
 
-This is used to define default values for the column:
+Defines default values for the column:
 
 ```xml
 N:defaults
@@ -1010,9 +1006,9 @@ N:cq:editConfig [cq:EditConfig]
 
 Generic columns are an extension where (most of) the column definitions are stored on the instance of the column node (rather than the component node).
 
-They use a (standard) dialog, that you customize, for the individual generic component. This dialog allows the report user to define the column properties of a generic column on the report page (using the menu option **Column properties...**).
+They use a (standard) dialog box that you can customize for the individual generic component. This dialog box lets the report user define the column properties of a generic column on the report page (using the menu option **Column properties...**).
 
-An example is the **Generic** column of the **User Report**; see `/libs/cq/reporting/components/userreport/genericcol`.
+An example is the **Generic** column of the **User Report**. See `/libs/cq/reporting/components/userreport/genericcol`.
 
 To make a column generic:
 
@@ -1024,7 +1020,7 @@ To make a column generic:
 
   See `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-    * The fields of the dialog must refer to the same names as the corresponding component property (including its path).
+    * The fields of the dialog box must refer to the same names as the corresponding component property, including its path.
 
       For example, if you want to make the type of the generic column configurable through the dialog, use a field with the name of `./definitions/type`.
 
@@ -1036,7 +1032,7 @@ To make a column generic:
 
 * Use standard AEM methodologies to define (additional) column properties.
 
-  Note that for properties that are defined on both the component and column instances, the value on the column instance takes precedence.
+  For properties that are defined on both the component and column instances, the value on the column instance takes precedence.
 
   Properties available for a generic column are:
 
@@ -1048,7 +1044,7 @@ To make a column generic:
     * `definitions/queryBuilder` - the query builder configuration
     * `defaults/aggregate` - the default aggregate
 
-  In the case of a new instance of the generic column on the **User Report** the properties defined with the dialog are persisted under:
+  If there is a new instance of the generic column on the **User Report**, the properties defined with the dialog are persisted under:
 
   `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
@@ -1056,13 +1052,13 @@ To make a column generic:
 
 The design defines which column types are available for creating a report. It also defines the paragraph system to which the columns are added.
 
-You are strongly recommended to create an individual design for each report. This ensures full flexibility. See also [Defining Your New Report](#defining-your-new-report).
+Adobe recommends that you create an individual design for each report. Doing so ensures full flexibility. See [Defining Your New Report](#defining-your-new-report).
 
 The default reporting components are held under `/etc/designs/reports`.
 
-The location for your reports can depend on where you have located your components:
+The location for your reports can depend on where your components are located:
 
-* `/etc/designs/reports/<yourReport>` is suitable if the report is located unter `/apps/cq/reporting`
+* `/etc/designs/reports/<yourReport>` is suitable if the report is under `/apps/cq/reporting`
 
 * `/etc/designs/<yourProject>/reports/<*yourReport*>` for reports using the `/apps/<yourProject>/reports` pattern
 
@@ -1100,9 +1096,9 @@ Specifying designs for individual columns is not required. Available columns can
 
 >[!NOTE]
 >
->It is recommended that you do not make any changes to the standard report designs. This is to ensure that you do not lose any changes when upgrading or installing hotfixes.
+>Adobe recommends that you do not change the standard report designs. This is to ensure that you do not lose any changes when upgrading or installing hotfixes.
 >
->Please copy the report and its design if you want to customize a standard report.
+>Copy the report and its design if you want to customize a standard report.
 
 >[!NOTE]
 >
@@ -1117,7 +1113,7 @@ The template must:
 * set the `sling:resourceType` to `cq/reporting/components/reportpage`
 
 * indicate the design to be used
-* create a `report` child node that references the container ( `reportbase`) component by means of the `sling:resourceType` property
+* create a `report` child node that references the container ( `reportbase`) component with the `sling:resourceType` property
 
 An example template snippet (taken from the component report template) is:
 
@@ -1152,7 +1148,7 @@ An example template snippet, showing the definition of the root path (taken from
 
 The default reporting templates are held under `/libs/cq/reporting/templates`.
 
-However, it is strongly recommended that you do not update these nodes, but create your own component nodes under `/apps/cq/reporting/templates` or if more appropriate `/apps/<yourProject>/reports/templates`.
+However, Adobe recommends that you do not update these nodes. Instead, create your own component nodes under `/apps/cq/reporting/templates` or if more appropriate `/apps/<yourProject>/reports/templates`.
 
 Where, as an example (see also [Location of Report Components](#location-of-report-components)):
 
@@ -1163,7 +1159,7 @@ N:apps
             N:templates [sling:Folder]
 ```
 
-Under this you create the root for your template:
+Under this, create the root for your template:
 
 ```xml
 N:apps
@@ -1177,7 +1173,7 @@ N:apps
 
 ### Defining Your New Report {#defining-your-new-report}
 
-To define a new report you must create and configure:
+To define a report, create and configure:
 
 1. The root for your report components.
 1. The report base component.
@@ -1186,7 +1182,7 @@ To define a new report you must create and configure:
 1. The root for your report template.
 1. The report template.
 
-To illustrate these steps, the following example defines a report that lists all OSGi configurations within the repository; i.e. all instances of the `sling:OsgiConfig` node.
+To illustrate these steps, the following example defines a report that lists all OSGi configurations within the repository. That is, all instances of the `sling:OsgiConfig` node.
 
 >[!NOTE]
 >
@@ -1203,7 +1199,7 @@ To illustrate these steps, the following example defines a report that lists all
                N:osgireport [sling:Folder]
    ```
 
-1. Define your report base. For example `osgireport[cq:Component]` under `/apps/cq/reporting/components/osgireport`.
+1. Define your report base. For example, `osgireport[cq:Component]` under `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1255,7 +1251,7 @@ To illustrate these steps, the following example defines a report that lists all
     * displays both `pie` and `lineseries` charts
     * provides a dialog for the user to configure the report
 
-1. Define your first column (columnbase) component. For example `bundlecol[cq:Component]` under `/apps/cq/reporting/components/osgireport`.
+1. Define your first column (columnbase) component. For example, `bundlecol[cq:Component]` under `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1283,7 +1279,7 @@ To illustrate these steps, the following example defines a report that lists all
                    P:property [String] = "jcr:path"
    ```
 
-   This defines a column base component that:
+   This defines a columnbase component that:
 
     * searches for and returns the value that it receives from the server; in this case the property `jcr:path` for every `sling:OsgiConfig` node
     * provides the `count` aggregate
@@ -1294,7 +1290,7 @@ To illustrate these steps, the following example defines a report that lists all
 
    >[!NOTE]
    >
-   >In this example there are no definitions of `N:data` and `P:clientFilter`. This is because the value received from the server is returned on a 1:1 basis - which is the default behavior.
+   >In this example, there are no definitions of `N:data` and `P:clientFilter`. This is because the value received from the server is returned on a 1:1 basis - which is the default behavior.
    >
    >This is the same as the definitions:
    >
@@ -1303,9 +1299,9 @@ To illustrate these steps, the following example defines a report that lists all
    >  P:clientFilter [String] = "function(v) { return v; }"
    >```
    >
-   >Where the function simply returns the value it receives.
+   >Where the function simply returns the value that it receives.
 
-1. Define your report design. For example `osgireport[cq:Page]` under `/etc/designs/reports`.
+1. Define your report design. For example, `osgireport[cq:Page]` under `/etc/designs/reports`.
 
    ```xml
    N:osgireport [cq:Page]
@@ -1330,7 +1326,7 @@ To illustrate these steps, the following example defines a report that lists all
                N:osgireport [cq:Template]
    ```
 
-1. Define your report template. For example `osgireport[cq:Template]` under `/apps/cq/reporting/templates`.
+1. Define your report template. For example, `osgireport[cq:Template]` under `/apps/cq/reporting/templates`.
 
    ```xml
    N:osgireport [cq:Template]
@@ -1362,12 +1358,12 @@ An instance of your new report can now be created:
 
 1. Select **Reports** in the left-hand pane.
 1. Then **New...** from the toolbar. Define a **Title** and **Name**, select your new report type (the **OSGi Report Template**) from the list of templates, then click **Create**.
-1. Your new report instance will appear in the list. Double-click this to open.
+1. Your new report instance appears in the list. Double-click this to open.
 1. Drag a component (for this example, **Bundle** in the **OSGi Report** group) from the sidekick to create the first column and [start the report definition](/help/sites-administering/reporting.md#the-basics-of-report-customization).
 
    >[!NOTE]
    >
-   >As this example does not have any groupable columns the charts will not be available. To see charts, set `groupable` to `true`:
+   >As this example does not have any groupable columns, the charts are not available. To see charts, set `groupable` to `true`:
    >
    >```
    >N:osgireport [sling:Folder]
@@ -1381,41 +1377,41 @@ An instance of your new report can now be created:
 
 This section describes advanced configuration options for the OSGi services that implement the report framework.
 
-These can be viewed using the Configuration menu of the web console (available for example at `http://localhost:4502/system/console/configMgr`). When working with AEM there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
+These can be viewed using the Configuration menu of the web console (available at `http://localhost:4502/system/console/configMgr`, for example). When working with AEM, there are several methods of managing the configuration settings for such services; see [Configuring OSGi](/help/sites-deploying/configuring-osgi.md) for more details and the recommended practices.
 
 ### Basic Service (Day CQ Reporting Configuration) {#basic-service-day-cq-reporting-configuration}
 
 * **Timezone** defines the timezone historic data is created for. This is to ensure that the historic chart displays the same data for each user around the globe.
-* **Locale** defines the locale to be used in conjunction with the **Timezone** for historic data. The locale is used to determine some locale-specific calendar settings (for example, whether the first day of a week is Sunday or Monday).
+* **Locale** defines the locale to be used with **Timezone** for historic data. The locale is used to determine some locale-specific calendar settings (for example, whether the first day of a week is Sunday or Monday).
 
 * **Snapshot path** defines the root path where snapshots for historic charts are stored.
 * **Path to reports** defines the path where reports are located. This is used by the snapshot service to determine the reports to actually take snapshots for.
 * **Daily snapshots** defines the hour of each day when daily snapshots are taken. The specified hour is in the local timezone of the server.
 * **Hourly snapshots** defines the minute of each hour when hourly snapshots are taken.
-* **Rows (max)** defines the maximum number of rows that are stored for each snapshot. This value should be chosen reasonably; if it is too high, this will affect the size of the repository, if too low, data may not be accurate because of the way historic data is handled.
-* **Fake data**, if enabled, fake historic data can be created by using the `fakedata` selector; if disabled, then use of the `fakedata` selector will throw an exception.
+* **Rows (max)** defines the maximum number of rows that are stored for each snapshot. This value should be chosen reasonably. If it is too high, this affects the size of the repository, if too low, data may not be accurate because of the way historic data is handled.
+* **Fake data**, if enabled, fake historic data can be created by using the `fakedata` selector; if disabled, then use of the `fakedata` selector throws an exception.
 
-  As the data is fake it must *only* be used for testing and debugging purposes.
+  Because the data is fake, it must *only* be used for testing and debugging purposes.
 
-  Using the `fakedata` selector will finish the report implicitly, so all existing data will be lost; data can be restored manually, but this can be a time-consuming process.
+  Using the `fakedata` selector finishes the report implicitly, so all existing data is lost. Data can be restored manually, but this can be a time-consuming process.
 
 * **Snapshot user** defines an optional user that can be used for taking snapshots.
 
-  Basically, snapshots are taken for the user that has finished the report. There might be situations (for example on a publish system, where this user is non-existant as their account has not been replicated) where you want specify a fallback user that is used instead.
+  Basically, snapshots are taken for the user that has finished the report. There might be situations (for example, on a publish system, where this user is nonexistent as their account has not been replicated) where you want to specify a fallback user that is used instead.
 
-  Additionally, specifying a user might impose a security risk.
+  Also, specifying a user might impose a security risk.
 
-* **Enforce snapshot user**, if enabled, all snapshots will be taken with the user specified under *Snapshot user*. This might have serious security impacts if not handled correctly.
+* **Enforce snapshot user**, if enabled, all snapshots are taken with the user specified under *Snapshot user*. This might have a serious security impact if not handled correctly.
 
 ### Cache Settings (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
 
-* **Enable** lets you enable or disable the caching of report data. Enabling the report cache will keep report data in memory during several requests. This may boost performance, but will lead to higher memory consumption and may, in extreme circumstances, lead to out of memory situations.
-* **TTL** defines the time (in seconds) for which report data is cached. A higher number will boost performance, but may also return inaccurate data if the data changes within the time period.
+* **Enable** lets you enable or disable the caching of report data. Enabling the report cache keeps report data in memory during several requests. This may boost performance, but leads to higher memory consumption and may, in extreme circumstances, lead to out-of-memory situations.
+* **TTL** defines the time (in seconds) for which report data is cached. A higher number boosts performance, but may also return inaccurate data if the data changes within the time period.
 * **Max entries** defines the maximum number of reports to be cached at any one time.
 
 >[!NOTE]
 >
->Report data may be different for each user and language. Therefore report data is cached per report, user and language. This means that a **Max entries** value of `2` actually caches data for either:
+>Report data may be different for each user and language. Therefore report data is cached per report, user, and language. This means that a **Max entries** value of `2` actually caches data for either:
 >
 >* one report for two users with different language settings
 >* one user and two reports

@@ -1,25 +1,21 @@
 ---
 title: Developing with CRXDE Lite
-seo-title: Developing with CRXDE Lite
-description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
-seo-description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
-uuid: f4890354-d8b8-4fb9-af2f-3359f931f883
+description: CRXDE Lite is embedded into Adobe Experience Manager (AEM) and enables you to perform standard development tasks in the browser
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 ---
 # Developing with CRXDE Lite{#developing-with-crxde-lite}
 
-This section describes how to develop your AEM application using CRXDE Lite.
+This section describes how to develop your Adobe Experience Manager (AEM) application using CRXDE Lite.
 
-Please refer to the overview documentation for more information on the different development environments that are available.
+Seethe overview documentation for more information on the different development environments that are available.
 
-CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser. With CRXDE Lite, you can create a project, create and edit files (like .jsp and .java), folders, templates, components, dialogs, nodes, properties and bundles while logging.
-CRXDE Lite is recommended when you do not have direct access to the AEM server, when you develop an application by extending or modifying the out-of-the-box components and Java bundles or when you do not need a dedicated debugger, code completion and syntax highlighting.
+CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser. With CRXDE Lite, you can create a project, create, and edit files (like .jsp and .java), folders, templates, components, dialogs, nodes, properties, and bundles while logging.
+CRXDE Lite is recommended when you do not have direct access to the AEM server. Or, when you develop an application by extending or modifying the out-of-the-box components and Java&trade; bundles, or when you do not need a dedicated debugger, code completion and syntax highlighting.
 
 >[!NOTE]
 >
@@ -29,7 +25,7 @@ CRXDE Lite is recommended when you do not have direct access to the AEM server, 
 
 >[!NOTE]
 >
->It is recommended to use the [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) and the [AEM HTL Brackets Extension](/help/sites-developing/aem-brackets.md) during project development.
+>Adobe recommends that you use the [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) and the [AEM HTL Brackets Extension](/help/sites-developing/aem-brackets.md) during project development.
 
 ## Getting Started with CRXDE Lite {#getting-started-with-crxde-lite}
 
@@ -55,19 +51,19 @@ CRXDE Lite offers the following functionality:
  <tbody>
   <tr>
    <td>Top switcher bar</td>
-   <td>Lets you quickly switch between CRXDE Lite, Package Manager, and Package Share.</td>
+   <td>Quickly switch between CRXDE Lite, Package Manager, and Package Share.</td>
   </tr>
   <tr>
    <td>Node path widget</td>
-   <td><p>Displays the path to the currently selected node.</p> <p>You can also use it to jump to a node, by entering the path by hand, or pasting it from somewhere else, and hitting Enter.</p> <p>It also provides support for looking for nodes with specific node name. Enter the name of the node you would like to find, and wait (or hit the search symbol on the right-hand side). You can try entering, for example,, the string <em>oak</em> into the widget to see how it works. If a given node or nodes is loaded into the explorer pane, the list will be displayed, and you can select the path and hit Enter to navigate to it. Note that it only works for the nodes currently loaded into the CRXDE client application in browser. If you want to search the whole repository, use Tools, then Query.</p> </td>
+   <td><p>Displays the path to the selected node.</p> <p>You can also use it to jump to a node, by entering the path by hand, or pasting it from somewhere else, and hitting Enter.</p> <p>It also provides support looking for nodes with a specific node name. Enter the name of the node that you would like to find, and wait (or hit the search symbol on the right-hand side). You can try entering, for example, the string <em>oak</em> into the widget to see how it works. If a given node or nodes is loaded into the explorer pane, the list is displayed, and you can select the path and hit Enter to navigate to it. It only works for the nodes loaded into the CRXDE client application in the browser. If you want to search the whole repository, use Tools, then Query.</p> </td>
   </tr>
   <tr>
    <td>Explorer pane</td>
-   <td><p>Displays a tree of all the nodes in the repository.</p> <p>Click a node to display its properties in the <strong>Properties</strong> tab. After clicking a node, you can select an action in the toolbar. Click the node again to rename it.</p> <p>Tree Navigation Filter (binocular icon): enables you to filter the nodes in the repository for which the name contains the input text. It only applies to nodes that have been loaded locally.<br /> </p> </td>
+   <td><p>Displays a tree of all the nodes in the repository.</p> <p>Click a node so you can display its properties in the <strong>Properties</strong> tab. After clicking a node, you can select an action in the toolbar. Click the node again to rename it.</p> <p>Tree Navigation Filter (binocular icon): enables you to filter the nodes in the repository for which the name contains the input text. It only applies to nodes that have been loaded locally.<br /> </p> </td>
   </tr>
   <tr>
    <td>Edit pane</td>
-   <td><p><strong>Home</strong> tab: lets you search content and/or documentation and access developer resources (documentation, developer blog, knowledge base) and support (Adobe homepage and support center).<br /> </p> <p>Double-click a file in the <strong>Explorer</strong> pane to display its content; like for example a .jsp or a .java file. You can then modify it and save the changes.</p> <p>Once a file is edited in the <strong>Edit</strong> pane, the following tools are available on the toolbar:<br /> </p> - <strong>Show in tree: </strong>shows the file in the repository tree.<br /> - <strong>Search/Replace ...</strong>: do search or replace.<br /> <br /> Double-click on the status line of the <strong>Edit</strong> pane opens the <strong>Go to line</strong> dialog so you can enter a specific line number to go to.<br /> </td>
+   <td><p><strong>Home</strong> tab: lets you search content and/or documentation and access developer resources (documentation, developer blog, knowledge base) and support (Adobe homepage and support center).<br /> </p> <p>Double-click a file in the <strong>Explorer</strong> pane so you can display its content. For example, a .jsp or a .java file. You can then modify it and save the changes.</p> <p>Once a file is edited in the <strong>Edit</strong> pane, the following tools are available on the toolbar:<br /> </p> - <strong>Show in tree: </strong>shows the file in the repository tree.<br /> - <strong>Search/Replace ...</strong>: do search or replace.<br /> <br /> Double-click the status line of the <strong>Edit</strong> pane opens the <strong>Go to line</strong> dialog so you can enter a specific line number to go to.<br /> </td>
   </tr>
   <tr>
    <td>Properties tab<br /> </td>
@@ -75,15 +71,15 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Access Control tab</td>
-   <td><p>Display permissions based on current path, repository-level or principal.</p> <p>The permissions are broken down into</p> <p>- <strong>Applicable Access Control Policy</strong>: The policies that can be applied to the current selection.</p> <p>- <strong>Local Access Control Policies</strong>: The current policies applied locally to the current selection.</p> <p>- <strong>Effective Access Control Policies</strong>: The current policies applied for the current selection, might be set locally or inherited from parent nodes.</p> <p>Note. To be able to see the Access Control information at all, the user logged in to CRXDE Lite must have rights to read ACL entries. The anonymous user cannot see this information by default - please log in as, for example,, admin to see the information.</p> </td>
+   <td><p>Display permissions based on the path, repository-level, or principal.</p> <p>The permissions are broken down into</p> <p>- <strong>Applicable Access Control Policy</strong>: The policies that can be applied to the selection.</p> <p>- <strong>Local Access Control Policies</strong>: The policies applied locally to the selection.</p> <p>- <strong>Effective Access Control Policies</strong>: The policies applied for the selection, might be set locally or inherited from parent nodes.</p> <p>Note. To be able to see the Access Control information at all, the user logged in to CRXDE Lite must have read-rights to ACL entries. The anonymous user cannot see this information by default - log in as admin to see the information, for example.</p> </td>
   </tr>
   <tr>
    <td>Replication tab</td>
-   <td><p>Display the replication status of current node. You can replicate and replicate delete the current node.</p> </td>
+   <td><p>Display the replication status of the node. You can replicate and replicate delete the node.</p> </td>
   </tr>
   <tr>
    <td>Console tab<br /> </td>
-   <td><p><strong>Server Logs</strong>:</p> <p>Displays logs messages. You can configure the log level, clear the console, pin at the selected scroll position and enable/disable the displaying of messages.<br /> </p> <p><strong>Version Control</strong>:</p> <p>Displays version control messages.<br /> </p> </td>
+   <td><p><strong>Server Logs</strong>:</p> <p>Displays logs messages. You can configure the log level, clear the console, pin at the selected scroll position, and enable or disable the displaying of messages.<br /> </p> <p><strong>Version Control</strong>:</p> <p>Displays version control messages.<br /> </p> </td>
   </tr>
   <tr>
    <td>Build Info tab<br /> </td>
@@ -91,11 +87,11 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Refresh<br /> </td>
-   <td>Refreshes the current selection. Changes from other users are updated in your view of the repository. Changes you have made are unaffected.<br /> </td>
+   <td>Refreshes the selection. Changes from other users are updated in your view of the repository. Changes you have made are unaffected.<br /> </td>
   </tr>
   <tr>
    <td>Save All</td>
-   <td><p><strong>Save All</strong>:<br /> </p> <p>Saves all the changes you have made. Until you click save, the changes are temporary, and will be lost when you exit the console.</p> <p><strong>Revert</strong>:</p> <p>Discards all the changes that you have made on the selected node since the last save action, then reloads the current state of the repository for the selected node.</p> <p><strong>Revert All</strong>:</p> <p>Discards all the changes that you have made throughout the entire repository since the last save action, then reloads the current state of the repository.</p> </td>
+   <td><p><strong>Save All</strong>:<br /> </p> <p>Saves all the changes that you have made. Until you click save, the changes are temporary, and are lost when you exit the console.</p> <p><strong>Revert</strong>:</p> <p>Discards all the changes that you have made on the selected node since the last save action, then reloads the state of the repository for the selected node.</p> <p><strong>Revert All</strong>:</p> <p>Discards all the changes that you have made throughout the entire repository since the last save action, then reloads the state of the repository.</p> </td>
   </tr>
   <tr>
    <td>Create ...<br /> </td>
@@ -127,11 +123,11 @@ CRXDE Lite offers the following functionality:
   </tr>
   <tr>
    <td>Tools<br /> </td>
-   <td><p>Drop-down menu with the following tools:</p> <p>- <strong>Server Config ...</strong>: to access the Felix Console.</p> <p>- <strong>Query ...</strong>: to query the repository.</p> <p>- <strong>Privileges ...</strong>: to open privilege management, where you can view and add privileges.</p> <p>- <strong>Test Access Control ...</strong>: a place where you can test the permission for certain path and/or principal.</p> <p>- <strong>Export Node Type</strong>: to export node types in the system as cnd notation.</p> <p>- <strong>Import Node Type ...</strong>: to import node types using cnd notation.</p> <p>- <strong>Install SiteCatalyst Debugger ...</strong>: instructions on how to install Analytics Debugger.</p> </td>
+   <td><p>Drop-down menu with the following tools:</p> <p>- <strong>Server Config ...</strong>: to access the Felix Console.</p> <p>- <strong>Query ...</strong>: to query the repository.</p> <p>- <strong>Privileges ...</strong>: to open privilege management, where you can view and add privileges.</p> <p>- <strong>Test Access Control ...</strong>: a place where you can test the permission for a certain path and/or principal.</p> <p>- <strong>Export Node Type</strong>: to export node types in the system as cnd notation.</p> <p>- <strong>Import Node Type ...</strong>: to import node types using cnd notation.</p> <p>- <strong>Install SiteCatalyst Debugger ...</strong>: instructions on how to install Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Login widget<br /> </td>
-   <td><p>Displays the currently logged-in users and the workspace they are logged into, for example,, admin@crx.default.</p> <p>Click it to log in or re-login as a specific user. If you don't specify a workspace to log in to, you will be logged into the default workspace, crx.default.</p> <p>If you want to browse the repository as Anonymous user, use <strong>anonymous</strong> as the login name, and any password (for example,, a space or a dot).<br /> </p> <p>If your authorization is no longer valid (for example,, it is expired), the login widget displays "<strong>Unauthorized - Login...</strong>". Click it to log in again.</p> </td>
+   <td><p>Displays the logged-in users and the workspace that they are logged into, for example, admin@crx.default.</p> <p>Click it to log in or relogin as a specific user. If you do not specify a workspace to log in to, you are logged into the default workspace, crx.default.</p> <p>If you want to browse the repository as an Anonymous user, use <strong>anonymous</strong> as the login name, and any password (for example, a space or a dot).<br /> </p> <p>If your authorization is no longer valid (for example, it is expired), the login widget displays "<strong>Unauthorized - Login...</strong>". Click it to log in again.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -141,7 +137,7 @@ CRXDE Lite offers the following functionality:
 To create a folder with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the Navigation pane, right-click the folder under which you want to create the new folder, select **Create ...**, then **Create Folder ...**.
+1. In the Navigation pane, right-click the folder under which you want to create the folder, select **Create ...**, then **Create Folder ...**.
 
 1. Enter the folder **Name** and click **OK**.
 
@@ -154,7 +150,7 @@ To create a template with CRXDE Lite:
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the folder where you want to create the template, select **Create ...**, then **Create Template ...**.
 
-1. Enter the **Label**, **Title**, **Description**, **Resource Type** and **Ranking** of the template. Click **Next**.
+1. Enter the **Label**, **Title**, **Description**, **Resource Type**, and **Ranking** of the template. Click **Next**.
 
 1. This step is optional: set the **Allowed Paths**. Click **Next**
 
@@ -181,9 +177,9 @@ To create a component with CRXDE Lite:
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the folder where you want to create the component, select **Create ...**, then **Create Component ...**.
 
-1. Enter the **Label**, **Title**, **Description**, **Super Resource Type** and **Group** of the component. Click **Next**.
+1. Enter the **Label**, **Title**, **Description**, **Super Resource Type**, and **Group** of the component. Click **Next**.
 
-1. This step is optional: set the component properties **Is Container,** **No Decoration**, **Cell Name** and **Dialog Path**. Click **Next**.
+1. This step is optional: set the component properties **Is Container,** **No Decoration**, **Cell Name**, and **Dialog Path**. Click **Next**.
 
 1. This step is optional: set the component property **Allowed Parents**. Click **Next**.
 
@@ -212,26 +208,26 @@ It creates a dialog with the following structure:
 
 `dialog[cq:Dialog]/items[cq:Widget]/items[cq:WidgetCollection]/tab1[cq:Panel]`
 
-You can now adapt the dialog to your needs by modifying properties or creating new nodes.
+You can now adapt the dialog to your needs by modifying properties or creating nodes.
 
-You can also use the Dialog Editor to edit a dialog. Double-clicking the dialog node in CRXDE Lite will bring up the editor. More information about the Dialog Editor can be found [here](/help/sites-developing/dialog-editor.md).
+You can also use the Dialog Editor to edit a dialog. Double-clicking the dialog node in CRXDE Lite brings up the editor. More information about the Dialog Editor can be found [here](/help/sites-developing/dialog-editor.md).
 
 ## Creating a Node {#creating-a-node}
 
 To create a node with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
-1. In the Navigation pane, right-click the node where you want to create the new node, select **Create ...**, then **Create Node ...**.
+1. In the Navigation pane, right-click the node where you want to create the node, select **Create ...**, then **Create Node ...**.
 1. Enter the **Name** and the **Type**. Click **OK**.
 1. Click **Save All** to save the changes on the server.
 
-You can now adapt the node to your needs by modifying properties or creating new nodes.
+You can now adapt the node to your needs by modifying properties or creating nodes.
 
 >[!NOTE]
 >
->Most of the edit operations, including Create Node, keeps all the changes in memory, and only stores them into the repository upon saving (via the "Save All" button). However some operations such as move are automatically persisted.
+>Most of the edit operations, including Create Node, keeps all the changes in memory, and only stores them into the repository upon saving (by way of the "Save All" button). However some operations such as move are automatically persisted.
 >
->The validation with regard to whether the newly created node is allowed by the node type of the parent node is also carried out by the JCR repository first when saving changes. If you receive an error message while saving a node, please check, whether the content structure is valid (for example,, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
+>The validation regarding whether the newly created node is allowed by the node type of the parent node is also carried out by the JCR repository first when saving changes. If you receive an error message while saving a node, check whether the content structure is valid (for example, you cannot create an `nt:unstructured` node as a child of `nt:folder` node).
 
 ## Creating a Property {#creating-a-property}
 
@@ -239,13 +235,13 @@ To create a property with CRXDE Lite:
 
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, select the node where you want to add the new property.
-1. In the **Properties** tab in the bottom pane, enter the **Name**, the **Type** and the **Value**. Click **Add**.
+1. In the **Properties** tab in the bottom pane, enter the **Name**, the **Type**, and the **Value**. Click **Add**.
 
 1. Click **Save All** to save the changes on the server.
 
 ## Creating a Script {#creating-a-script}
 
-To create a new script:
+To create a script:
 
 1. Open CRXDE Lite in your browser.
 1. In the Navigation pane, right-click the component where you want to create the script, select **Create ...**, then **Create File ...**.
@@ -258,7 +254,7 @@ To create a new script:
 
 ## Exporting and Importing Node Types {#exporting-and-importing-node-types}
 
-With CRXDE Lite you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+With CRXDE Lite, you can import and/or export node type definitions in [CND (Compact Namespace and Node Type Definition) notation](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 To export a node type definition:
 
@@ -266,20 +262,20 @@ To export a node type definition:
 1. Select your required node.
 1. Select **Tools** then **Export Node Type**.
 
-1. The definition, in cnd notation will be displayed in your browser. Save the information if required.
+1. The definition, in cnd notation, is displayed in your browser. Save the information, if necessary.
 
 To import a node type definition:
 
 1. Open CRXDE Lite in your browser.
 1. Select **Tools** then **Import Node Type...**.
 
-1. Enter the CND notation for the definition n the text box.
+1. Enter the CND notation for the definition in the text box.
 1. Check **Allow Update** if you are updating an existing definition.
 1. Click **Import**.
 
 ## Logging {#logging}
 
-With CRXDE Lite you can display the file `error.log` that is located on the file system at `<crx-install-dir>/crx-quickstart/server/logs` and filter it with the appropriate log level. Proceed as follows:
+With CRXDE Lite, you can display the file `error.log` that is on the file system at `<crx-install-dir>/crx-quickstart/server/logs` and filter it with the appropriate log level. Proceed as follows:
 
 1. Open CRXDE Lite in your browser.
 1. In the **Console** tab at the bottom of the window, in the drop-down menu on the right, select **Server Logs**.
@@ -290,11 +286,11 @@ You can:
 
 * Adjust the log parameters in the Felix Console by clicking the **Logging Configurations** icon.
 * Clear the messages by clicking the **Brush** icon.
-* Pin the message at the current selection by clicking the **Pin** icon.
+* Pin the message at the selection by clicking the **Pin** icon.
 * Enable or disable the displaying of messages by clicking the **Stop** icon.
 
 ## Access Control {#access-control}
 
 >[!NOTE]
 >
->See [Users, Groups and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.
+>See [Users, Groups, and Access Rights Administration](/help/sites-administering/user-group-ac-admin.md) for more information.

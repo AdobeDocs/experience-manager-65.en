@@ -1,13 +1,10 @@
 ---
 title: Basic handling when using the AEM author environment
-description: Get comfortable with navigating AEM and its basic usage
-
-uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
+description: Get comfortable with navigating Adobe Experience Manager and its basic usage.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 ---
@@ -15,9 +12,9 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 
 >[!NOTE]
 >
->* This page is designed to give an overview of basic handling when using the AEM author environment. It uses the **Sites** console as a basis.
+>* This page is designed to give an overview of basic handling when using the Adobe Experience Manager (AEM) Author environment. It uses the **Sites** console as a basis.
 >
->* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality will be covered in more detail on other pages.
+>* Some functionality is not available in all consoles and additional functionality may be available in some consoles. Specific information about the individual consoles and their related functionality is covered in more detail on other pages.
 >* Keyboard shortcuts are available throughout AEM. In particular when [using consoles](/help/sites-authoring/keyboard-shortcuts.md) and [editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
@@ -39,21 +36,21 @@ Immediately after logging in you arrive on the [Navigation panel](#navigation-pa
 >
 >To get a good understanding of the basic use of AEM, this document is based on the **Sites** console.
 >
->Click or tap on **Sites** to get started.
+>To get started, click or tap on **Sites**.
 
 ### Product Navigation {#product-navigation}
 
-Whenever a user first accesses a console, a product navigation tutorial is started. Take a minute to click or tap through to get a good overview of the basic handling of AEM.
+Whenever a user first accesses a console, a product navigation tutorial is started. Click or tap through so you get a good overview of the basic handling of AEM.
 
 ![Product Navigation](assets/bh-02.png)
 
-Click or tap **Next** to advance to the next page of the overview. Click or tap **Close** or click or tap outside of the overview dialog to close.
+Click or tap **Next** to advance to the next page of the overview. Click or tap **Close** or click or tap outside of the overview dialog box to close.
 
-The overview will restart the next time you access a console unless you either view all slides, or check the option **Don't show this again**.
+The overview restarts the next time you access a console unless you either view all slides, or check the option **Don't show this again**.
 
 ## Global Navigation {#global-navigation}
 
-You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop down when you click or tap the Adobe Experience Manager link at the top-left of the screen.
+You can navigate between the consoles using the global navigation panel. This is triggered as a full-screen drop-down when you click or tap the Adobe Experience Manager link at the top-left of the screen.
 
 You can close the global navigation panel by clicking or tapping **Close** to return to your previous location.
 
@@ -61,7 +58,7 @@ You can close the global navigation panel by clicking or tapping **Close** to re
 
 >[!NOTE]
 >
->When you first login you presented with the **Navigation** panel.
+>When you first login you are presented with the **Navigation** panel
 
 Global navigation has two panels, represented by icons at the left-margin of the screen:
 
@@ -76,7 +73,7 @@ The Navigation panel provides access to the AEM consoles:
 
 ![Navigation](assets/bh-01.png)
 
-The title of the browser tab will update to reflect your location as you navigate through the consoles and content.
+The title of the browser tab updates to reflect your location as you navigate through the consoles and content.
 
 From Navigation the consoles available are:
 
@@ -88,7 +85,7 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>These consoles let you import and <a href="/help/assets/home.md">manage digital assets</a> such as images, videos, documents and audio files. These assets can then be used by any website running on the same AEM instance. </td>
+   <td>These consoles let you import and <a href="/help/assets/home.md">manage digital assets</a> such as images, videos, documents, and audio files. These assets can then be used by any website running on the same AEM instance. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -96,11 +93,11 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>This lets you manage products, product catalogs and orders related to your <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> sites.</td>
+   <td>This lets you manage products, product catalogs, and orders related to your <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a> sites.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>
-   <td>An <a href="/help/sites-authoring/experience-fragments.md">experience fragment</a> is a stand-alone experience that can be re-used across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.</td>
+   <td>An <a href="/help/sites-authoring/experience-fragments.md">Experience Fragment</a> is a stand-alone experience that can be reused across channels and have variations, saving the trouble of repeatedly copying and pasting experiences or parts of experiences.</td>
   </tr>
   <tr>
    <td>Forms</td>
@@ -112,22 +109,22 @@ From Navigation the consoles available are:
   </tr>
   <tr>
    <td>Projects</td>
-   <td>The <a href="/help/sites-authoring/touch-ui-managing-projects.md">Projects console gives you direct access to your projects</a>. Projects are virtual dashboards. They can be used to build a team, then give that team access to resources, workflows and tasks, allowing people to work on a common goal. <br /> </td>
+   <td>The <a href="/help/sites-authoring/touch-ui-managing-projects.md">Projects console gives you direct access to your projects</a>. Projects are virtual dashboards. They can be used to build a team, then give that team access to resources, workflows, and tasks, allowing people to work on a common goal. <br /> </td>
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> will let you manage all your customer-facing screens, of any size and in any location.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> let you manage all your customer-facing screens, of any size and in any location.</td>
   </tr>
   <tr>
    <td>Sites</td>
-   <td>The Sites consoles let you <a href="/help/sites-authoring/page-authoring.md">create, view and manage websites</a> running on your AEM instance. Through these consoles you can create, edit, copy, move and delete website pages, start workflows, and publish pages.<br /> </td>
+   <td>The Sites consoles let you <a href="/help/sites-authoring/page-authoring.md">create, view, and manage websites</a> running on your AEM instance. Through these consoles you can create, edit, copy, move and delete website pages, start workflows, and publish pages.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### Tools Panel {#tools-panel}
 
-In the Tools panel, each option in the side panel contains a range of sub-menus. The [Tools consoles](/help/sites-administering/tools-consoles.md) available here provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.
+In the Tools panel, each option in the side panel contains a range of submenus. The [Tools consoles](/help/sites-administering/tools-consoles.md) available here provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.
 
 ![Tools panel](assets/bh-04.png)
 
@@ -139,7 +136,7 @@ The header is always present at the top of the screen. While most options in the
 
 * [Global Navigation](#navigatingconsolesandtools)
 
-  Select the **Adobe Experience Manager** link to navigate between consoles.
+  Select the **Adobe Experience Manager** link where you can navigate between consoles.
 
   ![the Adobe Experience Manager link](assets/screen_shot_2018-03-23at103615.png)
 
@@ -149,7 +146,7 @@ The header is always present at the top of the screen. While most options in the
 
   You can also use the [shortcut key](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) to invoke search from any console.
 
-* [Solutions](https://www.adobe.com/experience-cloud.html)
+* [Solutions](https://business.adobe.com/)
 
   ![Solutions](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -161,7 +158,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Notifications](do-not-localize/screen_shot_2018-03-23at103558.png)
 
-  This icon will be badged with the number of currently assigned incomplete notifications.
+  This icon is badged with the number of currently assigned incomplete notifications.
 
   >[!NOTE]
   >
@@ -175,7 +172,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Rail selector list shown on left side of the Adobe Experience Manager screen.](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-  The options presented depend on your current console. For example, in **Sites** you can select content only (the default), the timeline, references or filter side panel.
+  The options presented depend on your current console. For example, in **Sites** you can select content only (the default), the timeline, references, or filter side panel.
 
   ![Rail Selector](assets/screen_shot_2018-03-23at104029.png)
 
@@ -183,9 +180,9 @@ The header is always present at the top of the screen. While most options in the
 
   ![Breadcrumbs](assets/bh-05.png)
 
-  Situated in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs let you navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
+  Appears in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs let you navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
 
-  Simply click on the breadcrumb text to display a drop-down listing the levels of the hierarchy of the currently selected item. Click on an entry to jump to that location.
+  Clicking the breadcrumb text opens a drop-down that lists the levels of the hierarchy of the currently selected item. To jump to that location, click an entry.
 
   ![Hierarchy levels](assets/bh-06.png)
 
@@ -193,7 +190,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Analytics time period](assets/screen_shot_2018-03-23at104126.png)
 
-  This is available in list view only. See [list view](#list-view) for more information.
+  This is available in list view only. For more information, see the [list view](#list-view).
 
 * **Create** button
 
@@ -207,7 +204,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Column View](assets/bh-07.png)
 
-  You can switch between column view, card view, and list view; in the list view it also shows the view settings.
+  You can switch between column view, card view, and list view. The list view shows the view settings.
 
   ![Switch Views](assets/bh-09.png)
 
@@ -215,7 +212,7 @@ The header is always present at the top of the screen. While most options in the
 
   You can navigate a website using only the keyboard. This uses the standard browser functionality of the **TAB** key (or **OPT+TAB**) to move you between elements on the page that are *focusable*. 
 
-  In the **Sites** console there is the added option to  **Skip to main content**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
+  In the **Sites** console, there is the added option to  **Skip to main content**. This becomes visible as you *tab* through the header options, and speeds your navigation by allowing you to skip the standard elements in the (product) toolbar and taking you directly to the main content.
 
   ![Skip to main content](assets/bh-30.png)
 
@@ -225,13 +222,13 @@ There are various help resources available:
 
 * **Console Toolbar**
 
-  Depending on your location the **Help** icon will open the appropriate resources:
+  Depending on your location, the **Help** icon opens the appropriate resources:
 
   ![Console toolbar](assets/bh-10.png)
 
 * **Navigation**
 
-  The first time you navigate the system, [a series of slides introduce AEM navigation](/help/sites-authoring/basic-handling.md#product-navigation).
+  The first time you navigate the system, [a series of slides introduces AEM navigation](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Page Editor**
 
@@ -241,11 +238,11 @@ There are various help resources available:
 
   Navigate this overview as you would the [product navigation overview](/help/sites-authoring/basic-handling.md#product-navigation) when first accessing any console.
 
-  From the [**Page Information** menu you can select **Help**](/help/sites-authoring/author-environment-tools.md#accessing-help) to show this again at any time.
+  From the **Page Information** menu, you can select [**Help**](/help/sites-authoring/author-environment-tools.md#accessing-help) to show this again at any time.
 
 * **Tools Console**
 
-  From the **Tools** console you can also access the external **Resources**:
+  From the **Tools** console, you can also access the external **Resources**:
 
   * **Documentation**
     View the Web Experience Management documentation
@@ -257,7 +254,7 @@ There are various help resources available:
   >
   >You can access an overview of shortcut keys available at any time using the hotkey `?` (question mark) when in a console.
   >
-  >For an overview of all keyboard shortcuts see the following documentation:
+  >For an overview of all keyboard shortcuts, see the following:
   >
   >* [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >* [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -266,15 +263,15 @@ There are various help resources available:
 
 Whenever a resource is selected (for example, a page or an asset), various actions are indicated by icons with explanatory text in the toolbar. These actions are dependent on:
 
-* The current console.
-* The current context.
-* Whether you are in [selection mode](#navigatingandselectionmode).
+* The current console
+* The current context
+* If you are in [selection mode](#navigatingandselectionmode) or not
 
-The action available in the toolbar change to reflect the actions you can take on the specific items selected.
+The actions available in the toolbar change to reflect the actions you can take on the specific items selected.
 
 How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depends on the view.
 
-Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
+Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens, additional options appear. Clicking or tapping the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
 
 ![Actions Toolbar](assets/bh-12.png)
 
@@ -284,9 +281,9 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 ## Quick Actions {#quick-actions}
 
-In [Card View](#cardviewquickactions) certain actions are available as quick action icons as well as being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
+In [Card View](#cardviewquickactions), certain actions are available as quick action icons and on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
 
-The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
+The quick actions are visible when you mouse over (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
 ![Quick Actions](assets/bh-13.png)
 
@@ -307,7 +304,7 @@ You can view, navigate through, and select (for further action) your resources w
 
 ### Selecting Resources {#selecting-resources}
 
-Selecting a specific resource is dependent on a combination of the view and the device:
+Selecting a specific resource depends on a combination of the view and the device:
 
 <table>
  <tbody>
@@ -321,12 +318,12 @@ Selecting a specific resource is dependent on a combination of the view and the 
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Tap the thumbnail</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Tap the thumbnail</li>
     </ul> </td>
   </tr>
   <tr>
@@ -334,12 +331,12 @@ Selecting a specific resource is dependent on a combination of the view and the 
    <td>
     <ul>
      <li>Desktop:<br /> Mouseover, then use the checkmark quick action</li>
-     <li>Mobile device:<br /> Tap-and-hold the card</li>
+     <li>Mobile devices:<br /> Tap-and-hold the card</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the card</li>
-     <li>Mobile device:<br /> Tap the card</li>
+     <li>Mobile devices:<br /> Tap the card</li>
     </ul> </td>
   </tr>
   <tr>
@@ -347,12 +344,12 @@ Selecting a specific resource is dependent on a combination of the view and the 
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Tap the thumbnail</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Click the thumbnail</li>
-     <li>Mobile device:<br /> Tap the thumbnail</li>
+     <li>Mobile devices:<br /> Tap the thumbnail</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -362,9 +359,9 @@ Selecting a specific resource is dependent on a combination of the view and the 
 
 You can select all items in any view by clicking the **Select All** option at the top-right corner of the console.
 
-* In **Card View** all cards are selected.
-* In **List View** all items in the list are seelcted.
-* In **Column View** all items in the leftmost column are selected.
+* In **Card View**, all cards are selected.
+* In **List View**, all items in the list are selected.
+* In **Column View**, all items in the leftmost column are selected.
 
 ![Select All](assets/screen-shot_2019-03-05at094659.png)
 
@@ -372,7 +369,7 @@ You can select all items in any view by clicking the **Select All** option at th
 
 In all cases as you select items, the count of the items selected is displayed at the top-right of the toolbar.
 
-You can deselect all items and exit selection mode by either:
+You can deselect all items and exit the selection mode by either:
 
 * clicking or tapping the **X** next to the count,
 
@@ -380,7 +377,7 @@ You can deselect all items and exit selection mode by either:
 
 ![Deselect](assets/bh-14.png)
 
-In all views, all items can be deslected by tapping escape on the keyboard if you are using a desktop device.
+In all views, all items can be deselected by tapping escape on the keyboard if you are using a desktop device.
 
 #### Selecting Example {#selecting-example}
 
@@ -388,9 +385,9 @@ In all views, all items can be deslected by tapping escape on the keyboard if yo
 
    ![Select - Card view](assets/bh-15.png)
 
-1. Once you have selected a resource the top header is covered by the [actions toolbar](#actionstoolbar) that provides access to actions currently applicable to the selected resource.
+1. When you have selected a resource, the top header is covered by the [actions toolbar](#actionstoolbar) that provides access to actions currently applicable to the selected resource.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   To exit selection mode, select the **X** to the top-right, or use **escape**.
 
 ### Column View {#column-view}
 
@@ -398,26 +395,26 @@ In all views, all items can be deslected by tapping escape on the keyboard if yo
 
 The column view allows for a visual navigation of a content tree through a series of cascading columns. This view lets you visualize and traverse the tree structure of your website.
 
-Selecting a resource in the leftmost column will display the child resources in a column to the right. Selecting a resource in the right column will then display the child resources in another column to the right and so on.
+Selecting a resource in the leftmost column displays the child resources in a column to the right. Selecting a resource in the right column displays the child resources in another column to the right and so on.
 
-* You can navigate up and down in the tree by tapping or clicking on the resource name or the chevron to the right of the resource name.
+* You can navigate up and down in the tree by tapping or clicking the resource name or the chevron to the right of the resource name.
 
-  * The resource name and chevron will be highlighted when tapped or clicked.
+  * The resource name and chevron is highlighted when tapped or clicked.
 
     ![Column View](assets/bh-17.png)
 
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-  * If you tap or click on a resource name that has no children, its details will be displayed in the final column.
+  * If you tap or click a resource name that has no children, its details are displayed in the final column.
 
-* Tapping or clicking on the thumbnail selects the resource.
+* Tapping or clicking the thumbnail selects the resource.
 
-  * When selected, a checkmark will be overlaid on the thumbnail and the resource name will be highlighted as well.
-  * The details of the selected resource will be shown in the final column.
-  * The action toolbar will become available.
+  * When selected, a checkmark is overlaid on the thumbnail and the resource name is highlighted, too.
+  * The details of the selected resource is shown in the final column.
+  * The action toolbar becomes available.
 
     ![Column View](assets/bh-18.png)
 
-  When a page is selected in column view, the selected page is displayed in the final colum along with the following details:
+  When a page is selected in column view, the selected page is displayed in the final column along with the following details:
 
   * Page title
   * Page name (part of the page's URL)
@@ -435,7 +432,7 @@ Selecting a resource in the leftmost column will display the child resources in 
   * A visual representation of the page content.
   * The page title.
   * Important dates (such as last edited, last published).
-  * If the page is locked, hidden or part of a livecopy.
+  * The page is locked, hidden, or part of a live copy.
   * If appropriate, when you are required to take action as part of a workflow.
 
     * Markers that indicate required actions may be related to entries in your [Inbox](/help/sites-authoring/inbox.md).
@@ -451,7 +448,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 ![List View](assets/bh-19.png)
 
 * The list view lists information for each resource at the current level.
-* You can navigate down through the tree by tapping/clicking on the resource name and back up by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).
+* You can navigate down through the tree by tapping/clicking on the resource name and backup by using the [breadcrumbs in the header](/help/sites-authoring/basic-handling.md#the-header).
 
 * To easily select all items in the list, use the checkbox at the top-left of the list.
 
@@ -459,20 +456,20 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   * When all items in the list are selected, this checkbox appears checked.
 
-    * Click or tap the checkbox to deselect all.
+    * To deselect all, click or tap the checkbox.
 
   * When only some items are selected, it appears with a minus sign.
 
-    * Click or tap the checkbox to select all.
-    * Click or tap the checkbox again to deselect all.
+    * To select all, click or tap the checkbox.
+    * To deselect all, click or tap the checkbox again.
 
-* Select the columns to be shown using **View Settings** option located under the Views button. The following columns are available for display:
+* Select the columns to be shown using the **View Settings** option located under the Views button. The following columns are available for display:
 
   * **Name** - Page name, which can be useful in a multilingual authoring environment since it is part of the page's URL and does not change regardless of language
   * **Modified** - Last modified date and last modified by user
   * **Published** - Publication status
   * **Template** - Template on which the page is based
-  * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
+  * **Workflow** - Workflow currently applied to the page. More information is available when you mouse over, or open Timeline.
 
   * **Page analytics**
   * **Unique visitors**
@@ -480,7 +477,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   ![View Settings - Configure Columnas](assets/bh-21.png)
 
-  By default the **Name** column is shown, which makes up part of the URL for the page. In some cases the author might need to access ages that are in a different language and seeing the name of the page (which usually is unchanging) can be of great help if the author does not know the language of the page.
+  By default the **Name** column is shown, which makes up part of the URL for the page. Sometimes the author must access pages that are in a different language. Seeing the name of the page (which usually is unchanging) can be of great help if the author does not know the language of the page.
 
 * Change the order of items using the dotted vertical bar at the far right of each item in the list.
 
@@ -494,7 +491,7 @@ Selecting a resource in the leftmost column will display the child resources in 
 
   ![Change Order - Drag](assets/bh-23.png)
 
-* You can display Analytics Data by showing the appropriate columns using the **View Settings** dialogue.
+* You can display Analytics Data by showing the appropriate columns using the **View Settings** dialog box.
 
   You can filter Analytics Data for the past 30, 90, or 365 days using the filter options on the right side of the header.
 
@@ -518,7 +515,7 @@ If content only is selected, then only the rail icon appears. When any other opt
 
 The content tree can be used to quickly navigate the site hierarchy within the side panel and view much information about the pages in the current folder.
 
-Using the content tree side panel in conjunction with a list view or cards view, users can easily see the hierarchical structure of the project and navigate easily across the content structure with the content tree side-panel, as well as view detailed page information in the list view.
+Using the content tree side panel with a list view or cards view, users can easily see the hierarchical structure of the project. They can easily navigate across the content structure with the content tree side-panel, and view detailed page information in the list view.
 
 ![Content Tree](assets/bh-26.png)
 
@@ -530,7 +527,7 @@ Using the content tree side panel in conjunction with a list view or cards view,
 
 ### Timeline {#timeline}
 
-The timeline can be used to view and/or initiate events that have occured on the selected resource. To open the timeline column use the rail selector:
+The timeline can be used to view and/or initiate events that have occurred on the selected resource. To open the timeline column, use the rail selector:
 
 The timeline column lets you:
 
@@ -545,24 +542,24 @@ The timeline column lets you:
     * [Versions](/help/sites-authoring/working-with-page-versions.md)
     * [Workflows](/help/sites-authoring/workflows-applying.md)
 
-       * with the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these
+       * except for [transient workflows](/help/sites-developing/workflows.md#transient-workflows) because no history information is saved for these
 
     * and Show All
 
-* [Add/view comments](#timelineaddingandviewingcomments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return will register the comment. It is shown when **Comments** or **Show All** is selected.
+* [Add/view comments](#timelineaddingandviewingcomments) about the selected item. The **Comment** box is shown at the bottom of the list of events. Typing a comment followed by Return registers the comment. It is shown when **Comments** or **Show All** is selected.
 
-* Specific consoles have additional functionality. For example, in the Sites console you can:
+* Specific consoles have additional functionality. For example, in the Sites console you can do the following:
 
   * [Save a version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
   * [Start a workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-These options are accessible via the chevron next to the **Comment** field.
+These options are accessible by way of the chevron next to the **Comment** field.
 
 ![Timeline](assets/bh-27.png)
 
 ### References {#references}
 
-**References** shows any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-authoring/author-environment-tools.md#showingpagereferences) for pages shows:
+**References** show any connections to the selected resource. For example, in the **Sites** console [references](/help/sites-authoring/author-environment-tools.md#showingpagereferences) for pages shows:
 
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
@@ -570,12 +567,12 @@ These options are accessible via the chevron next to the **Comment** field.
 * Content references:
 
     * links from other pages to the selected page
-    * content borrowed from and/or lent to the selected page by the Reference component
+    * content borrowed from, or lent, or both, to the selected page by the Reference component
 
 ![bh-28](assets/bh-28.png)
 
 ### Filter {#filter}
 
-This will open a panel similar to [search](/help/sites-authoring/search.md) with the appropriate location filters already set, allowing you to further filter the content you wish to view.
+This opens a panel similar to [search](/help/sites-authoring/search.md), with the appropriate location filters set, allowing you to further filter the content you wish to view.
 
 ![Filter](assets/bh-29.png)

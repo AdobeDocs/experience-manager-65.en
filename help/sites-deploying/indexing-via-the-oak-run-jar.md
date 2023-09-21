@@ -1,21 +1,21 @@
 ---
-title: Indexing via the Oak-run Jar
-description: Learn how to perform indexing via the Oak-run Jar.
+title: Indexing by way of the Oak-run Jar
+description: Learn how to perform indexing by way of the Oak-run Jar.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: dcec8c1b-13cc-486c-b1a4-62e6eb3184ad
 ---
-# Indexing via the Oak-run Jar {#indexing-via-the-oak-run-jar}
+# Indexing by way of the Oak-run Jar {#indexing-via-the-oak-run-jar}
 
 Oak-run supports all indexing use cases on the command line without having to operate from the JMX level. Advantages of the oak-run approach are:
 
 1. It is a new indexing toolset for AEM 6.4
-1. It decreases time-to-re-index which beneficially impacts re-index times on larger repositories
-1. It is reducing resource consumption during re-indexing in AEM which results in better system performance for other AEM activities
-1. Oak-run provides Out-of-band support: If production conditions do not let you run reindex on production instances, a cloned environment can be used for re-indexing to avoid critical performance impact.
+1. It decreases time-to-re-index which beneficially impacts reindex times on larger repositories
+1. It is reducing resource consumption during reindexing in AEM which results in better system performance for other AEM activities
+1. Oak-run provides Out-of-band support: If production conditions do not let you run reindex on production instances, a cloned environment can be used for reindexing to avoid critical performance impact.
 
-Below is a list of use cases that can be used when performing indexing operations via the `oak-run` tool.
+Below is a list of use cases that can be used when performing indexing operations by way of the `oak-run` tool.
 
 ## Index Consistency Checks {#indexconsistencychecks}
 
@@ -41,7 +41,7 @@ Below is a list of use cases that can be used when performing indexing operation
 
 ## Reindexing Approach Decision Tree {#reindexingapproachdecisiontree}
 
-This diagram is a decision tree for when to use the various re-indexing approaches.
+This diagram is a decision tree for when to use the various reindexing approaches.
 
 ![oak_-_reindexingwithoak-run](assets/oak_-_reindexingwithoak-run.png)
 
@@ -53,9 +53,9 @@ This diagram is a decision tree for when to use the various re-indexing approach
 
 ### Text Pre-extraction for SegmentNodeStore and DocumentNodeStore {#textpre-extraction}
 
-[Text pre-extraction](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (a feature that has existed with AEM 6.3) can be used to reduce the time to re-index. Text pre-extraction can be used with all re-indexing approaches.
+[Text pre-extraction](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (a feature that has existed with AEM 6.3) can be used to reduce the time to reindex. Text pre-extraction can be used with all reindexing approaches.
 
-Depending on the `oak-run.jar` indexing approach, there will be various steps on either side of the Perform Reindex step in the diagram below.
+Depending on the `oak-run.jar` indexing approach, there are various steps on either side of the Perform Reindex step in the diagram below.
 
 ![Text Pre-extraction for SegmentNodeStore and DocumentNodeStore](assets/4.png)
 
@@ -63,13 +63,13 @@ Depending on the `oak-run.jar` indexing approach, there will be various steps on
 >
 >Orange denotes activities where AEM must be in a maintenance window.
 
-### Online re-indexing for MongoMK or RDBMK using oak-run.jar {#onlinere-indexingformongomk}
+### Online reindexing for MongoMK or RDBMK using oak-run.jar {#onlinere-indexingformongomk}
 
 >[!NOTE]
 >
 >For more detailed information regarding this scenario, see [Reindex - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
 
-This is the recommended method for re-indexing MongoMK (and RDBMK) AEM installations. No other method should be used.
+This is the recommended method for reindexing MongoMK (and RDBMK) AEM installations. No other method should be used.
 
 Run this process only against a single AEM instance in the cluster.
 
@@ -87,7 +87,7 @@ Run this process only against a single AEM instance in the cluster.
 
 * **AEM Publish Farms (AE Publish Farms should always be TarMK)**
 
-    * For publish farm it needs to be done for all OR execute the steps on a single publish and then clone the setup for others (taking all the usual precations when cloning AEM instances; sling.id - should link to something here)
+    * For publish farm, it must be done for all OR execute the steps on a single publish. Then, clone the setup for others (taking all the usual precations when cloning AEM instances; sling.id - should link to something here).
 
 ### Online Re-Indexing for TarMK {#onlinere-indexingfortarmk}
 
@@ -107,7 +107,7 @@ This approach can be used if the time and performance effects to index are accep
 >
 >For more detailed information regarding this scenario, see [Online Reindex - SegmentNodeStore - The AEM Instance is Running](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-Online re-indexing of TarMK using the oak-run.jar is faster than the [Online Re-Indexing for TarMK](#onlinere-indexingfortarmk) described above. However, it also requires execution during a maintenance window; with the mention that the window will be shorter, and more steps are required to perform the re-indexing.
+Online reindexing of TarMK using the oak-run.jar is faster than the [Online Re-Indexing for TarMK](#onlinere-indexingfortarmk) described above. However, it also requires execution during a maintenance window; with the mention that the window is shorter, and more steps are required to perform the reindexing.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ Online re-indexing of TarMK using the oak-run.jar is faster than the [Online Re-
 >
 >For more detailed information regarding this scenario, see [Online Reindex - SegmentNodeStore - The AEM Instance is Shut Down](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-Offline re-indexing of TarMK is the simplest `oak-run.jar` based re-indexing approach for TarMK as it requires a single `oak-run.jar` comment. However, it requires the AEM instance to be shut down.
+Offline reindexing of TarMK is the simplest `oak-run.jar` based reindexing approach for TarMK as it requires a single `oak-run.jar` comment. However, it requires the AEM instance to be shut down.
 
 >[!NOTE]
 >
@@ -135,7 +135,7 @@ Offline re-indexing of TarMK is the simplest `oak-run.jar` based re-indexing app
 >
 >For more detailed information regarding this scenario, see [Out of Band Reindex - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
-Out-of-band re-indexing minimizes the impact of re-indexing on in-use AEM instances.
+Out-of-band reindexing minimizes the impact of reindexing on in-use AEM instances.
 
 >[!NOTE]
 >
@@ -153,20 +153,20 @@ Out-of-band re-indexing minimizes the impact of re-indexing on in-use AEM instan
 
 >[!NOTE]
 >
->ACS Ensure Index is a community supported project, and is not supported by Adobe Support.
+>ACS Ensure Index is a community-supported project, and is not supported by Adobe Support.
 
-This allows shipping index definition via content package which later results in re-indexing via setting the re-index flag to `true`. This works for smaller setups where re-indexing does not take long time.
+This allows shipping index definition by way of the  content package which later results in reindexing by way of the setting the reindex flag to `true`. This works for smaller setups where reindexing does not take a long time.
 
 For more info, see the [ACS Ensure Index documentation](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) for details.
 
 ### Creating and Updating index definitions on TarMK using oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-If the time or performance impact of re-indexing using non-`oak-run.jar` methods is too high, the following `oak-run.jar` based approach can be used to import and re-index Lucene Index definitions in a TarMK based AEM installation.
+If the time or performance impact of reindexing using non-`oak-run.jar` methods is too high, the following `oak-run.jar` based approach can be used to import and reindex Lucene Index definitions in a TarMK based AEM installation.
 
 ![Creating and Updating index definitions on TarMK using oak-run.jar](assets/10.png)
 
 ### Creating and Updating Index Definitions on MonogMK using oak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-If the time or performance impact of re-indexing using non-`oak-run.jar` methods is too high, the following `oak-run.jar` based approach can be used to import and re-index Lucene Index definitions in MongoMK based AEM installations.
+If the time or performance impact of reindexing using non-`oak-run.jar` methods is too high, the following `oak-run.jar` based approach can be used to import and reindex Lucene Index definitions in MongoMK based AEM installations.
 
 ![Creating and Updating Index Definitions on MonogMK using oak-run.jar](assets/11.png)

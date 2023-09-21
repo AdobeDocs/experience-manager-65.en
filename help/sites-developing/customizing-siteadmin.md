@@ -1,14 +1,10 @@
 ---
 title: Customizing the Websites Console (Classic UI)
-seo-title: Customizing the Websites Console (Classic UI)
 description: The Websites Administration console can be extended to display custom columns
-seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 ---
@@ -22,7 +18,7 @@ This step-by-step tutorial explains how to display a new column in the Websites 
 
 1. [Creating the OSGI service](#creating-the-osgi-service) and deploying the bundle containing it to the AEM server.
 1. (optional) [Testing the new service](#testing-the-new-service) by issuing a JSON call to request the JSON object that is used to build the console.
-1. [Displaying the new column](#displaying-the-new-column) by extending the nodes structure of the console in the repository.
+1. [Displaying the new column](#displaying-the-new-column) by extending the node structure of the console in the repository.
 
 >[!NOTE]
 >
@@ -45,7 +41,7 @@ The arguments for both methods are:
 * `info`, the JSON object to update, which is respectively the global list or the current list item,
 * `resource`, a Sling resource.
 
-The sample implementation below:
+The sample implementation is below:
 
 * Adds a *starred* property for each item, which is `true` if the page name starts with an *e*, and `false` otherwise.
 
@@ -102,13 +98,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* Your implementation should decide, based on the provided request and/or resource, whether it should add the information to the JSON object or not.
->* If your `ListInfoProvider` implementation defines a property that already exists in the response object, its value will be overwritten by the one you provide.
+>* If your `ListInfoProvider` implementation defines a property that exists in the response object, its value is overwritten by the one you provide.
 >
->  You can use [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) to manage the execution order of multiple `ListInfoProvider` implementations.
+>  You can use [service ranking](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) to manage the execution order of multiple `ListInfoProvider` implementations.
 
 ### Testing the New Service {#testing-the-new-service}
 
-When you open the Websites Administration console and browse through your site, the browser is issuing an ajax call to get the JSON object that is used to build the console. For example, when you browse to the `/content/geometrixx` folder, the following request is sent to the AEM server to build the console:
+When you open the Websites Administration console and browse through your site, the browser is issuing an Ajax call to get the JSON object that is used to build the console. For example, when you browse to the `/content/geometrixx` folder, the following request is sent to the AEM server to build the console:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
@@ -134,13 +130,13 @@ The last step consists in adapting the nodes structure of the Websites Administr
     * Remove **pageText**
 
     * Set **pathRegex** to `/content/geometrixx(/.*)?`
-      This will make the grid configuration active for all geometrixx websites.
+      This makes the grid configuration active for all Geometrixx websites.
 
     * Set **storeProxySuffix** to `.pages.json`
 
     * Edit the **storeReaderFields** multivalued property and add the `starred` value.
 
-    * To activate MSM functionality add the following MSM parameters to the multi-String property **storeReaderFields**:
+    * To activate MSM functionality, add the following MSM parameters to the multi-String property **storeReaderFields**:
 
         * **msm:isSource**
         * **msm:isInBlueprint**
@@ -154,10 +150,10 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
     * **xtype**: `gridcolumn` of type String
 
-1. (optional) Drop the columns you do not want to display at `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (optional) Drop the columns that you do not want to display at `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` is a vanity path that, as default, points to `/libs/wcm/core/content/siteadmin`.
-   To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin` define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. The default value is 300, so anything higher is suitable.
+   To redirect this to your version of siteadmin on `/apps/wcm/core/content/siteadmin`, define the property `sling:vanityOrder` to have a value higher than that defined on `/libs/wcm/core/content/siteadmin`. The default value is 300, so anything higher is suitable.
 
 1. Go to the Websites Administration console and navigate to the Geometrixx site:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -168,7 +164,7 @@ The last step consists in adapting the nodes structure of the Websites Administr
 
 >[!CAUTION]
 >
->If multiple grid configurations match the requested path defined by the **pathRegex** property, the first one will be used, and not the most specific one, which means that the order of the configurations is important.
+>If multiple grid configurations match the requested path defined by the **pathRegex** property, the first one is used, and not the most specific one, which means that the order of the configurations is important.
 
 ### Sample package {#sample-package}
 
