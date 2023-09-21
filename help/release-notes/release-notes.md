@@ -366,7 +366,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * **Page publishing not working in Page Editor after upgrading to Service Pack 18 (6.5.18.0)**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> After you upgrade an instance of AEM 6.5.0.0&mdash;6.5.17.0 to AEM 6.5.18.0, when you click **[!UICONTROL Publish Page]** inside the Page Editor, you are redirected to a URL that does not exist.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> After you upgrade an instance of AEM 6.5.0.0&mdash;6.5.17.0 to AEM 6.5.18.0, when you click **Publish Page** inside the Page Editor, you are redirected to a URL that does not exist.
 
   To work around this issue, do one of the following:
 
