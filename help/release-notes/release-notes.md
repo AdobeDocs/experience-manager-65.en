@@ -38,7 +38,7 @@ Some of the key features and enhancements in this release include the following:
 
 * Assets, Dynamic Media - [Multi-subtitle and multi-audio track support for videos in Dynamic Media](/help/assets/video.md#about-msma)&mdash;You can now easily add multiple subtitles and multiple audio tracks to a primary video. This capability means that your videos are accessible across a global audience. You can customize a single, published primary video to a global audience in multiple languages and adhere with accessibility guidelines for different geographical regions. Authors can also manage the subtitles and audio tracks from a single tab in the user interface.
 
-* Assets - From Search results, you can now navigate to the folder location that contains an asset, thereby letting you perform various asset management tasks. (ASSETS-23182) 
+* Assets - From Search results, you can now navigate to the folder location that contains an asset to let you perform various asset management tasks. (ASSETS-23182) 
 
 **Key Enhancements**
 
@@ -46,7 +46,7 @@ Some of the key features and enhancements in this release include the following:
 
 * Enabled Sites Page Editor/Image Component user to reference assets from the remote Assets Cloud Service. (SITES-13448, SITES-13433) 
 
-* To quickly find a project in List view where you may have many projects in your system, Adobe now provides support for server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) 
+* To quickly find a project in List view, where you may have many projects in your system, Adobe now supports server-side sorting. Project nodes are sorted on the backend based on the column selected by the user before rendering them in the user interface. (NPR-41027) 
 
 * AEM 6.5.18.0 supports MongoDB 5.0 to 6.0.
 
@@ -56,27 +56,27 @@ Some of the key features and enhancements in this release include the following:
 
 **Forms**
 
-* **[Enhanced error handling with custom error handlers in the rule editor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** You can now invoke a custom function (using Client Library) in response to an error returned by an external service and provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down 
+* **[Enhanced error handling with custom error handlers in the rule editor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** &ndash; You can now invoke a custom function (using Client Library) in response to an error returned by an external service. And, you can provide a tailored response to end users. Or, you can take specific actions for errors returned by a service. For example, you can invoke a custom workflow in the backend for specific error codes or inform the customer that the service is down 
 
-* **[Enhanced Adobe Sign Workflow step](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** Adobe Sign workflow step in AEM Workflows is available with the following enhancements.  
+* **[Enhanced Adobe Sign Workflow step](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** &ndash; Adobe Sign workflow step in AEM Workflows is available with the following enhancements.  
 
-   * **Enhanced Security with Government ID-Based Authentication for Adobe Sign:** Adobe Acrobat Sign's Government ID-Based Authentication offers an additional layer of verification by enabling users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By using trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
+   * **Enhanced Security with Government ID-Based Authentication for Adobe Sign** &ndash; Adobe Acrobat Sign's Government ID-Based Authentication offers an additional layer of verification. It enables users to authenticate their identity using government-issued IDs (driver's license, national ID, passport). By using trusted identification documents, this enhancement adds an extra level of confidence to the signing process, making it ideal for scenarios that require heightened security, compliance, and user validation. 
    
-   * **Enhanced Transparency with Audit Trail for Adobe Sign Documents:** Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements.  
+   * **Enhanced Transparency with Audit Trail for Adobe Sign Documents** &ndash; Use the Audit Trail feature for detailed insights into the lifecycle of your Adobe Sign documents. With the Audit Trail, you can now maintain a comprehensive record of all actions and interactions related to your documents. This includes details such as who viewed, edited, or signed the document, along with timestamps for each event. This enhancement is crucial for maintaining compliance, resolving disputes, and ensuring the integrity of your digital agreements.  
 
  
-   * **Expanded the roles for Agreement recipients beyond just the Signer:** Adobe Acrobat Sign have the option to expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement have their role individually configurable, with Signer being the default. 
+   * **Expanded the roles for Agreement recipients beyond just the Signer** &ndash; Adobe Acrobat Sign lets you expand the roles for Agreement recipients beyond just the Signer to better match their workflow requirements. When enabled, each recipient in an Agreement has their role individually configurable, with Signer being the default. 
 
  
-* **[AEM Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
-  * Microsoft® Windows Server 2022 
-  * Microsoft® Active Directory 2022 
+* **[AEM Forms on JEE full installer](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** &ndash; The service pack brings a full installer for AEM Forms on JEE that brings support for multiple new software combinations, including: 
+  * Microsoft&reg; Windows Server 2022 
+  * Microsoft&reg; Active Directory 2022 
   * Oracle WebLogic 14C on Windows Server 2022
-  * Red Hat® JBoss® 7.4.10 
+  * Red Hat&reg; JBoss&reg; 7.4.10 
   * MongoDB 4.4 
   * MySQL JDBC Connector 8 
 
-If you are performing a fresh installation or planning to use the latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer. To explore the complete list of newly added and deprecated software, refer to the documentation for AEM Forms on JEE or AEM Forms on OSGi. 
+If you are installing or planning to use the latest software for your AEM 6.5 Forms on JEE environment, Adobe recommends using AEM 6.5.18.0 Forms on JEE full installer. To explore the complete list of newly added and deprecated software, refer to the documentation for AEM Forms on JEE or AEM Forms on OSGi. 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -159,14 +159,14 @@ If you are performing a fresh installation or planning to use the latest softwar
 
 * **Document Services**
   * When a user uses a transformPDF service, it fails with an exception: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957) 
-  * If the server is shut down during PDF document generation, post-server startup job processing errors are thrown. The argument -Dcom.adobe.livecycle.dsc.deferServiceStart=true needs to be added during server startup. (FORMS-9836)
+  * If the server is shut down during PDF document generation, post-server startup job processing errors are thrown. The argument -Dcom.adobe.livecycle.dsc.deferServiceStart=true must be added during server startup. (FORMS-9836)
   * If a user tries to merge PDFs using the AssemblerService.Invoke method, the assembler fails to perform the task. (FORMS-9550) 
   * When you upgrade to AEM 6.5.15.0 Service Pack on OSGI and JEE environments, the Assembler service using a specific template stops working. (FORMS-9355, FORMS-9445, FORMS-9408) 
-  * Java™ garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, as the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035) 
-  * While rendering the PDF preview of an Adaptive Form, the unwanted Java™ stack dumps appear in the error logs. (FORMS-8865)
+  * Java&trade; garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, as the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035) 
+  * While rendering the PDF preview of an Adaptive Form, the unwanted Java&trade; stack dumps appear in the error logs. (FORMS-8865)
   * When a user reviews the document status for documents in the document details section, it is not displayed correctly. (FORMS-8946, FORMS-10424)
   * When a user upgrades to AEM Forms and uses the sendToPrinter service, there is a continuous increase in heap utilization. (FORMS-10148) 
-  * On JBoss® 7.4 EAP server, the email functionality fails with `java.io.IOException`. (FORMS-10138)
+  * On JBoss&reg; 7.4 EAP server, the email functionality fails with `java.io.IOException`. (FORMS-10138)
   * When a user uses the transformPDF service, it fails with an error: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
   * After upgrading to AEM Service Pack 6.5.14.0, the issue arises in the assembler service when using a specific template. (FORMS-9445, FORMS-9408)
   <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
@@ -174,7 +174,7 @@ If you are performing a fresh installation or planning to use the latest softwar
   * When a user tries to call a custom function without modifying a field, such as setting the value of another field, it fails. (FORMS-9921) 
   * While working with the custom error function for the Rule Editor in an Adaptive Form, the following errors occur: 
     * When a user tries to use @param{boolean} with a function, the rule editor does not allow Boolean values to pass to a function. 
-    * When a user tries to use @param{string} with a function, the rule editor fails to pass the optional values and gives a warning of incomplete rules. (FORMS-9816, FORMS-9815) 
+    * When a user tries to use @param{string} with a function, the rule editor fails to pass the optional values and warns of incomplete rules. (FORMS-9816, FORMS-9815) 
   * The forms-user group fails to call the Rule Editor twice in an Adaptive Form. (FORMS-9051) 
   * In a visual editor, when a user selects a Form object then whole field instance object is passed to the custom function instead of just the value of the field. (FORMS-10015) 
   * When a user creates a core component-based Adaptive Form and adds a text input component, `Is Empty` and `Is Not Empty` do not work in the Rule editor. (FORMS-10098)
@@ -182,7 +182,7 @@ If you are performing a fresh installation or planning to use the latest softwar
   * When a user tries to create an Adaptive Form using a complex JSON schema, it fails. The error occurs as: 
   `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639) 
   * In an Adaptive Form, when a user disables the "I agree to the terms & conditions" checkbox, it gets enabled again when the user scrolls down. (FORMS-9458) 
-  * When a user opens an Adaptive Form on an Android™ Device using Google Chrome/Firefox and enters the maximum allowed characters in a Textbox, the value in the textbox fails to clear. (FORMS-9354) 
+  * When a user opens an Adaptive Form on an Android&trade; device, using Google Chrome/Firefox, and enters the maximum allowed characters in a Textbox, the value in the textbox fails to clear. (FORMS-9354) 
   * When the label of the checkbox includes special characters like ',', '/', or '.', clicking the text/label does not select the respective checkbox. (FORMS-9313) 
   * When a user tries to validate the Terms and Conditions component, it fails to validate if the component is not in focus while the other component gets validated. (FORMS-8725, FORMS-8913) 
   * If an Adaptive Form is reloaded after upgrading to AEM 6.5.16.0 Service Pack, the file attachment retrieval fails. (FORMS-8906) 
@@ -198,7 +198,7 @@ If you are performing a fresh installation or planning to use the latest softwar
     * When a user signs in the signature dialog box using a brush or keyboard, pressing the Enter key does not close the dialog box. 
     * The clear signature confirmation dialog cannot be accessed using a keyboard. 
     * The screen reader fails to read information entered in a dialog box.
-    * It is not possible to clear the signature without using a mouse.  (FORMS-9317) 
+    * It is not possible to clear the signature without using a mouse. (FORMS-9317) 
   * When a user submits an Adaptive Form, the screen reader fails to read error messages for the mandatory fields. (FORMS-9316) 
   * When a screen reader reads an HTML form, the issue occurs while reading the text with kerning (spacing). (FORMS-9258) 
   * In an Adaptive Form, the references/footnotes linked to the text are not called out using the screen reader. (FORMS-8920) 
@@ -230,7 +230,7 @@ If you are performing a fresh installation or planning to use the latest softwar
 #### Platform{#foundation-platform-6518}
 
 * After a vanilla Experience Manager, Service Pack 17 install, you see errors in the `stderr.log`. Vanilla installs should not get errors. (CQ-4353637) 
-* Create button in the Tagging screen not respecting ACL (Access Control List). (NPR-40973) 
+* The Create button in the Tagging screen not respecting ACL (Access Control List). (NPR-40973) 
 * Unable to create, or access, or both, cache node of ContextHub on Experience Manager. (NPR-40515) 
 
 #### Replication{#foundation-replication-6518}
@@ -364,7 +364,23 @@ See [Deprecated and removed features](/help/release-notes/deprecated-removed-fea
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* Related to Oak
+* **Page publishing not working in Page Editor after upgrading to Service Pack 18 (6.5.18.0)**
+
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> After you upgrade an instance of AEM 6.5.0.0&mdash;6.5.17.0 to AEM 6.5.18.0, when you click **[!UICONTROL Publish Page]** inside the Page Editor, you are redirected to a URL that does not exist.
+
+  To work around this issue, do one of the following:
+
+  * Remove the following "path" property.
+
+       `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+
+  * Paste the correct URL directly into the browser.
+
+       `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+
+
+
+* **Related to Oak**
   From Service Pack 13 and above, the following error log has begun to appear which affects the persistence cache:
 
   ```shell
@@ -435,13 +451,13 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 #### Supported platforms 
 
 * JDK versions higher than 1.8.0_281 are not supported for WebLogic JEE server. (FORMS-8498, CQDOC-20383)
-* As [!DNL Microsoft®&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss®&reg; EAP 7.1], [!DNL Microsoft®&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* As [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer. (FORMS-10659)
 
 #### Installation 
 
 * On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
-* After installing AEM Service Pack 6.5.18.0 full installer, the EAR deployment fails on JEE using JBoss® Turnkey (CQDOC-20803). 
+* After installing AEM Service Pack 6.5.18.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey (CQDOC-20803). 
 To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager.
 
 #### Adaptive Forms
@@ -457,7 +473,7 @@ To resolve the issue, locate the `<AEM_Forms_Installation_dir>\jboss\bin\standal
 To resolve the issue, perform the following steps:
 
   1. Download [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) from SD link.
-  1. Extract the Hotfix archive file to obtain an Experience Manager package (.zip) and bundle (.jar) files.
+  1. Extract the Hotfix archive file so you can obtain an Experience Manager package (.zip) and bundle (.jar) files.
   1. Upload and install the package (.zip) via the Package Manager.
   1. Open the configuration manager bundles `https://server:host/system/console/bundles`, upload, and install the bundle (.jar). 
 
