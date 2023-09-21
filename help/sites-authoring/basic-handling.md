@@ -182,7 +182,7 @@ The header is always present at the top of the screen. While most options in the
 
   Appears in the middle of the rail, and always showing the description of the currently selected item, the breadcrumbs let you navigate within a specific console. In the Sites console, you can navigate through the levels of your website.
 
-  Clicking the breadcrumb text opens a drop-down that lists the levels of the hierarchy of the currently selected item. Click an entry to jump to that location.
+  Clicking the breadcrumb text opens a drop-down that lists the levels of the hierarchy of the currently selected item. To jump to that location, click an entry.
 
   ![Hierarchy levels](assets/bh-06.png)
 
@@ -190,7 +190,7 @@ The header is always present at the top of the screen. While most options in the
 
   ![Analytics time period](assets/screen_shot_2018-03-23at104126.png)
 
-  This is available in list view only. For more information, see [list view](#list-view).
+  This is available in list view only. For more information, see the [list view](#list-view).
 
 * **Create** button
 
@@ -238,11 +238,11 @@ There are various help resources available:
 
   Navigate this overview as you would the [product navigation overview](/help/sites-authoring/basic-handling.md#product-navigation) when first accessing any console.
 
-  From the **Page Information** menu, you can **[select **Help**](/help/sites-authoring/author-environment-tools.md#accessing-help) to show this again at any time.
+  From the **Page Information** menu, you can select [**Help**](/help/sites-authoring/author-environment-tools.md#accessing-help) to show this again at any time.
 
 * **Tools Console**
 
-  From the **Tools** console you can also access the external **Resources**:
+  From the **Tools** console, you can also access the external **Resources**:
 
   * **Documentation**
     View the Web Experience Management documentation
@@ -254,7 +254,7 @@ There are various help resources available:
   >
   >You can access an overview of shortcut keys available at any time using the hotkey `?` (question mark) when in a console.
   >
-  >For an overview of all keyboard shortcuts see the following documentation:
+  >For an overview of all keyboard shortcuts, see the following:
   >
   >* [Keyboard shortcuts for editing pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >* [Keyboard shortcuts for consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -263,15 +263,15 @@ There are various help resources available:
 
 Whenever a resource is selected (for example, a page or an asset), various actions are indicated by icons with explanatory text in the toolbar. These actions are dependent on:
 
-* The current console.
-* The current context.
-* If you are in [selection mode](#navigatingandselectionmode) or not.
+* The current console
+* The current context
+* If you are in [selection mode](#navigatingandselectionmode) or not
 
 The actions available in the toolbar change to reflect the actions you can take on the specific items selected.
 
 How you [select a resource](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) depends on the view.
 
-Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens additional options appears. Clicking or tapping on the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
+Due to the space restrictions in some windows, the toolbar can quickly become longer than the space available. When this happens, additional options appear. Clicking or tapping the ellipsis (the three dots or **...**) opens a drop-down selector holding all remaining actions. For example, after selecting a page in the **Sites** console:
 
 ![Actions Toolbar](assets/bh-12.png)
 
@@ -281,9 +281,9 @@ Due to the space restrictions in some windows, the toolbar can quickly become lo
 
 ## Quick Actions {#quick-actions}
 
-In [Card View](#cardviewquickactions) certain actions are available as quick action icons as well as being on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
+In [Card View](#cardviewquickactions), certain actions are available as quick action icons and on the toolbar. Quick action icons are available for a single item at a time and eliminate the need for you to preselect.
 
-The quick actions are visible when you mouseover (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
+The quick actions are visible when you mouse over (desktop device) a resource card. The quick actions available can depend on the console and context. For example, here are the quick actions for a page in the **Sites** console:
 
 ![Quick Actions](assets/bh-13.png)
 
@@ -304,7 +304,7 @@ You can view, navigate through, and select (for further action) your resources w
 
 ### Selecting Resources {#selecting-resources}
 
-Selecting a specific resource is dependent on a combination of the view and the device:
+Selecting a specific resource depends on a combination of the view and the device:
 
 <table>
  <tbody>
@@ -359,9 +359,9 @@ Selecting a specific resource is dependent on a combination of the view and the 
 
 You can select all items in any view by clicking the **Select All** option at the top-right corner of the console.
 
-* In **Card View** all cards are selected.
-* In **List View** all items in the list are selected.
-* In **Column View** all items in the leftmost column are selected.
+* In **Card View**, all cards are selected.
+* In **List View**, all items in the list are selected.
+* In **Column View**, all items in the leftmost column are selected.
 
 ![Select All](assets/screen-shot_2019-03-05at094659.png)
 
@@ -385,9 +385,9 @@ In all views, all items can be deselected by tapping escape on the keyboard if y
 
    ![Select - Card view](assets/bh-15.png)
 
-1. Once you have selected a resource the top header is covered by the [actions toolbar](#actionstoolbar) that provides access to actions currently applicable to the selected resource.
+1. When you have selected a resource, the top header is covered by the [actions toolbar](#actionstoolbar) that provides access to actions currently applicable to the selected resource.
 
-   To exit selection mode select the **X** to the top-right, or use **escape**.
+   To exit selection mode, select the **X** to the top-right, or use **escape**.
 
 ### Column View {#column-view}
 
@@ -397,16 +397,16 @@ The column view allows for a visual navigation of a content tree through a serie
 
 Selecting a resource in the leftmost column displays the child resources in a column to the right. Selecting a resource in the right column displays the child resources in another column to the right and so on.
 
-* You can navigate up and down in the tree by tapping or clicking on the resource name or the chevron to the right of the resource name.
+* You can navigate up and down in the tree by tapping or clicking the resource name or the chevron to the right of the resource name.
 
   * The resource name and chevron is highlighted when tapped or clicked.
 
     ![Column View](assets/bh-17.png)
 
   * The children of the clicked/tapped resource are displayed in the column to the right of the clicked/tapped resource.
-  * If you tap or click on a resource name that has no children, its details are displayed in the final column.
+  * If you tap or click a resource name that has no children, its details are displayed in the final column.
 
-* Tapping or clicking on the thumbnail selects the resource.
+* Tapping or clicking the thumbnail selects the resource.
 
   * When selected, a checkmark is overlaid on the thumbnail and the resource name is highlighted, too.
   * The details of the selected resource is shown in the final column.
@@ -456,12 +456,12 @@ Selecting a resource in the leftmost column displays the child resources in a co
 
   * When all items in the list are selected, this checkbox appears checked.
 
-    * Click or tap the checkbox to deselect all.
+    * To deselect all, click or tap the checkbox.
 
   * When only some items are selected, it appears with a minus sign.
 
-    * Click or tap the checkbox to select all.
-    * Click or tap the checkbox again to deselect all.
+    * To select all, click or tap the checkbox.
+    * To deselect all, click or tap the checkbox again.
 
 * Select the columns to be shown using the **View Settings** option located under the Views button. The following columns are available for display:
 
@@ -469,7 +469,7 @@ Selecting a resource in the leftmost column displays the child resources in a co
   * **Modified** - Last modified date and last modified by user
   * **Published** - Publication status
   * **Template** - Template on which the page is based
-  * **Workflow** - Workflow currently applied to the page. More information is available when you mouseover, or open Timeline.
+  * **Workflow** - Workflow currently applied to the page. More information is available when you mouse over, or open Timeline.
 
   * **Page analytics**
   * **Unique visitors**
@@ -477,7 +477,7 @@ Selecting a resource in the leftmost column displays the child resources in a co
 
   ![View Settings - Configure Columnas](assets/bh-21.png)
 
-  By default the **Name** column is shown, which makes up part of the URL for the page. In some cases the author might need to access ages that are in a different language and seeing the name of the page (which usually is unchanging) can be of great help if the author does not know the language of the page.
+  By default the **Name** column is shown, which makes up part of the URL for the page. Sometimes the author must access pages that are in a different language. Seeing the name of the page (which usually is unchanging) can be of great help if the author does not know the language of the page.
 
 * Change the order of items using the dotted vertical bar at the far right of each item in the list.
 
@@ -515,7 +515,7 @@ If content only is selected, then only the rail icon appears. When any other opt
 
 The content tree can be used to quickly navigate the site hierarchy within the side panel and view much information about the pages in the current folder.
 
-Using the content tree side panel in conjunction with a list view or cards view, users can easily see the hierarchical structure of the project and navigate easily across the content structure with the content tree side-panel, as well as view detailed page information in the list view.
+Using the content tree side panel with a list view or cards view, users can easily see the hierarchical structure of the project. They can easily navigate across the content structure with the content tree side-panel, and view detailed page information in the list view.
 
 ![Content Tree](assets/bh-26.png)
 
@@ -527,7 +527,7 @@ Using the content tree side panel in conjunction with a list view or cards view,
 
 ### Timeline {#timeline}
 
-The timeline can be used to view and/or initiate events that have occurred on the selected resource. To open the timeline column use the rail selector:
+The timeline can be used to view and/or initiate events that have occurred on the selected resource. To open the timeline column, use the rail selector:
 
 The timeline column lets you:
 
@@ -542,7 +542,7 @@ The timeline column lets you:
     * [Versions](/help/sites-authoring/working-with-page-versions.md)
     * [Workflows](/help/sites-authoring/workflows-applying.md)
 
-       * with the exception of [transient workflows](/help/sites-developing/workflows.md#transient-workflows) as no history information is saved for these
+       * except for [transient workflows](/help/sites-developing/workflows.md#transient-workflows) because no history information is saved for these
 
     * and Show All
 

@@ -1,6 +1,6 @@
 ---
 title: Oak Queries and Indexing
-description: Learn how to configure indexes in AEM.
+description: Learn how to configure indexes in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -17,7 +17,7 @@ exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 
 ## Introduction {#introduction}
 
-Unlike Jackrabbit 2, Oak does not index content by default. Custom indexes must be created when necessary, much like with traditional relational databases. If there is no index for a specific query, possibly many nodes will be traversed. The query may still work but probably be quite slowly.
+Unlike Jackrabbit 2, Oak does not index content by default. Custom indexes must be created when necessary, much like with traditional relational databases. If there is no index for a specific query, many nodes are possibly traversed. The query may still work but it is likely slow.
 
 If Oak encounters a query without an index, a WARN level log message is printed:
 
@@ -36,7 +36,7 @@ The Oak query engine supports the following languages:
 
 ## Indexer types and cost calculation {#indexer-types-and-cost-calculation}
 
-The Apache Oak based backend allows different indexers to be plugged into the repository.
+The Apache Oak-based backend allows different indexers to be plugged into the repository.
 
 One indexer is the **Property Index**, for which the index definition is stored in the repository itself.
 
@@ -58,7 +58,7 @@ Next, each index is consulted to estimate the cost for the query. Once that is c
 
 >[!NOTE]
 >
->For a large repository, building an index is a time consuming operation. This is true for both the initial creation of an index, and reindexing (rebuilding an index after changing the definition). See also [Troubleshooting Oak Indexes](/help/sites-deploying/troubleshooting-oak-indexes.md) and [Preventing Slow Reindexing](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>For a large repository, building an index is a time-consuming operation. This is true for both the initial creation of an index, and reindexing (rebuilding an index after changing the definition). See also [Troubleshooting Oak Indexes](/help/sites-deploying/troubleshooting-oak-indexes.md) and [Preventing Slow Reindexing](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 If reindexing is needed in large repositories, specially when using MongoDB and for full-text indexes, consider text pre-extraction, and using oak-run to build the initial index and to reindex.
 
@@ -78,7 +78,7 @@ The Property Index is useful for queries that have property constraints but are 
     * **type:**  `property` (of type String)
     * **propertyNames:**  `jcr:uuid` (of type Name)
 
-   This particular example will index the `jcr:uuid` property, whose job is to expose the universally unique identifier (UUID) of the node it is attached to.
+   This particular example indexes the `jcr:uuid` property, whose job is to expose the universally unique identifier (UUID) of the node it is attached to.
 
 1. Save the changes.
 
@@ -86,11 +86,11 @@ The Property Index has the following configuration options:
 
 * The **type** property specifies the type of index, and in this case it must be set to **property**
 
-* The **propertyNames** property indicates the list of the properties that will be stored in the index. In case it is missing, the node name is used as a property name reference value. In this example, the **jcr:uuid** property whose job is to expose the unique identifier (UUID) of its node is added to the index.
+* The **propertyNames** property indicates the list of the properties that are stored in the index. In case it is missing, the node name is used as a property name reference value. In this example, the **jcr:uuid** property whose job is to expose the unique identifier (UUID) of its node is added to the index.
 
 * The **unique** flag which, if set to **true** adds a uniqueness constraint on the property index.
 
-* The **declaringNodeTypes** property lets you specify a certain node type that the index will only apply to.
+* The **declaringNodeTypes** property lets you specify a certain node type that the index only applies to.
 * The **reindex** flag which if set to **true**, triggers a full content reindex.
 
 ### The Ordered Index {#the-ordered-index}
@@ -101,13 +101,13 @@ The Ordered index is an extension of the Property index. However, it has been de
 
 A full text indexer based on Apache Lucene is available in AEM 6.
 
-If a full-text index is configured, then all queries that have a full-text condition use the full-text index, no matter if there are other conditions that are indexed, and no matter if there is a path restriction.
+If a full-text index is configured, all queries that have a full-text condition use the full-text index, no matter if there are other conditions that are indexed, and no matter if there is a path restriction.
 
-If no full-text index is configured, then queries with full-text conditions will not work as expected.
+If no full-text index is configured, then queries with full-text conditions do not work as expected.
 
-Because the index is updated via an asynchronous background thread, some full-text searches are unavailable for a small window of time until the background processes are finished.
+Because the index is updated by way of an asynchronous background thread, some full-text searches are unavailable for a small window of time until the background processes are finished.
 
-You can configure a Lucene full-text index, by following the below procedure:
+You can configure a Lucene full-text index by following the below procedure:
 
 1. Open CRXDE and create a node under **oak:index**.
 1. Name the node **LuceneIndex** and set the node type to **oak:QueryIndexDefinition**
@@ -128,11 +128,11 @@ The Lucene Index has the following configuration options:
 
 ### Understanding Fulltext Search {#understanding-fulltext-search}
 
-The documentation in this section applies to Apache Lucene, ElasticSearch, as well as fulltext indexes of, for example, PostgreSQL, SQLite, MySQL. The following example is for AEM / Oak / Lucene.
+The documentation in this section applies to Apache Lucene, ElasticSearch, and fulltext indexes of PostgreSQL, SQLite, and MySQL, for example. The following example is for AEM / Oak / Lucene.
 
 <b>Data to be indexed</b>
 
-The starting point is the data that needs to be indexed. Take the following documents, as an example:
+The starting point is the data that must be indexed. Take the following documents, as an example:
 
 | <b>Document ID</b> | <b>Path</b> | <b>Fulltext</b> |
 | --- | --- | --- |
@@ -143,11 +143,11 @@ The starting point is the data that needs to be indexed. Take the following docu
 
 <b>Inverted index</b>
 
-The indexing mechanism splits the fulltext into words called "tokens", and builds an index called "inverted index". This index contains, the list of documents where it appears for each word. 
+The indexing mechanism splits the fulltext into words called "tokens", and builds an index called "inverted index". This index contains the list of documents where it appears for each word. 
 
-Very short, common words (also called "stopwords") are not indexed. All tokens are converted to lowercase, and stemming is applied.
+Short, common words (also called "stopwords") are not indexed. All tokens are converted to lowercase, and stemming is applied.
 
-Notice special characters such as *"-"* are not indexed.
+Special characters such as *"-"* are not indexed.
 
 | <b>Token</b> | <b>Document IDs</b> |
 | --- | --- |
@@ -155,12 +155,12 @@ Notice special characters such as *"-"* are not indexed.
 | brand | ..., 100,... |
 | cube | ..., 200, 300,... |
 | dimension | 300 |
-| finnish | ..., 100,... |
+| finish | ..., 100,... |
 | invent | 200 |
 | object | ..., 300,... |
-| rubik | .., 100, 200,... |
+| rubik | ..., 100, 200,... |
 
-The list of documents is sorted. This will become handy when querying.
+The list of documents is sorted. This is handy when querying.
 
 <b>Searching</b>
 
@@ -176,7 +176,7 @@ The words are tokenized and filtered in the same way as when indexing (single ch
 +:fulltext:rubik +:fulltext:cube
 ```
 
-The index will then consult the list of documents for those words. If there are many documents, the lists can be very large. As an example, let us presume they contain the following:
+The index consults the list of documents for those words. If there are many documents, the list can be large. As an example, presume they contain the following:
 
 
 | <b>Token</b> | <b>Document IDs</b> |
@@ -185,7 +185,7 @@ The index will then consult the list of documents for those words. If there are 
 | cube | 30, 200, 300, 2000 |
 
 
-Lucene will flip back-and-forth between the two lists (or round-robin `n` lists, when searching for `n` words):
+Lucene flips back-and-forth between the two lists (or round-robin `n` lists, when searching for `n` words):
 
 * Read in the "rubik" gets the first entry: it finds 10
 * Read in the "cube" gets the first entry `>` = 10. 10 is not found, then the next one is 30.
@@ -195,7 +195,7 @@ Lucene will flip back-and-forth between the two lists (or round-robin `n` lists,
 * Read in the "rubik" gets the next entry: 1000.
 * Read in the "cube" gets the first entry `>` = 1000: it finds 2000.
 * Read in the "rubik" gets the first entry `>` = 2000: end of the list.
-* Finally, we can stop searching.
+* Finally, you can stop searching.
 
 The only document found that contains both terms is 200, as in the example below:
 
@@ -248,7 +248,7 @@ Once the node has been created, add the following properties:
 
 >[!NOTE]
 >
->Compared to the regular Property Index, the Lucene Property Index is always configured in async mode. Thus, the results returned by index may not always reflect the most up-to-date state of the repository.
+>Compared to the regular Property Index, the Lucene Property Index is always configured in async mode. Thus, the results returned by the index may not always reflect the most up-to-date state of the repository.
 
 >[!NOTE]
 >
@@ -260,7 +260,7 @@ Since version 1.2.0, Oak supports Lucene analyzers.
 
 Analyzers are used both when a document is indexed, and at query time. An analyzer examines the text of fields and generates a token stream. Lucene analyzers are composed of a series of tokenizer and filter classes.
 
-The analyzers can be configured via the `analyzers` node (of type `nt:unstructured`) inside the `oak:index` definition.
+The analyzers can be configured by way of the `analyzers` node (of type `nt:unstructured`) inside the `oak:index` definition.
 
 The default analyzer for an index is configured in the `default` child of the analyzers node.
 
@@ -294,14 +294,14 @@ If you wish to use any out of the box analyzer, you can configure it following t
 
    If `luceneMatchVersion` is not provided, Oak uses the version of Lucene it is shipped with.
 
-1. If you wish to add a stopwords file to the analyzer configurations, you can create a node under the `default` one with the following properties:
+1. If you want to add a stopwords file to the analyzer configurations, you can create a node under the `default` one with the following properties:
 
     * **Name:** `stopwords`
     * **Type:** `nt:file`
 
-#### Creating Analyzers via Composition {#creating-analyzers-via-composition}
+#### Creating Analyzers by way of Composition {#creating-analyzers-via-composition}
 
-Analyzers can also be composed based on `Tokenizers`, `TokenFilters` and `CharFilters`. You can do this by specifying an analyzer and creating children nodes of its optional tokenizers and filters which will be applied in listed order. See also [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Analyzers can also be composed based on `Tokenizers`, `TokenFilters`, and `CharFilters`. You can do this by specifying an analyzer and creating children nodes of its optional tokenizers and filters that are applied in listed order. See also [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Consider this node structure as an example:
 
@@ -341,7 +341,7 @@ Consider this node structure as an example:
 
                     * **Type:** `nt:file`
 
-The name of the filters, charFilters and tokenizers are formed by removing the factory suffixes. Thus:
+The name of the filters, charFilters, and tokenizers are formed by removing the factory suffixes. Thus:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` becomes `standard`
 
@@ -349,9 +349,9 @@ The name of the filters, charFilters and tokenizers are formed by removing the f
 
 * `org.apache.lucene.analysis.core.StopFilterFactory` becomes `Stop`
 
-Any configuration parameter required for the factory is specified as property ofthenode in question.
+Any configuration parameter required for the factory is specified as the property of the node in question.
 
-For cases such as loading stop words where content from external files needs to be loaded, the content can be provided by creating a child node of `nt:file` type for the file in question.
+For cases such as loading stop words where content from external files must be loaded, the content can be provided by creating a child node of `nt:file` type for the file in question.
 
 ### The Solr Index {#the-solr-index}
 
@@ -365,7 +365,7 @@ It can be configured to work as a remote server with the AEM instance.
 
 AEM can also be configured to work with a remote Solr server instance:
 
-1. Download and extract the latest version of Solr. For more info on how to do this, see [Apache Solr Installation documentation](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Download and extract the latest version of Solr. For more info on how to do this, see the [Apache Solr Installation documentation](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Now, create two Solr shards. You can do this by creating folders for each shard in the folder where Solr has been unpacked:
 
     * For the first shard, create the folder:
@@ -393,7 +393,7 @@ AEM can also be configured to work with a remote Solr server instance:
 
    >[!NOTE]
    >
-   >For more info on Solr and ZooKeeper configuration, consult the [Solr Configuration documentation](https://wiki.apache.org/solr/ConfiguringSolr) and the [ZooKeeper Getting Started Guide](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >For more info on Solr and ZooKeeper configuration, consult the [Solr Configuration documentation](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) and the [ZooKeeper Getting Started Guide](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
 1. Start the first shard with ZooKeeper support by going to `aemsolr1\node1` and running the following command:
 
@@ -428,7 +428,7 @@ AEM can also be configured to work with a remote Solr server instance:
 
 Below is an example of a base configuration that can be used with all three Solr deployments described in this article. It accommodates the dedicated property indexes that are already present in AEM and should not be used with other applications.
 
-To properly use it, you must place the contents of the archive directly in the Solr Home Directory. In the case of multi-node deployments, it should go directly under the root folder of each node.
+To properly use it, you must place the contents of the archive directly in the Solr Home Directory. If there are multi-node deployments, it should go directly under the root folder of each node.
 
 Recommended Solr configuration files
 
@@ -445,7 +445,7 @@ You can now reach them by going to **Tools - Operations - Dashboard - Diagnosis*
 
 For more information on how to use them, see the [Operations Dashboard documentation](/help/sites-administering/operations-dashboard.md).
 
-#### Creating Property Indexes via OSGi {#creating-property-indexes-via-osgi}
+#### Creating Property Indexes by way of OSGi {#creating-property-indexes-via-osgi}
 
 The ACS Commons package also exposes OSGi configurations that can be used to create property indexes.
 
@@ -461,7 +461,7 @@ This section presents a set of recommendations on what must be done to track dow
 
 #### Preparing Debugging Info for Analysis {#preparing-debugging-info-for-analysis}
 
-The easiest way to get required information for the query being executed is via the [Explain Query tool](/help/sites-administering/operations-dashboard.md#explain-query). This lets you collect the precise information that is needed to debug a slow query without the need to consult the log level information. This is desirable if you know the query that is being debugged.
+The easiest way to get the required information for the query being run is by way of the [Explain Query tool](/help/sites-administering/operations-dashboard.md#explain-query). This lets you collect the precise information that is needed to debug a slow query without the need to consult the log level information. This is desirable if you know the query that is being debugged.
 
 If this is not possible for any reason, you can gather the indexing logs in a single file and use it to troubleshoot your particular problem.
 
@@ -477,7 +477,7 @@ The **com.day.cq.search** category is only applicable if you are using the AEM p
 
 >[!NOTE]
 >
->It is important that the logs are only set to DEBUG for the duration the query you want to troubleshoot is being run. Otherwise, a large amount of events are generated in the logs over time. Because of this, once the required logs are collected switch back to INFO level logging for the categories mentioned above.
+>It is important that the logs are only set to DEBUG for the duration the query you want to troubleshoot is being run. Otherwise, many events are generated in the logs over time. Because of this, once the required logs are collected switch back to INFO level logging for the categories mentioned above.
 
 You can enable logging by following this procedure:
 
@@ -513,7 +513,7 @@ Sometimes it is helpful to provide the output of index-related MBeans for debugg
     * Oak Query Statistics
     * IndexStats
 
-1. Click each of the MBeans to get the performance statistics. Create a screenshot or note them down in case submission to support is required.
+1. Click each of the MBeans so you can get performance statistics. Create a screenshot or note them down in case a support submission is necessary.
 
 You can also get the JSON variant of these statistics at the following URLs:
 
@@ -522,7 +522,7 @@ You can also get the JSON variant of these statistics at the following URLs:
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 
-You can also provide consolidated JMX output via `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. This would include all Oak related MBean details in JSON format.
+You can also provide consolidated JMX output by way of `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. This would include all Oak related MBean details in JSON format.
 
 #### Other Details {#other-details}
 

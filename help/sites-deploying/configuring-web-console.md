@@ -1,22 +1,18 @@
 ---
 title: Web console in AEM
-
-description: Learn how to use the web console in AEM.
-
-uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
+description: Learn how to use the web console in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
 ---
 # Web Console{#web-console}
 
-The Web console in AEM (Adobe Experience Manager) is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
+The Web console in Adobe Experience Manager (AEM) is based on the [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is a community effort to implement the OSGi R4 Service Platform, which includes the OSGi framework and standard services.
 
 >[!NOTE]
 >
->On the Web console any descriptions that mention default settings relate to Sling defaults.
+>On the Web console, any descriptions that mention default settings relate to Sling defaults.
 >
 >AEM has its own defaults and so the defaults set might differ from those documented on the console.
 
@@ -50,11 +46,11 @@ The **Configuration** tab can be accessed by either:
 
   `http://localhost:4502/system/console/configMgr`
 
-A list of configurations will be shown:
+A list of configurations is shown:
 
 ![screen_shot_2012-02-15at52308pm-1](assets/screen_shot_2012-02-15at52308pm-1.png)
 
-There are two types of configurations available from the drop down lists on this screen:
+There are two types of configurations available from the drop-down lists on this screen:
 
 * **Configurations**
 
@@ -65,11 +61,11 @@ There are two types of configurations available from the drop down lists on this
 
 * **Factory Configurations**
 
-  Lets you create an instance of the required functionality object.
+  Create an instance of the required functionality object.
 
-  This will be allocated a Persistent Identity and then listed in the Configurations drop down list.
+  This is allocated to a Persistent Identity and then listed in the Configurations drop-down list.
 
-Selecting any entry from the lists will display the parameters related to that configuration:
+Selecting any entry from the list displays the parameters related to that configuration:
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -79,11 +75,11 @@ You can then update the parameters as required and:
 
   Save the changes made.
 
-  For a Factory Configuration this will create a new instance with a Persistent Identity. The new instance will then be listed under Configurations.
+  For a Factory Configuration, this creates an instance with a Persistent Identity. The new instance is listed under Configurations.
 
 * **Reset**
 
-  Reset the parameters shown on screen to those saved last.
+  Reset the parameters shown on the screen to those saved last.
 
 * **Delete**
 
@@ -109,7 +105,7 @@ The **Bundles** tab is the mechanism for installing the OSGi bundles required fo
 
   `http://localhost:4502/system/console/bundles`
 
-A list of bundles will be shown:
+A list of bundles is shown:
 
 ![screen_shot_2012-02-15at44740pm-1](assets/screen_shot_2012-02-15at44740pm-1.png)
 
@@ -125,9 +121,9 @@ Using this tab you can:
 
 * **Refresh Packages**
 
-  This will check the references of all packages and refresh as necessary.
+  This checks the references of all packages and refreshes as necessary.
 
-  For example, after an update both the old and new version may still be running due to prior references. This option will check and move all references to the new version, allowing the old version to stop.
+  For example, after an update both the old and new version may still be running due to prior references. This option checks and moves all references to the new version, allowing the old version to stop.
 
 * **Start**
 
@@ -143,11 +139,11 @@ Using this tab you can:
 
 * **see the status**
 
-  The list specifies the current status of the bundle; clicking on the name of a specific bundle with show further information.
+  The list specifies the status of the bundle; clicking the name of a specific bundle with show further information.
 
 >[!NOTE]
 >
->After **Update** it is recommended to perform a **Refresh Packages**.
+>After **Update**, Adobe recommends that you perform a **Refresh Packages**.
 
 ## Components {#components}
 
@@ -161,16 +157,16 @@ The **Components** tab lets you Enable and/or Disable the various components. It
 
   `http://localhost:4502/system/console/components`
 
-A list of components will be shown. Various icons are available to enable you to enable, disable or (where appropriate) open configuration details for a specific component.
+A list of components is shown. Various icons are available to enable you to enable, disable or (where appropriate) open configuration details for a specific component.
 
 ![screen_shot_2012-02-15at52144pm-1](assets/screen_shot_2012-02-15at52144pm-1.png)
 
-Clicking on the name of a particular component will display further information on its status. Here you can also enable, disable or reload the component.
+Clicking the name of a particular component displays further information on its status. Here you can also enable, disable, or reload the component.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
 >[!NOTE]
 >
->Enabling, or disabling, a component will only apply until AEM/CRX is restarted.
+>Enabling, or disabling, a component only applies until AEM/CRX is restarted.
 >
 >The start state is defined within the component descriptor, which is generated during development and stored in the bundle at bundle creation time.
