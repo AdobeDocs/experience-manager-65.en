@@ -701,7 +701,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 - Microsoft&reg; Windows Server 2019 (64-bit)
 - Microsoft&reg; Active Directory 2016
 
-The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on June 2, 2022:
+The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 
 - Microsoft&reg; SharePoint 2016
 
@@ -723,6 +723,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Office 2016
+- Microsoft&reg; Windows Server 2016 (64-bit)
 - OpenOffice 4.1.2
 
 <!--
