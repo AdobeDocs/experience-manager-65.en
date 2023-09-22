@@ -1,6 +1,6 @@
 ---
 title: Admin Consoles
-description: Lear how to use the Admin Consoles available in AEM.
+description: Lear how to use the Admin Consoles available in Adobe Experience Manager.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -11,11 +11,11 @@ exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 
 # Admin Consoles{#admin-consoles}
 
-By default, the ability to switch to the classic UI via the admin consoles has been disabled. Therefore, the pop-up icons that were seen when mousing over certain console icons, allowing access to classic UI, are no longer displayed.
+By default, the ability to switch to the classic UI by way of the Admin consoles is disabled. Therefore, the pop-up icons that were seen when mousing over certain console icons, allowing access to classic UI, are no longer displayed.
 
 Every console that has a Classic UI version in `/libs/cq/core/content/nav` can be re-enabled individually so that the **Classic UI** option once again pops up over the console icon when it is moused over.
 
-In this example, we are re-enabling the Classic UI for the Sites console.
+In this example, you are re-enabling the Classic UI for the Sites console.
 
 1. Using CRXDE Lite, find the node corresponding to the Admin Console for which you want to re-enable Classic UI. They are found under:
 
@@ -25,7 +25,7 @@ In this example, we are re-enabling the Classic UI for the Sites console.
 
    [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Select the node corresponding to the console for which you want to re-enable Classic UI. For our example, we will re-enable classic UI for the Sites console.
+1. Select the node corresponding to the console for which you want to re-enable Classic UI. For this example, you are re-enabling the classic UI for the Sites console.
 
    `/libs/cq/core/content/nav/sites`
 

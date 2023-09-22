@@ -13,7 +13,7 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 ## [!DNL Use Experience Manager Assets] Insights with sample web page  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Configure Assets Insights using the instructions in [Configuring Assets Insights](configure-asset-insights.md).
-1. Download the sample Assets package from below and install the package from CRXDE package manager.
+1. Download the sample Assets package from below and install the package from the CRXDE Package Manager.
 
    [Get File](assets/insightsdemo.zip)
 
@@ -21,11 +21,11 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
 
    [Get File](assets/demosite.zip)
 
-1. Click the web page to open it in the web browser.
+1. Click the web page which opens in the web browser.
 
    >[!CAUTION]
    >
-   >Web Page is configured to load asset from the localhost server . In case your server is running somewhere else change server address from localhost to server address in the HTML content of the web page.
+   >Web Page is configured to load assets from the localhost server . In case your server is running somewhere else, change the server address from localhost to the server address in the HTML content of the web page.
 
    >[!NOTE]
    >

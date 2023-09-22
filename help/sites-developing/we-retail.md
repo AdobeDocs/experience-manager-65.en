@@ -13,9 +13,9 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 
 We.Retail is a reference implementation and sample content that illustrates the recommended way of setting up an online presence with Adobe Experience Manager.
 
-We.Retail uses the latest AEM technologies such as HTL, responsive layouts, editable templates, core components, and much more.
+We.Retail uses the latest Adobe Experience Manager (AEM) technologies such as HTL, responsive layouts, editable templates, core components, and much more.
 
-While it illustrates a retail vertical, the way the site is setup can be applied to any vertical, and only the product catalog and cart features are retail-specific.
+While it illustrates a retail vertical, the way the site is set up can be applied to any vertical, and only the product catalog and cart features are retail-specific.
 
 ## Features {#features}
 
@@ -24,13 +24,13 @@ As AEM's standard reference implementation, We.Retail showcases some of the most
 | **Feature** |**Description** |**Interested?** |
 |---|---|---|
 | [Globalized site structure](/help/sites-administering/tc-bp.md) |We.Retail includes language masters which are live-copied into country-specific sites. | [Try it!](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [Responsive layout](/help/sites-authoring/responsive-layout.md) |All pages feature responsive layout to adapt dynamically to screen and device size. | [Try it!](/help/sites-developing/we-retail-responsive-layout.md) |
+| [Responsive layout](/help/sites-authoring/responsive-layout.md) |All pages feature a responsive layout to adapt dynamically to screen and device size. | [Try it!](/help/sites-developing/we-retail-responsive-layout.md) |
 | [Editable templates](/help/sites-developing/page-templates-editable.md) |All pages are based on editable templates, allowing non-developers to adapt and customize the templates. | [Try it!](/help/sites-developing/we-retail-editable-templates.md) |
 | [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) |All components are based on HTL |  |
 | [eCommerce capabilities](/help/commerce/cif-classic/developing/ecommerce.md) |Features a product catalog |  |
 | [Communities sites](/help/communities/overview.md) |Allowing visitors to join in community discussions, read blogs, and much more |  |
 | [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |All components are based on the new core components and are more usable and user-configurable out-of-the-box | [Try it!](/help/sites-developing/we-retail-core-components.md) |
-| [Content Fragments](/help/assets/content-fragments/content-fragments.md) |The We.Retail Experiences section showcases the power of reusing content via content fragments. | [Try them!](/help/sites-developing/we-retail-content-fragments.md) |
+| [Content Fragments](/help/assets/content-fragments/content-fragments.md) |The We.Retail Experiences section showcases the power of reusing content by way of content fragments. | [Try them!](/help/sites-developing/we-retail-content-fragments.md) |
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) |An Experience Fragment is a group of one or more components including content and layout that can be referenced within pages. | [Try them!](/help/sites-developing/we-retail-experience-fragments.md) |
 
 ## Getting Started {#getting-started}
@@ -51,7 +51,7 @@ Although We.Retail is distributed with the AEM release, updates to the content a
 
 ### First Steps {#first-steps}
 
-1. Once AEM is started (and/or We.Retail is installed), the site **We.Retail** is available in the [sites console](/help/sites-authoring/basic-handling.md#global-navigation).
+1. Once AEM is started (and/or We.Retail is installed), the site **We.Retail** is available in the [Sites console](/help/sites-authoring/basic-handling.md#global-navigation).
 1. For example, the following page can be opened and it should look as displayed in the [appendix](#appendix) below:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
@@ -64,7 +64,7 @@ We.Retail is technically more robust and exploits the latest AEM technology to b
 
 ### Feature Comparison {#feature-comparison}
 
-The following table gives an overview of major features that are available in We.Retail as compared to Geometrixx.
+The following table gives an overview of the major features that are available in We.Retail as compared to Geometrixx.
 
 * **Available** means that examples of the feature are found in the sample content.
 * **Not available** means that examples of the feature are not available in the sample content, but does not mean that the feature itself is not.
@@ -81,7 +81,7 @@ The following table gives an overview of major features that are available in We
 | Screens |Available |Not available |
 | Mobile |Not available |Available |
 | Manuscripts |Not available |Available |
-| Carousel, download, chart components |Not available |Available |
+| Carousel viewer, downloads, and chart components |Not available |Available |
 | Column control |Replaced by layout container |Available |
 | Forms |Not available |Available |
 | Campaign |No email samples |Available |
@@ -96,7 +96,7 @@ We.Retail has been released as an open-source project and the latest version of 
 
 CODE ON GITHUB
 
-You can find the code of this page on GitHub
+You can find the code of this page on GitHub.
 
 * [Open aem-sample-we-retail project on GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Download the project as [a ZIP file](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)

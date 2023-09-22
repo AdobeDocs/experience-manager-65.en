@@ -1,14 +1,10 @@
 ---
 title: AEM Forms on OSGi Groups and Privileges
-seo-title: AEM Forms on OSGi Groups and Privileges
-description: Assign users to the groups to manage AEM Forms on OSGi
-seo-description: Assign users to the groups to manage AEM Forms on OSGi
-uuid: f269a206-356d-4cee-b449-05c5da87121a
+description: Assign users to groups to manage Adobe Experience Manager (AEM) Forms on OSGi
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: Configuration
-discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
@@ -20,9 +16,9 @@ exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
 | AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html)                  |
 | AEM 6.5     | This article         |
 
-You can [create groups](/help/sites-administering/user-group-ac-admin.md#group-administration) and assign policies and [users](/help/sites-administering/user-group-ac-admin.md#user-administration) to the groups in AEM. These policies control privileges of the users that are part of the group.
+You can [create groups](/help/sites-administering/user-group-ac-admin.md#group-administration) and assign policies and [users](/help/sites-administering/user-group-ac-admin.md#user-administration) to the groups in Adobe Experience Manager (AEM). These policies control the privileges of the users that are part of the group.
 
-Once you install [AEM Forms add-on package](../../forms/using/installing-configuring-aem-forms-osgi.md), the groups mentioned in this article, such as forms-users and forms-power-user, are automatically available for assignment. The following table lists the tasks a user can perform for AEM Forms on OSGi based on the group assignments:
+After you install the [AEM Forms add-on package](../../forms/using/installing-configuring-aem-forms-osgi.md), the groups mentioned in this article, such as forms-users and forms-power-user, are automatically available for assignment. The following table lists the tasks that a user can perform for AEM Forms on OSGi based on the group assignments:
 
 <table>
  <tbody>
@@ -46,7 +42,7 @@ Once you install [AEM Forms add-on package](../../forms/using/installing-configu
     <ul> 
      <li>Create, preview, publish, and submit adaptive forms</li> 
      <li>Create, preview, and publish interactive communications and document fragments</li> 
-     <li>Create scripts for adaptive forms using code editor</li> 
+     <li>Create scripts for adaptive forms using a code editor</li> 
      <li>Upload assets including scripts</li> 
      <li>Create themes</li> 
      <li>Import packages containing XDP</li> 
@@ -93,7 +89,7 @@ Once you install [AEM Forms add-on package](../../forms/using/installing-configu
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Use AEM inbox applications<br /> <strong>Note: </strong>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.</li> 
+     <li>Use AEM Inbox applications<br /> <strong>Note: </strong>You must have cm-agent-users and workflow-users group assignments to access the Interactive Communications Agent UI in AEM Inbox.</li> 
      <li>Manage workflow instances</li> 
     </ul> </td> 
   </tr>
@@ -102,7 +98,7 @@ Once you install [AEM Forms add-on package](../../forms/using/installing-configu
    <td>
     <ul> 
      <li>Configure PDF Generator</li> 
-     <li>Configure Watched folder</li> 
+     <li>Configure the Watched folder</li> 
      <li>Manage workflow applications</li> 
     </ul> </td> 
   </tr>
