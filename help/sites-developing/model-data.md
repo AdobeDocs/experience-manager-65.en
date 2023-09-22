@@ -13,17 +13,17 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 
 The following details are ideas and comments expressed by David Nuescheler.
 
-David was co-founder and CTO of Day Software AG, a leading provider of global content management and content infrastructure software, which was acquired by Adobe in 2010. He is now fellow and VP of Enterprise Technology at Adobe and also leads the development of JSR-170, the Java&trade; Content Repository (JCR) application programming interface (API), the technology standard for content management.
+David was co-founder and CTO of Day Software AG, a leading provider of global content management and content infrastructure software, which was acquired by Adobe in 2010. David is now a fellow and VP of Enterprise Technology at Adobe and also leads the development of JSR-170, the Java&trade; Content Repository (JCR) application programming interface (API), the technology standard for content management.
 
-Further updates can also be seen on [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Further updates can also be seen on [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
 
 ## Introduction from David {#introduction-from-david}
 
 In various discussions, I found that developers are somewhat at unease with the features and functionalities presented by JCR when content modeling. There is no guide and little experience yet on how to model content in a repository and why one content model is better than the other.
 
-While in the relational world, the software industry has a lot of experience on how to model data, we are still at the early stages for the content repository space.
+While in the relational world, the software industry has experience on how to model data, it is still at the early stages for the content repository space.
 
-I would like to start filling this void by expressing my opinions on how content should be modeled, hoping that this could some day graduate into something more meaningful to the developers community, which is not just "my opinion" but something that is more generally applicable. So consider this my quickly evolving first stab at it.
+I would like to start filling this void by expressing my opinions on how content should be modeled. My hope is that this could some day graduate into something more meaningful to the developer's community, which is not just "my opinion" but something that is more generally applicable. So consider this my quickly evolving first stab at it.
 
 >[!NOTE]
 >
@@ -39,39 +39,37 @@ I recommend not to worry about a declared data structure in an ERD sense. Initia
 
 Learn to love nt:unstructured (& friends) in development.
 
-I think Stefano pretty much sums up this one.
-
 My bottom line: Structure is expensive and often it is entirely unnecessary to explicitly declare structure to the underlying storage.
 
-There is an implicit contract about structure that your application inherently uses. Let's say I store the modification date of a blog post in a lastModified property. My App will automatically know to read the modification date from that same property again, there is really no need to declare that explicitly.
+There is an implicit contract about structure that your application inherently uses. Let's say I store the modification date of a blog post in a lastModified property. My App automatically knows to read the modification date from that same property again, there is really no need to declare that explicitly.
 
 Further data constraints like mandatory or type and value constraints should only be applied where required for data integrity reasons.
 
 #### Example {#example-1}
 
-The above example of using a `lastModified` Date property on for example "blog post" node, really does not mean that there is a need for a special nodetype. I would definitely use `nt:unstructured` for my blog post nodes at least initially. Since in my blogging application all I am going to do is to display the lastModified date anyway (possibly "order by" it) I barely care if it is a Date at all. Since I implicitly trust my blog-writing application to put a "date" there anyway, there really is no need to declare the presence of a `lastModified` date in the form a of nodetype.
+The above example of using a `lastModified` Date property on for example "blog post" node, really does not mean that there is a need for a special node type. I would definitely use `nt:unstructured` for my blog post nodes at least initially. Since in my blogging application, all I am going to do is to display the lastModified date anyway (possibly "order by" it) I barely care if it is a Date at all. Because I implicitly trust my blog-writing application to put a "date" there anyway, there really is no need to declare the presence of a `lastModified` date in the form of a node type.
 
-### Rule #2: Drive the content hierarchy, don't let it happen. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
+### Rule #2: Drive the content hierarchy; do not let it happen. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
 #### Explanation {#explanation-2}
 
-The content hierarchy is a valuable asset. So don't just let it happen, design it. If you don't have a "good", human-readable name for a node, that's probably something that you should reconsider. Arbitrary numbers are hardly ever a "good name".
+The content hierarchy is a valuable asset. Do not let it happen; design it. If you do not have a "good", human-readable name for a node, that's probably something that you should reconsider. Arbitrary numbers are hardly a "good name".
 
 While it may be easy to quickly put an existing relational model into a hierarchical model, one should put some thought in that process.
 
-In my experience, if one thinks of access control and containment usually good drivers for the content hierarchy. Think of it as if it was your file system. Maybe even use files and folders to model it on your local disk.
+In my experience, if one thinks of access control and containment as good drivers for the content hierarchy. Think of it as if it was your file system. Maybe even use files and folders to model it on your local disk.
 
-Personally, I prefer hierarchy conventions over the nodetyping system in many cases initially, and introduce the typing later.
+Personally, I prefer hierarchy conventions over the node typing system initially, and introduce the typing later.
 
 >[!CAUTION]
 >
 >The way a content repository is structured can impact performance as well. For best performance, the number of child nodes attached to individual nodes in a content repository should not exceed 1'000.
 >
->See [How much data can CRX handle?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) for more information.
+>See [How much data can CRX handle?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### Example {#example-2}
 
-I would model a simple blogging system as follows. Note that initially I don't even care about the respective nodetypes that I use at this point.
+I would model a simple blogging system as follows. Initially, I don't even care about the respective node types that I use at this point.
 
 ```xml
 /content/myblog
@@ -83,7 +81,7 @@ I would model a simple blogging system as follows. Note that initially I don't e
 /content/myblog/comments/iphone_shipping/i_like_it_too/i_hate_it
 ```
 
-I think one of the things that become apparent is that we all understand the structure of the content based on the example without any further explanations.
+I think one of the things that becomes apparent is that the structure of the content is understood based on the example without any further explanations.
 
 What may be unexpected initially is why I wouldn't store the "comments" with the "post", which is due to access control which I would like to be applied in a reasonably hierarchical way.
 
@@ -105,7 +103,7 @@ If there is no overlap of nodes with the same UUID, you are probably abusing wor
 
 Do not use workspaces for access control. Visibility of content for a particular group of users is not a good argument to separate things into different workspaces. JCR features "Access Control" in the content repository to provide for that.
 
-Workspaces are the boundary for references and query.
+Workspaces are the boundaries for references and queries.
 
 #### Example {#example-3}
 
@@ -124,11 +122,11 @@ Do not use workspaces for things like:
 
 #### Explanation {#explanation-4}
 
-While Same Name Siblings (SNS) have been introduced into the spec to allow compatibility with data structures that are designed for and expressed through XML and therefore are valuable to JCR, SNS comes with a substantial overhead and complexity for the repository.
+Same Name Siblings (SNS) has been introduced into the spec to allow compatibility with data structures that are designed for and expressed through XML and, therefore, are valuable to JCR. However, SNS comes with overhead and complexity for the repository.
 
-Any path into the content repository that contains an SNS in one of its path segments becomes much less stable, if an SNS is removed or reordered, it has an impact on the paths of all the other SNS and their children.
+Any path into the content repository that contains an SNS in one of its path segments becomes much less stable. If an SNS is removed or reordered, it has an impact on the paths of all the other SNS and their children.
 
-For import of XML or interaction with existing XML SNS maybe necessary and useful but I have never used SNS, and never will in my "green field" data models.
+For import of XML or interaction with existing XML, SNS maybe necessary and useful, but I have never used SNS (and never intend to) in my "green field" data models.
 
 #### Example {#example-4}
 
@@ -146,13 +144,13 @@ Instead of
 /content/blog[1]/post[2]
 ```
 
-### Rule #5: References considered harmful. {#rule-references-considered-harmful}
+### Rule #5: References are considered harmful. {#rule-references-considered-harmful}
 
 #### Explanation {#explanation-5}
 
-References imply referential integrity. I find it important to understand that references not only add additional cost for the repository managing the referential integrity, but they also are costly from a content flexibility perspective.
+References imply referential integrity. It is important to understand that references not only add an additional cost for the repository managing the referential integrity, but they are also costly from a content flexibility perspective.
 
-Personally I make sure I only ever use references when I really cannot deal with a dangling reference and otherwise use a path, a name, or a string UUID to refer to another node.
+Personally, I only ever use references when I really cannot deal with a dangling reference and otherwise use a path, a name, or a string UUID to refer to another node.
 
 #### Example {#example-5}
 
@@ -184,7 +182,7 @@ Let's assume that someone would like to upload an image to a blog entry at:
 
 And maybe the initial gut reaction would be to add a binary property containing the picture.
 
-While there certainly are good use cases to use just a binary property (let's say the name is irrelevant and the mime-type is implicit), in this case I recommend the following structure for my blog example.
+While there are good use cases for just using a binary property (let's say the name is irrelevant and the mime-type is implicit), in this case, I recommend the following structure for my blog example.
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments [nt:folder]
@@ -196,17 +194,17 @@ While there certainly are good use cases to use just a binary property (let's sa
 
 #### Explanation {#explanation-7}
 
-In relational databases IDs are a necessary means to express relations, so people tend to use them in content models as well. Mostly for the wrong reasons through.
+In relational databases, IDs are a necessary means to express relations, so people tend to use them in content models as well. Mostly for the wrong reasons through.
 
 If your content model is full of properties that end in "Id", you probably are not using the hierarchy properly.
 
-It is true that some nodes need a stable identification throughout their live cycle. Much fewer than you might think though. mix:referenceable provides such a mechanism built into the repository, so there really is no need to come up with an extra means of identifying a node in a stable fashion.
+It is true that some nodes need a stable identification throughout their live cycle; fewer than you might think though. But `mix:referenceable` has such a mechanism built into the repository, so there is no need to come up with an extra means of identifying a node in a stable fashion.
 
 Keep also in mind that items can be identified by path. And, as much as "symlinks" make way more sense for most users than hard links in a UNIX&reg; filesystem, a path makes a sense for most applications to refer to a target node.
 
 More importantly, it is **mix**:referenceable which means that it can be applied to a node at the point in time when you actually must reference it.
 
-So let's say just because you would like to be able to potentially reference a node of type "Document" does not mean that your "Document" node type has to extend from mix:referenceable in a static fashion since it can be added to any instance of the "Document" dynamically.
+So, just because you would like to be able to potentially reference a node of type "Document" does not mean that your "Document" node type has to extend from `mix:referenceable` in a static fashion. This is because it can be added to any instance of the "Document" dynamically.
 
 #### Example {#example-7}
 

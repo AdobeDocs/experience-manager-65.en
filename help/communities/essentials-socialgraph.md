@@ -1,19 +1,15 @@
 ---
 title: Social Graph Essentials
-seo-title: Social Graph Essentials
-description: follow component and following component overview
-seo-description: follow component and following component overview
-uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
+description: Learn about the Following component and the Follow component.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
 ---
 # Social Graph Essentials  {#social-graph-essentials}
 
-The ability for a Community member to follow [activities](essentials-activities.md) as well as be followed is established through two components:
+The ability for a Community member to follow [activities](essentials-activities.md) and be followed is established through two components:
 
 The `following` component must be associated with another resource, and this association is already established for existing Communities members and features in a [community site](overview.md#communitiessites).
 
@@ -57,10 +53,10 @@ The `following` component lists the members that are either following the curren
      <li>Type: Boolean</li>
      <li>Value:<br />
       <ul>
-       <li><i>True </i>- The <code>following</code> component will list the members who the currently signed-in member <code>follows</code></li>
-       <li><i>False </i>- The <code>following</code> component will list the members who <code>follow </code>the currently signed-in member</li>
+       <li><i>True </i>- The <code>following</code> component lists the members who the signed-in member <code>follows</code></li>
+       <li><i>False </i>- The <code>following</code> component lists the members who <code>follow </code>the signed-in member</li>
       </ul> </li>
-    </ul> <p>Defaults to <i>true</i> if the property is missing. Currently, it is not possible to set this property using the edit dialog in author mode. The property must be added to an instance of the <code>following </code>node using <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Defaults to <i>true</i> if the property is missing. It is not possible to set this property using the edit dialog in Author mode. The property must be added to an instance of the <code>following</code> node using <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -77,8 +73,8 @@ The `following` component lists the members that are either following the curren
 
 ## Essentials for Server-Side {#essentials-for-server-side}
 
-* [Social Graph API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [Social Graph API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Social Graph Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Social Graph Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Server-side Customizations](server-customize.md)

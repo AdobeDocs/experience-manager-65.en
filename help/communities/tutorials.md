@@ -1,19 +1,15 @@
 ---
 title: Tutorials
-seo-title: Tutorials
-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
-seo-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
-uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
+description: Examples to help in learning and working with Adobe Experience Manager (AEM) Communities social component framework (SCF)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
 ---
 # Tutorials {#tutorials}
 
-These are examples to help in learning and working with AEM 6.1 Communities [social component framework (SCF)](scf.md).
+These are examples to help in learning and working with Adobe Experience Manager (AEM) 6.1 Communities [social component framework (SCF)](scf.md).
 
 ## Client-Side Customization {#client-side-customization}
 
@@ -31,7 +27,7 @@ See also:
 
 See also [SCF server-side customization](server-customize.md).
 
-Sample code is available in the [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository:
+Sample code is available in the [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository:
 
 * [Customize SCF Component Sample](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -43,7 +39,7 @@ Sample code is available in the [Adobe Marketing Cloud GitHub](https://github.co
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-  ToDo MVC Demostrates how to develop an SCF+SRP component from scratch.
+  ToDo MVC demostrates how to develop an SCF+SRP component from scratch.
 
 * [Getting Started with AEM Communities](getting-started.md)
 
@@ -55,11 +51,11 @@ Sample code is available in the [Adobe Marketing Cloud GitHub](https://github.co
 
 ## Demo Users {#demo-users}
 
-The Geometrixx samples package includes demo users. There is often a difference in experience between being a visitor (not logged in) or a member (logged in) and, as long as the Geometrixx samples packages remain installed, you may use these users to simulate a logged in state when exploring with the [Community Components guide](components-guide.md).
+The Geometrixx samples package includes demo users. There is often a difference in experience between being a visitor (not logged in) or a member (logged in). And, as long as the Geometrixx samples packages remain installed, you may use these users to simulate a logged in state when exploring with the [Community Components guide](components-guide.md).
 
 For a full list of the demo users, navigate using the Rail to **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Security > Users]**. Or use the Classic UI [security console](http://localhost:4502/useradmin) for managing users and groups.
 
-If a [community ste has been created](getting-started.md), it is possible to assign demo users to its [community user groups](users.md).
+If a [community site has been created](getting-started.md), it is possible to assign demo users to its [community user groups](users.md).
 
 ***user id* / *password***:
 
