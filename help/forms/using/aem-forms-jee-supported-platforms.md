@@ -701,7 +701,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 - Microsoft&reg; Windows Server 2019 (64-bit)
 - Microsoft&reg; Active Directory 2016
 
-The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release on June 2, 2022:
+The following platforms are marked as deprecated with AEM Forms 6.5.17.0 release on June 2, 2022:
 
 - Microsoft&reg; SharePoint 2016
 
@@ -725,15 +725,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 - Microsoft&reg; Office 2016
 - OpenOffice 4.1.2
 
-<!--
+
 >[!NOTE]
 >
->The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
--->
+> A deprecated platform continue to receive support until the platform is either marked removed or third-party vendor support for the platform reaches its end-of-life, whichever comes first.
 
 ## Revision History {#revision-history}
 
-- Aug 31, 2023
+- 6.5.18.0 (Aug 31, 2023)
   - **Platform Updates**: [!DNL Adobe Experience Manager Forms] on JEE has added support for the following platforms:
     - MongoDB Enterprise 4.4
     - Oracle WebLogic Server 14c
@@ -762,7 +761,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - OpenOffice 4.1.2
     - Acrobat 2017 (Classic track) Version 17.011.30078 or later
 
-- Sep 01, 2022
+- 6.5.10.0 (Sep 01, 2022)
   
   - Added support for Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
 
