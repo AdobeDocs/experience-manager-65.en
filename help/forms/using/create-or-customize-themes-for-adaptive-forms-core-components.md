@@ -1,15 +1,15 @@
 ---
 title: How to create or customizing Adaptive Form themes?
-seo-title: How to create a theme for Adaptive Forms Core Components? 
-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications   
+seo-title: How to create a theme for Adaptive Forms Core Components?
+description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: create adaptive forms core components theme, create new theme, customize theme, upload new theme, use theme in forms, delete a theme, create a theme in AEM 6.5 forms
 contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms 
+topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
 ---
-
 # Create or customize an Adaptive Form theme {#introduction-to-theme}
 
 | Version | Article link |
@@ -338,4 +338,3 @@ To remove unused or unwanted themes:
 * [Create a template for Core Components based Adaptive Forms](template-editor.md)
 * [Create or Add an Adaptive Form to an AEM Sites Page or Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Sample themes templates and form data models](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-
