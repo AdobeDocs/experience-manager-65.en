@@ -232,7 +232,6 @@ Select the appropriate reference type for more information. In certain situation
 
   * This can only show static links, not dynamically generated links; for example from the List component.
 
-
 * Instances of borrowed and lent content using the **Reference** component, from here you can navigate to the referencing/referenced page
 
 * [References to Product pages](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (available from the Commerce-Products console)
