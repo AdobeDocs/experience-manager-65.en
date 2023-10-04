@@ -51,4 +51,4 @@ For more details, see the following pages:
 * For details on how to get started with Edge Delivery, see the [Build](https://www.hlx.live/docs/#build) section of the Edge delivery documentation.
 * To understand how to author and publish content by using Edge Delivery, see the [Publish section](https://www.hlx.live/docs/authoring).
 * To understand how to use the sidekick extension, see [Using the sidekick](https://www.hlx.live/docs/sidekick) page.
-* For AEM authoring, see the [Authoring Concepts page](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html)
+* For AEM authoring, see the [Authoring Concepts page](/help/sites-authoring/author.md))

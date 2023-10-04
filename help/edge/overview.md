@@ -19,11 +19,11 @@ The following diagram illustrates how you can edit content in Microsoft Word (do
 
 ![Edge Delivery Architecture](assets/edgedelivery.png)
 
-Edge Delivery is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM authoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) and [document-based authoring](https://www.hlx.live/docs/authoring).
+Edge Delivery is a composable set of services that allows for a high degree of flexibility in how you author content on your website. As mentioned previously, you can use both [AEM authoring](/help/sites-authoring/author.md) and [document-based authoring](https://www.hlx.live/docs/authoring).
 
 For example, you can use content directly from Microsoft Word or Google Docs. This means that documents from those sources can become pages on your website. Furthermore, headings, lists, images, font elements can all be transferred from the initial source into the website. The new content will be added instantly without a rebuild process.
 
-Edge Delivery leverages GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub . When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
+Edge Delivery leverages GitHub so customers can manage and deploy code directly from their GitHub repository. For example, you can write content in either Google Docs or Microsoft Word and the functionality of your site can be developed by using CSS and JavaScript in GitHub. When you are ready, you can use the Sidekick browser extension to preview and publish content updates.
 
 Further reading:
 
