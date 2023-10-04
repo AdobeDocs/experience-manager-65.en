@@ -1,7 +1,6 @@
 ---
 title: Using Edge Delivery Services
 description: Using Edge Delivery Services
-exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 ---
 # Using Edge Delivery Services {#usingedge}
 
