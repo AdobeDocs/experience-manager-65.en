@@ -1,6 +1,6 @@
 ---
 title: Managing Projects - Best Practices Checklist
-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high-level monitoring of your current status.
+description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high-level monitoring of your status.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
@@ -10,7 +10,7 @@ exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 ---
 # Managing Projects - Best Practices Checklist{#managing-projects-best-practices-checklist}
 
-Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding to ensure you are aware of the issues and (related) decisions that you must make, before and while implementing your project.
+Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding so that you are aware of the issues and (related) decisions that you must make, before and while implementing your project.
 
 To help you, the best practices consist of:
 
@@ -19,7 +19,7 @@ To help you, the best practices consist of:
     * Defines inputs and deliverables according to phase, milestone, and persona.
     * Provides automated overviews (quality, health, and completeness) to indicate progress and project-health.
 
-* Documentation, based on the [checklist](/help/managing/best-practices-checklist.md), that details the:
+* Documentation based on the [checklist](/help/managing/best-practices-checklist.md) that details the:
 
     * [Project Heartbeat](#projectheartbeat) analysis.
     * [Status by Role](#status-by-role) overview.
@@ -111,7 +111,7 @@ The Four Factors:
 
 ### Planning {#planning}
 
-Planning your project consolidates the preparation. Here you need to start converting the goals and expectations into a well-defined roadmap consisting of concrete tasks, bound by clear communication, with stringent reviews to measure progress.
+Planning your project consolidates the preparation. Here you should start converting the goals and expectations into a well-defined roadmap consisting of concrete tasks, bound by clear communication, with stringent reviews to measure progress.
 
 #### Milestones {#milestones-1}
 
@@ -129,7 +129,7 @@ Planning your project consolidates the preparation. Here you need to start conve
 
 * **Communication**
 
-  Communication is always key to the success of any project. You need to communicate clearly and efficiently to ensure that everyone is:
+  Communication is always key to the success of any project. Communicate clearly and efficiently to ensure that everyone is:
 
     * Working towards the same basic goals
     * From the same information base
@@ -163,7 +163,7 @@ Planning the development is key to ensure that your project is built on a solid 
 
     * The content tree; including assets
     * Basic structures; including campaigns, and so on.
-    * Multisite and multi language structures (MSM, Translation, and so on)
+    * Multisite and multi-language structures (MSM, Translation, and so on)
     * Supportive content (including tags and tagging concepts)
     * Caching and content reuse strategies
 
@@ -189,7 +189,7 @@ Planning the development is key to ensure that your project is built on a solid 
 
   It is focused on:
 
-    * How they will interact with each other and with users.
+    * How they interact with each other and with users.
     * The data to be consumed and produced by applications, rather than their internal structure.
 
   The definitions should cover:
@@ -197,7 +197,7 @@ Planning the development is key to ensure that your project is built on a solid 
     * Basic code structure for the project
     * Code artifacts (bundles, packages, and so on)
     * Breakdowns of the templates/components and their relationships
-    * High-level details of required customizations (specific overlays will follow later)
+    * High-level details of required customizations (specific overlays follow later)
     * Design of workflows required by the solution (for example, content creation, approval, publishing, transformations, imports, and exports)
     * Special consideration for any complex modules, such as MSM, Commerce, third-party integration
 
@@ -205,8 +205,8 @@ Planning the development is key to ensure that your project is built on a solid 
 
   System integration requires you to plan (then implement):
 
-    * How all the subsystems and [solution integrations](/help/sites-administering/integration.md) will be brought together to operate as one coherent system
-    * How any third-party systems will be integrated; together with any special considerations, such as offline/online, client-side/browser-side, or fallover handling when a third-party system is down
+    * How all the subsystems and [solution integrations](/help/sites-administering/integration.md) are brought together to operate as one coherent system
+    * How any third-party systems are integrated; together with any special considerations, such as offline/online, client-side/browser-side, or fallover handling when a third-party system is down
 
 * **Test Concept**
 
@@ -564,7 +564,7 @@ The security lead:
 
 * Authors and End Users
 
-    * The people who will use the system to create and maintain your website content.
+    * The people who use the system to create and maintain your website content.
 
 ## Required Documents and Deliverables {#required-documents-and-deliverables}
 

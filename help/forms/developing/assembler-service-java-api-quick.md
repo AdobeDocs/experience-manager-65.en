@@ -1,13 +1,10 @@
 ---
 title: Assembler Service Java API QuickStart(SOAP)
-seo-title: Assembler Service Java API QuickStart(SOAP)
 description: Assembler Service Java API QuickStart(SOAP)
-uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 ---
@@ -164,7 +161,7 @@ The following Java code example merges two PDF source documents named *map.pdf* 
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -303,7 +300,7 @@ The following Java code example disassembles a PDF document named *AssemblerResu
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
                  Object o = e.getValue();
  
@@ -582,7 +579,7 @@ The following Java code example assembles a PDF document with unique page identi
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -849,7 +846,7 @@ The following Java code example determines whether the input PDF document is PDF
              //document that specifies if the input document is
              //PDF/A compliant
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1154,7 +1151,7 @@ The following Java code example assembles a PDF document that contains bookmarks
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1528,7 +1525,7 @@ The following Java code example creates a PDF portfolio. The PDF portfolio is sa
 
 ## Quick Start (SOAP mode): Assembling multiple XDP fragments using the Java API {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
-The following Java code example assembles XDP fragments that are based on the following XDP files: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp*, and* tuc018_patient.xdp*. The assembled XDP document that contains all fragments is saved as a XDP file named *AssemblerResultXDP.xdp*. (See [Assembling Multiple XDP Fragments](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+The following Java code example assembles XDP fragments that are based on the following XDP files: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp*, and* tuc018_patient.xdp*. The assembled XDP document that contains all fragments is saved as an XDP file named *AssemblerResultXDP.xdp*. (See [Assembling Multiple XDP Fragments](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 ```java
  /*
@@ -1656,7 +1653,7 @@ The following Java code example assembles XDP fragments that are based on the fo
  
              //Iterate through the map object to retrieve the result XDP document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the

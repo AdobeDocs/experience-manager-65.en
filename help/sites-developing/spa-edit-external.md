@@ -337,7 +337,7 @@ To enable editing within AEM for this example SPA, the following steps are requi
 
 1. Add helpers within SPA routing.
 
-   * The newly-created page will not yet render the expected content in AEM. This is because the router expects a path of `/test` whereas the AEM active path is `/wknd-spa-react/us/en/test`. To accommodate the AEM-specific portion of the URL, we need to add some helpers on the SPA side.
+   * The newlycreated page will not yet render the expected content in AEM. This is because the router expects a path of `/test` whereas the AEM active path is `/wknd-spa-react/us/en/test`. To accommodate the AEM-specific portion of the URL, we need to add some helpers on the SPA side.
 
    ![Routing helper](assets/external-spa-router-helper.png)
 

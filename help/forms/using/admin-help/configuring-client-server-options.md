@@ -1,14 +1,10 @@
 ---
 title: Configuring client and server options
-seo-title: Configuring client and server optionsn
 description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
-seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
-uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 ---
@@ -49,7 +45,7 @@ For a discussion of how offline lease and synchronization works, see [Primer on 
 
 **Allow Extended Authentication** Select to enable extended authentication and then enter the Extended Authentication Landing URL.
 
-Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM forms server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully-qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Selecting this option enables client applications to use extended authentication. Extended authentication provides for customized authentication processes and different authentication options configured on the AEM forms server. For example, users can now experience the SAML-based authentication instead of AEM forms username/Password, from Acrobat and Reader Client. By default, the Landing URL contains *localhost* as the server name. Replace the server name with a fully qualified hostname. The hostname in the landing URL is automatically populated from the base URL, if extended Authentication is not enabled yet. See [Add the extended authentication provider](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***note**: Extended authentication is supported on Apple Mac OS X with Adobe Acrobat release 11.0.6 and above.*
 
@@ -62,7 +58,7 @@ Width: Minimum = 400, maximum = 900
 
 Height: Minimum = 450; maximum = 800
 
-**Enable Client Credential Caching:** Select this option to allow users to cache their credentials (user name and password). When users’ credentials are cached, they do not have to enter their credentials every time they open a document or when they click the Refresh button on the Manage Security Policies page in Adobe Acrobat. You can specify the number of days before users must supply their credentials again. Setting the number of days to 0 allows credentials to be cached indefinitely.
+**Enable Client Credential Caching:** Select this option to allow users to cache their credentials (user name and password). When users' credentials are cached, they do not have to enter their credentials every time they open a document or when they click the Refresh button on the Manage Security Policies page in Adobe Acrobat. You can specify the number of days before users must supply their credentials again. Setting the number of days to 0 allows credentials to be cached indefinitely.
 
 ## Configuring document security users and administrators {#configuring-document-security-users-and-administrators}
 
@@ -356,7 +352,7 @@ You can enable and disable event auditing and specify the types of events to be 
 
 **Directory&#xA;Synchronization Complete:** This information is not available from the Events page. The current directory synchronization information, including the current synchronization state and time of the last synchronization, is displayed on the Domain Management page. To access the Domain Management page in administration console, click Settings > User Management > Domain Management.
 
-**Client Enable Offline Access:** A user enabled offline access to documents that are secured against the server on the user’s computer.
+**Client Enable Offline Access:** A user enabled offline access to documents that are secured against the server on the user's computer.
 
 **Synchronized Client** Client application must synchronize information with the server to allow for offline access.
 
@@ -415,7 +411,7 @@ These settings control the text displayed in the certificate authentication dial
 
 **Customization for client certificate display**
 
-**Only Display Trusted Credential Issuers:** When this option is selected, the client application presents the user with only certificates from credential issuers that AEM forms is configured to trust (See Managing certificates and credentials.) When this option is not selected, the user is presented with a list of all certificates on the user’s system.
+**Only Display Trusted Credential Issuers:** When this option is selected, the client application presents the user with only certificates from credential issuers that AEM forms is configured to trust (See Managing certificates and credentials.) When this option is not selected, the user is presented with a list of all certificates on the user's system.
 
 ## Configure dynamic watermarks {#configure-dynamic-watermarks}
 
@@ -649,17 +645,17 @@ The following settings are located in the Activation Email Configuration area of
 >
 >It is also recommended that you configure a message on the login screen to advise external users how to contact their administrator for a new password or for other information.
 
-**From:** The email address from which the activation email is sent. This email address receives failed delivery notices from the registrant’s email host and also any messages that the recipient sends in reply to the registration email. The default format of the From email address is postmaster@[your_installation_domain].com.
+**From:** The email address from which the activation email is sent. This email address receives failed delivery notices from the registrant's email host and also any messages that the recipient sends in reply to the registration email. The default format of the From email address is postmaster@[your_installation_domain].com.
 
 **Subject:** Default subject for the activation email message.
 
 **Timeout:** The number of days after which the activation invitation expires if the user does not activate the account. The default value is 30 days.
 
-**Message:** The text that appears in the body of the message a message indicating that the recipient’s user account needs to be activated. You may also want to include information such as how to contact an administrator to obtain a new password.
+**Message:** The text that appears in the body of the message a message indicating that the recipient's user account needs to be activated. You may also want to include information such as how to contact an administrator to obtain a new password.
 
 ### Configure a password reset email {#configure-a-password-reset-email}
 
-If you have to reset an invited user’s password, a confirmation email is generated that invites the user to choose a new password. A user’s password cannot be determined; if the user forgets it, you must reset it.
+If you have to reset an invited user's password, a confirmation email is generated that invites the user to choose a new password. A user's password cannot be determined; if the user forgets it, you must reset it.
 
 The following settings are located in the Reset Password Email area of the Invited User Registration page.
 
@@ -667,7 +663,7 @@ The following settings are located in the Reset Password Email area of the Invit
 
 **Subject:** Default subject for the reset email message.
 
-**Message:** The text that appears in the body of the message a message indicating that the recipient’s external user password is reset.
+**Message:** The text that appears in the body of the message a message indicating that the recipient's external user password is reset.
 
 ## Enable users and groups to create policies {#enable-users-and-groups-to-create-policies}
 
@@ -688,7 +684,7 @@ As an administrator, specify which users and groups can create custom policies. 
 1. In the Find box, type the user name or email address of the user or group that you are searching for. If you do not have this information, leave the box empty. You can also type a partial name or email address, such as when you know only the first two letters of a user name.
 1. In the Using list, select your search parameters Name or Email.
 1. In the Type list, select Group or User to narrow your search.
-1. In the In list, select the domain to search. If you do not know the user or group’s domain, select All Domains.
+1. In the In list, select the domain to search. If you do not know the user or group's domain, select All Domains.
 1. In the Display list, specify the number of search results to display per page and then click Find.
 1. To add My Policies users and groups, select the check box for each user and group to add.
 1. Click Add, and then click OK.
@@ -745,7 +741,7 @@ You can make the following changes using the configuration file:
 
 ### Specify a timeout period for offline synchronization {#specify-a-timeout-period-for-offline-synchronization}
 
-Document security enables users to open and use protected document when they are not connected to the document security server. The user’s client application must regularly synchronize with the server to keep documents valid for offline use. The first time users open a protected document, they are asked whether their computer should be authorized to perform periodic client synchronization.
+Document security enables users to open and use protected document when they are not connected to the document security server. The user's client application must regularly synchronize with the server to keep documents valid for offline use. The first time users open a protected document, they are asked whether their computer should be authorized to perform periodic client synchronization.
 
 By default, the synchronization occurs automatically every four hours and as-needed when a user is connected to the document security server. If the offline period for a document expires while the user is offline, the user must reconnect to the server to enable the client application to synchronize with the server.
 

@@ -1,19 +1,15 @@
 ---
 title: Import and manage applications
-seo-title: Import and manage applications
 description: Learn how to import and manage applications.
-seo-description: Learn how to import and manage applications.
-uuid: 7fba6c4e-1a3e-4a4b-9201-acf2ff66a9df
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 ---
 # Import and manage applications{#import-and-manage-applications}
 
-In AEM forms, an *application* is a container for storing assets that are required for implementing a AEM forms solution. Examples of assets are form designs, form fragments, images, processes, DDX files, form Guides, HTML pages, and SWF files. During the development phase of a project, Workbench users can deploy applications directly from the Applications view in Workbench. Once deployed, these applications appear in administration console, on the Applications tab on the Application Management page.
+In AEM forms, an *application* is a container for storing assets that are required for implementing an AEM forms solution. Examples of assets are form designs, form fragments, images, processes, DDX files, form Guides, HTML pages, and SWF files. During the development phase of a project, Workbench users can deploy applications directly from the Applications view in Workbench. Once deployed, these applications appear in administration console, on the Applications tab on the Application Management page.
 
 When an application is complete and ready for deployment to a production server, the Workbench user packages the application into a *AEM forms application file* (.lca). Then an administrator uses administration console to import and deploy the application file, using the Applications tab on the Application Management page.
 
@@ -75,7 +71,7 @@ Undeploy the application before removing it from the server.
 1. Select the checkbox next to the application that you want to remove and click Remove.
 1. Click OK in the confirmation dialog box that appears.
 
-## Import an application’s runtime configuration {#import-an-application-s-runtime-configuration}
+## Import an application's runtime configuration {#import-an-application-s-runtime-configuration}
 
 If an application administrator exported the runtime configuration for an application, you can import it into the deployed application. You can import it using either the administration console or via scripted LCA deployment.
 
@@ -85,7 +81,7 @@ If an application administrator exported the runtime configuration for an applic
 1. Click Browse and select the XML file that contains the runtime configuration.
 1. Click Import.
 
-## Export an application’s runtime configuration {#export-an-application-s-runtime-configuration}
+## Export an application's runtime configuration {#export-an-application-s-runtime-configuration}
 
 You can export the runtime configuration information for deployed applications.
 
