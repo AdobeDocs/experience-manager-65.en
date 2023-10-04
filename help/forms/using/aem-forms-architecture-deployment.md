@@ -60,7 +60,7 @@ The following image displays various AEM Form server configurations and their co
 **Author:** An author instance is an AEM Forms server running in the standard Author run mode. It can be AEM Forms on JEE or AEM Forms on OSGi environment. It is intended for internal users, forms and interactive communication designers, and developers. It enables the following functionalities:
 
 * **Authoring and managing forms and interactive communications:** Designers and developer can create and edit adaptive forms and interactive communications, upload other types of forms created externally, for example, forms created in Adobe Forms Designer, and manage these assets using the Forms Manager console.
-* **Form and interactive communication publishing:** Assets hosted on an author instance can be published to a publish instance to perform runtime operations. Asset publishing uses AEM’s replication features. Adobe recommends that a replication agent is configured on all the author instances to manually push published forms to processing instances, and another replication agent is configured on processing instances with the *On Receive* trigger enabled to automatically replicate the received forms to publish instances.
+* **Form and interactive communication publishing:** Assets hosted on an author instance can be published to a publish instance to perform runtime operations. Asset publishing uses AEM's replication features. Adobe recommends that a replication agent is configured on all the author instances to manually push published forms to processing instances, and another replication agent is configured on processing instances with the *On Receive* trigger enabled to automatically replicate the received forms to publish instances.
 
 **Publish:** A publish instance is an AEM Forms server running in the standard Publish run mode. Publish instances are intended for end users of form-based applications, for example, users accessing a public website and submitting forms. It enables the following functionalities:
 
@@ -75,7 +75,7 @@ The following image displays various AEM Form server configurations and their co
 
     >[!NOTE]
     >
-    >Adobe recommends to use a third-party data store to save final processed data instead of using AEM repository.
+    >Adobe recommends using a third-party data store to save final processed data instead of using AEM repository.
 
 * **Storage and post-processing of correspondence data arriving from a Publish instance:** AEM workflows perform the optional post-processing of the corresponding letter definitions. These workflows can save the final processed data into a suitable external data stores.
 

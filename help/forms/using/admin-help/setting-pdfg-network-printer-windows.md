@@ -1,14 +1,10 @@
 ---
 title: Setting up a PDFG Network Printer (Windows only)
-seo-title: Setting up a PDFG Network Printer (Windows only)
 description: Learn how to set up a PDFG Network Printer ( Windows only )
-seo-description: Learn how to set up a PDFG Network Printer ( Windows only )
-uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 ---
@@ -23,8 +19,8 @@ The following steps are required to set up a PDFG Network Printer:
 1. Configure email settings. (See [Configure email settings for PDFG Network Printer](setting-pdfg-network-printer-windows.md#configure-email-settings-for-pdfg-network-printer).)
 1. In administration console, configure the PDFG Network Printer settings. (See [Configure the PDFG Network Printer settings](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings).)
 1. Ensure that your users are configured with a valid email address in the AEM forms database and assign the PDFGUserPermission to each user. <!-- Fix broken link See Setting up and organizing users -->
-1. Ensure that 32-bit JRE6 is installed on your users’ computers.
-1. Install the printer on your users’ computers. (See [Install PDFG Network Printer on a user’s computer](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
+1. Ensure that 32-bit JRE6 is installed on your users' computers.
+1. Install the printer on your users' computers. (See [Install PDFG Network Printer on a user's computer](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
 ## Configure email settings for PDFG Network Printer {#configure-email-settings-for-pdfg-network-printer}
 
@@ -41,7 +37,7 @@ The following steps are required to set up a PDFG Network Printer:
     * The subject of the email message
     * The header, body, and footer of the email message. In the email message, &lt;receiverName&gt; is replaced with the full name of the user who printed the document.
 
-1. To send the converted PDFs to a AEM forms service or process, select the Forward The Converted PDF To The Specified AEM forms Service Or Process option and specify the following information:
+1. To send the converted PDFs to an AEM forms service or process, select the Forward The Converted PDF To The Specified AEM forms Service Or Process option and specify the following information:
 
     * The name of the service to invoke
     * The name of the operation of the service to invoke
@@ -51,7 +47,7 @@ The following steps are required to set up a PDFG Network Printer:
 
 If you want to revert to the original default email text, click Restore E-Mail Contents.
 
-## Install PDFG Network Printer on a user’s computer {#install-pdfg-network-printer-on-a-user-s-computer}
+## Install PDFG Network Printer on a user's computer {#install-pdfg-network-printer-on-a-user-s-computer}
 
 Users who have either the PDFG Administrator or PDFG User role can install a PDFG Network Printer. You must have a 32-bit JDK installed on the computer.
 
@@ -61,6 +57,6 @@ Users who have either the PDFG Administrator or PDFG User role can install a PDF
 
 1. Under PDFG Network Printer Installation, click the link. When prompted for user account information, specify the user name and password that you used in step 1 to log in. A message appears, stating that the printer has been successfully installed.
 
-   ***note**: If the user’ password changes, then users will need to reinstall the PDFG Network Printer on their computers. You cannot update the password from administration console.*
+   ***note**: If the user' password changes, then users will need to reinstall the PDFG Network Printer on their computers. You cannot update the password from administration console.*
 
 1. Click OK.

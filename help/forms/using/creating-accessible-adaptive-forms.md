@@ -45,7 +45,7 @@ ANDI works with all major Internet browsers. See, [ANDI's documentation](https:/
 
 ### Download and install the Ultramarine-Accessible theme
 
-The Ultramarine-Accessible theme is a reference theme. It helps demonstrate how to fix color contrast and other accessibility related issues in an adaptive form. Adobe recommends to create a custom theme for the production environment based on the styles approved by your organization. Perform the following steps to upload the theme to your AEM instance:
+The Ultramarine-Accessible theme is a reference theme. It helps demonstrate how to fix color contrast and other accessibility related issues in an adaptive form. Adobe recommends that you create a custom theme for the production environment based on the styles approved by your organization. Perform the following steps to upload the theme to your AEM instance:
 
 1. Download the theme package.
 1. Navigate to **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** on your AEM instance.
@@ -88,7 +88,7 @@ After applying an accessible theme, perform the below listed additional fixes. T
 
 1. Set custom accessibility text for the date picker component. For example, Enter your date of birth. Screen readers read these custom accessibility texts.  
 
-1. Use short description instead of long description for adaptive form components. A long description adds help  button. Ensure the adaptive form form does not have any help button.  
+1. Use short description instead of long description for adaptive form components. A long description adds help  button. Ensure the adaptive are does not have any help button.  
 
 1. Add custom accessibility text to all the read-only cells of tables. Also, disable all the read-only cells of tables.
 
@@ -98,7 +98,7 @@ After applying an accessible theme, perform the below listed additional fixes. T
 
 The label or title of a component identifies what the form component represents. For example, the text "First name" tells users that they have to enter their first name in a text field. To be accessible by screen readers, the label is programmatically associated with a form component. Alternatively, the form control is configured with additional accessibility information.
 
-The label that is perceived by screen readers need not necessarily be the same as the visual caption. In some cases, you may want to be more specific about the control’s purpose. For each field object in a form, the accessibility options can be used to specify what the screen reader announces to identify the specific form field.
+The label that is perceived by screen readers need not necessarily be the same as the visual caption. In some cases, you may want to be more specific about the control's purpose. For each field object in a form, the accessibility options can be used to specify what the screen reader announces to identify the specific form field.
 
 To use the Accessibility option, follow these steps:
 

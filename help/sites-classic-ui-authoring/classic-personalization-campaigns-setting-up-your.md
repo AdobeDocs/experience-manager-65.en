@@ -1,14 +1,10 @@
 ---
 title: Setting up your campaign
-seo-title: Setting up your campaign
 description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
-seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
-uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
 ---
@@ -37,9 +33,9 @@ Then depending on the type of experience(s) you are creating, you will need to [
     1. [Create a compelling newsletter landing page](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
     1. [Send the newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) to subscribers or leads.
 
-* If creating a Adobe Target (formerly Test&Target) Offer:
+* If creating an Adobe Target (formerly Test&Target) Offer:
 
-    1. [Create a Adobe Target offer experience](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+    1. [Create an Adobe Target offer experience](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
     1. [Integrate with Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
@@ -107,7 +103,7 @@ The procedure for creating a new experience is dependent on the type of experien
 
 * [Creating a Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Creating a Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
-* [Creating a Adobe Target Offer](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
+* [Creating an Adobe Target Offer](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
 
 >[!NOTE]
 >

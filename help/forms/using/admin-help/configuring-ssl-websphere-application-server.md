@@ -1,14 +1,10 @@
 ---
 title: Configuring SSL for WebSphere Application Server
-seo-title: Configuring SSL for WebSphere Application Server
 description: Learn how to configure SSL for WebSphere Application Server.
-seo-description: Learn how to configure SSL for WebSphere Application Server.
-uuid: f939a806-346e-41e0-b2c0-6d0ba83f8f6f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
 ---
 # Configuring SSL for WebSphere Application Server {#configuring-ssl-for-websphere-application-server}
@@ -83,7 +79,7 @@ For enabling SSL, WebSphere needs access to a user account in the local OS user 
 1. Click **Finish**.
 1. Restart the WebSphere profile.
 
-   WebSphere will start using the default keystore and truststore.
+   WebSphere starts using the default keystore and truststore.
 
 ## Enable SSL (custom key and truststore) {#enable-ssl-custom-key-and-truststore}
 
@@ -101,7 +97,7 @@ Truststores and keystores can be created using ikeyman utility or admin console.
 1. If you had added already created a keystore using ikeyman, your certificate will appear. Otherwise, you need to add a new self-signed certificate by performing the following steps:
 
     1. Select **Create &gt; Self-signed Certificate**.
-    1. Specify appropriate values on the certificate form. Ensure that you keep Alias and common name as fully-qualified domain name of the machine.
+    1. Specify appropriate values on the certificate form. Ensure that you keep Alias and common name as fully qualified domain name of the machine.
     1. Click **Apply**.
 
 1. Repeat steps 2 through 10 for creating a truststore.

@@ -1,15 +1,11 @@
 ---
 title: Rendering Interactive PDF Forms
-seo-title: Rendering Interactive PDF Forms
 description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
-seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
-uuid: df2a4dc8-f19e-49de-850f-85a204102631
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 ---
@@ -25,7 +21,7 @@ The Forms service renders interactive PDF forms to client devices, typically web
 
 **Sample loan application**
 
-A sample loan application is introduced to demonstrate how the Forms service uses interactive forms to collect information from users. This application lets a user fill in a form with data required to secure a loan and then submits data to the Forms service. The following diagram shows the loan application’s logic flow.
+A sample loan application is introduced to demonstrate how the Forms service uses interactive forms to collect information from users. This application lets a user fill in a form with data required to secure a loan and then submits data to the Forms service. The following diagram shows the loan application's logic flow.
 
 ![ri_ri_finsrv_loanapp_v1](assets/ri_ri_finsrv_loanapp_v1.png)
 
@@ -57,24 +53,24 @@ The following table describes the steps in this diagram.
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>A confirmation form is rendered back to the web browser. Data such as the user’s first and last name is merged with the form before it is rendered. (See <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Prepopulating Forms with Flowable Layouts</a>.)</p></td>
+   <td><p>A confirmation form is rendered back to the web browser. Data such as the user's first and last name is merged with the form before it is rendered. (See <a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">Prepopulating Forms with Flowable Layouts</a>.)</p></td>
   </tr>
  </tbody>
 </table>
 
 **Loan form**
 
-This interactive loan form is rendered by the sample loan application’s `GetLoanForm` Java Servlet.
+This interactive loan form is rendered by the sample loan application's `GetLoanForm` Java Servlet.
 
 ![ri_ri_loanform](assets/ri_ri_loanform.png)
 
 **Confirmation form**
 
-This form is rendered by the sample loan application’s `HandleData` Java Servlet.
+This form is rendered by the sample loan application's `HandleData` Java Servlet.
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-The `HandleData` Java Servlet prepopulates this form with the user’s first and last name as well as the amount. After the form is prepopulated, it is sent to the client web browser. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+The `HandleData` Java Servlet prepopulates this form with the user's first and last name as well as the amount. After the form is prepopulated, it is sent to the client web browser. (See [Prepopulating Forms with Flowable Layouts](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
 
 **Java Servlets**
 
@@ -94,7 +90,7 @@ The following code shows the syntax of a Java Servlet named GetLoanForm:
              }
 ```
 
-Normally, you would not place Forms service Client API code within a Java Servlet’s `doGet` or `doPost` method. It is better programming practice to place this code within a separate class, instantiate the class from within the `doPost` method (or `doGet` method), and call the appropriate methods. However, for code brevity, the code examples in this section are kept to a minimum and code examples are placed in the `doPost` method.
+Normally, you would not place Forms service Client API code within a Java Servlet's `doGet` or `doPost` method. It is better programming practice to place this code within a separate class, instantiate the class from within the `doPost` method (or `doGet` method), and call the appropriate methods. However, for code brevity, the code examples in this section are kept to a minimum and code examples are placed in the `doPost` method.
 
 >[!NOTE]
 >
@@ -152,7 +148,7 @@ If you have a form that contains a submit button and a calculate button (with a 
 
 >[!NOTE]
 >
->Instead of specifying a URL value to reference a XDP file, you can also pass a `com.adobe.idp.Document` instance to the Forms service. The `com.adobe.idp.Document` instance contains a form design. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md).)
+>Instead of specifying a URL value to reference an XDP file, you can also pass a `com.adobe.idp.Document` instance to the Forms service. The `com.adobe.idp.Document` instance contains a form design. (See [Passing Documents to the Forms Service](/help/forms/developing/passing-documents-forms-service.md).)
 
 **Attach files to the form**
 
@@ -164,9 +160,9 @@ You can attach files to a form. When you render a PDF form with file attachments
 
 **Render an interactive PDF form**
 
-To render a form, use a form design that was created in Designer and saved as an XDP or PDF file. As well, you can render a form that was created using Acrobat and saved as a PDF file. To render an interactive PDF form, invoke the `FormsServiceClient` object’s `renderPDFForm` method or `renderPDFForm2` method.
+To render a form, use a form design that was created in Designer and saved as an XDP or PDF file. As well, you can render a form that was created using Acrobat and saved as a PDF file. To render an interactive PDF form, invoke the `FormsServiceClient` object's `renderPDFForm` method or `renderPDFForm2` method.
 
-The `renderPDFForm` uses a `URLSpec` object. The content root to the XDP file is passed to the Forms service using the `URLSpec` object’s `setContentRootURI` method. The Form design name ( `formQuery`) is passed as a separate parameter value. The two values are concatenated to get the absolute reference to the form design.
+The `renderPDFForm` uses a `URLSpec` object. The content root to the XDP file is passed to the Forms service using the `URLSpec` object's `setContentRootURI` method. The Form design name ( `formQuery`) is passed as a separate parameter value. The two values are concatenated to get the absolute reference to the form design.
 
 The `renderPDFForm2` method accepts a `com.adobe.idp.Document` instance that contains the XDP or PDF document to render.
 
@@ -180,7 +176,7 @@ Render an interactive PDF form by using the Forms API (Java):
 
 1. Include project files
 
-   Include client JAR files, such as adobe-forms-client.jar, in your Java project’s class path.
+   Include client JAR files, such as adobe-forms-client.jar, in your Java project's class path.
 
 1. Create a Forms Client API object
 
@@ -190,14 +186,14 @@ Render an interactive PDF form by using the Forms API (Java):
 1. Specify URI values
 
     * Create a `URLSpec` object that stores URI values by using its constructor.
-    * Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
-    * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository:///`.
-    * Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
+    * Invoke the `URLSpec` object's `setApplicationWebRoot` method and pass a string value that represents the application's web root.
+    * Invoke the `URLSpec` object's `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository:///`.
+    * Invoke the `URLSpec` object's `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
 
 1. Attach files to the form
 
     * Create a `java.util.HashMap` object to store file attachments by using its constructor.
-    * Invoke the `java.util.HashMap` object’s `put` method for each file to attach to the rendered form. Pass the following values to this method:
+    * Invoke the `java.util.HashMap` object's `put` method for each file to attach to the rendered form. Pass the following values to this method:
 
         * A string value that specifies the name of the file attachment, including the file name extension.
 
@@ -209,7 +205,7 @@ Render an interactive PDF form by using the Forms API (Java):
 
 1. Render an interactive PDF form
 
-   Invoke the `FormsServiceClient` object’s `renderPDFForm` method and pass the following values:
+   Invoke the `FormsServiceClient` object's `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `com.adobe.idp.Document` object that contains data to merge with the form. If you do not want to merge data, pass an empty `com.adobe.idp.Document` object.
@@ -221,13 +217,13 @@ Render an interactive PDF form by using the Forms API (Java):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object ‘s `getOutputContent` method.
+    * Create a `com.adobe.idp.Document` object by invoking the `FormsResult` object 's `getOutputContent` method.
     * Get the content type of the `com.adobe.idp.Document` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object’s `getInputStream` method.
-    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object’s `read` method and passing the byte array as an argument.
-    * Invoke the `javax.servlet.ServletOutputStream` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `com.adobe.idp.Document` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object's `getOutputStream` method.
+    * Create a `java.io.InputStream` object by invoking the `com.adobe.idp.Document` object's `getInputStream` method.
+    * Create a byte array and populate it with the form data stream by invoking the `InputStream` object's `read` method and passing the byte array as an argument.
+    * Invoke the `javax.servlet.ServletOutputStream` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 ## Render an interactive PDF form using the web service API {#render-an-interactive-pdf-form-using-the-web-service-api}
 
@@ -245,14 +241,14 @@ Render an interactive PDF form by using the Forms API (web service):
 1. Specify URI values
 
     * Create a `URLSpec` object that stores URI values by using its constructor.
-    * Invoke the `URLSpec` object’s `setApplicationWebRoot` method and pass a string value that represents the application’s web root.
-    * Invoke the `URLSpec` object’s `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository:///`.
-    * Invoke the `URLSpec` object’s `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
+    * Invoke the `URLSpec` object's `setApplicationWebRoot` method and pass a string value that represents the application's web root.
+    * Invoke the `URLSpec` object's `setContentRootURI` method and pass a string value that specifies the content root URI value. Ensure that the form design is located in the content root URI. If not, the Forms service throws an exception. To reference the repository, specify `repository:///`.
+    * Invoke the `URLSpec` object's `setTargetURL` method and pass a string value that specifies the target URL value to where form data is posted. If you define the target URL in the form design, you can pass an empty string. You can also specify the URL to where a form is sent in order to perform calculations.
 
 1. Attach files to the form
 
     * Create a `java.util.HashMap` object to store file attachments by using its constructor.
-    * Invoke the `java.util.HashMap` object’s `put` method for each file to attach to the rendered form. Pass the following values to this method:
+    * Invoke the `java.util.HashMap` object's `put` method for each file to attach to the rendered form. Pass the following values to this method:
 
         * A string value that specifies the name of the file attachment, including the file name extension
 
@@ -264,7 +260,7 @@ Render an interactive PDF form by using the Forms API (web service):
 
 1. Render an interactive PDF form
 
-   Invoke the `FormsService` object’s `renderPDFForm` method and pass the following values:
+   Invoke the `FormsService` object's `renderPDFForm` method and pass the following values:
 
     * A string value that specifies the form design name, including the file name extension. If you reference a form design that is part of a Forms application, ensure that you specify the complete path, such as `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
     * A `BLOB` object that contains data to merge with the form. If you do not want to merge data, pass `null`.
@@ -280,13 +276,13 @@ Render an interactive PDF form by using the Forms API (web service):
 
 1. Write the form data stream to the client web browser
 
-    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object’s `value` data member.
-    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object’s `getOutputContent` method.
+    * Create a `FormResult` object by getting the value of the `com.adobe.idp.services.holders.FormsResultHolder` object's `value` data member.
+    * Create a `BLOB` object that contains form data by invoking the `FormsResult` object's `getOutputContent` method.
     * Get the content type of the `BLOB` object by invoking its `getContentType` method.
-    * Set the `javax.servlet.http.HttpServletResponse` object’s content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
-    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object’s `getOutputStream` method.
-    * Create a byte array and populate it by invoking the `BLOB` object’s `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
-    * Invoke the `javax.servlet.http.HttpServletResponse` object’s `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
+    * Set the `javax.servlet.http.HttpServletResponse` object's content type by invoking its `setContentType` method and passing the content type of the `BLOB` object.
+    * Create a `javax.servlet.ServletOutputStream` object used to write the form data stream to the client web browser by invoking the `javax.servlet.http.HttpServletResponse` object's `getOutputStream` method.
+    * Create a byte array and populate it by invoking the `BLOB` object's `getBinaryData` method. This task assigns the content of the `FormsResult` object to the byte array.
+    * Invoke the `javax.servlet.http.HttpServletResponse` object's `write` method to send the form data stream to the client web browser. Pass the byte array to the `write` method.
 
 **Write the form data stream to the client web browser**
 

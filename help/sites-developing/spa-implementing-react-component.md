@@ -53,7 +53,7 @@ The change is persisted and the component updates itself automatically with new 
 
 ### Weather Component Implementation {#weather-component-implementation}
 
-The weather component is based on a publicly-available React component, called [React Open Weather](https://www.npmjs.com/package/react-open-weather). It has been adapted to work as a component within the We.Retail Journal sample SPA application.
+The weather component is based on a publicly available React component, called [React Open Weather](https://www.npmjs.com/package/react-open-weather). It has been adapted to work as a component within the We.Retail Journal sample SPA application.
 
 The following are snippets of the NPM documentation of the usage of the React Open Weather component.
 

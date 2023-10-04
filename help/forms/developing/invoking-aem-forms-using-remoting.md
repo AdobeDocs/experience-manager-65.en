@@ -1,14 +1,10 @@
 ---
 title: Invoking AEM Forms using Remoting
-seo-title: Invoking AEM Forms using Remoting
 description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
-seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
-uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
 ---
@@ -544,7 +540,7 @@ You can start a client application built with Flex and use the centralized login
 
 You can pass secure documents to AEM Forms when invoking a process that requires one or more documents. By passing a secure document, you are protecting business information and confidential documents. In this situation, a document can refer to a PDF document, an XML document, a Word document, and so on. Passing a secure document to AEM Forms from a client application written in Flex is required when AEM Forms is configured to allow secure documents. (See [Configuring AEM Forms to accept secure and unsecure documents](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-When passing a secure document, use single sign-on and specify a AEM forms user who has the *Document Upload Application User* role. Without this role, the user cannot upload a secure document. You can programmatically assign a role to a user. (See [Managing Roles and Permissions](/help/forms/developing/users.md#managing-roles-and-permissions).)
+When passing a secure document, use single sign-on and specify an AEM forms user who has the *Document Upload Application User* role. Without this role, the user cannot upload a secure document. You can programmatically assign a role to a user. (See [Managing Roles and Permissions](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >

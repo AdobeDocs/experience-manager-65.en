@@ -129,7 +129,7 @@ Use the following steps to add support for custom special characters:
    <td>
     <ol>
      <li>Add a child node under "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" with mandatory properties. </li>
-     <li>Add the "sling:orderBefore (String)" property to the newly-created child node. </li>
+     <li>Add the "sling:orderBefore (String)" property to the newly created child node. </li>
      <li>Add the node name as the value before which the newly added special character is to be shown. </li>
      <li>Click Save All. </li>
      <li>Refresh the Text Editor\Create Correspondence UI so you can see the changes.<br /> </li>

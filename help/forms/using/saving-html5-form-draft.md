@@ -46,7 +46,7 @@ To enable Save as Draft functionality for your existing [custom profile](/help/f
 
 ## Drafts storage and listing {#drafts-storage-and-listing}
 
-After enabling Save as Draft functionality for a form; when the form is saved, it is listed in the [Drafts and Submission component](/help/forms/using/draft-submission-component.md). You can retrieve and start filling the saved form form the Draft and Submission component.
+After enabling Save as Draft functionality for a form; when the form is saved, it is listed in the [Drafts and Submission component](/help/forms/using/draft-submission-component.md). You can retrieve and start filling the saved form the Draft and Submission component.
 
 To enable forms listing for the Draft and Submission component, add the following property to the profile node:
 
