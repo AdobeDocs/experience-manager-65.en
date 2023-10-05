@@ -170,7 +170,7 @@ The properties are distributed across several tabs:
 
 ### Site Structure {#site-structure}
 
-* Provide links to pages that provide site-wide functionality, such as **Signup Page**, **Offline Page**, amongst others.
+* Provide links to pages that provide site-wide functionality, such as **Signup Page**, **Offline Page**, among others.
 
 ## Editing Page Properties {#editing-page-properties-2}
 

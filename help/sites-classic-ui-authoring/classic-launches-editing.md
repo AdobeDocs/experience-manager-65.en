@@ -26,7 +26,7 @@ When a launch has been created for a page (or set of pages) you can edit the con
 
    >[!NOTE]
    >
-   >You can use the **Page** tab of sidekick to perform actions such as **Create Child Page**, amongst others.
+   >You can use the **Page** tab of sidekick to perform actions such as **Create Child Page**, among others.
 
 ## Editing a Launch Configuration {#editing-a-launch-configuration}
 
