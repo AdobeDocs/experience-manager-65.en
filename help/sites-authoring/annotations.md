@@ -108,7 +108,7 @@ The Annotate mode lets you create, edit, move or delete annotations on your cont
 
 >[!NOTE]
 >
->Annotations can not be added to a page that has been locked by another user.
+>Annotations cannot be added to a page that has been locked by another user.
 
 ### Annotation Indicator {#annotation-indicator}
 

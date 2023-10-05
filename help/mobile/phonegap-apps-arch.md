@@ -1,13 +1,9 @@
 ---
 title: The Anatomy of an App
-seo-title: The Anatomy of an App
 description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
-seo-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
-uuid: 4c1a74c1-85af-4a79-b723-e9fbfc661d35
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
 ---
 # The Anatomy of an App{#the-anatomy-of-an-app}
@@ -311,7 +307,7 @@ The after-platform_add directory contains the `copy_AMS_Conifg.js` file. This sc
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-The after-prepare directory contains the `copy_resource_files.js` file. This script copies a number of icon and splash screen images into platform-specific locations.
+The after-prepare directory contains the `copy_resource_files.js` file. This script copies several icon and splash screen images into platform-specific locations.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 

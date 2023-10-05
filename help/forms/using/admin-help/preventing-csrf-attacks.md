@@ -24,7 +24,7 @@ For example, consider a scenario where you are logged in to administration conso
 **Null referer:** When you open a new browser window or tab, then type an address and press Enter, the referrer is null. The request is entirely new and not originating from a parent web page; therefore, there is no referrer for the request. The Forms Server can receive a null referrer from:
 
 * requests made on SOAP or REST endpoints from Acrobat
-* any desktop client making an HTTP request on a AEM forms SOAP or REST endpoint
+* any desktop client making an HTTP request on an AEM forms SOAP or REST endpoint
 * when a new browser window is opened and the URL for any AEM forms web application login page is entered
 
 Allow a null referrer on SOAP and REST endpoints. Also allow a null referrer on all URI login pages such as /adminui and /contentspace and their corresponding mapped resources. For example, the mapped servlet for /contentspace is /contentspace/faces/jsp/login.jsp, which should be a null referrer exception. This exception is required only if you enable GET filtering for your web application. Your applications can specify whether to allow null referrers. See "Protecting from Cross-Site Request Forgery attacks" in [Hardening and Security for AEM forms](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).

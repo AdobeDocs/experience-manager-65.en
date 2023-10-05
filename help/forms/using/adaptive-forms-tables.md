@@ -1,14 +1,9 @@
 ---
 title: Tables in adaptive forms
-seo-title: Tables in adaptive forms
 description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: 1a139530-27bd-44da-8bf4-5b375e75cf32
 ---
@@ -212,7 +207,7 @@ Expanded column of a table on a mobile device
 
 Tables in adaptive forms let you populate the table at runtime using data from an XML file. The data XML file can reside in the local file system of the machine where AEM Forms server is running or in the CRX repository.
 
-Let’s take example of the following bank transaction summary table that we want to populate with data from an XML file.
+Let's take example of the following bank transaction summary table that we want to populate with data from an XML file.
 
 ![data-merge-table](assets/data-merge-table.png)
 
@@ -307,7 +302,7 @@ In addition, you can drag-drop a group of XSD complex type elements to create a 
 
 >[!NOTE]
 >
->The number of elements in a XDP table component, a subform, or an XSD complex type cannot exceed the number of cells in a row. For example, you cannot drop four elements on a row that has only three cells. It will result in an error.
+>The number of elements in an XDP table component, a subform, or an XSD complex type cannot exceed the number of cells in a row. For example, you cannot drop four elements on a row that has only three cells. It will result in an error.
 >
 >If the number of elements is less than the number of cells in a row, the new row first adds cells based on the elements, and then the default cells are added to fill in the remaining cells in the row. For example, if you drop a group of three elements in a row that has four cells, the first three cells are based on the elements you dropped and the remaining one cell will be the default table cell.
 

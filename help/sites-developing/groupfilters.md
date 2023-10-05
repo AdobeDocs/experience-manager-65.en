@@ -89,7 +89,7 @@ The `matches` function returns `true` if the device capabilities satisfy all of 
 
 * A DeviceGroup object
 * The name of the user agent
-* A Map object that contains the device capabilities. The Map keys are the WURFL™ capability names and the values are are the corresponding values from the WURFL™ database.
+* A Map object that contains the device capabilities. The Map keys are the WURFL™ capability names and the values are the corresponding values from the WURFL™ database.
 
 The [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) interface contains a subset of the WURFL™ capability names in static fields. Use these field constants as keys when retrieving values from the Map of device capabilities.
 

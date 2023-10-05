@@ -178,7 +178,7 @@ The Close/Reopen action may be taken by administrators or community moderators.
 
 ### Flag / Unflag {#flag-unflag}
 
-Flagging is a means for any signed-in member, except for the creator of the content, to indicate there is an issue with the content of a post. Once flagged, an unflag icon will appear allowing the same member to unflag the content.
+Flagging is a means for any signed-in member, except for the creator of the content, to indicate there is an issue with the content of a post. Once flagged, an unflag icon appears, allowing the same member to unflag the content.
 
 In-context moderation can be configured to allow members to select a reason when flagging a post. The list of selectable flag reasons is configurable including whether or not a custom reason can be entered. The flag reason is saved with the UGC but the reason does not trigger any particular action. Only the number of flags triggers a notification. Flagged content is annotated as such, so that moderators may act on it.
 
