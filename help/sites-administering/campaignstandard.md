@@ -1,12 +1,10 @@
 ---
 title: Integrating AEM 6.5 with Adobe Campaign Standard
 description: Learn how to integrate AEM 6.5 with Adobe Campaign Standard.
-uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
 ---
 
@@ -59,7 +57,7 @@ Adobe Campaign Standard by default comes with an `aemserver` user that AEM uses 
 
 Your `aemserver` user now has the necessary rights so that AEM can use it to communicate with Adobe Campaign.
 
-However, before AEM can use the `aemserver` user, its password must be set. This can not be done through Adobe Campaign. It must be carried out by an Adobe support engineer. [Please raise a ticket with Adobe Customer Care](https://experienceleague.adobe.com/?support-tab=home#support) to request the reset of the `aemserver` password. Once you have the password from Adobe Customer Care, please keep it in a secure location.
+However, before AEM can use the `aemserver` user, its password must be set. This cannot be done through Adobe Campaign. It must be carried out by an Adobe support engineer. [Please raise a ticket with Adobe Customer Care](https://experienceleague.adobe.com/?support-tab=home#support) to request the reset of the `aemserver` password. Once you have the password from Adobe Customer Care, please keep it in a secure location.
 
 ## Verify the AEMResourceTypeFilter in Campaign {#resource-type-filter}
 
@@ -87,7 +85,7 @@ Your `AEMResourceTypeFilter` is now configured to retrieve the correct content f
 
 ## Create an AEM-Specific Email Delivery Template in Campaign {#aem-email-delivery-template}
 
-By default, AEM is not enabled in Adobe Campaign’s email templates. You must configure a new email delivery template that can be used to create emails using AEM content. To create an AEM-specific email delivery template, follow these steps.
+By default, AEM is not enabled in Adobe Campaign's email templates. You must configure a new email delivery template that can be used to create emails using AEM content. To create an AEM-specific email delivery template, follow these steps.
 
 1. Log into Adobe Campaign as an administrator.
 
@@ -147,7 +145,7 @@ AEM can now communicate with Adobe Campaign.
 
 >[!NOTE]
 >
->Make sure that your Adobe Campaign server is reachable via the internet. AEM can not access private networks.
+>Make sure that your Adobe Campaign server is reachable via the internet. AEM cannot access private networks.
 
 ## Configure Replication to AEM Publish Instance {#replication}
 
@@ -185,7 +183,7 @@ You have configured replication to the AEM publish instance so your campaign rec
 
 1. Sign into the AEM authoring instance as an administrator.
 1. From the global navigation side rail, select **Tools** &gt; **Operations** &gt; **Web Console** &gt; **OSGi Configuration** and search for **Day CQ link Externalizer**.
-1. By default the last entry in the **Domains** field is intended for the publish instance. Change the URL from the default `http://localhost:4503` to your publicly-available publish instance.
+1. By default the last entry in the **Domains** field is intended for the publish instance. Change the URL from the default `http://localhost:4503` to your publicly available publish instance.
 
    ![Configuring the Externalizer](assets/acc-externalizer-config.png)
 

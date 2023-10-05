@@ -109,7 +109,7 @@ You can edit email content in either the classic user interface or the touch-opt
 
 When editing your content, you can insert:
 
-* Adobe Campaign context fields. These are are fields that you can insert within your text that will adapt according to the recipient’s data (for example first name, last name, or any data of the target dimension).
+* Adobe Campaign context fields. These are fields that you can insert within your text that will adapt according to the recipient’s data (for example first name, last name, or any data of the target dimension).
 * Adobe Campaign personalization blocks. These are blocks of predefined content that are not related to the recipient’s data, such as a brand logo, or link to a mirror page.
 
 See [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) for a full description of the Campaign components.

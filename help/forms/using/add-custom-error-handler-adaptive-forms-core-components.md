@@ -7,8 +7,8 @@ keywords: Add a custom error handler, add a default error handler, add a error h
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
+exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
 ---
-
 # Error Handlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
 
 | Version | Article link |

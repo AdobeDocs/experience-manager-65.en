@@ -1,14 +1,10 @@
 ---
 title: Creating Translation Projects for Content Fragments
-seo-title: Creating Translation Projects for Content Fragments
 description: Learn how to translate content fragments.
-seo-description: Learn how to translate content fragments.
-uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
@@ -27,7 +23,7 @@ In this workflow, content fragments to be translated are copied to the language 
 
 **Update language copies**
 
-When the source content fragment is updated or modified, the corresponding locale/language specific content fragment requires retranslation. The update language copies workflow translates an additional group of content fragments and includes it in a lanugage copy for a particular locale. In this case, the translated content fragments are added to the target folder that already contains previously-translated content fragments.
+When the source content fragment is updated or modified, the corresponding locale/language specific content fragment requires retranslation. The update language copies workflow translates an additional group of content fragments and includes it in a lanugage copy for a particular locale. In this case, the translated content fragments are added to the target folder that already contains previously translated content fragments.
 
 ## Create and translate workflow {#create-and-translate-workflow}
 

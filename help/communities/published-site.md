@@ -139,7 +139,7 @@ Create a Reference Group:
 
    ![creategroup](assets/creategroup.png)
 
-After new group is created, **select the new Sports group** in order to create two groups (nested) within it. As a site structure can not begin with the groups function, after opening the Sports group, it is necessary to select the Groups link:
+After new group is created, **select the new Sports group** in order to create two groups (nested) within it. As a site structure cannot begin with the groups function, after opening the Sports group, it is necessary to select the Groups link:
 
 ![grouplink1](assets/grouplink1.png)
 

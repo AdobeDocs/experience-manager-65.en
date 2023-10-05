@@ -1,14 +1,10 @@
 ---
 title: Working with Adobe Campaign Classic and Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: You can create email content in AEM and process it in Adobe Campaign emails
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails
-uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 ---
 # Working with Adobe Campaign Classic and Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
@@ -143,8 +139,8 @@ To edit email content:
 
 When editing your content, you can insert:
 
-* Adobe Campaign context fields. These are are fields that you can insert within your text that will adapt according to the recipient’s data (for example first name, last name, or any data of the target dimension).
-* Adobe Campaign personalization blocks. These are blocks of predefined content that are not related to the recipient’s data, such as a brand logo, or link to a mirror page.
+* Adobe Campaign context fields. These are fields that you can insert within your text that adapt according to the recipient's data (for example first name, last name, or any data of the target dimension).
+* Adobe Campaign personalization blocks. These are blocks of predefined content that are not related to the recipient's data, such as a brand logo, or link to a mirror page.
 
 See [Adobe Campaign Components](/help/sites-authoring/adobe-campaign-components.md) for a full description of the Campaign components.
 
@@ -177,7 +173,7 @@ To insert personalization:
    >* To add or hide personalization elements, see [Managing personalization fields and blocks](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Important**: All seed table fields must also be in the recipient table (or corresponding contact table).
 
-1. Insert text by typing. Insert context fields or personalization blocks by clicking the Adobe Campaign components and selecting them. When finished select the checkmark.
+1. Insert text by typing. Insert context fields or personalization blocks by clicking the Adobe Campaign components and selecting them. When finished, select the checkmark.
 
    ![chlimage_1-27](assets/chlimage_1-27a.png)
 

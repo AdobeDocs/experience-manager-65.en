@@ -3,13 +3,13 @@ title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 seo-title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
 seo-description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
-keywords: Enable Core Components, Core Components Adaptive Forms, Core Components on 6.5, Adaptive Forms Core Components on AEM 6.5, AF Core Components on AEM 6.5, AEM 6.5 Forms Core Components 
+keywords: Enable Core Components, Core Components Adaptive Forms, Core Components on 6.5, Adaptive Forms Core Components on AEM 6.5, AF Core Components on AEM 6.5, AEM 6.5 Forms Core Components
 contentOwner: Khushwant Singh
-topic-tags: Adaptive Forms 
+topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 ---
-
 # Enable Adaptive Forms Core Components on AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
 | Version | Article link |

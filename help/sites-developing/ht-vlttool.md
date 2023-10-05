@@ -1,14 +1,10 @@
 ---
 title: How to use the VLT Tool
-seo-title: How to use the VLT Tool
 description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
-seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
-uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 ---
 # How to Use the VLT Tool {#how-to-use-the-vlt-tool}
@@ -328,7 +324,7 @@ The following table describes all available VLT commands. See the individual com
 |`diff`|`di`|Displays the differences between two paths.|
 |`console`||Runs an interactive console.|
 |`rcp`||Copies a node tree from one remote repository to another.|
-|`sync`||Allows to control the vault sync service.|
+|`sync`||Lets you control the vault sync service.|
 
 ### Export {#export}
 
@@ -741,7 +737,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### Sync {#sync}
 
-Allows to control the vault sync service. Without any arguments this command tries to put the current working directory under sync control. If executed within a vlt checkout, it uses the respective filter and host to configure the synchronization. If executed outside of a vlt checkout, it registers the current folder for synchronization only if the directory is empty.
+Lets you control the vault sync service. Without any arguments this command tries to put the current working directory under sync control. If run within a vlt checkout, it uses the respective filter and host to configure the synchronization. If run outside of a vlt checkout, it registers the current folder for synchronization only if the directory is empty.
 
 #### Syntax {#syntax-18}
 

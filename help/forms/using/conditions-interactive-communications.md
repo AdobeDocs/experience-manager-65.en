@@ -60,7 +60,7 @@ The assets in the conditions that are rendered based on the applied rules and th
 
    >[!NOTE]
    >
-   >Only none-based, newly-created assets and FDM-based assets (created using same FDM as the condition being created) appear in the Select Assets page.
+   >Only none-based, newly created assets and FDM-based assets (created using same FDM as the condition being created) appear in the Select Assets page.
 
 1. Tap on the appropriate assets to select them to include in the condition and then tap **[!UICONTROL Done]**.
 

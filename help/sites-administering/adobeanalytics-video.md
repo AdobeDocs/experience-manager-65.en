@@ -1,14 +1,10 @@
 ---
 title: Configuring Video Tracking for Adobe Analytics
-seo-title: Configuring Video Tracking for Adobe Analytics
 description: Learn about configuring video tracking for SiteCatalyst.
-seo-description: Learn about configuring video tracking for SiteCatalyst.
-uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 ---
@@ -51,7 +47,7 @@ Use the following procedure to set up a framework for video tracking using each 
 
 The Milestones method tracks the most information about the video, is highly customizable, and easy to configure.
 
-To use the Milestones method, specify time-based track offsets to define the milestones. When a video playback passes a milestone, the page calls Adobe Analytics to track the event. For each milestone that you define, the component creates a CQ variable that you can map to a Adobe Analytics property. The name of these CQ variables use the following format:
+To use the Milestones method, specify time-based track offsets to define the milestones. When a video playback passes a milestone, the page calls Adobe Analytics to track the event. For each milestone that you define, the component creates a CQ variable that you can map to an Adobe Analytics property. The name of these CQ variables use the following format:
 
 ```shell
 eventdata.events.milestoneXX
@@ -79,11 +75,11 @@ The following table describes the default CQ variables that are provided for the
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variables mapped to this will contain the file’s name. Only sent along with eventdata.events.a.media.view </td>
+   <td>Variables mapped to this will contain the file's name. Only sent along with eventdata.events.a.media.view </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Variables mapped to this will contain the file’s path on the server. Only sent along with eventdata.events.a.media.view </td>
+   <td>Variables mapped to this will contain the file's path on the server. Only sent along with eventdata.events.a.media.view </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
@@ -244,7 +240,7 @@ The Non-Legacy Milestones method is similar to the Milestones method except mile
 
 * When a video playback passes a milestone, the page calls Adobe Analytics to track the event.
 * The [static set of CQ variables](#cqvars) that are defined for mapping with Adobe Analytics properties.
-* For each milestone that you define, the component creates a CQ variable that you can map to a Adobe Analytics property.
+* For each milestone that you define, the component creates a CQ variable that you can map to an Adobe Analytics property.
 
 The name of these CQ variables use the following format:
 
@@ -296,11 +292,11 @@ This method is similar to the Milestones method with the difference that the mil
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variables mapped to this will contain the file’s name. Only sent once, at the beginning of playing a video.</td>
+   <td>Variables mapped to this will contain the file's name. Only sent once, at the beginning of playing a video.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Variable mapped to this will contain the file’s path on the server. Only sent once, at the beginning of playing a video.</td>
+   <td>Variable mapped to this will contain the file's path on the server. Only sent once, at the beginning of playing a video.</td>
   </tr>
  </tbody>
 </table>
@@ -353,11 +349,11 @@ When using the** legacy seconds** method, Adobe Analytics calls get triggered ev
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variable mapped to this will contain the file’s name. Only sent once, at the beginning of playing a video.</td>
+   <td>Variable mapped to this will contain the file's name. Only sent once, at the beginning of playing a video.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Variable mapped to this will contain the file’s path on the server. Only sent once, at the beginning of playing a video.</td>
+   <td>Variable mapped to this will contain the file's path on the server. Only sent once, at the beginning of playing a video.</td>
   </tr>
  </tbody>
 </table>

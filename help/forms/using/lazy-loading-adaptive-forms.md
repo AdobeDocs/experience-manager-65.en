@@ -1,14 +1,9 @@
 ---
 title: Improve performance of large forms with lazy loading
-seo-title: Improve performance of large forms with lazy loading
 description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
-seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
-uuid: 6be3d2f0-1b2a-4090-af66-2b08487c31bc
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
-
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 ---
@@ -85,7 +80,7 @@ Some limitations, recommendations, and important points to keep in mind when wor
 
 Important points to keep in mind while developing scripts for lazy loading panels are as follows:
 
-* Ensure that initialize and calculate scripts used on the fields of a lazy loaded fragment are are idempotent in nature. Idempotent scripts are those which have same effect even after multiple executions.
+* Ensure that initialize and calculate scripts used on the fields of a lazy loaded fragment are idempotent in nature. Idempotent scripts are those which have same effect even after multiple executions.
 * Use the globally available property of fields to make value of fields located in a lazy loading panel available to all other panels of a form.
 * Do not forward reference value of a field inside a lazy panel irrespective of field being marked globally across fragments or not.
 * Use panel reset feature to reset everything visible on the panel by using the following click expression.  

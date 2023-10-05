@@ -1,12 +1,10 @@
 ---
 title: Creating and organizing pages
 description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
-uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 ---
 # Creating and Organizing Pages{#creating-and-organizing-pages}
@@ -317,7 +315,7 @@ To move or rename a page:
 
 ### Locking a Page {#locking-a-page}
 
-You can [lock/unlock a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
+You can [lock/unlock a page](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page) from either a console or when editing an individual page. Information about locked pages is also shown in both locations.
 
 ### Creating a New Folder {#creating-a-new-folder}
 

@@ -1,7 +1,7 @@
 ---
 title: Updating your Content Fragments for Optimized GraphQL Filtering
 description: Learn how to update your Content Fragments for Optimized GraphQL Filtering in Adobe Experience Manager for headless content delivery.
-exl-id: 6fd85b54-ecc1-4a2c-99f9-f25d69032b73
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
 ---
 # Updating your Content Fragments for optimized GraphQL Filtering {#updating-content-fragments-for-optimized-graphql-filtering}
 
