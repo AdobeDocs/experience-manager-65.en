@@ -17,7 +17,7 @@ The [Web Content Accessibility Guidelines (WCAG) version 2.1](https://www.w3.org
 >
 >An [updated version of the guidelines, WCAG 2.2,](https://www.w3.org/TR/WCAG22/) is currently in development, but will not be considered at this point in time.
 
-WCAG 2.1 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities. They provide advice to web content authors, designers and developers on ensuring that the resources they produce are as accessible as possible to as many people as possible, regardless of any disability they have; for example, visual impairment, hearing loss, learning difficulties, age related limitations, amongst others.
+WCAG 2.1 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities. They provide advice to web content authors, designers and developers on ensuring that the resources they produce are as accessible as possible to as many people as possible, regardless of any disability they have; for example, visual impairment, hearing loss, learning difficulties, age related limitations, among others.
 
 For example, describing an image (or any other non-text content) by using the `alt` attribute in HTML greatly benefits people who are blind or partially sighted. The textual description in the `alt` attribute can either be converted into speech output or transmitted to electronic refreshable braille displays.
 

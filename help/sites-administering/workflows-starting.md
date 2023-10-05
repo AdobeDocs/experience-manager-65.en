@@ -94,7 +94,7 @@ A workflow package:
 
     * **Payload**
 
-      This can be a page, node, asset, package, amongst other resources.
+      This can be a page, node, asset, package, among other resources.
 
     * **Title**
 

@@ -214,7 +214,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ### Content Fragments {#content-fragments}
 
-A [content fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. They can be used to access structured data, such as texts, numbers, dates, amongst others.
+A [content fragment](/help/assets/content-fragments/content-fragments.md) is a special type of asset. They can be used to access structured data, such as texts, numbers, dates, among others.
 
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
 

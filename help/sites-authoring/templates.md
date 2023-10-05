@@ -420,7 +420,7 @@ In **Structure** mode of the template editor:
     * In the left side of the dialogue under **Policy**, you have the ability to select an existing policy or select an existing one.
     * In the right side of the dialogue under **Properties**, you can set the properties specific to the component type.
 
-  The properties available are dependent on the selected component. For example, for a text component the properties define the copy and paste options, formatting options, and paragraph style amongst other options.
+  The properties available are dependent on the selected component. For example, for a text component the properties define the copy and paste options, formatting options, and paragraph style among other options.
 
   ***Policy***
 
