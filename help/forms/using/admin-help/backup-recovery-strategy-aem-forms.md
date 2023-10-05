@@ -1,14 +1,10 @@
 ---
 title: Backup and recovery strategy for AEM forms
-seo-title: Backup and recovery strategy for AEM forms
 description: Learn how to implement a strategy to back up data and ensuring that it remains in sync with the AEM forms data.
-seo-description: Learn how to implement a strategy to back up data and ensuring that it remains in sync with the AEM forms data.
-uuid: 98fc3115-76e5-4e58-aa30-3601866a441f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 ---
 # Backup and recovery strategy for AEM forms{#backup-and-recovery-strategy-for-aem-forms}
@@ -63,11 +59,11 @@ Use the following guidelines if you must recover AEM forms into a different envi
 * Change in the drive letters or directory path
 * Change to a different database host, port, or name
 
-Typically, such recovery scenarios are caused by hardware failure of the server that hosts the application server, database server, or forms server. In addition to the AEM forms-specific configurations that are described in this section, you should also make the necessary changes for other parts of the AEM forms deployment such as load balancers and firewalls, if the hostname or IP address of a AEM forms server changes.
+Typically, such recovery scenarios are caused by hardware failure of the server that hosts the application server, database server, or forms server. In addition to the AEM forms-specific configurations that are described in this section, you should also make the necessary changes for other parts of the AEM forms deployment such as load balancers and firewalls, if the hostname or IP address of an AEM forms server changes.
 
 ### What cannot be changed {#what-cannot-be-changed}
 
-Even though you can change the database server and many other parameters, you cannot change the application server type or database type when you recover AEM forms from a backup. For example, if you are recovering a AEM forms backup, you cannot change the application server from JBoss to WebLogic or database from Oracle to DB2. In addition, recovered AEM forms must use the same file system paths such as the fonts directory.
+Even though you can change the database server and many other parameters, you cannot change the application server type or database type when you recover AEM forms from a backup. For example, if you are recovering an AEM forms backup, you cannot change the application server from JBoss to WebLogic or database from Oracle to DB2. In addition, recovered AEM forms must use the same file system paths such as the fonts directory.
 
 ### Restarting after a recovery {#restarting-after-a-recovery}
 

@@ -1,14 +1,10 @@
 ---
 title: Invoking AEM Forms using the JavaAPI
-seo-title: Invoking AEM Forms using the JavaAPI
 description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
-seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
-uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 ---
@@ -20,7 +16,7 @@ AEM Forms can be invoked by using the AEM Forms Java API. When using the AEM For
 
 The Invocation API are classes that are located in the `com.adobe.idp.dsc` package. Using these classes, you can send an invocation request directly to a service and handle an invocation response that is returned. Use the Invocation API to invoke short-lived or long-lived processes that were created by using Workbench.
 
-The recommended way to programmatically invoke a service is to use a Java client library that corresponds to the service as opposed to the Invocation API. For example, to invoke the Encryption service, use the Encryption service client library. To perform an Encryption service operation, invoke a method that belongs to the Encryption service client object. You can encrypt a PDF document with a password by invoking the `EncryptionServiceClient` object’s `encryptPDFUsingPassword` method.
+The recommended way to programmatically invoke a service is to use a Java client library that corresponds to the service as opposed to the Invocation API. For example, to invoke the Encryption service, use the Encryption service client library. To perform an Encryption service operation, invoke a method that belongs to the Encryption service client object. You can encrypt a PDF document with a password by invoking the `EncryptionServiceClient` object's `encryptPDFUsingPassword` method.
 
 The Java API supports the following features:
 
@@ -48,7 +44,7 @@ The Java API supports the following features:
 
 ## Including AEM Forms Java library files {#including-aem-forms-java-library-files}
 
-To programmatically invoke a AEM Forms service by using the Java API, include required library files (JAR files) in your Java project’s classpath. The JAR files that you include in your client application’s classpath depend on several factors:
+To programmatically invoke a AEM Forms service by using the Java API, include required library files (JAR files) in your Java project's classpath. The JAR files that you include in your client application's classpath depend on several factors:
 
 * The AEM Forms service to invoke. A client application can invoke one or more services.
 * The mode in which you want to invoke a AEM Forms service. You can use the EJB or SOAP mode. (See [Setting connection properties](invoking-aem-forms-using-java.md#setting-connection-properties).)
@@ -74,17 +70,17 @@ The following table lists the JAR files that are required to invoke AEM Forms se
  <tbody>
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
-   <td><p>Must always be included in a Java client application’s class path.</p></td>
+   <td><p>Must always be included in a Java client application's class path.</p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
-   <td><p>Must always be included in a Java client application’s class path.</p></td>
+   <td><p>Must always be included in a Java client application's class path.</p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
-   <td><p>Must always be included in a Java client application’s class path.</p></td>
+   <td><p>Must always be included in a Java client application's class path.</p></td>
    <td><p>&lt;<i>install directory</i>&gt;/sdk//client-libs/&lt;app server&gt;</p></td>
   </tr>
   <tr>
@@ -256,7 +252,7 @@ The following table lists the JAR files that are dependant upon the connection m
   </tr>
   <tr>
    <td><p>wlclient.jar</p> </td>
-   <td><p>if AEM Forms is deployed on BEA WebLogic Server®, then include this JAR file.</p> </td>
+   <td><p>if AEM Forms is deployed on BEA WebLogic Server&reg;, then include this JAR file.</p> </td>
    <td><p>WebLogic-specific lib directory</p> <p>If you deploy your client application on the same J2EE application server, you do not need to include this file.</p> </td>
   </tr>
   <tr>
@@ -390,7 +386,7 @@ The following table specifies invoking scenarios and lists the required JAR file
 
 ### Upgrading JAR files {#upgrading-jar-files}
 
-If you are upgrading from LiveCycle to AEM Forms, it is recommeded that you include the AEM Forms JAR files in your Java project’s class path. For example, if you are using services such as the Rights Management service, you will encounter a compatibility issue if you do not include AEM Forms JAR files in your class path.
+If you are upgrading from LiveCycle to AEM Forms, it is recommeded that you include the AEM Forms JAR files in your Java project's class path. For example, if you are using services such as the Rights Management service, you will encounter a compatibility issue if you do not include AEM Forms JAR files in your class path.
 
 Assuming that you are upgrading to AEM Forms. To use a Java application that invokes the Rights Management service, include the AEM Forms versions of the following JAR files:
 
@@ -424,7 +420,7 @@ To successfully invoke a AEM Forms service, set the following connection propert
 
 * **DSC_DEFAULT_SOAP_ENDPOINT**: If you are using the SOAP connection mode, this value represents the endpoint to where an invocation request is sent. To remotely invoke AEM Forms, specify the J2EE application server name on which AEM Forms is deployed. If your client application is located on the same J2EE application server, you can specify `localhost` (for example, `http://localhost:8080`.)
 
-    * The port value `8080` is applicable if the J2EE application is JBoss. If the J2EE application server is IBM® WebSphere®, use port `9080`. Likewise, if the J2EE application server is WebLogic, use port `7001`. (These values are default port values. If you change the port value, use the applicable port number.)
+    * The port value `8080` is applicable if the J2EE application is JBoss. If the J2EE application server is IBM&reg; WebSphere&reg;, use port `9080`. Likewise, if the J2EE application server is WebLogic, use port `7001`. (These values are default port values. If you change the port value, use the applicable port number.)
 
 * **DSC_TRANSPORT_PROTOCOL**: If you are using the EJB connection mode, specify `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` for this value. If you are using the SOAP connection mode, specify `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`.
 * **DSC_SERVER_TYPE**: Specifies the J2EE application server on which AEM Forms is deployed. Valid values are `JBoss`, `WebSphere`, `WebLogic`.
@@ -447,7 +443,7 @@ To successfully invoke a AEM Forms service, set the following connection propert
 To set connection properties, perform the following tasks:
 
 1. Create a `java.util.Properties` object by using its constructor.
-1. To set the `DSC_DEFAULT_EJB_ENDPOINT` connection property, invoke the `java.util.Properties` object’s `setProperty` method and pass the following values:
+1. To set the `DSC_DEFAULT_EJB_ENDPOINT` connection property, invoke the `java.util.Properties` object's `setProperty` method and pass the following values:
 
     * The `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value
     * A string value that specifies the URL of the J2EE application server that hosts AEM Forms
@@ -456,7 +452,7 @@ To set connection properties, perform the following tasks:
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` enumeration value instead of the `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` enumeration value.
 
-1. To set the `DSC_TRANSPORT_PROTOCOL` connection property, invoke the `java.util.Properties` object’s `setProperty` method and pass the following values:
+1. To set the `DSC_TRANSPORT_PROTOCOL` connection property, invoke the `java.util.Properties` object's `setProperty` method and pass the following values:
 
     * The `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` enumeration value
     * The `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value
@@ -465,17 +461,17 @@ To set connection properties, perform the following tasks:
    >
    >If you are using the SOAP connection mode, specify the `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`enumeration value instead of the `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` enumeration value.
 
-1. To set the `DSC_SERVER_TYPE` connection property, invoke the `java.util.Properties` object’s `setProperty` method and pass the following values:
+1. To set the `DSC_SERVER_TYPE` connection property, invoke the `java.util.Properties` object's `setProperty` method and pass the following values:
 
     * The `ServiceClientFactoryProperties.DSC_SERVER_TYPE`enumeration value
     * A string value that specifies the J2EE application server that hosts AEM Forms (for example, if AEM Forms is deployed on JBoss, specify `JBoss`).
 
-        1. To set the `DSC_CREDENTIAL_USERNAME` connection property, invoke the `java.util.Properties` object’s `setProperty` method and pass the following values:
+        1. To set the `DSC_CREDENTIAL_USERNAME` connection property, invoke the `java.util.Properties` object's `setProperty` method and pass the following values:
 
     * The `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME` enumeration value
     * A string value that specifies the user name required to invoke AEM Forms
 
-        1. To set the `DSC_CREDENTIAL_PASSWORD` connection property, invoke the `java.util.Properties` object’s `setProperty` method and pass the following values:
+        1. To set the `DSC_CREDENTIAL_PASSWORD` connection property, invoke the `java.util.Properties` object's `setProperty` method and pass the following values:
 
     * The `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD` enumeration value
     * A string value that specifies the corresponding password value
@@ -535,7 +531,7 @@ The following Java code example sets connection properties in SOAP mode to invok
 
 >[!NOTE]
 >
->If you select the SOAP connection mode, ensure to include additional JAR files in your client application’s class path.
+>If you select the SOAP connection mode, ensure to include additional JAR files in your client application's class path.
 
 **Setting connection properties when service security is disabled**
 
@@ -566,16 +562,16 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 **Using a Context object to invoke AEM Forms**
 
-You can use a `com.adobe.idp.Context` object to invoke a AEM Forms service with an authenticated user (the `com.adobe.idp.Context` object represents an authenticated user). When using a `com.adobe.idp.Context` object, you do not need to set the `DSC_CREDENTIAL_USERNAME` or `DSC_CREDENTIAL_PASSWORD` properties. You can obtain a `com.adobe.idp.Context` object when authenicating users by using the `AuthenticationManagerServiceClient` object’s `authenticate` method.
+You can use a `com.adobe.idp.Context` object to invoke a AEM Forms service with an authenticated user (the `com.adobe.idp.Context` object represents an authenticated user). When using a `com.adobe.idp.Context` object, you do not need to set the `DSC_CREDENTIAL_USERNAME` or `DSC_CREDENTIAL_PASSWORD` properties. You can obtain a `com.adobe.idp.Context` object when authenicating users by using the `AuthenticationManagerServiceClient` object's `authenticate` method.
 
-The `authenticate` method returns an `AuthResult` object that contains the results of the authentication. You can create a `com.adobe.idp.Context` object by invoking its constructor. Then invoke the `com.adobe.idp.Context` object’s `initPrincipal` method and pass the `AuthResult` object, as shown in the following code:
+The `authenticate` method returns an `AuthResult` object that contains the results of the authentication. You can create a `com.adobe.idp.Context` object by invoking its constructor. Then invoke the `com.adobe.idp.Context` object's `initPrincipal` method and pass the `AuthResult` object, as shown in the following code:
 
 ```java
  Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
 
-Instead of setting the `DSC_CREDENTIAL_USERNAME` or `DSC_CREDENTIAL_PASSWORD` properties, you can invoke the `ServiceClientFactory` object’s `setContext` method and pass the `com.adobe.idp.Context` object. When using a AEM forms user to invoke a service, ensure that they have the role named `Services User` that is required to invoke a AEM Forms service.
+Instead of setting the `DSC_CREDENTIAL_USERNAME` or `DSC_CREDENTIAL_PASSWORD` properties, you can invoke the `ServiceClientFactory` object's `setContext` method and pass the `com.adobe.idp.Context` object. When using an AEM forms user to invoke a service, ensure that they have the role named `Services User` that is required to invoke a AEM Forms service.
 
 The following code example shows how to use a `com.adobe.idp.Context` object within connection settings that are used to create an `EncryptionServiceClient` object.
 
@@ -691,7 +687,7 @@ Depending on the `com.adobe.idp.Document` object size, the data is carried withi
 
 Sometimes it is necessary to know the content type of a `com.adobe.idp.Document` object before you can pass it to a service. For example, if an operation requires a specific content type, such as `application/pdf`, it is recommended that you determine the content type. (See [Determining the content type of a document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document).)
 
-The `com.adobe.idp.Document` object attempts to determine the content type using the supplied data. If the content type cannot be retrieved from the data supplied (for example, when the data was supplied as a byte array), set the content type. To set the content type, invoke the `com.adobe.idp.Document` object’s `setContentType` method. (See [Determining the content type of a document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
+The `com.adobe.idp.Document` object attempts to determine the content type using the supplied data. If the content type cannot be retrieved from the data supplied (for example, when the data was supplied as a byte array), set the content type. To set the content type, invoke the `com.adobe.idp.Document` object's `setContentType` method. (See [Determining the content type of a document](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
 
 If collateral files reside on the same file system, creating a `com.adobe.idp.Document` object is faster. If collateral files reside on remote file systems, a copy operation must be done, which affects performance.
 
@@ -815,7 +811,7 @@ The following Java code example creates a `com.adobe.idp.Document` object that i
 
 #### Creating a document based on content accessible from an URL {#creating-a-document-based-on-content-accessible-from-an-url}
 
-The following Java code example creates a `com.adobe.idp.Document` object that is based on a PDF file named *map.pdf*. This file is located within a web application named `WebApp` that is running on `localhost`. This constructor attempts to set the `com.adobe.idp.Document` object’s MIME content type using the content type returned with the URL protocol.
+The following Java code example creates a `com.adobe.idp.Document` object that is based on a PDF file named *map.pdf*. This file is located within a web application named `WebApp` that is running on `localhost`. This constructor attempts to set the `com.adobe.idp.Document` object's MIME content type using the content type returned with the URL protocol.
 
 The URL supplied to the `com.adobe.idp.Document` object is always read at the side where the original `com.adobe.idp.Document` object is created, as shown in this example:
 
@@ -858,7 +854,7 @@ The following line of code converts a `com.adobe.idp.Document` object to a `java
 Likewise, you can copy the contents of a `com.adobe.idp.Document` to a local file by performing the following tasks:
 
 1. Create a `java.io.File` object.
-1. Invoke the `com.adobe.idp.Document` object’s `copyToFile` method and pass the `java.io.File`object.
+1. Invoke the `com.adobe.idp.Document` object's `copyToFile` method and pass the `java.io.File`object.
 
 The following code example copies the contents of a `com.adobe.idp.Document` object to a file named *AnotherMap.pdf*.
 
@@ -877,7 +873,7 @@ The following code example copies the contents of a `com.adobe.idp.Document` obj
 
 ### Determining the content type of a document {#determining-the-content-type-of-a-document}
 
-Determine the MIME type of a `com.adobe.idp.Document` object by invoking the `com.adobe.idp.Document` object’s `getContentType` method. This method returns a string value that specifies the content type of the `com.adobe.idp.Document` object. The following table describes the different content types that AEM Forms returns.
+Determine the MIME type of a `com.adobe.idp.Document` object by invoking the `com.adobe.idp.Document` object's `getContentType` method. This method returns a string value that specifies the content type of the `com.adobe.idp.Document` object. The following table describes the different content types that AEM Forms returns.
 
 <table>
  <thead>
@@ -940,7 +936,7 @@ The following code example determines the content type of a `com.adobe.idp.Docum
 
 ### Disposing Document objects {#disposing-document-objects}
 
-When you no longer require a `Document` object, it is recommended that you dispose of it by invoking its `dispose` method. Each `Document` object consumes a file descriptor and as much as 75 MB of RAM space on your application’s host platform. If a `Document` object is not disposed, then the Java Garage collection process disposes it. However, by disposing of it sooner by using the `dispose` method, you can free the memory occupied by the `Document` object.
+When you no longer require a `Document` object, it is recommended that you dispose of it by invoking its `dispose` method. Each `Document` object consumes a file descriptor and as much as 75 MB of RAM space on your application's host platform. If a `Document` object is not disposed, then the Java Garage collection process disposes it. However, by disposing of it sooner by using the `dispose` method, you can free the memory occupied by the `Document` object.
 
 **See also**
 
@@ -952,7 +948,7 @@ When you no longer require a `Document` object, it is recommended that you dispo
 
 ## Invoking a service using a Java client library {#invoking-a-service-using-a-java-client-library}
 
-AEM Forms service operations can be invoked by using a service’s strongly typed API, which is known as a Java client library. A *Java client library* is a set of concrete classes that provide access to services deployed in the service container. You instantiate a Java object that represents the service to invoke instead of creating an `InvocationRequest` object by using the Invocation API. The Invocation API is used to invoke processes, such as long-lived processes, created in Workbench. (See [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
+AEM Forms service operations can be invoked by using a service's strongly typed API, which is known as a Java client library. A *Java client library* is a set of concrete classes that provide access to services deployed in the service container. You instantiate a Java object that represents the service to invoke instead of creating an `InvocationRequest` object by using the Invocation API. The Invocation API is used to invoke processes, such as long-lived processes, created in Workbench. (See [Invoking Human-Centric Long-Lived Processes](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
 To perform a service operation, invoke a method that belongs to the Java object. A Java client library contains methods that typically map one-to-one with service operations. When using a Java client library, set required connection properties. (See [Setting connection properties](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
@@ -964,16 +960,16 @@ There is a User Manager setting that controls the lifetime of the SAML assertion
 
 >[!NOTE]
 >
->To explain how to invoke a service by using the Java API, the Repository service’s `writeResource` operation is invoked. This operation places a new resource into the repository.
+>To explain how to invoke a service by using the Java API, the Repository service's `writeResource` operation is invoked. This operation places a new resource into the repository.
 
 You can invoke the Repository service by using a Java client library and by performing the following steps:
 
-1. Include client JAR files, such as the adobe-repository-client.jar, in your Java project’s class path. For information about the location of these files, see [Including AEM Forms Java library files](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Include client JAR files, such as the adobe-repository-client.jar, in your Java project's class path. For information about the location of these files, see [Including AEM Forms Java library files](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Set connection properties that are required to invoke a service.
-1. Create a `ServiceClientFactory` object by invoking the `ServiceClientFactory` object’s static `createInstance` method and passing the `java.util.Properties` object that contains connection properties.
+1. Create a `ServiceClientFactory` object by invoking the `ServiceClientFactory` object's static `createInstance` method and passing the `java.util.Properties` object that contains connection properties.
 1. Create a `ResourceRepositoryClient` object by using its constructor and passing the `ServiceClientFactory` object. Use the `ResourceRepositoryClient` object to invoke Repository service operations.
 1. Create a `RepositoryInfomodelFactoryBean` object by using its constructor and pass `null`. This object lets you create a `Resource` object that represents the content that is added to the repository.
-1. Create a `Resource` object by invoking the `RepositoryInfomodelFactoryBean` object’s `newImage` method and passing the following values:
+1. Create a `Resource` object by invoking the `RepositoryInfomodelFactoryBean` object's `newImage` method and passing the following values:
 
     * A unique ID value by specifying `new Id()`.
     * A unique UUID value by specifying `new Lid()`.
@@ -981,13 +977,13 @@ You can invoke the Repository service by using a Java client library and by perf
 
    Cast the return value to `Resource`.
 
-1. Create a `ResourceContent` object by invoking the `RepositoryInfomodelFactoryBean` object’s `newImage` method and casting the return value to `ResourceContent`. This object represents the content that is added to the repository.
+1. Create a `ResourceContent` object by invoking the `RepositoryInfomodelFactoryBean` object's `newImage` method and casting the return value to `ResourceContent`. This object represents the content that is added to the repository.
 1. Create a `com.adobe.idp.Document` object by passing a `java.io.FileInputStream` object that stores the XDP file to add to the repository. (See [Creating a document based on an InputStream object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
-1. Add the content of the `com.adobe.idp.Document` object to the `ResourceContent` object by invoking the `ResourceContent` object’s `setDataDocument` method. Pass the `com.adobe.idp.Document` object.
-1. Set the MIME type of the XDP file to add to the repository by invoking the `ResourceContent` object’s `setMimeType` method and passing `application/vnd.adobe.xdp+xml`.
-1. Add the content of the `ResourceContent` object to the `Resource` object by invoking the `Resource` object ‘s `setContent` method and passing the `ResourceContent` object.
-1. Add a description of the resource by invoking the `Resource` object ‘s `setDescription` method and passing a string value that represents a description of the resource.
-1. Add the form design to the repository by invoking the `ResourceRepositoryClient` object’s `writeResource` method and passing the following values:
+1. Add the content of the `com.adobe.idp.Document` object to the `ResourceContent` object by invoking the `ResourceContent` object's `setDataDocument` method. Pass the `com.adobe.idp.Document` object.
+1. Set the MIME type of the XDP file to add to the repository by invoking the `ResourceContent` object's `setMimeType` method and passing `application/vnd.adobe.xdp+xml`.
+1. Add the content of the `ResourceContent` object to the `Resource` object by invoking the `Resource` object 's `setContent` method and passing the `ResourceContent` object.
+1. Add a description of the resource by invoking the `Resource` object 's `setDescription` method and passing a string value that represents a description of the resource.
+1. Add the form design to the repository by invoking the `ResourceRepositoryClient` object's `writeResource` method and passing the following values:
 
     * A string value that specifies the path to the resource collection that contains the new resource
     * The `Resource` object that was created
@@ -1002,7 +998,7 @@ You can invoke the Repository service by using a Java client library and by perf
 
 ## Invoking a short-lived process using the Invocation API {#invoking-a-short-lived-process-using-the-invocation-api}
 
-You can invoke a short-lived process using the Java Invocation API. When you invoke a short-lived process using the Invocation API, you pass required parameter values by using a `java.util.HashMap` object. For each parameter to pass to a service, invoke the `java.util.HashMap` object’s `put` method and specify the name-value pair that is required by the service in order to perform the specified operation. Specify the exact name of the parameters that belong to the short-lived process.
+You can invoke a short-lived process using the Java Invocation API. When you invoke a short-lived process using the Invocation API, you pass required parameter values by using a `java.util.HashMap` object. For each parameter to pass to a service, invoke the `java.util.HashMap` object's `put` method and specify the name-value pair that is required by the service in order to perform the specified operation. Specify the exact name of the parameters that belong to the short-lived process.
 
 >[!NOTE]
 >
@@ -1023,11 +1019,11 @@ When this process is invoked, it performs the following actions:
 
 Invoke the `MyApplication/EncryptDocument` short-lived process using the Java invocation API:
 
-1. Include client JAR files, such as the adobe-livecycle-client.jar, in your Java project’s class path. (See [Including AEM Forms Java library files](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+1. Include client JAR files, such as the adobe-livecycle-client.jar, in your Java project's class path. (See [Including AEM Forms Java library files](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 1. Create a `ServiceClientFactory` object that contains connection properties. (See [Setting connection properties](invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Create a `ServiceClient` object by using its constructor and passing the `ServiceClientFactory` object. A `ServiceClient` object lets you invoke a service operation. It handles tasks such as locating, dispatching, and routing invocation requests.
 1. Create a `java.util.HashMap` object by using its constructor.
-1. Invoke the `java.util.HashMap` object’s `put` method for each input parameter to pass to the long-lived process. Because the `MyApplication/EncryptDocument` short-lived process requires one input parameter of type `Document`, you only have to invoke the `put` method once, as shown in the following example.
+1. Invoke the `java.util.HashMap` object's `put` method for each input parameter to pass to the long-lived process. Because the `MyApplication/EncryptDocument` short-lived process requires one input parameter of type `Document`, you only have to invoke the `put` method once, as shown in the following example.
 
    ```java
     //Create a Map object to store the parameter value for inDoc
@@ -1037,20 +1033,20 @@ Invoke the `MyApplication/EncryptDocument` short-lived process using the Java in
     params.put("inDoc", inDoc);
    ```
 
-1. Create an `InvocationRequest` object by invoking the `ServiceClientFactory` object’s `createInvocationRequest` method and passing the following values:
+1. Create an `InvocationRequest` object by invoking the `ServiceClientFactory` object's `createInvocationRequest` method and passing the following values:
 
     * A string value that specifies the name of the long-lived process to invoke. To invoke the `MyApplication/EncryptDocument` process, specify `MyApplication/EncryptDocument`.
     * A string value that represents the process operation name. Typically the name of a short-lived process operation is `invoke`.
     * The `java.util.HashMap` object that contains the parameter values that the service operation requires.
     * A Boolean value that specifies `true`, which creates a synchronous request (this value is applicable to invoke a short-lived process).
 
-1. Send the invocation request to the service by invoking the `ServiceClient` object’s `invoke` method and passing the `InvocationRequest` object. The `invoke` method returns an `InvocationReponse` object.
+1. Send the invocation request to the service by invoking the `ServiceClient` object's `invoke` method and passing the `InvocationRequest` object. The `invoke` method returns an `InvocationReponse` object.
 
    >[!NOTE]
    >
    >A long-lived process can be invoked by passing the value `false`as the fourth parameter of the `createInvocationRequest` method. Passing the value `false`*creates an asynchronous request.*
 
-1. Retrieve the process’s return value by invoking the `InvocationReponse` object’s `getOutputParameter` method and passing a string value that specifies the name of the output parameter. In this situation, specify `outDoc` ( `outDoc` is the name of the output parameter for the `MyApplication/EncryptDocument` process). Cast the return value to `Document`, as shown in the following example.
+1. Retrieve the process's return value by invoking the `InvocationReponse` object's `getOutputParameter` method and passing a string value that specifies the name of the output parameter. In this situation, specify `outDoc` ( `outDoc` is the name of the output parameter for the `MyApplication/EncryptDocument` process). Cast the return value to `Document`, as shown in the following example.
 
    ```java
     InvocationResponse response = myServiceClient.invoke(request);
@@ -1058,7 +1054,7 @@ Invoke the `MyApplication/EncryptDocument` short-lived process using the Java in
    ```
 
 1. Create a `java.io.File` object and ensure that the file extension is .pdf.
-1. Invoke the `com.adobe.idp.Document` object’s `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that was returned by the `getOutputParameter` method.
+1. Invoke the `com.adobe.idp.Document` object's `copyToFile` method to copy the contents of the `com.adobe.idp.Document` object to the file. Ensure that you use the `com.adobe.idp.Document` object that was returned by the `getOutputParameter` method.
 
 **See also**
 

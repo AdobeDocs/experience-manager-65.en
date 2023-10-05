@@ -1,14 +1,10 @@
 ---
 title: Managing Collections
-seo-title: Managing Collections
 description: Collections represent a well defined bucket filled with content such as articles or banners that suits the cover's theme. Follow this page to learn more.
-seo-description: Collections represent a well defined bucket filled with content such as articles or banners that suits the cover's theme. Follow this page to learn more.
-uuid: 1d2e9769-d2cc-4d43-a428-e962a51eb5d0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
 ---
 # Managing Collections{#managing-collections}
@@ -109,7 +105,7 @@ The general workflow to delete a collection:
 
 1. From Mobile, choose your Mobile On-Demand app from the catalog.
 1. Select the article to delete in the **Manage Collections** tile.
-1. Ensure it is selected in the list,(select others to delete as needed).
+1. Ensure it is selected in the list, (select others to delete as needed).
 1. Click **Delete** from the action bar.
 1. Check if you would like to delete from AEM as well as Mobile On-Demand.
 1. Click **Delete**.

@@ -701,8 +701,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.18.0 release
 - Microsoft&reg; Windows Server 2019 (64-bit)
 - Microsoft&reg; Active Directory 2016
 
-The following platforms are marked as deprecated with AEM Forms 6.5.17.0 release on June 2, 2022:
-
+The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release on June 2, 2022:
 - Microsoft&reg; SharePoint 2016
 
 The following platforms are marked as deprecated with AEM Forms 6.5.12.0 release on March 3, 2022:

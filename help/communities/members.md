@@ -1,12 +1,10 @@
 ---
 title: Members & Groups Management Consoles
 description: How to access Members and Groups Management consoles
-uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 ---
@@ -23,7 +21,7 @@ Using the Communities Members and Groups consoles, members and member groups reg
 
 ### Users on Author {#users-on-author}
 
-For managing users and groups registered in the *author* environment, is is necessary to use the platform's security console:
+For managing users and groups registered in the *author* environment, it is necessary to use the platform's security console:
 
 * From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 * From global navigation, select **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]**.

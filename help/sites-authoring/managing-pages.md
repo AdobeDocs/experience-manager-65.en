@@ -420,7 +420,7 @@ The status of asynchronous jobs can be checked in the [**Async Jobs Status** das
 
 ### Locking a Page {#locking-a-page}
 
-You can [lock/unlock a page](/help/sites-authoring/editing-content.md#locking-a-page) from either a console or when editing an individual page. Information about whether a page is locked is also shown in both locations.
+You can [lock/unlock a page](/help/sites-authoring/editing-content.md#locking-a-page) from either a console or when editing an individual page. Information about locked pages is also shown in both locations.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 

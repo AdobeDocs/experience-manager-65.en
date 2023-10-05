@@ -1,12 +1,10 @@
 ---
 title: Content Page Templates for Mobile Apps
 description: Follow this page to learn about page templates for mobile apps.
-uuid: ef469796-10f5-44f4-a5c7-25025ca192b0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
 ---
 # Page Templates for Mobile Apps {#page-templates-for-mobile-apps}
@@ -310,7 +308,7 @@ The after-platform_add directory contains the `copy_AMS_Conifg.js` file. This sc
 
 ### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-The after-prepare directory contains the `copy_resource_files.js` file. This script copies a number of icon and splash screen images into platform-specific locations.
+The after-prepare directory contains the `copy_resource_files.js` file. This script copies several icon and splash screen images into platform-specific locations.
 
 ### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 

@@ -1,13 +1,9 @@
 ---
 title: Watched folder in AEM Forms
-seo-title: Watched folder in AEM Forms
 description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
-seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
-uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 ---
@@ -590,7 +586,7 @@ Output parameter mappings can also specify additional patterns, such as these:
 * %F = Source Filename
 * %E = Source Filename Extension
 
-If the output parameter mapping pattern ends with "File.separator", (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with "File.separator", the content (result file or folder) is created with that name.
+If the output parameter mapping pattern ends with "File.separator" (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with "File.separator", the content (result file or folder) is created with that name.
 
 ## Using PDF Generator with a Watched Folder {#using-pdf-generator-with-a-watched-folder}
 

@@ -1,14 +1,10 @@
 ---
 title: Files to back up and recover
-seo-title: Files to back up and recover
 description: This document describes the application and data files that must be backed up.
-seo-description: This document describes the application and data files that must be backed up.
-uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 ---
 # Files to back up and recover {#files-to-back-up-and-recover}
@@ -23,7 +19,7 @@ Consider the following points regarding backup and recovery:
 
 ## Global Document Storage directory {#global-document-storage-directory}
 
-The GDS is a directory used to store long-lived files that are used within a process. The lifetime of long-lived files is intended to span one or more launches of a AEM forms system, and can span days and even years. These long-lived files can include PDFs, policies, and form templates. Long-lived files are a critical part of the overall state of many AEM forms deployments. If some or all long-lived documents are lost or corrupted, the forms server may become unstable.
+The GDS is a directory used to store long-lived files that are used within a process. The lifetime of long-lived files is intended to span one or more launches of an AEM forms system, and can span days and even years. These long-lived files can include PDFs, policies, and form templates. Long-lived files are a critical part of the overall state of many AEM forms deployments. If some or all long-lived documents are lost or corrupted, the forms server may become unstable.
 
 Input documents for asynchronous job invocation are also stored in the GDS and must be available to process requests. Therefore, it is important that you consider the reliability of the file system that hosts the GDS and employ a redundant array of independent disks (RAID) or other technology as appropriate for your quality and level of service requirements.
 
@@ -86,7 +82,7 @@ To back up the database in real time, you must either use snapshot mode or confi
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe&reg; LiveCycle&reg; Content Services ES (Deprecated) is a content management system installed with LiveCycle. It enables users to design, manage, monitor, and optimize human-centric processes. Content Services (Deprecated) support ends on 12/31/2014. See [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 

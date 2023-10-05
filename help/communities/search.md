@@ -1,14 +1,10 @@
 ---
 title: Search Feature
-seo-title: Search Feature
 description: Adding and configuring Search to a Communities site
-seo-description: Adding and configuring Search to a Communities site
-uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: e252b0e5-a2f8-468e-ac8c-951a5b0f2e32
 ---
 # Search Feature {#search-feature}
@@ -41,7 +37,7 @@ Select the placed `Search` component to access and select the `Configure` icon w
 
 ![confgirue](assets/configure-new.png)
 
-Under the **[!UICONTROL Search Settings]** tab, specify how what paths are are search when a query is entered by a visitor.
+Under the **[!UICONTROL Search Settings]** tab, specify how what paths are search when a query is entered by a visitor.
 
 ![search-settings](assets/search-settings.png)
 

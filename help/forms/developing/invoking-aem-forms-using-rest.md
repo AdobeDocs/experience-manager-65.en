@@ -1,14 +1,10 @@
 ---
 title: Invoking AEM Forms using REST Requests
-seo-title: Invoking AEM Forms using REST Requests
 description: Invoke processes created in Workbench using REST requests.
-seo-description: Invoke processes created in Workbench using REST requests.
-uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
 ---
@@ -22,7 +18,7 @@ Two types of HTML clients exist. The first HTML client is an AJAX client that is
 
 When using REST requests, it is recommended that you do not invoke Forms services directly. Instead, invoke processes that were created in Workbench. When creating a process that is meant for REST invocation, use a programmatic start point. In this situation, the REST endpoint is added automatically. For information about creating processes in Workbench, see [Using Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-When you invoke a service using REST, you are prompted for a AEM forms user name and password. However, if you do not want to specify a user name and password, you can disable service security.
+When you invoke a service using REST, you are prompted for an AEM forms user name and password. However, if you do not want to specify a user name and password, you can disable service security.
 
 To invoke a Forms service (a process becomes a service when the process is activated) using REST, configure a REST endpoint. (See "Managing Endpoints" in [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
@@ -32,7 +28,7 @@ After a REST endpoint is configured, you can invoke a Forms service by using an 
  action="https://hiro-xp:8080/rest/services/[ServiceName]/[OperationName]:[ServiceVersion]" method="post" enctype="multipart/form-data"
 ```
 
-The mandatory `ServiceName` value is the name of the Forms service to invoke. The optional `OperationName` value is the name of the service’s operation. If this value is not specified, this name defaults to `invoke`, which is the operation name that starts the process. The optional `ServiceVersion` value is the version encoded in the X.Y format. If this value is not specified, the most current version is used. The `enctype` value can also be `application/x-www-form-urlencoded`.
+The mandatory `ServiceName` value is the name of the Forms service to invoke. The optional `OperationName` value is the name of the service's operation. If this value is not specified, this name defaults to `invoke`, which is the operation name that starts the process. The optional `ServiceVersion` value is the version encoded in the X.Y format. If this value is not specified, the most current version is used. The `enctype` value can also be `application/x-www-form-urlencoded`.
 
 ## Supported data types {#supported-data-types}
 
@@ -45,7 +41,7 @@ The following data types are supported when invoking AEM Forms services using RE
 
   These data types are commonly accepted as input values to processes created in Workbench.
 
-  If a Froms service is invoked with the HTTP POST method, the arguments are passed inside the HTTP request body. If the AEM Forms service’s signature has a string input parameter, the request body can contain the text value of the input parameter. If the service’s signature defines multiple string parameters, the request can follow the HTTP’s `application/x-www-form-urlencoded` notation with the parameter’s names used as the form’s field names.
+  If a Froms service is invoked with the HTTP POST method, the arguments are passed inside the HTTP request body. If the AEM Forms service's signature has a string input parameter, the request body can contain the text value of the input parameter. If the service's signature defines multiple string parameters, the request can follow the HTTP's `application/x-www-form-urlencoded` notation with the parameter's names used as the form's field names.
 
   If a Forms service returns a string parameter, the result is a textual representation of the output parameter. If a service returns multiple string parameters, the result is an XML document encoding the output parameters in the following format:
   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
@@ -56,15 +52,15 @@ The following data types are supported when invoking AEM Forms services using RE
 
   If a Forms service requires a `com.adobe.idp.Document` parameter, the service can only be invoked using the HTTP POST method. If the service requires one `com.adobe.idp.Document` parameter, the HTTP request body becomes the content of the input Document object.
 
-  If an AEM Forms service requires multiple input parameters, the HTTP request body must be a multipart MIME message as defined by RFC 1867. (RFC 1867 is a standard used by web browsers to upload files to websites.) Each input parameter must be sent as a separate part of the multipart message and encoded in the `multipart/form-data` format. The name of each part must match the parameter’s name.
+  If an AEM Forms service requires multiple input parameters, the HTTP request body must be a multipart MIME message as defined by RFC 1867. (RFC 1867 is a standard used by web browsers to upload files to websites.) Each input parameter must be sent as a separate part of the multipart message and encoded in the `multipart/form-data` format. The name of each part must match the parameter's name.
 
   Lists and maps are also used as input values to AEM Forms processes created in Workbench. As a result, you can use these data types when using a REST request. Java arrays are not supported because they are not used as an input value to a AEM Forms process.
 
   If an input parameter is a list, a REST client can send it by specifying the parameter multiple times (once for each item in the list). For example, if A is a list of documents, the input must be a multipart message consisting of multiple parts named A. In this case, each part named A becomes an item in the input list. If B is a list of strings, the input can be an `application/x-www-form-urlencoded` message consisting of multiple fields named B. In this case, each form field named B becomes an item in the input list.
 
-  If an input parameter is a map and it is the services only input parameter, then every part/field of the input message becomes a key/value record in the map. The name of each part/field becomes the record’s key. The content of each part/field becomes the record’s value.
+  If an input parameter is a map and it is the services only input parameter, then every part/field of the input message becomes a key/value record in the map. The name of each part/field becomes the record's key. The content of each part/field becomes the record's value.
 
-  If an input map is not the services only input parameter, then each key/value record that belongs to the map can be sent using a parameter named as a concatenation of the parameter name and the record’s key. For example, an input map called `attributes` can be sent with a list of the following key/values pairs:
+  If an input map is not the services only input parameter, then each key/value record that belongs to the map can be sent using a parameter named as a concatenation of the parameter name and the record's key. For example, an input map called `attributes` can be sent with a list of the following key/values pairs:
 
   `attributesColor=red`
 
@@ -80,7 +76,7 @@ The following data types are supported when invoking AEM Forms services using RE
 * A URL that points to the content of Document (if the list consists of `com.adobe.idp.Document` objects)
 
   The following example is an XML message returned by a service that has a single output parameter named *list*, which is a list of integers.
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`An output map parameter is represented in the resultant XML message as a series of XML elements with one element for each record in the map. Every element is given the same name as the map record’s key. The value of each element is either a text representation of the map record’s value (if the map consists of records with a string value) or a URL pointing to the Document’s content (if the map consists of records with the `com.adobe.idp.Document` value). Below is an example of an XML message returned by a service that has a single output parameter named `map`. This parameter value is a map consisting of records that associate letters with `com.adobe.idp.Document` objects.
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`An output map parameter is represented in the resultant XML message as a series of XML elements with one element for each record in the map. Every element is given the same name as the map record's key. The value of each element is either a text representation of the map record's value (if the map consists of records with a string value) or a URL pointing to the Document's content (if the map consists of records with the `com.adobe.idp.Document` value). Below is an example of an XML message returned by a service that has a single output parameter named `map`. This parameter value is a map consisting of records that associate letters with `com.adobe.idp.Document` objects.
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Asynchronous invocations {#asynchronous-invocations}
@@ -101,7 +97,7 @@ The status of the asynchronous invocation can be retrieved by using an invocatio
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
-This URL returns an integer value (in "text/plain" format) encoding the job status according to the Job Manager’s specification (for example, 2 means running, 3 means completed, 4 means failed, and so on.)
+This URL returns an integer value (in "text/plain" format) encoding the job status according to the Job Manager's specification (for example, 2 means running, 3 means completed, 4 means failed, and so on.)
 
 If the job is completed, the URL returns the same result as if the service was invoked synchronously.
 
@@ -141,7 +137,7 @@ The `DSCError` element is optional and present only if the exception is an insta
 
 ## Security and authentication {#security-and-authentication}
 
-To provide REST invocations with a secure transport, a AEM forms administrator can enable the HTTPS protocol on the J2EE application server hosting AEM Forms. This configuration is specific to the J2EE application server; it is not part of the forms server configuration.
+To provide REST invocations with a secure transport, an AEM forms administrator can enable the HTTPS protocol on the J2EE application server hosting AEM Forms. This configuration is specific to the J2EE application server; it is not part of the forms server configuration.
 
 >[!NOTE]
 >
@@ -311,9 +307,9 @@ When this process is invoked, it performs the following actions:
 
 **Invoking the MyApplication/EncryptDocument process from Acrobat** {#invoke-process-acrobat}
 
-You can invoke a Forms process from Acrobat by using a REST request. For example, you can invoke the *MyApplication/EncryptDocument* process. To invoke a Forms process from Acrobat, place a submit button on a XDP file within Designer. (See [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).)
+You can invoke a Forms process from Acrobat by using a REST request. For example, you can invoke the *MyApplication/EncryptDocument* process. To invoke a Forms process from Acrobat, place a submit button on an XDP file within Designer. (See [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
-Specify the URL to invoke the process within the button’s *Submit to URL* field, as shown in the following illustration.
+Specify the URL to invoke the process within the button's *Submit to URL* field, as shown in the following illustration.
 
 The complete URL to invoke the process is https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument.
 

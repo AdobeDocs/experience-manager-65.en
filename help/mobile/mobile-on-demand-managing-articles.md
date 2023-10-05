@@ -1,14 +1,10 @@
 ---
 title: Managing Articles
-seo-title: Managing Articles
 description: Follow this page to learn about creating and managing Articles.
-seo-description: Follow this page to learn about creating and managing Articles.
-uuid: 72b86cd7-3016-41b6-a001-9dce4084e9db
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
 ---
 # Managing Articles{#managing-articles}
@@ -116,7 +112,7 @@ The general workflow to delete an article:
 
 1. From Mobile, choose your Mobile On-Demand app from the catalog.
 1. Select the article to delete in the **Manage Articles** tile.
-1. Ensure it is selected in the list,(select others to delete as needed).
+1. Ensure it is selected in the list, (select others to delete as needed).
 1. Click **Delete** from the action bar.
 1. Check if you would like to delete from AEM as well as Mobile On-Demand.
 1. Click **Delete**.

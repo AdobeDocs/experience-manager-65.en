@@ -1,14 +1,10 @@
 ---
 title: Configuring watched folder endpoints
-seo-title: Configuring watched folder endpoints
 description: Learn how to configure watched folder endpoints.
-seo-description: Learn how to configure watched folder endpoints.
-uuid: 01fb5ff8-2071-44bd-9241-7d5d41a5b26e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
 ---
 # Configuring watched folder endpoints {#configuring-watched-folder-endpoints}
@@ -17,7 +13,7 @@ An administrator can configure a network folder, known as a *watched folder*, so
 
 ## Configuring the Watched Folder service {#configuring-the-watched-folder-service}
 
-Before you configure a watched folder endpoint, configure the Watched Folder service. The Watched Folder service’s configuration parameters have two purposes:
+Before you configure a watched folder endpoint, configure the Watched Folder service. The Watched Folder service's configuration parameters have two purposes:
 
 * To configure attributes that are common for all watched folder endpoints
 * To provide default values for all the watched folder endpoints
@@ -42,7 +38,7 @@ In Windows, if the application server is running as a service, it must be starte
 
 ## Chaining together watched folders {#chaining-together-watched-folders}
 
-Watched folders can be chained together so that a result document of one watched folder is the input document of the next watched folder. Each watched folder can invoke a different service. By configuring watched folders in this manner, multiple services can be invoked. For example, one watched folder could convert PDF files to Adobe PostScript® and a second watched folder could convert the PostScript files to PDF/A format. To do this, simply set the *result* folder of the watched folder defined by your first endpoint to point to the *input* folder of the watched folder defined by your second endpoint.
+Watched folders can be chained together so that a result document of one watched folder is the input document of the next watched folder. Each watched folder can invoke a different service. By configuring watched folders in this manner, multiple services can be invoked. For example, one watched folder could convert PDF files to Adobe PostScript&reg; and a second watched folder could convert the PostScript files to PDF/A format. To do this, simply set the *result* folder of the watched folder defined by your first endpoint to point to the *input* folder of the watched folder defined by your second endpoint.
 
 Output from the first conversion would go to \path\result. Input for the second conversion would be \path\result, and output from the second conversion would go to \path\result\result (or the directory you define in the Result Folder box for the second conversion).
 
@@ -52,7 +48,7 @@ For a watched folder endpoint, users can invoke by copying or dragging input fil
 
 For watched folder endpoints, if the job requires only one input file, the user can copy that file to the root of the watched folder.
 
-If the job contains more than one input file, the user must create a folder outside the watched folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if required by the process). After the job folder has been constructed, the user copies it into the watched folder’s input folder.
+If the job contains more than one input file, the user must create a folder outside the watched folder hierarchy that contains all required files. This new folder should include the input files (and optionally a DDX file if required by the process). After the job folder has been constructed, the user copies it into the watched folder's input folder.
 
 >[!NOTE]
 >
@@ -111,7 +107,7 @@ The process of invoking a service using watched folders is as follows:
 
 Use the following settings to configure a watched folder endpoint.
 
-**Name:** (Mandatory) Identifies the endpoint. Do not include a < character because it will truncate the name displayed in Workspace. If you’re entering a URL as the name of the endpoint, ensure that it conforms with the syntax rules specified in RFC1738.
+**Name:** (Mandatory) Identifies the endpoint. Do not include a < character because it will truncate the name displayed in Workspace. If you're entering a URL as the name of the endpoint, ensure that it conforms with the syntax rules specified in RFC1738.
 
 **Description:** A description of the endpoint. Do not include a < character because it will truncate the description displayed in Workspace.
 
@@ -129,7 +125,7 @@ Use the following settings to configure a watched folder endpoint.
 
 **User Name:** (Mandatory) The user name that is used when invoking a target service from the watched folder. The default value is SuperAdmin.
 
-**Domain Name:** (Mandatory) The user’s domain. The default value is DefaultDom.
+**Domain Name:** (Mandatory) The user's domain. The default value is DefaultDom.
 
 **Batch Size:** The number of files or folders to be picked up per scan. Use to prevent an overload on the system; scanning too many files at one time can cause a crash. The default value is 2.
 
@@ -265,7 +261,7 @@ Output parameter mappings can also specify additional patterns, such as these:
 * %F = Source Filename
 * %E = Source Filename Extension
 
-If the output parameter mapping pattern ends with "File.separator", (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with "File.separator", the content (result file or folder) is created with that name. For more information about output parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+If the output parameter mapping pattern ends with "File.separator" (which is the path separator), a folder is created and the content is copied into that folder. If the pattern does not end with "File.separator", the content (result file or folder) is created with that name. For more information about output parameter mappings, see [Tips and tricks for watched folders](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## About throttling {#about-throttling}
 
@@ -378,7 +374,7 @@ Here are some tips and tricks when configuring the Watched Folder endpoint:
 * Use purge duration to keep the result folder clean. Watched Folder cleans up all the files that are older than the duration mentioned in the purge duration. The duration is in days.
 * When adding a Watched Folder endpoint, after selecting the operation name, the input parameter mapping is populated. For each input of the operation, one input parameter mapping field is generated. Here are examples of input parameter mappings:
 
-    * For `com.adobe.idp.Document` input: If the service operation has an input of type `Document`, the administrator can specify the mapping type as `Variable`. Watched Folder will pick up the input from the watched folder’s input folder based on the file pattern specified for the input parameter. If the administrator specifies `*.pdf` as the parameter, each file that has an extension of .pdf will be picked up, converted to `com.adobe.idp.Document`, and the service invoked.
+    * For `com.adobe.idp.Document` input: If the service operation has an input of type `Document`, the administrator can specify the mapping type as `Variable`. Watched Folder will pick up the input from the watched folder's input folder based on the file pattern specified for the input parameter. If the administrator specifies `*.pdf` as the parameter, each file that has an extension of .pdf will be picked up, converted to `com.adobe.idp.Document`, and the service invoked.
     * For `java.util.Map` input: If the service operation has an input of type `Map`, the administrator can specify the mapping type as `Variable` and enter a mapping value with a pattern like `*.pdf`. For example, a service needs a map of two `com.adobe.idp.Document` objects that represent two files in the input folder such as 1.pdf and 2.pdf. Watched Folder will create a map with the key as the filename and the value as `com.adobe.idp.Document`.
     * For `java.util.List` input: If the service operation has an input of type List, the administrator can specify the mapping type as `Variable` and enter a mapping value with a pattern like `*.pdf`. When PDF files are dropped in the input folder, Watched Folder will create a list of the `com.adobe.idp.Document` objects that represents these files and invoke the target service.
     * For `java.lang.String`: The administrator has two options. First, the administrator can specify the mapping type as `Literal` and enter a mapping value as a string, such as `hello.` Watched Folder will invoke the service with the string `hello`. Second, the administrator can specify the mapping type as a `Variable` and enter a mapping value with a pattern like `*.txt`. In the latter case, files with the .txt extension will be read as a document coerced as a string to invoke the service.
@@ -410,7 +406,7 @@ For all services, you should adjust the batch size and repeat interval of the wa
 
 ### Generate PDF service recommendations {#generate-pdf-service-recommendations}
 
-* The Generate PDF service can convert only one file at a time for these file types: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop®, Adobe FrameMaker®, and Adobe PageMaker®. These are long running jobs; therefore, make sure you keep the batch size to a low setting. Also increase the repeat interval if there are more nodes in the cluster.
+* The Generate PDF service can convert only one file at a time for these file types: Microsoft Word, Microsoft Excel, Microsoft PowerPoint, Microsoft Project, AutoCAD, Adobe Photoshop&reg;, Adobe FrameMaker&reg;, and Adobe PageMaker&reg;. These are long running jobs; therefore, make sure you keep the batch size to a low setting. Also increase the repeat interval if there are more nodes in the cluster.
 * For PostScript (PS), Encapsulated PostScript (EPS), and image file types, the Generate PDF service can process several files in parallel. You should carefully tune the session bean pool size (which governs the number of conversions that will be done in parallel) depending on the capacity of your server and the number of nodes in the cluster. Then increase the batch size to a number that is equal to the session bean pool size for the file types you are trying to convert. The polling frequency should be dictated by the number of nodes in the cluster; however, because the Generate PDF service processes these kinds of jobs quite fast, you could configure the repeat interval to a low value such as 5 or 10.
 * Even though the Generate PDF service can convert only one OpenOffice file at a time, the conversion is quite fast. The above logic for PS, EPS, and image conversions also applies to OpenOffice conversions.
 * To enable uniform load distribution in the cluster, keep the batch size low and increase the repeat interval.

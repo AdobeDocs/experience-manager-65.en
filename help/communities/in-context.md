@@ -98,7 +98,7 @@ On publish, log in as Boyd Larsen and access the thread by selecting `Forum`, an
 Notice:
 
 * Boyd has not participated in the forum.
-* Boyd can not Delete anything.
+* Boyd cannot Delete anything.
 * Boyd is signed in and can Reply or Flag content.
 
 Have Boyd select Flag to flag the content posted by Andrew.
@@ -159,6 +159,6 @@ Notice:
 
 * Rebekah can Delete or Edit her own post.
 * Rebekah can also Reply to or Flag other content.
-* Rebekah can not access the moderation console.
+* Rebekah cannot access the moderation console.
 
 ![community-forum-author](assets/community-forum-author.png)

@@ -1,12 +1,10 @@
 ---
 title: Page Templates for Mobile Apps
 description: Follow this page to learn more about page templates. Page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component.
-uuid: c53901c9-5974-4c6b-ac61-1c094a93c9d6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
 ---
 # Page Templates for Mobile Apps {#page-templates-for-mobile-apps}
@@ -310,7 +308,7 @@ The after-platform_add directory contains the `copy_AMS_Conifg.js` file. This sc
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-The after-prepare directory contains the `copy_resource_files.js` file. This script copies a number of icon and splash screen images into platform-specific locations.
+The after-prepare directory contains the `copy_resource_files.js` file. This script copies several icon and splash screen images into platform-specific locations.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 

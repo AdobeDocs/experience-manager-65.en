@@ -245,7 +245,7 @@ Use the following procedure to export all or some of only the English strings.
 
 1. Open the Translation tool. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Use the Dictionaries drop-down menu to select the dictionary to export.
-1. If your are exporting a subset of the strings, select the items in the dictionary to export. Selecting no items exports all of the items.
+1. If you are exporting a subset of the strings, select the items in the dictionary to export. Selecting no items exports all of the items.
 1. Click Export &gt; Export Selection As Xliff (Strings Only).
 1. In the dialog box that appears, copy the text and paste it into a text file.
 
