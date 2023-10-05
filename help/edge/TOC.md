@@ -14,4 +14,4 @@ role: User
 
 + Edge Delivery Services {#edge-delivery}
   + [Getting Started with Edge Delivery](/help/edge/overview.md)
-      + [Using Edge Delivery](/help/edge/using.md)
+  + [Using Edge Delivery](/help/edge/using.md)
