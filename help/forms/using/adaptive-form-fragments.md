@@ -14,6 +14,11 @@ exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 ---
 # Adaptive form fragments{#adaptive-form-fragments}
 
+| Version | Article link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html)               |
+| AEM 6.5     | This article         |
+
 <span class="preview"> Adobe recommends using the modern and extensible data capture [Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [creating new Adaptive Forms](/help/forms/using/create-an-adaptive-form-core-components.md) or [adding Adaptive Forms to AEM Sites pages](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). These components represent a significant advancement in Adaptive Forms creation, ensuring impressive user experiences. This article describes older approach to author Adaptive Forms using foundation components. </span>
 
 While every form is designed for a specific purpose, there are some common segments in most forms, such as to provide personal details like name and address, family details, income details, and so on. Form developers are required to create these common segments every time a new form is created.
@@ -223,7 +228,7 @@ To localize an adaptive form that contains adaptive form fragments, you need to 
 
 >[!NOTE]
 >
->The localization keys in the fragment won’t appear in the XLIFF file for an adaptive form.
+>The localization keys in the fragment won't appear in the XLIFF file for an adaptive form.
 
 ## Key points to remember when working with fragments {#key-points-to-remember-when-working-with-fragments}
 
