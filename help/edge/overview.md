@@ -52,7 +52,7 @@ Adobe provides three channels to help you with Edge Delivery Services:
 
 ### Access Community Resources {#community-resource}
 
-Adobe has two Community Resources to help you with Edge Delivery, [Experience League Community](https://adobe.ly/3RzitVw) and a [Discord channel](https://discord.gg/YFTKQK8M).
+Adobe has two Community Resources to help you with Edge Delivery, [Experience League Community](https://adobe.ly/3Q6kTKl) and a [Discord channel](https://discord.gg/YFTKQK8M).
 
 ### How to access your Product Collaboration Channel {#collab-channel}
 
